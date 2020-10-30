@@ -1,0 +1,45 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site – Docsy Blog</title>
+    <link>https://lucasfonsecazup.github.io/hugo-sample/en/blog/</link>
+    <description>Recent content in Docsy Blog on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="https://lucasfonsecazup.github.io/hugo-sample/en/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>En: News About Docsy</title>
+      <link>https://lucasfonsecazup.github.io/hugo-sample/en/blog/news/</link>
+      <pubDate>Sat, 06 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://lucasfonsecazup.github.io/hugo-sample/en/blog/news/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>En: New Releases</title>
+      <link>https://lucasfonsecazup.github.io/hugo-sample/en/blog/releases/</link>
+      <pubDate>Thu, 04 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://lucasfonsecazup.github.io/hugo-sample/en/blog/releases/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
