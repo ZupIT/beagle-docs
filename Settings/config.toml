@@ -1,6 +1,6 @@
-baseURL = "https://lucasfonsecazup.github.io/hugo-sample/"
+baseURL = "https://zupit.github.io/docs-beagle/"
 
-title = "My New Hugo Site"
+title = "Beagle"
 
 publishDir = "../docs"
 
