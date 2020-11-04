@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Goldydocs – About Goldydocs</title>
+    <title>Beagle – About Goldydocs</title>
     <link>https://zupit.github.io/docs-beagle/about/</link>
-    <description>Recent content in About Goldydocs on Goldydocs</description>
+    <description>Recent content in About Goldydocs on Beagle</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://zupit.github.io/docs-beagle/about/index.xml" rel="self" type="application/rss+xml" />
