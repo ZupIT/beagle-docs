@@ -9,7 +9,7 @@ description: >
 
 <hr>
 
-## What is Beagle?{{% pageinfo %}}
+## What is Beagle?
 
 Beagle is an **open source framework** of cross-platform development based on the implementation paradigm of **Server-Driven UI.**
 
@@ -69,13 +69,6 @@ In this way, new features, flows, customizations and combinations of visual comp
 Beagle was created to **optimize time and resources** for development's, design's and business' teams to publish and keep updated their applications without need to approve it on App Store or Play Store and, also, respecting the application's design system. 
 {{% /pageinfo %}}
 
-{{% hint style="info" %}}
-{{% /hint %}}
-
-{{% tooltip %}}
-{{% /tooltip %}}
-
-
 The main advantages of using Beagle on your project are: 
 
 * **More flexibility at work**, specially among developers and UI/UX designers when it's necessary to make pontual changes.  
@@ -83,4 +76,3 @@ The main advantages of using Beagle on your project are:
 * **Minor risks of duplicate code** because all consumption of APIs, flows and rules will be in one place, BFF.
 
 Another fundamental gain is that Beagle allows you to **reduce user's feedback time**, once that the changes are quickly done, tested and validated.
-
