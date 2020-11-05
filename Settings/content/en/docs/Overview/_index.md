@@ -1,10 +1,11 @@
 ---
-description: >-
+title: "Overview"
+linkTitle: "Overview"
+weight: 1
+description: >
   Here, you'll find all initial information about Beagle before getting deeper
   on the project.
 ---
-
-# Overview
 
 ## What is Beagle?
 
