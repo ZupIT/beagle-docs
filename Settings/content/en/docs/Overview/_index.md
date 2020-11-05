@@ -69,7 +69,7 @@ In this way, new features, flows, customizations and combinations of visual comp
 Beagle was created to **optimize time and resources** for development's, design's and business' teams to publish and keep updated their applications without need to approve it on App Store or Play Store and, also, respecting the application's design system. 
 {{% /pageinfo %}}
 
-{{% hint %}}
+{{% hint style="info" %}}
 {{% /hint %}}
 
 {{% tooltip %}}
