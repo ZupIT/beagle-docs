@@ -7,6 +7,8 @@ description: >
   on the project.
 ---
 
+<hr>
+
 ## What is Beagle?
 
 Beagle is an **open source framework** of cross-platform development based on the implementation paradigm of **Server-Driven UI.**
