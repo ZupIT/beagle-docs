@@ -9,13 +9,13 @@ description: >
 
 <hr>
 
-## What is Beagle?
+## What is Beagle?{{% pageinfo %}}
 
 Beagle is an **open source framework** of cross-platform development based on the implementation paradigm of **Server-Driven UI.**
 
 {{% pageinfo %}}
  The main gain Beagle gives you is to allow teams to make **layout and data changes directly in native mobile or web applications** by changing the code on backend. 
-{{% pageinfo %}}
+{{% /pageinfo %}}
 
 In this way, it's possible to create, test and quickly update native application's components without need to approve this changes on the store \(App Store or Play Store\). 
 
@@ -32,7 +32,7 @@ Beagle's current releases version are:
   * **Angular:**[![badge](https://img.shields.io/npm/v/@zup-it/beagle-angular?logo=Angular)](https://github.com/ZupIT/beagle-web-angular)\*\*\*\*
   * **React:**[![badge](https://img.shields.io/npm/v/@zup-it/beagle-react?logo=React)](https://github.com/ZupIT/beagle-web-react)
 * **Backend**[![back](https://camo.githubusercontent.com/27998a386042ecb2cae7b9f09ae159bd07c935bd/68747470733a2f2f696d672e736869656c64732e696f2f6d6176656e2d63656e7472616c2f762f62722e636f6d2e7a75702e626561676c652f6672616d65776f726b)](https://mvnrepository.com/artifact/br.com.zup.beagle/framework)
-{{% pageinfo %}}
+{{% /pageinfo %}}
 
 Some definitions on this documentation exists only only in some specific minors or patches. See the captions used to denote these cases:
 
@@ -67,7 +67,14 @@ In this way, new features, flows, customizations and combinations of visual comp
 
 {{% pageinfo %}}
 Beagle was created to **optimize time and resources** for development's, design's and business' teams to publish and keep updated their applications without need to approve it on App Store or Play Store and, also, respecting the application's design system. 
-{{% pageinfo %}}
+{{% /pageinfo %}}
+
+{{% hint %}}
+{{% /hint %}}
+
+{{% tooltip %}}
+{{% /tooltip %}}
+
 
 The main advantages of using Beagle on your project are: 
 
