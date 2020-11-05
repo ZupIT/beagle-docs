@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/docs/overview/</loc>
-    <lastmod>2020-11-05T14:48:54-03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://zupit.github.io/docs-beagle/docs/tasks/beds/</loc>
     <lastmod>2020-10-30T13:10:52-03:00</lastmod>
   </url>
@@ -130,6 +125,11 @@
   <url>
     <loc>https://zupit.github.io/docs-beagle/docs/tasks/ponycopters/</loc>
     <lastmod>2020-10-30T13:10:52-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/docs/overview/</loc>
+    <lastmod>2020-11-05T15:13:59-03:00</lastmod>
   </url>
   
   <url>
