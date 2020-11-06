@@ -1,8 +1,12 @@
 ---
-description: 'Here, you''ll find how to make iOs'' configuration to install Beagle.'
+title: "IOS"
+linkTitle: "IOS"
+date: 2020-11-06
+description: >
+  A short lead description about this content page. It can be **bold** or _italic_ and can be split over multiple paragraphs.
 ---
 
-# iOS
+<hr>
 
 ## Requirements
 
