@@ -16,7 +16,7 @@
     <item>
       <title>Docs: Android</title>
       <link>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/android/</link>
-      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/android/</guid>
       <description>
@@ -29,7 +29,7 @@
     <item>
       <title>Docs: Backend</title>
       <link>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/backend/</link>
-      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/backend/</guid>
       <description>
@@ -42,56 +42,13 @@
     <item>
       <title>Docs: IOS</title>
       <link>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/ios/</link>
-      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/ios/</guid>
       <description>
         
         
         &lt;hr&gt;
-&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
-&lt;p&gt;Before you start to configure Beagle for your iOS system, it&amp;rsquo;s important to check out if you have installed all the current versions of the following programs:  ‌&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;iOS 10.0+&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Xcode 11.0+&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Swift 5.0+&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;dependencies-management&#34;&gt;&lt;strong&gt;Dependencies&#39; Management&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;Currently, Beagle is available for integrations through &lt;a href=&#34;https://github.com/Carthage/Carthage&#34;&gt;&lt;strong&gt;Carthage&lt;/strong&gt;&lt;/a&gt; and ****&lt;a href=&#34;https://cocoapods.org&#34;&gt;&lt;strong&gt;CocoaPods&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;{% hint style=&amp;ldquo;info&amp;rdquo; %}
-Remember to always check if you&amp;rsquo;re using the latest version of Beagle and, mostly, check if the different platforms you&amp;rsquo;re using are integrated to the same Beagle&amp;rsquo;s version. In this way, you ensure that all the tools are correctly communicating with each other.
-{% endhint %}&lt;/p&gt;
-&lt;h2 id=&#34;installation-with-cocoapods&#34;&gt;&lt;strong&gt;Installation with CocoaPods&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;To integrate Beagle with your application through &lt;strong&gt;CocoaPods&lt;/strong&gt;, you have to add the framework as a dependency of your &lt;code&gt;Podfile&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Current Beagle&amp;rsquo;s version**:**&lt;a href=&#34;https://cocoapods.org/pods/Beagle&#34;&gt;&lt;img src=&#34;https://img.shields.io/cocoapods/v/Beagle&#34; alt=&#34;badge&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This process must be done in the following way:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;pod &amp;#39;Beagle&amp;#39;
-pod &amp;#39;YogaKit&amp;#39;, :git =&amp;gt; &amp;#39;https://github.com/ZupIT/YogaKit&amp;#39;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;{% hint style=&amp;ldquo;warning&amp;rdquo; %}
-In the case of &lt;strong&gt;YogaKit&lt;/strong&gt;, you must use our fork because some changes are not merged yer at Facebook&amp;rsquo;s repository.
-{% endhint %}&lt;/p&gt;
-&lt;h2 id=&#34;installation-with-carthage&#34;&gt;&lt;strong&gt;Installation with Carthage&lt;/strong&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;step-1-integrate-with-your-application&#34;&gt;Step 1: Integrate with your application&lt;/h3&gt;
-&lt;p&gt;To integrate Beagle with your application through &lt;strong&gt;Carthage&lt;/strong&gt;, you have to add the framework as a dependency on your &lt;code&gt;Cartfile&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;This process must be done in the following way:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;github &amp;#34;ZupIT/beagle&amp;#34; ~&amp;gt; 1.0.1
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;{% hint style=&amp;ldquo;warning&amp;rdquo; %}
-After an important release, we&amp;rsquo;ll probably lauch versions with specific bug fixes for iOS, in which will have a version tag followed the sufix &amp;ldquo;-iOS&amp;rdquo; (e.g: &amp;ldquo;1.0.1-iOS&amp;rdquo;).
-{% endhint %}&lt;/p&gt;
-&lt;h3 id=&#34;step-2-build-on-dependencies&#34;&gt;Step 2: Build on dependencies&lt;/h3&gt;
-&lt;p&gt;After the integration, you must follow the normal process of building with Carthage on your dependencies. The expected is that you receive some &lt;strong&gt;.framework files&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;In Beagle&amp;rsquo;s case, the mandatory files to make you application work are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Beagle.framework&lt;/li&gt;
-&lt;li&gt;BeagleSchema.framework&lt;/li&gt;
-&lt;li&gt;YogaKit.framework&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Other frameworks can be used only in more specific scenarios.&lt;/p&gt;
-&lt;h2 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h2&gt;
-&lt;p&gt;On this section, you made Beagle&amp;rsquo;s &lt;strong&gt;initial installation&lt;/strong&gt; on your application!&lt;br&gt;
-To keep configuring Beagle:&lt;/p&gt;
-&lt;p&gt;👉To keep knowing Beagle and test if everything worked with the installation, go to &lt;strong&gt;initial configurations&lt;/strong&gt; and &lt;a href=&#34;../using-beagle/ios.md#how-to-display-a-hello-beagle-screen&#34;&gt;&lt;strong&gt;create your first Hello World!&lt;/strong&gt;&lt;/a&gt;****&lt;/p&gt;
-&lt;p&gt;👉  If you want to go straight to practice, access our &lt;a href=&#34;../new-project/case-ios/&#34;&gt;&lt;strong&gt;tutorial to create a project from zero&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -99,7 +56,7 @@ To keep configuring Beagle:&lt;/p&gt;
     <item>
       <title>Docs: WEB</title>
       <link>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/web/</link>
-      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/web/</guid>
       <description>
