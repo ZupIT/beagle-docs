@@ -1,10 +1,10 @@
 ---
-title: "Installing Beagle"
-linkTitle: "Installing Beagle"
-weight: 20
+title: "Usando o Beagle"
+linkTitle: "Usando o Beagle"
+weight: 30
 menu:
   main:
-    weight: 20
+    weight: 30
 ---
 
 Esta é a página de destino de uma seção de nível superior.
