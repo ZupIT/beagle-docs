@@ -1,6 +1,6 @@
 ---
 title: "Getting Started"
-linkTitle: "Installing Beagle"
+linkTitle: "Getting Started"
 weight: 2
 description: >
   What does your user need to know to try your project?
