@@ -6,6 +6,8 @@ description: >
   A short lead description about this content page. It can be **bold** or _italic_ and can be split over multiple paragraphs.
 ---
 
+<hr>
+
 {{% pageinfo %}}
 This is a placeholder page. Replace it with your own content.
 {{% /pageinfo %}}
@@ -62,7 +64,7 @@ Next level leggings before they sold out, PBR&B church-key shaman echo park. Kal
 ###### Header 6
 
 | What      | Follows         |
-|-----------|-----------------|
+|----------  |-----------------|
 | A table   | A header        |
 | A table   | A header        |
 | A table   | A header        |
