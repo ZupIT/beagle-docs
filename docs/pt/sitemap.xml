@@ -3,13 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/getting-started/</loc>
-    <lastmod>2020-11-06T12:01:37-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/</loc>
-    <lastmod>2020-11-06T12:01:37-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/</loc>
+    <lastmod>2020-11-06T12:38:50-03:00</lastmod>
   </url>
   
   <url>
@@ -28,13 +23,48 @@
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/android/</loc>
-    <lastmod>2020-11-06T12:01:37-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/</loc>
+    <lastmod>2020-11-06T12:38:50-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/backend/</loc>
-    <lastmod>2020-11-06T12:01:37-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/</loc>
+    <lastmod>2020-11-06T12:38:50-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/</loc>
+    <lastmod>2020-11-06T12:38:50-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/android/</loc>
+    <lastmod>2020-11-06T12:38:50-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/android/</loc>
+    <lastmod>2020-11-06T12:38:50-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/android/</loc>
+    <lastmod>2020-11-06T12:38:50-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/backend/</loc>
+    <lastmod>2020-11-06T12:38:50-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/backend/</loc>
+    <lastmod>2020-11-06T12:38:50-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/backend/</loc>
+    <lastmod>2020-11-06T12:38:50-03:00</lastmod>
   </url>
   
   <url>
@@ -53,8 +83,18 @@
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/ios/</loc>
-    <lastmod>2020-11-06T12:01:37-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/ios/</loc>
+    <lastmod>2020-11-06T12:38:50-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/ios/</loc>
+    <lastmod>2020-11-06T12:38:50-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/ios/</loc>
+    <lastmod>2020-11-06T12:38:50-03:00</lastmod>
   </url>
   
   <url>
@@ -73,8 +113,18 @@
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/web/</loc>
-    <lastmod>2020-11-06T12:01:37-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/web/</loc>
+    <lastmod>2020-11-06T12:38:50-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/web/</loc>
+    <lastmod>2020-11-06T12:38:50-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/web/</loc>
+    <lastmod>2020-11-06T12:38:50-03:00</lastmod>
   </url>
   
 </urlset>
