@@ -1,10 +1,7 @@
 ---
-title: "Getting Started"
-linkTitle: "Getting Started"
-weight: 20
-menu:
-  main:
-    weight: 20
+title: "Primeiros Passos"
+linkTitle: "Primeiros Passos"
+weight: 1
 ---
 
 Esta é a página de destino de uma seção de nível superior.

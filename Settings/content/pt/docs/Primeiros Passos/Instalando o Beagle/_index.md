@@ -1,7 +1,7 @@
 ---
 title: "Instalando o beagle"
 linkTitle: "Instalando o beagle"
-weight: 25
+weight: 5
 menu:
   main:
     weight: 25
