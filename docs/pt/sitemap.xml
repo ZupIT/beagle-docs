@@ -4,17 +4,17 @@
   
   <url>
     <loc>https://zupit.github.io/docs-beagle/pt/docs/getting-started/</loc>
-    <lastmod>2020-11-06T11:49:36-03:00</lastmod>
+    <lastmod>2020-11-06T12:01:37-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/</loc>
-    <lastmod>2020-11-06T11:49:36-03:00</lastmod>
+    <lastmod>2020-11-06T12:01:37-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://zupit.github.io/docs-beagle/pt/docs/</loc>
-    <lastmod>2020-11-04T15:41:07-03:00</lastmod>
+    <lastmod>2020-11-06T12:01:37-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,22 +29,12 @@
   
   <url>
     <loc>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/android/</loc>
-    <lastmod>2020-11-06T11:49:36-03:00</lastmod>
+    <lastmod>2020-11-06T12:01:37-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/backend/</loc>
-    <lastmod>2020-11-06T11:49:36-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/ios/</loc>
-    <lastmod>2020-11-06T11:49:36-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/web/</loc>
-    <lastmod>2020-11-06T11:49:36-03:00</lastmod>
+    <lastmod>2020-11-06T12:01:37-03:00</lastmod>
   </url>
   
   <url>
@@ -63,6 +53,11 @@
   </url>
   
   <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/ios/</loc>
+    <lastmod>2020-11-06T12:01:37-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zupit.github.io/docs-beagle/pt/search/</loc>
     <lastmod>2020-11-04T15:33:04-03:00</lastmod>
     <xhtml:link
@@ -75,6 +70,11 @@
                 hreflang="pt"
                 href="https://zupit.github.io/docs-beagle/pt/search/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/web/</loc>
+    <lastmod>2020-11-06T12:01:37-03:00</lastmod>
   </url>
   
 </urlset>
