@@ -1,0 +1,70 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beagle – Criando um projeto do zero</title>
+    <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/</link>
+    <description>Recent content in Criando um projeto do zero on Beagle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Android</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/android/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/android/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Backend</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/backend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/backend/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: IOS</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/ios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/ios/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: WEB</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/web/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

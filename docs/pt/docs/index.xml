@@ -15,10 +15,36 @@
     
     <item>
       <title>Docs: Android</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/android/</link>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/android/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/android/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/android/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Android</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/android/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/android/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Android</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/android/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/android/</guid>
       <description>
         
         
@@ -28,10 +54,36 @@
     
     <item>
       <title>Docs: Backend</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/backend/</link>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/backend/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/backend/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Backend</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/backend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/backend/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Backend</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/backend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/backend/</guid>
       <description>
         
         
@@ -41,10 +93,38 @@
     
     <item>
       <title>Docs: IOS</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/ios/</link>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/ios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/ios/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/ios/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: IOS</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/ios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/ios/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: IOS</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/ios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/ios/</guid>
       <description>
         
         
@@ -55,10 +135,36 @@
     
     <item>
       <title>Docs: WEB</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/web/</link>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/web/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/web/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: WEB</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/web/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: WEB</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/web/</guid>
       <description>
         
         
