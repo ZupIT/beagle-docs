@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: IOS</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/getting-started/intalling-ios/</link>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/intalling-ios/</link>
       <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/getting-started/intalling-ios/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/intalling-ios/</guid>
       <description>
         
         
@@ -67,6 +67,45 @@ To keep configuring Beagle:&lt;/p&gt;
 &lt;p&gt;👉To keep knowing Beagle and test if everything worked with the installation, go to &lt;strong&gt;initial configurations&lt;/strong&gt; and &lt;a href=&#34;../using-beagle/ios.md#how-to-display-a-hello-beagle-screen&#34;&gt;&lt;strong&gt;create your first Hello World!&lt;/strong&gt;&lt;/a&gt;****&lt;/p&gt;
 &lt;p&gt;👉  If you want to go straight to practice, access our &lt;a href=&#34;../new-project/case-ios/&#34;&gt;&lt;strong&gt;tutorial to create a project from zero&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
 
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: </title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/installing-android/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/installing-android/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: </title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/installing-backend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/installing-backend/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: </title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/installing-web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/installing-web/</guid>
+      <description>
+        
+        
+        
       </description>
     </item>
     
