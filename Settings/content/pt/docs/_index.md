@@ -1,7 +1,6 @@
-
 ---
-title: "Documentação Beagle"
-linkTitle: "Documentação"
+title: "Overview"
+linkTitle: "Overview"
 weight: 20
 menu:
   main:
@@ -13,5 +12,3 @@ Esta é a página de destino de uma seção de nível superior.
 * Oppsummer
 * Seksjonen din
 * Her
-
-
