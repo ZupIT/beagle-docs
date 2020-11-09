@@ -8,18 +8,8 @@
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/key-concepts/</loc>
-    <lastmod>2020-11-09T11:13:56-03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://zupit.github.io/docs-beagle/pt/docs/overview/</loc>
-    <lastmod>2020-11-09T11:13:56-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/</loc>
-    <lastmod>2020-11-09T11:13:56-03:00</lastmod>
+    <lastmod>2020-11-09T11:25:44-03:00</lastmod>
   </url>
   
   <url>
@@ -28,8 +18,8 @@
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/ressources/</loc>
-    <lastmod>2020-11-09T11:13:56-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/key-concepts/</loc>
+    <lastmod>2020-11-09T11:25:44-03:00</lastmod>
   </url>
   
   <url>
@@ -53,8 +43,23 @@
   </url>
   
   <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/</loc>
+    <lastmod>2020-11-09T11:25:44-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/ressources/</loc>
+    <lastmod>2020-11-09T11:25:44-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/faq/</loc>
+    <lastmod>2020-11-09T11:25:44-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zupit.github.io/docs-beagle/pt/docs/playground/</loc>
-    <lastmod>2020-11-09T11:13:56-03:00</lastmod>
+    <lastmod>2020-11-09T11:25:44-03:00</lastmod>
   </url>
   
   <url>
@@ -74,11 +79,6 @@
   
   <url>
     <loc>https://zupit.github.io/docs-beagle/pt/docs/release-notes/</loc>
-    <lastmod>2020-11-09T11:13:56-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/faq/</loc>
     <lastmod>2020-11-09T11:13:56-03:00</lastmod>
   </url>
   

@@ -14,11 +14,11 @@
     
     
     <item>
-      <title>Docs: Key Concepts</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/key-concepts/</link>
+      <title>Docs: Visão Geral</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/overview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/key-concepts/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/overview/</guid>
       <description>
         
         
@@ -34,11 +34,11 @@
     </item>
     
     <item>
-      <title>Docs: Overview</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/overview/</link>
+      <title>Docs: Principais conceitos</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/key-concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/overview/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/key-concepts/</guid>
       <description>
         
         
@@ -92,11 +92,11 @@
     </item>
     
     <item>
-      <title>Docs: Notas de atualização</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/release-notes/</link>
+      <title>Docs: FAQ</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/release-notes/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/faq/</guid>
       <description>
         
         
@@ -111,11 +111,11 @@
     </item>
     
     <item>
-      <title>Docs: FAQ</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/faq/</link>
+      <title>Docs: Notas de atualização</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/release-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/faq/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/release-notes/</guid>
       <description>
         
         
