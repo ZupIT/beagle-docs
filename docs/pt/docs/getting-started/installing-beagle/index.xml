@@ -1,0 +1,70 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beagle – Installing Beagle</title>
+    <link>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/</link>
+    <description>Recent content in Installing Beagle on Beagle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Android</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/android/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/android/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Backend</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/backend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/backend/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: IOS</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/ios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/ios/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: WEB</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/getting-started/installing-beagle/web/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
