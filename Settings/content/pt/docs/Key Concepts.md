@@ -1,7 +1,7 @@
 ---
-title: "Key Concepts"
-linkTitle: "Key Concepts"
-weight: 1
+title: "Principais conceitos"
+linkTitle: "Principais conceitos"
+weight: 2
 ---
 
 ----

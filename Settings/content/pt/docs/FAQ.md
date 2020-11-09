@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
 linkTitle: "FAQ"
-weight: 50
+weight: 5
 menu:
   main:
     weight: 50
