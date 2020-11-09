@@ -6,6 +6,8 @@ description: >
   A short lead description about this content page. It can be **bold** or _italic_ and can be split over multiple paragraphs.
 ---
 
+<hr>
+
 {{% pageinfo %}}
 This is a placeholder page. Replace it with your own content.
 {{% /pageinfo %}}
@@ -16,11 +18,13 @@ There should be whitespace between paragraphs. Vape migas chillwave sriracha pou
 
 90's four loko seitan photo booth gochujang freegan tumeric listicle fam ugh humblebrag. Bespoke leggings gastropub, biodiesel brunch pug fashion axe meh swag art party neutra deep v chia. Enamel pin fanny pack knausgaard tofu, artisan cronut hammock meditation occupy master cleanse chartreuse lumbersexual. Kombucha kogi viral truffaut synth distillery single-origin coffee ugh slow-carb marfa selfies. Pitchfork schlitz semiotics fanny pack, ugh artisan vegan vaporware hexagon. Polaroid fixie post-ironic venmo wolf ramps **kale chips**.
 
+{{% pageinfo %}}
 > There should be no margin above this first sentence.
 >
 > Blockquotes should be a lighter gray with a border along the left side in the secondary color.
 >
 > There should be no margin below this final sentence.
+{{% /pageinfo %}}
 
 ## First Header 2
 
@@ -60,7 +64,7 @@ Next level leggings before they sold out, PBR&B church-key shaman echo park. Kal
 ###### Header 6
 
 | What      | Follows         |
-|-----------|-----------------|
+|----------  |-----------------|
 | A table   | A header        |
 | A table   | A header        |
 | A table   | A header        |
