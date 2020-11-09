@@ -1,10 +1,10 @@
 ---
-title: "Documentation"
-linkTitle: "Docs"
-weight: 10
+title: "FAQ"
+linkTitle: "FAQ"
+weight: 50
 menu:
   main:
-    weight: 10
+    weight: 50
 ---
 
 Esta é a página de destino de uma seção de nível superior.

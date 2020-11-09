@@ -1,10 +1,7 @@
 ---
-title: "Documentation"
-linkTitle: "Docs"
-weight: 10
-menu:
-  main:
-    weight: 10
+title: "Componentes demo"
+linkTitle: "Componentes demo"
+weight: 3
 ---
 
 Esta é a página de destino de uma seção de nível superior.
