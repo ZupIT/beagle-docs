@@ -1,5 +1,5 @@
 ---
-title: "Beagle para IOS"
+title: "Customizado com ServerDrivenComponent"
 ---
 
 Esta é a página de destino de uma seção de nível superior.
