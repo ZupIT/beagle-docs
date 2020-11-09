@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Beagle – Overview</title>
+    <title>Beagle – Documentation</title>
     <link>https://zupit.github.io/docs-beagle/pt/docs/</link>
-    <description>Recent content in Overview on Beagle</description>
+    <description>Recent content in Documentation on Beagle</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://zupit.github.io/docs-beagle/pt/docs/index.xml" rel="self" type="application/rss+xml" />
@@ -14,11 +14,127 @@
     
     
     <item>
-      <title>Docs: Android</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/android/</link>
+      <title>Docs: Key Concepts</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/key-concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/android/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/key-concepts/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Overview</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/overview/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Usando playground</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/playground/web/using-the-playgrounds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/playground/web/using-the-playgrounds/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Componentes demo</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/playground/web/demo-components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/playground/web/demo-components/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Notas de atualização</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/release-notes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: FAQ</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/faq/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Android</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/android/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/android/</guid>
       <description>
         
         
@@ -28,10 +144,10 @@
     
     <item>
       <title>Docs: Android</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/android/</link>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/get-started/installing-beagle/android/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/android/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/get-started/installing-beagle/android/</guid>
       <description>
         
         
@@ -41,10 +157,10 @@
     
     <item>
       <title>Docs: Android</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/android/</link>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/android/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/android/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/android/</guid>
       <description>
         
         
@@ -54,10 +170,10 @@
     
     <item>
       <title>Docs: Backend</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/backend/</link>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/backend/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/backend/</guid>
       <description>
         
         
@@ -67,10 +183,10 @@
     
     <item>
       <title>Docs: Backend</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/backend/</link>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/get-started/installing-beagle/backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/backend/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/get-started/installing-beagle/backend/</guid>
       <description>
         
         
@@ -80,10 +196,10 @@
     
     <item>
       <title>Docs: Backend</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/backend/</link>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/backend/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/backend/</guid>
       <description>
         
         
@@ -93,10 +209,10 @@
     
     <item>
       <title>Docs: IOS</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/ios/</link>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/ios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/ios/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/ios/</guid>
       <description>
         
         
@@ -107,10 +223,10 @@
     
     <item>
       <title>Docs: IOS</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/ios/</link>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/get-started/installing-beagle/ios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/ios/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/get-started/installing-beagle/ios/</guid>
       <description>
         
         
@@ -121,10 +237,10 @@
     
     <item>
       <title>Docs: IOS</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/ios/</link>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/ios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/ios/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/ios/</guid>
       <description>
         
         
@@ -135,10 +251,10 @@
     
     <item>
       <title>Docs: WEB</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/web/</link>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/web/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/web/</guid>
       <description>
         
         
@@ -148,10 +264,10 @@
     
     <item>
       <title>Docs: WEB</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/web/</link>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/get-started/installing-beagle/web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/web/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/get-started/installing-beagle/web/</guid>
       <description>
         
         
@@ -161,10 +277,10 @@
     
     <item>
       <title>Docs: WEB</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/web/</link>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/web/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/web/</guid>
       <description>
         
         
