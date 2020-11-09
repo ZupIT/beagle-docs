@@ -1,10 +1,7 @@
 ---
-title: "FAQ"
-linkTitle: "FAQ"
-weight: 9
-menu:
-  main:
-    weight: 50
+title: "Posicionamento de componentes"
+linkTitle: "Posicionamento de componentes"
+weight: 2
 ---
 
 Esta é a página de destino de uma seção de nível superior.
