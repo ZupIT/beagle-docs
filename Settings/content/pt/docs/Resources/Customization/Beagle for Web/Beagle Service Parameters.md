@@ -1,5 +1,5 @@
 ---
-title: "Serialização"
+title: "Parâmetros Beagle Service"
 ---
 
 Esta é a página de destino de uma seção de nível superior.

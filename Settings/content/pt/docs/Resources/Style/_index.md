@@ -1,5 +1,5 @@
 ---
-title: "Customizado com OnInit"
+title: "Estilização"
 ---
 
 Esta é a página de destino de uma seção de nível superior.

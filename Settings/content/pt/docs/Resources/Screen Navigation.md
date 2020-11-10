@@ -1,5 +1,5 @@
 ---
-title: "Serialização"
+title: "Navegação de telas"
 ---
 
 Esta é a página de destino de uma seção de nível superior.

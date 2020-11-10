@@ -1,5 +1,5 @@
 ---
-title: "Serialização"
+title: "Estrutura de dados"
 ---
 
 Esta é a página de destino de uma seção de nível superior.
