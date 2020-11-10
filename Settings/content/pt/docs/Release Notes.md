@@ -1,7 +1,7 @@
 ---
 title: "Notas de atualização"
 linkTitle: "Notas de atualização"
-weight: 40
+weight: 8
 menu:
   main:
     weight: 40
