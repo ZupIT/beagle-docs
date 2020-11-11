@@ -14,7 +14,7 @@
     
     
     <item>
-      <title>Docs: Playground Web&#34;</title>
+      <title>Docs: Playground Web</title>
       <link>https://zupit.github.io/docs-beagle/pt/docs/playground/web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -22,12 +22,13 @@
       <description>
         
         
-        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Oppsummer&lt;/li&gt;
-&lt;li&gt;Seksjonen din&lt;/li&gt;
-&lt;li&gt;Her&lt;/li&gt;
-&lt;/ul&gt;
+        &lt;hr&gt;
+&lt;h3 id=&#34;acessando-o-playground&#34;&gt;Acessando o &lt;strong&gt;Playground&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;O playground pode ser acessado pelo &lt;strong&gt;seguinte link&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;{% embed url=&amp;ldquo;&lt;a href=&#34;https://beagle-playground.netlify.app&#34;&gt;https://beagle-playground.netlify.app&lt;/a&gt;&amp;rdquo; %}&lt;/p&gt;
+&lt;p&gt;Você terá acesso ao seguinte projeto demo:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../.gitbook/assets/image%20%2827%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;O menu de arquivos fica à esquerda, no centro fica o JSON do arquivo selecionado, e a direita é onde você pode ver o preview do JSON selecionado.&lt;/p&gt;
 
       </description>
     </item>
