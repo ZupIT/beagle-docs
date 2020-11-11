@@ -1,8 +1,7 @@
 ---
 title: React
 description: >
-  Nesta seção, você encontra o passo a passo inicial para usar a biblioteca
-  Beagle no React.
+  Nesta seção, você encontra o passo a passo inicial para usar a biblioteca Beagle no React.
 ---
 
 ---
