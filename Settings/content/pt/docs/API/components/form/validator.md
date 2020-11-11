@@ -1,6 +1,5 @@
 ---
 title: "Validator"
-linkTitle: "Validator"
 description: >
     Nesta seção, você encontra a descrição do Validator e seus atributos.
 ---

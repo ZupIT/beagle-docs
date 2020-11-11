@@ -1,6 +1,5 @@
 ---
 title: "Text"
-linkTitle: "Text"
 description: >
     Nesta seção, você encontra a descrição do componente do componente Text e seus atributos
 ---

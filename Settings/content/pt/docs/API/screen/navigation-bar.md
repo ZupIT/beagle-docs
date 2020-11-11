@@ -1,6 +1,5 @@
 ---
 title: "Navigation Bar"
-linkTitle: "Navigation Bar"
 description: >
    Nesta seção, você encontra a descrição do componente Navigation Bar e descrição de seus componentes
 ---

@@ -1,6 +1,5 @@
 ---
 title: "PageIndicator"
-linkTitle: "PageIndicator"
 description: >
     Nesta seção, você encontra a descrição do componente Page Indicator.
 ---

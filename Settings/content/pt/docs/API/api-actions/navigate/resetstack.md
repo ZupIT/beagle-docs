@@ -1,6 +1,5 @@
 ---
 title: "ResetStack"
-linkTitle: "ResetStack"
 description: >
   Nesta seção, você encontra a descrição da ação ResetStack e seus atributos
 ---

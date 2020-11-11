@@ -1,6 +1,5 @@
 ---
 title: "Eventos"
-linkTitle: "Eventos"
 description: >
   Nesta seção, você encontra uma descrição sobre Eventos
 ---

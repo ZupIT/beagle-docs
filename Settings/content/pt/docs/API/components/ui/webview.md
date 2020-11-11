@@ -1,6 +1,5 @@
 ---
 title: "WebView"
-linkTitle: "WebView"
 description: >
     Nesta seção, você encontra a descrição do componente Web View e seus atributos
 ---

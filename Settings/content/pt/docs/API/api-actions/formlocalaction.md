@@ -1,6 +1,5 @@
 ---
 title: "FormLocalAction"
-linkTitle: "FormLocalAction"
 description: >
   Descrição do componente FormLocalAction.
 ---

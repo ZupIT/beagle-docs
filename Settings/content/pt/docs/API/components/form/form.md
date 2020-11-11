@@ -1,6 +1,5 @@
 ---
 title: "Form"
-linkTitle: "Form"
 description: >
   Nesta seção, você encontra a descrição do Form e seus atributos.
 ---

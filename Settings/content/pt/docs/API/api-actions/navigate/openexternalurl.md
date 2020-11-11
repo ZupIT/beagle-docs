@@ -1,6 +1,5 @@
 ---
 title: "OpenExternalURL"
-linkTitle: "OpenExternalURL"
 description: >
   Nesta seção, você encontra a definição da ação OpenExternalURL e seus
   atributos.

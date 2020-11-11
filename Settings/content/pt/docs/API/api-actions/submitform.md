@@ -1,6 +1,5 @@
 ---
 title: "SubmitForm"
-linkTitle: "SubmitForm"
 description: >
   Nesta seção, você encontra a definição do SubmitForm e detalhes de seus
   atributos.

@@ -1,6 +1,5 @@
 ---
 title: "SetContext"
-linkTitle: "SetContext"
 description: >
   Nesta seção, você encontra a definição do SetContext e detalhes de seus
   atributos.

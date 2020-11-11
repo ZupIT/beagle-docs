@@ -1,6 +1,5 @@
 ---
 title: "ImagePath"
-linkTitle: "ImagePath"
 description: >
   Nesta seção, você encontra a descrição da classe ImagePath.
 ---

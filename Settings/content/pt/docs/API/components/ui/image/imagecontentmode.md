@@ -1,6 +1,5 @@
 ---
 title: "ImageContentMode"
-linkTitle: "ImageContentMode"
 description: >
     Nesta seção, você encontra a descrição da classe ImageContentMode.
 ---

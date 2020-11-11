@@ -1,6 +1,5 @@
 ---
 title: "AddChildren"
-linkTitle: "AddChildren"
 description: >
     Nesta seção, você encontra a definição do AddChildrenAction e detalhes de seus atributos.
 ---

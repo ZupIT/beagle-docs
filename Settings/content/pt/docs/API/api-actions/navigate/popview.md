@@ -1,6 +1,5 @@
 ---
 title: "PopView"
-linkTitle: "PopView"
 description: >
   Nesta seção, você encontra a descrição da ação PopView e seus atributos
 ---

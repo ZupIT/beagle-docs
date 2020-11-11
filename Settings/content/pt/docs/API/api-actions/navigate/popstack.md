@@ -1,6 +1,5 @@
 ---
 title: "PopStack"
-linkTitle: "PopStack"
 description: >
   Nesta seção, você encontra a descrição da ação PopStack e seus atributos
 ---

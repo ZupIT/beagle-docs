@@ -1,6 +1,5 @@
 ---
 title: "Simple Form"
-linkTitle: "Simple Form"
 description: >
   Nesta seção, você encontra a descrição do componente Simple Form.
 ---

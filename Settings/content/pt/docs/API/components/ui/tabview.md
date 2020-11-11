@@ -1,6 +1,5 @@
 ---
 title: "TabView"
-linkTitle: "TabView"
 description: >
   Nesta seção, você encontra uma descrição do componente Tab View e seus
   atributos. Este componente foi depreciado.

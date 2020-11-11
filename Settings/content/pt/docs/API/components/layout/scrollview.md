@@ -1,6 +1,5 @@
 ---
 title: "ScrollView"
-linkTitle: "ScrollView"
 description: >
   Nesta seção, você encontra a descrição do componente Scroll View e seus atributos.
 ---

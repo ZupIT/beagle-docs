@@ -1,6 +1,5 @@
 ---
 title: "PopToView"
-linkTitle: "PopToView"
 description: >
   Nesta seção, você encontra a descrição da ação PopToView e seus atributos
 ---

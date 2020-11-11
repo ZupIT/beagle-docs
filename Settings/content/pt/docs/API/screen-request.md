@@ -1,6 +1,5 @@
 ---
 title: "Screen Request"
-linkTitle: "Screen Request"
 description: >
     Nesta seção, você encontra a descrição da classe Screen Request e seus atributos.
 ---

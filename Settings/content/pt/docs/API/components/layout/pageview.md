@@ -1,6 +1,5 @@
 ---
 title: "PageView"
-linkTitle: "PageView"
 description: >
    Nesta seção, você encontra a descrição do componente Page View e seus atributos.
 ---

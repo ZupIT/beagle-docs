@@ -1,6 +1,5 @@
 ---
 title: "Contexto"
-linkTitle: "Contexto"
 description: >
   Nesta seção, você encontra uma descrição sobre a sobre o componente contexto e seus atributos
 ---

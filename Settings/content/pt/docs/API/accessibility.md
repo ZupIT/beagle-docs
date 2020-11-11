@@ -1,6 +1,5 @@
 ---
 title: "Acessibilidade"
-linkTitle: "Acessibilidade"
 description: >
   Nesta seção, você encontra uma descrição sobre a API de Acessibilidade
 ---

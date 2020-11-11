@@ -1,6 +1,5 @@
 ---
 title: "FormValidation"
-linkTitle: "FormValidation"
 description: >
   Nesta seção, você encontra a definição do FormValidation e detalhes de seus
   atributos.

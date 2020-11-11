@@ -1,6 +1,5 @@
 ---
 title: "Container"
-linkTitle: "Container"
 description: >
     Nesta seção, você encontra a descrição do componente Container e seus atributos.
 ---
