@@ -3,7 +3,7 @@ title: "Analytics"
 description: >
     Nesta seção, você encontra uma descrição de como preparar a aplicação para mapear informações para o analytics.
 ---
-
+---
 ## O que é?
 
 Como a maioria dos projetos usam alguma forma de marcação/tags para agrupar dados sobre o comportamento do usuário, o Beagle oferece uma ajuda para você conseguir essas informações.

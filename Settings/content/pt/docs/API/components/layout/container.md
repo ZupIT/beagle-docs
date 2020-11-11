@@ -3,7 +3,7 @@ title: "Container"
 description: >
     Nesta seção, você encontra a descrição do componente Container e seus atributos.
 ---
-
+---
 ## O que é?
 
 O `Container` é um componente responsável por conter outros componentes dentro de si. 

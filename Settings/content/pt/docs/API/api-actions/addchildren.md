@@ -3,7 +3,7 @@ title: "AddChildren"
 description: >
     Nesta seção, você encontra a definição do AddChildrenAction e detalhes de seus atributos.
 ---
-
+---
 ## O que é?
 
 A ação `AddChildrenAction` é responsável por adicionar - no início ou no final - ou trocar todas as views que foram herdadas de  `Widget`  e que aceitam filhos.

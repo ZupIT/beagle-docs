@@ -3,7 +3,7 @@ title: "PageIndicator"
 description: >
     Nesta seção, você encontra a descrição do componente Page Indicator.
 ---
-
+---
 ## O que é?
 
 O `PageIndicator` é um componente que tem como funcionalidade indicar a quantidade de páginas e qual é a atual do [**PageView**](pageview.md).

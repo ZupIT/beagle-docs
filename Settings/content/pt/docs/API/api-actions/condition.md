@@ -3,7 +3,7 @@ title: "Condition"
 description: >
    Nesta seção, você encontra a definição do Condition e detalhes de seus atributos.
 ---
-
+---
 ## O que é?
 
 É uma ação que tem um parâmetro do tipo Boolean e de acordo com esse valor é executado a ação onTrue ou onFalse.

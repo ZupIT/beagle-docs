@@ -3,7 +3,7 @@ title: "Touchable"
 description: >
   Nesta seção, você encontra a descrição do componente Touchable que habilita uma ação em outros componentes.
 ---
-
+---
 ## O que é?
 
 O Touchable é responsável por definir as áreas clicáveis dentro da aplicação em componentes que não são clicáveis nativamente.

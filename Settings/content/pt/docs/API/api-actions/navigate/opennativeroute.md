@@ -3,7 +3,7 @@ title: "OpenNativeRoute"
 description: >
   Nesta seção, você encontra a descrição da ação OpenNativeRoute e seus atributos
 ---
-
+---
 ## O que é?
 
 O **OpenNativeRoute** é uma ação que realiza a navegação para uma tela nativa. 

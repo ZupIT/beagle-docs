@@ -3,7 +3,7 @@ title: "Form"
 description: >
   Nesta seção, você encontra a descrição do Form e seus atributos.
 ---
-
+---
 {% hint style="warning" %}
 Esse componente foi **depreciado**! É recomendado usar o [**Simple Form**](simple-form-web.md).
 {% endhint %}

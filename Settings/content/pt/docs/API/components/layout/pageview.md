@@ -3,7 +3,7 @@ title: "PageView"
 description: >
    Nesta seção, você encontra a descrição do componente Page View e seus atributos.
 ---
-
+---
 ## O que é?
 
 O componente `PageView` é um container especializado em apresentar páginas que são exibidas na horizontal e podem conter um indicador de páginas. Essas páginas podem ser qualquer objeto server-driven.

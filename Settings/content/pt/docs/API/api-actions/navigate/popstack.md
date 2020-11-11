@@ -3,7 +3,7 @@ title: "PopStack"
 description: >
   Nesta seção, você encontra a descrição da ação PopStack e seus atributos
 ---
-
+---
 ## O que é?
 
 Remove a pilha de exibição atual.

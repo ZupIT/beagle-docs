@@ -4,7 +4,7 @@ weight: 11
 description: >
   Nesta seção, você encontra a descrição da classe ImagePath.
 ---
-
+---
 ## O que é?
 
 O widget de Imagem define uma imagem nativa usando informações server-driven recebidas por meio do Beagle.  

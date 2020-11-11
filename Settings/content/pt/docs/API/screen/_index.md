@@ -4,7 +4,7 @@ weight: 11
 description: >
   Nesta seção, você encontra a descrição dos componentes de Screen e seus atributos.
 ---
-
+---
 ## O que é?
 
 A sua tela possui atributos e componentes que podem ser usados e configurados. Na tabela abaixo, listamos as principais características para cada um destes atributos. 

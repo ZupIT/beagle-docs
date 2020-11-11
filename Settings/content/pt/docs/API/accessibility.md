@@ -3,7 +3,7 @@ title: "Acessibilidade"
 description: >
   Nesta seção, você encontra uma descrição sobre a API de Acessibilidade
 ---
-
+---
 ## O que é?
 
 Por enquanto, existem dois atributos comuns de acessibilidade entre todas as plataformas que o Beagle suporta.

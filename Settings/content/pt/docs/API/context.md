@@ -3,7 +3,7 @@ title: "Contexto"
 description: >
   Nesta seção, você encontra uma descrição sobre a sobre o componente contexto e seus atributos
 ---
-
+---
 ## O que é? 
 
 O contexto é uma **variável de qualquer tipo**, incluindo o mapa que define um conjunto de pares de chaves/valores. Por meio de **bindings**, o valor do contexto pode ser acessado por qualquer componente ou ação do seu escopo. 

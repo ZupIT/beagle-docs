@@ -4,7 +4,7 @@ description: >
   Nesta seção, você encontra a definição do FormValidation e detalhes de seus
   atributos.
 ---
-
+---
 {% hint style="warning" %}
 Essa ação foi **depreciada** junto com o Form!
 {% endhint %}

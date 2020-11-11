@@ -4,7 +4,7 @@ description: >
   Nesta seção, você encontra a definição do atributo Remote da classe Route e seus
   atributos.
 ---
-
+---
 ## O que é? <a id="definicao"></a>
 
 Uma rota de navegação para um conteúdo remoto.

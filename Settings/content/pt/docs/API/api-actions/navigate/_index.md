@@ -3,7 +3,7 @@ title: "Navigate"
 description: >
     Nesta seção, você encontra a descrição das Ações disponíveis para navegação em uma aplicação Beagle.
 ---
-
+---
 O Navigate é  responsável por toda navegação de telas com Beagle. Nele, é possível configurar alguns tipos de ações de navegação, que você pode conferir nas próximas páginas. 
 
 ### Ações de navegação

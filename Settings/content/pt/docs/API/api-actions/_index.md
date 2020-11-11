@@ -4,7 +4,7 @@ weight: 11
 description: >
   Descrição dos componentes do tipo Action e seus atributos.
 ---
-
+---
 No Beagle, uma ação lida com os comportamentos \(funções\), que serão executadas em sua aplicação assim que um determinado evento for disparado. Essas ações podem ser padrão do próprio Beagle ou customizadas. 
 
 Qualquer evento no Beagle, deve ser associado a uma lista de ações. Veja abaixo um exemplo de componente de botão, que associa uma ação de alerta padrão ao seu evento de `onPress`:

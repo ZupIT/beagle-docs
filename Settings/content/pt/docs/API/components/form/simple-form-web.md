@@ -3,7 +3,7 @@ title: "Simple Form"
 description: >
   Nesta seção, você encontra a descrição do componente Simple Form.
 ---
-
+---
 ## O que é?
 
 O`simpleForm` é responsável por renderizar um formulário em tela.

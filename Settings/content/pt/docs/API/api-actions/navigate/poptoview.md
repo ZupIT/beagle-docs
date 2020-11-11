@@ -3,7 +3,7 @@ title: "PopToView"
 description: >
   Nesta seção, você encontra a descrição da ação PopToView e seus atributos
 ---
-
+---
 ## O que é? <a id="definicao"></a>
 
 Retorna para uma tela específica e limpa a navegação que foi gerada a partir dessa tela. 

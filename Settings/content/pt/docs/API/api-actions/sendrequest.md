@@ -3,7 +3,7 @@ title: "SendRequest"
 description: >
     Nesta seção, você encontra a definição do Send Request e detalhes de seus atributos.
 ---
-
+---
 ## O que é?
 
 A classe `sendRequest` é responsável por tratar requisições HTTP 

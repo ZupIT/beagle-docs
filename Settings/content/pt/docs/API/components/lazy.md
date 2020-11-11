@@ -3,7 +3,7 @@ title: "Lazy"
 description: >
   Nesta seção, você encontra a descrição do componente Lazy e seus atributos.
 ---
-
+---
 ## O que é?
 
 O `Lazy Component` é usado para carregar de forma assíncrona algum componente do BFF.

@@ -3,7 +3,7 @@ title: "ImagePath"
 description: >
   Nesta seção, você encontra a descrição da classe ImagePath.
 ---
-
+---
 ## O que é?
 
 O ImagePath permite que você defina como uma imagem será carregada, podendo ser local ou remote.

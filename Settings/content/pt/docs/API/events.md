@@ -3,7 +3,7 @@ title: "Eventos"
 description: >
   Nesta seção, você encontra uma descrição sobre Eventos
 ---
-
+---
 ## O que são?
 
 Eventos são tudo que podem disparar ações do Beagle \(Beagle Actions\). No JSON, toda chave que é associada a uma Beagle Action representa um evento. 

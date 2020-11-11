@@ -4,7 +4,7 @@ description: >
   Nesta seção, você encontra a definição da ação OpenExternalURL e seus
   atributos.
 ---
-
+---
 ## O que é?
 
 Abre o navegador selecionado pelo usuário com a url informada.

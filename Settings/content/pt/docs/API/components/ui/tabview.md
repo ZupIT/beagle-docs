@@ -4,6 +4,7 @@ description: >
   Nesta seção, você encontra uma descrição do componente Tab View e seus
   atributos. Este componente foi depreciado.
 ---
+---
 
 {% hint style="danger" %}
 Este componente foi depreciado na versão 1.1.0 do Beagle e será removido em uma versão futura. Utilize o componente [TabBar](tab-bar.md) no lugar do Tab View

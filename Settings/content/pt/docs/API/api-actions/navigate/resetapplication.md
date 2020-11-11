@@ -3,7 +3,7 @@ title: "ResetApplication"
 description: >
   Nesta seção, você encontra a descrição da ação ResetApplication e seus atributos
 ---
-
+---
 ## O que é? <a id="definicao"></a>
 
 Abre uma tela com a rota informada e apaga todas as pilhas de navegação.

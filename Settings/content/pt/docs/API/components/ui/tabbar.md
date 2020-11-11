@@ -3,7 +3,7 @@ title: "TabBar"
 description: >
     Nesta seção, você encontra a descrição do componente Tab Bar e seus atributos.
 ---
-
+---
 ## O que é o Tab Bar?
 
 O componente **Tab Bar** é responsável por definir uma tabela que permite a navegação entre views. Ele exibe tabs correspondentes a diferentes visualizações que podem ser acessadas por meio dela.

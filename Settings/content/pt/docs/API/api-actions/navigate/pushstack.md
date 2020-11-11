@@ -3,7 +3,7 @@ title: "PushStack"
 description: >
   Nesta seção, você encontra a descrição da ação PushStack e seus atributos
 ---
-
+---
 ## O que é?
 
 Apresenta uma nova tela e a coloca na pilha.

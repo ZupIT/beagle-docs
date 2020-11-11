@@ -3,7 +3,7 @@ title: "ResetStack"
 description: >
   Nesta seção, você encontra a descrição da ação ResetStack e seus atributos
 ---
-
+---
 ## O que é? <a id="definicao"></a>
 
 Abre uma tela com a rota informada de um novo fluxo e limpa a pilha de telas carregadas anteriormente.

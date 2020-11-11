@@ -3,7 +3,7 @@ title: "ScrollView"
 description: >
   Nesta seção, você encontra a descrição do componente Scroll View e seus atributos.
 ---
-
+---
 ## O que é?
 
 O componente Scroll View é um container especializado que exibe os componentes em visualização por scroll no layout. 

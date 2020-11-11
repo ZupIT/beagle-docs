@@ -3,7 +3,7 @@ title: "TextInput"
 description: >
   Nesta seção, você encontra a descrição do componente InputText e seus atributos.
 ---
-
+---
 ## O que é?
 
 O Input é um componente responsável por exibir uma área de texto editável para o usuário. Esses campos de textos são usados para coletar entradas que um usuário insere utilizando o teclado. 

@@ -3,7 +3,7 @@ title: "PushView"
 description: >
   Nesta seção, você encontra a descrição da ação PushView e seus atributos
 ---
-
+---
 ## O que é? <a id="definicao"></a>
 
 Abre uma nova tela na mesma pilha usando uma rota.

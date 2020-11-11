@@ -2,7 +2,7 @@
 description: >
  Nesta seção, você encontra a definição do Confirm e os detalhes de seus atributos.
 ---
-
+---
 ## O que é?
 
 A ação `confirm` é responsável por criar um elemento modal de confirmação.

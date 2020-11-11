@@ -3,7 +3,7 @@ title: "Button"
 description: >
   Nesta seção, você encontra a descrição do componente Botão e seus atributos.
 ---
-
+---
 ## O que é?
 
 O widget Button é responsável por definir um botão nativo usando informações server driven por meio do Beagle. 

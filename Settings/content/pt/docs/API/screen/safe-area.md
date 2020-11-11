@@ -3,6 +3,7 @@ title: "Safe Area"
 description: >
    Nesta seção, você encontra a descrição do componente Safe Area e seus atributos
 ---
+---
 
 {% hint style="warning" %}
 Esse atributo é exclusivo da plataforma iOS. 

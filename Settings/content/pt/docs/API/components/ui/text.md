@@ -3,7 +3,7 @@ title: "Text"
 description: >
     Nesta seção, você encontra a descrição do componente do componente Text e seus atributos
 ---
-
+---
 ## O que é?
 
 O componente `Text` é responsável por definir o texto nativamente usando informações server-driven. 

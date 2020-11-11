@@ -3,7 +3,7 @@ title: "WebView"
 description: >
     Nesta seção, você encontra a descrição do componente Web View e seus atributos
 ---
-
+---
 ## **O que é?**
 
 O componente `Web View` define uma web view nativamente e usa informações server-driven.

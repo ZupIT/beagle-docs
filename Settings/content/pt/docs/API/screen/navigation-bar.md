@@ -3,7 +3,7 @@ title: "Navigation Bar"
 description: >
    Nesta seção, você encontra a descrição do componente Navigation Bar e descrição de seus componentes
 ---
-
+---
 ## **O que é a NavigationBar?**
 
 Classe que define a barra superior com função de navegação. É composta pelos seguintes atributos:

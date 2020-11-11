@@ -4,7 +4,7 @@ description: >
   Nesta seção, você encontra a definição do atributo Local da classe Route e seus
   atributos.
 ---
-
+---
 ## O que é? <a id="definicao"></a>
 
 Rota de navegação para conteúdo local.

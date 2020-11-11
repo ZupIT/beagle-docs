@@ -3,7 +3,7 @@ title: "Alert"
 description: >
   Nesta seção, você encontra a definição do Alert e detalhes de seus atributos.
 ---
-
+---
 ## O que é?
 
 A ação `Alert` é responsável por criar um elemento de confirmação

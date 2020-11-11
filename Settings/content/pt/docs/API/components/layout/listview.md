@@ -3,7 +3,7 @@ title: "ListView"
 description: >
   Nesta seção, você encontra a descrição do componente ListView, seus atributos e construtores.
 ---
-
+---
 ## O que é?
 
 O componente ListView é responsável por definir uma lista de itens **recicláveis** nativamente. Esses itens podem ser quaisquer componentes server driven. O uso do ListView é recomendado para situações onde há repetição de componentes, porém com dados diferentes.

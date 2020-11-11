@@ -4,7 +4,7 @@ description: >
   Nesta seção, você encontra a definição do SetContext e detalhes de seus
   atributos.
 ---
-
+---
 ## O que é?
 
 A ação `SetContext` é responsável por alterar o valor de um contexto.

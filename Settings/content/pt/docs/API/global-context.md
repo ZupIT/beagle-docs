@@ -3,7 +3,7 @@ title: "Contexto Global"
 description: >
   Nesta seção, você encontra a descrição sobre o Contexto Global e seus métodos
 ---
-
+---
 ## O que é? 
 
 O Contexto Global é uma variável que pode assumir como valor qualquer tipo de variável, como um mapa definindo um conjunto de pares chave/valor ou objetos JSONs complexos que definem árvores de objetos. 
