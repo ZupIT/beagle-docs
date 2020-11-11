@@ -1,7 +1,9 @@
 ---
 title: "Criando um projeto do zero"
-linkTitle: "Criando um projeto do zero"
+description: >
+  Nesta seção, você encontra casos práticos de como criar e implementar um
+  projeto com Beagle para diferentes frameworks.
 weight: 3
 ---
 
-Esta é a página de destino de uma seção de nível superior.
+Confira abaixo quais cases práticos você pode usar no seu projeto com Beagle:
