@@ -92,6 +92,25 @@
     </item>
     
     <item>
+      <title>Docs: Notas de atualização</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/release-notes/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: FAQ</title>
       <link>https://zupit.github.io/docs-beagle/pt/docs/faq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -111,11 +130,49 @@
     </item>
     
     <item>
-      <title>Docs: Notas de atualização</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/release-notes/</link>
+      <title>Docs: Align Content</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/align-content/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/release-notes/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/align-content/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Align Items</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/align-items/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/align-items/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Align Self</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/align-self/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/align-self/</guid>
       <description>
         
         
@@ -169,6 +226,139 @@
     </item>
     
     <item>
+      <title>Docs: Android</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/style/android/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/style/android/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Animações de navegação</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/navigation-animation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/navigation-animation/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Animações de navegação</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/navigation-animation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/navigation-animation/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Ação customizada Assíncrona</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/custom-widgets/async-custom-action/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/custom-widgets/async-custom-action/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Ações Customizadas</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/custom-action/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/custom-action/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Ações Customizadas</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/custom-action/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/custom-action/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Ações customizadas</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/custom-actions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/custom-actions/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Backend</title>
       <link>https://zupit.github.io/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -208,83 +398,534 @@
     </item>
     
     <item>
-      <title>Docs: IOS</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/ios/</link>
+      <title>Docs: Basis</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/basis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/ios/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/basis/</guid>
       <description>
         
         
-        &lt;hr&gt;
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>
     
     <item>
-      <title>Docs: IOS</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/get-started/installing-beagle/ios/</link>
+      <title>Docs: Beagle Activity Customizada</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/custom-beagle-activity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/get-started/installing-beagle/ios/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/custom-beagle-activity/</guid>
       <description>
         
         
-        &lt;hr&gt;
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>
     
     <item>
-      <title>Docs: IOS</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/ios/</link>
+      <title>Docs: Beagle Framework</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-backend/beagle-framework/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/ios/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-backend/beagle-framework/</guid>
       <description>
         
         
-        &lt;hr&gt;
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>
     
     <item>
-      <title>Docs: WEB</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/web/</link>
+      <title>Docs: Beagle Navigation Controller Customizada</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/custom-beagle-navigation-controller/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/web/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/custom-beagle-navigation-controller/</guid>
       <description>
         
         
-        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
       </description>
     </item>
     
     <item>
-      <title>Docs: WEB</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/get-started/installing-beagle/web/</link>
+      <title>Docs: Beagle View</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/beagle-view/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/get-started/installing-beagle/web/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/beagle-view/</guid>
       <description>
         
         
-        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
       </description>
     </item>
     
     <item>
-      <title>Docs: WEB</title>
-      <link>https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/web/</link>
+      <title>Docs: Beagle view</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/advanced-topics/beagle-view/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/web/</guid>
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/advanced-topics/beagle-view/</guid>
       <description>
         
         
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Builders para Kotlin DSL</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/kotlin-dsl-builders/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/kotlin-dsl-builders/</guid>
+      <description>
         
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Camada de rede</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/network-client/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/network-client/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Camada de rede</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/network-client/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/network-client/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Carregamento e tratamento de erros</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/loading-and-errors-treatment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/loading-and-errors-treatment/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Carregamento e tratamento de erros</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/loading-and-error-treatment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/loading-and-error-treatment/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Carregamento e tratamento de erros</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/loading-components-and-error-treatment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/loading-components-and-error-treatment/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Componente com contexto</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/components/components-with-context/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/components/components-with-context/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Componente Composto</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/components/composed-component/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/components/composed-component/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Componentes customizados</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/custom-component/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/custom-component/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Configurando o cache</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/cache/how-to-configure-cache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/cache/how-to-configure-cache/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Configuração de ProGuard</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/proguard-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/proguard-configuration/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Criar novas ações</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/create-new-action/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/create-new-action/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Customizado Simples</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/custom-widgets/simple-custom-action/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/custom-widgets/simple-custom-action/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Deep Link Handler</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/deep-link-handler/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/deep-link-handler/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Dependências do Beagle</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/beagle-dependencies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/beagle-dependencies/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Design System</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/design-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/design-system/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Display</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/display/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/display/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Especificação de componentes por plataforma</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/components/platform-sorting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/components/platform-sorting/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Estratégias de cache</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/cache-strategy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/cache-strategy/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Estrutura de dados</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/advanced-topics/data-structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/advanced-topics/data-structure/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Flex</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/flex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/flex/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Flex Direction</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/flex-direction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/flex-direction/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oppsummer&lt;/li&gt;
+&lt;li&gt;Seksjonen din&lt;/li&gt;
+&lt;li&gt;Her&lt;/li&gt;
+&lt;/ul&gt;
+
       </description>
     </item>
     
