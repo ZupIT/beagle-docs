@@ -114,5 +114,3 @@ Testes unitários têm o objetivo de aferir a funcionalidade do código, em sua 
 Testes instrumentados são feitos em aplicações usando Beagle da mesma forma que em outras aplicações que não utilizam. No entanto, é importante salientar que, muitas vezes, um componente `server-driven` pode não conter um ID que geralmente a identifica em um teste instrumentado. 
 
 Pensando nisso, adicionamos ao elemento `WIDGET` \(que referencia um componente\) um `atributo ID` para que seja possível identificá-lo programaticamente.
-
----

@@ -3,8 +3,6 @@ title: "Playground"
 weight: 5
 ---
 
-Esta é a página de destino de uma seção de nível superior.
+### O que é o **Playground?**
 
-* Oppsummer
-* Seksjonen din
-* Her
+O Playground é uma ferramenta de desenvolvimento onde se pode  criar componentes e páginas utilizando o Beagle de forma simples e rápida, sem a necessidade de fazer qualquer instalação. Ele possui uma interface que permite você escrever um JSON e ver o resultado de forma instantânea.

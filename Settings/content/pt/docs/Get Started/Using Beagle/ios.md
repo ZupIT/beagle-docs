@@ -104,5 +104,3 @@ Por fim, execute a sua aplicação e, se tudo estiver certo, você deverá ver u
 Nesta seção, você viu como criar sua primeira tela declarativa utilizando o **Beagle**, em sua forma mais simples, sem entrar no conceito de server-driven UI.
 
 👉Para entender melhor **como configurar o Beagle** e utilizá-lo aplicando o conceito de server-driven UI, veja como [**criar um projeto iOS do zero**](../new-project/case-ios/).
-
----

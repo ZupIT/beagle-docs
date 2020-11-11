@@ -182,5 +182,3 @@ Você deverá ver a tela a seguir:
 {% hint style="success" %}
 Parabéns, você criou sua primeira tela com Beagle!
 {% endhint %}
-
----

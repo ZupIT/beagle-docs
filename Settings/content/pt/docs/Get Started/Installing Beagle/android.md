@@ -85,5 +85,3 @@ Para continuar a configurar o Beagle:
 👉Vá para as [**configurações iniciais** ](../using-beagle/android.md)para habilitar uso do Beagle no seu projeto Android
 
 👉 Se quiser ir direto para prática, acesse nosso [**tutorial para criar um projeto do zero**](../new-project/case-android/)\*\*\*\*
-
----

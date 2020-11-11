@@ -252,5 +252,3 @@ Para saber mais sobre como configurar o seu ambiente frontend, veja mais em:
 👉Tutorial do Beagle para ****[**iOS**](../using-beagle/ios.md).
 
 👉Tutorial do Beagle para  ****[**Web**](case-web.md). ****
-
----

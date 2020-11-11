@@ -141,5 +141,3 @@ Feita essa configuração, inicie a sua aplicação e você terá sua primeira t
 Você verá a tela a seguir: 
 
 ![](../../../.gitbook/assets/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)
-
----

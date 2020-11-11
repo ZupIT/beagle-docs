@@ -201,5 +201,3 @@ Para continuar a configurar o Beagle:
 👉Vá para as [**configurações iniciais**](../using-beagle/backend.md) ****para habilitar uso do Beagle no seu projeto Backend
 
 👉 Se quiser ir direto para prática, acesse nosso [**tutorial para criar um projeto do zero**](../new-project/exemplo-de-projeto-backend-com-beagle.md)\*\*\*\*
-
----

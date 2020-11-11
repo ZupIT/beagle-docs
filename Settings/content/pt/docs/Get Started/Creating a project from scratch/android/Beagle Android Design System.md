@@ -284,5 +284,3 @@ Agora que você já criou o seu Design System, é possível alterar o tamanho, c
 Uma das grandes vantagens em utilizar uma página server-driven é poder trabalhar com um design system maduro. Ou seja, se você altera o modo como os componentes estão posicionados no backend, é possível "mudar sua tela" da maneira que quiser, tudo por meio do backend.
 
 Neste exemplo, utilizamos elementos simples de estilo para explicar o Design system, mas perceba o número de funções nesta classe e, a partir daí, veja o quão amplo um design system pode ser.
-
----

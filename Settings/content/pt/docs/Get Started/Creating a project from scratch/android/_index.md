@@ -415,5 +415,3 @@ Você verá esta tela:
 {% hint style="success" %}
 Parabéns, você criou sua primeira tela com Beagle! 🎉 
 {% endhint %}
-
----

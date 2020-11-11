@@ -73,5 +73,3 @@ Sendo assim, as principais vantagens que o Beagle traz para seu projeto são:
 * **Menos duplicação de códigos**, pois todo o consumo das APIs, fluxos e regras estarão em um único lugar, o BFF.
 
 Outro ganho fundamental que o Beagle traz, é a possibilidade de **reduzir o tempo de feedback do usuário**, já que as mudanças são rapidamente testadas e validadas. 
-
----

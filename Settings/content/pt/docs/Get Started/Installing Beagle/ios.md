@@ -77,5 +77,3 @@ Para continuar a configurar o Beagle:
 👉Para continuar conhecendo o Beagle, e testar se deu tudo certo com a instalação, vá para as **configurações iniciais** e [**crie seu primeiro Hello Beagle!**](../using-beagle/ios.md)\*\*\*\*
 
 👉 Se quiser ir direto para prática, acesse nosso[ **tutorial para criar um projeto do zero**](../new-project/case-ios/)\*\*\*\*
-
----

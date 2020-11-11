@@ -18,5 +18,3 @@ Você pode configurar de acordo com a plataforma que estiver utilizando:
 {% page-ref page="web/" %}
 
 {% page-ref page="backend.md" %}
-
----

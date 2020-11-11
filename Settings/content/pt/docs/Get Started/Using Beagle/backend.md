@@ -332,5 +332,3 @@ Agora que seu BFF está executando, para ver o JSON resultante, insira a URL htt
   "labelOk" : "Close"
 }
 ```
-
----

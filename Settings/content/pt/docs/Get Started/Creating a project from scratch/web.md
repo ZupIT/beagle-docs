@@ -285,5 +285,3 @@ yarn start
 {% endtabs %}
 
 Depois de finalizados os comando acesse no navegador o endereço da sua aplicação. Se uma tela com os componentes for renderizada tudo está funcionando corretamente.
-
----

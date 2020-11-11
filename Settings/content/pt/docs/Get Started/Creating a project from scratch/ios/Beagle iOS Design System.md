@@ -259,5 +259,3 @@ E o resultado será esse:
 Agora que está pronto, teste um pouco, mude os tamanhos, mude as cores, e teste os estilos que quiser!
 
 Neste exemplo foi utilizado elementos de estilo simples para explicar o Design system, mas o número de funções nessa classe mostra como ela pode ser ampla. Você pode desenvolver **toolBars** diferentes, **botões** e todo o tipo de componentes, inclusive componentes customizados \(que abordaremos em outro codeLab\) e utilizá-los no **Beagle**.
-
----

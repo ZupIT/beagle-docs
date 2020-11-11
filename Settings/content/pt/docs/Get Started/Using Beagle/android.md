@@ -572,5 +572,3 @@ Mesmo não sendo necessário neste momento, é bom ter em mente que você precis
 {% hint style="info" %}
 As classes anotadas como `BeagleComponent` e `RegisterValidator`não podem implementar parâmetros nos seus construtores, pois no caso do Beagle esses construtores precisam estar vazios.
 {% endhint %}
-
----

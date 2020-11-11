@@ -123,4 +123,3 @@ Depois de finalizar o comando, acesse: localhost:3000. Você deverá ver a tela 
 Parabéns, você criou sua primeira tela com Beagle!
 {% endhint %}
 
----

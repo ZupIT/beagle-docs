@@ -29,5 +29,3 @@ Ferramenta que cuida da **renderização dos elementos visuais** nativos de uma 
 ### **Server-Driven UI**
 
 É o conceito no qual um backend específico \(BFF\) **consome os dados da aplicação** e os fornece ao frontend junto com suas respectivas **estruturas visuais** através de um ou mais JSONs, ou seja, ele não só informa o conteúdo da tela, mas também sua estrutura, além do fluxo dessas páginas se houver.
-
----
