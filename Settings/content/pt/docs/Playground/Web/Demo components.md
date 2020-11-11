@@ -1,6 +1,5 @@
 ---
 title: "Componentes demo"
-linkTitle: "Componentes demo"
 weight: 3
 ---
 

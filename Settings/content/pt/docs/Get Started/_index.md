@@ -1,6 +1,5 @@
 ---
 title: "Primeiros Passos"
-linkTitle: "Primeiros Passos"
 weight: 3
 ---
 

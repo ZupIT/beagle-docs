@@ -1,6 +1,5 @@
 ---
 title: "Usando playground"
-linkTitle: "Usando playground"
 weight: 2
 ---
 

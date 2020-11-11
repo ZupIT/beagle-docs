@@ -1,6 +1,5 @@
 ---
 title: "Instalando o beagle"
-linkTitle: "Instalando o beagle"
 weight: 1
 ---
 

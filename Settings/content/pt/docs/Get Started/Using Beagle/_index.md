@@ -1,6 +1,5 @@
 ---
 title: "Usando o Beagle"
-linkTitle: "Usando o Beagle"
 weight: 2
 ---
 

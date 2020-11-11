@@ -1,6 +1,5 @@
 ---
 title: "Playground"
-linkTitle: "Playground"
 weight: 5
 ---
 

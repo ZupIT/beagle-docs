@@ -1,6 +1,5 @@
 ---
 title: "Criando um projeto do zero"
-linkTitle: "Criando um projeto do zero"
 weight: 3
 ---
 
