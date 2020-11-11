@@ -2,7 +2,7 @@
 title: "ImageContentMode"
 linkTitle: "ImageContentMode"
 description: >
-Nesta seção, você encontra a descrição da classe ImageContentMode.
+    Nesta seção, você encontra a descrição da classe ImageContentMode.
 ---
 
 É uma classe `ENUM` responsável por definir como a imagem declarada será visualizada na UI.

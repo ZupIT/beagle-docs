@@ -2,8 +2,7 @@
 title: "Condition"
 linkTitle: "Condition"
 description: >
-Nesta seção, você encontra a definição do Condition e detalhes de seus
-  atributos.
+   Nesta seção, você encontra a definição do Condition e detalhes de seus atributos.
 ---
 
 ## O que é?

@@ -2,7 +2,7 @@
 title: "Button"
 linkTitle: "Button"
 description: >
-Nesta seção, você encontra a descrição do componente Botão e seus atributos.
+  Nesta seção, você encontra a descrição do componente Botão e seus atributos.
 ---
 
 ## O que é?

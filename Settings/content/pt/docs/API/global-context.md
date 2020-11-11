@@ -2,7 +2,7 @@
 title: "Contexto Global"
 linkTitle: "Contexto Global"
 description: >
-Nesta seção, você encontra a descrição sobre o Contexto Global e seus métodos
+  Nesta seção, você encontra a descrição sobre o Contexto Global e seus métodos
 ---
 
 ## O que é? 

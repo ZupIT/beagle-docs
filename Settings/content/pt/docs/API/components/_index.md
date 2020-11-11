@@ -1,8 +1,8 @@
 ---
 title: "Componentes"
-linkTitle: "Componentes"
+weight: 11
 description: >
-Nesta seção, você encontra a descrição dos componentes e seus atributos.
+    Nesta seção, você encontra a descrição dos componentes e seus atributos.
 ---
 
 ![&#xC1;rvore de componentes do Beagle](../../.gitbook/assets/components-01-beagle.png)

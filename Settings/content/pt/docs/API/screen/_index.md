@@ -1,8 +1,8 @@
 ---
 title: "Screen"
-linkTitle: "Screen"
+weight: 11
 description: >
-Nesta seção, você encontra a descrição dos componentes de Screen e seus atributos.
+  Nesta seção, você encontra a descrição dos componentes de Screen e seus atributos.
 ---
 
 ## O que é?

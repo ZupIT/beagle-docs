@@ -2,7 +2,7 @@
 title: "Widget"
 linkTitle: "Widget"
 description: >
-Nesta seção, você encontra a descrição do componente Widget e seus atributos.
+  Nesta seção, você encontra a descrição do componente Widget e seus atributos.
 ---
 
 ## O que é?

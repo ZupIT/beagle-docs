@@ -2,7 +2,7 @@
 title: "ResetApplication"
 linkTitle: "ResetApplication"
 description: >
-Nesta seção, você encontra a descrição da ação ResetApplication e seus atributos
+  Nesta seção, você encontra a descrição da ação ResetApplication e seus atributos
 ---
 
 ## O que é? <a id="definicao"></a>

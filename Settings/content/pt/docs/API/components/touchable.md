@@ -2,7 +2,7 @@
 title: "Touchable"
 linkTitle: "Touchable"
 description: >
-Nesta seção, você encontra a descrição do componente Touchable que habilita uma ação em outros componentes.
+  Nesta seção, você encontra a descrição do componente Touchable que habilita uma ação em outros componentes.
 ---
 
 ## O que é?

@@ -2,7 +2,7 @@
 title: "Navigation Bar"
 linkTitle: "Navigation Bar"
 description: >
-Nesta seção, você encontra a descrição do componente Navigation Bar e descrição de seus componentes
+   Nesta seção, você encontra a descrição do componente Navigation Bar e descrição de seus componentes
 ---
 
 ## **O que é a NavigationBar?**

@@ -2,7 +2,7 @@
 title: "FormLocalAction"
 linkTitle: "FormLocalAction"
 description: >
-Descrição do componente FormLocalAction.
+  Descrição do componente FormLocalAction.
 ---
 
 {% hint style="warning" %}

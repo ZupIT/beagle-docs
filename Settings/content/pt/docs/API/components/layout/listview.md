@@ -2,7 +2,7 @@
 title: "ListView"
 linkTitle: "ListView"
 description: >
-Nesta seção, você encontra a descrição do componente ListView, seus atributos e construtores.
+  Nesta seção, você encontra a descrição do componente ListView, seus atributos e construtores.
 ---
 
 ## O que é?

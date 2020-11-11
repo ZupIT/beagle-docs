@@ -2,8 +2,7 @@
 title: "Analytics"
 linkTitle: "Analytics"
 description: >
-Nesta seção, você encontra uma descrição de como preparar a aplicação para mapear informações para o
-  analytics.
+    Nesta seção, você encontra uma descrição de como preparar a aplicação para mapear informações para o analytics.
 ---
 
 ## O que é?

@@ -2,8 +2,7 @@
 title: "SendRequest"
 linkTitle: "SendRequest"
 description: >
-Nesta seção, você encontra a definição do Send Request e detalhes de seus
-  atributos.
+    Nesta seção, você encontra a definição do Send Request e detalhes de seus atributos.
 ---
 
 ## O que é?

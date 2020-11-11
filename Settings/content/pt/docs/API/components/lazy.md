@@ -2,7 +2,7 @@
 title: "Lazy"
 linkTitle: "Lazy"
 description: >
-Nesta seção, você encontra a descrição do componente Lazy e seus atributos.
+  Nesta seção, você encontra a descrição do componente Lazy e seus atributos.
 ---
 
 ## O que é?

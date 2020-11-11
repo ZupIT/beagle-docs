@@ -2,7 +2,7 @@
 title: "TextInput"
 linkTitle: "TextInput"
 description: >
-Nesta seção, você encontra a descrição do componente InputText e seus atributos.
+  Nesta seção, você encontra a descrição do componente InputText e seus atributos.
 ---
 
 ## O que é?

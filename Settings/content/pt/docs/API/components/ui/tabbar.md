@@ -2,8 +2,7 @@
 title: "TabBar"
 linkTitle: "TabBar"
 description: >
-Nesta seção, você encontra a descrição do componente Tab Bar e seus
-  atributos.
+    Nesta seção, você encontra a descrição do componente Tab Bar e seus atributos.
 ---
 
 ## O que é o Tab Bar?

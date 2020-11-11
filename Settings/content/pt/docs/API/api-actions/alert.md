@@ -2,7 +2,7 @@
 title: "Alert"
 linkTitle: "Alert"
 description: >
-Nesta seção, você encontra a definição do Alert e detalhes de seus atributos.
+  Nesta seção, você encontra a definição do Alert e detalhes de seus atributos.
 ---
 
 ## O que é?

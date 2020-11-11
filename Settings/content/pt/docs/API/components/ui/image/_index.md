@@ -1,8 +1,8 @@
 ---
 title: "Image"
-linkTitle: "Image"
+weight: 11
 description: >
-Nesta seção, você encontra a descrição da classe ImagePath.
+  Nesta seção, você encontra a descrição da classe ImagePath.
 ---
 
 ## O que é?

@@ -1,8 +1,8 @@
 ---
 title: "Ações"
-linkTitle: "Ações"
+weight: 11
 description: >
-Descrição dos componentes do tipo Action e seus atributos.
+  Descrição dos componentes do tipo Action e seus atributos.
 ---
 
 No Beagle, uma ação lida com os comportamentos \(funções\), que serão executadas em sua aplicação assim que um determinado evento for disparado. Essas ações podem ser padrão do próprio Beagle ou customizadas. 
@@ -38,6 +38,3 @@ Abaixo, você encontra a descrição completa de cada ação disponível por pad
 {% page-ref page="alert.md" %}
 
 {% page-ref page="navigate/" %}
-
-
-

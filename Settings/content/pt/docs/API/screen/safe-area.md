@@ -2,7 +2,7 @@
 title: "Safe Area"
 linkTitle: "Safe Area"
 description: >
-Nesta seção, você encontra a descrição do componente Safe Area e seus atributos
+   Nesta seção, você encontra a descrição do componente Safe Area e seus atributos
 ---
 
 {% hint style="warning" %}

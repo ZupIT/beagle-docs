@@ -1,9 +1,7 @@
 ---
 title: "Confirm"
-linkTitle: "Confirm"
 description: >
-Nesta seção, você encontra a definição do Confirm e os detalhes de seus
-  atributos.
+ Nesta seção, você encontra a definição do Confirm e os detalhes de seus atributos.
 ---
 
 ## O que é?

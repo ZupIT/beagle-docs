@@ -2,7 +2,7 @@
 title: "PushStack"
 linkTitle: "PushStack"
 description: >
-Nesta seção, você encontra a descrição da ação PushStack e seus atributos
+  Nesta seção, você encontra a descrição da ação PushStack e seus atributos
 ---
 
 ## O que é?

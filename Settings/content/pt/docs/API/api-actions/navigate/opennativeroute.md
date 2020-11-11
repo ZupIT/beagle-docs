@@ -2,7 +2,7 @@
 title: "OpenNativeRoute"
 linkTitle: "OpenNativeRoute"
 description: >
-Nesta seção, você encontra a descrição da ação OpenNativeRoute e seus atributos
+  Nesta seção, você encontra a descrição da ação OpenNativeRoute e seus atributos
 ---
 
 ## O que é?

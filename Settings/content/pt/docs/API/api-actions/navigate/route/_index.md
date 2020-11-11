@@ -1,8 +1,7 @@
 ---
 title: "Route"
-linkTitle: "Route"
 description: >
-Nesta seção, você encontra a descrição da Classe Route e seus atributos
+    Nesta seção, você encontra a descrição da Classe Route e seus atributos
 ---
 
 ## O que é?
@@ -14,6 +13,4 @@ Abaixo, você encontra a descrição completa dos tipos de Rota disponível por 
 {% page-ref page="remote.md" %}
 
 {% page-ref page="local.md" %}
-
-
 

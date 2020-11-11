@@ -2,7 +2,7 @@
 title: "PushView"
 linkTitle: "PushView"
 description: >
-Nesta seção, você encontra a descrição da ação PushView e seus atributos
+  Nesta seção, você encontra a descrição da ação PushView e seus atributos
 ---
 
 ## O que é? <a id="definicao"></a>
