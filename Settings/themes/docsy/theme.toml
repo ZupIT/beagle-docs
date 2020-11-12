@@ -2,11 +2,11 @@ name = "Docsy"
 license = "Apache 2.0"
 licenselink = "https://github.com/google/docsy/blob/master/LICENSE"
 description = "A Hugo theme for technical documentation sites"
-homepage = "https://github.com/ZupIT/beagle"
+homepage = "https://example.docsy.dev/"
 tags = ["documentation", "multilingual", "customizable", "responsive", "docs"]
 features = []
 min_version = 0.53
 
 [author]
-  name = "The Docsy Authors"
+  name = "ZupIT"
   homepage = "https://github.com/ZupIT/beagle"

@@ -105,12 +105,12 @@ version = "0.0"
 url_latest_version = "https://example.com"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/google/docsy-example"
+github_repo = "https://github.com/ZupIT/docs-beagle"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/google/docsy"
+github_project_repo = "https://github.com/ZupIT/beagle"
 
 # Specify a value here if your content directory is not in your repo's root directory
-# github_subdir = ""
+github_subdir = "Settings"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
 gcs_engine_id = "011737558837375720776:fsdu1nryfng"
@@ -173,7 +173,7 @@ enable = false
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
 	name = "GitHub"
-	url = "https://github.com/google/docsy"
+	url = "https://github.com/ZupIT/beagle-docs/settings"
 	icon = "fab fa-github"
         desc = "Development takes place here!"
 [[params.links.developer]]
