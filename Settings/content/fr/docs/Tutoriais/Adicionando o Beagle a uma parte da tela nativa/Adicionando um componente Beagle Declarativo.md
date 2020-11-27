@@ -1,5 +1,10 @@
 ---
 title: Adicionando um componente Beagle Declarativo
+weight: 233
 description: >-
-  This is a example for a description
+  This a example for a description
 ---
+
+---
+
+undefined

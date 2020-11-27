@@ -70,7 +70,7 @@ time_format_blog = "02/01/2006"
 title = "Beagle"
 description = "Documentação Beagle"
 languageName ="Francês"
-contentDir = "content/fr"
+contentDir = "content/pt"
 time_format_default = "02/01/2006"
 time_format_blog = "02/01/2006"
 
