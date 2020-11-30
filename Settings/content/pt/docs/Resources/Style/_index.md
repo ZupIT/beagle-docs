@@ -1,9 +1,9 @@
 ---
 title: "Estilização"
+description: >
+  Nesta seção, você encontra os conceitos de estilização de acordo com a sua plataforma.
 ---
 
-Esta é a página de destino de uma seção de nível superior.
+---
 
-* Oppsummer
-* Seksjonen din
-* Her
+O Beagle disponibiliza na sua biblioteca o recurso de estilização de componentes. Você pode conhecer melhor o processo para cada sistema operacional nas próximas páginas:
