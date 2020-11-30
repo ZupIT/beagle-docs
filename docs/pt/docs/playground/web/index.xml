@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Beagle – Playground Web&#34;</title>
+    <title>Beagle – Playground Web</title>
     <link>https://zupit.github.io/docs-beagle/pt/docs/playground/web/</link>
-    <description>Recent content in Playground Web&#34; on Beagle</description>
+    <description>Recent content in Playground Web on Beagle</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://zupit.github.io/docs-beagle/pt/docs/playground/web/index.xml" rel="self" type="application/rss+xml" />
@@ -22,12 +22,19 @@
       <description>
         
         
-        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Oppsummer&lt;/li&gt;
-&lt;li&gt;Seksjonen din&lt;/li&gt;
-&lt;li&gt;Her&lt;/li&gt;
-&lt;/ul&gt;
+        &lt;hr&gt;
+&lt;h3 id=&#34;utilizando-o-playground&#34;&gt;&lt;strong&gt;Utilizando o Playground&lt;/strong&gt;&lt;/h3&gt;
+&lt;h4 id=&#34;menu-de-arquivos&#34;&gt;Menu de arquivos&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;../../.gitbook/assets/image%20%2860%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;No menu de arquivos, a esquerda da tela, você pode criar, excluir ou selecionar um arquivo e ao clicar no primeiro ícone superior ou pressionando &lt;strong&gt;CTRL+B&lt;/strong&gt; você pode minimizar ou expandir esse menu.&lt;/p&gt;
+&lt;h4 id=&#34;json&#34;&gt;JSON&lt;/h4&gt;
+&lt;p&gt;As alterações do JSON podem ser salvas clicando no 2° ícone superior ou pressionando &lt;strong&gt;CTRL+S&lt;/strong&gt;. Para você atualizar a visualização da tela com o novo JSON, clique no 4° ícone no canto superior ou pressione F9.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../.gitbook/assets/image%20%2875%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Assim que as alterações são salvas, é disponibilizado um link do seu projeto que está alocado na nuvem, a partir dele, seu projeto pode ser acessado em qualquer local.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../.gitbook/assets/image%20%2879%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;plataforma&#34;&gt;Plataforma&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;../../.gitbook/assets/image%20%2837%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;No menu superior direito é possível selecionar a plataforma que você deseja, atualmente estão disponíveis as opções &lt;code&gt;React Web&lt;/code&gt;e &lt;code&gt;Angular&lt;/code&gt;.&lt;/p&gt;
 
       </description>
     </item>
@@ -41,12 +48,37 @@
       <description>
         
         
-        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Oppsummer&lt;/li&gt;
-&lt;li&gt;Seksjonen din&lt;/li&gt;
-&lt;li&gt;Her&lt;/li&gt;
-&lt;/ul&gt;
+        &lt;hr&gt;
+&lt;h3 id=&#34;exemplos-de-componentes-demo&#34;&gt;Exemplos de componentes demo&lt;/h3&gt;
+&lt;p&gt;Segue a lista com os exemplos de componentes implementados no Playground:&lt;/p&gt;
+&lt;h3 id=&#34;button&#34;&gt;&lt;strong&gt;Button&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/button.json&#34;&gt;Experimente no Playground&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.usebeagle.io/api/componentes/ui/button&#34;&gt;Documentação do componente&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;container&#34;&gt;&lt;strong&gt;Container&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/container.json&#34;&gt;Experimente no Playground&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.usebeagle.io/api/componentes/layout/container&#34;&gt;Documentação do componente&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;lazy-component&#34;&gt;&lt;strong&gt;Lazy Component&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/lazycomponent.json&#34;&gt;Experimente no Playground&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.usebeagle.io/api/componentes/lazy&#34;&gt;Documentação do componente&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;list-view&#34;&gt;&lt;strong&gt;List View&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/listview.json&#34;&gt;Experimente no Playground&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.usebeagle.io/api/componentes/layout/listview&#34;&gt;Documentação do componente&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;modal&#34;&gt;&lt;strong&gt;Modal&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/modal.json&#34;&gt;Experimente no Playground&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;page-view&#34;&gt;&lt;strong&gt;Page View&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/pageview.json&#34;&gt;Experimente no Playground&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.usebeagle.io/api/componentes/layout/pageview&#34;&gt;Documentação do componente&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;simple-form&#34;&gt;&lt;strong&gt;Simple Form&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/simpleform.json&#34;&gt;Experimente no Playground&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;tab-view&#34;&gt;&lt;strong&gt;Tab View&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/tabview.json&#34;&gt;Experimente no Playground&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.usebeagle.io/api/componentes/ui/tabview&#34;&gt;Documentação do componente&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;text&#34;&gt;&lt;strong&gt;Text&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/text.json&#34;&gt;Experimente no Playground&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.usebeagle.io/api/componentes/ui/text&#34;&gt;Documentação do componente&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;touchable&#34;&gt;&lt;strong&gt;Touchable&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/touchable.json&#34;&gt;Experimente no Playground&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.usebeagle.io/api/componentes/navigation&#34;&gt;Documentação do componente&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
