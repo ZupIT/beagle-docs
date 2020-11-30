@@ -7,7 +7,7 @@ weight: 1
 
 ---
 
-## O que é o Beagleeeeeeee?
+## O que é o Beagle?
 
 O Beagle é um **framework open source** de desenvolvimento cross-platform pautado no paradigma de implementação de **Server-Driven UI.** 
 
