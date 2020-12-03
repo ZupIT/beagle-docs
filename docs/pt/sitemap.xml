@@ -3,93 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/cache/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/vis%C3%A3o-geral/</loc>
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/installing-beagle/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/overview/</loc>
-    <lastmod>2020-11-18T16:00:38-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/playground/web/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/key-concepts/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/playground/web/using-the-playgrounds/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/playground/web/demo-components/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/playground/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/release-notes/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/faq/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/principais-conceitos/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://zupit.github.io/docs-beagle/pt/docs/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -103,93 +27,853 @@
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/align-content/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/align-items/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/android/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/align-self/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/ios/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/android/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/web/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/installing-beagle/android/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/backend/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/android/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/style/android/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/web/angular/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/android/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/navigation-animation/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/ios/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/navigation-animation/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/web/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/custom-widgets/async-custom-action/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/web/angular/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/custom-action/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/web/react/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/custom-action/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/usando-o-beagle/backend/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/custom-actions/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/backend/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/android/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/installing-beagle/backend/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/android/design-system-com-beagle-android/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/backend/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/ios/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/basis/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/ios/definindo-os-estilos-no-beagle-ios/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/web/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/criando-um-projeto-do-zero/backend/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/cache/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/cache/configurando-o-cache/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/posicionamento-de-componentes/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/posicionamento-de-componentes/flex-direction/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/posicionamento-de-componentes/grow/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/posicionamento-de-componentes/justify-content/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/posicionamento-de-componentes/align-content/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/posicionamento-de-componentes/align-items/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/posicionamento-de-componentes/align-self/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/posicionamento-de-componentes/flex-wrap/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/posicionamento-de-componentes/margin/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/posicionamento-de-componentes/padding/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/posicionamento-de-componentes/position/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/posicionamento-de-componentes/positiontype/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/posicionamento-de-componentes/basis/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/posicionamento-de-componentes/shrink/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/posicionamento-de-componentes/size/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/posicionamento-de-componentes/display/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/posicionamento-de-componentes/flex/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/componentes/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/componentes/componente-com-contexto/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/componentes/componente-composto/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/componentes/especifica%C3%A7%C3%A3o-de-componentes-por-plataforma/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-android/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-android/a%C3%A7%C3%B5es-customizadas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-android/anima%C3%A7%C3%B5es-de-navega%C3%A7%C3%A3o/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-android/beagle-activity-customizada/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-android/camada-de-rede/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-android/carregamento-e-tratamento-de-erros/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-android/configura%C3%A7%C3%A3o-do-proguard/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-android/deep-link-handler/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-android/design-system/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-android/serializadordeserializador-customizado/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-android/sistema-de-log/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-android/validador-customizado/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-android/widgets-customizados/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-ios/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-ios/a%C3%A7%C3%B5es-customizadas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-ios/anima%C3%A7%C3%B5es-de-navega%C3%A7%C3%A3o/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-ios/beagle-view/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-ios/screen-view-controller/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-ios/beagle-navigation-controller-customizada/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-ios/camada-de-rede/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-ios/carregamento-e-tratamento-de-erros/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-ios/depend%C3%AAncias-do-beagle/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-ios/sistema-de-log/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-ios/widgets-customizados/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-ios/sourcery/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/a%C3%A7%C3%B5es-customizadas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/carregamento-e-tratamento-de-erros/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/componentes-customizados/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/estrat%C3%A9gias-de-cache/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/headers-padr%C3%B5es/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/par%C3%A2metros-remote-view/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/par%C3%A2metros-beagle-service/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/t%C3%B3picos-avan%C3%A7ados/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/t%C3%B3picos-avan%C3%A7ados/estrutura-de-dados/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/t%C3%B3picos-avan%C3%A7ados/beagle-view/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/t%C3%B3picos-avan%C3%A7ados/renderiza%C3%A7%C3%A3o/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-backend/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-backend/beagle-framework/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-backend/serializa%C3%A7%C3%A3o/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/cria%C3%A7%C3%A3o-de-novas-a%C3%A7%C3%B5es/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/builders-para-kotlin-dsl/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/estiliza%C3%A7%C3%A3o/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/estiliza%C3%A7%C3%A3o/android/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/estiliza%C3%A7%C3%A3o/ios/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/estiliza%C3%A7%C3%A3o/web/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/live-preview/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/navega%C3%A7%C3%A3o-de-telas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/urls/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/tutoriais/como-fazer-comunica%C3%A7%C3%A3o-entre-componentes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/tutoriais/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/tutoriais/como-gerar-uma-vers%C3%A3o-do-beagle-local-ou-remota/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/tutoriais/exibindo-uma-tela/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/tutoriais/adicionando-o-beagle-a-uma-parte-da-tela-nativa/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/tutoriais/adicionando-o-beagle-a-uma-parte-da-tela-nativa/adicionando-um-componente-beagle-server-driven/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/tutoriais/adicionando-o-beagle-a-uma-parte-da-tela-nativa/adicionando-um-componente-beagle-declarativo/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/tutoriais/criando-um-formul%C3%A1rio-e-submetendo-para-uma-api/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/tutoriais/testes/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/tutoriais/testes/benchmark-beagle-movies/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/tutoriais/testes/configura%C3%A7%C3%A3o-do-robolectric/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/tutoriais/testes/usando-widget-id/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/playground/playground-web/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zupit.github.io/docs-beagle/docs/playground/playground-web/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://zupit.github.io/docs-beagle/pt/docs/playground/playground-web/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/playground/playground-web/usando-o-playground/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/playground/playground-web/componentes-demo/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/playground/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zupit.github.io/docs-beagle/docs/playground/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://zupit.github.io/docs-beagle/pt/docs/playground/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/acessibilidade/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zupit.github.io/docs-beagle/docs/api/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://zupit.github.io/docs-beagle/pt/docs/api/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/addchildren/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/alert/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/condition/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/confirm/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/formlocalaction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/formremoteaction/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/formvalidation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/navigate/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/navigate/opennativeroute/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/navigate/openexternalurl/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/navigate/pushstack/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/navigate/pushview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/navigate/popstack/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/navigate/popview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/navigate/poptoview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/navigate/resetapplication/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/navigate/resetstack/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/navigate/route/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/navigate/route/remote/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/navigate/route/local/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/sendrequest/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/setcontext/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/a%C3%A7%C3%B5es/submitform/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/analytics/</loc>
+    <lastmod>2020-11-11T14:21:50-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/ui/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/ui/button/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/ui/image/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/ui/image/imagecontentmode/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/ui/image/imagepath/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/ui/tabbar/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/ui/tabview/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/ui/text/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/ui/textinput/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/ui/webview/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/touchable/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/lazy/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/layout/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/layout/container/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/layout/listview/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/layout/pageview/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/layout/pageindicator/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/layout/scrollview/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/formul%C3%A1rios/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/formul%C3%A1rios/form/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/formul%C3%A1rios/validator/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/componentes/formul%C3%A1rios/simple-form/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/contexto/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/contexto-global/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/eventos/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/screen/</loc>
+    <lastmod>2020-11-11T14:21:50-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/screen/navigation-bar/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zupit.github.io/docs-beagle/docs/api/screen/navigation-bar/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://zupit.github.io/docs-beagle/pt/docs/api/screen/navigation-bar/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/screen/safe-area/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zupit.github.io/docs-beagle/docs/api/screen/safe-area/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://zupit.github.io/docs-beagle/pt/docs/api/screen/safe-area/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/screen-request/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zupit.github.io/docs-beagle/docs/api/screen-request/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://zupit.github.io/docs-beagle/pt/docs/api/screen-request/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/api/widget/</loc>
+    <lastmod>2020-11-11T14:21:50-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/faq/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zupit.github.io/docs-beagle/docs/faq/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://zupit.github.io/docs-beagle/pt/docs/faq/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/release-notes/</loc>
+    <lastmod>2020-12-03T10:59:01-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zupit.github.io/docs-beagle/docs/release-notes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://zupit.github.io/docs-beagle/pt/docs/release-notes/"
+                />
   </url>
   
   <url>
@@ -208,266 +892,6 @@
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/custom-beagle-activity/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-backend/beagle-framework/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/custom-beagle-navigation-controller/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-backend/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/beagle-view/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/advanced-topics/beagle-view/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/kotlin-dsl-builders/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/network-client/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/network-client/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/loading-and-errors-treatment/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/loading-and-error-treatment/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/loading-components-and-error-treatment/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components/components-with-context/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components/composed-component/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/custom-component/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/cache/how-to-configure-cache/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/proguard-configuration/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/create-new-action/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/custom-widgets/simple-custom-action/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/deep-link-handler/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/beagle-dependencies/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/design-system/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/android/beagle-android-design-system/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/ios/beagle-ios-design-system/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/display/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components/platform-sorting/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/style/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/cache-strategy/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/advanced-topics/data-structure/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/flex/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/flex-direction/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/flex-wrap/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/grow/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/standard-headers/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/ios/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/installing-beagle/ios/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/ios/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/style/ios/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/justify-content/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/live-preview/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/margin/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/screen-navigation/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/padding/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/beagle-service-parameters/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/remote-view-parameters/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/position/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/position-type/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/web/react/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/advanced-topics/rendering/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://zupit.github.io/docs-beagle/pt/search/</loc>
     <lastmod>2020-11-04T15:33:04-03:00</lastmod>
     <xhtml:link
@@ -480,91 +904,6 @@
                 hreflang="pt"
                 href="https://zupit.github.io/docs-beagle/pt/search/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/screen-view-controller/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/serializer-and-deserializer/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-backend/serializer/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/shrink/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/log-system/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/log-system/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/components-positioning/size/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/sourcery/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-web/advanced-topics/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/urls/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/custom-validator/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/web/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/installing-beagle/web/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/web/</loc>
-    <lastmod>2020-11-11T18:01:35-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/style/web/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-android/custom-widgets/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/resources/customization/beagle-for-ios/custom-widgets/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
   </url>
   
 </urlset>

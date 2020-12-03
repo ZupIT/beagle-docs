@@ -1,0 +1,230 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beagle – Testes</title>
+    <link>https://zupit.github.io/docs-beagle/pt/docs/tutoriais/testes/</link>
+    <description>Recent content in Testes on Beagle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-beagle/pt/docs/tutoriais/testes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Benchmark Beagle Movies</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/tutoriais/testes/benchmark-beagle-movies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/tutoriais/testes/benchmark-beagle-movies/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;benchmark-beagle-movies&#34;&gt;Benchmark: Beagle Movies&lt;/h1&gt;
+&lt;h2 id=&#34;contexto&#34;&gt;Contexto&lt;/h2&gt;
+&lt;p&gt;O Beagle Movies é um aplicativo de filmes que foi desenvolvido usando o framework do Beagle. Com ele, é possível conferir resenhas de filmes e séries, além de criar listas personalizadas com o que você quer ou já assistiu.&lt;/p&gt;
+&lt;h2 id=&#34;quais-foram-os-testes&#34;&gt;Quais foram os testes?&lt;/h2&gt;
+&lt;h3 id=&#34;tamanho-do-payload&#34;&gt;Tamanho do Payload&lt;/h3&gt;
+&lt;p&gt;De modo geral, &lt;strong&gt;é esperado que o payload do&lt;/strong&gt; &lt;a href=&#34;../../principais-conceitos.md#server-driven-ui&#34;&gt;&lt;strong&gt;Server-Driven UI&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;seja maior que o nativo&lt;/strong&gt;, pois toda estrutura de layout vem no payload, enquanto o nativo somente as informações a serem mostradas.&lt;/p&gt;
+&lt;p&gt;Apesar disso, em algumas telas o tamanho do payload é inferior ao server driven. Isso acontece porque &lt;a href=&#34;../../principais-conceitos.md#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF (Backend For Frontend)&lt;/strong&gt;&lt;/a&gt; filtra os dados que não são usados no aplicativo e não envia no payload.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Telas&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Resposta em telas Server-Driven (em KB)&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Resposta em telas nativas (em KB)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Home&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;423,89 KB&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;300,73 KB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Detalhes&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;2,15 KB&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;3,37 KB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Search&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;12,8 KB&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;14,45 KB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Resultado do teste&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;438,84 KB&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;318,55 KB&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Para telas mais complexas, o payload do server-driven ficará maior. É importante ressaltar que o Beagle utiliza um mecanismo de &lt;a href=&#34;../../features/cache/&#34;&gt;cache&lt;/a&gt; e que esse teste é considerado apenas a primeira requisição.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+A vantagem em usar o Beagle é porque &lt;strong&gt;você só desenvolve a tela apenas uma vez&lt;/strong&gt;, enquant em telas nativas você terá de desenvolver para cada plataforma.
+&lt;/div&gt;
+
+&lt;h3 id=&#34;tempo-de-resposta&#34;&gt;Tempo de Resposta&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Telas Nativas:&lt;/strong&gt; É necessário fazer várias requisições para montar a tela&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Telas Server-Driven:&lt;/strong&gt; É necessário apenas uma requisição do BFF&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Telas&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Tempo de resposta em telas Server-Driven  (em ms)&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Tempo de resposta em telas nativas  (em ms)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Home&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;312 ms&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;448 ms&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Detalhes&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;179 ms&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;346 ms&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Search&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;176 ms&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;271 ms&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Resultado do teste&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;668 ms&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;1065 ms&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;teste-de-performance&#34;&gt;Teste de performance&lt;/h2&gt;
+&lt;h3 id=&#34;ios&#34;&gt;iOS&lt;/h3&gt;
+&lt;p&gt;Veja a diferença de performance em telas nativas e server-driven considerando o processo de inicialização, chamada e resposta dos serviços de renderização da tela.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Etapas&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Tempo decorrido em telas Server-Driven  (em segundos)&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Tempo decorrido em telas nativas  (em segundos)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Start test&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;0,00 s&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;0,00 s&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Set up&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;0,10 s&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;0,06 s&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Open project&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;0,13 s&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;0,08 s&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Launch app&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;0,15 s&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;0,12 s&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Setting up automation session&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;3,95 s&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;2,17 s&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Resultado do teste&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;8,21 segundos&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;6,39 segundos&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/comparativo-ios-v1-1-.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Configuração do Robolectric</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/tutoriais/testes/configura%C3%A7%C3%A3o-do-robolectric/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/tutoriais/testes/configura%C3%A7%C3%A3o-do-robolectric/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;o-que-é&#34;&gt;O que é?&lt;/h2&gt;
+&lt;p&gt;O Roboletric é um &lt;strong&gt;framework para testes unitários&lt;/strong&gt; no Android. Uma de suas funções é simular informações  sobre o contexto do Android durante a realização desses testes.&lt;/p&gt;
+&lt;p&gt;Antes de utilizá-lo, é preciso configurar uma dependência do Yoga Layout chamada de &lt;strong&gt;SoLoader&lt;/strong&gt; que, se não estiver habilitado para &lt;strong&gt;modo TESTE&lt;/strong&gt;, vai ocorrer um erro de &lt;strong&gt;nullPointerException&lt;/strong&gt;, uma vez que a view não existirá naquele contexto.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+Vale lembrar que o Beagle utiliza &lt;strong&gt;Yoga Layout&lt;/strong&gt; para &lt;a href=&#34;../../features/layout-de-componentes/&#34;&gt;&lt;strong&gt;posicionar os componentes na tela&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Sendo assim, você precisa configurar o nosso SDK para ativar o &amp;ldquo;TesteMode&amp;rdquo; no SoLoader quando iniciar um teste e desativá-lo assim que terminar. Para tal, basta utilizar as funções conforme indicado a seguir.&lt;/p&gt;
+&lt;h2 id=&#34;como-configurar&#34;&gt;Como configurar?&lt;/h2&gt;
+&lt;p&gt;Para configurar o Beagle  para os testes do &lt;strong&gt;Roboeletric&lt;/strong&gt;, adicione o código abaixo no seu caso de teste:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#5c35cc;font-weight:bold&#34;&gt;@BeforeClass&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;setup&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;BeagleSdk&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;setInTestMode&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+&lt;span style=&#34;color:#5c35cc;font-weight:bold&#34;&gt;@AfterClass&lt;/span&gt; 
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;teardown&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;BeagleSdk&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;deinitForTest&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Usando widget Id</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/tutoriais/testes/usando-widget-id/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/tutoriais/testes/usando-widget-id/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;Para testar sua aplicação, você precisa de um Widget ID. Para fazer isso, Beagle oferece alguns métodos &lt;strong&gt;set&lt;/strong&gt; e &lt;strong&gt;get.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Nessa seção, você verá dois específicos:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Set Id&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Get Id&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;set-id&#34;&gt;Set Id&lt;/h2&gt;
+&lt;p&gt;O método Set Id é usado quando você precisa setar um Id no &lt;a href=&#34;../../api/widget.md&#34;&gt;&lt;strong&gt;widget&lt;/strong&gt;&lt;/a&gt; fornecido para o &lt;a href=&#34;../../principais-conceitos.md#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;. Para fazer isso, você precisa chamar esse método no widget que você quer o Id setado durante o momento que você está criando o seu widget.&lt;/p&gt;
+&lt;p&gt;Veja como funciona abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Text with id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;setId&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;myTextId&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;get-id&#34;&gt;Get Id&lt;/h2&gt;
+&lt;p&gt;No Get Id, você tem diferentes maneiras de setar de acordo com a sua plataforma frontend.&lt;/p&gt;
+&lt;p&gt;Veja abaixo:&lt;/p&gt;
+&lt;p&gt;No Android para obter um Widget Id você precisa chamar a &lt;code&gt;String.toAndroidId()&lt;/code&gt; e esse método retornará um Id para você usar onde precisar.&lt;/p&gt;
+&lt;p&gt;Veja como funciona, abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;myTextId&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;toAndroidId&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;No iOS, o Id é registrado no &lt;code&gt;accessibilityIdentifier&lt;/code&gt;. Com isso, para usá-lo, você precisa usar o mesmo valor que está no &lt;code&gt;setId()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Veja como funciona, abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;myTextId&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Na Web, existe uma configuração default que cada componente renderizado pelo Beagle recebe o &amp;lsquo;data-beagle-id&amp;rsquo; que está em html, se o backend não setar o Id.&lt;/p&gt;
+&lt;p&gt;Se você quiser recuperar, use o javascript e html rodando o comando abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;element&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;getAttribute&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;widgetId&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;O valor do Widget Id será personalizado, se o backend setar o Id (como no exemplo, &amp;ldquo;myTextId&amp;rdquo;) ou ele será um valor default  (&amp;lsquo;data-beagle-id&amp;rsquo;).&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

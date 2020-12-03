@@ -1,0 +1,712 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beagle – Resources</title>
+    <link>https://zupit.github.io/docs-beagle/docs/resources/</link>
+    <description>Recent content in Resources on Beagle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-beagle/docs/resources/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Cache</title>
+      <link>https://zupit.github.io/docs-beagle/docs/resources/cache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/resources/cache/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;Currently, there are &lt;strong&gt;two cache labels&lt;/strong&gt; on Beagle:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A volatile layer.&lt;/li&gt;
+&lt;li&gt;A persistent layer.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The volatile layer today depends on the persistent layer, meaning that only curly items on the persistent layer are candidates to the volatile cache.&lt;/p&gt;
+&lt;h2 id=&#34;caches-layers&#34;&gt;Cache&amp;rsquo;s layers&lt;/h2&gt;
+&lt;h3 id=&#34;volatile-cache&#34;&gt;Volatile cache&lt;/h3&gt;
+&lt;p&gt;It&amp;rsquo;s the cache that lays on the frontend application&amp;rsquo;s memory and it&amp;rsquo;s used to reduce the number of backend&amp;rsquo;s calls.&lt;/p&gt;
+&lt;p&gt;The entries on this cache layer has time duration defined by cache general configurations of each client&amp;rsquo;s platform.&lt;/p&gt;
+&lt;p&gt;You can check out how to &lt;strong&gt;configure the cache&lt;/strong&gt; according to your frontend&amp;rsquo;s platform on the following links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;ho-to-configure-cache.md&#34;&gt;&lt;strong&gt;Configuring Cache&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;persistent-cache&#34;&gt;Persistent cache&lt;/h3&gt;
+&lt;p&gt;On this cache layer, there are two types of localization:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;On backend&amp;rsquo;s memory;&lt;/li&gt;
+&lt;li&gt;On frontend&amp;rsquo;s storage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This cache is used to optimize BFF&amp;rsquo;s response - in terms of time and size -, in cases where there is no changes. The entries of this cache lasts until the server redeploy or the client is reinstalled.&lt;/p&gt;
+&lt;p&gt;The premisse to this cache works is that it has to always return the same JSON to the same request. To guarantee that, it&amp;rsquo;s necessary that this cache is the same according to its endpoint and specific platform as we can see in &lt;a href=&#34;../components/platform-sorting.md&#34;&gt;&lt;strong&gt;component&amp;rsquo;s platform specification.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In other words, we say that an endpoint can return a static element because it can only work if it returns the same JSON, independently of any other specific platform.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+
+It&amp;rsquo;s important to remember that cache&amp;rsquo;s mechanism &lt;strong&gt;must not&lt;/strong&gt; be used with &lt;strong&gt;endpoints&lt;/strong&gt; that does not meet this &lt;strong&gt;premisse&lt;/strong&gt;.
+&lt;/div&gt;
+
+&lt;p&gt;The cache can be activated or disabled on BFF by endpoint or for an entire  BFF. You can &lt;strong&gt;check out&lt;/strong&gt;  &lt;a href=&#34;../customization/beagle-for-backend/&#34;&gt;&lt;strong&gt;how to configure a cache.&lt;/strong&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;how-does-the-cache-protocol-works&#34;&gt;How does the cache protocol works?&lt;/h2&gt;
+&lt;p&gt;The protocol acts in the &lt;code&gt;beagle-hash&lt;/code&gt; header. BFF validates the received hashes and send a complete response or just the &lt;code&gt;status HTTP 304 Not Modified&lt;/code&gt; (without the body).&lt;/p&gt;
+&lt;p&gt;When BFF responds with the &lt;code&gt;status 304&lt;/code&gt;, the application loads the element in cache. If this does not happen, it stores the hash and render the received elements.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/beaglesave.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h2&gt;
+&lt;p&gt;👉 See how to &lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-en/resources/cache/ho-to-configure-cache#configuring-and-customizing-the-cache&#34;&gt;&lt;strong&gt;configure cache&lt;/strong&gt;&lt;/a&gt; according to each platform (Android, iOS, Web e Backend).&lt;/p&gt;
+&lt;p&gt;👉Check out &lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-en/resources/cache/ho-to-configure-cache#how-does-cache-work&#34;&gt;&lt;strong&gt;how cache works&lt;/strong&gt; &lt;/a&gt;according to its types (reliable and unreliable).&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Component&#39;s Positioning</title>
+      <link>https://zupit.github.io/docs-beagle/docs/resources/components-positioning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/resources/components-positioning/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+&lt;h4 id=&#34;availability-beagle-10&#34;&gt;Availability: Beagle 1.0+&lt;/h4&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Beagle will use a dependency called &lt;a href=&#34;https://yogalayout.com/docs/&#34;&gt;&lt;strong&gt;&lt;code&gt;Yoga Layout&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt; to position components on your application screen. To do this, Yoga calculates the position the elements are, and after that, it does its rendering.&lt;/p&gt;
+&lt;h2 id=&#34;about-yoga-layout&#34;&gt;&lt;strong&gt;About Yoga Layout&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Yoga is framework developed by Facebook to position views using the Flexbox concept in Android and iOS applications.&lt;/p&gt;
+&lt;p&gt;Flexbox is a CSS concept that organizes elements in containers dynamically so that, regardless of your application dimensions, you can maintain a flexible layout.&lt;/p&gt;
+&lt;p&gt;Here follows some key concepts about Flexbox:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Main Axis&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cross Axis&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Main Size&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For Main Size, it is possible to set &lt;strong&gt;3 types of dimensions:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Cross Size:&lt;/strong&gt; The size of a cross axis.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Main Start and Main&lt;/strong&gt;  The Start and End point in a main axis.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cross Start and Cross End:&lt;/strong&gt; Start and end in a cross axis.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;‌&lt;/strong&gt;These axis values will depend on what is defined at the Flex-direction property.&lt;/p&gt;
+&lt;p&gt;If it is defined as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;row ou row-reverse:&lt;/strong&gt; The main axis will be horizontal and the cross axis will be vertical.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/YwCLX11cEtBYnUcVYIDy63Z_aoEA5rfErFyOKSOgxZA092HmcFO7ZwDKgKJ6Tmjr-J3m7aQgSYCn2p0QzSLO_NsibCWc7LCg9Y2xDjVXQ6BWyhIjYpB3tCdbKx-4CnrKG7tSzaqp&#34; alt=&#34;Exemplo de yoga layout com row ou row-reverse&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;column ou column-reverse:&lt;/strong&gt; The main axis will be vertical and the cross axis will be horizontal.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/AM1cTOExo5ux4V_2-HE6WItbPdTWHj-6CBwDXxo8mV0vZfw6WoxtWWOUtosLU_UTTAArH_pMm35geJE1HBfYjqT-DBshvLsUcjvCmVoQVdPSGTW8QCx8YJltIgC4Ad9cDKFu1dQ4&#34; alt=&#34;Exemplo de yoga layout com column ou column-reverse&#34;&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;strong&gt;Important!&lt;/strong&gt; The default orientation on Beagle will be a column, meaning the the elements are displayed in a column.
+&lt;/div&gt;
+
+&lt;h2 id=&#34;properties&#34;&gt;Properties&lt;/h2&gt;
+&lt;p&gt;The following atributes willl define specific properties that the Yoga Layout sets.&lt;/p&gt;
+&lt;h3 id=&#34;unitvalue&#34;&gt;&lt;strong&gt;UnitValue&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The &lt;strong&gt;Basis, Size, Margin, Padding and Position&lt;/strong&gt; attributes described above receive a &lt;code&gt;UnitValue&lt;/code&gt; that expects a &lt;code&gt;Double&lt;/code&gt; value and a &lt;code&gt;UnitType&lt;/code&gt;, which is an &lt;code&gt;enum&lt;/code&gt; with the following options:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;&lt;strong&gt;UnitType&lt;/strong&gt;&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Definition&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;REAL&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Apply a &lt;code&gt;Double&lt;/code&gt;value&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;PERCENT&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Apply  a &lt;code&gt;Double&lt;/code&gt; value as percentage of the parent size&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;AUTO&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Follows the parent&amp;rsquo;s value. Except when it has its own size&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;For the attributes listed below, on the Web, the default is&lt;code&gt;UnitType.AUTO&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;UnitType.AUTO&lt;/code&gt; can be used on iOS, Android and Web fronts according to the table below:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&#34;text-align:center&#34;&gt;Attributes&lt;/th&gt;
+      &lt;th style=&#34;text-align:center&#34;&gt;
+        &lt;p&gt;
+          &lt;img src=&#34;../../.gitbook/assets/image (125).png&#34; alt/&gt;
+        &lt;/p&gt;
+        &lt;p&gt;iOS&lt;/p&gt;
+      &lt;/th&gt;
+      &lt;th style=&#34;text-align:center&#34;&gt;
+        &lt;p&gt;
+          &lt;img src=&#34;../../.gitbook/assets/image (126).png&#34; alt/&gt;
+        &lt;/p&gt;
+        &lt;p&gt;Android&lt;/p&gt;
+      &lt;/th&gt;
+      &lt;th style=&#34;text-align:center&#34;&gt;
+        &lt;p&gt;
+          &lt;img src=&#34;../../.gitbook/assets/image (122).png&#34; alt/&gt;
+        &lt;/p&gt;
+        &lt;p&gt;Web&lt;/p&gt;
+      &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&lt;b&gt;Basis&lt;/b&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&amp;#x2714;&lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&amp;#x2714;&lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&amp;#x2714;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&lt;b&gt;Size&lt;/b&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&amp;#x2714;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&lt;b&gt;Margin&lt;/b&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&amp;#x2714;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&lt;b&gt;Padding&lt;/b&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&amp;#x2714;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&lt;b&gt;Position&lt;/b&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&amp;#x2714;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Components</title>
+      <link>https://zupit.github.io/docs-beagle/docs/resources/components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/resources/components/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Customization</title>
+      <link>https://zupit.github.io/docs-beagle/docs/resources/customization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/resources/customization/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;Beagle has in its library some customization. You can check the process of each one in the links below:&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Builders for Kotlin Dsl</title>
+      <link>https://zupit.github.io/docs-beagle/docs/resources/builders-for-kotlin-dsl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/resources/builders-for-kotlin-dsl/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;Beagle offers two ways to define your components using builders:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Pattern builder&lt;/li&gt;
+&lt;li&gt;DSL builder&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;With them, you are able to use the platform&amp;rsquo;s components in a declarative way with Kotling or more practical way to assemble the components with your pattern values, in case if you are using Java instead of Kotlin.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+You can mix two available ways to define a component.
+&lt;/div&gt;
+
+&lt;h2 id=&#34;pattern-builder&#34;&gt;Pattern builder&lt;/h2&gt;
+&lt;p&gt;The way to use the patterns builder on Beagle is similiar to any other builder you have used before. The builder&amp;rsquo;s name is generally the component&amp;rsquo;s name with the suffix Builder attached.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;exceptions&lt;/strong&gt; are the components with the type:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;sealed classes&lt;/code&gt;,  builders that has its father class as an attached prefix.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Screen&lt;/code&gt;, builder that is a &lt;code&gt;ScreenComponentBuilder&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//Navigate is a sealed class with 
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//OpenNativeRoute as a child class
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;NavigateOpenNativeRouteBuilder&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;()&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;route&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/route&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;shouldResetApplication&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;false&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;HashMap&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;())&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;build&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//Navigate is a sealed class with
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//OpenNativeRoute as a child class
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NavigateOpenNativeRouteBuilder&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;route&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/route&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;shouldResetApplication&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;false&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;mutableMapOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;())&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;build&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;dsl-builder&#34;&gt;DSL builder&lt;/h2&gt;
+&lt;p&gt;To define a Beagle component using this method, you have to declare the component and its properties using keys and methods with the same field name to be declared or directly by the attribution operator (=). See the example below:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;alert&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;valueOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Titulo&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; 
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//using the keys
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#000&#34;&gt;message&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;valueOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Message&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//using the methods
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#000&#34;&gt;labelOk&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;OK&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//attributing the value directly 
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//equivalent
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Alert&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;title&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;valueOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Titulo&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;message&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;valueOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Message&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;labelOk&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;OK&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In cases where the field waits a &lt;strong&gt;list or a map&lt;/strong&gt;, you have to put before the elemement to be added in the collection with the operator &amp;lsquo;+&amp;rsquo;. This operator also accepts a unique element. See the examples:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;container&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;children&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Hello&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;There&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;listOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;General&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Kenobi&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//equivalent
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Container&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;children&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;listOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Hello&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;There&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;General&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Kenobi&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;navigateOpenNativeRoute&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt; 
+    &lt;span style=&#34;color:#000&#34;&gt;route&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/route&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;shouldResetApplication&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;false&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;+(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Content-Type&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;application/json&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;mapOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Content-Type&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;application/json&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Content-Type&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;application/json&amp;#34;&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//equivalent
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Navigate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;OpenNativeRoute&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;route&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/route&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;shouldResetApplication&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;false&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;data&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;mapOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+        &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Content-Type&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;application/json&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+        &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Content-Type&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;application/json&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+        &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Content-Type&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;application/json&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;
+&lt;p&gt;The example below defines a simple declared screen in the three available options on Beagle:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;navigationBar&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;NavigationBar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;title&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Navigation Bar Title&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;showBackButton&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;false&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;child&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;valueOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Hello There&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;applyStyle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;margin&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;EdgeValue&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;bottom&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;10.u&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;nitReal&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;())&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;screen{
+    navigationBar{
+        title = &amp;quot;Navigation Bar Title&amp;quot;
+        showBackButton = true
+    }
+    child{
+        text{
+            text = valueOf(&amp;quot;Hello There&amp;quot;)
+        }.style { 
+            margin{
+                bottom = 10.unitReal()
+            }
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;ScreenComponentBuilder()
+    .navigationBar(
+        NavigationBarBuilder()
+            .title(&amp;quot;Navigation Bar Title&amp;quot;)
+            .showBackButton(true)
+            .build()
+    ).child(
+        TextBuilder()
+            .text(valueOf(&amp;quot;Hello There&amp;quot;))
+            .build().applyStyle(
+                StyleBuilder()
+                    .margin(
+                        EdgeValueBuilder()
+                            .bottom(10.unitReal())
+                            .build()
+                    )
+                    .build()
+            )
+    ).build()
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Style</title>
+      <link>https://zupit.github.io/docs-beagle/docs/resources/style/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/resources/style/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;Beagle offers a style resources for your components. You can know more about this process checking out the styles for each operational system in the next pages:&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Live Preview</title>
+      <link>https://zupit.github.io/docs-beagle/docs/resources/live-preview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/resources/live-preview/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Live Preview is a visualization resource that helps with &lt;code&gt;layout&lt;/code&gt; development. It allows that screens in development be rendered without need to run your backend server for the layout changes done, thus reducing a screen&amp;rsquo;s development time.&lt;/p&gt;
+&lt;p&gt;In other words, when a developer edits code defining a screen, they can use the plugin so that updates are communicated to the client and it renders them. This way, it&amp;rsquo;s possible to view change without running a backend server.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+This frontend and backend connection is done through a &lt;code&gt;WebSocket&lt;/code&gt;on port: &lt;code&gt;9721&lt;/code&gt;.
+&lt;/div&gt;
+
+&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;To use &lt;code&gt;Live Preview&lt;/code&gt;, you must:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use &lt;a href=&#34;../get-started/installing-beagle/beagle-backend.md&#34;&gt;&lt;strong&gt;Beagle SDK&lt;/strong&gt;&lt;/a&gt; in your BFF**;**&lt;/li&gt;
+&lt;li&gt;Install &lt;code&gt;BeaglePreview&lt;/code&gt; plugin;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;bff-configuration&#34;&gt;BFF Configuration&lt;/h3&gt;
+&lt;p&gt;You must have a configured BFF with Beagle to use Live Preview. In case you haven&amp;rsquo;t done it, &lt;a href=&#34;https://github.com/ZupIT/beagle-examples/tree/master/BeagleSampleBackend&#34;&gt;&lt;strong&gt;click here to download an initial project&lt;/strong&gt;&lt;/a&gt;. As an alternative, &lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-en/get-started/new-project/exemplo-de-projeto-backend-com-beagle&#34;&gt;&lt;strong&gt;follow our tutorial on how to implement a Beagle configured backend&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;intellij-plugin-installation&#34;&gt;&lt;strong&gt;IntelliJ plugin installation&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;To install &lt;code&gt;BeaglePreview&lt;/code&gt;, click on the link below to install:&lt;/p&gt;
+&lt;p&gt;{% embed url=&amp;ldquo;&lt;a href=&#34;https://plugins.jetbrains.com/plugin/14575-beagle-sdk-live-preview%22&#34;&gt;https://plugins.jetbrains.com/plugin/14575-beagle-sdk-live-preview&amp;quot;&lt;/a&gt; caption=&amp;ldquo;Live Preview plugin for IntelliJ&amp;rdquo; %}}&lt;/p&gt;
+&lt;h2 id=&#34;live-preview-use&#34;&gt;Live Preview Use&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+You &lt;strong&gt;must configure&lt;/strong&gt; both backend and frontend for the Live Preview**.** The frontend can be Android or iOS client.
+&lt;/div&gt;
+
+&lt;h3 id=&#34;step-1-backends-configuration&#34;&gt;Step 1: Backend&amp;rsquo;s Configuration&lt;/h3&gt;
+&lt;p&gt;The following steps allow you to view a screen defined in the backend using Live Preview:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You will create a declarative screen to test. The code ahead will return a simple screen as an example.&lt;/li&gt;
+&lt;li&gt;You will create a function that returns the screen to be viewed through the plugin.&lt;/li&gt;
+&lt;li&gt;Finally, you must annotate this function with&lt;code&gt;@BeaglePreview&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;After this, Live Preview will be capable of receiving the developed screen to be rendered. Some interesting points on the example below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Notice the screen itself is defined in the &lt;code&gt;ScreenBeagleBuilder&lt;/code&gt; class.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;buildPreview&lt;/code&gt; function is annotated with &lt;code&gt;@BeaglePreview&lt;/code&gt; and, therefore, the sender of our screen to be rendered by the plugin.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#5c35cc;font-weight:bold&#34;&gt;@BeaglePreview&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;buildPreview&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ScreenBeagleBuilder&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ScreenBeagleBuilder&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ScreenBuilder&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;build&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;child&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Container&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;children&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;listOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+                &lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Live Preview!!!&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If your function is recognized by the plugin, the Beagle logo will appear as a button to the left of the function. When clicking this button, &lt;code&gt;BeaglePreview&lt;/code&gt; will push the layout to the client (frontend application), allowing it to update on your layout instantly!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-MBKub9vQLsLEO6x4WU-%2F-MBKumGuvPmYm2W85BiJ%2FlivePreviewPluginIntelliJIDEA.gif?alt=media&amp;amp;token=9fe8cc42-b29e-42b2-906c-94f6d524bdfe&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;After running the plugin on some function, you only need to save the changes done in your layout so that the Live Preview updates the screen being rendered by the frontend. It does this by compiling your modified code and verifying if there is some change and, if there is, push your new layout to the client.&lt;/p&gt;
+&lt;h3 id=&#34;step-2-frontends-configuration&#34;&gt;Step 2: Frontend&amp;rsquo;s configuration&lt;/h3&gt;
+&lt;p&gt;Once you have configured your backend, the next step is to configure the frontend&amp;rsquo;s application emulator for a Beagle Android or iOS project.&lt;/p&gt;
+&lt;h3 id=&#34;step-1-installing-the-submodule&#34;&gt;Step 1: Installing the submodule&lt;/h3&gt;
+&lt;p&gt;To make this installation, your &lt;code&gt;gradle&lt;/code&gt; file must contain the following fragment:&lt;/p&gt;
+&lt;p&gt;The latest Beagle&amp;rsquo;s version:&lt;a href=&#34;https://raster.shields.io/bintray/v/zupit/repo/beagle&#34;&gt;![https://img.shields.io/bintray/v/zupit/repo/beagle](https://img.shields.io/bintray/v/zupit/repo/beagle&lt;/a&gt;]()&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// Add in your plugins
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;apply&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;plugin&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;kotlin&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;kapt&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;&amp;#39;&lt;/span&gt;
+
+&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// Add in your app level dependency
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ext&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;beagle_version&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;${beagle_version}&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;
+ 
+&lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;implementation&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;br.com.zup.beagle:android:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;$beagle_version&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;kapt&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;br.com.zup.beagle:android-processor:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;$beagle_version&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;
+    
+    &lt;span style=&#34;color:#000&#34;&gt;debugImplementation&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;br.com.zup.beagle:android-preview:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;$beagle_version&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On &lt;code&gt;ext.beagle_version = &amp;quot;${beagle_version}&amp;quot;&lt;/code&gt;, insert the Beagle&amp;rsquo;s release version on the place of &lt;code&gt;${beagle.version}&lt;/code&gt;. That means that you put the Beagle&amp;rsquo;s version indicated on the blue badge, but without the &lt;strong&gt;v character&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For example: undefined-&lt;code&gt;ext.beagle.version = &amp;quot;0.2.8&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Once you made it, you can update your dependencies.&lt;/p&gt;
+&lt;h3 id=&#34;step-2-creating-a-preview-activity&#34;&gt;Step 2: Creating a Preview Activity&lt;/h3&gt;
+&lt;p&gt;First of all, it&amp;rsquo;s necessary to state a &lt;code&gt;PreviewActivity&lt;/code&gt; on your application&amp;rsquo;s manifest to show a preview:&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+It&amp;rsquo;s not necessary to create, in fact, an Activity because it&amp;rsquo;s already internally created on  Beagle. You should only refer it on your manifest indicating that it&amp;rsquo;s part of Activities&#39; hall accessible on this application.
+&lt;/div&gt;
+
+&lt;p&gt;Copy and paste the Activity below on your &lt;strong&gt;&lt;code&gt;AndroidManifest&lt;/code&gt;&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;...
+    &amp;lt;application&amp;gt;
+        ...
+        &amp;lt;activity
+            android:exported=&amp;quot;true&amp;quot;
+            android:name=&amp;quot;br.com.zup.beagle.android.preview.PreviewActivity&amp;quot;
+            android:theme=&amp;quot;@style/AppTheme.NoToolbar&amp;quot;/&amp;gt;
+    &amp;lt;/application&amp;gt;
+&amp;lt;/manifest&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;As well as in &lt;code&gt;BeagleActivity&lt;/code&gt;&lt;strong&gt;,&lt;/strong&gt; you must inform on&lt;code&gt;PreviewActivity&lt;/code&gt; state that the theme has not the &lt;code&gt;ActionBar,&lt;/code&gt; because Beagle already coordinates this component.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Another important point is that you have to enable the exported flag so it can start through &lt;code&gt;ADB&lt;/code&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;visualizing-screens-through-android-studios-emulator&#34;&gt;Visualizing screens through Android Studio&amp;rsquo;s Emulator&lt;/h2&gt;
+&lt;p&gt;After you finished the previous configurations, you must &lt;strong&gt;start the IntelliJ plugin&lt;/strong&gt; by clicking on Beagle&amp;rsquo;s symbol next to the function that notes &lt;code&gt;@BeaglePreview&lt;/code&gt; and opens&lt;code&gt;PreviewActivity&lt;/code&gt; to receive the updates sent from BFF to be automatically rendered.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To start the &lt;code&gt;PreviewActivity&lt;/code&gt; through &lt;code&gt;intent&lt;/code&gt;, you just have to call the intent below to see the emulator&amp;rsquo;s screen:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;startActivity&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PreviewActivity&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;newIntent&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;However,  if you prefer to start through &lt;strong&gt;ADB&lt;/strong&gt;, just call the method:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;adb shell am start -n applicationpackagename/br.com.zup.beagle.android.preview.PreviewActivity
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+For more information about your package, access the attribute&amp;rsquo;s package on your&lt;code&gt;AndroidManifest&lt;/code&gt;&amp;rsquo;s file**.**
+&lt;/div&gt;
+
+&lt;h2 id=&#34;visualizing-screens-through-android-device&#34;&gt;Visualizing screens through Android Device&lt;/h2&gt;
+&lt;p&gt;You can also view the screen you&amp;rsquo;re creating  by an Android &lt;code&gt;device&lt;/code&gt;. To do so, it&amp;rsquo;s necessary to inform your network&amp;rsquo;s &lt;code&gt;IP&lt;/code&gt; on the &lt;code&gt;intent&lt;/code&gt; that calls the Live Preview screen.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;The Live Preview&amp;rsquo;s Activity connects to the &lt;code&gt;Backend&lt;/code&gt; &amp;rsquo;s screen through the client&amp;rsquo;s&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;websocket&lt;/code&gt; connection. In this way, this &lt;code&gt;client&lt;/code&gt; needs to know which&lt;code&gt;IP&lt;/code&gt; must be used to establish the connection.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;To start a &lt;code&gt;PreviewActivity&lt;/code&gt; through &lt;code&gt;device&lt;/code&gt;, you just have to call the &lt;code&gt;intent&lt;/code&gt; below so you can see the screen on your device:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;startActivity&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;PreviewActivity&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;newIntent&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; 
+            &lt;span style=&#34;color:#000&#34;&gt;endpoint&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://myIP:9721&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;step-1-installing-the-submodule-1&#34;&gt;Step 1: Installing the submodule&lt;/h3&gt;
+&lt;p&gt;To make the installation, your pod file must contain the following fragments:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;...
+pod &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;BeagleUI&amp;#39;&lt;/span&gt;, :git &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;https://github.com/ZupIT/beagle.git&amp;#39;&lt;/span&gt;
+pod &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;BeagleUI/Preview&amp;#39;&lt;/span&gt;, :git &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&amp;gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;https://github.com/ZupIT/beagle.git&amp;#39;&lt;/span&gt;
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After that, you can update your dependencies:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;$ pod install
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;step-2-use&#34;&gt;Step 2: Use&lt;/h3&gt;
+&lt;p&gt;The user must present the preview&amp;rsquo;s controller of any visible &lt;code&gt;UIViewController&lt;/code&gt; with &lt;strong&gt;BeaglePreview.present(in:self)&lt;/strong&gt; code.&lt;/p&gt;
+&lt;p&gt;Once you made it, the preview controller will connect to a plugin and start to listen the received messages about layout change.&lt;/p&gt;
+&lt;p&gt;On the hypothetical example below, you can see how the UIViewController must be shown:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;import BeagleUI
+
+class ViewController: UIViewController &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+
+    override func viewDidLoad&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        super.viewDidLoad&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;()&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+    override func viewDidAppear&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;_ animated: Bool&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        super.viewDidAppear&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;animated&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+        BeaglePreview.present&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;in: self&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;limitations&#34;&gt;Limitations&lt;/h2&gt;
+&lt;p&gt;When using Live Preview, there are two important points to keep in mind:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The Live Preview client can render any change using the elements available to it when it was started. Custom elements added afterward require a client to rebuild and restart.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;@BeaglePreview&lt;/code&gt; annotation works with public methods with no parameters outside any class or in a public class that has a constructor with no parameters. See the snippets below.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;UnsupportedConstructor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;thing&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Any&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#5c35cc;font-weight:bold&#34;&gt;@BeaglePreview&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;preview&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;:(&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;SupportedPrimaryConstructor&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#5c35cc;font-weight:bold&#34;&gt;@BeaglePreview&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;preview&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;:)&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;SupportedBySecondaryConstructor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;thing&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Any&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;constructor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;solved&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+    &lt;span style=&#34;color:#5c35cc;font-weight:bold&#34;&gt;@BeaglePreview&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;preview&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;:)&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;MethodSupport&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#5c35cc;font-weight:bold&#34;&gt;@BeaglePreview&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;supportedMethod&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;:)&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    
+    &lt;span style=&#34;color:#5c35cc;font-weight:bold&#34;&gt;@BeaglePreview&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;unsupportedMethod&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;thing&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Any&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;:(&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+&lt;span style=&#34;color:#5c35cc;font-weight:bold&#34;&gt;@BeaglePreview&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;unsupportedFunction&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;thing&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Any&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;:(&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;span style=&#34;color:#5c35cc;font-weight:bold&#34;&gt;@BeaglePreview&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;supportedFunction&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;:)&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Screen navigation</title>
+      <link>https://zupit.github.io/docs-beagle/docs/resources/screen-navigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/resources/screen-navigation/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;On Beagle, navigation works as a type of &lt;a href=&#34;../api/actions/&#34;&gt;&lt;strong&gt;Action&lt;/strong&gt;&lt;/a&gt;, which can be used by all components that receives an action.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+Before configuring the navigation between screens of your application, it is required you have &lt;a href=&#34;../get-started/installing-beagle/&#34;&gt;&lt;strong&gt;installed Beagle&lt;/strong&gt;&lt;/a&gt;, checked the &lt;a href=&#34;../get-started/using-beagle/&#34;&gt;&lt;strong&gt;use configuration&lt;/strong&gt;&lt;/a&gt; and tested Beagle&amp;rsquo;s framework on the &lt;a href=&#34;../displaying-a-screen.md#displaying-a-server-driven-screen&#34;&gt;&lt;strong&gt;displaying a server-driven screen tutorial&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;
+&lt;/div&gt;
+
+&lt;p&gt;After these configuration, just add the example code as a return of you service and call the endpoint, defining in your controller,  in your frontend.&lt;/p&gt;
+&lt;h2 id=&#34;navigations-routes&#34;&gt;Navigation&amp;rsquo;s routes&lt;/h2&gt;
+&lt;p&gt;Some navigation actions needs a parameter. It is possible to receive two route type:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Local:&lt;/strong&gt; intern navigation that expects a new &lt;a href=&#34;../api/screen/&#34;&gt;&lt;strong&gt;screen&lt;/strong&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Remote:&lt;/strong&gt; expects that the &lt;code&gt;url&lt;/code&gt; points into an API that will return one of more Beagle&amp;rsquo;s components.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;On the example below, we case a case where the &lt;code&gt;route&lt;/code&gt; is &lt;code&gt;remote&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:button&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Click me!&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;onPress&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleAction_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:pushStack&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;route&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+                &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;url&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/my-next-screen&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+                &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;shouldPrefetch&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;false&lt;/span&gt;
+            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Button&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+   &lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Click me!&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+   &lt;span style=&#34;color:#000&#34;&gt;onPress&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;listOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+       &lt;span style=&#34;color:#000&#34;&gt;Navigate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PushStack&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+           &lt;span style=&#34;color:#000&#34;&gt;route&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Route&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Remote&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/my-next-screen&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+       &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-MB0DuGx28NQeWEgD746%2F-MB0r5wLqOLNjqhX_8g_%2Fnavigate-remote.gif?alt=media&amp;amp;token=0b93b43c-8a51-40e8-b96d-76482546e719&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;types-of-navigation&#34;&gt;Types of navigation&lt;/h2&gt;
+&lt;p&gt;The following pages, you will see more details about Beagle&amp;rsquo;s navigation types:&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Urls</title>
+      <link>https://zupit.github.io/docs-beagle/docs/resources/urls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/resources/urls/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Most elements from Beagle use a field to points out a path to define the URLs. This field, in special, it is sent to backend to indicate HTTP requests that an application needs to do and that are managed by Beagle&amp;rsquo;s client.&lt;/p&gt;
+&lt;h2 id=&#34;types-of-paths&#34;&gt;Types of paths&lt;/h2&gt;
+&lt;p&gt;You have &lt;strong&gt;two ways to use these paths&lt;/strong&gt; on Beagle:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Absolute&lt;/li&gt;
+&lt;li&gt;Relative&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;absolute-path&#34;&gt;Absolute path&lt;/h3&gt;
+&lt;p&gt;A type of path used when you want to ignore the base URL already configured in your frontend application. If you make this indication, Beagle will understand that the URL is already complete and it will use it like this:&lt;/p&gt;
+&lt;p&gt;Example of absolute path:&lt;strong&gt;&lt;code&gt;https://api.zup.com.br/my-bff/home&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;relative-path&#34;&gt;Relative path&lt;/h3&gt;
+&lt;p&gt;A type of path used when you decide to keep the base URL configured in your frontend application.&lt;/p&gt;
+&lt;p&gt;For example, if you define a base URL like  &lt;strong&gt;&lt;code&gt;https://api.zup.com.br/my-bff&lt;/code&gt;&lt;/strong&gt; and receive a relative path somewhere like &lt;code&gt;/ home&lt;/code&gt;, Beagle will create the complete URL like  &lt;strong&gt;&lt;code&gt;https://api.zup.com. br /my-bff/home&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+It is recommended that you start with the relative path with an inverted bar (/), because this is how Beagle&amp;rsquo;s indicates a relative URL.
+&lt;/div&gt;
+
+&lt;h2 id=&#34;encode-type&#34;&gt;Encode type&lt;/h2&gt;
+&lt;p&gt;Beagle uses the Encoding type RFC 3986 standard when handling URLs.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

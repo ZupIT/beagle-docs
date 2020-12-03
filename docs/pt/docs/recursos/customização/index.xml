@@ -1,0 +1,78 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beagle – Customização</title>
+    <link>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/</link>
+    <description>Recent content in Customização on Beagle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Beagle para Android</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-android/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-android/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;O Beagle para Android possui estas principais classes:&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Beagle para ios</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-ios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-ios/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;O Beagle para iOS possui estas principais classes:&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Beagle para Web</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;O Beagle possui essas principais classes para Web: &lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-en/resources/customization/beagle-para-web/customized-actions&#34;&gt;&lt;br&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Beagle para Backend</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-backend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-backend/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;O Beagle para backend possui as seguintes customizações:&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

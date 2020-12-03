@@ -1,0 +1,791 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beagle – Beagle para Web</title>
+    <link>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/</link>
+    <description>Recent content in Beagle para Web on Beagle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Ações customizadas</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/a%C3%A7%C3%B5es-customizadas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/a%C3%A7%C3%B5es-customizadas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;É possível criar ações customizadas para o seus components com o Beagle.&lt;/p&gt;
+&lt;h3 id=&#34;criar-um-actionhandler&#34;&gt;Criar um ActionHandler&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Passo 1:&lt;/strong&gt; Crie um interface com a propriedade obrigatória &lt;em&gt;&lt;code&gt;_beagleAction_&lt;/code&gt;&lt;/em&gt; e outra com os  outros valores necessários, como no exemplo abaixo onde dois parâmetros foram criados: A e B.&lt;/p&gt;
+&lt;p&gt;O nome da ação customizada &lt;code&gt;_beagleAction_&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;interface&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;CustomAction&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;_beagleAction_&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;custom:myCustomAction&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;parameterA&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;string&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;parameterB&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;number&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Passo 2:&lt;/strong&gt; Crie a função &lt;code&gt;ActionHandler&lt;/code&gt; com a seguinte interface:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ActionHandler&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;@zup-it/beagle-web&amp;#39;&lt;/span&gt;
+
+
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;customAction&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ActionHandler&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;CustomAction&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;({&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;action&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;})&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Na função ActionHandler, você pode acessar os valores definidos como no exemplo acima:&lt;code&gt;action.parameterA&lt;/code&gt; e &lt;code&gt;action.parameterB.&lt;/code&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Passo 3:&lt;/strong&gt; Adicione o nome da ação no arquivo de associação do seu framework.&lt;/p&gt;
+&lt;p&gt;Para Angular: adicione beagle.module.ts&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a40000&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;BeagleModule&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;({&lt;/span&gt;
+  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;...&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;customActions&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;custom:myCustomAction&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;customAction&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//nome do action handler
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;})&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Para React: adicione ao seu arquivo de configuração do Beagle&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;createBeagleUIService&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;({&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;...&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;customActions&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;custom:myCustomAction&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;customAction&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//nome do action handler
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;})&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;adicione-ações-ao-json&#34;&gt;Adicione ações ao JSON&lt;/h3&gt;
+&lt;p&gt;Adicione a ação customizada ao JSON e adicione os parâmetros definidos na inteface do ActionHandler.&lt;/p&gt;
+&lt;p&gt;Veja abaixo um exemplo com button:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+    &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:button&amp;#34;,
+    &amp;#34;text&amp;#34;: &amp;#34;Clique para ação customizada&amp;#34;,
+    &amp;#34;onPress&amp;#34;: {
+        &amp;#34;_beagleAction_&amp;#34;: &amp;#34;custom:myCustomAction&amp;#34;,
+        &amp;#34;parameterA&amp;#34;: &amp;#34;Beagle Web&amp;#34;,
+        &amp;#34;parameterB&amp;#34;: 10
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Fique atento aos tipos de classe, quando você adicionar um parâmetro a ação cusomizada, o exemplo acima era uma &lt;code&gt;string&lt;/code&gt; e&lt;code&gt;number.&lt;/code&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Carregamento e tratamento de erros</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/carregamento-e-tratamento-de-erros/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/carregamento-e-tratamento-de-erros/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;loading-component&#34;&gt;Loading Component&lt;/h2&gt;
+&lt;p&gt;A biblioteca do Beagle já possui por padrão um componente que é chamado quando ocorre o carregamento de uma tela. Se necessário, é possível trocá-lo por um customizado de acordo com a necessidade da sua aplicação.&lt;/p&gt;
+&lt;p&gt;Para criar um componente loading, siga os passos abaixo:&lt;/p&gt;
+&lt;p&gt;No React:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Passo 1:&lt;/strong&gt; Crie um componente que será o substituto.&lt;/p&gt;
+&lt;p&gt;Veja o exemplo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import React, { FC } from &amp;#39;react&amp;#39;
+
+const CustomLoadingComponent: FC&amp;lt;any&amp;gt; = () =&amp;gt; {
+  return (
+    &amp;lt;div&amp;gt;Carregando&amp;lt;/div&amp;gt;
+  )
+}
+
+export default CustomLoadingComponent
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Passo 2:&lt;/strong&gt; Adicione-o à lista de componentes do Beagle Service para substituir o componente padrão:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { createBeagleUIService } from &amp;#39;@zup-it/beagle-react&amp;#39;
+import CustomLoadingComponent from &amp;#39;../components/CustomLoading&amp;#39;
+
+export default createBeagleUIService&amp;lt;any&amp;gt;({
+  baseUrl: &amp;#34;localhost:4000&amp;#34;,
+  components: {
+    &amp;#34;custom:loading&amp;#34;:CustomLoadingComponent
+  }
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;No Angular&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Passo 1:&lt;/strong&gt; Crie um componente que será o substituto.&lt;/p&gt;
+&lt;p&gt;Você pode usar o angular cli se preferir com o comando para gerar automaticamente o componente, veja:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;ng generate component components/custom-loading
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Passo 2:&lt;/strong&gt; Depois, abra o arquivo &lt;code&gt;beagle-components.module.ts&lt;/code&gt; e adicione o componente a lista:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { NgModule } from &amp;#39;@angular/core&amp;#39;
+import { CustomLoadingComponent } from &amp;#39;./components/custom-loading/custom-loading.component&amp;#39;;
+// import all the components you&amp;#39;re going to use with beagle
+
+const components = [
+  CustomLoadingComponent
+];
+
+@NgModule({
+  declarations: components,
+  entryComponents: components,
+  exports: components,
+  imports: [
+    // everything your components depend on
+  ],
+})
+export class BeagleComponentsModule {}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Passo 3:&lt;/strong&gt; Finalmente você pode substituir o componente padrão no arquivo &lt;code&gt;beagle.module.ts&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { BeagleModule } from &amp;#39;@zup-it/beagle-angular&amp;#39;;
+import { CustomLoadingComponent } from &amp;#39;./components/custom-loading/custom-loading.component&amp;#39;;
+// import all the components you wish to use with Beagle.
+
+@BeagleModule({
+  baseUrl: &amp;#39;http://mypath&amp;#39;,
+  module: {
+    path: &amp;#39;./beagle-components.module&amp;#39;,
+    name: &amp;#39;BeagleComponentsModule&amp;#39;,
+  },
+  components: {
+    &amp;#39;custom:loading&amp;#39;: CustomLoadingComponent
+  }
+})
+export class Beagle { }
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Os arquivos &lt;code&gt;beagle.module.ts&lt;/code&gt; e &lt;code&gt;beagle-components.module.ts&lt;/code&gt; são gerados automaticamente pela biblioteca no angular. Se você não encontrou &lt;a href=&#34;../../../get-started/installing-beagle/&#34;&gt;verifique sua instalação&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;error-component&#34;&gt;Error Component&lt;/h2&gt;
+&lt;p&gt;O componente de erro padrão do Beagle é chamado quando ocorrem erros de conexão como, por exemplo,  um caminho para o servidor está inacessível.&lt;/p&gt;
+&lt;p&gt;Para este componente a biblioteca expõe uma interface chamada &lt;code&gt;ErrorComponentParams&lt;/code&gt;, por meio dela você tem acesso a lista de erros e a um método retry, responsável por refazer a requisição para o servidor.&lt;/p&gt;
+&lt;h3 id=&#34;errorcomponentparams&#34;&gt;ErrorComponentParams&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Atributo&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Tipo&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Definição&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;retry&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Método&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Refaz a requisição para o servidor&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Usando essa interface você pode criar o componente, veja o exemplo de acordo com cada framework:&lt;/p&gt;
+&lt;p&gt;No React, é preciso criar um &lt;code&gt;Functional Component&lt;/code&gt; que usa a interface &lt;code&gt;ErrorComponentParams&lt;/code&gt;, note que ao usá-la você tem acesso à duas &lt;code&gt;props&lt;/code&gt; errors e retry, que são respectivamente a lista de erros e o método &lt;code&gt;retry&lt;/code&gt; ambos descritos na interface:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { ErrorComponentParams } from &amp;#39;@zup-it/beagle-react&amp;#39;
+import React, { FC } from &amp;#39;react&amp;#39;
+
+const CustomErrorComponent: FC&amp;lt;ErrorComponentParams&amp;gt; = ({ retry }) =&amp;gt; {
+
+  return (
+    &amp;lt;&amp;gt;
+      &amp;lt;p&amp;gt;
+        Unexpected Error!
+      &amp;lt;/p&amp;gt;
+      &amp;lt;button onClick={retry}&amp;gt;Retry&amp;lt;/button&amp;gt;
+    &amp;lt;/&amp;gt;
+  )
+}
+
+
+export default CustomErrorComponent
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Depois de criado basta adicioná-lo a lista de componentes do Beagle Service:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { createBeagleUIService } from &amp;#39;@zup-it/beagle-react&amp;#39;
+import CustomErrorComponent from &amp;#39;../components/CustomError&amp;#39;
+
+export default createBeagleUIService&amp;lt;any&amp;gt;({
+  baseUrl: &amp;#34;localhost:4000&amp;#34;,
+  components: {
+    &amp;#34;custom:error&amp;#34;:CustomErrorComponent
+  }
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;No Angular, crie primeiro um componente, se você preferir pode usar o angular cli para gerar automaticamente a estrutura inicial:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;ng g component components/custom-error
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Abra o arquivo &lt;code&gt;controller&lt;/code&gt; do componente que acabou de ser criado e adicione a interface &lt;code&gt;ErrorComponentParams&lt;/code&gt;.  A interface nos da acesso a dois &lt;code&gt;@Inputs&lt;/code&gt; errors e retry que são respectivamente a lista de erros e o método para refazer a requisição:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { Component, Input } from &amp;#39;@angular/core&amp;#39;;
+import { ErrorComponentParams } from &amp;#39;@zup-it/beagle-angular&amp;#39;;
+
+@Component({
+  selector: &amp;#39;app-custom-error&amp;#39;,
+  templateUrl: &amp;#39;./custom-error.component.html&amp;#39;,
+  styleUrls: [&amp;#39;./custom-error.component.less&amp;#39;]
+})
+export class CustomErrorComponent implements ErrorComponentParams {
+
+  @Input() retry: () =&amp;gt; void;
+
+  handleRetry() {
+    this.retry();
+  }
+
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Agora, adicione o componente criado a lista do arquivo &lt;code&gt;beagle-components.module.ts&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { NgModule } from &amp;#39;@angular/core&amp;#39;;
+import { CustomErrorComponent } from &amp;#39;./components/custom-error/custom-error.component&amp;#39;;
+// import all the components you&amp;#39;re going to use with beagle
+
+const components = [
+  CustomErrorComponent
+];
+
+@NgModule({
+  declarations: components,
+  entryComponents: components,
+  exports: components,
+  imports: [
+    // everything your components depend on
+  ],
+})
+export class BeagleComponentsModule {}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Finalmente, substitua o componente padrão no arquivo &lt;code&gt;beagle.module.ts&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { CustomErrorComponent } from &amp;#39;./components/custom-error/custom-error.component&amp;#39;;
+// import all the components you wish to use with Beagle.
+
+@BeagleModule({
+  baseUrl: &amp;#39;http://localhost:4202/assets&amp;#39;,
+  module: {
+    path: &amp;#39;./beagle-components.module&amp;#39;,
+    name: &amp;#39;BeagleComponentsModule&amp;#39;,
+  },
+  components: {
+    &amp;#39;custom:error&amp;#39;: CustomErrorComponent
+  }
+})
+export class Beagle { }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Os arquivos &lt;code&gt;beagle.module.ts&lt;/code&gt; e &lt;code&gt;beagle-components.module.ts&lt;/code&gt; são gerados automaticamente pela biblioteca no angular. Se você não os encontrou &lt;a href=&#34;../../../get-started/installing-beagle/&#34;&gt;&lt;strong&gt;verifique sua instalação&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Componentes customizados</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/componentes-customizados/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/componentes-customizados/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h3 id=&#34;criar-um-componente-customizado&#34;&gt;Criar um componente customizado&lt;/h3&gt;
+&lt;p&gt;O primeiro passo que você deve fazer é criar um componente comum. Para isso, crie um novo componente em seu projeto.&lt;/p&gt;
+&lt;p&gt;Neste exemplo, o componente será criado com o nome &lt;code&gt;customText&lt;/code&gt;. Basta utilizar o comando abaixo no seu terminal:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;ng generate component components/customText --skip-import
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Neste exemplo, será criado um componente chamado &lt;code&gt;CustomTextComponent&lt;/code&gt; para renderizar um texto. Basta criar um novo arquivo chamado &lt;code&gt;CustomTextComponent.tsx&lt;/code&gt; dentro da pasta &lt;code&gt;components&lt;/code&gt; (se esta pasta não existir basta criá-la dentro da pasta &lt;code&gt;src&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;No arquivo criado coloque o seguinte código:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import React from &amp;#39;react&amp;#39;
+
+function CustomTextComponent() {
+  return (
+    &amp;lt;p&amp;gt;Beagle Web React&amp;lt;/p&amp;gt;
+  )
+}
+
+export default CustomTextComponent;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Feito isso, adicione no arquivo de associações da biblioteca Beagle do seu projeto como indicado nos exemplos a seguir.&lt;/p&gt;
+&lt;p&gt;Abra o arquivo &lt;code&gt;beagle-components.module.ts&lt;/code&gt; e adicione o novo &lt;code&gt;CustomTextComponent&lt;/code&gt; gerado na lista, como no exemplo abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;...
+import { CustomTextComponent } from &amp;#39;./components/custom-text/custom-text.component&amp;#39;
+// import all the components you&amp;#39;re going to use with beagle
+
+const components = [
+  CustomTextComponent
+]
+
+@NgModule({
+  declarations: components,
+  entryComponents: components,
+  exports: components,
+  imports: [
+    // everything your components depend on
+  ],
+})
+export class BeagleComponentsModule {}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;No arquivo &lt;code&gt;beagle.module.ts&lt;/code&gt; adicione seu novo componente na lista de associações&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { BeagleModule } from &amp;#39;@zup-it/beagle-angular&amp;#39;
+import { CustomTextComponent } from &amp;#39;./components/custom-text/custom-text.component&amp;#39;
+// import all the components you wish to use with Beagle.
+
+@BeagleModule({
+  baseUrl: &amp;#39;http://localhost:4200/assets&amp;#39;,
+  module: {
+    path: &amp;#39;./beagle-components.module&amp;#39;,
+    name: &amp;#39;BeagleComponentsModule&amp;#39;,
+  },
+  components: {
+    // Associate every beagle component to your angular component.
+    &amp;#34;custom:text&amp;#34;: CustomTextComponent
+  },
+})
+export class Beagle {}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Se você não encontrou os arquivos &lt;code&gt;beagle-components.module.ts&lt;/code&gt; ou &lt;code&gt;beagle.module.ts&lt;/code&gt;, veja &lt;a href=&#34;../../../get-started/using-beagle/web/angular-como-usar.md&#34;&gt;&lt;strong&gt;como configurar a biblioteca Beagle Web para o Angular&lt;/strong&gt;.&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Abra o arquivo de configuração da biblioteca Beagle em seu projeto (se você seguiu o tutorial é o arquivo &lt;code&gt;beagle-service.ts&lt;/code&gt;) e adicione o seu componente a lista de associações.&lt;/p&gt;
+&lt;p&gt;Caso você não tenha este arquivo em seu projeto, veja &lt;a href=&#34;../../../get-started/using-beagle/web/react-como-usar.md&#34;&gt;&lt;strong&gt;como configurar a biblioteca Beagle Web para o React&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { createBeagleUIService } from &amp;#39;@zup-it/beagle-react&amp;#39;
+import CustomTextComponent from &amp;#39;../components/CustomTextComponent&amp;#39;
+
+export default createBeagleUIService&amp;lt;any&amp;gt;({
+  baseUrl: &amp;#39;&amp;#39;,
+  components: {
+    &amp;#39;custom:text&amp;#39;: CustomTextComponent
+  }
+})
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Observe que, no passo acima, a palavra &lt;strong&gt;custom&lt;/strong&gt; foi adicionada para identificar os componentes. Isto fará com que a biblioteca Beagle entenda que este componente não faz parte da lista de componentes pré-definidos.&lt;/p&gt;
+&lt;h3 id=&#34;adicionando-propriedades-ao-componente&#34;&gt;Adicionando propriedades ao componente&lt;/h3&gt;
+&lt;p&gt;Para adicionar propriedades ao componente criado, siga os seguintes passos:&lt;/p&gt;
+&lt;p&gt;Abra o arquivo &lt;code&gt;custom-text.component.ts&lt;/code&gt; e adicione um &lt;code&gt;@Input&lt;/code&gt;, como no código abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { Component, OnInit, Input } from &amp;#39;@angular/core&amp;#39;;
+
+@Component({
+  selector: &amp;#39;app-custom-text&amp;#39;,
+  templateUrl: &amp;#39;./custom-text.component.html&amp;#39;,
+  styleUrls: [&amp;#39;./custom-text.component.less&amp;#39;]
+})
+export class CustomTextComponent implements OnInit {
+  @Input() myCustomText: string
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Feito isso, adicione a referência ao arquivo &lt;code&gt;custom-text.component.html&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&amp;lt;div&amp;gt;
+    &amp;lt;h1&amp;gt;{{myCustomText}}&amp;lt;/h1&amp;gt;
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+
+Se você estiver com o projeto rodando, é necessário reiniciá-lo com um dos comandos:&lt;code&gt;yarn serve&lt;/code&gt; ou &lt;code&gt;npm run serve&lt;/code&gt;
+&lt;/div&gt;
+
+&lt;p&gt;No React, todos os atributos definidos no JSON podem ser acessados através de props, veja o exemplo&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import React from &amp;#39;react&amp;#39;
+
+interface CustomText {
+  myCustomText: string
+}
+
+
+function CustomTextComponent(props: CustomText) {
+  return (
+    &amp;lt;p&amp;gt;{props.myCustomText}&amp;lt;/p&amp;gt;
+  )
+}
+
+export default CustomTextComponent;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;criando-o-json&#34;&gt;Criando o JSON&lt;/h3&gt;
+&lt;p&gt;Podemos agora adicionar o nosso componente ao arquivo JSON.  Se você seguiu o tutorial, abra o arquivo &lt;code&gt;payload.json&lt;/code&gt; e o substitua com o conteúdo abaixo, caso contrário, apenas substitua a fonte de onde o seu JSON foi guardado ou gerado.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+  &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:container&amp;#34;,
+  &amp;#34;children&amp;#34;: [
+    {
+      &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;custom:text&amp;#34;,
+      &amp;#34;myCustomText&amp;#34;: &amp;#34;Beagle Web is Awesome&amp;#34;
+    }
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;Parabéns, você criou seu primeiro componente customizado no Beagle!&lt;/p&gt;
+&lt;p&gt;Lembrando que este componente recebe propriedades e é renderizado pela biblioteca Beagle.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Estratégias de Cache</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/estrat%C3%A9gias-de-cache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/estrat%C3%A9gias-de-cache/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;O Beagle Web oferece algumas estratégias de cache, entre elas o &lt;a href=&#34;https://docs.usebeagle.io/features/cache#como-o-protocolo-de-cache-funciona&#34;&gt;&lt;strong&gt;protocolo de cache padrão do Beagle guiado pelo backend&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Outras estratégias que você pode usar são:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;beagle-with-fallback-to-cache&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;beagle-cache-only&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;network-with-fallback-to-cache&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cache-with-fallback-to-network&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;network-only&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cache-first&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+As duas primeiras implementam o protocolo de cache do Beagle, já as demais são independentes deste protocolo.
+&lt;/div&gt;
+
+&lt;h2 id=&#34;onde-o-cache-é-armazenado&#34;&gt;Onde o cache é armazenado?&lt;/h2&gt;
+&lt;p&gt;No framework para Web, os dados de cache são armazenados no local storage do navegador.&lt;/p&gt;
+&lt;h2 id=&#34;tipos-de-estratégias&#34;&gt;Tipos de estratégias&lt;/h2&gt;
+&lt;p&gt;No Beagle, você tem &lt;strong&gt;duas possibilidades de estratégia&lt;/strong&gt;: as que são compatíveis com o protocolo de cache e as que são independentes. A seguir, você verá como funciona cada uma delas:&lt;/p&gt;
+&lt;h2 id=&#34;estratégias-compatíveis&#34;&gt;Estratégias compatíveis&lt;/h2&gt;
+&lt;h3 id=&#34;1-beagle-with-fallback-to-cache&#34;&gt;&lt;strong&gt;1. beagle-with-fallback-to-cache&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Estratégia padrão que implementa:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Protocolo de cache do Beagle.&lt;/li&gt;
+&lt;li&gt;A adição de um fallback.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Nela, é salvo de forma local no storage tanto a &lt;strong&gt;árvore&lt;/strong&gt; quanto os &lt;strong&gt;metadados relacionados&lt;/strong&gt; ao protocolo de cache (&lt;code&gt;beagle-hash&lt;/code&gt;, &lt;code&gt;max-age&lt;/code&gt; e um identificador da hora em que a chamada foi enviada).&lt;/p&gt;
+&lt;p&gt;Essa estratégia permite que você use o fallback para retornar uma árvore, mesmo em casos de erro. Quando isso acontece, o fallback retorna a árvore que já tenha sido salva localmente antes (se existir), mesmo que ela esteja desatualizada.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;Importante deixar claro que essa configuração só funcionará se o backend estiver com cache habilitado.&lt;/p&gt;
+&lt;p&gt;Isso porque o Beagle Web só extrai as informações do header das requisições. Se elas não estiverem disponíveis, as requisições serão sempre enviadas e, mesmo com o cache armazenado, ele não será utilizado, a não ser para o fallback.&lt;/p&gt;
+&lt;p&gt;Se o seu backend estiver com cache desabilitado, os payloads da árvore serão salvos no storage e não serão utilizados.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&#34;2-beagle-cache-only&#34;&gt;&lt;strong&gt;2. beagle-cache-only&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Estratégia que implementa apenas no caso do &lt;a href=&#34;../../cache/#como-o-protocolo-de-cache-funciona&#34;&gt;&lt;strong&gt;protocolo de cache do Beagle&lt;/strong&gt;&lt;/a&gt;. Isso significa que ela funciona igual à estratégia padrão, mas sem o fallback.&lt;/p&gt;
+&lt;p&gt;Quando você habilita essa estratégia, a árvore que está no cache só é utilizada se tiver um max-age válido ou se receber o status de 304 do backend.&lt;/p&gt;
+&lt;p&gt;Caso a requisição falhe, a view não vai ser exibida e pode não exibir o componente de erro, de acordo com a definição da config.&lt;/p&gt;
+&lt;h2 id=&#34;estratégias-independentes&#34;&gt;Estratégias independentes&lt;/h2&gt;
+&lt;h3 id=&#34;1-network-with-fallback-to-cache&#34;&gt;&lt;strong&gt;1. network-with-fallback-to-cache&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Estratégia que inicia a chamada no backend para trazer como resultado o que estiver salvo no cache. Esse cache só será usado em casos de falha na requisição, funcionando como fallback.&lt;/p&gt;
+&lt;p&gt;Se a requisição falhar e o dado estiver no cache, você conseguirá fazer o retorno corretamente. Caso isso não aconteça, o componente de erro é (ou não) exibido de acordo com a definição da config.&lt;/p&gt;
+&lt;h3 id=&#34;2-cache-with-fallback-to-network&#34;&gt;&lt;strong&gt;2. cache-with-fallback-to-network:&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Estratégia que inicia a chamada no cache para retornar a árvore que estiver renderizada nesse cache.  Se não for encontrado nada, o fallback é realizar a chamada para buscar a árvore.&lt;/p&gt;
+&lt;p&gt;Desta forma, a chamada só é disparada se o dado não for encontrado no cache.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+No caso desse tipo de estratégia, não há uma estratégia de invalidação ou revalidação do cache. Enquanto o dado estiver no cache, ele é considerado válido.
+&lt;/div&gt;
+
+&lt;h3 id=&#34;3-network-only&#34;&gt;&lt;strong&gt;3. network-only&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Estratégia que busca fazer chamadas exclusivamente do backend. Nesse caso, você sempre enviará a requisição para buscar as árvores a serem renderizadas.&lt;/p&gt;
+&lt;p&gt;Se a requisição falhar, não existe fallback para exibir (ou não) o componente de erro.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+Esta é a única estratégia que não salva dados no local storage. Por isso, ela é recomendada nos casos em que você quer que o Beagle Web não salve nenhuma informação no storage.
+&lt;/div&gt;
+
+&lt;h3 id=&#34;4-cache-first&#34;&gt;&lt;strong&gt;4. cache-first:&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Estratégia que envia a view depois de fazer a busca no cache, mesmo que não encontre a requisição que estiver procurando.&lt;/p&gt;
+&lt;p&gt;Se a árvore é encontrada no cache, ela é utilizada para renderizar a view. Quando a requisição retorna, a view é atualizada com o resultado da requisição. No caso de retornar algum erro, é mantida a view exibida com a informação do cache.&lt;/p&gt;
+&lt;h2 id=&#34;como-alterar-a-estratégia-de-cache-utilizada&#34;&gt;Como alterar a estratégia de cache utilizada?&lt;/h2&gt;
+&lt;p&gt;Para mudar a estratégia de cache, você deve utilizar o parâmetro &lt;code&gt;strategy&lt;/code&gt; com o nome da estratégia escolhida dentro no config do Beagle.&lt;/p&gt;
+&lt;p&gt;Nas configs abaixo, você encontra um exemplo de como alterar a estratégia para&lt;code&gt;network-only&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;@BeagleModule({
+  baseUrl: &amp;#39;yourBackendUrlGoesHere&amp;#39;,
+  module: {
+    path: &amp;#39;./beagle-components.module&amp;#39;,
+    name: &amp;#39;BeagleComponentsModule&amp;#39;,
+  },
+  components: {
+    // Associate every beagle component to your angular component. 
+  },
+  strategy: &amp;#39;network-only&amp;#39;
+})
+export class Beagle { }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;export default createBeagleUIService({
+  baseUrl: &amp;#34;&amp;#34;,
+  components: {},
+  strategy: &amp;#39;network-only&amp;#39;
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Headers Padrões</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/headers-padr%C3%B5es/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/headers-padr%C3%B5es/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;O Beagle Web envia &lt;strong&gt;dois tipos de headers&lt;/strong&gt; que são padrões para o Beagle:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;beagle-platform:&lt;/strong&gt; header utilizado que indica para o backend que a requisição partiu da Web. Desta forma, o valor enviado é sempre &lt;strong&gt;WEB.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;beagle-hash&lt;/strong&gt;: header utilizado para o correto funcionamento do &lt;a href=&#34;../../cache/#como-o-protocolo-de-cache-funciona&#34;&gt;&lt;strong&gt;protocolo de cache de Beagle&lt;/strong&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Por padrão, esses headers são sempre enviados, porém podem ser desabilitados pelo parâmetro &lt;code&gt;useBeagleHeaders&lt;/code&gt; na config.&lt;/p&gt;
+&lt;p&gt;Abaixo, você confere exemplos de como desabilitar o envio desses headers nas configs do Angular e React:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;@BeagleModule({
+  baseUrl: &amp;#39;http://localhost:4200/assets&amp;#39;,
+  module: {
+    path: &amp;#39;./beagle-components.module&amp;#39;,
+    name: &amp;#39;BeagleComponentsModule&amp;#39;,
+  },
+  components: {},
+  useBeagleHeaders: false
+})
+export class Beagle { }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;export default createBeagleUIService({
+  baseUrl: &amp;#34;&amp;#34;,
+  components: {},
+  useBeagleHeaders: false
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+Você deve manter os headers habilitados para o correto funcionamento do protocolo de cache do Beagle.
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Parâmetros Remote View</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/par%C3%A2metros-remote-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/par%C3%A2metros-remote-view/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;beagle-remote-view&#34;&gt;Beagle Remote View&lt;/h2&gt;
+&lt;p&gt;A biblioteca do Beagle fornece um componente auxiliar para renderizar as telas server-driven, o remote view:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&amp;lt;beagle-remote-view [loadParams]=&amp;#34;loadParams&amp;#34;&amp;gt;&amp;lt;/beagle-remote-view&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&amp;lt;BeagleRemoteView {...loadParams} /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Tanto no Angular como no React, o remote view aceita propriedades que são  chamadas de &lt;strong&gt;Load Params&lt;/strong&gt;. É por meio dela que algumas opções são configuradas para influenciar a maneira como as telas são renderizadas.&lt;/p&gt;
+&lt;p&gt;Veja abaixo as propriedades aceitas, apenas  &lt;code&gt;path&lt;/code&gt; é obrigatória:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { LoadParams } from &amp;#39;@zup-it/beagle-web&amp;#39;;
+
+const params: LoadParams = {
+  path: &amp;#39;/payload.json&amp;#39;,
+  fallback: {_beagleComponent_: &amp;#39;beagle:text&amp;#39;, text:&amp;#39;Fallback Error&amp;#39;},
+  method: &amp;#39;get&amp;#39;,
+  headers: {&amp;#39;header&amp;#39;: &amp;#39;value&amp;#39;},
+  shouldShowLoading: true,
+  shouldShowError: true,
+  strategy: &amp;#34;network-only&amp;#34;,
+  loadingComponent: &amp;#39;myComponentLoading&amp;#39;,
+  errorComponent: &amp;#39;myComponentError&amp;#39;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Propriedade&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Tipo&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Descrição&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;path&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;string&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Obrigatória.&lt;/strong&gt; Caminho do servidor para carregar o JSON com a tela server-driven.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;fallback&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;BeagleComponent&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Componente para ser renderizado caso a requisição falhe.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;method&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;método Http&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Método Http para fazer a requisição.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;headers&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Mapa&amp;lt;chave, valor&amp;gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Lista de header para anexar ao fazer a requisição.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;shouldShowLoading&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;booleano&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Mostra ou não o componente de loading.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;shouldShowError&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;booleano&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Mostra ou não o componente de erro.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;strategy&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;string&amp;lt;&lt;a href=&#34;estrategias-de-cache.md#tipos-de-estrategias&#34;&gt;&lt;strong&gt;Estratégia de cache&lt;/strong&gt;&lt;/a&gt;&amp;gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Estratégia de cache adotada na requisição.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;loadingComponent&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;string&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Componente customizado para loading.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;errorComponent&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;string&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Componente customizado para error.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Parâmetros Beagle Service</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/par%C3%A2metros-beagle-service/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/par%C3%A2metros-beagle-service/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;beagle-service&#34;&gt;Beagle Service&lt;/h2&gt;
+&lt;p&gt;Para usar a biblioteca Beagle se faz necessária a criação de um Beagle Service com as configurações de onde e como buscar as telas server driven.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;strong&gt;No React&lt;/strong&gt; podemos facilmente criar um Beagle Service através da função &lt;code&gt;createBeagleService(beagleServiceOptions)&lt;/code&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;strong&gt;No Angular&lt;/strong&gt; o código base é gerado automaticamente e as propriedades podem ser modificadas e adicionadas em beagle.module.ts
+&lt;/div&gt;
+
+&lt;p&gt;O objeto de configuração possui as propriedades a seguir:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Atributo&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Tipo&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Default&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Descrição&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;baseUrl&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;string&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Obrigatória:&lt;/strong&gt; URL para o servidor com as telas (JSON) no formato Beagle&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;components&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Map&amp;lt;string,Component&amp;gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;Obrigatória:&lt;/strong&gt; Um mapa de componentes que serão renderizados através da biblioteca Beagle. Os valores são pares chave e valor onde a chave é o identificador Beagle e sempre começará por &lt;code&gt;beagle:&lt;/code&gt; ou &lt;code&gt;custom:&lt;/code&gt;. Já o valor será o componente ligado ao identificador&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;strategy&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;estrategias-de-cache.md&#34;&gt;Strategy&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;beagle-with-fallback-to-cache&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Estratégia de cache aplicada nas requisições de telas ao servidor&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;fetchData&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;fetch&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Permite adicionar uma função customizada para fazer requisições HTTP.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;analytics&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../../../api/analytics.md&#34;&gt;Analytics&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Permite o uso de handlers para a captura e tagueamento de alguns eventos.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;customActions&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Map&amp;lt;string,&lt;a href=&#34;acoes-customizadas.md&#34;&gt;ActionHandler&lt;/a&gt;&amp;gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Um mapa de ações customizadas que podem ser interpretadas pela biblioteca Beagle. É um mapa chave e valor onde a chave será sempre um identificador começado por &lt;code&gt;beagle:&lt;/code&gt; ou &lt;code&gt;custom:&lt;/code&gt; e o valor será o &lt;a href=&#34;acoes-customizadas.md#criando-um-actionhandler&#34;&gt;ActionHandler &lt;/a&gt;ligado aquela ação.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;lifecycles&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MKkT7mv7ipZKPW7tBUp/v/v1.0-pt/features/customizacao/beagle-para-web/topicos-avancados/renderizacao&#34;&gt;LifeCycleHook&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Um mapa global para adicionar comportamentos aos ciclos de vida dos componentes. Cada ciclo ocorre no processo de renderização das telas, antes dos componentes se tornarem HTML&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;customStorage&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Storage&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;localStorage&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Substitui o localStorage padrão dos browsers&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;useBeagleHeaders&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;boolean&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;true&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Usar ou não &lt;a href=&#34;headers-padroes.md&#34;&gt;headers específicos do Beagle&lt;/a&gt; ao fazer as requisições de telas para o servidor&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;navigationControllers&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Map&amp;lt;string, NavigationController&amp;gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Permite adicionar opções de controle de reposta visual, como mostrar ou não itens de carregamento e componentes de erro&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Tópicos avançados</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/t%C3%B3picos-avan%C3%A7ados/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/t%C3%B3picos-avan%C3%A7ados/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,88 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beagle – Playground Web</title>
+    <link>https://zupit.github.io/docs-beagle/docs/playground/playground-web/</link>
+    <description>Recent content in Playground Web on Beagle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-beagle/docs/playground/playground-web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Using the Playground</title>
+      <link>https://zupit.github.io/docs-beagle/docs/playground/playground-web/using-the-playground/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/playground/playground-web/using-the-playground/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h3 id=&#34;using-the-playground&#34;&gt;&lt;strong&gt;Using the playground&lt;/strong&gt;&lt;/h3&gt;
+&lt;h4 id=&#34;files-menu&#34;&gt;Files menu&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%2860%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;On the files menu, the left of the screen, you are able to create, delete or select a file and then click on the first top icon or press CRTL+B you can minimize or expand the menu.&lt;/p&gt;
+&lt;h4 id=&#34;json&#34;&gt;JSON&lt;/h4&gt;
+&lt;p&gt;The JSON&amp;rsquo;s changes can be saved clicking on the second top icon or pressing CRTL+S. You can update the screen preview with a new JSON, click on the fourth icon on the top corner or press F9.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%2875%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When the changes are saved, a link will be available for your project, it is on the cloud and then you are able to access anywhere you want.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%2879%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;platform&#34;&gt;Platform&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%2837%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;On the right top menu, it is possible to select which platform you want to use, React Web or Angular are available.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Demo components</title>
+      <link>https://zupit.github.io/docs-beagle/docs/playground/playground-web/demo-components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/playground/playground-web/demo-components/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h3 id=&#34;examples-of-demo-components&#34;&gt;Examples of demo components&lt;/h3&gt;
+&lt;p&gt;You will see below a list with the demo components implemented in the Playground:&lt;/p&gt;
+&lt;h3 id=&#34;button&#34;&gt;&lt;strong&gt;Button&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/button.json&#34;&gt;&lt;strong&gt;Try it on the Playground&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-en/api/componentes/ui/button&#34;&gt;&lt;strong&gt;Component&amp;rsquo;s documentation&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;container&#34;&gt;&lt;strong&gt;Container&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/container.json&#34;&gt;&lt;strong&gt;Try it on the Playground&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-en/api/componentes/layout/container&#34;&gt;&lt;strong&gt;Component&amp;rsquo;s Documentation&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;lazy-component&#34;&gt;&lt;strong&gt;Lazy Component&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/lazycomponent.json&#34;&gt;&lt;strong&gt;Try it on the Playground&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-en/api/componentes/lazy&#34;&gt;&lt;strong&gt;Component&amp;rsquo;s Documentation&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;list-view&#34;&gt;&lt;strong&gt;List View&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/listview.json&#34;&gt;&lt;strong&gt;Experimente no Playground&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-en/api/componentes/layout/listview&#34;&gt;&lt;strong&gt;Component&amp;rsquo;s Documentation&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;modal&#34;&gt;&lt;strong&gt;Modal&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/modal.json&#34;&gt;&lt;strong&gt;Try it on the Playground&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;page-view&#34;&gt;&lt;strong&gt;Page View&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/pageview.json&#34;&gt;&lt;strong&gt;Try it on the Playground&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-en/api/componentes/layout/pageview&#34;&gt;&lt;strong&gt;Component&amp;rsquo;s Documentation&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;simple-form&#34;&gt;&lt;strong&gt;Simple Form&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/simpleform.json&#34;&gt;&lt;strong&gt;Try it on the Playground&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../api/components/form/simple-form-web.md&#34;&gt;&lt;strong&gt;Component&amp;rsquo;s Documentation&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;tab-view&#34;&gt;&lt;strong&gt;Tab View&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/tabview.json&#34;&gt;&lt;strong&gt;Try it on the Playground&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-en/api/componentes/ui/tabview&#34;&gt;&lt;strong&gt;Component&amp;rsquo;s Documentation&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;text&#34;&gt;&lt;strong&gt;Text&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/text.json&#34;&gt;&lt;strong&gt;Try it on the Playground&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-en/api/componentes/ui/text&#34;&gt;&lt;strong&gt;Component&amp;rsquo;s Documentation&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;touchable&#34;&gt;&lt;strong&gt;Touchable&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/touchable.json&#34;&gt;&lt;strong&gt;Try it on the Playground&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-en/api/componentes/navigation#touchable&#34;&gt;&lt;strong&gt;Component&amp;rsquo;s Documentation&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,43 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beagle – Playground</title>
+    <link>https://zupit.github.io/docs-beagle/docs/playground/</link>
+    <description>Recent content in Playground on Beagle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-beagle/docs/playground/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Playground Web</title>
+      <link>https://zupit.github.io/docs-beagle/docs/playground/playground-web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/playground/playground-web/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h3 id=&#34;what-is-playground&#34;&gt;What is Playground?&lt;/h3&gt;
+&lt;p&gt;Playground is a development tool where you can create components and pages using Beagle. It is very fast and simple, without any installation process. It has a interface that allows you to write a JSON and see the result instantly.&lt;/p&gt;
+&lt;h3 id=&#34;accessing-playground&#34;&gt;Accessing &lt;strong&gt;Playground&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;You can access the playground through the following link:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/false&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;You will have access to the following demo project:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%2827%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The files menus are on the left, JSON files are centered and on the right you will see the JSON preview.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

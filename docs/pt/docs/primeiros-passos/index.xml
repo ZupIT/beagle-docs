@@ -14,7 +14,7 @@
     
     
     <item>
-      <title>Docs: Instalando o beagle</title>
+      <title>Docs: Instalando o Beagle</title>
       <link>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -22,7 +22,8 @@
       <description>
         
         
-        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+        &lt;hr&gt;
+&lt;p&gt;Para iniciar as configurações do Beagle na sua máquina, siga os passos para cada sistema operacional. Aqui também listamos as configurações do backend, que será o BFF:&lt;/p&gt;
 
       </description>
     </item>
@@ -36,7 +37,9 @@
       <description>
         
         
-        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+        &lt;hr&gt;
+&lt;p&gt;Depois de fazer a &lt;a href=&#34;../installing-beagle/&#34;&gt;&lt;strong&gt;instalação do Beagle&lt;/strong&gt;&lt;/a&gt;, é necessário realizar as configurações de uso para habilitar a ferramenta no seu projeto.&lt;/p&gt;
+&lt;p&gt;Você pode configurar de acordo com a plataforma que estiver utilizando:&lt;/p&gt;
 
       </description>
     </item>
@@ -50,7 +53,8 @@
       <description>
         
         
-        &lt;p&gt;Esta é a página de destino de uma seção de nível superior.&lt;/p&gt;
+        &lt;hr&gt;
+&lt;p&gt;Confira abaixo quais cases práticos você pode usar no seu projeto com Beagle:&lt;/p&gt;
 
       </description>
     </item>
