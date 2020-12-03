@@ -1,13 +1,20 @@
 ---
 title: Flex Wrap
+<<<<<<< HEAD
 weight: 68
 description: >-
   Nesta seção, você encontra mais informações sobre a propriedade Flex Wrap
   utilizada para posicionar elementos em tela.
+=======
+weight: 71
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Flex Wrap
 
 Por padrão os itens do container tentarão se ajustar em uma única linha dentro do container, mas para que isso ocorra a sua largura original pode ser ajustada. A propriedade flex-wrap altera esse comportamento e faz a “quebra de linha” nos itens, e ela tem os seguintes atributos: **`nowrap, wrap, wrap-reverse.`**
@@ -207,3 +214,6 @@ private fun screen() :Widget{
 {{% alert color="info" %}}
 Para saber mais sobre o Flex wrap, acesse a [**documentação no Yoga Layout.**](https://yogalayout.com/docs/flex-wrap/)
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

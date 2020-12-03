@@ -1,13 +1,20 @@
 ---
 title: Beagle Navigation Controller customizada
+<<<<<<< HEAD
 weight: 137
 description: >-
   Nesta seção, você encontra como usar o Beagle Navigation Controller para
   observar o estado da tela server-driven.
+=======
+weight: 153
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Introdução
 
 Beagle Navigation Controller é uma classe como uma `UINavigationController`, porém focada em observar o estado da tela server-driven para, por exemplo, saber quando ela inicia ou finaliza.
@@ -144,3 +151,6 @@ func screenController() -> UIViewController {
     )
 }
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

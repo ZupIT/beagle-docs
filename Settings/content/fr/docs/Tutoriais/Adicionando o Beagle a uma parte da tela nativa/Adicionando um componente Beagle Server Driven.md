@@ -1,13 +1,20 @@
 ---
 title: Adicionando um componente Beagle Server Driven
+<<<<<<< HEAD
 weight: 214
 description: >-
   Esta seção descreve como adicionar um componente Server Driven a uma tela
   nativa
+=======
+weight: 231
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 É possível que alguns componentes de uma tela que sejam exibidos via server-driven \(tela nativa\) recebam somente **uma seção da página** , ou mesmo um **único componente do servidor BFF**. 
 
 No exemplo abaixo, vamos exibir um botão server-driven em uma tela nativa. O resultado que deve aparecer na sua aplicação é esse:
@@ -332,3 +339,6 @@ Lembre-se de rodar seu projeto Angular usando um dos comandos:
 A sua tela híbrida com elementos nativos e server driven está pronta 
 
 ![](/docs-beagle/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-ME4OQaHp-v_V78YeLiC%2F-ME7uUduHSFMpidOFn9E%2Fimage.png?alt=media&token=974fe2f0-0964-4d68-a16b-414e3fdd9d67)
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

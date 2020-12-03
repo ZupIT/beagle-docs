@@ -1,13 +1,20 @@
 ---
 title: Android
+<<<<<<< HEAD
 weight: 17
 description: >-
   Nesta seção, você encontra o passo a passo para fazer as configurações para o
   uso do Beagle em projetos Android.
+=======
+weight: 20
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## **Configuração de uso** 
 
 Depois que você terminar a instalação, é preciso **configurar o Beagle para o uso**. Para facilitar a nossa explicação, vamos usar um **exemplo de** **como renderizar uma tela com um título "Hello Beagle!**" e uma pequena descrição. 
@@ -574,3 +581,6 @@ Mesmo não sendo necessário neste momento, é bom ter em mente que você precis
 {{% alert color="info" %}}
 As classes anotadas como `BeagleComponent` e `RegisterValidator`não podem implementar parâmetros nos seus construtores, pois no caso do Beagle esses construtores precisam estar vazios.
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

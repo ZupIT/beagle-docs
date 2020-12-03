@@ -1,13 +1,20 @@
 ---
 title: Design System com Beagle Android
+<<<<<<< HEAD
 weight: 35
 description: >-
   Nesta seção, você encontra um tutorial para configurar o Design System do
   Beagle no Android
+=======
+weight: 39
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## **Criando um Design System**
 
 No exemplo prático da página "Criando um projeto com Beagle para Android", você pode conferir como fazer a [**implementação do Beagle**](./) para criar uma tela server-driven simples, com apenas 2 textos: 1 título e 1 parágrafo.
@@ -285,3 +292,6 @@ Agora que você já criou o seu Design System, é possível alterar o tamanho, c
 Uma das grandes vantagens em utilizar uma página server-driven é poder trabalhar com um design system maduro. Ou seja, se você altera o modo como os componentes estão posicionados no backend, é possível "mudar sua tela" da maneira que quiser, tudo por meio do backend.
 
 Neste exemplo, utilizamos elementos simples de estilo para explicar o Design system, mas perceba o número de funções nesta classe e, a partir daí, veja o quão amplo um design system pode ser.
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

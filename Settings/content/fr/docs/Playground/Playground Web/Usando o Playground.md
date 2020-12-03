@@ -1,11 +1,18 @@
 ---
 title: Usando o Playground
+<<<<<<< HEAD
 weight: 233
 description: 'Nesta seção, você encontra mais informações sobre como usar o Playground.'
+=======
+weight: 250
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ### **Utilizando o Playground**
 
 #### Menu de arquivos
@@ -29,3 +36,6 @@ Assim que as alterações são salvas, é disponibilizado um link do seu projeto
 ![](/docs-beagle/image%20%2837%29.png)
 
 No menu superior direito é possível selecionar a plataforma que você deseja, atualmente estão disponíveis as opções `React Web`e `Angular`.
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

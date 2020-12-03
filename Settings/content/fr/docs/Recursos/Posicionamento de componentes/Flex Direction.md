@@ -1,13 +1,20 @@
 ---
 title: Flex Direction
+<<<<<<< HEAD
 weight: 56
 description: >-
   Nesta seção, você encontra mais informações sobre a propriedade Flex Direction
   utilizada para posicionar elementos em tela.
+=======
+weight: 59
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Flex Direction
 
 A propriedade flex-direction é aplicada a um container e define o eixo/fluxo de exibição em que os elementos serão organizados. Essa propriedade tem os seguintes atributos: **`row, row-reverse, column, column-reverse`**. 
@@ -221,3 +228,6 @@ private func screen() -> Screen {
 {{% alert color="info" %}}
 Para saber o Flex Direction, acesse [**a documentação no Yoga Layout**](https://yogalayout.com/docs/flex-direction/)**.**
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

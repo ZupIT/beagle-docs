@@ -1,11 +1,18 @@
 ---
 title: Remote
+<<<<<<< HEAD
 weight: 279
 description: Descrição da classe Remote e seus atributos
+=======
+weight: 298
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## O que é? <a id="definicao"></a>
 
 Uma rota de navegação para um conteúdo remoto.
@@ -86,3 +93,6 @@ Button(
 
 
 ### 👉 [Teste essa ação no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

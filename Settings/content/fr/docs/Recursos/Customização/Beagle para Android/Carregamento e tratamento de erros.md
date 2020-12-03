@@ -1,13 +1,20 @@
 ---
 title: Carregamento e tratamento de erros
+<<<<<<< HEAD
 weight: 110
 description: >-
   Nesta seção, você encontra informações de como customizar o comportamento do
   Beagle para casos de carregamento das telas e tratamento de erros.
+=======
+weight: 119
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Introdução
 
 É possível observar o estado atual da tela durante as requisições server-driven em uma BeagleActivity, inclusive estados de erro.
@@ -72,3 +79,6 @@ Veja mais detalhes de cada estado:
 * **Finished:** Indica que uma busca de componente server-driven foi concluída.
 * **Success:** Indica um estado de sucesso ao buscar um componente server-driven.
 * **Error:** Indica um estado de erro ao buscar um componente server-driven.
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

@@ -1,13 +1,20 @@
 ---
 title: Configurando o cache
+<<<<<<< HEAD
 weight: 51
 description: >-
   Detalhes do funcionamento do cache e configuração para cada plataforma
   (Android, iOS, Backend, WEB)
+=======
+weight: 54
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Como funciona o cache?
 
 O cache padrão é controlado pelo backend com a tag `cache-control` e `beagle-hash` que são informações que devem ser fornecidas através do _header_ das requisições, onde o `beagle-hash` é responsável por fornecer o hash referente a tela que está sendo baixada e o `cache-control`o tempo de vida deste cache como sendo **confiável.**
@@ -256,3 +263,6 @@ export default createBeagleUIService({
   strategy: 'beagle-cache-only'
 })
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

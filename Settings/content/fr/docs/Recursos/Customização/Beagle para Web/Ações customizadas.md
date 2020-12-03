@@ -1,13 +1,20 @@
 ---
 title: Ações customizadas
+<<<<<<< HEAD
 weight: 154
 description: >-
   Nesta seção, você encontra quais ações podem ser customizadas no framework do
   Beagle para Web.
+=======
+weight: 170
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 É possível criar ações customizadas para o seus components com o Beagle.
 
 ### Criar um ActionHandler
@@ -92,3 +99,6 @@ Veja abaixo um exemplo com button:
 {{% alert color="warning" %}}
 Fique atento aos tipos de classe, quando você adicionar um parâmetro a ação cusomizada, o exemplo acima era uma `string` e`number.` 
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

@@ -1,10 +1,17 @@
 ---
 title: Eventos
+<<<<<<< HEAD
 weight: 349
+=======
+weight: 365
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## O que são?
 
 Eventos são tudo que podem disparar ações do Beagle \(Beagle Actions\). No JSON, toda chave que é associada a uma Beagle Action representa um evento. 
@@ -55,3 +62,6 @@ Button(
 No exemplo acima, associa-se a ação "beagle:alert" ao evento "onPress" do componente "beagle:button". Ou seja, ao pressionar o botão cujo título é "click to show message", uma mensagem de alerta será exibida na tela com o texto "Hello World!".
 
 Todo evento em qualquer componente ou ação pode ser associado a qualquer Beagle Action. Foi utilizada a ação de alerta no exemplo anterior, mas qualquer outra poderia ser utilizada. Para fazer uma requisição ao clicar no botão, a ação "beagle:sendRequest" poderia ter sido usada. Para saber mais sobre a relação com todas a ações disponíveis, acesse a [**documentação sobre ações**](api-acoes/).
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

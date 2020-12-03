@@ -1,13 +1,20 @@
 ---
 title: Navegação de telas
+<<<<<<< HEAD
 weight: 201
 description: >-
   Nesta seção, você encontra uma demonstração de como o Beagle lida com
   navegação de tela.
+=======
+weight: 215
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 No Beagle, a navegação \(ou Navigate\) é um tipo de [**Ação**](../api/api-acoes/) e que, por isso, pode ser usada por todos componentes que recebem uma ação. 
 
 {{% alert color="info" %}}
@@ -65,3 +72,6 @@ Button(
 ## Tipos de navegação
 
 Nas páginas a seguir, você confere mais detalhes de cada tipo de navegação do Beagle:
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

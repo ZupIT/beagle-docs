@@ -1,13 +1,20 @@
 ---
 title: Sistema de Log
+<<<<<<< HEAD
 weight: 120
 description: >-
   Nesta seção, você encontra a descrição da classe BeagleLogger e detalhes de
   configuração e customização.
+=======
+weight: 129
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Introdução
 
 O sistema de logs do Beagle permite que você investigue erros durante o desenvolvimento e problemas com o aplicativo em produção.
@@ -64,3 +71,6 @@ class CustomBeagleLog : BeagleLogger {
 
 }
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

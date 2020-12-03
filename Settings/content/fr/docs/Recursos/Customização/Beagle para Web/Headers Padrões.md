@@ -1,11 +1,18 @@
 ---
 title: Headers Padrões
+<<<<<<< HEAD
 weight: 162
 description: Você encontrará aqui a descrição dos headers padrões e como desabilitados
+=======
+weight: 178
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 O Beagle Web envia **dois tipos de headers** que são padrões para o Beagle:
 
 1. **beagle-platform:** header utilizado que indica para o backend que a requisição partiu da Web. Desta forma, o valor enviado é sempre **WEB.** 
@@ -45,3 +52,6 @@ export default createBeagleUIService({
 {{% alert color="info" %}}
 Você deve manter os headers habilitados para o correto funcionamento do protocolo de cache do Beagle.
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

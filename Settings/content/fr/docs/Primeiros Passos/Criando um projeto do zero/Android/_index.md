@@ -1,13 +1,20 @@
 ---
 title: Android
+<<<<<<< HEAD
 weight: 33
 description: >-
   Nesta seção, você encontra um passo a passo para iniciar um projeto Android
   com Beagle.
+=======
+weight: 36
+description: >-
+  This a example for a description!
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Iniciando um projeto Android
 
 Para este exemplo prático, utilizaremos o Android Studio IDE. Caso você ainda não o tenha instalado, basta acessar no [**site oficial do Android** ](https://developer.android.com/studio?hl=us-en)e seguir as instruções.   
@@ -416,3 +423,6 @@ Você verá esta tela:
 {{% alert color="success" %}}
 Parabéns, você criou sua primeira tela com Beagle! 🎉 
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

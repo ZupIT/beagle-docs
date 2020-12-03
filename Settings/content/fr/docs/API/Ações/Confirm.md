@@ -1,13 +1,20 @@
 ---
 title: Confirm
+<<<<<<< HEAD
 weight: 249
 description: >-
   Nesta seção, você encontra a definição do Confirm e os detalhes de seus
   atributos
+=======
+weight: 266
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## O que é?
 
 A ação `confirm` é responsável por criar um elemento modal de confirmação.
@@ -126,3 +133,6 @@ Button(text = "Confirm Example",
 
 
 ### 👉 [Teste essa ação no Web Playground](https://beagle-playground.netlify.app/#/cloud/fb8268dcdbf24f89a8367cc76dea9d99/confirm.json)
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

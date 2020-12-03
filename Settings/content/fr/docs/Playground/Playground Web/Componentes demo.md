@@ -1,13 +1,20 @@
 ---
 title: Componentes demo
+<<<<<<< HEAD
 weight: 235
 description: >-
   Nesta seção, você encontra exemplos de componentes implementados no
   Playground.
+=======
+weight: 252
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ### Exemplos de componentes demo
 
 Segue a lista com os exemplos de componentes implementados no Playground:
@@ -67,3 +74,6 @@ Segue a lista com os exemplos de componentes implementados no Playground:
 [Experimente no Playground](https://beagle-playground.netlify.app/#/demo/default-components/touchable.json)
 
 [Documentação do componente](https://docs.usebeagle.io/api/componentes/navigation)
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

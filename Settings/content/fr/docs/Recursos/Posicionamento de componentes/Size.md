@@ -1,13 +1,20 @@
 ---
 title: Size
+<<<<<<< HEAD
 weight: 82
 description: >-
   Nesta seção, você encontra mais informações sobre a propriedade Size utilizada
   para posicionar elementos em tela.
+=======
+weight: 85
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Size
 
 Esta propriedade manipula toda parte de tamanho do item em tela. O Size conta com os seguintes atributos: 
@@ -111,3 +118,6 @@ private fun screen() :Widget{
 {{% alert color="info" %}}
 Para saber mais sobre Size, acesse a [**documentação do Yoga Layout**](https://yogalayout.com/docs/min-max).
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

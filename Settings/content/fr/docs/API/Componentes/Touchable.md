@@ -1,11 +1,18 @@
 ---
 title: Touchable
+<<<<<<< HEAD
 weight: 318
 description: Descrição do componente que habilita ação em outros componentes.
+=======
+weight: 335
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## O que é?
 
 O Touchable é responsável por definir as áreas clicáveis dentro da aplicação em componentes que não são clicáveis nativamente.
@@ -109,3 +116,6 @@ Touchable(onPress = listOf(
 
 
 ###  👉 [Teste esse componente no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/touchable.json?platform=react-web)
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

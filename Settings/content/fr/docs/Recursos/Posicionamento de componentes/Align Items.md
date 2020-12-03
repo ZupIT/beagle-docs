@@ -1,13 +1,20 @@
 ---
 title: Align Items
+<<<<<<< HEAD
 weight: 64
 description: >-
   Nesta seção, você encontra mais informações sobre a propriedade Align Items
   utilizada para posicionar elementos em tela.
+=======
+weight: 67
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Align Items
 
 Essa propriedade define como os itens são distribuídos ao longo do eixo transversal do container e tem os seguintes atributos: **`flex-start, flex-end, center, baseline e stretch.`**
@@ -383,3 +390,6 @@ Os itens são alinhados a partir da base da primeira linha de texto de cada um:
 {{% alert color="info" %}}
 Para saber mais sobre o Align Items, acesse [**a documentação no Yoga Layout.**](https://yogalayout.com/docs/align-items/)
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

@@ -1,13 +1,20 @@
 ---
 title: Componentes customizados
+<<<<<<< HEAD
 weight: 158
 description: >-
   Nesta seção, você encontra como customizar componentes no framework do Beagle
   para Web.
+=======
+weight: 174
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ### Criar um componente customizado
 
 O primeiro passo que você deve fazer é criar um componente comum. Para isso, crie um novo componente em seu projeto. 
@@ -198,3 +205,6 @@ Parabéns, você criou seu primeiro componente customizado no Beagle!
 
 Lembrando que este componente recebe propriedades e é renderizado pela biblioteca Beagle.
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

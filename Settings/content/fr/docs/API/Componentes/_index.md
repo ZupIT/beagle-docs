@@ -1,11 +1,18 @@
 ---
 title: Componentes
+<<<<<<< HEAD
 weight: 294
 description: Descrição dos componentes e seus atributos
+=======
+weight: 310
+description: >-
+  This a example for a description!
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ![&#xC1;rvore de componentes do Beagle](/docs-beagle/components-01-beagle.png)
 
 O `ServerDrivenComponent`  é o pai de todos os componentes do Beagle. Componentes como `widgets`, `formulários` e `navegação` serão implementados por meio do `ServerDrivenComponent`.
@@ -42,3 +49,6 @@ O Beagle possui **14** **componentes** atualmente divididos em **5 categorias**:
 * [**Tab View**](ui/tabview.md)
 * [**Text**](ui/text.md)
 * [**Web View**](ui/webview.md)
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

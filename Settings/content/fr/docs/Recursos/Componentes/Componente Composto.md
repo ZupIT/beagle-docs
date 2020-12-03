@@ -1,13 +1,20 @@
 ---
 title: Componente Composto
+<<<<<<< HEAD
 weight: 93
 description: >-
   Nesta seção, você encontra a descrição do ComposedComponent e mais detalhes de
   como ele funciona.
+=======
+weight: 96
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 O `ComposedComponent` facilita a organização, manutenção e reaproveitamento de código. Ele não tem funcionalidade própria e é exclusivo do backend.
 
 ```kotlin
@@ -141,3 +148,6 @@ child = Container(
 O código fica bem mais claro e facilita a manutenção!
 
 Para a construção deste componente, não foi necessário a criação de nenhum outro novo ou comportamento no frontend.
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

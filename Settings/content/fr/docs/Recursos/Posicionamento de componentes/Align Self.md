@@ -1,13 +1,20 @@
 ---
 title: Align Self
+<<<<<<< HEAD
 weight: 66
 description: >-
   Nesta seção, você encontra mais informações sobre a propriedade Align Self
   utilizada para posicionar elementos em tela.
+=======
+weight: 69
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Align Self
 
 Permite que o item sobrescreva o comportamento definido pela propriedade align-items. Ela tem os seguintes atributos:**`flex-start, flex-end, center, auto, baseline e stretch.`**
@@ -107,3 +114,6 @@ private func screen() -> Screen {
 {{% alert color="info" %}}
 Para saber mais sobre o align self, acesse a [**documentação no Yoga Layout.**](https://yogalayout.com/docs/align-items/)
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

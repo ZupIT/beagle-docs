@@ -1,13 +1,20 @@
 ---
 title: Camada de rede
+<<<<<<< HEAD
 weight: 108
 description: >-
   Nesta seção, você encontra informações sobre a camada de rede do Beagle e como
   modificá-la.
+=======
+weight: 117
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Introdução
 
 A classe HTTPClient define como as solicitações de serviços são configuradas. Para usá-la, você precisa criar uma classe que implemente uma interface do tipo `HttpClient`. 
@@ -156,3 +163,6 @@ class ClientCustom : HttpClient {
     }
 }
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

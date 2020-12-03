@@ -1,13 +1,20 @@
 ---
 title: Margin
+<<<<<<< HEAD
 weight: 70
 description: >-
   Nesta seção, você encontra mais informações sobre a propriedade Margin
   utilizada para posicionar elementos em tela.
+=======
+weight: 73
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Margin 
 
 Margin aplica um espaçamento no elemento filho, e tem os seguintes atributos: **`all, bottom, end, horizontal, left, right, start, top, vertical`**
@@ -421,3 +428,6 @@ private fun screen() :Widget{
 {{% alert color="info" %}}
 Para saber mais, acesse [**Margin**](https://yogalayout.com/docs/margins-paddings-borders)  ou uma [**seção completa na documentação do Yoga Layout.**](https://yogalayout.com/docs/margins-paddings-borders/)
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

@@ -1,11 +1,18 @@
 ---
 title: Lazy
+<<<<<<< HEAD
 weight: 320
 description: Descrição do componente Lazy e seus atributos
+=======
+weight: 337
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## O que é?
 
 O `Lazy Component` é usado para carregar de forma assíncrona algum componente do BFF.
@@ -44,3 +51,6 @@ LazyComponent(
 
 
 ### 👉 [Teste esse componente no Web Playground](https://beagle-playground.netlify.app/#/cloud/cce3015fbbcf49388dfb4ab3079f4f9f/lazy.json)
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

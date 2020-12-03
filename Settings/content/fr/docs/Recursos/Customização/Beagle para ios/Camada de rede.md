@@ -1,13 +1,20 @@
 ---
 title: Camada de rede
+<<<<<<< HEAD
 weight: 139
 description: >-
   Nesta seção, você encontra informações sobre a camada de rede do Beagle e como
   modificá-la.
+=======
+weight: 155
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Introdução
 
 O Beagle realiza todas requisições web a partir da dependência **`networkClient`** presente no BeagleDependencies, ela é do tipo `NetworkClient`, sendo assim é possível substituir a implementação default utilizada no framework por outra. 
@@ -118,3 +125,6 @@ Beagle.dependencies = dependencies
 ```
 
 Pronto! Agora o Beagle utilizará a sua classe com todas as modificações e definições necessárias para realizar as requisições Http.
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

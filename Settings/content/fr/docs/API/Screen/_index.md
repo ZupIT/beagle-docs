@@ -1,11 +1,18 @@
 ---
 title: Screen
+<<<<<<< HEAD
 weight: 351
 description: Descrição dos componentes de Screen e seus atributos.
+=======
+weight: 367
+description: >-
+  This a example for a description!
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## O que é?
 
 A sua tela possui atributos e componentes que podem ser usados e configurados. Na tabela abaixo, listamos as principais características para cada um destes atributos. 
@@ -85,3 +92,6 @@ Screen(
 
 
 ### 👉 [Teste esse exemplo no Playground](https://beagle-playground.netlify.app/)
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

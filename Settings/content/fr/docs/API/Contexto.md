@@ -1,11 +1,18 @@
 ---
 title: Contexto
+<<<<<<< HEAD
 weight: 345
 description: 'Nesta seção, você encontra descrição completa de contexto.'
+=======
+weight: 361
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## O que é? 
 
 O contexto é uma **variável de qualquer tipo**, incluindo o mapa que define um conjunto de pares de chaves/valores. Por meio de **bindings**, o valor do contexto pode ser acessado por qualquer componente ou ação do seu escopo. 
@@ -467,3 +474,6 @@ MyComponent(
 
 
 ## 👉 [Veja alguns exemplos no Playground](https://beagle-playground.netlify.app/#/demo/component-interaction)
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

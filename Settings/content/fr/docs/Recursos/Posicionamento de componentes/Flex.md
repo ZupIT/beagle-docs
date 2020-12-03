@@ -1,13 +1,20 @@
 ---
 title: Flex
+<<<<<<< HEAD
 weight: 86
 description: >-
   Nesta seção, você encontra mais informações sobre a propriedade Flex utilizada
   para posicionar elementos em tela.
+=======
+weight: 89
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Flex
 
 Esta propriedade define **como os itens do container serão preenchidos** de acordo com o espaço disponível ao longo do eixo principal. 
@@ -59,3 +66,6 @@ private fun screen() :Widget{
         )
     }
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

@@ -1,11 +1,18 @@
 ---
 title: Container
+<<<<<<< HEAD
 weight: 324
 description: Descrição do componente Container e seus atributos
+=======
+weight: 342
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## O que é?
 
 O `Container` é um componente responsável por conter outros componentes dentro de si. 
@@ -55,3 +62,6 @@ Container(
 
 
 ### 👉 [ Teste esse componente no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/container.json)​
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

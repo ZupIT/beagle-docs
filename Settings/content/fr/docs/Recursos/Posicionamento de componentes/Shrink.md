@@ -1,13 +1,20 @@
 ---
 title: Shrink
+<<<<<<< HEAD
 weight: 80
 description: >-
   Nesta seção, você encontra mais informações sobre a propriedade Shrink
   utilizada para posicionar elementos em tela.
+=======
+weight: 83
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Shrink
 
 Esta propriedade define a **capacidade de um item encolher**, reduzindo os elementos filhos ao longo do eixo principal. 
@@ -79,3 +86,6 @@ private func screen() -> Screen {
 {{% alert color="info" %}}
 Para saber mais sobre Shrink, acesse a [**documentação do Yoga Layout**](https://yogalayout.com/docs/flex).
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

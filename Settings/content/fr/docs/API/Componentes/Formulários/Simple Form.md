@@ -1,11 +1,18 @@
 ---
 title: Simple Form
+<<<<<<< HEAD
 weight: 341
 description: Descrição do componente Simple Form
+=======
+weight: 359
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## O que é?
 
 O`simpleForm` é responsável por renderizar um formulário em tela.
@@ -119,3 +126,6 @@ Para submeter um formulário é preciso utilizar a ação SubmitForm e para cham
 Ao clicar nesse botão, o onSubmit é ativados e a lista de ações será executada. É essa lista de ações que definirá o que deve acontecer com as informações so formulario, se serão enviadas para um backend \(através da ação [sendRequest](../../api-acoes/sendrequest.md)\), etc
 
 ### 👉 [Teste esse componente no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/simpleform.json)
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

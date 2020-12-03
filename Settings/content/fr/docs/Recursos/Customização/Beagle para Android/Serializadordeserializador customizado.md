@@ -1,5 +1,6 @@
 ---
 title: Serializadordeserializador customizado
+<<<<<<< HEAD
 weight: 118
 description: >-
   Nesta seção, você encontra a descrição de como criar um
@@ -62,3 +63,13 @@ Esse método recebe um JSONObject como string e retorna uma instância da classe
 ### Método toJson
 
 Esse método recebe o tipo de dado mapeado \(Person\) e retorna um JSONObject como uma string.
+=======
+weight: 127
+description: >-
+  This a example for a description
+---
+
+---
+
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

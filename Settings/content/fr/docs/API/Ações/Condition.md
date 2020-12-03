@@ -1,13 +1,20 @@
 ---
 title: Condition
+<<<<<<< HEAD
 weight: 247
 description: >-
   Nesta seção, você encontra a definição do Condition e detalhes de seus
   atributos
+=======
+weight: 264
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## O que é?
 
 É uma ação que tem um parâmetro do tipo Boolean e de acordo com esse valor é executado a ação onTrue ou onFalse.
@@ -88,3 +95,6 @@ Container(
 )
 
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

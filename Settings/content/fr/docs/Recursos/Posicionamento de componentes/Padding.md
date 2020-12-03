@@ -1,13 +1,20 @@
 ---
 title: Padding
+<<<<<<< HEAD
 weight: 72
 description: >-
   Nesta seção, você encontra mais informações sobre a propriedade Padding
   utilizada para posicionar elementos em tela.
+=======
+weight: 75
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Padding
 
 Esta propriedade permite aplicar um espaçamento no elemento pai. Dessa forma, todo elemento filho que for criado depois dessa configuração já virá com espaçamento pré-definido. 
@@ -452,3 +459,6 @@ private func screen() -> Screen {
 {{% alert color="info" %}}
 Para saber mais sobre Padding, acesse a [**documentação do Yoga Layout**](https://yogalayout.com/docs/margins-paddings-borders)**.**
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

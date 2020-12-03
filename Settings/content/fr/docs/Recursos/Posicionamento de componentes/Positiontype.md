@@ -1,11 +1,18 @@
 ---
 title: Positiontype
+<<<<<<< HEAD
 weight: 76
 description: 'Nesta seção, você encontra mais informações sobre a propriedade Position Type.'
+=======
+weight: 79
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## PositionType
 
 É a propriedade que define qual a posição do elemento dentro do pai e ainda se ele deve ser usado como **Relativo ou Absoluto**. 
@@ -132,3 +139,6 @@ private fun screen() :Widget{
 {{% alert color="info" %}}
 Para saber mais sobre Position Type, acesse a [**documentação do Yoga Layout**](https://yogalayout.com/docs/absolute-relative-layout).
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

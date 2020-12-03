@@ -1,11 +1,18 @@
 ---
 title: Button
+<<<<<<< HEAD
 weight: 298
 description: Descrição do componentes Button e seus atributos
+=======
+weight: 316
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## O que é?
 
 O widget Button é responsável por definir um botão nativo usando informações server driven por meio do Beagle. 
@@ -107,3 +114,6 @@ Button(
 
 
 ### 👉 [Teste esse componente no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

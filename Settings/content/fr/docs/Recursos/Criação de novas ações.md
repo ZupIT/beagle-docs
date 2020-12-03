@@ -1,13 +1,20 @@
 ---
 title: Criação de novas ações
+<<<<<<< HEAD
 weight: 186
 description: >-
   Nesta seção, você encontra como criar uma ação customizada e detalhes dos
   métodos que ela implementa.
+=======
+weight: 200
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ### Criando a ação no frontend
 
 No Beagle, é possível criar uma [**ação**](../api/api-acoes/) **customizada** a partir de uma `CustomAction` . 
@@ -169,3 +176,6 @@ Button(
    onPress = listOf(CustomAction("Eu sou um Toast"))
 )
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

@@ -1,11 +1,18 @@
 ---
 title: Beagle Framework
+<<<<<<< HEAD
 weight: 180
 description: Entenda como funciona o framework
+=======
+weight: 196
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 Esta seção explica como criar um backend sem fazer uso das configurações prontas para os frameworks **`Spring`** ou **`Micronaut`**. Você encontrará as ferramentas necessárias para criar um Backend\(BFF\) para o seu projeto. 
 
 É importante reforçar que: 
@@ -198,3 +205,6 @@ class BeaglePlatformInterceptor(private val objectMapper: ObjectMapper) : Handle
 ```
 
 No exemplo acima, `preHandle` passa a informação da plataforma pela qual a requisição foi feita como um atributo da request, para que ele possa ser acessado posteriormente pelo BFF e facilite a identificação da plataforma. Já o `postHandle` realiza o trabalho de filtrar os elementos devidos de acordo com a plataforma alvo na resposta de seu BFF.
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

@@ -1,13 +1,20 @@
 ---
 title: Sistema de Log
+<<<<<<< HEAD
 weight: 145
 description: >-
   Nesta seção, você encontra a descrição da classe BeagleLogger e detalhes de
   configuração e customização
+=======
+weight: 161
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Introdução
 
 O Beagle usa o sistema de log unificado recomendado pela Apple para fornecer mensagens de logs diferentes em estágios críticos de um fluxo Server Driven.
@@ -79,3 +86,6 @@ let dependencies = BeagleDependencies()
 dependencies.logger = CustomLogger()
 Beagle.dependencies = dependencies
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

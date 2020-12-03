@@ -1,13 +1,20 @@
 ---
 title: Carregamento e tratamento de erros
+<<<<<<< HEAD
 weight: 141
 description: >-
   Nesta seção, você encontra informações de como customizar o comportamento do
   Beagle para casos de carregamento das telas e tratamento de erros.
+=======
+weight: 157
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Introdução
 
 Para customizar os comportamentos de carregamento e erro no Beagle iOS, você precisa criar seu próprio navigation controller. 
@@ -144,3 +151,6 @@ class MyAppNavigationController: BeagleNavigationController {
     }
 }
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

@@ -1,10 +1,17 @@
 ---
 title: Estrutura de dados
+<<<<<<< HEAD
 weight: 170
+=======
+weight: 187
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Como o Beagle representa a view? 
 
 {{% alert color="warning" %}}
@@ -97,3 +104,6 @@ const Table = (props) => {
 
 BeagleChildren({ property: 'rows' })(Table)
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

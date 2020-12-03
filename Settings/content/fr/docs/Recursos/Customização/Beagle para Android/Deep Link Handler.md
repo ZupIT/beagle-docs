@@ -1,13 +1,20 @@
 ---
 title: Deep Link Handler
+<<<<<<< HEAD
 weight: 114
 description: >-
   Nesta seção, você encontra a descrição da classe DeepLinkHandler e detalhes
   dos métodos que ele implementa.
+=======
+weight: 123
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Introdução
 
 O **`DeepLinkHandler`** é uma **interface** que define como configurar a navegação entre uma **Server-Driven activity** e uma **activity nativa.** 
@@ -58,3 +65,6 @@ Button(
     )
 )
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

@@ -1,13 +1,20 @@
 ---
 title: Ações customizadas
+<<<<<<< HEAD
 weight: 129
 description: >-
   Nesta seção, você encontra a descrição de como criar uma Custom Action e
   detalhes dos métodos que ela implementa.
+=======
+weight: 145
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Introdução
 
 Uma `action` é um bloco de código que pode ser executado quando definido em algum evento. O Beagle já possui algumas por padrão, mas é possível criar sua action personalizada. 
@@ -55,3 +62,6 @@ Button(
     ]
 )
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

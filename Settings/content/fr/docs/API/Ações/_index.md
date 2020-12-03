@@ -1,11 +1,18 @@
 ---
 title: Ações
+<<<<<<< HEAD
 weight: 241
 description: Descrição dos componentes do tipo Action e seus atributos
+=======
+weight: 257
+description: >-
+  This a example for a description!
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 No Beagle, uma ação lida com os comportamentos \(funções\), que serão executadas em sua aplicação assim que um determinado evento for disparado. Essas ações podem ser padrão do próprio Beagle ou customizadas. 
 
 Qualquer evento no Beagle, deve ser associado a uma lista de ações. Veja abaixo um exemplo de componente de botão, que associa uma ação de alerta padrão ao seu evento de `onPress`:
@@ -29,3 +36,6 @@ Existem diversas ações implementadas no Beagle por padrão e todas elas começ
 Para saber como criar ações customizadas, dê uma olhada na seção de [**customização do Beagle**](../../features/criando-sua-acao-customizada.md)**.**
 
 Abaixo, você encontra a descrição completa de cada ação disponível por padrão no Beagle.
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

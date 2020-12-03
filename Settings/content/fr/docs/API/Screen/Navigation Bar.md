@@ -1,11 +1,18 @@
 ---
 title: Navigation Bar
+<<<<<<< HEAD
 weight: 353
 description: Navigation Bar e descrição de seus componentes
+=======
+weight: 370
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## **O que é a NavigationBar?**
 
 Classe que define a barra superior com função de navegação. É composta pelos seguintes atributos:
@@ -96,3 +103,6 @@ Para usar uma `NavigationBar` é necessário declarar dentro de uma `Screen`. Se
         )
     )
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

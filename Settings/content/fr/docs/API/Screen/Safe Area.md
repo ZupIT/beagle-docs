@@ -1,11 +1,18 @@
 ---
 title: Safe Area
+<<<<<<< HEAD
 weight: 355
 description: Descrição da Safe Area e seus componentes
+=======
+weight: 372
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 {{% alert color="warning" %}}
 Esse atributo é exclusivo da plataforma iOS. 
 {{% /alert %}}
@@ -63,3 +70,6 @@ Screen(
         )
     )
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

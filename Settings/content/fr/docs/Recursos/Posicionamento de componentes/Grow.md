@@ -1,13 +1,20 @@
 ---
 title: Grow
+<<<<<<< HEAD
 weight: 58
 description: >-
   Nesta seção, você encontra mais informações sobre a propriedade Grow utilizada
   para posicionar elementos em tela.
+=======
+weight: 61
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Grow
 
 Esta propriedade define a proporção que um item deve crescer, quando necessário. Seu valor é 0, por padrão e o que indica que o item não deve crescer. Esse atributo aceita apenas valores numéricos `Double`positivo.
@@ -117,3 +124,6 @@ private func screen() -> Screen {
 {{% alert color="info" %}}
 Para saber o Grow, acesse [**a documentação no Yoga Layout**](https://yogalayout.com/docs/flex/)**.**
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

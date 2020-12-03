@@ -1,11 +1,18 @@
 ---
 title: Carregamento e tratamento de erros
+<<<<<<< HEAD
 weight: 156
 description: Veja como alterar os componentes padrões de erro e carregamento.
+=======
+weight: 172
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Loading Component
 
 A biblioteca do Beagle já possui por padrão um componente que é chamado quando ocorre o carregamento de uma tela. Se necessário, é possível trocá-lo por um customizado de acordo com a necessidade da sua aplicação.
@@ -235,3 +242,6 @@ export class Beagle { }
 {{% alert color="warning" %}}
 Os arquivos `beagle.module.ts` e `beagle-components.module.ts` são gerados automaticamente pela biblioteca no angular. Se você não os encontrou [**verifique sua instalação**](../../../get-started/installing-beagle/)**.**
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

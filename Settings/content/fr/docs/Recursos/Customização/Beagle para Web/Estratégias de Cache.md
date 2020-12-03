@@ -1,13 +1,20 @@
 ---
 title: Estratégias de Cache
+<<<<<<< HEAD
 weight: 160
 description: >-
   Nesta seção, você encontra a descrição dos tipos de estratégias de cache
   disponíveis na Web
+=======
+weight: 176
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 O Beagle Web oferece algumas estratégias de cache, entre elas o [**protocolo de cache padrão do Beagle guiado pelo backend**](https://docs.usebeagle.io/features/cache#como-o-protocolo-de-cache-funciona). 
 
 Outras estratégias que você pode usar são:
@@ -126,3 +133,6 @@ export default createBeagleUIService({
   strategy: 'network-only'
 })
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

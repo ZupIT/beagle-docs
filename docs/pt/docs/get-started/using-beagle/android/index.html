@@ -1,0 +1,1962 @@
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.76.4" />
+
+<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/docs-beagle/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/docs-beagle/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/docs-beagle/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/docs-beagle/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/docs-beagle/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/docs-beagle/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/docs-beagle/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/docs-beagle/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/docs-beagle/favicons/android-192x192.png" sizes="192x192">
+
+<title>Android | Beagle</title><meta property="og:title" content="Android" />
+<meta property="og:description" content="Nesta seção, você encontra o passo a passo para fazer as configurações para o uso do Beagle em projetos Android.
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/android/" />
+<meta property="article:modified_time" content="2020-11-11T18:01:35-03:00" /><meta property="og:site_name" content="Beagle" />
+<meta itemprop="name" content="Android">
+<meta itemprop="description" content="Nesta seção, você encontra o passo a passo para fazer as configurações para o uso do Beagle em projetos Android.
+">
+<meta itemprop="dateModified" content="2020-11-11T18:01:35-03:00" />
+<meta itemprop="wordCount" content="2214">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Android"/>
+<meta name="twitter:description" content="Nesta seção, você encontra o passo a passo para fazer as configurações para o uso do Beagle em projetos Android.
+"/>
+
+
+
+
+
+<link rel="preload" href="/docs-beagle/scss/main.min.cbea9f094273c8a43af72fe2215a8b1f9f73b87369f938ada2881a668933349a.css" as="style">
+<link href="/docs-beagle/scss/main.min.cbea9f094273c8a43af72fe2215a8b1f9f73b87369f938ada2881a668933349a.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+
+
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/docs-beagle/pt/">
+		<span class="navbar-logo"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500"><g><path style="fill:#fff" d="M116.8525 421.9722c-5.7041.0-10.3442-4.3127-10.3442-9.6129V88.183c0-5.3002 4.6401-9.6117 10.3442-9.6117H320.858c3.0347.0 9.3959.5498 11.7506 2.6302l.3545.3442 58.905 63.2912c2.3101 2.491 2.9202 8.4928 2.9202 11.3184v256.2039c0 5.3002-4.6407 9.6129-10.3436 9.6129H116.8525z"/><g><g><g><path style="fill:#767676" d="M384.4445 423.2066H116.852c-6.3839.0-11.5786-4.8658-11.5786-10.8474V88.1831c0-5.9804 5.1947-10.8461 11.5786-10.8461h204.0062c.377.0 9.2786.0329 12.568 2.9389l.3947.3833 58.9508 63.337c3.2135 3.4652 3.2514 11.7924 3.2514 12.1593v256.2036C396.0231 418.3408 390.8284 423.2066 384.4445 423.2066zM116.5079 411.9189c.0848.0278.1999.0531.3441.0531h267.5925c.1442.0.2581-.0253.3441-.0531V156.1556c-.0076-.9033-.3593-3.7347-.7034-5.0037l-57.6527-61.9416c-1.4651-.3176-4.4533-.6389-5.5742-.6389H116.852c-.143.0-.2594.024-.3441.0531V411.9189zm267.4533-261.149zM327.0321 89.371v.0013V89.371z"/></g></g></g><g><g><path style="fill:#5b7fc0" d="M189.0874 210.1754l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4473C177.5953 212.627 183.0601 210.1742 189.0874 210.1754zM197.0804 232.033c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 234.1722 197.0804 232.033z"/><path style="opacity:.3;fill:#fff" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zM197.0839 232.0372c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/><g><defs><path id="SVGID_1_" d="M194.7376 237.6875c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 234.2399 196.1861 236.239 194.7376 237.6875z"/></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_2_);fill:#fff" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/><path style="opacity:.13;clip-path:url(#SVGID_2_);fill:#020202" d="M190.0704 225.0237c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 225.7247 191.9774 225.0237 190.0704 225.0237z"/></g><g><defs><path id="SVGID_3_" d="M189.0898 210.176c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 212.6276 183.0612 210.176 189.0898 210.176zM197.0839 232.0372c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 236.239 197.0839 234.2399 197.0839 232.0372z"/></defs><clipPath id="SVGID_4_"><use xlink:href="#SVGID_3_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_4_);fill:#5b7fc0" d="M172.6595 215.6045c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8475-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 209.1953 176.6171 211.647 172.6595 215.6045z"/></g></g><rect x="198.8952" y="225.1043" style="fill:#5b7fc0" width="122.6266" height="13.8671"/></g><g><path style="fill:#d95140" d="M189.0874 155.7611l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.0249 2.454-11.4897 6.4116-15.4473C177.5953 158.2128 183.0601 155.7599 189.0874 155.7611zM197.0804 177.6188c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.2508 181.7667 197.0816 179.758 197.0804 177.6188z"/><path style="opacity:.3;fill:#fff" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zM197.0839 177.623c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/><g><defs><path id="SVGID_5_" d="M194.7376 183.2733c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 179.8256 196.1861 181.8248 194.7376 183.2733z"/></defs><clipPath id="SVGID_6_"><use xlink:href="#SVGID_5_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_6_);fill:#fff" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/><path style="opacity:.13;clip-path:url(#SVGID_6_);fill:#020202" d="M190.0704 170.6095c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9546.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.663-2.8588-6.116.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C193.7885 171.3104 191.9774 170.6095 190.0704 170.6095z"/></g><g><defs><path id="SVGID_7_" d="M189.0898 155.7617c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8066-21.8612-21.8613.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 158.2134 183.0612 155.7617 189.0898 155.7617zM197.0839 177.623c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 181.8248 197.0839 179.8256 197.0839 177.623z"/></defs><clipPath id="SVGID_8_"><use xlink:href="#SVGID_7_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_8_);fill:#d95140" d="M172.6595 161.1903c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 154.7811 176.6171 157.2327 172.6595 161.1903z"/></g><rect x="198.8952" y="170.69" style="fill:#d95140" width="122.6266" height="13.8671"/></g><g><g><path style="fill:#56a55c" d="M189.5379 264.6147l.0012-.0012c7.7751.0012 15.0294 4.1862 18.932 10.9235 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3304-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032-5.8394.0-11.3281-2.2733-15.458-6.4032-4.13-4.13-6.4032-9.6186-6.4056-15.4628.0012-6.0249 2.454-11.4897 6.4116-15.4472C178.0458 267.0663 183.5105 264.6135 189.5379 264.6147zM197.5309 286.4723c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6538 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403C196.7013 290.6202 197.5321 288.6115 197.5309 286.4723z"/><path style="opacity:.3;fill:#fff" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zM197.5344 286.4765c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/><g><defs><path id="SVGID_9_" d="M195.1881 292.1268c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.9989 7.9942-7.9941 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.5344 288.6792 196.6366 290.6783 195.1881 292.1268z"/></defs><clipPath id="SVGID_10_"><use xlink:href="#SVGID_9_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_10_);fill:#fff" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/><path style="opacity:.13;clip-path:url(#SVGID_10_);fill:#020202" d="M190.5209 279.463c-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7446-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9941 2.3802-1e-4 4.616 1.0833 6.1218 2.8788C194.239 280.164 192.4279 279.463 190.5209 279.463z"/></g><g><defs><path id="SVGID_11_" d="M189.5403 264.6153c7.7763.0 15.0283 4.1826 18.926 10.9151 1.9201 3.3135 2.9377 7.0987 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8613-12.0547.0024-21.8636-9.8065-21.8612-21.8613.0-6.0285 2.4516-11.492 6.4116-15.452C178.0482 267.0669 183.5117 264.6153 189.5403 264.6153zM197.5344 286.4765c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9941.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.6366 290.6783 197.5344 288.6792 197.5344 286.4765z"/></defs><clipPath id="SVGID_12_"><use xlink:href="#SVGID_11_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_12_);fill:#56a55c" d="M173.11 270.0439c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8613 12.0547.0024 21.8636-9.797 21.8613-21.8613.0024-3.8474-1.0151-7.6326-2.9353-10.9462-3.8977-6.7325-11.1497-10.9151-18.926-10.9151C182.5311 263.6346 177.0676 266.0863 173.11 270.0439z"/></g></g><rect x="199.3456" y="279.5436" style="fill:#56a55c" width="122.6266" height="13.8671"/></g><g><g><path style="fill:#f1bc42" d="M189.0874 318.7208l.0012-.0012c7.7751.0012 15.0295 4.1862 18.932 10.9234 1.9177 3.3159 2.9305 7.1011 2.9293 10.9378.0 5.8394-2.2733 11.3305-6.4032 15.4604-4.1288 4.1288-9.6186 6.4032-15.458 6.4032s-11.328-2.2733-15.458-6.4032-6.4032-9.6186-6.4056-15.4628c.0012-6.025 2.454-11.4897 6.4116-15.4472C177.5953 321.1724 183.0601 318.7196 189.0874 318.7208zM197.0804 340.5784c.0012-1.4042-.3687-2.7868-1.063-3.9887-1.4293-2.4684-4.0833-3.9995-6.9299-4.0019-4.4077.0024-7.993 3.5877-7.993 7.993.0 2.1356.832 4.1431 2.3427 5.6539 1.5083 1.5083 3.5159 2.3403 5.6503 2.3415 2.1356.0 4.1443-.8308 5.6539-2.3403S197.0816 342.7176 197.0804 340.5784z"/><path style="opacity:.3;fill:#fff" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zM197.0839 340.5826c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/><g><defs><path id="SVGID_13_" d="M194.7376 346.2329c-1.4461 1.4461-3.4452 2.3439-5.6479 2.3439-4.4077-.0024-7.9918-3.5865-7.9942-7.9942.0024-4.4125 3.5937-7.999 7.9942-7.9942 2.8443.0 5.497 1.5323 6.924 3.9983.6991 1.2067 1.0702 2.5881 1.0702 3.9959C197.0839 342.7853 196.1861 344.7844 194.7376 346.2329z"/></defs><clipPath id="SVGID_14_"><use xlink:href="#SVGID_13_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_14_);fill:#fff" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/><path style="opacity:.13;clip-path:url(#SVGID_14_);fill:#020202" d="M190.0704 333.5691c-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0011 1.9547.7088 3.7452 1.8782 5.1354-1.7447-1.4674-2.8575-3.6631-2.8588-6.1161.0024-4.4125 3.5936-7.999 7.9942-7.9942 2.3802-1e-4 4.616 1.0834 6.1218 2.8788C193.7885 334.2701 191.9774 333.5691 190.0704 333.5691z"/></g><g><defs><path id="SVGID_15_" d="M189.0898 318.7214c7.7763.0 15.0283 4.1826 18.926 10.915 1.9201 3.3136 2.9377 7.0988 2.9353 10.9462.0024 12.0643-9.8065 21.8636-21.8613 21.8612-12.0547.0024-21.8636-9.8065-21.8612-21.8612.0-6.0285 2.4516-11.4921 6.4116-15.452C177.5977 321.173 183.0612 318.7214 189.0898 318.7214zM197.0839 340.5826c0-1.4078-.3711-2.7892-1.0702-3.9959-1.4269-2.466-4.0797-3.9983-6.924-3.9983-4.4005-.0048-7.9918 3.5817-7.9942 7.9942.0024 4.4077 3.5865 7.9918 7.9942 7.9942 2.2027.0 4.2018-.8978 5.6479-2.3439C196.1861 344.7844 197.0839 342.7853 197.0839 340.5826z"/></defs><clipPath id="SVGID_16_"><use xlink:href="#SVGID_15_" style="overflow:visible"/></clipPath><path style="clip-path:url(#SVGID_16_);fill:#f1bc42" d="M172.6595 324.15c-3.96 3.96-6.4116 9.4235-6.4116 15.452-.0024 12.0547 9.8066 21.8636 21.8613 21.8612 12.0547.0024 21.8636-9.797 21.8613-21.8612.0024-3.8474-1.0151-7.6327-2.9353-10.9462-3.8977-6.7324-11.1497-10.9151-18.926-10.9151C182.0806 317.7407 176.6171 320.1924 172.6595 324.15z"/></g></g><rect x="198.8952" y="333.6497" style="fill:#f1bc42" width="122.6266" height="13.8671"/></g></g></svg></span><span class="text-uppercase font-weight-bold">Beagle</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/docs-beagle/pt/docs/" ><span class="active">Docs</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/docs-beagle/pt/docs/release-notes/" ><span>Notas de atualização</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link" href="/docs-beagle/pt/docs/faq/" ><span>FAQ</span></a>
+			</li>
+			
+			
+			
+			<li class="nav-item dropdown d-none d-lg-block">
+				
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Português
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/docs-beagle/">English</a>
+	
+</div>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+<input type="search" class="form-control td-search-input" placeholder="&#xf002 Search this site…" aria-label="Search this site…" autocomplete="off">
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+<input type="search" class="form-control td-search-input" placeholder="&#xf002 Search this site…" aria-label="Search this site…" autocomplete="off">
+
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    
+    <div class="nav-item dropdown d-block d-lg-none">
+      
+
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	Português
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	
+	<a class="dropdown-item" href="/docs-beagle/">English</a>
+	
+</div>
+    </div>
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Docs</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs-beagleptdocs">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsoverview" href="/docs-beagle/pt/docs/overview/">Visão Geral</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocskey-concepts" href="/docs-beagle/pt/docs/key-concepts/">Principais conceitos</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/get-started/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Primeiros Passos</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs-beagleptdocsget-started">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/get-started/installing-beagle/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Instalando o beagle</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-beagleptdocsget-startedinstalling-beagle">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsget-startedinstalling-beagleandroid" href="/docs-beagle/pt/docs/get-started/installing-beagle/android/">Android</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsget-startedinstalling-beaglebackend" href="/docs-beagle/pt/docs/get-started/installing-beagle/backend/">Backend</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsget-startedinstalling-beagleios" href="/docs-beagle/pt/docs/get-started/installing-beagle/ios/">iOS</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsget-startedinstalling-beagleweb" href="/docs-beagle/pt/docs/get-started/installing-beagle/web/">Web</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/get-started/using-beagle/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Usando o Beagle</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="docs-beagleptdocsget-startedusing-beagle">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-docs-beagleptdocsget-startedusing-beagleandroid" href="/docs-beagle/pt/docs/get-started/using-beagle/android/">Android</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsget-startedusing-beaglebackend" href="/docs-beagle/pt/docs/get-started/using-beagle/backend/">Backend</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsget-startedusing-beagleios" href="/docs-beagle/pt/docs/get-started/using-beagle/ios/">iOS</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/get-started/using-beagle/web/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Web</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-beagleptdocsget-startedusing-beagleweb">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsget-startedusing-beaglewebangular" href="/docs-beagle/pt/docs/get-started/using-beagle/web/angular/">Angular</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsget-startedusing-beaglewebreact" href="/docs-beagle/pt/docs/get-started/using-beagle/web/react/">React</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Criando um projeto do zero</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-beagleptdocsget-startedcreating-a-project-from-scratch">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/android/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Android</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-beagleptdocsget-startedcreating-a-project-from-scratchandroid">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsget-startedcreating-a-project-from-scratchandroidbeagle-android-design-system" href="/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/android/beagle-android-design-system/">Design System com Beagle Android</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsget-startedcreating-a-project-from-scratchbackend" href="/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/backend/">Backend</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/ios/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">iOS</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-beagleptdocsget-startedcreating-a-project-from-scratchios">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsget-startedcreating-a-project-from-scratchiosbeagle-ios-design-system" href="/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/ios/beagle-ios-design-system/">Design System com Beagle iOS</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsget-startedcreating-a-project-from-scratchweb" href="/docs-beagle/pt/docs/get-started/creating-a-project-from-scratch/web/">Web</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/resources/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Recursos</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-beagleptdocsresources">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/resources/cache/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Cache</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-beagleptdocsresourcescache">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescachehow-to-configure-cache" href="/docs-beagle/pt/docs/resources/cache/how-to-configure-cache/">Configurando o cache</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/resources/components-positioning/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Posicionamento de componentes</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-beagleptdocsresourcescomponents-positioning">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescomponents-positioningalign-content" href="/docs-beagle/pt/docs/resources/components-positioning/align-content/">Align Content</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescomponents-positioningalign-items" href="/docs-beagle/pt/docs/resources/components-positioning/align-items/">Align Items</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescomponents-positioningalign-self" href="/docs-beagle/pt/docs/resources/components-positioning/align-self/">Align Self</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescomponents-positioningbasis" href="/docs-beagle/pt/docs/resources/components-positioning/basis/">Basis</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescomponents-positioningdisplay" href="/docs-beagle/pt/docs/resources/components-positioning/display/">Display</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescomponents-positioningflex" href="/docs-beagle/pt/docs/resources/components-positioning/flex/">Flex</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescomponents-positioningflex-direction" href="/docs-beagle/pt/docs/resources/components-positioning/flex-direction/">Flex Direction</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescomponents-positioningflex-wrap" href="/docs-beagle/pt/docs/resources/components-positioning/flex-wrap/">Flex Wrap</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescomponents-positioninggrow" href="/docs-beagle/pt/docs/resources/components-positioning/grow/">Grow</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescomponents-positioningjustify-content" href="/docs-beagle/pt/docs/resources/components-positioning/justify-content/">Justify Content</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescomponents-positioningmargin" href="/docs-beagle/pt/docs/resources/components-positioning/margin/">Margin</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescomponents-positioningpadding" href="/docs-beagle/pt/docs/resources/components-positioning/padding/">Padding</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescomponents-positioningposition" href="/docs-beagle/pt/docs/resources/components-positioning/position/">Position</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescomponents-positioningposition-type" href="/docs-beagle/pt/docs/resources/components-positioning/position-type/">Position Type</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescomponents-positioningshrink" href="/docs-beagle/pt/docs/resources/components-positioning/shrink/">Shrink</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescomponents-positioningsize" href="/docs-beagle/pt/docs/resources/components-positioning/size/">Size</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/resources/components/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Componentes</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-beagleptdocsresourcescomponents">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescomponentscomponents-with-context" href="/docs-beagle/pt/docs/resources/components/components-with-context/">Componente com contexto</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescomponentscomposed-component" href="/docs-beagle/pt/docs/resources/components/composed-component/">Componente Composto</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescomponentsplatform-sorting" href="/docs-beagle/pt/docs/resources/components/platform-sorting/">Especificação de componentes por plataforma</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/resources/customization/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Customização</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-beagleptdocsresourcescustomization">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/resources/customization/beagle-for-android/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Beagle para Android</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-beagleptdocsresourcescustomizationbeagle-for-android">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-androidnavigation-animation" href="/docs-beagle/pt/docs/resources/customization/beagle-for-android/navigation-animation/">Animações de navegação</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-androidcustom-action" href="/docs-beagle/pt/docs/resources/customization/beagle-for-android/custom-action/">Ações Customizadas</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-androidcustom-beagle-activity" href="/docs-beagle/pt/docs/resources/customization/beagle-for-android/custom-beagle-activity/">Beagle Activity Customizada</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-androidnetwork-client" href="/docs-beagle/pt/docs/resources/customization/beagle-for-android/network-client/">Camada de rede</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-androidloading-and-errors-treatment" href="/docs-beagle/pt/docs/resources/customization/beagle-for-android/loading-and-errors-treatment/">Carregamento e tratamento de erros</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-androidproguard-configuration" href="/docs-beagle/pt/docs/resources/customization/beagle-for-android/proguard-configuration/">Configuração de ProGuard</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-androiddeep-link-handler" href="/docs-beagle/pt/docs/resources/customization/beagle-for-android/deep-link-handler/">Deep Link Handler</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-androiddesign-system" href="/docs-beagle/pt/docs/resources/customization/beagle-for-android/design-system/">Design System</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-androidserializer-and-deserializer" href="/docs-beagle/pt/docs/resources/customization/beagle-for-android/serializer-and-deserializer/">Serializador e Deserializador Customizado</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-androidlog-system" href="/docs-beagle/pt/docs/resources/customization/beagle-for-android/log-system/">Sistema de Log</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-androidcustom-validator" href="/docs-beagle/pt/docs/resources/customization/beagle-for-android/custom-validator/">Validador Customizado</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/resources/customization/beagle-for-android/custom-widgets/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Widgets Customizados</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-beagleptdocsresourcescustomizationbeagle-for-androidcustom-widgets">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-androidcustom-widgetsasync-custom-action" href="/docs-beagle/pt/docs/resources/customization/beagle-for-android/custom-widgets/async-custom-action/">Ação customizada Assíncrona</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-androidcustom-widgetssimple-custom-action" href="/docs-beagle/pt/docs/resources/customization/beagle-for-android/custom-widgets/simple-custom-action/">Customizado Simples</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/resources/customization/beagle-for-backend/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Beagle para Backend</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-beagleptdocsresourcescustomizationbeagle-for-backend">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-backendbeagle-framework" href="/docs-beagle/pt/docs/resources/customization/beagle-for-backend/beagle-framework/">Beagle Framework</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-backendserializer" href="/docs-beagle/pt/docs/resources/customization/beagle-for-backend/serializer/">Serialização</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/resources/customization/beagle-for-ios/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Beagle para iOS</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-beagleptdocsresourcescustomizationbeagle-for-ios">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-iosnavigation-animation" href="/docs-beagle/pt/docs/resources/customization/beagle-for-ios/navigation-animation/">Animações de navegação</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-ioscustom-action" href="/docs-beagle/pt/docs/resources/customization/beagle-for-ios/custom-action/">Ações Customizadas</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-ioscustom-beagle-navigation-controller" href="/docs-beagle/pt/docs/resources/customization/beagle-for-ios/custom-beagle-navigation-controller/">Beagle Navigation Controller Customizada</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-iosbeagle-view" href="/docs-beagle/pt/docs/resources/customization/beagle-for-ios/beagle-view/">Beagle View</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-iosnetwork-client" href="/docs-beagle/pt/docs/resources/customization/beagle-for-ios/network-client/">Camada de rede</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-iosloading-and-error-treatment" href="/docs-beagle/pt/docs/resources/customization/beagle-for-ios/loading-and-error-treatment/">Carregamento e tratamento de erros</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-iosbeagle-dependencies" href="/docs-beagle/pt/docs/resources/customization/beagle-for-ios/beagle-dependencies/">Dependências do Beagle</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-iosscreen-view-controller" href="/docs-beagle/pt/docs/resources/customization/beagle-for-ios/screen-view-controller/">Screen View Controller</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-ioslog-system" href="/docs-beagle/pt/docs/resources/customization/beagle-for-ios/log-system/">Sistema de Log</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-iossourcery" href="/docs-beagle/pt/docs/resources/customization/beagle-for-ios/sourcery/">Sourcery</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-ioscustom-widgets" href="/docs-beagle/pt/docs/resources/customization/beagle-for-ios/custom-widgets/">Widgets Customizados</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/resources/customization/beagle-for-web/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Beagle para Web</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-beagleptdocsresourcescustomizationbeagle-for-web">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-webcustom-actions" href="/docs-beagle/pt/docs/resources/customization/beagle-for-web/custom-actions/">Ações customizadas</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-webloading-components-and-error-treatment" href="/docs-beagle/pt/docs/resources/customization/beagle-for-web/loading-components-and-error-treatment/">Carregamento e tratamento de erros</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-webcustom-component" href="/docs-beagle/pt/docs/resources/customization/beagle-for-web/custom-component/">Componentes customizados</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-webcache-strategy" href="/docs-beagle/pt/docs/resources/customization/beagle-for-web/cache-strategy/">Estratégias de cache</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-webstandard-headers" href="/docs-beagle/pt/docs/resources/customization/beagle-for-web/standard-headers/">Headers padrões</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-webbeagle-service-parameters" href="/docs-beagle/pt/docs/resources/customization/beagle-for-web/beagle-service-parameters/">Parâmetros Beagle Service</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-webremote-view-parameters" href="/docs-beagle/pt/docs/resources/customization/beagle-for-web/remote-view-parameters/">Parâmetros Remote View</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/resources/customization/beagle-for-web/advanced-topics/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Tópicos avançados</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-beagleptdocsresourcescustomizationbeagle-for-webadvanced-topics">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-webadvanced-topicsbeagle-view" href="/docs-beagle/pt/docs/resources/customization/beagle-for-web/advanced-topics/beagle-view/">Beagle view</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-webadvanced-topicsdata-structure" href="/docs-beagle/pt/docs/resources/customization/beagle-for-web/advanced-topics/data-structure/">Estrutura de dados</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescustomizationbeagle-for-webadvanced-topicsrendering" href="/docs-beagle/pt/docs/resources/customization/beagle-for-web/advanced-topics/rendering/">Renderização</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourceskotlin-dsl-builders" href="/docs-beagle/pt/docs/resources/kotlin-dsl-builders/">Builders para Kotlin DSL</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcescreate-new-action" href="/docs-beagle/pt/docs/resources/create-new-action/">Criar novas ações</a>
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/resources/style/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Estilização</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-beagleptdocsresourcesstyle">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcesstyleandroid" href="/docs-beagle/pt/docs/resources/style/android/">Android</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcesstyleios" href="/docs-beagle/pt/docs/resources/style/ios/">iOS</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcesstyleweb" href="/docs-beagle/pt/docs/resources/style/web/">Web</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourceslive-preview" href="/docs-beagle/pt/docs/resources/live-preview/">Live Preview</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcesscreen-navigation" href="/docs-beagle/pt/docs/resources/screen-navigation/">Navegação de telas</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsresourcesurls" href="/docs-beagle/pt/docs/resources/urls/">URLs</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/playground/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Playground</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-beagleptdocsplayground">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/docs-beagle/pt/docs/playground/web/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Web</a>
+  </li>
+  <ul>
+    <li class="collapse " id="docs-beagleptdocsplaygroundweb">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsplaygroundwebusing-the-playgrounds" href="/docs-beagle/pt/docs/playground/web/using-the-playgrounds/">Usando playground</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsplaygroundwebdemo-components" href="/docs-beagle/pt/docs/playground/web/demo-components/">Componentes demo</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsrelease-notes" href="/docs-beagle/pt/docs/release-notes/">Notas de atualização</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-docs-beagleptdocsfaq" href="/docs-beagle/pt/docs/faq/">FAQ</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+            
+
+
+
+
+
+
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://github.com/google/docsy-example/edit/master/content/pt/docs/Get%20Started/Using%20Beagle/android.md" target="_blank"><i class="fa fa-edit fa-fw"></i> Edit this page</a>
+<a href="https://github.com/google/docsy-example/new/master/content/pt/docs/Get%20Started/Using%20Beagle/android.md?filename=change-me.md&amp;value=---%0Atitle%3A&#43;%22Long&#43;Page&#43;Title%22%0AlinkTitle%3A&#43;%22Short&#43;Nav&#43;Title%22%0Aweight%3A&#43;100%0Adescription%3A&#43;%3E-%0A&#43;&#43;&#43;&#43;&#43;Page&#43;description&#43;for&#43;heading&#43;and&#43;indexes.%0A---%0A%0A%23%23&#43;Heading%0A%0AEdit&#43;this&#43;template&#43;to&#43;create&#43;your&#43;new&#43;page.%0A%0A%2A&#43;Give&#43;it&#43;a&#43;good&#43;name%2C&#43;ending&#43;in&#43;%60.md%60&#43;-&#43;e.g.&#43;%60getting-started.md%60%0A%2A&#43;Edit&#43;the&#43;%22front&#43;matter%22&#43;section&#43;at&#43;the&#43;top&#43;of&#43;the&#43;page&#43;%28weight&#43;controls&#43;how&#43;its&#43;ordered&#43;amongst&#43;other&#43;pages&#43;in&#43;the&#43;same&#43;directory%3B&#43;lowest&#43;number&#43;first%29.%0A%2A&#43;Add&#43;a&#43;good&#43;commit&#43;message&#43;at&#43;the&#43;bottom&#43;of&#43;the&#43;page&#43;%28%3C80&#43;characters%3B&#43;use&#43;the&#43;extended&#43;description&#43;field&#43;for&#43;more&#43;detail%29.%0A%2A&#43;Create&#43;a&#43;new&#43;branch&#43;so&#43;you&#43;can&#43;preview&#43;your&#43;new&#43;file&#43;and&#43;request&#43;a&#43;review&#43;via&#43;Pull&#43;Request.%0A" target="_blank"><i class="fa fa-edit fa-fw"></i> Create child page</a>
+<a href="https://github.com/google/docsy-example/issues/new?title=Android" target="_blank"><i class="fab fa-github fa-fw"></i> Create documentation issue</a>
+
+
+<a href="https://github.com/google/docsy/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> Create project issue</a>
+
+</div>
+
+
+
+
+
+
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#configuração-de-uso"><strong>Configuração de uso</strong></a>
+      <ul>
+        <li><a href="#passo-1-atualizar-android-manifest"><strong>Passo 1: Atualizar Android Manifest</strong></a></li>
+        <li><a href="#passo-2-criar-uma-classe-beagleconfig"><strong>Passo 2: Criar uma classe BeagleConfig</strong></a></li>
+        <li><a href="#passo-3-beagleactivity"><strong>Passo 3: BeagleActivity</strong></a></li>
+        <li><a href="#passo-4-iniciar-o-beagle-e-o-design-system"><strong>Passo 4: Iniciar o Beagle e o Design System</strong></a></li>
+        <li><a href="#passo-5-criar-o-beaglesetup"><strong>Passo 5: Criar o BeagleSetup</strong></a></li>
+        <li><a href="#passo-6-criar-a-classe-application"><strong>Passo 6: Criar a classe Application</strong></a></li>
+        <li><a href="#passo-7-atualizar-seu-android-manifestxml"><strong>Passo 7: Atualizar seu Android Manifest.xml</strong></a></li>
+        <li><a href="#passo-8-gerenciar-os-logs"><strong>Passo 8: Gerenciar os Logs</strong></a></li>
+        <li><a href="#passo-9-gerenciar-os-caches"><strong>Passo 9: Gerenciar os caches</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#exemplo-prático">Exemplo prático</a>
+      <ul>
+        <li><a href="#como-exibir-uma-tela-server-driven">Como exibir uma tela Server-Driven</a></li>
+      </ul>
+    </li>
+    <li><a href="#informação-adicional">Informação adicional</a></li>
+  </ul>
+</nav>
+
+
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://zupit.github.io/docs-beagle/pt/docs/">Docs</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://zupit.github.io/docs-beagle/pt/docs/get-started/">Primeiros Passos</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/">Usando o Beagle</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="https://zupit.github.io/docs-beagle/pt/docs/get-started/using-beagle/android/">Android</a>
+</li>
+
+	</ol>
+</nav	>
+
+            
+<div class="td-content">
+	<h1>Android</h1>
+    <div class="lead">Nesta seção, você encontra o passo a passo para fazer as configurações para o uso do Beagle em projetos Android.</div>
+	       
+	<hr>
+<h2 id="configuração-de-uso"><strong>Configuração de uso</strong></h2>
+<p>Depois que você terminar a instalação, é preciso <strong>configurar o Beagle para o uso</strong>. Para facilitar a nossa explicação, vamos usar um <strong>exemplo de</strong> <strong>como renderizar uma tela com um título &ldquo;Hello Beagle!</strong>&rdquo; e uma pequena descrição.</p>
+<h3 id="passo-1-atualizar-android-manifest"><strong>Passo 1: Atualizar Android Manifest</strong></h3>
+<p>Nesse passo você deve atualizar o<code>AndroidManifest</code> e adicionar duas linhas a este arquivo:</p>
+<ol>
+<li>A permissão de INTERNET para que sua aplicação seja capaz de acessar a internet.</li>
+<li>O atributo<code>android:usesCleartextTraffic=&quot;true&quot;</code> dentro da tag <code>&lt;application&gt;</code> para comunicação com o BFF local.</li>
+</ol>
+<p>{% hint style=&ldquo;info&rdquo; %}
+Para este exemplo não iremos utilizar um BFF, consequentemente essa configuração não é necessária. Porém, para todo e qualquer <strong>teste</strong> que seja feito usando o Beagle Android com um BFF, esse passo é <strong>necessário</strong>.
+{% endhint %}</p>
+<p>{% code title=&ldquo;AndroidManifest.xml&rdquo; %}</p>
+<pre><code class="language-markup" data-lang="markup">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;manifest xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    package=&quot;com.example.beagleexamples&quot;&gt;
+
+    &lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;
+
+    &lt;application
+        ...
+        android:usesCleartextTraffic=&quot;true&quot;
+        ...
+</code></pre><p>{% endcode %}</p>
+<p>{% hint style=&ldquo;warning&rdquo; %}</p>
+<ul>
+<li>
+<p>O<code>usesCleartextTraffic:</code> indica que o aplicativo pretende usar o tráfego de rede de texto não criptografado, HTTP. O valor padrão para aplicativos que visam o nível de API 27 ou inferior é <strong><code>true</code></strong>. Os aplicativos que têm como alvo o nível de API 28 ou superior são padronizados como <strong><code>false</code></strong>.</p>
+</li>
+<li>
+<p>O atributo <code>android: usesCleartextTraffic = &quot;true&quot;</code> dentro da <code>tag&lt;application&gt;</code></p>
+<p>é usado para se comunicar com o BFF local.  Se você pretende <code>depurar</code> o projeto usando um BFF local, você pode usar essa configuração como uma etapa de configuração rápida.</p>
+</li>
+<li>
+<p>No entanto, se você planeja transformar este exemplo em um aplicativo para <code>release</code>, recomendamos que você use o <code>networkSecurityConfig</code>, que você pode configurar usando as instruções na página de <a href="https://developer.android.com/training/articles/security-config"><strong>desenvolvedores do Android</strong></a>.
+{% endhint %}</p>
+</li>
+</ul>
+<h3 id="passo-2-criar-uma-classe-beagleconfig"><strong>Passo 2: Criar uma classe BeagleConfig</strong></h3>
+<p>Feita a atualização, você precisa criar uma classe <code>BeagleConfig</code> e configurar seus todos os atributos, como mostra o exemplo abaixo:</p>
+<p>{% code title=&ldquo;AppBeagleConfig.kt&rdquo; %}</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#5c35cc;font-weight:bold">@BeagleComponent</span>
+<span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">AppBeagleConfig</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000">BeagleConfig</span> <span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">environment</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">Environment</span> <span style="color:#204a87;font-weight:bold">get</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">Environment</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">DEBUG</span>
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">baseUrl</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span> <span style="color:#204a87;font-weight:bold">get</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;https://myapp.server.com/&#34;</span>
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">isLoggingEnabled</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">Boolean</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">true</span>
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">cache</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">Cache</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">Cache</span><span style="color:#000;font-weight:bold">(</span>
+        <span style="color:#000">enabled</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">false</span><span style="color:#000;font-weight:bold">,</span>
+        <span style="color:#000">maxAge</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">300</span><span style="color:#000;font-weight:bold">,</span>
+        <span style="color:#000">size</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">15</span>
+    <span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div><p>{% endcode %}</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Atributos</th>
+<th style="text-align:left">Tipo</th>
+<th style="text-align:left">Definição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">environment</td>
+<td style="text-align:left">Environment</td>
+<td style="text-align:left">Atributo responsável por informar ao Beagle qual o estado de build atual da aplicação.</td>
+</tr>
+<tr>
+<td style="text-align:left">baseUrl</td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">Informa a url base usada no Beagle na aplicação. Se estiver usando emulador, consulte essa <a href="https://developer.android.com/studio/run/emulator-networking.html#networkaddresses"><strong>página para definir esse atributo</strong></a>.</td>
+</tr>
+<tr>
+<td style="text-align:left">isLoggingEnabled</td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">Atributo que habilita ou desabilita todos os logs que o Beagle gera.</td>
+</tr>
+<tr>
+<td style="text-align:left">cache</td>
+<td style="text-align:left">Cache</td>
+<td style="text-align:left">Objeto responsável por gerenciar o cache das requisições do Beagle.</td>
+</tr>
+</tbody>
+</table>
+<p>{% hint style=&ldquo;warning&rdquo; %}
+Faça a configuração das classes com bastante atenção, pois se você anotá-las com<code>BeagleComponent</code>, o Beagle espera que elas tenham construtores vazios.
+{% endhint %}</p>
+<h3 id="passo-3-beagleactivity"><strong>Passo 3: BeagleActivity</strong></h3>
+<p>O Beagle fornece uma <code>Activity</code> default para gerenciar as <code>Activities</code> geradas via server-driven. Porém você pode criar uma ou mais<code>Activities</code> que herdem de <code>BeagleActivity</code> com <code>@BeagleComponent</code> personalizadas de acordo com os fluxos server-driven da sua aplicação.</p>
+<p>{% hint style=&ldquo;info&rdquo; %}
+Você pode criar o BeagleActivity agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-la. Para saber mais, confira a seção sobre<a href="../../features/customizacao/beagle-para-android/custom-beagle-activity.md"> <strong>Beagle Activity Customizada</strong></a>.
+{% endhint %}</p>
+<h3 id="passo-4-iniciar-o-beagle-e-o-design-system"><strong>Passo 4: Iniciar o Beagle e o Design System</strong></h3>
+<p>Agora é o momento de iniciar o Beagle na classe da sua aplicação. Porém, antes confira se a versão mínima da sua aplicação em SKD está  19 ou superior, como indicado abaixo:</p>
+<p>{% code title=&ldquo;build.gradle(Module:AppName)&rdquo; %}</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">defaultConfig {
+    minSdkVersion 19 //or higher
+}
+</code></pre></div><p>{% endcode %}</p>
+<p>{% hint style=&ldquo;info&rdquo; %}
+Você pode criar o Design System agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-lo. Para saber mais, confira a seção sobre <a href="../new-project/case-android/design-system-beagle-com-android.md"><strong>Design System com Beagle para Android</strong></a>.
+{% endhint %}</p>
+<h3 id="passo-5-criar-o-beaglesetup"><strong>Passo 5: Criar o BeagleSetup</strong></h3>
+<p>Agora você deve inicializar sua <code>Application</code> para que o Beagle gere os outros arquivos de configuração que necessita. Ao ser iniciado pela primeira vez o Beagle irá criar automaticamente uma classe de  <code>BeagleSetup</code> class, como mostra a figura abaixo:</p>
+<p><img src="../../.gitbook/assets/beaglesetup.png" alt="BeagleSetup file"></p>
+<h3 id="passo-6-criar-a-classe-application"><strong>Passo 6: Criar a classe Application</strong></h3>
+<p>Neste momento, você deve criar uma <code>classe Kotlin</code> que estenda a classe <code>Application</code> que, para este exemplo, nomeamos como <code>AppApplication</code>.</p>
+<p>Esta classe deve chamar o <code>BeagleSetup().init(this)</code> no método <code>onCreate</code>, conforme listado abaixo:</p>
+<p>{% code title=&ldquo;AppApplication.kt&rdquo; %}</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">AppApplication</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">Application</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+
+    <span style="color:#204a87;font-weight:bold">companion</span> <span style="color:#204a87;font-weight:bold">object</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">APPLICATION</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">Application</span><span style="color:#000;font-weight:bold">?</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">null</span>
+    <span style="color:#000;font-weight:bold">}</span>
+
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">onCreate</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">super</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">onCreate</span><span style="color:#000;font-weight:bold">()</span>
+        
+        <span style="color:#000">APPLICATION</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">this</span>
+
+        <span style="color:#000">BeagleSetup</span><span style="color:#000;font-weight:bold">().</span><span style="color:#204a87;font-weight:bold">init</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">APPLICATION</span><span style="color:#ce5c00;font-weight:bold">!!</span><span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div><p>{% endcode %}</p>
+<p>{% hint style=&ldquo;danger&rdquo; %}
+Assim que você criar essa classe, aperte CTRL + F9 para que as classes autogeradas do Beagle sejam criadas.
+{% endhint %}</p>
+<h3 id="passo-7-atualizar-seu-android-manifestxml"><strong>Passo 7: Atualizar seu Android Manifest.xml</strong></h3>
+<p>Por fim, você deve atualizar novamente o seu <code>AndroidManifest.xml</code> e definir a <code>AppApplication</code> que foi criada como o arquivo de inicialização da aplicação, como no exemplo abaixo:</p>
+<p>{% code title=&ldquo;AndroidManifest.xml&rdquo; %}</p>
+<pre><code class="language-markup" data-lang="markup">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;manifest xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    package=&quot;com.example.beagleexamples&quot;&gt;
+
+    &lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;
+
+    &lt;application
+        android:name=&quot;.AppApplication&quot;
+        
+        ..
+</code></pre><p>{% endcode %}</p>
+<h3 id="passo-8-gerenciar-os-logs"><strong>Passo 8: Gerenciar os Logs</strong></h3>
+<p>Você precisa criar uma classe que implementa a interface <code>BeagleLogger</code>. Esse protocolo deverá ser definido para facilitar o monitoramento dos erros gerados no contexto server driven de sua aplicação.  E você deve implementar os métodos da forma mais apropriada para sua necessidade. Veja um exemplo:</p>
+<p>{% code title=&ldquo;BeagleLoggerDefault.kt&rdquo; %}</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#204a87;font-weight:bold">private</span> <span style="color:#204a87;font-weight:bold">const</span> <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">BEAGLE_TAG</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;BeagleSDK&#34;</span>
+
+<span style="color:#5c35cc;font-weight:bold">@BeagleComponent</span>
+<span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">BeagleLoggerDefault</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000">BeagleLogger</span> <span style="color:#000;font-weight:bold">{</span>
+
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">warning</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">message</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#000">Log</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">w</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">BEAGLE_TAG</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">message</span><span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#000;font-weight:bold">}</span>
+
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">error</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">message</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#000">Log</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">e</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">BEAGLE_TAG</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">message</span><span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#000;font-weight:bold">}</span>
+
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">error</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">message</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">throwable</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">Throwable</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#000">Log</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">e</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">BEAGLE_TAG</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">message</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">throwable</span><span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#000;font-weight:bold">}</span>
+
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">info</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">message</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#000">Log</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">i</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">BEAGLE_TAG</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">message</span><span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#000;font-weight:bold">}</span>
+
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div><p>{% endcode %}</p>
+<h3 id="passo-9-gerenciar-os-caches"><strong>Passo 9: Gerenciar os caches</strong></h3>
+<p>Aqui, você deve implementar o <code>StoreHandler</code>, um protocolo que permite personalizar a forma como o cache é manipulado no banco de dados e na memória.</p>
+<p>Para isso, é preciso criar duas classes que implementarão a  interface <code>LocalStore</code>. Essa interface permite mapear as ações de salvar, restaurar, deletar e pegar tudo. Veja o exemplo abaixo:</p>
+<p>{% code title=&ldquo;MemoryLocalStore.kt&rdquo; %}</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#204a87;font-weight:bold">internal</span> <span style="color:#204a87;font-weight:bold">object</span> <span style="color:#000">MemoryLocalStore</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000">LocalStore</span> <span style="color:#000;font-weight:bold">{</span>
+
+    <span style="color:#204a87;font-weight:bold">private</span> <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">cache</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">mutableMapOf</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">String</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">&gt;()</span>
+
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">save</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">value</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#000">cache</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">value</span>
+    <span style="color:#000;font-weight:bold">}</span>
+
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">restore</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">):</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">?</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">cache</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">]</span>
+    <span style="color:#000;font-weight:bold">}</span>
+
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">delete</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#000">cache</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">remove</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#000;font-weight:bold">}</span>
+
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">getAll</span><span style="color:#000;font-weight:bold">():</span> <span style="color:#000">Map</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">String</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">cache</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">toMap</span><span style="color:#000;font-weight:bold">()</span>
+    <span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div><p>{% endcode %}</p>
+<p>Agora criaremos uma segunda classe a qual dependeremos para criação do <code>StoreHandler</code>, que é a <code>DatabaseLocalStore</code>. Note que neste mesmo arquivo foram declaradas algumas classes adjacentes que servem a essa classe <code>DatabaseLocalStore</code> mas poderiam estar em arquivos diferentes, caso prefira. Veja um exemplo:</p>
+<p>{% code title=&ldquo;DatabaseLocalStore.kt&rdquo; %}</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#204a87;font-weight:bold">internal</span> <span style="color:#204a87;font-weight:bold">object</span> <span style="color:#000">ScreenEntry</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000">BaseColumns</span> <span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">const</span> <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">TABLE_NAME</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;KeyValueCache&#34;</span>
+    <span style="color:#204a87;font-weight:bold">const</span> <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">KEY_COLUMN_NAME</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;key&#34;</span>
+    <span style="color:#204a87;font-weight:bold">const</span> <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">VALUE_COLUMN_NAME</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;value&#34;</span>
+<span style="color:#000;font-weight:bold">}</span>
+
+<span style="color:#204a87;font-weight:bold">internal</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">DatabaseLocalStore</span><span style="color:#000;font-weight:bold">(</span>
+    <span style="color:#204a87;font-weight:bold">private</span> <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">contentValuesFactory</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">ContentValuesFactory</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">ContentValuesFactory</span><span style="color:#000;font-weight:bold">(),</span>
+    <span style="color:#204a87;font-weight:bold">private</span> <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">database</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">SQLiteDatabase</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">BeagleDatabaseManager</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getDatabase</span><span style="color:#000;font-weight:bold">(</span>
+        <span style="color:#000">BeagleUiSampleApplication</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">APPLICATION</span><span style="color:#ce5c00;font-weight:bold">!!</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000">LocalStore</span> <span style="color:#000;font-weight:bold">{</span>
+
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">save</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">value</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">values</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">contentValuesFactory</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">make</span><span style="color:#000;font-weight:bold">().</span><span style="color:#000">apply</span> <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#000">put</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">ScreenEntry</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">KEY_COLUMN_NAME</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">key</span><span style="color:#000;font-weight:bold">)</span>
+            <span style="color:#000">put</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">ScreenEntry</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">VALUE_COLUMN_NAME</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">value</span><span style="color:#000;font-weight:bold">)</span>
+        <span style="color:#000;font-weight:bold">}</span>
+
+
+        <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">newRowId</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">database</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">insertWithOnConflict</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">ScreenEntry</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">TABLE_NAME</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">null</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">values</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#000">SQLiteDatabase</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">CONFLICT_REPLACE</span><span style="color:#000;font-weight:bold">)</span>
+        <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">newRowId</span> <span style="color:#ce5c00;font-weight:bold">==</span> <span style="color:#000;font-weight:bold">-</span><span style="color:#0000cf;font-weight:bold">1L</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#000">BeagleMessageLogs</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">logDataNotInsertedOnDatabase</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">value</span><span style="color:#000;font-weight:bold">)</span>
+        <span style="color:#000;font-weight:bold">}</span>
+    <span style="color:#000;font-weight:bold">}</span>
+
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">restore</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">):</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">?</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">executeRestoreQueryForKey</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">).</span><span style="color:#000">use</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000">cursor</span> <span style="color:#ce5c00;font-weight:bold">-&gt;</span>
+            <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">cursor</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">count</span> <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+                <span style="color:#000">cursor</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">moveToFirst</span><span style="color:#000;font-weight:bold">()</span>
+                <span style="color:#000">cursor</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getString</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">cursor</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getColumnIndexOrThrow</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">ScreenEntry</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">VALUE_COLUMN_NAME</span><span style="color:#000;font-weight:bold">))</span>
+            <span style="color:#000;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">else</span> <span style="color:#000;font-weight:bold">{</span>
+                <span style="color:#204a87;font-weight:bold">null</span>
+            <span style="color:#000;font-weight:bold">}</span>
+        <span style="color:#000;font-weight:bold">}</span>
+    <span style="color:#000;font-weight:bold">}</span>
+
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">delete</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#000">database</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">delete</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">ScreenEntry</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">TABLE_NAME</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;</span><span style="color:#4e9a06">${ScreenEntry.KEY_COLUMN_NAME}</span><span style="color:#4e9a06">=?&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">arrayOf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">))</span>
+    <span style="color:#000;font-weight:bold">}</span>
+
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">getAll</span><span style="color:#000;font-weight:bold">():</span> <span style="color:#000">Map</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">String</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">columnsToReturn</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">arrayOf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">ScreenEntry</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">KEY_COLUMN_NAME</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">ScreenEntry</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">VALUE_COLUMN_NAME</span><span style="color:#000;font-weight:bold">)</span>
+        <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">columnsForWhereClause</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;&#34;</span>
+        <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">valuesForWhereClause</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">arrayOf</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">String</span><span style="color:#000;font-weight:bold">&gt;()</span>
+        <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">cursor</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">database</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">query</span><span style="color:#000;font-weight:bold">(</span>
+            <span style="color:#000">ScreenEntry</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">TABLE_NAME</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#000">columnsToReturn</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#000">columnsForWhereClause</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#000">valuesForWhereClause</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#204a87;font-weight:bold">null</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#204a87;font-weight:bold">null</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#204a87;font-weight:bold">null</span>
+        <span style="color:#000;font-weight:bold">)</span>
+
+        <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">returnMap</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">mutableMapOf</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">String</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">&gt;()</span>
+        <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">cursor</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">count</span> <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#0000cf;font-weight:bold">0</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#000">cursor</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">moveToFirst</span><span style="color:#000;font-weight:bold">()</span>
+            <span style="color:#204a87;font-weight:bold">while</span> <span style="color:#000;font-weight:bold">(!</span><span style="color:#000">cursor</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">isAfterLast</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+                <span style="color:#000">returnMap</span><span style="color:#000;font-weight:bold">[</span><span style="color:#000">cursor</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getString</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">cursor</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getColumnIndexOrThrow</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">ScreenEntry</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">KEY_COLUMN_NAME</span><span style="color:#000;font-weight:bold">))]</span> <span style="color:#000;font-weight:bold">=</span>
+                    <span style="color:#000">cursor</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getString</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">cursor</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getColumnIndexOrThrow</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">ScreenEntry</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">VALUE_COLUMN_NAME</span><span style="color:#000;font-weight:bold">))</span>
+
+                <span style="color:#000">cursor</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">moveToNext</span><span style="color:#000;font-weight:bold">()</span>
+            <span style="color:#000;font-weight:bold">}</span>
+        <span style="color:#000;font-weight:bold">}</span>
+        <span style="color:#000">cursor</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">close</span><span style="color:#000;font-weight:bold">()</span>
+
+        <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">returnMap</span>
+    <span style="color:#000;font-weight:bold">}</span>
+
+    <span style="color:#204a87;font-weight:bold">private</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">executeRestoreQueryForKey</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">):</span> <span style="color:#000">Cursor</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">columnsToReturn</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">arrayOf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">ScreenEntry</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">VALUE_COLUMN_NAME</span><span style="color:#000;font-weight:bold">)</span>
+        <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">columnsForWhereClause</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;</span><span style="color:#4e9a06">${ScreenEntry.KEY_COLUMN_NAME}</span><span style="color:#4e9a06">=?&#34;</span>
+        <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">valuesForWhereClause</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">arrayOf</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">)</span>
+        <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">database</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">query</span><span style="color:#000;font-weight:bold">(</span>
+            <span style="color:#000">ScreenEntry</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">TABLE_NAME</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#000">columnsToReturn</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#000">columnsForWhereClause</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#000">valuesForWhereClause</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#204a87;font-weight:bold">null</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#204a87;font-weight:bold">null</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#204a87;font-weight:bold">null</span>
+        <span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">}</span>
+
+<span style="color:#204a87;font-weight:bold">internal</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">ContentValuesFactory</span> <span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">make</span><span style="color:#000;font-weight:bold">():</span> <span style="color:#000">ContentValues</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">ContentValues</span><span style="color:#000;font-weight:bold">()</span>
+<span style="color:#000;font-weight:bold">}</span>
+
+<span style="color:#204a87;font-weight:bold">internal</span> <span style="color:#204a87;font-weight:bold">object</span> <span style="color:#000">BeagleDatabaseManager</span> <span style="color:#000;font-weight:bold">{</span>
+
+    <span style="color:#204a87;font-weight:bold">private</span> <span style="color:#204a87;font-weight:bold">const</span> <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">DATABASE_NAME</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;BeagleDefaultStore.db&#34;</span>
+    <span style="color:#204a87;font-weight:bold">private</span> <span style="color:#204a87;font-weight:bold">const</span> <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">DATABASE_VERSION</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">2</span>
+
+    <span style="color:#204a87;font-weight:bold">private</span> <span style="color:#204a87;font-weight:bold">lateinit</span> <span style="color:#204a87;font-weight:bold">var</span> <span style="color:#000">database</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">SQLiteDatabase</span>
+
+    <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">getDatabase</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">context</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">Context</span><span style="color:#000;font-weight:bold">):</span> <span style="color:#000">SQLiteDatabase</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(!</span><span style="color:#ce5c00;font-weight:bold">::</span><span style="color:#000">database</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">isInitialized</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#000">database</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">BeagleSQLiteDatabase</span><span style="color:#000;font-weight:bold">(</span>
+                <span style="color:#000">context</span><span style="color:#000;font-weight:bold">,</span>
+                <span style="color:#000">DATABASE_NAME</span><span style="color:#000;font-weight:bold">,</span>
+                <span style="color:#000">DATABASE_VERSION</span>
+            <span style="color:#000;font-weight:bold">).</span><span style="color:#000">writableDatabase</span>
+        <span style="color:#000;font-weight:bold">}</span>
+        <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">database</span>
+    <span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">}</span>
+
+<span style="color:#204a87;font-weight:bold">internal</span> <span style="color:#204a87;font-weight:bold">open</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">BeagleSQLiteDatabase</span><span style="color:#000;font-weight:bold">(</span>
+    <span style="color:#000">context</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">Context</span><span style="color:#000;font-weight:bold">,</span>
+    <span style="color:#000">databaseName</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">,</span>
+    <span style="color:#000">databaseVersion</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">Int</span>
+<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000">SQLiteOpenHelper</span><span style="color:#000;font-weight:bold">(</span>
+    <span style="color:#000">context</span><span style="color:#000;font-weight:bold">,</span>
+    <span style="color:#000">databaseName</span><span style="color:#000;font-weight:bold">,</span>
+    <span style="color:#204a87;font-weight:bold">null</span><span style="color:#000;font-weight:bold">,</span>
+    <span style="color:#000">databaseVersion</span>
+<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">onCreate</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">db</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">SQLiteDatabase</span><span style="color:#000;font-weight:bold">?)</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">createTableQuery</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;CREATE TABLE </span><span style="color:#4e9a06">${ScreenEntry.TABLE_NAME}</span><span style="color:#4e9a06"> (&#34;</span> <span style="color:#000;font-weight:bold">+</span>
+                <span style="color:#4e9a06">&#34;</span><span style="color:#4e9a06">${BaseColumns._ID}</span><span style="color:#4e9a06"> INTEGER PRIMARY KEY,&#34;</span> <span style="color:#000;font-weight:bold">+</span>
+                <span style="color:#4e9a06">&#34;</span><span style="color:#4e9a06">${ScreenEntry.KEY_COLUMN_NAME}</span><span style="color:#4e9a06"> TEXT NOT NULL UNIQUE,&#34;</span> <span style="color:#000;font-weight:bold">+</span>
+                <span style="color:#4e9a06">&#34;</span><span style="color:#4e9a06">${ScreenEntry.VALUE_COLUMN_NAME}</span><span style="color:#4e9a06"> TEXT NOT NULL&#34;</span> <span style="color:#000;font-weight:bold">+</span>
+                <span style="color:#4e9a06">&#34;)&#34;</span>
+        <span style="color:#000">db</span><span style="color:#ce5c00;font-weight:bold">?.</span><span style="color:#000">execSQL</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">createTableQuery</span><span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#000;font-weight:bold">}</span>
+
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">onUpgrade</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">db</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">SQLiteDatabase</span><span style="color:#000;font-weight:bold">?,</span> <span style="color:#000">oldVersion</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">Int</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">newVersion</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">Int</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">deleteTableQuery</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;DROP TABLE IF EXISTS </span><span style="color:#4e9a06">${ScreenEntry.TABLE_NAME}</span><span style="color:#4e9a06">&#34;</span>
+        <span style="color:#000">db</span><span style="color:#ce5c00;font-weight:bold">?.</span><span style="color:#000">execSQL</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">deleteTableQuery</span><span style="color:#000;font-weight:bold">)</span>
+        <span style="color:#000">onCreate</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">db</span><span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">}</span>
+
+<span style="color:#204a87;font-weight:bold">internal</span> <span style="color:#204a87;font-weight:bold">object</span> <span style="color:#000">BeagleMessageLogs</span> <span style="color:#000;font-weight:bold">{</span>
+
+    <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">logDataNotInsertedOnDatabase</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">value</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#000">BeagleLoggerDefault</span><span style="color:#000;font-weight:bold">().</span><span style="color:#000">warning</span><span style="color:#000;font-weight:bold">(</span>
+            <span style="color:#4e9a06">&#34;Error when trying to insert key=</span><span style="color:#4e9a06">$key</span><span style="color:#4e9a06"> with value=</span><span style="color:#4e9a06">$value</span><span style="color:#4e9a06"> on Beagle default database.&#34;</span>
+        <span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div><p>{% endcode %}</p>
+<p>O arquivo acima possui as configurações para o SQL Lite e também as definições de como as ações de manipulação de cache funcionarão, no caso da persistência do cache no banco de dados.</p>
+<p>Após a definição das classes <code>MemoryLocalStore</code> e <code>DatabaseLocalStore</code> você pode definir a <code>StoreHandler</code>. Veja o exemplo abaixo:</p>
+<p>{% code title=&ldquo;StoreHandler.kt&rdquo; %}</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">br.com.zup.beagle.android.annotation.BeagleComponent</span>
+<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">br.com.zup.beagle.android.store.StoreHandler</span>
+<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">br.com.zup.beagle.android.store.StoreType</span>
+
+<span style="color:#5c35cc;font-weight:bold">@BeagleComponent</span>
+<span style="color:#204a87;font-weight:bold">internal</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">StoreHandler</span><span style="color:#000;font-weight:bold">(</span>
+    <span style="color:#204a87;font-weight:bold">private</span> <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">memoryLocalStore</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">MemoryLocalStore</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">MemoryLocalStore</span><span style="color:#000;font-weight:bold">,</span>
+    <span style="color:#204a87;font-weight:bold">private</span> <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">databaseLocalStore</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">DatabaseLocalStore</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">DatabaseLocalStore</span><span style="color:#000;font-weight:bold">()</span>
+<span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000">StoreHandler</span> <span style="color:#000;font-weight:bold">{</span>
+
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">save</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">storeType</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">StoreType</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">data</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">Map</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">String</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">&gt;)</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">data</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">forEach</span> <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">storeType</span> <span style="color:#ce5c00;font-weight:bold">==</span> <span style="color:#000">StoreType</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">DATABASE</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+                <span style="color:#000">databaseLocalStore</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">save</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">it</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">it</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">value</span><span style="color:#000;font-weight:bold">)</span>
+            <span style="color:#000;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">else</span> <span style="color:#000;font-weight:bold">{</span>
+                <span style="color:#000">memoryLocalStore</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">save</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">it</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">it</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">value</span><span style="color:#000;font-weight:bold">)</span>
+            <span style="color:#000;font-weight:bold">}</span>
+        <span style="color:#000;font-weight:bold">}</span>
+    <span style="color:#000;font-weight:bold">}</span>
+
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">restore</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">storeType</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">StoreType</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">vararg</span> <span style="color:#000">keys</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">):</span> <span style="color:#000">Map</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">String</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">?&gt;</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">values</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">mutableMapOf</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">String</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">?&gt;()</span>
+        <span style="color:#000">keys</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">forEach</span> <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#204a87;font-weight:bold">val</span> <span style="color:#000">value</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">storeType</span> <span style="color:#ce5c00;font-weight:bold">==</span> <span style="color:#000">StoreType</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">DATABASE</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+                <span style="color:#000">databaseLocalStore</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">restore</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">it</span><span style="color:#000;font-weight:bold">)</span>
+            <span style="color:#000;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">else</span> <span style="color:#000;font-weight:bold">{</span>
+                <span style="color:#000">memoryLocalStore</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">restore</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">it</span><span style="color:#000;font-weight:bold">)</span>
+            <span style="color:#000;font-weight:bold">}</span>
+            <span style="color:#000">values</span><span style="color:#000;font-weight:bold">[</span><span style="color:#204a87;font-weight:bold">it</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">value</span>
+        <span style="color:#000;font-weight:bold">}</span>
+        <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">values</span>
+    <span style="color:#000;font-weight:bold">}</span>
+
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">delete</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">storeType</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">StoreType</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">key</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">storeType</span> <span style="color:#ce5c00;font-weight:bold">==</span> <span style="color:#000">StoreType</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">DATABASE</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#000">databaseLocalStore</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">delete</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">)</span>
+        <span style="color:#000;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">else</span> <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#000">memoryLocalStore</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">delete</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">key</span><span style="color:#000;font-weight:bold">)</span>
+        <span style="color:#000;font-weight:bold">}</span>
+    <span style="color:#000;font-weight:bold">}</span>
+
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">getAll</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">storeType</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">StoreType</span><span style="color:#000;font-weight:bold">):</span> <span style="color:#000">Map</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000">String</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#204a87;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">(</span><span style="color:#000">storeType</span> <span style="color:#ce5c00;font-weight:bold">==</span> <span style="color:#000">StoreType</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">DATABASE</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#000">databaseLocalStore</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getAll</span><span style="color:#000;font-weight:bold">()</span>
+        <span style="color:#000;font-weight:bold">}</span> <span style="color:#204a87;font-weight:bold">else</span> <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#000">memoryLocalStore</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">getAll</span><span style="color:#000;font-weight:bold">()</span>
+        <span style="color:#000;font-weight:bold">}</span>
+    <span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div><p>{% endcode %}</p>
+<p>Agora você está pronto para começar a usar o Beagle! E para verificar se a configuração está correta simule uma tela Server-Driven fazendo o teste a seguir.</p>
+<h2 id="exemplo-prático">Exemplo prático</h2>
+<h3 id="como-exibir-uma-tela-server-driven">Como exibir uma tela Server-Driven</h3>
+<p>Para você testar nossa aplicação, vamos simular uma tela server-driven criando um JSON que represente uma tela na sua aplicação Android.</p>
+<p>Siga os passos abaixo para fazer a exibição:</p>
+<ol>
+<li>Abra o arquivo <code>MainActivity.kt</code>;</li>
+<li>Declare a linha abaixo na função <code>onCreate</code>;</li>
+<li>Adicione a linha de comando <code>test_content.addView(testScreen().toView(this))</code></li>
+<li>Perceba que o <strong>test_content</strong> ainda não existe, pois ainda vamos nomear esta referência.</li>
+</ol>
+<p>{% code title=&ldquo;MainActivity.kt&rdquo; %}</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">onCreate</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">savedInstanceState</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">Bundle</span><span style="color:#000;font-weight:bold">?)</span> <span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">super</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">onCreate</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">savedInstanceState</span><span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#000">setContentView</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">R</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">layout</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">activity_main</span><span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#000">test_content</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">addView</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">testScreen</span><span style="color:#000;font-weight:bold">().</span><span style="color:#000">toView</span><span style="color:#000;font-weight:bold">(</span><span style="color:#204a87;font-weight:bold">this</span><span style="color:#000;font-weight:bold">))</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div><p>{% endcode %}</p>
+<p>{% hint style=&ldquo;info&rdquo; %}
+Para acessar a view <code>test_content</code> como no exemplo acima, é necessário a instalar o plugin:</p>
+<p>{% code title=&ldquo;build.gradle(Module)&rdquo; %}</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">plugins {
+    id &#39;kotlin-android-extensions&#39;
+}
+</code></pre></div><p>{% endcode %}
+{% endhint %}</p>
+<ol start="5">
+<li>Abra o arquivo de layout <code>.xml</code> da Main Activity e crie um frame layout.</li>
+</ol>
+<p>Por padrão, o Android costuma criar os arquivos <code>.xml</code> com o <code>constraint layout</code>. Você não precisa removê-lo, apenas adicione o frame layout dentro dele e confira se as configurações estão como no exemplo abaixo:</p>
+<p>{% code title=&ldquo;activity_main.xml&rdquo; %}</p>
+<pre><code class="language-markup" data-lang="markup">&lt;FrameLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    android:layout_width=&quot;match_parent&quot;
+    android:layout_height=&quot;match_parent&quot;
+    android:id=&quot;@+id/test_content&quot; /&gt;
+</code></pre><p>{% endcode %}</p>
+<ol start="6">
+<li>Agora, é só retornar a página <strong>MainActivity.kt</strong> e declarar a função abaixo. Ela é a responsável por listar o JSON para testarmos a tela.</li>
+</ol>
+<p>{% code title=&ldquo;MainActivity.kt&rdquo; %}</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#204a87;font-weight:bold">private</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">testScreen</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">Screen</span><span style="color:#000;font-weight:bold">(</span>
+    <span style="color:#000">child</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">Container</span><span style="color:#000;font-weight:bold">(</span>
+      <span style="color:#000">children</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">listOf</span><span style="color:#000;font-weight:bold">(</span>
+        <span style="color:#000">Text</span><span style="color:#000;font-weight:bold">(</span>
+          <span style="color:#000">text</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;Hello Beagle!&#34;</span>
+        <span style="color:#000;font-weight:bold">).</span><span style="color:#000">applyStyle</span><span style="color:#000;font-weight:bold">(</span>
+          <span style="color:#000">Style</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">margin</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">EdgeValue</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">top</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">16.u</span><span style="color:#000">nitReal</span><span style="color:#000;font-weight:bold">()),</span>
+            <span style="color:#000">flex</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">Flex</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">alignSelf</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">AlignSelf</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">CENTER</span><span style="color:#000;font-weight:bold">)</span>
+          <span style="color:#000;font-weight:bold">)</span>
+              <span style="color:#000;font-weight:bold">),</span>
+        <span style="color:#000">Text</span><span style="color:#000;font-weight:bold">(</span>
+          <span style="color:#000">text</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;Beagle is a cross-platform framework which provides usage of the &#34;</span> <span style="color:#000;font-weight:bold">+</span>
+                      <span style="color:#4e9a06">&#34;Server-Driven UI concept, natively in iOS, Android and Web applications. &#34;</span> <span style="color:#000;font-weight:bold">+</span>
+                      <span style="color:#4e9a06">&#34;By using Beagle, your team could easily change application&#39;s layout and&#34;</span> <span style="color:#000;font-weight:bold">+</span>
+                      <span style="color:#4e9a06">&#34; data by just changing backend code.&#34;</span>
+        <span style="color:#000;font-weight:bold">).</span><span style="color:#000">applyStyle</span><span style="color:#000;font-weight:bold">(</span>
+          <span style="color:#000">Style</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">margin</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">EdgeValue</span><span style="color:#000;font-weight:bold">(</span>
+            <span style="color:#000">left</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">16.u</span><span style="color:#000">nitReal</span><span style="color:#000;font-weight:bold">(),</span>
+            <span style="color:#000">right</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">16.u</span><span style="color:#000">nitReal</span><span style="color:#000;font-weight:bold">(),</span>
+            <span style="color:#000">top</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">20.u</span><span style="color:#000">nitReal</span><span style="color:#000;font-weight:bold">()</span>
+          <span style="color:#000;font-weight:bold">)</span>
+          <span style="color:#000;font-weight:bold">)</span>
+        <span style="color:#000;font-weight:bold">)</span>
+      <span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#000;font-weight:bold">)</span>
+  <span style="color:#000;font-weight:bold">)</span>
+</code></pre></div><p>{% endcode %}</p>
+<p>A função acima cria a estrutura JSON abaixo, que vai ser interpretada pelo Beagle:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#000;font-weight:bold">{</span>
+  <span style="color:#4e9a06">&#34;_beagleComponent_&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;beagle:screenComponent&#34;</span><span style="color:#000;font-weight:bold">,</span>
+  <span style="color:#4e9a06">&#34;child&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#4e9a06">&#34;_beagleComponent_&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;beagle:container&#34;</span><span style="color:#000;font-weight:bold">,</span>
+    <span style="color:#4e9a06">&#34;children&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span> <span style="color:#000;font-weight:bold">{</span>
+      <span style="color:#4e9a06">&#34;_beagleComponent_&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;beagle:text&#34;</span><span style="color:#000;font-weight:bold">,</span>
+      <span style="color:#4e9a06">&#34;text&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Hello Beagle!&#34;</span><span style="color:#000;font-weight:bold">,</span>
+      <span style="color:#4e9a06">&#34;style&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#4e9a06">&#34;margin&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+          <span style="color:#4e9a06">&#34;top&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#4e9a06">&#34;value&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">16.0</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#4e9a06">&#34;type&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;REAL&#34;</span>
+          <span style="color:#000;font-weight:bold">}</span>
+        <span style="color:#000;font-weight:bold">},</span>
+        <span style="color:#4e9a06">&#34;flex&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+          <span style="color:#4e9a06">&#34;alignSelf&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;CENTER&#34;</span>
+        <span style="color:#000;font-weight:bold">}</span>
+      <span style="color:#000;font-weight:bold">}</span>
+    <span style="color:#000;font-weight:bold">},</span> <span style="color:#000;font-weight:bold">{</span>
+      <span style="color:#4e9a06">&#34;_beagleComponent_&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;beagle:text&#34;</span><span style="color:#000;font-weight:bold">,</span>
+      <span style="color:#4e9a06">&#34;text&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Beagle is a cross-platform framework which provides usage of the Server-Driven UI concept, natively in iOS, Android and Web applications. By using Beagle, your team could easily change application&#39;s layout and data by just changing backend code.&#34;</span><span style="color:#000;font-weight:bold">,</span>
+      <span style="color:#4e9a06">&#34;style&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#4e9a06">&#34;margin&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+          <span style="color:#4e9a06">&#34;left&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#4e9a06">&#34;value&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">16.0</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#4e9a06">&#34;type&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;REAL&#34;</span>
+          <span style="color:#000;font-weight:bold">},</span>
+          <span style="color:#4e9a06">&#34;top&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#4e9a06">&#34;value&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">20.0</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#4e9a06">&#34;type&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;REAL&#34;</span>
+          <span style="color:#000;font-weight:bold">},</span>
+          <span style="color:#4e9a06">&#34;right&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">{</span>
+            <span style="color:#4e9a06">&#34;value&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">16.0</span><span style="color:#000;font-weight:bold">,</span>
+            <span style="color:#4e9a06">&#34;type&#34;</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;REAL&#34;</span>
+          <span style="color:#000;font-weight:bold">}</span>
+        <span style="color:#000;font-weight:bold">}</span>
+      <span style="color:#000;font-weight:bold">}</span>
+    <span style="color:#000;font-weight:bold">}</span> <span style="color:#000;font-weight:bold">]</span>
+  <span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div><ol start="7">
+<li>Clique em <strong><code>Run app</code></strong> e cheque a tela do emulador!<br>
+Você verá a tela a seguir:</li>
+</ol>
+<p><img src="../../.gitbook/assets/captura-de-tela-2020-06-22-a-s-11.41.12.png" alt=""></p>
+<p>{% hint style=&ldquo;success&rdquo; %}
+Parabéns, você criou sua primeira tela com Beagle!
+{% endhint %}</p>
+<p>Neste tutorial, focamos em uma configuração de tela simples para você entender o processo, na prática, sem se preocupar com uma hierarquia de telas complexas. Mas, claro, você pode fazer bem mais no seu projeto com o Beagle!</p>
+<h2 id="informação-adicional">Informação adicional</h2>
+<p>Antes de usar o Beagle, fique atento a <strong>configuração da build de release e o ProGuard.</strong></p>
+<p>Mesmo não sendo necessário neste momento, é bom ter em mente que você precisará <a href="../../features/customizacao/beagle-para-android/proguard.md"><strong>configurar o ProGuard</strong></a> ****para ativar o ofuscamento do seu código quando estiver publicando releases.</p>
+<p>{% hint style=&ldquo;info&rdquo; %}
+As classes anotadas como <code>BeagleComponent</code> e <code>RegisterValidator</code>não podem implementar parâmetros nos seus construtores, pois no caso do Beagle esses construtores precisam estar vazios.
+{% endhint %}</p>
+
+	
+		<style>
+  .feedback--answer {
+    display: inline-block;
+  }
+  .feedback--answer-no {
+    margin-left: 1em;
+  }
+  .feedback--response {
+    display: none;
+    margin-top: 1em;
+  }
+  .feedback--response__visible {
+    display: block;
+  }
+</style>
+<h2 class="feedback--title">Feedback</h2>
+<p class="feedback--question">Was this page helpful?</p>
+<button class="feedback--answer feedback--answer-yes">Yes</button>
+<button class="feedback--answer feedback--answer-no">No</button>
+<p class="feedback--response feedback--response-yes">
+  Glad to hear it! Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.
+</p>
+<p class="feedback--response feedback--response-no">
+  Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY/issues/new">tell us how we can improve</a>.
+</p>
+<script>
+  const yesButton = document.querySelector('.feedback--answer-yes');
+  const noButton = document.querySelector('.feedback--answer-no');
+  const yesResponse = document.querySelector('.feedback--response-yes');
+  const noResponse = document.querySelector('.feedback--response-no');
+  const disableButtons = () => {
+    yesButton.disabled = true;
+    noButton.disabled = true;
+  };
+  const sendFeedback = (value) => {
+    if (typeof ga !== 'function') return;
+    const args = {
+      command: 'send',
+      hitType: 'event',
+      category: 'Helpful',
+      action: 'click',
+      label: window.location.pathname,
+      value: value
+    };
+    ga(args.command, args.hitType, args.category, args.action, args.label, args.value);
+  };
+  yesButton.addEventListener('click', () => {
+    yesResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(1);
+  });
+  noButton.addEventListener('click', () => {
+    noResponse.classList.add('feedback--response__visible');
+    disableButtons();
+    sendFeedback(0);
+  });
+</script>
+
+		<br />
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">Last modified 11/11/2020: <a  href="https://github.com/google/docsy-example/commit/6e445e1fc6cdaa9b1bbc881638d4814e228c2c2d">Maximo/lateral menu (#18) (6e445e1)</a>
+</div>
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="User mailing list" aria-label="User mailing list">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://example.org/mail">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://example.org/twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Stack Overflow" aria-label="Stack Overflow">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://example.org/stack">
+      <i class="fab fa-stack-overflow"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://github.com/google/docsy">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Slack" aria-label="Slack">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://example.org/slack">
+      <i class="fab fa-slack"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Developer mailing list" aria-label="Developer mailing list">
+    <a class="text-white" target="_blank" rel="noopener noreferrer" href="https://example.org/mail">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2020 The Docsy Authors All Rights Reserved</small>
+        <small class="ml-1"><a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></small>
+	
+		
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script src="/docs-beagle/js/main.min.93478624656308446cd10c5dc78be98020204feea8278797c8778ecde4940a8b.js" integrity="sha256-k0eGJGVjCERs0Qxdx4vpgCAgT&#43;6oJ4eXyHeOzeSUCos=" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>

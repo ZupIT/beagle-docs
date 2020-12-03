@@ -1,11 +1,18 @@
 ---
 title: Alert
+<<<<<<< HEAD
 weight: 245
 description: 'Nesta seção, você encontra a definição do Alert e detalhes de seus atributos'
+=======
+weight: 262
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## O que é?
 
 A ação `Alert` é responsável por criar um elemento de confirmação
@@ -107,3 +114,6 @@ Container(
 
 
 ###  👉 [Teste essa ação no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)​
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

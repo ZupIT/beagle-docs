@@ -1,13 +1,20 @@
 ---
 title: Justify Content
+<<<<<<< HEAD
 weight: 60
 description: >-
   Nesta seção, você encontra mais informações sobre a propriedade Justify
   Content utilizada para posicionar elementos em tela.
+=======
+weight: 63
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Justify Content
 
 O justify-content define o alinhamento dos itens ao longo do eixo principal do container \(horizontalmente\) e tem os seguintes atributos: **`flex-start, flex-end, center, space-between, space-around e space-Evenly.`**
@@ -333,3 +340,6 @@ Os itens são uniformemente distribuídos ao longo do eixo principal:
 {{% alert color="info" %}}
 Para saber o Justify Content, acesse [**a documentação no Yoga Layout**](https://yogalayout.com/docs/flex-direction/)**.**
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

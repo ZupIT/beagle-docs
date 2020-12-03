@@ -1,11 +1,18 @@
 ---
 title: Text
+<<<<<<< HEAD
 weight: 311
 description: Descrição do componente Text e seus atributos
+=======
+weight: 329
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## O que é?
 
 O componente `Text` é responsável por definir o texto nativamente usando informações server-driven. 
@@ -47,3 +54,6 @@ Text(text = "Hello World!")
 
 
 ### 👉 [Teste esse componente no Web Playground](https://beagle-playground.netlify.app/#/cloud/cac8ecb56fcf490d9e09ab7adc322f55/text.json)
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

@@ -1,13 +1,20 @@
 ---
 title: Adicionando um componente Beagle Declarativo
+<<<<<<< HEAD
 weight: 216
 description: >-
   Esta seção descreve como adicionar um componente Declarativo do Beagle a uma
   tela nativa
+=======
+weight: 233
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Pré-requisitos:
 
 ## Passo 1: Criar a tela nativa
@@ -247,3 +254,6 @@ private func setupView() {
 
 
 E pronto. Basta inicializar a sua aplicação e a tela declarativa será renderizada nativamente.
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

@@ -1,13 +1,20 @@
 ---
 title: Beagle Activity customizada
+<<<<<<< HEAD
 weight: 106
 description: >-
   Nesta seção, você encontra de como usar o BeagleActivity para customizar sua
   server-driven activity.
+=======
+weight: 115
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Introdução
 
 O Beagle fornece uma `Activity` default para gerenciar as `Activities` geradas via server-driven. Porém você pode criar uma ou mais`Activities` que herdem de `BeagleActivity` com `@BeagleComponent` personalizadas de acordo com os fluxos server-driven da sua aplicação.  Sua estrutura funciona  parecida com o Android Activity. 
@@ -130,3 +137,6 @@ override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {
 É possível registrar quantas activities você precisar, porém você deve defini-las usando a anotação`@RegisterController(id = "ACTIVITY_IDENTIFIER")`.  
 Esse id é o que o BFF irá usar pra identificar qual activity usar.
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

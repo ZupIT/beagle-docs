@@ -1,5 +1,6 @@
 ---
 title: Benchmark Beagle Movies
+<<<<<<< HEAD
 weight: 223
 description: >-
   Nesta seção, você irá conhecer mais sobre o Beagle Movies, aplicativo
@@ -61,3 +62,13 @@ Veja a diferença de performance em telas nativas e server-driven considerando o
 | **Resultado do teste** | **8,21 segundos** | **6,39 segundos** |
 
 ![](/docs-beagle/comparativo-ios-v1-1-.gif)
+=======
+weight: 240
+description: >-
+  This a example for a description
+---
+
+---
+
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

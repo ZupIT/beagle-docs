@@ -1,13 +1,20 @@
 ---
 title: Exibindo uma tela
+<<<<<<< HEAD
 weight: 210
 description: >-
   Nesta seção, você encontra um exemplo prático de como exibir uma tela
   Server-Driven
+=======
+weight: 226
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## A partir de uma URL
 
 Cada plataforma tem sua forma própria para exibir uma tela server-driven no frontend usando o Beagle. Abaixo, listamos exemplos para cada uma delas.
@@ -215,3 +222,6 @@ Feito isso, **basta apresentá-la** onde preferir. Neste caso, você deve seguir
 ```swift
 present(beagleViewController, animated: true, completion: nil)
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

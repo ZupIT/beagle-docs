@@ -1,11 +1,18 @@
 ---
 title: Position
+<<<<<<< HEAD
 weight: 74
 description: 'Nesta seção, você encontra mais informações sobre a propriedade Position.'
+=======
+weight: 77
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Position
 
 Esta propriedade determina a posição de um assume em tela e os seus valores `top, right, bottom, left` se comportam de acordo com o [**Position Type**](positiontype.md) deste elemento. 
@@ -461,3 +468,6 @@ private fun screen() :Widget{
 {{% alert color="info" %}}
 Para saber mais sobre Position, acesse a [**documentação do Yoga Layout**](https://yogalayout.com/docs/margins-paddings-borders).
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

@@ -1,11 +1,18 @@
 ---
 title: Animações de navegação
+<<<<<<< HEAD
 weight: 131
 description: 'Nesta seção, você encontra informações de animação da navegação entre telas.'
+=======
+weight: 147
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Introdução
 
 No protocolo `BeagleNavigation` temos uma variável `defaultAnimation` que permite que você mude as animações de transição da sua aplicação, e também outra função  que lida com os tipos de ações [**navigate**](../../../api/api-acoes/navigate/) e define os seus comportamentos. 
@@ -57,3 +64,6 @@ dependencies.navigation.defaultAnimation = animation
 {{% alert color="warning" %}}
 Esta configuração se aplica a todas as navegações da sua aplicação.
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

@@ -1,11 +1,18 @@
 ---
 title: Configuração do Robolectric
+<<<<<<< HEAD
 weight: 225
 description: Configuração Robolectric para testes unitários de Android
+=======
+weight: 242
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## O que é?
 
 O Roboletric é um **framework para testes unitários** no Android. Uma de suas funções é simular informações  sobre o contexto do Android durante a realização desses testes. 
@@ -33,3 +40,6 @@ fun teardown() {
     BeagleSdk.deinitForTest()
 }
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

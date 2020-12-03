@@ -1,13 +1,20 @@
 ---
 title: Dependências do Beagle
+<<<<<<< HEAD
 weight: 143
 description: >-
   Nesta seção, você encontra informações sobre as dependências do Beagle e suas
   propriedades para iOS.
+=======
+weight: 159
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Introdução
 
 A sua aplicação pode mudar o comportamento default do Beagle, a partir da customização de propriedades da instância do `Beagle.dependencies`. 
@@ -261,3 +268,6 @@ O logger é uma variável do tipo BeagleLoggerType que organiza os logs da aplic
 {{% alert color="info" %}}
 É possível criar um logger customizado, o qual possuí categorias especificas da aplicação.
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

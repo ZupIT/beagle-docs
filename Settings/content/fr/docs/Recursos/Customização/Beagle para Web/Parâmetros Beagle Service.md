@@ -1,11 +1,18 @@
 ---
 title: Parâmetros Beagle Service
+<<<<<<< HEAD
 weight: 166
 description: Aprenda aqui quais são os parâmetros do Beagle Service
+=======
+weight: 182
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Beagle Service
 
 Para usar a biblioteca Beagle se faz necessária a criação de um Beagle Service com as configurações de onde e como buscar as telas server driven. 
@@ -32,3 +39,6 @@ O objeto de configuração possui as propriedades a seguir:
 | customStorage | Storage | localStorage | Substitui o localStorage padrão dos browsers |
 | useBeagleHeaders | boolean | true | Usar ou não [headers específicos do Beagle](headers-padroes.md) ao fazer as requisições de telas para o servidor |
 | navigationControllers | Map&lt;string, NavigationController&gt; |  | Permite adicionar opções de controle de reposta visual, como mostrar ou não itens de carregamento e componentes de erro |
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

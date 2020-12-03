@@ -1,13 +1,20 @@
 ---
 title: Widgets customizados
+<<<<<<< HEAD
 weight: 147
 description: >-
   Nesta seção, você encontra um exemplo de com criar um componente e  um widget
   customizado
+=======
+weight: 163
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Introdução
 
 O Beagle já possui alguns widgets básicos que podem ser usados para alterar a sua aplicação UI através do backend. No entanto, você pode adicionar novos componentes para fazer as views da sua aplicação fiquem "visíveis" ao Beagle e que possam também ser usadas no backend. 
@@ -61,3 +68,6 @@ let beagleScreenViewController = Beagle.screen(
 ```
 
 Se você usar componentes mais complexos que estejam no  `UIViews` ou outros componentes não mencionados, o processo seria parecido, você apenas precisa providenciar um tipo de `ServerDrivenComponent` ou `Widget`.
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

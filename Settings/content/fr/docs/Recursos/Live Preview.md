@@ -1,13 +1,20 @@
 ---
 title: Live Preview
+<<<<<<< HEAD
 weight: 199
 description: >-
   Nesta seção, você encontra informações sobre a funcionalidade do Live Preview
   e como configura-lo
+=======
+weight: 213
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## **Introdução** 
 
 O Live Preview é um recurso de visualização que auxilia no desenvolvimento de `layouts`.  Ele permite que as telas em desenvolvimento sejam renderizadas sem a necessidade de subir seu servidor backend para as alterações de _layout_ feitas, reduzindo, assim, o tempo de desenvolvimento de uma tela. 
@@ -283,3 +290,6 @@ fun unsupportedFunction(thing: Any) = Text(":(")
 @BeaglePreview
 fun supportedFunction() = Text(":)")
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

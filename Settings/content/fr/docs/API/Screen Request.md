@@ -1,11 +1,18 @@
 ---
 title: Screen Request
+<<<<<<< HEAD
 weight: 358
 description: Descrição da classe Screen Request e seus atributos.
+=======
+weight: 374
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## O que é?
 
 A **`Screen Request`** é uma classe interna do Beagle utilizada para solicitar qual tela você deseja exibir. Esta classe é utilizada quando se deseja chamar uma tela Server-Driven **a partir de uma activity ou fragment nativo no Android**. 
@@ -45,3 +52,6 @@ startActivity(
     )
 )
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

@@ -1,13 +1,20 @@
 ---
 title: Como fazer comunicação entre componentes
+<<<<<<< HEAD
 weight: 206
 description: >-
   Nesta seção, você encontra o passo a passo para configurar a comunicação entre
   componentes e o contexto
+=======
+weight: 220
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 A **comunicação entre componentes** é uma forma de compartilhar informações com o uso de Observables que, de modo geral, emitem notificações sempre que uma mudança acontece com eles. 
 
 Abaixo, você verá como fazer a configuração dessa comunicação usando o [**Contexto, um componente do Beagle.** ](../api/contexto.md)
@@ -227,3 +234,6 @@ E agora a tela está pronta! Foi configurado um exemplo de contexto e demonstrad
 No final deste exemplo a sua tela deve estar assim:
 
 ![](/docs-beagle/screenshot_1594752619.png)
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

@@ -1,11 +1,18 @@
 ---
 title: Cache
+<<<<<<< HEAD
 weight: 49
 description: Como o Beagle armazena elementos em cache entre o backend (BFF) e o frontend
+=======
+weight: 51
+description: >-
+  This a example for a description!
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 Atualmente, existem **duas camadas de cache** no Beagle: 
 
 * Uma camada volátil
@@ -53,3 +60,6 @@ Quando o BFF responde com o `status 304`, o aplicativo carrega do elemento em ca
 👉 Veja como fazer as [**configurações de cache**](configurando-o-cache.md#configurando-e-customizando-o-cache) de acordo com cada plataforma \(Android, iOS, Web e Backend\). 
 
 👉Confira o [**funcionamento do cache**](configurando-o-cache.md#como-funciona-o-cache) de acordo com seus tipos \(confiável e não confiável\)
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

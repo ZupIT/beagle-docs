@@ -1,13 +1,20 @@
 ---
 title: Design System
+<<<<<<< HEAD
 weight: 116
 description: >-
   Nesta seção, você encontra a descrição da classe Design System e detalhes dos
   métodos que a  implementa.
+=======
+weight: 125
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Introdução
 
 Você pode registrar estilos como fontes, cor, tamanho da fonte e componentes customizados com design system, que foi adicionado ao Beagle 1.0.0
@@ -104,3 +111,6 @@ Como um padrão Android, os estilos podem ser definidos no arquivo `style` e ref
 
 </resources>
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

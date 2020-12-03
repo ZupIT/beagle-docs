@@ -1,13 +1,20 @@
 ---
 title: Builders para Kotlin Dsl
+<<<<<<< HEAD
 weight: 188
 description: >-
   Nesta seção, você encontra como utilizar os builders disponibilizados pelo
   Beagle com o Kotlin.
+=======
+weight: 202
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 O Beagle fornece duas maneiras para definir seus componentes utilizando builders. 
 
 1. Builder padrão
@@ -186,3 +193,6 @@ ScreenComponentBuilder()
             )
     ).build()
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

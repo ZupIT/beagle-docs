@@ -1,11 +1,18 @@
 ---
 title: Form
+<<<<<<< HEAD
 weight: 337
 description: Você encontra aqui a descrição do Form e seus atributos.
+=======
+weight: 355
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 {{% alert color="warning" %}}
 Esse componente foi **depreciado**! É recomendado usar o [**Simple Form**](simple-form-web.md).
 {{% /alert %}}
@@ -62,3 +69,6 @@ A sua estrutura é representada como mostrado abaixo:
     </tr>
   </tbody>
 </table>
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

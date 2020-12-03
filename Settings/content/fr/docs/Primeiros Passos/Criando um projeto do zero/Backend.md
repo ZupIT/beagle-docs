@@ -1,13 +1,20 @@
 ---
 title: Backend
+<<<<<<< HEAD
 weight: 45
 description: >-
   Nesta seção, você encontra informações para iniciar um projeto de Backend com
   Beagle.
+=======
+weight: 48
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Iniciando um projeto Backend
 
 Nesse tutorial será implementado o Backend com o Beagle para que ele possa responder a requisições de sua aplicação server-driven, seja ela em Android, iOS ou WEB.
@@ -253,3 +260,6 @@ Para saber mais sobre como configurar o seu ambiente frontend, veja mais em:
 👉Tutorial do Beagle para [**iOS**](../using-beagle/ios.md).
 
 👉Tutorial do Beagle para  [**Web**](case-web.md).
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

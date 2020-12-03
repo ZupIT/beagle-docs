@@ -1,11 +1,18 @@
 ---
 title: Sourcery
+<<<<<<< HEAD
 weight: 149
 description: 'Nesta seção, você encontra informações sobre o uso e a instalação do Sourcery'
+=======
+weight: 165
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## O que é o Sourcery?
 
 O [**Sourcery**](https://github.com/krzysztofzablocki/Sourcery) é uma ferramenta de geração de código que auxilia na criação de **código boilerplate**, ou seja, aqueles trechos de código incluídos em mais locais com pouca ou sem alteração.
@@ -155,3 +162,6 @@ Alguns protocolos \(protocols\) já estão no Beagle. Eles estão localizados em
 | AutoDecodable | Implementa [**decodable**](https://developer.apple.com/documentation/swift/decodable) customizável, de acordo com os padrões do Beagle. Funciona apenas para structs |
 | AutoInitiable | Implementa init customizável, de acordo com os padrões do Beagle |
 | AutoInitiableAndDecodable | Combinação dos protocolos AutoInitiable and AutoDecodable |
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

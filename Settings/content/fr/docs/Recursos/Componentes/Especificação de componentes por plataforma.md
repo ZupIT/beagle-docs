@@ -1,13 +1,20 @@
 ---
 title: Especificação de componentes por plataforma
+<<<<<<< HEAD
 weight: 95
 description: >-
   Nesta seção, você encontra mais sobre como filtrar os elementos que são
   enviados e para qual plataforma.
+=======
+weight: 98
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 Alguns elementos fornecidos pelo Beagle podem ser mais direcionados à uma plataforma e, talvez, não fazer tanto sentido para outra. Por exemplo, o uso do [**ScrollView**](../../api/componentes/layout/scrollview.md) funciona melhor na plataforma Mobile, mas não é necessário na Web. 
 
 Isso acontece porque o Beagle possui  a funcionalidade de **Especificação de Plataforma**, que te permite ter controle de quais elementos são enviados pelo BFF e quais plataformas serão usadas. 
@@ -72,3 +79,6 @@ Se quiser saber como configurar esta funcionalidade, veja na seção de [**custo
 {{% alert color="info" %}}
 Caso utilize um dos Beagle starters, não é necessário realizar a configuração da funcionalidade manualmente, pois ela já vem pré-configurada.
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

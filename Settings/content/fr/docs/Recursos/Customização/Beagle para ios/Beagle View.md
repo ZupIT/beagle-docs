@@ -1,13 +1,20 @@
 ---
 title: Beagle View
+<<<<<<< HEAD
 weight: 133
 description: >-
   Nesta seção, você encontra informações do Beagle View para iOS e de como
   usá-lo.
+=======
+weight: 149
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Introdução
 
 Beagle View é uma `UIView` que deve ser usada quando é necessário adicionar um componente do Beagle em uma tela nativa que possui outras `views` e usam `AutoLayout`.
@@ -115,3 +122,6 @@ class CustomViewController: UIViewController {
 ```
 
 Note que no `onPress` do botão é chamado um método `AddChildren` que adiciona o layout nativo, ou seja, toda vez que o botão for clicado é adicionado uma `view` com o layout nativo.
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

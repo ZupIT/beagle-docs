@@ -1,13 +1,20 @@
 ---
 title: Configuração do Proguard
+<<<<<<< HEAD
 weight: 112
 description: >-
   Nesta seção, você encontra a descrição da configuração do ProGuard para o
   Beagle.
+=======
+weight: 121
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Introdução
 
 Quando um método de ofuscação é usado, é necessário que algumas regras sejam implementadas para garantir que os nomes e os IDs usados  internamente pelo Beagle, não sejam ofuscados ou minificados. 
@@ -65,3 +72,6 @@ buildTypes {
     }
 }
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

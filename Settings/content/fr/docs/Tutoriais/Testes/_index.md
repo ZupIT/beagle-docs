@@ -1,11 +1,18 @@
 ---
 title: Testes
+<<<<<<< HEAD
 weight: 221
 description: 'Nesta seção, você encontra mais detalhes de testes em aplicações com o Beagle.'
+=======
+weight: 237
+description: >-
+  This a example for a description!
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Testes Unitários
 
 Testes que têm por objetivo **medir a funcionalidade do código** em sua menor fração. É possível realizar testes unitários no Beagle seguindo o mesmo processo utilizado para caso de aplicações que não utilizem nossa ferramenta, já que o Beagle não interfere na realização dos testes. 
@@ -97,3 +104,6 @@ public BeagleTest typeIntoTextField(int position1, int position2, String text) {
 {{% alert color="success" %}}
 Pronto, o seu teste instrumento foi realizado!
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

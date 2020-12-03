@@ -1,13 +1,20 @@
 ---
 title: Backend
+<<<<<<< HEAD
 weight: 28
 description: >-
   Nesta seção, você encontra o passo a passo para fazer as configurações para o
   uso do Beagle em seu projeto Backend.
+=======
+weight: 31
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Configurações de uso 
 
 Quando você finalizar a [**instalação do Beagle**](../installing-beagle/beagle-backend.md), seu BFF estará com a configuração padrão de uso.
@@ -334,3 +341,6 @@ Agora que seu BFF está executando, para ver o JSON resultante, insira a URL htt
   "labelOk" : "Close"
 }
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

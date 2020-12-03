@@ -1,11 +1,18 @@
 ---
 title: Image
+<<<<<<< HEAD
 weight: 300
 description: Descrição do componente Image e seus atributos
+=======
+weight: 318
+description: >-
+  This a example for a description!
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## O que é?
 
 O widget de Imagem define uma imagem nativa usando informações server-driven recebidas por meio do Beagle.  
@@ -52,3 +59,6 @@ Image(
 
 
 ### 👉 [Teste esse exemplo no Web Playground](https://beagle-playground.netlify.app/#/cloud/447a8f52ebf84b779bbabc6cdb62b2e9/image.json)
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

@@ -1,13 +1,20 @@
 ---
 title: Como gerar uma versão do Beagle local ou remota
+<<<<<<< HEAD
 weight: 208
 description: >-
   Nesta seção, você encontra como gerar versões locais do Beagle ou versões
   remotas para o seu repositório quando necessário.
+=======
+weight: 222
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 Siga as orientações de acordo com o sistema operacional que estiver usando:
 
 
@@ -161,3 +168,6 @@ git "file:////Users/beagle" "master"
 {{% alert color="warning" %}}
 Importante que você adicione o caminho completo do diretório com a sua versão do Beagle para que essa chamada funcione corretamente. 
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

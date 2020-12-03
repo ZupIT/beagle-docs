@@ -1,10 +1,17 @@
 ---
 title: Renderização
+<<<<<<< HEAD
 weight: 174
+=======
+weight: 191
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 {{% alert color="info" %}}
 As features descritas aqui, estão disponíveis nas versões a partir de 1.2.0. 
 {{% /alert %}}
@@ -799,3 +806,6 @@ O ViewContentManager possui as seguintes propriedades e funções: have the foll
 ## Atualizando a view com o resultado da requisição
 
 Caso você precisa atualizar a view atual com a árvore que vem do backend, você deve usar o [**método fetch do `BeagleView`**](https://github.com/ZupIT/beagle-web-core/blob/master/docs/beagle-view.md#Fetching-a-view). Isso irá internamente usar todo o mecanismo de cache do Beagle e também a parte de renderização.
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

@@ -1,11 +1,18 @@
 ---
 title: Acessibilidade
+<<<<<<< HEAD
 weight: 239
 description: 'Nesta seção, você encontra uma descrição sobre a API de Acessibilidade'
+=======
+weight: 255
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ### O que é?
 
 Por enquanto, existem dois atributos comuns de acessibilidade entre todas as plataformas que o Beagle suporta.
@@ -59,3 +66,6 @@ Container(
 
 
 ### 👉 [Teste esse exemplo no Web Playground](https://beagle-playground.netlify.app/#/cloud/984d1316f43146f9a1341c478783d536/accessibility.json)
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

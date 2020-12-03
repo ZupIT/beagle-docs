@@ -1,11 +1,18 @@
 ---
 title: Widget
+<<<<<<< HEAD
 weight: 360
 description: Descrição dos componentes do Widget e seus atributos
+=======
+weight: 376
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## O que é?
 
 O Widget é uma classe abstrata que permite que um componente visual seja referenciado no Beagle. Quando um componente visual se estende do `widget`, ele herda 3 atributos que habilitam algum atributos e funcionalidades nos elementos visualizados. 
@@ -285,3 +292,6 @@ Container(
 ### 👇 Teste esse componente no Web Playground
 
 {{< youtube false >}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

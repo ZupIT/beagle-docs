@@ -1,13 +1,20 @@
 ---
 title: Backend
+<<<<<<< HEAD
 weight: 12
 description: >-
   Nesta seção, você encontra o passo a passo da configuração do Beagle no
   backend.
+=======
+weight: 15
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 {{% alert color="danger" %}}
 Antes de iniciar a instalação, é importante você saber que as etapas abaixo são para linguagens da JVM. 
 
@@ -203,3 +210,6 @@ Para continuar a configurar o Beagle:
 👉Vá para as [**configurações iniciais**](../using-beagle/backend.md) para habilitar uso do Beagle no seu projeto Backend
 
 👉 Se quiser ir direto para prática, acesse nosso [**tutorial para criar um projeto do zero**](../new-project/exemplo-de-projeto-backend-com-beagle.md)
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

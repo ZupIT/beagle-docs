@@ -1,13 +1,20 @@
 ---
 title: Analytics
+<<<<<<< HEAD
 weight: 292
 description: >-
   Descrição de como preparar a aplicação para mapear informações para o
   analytics
+=======
+weight: 308
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Analytics
 
 Como a maioria dos projetos usam alguma forma de marcação/tags para agrupar dados sobre o comportamento do usuário, o Beagle oferece uma ajuda para você conseguir essas informações.
@@ -211,3 +218,6 @@ Screen(
     )
 )
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

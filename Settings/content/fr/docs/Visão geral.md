@@ -1,13 +1,21 @@
 ---
+<<<<<<< HEAD
 title: Visão geral
 weight: 1
 description: >-
   Nesta seção, você encontra informações iniciais sobre o Beagle antes de se
   aprofundar no produto.
+=======
+title: Visão Geraaaal! ;D
+weight: 2
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## O que é o Beagle?
 
 O Beagle é um **framework open source** de desenvolvimento cross-platform pautado no paradigma de implementação de **Server-Driven UI.** 
@@ -74,3 +82,6 @@ Sendo assim, as principais vantagens que o Beagle traz para seu projeto são:
 * **Menos duplicação de códigos**, pois todo o consumo das APIs, fluxos e regras estarão em um único lugar, o BFF.
 
 Outro ganho fundamental que o Beagle traz, é a possibilidade de **reduzir o tempo de feedback do usuário**, já que as mudanças são rapidamente testadas e validadas.
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

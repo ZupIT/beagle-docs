@@ -1,13 +1,20 @@
 ---
 title: Componente com contexto
+<<<<<<< HEAD
 weight: 91
 description: >-
   Nessa seção, você encontra a descrição do ContextComponent e mais detalhes de
   como ele funciona.
+=======
+weight: 94
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 O `ContextComponent` é uma interface precisa ser implementada em componentes que usam o [**Contexto**](../../api/contexto.md#o-que-e), porque é onde está o atributo `context`.
 
 ## Componentes do Beagle com contexto:
@@ -56,3 +63,6 @@ public struct CustomComponent: RawComponent, HasContext {
 {{% alert color="warning" %}}
 Se você quiser criar componentes customizados no iOS, é **necessário registrá-lo**! Veja como registrar [**aqui**](../customizacao/beagle-para-ios/custom-widgets.md#passo-2-registrar-o-widget).
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

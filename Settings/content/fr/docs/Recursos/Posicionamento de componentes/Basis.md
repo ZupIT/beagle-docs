@@ -1,13 +1,20 @@
 ---
 title: Basis
+<<<<<<< HEAD
 weight: 78
 description: >-
   Nesta seção, você encontra mais informações sobre a propriedade Basis
   utilizada para posicionar elementos em tela.
+=======
+weight: 81
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Basis
 
 Esta propriedade define o **tamanho padrão de um item ao longo do eixo principal**. É possível que ele mude de acordo com o elemento, o que significa dizer que: 
@@ -191,3 +198,6 @@ private fun screen() :Widget{
 {{% alert color="info" %}}
 Para saber mais sobre Basis, acesse a [**documentação do Yoga Layout**](https://yogalayout.com/docs/flex).
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

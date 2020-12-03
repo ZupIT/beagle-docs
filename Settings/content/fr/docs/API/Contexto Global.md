@@ -1,11 +1,18 @@
 ---
 title: Contexto Global
+<<<<<<< HEAD
 weight: 347
 description: 'Nesta seção, você encontra descrição completa de contexto global.'
+=======
+weight: 363
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## O que é? 
 
 O Contexto Global é uma variável que pode assumir como valor qualquer tipo de variável, como um mapa definindo um conjunto de pares chave/valor ou objetos JSONs complexos que definem árvores de objetos. 
@@ -339,3 +346,6 @@ A propriedade representada pelo `path` "myValue1" será completamente removida c
     "myValue2":"My Context Value2"
 }
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

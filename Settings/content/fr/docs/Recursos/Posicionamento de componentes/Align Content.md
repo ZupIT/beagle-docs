@@ -1,13 +1,20 @@
 ---
 title: Align Content
+<<<<<<< HEAD
 weight: 62
 description: >-
   Nesta seção, você encontra mais informações sobre a propriedade Align Content
   utilizada para posicionar elementos em tela.
+=======
+weight: 65
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Align Content
 
 Essa propriedade define como as linhas são distribuídas ao longo do eixo transversal \(vertical\) do container e tem os seguintes atributos: **`flex-start, flex-end, center, space-between, space-around e stretch.`**
@@ -489,3 +496,6 @@ private func screen() -> Screen {
 {{% alert color="info" %}}
 Para saber o Align Content, acesse a [**documentação no Yoga Layout.**](https://yogalayout.com/docs/align-content/)
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

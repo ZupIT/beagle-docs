@@ -1,13 +1,20 @@
 ---
 title: Android
+<<<<<<< HEAD
 weight: 6
 description: >-
   Nesta seção, você encontra o passo a passo da configuração do Beagle no
   Android.
+=======
+weight: 9
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Requisitos
 
 Antes de configurar o Beagle para o seu sistema Android, é importante que você confirme as versões dos programas que estão instalados na sua máquina. Para a ferramenta funcionar, é necessário ter as seguintes versões: ‌
@@ -87,3 +94,6 @@ Para continuar a configurar o Beagle:
 👉Vá para as [**configurações iniciais** ](../using-beagle/android.md)para habilitar uso do Beagle no seu projeto Android
 
 👉 Se quiser ir direto para prática, acesse nosso [**tutorial para criar um projeto do zero**](../new-project/case-android/)
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

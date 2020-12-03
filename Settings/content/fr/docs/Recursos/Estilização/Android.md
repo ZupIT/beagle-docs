@@ -1,13 +1,20 @@
 ---
 title: Android
+<<<<<<< HEAD
 weight: 192
 description: >-
   Nesta seção, você encontra tudo sobre como usar a estilização de componentes
   para projetos Android.
+=======
+weight: 207
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Introdução 
 
 Dentro da biblioteca do Beagle, existe a classe `DesignSystem` que pode ser usada para personalizar os componentes utilizados na sua aplicação.
@@ -140,3 +147,6 @@ Para gerenciar as abas selecionadas, é recomendado o uso de um seletor para o a
     <item android:color="@android:color/black" />
 </selector>
 ```
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

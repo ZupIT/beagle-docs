@@ -1,13 +1,20 @@
 ---
 title: Posicionamento de componentes
+<<<<<<< HEAD
 weight: 54
 description: >-
   Nesta seção, você encontra mais informações sobre o posicionamento dos
   componentes na tela de um dispositivo usando Beagle.
+=======
+weight: 56
+description: >-
+  This a example for a description!
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 {{% alert color="warning" %}}
 #### Disponibilidade: Beagle 1.0+
 {{% /alert %}}
@@ -167,3 +174,6 @@ O `UnitType.AUTO` pode ser usado nas frentes iOS, Android e Web de acordo com a 
     </tr>
   </tbody>
 </table>
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

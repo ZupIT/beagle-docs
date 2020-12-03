@@ -1,10 +1,17 @@
 ---
 title: Beagle view
+<<<<<<< HEAD
 weight: 172
+=======
+weight: 189
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Acessar e controlar o BeagleView
 
 {{% alert color="info" %}}
@@ -210,3 +217,6 @@ Você encontra abaixo todos os métodos do Beagle View e sua descrição:
     </tr>
   </tbody>
 </table>
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

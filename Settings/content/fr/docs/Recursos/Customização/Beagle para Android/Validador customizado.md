@@ -1,13 +1,20 @@
 ---
 title: Validador customizado
+<<<<<<< HEAD
 weight: 122
 description: >-
   Nesta seção, você encontra a descrição de como validar um formulário. Este
   componente foi depreciado
+=======
+weight: 131
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 {{% alert color="danger" %}}
 Este componente foi descontinuado na versão 1.1.0 e será removido em uma versão futura. Use [SimpleForm](../../../api/componentes/form/simple-form-web.md)  em seu lugar
 {{% /alert %}}
@@ -90,3 +97,6 @@ class SampleTextField(private val placeholder: String) : InputWidget() {
 {{% alert color="info" %}}
 Se você deseja **validar** a informação **conforme o usuário a digita**, a sugestão é que você chame a função`notifyChanges()` dentro da função `doOnTextChange{}`.
 {{% /alert %}}
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

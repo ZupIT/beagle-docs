@@ -1,11 +1,18 @@
 ---
 title: Parâmetros Remote View
+<<<<<<< HEAD
 weight: 164
 description: Aprenda quais os parâmetros do Remote View e como alterá-los
+=======
+weight: 180
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Beagle Remote View
 
 A biblioteca do Beagle fornece um componente auxiliar para renderizar as telas server-driven, o remote view:
@@ -55,3 +62,6 @@ const params: LoadParams = {
 | strategy | string&lt;[**Estratégia de cache**](estrategias-de-cache.md#tipos-de-estrategias)&gt; | Estratégia de cache adotada na requisição. |
 | loadingComponent | string | Componente customizado para loading. |
 | errorComponent | string | Componente customizado para error. |
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

@@ -1,13 +1,20 @@
 ---
 title: Urls
+<<<<<<< HEAD
 weight: 203
 description: >-
   Nesta seção, você entende como o Beagle lida com URLs entre backend e frontend
   (BFF).
+=======
+weight: 217
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ## Introdução
 
 A maior parte dos elementos disponibilizados pelo Beagle usa um campo para indicar o caminho para definir as URLs. 
@@ -40,3 +47,6 @@ Sugerimos que você sempre comece um caminho relativo com uma barra invertida \(
 ## Encode type
 
 O Beagle utiliza o padrão Encoding type RFC 3986 ao tratar URLs.
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625

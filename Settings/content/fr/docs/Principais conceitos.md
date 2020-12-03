@@ -1,13 +1,20 @@
 ---
 title: Principais conceitos
+<<<<<<< HEAD
 weight: 2
 description: >-
   Nesta seção, você encontra definições para os principais termos e expressões
   utilizados na documentação e no Beagle.
+=======
+weight: 3
+description: >-
+  This a example for a description
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
 ---
 
 ---
 
+<<<<<<< HEAD
 ### **Backend For Frontend**
 
 Conhecido também como **BFF**, é o servidor que possibilita enviar objetos JSON para serem renderizados e, consequentemente, visualizados no frontend. Este componente permite que telas e regras de negócio sejam escritas uma única vez para, em seguida, serem renderizadas de forma nativa em cada plataforma onde o Beagle está presente. O consumo das APIs que proveem os dados para a aplicação antes executado pelos fronts, agora é de responsabilidade do BFF.
@@ -29,3 +36,6 @@ Ferramenta que cuida da **renderização dos elementos visuais** nativos de uma 
 ### **Server-Driven UI**
 
 É o conceito no qual um backend específico \(BFF\) **consome os dados da aplicação** e os fornece ao frontend junto com suas respectivas **estruturas visuais** através de um ou mais JSONs, ou seja, ele não só informa o conteúdo da tela, mas também sua estrutura, além do fluxo dessas páginas se houver.
+=======
+undefined
+>>>>>>> c5badf6233a50a40ff4638a92338d6a7f613e625
