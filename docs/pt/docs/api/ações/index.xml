@@ -82,7 +82,12 @@
 &lt;/table&gt;
 &lt;h2 id=&#34;como-usar&#34;&gt;Como usar?&lt;/h2&gt;
 &lt;p&gt;Veja abaixo um exemplo de um botão que ao clicado adiciona uma view de texto:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:container&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t116&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t116-0&#34; role=&#34;tab&#34; aria-controls=&#34;t116-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t116-1&#34; role=&#34;tab&#34; aria-controls=&#34;t116-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t116&#34;&gt;&lt;div id=&#34;t116-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t116-0&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:container&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
 &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;children&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[{&lt;/span&gt;
         &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:button&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
         &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;AddChildren&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -100,7 +105,10 @@
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;],&lt;/span&gt;
 &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;MyContainerID&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Container(
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t116-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t116-1&#34;&gt;
+
+&lt;p&gt;&lt;pre&gt;&lt;code&gt;Container(
     children = listOf(
         Button(&amp;quot;AddChildren&amp;quot;, onPress = listOf(
             AddChildrenAction(
@@ -113,7 +121,8 @@
         ))
     )
 ).apply { id = &amp;quot;MyContainerID&amp;quot; }
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
       </description>
     </item>
     
@@ -147,7 +156,7 @@
       &lt;td style=&#34;text-align:left&#34;&gt;title&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;
         &lt;p&gt;String ou&lt;/p&gt;
-        &lt;p&gt;&lt;a href=&#34;../contexto.md#bindings&#34;&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/a&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&#34;../contexto/#bindings&#34;&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/a&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/p&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;T&amp;#xED;tulo da caixa de alerta.&lt;/td&gt;
@@ -156,7 +165,7 @@
       &lt;td style=&#34;text-align:left&#34;&gt;message&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;
         &lt;p&gt;String ou&lt;/p&gt;
-        &lt;p&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;a href=&#34;../contexto.md#bindings&#34;&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/a&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/p&gt;
+        &lt;p&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;a href=&#34;../contexto/#bindings&#34;&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/a&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/p&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&amp;#x2713;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;Mensagem da caixa de alerta.&lt;/td&gt;
@@ -178,7 +187,12 @@
 &lt;/table&gt;
 &lt;h2 id=&#34;como-usar&#34;&gt;Como usar?&lt;/h2&gt;
 &lt;p&gt;Abaixo segue um exemplo de um botão que ao clicado mostra um Alert:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t117&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t117-0&#34; role=&#34;tab&#34; aria-controls=&#34;t117-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t117-1&#34; role=&#34;tab&#34; aria-controls=&#34;t117-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t117&#34;&gt;&lt;div id=&#34;t117-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t117-0&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:container&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
     &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;children&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
       &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -195,7 +209,10 @@
           &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
       &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Container&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t117-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t117-1&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Container&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;children&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;listOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
         &lt;span style=&#34;color:#000&#34;&gt;Button&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
             &lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Alert Example&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -209,7 +226,8 @@
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;-teste-essa-ação-no-web-playgroundhttpsbeagle-playgroundnetlifyappdemodefault-componentsbuttonjson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/button.json&#34;&gt;Teste essa ação no Web Playground&lt;/a&gt;​&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&#34;-teste-essa-ação-no-web-playgroundhttpsbeagle-playgroundnetlifyappdemodefault-componentsbuttonjson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/button.json&#34;&gt;Teste essa ação no Web Playground&lt;/a&gt;​&lt;/h3&gt;
 
       </description>
     </item>
@@ -238,7 +256,7 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;condition&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Boolean ou &lt;a href=&#34;../contexto.md#binding&#34;&gt;&lt;strong&gt;Binding&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Boolean ou &lt;a href=&#34;../contexto/#binding&#34;&gt;&lt;strong&gt;Binding&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;✓&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;condição para definir qual ação será executada.&lt;/td&gt;
 &lt;/tr&gt;
@@ -258,7 +276,12 @@
 &lt;/table&gt;
 &lt;h2 id=&#34;como-usar&#34;&gt;Como usar?&lt;/h2&gt;
 &lt;p&gt;O exemplo abaixo é um &lt;code&gt;Container&lt;/code&gt; com um contexto que possui o valor 18  e no evento &lt;code&gt;onPress&lt;/code&gt; do botão foi definido uma ação do tipo &lt;code&gt;Condition&lt;/code&gt; que verifica se o valor é igual a 21 e mostra um &lt;code&gt;Alert&lt;/code&gt; dependendo do valor do contexto.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;{
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t118&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t118-0&#34; role=&#34;tab&#34; aria-controls=&#34;t118-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t118-1&#34; role=&#34;tab&#34; aria-controls=&#34;t118-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t118&#34;&gt;&lt;div id=&#34;t118-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t118-0&#34;&gt;
+
+&lt;p&gt;&lt;pre&gt;&lt;code&gt;{
    &amp;quot;_beagleComponent_&amp;quot;:&amp;quot;beagle:container&amp;quot;,
    &amp;quot;children&amp;quot;:[
       {
@@ -291,7 +314,10 @@
       &amp;quot;value&amp;quot;:18
    }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;Container(
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &lt;div id=&#34;t118-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t118-1&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;Container(
     context = ContextData(
         id = &amp;#34;age&amp;#34;,
         value = 18
@@ -315,7 +341,8 @@
     )
 )
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
       </description>
     </item>
     
@@ -349,7 +376,7 @@
       &lt;td style=&#34;text-align:left&#34;&gt;title&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;
         &lt;p&gt;String ou&lt;/p&gt;
-        &lt;p&gt;&lt;a href=&#34;../contexto.md#bindings&#34;&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/a&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&#34;../contexto/#bindings&#34;&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/a&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/p&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;T&amp;#xED;tulo da caixa de confirma&amp;#xE7;&amp;#xE3;o&lt;/td&gt;
@@ -358,7 +385,7 @@
       &lt;td style=&#34;text-align:left&#34;&gt;message&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;
         &lt;p&gt;String ou&lt;/p&gt;
-        &lt;p&gt;&lt;a href=&#34;../contexto.md#bindings&#34;&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/a&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&#34;../contexto/#bindings&#34;&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/a&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/p&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&amp;#x2713;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;Mensagem da caixa de confirma&amp;#xE7;&amp;#xE3;o&lt;/td&gt;
@@ -393,7 +420,12 @@
 &lt;/table&gt;
 &lt;h2 id=&#34;como-usar&#34;&gt;Como usar?&lt;/h2&gt;
 &lt;p&gt;Segue abaixo um exemplo com um botão que ao clicado exibe um modal de confirmação:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t119&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t119-0&#34; role=&#34;tab&#34; aria-controls=&#34;t119-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t119-1&#34; role=&#34;tab&#34; aria-controls=&#34;t119-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t119&#34;&gt;&lt;div id=&#34;t119-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t119-0&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:container&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;children&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -413,7 +445,10 @@
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Button&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Confirm Example&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t119-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t119-1&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Button&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Confirm Example&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
        &lt;span style=&#34;color:#000&#34;&gt;onPress&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;listOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
             &lt;span style=&#34;color:#000&#34;&gt;Confirm&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;title&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Confirm Title&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
                     &lt;span style=&#34;color:#000&#34;&gt;message&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Confirm Message&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -428,7 +463,8 @@
                 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
             &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;-teste-essa-ação-no-web-playgroundhttpsbeagle-playgroundnetlifyappcloudfb8268dcdbf24f89a8367cc76dea9d99confirmjson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/cloud/fb8268dcdbf24f89a8367cc76dea9d99/confirm.json&#34;&gt;Teste essa ação no Web Playground&lt;/a&gt;&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&#34;-teste-essa-ação-no-web-playgroundhttpsbeagle-playgroundnetlifyappcloudfb8268dcdbf24f89a8367cc76dea9d99confirmjson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/cloud/fb8268dcdbf24f89a8367cc76dea9d99/confirm.json&#34;&gt;Teste essa ação no Web Playground&lt;/a&gt;&lt;/h3&gt;
 
       </description>
     </item>
@@ -676,7 +712,7 @@ Essa ação foi &lt;strong&gt;depreciada&lt;/strong&gt; junto com o Form!
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;url&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;String ou &lt;a href=&#34;../contexto.md#binding&#34;&gt;&lt;strong&gt;Binding&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;String ou &lt;a href=&#34;../contexto/#binding&#34;&gt;&lt;strong&gt;Binding&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;✓&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;URL do servidor.&lt;/td&gt;
 &lt;/tr&gt;
@@ -688,7 +724,7 @@ Essa ação foi &lt;strong&gt;depreciada&lt;/strong&gt; junto com o Form!
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;headers&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Map &amp;lt;String, String&amp;gt; ou &lt;a href=&#34;../contexto.md#binding&#34;&gt;&lt;strong&gt;Binding&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Map &amp;lt;String, String&amp;gt; ou &lt;a href=&#34;../contexto/#binding&#34;&gt;&lt;strong&gt;Binding&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Itens do header para a requisição.&lt;/td&gt;
 &lt;/tr&gt;
@@ -720,7 +756,12 @@ Essa ação foi &lt;strong&gt;depreciada&lt;/strong&gt; junto com o Form!
 &lt;/table&gt;
 &lt;h2 id=&#34;como-usar&#34;&gt;Como usar?&lt;/h2&gt;
 &lt;p&gt;Segue abaixo um exemplo de botão que faz uma requisição do tipo &lt;code&gt;POST&lt;/code&gt; enviando dados de um usuário:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t136&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t136-0&#34; role=&#34;tab&#34; aria-controls=&#34;t136-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t136-1&#34; role=&#34;tab&#34; aria-controls=&#34;t136-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t136&#34;&gt;&lt;div id=&#34;t136-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t136-0&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:container&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;children&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -766,7 +807,10 @@ Essa ação foi &lt;strong&gt;depreciada&lt;/strong&gt; junto com o Form!
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;Button(
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t136-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t136-1&#34;&gt;
+
+&lt;p&gt;&lt;pre&gt;&lt;code&gt;Button(
     text = &amp;quot;Send a request&amp;quot;,
         styleId = &amp;quot;DesignSystem.MyNativeButtonStyle&amp;quot;,
         onPress = listOf(
@@ -803,7 +847,8 @@ Essa ação foi &lt;strong&gt;depreciada&lt;/strong&gt; junto com o Form!
             )
         )
     )
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;-teste-essa-ação-no-web-playgroundhttpsbeagle-playgroundnetlifyappcloud835cfa6d6811402cb338c9afeb1507cfsendrequestjson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/cloud/835cfa6d6811402cb338c9afeb1507cf/sendRequest.json&#34;&gt;Teste essa ação no Web Playground&lt;/a&gt;&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&#34;-teste-essa-ação-no-web-playgroundhttpsbeagle-playgroundnetlifyappcloud835cfa6d6811402cb338c9afeb1507cfsendrequestjson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/cloud/835cfa6d6811402cb338c9afeb1507cf/sendRequest.json&#34;&gt;Teste essa ação no Web Playground&lt;/a&gt;&lt;/h3&gt;
 
       </description>
     </item>
@@ -855,12 +900,17 @@ Essa ação foi &lt;strong&gt;depreciada&lt;/strong&gt; junto com o Form!
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Conheça mais sobre o &lt;a href=&#34;../contexto.md&#34;&gt;&lt;strong&gt;contexto no Beagle&lt;/strong&gt;&lt;/a&gt;.
+Conheça mais sobre o &lt;a href=&#34;../contexto/&#34;&gt;&lt;strong&gt;contexto no Beagle&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;h2 id=&#34;como-usar&#34;&gt;Como usar?&lt;/h2&gt;
 &lt;p&gt;Abaixo temos um exemplo de um texto que é preenchido por contexto e possui um valor inicial &amp;ldquo;Set Context Example&amp;rdquo; e no evento de clique do botão o valor do contexto é alterado para &amp;ldquo;Context has changed&amp;rdquo;.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t137&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t137-0&#34; role=&#34;tab&#34; aria-controls=&#34;t137-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t137-1&#34; role=&#34;tab&#34; aria-controls=&#34;t137-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t137&#34;&gt;&lt;div id=&#34;t137-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t137-0&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:container&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;context&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:{&lt;/span&gt;
     &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;myContext&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -884,7 +934,10 @@ Conheça mais sobre o &lt;a href=&#34;../contexto.md&#34;&gt;&lt;strong&gt;conte
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Container&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t137-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t137-1&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Container&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;children&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;listOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
         &lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;@{myContext}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
         &lt;span style=&#34;color:#000&#34;&gt;Button&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
@@ -902,7 +955,8 @@ Conheça mais sobre o &lt;a href=&#34;../contexto.md&#34;&gt;&lt;strong&gt;conte
           &lt;span style=&#34;color:#000&#34;&gt;value&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Set Context Example&amp;#34;&lt;/span&gt;
      &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;-teste-essa-ação-no-web-playgroundhttpsbeagle-playgroundnetlifyappcloud701b73771594478795b9c0dc6e088c0bsetcontextjson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/cloud/701b73771594478795b9c0dc6e088c0b/setContext.json&#34;&gt;Teste essa ação no Web Playground&lt;/a&gt;&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&#34;-teste-essa-ação-no-web-playgroundhttpsbeagle-playgroundnetlifyappcloud701b73771594478795b9c0dc6e088c0bsetcontextjson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/cloud/701b73771594478795b9c0dc6e088c0b/setContext.json&#34;&gt;Teste essa ação no Web Playground&lt;/a&gt;&lt;/h3&gt;
 
       </description>
     </item>
@@ -918,9 +972,9 @@ Conheça mais sobre o &lt;a href=&#34;../contexto.md&#34;&gt;&lt;strong&gt;conte
         
         &lt;hr&gt;
 &lt;h2 id=&#34;o-que-é&#34;&gt;O que é?&lt;/h2&gt;
-&lt;p&gt;O SubmitForm é uma ação &lt;strong&gt;exclusiva&lt;/strong&gt; do &lt;a href=&#34;../componentes/form/simple-form-web.md#o-que-e&#34;&gt;&lt;strong&gt;SimpleForm&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;,&lt;/strong&gt; pois deve ser usada em algum evento dentro do formulário, para que o mesmo seja enviado.&lt;/p&gt;
+&lt;p&gt;O SubmitForm é uma ação &lt;strong&gt;exclusiva&lt;/strong&gt; do &lt;a href=&#34;../componentes/formularios/simple-form.md#o-que-e&#34;&gt;&lt;strong&gt;SimpleForm&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;,&lt;/strong&gt; pois deve ser usada em algum evento dentro do formulário, para que o mesmo seja enviado.&lt;/p&gt;
 &lt;h2 id=&#34;como-usar&#34;&gt;Como usar?&lt;/h2&gt;
-&lt;p&gt;Para um exemplo completo junto ao SimpleForm &lt;a href=&#34;../componentes/form/simple-form-web.md#como-usar&#34;&gt;&lt;strong&gt;clique aqui&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Para um exemplo completo junto ao SimpleForm &lt;a href=&#34;../componentes/formularios/simple-form.md#como-usar&#34;&gt;&lt;strong&gt;clique aqui&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
 
       </description>
     </item>

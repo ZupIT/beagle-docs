@@ -27,7 +27,7 @@
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 
-Esse componente foi &lt;strong&gt;depreciado&lt;/strong&gt;! É recomendado usar o &lt;a href=&#34;simple-form-web.md&#34;&gt;&lt;strong&gt;Simple Form&lt;/strong&gt;&lt;/a&gt;.
+Esse componente foi &lt;strong&gt;depreciado&lt;/strong&gt;! É recomendado usar o &lt;a href=&#34;simple-form.md&#34;&gt;&lt;strong&gt;Simple Form&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;p&gt;O componente representa uma maneira de compor entradas do usuário e enviar esses valores ao seu backend.&lt;/p&gt;
@@ -47,7 +47,7 @@ Esse componente foi &lt;strong&gt;depreciado&lt;/strong&gt;! É recomendado usar
         &lt;p&gt;&lt;/p&gt;
         &lt;p&gt;onSubmit&lt;/p&gt;
       &lt;/td&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;List &amp;lt;&lt;a href=&#34;../../api-acoes/&#34;&gt;&lt;b&gt;Action&lt;/b&gt;&lt;/a&gt;&amp;gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;List &amp;lt;&lt;a href=&#34;../../acoes/&#34;&gt;&lt;b&gt;Action&lt;/b&gt;&lt;/a&gt;&amp;gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;Array de a&amp;#xE7;&amp;#xF5;es que esse bot&amp;#xE3;o pode disparar quando o formul&amp;#xE1;rio
         &amp;#xE9; enviado.&lt;/td&gt;
@@ -138,7 +138,7 @@ Esse componente foi &lt;strong&gt;depreciado&lt;/strong&gt;! É recomendado usar
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;onSubmit&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;List &amp;lt;&lt;a href=&#34;../../api-acoes/&#34;&gt;&lt;strong&gt;Action&lt;/strong&gt;&lt;/a&gt;&amp;gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;List &amp;lt;&lt;a href=&#34;../../acoes/&#34;&gt;&lt;strong&gt;Action&lt;/strong&gt;&lt;/a&gt;&amp;gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;✓&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Array de ações que esse botão pode disparar quando um formulário é enviado&lt;/td&gt;
 &lt;/tr&gt;
@@ -172,9 +172,14 @@ Para mais informações sobre esse componente vá até os detalhes do &lt;a href
 &lt;/div&gt;
 
 &lt;h4 id=&#34;onchange&#34;&gt;OnChange&lt;/h4&gt;
-&lt;p&gt;Essa função é parte do componente Text Input e observa as modificações feitas dentro do seu campo, ou seja, sempre que o valor for modificado, algo for digitado, apagado, etc, essa função é chamada e ativa uma &lt;strong&gt;lista&lt;/strong&gt; de outras &lt;a href=&#34;../../api-acoes/&#34;&gt;&lt;strong&gt;ações&lt;/strong&gt;&lt;/a&gt; para acontecer sempre que o valor mudar. É nessa lista que adicionamos uma ação &lt;a href=&#34;../../api-acoes/setcontext.md&#34;&gt;SetContext&lt;/a&gt; para definir o valor do &lt;a href=&#34;../../contexto.md&#34;&gt;Contexto&lt;/a&gt; do formulário e atualizar os valores que são mostrados no campo.&lt;/p&gt;
+&lt;p&gt;Essa função é parte do componente Text Input e observa as modificações feitas dentro do seu campo, ou seja, sempre que o valor for modificado, algo for digitado, apagado, etc, essa função é chamada e ativa uma &lt;strong&gt;lista&lt;/strong&gt; de outras &lt;a href=&#34;../../acoes/&#34;&gt;&lt;strong&gt;ações&lt;/strong&gt;&lt;/a&gt; para acontecer sempre que o valor mudar. É nessa lista que adicionamos uma ação &lt;a href=&#34;../../acoes/setcontext.md&#34;&gt;SetContext&lt;/a&gt; para definir o valor do &lt;a href=&#34;../../contexto/&#34;&gt;Contexto&lt;/a&gt; do formulário e atualizar os valores que são mostrados no campo.&lt;/p&gt;
 &lt;p&gt;Veja abaixo como implementamos o nosso &lt;code&gt;SimpleForm&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t162&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t162-0&#34; role=&#34;tab&#34; aria-controls=&#34;t162-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t162-1&#34; role=&#34;tab&#34; aria-controls=&#34;t162-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t162&#34;&gt;&lt;div id=&#34;t162-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t162-0&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:simpleForm&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;context&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;myContext&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -211,7 +216,10 @@ Para mais informações sobre esse componente vá até os detalhes do &lt;a href
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;SimpleForm&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t162-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t162-1&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;SimpleForm&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;context&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ContextData&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;id&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;myContext&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;value&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;children&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;listOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
         &lt;span style=&#34;color:#000&#34;&gt;TextInput&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
@@ -233,10 +241,11 @@ Para mais informações sobre esse componente vá até os detalhes do &lt;a href
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;onsubmit&#34;&gt;onSubmit&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&#34;onsubmit&#34;&gt;onSubmit&lt;/h3&gt;
 &lt;p&gt;É uma função do SimpleForm que executa uma lista de ações. Ele é chamdo quando o formuário for submetido&lt;/p&gt;
 &lt;p&gt;Para submeter um formulário é preciso utilizar a ação SubmitForm e para chama-la basta somente implementa-la em um &lt;a href=&#34;../ui/button.md&#34;&gt;Botão&lt;/a&gt; que seja parte do SimpleForm, ou seja, que esteja em sua lista de filhos.&lt;/p&gt;
-&lt;p&gt;Ao clicar nesse botão, o onSubmit é ativados e a lista de ações será executada. É essa lista de ações que definirá o que deve acontecer com as informações so formulario, se serão enviadas para um backend (através da ação &lt;a href=&#34;../../api-acoes/sendrequest.md&#34;&gt;sendRequest&lt;/a&gt;), etc&lt;/p&gt;
+&lt;p&gt;Ao clicar nesse botão, o onSubmit é ativados e a lista de ações será executada. É essa lista de ações que definirá o que deve acontecer com as informações so formulario, se serão enviadas para um backend (através da ação &lt;a href=&#34;../../acoes/sendrequest.md&#34;&gt;sendRequest&lt;/a&gt;), etc&lt;/p&gt;
 &lt;h3 id=&#34;-teste-esse-componente-no-web-playgroundhttpsbeagle-playgroundnetlifyappdemodefault-componentssimpleformjson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/simpleform.json&#34;&gt;Teste esse componente no Web Playground&lt;/a&gt;&lt;/h3&gt;
 
       </description>

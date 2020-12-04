@@ -62,7 +62,12 @@ In the ActionHandler function, you can access the defined values like the exampl
 &lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Add the action name in the association file according to your framework:&lt;/p&gt;
-&lt;p&gt;For Angular: Add beagle.module.ts&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t75&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t75-0&#34; role=&#34;tab&#34; aria-controls=&#34;t75-0&#34; aria-selected=&#34;true&#34;&gt;Angular&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t75-1&#34; role=&#34;tab&#34; aria-controls=&#34;t75-1&#34;&gt;React&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t75&#34;&gt;&lt;div id=&#34;t75-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t75-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;For Angular: Add beagle.module.ts&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a40000&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;BeagleModule&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;({&lt;/span&gt;
   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;...&lt;/span&gt;
   &lt;span style=&#34;color:#000&#34;&gt;customActions&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -70,7 +75,10 @@ In the ActionHandler function, you can access the defined values like the exampl
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;})&lt;/span&gt;
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For React: add to your Beagle configuration file&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t75-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t75-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;For React: add to your Beagle configuration file&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;createBeagleUIService&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;any&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;({&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;...&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;customActions&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -78,7 +86,8 @@ In the ActionHandler function, you can access the defined values like the exampl
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;      &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;})&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;adding-actions-to-json&#34;&gt;Adding actions to JSON&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&#34;adding-actions-to-json&#34;&gt;Adding actions to JSON&lt;/h3&gt;
 &lt;p&gt;Add the customized action to the JSON and add the defined parameters in the ActionHandler interface&lt;/p&gt;
 &lt;p&gt;See below an example with a button:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
@@ -116,9 +125,17 @@ Pay attention to the class types when you add a customized action parameter, the
 &lt;ol&gt;
 &lt;li&gt;You need an ordinary component, after that you have to create a new one in your project:&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;The component will be created with  &lt;code&gt;customText&lt;/code&gt; name, in this example. In your terminal, use the following command:&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t76&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t76-0&#34; role=&#34;tab&#34; aria-controls=&#34;t76-0&#34; aria-selected=&#34;true&#34;&gt;Angular&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t76-1&#34; role=&#34;tab&#34; aria-controls=&#34;t76-1&#34;&gt;React&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t76&#34;&gt;&lt;div id=&#34;t76-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t76-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;The component will be created with  &lt;code&gt;customText&lt;/code&gt; name, in this example. In your terminal, use the following command:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;ng generate component components/customText --skip-import
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Here, a component will be created to render a  &lt;code&gt;CustomTextComponent&lt;/code&gt; text.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t76-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t76-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;Here, a component will be created to render a  &lt;code&gt;CustomTextComponent&lt;/code&gt; text.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;React&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;react&amp;#39;&lt;/span&gt;
 
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;CustomTextComponent&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(){&lt;/span&gt;
@@ -128,10 +145,16 @@ Pay attention to the class types when you add a customized action parameter, the
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;CustomTextComponent&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Now, add Beagle&amp;rsquo;s library association in your project&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Open &lt;code&gt;beagle-components.module.ts&lt;/code&gt; file and add the new &lt;code&gt;CustomTextComponent&lt;/code&gt; generated in the list, see the example below:&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t76&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t76-0&#34; role=&#34;tab&#34; aria-controls=&#34;t76-0&#34; aria-selected=&#34;true&#34;&gt;Angular&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t76-1&#34; role=&#34;tab&#34; aria-controls=&#34;t76-1&#34;&gt;React&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t76&#34;&gt;&lt;div id=&#34;t76-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t76-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;Open &lt;code&gt;beagle-components.module.ts&lt;/code&gt; file and add the new &lt;code&gt;CustomTextComponent&lt;/code&gt; generated in the list, see the example below:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;...&lt;/span&gt;
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;CustomTextComponent&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;./components/custom-text/custom-text.component&amp;#39;&lt;/span&gt;
 &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// import all the components you&amp;#39;re going to use with beagle
@@ -166,14 +189,13 @@ Pay attention to the class types when you add a customized action parameter, the
   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;},&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;})&lt;/span&gt;
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-
-If you didn&amp;rsquo;t find the &lt;code&gt;beagle-components.module.ts&lt;/code&gt; files or &lt;code&gt;beagle.module.ts&lt;/code&gt;, &lt;a href=&#34;../../../get-started/installing-beagle/&#34;&gt;&lt;strong&gt;see how to configure Beagle&amp;rsquo;s library in your project.&lt;/strong&gt; &lt;/a&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;p&gt;If you didn’t find the &lt;code&gt;beagle-components.module.ts&lt;/code&gt; files or &lt;code&gt;beagle.module.ts&lt;/code&gt;, &lt;a href=&#34;../../../get-started/installing-beagle/&#34;&gt;&lt;strong&gt;see how to configure Beagle’s library in your project.&lt;/strong&gt; &lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t76-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t76-1&#34;&gt;
 
-&lt;p&gt;Now, access Beagle&amp;rsquo;s library configuration file in your project and add your component to the association list. If you don&amp;rsquo;t have this file in your project,&lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-en/get-started/usando-beagle/web/react-como-usar&#34;&gt; &lt;strong&gt;learn here how to configure Beagle Web React library.&lt;/strong&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;Now, access Beagle&amp;rsquo;s library configuration file in your project and add your component to the association list. If you don&amp;rsquo;t have this file in your project,&lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-en/get-started/usando-beagle/web/react-como-usar&#34;&gt; &lt;strong&gt;learn here how to configure Beagle Web React library.&lt;/strong&gt; &lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;createBeagleUIService&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;@zup-it/beagle-react&amp;#39;&lt;/span&gt;
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;CustomTextComponent&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;../components/CustomTextComponent&amp;#39;&lt;/span&gt;
 
@@ -183,10 +205,16 @@ If you didn&amp;rsquo;t find the &lt;code&gt;beagle-components.module.ts&lt;/cod
     &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;custom:text&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;CustomTextComponent&lt;/span&gt;
   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;})&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On the step below, the word custom was added to identify the components, this will make Beagle&amp;rsquo;s library understand that this component does not belong to the predefined component&amp;rsquo;s list.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;On the step below, the word custom was added to identify the components, this will make Beagle&amp;rsquo;s library understand that this component does not belong to the predefined component&amp;rsquo;s list.&lt;/p&gt;
 &lt;h3 id=&#34;adding-properties-to-the-component&#34;&gt;Adding properties to the component&lt;/h3&gt;
 &lt;p&gt;To add properties to the created component, follow the next steps:&lt;/p&gt;
-&lt;ol&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t76&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t76-0&#34; role=&#34;tab&#34; aria-controls=&#34;t76-0&#34; aria-selected=&#34;true&#34;&gt;Angular&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t76-1&#34; role=&#34;tab&#34; aria-controls=&#34;t76-1&#34;&gt;React&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t76&#34;&gt;&lt;div id=&#34;t76-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t76-0&#34;&gt;
+
+&lt;p&gt;&lt;ol&gt;
 &lt;li&gt;Open the &lt;code&gt;custom-text.component.ts&lt;/code&gt; file and add an  &lt;code&gt;@Input&lt;/code&gt; like the code below:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Component&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;OnInit&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Input&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;@angular/core&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
@@ -212,14 +240,13 @@ If you didn&amp;rsquo;t find the &lt;code&gt;beagle-components.module.ts&lt;/cod
 &lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;&amp;lt;div&amp;gt;
     &amp;lt;h1&amp;gt;{{myCustomText}}&amp;lt;/h1&amp;gt;
 &amp;lt;/div&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
-
-If  you have a project that is currently running, it is necessary to restart with the commands: &lt;code&gt;yarn serve&lt;/code&gt; or &lt;code&gt;npm run serve&lt;/code&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+&lt;p&gt;If  you have a project that is currently running, it is necessary to restart with the commands: &lt;code&gt;yarn serve&lt;/code&gt; or &lt;code&gt;npm run serve&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t76-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t76-1&#34;&gt;
 
-&lt;p&gt;On React, all the attributes defined in the JSON can be accessed through props, see the example:&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;On React, all the attributes defined in the JSON can be accessed through props, see the example:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-jsx&#34; data-lang=&#34;jsx&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;React&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;react&amp;#39;&lt;/span&gt;
 
 
@@ -230,7 +257,8 @@ If  you have a project that is currently running, it is necessary to restart wit
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;CustomTextComponent&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;creating-a-json&#34;&gt;Creating a JSON&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&#34;creating-a-json&#34;&gt;Creating a JSON&lt;/h3&gt;
 &lt;p&gt;Now you can add your component to a JSON file:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
     &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:container&amp;#34;,
@@ -336,7 +364,11 @@ This is the only strategy that does not save data on local storage. For that, th
 &lt;h2 id=&#34;how-do-i-alter-the-cache-strategy-used&#34;&gt;How do I alter the cache strategy used?&lt;/h2&gt;
 &lt;p&gt;To change the cache strategy, you have to use the &lt;code&gt;strategy&lt;/code&gt; parameter with the strategy name chosen inside Beagle&amp;rsquo;s config.&lt;/p&gt;
 &lt;p&gt;On the configs below, you will find an example on how to alter the strategy to &lt;code&gt;network-only&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;@BeagleModule({
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t77&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t77-0&#34; role=&#34;tab&#34; aria-controls=&#34;t77-0&#34; aria-selected=&#34;true&#34;&gt;Angular&lt;/a&gt;&lt;/li&gt;
+	  &lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t77&#34;&gt;&lt;div id=&#34;t77-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t77-0&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;@BeagleModule({
   baseUrl: &amp;#39;yourBackendUrlGoesHere&amp;#39;,
   module: {
     path: &amp;#39;./beagle-components.module&amp;#39;,
@@ -348,7 +380,8 @@ This is the only strategy that does not save data on local storage. For that, th
   strategy: &amp;#39;network-only&amp;#39;
 })
 export class Beagle { }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
       </description>
     </item>
     
@@ -369,7 +402,12 @@ export class Beagle { }
 &lt;/ol&gt;
 &lt;p&gt;By pattern, these headers are always sent, however it can be disabled by the &lt;code&gt;useBeagleHeaders&lt;/code&gt; parameter on the config.&lt;/p&gt;
 &lt;p&gt;See below the examples on how to disable the headers request on the Angular and React&amp;rsquo;s configs.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;@BeagleModule({
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t78&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t78-0&#34; role=&#34;tab&#34; aria-controls=&#34;t78-0&#34; aria-selected=&#34;true&#34;&gt;Angular&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t78-1&#34; role=&#34;tab&#34; aria-controls=&#34;t78-1&#34;&gt;React&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t78&#34;&gt;&lt;div id=&#34;t78-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t78-0&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;@BeagleModule({
   baseUrl: &amp;#39;http://localhost:4200/assets&amp;#39;,
   module: {
     path: &amp;#39;./beagle-components.module&amp;#39;,
@@ -379,12 +417,16 @@ export class Beagle { }
   useBeagleHeaders: false
 })
 export class Beagle { }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;export default createBeagleUIService({
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t78-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t78-1&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;export default createBeagleUIService({
   baseUrl: &amp;#34;&amp;#34;,
   components: {},
   useBeagleHeaders: false
 })
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
@@ -408,7 +450,12 @@ You must keep the headers enabled to make Beagle&amp;rsquo;s cache protocol work
 &lt;h2 id=&#34;loading-component&#34;&gt;Loading Component&lt;/h2&gt;
 &lt;p&gt;Beagle&amp;rsquo;s library already has by pattern a component that it is called when a screen loads. If necessary, you are able to change it to a customized one, according your application&amp;rsquo;s needs.&lt;/p&gt;
 &lt;p&gt;To create a loading component, follow the steps below:&lt;/p&gt;
-&lt;p&gt;On React:&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t79&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t79-0&#34; role=&#34;tab&#34; aria-controls=&#34;t79-0&#34; aria-selected=&#34;true&#34;&gt;React&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t79-1&#34; role=&#34;tab&#34; aria-controls=&#34;t79-1&#34;&gt;Angular&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t79&#34;&gt;&lt;div id=&#34;t79-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t79-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;On React:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Create a substitute component;&lt;/p&gt;
 &lt;p&gt;See an example:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import React, { FC } from &amp;#39;react&amp;#39;
@@ -430,7 +477,10 @@ export default createBeagleUIService&amp;lt;any&amp;gt;({
     &amp;#34;custom:loading&amp;#34;:CustomLoadingComponent
   }
 })
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On Angular&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t79-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t79-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;On Angular&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Create a substitute component.&lt;/p&gt;
 &lt;p&gt;You can use angular CLI, if you want, to generate the component automatically, see:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;ng generate component components/custom-loading
@@ -470,13 +520,10 @@ import { CustomLoadingComponent } from &amp;#39;./components/custom-loading/cust
 })
 export class Beagle { }
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-
-The files  &lt;code&gt;beagle.module.ts&lt;/code&gt; and &lt;code&gt;beagle-components.module.ts&lt;/code&gt; are automatically generated by Angular&amp;rsquo;s library. If you haven&amp;rsquo;t found it, &lt;a href=&#34;../../../get-started/installing-beagle/&#34;&gt;&lt;strong&gt;check you installation&lt;/strong&gt;&lt;/a&gt;.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;p&gt;The files  &lt;code&gt;beagle.module.ts&lt;/code&gt; and &lt;code&gt;beagle-components.module.ts&lt;/code&gt; are automatically generated by Angular’s library. If you haven’t found it, &lt;a href=&#34;../../../get-started/installing-beagle/&#34;&gt;&lt;strong&gt;check you installation&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
-
+&lt;/div&gt;&lt;/div&gt;
 &lt;h2 id=&#34;error-component&#34;&gt;Error Component&lt;/h2&gt;
 &lt;p&gt;The pattern error component on Beagle it is called when connection error happens, for example, when a server path cannot be reached.&lt;/p&gt;
 &lt;p&gt;To this component, the library shows an interface called &lt;code&gt;ErrorComponentParams&lt;/code&gt;, throught it you have access to the error list and a retry method, responsible to retry the server request.&lt;/p&gt;
@@ -498,7 +545,12 @@ The files  &lt;code&gt;beagle.module.ts&lt;/code&gt; and &lt;code&gt;beagle-comp
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;When using this interface, you can create a component, see the example below with each framework:&lt;/p&gt;
-&lt;p&gt;On React, you have to create a &lt;code&gt;Functional Component&lt;/code&gt; that uses the &lt;code&gt;ErrorComponentParams&lt;/code&gt; interface. When using it, you have access to two &lt;code&gt;props&lt;/code&gt; errors and retry, which are the errors list and the &lt;code&gt;retry&lt;/code&gt; method, both described on the interface:&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t79&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t79-0&#34; role=&#34;tab&#34; aria-controls=&#34;t79-0&#34; aria-selected=&#34;true&#34;&gt;React&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t79-1&#34; role=&#34;tab&#34; aria-controls=&#34;t79-1&#34;&gt;Angular&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t79&#34;&gt;&lt;div id=&#34;t79-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t79-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;On React, you have to create a &lt;code&gt;Functional Component&lt;/code&gt; that uses the &lt;code&gt;ErrorComponentParams&lt;/code&gt; interface. When using it, you have access to two &lt;code&gt;props&lt;/code&gt; errors and retry, which are the errors list and the &lt;code&gt;retry&lt;/code&gt; method, both described on the interface:&lt;/p&gt;
 &lt;p&gt;No React, é preciso criar um &lt;code&gt;Functional Component&lt;/code&gt; que usa a interface &lt;code&gt;ErrorComponentParams&lt;/code&gt;, note que ao usá-la você tem acesso à duas &lt;code&gt;props&lt;/code&gt; errors e retry, que são respectivamente a lista de erros e o método &lt;code&gt;retry&lt;/code&gt; ambos descritos na interface:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { ErrorComponentParams } from &amp;#39;@zup-it/beagle-react&amp;#39;
 import React, { FC } from &amp;#39;react&amp;#39;
@@ -527,7 +579,10 @@ export default createBeagleUIService&amp;lt;any&amp;gt;({
     &amp;#34;custom:error&amp;#34;:CustomErrorComponent
   }
 })
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On Angular, create a component, if you prefer use angula cli to automatically generate the inicial structure:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t79-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t79-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;On Angular, create a component, if you prefer use angula cli to automatically generate the inicial structure:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;ng g component components/custom-error
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Open the  &lt;code&gt;controller&lt;/code&gt; file of the created component and add the &lt;code&gt;ErrorComponentParams&lt;/code&gt; interface.  The interface gives access to two &lt;code&gt;@Inputs&lt;/code&gt; errors and retry, which are the errors list and the request method:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { Component, Input } from &amp;#39;@angular/core&amp;#39;;
@@ -581,13 +636,10 @@ export class BeagleComponentsModule {}
   }
 })
 export class Beagle { }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-
-The files  &lt;code&gt;beagle.module.ts&lt;/code&gt; and &lt;code&gt;beagle-components.module.ts&lt;/code&gt; are automatically generated by Angular&amp;rsquo;s library. If you haven&amp;rsquo;t found them, &lt;a href=&#34;../../../get-started/installing-beagle/&#34;&gt;&lt;strong&gt;check your installation&lt;/strong&gt;&lt;/a&gt;.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;p&gt;The files  &lt;code&gt;beagle.module.ts&lt;/code&gt; and &lt;code&gt;beagle-components.module.ts&lt;/code&gt; are automatically generated by Angular’s library. If you haven’t found them, &lt;a href=&#34;../../../get-started/installing-beagle/&#34;&gt;&lt;strong&gt;check your installation&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
-
+&lt;/div&gt;&lt;/div&gt;
 
       </description>
     </item>
@@ -604,9 +656,18 @@ The files  &lt;code&gt;beagle.module.ts&lt;/code&gt; and &lt;code&gt;beagle-comp
         &lt;hr&gt;
 &lt;h2 id=&#34;beagle-remote-view&#34;&gt;Beagle Remote View&lt;/h2&gt;
 &lt;p&gt;Beagle&amp;rsquo;s library offers a component to help render the server-driven screens, remote view:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&amp;lt;beagle-remote-view [loadParams]=&amp;#34;loadParams&amp;#34;&amp;gt;&amp;lt;/beagle-remote-view&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&amp;lt;BeagleRemoteView {...loadParams} /&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Angular and React accept remote view&amp;rsquo;s properties that are called Load Params. It is through it, that some options are configured to influence the way the screens are rendered.&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t80&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t80-0&#34; role=&#34;tab&#34; aria-controls=&#34;t80-0&#34; aria-selected=&#34;true&#34;&gt;Angular&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t80-1&#34; role=&#34;tab&#34; aria-controls=&#34;t80-1&#34;&gt;React&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t80&#34;&gt;&lt;div id=&#34;t80-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t80-0&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&amp;lt;beagle-remote-view [loadParams]=&amp;#34;loadParams&amp;#34;&amp;gt;&amp;lt;/beagle-remote-view&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t80-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t80-1&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&amp;lt;BeagleRemoteView {...loadParams} /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Angular and React accept remote view&amp;rsquo;s properties that are called Load Params. It is through it, that some options are configured to influence the way the screens are rendered.&lt;/p&gt;
 &lt;p&gt;See below that properties accepted by it:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { LoadParams } from &amp;#39;@zup-it/beagle-web&amp;#39;;
 

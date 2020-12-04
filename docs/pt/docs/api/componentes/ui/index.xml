@@ -43,7 +43,7 @@
       &lt;td style=&#34;text-align:left&#34;&gt;text&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;
         &lt;p&gt;String ou&lt;/p&gt;
-        &lt;p&gt;&lt;a href=&#34;../../contexto.md#bindings&#34;&gt;Binding&lt;/a&gt;
+        &lt;p&gt;&lt;a href=&#34;../../contexto/#bindings&#34;&gt;Binding&lt;/a&gt;
         &lt;/p&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&amp;#x2713;&lt;/td&gt;
@@ -53,7 +53,7 @@
       &lt;td style=&#34;text-align:left&#34;&gt;styleId&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;
         &lt;p&gt;String ou&lt;/p&gt;
-        &lt;p&gt;&lt;a href=&#34;../../contexto.md#bindings&#34;&gt;Binding&lt;/a&gt;
+        &lt;p&gt;&lt;a href=&#34;../../contexto/#bindings&#34;&gt;Binding&lt;/a&gt;
         &lt;/p&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
@@ -63,12 +63,12 @@
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;onPress&lt;/td&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;List &amp;lt;&lt;a href=&#34;../../api-acoes/&#34;&gt;Action&lt;/a&gt;&amp;gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;List &amp;lt;&lt;a href=&#34;../../acoes/&#34;&gt;Action&lt;/a&gt;&amp;gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;Array de a&amp;#xE7;&amp;#xF5;es que esse bot&amp;#xE3;o pode disparar quando clicado.
         &amp;#xC9; poss&amp;#xED;vel definir uma A&amp;#xE7;&amp;#xE3;o customizada ou qualquer
         a&amp;#xE7;&amp;#xE3;o j&amp;#xE1; dispon&amp;#xED;vel na interface, como por exemplo uma
-        a&amp;#xE7;&amp;#xE3;o que mostra uma mensagem de alerta(&lt;a href=&#34;../../api-acoes/alert.md&#34;&gt;Alert&lt;/a&gt;).
+        a&amp;#xE7;&amp;#xE3;o que mostra uma mensagem de alerta(&lt;a href=&#34;../../acoes/alert.md&#34;&gt;Alert&lt;/a&gt;).
         Este atributo &amp;#xE9; opcional, mas se uma a&amp;#xE7;&amp;#xE3;o for definida aqui
         ela precisa estar configurada no frontend. Para criar uma a&amp;#xE7;&amp;#xE3;o
         no frontend veja o exemplo: &lt;a href=&#34;../../../features/criando-sua-acao-customizada.md&#34;&gt;Criando uma a&amp;#xE7;&amp;#xE3;o customizada&lt;/a&gt;
@@ -86,7 +86,12 @@
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;como-usar&#34;&gt;Como usar?&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t142&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t142-0&#34; role=&#34;tab&#34; aria-controls=&#34;t142-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t142-1&#34; role=&#34;tab&#34; aria-controls=&#34;t142-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t142&#34;&gt;&lt;div id=&#34;t142-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t142-0&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:button&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Faz um Alert&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;styleId&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;DesignSystem.MeuEstiloDeBotãoNativo&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -97,7 +102,10 @@
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Button&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t142-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t142-1&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Button&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
   &lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Faz um Alert&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
   &lt;span style=&#34;color:#000&#34;&gt;styleId&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;DesignSystem.MeuEstiloDeBotãoNativo&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
   &lt;span style=&#34;color:#000&#34;&gt;onPress&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;listOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
@@ -106,7 +114,8 @@
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;-teste-esse-componente-no-web-playgroundhttpsbeagle-playgroundnetlifyappdemodefault-componentsbuttonjson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/button.json&#34;&gt;Teste esse componente no Web Playground&lt;/a&gt;&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&#34;-teste-esse-componente-no-web-playgroundhttpsbeagle-playgroundnetlifyappdemodefault-componentsbuttonjson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/button.json&#34;&gt;Teste esse componente no Web Playground&lt;/a&gt;&lt;/h3&gt;
 
       </description>
     </item>
@@ -136,7 +145,7 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;path&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;imagepath-1.md&#34;&gt;&lt;strong&gt;ImagePath&lt;/strong&gt;&lt;/a&gt; ou &lt;a href=&#34;../../../contexto.md#binding&#34;&gt;&lt;strong&gt;Binding&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;imagepath.md&#34;&gt;&lt;strong&gt;ImagePath&lt;/strong&gt;&lt;/a&gt; ou &lt;a href=&#34;../../../contexto/#binding&#34;&gt;&lt;strong&gt;Binding&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;✓&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Referência de uma imagem local ou url de uma imagem remota a ser exibida.&lt;/td&gt;
 &lt;/tr&gt;
@@ -149,7 +158,12 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;como-usar&#34;&gt;Como usar?&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t143&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t143-0&#34; role=&#34;tab&#34; aria-controls=&#34;t143-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t143-1&#34; role=&#34;tab&#34; aria-controls=&#34;t143-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t143&#34;&gt;&lt;div id=&#34;t143-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t143-0&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:image&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;path&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleImagePath_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;remote&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -162,14 +176,18 @@
   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;},&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;mode&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;CENTER&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Image&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t143-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t143-1&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Image&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;path&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ImagePath&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Remote&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
         &lt;span style=&#34;color:#000&#34;&gt;url&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
         &lt;span style=&#34;color:#000&#34;&gt;placeholder&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ImagePath&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Local&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;mobileId&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;imagePath&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;webUrl&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/imagePath.png&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;mode&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ImageContentMode&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;CENTER&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;-teste-esse-exemplo-no-web-playgroundhttpsbeagle-playgroundnetlifyappcloud447a8f52ebf84b779bbabc6cdb62b2e9imagejson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/cloud/447a8f52ebf84b779bbabc6cdb62b2e9/image.json&#34;&gt;Teste esse exemplo no Web Playground&lt;/a&gt;&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&#34;-teste-esse-exemplo-no-web-playgroundhttpsbeagle-playgroundnetlifyappcloud447a8f52ebf84b779bbabc6cdb62b2e9imagejson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/cloud/447a8f52ebf84b779bbabc6cdb62b2e9/image.json&#34;&gt;Teste esse exemplo no Web Playground&lt;/a&gt;&lt;/h3&gt;
 
       </description>
     </item>
@@ -257,12 +275,17 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;como-usar&#34;&gt;Como usar?&lt;/h2&gt;
-&lt;p&gt;No exemplo a seguir, são utilizados outros componentes para explicar o TabBar: o &lt;a href=&#34;../layout/pageview.md&#34;&gt;&lt;strong&gt;PageView&lt;/strong&gt;&lt;/a&gt; e o &lt;a href=&#34;../../contexto.md&#34;&gt;&lt;strong&gt;Contexto&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;No exemplo a seguir, são utilizados outros componentes para explicar o TabBar: o &lt;a href=&#34;../layout/pageview.md&#34;&gt;&lt;strong&gt;PageView&lt;/strong&gt;&lt;/a&gt; e o &lt;a href=&#34;../../contexto/&#34;&gt;&lt;strong&gt;Contexto&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;O &lt;strong&gt;Page View&lt;/strong&gt; é utilizado para renderizar as páginas que se quer exibir de acordo com cada aba, ou seja, ele vai criar a visualização de cada uma delas. É nele que você vai definir os componentes que quer exibir ao clicar em cada aba.&lt;/p&gt;
 &lt;p&gt;Os componentes serão renderizados de acordo com a sua posição na lista. Isso significa que, se em nossa lista temos 2 componentes de texto - o TAB 1 e TAB 2 -, o primeiro tem posição ZERO = 0, enquanto que o segundo tem posição UM = 1. O atributo &lt;strong&gt;currentTab&lt;/strong&gt; é quem define qual componente é exibido de acordo com o valor definido nele.&lt;/p&gt;
 &lt;p&gt;Já o &lt;strong&gt;Contexto&lt;/strong&gt; é utilizado para guardar o indicador (posição) da aba selecionada  e informá-lo ao PageView, que coordena qual elemento irá apresentar.&lt;/p&gt;
 &lt;h3 id=&#34;exemplo&#34;&gt;Exemplo&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t146&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t146-0&#34; role=&#34;tab&#34; aria-controls=&#34;t146-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t146-1&#34; role=&#34;tab&#34; aria-controls=&#34;t146-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t146&#34;&gt;&lt;div id=&#34;t146-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t146-0&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:screenComponent&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
     &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;child&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
         &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:container&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -303,7 +326,10 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t146-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t146-1&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;child&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Container&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
         &lt;span style=&#34;color:#000&#34;&gt;context&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ContextData&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;contestTabid&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
         &lt;span style=&#34;color:#000&#34;&gt;children&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;listOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
@@ -334,7 +360,8 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th style=&#34;text-align:center&#34;&gt;Tab Bar&lt;/th&gt;
@@ -448,7 +475,12 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;como-usar&#34;&gt;Como usar?&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t147&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t147-0&#34; role=&#34;tab&#34; aria-controls=&#34;t147-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t147-1&#34; role=&#34;tab&#34; aria-controls=&#34;t147-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t147&#34;&gt;&lt;div id=&#34;t147-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t147-0&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:container&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;children&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -472,7 +504,10 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t147-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t147-1&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
   &lt;span style=&#34;color:#000&#34;&gt;child&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Container&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
       &lt;span style=&#34;color:#000&#34;&gt;children&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;listOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
           &lt;span style=&#34;color:#000&#34;&gt;TabView&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;children&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;
@@ -490,7 +525,8 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
           &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
       &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th style=&#34;text-align:center&#34;&gt;Tab View tela inteira&lt;/th&gt;
@@ -582,12 +618,21 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;como-usar&#34;&gt;Como usar?&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t148&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t148-0&#34; role=&#34;tab&#34; aria-controls=&#34;t148-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t148-1&#34; role=&#34;tab&#34; aria-controls=&#34;t148-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t148&#34;&gt;&lt;div id=&#34;t148-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t148-0&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:text&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
     &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Hello World!&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Hello World!&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;-teste-esse-componente-no-web-playgroundhttpsbeagle-playgroundnetlifyappcloudcac8ecb56fcf490d9e09ab7adc322f55textjson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/cloud/cac8ecb56fcf490d9e09ab7adc322f55/text.json&#34;&gt;Teste esse componente no Web Playground&lt;/a&gt;&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t148-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t148-1&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Hello World!&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&#34;-teste-esse-componente-no-web-playgroundhttpsbeagle-playgroundnetlifyappcloudcac8ecb56fcf490d9e09ab7adc322f55textjson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/cloud/cac8ecb56fcf490d9e09ab7adc322f55/text.json&#34;&gt;Teste esse componente no Web Playground&lt;/a&gt;&lt;/h3&gt;
 
       </description>
     </item>
@@ -622,7 +667,7 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;value&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;
         &lt;p&gt;String ou&lt;/p&gt;
-        &lt;p&gt;&lt;a href=&#34;../../contexto.md#bindings&#34;&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/a&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&#34;../../contexto/#bindings&#34;&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/a&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/p&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;Item referente ao valor de entrada que ser&amp;#xE1; digitado na &amp;#xE1;rea
@@ -632,7 +677,7 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;placeholder&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;
         &lt;p&gt;String ou&lt;/p&gt;
-        &lt;p&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;a href=&#34;../../contexto.md#bindings&#34;&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/a&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/p&gt;
+        &lt;p&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;a href=&#34;../../contexto/#bindings&#34;&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/a&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/p&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;Texto que &amp;#xE9; exibido quando nada foi inserido no campo de texto edit&amp;#xE1;vel.&lt;/td&gt;
@@ -658,7 +703,7 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;type&lt;/td&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;TextInputType ou &lt;a href=&#34;../../contexto.md#bindings&#34;&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/a&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;TextInputType ou &lt;a href=&#34;../../contexto/#bindings&#34;&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/a&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/td&gt;
       &lt;td
       style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
         &lt;td style=&#34;text-align:left&#34;&gt;Esse atributo identifica o tipo de texto que iremos receber na &amp;#xE1;rea
@@ -674,13 +719,13 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;onChange&lt;/td&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;List &amp;lt;&lt;a href=&#34;../../api-acoes/&#34;&gt;&lt;b&gt;Action&lt;/b&gt;&lt;/a&gt;&amp;gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;List &amp;lt;&lt;a href=&#34;../../acoes/&#34;&gt;&lt;b&gt;Action&lt;/b&gt;&lt;/a&gt;&amp;gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;
         &lt;p&gt;Array de a&amp;#xE7;&amp;#xF5;es que esse campo &lt;b&gt;pode disparar quando seu valor for alterado&lt;/b&gt;.
           &amp;#xC9; poss&amp;#xED;vel definir uma &lt;a href=&#34;../../../features/criando-sua-acao-customizada.md&#34;&gt;&lt;b&gt;a&amp;#xE7;&amp;#xE3;o customizada&lt;/b&gt;&lt;/a&gt;&lt;b&gt; &lt;/b&gt;ou
           qualquer a&amp;#xE7;&amp;#xE3;o j&amp;#xE1; dispon&amp;#xED;vel na interface, como por
-          exemplo uma a&amp;#xE7;&amp;#xE3;o que mostra uma mensagem de alerta(&lt;a href=&#34;../../api-acoes/alert.md&#34;&gt;&lt;b&gt;Alert&lt;/b&gt;&lt;/a&gt;).&lt;/p&gt;
+          exemplo uma a&amp;#xE7;&amp;#xE3;o que mostra uma mensagem de alerta(&lt;a href=&#34;../../acoes/alert.md&#34;&gt;&lt;b&gt;Alert&lt;/b&gt;&lt;/a&gt;).&lt;/p&gt;
         &lt;p&gt;&lt;/p&gt;
         &lt;p&gt;Este atributo &amp;#xE9; opcional, mas se uma a&amp;#xE7;&amp;#xE3;o for definida
           aqui ela precisa estar configurada no frontend.&lt;/p&gt;
@@ -688,13 +733,13 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;onBlur&lt;/td&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;List &amp;lt;&lt;a href=&#34;../../api-acoes/&#34;&gt;&lt;b&gt;Action&lt;/b&gt;&lt;/a&gt;&amp;gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;List &amp;lt;&lt;a href=&#34;../../acoes/&#34;&gt;&lt;b&gt;Action&lt;/b&gt;&lt;/a&gt;&amp;gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;
         &lt;p&gt;Array de a&amp;#xE7;&amp;#xF5;es que esse campo &lt;b&gt;pode disparar quando seu foco &amp;#xE9; retirado&lt;/b&gt;.
           &amp;#xC9; poss&amp;#xED;vel definir uma &lt;a href=&#34;../../../features/criando-sua-acao-customizada.md&#34;&gt;&lt;b&gt;a&amp;#xE7;&amp;#xE3;o customizada&lt;/b&gt;&lt;/a&gt;&lt;b&gt; &lt;/b&gt;ou
           qualquer a&amp;#xE7;&amp;#xE3;o j&amp;#xE1; dispon&amp;#xED;vel na interface como, por
-          exemplo, uma a&amp;#xE7;&amp;#xE3;o que mostra uma mensagem de alerta(&lt;a href=&#34;../../api-acoes/alert.md&#34;&gt;&lt;b&gt;Alert&lt;/b&gt;&lt;/a&gt;).&lt;/p&gt;
+          exemplo, uma a&amp;#xE7;&amp;#xE3;o que mostra uma mensagem de alerta(&lt;a href=&#34;../../acoes/alert.md&#34;&gt;&lt;b&gt;Alert&lt;/b&gt;&lt;/a&gt;).&lt;/p&gt;
         &lt;p&gt;&lt;/p&gt;
         &lt;p&gt;Este atributo &amp;#xE9; opcional, mas se uma a&amp;#xE7;&amp;#xE3;o for definida
           aqui ela precisa estar configurada no frontend.&lt;/p&gt;
@@ -702,13 +747,13 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;onFocus&lt;/td&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;List &amp;lt;&lt;a href=&#34;../../api-acoes/&#34;&gt;&lt;b&gt;Action&lt;/b&gt;&lt;/a&gt;&amp;gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;List &amp;lt;&lt;a href=&#34;../../acoes/&#34;&gt;&lt;b&gt;Action&lt;/b&gt;&lt;/a&gt;&amp;gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;
         &lt;p&gt;Array de a&amp;#xE7;&amp;#xF5;es que esse campo pode disparar quando &amp;#xE9; colocado
           em foco. &amp;#xC9; poss&amp;#xED;vel definir uma &lt;a href=&#34;../../../features/criando-sua-acao-customizada.md&#34;&gt;&lt;b&gt;a&amp;#xE7;&amp;#xE3;o customizada&lt;/b&gt;&lt;/a&gt;&lt;b&gt; &lt;/b&gt;ou
           qualquer a&amp;#xE7;&amp;#xE3;o j&amp;#xE1; dispon&amp;#xED;vel na interface como, por
-          exemplo, uma a&amp;#xE7;&amp;#xE3;o que mostra uma mensagem de alerta(&lt;a href=&#34;../../api-acoes/alert.md&#34;&gt;&lt;b&gt;Alert&lt;/b&gt;&lt;/a&gt;).&lt;/p&gt;
+          exemplo, uma a&amp;#xE7;&amp;#xE3;o que mostra uma mensagem de alerta(&lt;a href=&#34;../../acoes/alert.md&#34;&gt;&lt;b&gt;Alert&lt;/b&gt;&lt;/a&gt;).&lt;/p&gt;
         &lt;p&gt;&lt;/p&gt;
         &lt;p&gt;Este atributo &amp;#xE9; opcional, mas se uma a&amp;#xE7;&amp;#xE3;o for definida
           aqui ela precisa estar configurada no frontend.&lt;/p&gt;
@@ -750,7 +795,12 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;como-usar&#34;&gt;Como usar?&lt;/h2&gt;
 &lt;p&gt;Segue abaixo um exemplo de entrada de texto do tipo senha:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t149&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t149-0&#34; role=&#34;tab&#34; aria-controls=&#34;t149-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t149-1&#34; role=&#34;tab&#34; aria-controls=&#34;t149-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t149&#34;&gt;&lt;div id=&#34;t149-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t149-0&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
  &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:textInput&amp;#34;,
  &amp;#34;value&amp;#34;: &amp;#34;my value&amp;#34;,
  &amp;#34;placeholder&amp;#34;: &amp;#34;user@test.com.br&amp;#34;,
@@ -762,7 +812,10 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
       }
   ]
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;TextInput&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t149-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t149-1&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;TextInput&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;value&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;my value&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; 
     &lt;span style=&#34;color:#000&#34;&gt;placeholder&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;password&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; 
     &lt;span style=&#34;color:#000&#34;&gt;type&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;TextInputType&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;PASSWORD&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; 
@@ -773,7 +826,8 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;-teste-esse-componente-no-web-playgroundhttpsbeagle-playgroundnetlifyappdemodefault-componentssimpleformjson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/simpleform.json&#34;&gt;Teste esse componente no Web Playground&lt;/a&gt;&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&#34;-teste-esse-componente-no-web-playgroundhttpsbeagle-playgroundnetlifyappdemodefault-componentssimpleformjson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/simpleform.json&#34;&gt;Teste esse componente no Web Playground&lt;/a&gt;&lt;/h3&gt;
 
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
@@ -824,12 +878,21 @@ O exemplo no link acima é de um formulário que contém um componente do tipo &
 &lt;/div&gt;
 
 &lt;h2 id=&#34;como-usar&#34;&gt;Como usar?&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t150&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t150-0&#34; role=&#34;tab&#34; aria-controls=&#34;t150-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t150-1&#34; role=&#34;tab&#34; aria-controls=&#34;t150-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t150&#34;&gt;&lt;div id=&#34;t150-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t150-0&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:webView&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
     &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;url&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://maps.google.com/&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;WebView&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;url&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://docs.usebeagle.io/&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;-teste-esse-componente-no-web-playgroundhttpsbeagle-playgroundnetlifyappdemodefault-componentsbuttonjson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/button.json&#34;&gt;Teste esse componente no Web Playground&lt;/a&gt;​&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t150-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t150-1&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;WebView&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;url&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://docs.usebeagle.io/&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&#34;-teste-esse-componente-no-web-playgroundhttpsbeagle-playgroundnetlifyappdemodefault-componentsbuttonjson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/button.json&#34;&gt;Teste esse componente no Web Playground&lt;/a&gt;​&lt;/h3&gt;
 
       </description>
     </item>

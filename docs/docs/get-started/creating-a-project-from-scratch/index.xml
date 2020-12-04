@@ -514,7 +514,12 @@ You will see this screen:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;You must have &lt;strong&gt;Visual Studio Code&lt;/strong&gt; to start your project. In case you don&amp;rsquo;t have installed it yet, &lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;&lt;strong&gt;you can find more information about it&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;After the installation, follow the steps according to framework you chose:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Open the terminal and use the command below:&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t19&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t19-0&#34; role=&#34;tab&#34; aria-controls=&#34;t19-0&#34; aria-selected=&#34;true&#34;&gt;Angular&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t19-1&#34; role=&#34;tab&#34; aria-controls=&#34;t19-1&#34;&gt;React&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t19&#34;&gt;&lt;div id=&#34;t19-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t19-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Open the terminal and use the command below:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;ng new caseAngular
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wait until the CLI finishes to create the project.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-M9PRY_vOWaeZoXKLq2p%2F-M9PUdUA5t1QcYXL3XJ7%2Fimage.png?alt=media&amp;amp;token=a3869009-df72-4a8c-940a-e040aa47a77a&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -544,7 +549,10 @@ You will see this screen:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;At the end, two files were created on your project:&lt;code&gt;beagle-components.module.ts&lt;/code&gt; and&lt;code&gt;beagle.module.ts&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Open the terminal and use the command below:&lt;/p&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t19-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t19-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Open the terminal and use the command below:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;npx create-react-app case-react --template typescript
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;yarn create react-app case-react --template typescript
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%2811%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -553,9 +561,15 @@ You will see this screen:&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;yarn add @zup-it/beagle-react
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And wait until the installation finishes.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;
 &lt;h2 id=&#34;configuration&#34;&gt;Configuration&lt;/h2&gt;
 &lt;p&gt;Now it&amp;rsquo;s time to configure Beagle&amp;rsquo;s files inside your application, following these instructions:&lt;/p&gt;
-&lt;p&gt;Open the &lt;code&gt;app.module.ts&lt;/code&gt; file and import Beagle&amp;rsquo;s module that was just generated:&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t19&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t19-0&#34; role=&#34;tab&#34; aria-controls=&#34;t19-0&#34; aria-selected=&#34;true&#34;&gt;Angular&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t19-1&#34; role=&#34;tab&#34; aria-controls=&#34;t19-1&#34;&gt;React&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t19&#34;&gt;&lt;div id=&#34;t19-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t19-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;Open the &lt;code&gt;app.module.ts&lt;/code&gt; file and import Beagle&amp;rsquo;s module that was just generated:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;...
 import { Beagle } from &amp;#39;./beagle.module&amp;#39;;
 
@@ -586,7 +600,10 @@ export class AppModule { }
   },
 })
 export class Beagle {}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On the &lt;code&gt;/src&lt;/code&gt; path, create another folder named &lt;strong&gt;beagle&lt;/strong&gt; and, inside it,  create a new file called&lt;code&gt;beagle-service.ts&lt;/code&gt;. Its structure should be similar to the image below:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t19-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t19-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;On the &lt;code&gt;/src&lt;/code&gt; path, create another folder named &lt;strong&gt;beagle&lt;/strong&gt; and, inside it,  create a new file called&lt;code&gt;beagle-service.ts&lt;/code&gt;. Its structure should be similar to the image below:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%2863%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Now, open the  &lt;code&gt;beagle-service.ts&lt;/code&gt; created file and copy this code:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { createBeagleUIService } from &amp;#39;@zup-it/beagle-react&amp;#39;
@@ -595,10 +612,20 @@ export default createBeagleUIService({
   baseUrl: &amp;#34;&amp;#34;,
   components: {}
 })
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;creating-a-json-to-be-rendered&#34;&gt;Creating a JSON to be rendered&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&#34;creating-a-json-to-be-rendered&#34;&gt;Creating a JSON to be rendered&lt;/h3&gt;
 &lt;p&gt;Now you need a JSON to render the components. Usually, this call is made by an external server that would return the JSON, but for this example we&amp;rsquo;ll use a local file that will be created for this test:&lt;/p&gt;
-&lt;p&gt;On your angular project, navigate to the &lt;code&gt;src/assets&lt;/code&gt; folder and create a new file named &lt;code&gt;payload.json&lt;/code&gt;. Insert this new file on the &lt;code&gt;JSON&lt;/code&gt; content below.&lt;/p&gt;
-&lt;p&gt;On your react project, navigate to the &lt;code&gt;/public&lt;/code&gt; folder and create a new file named &lt;code&gt;payload.json&lt;/code&gt;. Insert on the new file the &lt;code&gt;JSON&lt;/code&gt; content below:&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t19&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t19-0&#34; role=&#34;tab&#34; aria-controls=&#34;t19-0&#34; aria-selected=&#34;true&#34;&gt;Angular&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t19-1&#34; role=&#34;tab&#34; aria-controls=&#34;t19-1&#34;&gt;React&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t19&#34;&gt;&lt;div id=&#34;t19-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t19-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;On your angular project, navigate to the &lt;code&gt;src/assets&lt;/code&gt; folder and create a new file named &lt;code&gt;payload.json&lt;/code&gt;. Insert this new file on the &lt;code&gt;JSON&lt;/code&gt; content below.&lt;/p&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t19-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t19-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;On your react project, navigate to the &lt;code&gt;/public&lt;/code&gt; folder and create a new file named &lt;code&gt;payload.json&lt;/code&gt;. Insert on the new file the &lt;code&gt;JSON&lt;/code&gt; content below:&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
     &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:container&amp;#34;,
     &amp;#34;children&amp;#34;: [
@@ -622,17 +649,21 @@ export default createBeagleUIService({
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;rendering-components&#34;&gt;Rendering components&lt;/h3&gt;
 &lt;p&gt;Now it&amp;rsquo;s necessary to add on your application the local where the components will be rendered through JSON. The Beagle&amp;rsquo;s library provides a component with this functionality:  &lt;code&gt;beagle remote view&lt;/code&gt;. To configure this component, follow these steps:&lt;/p&gt;
-&lt;p&gt;Open the &lt;code&gt;app.component.html&lt;/code&gt; file and replace all the content with this code:&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t19&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t19-0&#34; role=&#34;tab&#34; aria-controls=&#34;t19-0&#34; aria-selected=&#34;true&#34;&gt;Angular&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t19-1&#34; role=&#34;tab&#34; aria-controls=&#34;t19-1&#34;&gt;React&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t19&#34;&gt;&lt;div id=&#34;t19-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t19-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;Open the &lt;code&gt;app.component.html&lt;/code&gt; file and replace all the content with this code:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&amp;lt;beagle-remote-view route=&amp;#34;/payload.json&amp;#34;&amp;gt;&amp;lt;/beagle-remote-view&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;route&lt;/code&gt; in the code above states which route will be loaded. The URL specified here is relative to the &lt;code&gt;baseUrl&lt;/code&gt; declared in the configuration.&lt;/p&gt;
-
-
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-
-The parameter &lt;code&gt;route&lt;/code&gt; is only valid for versions 1.3 and above. For previous versions, you should use &lt;code&gt;loadParams&lt;/code&gt; instead. &lt;code&gt;loadParams&lt;/code&gt; is an object and the equivalent to this configuration would be &lt;code&gt;{ path: &#39;/payload.json&#39; }.&lt;/code&gt;
+&lt;p&gt;The parameter &lt;code&gt;route&lt;/code&gt; is only valid for versions 1.3 and above. For previous versions, you should use &lt;code&gt;loadParams&lt;/code&gt; instead. &lt;code&gt;loadParams&lt;/code&gt; is an object and the equivalent to this configuration would be &lt;code&gt;{ path: &amp;lsquo;/payload.json&amp;rsquo; }.&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t19-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t19-1&#34;&gt;
 
-&lt;p&gt;Open the &lt;code&gt;App.tsx&lt;/code&gt; file where the &lt;code&gt;JSON&lt;/code&gt; will be rendered and change it until it looks like the example below:&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;Open the &lt;code&gt;App.tsx&lt;/code&gt; file where the &lt;code&gt;JSON&lt;/code&gt; will be rendered and change it until it looks like the example below:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import React from &amp;#39;react&amp;#39;;
 import &amp;#39;./App.css&amp;#39;;
 import { BeagleProvider, BeagleRemoteView } from &amp;#39;@zup-it/beagle-react&amp;#39;;
@@ -649,14 +680,11 @@ function App() {
 export default App;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On this step, we point where our layout defined with &lt;code&gt;payload.json&lt;/code&gt; file should be rendered. Here, we have two componentes provided by Beagle:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;&amp;lt;BeagleProvider&amp;gt;&lt;/code&gt;: Receives the &lt;code&gt;value&lt;/code&gt; propriety as the &lt;code&gt;beagle-service&lt;/code&gt; created on the previous step and that contains the initials configurations.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;&amp;lt;BeagleRemoteView&amp;gt;&lt;/code&gt;: Receives the&lt;code&gt;route&lt;/code&gt; propriety that&amp;rsquo;s the path for our JSON file. Notice here that we add  &lt;strong&gt;&amp;rsquo; / &amp;lsquo;&lt;/strong&gt;  because this value will be associated to a defined&lt;code&gt;baseUrl&lt;/code&gt; on&lt;code&gt;beagle-service.ts&lt;/code&gt; file.&lt;/p&gt;
-
-
+&lt;p&gt;&lt;code&gt;&amp;lt;BeagleRemoteView&amp;gt;&lt;/code&gt;: Receives the&lt;code&gt;route&lt;/code&gt; propriety that&amp;rsquo;s the path for our JSON file. Notice here that we add  &lt;strong&gt;&#39; / &amp;lsquo;&lt;/strong&gt;  because this value will be associated to a defined&lt;code&gt;baseUrl&lt;/code&gt; on&lt;code&gt;beagle-service.ts&lt;/code&gt; file.&lt;/p&gt;
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-
-&lt;code&gt;route&lt;/code&gt; in the &lt;code&gt;BeagleRemoteView&lt;/code&gt; is only valid for versions 1.3.0 and above. For earlier versions, please, use &lt;code&gt;path&lt;/code&gt; instead.
+&lt;p&gt;&lt;code&gt;route&lt;/code&gt; in the &lt;code&gt;BeagleRemoteView&lt;/code&gt; is only valid for versions 1.3.0 and above. For earlier versions, please, use &lt;code&gt;path&lt;/code&gt; instead.&lt;/p&gt;
 &lt;/div&gt;
-
+&lt;/div&gt;&lt;/div&gt;
 &lt;h2 id=&#34;testing-your-application&#34;&gt;Testing your application&lt;/h2&gt;
 &lt;p&gt;Once you have finished the project&amp;rsquo;s basic configuration, now you have to run one of the commands below to initialize your application:&lt;/p&gt;
 &lt;p&gt;If you use &lt;strong&gt;npm&lt;/strong&gt;:&lt;/p&gt;

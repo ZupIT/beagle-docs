@@ -46,7 +46,14 @@
 &lt;p&gt;Caso a abordagem padrão não resolva o problema, a aplicação tem total liberdade de substituir completamente a implementação padrão pela que melhor atender. Para isso, basta que a classe responsável pelo gerenciamento do cache esteja em conformidade com o protocolo &lt;code&gt;CacheManagerProtocol&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Cada plataforma tem especificidades para configurar o cache.&lt;/p&gt;
 &lt;p&gt;Abaixo listamos a configuração por plataforma:&lt;/p&gt;
-&lt;p&gt;No Android, o cache é configurado quando implementamos as configurações iniciais do Beagle.&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t22&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t22-0&#34; role=&#34;tab&#34; aria-controls=&#34;t22-0&#34; aria-selected=&#34;true&#34;&gt;Android&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t22-1&#34; role=&#34;tab&#34; aria-controls=&#34;t22-1&#34;&gt;iOS&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t22-2&#34; role=&#34;tab&#34; aria-controls=&#34;t22-2&#34;&gt;Backend&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t22-3&#34; role=&#34;tab&#34; aria-controls=&#34;t22-3&#34;&gt;Web&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t22&#34;&gt;&lt;div id=&#34;t22-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t22-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;No Android, o cache é configurado quando implementamos as configurações iniciais do Beagle.&lt;/p&gt;
 &lt;p&gt;Esta implementação acontece dentro da classe que nomeamos &lt;a href=&#34;../../get-started/using-beagle/android.md#passo-2-criar-uma-classe-beagleconfig&#34;&gt;&lt;strong&gt;AppBeagleConfig&lt;/strong&gt;&lt;/a&gt;, ou seja, dentro da classe de configuração do Beagle.&lt;/p&gt;
 &lt;p&gt;O cache, em si, é uma class interna do Beagle na qual podemos definir 3 propriedades representadas pelos atributos:&lt;/p&gt;
 &lt;ol&gt;
@@ -88,7 +95,10 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;No iOS, o cache é configurado quando implementamos as configurações das dependências do  Beagle.&lt;/p&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t22-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t22-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;No iOS, o cache é configurado quando implementamos as configurações das dependências do  Beagle.&lt;/p&gt;
 &lt;p&gt;É possível mudar a configuração default do cache criando uma instância da classe &lt;code&gt;CacheManagerDefault&lt;/code&gt;. Nessa classe permitimos que você altere os valores de 3 propriedades:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;memoryMaximumCapacity&lt;/code&gt;&lt;/li&gt;
@@ -109,7 +119,7 @@
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;getReference&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;identifiedBy&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#204a87&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;CacheReference&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?&lt;/span&gt;
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;isValid&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;reference&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;CacheReference&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#204a87&#34;&gt;Bool&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;atributos-do-cache-1&#34;&gt;&lt;strong&gt;Atributos do cache&lt;/strong&gt;&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;atributos-do-cache&#34;&gt;&lt;strong&gt;Atributos do cache&lt;/strong&gt;&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -132,7 +142,10 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;No backend, as configurações desta funcionalidade são suportadas apenas para quem utiliza a &lt;a href=&#34;../../get-started/installing-beagle/beagle-backend.md#passo-3-incluindo-requerimentos-adicionais&#34;&gt;&lt;strong&gt;biblioteca starter&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t22-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t22-2&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;No backend, as configurações desta funcionalidade são suportadas apenas para quem utiliza a &lt;a href=&#34;../../get-started/installing-beagle/beagle-backend.md#passo-3-incluindo-requerimentos-adicionais&#34;&gt;&lt;strong&gt;biblioteca starter&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;O cache é criado para otimizar a resposta de uma requisição tanto em tamanho quanto em tempo do BFF quando o retorno é igual ao anterior a ela. As entradas nesse cache duram até o servidor ser &amp;ldquo;redeployado&amp;rdquo; ou o cliente ser reinstalado.‌&lt;/p&gt;
 &lt;p&gt;Para realizar a configuração de cache:&lt;/p&gt;
 &lt;ol&gt;
@@ -209,15 +222,14 @@ beagle.cache.endpoint.ttl.[/endpoint2]=1m
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Na web, o cache é configurado quando definimos as configurações iniciais do Beagle Web no parâmetro &lt;code&gt;strategy&lt;/code&gt;, que é um dos parâmetros do &lt;code&gt;BeagleModule&lt;/code&gt; (se você estiver usando Angular) ou &lt;code&gt;createBeagleUIService&lt;/code&gt;(se você estiver usando React).&lt;/p&gt;
-&lt;p&gt;Por padrão, o cache vem habilitado com a estratégia**&lt;code&gt;beagle-with-fallback-to-cache&lt;/code&gt;**, porém a estratégia&lt;code&gt;beagle-cache-only&lt;/code&gt; também pode ser utilizada para implementar o&lt;a href=&#34;../customizacao/beagle-para-web/&#34;&gt; &lt;strong&gt;protocolo de cache do Beagle&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-
-Lembre de deixar o CORS habilitado no backend sempre que for utilizar a estratégia de cache do Beagle para Web.
 &lt;/div&gt;
+  &lt;div id=&#34;t22-3&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t22-3&#34;&gt;
 
+&lt;p&gt;&lt;p&gt;Na web, o cache é configurado quando definimos as configurações iniciais do Beagle Web no parâmetro &lt;code&gt;strategy&lt;/code&gt;, que é um dos parâmetros do &lt;code&gt;BeagleModule&lt;/code&gt; (se você estiver usando Angular) ou &lt;code&gt;createBeagleUIService&lt;/code&gt;(se você estiver usando React).&lt;/p&gt;
+&lt;p&gt;Por padrão, o cache vem habilitado com a estratégia**&lt;code&gt;beagle-with-fallback-to-cache&lt;/code&gt;**, porém a estratégia&lt;code&gt;beagle-cache-only&lt;/code&gt; também pode ser utilizada para implementar o&lt;a href=&#34;../customizacao/beagle-para-web/&#34;&gt; &lt;strong&gt;protocolo de cache do Beagle&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;p&gt;Lembre de deixar o CORS habilitado no backend sempre que for utilizar a estratégia de cache do Beagle para Web.&lt;/p&gt;
+&lt;/div&gt;
 &lt;p&gt;Abaixo, exemplos de como foi alterado do &lt;code&gt;beagle-with-fallback-to-cache&lt;/code&gt;, que é o padrão, para o &lt;code&gt;beagle-cache-only.&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Exemplo de configuração para o &lt;strong&gt;Angula&lt;/strong&gt;r:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;@BeagleModule({
@@ -238,7 +250,8 @@ export class Beagle { }
   components: {},
   strategy: &amp;#39;beagle-cache-only&amp;#39;
 })
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
       </description>
     </item>
     

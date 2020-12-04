@@ -27,11 +27,7 @@
 &lt;p&gt;O Playground é uma ferramenta de desenvolvimento onde se pode  criar componentes e páginas utilizando o Beagle de forma simples e rápida, sem a necessidade de fazer qualquer instalação. Ele possui uma interface que permite você escrever um JSON e ver o resultado de forma instantânea.&lt;/p&gt;
 &lt;h3 id=&#34;acessando-o-playground&#34;&gt;Acessando &lt;strong&gt;o Playground&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;O playground pode ser acessado pelo &lt;strong&gt;seguinte link&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/false&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
+&lt;p&gt;{% embed url=&amp;ldquo;&lt;a href=&#34;https://beagle-playground.netlify.app&#34;&gt;https://beagle-playground.netlify.app&lt;/a&gt;&amp;rdquo; %}}&lt;/p&gt;
 &lt;p&gt;Você terá acesso ao seguinte projeto demo:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%2827%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;O menu de arquivos fica à esquerda, no centro fica o JSON do arquivo selecionado, e a direita é onde você pode ver o preview do JSON selecionado.&lt;/p&gt;

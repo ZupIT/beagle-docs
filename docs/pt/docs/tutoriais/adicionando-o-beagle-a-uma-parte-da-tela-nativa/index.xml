@@ -14,7 +14,7 @@
     
     
     <item>
-      <title>Docs: Adicionando um componente Beagle Server Driven</title>
+      <title>Docs: Adicionando um componente Beagle Server-driven</title>
       <link>https://zupit.github.io/docs-beagle/pt/docs/tutoriais/adicionando-o-beagle-a-uma-parte-da-tela-nativa/adicionando-um-componente-beagle-server-driven/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -111,7 +111,12 @@ Este botão terá uma ação do tipo &lt;code&gt;&amp;quot;Alert&amp;quot;&lt;/c
 &lt;li&gt;Abra o um browser e acesse o endpoint: &lt;a href=&#34;http://localhost:8080/serverDrivenComponent&#34;&gt;http://localhost:8080/serverDrivenComponent&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Você deve receber o JSON abaixo:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t104&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t104-0&#34; role=&#34;tab&#34; aria-controls=&#34;t104-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t104-1&#34; role=&#34;tab&#34; aria-controls=&#34;t104-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t104&#34;&gt;&lt;div id=&#34;t104-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t104-0&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:button&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Sou um botão server-driven&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;onPress&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -121,7 +126,10 @@ Este botão terá uma ação do tipo &lt;code&gt;&amp;quot;Alert&amp;quot;&lt;/c
     &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;labelOk&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;OoooK&amp;#34;&lt;/span&gt;
   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Button&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t104-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t104-1&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Button&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
     &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Sou um botão server-driven&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;onPress&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;listOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
         &lt;span style=&#34;color:#000&#34;&gt;Alert&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
@@ -131,10 +139,17 @@ Este botão terá uma ação do tipo &lt;code&gt;&amp;quot;Alert&amp;quot;&lt;/c
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;passo-3-exibir-o-componente-server-driven&#34;&gt;Passo 3: Exibir o componente server-driven&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&#34;passo-3-exibir-o-componente-server-driven&#34;&gt;Passo 3: Exibir o componente server-driven&lt;/h2&gt;
 &lt;p&gt;Depois dos dois passos anteriores, o seu componente está pronto. Agora, você só precisa exibi-lo em uma tela nativa.&lt;/p&gt;
 &lt;p&gt;Para essa configuração, siga as orientações específicas para cada plataforma:&lt;/p&gt;
-&lt;p&gt;Você deve utilizar o frame layout para &amp;ldquo;receber&amp;rdquo; o componente do BFF e, assim, exibi-lo em uma tela Android nativa.&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t104&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t104-0&#34; role=&#34;tab&#34; aria-controls=&#34;t104-0&#34; aria-selected=&#34;true&#34;&gt;Android&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t104-1&#34; role=&#34;tab&#34; aria-controls=&#34;t104-1&#34;&gt;iOS&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t104-2&#34; role=&#34;tab&#34; aria-controls=&#34;t104-2&#34;&gt;WEB&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t104&#34;&gt;&lt;div id=&#34;t104-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t104-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;Você deve utilizar o frame layout para &amp;ldquo;receber&amp;rdquo; o componente do BFF e, assim, exibi-lo em uma tela Android nativa.&lt;/p&gt;
 &lt;p&gt;Para isso, basta seguir esses passos:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Crie o arquivo &lt;code&gt;.XML&lt;/code&gt; abaixo que representa uma tela nativa com um título e um frame layout. Nesse exemplo definimos essa pagina como nossa &lt;code&gt;MainActivity&lt;/code&gt;&lt;/li&gt;
@@ -169,13 +184,9 @@ Este botão terá uma ação do tipo &lt;code&gt;&amp;quot;Alert&amp;quot;&lt;/c
         /&amp;gt;
 
 &amp;lt;/androidx.constraintlayout.widget.ConstraintLayout&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
-
-Após configurar o frame layout, é preciso informar ao Beagle qual componente será exibido. Para isso, utilize a função &lt;code&gt;loadView&lt;/code&gt; como listado no exemplo a seguir.
+&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+&lt;p&gt;Após configurar o frame layout, é preciso informar ao Beagle qual componente será exibido. Para isso, utilize a função &lt;code&gt;loadView&lt;/code&gt; como listado no exemplo a seguir.&lt;/p&gt;
 &lt;/div&gt;
-
 &lt;p&gt;Veja como fazer isso:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Abra a activity onde você deseja exibir a sua tela nativa.&lt;/li&gt;
@@ -188,7 +199,10 @@ Após configurar o frame layout, é preciso informar ao Beagle qual componente s
 &lt;pre&gt;&lt;code&gt;                                                          .![](/docs-beagle/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-MC8IwWJstYtvxLbosfv%2F-MC8QfhsPkq60mGJKtfy%2Fserver-driven-comp-ios.gif?alt=media&amp;amp;token=b5500211-e2bc-477d-aea4-835245be1531).
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Clique no botão e perceba que a função nesse componente está implementada e funcional, ou seja, o Beagle exibe todos os componentes como se fossem nativos.&lt;/p&gt;
-&lt;p&gt;Você deve utilizar um view controller para &amp;ldquo;colocar&amp;rdquo; esse componente do BFF e, assim, exibí-lo em tela  iOS nativa.&lt;/p&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t104-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t104-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;Você deve utilizar um view controller para &amp;ldquo;colocar&amp;rdquo; esse componente do BFF e, assim, exibí-lo em tela  iOS nativa.&lt;/p&gt;
 &lt;p&gt;Mas antes, é preciso criar esse view controller para a tela nativa. Para isso, basta seguir os passos:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Instancie o componente server-driven a partir da classe &lt;code&gt;BeagleScreenViewController&lt;/code&gt;.&lt;/li&gt;
@@ -232,7 +246,10 @@ Após configurar o frame layout, é preciso informar ao Beagle qual componente s
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ao final do processo, você poderá &amp;ldquo;chamar&amp;rdquo; pela nossa tela nativa que irá aparecer a imagem abaixo. Lembrando que, para esse exemplo, foi criada uma tela  composta de uma &lt;code&gt;UILabel&lt;/code&gt; e de uma variável do tipo &lt;code&gt;BeagleScreenViewController&lt;/code&gt; , onde fica o componente server-driven.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/server-driven-comp-ios.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Se você ainda não configurou a biblioteca em seu projeto, &lt;a href=&#34;../../get-started/using-beagle/&#34;&gt;&lt;strong&gt;veja aqui como fazer isso&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t104-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t104-2&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;Se você ainda não configurou a biblioteca em seu projeto, &lt;a href=&#34;../../get-started/using-beagle/&#34;&gt;&lt;strong&gt;veja aqui como fazer isso&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Você deve utilizar o &lt;a href=&#34;../../features/customizacao/beagle-para-web/parametros-remote-view.md&#34;&gt;&lt;strong&gt;Remote View&lt;/strong&gt;&lt;/a&gt;, fornecido pela biblioteca do Beagle, para criar telas híbridas com alguns componentes server driven na web.&lt;/p&gt;
 &lt;p&gt;Veja a seguir como funciona para cada framework:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;React&lt;/strong&gt;&lt;/p&gt;
@@ -263,24 +280,16 @@ Após configurar o frame layout, é preciso informar ao Beagle qual componente s
 &lt;p&gt;No Angular, basta criar um componente nativo normalmente e adicionar o &lt;code&gt;beagle-remote-view&lt;/code&gt; junto ao template no local que você quer que os itens server-driven sejam renderizados.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&amp;lt;app-native-component text=&amp;#34;Sou um componente nativo&amp;#34;&amp;gt;&amp;lt;/app-native-component&amp;gt;
 &amp;lt;beagle-remote-view [loadParams]=&amp;#34;loadParams&amp;#34;&amp;gt;&amp;lt;/beagle-remote-view&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-
-No caso do Angular, não é possível usar o componente BeagleRemoteView caso ele seja carregado pela biblioteca de outra forma server-driven porque isso causa uma dependência circular e quebra a aplicação.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;p&gt;No caso do Angular, não é possível usar o componente BeagleRemoteView caso ele seja carregado pela biblioteca de outra forma server-driven porque isso causa uma dependência circular e quebra a aplicação.&lt;/p&gt;
 &lt;/div&gt;
-
-
-
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
-
 &lt;p&gt;Lembre-se de rodar seu projeto Angular usando um dos comandos:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;yarn run serve ou npx run serve&lt;/code&gt;&lt;/p&gt;
-
 &lt;/div&gt;
-
 &lt;p&gt;A sua tela híbrida com elementos nativos e server driven está pronta&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-ME4OQaHp-v_V78YeLiC%2F-ME7uUduHSFMpidOFn9E%2Fimage.png?alt=media&amp;amp;token=974fe2f0-0964-4d68-a16b-414e3fdd9d67&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;
 
       </description>
     </item>
@@ -295,9 +304,13 @@ No caso do Angular, não é possível usar o componente BeagleRemoteView caso el
         
         
         &lt;hr&gt;
-&lt;h2 id=&#34;pré-requisitos&#34;&gt;Pré-requisitos:&lt;/h2&gt;
 &lt;h2 id=&#34;passo-1-criar-a-tela-nativa&#34;&gt;Passo 1: Criar a tela nativa&lt;/h2&gt;
-&lt;p&gt;Para criar a tela nativa no Android basta somente criar uma nova Activity. Aqui usaremos a MainActivity como modelo:&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t105&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t105-0&#34; role=&#34;tab&#34; aria-controls=&#34;t105-0&#34; aria-selected=&#34;true&#34;&gt;Android&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t105-1&#34; role=&#34;tab&#34; aria-controls=&#34;t105-1&#34;&gt;iOS&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t105&#34;&gt;&lt;div id=&#34;t105-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t105-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;Para criar a tela nativa no Android, crie uma nova Activity. Aqui será usado a &lt;code&gt;MainActivity&lt;/code&gt; como modelo:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;MainActivity&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;AppCompatActivity&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;onCreate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;savedInstanceState&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Bundle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
         &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;super&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;onCreate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;savedInstanceState&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
@@ -308,18 +321,14 @@ No caso do Angular, não é possível usar o componente BeagleRemoteView caso el
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
-
-Por hora a MainActivity.kt não terá modificações. É necessário que modifiquemos o seu arquivo activity_main.xml primeiro.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+&lt;p&gt;Nesse momento, a MainActivity.kt não terá modificações. É necessário que o seu arquivo &lt;code&gt;activity_main.xml&lt;/code&gt; seja modificado primeiro.&lt;/p&gt;
 &lt;/div&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Abra o &lt;strong&gt;&lt;code&gt;activity_main.xml&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Por padrão, este arquivo vem configurado com o &lt;strong&gt;&lt;code&gt;Contraint Layout&lt;/code&gt;&lt;/strong&gt; e ele pode ser mantido dessa forma. Para que ele possa ser utilizado pelo Beagle é necessário que se declare um &lt;strong&gt;&lt;code&gt;Fragment Layout&lt;/code&gt;&lt;/strong&gt; nesse  arquivo xml. É nesse fragment que será carregado o componente Declarativo.&lt;/li&gt;
+&lt;li&gt;Por padrão, este arquivo vem configurado com o &lt;strong&gt;&lt;code&gt;Contraint Layout&lt;/code&gt;&lt;/strong&gt; e ele pode ser mantido dessa forma. Para que ele possa ser utilizado pelo Beagle é necessário que se declare um &lt;strong&gt;&lt;code&gt;Fragment Layout&lt;/code&gt;&lt;/strong&gt; nesse  arquivo xml. É nesse fragment que será carregado o componente declarativo.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Abaixo listamos o exemplo de xml utlizado nesse tutorial, o que finaliza a criação de nossa tela Nativa.&lt;/p&gt;
+&lt;p&gt;Veja o exemplo de xml utlizado nesse tutorial, o que finaliza a criação da tela Nativa.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
 &amp;lt;androidx.constraintlayout.widget.ConstraintLayout 
     xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
@@ -335,7 +344,10 @@ Por hora a MainActivity.kt não terá modificações. É necessário que modifiq
 
 &amp;lt;/FrameLayout&amp;gt;
 &amp;lt;/androidx.constraintlayout.widget.ConstraintLayout&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Nesse exemplo criamos a seguinte &lt;code&gt;UIViewController&lt;/code&gt;:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &lt;div id=&#34;t105-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t105-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;Nesse exemplo criamos a seguinte &lt;code&gt;UIViewController&lt;/code&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;NativeViewController&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;UIViewController&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
 
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;lazy&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;firstLabel&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;makeLabel&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;I&amp;#39;m a native UILabel&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
@@ -383,8 +395,14 @@ Por hora a MainActivity.kt não terá modificações. É necessário que modifiq
 
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;grayColor&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;#EEEEEE&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;passo-2-criar-o-componente-declarativo&#34;&gt;Passo 2: Criar o componente declarativo&lt;/h2&gt;
-&lt;p&gt;Para criar um componente declarativo do Beagle utilizaremos um Container (um componente do Beagle que agrupa outros componentes). Ele pode ser declarado como uma variavel ou como uma função que retorna um container. Nesse exemplo nós o configuramos como retorno de uma função.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&#34;passo-2-criar-o-componente-declarativo&#34;&gt;Passo 2: Criar o componente declarativo&lt;/h2&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t105&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t105-0&#34; role=&#34;tab&#34; aria-controls=&#34;t105-0&#34; aria-selected=&#34;true&#34;&gt;Android&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t105-1&#34; role=&#34;tab&#34; aria-controls=&#34;t105-1&#34;&gt;iOS&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t105&#34;&gt;&lt;div id=&#34;t105-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t105-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;Para criar um componente declarativo do Beagle, será usado um Container (um componente do Beagle que agrupa outros componentes). Ele pode ser declarado como uma variável ou como uma função que retorna um container. Nesse exemplo, foi configurado como retorno de uma função:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;fun declarativeComponente() = 
 
     Container( children = 
@@ -410,7 +428,10 @@ Por hora a MainActivity.kt não terá modificações. É necessário que modifiq
             )
         )
     )
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Para criar um componente declarativo do Beagle em forma de &lt;code&gt;UIView&lt;/code&gt; utilizamos o componente &lt;strong&gt;&lt;code&gt;BeagleView&lt;/code&gt;&lt;/strong&gt;, ele pode ser declarado como os componentes nativos criados no passo anterior. Segue um exemplo abaixo com um &lt;code&gt;Container&lt;/code&gt; que possui um texto e dois botões:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t105-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t105-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;Para criar um componente declarativo do Beagle em forma de &lt;code&gt;UIView&lt;/code&gt; utilizamos o componente &lt;strong&gt;&lt;code&gt;BeagleView&lt;/code&gt;&lt;/strong&gt;, ele pode ser declarado como os componentes nativos criados no passo anterior. Segue um exemplo abaixo com um &lt;code&gt;Container&lt;/code&gt; que possui um texto e dois botões:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;lazy&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;beagleView&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;BeagleView&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Container&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
         &lt;span style=&#34;color:#000&#34;&gt;widgetProperties&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;init&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
             &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;backgroundColor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;grayColor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
@@ -439,8 +460,14 @@ Por hora a MainActivity.kt não terá modificações. É necessário que modifiq
             &lt;span style=&#34;color:#000&#34;&gt;onPress&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Navigate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;openNativeRoute&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(.&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;init&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;route&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;navigateStep1Endpoint&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))]&lt;/span&gt;
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;})&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;passo-3-adicionar-o-componente-na-tela&#34;&gt;Passo 3: Adicionar o componente na tela&lt;/h2&gt;
-&lt;p&gt;Para adicionar esse componente a tela, será necessário chamar a função **&lt;code&gt;addView&lt;/code&gt;**do Android a partir do &lt;strong&gt;&lt;code&gt;Fragment Layout view&lt;/code&gt;&lt;/strong&gt; que foi declarado no &lt;code&gt;activity_main.xml&lt;/code&gt; como listado no exemplo abaixo.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&#34;passo-3-adicionar-o-componente-na-tela&#34;&gt;Passo 3: Adicionar o componente na tela&lt;/h2&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t105&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t105-0&#34; role=&#34;tab&#34; aria-controls=&#34;t105-0&#34; aria-selected=&#34;true&#34;&gt;Android&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t105-1&#34; role=&#34;tab&#34; aria-controls=&#34;t105-1&#34;&gt;iOS&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t105&#34;&gt;&lt;div id=&#34;t105-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t105-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;Para adicionar esse componente a tela, será necessário chamar a função **&lt;code&gt;addView&lt;/code&gt;**do Android a partir do &lt;strong&gt;&lt;code&gt;Fragment Layout view&lt;/code&gt;&lt;/strong&gt; que foi declarado no &lt;code&gt;activity_main.xml&lt;/code&gt; como listado no exemplo abaixo:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;MainActivity&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;AppCompatActivity&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;onCreate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;savedInstanceState&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Bundle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
         &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;super&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;onCreate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;savedInstanceState&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
@@ -450,9 +477,12 @@ Por hora a MainActivity.kt não terá modificações. É necessário que modifiq
         
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Como parametro do &lt;strong&gt;addView&lt;/strong&gt; listamos a função que retorna o componente que criamos aplicando o método do Beagle &lt;strong&gt;&lt;code&gt;.toView(this)v&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;O BeagleView pode ser adicionado como a UIView , nesse exemplo usamos o método addSubview() para adicionar este componente na tela.&lt;/p&gt;
-&lt;p&gt;Segue abaixo o método setupView() o qual é responsável por adicionar e ancorar os componentes da tela:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Como parâmetro do &lt;strong&gt;&lt;code&gt;addView&lt;/code&gt;&lt;/strong&gt; foi listado a função que retorna o componente criado aplicando o método do Beagle &lt;strong&gt;&lt;code&gt;.toView(this)v&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t105-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t105-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;O BeagleView pode ser adicionado como a &lt;code&gt;UIView&lt;/code&gt; , nesse exemplo foi usado o método &lt;code&gt;addSubview()&lt;/code&gt; para adicionar este componente na tela.&lt;/p&gt;
+&lt;p&gt;Segue abaixo o método &lt;code&gt;setupView()&lt;/code&gt; que é responsável por adicionar e ancorar os componentes da tela:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;setupView&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
         &lt;span style=&#34;color:#000&#34;&gt;view&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;backgroundColor&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;white&lt;/span&gt;
         
@@ -477,7 +507,8 @@ Por hora a MainActivity.kt não terá modificações. É necessário que modifiq
         &lt;span style=&#34;color:#000&#34;&gt;secondLabel&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;anchor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;top&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;beagleView&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;bottomAnchor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;topConstant&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;30&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
         &lt;span style=&#34;color:#000&#34;&gt;secondLabel&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;bottomAnchor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;constraint&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;lessThanOrEqualTo&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;layoutMargins&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;bottomAnchor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;isActive&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;E pronto. Basta inicializar a sua aplicação e a tela declarativa será renderizada nativamente.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;E pronto. Basta inicializar a sua aplicação e a tela declarativa será renderizada nativamente.&lt;/p&gt;
 
       </description>
     </item>

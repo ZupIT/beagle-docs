@@ -226,7 +226,12 @@
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;inserir-a-classe-ao-componente&#34;&gt;Inserir a classe ao componente&lt;/h3&gt;
 &lt;p&gt;O processo de inserir uma classe ao componente varia de acordo com o framework que estiver utilizando. Confira o processo para cada um deles nas abas a seguir:&lt;/p&gt;
-&lt;p&gt;No Angular, há duas formas de adicionar a classe que recebemos da propriedade &lt;code&gt;styleId&lt;/code&gt;:&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t95&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t95-0&#34; role=&#34;tab&#34; aria-controls=&#34;t95-0&#34; aria-selected=&#34;true&#34;&gt;Angular&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t95-1&#34; role=&#34;tab&#34; aria-controls=&#34;t95-1&#34;&gt;React&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t95&#34;&gt;&lt;div id=&#34;t95-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t95-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;No Angular, há duas formas de adicionar a classe que recebemos da propriedade &lt;code&gt;styleId&lt;/code&gt;:&lt;/p&gt;
 &lt;h4 id=&#34;1-pelo-viewencapsulation&#34;&gt;1. Pelo ViewEncapsulation&lt;/h4&gt;
 &lt;p&gt;Abra o arquivo do seu componente angular e, logo abaixo da propriedade &lt;code&gt;styleUrls&lt;/code&gt; do decorator @Component, adicione o enum ViewEncapsulation.none.&lt;/p&gt;
 &lt;p&gt;Veja como funciona no exemplo abaixo:&lt;/p&gt;
@@ -241,13 +246,9 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;yarn serve
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Depois que você adicionar o enum None à propriedade encapsulation do @Component(), é necessário fazer com que ela seja utilizada. Veja como na imagem abaixo:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%2812%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-
-
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
-
-Para entender mais sobre o &lt;strong&gt;ViewEncapsulation&lt;/strong&gt;, acesse a &lt;a href=&#34;https://angular.io/api/core/ViewEncapsulation#viewencapsulation&#34;&gt;&lt;strong&gt;documentação do Angular.&lt;/strong&gt;&lt;/a&gt;
+&lt;p&gt;Para entender mais sobre o &lt;strong&gt;ViewEncapsulation&lt;/strong&gt;, acesse a &lt;a href=&#34;https://angular.io/api/core/ViewEncapsulation#viewencapsulation&#34;&gt;&lt;strong&gt;documentação do Angular.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
-
 &lt;h4 id=&#34;2-pela-propriedade-styleid&#34;&gt;2. Pela propriedade StyleId&lt;/h4&gt;
 &lt;p&gt;Outra maneira de você adicionar a classe é mantendo a propriedade encapsulation como nativo. Para isso, é só abrir o arquivo do seu componente Angular e adicionar um novo @Input, no caso, o styleId.&lt;/p&gt;
 &lt;p&gt;Veja no exemplo a seguir:&lt;/p&gt;
@@ -270,7 +271,10 @@ Para entender mais sobre o &lt;strong&gt;ViewEncapsulation&lt;/strong&gt;, acess
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;npm run serve
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;yarn serve
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Qualquer uma das formas que você usou para conectar sua classe de estilo ao componente deve gerar o mesmo resultado e seu componente deve ser alterado de acordo com o estilo definido em sua classe.&lt;/p&gt;
-&lt;p&gt;Para projetos React, você acessa a sua classe por meio da propriedade &lt;code&gt;styleId.&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t95-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t95-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;Para projetos React, você acessa a sua classe por meio da propriedade &lt;code&gt;styleId.&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Importe seu arquivo de estilos no componente e você precisa atribuir o valor de &lt;code&gt;styleId&lt;/code&gt;  ao &lt;code&gt;className&lt;/code&gt; por meio das props.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;React&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;react&amp;#39;&lt;/span&gt;
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;./custom-text.style.css&amp;#39;&lt;/span&gt;
@@ -283,6 +287,7 @@ Para entender mais sobre o &lt;strong&gt;ViewEncapsulation&lt;/strong&gt;, acess
 
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;CustomTextComponent&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Pronto, os elementos do seu componente já devem receber a classe definida no JSON&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;
 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;

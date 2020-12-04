@@ -44,7 +44,7 @@ As features descritas aqui estão disponíveis apenas nas versões acima de 1.2.
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;_beagleComponent_&lt;/code&gt; é o nome do componenete UI a ser renderizado;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;id&lt;/code&gt; é o identificador único para o node. Observação: mesmo que o &lt;code&gt;id&lt;/code&gt; é obrigatório pela estrutura interna da árvore, antes de processá-la, o Beagle atribui um id único qualquer para cada node sem um id, tornando-o opcional no json fornecido pelo backend.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;context&lt;/code&gt; é um &lt;a href=&#34;../../../../api/contexto.md&#34;&gt;&lt;strong&gt;contexto&lt;/strong&gt; &lt;/a&gt;definido para um componente e seus filhos.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;context&lt;/code&gt; é um &lt;a href=&#34;../../../../api/contexto/&#34;&gt;&lt;strong&gt;contexto&lt;/strong&gt; &lt;/a&gt;definido para um componente e seus filhos.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;children&lt;/code&gt; é uma array de nodes representando os filhos que estão no node atual.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;style&lt;/code&gt;  é a regra de estilização dos componentes. Essas regras não são CSS, mas &lt;a href=&#34;../../../estilizacao/&#34;&gt;&lt;strong&gt;estruturas definidas pelo Beagle.&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;O node possui propriedades esperadas pelo próprio componente, como text, que poderia ter &lt;code&gt;text&lt;/code&gt; e &lt;code&gt;justify&lt;/code&gt;, enquanto o botão poderia ter &lt;code&gt;onPress&lt;/code&gt;, &lt;code&gt;text&lt;/code&gt; e &lt;code&gt;disabled&lt;/code&gt;.&lt;/li&gt;
@@ -635,7 +635,7 @@ class Table {
 &lt;/ul&gt;
 &lt;p&gt;Esse lifecycle pode ser usado para rodar o código necessário para que a view seja renderizada e não requer ações, contexto, expressões e estilos, pois já foram processados.&lt;/p&gt;
 &lt;h4 id=&#34;exemplos-de-uso-2&#34;&gt;Exemplos de uso&lt;/h4&gt;
-&lt;p&gt;Contextos são definidos, referenciados e manipulados no JSON da view. Mas, se você quiser acessar os dados da aplicação o Beagle oferece uma funcionalidade chamada &lt;a href=&#34;../../../../api/global-context.md&#34;&gt;&lt;strong&gt;Contexto Global&lt;/strong&gt;&lt;/a&gt;, que é possivel lidar com esse cenário. Se não tivesse essa função, o lifecycle AfterViewSnapshot também consegue lidar com isso.&lt;/p&gt;
+&lt;p&gt;Contextos são definidos, referenciados e manipulados no JSON da view. Mas, se você quiser acessar os dados da aplicação o Beagle oferece uma funcionalidade chamada &lt;a href=&#34;../../../../api/contexto-global.md&#34;&gt;&lt;strong&gt;Contexto Global&lt;/strong&gt;&lt;/a&gt;, que é possivel lidar com esse cenário. Se não tivesse essa função, o lifecycle AfterViewSnapshot também consegue lidar com isso.&lt;/p&gt;
 &lt;p&gt;Um exemplo, se você tem uma aplicação financeira e quer saber o balanço do usuário. Você deve garantir que cada haja a renderização de cada valor recente.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
   &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;container&amp;#34;,

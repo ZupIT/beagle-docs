@@ -75,7 +75,7 @@ Beagle.dependencies = dependencies
         
         &lt;hr&gt;
 &lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
-&lt;p&gt;No protocolo &lt;code&gt;BeagleNavigation&lt;/code&gt; temos uma variável &lt;code&gt;defaultAnimation&lt;/code&gt; que permite que você mude as animações de transição da sua aplicação, e também outra função  que lida com os tipos de ações &lt;a href=&#34;../../../api/api-acoes/navigate/&#34;&gt;&lt;strong&gt;navigate&lt;/strong&gt;&lt;/a&gt; e define os seus comportamentos.&lt;/p&gt;
+&lt;p&gt;No protocolo &lt;code&gt;BeagleNavigation&lt;/code&gt; temos uma variável &lt;code&gt;defaultAnimation&lt;/code&gt; que permite que você mude as animações de transição da sua aplicação, e também outra função  que lida com os tipos de ações &lt;a href=&#34;../../../api/acoes/navigate/&#34;&gt;&lt;strong&gt;navigate&lt;/strong&gt;&lt;/a&gt; e define os seus comportamentos.&lt;/p&gt;
 &lt;p&gt;Sugerimos que você use a implementação default, mas se necessário, é permitido que essa implementação seja substituída por uma classe que está de acordo com o protocolo acima.&lt;/p&gt;
 &lt;h2 id=&#34;protocolo-e-customização&#34;&gt;Protocolo e customização&lt;/h2&gt;
 &lt;p&gt;No protocolo da &lt;code&gt;BeagleNavigation&lt;/code&gt; temos uma variável &lt;code&gt;defaultAnimation&lt;/code&gt; que determina como a animação de uma tela acontece quando ela é apresentada.&lt;/p&gt;
@@ -671,7 +671,7 @@ Faça a configuração do &lt;code&gt;navigationControllerType&lt;/code&gt; com 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;remoteScreen(Request.Error)&lt;/code&gt;: A requisição para carregar uma tela remota falhou. Veja abaixo quando isso ocorre.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;lazyLoad(Request.Error)&lt;/code&gt;: A requisição para carregar um &lt;a href=&#34;../../../api/componentes/lazy.md&#34;&gt;&lt;strong&gt;componente Lazy&lt;/strong&gt;&lt;/a&gt; falhou. Veja abaixo quando isso ocorre.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;action(Swift.Error)&lt;/code&gt;: A execução de uma &lt;a href=&#34;../../../api/api-acoes/&#34;&gt;&lt;strong&gt;Action&lt;/strong&gt;&lt;/a&gt; falhou.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;action(Swift.Error)&lt;/code&gt;: A execução de uma &lt;a href=&#34;../../../api/acoes/&#34;&gt;&lt;strong&gt;Action&lt;/strong&gt;&lt;/a&gt; falhou.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Erros em uma requisição&lt;/strong&gt; (&lt;code&gt;Request.Error&lt;/code&gt;):&lt;/p&gt;
 &lt;ul&gt;
@@ -867,7 +867,7 @@ Você irá usar o &lt;code&gt;Text&lt;/code&gt; como um widget que possui o &lt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;navigation&#34;&gt;Navigation&lt;/h2&gt;
-&lt;p&gt;O &lt;code&gt;navigation&lt;/code&gt; lida com tipo de ações de &lt;a href=&#34;../../../api/api-acoes/navigate/&#34;&gt;&lt;strong&gt;navigate&lt;/strong&gt;&lt;/a&gt; da sua aplicação. Existe uma implementação que é usada como valor default, mas que também pode ser substituída por uma classe que  está de acordo com BeagleNavigation**.**&lt;/p&gt;
+&lt;p&gt;O &lt;code&gt;navigation&lt;/code&gt; lida com tipo de ações de &lt;a href=&#34;../../../api/acoes/navigate/&#34;&gt;&lt;strong&gt;navigate&lt;/strong&gt;&lt;/a&gt; da sua aplicação. Existe uma implementação que é usada como valor default, mas que também pode ser substituída por uma classe que  está de acordo com BeagleNavigation**.**&lt;/p&gt;
 &lt;p&gt;Nesse mesmo atributo também é possível definir uma &lt;a href=&#34;beaglenavigation.md&#34;&gt;animação de navegação&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;prefetchhelper&#34;&gt;PreFetchHelper&lt;/h2&gt;
 &lt;p&gt;Este componente é usado como pré-busca do &lt;a href=&#34;beaglescreenviewcontroller.md&#34;&gt;&lt;strong&gt;&lt;code&gt;BeagleScreenViewControllers&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt; e entrega uma experiência para o usuário mais fluida. Ela já possui um valor e pode ser alterado para se adequar em que você precisa.&lt;/p&gt;
@@ -1059,7 +1059,12 @@ Para mais informações e detalhes sobre o Sourcery, acesse a &lt;a href=&#34;ht
 Os atributos escritos dentro do&lt;code&gt;.yml&lt;/code&gt; consideram que  os arquivos &lt;strong&gt;Cartfile&lt;/strong&gt; ou &lt;strong&gt;Podfile&lt;/strong&gt; estão no mesmo diretório que o &lt;code&gt;.xcodeproj&lt;/code&gt; ou &lt;code&gt;.xcworkspace&lt;/code&gt;
 &lt;/div&gt;
 
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;sources&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t74&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t74-0&#34; role=&#34;tab&#34; aria-controls=&#34;t74-0&#34; aria-selected=&#34;true&#34;&gt;Cocoa Pods&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t74-1&#34; role=&#34;tab&#34; aria-controls=&#34;t74-1&#34;&gt;Carthage&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t74&#34;&gt;&lt;div id=&#34;t74-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t74-0&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;sources&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;include&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;    &lt;/span&gt;- &lt;span style=&#34;color:#000&#34;&gt;RootOfYourProject&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;    &lt;/span&gt;- &lt;span style=&#34;color:#000&#34;&gt;Pods/Beagle/iOS/Sources/Beagle/CodeGeneration/SourceryProtocols.swift&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
@@ -1067,7 +1072,10 @@ Os atributos escritos dentro do&lt;code&gt;.yml&lt;/code&gt; consideram que  os 
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;- &lt;span style=&#34;color:#000&#34;&gt;Pods/Beagle/iOS/Sources/Beagle/CodeGeneration/Templates&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;RootOfYourProject/CodeGeneration/Generated&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;sources&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t74-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t74-1&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;sources&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;include&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;    &lt;/span&gt;- &lt;span style=&#34;color:#000&#34;&gt;RootOfYourProject&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;    &lt;/span&gt;- &lt;span style=&#34;color:#000&#34;&gt;Carthage/Checkouts/beagle/iOS/Sources/Beagle/CodeGeneration/SourceryProtocols.swift&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
@@ -1075,7 +1083,8 @@ Os atributos escritos dentro do&lt;code&gt;.yml&lt;/code&gt; consideram que  os 
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;- &lt;span style=&#34;color:#000&#34;&gt;Carthage/Checkouts/beagle/iOS/Sources/Beagle/CodeGeneration/Templates&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;output&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;RootOfYourProject/CodeGeneration/Generated&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;utilização&#34;&gt;Utilização&lt;/h2&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&#34;utilização&#34;&gt;Utilização&lt;/h2&gt;
 &lt;p&gt;Por default, os Custom Widgets precisam implementar  &lt;code&gt;init(from decoder: Decoder) throws&lt;/code&gt;.  Isso pode ser automatizado com o Sourcery, como no exemplo abaixo:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;UIKit&lt;/span&gt;
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;BeagleUI&lt;/span&gt;

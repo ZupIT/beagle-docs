@@ -265,7 +265,12 @@ If your team works with micro-services using a framework other than Spring or Mi
 &lt;p&gt;Spring makes programming Java quicker, easier, and safer for everybody. Spring’s focus on speed, simplicity, and productivity has made it the world&amp;rsquo;s most popular Java framework.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Once you choose the framework you&amp;rsquo;ll work with, proceed with the configurations below:&lt;/p&gt;
-&lt;h3 id=&#34;creating-a-micro-service&#34;&gt;Creating a micro-service&lt;/h3&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t6&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t6-0&#34; role=&#34;tab&#34; aria-controls=&#34;t6-0&#34; aria-selected=&#34;true&#34;&gt;Micronaut&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t6-1&#34; role=&#34;tab&#34; aria-controls=&#34;t6-1&#34;&gt;Spring&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t6&#34;&gt;&lt;div id=&#34;t6-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t6-0&#34;&gt;
+
+&lt;p&gt;&lt;h3 id=&#34;creating-a-micro-service&#34;&gt;Creating a micro-service&lt;/h3&gt;
 &lt;h4 id=&#34;micronaut-lt-13&#34;&gt;Micronaut &amp;lt;= 1.3&lt;/h4&gt;
 &lt;p&gt;As described on &lt;a href=&#34;https://docs.micronaut.io/1.3.3/guide/index.html#quickStart&#34;&gt;&lt;strong&gt;Micronaut&amp;rsquo;s quick start&lt;/strong&gt;&lt;/a&gt;, create your application through a CLI tool with this command:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#a40000&#34;&gt;$&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;mn&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;create&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;app&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;bff&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;build&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;maven&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;--&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;lang&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;kotlin&lt;/span&gt;
@@ -285,7 +290,10 @@ If your team works with micro-services using a framework other than Spring or Mi
 &lt;/li&gt;
 &lt;li&gt;Unzip the file and open the extracted folder in your IDE.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;create-a-micro-service&#34;&gt;Create a micro-service&lt;/h3&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t6-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t6-1&#34;&gt;
+
+&lt;p&gt;&lt;h3 id=&#34;create-a-micro-service&#34;&gt;Create a micro-service&lt;/h3&gt;
 &lt;p&gt;Use Spring&amp;rsquo;s Initializr to create a project for your micro-service. Click the following link, &lt;a href=&#34;https://start.spring.io/#!type=maven-project&amp;amp;language=kotlin&amp;amp;packaging=jar&amp;amp;jvmVersion=1.8&amp;amp;groupId=com.example&amp;amp;artifactId=bff&amp;amp;name=bff&amp;amp;description=Demo%20project%20for%20Beagle%20BFF%20using%20Spring%20Boot&amp;amp;packageName=com.example.bff&amp;amp;dependencies=actuator&#34;&gt;&lt;strong&gt;Spring Initializr for Beagle Spring Starter&lt;/strong&gt;&lt;/a&gt;,  to get recommended settings.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%288%29.png&#34; alt=&#34;Spring Initializr with recommended settings for a BFF with Spring, using Beagle Spring Starter&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -299,6 +307,7 @@ If your team works with micro-services using a framework other than Spring or Mi
 &lt;li&gt;Click &lt;code&gt;GENERATE&lt;/code&gt; to download a zip file containing your project.&lt;/li&gt;
 &lt;li&gt;Unzip the file and open the extracted folder in your IDE.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/div&gt;&lt;/div&gt;
 &lt;h3 id=&#34;step-2-configure-dependencies-lt-110&#34;&gt;Step 2: Configure dependencies (&amp;lt; 1.1.0)&lt;/h3&gt;
 &lt;p&gt;Once you created and configured the micro-services, you have to add the address of our nexus. To do so, add the following to your &lt;code&gt;pom.xml&lt;/code&gt;, found in the root of the generated project:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;&amp;lt;repositories&amp;gt;
@@ -310,14 +319,15 @@ If your team works with micro-services using a framework other than Spring or Mi
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;step-3-include-starter-dependency&#34;&gt;Step 3: Include starter dependency&lt;/h3&gt;
 &lt;p&gt;Lastly, you have to add the dependency for the Beagle starter to your backend. In that case, the framework you chose will define the dependency&amp;rsquo;s name (&lt;code&gt;artifactId&lt;/code&gt;) should be done.&lt;/p&gt;
 &lt;p&gt;Click on the tab of the framework you&amp;rsquo;re using and follow the steps to continue the configuration.&lt;/p&gt;
-&lt;h3 id=&#34;additional-requirements&#34;&gt;Additional Requirements:&lt;/h3&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t6&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t6-0&#34; role=&#34;tab&#34; aria-controls=&#34;t6-0&#34; aria-selected=&#34;true&#34;&gt;Micronaut Starter&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t6-1&#34; role=&#34;tab&#34; aria-controls=&#34;t6-1&#34;&gt;Spring Starter&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t6&#34;&gt;&lt;div id=&#34;t6-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t6-0&#34;&gt;
 
-
+&lt;p&gt;&lt;h3 id=&#34;additional-requirements&#34;&gt;Additional Requirements:&lt;/h3&gt;
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
-
-This starter also configures version &lt;strong&gt;1.3.3&lt;/strong&gt; of**&lt;code&gt;micronaut-runtime&lt;/code&gt;**module in your BFF**.**
+&lt;p&gt;This starter also configures version &lt;strong&gt;1.3.3&lt;/strong&gt; of**&lt;code&gt;micronaut-runtime&lt;/code&gt;**module in your BFF**.**&lt;/p&gt;
 &lt;/div&gt;
-
 &lt;p&gt;To follow this requirement, you just have to add the dependency below to your &lt;code&gt;pom.xml&lt;/code&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The current release version of Beagle is: &lt;a href=&#34;https://mvnrepository.com/artifact/br.com.zup.beagle/framework&#34;&gt;&lt;img src=&#34;https://camo.githubusercontent.com/27998a386042ecb2cae7b9f09ae159bd07c935bd/68747470733a2f2f696d672e736869656c64732e696f2f6d6176656e2d63656e7472616c2f762f62722e636f6d2e7a75702e626561676c652f6672616d65776f726b&#34; alt=&#34;back&#34;&gt;&lt;/a&gt;&lt;/li&gt;
@@ -327,14 +337,13 @@ This starter also configures version &lt;strong&gt;1.3.3&lt;/strong&gt; of**&lt;
 	&amp;lt;artifactId&amp;gt;beagle-micronaut-starter&amp;lt;/artifactId&amp;gt;
 	&amp;lt;version&amp;gt;${beagle.version}&amp;lt;/version&amp;gt;
 &amp;lt;/dependency&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;additional-requirements-1&#34;&gt;Additional Requirements:&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &lt;div id=&#34;t6-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t6-1&#34;&gt;
 
-
+&lt;p&gt;&lt;h3 id=&#34;additional-requirements&#34;&gt;Additional Requirements:&lt;/h3&gt;
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
-
-This starter also configures version &lt;strong&gt;2.2.5&lt;/strong&gt; of**&lt;code&gt;spring-boot-starter-web&lt;/code&gt;**module in your BFF**.**
+&lt;p&gt;This starter also configures version &lt;strong&gt;2.2.5&lt;/strong&gt; of**&lt;code&gt;spring-boot-starter-web&lt;/code&gt;**module in your BFF**.**&lt;/p&gt;
 &lt;/div&gt;
-
 &lt;p&gt;To follow this requirement, you just have to add the dependency below to your &lt;code&gt;pom.xml&lt;/code&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;To check which Beagle&amp;rsquo;s version is:&lt;a href=&#34;https://mvnrepository.com/artifact/br.com.zup.beagle/framework&#34;&gt;&lt;img src=&#34;https://camo.githubusercontent.com/27998a386042ecb2cae7b9f09ae159bd07c935bd/68747470733a2f2f696d672e736869656c64732e696f2f6d6176656e2d63656e7472616c2f762f62722e636f6d2e7a75702e626561676c652f6672616d65776f726b&#34; alt=&#34;back&#34;&gt;&lt;/a&gt;&lt;/li&gt;
@@ -347,26 +356,18 @@ This starter also configures version &lt;strong&gt;2.2.5&lt;/strong&gt; of**&lt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Insert the Beagle&amp;rsquo;s release version on the place of&lt;code&gt;${beagle.version}&lt;/code&gt;, in other words, put the Beagle&amp;rsquo;s version highlighted in blue badge above without the &lt;strong&gt;&lt;code&gt;v character&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;For example:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%28107%29.png&#34; alt=&#34;https://img.shields.io/bintray/v/zupit/repo/beagle&#34;&gt;-&lt;code&gt;ext.beagle.version = &amp;quot;0.2.8&amp;quot;&lt;/code&gt;&lt;/p&gt;
-
-
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-
-Remember to always check if you&amp;rsquo;re using the latest version of Beagle. To see this information, you just have to pass your mouse above the version number. After that, sync your machine.
+&lt;p&gt;Remember to always check if you’re using the latest version of Beagle. To see this information, you just have to pass your mouse above the version number. After that, sync your machine.&lt;/p&gt;
 &lt;/div&gt;
-
 &lt;p&gt;Well done, your initial configuration is ready to be used!&lt;/p&gt;
 &lt;p&gt;You can check a screen or server-driven component&lt;a href=&#34;../using-beagle/&#34;&gt; &lt;strong&gt;to test the BFF&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-
-
 &lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
-
 &lt;p&gt;Spring Boot has a known problem involving &lt;code&gt;WebMvcConfigurationSupport&lt;/code&gt;. Its presence replaces other configurations, including the ones in Beagle&amp;rsquo;s Spring Starter.&lt;/p&gt;
 &lt;p&gt;In case you face a similar problem, we suggest you replace it for&lt;code&gt;WebMvcConfigurer.&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;To see more about it, access &lt;a href=&#34;%20https://github.com/spring-projects/spring-boot/issues/12751.&#34;&gt;&lt;strong&gt;this issue on Github.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The annotation&lt;code&gt;@EnableWebMvc&lt;/code&gt;causes the same problem, which means that you should replace it.&lt;/p&gt;
-
 &lt;/div&gt;
-
+&lt;/div&gt;&lt;/div&gt;
 
 
 &lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
