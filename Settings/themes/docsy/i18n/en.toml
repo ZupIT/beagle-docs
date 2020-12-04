@@ -1,5 +1,3 @@
-
-
 # UI strings. Buttons and similar.
 
 [ui_pager_prev]
@@ -25,7 +23,6 @@ other = "All Rights Reserved"
 [footer_privacy_policy]
 other = "Privacy Policy"
 
-
 # Post (blog, articles etc.)
 [post_byline_by]
 other = "By"
@@ -40,6 +37,6 @@ other = "Create child page"
 [post_create_issue]
 other = "Create documentation issue"
 [post_create_project_issue]
-other = "Create project issue"
+other = "Create Beagle issue"
 [post_posts_in]
 other = "Posts in"
