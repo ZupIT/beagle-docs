@@ -11,4 +11,3 @@ min_version = 0.53
   name = "ZupIT"
   homepage = "https://github.com/ZupIT/beagle"
 
-github_brach = "main"
