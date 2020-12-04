@@ -1,5 +1,5 @@
 ---
-title: Resultado da pesquisa
+title: Resultado da Pesquisa
 layout: search
 
 ---
