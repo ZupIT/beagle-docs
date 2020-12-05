@@ -5,7 +5,7 @@ publishDir = "../docs"
 
 enableRobotsTXT = true
 
-theme = ["docsy"]
+theme = ["devrel"]
 
 enableGitInfo = true
 
