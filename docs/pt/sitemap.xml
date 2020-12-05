@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/</loc>
+    <lastmod>2020-12-05T15:31:47-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zupit.github.io/docs-beagle/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://zupit.github.io/docs-beagle/pt/"
+                />
+  </url>
+  
+  <url>
     <loc>https://zupit.github.io/docs-beagle/pt/docs/vis%C3%A3o-geral/</loc>
   </url>
   
@@ -960,21 +975,6 @@
                 rel="alternate"
                 hreflang="pt"
                 href="https://zupit.github.io/docs-beagle/pt/docs/release-notes/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/</loc>
-    <lastmod>2020-11-10T14:17:55-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://zupit.github.io/docs-beagle/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://zupit.github.io/docs-beagle/pt/"
                 />
   </url>
   
