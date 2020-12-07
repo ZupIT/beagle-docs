@@ -10,7 +10,7 @@ description: >-
 
 ## Introdução
 
-O **`DeepLinkHandler`** é uma **interface** que define como configurar a **navegação** entre uma **Server-Driven activity** e uma **activity nativa.** 
+O **`DeepLinkHandler`** é uma **interface** que define como configurar a navegação entre uma **Server-Driven activity** e uma **activity nativa.** 
 
 ## Exemplo
 
