@@ -1,7 +1,8 @@
 ---
 title: Proguard configuration
 weight: 124
-description: 'You will find here, ProGuard description and configuration for Beagle.'
+description: >-
+   You will find here, ProGuard description and configuration for Beagle.
 ---
 
 ---

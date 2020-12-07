@@ -1,11 +1,9 @@
 ---
-title: Beagle
-linkTitle: Beagle
+title: Overview
 type: docs
 weight: 1
 description: >-
-  Nesta seção, você encontra informações iniciais sobre o Beagle antes de se
-  aprofundar no produto.
+  Here, you'll find all initial information about Beagle before getting deeper on the project.
 ---
 
 ---

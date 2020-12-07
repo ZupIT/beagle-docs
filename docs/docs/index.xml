@@ -501,7 +501,7 @@ To keep configuring Beagle:&lt;/p&gt;
         
         &lt;hr&gt;
 &lt;h2 id=&#34;usage-configurations&#34;&gt;&lt;strong&gt;Usage configurations&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;Once you have finished &lt;a href=&#34;../installing-beagle/android.md&#34;&gt;&lt;strong&gt;Beagle&amp;rsquo;s installation&lt;/strong&gt;&lt;/a&gt;, you have to make now our tool&amp;rsquo;s usage configuration. To make this process easier, we&amp;rsquo;ll use an example of &lt;strong&gt;how to render a&lt;/strong&gt; &lt;strong&gt;&amp;ldquo;Hello Beagle! screen&lt;/strong&gt; with a small description.&lt;/p&gt;
+&lt;p&gt;Once you have finished &lt;a href=&#34;../../installing-beagle/android&#34;&gt;&lt;strong&gt;Beagle&amp;rsquo;s installation&lt;/strong&gt;&lt;/a&gt;, you have to make now our tool&amp;rsquo;s usage configuration. To make this process easier, we&amp;rsquo;ll use an example of &lt;strong&gt;how to render a&lt;/strong&gt; &lt;strong&gt;&amp;ldquo;Hello Beagle! screen&lt;/strong&gt; with a small description.&lt;/p&gt;
 &lt;h3 id=&#34;step-1-update-android-manifest&#34;&gt;&lt;strong&gt;Step 1: Update Android Manifest&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;In this step, you have to update your &lt;code&gt;AndroidManifest&lt;/code&gt; and add two lines on this file:&lt;/p&gt;
 &lt;ol&gt;

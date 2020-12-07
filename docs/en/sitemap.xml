@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://zupit.github.io/docs-beagle/</loc>
-    <lastmod>2020-12-05T15:31:47-03:00</lastmod>
+    <lastmod>2020-12-07T15:35:49-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
@@ -79,22 +79,12 @@
   
   <url>
     <loc>https://zupit.github.io/docs-beagle/docs/get-started/using-beagle/android/</loc>
-    <lastmod>2020-12-04T17:37:12-03:00</lastmod>
+    <lastmod>2020-12-07T15:05:09-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://zupit.github.io/docs-beagle/docs/get-started/using-beagle/ios/</loc>
     <lastmod>2020-12-04T17:37:12-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/blog/news/</loc>
-    <lastmod>2020-10-30T13:10:52-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/blog/releases/</loc>
-    <lastmod>2020-10-30T13:10:52-03:00</lastmod>
   </url>
   
   <url>
@@ -339,7 +329,7 @@
   
   <url>
     <loc>https://zupit.github.io/docs-beagle/docs/resources/customization/beagle-for-android/proguard-configuration/</loc>
-    <lastmod>2020-12-04T17:37:12-03:00</lastmod>
+    <lastmod>2020-12-07T14:28:47-03:00</lastmod>
   </url>
   
   <url>
@@ -950,36 +940,6 @@
                 hreflang="en"
                 href="https://zupit.github.io/docs-beagle/docs/api/widget/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/blog/2018/10/06/easy-documentation-with-docsy/</loc>
-    <lastmod>2020-10-30T13:10:52-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/blog/2018/10/06/the-second-blog-post/</loc>
-    <lastmod>2020-10-30T13:10:52-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/blog/2018/01/04/another-great-release/</loc>
-    <lastmod>2020-10-30T13:10:52-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/about/</loc>
-    <lastmod>2020-10-30T13:10:52-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/blog/</loc>
-    <lastmod>2020-11-09T11:13:56-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-beagle/community/</loc>
-    <lastmod>2020-10-30T13:10:52-03:00</lastmod>
   </url>
   
   <url>

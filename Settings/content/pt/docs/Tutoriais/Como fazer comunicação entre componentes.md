@@ -10,7 +10,7 @@ description: >-
 
 A **comunicação entre componentes** é uma forma de compartilhar informações com o uso de Observables que, de modo geral, emitem notificações sempre que uma mudança acontece com eles. 
 
-Abaixo, você verá como fazer a configuração dessa comunicação usando o [**Contexto, um componente do Beagle.** ](../api/contexto/)
+Abaixo, você verá como fazer a configuração dessa comunicação usando o [**Contexto, um componente do Beagle.** ](../../api/contexto/)
 
 ## Configurando a comunicação entre componentes.
 
@@ -37,7 +37,7 @@ O endpoint abaixo retorna um JSON semelhante. Listamos somente os dados que vamo
 
 ## Como vou comunicar?
 
-Uma função chamada [**SetContext**](../api/acoes/setcontext.md) é a responsável por atualizar os valores do componente contexto. Ela poderá ser chamada na tela se você quiser usar as informações que estiverem nesse contexto. 
+Uma função chamada [**SetContext**](../../api/acoes/setcontext) é a responsável por atualizar os valores do componente contexto. Ela poderá ser chamada na tela se você quiser usar as informações que estiverem nesse contexto. 
 
 Para fazer a comunicação, basta seguir os próximos passos: 
 

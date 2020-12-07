@@ -10,7 +10,7 @@ description: >-
 
 ## **Usage configurations** 
 
-Once you have finished [**Beagle's installation**](../installing-beagle/android.md), you have to make now our tool's usage configuration. To make this process easier, we'll use an example of **how to render a** **"Hello Beagle! screen** with a small description.
+Once you have finished [**Beagle's installation**](../../installing-beagle/android), you have to make now our tool's usage configuration. To make this process easier, we'll use an example of **how to render a** **"Hello Beagle! screen** with a small description.
 
 ### **Step 1: Update Android Manifest**
 
