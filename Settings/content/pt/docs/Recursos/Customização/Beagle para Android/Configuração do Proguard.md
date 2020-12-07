@@ -15,7 +15,7 @@ Quando um método de ofuscação é utilizado, é necessário que algumas regras
 
 Para garantir isso, você deve adicionar as seguintes regras no arquivo **`android-rules.pro`** do ProGuard:
 
-```markup
+```kotlin
 proguard-rules.pro
 
  Beagle uses coroutines in network requests
