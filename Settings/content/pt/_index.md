@@ -1,6 +1,5 @@
 ---
-title: Beagle
-linkTitle: Beagle
+title: Visão geral
 type: docs
 weight: 1
 description: >-
