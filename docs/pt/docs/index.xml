@@ -7194,7 +7194,7 @@ Aqui, você também habilita o &lt;code&gt;minifyEnable&lt;/code&gt; e &lt;code&
         
         &lt;hr&gt;
 &lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
-&lt;p&gt;O &lt;strong&gt;&lt;code&gt;DeepLinkHandler&lt;/code&gt;&lt;/strong&gt; é uma &lt;strong&gt;interface&lt;/strong&gt; que define como configurar a navegação entre uma &lt;strong&gt;Server-Driven activity&lt;/strong&gt; e uma &lt;strong&gt;activity nativa.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;O &lt;strong&gt;&lt;code&gt;DeepLinkHandler&lt;/code&gt;&lt;/strong&gt; é uma &lt;strong&gt;interface&lt;/strong&gt; que define como configurar a &lt;strong&gt;navegação&lt;/strong&gt; entre uma &lt;strong&gt;Server-Driven activity&lt;/strong&gt; e uma &lt;strong&gt;activity nativa.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;exemplo&#34;&gt;Exemplo&lt;/h2&gt;
 &lt;h3 id=&#34;criando-um-deeplinkhandler&#34;&gt;Criando um DeepLinkHandler&lt;/h3&gt;
 &lt;p&gt;Para realizar essa configuração, você deve criar uma classe que implemente a interface &lt;code&gt;DeepLinkHandler&lt;/code&gt; e que faça a anotação com &lt;strong&gt;&lt;code&gt;@BeagleComponent&lt;/code&gt;&lt;/strong&gt;, conforme listado abaixo:&lt;/p&gt;
