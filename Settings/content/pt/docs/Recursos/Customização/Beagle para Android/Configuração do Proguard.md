@@ -10,7 +10,7 @@ description: >-
 
 ## Introdução
 
-Quando um método de ofuscação é usado, é necessário que algumas regras sejam implementadas para garantir que os nomes e os IDs usados  internamente pelo Beagle, não sejam ofuscados ou minificados. 
+Quando um método de ofuscação é utilizado, é necessário que algumas regras sejam implementadas para garantir que os nomes e os IDs usados  internamente pelo Beagle, não sejam ofuscados ou minificados. 
 
 ## Exemplo
 
