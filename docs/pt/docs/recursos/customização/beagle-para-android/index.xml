@@ -534,7 +534,7 @@ Esse id é o que o BFF irá usar pra identificar qual activity usar.
         
         &lt;hr&gt;
 &lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
-&lt;p&gt;Quando um método de ofuscação é usado, é necessário que algumas regras sejam implementadas para garantir que os nomes e os IDs usados  internamente pelo Beagle, não sejam ofuscados ou minificados.&lt;/p&gt;
+&lt;p&gt;Quando um método de ofuscação é utilizado, é necessário que algumas regras sejam implementadas para garantir que os nomes e os IDs usados  internamente pelo Beagle, não sejam ofuscados ou minificados.&lt;/p&gt;
 &lt;h2 id=&#34;exemplo&#34;&gt;Exemplo&lt;/h2&gt;
 &lt;p&gt;Para garantir isso, você deve adicionar as seguintes regras no arquivo &lt;strong&gt;&lt;code&gt;android-rules.pro&lt;/code&gt;&lt;/strong&gt; do ProGuard:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;proguard-rules.pro
