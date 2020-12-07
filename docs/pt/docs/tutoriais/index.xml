@@ -24,7 +24,7 @@
         
         &lt;hr&gt;
 &lt;p&gt;A &lt;strong&gt;comunicação entre componentes&lt;/strong&gt; é uma forma de compartilhar informações com o uso de Observables que, de modo geral, emitem notificações sempre que uma mudança acontece com eles.&lt;/p&gt;
-&lt;p&gt;Abaixo, você verá como fazer a configuração dessa comunicação usando o &lt;a href=&#34;../api/contexto/&#34;&gt;&lt;strong&gt;Contexto, um componente do Beagle.&lt;/strong&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Abaixo, você verá como fazer a configuração dessa comunicação usando o &lt;a href=&#34;../../api/contexto/&#34;&gt;&lt;strong&gt;Contexto, um componente do Beagle.&lt;/strong&gt; &lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;configurando-a-comunicação-entre-componentes&#34;&gt;Configurando a comunicação entre componentes.&lt;/h2&gt;
 &lt;h3 id=&#34;o-que-vou-comunicar&#34;&gt;O que vou comunicar?&lt;/h3&gt;
 &lt;p&gt;Nesse exemplo, consumiremos o resultado de uma API pública que retorna valores de cotação das moedas no mercado ou &lt;em&gt;Currency Rates&lt;/em&gt; .&lt;/p&gt;
@@ -43,7 +43,7 @@
     &amp;#34;date&amp;#34;: &amp;#34;2020-07-13&amp;#34;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;como-vou-comunicar&#34;&gt;Como vou comunicar?&lt;/h2&gt;
-&lt;p&gt;Uma função chamada &lt;a href=&#34;../api/acoes/setcontext.md&#34;&gt;&lt;strong&gt;SetContext&lt;/strong&gt;&lt;/a&gt; é a responsável por atualizar os valores do componente contexto. Ela poderá ser chamada na tela se você quiser usar as informações que estiverem nesse contexto.&lt;/p&gt;
+&lt;p&gt;Uma função chamada &lt;a href=&#34;../../api/acoes/setcontext&#34;&gt;&lt;strong&gt;SetContext&lt;/strong&gt;&lt;/a&gt; é a responsável por atualizar os valores do componente contexto. Ela poderá ser chamada na tela se você quiser usar as informações que estiverem nesse contexto.&lt;/p&gt;
 &lt;p&gt;Para fazer a comunicação, basta seguir os próximos passos:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Ao definir o contexto na estrutura Kotlin DSL no backend é necessário implementar uma classe que estruture as informações que serão recebidas no contexto.&lt;/li&gt;
