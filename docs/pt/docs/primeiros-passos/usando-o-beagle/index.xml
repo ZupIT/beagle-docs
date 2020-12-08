@@ -124,7 +124,7 @@ Faça a configuração das classes com bastante atenção, pois se você anotá-
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Você pode criar o BeagleActivity agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-la. Para saber mais, confira a seção sobre&lt;a href=&#34;../../features/customizacao/beagle-para-android/custom-beagle-activity.md&#34;&gt; &lt;strong&gt;Beagle Activity Customizada&lt;/strong&gt;&lt;/a&gt;.
+Você pode criar o BeagleActivity agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-la. Para saber mais, confira a seção sobre&lt;a href=&#34;../../features/customizacao/beagle-para-android/beagle-activity-customizada.md&#34;&gt; &lt;strong&gt;Beagle Activity Customizada&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;h3 id=&#34;passo-4-iniciar-o-beagle-e-o-design-system&#34;&gt;&lt;strong&gt;Passo 4: Iniciar o Beagle e o Design System&lt;/strong&gt;&lt;/h3&gt;
@@ -136,7 +136,7 @@ Você pode criar o BeagleActivity agora, mas neste momento é possível prossegu
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Você pode criar o Design System agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-lo. Para saber mais, confira a seção sobre &lt;a href=&#34;../new-project/case-android/design-system-beagle-com-android.md&#34;&gt;&lt;strong&gt;Design System com Beagle para Android&lt;/strong&gt;&lt;/a&gt;.
+Você pode criar o Design System agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-lo. Para saber mais, confira a seção sobre &lt;a href=&#34;../criando-projeto-do-zero/case-android/design-system-com-beagle-android.md&#34;&gt;&lt;strong&gt;Design System com Beagle para Android&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;h3 id=&#34;passo-5-criar-o-beaglesetup&#34;&gt;&lt;strong&gt;Passo 5: Criar o BeagleSetup&lt;/strong&gt;&lt;/h3&gt;
@@ -540,7 +540,7 @@ Parabéns, você criou sua primeira tela com Beagle!
 &lt;p&gt;Neste tutorial, focamos em uma configuração de tela simples para você entender o processo, na prática, sem se preocupar com uma hierarquia de telas complexas. Mas, claro, você pode fazer bem mais no seu projeto com o Beagle!&lt;/p&gt;
 &lt;h2 id=&#34;informação-adicional&#34;&gt;Informação adicional&lt;/h2&gt;
 &lt;p&gt;Antes de usar o Beagle, fique atento a &lt;strong&gt;configuração da build de release e o ProGuard.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Mesmo não sendo necessário neste momento, é bom ter em mente que você precisará &lt;a href=&#34;../../features/customizacao/beagle-para-android/proguard.md&#34;&gt;&lt;strong&gt;configurar o ProGuard&lt;/strong&gt;&lt;/a&gt; para ativar o ofuscamento do seu código quando estiver publicando releases.&lt;/p&gt;
+&lt;p&gt;Mesmo não sendo necessário neste momento, é bom ter em mente que você precisará &lt;a href=&#34;../../features/customizacao/beagle-para-android/configuracao-do-proguard.md&#34;&gt;&lt;strong&gt;configurar o ProGuard&lt;/strong&gt;&lt;/a&gt; para ativar o ofuscamento do seu código quando estiver publicando releases.&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
@@ -568,7 +568,7 @@ As classes anotadas como &lt;code&gt;BeagleComponent&lt;/code&gt; e &lt;code&gt;
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 
-Veja como &lt;a href=&#34;../installing-beagle/&#34;&gt;&lt;strong&gt;instalar o Beagle&lt;/strong&gt;&lt;/a&gt; caso ainda não tenha concluído esta etapa.
+Veja como &lt;a href=&#34;../instalando-beagle/&#34;&gt;&lt;strong&gt;instalar o Beagle&lt;/strong&gt;&lt;/a&gt; caso ainda não tenha concluído esta etapa.
 &lt;/div&gt;
 
 &lt;p&gt;Atualmente, existem dois tipos de abordagens para a renderização de telas com o Beagle: &lt;strong&gt;remota&lt;/strong&gt; e &lt;strong&gt;declarativa.&lt;/strong&gt;&lt;/p&gt;
@@ -608,7 +608,7 @@ Veja como &lt;a href=&#34;../installing-beagle/&#34;&gt;&lt;strong&gt;instalar o
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Note que a &lt;strong&gt;&lt;code&gt;Screen&lt;/code&gt;&lt;/strong&gt; está sendo construída utilizando &lt;strong&gt;&lt;code&gt;Flex&lt;/code&gt;&lt;/strong&gt;. Para entender melhor esses componentes e suas propriedades, vá para a seção &lt;a href=&#34;../../features/layout-de-componentes/&#34;&gt;&lt;strong&gt;posicionamento de componentes&lt;/strong&gt;&lt;/a&gt;.
+Note que a &lt;strong&gt;&lt;code&gt;Screen&lt;/code&gt;&lt;/strong&gt; está sendo construída utilizando &lt;strong&gt;&lt;code&gt;Flex&lt;/code&gt;&lt;/strong&gt;. Para entender melhor esses componentes e suas propriedades, vá para a seção &lt;a href=&#34;../../features/posicionamento-de-componentes/&#34;&gt;&lt;strong&gt;posicionamento de componentes&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;h3 id=&#34;passo-2-instanciar-o-beaglescreenviewcontroller&#34;&gt;Passo 2: Instanciar o &lt;strong&gt;BeagleScreenViewController&lt;/strong&gt;&lt;/h3&gt;
@@ -647,7 +647,7 @@ Não esqueça de adicionar**&lt;code&gt;import Beagle&lt;/code&gt;**.
 
 &lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
 &lt;p&gt;Nesta seção, você viu como criar sua primeira tela declarativa utilizando o &lt;strong&gt;Beagle&lt;/strong&gt;, em sua forma mais simples, sem entrar no conceito de server-driven UI.&lt;/p&gt;
-&lt;p&gt;👉Para entender melhor &lt;strong&gt;como configurar o Beagle&lt;/strong&gt; e utilizá-lo aplicando o conceito de server-driven UI, veja como &lt;a href=&#34;../new-project/case-ios/&#34;&gt;&lt;strong&gt;criar um projeto iOS do zero&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;👉Para entender melhor &lt;strong&gt;como configurar o Beagle&lt;/strong&gt; e utilizá-lo aplicando o conceito de server-driven UI, veja como &lt;a href=&#34;../criando-projeto-do-zero/case-ios/&#34;&gt;&lt;strong&gt;criar um projeto iOS do zero&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
@@ -685,7 +685,7 @@ Caso queira utilizar um BFF, é necessário ter um CORS configurado. Veja como f
         
         &lt;hr&gt;
 &lt;h2 id=&#34;configurações-de-uso&#34;&gt;Configurações de uso&lt;/h2&gt;
-&lt;p&gt;Quando você finalizar a &lt;a href=&#34;../installing-beagle/beagle-backend.md&#34;&gt;&lt;strong&gt;instalação do Beagle&lt;/strong&gt;&lt;/a&gt;, seu BFF estará com a configuração padrão de uso.&lt;/p&gt;
+&lt;p&gt;Quando você finalizar a &lt;a href=&#34;../instalando-beagle/backend.md&#34;&gt;&lt;strong&gt;instalação do Beagle&lt;/strong&gt;&lt;/a&gt;, seu BFF estará com a configuração padrão de uso.&lt;/p&gt;
 &lt;h3 id=&#34;cors&#34;&gt;CORS&lt;/h3&gt;
 
 
@@ -703,10 +703,10 @@ Caso queira utilizar um BFF, é necessário ter um CORS configurado. Veja como f
 &lt;p&gt;Disponibilizamos uma constante, &lt;code&gt;BEAGLE_EXPOSED_HEADERS&lt;/code&gt;, contendo uma lista dos nomes das headers que o próprio Beagle precisa para poder expor na sua &lt;strong&gt;configuração de CORS.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;um-exemplo-prático-de-bff&#34;&gt;Um exemplo prático de BFF&lt;/h2&gt;
 &lt;h3 id=&#34;passo-1-criar-um-serviço&#34;&gt;Passo 1: Criar um serviço&lt;/h3&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t13&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t13-0&#34; role=&#34;tab&#34; aria-controls=&#34;t13-0&#34; aria-selected=&#34;true&#34;&gt;Micronaut&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t2&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t2-0&#34; role=&#34;tab&#34; aria-controls=&#34;t2-0&#34; aria-selected=&#34;true&#34;&gt;Micronaut&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t13-1&#34; role=&#34;tab&#34; aria-controls=&#34;t13-1&#34;&gt;SpringBoot&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t13&#34;&gt;&lt;div id=&#34;t13-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t13-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t2-1&#34; role=&#34;tab&#34; aria-controls=&#34;t2-1&#34;&gt;SpringBoot&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t2&#34;&gt;&lt;div id=&#34;t2-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t2-0&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;Para começar, você deve criar uma classe para configurar um serviço. O processo é bem simples basta:&lt;/p&gt;
 &lt;ol&gt;
@@ -743,7 +743,7 @@ Caso queira utilizar um BFF, é necessário ter um CORS configurado. Veja como f
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;build&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;child&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;component&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t13-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t13-1&#34;&gt;
+  &lt;div id=&#34;t2-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t2-1&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;Para começar, você deve criar uma classe para configurar um serviço. O processo é bem simples basta:&lt;/p&gt;
 &lt;ol&gt;
@@ -781,10 +781,10 @@ Caso queira utilizar um BFF, é necessário ter um CORS configurado. Veja como f
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h3 id=&#34;passo-2-criar-um-controller&#34;&gt;&lt;strong&gt;Passo 2: Criar um Controller&lt;/strong&gt;&lt;/h3&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t13&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t13-0&#34; role=&#34;tab&#34; aria-controls=&#34;t13-0&#34; aria-selected=&#34;true&#34;&gt;Micronaut&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t3&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t3-0&#34; role=&#34;tab&#34; aria-controls=&#34;t3-0&#34; aria-selected=&#34;true&#34;&gt;Micronaut&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t13-1&#34; role=&#34;tab&#34; aria-controls=&#34;t13-1&#34;&gt;SpringBoot&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t13&#34;&gt;&lt;div id=&#34;t13-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t13-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t3-1&#34; role=&#34;tab&#34; aria-controls=&#34;t3-1&#34;&gt;SpringBoot&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t3&#34;&gt;&lt;div id=&#34;t3-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t3-0&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;O próximo passo é criar uma classe Controller para expor nossos componentes via REST API. Esta classe ser anotada com &lt;code&gt;@Controller&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Além disso, a classe também deve receber um MyService via construtor primário para que o Micronaut faça automaticamente a injeção da dependência para você.&lt;/p&gt;
@@ -809,7 +809,7 @@ Caso queira utilizar um BFF, é necessário ter um CORS configurado. Veja como f
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;getWidget&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;myService&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;createWidget&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t13-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t13-1&#34;&gt;
+  &lt;div id=&#34;t3-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t3-1&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;Feito isso, o próximo passo é criar uma classe Controller para expor nossos componentes via REST API. Esta classe ser anotada com &lt;code&gt;@RestController&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Além disso, ela também deve receber &lt;code&gt;MyService&lt;/code&gt; via um construtor primário para que o Spring automaticamente faça a injeção de dependência para você.&lt;/p&gt;
@@ -836,10 +836,10 @@ Caso queira utilizar um BFF, é necessário ter um CORS configurado. Veja como f
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h3 id=&#34;passo-3-configurar-o-bff&#34;&gt;&lt;strong&gt;Passo 3: Configurar o BFF&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;Você pode configurar cache e serialização com as linhas abaixo, adicionando elas no seu &lt;code&gt;application.properties&lt;/code&gt;.&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t13&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t13-0&#34; role=&#34;tab&#34; aria-controls=&#34;t13-0&#34; aria-selected=&#34;true&#34;&gt;Micronaut&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t4&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t4-0&#34; role=&#34;tab&#34; aria-controls=&#34;t4-0&#34; aria-selected=&#34;true&#34;&gt;Micronaut&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t13-1&#34; role=&#34;tab&#34; aria-controls=&#34;t13-1&#34;&gt;SpringBoot&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t13&#34;&gt;&lt;div id=&#34;t13-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t13-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t4-1&#34; role=&#34;tab&#34; aria-controls=&#34;t4-1&#34;&gt;SpringBoot&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t4&#34;&gt;&lt;div id=&#34;t4-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t4-0&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;O cache é configurado para incluir os endpoints &lt;code&gt;/screen&lt;/code&gt; e &lt;code&gt;/widget&lt;/code&gt;. O TTL para o endpoint &lt;code&gt;/screen&lt;/code&gt; é configurado para 50 segundos.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;cache&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;endpoint&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;include&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=/&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,/&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;widget&lt;/span&gt;
@@ -847,7 +847,7 @@ Caso queira utilizar um BFF, é necessário ter um CORS configurado. Veja como f
 &lt;span style=&#34;color:#000&#34;&gt;jackson&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;serializationInclusion&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;NON_NULL&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;jackson&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;serialization&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;indentOutput&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t13-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t13-1&#34;&gt;
+  &lt;div id=&#34;t4-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t4-1&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;O cache é configurado para excluir o endpoint &lt;code&gt;/action&lt;/code&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;cache&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;endpoint&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;exclude&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=/&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;action&lt;/span&gt;
@@ -863,17 +863,17 @@ Caso queira utilizar um BFF, é necessário ter um CORS configurado. Veja como f
 &lt;strong&gt;Configuração obrigatória apenas para usar o BFF com frontend web&lt;/strong&gt;
 &lt;/div&gt;
 
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t13&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t13-0&#34; role=&#34;tab&#34; aria-controls=&#34;t13-0&#34; aria-selected=&#34;true&#34;&gt;Micronaut&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t5&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t5-0&#34; role=&#34;tab&#34; aria-controls=&#34;t5-0&#34; aria-selected=&#34;true&#34;&gt;Micronaut&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t13-1&#34; role=&#34;tab&#34; aria-controls=&#34;t13-1&#34;&gt;SpringBoot&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t13&#34;&gt;&lt;div id=&#34;t13-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t13-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t5-1&#34; role=&#34;tab&#34; aria-controls=&#34;t5-1&#34;&gt;SpringBoot&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t5&#34;&gt;&lt;div id=&#34;t5-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t5-0&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;Você pode configurar CORS com as linhas abaixo, adicionando elas no seu &lt;strong&gt;&lt;code&gt;application.properties&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Aqui CORS é habilitado com valores padrões para vários detalhes, deixando-os muito permissivos. Nossa header de cache é exposta.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;micronaut&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;server&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;cors&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;enabled&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;micronaut&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;server&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;cors&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;configurations&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;exposedHeaders&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;hash&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t13-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t13-1&#34;&gt;
+  &lt;div id=&#34;t5-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t5-1&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;Você pode configurar CORS com as classes abaixo, que precisam implementar a interface &lt;code&gt;WebMvcConfigurer&lt;/code&gt; do Spring, sobrepondo o método &lt;code&gt;addCorsMappings&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Aqui CORS é configurado para todos os endpoints com valores padrões para vários detalhes, deixando-os muito permissivos. Nossa header de cache é exposta usando a constante.&lt;/p&gt;
@@ -897,10 +897,10 @@ Use uma configuração permissiva como essa apenas em ambiente local de desenvol
 &lt;/div&gt;
 
 &lt;p&gt;Configurando mais granularmente, temos aqui CORS habilitado com meusite.com.br como origem permitida; &lt;code&gt;GET&lt;/code&gt;, &lt;code&gt;PUT&lt;/code&gt;, &lt;code&gt;POST&lt;/code&gt; como métodos permitidos; &lt;code&gt;Cache-control&lt;/code&gt; como header permitida; e &lt;code&gt;beagle-hash&lt;/code&gt;, &lt;code&gt;x-meu1&lt;/code&gt; como header expostas.&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t13&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t13-0&#34; role=&#34;tab&#34; aria-controls=&#34;t13-0&#34; aria-selected=&#34;true&#34;&gt;Micronaut&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t6&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t6-0&#34; role=&#34;tab&#34; aria-controls=&#34;t6-0&#34; aria-selected=&#34;true&#34;&gt;Micronaut&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t13-1&#34; role=&#34;tab&#34; aria-controls=&#34;t13-1&#34;&gt;SpringBoot&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t13&#34;&gt;&lt;div id=&#34;t13-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t13-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t6-1&#34; role=&#34;tab&#34; aria-controls=&#34;t6-1&#34;&gt;SpringBoot&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t6&#34;&gt;&lt;div id=&#34;t6-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t6-0&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;micronaut&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;server&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;cors&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;enabled&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;micronaut&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;server&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;cors&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;configurations&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;meu&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;allowedOrigins&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;meusite&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;com&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;br&lt;/span&gt;
@@ -908,7 +908,7 @@ Use uma configuração permissiva como essa apenas em ambiente local de desenvol
 &lt;span style=&#34;color:#000&#34;&gt;micronaut&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;server&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;cors&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;configurations&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;meu&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;allowedHeaders&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Cache&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Control&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;micronaut&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;server&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;cors&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;configurations&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;meu&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;exposedHeaders&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;hash&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;x&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;meu1&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t13-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t13-1&#34;&gt;
+  &lt;div id=&#34;t6-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t6-1&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;org.springframework.context.annotation.Configuration&lt;/span&gt;
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;org.springframework.web.servlet.config.annotation.CorsRegistry&lt;/span&gt;
@@ -928,14 +928,14 @@ Use uma configuração permissiva como essa apenas em ambiente local de desenvol
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h3 id=&#34;passo-5-iniciar-o-bff&#34;&gt;Passo 5: Iniciar o BFF&lt;/h3&gt;
 &lt;p&gt;Depois de realizar as configurações acima, você já pode iniciar seu BFF. Para isso, basta usar o comando abaixo em seu projeto, lembrando que ele deve começar o servidor na porta 8080 em seu localhost.&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t13&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t13-0&#34; role=&#34;tab&#34; aria-controls=&#34;t13-0&#34; aria-selected=&#34;true&#34;&gt;Micronaut&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t7&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t7-0&#34; role=&#34;tab&#34; aria-controls=&#34;t7-0&#34; aria-selected=&#34;true&#34;&gt;Micronaut&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t13-1&#34; role=&#34;tab&#34; aria-controls=&#34;t13-1&#34;&gt;SpringBoot&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t13&#34;&gt;&lt;div id=&#34;t13-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t13-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t7-1&#34; role=&#34;tab&#34; aria-controls=&#34;t7-1&#34;&gt;SpringBoot&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t7&#34;&gt;&lt;div id=&#34;t7-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t7-0&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#a40000&#34;&gt;$&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;mvn&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;compile&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;exec&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;exec&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t13-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t13-1&#34;&gt;
+  &lt;div id=&#34;t7-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t7-1&#34;&gt;
 
 &lt;p&gt;&lt;pre&gt;&lt;code&gt;$ mvn spring-boot:run
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
