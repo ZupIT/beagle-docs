@@ -28,7 +28,7 @@
 <meta itemprop="name" content="Configuração do Proguard">
 <meta itemprop="description" content="Nesta seção, você encontra a descrição da configuração do ProGuard para o Beagle.">
 
-<meta itemprop="wordCount" content="226">
+<meta itemprop="wordCount" content="232">
 
 
 
@@ -104,7 +104,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.d71f2814243f1bae1dadf1199aeaece283564fe03a53be1c2c52cd5fe21985c9eb71423a1b349cb7ef5b18af1601f2fdebddcf03b7dc88f3afd127055cd376f6.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.243eaab33a1abf115659a8c220485263edb9454453d3d453b766247a0e07551231c4227720ddd5223e20a978cbd6270fe9250e41eb015cf37654d38f6a739fa2.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -136,7 +136,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.d71f2814243f1bae1dadf1199aeaece283564fe03a53be1c2c52cd5fe21985c9eb71423a1b349cb7ef5b18af1601f2fdebddcf03b7dc88f3afd127055cd376f6.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.243eaab33a1abf115659a8c220485263edb9454453d3d453b766247a0e07551231c4227720ddd5223e20a978cbd6270fe9250e41eb015cf37654d38f6a739fa2.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -2037,39 +2037,39 @@
 	       
 	<hr>
 <h2 id="introdução">Introdução</h2>
-<p>Quando um método de ofuscação é utilizado, é necessário que algumas regras sejam implementadas para garantir que os nomes e os IDs usados  internamente pelo Beagle, não sejam ofuscados ou minificados.</p>
+<p>Quando um método de ofuscação é usado, é necessário que algumas regras sejam implementadas para garantir que os nomes e os IDs usados  internamente pelo Beagle, não sejam ofuscados ou minificados.</p>
 <h2 id="exemplo">Exemplo</h2>
 <p>Para garantir isso, você deve adicionar as seguintes regras no arquivo <strong><code>android-rules.pro</code></strong> do ProGuard:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#000">proguard</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">rules</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">pro</span>
+<pre><code class="language-markup" data-lang="markup">proguard-rules.pro
 
- <span style="color:#000">Beagle</span> <span style="color:#000">uses</span> <span style="color:#000">coroutines</span> <span style="color:#204a87;font-weight:bold">in</span> <span style="color:#000">network</span> <span style="color:#000">requests</span>
-<span style="color:#000;font-weight:bold">-</span><span style="color:#000">keep</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">kotlinx</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">coroutines</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">experimental</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">android</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">AndroidExceptionPreHandler</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000;font-weight:bold">*;</span> <span style="color:#000;font-weight:bold">}</span>
+# Beagle uses coroutines in network requests
+-keep class kotlinx.coroutines.experimental.android.AndroidExceptionPreHandler { *; }
 
- <span style="color:#000">Beagle</span> <span style="color:#000">does</span> <span style="color:#000">reflection</span> <span style="color:#000">on</span> <span style="color:#000">generic</span> <span style="color:#000">parameters</span>
-<span style="color:#000;font-weight:bold">-</span><span style="color:#000">keepattributes</span> <span style="color:#000">Signature</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">InnerClasses</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">EnclosingMethod</span>
+# Beagle does reflection on generic parameters
+-keepattributes Signature, InnerClasses, EnclosingMethod
 
- <span style="color:#000">Beagle</span> <span style="color:#000">does</span> <span style="color:#000">reflection</span> <span style="color:#000">on</span> <span style="color:#000">method</span> <span style="color:#000">and</span> <span style="color:#000">parameter</span> <span style="color:#000">annotations</span>
-<span style="color:#000;font-weight:bold">-</span><span style="color:#000">keepattributes</span> <span style="color:#000">RuntimeVisibleAnnotations</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">RuntimeVisibleParameterAnnotations</span>
-<span style="color:#000;font-weight:bold">-</span><span style="color:#000">dontwarn</span> <span style="color:#000">org</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">jetbrains</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">annotations</span><span style="color:#000;font-weight:bold">.**</span>
-<span style="color:#000;font-weight:bold">-</span><span style="color:#000">keep</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">kotlin</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">Metadata</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000;font-weight:bold">*;</span> <span style="color:#000;font-weight:bold">}</span>
+# Beagle does reflection on method and parameter annotations
+-keepattributes RuntimeVisibleAnnotations, RuntimeVisibleParameterAnnotations
+-dontwarn org.jetbrains.annotations.**
+-keep class kotlin.Metadata { *; }
 
- <span style="color:#000">Yoga</span> <span style="color:#204a87;font-weight:bold">is</span> <span style="color:#000">a</span> <span style="color:#000">dependency</span> <span style="color:#000">used</span> <span style="color:#000">on</span> <span style="color:#000">Beagle</span>
-<span style="color:#000;font-weight:bold">-</span><span style="color:#000">keep</span> <span style="color:#5c35cc;font-weight:bold">@com</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">facebook</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">proguard</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">annotations</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">DoNotStrip</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#a40000">* { *; }</span>
+# Yoga is a dependency used on Beagle
+-keep @com.facebook.proguard.annotations.DoNotStrip class * { *; }
 
- <span style="color:#000">Customized</span> <span style="color:#000">classes</span> <span style="color:#204a87;font-weight:bold">for</span> <span style="color:#000">Beagle</span>
-<span style="color:#000;font-weight:bold">-</span><span style="color:#000">keep</span> <span style="color:#5c35cc;font-weight:bold">@br</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">com</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">zup</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">beagle</span><span style="color:#000;font-weight:bold">.</span><span style="color:#204a87;font-weight:bold">annotation</span><span style="color:#000;font-weight:bold">.**</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#a40000">* { *; }</span>
-<span style="color:#000;font-weight:bold">-</span><span style="color:#000">keep</span> <span style="color:#5c35cc;font-weight:bold">@br</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">com</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">zup</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">beagle</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">android</span><span style="color:#000;font-weight:bold">.</span><span style="color:#204a87;font-weight:bold">annotation</span><span style="color:#000;font-weight:bold">.**</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#a40000">* { *; }</span>
-<span style="color:#000;font-weight:bold">-</span><span style="color:#000">keep</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#a40000">* </span><span style="color:#000">extends</span> <span style="color:#000">br</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">com</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">zup</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">beagle</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">android</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">widget</span><span style="color:#000;font-weight:bold">.**</span>
+# Customized classes for Beagle
+-keep @br.com.zup.beagle.annotation.** class * { *; }
+-keep @br.com.zup.beagle.android.annotation.** class * { *; }
+-keep class * extends br.com.zup.beagle.android.widget.**
 
- <span style="color:#000">Core</span> <span style="color:#000">classes</span> <span style="color:#204a87;font-weight:bold">in</span> <span style="color:#000">Beagle</span>
-<span style="color:#000;font-weight:bold">-</span><span style="color:#000">keep</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">br</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">com</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">zup</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">beagle</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">android</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">action</span><span style="color:#000;font-weight:bold">.**</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000;font-weight:bold">*;</span> <span style="color:#000;font-weight:bold">}</span>
-<span style="color:#000;font-weight:bold">-</span><span style="color:#000">keep</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">br</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">com</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">zup</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">beagle</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">android</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">widget</span><span style="color:#000;font-weight:bold">.**</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000;font-weight:bold">*;</span> <span style="color:#000;font-weight:bold">}</span>
-<span style="color:#000;font-weight:bold">-</span><span style="color:#000">keep</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">br</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">com</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">zup</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">beagle</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">android</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">components</span><span style="color:#000;font-weight:bold">.**</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000;font-weight:bold">*;</span> <span style="color:#000;font-weight:bold">}</span>
-<span style="color:#000;font-weight:bold">-</span><span style="color:#000">keep</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">br</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">com</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">zup</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">beagle</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">android</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">context</span><span style="color:#000;font-weight:bold">.**</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000;font-weight:bold">*;</span> <span style="color:#000;font-weight:bold">}</span>
-<span style="color:#000;font-weight:bold">-</span><span style="color:#000">keep</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">br</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">com</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">zup</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">beagle</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">widget</span><span style="color:#000;font-weight:bold">.**</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000;font-weight:bold">*;</span> <span style="color:#000;font-weight:bold">}</span>
-<span style="color:#000;font-weight:bold">-</span><span style="color:#000">keep</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">br</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">com</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">zup</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">beagle</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">core</span><span style="color:#000;font-weight:bold">.**</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000;font-weight:bold">*;</span> <span style="color:#000;font-weight:bold">}</span>
-<span style="color:#000;font-weight:bold">-</span><span style="color:#000">keep</span> <span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">br</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">com</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">zup</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">beagle</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">analytics</span><span style="color:#000;font-weight:bold">.**</span> <span style="color:#000;font-weight:bold">{</span> <span style="color:#000;font-weight:bold">*;</span> <span style="color:#000;font-weight:bold">}</span>
-</code></pre></div>
+# Core classes in Beagle
+-keep class br.com.zup.beagle.android.action.** { *; }
+-keep class br.com.zup.beagle.android.widget.** { *; }
+-keep class br.com.zup.beagle.android.components.** { *; }
+-keep class br.com.zup.beagle.android.context.** { *; }
+-keep class br.com.zup.beagle.widget.** { *; }
+-keep class br.com.zup.beagle.core.** { *; }
+-keep class br.com.zup.beagle.analytics.** { *; }
+</code></pre>
 
 <div class="alert alert-info" role="alert">
 
