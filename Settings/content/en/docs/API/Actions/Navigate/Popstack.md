@@ -1,6 +1,6 @@
 ---
 title: Popstack
-weight: 244
+weight: 256
 description: Here you'll find PopStack description.
 ---
 
@@ -16,7 +16,7 @@ On the example below there's a screen coming from BFF with a button that when cl
 
 To test, your BFF's endpoint should return the screen with the code below and call it in the frontend. 
 
-{{< tabs name="T111" >}}
+{{< tabs name="T96" >}}
 {{% tab name="JSON" %}}
 ```text
 {

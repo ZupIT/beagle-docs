@@ -8,7 +8,7 @@ description: >-
 
 ---
 
-`ContextComponent` is an interface that it is necessary to be implemented in components that use [**Context**](../../api/context.md), because it contains the context attribute.
+`ContextComponent` is an interface that it is necessary to be implemented in components that use [**Context**](../../api/context/), because it contains the context attribute.
 
 ## Beagle's components with context:
 
@@ -22,7 +22,7 @@ description: >-
 
 See below an example with customized components with context: 
 
-{{< tabs name="T42" >}}
+{{< tabs name="T70" >}}
 {{% tab name="Android" %}}
 ```kotlin
 @RegisterWidget
@@ -54,5 +54,5 @@ public struct CustomComponent: RawComponent, HasContext {
 {{< /tabs >}}
 
 {{% alert color="warning" %}}
-If you want to create customized components on iOS, it is necessary to register it. See [**how to do it here**](../customization/beagle-for-android/how-to-make-custom-widgets.md)**.**
+If you want to create customized components on iOS, it is necessary to register it. See [**how to do it here**](../customization/beagle-for-android/how-to-make-custom-widgets/)**.**
 {{% /alert %}}

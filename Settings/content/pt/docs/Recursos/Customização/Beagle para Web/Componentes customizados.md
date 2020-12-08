@@ -12,7 +12,7 @@ description: >-
 
 O primeiro passo que você deve fazer é criar um componente comum. Para isso, crie um novo componente em seu projeto. 
 
-{{< tabs name="T78" >}}
+{{< tabs name="T76" >}}
 {{% tab name="Angular" %}}
 Neste exemplo, o componente será criado com o nome `customText`. Basta utilizar o comando abaixo no seu terminal:
 
@@ -42,7 +42,7 @@ export default CustomTextComponent;
 
 Feito isso, adicione no arquivo de associações da biblioteca Beagle do seu projeto como indicado nos exemplos a seguir. 
 
-{{< tabs name="T78" >}}
+{{< tabs name="T77" >}}
 {{% tab name="Angular" %}}
 Abra o arquivo `beagle-components.module.ts` e adicione o novo `CustomTextComponent` gerado na lista, como no exemplo abaixo:
 
@@ -88,14 +88,14 @@ export class Beagle {}
 ```
 
 {{% alert color="warning" %}}
-Se você não encontrou os arquivos `beagle-components.module.ts` ou `beagle.module.ts`, veja [**como configurar a biblioteca Beagle Web para o Angular**.](../../../get-started/using-beagle/web/angular-como-usar.md)
+Se você não encontrou os arquivos `beagle-components.module.ts` ou `beagle.module.ts`, veja [**como configurar a biblioteca Beagle Web para o Angular**.](../../../get-started/usando-beagle/web/angular.md)
 {{% /alert %}}
 {{% /tab %}}
 
 {{% tab name="React" %}}
 Abra o arquivo de configuração da biblioteca Beagle em seu projeto \(se você seguiu o tutorial é o arquivo `beagle-service.ts`\) e adicione o seu componente a lista de associações. 
 
-Caso você não tenha este arquivo em seu projeto, veja [**como configurar a biblioteca Beagle Web para o React**](../../../get-started/using-beagle/web/react-como-usar.md).
+Caso você não tenha este arquivo em seu projeto, veja [**como configurar a biblioteca Beagle Web para o React**](../../../get-started/usando-beagle/web/react.md).
 
 ```text
 import { createBeagleUIService } from '@zup-it/beagle-react'

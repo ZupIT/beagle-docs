@@ -1,6 +1,6 @@
 ---
 title: Rendering
-weight: 160
+weight: 172
 description: Understanding and taking control over the rendering process
 ---
 

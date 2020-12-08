@@ -1,6 +1,6 @@
 ---
 title: Textinput
-weight: 290
+weight: 302
 description: Text Input component description and its attributes
 ---
 
@@ -65,7 +65,7 @@ See how the structure is represented by the attributes below:
     </tr>
     <tr>
       <td style="text-align:left">type</td>
-      <td style="text-align:left">TextInputType or <a href="../../context.md#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</td>
+      <td style="text-align:left">TextInputType or <a href="../../context/#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</td>
       <td
       style="text-align:left"></td>
         <td style="text-align:left">This attribute identifies the text type that it will receive in the editable
@@ -142,7 +142,7 @@ It is an `ENUM` responsible to define which type of text input.
 
 See below an example of text input with the password type: 
 
-{{< tabs name="T132" >}}
+{{< tabs name="T123" >}}
 {{% tab name="JSON" %}}
 ```text
 {

@@ -1,6 +1,6 @@
 ---
 title: Log System
-weight: 118
+weight: 130
 description: >-
   You will find here the BeagleLogger class description, customization and
   configuration details.

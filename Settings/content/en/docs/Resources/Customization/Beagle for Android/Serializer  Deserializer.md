@@ -1,6 +1,6 @@
 ---
 title: Serializer  Deserializer
-weight: 122
+weight: 134
 description: >-
   In this section, you will find a description of how to create a Serializer /
   Deserializer using Beagle and details of the methods it implements.
@@ -12,6 +12,8 @@ description: >-
 
 Beagle offers a customized **`serializer/deserializer`** set through  a `BeagleTypeAdapter` interface. With this **`Adapter`** it is possible to map any class, including classes that represent **concrete types**, such as an **Integer**. Below, you can see our interface contract.
 
+See below the defined interface contract:
+
 ```kotlin
 interface BeagleTypeAdapter<T> {
     fun fromJson(json: String) : T
@@ -21,14 +23,14 @@ interface BeagleTypeAdapter<T> {
 
 ## Example
 
-We have created an **`adapter`** for the `Person` interface that is extended from the **`data class`** `PersonImpl` that has only a `name` **attribute** as a `String` type.
+This example creates an **`adapter`** for the `Person` interface that is extended from the **`data class`** `PersonImpl` that has only a `name` **attribute** as a `String` type.
 
 In order to create an adapter you must: 
 
-1. Create a class that will be your adapter and **annotate** it with  a`@ RegisterBeagleAdapter`. In this example we named this class as `PersonAdapter` 
-2. Declare which class you want to **map** with this adapter. Here we implemented a `PersonImpl` `data class` as an example. 
-3. Extend the adapter \(PersonAdapter\) class from the **`BeagleTypeAdapter`** `Interface`, informing the class to be mapped on \(as shown in the example below\). 
-4. When extending the interface you must implement the `fromJson` and `toJson methods`, as shown in the example below:
+1. Create a class that will be your adapter and **annotate** it with  a`@ RegisterBeagleAdapter`. In this example we named this class as **`PersonAdapter`** ;
+2. Declare which class you want to **map** with this adapter. Here we implemented a `PersonImpl` `data class` as an example.;
+3. Extend the `adapter` \(PersonAdapter\) class from the **`BeagleTypeAdapter`** `Interface`, informing the class to be mapped on;
+4. When extending the interface you must implement the `fromJson` and `toJson methods`, see the example below:
 
 ```text
 interface Person
@@ -52,10 +54,10 @@ class PersonAdapter : BeagleTypeAdapter<Person> {
 }
 ```
 
-## FromJson Method 
+### FromJson method 
 
 This method takes a JSONObject as a string and returns an instance of the mapped class \(Person\).
 
-## ToJson Method 
+### ToJson method 
 
 This method takes the mapped data type \(Person\) and returns a JSONObject as a string.

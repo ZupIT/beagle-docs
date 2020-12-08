@@ -1,6 +1,6 @@
 ---
 title: Container
-weight: 301
+weight: 313
 description: Container components description and its attribute details
 ---
 
@@ -20,7 +20,7 @@ See how the structure is represented:
 
 ## How to use it? 
 
-{{< tabs name="T137" >}}
+{{< tabs name="T127" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

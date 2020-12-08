@@ -18,10 +18,10 @@ No exemplo abaixo, vamos exibir um botão server-driven em uma tela nativa. O re
 
 Para que essa configuração funcione corretamente, você precisa de:
 
-* Um [**BFF**](../../principais-conceitos.md#backend-for-frontend) configurado com o Beagle. Caso não o tenha, veja como configurar nesse [**tutorial**](../../get-started/new-project/exemplo-de-projeto-backend-com-beagle.md).
+* Um [**BFF**](../../principais-conceitos.md#backend-for-frontend) configurado com o Beagle. Caso não o tenha, veja como configurar nesse [**tutorial**](../../get-started/criando-projeto-do-zero/case-backend.md).
 * Um frontend configurado com o Beagle para Android ou iOS. Caso não o tenha, siga um dos tutoriais de acordo com sistema operacional:
-  * [**Android**](../../get-started/new-project/case-android/)
-  * [**iOS**](../../get-started/new-project/case-ios/)
+  * [**Android**](../../get-started/criando-projeto-do-zero/case-android/)
+  * [**iOS**](../../get-started/criando-projeto-do-zero/case-ios/)
 
 ## Passo 1: Criar o componente no backend
 
@@ -118,7 +118,7 @@ Agora que o componente esta criado e configurado, você deve testar o endpoint e
 
 Você deve receber o JSON abaixo:
 
-{{< tabs name="T104" >}}
+{{< tabs name="T96" >}}
 {{% tab name="JSON" %}}
 ```typescript
 {
@@ -156,7 +156,7 @@ Depois dos dois passos anteriores, o seu componente está pronto. Agora, você s
 
 Para essa configuração, siga as orientações específicas para cada plataforma:
 
-{{< tabs name="T104" >}}
+{{< tabs name="T97" >}}
 {{% tab name="Android" %}}
 Você deve utilizar o frame layout para "receber" o componente do BFF e, assim, exibi-lo em uma tela Android nativa.
 
@@ -274,7 +274,7 @@ Ao final do processo, você poderá "chamar" pela nossa tela nativa que irá apa
 {{% /tab %}}
 
 {{% tab name="WEB" %}}
-Se você ainda não configurou a biblioteca em seu projeto, [**veja aqui como fazer isso**.](../../get-started/using-beagle/)
+Se você ainda não configurou a biblioteca em seu projeto, [**veja aqui como fazer isso**.](../../get-started/usando-beagle/)
 
 Você deve utilizar o [**Remote View**](../../features/customizacao/beagle-para-web/parametros-remote-view.md), fornecido pela biblioteca do Beagle, para criar telas híbridas com alguns componentes server driven na web.
 

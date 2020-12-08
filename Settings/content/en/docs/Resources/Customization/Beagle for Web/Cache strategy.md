@@ -1,6 +1,6 @@
 ---
 title: Cache strategy
-weight: 167
+weight: 179
 description: You will find here the cache strategies types description on the Web
 ---
 
@@ -98,7 +98,7 @@ To change the cache strategy, you have to use the `strategy` parameter with the 
 
 On the configs below, you will find an example on how to alter the strategy to `network-only`:
 
-{{< tabs name="T77" >}}
+{{< tabs name="T76" >}}
 {{% tab name="Angular" %}}
 ```text
 @BeagleModule({

@@ -1,6 +1,6 @@
 ---
 title: Custom Widgets
-weight: 137
+weight: 149
 description: 'You will find here, how to create a component and a Custom widgets class'
 ---
 

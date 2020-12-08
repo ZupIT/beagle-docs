@@ -1,24 +1,14 @@
 ---
-title: Custom Widget
-weight: 108
-description: >-
-  You will find here an example on how to create a component and a customized
-  widget
+title: Simple Custom Widget
+weight: 115
+description: Here you will learn how to create and use a widget in Beagle
 ---
 
 ---
-
-## Introduction
-
-Beagle already has **basic widgets** that you can use to create components interface of your server-driven application. 
-
-However, your application may need more customized components \(Custom Views\), and to make them 'visible' to Beagle, you have to create a customized widget. You can create many new components you want, since it **makes your application's Views, 'visible' to Beagle**. 
 
 ## How to create components \(custom views\) and widgets?
 
 The example below shows how a custom widget will be implemented and which component it will register. It will have a text and two buttons inside a linear layout. The buttons in this component will be responsible to increase and decrease the text's size and the screen will be like the image: 
-
-
 
 ![](/docs-beagle/image%20%2883%29.png)
 
@@ -26,7 +16,7 @@ The example below shows how a custom widget will be implemented and which compon
 You can do this using `@RegisterWidget` annotation and extending the `WidgetView` class.
 {{% /alert %}}
 
-Follow the next steps to create and customize a component and a widget: 
+Follow the next steps to create and customize a component and a widget:
 
 ### Step 1: Create widget
 

@@ -24,12 +24,12 @@ Esta conexão entre frontend e backend é feita via `WebSocket` utilizando a por
 
 Para usar o `Live Preview` você deve: 
 
-* Usar o [**Beagle SDK**](../get-started/installing-beagle/beagle-backend.md) em seu BFF**;**
+* Usar o [**Beagle SDK**](../get-started/instalando-beagle/backend.md) em seu BFF**;**
 * Instalar o `BeaglePreview` plugin;
 
 ### Configuração do BFF
 
-Você precisa que seu BFF esteja configurado com o Beagle para utilizar o Live Preview. Caso ainda não o tenha, faça o [**download de um projeto inicial pronto**](https://github.com/ZupIT/beagle-examples/tree/master/BeagleSampleBackend). Outra possibilidade que você pode fazer, é o nosso tutorial de [**como implementar um backend**](../get-started/new-project/exemplo-de-projeto-backend-com-beagle.md) com o Beagle configurado.
+Você precisa que seu BFF esteja configurado com o Beagle para utilizar o Live Preview. Caso ainda não o tenha, faça o [**download de um projeto inicial pronto**](https://github.com/ZupIT/beagle-examples/tree/master/BeagleSampleBackend). Outra possibilidade que você pode fazer, é o nosso tutorial de [**como implementar um backend**](../get-started/criando-projeto-do-zero/case-backend.md) com o Beagle configurado.
 
 ### Instalação **do plugin IntelliJ**
 
@@ -89,7 +89,7 @@ O Live Preview faz isso ao compilar seu código modificado e verificar se existe
 
 Uma vez configurado o seu backend, o próximo passo é configurar o emulador no frontend da sua aplicação com um projeto Beagle Android ou  Beagle iOS. 
 
-{{< tabs name="T96" >}}
+{{< tabs name="T88" >}}
 {{% tab name="Cliente Android" %}}
 ### Passo 1: Instalar o submódulo
 
@@ -194,7 +194,7 @@ startActivity(
 {{% tab name="Cliente iOS" %}}
 ### Passo 1: Instalar o submódulo
 
-Para realizar a instalação, é necessário primeiro já ter seguido os [**passos de instalação do Beagle para iOS**](../get-started/installing-beagle/ios.md). Assim os passos seguintes variam de acordo com o método utilizado.
+Para realizar a instalação, é necessário primeiro já ter seguido os [**passos de instalação do Beagle para iOS**](../get-started/instalando-beagle/beagle-ios.md). Assim os passos seguintes variam de acordo com o método utilizado.
 
 #### Utilizando via CocoaPods
 

@@ -1,6 +1,6 @@
 ---
 title: The Beagle View
-weight: 158
+weight: 170
 ---
 
 ---

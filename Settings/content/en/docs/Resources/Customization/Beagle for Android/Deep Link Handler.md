@@ -1,6 +1,6 @@
 ---
 title: Deep Link Handler
-weight: 110
+weight: 122
 description: >-
   You will find here a description about DeepLinkHandler class and methods
   details.

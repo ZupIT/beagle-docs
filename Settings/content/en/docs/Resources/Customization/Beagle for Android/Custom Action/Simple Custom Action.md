@@ -1,20 +1,10 @@
 ---
-title: Custom Action
-weight: 102
-description: >-
-  You will find here the description on how to create a Custom Action and
-  details about its methods.
+title: Simple Custom Action
+weight: 104
+description: Creating and executing a custom action
 ---
 
 ---
-
-## Introduction
-
-`CustomAction` is a Beagle's component that can be called through events triggered by other components, including`actions.`
-
-Beagle already has some predefined actions, however it is possible to create custom actions. 
-
-## Example
 
 To create your custom action, follow the next steps:
 
@@ -28,11 +18,11 @@ The `value` attribute is a parameter example that can be declared in this class 
 ```kotlin
 @RegisterAction
 data class CustomActionAndroid(
-val value: String
+    val value: String
 ) : Action {
     override fun execute(rootView: RootView) {
         Toast.makeText(
-            applicationContext, 
+            rootView.getContext(), 
             value, 
             Toast.LENGTH_LONG).show()
     }

@@ -1,6 +1,6 @@
 ---
 title: Network Client
-weight: 114
+weight: 126
 description: >-
   You will find here, information about Beagle's network client and how to
   modify it
@@ -47,111 +47,147 @@ Locate the file `build.gradle(Module:app) ,` open it and scroll the page until y
 
 ### Step 2: Create a class
 
-1. Create a class and choose a name for it. For the example, 
-
-   `ClientCustom` was chosen. If Android complain about imports, just check if the dependencies are not conflicting. 
-
-2. This configuration is long, so copy and paste the class below. You may modify it later.
+1. Create a class and choose a name for it. For the example,`HttpClientDefault` was chosen. 
+2. If Android complain about imports, just check if the dependencies are not conflicting. 
+3. This configuration is long, so copy and paste the class below. You may modify it later.
 
 
 ```kotlin
-import br.com.zup.beagle.annotation.BeagleComponent
-import br.com.zup.beagle.networking.HttpClient
-import br.com.zup.beagle.networking.HttpMethod
-import br.com.zup.beagle.networking.RequestCall
-import br.com.zup.beagle.networking.RequestData
-import br.com.zup.beagle.networking.ResponseData
-import okhttp3.Call
-import okhttp3.Callback
-import okhttp3.Interceptor
-import okhttp3.MediaType.Companion.toMediaTypeOrNull
-import okhttp3.OkHttpClient
-import okhttp3.Request
-import okhttp3.RequestBody
-import okhttp3.RequestBody.Companion.toRequestBody
-import okhttp3.Response
-import java.io.IOException
+import br.com.zup.beagle.android.annotation.BeagleComponent
+import br.com.zup.beagle.android.exception.BeagleApiException
+import br.com.zup.beagle.android.networking.HttpClient
+import br.com.zup.beagle.android.networking.HttpMethod
+import br.com.zup.beagle.android.networking.RequestCall
+import br.com.zup.beagle.android.networking.RequestData
+import br.com.zup.beagle.android.networking.ResponseData
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.cancel
+import kotlinx.coroutines.launch
+import java.io.EOFException
+import java.net.HttpURLConnection
+
+typealias OnSuccess = (responseData: ResponseData) -> Unit
+typealias OnError = (responseData: ResponseData) -> Unit
 
 @BeagleComponent
-class ClientCustom : HttpClient {
+class HttpClientDefault : HttpClient, CoroutineScope {
+
+    private val job = Job()
+    override val coroutineContext = job + CoroutineDispatchers.IO
 
     override fun execute(
         request: RequestData,
-        onSuccess: (responseData: ResponseData) -> Unit,
-        onError: (throwable: Throwable) -> Unit
+        onSuccess: OnSuccess,
+        onError: OnError
     ): RequestCall {
-        val requestBuilder = Request.Builder().url(request.uri.toString())
+        if (getOrDeleteOrHeadHasData(request)) {
+            onError(ResponseData(-1, data = byteArrayOf()))
+            return createRequestCall()
+        }
 
-        addMethod(request, requestBuilder)
-        addHeaders(request.headers, requestBuilder)
-
-        val httpClient = OkHttpClient.Builder()
-
-        httpClient.addInterceptor(object : Interceptor {
-            override fun intercept(chain: Interceptor.Chain): Response {
-                val newRequest = chain.request().newBuilder()
-                    .header("KEY", "VALUE")
-                    .build()
-
-                return chain.proceed(newRequest)
+        launch {
+            try {
+                val responseData = doHttpRequest(request)
+                onSuccess(responseData)
+            } catch (ex: BeagleApiException) {
+                onError(ex.responseData)
             }
-        })
+        }
 
-        val requestCall = httpClient.build().newCall(requestBuilder.build())
-        requestCall.enqueue(object: Callback {
-            override fun onFailure(call: Call, e: IOException) {
-                onError(e)
-            }
+        return createRequestCall()
+    }
 
-            override fun onResponse(call: Call, response: Response) {
-                if (response.isSuccessful 
-                    || response.code == 304) { // Treatment for HttpURLConnection.HTTP_NOT_MODIFIED
-                    onSuccess(createResponseData(response))
-                } else {
-                    onError(IOException("Unexpected error with status code ${response.code}"))
-                }
-            }
-        })
+    private fun getOrDeleteOrHeadHasData(request: RequestData): Boolean {
+        return (request.method == HttpMethod.GET ||
+            request.method == HttpMethod.DELETE ||
+            request.method == HttpMethod.HEAD) &&
+            request.body != null
+    }
 
-        return object: RequestCall {
-            override fun cancel() {
-                requestCall.cancel()
-            }
+    @Throws(BeagleApiException::class)
+    private fun doHttpRequest(
+        request: RequestData
+    ): ResponseData {
+        val urlConnection: HttpURLConnection
+
+        try {
+            urlConnection = request.uri.toURL().openConnection() as HttpURLConnection
+        } catch (e: Exception) {
+            throw BeagleApiException(ResponseData(-1, data = byteArrayOf()), request)
+        }
+
+        request.headers.forEach {
+            urlConnection.setRequestProperty(it.key, it.value)
+        }
+
+        addRequestMethod(urlConnection, request.method)
+
+        if (request.body != null) {
+            setRequestBody(urlConnection, request)
+        }
+
+        try {
+            return createResponseData(urlConnection)
+        } catch (e: Exception) {
+            throw tryFormatException(urlConnection, request)
+        } finally {
+            urlConnection.disconnect()
         }
     }
 
-    private fun createResponseData(response: Response): ResponseData {
-        val body = response.body?.bytes() ?: byteArrayOf()
-        val headers = mutableMapOf<String, String>()
-        (0 until response.headers.size).forEach {
-            val headerName = response.headers.name(it)
-            val headerValue = response.headers.value(it)
-            headers[headerName] = headerValue
-        }
-        return ResponseData(response.code, body, headers)
+    private fun tryFormatException(urlConnection: HttpURLConnection, request: RequestData): BeagleApiException {
+        val response = urlConnection.getSafeError() ?: byteArrayOf()
+        val statusCode = urlConnection.getSafeResponseCode()
+        val statusText = urlConnection.getSafeResponseMessage()
+        val responseData = ResponseData(statusCode = statusCode,
+            data = response, statusText = statusText)
+
+        return BeagleApiException(responseData, request)
     }
 
-    private fun addHeaders(headers: Map<String, String>, requestBuilder: Request.Builder) {
-        headers.forEach {
-            requestBuilder.addHeader(it.key, it.value)
-        }
-    }
+    private fun addRequestMethod(urlConnection: HttpURLConnection, method: HttpMethod) {
+        val methodValue = method.toString()
 
-    private fun addMethod(requestData: RequestData, requestBuilder: Request.Builder) {
-        when (requestData.method) {
-            HttpMethod.GET -> requestBuilder.get()
-            HttpMethod.POST -> requestBuilder.post(createRequestBody(requestData.body))
-            HttpMethod.DELETE -> requestBuilder.delete()
-            HttpMethod.PUT -> requestBuilder.put(createRequestBody(requestData.body))
-            HttpMethod.PATCH -> requestBuilder.patch(createRequestBody(requestData.body))
-            HttpMethod.HEAD -> requestBuilder.head()
+        if (method == HttpMethod.PATCH || method == HttpMethod.HEAD) {
+            urlConnection.setRequestProperty("X-HTTP-Method-Override", methodValue)
+            urlConnection.requestMethod = "POST"
+        } else {
+            urlConnection.requestMethod = methodValue
         }
     }
 
-    private fun createRequestBody(body: String?): RequestBody {
-        val contentType = "application/json; charset=utf-8".toMediaTypeOrNull()
-        val bodyValue = body ?: ""
-        return bodyValue.toRequestBody(contentType)
+    private fun setRequestBody(urlConnection: HttpURLConnection, request: RequestData) {
+        urlConnection.setRequestProperty("Content-Length", request.body?.length.toString())
+        try {
+            urlConnection.outputStream.write(request.body?.toByteArray())
+        } catch (e: Exception) {
+            throw BeagleApiException(ResponseData(-1, data = byteArrayOf()), request)
+        }
+    }
+
+    private fun createResponseData(urlConnection: HttpURLConnection): ResponseData {
+        return ResponseData(
+            statusCode = urlConnection.responseCode,
+            statusText = urlConnection.responseMessage,
+            headers = urlConnection.headerFields.filter { it.key != null }.map {
+                val headerValue = it.value.toString()
+                    .replace("[", "")
+                    .replace("]", "")
+                it.key to headerValue
+            }.toMap(),
+            data = try {
+                urlConnection.inputStream.readBytes()
+            } catch (e: EOFException) {
+                byteArrayOf()
+            }
+        )
+    }
+
+    private fun createRequestCall() = object : RequestCall {
+        override fun cancel() {
+            this@HttpClientDefault.cancel()
+        }
     }
 }
 ```

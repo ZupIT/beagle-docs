@@ -10,7 +10,7 @@ description: >-
 
 ## **Usage configurations** 
 
-Once you have finished [**Beagle's installation**](../../installing-beagle/android), you have to make now our tool's usage configuration. To make this process easier, we'll use an example of **how to render a** **"Hello Beagle! screen** with a small description.
+Once you have finished [**Beagle's installation**](../installing-beagle/android.md), you have to make now our tool's usage configuration. To make this process easier, we'll use an example of **how to render a** **"Hello Beagle! screen** with a small description.
 
 ### **Step 1: Update Android Manifest**
 
@@ -130,7 +130,7 @@ You can set a Design System now, at this point it is not necessary,  just procee
 
 ### **Step 5: Create a BeagleSetup** 
 
-Now that we initialize your `Application ,`so Beagle can generate other configurations file that you need. When you initialize Beagle for the first time, a `BeagleSetup` class will be automatically created as you can see in the image below:
+Now you have to initialize your `Application ,`so Beagle can generate other configurations file that you need. When you initialize Beagle for the first time, a `BeagleSetup` class will be automatically created as you can see in the image below:
 
 ![BeagleSetup file](/docs-beagle/beaglesetup.png)
 

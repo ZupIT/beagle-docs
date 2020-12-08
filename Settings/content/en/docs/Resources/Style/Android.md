@@ -1,6 +1,6 @@
 ---
 title: Android
-weight: 190
+weight: 202
 description: 'Here, you''ll find how to make components'' stylization on Android''s projects.'
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Safe Area
-weight: 334
+weight: 361
 ---
 
 ---
@@ -22,7 +22,7 @@ Class that helps on your screen's components area. The `Safe Area` guarantees th
 
 ## **How to use it?**
 
-{{< tabs name="T152" >}}
+{{< tabs name="T158" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

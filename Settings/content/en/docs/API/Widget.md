@@ -1,6 +1,6 @@
 ---
 title: Widget
-weight: 339
+weight: 366
 description: >-
   In this section, you will find more about widget's components and its
   attributes details.
@@ -174,7 +174,7 @@ The main attributes are:
 
 On the example below, we used a Container to show the widgets attributes. The class defines a visual component that must extend the `widget` class. 
 
-{{< tabs name="T154" >}}
+{{< tabs name="T159" >}}
 {{% tab name="JSON" %}}
 ```markup
 {

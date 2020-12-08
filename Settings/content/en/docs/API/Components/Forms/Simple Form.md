@@ -1,6 +1,6 @@
 ---
 title: Simple Form
-weight: 318
+weight: 330
 description: Simple Form for web components description and its attributes
 ---
 
@@ -35,11 +35,11 @@ For more information on this component go to the details of [TextInput](../ui/in
 
 #### OnChange 
 
-This function is part of the TextInput and it observes the changes made within its field, that is, whenever the value is modified, something is typed, deleted, etc, this function is called and activates a **list of other** [actions](../../actions/) to happen whenever the value changes. It is in this list that we add a [SetContext](../../actions/setcontext.md) action to set the [Context](../../context.md) value of the form and update the values ​​that are shown in the field. 
+This function is part of the TextInput and it observes the changes made within its field, that is, whenever the value is modified, something is typed, deleted, etc, this function is called and activates a **list of other** [actions](../../actions/) to happen whenever the value changes. It is in this list that we add a [SetContext](../../actions/setcontext.md) action to set the [Context](../../context/) value of the form and update the values ​​that are shown in the field. 
 
 Check our example below on how we implemented a `SimpleForm` 
 
-{{< tabs name="T145" >}}
+{{< tabs name="T132" >}}
 {{% tab name="JSON" %}}
 ```javascript
  {

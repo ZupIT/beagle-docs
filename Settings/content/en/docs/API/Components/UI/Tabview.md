@@ -1,6 +1,6 @@
 ---
 title: Tabview
-weight: 286
+weight: 298
 description: Description of the component TabView and its attributes. This componente was
 ---
 
@@ -38,7 +38,7 @@ If you don't declare the title and the icon on the TabItem, the empty space will
 
 ## How to use it?
 
-{{< tabs name="T130" >}}
+{{< tabs name="T121" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

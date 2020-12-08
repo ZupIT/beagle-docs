@@ -1,6 +1,6 @@
 ---
 title: Sendrequest
-weight: 262
+weight: 274
 description: You will find here SendRequest definition and its attributes details
 ---
 
@@ -15,9 +15,9 @@ The Send Request structure is:
 
 | Attribute | Type | Required | Definition |
 | :--- | :--- | :---: | :--- |
-| url | String or [**Binding**](../context.md#bindings) | ✓ | Server URL. |
+| url | String or [**Binding**](../context/#bindings) | ✓ | Server URL. |
 | method | RequestActionMethod or [**Binding**](https://docs.usebeagle.io/v/v1.0-en/api/context#bindings) | ✓ | HTTP method. |
-| headers | Map &lt;String, String&gt; or [**Binding**](../context.md#bindings) |   | Header items for the request. |
+| headers | Map &lt;String, String&gt; or [**Binding**](../context/#bindings) |   | Header items for the request. |
 | data | Any |   | Content that will be deliver with the request. |
 | onSuccess | List&lt;[**Action**](https://docs.usebeagle.io/v/v1.0-en/api/actions)&gt; |   | Success action. |
 | onError | List&lt;[**Action**](https://docs.usebeagle.io/v/v1.0-en/api/actions)&gt; |   | Error action. |
@@ -27,7 +27,7 @@ The Send Request structure is:
 
 See below an example of a button that send a `POST` request with data user:
 
-{{< tabs name="T119" >}}
+{{< tabs name="T109" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

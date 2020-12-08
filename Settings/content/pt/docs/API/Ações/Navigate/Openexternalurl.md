@@ -20,7 +20,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 No exemplo abaixo, você pode ver um botão que, ao ser clicado, abre o navegador com a URL especificada. Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e chame esse endpoint no frontend.
 
-{{< tabs name="T125" >}}
+{{< tabs name="T111" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

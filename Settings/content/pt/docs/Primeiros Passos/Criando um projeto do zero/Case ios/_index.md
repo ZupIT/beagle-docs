@@ -1,5 +1,5 @@
 ---
-title: IOS
+title: Case ios
 weight: 38
 description: 'Nesta seção, você encontra informações para iniciar um projeto iOS com Beagle.'
 ---
@@ -135,7 +135,7 @@ No GIF abaixo, você vê melhor como remover as referências:
 
 ![](/docs-beagle/main%20%282%29.gif)
 
-Feito! O Beagle está configurado na sua aplicação iOS. Agora, tudo o que você precisa é [**configurar um backend**](../exemplo-de-projeto-backend-com-beagle.md) para responder as requisições do seu aplicativo server-driven.
+Feito! O Beagle está configurado na sua aplicação iOS. Agora, tudo o que você precisa é [**configurar um backend**](../case-backend.md) para responder as requisições do seu aplicativo server-driven.
 
 Feita essa configuração, inicie a sua aplicação e você terá sua primeira tela server-driven!   
 Você verá a tela a seguir: 

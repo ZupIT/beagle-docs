@@ -1,6 +1,6 @@
 ---
 title: Sourcery
-weight: 149
+weight: 161
 description: Information about how to use and install Sourcery
 ---
 
@@ -61,7 +61,7 @@ For the Sourcery to use the Beagle's templates, you must specify the `SourceryPr
 The attributes written inside the`.yml` consider that **Cartfile** or **Podfile** file are in the same directory that `.xcodeproj` or `.xcworkspace`
 {{% /alert %}}
 
-{{< tabs name="T69" >}}
+{{< tabs name="T71" >}}
 {{% tab name="Cocoapods" %}}
 ```yaml
 sources:

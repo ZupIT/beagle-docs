@@ -1,6 +1,6 @@
 ---
 title: Popview
-weight: 246
+weight: 258
 description: Here you'll find PopView description.
 ---
 
@@ -16,7 +16,7 @@ On the example below there's a screen coming from BFF with a button that when cl
 
 To test, your BFF's endpoint should return the screen with the code below and call it in the frontend. 
 
-{{< tabs name="T112" >}}
+{{< tabs name="T97" >}}
 {{% tab name="JSON" %}}
 ```text
 {

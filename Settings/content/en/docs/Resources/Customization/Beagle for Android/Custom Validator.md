@@ -1,6 +1,6 @@
 ---
 title: Custom Validator
-weight: 106
+weight: 111
 description: >-
   You will find here a description on how to validate a form. This component is
   deprecated.

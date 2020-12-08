@@ -1,6 +1,6 @@
 ---
 title: Beagle for Backend
-weight: 176
+weight: 190
 description: 'Here, you''ll find the main customizations provided for backend.'
 ---
 

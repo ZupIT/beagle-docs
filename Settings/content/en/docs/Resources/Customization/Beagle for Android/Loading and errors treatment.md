@@ -1,6 +1,6 @@
 ---
 title: Loading and errors treatment
-weight: 116
+weight: 128
 description: >-
   You will find here information on how to customize Beagle's behaviour to each
   loading screens and errors treatments.

@@ -18,7 +18,7 @@ Todos os itens serão dispostos em uma linha:
 
 ![](https://lh3.googleusercontent.com/2sWYZdvDpSj8gCfOR2Pa9iESgFrjD6XEXT2QIoMj_OQq-sw6fcTB5s7yuum2cnKekIU8Mn326F9PD87IyCGwSK6jzauS-SfqUeDQ43zi1nnjUp7yf9QuYCHbHLW6L-O_sjw1rPdX)
 
-{{< tabs name="T30" >}}
+{{< tabs name="T38" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -82,7 +82,7 @@ A quebra de linha irá acontecer e os itens mais à direita serão deslocados pa
 
 ![](https://lh4.googleusercontent.com/m_ZGUdUGHgmiRuAoSoda4-2hn8kEoUuNMXOlphge-WPWGG_56O6ds2x89coUVpm5QpTV1aRiS9iDVzLatuf-OFeTxTwPBhPcpItGO5VjqfZeYHFtbosdW_9pWGPKX-5pUOxI-qF7)
 
-{{< tabs name="T30" >}}
+{{< tabs name="T39" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -146,7 +146,7 @@ A quebra de linha irá acontecer e os itens mais à direita serão deslocados pa
 
 ![](https://lh4.googleusercontent.com/Izm4kY_rDDogIAaTf0sIdNhIDiOrty4LycVBKfRwzwEdv6W3r77humceK6sCJp-UvRW1LZAXY6TrJ8grVF7kJ_uxh5_6B-1BNmn0RUb_A9x8Zi76BoHdMRMIJA6-hDmbeYPN8mJP)
 
-{{< tabs name="T30" >}}
+{{< tabs name="T40" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin

@@ -1,6 +1,6 @@
 ---
 title: Resetstack
-weight: 250
+weight: 262
 description: Here you'll find ResetStack description and its attribute.
 ---
 
@@ -28,7 +28,7 @@ To test, you will need three endpoints:
 
 #### How to call the screen zero <a id="como-chamar-a-tela-zero"></a>
 
-{{< tabs name="T114" >}}
+{{< tabs name="T101" >}}
 {{% tab name="JSON" %}}
 ```text
 {
@@ -81,7 +81,7 @@ Screen(
 
 #### How to call the screen 1 <a id="como-chamar-a-tela-1"></a>
 
-{{< tabs name="T114" >}}
+{{< tabs name="T102" >}}
 {{% tab name="JSON" %}}
 ```text
 {
@@ -134,7 +134,7 @@ Screen(
 
 #### How to call the screen 2 <a id="como-chamar-a-tela-2"></a>
 
-{{< tabs name="T114" >}}
+{{< tabs name="T103" >}}
 {{% tab name="JSON" %}}
 ```text
 {

@@ -17,7 +17,7 @@ weight: 373
 
  Um contexto com id **numbersArray** que possui como valor **\[0, 1, 2, 3, 4\]** e a operação `length` foi utilizada em um componente Text para pegar o tamanho desse array, veja abaixo:
 
-{{< tabs name="T170" >}}
+{{< tabs name="T164" >}}
 {{% tab name="Kotlin" %}}
 ```kotlin
 fun screen() = Screen(child = 

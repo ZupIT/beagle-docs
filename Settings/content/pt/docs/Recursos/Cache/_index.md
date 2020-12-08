@@ -34,7 +34,7 @@ Nesta camada de cache, existem duas localizações. São elas:
 
 Este cache é usado para otimizar a resposta do BFF - tanto em tempo quanto em tamanho -, em casos que não há mudança. As entradas neste cache duram até o servidor refazer o deploy ou o cliente ser reinstalado.
 
-A premissa para que este cache funcione é que ele deve sempre retornar o mesmo JSON para a mesma requisição. Para que uma requisição seja considerada igual, é necessário que tenha o mesmo endpoint e a mesma plataforma especificada como mostra nossa [**especificação de plataformas**.](../componentes/platform-sorting.md)
+A premissa para que este cache funcione é que ele deve sempre retornar o mesmo JSON para a mesma requisição. Para que uma requisição seja considerada igual, é necessário que tenha o mesmo endpoint e a mesma plataforma especificada como mostra nossa [**especificação de plataformas**.](../componentes/especificacao-de-componentes-por-plataforma.md)
 
 {{% alert color="danger" %}}
 É importante destacar que o mecanismo de cache **não deve** ser utilizado em **endpoints** que não atendam a essa **premissa**. Ele pode ser ativado ou desativado no BFF por endpoint ou para o BFF inteiro.

@@ -12,7 +12,7 @@ description: >-
 
 Cada plataforma tem sua forma própria para exibir uma tela server-driven no frontend usando o Beagle. Abaixo, listamos exemplos para cada uma delas.
 
-{{< tabs name="T102" >}}
+{{< tabs name="T94" >}}
 {{% tab name="Android" %}}
 Para exibir uma tela **`full server-driven`**, você deve usar o método `this.newServerDrivenIntent<BeagleActivity>()` onde o `this` é a o contexto da sua tela atual. 
 
@@ -23,7 +23,7 @@ Você deve seguir tal como o comando abaixo:
 {{% alert color="warning" %}}
 Certifique-se de listar a sua Beagle Activity assim como nomeada em seu AndroidManifest. 
 
-No exemplo abaixo a chamamos somente de &lt;BeagleActivity&gt;. Esse nome é você quem define ao criar sua BeagleActivity. Em nosso tutorial [**Criando um projeto do zero** ](../get-started/new-project/), chamamos ela de `AppBeagleActivity`
+No exemplo abaixo a chamamos somente de &lt;BeagleActivity&gt;. Esse nome é você quem define ao criar sua BeagleActivity. Em nosso tutorial [**Criando um projeto do zero** ](../get-started/criando-projeto-do-zero/), chamamos ela de `AppBeagleActivity`
 {{% /alert %}}
 
 ```kotlin
@@ -160,7 +160,7 @@ No campo`path`, deve ficar o caminho para seu JSON que será associado com o `ba
 
 ## Exibindo uma tela a partir de um JSON
 
-{{< tabs name="T102" >}}
+{{< tabs name="T95" >}}
 {{% tab name="Android" %}}
 Para renderizar uma tela a partir de um JSON, é necessário ter uma `Activity` ou  `Fragment` com um `FrameLayout` como no exemplo a baixo:
 

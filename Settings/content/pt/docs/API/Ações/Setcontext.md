@@ -28,7 +28,7 @@ Conheça mais sobre o [**contexto no Beagle**](../contexto/).
 
 Abaixo temos um exemplo de um texto que é preenchido por contexto e possui um valor inicial "Set Context Example" e no evento de clique do botão o valor do contexto é alterado para "Context has changed".
 
-{{< tabs name="T137" >}}
+{{< tabs name="T128" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

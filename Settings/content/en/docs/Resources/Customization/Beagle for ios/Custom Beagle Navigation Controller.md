@@ -1,6 +1,6 @@
 ---
 title: Custom Beagle Navigation Controller
-weight: 133
+weight: 145
 description: >-
   You will find how to use Beagle Navigation Controller to handle the
   server-driven screen state.

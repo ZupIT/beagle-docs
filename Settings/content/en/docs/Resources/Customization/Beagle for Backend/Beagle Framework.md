@@ -1,6 +1,6 @@
 ---
 title: Beagle Framework
-weight: 178
+weight: 192
 description: Here you'll understand how to use this framework.
 ---
 

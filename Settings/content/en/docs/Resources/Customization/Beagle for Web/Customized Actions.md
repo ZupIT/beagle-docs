@@ -1,6 +1,6 @@
 ---
 title: Customized Actions
-weight: 163
+weight: 175
 description: You will find here which actions can be customized on Beagle for Web
 ---
 
@@ -41,7 +41,7 @@ In the ActionHandler function, you can access the defined values like the exampl
 
 **Step 3:** Add the action name in the association file according to your framework: 
 
-{{< tabs name="T75" >}}
+{{< tabs name="T72" >}}
 {{% tab name="Angular" %}}
 For Angular: Add beagle.module.ts
 

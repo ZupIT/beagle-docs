@@ -1,6 +1,6 @@
 ---
 title: Custom Beagle Activity
-weight: 104
+weight: 109
 description: >-
   You will find here how to use BeagleActivity  to customize your server-driven
   activity.

@@ -21,7 +21,7 @@ description: >-
 
 Veja o exemplo de uma tela no qual foi declarado um contexto com id `numbersArray` com o valor de **\[0, 1, 2, 3, 4\],** esse contexto é usado na  operação de `removeIndex`no texto do component Text, onde ele remove o elemento de index **2**.
 
-{{< tabs name="T169" >}}
+{{< tabs name="T163" >}}
 {{% tab name="Kotlin" %}}
 ```kotlin
 fun screen() = Screen(child = 

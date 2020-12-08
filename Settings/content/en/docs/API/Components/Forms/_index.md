@@ -1,6 +1,6 @@
 ---
 title: Forms
-weight: 312
+weight: 324
 description: Forms components description and its attributes details
 ---
 

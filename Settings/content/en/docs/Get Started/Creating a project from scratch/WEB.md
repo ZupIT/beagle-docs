@@ -20,7 +20,7 @@ You must have **Visual Studio Code** to start your project. In case you don't ha
 
 After the installation, follow the steps according to framework you chose: 
 
-{{< tabs name="T19" >}}
+{{< tabs name="T8" >}}
 {{% tab name="Angular" %}}
 **Step 1:** Open the terminal and use the command below:
 
@@ -100,7 +100,7 @@ And wait until the installation finishes.
 
 Now it's time to configure Beagle's files inside your application, following these instructions:
 
-{{< tabs name="T19" >}}
+{{< tabs name="T9" >}}
 {{% tab name="Angular" %}}
 Open the `app.module.ts` file and import Beagle's module that was just generated:
 
@@ -164,7 +164,7 @@ export default createBeagleUIService({
 
 Now you need a JSON to render the components. Usually, this call is made by an external server that would return the JSON, but for this example we'll use a local file that will be created for this test:
 
-{{< tabs name="T19" >}}
+{{< tabs name="T10" >}}
 {{% tab name="Angular" %}}
 On your angular project, navigate to the `src/assets` folder and create a new file named `payload.json`. Insert this new file on the `JSON` content below.
 {{% /tab %}}
@@ -202,7 +202,7 @@ On your react project, navigate to the `/public` folder and create a new file na
 
 Now it's necessary to add on your application the local where the components will be rendered through JSON. The Beagle's library provides a component with this functionality:  `beagle remote view`. To configure this component, follow these steps: 
 
-{{< tabs name="T19" >}}
+{{< tabs name="T11" >}}
 {{% tab name="Angular" %}}
 Open the `app.component.html` file and replace all the content with this code:
 

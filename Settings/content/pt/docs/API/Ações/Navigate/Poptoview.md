@@ -28,7 +28,7 @@ Para testar, iremos precisar de três endpoints:
 
 #### Como chamar pela tela zero
 
-{{< tabs name="T130" >}}
+{{< tabs name="T116" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {
@@ -81,7 +81,7 @@ Screen(
 
 #### Como chamar a Tela 1
 
-{{< tabs name="T130" >}}
+{{< tabs name="T117" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {
@@ -134,7 +134,7 @@ Screen(
 
 #### Como chamar a Tela 2
 
-{{< tabs name="T130" >}}
+{{< tabs name="T118" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

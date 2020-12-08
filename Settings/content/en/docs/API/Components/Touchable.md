@@ -1,6 +1,6 @@
 ---
 title: Touchable
-weight: 295
+weight: 307
 description: Description of components that enable click actions in another components
 ---
 
@@ -64,7 +64,7 @@ See how the structure is represented:
 
 ## How to use it?
 
-{{< tabs name="T134" >}}
+{{< tabs name="T125" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

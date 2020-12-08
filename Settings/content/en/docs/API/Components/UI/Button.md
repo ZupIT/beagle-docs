@@ -1,6 +1,6 @@
 ---
 title: Button
-weight: 275
+weight: 287
 description: Description of the component Button and its attributes
 ---
 
@@ -29,7 +29,7 @@ Check the example below to see how the structure works:
       <td style="text-align:left">text</td>
       <td style="text-align:left">
         <p>String or</p>
-        <p><a href="../../context.md#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
+        <p><a href="../../context/#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
       </td>
       <td style="text-align:left">&#x2713;</td>
       <td style="text-align:left">
@@ -42,7 +42,7 @@ Check the example below to see how the structure works:
       <td style="text-align:left">styleId</td>
       <td style="text-align:left">
         <p>String or</p>
-        <p>&lt;b&gt;&lt;/b&gt;<a href="../../context.md#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
+        <p>&lt;b&gt;&lt;/b&gt;<a href="../../context/#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
       </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">It refers to a native style to be applied in the button. This attribute
@@ -55,7 +55,9 @@ Check the example below to see how the structure works:
       <td style="text-align:left"></td>
       <td style="text-align:left">Possible array actions that this button will go off when clicked. It is
         possible to adapt this action to be customized or an extension of any action
-        already available in your interface. This attribute is optional.</td>
+        already available in your interface. This attribute is optional, but if
+        an action it is defined here, it must be configured in the frontend. To
+        create an action in the frontend, <a href="../../../resources/customization/"><b>see the example here</b></a>.</td>
     </tr>
     <tr>
       <td style="text-align:left">clickAnalyticsEvent</td>
@@ -63,14 +65,14 @@ Check the example below to see how the structure works:
       <td
       style="text-align:left"></td>
         <td style="text-align:left">Click event that will go off in case an analytics service has been implemented.
-          For more information about analytics, click here.</td>
+          Check <a href="../../analytics.md"><b>here fore more information about analytics.</b></a>&lt;b&gt;&lt;/b&gt;</td>
     </tr>
   </tbody>
 </table>
 
 ## How to use it?
 
-{{< tabs name="T125" >}}
+{{< tabs name="T115" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

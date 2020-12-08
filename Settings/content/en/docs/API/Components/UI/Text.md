@@ -1,6 +1,6 @@
 ---
 title: Text
-weight: 288
+weight: 300
 description: Description of the component Text and its attributes
 ---
 
@@ -29,7 +29,7 @@ The structure is represented by the attributes below:
 
 ## How to use it?
 
-{{< tabs name="T131" >}}
+{{< tabs name="T122" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

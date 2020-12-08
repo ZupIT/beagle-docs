@@ -85,7 +85,7 @@ A sua estrutura é representada como mostrado abaixo:
       <td style="text-align:center"></td>
       <td style="text-align:left">
         <p>Array de a&#xE7;&#xF5;es que esse campo <b>pode disparar quando seu valor for alterado</b>.
-          &#xC9; poss&#xED;vel definir uma <a href="../../../features/criando-sua-acao-customizada.md"><b>a&#xE7;&#xE3;o customizada</b></a><b> </b>ou
+          &#xC9; poss&#xED;vel definir uma <a href="../../../features/criacao-de-novas-acoes.md"><b>a&#xE7;&#xE3;o customizada</b></a><b> </b>ou
           qualquer a&#xE7;&#xE3;o j&#xE1; dispon&#xED;vel na interface, como por
           exemplo uma a&#xE7;&#xE3;o que mostra uma mensagem de alerta(<a href="../../acoes/alert.md"><b>Alert</b></a>).</p>
         <p></p>
@@ -99,7 +99,7 @@ A sua estrutura é representada como mostrado abaixo:
       <td style="text-align:center"></td>
       <td style="text-align:left">
         <p>Array de a&#xE7;&#xF5;es que esse campo <b>pode disparar quando seu foco &#xE9; retirado</b>.
-          &#xC9; poss&#xED;vel definir uma <a href="../../../features/criando-sua-acao-customizada.md"><b>a&#xE7;&#xE3;o customizada</b></a><b> </b>ou
+          &#xC9; poss&#xED;vel definir uma <a href="../../../features/criacao-de-novas-acoes.md"><b>a&#xE7;&#xE3;o customizada</b></a><b> </b>ou
           qualquer a&#xE7;&#xE3;o j&#xE1; dispon&#xED;vel na interface como, por
           exemplo, uma a&#xE7;&#xE3;o que mostra uma mensagem de alerta(<a href="../../acoes/alert.md"><b>Alert</b></a>).</p>
         <p></p>
@@ -113,7 +113,7 @@ A sua estrutura é representada como mostrado abaixo:
       <td style="text-align:center"></td>
       <td style="text-align:left">
         <p>Array de a&#xE7;&#xF5;es que esse campo pode disparar quando &#xE9; colocado
-          em foco. &#xC9; poss&#xED;vel definir uma <a href="../../../features/criando-sua-acao-customizada.md"><b>a&#xE7;&#xE3;o customizada</b></a><b> </b>ou
+          em foco. &#xC9; poss&#xED;vel definir uma <a href="../../../features/criacao-de-novas-acoes.md"><b>a&#xE7;&#xE3;o customizada</b></a><b> </b>ou
           qualquer a&#xE7;&#xE3;o j&#xE1; dispon&#xED;vel na interface como, por
           exemplo, uma a&#xE7;&#xE3;o que mostra uma mensagem de alerta(<a href="../../acoes/alert.md"><b>Alert</b></a>).</p>
         <p></p>
@@ -140,7 +140,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 Segue abaixo um exemplo de entrada de texto do tipo senha:
 
-{{< tabs name="T149" >}}
+{{< tabs name="T141" >}}
 {{% tab name="JSON" %}}
 ```text
 {

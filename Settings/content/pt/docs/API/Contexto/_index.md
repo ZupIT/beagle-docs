@@ -27,7 +27,7 @@ De modo geral, o contexto pode ser usado quando você quer preencher valores em 
 
 No exemplo abaixo, você pode ver o contexto com dados de um usuário e sendo mostrados algumas dessas informações em um `Text` :
 
-{{< tabs name="T163" >}}
+{{< tabs name="T151" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {
@@ -105,7 +105,7 @@ Quando **há um escopo definido** para o contexto dentro do seu JSON ou da sua e
 
 Veja o exemplo abaixo de como funciona: 
 
-{{< tabs name="T163" >}}
+{{< tabs name="T152" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {
@@ -205,7 +205,7 @@ Um binding é identificado com o prefixo**`@{`** e o sufixo **`}`**. Isso signif
 
 Veja o exemplo abaixo de como funciona: 
 
-{{< tabs name="T163" >}}
+{{< tabs name="T153" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {
@@ -252,7 +252,7 @@ Nesses casos, os bindings devem ser usados para acessar subestruturas. Como acon
 * Para acessar o CPF, use o binding `@{user.cpf}` ;
 * Para acessar o número de telefone, use o binding `@{user.phoneNumber.cellphone}`.
 
-{{< tabs name="T163" >}}
+{{< tabs name="T154" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {
@@ -313,7 +313,7 @@ Veja como no exemplo abaixo:
 
 Para acessar o título do segundo filme \("Contact"\), use o binding  `@{movies.titles[1].title}`. 
 
-{{< tabs name="T163" >}}
+{{< tabs name="T155" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {
@@ -402,7 +402,7 @@ Em cada sistema, o binding deve ser declarado de uma forma:
 
 Exemplos de cada sistema operacional: 
 
-{{< tabs name="T163" >}}
+{{< tabs name="T156" >}}
 {{% tab name="Android" %}}
 ```kotlin
 data class MyComponent(
@@ -444,7 +444,7 @@ public struct MyComponent: Widget {
 
 A forma de referenciar uma expressão em Kotlin DSL é: 
 
-{{< tabs name="T163" >}}
+{{< tabs name="T157" >}}
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 MyComponent(
@@ -456,7 +456,7 @@ MyComponent(
 
 No entanto, caso você passe o **valor hardcoded**, você deve fazer dessa forma:
 
-{{< tabs name="T163" >}}
+{{< tabs name="T158" >}}
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 MyComponent(

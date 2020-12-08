@@ -1,6 +1,6 @@
 ---
 title: Design System
-weight: 112
+weight: 124
 description: You will find here Design System class description and methods details.
 ---
 

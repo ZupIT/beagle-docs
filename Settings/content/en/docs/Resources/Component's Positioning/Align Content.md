@@ -16,7 +16,7 @@ Lines are evenly distributed along the cross axis and take up all the available 
 
 ![](https://lh3.googleusercontent.com/b_00j2HH0UvQnJB8E8JenWZvjhJ5uzi9awrlVQ5HSKaWitrEoeW6rLWTY9my9CzVZUmIfbnGR65irYZRV_VygYZdOxU7k9aIGm8DYOkCFxSt6IyjQbnpvcU0NpnUVimlFoHTrCHE)
 
-{{< tabs name="T27" >}}
+{{< tabs name="T25" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -95,7 +95,7 @@ Lines are distributed at the beginning of the cross axis:
 
 ![](https://lh3.googleusercontent.com/BED8XfPrj4lRkR9omN8FF2_TpniAMloMUOkavnhRi9vlyXvQRrd-GqpTLphHS3Z6URJBEnt6mV25T34Sbzaj1kuIkTOQkpRzsafFgWCtxI5RBPRUXJmCEianoGJvBvarQH17yQzI)
 
-{{< tabs name="T27" >}}
+{{< tabs name="T26" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -253,7 +253,7 @@ Lines are kept in center of the cross axis:
 
 ![](https://lh3.googleusercontent.com/Zg9Ki80KtZlAOJPkXUWptxdcCoKGQMiUvfSkFwfA3KK3fvNg4JmTes1kQ45IXkqwnIei0AFGUr_DqJel4PVG-8AUmx1HEKEC-KiUOjXJoSpdnzPaoQbWuqQabGEjMNHaE8-Jswwc)
 
-{{< tabs name="T27" >}}
+{{< tabs name="T28" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -332,7 +332,7 @@ The first line is moved to the beginning of the cross axis, and the last one to 
 
 ![](https://lh6.googleusercontent.com/FuNZ44wVYsY92lrIC41adtO0FfQPiNCc-DrDAskJUVHaYokYANlo9s-RlD6OL_su4lDZMjGmclKvE20KA_qOBjyHESqA_bjLUYecnFQVqrqN0zHYcIT8fint32wZ6YPKm19-wxLG)
 
-{{< tabs name="T27" >}}
+{{< tabs name="T29" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -411,7 +411,7 @@ Lines are evenly distributed along the cross axis. Margins are assigned equally 
 
 ![](https://lh6.googleusercontent.com/XLrdmMcnGnWX74fZTuLPCHJzJma6mxIWOmwfqLENLhvj3c6Y5vQ7u0HkQIeJvRDLS4-nLtPlJh-TZ2tO0A4go0ZJOx8dvv6BCyUZTs5gnJU9ruRS_GEwQfLXCfkqlj2LKC7EFtUb)
 
-{{< tabs name="T27" >}}
+{{< tabs name="T30" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin

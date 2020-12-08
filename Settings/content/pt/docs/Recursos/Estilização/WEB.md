@@ -38,7 +38,7 @@ No exemplo abaixo, você vê como foi feita a adição para uma classe hipotéti
 
 O processo de inserir uma classe ao componente varia de acordo com o framework que estiver utilizando. Confira o processo para cada um deles nas abas a seguir:
 
-{{< tabs name="T95" >}}
+{{< tabs name="T87" >}}
 {{% tab name="Angular" %}}
 No Angular, há duas formas de adicionar a classe que recebemos da propriedade `styleId`:
 

@@ -1,6 +1,6 @@
 ---
 title: Layout
-weight: 299
+weight: 311
 description: Layout components description and its attributes details
 ---
 

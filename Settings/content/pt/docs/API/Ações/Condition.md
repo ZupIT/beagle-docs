@@ -22,7 +22,7 @@ description: >-
 
 O exemplo abaixo é um `Container` com um contexto que possui o valor 18  e no evento `onPress` do botão foi definido uma ação do tipo `Condition` que verifica se o valor é igual a 21 e mostra um `Alert` dependendo do valor do contexto.
 
-{{< tabs name="T118" >}}
+{{< tabs name="T108" >}}
 {{% tab name="JSON" %}}
 ```
 {

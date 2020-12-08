@@ -1,6 +1,6 @@
 ---
 title: Using the Playground
-weight: 210
+weight: 222
 description: 'Here, you''ll find more information on how to use Playground.'
 ---
 

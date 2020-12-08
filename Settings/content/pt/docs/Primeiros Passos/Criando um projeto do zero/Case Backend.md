@@ -1,5 +1,5 @@
 ---
-title: Backend
+title: Case Backend
 weight: 45
 description: >-
   Nesta seção, você encontra informações para iniciar um projeto de Backend com
@@ -58,7 +58,7 @@ Siga os passos abaixo para importar o projeto que você criou. Primeiro, abra o 
 
 ### Passo 1: Configurar o projeto
 
-Como ponto de partida, siga nosso [**passo a passo para instalar o backend**](../installing-beagle/beagle-backend.md). 
+Como ponto de partida, siga nosso [**passo a passo para instalar o backend**](../instalando-beagle/backend.md). 
 
 ### Passo 2: Definir a Estrutura
 
@@ -250,6 +250,6 @@ Para saber mais sobre como configurar o seu ambiente frontend, veja mais em:
 
 👉 Tutorial do Beagle para [**Android**](case-android/).
 
-👉Tutorial do Beagle para [**iOS**](../using-beagle/ios.md).
+👉Tutorial do Beagle para [**iOS**](../usando-beagle/ios.md).
 
 👉Tutorial do Beagle para  [**Web**](case-web.md).

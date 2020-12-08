@@ -1,6 +1,6 @@
 ---
 title: Events
-weight: 324
+weight: 355
 ---
 
 ---
@@ -22,7 +22,7 @@ An event can be part of the component contract or a Beagle action. A`button`, fo
 
 See the example with the event onPress button: 
 
-{{< tabs name="T147" >}}
+{{< tabs name="T155" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

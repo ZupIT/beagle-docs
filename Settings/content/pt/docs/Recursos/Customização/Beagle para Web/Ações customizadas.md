@@ -41,7 +41,7 @@ Na função ActionHandler, você pode acessar os valores definidos como no exemp
 
 **Passo 3:** Adicione o nome da ação no arquivo de associação do seu framework. 
 
-{{< tabs name="T76" >}}
+{{< tabs name="T73" >}}
 {{% tab name="Angular" %}}
 Para Angular: adicione beagle.module.ts
 

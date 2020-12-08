@@ -13,7 +13,7 @@ description: >-
 Depois de ter o **Beagle** instalado em seu projeto, vamos te mostrar como renderizar uma tela e exibir seu primeiro **"Hello Beagle!"**.
 
 {{% alert color="warning" %}}
-Veja como [**instalar o Beagle**](../installing-beagle/) caso ainda não tenha concluído esta etapa.
+Veja como [**instalar o Beagle**](../instalando-beagle/) caso ainda não tenha concluído esta etapa.
 {{% /alert %}}
 
 Atualmente, existem dois tipos de abordagens para a renderização de telas com o Beagle: **remota** e **declarativa.**
@@ -60,7 +60,7 @@ class MyBeagleScreen {
 
 
 {{% alert color="info" %}}
-Note que a **`Screen`** está sendo construída utilizando **`Flex`**. Para entender melhor esses componentes e suas propriedades, vá para a seção [**posicionamento de componentes**](../../features/layout-de-componentes/).
+Note que a **`Screen`** está sendo construída utilizando **`Flex`**. Para entender melhor esses componentes e suas propriedades, vá para a seção [**posicionamento de componentes**](../../features/posicionamento-de-componentes/).
 {{% /alert %}}
 
 ### Passo 2: Instanciar o **BeagleScreenViewController**
@@ -105,4 +105,4 @@ Por fim, execute a sua aplicação e, se tudo estiver certo, você deverá ver u
 
 Nesta seção, você viu como criar sua primeira tela declarativa utilizando o **Beagle**, em sua forma mais simples, sem entrar no conceito de server-driven UI.
 
-👉Para entender melhor **como configurar o Beagle** e utilizá-lo aplicando o conceito de server-driven UI, veja como [**criar um projeto iOS do zero**](../new-project/case-ios/).
+👉Para entender melhor **como configurar o Beagle** e utilizá-lo aplicando o conceito de server-driven UI, veja como [**criar um projeto iOS do zero**](../criando-projeto-do-zero/case-ios/).

@@ -1,6 +1,6 @@
 ---
 title: Beagle View
-weight: 131
+weight: 143
 description: >-
   On this section, you find informations about Beagle View for iOS and how to
   use it.

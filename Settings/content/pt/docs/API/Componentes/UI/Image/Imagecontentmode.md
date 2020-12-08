@@ -8,7 +8,7 @@ description: 'Nesta seção, você encontra a descrição da classe ImageContent
 
 É uma classe `ENUM` responsável por definir como a imagem declarada será visualizada na UI.
 
-{{< tabs name="T144" >}}
+{{< tabs name="T135" >}}
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 enum class ImageContentMode {

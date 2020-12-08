@@ -80,7 +80,7 @@ Valor default é ListDirection.VERTICAL
 
 ### ListView
 
-{{< tabs name="T155" >}}
+{{< tabs name="T146" >}}
 {{% tab name="JSON" %}}
 ```text
 {
@@ -205,7 +205,7 @@ ListView(
 
 ### ListView Depreciado
 
-{{< tabs name="T155" >}}
+{{< tabs name="T147" >}}
 {{% tab name="JSON" %}}
 ```text
 {

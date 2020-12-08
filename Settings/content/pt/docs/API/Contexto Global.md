@@ -47,7 +47,7 @@ Um contexto que seja global pode ser definido de duas formas:
 
 É possível definir ou modificar um contexto global a partir da Ação [**`SetContext`**](acoes/setcontext.md)**.** Para tal, basta identificar o contexto global utilizando a `ID = "global"` na propriedade `contextId`, como mostrado no exemplo abaixo:
 
-{{< tabs name="T172" >}}
+{{< tabs name="T167" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {
@@ -119,7 +119,7 @@ Para isso é usado:
 
 Para definir um contexto global como o do exemplo dessa seção, utilize o comando abaixo:
 
-{{< tabs name="T172" >}}
+{{< tabs name="T168" >}}
 {{% tab name="Android" %}}
 ```javascript
 GlobalContext.set("Context has changed", "myValue")
@@ -159,7 +159,7 @@ beagleService?.globalContext.set(value, path)
 {{% /tab %}}
 
 {{% tab name="iOS" %}}
-No iOS o Contexto Global é um dos atributos do [**Beagle Dependencies**](../features/customizacao/beagle-para-ios/beagledependencies.md) .
+No iOS o Contexto Global é um dos atributos do [**Beagle Dependencies**](../features/customizacao/beagle-para-ios/dependencias-do-beagle.md) .
 
 Para utilizar o contexto global em qualquer componente da sua aplicação você precisará chamar o `BeagleDependencies` do seu projeto como no exemplo abaixo:
 
@@ -205,7 +205,7 @@ Para isso é usado:
 
 Considerando o exemplo anterior, para recuperar o valor do Contexto Global que está no path **"myValue"**, utilize o comando:
 
-{{< tabs name="T172" >}}
+{{< tabs name="T169" >}}
 {{% tab name="Android" %}}
 ```javascript
 GlobalContext.get("myValue")
@@ -253,7 +253,7 @@ Para isso é usado:
 
 Para remover os valores de um Contexto Global por completo, "limpando-o", devemos utilizar o comando clear **sem informar** um path. Veja abaixo: 
 
-{{< tabs name="T172" >}}
+{{< tabs name="T170" >}}
 {{% tab name="Android" %}}
 ```javascript
 GlobalContext.clear()
@@ -285,7 +285,7 @@ Dessa forma, o `VALUE` do Contexto Global será **apagado** totalmente e terá u
 
 Por exemplo, imagine um contexto global que tenha duas propriedades definidas a seguir
 
-{{< tabs name="T172" >}}
+{{< tabs name="T171" >}}
 {{% tab name="Propriedade 1" %}}
 * `GlobalContext.set(path = "myValue1", value = "My Context Value1")` 
 * `GlobalContext.set(path = "myValue2", value = "My Context Value2")`

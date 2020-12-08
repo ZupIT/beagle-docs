@@ -49,7 +49,7 @@ Define uma **altura mínima.**
 Isso significa dizer que, por exemplo, se você aplicar uma altura de 100dp em um componente e o aspectRatio de 2, a largura será 2 vezes a altura onde terá o valor de 200dp.   
 
 
-{{< tabs name="T37" >}}
+{{< tabs name="T68" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin

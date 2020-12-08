@@ -8,7 +8,7 @@ description: 'Nesta seção, você encontra mais informações sobre a proprieda
 
 ## Position
 
-Esta propriedade determina a posição de um assume em tela e os seus valores `top, right, bottom, left` se comportam de acordo com o [**Position Type**](positiontype.md) deste elemento. 
+Esta propriedade determina a posição de um assume em tela e os seus valores `top, right, bottom, left` se comportam de acordo com o [**Position Type**](position-type.md) deste elemento. 
 
 O elemento dentro do Position pode ter diferentes tipos de deslocamento se forem:
 
@@ -23,7 +23,7 @@ O elemento dentro do Position pode ter diferentes tipos de deslocamento se forem
 
 ![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.24.08.png)
 
-{{< tabs name="T33" >}}
+{{< tabs name="T55" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -86,7 +86,7 @@ private fun screen() :Widget{
 
 ![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.26.34.png)
 
-{{< tabs name="T33" >}}
+{{< tabs name="T56" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -149,7 +149,7 @@ private fun screen() :Widget{
 
 ![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.29.41.png)
 
-{{< tabs name="T33" >}}
+{{< tabs name="T57" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -212,7 +212,7 @@ private fun screen() :Widget{
 
 ![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.33.00.png)
 
-{{< tabs name="T33" >}}
+{{< tabs name="T58" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -275,7 +275,7 @@ private fun screen() :Widget{
 
 ![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.34.21.png)
 
-{{< tabs name="T33" >}}
+{{< tabs name="T59" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -338,7 +338,7 @@ private func screen() -> Screen {
 
 ![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.36.55.png)
 
-{{< tabs name="T33" >}}
+{{< tabs name="T60" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -401,7 +401,7 @@ private func screen() -> Screen {
 
 ![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.39.22.png)
 
-{{< tabs name="T33" >}}
+{{< tabs name="T61" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin

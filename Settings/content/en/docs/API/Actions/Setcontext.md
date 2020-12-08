@@ -1,6 +1,6 @@
 ---
 title: Setcontext
-weight: 264
+weight: 276
 description: Here you'll find a definition for SetContext and its attributes details
 ---
 
@@ -19,14 +19,14 @@ The setContext structure is:
 | path | String |   |  Specific context point for changing value in case of arrays and maps &lt;key, value&gt;. |
 
 {{% alert color="info" %}}
-Get to know more about [**Beagle context**](../context.md). 
+Get to know more about [**Beagle context**](../context/). 
 {{% /alert %}}
 
 ## How to use it?
 
 See below an example of a text that is set by context and have an initial value "Set Context Example". The click event have a `SetContext` action that change the context value to "Context has changed".
 
-{{< tabs name="T120" >}}
+{{< tabs name="T110" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

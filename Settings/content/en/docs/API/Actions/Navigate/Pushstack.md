@@ -1,6 +1,6 @@
 ---
 title: Pushstack
-weight: 240
+weight: 252
 description: Here you'll find PushStack description and its attribute.
 ---
 
@@ -22,7 +22,7 @@ On the example below there's a screen coming from BFF with a button that when cl
 
 To test, your BFF's endpoint should return a the screen with the code below and call it in the frontend. You can pass a local route or a remote one that will pass the screen endpoint to the one it will navigate. 
 
-{{< tabs name="T109" >}}
+{{< tabs name="T94" >}}
 {{% tab name="JSON" %}}
 ```text
 {

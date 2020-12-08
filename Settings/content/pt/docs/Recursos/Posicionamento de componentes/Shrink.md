@@ -18,7 +18,7 @@ Com o Shrink, o elemento recebe um valor double, que irá diminuir o elemento de
 
 ![](https://lh5.googleusercontent.com/30mBYNqNtZf0Lp1Zw4dr8dkZW5PsOtxqHtqkgbPLZNbU6g8xFs0QmGh5ip66WlU5cHSqtdBWduGuwrLGyGp2uYkkAw6GLXpaf-ZRNORNJywill9WCTZIlRAva9_s5G30MJCh-rOS)
 
-{{< tabs name="T36" >}}
+{{< tabs name="T67" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin

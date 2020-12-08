@@ -1,6 +1,6 @@
 ---
 title: UI
-weight: 273
+weight: 285
 description: UI components description and its attributes details.
 ---
 

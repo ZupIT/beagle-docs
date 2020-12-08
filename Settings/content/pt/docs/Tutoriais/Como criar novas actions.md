@@ -11,7 +11,7 @@ No Beagle, é possível criar uma [**ação**](../api/acoes/) customizada a part
 
 Cada plataforma possui sua forma especificia de fazer essa implementação no frontend. Você pode ver exemplos abaixo de como fazer em cada uma delas: 
 
-{{< tabs name="T101" >}}
+{{< tabs name="T92" >}}
 {{% tab name="Android" %}}
 1. Crie uma classe anotada com `@RegisterAction` que implementa uma interface `Action`. Essa interface irá requistar a implementação do método `execute` e você irá declarar o resultudo da `action`.
 2. O atributo `msg` listado, é o único exemplo de parâmetro que deve ser declarado na classe construtora. 
@@ -66,7 +66,7 @@ class CustomAction: Action {
 
 3. Para registrar a ação, apenas crie o método com todo seu custom action e chame o  método do Beagle `registerCustomAction`  para fazer o registro; 
 
-4. Chame o método criado no BeagleConfig, ele pode ser visto nesse [**exemplo**](../get-started/new-project/):
+4. Chame o método criado no BeagleConfig, ele pode ser visto nesse [**exemplo**](../get-started/criando-projeto-do-zero/):
 
 ```kotlin
 private func registerCustomAction() {
@@ -144,7 +144,7 @@ val msg: String? = null
 
 Veja abaixo um exemplo de uma Ação em um componente do tipo Button:
 
-{{< tabs name="T101" >}}
+{{< tabs name="T93" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

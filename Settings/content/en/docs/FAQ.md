@@ -1,6 +1,6 @@
 ---
 title: FAQ
-weight: 205
+weight: 217
 description: 'Here, you''ll find answers to frequently asked questions about Beagle.'
 ---
 

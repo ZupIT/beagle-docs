@@ -1,6 +1,6 @@
 ---
 title: Addchildren
-weight: 220
+weight: 232
 description: You will find here AddChildrenAction definition and its attributes details
 ---
 
@@ -30,7 +30,7 @@ It is an `ENUM`, which values are:
 
 ## How to use it?
 
-{{< tabs name="T99" >}}
+{{< tabs name="T88" >}}
 {{% tab name="JSON" %}}
 ```javascript
                 "_beagleAction_": "beagle:addChildrenAction",

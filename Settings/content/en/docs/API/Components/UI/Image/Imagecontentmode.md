@@ -1,6 +1,6 @@
 ---
 title: Imagecontentmode
-weight: 279
+weight: 291
 description: Here you'll find a ImageContentMode description.
 ---
 
@@ -8,7 +8,7 @@ description: Here you'll find a ImageContentMode description.
 
 It's an `ENUM` class responsible to define how the stated image will be visualized on UI.
 
-{{< tabs name="T127" >}}
+{{< tabs name="T117" >}}
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 enum class ImageContentMode {

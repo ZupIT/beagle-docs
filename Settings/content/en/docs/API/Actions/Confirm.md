@@ -1,6 +1,6 @@
 ---
 title: Confirm
-weight: 226
+weight: 238
 description: You will find here Confirm definition and its attributes details
 ---
 
@@ -74,7 +74,7 @@ Confirm structure is:
 
 ## How to use it?
 
-{{< tabs name="T102" >}}
+{{< tabs name="T91" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

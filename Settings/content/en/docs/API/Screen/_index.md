@@ -1,6 +1,6 @@
 ---
 title: Screen
-weight: 328
+weight: 357
 description: Here you'll find all about screen's components and its attributes details.
 ---
 
@@ -15,14 +15,14 @@ Your screen has attributes and components that can be used and configured. On th
 | identifier | String |  | Attribute that globally identifies a screen in your application so you can attributes actions for it. |
 | safe area | [**Safe Area**](./#safe-area) |  | Specifies a screen's component position. |
 | navigation bar | [**Navigation Bar**](./#navigation-bar) |  | Allows action/navigation's bar on the screen. |
-| child | [**Server-Driven Component**](../components/) |  | Define screen's elements. It can be any visual component that extends to`ServerDrivenComponent`. |
+| child | [**Server-Driven Component**](../components/) |   ✓ | Define screen's elements. It can be any visual component that extends to`ServerDrivenComponent`. |
 | style | [**Style**](../widget.md#atributos-do-style) |  | Provide visual customization options to the `screen.` |
 | screen analytics event | [**Screen Event**](../analytics.md#opcao-screenview) |  | Configure analytics elements to your screen. |
-| context | [**Context**](../context.md) |  | Screen's context. |
+| context | [**ContextData**](../context/) |  | Screen's context. |
 
 ## How to use it?
 
-{{< tabs name="T149" >}}
+{{< tabs name="T156" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

@@ -13,7 +13,7 @@ O Roboletric é um **framework para testes unitários** no Android. Uma de suas 
 Antes de utilizá-lo, é preciso configurar uma dependência do Yoga Layout chamada de **SoLoader** que, se não estiver habilitado para **modo TESTE**, vai ocorrer um erro de **nullPointerException**, uma vez que a view não existirá naquele contexto. 
 
 {{% alert color="info" %}}
-Vale lembrar que o Beagle utiliza **Yoga Layout** para [**posicionar os componentes na tela**](../../features/layout-de-componentes/)**.**
+Vale lembrar que o Beagle utiliza **Yoga Layout** para [**posicionar os componentes na tela**](../../features/posicionamento-de-componentes/)**.**
 {{% /alert %}}
 
 Sendo assim, você precisa configurar o nosso SDK para ativar o "TesteMode" no SoLoader quando iniciar um teste e desativá-lo assim que terminar. Para tal, basta utilizar as funções conforme indicado a seguir. 

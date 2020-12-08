@@ -40,7 +40,7 @@ Se o título e ícone não forem declarados no `Tab Item`, o espaço vazio perma
 
 ## Como usar?
 
-{{< tabs name="T147" >}}
+{{< tabs name="T139" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

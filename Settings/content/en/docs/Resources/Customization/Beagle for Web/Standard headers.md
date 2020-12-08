@@ -1,6 +1,6 @@
 ---
 title: Standard headers
-weight: 169
+weight: 181
 description: You will find here the pattern headers description and how to disable them
 ---
 
@@ -15,7 +15,7 @@ By pattern, these headers are always sent, however it can be disabled by the `us
 
 See below the examples on how to disable the headers request on the Angular and React's configs.
 
-{{< tabs name="T78" >}}
+{{< tabs name="T77" >}}
 {{% tab name="Angular" %}}
 ```text
 @BeagleModule({

@@ -19,7 +19,7 @@ description: 'Nesta seção, você encontra descrição completa dos Operadores 
 
 Aqui temos o exemplo de uma tela que utiliza duas operações lógicas, `condition` e `or`, onde caso o resultado da condição do `or` for verdadeira o texto do componente `Text` se torna **true**, caso falso ele atribui ao texto o valor de **false.**
 
-{{< tabs name="T166" >}}
+{{< tabs name="T160" >}}
 {{% tab name="Kotlin" %}}
 ```kotlin
 fun screen() = Screen(

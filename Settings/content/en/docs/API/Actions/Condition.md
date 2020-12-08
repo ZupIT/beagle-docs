@@ -1,6 +1,6 @@
 ---
 title: Condition
-weight: 224
+weight: 236
 description: >-
   You will find here the definition of Condition and more details about its
   attributes
@@ -14,7 +14,7 @@ It is an action that has a boolean parameter and according to the value the acti
 
 | Attribute | Type | Required | Definition |
 | :--- | :--- | :---: | :--- |
-| condition | Boolean or [**Binding**](../context.md#binding) | ✓ | Condition to define which action will run.  |
+| condition | Boolean or [**Binding**](../context/#binding) | ✓ | Condition to define which action will run.  |
 | onTrue | List&lt;Action&gt; |   | List of actions that it will be run when the condition is true. |
 | onFalse | List&lt;Action&gt; |   | List of actions that it will be run when the condition is false. |
 
@@ -22,7 +22,7 @@ It is an action that has a boolean parameter and according to the value the acti
 
 The example below is a `Container` with a context that has a 18 value and the event `onPress` of the button is defined as an action with the `Condition` type, that verifies if the values is the same as 21 and shows an `Alert` depending on the context value. 
 
-{{< tabs name="T101" >}}
+{{< tabs name="T90" >}}
 {{% tab name="JSON" %}}
 ```
 {

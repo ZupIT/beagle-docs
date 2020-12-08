@@ -22,7 +22,7 @@ No exemplo abaixo, temos uma tela vinda do BFF com um botão, que ao ser clicado
 
 Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e chame esse endpoint no frontend. Você poderá passar tanto uma rota local \(que passará uma [**screen**](https://docs.usebeagle.io/api/screen) na rota\), quanto remota \(que passará o endpoint da tela para a qual irá navegar\). 
 
-{{< tabs name="T127" >}}
+{{< tabs name="T113" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

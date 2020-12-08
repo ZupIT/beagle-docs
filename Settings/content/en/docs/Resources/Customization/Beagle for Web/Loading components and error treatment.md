@@ -1,6 +1,6 @@
 ---
 title: Loading components and error treatment
-weight: 171
+weight: 183
 description: See how to change the error and loading components
 ---
 
@@ -12,7 +12,7 @@ Beagle's library already has by pattern a component that it is called when a scr
 
 To create a loading component, follow the steps below: 
 
-{{< tabs name="T79" >}}
+{{< tabs name="T78" >}}
 {{% tab name="React" %}}
 On React:
 

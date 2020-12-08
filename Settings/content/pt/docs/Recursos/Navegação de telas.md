@@ -11,7 +11,7 @@ description: >-
 No Beagle, a navegação \(ou Navigate\) é um tipo de [**Ação**](../api/acoes/) e que, por isso, pode ser usada por todos componentes que recebem uma ação. 
 
 {{% alert color="info" %}}
-Vale lembrar que, antes de configurar a navegação entre telas da sua aplicação, é preciso que você já tenha feito a [**instalação do Beagle**](../get-started/installing-beagle/), as [**configurações de uso**](../get-started/using-beagle/) e testado o framework do Beagle no tutorial para [**exibir uma tela server-driven.**](../tutoriais/exibindo-uma-tela.md) 
+Vale lembrar que, antes de configurar a navegação entre telas da sua aplicação, é preciso que você já tenha feito a [**instalação do Beagle**](../get-started/instalando-beagle/), as [**configurações de uso**](../get-started/usando-beagle/) e testado o framework do Beagle no tutorial para [**exibir uma tela server-driven.**](../tutoriais/exibindo-uma-tela.md) 
 {{% /alert %}}
 
 Depois de fazer todas as configurações, basta colocar o código dos exemplos como retorno do seu serviço e chamar o endpoint, definido na sua controller, no frontend de sua preferência.
@@ -25,7 +25,7 @@ Algumas ações de navegação precisam de um parâmetro. É possível receber d
 
 No exemplo abaixo, você vê um caso onde o `route` é `remote`:
 
-{{< tabs name="T97" >}}
+{{< tabs name="T89" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

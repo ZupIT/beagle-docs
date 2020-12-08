@@ -1,6 +1,6 @@
 ---
 title: Image
-weight: 277
+weight: 289
 description: Here you'll find a Image description and its attributes details.
 ---
 
@@ -14,12 +14,12 @@ Your structure is represented by the attributes below:
 
 | **Attribute** | **Type** | Required | **Definition** |
 | :--- | :--- | :--- | :--- |
-| path | [**ImagePath**](imagepath.md) or [**Binding**](../../../context.md#bindings) |     ✓ | Refers to a local image or URL of a remote image to be exhibited. |
+| path | [**ImagePath**](imagepath.md) or [**Binding**](../../../context/#bindings) |     ✓ | Refers to a local image or URL of a remote image to be exhibited. |
 | mode | ImageContentMode |  | Responsible to control how the image will be internally controlled. |
 
 ## How to use it?
 
-{{< tabs name="T126" >}}
+{{< tabs name="T116" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

@@ -18,7 +18,7 @@ As linhas são distribuídas uniformemente ao longo do eixo transversal e ocupa 
 
 ![](https://lh3.googleusercontent.com/b_00j2HH0UvQnJB8E8JenWZvjhJ5uzi9awrlVQ5HSKaWitrEoeW6rLWTY9my9CzVZUmIfbnGR65irYZRV_VygYZdOxU7k9aIGm8DYOkCFxSt6IyjQbnpvcU0NpnUVimlFoHTrCHE)
 
-{{< tabs name="T27" >}}
+{{< tabs name="T26" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -176,7 +176,7 @@ As linhas são distribuídas no fim do eixo transversal:
 
 ![](https://lh3.googleusercontent.com/VuZ6TTe1FITuufDUMG38PshAemVFOJRHoH8sxqPxYDnQgiG05omw-vyi0xAEGNJss2nWbqRMj9nqyEb7TV2NCaYmBa_A63nN9cNuGeZqKzgA42BmnquU22X73_1EwM8vdsUkkU52)
 
-{{< tabs name="T27" >}}
+{{< tabs name="T28" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -255,7 +255,7 @@ As linhas são mantidas no centro do eixo transversal:
 
 ![](https://lh3.googleusercontent.com/Zg9Ki80KtZlAOJPkXUWptxdcCoKGQMiUvfSkFwfA3KK3fvNg4JmTes1kQ45IXkqwnIei0AFGUr_DqJel4PVG-8AUmx1HEKEC-KiUOjXJoSpdnzPaoQbWuqQabGEjMNHaE8-Jswwc)
 
-{{< tabs name="T27" >}}
+{{< tabs name="T29" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -334,7 +334,7 @@ A primeira linha é deslocada para o início do eixo transversal, a última para
 
 ![](https://lh6.googleusercontent.com/FuNZ44wVYsY92lrIC41adtO0FfQPiNCc-DrDAskJUVHaYokYANlo9s-RlD6OL_su4lDZMjGmclKvE20KA_qOBjyHESqA_bjLUYecnFQVqrqN0zHYcIT8fint32wZ6YPKm19-wxLG)
 
-{{< tabs name="T27" >}}
+{{< tabs name="T30" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -413,7 +413,7 @@ As linhas são uniformemente distribuídas ao longo do eixo transversal. As marg
 
 ![](https://lh6.googleusercontent.com/XLrdmMcnGnWX74fZTuLPCHJzJma6mxIWOmwfqLENLhvj3c6Y5vQ7u0HkQIeJvRDLS4-nLtPlJh-TZ2tO0A4go0ZJOx8dvv6BCyUZTs5gnJU9ruRS_GEwQfLXCfkqlj2LKC7EFtUb)
 
-{{< tabs name="T27" >}}
+{{< tabs name="T31" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin

@@ -57,7 +57,7 @@ A sua estrutura é representada como mostrado abaixo:
         a&#xE7;&#xE3;o que mostra uma mensagem de alerta(<a href="../../acoes/alert.md">Alert</a>).
         Este atributo &#xE9; opcional, mas se uma a&#xE7;&#xE3;o for definida aqui
         ela precisa estar configurada no frontend. Para criar uma a&#xE7;&#xE3;o
-        no frontend veja o exemplo: <a href="../../../features/criando-sua-acao-customizada.md">Criando uma a&#xE7;&#xE3;o customizada</a>
+        no frontend veja o exemplo: <a href="../../../features/criacao-de-novas-acoes.md">Criando uma a&#xE7;&#xE3;o customizada</a>
       </td>
     </tr>
     <tr>
@@ -74,7 +74,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 ## Como usar?
 
-{{< tabs name="T142" >}}
+{{< tabs name="T133" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

@@ -1,6 +1,6 @@
 ---
 title: Serialization
-weight: 180
+weight: 194
 description: Here you'll find more informations about serialization.
 ---
 

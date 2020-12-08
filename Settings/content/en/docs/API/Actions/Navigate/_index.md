@@ -1,6 +1,6 @@
 ---
 title: Navigate
-weight: 234
+weight: 246
 description: >-
   Here you'll find action Navigate definition and pages for each of its
   attributes

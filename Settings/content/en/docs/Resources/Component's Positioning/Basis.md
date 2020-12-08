@@ -21,7 +21,7 @@ Here the **`flexDirection: row`** is used to set the screen `width` size:
 
 ![](/docs-beagle/captura-de-tela-2020-06-04-a-s-15.48.12.png)
 
-{{< tabs name="T35" >}}
+{{< tabs name="T63" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -88,7 +88,7 @@ Here the **`flexDirection: column`** is used to set the screen `height` size
 
 ![](/docs-beagle/captura-de-tela-2020-06-04-a-s-16.01.56.png)
 
-{{< tabs name="T35" >}}
+{{< tabs name="T64" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -150,7 +150,7 @@ private fun screen() :Widget{
 
 It is also possible to put `UnitValue (0.0, UnitType.AUTO)` when using the `basis`. In this case, the value `0.0` is not relevant, because using `UnitType.AUTO` the main axis will be adjusted according to the size of the content. Unless a `size` fix value is also set for the component in the same direction as the main axis.
 
-{{< tabs name="T35" >}}
+{{< tabs name="T65" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin

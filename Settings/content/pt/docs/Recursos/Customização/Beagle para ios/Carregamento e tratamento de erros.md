@@ -87,7 +87,7 @@ class MyAppNavigationController: BeagleNavigationController {
 }
 ```
 
-Caso queira manter o estilo original de carregamento, basta executar a implementação padrão e seguir para o [**tratamento de erros**](carregamento-e-erros.md#erros).
+Caso queira manter o estilo original de carregamento, basta executar a implementação padrão e seguir para o [**tratamento de erros**](carregamento-e-tratamento-de-erros.md#erros).
 
 ```swift
 override func serverDrivenStateDidChange(
@@ -111,7 +111,7 @@ Os **possíveis erros** são:
 
 **Erros em uma requisição** \(`Request.Error`\):
 
-* `urlBuilderError`: A URL do recurso ou a [**baseURL**](beagledependencies.md#baseurl) é inválida.
+* `urlBuilderError`: A URL do recurso ou a [**baseURL**](dependencias-do-beagle.md#baseurl) é inválida.
 * `networkError`: Não foi possível estabelecer a conexão ou um erro foi retornado pelo BFF.
 * `decoding`: A resposta enviado pelo BFF é diferente do objeto esperado.
 

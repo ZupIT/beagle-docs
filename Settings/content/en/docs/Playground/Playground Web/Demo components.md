@@ -1,6 +1,6 @@
 ---
 title: Demo components
-weight: 212
+weight: 224
 description: 'Here, you''ll find some examples of components implemented in the Playground'
 ---
 

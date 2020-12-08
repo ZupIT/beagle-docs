@@ -16,7 +16,7 @@ Para isso, o Flex estabelece os valores aplicados na propriedade de cada filho. 
 
 ![](/docs-beagle/captura-de-tela-2020-06-05-a-s-16.53.38.png)
 
-{{< tabs name="T39" >}}
+{{< tabs name="T70" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin

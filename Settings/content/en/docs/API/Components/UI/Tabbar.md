@@ -1,6 +1,6 @@
 ---
 title: Tabbar
-weight: 284
+weight: 296
 description: >-
   In this section, you will find a description of the Tab Bar component and its
   attributes
@@ -36,7 +36,7 @@ If a title or icon is not declared in the `TabBarItem`, the empty space will rem
 
 ## How to use it? 
 
-On the following example, it will be used two componentes to explain TabBar: [**PageView**](../layout/pageview.md) and [**Context**](../../context.md). 
+On the following example, it will be used two componentes to explain TabBar: [**PageView**](../layout/pageview.md) and [**Context**](../../context/). 
 
 **Page View** is used to render the pages you want to display, that is, it will create the view on each selected tab. This is where you will define the components you want to display by clicking on each tab. 
 
@@ -46,7 +46,7 @@ The **Context** is used to save the indicator \(position\) of the selected tab, 
 
 ### Example
 
-{{< tabs name="T129" >}}
+{{< tabs name="T120" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

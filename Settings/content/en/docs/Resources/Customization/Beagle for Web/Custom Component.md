@@ -1,6 +1,6 @@
 ---
 title: Custom Component
-weight: 165
+weight: 177
 description: >-
   You will find the description on how to create a customized component for
   Angular and React
@@ -14,7 +14,7 @@ To create a customized component, follow the next steps:
 
 1. You need an ordinary component, after that you have to create a new one in your project:
 
-{{< tabs name="T76" >}}
+{{< tabs name="T73" >}}
 {{% tab name="Angular" %}}
 The component will be created with  `customText` name, in this example. In your terminal, use the following command: 
 
@@ -42,7 +42,7 @@ export default CustomTextComponent;
 
 2. Now, add Beagle's library association in your project 
 
-{{< tabs name="T76" >}}
+{{< tabs name="T74" >}}
 {{% tab name="Angular" %}}
 Open `beagle-components.module.ts` file and add the new `CustomTextComponent` generated in the list, see the example below:
 
@@ -115,7 +115,7 @@ On the step below, the word custom was added to identify the components, this wi
 
 To add properties to the created component, follow the next steps: 
 
-{{< tabs name="T76" >}}
+{{< tabs name="T75" >}}
 {{% tab name="Angular" %}}
 1. Open the `custom-text.component.ts` file and add an  `@Input` like the code below: 
 

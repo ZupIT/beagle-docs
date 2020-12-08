@@ -1,6 +1,6 @@
 ---
 title: Webview
-weight: 292
+weight: 304
 description: Description of the component Web View and its attributes
 ---
 
@@ -22,7 +22,7 @@ The structure is represented by the attributes below:
 
 ## How to use it?
 
-{{< tabs name="T133" >}}
+{{< tabs name="T124" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

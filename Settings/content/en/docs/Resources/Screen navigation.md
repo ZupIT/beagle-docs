@@ -1,6 +1,6 @@
 ---
 title: Screen navigation
-weight: 199
+weight: 211
 description: 'Here, you''ll find how Beagle deals with screen navigation.'
 ---
 
@@ -23,7 +23,7 @@ Some navigation actions needs a parameter. It is possible to receive two route t
 
 On the example below, we case a case where the `route` is `remote`:
 
-{{< tabs name="T91" >}}
+{{< tabs name="T86" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

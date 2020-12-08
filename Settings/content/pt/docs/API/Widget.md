@@ -25,7 +25,7 @@ abstract class Widget : StyleComponent,
 }
 ```
 
-Abaixo listamos todos os atributos que um widget pode receber. Mas se quiser um exemplo de uso e como criar um widget, veja a seção [**posicionamento de componentes.**](../features/layout-de-componentes/)
+Abaixo listamos todos os atributos que um widget pode receber. Mas se quiser um exemplo de uso e como criar um widget, veja a seção [**posicionamento de componentes.**](../features/posicionamento-de-componentes/)
 
 ## Quais seus atributos?
 
@@ -121,7 +121,7 @@ Os principais atributos são:
       <td style="text-align:left">EdgeValue</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <p>Determina a <a href="../features/layout-de-componentes/margin.md"><b>margem</b></a> que
+        <p>Determina a <a href="../features/posicionamento-de-componentes/margin.md"><b>margem</b></a> que
           afeta o espa&#xE7;amento ao redor de um elemento, contribuindo para que
           ele se desloque de acordo com os limites internos do elemento pai e de
           seus irm&#xE3;os.</p>
@@ -136,7 +136,7 @@ Os principais atributos são:
       <td style="text-align:left"></td>
       <td style="text-align:left">Define espa&#xE7;os internos no componente, ele se comporta como uma esp&#xE9;cie
         de &quot;margem interna&quot; do elemento. Por exemplo, um container que
-        tenha dois elementos visuais define um valor para <a href="../features/layout-de-componentes/padding.md"><b>padding</b></a> para
+        tenha dois elementos visuais define um valor para <a href="../features/posicionamento-de-componentes/padding.md"><b>padding</b></a> para
         que os elementos internos n&#xE3;o fiquem &quot;colados&quot; nas margens
         internas.</td>
     </tr>
@@ -148,17 +148,17 @@ Os principais atributos são:
       <td style="text-align:left">Adiciona padding a uma posi&#xE7;&#xE3;o. Para mais detalhes sobre seu
         funcionamento verifique nossa documenta&#xE7;&#xE3;o sobre o atributo
         <a
-        href="../features/layout-de-componentes/position.md"><b>posi&#xE7;&#xE3;o</b>
+        href="../features/posicionamento-de-componentes/position.md"><b>posi&#xE7;&#xE3;o</b>
           </a><b> </b>em um layout de componentes.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>flex</b>
       </td>
-      <td style="text-align:left"><a href="../features/layout-de-componentes/flex.md">Flex</a>
+      <td style="text-align:left"><a href="../features/posicionamento-de-componentes/flex.md">Flex</a>
       </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Respons&#xE1;vel por posicionar elementos na tela. Para mais detalhes
-        verifique nossa documenta&#xE7;&#xE3;o sobre o<a href="../features/layout-de-componentes/flex.md"><b> Flex</b></a><b>.</b>
+        verifique nossa documenta&#xE7;&#xE3;o sobre o<a href="../features/posicionamento-de-componentes/flex.md"><b> Flex</b></a><b>.</b>
       </td>
     </tr>
     <tr>
@@ -193,7 +193,7 @@ Os principais atributos são:
 
 No exemplo abaixo, utilizamos um Container para exemplificar os atributos de um widget. A classe que define um componente visual deve estender da classe `widget.`
 
-{{< tabs name="T178" >}}
+{{< tabs name="T177" >}}
 {{% tab name="JSON" %}}
 ```markup
 {

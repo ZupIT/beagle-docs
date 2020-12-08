@@ -1,6 +1,6 @@
 ---
 title: Scroll View
-weight: 309
+weight: 321
 description: Scroll View component description and its attributes details
 ---
 
@@ -55,7 +55,7 @@ See how the structure is represented:
     </tr>
     <tr>
       <td style="text-align:left">context</td>
-      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;<a href="../../context.md"><b>ContextData</b></a>&lt;b&gt;&lt;/b&gt;</td>
+      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;<a href="../../context/"><b>ContextData</b></a>&lt;b&gt;&lt;/b&gt;</td>
       <td
       style="text-align:left"></td>
         <td style="text-align:left">Sets a context to scroll view.</td>
@@ -74,7 +74,7 @@ It is an `ENUM`, the values are:
 
 ## How to use it?
 
-{{< tabs name="T141" >}}
+{{< tabs name="T131" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

@@ -20,7 +20,7 @@ Items are aligned at the beginning of the main axis; lined up at the screen top
 
 ![](https://lh3.googleusercontent.com/lGvBeuDomacFBb4pO3OiEr7tWCki__NCxe2h8kWgr1ZTALkoBLcFFmP6sj5ANH-GV7EYy4faNzldH1kKbk_kyvhdAlUfnWlcBylbeskfkBNojDDh96XM5HAkO09wi9VnelVp3yna)
 
-{{< tabs name="T26" >}}
+{{< tabs name="T19" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -72,7 +72,7 @@ Items are aligned from the end of the main axis; aligned at  screen the bottom
 
 ![](https://lh5.googleusercontent.com/8rcnK5Gv4Xk84fyB3uF2RrVWqgsS0DZisVMlWHTxSJaWDW-8xM-PGwx4Mkhtkf8PTNgB5jvyVkk9dsE8xfU3EJMRbakkxIhfXrTBVZcDW7tyiZkhB-Dis5xTA_F2avLBdbb2M1Gw)
 
-{{< tabs name="T26" >}}
+{{< tabs name="T20" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -124,7 +124,7 @@ Items are aligned at the center of the main axis; in the center of the screen:
 
 ![](https://lh4.googleusercontent.com/FZLxyERCH2JFW7QkwlVvoidRuxI5Jif6R3cRNTFbwDarcd0H3ssyn1KvPeUZSHVQXLJSAZ8X-pWsbdWwvHd4dk7xhd4eO0_cDFWvxexBrjFejBYr1CChp4ltqF6JmkzD3AcQ9h12)
 
-{{< tabs name="T26" >}}
+{{< tabs name="T21" >}}
 {{% tab name="Kotlin" %}}
 {% code title="" %}}
 ```kotlin
@@ -176,7 +176,7 @@ The first item is moved to main axis start, the last is moved to the main axis e
 
 ![](https://lh3.googleusercontent.com/th-V4Vn6jKMakkKPZiJzgCZ_9L8yu6h3M3PnhhKjDzvj7wvuruxJLY-F7eEnRwB-48kb1mRoUQRc19ZeDTWzFS_LwoiDHaZ-I8qguUG2rrSzl3nNErTsLKD6Ve9BP1Zmq_j7aDBy)
 
-{{< tabs name="T26" >}}
+{{< tabs name="T22" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -228,7 +228,7 @@ Items are evenly distributed along the main axis. Equal margins are assigned at 
 
 ![](https://lh4.googleusercontent.com/Wpb3hkbMbZPfZwhOfAQOZl35GTU-vOyMmIuRAm6FT4jhNOVNgR4O6XwKTpmlJFD9t6pwz_fteRjiUkfDvn5plqzTtIdwAWB9a8sjcPD0r2PUp-MX72-e0-PEfA1LuZKNpfA6zA8Q)
 
-{{< tabs name="T26" >}}
+{{< tabs name="T23" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -280,7 +280,7 @@ Items are evenly distributed along the main axis:
 
 ![](https://lh6.googleusercontent.com/cri4jTsOK470v0QCI71blFki0sxwQB1xC8ZGSqxuZa7UYbuxjrnVM3dWDM8dLRyUO4XiMNgl2oXF55Fy43rfQjH9uw_mQ0QAK3D_YDWPwuksUMjxDdHx11q-9n0tbL3PLhx3TgXb)
 
-{{< tabs name="T26" >}}
+{{< tabs name="T24" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin

@@ -1,6 +1,6 @@
 ---
 title: Lazy
-weight: 297
+weight: 309
 description: Lazy components description and its attributes details
 ---
 
@@ -19,7 +19,7 @@ See how the structure is represented:
 
 ## How to use it?
 
-{{< tabs name="T135" >}}
+{{< tabs name="T126" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

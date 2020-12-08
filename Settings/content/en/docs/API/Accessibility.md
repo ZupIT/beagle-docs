@@ -1,6 +1,6 @@
 ---
 title: Accessibility
-weight: 216
+weight: 228
 description: Here you'll find a description of accessibility attributes
 ---
 
@@ -10,10 +10,10 @@ description: Here you'll find a description of accessibility attributes
 
 For now, there are two common accessibility attribute types in all platforms Beagle supports. 
 
-| **Attributes** | **Type** | **Definition** |
-| :--- | :--- | :--- |
-| accessible | Boolean | **Required.** Indicates whether the component will be interpreted as accessible. Default is `true`. |
-| accessibilityLabel | String | `string` containing a message that will be spoken by programs, like VoiceOver. |
+| **Attributes** | **Type** | Required | **Definition** |
+| :--- | :--- | :--- | :--- |
+| accessible | Boolean |   ✓ | Indicates whether the component will be interpreted as accessible. Default is `true`. |
+| accessibilityLabel | String |  | `string` containing a message that will be spoken by programs, like VoiceOver. |
 
 {{% alert color="warning" %}}
 If backend does not specify accessibility, the default values ​​for each platform will be used.
@@ -21,7 +21,7 @@ If backend does not specify accessibility, the default values ​​for each pla
 
 ## How to use it?
 
-{{< tabs name="T97" >}}
+{{< tabs name="T87" >}}
 {{% tab name="JSON" %}}
 ```text
 {

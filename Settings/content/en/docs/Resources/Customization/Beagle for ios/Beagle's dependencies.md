@@ -1,6 +1,6 @@
 ---
 title: Beagle's dependencies
-weight: 129
+weight: 141
 description: You will find here information about Beagle's iOS dependencies and properties.
 ---
 

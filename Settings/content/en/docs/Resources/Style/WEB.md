@@ -1,6 +1,6 @@
 ---
 title: WEB
-weight: 194
+weight: 206
 description: 'Here, you''ll find how to make components'' stylization on web''s projects.'
 ---
 
@@ -36,7 +36,7 @@ On the example below, you see how this addition was done to a "card" hypothetica
 
 The process to insert a class to a component varies according to the framework you're using. Check out the step by step of each case in the following tabs:
 
-{{< tabs name="T89" >}}
+{{< tabs name="T84" >}}
 {{% tab name="Angular" %}}
 On Angular, there are two ways to add a class we receive through `styleId` propriety:
 

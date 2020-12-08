@@ -1,6 +1,6 @@
 ---
 title: Imagepath
-weight: 281
+weight: 293
 description: Here you'll find ImagePath description
 ---
 
@@ -23,7 +23,7 @@ It will reference a image that is on locais.JSONKotlin DSL assets. Your structur
 
 It will refer an image that it is already in the local assets. 
 
-{{< tabs name="T128" >}}
+{{< tabs name="T118" >}}
 {{% tab name="JSON" %}}
 ```javascript
   "_beagleImagePath_": "local",
@@ -58,7 +58,7 @@ It will refer to an image that is hosted in another host or a relative one in th
 
 
 
-{{< tabs name="T128" >}}
+{{< tabs name="T119" >}}
 {{% tab name="JSON" %}}
 ```javascript
  "_beagleImagePath_": "remote",

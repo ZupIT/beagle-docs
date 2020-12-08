@@ -22,7 +22,7 @@ O `ContextComponent` é uma interface precisa ser implementada em componentes qu
 
 Segue abaixo um exemplo de componente customizado com o contexto:
 
-{{< tabs name="T41" >}}
+{{< tabs name="T71" >}}
 {{% tab name="Android" %}}
 ```kotlin
 @RegisterWidget
@@ -54,5 +54,5 @@ public struct CustomComponent: RawComponent, HasContext {
 {{< /tabs >}}
 
 {{% alert color="warning" %}}
-Se você quiser criar componentes customizados no iOS, é **necessário registrá-lo**! Veja como registrar [**aqui**](../customizacao/beagle-para-ios/custom-widgets.md#passo-2-registrar-o-widget).
+Se você quiser criar componentes customizados no iOS, é **necessário registrá-lo**! Veja como registrar [**aqui**](../customizacao/beagle-para-ios/widgets-customizados.md#passo-2-registrar-o-widget).
 {{% /alert %}}

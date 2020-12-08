@@ -18,7 +18,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 ## Como usar?
 
-{{< tabs name="T135" >}}
+{{< tabs name="T126" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

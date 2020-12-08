@@ -1,6 +1,6 @@
 ---
 title: Alert
-weight: 222
+weight: 234
 description: You will find here Alert definition and its attributes details
 ---
 
@@ -22,7 +22,7 @@ Alert structure is:
 
 ## How to use it?
 
-{{< tabs name="T100" >}}
+{{< tabs name="T89" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

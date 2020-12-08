@@ -10,7 +10,7 @@ description: >-
 
 ## Configurações de uso 
 
-Quando você finalizar a [**instalação do Beagle**](../installing-beagle/beagle-backend.md), seu BFF estará com a configuração padrão de uso.
+Quando você finalizar a [**instalação do Beagle**](../instalando-beagle/backend.md), seu BFF estará com a configuração padrão de uso.
 
 ### CORS
 
@@ -31,7 +31,7 @@ Disponibilizamos uma constante, `BEAGLE_EXPOSED_HEADERS`, contendo uma lista dos
 
 ### Passo 1: Criar um serviço
 
-{{< tabs name="T13" >}}
+{{< tabs name="T2" >}}
 {{% tab name="Micronaut" %}}
 Para começar, você deve criar uma classe para configurar um serviço. O processo é bem simples basta:
 
@@ -119,7 +119,7 @@ private class MyScreenBuilder(
 
 ### **Passo 2: Criar um Controller**
 
-{{< tabs name="T13" >}}
+{{< tabs name="T3" >}}
 {{% tab name="Micronaut" %}}
 O próximo passo é criar uma classe Controller para expor nossos componentes via REST API. Esta classe ser anotada com `@Controller`.
 
@@ -190,7 +190,7 @@ class MyController(private val myService: MyService) {
 
 Você pode configurar cache e serialização com as linhas abaixo, adicionando elas no seu `application.properties`.
 
-{{< tabs name="T13" >}}
+{{< tabs name="T4" >}}
 {{% tab name="Micronaut" %}}
 O cache é configurado para incluir os endpoints `/screen` e `/widget`. O TTL para o endpoint `/screen` é configurado para 50 segundos.
 
@@ -225,7 +225,7 @@ A serialização é configurada para ignorar valores que são null e formatar o 
 **Configuração obrigatória apenas para usar o BFF com frontend web**
 {{% /alert %}}
 
-{{< tabs name="T13" >}}
+{{< tabs name="T5" >}}
 {{% tab name="Micronaut" %}}
 Você pode configurar CORS com as linhas abaixo, adicionando elas no seu **`application.properties`**.
 
@@ -270,7 +270,7 @@ Use uma configuração permissiva como essa apenas em ambiente local de desenvol
 
 Configurando mais granularmente, temos aqui CORS habilitado com meusite.com.br como origem permitida; `GET`, `PUT`, `POST` como métodos permitidos; `Cache-control` como header permitida; e `beagle-hash`, `x-meu1` como header expostas.
 
-{{< tabs name="T13" >}}
+{{< tabs name="T6" >}}
 {{% tab name="Micronaut" %}}
 
 ```kotlin
@@ -310,7 +310,7 @@ open class CorsConfig : WebMvcConfigurer {
 
 Depois de realizar as configurações acima, você já pode iniciar seu BFF. Para isso, basta usar o comando abaixo em seu projeto, lembrando que ele deve começar o servidor na porta 8080 em seu localhost. 
 
-{{< tabs name="T13" >}}
+{{< tabs name="T7" >}}
 {{% tab name="Micronaut" %}}
 ```kotlin
 $ mvn compile exec:exec

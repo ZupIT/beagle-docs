@@ -44,7 +44,7 @@ For a simple setup, you can choose between 2 frameworks to create your [**BFF**]
 
 Once you choose the framework you'll work with, proceed with the configurations below:
 
-{{< tabs name="T6" >}}
+{{< tabs name="T0" >}}
 {{% tab name="Micronaut" %}}
 ### Creating a micro-service
 
@@ -109,7 +109,7 @@ Lastly, you have to add the dependency for the Beagle starter to your backend. I
 
 Click on the tab of the framework you're using and follow the steps to continue the configuration.
 
-{{< tabs name="T6" >}}
+{{< tabs name="T1" >}}
 {{% tab name="Micronaut Starter" %}}
 ### Additional Requirements:
 

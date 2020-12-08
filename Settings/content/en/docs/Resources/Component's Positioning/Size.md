@@ -46,7 +46,7 @@ This property created by Yoga Layout defines the width ratio according to the it
 
 For example, if you apply a height of 100dp to a component and the aspectRatio of 2, the width will be 2 times the height where it will have the value of 200dp.
 
-{{< tabs name="T37" >}}
+{{< tabs name="T67" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin

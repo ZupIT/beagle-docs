@@ -1,6 +1,6 @@
 ---
 title: Actions
-weight: 218
+weight: 230
 description: Here you'll find all about action's components and its attributes details.
 ---
 

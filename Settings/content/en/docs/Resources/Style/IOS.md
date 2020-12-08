@@ -1,6 +1,6 @@
 ---
 title: IOS
-weight: 192
+weight: 204
 description: 'Here, you''ll find how to make components'' stylization on iOS'' projects.'
 ---
 

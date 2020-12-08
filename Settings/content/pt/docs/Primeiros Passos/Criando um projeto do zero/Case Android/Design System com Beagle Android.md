@@ -158,7 +158,7 @@ Repita este processo para o outro componente `Text` que é um paragrafo, com a d
 Isto é tudo que faremos no back-end nesse momento. Você pode rodar sua aplicação backend para que o serviço fique disponível e, em breve, você verá sua tela com estilo no Android.
 
 {{% alert color="info" %}}
-Caso tenha algum problema, recomendamos que faça o tutorial para [**implementar a instalação desse backend.**](../../installing-beagle/beagle-backend.md)
+Caso tenha algum problema, recomendamos que faça o tutorial para [**implementar a instalação desse backend.**](../../instalando-beagle/backend.md)
 {{% /alert %}}
 
      4. Primeiro, vamos registrar três cores no arquivo color no android. 

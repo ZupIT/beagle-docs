@@ -54,11 +54,11 @@ Cada plataforma tem especificidades para configurar o cache.
 
 Abaixo listamos a configuração por plataforma:
 
-{{< tabs name="T22" >}}
+{{< tabs name="T13" >}}
 {{% tab name="Android" %}}
 No Android, o cache é configurado quando implementamos as configurações iniciais do Beagle.
 
-Esta implementação acontece dentro da classe que nomeamos [**AppBeagleConfig**](../../get-started/using-beagle/android.md#passo-2-criar-uma-classe-beagleconfig), ou seja, dentro da classe de configuração do Beagle. 
+Esta implementação acontece dentro da classe que nomeamos [**AppBeagleConfig**](../../get-started/usando-beagle/android.md#passo-2-criar-uma-classe-beagleconfig), ou seja, dentro da classe de configuração do Beagle. 
 
 O cache, em si, é uma class interna do Beagle na qual podemos definir 3 propriedades representadas pelos atributos:
 
@@ -131,7 +131,7 @@ public protocol CacheManagerProtocol {
 {{% /tab %}}
 
 {{% tab name="Backend" %}}
-No backend, as configurações desta funcionalidade são suportadas apenas para quem utiliza a [**biblioteca starter**](../../get-started/installing-beagle/beagle-backend.md#passo-3-incluindo-requerimentos-adicionais).
+No backend, as configurações desta funcionalidade são suportadas apenas para quem utiliza a [**biblioteca starter**](../../get-started/instalando-beagle/backend.md#passo-3-incluindo-requerimentos-adicionais).
 
 O cache é criado para otimizar a resposta de uma requisição tanto em tamanho quanto em tempo do BFF quando o retorno é igual ao anterior a ela. As entradas nesse cache duram até o servidor ser "redeployado" ou o cliente ser reinstalado.‌
 
