@@ -23,14 +23,14 @@
         
         
         &lt;hr&gt;
-&lt;p&gt;O &lt;code&gt;ContextComponent&lt;/code&gt; é uma interface precisa ser implementada em componentes que usam o &lt;a href=&#34;../../api/contexto/#o-que-e&#34;&gt;&lt;strong&gt;Contexto&lt;/strong&gt;&lt;/a&gt;, porque é onde está o atributo &lt;code&gt;context&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;O &lt;code&gt;ContextComponent&lt;/code&gt; é uma interface precisa ser implementada em componentes que usam o &lt;a href=&#34;../../../../../../../../../api/contexto/#o-que-e&#34;&gt;&lt;strong&gt;Contexto&lt;/strong&gt;&lt;/a&gt;, porque é onde está o atributo &lt;code&gt;context&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;componentes-do-beagle-com-contexto&#34;&gt;Componentes do Beagle com contexto:&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;../../api/componentes/layout/container.md&#34;&gt;&lt;strong&gt;Container&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../api/componentes/formularios/simple-form.md&#34;&gt;&lt;strong&gt;SimpleForm&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../api/componentes/layout/pageview.md&#34;&gt;&lt;strong&gt;PageView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../api/componentes/layout/scrollview.md&#34;&gt;&lt;strong&gt;ScrollView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../api/componentes/ui/tabview.md&#34;&gt;&lt;strong&gt;TabView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../../../../../api/componentes/layout/container&#34;&gt;&lt;strong&gt;Container&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../../../../api/componentes/formularios/simple-form&#34;&gt;&lt;strong&gt;SimpleForm&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../../../api/componentes/layout/pageview&#34;&gt;&lt;strong&gt;PageView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../../api/componentes/layout/scrollview&#34;&gt;&lt;strong&gt;ScrollView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../api/componentes/ui/tabview&#34;&gt;&lt;strong&gt;TabView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;componente-customizado-com-contexto&#34;&gt;Componente customizado com contexto&lt;/h2&gt;
 &lt;p&gt;Segue abaixo um exemplo de componente customizado com o contexto:&lt;/p&gt;
@@ -65,7 +65,7 @@
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 
-Se você quiser criar componentes customizados no iOS, é &lt;strong&gt;necessário registrá-lo&lt;/strong&gt;! Veja como registrar &lt;a href=&#34;../customizacao/beagle-para-ios/widgets-customizados.md#passo-2-registrar-o-widget&#34;&gt;&lt;strong&gt;aqui&lt;/strong&gt;&lt;/a&gt;.
+Se você quiser criar componentes customizados no iOS, é &lt;strong&gt;necessário registrá-lo&lt;/strong&gt;! Veja como registrar &lt;a href=&#34;../../customizacao/beagle-para-ios/widgets-customizados#passo-2-registrar-o-widget&#34;&gt;&lt;strong&gt;aqui&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 
@@ -210,7 +210,7 @@ Se você quiser criar componentes customizados no iOS, é &lt;strong&gt;necessá
         
         
         &lt;hr&gt;
-&lt;p&gt;Alguns elementos fornecidos pelo Beagle podem ser mais direcionados à uma plataforma e, talvez, não fazer tanto sentido para outra. Por exemplo, o uso do &lt;a href=&#34;../../api/componentes/layout/scrollview.md&#34;&gt;&lt;strong&gt;ScrollView&lt;/strong&gt;&lt;/a&gt; funciona melhor na plataforma Mobile, mas não é necessário na Web.&lt;/p&gt;
+&lt;p&gt;Alguns elementos fornecidos pelo Beagle podem ser mais direcionados à uma plataforma e, talvez, não fazer tanto sentido para outra. Por exemplo, o uso do &lt;a href=&#34;../../../api/componentes/layout/scrollview&#34;&gt;&lt;strong&gt;ScrollView&lt;/strong&gt;&lt;/a&gt; funciona melhor na plataforma Mobile, mas não é necessário na Web.&lt;/p&gt;
 &lt;p&gt;Isso acontece porque o Beagle possui  a funcionalidade de &lt;strong&gt;Especificação de Plataforma&lt;/strong&gt;, que te permite ter controle de quais elementos são enviados pelo BFF e quais plataformas serão usadas.&lt;/p&gt;
 &lt;h3 id=&#34;como-funciona&#34;&gt;Como funciona?&lt;/h3&gt;
 &lt;p&gt;O Beagle faz uso de um cabeçalho personalizado, &lt;code&gt;beagle-platform&lt;/code&gt;&lt;strong&gt;,&lt;/strong&gt; com os possíveis valores:&lt;/p&gt;

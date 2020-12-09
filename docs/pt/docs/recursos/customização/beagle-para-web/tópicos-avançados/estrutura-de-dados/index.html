@@ -107,7 +107,7 @@ export interface BeagleUIElement { _beagleComponent_: string, id: string, contex
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -139,7 +139,7 @@ export interface BeagleUIElement { _beagleComponent_: string, id: string, contex
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -2081,9 +2081,9 @@ As features descritas aqui estão disponíveis apenas nas versões acima de 1.2.
 <ul>
 <li><code>_beagleComponent_</code> é o nome do componenete UI a ser renderizado;</li>
 <li><code>id</code> é o identificador único para o node. Observação: mesmo que o <code>id</code> é obrigatório pela estrutura interna da árvore, antes de processá-la, o Beagle atribui um id único qualquer para cada node sem um id, tornando-o opcional no json fornecido pelo backend.</li>
-<li><code>context</code> é um <a href="../../../../api/contexto/"><strong>contexto</strong> </a>definido para um componente e seus filhos.</li>
+<li><code>context</code> é um <a href="../../../../../../api/contexto/"><strong>contexto</strong> </a>definido para um componente e seus filhos.</li>
 <li><code>children</code> é uma array de nodes representando os filhos que estão no node atual.</li>
-<li><code>style</code>  é a regra de estilização dos componentes. Essas regras não são CSS, mas <a href="../../../estilizacao/"><strong>estruturas definidas pelo Beagle.</strong></a></li>
+<li><code>style</code>  é a regra de estilização dos componentes. Essas regras não são CSS, mas <a href="../../../../estilizacao/"><strong>estruturas definidas pelo Beagle.</strong></a></li>
 <li>O node possui propriedades esperadas pelo próprio componente, como text, que poderia ter <code>text</code> e <code>justify</code>, enquanto o botão poderia ter <code>onPress</code>, <code>text</code> e <code>disabled</code>.</li>
 </ul>
 <p>Veja abaixo um exemplo da árvore de componentes, pronta para ser processada pelo Beagle:</p>

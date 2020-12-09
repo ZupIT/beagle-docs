@@ -104,7 +104,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -136,7 +136,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -2115,7 +2115,7 @@ Faça a configuração do <code>navigationControllerType</code> com as demais co
         <span style="color:#000;font-weight:bold">}</span>
     <span style="color:#000;font-weight:bold">}</span>
 <span style="color:#000;font-weight:bold">}</span>
-</code></pre></div><p>Caso queira manter o estilo original de carregamento, basta executar a implementação padrão e seguir para o <a href="carregamento-e-tratamento-de-erros.md#erros"><strong>tratamento de erros</strong></a>.</p>
+</code></pre></div><p>Caso queira manter o estilo original de carregamento, basta executar a implementação padrão e seguir para o <a href="carregamento-e-tratamento-de-erros#erros"><strong>tratamento de erros</strong></a>.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">func</span> <span style="color:#000">serverDrivenStateDidChange</span><span style="color:#000;font-weight:bold">(</span>
     <span style="color:#000">to</span> <span style="color:#000">state</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">ServerDrivenState</span><span style="color:#000;font-weight:bold">,</span>
     <span style="color:#000">at</span> <span style="color:#000">screenController</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">BeagleController</span>
@@ -2128,12 +2128,12 @@ Faça a configuração do <code>navigationControllerType</code> com as demais co
 <p>Os <strong>possíveis erros</strong> são:</p>
 <ul>
 <li><code>remoteScreen(Request.Error)</code>: A requisição para carregar uma tela remota falhou. Veja abaixo quando isso ocorre.</li>
-<li><code>lazyLoad(Request.Error)</code>: A requisição para carregar um <a href="../../../api/componentes/lazy.md"><strong>componente Lazy</strong></a> falhou. Veja abaixo quando isso ocorre.</li>
-<li><code>action(Swift.Error)</code>: A execução de uma <a href="../../../api/acoes/"><strong>Action</strong></a> falhou.</li>
+<li><code>lazyLoad(Request.Error)</code>: A requisição para carregar um <a href="../../../../../api/componentes/lazy"><strong>componente Lazy</strong></a> falhou. Veja abaixo quando isso ocorre.</li>
+<li><code>action(Swift.Error)</code>: A execução de uma <a href="../../../../api/acoes/"><strong>Action</strong></a> falhou.</li>
 </ul>
 <p><strong>Erros em uma requisição</strong> (<code>Request.Error</code>):</p>
 <ul>
-<li><code>urlBuilderError</code>: A URL do recurso ou a <a href="dependencias-do-beagle.md#baseurl"><strong>baseURL</strong></a> é inválida.</li>
+<li><code>urlBuilderError</code>: A URL do recurso ou a <a href="dependencias-do-beagle#baseurl"><strong>baseURL</strong></a> é inválida.</li>
 <li><code>networkError</code>: Não foi possível estabelecer a conexão ou um erro foi retornado pelo BFF.</li>
 <li><code>decoding</code>: A resposta enviado pelo BFF é diferente do objeto esperado.</li>
 </ul>

@@ -104,7 +104,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -136,7 +136,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -2030,21 +2030,21 @@
 	       
 	<hr>
 <h2 id="introdução">Introdução</h2>
-<p>Para este tutorial, iremos usar algumas <a href="../api/acoes/"><strong>ações</strong></a> e também APIs:</p>
+<p>Para este tutorial, iremos usar algumas <a href="../../../../../../../api/acoes/"><strong>ações</strong></a> e também APIs:</p>
 <p><strong>Actions</strong></p>
 <ul>
-<li><a href="../api/acoes/setcontext.md"><strong>SetContext</strong></a></li>
-<li><a href="../api/acoes/sendrequest.md"><strong>SendRequest</strong></a></li>
+<li><a href="../../../../../../api/acoes/setcontext"><strong>SetContext</strong></a></li>
+<li><a href="../../../../../api/acoes/sendrequest"><strong>SendRequest</strong></a></li>
 </ul>
 <p><strong>APIs</strong></p>
 <ul>
-<li><a href="../api/contexto/"><strong>Context</strong></a></li>
+<li><a href="../../../../api/contexto/"><strong>Context</strong></a></li>
 <li><a href="https://docs.usebeagle.io/v/v1.0-pt/api/contexto#bindings"><strong>Binding</strong></a></li>
 <li><a href="https://docs.usebeagle.io/v/v1.0-pt/api/contexto#bindings"><strong>Expressões</strong></a></li>
 </ul>
-<p>Apesar do conceito <a href="../principais-conceitos.md#server-driven-ui"><strong>Server-Driven</strong></a> trabalhar componentes separadamente, é possível realizar a transmissão das informações para uma API e é o que vamos demonstrar abaixo.</p>
+<p>Apesar do conceito <a href="../../../principais-conceitos#server-driven-ui"><strong>Server-Driven</strong></a> trabalhar componentes separadamente, é possível realizar a transmissão das informações para uma API e é o que vamos demonstrar abaixo.</p>
 <h2 id="exemplo-de-uso">Exemplo de Uso</h2>
-<p>Neste exemplo, iremos utilizar os componentes <a href="../api/componentes/ui/input.md"><strong>TextInput</strong></a> e <a href="https://docs.usebeagle.io/v/v1.0-pt/api/componentes/ui/button"><strong>Button</strong></a> para simularmos uma tela de Login.</p>
+<p>Neste exemplo, iremos utilizar os componentes <a href="../api/componentes/ui/input"><strong>TextInput</strong></a> e <a href="https://docs.usebeagle.io/v/v1.0-pt/api/componentes/ui/button"><strong>Button</strong></a> para simularmos uma tela de Login.</p>
 <h3 id="passo-1-criar-uma-tela-de-login">Passo 1: Criar uma tela de Login</h3>
 <p>Até este momento, vamos apenas sinalizar ao Beagle de que ele deve renderizar na tela dois componentes TextInputs e um componente Button para representarmos a tela de Login.</p>
 <ul class="nav nav-tabs" id="t101" role="tablist"><li class="nav-item"><a data-toggle="tab" class="nav-link active" href="#t101-0" role="tab" aria-controls="t101-0" aria-selected="true">JSON</a></li>
@@ -2171,7 +2171,7 @@
             <span style="color:#000;font-weight:bold">)</span>
         <span style="color:#000;font-weight:bold">)</span>
 </code></pre></div></div></div>
-<p>Neste exemplo, utilizamos o evento <code>onChange</code> do próprio TextInput que é chamado sempre que o usuário digita um texto novo no input. Dentro do onChange, existe um <a href="../api/contexto/#contextos-implicitos"><strong>contexto implícito</strong></a> chamado <code>onChange</code> no qual o <code>value</code> é o último valor digitado pelo usuário.</p>
+<p>Neste exemplo, utilizamos o evento <code>onChange</code> do próprio TextInput que é chamado sempre que o usuário digita um texto novo no input. Dentro do onChange, existe um <a href="../../api/contexto/#contextos-implicitos"><strong>contexto implícito</strong></a> chamado <code>onChange</code> no qual o <code>value</code> é o último valor digitado pelo usuário.</p>
 <h4 id="onchange">OnChange</h4>
 <p>Ainda dentro deste contexto, a ação de SetContext será executada a cada caractere digitado pelo usuário. Por isso que neste SetContext é obrigatório o <code>contextId</code>, que fará referência ao contexto que será alterado, além do <code>value</code> que representa o novo valor e do <code>path</code> que é o caminho dentro do contexto que iremos alterar.</p>
 <h4 id="path">Path</h4>

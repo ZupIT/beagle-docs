@@ -179,7 +179,7 @@ import { CustomLoadingComponent } from &amp;#39;./components/custom-loading/cust
 export class Beagle { }
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-&lt;p&gt;Os arquivos &lt;code&gt;beagle.module.ts&lt;/code&gt; e &lt;code&gt;beagle-components.module.ts&lt;/code&gt; são gerados automaticamente pela biblioteca no angular. Se você não encontrou &lt;a href=&#34;../../../get-started/instalando-beagle/&#34;&gt;verifique sua instalação&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Os arquivos &lt;code&gt;beagle.module.ts&lt;/code&gt; e &lt;code&gt;beagle-components.module.ts&lt;/code&gt; são gerados automaticamente pela biblioteca no angular. Se você não encontrou &lt;a href=&#34;../../../../../../get-started/instalando-beagle/&#34;&gt;verifique sua instalação&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/div&gt;
 &lt;h2 id=&#34;error-component&#34;&gt;Error Component&lt;/h2&gt;
@@ -294,7 +294,7 @@ export class BeagleComponentsModule {}
 })
 export class Beagle { }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-&lt;p&gt;Os arquivos &lt;code&gt;beagle.module.ts&lt;/code&gt; e &lt;code&gt;beagle-components.module.ts&lt;/code&gt; são gerados automaticamente pela biblioteca no angular. Se você não os encontrou &lt;a href=&#34;../../../get-started/instalando-beagle/&#34;&gt;&lt;strong&gt;verifique sua instalação&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Os arquivos &lt;code&gt;beagle.module.ts&lt;/code&gt; e &lt;code&gt;beagle-components.module.ts&lt;/code&gt; são gerados automaticamente pela biblioteca no angular. Se você não os encontrou &lt;a href=&#34;../../../get-started/instalando-beagle/&#34;&gt;&lt;strong&gt;verifique sua instalação&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/div&gt;
 
@@ -377,13 +377,13 @@ import { CustomTextComponent } from &amp;#39;./components/custom-text/custom-tex
 })
 export class Beagle {}
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-&lt;p&gt;Se você não encontrou os arquivos &lt;code&gt;beagle-components.module.ts&lt;/code&gt; ou &lt;code&gt;beagle.module.ts&lt;/code&gt;, veja &lt;a href=&#34;../../../get-started/usando-beagle/web/angular.md&#34;&gt;&lt;strong&gt;como configurar a biblioteca Beagle Web para o Angular&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Se você não encontrou os arquivos &lt;code&gt;beagle-components.module.ts&lt;/code&gt; ou &lt;code&gt;beagle.module.ts&lt;/code&gt;, veja &lt;a href=&#34;../../../../../get-started/usando-beagle/web/angular&#34;&gt;&lt;strong&gt;como configurar a biblioteca Beagle Web para o Angular&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
   &lt;div id=&#34;t77-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t77-1&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;Abra o arquivo de configuração da biblioteca Beagle em seu projeto (se você seguiu o tutorial é o arquivo &lt;code&gt;beagle-service.ts&lt;/code&gt;) e adicione o seu componente a lista de associações.&lt;/p&gt;
-&lt;p&gt;Caso você não tenha este arquivo em seu projeto, veja &lt;a href=&#34;../../../get-started/usando-beagle/web/react.md&#34;&gt;&lt;strong&gt;como configurar a biblioteca Beagle Web para o React&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Caso você não tenha este arquivo em seu projeto, veja &lt;a href=&#34;../../../../get-started/usando-beagle/web/react&#34;&gt;&lt;strong&gt;como configurar a biblioteca Beagle Web para o React&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { createBeagleUIService } from &amp;#39;@zup-it/beagle-react&amp;#39;
 import CustomTextComponent from &amp;#39;../components/CustomTextComponent&amp;#39;
 
@@ -522,7 +522,7 @@ As duas primeiras implementam o protocolo de cache do Beagle, já as demais são
 &lt;/div&gt;
 
 &lt;h3 id=&#34;2-beagle-cache-only&#34;&gt;&lt;strong&gt;2. beagle-cache-only&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Estratégia que implementa apenas no caso do &lt;a href=&#34;../../cache/#como-o-protocolo-de-cache-funciona&#34;&gt;&lt;strong&gt;protocolo de cache do Beagle&lt;/strong&gt;&lt;/a&gt;. Isso significa que ela funciona igual à estratégia padrão, mas sem o fallback.&lt;/p&gt;
+&lt;p&gt;Estratégia que implementa apenas no caso do &lt;a href=&#34;../../../cache/#como-o-protocolo-de-cache-funciona&#34;&gt;&lt;strong&gt;protocolo de cache do Beagle&lt;/strong&gt;&lt;/a&gt;. Isso significa que ela funciona igual à estratégia padrão, mas sem o fallback.&lt;/p&gt;
 &lt;p&gt;Quando você habilita essa estratégia, a árvore que está no cache só é utilizada se tiver um max-age válido ou se receber o status de 304 do backend.&lt;/p&gt;
 &lt;p&gt;Caso a requisição falhe, a view não vai ser exibida e pode não exibir o componente de erro, de acordo com a definição da config.&lt;/p&gt;
 &lt;h2 id=&#34;estratégias-independentes&#34;&gt;Estratégias independentes&lt;/h2&gt;
@@ -598,7 +598,7 @@ export class Beagle { }
 &lt;p&gt;O Beagle Web envia &lt;strong&gt;dois tipos de headers&lt;/strong&gt; que são padrões para o Beagle:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;beagle-platform:&lt;/strong&gt; header utilizado que indica para o backend que a requisição partiu da Web. Desta forma, o valor enviado é sempre &lt;strong&gt;WEB.&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;beagle-hash&lt;/strong&gt;: header utilizado para o correto funcionamento do &lt;a href=&#34;../../cache/#como-o-protocolo-de-cache-funciona&#34;&gt;&lt;strong&gt;protocolo de cache de Beagle&lt;/strong&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;beagle-hash&lt;/strong&gt;: header utilizado para o correto funcionamento do &lt;a href=&#34;../../../cache/#como-o-protocolo-de-cache-funciona&#34;&gt;&lt;strong&gt;protocolo de cache de Beagle&lt;/strong&gt;&lt;/a&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Por padrão, esses headers são sempre enviados, porém podem ser desabilitados pelo parâmetro &lt;code&gt;useBeagleHeaders&lt;/code&gt; na config.&lt;/p&gt;
 &lt;p&gt;Abaixo, você confere exemplos de como desabilitar o envio desses headers nas configs do Angular e React:&lt;/p&gt;
@@ -716,7 +716,7 @@ const params: LoadParams = {
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;strategy&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;string&amp;lt;&lt;a href=&#34;estrategias-de-cache.md#tipos-de-estrategias&#34;&gt;&lt;strong&gt;Estratégia de cache&lt;/strong&gt;&lt;/a&gt;&amp;gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;string&amp;lt;&lt;a href=&#34;estrategias-de-cache#tipos-de-estrategias&#34;&gt;&lt;strong&gt;Estratégia de cache&lt;/strong&gt;&lt;/a&gt;&amp;gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Estratégia de cache adotada na requisição.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
@@ -781,7 +781,7 @@ const params: LoadParams = {
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;strategy&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;estrategias-de-cache.md&#34;&gt;&lt;strong&gt;Strategy&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;estrategias-de-cache&#34;&gt;&lt;strong&gt;Strategy&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;beagle-with-fallback-to-cache&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Estratégia de cache aplicada nas requisições de telas ao servidor&lt;/td&gt;
@@ -795,17 +795,17 @@ const params: LoadParams = {
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;analytics&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../../../api/analytics.md&#34;&gt;&lt;strong&gt;Analytics&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../../../../api/analytics&#34;&gt;&lt;strong&gt;Analytics&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Permite o uso de handlers para a captura e tagueamento de alguns eventos.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;customActions&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Map&amp;lt;string,&lt;a href=&#34;acoes-customizadas.md&#34;&gt;&lt;strong&gt;ActionHandler&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;&amp;gt;&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Map&amp;lt;string,&lt;a href=&#34;acoes-customizadas&#34;&gt;&lt;strong&gt;ActionHandler&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;&amp;gt;&lt;/strong&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Um mapa de ações customizadas que podem ser interpretadas pela biblioteca Beagle. É um mapa chave e valor onde a chave será sempre um identificador começado por &lt;code&gt;beagle:&lt;/code&gt; ou &lt;code&gt;custom:&lt;/code&gt; e o valor será o &lt;a href=&#34;acoes-customizadas.md#criando-um-actionhandler&#34;&gt;&lt;strong&gt;ActionHandler&lt;/strong&gt; &lt;/a&gt;ligado aquela ação.&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Um mapa de ações customizadas que podem ser interpretadas pela biblioteca Beagle. É um mapa chave e valor onde a chave será sempre um identificador começado por &lt;code&gt;beagle:&lt;/code&gt; ou &lt;code&gt;custom:&lt;/code&gt; e o valor será o &lt;a href=&#34;acoes-customizadas#criando-um-actionhandler&#34;&gt;&lt;strong&gt;ActionHandler&lt;/strong&gt; &lt;/a&gt;ligado aquela ação.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;lifecycles&lt;/td&gt;
@@ -826,7 +826,7 @@ const params: LoadParams = {
 &lt;td style=&#34;text-align:left&#34;&gt;boolean&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;true&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Usar ou não &lt;a href=&#34;headers-padroes.md&#34;&gt;&lt;strong&gt;headers específicos do Beagle&lt;/strong&gt;&lt;/a&gt; ao fazer as requisições de telas para o servidor&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Usar ou não &lt;a href=&#34;headers-padroes&#34;&gt;&lt;strong&gt;headers específicos do Beagle&lt;/strong&gt;&lt;/a&gt; ao fazer as requisições de telas para o servidor&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;navigationControllers&lt;/td&gt;

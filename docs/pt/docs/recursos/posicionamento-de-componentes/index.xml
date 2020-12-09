@@ -205,7 +205,7 @@ Nos exemplos abaixo, foi utilizada função &lt;code&gt;createText&lt;/code&gt; 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Para saber o Flex Direction, acesse &lt;a href=&#34;https://yogalayout.com/docs/flex-direction/&#34;&gt;&lt;strong&gt;a documentação no Yoga Layout&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;
+Para saber o Flex Direction, acesse &lt;a href=&#34;https://yogalayout.com/docs/flex-direction/&#34;&gt;&lt;strong&gt;a documentação no Yoga Layout&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 
@@ -314,7 +314,7 @@ Para saber o Flex Direction, acesse &lt;a href=&#34;https://yogalayout.com/docs/
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Para saber o Grow, acesse &lt;a href=&#34;https://yogalayout.com/docs/flex/&#34;&gt;&lt;strong&gt;a documentação no Yoga Layout&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;
+Para saber o Grow, acesse &lt;a href=&#34;https://yogalayout.com/docs/flex/&#34;&gt;&lt;strong&gt;a documentação no Yoga Layout&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 
@@ -611,7 +611,7 @@ Para saber o Grow, acesse &lt;a href=&#34;https://yogalayout.com/docs/flex/&#34;
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Para saber o Justify Content, acesse &lt;a href=&#34;https://yogalayout.com/docs/flex-direction/&#34;&gt;&lt;strong&gt;a documentação no Yoga Layout&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;
+Para saber o Justify Content, acesse &lt;a href=&#34;https://yogalayout.com/docs/flex-direction/&#34;&gt;&lt;strong&gt;a documentação no Yoga Layout&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 
@@ -2322,7 +2322,7 @@ Para saber mais, acesse &lt;a href=&#34;https://yogalayout.com/docs/margins-padd
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h3 id=&#34;top&#34;&gt;&lt;strong&gt;Top&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;É ele quem define um &lt;strong&gt;espaçamento na parte superior&lt;/strong&gt; do elemento. Exemplo:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/NpgSjgVwSjvXjeDz9H3lp6prnTGEOtmdkot_39nx0gYPZa-KXz-YPOKgzZG87V1TS9HYgEDqJtCgmQkXEQpC1dCqQrWDn3wcqWN3HgNK5EPGyCife44lvOUlbgFJ-WhYNFJf4O7K&#34; alt=&#34;A barra preta simulando a propriedade Top.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/NpgSjgVwSjvXjeDz9H3lp6prnTGEOkot_39nx0gYPZa-KXz-YPOKgzZG87V1TS9HYgEDqJtCgmQkXEQpC1dCqQrWDn3wcqWN3HgNK5EPGyCife44lvOUlbgFJ-WhYNFJf4O7K&#34; alt=&#34;A barra preta simulando a propriedade Top.&#34;&gt;&lt;/p&gt;
 &lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t52&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t52-0&#34; role=&#34;tab&#34; aria-controls=&#34;t52-0&#34; aria-selected=&#34;true&#34;&gt;Kotlin&lt;/a&gt;&lt;/li&gt;
 	  
 		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t52-1&#34; role=&#34;tab&#34; aria-controls=&#34;t52-1&#34;&gt;Swift&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
@@ -2483,7 +2483,7 @@ Para saber mais, acesse &lt;a href=&#34;https://yogalayout.com/docs/margins-padd
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Para saber mais sobre Padding, acesse a &lt;a href=&#34;https://yogalayout.com/docs/margins-paddings-borders&#34;&gt;&lt;strong&gt;documentação do Yoga Layout&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;
+Para saber mais sobre Padding, acesse a &lt;a href=&#34;https://yogalayout.com/docs/margins-paddings-borders&#34;&gt;&lt;strong&gt;documentação do Yoga Layout&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 
@@ -2501,7 +2501,7 @@ Para saber mais sobre Padding, acesse a &lt;a href=&#34;https://yogalayout.com/d
         
         &lt;hr&gt;
 &lt;h2 id=&#34;position&#34;&gt;Position&lt;/h2&gt;
-&lt;p&gt;Esta propriedade determina a posição de um assume em tela e os seus valores &lt;code&gt;top, right, bottom, left&lt;/code&gt; se comportam de acordo com o &lt;a href=&#34;position-type.md&#34;&gt;&lt;strong&gt;Position Type&lt;/strong&gt;&lt;/a&gt; deste elemento.&lt;/p&gt;
+&lt;p&gt;Esta propriedade determina a posição de um assume em tela e os seus valores &lt;code&gt;top, right, bottom, left&lt;/code&gt; se comportam de acordo com o &lt;a href=&#34;position-type&#34;&gt;&lt;strong&gt;Position Type&lt;/strong&gt;&lt;/a&gt; deste elemento.&lt;/p&gt;
 &lt;p&gt;O elemento dentro do Position pode ter diferentes tipos de deslocamento se forem:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Relative:&lt;/strong&gt; os elementos se deslocam em uma direção específica&lt;/li&gt;
@@ -3298,7 +3298,7 @@ Para saber mais sobre Shrink, acesse a &lt;a href=&#34;https://yogalayout.com/do
 &lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/3aoRDnlMNqdnoYlmx60A--Y_Q6I3tGqCZt6CiQDJP53xu4TpwIL4skCdT_tjTTspNjuftf5ikAyKiLxlm4Tcll1kIQ_LhMd9y-PfBKcd69zgPp2MyMPJBHP5sUyQDXmPFTZcGqHM&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;atributos&#34;&gt;&lt;strong&gt;Atributos:&lt;/strong&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;width&#34;&gt;&lt;strong&gt;Width&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Define o &lt;strong&gt;tamanho da largura&lt;/strong&gt; do item**.**&lt;/p&gt;
+&lt;p&gt;Define o &lt;strong&gt;tamanho da largura&lt;/strong&gt; do item&lt;/p&gt;
 &lt;h3 id=&#34;height&#34;&gt;&lt;strong&gt;Height&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;Define o &lt;strong&gt;tamanho da altura&lt;/strong&gt; do item.&lt;/p&gt;
 &lt;h3 id=&#34;maxwidth&#34;&gt;&lt;strong&gt;MaxWidth&lt;/strong&gt;&lt;/h3&gt;

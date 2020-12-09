@@ -167,9 +167,9 @@ You will use &lt;code&gt;text&lt;/code&gt; as a widget that has &lt;code&gt;UITe
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;navigation&#34;&gt;Navigation&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;navigation&lt;/code&gt; deals with the &lt;a href=&#34;https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MAhHXfCN8JFrhm0CObd/v/v1.0-en/api/actions/navigate&#34;&gt;&lt;strong&gt;navigate&lt;/strong&gt;&lt;/a&gt; types of action in your application. There is one implementation that it is used with default value, but that it can be replaced for a &lt;a href=&#34;https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MAhHXfCN8JFrhm0CObd/v/v1.0-en/customization/beagle-for-ios/beaglenavigation&#34;&gt;&lt;strong&gt;BeagleNavigation&lt;/strong&gt;&lt;/a&gt; class.&lt;/p&gt;
-&lt;p&gt;On this same attribute is also possible to define a &lt;a href=&#34;../beagle-for-android/navigation-animation.md&#34;&gt;&lt;strong&gt;navigation animation&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;On this same attribute is also possible to define a &lt;a href=&#34;../../beagle-for-android/navigation-animation&#34;&gt;&lt;strong&gt;navigation animation&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;prefetchhelper&#34;&gt;preFetchHelper&lt;/h2&gt;
-&lt;p&gt;This component is used to search  &lt;a href=&#34;beaglescreenviewcontroller.md&#34;&gt;&lt;strong&gt;&lt;code&gt;BeagleScreenViewControllers&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt; and delivers a fluid experience to the user. It already has a value, it can be altered to fit what you need.&lt;/p&gt;
+&lt;p&gt;This component is used to search  &lt;a href=&#34;beaglescreenviewcontroller&#34;&gt;&lt;strong&gt;&lt;code&gt;BeagleScreenViewControllers&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt; and delivers a fluid experience to the user. It already has a value, it can be altered to fit what you need.&lt;/p&gt;
 &lt;p&gt;The pre search is used when there is a navigataion widget in a way you can download all the data possible in the next screen, avoiding navigation delays. This behaviour can be deactivated.&lt;/p&gt;
 &lt;h2 id=&#34;cachemanager&#34;&gt;CacheManager&lt;/h2&gt;
 &lt;p&gt;It is responsible to keep and manage the server-driven content cache of your application.&lt;/p&gt;
@@ -413,7 +413,7 @@ It is possible to create a customized logger, which it has the application&amp;r
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 
-You must register this class in &lt;a href=&#34;beagledependencies.md&#34;&gt;&lt;strong&gt;Beagle&amp;rsquo;s dependencies.&lt;/strong&gt;&lt;/a&gt;
+You must register this class in &lt;a href=&#34;beagledependencies&#34;&gt;&lt;strong&gt;Beagle&amp;rsquo;s dependencies.&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;BeagleDependencies&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
@@ -675,7 +675,7 @@ Make the&lt;code&gt;navigationControllerType&lt;/code&gt; configuration with oth
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you want to keep the original loading style, just run the standard implementation and move forward to&lt;a href=&#34;loading-and-error-treatment.md&#34;&gt; &lt;strong&gt;error treatment&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you want to keep the original loading style, just run the standard implementation and move forward to&lt;a href=&#34;loading-and-error-treatment&#34;&gt; &lt;strong&gt;error treatment&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;serverDrivenStateDidChange&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;state&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ServerDrivenState&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;at&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;screenController&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;BeagleController&lt;/span&gt;
@@ -688,13 +688,13 @@ Make the&lt;code&gt;navigationControllerType&lt;/code&gt; configuration with oth
 &lt;p&gt;The &lt;strong&gt;possibles errors&lt;/strong&gt; are:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;remoteScreen(Request.Error)&lt;/code&gt;: When the request to load a remote screen fails. Check out on the example below when it happens.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;lazyLoad(Request.Error)&lt;/code&gt;: When the request to load a &lt;a href=&#34;../../../api/components/lazy.md&#34;&gt;&lt;strong&gt;Lazy component&lt;/strong&gt;&lt;/a&gt; fails. Check out on the example below when it happens.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;action(Swift.Error)&lt;/code&gt;: When an &lt;a href=&#34;../../../api/actions/&#34;&gt;&lt;strong&gt;&lt;code&gt;Action&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt; &amp;rsquo;s execution fails.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lazyLoad(Request.Error)&lt;/code&gt;: When the request to load a &lt;a href=&#34;../../../../../../api/components/lazy&#34;&gt;&lt;strong&gt;Lazy component&lt;/strong&gt;&lt;/a&gt; fails. Check out on the example below when it happens.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;action(Swift.Error)&lt;/code&gt;: When an &lt;a href=&#34;../../../../../api/actions/&#34;&gt;&lt;strong&gt;&lt;code&gt;Action&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt; &amp;rsquo;s execution fails.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Errors on a request&lt;/strong&gt; (&lt;code&gt;Request.Error&lt;/code&gt;):&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;urlBuilderError&lt;/code&gt;: When the resource URL or a &lt;a href=&#34;beagledependencies.md#baseurl&#34;&gt;&lt;strong&gt;&lt;code&gt;baseURL&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt; is invalid.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;networkError&lt;/code&gt;: When it&amp;rsquo;s not possible to establish a connection or an error was returned from the &lt;a href=&#34;../../../principais-conceitos.md#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;urlBuilderError&lt;/code&gt;: When the resource URL or a &lt;a href=&#34;beagledependencies#baseurl&#34;&gt;&lt;strong&gt;&lt;code&gt;baseURL&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt; is invalid.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;networkError&lt;/code&gt;: When it&amp;rsquo;s not possible to establish a connection or an error was returned from the &lt;a href=&#34;../../../../principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;decoding&lt;/code&gt;: When the answer sent from BFF is different than the object expected.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -750,7 +750,7 @@ The error has a &lt;code&gt;retry&lt;/code&gt; block that allows you to run agai
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On &lt;code&gt;BeagleNavigation&lt;/code&gt; protocol we have a &lt;code&gt;defaultAnimation&lt;/code&gt; variable that allows you to change the transition animation of your application, and also another function that deals with the &lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-en/api/actions/navigate&#34;&gt;&lt;strong&gt;navigate actions&lt;/strong&gt;&lt;/a&gt; types and define their behaviours.&lt;/p&gt;
 &lt;p&gt;We suggest that you use the default implementation, but if it is necessary, it is allowed that this implementation is replaced by a class according to the protocol above.&lt;/p&gt;
 &lt;h2 id=&#34;default-implementation&#34;&gt;Default implementation&lt;/h2&gt;
-&lt;p&gt;There is a implementation for this protocol used as a default value on &lt;a href=&#34;beagledependencies.md&#34;&gt;&lt;strong&gt;BeagleDependencies&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt; It will treat the action with a more intuitive way.&lt;/p&gt;
+&lt;p&gt;There is a implementation for this protocol used as a default value on &lt;a href=&#34;beagledependencies&#34;&gt;&lt;strong&gt;BeagleDependencies&lt;/strong&gt;&lt;/a&gt; It will treat the action with a more intuitive way.&lt;/p&gt;
 &lt;h3 id=&#34;openexternalurl&#34;&gt;OpenExternalURL&lt;/h3&gt;
 &lt;p&gt;This action opens an  available browser on the device from a informed URL.&lt;/p&gt;
 &lt;h3 id=&#34;opennativeroute&#34;&gt;OpenNativeRoute&lt;/h3&gt;
@@ -1184,7 +1184,7 @@ The attributes written inside the&lt;code&gt;.yml&lt;/code&gt; consider that &lt
         &lt;span style=&#34;color:#000&#34;&gt;colorPallete&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;try&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;container&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;decode&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ComponentColorTypes&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;self&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;forKey&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;colorPallete&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It is necessary with Sourcery, to do the structs in accordance with &lt;strong&gt;AutoDecodable&lt;/strong&gt; and the same code will be generated**.**&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It is necessary with Sourcery, to do the structs in accordance with &lt;strong&gt;AutoDecodable&lt;/strong&gt; and the same code will be generated&lt;/p&gt;
 &lt;p&gt;This same process works for all protocols and it is also possible to create templates and customized protocols.&lt;/p&gt;
 
 

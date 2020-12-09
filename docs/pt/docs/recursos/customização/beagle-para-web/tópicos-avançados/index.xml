@@ -44,9 +44,9 @@ As features descritas aqui estão disponíveis apenas nas versões acima de 1.2.
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;_beagleComponent_&lt;/code&gt; é o nome do componenete UI a ser renderizado;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;id&lt;/code&gt; é o identificador único para o node. Observação: mesmo que o &lt;code&gt;id&lt;/code&gt; é obrigatório pela estrutura interna da árvore, antes de processá-la, o Beagle atribui um id único qualquer para cada node sem um id, tornando-o opcional no json fornecido pelo backend.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;context&lt;/code&gt; é um &lt;a href=&#34;../../../../api/contexto/&#34;&gt;&lt;strong&gt;contexto&lt;/strong&gt; &lt;/a&gt;definido para um componente e seus filhos.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;context&lt;/code&gt; é um &lt;a href=&#34;../../../../../../api/contexto/&#34;&gt;&lt;strong&gt;contexto&lt;/strong&gt; &lt;/a&gt;definido para um componente e seus filhos.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;children&lt;/code&gt; é uma array de nodes representando os filhos que estão no node atual.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;style&lt;/code&gt;  é a regra de estilização dos componentes. Essas regras não são CSS, mas &lt;a href=&#34;../../../estilizacao/&#34;&gt;&lt;strong&gt;estruturas definidas pelo Beagle.&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;style&lt;/code&gt;  é a regra de estilização dos componentes. Essas regras não são CSS, mas &lt;a href=&#34;../../../../estilizacao/&#34;&gt;&lt;strong&gt;estruturas definidas pelo Beagle.&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;O node possui propriedades esperadas pelo próprio componente, como text, que poderia ter &lt;code&gt;text&lt;/code&gt; e &lt;code&gt;justify&lt;/code&gt;, enquanto o botão poderia ter &lt;code&gt;onPress&lt;/code&gt;, &lt;code&gt;text&lt;/code&gt; e &lt;code&gt;disabled&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Veja abaixo um exemplo da árvore de componentes, pronta para ser processada pelo Beagle:&lt;/p&gt;
@@ -198,7 +198,7 @@ beagleView.fetch({ path: &amp;#39;/my-lazy-container&amp;#39; }, &amp;#39;lazy&a
 &lt;p&gt;&lt;strong&gt;shouldShowError?:&lt;/strong&gt; opcional.  Mostra se o componente da requisição falhou. E usará a configuração global caso não for especificado.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;strategy:&lt;/strong&gt; opcional.  Mostra qual &lt;a href=&#34;../../../cache/&#34;&gt;&lt;strong&gt;estratégia de cache&lt;/strong&gt;&lt;/a&gt; deve ser usada para carregar uma view específica. E usará a configuração global caso não for especificado.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;strategy:&lt;/strong&gt; opcional.  Mostra qual &lt;a href=&#34;../../../../cache/&#34;&gt;&lt;strong&gt;estratégia de cache&lt;/strong&gt;&lt;/a&gt; deve ser usada para carregar uma view específica. E usará a configuração global caso não for especificado.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;loadingComponent:&lt;/strong&gt; opcional. O componente de carregamento a ser usado. E usará a configuração global caso não for especificado.&lt;/p&gt;
@@ -330,7 +330,7 @@ beagleView.fetch({ path: &amp;#39;/my-lazy-container&amp;#39; }, &amp;#39;lazy&a
 As features descritas aqui, estão disponíveis nas versões a partir de 1.2.0.
 &lt;/div&gt;
 
-&lt;p&gt;Para entender melhor sobre renderização, recomendamos a leitura da seção &lt;a href=&#34;estrutura-de-dados.md&#34;&gt;&lt;strong&gt;estrutura de dados&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Para entender melhor sobre renderização, recomendamos a leitura da seção &lt;a href=&#34;estrutura-de-dados&#34;&gt;&lt;strong&gt;estrutura de dados&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Cada biblioteca do Beagle Web possui um processo definido de como busca, processa e renderiza a view. Há uma ordem que deve ser sempre respeitada e pontos de extensão (&lt;a href=&#34;https://pt-br.reactjs.org/docs/hooks-overview.html&#34;&gt;&lt;strong&gt;hooks&lt;/strong&gt;&lt;/a&gt;), onde você pode executar seus códigos (lifecycles).&lt;/p&gt;
 &lt;p&gt;Veja o processo de renderização do Beagle Web:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/beagle-view.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -635,7 +635,7 @@ class Table {
 &lt;/ul&gt;
 &lt;p&gt;Esse lifecycle pode ser usado para rodar o código necessário para que a view seja renderizada e não requer ações, contexto, expressões e estilos, pois já foram processados.&lt;/p&gt;
 &lt;h4 id=&#34;exemplos-de-uso-2&#34;&gt;Exemplos de uso&lt;/h4&gt;
-&lt;p&gt;Contextos são definidos, referenciados e manipulados no JSON da view. Mas, se você quiser acessar os dados da aplicação o Beagle oferece uma funcionalidade chamada &lt;a href=&#34;../../../../api/contexto-global.md&#34;&gt;&lt;strong&gt;Contexto Global&lt;/strong&gt;&lt;/a&gt;, que é possivel lidar com esse cenário. Se não tivesse essa função, o lifecycle AfterViewSnapshot também consegue lidar com isso.&lt;/p&gt;
+&lt;p&gt;Contextos são definidos, referenciados e manipulados no JSON da view. Mas, se você quiser acessar os dados da aplicação o Beagle oferece uma funcionalidade chamada &lt;a href=&#34;../../../../../api/contexto-global&#34;&gt;&lt;strong&gt;Contexto Global&lt;/strong&gt;&lt;/a&gt;, que é possivel lidar com esse cenário. Se não tivesse essa função, o lifecycle AfterViewSnapshot também consegue lidar com isso.&lt;/p&gt;
 &lt;p&gt;Um exemplo, se você tem uma aplicação financeira e quer saber o balanço do usuário. Você deve garantir que cada haja a renderização de cada valor recente.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
   &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;container&amp;#34;,
@@ -768,7 +768,7 @@ const config = {
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;the-renderer-api&#34;&gt;The Renderer API&lt;/h2&gt;
 &lt;p&gt;Para controlar o processo de renderização, o Beagle permite você gerenciar quando uma nova renderização é feita na árvore do Beagle  View. Você pode ter um componente que quando é clicado muda a árvore atual, para que um novo componente seja adicionado ou uma propriedade seja modificada.&lt;/p&gt;
 &lt;p&gt;Um cenário comum é quando você cria uma ação que muda a árvore atual, por exemplo, uma ação addChildren, quando executada deve ir a árvore atual e adicionar o filho ao componente com o id dado. Para fazer isso, é preciso ter uma forma de obter a árvore atual, modificá-la e avisar ao Beagle View para renderizar de novo.&lt;/p&gt;
-&lt;p&gt;A renderização pode ser feita em dois processos: a completa e a parcial. A primeira executa todos &lt;a href=&#34;renderizacao.md#processo-para-renderizar-uma-view&#34;&gt;&lt;strong&gt;os passos da lista no início dessa página&lt;/strong&gt;&lt;/a&gt; e a segunda executa apenas o view snapshot e os passos 9 ao 18 da mesma lista.&lt;/p&gt;
+&lt;p&gt;A renderização pode ser feita em dois processos: a completa e a parcial. A primeira executa todos &lt;a href=&#34;renderizacao#processo-para-renderizar-uma-view&#34;&gt;&lt;strong&gt;os passos da lista no início dessa página&lt;/strong&gt;&lt;/a&gt; e a segunda executa apenas o view snapshot e os passos 9 ao 18 da mesma lista.&lt;/p&gt;
 &lt;h3 id=&#34;acessando-o-renderer&#34;&gt;Acessando o Renderer&lt;/h3&gt;
 &lt;p&gt;Cada Beagle View possui seu renderizador, para acessá-lo, você deve chamar o &lt;code&gt;beagleView.getRenderer()&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Veja os exemplos de como chegar ao renderizador:&lt;/p&gt;
@@ -986,7 +986,7 @@ export class ListView extends BeagleComponent {
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;atualizando-a-view-com-o-resultado-da-requisição&#34;&gt;Atualizando a view com o resultado da requisição&lt;/h2&gt;
-&lt;p&gt;Caso você precisa atualizar a view atual com a árvore que vem do backend, você deve usar o &lt;a href=&#34;https://github.com/ZupIT/beagle-web-core/blob/master/docs/beagle-view.md#Fetching-a-view&#34;&gt;&lt;strong&gt;método fetch do &lt;code&gt;BeagleView&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt;. Isso irá internamente usar todo o mecanismo de cache do Beagle e também a parte de renderização.&lt;/p&gt;
+&lt;p&gt;Caso você precisa atualizar a view atual com a árvore que vem do backend, você deve usar o &lt;a href=&#34;https://github.com/ZupIT/beagle-web-core/blob/master/docs/beagle-view#Fetching-a-view&#34;&gt;&lt;strong&gt;método fetch do &lt;code&gt;BeagleView&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt;. Isso irá internamente usar todo o mecanismo de cache do Beagle e também a parte de renderização.&lt;/p&gt;
 
       </description>
     </item>

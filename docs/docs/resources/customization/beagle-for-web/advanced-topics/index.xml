@@ -44,7 +44,7 @@ The features described here are only available in versions 1.2.0 and above.
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;_beagleComponent_&lt;/code&gt; is the name of the UI component to render.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;id&lt;/code&gt; is a unique identifier for the node. Observation: although the &lt;code&gt;id&lt;/code&gt; is required by the internal tree structure, before processing the tree, Beagle assigns random unique ids for each node without an id, making it optional in the json provided by the backend.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;context&lt;/code&gt; is a &lt;a href=&#34;../../../../comunication-between-components-and-context.md&#34;&gt;&lt;strong&gt;context&lt;/strong&gt;&lt;/a&gt; defined for the component and its children.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;context&lt;/code&gt; is a &lt;a href=&#34;../../../../../comunication-between-components-and-context&#34;&gt;&lt;strong&gt;context&lt;/strong&gt;&lt;/a&gt; defined for the component and its children.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;children&lt;/code&gt; is an array of nodes representing the children of the current node.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;style&lt;/code&gt; is the stylization rules for the component. These rules are not CSS, instead it&amp;rsquo;s a &lt;a href=&#34;https://docs.usebeagle.io/resources/estilizacao/web#stylizing-components-through-json&#34;&gt;&lt;strong&gt;structure defined by Beagle&lt;/strong&gt;&lt;/a&gt;;&lt;/li&gt;
 &lt;li&gt;Additionally, a node has every property expected by the component itself, a text component could have &lt;code&gt;text&lt;/code&gt; and &lt;code&gt;justify&lt;/code&gt;, while a button could have &lt;code&gt;onPress&lt;/code&gt;, &lt;code&gt;text&lt;/code&gt; and &lt;code&gt;disabled&lt;/code&gt;.&lt;/li&gt;
@@ -78,9 +78,9 @@ The features described here are only available in versions 1.2.0 and above.
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The json above is a simpler version of the welcome page of the Beagle Playground website. It renders a container to hold the rest of the elements: an image, two texts and a button. To see the full example and the UI rendered by it, access the &lt;a href=&#34;https://beagle-playground.netlify.app/&#34;&gt;&lt;strong&gt;Beagle Playground&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;the-beagle-payload&#34;&gt;The Beagle Payload&lt;/h2&gt;
-&lt;p&gt;The type defined in the last section (&lt;code&gt;BeagleUIElement&lt;/code&gt;), you can see the &lt;code&gt;id&lt;/code&gt; is a required property and that the children of a node must always be named &lt;code&gt;children&lt;/code&gt;. The backend, however, may not guarantee any of that. For this reason, Beagle internally generates unique ids for every node without one and translates the children property. A table component, for instance, might have its children in the property &lt;code&gt;rows&lt;/code&gt;. Before starting to process, Beagle converts &lt;code&gt;rows&lt;/code&gt; to the expected name &lt;code&gt;children&lt;/code&gt; (see section &lt;a href=&#34;data-structure.md#the-children-property&#34;&gt;&lt;strong&gt;The &lt;code&gt;children&lt;/code&gt; property&lt;/strong&gt;&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;The type defined in the last section (&lt;code&gt;BeagleUIElement&lt;/code&gt;), you can see the &lt;code&gt;id&lt;/code&gt; is a required property and that the children of a node must always be named &lt;code&gt;children&lt;/code&gt;. The backend, however, may not guarantee any of that. For this reason, Beagle internally generates unique ids for every node without one and translates the children property. A table component, for instance, might have its children in the property &lt;code&gt;rows&lt;/code&gt;. Before starting to process, Beagle converts &lt;code&gt;rows&lt;/code&gt; to the expected name &lt;code&gt;children&lt;/code&gt; (see section &lt;a href=&#34;data-structure#the-children-property&#34;&gt;&lt;strong&gt;The &lt;code&gt;children&lt;/code&gt; property&lt;/strong&gt;&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;In fact, the payload returned by the backend can be anything, but internally Beagle must work with a tree of components (&lt;code&gt;BeagleUIElement&lt;/code&gt;). You must be able to traverse the tree and detect every component and its children. The payload can be anything, because it gives the developer a chance to change it before it gets processed by Beagle.&lt;/p&gt;
-&lt;p&gt;We recommend that the backend always return a JSON representing a tree of components, as it is expected by Beagle, but if, for some reason, it is not possible, Beagle Web makes it possible to pre-process the response and build the tree in the front-end before Beagle actually works upon it, like in &lt;a href=&#34;rendering.md#lifecycles&#34;&gt;&lt;strong&gt;lifecycles&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We recommend that the backend always return a JSON representing a tree of components, as it is expected by Beagle, but if, for some reason, it is not possible, Beagle Web makes it possible to pre-process the response and build the tree in the front-end before Beagle actually works upon it, like in &lt;a href=&#34;rendering#lifecycles&#34;&gt;&lt;strong&gt;lifecycles&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;the-children-property&#34;&gt;The children property&lt;/h3&gt;
 &lt;p&gt;You should always use an array named &lt;code&gt;children&lt;/code&gt; to specify the child nodes of a component. But, Beagle will work out of the box, if instead of an array of components, a single node is passed, and will also work if the name &lt;code&gt;child&lt;/code&gt; is used.&lt;/p&gt;
 &lt;p&gt;If a component that represents a table, the children might be named &lt;code&gt;rows&lt;/code&gt; instead of &lt;code&gt;children&lt;/code&gt;, in this case, you can inform Beagle that, for this specific component, the name of the property &lt;code&gt;children&lt;/code&gt; is different. See the example below:&lt;/p&gt;
@@ -268,21 +268,21 @@ beagleView.fetch({ path: &amp;#39;/my-lazy-container&amp;#39; }, &amp;#39;lazy&a
         &lt;/p&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;function&lt;/td&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;the-beagle-view-1.md#subscribing-to-events&#34;&gt;&lt;b&gt;subscribes to errors&lt;/b&gt;&lt;/a&gt;&lt;b&gt;. &lt;/b&gt;Receives
+      &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;the-beagle-view-1#subscribing-to-events&#34;&gt;&lt;b&gt;subscribes to errors&lt;/b&gt;&lt;/a&gt;&lt;b&gt;. &lt;/b&gt;Receives
         the listener and returns a function to remove the listener.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;&lt;b&gt;fetch&lt;/b&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;function&lt;/td&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;the-beagle-view-1.md#fetching-a-view&#34;&gt;&lt;b&gt;fetches a view from the backend&lt;/b&gt;&lt;/a&gt;&lt;b&gt; &lt;/b&gt;and
+      &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;the-beagle-view-1#fetching-a-view&#34;&gt;&lt;b&gt;fetches a view from the backend&lt;/b&gt;&lt;/a&gt;&lt;b&gt; &lt;/b&gt;and
         uses it to update the current tree.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;&lt;b&gt;getRenderer&lt;/b&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;function&lt;/td&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;returns &lt;a href=&#34;rendering.md#the-renderer-api&#34;&gt;&lt;b&gt;the renderer&lt;/b&gt;&lt;/a&gt; of
+      &lt;td style=&#34;text-align:left&#34;&gt;returns &lt;a href=&#34;rendering#the-renderer-api&#34;&gt;&lt;b&gt;the renderer&lt;/b&gt;&lt;/a&gt; of
         the view. Can be used to update the tree directly.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
@@ -332,7 +332,7 @@ beagleView.fetch({ path: &amp;#39;/my-lazy-container&amp;#39; }, &amp;#39;lazy&a
 The features described here are only available in versions 1.2.0 and above.
 &lt;/div&gt;
 
-&lt;p&gt;We recommend you to read about  &lt;a href=&#34;data-structure.md&#34;&gt;&lt;strong&gt;Beagle tree data structure&lt;/strong&gt;&lt;/a&gt; in order to help you understand rendering.&lt;/p&gt;
+&lt;p&gt;We recommend you to read about  &lt;a href=&#34;data-structure&#34;&gt;&lt;strong&gt;Beagle tree data structure&lt;/strong&gt;&lt;/a&gt; in order to help you understand rendering.&lt;/p&gt;
 &lt;p&gt;Every Beagle Web library has a very well defined process of how it fetches, process and renders a view. There&amp;rsquo;s an order that must always be respected and hook points where the developer can execute some code of his own (lifecycles).&lt;/p&gt;
 &lt;p&gt;See the full rendering process of Beagle Web:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/beagle-view.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -432,8 +432,8 @@ const MyComponentWithTheme = withTheme(MyComponent)
 BeforeRender(myLifecycleFunction)(MyComponentWithTheme)
 export default MyComponentWithTheme
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The return value of a lifecycle hook can be either nothing (undefined) or a tree. If it is a tree, the rendering process will discard the previous tree and start working on the tree returned by the hook.&lt;/p&gt;
-&lt;p&gt;To take control over the rendering process, besides the lifecycles, Beagle also offers the &lt;a href=&#34;rendering.md#the-renderer-api&#34;&gt;&lt;strong&gt;Renderer API&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;,&lt;/strong&gt; which can be accessed through &lt;code&gt;BeagleView.getRenderer()&lt;/code&gt;. The BeagleView can be accessed via the &lt;code&gt;BeagleRemoteView&lt;/code&gt; component through the attributes &lt;code&gt;onCreateBeagleView&lt;/code&gt;, in Angular and &lt;code&gt;viewRef&lt;/code&gt;in React.&lt;/p&gt;
-&lt;p&gt;Another way to get access to the &lt;code&gt;BeagleView&lt;/code&gt; is through the &lt;a href=&#34;rendering.md#the-viewcontentmanager-api&#34;&gt;&lt;strong&gt;ViewContentManager API&lt;/strong&gt;&lt;/a&gt;, which can be found under &lt;code&gt;this.viewContentManager&lt;/code&gt; in an Angular component that extends &lt;code&gt;BeagleComponent&lt;/code&gt;; or under &lt;code&gt;props.viewContentManager&lt;/code&gt; in a React component that implements the &lt;code&gt;BeagleComponent&lt;/code&gt; interface.&lt;/p&gt;
+&lt;p&gt;To take control over the rendering process, besides the lifecycles, Beagle also offers the &lt;a href=&#34;rendering#the-renderer-api&#34;&gt;&lt;strong&gt;Renderer API&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;,&lt;/strong&gt; which can be accessed through &lt;code&gt;BeagleView.getRenderer()&lt;/code&gt;. The BeagleView can be accessed via the &lt;code&gt;BeagleRemoteView&lt;/code&gt; component through the attributes &lt;code&gt;onCreateBeagleView&lt;/code&gt;, in Angular and &lt;code&gt;viewRef&lt;/code&gt;in React.&lt;/p&gt;
+&lt;p&gt;Another way to get access to the &lt;code&gt;BeagleView&lt;/code&gt; is through the &lt;a href=&#34;rendering#the-viewcontentmanager-api&#34;&gt;&lt;strong&gt;ViewContentManager API&lt;/strong&gt;&lt;/a&gt;, which can be found under &lt;code&gt;this.viewContentManager&lt;/code&gt; in an Angular component that extends &lt;code&gt;BeagleComponent&lt;/code&gt;; or under &lt;code&gt;props.viewContentManager&lt;/code&gt; in a React component that implements the &lt;code&gt;BeagleComponent&lt;/code&gt; interface.&lt;/p&gt;
 &lt;h2 id=&#34;process-and-lifecycles&#34;&gt;Process and lifecycles&lt;/h2&gt;
 
 
@@ -466,7 +466,7 @@ Lifecycles deprecates the feature middlewares. Middlewares will still be support
 &lt;li&gt;Hand the component tree to the render function. This function is different in Angular and React.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;lifecycles&#34;&gt;Lifecycles&lt;/h3&gt;
-&lt;p&gt;There are four lifecycle hooks, but you probably want to use just two of them: &lt;code&gt;beforeViewSnapshot&lt;/code&gt; and &lt;code&gt;beforeRender&lt;/code&gt;. The main difference between them is that the first runs before any expression or action has been evaluated and the second runs after. Also important to notice is that, when using the &lt;a href=&#34;rendering.md#the-renderer-api&#34;&gt;&lt;strong&gt;Renderer API&lt;/strong&gt;&lt;/a&gt;, &lt;code&gt;doFullRender&lt;/code&gt; will run both lifecycles, but &lt;code&gt;doPartialRender&lt;/code&gt; will run only the &lt;code&gt;beforeRender&lt;/code&gt; lifecycle.&lt;/p&gt;
+&lt;p&gt;There are four lifecycle hooks, but you probably want to use just two of them: &lt;code&gt;beforeViewSnapshot&lt;/code&gt; and &lt;code&gt;beforeRender&lt;/code&gt;. The main difference between them is that the first runs before any expression or action has been evaluated and the second runs after. Also important to notice is that, when using the &lt;a href=&#34;rendering#the-renderer-api&#34;&gt;&lt;strong&gt;Renderer API&lt;/strong&gt;&lt;/a&gt;, &lt;code&gt;doFullRender&lt;/code&gt; will run both lifecycles, but &lt;code&gt;doPartialRender&lt;/code&gt; will run only the &lt;code&gt;beforeRender&lt;/code&gt; lifecycle.&lt;/p&gt;
 &lt;p&gt;A simple rule to decide if you want to alter the tree via &lt;code&gt;beforeViewSnapshot&lt;/code&gt; or &lt;code&gt;beforeRender&lt;/code&gt; is: if your modification doesn&amp;rsquo;t depend on the result of an expression, use &lt;code&gt;beforeViewSnapshot&lt;/code&gt; otherwise use&lt;code&gt;beforeRender&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;A lifecycle hook receives the Beagle Tree and returns either nothing (undefined) or a tree. If it is a tree, the rendering process will discard the previous tree and start working on the tree returned by the hook. If it&amp;rsquo;s a global lifecycle, by &amp;ldquo;tree&amp;rdquo; we mean the entire Beagle Tree, if it&amp;rsquo;s a component lifecycle, by &amp;ldquo;tree&amp;rdquo;, we mean the branch corresponding to the component.&lt;/p&gt;
 &lt;p&gt;Below, see detailed explanations and examples of each lifecycle:&lt;/p&gt;
@@ -513,7 +513,7 @@ class Table {
   // ...
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The code above works only if every other component has &lt;code&gt;children&lt;/code&gt; as the name of the property that represents its children. If this is not the case, a global lifecycle should be used instead.&lt;/p&gt;
-&lt;p&gt;This feature could also be implemented using &lt;code&gt;BeforeViewSnapshot&lt;/code&gt;, but, in this case, you&amp;rsquo;d have to assign id&amp;rsquo;s to every node inside the new property &lt;code&gt;children&lt;/code&gt;, since in &lt;code&gt;BeforeViewSnapshot&lt;/code&gt; the ids have already been assigned. See the example &lt;a href=&#34;rendering.md#example-of-usage&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This feature could also be implemented using &lt;code&gt;BeforeViewSnapshot&lt;/code&gt;, but, in this case, you&amp;rsquo;d have to assign id&amp;rsquo;s to every node inside the new property &lt;code&gt;children&lt;/code&gt;, since in &lt;code&gt;BeforeViewSnapshot&lt;/code&gt; the ids have already been assigned. See the example &lt;a href=&#34;rendering#example-of-usage&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;beforeviewsnapshot&#34;&gt;BeforeViewSnapshot&lt;/h3&gt;
 &lt;p&gt;Runs just before the view snapshot, useful to alter the payload, but after the ids were already assigned. This is where you should do most of your modifications to the tree, since id&amp;rsquo;s have already been assigned and the tree structure is ready to be traversed.&lt;/p&gt;
 &lt;p&gt;The only thing we must be aware of is: if we create any new node, we must assign an id to it.&lt;/p&gt;
@@ -619,7 +619,7 @@ class Table {
   // ...
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;afterviewsnapshot&#34;&gt;AfterViewSnapshot&lt;/h3&gt;
-&lt;p&gt;When using the &lt;a href=&#34;rendering.md#the-renderer-api&#34;&gt;&lt;strong&gt;Renderer API&lt;/strong&gt;&lt;/a&gt; we have two different types of render: full renders and partial renders. The two previous lifecycles will run only in full renders, while this lifecycle and the next runs on both full and partial renders.&lt;/p&gt;
+&lt;p&gt;When using the &lt;a href=&#34;rendering#the-renderer-api&#34;&gt;&lt;strong&gt;Renderer API&lt;/strong&gt;&lt;/a&gt; we have two different types of render: full renders and partial renders. The two previous lifecycles will run only in full renders, while this lifecycle and the next runs on both full and partial renders.&lt;/p&gt;
 &lt;p&gt;Differently from the two previous lifecycles, the changes done here are valid for the current render only. Since any update to the view is done over a tree based on the snapshotted view, the modifications done in this lifecycle are not permanent and will be executed in every render. For instance, if we have a property &lt;code&gt;counter&lt;/code&gt; with the value &lt;code&gt;0&lt;/code&gt; in the tree and in our lifecycle we increment &lt;code&gt;counter&lt;/code&gt; by &lt;code&gt;1&lt;/code&gt;. In the 5th full render these would be the values for &lt;code&gt;counter&lt;/code&gt; depending on which lifecycle was used:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;BeforeStart: 5&lt;/li&gt;
@@ -764,7 +764,7 @@ const config = {
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;the-renderer-api&#34;&gt;The Renderer API&lt;/h2&gt;
 &lt;p&gt;For fine control of the rendering process, Beagle also let you manage when to render a new tree to your Beagle View. You can have a component, that when clicks changes the current Beagle Tree, so a new component is added or a property is modified.&lt;/p&gt;
 &lt;p&gt;A common scenario is when you need to create an action that modifies the current tree. Take for example the action &lt;code&gt;addChildren&lt;/code&gt;, when executed, it must get the current tree and add the given children to the component with the given &lt;code&gt;id&lt;/code&gt;. To do it, we must have a way to get the current tree, modify it and tell the Beagle View to render it again.&lt;/p&gt;
-&lt;p&gt;A renderization can be one of two processes: a full renderization or a partial renderization. The first runs all steps of the renderization (1 to 8 in &lt;a href=&#34;rendering.md#process-to-render-a-view&#34;&gt;&lt;strong&gt;this list&lt;/strong&gt;&lt;/a&gt;). The second executes only the view snapshot and the steps after it (9 to 18 in &lt;a href=&#34;rendering.md#process-to-render-a-view&#34;&gt;&lt;strong&gt;this list&lt;/strong&gt;&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;A renderization can be one of two processes: a full renderization or a partial renderization. The first runs all steps of the renderization (1 to 8 in &lt;a href=&#34;rendering#process-to-render-a-view&#34;&gt;&lt;strong&gt;this list&lt;/strong&gt;&lt;/a&gt;). The second executes only the view snapshot and the steps after it (9 to 18 in &lt;a href=&#34;rendering#process-to-render-a-view&#34;&gt;&lt;strong&gt;this list&lt;/strong&gt;&lt;/a&gt;).&lt;/p&gt;
 &lt;h3 id=&#34;accessing-the-renderer&#34;&gt;Accessing the Renderer&lt;/h3&gt;
 &lt;p&gt;Each Beagle View has its renderer, to get access to it, you must call &lt;code&gt;beagleView.getRenderer()&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;See examples of how to get the renderer:&lt;/p&gt;
@@ -814,7 +814,7 @@ export class Home {
     return this.beagleView &amp;amp;&amp;amp; this.beagleView.getRenderer()
   }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When inside a component rendered by Beagle, you can use the &lt;a href=&#34;rendering.md#the-viewcontentmanager-api&#34;&gt;&lt;strong&gt;ViewContentManager&lt;/strong&gt;&lt;/a&gt; to get the BeagleView and obtain access to the renderer.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When inside a component rendered by Beagle, you can use the &lt;a href=&#34;rendering#the-viewcontentmanager-api&#34;&gt;&lt;strong&gt;ViewContentManager&lt;/strong&gt;&lt;/a&gt; to get the BeagleView and obtain access to the renderer.&lt;/p&gt;
 &lt;p&gt;When inside an action handler (custom actions), the Beagle View is provided via parameter, which can be used to get the renderer. See the example below:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;const MyCustomActionHandler: ActionHandler&amp;lt;MyCustomAction&amp;gt; = ({ action, beagleView }) =&amp;gt; {
   const renderer = beagleView.getRenderer()
@@ -968,7 +968,7 @@ export class ListView extends BeagleComponent {
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;updating-the-view-with-the-result-of-a-request&#34;&gt;Updating the view with the result of a request&lt;/h2&gt;
-&lt;p&gt;In case you need to update the current view with a tree that comes from the backend, you should use &lt;a href=&#34;https://github.com/ZupIT/beagle-web-core/blob/master/docs/beagle-view.md#Fetching-a-view&#34;&gt;&lt;strong&gt;the method &lt;code&gt;fetch&lt;/code&gt; of the &lt;code&gt;BeagleView&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt;. It will internally use all the cache mechanisms of Beagle and also do the rendering part.&lt;/p&gt;
+&lt;p&gt;In case you need to update the current view with a tree that comes from the backend, you should use &lt;a href=&#34;https://github.com/ZupIT/beagle-web-core/blob/master/docs/beagle-view#Fetching-a-view&#34;&gt;&lt;strong&gt;the method &lt;code&gt;fetch&lt;/code&gt; of the &lt;code&gt;BeagleView&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt;. It will internally use all the cache mechanisms of Beagle and also do the rendering part.&lt;/p&gt;
 
       </description>
     </item>

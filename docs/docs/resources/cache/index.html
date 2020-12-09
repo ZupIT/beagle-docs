@@ -99,7 +99,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -131,7 +131,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -1884,7 +1884,7 @@
 <p>The entries on this cache layer has time duration defined by cache general configurations of each client&rsquo;s platform.</p>
 <p>You can check out how to <strong>configure the cache</strong> according to your frontend&rsquo;s platform on the following links:</p>
 <ul>
-<li><a href="ho-to-configure-cache.md"><strong>Configuring Cache</strong></a></li>
+<li><a href="ho-to-configure-cache"><strong>Configuring Cache</strong></a></li>
 </ul>
 <h3 id="persistent-cache">Persistent cache</h3>
 <p>On this cache layer, there are two types of localization:</p>
@@ -1893,7 +1893,7 @@
 <li>On frontend&rsquo;s storage.</li>
 </ul>
 <p>This cache is used to optimize BFF&rsquo;s response - in terms of time and size -, in cases where there is no changes. The entries of this cache lasts until the server redeploy or the client is reinstalled.</p>
-<p>The premisse to this cache works is that it has to always return the same JSON to the same request. To guarantee that, it&rsquo;s necessary that this cache is the same according to its endpoint and specific platform as we can see in <a href="../components/platform-sorting.md"><strong>component&rsquo;s platform specification.</strong></a></p>
+<p>The premisse to this cache works is that it has to always return the same JSON to the same request. To guarantee that, it&rsquo;s necessary that this cache is the same according to its endpoint and specific platform as we can see in <a href="../../../components/platform-sorting"><strong>component&rsquo;s platform specification.</strong></a></p>
 <p>In other words, we say that an endpoint can return a static element because it can only work if it returns the same JSON, independently of any other specific platform.</p>
 
 
@@ -1902,7 +1902,7 @@
 It&rsquo;s important to remember that cache&rsquo;s mechanism <strong>must not</strong> be used with <strong>endpoints</strong> that does not meet this <strong>premisse</strong>.
 </div>
 
-<p>The cache can be activated or disabled on BFF by endpoint or for an entire  BFF. You can <strong>check out</strong>  <a href="../customization/beagle-for-backend/"><strong>how to configure a cache.</strong> </a></p>
+<p>The cache can be activated or disabled on BFF by endpoint or for an entire  BFF. You can <strong>check out</strong>  <a href="../../customization/beagle-for-backend/"><strong>how to configure a cache.</strong> </a></p>
 <h2 id="how-does-the-cache-protocol-works">How does the cache protocol works?</h2>
 <p>The protocol acts in the <code>beagle-hash</code> header. BFF validates the received hashes and send a complete response or just the <code>status HTTP 304 Not Modified</code> (without the body).</p>
 <p>When BFF responds with the <code>status 304</code>, the application loads the element in cache. If this does not happen, it stores the hash and render the received elements.</p>
@@ -2337,7 +2337,7 @@ It&rsquo;s important to remember that cache&rsquo;s mechanism <strong>must not</
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top"><div class="dr-last-modified-text">
-  Last modified December 4, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/1e8286542b1cfbd63e163a3bba60646abb2a9896">fix links to contribute (1e828654)</a>
+  Last modified December 9, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/2500a2815c1ffbbcf064963526033e3a2b985837">fix tabs and some links (2500a281)</a>
 </div></div>
 </div>
 

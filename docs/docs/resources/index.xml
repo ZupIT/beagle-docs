@@ -35,7 +35,7 @@
 &lt;p&gt;The entries on this cache layer has time duration defined by cache general configurations of each client&amp;rsquo;s platform.&lt;/p&gt;
 &lt;p&gt;You can check out how to &lt;strong&gt;configure the cache&lt;/strong&gt; according to your frontend&amp;rsquo;s platform on the following links:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;ho-to-configure-cache.md&#34;&gt;&lt;strong&gt;Configuring Cache&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;ho-to-configure-cache&#34;&gt;&lt;strong&gt;Configuring Cache&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;persistent-cache&#34;&gt;Persistent cache&lt;/h3&gt;
 &lt;p&gt;On this cache layer, there are two types of localization:&lt;/p&gt;
@@ -44,7 +44,7 @@
 &lt;li&gt;On frontend&amp;rsquo;s storage.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;This cache is used to optimize BFF&amp;rsquo;s response - in terms of time and size -, in cases where there is no changes. The entries of this cache lasts until the server redeploy or the client is reinstalled.&lt;/p&gt;
-&lt;p&gt;The premisse to this cache works is that it has to always return the same JSON to the same request. To guarantee that, it&amp;rsquo;s necessary that this cache is the same according to its endpoint and specific platform as we can see in &lt;a href=&#34;../components/platform-sorting.md&#34;&gt;&lt;strong&gt;component&amp;rsquo;s platform specification.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The premisse to this cache works is that it has to always return the same JSON to the same request. To guarantee that, it&amp;rsquo;s necessary that this cache is the same according to its endpoint and specific platform as we can see in &lt;a href=&#34;../../../components/platform-sorting&#34;&gt;&lt;strong&gt;component&amp;rsquo;s platform specification.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;In other words, we say that an endpoint can return a static element because it can only work if it returns the same JSON, independently of any other specific platform.&lt;/p&gt;
 
 
@@ -53,7 +53,7 @@
 It&amp;rsquo;s important to remember that cache&amp;rsquo;s mechanism &lt;strong&gt;must not&lt;/strong&gt; be used with &lt;strong&gt;endpoints&lt;/strong&gt; that does not meet this &lt;strong&gt;premisse&lt;/strong&gt;.
 &lt;/div&gt;
 
-&lt;p&gt;The cache can be activated or disabled on BFF by endpoint or for an entire  BFF. You can &lt;strong&gt;check out&lt;/strong&gt;  &lt;a href=&#34;../customization/beagle-for-backend/&#34;&gt;&lt;strong&gt;how to configure a cache.&lt;/strong&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The cache can be activated or disabled on BFF by endpoint or for an entire  BFF. You can &lt;strong&gt;check out&lt;/strong&gt;  &lt;a href=&#34;../../customization/beagle-for-backend/&#34;&gt;&lt;strong&gt;how to configure a cache.&lt;/strong&gt; &lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;how-does-the-cache-protocol-works&#34;&gt;How does the cache protocol works?&lt;/h2&gt;
 &lt;p&gt;The protocol acts in the &lt;code&gt;beagle-hash&lt;/code&gt; header. BFF validates the received hashes and send a complete response or just the &lt;code&gt;status HTTP 304 Not Modified&lt;/code&gt; (without the body).&lt;/p&gt;
 &lt;p&gt;When BFF responds with the &lt;code&gt;status 304&lt;/code&gt;, the application loads the element in cache. If this does not happen, it stores the hash and render the received elements.&lt;/p&gt;
@@ -455,7 +455,7 @@ This frontend and backend connection is done through a &lt;code&gt;WebSocket&lt;
 &lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
 &lt;p&gt;To use &lt;code&gt;Live Preview&lt;/code&gt;, you must:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Use &lt;a href=&#34;../get-started/installing-beagle/beagle-backend.md&#34;&gt;&lt;strong&gt;Beagle SDK&lt;/strong&gt;&lt;/a&gt; in your BFF**;**&lt;/li&gt;
+&lt;li&gt;Use &lt;a href=&#34;../../get-started/installing-beagle/beagle-backend&#34;&gt;&lt;strong&gt;Beagle SDK&lt;/strong&gt;&lt;/a&gt; in your BFF**;**&lt;/li&gt;
 &lt;li&gt;Install &lt;code&gt;BeaglePreview&lt;/code&gt; plugin;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;bff-configuration&#34;&gt;BFF Configuration&lt;/h3&gt;
@@ -468,7 +468,7 @@ This frontend and backend connection is done through a &lt;code&gt;WebSocket&lt;
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 
-You &lt;strong&gt;must configure&lt;/strong&gt; both backend and frontend for the Live Preview**.** The frontend can be Android or iOS client.
+You &lt;strong&gt;must configure&lt;/strong&gt; both backend and frontend for the Live Preview The frontend can be Android or iOS client.
 &lt;/div&gt;
 
 &lt;h3 id=&#34;step-1-backends-configuration&#34;&gt;Step 1: Backend&amp;rsquo;s Configuration&lt;/h3&gt;
@@ -551,7 +551,7 @@ You &lt;strong&gt;must configure&lt;/strong&gt; both backend and frontend for th
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;However,  if you prefer to start through &lt;strong&gt;ADB&lt;/strong&gt;, just call the method:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;adb shell am start -n applicationpackagename/br.com.zup.beagle.android.preview.PreviewActivity
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
-&lt;p&gt;For more information about your package, access the attribute’s package on your&lt;code&gt;AndroidManifest&lt;/code&gt;’s file**.**&lt;/p&gt;
+&lt;p&gt;For more information about your package, access the attribute’s package on your&lt;code&gt;AndroidManifest&lt;/code&gt;’s file&lt;/p&gt;
 &lt;/div&gt;
 &lt;h2 id=&#34;visualizing-screens-through-android-device&#34;&gt;Visualizing screens through Android Device&lt;/h2&gt;
 &lt;p&gt;You can also view the screen you&amp;rsquo;re creating  by an Android &lt;code&gt;device&lt;/code&gt;. To do so, it&amp;rsquo;s necessary to inform your network&amp;rsquo;s &lt;code&gt;IP&lt;/code&gt; on the &lt;code&gt;intent&lt;/code&gt; that calls the Live Preview screen.&lt;/p&gt;
@@ -650,19 +650,19 @@ class ViewController: UIViewController &lt;span style=&#34;color:#ce5c00;font-we
         
         
         &lt;hr&gt;
-&lt;p&gt;On Beagle, navigation works as a type of &lt;a href=&#34;../api/actions/&#34;&gt;&lt;strong&gt;Action&lt;/strong&gt;&lt;/a&gt;, which can be used by all components that receives an action.&lt;/p&gt;
+&lt;p&gt;On Beagle, navigation works as a type of &lt;a href=&#34;../../../../api/actions/&#34;&gt;&lt;strong&gt;Action&lt;/strong&gt;&lt;/a&gt;, which can be used by all components that receives an action.&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Before configuring the navigation between screens of your application, it is required you have &lt;a href=&#34;../get-started/installing-beagle/&#34;&gt;&lt;strong&gt;installed Beagle&lt;/strong&gt;&lt;/a&gt;, checked the &lt;a href=&#34;../get-started/using-beagle/&#34;&gt;&lt;strong&gt;use configuration&lt;/strong&gt;&lt;/a&gt; and tested Beagle&amp;rsquo;s framework on the &lt;a href=&#34;../displaying-a-screen.md#displaying-a-server-driven-screen&#34;&gt;&lt;strong&gt;displaying a server-driven screen tutorial&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;
+Before configuring the navigation between screens of your application, it is required you have &lt;a href=&#34;../../../get-started/installing-beagle/&#34;&gt;&lt;strong&gt;installed Beagle&lt;/strong&gt;&lt;/a&gt;, checked the &lt;a href=&#34;../../../get-started/using-beagle/&#34;&gt;&lt;strong&gt;use configuration&lt;/strong&gt;&lt;/a&gt; and tested Beagle&amp;rsquo;s framework on the &lt;a href=&#34;../../../displaying-a-screen#displaying-a-server-driven-screen&#34;&gt;&lt;strong&gt;displaying a server-driven screen tutorial&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;p&gt;After these configuration, just add the example code as a return of you service and call the endpoint, defining in your controller,  in your frontend.&lt;/p&gt;
 &lt;h2 id=&#34;navigations-routes&#34;&gt;Navigation&amp;rsquo;s routes&lt;/h2&gt;
 &lt;p&gt;Some navigation actions needs a parameter. It is possible to receive two route type:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;Local:&lt;/strong&gt; intern navigation that expects a new &lt;a href=&#34;../api/screen/&#34;&gt;&lt;strong&gt;screen&lt;/strong&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Local:&lt;/strong&gt; intern navigation that expects a new &lt;a href=&#34;../../api/screen/&#34;&gt;&lt;strong&gt;screen&lt;/strong&gt;&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Remote:&lt;/strong&gt; expects that the &lt;code&gt;url&lt;/code&gt; points into an API that will return one of more Beagle&amp;rsquo;s components.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;On the example below, we case a case where the &lt;code&gt;route&lt;/code&gt; is &lt;code&gt;remote&lt;/code&gt;:&lt;/p&gt;

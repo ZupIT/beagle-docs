@@ -120,7 +120,7 @@ Caso o backend não especifique acessibilidade, os valores padrões de cada plat
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Uma ação é um mapa chave/valor com pelo menos uma propriedade:&lt;code&gt;_beagleAction_&lt;/code&gt;. O valor dela indica qual ação deve ser executada quando o evento for disparado. As demais propriedades especificam os parâmetros esperados pela ação indicada.&lt;/p&gt;
 &lt;p&gt;Existem diversas ações implementadas no Beagle por padrão e todas elas começam com prefixo &amp;ldquo;&lt;strong&gt;beagle&lt;/strong&gt;:&amp;rdquo; e as ações customizadas possuem o prefixo &amp;ldquo;&lt;strong&gt;custom&lt;/strong&gt;:&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;Para saber como criar ações customizadas, dê uma olhada na seção de &lt;a href=&#34;../../features/criacao-de-novas-acoes.md&#34;&gt;&lt;strong&gt;customização do Beagle&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Para saber como criar ações customizadas, dê uma olhada na seção de &lt;a href=&#34;../../../features/criacao-de-novas-acoes&#34;&gt;&lt;strong&gt;customização do Beagle&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;tipos-de-ações&#34;&gt;&lt;strong&gt;Tipos de ações&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;Abaixo, você encontra a descrição completa de cada ação disponível por padrão no Beagle:&lt;/p&gt;
 
@@ -333,30 +333,30 @@ const analyticsHandler = {
 &lt;div class=&#34;tab-content&#34; id=&#34;t132&#34;&gt;&lt;div id=&#34;t132-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t132-0&#34;&gt;
 
 &lt;p&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;layout/container.md&#34;&gt;&lt;strong&gt;Container&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;layout/listview.md&#34;&gt;&lt;strong&gt;List View&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;layout/pageview.md&#34;&gt;&lt;strong&gt;PageView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;layout/pageindicator.md&#34;&gt;&lt;strong&gt;PageIndicator&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;layout/scrollview.md&#34;&gt;&lt;strong&gt;ScrollView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;layout/container&#34;&gt;&lt;strong&gt;Container&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;layout/listview&#34;&gt;&lt;strong&gt;List View&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;layout/pageview&#34;&gt;&lt;strong&gt;PageView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;layout/pageindicator&#34;&gt;&lt;strong&gt;PageIndicator&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;layout/scrollview&#34;&gt;&lt;strong&gt;ScrollView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
   &lt;div id=&#34;t132-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t132-1&#34;&gt;
 
 &lt;p&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;formularios/validator.md&#34;&gt;&lt;strong&gt;Validator&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;formularios/simple-form.md&#34;&gt;&lt;strong&gt;Simple Form&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;ui/input.md&#34;&gt;&lt;strong&gt;Text Input&lt;/strong&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;formularios/validator&#34;&gt;&lt;strong&gt;Validator&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;formularios/simple-form&#34;&gt;&lt;strong&gt;Simple Form&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;ui/input&#34;&gt;&lt;strong&gt;Text Input&lt;/strong&gt; &lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
   &lt;div id=&#34;t132-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t132-2&#34;&gt;
 
 &lt;p&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;ui/button.md&#34;&gt;&lt;strong&gt;Button&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;ui/button&#34;&gt;&lt;strong&gt;Button&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;ui/image/&#34;&gt;&lt;strong&gt;Image&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;ui/tab-bar.md&#34;&gt;&lt;strong&gt;Tab Bar&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;ui/tabview.md&#34;&gt;&lt;strong&gt;Tab View&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;ui/text.md&#34;&gt;&lt;strong&gt;Text&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;ui/webview.md&#34;&gt;&lt;strong&gt;Web View&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;ui/tab-bar&#34;&gt;&lt;strong&gt;Tab Bar&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;ui/tabview&#34;&gt;&lt;strong&gt;Tab View&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;ui/text&#34;&gt;&lt;strong&gt;Text&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;ui/webview&#34;&gt;&lt;strong&gt;Web View&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;&lt;/div&gt;
 
@@ -454,7 +454,7 @@ No caso do contexto id, é importante que ele tenha apenas letras, números e o 
     )   
 )
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Perceba que o contexto foi declarado e seus valores foram definidos e usados para preencher os textos, porém é possível definir esses valores depois usando o método &lt;a href=&#34;../acoes/setcontext.md&#34;&gt;&lt;code&gt;SetContext()&lt;/code&gt;&lt;/a&gt; .&lt;/p&gt;
+&lt;p&gt;Perceba que o contexto foi declarado e seus valores foram definidos e usados para preencher os textos, porém é possível definir esses valores depois usando o método &lt;a href=&#34;../../../../../../../../acoes/setcontext&#34;&gt;&lt;code&gt;SetContext()&lt;/code&gt;&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;Dessa forma, você pode preencher os componentes com dados que ainda não estavam no JSON.&lt;/p&gt;
 
 
@@ -513,14 +513,14 @@ O contexto só é útil se o valor for acessado em qualquer parte do JSON. Para 
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;   
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Perceba que o contexto foi declarado e seus valores foram definidos e usados para preencher os textos, porém é possível definir depois esses valores usando o método &lt;a href=&#34;../acoes/setcontext.md&#34;&gt;&lt;code&gt;SetContext()&lt;/code&gt;&lt;/a&gt; . Dessa forma, você pode preencher os componentes com dados que ainda não estavam no JSON.&lt;/p&gt;
+&lt;p&gt;Perceba que o contexto foi declarado e seus valores foram definidos e usados para preencher os textos, porém é possível definir depois esses valores usando o método &lt;a href=&#34;../acoes/setcontext&#34;&gt;&lt;code&gt;SetContext()&lt;/code&gt;&lt;/a&gt; . Dessa forma, você pode preencher os componentes com dados que ainda não estavam no JSON.&lt;/p&gt;
 &lt;h3 id=&#34;2-contextos-implícitos&#34;&gt;2. Contextos implícitos&lt;/h3&gt;
-&lt;p&gt;Quando &lt;strong&gt;não há um escopo&lt;/strong&gt; de contexto definido dentro do JSON ou da estrutura declarativa da sua tela, mas que podem ser acessados por &lt;a href=&#34;./#binding&#34;&gt;&lt;strong&gt;bindings&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Quando &lt;strong&gt;não há um escopo&lt;/strong&gt; de contexto definido dentro do JSON ou da estrutura declarativa da sua tela, mas que podem ser acessados por &lt;a href=&#34;../.././#binding&#34;&gt;&lt;strong&gt;bindings&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-&lt;p&gt;Isso significa que esse tipo de contexto é criado por meio de &lt;a href=&#34;../eventos.md&#34;&gt;&lt;strong&gt;eventos&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Isso significa que esse tipo de contexto é criado por meio de &lt;a href=&#34;../../eventos&#34;&gt;&lt;strong&gt;eventos&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Além disso, o escopo desse tipo de contexto é definido apenas por uma action ou um conjunto de ações relacionados ao evento criado no contexto.&lt;/p&gt;
 
 &lt;/div&gt;
@@ -826,11 +826,11 @@ Por default o ID de um contexto global será sempre &amp;ldquo;global&amp;rdquo;
 &lt;h2 id=&#34;como-definir-um-contexto-global&#34;&gt;Como definir um Contexto Global?&lt;/h2&gt;
 &lt;p&gt;Um contexto que seja global pode ser definido de duas formas:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;A partir de um componente declarativo (utilizando a Ação&lt;a href=&#34;acoes/setcontext.md&#34;&gt;&lt;strong&gt;&lt;code&gt;SetContext&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt;) ou&lt;/li&gt;
+&lt;li&gt;A partir de um componente declarativo (utilizando a Ação&lt;a href=&#34;acoes/setcontext&#34;&gt;&lt;strong&gt;&lt;code&gt;SetContext&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt;) ou&lt;/li&gt;
 &lt;li&gt;Programaticamente, utilizando a função &lt;code&gt;set()&lt;/code&gt; a partir do objeto &lt;code&gt;GlobalContext&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;1-usando-o-setcontext&#34;&gt;1. Usando o SetContext&lt;/h3&gt;
-&lt;p&gt;É possível definir ou modificar um contexto global a partir da Ação &lt;a href=&#34;acoes/setcontext.md&#34;&gt;&lt;strong&gt;&lt;code&gt;SetContext&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt; Para tal, basta identificar o contexto global utilizando a &lt;code&gt;ID = &amp;quot;global&amp;quot;&lt;/code&gt; na propriedade &lt;code&gt;contextId&lt;/code&gt;, como mostrado no exemplo abaixo:&lt;/p&gt;
+&lt;p&gt;É possível definir ou modificar um contexto global a partir da Ação &lt;a href=&#34;acoes/setcontext&#34;&gt;&lt;strong&gt;&lt;code&gt;SetContext&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt; Para tal, basta identificar o contexto global utilizando a &lt;code&gt;ID = &amp;quot;global&amp;quot;&lt;/code&gt; na propriedade &lt;code&gt;contextId&lt;/code&gt;, como mostrado no exemplo abaixo:&lt;/p&gt;
 &lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t167&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t167-0&#34; role=&#34;tab&#34; aria-controls=&#34;t167-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
 	  
 		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t167-1&#34; role=&#34;tab&#34; aria-controls=&#34;t167-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
@@ -945,7 +945,7 @@ Ao definir o valor (value) de um contexto qualquer, é importante analisar sua e
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
   &lt;div id=&#34;t168-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t168-2&#34;&gt;
 
-&lt;p&gt;&lt;p&gt;No iOS o Contexto Global é um dos atributos do &lt;a href=&#34;../features/customizacao/beagle-para-ios/dependencias-do-beagle.md&#34;&gt;&lt;strong&gt;Beagle Dependencies&lt;/strong&gt;&lt;/a&gt; .&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;No iOS o Contexto Global é um dos atributos do &lt;a href=&#34;../../features/customizacao/beagle-para-ios/dependencias-do-beagle&#34;&gt;&lt;strong&gt;Beagle Dependencies&lt;/strong&gt;&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;Para utilizar o contexto global em qualquer componente da sua aplicação você precisará chamar o &lt;code&gt;BeagleDependencies&lt;/code&gt; do seu projeto como no exemplo abaixo:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;globalContext&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;setValue&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;value&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Context has changed&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;path&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;myValue&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
@@ -1196,37 +1196,37 @@ Essas expressões são observadas pelo contexto e são atualizadas conforme o co
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;safe area&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;safe-area.md&#34;&gt;&lt;strong&gt;Safe Area&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;safe-area&#34;&gt;&lt;strong&gt;Safe Area&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Especifica o posicionamento dos componentes na tela.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;navigation bar&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;./#navigation-bar&#34;&gt;&lt;strong&gt;Navigation Bar&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../../../../.././#navigation-bar&#34;&gt;&lt;strong&gt;Navigation Bar&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Permite configurar a barra de ações/navegação na tela.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;child&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../componentes/&#34;&gt;&lt;strong&gt;Server Driven Component&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../../../../../componentes/&#34;&gt;&lt;strong&gt;Server Driven Component&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;✓&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Define os elementos na tela. Pode ser qualquer componente visual que estenda de &lt;code&gt;ServerDrivenComponent&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;style&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../widget.md#atributos-do-style&#34;&gt;&lt;strong&gt;Style&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../../../../widget#atributos-do-style&#34;&gt;&lt;strong&gt;Style&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Fornece opções de customização visual para a &lt;code&gt;Screen.&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;screen analytics event&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../analytics.md#opcao-screenview&#34;&gt;&lt;strong&gt;Screen Event&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../../../analytics#opcao-screenview&#34;&gt;&lt;strong&gt;Screen Event&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Configura elementos de análise(Analytics) na sua tela.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;context&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../contexto/&#34;&gt;&lt;strong&gt;ContextData&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../../contexto/&#34;&gt;&lt;strong&gt;ContextData&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Contexto da tela.&lt;/td&gt;
 &lt;/tr&gt;
@@ -1421,7 +1421,7 @@ Essas expressões são observadas pelo contexto e são atualizadas conforme o co
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;null&lt;/span&gt;
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;accessibility&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Accessibility&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;null&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Abaixo listamos todos os atributos que um widget pode receber. Mas se quiser um exemplo de uso e como criar um widget, veja a seção &lt;a href=&#34;../features/posicionamento-de-componentes/&#34;&gt;&lt;strong&gt;posicionamento de componentes.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Abaixo listamos todos os atributos que um widget pode receber. Mas se quiser um exemplo de uso e como criar um widget, veja a seção &lt;a href=&#34;../../features/posicionamento-de-componentes/&#34;&gt;&lt;strong&gt;posicionamento de componentes.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;quais-seus-atributos&#34;&gt;Quais seus atributos?&lt;/h2&gt;
 &lt;h3 id=&#34;atributos-do-widget&#34;&gt;Atributos do Widget&lt;/h3&gt;
 &lt;p&gt;Os principais atributos desta classe são:&lt;/p&gt;
@@ -1510,7 +1510,7 @@ Essas expressões são observadas pelo contexto e são atualizadas conforme o co
       &lt;td style=&#34;text-align:left&#34;&gt;EdgeValue&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;
-        &lt;p&gt;Determina a &lt;a href=&#34;../features/posicionamento-de-componentes/margin.md&#34;&gt;&lt;b&gt;margem&lt;/b&gt;&lt;/a&gt; que
+        &lt;p&gt;Determina a &lt;a href=&#34;../features/posicionamento-de-componentes/margin&#34;&gt;&lt;b&gt;margem&lt;/b&gt;&lt;/a&gt; que
           afeta o espa&amp;#xE7;amento ao redor de um elemento, contribuindo para que
           ele se desloque de acordo com os limites internos do elemento pai e de
           seus irm&amp;#xE3;os.&lt;/p&gt;
@@ -1525,7 +1525,7 @@ Essas expressões são observadas pelo contexto e são atualizadas conforme o co
       &lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;Define espa&amp;#xE7;os internos no componente, ele se comporta como uma esp&amp;#xE9;cie
         de &amp;quot;margem interna&amp;quot; do elemento. Por exemplo, um container que
-        tenha dois elementos visuais define um valor para &lt;a href=&#34;../features/posicionamento-de-componentes/padding.md&#34;&gt;&lt;b&gt;padding&lt;/b&gt;&lt;/a&gt; para
+        tenha dois elementos visuais define um valor para &lt;a href=&#34;../features/posicionamento-de-componentes/padding&#34;&gt;&lt;b&gt;padding&lt;/b&gt;&lt;/a&gt; para
         que os elementos internos n&amp;#xE3;o fiquem &amp;quot;colados&amp;quot; nas margens
         internas.&lt;/td&gt;
     &lt;/tr&gt;
@@ -1537,17 +1537,17 @@ Essas expressões são observadas pelo contexto e são atualizadas conforme o co
       &lt;td style=&#34;text-align:left&#34;&gt;Adiciona padding a uma posi&amp;#xE7;&amp;#xE3;o. Para mais detalhes sobre seu
         funcionamento verifique nossa documenta&amp;#xE7;&amp;#xE3;o sobre o atributo
         &lt;a
-        href=&#34;../features/posicionamento-de-componentes/position.md&#34;&gt;&lt;b&gt;posi&amp;#xE7;&amp;#xE3;o&lt;/b&gt;
+        href=&#34;../features/posicionamento-de-componentes/position&#34;&gt;&lt;b&gt;posi&amp;#xE7;&amp;#xE3;o&lt;/b&gt;
           &lt;/a&gt;&lt;b&gt; &lt;/b&gt;em um layout de componentes.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;&lt;b&gt;flex&lt;/b&gt;
       &lt;/td&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../features/posicionamento-de-componentes/flex.md&#34;&gt;Flex&lt;/a&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../features/posicionamento-de-componentes/flex&#34;&gt;Flex&lt;/a&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;Respons&amp;#xE1;vel por posicionar elementos na tela. Para mais detalhes
-        verifique nossa documenta&amp;#xE7;&amp;#xE3;o sobre o&lt;a href=&#34;../features/posicionamento-de-componentes/flex.md&#34;&gt;&lt;b&gt; Flex&lt;/b&gt;&lt;/a&gt;&lt;b&gt;.&lt;/b&gt;
+        verifique nossa documenta&amp;#xE7;&amp;#xE3;o sobre o&lt;a href=&#34;../features/posicionamento-de-componentes/flex&#34;&gt;&lt;b&gt; Flex&lt;/b&gt;&lt;/a&gt;&lt;b&gt;.&lt;/b&gt;
       &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;

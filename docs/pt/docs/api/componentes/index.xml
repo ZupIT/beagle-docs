@@ -71,9 +71,9 @@
         &lt;p&gt;Event&lt;/p&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;
-        &lt;p&gt;&lt;a href=&#34;../analytics.md#opcao-click&#34;&gt;Analytics&lt;/a&gt;
+        &lt;p&gt;&lt;a href=&#34;../analytics#opcao-click&#34;&gt;Analytics&lt;/a&gt;
         &lt;/p&gt;
-        &lt;p&gt;&lt;a href=&#34;../analytics.md#opcao-click&#34;&gt;Click&lt;/a&gt;
+        &lt;p&gt;&lt;a href=&#34;../analytics#opcao-click&#34;&gt;Click&lt;/a&gt;
         &lt;/p&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
@@ -86,9 +86,9 @@
     &lt;tr&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;child&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;
-        &lt;p&gt;&lt;a href=&#34;../widget.md&#34;&gt;Server&lt;/a&gt;
+        &lt;p&gt;&lt;a href=&#34;../widget&#34;&gt;Server&lt;/a&gt;
         &lt;/p&gt;
-        &lt;p&gt;&lt;a href=&#34;../widget.md&#34;&gt;DrivenComponent&lt;/a&gt;
+        &lt;p&gt;&lt;a href=&#34;../widget&#34;&gt;DrivenComponent&lt;/a&gt;
         &lt;/p&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&amp;#x2713;&lt;/td&gt;
@@ -170,7 +170,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;initialState&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;./&#34;&gt;ServerDrivenComponent&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;.././&#34;&gt;ServerDrivenComponent&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;✓&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Componente server driven que é apresentado enquanto uma requisição assíncrona está sendo feita.&lt;/td&gt;
 &lt;/tr&gt;

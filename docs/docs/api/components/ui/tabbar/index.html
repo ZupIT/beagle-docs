@@ -24,10 +24,10 @@
 <meta property="og:description" content="In this section, you will find a description of the Tab Bar component and its attributes" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zupit.github.io/docs-beagle/docs/api/components/ui/tabbar/" />
-<meta property="article:modified_time" content="2020-12-08T11:16:20-03:00" /><meta property="og:site_name" content="Beagle" />
+<meta property="article:modified_time" content="2020-12-09T12:56:53-03:00" /><meta property="og:site_name" content="Beagle" />
 <meta itemprop="name" content="Tabbar">
 <meta itemprop="description" content="In this section, you will find a description of the Tab Bar component and its attributes">
-<meta itemprop="dateModified" content="2020-12-08T11:16:20-03:00" />
+<meta itemprop="dateModified" content="2020-12-09T12:56:53-03:00" />
 <meta itemprop="wordCount" content="549">
 
 
@@ -104,7 +104,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -136,7 +136,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -1926,13 +1926,13 @@
 <td style="text-align:left">currentTab</td>
 <td style="text-align:left">Bind&lt;Int&gt;</td>
 <td style="text-align:left"></td>
-<td style="text-align:left">Integer number that identifies that selected <a href="tabview.md#tabitem-definition"><code>TabBarItem</code></a>``</td>
+<td style="text-align:left">Integer number that identifies that selected <a href="tabview#tabitem-definition"><code>TabBarItem</code></a>``</td>
 </tr>
 <tr>
 <td style="text-align:left">onTabSelection</td>
 <td style="text-align:left">List&lt;Action&gt;</td>
 <td style="text-align:left"></td>
-<td style="text-align:left">List of <a href="../../actions/"><strong>Actions</strong></a> that are performed when a TabBarItem is selected. It can be used to load views according to the selected <code>TabBarItem</code>.</td>
+<td style="text-align:left">List of <a href="../../../../../actions/"><strong>Actions</strong></a> that are performed when a TabBarItem is selected. It can be used to load views according to the selected <code>TabBarItem</code>.</td>
 </tr>
 </tbody>
 </table>
@@ -1966,11 +1966,11 @@
 
 <div class="alert alert-warning" role="alert">
 
-If a title or icon is not declared in the <code>TabBarItem</code>, the empty space will remain. If you need navigation between viewers without the Tab interface, it is recommended that you use the <a href="../../actions/navigate/"><strong>navigation components</strong></a><strong>.</strong>
+If a title or icon is not declared in the <code>TabBarItem</code>, the empty space will remain. If you need navigation between viewers without the Tab interface, it is recommended that you use the <a href="../../../../actions/navigate/"><strong>navigation components</strong></a>
 </div>
 
 <h2 id="how-to-use-it">How to use it?</h2>
-<p>On the following example, it will be used two componentes to explain TabBar: <a href="../layout/pageview.md"><strong>PageView</strong></a> and <a href="../../context/"><strong>Context</strong></a>.</p>
+<p>On the following example, it will be used two componentes to explain TabBar: <a href="../../layout/pageview"><strong>PageView</strong></a> and <a href="../../../context/"><strong>Context</strong></a>.</p>
 <p><strong>Page View</strong> is used to render the pages you want to display, that is, it will create the view on each selected tab. This is where you will define the components you want to display by clicking on each tab.</p>
 <p>The components will be rendered according to their position in the list of componentes defined at the Page View Component.It means that, if we have 2 text components  in our list, TAB 1 and TAB 2. The first has a position of ZERO = 0, and the second has ONE = 1. The <strong>currentTab</strong> attribute is the one that defines which component is displayed according to the value defined in it.</p>
 <p>The <strong>Context</strong> is used to save the indicator (position) of the selected tab, and inform it to PageView, which coordinates which element will be displayed.</p>
@@ -2140,7 +2140,7 @@ This example does not exist on the playground, but you can copy and paste the JS
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top"><div class="dr-last-modified-text">
-  Last modified December 8, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/e05175f4fd702526fcc144d18063eb4f463a1939">fix tabs (e05175f4)</a>
+  Last modified December 9, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/2500a2815c1ffbbcf064963526033e3a2b985837">fix tabs and some links (2500a281)</a>
 </div></div>
 </div>
 

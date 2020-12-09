@@ -350,9 +350,9 @@ const analyticsHandler = {
   &lt;div id=&#34;t114-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t114-2&#34;&gt;
 
 &lt;p&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;form/validator.md&#34;&gt;&lt;strong&gt;Validator&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;form/simple-form-web.md&#34;&gt;&lt;strong&gt;Simple Form&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;ui/input.md&#34;&gt;&lt;strong&gt;Input&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;form/validator&#34;&gt;&lt;strong&gt;Validator&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;form/simple-form-web&#34;&gt;&lt;strong&gt;Simple Form&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;ui/input&#34;&gt;&lt;strong&gt;Input&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
   &lt;div id=&#34;t114-3&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t114-3&#34;&gt;
@@ -467,7 +467,7 @@ The context &lt;code&gt;id&lt;/code&gt; can only contain letter, numbers and the
     )   
 )
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Notice the context was declared and its values were defined and used to fill the texts, however it is possible to define these values after using a &lt;a href=&#34;../actions/setcontext.md&#34;&gt;&lt;code&gt;SetContext()&lt;/code&gt;&lt;/a&gt; method.&lt;/p&gt;
+&lt;p&gt;Notice the context was declared and its values were defined and used to fill the texts, however it is possible to define these values after using a &lt;a href=&#34;../../../../actions/setcontext&#34;&gt;&lt;code&gt;SetContext()&lt;/code&gt;&lt;/a&gt; method.&lt;/p&gt;
 &lt;p&gt;This way, you can fill the component&amp;rsquo;s data that weren&amp;rsquo;t yet in the JSON.&lt;/p&gt;
 
 
@@ -526,7 +526,7 @@ The context is only useful if the value is accessed in any JSON part. You will n
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;   
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Notice the context was declared and its values were defined and used to fill the texts, however it is possible to define these values using the &lt;a href=&#34;../actions/setcontext.md&#34;&gt;&lt;code&gt;SetContext()&lt;/code&gt;&lt;/a&gt; method later. You can fill the component&amp;rsquo;s with data that wasn&amp;rsquo;t in the JSON.&lt;/p&gt;
+&lt;p&gt;Notice the context was declared and its values were defined and used to fill the texts, however it is possible to define these values using the &lt;a href=&#34;../actions/setcontext&#34;&gt;&lt;code&gt;SetContext()&lt;/code&gt;&lt;/a&gt; method later. You can fill the component&amp;rsquo;s with data that wasn&amp;rsquo;t in the JSON.&lt;/p&gt;
 &lt;h3 id=&#34;2-implicit-context&#34;&gt;2. Implicit context&lt;/h3&gt;
 &lt;p&gt;When there isn&amp;rsquo;t a context scope defined inside a JSON or the declarative structure of your screen, but it can be accessed through &lt;strong&gt;bindings&lt;/strong&gt;.&lt;/p&gt;
 
@@ -813,7 +813,7 @@ You can check an example of implicit context of Beagle Web on &lt;a href=&#34;ht
 &lt;p&gt;A Global Context is a variable that can assume as value of any type of variable, like a map defines a subset of key/value or complex JSONs objects that defines object trees.&lt;/p&gt;
 &lt;p&gt;It works exactly like the &lt;a href=&#34;context/&#34;&gt;&lt;strong&gt;Context&lt;/strong&gt;&lt;/a&gt;, however in a global scope, meaning that it will exists while the application is still running (even on the background), which allows it to be accessed from any application point, being a component or an action linked to a component or even programmatically.&lt;/p&gt;
 &lt;h3 id=&#34;how-can-you-access-it&#34;&gt;How can you access it?&lt;/h3&gt;
-&lt;p&gt;It can be accessed through an expression in a declarative page, for example, &lt;code&gt;&amp;quot;@{global.user}&amp;quot;&lt;/code&gt; or programmatically from a &lt;strong&gt;GlobalContext.get()&lt;/strong&gt; object**.**&lt;/p&gt;
+&lt;p&gt;It can be accessed through an expression in a declarative page, for example, &lt;code&gt;&amp;quot;@{global.user}&amp;quot;&lt;/code&gt; or programmatically from a &lt;strong&gt;GlobalContext.get()&lt;/strong&gt; object&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
@@ -824,7 +824,7 @@ This way, it is possible to share information between the native part of the app
 &lt;h2 id=&#34;how-to-use-it&#34;&gt;How to use it?&lt;/h2&gt;
 &lt;p&gt;It is important to mention some information to use the Global Context:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Global context Global ins an object and is type is __&lt;a href=&#34;context/&#34;&gt;&lt;strong&gt;&lt;code&gt;ContextData&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Global context Global ins an object and is type is __&lt;a href=&#34;context/&#34;&gt;&lt;strong&gt;&lt;code&gt;ContextData&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Global context can have as a VALUE, a complex JSON that can contain an object tree in it.&lt;/li&gt;
 &lt;li&gt;It is a &lt;code&gt;Singleton&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
@@ -840,11 +840,11 @@ By default the global context ID will be always &amp;lsquo;global&amp;rsquo;.
 &lt;h2 id=&#34;how-to-define-a-global-context&#34;&gt;How to define a Global Context?&lt;/h2&gt;
 &lt;p&gt;A context to be global, it can be defined in two ways:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;From a declarative component (using the &lt;a href=&#34;actions/setcontext.md&#34;&gt;&lt;strong&gt;&lt;code&gt;SetContext&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt;action) or&lt;/li&gt;
+&lt;li&gt;From a declarative component (using the &lt;a href=&#34;actions/setcontext&#34;&gt;&lt;strong&gt;&lt;code&gt;SetContext&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt;action) or&lt;/li&gt;
 &lt;li&gt;Programmatically, using the &lt;code&gt;set()&lt;/code&gt; function from the &lt;code&gt;GlobalContext&lt;/code&gt; object.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;1-using-setcontext&#34;&gt;1. Using SetContext&lt;/h3&gt;
-&lt;p&gt;It is possible to define or modify a  global context from the   &lt;a href=&#34;actions/setcontext.md&#34;&gt;&lt;strong&gt;&lt;code&gt;SetContext&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt; action.  You have to identify a global context using an &lt;code&gt;ID = &amp;quot;global&lt;/code&gt;&amp;quot; in the &lt;code&gt;contextId&lt;/code&gt; property, as you can see below:&lt;/p&gt;
+&lt;p&gt;It is possible to define or modify a  global context from the   &lt;a href=&#34;actions/setcontext&#34;&gt;&lt;strong&gt;&lt;code&gt;SetContext&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt; action.  You have to identify a global context using an &lt;code&gt;ID = &amp;quot;global&lt;/code&gt;&amp;quot; in the &lt;code&gt;contextId&lt;/code&gt; property, as you can see below:&lt;/p&gt;
 &lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t149&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t149-0&#34; role=&#34;tab&#34; aria-controls=&#34;t149-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
 	  
 		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t149-1&#34; role=&#34;tab&#34; aria-controls=&#34;t149-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
@@ -960,7 +960,7 @@ When defining a value of any context, it is important to analyse its structure. 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
   &lt;div id=&#34;t150-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t150-2&#34;&gt;
 
-&lt;p&gt;&lt;p&gt;In iOS the Global Context is a &lt;a href=&#34;../resources/customization/beagle-for-ios/beagledependencies.md&#34;&gt;&lt;strong&gt;Beagle Dependencies&lt;/strong&gt;&lt;/a&gt; attribute.&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;In iOS the Global Context is a &lt;a href=&#34;../../resources/customization/beagle-for-ios/beagledependencies&#34;&gt;&lt;strong&gt;Beagle Dependencies&lt;/strong&gt;&lt;/a&gt; attribute.&lt;/p&gt;
 &lt;p&gt;To use it in anywhere of your application you must to use the &lt;code&gt;BeagleDependencies&lt;/code&gt; instance of your project as the example below:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;globalContext&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;setValue&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;value&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Context has changed&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;path&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;myValue&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
@@ -1208,37 +1208,37 @@ This expression are observed by the context and are updated when the context cha
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;safe area&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;./#safe-area&#34;&gt;&lt;strong&gt;Safe Area&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../../../../../.././#safe-area&#34;&gt;&lt;strong&gt;Safe Area&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Specifies a screen&amp;rsquo;s component position.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;navigation bar&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;./#navigation-bar&#34;&gt;&lt;strong&gt;Navigation Bar&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../../../../.././#navigation-bar&#34;&gt;&lt;strong&gt;Navigation Bar&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Allows action/navigation&amp;rsquo;s bar on the screen.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;child&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../components/&#34;&gt;&lt;strong&gt;Server-Driven Component&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../../../../../components/&#34;&gt;&lt;strong&gt;Server-Driven Component&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;✓&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Define screen&amp;rsquo;s elements. It can be any visual component that extends to&lt;code&gt;ServerDrivenComponent&lt;/code&gt;.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;style&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../widget.md#atributos-do-style&#34;&gt;&lt;strong&gt;Style&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../../../../widget#atributos-do-style&#34;&gt;&lt;strong&gt;Style&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Provide visual customization options to the &lt;code&gt;screen.&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;screen analytics event&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../analytics.md#opcao-screenview&#34;&gt;&lt;strong&gt;Screen Event&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../../../analytics#opcao-screenview&#34;&gt;&lt;strong&gt;Screen Event&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Configure analytics elements to your screen.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;context&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../context/&#34;&gt;&lt;strong&gt;ContextData&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../../context/&#34;&gt;&lt;strong&gt;ContextData&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Screen&amp;rsquo;s context.&lt;/td&gt;
 &lt;/tr&gt;
@@ -1544,7 +1544,7 @@ It is important to remember that, by default, these structures have null value.
     &lt;tr&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;&lt;b&gt;positionType&lt;/b&gt;
       &lt;/td&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;a href=&#34;../resources/component-layout/positiontype.md&#34;&gt;&lt;b&gt;Position Type&lt;/b&gt;&lt;/a&gt; attribute
+      &lt;td style=&#34;text-align:left&#34;&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;a href=&#34;../resources/component-layout/positiontype&#34;&gt;&lt;b&gt;Position Type&lt;/b&gt;&lt;/a&gt; attribute
         establishes a relation with the element&amp;apos;s positioning and its brothers.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;

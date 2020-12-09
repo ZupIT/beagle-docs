@@ -24,7 +24,7 @@
         
         &lt;hr&gt;
 &lt;h2 id=&#34;criando-estilos-para-o-beagle-ios&#34;&gt;&lt;strong&gt;C&lt;/strong&gt;riando estilos para o Beagle iOS&lt;/h2&gt;
-&lt;p&gt;No exemplo prático da página &amp;ldquo;Criando um projeto com Beagle para iOS&amp;rdquo;, você pode conferir como fazer a &lt;a href=&#34;./&#34;&gt;&lt;strong&gt;implementação do Beagle&lt;/strong&gt;&lt;/a&gt; e criar sua primeira tela server-driven.&lt;/p&gt;
+&lt;p&gt;No exemplo prático da página &amp;ldquo;Criando um projeto com Beagle para iOS&amp;rdquo;, você pode conferir como fazer a &lt;a href=&#34;../.././&#34;&gt;&lt;strong&gt;implementação do Beagle&lt;/strong&gt;&lt;/a&gt; e criar sua primeira tela server-driven.&lt;/p&gt;
 &lt;p&gt;Neste tutorial, a ideia é avançar a partir do &lt;a href=&#34;./#passo-3-configurando-o-xcode&#34;&gt;&lt;strong&gt;projeto anterior&lt;/strong&gt;&lt;/a&gt; para &lt;strong&gt;criar um Design System na sua biblioteca do Beagle&lt;/strong&gt;.  Os exemplos que ilustrarão o passo a passo estão nestes&lt;a href=&#34;https://github.com/ZupIT/beagle-examples&#34;&gt; &lt;strong&gt;sample codes&lt;/strong&gt;&lt;/a&gt; que você encontra no nosso repositório.&lt;/p&gt;
 &lt;p&gt;A ideia aqui é configurar alguns estilos no iOS para que você possa customizar componentes como:&lt;/p&gt;
 &lt;ul&gt;
@@ -46,7 +46,7 @@
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;struct&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Styles&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
 
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Essa &lt;code&gt;struct&lt;/code&gt; irá conter todos os estilos que serão acessados pelo Beagle. Aqui, estará listada a lógica que permite ao Beagle aplicar os estilos definidos no iOS a uma &lt;a href=&#34;../../../principais-conceitos.md#server-driven-ui&#34;&gt;&lt;strong&gt;tela server-driven&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Essa &lt;code&gt;struct&lt;/code&gt; irá conter todos os estilos que serão acessados pelo Beagle. Aqui, estará listada a lógica que permite ao Beagle aplicar os estilos definidos no iOS a uma &lt;a href=&#34;../../../../principais-conceitos#server-driven-ui&#34;&gt;&lt;strong&gt;tela server-driven&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;passo-2-criar-um-estilo-para-um-texto&#34;&gt;Passo 2: Criar um estilo para um texto&lt;/h3&gt;
 &lt;p&gt;Uma vez que você gerou seu arquivo, você deve agora criar  função estática para definir e retornar um estilo de texto. Como, no caso deste exemplo, teremos um estilo para título e outro para parágrafo, criaremos duas funções.&lt;/p&gt;
 &lt;p&gt;O retorno desta função irá utilizar a classe &lt;code&gt;BeagleStyle,&lt;/code&gt;que é uma classe interna do Beagle que fica acessível quando você importa a classe &lt;code&gt;beagleUI&lt;/code&gt;.&lt;/p&gt;

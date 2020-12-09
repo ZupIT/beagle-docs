@@ -126,7 +126,7 @@ From version 1.5.0, we started to support the use of context and cell recycling 
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;direction&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;listview.md#listdirection&#34;&gt;ListDirection&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;listview#listdirection&#34;&gt;ListDirection&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Sets the direction in which list items are displayed.&lt;/td&gt;
 &lt;/tr&gt;
@@ -584,7 +584,7 @@ Default value is ListDirection.VERTICAL
         
         &lt;hr&gt;
 &lt;h2 id=&#34;what-is-it&#34;&gt;What is it?&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;PageIndicatorComponent&lt;/code&gt; is a component that indicates the amount of pages and which one is the current &lt;a href=&#34;pageview.md&#34;&gt;&lt;strong&gt;PageView&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;PageIndicatorComponent&lt;/code&gt; is a component that indicates the amount of pages and which one is the current &lt;a href=&#34;pageview&#34;&gt;&lt;strong&gt;PageView&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -622,7 +622,7 @@ Default value is ListDirection.VERTICAL
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;how-to-use-it&#34;&gt;How to use it?&lt;/h2&gt;
-&lt;p&gt;An example on how to use &lt;code&gt;PageIndicator&lt;/code&gt; can be foun on &lt;a href=&#34;pageview.md#como-usar&#34;&gt;&lt;strong&gt;PageView&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An example on how to use &lt;code&gt;PageIndicator&lt;/code&gt; can be foun on &lt;a href=&#34;pageview#como-usar&#34;&gt;&lt;strong&gt;PageView&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;-test-this-component-in-the-web-playgroundhttpsbeagle-playgroundnetlifyappdemodefault-componentspageviewjson&#34;&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/pageview.json&#34;&gt;👉 Test this component in the Web Playground​&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;``&lt;/p&gt;
 
@@ -659,8 +659,8 @@ Default value is ListDirection.VERTICAL
       &lt;td style=&#34;text-align:left&#34;&gt;children&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;
         &lt;p&gt;List
-          &lt;br /&gt;&amp;lt;&lt;a href=&#34;../../widget.md&#34;&gt;&lt;b&gt;ServerDriven&lt;/b&gt;&lt;/a&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/p&gt;
-        &lt;p&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;a href=&#34;../../widget.md&#34;&gt;&lt;b&gt;Component&lt;/b&gt;&lt;/a&gt;&amp;gt;&lt;/p&gt;
+          &lt;br /&gt;&amp;lt;&lt;a href=&#34;../../widget&#34;&gt;&lt;b&gt;ServerDriven&lt;/b&gt;&lt;/a&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/p&gt;
+        &lt;p&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;a href=&#34;../../widget&#34;&gt;&lt;b&gt;Component&lt;/b&gt;&lt;/a&gt;&amp;gt;&lt;/p&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;&amp;#x2713;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;

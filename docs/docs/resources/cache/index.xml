@@ -54,7 +54,7 @@
 &lt;div class=&#34;tab-content&#34; id=&#34;t12&#34;&gt;&lt;div id=&#34;t12-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t12-0&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;In Android, the cache is configured when you implement the first Beagle&amp;rsquo;s configuration.&lt;/p&gt;
-&lt;p&gt;This implementation happens inside the class named &lt;a href=&#34;../../get-started/using-beagle/android.md#passo-2-criar-uma-classe-beagleconfig&#34;&gt;&lt;strong&gt;AppBeagleConfig&lt;/strong&gt;&lt;/a&gt;, meaning that it is inside the Beagle&amp;rsquo;s configuration class.&lt;/p&gt;
+&lt;p&gt;This implementation happens inside the class named &lt;a href=&#34;../../../../get-started/using-beagle/android#passo-2-criar-uma-classe-beagleconfig&#34;&gt;&lt;strong&gt;AppBeagleConfig&lt;/strong&gt;&lt;/a&gt;, meaning that it is inside the Beagle&amp;rsquo;s configuration class.&lt;/p&gt;
 &lt;p&gt;The  cache, is a Beagle&amp;rsquo;s internal class where we can define 3 properties, represented by the attributes below:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;enable&lt;/code&gt;&lt;/li&gt;
@@ -145,7 +145,7 @@
 &lt;/div&gt;
   &lt;div id=&#34;t12-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t12-2&#34;&gt;
 
-&lt;p&gt;&lt;p&gt;In the backend this functionality is only supported if you use the &lt;a href=&#34;https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MCCc1YL7zK2ENGVKXB6/v/v1.0-en/get-started/installing-beagle/beagle-backend#passo-3-incluindo-requerimentos-adicionais&#34;&gt;&lt;strong&gt;started library&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;In the backend this functionality is only supported if you use the &lt;a href=&#34;https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MCCc1YL7zK2ENGVKXB6/v/v1.0-en/get-started/installing-beagle/beagle-backend#passo-3-incluindo-requerimentos-adicionais&#34;&gt;&lt;strong&gt;started library&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The cache was created to optimize the response of a request in terms of size and BFF&amp;rsquo;s time, when the return is the same as the previous one. The input in this cache last until the server is redeployed or the client installed again.&lt;/p&gt;
 &lt;p&gt;To make this configuration:&lt;/p&gt;
 &lt;ol&gt;
@@ -217,7 +217,7 @@
   &lt;div id=&#34;t12-3&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t12-3&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;On web, the cache is configured when it&amp;rsquo;s defined the initials configurations of Beagle Web on the &lt;code&gt;strategy&lt;/code&gt; parameter, which is one of &lt;code&gt;BeagleModule&lt;/code&gt; parametes (if you&amp;rsquo;re using Angular) or&lt;code&gt;createBeagleUIService&lt;/code&gt;(if you&amp;rsquo;re using React).&lt;/p&gt;
-&lt;p&gt;By default, the cache comes enabled with**&lt;code&gt;beagle-with-fallback-to-cache&lt;/code&gt;** strategy, however the &lt;code&gt;beagle-cache-only&lt;/code&gt; strategy can also be used to implement &lt;a href=&#34;../customization/beagle-para-web/&#34;&gt;&lt;strong&gt;Beagle&amp;rsquo;s cache protocol&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;By default, the cache comes enabled with**&lt;code&gt;beagle-with-fallback-to-cache&lt;/code&gt;** strategy, however the &lt;code&gt;beagle-cache-only&lt;/code&gt; strategy can also be used to implement &lt;a href=&#34;../../customization/beagle-para-web/&#34;&gt;&lt;strong&gt;Beagle&amp;rsquo;s cache protocol&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 &lt;p&gt;Remember to set CORS enabled for backend when you want to use cache’s strategy for Beagle on Web.&lt;/p&gt;
 &lt;/div&gt;

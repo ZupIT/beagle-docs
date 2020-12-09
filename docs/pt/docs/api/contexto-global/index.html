@@ -24,10 +24,10 @@
 <meta property="og:description" content="Nesta seção, você encontra descrição completa de contexto global." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zupit.github.io/docs-beagle/pt/docs/api/contexto-global/" />
-<meta property="article:modified_time" content="2020-12-08T11:16:20-03:00" /><meta property="og:site_name" content="Beagle" />
+<meta property="article:modified_time" content="2020-12-09T12:56:53-03:00" /><meta property="og:site_name" content="Beagle" />
 <meta itemprop="name" content="Contexto Global">
 <meta itemprop="description" content="Nesta seção, você encontra descrição completa de contexto global.">
-<meta itemprop="dateModified" content="2020-12-08T11:16:20-03:00" />
+<meta itemprop="dateModified" content="2020-12-09T12:56:53-03:00" />
 <meta itemprop="wordCount" content="1336">
 
 
@@ -104,7 +104,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -136,7 +136,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -2074,11 +2074,11 @@ Por default o ID de um contexto global será sempre &ldquo;global&rdquo;.
 <h2 id="como-definir-um-contexto-global">Como definir um Contexto Global?</h2>
 <p>Um contexto que seja global pode ser definido de duas formas:</p>
 <ul>
-<li>A partir de um componente declarativo (utilizando a Ação<a href="acoes/setcontext.md"><strong><code>SetContext</code></strong></a>) ou</li>
+<li>A partir de um componente declarativo (utilizando a Ação<a href="acoes/setcontext"><strong><code>SetContext</code></strong></a>) ou</li>
 <li>Programaticamente, utilizando a função <code>set()</code> a partir do objeto <code>GlobalContext</code></li>
 </ul>
 <h3 id="1-usando-o-setcontext">1. Usando o SetContext</h3>
-<p>É possível definir ou modificar um contexto global a partir da Ação <a href="acoes/setcontext.md"><strong><code>SetContext</code></strong></a><strong>.</strong> Para tal, basta identificar o contexto global utilizando a <code>ID = &quot;global&quot;</code> na propriedade <code>contextId</code>, como mostrado no exemplo abaixo:</p>
+<p>É possível definir ou modificar um contexto global a partir da Ação <a href="acoes/setcontext"><strong><code>SetContext</code></strong></a> Para tal, basta identificar o contexto global utilizando a <code>ID = &quot;global&quot;</code> na propriedade <code>contextId</code>, como mostrado no exemplo abaixo:</p>
 <ul class="nav nav-tabs" id="t167" role="tablist"><li class="nav-item"><a data-toggle="tab" class="nav-link active" href="#t167-0" role="tab" aria-controls="t167-0" aria-selected="true">JSON</a></li>
 	  
 		<li class="nav-item"><a data-toggle="tab" class="nav-link" href="#t167-1" role="tab" aria-controls="t167-1">Kotlin DSL</a></li></ul>
@@ -2193,7 +2193,7 @@ Ao definir o valor (value) de um contexto qualquer, é importante analisar sua e
 </code></pre></div></div>
   <div id="t168-2" class="tab-pane" role="tabpanel" aria-labelledby="t168-2">
 
-<p><p>No iOS o Contexto Global é um dos atributos do <a href="../features/customizacao/beagle-para-ios/dependencias-do-beagle.md"><strong>Beagle Dependencies</strong></a> .</p>
+<p><p>No iOS o Contexto Global é um dos atributos do <a href="../../features/customizacao/beagle-para-ios/dependencias-do-beagle"><strong>Beagle Dependencies</strong></a> .</p>
 <p>Para utilizar o contexto global em qualquer componente da sua aplicação você precisará chamar o <code>BeagleDependencies</code> do seu projeto como no exemplo abaixo:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000">dependencies</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">globalContext</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">setValue</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">value</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Context has changed&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">path</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;myValue&#34;</span><span style="color:#000;font-weight:bold">)</span>
 </code></pre></div><div class="alert alert-info" role="alert">
@@ -2419,7 +2419,7 @@ Essas expressões são observadas pelo contexto e são atualizadas conforme o co
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top"><div class="dr-last-modified-text">
-  Last modified 08/12/2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/e05175f4fd702526fcc144d18063eb4f463a1939">fix tabs (e05175f4)</a>
+  Last modified 09/12/2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/2500a2815c1ffbbcf064963526033e3a2b985837">fix tabs and some links (2500a281)</a>
 </div></div>
 </div>
 
