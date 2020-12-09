@@ -27,7 +27,7 @@
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 
-This component is &lt;strong&gt;deprecated&lt;/strong&gt;! It is recomended to use &lt;a href=&#34;simple-form-web.md&#34;&gt;&lt;strong&gt;Simple Form&lt;/strong&gt;&lt;/a&gt;.
+This component is &lt;strong&gt;deprecated&lt;/strong&gt;! It is recomended to use &lt;a href=&#34;simple-form-web&#34;&gt;&lt;strong&gt;Simple Form&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;p&gt;The component represents a way to build user input and send these values to your backend.&lt;/p&gt;
@@ -103,7 +103,7 @@ This component is &lt;strong&gt;deprecated&lt;/strong&gt;! It is recomended to u
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 
-&lt;p&gt;Atenção: &lt;strong&gt;Validator&lt;/strong&gt; ≠&lt;a href=&#34;https://docs.usebeagle.io/v/v0.3/elements/action/formvalidation&#34;&gt;&lt;strong&gt;FormValidation&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Atenção: &lt;strong&gt;Validator&lt;/strong&gt; ≠&lt;a href=&#34;https://docs.usebeagle.io/v/v0.3/elements/action/formvalidation&#34;&gt;&lt;strong&gt;FormValidation&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Despite the similar names, it&amp;rsquo;s important to mention that &lt;strong&gt;Validator&lt;/strong&gt; is different of the &lt;strong&gt;FormValidation&lt;/strong&gt;, the first one authenticates the filled form and the second returns error messages in case of failed information in the form.&lt;/p&gt;
 
 &lt;/div&gt;
@@ -167,11 +167,11 @@ This component is &lt;strong&gt;deprecated&lt;/strong&gt;! It is recomended to u
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-For more information on this component go to the details of &lt;a href=&#34;../ui/input.md&#34;&gt;TextInput&lt;/a&gt;.
+For more information on this component go to the details of &lt;a href=&#34;../../../../../ui/input&#34;&gt;TextInput&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;h4 id=&#34;onchange&#34;&gt;OnChange&lt;/h4&gt;
-&lt;p&gt;This function is part of the TextInput and it observes the changes made within its field, that is, whenever the value is modified, something is typed, deleted, etc, this function is called and activates a &lt;strong&gt;list of other&lt;/strong&gt; &lt;a href=&#34;../../actions/&#34;&gt;actions&lt;/a&gt; to happen whenever the value changes. It is in this list that we add a &lt;a href=&#34;../../actions/setcontext.md&#34;&gt;SetContext&lt;/a&gt; action to set the &lt;a href=&#34;../../context/&#34;&gt;Context&lt;/a&gt; value of the form and update the values ​​that are shown in the field.&lt;/p&gt;
+&lt;p&gt;This function is part of the TextInput and it observes the changes made within its field, that is, whenever the value is modified, something is typed, deleted, etc, this function is called and activates a &lt;strong&gt;list of other&lt;/strong&gt; &lt;a href=&#34;../../../../../actions/&#34;&gt;actions&lt;/a&gt; to happen whenever the value changes. It is in this list that we add a &lt;a href=&#34;../../../../../actions/setcontext&#34;&gt;SetContext&lt;/a&gt; action to set the &lt;a href=&#34;../../../../../context/&#34;&gt;Context&lt;/a&gt; value of the form and update the values ​​that are shown in the field.&lt;/p&gt;
 &lt;p&gt;Check our example below on how we implemented a &lt;code&gt;SimpleForm&lt;/code&gt;&lt;/p&gt;
 &lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t132&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t132-0&#34; role=&#34;tab&#34; aria-controls=&#34;t132-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
 	  
@@ -244,8 +244,8 @@ For more information on this component go to the details of &lt;a href=&#34;../u
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h3 id=&#34;onsubmit&#34;&gt;onSubmit&lt;/h3&gt;
 &lt;p&gt;It is a function of a simple form that performs a list of actions. It is called when the form is submitted.&lt;/p&gt;
-&lt;p&gt;To submit a form, you must use the SubmitForm action and call it, just implement it in a &lt;a href=&#34;../ui/button.md&#34;&gt;Button&lt;/a&gt; that is part of a simple form, that is, that is in your list of children.&lt;/p&gt;
-&lt;p&gt;When you click this button, the onSubmit is activated and the list of actions will be performed. It is this list of actions that will define what should happen with the information in this form, if they will be sent to a backend (through the &lt;a href=&#34;../../actions/sendrequest.md&#34;&gt;sendRequest &lt;/a&gt;action), etc.&lt;/p&gt;
+&lt;p&gt;To submit a form, you must use the SubmitForm action and call it, just implement it in a &lt;a href=&#34;../../../ui/button&#34;&gt;Button&lt;/a&gt; that is part of a simple form, that is, that is in your list of children.&lt;/p&gt;
+&lt;p&gt;When you click this button, the onSubmit is activated and the list of actions will be performed. It is this list of actions that will define what should happen with the information in this form, if they will be sent to a backend (through the &lt;a href=&#34;../../../actions/sendrequest&#34;&gt;sendRequest &lt;/a&gt;action), etc.&lt;/p&gt;
 &lt;h3 id=&#34;-test-this-component-in-the-web-playgroundhttpsbeagle-playgroundnetlifyappdemodefault-componentssimpleformjson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/simpleform.json&#34;&gt;Test this component in the Web Playground&lt;/a&gt;&lt;/h3&gt;
 
       </description>

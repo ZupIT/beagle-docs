@@ -76,7 +76,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;
-&lt;p&gt;See an example below of a counter where two buttons &lt;code&gt;increment&lt;/code&gt; and &lt;code&gt;decrement&lt;/code&gt;, both with &lt;a href=&#34;../actions/setcontext.md&#34;&gt;&lt;strong&gt;SetContext&lt;/strong&gt;&lt;/a&gt; actions that modifies the context value that has an id counter, altering the value with addition and subtraction operations, increasing or decresing the value of 1 to the text value:&lt;/p&gt;
+&lt;p&gt;See an example below of a counter where two buttons &lt;code&gt;increment&lt;/code&gt; and &lt;code&gt;decrement&lt;/code&gt;, both with &lt;a href=&#34;../../actions/setcontext&#34;&gt;&lt;strong&gt;SetContext&lt;/strong&gt;&lt;/a&gt; actions that modifies the context value that has an id counter, altering the value with addition and subtraction operations, increasing or decresing the value of 1 to the text value:&lt;/p&gt;
 &lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t141&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t141-0&#34; role=&#34;tab&#34; aria-controls=&#34;t141-0&#34; aria-selected=&#34;true&#34;&gt;Kotlin&lt;/a&gt;&lt;/li&gt;
 	  
 		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t141-1&#34; role=&#34;tab&#34; aria-controls=&#34;t141-1&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;

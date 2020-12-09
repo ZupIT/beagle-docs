@@ -104,7 +104,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -136,7 +136,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -2048,14 +2048,14 @@
 
 <div class="alert alert-danger" role="alert">
 
-Este componente foi descontinuado na versão 1.1.0 e será removido em uma versão futura. Use <a href="../../../api/componentes/formularios/simple-form.md">SimpleForm</a>  em seu lugar
+Este componente foi descontinuado na versão 1.1.0 e será removido em uma versão futura. Use <a href="../../../../../api/componentes/formularios/simple-form">SimpleForm</a>  em seu lugar
 </div>
 
 <h2 id="introdução">Introdução</h2>
 <p>Um componente do tipo <strong><code>Validator</code></strong> é utilizado quando for necessário validar alguma informação em um formulário. Essa validação acontece através do método <code>isValid</code>,  que é chamado sempre que são executados um<code>FormSubmit</code> ou um <code>notifyChanges()</code>.</p>
 <p>Além disso, esse <strong>Validator</strong> é listado no componente que recebe dados em um formulário, ao qual chamamos de<code>FormInput.</code></p>
 <h2 id="contexto-do-validador">Contexto do validador</h2>
-<p>No Beagle,  é possível usar o componente <strong>Form</strong> para capturar dados informados pelo usuário, validá-los e enviá-los ao <a href="../../../principais-conceitos.md#backend-for-frontend"><strong>BFF</strong></a>.</p>
+<p>No Beagle,  é possível usar o componente <strong>Form</strong> para capturar dados informados pelo usuário, validá-los e enviá-los ao <a href="../../../../principais-conceitos#backend-for-frontend"><strong>BFF</strong></a>.</p>
 <p>Essa validação pode tanto ocorrer quando o usuário ativa o FormSubmit e/ou quando o usuário notifica que o estado de seu <code>InputWidget(FormInput)</code> mudou, como por exemplo, quando ditamos um texto ou quando o campo perde o foco.</p>
 <p>O <strong>Validator</strong> recebe dois parâmetros genéricos e possui um único método <code>isValid</code> que retorna um valor booleano.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#204a87;font-weight:bold">interface</span> <span style="color:#000">Validator</span><span style="color:#000;font-weight:bold">&lt;</span><span style="color:#204a87;font-weight:bold">in</span> <span style="color:#000">I</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">in</span> <span style="color:#000">W</span><span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#000;font-weight:bold">{</span>

@@ -83,7 +83,7 @@
     &lt;tr&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;child&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;
-        &lt;p&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;a href=&#34;../widget.md&#34;&gt;&lt;b&gt;Server&lt;/b&gt;&lt;/a&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/p&gt;
+        &lt;p&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;a href=&#34;../widget&#34;&gt;&lt;b&gt;Server&lt;/b&gt;&lt;/a&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/p&gt;
         &lt;p&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;a href=&#34;https://docs.usebeagle.io/api/widget&#34;&gt;&lt;b&gt;DrivenComponent&lt;/b&gt;&lt;/a&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/p&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;&amp;#x2713;&lt;/td&gt;
@@ -165,7 +165,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;initialState&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;./&#34;&gt;&lt;strong&gt;ServerDrivenComponent&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;.././&#34;&gt;&lt;strong&gt;ServerDrivenComponent&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;✓&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Server-driven component that is showed when there is an asynchronous request being done.&lt;/td&gt;
 &lt;/tr&gt;

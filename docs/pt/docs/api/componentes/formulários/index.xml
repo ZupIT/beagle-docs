@@ -27,7 +27,7 @@
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 
-Esse componente foi &lt;strong&gt;depreciado&lt;/strong&gt;! É recomendado usar o &lt;a href=&#34;simple-form.md&#34;&gt;&lt;strong&gt;Simple Form&lt;/strong&gt;&lt;/a&gt;.
+Esse componente foi &lt;strong&gt;depreciado&lt;/strong&gt;! É recomendado usar o &lt;a href=&#34;simple-form&#34;&gt;&lt;strong&gt;Simple Form&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;p&gt;O componente representa uma maneira de compor entradas do usuário e enviar esses valores ao seu backend.&lt;/p&gt;
@@ -168,11 +168,11 @@ Esse componente foi &lt;strong&gt;depreciado&lt;/strong&gt;! É recomendado usar
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Para mais informações sobre esse componente vá até os detalhes do &lt;a href=&#34;../ui/input.md&#34;&gt;TextInput&lt;/a&gt;.
+Para mais informações sobre esse componente vá até os detalhes do &lt;a href=&#34;../../../../../ui/input&#34;&gt;TextInput&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;h4 id=&#34;onchange&#34;&gt;OnChange&lt;/h4&gt;
-&lt;p&gt;Essa função é parte do componente Text Input e observa as modificações feitas dentro do seu campo, ou seja, sempre que o valor for modificado, algo for digitado, apagado, etc, essa função é chamada e ativa uma &lt;strong&gt;lista&lt;/strong&gt; de outras &lt;a href=&#34;../../acoes/&#34;&gt;&lt;strong&gt;ações&lt;/strong&gt;&lt;/a&gt; para acontecer sempre que o valor mudar. É nessa lista que adicionamos uma ação &lt;a href=&#34;../../acoes/setcontext.md&#34;&gt;SetContext&lt;/a&gt; para definir o valor do &lt;a href=&#34;../../contexto/&#34;&gt;Contexto&lt;/a&gt; do formulário e atualizar os valores que são mostrados no campo.&lt;/p&gt;
+&lt;p&gt;Essa função é parte do componente Text Input e observa as modificações feitas dentro do seu campo, ou seja, sempre que o valor for modificado, algo for digitado, apagado, etc, essa função é chamada e ativa uma &lt;strong&gt;lista&lt;/strong&gt; de outras &lt;a href=&#34;../../../../../acoes/&#34;&gt;&lt;strong&gt;ações&lt;/strong&gt;&lt;/a&gt; para acontecer sempre que o valor mudar. É nessa lista que adicionamos uma ação &lt;a href=&#34;../../../../../acoes/setcontext&#34;&gt;SetContext&lt;/a&gt; para definir o valor do &lt;a href=&#34;../../../../../contexto/&#34;&gt;Contexto&lt;/a&gt; do formulário e atualizar os valores que são mostrados no campo.&lt;/p&gt;
 &lt;p&gt;Veja abaixo como implementamos o nosso &lt;code&gt;SimpleForm&lt;/code&gt;&lt;/p&gt;
 &lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t150&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t150-0&#34; role=&#34;tab&#34; aria-controls=&#34;t150-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
 	  
@@ -243,9 +243,9 @@ Para mais informações sobre esse componente vá até os detalhes do &lt;a href
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h3 id=&#34;onsubmit&#34;&gt;onSubmit&lt;/h3&gt;
-&lt;p&gt;É uma função do SimpleForm que executa uma lista de ações. Ele é chamdo quando o formuário for submetido&lt;/p&gt;
-&lt;p&gt;Para submeter um formulário é preciso utilizar a ação SubmitForm e para chama-la basta somente implementa-la em um &lt;a href=&#34;../ui/button.md&#34;&gt;Botão&lt;/a&gt; que seja parte do SimpleForm, ou seja, que esteja em sua lista de filhos.&lt;/p&gt;
-&lt;p&gt;Ao clicar nesse botão, o onSubmit é ativados e a lista de ações será executada. É essa lista de ações que definirá o que deve acontecer com as informações so formulario, se serão enviadas para um backend (através da ação &lt;a href=&#34;../../acoes/sendrequest.md&#34;&gt;sendRequest&lt;/a&gt;), etc&lt;/p&gt;
+&lt;p&gt;É uma função do SimpleForm que executa uma lista de ações. Ele é cho quando o formuário for submetido&lt;/p&gt;
+&lt;p&gt;Para submeter um formulário é preciso utilizar a ação SubmitForm e para chama-la basta somente implementa-la em um &lt;a href=&#34;../../../ui/button&#34;&gt;Botão&lt;/a&gt; que seja parte do SimpleForm, ou seja, que esteja em sua lista de filhos.&lt;/p&gt;
+&lt;p&gt;Ao clicar nesse botão, o onSubmit é ativados e a lista de ações será executada. É essa lista de ações que definirá o que deve acontecer com as informações so formulario, se serão enviadas para um backend (através da ação &lt;a href=&#34;../../../acoes/sendrequest&#34;&gt;sendRequest&lt;/a&gt;), etc&lt;/p&gt;
 &lt;h3 id=&#34;-teste-esse-componente-no-web-playgroundhttpsbeagle-playgroundnetlifyappdemodefault-componentssimpleformjson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/simpleform.json&#34;&gt;Teste esse componente no Web Playground&lt;/a&gt;&lt;/h3&gt;
 
       </description>

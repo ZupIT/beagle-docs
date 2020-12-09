@@ -110,7 +110,7 @@ Veja o processo de renderização do Beagle Web:"/>
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -142,7 +142,7 @@ Veja o processo de renderização do Beagle Web:"/>
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -2090,7 +2090,7 @@ Veja o processo de renderização do Beagle Web:"/>
 As features descritas aqui, estão disponíveis nas versões a partir de 1.2.0.
 </div>
 
-<p>Para entender melhor sobre renderização, recomendamos a leitura da seção <a href="estrutura-de-dados.md"><strong>estrutura de dados</strong></a>.</p>
+<p>Para entender melhor sobre renderização, recomendamos a leitura da seção <a href="estrutura-de-dados"><strong>estrutura de dados</strong></a>.</p>
 <p>Cada biblioteca do Beagle Web possui um processo definido de como busca, processa e renderiza a view. Há uma ordem que deve ser sempre respeitada e pontos de extensão (<a href="https://pt-br.reactjs.org/docs/hooks-overview.html"><strong>hooks</strong></a>), onde você pode executar seus códigos (lifecycles).</p>
 <p>Veja o processo de renderização do Beagle Web:</p>
 <p><img src="/docs-beagle/beagle-view.png" alt=""></p>
@@ -2395,7 +2395,7 @@ class Table {
 </ul>
 <p>Esse lifecycle pode ser usado para rodar o código necessário para que a view seja renderizada e não requer ações, contexto, expressões e estilos, pois já foram processados.</p>
 <h4 id="exemplos-de-uso-2">Exemplos de uso</h4>
-<p>Contextos são definidos, referenciados e manipulados no JSON da view. Mas, se você quiser acessar os dados da aplicação o Beagle oferece uma funcionalidade chamada <a href="../../../../api/contexto-global.md"><strong>Contexto Global</strong></a>, que é possivel lidar com esse cenário. Se não tivesse essa função, o lifecycle AfterViewSnapshot também consegue lidar com isso.</p>
+<p>Contextos são definidos, referenciados e manipulados no JSON da view. Mas, se você quiser acessar os dados da aplicação o Beagle oferece uma funcionalidade chamada <a href="../../../../../api/contexto-global"><strong>Contexto Global</strong></a>, que é possivel lidar com esse cenário. Se não tivesse essa função, o lifecycle AfterViewSnapshot também consegue lidar com isso.</p>
 <p>Um exemplo, se você tem uma aplicação financeira e quer saber o balanço do usuário. Você deve garantir que cada haja a renderização de cada valor recente.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">{
   &#34;_beagleComponent_&#34;: &#34;container&#34;,
@@ -2528,7 +2528,7 @@ const config = {
 </code></pre></div><h2 id="the-renderer-api">The Renderer API</h2>
 <p>Para controlar o processo de renderização, o Beagle permite você gerenciar quando uma nova renderização é feita na árvore do Beagle  View. Você pode ter um componente que quando é clicado muda a árvore atual, para que um novo componente seja adicionado ou uma propriedade seja modificada.</p>
 <p>Um cenário comum é quando você cria uma ação que muda a árvore atual, por exemplo, uma ação addChildren, quando executada deve ir a árvore atual e adicionar o filho ao componente com o id dado. Para fazer isso, é preciso ter uma forma de obter a árvore atual, modificá-la e avisar ao Beagle View para renderizar de novo.</p>
-<p>A renderização pode ser feita em dois processos: a completa e a parcial. A primeira executa todos <a href="renderizacao.md#processo-para-renderizar-uma-view"><strong>os passos da lista no início dessa página</strong></a> e a segunda executa apenas o view snapshot e os passos 9 ao 18 da mesma lista.</p>
+<p>A renderização pode ser feita em dois processos: a completa e a parcial. A primeira executa todos <a href="renderizacao#processo-para-renderizar-uma-view"><strong>os passos da lista no início dessa página</strong></a> e a segunda executa apenas o view snapshot e os passos 9 ao 18 da mesma lista.</p>
 <h3 id="acessando-o-renderer">Acessando o Renderer</h3>
 <p>Cada Beagle View possui seu renderizador, para acessá-lo, você deve chamar o <code>beagleView.getRenderer()</code>.</p>
 <p>Veja os exemplos de como chegar ao renderizador:</p>
@@ -2746,7 +2746,7 @@ export class ListView extends BeagleComponent {
   </tbody>
 </table>
 <h2 id="atualizando-a-view-com-o-resultado-da-requisição">Atualizando a view com o resultado da requisição</h2>
-<p>Caso você precisa atualizar a view atual com a árvore que vem do backend, você deve usar o <a href="https://github.com/ZupIT/beagle-web-core/blob/master/docs/beagle-view.md#Fetching-a-view"><strong>método fetch do <code>BeagleView</code></strong></a>. Isso irá internamente usar todo o mecanismo de cache do Beagle e também a parte de renderização.</p>
+<p>Caso você precisa atualizar a view atual com a árvore que vem do backend, você deve usar o <a href="https://github.com/ZupIT/beagle-web-core/blob/master/docs/beagle-view#Fetching-a-view"><strong>método fetch do <code>BeagleView</code></strong></a>. Isso irá internamente usar todo o mecanismo de cache do Beagle e também a parte de renderização.</p>
 
 	
 		<style>

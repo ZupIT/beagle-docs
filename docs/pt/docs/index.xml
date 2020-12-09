@@ -61,9 +61,9 @@ O principal ganho da ferramenta é permitir que as equipes façam &lt;strong&gt;
 &lt;li&gt;&lt;code&gt;&amp;lt;=x.y.z&lt;/code&gt;: designa uma definição existente até a versão x.y.z.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;como-funciona-o-beagle&#34;&gt;Como funciona o Beagle?&lt;/h2&gt;
-&lt;p&gt;A ferramenta atua como um facilitador do &lt;strong&gt;BFF&lt;/strong&gt; (&lt;a href=&#34;principais-conceitos.md#backend-for-frontend&#34;&gt;&lt;strong&gt;Backend For Frontend&lt;/strong&gt;&lt;/a&gt;)&lt;strong&gt;.&lt;/strong&gt; Isso significa que o Beagle, a partir de uma biblioteca de componentes definidos no &lt;a href=&#34;principais-conceitos.md#design-system&#34;&gt;&lt;strong&gt;Design System&lt;/strong&gt;&lt;/a&gt; da aplicação Android, iOS ou Web, faz a alteração visual e comportamental delas ao retornar um arquivo JSON que indica o que e onde deve ser renderizado cada componente e qual a ação que vão executar.&lt;/p&gt;
+&lt;p&gt;A ferramenta atua como um facilitador do &lt;strong&gt;BFF&lt;/strong&gt; (&lt;a href=&#34;principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;Backend For Frontend&lt;/strong&gt;&lt;/a&gt;) Isso significa que o Beagle, a partir de uma biblioteca de componentes definidos no &lt;a href=&#34;principais-conceitos#design-system&#34;&gt;&lt;strong&gt;Design System&lt;/strong&gt;&lt;/a&gt; da aplicação Android, iOS ou Web, faz a alteração visual e comportamental delas ao retornar um arquivo JSON que indica o que e onde deve ser renderizado cada componente e qual a ação que vão executar.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/beaglemobileback.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;O motivo pelo qual o Beagle consegue fazer essa alteração do frontend a partir do backend é porque sua arquitetura está estruturada em &lt;a href=&#34;principais-conceitos.md#server-driven-ui&#34;&gt;&lt;strong&gt;Server-Driven UI&lt;/strong&gt;&lt;/a&gt;, onde o BFF constrói os dados, componentes e ações presentes na tela de forma declarativa e os encaminha no formato JSON, enquanto o front o desserializa, renderiza os componentes visuais de forma nativa além de executar e atribuir as ações presentes em cada um deles.&lt;/p&gt;
+&lt;p&gt;O motivo pelo qual o Beagle consegue fazer essa alteração do frontend a partir do backend é porque sua arquitetura está estruturada em &lt;a href=&#34;principais-conceitos#server-driven-ui&#34;&gt;&lt;strong&gt;Server-Driven UI&lt;/strong&gt;&lt;/a&gt;, onde o BFF constrói os dados, componentes e ações presentes na tela de forma declarativa e os encaminha no formato JSON, enquanto o front o desserializa, renderiza os componentes visuais de forma nativa além de executar e atribuir as ações presentes em cada um deles.&lt;/p&gt;
 &lt;h3 id=&#34;pilares-do-beagle&#34;&gt;Pilares do Beagle&lt;/h3&gt;
 &lt;p&gt;Por se tratar de uma ferramenta pautada em Server-Driven UI, os objetos JSON configurados para rodar na sua aplicação podem ser divididos em 3 pilares básicos:&lt;/p&gt;
 &lt;ul&gt;
@@ -188,8 +188,8 @@ Lembre de sempre verificar se você está usando a versão mais recente do Beagl
 &lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos Passos&lt;/h2&gt;
 &lt;p&gt;Nesta seção, você fez a &lt;strong&gt;instalação inicial&lt;/strong&gt; do Beagle na sua aplicação!&lt;br&gt;
 Para continuar a configurar o Beagle:&lt;/p&gt;
-&lt;p&gt;👉Vá para as &lt;a href=&#34;../usando-beagle/android.md&#34;&gt;&lt;strong&gt;configurações iniciais&lt;/strong&gt; &lt;/a&gt;para habilitar uso do Beagle no seu projeto Android&lt;/p&gt;
-&lt;p&gt;👉 Se quiser ir direto para prática, acesse nosso &lt;a href=&#34;../criando-projeto-do-zero/case-android/&#34;&gt;&lt;strong&gt;tutorial para criar um projeto do zero&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;👉Vá para as &lt;a href=&#34;../../../usando-beagle/android&#34;&gt;&lt;strong&gt;configurações iniciais&lt;/strong&gt; &lt;/a&gt;para habilitar uso do Beagle no seu projeto Android&lt;/p&gt;
+&lt;p&gt;👉 Se quiser ir direto para prática, acesse nosso &lt;a href=&#34;../../criando-projeto-do-zero/case-android/&#34;&gt;&lt;strong&gt;tutorial para criar um projeto do zero&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -212,7 +212,7 @@ Para continuar a configurar o Beagle:&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;Swift 5.0+&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;gerenciamento-de-dependências&#34;&gt;&lt;strong&gt;Gerenciamento de dependências&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;Hoje o Beagle está disponível para integração através do &lt;a href=&#34;https://github.com/Carthage/Carthage&#34;&gt;&lt;strong&gt;Carthage&lt;/strong&gt;&lt;/a&gt; e &lt;a href=&#34;https://cocoapods.org&#34;&gt;&lt;strong&gt;CocoaPods&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Hoje o Beagle está disponível para integração através do &lt;a href=&#34;https://github.com/Carthage/Carthage&#34;&gt;&lt;strong&gt;Carthage&lt;/strong&gt;&lt;/a&gt; e &lt;a href=&#34;https://cocoapods.org&#34;&gt;&lt;strong&gt;CocoaPods&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
@@ -257,7 +257,7 @@ Depois de uma release importante, podemos lançar algumas versões com bug fixes
 &lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos Passos&lt;/h2&gt;
 &lt;p&gt;Nesta seção, você fez a &lt;strong&gt;instalação inicial&lt;/strong&gt; do Beagle na sua aplicação!&lt;br&gt;
 Para continuar a configurar o Beagle:&lt;/p&gt;
-&lt;p&gt;👉Para continuar conhecendo o Beagle, e testar se deu tudo certo com a instalação, vá para as &lt;strong&gt;configurações iniciais&lt;/strong&gt; e &lt;a href=&#34;../usando-beagle/ios.md&#34;&gt;&lt;strong&gt;crie seu primeiro Hello Beagle!&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;👉Para continuar conhecendo o Beagle, e testar se deu tudo certo com a instalação, vá para as &lt;strong&gt;configurações iniciais&lt;/strong&gt; e &lt;a href=&#34;../../usando-beagle/ios&#34;&gt;&lt;strong&gt;crie seu primeiro Hello Beagle!&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;👉 Se quiser ir direto para prática, acesse nosso&lt;a href=&#34;../criando-projeto-do-zero/case-ios/&#34;&gt; &lt;strong&gt;tutorial para criar um projeto do zero&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
       </description>
@@ -276,8 +276,8 @@ Para continuar a configurar o Beagle:&lt;/p&gt;
 &lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
 &lt;p&gt;Ao contrário das configurações para aplicações mobile, o Beagle para Web não exige requisitos prévios. Basta apenas seguir com os procedimentos de instalação de acordo com o framework que estiver utilizando:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;beagle-web.md#angular&#34;&gt;&lt;strong&gt;Angular&lt;/strong&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;beagle-web.md#react&#34;&gt;&lt;strong&gt;React&lt;/strong&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;beagle-web#angular&#34;&gt;&lt;strong&gt;Angular&lt;/strong&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;beagle-web#react&#34;&gt;&lt;strong&gt;React&lt;/strong&gt; &lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;angular&#34;&gt;Angular&lt;/h2&gt;
 &lt;p&gt;Versão atual do Beagle Angular:&lt;a href=&#34;https://github.com/ZupIT/beagle-web-angular&#34;&gt;&lt;img src=&#34;https://img.shields.io/npm/v/@zup-it/beagle-angular?logo=Angular&#34; alt=&#34;badge&#34;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -297,7 +297,7 @@ Para continuar a configurar o Beagle:&lt;/p&gt;
 
 &lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
 
-Parabéns, a sua biblioteca está instalada! Veja agora &lt;a href=&#34;../usando-beagle/web/angular.md&#34;&gt;&lt;strong&gt;como usar o Beagle no Angular&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;
+Parabéns, a sua biblioteca está instalada! Veja agora &lt;a href=&#34;../../../../usando-beagle/web/angular&#34;&gt;&lt;strong&gt;como usar o Beagle no Angular&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;react&#34;&gt;React&lt;/h2&gt;
@@ -312,14 +312,14 @@ Parabéns, a sua biblioteca está instalada! Veja agora &lt;a href=&#34;../usand
 
 &lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
 
-Parabéns, a sua biblioteca está instalada! Veja agora &lt;a href=&#34;../usando-beagle/web/react.md&#34;&gt;&lt;strong&gt;como usar Beagle no React.&lt;/strong&gt;&lt;/a&gt;
+Parabéns, a sua biblioteca está instalada! Veja agora &lt;a href=&#34;../../../usando-beagle/web/react&#34;&gt;&lt;strong&gt;como usar Beagle no React.&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos Passos&lt;/h2&gt;
 &lt;p&gt;Nesta seção, você fez a &lt;strong&gt;instalação inicial&lt;/strong&gt; do Beagle na sua aplicação!&lt;br&gt;
 Para continuar a configurar o Beagle:&lt;/p&gt;
-&lt;p&gt;👉Vá para as &lt;a href=&#34;../usando-beagle/web/&#34;&gt;&lt;strong&gt;configurações iniciais&lt;/strong&gt;&lt;/a&gt; para habilitar uso do Beagle no seu projeto Web&lt;/p&gt;
-&lt;p&gt;👉 Se quiser ir direto para prática, acesse nosso&lt;a href=&#34;../criando-projeto-do-zero/case-web.md&#34;&gt; &lt;strong&gt;tutorial para criar um projeto do zero&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;👉Vá para as &lt;a href=&#34;../../usando-beagle/web/&#34;&gt;&lt;strong&gt;configurações iniciais&lt;/strong&gt;&lt;/a&gt; para habilitar uso do Beagle no seu projeto Web&lt;/p&gt;
+&lt;p&gt;👉 Se quiser ir direto para prática, acesse nosso&lt;a href=&#34;../criando-projeto-do-zero/case-web&#34;&gt; &lt;strong&gt;tutorial para criar um projeto do zero&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -339,7 +339,7 @@ Para continuar a configurar o Beagle:&lt;/p&gt;
 &lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
 
 &lt;p&gt;Antes de iniciar a instalação, é importante você saber que as etapas abaixo são para linguagens da JVM.&lt;/p&gt;
-&lt;p&gt;Para outras linguagens, seu servidor precisa servir o JSON seguindo nossa API. Dê uma olhada também na nossa implementação de &lt;a href=&#34;../../features/cache/&#34;&gt;&lt;strong&gt;cache&lt;/strong&gt;&lt;/a&gt; e em &lt;a href=&#34;../../features/componentes/especificacao-de-componentes-por-plataforma.md&#34;&gt;&lt;strong&gt;mecanismos específicos de cada linguagem&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Para outras linguagens, seu servidor precisa servir o JSON seguindo nossa API. Dê uma olhada também na nossa implementação de &lt;a href=&#34;../../../../../../../../features/cache/&#34;&gt;&lt;strong&gt;cache&lt;/strong&gt;&lt;/a&gt; e em &lt;a href=&#34;../../../../../../../../features/componentes/especificacao-de-componentes-por-plataforma&#34;&gt;&lt;strong&gt;mecanismos específicos de cada linguagem&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;/div&gt;
 
@@ -358,7 +358,7 @@ Para continuar a configurar o Beagle:&lt;/p&gt;
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 
-Se o seu time trabalha com microsserviços usando outros frameworks, acesse o &lt;a href=&#34;../../features/customizacao/beagle-para-backend/&#34;&gt;&lt;strong&gt;framework do Beagle&lt;/strong&gt;&lt;/a&gt;.
+Se o seu time trabalha com microsserviços usando outros frameworks, acesse o &lt;a href=&#34;../../../../../../../features/customizacao/beagle-para-backend/&#34;&gt;&lt;strong&gt;framework do Beagle&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;p&gt;Para uma configuração simples, você pode escolher entre &lt;strong&gt;2 modelos de frameworks&lt;/strong&gt; para criar seu BFF:&lt;/p&gt;
@@ -473,7 +473,7 @@ Se o seu time trabalha com microsserviços usando outros frameworks, acesse o &l
 &lt;p&gt;Lembre de sempre verificar se você está usando a versão mais recente do Beagle. Para saber disso, basta passar o mouse por cima do número da versão. Depois disso, sincronize com sua máquina.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Parabéns, a configuração inicial está pronta para uso!&lt;/p&gt;
-&lt;p&gt;Você pode conferir um &lt;strong&gt;exemplo prático&lt;/strong&gt; de tela ou componente Server-Driven &lt;a href=&#34;../usando-beagle/backend.md&#34;&gt;&lt;strong&gt;para testar o BFF&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Você pode conferir um &lt;strong&gt;exemplo prático&lt;/strong&gt; de tela ou componente Server-Driven &lt;a href=&#34;../../../../../../../../../../usando-beagle/backend&#34;&gt;&lt;strong&gt;para testar o BFF&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
 &lt;p&gt;O Spring Boot tem um problema conhecido envolvendo seu &lt;code&gt;WebMvcConfigurationSupport&lt;/code&gt;. Sua presença substitui outras configurações do Jackson, incluindo a do &lt;code&gt;Spring Starter&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Caso haja algum em seu projeto, sugerimos substituí-lo por&lt;code&gt;WebMvcConfigurer.&lt;/code&gt;&lt;/p&gt;
@@ -488,12 +488,12 @@ Se o seu time trabalha com microsserviços usando outros frameworks, acesse o &l
 Pronto, a configuração inicial está pronta para uso!
 &lt;/div&gt;
 
-&lt;p&gt;Você pode conferir um &lt;strong&gt;exemplo prático&lt;/strong&gt; de &lt;a href=&#34;../usando-beagle/backend.md&#34;&gt;&lt;strong&gt;como testar o Beagle no Backend&lt;/strong&gt;&lt;/a&gt; ou componente Server-Driven para testar o BFF.&lt;/p&gt;
+&lt;p&gt;Você pode conferir um &lt;strong&gt;exemplo prático&lt;/strong&gt; de &lt;a href=&#34;../usando-beagle/backend&#34;&gt;&lt;strong&gt;como testar o Beagle no Backend&lt;/strong&gt;&lt;/a&gt; ou componente Server-Driven para testar o BFF.&lt;/p&gt;
 &lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos Passos&lt;/h2&gt;
 &lt;p&gt;Nesta seção, você fez a &lt;strong&gt;instalação inicial&lt;/strong&gt; do Beagle na sua aplicação!&lt;br&gt;
 Para continuar a configurar o Beagle:&lt;/p&gt;
-&lt;p&gt;👉Vá para as &lt;a href=&#34;../usando-beagle/backend.md&#34;&gt;&lt;strong&gt;configurações iniciais&lt;/strong&gt;&lt;/a&gt; para habilitar uso do Beagle no seu projeto Backend&lt;/p&gt;
-&lt;p&gt;👉 Se quiser ir direto para prática, acesse nosso &lt;a href=&#34;../criando-projeto-do-zero/case-backend.md&#34;&gt;&lt;strong&gt;tutorial para criar um projeto do zero&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;👉Vá para as &lt;a href=&#34;../usando-beagle/backend&#34;&gt;&lt;strong&gt;configurações iniciais&lt;/strong&gt;&lt;/a&gt; para habilitar uso do Beagle no seu projeto Backend&lt;/p&gt;
+&lt;p&gt;👉 Se quiser ir direto para prática, acesse nosso &lt;a href=&#34;../../criando-projeto-do-zero/case-backend&#34;&gt;&lt;strong&gt;tutorial para criar um projeto do zero&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -609,7 +609,7 @@ Faça a configuração das classes com bastante atenção, pois se você anotá-
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Você pode criar o BeagleActivity agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-la. Para saber mais, confira a seção sobre&lt;a href=&#34;../../features/customizacao/beagle-para-android/beagle-activity-customizada.md&#34;&gt; &lt;strong&gt;Beagle Activity Customizada&lt;/strong&gt;&lt;/a&gt;.
+Você pode criar o BeagleActivity agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-la. Para saber mais, confira a seção sobre&lt;a href=&#34;../../features/customizacao/beagle-para-android/beagle-activity-customizada&#34;&gt; &lt;strong&gt;Beagle Activity Customizada&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;h3 id=&#34;passo-4-iniciar-o-beagle-e-o-design-system&#34;&gt;&lt;strong&gt;Passo 4: Iniciar o Beagle e o Design System&lt;/strong&gt;&lt;/h3&gt;
@@ -621,7 +621,7 @@ Você pode criar o BeagleActivity agora, mas neste momento é possível prossegu
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Você pode criar o Design System agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-lo. Para saber mais, confira a seção sobre &lt;a href=&#34;../criando-projeto-do-zero/case-android/design-system-com-beagle-android.md&#34;&gt;&lt;strong&gt;Design System com Beagle para Android&lt;/strong&gt;&lt;/a&gt;.
+Você pode criar o Design System agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-lo. Para saber mais, confira a seção sobre &lt;a href=&#34;../../../criando-projeto-do-zero/case-android/design-system-com-beagle-android&#34;&gt;&lt;strong&gt;Design System com Beagle para Android&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;h3 id=&#34;passo-5-criar-o-beaglesetup&#34;&gt;&lt;strong&gt;Passo 5: Criar o BeagleSetup&lt;/strong&gt;&lt;/h3&gt;
@@ -1025,7 +1025,7 @@ Parabéns, você criou sua primeira tela com Beagle!
 &lt;p&gt;Neste tutorial, focamos em uma configuração de tela simples para você entender o processo, na prática, sem se preocupar com uma hierarquia de telas complexas. Mas, claro, você pode fazer bem mais no seu projeto com o Beagle!&lt;/p&gt;
 &lt;h2 id=&#34;informação-adicional&#34;&gt;Informação adicional&lt;/h2&gt;
 &lt;p&gt;Antes de usar o Beagle, fique atento a &lt;strong&gt;configuração da build de release e o ProGuard.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Mesmo não sendo necessário neste momento, é bom ter em mente que você precisará &lt;a href=&#34;../../features/customizacao/beagle-para-android/configuracao-do-proguard.md&#34;&gt;&lt;strong&gt;configurar o ProGuard&lt;/strong&gt;&lt;/a&gt; para ativar o ofuscamento do seu código quando estiver publicando releases.&lt;/p&gt;
+&lt;p&gt;Mesmo não sendo necessário neste momento, é bom ter em mente que você precisará &lt;a href=&#34;../../../features/customizacao/beagle-para-android/configuracao-do-proguard&#34;&gt;&lt;strong&gt;configurar o ProGuard&lt;/strong&gt;&lt;/a&gt; para ativar o ofuscamento do seu código quando estiver publicando releases.&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
@@ -1053,13 +1053,13 @@ As classes anotadas como &lt;code&gt;BeagleComponent&lt;/code&gt; e &lt;code&gt;
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 
-Veja como &lt;a href=&#34;../instalando-beagle/&#34;&gt;&lt;strong&gt;instalar o Beagle&lt;/strong&gt;&lt;/a&gt; caso ainda não tenha concluído esta etapa.
+Veja como &lt;a href=&#34;../../../../../../instalando-beagle/&#34;&gt;&lt;strong&gt;instalar o Beagle&lt;/strong&gt;&lt;/a&gt; caso ainda não tenha concluído esta etapa.
 &lt;/div&gt;
 
 &lt;p&gt;Atualmente, existem dois tipos de abordagens para a renderização de telas com o Beagle: &lt;strong&gt;remota&lt;/strong&gt; e &lt;strong&gt;declarativa.&lt;/strong&gt;&lt;/p&gt;
 &lt;h4 id=&#34;renderização-remota&#34;&gt;Renderização Remota&lt;/h4&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Principal abordagem usada no Beagle por ser fundamentada no conceito de &lt;a href=&#34;../../principais-conceitos.md&#34;&gt;&lt;strong&gt;server-driven UI&lt;/strong&gt;&lt;/a&gt;. Ela permite que você construa layouts dinamicamente, consumindo as informações fornecidas por um &lt;a href=&#34;../../principais-conceitos.md&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;, por meio de uma URL remota.&lt;/p&gt;
+&lt;p&gt;Principal abordagem usada no Beagle por ser fundamentada no conceito de &lt;a href=&#34;../../../../../../../../../../principais-conceitos&#34;&gt;&lt;strong&gt;server-driven UI&lt;/strong&gt;&lt;/a&gt;. Ela permite que você construa layouts dinamicamente, consumindo as informações fornecidas por um &lt;a href=&#34;../../principais-conceitos&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;, por meio de uma URL remota.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;renderização-declarativa&#34;&gt;Renderização Declarativa&lt;/h4&gt;
 &lt;blockquote&gt;
@@ -1093,7 +1093,7 @@ Veja como &lt;a href=&#34;../instalando-beagle/&#34;&gt;&lt;strong&gt;instalar o
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Note que a &lt;strong&gt;&lt;code&gt;Screen&lt;/code&gt;&lt;/strong&gt; está sendo construída utilizando &lt;strong&gt;&lt;code&gt;Flex&lt;/code&gt;&lt;/strong&gt;. Para entender melhor esses componentes e suas propriedades, vá para a seção &lt;a href=&#34;../../features/posicionamento-de-componentes/&#34;&gt;&lt;strong&gt;posicionamento de componentes&lt;/strong&gt;&lt;/a&gt;.
+Note que a &lt;strong&gt;&lt;code&gt;Screen&lt;/code&gt;&lt;/strong&gt; está sendo construída utilizando &lt;strong&gt;&lt;code&gt;Flex&lt;/code&gt;&lt;/strong&gt;. Para entender melhor esses componentes e suas propriedades, vá para a seção &lt;a href=&#34;../../../../../features/posicionamento-de-componentes/&#34;&gt;&lt;strong&gt;posicionamento de componentes&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;h3 id=&#34;passo-2-instanciar-o-beaglescreenviewcontroller&#34;&gt;Passo 2: Instanciar o &lt;strong&gt;BeagleScreenViewController&lt;/strong&gt;&lt;/h3&gt;
@@ -1108,7 +1108,7 @@ Note que a &lt;strong&gt;&lt;code&gt;Screen&lt;/code&gt;&lt;/strong&gt; está se
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Caso queira utilizar o tipo**&lt;code&gt;remote&lt;/code&gt;**, veja &lt;a href=&#34;../../tutoriais/exibindo-uma-tela.md&#34;&gt;&lt;strong&gt;como exibir uma tela Server-Driven UI&lt;/strong&gt;&lt;/a&gt;.
+Caso queira utilizar o tipo**&lt;code&gt;remote&lt;/code&gt;**, veja &lt;a href=&#34;../../../../tutoriais/exibindo-uma-tela&#34;&gt;&lt;strong&gt;como exibir uma tela Server-Driven UI&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;p&gt;Feito isso, basta apresentá-la onde preferir.&lt;/p&gt;
@@ -1132,7 +1132,7 @@ Não esqueça de adicionar**&lt;code&gt;import Beagle&lt;/code&gt;**.
 
 &lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
 &lt;p&gt;Nesta seção, você viu como criar sua primeira tela declarativa utilizando o &lt;strong&gt;Beagle&lt;/strong&gt;, em sua forma mais simples, sem entrar no conceito de server-driven UI.&lt;/p&gt;
-&lt;p&gt;👉Para entender melhor &lt;strong&gt;como configurar o Beagle&lt;/strong&gt; e utilizá-lo aplicando o conceito de server-driven UI, veja como &lt;a href=&#34;../criando-projeto-do-zero/case-ios/&#34;&gt;&lt;strong&gt;criar um projeto iOS do zero&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;👉Para entender melhor &lt;strong&gt;como configurar o Beagle&lt;/strong&gt; e utilizá-lo aplicando o conceito de server-driven UI, veja como &lt;a href=&#34;../../criando-projeto-do-zero/case-ios/&#34;&gt;&lt;strong&gt;criar um projeto iOS do zero&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
@@ -1412,7 +1412,7 @@ Parabéns, você criou sua primeira tela com Beagle!
         
         &lt;hr&gt;
 &lt;h2 id=&#34;configurações-de-uso&#34;&gt;Configurações de uso&lt;/h2&gt;
-&lt;p&gt;Quando você finalizar a &lt;a href=&#34;../instalando-beagle/backend.md&#34;&gt;&lt;strong&gt;instalação do Beagle&lt;/strong&gt;&lt;/a&gt;, seu BFF estará com a configuração padrão de uso.&lt;/p&gt;
+&lt;p&gt;Quando você finalizar a &lt;a href=&#34;../../instalando-beagle/backend&#34;&gt;&lt;strong&gt;instalação do Beagle&lt;/strong&gt;&lt;/a&gt;, seu BFF estará com a configuração padrão de uso.&lt;/p&gt;
 &lt;h3 id=&#34;cors&#34;&gt;CORS&lt;/h3&gt;
 
 
@@ -1688,7 +1688,7 @@ Use uma configuração permissiva como essa apenas em ambiente local de desenvol
         
         &lt;hr&gt;
 &lt;h2 id=&#34;criando-um-design-system&#34;&gt;&lt;strong&gt;Criando um Design System&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;No exemplo prático da página &amp;ldquo;Criando um projeto com Beagle para Android&amp;rdquo;, você pode conferir como fazer a &lt;a href=&#34;./&#34;&gt;&lt;strong&gt;implementação do Beagle&lt;/strong&gt;&lt;/a&gt; para criar uma tela server-driven simples, com apenas 2 textos: 1 título e 1 parágrafo.&lt;/p&gt;
+&lt;p&gt;No exemplo prático da página &amp;ldquo;Criando um projeto com Beagle para Android&amp;rdquo;, você pode conferir como fazer a &lt;a href=&#34;../../.././&#34;&gt;&lt;strong&gt;implementação do Beagle&lt;/strong&gt;&lt;/a&gt; para criar uma tela server-driven simples, com apenas 2 textos: 1 título e 1 parágrafo.&lt;/p&gt;
 &lt;p&gt;Neste tutorial, a ideia é avançar a partir do &lt;a href=&#34;./#passo-7-exibindo-sua-tela-server-driven&#34;&gt;&lt;strong&gt;projeto anterior&lt;/strong&gt;&lt;/a&gt; para &lt;strong&gt;criar um Design System na sua biblioteca do Beagle&lt;/strong&gt;. Os exemplos que ilustrarão o passo a passo estão nestes &lt;a href=&#34;https://github.com/ZupIT/beagle-examples&#34;&gt;&lt;strong&gt;sample codes&lt;/strong&gt;&lt;/a&gt; que você encontra no nosso repositório.&lt;/p&gt;
 &lt;p&gt;O Design System que iremos configurar vai permitir que você customize alguns componentes do Beagle, como por exemplo:&lt;/p&gt;
 &lt;ul&gt;
@@ -1751,7 +1751,7 @@ Vale reforçar que o design system que criaremos faz parte do projeto que mencio
 &lt;li&gt;O método &lt;strong&gt;&lt;code&gt;inputTextStyle&lt;/code&gt;&lt;/strong&gt; responsavel por aplicar estilo no componente &lt;code&gt;InputText&lt;/code&gt;.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;passo-2-customizar-o-componente&#34;&gt;&lt;strong&gt;Passo 2: Customizar o componente&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Este momento é o ponto em que o ocorre o &lt;a href=&#34;../../../principais-conceitos.md#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;, quando frontend se conecta ao backend.&lt;/p&gt;
+&lt;p&gt;Este momento é o ponto em que o ocorre o &lt;a href=&#34;../../../../../principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;, quando frontend se conecta ao backend.&lt;/p&gt;
 &lt;p&gt;Para isso, você terá de &lt;strong&gt;configurar o frontend do Android e o backend do Intellij&lt;/strong&gt;. Caso não o tenha pronto, é só baixar &lt;a href=&#34;https://github.com/ZupIT/beagle-examples&#34;&gt;&lt;strong&gt;o exemplo de configuração do backend&lt;/strong&gt;&lt;/a&gt; e rodá-lo.&lt;/p&gt;
 &lt;p&gt;Para o nosso backend aqui, criamos uma pagina server-driven com 2 textos, sendo um título e um parágrafo. Ela deve ficar assim quando for renderizada no frontend:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://lh4.googleusercontent.com/Rms7sJWr8_BXtHuaxpxtJwQly1O7qBX79AqhSlrj9TSjTqD_7eqFyavstkbgwQO3BVjoGeVV7W53KTVxUkonTD7R6wYBVhWWqa_tfwDaFBw8AVPu-KLQLcZ0H3A8UDK-X_9JMKyr&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -1800,7 +1800,7 @@ Repita este processo para o outro componente &lt;code&gt;Text&lt;/code&gt; que �
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Caso tenha algum problema, recomendamos que faça o tutorial para &lt;a href=&#34;../../instalando-beagle/backend.md&#34;&gt;&lt;strong&gt;implementar a instalação desse backend.&lt;/strong&gt;&lt;/a&gt;
+Caso tenha algum problema, recomendamos que faça o tutorial para &lt;a href=&#34;../../../instalando-beagle/backend&#34;&gt;&lt;strong&gt;implementar a instalação desse backend.&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;pre&gt;&lt;code&gt; 4. Primeiro, vamos registrar três cores no arquivo color no android. 
@@ -1922,7 +1922,7 @@ Em caso de dúvida, veja aqui &lt;a href=&#34;https://kotlinlang.org/docs/refere
         
         &lt;hr&gt;
 &lt;h2 id=&#34;criando-estilos-para-o-beagle-ios&#34;&gt;&lt;strong&gt;C&lt;/strong&gt;riando estilos para o Beagle iOS&lt;/h2&gt;
-&lt;p&gt;No exemplo prático da página &amp;ldquo;Criando um projeto com Beagle para iOS&amp;rdquo;, você pode conferir como fazer a &lt;a href=&#34;./&#34;&gt;&lt;strong&gt;implementação do Beagle&lt;/strong&gt;&lt;/a&gt; e criar sua primeira tela server-driven.&lt;/p&gt;
+&lt;p&gt;No exemplo prático da página &amp;ldquo;Criando um projeto com Beagle para iOS&amp;rdquo;, você pode conferir como fazer a &lt;a href=&#34;../.././&#34;&gt;&lt;strong&gt;implementação do Beagle&lt;/strong&gt;&lt;/a&gt; e criar sua primeira tela server-driven.&lt;/p&gt;
 &lt;p&gt;Neste tutorial, a ideia é avançar a partir do &lt;a href=&#34;./#passo-3-configurando-o-xcode&#34;&gt;&lt;strong&gt;projeto anterior&lt;/strong&gt;&lt;/a&gt; para &lt;strong&gt;criar um Design System na sua biblioteca do Beagle&lt;/strong&gt;.  Os exemplos que ilustrarão o passo a passo estão nestes&lt;a href=&#34;https://github.com/ZupIT/beagle-examples&#34;&gt; &lt;strong&gt;sample codes&lt;/strong&gt;&lt;/a&gt; que você encontra no nosso repositório.&lt;/p&gt;
 &lt;p&gt;A ideia aqui é configurar alguns estilos no iOS para que você possa customizar componentes como:&lt;/p&gt;
 &lt;ul&gt;
@@ -1944,7 +1944,7 @@ Em caso de dúvida, veja aqui &lt;a href=&#34;https://kotlinlang.org/docs/refere
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;struct&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Styles&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
 
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Essa &lt;code&gt;struct&lt;/code&gt; irá conter todos os estilos que serão acessados pelo Beagle. Aqui, estará listada a lógica que permite ao Beagle aplicar os estilos definidos no iOS a uma &lt;a href=&#34;../../../principais-conceitos.md#server-driven-ui&#34;&gt;&lt;strong&gt;tela server-driven&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Essa &lt;code&gt;struct&lt;/code&gt; irá conter todos os estilos que serão acessados pelo Beagle. Aqui, estará listada a lógica que permite ao Beagle aplicar os estilos definidos no iOS a uma &lt;a href=&#34;../../../../principais-conceitos#server-driven-ui&#34;&gt;&lt;strong&gt;tela server-driven&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;passo-2-criar-um-estilo-para-um-texto&#34;&gt;Passo 2: Criar um estilo para um texto&lt;/h3&gt;
 &lt;p&gt;Uma vez que você gerou seu arquivo, você deve agora criar  função estática para definir e retornar um estilo de texto. Como, no caso deste exemplo, teremos um estilo para título e outro para parágrafo, criaremos duas funções.&lt;/p&gt;
 &lt;p&gt;O retorno desta função irá utilizar a classe &lt;code&gt;BeagleStyle,&lt;/code&gt;que é uma classe interna do Beagle que fica acessível quando você importa a classe &lt;code&gt;beagleUI&lt;/code&gt;.&lt;/p&gt;
@@ -2352,7 +2352,7 @@ export default App;
 &lt;li&gt;IDE Intelij IDE Community&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;passo-1-iniciar-o-projeto-usando-spring-initializr&#34;&gt;Passo 1: Iniciar o projeto usando Spring initializr&lt;/h3&gt;
-&lt;p&gt;O primeiro passo para configurar seu backend é acessar o site do &lt;a href=&#34;https://start.spring.io/&#34;&gt;&lt;strong&gt;Spring&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;br&gt;
+&lt;p&gt;O primeiro passo para configurar seu backend é acessar o site do &lt;a href=&#34;https://start.spring.io/&#34;&gt;&lt;strong&gt;Spring&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;
 Ele criará o projeto &lt;code&gt;Maven&lt;/code&gt; que facilitará a configuração do seu projeto.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://lh5.googleusercontent.com/ZshvFubtunY4x0JWWBLgSmFesUx7G2AVlSrCcS96efc2lJtAakhYJ-zxgDx7CkcCMOC6zedwUAS3ThBpVXfS8jyvieNLgL3ZJIxWnHJFLE77IOXZs3UqOR8TQazINC_enzoO4Y4Q&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Configuração do Spring&lt;/strong&gt;&lt;/p&gt;
@@ -2383,7 +2383,7 @@ Ele criará o projeto &lt;code&gt;Maven&lt;/code&gt; que facilitará a configura
 &lt;p&gt;&lt;img src=&#34;https://lh6.googleusercontent.com/6gOx1UCq-ZUK0yckdUAO2-Jb1YWOjw6kNijGu8-LVPyaDJuYAC2J7DcugsKgFDVqSkhF1RN5zKQ0s47l0ZmFgrq9ln7SPL-isTczLb9h5PQnXhUyWl6S7_QaUyUPGN-SyYVK_AZC&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;configurando-o-beagle&#34;&gt;Configurando o Beagle&lt;/h2&gt;
 &lt;h3 id=&#34;passo-1-configurar-o-projeto&#34;&gt;Passo 1: Configurar o projeto&lt;/h3&gt;
-&lt;p&gt;Como ponto de partida, siga nosso &lt;a href=&#34;../instalando-beagle/backend.md&#34;&gt;&lt;strong&gt;passo a passo para instalar o backend&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Como ponto de partida, siga nosso &lt;a href=&#34;../../../../instalando-beagle/backend&#34;&gt;&lt;strong&gt;passo a passo para instalar o backend&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;passo-2-definir-a-estrutura&#34;&gt;Passo 2: Definir a Estrutura&lt;/h3&gt;
 &lt;p&gt;O segundo passo é criar alguns pacotes para organizar melhor o projeto. Eles serão nomeados: &lt;strong&gt;&lt;code&gt;builder&lt;/code&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;code&gt;service&lt;/code&gt;&lt;/strong&gt; e &lt;strong&gt;&lt;code&gt;controller&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -2542,8 +2542,8 @@ Para que o serviço de backend seja consumido, você deve ter o front-end prepar
 
 &lt;p&gt;Para saber mais sobre como configurar o seu ambiente frontend, veja mais em:&lt;/p&gt;
 &lt;p&gt;👉 Tutorial do Beagle para &lt;a href=&#34;case-android/&#34;&gt;&lt;strong&gt;Android&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;👉Tutorial do Beagle para &lt;a href=&#34;../usando-beagle/ios.md&#34;&gt;&lt;strong&gt;iOS&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;👉Tutorial do Beagle para  &lt;a href=&#34;case-web.md&#34;&gt;&lt;strong&gt;Web&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;👉Tutorial do Beagle para &lt;a href=&#34;../../usando-beagle/ios&#34;&gt;&lt;strong&gt;iOS&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;👉Tutorial do Beagle para  &lt;a href=&#34;case-web&#34;&gt;&lt;strong&gt;Web&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
@@ -2589,7 +2589,7 @@ Para que o serviço de backend seja consumido, você deve ter o front-end prepar
 &lt;div class=&#34;tab-content&#34; id=&#34;t13&#34;&gt;&lt;div id=&#34;t13-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t13-0&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;No Android, o cache é configurado quando implementamos as configurações iniciais do Beagle.&lt;/p&gt;
-&lt;p&gt;Esta implementação acontece dentro da classe que nomeamos &lt;a href=&#34;../../get-started/usando-beagle/android.md#passo-2-criar-uma-classe-beagleconfig&#34;&gt;&lt;strong&gt;AppBeagleConfig&lt;/strong&gt;&lt;/a&gt;, ou seja, dentro da classe de configuração do Beagle.&lt;/p&gt;
+&lt;p&gt;Esta implementação acontece dentro da classe que nomeamos &lt;a href=&#34;../../../../../get-started/usando-beagle/android#passo-2-criar-uma-classe-beagleconfig&#34;&gt;&lt;strong&gt;AppBeagleConfig&lt;/strong&gt;&lt;/a&gt;, ou seja, dentro da classe de configuração do Beagle.&lt;/p&gt;
 &lt;p&gt;O cache, em si, é uma class interna do Beagle na qual podemos definir 3 propriedades representadas pelos atributos:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;enable&lt;/code&gt;&lt;/li&gt;
@@ -2680,7 +2680,7 @@ Para que o serviço de backend seja consumido, você deve ter o front-end prepar
 &lt;/div&gt;
   &lt;div id=&#34;t13-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t13-2&#34;&gt;
 
-&lt;p&gt;&lt;p&gt;No backend, as configurações desta funcionalidade são suportadas apenas para quem utiliza a &lt;a href=&#34;../../get-started/instalando-beagle/backend.md#passo-3-incluindo-requerimentos-adicionais&#34;&gt;&lt;strong&gt;biblioteca starter&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;No backend, as configurações desta funcionalidade são suportadas apenas para quem utiliza a &lt;a href=&#34;../../../../get-started/instalando-beagle/backend#passo-3-incluindo-requerimentos-adicionais&#34;&gt;&lt;strong&gt;biblioteca starter&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;O cache é criado para otimizar a resposta de uma requisição tanto em tamanho quanto em tempo do BFF quando o retorno é igual ao anterior a ela. As entradas nesse cache duram até o servidor ser &amp;ldquo;redeployado&amp;rdquo; ou o cliente ser reinstalado.‌&lt;/p&gt;
 &lt;p&gt;Para realizar a configuração de cache:&lt;/p&gt;
 &lt;ol&gt;
@@ -2982,7 +2982,7 @@ Nos exemplos abaixo, foi utilizada função &lt;code&gt;createText&lt;/code&gt; 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Para saber o Flex Direction, acesse &lt;a href=&#34;https://yogalayout.com/docs/flex-direction/&#34;&gt;&lt;strong&gt;a documentação no Yoga Layout&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;
+Para saber o Flex Direction, acesse &lt;a href=&#34;https://yogalayout.com/docs/flex-direction/&#34;&gt;&lt;strong&gt;a documentação no Yoga Layout&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 
@@ -3091,7 +3091,7 @@ Para saber o Flex Direction, acesse &lt;a href=&#34;https://yogalayout.com/docs/
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Para saber o Grow, acesse &lt;a href=&#34;https://yogalayout.com/docs/flex/&#34;&gt;&lt;strong&gt;a documentação no Yoga Layout&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;
+Para saber o Grow, acesse &lt;a href=&#34;https://yogalayout.com/docs/flex/&#34;&gt;&lt;strong&gt;a documentação no Yoga Layout&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 
@@ -3388,7 +3388,7 @@ Para saber o Grow, acesse &lt;a href=&#34;https://yogalayout.com/docs/flex/&#34;
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Para saber o Justify Content, acesse &lt;a href=&#34;https://yogalayout.com/docs/flex-direction/&#34;&gt;&lt;strong&gt;a documentação no Yoga Layout&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;
+Para saber o Justify Content, acesse &lt;a href=&#34;https://yogalayout.com/docs/flex-direction/&#34;&gt;&lt;strong&gt;a documentação no Yoga Layout&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 
@@ -5099,7 +5099,7 @@ Para saber mais, acesse &lt;a href=&#34;https://yogalayout.com/docs/margins-padd
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h3 id=&#34;top&#34;&gt;&lt;strong&gt;Top&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;É ele quem define um &lt;strong&gt;espaçamento na parte superior&lt;/strong&gt; do elemento. Exemplo:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/NpgSjgVwSjvXjeDz9H3lp6prnTGEOtmdkot_39nx0gYPZa-KXz-YPOKgzZG87V1TS9HYgEDqJtCgmQkXEQpC1dCqQrWDn3wcqWN3HgNK5EPGyCife44lvOUlbgFJ-WhYNFJf4O7K&#34; alt=&#34;A barra preta simulando a propriedade Top.&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/NpgSjgVwSjvXjeDz9H3lp6prnTGEOkot_39nx0gYPZa-KXz-YPOKgzZG87V1TS9HYgEDqJtCgmQkXEQpC1dCqQrWDn3wcqWN3HgNK5EPGyCife44lvOUlbgFJ-WhYNFJf4O7K&#34; alt=&#34;A barra preta simulando a propriedade Top.&#34;&gt;&lt;/p&gt;
 &lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t52&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t52-0&#34; role=&#34;tab&#34; aria-controls=&#34;t52-0&#34; aria-selected=&#34;true&#34;&gt;Kotlin&lt;/a&gt;&lt;/li&gt;
 	  
 		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t52-1&#34; role=&#34;tab&#34; aria-controls=&#34;t52-1&#34;&gt;Swift&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
@@ -5260,7 +5260,7 @@ Para saber mais, acesse &lt;a href=&#34;https://yogalayout.com/docs/margins-padd
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Para saber mais sobre Padding, acesse a &lt;a href=&#34;https://yogalayout.com/docs/margins-paddings-borders&#34;&gt;&lt;strong&gt;documentação do Yoga Layout&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;
+Para saber mais sobre Padding, acesse a &lt;a href=&#34;https://yogalayout.com/docs/margins-paddings-borders&#34;&gt;&lt;strong&gt;documentação do Yoga Layout&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 
@@ -5278,7 +5278,7 @@ Para saber mais sobre Padding, acesse a &lt;a href=&#34;https://yogalayout.com/d
         
         &lt;hr&gt;
 &lt;h2 id=&#34;position&#34;&gt;Position&lt;/h2&gt;
-&lt;p&gt;Esta propriedade determina a posição de um assume em tela e os seus valores &lt;code&gt;top, right, bottom, left&lt;/code&gt; se comportam de acordo com o &lt;a href=&#34;position-type.md&#34;&gt;&lt;strong&gt;Position Type&lt;/strong&gt;&lt;/a&gt; deste elemento.&lt;/p&gt;
+&lt;p&gt;Esta propriedade determina a posição de um assume em tela e os seus valores &lt;code&gt;top, right, bottom, left&lt;/code&gt; se comportam de acordo com o &lt;a href=&#34;position-type&#34;&gt;&lt;strong&gt;Position Type&lt;/strong&gt;&lt;/a&gt; deste elemento.&lt;/p&gt;
 &lt;p&gt;O elemento dentro do Position pode ter diferentes tipos de deslocamento se forem:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Relative:&lt;/strong&gt; os elementos se deslocam em uma direção específica&lt;/li&gt;
@@ -6075,7 +6075,7 @@ Para saber mais sobre Shrink, acesse a &lt;a href=&#34;https://yogalayout.com/do
 &lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/3aoRDnlMNqdnoYlmx60A--Y_Q6I3tGqCZt6CiQDJP53xu4TpwIL4skCdT_tjTTspNjuftf5ikAyKiLxlm4Tcll1kIQ_LhMd9y-PfBKcd69zgPp2MyMPJBHP5sUyQDXmPFTZcGqHM&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;atributos&#34;&gt;&lt;strong&gt;Atributos:&lt;/strong&gt;&lt;/h2&gt;
 &lt;h3 id=&#34;width&#34;&gt;&lt;strong&gt;Width&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Define o &lt;strong&gt;tamanho da largura&lt;/strong&gt; do item**.**&lt;/p&gt;
+&lt;p&gt;Define o &lt;strong&gt;tamanho da largura&lt;/strong&gt; do item&lt;/p&gt;
 &lt;h3 id=&#34;height&#34;&gt;&lt;strong&gt;Height&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;Define o &lt;strong&gt;tamanho da altura&lt;/strong&gt; do item.&lt;/p&gt;
 &lt;h3 id=&#34;maxwidth&#34;&gt;&lt;strong&gt;MaxWidth&lt;/strong&gt;&lt;/h3&gt;
@@ -6297,14 +6297,14 @@ Para saber mais sobre Size, acesse a &lt;a href=&#34;https://yogalayout.com/docs
         
         
         &lt;hr&gt;
-&lt;p&gt;O &lt;code&gt;ContextComponent&lt;/code&gt; é uma interface precisa ser implementada em componentes que usam o &lt;a href=&#34;../../api/contexto/#o-que-e&#34;&gt;&lt;strong&gt;Contexto&lt;/strong&gt;&lt;/a&gt;, porque é onde está o atributo &lt;code&gt;context&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;O &lt;code&gt;ContextComponent&lt;/code&gt; é uma interface precisa ser implementada em componentes que usam o &lt;a href=&#34;../../../../../../../../../api/contexto/#o-que-e&#34;&gt;&lt;strong&gt;Contexto&lt;/strong&gt;&lt;/a&gt;, porque é onde está o atributo &lt;code&gt;context&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;componentes-do-beagle-com-contexto&#34;&gt;Componentes do Beagle com contexto:&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;../../api/componentes/layout/container.md&#34;&gt;&lt;strong&gt;Container&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../api/componentes/formularios/simple-form.md&#34;&gt;&lt;strong&gt;SimpleForm&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../api/componentes/layout/pageview.md&#34;&gt;&lt;strong&gt;PageView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../api/componentes/layout/scrollview.md&#34;&gt;&lt;strong&gt;ScrollView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../api/componentes/ui/tabview.md&#34;&gt;&lt;strong&gt;TabView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../../../../../api/componentes/layout/container&#34;&gt;&lt;strong&gt;Container&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../../../../api/componentes/formularios/simple-form&#34;&gt;&lt;strong&gt;SimpleForm&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../../../api/componentes/layout/pageview&#34;&gt;&lt;strong&gt;PageView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../../api/componentes/layout/scrollview&#34;&gt;&lt;strong&gt;ScrollView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../api/componentes/ui/tabview&#34;&gt;&lt;strong&gt;TabView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;componente-customizado-com-contexto&#34;&gt;Componente customizado com contexto&lt;/h2&gt;
 &lt;p&gt;Segue abaixo um exemplo de componente customizado com o contexto:&lt;/p&gt;
@@ -6339,7 +6339,7 @@ Para saber mais sobre Size, acesse a &lt;a href=&#34;https://yogalayout.com/docs
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 
-Se você quiser criar componentes customizados no iOS, é &lt;strong&gt;necessário registrá-lo&lt;/strong&gt;! Veja como registrar &lt;a href=&#34;../customizacao/beagle-para-ios/widgets-customizados.md#passo-2-registrar-o-widget&#34;&gt;&lt;strong&gt;aqui&lt;/strong&gt;&lt;/a&gt;.
+Se você quiser criar componentes customizados no iOS, é &lt;strong&gt;necessário registrá-lo&lt;/strong&gt;! Veja como registrar &lt;a href=&#34;../../customizacao/beagle-para-ios/widgets-customizados#passo-2-registrar-o-widget&#34;&gt;&lt;strong&gt;aqui&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 
@@ -6484,7 +6484,7 @@ Se você quiser criar componentes customizados no iOS, é &lt;strong&gt;necessá
         
         
         &lt;hr&gt;
-&lt;p&gt;Alguns elementos fornecidos pelo Beagle podem ser mais direcionados à uma plataforma e, talvez, não fazer tanto sentido para outra. Por exemplo, o uso do &lt;a href=&#34;../../api/componentes/layout/scrollview.md&#34;&gt;&lt;strong&gt;ScrollView&lt;/strong&gt;&lt;/a&gt; funciona melhor na plataforma Mobile, mas não é necessário na Web.&lt;/p&gt;
+&lt;p&gt;Alguns elementos fornecidos pelo Beagle podem ser mais direcionados à uma plataforma e, talvez, não fazer tanto sentido para outra. Por exemplo, o uso do &lt;a href=&#34;../../../api/componentes/layout/scrollview&#34;&gt;&lt;strong&gt;ScrollView&lt;/strong&gt;&lt;/a&gt; funciona melhor na plataforma Mobile, mas não é necessário na Web.&lt;/p&gt;
 &lt;p&gt;Isso acontece porque o Beagle possui  a funcionalidade de &lt;strong&gt;Especificação de Plataforma&lt;/strong&gt;, que te permite ter controle de quais elementos são enviados pelo BFF e quais plataformas serão usadas.&lt;/p&gt;
 &lt;h3 id=&#34;como-funciona&#34;&gt;Como funciona?&lt;/h3&gt;
 &lt;p&gt;O Beagle faz uso de um cabeçalho personalizado, &lt;code&gt;beagle-platform&lt;/code&gt;&lt;strong&gt;,&lt;/strong&gt; com os possíveis valores:&lt;/p&gt;
@@ -6644,7 +6644,7 @@ Recomendamos o uso dessa classe, pois ela implementa os &lt;code&gt;onActionStar
         
         &lt;hr&gt;
 &lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
-&lt;p&gt;No Beagle, a ferramenta de &lt;a href=&#34;../../navegacao-de-telas.md&#34;&gt;&lt;strong&gt;navegação entre telas&lt;/strong&gt;&lt;/a&gt; permite que você configure ações como navegar para uma nova tela ou fechar uma tela.&lt;/p&gt;
+&lt;p&gt;No Beagle, a ferramenta de &lt;a href=&#34;../../../../../../../navegacao-de-telas&#34;&gt;&lt;strong&gt;navegação entre telas&lt;/strong&gt;&lt;/a&gt; permite que você configure ações como navegar para uma nova tela ou fechar uma tela.&lt;/p&gt;
 &lt;p&gt;A questão é que, além de realizar estas configurações, você pode também &lt;strong&gt;customizar a navegação&lt;/strong&gt; da sua aplicação.&lt;/p&gt;
 &lt;p&gt;De modo geral, existem duas opções de customização:&lt;/p&gt;
 &lt;ol&gt;
@@ -6652,9 +6652,9 @@ Recomendamos o uso dessa classe, pois ela implementa os &lt;code&gt;onActionStar
 &lt;li&gt;A partir de transição de fragmentos fornecidas pelo próprio Beagle e que, neste caso, podem ser customizadas de acordo com a sua preferência e design system. São elas:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;../../../api/acoes/navigate/pushview.md&#34;&gt;&lt;strong&gt;PushView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../../api/acoes/navigate/popview.md&#34;&gt;&lt;strong&gt;PopView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../../api/acoes/navigate/poptoview.md&#34;&gt;&lt;strong&gt;PopToView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../../../../api/acoes/navigate/pushview&#34;&gt;&lt;strong&gt;PushView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../../../api/acoes/navigate/popview&#34;&gt;&lt;strong&gt;PopView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../../api/acoes/navigate/poptoview&#34;&gt;&lt;strong&gt;PopToView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;protocolo-e-customização&#34;&gt;Protocolo e customização&lt;/h2&gt;
 &lt;p&gt;O &lt;strong&gt;protocolo padrão&lt;/strong&gt; &lt;strong&gt;do Beagle&lt;/strong&gt; para casos de customização é utilizar a ferramenta nativa do Android para fazer transição de fragmentos para customizar sua animação.&lt;/p&gt;
@@ -6665,7 +6665,7 @@ Recomendamos o uso dessa classe, pois ela implementa os &lt;code&gt;onActionStar
 Para entender melhor como este processo funciona, leia mais na seção &lt;a href=&#34;https://developer.android.com/reference/android/app/FragmentTransaction#setCustomAnimations%28int,%20int,%20int,%20int%29&#34;&gt;&lt;strong&gt;setCustomAnimations&lt;/strong&gt;&lt;/a&gt; do Android.
 &lt;/div&gt;
 
-&lt;p&gt;A outra maneira de customizar uma animação de transição é por meio da &lt;a href=&#34;../../../get-started/criando-projeto-do-zero/case-android/#passo-4-criando-o-appbeagleactivity&#34;&gt;&lt;strong&gt;implementação da classe BeagleActivity&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;,&lt;/strong&gt; na qual o Beagle utiliza o método &lt;em&gt;&lt;strong&gt;getFragmentTransitionAnimation().&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A outra maneira de customizar uma animação de transição é por meio da &lt;a href=&#34;../../../../get-started/criando-projeto-do-zero/case-android/#passo-4-criando-o-appbeagleactivity&#34;&gt;&lt;strong&gt;implementação da classe BeagleActivity&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;,&lt;/strong&gt; na qual o Beagle utiliza o método &lt;em&gt;&lt;strong&gt;getFragmentTransitionAnimation().&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Caso este método não seja implementado e customizado, as transições seguirão a animação padrão Beagle. O código abaixo mostra o &lt;strong&gt;método da BeagleActivity&lt;/strong&gt;, que pode ser sobrescrito dessa forma:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;open&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;getFragmentTransitionAnimation&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;FragmentTransitionAnimation&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;enter&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;  &lt;span style=&#34;color:#000&#34;&gt;R&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;anim&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;slide_from_right&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -6704,7 +6704,7 @@ Para entender melhor como este processo funciona, leia mais na seção &lt;a hre
 &lt;li&gt;&lt;strong&gt;popEnter&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;popExit&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;E todas elas descritas na &lt;a href=&#34;https://developer.android.com/reference/android/app/FragmentTransaction#setCustomAnimations%28int,%20int,%20int,%20int%29&#34;&gt;&lt;strong&gt;documentação nativa do setCustomAnimations&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;E todas elas descritas na &lt;a href=&#34;https://developer.android.com/reference/android/app/FragmentTransaction#setCustomAnimations%28int,%20int,%20int,%20int%29&#34;&gt;&lt;strong&gt;documentação nativa do setCustomAnimations&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;/div&gt;
 
@@ -6831,7 +6831,7 @@ Para entender melhor como este processo funciona, leia mais na seção &lt;a hre
 &lt;p&gt;Você pode criar uma Toolbar e usá-la em sua activity através do método&lt;code&gt;getToolbar()&lt;/code&gt; . Isso permite  retornar a Toolbar desejada.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;getToolbar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;():&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Toolbar&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;findViewById&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Toolbar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;R&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;toolbar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;3-tratamento-de-erros&#34;&gt;3. Tratamento de erros&lt;/h3&gt;
-&lt;p&gt;Você pode observar os estados e tratar os erros a partir do &lt;a href=&#34;carregamento-e-tratamento-de-erros.md&#34;&gt;&lt;code&gt;onServerDrivenContainerStateChanged()&lt;/code&gt;&lt;/a&gt;``&lt;/p&gt;
+&lt;p&gt;Você pode observar os estados e tratar os erros a partir do &lt;a href=&#34;carregamento-e-tratamento-de-erros&#34;&gt;&lt;code&gt;onServerDrivenContainerStateChanged()&lt;/code&gt;&lt;/a&gt;``&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;onServerDrivenContainerStateChanged&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;state&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ServerDrivenState&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
      &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;state&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ServerDrivenState&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Error&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
           &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//Your error&amp;#39;s treatment 
@@ -7221,7 +7221,7 @@ Aqui, você também habilita o &lt;code&gt;minifyEnable&lt;/code&gt; e &lt;code&
 
     &amp;lt;/intent-filter&amp;gt;
 &amp;lt;/activity&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Agora você só precisa chamar a &lt;a href=&#34;../../../api/acoes/navigate/&#34;&gt;&lt;strong&gt;Action Navigate&lt;/strong&gt;&lt;/a&gt; com o &lt;strong&gt;método&lt;/strong&gt; &lt;a href=&#34;../../../api/acoes/navigate/opennativeroute.md&#34;&gt;&lt;strong&gt;OpenNativeRoute&lt;/strong&gt;&lt;/a&gt; como o exemplo abaixo:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Agora você só precisa chamar a &lt;a href=&#34;../../../../api/acoes/navigate/&#34;&gt;&lt;strong&gt;Action Navigate&lt;/strong&gt;&lt;/a&gt; com o &lt;strong&gt;método&lt;/strong&gt; &lt;a href=&#34;../../../../api/acoes/navigate/opennativeroute&#34;&gt;&lt;strong&gt;OpenNativeRoute&lt;/strong&gt;&lt;/a&gt; como o exemplo abaixo:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//Widget used to navigate to a native activity
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Button&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Click to navigate!&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -7454,14 +7454,14 @@ class PersonAdapter : BeagleTypeAdapter&amp;lt;Person&amp;gt; {
 
 &lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
 
-Este componente foi descontinuado na versão 1.1.0 e será removido em uma versão futura. Use &lt;a href=&#34;../../../api/componentes/formularios/simple-form.md&#34;&gt;SimpleForm&lt;/a&gt;  em seu lugar
+Este componente foi descontinuado na versão 1.1.0 e será removido em uma versão futura. Use &lt;a href=&#34;../../../../../api/componentes/formularios/simple-form&#34;&gt;SimpleForm&lt;/a&gt;  em seu lugar
 &lt;/div&gt;
 
 &lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
 &lt;p&gt;Um componente do tipo &lt;strong&gt;&lt;code&gt;Validator&lt;/code&gt;&lt;/strong&gt; é utilizado quando for necessário validar alguma informação em um formulário. Essa validação acontece através do método &lt;code&gt;isValid&lt;/code&gt;,  que é chamado sempre que são executados um&lt;code&gt;FormSubmit&lt;/code&gt; ou um &lt;code&gt;notifyChanges()&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Além disso, esse &lt;strong&gt;Validator&lt;/strong&gt; é listado no componente que recebe dados em um formulário, ao qual chamamos de&lt;code&gt;FormInput.&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;contexto-do-validador&#34;&gt;Contexto do validador&lt;/h2&gt;
-&lt;p&gt;No Beagle,  é possível usar o componente &lt;strong&gt;Form&lt;/strong&gt; para capturar dados informados pelo usuário, validá-los e enviá-los ao &lt;a href=&#34;../../../principais-conceitos.md#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;No Beagle,  é possível usar o componente &lt;strong&gt;Form&lt;/strong&gt; para capturar dados informados pelo usuário, validá-los e enviá-los ao &lt;a href=&#34;../../../../principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Essa validação pode tanto ocorrer quando o usuário ativa o FormSubmit e/ou quando o usuário notifica que o estado de seu &lt;code&gt;InputWidget(FormInput)&lt;/code&gt; mudou, como por exemplo, quando ditamos um texto ou quando o campo perde o foco.&lt;/p&gt;
 &lt;p&gt;O &lt;strong&gt;Validator&lt;/strong&gt; recebe dois parâmetros genéricos e possui um único método &lt;code&gt;isValid&lt;/code&gt; que retorna um valor booleano.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;interface&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Validator&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;I&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;W&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -7534,7 +7534,7 @@ Se você deseja &lt;strong&gt;validar&lt;/strong&gt; a informação &lt;strong&g
         
         &lt;hr&gt;
 &lt;h2 id=&#34;como-criar-componentes-custom-views-e-widgets&#34;&gt;Como criar componentes (custom views) e widgets?&lt;/h2&gt;
-&lt;p&gt;No exemplo abaixo, será implementado um &lt;a href=&#34;../../beagle-para-ios/widgets-customizados.md&#34;&gt;&lt;strong&gt;custom widget&lt;/strong&gt;&lt;/a&gt; e o componente que ele registrará. Esse componente será composto por um texto e dois botões dentro de um layout linear.&lt;/p&gt;
+&lt;p&gt;No exemplo abaixo, será implementado um &lt;a href=&#34;../../../beagle-para-ios/widgets-customizados&#34;&gt;&lt;strong&gt;custom widget&lt;/strong&gt;&lt;/a&gt; e o componente que ele registrará. Esse componente será composto por um texto e dois botões dentro de um layout linear.&lt;/p&gt;
 &lt;p&gt;Os botões neste componente serão responsáveis ​​por aumentar e diminuir o tamanho do texto do título e a tela será como a imagem a seguir:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%2883%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 

@@ -99,7 +99,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -131,7 +131,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -2016,7 +2016,7 @@ Well done, your project was created on Android! Now, you will need to configure 
 </div>
 
 <h3 id="passo-3-create-an-appbeagleconfig">Passo 3: Create an AppBeagleConfig</h3>
-<p>For the next steps, you should create a <code>AppBeagleConfig</code> class, that is part of <a href="../../installing-beagle/android.md"><strong>Beagle&rsquo;s installation</strong></a> and it&rsquo;s responsible to register some important configurations.</p>
+<p>For the next steps, you should create a <code>AppBeagleConfig</code> class, that is part of <a href="../../../../../../../installing-beagle/android"><strong>Beagle&rsquo;s installation</strong></a> and it&rsquo;s responsible to register some important configurations.</p>
 <p>When you create the call, we should guarantee that it&rsquo;s configured in this way:</p>
 <ul>
 <li>Noted with <code>@BeagleComponent</code></li>
@@ -2067,8 +2067,8 @@ Well done, your project was created on Android! Now, you will need to configure 
 </div>
 
 <h3 id="step-4-create-appbeagleactivity"><strong>Step 4: Create AppBeagleActivity</strong></h3>
-<p>You will have to deal with the <code>activities</code> that will be generated through server-driven. That&rsquo;s the reason why it&rsquo;s necessary to <a href="../../using-beagle/android.md#passo-3-implementar-activities"><strong>implement an Activity</strong></a> to manage them. For this example, we&rsquo;ll name it as<code>AppBeagleActivity</code>.</p>
-<p>This file is part of <a href="../../using-beagle/android.md"><strong>Beagle&rsquo;s usage configuration</strong></a> and must be implemented, at least once, so Beagle can normally work.</p>
+<p>You will have to deal with the <code>activities</code> that will be generated through server-driven. That&rsquo;s the reason why it&rsquo;s necessary to <a href="../../../../../../using-beagle/android#passo-3-implementar-activities"><strong>implement an Activity</strong></a> to manage them. For this example, we&rsquo;ll name it as<code>AppBeagleActivity</code>.</p>
+<p>This file is part of <a href="../../../../../using-beagle/android"><strong>Beagle&rsquo;s usage configuration</strong></a> and must be implemented, at least once, so Beagle can normally work.</p>
 <p>When you create AppBeagleActivity, remember to note it as <code>BeagleComponent</code> and to extend it to<code>BeagleActivity</code> class.</p>
 
 
@@ -2174,7 +2174,7 @@ At this point, it&rsquo;s essential that you remove the<code>ActionBar</code> pa
 <div class="alert alert-info" role="alert">
 
 <p>What is Design System?</p>
-<p>For more information, see <a href="design-system-beagle-com-android.md"><strong>section Design System with Beagle Android</strong></a>.</p>
+<p>For more information, see <a href="design-system-beagle-com-android"><strong>section Design System with Beagle Android</strong></a>.</p>
 
 </div>
 
@@ -2183,7 +2183,7 @@ At this point, it&rsquo;s essential that you remove the<code>ActionBar</code> pa
 <div class="alert alert-info" role="alert">
 
 <p>É o <strong>design system</strong> que guarda os registros dos componentes de estilo criados no frontend e é assim que sua aplicação Android “saberá” qual componente de estilo deve aplicar a cada elemento de uma tela Server-Driven. É na tela server driven que os elementos visuais (views) são utilizados na construção da sua tela.</p>
-<p>Embora você possa criá-lo agora se quiser, não é necessário para as configurações iniciais, para que você possa testar logo o Beagle! Você pode prosseguir sem configurá-lo. Para mais informações sobre <a href="design-system-beagle-com-android.md"><strong>Design System no Beagle para Android</strong>.</a></p>
+<p>Embora você possa criá-lo agora se quiser, não é necessário para as configurações iniciais, para que você possa testar logo o Beagle! Você pode prosseguir sem configurá-lo. Para mais informações sobre <a href="design-system-beagle-com-android"><strong>Design System no Beagle para Android</strong>.</a></p>
 
 </div>
 
@@ -2211,7 +2211,7 @@ At this point, it&rsquo;s essential that you remove the<code>ActionBar</code> pa
     <span style="color:#000;font-weight:bold">}</span>
 <span style="color:#000;font-weight:bold">}</span>
 </code></pre></div><ol start="2">
-<li>To finish this configuration, you must state the class on the <a href="./#passo-2-configuracoes-iniciais-do-android-manifest"><strong>AndroidManifest</strong></a> we created in the beginning.</li>
+<li>To finish this configuration, you must state the class on the <a href="../.././#passo-2-configuracoes-iniciais-do-android-manifest"><strong>AndroidManifest</strong></a> we created in the beginning.</li>
 </ol>
 <p>The name of your<code>application</code> now it&rsquo;s the same of the class you created. Update the Android Manifest as it&rsquo;s indicated below:</p>
 <pre><code class="language-markup" data-lang="markup">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
@@ -2231,7 +2231,7 @@ At this point, it&rsquo;s essential that you remove the<code>ActionBar</code> pa
 Well done, your Android application is configured and ready to use Beagle!
 </div>
 
-<p>All you have to do now is <a href="../exemplo-de-projeto-backend-com-beagle.md"><strong>set up a backend</strong> </a>to answer your application&rsquo;s requests. Once you made this configuration, start your application and you&rsquo;ll see your first server-driven screen!</p>
+<p>All you have to do now is <a href="../../exemplo-de-projeto-backend-com-beagle"><strong>set up a backend</strong> </a>to answer your application&rsquo;s requests. Once you made this configuration, start your application and you&rsquo;ll see your first server-driven screen!</p>
 <h3 id="step-7-display-your-server-driven-screen">Step 7: Display your Server-Driven Screen</h3>
 <p>It&rsquo;s very simple to show a Server-Driven screen. Now that all Beagle&rsquo;s configuration is done, you just have to follow these steps:</p>
 <ul>
@@ -2683,7 +2683,7 @@ Well done, you created your first screen with Beagle!  🎉
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top"><div class="dr-last-modified-text">
-  Last modified December 4, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/1e8286542b1cfbd63e163a3bba60646abb2a9896">fix links to contribute (1e828654)</a>
+  Last modified December 9, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/2500a2815c1ffbbcf064963526033e3a2b985837">fix tabs and some links (2500a281)</a>
 </div></div>
 </div>
 

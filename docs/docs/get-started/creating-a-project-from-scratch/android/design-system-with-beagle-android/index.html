@@ -24,10 +24,10 @@
 <meta property="og:description" content="Here, you&#39;ll find a tutorial to configure a Design System with Beagle for Android." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/android/design-system-with-beagle-android/" />
-<meta property="article:modified_time" content="2020-12-04T17:37:12-03:00" /><meta property="og:site_name" content="Beagle" />
+<meta property="article:modified_time" content="2020-12-09T12:56:53-03:00" /><meta property="og:site_name" content="Beagle" />
 <meta itemprop="name" content="Design System with Beagle Android">
 <meta itemprop="description" content="Here, you&#39;ll find a tutorial to configure a Design System with Beagle for Android.">
-<meta itemprop="dateModified" content="2020-12-04T17:37:12-03:00" />
+<meta itemprop="dateModified" content="2020-12-09T12:56:53-03:00" />
 <meta itemprop="wordCount" content="2195">
 
 
@@ -104,7 +104,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -136,7 +136,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -1905,7 +1905,7 @@
 	       
 	<hr>
 <h2 id="creating-a-design-system"><strong>Creating a Design System</strong></h2>
-<p>On the use example of the page creating an Android project with Beagle , you saw how to <a href="./"><strong>implement Beagle</strong></a> to create a simple server-driven screen with only 2 texts: 1 title and 1 paragraph.</p>
+<p>On the use example of the page creating an Android project with Beagle , you saw how to <a href="../../.././"><strong>implement Beagle</strong></a> to create a simple server-driven screen with only 2 texts: 1 title and 1 paragraph.</p>
 <p>In this tutorial, the idea is to get deeper from the <a href="./#passo-7-exibindo-sua-tela-server-driven"><strong>previous project</strong></a> to <strong>create a Design System</strong> <strong>on Beagle&rsquo;s library</strong>. To better illustrate the explanation, we&rsquo;ll use these <a href="https://github.com/ZupIT/beagle-examples"><strong>sample codes</strong></a> that you can find out in our repository.</p>
 <p>The Design System we will configure, it will allow you to customize some Beagle&rsquo;s components, such as:</p>
 <ul>
@@ -1960,7 +1960,7 @@ Just remember that the design system we&rsquo;re about to create is part of the 
 </ol>
 <p>When you create a Design System class, it&rsquo;s necessary to have, at least, one theme method stated. The other methods can be left without implementation, as you can see in the image above.</p>
 <h3 id="step-2-create-a-theme">Step 2: <strong>Create a theme</strong></h3>
-<p>The next step is create a theme component so our Beagle&rsquo;s application can use when renders our <a href="../../../principais-conceitos.md#server-driven-ui"><strong>server-driven screens.</strong></a></p>
+<p>The next step is create a theme component so our Beagle&rsquo;s application can use when renders our <a href="../../../../../principais-conceitos#server-driven-ui"><strong>server-driven screens.</strong></a></p>
 <ol>
 <li>First, let&rsquo;s register three colors on the color file on Android.</li>
 </ol>
@@ -2003,7 +2003,7 @@ In case you have closed the file, you can find it inside the values package. You
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">override fun theme(): Int = R.style.AppThemeServerDriven
 </code></pre></div><h3 id="step-3-customize-a-component"><strong>Step 3: Customize a component</strong></h3>
-<p>This is the moment that occurs the <a href="../../../principais-conceitos.md#backend-for-frontend"><strong>BFF</strong></a>, when frontend connects to backend.</p>
+<p>This is the moment that occurs the <a href="../../../../principais-conceitos#backend-for-frontend"><strong>BFF</strong></a>, when frontend connects to backend.</p>
 <p>To do so, you&rsquo;ll have to <strong>configure Android&rsquo;s frontend and Intellij&rsquo;s backend</strong>. In case you haven&rsquo;t this configuration done, just follow the <a href="https://github.com/ZupIT/beagle-examples"><strong>backend&rsquo;s configuration</strong></a> and run it.</p>
 <p>For our backend here, we created a server-driven page with 2 texts: 1 title and 1 paragraph. It should be like this when rendered on frontend:</p>
 <p><img src="https://lh4.googleusercontent.com/Rms7sJWr8_BXtHuaxpxtJwQly1O7qBX79AqhSlrj9TSjTqD_7eqFyavstkbgwQO3BVjoGeVV7W53KTVxUkonTD7R6wYBVhWWqa_tfwDaFBw8AVPu-KLQLcZ0H3A8UDK-X_9JMKyr" alt=""></p>
@@ -2201,7 +2201,7 @@ If you have any trouble on making this configuration, check out <a href="https:/
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top"><div class="dr-last-modified-text">
-  Last modified December 4, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/1e8286542b1cfbd63e163a3bba60646abb2a9896">fix links to contribute (1e828654)</a>
+  Last modified December 9, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/2500a2815c1ffbbcf064963526033e3a2b985837">fix tabs and some links (2500a281)</a>
 </div></div>
 </div>
 

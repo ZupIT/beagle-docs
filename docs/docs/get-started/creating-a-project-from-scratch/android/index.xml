@@ -24,7 +24,7 @@
         
         &lt;hr&gt;
 &lt;h2 id=&#34;creating-a-design-system&#34;&gt;&lt;strong&gt;Creating a Design System&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;On the use example of the page creating an Android project with Beagle , you saw how to &lt;a href=&#34;./&#34;&gt;&lt;strong&gt;implement Beagle&lt;/strong&gt;&lt;/a&gt; to create a simple server-driven screen with only 2 texts: 1 title and 1 paragraph.&lt;/p&gt;
+&lt;p&gt;On the use example of the page creating an Android project with Beagle , you saw how to &lt;a href=&#34;../../.././&#34;&gt;&lt;strong&gt;implement Beagle&lt;/strong&gt;&lt;/a&gt; to create a simple server-driven screen with only 2 texts: 1 title and 1 paragraph.&lt;/p&gt;
 &lt;p&gt;In this tutorial, the idea is to get deeper from the &lt;a href=&#34;./#passo-7-exibindo-sua-tela-server-driven&#34;&gt;&lt;strong&gt;previous project&lt;/strong&gt;&lt;/a&gt; to &lt;strong&gt;create a Design System&lt;/strong&gt; &lt;strong&gt;on Beagle&amp;rsquo;s library&lt;/strong&gt;. To better illustrate the explanation, we&amp;rsquo;ll use these &lt;a href=&#34;https://github.com/ZupIT/beagle-examples&#34;&gt;&lt;strong&gt;sample codes&lt;/strong&gt;&lt;/a&gt; that you can find out in our repository.&lt;/p&gt;
 &lt;p&gt;The Design System we will configure, it will allow you to customize some Beagle&amp;rsquo;s components, such as:&lt;/p&gt;
 &lt;ul&gt;
@@ -79,7 +79,7 @@ Just remember that the design system we&amp;rsquo;re about to create is part of 
 &lt;/ol&gt;
 &lt;p&gt;When you create a Design System class, it&amp;rsquo;s necessary to have, at least, one theme method stated. The other methods can be left without implementation, as you can see in the image above.&lt;/p&gt;
 &lt;h3 id=&#34;step-2-create-a-theme&#34;&gt;Step 2: &lt;strong&gt;Create a theme&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;The next step is create a theme component so our Beagle&amp;rsquo;s application can use when renders our &lt;a href=&#34;../../../principais-conceitos.md#server-driven-ui&#34;&gt;&lt;strong&gt;server-driven screens.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The next step is create a theme component so our Beagle&amp;rsquo;s application can use when renders our &lt;a href=&#34;../../../../../principais-conceitos#server-driven-ui&#34;&gt;&lt;strong&gt;server-driven screens.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;First, let&amp;rsquo;s register three colors on the color file on Android.&lt;/li&gt;
 &lt;/ol&gt;
@@ -122,7 +122,7 @@ In case you have closed the file, you can find it inside the values package. You
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;override fun theme(): Int = R.style.AppThemeServerDriven
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;step-3-customize-a-component&#34;&gt;&lt;strong&gt;Step 3: Customize a component&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;This is the moment that occurs the &lt;a href=&#34;../../../principais-conceitos.md#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;, when frontend connects to backend.&lt;/p&gt;
+&lt;p&gt;This is the moment that occurs the &lt;a href=&#34;../../../../principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;, when frontend connects to backend.&lt;/p&gt;
 &lt;p&gt;To do so, you&amp;rsquo;ll have to &lt;strong&gt;configure Android&amp;rsquo;s frontend and Intellij&amp;rsquo;s backend&lt;/strong&gt;. In case you haven&amp;rsquo;t this configuration done, just follow the &lt;a href=&#34;https://github.com/ZupIT/beagle-examples&#34;&gt;&lt;strong&gt;backend&amp;rsquo;s configuration&lt;/strong&gt;&lt;/a&gt; and run it.&lt;/p&gt;
 &lt;p&gt;For our backend here, we created a server-driven page with 2 texts: 1 title and 1 paragraph. It should be like this when rendered on frontend:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://lh4.googleusercontent.com/Rms7sJWr8_BXtHuaxpxtJwQly1O7qBX79AqhSlrj9TSjTqD_7eqFyavstkbgwQO3BVjoGeVV7W53KTVxUkonTD7R6wYBVhWWqa_tfwDaFBw8AVPu-KLQLcZ0H3A8UDK-X_9JMKyr&#34; alt=&#34;&#34;&gt;&lt;/p&gt;

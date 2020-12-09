@@ -104,7 +104,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -136,7 +136,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -2174,7 +2174,7 @@ Você irá usar o <code>Text</code> como um widget que possui o <code>UITextView
 </code></pre></div><h2 id="validatorprovider">ValidatorProvider</h2>
 <p>Valida a customização que será realizada quando o widget <strong>Form</strong> for utilizado.</p>
 <h2 id="deeplinkhandler">DeepLinkHandler</h2>
-<p>Este handler é usado para uma ação de <a href="../beagle-para-android/deep-link-handler.md"><strong>deep link navigation</strong></a>. A variável possui um valor default, você pode adicionar novas telas ou substituir por outras na aplicação.</p>
+<p>Este handler é usado para uma ação de <a href="../../../beagle-para-android/deep-link-handler"><strong>deep link navigation</strong></a>. A variável possui um valor default, você pode adicionar novas telas ou substituir por outras na aplicação.</p>
 <p>Abaixo, você encontra um comando de como adicionar uma tela com um possível roteamento para deep linking usando um valor default:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#204a87;font-weight:bold">let</span> <span style="color:#000">deepLinkHandler</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">DeeplinkScreenManager</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">shared</span>
 <span style="color:#000">deepLinkHandler</span><span style="color:#000;font-weight:bold">[</span><span style="color:#4e9a06">&#34;MyDeepLinkScreen&#34;</span><span style="color:#000;font-weight:bold">]</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">MyDeepLinkScreenClass</span><span style="color:#000;font-weight:bold">.</span><span style="color:#204a87;font-weight:bold">self</span>
@@ -2206,10 +2206,10 @@ Você irá usar o <code>Text</code> como um widget que possui o <code>UITextView
     <span style="color:#000;font-weight:bold">}</span>
 <span style="color:#000;font-weight:bold">}</span>
 </code></pre></div><h2 id="navigation">Navigation</h2>
-<p>O <code>navigation</code> lida com tipo de ações de <a href="../../../api/acoes/navigate/"><strong>navigate</strong></a> da sua aplicação. Existe uma implementação que é usada como valor default, mas que também pode ser substituída por uma classe que  está de acordo com BeagleNavigation**.**</p>
-<p>Nesse mesmo atributo também é possível definir uma <a href="animacoes-de-navegacao.md">animação de navegação</a>.</p>
+<p>O <code>navigation</code> lida com tipo de ações de <a href="../../../../api/acoes/navigate/"><strong>navigate</strong></a> da sua aplicação. Existe uma implementação que é usada como valor default, mas que também pode ser substituída por uma classe que  está de acordo com BeagleNavigation</p>
+<p>Nesse mesmo atributo também é possível definir uma <a href="animacoes-de-navegacao">animação de navegação</a>.</p>
 <h2 id="prefetchhelper">PreFetchHelper</h2>
-<p>Este componente é usado como pré-busca do <a href="screen-view-controller.md"><strong><code>BeagleScreenViewControllers</code></strong></a> e entrega uma experiência para o usuário mais fluida. Ela já possui um valor e pode ser alterado para se adequar em que você precisa.</p>
+<p>Este componente é usado como pré-busca do <a href="screen-view-controller"><strong><code>BeagleScreenViewControllers</code></strong></a> e entrega uma experiência para o usuário mais fluida. Ela já possui um valor e pode ser alterado para se adequar em que você precisa.</p>
 <p>A pré-busca é acionada quando há um <strong>navigation widget</strong> de modo que você possa fazer um pré carregamento dos dados das possíveis próximas telas, evitando delays na navegação. Este comportamento pode ser desativado.</p>
 <h2 id="cachemanager">CacheManager</h2>
 <p>É responsável por manter e gerenciar o cache do conteúdo server-driven da aplicação.</p>

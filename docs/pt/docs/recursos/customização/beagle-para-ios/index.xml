@@ -75,7 +75,7 @@ Beagle.dependencies = dependencies
         
         &lt;hr&gt;
 &lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
-&lt;p&gt;No protocolo &lt;code&gt;BeagleNavigation&lt;/code&gt; temos uma variável &lt;code&gt;defaultAnimation&lt;/code&gt; que permite que você mude as animações de transição da sua aplicação, e também outra função  que lida com os tipos de ações &lt;a href=&#34;../../../api/acoes/navigate/&#34;&gt;&lt;strong&gt;navigate&lt;/strong&gt;&lt;/a&gt; e define os seus comportamentos.&lt;/p&gt;
+&lt;p&gt;No protocolo &lt;code&gt;BeagleNavigation&lt;/code&gt; temos uma variável &lt;code&gt;defaultAnimation&lt;/code&gt; que permite que você mude as animações de transição da sua aplicação, e também outra função  que lida com os tipos de ações &lt;a href=&#34;../../../../api/acoes/navigate/&#34;&gt;&lt;strong&gt;navigate&lt;/strong&gt;&lt;/a&gt; e define os seus comportamentos.&lt;/p&gt;
 &lt;p&gt;Sugerimos que você use a implementação default, mas se necessário, é permitido que essa implementação seja substituída por uma classe que está de acordo com o protocolo acima.&lt;/p&gt;
 &lt;h2 id=&#34;protocolo-e-customização&#34;&gt;Protocolo e customização&lt;/h2&gt;
 &lt;p&gt;No protocolo da &lt;code&gt;BeagleNavigation&lt;/code&gt; temos uma variável &lt;code&gt;defaultAnimation&lt;/code&gt; que determina como a animação de uma tela acontece quando ela é apresentada.&lt;/p&gt;
@@ -448,7 +448,7 @@ Esta configuração se aplica a todas as navegações da sua aplicação.
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 
-É muito importante que você registre sua CustomBeagleNavigationController nas configurações de &lt;a href=&#34;dependencias-do-beagle.md&#34;&gt;&lt;strong&gt;dependências do Beagle.&lt;/strong&gt;&lt;/a&gt;
+É muito importante que você registre sua CustomBeagleNavigationController nas configurações de &lt;a href=&#34;dependencias-do-beagle&#34;&gt;&lt;strong&gt;dependências do Beagle.&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;BeagleDependencies&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
@@ -657,7 +657,7 @@ Faça a configuração do &lt;code&gt;navigationControllerType&lt;/code&gt; com 
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Caso queira manter o estilo original de carregamento, basta executar a implementação padrão e seguir para o &lt;a href=&#34;carregamento-e-tratamento-de-erros.md#erros&#34;&gt;&lt;strong&gt;tratamento de erros&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Caso queira manter o estilo original de carregamento, basta executar a implementação padrão e seguir para o &lt;a href=&#34;carregamento-e-tratamento-de-erros#erros&#34;&gt;&lt;strong&gt;tratamento de erros&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;serverDrivenStateDidChange&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;state&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ServerDrivenState&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;at&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;screenController&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;BeagleController&lt;/span&gt;
@@ -670,12 +670,12 @@ Faça a configuração do &lt;code&gt;navigationControllerType&lt;/code&gt; com 
 &lt;p&gt;Os &lt;strong&gt;possíveis erros&lt;/strong&gt; são:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;remoteScreen(Request.Error)&lt;/code&gt;: A requisição para carregar uma tela remota falhou. Veja abaixo quando isso ocorre.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;lazyLoad(Request.Error)&lt;/code&gt;: A requisição para carregar um &lt;a href=&#34;../../../api/componentes/lazy.md&#34;&gt;&lt;strong&gt;componente Lazy&lt;/strong&gt;&lt;/a&gt; falhou. Veja abaixo quando isso ocorre.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;action(Swift.Error)&lt;/code&gt;: A execução de uma &lt;a href=&#34;../../../api/acoes/&#34;&gt;&lt;strong&gt;Action&lt;/strong&gt;&lt;/a&gt; falhou.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lazyLoad(Request.Error)&lt;/code&gt;: A requisição para carregar um &lt;a href=&#34;../../../../../api/componentes/lazy&#34;&gt;&lt;strong&gt;componente Lazy&lt;/strong&gt;&lt;/a&gt; falhou. Veja abaixo quando isso ocorre.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;action(Swift.Error)&lt;/code&gt;: A execução de uma &lt;a href=&#34;../../../../api/acoes/&#34;&gt;&lt;strong&gt;Action&lt;/strong&gt;&lt;/a&gt; falhou.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Erros em uma requisição&lt;/strong&gt; (&lt;code&gt;Request.Error&lt;/code&gt;):&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;urlBuilderError&lt;/code&gt;: A URL do recurso ou a &lt;a href=&#34;dependencias-do-beagle.md#baseurl&#34;&gt;&lt;strong&gt;baseURL&lt;/strong&gt;&lt;/a&gt; é inválida.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;urlBuilderError&lt;/code&gt;: A URL do recurso ou a &lt;a href=&#34;dependencias-do-beagle#baseurl&#34;&gt;&lt;strong&gt;baseURL&lt;/strong&gt;&lt;/a&gt; é inválida.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;networkError&lt;/code&gt;: Não foi possível estabelecer a conexão ou um erro foi retornado pelo BFF.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;decoding&lt;/code&gt;: A resposta enviado pelo BFF é diferente do objeto esperado.&lt;/li&gt;
 &lt;/ul&gt;
@@ -835,7 +835,7 @@ Você irá usar o &lt;code&gt;Text&lt;/code&gt; como um widget que possui o &lt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;validatorprovider&#34;&gt;ValidatorProvider&lt;/h2&gt;
 &lt;p&gt;Valida a customização que será realizada quando o widget &lt;strong&gt;Form&lt;/strong&gt; for utilizado.&lt;/p&gt;
 &lt;h2 id=&#34;deeplinkhandler&#34;&gt;DeepLinkHandler&lt;/h2&gt;
-&lt;p&gt;Este handler é usado para uma ação de &lt;a href=&#34;../beagle-para-android/deep-link-handler.md&#34;&gt;&lt;strong&gt;deep link navigation&lt;/strong&gt;&lt;/a&gt;. A variável possui um valor default, você pode adicionar novas telas ou substituir por outras na aplicação.&lt;/p&gt;
+&lt;p&gt;Este handler é usado para uma ação de &lt;a href=&#34;../../../beagle-para-android/deep-link-handler&#34;&gt;&lt;strong&gt;deep link navigation&lt;/strong&gt;&lt;/a&gt;. A variável possui um valor default, você pode adicionar novas telas ou substituir por outras na aplicação.&lt;/p&gt;
 &lt;p&gt;Abaixo, você encontra um comando de como adicionar uma tela com um possível roteamento para deep linking usando um valor default:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;deepLinkHandler&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;DeeplinkScreenManager&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;shared&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;deepLinkHandler&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;MyDeepLinkScreen&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;MyDeepLinkScreenClass&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;self&lt;/span&gt;
@@ -867,10 +867,10 @@ Você irá usar o &lt;code&gt;Text&lt;/code&gt; como um widget que possui o &lt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;navigation&#34;&gt;Navigation&lt;/h2&gt;
-&lt;p&gt;O &lt;code&gt;navigation&lt;/code&gt; lida com tipo de ações de &lt;a href=&#34;../../../api/acoes/navigate/&#34;&gt;&lt;strong&gt;navigate&lt;/strong&gt;&lt;/a&gt; da sua aplicação. Existe uma implementação que é usada como valor default, mas que também pode ser substituída por uma classe que  está de acordo com BeagleNavigation**.**&lt;/p&gt;
-&lt;p&gt;Nesse mesmo atributo também é possível definir uma &lt;a href=&#34;animacoes-de-navegacao.md&#34;&gt;animação de navegação&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;O &lt;code&gt;navigation&lt;/code&gt; lida com tipo de ações de &lt;a href=&#34;../../../../api/acoes/navigate/&#34;&gt;&lt;strong&gt;navigate&lt;/strong&gt;&lt;/a&gt; da sua aplicação. Existe uma implementação que é usada como valor default, mas que também pode ser substituída por uma classe que  está de acordo com BeagleNavigation&lt;/p&gt;
+&lt;p&gt;Nesse mesmo atributo também é possível definir uma &lt;a href=&#34;animacoes-de-navegacao&#34;&gt;animação de navegação&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;prefetchhelper&#34;&gt;PreFetchHelper&lt;/h2&gt;
-&lt;p&gt;Este componente é usado como pré-busca do &lt;a href=&#34;screen-view-controller.md&#34;&gt;&lt;strong&gt;&lt;code&gt;BeagleScreenViewControllers&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt; e entrega uma experiência para o usuário mais fluida. Ela já possui um valor e pode ser alterado para se adequar em que você precisa.&lt;/p&gt;
+&lt;p&gt;Este componente é usado como pré-busca do &lt;a href=&#34;screen-view-controller&#34;&gt;&lt;strong&gt;&lt;code&gt;BeagleScreenViewControllers&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt; e entrega uma experiência para o usuário mais fluida. Ela já possui um valor e pode ser alterado para se adequar em que você precisa.&lt;/p&gt;
 &lt;p&gt;A pré-busca é acionada quando há um &lt;strong&gt;navigation widget&lt;/strong&gt; de modo que você possa fazer um pré carregamento dos dados das possíveis próximas telas, evitando delays na navegação. Este comportamento pode ser desativado.&lt;/p&gt;
 &lt;h2 id=&#34;cachemanager&#34;&gt;CacheManager&lt;/h2&gt;
 &lt;p&gt;É responsável por manter e gerenciar o cache do conteúdo server-driven da aplicação.&lt;/p&gt;

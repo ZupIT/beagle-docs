@@ -617,7 +617,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;como-usar&#34;&gt;Como usar?&lt;/h2&gt;
-&lt;p&gt;No exemplo abaixo, foram utilizadas três telas: as duas primeiras utilizam o &lt;a href=&#34;pushview.md&#34;&gt;&lt;strong&gt;PushView&lt;/strong&gt; &lt;/a&gt;para adicionar as telas na pilha, já a última faz uso do &lt;strong&gt;ResetApplication&lt;/strong&gt; e reabre na primeira tela.&lt;/p&gt;
+&lt;p&gt;No exemplo abaixo, foram utilizadas três telas: as duas primeiras utilizam o &lt;a href=&#34;pushview&#34;&gt;&lt;strong&gt;PushView&lt;/strong&gt; &lt;/a&gt;para adicionar as telas na pilha, já a última faz uso do &lt;strong&gt;ResetApplication&lt;/strong&gt; e reabre na primeira tela.&lt;/p&gt;
 &lt;p&gt;Para testar, iremos precisar de três endpoints:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;

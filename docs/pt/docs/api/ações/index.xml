@@ -256,7 +256,7 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;condition&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Boolean ou &lt;a href=&#34;../contexto/#binding&#34;&gt;&lt;strong&gt;Binding&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Boolean ou &lt;a href=&#34;../../contexto/#binding&#34;&gt;&lt;strong&gt;Binding&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;✓&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;condição para definir qual ação será executada.&lt;/td&gt;
 &lt;/tr&gt;
@@ -712,7 +712,7 @@ Essa ação foi &lt;strong&gt;depreciada&lt;/strong&gt; junto com o Form!
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;url&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;String ou &lt;a href=&#34;../contexto/#binding&#34;&gt;&lt;strong&gt;Binding&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;String ou &lt;a href=&#34;../../../../contexto/#binding&#34;&gt;&lt;strong&gt;Binding&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;✓&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;URL do servidor.&lt;/td&gt;
 &lt;/tr&gt;
@@ -900,7 +900,7 @@ Essa ação foi &lt;strong&gt;depreciada&lt;/strong&gt; junto com o Form!
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Conheça mais sobre o &lt;a href=&#34;../contexto/&#34;&gt;&lt;strong&gt;contexto no Beagle&lt;/strong&gt;&lt;/a&gt;.
+Conheça mais sobre o &lt;a href=&#34;../../contexto/&#34;&gt;&lt;strong&gt;contexto no Beagle&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;h2 id=&#34;como-usar&#34;&gt;Como usar?&lt;/h2&gt;
@@ -972,9 +972,9 @@ Conheça mais sobre o &lt;a href=&#34;../contexto/&#34;&gt;&lt;strong&gt;context
         
         &lt;hr&gt;
 &lt;h2 id=&#34;o-que-é&#34;&gt;O que é?&lt;/h2&gt;
-&lt;p&gt;O SubmitForm é uma ação &lt;strong&gt;exclusiva&lt;/strong&gt; do &lt;a href=&#34;../componentes/formularios/simple-form.md#o-que-e&#34;&gt;&lt;strong&gt;SimpleForm&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;,&lt;/strong&gt; pois deve ser usada em algum evento dentro do formulário, para que o mesmo seja enviado.&lt;/p&gt;
+&lt;p&gt;O SubmitForm é uma ação &lt;strong&gt;exclusiva&lt;/strong&gt; do &lt;a href=&#34;../../../componentes/formularios/simple-form#o-que-e&#34;&gt;&lt;strong&gt;SimpleForm&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;,&lt;/strong&gt; pois deve ser usada em algum evento dentro do formulário, para que o mesmo seja enviado.&lt;/p&gt;
 &lt;h2 id=&#34;como-usar&#34;&gt;Como usar?&lt;/h2&gt;
-&lt;p&gt;Para um exemplo completo junto ao SimpleForm &lt;a href=&#34;../componentes/formularios/simple-form.md#como-usar&#34;&gt;&lt;strong&gt;clique aqui&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Para um exemplo completo junto ao SimpleForm &lt;a href=&#34;../../componentes/formularios/simple-form#como-usar&#34;&gt;&lt;strong&gt;clique aqui&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>

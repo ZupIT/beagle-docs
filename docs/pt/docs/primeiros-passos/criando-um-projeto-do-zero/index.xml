@@ -159,7 +159,7 @@ Parabéns, seu projeto foi criado no Android! Agora, você precisará configurar
 &lt;p&gt;Ao criá-la, devemos garantir que ela esteja configurada da seguinte forma:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Anotada com o &lt;code&gt;@BeagleComponent&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;E deve &lt;code&gt;estender (extend)&lt;/code&gt; da classe&lt;code&gt;BeagleConfig&lt;/code&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;E deve &lt;code&gt;estender (extend)&lt;/code&gt; da classe&lt;code&gt;BeagleConfig&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Para criar o AppBeagleConfig, siga estes passos:&lt;/p&gt;
 &lt;ol&gt;
@@ -315,7 +315,7 @@ Neste ponto do tutorial, é essencial que você remova a&lt;code&gt;ActionBar&lt
 &lt;p&gt;Importante! O que é o Design System?&lt;/p&gt;
 &lt;p&gt;É o &lt;strong&gt;design system&lt;/strong&gt; que guarda os registros dos componentes de estilo criados no frontend e é assim que sua aplicação Android “saberá” qual componente de estilo deve aplicar a cada elemento de uma tela Server-Driven. É na tela server driven que os elementos visuais (views) são utilizados na construção da sua tela.&lt;/p&gt;
 &lt;p&gt;Embora você possa criá-lo agora se quiser, não é necessário para as configurações iniciais, para que você possa testar logo o Beagle! Você pode prosseguir sem configurá-lo. Mas saiba que o Design System é o pulmão da aplicação server-driven!&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;design-system-com-beagle-android.md&#34;&gt;&lt;strong&gt;Design System no Beagle para Android&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;design-system-com-beagle-android&#34;&gt;&lt;strong&gt;Design System no Beagle para Android&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
 
 &lt;/div&gt;
 
@@ -363,7 +363,7 @@ Neste ponto do tutorial, é essencial que você remova a&lt;code&gt;ActionBar&lt
 Pronto, a sua aplicação Android está configurada e preparada para usar o Beagle!
 &lt;/div&gt;
 
-&lt;p&gt;Tudo o que você precisa agora é &lt;a href=&#34;../case-backend.md&#34;&gt;&lt;strong&gt;configurar um backend&lt;/strong&gt; &lt;/a&gt;para responder as requisições da sua aplicação. Feita esta configuração, inicie a sua aplicação e você verá sua primeira tela server-driven!&lt;/p&gt;
+&lt;p&gt;Tudo o que você precisa agora é &lt;a href=&#34;../../case-backend&#34;&gt;&lt;strong&gt;configurar um backend&lt;/strong&gt; &lt;/a&gt;para responder as requisições da sua aplicação. Feita esta configuração, inicie a sua aplicação e você verá sua primeira tela server-driven!&lt;/p&gt;
 &lt;h3 id=&#34;passo-7-exibir-sua-tela-server-driven&#34;&gt;Passo 7: Exibir sua Tela Server-Driven&lt;/h3&gt;
 &lt;p&gt;É muito simples exibir uma tela Server-Driven. Agora que toda a configuração do Beagle está pronta, você precisa seguir estes passos:&lt;/p&gt;
 &lt;ul&gt;
@@ -454,10 +454,10 @@ Se você tem alguma dúvida sobre como usar este gerenciador, sugerimos checar a
         &lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Agora, vamos configurar a classe**&lt;code&gt;SceneDelegate&lt;/code&gt;** para que possamos inicializar nossa aplicação com o Beagle a partir de uma tela via &lt;a href=&#34;../../../principais-conceitos.md#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;:&lt;/a&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Agora, vamos configurar a classe**&lt;code&gt;SceneDelegate&lt;/code&gt;** para que possamos inicializar nossa aplicação com o Beagle a partir de uma tela via &lt;a href=&#34;../../../../../../principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;:&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Crie a constante &lt;strong&gt;&lt;code&gt;beagleScreen&lt;/code&gt;&lt;/strong&gt;, que irá receber a tela server-driven.&lt;/li&gt;
-&lt;li&gt;O argumento &lt;code&gt;init URL&lt;/code&gt; deve conter o endereço da &lt;a href=&#34;../../../features/urls.md#caminho-relativo&#34;&gt;&lt;strong&gt;URL relativa&lt;/strong&gt;&lt;/a&gt; que será criada no backend (BFF). No nosso exemplo a chamaremos de &amp;ldquo;/screen&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;O argumento &lt;code&gt;init URL&lt;/code&gt; deve conter o endereço da &lt;a href=&#34;../../../../../features/urls#caminho-relativo&#34;&gt;&lt;strong&gt;URL relativa&lt;/strong&gt;&lt;/a&gt; que será criada no backend (BFF). No nosso exemplo a chamaremos de &amp;ldquo;/screen&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Siga o exemplo abaixo:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;beagleScreen&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;remote&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(.&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;init&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;url&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/screen&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)))&lt;/span&gt;
@@ -472,7 +472,7 @@ Se você tem alguma dúvida sobre como usar este gerenciador, sugerimos checar a
 &lt;p&gt;Estas referências estão no main project file, na**&lt;code&gt;Info tab&lt;/code&gt;**, e estão assim organizadas:&lt;/p&gt;
 &lt;p&gt;A primeira fica na sessão:&lt;br&gt;
 &lt;em&gt;&lt;strong&gt;Custom iOS Target Properties&lt;/strong&gt;&lt;/em&gt; &lt;em&gt;&lt;strong&gt;&amp;gt;&lt;br&gt;
-&lt;code&gt;Main storyboard file base name&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;code&gt;Main storyboard file base name&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;A segunda fica na sessão:&lt;br&gt;
 &lt;em&gt;&lt;strong&gt;&lt;code&gt;Application Scene Manifest&amp;gt;&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;
 &lt;em&gt;&lt;strong&gt;&lt;code&gt;Scene Configuration&lt;/code&gt;&amp;gt;&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;
@@ -481,7 +481,7 @@ Se você tem alguma dúvida sobre como usar este gerenciador, sugerimos checar a
 &lt;code&gt;Storyboard name&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;No GIF abaixo, você vê melhor como remover as referências:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/main%20%282%29.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Feito! O Beagle está configurado na sua aplicação iOS. Agora, tudo o que você precisa é &lt;a href=&#34;../case-backend.md&#34;&gt;&lt;strong&gt;configurar um backend&lt;/strong&gt;&lt;/a&gt; para responder as requisições do seu aplicativo server-driven.&lt;/p&gt;
+&lt;p&gt;Feito! O Beagle está configurado na sua aplicação iOS. Agora, tudo o que você precisa é &lt;a href=&#34;../../case-backend&#34;&gt;&lt;strong&gt;configurar um backend&lt;/strong&gt;&lt;/a&gt; para responder as requisições do seu aplicativo server-driven.&lt;/p&gt;
 &lt;p&gt;Feita essa configuração, inicie a sua aplicação e você terá sua primeira tela server-driven!&lt;br&gt;
 Você verá a tela a seguir:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -715,7 +715,7 @@ export default App;
 &lt;li&gt;IDE Intelij IDE Community&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;passo-1-iniciar-o-projeto-usando-spring-initializr&#34;&gt;Passo 1: Iniciar o projeto usando Spring initializr&lt;/h3&gt;
-&lt;p&gt;O primeiro passo para configurar seu backend é acessar o site do &lt;a href=&#34;https://start.spring.io/&#34;&gt;&lt;strong&gt;Spring&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;br&gt;
+&lt;p&gt;O primeiro passo para configurar seu backend é acessar o site do &lt;a href=&#34;https://start.spring.io/&#34;&gt;&lt;strong&gt;Spring&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;
 Ele criará o projeto &lt;code&gt;Maven&lt;/code&gt; que facilitará a configuração do seu projeto.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://lh5.googleusercontent.com/ZshvFubtunY4x0JWWBLgSmFesUx7G2AVlSrCcS96efc2lJtAakhYJ-zxgDx7CkcCMOC6zedwUAS3ThBpVXfS8jyvieNLgL3ZJIxWnHJFLE77IOXZs3UqOR8TQazINC_enzoO4Y4Q&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Configuração do Spring&lt;/strong&gt;&lt;/p&gt;
@@ -746,7 +746,7 @@ Ele criará o projeto &lt;code&gt;Maven&lt;/code&gt; que facilitará a configura
 &lt;p&gt;&lt;img src=&#34;https://lh6.googleusercontent.com/6gOx1UCq-ZUK0yckdUAO2-Jb1YWOjw6kNijGu8-LVPyaDJuYAC2J7DcugsKgFDVqSkhF1RN5zKQ0s47l0ZmFgrq9ln7SPL-isTczLb9h5PQnXhUyWl6S7_QaUyUPGN-SyYVK_AZC&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;configurando-o-beagle&#34;&gt;Configurando o Beagle&lt;/h2&gt;
 &lt;h3 id=&#34;passo-1-configurar-o-projeto&#34;&gt;Passo 1: Configurar o projeto&lt;/h3&gt;
-&lt;p&gt;Como ponto de partida, siga nosso &lt;a href=&#34;../instalando-beagle/backend.md&#34;&gt;&lt;strong&gt;passo a passo para instalar o backend&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Como ponto de partida, siga nosso &lt;a href=&#34;../../../../instalando-beagle/backend&#34;&gt;&lt;strong&gt;passo a passo para instalar o backend&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;passo-2-definir-a-estrutura&#34;&gt;Passo 2: Definir a Estrutura&lt;/h3&gt;
 &lt;p&gt;O segundo passo é criar alguns pacotes para organizar melhor o projeto. Eles serão nomeados: &lt;strong&gt;&lt;code&gt;builder&lt;/code&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;code&gt;service&lt;/code&gt;&lt;/strong&gt; e &lt;strong&gt;&lt;code&gt;controller&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -905,8 +905,8 @@ Para que o serviço de backend seja consumido, você deve ter o front-end prepar
 
 &lt;p&gt;Para saber mais sobre como configurar o seu ambiente frontend, veja mais em:&lt;/p&gt;
 &lt;p&gt;👉 Tutorial do Beagle para &lt;a href=&#34;case-android/&#34;&gt;&lt;strong&gt;Android&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;👉Tutorial do Beagle para &lt;a href=&#34;../usando-beagle/ios.md&#34;&gt;&lt;strong&gt;iOS&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;👉Tutorial do Beagle para  &lt;a href=&#34;case-web.md&#34;&gt;&lt;strong&gt;Web&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;👉Tutorial do Beagle para &lt;a href=&#34;../../usando-beagle/ios&#34;&gt;&lt;strong&gt;iOS&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;👉Tutorial do Beagle para  &lt;a href=&#34;case-web&#34;&gt;&lt;strong&gt;Web&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>

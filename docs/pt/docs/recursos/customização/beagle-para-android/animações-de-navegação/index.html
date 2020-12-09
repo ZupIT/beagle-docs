@@ -104,7 +104,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -136,7 +136,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -2045,7 +2045,7 @@
 	       
 	<hr>
 <h2 id="introdução">Introdução</h2>
-<p>No Beagle, a ferramenta de <a href="../../navegacao-de-telas.md"><strong>navegação entre telas</strong></a> permite que você configure ações como navegar para uma nova tela ou fechar uma tela.</p>
+<p>No Beagle, a ferramenta de <a href="../../../../../../../navegacao-de-telas"><strong>navegação entre telas</strong></a> permite que você configure ações como navegar para uma nova tela ou fechar uma tela.</p>
 <p>A questão é que, além de realizar estas configurações, você pode também <strong>customizar a navegação</strong> da sua aplicação.</p>
 <p>De modo geral, existem duas opções de customização:</p>
 <ol>
@@ -2053,9 +2053,9 @@
 <li>A partir de transição de fragmentos fornecidas pelo próprio Beagle e que, neste caso, podem ser customizadas de acordo com a sua preferência e design system. São elas:</li>
 </ol>
 <ul>
-<li><a href="../../../api/acoes/navigate/pushview.md"><strong>PushView</strong></a></li>
-<li><a href="../../../api/acoes/navigate/popview.md"><strong>PopView</strong></a></li>
-<li><a href="../../../api/acoes/navigate/poptoview.md"><strong>PopToView</strong></a></li>
+<li><a href="../../../../../../../api/acoes/navigate/pushview"><strong>PushView</strong></a></li>
+<li><a href="../../../../../../api/acoes/navigate/popview"><strong>PopView</strong></a></li>
+<li><a href="../../../../../api/acoes/navigate/poptoview"><strong>PopToView</strong></a></li>
 </ul>
 <h2 id="protocolo-e-customização">Protocolo e customização</h2>
 <p>O <strong>protocolo padrão</strong> <strong>do Beagle</strong> para casos de customização é utilizar a ferramenta nativa do Android para fazer transição de fragmentos para customizar sua animação.</p>
@@ -2066,7 +2066,7 @@
 Para entender melhor como este processo funciona, leia mais na seção <a href="https://developer.android.com/reference/android/app/FragmentTransaction#setCustomAnimations%28int,%20int,%20int,%20int%29"><strong>setCustomAnimations</strong></a> do Android.
 </div>
 
-<p>A outra maneira de customizar uma animação de transição é por meio da <a href="../../../get-started/criando-projeto-do-zero/case-android/#passo-4-criando-o-appbeagleactivity"><strong>implementação da classe BeagleActivity</strong></a><strong>,</strong> na qual o Beagle utiliza o método <em><strong>getFragmentTransitionAnimation().</strong></em></p>
+<p>A outra maneira de customizar uma animação de transição é por meio da <a href="../../../../get-started/criando-projeto-do-zero/case-android/#passo-4-criando-o-appbeagleactivity"><strong>implementação da classe BeagleActivity</strong></a><strong>,</strong> na qual o Beagle utiliza o método <em><strong>getFragmentTransitionAnimation().</strong></em></p>
 <p>Caso este método não seja implementado e customizado, as transições seguirão a animação padrão Beagle. O código abaixo mostra o <strong>método da BeagleActivity</strong>, que pode ser sobrescrito dessa forma:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#204a87;font-weight:bold">open</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">getFragmentTransitionAnimation</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">FragmentTransitionAnimation</span><span style="color:#000;font-weight:bold">(</span>
     <span style="color:#000">enter</span> <span style="color:#000;font-weight:bold">=</span>  <span style="color:#000">R</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">anim</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">slide_from_right</span><span style="color:#000;font-weight:bold">,</span>
@@ -2105,7 +2105,7 @@ Para entender melhor como este processo funciona, leia mais na seção <a href="
 <li><strong>popEnter</strong></li>
 <li><strong>popExit</strong></li>
 </ol>
-<p>E todas elas descritas na <a href="https://developer.android.com/reference/android/app/FragmentTransaction#setCustomAnimations%28int,%20int,%20int,%20int%29"><strong>documentação nativa do setCustomAnimations</strong></a><strong>.</strong></p>
+<p>E todas elas descritas na <a href="https://developer.android.com/reference/android/app/FragmentTransaction#setCustomAnimations%28int,%20int,%20int,%20int%29"><strong>documentação nativa do setCustomAnimations</strong></a></p>
 
 </div>
 

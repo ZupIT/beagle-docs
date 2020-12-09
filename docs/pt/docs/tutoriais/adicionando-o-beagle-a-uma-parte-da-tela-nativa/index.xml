@@ -29,11 +29,11 @@
 &lt;h2 id=&#34;pré-requisitos&#34;&gt;Pré-requisitos&lt;/h2&gt;
 &lt;p&gt;Para que essa configuração funcione corretamente, você precisa de:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Um &lt;a href=&#34;../../principais-conceitos.md#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt; configurado com o Beagle. Caso não o tenha, veja como configurar nesse &lt;a href=&#34;../../get-started/criando-projeto-do-zero/case-backend.md&#34;&gt;&lt;strong&gt;tutorial&lt;/strong&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Um &lt;a href=&#34;../../../../../../../principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt; configurado com o Beagle. Caso não o tenha, veja como configurar nesse &lt;a href=&#34;../../../../../../../get-started/criando-projeto-do-zero/case-backend&#34;&gt;&lt;strong&gt;tutorial&lt;/strong&gt;&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Um frontend configurado com o Beagle para Android ou iOS. Caso não o tenha, siga um dos tutoriais de acordo com sistema operacional:
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;../../get-started/criando-projeto-do-zero/case-android/&#34;&gt;&lt;strong&gt;Android&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../get-started/criando-projeto-do-zero/case-ios/&#34;&gt;&lt;strong&gt;iOS&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../../../get-started/criando-projeto-do-zero/case-android/&#34;&gt;&lt;strong&gt;Android&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../../get-started/criando-projeto-do-zero/case-ios/&#34;&gt;&lt;strong&gt;iOS&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -249,8 +249,8 @@ Este botão terá uma ação do tipo &lt;code&gt;&amp;quot;Alert&amp;quot;&lt;/c
 &lt;/div&gt;
   &lt;div id=&#34;t97-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t97-2&#34;&gt;
 
-&lt;p&gt;&lt;p&gt;Se você ainda não configurou a biblioteca em seu projeto, &lt;a href=&#34;../../get-started/usando-beagle/&#34;&gt;&lt;strong&gt;veja aqui como fazer isso&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Você deve utilizar o &lt;a href=&#34;../../features/customizacao/beagle-para-web/parametros-remote-view.md&#34;&gt;&lt;strong&gt;Remote View&lt;/strong&gt;&lt;/a&gt;, fornecido pela biblioteca do Beagle, para criar telas híbridas com alguns componentes server driven na web.&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;Se você ainda não configurou a biblioteca em seu projeto, &lt;a href=&#34;../../../../get-started/usando-beagle/&#34;&gt;&lt;strong&gt;veja aqui como fazer isso&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Você deve utilizar o &lt;a href=&#34;../../../features/customizacao/beagle-para-web/parametros-remote-view&#34;&gt;&lt;strong&gt;Remote View&lt;/strong&gt;&lt;/a&gt;, fornecido pela biblioteca do Beagle, para criar telas híbridas com alguns componentes server driven na web.&lt;/p&gt;
 &lt;p&gt;Veja a seguir como funciona para cada framework:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;React&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;No React, você só precisa criar uma função que retorna dois componentes. Um deles  é o &lt;code&gt;BeagleRemoteView&lt;/code&gt; com o caminho para carregar o componente server-driven.&lt;/p&gt;

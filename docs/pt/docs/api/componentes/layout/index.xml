@@ -38,13 +38,13 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;children&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;List &amp;lt;&lt;a href=&#34;../../widget.md&#34;&gt;ServerDriven Component&lt;/a&gt;&amp;gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;List &amp;lt;&lt;a href=&#34;../../widget&#34;&gt;ServerDriven Component&lt;/a&gt;&amp;gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;✓&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Define a lista de componentes que fazem parte do container&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;context&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../../contexto/&#34;&gt;ContextData&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../../../../contexto/&#34;&gt;ContextData&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;É o &lt;a href=&#34;../../contexto/&#34;&gt;contexto&lt;/a&gt; contido por este Widget.&lt;/td&gt;
 &lt;/tr&gt;
@@ -126,7 +126,7 @@ A partir da versão 1.5.0 passamos a suportar o uso de contexto e reciclagem de 
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;direction&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;listview.md#listdirection&#34;&gt;ListDirection&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;listview#listdirection&#34;&gt;ListDirection&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Define o direcionamento em que os items da lista são exibidos.&lt;/td&gt;
 &lt;/tr&gt;
@@ -231,7 +231,7 @@ Valor default é ListDirection.VERTICAL
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;direction&lt;/td&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;listview.md#listdirection&#34;&gt;ListDirection&lt;/a&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;listview#listdirection&#34;&gt;ListDirection&lt;/a&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;Define o direcionamento da lista de visualiza&amp;#xE7;&amp;#xE3;o.&lt;/td&gt;
@@ -435,7 +435,7 @@ Valor default é ListDirection.VERTICAL
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
 &lt;p&gt;O Page View se refere ao seu tamanho quando visualizado em dispositivos Mobile (Android e iOS). O &lt;strong&gt;tamanho&lt;/strong&gt; dele é determinado pelo elemento pai em que está contido, ou seja, a largura (width) e a altura (height) será definida pelo componente pai.&lt;/p&gt;
-&lt;p&gt;Por exemplo, um &lt;code&gt;PageView&lt;/code&gt; pode ser declarado dentro de um &lt;a href=&#34;container.md&#34;&gt;&lt;strong&gt;Container&lt;/strong&gt;&lt;/a&gt; e sua largura e altura são responsáveis por determinar o tamanho do Page View.&lt;/p&gt;
+&lt;p&gt;Por exemplo, um &lt;code&gt;PageView&lt;/code&gt; pode ser declarado dentro de um &lt;a href=&#34;container&#34;&gt;&lt;strong&gt;Container&lt;/strong&gt;&lt;/a&gt; e sua largura e altura são responsáveis por determinar o tamanho do Page View.&lt;/p&gt;
 
 &lt;/div&gt;
 
@@ -584,7 +584,7 @@ Valor default é ListDirection.VERTICAL
         
         &lt;hr&gt;
 &lt;h2 id=&#34;o-que-é&#34;&gt;O que é?&lt;/h2&gt;
-&lt;p&gt;O &lt;code&gt;PageIndicator&lt;/code&gt; é um componente que tem como funcionalidade indicar a quantidade de páginas e qual é a atual do &lt;a href=&#34;pageview.md&#34;&gt;&lt;strong&gt;PageView&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;O &lt;code&gt;PageIndicator&lt;/code&gt; é um componente que tem como funcionalidade indicar a quantidade de páginas e qual é a atual do &lt;a href=&#34;pageview&#34;&gt;&lt;strong&gt;PageView&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -622,7 +622,7 @@ Valor default é ListDirection.VERTICAL
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;como-usar&#34;&gt;Como usar?&lt;/h2&gt;
-&lt;p&gt;Um exemplo completo de como usar o &lt;code&gt;PageIndicator&lt;/code&gt; está em &lt;a href=&#34;pageview.md#como-usar&#34;&gt;&lt;strong&gt;PageView&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Um exemplo completo de como usar o &lt;code&gt;PageIndicator&lt;/code&gt; está em &lt;a href=&#34;pageview#como-usar&#34;&gt;&lt;strong&gt;PageView&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;-teste-esse-componente-no-web-playgroundhttpsbeagle-playgroundnetlifyappdemodefault-componentspageviewjson&#34;&gt;&lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/pageview.json&#34;&gt;👉 Teste esse componente no Web Playground​&lt;/a&gt;&lt;/h3&gt;
 
       </description>
@@ -658,9 +658,9 @@ Valor default é ListDirection.VERTICAL
       &lt;td style=&#34;text-align:left&#34;&gt;children&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;
         &lt;p&gt;List
-          &lt;br /&gt;&amp;lt;&lt;a href=&#34;../../widget.md&#34;&gt;ServerDriven&lt;/a&gt;
+          &lt;br /&gt;&amp;lt;&lt;a href=&#34;../../widget&#34;&gt;ServerDriven&lt;/a&gt;
         &lt;/p&gt;
-        &lt;p&gt;&lt;a href=&#34;../../widget.md&#34;&gt;Component&lt;/a&gt;&amp;gt;&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&#34;../../widget&#34;&gt;Component&lt;/a&gt;&amp;gt;&lt;/p&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&amp;#x2713;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;Define a lista de atributos a ser exibida na visualiza&amp;#xE7;&amp;#xE3;o do

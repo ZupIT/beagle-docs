@@ -27,13 +27,13 @@ It can be done by:
 import Beagle class MyAppNavigationController: BeagleNavigationController { override func serverDrivenStateDidChange( to state: ServerDrivenState, at screenController: BeagleController ) { // TODO:Exibir carregamento e erros quando necessário." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zupit.github.io/docs-beagle/docs/resources/customization/beagle-for-ios/loading-and-error-treatment/" />
-<meta property="article:modified_time" content="2020-12-08T11:16:20-03:00" /><meta property="og:site_name" content="Beagle" />
+<meta property="article:modified_time" content="2020-12-09T12:56:53-03:00" /><meta property="og:site_name" content="Beagle" />
 <meta itemprop="name" content="Loading and Error Treatment">
 <meta itemprop="description" content="Added in Beagle 1.0.0 To customize the loading and error treatment behaviors on Beagle iOS, you have to create your own navigation controller.
 It can be done by:
  Extending BeagleNavigationController Changing the dependencies to use them.  The serverDrivenStateDidChange method must be overwritten to make this customization.  See how to create a navigation controller:
 import Beagle class MyAppNavigationController: BeagleNavigationController { override func serverDrivenStateDidChange( to state: ServerDrivenState, at screenController: BeagleController ) { // TODO:Exibir carregamento e erros quando necessário.">
-<meta itemprop="dateModified" content="2020-12-08T11:16:20-03:00" />
+<meta itemprop="dateModified" content="2020-12-09T12:56:53-03:00" />
 <meta itemprop="wordCount" content="492">
 
 
@@ -113,7 +113,7 @@ import Beagle class MyAppNavigationController: BeagleNavigationController { over
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -145,7 +145,7 @@ import Beagle class MyAppNavigationController: BeagleNavigationController { over
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -1969,7 +1969,7 @@ Make the<code>navigationControllerType</code> configuration with other Beagle&rs
         <span style="color:#000;font-weight:bold">}</span>
     <span style="color:#000;font-weight:bold">}</span>
 <span style="color:#000;font-weight:bold">}</span>
-</code></pre></div><p>If you want to keep the original loading style, just run the standard implementation and move forward to<a href="loading-and-error-treatment.md"> <strong>error treatment</strong></a><strong>.</strong></p>
+</code></pre></div><p>If you want to keep the original loading style, just run the standard implementation and move forward to<a href="loading-and-error-treatment"> <strong>error treatment</strong></a></p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">func</span> <span style="color:#000">serverDrivenStateDidChange</span><span style="color:#000;font-weight:bold">(</span>
     <span style="color:#000">to</span> <span style="color:#000">state</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">ServerDrivenState</span><span style="color:#000;font-weight:bold">,</span>
     <span style="color:#000">at</span> <span style="color:#000">screenController</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">BeagleController</span>
@@ -1982,13 +1982,13 @@ Make the<code>navigationControllerType</code> configuration with other Beagle&rs
 <p>The <strong>possibles errors</strong> are:</p>
 <ul>
 <li><code>remoteScreen(Request.Error)</code>: When the request to load a remote screen fails. Check out on the example below when it happens.</li>
-<li><code>lazyLoad(Request.Error)</code>: When the request to load a <a href="../../../api/components/lazy.md"><strong>Lazy component</strong></a> fails. Check out on the example below when it happens.</li>
-<li><code>action(Swift.Error)</code>: When an <a href="../../../api/actions/"><strong><code>Action</code></strong></a> &rsquo;s execution fails.</li>
+<li><code>lazyLoad(Request.Error)</code>: When the request to load a <a href="../../../../../../api/components/lazy"><strong>Lazy component</strong></a> fails. Check out on the example below when it happens.</li>
+<li><code>action(Swift.Error)</code>: When an <a href="../../../../../api/actions/"><strong><code>Action</code></strong></a> &rsquo;s execution fails.</li>
 </ul>
 <p><strong>Errors on a request</strong> (<code>Request.Error</code>):</p>
 <ul>
-<li><code>urlBuilderError</code>: When the resource URL or a <a href="beagledependencies.md#baseurl"><strong><code>baseURL</code></strong></a> is invalid.</li>
-<li><code>networkError</code>: When it&rsquo;s not possible to establish a connection or an error was returned from the <a href="../../../principais-conceitos.md#backend-for-frontend"><strong>BFF</strong></a>.</li>
+<li><code>urlBuilderError</code>: When the resource URL or a <a href="beagledependencies#baseurl"><strong><code>baseURL</code></strong></a> is invalid.</li>
+<li><code>networkError</code>: When it&rsquo;s not possible to establish a connection or an error was returned from the <a href="../../../../principais-conceitos#backend-for-frontend"><strong>BFF</strong></a>.</li>
 <li><code>decoding</code>: When the answer sent from BFF is different than the object expected.</li>
 </ul>
 
@@ -2084,7 +2084,7 @@ The error has a <code>retry</code> block that allows you to run again the action
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top"><div class="dr-last-modified-text">
-  Last modified December 8, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/e05175f4fd702526fcc144d18063eb4f463a1939">fix tabs (e05175f4)</a>
+  Last modified December 9, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/2500a2815c1ffbbcf064963526033e3a2b985837">fix tabs and some links (2500a281)</a>
 </div></div>
 </div>
 

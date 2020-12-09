@@ -124,7 +124,7 @@ Faça a configuração das classes com bastante atenção, pois se você anotá-
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Você pode criar o BeagleActivity agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-la. Para saber mais, confira a seção sobre&lt;a href=&#34;../../features/customizacao/beagle-para-android/beagle-activity-customizada.md&#34;&gt; &lt;strong&gt;Beagle Activity Customizada&lt;/strong&gt;&lt;/a&gt;.
+Você pode criar o BeagleActivity agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-la. Para saber mais, confira a seção sobre&lt;a href=&#34;../../features/customizacao/beagle-para-android/beagle-activity-customizada&#34;&gt; &lt;strong&gt;Beagle Activity Customizada&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;h3 id=&#34;passo-4-iniciar-o-beagle-e-o-design-system&#34;&gt;&lt;strong&gt;Passo 4: Iniciar o Beagle e o Design System&lt;/strong&gt;&lt;/h3&gt;
@@ -136,7 +136,7 @@ Você pode criar o BeagleActivity agora, mas neste momento é possível prossegu
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Você pode criar o Design System agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-lo. Para saber mais, confira a seção sobre &lt;a href=&#34;../criando-projeto-do-zero/case-android/design-system-com-beagle-android.md&#34;&gt;&lt;strong&gt;Design System com Beagle para Android&lt;/strong&gt;&lt;/a&gt;.
+Você pode criar o Design System agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-lo. Para saber mais, confira a seção sobre &lt;a href=&#34;../../../criando-projeto-do-zero/case-android/design-system-com-beagle-android&#34;&gt;&lt;strong&gt;Design System com Beagle para Android&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;h3 id=&#34;passo-5-criar-o-beaglesetup&#34;&gt;&lt;strong&gt;Passo 5: Criar o BeagleSetup&lt;/strong&gt;&lt;/h3&gt;
@@ -540,7 +540,7 @@ Parabéns, você criou sua primeira tela com Beagle!
 &lt;p&gt;Neste tutorial, focamos em uma configuração de tela simples para você entender o processo, na prática, sem se preocupar com uma hierarquia de telas complexas. Mas, claro, você pode fazer bem mais no seu projeto com o Beagle!&lt;/p&gt;
 &lt;h2 id=&#34;informação-adicional&#34;&gt;Informação adicional&lt;/h2&gt;
 &lt;p&gt;Antes de usar o Beagle, fique atento a &lt;strong&gt;configuração da build de release e o ProGuard.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Mesmo não sendo necessário neste momento, é bom ter em mente que você precisará &lt;a href=&#34;../../features/customizacao/beagle-para-android/configuracao-do-proguard.md&#34;&gt;&lt;strong&gt;configurar o ProGuard&lt;/strong&gt;&lt;/a&gt; para ativar o ofuscamento do seu código quando estiver publicando releases.&lt;/p&gt;
+&lt;p&gt;Mesmo não sendo necessário neste momento, é bom ter em mente que você precisará &lt;a href=&#34;../../../features/customizacao/beagle-para-android/configuracao-do-proguard&#34;&gt;&lt;strong&gt;configurar o ProGuard&lt;/strong&gt;&lt;/a&gt; para ativar o ofuscamento do seu código quando estiver publicando releases.&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
@@ -568,13 +568,13 @@ As classes anotadas como &lt;code&gt;BeagleComponent&lt;/code&gt; e &lt;code&gt;
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 
-Veja como &lt;a href=&#34;../instalando-beagle/&#34;&gt;&lt;strong&gt;instalar o Beagle&lt;/strong&gt;&lt;/a&gt; caso ainda não tenha concluído esta etapa.
+Veja como &lt;a href=&#34;../../../../../../instalando-beagle/&#34;&gt;&lt;strong&gt;instalar o Beagle&lt;/strong&gt;&lt;/a&gt; caso ainda não tenha concluído esta etapa.
 &lt;/div&gt;
 
 &lt;p&gt;Atualmente, existem dois tipos de abordagens para a renderização de telas com o Beagle: &lt;strong&gt;remota&lt;/strong&gt; e &lt;strong&gt;declarativa.&lt;/strong&gt;&lt;/p&gt;
 &lt;h4 id=&#34;renderização-remota&#34;&gt;Renderização Remota&lt;/h4&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Principal abordagem usada no Beagle por ser fundamentada no conceito de &lt;a href=&#34;../../principais-conceitos.md&#34;&gt;&lt;strong&gt;server-driven UI&lt;/strong&gt;&lt;/a&gt;. Ela permite que você construa layouts dinamicamente, consumindo as informações fornecidas por um &lt;a href=&#34;../../principais-conceitos.md&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;, por meio de uma URL remota.&lt;/p&gt;
+&lt;p&gt;Principal abordagem usada no Beagle por ser fundamentada no conceito de &lt;a href=&#34;../../../../../../../../../../principais-conceitos&#34;&gt;&lt;strong&gt;server-driven UI&lt;/strong&gt;&lt;/a&gt;. Ela permite que você construa layouts dinamicamente, consumindo as informações fornecidas por um &lt;a href=&#34;../../principais-conceitos&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;, por meio de uma URL remota.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;renderização-declarativa&#34;&gt;Renderização Declarativa&lt;/h4&gt;
 &lt;blockquote&gt;
@@ -608,7 +608,7 @@ Veja como &lt;a href=&#34;../instalando-beagle/&#34;&gt;&lt;strong&gt;instalar o
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Note que a &lt;strong&gt;&lt;code&gt;Screen&lt;/code&gt;&lt;/strong&gt; está sendo construída utilizando &lt;strong&gt;&lt;code&gt;Flex&lt;/code&gt;&lt;/strong&gt;. Para entender melhor esses componentes e suas propriedades, vá para a seção &lt;a href=&#34;../../features/posicionamento-de-componentes/&#34;&gt;&lt;strong&gt;posicionamento de componentes&lt;/strong&gt;&lt;/a&gt;.
+Note que a &lt;strong&gt;&lt;code&gt;Screen&lt;/code&gt;&lt;/strong&gt; está sendo construída utilizando &lt;strong&gt;&lt;code&gt;Flex&lt;/code&gt;&lt;/strong&gt;. Para entender melhor esses componentes e suas propriedades, vá para a seção &lt;a href=&#34;../../../../../features/posicionamento-de-componentes/&#34;&gt;&lt;strong&gt;posicionamento de componentes&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;h3 id=&#34;passo-2-instanciar-o-beaglescreenviewcontroller&#34;&gt;Passo 2: Instanciar o &lt;strong&gt;BeagleScreenViewController&lt;/strong&gt;&lt;/h3&gt;
@@ -623,7 +623,7 @@ Note que a &lt;strong&gt;&lt;code&gt;Screen&lt;/code&gt;&lt;/strong&gt; está se
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Caso queira utilizar o tipo**&lt;code&gt;remote&lt;/code&gt;**, veja &lt;a href=&#34;../../tutoriais/exibindo-uma-tela.md&#34;&gt;&lt;strong&gt;como exibir uma tela Server-Driven UI&lt;/strong&gt;&lt;/a&gt;.
+Caso queira utilizar o tipo**&lt;code&gt;remote&lt;/code&gt;**, veja &lt;a href=&#34;../../../../tutoriais/exibindo-uma-tela&#34;&gt;&lt;strong&gt;como exibir uma tela Server-Driven UI&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;p&gt;Feito isso, basta apresentá-la onde preferir.&lt;/p&gt;
@@ -647,7 +647,7 @@ Não esqueça de adicionar**&lt;code&gt;import Beagle&lt;/code&gt;**.
 
 &lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
 &lt;p&gt;Nesta seção, você viu como criar sua primeira tela declarativa utilizando o &lt;strong&gt;Beagle&lt;/strong&gt;, em sua forma mais simples, sem entrar no conceito de server-driven UI.&lt;/p&gt;
-&lt;p&gt;👉Para entender melhor &lt;strong&gt;como configurar o Beagle&lt;/strong&gt; e utilizá-lo aplicando o conceito de server-driven UI, veja como &lt;a href=&#34;../criando-projeto-do-zero/case-ios/&#34;&gt;&lt;strong&gt;criar um projeto iOS do zero&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;👉Para entender melhor &lt;strong&gt;como configurar o Beagle&lt;/strong&gt; e utilizá-lo aplicando o conceito de server-driven UI, veja como &lt;a href=&#34;../../criando-projeto-do-zero/case-ios/&#34;&gt;&lt;strong&gt;criar um projeto iOS do zero&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
@@ -667,7 +667,7 @@ Não esqueça de adicionar**&lt;code&gt;import Beagle&lt;/code&gt;**.
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Caso queira utilizar um BFF, é necessário ter um CORS configurado. Veja como fazer isso nas &lt;a href=&#34;../backend.md#cors&#34;&gt;&lt;strong&gt;configurações de uso para backend&lt;/strong&gt;&lt;/a&gt;.
+Caso queira utilizar um BFF, é necessário ter um CORS configurado. Veja como fazer isso nas &lt;a href=&#34;../../backend#cors&#34;&gt;&lt;strong&gt;configurações de uso para backend&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 
@@ -685,7 +685,7 @@ Caso queira utilizar um BFF, é necessário ter um CORS configurado. Veja como f
         
         &lt;hr&gt;
 &lt;h2 id=&#34;configurações-de-uso&#34;&gt;Configurações de uso&lt;/h2&gt;
-&lt;p&gt;Quando você finalizar a &lt;a href=&#34;../instalando-beagle/backend.md&#34;&gt;&lt;strong&gt;instalação do Beagle&lt;/strong&gt;&lt;/a&gt;, seu BFF estará com a configuração padrão de uso.&lt;/p&gt;
+&lt;p&gt;Quando você finalizar a &lt;a href=&#34;../../instalando-beagle/backend&#34;&gt;&lt;strong&gt;instalação do Beagle&lt;/strong&gt;&lt;/a&gt;, seu BFF estará com a configuração padrão de uso.&lt;/p&gt;
 &lt;h3 id=&#34;cors&#34;&gt;CORS&lt;/h3&gt;
 
 

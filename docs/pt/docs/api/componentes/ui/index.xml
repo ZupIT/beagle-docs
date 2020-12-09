@@ -68,20 +68,20 @@
       &lt;td style=&#34;text-align:left&#34;&gt;Array de a&amp;#xE7;&amp;#xF5;es que esse bot&amp;#xE3;o pode disparar quando clicado.
         &amp;#xC9; poss&amp;#xED;vel definir uma A&amp;#xE7;&amp;#xE3;o customizada ou qualquer
         a&amp;#xE7;&amp;#xE3;o j&amp;#xE1; dispon&amp;#xED;vel na interface, como por exemplo uma
-        a&amp;#xE7;&amp;#xE3;o que mostra uma mensagem de alerta(&lt;a href=&#34;../../acoes/alert.md&#34;&gt;Alert&lt;/a&gt;).
+        a&amp;#xE7;&amp;#xE3;o que mostra uma mensagem de alerta(&lt;a href=&#34;../../acoes/alert&#34;&gt;Alert&lt;/a&gt;).
         Este atributo &amp;#xE9; opcional, mas se uma a&amp;#xE7;&amp;#xE3;o for definida aqui
         ela precisa estar configurada no frontend. Para criar uma a&amp;#xE7;&amp;#xE3;o
-        no frontend veja o exemplo: &lt;a href=&#34;../../../features/criacao-de-novas-acoes.md&#34;&gt;Criando uma a&amp;#xE7;&amp;#xE3;o customizada&lt;/a&gt;
+        no frontend veja o exemplo: &lt;a href=&#34;../../../features/criacao-de-novas-acoes&#34;&gt;Criando uma a&amp;#xE7;&amp;#xE3;o customizada&lt;/a&gt;
       &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;clickAnalyticsEvent&lt;/td&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../../analytics.md&#34;&gt;ClickEvent&lt;/a&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../../analytics&#34;&gt;ClickEvent&lt;/a&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;Evento de clique que ser&amp;#xE1; disparado caso tenha sido implementado
         um servi&amp;#xE7;o de analytics. Para saber mais sobre analytics e os eventos
-        suportados, veja o exemplo: &lt;a href=&#34;../../analytics.md&#34;&gt;Analytics&lt;/a&gt;.&lt;/td&gt;
+        suportados, veja o exemplo: &lt;a href=&#34;../../analytics&#34;&gt;Analytics&lt;/a&gt;.&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -145,13 +145,13 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;path&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;imagepath.md&#34;&gt;&lt;strong&gt;ImagePath&lt;/strong&gt;&lt;/a&gt; ou &lt;a href=&#34;../../../contexto/#binding&#34;&gt;&lt;strong&gt;Binding&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;imagepath&#34;&gt;&lt;strong&gt;ImagePath&lt;/strong&gt;&lt;/a&gt; ou &lt;a href=&#34;../../../../contexto/#binding&#34;&gt;&lt;strong&gt;Binding&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;✓&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Referência de uma imagem local ou url de uma imagem remota a ser exibida.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;mode&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;imagecontentmode.md&#34;&gt;ImageContentMode&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;imagecontentmode&#34;&gt;ImageContentMode&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;É responsável por controlar como a imagem será controlada internamente.&lt;/td&gt;
 &lt;/tr&gt;
@@ -275,7 +275,7 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;como-usar&#34;&gt;Como usar?&lt;/h2&gt;
-&lt;p&gt;No exemplo a seguir, são utilizados outros componentes para explicar o TabBar: o &lt;a href=&#34;../layout/pageview.md&#34;&gt;&lt;strong&gt;PageView&lt;/strong&gt;&lt;/a&gt; e o &lt;a href=&#34;../../contexto/&#34;&gt;&lt;strong&gt;Contexto&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;No exemplo a seguir, são utilizados outros componentes para explicar o TabBar: o &lt;a href=&#34;../../layout/pageview&#34;&gt;&lt;strong&gt;PageView&lt;/strong&gt;&lt;/a&gt; e o &lt;a href=&#34;../../../contexto/&#34;&gt;&lt;strong&gt;Contexto&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;O &lt;strong&gt;Page View&lt;/strong&gt; é utilizado para renderizar as páginas que se quer exibir de acordo com cada aba, ou seja, ele vai criar a visualização de cada uma delas. É nele que você vai definir os componentes que quer exibir ao clicar em cada aba.&lt;/p&gt;
 &lt;p&gt;Os componentes serão renderizados de acordo com a sua posição na lista. Isso significa que, se em nossa lista temos 2 componentes de texto - o TAB 1 e TAB 2 -, o primeiro tem posição ZERO = 0, enquanto que o segundo tem posição UM = 1. O atributo &lt;strong&gt;currentTab&lt;/strong&gt; é quem define qual componente é exibido de acordo com o valor definido nele.&lt;/p&gt;
 &lt;p&gt;Já o &lt;strong&gt;Contexto&lt;/strong&gt; é utilizado para guardar o indicador (posição) da aba selecionada  e informá-lo ao PageView, que coordena qual elemento irá apresentar.&lt;/p&gt;
@@ -399,7 +399,7 @@ Este exemplo não existe no playground, mas você pode copiar e colar o código 
 
 &lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
 
-Este componente foi depreciado na versão 1.1.0 do Beagle e será removido em uma versão futura. Utilize o componente &lt;a href=&#34;tab-bar.md&#34;&gt;TabBar&lt;/a&gt; no lugar do Tab View
+Este componente foi depreciado na versão 1.1.0 do Beagle e será removido em uma versão futura. Utilize o componente &lt;a href=&#34;tab-bar&#34;&gt;TabBar&lt;/a&gt; no lugar do Tab View
 &lt;/div&gt;
 
 &lt;h2 id=&#34;o-que-é-tab-view&#34;&gt;O que é Tab View?&lt;/h2&gt;
@@ -417,7 +417,7 @@ Este componente foi depreciado na versão 1.1.0 do Beagle e será removido em um
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;children&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;List&amp;lt;&lt;a href=&#34;tabview.md#definicao-tabitem&#34;&gt;TabItem&lt;/a&gt;&amp;gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;List&amp;lt;&lt;a href=&#34;tabview#definicao-tabitem&#34;&gt;TabItem&lt;/a&gt;&amp;gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;✓&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Uma lista de tab itens disponíveis no componente &lt;code&gt;Tab View&lt;/code&gt;. O &lt;code&gt;Tab Item&lt;/code&gt; em si não é um &lt;code&gt;widget&lt;/code&gt;, mas seu conteúdo é um componente server driven recebido por meio do Beagle.&lt;/td&gt;
 &lt;/tr&gt;
@@ -588,7 +588,7 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;alignment&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;text.md#textalignment&#34;&gt;&lt;strong&gt;TextAlignment&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;text#textalignment&#34;&gt;&lt;strong&gt;TextAlignment&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;Define o alinhamento do conteúdo do texto.&lt;/td&gt;
 &lt;/tr&gt;
@@ -723,9 +723,9 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;
         &lt;p&gt;Array de a&amp;#xE7;&amp;#xF5;es que esse campo &lt;b&gt;pode disparar quando seu valor for alterado&lt;/b&gt;.
-          &amp;#xC9; poss&amp;#xED;vel definir uma &lt;a href=&#34;../../../features/criacao-de-novas-acoes.md&#34;&gt;&lt;b&gt;a&amp;#xE7;&amp;#xE3;o customizada&lt;/b&gt;&lt;/a&gt;&lt;b&gt; &lt;/b&gt;ou
+          &amp;#xC9; poss&amp;#xED;vel definir uma &lt;a href=&#34;../../../features/criacao-de-novas-acoes&#34;&gt;&lt;b&gt;a&amp;#xE7;&amp;#xE3;o customizada&lt;/b&gt;&lt;/a&gt;&lt;b&gt; &lt;/b&gt;ou
           qualquer a&amp;#xE7;&amp;#xE3;o j&amp;#xE1; dispon&amp;#xED;vel na interface, como por
-          exemplo uma a&amp;#xE7;&amp;#xE3;o que mostra uma mensagem de alerta(&lt;a href=&#34;../../acoes/alert.md&#34;&gt;&lt;b&gt;Alert&lt;/b&gt;&lt;/a&gt;).&lt;/p&gt;
+          exemplo uma a&amp;#xE7;&amp;#xE3;o que mostra uma mensagem de alerta(&lt;a href=&#34;../../acoes/alert&#34;&gt;&lt;b&gt;Alert&lt;/b&gt;&lt;/a&gt;).&lt;/p&gt;
         &lt;p&gt;&lt;/p&gt;
         &lt;p&gt;Este atributo &amp;#xE9; opcional, mas se uma a&amp;#xE7;&amp;#xE3;o for definida
           aqui ela precisa estar configurada no frontend.&lt;/p&gt;
@@ -737,9 +737,9 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;
         &lt;p&gt;Array de a&amp;#xE7;&amp;#xF5;es que esse campo &lt;b&gt;pode disparar quando seu foco &amp;#xE9; retirado&lt;/b&gt;.
-          &amp;#xC9; poss&amp;#xED;vel definir uma &lt;a href=&#34;../../../features/criacao-de-novas-acoes.md&#34;&gt;&lt;b&gt;a&amp;#xE7;&amp;#xE3;o customizada&lt;/b&gt;&lt;/a&gt;&lt;b&gt; &lt;/b&gt;ou
+          &amp;#xC9; poss&amp;#xED;vel definir uma &lt;a href=&#34;../../../features/criacao-de-novas-acoes&#34;&gt;&lt;b&gt;a&amp;#xE7;&amp;#xE3;o customizada&lt;/b&gt;&lt;/a&gt;&lt;b&gt; &lt;/b&gt;ou
           qualquer a&amp;#xE7;&amp;#xE3;o j&amp;#xE1; dispon&amp;#xED;vel na interface como, por
-          exemplo, uma a&amp;#xE7;&amp;#xE3;o que mostra uma mensagem de alerta(&lt;a href=&#34;../../acoes/alert.md&#34;&gt;&lt;b&gt;Alert&lt;/b&gt;&lt;/a&gt;).&lt;/p&gt;
+          exemplo, uma a&amp;#xE7;&amp;#xE3;o que mostra uma mensagem de alerta(&lt;a href=&#34;../../acoes/alert&#34;&gt;&lt;b&gt;Alert&lt;/b&gt;&lt;/a&gt;).&lt;/p&gt;
         &lt;p&gt;&lt;/p&gt;
         &lt;p&gt;Este atributo &amp;#xE9; opcional, mas se uma a&amp;#xE7;&amp;#xE3;o for definida
           aqui ela precisa estar configurada no frontend.&lt;/p&gt;
@@ -751,9 +751,9 @@ Se o título e ícone não forem declarados no &lt;code&gt;Tab Item&lt;/code&gt;
       &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;
         &lt;p&gt;Array de a&amp;#xE7;&amp;#xF5;es que esse campo pode disparar quando &amp;#xE9; colocado
-          em foco. &amp;#xC9; poss&amp;#xED;vel definir uma &lt;a href=&#34;../../../features/criacao-de-novas-acoes.md&#34;&gt;&lt;b&gt;a&amp;#xE7;&amp;#xE3;o customizada&lt;/b&gt;&lt;/a&gt;&lt;b&gt; &lt;/b&gt;ou
+          em foco. &amp;#xC9; poss&amp;#xED;vel definir uma &lt;a href=&#34;../../../features/criacao-de-novas-acoes&#34;&gt;&lt;b&gt;a&amp;#xE7;&amp;#xE3;o customizada&lt;/b&gt;&lt;/a&gt;&lt;b&gt; &lt;/b&gt;ou
           qualquer a&amp;#xE7;&amp;#xE3;o j&amp;#xE1; dispon&amp;#xED;vel na interface como, por
-          exemplo, uma a&amp;#xE7;&amp;#xE3;o que mostra uma mensagem de alerta(&lt;a href=&#34;../../acoes/alert.md&#34;&gt;&lt;b&gt;Alert&lt;/b&gt;&lt;/a&gt;).&lt;/p&gt;
+          exemplo, uma a&amp;#xE7;&amp;#xE3;o que mostra uma mensagem de alerta(&lt;a href=&#34;../../acoes/alert&#34;&gt;&lt;b&gt;Alert&lt;/b&gt;&lt;/a&gt;).&lt;/p&gt;
         &lt;p&gt;&lt;/p&gt;
         &lt;p&gt;Este atributo &amp;#xE9; opcional, mas se uma a&amp;#xE7;&amp;#xE3;o for definida
           aqui ela precisa estar configurada no frontend.&lt;/p&gt;

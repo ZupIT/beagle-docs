@@ -48,7 +48,7 @@
         
         &lt;hr&gt;
 &lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
-&lt;p&gt;No Beagle, a ferramenta de &lt;a href=&#34;../../navegacao-de-telas.md&#34;&gt;&lt;strong&gt;navegação entre telas&lt;/strong&gt;&lt;/a&gt; permite que você configure ações como navegar para uma nova tela ou fechar uma tela.&lt;/p&gt;
+&lt;p&gt;No Beagle, a ferramenta de &lt;a href=&#34;../../../../../../../navegacao-de-telas&#34;&gt;&lt;strong&gt;navegação entre telas&lt;/strong&gt;&lt;/a&gt; permite que você configure ações como navegar para uma nova tela ou fechar uma tela.&lt;/p&gt;
 &lt;p&gt;A questão é que, além de realizar estas configurações, você pode também &lt;strong&gt;customizar a navegação&lt;/strong&gt; da sua aplicação.&lt;/p&gt;
 &lt;p&gt;De modo geral, existem duas opções de customização:&lt;/p&gt;
 &lt;ol&gt;
@@ -56,9 +56,9 @@
 &lt;li&gt;A partir de transição de fragmentos fornecidas pelo próprio Beagle e que, neste caso, podem ser customizadas de acordo com a sua preferência e design system. São elas:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;../../../api/acoes/navigate/pushview.md&#34;&gt;&lt;strong&gt;PushView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../../api/acoes/navigate/popview.md&#34;&gt;&lt;strong&gt;PopView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../../api/acoes/navigate/poptoview.md&#34;&gt;&lt;strong&gt;PopToView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../../../../api/acoes/navigate/pushview&#34;&gt;&lt;strong&gt;PushView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../../../api/acoes/navigate/popview&#34;&gt;&lt;strong&gt;PopView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../../api/acoes/navigate/poptoview&#34;&gt;&lt;strong&gt;PopToView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;protocolo-e-customização&#34;&gt;Protocolo e customização&lt;/h2&gt;
 &lt;p&gt;O &lt;strong&gt;protocolo padrão&lt;/strong&gt; &lt;strong&gt;do Beagle&lt;/strong&gt; para casos de customização é utilizar a ferramenta nativa do Android para fazer transição de fragmentos para customizar sua animação.&lt;/p&gt;
@@ -69,7 +69,7 @@
 Para entender melhor como este processo funciona, leia mais na seção &lt;a href=&#34;https://developer.android.com/reference/android/app/FragmentTransaction#setCustomAnimations%28int,%20int,%20int,%20int%29&#34;&gt;&lt;strong&gt;setCustomAnimations&lt;/strong&gt;&lt;/a&gt; do Android.
 &lt;/div&gt;
 
-&lt;p&gt;A outra maneira de customizar uma animação de transição é por meio da &lt;a href=&#34;../../../get-started/criando-projeto-do-zero/case-android/#passo-4-criando-o-appbeagleactivity&#34;&gt;&lt;strong&gt;implementação da classe BeagleActivity&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;,&lt;/strong&gt; na qual o Beagle utiliza o método &lt;em&gt;&lt;strong&gt;getFragmentTransitionAnimation().&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A outra maneira de customizar uma animação de transição é por meio da &lt;a href=&#34;../../../../get-started/criando-projeto-do-zero/case-android/#passo-4-criando-o-appbeagleactivity&#34;&gt;&lt;strong&gt;implementação da classe BeagleActivity&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;,&lt;/strong&gt; na qual o Beagle utiliza o método &lt;em&gt;&lt;strong&gt;getFragmentTransitionAnimation().&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Caso este método não seja implementado e customizado, as transições seguirão a animação padrão Beagle. O código abaixo mostra o &lt;strong&gt;método da BeagleActivity&lt;/strong&gt;, que pode ser sobrescrito dessa forma:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;open&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;getFragmentTransitionAnimation&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;FragmentTransitionAnimation&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;enter&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;  &lt;span style=&#34;color:#000&#34;&gt;R&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;anim&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;slide_from_right&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -108,7 +108,7 @@ Para entender melhor como este processo funciona, leia mais na seção &lt;a hre
 &lt;li&gt;&lt;strong&gt;popEnter&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;popExit&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;E todas elas descritas na &lt;a href=&#34;https://developer.android.com/reference/android/app/FragmentTransaction#setCustomAnimations%28int,%20int,%20int,%20int%29&#34;&gt;&lt;strong&gt;documentação nativa do setCustomAnimations&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;E todas elas descritas na &lt;a href=&#34;https://developer.android.com/reference/android/app/FragmentTransaction#setCustomAnimations%28int,%20int,%20int,%20int%29&#34;&gt;&lt;strong&gt;documentação nativa do setCustomAnimations&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;/div&gt;
 
@@ -235,7 +235,7 @@ Para entender melhor como este processo funciona, leia mais na seção &lt;a hre
 &lt;p&gt;Você pode criar uma Toolbar e usá-la em sua activity através do método&lt;code&gt;getToolbar()&lt;/code&gt; . Isso permite  retornar a Toolbar desejada.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;getToolbar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;():&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Toolbar&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;findViewById&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Toolbar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;R&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;toolbar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;3-tratamento-de-erros&#34;&gt;3. Tratamento de erros&lt;/h3&gt;
-&lt;p&gt;Você pode observar os estados e tratar os erros a partir do &lt;a href=&#34;carregamento-e-tratamento-de-erros.md&#34;&gt;&lt;code&gt;onServerDrivenContainerStateChanged()&lt;/code&gt;&lt;/a&gt;``&lt;/p&gt;
+&lt;p&gt;Você pode observar os estados e tratar os erros a partir do &lt;a href=&#34;carregamento-e-tratamento-de-erros&#34;&gt;&lt;code&gt;onServerDrivenContainerStateChanged()&lt;/code&gt;&lt;/a&gt;``&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;onServerDrivenContainerStateChanged&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;state&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ServerDrivenState&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
      &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;state&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ServerDrivenState&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Error&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
           &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//Your error&amp;#39;s treatment 
@@ -625,7 +625,7 @@ Aqui, você também habilita o &lt;code&gt;minifyEnable&lt;/code&gt; e &lt;code&
 
     &amp;lt;/intent-filter&amp;gt;
 &amp;lt;/activity&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Agora você só precisa chamar a &lt;a href=&#34;../../../api/acoes/navigate/&#34;&gt;&lt;strong&gt;Action Navigate&lt;/strong&gt;&lt;/a&gt; com o &lt;strong&gt;método&lt;/strong&gt; &lt;a href=&#34;../../../api/acoes/navigate/opennativeroute.md&#34;&gt;&lt;strong&gt;OpenNativeRoute&lt;/strong&gt;&lt;/a&gt; como o exemplo abaixo:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Agora você só precisa chamar a &lt;a href=&#34;../../../../api/acoes/navigate/&#34;&gt;&lt;strong&gt;Action Navigate&lt;/strong&gt;&lt;/a&gt; com o &lt;strong&gt;método&lt;/strong&gt; &lt;a href=&#34;../../../../api/acoes/navigate/opennativeroute&#34;&gt;&lt;strong&gt;OpenNativeRoute&lt;/strong&gt;&lt;/a&gt; como o exemplo abaixo:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//Widget used to navigate to a native activity
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Button&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Click to navigate!&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -858,14 +858,14 @@ class PersonAdapter : BeagleTypeAdapter&amp;lt;Person&amp;gt; {
 
 &lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
 
-Este componente foi descontinuado na versão 1.1.0 e será removido em uma versão futura. Use &lt;a href=&#34;../../../api/componentes/formularios/simple-form.md&#34;&gt;SimpleForm&lt;/a&gt;  em seu lugar
+Este componente foi descontinuado na versão 1.1.0 e será removido em uma versão futura. Use &lt;a href=&#34;../../../../../api/componentes/formularios/simple-form&#34;&gt;SimpleForm&lt;/a&gt;  em seu lugar
 &lt;/div&gt;
 
 &lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
 &lt;p&gt;Um componente do tipo &lt;strong&gt;&lt;code&gt;Validator&lt;/code&gt;&lt;/strong&gt; é utilizado quando for necessário validar alguma informação em um formulário. Essa validação acontece através do método &lt;code&gt;isValid&lt;/code&gt;,  que é chamado sempre que são executados um&lt;code&gt;FormSubmit&lt;/code&gt; ou um &lt;code&gt;notifyChanges()&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Além disso, esse &lt;strong&gt;Validator&lt;/strong&gt; é listado no componente que recebe dados em um formulário, ao qual chamamos de&lt;code&gt;FormInput.&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;contexto-do-validador&#34;&gt;Contexto do validador&lt;/h2&gt;
-&lt;p&gt;No Beagle,  é possível usar o componente &lt;strong&gt;Form&lt;/strong&gt; para capturar dados informados pelo usuário, validá-los e enviá-los ao &lt;a href=&#34;../../../principais-conceitos.md#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;No Beagle,  é possível usar o componente &lt;strong&gt;Form&lt;/strong&gt; para capturar dados informados pelo usuário, validá-los e enviá-los ao &lt;a href=&#34;../../../../principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Essa validação pode tanto ocorrer quando o usuário ativa o FormSubmit e/ou quando o usuário notifica que o estado de seu &lt;code&gt;InputWidget(FormInput)&lt;/code&gt; mudou, como por exemplo, quando ditamos um texto ou quando o campo perde o foco.&lt;/p&gt;
 &lt;p&gt;O &lt;strong&gt;Validator&lt;/strong&gt; recebe dois parâmetros genéricos e possui um único método &lt;code&gt;isValid&lt;/code&gt; que retorna um valor booleano.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;interface&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Validator&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;I&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;W&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;

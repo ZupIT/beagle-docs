@@ -24,7 +24,7 @@
         
         &lt;hr&gt;
 &lt;h2 id=&#34;creating-styles-for-beagle-ios&#34;&gt;&lt;strong&gt;C&lt;/strong&gt;reating styles for Beagle iOS&lt;/h2&gt;
-&lt;p&gt;On the first use example, you saw how to &lt;a href=&#34;./&#34;&gt;&lt;strong&gt;implement Beagle&lt;/strong&gt;&lt;/a&gt; and create your first server-driven screen.&lt;/p&gt;
+&lt;p&gt;On the first use example, you saw how to &lt;a href=&#34;../.././&#34;&gt;&lt;strong&gt;implement Beagle&lt;/strong&gt;&lt;/a&gt; and create your first server-driven screen.&lt;/p&gt;
 &lt;p&gt;In this tutorial, the idea is to get deeper from the &lt;a href=&#34;./#passo-3-configurando-o-xcode&#34;&gt;&lt;strong&gt;previous project&lt;/strong&gt;&lt;/a&gt; to create a Design System on Beagle&amp;rsquo;s library. To better illustrate  the explanation, we&amp;rsquo;ll use these &lt;a href=&#34;https://github.com/ZupIT/beagle-examples&#34;&gt;&lt;strong&gt;sample codes&lt;/strong&gt;&lt;/a&gt; that you can find out in our repository.&lt;/p&gt;
 &lt;p&gt;The idea is to configure some styles on iOS to allow you to customize some components, such as:&lt;/p&gt;
 &lt;ul&gt;
@@ -46,7 +46,7 @@
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;struct&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Styles&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
 
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This &lt;code&gt;struct&lt;/code&gt; will contain all the styles Beagle will access. Here, it will be listed the logic that allows Beagle to apply defined styles on iOS into a &lt;a href=&#34;../../../principais-conceitos.md#server-driven-ui&#34;&gt;&lt;strong&gt;server-driven screen&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This &lt;code&gt;struct&lt;/code&gt; will contain all the styles Beagle will access. Here, it will be listed the logic that allows Beagle to apply defined styles on iOS into a &lt;a href=&#34;../../../../principais-conceitos#server-driven-ui&#34;&gt;&lt;strong&gt;server-driven screen&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;step-2-create-a-text-style&#34;&gt;Step 2: Create a text style&lt;/h3&gt;
 &lt;p&gt;Once you have created your file, now you must create a static function to define and return a text style. For this example, we&amp;rsquo;ll have one style for a title and another one for the paragraph, so we&amp;rsquo;ll create two different functions.&lt;/p&gt;
 &lt;p&gt;This function return will use the &lt;code&gt;BeagleStyle&lt;/code&gt; class, which is a Beagle&amp;rsquo;s intern class that&amp;rsquo;s available when you import the &lt;code&gt;beagleUI&lt;/code&gt; class.&lt;/p&gt;

@@ -121,7 +121,7 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;placeholder&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;imagepath.md#imagepath-local&#34;&gt;&lt;strong&gt;ImagePath.Local&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;imagepath#imagepath-local&#34;&gt;&lt;strong&gt;ImagePath.Local&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;É possível passar um asset local no aplicativo que será mostrado enquanto a URL remota é carregada.&lt;/td&gt;
 &lt;/tr&gt;

@@ -25,11 +25,11 @@
 It works exactly like the Context, however in a global scope, meaning that it will exists while the application is still running (even on the background), which allows it to be accessed from any application point, being a component or an action linked to a component or even programmatically." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zupit.github.io/docs-beagle/docs/api/global-context/" />
-<meta property="article:modified_time" content="2020-12-08T11:16:20-03:00" /><meta property="og:site_name" content="Beagle" />
+<meta property="article:modified_time" content="2020-12-09T12:56:53-03:00" /><meta property="og:site_name" content="Beagle" />
 <meta itemprop="name" content="Global Context">
 <meta itemprop="description" content="What is it? A Global Context is a variable that can assume as value of any type of variable, like a map defines a subset of key/value or complex JSONs objects that defines object trees.
 It works exactly like the Context, however in a global scope, meaning that it will exists while the application is still running (even on the background), which allows it to be accessed from any application point, being a component or an action linked to a component or even programmatically.">
-<meta itemprop="dateModified" content="2020-12-08T11:16:20-03:00" />
+<meta itemprop="dateModified" content="2020-12-09T12:56:53-03:00" />
 <meta itemprop="wordCount" content="1361">
 
 
@@ -107,7 +107,7 @@ It works exactly like the Context, however in a global scope, meaning that it wi
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -139,7 +139,7 @@ It works exactly like the Context, however in a global scope, meaning that it wi
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -1902,7 +1902,7 @@ It works exactly like the Context, however in a global scope, meaning that it wi
 <p>A Global Context is a variable that can assume as value of any type of variable, like a map defines a subset of key/value or complex JSONs objects that defines object trees.</p>
 <p>It works exactly like the <a href="context/"><strong>Context</strong></a>, however in a global scope, meaning that it will exists while the application is still running (even on the background), which allows it to be accessed from any application point, being a component or an action linked to a component or even programmatically.</p>
 <h3 id="how-can-you-access-it">How can you access it?</h3>
-<p>It can be accessed through an expression in a declarative page, for example, <code>&quot;@{global.user}&quot;</code> or programmatically from a <strong>GlobalContext.get()</strong> object**.**</p>
+<p>It can be accessed through an expression in a declarative page, for example, <code>&quot;@{global.user}&quot;</code> or programmatically from a <strong>GlobalContext.get()</strong> object</p>
 
 
 <div class="alert alert-info" role="alert">
@@ -1913,7 +1913,7 @@ This way, it is possible to share information between the native part of the app
 <h2 id="how-to-use-it">How to use it?</h2>
 <p>It is important to mention some information to use the Global Context:</p>
 <ul>
-<li>Global context Global ins an object and is type is __<a href="context/"><strong><code>ContextData</code></strong></a><strong>.</strong></li>
+<li>Global context Global ins an object and is type is __<a href="context/"><strong><code>ContextData</code></strong></a></li>
 <li>Global context can have as a VALUE, a complex JSON that can contain an object tree in it.</li>
 <li>It is a <code>Singleton</code>.</li>
 </ul>
@@ -1929,11 +1929,11 @@ By default the global context ID will be always &lsquo;global&rsquo;.
 <h2 id="how-to-define-a-global-context">How to define a Global Context?</h2>
 <p>A context to be global, it can be defined in two ways:</p>
 <ul>
-<li>From a declarative component (using the <a href="actions/setcontext.md"><strong><code>SetContext</code></strong></a>action) or</li>
+<li>From a declarative component (using the <a href="actions/setcontext"><strong><code>SetContext</code></strong></a>action) or</li>
 <li>Programmatically, using the <code>set()</code> function from the <code>GlobalContext</code> object.</li>
 </ul>
 <h3 id="1-using-setcontext">1. Using SetContext</h3>
-<p>It is possible to define or modify a  global context from the   <a href="actions/setcontext.md"><strong><code>SetContext</code></strong></a> action.  You have to identify a global context using an <code>ID = &quot;global</code>&quot; in the <code>contextId</code> property, as you can see below:</p>
+<p>It is possible to define or modify a  global context from the   <a href="actions/setcontext"><strong><code>SetContext</code></strong></a> action.  You have to identify a global context using an <code>ID = &quot;global</code>&quot; in the <code>contextId</code> property, as you can see below:</p>
 <ul class="nav nav-tabs" id="t149" role="tablist"><li class="nav-item"><a data-toggle="tab" class="nav-link active" href="#t149-0" role="tab" aria-controls="t149-0" aria-selected="true">JSON</a></li>
 	  
 		<li class="nav-item"><a data-toggle="tab" class="nav-link" href="#t149-1" role="tab" aria-controls="t149-1">Kotlin DSL</a></li></ul>
@@ -2049,7 +2049,7 @@ When defining a value of any context, it is important to analyse its structure. 
 </code></pre></div></div>
   <div id="t150-2" class="tab-pane" role="tabpanel" aria-labelledby="t150-2">
 
-<p><p>In iOS the Global Context is a <a href="../resources/customization/beagle-for-ios/beagledependencies.md"><strong>Beagle Dependencies</strong></a> attribute.</p>
+<p><p>In iOS the Global Context is a <a href="../../resources/customization/beagle-for-ios/beagledependencies"><strong>Beagle Dependencies</strong></a> attribute.</p>
 <p>To use it in anywhere of your application you must to use the <code>BeagleDependencies</code> instance of your project as the example below:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#000">dependencies</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">globalContext</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">setValue</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">value</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Context has changed&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">path</span><span style="color:#ce5c00;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;myValue&#34;</span><span style="color:#000;font-weight:bold">)</span>
 </code></pre></div><div class="alert alert-info" role="alert">
@@ -2272,7 +2272,7 @@ This expression are observed by the context and are updated when the context cha
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top"><div class="dr-last-modified-text">
-  Last modified December 8, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/e05175f4fd702526fcc144d18063eb4f463a1939">fix tabs (e05175f4)</a>
+  Last modified December 9, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/2500a2815c1ffbbcf064963526033e3a2b985837">fix tabs and some links (2500a281)</a>
 </div></div>
 </div>
 

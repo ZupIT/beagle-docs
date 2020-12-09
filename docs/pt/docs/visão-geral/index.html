@@ -104,7 +104,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -136,7 +136,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.f7220eb0b1dd198e0c7c1cea727a2284a6a63fb4edf3bc47cd595ea2840e12698d9970dd88bd3631053ce2f642eba70318ac0443d22f813f49661aa81015a59f.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.8fd08a1b989249000c3a16094a0884cd80fcca7a4110a67f6962b0000452ebf281f04f211defffe147a5cf0090f81672fabd584c62d19a608183a3956a1a9617.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -2060,9 +2060,9 @@ O principal ganho da ferramenta é permitir que as equipes façam <strong>altera
 <li><code>&lt;=x.y.z</code>: designa uma definição existente até a versão x.y.z.</li>
 </ul>
 <h2 id="como-funciona-o-beagle">Como funciona o Beagle?</h2>
-<p>A ferramenta atua como um facilitador do <strong>BFF</strong> (<a href="principais-conceitos.md#backend-for-frontend"><strong>Backend For Frontend</strong></a>)<strong>.</strong> Isso significa que o Beagle, a partir de uma biblioteca de componentes definidos no <a href="principais-conceitos.md#design-system"><strong>Design System</strong></a> da aplicação Android, iOS ou Web, faz a alteração visual e comportamental delas ao retornar um arquivo JSON que indica o que e onde deve ser renderizado cada componente e qual a ação que vão executar.</p>
+<p>A ferramenta atua como um facilitador do <strong>BFF</strong> (<a href="principais-conceitos#backend-for-frontend"><strong>Backend For Frontend</strong></a>) Isso significa que o Beagle, a partir de uma biblioteca de componentes definidos no <a href="principais-conceitos#design-system"><strong>Design System</strong></a> da aplicação Android, iOS ou Web, faz a alteração visual e comportamental delas ao retornar um arquivo JSON que indica o que e onde deve ser renderizado cada componente e qual a ação que vão executar.</p>
 <p><img src="/docs-beagle/beaglemobileback.png" alt=""></p>
-<p>O motivo pelo qual o Beagle consegue fazer essa alteração do frontend a partir do backend é porque sua arquitetura está estruturada em <a href="principais-conceitos.md#server-driven-ui"><strong>Server-Driven UI</strong></a>, onde o BFF constrói os dados, componentes e ações presentes na tela de forma declarativa e os encaminha no formato JSON, enquanto o front o desserializa, renderiza os componentes visuais de forma nativa além de executar e atribuir as ações presentes em cada um deles.</p>
+<p>O motivo pelo qual o Beagle consegue fazer essa alteração do frontend a partir do backend é porque sua arquitetura está estruturada em <a href="principais-conceitos#server-driven-ui"><strong>Server-Driven UI</strong></a>, onde o BFF constrói os dados, componentes e ações presentes na tela de forma declarativa e os encaminha no formato JSON, enquanto o front o desserializa, renderiza os componentes visuais de forma nativa além de executar e atribuir as ações presentes em cada um deles.</p>
 <h3 id="pilares-do-beagle">Pilares do Beagle</h3>
 <p>Por se tratar de uma ferramenta pautada em Server-Driven UI, os objetos JSON configurados para rodar na sua aplicação podem ser divididos em 3 pilares básicos:</p>
 <ul>

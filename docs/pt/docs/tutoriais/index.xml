@@ -24,7 +24,7 @@
         
         &lt;hr&gt;
 &lt;p&gt;A &lt;strong&gt;comunicação entre componentes&lt;/strong&gt; é uma forma de compartilhar informações com o uso de Observables que, de modo geral, emitem notificações sempre que uma mudança acontece com eles.&lt;/p&gt;
-&lt;p&gt;Abaixo, você verá como fazer a configuração dessa comunicação usando o &lt;a href=&#34;../api/contexto/&#34;&gt;&lt;strong&gt;Contexto, um componente do Beagle.&lt;/strong&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Abaixo, você verá como fazer a configuração dessa comunicação usando o &lt;a href=&#34;../../../api/contexto/&#34;&gt;&lt;strong&gt;Contexto, um componente do Beagle.&lt;/strong&gt; &lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;configurando-a-comunicação-entre-componentes&#34;&gt;Configurando a comunicação entre componentes.&lt;/h2&gt;
 &lt;h3 id=&#34;o-que-vou-comunicar&#34;&gt;O que vou comunicar?&lt;/h3&gt;
 &lt;p&gt;Nesse exemplo, consumiremos o resultado de uma API pública que retorna valores de cotação das moedas no mercado ou &lt;em&gt;Currency Rates&lt;/em&gt; .&lt;/p&gt;
@@ -43,7 +43,7 @@
     &amp;#34;date&amp;#34;: &amp;#34;2020-07-13&amp;#34;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;como-vou-comunicar&#34;&gt;Como vou comunicar?&lt;/h2&gt;
-&lt;p&gt;Uma função chamada &lt;a href=&#34;../api/acoes/setcontext.md&#34;&gt;&lt;strong&gt;SetContext&lt;/strong&gt;&lt;/a&gt; é a responsável por atualizar os valores do componente contexto. Ela poderá ser chamada na tela se você quiser usar as informações que estiverem nesse contexto.&lt;/p&gt;
+&lt;p&gt;Uma função chamada &lt;a href=&#34;../../api/acoes/setcontext&#34;&gt;&lt;strong&gt;SetContext&lt;/strong&gt;&lt;/a&gt; é a responsável por atualizar os valores do componente contexto. Ela poderá ser chamada na tela se você quiser usar as informações que estiverem nesse contexto.&lt;/p&gt;
 &lt;p&gt;Para fazer a comunicação, basta seguir os próximos passos:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Ao definir o contexto na estrutura Kotlin DSL no backend é necessário implementar uma classe que estruture as informações que serão recebidas no contexto.&lt;/li&gt;
@@ -390,7 +390,7 @@ nexus &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
         
         &lt;hr&gt;
 &lt;h3 id=&#34;criando-uma-ação-do-frontend&#34;&gt;Criando uma ação do frontend&lt;/h3&gt;
-&lt;p&gt;No Beagle, é possível criar uma &lt;a href=&#34;../api/acoes/&#34;&gt;&lt;strong&gt;ação&lt;/strong&gt;&lt;/a&gt; customizada a partir de uma &lt;code&gt;CustomAction&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;No Beagle, é possível criar uma &lt;a href=&#34;../../../api/acoes/&#34;&gt;&lt;strong&gt;ação&lt;/strong&gt;&lt;/a&gt; customizada a partir de uma &lt;code&gt;CustomAction&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Cada plataforma possui sua forma especificia de fazer essa implementação no frontend. Você pode ver exemplos abaixo de como fazer em cada uma delas:&lt;/p&gt;
 &lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t92&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t92-0&#34; role=&#34;tab&#34; aria-controls=&#34;t92-0&#34; aria-selected=&#34;true&#34;&gt;Android&lt;/a&gt;&lt;/li&gt;
 	  
@@ -445,7 +445,7 @@ nexus &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
 &lt;p&gt;Para registrar a ação, apenas crie o método com todo seu custom action e chame o  método do Beagle &lt;code&gt;registerCustomAction&lt;/code&gt;  para fazer o registro;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Chame o método criado no BeagleConfig, ele pode ser visto nesse &lt;a href=&#34;../get-started/criando-projeto-do-zero/&#34;&gt;&lt;strong&gt;exemplo&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Chame o método criado no BeagleConfig, ele pode ser visto nesse &lt;a href=&#34;../../get-started/criando-projeto-do-zero/&#34;&gt;&lt;strong&gt;exemplo&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;registerCustomAction&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -552,7 +552,7 @@ nexus &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
 &lt;p&gt;Você deve seguir tal como o comando abaixo:&lt;/p&gt;
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 &lt;p&gt;Certifique-se de listar a sua Beagle Activity assim como nomeada em seu AndroidManifest.&lt;/p&gt;
-&lt;p&gt;No exemplo abaixo a chamamos somente de &amp;lt;BeagleActivity&amp;gt;. Esse nome é você quem define ao criar sua BeagleActivity. Em nosso tutorial &lt;a href=&#34;../get-started/criando-projeto-do-zero/&#34;&gt;&lt;strong&gt;Criando um projeto do zero&lt;/strong&gt; &lt;/a&gt;, chamamos ela de &lt;code&gt;AppBeagleActivity&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;No exemplo abaixo a chamamos somente de &amp;lt;BeagleActivity&amp;gt;. Esse nome é você quem define ao criar sua BeagleActivity. Em nosso tutorial &lt;a href=&#34;../../../../get-started/criando-projeto-do-zero/&#34;&gt;&lt;strong&gt;Criando um projeto do zero&lt;/strong&gt; &lt;/a&gt;, chamamos ela de &lt;code&gt;AppBeagleActivity&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;val&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;intent&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;newServerDrivenIntent&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;BeagleActivity&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ScreenRequest&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/screen&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;startActivity&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;intent&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
@@ -569,7 +569,7 @@ startActivity(intent)
 &lt;/div&gt;
 &lt;h3 id=&#34;a-classe-screen-request&#34;&gt;A classe Screen Request.&lt;/h3&gt;
 &lt;p&gt;A&lt;code&gt;ScreenRequest&lt;/code&gt; é uma classe interna do Beagle utilizada para solicitar qual tela você deseja exibir. Você listará apenas o atributo URL referente a página que deseja carregar vinda do BFF.&lt;/p&gt;
-&lt;p&gt;No entanto, esse elemento possui outros atributos, que podem ser utilizados na transição e entre telas.  Para saber mais sobre essa classe, veja em &lt;a href=&#34;../api/screen-request.md&#34;&gt;&lt;strong&gt;Screen Request&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;No entanto, esse elemento possui outros atributos, que podem ser utilizados na transição e entre telas.  Para saber mais sobre essa classe, veja em &lt;a href=&#34;../../../api/screen-request&#34;&gt;&lt;strong&gt;Screen Request&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
   &lt;div id=&#34;t94-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t94-1&#34;&gt;
 
@@ -597,7 +597,7 @@ startActivity(intent)
 &lt;p&gt;Para definir onde você quer mostrar uma tela server-driven no Angular, você deve usar o componente fornecido pela biblioteca &lt;code&gt;&amp;lt;beagle-remote-view&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 &lt;p&gt;Este componente tem outros atributos que podem ser configurados. No entanto nessa implementação você utilizará somente o atributo path, descrito no exemplo abaixo.&lt;/p&gt;
-&lt;p&gt;Para mais detalhes sobre esse componente clique no link a seguir e verifique os detalhes do &lt;a href=&#34;../features/customizacao/beagle-para-web/parametros-remote-view.md&#34;&gt;Remote View&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Para mais detalhes sobre esse componente clique no link a seguir e verifique os detalhes do &lt;a href=&#34;../../features/customizacao/beagle-para-web/parametros-remote-view&#34;&gt;Remote View&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;No arquivo html do seu componente, adicione o &lt;code&gt;remote view&lt;/code&gt;.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;&amp;lt;beagle-remote-view [loadParams]=&amp;quot;loadParams&amp;quot;&amp;gt;&amp;lt;/beagle-remote-view&amp;gt;
@@ -717,21 +717,21 @@ startActivity(intent)
         
         &lt;hr&gt;
 &lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
-&lt;p&gt;Para este tutorial, iremos usar algumas &lt;a href=&#34;../api/acoes/&#34;&gt;&lt;strong&gt;ações&lt;/strong&gt;&lt;/a&gt; e também APIs:&lt;/p&gt;
+&lt;p&gt;Para este tutorial, iremos usar algumas &lt;a href=&#34;../../../../../../../api/acoes/&#34;&gt;&lt;strong&gt;ações&lt;/strong&gt;&lt;/a&gt; e também APIs:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Actions&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;../api/acoes/setcontext.md&#34;&gt;&lt;strong&gt;SetContext&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../api/acoes/sendrequest.md&#34;&gt;&lt;strong&gt;SendRequest&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../../../api/acoes/setcontext&#34;&gt;&lt;strong&gt;SetContext&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../../api/acoes/sendrequest&#34;&gt;&lt;strong&gt;SendRequest&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;APIs&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;../api/contexto/&#34;&gt;&lt;strong&gt;Context&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../api/contexto/&#34;&gt;&lt;strong&gt;Context&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-pt/api/contexto#bindings&#34;&gt;&lt;strong&gt;Binding&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-pt/api/contexto#bindings&#34;&gt;&lt;strong&gt;Expressões&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Apesar do conceito &lt;a href=&#34;../principais-conceitos.md#server-driven-ui&#34;&gt;&lt;strong&gt;Server-Driven&lt;/strong&gt;&lt;/a&gt; trabalhar componentes separadamente, é possível realizar a transmissão das informações para uma API e é o que vamos demonstrar abaixo.&lt;/p&gt;
+&lt;p&gt;Apesar do conceito &lt;a href=&#34;../../../principais-conceitos#server-driven-ui&#34;&gt;&lt;strong&gt;Server-Driven&lt;/strong&gt;&lt;/a&gt; trabalhar componentes separadamente, é possível realizar a transmissão das informações para uma API e é o que vamos demonstrar abaixo.&lt;/p&gt;
 &lt;h2 id=&#34;exemplo-de-uso&#34;&gt;Exemplo de Uso&lt;/h2&gt;
-&lt;p&gt;Neste exemplo, iremos utilizar os componentes &lt;a href=&#34;../api/componentes/ui/input.md&#34;&gt;&lt;strong&gt;TextInput&lt;/strong&gt;&lt;/a&gt; e &lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-pt/api/componentes/ui/button&#34;&gt;&lt;strong&gt;Button&lt;/strong&gt;&lt;/a&gt; para simularmos uma tela de Login.&lt;/p&gt;
+&lt;p&gt;Neste exemplo, iremos utilizar os componentes &lt;a href=&#34;../api/componentes/ui/input&#34;&gt;&lt;strong&gt;TextInput&lt;/strong&gt;&lt;/a&gt; e &lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-pt/api/componentes/ui/button&#34;&gt;&lt;strong&gt;Button&lt;/strong&gt;&lt;/a&gt; para simularmos uma tela de Login.&lt;/p&gt;
 &lt;h3 id=&#34;passo-1-criar-uma-tela-de-login&#34;&gt;Passo 1: Criar uma tela de Login&lt;/h3&gt;
 &lt;p&gt;Até este momento, vamos apenas sinalizar ao Beagle de que ele deve renderizar na tela dois componentes TextInputs e um componente Button para representarmos a tela de Login.&lt;/p&gt;
 &lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t101&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t101-0&#34; role=&#34;tab&#34; aria-controls=&#34;t101-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
@@ -858,7 +858,7 @@ startActivity(intent)
             &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Neste exemplo, utilizamos o evento &lt;code&gt;onChange&lt;/code&gt; do próprio TextInput que é chamado sempre que o usuário digita um texto novo no input. Dentro do onChange, existe um &lt;a href=&#34;../api/contexto/#contextos-implicitos&#34;&gt;&lt;strong&gt;contexto implícito&lt;/strong&gt;&lt;/a&gt; chamado &lt;code&gt;onChange&lt;/code&gt; no qual o &lt;code&gt;value&lt;/code&gt; é o último valor digitado pelo usuário.&lt;/p&gt;
+&lt;p&gt;Neste exemplo, utilizamos o evento &lt;code&gt;onChange&lt;/code&gt; do próprio TextInput que é chamado sempre que o usuário digita um texto novo no input. Dentro do onChange, existe um &lt;a href=&#34;../../api/contexto/#contextos-implicitos&#34;&gt;&lt;strong&gt;contexto implícito&lt;/strong&gt;&lt;/a&gt; chamado &lt;code&gt;onChange&lt;/code&gt; no qual o &lt;code&gt;value&lt;/code&gt; é o último valor digitado pelo usuário.&lt;/p&gt;
 &lt;h4 id=&#34;onchange&#34;&gt;OnChange&lt;/h4&gt;
 &lt;p&gt;Ainda dentro deste contexto, a ação de SetContext será executada a cada caractere digitado pelo usuário. Por isso que neste SetContext é obrigatório o &lt;code&gt;contextId&lt;/code&gt;, que fará referência ao contexto que será alterado, além do &lt;code&gt;value&lt;/code&gt; que representa o novo valor e do &lt;code&gt;path&lt;/code&gt; que é o caminho dentro do contexto que iremos alterar.&lt;/p&gt;
 &lt;h4 id=&#34;path&#34;&gt;Path&lt;/h4&gt;

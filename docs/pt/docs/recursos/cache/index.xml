@@ -54,7 +54,7 @@
 &lt;div class=&#34;tab-content&#34; id=&#34;t13&#34;&gt;&lt;div id=&#34;t13-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t13-0&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;No Android, o cache é configurado quando implementamos as configurações iniciais do Beagle.&lt;/p&gt;
-&lt;p&gt;Esta implementação acontece dentro da classe que nomeamos &lt;a href=&#34;../../get-started/usando-beagle/android.md#passo-2-criar-uma-classe-beagleconfig&#34;&gt;&lt;strong&gt;AppBeagleConfig&lt;/strong&gt;&lt;/a&gt;, ou seja, dentro da classe de configuração do Beagle.&lt;/p&gt;
+&lt;p&gt;Esta implementação acontece dentro da classe que nomeamos &lt;a href=&#34;../../../../../get-started/usando-beagle/android#passo-2-criar-uma-classe-beagleconfig&#34;&gt;&lt;strong&gt;AppBeagleConfig&lt;/strong&gt;&lt;/a&gt;, ou seja, dentro da classe de configuração do Beagle.&lt;/p&gt;
 &lt;p&gt;O cache, em si, é uma class interna do Beagle na qual podemos definir 3 propriedades representadas pelos atributos:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;code&gt;enable&lt;/code&gt;&lt;/li&gt;
@@ -145,7 +145,7 @@
 &lt;/div&gt;
   &lt;div id=&#34;t13-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t13-2&#34;&gt;
 
-&lt;p&gt;&lt;p&gt;No backend, as configurações desta funcionalidade são suportadas apenas para quem utiliza a &lt;a href=&#34;../../get-started/instalando-beagle/backend.md#passo-3-incluindo-requerimentos-adicionais&#34;&gt;&lt;strong&gt;biblioteca starter&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;No backend, as configurações desta funcionalidade são suportadas apenas para quem utiliza a &lt;a href=&#34;../../../../get-started/instalando-beagle/backend#passo-3-incluindo-requerimentos-adicionais&#34;&gt;&lt;strong&gt;biblioteca starter&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;O cache é criado para otimizar a resposta de uma requisição tanto em tamanho quanto em tempo do BFF quando o retorno é igual ao anterior a ela. As entradas nesse cache duram até o servidor ser &amp;ldquo;redeployado&amp;rdquo; ou o cliente ser reinstalado.‌&lt;/p&gt;
 &lt;p&gt;Para realizar a configuração de cache:&lt;/p&gt;
 &lt;ol&gt;

@@ -153,7 +153,7 @@ Well done, your project was created on Android! Now, you will need to configure 
 &lt;/div&gt;
 
 &lt;h3 id=&#34;passo-3-create-an-appbeagleconfig&#34;&gt;Passo 3: Create an AppBeagleConfig&lt;/h3&gt;
-&lt;p&gt;For the next steps, you should create a &lt;code&gt;AppBeagleConfig&lt;/code&gt; class, that is part of &lt;a href=&#34;../../installing-beagle/android.md&#34;&gt;&lt;strong&gt;Beagle&amp;rsquo;s installation&lt;/strong&gt;&lt;/a&gt; and it&amp;rsquo;s responsible to register some important configurations.&lt;/p&gt;
+&lt;p&gt;For the next steps, you should create a &lt;code&gt;AppBeagleConfig&lt;/code&gt; class, that is part of &lt;a href=&#34;../../../../../../../installing-beagle/android&#34;&gt;&lt;strong&gt;Beagle&amp;rsquo;s installation&lt;/strong&gt;&lt;/a&gt; and it&amp;rsquo;s responsible to register some important configurations.&lt;/p&gt;
 &lt;p&gt;When you create the call, we should guarantee that it&amp;rsquo;s configured in this way:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Noted with &lt;code&gt;@BeagleComponent&lt;/code&gt;&lt;/li&gt;
@@ -204,8 +204,8 @@ Well done, your project was created on Android! Now, you will need to configure 
 &lt;/div&gt;
 
 &lt;h3 id=&#34;step-4-create-appbeagleactivity&#34;&gt;&lt;strong&gt;Step 4: Create AppBeagleActivity&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;You will have to deal with the &lt;code&gt;activities&lt;/code&gt; that will be generated through server-driven. That&amp;rsquo;s the reason why it&amp;rsquo;s necessary to &lt;a href=&#34;../../using-beagle/android.md#passo-3-implementar-activities&#34;&gt;&lt;strong&gt;implement an Activity&lt;/strong&gt;&lt;/a&gt; to manage them. For this example, we&amp;rsquo;ll name it as&lt;code&gt;AppBeagleActivity&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;This file is part of &lt;a href=&#34;../../using-beagle/android.md&#34;&gt;&lt;strong&gt;Beagle&amp;rsquo;s usage configuration&lt;/strong&gt;&lt;/a&gt; and must be implemented, at least once, so Beagle can normally work.&lt;/p&gt;
+&lt;p&gt;You will have to deal with the &lt;code&gt;activities&lt;/code&gt; that will be generated through server-driven. That&amp;rsquo;s the reason why it&amp;rsquo;s necessary to &lt;a href=&#34;../../../../../../using-beagle/android#passo-3-implementar-activities&#34;&gt;&lt;strong&gt;implement an Activity&lt;/strong&gt;&lt;/a&gt; to manage them. For this example, we&amp;rsquo;ll name it as&lt;code&gt;AppBeagleActivity&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This file is part of &lt;a href=&#34;../../../../../using-beagle/android&#34;&gt;&lt;strong&gt;Beagle&amp;rsquo;s usage configuration&lt;/strong&gt;&lt;/a&gt; and must be implemented, at least once, so Beagle can normally work.&lt;/p&gt;
 &lt;p&gt;When you create AppBeagleActivity, remember to note it as &lt;code&gt;BeagleComponent&lt;/code&gt; and to extend it to&lt;code&gt;BeagleActivity&lt;/code&gt; class.&lt;/p&gt;
 
 
@@ -311,7 +311,7 @@ At this point, it&amp;rsquo;s essential that you remove the&lt;code&gt;ActionBar
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
 &lt;p&gt;What is Design System?&lt;/p&gt;
-&lt;p&gt;For more information, see &lt;a href=&#34;design-system-beagle-com-android.md&#34;&gt;&lt;strong&gt;section Design System with Beagle Android&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For more information, see &lt;a href=&#34;design-system-beagle-com-android&#34;&gt;&lt;strong&gt;section Design System with Beagle Android&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;/div&gt;
 
@@ -320,7 +320,7 @@ At this point, it&amp;rsquo;s essential that you remove the&lt;code&gt;ActionBar
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
 &lt;p&gt;É o &lt;strong&gt;design system&lt;/strong&gt; que guarda os registros dos componentes de estilo criados no frontend e é assim que sua aplicação Android “saberá” qual componente de estilo deve aplicar a cada elemento de uma tela Server-Driven. É na tela server driven que os elementos visuais (views) são utilizados na construção da sua tela.&lt;/p&gt;
-&lt;p&gt;Embora você possa criá-lo agora se quiser, não é necessário para as configurações iniciais, para que você possa testar logo o Beagle! Você pode prosseguir sem configurá-lo. Para mais informações sobre &lt;a href=&#34;design-system-beagle-com-android.md&#34;&gt;&lt;strong&gt;Design System no Beagle para Android&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Embora você possa criá-lo agora se quiser, não é necessário para as configurações iniciais, para que você possa testar logo o Beagle! Você pode prosseguir sem configurá-lo. Para mais informações sobre &lt;a href=&#34;design-system-beagle-com-android&#34;&gt;&lt;strong&gt;Design System no Beagle para Android&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
 
 &lt;/div&gt;
 
@@ -348,7 +348,7 @@ At this point, it&amp;rsquo;s essential that you remove the&lt;code&gt;ActionBar
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;To finish this configuration, you must state the class on the &lt;a href=&#34;./#passo-2-configuracoes-iniciais-do-android-manifest&#34;&gt;&lt;strong&gt;AndroidManifest&lt;/strong&gt;&lt;/a&gt; we created in the beginning.&lt;/li&gt;
+&lt;li&gt;To finish this configuration, you must state the class on the &lt;a href=&#34;../.././#passo-2-configuracoes-iniciais-do-android-manifest&#34;&gt;&lt;strong&gt;AndroidManifest&lt;/strong&gt;&lt;/a&gt; we created in the beginning.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;The name of your&lt;code&gt;application&lt;/code&gt; now it&amp;rsquo;s the same of the class you created. Update the Android Manifest as it&amp;rsquo;s indicated below:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
@@ -368,7 +368,7 @@ At this point, it&amp;rsquo;s essential that you remove the&lt;code&gt;ActionBar
 Well done, your Android application is configured and ready to use Beagle!
 &lt;/div&gt;
 
-&lt;p&gt;All you have to do now is &lt;a href=&#34;../exemplo-de-projeto-backend-com-beagle.md&#34;&gt;&lt;strong&gt;set up a backend&lt;/strong&gt; &lt;/a&gt;to answer your application&amp;rsquo;s requests. Once you made this configuration, start your application and you&amp;rsquo;ll see your first server-driven screen!&lt;/p&gt;
+&lt;p&gt;All you have to do now is &lt;a href=&#34;../../exemplo-de-projeto-backend-com-beagle&#34;&gt;&lt;strong&gt;set up a backend&lt;/strong&gt; &lt;/a&gt;to answer your application&amp;rsquo;s requests. Once you made this configuration, start your application and you&amp;rsquo;ll see your first server-driven screen!&lt;/p&gt;
 &lt;h3 id=&#34;step-7-display-your-server-driven-screen&#34;&gt;Step 7: Display your Server-Driven Screen&lt;/h3&gt;
 &lt;p&gt;It&amp;rsquo;s very simple to show a Server-Driven screen. Now that all Beagle&amp;rsquo;s configuration is done, you just have to follow these steps:&lt;/p&gt;
 &lt;ul&gt;
@@ -459,10 +459,10 @@ If you wanna know more about how to use Cocoa Pods, &lt;a href=&#34;https://coco
         &lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, we&amp;rsquo;ll configure the**&lt;code&gt;SceneDelegate&lt;/code&gt;** class so it can be used to initialize our application with Beagle from a screen through &lt;a href=&#34;../../../principais-conceitos.md#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;:&lt;/a&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, we&amp;rsquo;ll configure the**&lt;code&gt;SceneDelegate&lt;/code&gt;** class so it can be used to initialize our application with Beagle from a screen through &lt;a href=&#34;../../../../../../principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;:&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Create a**&lt;code&gt;beagleScreen&lt;/code&gt;** constant, that will receive the server-driven screen.&lt;/li&gt;
-&lt;li&gt;The &lt;code&gt;init URL&lt;/code&gt; argument must contain the &lt;a href=&#34;../../../resources/urls.md#caminho-relativo&#34;&gt;&lt;strong&gt;relative URL&lt;/strong&gt;&lt;/a&gt; address that will be created on backend (BFF). For this example, we&amp;rsquo;ll call it  &amp;ldquo;/screen&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;init URL&lt;/code&gt; argument must contain the &lt;a href=&#34;../../../../../resources/urls#caminho-relativo&#34;&gt;&lt;strong&gt;relative URL&lt;/strong&gt;&lt;/a&gt; address that will be created on backend (BFF). For this example, we&amp;rsquo;ll call it  &amp;ldquo;/screen&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Follow the example below:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;beagleScreen&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;remote&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(.&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;init&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;url&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/screen&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)))&lt;/span&gt;
@@ -477,7 +477,7 @@ If you wanna know more about how to use Cocoa Pods, &lt;a href=&#34;https://coco
 &lt;p&gt;These references are in the main project file, on**&lt;code&gt;Info tab&lt;/code&gt;**, and are organized like this:&lt;/p&gt;
 &lt;p&gt;The first stays in the session:&lt;br&gt;
 &lt;em&gt;&lt;strong&gt;Custom iOS Target Properties&lt;/strong&gt;&lt;/em&gt; &lt;em&gt;&lt;strong&gt;&amp;gt;&lt;br&gt;
-&lt;code&gt;Main storyboard file base name&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;code&gt;Main storyboard file base name&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The second stays in the session:&lt;br&gt;
 &lt;em&gt;&lt;strong&gt;&lt;code&gt;Application Scene Manifest&amp;gt;&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;
 &lt;em&gt;&lt;strong&gt;&lt;code&gt;Scene Configuration&lt;/code&gt;&amp;gt;&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;
@@ -486,7 +486,7 @@ If you wanna know more about how to use Cocoa Pods, &lt;a href=&#34;https://coco
 &lt;code&gt;Storyboard name&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;On the GIF below, you can see better how to remove these references:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/main%20%282%29.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Well done, now Beagle is configured for your iOS application! All you have to do is &lt;a href=&#34;../exemplo-de-projeto-backend-com-beagle.md&#34;&gt;&lt;strong&gt;set up a backend&lt;/strong&gt;&lt;/a&gt; to answer to your server-driven applications&amp;rsquo;s requests.&lt;/p&gt;
+&lt;p&gt;Well done, now Beagle is configured for your iOS application! All you have to do is &lt;a href=&#34;../../exemplo-de-projeto-backend-com-beagle&#34;&gt;&lt;strong&gt;set up a backend&lt;/strong&gt;&lt;/a&gt; to answer to your server-driven applications&amp;rsquo;s requests.&lt;/p&gt;
 &lt;p&gt;Once you finished the configuration, start your application and you&amp;rsquo;ll have your first server-driven screen!&lt;br&gt;
 You will see this screen:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -740,7 +740,7 @@ It will create a&lt;code&gt;Maven&lt;/code&gt; project that will help your proje
 &lt;p&gt;&lt;img src=&#34;https://lh6.googleusercontent.com/6gOx1UCq-ZUK0yckdUAO2-Jb1YWOjw6kNijGu8-LVPyaDJuYAC2J7DcugsKgFDVqSkhF1RN5zKQ0s47l0ZmFgrq9ln7SPL-isTczLb9h5PQnXhUyWl6S7_QaUyUPGN-SyYVK_AZC&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;configuring-beagle&#34;&gt;Configuring Beagle&lt;/h2&gt;
 &lt;h3 id=&#34;step-1-configure-the-project&#34;&gt;Step 1: Configure the project&lt;/h3&gt;
-&lt;p&gt;As a starting point, follow this step by step to &lt;a href=&#34;../installing-beagle/beagle-backend.md&#34;&gt;&lt;strong&gt;install the backend&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;As a starting point, follow this step by step to &lt;a href=&#34;../../../../installing-beagle/beagle-backend&#34;&gt;&lt;strong&gt;install the backend&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;step-2-define-the-structure&#34;&gt;Step 2: Define the structure&lt;/h3&gt;
 &lt;p&gt;The second step is to create some packages to better organize the project. They will be named: &lt;strong&gt;&lt;code&gt;builder&lt;/code&gt;&lt;/strong&gt;,&lt;strong&gt;&lt;code&gt;service&lt;/code&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;code&gt;controller&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -899,8 +899,8 @@ In order to use the backend service, you must have the front end prepared for Be
 
 &lt;p&gt;To learn more about configuring your frontend environment, see more at:&lt;/p&gt;
 &lt;p&gt;👉 Beagle implementation tutorial for &lt;a href=&#34;case-android/&#34;&gt;&lt;strong&gt;Android&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;👉Beagle implementation tutorial for &lt;a href=&#34;../using-beagle/ios.md&#34;&gt;&lt;strong&gt;iOS&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;👉Beagle implementation tutorial for  &lt;a href=&#34;case-web.md&#34;&gt;&lt;strong&gt;Web&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;👉Beagle implementation tutorial for &lt;a href=&#34;../../using-beagle/ios&#34;&gt;&lt;strong&gt;iOS&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;👉Beagle implementation tutorial for  &lt;a href=&#34;case-web&#34;&gt;&lt;strong&gt;Web&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>

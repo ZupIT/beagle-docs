@@ -83,8 +83,8 @@ Lembre de sempre verificar se você está usando a versão mais recente do Beagl
 &lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos Passos&lt;/h2&gt;
 &lt;p&gt;Nesta seção, você fez a &lt;strong&gt;instalação inicial&lt;/strong&gt; do Beagle na sua aplicação!&lt;br&gt;
 Para continuar a configurar o Beagle:&lt;/p&gt;
-&lt;p&gt;👉Vá para as &lt;a href=&#34;../usando-beagle/android.md&#34;&gt;&lt;strong&gt;configurações iniciais&lt;/strong&gt; &lt;/a&gt;para habilitar uso do Beagle no seu projeto Android&lt;/p&gt;
-&lt;p&gt;👉 Se quiser ir direto para prática, acesse nosso &lt;a href=&#34;../criando-projeto-do-zero/case-android/&#34;&gt;&lt;strong&gt;tutorial para criar um projeto do zero&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;👉Vá para as &lt;a href=&#34;../../../usando-beagle/android&#34;&gt;&lt;strong&gt;configurações iniciais&lt;/strong&gt; &lt;/a&gt;para habilitar uso do Beagle no seu projeto Android&lt;/p&gt;
+&lt;p&gt;👉 Se quiser ir direto para prática, acesse nosso &lt;a href=&#34;../../criando-projeto-do-zero/case-android/&#34;&gt;&lt;strong&gt;tutorial para criar um projeto do zero&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -107,7 +107,7 @@ Para continuar a configurar o Beagle:&lt;/p&gt;
 &lt;li&gt;&lt;strong&gt;Swift 5.0+&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;gerenciamento-de-dependências&#34;&gt;&lt;strong&gt;Gerenciamento de dependências&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;Hoje o Beagle está disponível para integração através do &lt;a href=&#34;https://github.com/Carthage/Carthage&#34;&gt;&lt;strong&gt;Carthage&lt;/strong&gt;&lt;/a&gt; e &lt;a href=&#34;https://cocoapods.org&#34;&gt;&lt;strong&gt;CocoaPods&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Hoje o Beagle está disponível para integração através do &lt;a href=&#34;https://github.com/Carthage/Carthage&#34;&gt;&lt;strong&gt;Carthage&lt;/strong&gt;&lt;/a&gt; e &lt;a href=&#34;https://cocoapods.org&#34;&gt;&lt;strong&gt;CocoaPods&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
@@ -152,7 +152,7 @@ Depois de uma release importante, podemos lançar algumas versões com bug fixes
 &lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos Passos&lt;/h2&gt;
 &lt;p&gt;Nesta seção, você fez a &lt;strong&gt;instalação inicial&lt;/strong&gt; do Beagle na sua aplicação!&lt;br&gt;
 Para continuar a configurar o Beagle:&lt;/p&gt;
-&lt;p&gt;👉Para continuar conhecendo o Beagle, e testar se deu tudo certo com a instalação, vá para as &lt;strong&gt;configurações iniciais&lt;/strong&gt; e &lt;a href=&#34;../usando-beagle/ios.md&#34;&gt;&lt;strong&gt;crie seu primeiro Hello Beagle!&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;👉Para continuar conhecendo o Beagle, e testar se deu tudo certo com a instalação, vá para as &lt;strong&gt;configurações iniciais&lt;/strong&gt; e &lt;a href=&#34;../../usando-beagle/ios&#34;&gt;&lt;strong&gt;crie seu primeiro Hello Beagle!&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;👉 Se quiser ir direto para prática, acesse nosso&lt;a href=&#34;../criando-projeto-do-zero/case-ios/&#34;&gt; &lt;strong&gt;tutorial para criar um projeto do zero&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
       </description>
@@ -171,8 +171,8 @@ Para continuar a configurar o Beagle:&lt;/p&gt;
 &lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
 &lt;p&gt;Ao contrário das configurações para aplicações mobile, o Beagle para Web não exige requisitos prévios. Basta apenas seguir com os procedimentos de instalação de acordo com o framework que estiver utilizando:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;beagle-web.md#angular&#34;&gt;&lt;strong&gt;Angular&lt;/strong&gt; &lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;beagle-web.md#react&#34;&gt;&lt;strong&gt;React&lt;/strong&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;beagle-web#angular&#34;&gt;&lt;strong&gt;Angular&lt;/strong&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;beagle-web#react&#34;&gt;&lt;strong&gt;React&lt;/strong&gt; &lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;angular&#34;&gt;Angular&lt;/h2&gt;
 &lt;p&gt;Versão atual do Beagle Angular:&lt;a href=&#34;https://github.com/ZupIT/beagle-web-angular&#34;&gt;&lt;img src=&#34;https://img.shields.io/npm/v/@zup-it/beagle-angular?logo=Angular&#34; alt=&#34;badge&#34;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -192,7 +192,7 @@ Para continuar a configurar o Beagle:&lt;/p&gt;
 
 &lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
 
-Parabéns, a sua biblioteca está instalada! Veja agora &lt;a href=&#34;../usando-beagle/web/angular.md&#34;&gt;&lt;strong&gt;como usar o Beagle no Angular&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;
+Parabéns, a sua biblioteca está instalada! Veja agora &lt;a href=&#34;../../../../usando-beagle/web/angular&#34;&gt;&lt;strong&gt;como usar o Beagle no Angular&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;react&#34;&gt;React&lt;/h2&gt;
@@ -207,14 +207,14 @@ Parabéns, a sua biblioteca está instalada! Veja agora &lt;a href=&#34;../usand
 
 &lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
 
-Parabéns, a sua biblioteca está instalada! Veja agora &lt;a href=&#34;../usando-beagle/web/react.md&#34;&gt;&lt;strong&gt;como usar Beagle no React.&lt;/strong&gt;&lt;/a&gt;
+Parabéns, a sua biblioteca está instalada! Veja agora &lt;a href=&#34;../../../usando-beagle/web/react&#34;&gt;&lt;strong&gt;como usar Beagle no React.&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos Passos&lt;/h2&gt;
 &lt;p&gt;Nesta seção, você fez a &lt;strong&gt;instalação inicial&lt;/strong&gt; do Beagle na sua aplicação!&lt;br&gt;
 Para continuar a configurar o Beagle:&lt;/p&gt;
-&lt;p&gt;👉Vá para as &lt;a href=&#34;../usando-beagle/web/&#34;&gt;&lt;strong&gt;configurações iniciais&lt;/strong&gt;&lt;/a&gt; para habilitar uso do Beagle no seu projeto Web&lt;/p&gt;
-&lt;p&gt;👉 Se quiser ir direto para prática, acesse nosso&lt;a href=&#34;../criando-projeto-do-zero/case-web.md&#34;&gt; &lt;strong&gt;tutorial para criar um projeto do zero&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;👉Vá para as &lt;a href=&#34;../../usando-beagle/web/&#34;&gt;&lt;strong&gt;configurações iniciais&lt;/strong&gt;&lt;/a&gt; para habilitar uso do Beagle no seu projeto Web&lt;/p&gt;
+&lt;p&gt;👉 Se quiser ir direto para prática, acesse nosso&lt;a href=&#34;../criando-projeto-do-zero/case-web&#34;&gt; &lt;strong&gt;tutorial para criar um projeto do zero&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -234,7 +234,7 @@ Para continuar a configurar o Beagle:&lt;/p&gt;
 &lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
 
 &lt;p&gt;Antes de iniciar a instalação, é importante você saber que as etapas abaixo são para linguagens da JVM.&lt;/p&gt;
-&lt;p&gt;Para outras linguagens, seu servidor precisa servir o JSON seguindo nossa API. Dê uma olhada também na nossa implementação de &lt;a href=&#34;../../features/cache/&#34;&gt;&lt;strong&gt;cache&lt;/strong&gt;&lt;/a&gt; e em &lt;a href=&#34;../../features/componentes/especificacao-de-componentes-por-plataforma.md&#34;&gt;&lt;strong&gt;mecanismos específicos de cada linguagem&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Para outras linguagens, seu servidor precisa servir o JSON seguindo nossa API. Dê uma olhada também na nossa implementação de &lt;a href=&#34;../../../../../../../../features/cache/&#34;&gt;&lt;strong&gt;cache&lt;/strong&gt;&lt;/a&gt; e em &lt;a href=&#34;../../../../../../../../features/componentes/especificacao-de-componentes-por-plataforma&#34;&gt;&lt;strong&gt;mecanismos específicos de cada linguagem&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;/div&gt;
 
@@ -253,7 +253,7 @@ Para continuar a configurar o Beagle:&lt;/p&gt;
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 
-Se o seu time trabalha com microsserviços usando outros frameworks, acesse o &lt;a href=&#34;../../features/customizacao/beagle-para-backend/&#34;&gt;&lt;strong&gt;framework do Beagle&lt;/strong&gt;&lt;/a&gt;.
+Se o seu time trabalha com microsserviços usando outros frameworks, acesse o &lt;a href=&#34;../../../../../../../features/customizacao/beagle-para-backend/&#34;&gt;&lt;strong&gt;framework do Beagle&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;p&gt;Para uma configuração simples, você pode escolher entre &lt;strong&gt;2 modelos de frameworks&lt;/strong&gt; para criar seu BFF:&lt;/p&gt;
@@ -368,7 +368,7 @@ Se o seu time trabalha com microsserviços usando outros frameworks, acesse o &l
 &lt;p&gt;Lembre de sempre verificar se você está usando a versão mais recente do Beagle. Para saber disso, basta passar o mouse por cima do número da versão. Depois disso, sincronize com sua máquina.&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;Parabéns, a configuração inicial está pronta para uso!&lt;/p&gt;
-&lt;p&gt;Você pode conferir um &lt;strong&gt;exemplo prático&lt;/strong&gt; de tela ou componente Server-Driven &lt;a href=&#34;../usando-beagle/backend.md&#34;&gt;&lt;strong&gt;para testar o BFF&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Você pode conferir um &lt;strong&gt;exemplo prático&lt;/strong&gt; de tela ou componente Server-Driven &lt;a href=&#34;../../../../../../../../../../usando-beagle/backend&#34;&gt;&lt;strong&gt;para testar o BFF&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
 &lt;p&gt;O Spring Boot tem um problema conhecido envolvendo seu &lt;code&gt;WebMvcConfigurationSupport&lt;/code&gt;. Sua presença substitui outras configurações do Jackson, incluindo a do &lt;code&gt;Spring Starter&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Caso haja algum em seu projeto, sugerimos substituí-lo por&lt;code&gt;WebMvcConfigurer.&lt;/code&gt;&lt;/p&gt;
@@ -383,12 +383,12 @@ Se o seu time trabalha com microsserviços usando outros frameworks, acesse o &l
 Pronto, a configuração inicial está pronta para uso!
 &lt;/div&gt;
 
-&lt;p&gt;Você pode conferir um &lt;strong&gt;exemplo prático&lt;/strong&gt; de &lt;a href=&#34;../usando-beagle/backend.md&#34;&gt;&lt;strong&gt;como testar o Beagle no Backend&lt;/strong&gt;&lt;/a&gt; ou componente Server-Driven para testar o BFF.&lt;/p&gt;
+&lt;p&gt;Você pode conferir um &lt;strong&gt;exemplo prático&lt;/strong&gt; de &lt;a href=&#34;../usando-beagle/backend&#34;&gt;&lt;strong&gt;como testar o Beagle no Backend&lt;/strong&gt;&lt;/a&gt; ou componente Server-Driven para testar o BFF.&lt;/p&gt;
 &lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos Passos&lt;/h2&gt;
 &lt;p&gt;Nesta seção, você fez a &lt;strong&gt;instalação inicial&lt;/strong&gt; do Beagle na sua aplicação!&lt;br&gt;
 Para continuar a configurar o Beagle:&lt;/p&gt;
-&lt;p&gt;👉Vá para as &lt;a href=&#34;../usando-beagle/backend.md&#34;&gt;&lt;strong&gt;configurações iniciais&lt;/strong&gt;&lt;/a&gt; para habilitar uso do Beagle no seu projeto Backend&lt;/p&gt;
-&lt;p&gt;👉 Se quiser ir direto para prática, acesse nosso &lt;a href=&#34;../criando-projeto-do-zero/case-backend.md&#34;&gt;&lt;strong&gt;tutorial para criar um projeto do zero&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;👉Vá para as &lt;a href=&#34;../usando-beagle/backend&#34;&gt;&lt;strong&gt;configurações iniciais&lt;/strong&gt;&lt;/a&gt; para habilitar uso do Beagle no seu projeto Backend&lt;/p&gt;
+&lt;p&gt;👉 Se quiser ir direto para prática, acesse nosso &lt;a href=&#34;../../criando-projeto-do-zero/case-backend&#34;&gt;&lt;strong&gt;tutorial para criar um projeto do zero&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
