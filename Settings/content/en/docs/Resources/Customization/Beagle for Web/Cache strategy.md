@@ -52,7 +52,7 @@ If you backend is with disabled cache, the payload from the tree will be saved o
 
 ### **2. beagle-cache-only**
 
-This strategy only implements [**Beagle's cache protocol**](../../cache/). This means that, it works the same way the standard one, but without the fallback. 
+This strategy only implements [**Beagle's cache protocol**](../../../cache/). This means that, it works the same way the standard one, but without the fallback. 
 
 When you enable this strategy, the tree that is on cache it is only used if there is a valid max-age or if it receives a 304 status from the backend. 
 

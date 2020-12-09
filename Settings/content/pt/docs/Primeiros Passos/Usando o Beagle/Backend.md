@@ -10,7 +10,7 @@ description: >-
 
 ## Configurações de uso 
 
-Quando você finalizar a [**instalação do Beagle**](../instalando-beagle/backend.md), seu BFF estará com a configuração padrão de uso.
+Quando você finalizar a [**instalação do Beagle**](../../instalando-beagle/backend), seu BFF estará com a configuração padrão de uso.
 
 ### CORS
 

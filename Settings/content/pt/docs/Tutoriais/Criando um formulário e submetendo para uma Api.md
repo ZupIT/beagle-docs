@@ -8,24 +8,24 @@ description: 'Nesta seção, você confere como criar um formulário e submetê-
 
 ## Introdução
 
-Para este tutorial, iremos usar algumas [**ações**](../api/acoes/) e também APIs: 
+Para este tutorial, iremos usar algumas [**ações**](../../../../../../../api/acoes/) e também APIs: 
 
 **Actions**
 
-* [**SetContext**](../api/acoes/setcontext.md)
-* [**SendRequest**](../api/acoes/sendrequest.md)
+* [**SetContext**](../../../../../../api/acoes/setcontext)
+* [**SendRequest**](../../../../../api/acoes/sendrequest)
 
 **APIs**
 
-* [**Context**](../api/contexto/)
+* [**Context**](../../../../api/contexto/)
 * [**Binding**](https://docs.usebeagle.io/v/v1.0-pt/api/contexto#bindings)
 * [**Expressões**](https://docs.usebeagle.io/v/v1.0-pt/api/contexto#bindings)
 
-Apesar do conceito [**Server-Driven**](../principais-conceitos.md#server-driven-ui) trabalhar componentes separadamente, é possível realizar a transmissão das informações para uma API e é o que vamos demonstrar abaixo. 
+Apesar do conceito [**Server-Driven**](../../../principais-conceitos#server-driven-ui) trabalhar componentes separadamente, é possível realizar a transmissão das informações para uma API e é o que vamos demonstrar abaixo. 
 
 ## Exemplo de Uso
 
-Neste exemplo, iremos utilizar os componentes [**TextInput**](../api/componentes/ui/input.md) e [**Button**](https://docs.usebeagle.io/v/v1.0-pt/api/componentes/ui/button) para simularmos uma tela de Login.
+Neste exemplo, iremos utilizar os componentes [**TextInput**](../api/componentes/ui/input) e [**Button**](https://docs.usebeagle.io/v/v1.0-pt/api/componentes/ui/button) para simularmos uma tela de Login.
 
 ### Passo 1: Criar uma tela de Login
 
@@ -165,7 +165,7 @@ Container(
 {{% /tab %}}
 {{< /tabs >}}
 
-Neste exemplo, utilizamos o evento `onChange` do próprio TextInput que é chamado sempre que o usuário digita um texto novo no input. Dentro do onChange, existe um [**contexto implícito**](../api/contexto/#contextos-implicitos) chamado `onChange` no qual o `value` é o último valor digitado pelo usuário. 
+Neste exemplo, utilizamos o evento `onChange` do próprio TextInput que é chamado sempre que o usuário digita um texto novo no input. Dentro do onChange, existe um [**contexto implícito**](../../api/contexto/#contextos-implicitos) chamado `onChange` no qual o `value` é o último valor digitado pelo usuário. 
 
 #### OnChange 
 

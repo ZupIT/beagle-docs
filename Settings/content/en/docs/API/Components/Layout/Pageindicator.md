@@ -8,7 +8,7 @@ description: PageIndicatorComponent description.
 
 ## What is it?
 
-`PageIndicatorComponent` is a component that indicates the amount of pages and which one is the current [**PageView**](pageview.md). 
+`PageIndicatorComponent` is a component that indicates the amount of pages and which one is the current [**PageView**](pageview). 
 
 | Attribute | Type | Required | Definition |
 | :--- | :--- | :---: | :--- |
@@ -19,7 +19,7 @@ description: PageIndicatorComponent description.
 
 ## How to use it? 
 
-An example on how to use `PageIndicator` can be foun on [**PageView**](pageview.md#como-usar).
+An example on how to use `PageIndicator` can be foun on [**PageView**](pageview#como-usar).
 
 ### [👉 Test this component in the Web Playground​](https://beagle-playground.netlify.app/#/demo/default-components/pageview.json)
 

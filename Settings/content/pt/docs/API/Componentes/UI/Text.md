@@ -17,7 +17,7 @@ A estrutura é representada como mostrado abaixo:
 | text | String ou [**Binding**](https://docs.usebeagle.io/api/contexto#bindings) | ✓ | Define o conteúdo em texto a ser exibido. |
 | styleId | String |   | Referencia o estilo configurado localmente a ser aplicado no texto. |
 | textColor | String |   | Define a cor do texto em hexadecimal. |
-| alignment | [**TextAlignment**](text.md#textalignment) |   | Define o alinhamento do conteúdo do texto. |
+| alignment | [**TextAlignment**](text#textalignment) |   | Define o alinhamento do conteúdo do texto. |
 
 ### TextAlignment
 

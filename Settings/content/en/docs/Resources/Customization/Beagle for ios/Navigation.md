@@ -24,7 +24,7 @@ We suggest that you use the default implementation, but if it is necessary, it i
 
 ## Default implementation
 
-There is a implementation for this protocol used as a default value on [**BeagleDependencies**](beagledependencies.md)**.** It will treat the action with a more intuitive way. 
+There is a implementation for this protocol used as a default value on [**BeagleDependencies**](beagledependencies) It will treat the action with a more intuitive way. 
 
 ### OpenExternalURL
 

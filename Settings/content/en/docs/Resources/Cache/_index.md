@@ -25,7 +25,7 @@ The entries on this cache layer has time duration defined by cache general confi
 
 You can check out how to **configure the cache** according to your frontend's platform on the following links:
 
-* [**Configuring Cache**](ho-to-configure-cache.md)
+* [**Configuring Cache**](ho-to-configure-cache)
 
 ### Persistent cache 
 
@@ -36,7 +36,7 @@ On this cache layer, there are two types of localization:
 
 This cache is used to optimize BFF's response - in terms of time and size -, in cases where there is no changes. The entries of this cache lasts until the server redeploy or the client is reinstalled. 
 
-The premisse to this cache works is that it has to always return the same JSON to the same request. To guarantee that, it's necessary that this cache is the same according to its endpoint and specific platform as we can see in [**component's platform specification.**](../components/platform-sorting.md)
+The premisse to this cache works is that it has to always return the same JSON to the same request. To guarantee that, it's necessary that this cache is the same according to its endpoint and specific platform as we can see in [**component's platform specification.**](../../../components/platform-sorting)
 
 In other words, we say that an endpoint can return a static element because it can only work if it returns the same JSON, independently of any other specific platform. 
 
@@ -44,7 +44,7 @@ In other words, we say that an endpoint can return a static element because it c
 It's important to remember that cache's mechanism **must not** be used with **endpoints** that does not meet this **premisse**. 
 {{% /alert %}}
 
-The cache can be activated or disabled on BFF by endpoint or for an entire  BFF. You can **check out**  [**how to configure a cache.** ](../customization/beagle-for-backend/)
+The cache can be activated or disabled on BFF by endpoint or for an entire  BFF. You can **check out**  [**how to configure a cache.** ](../../customization/beagle-for-backend/)
 
 ## How does the cache protocol works? 
 

@@ -14,7 +14,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :---: | :--- |
-| screen | [Screen](../../../screen/) | ✓  | Tela a ser carregada |
+| screen | [Screen](../../../../screen/) | ✓  | Tela a ser carregada |
 
 ## Como usar?
 

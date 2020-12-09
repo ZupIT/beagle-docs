@@ -14,7 +14,7 @@ It is an action that has a boolean parameter and according to the value the acti
 
 | Attribute | Type | Required | Definition |
 | :--- | :--- | :---: | :--- |
-| condition | Boolean or [**Binding**](../context/#binding) | ✓ | Condition to define which action will run.  |
+| condition | Boolean or [**Binding**](../../context/#binding) | ✓ | Condition to define which action will run.  |
 | onTrue | List&lt;Action&gt; |   | List of actions that it will be run when the condition is true. |
 | onFalse | List&lt;Action&gt; |   | List of actions that it will be run when the condition is false. |
 

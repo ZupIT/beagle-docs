@@ -331,5 +331,5 @@ Os itens são uniformemente distribuídos ao longo do eixo principal:
 {{< /tabs >}}
 
 {{% alert color="info" %}}
-Para saber o Justify Content, acesse [**a documentação no Yoga Layout**](https://yogalayout.com/docs/flex-direction/)**.**
+Para saber o Justify Content, acesse [**a documentação no Yoga Layout**](https://yogalayout.com/docs/flex-direction/)
 {{% /alert %}}

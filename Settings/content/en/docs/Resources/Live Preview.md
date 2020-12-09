@@ -20,7 +20,7 @@ This frontend and backend connection is done through a `WebSocket`on port: `9721
 
 To use `Live Preview`, you must: 
 
-* Use [**Beagle SDK**](../get-started/installing-beagle/beagle-backend.md) in your BFF**;**
+* Use [**Beagle SDK**](../../get-started/installing-beagle/beagle-backend) in your BFF**;**
 * Install `BeaglePreview` plugin;
 
 ### BFF Configuration
@@ -36,7 +36,7 @@ To install `BeaglePreview`, click on the link below to install:
 ## Live Preview Use
 
 {{% alert color="warning" %}}
-You **must configure** both backend and frontend for the Live Preview**.** The frontend can be Android or iOS client.
+You **must configure** both backend and frontend for the Live Preview The frontend can be Android or iOS client.
 {{% /alert %}}
 
 ### Step 1: Backend's Configuration
@@ -157,7 +157,7 @@ adb shell am start -n applicationpackagename/br.com.zup.beagle.android.preview.P
 ```
 
 {{% alert color="info" %}}
- For more information about your package, access the attribute's package on your`AndroidManifest`'s file**.**
+ For more information about your package, access the attribute's package on your`AndroidManifest`'s file
 {{% /alert %}}
 
 ## Visualizing screens through Android Device

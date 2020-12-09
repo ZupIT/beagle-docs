@@ -85,9 +85,9 @@ A sua estrutura é representada como mostrado abaixo:
       <td style="text-align:center"></td>
       <td style="text-align:left">
         <p>Array de a&#xE7;&#xF5;es que esse campo <b>pode disparar quando seu valor for alterado</b>.
-          &#xC9; poss&#xED;vel definir uma <a href="../../../features/criacao-de-novas-acoes.md"><b>a&#xE7;&#xE3;o customizada</b></a><b> </b>ou
+          &#xC9; poss&#xED;vel definir uma <a href="../../../features/criacao-de-novas-acoes"><b>a&#xE7;&#xE3;o customizada</b></a><b> </b>ou
           qualquer a&#xE7;&#xE3;o j&#xE1; dispon&#xED;vel na interface, como por
-          exemplo uma a&#xE7;&#xE3;o que mostra uma mensagem de alerta(<a href="../../acoes/alert.md"><b>Alert</b></a>).</p>
+          exemplo uma a&#xE7;&#xE3;o que mostra uma mensagem de alerta(<a href="../../acoes/alert"><b>Alert</b></a>).</p>
         <p></p>
         <p>Este atributo &#xE9; opcional, mas se uma a&#xE7;&#xE3;o for definida
           aqui ela precisa estar configurada no frontend.</p>
@@ -99,9 +99,9 @@ A sua estrutura é representada como mostrado abaixo:
       <td style="text-align:center"></td>
       <td style="text-align:left">
         <p>Array de a&#xE7;&#xF5;es que esse campo <b>pode disparar quando seu foco &#xE9; retirado</b>.
-          &#xC9; poss&#xED;vel definir uma <a href="../../../features/criacao-de-novas-acoes.md"><b>a&#xE7;&#xE3;o customizada</b></a><b> </b>ou
+          &#xC9; poss&#xED;vel definir uma <a href="../../../features/criacao-de-novas-acoes"><b>a&#xE7;&#xE3;o customizada</b></a><b> </b>ou
           qualquer a&#xE7;&#xE3;o j&#xE1; dispon&#xED;vel na interface como, por
-          exemplo, uma a&#xE7;&#xE3;o que mostra uma mensagem de alerta(<a href="../../acoes/alert.md"><b>Alert</b></a>).</p>
+          exemplo, uma a&#xE7;&#xE3;o que mostra uma mensagem de alerta(<a href="../../acoes/alert"><b>Alert</b></a>).</p>
         <p></p>
         <p>Este atributo &#xE9; opcional, mas se uma a&#xE7;&#xE3;o for definida
           aqui ela precisa estar configurada no frontend.</p>
@@ -113,9 +113,9 @@ A sua estrutura é representada como mostrado abaixo:
       <td style="text-align:center"></td>
       <td style="text-align:left">
         <p>Array de a&#xE7;&#xF5;es que esse campo pode disparar quando &#xE9; colocado
-          em foco. &#xC9; poss&#xED;vel definir uma <a href="../../../features/criacao-de-novas-acoes.md"><b>a&#xE7;&#xE3;o customizada</b></a><b> </b>ou
+          em foco. &#xC9; poss&#xED;vel definir uma <a href="../../../features/criacao-de-novas-acoes"><b>a&#xE7;&#xE3;o customizada</b></a><b> </b>ou
           qualquer a&#xE7;&#xE3;o j&#xE1; dispon&#xED;vel na interface como, por
-          exemplo, uma a&#xE7;&#xE3;o que mostra uma mensagem de alerta(<a href="../../acoes/alert.md"><b>Alert</b></a>).</p>
+          exemplo, uma a&#xE7;&#xE3;o que mostra uma mensagem de alerta(<a href="../../acoes/alert"><b>Alert</b></a>).</p>
         <p></p>
         <p>Este atributo &#xE9; opcional, mas se uma a&#xE7;&#xE3;o for definida
           aqui ela precisa estar configurada no frontend.</p>

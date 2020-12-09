@@ -52,7 +52,7 @@ See how the structure is represented:
     <tr>
       <td style="text-align:left">child</td>
       <td style="text-align:left">
-        <p>&lt;b&gt;&lt;/b&gt;<a href="../widget.md"><b>Server</b></a>&lt;b&gt;&lt;/b&gt;</p>
+        <p>&lt;b&gt;&lt;/b&gt;<a href="../widget"><b>Server</b></a>&lt;b&gt;&lt;/b&gt;</p>
         <p>&lt;b&gt;&lt;/b&gt;<a href="https://docs.usebeagle.io/api/widget"><b>DrivenComponent</b></a>&lt;b&gt;&lt;/b&gt;</p>
       </td>
       <td style="text-align:left">&#x2713;</td>

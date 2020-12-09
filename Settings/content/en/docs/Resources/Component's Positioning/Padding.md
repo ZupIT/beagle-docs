@@ -266,7 +266,7 @@ private func screen() -> Screen {
 
 Defines some space inside the element, at the top:
 
-![](https://lh3.googleusercontent.com/NpgSjgVwSjvXjeDz9H3lp6prnTGEOtmdkot_39nx0gYPZa-KXz-YPOKgzZG87V1TS9HYgEDqJtCgmQkXEQpC1dCqQrWDn3wcqWN3HgNK5EPGyCife44lvOUlbgFJ-WhYNFJf4O7K)
+![](https://lh3.googleusercontent.com/NpgSjgVwSjvXjeDz9H3lp6prnTGEOkot_39nx0gYPZa-KXz-YPOKgzZG87V1TS9HYgEDqJtCgmQkXEQpC1dCqQrWDn3wcqWN3HgNK5EPGyCife44lvOUlbgFJ-WhYNFJf4O7K)
 
 {{< tabs name="T51" >}}
 {{% tab name="Kotlin" %}}
@@ -445,4 +445,4 @@ Defines some vertical space inside the element:
 {{% /tab %}}
 {{< /tabs >}}
 
-For more information about Padding, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/)**.**
+For more information about Padding, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/)

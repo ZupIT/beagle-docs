@@ -51,7 +51,7 @@ A sua estrutura é representada como mostrado abaixo:
 | **Atributos** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :--- | :--- |
 | remoteUrl | String |     ✓ | Caminho absoluto ou relativo da imagem a ser baixada. |
-| placeholder | [**ImagePath.Local**](imagepath.md#imagepath-local) |  | É possível passar um asset local no aplicativo que será mostrado enquanto a URL remota é carregada. |
+| placeholder | [**ImagePath.Local**](imagepath#imagepath-local) |  | É possível passar um asset local no aplicativo que será mostrado enquanto a URL remota é carregada. |
 
 Irá referenciar uma imagem que esteja hospedada em outro host ou relativo no próprio server.
 

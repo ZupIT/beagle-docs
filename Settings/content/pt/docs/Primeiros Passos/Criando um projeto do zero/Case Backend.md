@@ -20,7 +20,7 @@ Para criar um projeto com o Beagle para o backend, é preciso:
 
 ### Passo 1: Iniciar o projeto usando Spring initializr 
 
-O primeiro passo para configurar seu backend é acessar o site do [**Spring**](https://start.spring.io/)**.**  
+O primeiro passo para configurar seu backend é acessar o site do [**Spring**](https://start.spring.io/)  
 Ele criará o projeto `Maven` que facilitará a configuração do seu projeto.
 
 ![](https://lh5.googleusercontent.com/ZshvFubtunY4x0JWWBLgSmFesUx7G2AVlSrCcS96efc2lJtAakhYJ-zxgDx7CkcCMOC6zedwUAS3ThBpVXfS8jyvieNLgL3ZJIxWnHJFLE77IOXZs3UqOR8TQazINC_enzoO4Y4Q)
@@ -58,7 +58,7 @@ Siga os passos abaixo para importar o projeto que você criou. Primeiro, abra o 
 
 ### Passo 1: Configurar o projeto
 
-Como ponto de partida, siga nosso [**passo a passo para instalar o backend**](../instalando-beagle/backend.md). 
+Como ponto de partida, siga nosso [**passo a passo para instalar o backend**](../../../../instalando-beagle/backend). 
 
 ### Passo 2: Definir a Estrutura
 
@@ -250,6 +250,6 @@ Para saber mais sobre como configurar o seu ambiente frontend, veja mais em:
 
 👉 Tutorial do Beagle para [**Android**](case-android/).
 
-👉Tutorial do Beagle para [**iOS**](../usando-beagle/ios.md).
+👉Tutorial do Beagle para [**iOS**](../../usando-beagle/ios).
 
-👉Tutorial do Beagle para  [**Web**](case-web.md).
+👉Tutorial do Beagle para  [**Web**](case-web).

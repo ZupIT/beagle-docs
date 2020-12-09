@@ -13,7 +13,7 @@ It works exactly like the [**Context**](context/), however in a global scope, me
 
 ### How can you access it? 
 
-It can be accessed through an expression in a declarative page, for example, `"@{global.user}"` or programmatically from a **GlobalContext.get\(\)** object**.** 
+It can be accessed through an expression in a declarative page, for example, `"@{global.user}"` or programmatically from a **GlobalContext.get\(\)** object 
 
 {{% alert color="info" %}}
 This way, it is possible to share information between the native part of the application, the server-driven part and between different server-driven screens. 
@@ -23,7 +23,7 @@ This way, it is possible to share information between the native part of the app
 
 It is important to mention some information to use the Global Context: 
 
-* Global context Global ins an object and is type is __[**`ContextData`**](context/)**.** 
+* Global context Global ins an object and is type is __[**`ContextData`**](context/) 
 * Global context can have as a VALUE, a complex JSON that can contain an object tree in it. 
 * It is a `Singleton`.
 
@@ -39,12 +39,12 @@ Global context is created with the application and it is defined internally on B
 
 A context to be global, it can be defined in two ways: 
 
-* From a declarative component \(using the [**`SetContext`**](actions/setcontext.md)action\) or
+* From a declarative component \(using the [**`SetContext`**](actions/setcontext)action\) or
 * Programmatically, using the `set()` function from the `GlobalContext` object. 
 
 ### 1. Using SetContext
 
-It is possible to define or modify a  global context from the   [**`SetContext`**](actions/setcontext.md) action.  You have to identify a global context using an `ID = "global`" in the `contextId` property, as you can see below: 
+It is possible to define or modify a  global context from the   [**`SetContext`**](actions/setcontext) action.  You have to identify a global context using an `ID = "global`" in the `contextId` property, as you can see below: 
 
 {{< tabs name="T149" >}}
 {{% tab name="JSON" %}}
@@ -160,7 +160,7 @@ beagleService?.globalContext.set(value, path)
 {{% /tab %}}
 
 {{% tab name="iOS" %}}
-In iOS the Global Context is a [**Beagle Dependencies**](../resources/customization/beagle-for-ios/beagledependencies.md) attribute.
+In iOS the Global Context is a [**Beagle Dependencies**](../../resources/customization/beagle-for-ios/beagledependencies) attribute.
 
 To use it in anywhere of your application you must to use the `BeagleDependencies` instance of your project as the example below:
 

@@ -8,7 +8,7 @@ description: >-
 
 ---
 
-Alguns elementos fornecidos pelo Beagle podem ser mais direcionados à uma plataforma e, talvez, não fazer tanto sentido para outra. Por exemplo, o uso do [**ScrollView**](../../api/componentes/layout/scrollview.md) funciona melhor na plataforma Mobile, mas não é necessário na Web. 
+Alguns elementos fornecidos pelo Beagle podem ser mais direcionados à uma plataforma e, talvez, não fazer tanto sentido para outra. Por exemplo, o uso do [**ScrollView**](../../../api/componentes/layout/scrollview) funciona melhor na plataforma Mobile, mas não é necessário na Web. 
 
 Isso acontece porque o Beagle possui  a funcionalidade de **Especificação de Plataforma**, que te permite ter controle de quais elementos são enviados pelo BFF e quais plataformas serão usadas. 
 

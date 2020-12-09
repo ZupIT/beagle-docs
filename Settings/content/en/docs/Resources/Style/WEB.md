@@ -250,5 +250,5 @@ Finally, you have the possibility to add proprieties in a flexbox layout model w
 ```
 
 {{% alert color="info" %}}
-Besides these functionalities, there are some components that have specific proprieties like text change color or alignement. Check out more about [**Beagle's components.**](../../api/components/)
+Besides these functionalities, there are some components that have specific proprieties like text change color or alignement. Check out more about [**Beagle's components.**](../../../api/components/)
 {{% /alert %}}

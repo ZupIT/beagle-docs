@@ -104,7 +104,7 @@ override fun getToolbar(): Toolbar = findViewById<Toolbar>(R.id.toolbar)
 
 ### 3. Tratamento de erros
 
-Você pode observar os estados e tratar os erros a partir do [`onServerDrivenContainerStateChanged()`](carregamento-e-tratamento-de-erros.md)\`\`
+Você pode observar os estados e tratar os erros a partir do [`onServerDrivenContainerStateChanged()`](carregamento-e-tratamento-de-erros)\`\`
 
 ```kotlin
 override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {

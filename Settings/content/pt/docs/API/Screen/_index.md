@@ -13,12 +13,12 @@ A sua tela possui atributos e componentes que podem ser usados e configurados. N
 | **Atributo** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :---: | :--- |
 | identifier | String |   | Atributo que identifica a tela globalmente na sua aplicação, de modo que seja possível atribuir ações a ela. |
-| safe area | [**Safe Area**](safe-area.md) |   | Especifica o posicionamento dos componentes na tela. |
-| navigation bar | [**Navigation Bar**](./#navigation-bar) |   | Permite configurar a barra de ações/navegação na tela. |
-| child | [**Server Driven Component**](../componentes/) | ✓ | Define os elementos na tela. Pode ser qualquer componente visual que estenda de `ServerDrivenComponent`. |
-| style | [**Style**](../widget.md#atributos-do-style) |   | Fornece opções de customização visual para a `Screen.` |
-| screen analytics event | [**Screen Event**](../analytics.md#opcao-screenview) |   | Configura elementos de análise\(Analytics\) na sua tela. |
-| context | [**ContextData**](../contexto/) |   | Contexto da tela. |
+| safe area | [**Safe Area**](safe-area) |   | Especifica o posicionamento dos componentes na tela. |
+| navigation bar | [**Navigation Bar**](../../../../.././#navigation-bar) |   | Permite configurar a barra de ações/navegação na tela. |
+| child | [**Server Driven Component**](../../../../../componentes/) | ✓ | Define os elementos na tela. Pode ser qualquer componente visual que estenda de `ServerDrivenComponent`. |
+| style | [**Style**](../../../../widget#atributos-do-style) |   | Fornece opções de customização visual para a `Screen.` |
+| screen analytics event | [**Screen Event**](../../../analytics#opcao-screenview) |   | Configura elementos de análise\(Analytics\) na sua tela. |
+| context | [**ContextData**](../../contexto/) |   | Contexto da tela. |
 
 ## Como usar?
 

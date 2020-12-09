@@ -101,7 +101,7 @@ See how the structure is represented by the attributes below:
           <p>Action array that this field can trigger when its focus is removed. It
             is possible to defined a <a href="https://docs.usebeagle.io/v/v1.0-en/resources/customization/beagle-para-web/customized-actions"><b>customized action</b></a><b> </b>or
             any available action in the interface, for example, an action that shows
-            an alert message (<a href="../../actions/alert.md"><b>Alert</b></a>).</p>
+            an alert message (<a href="../../actions/alert"><b>Alert</b></a>).</p>
           <p></p>
           <p>This attribute is optional, but if an action is defined here it needs
             to be configured in the fronted.</p>
@@ -116,7 +116,7 @@ See how the structure is represented by the attributes below:
           <p>Actions array that this field can trigger when this field is on focus.
             It is possible to defined a <a href="https://docs.usebeagle.io/v/v1.0-en/resources/customization/beagle-para-web/customized-actions"><b>customized action</b></a><b> </b>or
             any available action in the interface, for example, an action that shows
-            an alert message (<a href="../../actions/alert.md"><b>Alert</b></a><b>). </b>
+            an alert message (<a href="../../actions/alert"><b>Alert</b></a><b>). </b>
           </p>
           <p>&lt;b&gt;&lt;/b&gt;</p>
           <p>This attribute is optional, but if an action is defined here it needs

@@ -61,11 +61,11 @@ Check the example below to see how the structure works:
     </tr>
     <tr>
       <td style="text-align:left">clickAnalyticsEvent</td>
-      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;<a href="../../analytics.md"><b>ClickEvent</b></a>&lt;b&gt;&lt;/b&gt;</td>
+      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;<a href="../../analytics"><b>ClickEvent</b></a>&lt;b&gt;&lt;/b&gt;</td>
       <td
       style="text-align:left"></td>
         <td style="text-align:left">Click event that will go off in case an analytics service has been implemented.
-          Check <a href="../../analytics.md"><b>here fore more information about analytics.</b></a>&lt;b&gt;&lt;/b&gt;</td>
+          Check <a href="../../analytics"><b>here fore more information about analytics.</b></a>&lt;b&gt;&lt;/b&gt;</td>
     </tr>
   </tbody>
 </table>

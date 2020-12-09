@@ -17,7 +17,7 @@ description: Here you will find the complete description of arithmetic operator.
 
 ### Example
 
-See an example below of a counter where two buttons `increment` and `decrement`, both with [**SetContext**](../actions/setcontext.md) actions that modifies the context value that has an id counter, altering the value with addition and subtraction operations, increasing or decresing the value of 1 to the text value:
+See an example below of a counter where two buttons `increment` and `decrement`, both with [**SetContext**](../../actions/setcontext) actions that modifies the context value that has an id counter, altering the value with addition and subtraction operations, increasing or decresing the value of 1 to the text value:
 
 {{< tabs name="T141" >}}
 {{% tab name="Kotlin" %}}

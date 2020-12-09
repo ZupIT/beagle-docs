@@ -20,7 +20,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 | Atributo | Tipo | Obrigatório | Definição |
 | :--- | :--- | :---: | :--- |
-| direction | [ListDirection](listview.md#listdirection) |   | Define o direcionamento em que os items da lista são exibidos. |
+| direction | [ListDirection](listview#listdirection) |   | Define o direcionamento em que os items da lista são exibidos. |
 | context | [ContextData](https://docs.usebeagle.io/api/context) |  | Define o contexto do componente. |
 | onInit | List&lt;[Action](https://docs.usebeagle.io/api/actions)&gt; |  | Lista de ações a serem executadas assim que o componente é exibido.  |
 | dataSource | [Bind](https://docs.usebeagle.io/api/context#bindings)&lt;List&lt;Any&gt;&gt; | ✓ | Expressão que aponta para uma lista de valores usados para popular o componete. |
@@ -68,7 +68,7 @@ Valor default é ListDirection.VERTICAL
     </tr>
     <tr>
       <td style="text-align:left">direction</td>
-      <td style="text-align:left"><a href="listview.md#listdirection">ListDirection</a>
+      <td style="text-align:left"><a href="listview#listdirection">ListDirection</a>
       </td>
       <td style="text-align:center"></td>
       <td style="text-align:left">Define o direcionamento da lista de visualiza&#xE7;&#xE3;o.</td>

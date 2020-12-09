@@ -10,7 +10,7 @@ description: >-
 
 ## Use configuration 
 
-Once you have finished[ **Beagle's installation**, ](../installing-beagle/beagle-backend.md)your BFF is fully configured for usage, with default settings.
+Once you have finished[ **Beagle's installation**, ](../installing-beagle/beagle-backend)your BFF is fully configured for usage, with default settings.
 
 ### CORS
 
@@ -263,7 +263,7 @@ open class CorsConfig : WebMvcConfigurer {
 {{< /tabs >}}
 
 {{% alert color="danger" %}}
-Use a permissive configuration like this one, only in local development environment. It eliminates CORS's security benefits**.**
+Use a permissive configuration like this one, only in local development environment. It eliminates CORS's security benefits
 {{% /alert %}}
 
 We have an enabled CORS withmeusite.com.br like the permitted origin: `GET`, `PUT`, `POST` like the allowed methods `Cache-control` like an allowed header; and `beagle-hash`, `x-meu1` like exposed header. 

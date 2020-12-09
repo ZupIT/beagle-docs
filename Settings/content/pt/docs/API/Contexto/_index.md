@@ -74,7 +74,7 @@ Container(
 {{% /tab %}}
 {{< /tabs >}}
 
-Perceba que o contexto foi declarado e seus valores foram definidos e usados para preencher os textos, porém é possível definir esses valores depois usando o método [`SetContext()`](../acoes/setcontext.md) . 
+Perceba que o contexto foi declarado e seus valores foram definidos e usados para preencher os textos, porém é possível definir esses valores depois usando o método [`SetContext()`](../../../../../../../../acoes/setcontext) . 
 
 Dessa forma, você pode preencher os componentes com dados que ainda não estavam no JSON.
 
@@ -142,14 +142,14 @@ Container(
 {{% /tab %}}
 {{< /tabs >}}
 
-Perceba que o contexto foi declarado e seus valores foram definidos e usados para preencher os textos, porém é possível definir depois esses valores usando o método [`SetContext()`](../acoes/setcontext.md) . Dessa forma, você pode preencher os componentes com dados que ainda não estavam no JSON.
+Perceba que o contexto foi declarado e seus valores foram definidos e usados para preencher os textos, porém é possível definir depois esses valores usando o método [`SetContext()`](../acoes/setcontext) . Dessa forma, você pode preencher os componentes com dados que ainda não estavam no JSON.
 
 ### 2. Contextos implícitos
 
-Quando **não há um escopo** de contexto definido dentro do JSON ou da estrutura declarativa da sua tela, mas que podem ser acessados por [**bindings**](./#binding).
+Quando **não há um escopo** de contexto definido dentro do JSON ou da estrutura declarativa da sua tela, mas que podem ser acessados por [**bindings**](../.././#binding).
 
 {{% alert color="info" %}}
-Isso significa que esse tipo de contexto é criado por meio de [**eventos**](../eventos.md). 
+Isso significa que esse tipo de contexto é criado por meio de [**eventos**](../../eventos). 
 
 Além disso, o escopo desse tipo de contexto é definido apenas por uma action ou um conjunto de ações relacionados ao evento criado no contexto. 
 {{% /alert %}}

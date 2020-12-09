@@ -102,4 +102,4 @@ private func screen() -> Screen {
 {{% /tab %}}
 {{< /tabs >}}
 
-For more information about Align Self, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/)**.**
+For more information about Align Self, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/)

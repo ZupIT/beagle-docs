@@ -41,11 +41,11 @@ Algumas definições nessa documentação existem apenas em algumas minors ou pa
 
 ## Como funciona o Beagle?
 
-A ferramenta atua como um facilitador do **BFF** \([**Backend For Frontend**](principais-conceitos.md#backend-for-frontend)\)**.** Isso significa que o Beagle, a partir de uma biblioteca de componentes definidos no [**Design System**](principais-conceitos.md#design-system) da aplicação Android, iOS ou Web, faz a alteração visual e comportamental delas ao retornar um arquivo JSON que indica o que e onde deve ser renderizado cada componente e qual a ação que vão executar.
+A ferramenta atua como um facilitador do **BFF** \([**Backend For Frontend**](principais-conceitos#backend-for-frontend)\) Isso significa que o Beagle, a partir de uma biblioteca de componentes definidos no [**Design System**](principais-conceitos#design-system) da aplicação Android, iOS ou Web, faz a alteração visual e comportamental delas ao retornar um arquivo JSON que indica o que e onde deve ser renderizado cada componente e qual a ação que vão executar.
 
 ![](/docs-beagle/beaglemobileback.png)
 
-O motivo pelo qual o Beagle consegue fazer essa alteração do frontend a partir do backend é porque sua arquitetura está estruturada em [**Server-Driven UI**](principais-conceitos.md#server-driven-ui), onde o BFF constrói os dados, componentes e ações presentes na tela de forma declarativa e os encaminha no formato JSON, enquanto o front o desserializa, renderiza os componentes visuais de forma nativa além de executar e atribuir as ações presentes em cada um deles.
+O motivo pelo qual o Beagle consegue fazer essa alteração do frontend a partir do backend é porque sua arquitetura está estruturada em [**Server-Driven UI**](principais-conceitos#server-driven-ui), onde o BFF constrói os dados, componentes e ações presentes na tela de forma declarativa e os encaminha no formato JSON, enquanto o front o desserializa, renderiza os componentes visuais de forma nativa além de executar e atribuir as ações presentes em cada um deles.
 
 ### Pilares do Beagle
 

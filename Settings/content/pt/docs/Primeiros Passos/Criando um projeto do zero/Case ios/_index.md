@@ -95,10 +95,10 @@ class BeagleConfig {
 ```
 
 
-Agora, vamos configurar a classe**`SceneDelegate`** para que possamos inicializar nossa aplicação com o Beagle a partir de uma tela via [**BFF**:](../../../principais-conceitos.md#backend-for-frontend)
+Agora, vamos configurar a classe**`SceneDelegate`** para que possamos inicializar nossa aplicação com o Beagle a partir de uma tela via [**BFF**:](../../../../../../principais-conceitos#backend-for-frontend)
 
 * Crie a constante **`beagleScreen`**, que irá receber a tela server-driven. 
-* O argumento `init URL` deve conter o endereço da [**URL relativa**](../../../features/urls.md#caminho-relativo) que será criada no backend \(BFF\). No nosso exemplo a chamaremos de "/screen"
+* O argumento `init URL` deve conter o endereço da [**URL relativa**](../../../../../features/urls#caminho-relativo) que será criada no backend \(BFF\). No nosso exemplo a chamaremos de "/screen"
 
 Siga o exemplo abaixo: 
 
@@ -122,7 +122,7 @@ Estas referências estão no main project file, na**`Info tab`**, e estão assim
 
 A primeira fica na sessão:   
 _**Custom iOS Target Properties**_ _**&gt;   
-`Main storyboard file base name`**_**.** 
+`Main storyboard file base name`**_ 
 
 A segunda fica na sessão:  
 _**`Application Scene Manifest>`**_  
@@ -135,7 +135,7 @@ No GIF abaixo, você vê melhor como remover as referências:
 
 ![](/docs-beagle/main%20%282%29.gif)
 
-Feito! O Beagle está configurado na sua aplicação iOS. Agora, tudo o que você precisa é [**configurar um backend**](../case-backend.md) para responder as requisições do seu aplicativo server-driven.
+Feito! O Beagle está configurado na sua aplicação iOS. Agora, tudo o que você precisa é [**configurar um backend**](../../case-backend) para responder as requisições do seu aplicativo server-driven.
 
 Feita essa configuração, inicie a sua aplicação e você terá sua primeira tela server-driven!   
 Você verá a tela a seguir: 

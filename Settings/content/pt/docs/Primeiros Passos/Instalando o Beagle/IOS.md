@@ -16,7 +16,7 @@ Antes de configurar o Beagle para o seu sistema iOS, é importante que você con
 
 ## **Gerenciamento de dependências**
 
-Hoje o Beagle está disponível para integração através do [**Carthage**](https://github.com/Carthage/Carthage) e [**CocoaPods**](https://cocoapods.org)**.**
+Hoje o Beagle está disponível para integração através do [**Carthage**](https://github.com/Carthage/Carthage) e [**CocoaPods**](https://cocoapods.org)
 
 {{% alert color="info" %}}
 Lembre de sempre usar a versão mais recente do Beagle e, principalmente, de checar se as diferentes plataformas estão integradas à essa mesma versão. Dessa forma, você garante que todas as ferramentas estão se comunicando corretamente.
@@ -74,6 +74,6 @@ Outros frameworks são utilizados apenas em cenários de uso mais específicos.
 Nesta seção, você fez a **instalação inicial** do Beagle na sua aplicação!  
 Para continuar a configurar o Beagle:
 
-👉Para continuar conhecendo o Beagle, e testar se deu tudo certo com a instalação, vá para as **configurações iniciais** e [**crie seu primeiro Hello Beagle!**](../usando-beagle/ios.md)
+👉Para continuar conhecendo o Beagle, e testar se deu tudo certo com a instalação, vá para as **configurações iniciais** e [**crie seu primeiro Hello Beagle!**](../../usando-beagle/ios)
 
 👉 Se quiser ir direto para prática, acesse nosso[ **tutorial para criar um projeto do zero**](../criando-projeto-do-zero/case-ios/)

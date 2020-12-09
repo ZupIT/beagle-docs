@@ -18,7 +18,7 @@ Size has the following atributes: **`width, heigth, maxWidth,maxHeight, minWidth
 
 ### **Width** 
 
-Defines the item width**.**
+Defines the item width
 
 ### **Height** 
 

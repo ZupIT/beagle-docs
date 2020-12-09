@@ -151,7 +151,7 @@ Let this file open because we'll use it again in another moment.
 
 ### Passo 3: Create an AppBeagleConfig
 
-For the next steps, you should create a `AppBeagleConfig` class, that is part of [**Beagle's installation**](../../installing-beagle/android.md) and it's responsible to register some important configurations. 
+For the next steps, you should create a `AppBeagleConfig` class, that is part of [**Beagle's installation**](../../../../../../../installing-beagle/android) and it's responsible to register some important configurations. 
 
 When you create the call, we should guarantee that it's configured in this way:
 
@@ -207,9 +207,9 @@ At this tutorial point, we will test our Server-Driven screens on local host bec
 
 ### **Step 4: Create AppBeagleActivity**
 
-You will have to deal with the `activities` that will be generated through server-driven. That's the reason why it's necessary to [**implement an Activity**](../../using-beagle/android.md#passo-3-implementar-activities) to manage them. For this example, we'll name it as`AppBeagleActivity`.
+You will have to deal with the `activities` that will be generated through server-driven. That's the reason why it's necessary to [**implement an Activity**](../../../../../../using-beagle/android#passo-3-implementar-activities) to manage them. For this example, we'll name it as`AppBeagleActivity`.
 
-This file is part of [**Beagle's usage configuration**](../../using-beagle/android.md) and must be implemented, at least once, so Beagle can normally work. 
+This file is part of [**Beagle's usage configuration**](../../../../../using-beagle/android) and must be implemented, at least once, so Beagle can normally work. 
 
 When you create AppBeagleActivity, remember to note it as `BeagleComponent` and to extend it to`BeagleActivity` class. 
 
@@ -322,13 +322,13 @@ To make this configuration, you must change your `BeagleActivity`'s theme. Go to
 {{% alert color="info" %}}
 What is Design System? 
 
-For more information, see [**section Design System with Beagle Android**](design-system-beagle-com-android.md).
+For more information, see [**section Design System with Beagle Android**](design-system-beagle-com-android).
 {{% /alert %}}
 
 {{% alert color="info" %}}
 É o **design system** que guarda os registros dos componentes de estilo criados no frontend e é assim que sua aplicação Android “saberá” qual componente de estilo deve aplicar a cada elemento de uma tela Server-Driven. É na tela server driven que os elementos visuais \(views\) são utilizados na construção da sua tela.
 
-Embora você possa criá-lo agora se quiser, não é necessário para as configurações iniciais, para que você possa testar logo o Beagle! Você pode prosseguir sem configurá-lo. Para mais informações sobre [**Design System no Beagle para Android**.](design-system-beagle-com-android.md) 
+Embora você possa criá-lo agora se quiser, não é necessário para as configurações iniciais, para que você possa testar logo o Beagle! Você pode prosseguir sem configurá-lo. Para mais informações sobre [**Design System no Beagle para Android**.](design-system-beagle-com-android) 
 {{% /alert %}}
 
 Now , you must initialize your `Application` so Beagle can manage the other configuration's files. To do so, just click on`Make project` \(HAMMER symbol\) or use the command `CTRL + F9`.
@@ -362,7 +362,7 @@ class AppApplication: Application() {
 ```
 
 
-2. To finish this configuration, you must state the class on the [**AndroidManifest**](./#passo-2-configuracoes-iniciais-do-android-manifest) we created in the beginning. 
+2. To finish this configuration, you must state the class on the [**AndroidManifest**](../.././#passo-2-configuracoes-iniciais-do-android-manifest) we created in the beginning. 
 
 The name of your`application` now it's the same of the class you created. Update the Android Manifest as it's indicated below: 
 
@@ -385,7 +385,7 @@ The name of your`application` now it's the same of the class you created. Update
 Well done, your Android application is configured and ready to use Beagle! 
 {{% /alert %}}
 
-All you have to do now is [**set up a backend** ](../exemplo-de-projeto-backend-com-beagle.md)to answer your application's requests. Once you made this configuration, start your application and you'll see your first server-driven screen!
+All you have to do now is [**set up a backend** ](../../exemplo-de-projeto-backend-com-beagle)to answer your application's requests. Once you made this configuration, start your application and you'll see your first server-driven screen!
 
 ### Step 7: Display your Server-Driven Screen
 

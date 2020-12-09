@@ -29,9 +29,9 @@ A sua estrutura é representada como mostrado abaixo:
       <td style="text-align:left">children</td>
       <td style="text-align:left">
         <p>List
-          <br />&lt;<a href="../../widget.md">ServerDriven</a>
+          <br />&lt;<a href="../../widget">ServerDriven</a>
         </p>
-        <p><a href="../../widget.md">Component</a>&gt;</p>
+        <p><a href="../../widget">Component</a>&gt;</p>
       </td>
       <td style="text-align:center">&#x2713;</td>
       <td style="text-align:left">Define a lista de atributos a ser exibida na visualiza&#xE7;&#xE3;o do

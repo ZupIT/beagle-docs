@@ -40,9 +40,9 @@ A sua estrutura é representada como mostrado abaixo:
         <p>Event</p>
       </td>
       <td style="text-align:left">
-        <p><a href="../analytics.md#opcao-click">Analytics</a>
+        <p><a href="../analytics#opcao-click">Analytics</a>
         </p>
-        <p><a href="../analytics.md#opcao-click">Click</a>
+        <p><a href="../analytics#opcao-click">Click</a>
         </p>
       </td>
       <td style="text-align:center"></td>
@@ -55,9 +55,9 @@ A sua estrutura é representada como mostrado abaixo:
     <tr>
       <td style="text-align:left">child</td>
       <td style="text-align:left">
-        <p><a href="../widget.md">Server</a>
+        <p><a href="../widget">Server</a>
         </p>
-        <p><a href="../widget.md">DrivenComponent</a>
+        <p><a href="../widget">DrivenComponent</a>
         </p>
       </td>
       <td style="text-align:center">&#x2713;</td>

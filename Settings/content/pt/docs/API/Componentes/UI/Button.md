@@ -54,20 +54,20 @@ A sua estrutura é representada como mostrado abaixo:
       <td style="text-align:left">Array de a&#xE7;&#xF5;es que esse bot&#xE3;o pode disparar quando clicado.
         &#xC9; poss&#xED;vel definir uma A&#xE7;&#xE3;o customizada ou qualquer
         a&#xE7;&#xE3;o j&#xE1; dispon&#xED;vel na interface, como por exemplo uma
-        a&#xE7;&#xE3;o que mostra uma mensagem de alerta(<a href="../../acoes/alert.md">Alert</a>).
+        a&#xE7;&#xE3;o que mostra uma mensagem de alerta(<a href="../../acoes/alert">Alert</a>).
         Este atributo &#xE9; opcional, mas se uma a&#xE7;&#xE3;o for definida aqui
         ela precisa estar configurada no frontend. Para criar uma a&#xE7;&#xE3;o
-        no frontend veja o exemplo: <a href="../../../features/criacao-de-novas-acoes.md">Criando uma a&#xE7;&#xE3;o customizada</a>
+        no frontend veja o exemplo: <a href="../../../features/criacao-de-novas-acoes">Criando uma a&#xE7;&#xE3;o customizada</a>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">clickAnalyticsEvent</td>
-      <td style="text-align:left"><a href="../../analytics.md">ClickEvent</a>
+      <td style="text-align:left"><a href="../../analytics">ClickEvent</a>
       </td>
       <td style="text-align:center"></td>
       <td style="text-align:left">Evento de clique que ser&#xE1; disparado caso tenha sido implementado
         um servi&#xE7;o de analytics. Para saber mais sobre analytics e os eventos
-        suportados, veja o exemplo: <a href="../../analytics.md">Analytics</a>.</td>
+        suportados, veja o exemplo: <a href="../../analytics">Analytics</a>.</td>
     </tr>
   </tbody>
 </table>

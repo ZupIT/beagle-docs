@@ -12,8 +12,8 @@ description: >-
 
 Unlike mobile application's configurations, to install Beagle for Web does not demand previous requirements. You just have to follow the steps of Beagle's framework installation according to the framework you use on your projects: 
 
-* [**Angular** ](web.md#angular)
-* [**React** ](web.md#react)
+* [**Angular** ](web#angular)
+* [**React** ](web#react)
 
 ## Angular
 
@@ -52,7 +52,7 @@ If the Beagle's commands were listed as in the image below, that means that the 
 ![](/docs-beagle/image%20%2814%29.png)
 
 {{% alert color="success" %}}
-Well done! Your library was installed. Now, you can see more of [**how to use Beagle on Angular**](../using-beagle/web/angular-how-to-use.md).
+Well done! Your library was installed. Now, you can see more of [**how to use Beagle on Angular**](../../../../../using-beagle/web/angular-how-to-use).
 {{% /alert %}}
 
 ## React
@@ -76,7 +76,7 @@ npm install --save @zup-it/beagle-react
 ```
 
 {{% alert color="success" %}}
-Well done! Your library was installed. Now, you can see more of [**how to use Beagle on React.**](../using-beagle/web/react-how-to-use.md)
+Well done! Your library was installed. Now, you can see more of [**how to use Beagle on React.**](../../../../using-beagle/web/react-how-to-use)
 {{% /alert %}}
 
 ## **Next Steps** 
@@ -84,6 +84,6 @@ Well done! Your library was installed. Now, you can see more of [**how to use Be
 On this section, you made Beagle's **initial installation** on your application!  
 To keep configuring Beagle:
 
-👉Go to [**initial configurations** ](../using-beagle/web/)to enable the use of Beagle on your Web project.
+👉Go to [**initial configurations** ](../../../using-beagle/web/)to enable the use of Beagle on your Web project.
 
-👉 If you want to go straight to practice, access our [**tutorial to create a projeto from zero**.](../new-project/case-web.md)
+👉 If you want to go straight to practice, access our [**tutorial to create a projeto from zero**.](../../new-project/case-web)

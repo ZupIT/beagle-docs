@@ -219,5 +219,5 @@ private func screen() -> Screen {
 {{< /tabs >}}
 
 {{% alert color="info" %}}
-Para saber o Flex Direction, acesse [**a documentação no Yoga Layout**](https://yogalayout.com/docs/flex-direction/)**.**
+Para saber o Flex Direction, acesse [**a documentação no Yoga Layout**](https://yogalayout.com/docs/flex-direction/)
 {{% /alert %}}

@@ -29,8 +29,8 @@ See how the structure is represented:
       <td style="text-align:left">children</td>
       <td style="text-align:left">
         <p>List
-          <br />&lt;<a href="../../widget.md"><b>ServerDriven</b></a>&lt;b&gt;&lt;/b&gt;</p>
-        <p>&lt;b&gt;&lt;/b&gt;<a href="../../widget.md"><b>Component</b></a>&gt;</p>
+          <br />&lt;<a href="../../widget"><b>ServerDriven</b></a>&lt;b&gt;&lt;/b&gt;</p>
+        <p>&lt;b&gt;&lt;/b&gt;<a href="../../widget"><b>Component</b></a>&gt;</p>
       </td>
       <td style="text-align:left">&#x2713;</td>
       <td style="text-align:left">

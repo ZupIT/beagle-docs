@@ -10,7 +10,7 @@ description: >-
 
 ## **C**riando estilos para o Beagle iOS
 
-No exemplo prático da página "Criando um projeto com Beagle para iOS", você pode conferir como fazer a [**implementação do Beagle**](./) e criar sua primeira tela server-driven.
+No exemplo prático da página "Criando um projeto com Beagle para iOS", você pode conferir como fazer a [**implementação do Beagle**](../.././) e criar sua primeira tela server-driven.
 
 Neste tutorial, a ideia é avançar a partir do [**projeto anterior**](./#passo-3-configurando-o-xcode) para **criar um Design System na sua biblioteca do Beagle**.  Os exemplos que ilustrarão o passo a passo estão nestes[ **sample codes**](https://github.com/ZupIT/beagle-examples) que você encontra no nosso repositório. 
 
@@ -43,7 +43,7 @@ struct Styles {
 }
 ```
 
-Essa `struct` irá conter todos os estilos que serão acessados pelo Beagle. Aqui, estará listada a lógica que permite ao Beagle aplicar os estilos definidos no iOS a uma [**tela server-driven**](../../../principais-conceitos.md#server-driven-ui).
+Essa `struct` irá conter todos os estilos que serão acessados pelo Beagle. Aqui, estará listada a lógica que permite ao Beagle aplicar os estilos definidos no iOS a uma [**tela server-driven**](../../../../principais-conceitos#server-driven-ui).
 
 ### Passo 2: Criar um estilo para um texto
 

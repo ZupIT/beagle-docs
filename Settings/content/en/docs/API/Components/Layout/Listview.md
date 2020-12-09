@@ -20,7 +20,7 @@ See how the structure is represented:
 
 | Atributo | Tipo | Obrigatório | Definição |
 | :--- | :--- | :---: | :--- |
-| direction | [ListDirection](listview.md#listdirection) |   | Sets the direction in which list items are displayed. |
+| direction | [ListDirection](listview#listdirection) |   | Sets the direction in which list items are displayed. |
 | context | [ContextData](https://docs.usebeagle.io/api/context) |  | Defines the context of the component. |
 | onInit | List&lt;[Action](https://docs.usebeagle.io/api/actions)&gt; |  | List of actions to be performed as soon as the component is displayed.  |
 | dataSource | [Bind](https://docs.usebeagle.io/api/context#bindings)&lt;List&lt;Any&gt;&gt; | ✓ | Expression that points to a list of values used to populate the component. |

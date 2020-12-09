@@ -52,6 +52,6 @@ const params: LoadParams = {
 | headers | Mapa&lt;chave, valor&gt; | Lista de header para anexar ao fazer a requisição. |
 | shouldShowLoading | booleano | Mostra ou não o componente de loading. |
 | shouldShowError | booleano | Mostra ou não o componente de erro. |
-| strategy | string&lt;[**Estratégia de cache**](estrategias-de-cache.md#tipos-de-estrategias)&gt; | Estratégia de cache adotada na requisição. |
+| strategy | string&lt;[**Estratégia de cache**](estrategias-de-cache#tipos-de-estrategias)&gt; | Estratégia de cache adotada na requisição. |
 | loadingComponent | string | Componente customizado para loading. |
 | errorComponent | string | Componente customizado para error. |

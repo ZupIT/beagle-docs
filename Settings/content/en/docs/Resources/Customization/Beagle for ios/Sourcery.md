@@ -137,7 +137,7 @@ extension SomeComponent {
 }
 ```
 
-It is necessary with Sourcery, to do the structs in accordance with **AutoDecodable** and the same code will be generated**.**
+It is necessary with Sourcery, to do the structs in accordance with **AutoDecodable** and the same code will be generated
 
 This same process works for all protocols and it is also possible to create templates and customized protocols.
 

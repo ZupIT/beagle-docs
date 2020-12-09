@@ -15,7 +15,7 @@ See how the structure is represented:
 | Attribute | Type | Required | Definition |
 | :--- | :--- | :--- | :--- |
 | path | String |    ✓ | URL that makes the request.  |
-| initialState | [**ServerDrivenComponent**](./) |    ✓ | Server-driven component that is showed when there is an asynchronous request being done. |
+| initialState | [**ServerDrivenComponent**](.././) |    ✓ | Server-driven component that is showed when there is an asynchronous request being done. |
 
 ## How to use it?
 

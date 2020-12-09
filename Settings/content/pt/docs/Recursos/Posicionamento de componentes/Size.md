@@ -20,7 +20,7 @@ Esta propriedade manipula toda parte de tamanho do item em tela. O Size conta co
 
 ### **Width** 
 
-Define o **tamanho da largura** do item**.**
+Define o **tamanho da largura** do item
 
 ### **Height** 
 

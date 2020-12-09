@@ -115,5 +115,5 @@ private func screen() -> Screen {
 {{< /tabs >}}
 
 {{% alert color="info" %}}
-Para saber o Grow, acesse [**a documentação no Yoga Layout**](https://yogalayout.com/docs/flex/)**.**
+Para saber o Grow, acesse [**a documentação no Yoga Layout**](https://yogalayout.com/docs/flex/)
 {{% /alert %}}

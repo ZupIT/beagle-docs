@@ -88,7 +88,7 @@ export class Beagle {}
 ```
 
 {{% alert color="warning" %}}
-If you didn't find the `beagle-components.module.ts` files or `beagle.module.ts`, [**see how to configure Beagle's library in your project.** ](../../../get-started/installing-beagle/)
+If you didn't find the `beagle-components.module.ts` files or `beagle.module.ts`, [**see how to configure Beagle's library in your project.** ](../../../../get-started/installing-beagle/)
 {{% /alert %}}
 {{% /tab %}}
 

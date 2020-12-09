@@ -18,7 +18,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 ## Como usar?
 
-No exemplo abaixo, foram utilizadas três telas: as duas primeiras utilizam o [**PushView** ](pushview.md)para adicionar as telas na pilha, já a última faz uso do **ResetApplication** e reabre na primeira tela.
+No exemplo abaixo, foram utilizadas três telas: as duas primeiras utilizam o [**PushView** ](pushview)para adicionar as telas na pilha, já a última faz uso do **ResetApplication** e reabre na primeira tela.
 
 Para testar, iremos precisar de três endpoints: 
 

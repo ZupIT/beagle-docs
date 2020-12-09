@@ -40,12 +40,12 @@ O Contexto Global é criado juntamente com a aplicação. É definido internamen
 
 Um contexto que seja global pode ser definido de duas formas: 
 
-* A partir de um componente declarativo \(utilizando a Ação[**`SetContext`**](acoes/setcontext.md)\) ou 
+* A partir de um componente declarativo \(utilizando a Ação[**`SetContext`**](acoes/setcontext)\) ou 
 * Programaticamente, utilizando a função `set()` a partir do objeto `GlobalContext` 
 
 ### 1. Usando o SetContext
 
-É possível definir ou modificar um contexto global a partir da Ação [**`SetContext`**](acoes/setcontext.md)**.** Para tal, basta identificar o contexto global utilizando a `ID = "global"` na propriedade `contextId`, como mostrado no exemplo abaixo:
+É possível definir ou modificar um contexto global a partir da Ação [**`SetContext`**](acoes/setcontext) Para tal, basta identificar o contexto global utilizando a `ID = "global"` na propriedade `contextId`, como mostrado no exemplo abaixo:
 
 {{< tabs name="T167" >}}
 {{% tab name="JSON" %}}
@@ -159,7 +159,7 @@ beagleService?.globalContext.set(value, path)
 {{% /tab %}}
 
 {{% tab name="iOS" %}}
-No iOS o Contexto Global é um dos atributos do [**Beagle Dependencies**](../features/customizacao/beagle-para-ios/dependencias-do-beagle.md) .
+No iOS o Contexto Global é um dos atributos do [**Beagle Dependencies**](../../features/customizacao/beagle-para-ios/dependencias-do-beagle) .
 
 Para utilizar o contexto global em qualquer componente da sua aplicação você precisará chamar o `BeagleDependencies` do seu projeto como no exemplo abaixo:
 

@@ -18,26 +18,26 @@ O Beagle possui **14** **componentes** atualmente divididos em **5 categorias**:
 
 {{< tabs name="T132" >}}
 {{% tab name="Layout" %}}
-* [**Container**](layout/container.md)
-* [**List View**](layout/listview.md)
-* [**PageView**](layout/pageview.md)
-* [**PageIndicator**](layout/pageindicator.md)
-* [**ScrollView**](layout/scrollview.md)
+* [**Container**](layout/container)
+* [**List View**](layout/listview)
+* [**PageView**](layout/pageview)
+* [**PageIndicator**](layout/pageindicator)
+* [**ScrollView**](layout/scrollview)
 {{% /tab %}}
 
 {{% tab name="Formulários" %}}
-* [**Validator**](formularios/validator.md)
-* [**Simple Form**](formularios/simple-form.md)
-* [**Text Input** ](ui/input.md)
+* [**Validator**](formularios/validator)
+* [**Simple Form**](formularios/simple-form)
+* [**Text Input** ](ui/input)
 {{% /tab %}}
 
 {{% tab name="UI" %}}
-* [**Button**](ui/button.md)
+* [**Button**](ui/button)
 * [**Image**](ui/image/)
-* [**Tab Bar**](ui/tab-bar.md)
-* [**Tab View**](ui/tabview.md)
-* [**Text**](ui/text.md)
-* [**Web View**](ui/webview.md)
+* [**Tab Bar**](ui/tab-bar)
+* [**Tab View**](ui/tabview)
+* [**Text**](ui/text)
+* [**Web View**](ui/webview)
 {{% /tab %}}
 
 {{< /tabs >}}

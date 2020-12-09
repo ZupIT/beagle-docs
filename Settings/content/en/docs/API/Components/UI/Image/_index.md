@@ -14,7 +14,7 @@ Your structure is represented by the attributes below:
 
 | **Attribute** | **Type** | Required | **Definition** |
 | :--- | :--- | :--- | :--- |
-| path | [**ImagePath**](imagepath.md) or [**Binding**](../../../context/#bindings) |     ✓ | Refers to a local image or URL of a remote image to be exhibited. |
+| path | [**ImagePath**](imagepath) or [**Binding**](../../../../context/#bindings) |     ✓ | Refers to a local image or URL of a remote image to be exhibited. |
 | mode | ImageContentMode |  | Responsible to control how the image will be internally controlled. |
 
 ## How to use it?

@@ -270,7 +270,7 @@ private func screen() -> Screen {
 
 É ele quem define um **espaçamento na parte superior** do elemento. Exemplo: 
 
-![A barra preta simulando a propriedade Top.](https://lh3.googleusercontent.com/NpgSjgVwSjvXjeDz9H3lp6prnTGEOtmdkot_39nx0gYPZa-KXz-YPOKgzZG87V1TS9HYgEDqJtCgmQkXEQpC1dCqQrWDn3wcqWN3HgNK5EPGyCife44lvOUlbgFJ-WhYNFJf4O7K)
+![A barra preta simulando a propriedade Top.](https://lh3.googleusercontent.com/NpgSjgVwSjvXjeDz9H3lp6prnTGEOkot_39nx0gYPZa-KXz-YPOKgzZG87V1TS9HYgEDqJtCgmQkXEQpC1dCqQrWDn3wcqWN3HgNK5EPGyCife44lvOUlbgFJ-WhYNFJf4O7K)
 
 {{< tabs name="T52" >}}
 {{% tab name="Kotlin" %}}
@@ -450,5 +450,5 @@ private func screen() -> Screen {
 {{< /tabs >}}
 
 {{% alert color="info" %}}
-Para saber mais sobre Padding, acesse a [**documentação do Yoga Layout**](https://yogalayout.com/docs/margins-paddings-borders)**.**
+Para saber mais sobre Padding, acesse a [**documentação do Yoga Layout**](https://yogalayout.com/docs/margins-paddings-borders)
 {{% /alert %}}

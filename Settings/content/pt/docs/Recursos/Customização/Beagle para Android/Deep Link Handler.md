@@ -47,7 +47,7 @@ Feito isso, é necessário modificar o arquivo de manifesto do Android:
 </activity>
 ```
 
-Agora você só precisa chamar a [**Action Navigate**](../../../api/acoes/navigate/) com o **método** [**OpenNativeRoute**](../../../api/acoes/navigate/opennativeroute.md) como o exemplo abaixo:
+Agora você só precisa chamar a [**Action Navigate**](../../../../api/acoes/navigate/) com o **método** [**OpenNativeRoute**](../../../../api/acoes/navigate/opennativeroute) como o exemplo abaixo:
 
 ```kotlin
 //Widget used to navigate to a native activity

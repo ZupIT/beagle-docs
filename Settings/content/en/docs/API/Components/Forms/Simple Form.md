@@ -30,12 +30,12 @@ When creating a form it is important to understand two steps respectively
 The TextInput component is the field in which the user or the system will fill in some information, and it is important to know its attributes in order to better use it. Here we will use one of its elements, which is the **onChange** function. 
 
 {{% alert color="info" %}}
-For more information on this component go to the details of [TextInput](../ui/input.md). 
+For more information on this component go to the details of [TextInput](../../../../../ui/input). 
 {{% /alert %}}
 
 #### OnChange 
 
-This function is part of the TextInput and it observes the changes made within its field, that is, whenever the value is modified, something is typed, deleted, etc, this function is called and activates a **list of other** [actions](../../actions/) to happen whenever the value changes. It is in this list that we add a [SetContext](../../actions/setcontext.md) action to set the [Context](../../context/) value of the form and update the values ​​that are shown in the field. 
+This function is part of the TextInput and it observes the changes made within its field, that is, whenever the value is modified, something is typed, deleted, etc, this function is called and activates a **list of other** [actions](../../../../../actions/) to happen whenever the value changes. It is in this list that we add a [SetContext](../../../../../actions/setcontext) action to set the [Context](../../../../../context/) value of the form and update the values ​​that are shown in the field. 
 
 Check our example below on how we implemented a `SimpleForm` 
 
@@ -115,8 +115,8 @@ SimpleForm(
 
 It is a function of a simple form that performs a list of actions. It is called when the form is submitted. 
 
-To submit a form, you must use the SubmitForm action and call it, just implement it in a [Button](../ui/button.md) that is part of a simple form, that is, that is in your list of children. 
+To submit a form, you must use the SubmitForm action and call it, just implement it in a [Button](../../../ui/button) that is part of a simple form, that is, that is in your list of children. 
 
-When you click this button, the onSubmit is activated and the list of actions will be performed. It is this list of actions that will define what should happen with the information in this form, if they will be sent to a backend \(through the [sendRequest ](../../actions/sendrequest.md)action\), etc.
+When you click this button, the onSubmit is activated and the list of actions will be performed. It is this list of actions that will define what should happen with the information in this form, if they will be sent to a backend \(through the [sendRequest ](../../../actions/sendrequest)action\), etc.
 
 ### 👉 [Test this component in the Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/simpleform.json)

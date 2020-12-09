@@ -11,14 +11,14 @@ description: 'Here, you''ll find how to make Beagle''s usage configuration for i
 After you installed **Beagle** on your project, we'll show how to render a screen and display your first **"Hello Beagle!"**.
 
 {{% alert color="warning" %}}
-Check out how to [**install Beagle**](../installing-beagle/ios.md) in case you haven't finished this step.
+Check out how to [**install Beagle**](../../../../installing-beagle/ios) in case you haven't finished this step.
 {{% /alert %}}
 
 Currently, there are two types of approaches to render screens with Beagle: **remote** and **declarative.**
 
 #### Remot**e** Renderization 
 
-> Main approach used on Beagle because it's based on [**server-driven UI**](../../principais-conceitos.md#server-driven-ui) concept. It allows you to build layouts dynamically, consuming the informations provided by a [**BFF**](../../principais-conceitos.md#backend-for-frontend) through a remote URL.
+> Main approach used on Beagle because it's based on [**server-driven UI**](../../../../principais-conceitos#server-driven-ui) concept. It allows you to build layouts dynamically, consuming the informations provided by a [**BFF**](../../../../principais-conceitos#backend-for-frontend) through a remote URL.
 
 #### Declarative Renderization 
 
@@ -69,7 +69,7 @@ let beagleViewController = Beagle.screen(
 ```
 
 {{% alert color="info" %}}
-In case you want to use the **`remote`**type, check out [**how to display a server-driven screen.**](../../displaying-a-screen.md)
+In case you want to use the **`remote`**type, check out [**how to display a server-driven screen.**](../../../displaying-a-screen)
 {{% /alert %}}
 
 Once you made it, you just have to present it as you wish.

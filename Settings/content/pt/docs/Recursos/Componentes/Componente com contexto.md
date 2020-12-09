@@ -8,15 +8,15 @@ description: >-
 
 ---
 
-O `ContextComponent` é uma interface precisa ser implementada em componentes que usam o [**Contexto**](../../api/contexto/#o-que-e), porque é onde está o atributo `context`.
+O `ContextComponent` é uma interface precisa ser implementada em componentes que usam o [**Contexto**](../../../../../../../../../api/contexto/#o-que-e), porque é onde está o atributo `context`.
 
 ## Componentes do Beagle com contexto:
 
-1. [**Container**](../../api/componentes/layout/container.md)
-2. [**SimpleForm**](../../api/componentes/formularios/simple-form.md)
-3. [**PageView**](../../api/componentes/layout/pageview.md)
-4. [**ScrollView**](../../api/componentes/layout/scrollview.md)
-5. [**TabView**](../../api/componentes/ui/tabview.md)
+1. [**Container**](../../../../../../../../api/componentes/layout/container)
+2. [**SimpleForm**](../../../../../../../api/componentes/formularios/simple-form)
+3. [**PageView**](../../../../../../api/componentes/layout/pageview)
+4. [**ScrollView**](../../../../../api/componentes/layout/scrollview)
+5. [**TabView**](../../../../api/componentes/ui/tabview)
 
 ## Componente customizado com contexto
 
@@ -54,5 +54,5 @@ public struct CustomComponent: RawComponent, HasContext {
 {{< /tabs >}}
 
 {{% alert color="warning" %}}
-Se você quiser criar componentes customizados no iOS, é **necessário registrá-lo**! Veja como registrar [**aqui**](../customizacao/beagle-para-ios/widgets-customizados.md#passo-2-registrar-o-widget).
+Se você quiser criar componentes customizados no iOS, é **necessário registrá-lo**! Veja como registrar [**aqui**](../../customizacao/beagle-para-ios/widgets-customizados#passo-2-registrar-o-widget).
 {{% /alert %}}

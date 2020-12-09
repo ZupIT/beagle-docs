@@ -16,7 +16,7 @@ A estrutura do Send Request é:
 
 | **Atributo** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :---: | :--- |
-| url | String ou [**Binding**](../contexto/#binding) | ✓ | URL do servidor. |
+| url | String ou [**Binding**](../../../../contexto/#binding) | ✓ | URL do servidor. |
 | method | RequestActionMethod ou [**Binding**](https://docs.usebeagle.io/v/v1.0-en/api/context#bindings) | ✓ | Método HTTP. |
 | headers | Map &lt;String, String&gt; ou [**Binding**](../contexto/#binding) |   | Itens do header para a requisição. |
 | data | Any |   | Conteúdo a ser enviado junto a requisição. |

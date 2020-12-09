@@ -9,7 +9,7 @@ weight: 186
 As features descritas aqui, estão disponíveis nas versões a partir de 1.2.0. 
 {{% /alert %}}
 
-Para entender melhor sobre renderização, recomendamos a leitura da seção [**estrutura de dados**](estrutura-de-dados.md).
+Para entender melhor sobre renderização, recomendamos a leitura da seção [**estrutura de dados**](estrutura-de-dados).
 
 Cada biblioteca do Beagle Web possui um processo definido de como busca, processa e renderiza a view. Há uma ordem que deve ser sempre respeitada e pontos de extensão \([**hooks**](https://pt-br.reactjs.org/docs/hooks-overview.html)\), onde você pode executar seus códigos \(lifecycles\).
 
@@ -385,7 +385,7 @@ Esse lifecycle pode ser usado para rodar o código necessário para que a view s
 
 #### Exemplos de uso
 
-Contextos são definidos, referenciados e manipulados no JSON da view. Mas, se você quiser acessar os dados da aplicação o Beagle oferece uma funcionalidade chamada [**Contexto Global**](../../../../api/contexto-global.md), que é possivel lidar com esse cenário. Se não tivesse essa função, o lifecycle AfterViewSnapshot também consegue lidar com isso. 
+Contextos são definidos, referenciados e manipulados no JSON da view. Mas, se você quiser acessar os dados da aplicação o Beagle oferece uma funcionalidade chamada [**Contexto Global**](../../../../../api/contexto-global), que é possivel lidar com esse cenário. Se não tivesse essa função, o lifecycle AfterViewSnapshot também consegue lidar com isso. 
 
 Um exemplo, se você tem uma aplicação financeira e quer saber o balanço do usuário. Você deve garantir que cada haja a renderização de cada valor recente.
 
@@ -547,7 +547,7 @@ Para controlar o processo de renderização, o Beagle permite você gerenciar qu
 
 Um cenário comum é quando você cria uma ação que muda a árvore atual, por exemplo, uma ação addChildren, quando executada deve ir a árvore atual e adicionar o filho ao componente com o id dado. Para fazer isso, é preciso ter uma forma de obter a árvore atual, modificá-la e avisar ao Beagle View para renderizar de novo. 
 
-A renderização pode ser feita em dois processos: a completa e a parcial. A primeira executa todos [**os passos da lista no início dessa página**](renderizacao.md#processo-para-renderizar-uma-view) e a segunda executa apenas o view snapshot e os passos 9 ao 18 da mesma lista. 
+A renderização pode ser feita em dois processos: a completa e a parcial. A primeira executa todos [**os passos da lista no início dessa página**](renderizacao#processo-para-renderizar-uma-view) e a segunda executa apenas o view snapshot e os passos 9 ao 18 da mesma lista. 
 
 ### Acessando o Renderer
 
@@ -798,4 +798,4 @@ O ViewContentManager possui as seguintes propriedades e funções: have the foll
 
 ## Atualizando a view com o resultado da requisição
 
-Caso você precisa atualizar a view atual com a árvore que vem do backend, você deve usar o [**método fetch do `BeagleView`**](https://github.com/ZupIT/beagle-web-core/blob/master/docs/beagle-view.md#Fetching-a-view). Isso irá internamente usar todo o mecanismo de cache do Beagle e também a parte de renderização.
+Caso você precisa atualizar a view atual com a árvore que vem do backend, você deve usar o [**método fetch do `BeagleView`**](https://github.com/ZupIT/beagle-web-core/blob/master/docs/beagle-view#Fetching-a-view). Isso irá internamente usar todo o mecanismo de cache do Beagle e também a parte de renderização.
