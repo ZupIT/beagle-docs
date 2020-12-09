@@ -270,10 +270,10 @@ You can mix two available ways to define a component.
 &lt;li&gt;&lt;code&gt;sealed classes&lt;/code&gt;,  builders that has its father class as an attached prefix.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Screen&lt;/code&gt;, builder that is a &lt;code&gt;ScreenComponentBuilder&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t85&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t85-0&#34; role=&#34;tab&#34; aria-controls=&#34;t85-0&#34; aria-selected=&#34;true&#34;&gt;Java&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t81&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t81-0&#34; role=&#34;tab&#34; aria-controls=&#34;t81-0&#34; aria-selected=&#34;true&#34;&gt;Java&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t85-1&#34; role=&#34;tab&#34; aria-controls=&#34;t85-1&#34;&gt;Kotlin&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t85&#34;&gt;&lt;div id=&#34;t85-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t85-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t81-1&#34; role=&#34;tab&#34; aria-controls=&#34;t81-1&#34;&gt;Kotlin&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t81&#34;&gt;&lt;div id=&#34;t81-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t81-0&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//Navigate is a sealed class with 
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//OpenNativeRoute as a child class
@@ -283,7 +283,7 @@ You can mix two available ways to define a component.
     &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;HashMap&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;())&lt;/span&gt;
     &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;build&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;();&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t85-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t85-1&#34;&gt;
+  &lt;div id=&#34;t81-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t81-1&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//Navigate is a sealed class with
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//OpenNativeRoute as a child class
@@ -309,10 +309,10 @@ You can mix two available ways to define a component.
     &lt;span style=&#34;color:#000&#34;&gt;labelOk&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;OK&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In cases where the field waits a &lt;strong&gt;list or a map&lt;/strong&gt;, you have to put before the elemement to be added in the collection with the operator &amp;lsquo;+&amp;rsquo;. This operator also accepts a unique element. See the examples:&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t85&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t85-0&#34; role=&#34;tab&#34; aria-controls=&#34;t85-0&#34; aria-selected=&#34;true&#34;&gt;Lists&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t82&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t82-0&#34; role=&#34;tab&#34; aria-controls=&#34;t82-0&#34; aria-selected=&#34;true&#34;&gt;Lists&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t85-1&#34; role=&#34;tab&#34; aria-controls=&#34;t85-1&#34;&gt;Maps&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t85&#34;&gt;&lt;div id=&#34;t85-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t85-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t82-1&#34; role=&#34;tab&#34; aria-controls=&#34;t82-1&#34;&gt;Maps&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t82&#34;&gt;&lt;div id=&#34;t82-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t82-0&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;container&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;children&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -329,7 +329,7 @@ You can mix two available ways to define a component.
     &lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Kenobi&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t85-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t85-1&#34;&gt;
+  &lt;div id=&#34;t82-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t82-1&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;navigateOpenNativeRoute&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt; 
     &lt;span style=&#34;color:#000&#34;&gt;route&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/route&amp;#34;&lt;/span&gt;
@@ -355,11 +355,11 @@ You can mix two available ways to define a component.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;
 &lt;p&gt;The example below defines a simple declared screen in the three available options on Beagle:&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t85&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t85-0&#34; role=&#34;tab&#34; aria-controls=&#34;t85-0&#34; aria-selected=&#34;true&#34;&gt;Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t83&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t83-0&#34; role=&#34;tab&#34; aria-controls=&#34;t83-0&#34; aria-selected=&#34;true&#34;&gt;Pattern&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t85-1&#34; role=&#34;tab&#34; aria-controls=&#34;t85-1&#34;&gt;Builder DSL&lt;/a&gt;&lt;/li&gt;
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t85-2&#34; role=&#34;tab&#34; aria-controls=&#34;t85-2&#34;&gt;Pattern builder&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t85&#34;&gt;&lt;div id=&#34;t85-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t85-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t83-1&#34; role=&#34;tab&#34; aria-controls=&#34;t83-1&#34;&gt;Builder DSL&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t83-2&#34; role=&#34;tab&#34; aria-controls=&#34;t83-2&#34;&gt;Pattern builder&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t83&#34;&gt;&lt;div id=&#34;t83-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t83-0&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;navigationBar&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;NavigationBar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
@@ -373,7 +373,7 @@ You can mix two available ways to define a component.
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t85-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t85-1&#34;&gt;
+  &lt;div id=&#34;t83-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t83-1&#34;&gt;
 
 &lt;p&gt;&lt;pre&gt;&lt;code&gt;screen{
     navigationBar{
@@ -391,7 +391,7 @@ You can mix two available ways to define a component.
     }
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-  &lt;div id=&#34;t85-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t85-2&#34;&gt;
+  &lt;div id=&#34;t83-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t83-2&#34;&gt;
 
 &lt;p&gt;&lt;pre&gt;&lt;code&gt;ScreenComponentBuilder()
     .navigationBar(
@@ -500,10 +500,10 @@ You &lt;strong&gt;must configure&lt;/strong&gt; both backend and frontend for th
 &lt;p&gt;After running the plugin on some function, you only need to save the changes done in your layout so that the Live Preview updates the screen being rendered by the frontend. It does this by compiling your modified code and verifying if there is some change and, if there is, push your new layout to the client.&lt;/p&gt;
 &lt;h3 id=&#34;step-2-frontends-configuration&#34;&gt;Step 2: Frontend&amp;rsquo;s configuration&lt;/h3&gt;
 &lt;p&gt;Once you have configured your backend, the next step is to configure the frontend&amp;rsquo;s application emulator for a Beagle Android or iOS project.&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t90&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t90-0&#34; role=&#34;tab&#34; aria-controls=&#34;t90-0&#34; aria-selected=&#34;true&#34;&gt;Android client&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t85&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t85-0&#34; role=&#34;tab&#34; aria-controls=&#34;t85-0&#34; aria-selected=&#34;true&#34;&gt;Android client&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t90-1&#34; role=&#34;tab&#34; aria-controls=&#34;t90-1&#34;&gt;iOS client&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t90&#34;&gt;&lt;div id=&#34;t90-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t90-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t85-1&#34; role=&#34;tab&#34; aria-controls=&#34;t85-1&#34;&gt;iOS client&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t85&#34;&gt;&lt;div id=&#34;t85-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t85-0&#34;&gt;
 
 &lt;p&gt;&lt;h3 id=&#34;step-1-installing-the-submodule&#34;&gt;Step 1: Installing the submodule&lt;/h3&gt;
 &lt;p&gt;To make this installation, your &lt;code&gt;gradle&lt;/code&gt; file must contain the following fragment:&lt;/p&gt;
@@ -570,7 +570,7 @@ You &lt;strong&gt;must configure&lt;/strong&gt; both backend and frontend for th
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t90-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t90-1&#34;&gt;
+  &lt;div id=&#34;t85-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t85-1&#34;&gt;
 
 &lt;p&gt;&lt;h3 id=&#34;step-1-installing-the-submodule&#34;&gt;Step 1: Installing the submodule&lt;/h3&gt;
 &lt;p&gt;To make the installation, your pod file must contain the following fragments:&lt;/p&gt;
@@ -666,10 +666,10 @@ Before configuring the navigation between screens of your application, it is req
 &lt;li&gt;&lt;strong&gt;Remote:&lt;/strong&gt; expects that the &lt;code&gt;url&lt;/code&gt; points into an API that will return one of more Beagle&amp;rsquo;s components.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;On the example below, we case a case where the &lt;code&gt;route&lt;/code&gt; is &lt;code&gt;remote&lt;/code&gt;:&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t91&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t91-0&#34; role=&#34;tab&#34; aria-controls=&#34;t91-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t86&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t86-0&#34; role=&#34;tab&#34; aria-controls=&#34;t86-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t91-1&#34; role=&#34;tab&#34; aria-controls=&#34;t91-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t91&#34;&gt;&lt;div id=&#34;t91-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t91-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t86-1&#34; role=&#34;tab&#34; aria-controls=&#34;t86-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t86&#34;&gt;&lt;div id=&#34;t86-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t86-0&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:button&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -685,7 +685,7 @@ Before configuring the navigation between screens of your application, it is req
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t91-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t91-1&#34;&gt;
+  &lt;div id=&#34;t86-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t86-1&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Button&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
    &lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Click me!&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;

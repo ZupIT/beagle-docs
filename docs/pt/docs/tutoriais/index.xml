@@ -71,10 +71,10 @@
 &lt;li&gt;O &lt;code&gt;context :&lt;/code&gt; É um objeto do tipo &lt;code&gt;ContextData&lt;/code&gt; que será a variável responsável por conter as informações que você deseja transferir.&lt;/li&gt;
 &lt;li&gt;O &lt;code&gt;children:&lt;/code&gt;  É uma lista dos componentes que fazem parte desse container e que terão acesso ao contexto definido nele.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t99&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t99-0&#34; role=&#34;tab&#34; aria-controls=&#34;t99-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t90&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t90-0&#34; role=&#34;tab&#34; aria-controls=&#34;t90-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t99-1&#34; role=&#34;tab&#34; aria-controls=&#34;t99-1&#34;&gt;Kotlin&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t99&#34;&gt;&lt;div id=&#34;t99-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t99-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t90-1&#34; role=&#34;tab&#34; aria-controls=&#34;t90-1&#34;&gt;Kotlin&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t90&#34;&gt;&lt;div id=&#34;t90-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t90-0&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-typescript&#34; data-lang=&#34;typescript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:container&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -124,7 +124,7 @@
   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t99-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t99-1&#34;&gt;
+  &lt;div id=&#34;t90-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t90-1&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Container&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;context&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ContextData&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
@@ -268,10 +268,10 @@
         
         &lt;hr&gt;
 &lt;p&gt;Siga as orientações de acordo com o sistema operacional que estiver usando:&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t100&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t100-0&#34; role=&#34;tab&#34; aria-controls=&#34;t100-0&#34; aria-selected=&#34;true&#34;&gt;Android e Backend&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t91&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t91-0&#34; role=&#34;tab&#34; aria-controls=&#34;t91-0&#34; aria-selected=&#34;true&#34;&gt;Android e Backend&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t100-1&#34; role=&#34;tab&#34; aria-controls=&#34;t100-1&#34;&gt;iOS&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t100&#34;&gt;&lt;div id=&#34;t100-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t100-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t91-1&#34; role=&#34;tab&#34; aria-controls=&#34;t91-1&#34;&gt;iOS&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t91&#34;&gt;&lt;div id=&#34;t91-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t91-0&#34;&gt;
 
 &lt;p&gt;&lt;h2 id=&#34;configurando-o-gradle&#34;&gt;Configurando o Gradle&lt;/h2&gt;
 &lt;p&gt;Se você trabalha com aplicações Android ou via Backend, deve começar configurando o arquivo**&lt;code&gt;gradle.properties&lt;/code&gt;**, que se encontra na **pasta root**. Essa configuração vale tanto para versões remotas como locais.&lt;/p&gt;
@@ -339,7 +339,7 @@ nexus &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;./gradlew clean build publishToMavenLocal
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Depois de rodar o comando, a versão será gerada automaticamente.&lt;/p&gt;
 &lt;/div&gt;
-  &lt;div id=&#34;t100-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t100-1&#34;&gt;
+  &lt;div id=&#34;t91-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t91-1&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;Diferente da configuração para Android e Backend, em aplicações iOS você não precisa configurar o arquivo &lt;strong&gt;&lt;code&gt;gradle.properties.&lt;/code&gt;&lt;/strong&gt; Nesse caso, basta seguir direto para as configurações de acordo com a versão que deseja gerar.&lt;/p&gt;
 &lt;h2 id=&#34;publicando-em-um-repositório-remoto&#34;&gt;Publicando em um repositório remoto&lt;/h2&gt;
@@ -392,11 +392,11 @@ nexus &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
 &lt;h3 id=&#34;criando-uma-ação-do-frontend&#34;&gt;Criando uma ação do frontend&lt;/h3&gt;
 &lt;p&gt;No Beagle, é possível criar uma &lt;a href=&#34;../api/acoes/&#34;&gt;&lt;strong&gt;ação&lt;/strong&gt;&lt;/a&gt; customizada a partir de uma &lt;code&gt;CustomAction&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Cada plataforma possui sua forma especificia de fazer essa implementação no frontend. Você pode ver exemplos abaixo de como fazer em cada uma delas:&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t101&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t101-0&#34; role=&#34;tab&#34; aria-controls=&#34;t101-0&#34; aria-selected=&#34;true&#34;&gt;Android&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t92&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t92-0&#34; role=&#34;tab&#34; aria-controls=&#34;t92-0&#34; aria-selected=&#34;true&#34;&gt;Android&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t101-1&#34; role=&#34;tab&#34; aria-controls=&#34;t101-1&#34;&gt;iOS&lt;/a&gt;&lt;/li&gt;
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t101-2&#34; role=&#34;tab&#34; aria-controls=&#34;t101-2&#34;&gt;Web&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t101&#34;&gt;&lt;div id=&#34;t101-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t101-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t92-1&#34; role=&#34;tab&#34; aria-controls=&#34;t92-1&#34;&gt;iOS&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t92-2&#34; role=&#34;tab&#34; aria-controls=&#34;t92-2&#34;&gt;Web&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t92&#34;&gt;&lt;div id=&#34;t92-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t92-0&#34;&gt;
 
 &lt;p&gt;&lt;ol&gt;
 &lt;li&gt;Crie uma classe anotada com &lt;code&gt;@RegisterAction&lt;/code&gt; que implementa uma interface &lt;code&gt;Action&lt;/code&gt;. Essa interface irá requistar a implementação do método &lt;code&gt;execute&lt;/code&gt; e você irá declarar o resultudo da &lt;code&gt;action&lt;/code&gt;.&lt;/li&gt;
@@ -415,7 +415,7 @@ nexus &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t101-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t101-1&#34;&gt;
+  &lt;div id=&#34;t92-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t92-1&#34;&gt;
 
 &lt;p&gt;&lt;ol&gt;
 &lt;li&gt;Você deve criar a classe que implementa uma &lt;code&gt;Action&lt;/code&gt;. Essa mesma classe irá fazer a requisição da implementação do método &lt;code&gt;execute&lt;/code&gt; e irá ditar as ações na &lt;code&gt;action&lt;/code&gt;.&lt;/li&gt;
@@ -445,14 +445,14 @@ nexus &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
 &lt;p&gt;Para registrar a ação, apenas crie o método com todo seu custom action e chame o  método do Beagle &lt;code&gt;registerCustomAction&lt;/code&gt;  para fazer o registro;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Chame o método criado no BeagleConfig, ele pode ser visto nesse &lt;a href=&#34;../get-started/new-project/&#34;&gt;&lt;strong&gt;exemplo&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Chame o método criado no BeagleConfig, ele pode ser visto nesse &lt;a href=&#34;../get-started/criando-projeto-do-zero/&#34;&gt;&lt;strong&gt;exemplo&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;registerCustomAction&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
    &lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;registerCustomAction&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;CustomAction&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;actionType&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;CustomAction&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;self&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t101-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t101-2&#34;&gt;
+  &lt;div id=&#34;t92-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t92-2&#34;&gt;
 
 &lt;p&gt;&lt;ol&gt;
 &lt;li&gt;Você deve criar a interface com o &lt;code&gt;_beagleAction_&lt;/code&gt; como uma propriedade obrigatória e com os parâmetros necessários para a sua ação. Para esse exemplo, será criado o atributo &lt;code&gt;msg&lt;/code&gt; do tipo &lt;code&gt;string&lt;/code&gt;.&lt;/li&gt;
@@ -502,10 +502,10 @@ nexus &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;val&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;msg&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;null&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Action&lt;/span&gt; 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Veja abaixo um exemplo de uma Ação em um componente do tipo Button:&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t101&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t101-0&#34; role=&#34;tab&#34; aria-controls=&#34;t101-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t93&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t93-0&#34; role=&#34;tab&#34; aria-controls=&#34;t93-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t101-1&#34; role=&#34;tab&#34; aria-controls=&#34;t101-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t101&#34;&gt;&lt;div id=&#34;t101-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t101-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t93-1&#34; role=&#34;tab&#34; aria-controls=&#34;t93-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t93&#34;&gt;&lt;div id=&#34;t93-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t93-0&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:button&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -518,7 +518,7 @@ nexus &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t101-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t101-1&#34;&gt;
+  &lt;div id=&#34;t93-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t93-1&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Button&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
    &lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Beagle Button&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -541,18 +541,18 @@ nexus &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
         &lt;hr&gt;
 &lt;h2 id=&#34;exibindo-uma-tela-a-partir-de-uma-url&#34;&gt;Exibindo uma tela a partir de uma URL&lt;/h2&gt;
 &lt;p&gt;Cada plataforma tem sua forma própria para exibir uma tela server-driven no frontend usando o Beagle. Abaixo, listamos exemplos para cada uma delas.&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t102&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t102-0&#34; role=&#34;tab&#34; aria-controls=&#34;t102-0&#34; aria-selected=&#34;true&#34;&gt;Android&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t94&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t94-0&#34; role=&#34;tab&#34; aria-controls=&#34;t94-0&#34; aria-selected=&#34;true&#34;&gt;Android&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t102-1&#34; role=&#34;tab&#34; aria-controls=&#34;t102-1&#34;&gt;iOS&lt;/a&gt;&lt;/li&gt;
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t102-2&#34; role=&#34;tab&#34; aria-controls=&#34;t102-2&#34;&gt;Web&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t102&#34;&gt;&lt;div id=&#34;t102-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t102-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t94-1&#34; role=&#34;tab&#34; aria-controls=&#34;t94-1&#34;&gt;iOS&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t94-2&#34; role=&#34;tab&#34; aria-controls=&#34;t94-2&#34;&gt;Web&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t94&#34;&gt;&lt;div id=&#34;t94-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t94-0&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;Para exibir uma tela &lt;strong&gt;&lt;code&gt;full server-driven&lt;/code&gt;&lt;/strong&gt;, você deve usar o método &lt;code&gt;this.newServerDrivenIntent&amp;lt;BeagleActivity&amp;gt;()&lt;/code&gt; onde o &lt;code&gt;this&lt;/code&gt; é a o contexto da sua tela atual.&lt;/p&gt;
 &lt;p&gt;Este método requer apenas o parâmetro &lt;code&gt;ScreenRequest&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Você deve seguir tal como o comando abaixo:&lt;/p&gt;
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 &lt;p&gt;Certifique-se de listar a sua Beagle Activity assim como nomeada em seu AndroidManifest.&lt;/p&gt;
-&lt;p&gt;No exemplo abaixo a chamamos somente de &amp;lt;BeagleActivity&amp;gt;. Esse nome é você quem define ao criar sua BeagleActivity. Em nosso tutorial &lt;a href=&#34;../get-started/new-project/&#34;&gt;&lt;strong&gt;Criando um projeto do zero&lt;/strong&gt; &lt;/a&gt;, chamamos ela de &lt;code&gt;AppBeagleActivity&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;No exemplo abaixo a chamamos somente de &amp;lt;BeagleActivity&amp;gt;. Esse nome é você quem define ao criar sua BeagleActivity. Em nosso tutorial &lt;a href=&#34;../get-started/criando-projeto-do-zero/&#34;&gt;&lt;strong&gt;Criando um projeto do zero&lt;/strong&gt; &lt;/a&gt;, chamamos ela de &lt;code&gt;AppBeagleActivity&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;val&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;intent&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;newServerDrivenIntent&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;BeagleActivity&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ScreenRequest&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/screen&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;startActivity&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;intent&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
@@ -571,7 +571,7 @@ startActivity(intent)
 &lt;p&gt;A&lt;code&gt;ScreenRequest&lt;/code&gt; é uma classe interna do Beagle utilizada para solicitar qual tela você deseja exibir. Você listará apenas o atributo URL referente a página que deseja carregar vinda do BFF.&lt;/p&gt;
 &lt;p&gt;No entanto, esse elemento possui outros atributos, que podem ser utilizados na transição e entre telas.  Para saber mais sobre essa classe, veja em &lt;a href=&#34;../api/screen-request.md&#34;&gt;&lt;strong&gt;Screen Request&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
 &lt;/div&gt;
-  &lt;div id=&#34;t102-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t102-1&#34;&gt;
+  &lt;div id=&#34;t94-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t94-1&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;Para renderizar uma tela &lt;a href=&#34;applewebdata://7F9BDDEA-3DF5-44F9-B406-C1ED4549374D/@zup-products/s/beagle/~/drafts/-MCCxDfwkBEyU5SPXYUo/principais-conceitos&#34;&gt;&lt;strong&gt;server-driven&lt;/strong&gt;&lt;/a&gt;, basta criar uma instância &lt;strong&gt;&lt;code&gt;BeagleScreenViewController&lt;/code&gt;&lt;/strong&gt; do tipo &lt;strong&gt;&lt;code&gt;remote&lt;/code&gt;&lt;/strong&gt; e fazer a inicialização com a URL do seu &lt;a href=&#34;applewebdata://7F9BDDEA-3DF5-44F9-B406-C1ED4549374D/@zup-products/s/beagle/~/drafts/-MCCxDfwkBEyU5SPXYUo/principais-conceitos&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;, como no exemplo abaixo:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;beagleViewController&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
@@ -591,7 +591,7 @@ startActivity(intent)
 &lt;p&gt;Desta forma, será possível criar telas com conteúdo dinâmico, e controle no seu backend.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-  &lt;div id=&#34;t102-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t102-2&#34;&gt;
+  &lt;div id=&#34;t94-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t94-2&#34;&gt;
 
 &lt;p&gt;&lt;h4 id=&#34;para-projetos-no-angular&#34;&gt;&lt;strong&gt;Para projetos no Angular&lt;/strong&gt;&lt;/h4&gt;
 &lt;p&gt;Para definir onde você quer mostrar uma tela server-driven no Angular, você deve usar o componente fornecido pela biblioteca &lt;code&gt;&amp;lt;beagle-remote-view&amp;gt;&lt;/code&gt;&lt;/p&gt;
@@ -643,10 +643,10 @@ startActivity(intent)
 &lt;/div&gt;
 &lt;/div&gt;&lt;/div&gt;
 &lt;h2 id=&#34;exibindo-uma-tela-a-partir-de-um-json&#34;&gt;Exibindo uma tela a partir de um JSON&lt;/h2&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t102&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t102-0&#34; role=&#34;tab&#34; aria-controls=&#34;t102-0&#34; aria-selected=&#34;true&#34;&gt;Android&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t95&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t95-0&#34; role=&#34;tab&#34; aria-controls=&#34;t95-0&#34; aria-selected=&#34;true&#34;&gt;Android&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t102-1&#34; role=&#34;tab&#34; aria-controls=&#34;t102-1&#34;&gt;iOS&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t102&#34;&gt;&lt;div id=&#34;t102-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t102-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t95-1&#34; role=&#34;tab&#34; aria-controls=&#34;t95-1&#34;&gt;iOS&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t95&#34;&gt;&lt;div id=&#34;t95-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t95-0&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;Para renderizar uma tela a partir de um JSON, é necessário ter uma &lt;code&gt;Activity&lt;/code&gt; ou  &lt;code&gt;Fragment&lt;/code&gt; com um &lt;code&gt;FrameLayout&lt;/code&gt; como no exemplo a baixo:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;&amp;lt;FrameLayout xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
@@ -671,7 +671,7 @@ startActivity(intent)
 &lt;p&gt;&lt;code&gt;renderScreen(fragment = yourFragment, screenJson = &amp;quot;// JSON here&amp;quot;)&lt;/code&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-  &lt;div id=&#34;t102-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t102-1&#34;&gt;
+  &lt;div id=&#34;t95-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t95-1&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;Para renderizar uma tela de um JSON, basta criar uma instância &lt;strong&gt;&lt;code&gt;BeagleScreenViewController&lt;/code&gt;&lt;/strong&gt; do tipo &lt;strong&gt;&lt;code&gt;declarativeText&lt;/code&gt;&lt;/strong&gt; e fazer a inicialização com o JSON, como no exemplo abaixo:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;beagleViewController&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
@@ -734,10 +734,10 @@ startActivity(intent)
 &lt;p&gt;Neste exemplo, iremos utilizar os componentes &lt;a href=&#34;../api/componentes/ui/input.md&#34;&gt;&lt;strong&gt;TextInput&lt;/strong&gt;&lt;/a&gt; e &lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-pt/api/componentes/ui/button&#34;&gt;&lt;strong&gt;Button&lt;/strong&gt;&lt;/a&gt; para simularmos uma tela de Login.&lt;/p&gt;
 &lt;h3 id=&#34;passo-1-criar-uma-tela-de-login&#34;&gt;Passo 1: Criar uma tela de Login&lt;/h3&gt;
 &lt;p&gt;Até este momento, vamos apenas sinalizar ao Beagle de que ele deve renderizar na tela dois componentes TextInputs e um componente Button para representarmos a tela de Login.&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t106&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t106-0&#34; role=&#34;tab&#34; aria-controls=&#34;t106-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t101&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t101-0&#34; role=&#34;tab&#34; aria-controls=&#34;t101-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t106-1&#34; role=&#34;tab&#34; aria-controls=&#34;t106-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t106&#34;&gt;&lt;div id=&#34;t106-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t106-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t101-1&#34; role=&#34;tab&#34; aria-controls=&#34;t101-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t101&#34;&gt;&lt;div id=&#34;t101-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t101-0&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:container&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -757,7 +757,7 @@ startActivity(intent)
   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t106-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t106-1&#34;&gt;
+  &lt;div id=&#34;t101-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t101-1&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Container&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
      &lt;span style=&#34;color:#000&#34;&gt;children&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;listOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
@@ -771,10 +771,10 @@ startActivity(intent)
 &lt;p&gt;Agora utilize uma &lt;strong&gt;ação&lt;/strong&gt; chamada &lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-pt/api/api-acoes/setcontext&#34;&gt;&lt;strong&gt;SetContext&lt;/strong&gt;&lt;/a&gt;, que altera um &lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-pt/api/contexto&#34;&gt;&lt;strong&gt;contexto&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;específico&lt;/strong&gt; em uma tela. Isto é necessário para dar vida à tela e fazer com que os dados que forem digitados nela sejam enviados para uma API.&lt;/p&gt;
 &lt;p&gt;Neste cenário, o contexto é que irá guardar os dados digitados de nome do usuário e da senha para que, posteriormente, encaminhar estes dados para a API.&lt;/p&gt;
 &lt;p&gt;Altere o código para adicionar essa lógica do SetContext:&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t106&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t106-0&#34; role=&#34;tab&#34; aria-controls=&#34;t106-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t102&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t102-0&#34; role=&#34;tab&#34; aria-controls=&#34;t102-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t106-1&#34; role=&#34;tab&#34; aria-controls=&#34;t106-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t106&#34;&gt;&lt;div id=&#34;t106-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t106-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t102-1&#34; role=&#34;tab&#34; aria-controls=&#34;t102-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t102&#34;&gt;&lt;div id=&#34;t102-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t102-0&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:container&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -819,7 +819,7 @@ startActivity(intent)
   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t106-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t106-1&#34;&gt;
+  &lt;div id=&#34;t102-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t102-1&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;data&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Credentials&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
   &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;val&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;username&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -883,10 +883,10 @@ Esta etapa não tem nenhuma diferença visual do passo anterior.
 &lt;/div&gt;
 
 &lt;p&gt;Para finalizar o fluxo de Login, vamos agora adicionar uma &lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-pt/api/api-acoes&#34;&gt;Action&lt;/a&gt; chamada &lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-pt/api/api-acoes/sendrequest&#34;&gt;SendRequest&lt;/a&gt; que, basicamente, permite fazer uma requisição HTTP e, no caso do &lt;code&gt;onSuccess&lt;/code&gt;, mostrar um &lt;a href=&#34;https://docs.usebeagle.io/v/v1.0-pt/api/api-acoes/alert&#34;&gt;Alert&lt;/a&gt; dando boas-vindas ao usuário.&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t106&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t106-0&#34; role=&#34;tab&#34; aria-controls=&#34;t106-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t103&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t103-0&#34; role=&#34;tab&#34; aria-controls=&#34;t103-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t106-1&#34; role=&#34;tab&#34; aria-controls=&#34;t106-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t106&#34;&gt;&lt;div id=&#34;t106-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t106-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t103-1&#34; role=&#34;tab&#34; aria-controls=&#34;t103-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t103&#34;&gt;&lt;div id=&#34;t103-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t103-0&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:container&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -953,7 +953,7 @@ Esta etapa não tem nenhuma diferença visual do passo anterior.
   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t106-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t106-1&#34;&gt;
+  &lt;div id=&#34;t103-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t103-1&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;data&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Credentials&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
   &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;val&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;username&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;

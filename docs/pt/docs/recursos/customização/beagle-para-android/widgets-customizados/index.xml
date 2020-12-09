@@ -24,7 +24,7 @@
         
         &lt;hr&gt;
 &lt;h2 id=&#34;como-criar-componentes-custom-views-e-widgets&#34;&gt;Como criar componentes (custom views) e widgets?&lt;/h2&gt;
-&lt;p&gt;No exemplo abaixo, será implementado um &lt;a href=&#34;../../beagle-para-ios/custom-widgets.md&#34;&gt;&lt;strong&gt;custom widget&lt;/strong&gt;&lt;/a&gt; e o componente que ele registrará. Esse componente será composto por um texto e dois botões dentro de um layout linear.&lt;/p&gt;
+&lt;p&gt;No exemplo abaixo, será implementado um &lt;a href=&#34;../../beagle-para-ios/widgets-customizados.md&#34;&gt;&lt;strong&gt;custom widget&lt;/strong&gt;&lt;/a&gt; e o componente que ele registrará. Esse componente será composto por um texto e dois botões dentro de um layout linear.&lt;/p&gt;
 &lt;p&gt;Os botões neste componente serão responsáveis ​​por aumentar e diminuir o tamanho do texto do título e a tela será como a imagem a seguir:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%2883%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 

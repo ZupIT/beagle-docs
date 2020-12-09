@@ -44,7 +44,7 @@
 &lt;li&gt;No armazenamento do frontend.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Este cache é usado para otimizar a resposta do BFF - tanto em tempo quanto em tamanho -, em casos que não há mudança. As entradas neste cache duram até o servidor refazer o deploy ou o cliente ser reinstalado.&lt;/p&gt;
-&lt;p&gt;A premissa para que este cache funcione é que ele deve sempre retornar o mesmo JSON para a mesma requisição. Para que uma requisição seja considerada igual, é necessário que tenha o mesmo endpoint e a mesma plataforma especificada como mostra nossa &lt;a href=&#34;../componentes/platform-sorting.md&#34;&gt;&lt;strong&gt;especificação de plataformas&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A premissa para que este cache funcione é que ele deve sempre retornar o mesmo JSON para a mesma requisição. Para que uma requisição seja considerada igual, é necessário que tenha o mesmo endpoint e a mesma plataforma especificada como mostra nossa &lt;a href=&#34;../componentes/especificacao-de-componentes-por-plataforma.md&#34;&gt;&lt;strong&gt;especificação de plataformas&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
@@ -253,11 +253,11 @@ Importante ressaltar que o default do Beagle é o valor &lt;code&gt;column&lt;/c
 &lt;h3 id=&#34;criando-a-ação-no-frontend&#34;&gt;Criando a ação no frontend&lt;/h3&gt;
 &lt;p&gt;No Beagle, é possível criar uma &lt;a href=&#34;../api/acoes/&#34;&gt;&lt;strong&gt;ação&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;customizada&lt;/strong&gt; a partir de uma &lt;code&gt;CustomAction&lt;/code&gt; .&lt;/p&gt;
 &lt;p&gt;Cada plataforma tem sua forma própria para fazer esta implementação no frontend. Abaixo, listamos exemplos para cada uma.&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t90&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t90-0&#34; role=&#34;tab&#34; aria-controls=&#34;t90-0&#34; aria-selected=&#34;true&#34;&gt;Android&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t82&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t82-0&#34; role=&#34;tab&#34; aria-controls=&#34;t82-0&#34; aria-selected=&#34;true&#34;&gt;Android&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t90-1&#34; role=&#34;tab&#34; aria-controls=&#34;t90-1&#34;&gt;iOS&lt;/a&gt;&lt;/li&gt;
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t90-2&#34; role=&#34;tab&#34; aria-controls=&#34;t90-2&#34;&gt;Web&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t90&#34;&gt;&lt;div id=&#34;t90-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t90-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t82-1&#34; role=&#34;tab&#34; aria-controls=&#34;t82-1&#34;&gt;iOS&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t82-2&#34; role=&#34;tab&#34; aria-controls=&#34;t82-2&#34;&gt;Web&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t82&#34;&gt;&lt;div id=&#34;t82-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t82-0&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;Primeiro, você deve criar uma classe anotada com &lt;code&gt;@RegisterAction&lt;/code&gt; que implemente a &lt;strong&gt;interface&lt;/strong&gt; &lt;code&gt;Action&lt;/code&gt;. Esta mesma interface solicitará que o método &lt;code&gt;execute&lt;/code&gt; seja implementado e, aqui, você irá declarar o resultado da &lt;code&gt;action&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;O atributo &lt;code&gt;msg&lt;/code&gt; listado é apenas um exemplo de parâmetro que pode ser declarado no construtor desta classe. O exemplo a seguir mostra uma ação com &lt;strong&gt;Toast:&lt;/strong&gt;&lt;/p&gt;
@@ -273,7 +273,7 @@ Importante ressaltar que o default do Beagle é o valor &lt;code&gt;column&lt;/c
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t90-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t90-1&#34;&gt;
+  &lt;div id=&#34;t82-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t82-1&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;Primeiro, você deve criar uma classe que implemente o tipo &lt;code&gt;Action&lt;/code&gt;. Esta mesma classe solicitará que o método &lt;code&gt;execute&lt;/code&gt; seja implementado e irá ditar as ações da &lt;code&gt;action&lt;/code&gt; .&lt;/p&gt;
 &lt;p&gt;O atributo &lt;code&gt;msg&lt;/code&gt; listado é apenas um exemplo de parâmetro que pode ser declarado no construtor desta classe. O exemplo a seguir mostra uma ação com &lt;strong&gt;&lt;code&gt;Alert&lt;/code&gt;:&lt;/strong&gt;&lt;/p&gt;
@@ -296,12 +296,12 @@ Importante ressaltar que o default do Beagle é o valor &lt;code&gt;column&lt;/c
 
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Para registrar a ação, basta criar um método onde terá todas suas &lt;code&gt;custom action&lt;/code&gt; e chamar o método do Beagle &lt;code&gt;registerCustomAction&lt;/code&gt; que fará o registro.&lt;/p&gt;
-&lt;p&gt;Chame o &lt;a href=&#34;../get-started/new-project/case-ios/#passo-2-configurando-o-beagle&#34;&gt;&lt;strong&gt;método criado no BeagleConfig&lt;/strong&gt;&lt;/a&gt;, tal como no tutorial da seção &lt;a href=&#34;../get-started/new-project/case-ios/#iniciando-um-projeto-ios&#34;&gt;&lt;strong&gt;&amp;ldquo;Criando um projeto do zero&amp;rdquo;.&lt;/strong&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Chame o &lt;a href=&#34;../get-started/criando-projeto-do-zero/case-ios/#passo-2-configurando-o-beagle&#34;&gt;&lt;strong&gt;método criado no BeagleConfig&lt;/strong&gt;&lt;/a&gt;, tal como no tutorial da seção &lt;a href=&#34;../get-started/criando-projeto-do-zero/case-ios/#iniciando-um-projeto-ios&#34;&gt;&lt;strong&gt;&amp;ldquo;Criando um projeto do zero&amp;rdquo;.&lt;/strong&gt; &lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;registerCustomAction&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
    &lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;registerCustomAction&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;CustomAction&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;actionType&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;CustomAction&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;self&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t90-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t90-2&#34;&gt;
+  &lt;div id=&#34;t82-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t82-2&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;Primeiro, você deve criar uma interface com a propriedade obrigatória &lt;code&gt;_beagleAction_&lt;/code&gt; __e os parâmetros necessários para sua ação. Para este exemplo, criaremos o atributo &lt;code&gt;msg&lt;/code&gt; do tipo &lt;code&gt;string&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Em __&lt;code&gt;_beagleAction_&lt;/code&gt; , coloque o nome da ação customizada seguindo o padrão &amp;lsquo;custom:nomeDaAção&amp;rsquo;&lt;/p&gt;
@@ -345,10 +345,10 @@ Importante ressaltar que o default do Beagle é o valor &lt;code&gt;column&lt;/c
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;val&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;msg&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;null&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Action&lt;/span&gt; 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Abaixo, temos um exemplo de Action em um componente do tipo Botão.&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t90&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t90-0&#34; role=&#34;tab&#34; aria-controls=&#34;t90-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t83&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t83-0&#34; role=&#34;tab&#34; aria-controls=&#34;t83-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t90-1&#34; role=&#34;tab&#34; aria-controls=&#34;t90-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t90&#34;&gt;&lt;div id=&#34;t90-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t90-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t83-1&#34; role=&#34;tab&#34; aria-controls=&#34;t83-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t83&#34;&gt;&lt;div id=&#34;t83-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t83-0&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
   &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:button&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -361,7 +361,7 @@ Importante ressaltar que o default do Beagle é o valor &lt;code&gt;column&lt;/c
   &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t90-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t90-1&#34;&gt;
+  &lt;div id=&#34;t83-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t83-1&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Button&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
    &lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Beagle Button&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -402,10 +402,10 @@ Você pode misturar as 3 maneiras disponíveis para definir um componente.
 &lt;li&gt;&lt;code&gt;sealed classes&lt;/code&gt;, cujo builders possuem o nome de sua classe pai como prefixo anexado.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;Screen&lt;/code&gt;, cujo builder é &lt;code&gt;ScreenComponentBuilder&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t91&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t91-0&#34; role=&#34;tab&#34; aria-controls=&#34;t91-0&#34; aria-selected=&#34;true&#34;&gt;Java&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t84&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t84-0&#34; role=&#34;tab&#34; aria-controls=&#34;t84-0&#34; aria-selected=&#34;true&#34;&gt;Java&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t91-1&#34; role=&#34;tab&#34; aria-controls=&#34;t91-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t91&#34;&gt;&lt;div id=&#34;t91-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t91-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t84-1&#34; role=&#34;tab&#34; aria-controls=&#34;t84-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t84&#34;&gt;&lt;div id=&#34;t84-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t84-0&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//Navigate é uma sealed class com 
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//OpenNativeRoute como uma classe filha
@@ -415,7 +415,7 @@ Você pode misturar as 3 maneiras disponíveis para definir um componente.
     &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;data&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;HashMap&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;())&lt;/span&gt;
     &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;build&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;();&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t91-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t91-1&#34;&gt;
+  &lt;div id=&#34;t84-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t84-1&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//Navigate é uma sealed class com 
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//OpenNativeRoute como uma classe filha
@@ -441,10 +441,10 @@ Você pode misturar as 3 maneiras disponíveis para definir um componente.
     &lt;span style=&#34;color:#000&#34;&gt;labelOk&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;OK&amp;#34;&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Nos casos em que o campo espera uma &lt;strong&gt;lista ou um mapa&lt;/strong&gt;,  você deve colocar antes do elemento a ser adicionado na coleção com o operador &amp;lsquo;&lt;strong&gt;+&lt;/strong&gt;&amp;rsquo;.  Esse operador também aceita elemento único.  Veja os exemplos:&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t91&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t91-0&#34; role=&#34;tab&#34; aria-controls=&#34;t91-0&#34; aria-selected=&#34;true&#34;&gt;Listas&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t85&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t85-0&#34; role=&#34;tab&#34; aria-controls=&#34;t85-0&#34; aria-selected=&#34;true&#34;&gt;Listas&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t91-1&#34; role=&#34;tab&#34; aria-controls=&#34;t91-1&#34;&gt;Mapas&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t91&#34;&gt;&lt;div id=&#34;t91-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t91-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t85-1&#34; role=&#34;tab&#34; aria-controls=&#34;t85-1&#34;&gt;Mapas&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t85&#34;&gt;&lt;div id=&#34;t85-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t85-0&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;container&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;children&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -461,7 +461,7 @@ Você pode misturar as 3 maneiras disponíveis para definir um componente.
     &lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Kenobi&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t91-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t91-1&#34;&gt;
+  &lt;div id=&#34;t85-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t85-1&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;navigateOpenNativeRoute&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt; 
     &lt;span style=&#34;color:#000&#34;&gt;route&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/route&amp;#34;&lt;/span&gt;
@@ -487,11 +487,11 @@ Você pode misturar as 3 maneiras disponíveis para definir um componente.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h3 id=&#34;exemplo&#34;&gt;Exemplo&lt;/h3&gt;
 &lt;p&gt;O exemplo abaixo define uma tela simples declarada nas três maneiras disponíveis pelo Beagle:&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t91&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t91-0&#34; role=&#34;tab&#34; aria-controls=&#34;t91-0&#34; aria-selected=&#34;true&#34;&gt;Padrão&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t86&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t86-0&#34; role=&#34;tab&#34; aria-controls=&#34;t86-0&#34; aria-selected=&#34;true&#34;&gt;Padrão&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t91-1&#34; role=&#34;tab&#34; aria-controls=&#34;t91-1&#34;&gt;Builder DSL&lt;/a&gt;&lt;/li&gt;
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t91-2&#34; role=&#34;tab&#34; aria-controls=&#34;t91-2&#34;&gt;Builder Padrão&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t91&#34;&gt;&lt;div id=&#34;t91-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t91-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t86-1&#34; role=&#34;tab&#34; aria-controls=&#34;t86-1&#34;&gt;Builder DSL&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t86-2&#34; role=&#34;tab&#34; aria-controls=&#34;t86-2&#34;&gt;Builder Padrão&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t86&#34;&gt;&lt;div id=&#34;t86-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t86-0&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;navigationBar&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;NavigationBar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
@@ -505,7 +505,7 @@ Você pode misturar as 3 maneiras disponíveis para definir um componente.
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t91-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t91-1&#34;&gt;
+  &lt;div id=&#34;t86-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t86-1&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;navigationBar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -523,7 +523,7 @@ Você pode misturar as 3 maneiras disponíveis para definir um componente.
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t91-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t91-2&#34;&gt;
+  &lt;div id=&#34;t86-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t86-2&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;ScreenComponentBuilder&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;navigationBar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
@@ -588,11 +588,11 @@ Esta conexão entre frontend e backend é feita via &lt;code&gt;WebSocket&lt;/co
 &lt;h2 id=&#34;requisitos&#34;&gt;Requisitos&lt;/h2&gt;
 &lt;p&gt;Para usar o &lt;code&gt;Live Preview&lt;/code&gt; você deve:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Usar o &lt;a href=&#34;../get-started/installing-beagle/beagle-backend.md&#34;&gt;&lt;strong&gt;Beagle SDK&lt;/strong&gt;&lt;/a&gt; em seu BFF**;**&lt;/li&gt;
+&lt;li&gt;Usar o &lt;a href=&#34;../get-started/instalando-beagle/backend.md&#34;&gt;&lt;strong&gt;Beagle SDK&lt;/strong&gt;&lt;/a&gt; em seu BFF**;**&lt;/li&gt;
 &lt;li&gt;Instalar o &lt;code&gt;BeaglePreview&lt;/code&gt; plugin;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;configuração-do-bff&#34;&gt;Configuração do BFF&lt;/h3&gt;
-&lt;p&gt;Você precisa que seu BFF esteja configurado com o Beagle para utilizar o Live Preview. Caso ainda não o tenha, faça o &lt;a href=&#34;https://github.com/ZupIT/beagle-examples/tree/master/BeagleSampleBackend&#34;&gt;&lt;strong&gt;download de um projeto inicial pronto&lt;/strong&gt;&lt;/a&gt;. Outra possibilidade que você pode fazer, é o nosso tutorial de &lt;a href=&#34;../get-started/new-project/exemplo-de-projeto-backend-com-beagle.md&#34;&gt;&lt;strong&gt;como implementar um backend&lt;/strong&gt;&lt;/a&gt; com o Beagle configurado.&lt;/p&gt;
+&lt;p&gt;Você precisa que seu BFF esteja configurado com o Beagle para utilizar o Live Preview. Caso ainda não o tenha, faça o &lt;a href=&#34;https://github.com/ZupIT/beagle-examples/tree/master/BeagleSampleBackend&#34;&gt;&lt;strong&gt;download de um projeto inicial pronto&lt;/strong&gt;&lt;/a&gt;. Outra possibilidade que você pode fazer, é o nosso tutorial de &lt;a href=&#34;../get-started/criando-projeto-do-zero/case-backend.md&#34;&gt;&lt;strong&gt;como implementar um backend&lt;/strong&gt;&lt;/a&gt; com o Beagle configurado.&lt;/p&gt;
 &lt;h3 id=&#34;instalação-do-plugin-intellij&#34;&gt;Instalação &lt;strong&gt;do plugin IntelliJ&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;Para instalar o &lt;code&gt;BeaglePreview&lt;/code&gt; entre no link abaixo e clique na opção instalar na IDE:&lt;/p&gt;
 &lt;p&gt;{% embed url=&amp;ldquo;&lt;a href=&#34;https://plugins.jetbrains.com/plugin/14575-beagle-sdk-live-preview%22&#34;&gt;https://plugins.jetbrains.com/plugin/14575-beagle-sdk-live-preview&amp;quot;&lt;/a&gt; caption=&amp;ldquo;Plugin do Live Preview para IntelliJ&amp;rdquo; %}}&lt;/p&gt;
@@ -636,10 +636,10 @@ Você &lt;strong&gt;deve configurar&lt;/strong&gt; tanto o backend quanto o fron
 &lt;p&gt;O Live Preview faz isso ao compilar seu código modificado e verificar se existe alguma alteração a ser feita. Se for o caso, ele faz o push de seu novo layout para o cliente.&lt;/p&gt;
 &lt;h3 id=&#34;passo-2-configurar-o-frontend-ios-e-android&#34;&gt;Passo 2: Configurar o frontend iOS e Android&lt;/h3&gt;
 &lt;p&gt;Uma vez configurado o seu backend, o próximo passo é configurar o emulador no frontend da sua aplicação com um projeto Beagle Android ou  Beagle iOS.&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t96&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t96-0&#34; role=&#34;tab&#34; aria-controls=&#34;t96-0&#34; aria-selected=&#34;true&#34;&gt;Cliente Android&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t88&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t88-0&#34; role=&#34;tab&#34; aria-controls=&#34;t88-0&#34; aria-selected=&#34;true&#34;&gt;Cliente Android&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t96-1&#34; role=&#34;tab&#34; aria-controls=&#34;t96-1&#34;&gt;Cliente iOS&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t96&#34;&gt;&lt;div id=&#34;t96-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t96-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t88-1&#34; role=&#34;tab&#34; aria-controls=&#34;t88-1&#34;&gt;Cliente iOS&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t88&#34;&gt;&lt;div id=&#34;t88-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t88-0&#34;&gt;
 
 &lt;p&gt;&lt;h3 id=&#34;passo-1-instalar-o-submódulo&#34;&gt;Passo 1: Instalar o submódulo&lt;/h3&gt;
 &lt;p&gt;Para realizar a instalação, seu arquivo de &lt;code&gt;gradle&lt;/code&gt; deve conter o fragmento abaixo:&lt;/p&gt;
@@ -705,10 +705,10 @@ Você &lt;strong&gt;deve configurar&lt;/strong&gt; tanto o backend quanto o fron
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t96-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t96-1&#34;&gt;
+  &lt;div id=&#34;t88-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t88-1&#34;&gt;
 
 &lt;p&gt;&lt;h3 id=&#34;passo-1-instalar-o-submódulo&#34;&gt;Passo 1: Instalar o submódulo&lt;/h3&gt;
-&lt;p&gt;Para realizar a instalação, é necessário primeiro já ter seguido os &lt;a href=&#34;../get-started/installing-beagle/ios.md&#34;&gt;&lt;strong&gt;passos de instalação do Beagle para iOS&lt;/strong&gt;&lt;/a&gt;. Assim os passos seguintes variam de acordo com o método utilizado.&lt;/p&gt;
+&lt;p&gt;Para realizar a instalação, é necessário primeiro já ter seguido os &lt;a href=&#34;../get-started/instalando-beagle/beagle-ios.md&#34;&gt;&lt;strong&gt;passos de instalação do Beagle para iOS&lt;/strong&gt;&lt;/a&gt;. Assim os passos seguintes variam de acordo com o método utilizado.&lt;/p&gt;
 &lt;h4 id=&#34;utilizando-via-cocoapods&#34;&gt;Utilizando via CocoaPods&lt;/h4&gt;
 &lt;p&gt;Adicione a dependência do LivePreview no seu arquivo Podfile:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;...
@@ -793,7 +793,7 @@ pod &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;Beagle/Preview&amp;#39;&l
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Vale lembrar que, antes de configurar a navegação entre telas da sua aplicação, é preciso que você já tenha feito a &lt;a href=&#34;../get-started/installing-beagle/&#34;&gt;&lt;strong&gt;instalação do Beagle&lt;/strong&gt;&lt;/a&gt;, as &lt;a href=&#34;../get-started/using-beagle/&#34;&gt;&lt;strong&gt;configurações de uso&lt;/strong&gt;&lt;/a&gt; e testado o framework do Beagle no tutorial para &lt;a href=&#34;../tutoriais/exibindo-uma-tela.md&#34;&gt;&lt;strong&gt;exibir uma tela server-driven.&lt;/strong&gt;&lt;/a&gt;
+Vale lembrar que, antes de configurar a navegação entre telas da sua aplicação, é preciso que você já tenha feito a &lt;a href=&#34;../get-started/instalando-beagle/&#34;&gt;&lt;strong&gt;instalação do Beagle&lt;/strong&gt;&lt;/a&gt;, as &lt;a href=&#34;../get-started/usando-beagle/&#34;&gt;&lt;strong&gt;configurações de uso&lt;/strong&gt;&lt;/a&gt; e testado o framework do Beagle no tutorial para &lt;a href=&#34;../tutoriais/exibindo-uma-tela.md&#34;&gt;&lt;strong&gt;exibir uma tela server-driven.&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Depois de fazer todas as configurações, basta colocar o código dos exemplos como retorno do seu serviço e chamar o endpoint, definido na sua controller, no frontend de sua preferência.&lt;/p&gt;
@@ -804,10 +804,10 @@ Vale lembrar que, antes de configurar a navegação entre telas da sua aplicaç�
 &lt;li&gt;&lt;strong&gt;Remote:&lt;/strong&gt;  navegação que, a partir de uma URL, aponta para uma API que irá retornar um ou mais componentes do Beagle.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;No exemplo abaixo, você vê um caso onde o &lt;code&gt;route&lt;/code&gt; é &lt;code&gt;remote&lt;/code&gt;:&lt;/p&gt;
-&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t97&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t97-0&#34; role=&#34;tab&#34; aria-controls=&#34;t97-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t89&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t89-0&#34; role=&#34;tab&#34; aria-controls=&#34;t89-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
 	  
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t97-1&#34; role=&#34;tab&#34; aria-controls=&#34;t97-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div class=&#34;tab-content&#34; id=&#34;t97&#34;&gt;&lt;div id=&#34;t97-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t97-0&#34;&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t89-1&#34; role=&#34;tab&#34; aria-controls=&#34;t89-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t89&#34;&gt;&lt;div id=&#34;t89-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t89-0&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:button&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
@@ -823,7 +823,7 @@ Vale lembrar que, antes de configurar a navegação entre telas da sua aplicaç�
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-  &lt;div id=&#34;t97-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t97-1&#34;&gt;
+  &lt;div id=&#34;t89-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t89-1&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Button&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
    &lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Click me!&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
