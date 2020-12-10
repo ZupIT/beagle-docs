@@ -1,5 +1,5 @@
 ---
-title: Backend
+title: Case Backend
 weight: 45
 description: 'Here, you''ll find a tutorial to start a backend project with Beagle.'
 ---

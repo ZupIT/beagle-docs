@@ -9,7 +9,7 @@ description: 'Here, you''ll find how Beagle deals with screen navigation.'
 On Beagle, navigation works as a type of [**Action**](../../../../api/actions/), which can be used by all components that receives an action.
 
 {{% alert color="info" %}}
-Before configuring the navigation between screens of your application, it is required you have [**installed Beagle**](../../../get-started/installing-beagle/), checked the [**use configuration**](../../../get-started/using-beagle/) and tested Beagle's framework on the [**displaying a server-driven screen tutorial**](../../../displaying-a-screen#displaying-a-server-driven-screen)
+Before configuring the navigation between screens of your application, it is required you have [**installed Beagle**](../../../get-started/installing-beagle/), checked the [**use configuration**](../../../get-started/using-beagle/) and tested Beagle's framework on the [**displaying a server-driven screen tutorial**](../../../how-to-display-a-screen#displaying-a-server-driven-screen)
 {{% /alert %}}
 
 After these configuration, just add the example code as a return of you service and call the endpoint, defining in your controller,  in your frontend. 

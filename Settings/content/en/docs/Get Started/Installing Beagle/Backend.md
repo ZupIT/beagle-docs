@@ -32,7 +32,7 @@ When you create a micro-service, we recommend using your team's established mech
 If your team works with micro-services using a framework other than Spring or Micronaut, see [**Beagle Framework**](../../../../../../../resources/customization/beagle-for-backend/) instead.
 {{% /alert %}}
 
-For a simple setup, you can choose between 2 frameworks to create your [**BFF**](../../../../../../principais-conceitos#backend-for-frontend): 
+For a simple setup, you can choose between 2 frameworks to create your [**BFF**](../../../../../../key-concepts#backend-for-frontend): 
 
 #### [Micronaut](https://micronaut.io/) 
 
@@ -192,4 +192,4 @@ To keep configuring Beagle:
 
 👉Go to [**initial configurations**](../using-beagle/backend) to enable the use of Beagle on your Web project.
 
-👉 If you want to go straight to practice, access our [**tutorial to create a projeto from zero**.](../../new-project/exemplo-de-projeto-backend-com-beagle)
+👉 If you want to go straight to practice, access our [**tutorial to create a projeto from zero**.](../../creating-a-project-from-scratch/case-backend)

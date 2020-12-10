@@ -10,8 +10,8 @@ description: >-
 
 ## What is it? 
 
-SubmitForm is an exclusive action of[ **SimpleForm**](../../components/form/simple-form-web), it must be used in some event inside the form, so it will be sent. 
+SubmitForm is an exclusive action of[ **SimpleForm**](../../components/form/simple-form), it must be used in some event inside the form, so it will be sent. 
 
 ## How to use? 
 
-For a complete example together with SimpleForm, [**click here**](../components/form/simple-form-web).
+For a complete example together with SimpleForm, [**click here**](../components/form/simple-form).

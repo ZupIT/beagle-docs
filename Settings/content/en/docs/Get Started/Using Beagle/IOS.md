@@ -18,7 +18,7 @@ Currently, there are two types of approaches to render screens with Beagle: **re
 
 #### Remot**e** Renderization 
 
-> Main approach used on Beagle because it's based on [**server-driven UI**](../../../../principais-conceitos#server-driven-ui) concept. It allows you to build layouts dynamically, consuming the informations provided by a [**BFF**](../../../../principais-conceitos#backend-for-frontend) through a remote URL.
+> Main approach used on Beagle because it's based on [**server-driven UI**](../../../../key-concepts#server-driven-ui) concept. It allows you to build layouts dynamically, consuming the informations provided by a [**BFF**](../../../../key-concepts#backend-for-frontend) through a remote URL.
 
 #### Declarative Renderization 
 
@@ -69,7 +69,7 @@ let beagleViewController = Beagle.screen(
 ```
 
 {{% alert color="info" %}}
-In case you want to use the **`remote`**type, check out [**how to display a server-driven screen.**](../../../displaying-a-screen)
+In case you want to use the **`remote`**type, check out [**how to display a server-driven screen.**](../../../how-to-display-a-screen)
 {{% /alert %}}
 
 Once you made it, you just have to present it as you wish.

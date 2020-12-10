@@ -28,7 +28,7 @@ See below every tree's componenent:
 
 * `_beagleComponent_` is the name of the UI component to render.
 * `id` is a unique identifier for the node. Observation: although the `id` is required by the internal tree structure, before processing the tree, Beagle assigns random unique ids for each node without an id, making it optional in the json provided by the backend.
-* `context` is a [**context**](../../../../../comunication-between-components-and-context) defined for the component and its children.
+* `context` is a [**context**](../../../../../how-to-make-comunication-between-components) defined for the component and its children.
 * `children` is an array of nodes representing the children of the current node.
 * `style` is the stylization rules for the component. These rules are not CSS, instead it's a [**structure defined by Beagle**](https://docs.usebeagle.io/resources/estilizacao/web#stylizing-components-through-json);
 * Additionally, a node has every property expected by the component itself, a text component could have `text` and `justify`, while a button could have `onPress`, `text` and `disabled`.

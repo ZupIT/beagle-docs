@@ -1,5 +1,5 @@
 ---
-title: Android
+title: Case Android
 weight: 33
 description: 'Here, you''ll find a tutorial to start an Android project with Beagle.'
 ---
@@ -385,7 +385,7 @@ The name of your`application` now it's the same of the class you created. Update
 Well done, your Android application is configured and ready to use Beagle! 
 {{% /alert %}}
 
-All you have to do now is [**set up a backend** ](../../exemplo-de-projeto-backend-com-beagle)to answer your application's requests. Once you made this configuration, start your application and you'll see your first server-driven screen!
+All you have to do now is [**set up a backend** ](../../case-backend)to answer your application's requests. Once you made this configuration, start your application and you'll see your first server-driven screen!
 
 ### Step 7: Display your Server-Driven Screen
 

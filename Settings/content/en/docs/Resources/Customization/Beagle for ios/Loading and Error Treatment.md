@@ -105,7 +105,7 @@ The **possibles errors** are:
 **Errors on a request** \(`Request.Error`\):
 
 * `urlBuilderError`: When the resource URL or a [**`baseURL`**](beagledependencies#baseurl) is invalid.
-* `networkError`: When it's not possible to establish a connection or an error was returned from the [**BFF**](../../../../principais-conceitos#backend-for-frontend).
+* `networkError`: When it's not possible to establish a connection or an error was returned from the [**BFF**](../../../../key-concepts#backend-for-frontend).
 * `decoding`: When the answer sent from BFF is different than the object expected.
 
 {{% alert color="info" %}}

@@ -30,8 +30,8 @@ Beagle has **21 components**, they are currently divided into **5 categories**:
 
 {{% tab name="Forms" %}}
 * [**Validator**](form/validator)
-* [**Simple Form**](form/simple-form-web)
-* [**Input**](ui/input)
+* [**Simple Form**](form/simple-form)
+* [**Input**](ui/textinput)
 {{% /tab %}}
 
 {{% tab name="Lazy" %}}

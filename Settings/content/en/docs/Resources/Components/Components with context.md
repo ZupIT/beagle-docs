@@ -13,7 +13,7 @@ description: >-
 ## Beagle's components with context:
 
 1. [**Container**](../../../../../../../../api/components/layout/container)
-2. [**SimpleForm**](../../../../../../../api/components/form/simple-form-web)
+2. [**SimpleForm**](../../../../../../../api/components/form/simple-form)
 3. [**PageView**](../../../../../../api/components/layout/pageview)
 4. [**ScrollView**](../../../../../api/components/layout/scrollview)
 5. [**TabView**](../../../../api/components/ui/tabview)
@@ -54,5 +54,5 @@ public struct CustomComponent: RawComponent, HasContext {
 {{< /tabs >}}
 
 {{% alert color="warning" %}}
-If you want to create customized components on iOS, it is necessary to register it. See [**how to do it here**](../../customization/beagle-for-android/how-to-make-custom-widgets/)
+If you want to create customized components on iOS, it is necessary to register it. See [**how to do it here**](../../customization/beagle-for-android/custom-widgets/)
 {{% /alert %}}

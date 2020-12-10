@@ -31,6 +31,10 @@ O Beagle possui **14** **componentes** atualmente divididos em **5 categorias**:
 * [**Text Input** ](ui/input)
 {{% /tab %}}
 
+{{% tab name="Lazy" %}}
+* [Lazy](lazy)
+{{% /tab %}}
+
 {{% tab name="UI" %}}
 * [**Button**](ui/button)
 * [**Image**](ui/image/)
@@ -40,4 +44,7 @@ O Beagle possui **14** **componentes** atualmente divididos em **5 categorias**:
 * [**Web View**](ui/webview)
 {{% /tab %}}
 
+{{% tab name="Touchable" %}}
+* [Touchable](touchable)
+{{% /tab %}}
 {{< /tabs >}}

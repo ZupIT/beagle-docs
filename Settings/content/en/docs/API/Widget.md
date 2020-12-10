@@ -148,7 +148,7 @@ The main attributes are:
     <tr>
       <td style="text-align:left"><b>positionType</b>
       </td>
-      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;<a href="../resources/component-layout/positiontype"><b>Position Type</b></a> attribute
+      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;<a href="../resources/components-positioning/positiontype"><b>Position Type</b></a> attribute
         establishes a relation with the element&apos;s positioning and its brothers.</td>
     </tr>
     <tr>

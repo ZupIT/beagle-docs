@@ -43,7 +43,7 @@ struct Styles {
 }
 ```
 
-This `struct` will contain all the styles Beagle will access. Here, it will be listed the logic that allows Beagle to apply defined styles on iOS into a [**server-driven screen**](../../../../principais-conceitos#server-driven-ui).
+This `struct` will contain all the styles Beagle will access. Here, it will be listed the logic that allows Beagle to apply defined styles on iOS into a [**server-driven screen**](../../../../key-concepts#server-driven-ui).
 
 ### Step 2: Create a text style
 

@@ -86,4 +86,4 @@ To keep configuring Beagle:
 
 👉Go to [**initial configurations** ](../../../using-beagle/web/)to enable the use of Beagle on your Web project.
 
-👉 If you want to go straight to practice, access our [**tutorial to create a projeto from zero**.](../../new-project/case-web)
+👉 If you want to go straight to practice, access our [**tutorial to create a projeto from zero**.](../../creating-a-project-from-scratch/case-web)

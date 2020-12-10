@@ -168,14 +168,14 @@ Below you can find all methods of the Beagle View and their description:
         </p>
       </td>
       <td style="text-align:left">function</td>
-      <td style="text-align:left"><a href="the-beagle-view-1#subscribing-to-events"><b>subscribes to errors</b></a><b>. </b>Receives
+      <td style="text-align:left"><a href="the-beagle-view#subscribing-to-events"><b>subscribes to errors</b></a><b>. </b>Receives
         the listener and returns a function to remove the listener.</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>fetch</b>
       </td>
       <td style="text-align:left">function</td>
-      <td style="text-align:left"><a href="the-beagle-view-1#fetching-a-view"><b>fetches a view from the backend</b></a><b> </b>and
+      <td style="text-align:left"><a href="the-beagle-view#fetching-a-view"><b>fetches a view from the backend</b></a><b> </b>and
         uses it to update the current tree.</td>
     </tr>
     <tr>

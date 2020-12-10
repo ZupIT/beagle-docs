@@ -25,7 +25,7 @@ The entries on this cache layer has time duration defined by cache general confi
 
 You can check out how to **configure the cache** according to your frontend's platform on the following links:
 
-* [**Configuring Cache**](ho-to-configure-cache)
+* [**Configuring Cache**](how-to-configure-cache)
 
 ### Persistent cache 
 

@@ -30,7 +30,7 @@ When creating a form it is important to understand two steps respectively
 The TextInput component is the field in which the user or the system will fill in some information, and it is important to know its attributes in order to better use it. Here we will use one of its elements, which is the **onChange** function. 
 
 {{% alert color="info" %}}
-For more information on this component go to the details of [TextInput](../../../../../ui/input). 
+For more information on this component go to the details of [TextInput](../../../../../ui/textinput). 
 {{% /alert %}}
 
 #### OnChange 

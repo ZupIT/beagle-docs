@@ -89,7 +89,7 @@ When you create a Design System class, it's necessary to have, at least, one the
 
 ### Step 2: **Create a theme**
 
-The next step is create a theme component so our Beagle's application can use when renders our [**server-driven screens.**](../../../../../principais-conceitos#server-driven-ui) 
+The next step is create a theme component so our Beagle's application can use when renders our [**server-driven screens.**](../../../../../key-concepts#server-driven-ui) 
 
 1. First, let's register three colors on the color file on Android. 
 
@@ -150,7 +150,7 @@ override fun theme(): Int = R.style.AppThemeServerDriven
 
 ### **Step 3: Customize a component**
 
-This is the moment that occurs the [**BFF**](../../../../principais-conceitos#backend-for-frontend), when frontend connects to backend.   
+This is the moment that occurs the [**BFF**](../../../../key-concepts#backend-for-frontend), when frontend connects to backend.   
   
 To do so, you'll have to **configure Android's frontend and Intellij's backend**. In case you haven't this configuration done, just follow the [**backend's configuration**](https://github.com/ZupIT/beagle-examples) and run it.   
   
