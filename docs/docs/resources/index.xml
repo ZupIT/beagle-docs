@@ -35,7 +35,7 @@
 &lt;p&gt;The entries on this cache layer has time duration defined by cache general configurations of each client&amp;rsquo;s platform.&lt;/p&gt;
 &lt;p&gt;You can check out how to &lt;strong&gt;configure the cache&lt;/strong&gt; according to your frontend&amp;rsquo;s platform on the following links:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;ho-to-configure-cache&#34;&gt;&lt;strong&gt;Configuring Cache&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;how-to-configure-cache&#34;&gt;&lt;strong&gt;Configuring Cache&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;persistent-cache&#34;&gt;Persistent cache&lt;/h3&gt;
 &lt;p&gt;On this cache layer, there are two types of localization:&lt;/p&gt;
@@ -655,7 +655,7 @@ class ViewController: UIViewController &lt;span style=&#34;color:#ce5c00;font-we
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Before configuring the navigation between screens of your application, it is required you have &lt;a href=&#34;../../../get-started/installing-beagle/&#34;&gt;&lt;strong&gt;installed Beagle&lt;/strong&gt;&lt;/a&gt;, checked the &lt;a href=&#34;../../../get-started/using-beagle/&#34;&gt;&lt;strong&gt;use configuration&lt;/strong&gt;&lt;/a&gt; and tested Beagle&amp;rsquo;s framework on the &lt;a href=&#34;../../../displaying-a-screen#displaying-a-server-driven-screen&#34;&gt;&lt;strong&gt;displaying a server-driven screen tutorial&lt;/strong&gt;&lt;/a&gt;
+Before configuring the navigation between screens of your application, it is required you have &lt;a href=&#34;../../../get-started/installing-beagle/&#34;&gt;&lt;strong&gt;installed Beagle&lt;/strong&gt;&lt;/a&gt;, checked the &lt;a href=&#34;../../../get-started/using-beagle/&#34;&gt;&lt;strong&gt;use configuration&lt;/strong&gt;&lt;/a&gt; and tested Beagle&amp;rsquo;s framework on the &lt;a href=&#34;../../../how-to-display-a-screen#displaying-a-server-driven-screen&#34;&gt;&lt;strong&gt;displaying a server-driven screen tutorial&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;p&gt;After these configuration, just add the example code as a return of you service and call the endpoint, defining in your controller,  in your frontend.&lt;/p&gt;

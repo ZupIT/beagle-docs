@@ -27,7 +27,7 @@
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 
-This component is &lt;strong&gt;deprecated&lt;/strong&gt;! It is recomended to use &lt;a href=&#34;simple-form-web&#34;&gt;&lt;strong&gt;Simple Form&lt;/strong&gt;&lt;/a&gt;.
+This component is &lt;strong&gt;deprecated&lt;/strong&gt;! It is recomended to use &lt;a href=&#34;simple-form&#34;&gt;&lt;strong&gt;Simple Form&lt;/strong&gt;&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;p&gt;The component represents a way to build user input and send these values to your backend.&lt;/p&gt;
@@ -167,7 +167,7 @@ This component is &lt;strong&gt;deprecated&lt;/strong&gt;! It is recomended to u
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-For more information on this component go to the details of &lt;a href=&#34;../../../../../ui/input&#34;&gt;TextInput&lt;/a&gt;.
+For more information on this component go to the details of &lt;a href=&#34;../../../../../ui/textinput&#34;&gt;TextInput&lt;/a&gt;.
 &lt;/div&gt;
 
 &lt;h4 id=&#34;onchange&#34;&gt;OnChange&lt;/h4&gt;

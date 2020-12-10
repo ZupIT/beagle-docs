@@ -44,7 +44,7 @@ The features described here are only available in versions 1.2.0 and above.
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;_beagleComponent_&lt;/code&gt; is the name of the UI component to render.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;id&lt;/code&gt; is a unique identifier for the node. Observation: although the &lt;code&gt;id&lt;/code&gt; is required by the internal tree structure, before processing the tree, Beagle assigns random unique ids for each node without an id, making it optional in the json provided by the backend.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;context&lt;/code&gt; is a &lt;a href=&#34;../../../../../comunication-between-components-and-context&#34;&gt;&lt;strong&gt;context&lt;/strong&gt;&lt;/a&gt; defined for the component and its children.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;context&lt;/code&gt; is a &lt;a href=&#34;../../../../../how-to-make-comunication-between-components&#34;&gt;&lt;strong&gt;context&lt;/strong&gt;&lt;/a&gt; defined for the component and its children.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;children&lt;/code&gt; is an array of nodes representing the children of the current node.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;style&lt;/code&gt; is the stylization rules for the component. These rules are not CSS, instead it&amp;rsquo;s a &lt;a href=&#34;https://docs.usebeagle.io/resources/estilizacao/web#stylizing-components-through-json&#34;&gt;&lt;strong&gt;structure defined by Beagle&lt;/strong&gt;&lt;/a&gt;;&lt;/li&gt;
 &lt;li&gt;Additionally, a node has every property expected by the component itself, a text component could have &lt;code&gt;text&lt;/code&gt; and &lt;code&gt;justify&lt;/code&gt;, while a button could have &lt;code&gt;onPress&lt;/code&gt;, &lt;code&gt;text&lt;/code&gt; and &lt;code&gt;disabled&lt;/code&gt;.&lt;/li&gt;
@@ -268,14 +268,14 @@ beagleView.fetch({ path: &amp;#39;/my-lazy-container&amp;#39; }, &amp;#39;lazy&a
         &lt;/p&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;function&lt;/td&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;the-beagle-view-1#subscribing-to-events&#34;&gt;&lt;b&gt;subscribes to errors&lt;/b&gt;&lt;/a&gt;&lt;b&gt;. &lt;/b&gt;Receives
+      &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;the-beagle-view#subscribing-to-events&#34;&gt;&lt;b&gt;subscribes to errors&lt;/b&gt;&lt;/a&gt;&lt;b&gt;. &lt;/b&gt;Receives
         the listener and returns a function to remove the listener.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;&lt;b&gt;fetch&lt;/b&gt;
       &lt;/td&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;function&lt;/td&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;the-beagle-view-1#fetching-a-view&#34;&gt;&lt;b&gt;fetches a view from the backend&lt;/b&gt;&lt;/a&gt;&lt;b&gt; &lt;/b&gt;and
+      &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;the-beagle-view#fetching-a-view&#34;&gt;&lt;b&gt;fetches a view from the backend&lt;/b&gt;&lt;/a&gt;&lt;b&gt; &lt;/b&gt;and
         uses it to update the current tree.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;

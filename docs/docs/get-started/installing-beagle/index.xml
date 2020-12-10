@@ -83,7 +83,7 @@ Remember to always check if you&amp;rsquo;re using the latest version of Beagle.
 &lt;p&gt;On this section, you made Beagle&amp;rsquo;s &lt;strong&gt;initial installation&lt;/strong&gt; on your application!&lt;br&gt;
 To keep configuring Beagle:&lt;/p&gt;
 &lt;p&gt;👉Go to&lt;a href=&#34;../using-beagle/android&#34;&gt; &lt;strong&gt;initial configurations&lt;/strong&gt;&lt;/a&gt; to enable the use of Beagle on your Android project.&lt;/p&gt;
-&lt;p&gt;👉 If you want to go straight to practice, access our &lt;a href=&#34;../../new-project/case-android/&#34;&gt;&lt;strong&gt;tutorial to create a project from zero&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;👉 If you want to go straight to practice, access our &lt;a href=&#34;../../creating-a-project-from-scratch/case-android/&#34;&gt;&lt;strong&gt;tutorial to create a project from zero&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
@@ -152,7 +152,7 @@ After an important release, we&amp;rsquo;ll probably lauch versions with specifi
 &lt;p&gt;On this section, you made Beagle&amp;rsquo;s &lt;strong&gt;initial installation&lt;/strong&gt; on your application!&lt;br&gt;
 To keep configuring Beagle:&lt;/p&gt;
 &lt;p&gt;👉To keep knowing Beagle and test if everything worked with the installation, go to &lt;strong&gt;initial configurations&lt;/strong&gt; and &lt;a href=&#34;../../../using-beagle/ios#how-to-display-a-hello-beagle-screen&#34;&gt;&lt;strong&gt;create your first Hello World!&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;👉  If you want to go straight to practice, access our &lt;a href=&#34;../../new-project/case-ios/&#34;&gt;&lt;strong&gt;tutorial to create a project from zero&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;👉  If you want to go straight to practice, access our &lt;a href=&#34;../../creating-a-project-from-scratch/case-ios/&#34;&gt;&lt;strong&gt;tutorial to create a project from zero&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -213,7 +213,7 @@ Well done! Your library was installed. Now, you can see more of &lt;a href=&#34;
 &lt;p&gt;On this section, you made Beagle&amp;rsquo;s &lt;strong&gt;initial installation&lt;/strong&gt; on your application!&lt;br&gt;
 To keep configuring Beagle:&lt;/p&gt;
 &lt;p&gt;👉Go to &lt;a href=&#34;../../../using-beagle/web/&#34;&gt;&lt;strong&gt;initial configurations&lt;/strong&gt; &lt;/a&gt;to enable the use of Beagle on your Web project.&lt;/p&gt;
-&lt;p&gt;👉 If you want to go straight to practice, access our &lt;a href=&#34;../../new-project/case-web&#34;&gt;&lt;strong&gt;tutorial to create a projeto from zero&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;👉 If you want to go straight to practice, access our &lt;a href=&#34;../../creating-a-project-from-scratch/case-web&#34;&gt;&lt;strong&gt;tutorial to create a projeto from zero&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -255,7 +255,7 @@ To keep configuring Beagle:&lt;/p&gt;
 If your team works with micro-services using a framework other than Spring or Micronaut, see &lt;a href=&#34;../../../../../../../resources/customization/beagle-for-backend/&#34;&gt;&lt;strong&gt;Beagle Framework&lt;/strong&gt;&lt;/a&gt; instead.
 &lt;/div&gt;
 
-&lt;p&gt;For a simple setup, you can choose between 2 frameworks to create your &lt;a href=&#34;../../../../../../principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;For a simple setup, you can choose between 2 frameworks to create your &lt;a href=&#34;../../../../../../key-concepts#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
 &lt;h4 id=&#34;micronauthttpsmicronautio&#34;&gt;&lt;a href=&#34;https://micronaut.io/&#34;&gt;Micronaut&lt;/a&gt;&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;p&gt;A modern, JVM-based, full-stack framework for building modular, easily testable micro-service and serverless applications.&lt;/p&gt;
@@ -380,7 +380,7 @@ Well done, your initial configuration is ready to be used!
 &lt;p&gt;On this section, you made Beagle&amp;rsquo;s &lt;strong&gt;initial installation&lt;/strong&gt; on your application!&lt;br&gt;
 To keep configuring Beagle:&lt;/p&gt;
 &lt;p&gt;👉Go to &lt;a href=&#34;../using-beagle/backend&#34;&gt;&lt;strong&gt;initial configurations&lt;/strong&gt;&lt;/a&gt; to enable the use of Beagle on your Web project.&lt;/p&gt;
-&lt;p&gt;👉 If you want to go straight to practice, access our &lt;a href=&#34;../../new-project/exemplo-de-projeto-backend-com-beagle&#34;&gt;&lt;strong&gt;tutorial to create a projeto from zero&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;👉 If you want to go straight to practice, access our &lt;a href=&#34;../../creating-a-project-from-scratch/case-backend&#34;&gt;&lt;strong&gt;tutorial to create a projeto from zero&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>

@@ -329,7 +329,9 @@ const analyticsHandler = {
 &lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t132&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t132-0&#34; role=&#34;tab&#34; aria-controls=&#34;t132-0&#34; aria-selected=&#34;true&#34;&gt;Layout&lt;/a&gt;&lt;/li&gt;
 	  
 		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t132-1&#34; role=&#34;tab&#34; aria-controls=&#34;t132-1&#34;&gt;Formulários&lt;/a&gt;&lt;/li&gt;
-		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t132-2&#34; role=&#34;tab&#34; aria-controls=&#34;t132-2&#34;&gt;UI&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t132-2&#34; role=&#34;tab&#34; aria-controls=&#34;t132-2&#34;&gt;Lazy&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t132-3&#34; role=&#34;tab&#34; aria-controls=&#34;t132-3&#34;&gt;UI&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t132-4&#34; role=&#34;tab&#34; aria-controls=&#34;t132-4&#34;&gt;Touchable&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 &lt;div class=&#34;tab-content&#34; id=&#34;t132&#34;&gt;&lt;div id=&#34;t132-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t132-0&#34;&gt;
 
 &lt;p&gt;&lt;ul&gt;
@@ -351,12 +353,24 @@ const analyticsHandler = {
   &lt;div id=&#34;t132-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t132-2&#34;&gt;
 
 &lt;p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;lazy&#34;&gt;Lazy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t132-3&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t132-3&#34;&gt;
+
+&lt;p&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;ui/button&#34;&gt;&lt;strong&gt;Button&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;ui/image/&#34;&gt;&lt;strong&gt;Image&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;ui/tab-bar&#34;&gt;&lt;strong&gt;Tab Bar&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;ui/tabview&#34;&gt;&lt;strong&gt;Tab View&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;ui/text&#34;&gt;&lt;strong&gt;Text&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;ui/webview&#34;&gt;&lt;strong&gt;Web View&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t132-4&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t132-4&#34;&gt;
+
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;touchable&#34;&gt;Touchable&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;&lt;/div&gt;
 

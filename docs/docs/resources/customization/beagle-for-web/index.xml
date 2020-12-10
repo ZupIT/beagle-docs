@@ -809,10 +809,10 @@ const params: LoadParams = {
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;customActions&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;Map&amp;lt;string,&lt;a href=&#34;../../beagle-for-android/custom-action-handler/&#34;&gt;&lt;strong&gt;ActionHandler&lt;/strong&gt;&lt;/a&gt;&amp;gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Map&amp;lt;string,&lt;a href=&#34;../../beagle-for-android/custom-action/&#34;&gt;&lt;strong&gt;ActionHandler&lt;/strong&gt;&lt;/a&gt;&amp;gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;&lt;/td&gt;
-&lt;td style=&#34;text-align:left&#34;&gt;A customized action map that can be interpreted by Beagle&amp;rsquo;s library. It is a key and value map where the key will always be an identifier starting by &lt;code&gt;beagle:&lt;/code&gt; or &lt;code&gt;custom:&lt;/code&gt; and the value will be the &lt;a href=&#34;../beagle-for-android/custom-action-handler/&#34;&gt;&lt;strong&gt;ActionHandler&lt;/strong&gt;&lt;/a&gt; connected to that action.&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;A customized action map that can be interpreted by Beagle&amp;rsquo;s library. It is a key and value map where the key will always be an identifier starting by &lt;code&gt;beagle:&lt;/code&gt; or &lt;code&gt;custom:&lt;/code&gt; and the value will be the &lt;a href=&#34;../beagle-for-android/custom-action/&#34;&gt;&lt;strong&gt;ActionHandler&lt;/strong&gt;&lt;/a&gt; connected to that action.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td style=&#34;text-align:left&#34;&gt;lifecycles&lt;/td&gt;

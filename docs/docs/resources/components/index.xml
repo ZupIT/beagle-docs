@@ -159,7 +159,7 @@ ComposedComponent doesn&amp;rsquo;t have a functionality, it is a backend exclus
 &lt;h2 id=&#34;beagles-components-with-context&#34;&gt;Beagle&amp;rsquo;s components with context:&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;../../../../../../../../api/components/layout/container&#34;&gt;&lt;strong&gt;Container&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../../../../../../api/components/form/simple-form-web&#34;&gt;&lt;strong&gt;SimpleForm&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../../../../api/components/form/simple-form&#34;&gt;&lt;strong&gt;SimpleForm&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../../../../../../api/components/layout/pageview&#34;&gt;&lt;strong&gt;PageView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../../../../../api/components/layout/scrollview&#34;&gt;&lt;strong&gt;ScrollView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../../../../api/components/ui/tabview&#34;&gt;&lt;strong&gt;TabView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
@@ -197,7 +197,7 @@ ComposedComponent doesn&amp;rsquo;t have a functionality, it is a backend exclus
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 
-If you want to create customized components on iOS, it is necessary to register it. See &lt;a href=&#34;../../customization/beagle-for-android/how-to-make-custom-widgets/&#34;&gt;&lt;strong&gt;how to do it here&lt;/strong&gt;&lt;/a&gt;
+If you want to create customized components on iOS, it is necessary to register it. See &lt;a href=&#34;../../customization/beagle-for-android/custom-widgets/&#34;&gt;&lt;strong&gt;how to do it here&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 

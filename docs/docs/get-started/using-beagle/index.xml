@@ -542,7 +542,7 @@ Well done, you created your first screen with Beagle!
 &lt;p&gt;This tutorial focused in a simple screen configuration, so you could understand the process and without worrying about screens&#39; hierarchy.&lt;/p&gt;
 &lt;h2 id=&#34;additional-information&#34;&gt;Additional Information&lt;/h2&gt;
 &lt;p&gt;Before you use Beagle, stay tuned about: the &lt;strong&gt;release build configuration and ProGuard.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Even though it&amp;rsquo;s not necessary at this moment, it&amp;rsquo;s good to have in mind that you&amp;rsquo;ll have to &lt;a href=&#34;../../../resources/customization/beagle-for-android/proguard&#34;&gt;&lt;strong&gt;configure the ProGuard&lt;/strong&gt;&lt;/a&gt; to activate the obfuscate code when you publish releases.&lt;/p&gt;
+&lt;p&gt;Even though it&amp;rsquo;s not necessary at this moment, it&amp;rsquo;s good to have in mind that you&amp;rsquo;ll have to &lt;a href=&#34;../../../resources/customization/beagle-for-android/proguard-configuration&#34;&gt;&lt;strong&gt;configure the ProGuard&lt;/strong&gt;&lt;/a&gt; to activate the obfuscate code when you publish releases.&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
@@ -576,7 +576,7 @@ Check out how to &lt;a href=&#34;../../../../installing-beagle/ios&#34;&gt;&lt;s
 &lt;p&gt;Currently, there are two types of approaches to render screens with Beagle: &lt;strong&gt;remote&lt;/strong&gt; and &lt;strong&gt;declarative.&lt;/strong&gt;&lt;/p&gt;
 &lt;h4 id=&#34;remote-renderization&#34;&gt;Remot&lt;strong&gt;e&lt;/strong&gt; Renderization&lt;/h4&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Main approach used on Beagle because it&amp;rsquo;s based on &lt;a href=&#34;../../../../principais-conceitos#server-driven-ui&#34;&gt;&lt;strong&gt;server-driven UI&lt;/strong&gt;&lt;/a&gt; concept. It allows you to build layouts dynamically, consuming the informations provided by a &lt;a href=&#34;../../../../principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt; through a remote URL.&lt;/p&gt;
+&lt;p&gt;Main approach used on Beagle because it&amp;rsquo;s based on &lt;a href=&#34;../../../../key-concepts#server-driven-ui&#34;&gt;&lt;strong&gt;server-driven UI&lt;/strong&gt;&lt;/a&gt; concept. It allows you to build layouts dynamically, consuming the informations provided by a &lt;a href=&#34;../../../../key-concepts#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt; through a remote URL.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;declarative-renderization&#34;&gt;Declarative Renderization&lt;/h4&gt;
 &lt;blockquote&gt;
@@ -618,7 +618,7 @@ Notice that the &lt;strong&gt;&lt;code&gt;Screen&lt;/code&gt;&lt;/strong&gt; is 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-In case you want to use the **&lt;code&gt;remote&lt;/code&gt;**type, check out &lt;a href=&#34;../../../displaying-a-screen&#34;&gt;&lt;strong&gt;how to display a server-driven screen.&lt;/strong&gt;&lt;/a&gt;
+In case you want to use the **&lt;code&gt;remote&lt;/code&gt;**type, check out &lt;a href=&#34;../../../how-to-display-a-screen&#34;&gt;&lt;strong&gt;how to display a server-driven screen.&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Once you made it, you just have to present it as you wish.&lt;/p&gt;

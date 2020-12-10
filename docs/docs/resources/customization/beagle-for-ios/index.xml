@@ -694,7 +694,7 @@ Make the&lt;code&gt;navigationControllerType&lt;/code&gt; configuration with oth
 &lt;p&gt;&lt;strong&gt;Errors on a request&lt;/strong&gt; (&lt;code&gt;Request.Error&lt;/code&gt;):&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;urlBuilderError&lt;/code&gt;: When the resource URL or a &lt;a href=&#34;beagledependencies#baseurl&#34;&gt;&lt;strong&gt;&lt;code&gt;baseURL&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt; is invalid.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;networkError&lt;/code&gt;: When it&amp;rsquo;s not possible to establish a connection or an error was returned from the &lt;a href=&#34;../../../../principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;networkError&lt;/code&gt;: When it&amp;rsquo;s not possible to establish a connection or an error was returned from the &lt;a href=&#34;../../../../key-concepts#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;decoding&lt;/code&gt;: When the answer sent from BFF is different than the object expected.&lt;/li&gt;
 &lt;/ul&gt;
 

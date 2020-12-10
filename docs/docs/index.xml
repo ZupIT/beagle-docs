@@ -61,9 +61,9 @@ The main gain Beagle gives you is to allow teams to make &lt;strong&gt;layout an
 &lt;li&gt;&lt;code&gt;&amp;lt;=x.y.z&lt;/code&gt;: existing definition until the x.y.z version.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;how-does-beagle-works&#34;&gt;How does Beagle works?&lt;/h2&gt;
-&lt;p&gt;The tool works as a facilitator of &lt;strong&gt;BFF&lt;/strong&gt; (&lt;a href=&#34;principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;Backend For Frontend&lt;/strong&gt;&lt;/a&gt;). This means that Beagle, from a library of components defined in the &lt;a href=&#34;principais-conceitos#design-system&#34;&gt;&lt;strong&gt;Design System&lt;/strong&gt;&lt;/a&gt; of the Android, iOS or Web application, makes the visual and behavioral change of them by returning a JSON file that indicates what and where each component should be rendered and which the action they are going to perform.&lt;/p&gt;
+&lt;p&gt;The tool works as a facilitator of &lt;strong&gt;BFF&lt;/strong&gt; (&lt;a href=&#34;key-concepts#backend-for-frontend&#34;&gt;&lt;strong&gt;Backend For Frontend&lt;/strong&gt;&lt;/a&gt;). This means that Beagle, from a library of components defined in the &lt;a href=&#34;key-concepts#design-system&#34;&gt;&lt;strong&gt;Design System&lt;/strong&gt;&lt;/a&gt; of the Android, iOS or Web application, makes the visual and behavioral change of them by returning a JSON file that indicates what and where each component should be rendered and which the action they are going to perform.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/beaglemobileback.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;The reason Beagle is able to make this change from the frontend from the backend is because its architecture is structured in &lt;a href=&#34;principais-conceitos#server-driven-ui&#34;&gt;&lt;strong&gt;Server-Driven UI&lt;/strong&gt;&lt;/a&gt;, where BFF constructs the data, components and actions present on the screen declaratively and forwards them in JSON format , while the front deserializes it, renders the visual components natively in addition to executing and assigning the actions present in each of them.&lt;/p&gt;
+&lt;p&gt;The reason Beagle is able to make this change from the frontend from the backend is because its architecture is structured in &lt;a href=&#34;key-concepts#server-driven-ui&#34;&gt;&lt;strong&gt;Server-Driven UI&lt;/strong&gt;&lt;/a&gt;, where BFF constructs the data, components and actions present on the screen declaratively and forwards them in JSON format , while the front deserializes it, renders the visual components natively in addition to executing and assigning the actions present in each of them.&lt;/p&gt;
 &lt;h3 id=&#34;beagles-pillars&#34;&gt;Beagle&amp;rsquo;s Pillars&lt;/h3&gt;
 &lt;p&gt;Considering that it&amp;rsquo;s a tool based on Server-Driven, the JSON objects configured to run your application can be organized in 3 basic pillars:&lt;/p&gt;
 &lt;ul&gt;
@@ -111,7 +111,7 @@ Beagle was created to &lt;strong&gt;optimize time and resources&lt;/strong&gt; f
 &lt;p&gt;It is the structure that contains all the standard components and properties for a product or service. In development, it is essential that the Design System repository keep component styles, resources and themes of that application in one place.&lt;/p&gt;
 &lt;p&gt;In order for Beagle to work with the Design System of your application, it is necessary to have all of these styles implemented so that they can be viewed the moment the files are rendered.&lt;/p&gt;
 &lt;h3 id=&#34;layout-engine&#34;&gt;&lt;strong&gt;Layout Engine&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Tool that takes care of &lt;strong&gt;rendering the native visual elements&lt;/strong&gt; of an application. When Beagle deserializes the information contained in JSON, the layout engine comes into play by rendering the components generated based on the Design System of the application. Beagle uses &lt;a href=&#34;https://www.yogalayout.com&#34;&gt;&lt;strong&gt;Yoga Layout&lt;/strong&gt;&lt;/a&gt; to natively render components on Android and iOS platforms and build their respective layouts using &lt;a href=&#34;resources/component-layout/&#34;&gt;&lt;strong&gt;Flexbox&lt;/strong&gt;&lt;/a&gt; concepts.&lt;/p&gt;
+&lt;p&gt;Tool that takes care of &lt;strong&gt;rendering the native visual elements&lt;/strong&gt; of an application. When Beagle deserializes the information contained in JSON, the layout engine comes into play by rendering the components generated based on the Design System of the application. Beagle uses &lt;a href=&#34;https://www.yogalayout.com&#34;&gt;&lt;strong&gt;Yoga Layout&lt;/strong&gt;&lt;/a&gt; to natively render components on Android and iOS platforms and build their respective layouts using &lt;a href=&#34;resources/components-positioning/&#34;&gt;&lt;strong&gt;Flexbox&lt;/strong&gt;&lt;/a&gt; concepts.&lt;/p&gt;
 &lt;h3 id=&#34;server-driven-ui&#34;&gt;&lt;strong&gt;Server-Driven UI&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;It is the concept in which a specific backend (BFF) &lt;strong&gt;consumes the application data&lt;/strong&gt; and supplies it to the frontend together with their respective &lt;strong&gt;visual structures&lt;/strong&gt; through one or more JSONs, that is, it not only informs the content of the screen, but also its structure , in addition to the flow of these pages if any.&lt;/p&gt;
 
@@ -188,7 +188,7 @@ Remember to always check if you&amp;rsquo;re using the latest version of Beagle.
 &lt;p&gt;On this section, you made Beagle&amp;rsquo;s &lt;strong&gt;initial installation&lt;/strong&gt; on your application!&lt;br&gt;
 To keep configuring Beagle:&lt;/p&gt;
 &lt;p&gt;👉Go to&lt;a href=&#34;../using-beagle/android&#34;&gt; &lt;strong&gt;initial configurations&lt;/strong&gt;&lt;/a&gt; to enable the use of Beagle on your Android project.&lt;/p&gt;
-&lt;p&gt;👉 If you want to go straight to practice, access our &lt;a href=&#34;../../new-project/case-android/&#34;&gt;&lt;strong&gt;tutorial to create a project from zero&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;👉 If you want to go straight to practice, access our &lt;a href=&#34;../../creating-a-project-from-scratch/case-android/&#34;&gt;&lt;strong&gt;tutorial to create a project from zero&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
@@ -257,7 +257,7 @@ After an important release, we&amp;rsquo;ll probably lauch versions with specifi
 &lt;p&gt;On this section, you made Beagle&amp;rsquo;s &lt;strong&gt;initial installation&lt;/strong&gt; on your application!&lt;br&gt;
 To keep configuring Beagle:&lt;/p&gt;
 &lt;p&gt;👉To keep knowing Beagle and test if everything worked with the installation, go to &lt;strong&gt;initial configurations&lt;/strong&gt; and &lt;a href=&#34;../../../using-beagle/ios#how-to-display-a-hello-beagle-screen&#34;&gt;&lt;strong&gt;create your first Hello World!&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;👉  If you want to go straight to practice, access our &lt;a href=&#34;../../new-project/case-ios/&#34;&gt;&lt;strong&gt;tutorial to create a project from zero&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;👉  If you want to go straight to practice, access our &lt;a href=&#34;../../creating-a-project-from-scratch/case-ios/&#34;&gt;&lt;strong&gt;tutorial to create a project from zero&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -318,7 +318,7 @@ Well done! Your library was installed. Now, you can see more of &lt;a href=&#34;
 &lt;p&gt;On this section, you made Beagle&amp;rsquo;s &lt;strong&gt;initial installation&lt;/strong&gt; on your application!&lt;br&gt;
 To keep configuring Beagle:&lt;/p&gt;
 &lt;p&gt;👉Go to &lt;a href=&#34;../../../using-beagle/web/&#34;&gt;&lt;strong&gt;initial configurations&lt;/strong&gt; &lt;/a&gt;to enable the use of Beagle on your Web project.&lt;/p&gt;
-&lt;p&gt;👉 If you want to go straight to practice, access our &lt;a href=&#34;../../new-project/case-web&#34;&gt;&lt;strong&gt;tutorial to create a projeto from zero&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;👉 If you want to go straight to practice, access our &lt;a href=&#34;../../creating-a-project-from-scratch/case-web&#34;&gt;&lt;strong&gt;tutorial to create a projeto from zero&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -360,7 +360,7 @@ To keep configuring Beagle:&lt;/p&gt;
 If your team works with micro-services using a framework other than Spring or Micronaut, see &lt;a href=&#34;../../../../../../../resources/customization/beagle-for-backend/&#34;&gt;&lt;strong&gt;Beagle Framework&lt;/strong&gt;&lt;/a&gt; instead.
 &lt;/div&gt;
 
-&lt;p&gt;For a simple setup, you can choose between 2 frameworks to create your &lt;a href=&#34;../../../../../../principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;For a simple setup, you can choose between 2 frameworks to create your &lt;a href=&#34;../../../../../../key-concepts#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
 &lt;h4 id=&#34;micronauthttpsmicronautio&#34;&gt;&lt;a href=&#34;https://micronaut.io/&#34;&gt;Micronaut&lt;/a&gt;&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;p&gt;A modern, JVM-based, full-stack framework for building modular, easily testable micro-service and serverless applications.&lt;/p&gt;
@@ -485,7 +485,7 @@ Well done, your initial configuration is ready to be used!
 &lt;p&gt;On this section, you made Beagle&amp;rsquo;s &lt;strong&gt;initial installation&lt;/strong&gt; on your application!&lt;br&gt;
 To keep configuring Beagle:&lt;/p&gt;
 &lt;p&gt;👉Go to &lt;a href=&#34;../using-beagle/backend&#34;&gt;&lt;strong&gt;initial configurations&lt;/strong&gt;&lt;/a&gt; to enable the use of Beagle on your Web project.&lt;/p&gt;
-&lt;p&gt;👉 If you want to go straight to practice, access our &lt;a href=&#34;../../new-project/exemplo-de-projeto-backend-com-beagle&#34;&gt;&lt;strong&gt;tutorial to create a projeto from zero&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;👉 If you want to go straight to practice, access our &lt;a href=&#34;../../creating-a-project-from-scratch/case-backend&#34;&gt;&lt;strong&gt;tutorial to create a projeto from zero&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -1019,7 +1019,7 @@ Well done, you created your first screen with Beagle!
 &lt;p&gt;This tutorial focused in a simple screen configuration, so you could understand the process and without worrying about screens&#39; hierarchy.&lt;/p&gt;
 &lt;h2 id=&#34;additional-information&#34;&gt;Additional Information&lt;/h2&gt;
 &lt;p&gt;Before you use Beagle, stay tuned about: the &lt;strong&gt;release build configuration and ProGuard.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Even though it&amp;rsquo;s not necessary at this moment, it&amp;rsquo;s good to have in mind that you&amp;rsquo;ll have to &lt;a href=&#34;../../../resources/customization/beagle-for-android/proguard&#34;&gt;&lt;strong&gt;configure the ProGuard&lt;/strong&gt;&lt;/a&gt; to activate the obfuscate code when you publish releases.&lt;/p&gt;
+&lt;p&gt;Even though it&amp;rsquo;s not necessary at this moment, it&amp;rsquo;s good to have in mind that you&amp;rsquo;ll have to &lt;a href=&#34;../../../resources/customization/beagle-for-android/proguard-configuration&#34;&gt;&lt;strong&gt;configure the ProGuard&lt;/strong&gt;&lt;/a&gt; to activate the obfuscate code when you publish releases.&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
@@ -1053,7 +1053,7 @@ Check out how to &lt;a href=&#34;../../../../installing-beagle/ios&#34;&gt;&lt;s
 &lt;p&gt;Currently, there are two types of approaches to render screens with Beagle: &lt;strong&gt;remote&lt;/strong&gt; and &lt;strong&gt;declarative.&lt;/strong&gt;&lt;/p&gt;
 &lt;h4 id=&#34;remote-renderization&#34;&gt;Remot&lt;strong&gt;e&lt;/strong&gt; Renderization&lt;/h4&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Main approach used on Beagle because it&amp;rsquo;s based on &lt;a href=&#34;../../../../principais-conceitos#server-driven-ui&#34;&gt;&lt;strong&gt;server-driven UI&lt;/strong&gt;&lt;/a&gt; concept. It allows you to build layouts dynamically, consuming the informations provided by a &lt;a href=&#34;../../../../principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt; through a remote URL.&lt;/p&gt;
+&lt;p&gt;Main approach used on Beagle because it&amp;rsquo;s based on &lt;a href=&#34;../../../../key-concepts#server-driven-ui&#34;&gt;&lt;strong&gt;server-driven UI&lt;/strong&gt;&lt;/a&gt; concept. It allows you to build layouts dynamically, consuming the informations provided by a &lt;a href=&#34;../../../../key-concepts#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt; through a remote URL.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;declarative-renderization&#34;&gt;Declarative Renderization&lt;/h4&gt;
 &lt;blockquote&gt;
@@ -1095,7 +1095,7 @@ Notice that the &lt;strong&gt;&lt;code&gt;Screen&lt;/code&gt;&lt;/strong&gt; is 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-In case you want to use the **&lt;code&gt;remote&lt;/code&gt;**type, check out &lt;a href=&#34;../../../displaying-a-screen&#34;&gt;&lt;strong&gt;how to display a server-driven screen.&lt;/strong&gt;&lt;/a&gt;
+In case you want to use the **&lt;code&gt;remote&lt;/code&gt;**type, check out &lt;a href=&#34;../../../how-to-display-a-screen&#34;&gt;&lt;strong&gt;how to display a server-driven screen.&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Once you made it, you just have to present it as you wish.&lt;/p&gt;
@@ -1661,10 +1661,10 @@ Use a permissive configuration like this one, only in local development environm
     
     <item>
       <title>Docs: Design System with Beagle Android</title>
-      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/android/design-system-with-beagle-android/</link>
+      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-android/design-system-with-beagle-android/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/android/design-system-with-beagle-android/</guid>
+      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-android/design-system-with-beagle-android/</guid>
       <description>
         
         
@@ -1725,7 +1725,7 @@ Just remember that the design system we&amp;rsquo;re about to create is part of 
 &lt;/ol&gt;
 &lt;p&gt;When you create a Design System class, it&amp;rsquo;s necessary to have, at least, one theme method stated. The other methods can be left without implementation, as you can see in the image above.&lt;/p&gt;
 &lt;h3 id=&#34;step-2-create-a-theme&#34;&gt;Step 2: &lt;strong&gt;Create a theme&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;The next step is create a theme component so our Beagle&amp;rsquo;s application can use when renders our &lt;a href=&#34;../../../../../principais-conceitos#server-driven-ui&#34;&gt;&lt;strong&gt;server-driven screens.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The next step is create a theme component so our Beagle&amp;rsquo;s application can use when renders our &lt;a href=&#34;../../../../../key-concepts#server-driven-ui&#34;&gt;&lt;strong&gt;server-driven screens.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;First, let&amp;rsquo;s register three colors on the color file on Android.&lt;/li&gt;
 &lt;/ol&gt;
@@ -1768,7 +1768,7 @@ In case you have closed the file, you can find it inside the values package. You
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;override fun theme(): Int = R.style.AppThemeServerDriven
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;step-3-customize-a-component&#34;&gt;&lt;strong&gt;Step 3: Customize a component&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;This is the moment that occurs the &lt;a href=&#34;../../../../principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;, when frontend connects to backend.&lt;/p&gt;
+&lt;p&gt;This is the moment that occurs the &lt;a href=&#34;../../../../key-concepts#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;, when frontend connects to backend.&lt;/p&gt;
 &lt;p&gt;To do so, you&amp;rsquo;ll have to &lt;strong&gt;configure Android&amp;rsquo;s frontend and Intellij&amp;rsquo;s backend&lt;/strong&gt;. In case you haven&amp;rsquo;t this configuration done, just follow the &lt;a href=&#34;https://github.com/ZupIT/beagle-examples&#34;&gt;&lt;strong&gt;backend&amp;rsquo;s configuration&lt;/strong&gt;&lt;/a&gt; and run it.&lt;/p&gt;
 &lt;p&gt;For our backend here, we created a server-driven page with 2 texts: 1 title and 1 paragraph. It should be like this when rendered on frontend:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://lh4.googleusercontent.com/Rms7sJWr8_BXtHuaxpxtJwQly1O7qBX79AqhSlrj9TSjTqD_7eqFyavstkbgwQO3BVjoGeVV7W53KTVxUkonTD7R6wYBVhWWqa_tfwDaFBw8AVPu-KLQLcZ0H3A8UDK-X_9JMKyr&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -1908,10 +1908,10 @@ If you have any trouble on making this configuration, check out &lt;a href=&#34;
     
     <item>
       <title>Docs: Defining styles on Beagle ios</title>
-      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/ios/defining-styles-on-beagle-ios/</link>
+      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-ios/defining-styles-on-beagle-ios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/ios/defining-styles-on-beagle-ios/</guid>
+      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-ios/defining-styles-on-beagle-ios/</guid>
       <description>
         
         
@@ -1939,7 +1939,7 @@ If you have any trouble on making this configuration, check out &lt;a href=&#34;
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;struct&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Styles&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
 
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This &lt;code&gt;struct&lt;/code&gt; will contain all the styles Beagle will access. Here, it will be listed the logic that allows Beagle to apply defined styles on iOS into a &lt;a href=&#34;../../../../principais-conceitos#server-driven-ui&#34;&gt;&lt;strong&gt;server-driven screen&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This &lt;code&gt;struct&lt;/code&gt; will contain all the styles Beagle will access. Here, it will be listed the logic that allows Beagle to apply defined styles on iOS into a &lt;a href=&#34;../../../../key-concepts#server-driven-ui&#34;&gt;&lt;strong&gt;server-driven screen&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;step-2-create-a-text-style&#34;&gt;Step 2: Create a text style&lt;/h3&gt;
 &lt;p&gt;Once you have created your file, now you must create a static function to define and return a text style. For this example, we&amp;rsquo;ll have one style for a title and another one for the paragraph, so we&amp;rsquo;ll create two different functions.&lt;/p&gt;
 &lt;p&gt;This function return will use the &lt;code&gt;BeagleStyle&lt;/code&gt; class, which is a Beagle&amp;rsquo;s intern class that&amp;rsquo;s available when you import the &lt;code&gt;beagleUI&lt;/code&gt; class.&lt;/p&gt;
@@ -2134,11 +2134,11 @@ In case you have any problem, we recommend you to make our backend&amp;rsquo;s i
     </item>
     
     <item>
-      <title>Docs: WEB</title>
-      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/web/</link>
+      <title>Docs: Case Web</title>
+      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/web/</guid>
+      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-web/</guid>
       <description>
         
         
@@ -2336,11 +2336,11 @@ export default App;
     </item>
     
     <item>
-      <title>Docs: Backend</title>
-      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/backend/</link>
+      <title>Docs: Case Backend</title>
+      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/backend/</guid>
+      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-backend/</guid>
       <description>
         
         
@@ -2748,7 +2748,7 @@ In order to use the backend service, you must have the front end prepared for Be
   &lt;div id=&#34;t12-3&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t12-3&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;On web, the cache is configured when it&amp;rsquo;s defined the initials configurations of Beagle Web on the &lt;code&gt;strategy&lt;/code&gt; parameter, which is one of &lt;code&gt;BeagleModule&lt;/code&gt; parametes (if you&amp;rsquo;re using Angular) or&lt;code&gt;createBeagleUIService&lt;/code&gt;(if you&amp;rsquo;re using React).&lt;/p&gt;
-&lt;p&gt;By default, the cache comes enabled with**&lt;code&gt;beagle-with-fallback-to-cache&lt;/code&gt;** strategy, however the &lt;code&gt;beagle-cache-only&lt;/code&gt; strategy can also be used to implement &lt;a href=&#34;../../customization/beagle-para-web/&#34;&gt;&lt;strong&gt;Beagle&amp;rsquo;s cache protocol&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;By default, the cache comes enabled with**&lt;code&gt;beagle-with-fallback-to-cache&lt;/code&gt;** strategy, however the &lt;code&gt;beagle-cache-only&lt;/code&gt; strategy can also be used to implement &lt;a href=&#34;../../customization/beagle-for-web/&#34;&gt;&lt;strong&gt;Beagle&amp;rsquo;s cache protocol&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 &lt;p&gt;Remember to set CORS enabled for backend when you want to use cache’s strategy for Beagle on Web.&lt;/p&gt;
 &lt;/div&gt;
@@ -6347,7 +6347,7 @@ ComposedComponent doesn&amp;rsquo;t have a functionality, it is a backend exclus
 &lt;h2 id=&#34;beagles-components-with-context&#34;&gt;Beagle&amp;rsquo;s components with context:&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&#34;../../../../../../../../api/components/layout/container&#34;&gt;&lt;strong&gt;Container&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;../../../../../../../api/components/form/simple-form-web&#34;&gt;&lt;strong&gt;SimpleForm&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../../../../../../../api/components/form/simple-form&#34;&gt;&lt;strong&gt;SimpleForm&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../../../../../../api/components/layout/pageview&#34;&gt;&lt;strong&gt;PageView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../../../../../api/components/layout/scrollview&#34;&gt;&lt;strong&gt;ScrollView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;../../../../api/components/ui/tabview&#34;&gt;&lt;strong&gt;TabView&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
@@ -6385,7 +6385,7 @@ ComposedComponent doesn&amp;rsquo;t have a functionality, it is a backend exclus
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 
-If you want to create customized components on iOS, it is necessary to register it. See &lt;a href=&#34;../../customization/beagle-for-android/how-to-make-custom-widgets/&#34;&gt;&lt;strong&gt;how to do it here&lt;/strong&gt;&lt;/a&gt;
+If you want to create customized components on iOS, it is necessary to register it. See &lt;a href=&#34;../../customization/beagle-for-android/custom-widgets/&#34;&gt;&lt;strong&gt;how to do it here&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 
@@ -6672,7 +6672,7 @@ This &lt;code&gt;id&lt;/code&gt; identify what activity the BFF will use.
 
 &lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
 
-This component does not work on 1.1.0 version and it will be removed in the future version. Use &lt;a href=&#34;../../../../api/components/form/simple-form-web&#34;&gt;&lt;strong&gt;SimpleForm&lt;/strong&gt;&lt;/a&gt; instead.
+This component does not work on 1.1.0 version and it will be removed in the future version. Use &lt;a href=&#34;../../../../api/components/form/simple-form&#34;&gt;&lt;strong&gt;SimpleForm&lt;/strong&gt;&lt;/a&gt; instead.
 &lt;/div&gt;
 
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
@@ -7612,8 +7612,8 @@ When a class extends the&lt;code&gt;Open Class DesignSystem&lt;/code&gt; it is a
 For more information on how this process works, &lt;a href=&#34;https://developer.android.com/reference/android/app/FragmentTransaction#setCustomAnimations%28int,%20int,%20int,%20int%29&#34;&gt;&lt;strong&gt;check out the Android&amp;rsquo;s section&lt;/strong&gt;  &lt;strong&gt;setCustomAnimations&lt;/strong&gt;.&lt;/a&gt;
 &lt;/div&gt;
 
-&lt;p&gt;The other way to customize an animation it is the transition through the &lt;a href=&#34;../../../../../../get-started/new-project/&#34;&gt;&lt;strong&gt;BeagleActivity&lt;/strong&gt;&lt;/a&gt; class implementation, which Beagle uses the &lt;em&gt;&lt;strong&gt;getFragmentTransitionAnimation()&lt;/strong&gt;&lt;/em&gt; method.&lt;/p&gt;
-&lt;p&gt;In case this method it isn&amp;rsquo;t implemented and customized, the transitions will follow the Beagle&amp;rsquo;s animation pattern. The code below shows the &lt;a href=&#34;../../../get-started/new-project/&#34;&gt;&lt;strong&gt;BeagleActivity&lt;/strong&gt;&lt;/a&gt; method, that can be overwritten this way:&lt;/p&gt;
+&lt;p&gt;The other way to customize an animation it is the transition through the &lt;a href=&#34;../../../../../../get-started/creating-a-project-from-scratch/&#34;&gt;&lt;strong&gt;BeagleActivity&lt;/strong&gt;&lt;/a&gt; class implementation, which Beagle uses the &lt;em&gt;&lt;strong&gt;getFragmentTransitionAnimation()&lt;/strong&gt;&lt;/em&gt; method.&lt;/p&gt;
+&lt;p&gt;In case this method it isn&amp;rsquo;t implemented and customized, the transitions will follow the Beagle&amp;rsquo;s animation pattern. The code below shows the &lt;a href=&#34;../../../get-started/creating-a-project-from-scratch/&#34;&gt;&lt;strong&gt;BeagleActivity&lt;/strong&gt;&lt;/a&gt; method, that can be overwritten this way:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;open&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;getFragmentTransitionAnimation&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;FragmentTransitionAnimation&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;enter&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;  &lt;span style=&#34;color:#000&#34;&gt;R&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;anim&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;slide_from_right&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;exit&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;R&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;anim&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;none_animation&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;

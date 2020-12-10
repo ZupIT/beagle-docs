@@ -14,11 +14,11 @@
     
     
     <item>
-      <title>Docs: Android</title>
-      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/android/</link>
+      <title>Docs: Case Android</title>
+      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-android/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/android/</guid>
+      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-android/</guid>
       <description>
         
         
@@ -368,7 +368,7 @@ At this point, it&amp;rsquo;s essential that you remove the&lt;code&gt;ActionBar
 Well done, your Android application is configured and ready to use Beagle!
 &lt;/div&gt;
 
-&lt;p&gt;All you have to do now is &lt;a href=&#34;../../exemplo-de-projeto-backend-com-beagle&#34;&gt;&lt;strong&gt;set up a backend&lt;/strong&gt; &lt;/a&gt;to answer your application&amp;rsquo;s requests. Once you made this configuration, start your application and you&amp;rsquo;ll see your first server-driven screen!&lt;/p&gt;
+&lt;p&gt;All you have to do now is &lt;a href=&#34;../../case-backend&#34;&gt;&lt;strong&gt;set up a backend&lt;/strong&gt; &lt;/a&gt;to answer your application&amp;rsquo;s requests. Once you made this configuration, start your application and you&amp;rsquo;ll see your first server-driven screen!&lt;/p&gt;
 &lt;h3 id=&#34;step-7-display-your-server-driven-screen&#34;&gt;Step 7: Display your Server-Driven Screen&lt;/h3&gt;
 &lt;p&gt;It&amp;rsquo;s very simple to show a Server-Driven screen. Now that all Beagle&amp;rsquo;s configuration is done, you just have to follow these steps:&lt;/p&gt;
 &lt;ul&gt;
@@ -398,11 +398,11 @@ Well done, you created your first screen with Beagle!  🎉
     </item>
     
     <item>
-      <title>Docs: IOS</title>
-      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/ios/</link>
+      <title>Docs: Case ios</title>
+      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-ios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/ios/</guid>
+      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-ios/</guid>
       <description>
         
         
@@ -459,7 +459,7 @@ If you wanna know more about how to use Cocoa Pods, &lt;a href=&#34;https://coco
         &lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, we&amp;rsquo;ll configure the**&lt;code&gt;SceneDelegate&lt;/code&gt;** class so it can be used to initialize our application with Beagle from a screen through &lt;a href=&#34;../../../../../../principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;:&lt;/a&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, we&amp;rsquo;ll configure the**&lt;code&gt;SceneDelegate&lt;/code&gt;** class so it can be used to initialize our application with Beagle from a screen through &lt;a href=&#34;../../../../../../key-concepts#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;:&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Create a**&lt;code&gt;beagleScreen&lt;/code&gt;** constant, that will receive the server-driven screen.&lt;/li&gt;
 &lt;li&gt;The &lt;code&gt;init URL&lt;/code&gt; argument must contain the &lt;a href=&#34;../../../../../resources/urls#caminho-relativo&#34;&gt;&lt;strong&gt;relative URL&lt;/strong&gt;&lt;/a&gt; address that will be created on backend (BFF). For this example, we&amp;rsquo;ll call it  &amp;ldquo;/screen&amp;rdquo;&lt;/li&gt;
@@ -486,7 +486,7 @@ If you wanna know more about how to use Cocoa Pods, &lt;a href=&#34;https://coco
 &lt;code&gt;Storyboard name&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;On the GIF below, you can see better how to remove these references:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/main%20%282%29.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Well done, now Beagle is configured for your iOS application! All you have to do is &lt;a href=&#34;../../exemplo-de-projeto-backend-com-beagle&#34;&gt;&lt;strong&gt;set up a backend&lt;/strong&gt;&lt;/a&gt; to answer to your server-driven applications&amp;rsquo;s requests.&lt;/p&gt;
+&lt;p&gt;Well done, now Beagle is configured for your iOS application! All you have to do is &lt;a href=&#34;../../case-backend&#34;&gt;&lt;strong&gt;set up a backend&lt;/strong&gt;&lt;/a&gt; to answer to your server-driven applications&amp;rsquo;s requests.&lt;/p&gt;
 &lt;p&gt;Once you finished the configuration, start your application and you&amp;rsquo;ll have your first server-driven screen!&lt;br&gt;
 You will see this screen:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -495,11 +495,11 @@ You will see this screen:&lt;/p&gt;
     </item>
     
     <item>
-      <title>Docs: WEB</title>
-      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/web/</link>
+      <title>Docs: Case Web</title>
+      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-web/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/web/</guid>
+      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-web/</guid>
       <description>
         
         
@@ -697,11 +697,11 @@ export default App;
     </item>
     
     <item>
-      <title>Docs: Backend</title>
-      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/backend/</link>
+      <title>Docs: Case Backend</title>
+      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-backend/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/backend/</guid>
+      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-backend/</guid>
       <description>
         
         

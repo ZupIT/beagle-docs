@@ -217,7 +217,7 @@
   &lt;div id=&#34;t12-3&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t12-3&#34;&gt;
 
 &lt;p&gt;&lt;p&gt;On web, the cache is configured when it&amp;rsquo;s defined the initials configurations of Beagle Web on the &lt;code&gt;strategy&lt;/code&gt; parameter, which is one of &lt;code&gt;BeagleModule&lt;/code&gt; parametes (if you&amp;rsquo;re using Angular) or&lt;code&gt;createBeagleUIService&lt;/code&gt;(if you&amp;rsquo;re using React).&lt;/p&gt;
-&lt;p&gt;By default, the cache comes enabled with**&lt;code&gt;beagle-with-fallback-to-cache&lt;/code&gt;** strategy, however the &lt;code&gt;beagle-cache-only&lt;/code&gt; strategy can also be used to implement &lt;a href=&#34;../../customization/beagle-para-web/&#34;&gt;&lt;strong&gt;Beagle&amp;rsquo;s cache protocol&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;By default, the cache comes enabled with**&lt;code&gt;beagle-with-fallback-to-cache&lt;/code&gt;** strategy, however the &lt;code&gt;beagle-cache-only&lt;/code&gt; strategy can also be used to implement &lt;a href=&#34;../../customization/beagle-for-web/&#34;&gt;&lt;strong&gt;Beagle&amp;rsquo;s cache protocol&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 &lt;p&gt;Remember to set CORS enabled for backend when you want to use cache’s strategy for Beagle on Web.&lt;/p&gt;
 &lt;/div&gt;

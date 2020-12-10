@@ -25,8 +25,8 @@
         &lt;hr&gt;
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Inside Beagle&amp;rsquo;s library, there is a &lt;code&gt;DesignSystem&lt;/code&gt; class that can be used to personalize the components used on your application.&lt;/p&gt;
-&lt;p&gt;This class also can map application&amp;rsquo;s local resources so we can refer to &lt;a href=&#34;../../../../../principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt; &lt;/a&gt;when you build a &lt;a href=&#34;../../../../../principais-conceitos#server-driven-ui&#34;&gt;&lt;strong&gt;Server-Driven&lt;/strong&gt;&lt;/a&gt; screen.&lt;/p&gt;
-&lt;p&gt;Beside the images, Beagle&amp;rsquo;s &lt;a href=&#34;../../../../principais-conceitos#design-system&#34;&gt;&lt;strong&gt;Design System&lt;/strong&gt;&lt;/a&gt; can customize:&lt;/p&gt;
+&lt;p&gt;This class also can map application&amp;rsquo;s local resources so we can refer to &lt;a href=&#34;../../../../../key-concepts#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt; &lt;/a&gt;when you build a &lt;a href=&#34;../../../../../key-concepts#server-driven-ui&#34;&gt;&lt;strong&gt;Server-Driven&lt;/strong&gt;&lt;/a&gt; screen.&lt;/p&gt;
+&lt;p&gt;Beside the images, Beagle&amp;rsquo;s &lt;a href=&#34;../../../../key-concepts#design-system&#34;&gt;&lt;strong&gt;Design System&lt;/strong&gt;&lt;/a&gt; can customize:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;the appearance of the texts;&lt;/li&gt;
 &lt;li&gt;the style of the input components;&lt;/li&gt;
@@ -75,7 +75,7 @@
         &amp;lt;item name=&amp;quot;android:background&amp;quot;&amp;gt;?attr/selectableItemBackground&amp;lt;/item&amp;gt;
     &amp;lt;/style&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;toolbar&#34;&gt;Toolbar&lt;/h3&gt;
-&lt;p&gt;Inside Beagle&amp;rsquo;s library for Android, the tool bar is part of&lt;a href=&#34;../../api/screen/#navigation-bar-action-bar-barra-de-navegacao&#34;&gt; &lt;strong&gt;NavigationBar&amp;rsquo;s class&lt;/strong&gt;.&lt;/a&gt; To make it properly work on &lt;a href=&#34;../../../get-started/new-project/case-android/#passo-4-criando-o-appbeagleactivity&#34;&gt;&lt;strong&gt;BeagleActivity&lt;/strong&gt;&lt;/a&gt;, you need to inform Beagle which bar will be used on your application.&lt;/p&gt;
+&lt;p&gt;Inside Beagle&amp;rsquo;s library for Android, the tool bar is part of&lt;a href=&#34;../../api/screen/#navigation-bar-action-bar-barra-de-navegacao&#34;&gt; &lt;strong&gt;NavigationBar&amp;rsquo;s class&lt;/strong&gt;.&lt;/a&gt; To make it properly work on &lt;a href=&#34;../../../get-started/creating-a-project-from-scratch/case-android/#passo-4-criando-o-appbeagleactivity&#34;&gt;&lt;strong&gt;BeagleActivity&lt;/strong&gt;&lt;/a&gt;, you need to inform Beagle which bar will be used on your application.&lt;/p&gt;
 &lt;p&gt;The bar customization can be done in the moment that she passes through Beagle. Besides these attributes,  Toolbar has other four that are exclusive:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;backgroundColor:&lt;/strong&gt; defines the Tool Bar&amp;rsquo;s background color.&lt;/li&gt;
@@ -134,7 +134,7 @@
         &lt;hr&gt;
 &lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
 &lt;p&gt;Inside Beagle&amp;rsquo;s library for iOS, there&amp;rsquo;s an &lt;code&gt;AppTheme&lt;/code&gt; class that allows you to personalize components used on your application.&lt;/p&gt;
-&lt;p&gt;This class also can map application&amp;rsquo;s styles so it can be referenced on BFF to build a &lt;a href=&#34;../../../principais-conceitos#server-driven-ui&#34;&gt;&lt;strong&gt;Server-Driven&lt;/strong&gt;&lt;/a&gt; screen.&lt;/p&gt;
+&lt;p&gt;This class also can map application&amp;rsquo;s styles so it can be referenced on BFF to build a &lt;a href=&#34;../../../key-concepts#server-driven-ui&#34;&gt;&lt;strong&gt;Server-Driven&lt;/strong&gt;&lt;/a&gt; screen.&lt;/p&gt;
 &lt;p&gt;It makes possible to personalize, for example:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Texts&#39; styles;&lt;/li&gt;

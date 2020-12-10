@@ -954,9 +954,9 @@ Get to know more about &lt;a href=&#34;../../context/&#34;&gt;&lt;strong&gt;Beag
         
         &lt;hr&gt;
 &lt;h2 id=&#34;what-is-it&#34;&gt;What is it?&lt;/h2&gt;
-&lt;p&gt;SubmitForm is an exclusive action of&lt;a href=&#34;../../components/form/simple-form-web&#34;&gt; &lt;strong&gt;SimpleForm&lt;/strong&gt;&lt;/a&gt;, it must be used in some event inside the form, so it will be sent.&lt;/p&gt;
+&lt;p&gt;SubmitForm is an exclusive action of&lt;a href=&#34;../../components/form/simple-form&#34;&gt; &lt;strong&gt;SimpleForm&lt;/strong&gt;&lt;/a&gt;, it must be used in some event inside the form, so it will be sent.&lt;/p&gt;
 &lt;h2 id=&#34;how-to-use&#34;&gt;How to use?&lt;/h2&gt;
-&lt;p&gt;For a complete example together with SimpleForm, &lt;a href=&#34;../components/form/simple-form-web&#34;&gt;&lt;strong&gt;click here&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For a complete example together with SimpleForm, &lt;a href=&#34;../components/form/simple-form&#34;&gt;&lt;strong&gt;click here&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
