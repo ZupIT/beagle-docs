@@ -47,7 +47,7 @@ anchor = "smart"
 [services]
 [services.googleAnalytics]
 # Comment out the next line to disable GA tracking. Also disables the feature described in [params.ui.feedback].
-id = "UA-00000000-0"
+id = "G-H1RTNPZDTS"
 
 # Language configuration
 
@@ -60,7 +60,7 @@ languageName ="English"
 weight = 1
 [languages.pt]
 title = "Beagle"
-description = "Documentação Beagle"
+description = "Documentação do Beagle"
 languageName ="Português"
 contentDir = "content/pt"
 time_format_default = "02/01/2006"
@@ -147,14 +147,14 @@ footer_about_disable = false
 [params.ui.feedback]
 enable = true
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-yes = 'Glad to hear it! Please <a href="https://github.com/ZupIT/docs-beagle/issues/new">tell us how we can improve</a>.'
+yes = 'We are glad to hear it! Please <a href="https://github.com/ZupIT/docs-beagle/issues/new">tell us how we can improve</a>.'
 no = 'Sorry to hear that. Please <a href="https://github.com/ZupIT/docs-beagle/issues/new">tell us how we can improve</a>.'
 
 # Adds a reading time to the top of each doc.
 # If you want this feature, but occasionally need to remove the Reading time from a single page, 
 # add "hide_readingtime: true" to the page's front matter
 [params.ui.readingtime]
-enable = false
+enable = true
 
 [params.links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.

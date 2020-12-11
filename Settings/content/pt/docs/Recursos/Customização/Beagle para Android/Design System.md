@@ -18,7 +18,7 @@ Para definir o design system da sua aplicação, você deve criar a classe que e
 
 Cada estilo mostrado com o Beagle deve ser referenciado de uma forma que, cada um deles tenha um nome a ser identificado.
 
-### Exemplo
+## Exemplo
 
 O método da imagem registrada em uma série de imagens que será usada para construir páginas vindas do backend. O operador when é usado para designar os estilos, o primeiro valor listado é uma string que identifica o estilo do componente do Beagle \(muito similiar a key/value\) e o estilo do componente que foi listado com uma `Arrow Function ->`. 
 
