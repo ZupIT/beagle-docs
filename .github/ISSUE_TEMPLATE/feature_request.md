@@ -1,18 +1,11 @@
 ---
 name: Feature request
-about: Suggest a new idea for Beagle.
+about: Suggest a new idea for documentation.
 title: ''
 labels: ''
 assignees: ''
 
 ---
-
-<!-- Thank you for using Beagle!
-
-     If you are looking for support, please check out our documentation:
-      * https://docs.usebeagle.io/
-
--->
 
 ## Use case
 
@@ -30,7 +23,7 @@ assignees: ''
 ## Proposal
 
 <!--
-     Briefly but precisely describe what you would like Beagle to be able to do.
+     Briefly but precisely describe what you would like to be able to do.
 
      Consider attaching images showing what you are imagining.
 
