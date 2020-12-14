@@ -1,0 +1,255 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beagle – Forms</title>
+    <link>https://zupit.github.io/docs-beagle/docs/api/components/forms/</link>
+    <description>Recent content in Forms on Beagle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-beagle/docs/api/components/forms/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Form</title>
+      <link>https://zupit.github.io/docs-beagle/docs/api/components/forms/form/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/api/components/forms/form/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+This component is &lt;strong&gt;deprecated&lt;/strong&gt;! It is recomended to use &lt;a href=&#34;simple-form&#34;&gt;&lt;strong&gt;Simple Form&lt;/strong&gt;&lt;/a&gt;.
+&lt;/div&gt;
+
+&lt;p&gt;The component represents a way to build user input and send these values to your backend.&lt;/p&gt;
+&lt;p&gt;The structured is represented below:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&#34;text-align:left&#34;&gt;Attribute&lt;/th&gt;
+      &lt;th style=&#34;text-align:left&#34;&gt;Type&lt;/th&gt;
+      &lt;th style=&#34;text-align:center&#34;&gt;Required&lt;/th&gt;
+      &lt;th style=&#34;text-align:left&#34;&gt;Definition&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;
+        &lt;p&gt;&lt;/p&gt;
+        &lt;p&gt;onSubmit&lt;/p&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;List &amp;lt;&lt;a href=&#34;../../actions/&#34;&gt;&lt;b&gt;Action&lt;/b&gt;&lt;/a&gt;&amp;gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;Array of actions that this button can trigger when a form is sent.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;child&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;&lt;a href=&#34;../&#34;&gt;&lt;b&gt;ServerDrivenComponent&lt;/b&gt;&lt;/a&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&amp;#x2713;&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;Defines the visual components list (server-driven).&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;group&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;String&lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;Only used to forms with multiple pages, which is an identifier to manipulate
+        data.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;additionalData&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;Map&amp;lt;String, String&amp;gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;Values without validation that the user doesn&amp;apos;t insert.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;shouldStoreFields&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;Boolean&lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;Indicates if must save the&lt;code&gt;additionalData&lt;/code&gt;.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Validator</title>
+      <link>https://zupit.github.io/docs-beagle/docs/api/components/forms/validator/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/api/components/forms/validator/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;The validator component is an interface that informs to the Form when to enable the &lt;code&gt;FormSubmit&lt;/code&gt; button. It is based on the &lt;code&gt;observability&lt;/code&gt; concept, which FormInput will validate the submitted information and then send them to the Validator.&lt;/p&gt;
+&lt;p&gt;There are two ways to use Form Validator:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Clicking on &lt;code&gt;FormSubmit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Calling the &lt;code&gt;notifyObservers&lt;/code&gt; method inside the &lt;code&gt;FormInput&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;Atenção: &lt;strong&gt;Validator&lt;/strong&gt; ≠&lt;a href=&#34;https://docs.usebeagle.io/v/v0.3/elements/action/formvalidation&#34;&gt;&lt;strong&gt;FormValidation&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Despite the similar names, it&amp;rsquo;s important to mention that &lt;strong&gt;Validator&lt;/strong&gt; is different of the &lt;strong&gt;FormValidation&lt;/strong&gt;, the first one authenticates the filled form and the second returns error messages in case of failed information in the form.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Simple Form</title>
+      <link>https://zupit.github.io/docs-beagle/docs/api/components/forms/simple-form/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/api/components/forms/simple-form/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;what-is-it&#34;&gt;What is it?&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;simpleForm&lt;/code&gt; is responsible for rendering a form on the screen.&lt;/p&gt;
+&lt;p&gt;Its structure is represented as shown below:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Attribute&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Type&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Required&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Definition&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;​onSubmit&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;List &amp;lt;&lt;a href=&#34;https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MJgKhvyrHFMgUm8zhug/v/v1.0-en/api/actions&#34;&gt;&lt;strong&gt;Action&lt;/strong&gt;&lt;/a&gt;&amp;gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;✓&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Action array that this button can trigger when a form is sent.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;children&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;List&amp;lt;&lt;a href=&#34;https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MJgKhvyrHFMgUm8zhug/v/v1.0-en/api/components&#34;&gt;&lt;strong&gt;ServerDrivenComponent&lt;/strong&gt;&lt;/a&gt;&amp;gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;✓&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Defines the visual components list (server driven).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;context&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;​&lt;/strong&gt;&lt;a href=&#34;https://docs.usebeagle.io/api/contexto&#34;&gt;&lt;strong&gt;ContextData&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;​&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;​&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Adds a context to the simple form&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;how-to-use&#34;&gt;How to use?&lt;/h2&gt;
+&lt;p&gt;When creating a form it is important to understand two steps respectively&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The relationship and update between fields&lt;/li&gt;
+&lt;li&gt;And what happens when the Submit button is pressed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;updating-the-fields&#34;&gt;Updating the fields&lt;/h3&gt;
+&lt;p&gt;The TextInput component is the field in which the user or the system will fill in some information, and it is important to know its attributes in order to better use it. Here we will use one of its elements, which is the &lt;strong&gt;onChange&lt;/strong&gt; function.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+For more information on this component go to the details of &lt;a href=&#34;../../../../../ui/textinput&#34;&gt;TextInput&lt;/a&gt;.
+&lt;/div&gt;
+
+&lt;h4 id=&#34;onchange&#34;&gt;OnChange&lt;/h4&gt;
+&lt;p&gt;This function is part of the TextInput and it observes the changes made within its field, that is, whenever the value is modified, something is typed, deleted, etc, this function is called and activates a &lt;strong&gt;list of other&lt;/strong&gt; &lt;a href=&#34;../../../../../actions/&#34;&gt;actions&lt;/a&gt; to happen whenever the value changes. It is in this list that we add a &lt;a href=&#34;../../../../../actions/setcontext&#34;&gt;SetContext&lt;/a&gt; action to set the &lt;a href=&#34;../../../../../context/&#34;&gt;Context&lt;/a&gt; value of the form and update the values ​​that are shown in the field.&lt;/p&gt;
+&lt;p&gt;Check our example below on how we implemented a &lt;code&gt;SimpleForm&lt;/code&gt;&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t132&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t132-0&#34; role=&#34;tab&#34; aria-controls=&#34;t132-0&#34; aria-selected=&#34;true&#34;&gt;JSON&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t132-1&#34; role=&#34;tab&#34; aria-controls=&#34;t132-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t132&#34;&gt;&lt;div id=&#34;t132-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t132-0&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:simpleForm&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+  &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;context&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;id&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;myContext&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;value&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;},&lt;/span&gt;
+  &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;onSubmit&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+      &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleAction_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:alert&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+      &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Data submited&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+      &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;message&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;The password is @{myContext}&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;],&lt;/span&gt;
+  &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;children&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+      &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:textInput&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+      &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;value&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;@{myContext}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+      &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;placeholder&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Type in your password&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+      &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;onChange&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+          &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleAction_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:setContext&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+          &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;contextId&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;myContext&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+          &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;value&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;@{onChange.value}&amp;#34;&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+      &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;},&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+      &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:button&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+      &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Click to Submit&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+      &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;onPress&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+          &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleAction_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:submitForm&amp;#34;&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+      &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t132-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t132-1&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;SimpleForm&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;context&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ContextData&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;id&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;myContext&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;value&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;children&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;listOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;TextInput&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;value&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;@{myContext}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;placeholder&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Type in your password&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;onChange&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;listOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+                &lt;span style=&#34;color:#000&#34;&gt;SetContext&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+                    &lt;span style=&#34;color:#000&#34;&gt;contextId&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;myContext&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+                    &lt;span style=&#34;color:#000&#34;&gt;value&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;@{onChange.value}&amp;#34;&lt;/span&gt;
+                &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;Button&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Click to Submit&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;onPress&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;listOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;SubmitForm&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()))&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;onSubmit&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;listOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;Alert&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;title&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Data submited&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; 
+            &lt;span style=&#34;color:#000&#34;&gt;message&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;The password is &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;@{myContext}&amp;#34;&lt;/span&gt; 
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&#34;onsubmit&#34;&gt;onSubmit&lt;/h3&gt;
+&lt;p&gt;It is a function of a simple form that performs a list of actions. It is called when the form is submitted.&lt;/p&gt;
+&lt;p&gt;To submit a form, you must use the SubmitForm action and call it, just implement it in a &lt;a href=&#34;../../../ui/button&#34;&gt;Button&lt;/a&gt; that is part of a simple form, that is, that is in your list of children.&lt;/p&gt;
+&lt;p&gt;When you click this button, the onSubmit is activated and the list of actions will be performed. It is this list of actions that will define what should happen with the information in this form, if they will be sent to a backend (through the &lt;a href=&#34;../../../actions/sendrequest&#34;&gt;sendRequest &lt;/a&gt;action), etc.&lt;/p&gt;
+&lt;h3 id=&#34;-test-this-component-in-the-web-playgroundhttpsbeagle-playgroundnetlifyappdemodefault-componentssimpleformjson&#34;&gt;👉 &lt;a href=&#34;https://beagle-playground.netlify.app/#/demo/default-components/simpleform.json&#34;&gt;Test this component in the Web Playground&lt;/a&gt;&lt;/h3&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

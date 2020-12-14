@@ -1,0 +1,63 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beagle – Get Started</title>
+    <link>https://zupit.github.io/docs-beagle/docs/get-started/</link>
+    <description>Recent content in Get Started on Beagle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-beagle/docs/get-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Installing Beagle</title>
+      <link>https://zupit.github.io/docs-beagle/docs/get-started/installing-beagle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/get-started/installing-beagle/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;To start the Beagle&amp;rsquo;s configuration on your machine, follow the steps to each operational system. Here we also list the settings of the backend, which will be the BFF:&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Using Beagle</title>
+      <link>https://zupit.github.io/docs-beagle/docs/get-started/using-beagle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/get-started/using-beagle/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;After you done &lt;a href=&#34;../../installing-beagle/&#34;&gt;&lt;strong&gt;Beagle&amp;rsquo;s installation&lt;/strong&gt;&lt;/a&gt;, you have to make usage configuration to enable the tool on your project.&lt;/p&gt;
+&lt;p&gt;You can make this configuration based on the platform you wanna use:&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Creating a project from scratch</title>
+      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;You can see blow some practical cases to you use Beagle on your project:&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

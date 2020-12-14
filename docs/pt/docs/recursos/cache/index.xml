@@ -1,0 +1,259 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beagle – Cache</title>
+    <link>https://zupit.github.io/docs-beagle/pt/docs/recursos/cache/</link>
+    <description>Recent content in Cache on Beagle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-beagle/pt/docs/recursos/cache/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Configurando o cache</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/recursos/cache/configurando-o-cache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/recursos/cache/configurando-o-cache/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;como-funciona-o-cache&#34;&gt;Como funciona o cache?&lt;/h2&gt;
+&lt;p&gt;O cache padrão é controlado pelo backend com a tag &lt;code&gt;cache-control&lt;/code&gt; e &lt;code&gt;beagle-hash&lt;/code&gt; que são informações que devem ser fornecidas através do &lt;em&gt;header&lt;/em&gt; das requisições, onde o &lt;code&gt;beagle-hash&lt;/code&gt; é responsável por fornecer o hash referente a tela que está sendo baixada e o &lt;code&gt;cache-control&lt;/code&gt;o tempo de vida deste cache como sendo &lt;strong&gt;confiável.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;cache-confiável&#34;&gt;Cache confiável&lt;/h3&gt;
+&lt;p&gt;Um cache é dito confiável quando o seu tempo de vida ainda não expirou.&lt;/p&gt;
+&lt;p&gt;Neste caso ao verificar que existe um cache no &lt;em&gt;front&lt;/em&gt; e ele é confiável, a tela é renderizada sem sequer confirmar com o servidor. Isso poupa tempo, banda e provê uma experiência fluida para o usuário.&lt;/p&gt;
+&lt;p&gt;O cache confiável fica salvo em memória.&lt;/p&gt;
+&lt;h3 id=&#34;cache-não-confiável&#34;&gt;Cache não confiável&lt;/h3&gt;
+&lt;p&gt;Já que temos o cache confiável, também temos o não confiável, isso quer dizer que o tempo de vida dele já expirou.&lt;/p&gt;
+&lt;p&gt;Um cache ser não confiável significa que ao ser identificado ele precisa ser revalidado com o backend para aquela rota pelo seu hash.&lt;/p&gt;
+&lt;p&gt;Neste momento ele deixa de estar salvo na memória e fica salvo de maneira persistente no disco.&lt;/p&gt;
+&lt;h3 id=&#34;tempo-de-vida&#34;&gt;Tempo de vida&lt;/h3&gt;
+&lt;p&gt;O tempo de vida do cache pode ser parametrizado através de configuração pela aplicação. Na implementação padrão do cache o tempo de vida é de 300 segundos. Este tempo também pode ser alterado caso o &lt;em&gt;backend&lt;/em&gt; envie um tempo diferente através do &lt;em&gt;header&lt;/em&gt; &lt;code&gt;cache-control&lt;/code&gt;, pois ele tem prioridade nesta configuração.&lt;/p&gt;
+&lt;h3 id=&#34;revalidação-de-cache&#34;&gt;Revalidação de cache&lt;/h3&gt;
+&lt;p&gt;Quando um cache não confiável é encontrado ele precisa ser revalidado com o backend. Isso quer dizer que ao buscar uma tela ele envia no header da requisição o &lt;em&gt;hash&lt;/em&gt; que possui.&lt;/p&gt;
+&lt;p&gt;Ao receber essa requisição o servidor entende que já existe uma versão desta tela salva na aplicação e compara o valor &lt;em&gt;hash&lt;/em&gt; enviado com o valor atual salvo por ele (&lt;em&gt;backend&lt;/em&gt;). Caso sejam iguais é enviada uma resposta com status 304 e sem corpo algum, indicando que a tela permanece a mesma e que aquele cache é confiável novamente.&lt;/p&gt;
+&lt;p&gt;Caso o &lt;em&gt;hash&lt;/em&gt; enviado pelo front seja diferente daquele salvo no backend, será enviada uma resposta normalmente com o novo valor do &lt;em&gt;hash&lt;/em&gt; que deverá ser atualizado na aplicação.&lt;/p&gt;
+&lt;h3 id=&#34;ocupação-de-memória-e-disco&#34;&gt;Ocupação de memória e disco&lt;/h3&gt;
+&lt;p&gt;Para evitar sobrecarga de memória e disco ambos os caches aplicam uma política de substituição&lt;a href=&#34;https://pt.wikipedia.org/wiki/Algoritmo_de_troca_de_p%C3%A1gina&#34;&gt; __&lt;strong&gt;Least Recently Used (LRU)&lt;/strong&gt; &lt;/a&gt;onde a quantidade máxima de registros também pode ser configurada através da classe base de cache pela aplicação. Os valores padrões para memória e disco são 15 e 150 respectivamente.&lt;/p&gt;
+&lt;h2 id=&#34;configurando-e-customizando-o-cache&#34;&gt;Configurando e customizando o cache&lt;/h2&gt;
+&lt;p&gt;Existem customizações permitidas pela classe padrão existente no cache como tempo de vida e quantidade máxima de registros em memória e disco.&lt;/p&gt;
+&lt;p&gt;Caso a abordagem padrão não resolva o problema, a aplicação tem total liberdade de substituir completamente a implementação padrão pela que melhor atender. Para isso, basta que a classe responsável pelo gerenciamento do cache esteja em conformidade com o protocolo &lt;code&gt;CacheManagerProtocol&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Cada plataforma tem especificidades para configurar o cache.&lt;/p&gt;
+&lt;p&gt;Abaixo listamos a configuração por plataforma:&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t13&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t13-0&#34; role=&#34;tab&#34; aria-controls=&#34;t13-0&#34; aria-selected=&#34;true&#34;&gt;Android&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t13-1&#34; role=&#34;tab&#34; aria-controls=&#34;t13-1&#34;&gt;iOS&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t13-2&#34; role=&#34;tab&#34; aria-controls=&#34;t13-2&#34;&gt;Backend&lt;/a&gt;&lt;/li&gt;
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t13-3&#34; role=&#34;tab&#34; aria-controls=&#34;t13-3&#34;&gt;Web&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t13&#34;&gt;&lt;div id=&#34;t13-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t13-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;No Android, o cache é configurado quando implementamos as configurações iniciais do Beagle.&lt;/p&gt;
+&lt;p&gt;Esta implementação acontece dentro da classe que nomeamos &lt;a href=&#34;../../../../../get-started/usando-o-beagle/android#passo-2-criar-uma-classe-beagleconfig&#34;&gt;&lt;strong&gt;AppBeagleConfig&lt;/strong&gt;&lt;/a&gt;, ou seja, dentro da classe de configuração do Beagle.&lt;/p&gt;
+&lt;p&gt;O cache, em si, é uma class interna do Beagle na qual podemos definir 3 propriedades representadas pelos atributos:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;enable&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;maxAge&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;memoryMaximumCapacity&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#5c35cc;font-weight:bold&#34;&gt;@BeagleComponent&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;AppBeagleConfig&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;BeagleConfig&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;val&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;isLoggingEnabled&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Boolean&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;val&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;baseUrl&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;https://myapp.server.com/&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;val&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;environment&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Environment&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Environment&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;DEBUG&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;val&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;cache&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Cache&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Cache&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;enabled&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;maxAge&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;300&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;memoryMaximumCapacity&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;15&lt;/span&gt; 
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;atributos-do-cache&#34;&gt;Atributos do cache&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Atributo&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Definição&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;enable&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Valor &lt;code&gt;booleano&lt;/code&gt;que habilita ou desabilita o cache em memória e disco&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;maxAge&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Valor &lt;code&gt;inteiro&lt;/code&gt;de tempo em segundos que o cache em memória estará ativo&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;memoryMaximumCapacity&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Valor &lt;code&gt;inteiro&lt;/code&gt; que representa o tamanho do cache de memória LRU. Representa o número de telas que vão estar na memória. Por exemplo, se você definir o número 15, significa que 15 páginas ficarão em cache.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t13-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t13-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;No iOS, o cache é configurado quando implementamos as configurações das dependências do  Beagle.&lt;/p&gt;
+&lt;p&gt;É possível mudar a configuração default do cache criando uma instância da classe &lt;code&gt;CacheManagerDefault&lt;/code&gt;. Nessa classe permitimos que você altere os valores de 3 propriedades:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;memoryMaximumCapacity&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;diskMaximumCapacity&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cacheMaxAge&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;BeagleDependencies&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;cacheManager&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;CacheManagerDefault&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+                            &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+                            &lt;span style=&#34;color:#000&#34;&gt;config&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;init&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;memoryMaximumCapacity&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;15&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+                                          &lt;span style=&#34;color:#000&#34;&gt;diskMaximumCapacity&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;300&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+                                          &lt;span style=&#34;color:#000&#34;&gt;cacheMaxAge&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;300&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;cacheManager&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;cacheManager&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Também é possível criar a sua própria classe de gerenciamento de cache e configurá-la dentro da sua instância do &lt;code&gt;BeagleDependencies&lt;/code&gt; se você conformar essa classe com o protocolo &lt;code&gt;CacheManagerProtocol&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;protocol&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;CacheManagerProtocol&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;addToCache&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;_&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;reference&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;CacheReference&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;getReference&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;identifiedBy&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#204a87&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;CacheReference&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;isValid&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;reference&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;CacheReference&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#204a87&#34;&gt;Bool&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;atributos-do-cache&#34;&gt;&lt;strong&gt;Atributos do cache&lt;/strong&gt;&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Atributo&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Definição&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;memoryMaximumCapacity&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Valor &lt;code&gt;inteiro&lt;/code&gt; que representa o tamanho do cache de memória LRU. Representa o número de telas que vão estar na memória. Por exemplo. Se definirmos o número 15 quer dizer que 15 páginas ficarão em cache.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;diskMaximumCapacity&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Valor &lt;code&gt;inteiro&lt;/code&gt; que representa o tamanho do cache de disco LRU. Representa o número de telas que vão estar no disco. Por exemplo. Se definirmos o número 150 quer dizer que 150 páginas ficarão em cache.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;strong&gt;cacheMaxAge&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Valor &lt;code&gt;inteiro&lt;/code&gt;de tempo em segundos que o cache em memória estará ativo&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t13-2&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t13-2&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;No backend, as configurações desta funcionalidade são suportadas apenas para quem utiliza a &lt;a href=&#34;../../../../get-started/instalando-o-beagle/backend#passo-3-incluindo-requerimentos-adicionais&#34;&gt;&lt;strong&gt;biblioteca starter&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;O cache é criado para otimizar a resposta de uma requisição tanto em tamanho quanto em tempo do BFF quando o retorno é igual ao anterior a ela. As entradas nesse cache duram até o servidor ser &amp;ldquo;redeployado&amp;rdquo; ou o cliente ser reinstalado.‌&lt;/p&gt;
+&lt;p&gt;Para realizar a configuração de cache:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Dentro da pasta &lt;code&gt;src/main/resources&lt;/code&gt;, procure pelo arquivo &lt;code&gt;application.properties&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Caso não tenha o arquivo, você pode criá-lo agora.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Se a chave não estiver listada no seu arquivo, significa que a configuração padrão será aplicada automaticamente.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;beagle.cache.endpoint.include=/image,/context/.*
+beagle.cache.enabled=false​
+
+#Micronuat
+beagle.cache.endpoint.ttl./endpoint1=10s
+beagle.cache.endpoint.ttl./endpoint2=1m
+
+#Spring (precisa de [] para escapar os /)
+beagle.cache.endpoint.ttl.[/endpoint1]=10s
+beagle.cache.endpoint.ttl.[/endpoint2]=1m
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Na lista abaixo, você confere quais são as propriedades disponíveis e as configurações que podem ser alteradas.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&#34;text-align:left&#34;&gt;Chave&lt;/th&gt;
+      &lt;th style=&#34;text-align:left&#34;&gt;Descri&amp;#xE7;&amp;#xE3;o&lt;/th&gt;
+      &lt;th style=&#34;text-align:center&#34;&gt;Valor Padr&amp;#xE3;o&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;beagle.cache.enabled&lt;/code&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;Flag indicando se o mecanismo de cache est&amp;#xE1; habilitado (ou n&amp;#xE3;o).&lt;/td&gt;
+      &lt;td
+      style=&#34;text-align:center&#34;&gt;&lt;code&gt;true&lt;/code&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;beagle.cache.endpoint.include&lt;/code&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;Lista de endpoints a serem cacheados. Aceita express&amp;#xF5;es regulares
+        conforme &lt;code&gt;java.util.regex.Pattern&lt;/code&gt; por meio do &lt;code&gt;kotlin.text.Regex&lt;/code&gt;.&lt;/td&gt;
+      &lt;td
+      style=&#34;text-align:center&#34;&gt;
+        &lt;p&gt;Todos (&amp;lt;=1.0.2)&lt;/p&gt;
+        &lt;p&gt;Nenhum (&amp;gt;=1.1.0)&lt;/p&gt;
+        &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;beagle.cache.endpoint.exclude&lt;/code&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;Lista de endpoints a n&amp;#xE3;o serem cacheados. Aceita express&amp;#xF5;es
+        regulares conforme &lt;code&gt;java.util.regex.Pattern&lt;/code&gt; por meio do &lt;code&gt;kotlin.text.Regex&lt;/code&gt;.
+        A exclus&amp;#xE3;o &amp;#xE9; prioridade em cima da inclus&amp;#xE3;o.&lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;Nenhum&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;
+        &lt;p&gt;&lt;code&gt;beagle.cache.endpoint.ttl&lt;/code&gt;
+        &lt;/p&gt;
+        &lt;p&gt;(&amp;gt;=1.1.0)&lt;/p&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;
+        &lt;p&gt;Pares de chave valor, onde a chave &amp;#xE9; um endpoint como &lt;code&gt;String&lt;/code&gt; e
+          o valor &amp;#xE9; uma dura&amp;#xE7;&amp;#xE3;o.&lt;/p&gt;
+        &lt;p&gt;&lt;/p&gt;
+        &lt;p&gt;A dura&amp;#xE7;&amp;#xE3;o &amp;#xE9; um n&amp;#xFA;mero seguido da unidade abreviada
+          (s, m, h, etc.) para popular o valor da header&lt;code&gt;Cache-control: max-age&lt;/code&gt; para
+          esse endpoint.&lt;/p&gt;
+        &lt;p&gt;&lt;/p&gt;
+        &lt;p&gt;O endpoint precisa estar inclu&amp;#xED;do. Endpoints inclusos t&amp;#xEA;m dura&amp;#xE7;&amp;#xE3;o
+          de 30s por padr&amp;#xE3;o. Dura&amp;#xE7;&amp;#xF5;es menores que um segundo viram
+          zero, pela defini&amp;#xE7;&amp;#xE3;o do &lt;code&gt;Cache-control: max-age&lt;/code&gt;.&lt;/p&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:center&#34;&gt;Nenhum&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t13-3&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t13-3&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;Na web, o cache é configurado quando definimos as configurações iniciais do Beagle Web no parâmetro &lt;code&gt;strategy&lt;/code&gt;, que é um dos parâmetros do &lt;code&gt;BeagleModule&lt;/code&gt; (se você estiver usando Angular) ou &lt;code&gt;createBeagleUIService&lt;/code&gt;(se você estiver usando React).&lt;/p&gt;
+&lt;p&gt;Por padrão, o cache vem habilitado com a estratégia**&lt;code&gt;beagle-with-fallback-to-cache&lt;/code&gt;**, porém a estratégia&lt;code&gt;beagle-cache-only&lt;/code&gt; também pode ser utilizada para implementar o&lt;a href=&#34;../customizacao/beagle-para-web/&#34;&gt; &lt;strong&gt;protocolo de cache do Beagle&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;p&gt;Lembre de deixar o CORS habilitado no backend sempre que for utilizar a estratégia de cache do Beagle para Web.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Abaixo, exemplos de como foi alterado do &lt;code&gt;beagle-with-fallback-to-cache&lt;/code&gt;, que é o padrão, para o &lt;code&gt;beagle-cache-only.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Exemplo de configuração para o &lt;strong&gt;Angula&lt;/strong&gt;r:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;@BeagleModule({
+  baseUrl: &amp;#39;http://localhost:4200/assets&amp;#39;,
+  module: {
+    path: &amp;#39;./beagle-components.module&amp;#39;,
+    name: &amp;#39;BeagleComponentsModule&amp;#39;,
+  },
+  components: {
+    // Associate every beagle component to your angular component. 
+  },
+  strategy: &amp;#39;beagle-cache-only&amp;#39;
+})
+export class Beagle { }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Exemplo de configuração para o &lt;strong&gt;React&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;export default createBeagleUIService({
+  baseUrl: &amp;#34;&amp;#34;,
+  components: {},
+  strategy: &amp;#39;beagle-cache-only&amp;#39;
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
