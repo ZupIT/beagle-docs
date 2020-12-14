@@ -1,16 +1,14 @@
-name: hugo to github pages
+name: hugo build check
 
 on:
-  push:
+  pull_request:
     branches:
-      - main  
-    tags-ignore:
-      - '*.*' 
+      - main   
     paths-ignore: 
       - .\docs
 
 jobs:
-  deploy:
+  check:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
@@ -24,13 +22,7 @@ jobs:
           hugo-version: '0.78.1'
           extended: true
 
-      - name: Build
+      - name: Build check
         run: |
               cd Settings
-              hugo -D
-              
-      - name: Deploy
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: 'auto generated pages added'
-          branch: main
+              hugo
