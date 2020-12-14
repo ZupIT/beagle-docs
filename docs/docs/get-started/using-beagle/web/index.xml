@@ -1,0 +1,279 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beagle – WEB</title>
+    <link>https://zupit.github.io/docs-beagle/docs/get-started/using-beagle/web/</link>
+    <description>Recent content in WEB on Beagle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-beagle/docs/get-started/using-beagle/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Angular</title>
+      <link>https://zupit.github.io/docs-beagle/docs/get-started/using-beagle/web/angular/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/get-started/using-beagle/web/angular/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;usage-configurations&#34;&gt;&lt;strong&gt;Usage configurations&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;After you finished the installation, you need to make &lt;strong&gt;Beagle&amp;rsquo;s usage configuration for Angular&amp;rsquo;s framework.&lt;/strong&gt; To do so, you just have to follow these steps:&lt;/p&gt;
+&lt;h3 id=&#34;step-1-configure-using-an-automatic-configuration&#34;&gt;&lt;strong&gt;Step 1: Configure using an automatic configuration&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Type one of the commands below to generate the files that will be used on Beagle&amp;rsquo;s library. It&amp;rsquo;s possible to execute the command according to your package manager:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;yarn beagle init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;npx beagle init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Once you made it, Beagle will return some questions. To answer them, follow the orientations below:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Question 1: Would you like to use yarn or npm?&lt;/strong&gt;&lt;br&gt;
+In this case, type the option that will be used as manager. In our example, we will use &lt;code&gt;yarn&lt;/code&gt;, so type &lt;code&gt;yarn&lt;/code&gt;and press enter.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Question 2: Path to the beagle module (press enter to use default)&lt;/strong&gt;&lt;br&gt;
+In this case, type the module path that will be used for Beagle. Considering we&amp;rsquo;re creating this project from zero e and there is no module, you just have to press enter without informing anything.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Question 3: Path to the module with the components to use with beagle (press enter to use default)&lt;/strong&gt;&lt;br&gt;
+In this case, type the module path that will be used for Beagle&amp;rsquo;s components. Considering we don&amp;rsquo;t have any module yet, you just have to press enter without informing anything.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Question 4:  What&amp;rsquo;s the base url of the backend providing your beagle JSONs? (press enter to use default)&lt;/strong&gt;&lt;br&gt;
+In this case, type the backend&amp;rsquo;s basis URL that will be used to rescue JSON files. For our example, we&amp;rsquo;ll use a JSON, so just type: http://localhost:4200/assets&lt;/p&gt;
+&lt;p&gt;At the end of this process, two files will be generate on your project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;beagle-components.module.ts&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;beagle.module.ts.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%2815%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Open the file &lt;code&gt;app.module.ts&lt;/code&gt; and, then, import Beagle&amp;rsquo;s module that was just generated:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;...
+import { Beagle } from &amp;#39;./beagle.module&amp;#39;;
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    Beagle
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;step-2-create-a-json-to-be-rendered&#34;&gt;Step 2: Create a JSON to be rendered&lt;/h3&gt;
+&lt;p&gt;Now, you just have to create a JSON to render the components. Usually, this process would be made by an external server that would return de JSON, but for this example we&amp;rsquo;ll create a local file to be accessed for the test.&lt;/p&gt;
+&lt;p&gt;On your angular project, navigate to the &lt;code&gt;src/assets&lt;/code&gt; file and create a new file named &lt;code&gt;payload.json&lt;/code&gt;. Open this new file you just created and copy the content below:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+    &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:container&amp;#34;,
+    &amp;#34;children&amp;#34;: [
+        {
+            &amp;#34;_beagleComponent_&amp;#34;:&amp;#34;beagle:text&amp;#34;,
+            &amp;#34;text&amp;#34;:&amp;#34;Hello Beagle&amp;#34;
+        },
+       {
+            &amp;#34;_beagleComponent_&amp;#34;:&amp;#34;beagle:text&amp;#34;,
+            &amp;#34;style&amp;#34;:{
+              &amp;#34;padding&amp;#34;:{
+                &amp;#34;top&amp;#34;:{
+                  &amp;#34;value&amp;#34;:10,
+                  &amp;#34;type&amp;#34;: &amp;#34;REAL&amp;#34;
+                }
+              }
+            },
+            &amp;#34;text&amp;#34;: &amp;#34;Beagle is a cross-platform framework which provides usage of the server Driven UI concept,natively in iOS, Android and Web applications. By using Beagle, your team could easily change application&amp;#39;s layout and data by just changing backend code&amp;#34;
+        }
+    ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;The Beagle&amp;rsquo;s library comes with many pre-defined components ready to be used in their project.&lt;/p&gt;
+&lt;p&gt;The code above creates a JSON with two os these components: container e text.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;After you created your JSON, open the file &lt;code&gt;beagle.module.ts&lt;/code&gt; we generated in the previous step and add as a baseUrl the path: http://localhost:4200/assets&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { BeagleModule } from &amp;#39;@zup-it/beagle-angular&amp;#39;
+// import all the components you wish to use with Beagle.
+
+@BeagleModule({
+  baseUrl: &amp;#39;http://localhost:4200/assets&amp;#39;,
+  module: {
+    path: &amp;#39;./beagle-components.module&amp;#39;,
+    name: &amp;#39;BeagleComponentsModule&amp;#39;,
+  },
+  components: {
+    // Associate every beagle component to your angular component.
+  },
+})
+export class Beagle {}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Well done, your configuration is ready! Now, we&amp;rsquo;ll see how to render mapped components on JSON.&lt;/p&gt;
+&lt;h3 id=&#34;step-3-use-beagle-remote-view&#34;&gt;Step 3: Use beagle-remote-view&lt;/h3&gt;
+&lt;p&gt;After creating the JSON, you need to tell Angular where to render the Beagle components. To do this, our lib provides the component &lt;code&gt;&amp;lt;beagle-remote-view&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Open the file &lt;code&gt;app.component.html&lt;/code&gt; and replace all the content with this code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&amp;lt;beagle-remote-view route=&amp;#34;/payload.json&amp;#34;&amp;gt;&amp;lt;/beagle-remote-view&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;route&lt;/code&gt; in the code above states which route will be loaded. The URL specified here is relative to the &lt;code&gt;baseUrl&lt;/code&gt; declared in the configuration.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+The parameter &lt;code&gt;route&lt;/code&gt; is only valid for versions 1.3 and above. For previous versions, you should use &lt;code&gt;loadParams&lt;/code&gt; instead. &lt;code&gt;loadParams&lt;/code&gt; is an object and the equivalent to this configuration would be &lt;code&gt;{ path: &#39;/payload.json&#39; }.&lt;/code&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;h3 id=&#34;testing-the-application&#34;&gt;Testing the application&lt;/h3&gt;
+&lt;p&gt;Before we test if our configuration worked, you have to run one of the commands below to initialize the application.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+
+When you run the application, you &lt;strong&gt;can&amp;rsquo;t use&lt;/strong&gt; &lt;strong&gt;use the &lt;code&gt;ng serve&lt;/code&gt;&lt;/strong&gt; command because it will initialize the application without Beagle. To make the Beagle&amp;rsquo;s initialization, it&amp;rsquo;s necessary to run one of the commands indicated for those who use npm or yarn.
+&lt;/div&gt;
+
+&lt;p&gt;If you use npm:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;npm run serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you use yarn:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;yarn serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;It&amp;rsquo;s important to clarify here that the command used to restart the application is fundamental make work the changes you intend to make in Beagle&amp;rsquo;s configurations files.&lt;/p&gt;
+&lt;p&gt;This process also must be done for any change made on &lt;code&gt;@Input()&lt;/code&gt; proprieties of your mapped components. Beagle&amp;rsquo;s team is constantly developing solutions to improve this.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;After finished this commands, access the local: http://localhost:4200&lt;br&gt;
+You will see this screen:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%2896%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
+
+Well done, you created your first screen with Beagle!
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: React</title>
+      <link>https://zupit.github.io/docs-beagle/docs/get-started/using-beagle/web/react/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/get-started/using-beagle/web/react/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;usage-configurations&#34;&gt;&lt;strong&gt;Usage configurations&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;After you finished the installation,  you need to make &lt;strong&gt;Beagle&amp;rsquo;s usage configuration for React&amp;rsquo;s framework.&lt;/strong&gt; To do so, you just have to follow these steps:&lt;/p&gt;
+&lt;h3 id=&#34;step-1-create-a-json-to-be-rendered&#34;&gt;Step 1: Create a JSON to be rendered&lt;/h3&gt;
+&lt;p&gt;On your React project, on the &lt;code&gt;public&lt;/code&gt; folder, create a file named &lt;code&gt;payload.json&lt;/code&gt; and copy the code below. This file will map the components that will be rendered by Beagle. Generally, it would be returned by a external server, but on this example, we&amp;rsquo;ll make a local JSON file to be rendered with Beagle&amp;rsquo;s library. .&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+    &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:container&amp;#34;,
+    &amp;#34;children&amp;#34;: [
+        {
+            &amp;#34;_beagleComponent_&amp;#34;:&amp;#34;beagle:text&amp;#34;,
+            &amp;#34;text&amp;#34;:&amp;#34;Hello Beagle&amp;#34;
+        },
+       {
+            &amp;#34;_beagleComponent_&amp;#34;:&amp;#34;beagle:text&amp;#34;,
+            &amp;#34;style&amp;#34;:{
+              &amp;#34;padding&amp;#34;:{
+                &amp;#34;top&amp;#34;:{
+                  &amp;#34;value&amp;#34;:10,
+                  &amp;#34;type&amp;#34;: &amp;#34;REAL&amp;#34;
+                }
+              }
+            },
+            &amp;#34;text&amp;#34;:&amp;#34;Beagle is a cross-platform framework which provides usage of the server Driven UI concept,natively in iOS, Android and Web applications. By using Beagle, your team could easily change application&amp;#39;s layout and data by just changing backend code&amp;#34;
+        }
+    ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;Beagle&amp;rsquo;s library comes with many pre-defined components ready to be used in their project.&lt;/p&gt;
+&lt;p&gt;The code above creates a JSON with two os these components: container e text.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&#34;step-2-create-a-configuration-file&#34;&gt;Step 2: Create a configuration file&lt;/h3&gt;
+&lt;p&gt;After you add the JSON on your project, create another file in the path &lt;code&gt;/src&lt;/code&gt;, but this time with the name &lt;strong&gt;Beagle&lt;/strong&gt;. Inside it, name a new file as &lt;code&gt;beagle-service.ts&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Once you made it, your structure must be similar to the image below:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%2863%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Now open the  &lt;code&gt;beagle-service.ts&lt;/code&gt; file and copy this code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { createBeagleUIService } from &amp;#39;@zup-it/beagle-react&amp;#39;
+
+export default createBeagleUIService({
+  baseUrl: &amp;#34;&amp;#34;,
+  components: {}
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;At this point of the configuration, you can add, for example, a path to Beagle&amp;rsquo;s external server. The most indicated is to let the baseUrl propriety without value because we&amp;rsquo;ll use a local file (&lt;code&gt;payload.json&lt;/code&gt;) for this example.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+It&amp;rsquo;s important to reinforce that, for this example, we&amp;rsquo;re using &lt;a href=&#34;https://www.typescriptlang.org/&#34;&gt;&lt;strong&gt;typescript&lt;/strong&gt;&lt;/a&gt; with the project. In case you don&amp;rsquo;t have this tool, we highly recommend you to install it, otherwise, please, ignore all the typing information.
+&lt;/div&gt;
+
+&lt;h3 id=&#34;step-3-using-beagleremoteview&#34;&gt;Step 3: Using BeagleRemoteView&lt;/h3&gt;
+&lt;p&gt;Now you need to specify inside the application, the place where the components will be rendered. For that, open Beagle&amp;rsquo;s library that provides &lt;strong&gt;BeagleRemoteView&lt;/strong&gt; and &lt;strong&gt;BeagleProvider.&lt;/strong&gt; Open the component file where you want the JSON to be rendered and change it as in the example below:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import React from &amp;#39;react&amp;#39;;
+import &amp;#39;./App.css&amp;#39;;
+import { BeagleProvider, BeagleRemoteView } from &amp;#39;@zup-it/beagle-react&amp;#39;;
+import BeagleService from &amp;#39;./beagle/beagle-service&amp;#39;;
+
+function App() {
+  return (
+    &amp;lt;BeagleProvider value={BeagleService}&amp;gt;
+      &amp;lt;BeagleRemoteView route={&amp;#39;/payload.json&amp;#39;} /&amp;gt;
+    &amp;lt;/BeagleProvider&amp;gt;
+  );
+}
+
+export default App;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When we make this note, we indicate to Beagle that our defined layout will be rendered on &lt;code&gt;payload.json&lt;/code&gt; file. In this case, two components are provided on the library:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;BeagleProvider&amp;gt;&lt;/code&gt;: Responsible to provide a &lt;code&gt;value&lt;/code&gt;propriety  as &lt;code&gt;beagle-service&lt;/code&gt; created on the previous step and contains the initial configurations;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;BeagleRemoteView&amp;gt;&lt;/code&gt;: Responsible to receive a &lt;code&gt;path&lt;/code&gt; propriety, which is the path to our JSON file.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+See that here we added  &lt;strong&gt;&#39; / &amp;lsquo;&lt;/strong&gt; because this value will be associated to the defined&lt;code&gt;baseUrl&lt;/code&gt; on the file &lt;code&gt;beagle-service.ts&lt;/code&gt;
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+&lt;code&gt;route&lt;/code&gt; in the &lt;code&gt;BeagleRemoteView&lt;/code&gt; is only valid for versions 1.3.0 and above. For earlier versions, please, use &lt;code&gt;path&lt;/code&gt; instead.
+&lt;/div&gt;
+
+&lt;h2 id=&#34;use-example&#34;&gt;Use Example&lt;/h2&gt;
+&lt;h3 id=&#34;testing-the-project&#34;&gt;Testing the project&lt;/h3&gt;
+&lt;p&gt;Before we test if our configuration worked, you have to run one of the commands below to initialize the application:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;yarn start
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;npm run start
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After finished this commands, access the local: localhost:3000&lt;br&gt;
+You will see this screen:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%2895%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
+
+Well done, you created your first screen with Beagle!
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

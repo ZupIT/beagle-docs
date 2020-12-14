@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.76.4" />
+<meta name="generator" content="Hugo 0.78.1" />
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -2068,7 +2068,7 @@
 Para entender melhor como este processo funciona, leia mais na seção <a href="https://developer.android.com/reference/android/app/FragmentTransaction#setCustomAnimations%28int,%20int,%20int,%20int%29"><strong>setCustomAnimations</strong></a> do Android.
 </div>
 
-<p>A outra maneira de customizar uma animação de transição é por meio da <a href="../../../../get-started/criando-projeto-do-zero/case-android/#passo-4-criando-o-appbeagleactivity"><strong>implementação da classe BeagleActivity</strong></a><strong>,</strong> na qual o Beagle utiliza o método <em><strong>getFragmentTransitionAnimation().</strong></em></p>
+<p>A outra maneira de customizar uma animação de transição é por meio da <a href="../../../../get-started/criando-um-projeto-do-zero/case-android/#passo-4-criando-o-appbeagleactivity"><strong>implementação da classe BeagleActivity</strong></a><strong>,</strong> na qual o Beagle utiliza o método <em><strong>getFragmentTransitionAnimation().</strong></em></p>
 <p>Caso este método não seja implementado e customizado, as transições seguirão a animação padrão Beagle. O código abaixo mostra o <strong>método da BeagleActivity</strong>, que pode ser sobrescrito dessa forma:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#204a87;font-weight:bold">open</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">getFragmentTransitionAnimation</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">FragmentTransitionAnimation</span><span style="color:#000;font-weight:bold">(</span>
     <span style="color:#000">enter</span> <span style="color:#000;font-weight:bold">=</span>  <span style="color:#000">R</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">anim</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">slide_from_right</span><span style="color:#000;font-weight:bold">,</span>

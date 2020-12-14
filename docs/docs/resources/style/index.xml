@@ -1,0 +1,401 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beagle – Style</title>
+    <link>https://zupit.github.io/docs-beagle/docs/resources/style/</link>
+    <description>Recent content in Style on Beagle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-beagle/docs/resources/style/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Android</title>
+      <link>https://zupit.github.io/docs-beagle/docs/resources/style/android/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/resources/style/android/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Inside Beagle&amp;rsquo;s library, there is a &lt;code&gt;DesignSystem&lt;/code&gt; class that can be used to personalize the components used on your application.&lt;/p&gt;
+&lt;p&gt;This class also can map application&amp;rsquo;s local resources so we can refer to &lt;a href=&#34;../../../../../key-concepts#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt; &lt;/a&gt;when you build a &lt;a href=&#34;../../../../../key-concepts#server-driven-ui&#34;&gt;&lt;strong&gt;Server-Driven&lt;/strong&gt;&lt;/a&gt; screen.&lt;/p&gt;
+&lt;p&gt;Beside the images, Beagle&amp;rsquo;s &lt;a href=&#34;../../../../key-concepts#design-system&#34;&gt;&lt;strong&gt;Design System&lt;/strong&gt;&lt;/a&gt; can customize:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the appearance of the texts;&lt;/li&gt;
+&lt;li&gt;the style of the input components;&lt;/li&gt;
+&lt;li&gt;the style of the buttons;&lt;/li&gt;
+&lt;li&gt;the style of the toolbars and&lt;/li&gt;
+&lt;li&gt;tabViews.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;customized-attributes&#34;&gt;Customized attributes&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;For Beagle to be able to apply customized styles to components, when they are declared in the application, their &lt;strong&gt;parents must refer to each corresponding family&lt;/strong&gt;. That is, to customize the components:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Text&lt;/code&gt;, your style should extend from &lt;strong&gt;&lt;code&gt;Widget.AppCompat.TextView&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TextInput&lt;/code&gt;, your style should extend from &lt;strong&gt;&lt;code&gt;Widget.AppCompat.EditText&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Button&lt;/code&gt;, your style should extend from &lt;strong&gt;&lt;code&gt;Widget.AppCompat.Button&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Toolbar&lt;/code&gt;, your style should extend from &lt;strong&gt;&lt;code&gt;Widget.AppCompat.Toolbar&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TabView&lt;/code&gt;, your style should extend from &lt;strong&gt;&lt;code&gt;Widget.Design.TabLayout&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&#34;text&#34;&gt;Text&lt;/h3&gt;
+&lt;p&gt;The text&amp;rsquo;s components for Beagle Android are &lt;strong&gt;totally customized&lt;/strong&gt;. To make this change, you just have to follow the pattern below:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;&amp;lt;!-- Custom style for textual components. --&amp;gt;
+    &amp;lt;style name=&amp;quot;CustomText&amp;quot; parent=&amp;quot;Widget.AppCompat.TextView&amp;quot;&amp;gt;
+        &amp;lt;item name=&amp;quot;android:textColor&amp;quot;&amp;gt;#000000&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;android:textSize&amp;quot;&amp;gt;20sp&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;android:textStyle&amp;quot;&amp;gt;bold&amp;lt;/item&amp;gt;
+    &amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;textinput&#34;&gt;TextInput&lt;/h3&gt;
+&lt;p&gt;The input components in Beagle Android are also &lt;strong&gt;fully customizable&lt;/strong&gt;. To make any changes, just follow the pattern below:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;&amp;lt;!-- Custom style for textual components. --&amp;gt;
+    &amp;lt;style name=&amp;quot;CustomInput&amp;quot; parent=&amp;quot;Widget.AppCompat.EditText&amp;quot;&amp;gt;
+        &amp;lt;item name=&amp;quot;android:textColor&amp;quot;&amp;gt;@color/colorBlack&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;android:background&amp;quot;&amp;gt;@drawable/text_input_background&amp;lt;/item&amp;gt;
+    &amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;button&#34;&gt;Button&lt;/h3&gt;
+&lt;p&gt;Like the texts and inputs, the buttons on the Beagle Android are &lt;strong&gt;fully customizable&lt;/strong&gt;. To make any changes, just follow the pattern below:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;&amp;lt;!-- Custom style for Button components. --&amp;gt;
+    &amp;lt;style name=&amp;quot;CustomButton&amp;quot; parent=&amp;quot;Widget.AppCompat.Button&amp;quot;&amp;gt;
+        &amp;lt;item name=&amp;quot;android:textColor&amp;quot;&amp;gt;#000000&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;android:textSize&amp;quot;&amp;gt;18sp&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;android:textAllCaps&amp;quot;&amp;gt;false&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;android:background&amp;quot;&amp;gt;?attr/selectableItemBackground&amp;lt;/item&amp;gt;
+    &amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;toolbar&#34;&gt;Toolbar&lt;/h3&gt;
+&lt;p&gt;Inside Beagle&amp;rsquo;s library for Android, the tool bar is part of&lt;a href=&#34;../../api/screen/#navigation-bar-action-bar-barra-de-navegacao&#34;&gt; &lt;strong&gt;NavigationBar&amp;rsquo;s class&lt;/strong&gt;.&lt;/a&gt; To make it properly work on &lt;a href=&#34;../../../get-started/creating-a-project-from-scratch/case-android/#passo-4-criando-o-appbeagleactivity&#34;&gt;&lt;strong&gt;BeagleActivity&lt;/strong&gt;&lt;/a&gt;, you need to inform Beagle which bar will be used on your application.&lt;/p&gt;
+&lt;p&gt;The bar customization can be done in the moment that she passes through Beagle. Besides these attributes,  Toolbar has other four that are exclusive:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;backgroundColor:&lt;/strong&gt; defines the Tool Bar&amp;rsquo;s background color.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;navigationIcon&lt;/strong&gt;: receives a &lt;code&gt;drawable&lt;/code&gt; and attributes it to a navigation bar icon on tool bar.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;titleTextAppearance&lt;/strong&gt;: receives a text style to personalize a tool bar&amp;rsquo;s title.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;centerTitle&lt;/strong&gt;: when activated, centralize the tool bar&amp;rsquo;s title.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;&amp;lt;!-- Custom style for Toolbar components. --&amp;gt;
+    &amp;lt;style name=&amp;quot;CustomToolbar&amp;quot; parent=&amp;quot;Widget.AppCompat.Toolbar&amp;quot;&amp;gt;
+        &amp;lt;item name=&amp;quot;backgroundColor&amp;quot;&amp;gt;@color/colorPrimaryDark&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;navigationIcon&amp;quot;&amp;gt;?attr/homeAsUpIndicator&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;titleTextAppearance&amp;quot;&amp;gt;@style/CustomTitleToolbar&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;centerTitle&amp;quot;&amp;gt;true&amp;lt;/item&amp;gt;
+    &amp;lt;/style&amp;gt;
+    
+    &amp;lt;style name=&amp;quot;CustomTitleToolbar&amp;quot; parent=&amp;quot;TextAppearance.AppCompat&amp;quot;&amp;gt;
+        &amp;lt;item name=&amp;quot;android:textColor&amp;quot;&amp;gt;@color/colorPrimary&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;android:textSize&amp;quot;&amp;gt;20sp&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;android:textStyle&amp;quot;&amp;gt;bold&amp;lt;/item&amp;gt;
+    &amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;tabview&#34;&gt;TabView&lt;/h3&gt;
+&lt;p&gt;The Beagle&amp;rsquo;s TabView component represents the Android&amp;rsquo;s &lt;code&gt;TabLayout&lt;/code&gt; and all its visual structure tha can be stylized with the following attributes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;tabSelectedTextColor&lt;/strong&gt;: attributes a different color to a selected tab&amp;rsquo;s text.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;tabTextColor&lt;/strong&gt;: attributes a text color to all tabs, which means not selected tabs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;tabBackground&lt;/strong&gt;: receives a &lt;code&gt;drawable&lt;/code&gt; and attributes it to TabView&amp;rsquo;s background.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;tabIndicatorColor&lt;/strong&gt;: attributes a color to a selection&amp;rsquo;s indicator of one tab.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;tabIconTint&lt;/strong&gt;: receives a &lt;code&gt;drawable&lt;/code&gt; to define icons&#39; colors, being selected or not.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;&amp;lt;!-- Custom style for TabLayout components. --&amp;gt;
+    &amp;lt;style name=&amp;quot;CustomTab&amp;quot; parent=&amp;quot;Widget.Design.TabLayout&amp;quot;&amp;gt;
+        &amp;lt;item name=&amp;quot;tabSelectedTextColor&amp;quot;&amp;gt;@color/colorWhite&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;tabTextColor&amp;quot;&amp;gt;@color/colorBlack&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;tabBackground&amp;quot;&amp;gt;@color/colorPrimaryDark&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;tabIndicatorColor&amp;quot;&amp;gt;@color/colorWhite&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;tabIconTint&amp;quot;&amp;gt;@color/selector_icon_color&amp;lt;/item&amp;gt;
+    &amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To manage all the selected tabs, we recommend you the use of a selector for the &lt;code&gt;tabIconTint&lt;/code&gt; attribute, as in the example below:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;&amp;lt;selector xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;&amp;gt;
+    &amp;lt;item android:color=&amp;quot;@android:color/white&amp;quot; android:state_selected=&amp;quot;true&amp;quot; /&amp;gt;
+    &amp;lt;item android:color=&amp;quot;@android:color/black&amp;quot; /&amp;gt;
+&amp;lt;/selector&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: IOS</title>
+      <link>https://zupit.github.io/docs-beagle/docs/resources/style/ios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/resources/style/ios/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;introdução&#34;&gt;Introdução&lt;/h2&gt;
+&lt;p&gt;Inside Beagle&amp;rsquo;s library for iOS, there&amp;rsquo;s an &lt;code&gt;AppTheme&lt;/code&gt; class that allows you to personalize components used on your application.&lt;/p&gt;
+&lt;p&gt;This class also can map application&amp;rsquo;s styles so it can be referenced on BFF to build a &lt;a href=&#34;../../../key-concepts#server-driven-ui&#34;&gt;&lt;strong&gt;Server-Driven&lt;/strong&gt;&lt;/a&gt; screen.&lt;/p&gt;
+&lt;p&gt;It makes possible to personalize, for example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Texts&#39; styles;&lt;/li&gt;
+&lt;li&gt;Button&amp;rsquo;s styles;&lt;/li&gt;
+&lt;li&gt;TabView.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It&amp;rsquo;s importante to make clear that iOS doesn&amp;rsquo;t map all the components&#39; attributes. However, the more important are already mapped, so they can be modified if necessary.&lt;/p&gt;
+&lt;h2 id=&#34;customized-attributes&#34;&gt;Customized attributes&lt;/h2&gt;
+&lt;p&gt;As not all customization&amp;rsquo;s attributes can be stylized, on the list below we&amp;rsquo;ll see which elements can be personalized through Beagle.&lt;/p&gt;
+&lt;p&gt;Another important point is that styles created on iOS and related to componentes that came from backend. On these cases, you can configure the styles so each of them can be referenced, just like the example below:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;theme&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;AppTheme&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;styles&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+    
+    &lt;span style=&#34;color:#000&#34;&gt;Styles&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;customButton&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;key&lt;/span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Styles&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;customButton&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;Styles&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;customText&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;key&lt;/span&gt;      &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Styles&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;customText&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;Styles&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;customTab&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;key&lt;/span&gt;      &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Styles&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;customTab&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;])&lt;/span&gt;
+
+    &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;theme&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;theme&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Besides reference styles, you have to create a key value pair defining a name to each style created:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;struct&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;StylePair&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;key&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#204a87&#34;&gt;String&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#204a87&#34;&gt;Any&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Styles&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;customText&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;StylePair&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;key&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;CustomText&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;customText&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;customButton&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;StylePair&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;key&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;CustomButton&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;customButton&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;customTab&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;StylePair&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;key&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;CustomTab&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;customTab&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;text&#34;&gt;Text&lt;/h3&gt;
+&lt;p&gt;The text&amp;rsquo;s components for Beagle iOS are &lt;strong&gt;totally personalized.&lt;/strong&gt; To make any attribute change, you just have to follow the pattern below:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;textH1&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;UITextView&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#204a87&#34;&gt;Void&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;BeagleStyle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;font&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;boldSystemFont&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ofSize&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;32&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt; 
+    &lt;span style=&#34;color:#000&#34;&gt;color&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;UIColor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;named&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;ColorText&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;button&#34;&gt;Button&lt;/h3&gt;
+&lt;p&gt;Besides the complete text personalization, the Button component can be customized with another attribute: the &lt;strong&gt;withTitleColor&lt;/strong&gt;, which is responsible to personalize button&amp;rsquo;s color.&lt;/p&gt;
+&lt;p&gt;On Swift, you can also add extra styles to a component by using the &lt;code&gt;&amp;lt;&amp;gt;&lt;/code&gt; note , according to the example below:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;defaultStylishButton&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;UIButton&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#204a87&#34;&gt;Void&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;BeagleStyle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;button&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;withTitleColor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;white&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;$0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;titleLabel&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;|&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;BeagleStyle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;label&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;withFont&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;systemFont&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ofSize&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;16&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;weight&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;regular&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;))&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;$0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;layer&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;cornerRadius&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;6&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;$0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;clipsToBounds&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;$0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;backgroundColor&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;UIColor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;hex&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;#3C3737&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;tabview&#34;&gt;TabView&lt;/h3&gt;
+&lt;p&gt;The Beagle&amp;rsquo;s TabView component for iOS can be stylized with these attributes:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;backGroundColor&lt;/strong&gt;: attributes a different color to a selected tab background.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;indicatorColor&lt;/strong&gt;: attributes a color to a selected background.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;customTab&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;UITabBar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#204a87&#34;&gt;Void&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;BeagleStyle&lt;/span&gt;
+                &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;tabView&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;backgroundColor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;blue&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; 
+                        &lt;span style=&#34;color:#000&#34;&gt;indicatorColor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;white&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: WEB</title>
+      <link>https://zupit.github.io/docs-beagle/docs/resources/style/web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/resources/style/web/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;It&amp;rsquo;s possible to make two main kinds of stylization with Beagle for Web:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Adding style classes&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSON components style&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Here, you will see a detailed explanation for each of these stylizations.&lt;/p&gt;
+&lt;h2 id=&#34;adding-style-classes&#34;&gt;Adding style classes&lt;/h2&gt;
+&lt;h3 id=&#34;adding-styles-propriety-on-json&#34;&gt;Adding style&amp;rsquo;s propriety on JSON&lt;/h3&gt;
+&lt;p&gt;To make this change, you must add on your JSON file a &lt;code&gt;styleId&lt;/code&gt; propriety with the name of the style&amp;rsquo;s class that you created on your angular component.&lt;/p&gt;
+&lt;p&gt;On the example below, you see how this addition was done to a &amp;ldquo;card&amp;rdquo; hypothetical class.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+   &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;custom:card&amp;#34;,
+   &amp;#34;myCustomTitle&amp;#34;: &amp;#34;Beagle Web&amp;#34;,
+   &amp;#34;myCustomDescription&amp;#34;: &amp;#34;Lorem ipsum dolor ...&amp;#34;
+   &amp;#34;styleId&amp;#34;: &amp;#34;card&amp;#34;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;inserting-a-class-on-components&#34;&gt;Inserting a class on components&lt;/h3&gt;
+&lt;p&gt;The process to insert a class to a component varies according to the framework you&amp;rsquo;re using. Check out the step by step of each case in the following tabs:&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t84&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t84-0&#34; role=&#34;tab&#34; aria-controls=&#34;t84-0&#34; aria-selected=&#34;true&#34;&gt;Angular&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t84-1&#34; role=&#34;tab&#34; aria-controls=&#34;t84-1&#34;&gt;React&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t84&#34;&gt;&lt;div id=&#34;t84-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t84-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;On Angular, there are two ways to add a class we receive through &lt;code&gt;styleId&lt;/code&gt; propriety:&lt;/p&gt;
+&lt;h4 id=&#34;1-through-viewencapsulation&#34;&gt;1. Through ViewEncapsulation&lt;/h4&gt;
+&lt;p&gt;Open the file on your angular component and right down the &lt;code&gt;styleUrls&lt;/code&gt; propriety on @Component decorator, add the &lt;code&gt;ViewEncapsulation.none.&lt;/code&gt; enum.&lt;/p&gt;
+&lt;p&gt;See how it works on the example below:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a40000&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Component&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;({&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;selector&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;app-card&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;templateUrl&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;./card.component.html&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;styleUrls&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;./card.component.less&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;],&lt;/span&gt;
+  &lt;span style=&#34;color:#000&#34;&gt;encapsulation&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ViewEncapsulation&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;None&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Once you made it, you just have to run the project with one of these commands:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;npm run serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;yarn serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After you add the None enum to a @Component() encapsulation propriety, it&amp;rsquo;s necessary to make it useful. See how to make it on the image below:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%2812%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+&lt;p&gt;If you want to see more about &lt;strong&gt;ViewEncapsulation&lt;/strong&gt;, check out &lt;a href=&#34;https://angular.io/api/core/ViewEncapsulation#viewencapsulation&#34;&gt;&lt;strong&gt;Angular’s documentation.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;2-through-styleid-propriety&#34;&gt;2. Through StyleId propriety&lt;/h4&gt;
+&lt;p&gt;Another way to add a class is by maintaining a native encapsulation propriety. To do so, you have to open your Angular&amp;rsquo;s component file and add a new @Input, that in this case is StyleId.&lt;/p&gt;
+&lt;p&gt;See how it works on the example below:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;CardComponent&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;implements&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;OnInit&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color:#a40000&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;myCustomTitle&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;string&lt;/span&gt;
+  &lt;span style=&#34;color:#a40000&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;myCustomDescription&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;string&lt;/span&gt;
+  &lt;span style=&#34;color:#a40000&#34;&gt;@&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Input&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;styleId&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;string&lt;/span&gt;
+
+  &lt;span style=&#34;color:#000&#34;&gt;constructor&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;...&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Once you made it, this Input has the reference of the class&#39; name you added on JSON in the previous step. In the sequence, you need to change the HTML as in the model below:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;div&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;{{styleId}}&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;div&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;h1&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;myCustomTitle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;/h1&amp;gt;&lt;/span&gt;
+        &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;h3&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;myCustomDescription&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;/h3&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;/div&amp;gt;&lt;/span&gt;
+&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Finally, you just have to run the project with one of the these commands:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;npm run serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;yarn serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Anyway you used to connect your style class to a component may brings the same result and your component can be changed according to the defined style in your class.&lt;/p&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t84-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t84-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;On React&amp;rsquo;s projects, you have to access your class through &lt;code&gt;styleId&lt;/code&gt; propriety.&lt;/p&gt;
+&lt;p&gt;Import your style&amp;rsquo;s file on the component and then you need to attribute a value to  &lt;code&gt;styleId&lt;/code&gt;  on &lt;code&gt;className&lt;/code&gt; through the props.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;React&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;react&amp;#39;&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;./custom-text.style.css&amp;#39;&lt;/span&gt;
+
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;CustomTextComponent&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;props&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;){&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+        &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;p&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;className&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;props&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;styleId&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;props&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;customText&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;/p&amp;gt;&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;CustomTextComponent&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The elements&#39; components can now receive the class defined on JSON.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+It&amp;rsquo;s worth reinforcing that to define a class with&lt;code&gt;styleId&lt;/code&gt; class added, it&amp;rsquo;s fundamental that you have a &lt;strong&gt;style file&lt;/strong&gt; inside your project (Ex: CSS, SASS, LESS).
+&lt;/div&gt;
+
+&lt;h2 id=&#34;stylizing-components-through-json&#34;&gt;Stylizing components through JSON&lt;/h2&gt;
+&lt;p&gt;Another Beagle Web&amp;rsquo;s possibility is to stylize its components. You see on the following topics what can be done directly through JSON:&lt;/p&gt;
+&lt;h3 id=&#34;position&#34;&gt;Position&lt;/h3&gt;
+&lt;p&gt;You can change the element&amp;rsquo;s position on the screen by using the &lt;code&gt;position&lt;/code&gt; propriety, like in the example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+  ...
+    {
+      &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:text&amp;#34;,
+      &amp;#34;text&amp;#34;: &amp;#34;Welcome to the Beagle playground!&amp;#34;,
+      &amp;#34;style&amp;#34;: {
+        &amp;#34;positionType&amp;#34;:&amp;#34;relative&amp;#34;,
+        &amp;#34;position&amp;#34;: {
+          &amp;#34;top&amp;#34;: {
+            &amp;#34;value&amp;#34;: 10,
+            &amp;#34;type&amp;#34;: &amp;#34;REAL&amp;#34;
+          },
+          &amp;#34;left&amp;#34;: {
+            &amp;#34;value&amp;#34;: 10,
+            &amp;#34;type&amp;#34;: &amp;#34;REAL&amp;#34;
+          }
+        }
+      }
+    }
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;margin-e-padding&#34;&gt;Margin e Padding&lt;/h3&gt;
+&lt;p&gt;You can change the element&amp;rsquo;s margin or spacing on the screen by using &lt;code&gt;margin&lt;/code&gt; e &lt;code&gt;padding&lt;/code&gt; proprieties, like in the example below:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+  ...
+    {
+      &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:text&amp;#34;,
+      &amp;#34;text&amp;#34;: &amp;#34;Welcome to the Beagle playground!&amp;#34;,
+      &amp;#34;style&amp;#34;: {
+        &amp;#34;margin&amp;#34;: {
+          &amp;#34;top&amp;#34;: {
+            &amp;#34;value&amp;#34;: 10,
+            &amp;#34;type&amp;#34;: &amp;#34;REAL&amp;#34;
+          },
+          &amp;#34;left&amp;#34;: {
+            &amp;#34;value&amp;#34;: 10,
+            &amp;#34;type&amp;#34;: &amp;#34;REAL&amp;#34;
+          }
+        }
+      }
+    }
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;size&#34;&gt;Size&lt;/h3&gt;
+&lt;p&gt;It&amp;rsquo;s also possible to change elements&#39; dimension by using &lt;code&gt;Size&lt;/code&gt; propriety, which receives the values on &lt;code&gt;Height&lt;/code&gt; or &lt;code&gt;Width&lt;/code&gt;. See on the example below:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+  &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:container&amp;#34;,
+    &amp;#34;size&amp;#34;: {
+      &amp;#34;height&amp;#34;: {
+        &amp;#34;value&amp;#34;: 100,
+        &amp;#34;type&amp;#34;: &amp;#34;REAL&amp;#34;
+      },
+      &amp;#34;width&amp;#34;: {
+        &amp;#34;value&amp;#34;: 100,
+        &amp;#34;type&amp;#34;: &amp;#34;REAL&amp;#34;
+      }
+    }
+  }
+  ...
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;Notice that, in all the examples above, the proprieties receive the values&#39; maps in a  &amp;lt;value, type&amp;gt; format.&lt;/p&gt;
+&lt;p&gt;In Beagle&amp;rsquo;s case, the available values are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;REAL - Value on pixel (&amp;lsquo;px&amp;rsquo;)&lt;/li&gt;
+&lt;li&gt;PERCENT - Value on percentage (%)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&#34;flex&#34;&gt;Flex&lt;/h3&gt;
+&lt;p&gt;Finally, you have the possibility to add proprieties in a flexbox layout model with Beagle&amp;rsquo;s library.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+  &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:container&amp;#34;,
+  &amp;#34;style&amp;#34;: {
+    &amp;#34;backgroundColor&amp;#34;:&amp;#34;red&amp;#34;,
+    &amp;#34;flex&amp;#34;: {
+      &amp;#34;flexDirection&amp;#34;: &amp;#34;COLUMN&amp;#34;,
+      &amp;#34;alignItems&amp;#34;: &amp;#34;CENTER&amp;#34;,
+      &amp;#34;justifyContent&amp;#34;: &amp;#34;CENTER&amp;#34;
+    }
+  }
+}
+ ...
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+Besides these functionalities, there are some components that have specific proprieties like text change color or alignement. Check out more about &lt;a href=&#34;../../../api/components/&#34;&gt;&lt;strong&gt;Beagle&amp;rsquo;s components.&lt;/strong&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
