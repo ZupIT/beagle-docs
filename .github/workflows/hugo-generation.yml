@@ -1,7 +1,7 @@
 name: hugo to github pages
 
 on:
-  push:
+  pull_request:
     branches:
       - main  
     tags-ignore:
@@ -27,6 +27,9 @@ jobs:
       - name: Build
         run: hugo -D
         working-directory: Settings
+        
+      - name: Clean old Build
+        run: rm -rf docs
               
       - name: Deploy
         uses: stefanzweifel/git-auto-commit-action@v4
