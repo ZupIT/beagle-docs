@@ -7,11 +7,11 @@ on:
     tags-ignore:
       - '*.*' 
     paths-ignore: 
-      - .\docs
+      - docs
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
@@ -25,9 +25,8 @@ jobs:
           extended: true
 
       - name: Build
-        run: |
-              cd Settings
-              hugo -D
+        run: hugo -D
+        working-directory: Settings
               
       - name: Deploy
         uses: stefanzweifel/git-auto-commit-action@v4
