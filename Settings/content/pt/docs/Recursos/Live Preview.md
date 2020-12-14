@@ -24,12 +24,12 @@ Esta conexão entre frontend e backend é feita via `WebSocket` utilizando a por
 
 Para usar o `Live Preview` você deve: 
 
-* Usar o [**Beagle SDK**](../../../get-started/instalando-beagle/backend) em seu BFF**;**
+* Usar o [**Beagle SDK**](../../../get-started/instalando-o-beagle/backend) em seu BFF**;**
 * Instalar o `BeaglePreview` plugin;
 
 ### Configuração do BFF
 
-Você precisa que seu BFF esteja configurado com o Beagle para utilizar o Live Preview. Caso ainda não o tenha, faça o [**download de um projeto inicial pronto**](https://github.com/ZupIT/beagle-examples/tree/master/BeagleSampleBackend). Outra possibilidade que você pode fazer, é o nosso tutorial de [**como implementar um backend**](../get-started/criando-projeto-do-zero/case-backend) com o Beagle configurado.
+Você precisa que seu BFF esteja configurado com o Beagle para utilizar o Live Preview. Caso ainda não o tenha, faça o [**download de um projeto inicial pronto**](https://github.com/ZupIT/beagle-examples/tree/master/BeagleSampleBackend). Outra possibilidade que você pode fazer, é o nosso tutorial de [**como implementar um backend**](../get-started/criando-um-projeto-do-zero/case-backend) com o Beagle configurado.
 
 ### Instalação **do plugin IntelliJ**
 
@@ -194,7 +194,7 @@ startActivity(
 {{% tab name="Cliente iOS" %}}
 ### Passo 1: Instalar o submódulo
 
-Para realizar a instalação, é necessário primeiro já ter seguido os [**passos de instalação do Beagle para iOS**](../../get-started/instalando-beagle/beagle-ios). Assim os passos seguintes variam de acordo com o método utilizado.
+Para realizar a instalação, é necessário primeiro já ter seguido os [**passos de instalação do Beagle para iOS**](../../get-started/instalando-o-beagle/ios). Assim os passos seguintes variam de acordo com o método utilizado.
 
 #### Utilizando via CocoaPods
 

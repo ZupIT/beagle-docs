@@ -66,7 +66,7 @@ class CustomAction: Action {
 
 3. Para registrar a ação, apenas crie o método com todo seu custom action e chame o  método do Beagle `registerCustomAction`  para fazer o registro; 
 
-4. Chame o método criado no BeagleConfig, ele pode ser visto nesse [**exemplo**](../../get-started/criando-projeto-do-zero/):
+4. Chame o método criado no BeagleConfig, ele pode ser visto nesse [**exemplo**](../../get-started/criando-um-projeto-do-zero/):
 
 ```kotlin
 private func registerCustomAction() {

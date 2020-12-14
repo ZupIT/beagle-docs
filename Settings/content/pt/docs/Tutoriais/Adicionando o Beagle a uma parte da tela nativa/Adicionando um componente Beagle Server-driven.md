@@ -18,10 +18,10 @@ No exemplo abaixo, vamos exibir um botão server-driven em uma tela nativa. O re
 
 Para que essa configuração funcione corretamente, você precisa de:
 
-* Um [**BFF**](../../../../../../../principais-conceitos#backend-for-frontend) configurado com o Beagle. Caso não o tenha, veja como configurar nesse [**tutorial**](../../../../../../../get-started/criando-projeto-do-zero/case-backend).
+* Um [**BFF**](../../../../../../../principais-conceitos#backend-for-frontend) configurado com o Beagle. Caso não o tenha, veja como configurar nesse [**tutorial**](../../../../../../../get-started/criando-um-projeto-do-zero/case-backend).
 * Um frontend configurado com o Beagle para Android ou iOS. Caso não o tenha, siga um dos tutoriais de acordo com sistema operacional:
-  * [**Android**](../../../../../../get-started/criando-projeto-do-zero/case-android/)
-  * [**iOS**](../../../../../get-started/criando-projeto-do-zero/case-ios/)
+  * [**Android**](../../../../../../get-started/criando-um-projeto-do-zero/case-android/)
+  * [**iOS**](../../../../../get-started/criando-um-projeto-do-zero/case-ios/)
 
 ## Passo 1: Criar o componente no backend
 
@@ -274,7 +274,7 @@ Ao final do processo, você poderá "chamar" pela nossa tela nativa que irá apa
 {{% /tab %}}
 
 {{% tab name="WEB" %}}
-Se você ainda não configurou a biblioteca em seu projeto, [**veja aqui como fazer isso**.](../../../../get-started/usando-beagle/)
+Se você ainda não configurou a biblioteca em seu projeto, [**veja aqui como fazer isso**.](../../../../get-started/usando-o-beagle/)
 
 Você deve utilizar o [**Remote View**](../../../features/customizacao/beagle-para-web/parametros-remote-view), fornecido pela biblioteca do Beagle, para criar telas híbridas com alguns componentes server driven na web.
 

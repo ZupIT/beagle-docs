@@ -81,7 +81,7 @@ Assim como os textos e inputs, os botões no Beagle Android são **totalmente cu
 
 ### Toolbar
 
-Dentro da biblioteca Beagle no Android, a barra de ferramentas faz parte da [**classe NavigationBar**.](../../../api/screen/#navigation-bar-action-bar-barra-de-navegacao) Para que ela funcione corretamente no [**BeagleActivity**](../../../get-started/criando-projeto-do-zero/case-android/#passo-4-criando-o-appbeagleactivity), você precisar informar ao Beagle qual barra irá utilizar na sua aplicação. 
+Dentro da biblioteca Beagle no Android, a barra de ferramentas faz parte da [**classe NavigationBar**.](../../../api/screen/#navigation-bar-action-bar-barra-de-navegacao) Para que ela funcione corretamente no [**BeagleActivity**](../../../get-started/criando-um-projeto-do-zero/case-android/#passo-4-criando-o-appbeagleactivity), você precisar informar ao Beagle qual barra irá utilizar na sua aplicação. 
 
 A customização da barra pode ser feita no momento em que ela é passada para o Beagle. A Toolbar, além dos atributos já mencionados, possui outros quatro que são exclusivos: 
 

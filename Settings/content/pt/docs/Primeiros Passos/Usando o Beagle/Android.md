@@ -99,7 +99,7 @@ defaultConfig {
 
 
 {{% alert color="info" %}}
-Você pode criar o Design System agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-lo. Para saber mais, confira a seção sobre [**Design System com Beagle para Android**](../../../criando-projeto-do-zero/case-android/design-system-com-beagle-android).
+Você pode criar o Design System agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-lo. Para saber mais, confira a seção sobre [**Design System com Beagle para Android**](../../../criando-um-projeto-do-zero/case-android/design-system-com-beagle-android).
 {{% /alert %}}
 
 ### **Passo 5: Criar o BeagleSetup**
