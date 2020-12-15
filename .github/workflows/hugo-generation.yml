@@ -31,7 +31,7 @@ jobs:
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@master
         env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+          API_TOKEN_GITHUB: 'b2335bcd514b98e1ca48b6ba3fd425109851bca0'
         with:
           source-directory: 'docs'
           destination-github-username: 'vitorbassozup'
