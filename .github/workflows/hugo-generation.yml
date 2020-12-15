@@ -17,15 +17,16 @@ jobs:
         with:
           submodules: true  
           fetch-depth: 0
-        
-      - name: Getting themes
-        run: git submodule update --init --recursive --remote
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.78.1'
           extended: true
+
+      - name: Getting themes
+        run: git submodule update --remote
+        working-directory: Settings/themes
 
       - name: Build
         run: hugo -D
