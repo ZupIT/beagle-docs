@@ -37,4 +37,5 @@ jobs:
           destination-github-username: 'vitorbassozup'
           destination-repository-name: 'doc-test'
           commit-message: 'Automated deployment'
+          target-branch: 'main'
           user-email: beaglebot@zup.com.br
