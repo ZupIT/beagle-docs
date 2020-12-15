@@ -76,7 +76,7 @@ Confirm structure is:
 
 {{< tabs name="T91" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:confirm.json
 {
   "_beagleComponent_": "beagle:container",
   "children": [
@@ -97,7 +97,8 @@ Confirm structure is:
     }
   ]
 }
-```
+-->
+{{% playground "confirm.json" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
