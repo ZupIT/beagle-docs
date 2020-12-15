@@ -25,8 +25,7 @@ jobs:
           extended: true
 
       - name: Getting themes
-        run: git submodule update --remote
-        working-directory: Settings/themes
+        run: git submodule update --init --recursive --depth 1
 
       - name: Build
         run: hugo -D
