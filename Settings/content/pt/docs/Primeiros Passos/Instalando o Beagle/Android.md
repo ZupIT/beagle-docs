@@ -22,7 +22,7 @@ Você precisa ajustar as dependências do seu repositório para receber o Beagle
 
 Para versão anterior a 1.1.0 adicione no build.gradle *maven{url}*:
 
-```groovy
+```kotlin
 allprojects {
     repositories {
         google()
