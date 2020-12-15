@@ -33,7 +33,8 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-directory: 'main'
+          source-directory: 'docs'
           destination-github-username: 'vitorbassozup'
           destination-repository-name: 'doc-test'
+          commit-message: 'Automated deployment'
           user-email: beaglebot@zup.com.br
