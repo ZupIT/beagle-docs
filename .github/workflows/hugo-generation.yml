@@ -1,7 +1,7 @@
 name: hugo to github pages
 
 on:
-  push:
+  pull_request:
     branches:
       - main  
     tags-ignore:
@@ -24,15 +24,16 @@ jobs:
           hugo-version: '0.78.1'
           extended: true
 
-      - name: Clean old Build
-        run: rm -rf docs
-
       - name: Build
         run: hugo -D
         working-directory: Settings
               
-      - name: Deploy
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Deploy Beagle Doc
+        uses: cpina/github-action-push-to-another-repository@master
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          commit_message: 'auto generated pages added'
-          branch: main
+          source-directory: 'docs'
+          destination-github-username: 'vitorbassozup'
+          destination-repository-name: 'doc-test'
+          user-email: beagledocs@zup.com.br
