@@ -34,3 +34,6 @@ jobs:
           cd doc-test
           rm -rf docs
           mv ../docs .
+          git add --all
+          git commit -m "Automated build"
+          git push -u origin main
