@@ -9,4 +9,10 @@ To run this project run the following commands:
 
 `cd Settings`
 
-`hugo server --watch=false`
+You must have installed Node and then install your dependencies using npm:
+
+`npm install`
+
+Then run:
+
+`hugo server` if you're getting a fatal error: Pipe failed, run: `hugo server --watch=false`

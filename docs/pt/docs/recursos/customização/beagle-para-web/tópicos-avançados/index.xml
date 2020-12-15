@@ -1,0 +1,995 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beagle – Tópicos avançados</title>
+    <link>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/t%C3%B3picos-avan%C3%A7ados/</link>
+    <description>Recent content in Tópicos avançados on Beagle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/t%C3%B3picos-avan%C3%A7ados/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Estrutura de dados</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/t%C3%B3picos-avan%C3%A7ados/estrutura-de-dados/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/t%C3%B3picos-avan%C3%A7ados/estrutura-de-dados/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;como-o-beagle-representa-a-view&#34;&gt;Como o Beagle representa a view?&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+As features descritas aqui estão disponíveis apenas nas versões acima de 1.2.0.
+&lt;/div&gt;
+
+&lt;p&gt;Beagle trabalha em uma árvore de componenentes e para fazer funcionar, é preciso seguir algumas regras. Nos termos do Typescript, a árvore do Beagle pode ser definida como:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;export interface BeagleUIElement {
+  _beagleComponent_: string,
+  id: string,
+  context?: DataContext,
+  children?: BeagleUIElement[],
+  style?: Style,
+  [key: string]: any,
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Veja abaixo cada componente da árvore:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;_beagleComponent_&lt;/code&gt; é o nome do componenete UI a ser renderizado;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;id&lt;/code&gt; é o identificador único para o node. Observação: mesmo que o &lt;code&gt;id&lt;/code&gt; é obrigatório pela estrutura interna da árvore, antes de processá-la, o Beagle atribui um id único qualquer para cada node sem um id, tornando-o opcional no json fornecido pelo backend.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;context&lt;/code&gt; é um &lt;a href=&#34;../../../../../../api/contexto/&#34;&gt;&lt;strong&gt;contexto&lt;/strong&gt; &lt;/a&gt;definido para um componente e seus filhos.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;children&lt;/code&gt; é uma array de nodes representando os filhos que estão no node atual.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;style&lt;/code&gt;  é a regra de estilização dos componentes. Essas regras não são CSS, mas &lt;a href=&#34;../../../../estilizacao/&#34;&gt;&lt;strong&gt;estruturas definidas pelo Beagle.&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;O node possui propriedades esperadas pelo próprio componente, como text, que poderia ter &lt;code&gt;text&lt;/code&gt; e &lt;code&gt;justify&lt;/code&gt;, enquanto o botão poderia ter &lt;code&gt;onPress&lt;/code&gt;, &lt;code&gt;text&lt;/code&gt; e &lt;code&gt;disabled&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Veja abaixo um exemplo da árvore de componentes, pronta para ser processada pelo Beagle:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+  &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;container&amp;#34;,
+  &amp;#34;id&amp;#34;: &amp;#34;container&amp;#34;,
+  &amp;#34;children&amp;#34;: [
+    {
+      &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;image&amp;#34;,
+      &amp;#34;id&amp;#34;: &amp;#34;logo&amp;#34;,
+      &amp;#34;url&amp;#34;: &amp;#34;https://i.ibb.co/rvRN9kv/logo.png&amp;#34;
+    },
+    {
+      &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;id&amp;#34;: &amp;#34;welcome&amp;#34;,
+      &amp;#34;text&amp;#34;: &amp;#34;Welcome to the Beagle playground!&amp;#34;
+    },
+    {
+      &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;id&amp;#34;: &amp;#34;instructions&amp;#34;,
+      &amp;#34;text&amp;#34;: &amp;#34;Use the panel on the left to start coding!&amp;#34;
+    },
+    {
+      &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;button&amp;#34;,
+      &amp;#34;id&amp;#34;: &amp;#34;fast-guide&amp;#34;,
+      &amp;#34;text&amp;#34;: &amp;#34;Access the fast guide&amp;#34;
+    }
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;O json acima é uma versão simplificada da página inicial do Beagle Playground. Ele renderiza o container para guardar o resto dos elementos: uma imagem, dois textos e um botão. Para ver o exemplo completo e o UI renderizado, &lt;a href=&#34;https://beagle-playground.netlify.app/&#34;&gt;&lt;strong&gt;veja o Beagle Playground&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;o-payload-do-beagle&#34;&gt;O payload do Beagle&lt;/h2&gt;
+&lt;p&gt;No tipo definido anteriormente (&lt;code&gt;BeagleUIElement&lt;/code&gt;), você pode ver que o id é uma propriedade obrigatória e que os filhos de um node devem sempre ser nomeados &lt;code&gt;children&lt;/code&gt;.  No backend isso não é uma garantia, por essa razão, o Beagle gera internamente ids únicos para cada node sem um e traduz a propriedade children. Uma mesa de componente, por exemplo, pode ter seus filhos em uma propriedade &lt;code&gt;rows&lt;/code&gt;. Antes de começar o processo da árvore, o Beagle converte o &lt;code&gt;rows&lt;/code&gt; para o nome esperado &lt;code&gt;children&lt;/code&gt;, veja a seção abaixo sobre the children property.&lt;/p&gt;
+&lt;p&gt;O payload pode retornar para o backend qualquer coisa, mas internamente o Beagle deve trabalhar com a árvore de componentes &lt;code&gt;BeagleUIElement&lt;/code&gt;. Você deve atravessar a árvore e detectar cada componente e seus filhos.&lt;/p&gt;
+&lt;p&gt;É recomendado que o backend retorne o JSON representando a árvore de componentes, como é esperado pelo Beagle, mas se por alguma razão isso não seja possível, o Beagle Web torna possível o pré processamento da resposta e constrói a árvore no front-end antes que o Beagle começe a trabalhar com ela, como em &lt;strong&gt;lifecycles&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;a-propriedade-children&#34;&gt;A propriedade children&lt;/h3&gt;
+&lt;p&gt;É recomendado sempre usar a array com o nome &lt;code&gt;children&lt;/code&gt; para especificar os filhos nodes de um componente. Mas, o Beagle irá trabalhar fora da caixa, se ao invés de um array de componentes, o único node é passado e o nome &lt;code&gt;child&lt;/code&gt; também pode ser usado.  Em alguns casos, quando o componente representa uma tabela, os filhos podem ser nomeados &lt;code&gt;rows&lt;/code&gt; ao invés de &lt;code&gt;children&lt;/code&gt;, nesse caso você pode informar ao Beagle que é um componente específico e que o nome da propriedade children é diferente. Veja o exemplo abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;@BeagleChildren({ property: &amp;#39;rows&amp;#39; })
+@Component({
+  // ...
+})
+class Table {
+  // ...
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;O exemplo acima é para Angular, mas funciona da mesma forma em outras plataformas. Se o componente é funcional ou se você não quiser usar anotações, você pode usá-lo como uma função, veja o exemplo abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;const Table = (props) =&amp;gt; {
+  // ...
+}
+
+BeagleChildren({ property: &amp;#39;rows&amp;#39; })(Table)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Beagle view</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/t%C3%B3picos-avan%C3%A7ados/beagle-view/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/t%C3%B3picos-avan%C3%A7ados/beagle-view/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;acessar-e-controlar-o-beagleview&#34;&gt;Acessar e controlar o BeagleView&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+As features descritas aqui estão disponíveis apenas em versões acima de 1.2.0.
+&lt;/div&gt;
+
+&lt;p&gt;Beagle View é uma entidade responsável por gerenciar a view do server-driven. Pode ser criada por meio do Beagle Service, pela função &lt;code&gt;createBeagleView&lt;/code&gt;. O BeagleView pode buscar uma nova view, atualizar a sua árvore, navegar, etc.&lt;/p&gt;
+&lt;h2 id=&#34;acessando-o-beagle-view&#34;&gt;Acessando o Beagle View&lt;/h2&gt;
+&lt;p&gt;O Beagle View é criado no Angular ou React quando o componenente&lt;code&gt;BeagleRemoteView&lt;/code&gt; é usado.  Para acessá-lo, você deve usar a propriedade &lt;code&gt;onCreateBeagleView&lt;/code&gt; no Angular ou a &lt;code&gt;viewRef&lt;/code&gt; no React. Veja os exemplos abaixo:&lt;/p&gt;
+&lt;h3 id=&#34;angular&#34;&gt;&lt;strong&gt;Angular&lt;/strong&gt;&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&amp;lt;beagle-remote-view [loadParams]=&amp;#34;loadParams&amp;#34; (onCreateBeagleView)=&amp;#34;onCreateBeagleView($event)&amp;#34;&amp;gt;
+beagle-remote-view&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { Component } from &amp;#39;@angular/core&amp;#39;
+import { BeagleView } from &amp;#39;@zup-it/beagle-web&amp;#39;
+
+@Component({
+  // ...
+})
+class MyComponent {
+  private beagleView: BeagleView | undefined
+
+  // ...
+
+  logBeagleView() {
+    if (!this.beagleView) return
+    console.log(this.beagleView))
+  }
+
+  onCreateBeagleView(beagleView) {
+    this.beagleView = beagleView
+    this.logBeagleView()
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;react&#34;&gt;&lt;strong&gt;React&lt;/strong&gt;&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import React, { useRef, MutableRefObject, useEffect } from &amp;#39;react&amp;#39;
+import { BeagleRemoteView } from &amp;#39;@zup-it/beagle-react&amp;#39;
+import { BeagleView } from &amp;#39;@zup-it/beagle-web&amp;#39;
+
+const MyComponent: FC = () =&amp;gt; {
+  const beagleView = useRef() as MutableRefObject&amp;lt;BeagleView | undefined&amp;gt;
+
+  // ...
+
+  logBeagleView() {
+    if (!beagleView.current) return
+    console.log(beagleView.current)
+  }
+
+  useEffect(logBeagleView, [])
+
+  return &amp;lt;BeagleRemoteView path=&amp;#34;/my-path&amp;#34; viewRef={beagleView} /&amp;gt;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Nos exemplos acima, o Beagle View foi acessado e logado. É importante lembrar que é preciso checar a disponibilidade do Beagle View antes de usá-lo, uma vez que ele é criado por um componente &lt;code&gt;child&lt;/code&gt;, ele não estará disponível antes da criação dos componentes &lt;code&gt;children&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;buscando-a-view&#34;&gt;Buscando a view&lt;/h2&gt;
+&lt;p&gt;Para buscar uma view do backend e atualizar a view atual, você precisa usar o método &lt;code&gt;fetch&lt;/code&gt; do &lt;code&gt;BeagleView&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A operação de busca por ser em toda a árvore ou apenas nas branch. Se for a primeira, a árvore é toda substituída pelo resultado da requisição. Caso contrário, a árvore é mantida, mas a branch é atualizada pelo fetch, é ela que será substituída pelo resultado da requisição.&lt;/p&gt;
+&lt;p&gt;Abaixo veja o exemplo da chamada da função &lt;code&gt;fetch&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;// fetches the remote view at /my-path and uses it to replace the entire current view
+beagleView.fetch({ path: &amp;#39;/my-path&amp;#39; })
+
+// fetches the remote view at /my-lazy-container and uses it to replace the component with id &amp;#39;lazy&amp;#39;
+beagleView.fetch({ path: &amp;#39;/my-lazy-container&amp;#39; }, &amp;#39;lazy&amp;#39;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;fetch&lt;/code&gt; aceita 3 parâmetros, e eles são:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;loadParams:&lt;/strong&gt; obrigatório. Objeto contendo os parâmetros para controlar a requisição, veja as opções a seguir:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;path:&lt;/strong&gt; obrigatório. Caminho para a view no backend.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;fallback:&lt;/strong&gt; opcional. A árvore do Beagle é retornada em caso de erro.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;method:&lt;/strong&gt; opcional. &lt;code&gt;get&lt;/code&gt; por padrão. Use essa opção se você precisar de um método http.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;headers:&lt;/strong&gt; opcional. Use essa opção para passar headers adicionais para uma única requisição.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;shouldShowLoading:&lt;/strong&gt; opcional. Mostra se você deve usar ou não o loadingComponent. E usará a configuração global caso não for especificado.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;shouldShowError?:&lt;/strong&gt; opcional.  Mostra se o componente da requisição falhou. E usará a configuração global caso não for especificado.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;strategy:&lt;/strong&gt; opcional.  Mostra qual &lt;a href=&#34;../../../../cache/&#34;&gt;&lt;strong&gt;estratégia de cache&lt;/strong&gt;&lt;/a&gt; deve ser usada para carregar uma view específica. E usará a configuração global caso não for especificado.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;loadingComponent:&lt;/strong&gt; opcional. O componente de carregamento a ser usado. E usará a configuração global caso não for especificado.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;errorComponent:&lt;/strong&gt; optional.  O componente de erro a ser usado.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;anchor:&lt;/strong&gt; opcional. Id do node a ser anexado no resultado da view, por padrão use o node                  raiz. É usado para atualizar apenas uma branch.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;mode:&lt;/strong&gt; opcional. Como anexar o resultado da view direto do anchor, veja os quatro modos possíveis:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;replaceComponent&lt;/code&gt;: default. Substitui a âncora com o resultado da requisição.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;replace&lt;/code&gt;: substitui os filhos (children) da âncora com o resultado da requisição.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;prepend&lt;/code&gt;: adiciona o resultado da requisição no começo da lista dos filhos da âncora.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;append&lt;/code&gt;: adiciona o resultado da requisição no final da lista dos filhos.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;inscrevendo-os-eventos&#34;&gt;Inscrevendo os eventos&lt;/h2&gt;
+&lt;p&gt;Você pode se inscrever a eventos no Beagle View. Há dois tipos de assinatura, a primeira escuta  cada atualização da árvore (&lt;code&gt;beagleView.subscribe&lt;/code&gt;)  e a outra observa cada erro do processo de busca/renderização (&lt;code&gt;beagleView.addErrorListener&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Quando o &lt;code&gt;beagleView.subscribe&lt;/code&gt; é chamado, você deve passar o único parâmetro, onde a função recebe a árvore renderizada atual. Veja o exemplo abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;const unsubscribeLogger = beagleView.subscribe((newTree) =&amp;gt; {
+  console.log(&amp;#39;The tree was updated!&amp;#39;)
+  console.log(newTree)
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Para remover o ouvinte, apenas chame a função retornada. No exemplo anterior &lt;code&gt;unsubscribeLogger()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Ouvintes de erros são registrados de forma similar, a única diferença é que eles recebem uma lista de erros:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;const removeErrorListener = beagleView.addErrorListener((errors) =&amp;gt; {
+  console.log(&amp;#39;Oops! An error just happened!&amp;#39;)
+  console.log(errors)
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Por padrão, o Beagle loga cada erro que foi renderizado/buscado no processo até o console. Uma vez que o erro do ouvinte é adicionado no Beagle View, o Beagle irá parar de de logar os erros por ele mesmo e usar o tratamento que você adicionou.&lt;/p&gt;
+&lt;h2 id=&#34;destruindo-o-beagle-view&#34;&gt;Destruindo o Beagle View&lt;/h2&gt;
+&lt;p&gt;Para evitar vazamento de memória, o Beagle View precisa ser destruído, se não for usado novamente. Se você estiver usando Angular ou React, não há necessidade de se preocupar com isso, porque será feito pelo framework. Se você estiver usando o Beagle Web, você deve chamar o &lt;code&gt;beagleView.destroy()&lt;/code&gt; quando a remote view é removida da página.&lt;/p&gt;
+&lt;h2 id=&#34;api&#34;&gt;API&lt;/h2&gt;
+&lt;p&gt;Você encontra abaixo todos os métodos do Beagle View e sua descrição:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&#34;text-align:left&#34;&gt;Atributo&lt;/th&gt;
+      &lt;th style=&#34;text-align:left&#34;&gt;Tipo&lt;/th&gt;
+      &lt;th style=&#34;text-align:left&#34;&gt;Defini&amp;#xE7;&amp;#xE3;o&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;&lt;b&gt;subscribe&lt;/b&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;fun&amp;#xE7;&amp;#xE3;o&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;Recebe o ouvinte e retorna a fun&amp;#xE7;&amp;#xE3;o para cancelar a inscri&amp;#xE7;&amp;#xE3;o.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;
+        &lt;p&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;b&gt;addErrorListener&lt;/b&gt;
+        &lt;/p&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;fun&amp;#xE7;&amp;#xE3;o&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;&lt;b&gt;Subscreve aos erros. &lt;/b&gt;Recebe o ouvinte e retorna a fun&amp;#xE7;&amp;#xE3;o
+        para remov&amp;#xEA;-lo.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;&lt;b&gt;fetch&lt;/b&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;fun&amp;#xE7;&amp;#xE3;o&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;Busca a view do backend e a usa para a atualizar a &amp;#xE1;rvore.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;&lt;b&gt;getRenderer&lt;/b&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;fun&amp;#xE7;&amp;#xE3;o&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;retorna o redenrizador da view. Pode ser usado para atualizar a &amp;#xE1;rvore
+        diretamente.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;&lt;b&gt;getTree&lt;/b&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;fun&amp;#xE7;&amp;#xE3;o&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;retorna a c&amp;#xF3;pia da &amp;#xE1;rvore renderizada.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;&lt;b&gt;getBeagleNavigator&lt;/b&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;fun&amp;#xE7;&amp;#xE3;o&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;retorna o navegador.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;&lt;b&gt;getBeagleService&lt;/b&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;fun&amp;#xE7;&amp;#xE3;o&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;retorna o BeagleService para criar a view.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;&lt;b&gt;destroy&lt;/b&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;fun&amp;#xE7;&amp;#xE3;o&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;destr&amp;#xF3;i a view.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Renderização</title>
+      <link>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/t%C3%B3picos-avan%C3%A7ados/renderiza%C3%A7%C3%A3o/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-web/t%C3%B3picos-avan%C3%A7ados/renderiza%C3%A7%C3%A3o/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+As features descritas aqui, estão disponíveis nas versões a partir de 1.2.0.
+&lt;/div&gt;
+
+&lt;p&gt;Para entender melhor sobre renderização, recomendamos a leitura da seção &lt;a href=&#34;estrutura-de-dados&#34;&gt;&lt;strong&gt;estrutura de dados&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Cada biblioteca do Beagle Web possui um processo definido de como busca, processa e renderiza a view. Há uma ordem que deve ser sempre respeitada e pontos de extensão (&lt;a href=&#34;https://pt-br.reactjs.org/docs/hooks-overview.html&#34;&gt;&lt;strong&gt;hooks&lt;/strong&gt;&lt;/a&gt;), onde você pode executar seus códigos (lifecycles).&lt;/p&gt;
+&lt;p&gt;Veja o processo de renderização do Beagle Web:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/beagle-view.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Os lifecycles (ciclos de vida) do Beagle, são:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;BeforeStart&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BeforeViewSnapshot&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AfterViewSnapshot&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BeforeRender&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Eles podem ser usados como ganchos globais para o lifecycle:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;const config = {
+  // ...
+  lifecycles: {
+    beforeStart: (payload) =&amp;gt; {
+      // ...
+    },
+    beforeViewSnapshot: (payload) =&amp;gt; {
+      // ...
+    },
+    afterViewSnapshot: (payload) =&amp;gt; {
+      // ...
+    },
+    beforeRender: (payload) =&amp;gt; {
+      // ...
+    },
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ou os hooks locais para os lifecycles na base do componente (anotações):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;// Attention: these won&amp;#39;t work with production builds in Angular. Keep reading for more details.
+
+@BeforeStart((textComponentPayload) =&amp;gt; {
+  // ...
+})
+@BeforeViewSnapshot((textComponentPayload) =&amp;gt; {
+  // ...
+})
+@AfterViewSnapshot((textComponentPayload) =&amp;gt; {
+  // ...
+})
+@BeforeRender((textComponentPayload) =&amp;gt; {
+  // ...
+})
+@Component({
+  // ...
+})
+class Text {
+  // ...
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;O exemplo acima não funciona com Angular quando for construído para produção, por causa do compilador. Para escrever um código para a leitura do compilador dele, você deve escolher duas opções:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Adicione o comentário&lt;code&gt;// @dynamic&lt;/code&gt; antes de chamar a anotação:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;// @dynamic
+@BeforeRender((textComponentPayload) =&amp;gt; {
+  // ...
+})
+@Component({
+  // ...
+})
+class Text {
+  // ...
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Substitua a função da flecha para uma função comum e a exporte:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;export function beforeRender(textComponentPayload) {
+  // ...
+}
+
+@BeforeRender(beforeRender)
+@Component({
+  // ...
+})
+class Text {
+  // ...
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Desde que as anotações não podem ser usadas por funções, se você tem algum componente funcional ou não quer usar as anotações, use normalmente as chamadas de funções:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;const Table = (props) =&amp;gt; {
+  // ...
+}
+
+BeforeStart((textComponentPayload) =&amp;gt; {
+  // ...
+})(Table)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;É importante notar que para o React, onde Higher Order Components (HOC) são comuns, o componente que recebe a anotação deve ser o final. Por isso, você deve aplicar ao nome do hoc &lt;code&gt;withTheme&lt;/code&gt; ao seu componente:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;const MyComponent: FC = () =&amp;gt; {
+  // ...
+}
+
+// This is wrong, it has no effect!
+// BeforeRender(myLifecycleFunction)(MyComponent)
+// export default withTheme(MyComponent)
+
+// You need to apply the decorator to the final component instead:
+const MyComponentWithTheme = withTheme(MyComponent)
+BeforeRender(myLifecycleFunction)(MyComponentWithTheme)
+export default MyComponentWithTheme
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;O valor retornado do hook do lifecycle pode ser indefinido ou uma árvore. Se for uma árvore, o processo de renderização será descartar a árvore anterior e começar a trabalhar na árvore retornada pelo hook.&lt;/p&gt;
+&lt;p&gt;Para controlar o processo de renderização, além do lifecycles, o Beagle também oferece a Renderer API, que pode ser acessada por meio do &lt;code&gt;BeagleView.getRenderer()&lt;/code&gt;.  O BeagleView pode ser acessado via o componente BeagleRemoteView, por meio de atributos como &lt;code&gt;onCreateBeagleView&lt;/code&gt; no Angular e o &lt;code&gt;viewRef&lt;/code&gt; no React.&lt;/p&gt;
+&lt;p&gt;Outra forma de acessar o BeagleView é por meio do ViewContentManager API, que pode ser encontrado no &lt;code&gt;this.viewContentManager&lt;/code&gt; no  componente do Angular que extende o &lt;code&gt;BeagleComponent&lt;/code&gt; ou no &lt;code&gt;props.viewContentManager&lt;/code&gt; no React, um componente que implementa a interface do &lt;code&gt;BeagleComponent&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;processo-e-lifecycles&#34;&gt;Processo e lifecycles&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+Lifecycles deprecates the feature middlewares. Middlewares will still be supported at least until the next major version (2.0.0) and they will be interpreted as they were part of the global lifecycle &lt;code&gt;beforeViewSnapshot&lt;/code&gt;.
+&lt;/div&gt;
+
+&lt;p&gt;Beagle possui um processo definido desde quando o payload é recebido até quando é renderizado na tela do browser. Há também os &amp;lsquo;breakpoints&amp;rsquo; que é quando você faz seu processo, e isso é chamado de lifecycle.&lt;/p&gt;
+&lt;h3 id=&#34;processo-para-renderizar-uma-view&#34;&gt;Processo para renderizar uma view&lt;/h3&gt;
+&lt;p&gt;Veja os passos abaixo para renderizar a view:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Rode o hook global &lt;strong&gt;beforeStart;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Rode o hook &lt;strong&gt;beforeStart&lt;/strong&gt; para cada componente;&lt;/li&gt;
+&lt;li&gt;Identifique os filhos de cada componente considerando a anotação &amp;ldquo;BeagleChildren&amp;rdquo;;&lt;/li&gt;
+&lt;li&gt;Atribua um id para cada node que não tenha;&lt;/li&gt;
+&lt;li&gt;Remova qualquer propriedade do objeto que possua o valor null;&lt;/li&gt;
+&lt;li&gt;Se necessário, faça uma pré busca das views que serão acessadas em seguida;&lt;/li&gt;
+&lt;li&gt;Rode o hook global &lt;strong&gt;beforeViewSnapshot&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;Rode o hook &lt;strong&gt;beforeViewSnapshot&lt;/strong&gt; de cada componente;&lt;/li&gt;
+&lt;li&gt;Tire um captura de tela da árvore e reserve. A partir de agora, qualquer referência a a árvore renderizada, será da cópia dessa árvore.&lt;/li&gt;
+&lt;li&gt;Começe processando a cópia da captura de tela da view, o próximo lifecycle rodará em cima dessa cópia;&lt;/li&gt;
+&lt;li&gt;Rode o hook global &lt;strong&gt;afterViewSnapshot&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;Rode o hook &lt;strong&gt;afterViewSnapshot&lt;/strong&gt; para cada componente;&lt;/li&gt;
+&lt;li&gt;Deserialize as ações do Beagle em funções javascript;Deserialize beagle actions into javascript functions;&lt;/li&gt;
+&lt;li&gt;Avalie os contextos e expressões;&lt;/li&gt;
+&lt;li&gt;Interprete os estilos, convertendo o estilo do Beagle a sintaxe de estilo do css;&lt;/li&gt;
+&lt;li&gt;Rode o hook global &lt;strong&gt;beforeRender&lt;/strong&gt;;&lt;/li&gt;
+&lt;li&gt;Rode o hook &lt;strong&gt;beforeRender&lt;/strong&gt; para cada componente;&lt;/li&gt;
+&lt;li&gt;Passe a árvore do componente para a função de renderização. Essa função é diferente em Angular e React.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;lifecycles&#34;&gt;Lifecycles&lt;/h3&gt;
+&lt;p&gt;Existem quatro hooks de lifecycles, mas voê usará apenas dois: &lt;code&gt;beforeViewSnapshot&lt;/code&gt; e &lt;code&gt;beforeRender&lt;/code&gt;.  A diferença entre eles é que o primeiro roda antes de qualquer expressão ou ação tenha sido avaliada e o segundo roda depois. É importante mencionar, quando você usar a  &lt;strong&gt;API Renderer&lt;/strong&gt;, &lt;code&gt;doFullRender&lt;/code&gt; rodará ambos lifecycles, mas o &lt;code&gt;doPartialRender&lt;/code&gt; rodará apenas o lifecycle &lt;code&gt;beforeRender.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;A regra simples para decidir se você uqer alterar a árvore via &lt;code&gt;beforeViewSnapshot&lt;/code&gt; ou&lt;code&gt;beforeRender&lt;/code&gt; é: se sua modificação não depende do resultado da expressão, use o &lt;code&gt;beforeViewSnapshot&lt;/code&gt;, caso contrário, use o &lt;code&gt;beforeRender&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;O lifecycle hook recebe da árvore do Beagle e retorna nada ou uma árvore. Se for uma árvore, o processo de renderização discarta a árvore anterior e trabalha na retornada pelo hook.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lifecycle global: a árvore toda no Beagle.&lt;/li&gt;
+&lt;li&gt;Componente lifecycle: a árvore significa uma branch correspondente ao componente.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Veja abaixo os detalhes de cada lifecycle:&lt;/p&gt;
+&lt;h3 id=&#34;beforestart&#34;&gt;BeforeStart&lt;/h3&gt;
+&lt;p&gt;Este lifecycle roda antes de tudo, aqui algumas modificações devem ser feitas antes que id seja atribuido ou qualquer propriedade filho seja computada. Se o seu payload não é tudo que o Beagle espera, aqui é onde você pode mudá-lo.&lt;/p&gt;
+&lt;p&gt;Desde que a tradução dos filhos ainda tenha sido rodada, os componentes decorados com &lt;code&gt;@BeforeStart&lt;/code&gt; podem não rodar. Por exemplo, um texto dentro do componente &lt;code&gt;table&lt;/code&gt; que tem seus filhos definidos pela propriedade &lt;code&gt;rows&lt;/code&gt;. Nesse cenário o Beagle não sabe que rows representa os filhos de &lt;code&gt;table&lt;/code&gt;, então ele ignoraria tudo dentro desse componente.&lt;/p&gt;
+&lt;p&gt;Esse é o único lifecycle onde novas nodes podem ser adicionadas a árvores que não tenha ids. Cada um deles, roda depois que os ids são atribuídos.&lt;/p&gt;
+&lt;h4 id=&#34;exemplos-de-uso&#34;&gt;Exemplos de uso&lt;/h4&gt;
+&lt;h4 id=&#34;custom-id-generator&#34;&gt;&lt;strong&gt;Custom ID generator&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;Esse lifecycle pode ser usado para ignorar a geração de id padrão do Beagle e usar a sua própria. O Beagle apenas aceita ids aleatórios de nodes sem ids, você pode usar esse lifecycle para atribuir seu único ids para cada node:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;const config = {
+  // ...
+  lifecycles: {
+    beforeStart: (tree) =&amp;gt; {
+      let next = 1
+      
+      function assignIds(data: any) {
+        // if it&amp;#39;s not a component or not a structure that can have a component inside, return
+        if (!data || typeof data !== &amp;#39;object&amp;#39;) return
+        // if it&amp;#39;s an array, assign ids to the components inside
+        if (Array.isArray(data)) return data.forEach(assignIds)
+        // if it is a component node, assign an ID
+        if (data._beagleComponent_) data.id = `myAppID-${next++}`
+        // if it&amp;#39;s an object, assign ids to the components inside
+        const keys = Object.keys(data)
+        keys.forEach(key =&amp;gt; assignIds(data[key]))
+      }
+
+      assignIds(tree)
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Complex children calculation&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Um caso complexo seria a cálculo de &lt;code&gt;children&lt;/code&gt;. Os children de uma tabela de componentes é a união de três propriedades &lt;code&gt;header&lt;/code&gt;, &lt;code&gt;rows&lt;/code&gt; e &lt;code&gt;footer&lt;/code&gt;, mas isso não pode ser expressado via anotação &lt;code&gt;@BeagleChildren&lt;/code&gt;, por isso esse lifecylce remove as propriedades do JSON original e cria a propriedade dos seus filhos, que seria a união das três propriedades.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { BeforeStart } from &amp;#39;@zup-it/beagle-web&amp;#39;
+
+@BeforeStart((table) =&amp;gt; {
+  table.children = [header, ...rows, footer]
+  delete table.header
+  delete table.rows
+  delete table.footer
+})
+class Table {
+  // ...
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;O exemplo acima funciona apenas com componentes que possuem &lt;code&gt;children&lt;/code&gt; como nome da propriedade que representa seus filhos. E se esse não for o caso, o lifecycle global pode ser usado.&lt;/p&gt;
+&lt;h3 id=&#34;beforeviewsnapshot&#34;&gt;BeforeViewSnapshot&lt;/h3&gt;
+&lt;p&gt;Esse roda logo antes do snapshot da view, é útil para alterar o payload, mas depois que os ids já fora atribuídos. Aqui é onde você deve modificar a árvore, já que os ids já estão atribuídos e a estrutura da árvore está pronta para ser atravessada.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+Tenha cuidado quando criar qualquer node nova, é preciso atribuir os ids a ela.
+&lt;/div&gt;
+
+&lt;h4 id=&#34;exemplos-de-uso-1&#34;&gt;Exemplos de uso&lt;/h4&gt;
+&lt;h3 id=&#34;escrevendo-um-atalho-para-controlar-os-text-inputs&#34;&gt;&lt;strong&gt;Escrevendo um atalho para controlar os text-inputs&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;O componente &lt;code&gt;beagle:textInput&lt;/code&gt; pode ser controlado pelo contexto. Veja um exemplo, onde o valor de entrada do &amp;lsquo;email&amp;rsquo; é controlado pela propriedade de contexto &lt;code&gt;email.adress&lt;/code&gt; e a entrada de &amp;lsquo;message&amp;rsquo; é controlado por &lt;code&gt;email.message&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+  &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:container&amp;#34;,
+  &amp;#34;context&amp;#34;: {
+    &amp;#34;id&amp;#34;: &amp;#34;email&amp;#34;,
+    &amp;#34;value&amp;#34;: {
+      &amp;#34;address&amp;#34;: &amp;#34;&amp;#34;,
+      &amp;#34;message&amp;#34;: &amp;#34;&amp;#34;
+    }
+  },
+  &amp;#34;children&amp;#34;: [
+    {
+      &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:textInput&amp;#34;,
+      &amp;#34;placeholder&amp;#34;: &amp;#34;E-mail&amp;#34;,
+      &amp;#34;value&amp;#34;: &amp;#34;@{email.address}&amp;#34;,
+      &amp;#34;onChange&amp;#34;: [
+        {
+          &amp;#34;_beagleAction_&amp;#34;: &amp;#34;beagle:setContext&amp;#34;,
+          &amp;#34;contextId&amp;#34;: &amp;#34;email&amp;#34;,
+          &amp;#34;path&amp;#34;: &amp;#34;address&amp;#34;,
+          &amp;#34;value&amp;#34;: &amp;#34;@{onChange.value}&amp;#34;
+        }
+      ]
+    },
+    {
+      &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:textInput&amp;#34;,
+      &amp;#34;placeholder&amp;#34;: &amp;#34;Message&amp;#34;,
+      &amp;#34;value&amp;#34;: &amp;#34;@{email.message}&amp;#34;,
+      &amp;#34;onChange&amp;#34;: [
+        {
+          &amp;#34;_beagleAction_&amp;#34;: &amp;#34;beagle:setContext&amp;#34;,
+          &amp;#34;contextId&amp;#34;: &amp;#34;email&amp;#34;,
+          &amp;#34;path&amp;#34;: &amp;#34;message&amp;#34;,
+          &amp;#34;value&amp;#34;: &amp;#34;@{onChange.value}&amp;#34;
+        }
+      ]
+    },
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;O ideal é criar um atalho para evitar repetições, por exemplo, quando um json traz a propriedade &lt;code&gt;model&lt;/code&gt;, é criado uma estrutura automaticamente. No model, é preciso ser digitado qual valor de contexto irá controlar essa entrada, veja abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+  &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:container&amp;#34;,
+  &amp;#34;context&amp;#34;: {
+    &amp;#34;id&amp;#34;: &amp;#34;email&amp;#34;,
+    &amp;#34;value&amp;#34;: {
+      &amp;#34;address&amp;#34;: &amp;#34;&amp;#34;,
+      &amp;#34;message&amp;#34;: &amp;#34;&amp;#34;
+    }
+  },
+  &amp;#34;children&amp;#34;: [
+    {
+      &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:textInput&amp;#34;,
+      &amp;#34;placeholder&amp;#34;: &amp;#34;E-mail&amp;#34;,
+      &amp;#34;model&amp;#34;: &amp;#34;email.address&amp;#34;
+    },
+    {
+      &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:textInput&amp;#34;,
+      &amp;#34;placeholder&amp;#34;: &amp;#34;Message&amp;#34;,
+      &amp;#34;model&amp;#34;: &amp;#34;email.message&amp;#34;
+    }
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Para isso funcionar, é preciso escrever o lifecycle que irá transformar o &lt;code&gt;model&lt;/code&gt; na estrutrua esperada:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { BeforeViewSnapshot } from &amp;#39;@zup-it/beagle-web&amp;#39;
+
+@BeforeViewSnapshot((component) =&amp;gt; {
+  component.value = `@{${component.model}}`
+  component.onChange = component.onChange || []
+  const [contextId, ...path] = component.model.split(&amp;#39;.&amp;#39;)
+  component.onChange.push({
+    _beagleAction_: &amp;#39;beagle:setContext&amp;#39;,
+    contextId,
+    path: path ? path.join(&amp;#39;.&amp;#39;) : undefined,
+    value: &amp;#34;@{onChange.value}&amp;#34;
+  })
+})
+@Component({
+  // ...
+})
+class TextInput {
+  // ...
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Com esse código, apesar de estar recebendo o model do backend, o payload processado pelo Beagle terá os valores esperados.&lt;/p&gt;
+&lt;h3 id=&#34;cálculo-complexo-da-children-com-o-beforeviewsnapshot&#34;&gt;&lt;strong&gt;Cálculo complexo da children com o BeforeViewSnapshot&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;O exemplo anterior poderia ter sido feito sem o risco de pular algum lifecycle do componente devido a propriedade children estar nomeada incorretamente. A única diferença é que você deve atribuir os ids:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { BeforeViewSnapshot, Tree, Component } from &amp;#39;@zup-it/beagle-web&amp;#39;
+
+@BeforeStart((table) =&amp;gt; {
+  table.children = [header, ...rows, footer]
+  delete table.header
+  delete table.rows
+  delete table.footer
+  // assigns a random id for each component in the tree table.children
+  Tree.forEach(table.children, Component.assignId)
+})
+class Table {
+  // ...
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;afterviewsnapshot&#34;&gt;AfterViewSnapshot&lt;/h3&gt;
+&lt;p&gt;Quando usar a API Renderer, há dois tipos de renderizar: renderização completa e renderização parcial. Os dois lifecycles anteriores funcionam na completa, enquanto esse e os próximos lifecycles funcionam nos dois.&lt;/p&gt;
+&lt;p&gt;As mudanças feitas aqui são válidas para a renderização atual. Qualquer atualização da view é feita por meio da árvore baseada na no snapshot da view, as modificações feitas nesse lifecycle não são permanentes e serão executadas a cada renderização. Se você tem uma propriedade &lt;code&gt;counter&lt;/code&gt; com o valor 0 na árvore e no seu lifecycle é com o valor 1. Na quinta renderização completa, os valores de &lt;code&gt;counter&lt;/code&gt; serão:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BeforeStart: 5&lt;/li&gt;
+&lt;li&gt;BeforeViewSnapshot: 5&lt;/li&gt;
+&lt;li&gt;AfterViewSnapshot: 1&lt;/li&gt;
+&lt;li&gt;BeforeRender: 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Esse lifecycle pode ser usado para rodar o código necessário para que a view seja renderizada e não requer ações, contexto, expressões e estilos, pois já foram processados.&lt;/p&gt;
+&lt;h4 id=&#34;exemplos-de-uso-2&#34;&gt;Exemplos de uso&lt;/h4&gt;
+&lt;p&gt;Contextos são definidos, referenciados e manipulados no JSON da view. Mas, se você quiser acessar os dados da aplicação o Beagle oferece uma funcionalidade chamada &lt;a href=&#34;../../../../../api/contexto-global&#34;&gt;&lt;strong&gt;Contexto Global&lt;/strong&gt;&lt;/a&gt;, que é possivel lidar com esse cenário. Se não tivesse essa função, o lifecycle AfterViewSnapshot também consegue lidar com isso.&lt;/p&gt;
+&lt;p&gt;Um exemplo, se você tem uma aplicação financeira e quer saber o balanço do usuário. Você deve garantir que cada haja a renderização de cada valor recente.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+  &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;container&amp;#34;,
+  &amp;#34;context&amp;#34;: {
+    &amp;#34;id&amp;#34;: &amp;#34;user&amp;#34;,
+    &amp;#34;value&amp;#34;: {
+      &amp;#34;name&amp;#34;: &amp;#34;&amp;#34;,
+      &amp;#34;balance&amp;#34;: 0
+    }
+  },
+  &amp;#34;children&amp;#34;: [
+    {
+      &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;text&amp;#34;: &amp;#34;@{user.name}, your balance is $@{user.balance}&amp;#34;
+    }
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;No JSON acima, o contexto &lt;code&gt;user&lt;/code&gt; foi usado, onde começa com valores vazios e não há possibilidade de saber os valores corretos. Agora, substitua o valores do contexto por valores da sua aplicação, como abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import Tree from &amp;#39;@zup-it/beagle-web&amp;#39;
+
+function findContextById(tree, id) {
+  const it = Tree.iterator(tree)
+  let next = it.next()
+  while (!next.done) {
+    const component = next.value
+    if (component.context &amp;amp;&amp;amp; component.context.id === id) return component.context
+    next = it.next()
+  }
+}
+
+const config = {
+  // ...
+  lifecycles: {
+    afterViewSnapshot: (payload) =&amp;gt; {
+      const userContext = findContextById(payload, &amp;#39;user&amp;#39;)
+      const userData = getUserData() // this method gets the user data from the application
+      userContext.name = userData.name
+      userContext.balance = userData.balance
+    }
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;O código não pode ser feito antes do view ser snapshotted, porque o requisito é atualizar o valor em cada renderização. É importante mencionar que a ação &lt;code&gt;setContext&lt;/code&gt; não funciona sob o contexto de &lt;code&gt;user&lt;/code&gt;. Lifecycles podem ser usados, mas é recomendado usar o contexto global em casos de valores no Beagle view.&lt;/p&gt;
+&lt;h3 id=&#34;beforerender&#34;&gt;BeforeRender&lt;/h3&gt;
+&lt;p&gt;As alterações aqui são válidas apenas para a renderização atual e são executadas em todas as renderizações. A diferença entre BeforeRender e AfterViewSnapshot é a garantia de que todas as ações, expressões e estilos já foram processadas.&lt;/p&gt;
+&lt;h4 id=&#34;exemplos-de-uso-3&#34;&gt;Exemplos de uso&lt;/h4&gt;
+&lt;p&gt;Quando o backend decide expressar cores no seguintes formatos:&lt;code&gt;{ red: number, green: number, blue: number }&lt;/code&gt;. Por exemplo, preto seria &lt;code&gt;{ red: 0, green: 0, blue: 0 }&lt;/code&gt;.  Isso não é válido para cores nos browsers, então é preciso converter o valor de cada propriedade de cor para validar o  formato RGB. Veja abaixo a função:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;const colorProperties: [&amp;#39;color&amp;#39;, &amp;#39;backgroundColor&amp;#39;, &amp;#39;borderColor&amp;#39;]
+
+function fixColorCodes(componentPayload) {
+  const style = componentPayload.style
+  if (!style) return
+  colorProperties.forEach((property) =&amp;gt; {
+    if (!style[property]) return
+    style[property] = `rgb(${style[property].red}, ${style[property].green}, ${style[property].blue})`
+  })
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Agora, execute a função acima para cada componente na árvore. Se você quiser ter um comportamento dinâmico para a mudança de cor via contexto, veja o JSON abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+  &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:container&amp;#34;,
+  &amp;#34;context&amp;#34;: {
+    &amp;#34;id&amp;#34;: &amp;#34;bgColor&amp;#34;,
+    &amp;#34;value&amp;#34;: {
+      &amp;#34;red&amp;#34;: 255,
+      &amp;#34;green&amp;#34;: 255,
+      &amp;#34;blue&amp;#34;: 255
+    },
+  },
+  &amp;#34;children&amp;#34;: [
+    {
+      &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:text&amp;#34;,
+      &amp;#34;text&amp;#34;: &amp;#34;My dynamically colored text&amp;#34;,
+      &amp;#34;style&amp;#34;: {
+        &amp;#34;backgroundColor&amp;#34;: &amp;#34;@{bgColor}&amp;#34;
+      }
+    },
+    {
+      &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:button&amp;#34;,
+      &amp;#34;text&amp;#34;: &amp;#34;red&amp;#34;,
+      &amp;#34;onPress&amp;#34;: [
+        {
+          &amp;#34;_beagleAction_&amp;#34;: &amp;#34;setContext&amp;#34;,
+          &amp;#34;contextId&amp;#34;: &amp;#34;bgColor&amp;#34;,
+          &amp;#34;value&amp;#34;: {
+            &amp;#34;red&amp;#34;: 255,
+            &amp;#34;green&amp;#34;: 0,
+            &amp;#34;blue&amp;#34;: 0
+          }
+        }
+      ],
+      &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:button&amp;#34;,
+      &amp;#34;text&amp;#34;: &amp;#34;green&amp;#34;,
+      &amp;#34;onPress&amp;#34;: [
+        {
+          &amp;#34;_beagleAction_&amp;#34;: &amp;#34;setContext&amp;#34;,
+          &amp;#34;contextId&amp;#34;: &amp;#34;bgColor&amp;#34;,
+          &amp;#34;value&amp;#34;: {
+            &amp;#34;red&amp;#34;: 0,
+            &amp;#34;green&amp;#34;: 255,
+            &amp;#34;blue&amp;#34;: 0
+          }
+        }
+      ],
+      &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:button&amp;#34;,
+      &amp;#34;text&amp;#34;: &amp;#34;blue&amp;#34;,
+      &amp;#34;onPress&amp;#34;: [
+        {
+          &amp;#34;_beagleAction_&amp;#34;: &amp;#34;setContext&amp;#34;,
+          &amp;#34;contextId&amp;#34;: &amp;#34;bgColor&amp;#34;,
+          &amp;#34;value&amp;#34;: {
+            &amp;#34;red&amp;#34;: 0,
+            &amp;#34;green&amp;#34;: 0,
+            &amp;#34;blue&amp;#34;: 255
+          }
+        }
+      ]
+    }
+  ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;O texto começa com o fundo branco e quando o usuário apertar o botão, o fundo muda de cor. Se você chamar  &lt;code&gt;fixColorCodes&lt;/code&gt; antes do contexto ser validado, ele estará tentando executar sobre a string &lt;code&gt;@{bgColor}&lt;/code&gt; ao invés do objeto &lt;code&gt;{ red: 255, green: 255, blue: 255 }&lt;/code&gt; o que pode ocorrer um erro no tempo, já que eles não são propriedades da string.&lt;/p&gt;
+&lt;p&gt;BeforeStart, BeforeViewSnapshot and AfterViewSnapshot são executados antes de cada contexto ser avaliado, então tudo que pode ser afetado por ele deve ser executado no último lifecycle: BeforeRender:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { Tree } from &amp;#39;@zup-it/beagle-web&amp;#39;
+
+const config = {
+  // ...
+  lifecycles: {
+    // ...
+    beforeRender: tree =&amp;gt; Tree.forEach(tree, fixColorCodes),
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;the-renderer-api&#34;&gt;The Renderer API&lt;/h2&gt;
+&lt;p&gt;Para controlar o processo de renderização, o Beagle permite você gerenciar quando uma nova renderização é feita na árvore do Beagle  View. Você pode ter um componente que quando é clicado muda a árvore atual, para que um novo componente seja adicionado ou uma propriedade seja modificada.&lt;/p&gt;
+&lt;p&gt;Um cenário comum é quando você cria uma ação que muda a árvore atual, por exemplo, uma ação addChildren, quando executada deve ir a árvore atual e adicionar o filho ao componente com o id dado. Para fazer isso, é preciso ter uma forma de obter a árvore atual, modificá-la e avisar ao Beagle View para renderizar de novo.&lt;/p&gt;
+&lt;p&gt;A renderização pode ser feita em dois processos: a completa e a parcial. A primeira executa todos &lt;a href=&#34;renderizacao#processo-para-renderizar-uma-view&#34;&gt;&lt;strong&gt;os passos da lista no início dessa página&lt;/strong&gt;&lt;/a&gt; e a segunda executa apenas o view snapshot e os passos 9 ao 18 da mesma lista.&lt;/p&gt;
+&lt;h3 id=&#34;acessando-o-renderer&#34;&gt;Acessando o Renderer&lt;/h3&gt;
+&lt;p&gt;Cada Beagle View possui seu renderizador, para acessá-lo, você deve chamar o &lt;code&gt;beagleView.getRenderer()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Veja os exemplos de como chegar ao renderizador:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;React:  a referência ao &lt;code&gt;BeagleView&lt;/code&gt; pode ser obtida por meio da propriedade do &lt;code&gt;viewRef&lt;/code&gt; do &lt;code&gt;BeagleRemoteView:&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import React, { FC, useRef, useEffect, MutableRefObject } from &amp;#39;react&amp;#39;
+import { BeagleRemoteView } from &amp;#39;@zup-it/beagle-react&amp;#39;
+import { BeagleView } from &amp;#39;@zup-it/beagle-web&amp;#39;
+
+const Home: FC = () =&amp;gt; {
+  const beagleView = useRef() as MutableRefObject&amp;lt;BeagleView | undefined&amp;gt;
+
+  useEffect(() =&amp;gt; {
+    if (beagleView.current) {
+      const renderer = beagleView.current.getRenderer()
+    }
+  }, [])
+
+  return (
+    &amp;lt;BeagleRemoteView path=&amp;#34;/home&amp;#34; viewRef={beagleView} /&amp;gt;
+  )
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Angular: você pode usar o atributo &lt;code&gt;onCreateBeagleView&lt;/code&gt; do componente &lt;code&gt;beagle-remote-view&lt;/code&gt; :&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { Component } from &amp;#39;@angular/core&amp;#39;
+import { LoadParams, BeagleView } from &amp;#39;@zup-it/beagle-web&amp;#39;
+
+@Component({
+  selector: &amp;#39;home&amp;#39;,
+  template: &amp;#39;&amp;#39;,
+})
+export class Home {
+  loadParams: LoadParams
+  private beagleView: BeagleView
+
+  constructor() {
+    this.loadParams = { path: &amp;#39;/home&amp;#39; }
+  }
+
+  onCreateBeagleView(beagleView: BeagleView) {
+    this.beagleView = beagleView
+  }
+
+  getRenderer() {
+    return this.beagleView &amp;amp;&amp;amp; this.beagleView.getRenderer()
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Quando dentro do componente renderizado pelo Beagle, você pode usar o ViewContentManager para acessar o BeagleView e obter o renderizador.&lt;/p&gt;
+&lt;p&gt;Quando dentro do action handler (ações customizadas), o Beagle View é provido via parametro que pode ser usado para obter o renderizador, veja o exemplo abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;const MyCustomActionHandler: ActionHandler&amp;lt;MyCustomAction&amp;gt; = ({ action, beagleView }) =&amp;gt; {
+  const renderer = beagleView.getRenderer()
+  // ...
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;usando-o-renderer&#34;&gt;Usando o Renderer&lt;/h3&gt;
+&lt;p&gt;O renderizador possui duas funções: &lt;code&gt;doFullRender&lt;/code&gt; e&lt;code&gt;doPartialRender&lt;/code&gt;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;doFullRender&lt;/code&gt;: renderiza a árvore passada como parâmetro rodando todo os passos para renderização. Renderização completa deve ser feita toda vez que novas nodes são criadas.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;doPartialRender&lt;/code&gt;: apenas roda a view snapshot e os passos depois disso. Renderização parcial deve ser usada para modificar nodes existentes.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A árvore recebida pelo &lt;code&gt;doFullRender&lt;/code&gt; é o tipo de &lt;code&gt;BeagleUIElement&lt;/code&gt;, por exemplo, e pode ou não ter ids. A árvore recebida do &lt;code&gt;doPartialRender&lt;/code&gt; é o tipo de &lt;code&gt;IdentifiableBeagleUIElement&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Exemplo: deve ter ids para cada node. Você nunca pode passar a árvore para o&lt;code&gt;doPartialRender&lt;/code&gt; sem ids.&lt;/p&gt;
+&lt;p&gt;Além do tipo de árvore, não há diferença na forma que o &lt;code&gt;doFullRender&lt;/code&gt; e o &lt;code&gt;doPartialRender&lt;/code&gt;são chamados. Eles aceitam os seguintes parâmetros:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;O primeiro é a árvore;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;O segundo é opcional e a âncora. Se a âncora não for especificada, a árvore passada no primeiro parâmetro será substituída pela árvore renderizada. Se a âncora é especificada, a árvore passada como parametro será anexada a árvore renderizada atual, na mesma posiçao que a node com id referenciado por &lt;code&gt;anchor&lt;/code&gt;. Como o anexo é feito é definido pelo terceiro parâmetro.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Opcional. É o mode, se o modo não é definido, ele é tratado como  &lt;code&gt;replaceComponent&lt;/code&gt;. Há 4 modos diferentes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;replaceComponent&lt;/code&gt;: substitui a node com mesmo id que o parâmetro&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;anchor&lt;/code&gt; com a árvore passada no primeiro parâmetro&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;replace&lt;/code&gt;: substitui a árvore passada no primeiro parâmetro para a children do node com o mesmo id que o parâmetro &lt;code&gt;anchor&lt;/code&gt; (ou a raíz, se o anchor não for especificado).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;prepend&lt;/code&gt;: precede a árvore passada no primeiro parâmetro para a children do node com o mesmo id que o parâmetro &lt;code&gt;anchor&lt;/code&gt; (ou a raíz, se o anchor não for especificado).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;append&lt;/code&gt;:  acrescenta a árvore passada no primeiro parâmetro para a children do node com o mesmo id que o parâmetro &lt;code&gt;anchor&lt;/code&gt; (ou a raíz, se o anchor não for especificado).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;exemplos&#34;&gt;&lt;strong&gt;Exemplos:&lt;/strong&gt;&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;/* example 1: renders a container with an empty list */
+beagleView.getRenderer().doFullRender({
+  _beagleComponent_: &amp;#39;beagle:container&amp;#39;,
+  children: [
+    _beagleComponent_: &amp;#39;custom:list&amp;#39;,
+    id: &amp;#39;list&amp;#39;,
+  ],
+})
+
+/* example 2: adds a property to the root of the currently rendered tree */
+const current = beagleView.getTree()
+current.newProperty = &amp;#39;new&amp;#39;
+beagleView.getRenderer().doPartialRender(current)
+
+/* example 3: adds an element to the &amp;#34;custom:list&amp;#34; inside the container */
+const item = {
+  _beagleComponent_: &amp;#39;beagle:container&amp;#39;,
+  children: [
+    { _beagleComponent_: &amp;#39;beagle:text&amp;#39;, text: &amp;#39;Client name: Jasnah Kholin&amp;#39; },
+    { _beagleComponent_: &amp;#39;beagle:text&amp;#39;, text: &amp;#39;Client age: 30&amp;#39; }
+  ]
+}
+// we should always do full renders when creating new nodes
+beagleView.getRenderer().doFullRender(item, &amp;#39;list&amp;#39;, { mode: &amp;#39;append&amp;#39; })
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;Com a API do rendered, você pode alterar uma view quando quiser. Você não pode chamar &lt;code&gt;renderer.doFullRender(tree, componentId)&lt;/code&gt; no onInit do componente do Angular com o id &lt;code&gt;componentId&lt;/code&gt;. Se isso for feito, o Beagle irá remover o componente da árvore antes de ser renderizado. Casos como esse podem acontecer usando o Beagle renderer dentro dos componentes de lifecycle.&lt;/p&gt;
+&lt;p&gt;A solução do exemplo dado seria substituir a children do componente (&lt;code&gt;renderer.doFullRender(tree, componentId, &#39;replace&#39;)&lt;/code&gt;).&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;api-viewcontentmanager&#34;&gt;API ViewContentManager&lt;/h2&gt;
+&lt;p&gt;A list view é um componente que precisa usar a Rendered API, mas como acessar o renderizador do componente? Em ambos Angular e React, isso pode ser feito via &lt;code&gt;ViewContentManager&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;O &lt;code&gt;ViewContentManager&lt;/code&gt; provê um caminho para acessar o BeagleView e o node que a árvore atual do Beagle  que deu origem ao componente sendo renderizado e com isso você pode acessar e chamar a renderização desse componente específico.&lt;/p&gt;
+&lt;h3 id=&#34;acessando-o-viewcontentmanager&#34;&gt;Acessando o ViewContentManager&lt;/h3&gt;
+&lt;h4 id=&#34;react&#34;&gt;React&lt;/h4&gt;
+&lt;p&gt;O &lt;code&gt;ViewContentManager&lt;/code&gt; pode ser acessado dentro to componente do React, se ele implementar a interface do BeagleComponente.&lt;/p&gt;
+&lt;p&gt;Veja abaixo o exemplo de re-renderizar o componente com um novo grupo de children baseado nos dados e no template:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import React, { FC, useRef, useEffect, MutableRefObject } from &amp;#39;react&amp;#39;
+import { BeagleComponent } from &amp;#39;@zup-it/beagle-react&amp;#39;
+
+interface ListViewInterface extends BeagleComponent {
+  // ...
+}
+
+const ListView: FC&amp;lt;ListViewInterface&amp;gt; = (props) =&amp;gt; {
+  useEffect(() =&amp;gt; {
+    /* Once the component implements the BeagleComponent interface, we have access to the
+    viewContentManager, but if the component was not instantiated by Beagle, the viewContentManager
+    will be undefined. We must verify it before continuing. */ 
+    if (!props.viewContentManager) return
+    const children = createChildrenFromTemplate(props.dataSource, props.template)
+    const element = props.viewContentManager.getElement()
+    element.children = children
+    props.viewContentManager.getBeagleView().getRenderer().doFullRenderer(element, element.id)
+  }, [props.dataSource, props.template])
+
+  return (
+    // ...
+  )
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Isso acontece quando a fonte de dados ou template mudam.&lt;/p&gt;
+&lt;h4 id=&#34;angular&#34;&gt;Angular&lt;/h4&gt;
+&lt;p&gt;No Angular, se você precisar acessar o ViewContentManager, a classe do componente deve extender o &lt;code&gt;BeagleComponent&lt;/code&gt;, então você pode referenciar a  &lt;code&gt;this.viewContentManager&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { Component, Input } from &amp;#39;@angular/core&amp;#39;
+import { BeagleComponent } from &amp;#39;@zup-it/beagle-angular&amp;#39;
+
+@Component({
+  // ...
+})
+export class ListView extends BeagleComponent {
+  // ...
+
+  renderDataSource() {
+    /* Checks if the viewContentManager is available. If the components has not been created by
+    Beagle, it won&amp;#39;t be. */
+    if (!this.viewContentManager) return
+    const children = this.createChildrenFromTemplate(this.dataSource, this.template)
+    const element = this.viewContentManager.getElement()
+    element.children = children
+    this.viewContentManager.getBeagleView().getRenderer().doFullRenderer(element, element.id)
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;O método  &lt;code&gt;renderDataSource&lt;/code&gt; deve ser chamado toda vez que a fonte de dados ou o template mudarem.&lt;/p&gt;
+&lt;h3 id=&#34;usando-o-viewcontentmanager&#34;&gt;Usando o ViewContentManager&lt;/h3&gt;
+&lt;p&gt;O ViewContentManager possui as seguintes propriedades e funções: have the following properties/functions&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&#34;text-align:left&#34;&gt;Propriedade&lt;/th&gt;
+      &lt;th style=&#34;text-align:left&#34;&gt;Tipo&lt;/th&gt;
+      &lt;th style=&#34;text-align:left&#34;&gt;Defini&amp;#xE7;&amp;#xE3;o&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;
+        &lt;p&gt;&amp;lt;b&amp;gt;&amp;lt;/b&amp;gt;&lt;/p&gt;
+        &lt;p&gt;&lt;code&gt;getElement()&lt;/code&gt;
+        &lt;/p&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;fun&amp;#xE7;&amp;#xE3;o&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;retorna a node na &amp;#xE1;rvore do Beagle respons&amp;#xE1;vel pela renderiza&amp;#xE7;&amp;#xE3;o
+        do componente.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;
+        &lt;p&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;code&gt;getElementId()&lt;/code&gt;
+        &lt;/p&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;fun&amp;#xE7;&amp;#xE3;o&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;atalho para o &lt;code&gt;getElement().id&lt;/code&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;getBeagleView()&lt;/code&gt;
+      &lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;fun&amp;#xE7;&amp;#xE3;o&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;retorna o BeagleView respons&amp;#xE1;vel pela view contendo o componente.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;atualizando-a-view-com-o-resultado-da-requisição&#34;&gt;Atualizando a view com o resultado da requisição&lt;/h2&gt;
+&lt;p&gt;Caso você precisa atualizar a view atual com a árvore que vem do backend, você deve usar o &lt;a href=&#34;https://github.com/ZupIT/beagle-web-core/blob/master/docs/beagle-view#Fetching-a-view&#34;&gt;&lt;strong&gt;método fetch do &lt;code&gt;BeagleView&lt;/code&gt;&lt;/strong&gt;&lt;/a&gt;. Isso irá internamente usar todo o mecanismo de cache do Beagle e também a parte de renderização.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

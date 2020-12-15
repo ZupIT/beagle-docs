@@ -24,12 +24,12 @@ jobs:
           hugo-version: '0.78.1'
           extended: true
 
+      - name: Clean old Build
+        run: rm -rf docs
+
       - name: Build
         run: hugo -D
         working-directory: Settings
-        
-      - name: Clean old Build
-        run: rm -rf docs
               
       - name: Deploy
         uses: stefanzweifel/git-auto-commit-action@v4
