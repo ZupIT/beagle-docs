@@ -13958,9 +13958,6 @@ pre {
   color: #000 !important;
   background: transparent; }
 
-.nav-tabs > li.active > a {
-  background: #8dc63f; }
-
 .alert-warning {
   border-color: #f7941e; }
 
