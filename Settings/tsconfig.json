@@ -1,3 +1,6 @@
 {
-  "include": "./bin"
+  "compilerOptions": {
+    "strictNullChecks": true
+  },
+  "include": ["./bin"]
 }

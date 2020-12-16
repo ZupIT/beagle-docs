@@ -2,16 +2,23 @@ import { readFile, writeFile, mkdir } from 'fs/promises'
 import { dirname } from 'path'
 import { glob } from 'glob'
 
+type Language = 'en' | 'pt'
+
+interface LanguageConfig {
+  source: string,
+  targetFile: string,
+}
+
 const ENCODING: BufferEncoding = 'utf-8'
 
-const LANGUAGE_CONFIG = {
+const LANGUAGE_CONFIG: Record<Language, LanguageConfig> = {
   en: {
     source: './content/en/**/*.md',
-    targetFile: './static/playground/en',
+    targetFile: './static/playground/en.json',
   },
   pt: {
     source: './content/pt/**/*.md',
-    targetFile: './static/playground/pt',
+    targetFile: './static/playground/pt.json',
   },
 }
 
@@ -95,17 +102,26 @@ async function writePlaygroundProjectToFile(
   await writeFile(targetFile, JSON.stringify(playgroundProject), { encoding: ENCODING })
 }
 
-async function buildPlaygroundFile(language: keyof typeof LANGUAGE_CONFIG) {
-  const { source, targetFile } = LANGUAGE_CONFIG[language]
+async function generatePlaygroundProject(language: Language) {
+  const { source } = LANGUAGE_CONFIG[language]
   const fileNames = await getMdFileList(source)
-  const playgroundProject = await createPlaygroundProjectFromFiles(fileNames)
-  await writePlaygroundProjectToFile(playgroundProject, targetFile)
-  console.log(`Done building playground project for "${language}"! File is at "${targetFile}".`)
+  return await createPlaygroundProjectFromFiles(fileNames)
 }
 
-async function start() {
+export async function generateProjectsByLanguage() {
   const languages = Object.keys(LANGUAGE_CONFIG)
-  await Promise.all(languages.map(buildPlaygroundFile))
+  const projects = await Promise.all(languages.map(generatePlaygroundProject))
+  return projects.reduce((result, project, index) => (
+    { ...result, [languages[index]]: project }
+  ), {}) as Record<Language, Record<string, string>>
 }
 
-start()
+export async function build() {
+  const projectsByLanguage = await generateProjectsByLanguage()
+  await Promise.all(Object.keys(projectsByLanguage).map(
+    lang => (
+      writePlaygroundProjectToFile(projectsByLanguage[lang], LANGUAGE_CONFIG[lang].targetFile)
+    ),
+  ))
+  console.log('Done generating playground files!');
+}

@@ -98,7 +98,7 @@ Confirm structure is:
   ]
 }
 -->
-{{% playground "confirm.json" %}}
+{{% playground file="confirm.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
