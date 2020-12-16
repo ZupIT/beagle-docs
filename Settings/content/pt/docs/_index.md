@@ -1,4 +1,5 @@
 ---
-title: Docs
-weight: 3
+title: Documentação
+cascade:
+  - type: "docs"
 ---
