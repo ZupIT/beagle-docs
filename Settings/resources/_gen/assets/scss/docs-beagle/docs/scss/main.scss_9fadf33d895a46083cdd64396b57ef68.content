@@ -3,20 +3,12 @@
 Add styles or override variables from the theme here.
 
 */
-@import url("https://fonts.googleapis.com/css?family=Dosis:wght@700&family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,400");
-a {
-  color: #3176d9 !important;
-  background-color: transparent;
-  text-decoration: none; }
-  a :hover {
-    color: #3176d9;
-    text-decoration: underline; }
-
 /*
 
 Bootstrap variables overrides for theme.
 See https://github.com/twbs/bootstrap/pull/23260
 */
+@import url("https://fonts.googleapis.com/css?family=Dosis:wght@700&family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,400");
 @fa-font-path :        "../webfonts";
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
@@ -13958,16 +13950,7 @@ pre {
   color: #000 !important;
   background: transparent; }
 
-.alert-warning {
-  border-color: #f7941e; }
-
-.alert-info {
-  border-color: #0c3455; }
-
-.alert-success {
-  border-color: #8dc63f; }
-
-.td-sidebar-nav__section-title {
-  font-weight: unset; }
+.nav-tabs > li.active > a {
+  background: #8dc63f; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,4 @@
-baseURL = "https://zupit.github.io/docs-beagle/"
+baseURL = "https://zupit.github.io/docs-beagle"
 
 title = "Beagle"
 publishDir = "../docs"
@@ -79,8 +79,8 @@ time_format_blog = "02/01/2006"
 # Everything below this are Site Params
 
 [params]
-copyright = "The Docsy Authors"
-privacy_policy = "https://policies.google.com/privacy"
+copyright = "Zup IT"
+privacy_policy = "https://insights.zup.com.br/politica-privacidade"
 
 logoName = "icons/beagle.svg"
 
@@ -130,7 +130,7 @@ prism_syntax_highlighting = false
 # User interface configuration
 [params.ui]
 # Enable to show the side bar menu in its compact state.
-sidebar_menu_compact = false
+sidebar_menu_compact = true
 #  Set to true to disable breadcrumb navigation.
 breadcrumb_disable = false
 #  Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
@@ -160,33 +160,23 @@ enable = true
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[params.links.user]]
 	name = "User mailing list"
-	url = "https://example.org/mail"
+	url = "mailto:beagle@zup.com.br"
 	icon = "fa fa-envelope"
         desc = "Discussion and help from your fellow users"
-[[params.links.user]]
-	name ="Twitter"
-	url = "https://example.org/twitter"
-	icon = "fab fa-twitter"
-        desc = "Follow us on Twitter to get the latest news!"
-[[params.links.user]]
-	name = "Stack Overflow"
-	url = "https://example.org/stack"
-	icon = "fab fa-stack-overflow"
-        desc = "Practical questions and curated answers"
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
-	name = "GitHub"
-	url = "https://github.com/ZupIT/beagle-docs/settings"
-	icon = "fab fa-github"
-        desc = "Development takes place here!"
+	name ="Twitter"
+	url = "https://twitter.com/ZupInnovation"
+	icon = "fab fa-twitter"
+        desc = "Follow us on Twitter to get the latest news!"
 [[params.links.developer]]
-	name = "Slack"
-	url = "https://example.org/slack"
-	icon = "fab fa-slack"
-        desc = "Chat with other project developers"
+	name ="Medium"
+	url = "https://medium.com/zup-it"
+	icon = "fab fa-medium"
+        desc = "Medium"
 [[params.links.developer]]
-	name = "Developer mailing list"
-	url = "https://example.org/mail"
-	icon = "fa fa-envelope"
-        desc = "Discuss development issues around the project"
+	name ="Youtube"
+	url = "https://www.youtube.com/channel/UCJWZyJ-36yNscqnnHiwjkhQ"
+	icon = "fab fa-youtube"
+        desc = "Youtube"
 
