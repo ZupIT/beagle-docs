@@ -24,11 +24,11 @@
 <meta property="og:description" content="Nesta seção, você encontra o passo a passo da configuração do Beagle no Android." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/android/" />
-<meta property="article:modified_time" content="2020-12-14T13:53:37-03:00" /><meta property="og:site_name" content="Beagle" />
+<meta property="article:modified_time" content="2020-12-16T10:46:27-03:00" /><meta property="og:site_name" content="Beagle" />
 <meta itemprop="name" content="Android">
 <meta itemprop="description" content="Nesta seção, você encontra o passo a passo da configuração do Beagle no Android.">
-<meta itemprop="dateModified" content="2020-12-14T13:53:37-03:00" />
-<meta itemprop="wordCount" content="311">
+<meta itemprop="dateModified" content="2020-12-16T10:46:27-03:00" />
+<meta itemprop="wordCount" content="346">
 
 
 
@@ -104,7 +104,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.114b5f470920ff6390c7310f7099b1f3a34c43a68df5cce4b59f8791517bb61b794a42ea1aaab5a8d6c0578c8d6b84cb9ee502f18e2ff12d61b46a2a4cbb1f6d.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.43da65c765769b884d40badb8fee475a42d914f9749d9ad534c0c3aa028bde5e50ac1bf97e27048b3f83e5b0e99c5cb8b905c8d4643a0f6baf784d4a719cd882.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -136,7 +136,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.114b5f470920ff6390c7310f7099b1f3a34c43a68df5cce4b59f8791517bb61b794a42ea1aaab5a8d6c0578c8d6b84cb9ee502f18e2ff12d61b46a2a4cbb1f6d.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.43da65c765769b884d40badb8fee475a42d914f9749d9ad534c0c3aa028bde5e50ac1bf97e27048b3f83e5b0e99c5cb8b905c8d4643a0f6baf784d4a719cd882.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -2046,37 +2046,46 @@
 <h2 id="requisitos">Requisitos</h2>
 <p>Antes de configurar o Beagle para o seu sistema Android, é importante que você confirme as versões dos programas que estão instalados na sua máquina. Para a ferramenta funcionar, é necessário ter as seguintes versões: ‌</p>
 <ul>
-<li><strong>JDK 8 language</strong></li>
+<li><strong>JDK 8+ language</strong></li>
 <li><strong>Android API level: pelo menos a 19 ou superior</strong></li>
 <li><strong>Kotlin 1.3+</strong></li>
 </ul>
 <h2 id="passo-1-configurar-as-dependências"><strong>Passo 1: Configurar as dependências</strong></h2>
 <p>Você precisa ajustar as dependências do seu repositório para receber o Beagle. Para isso, utilize as configurações abaixo para fazer o <strong>download da biblioteca</strong>.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#8f5902;font-style:italic">// Add it in your root build.gradle at the end of repositories:
-</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">allprojects</span> <span style="color:#000;font-weight:bold">{</span>
+<p>Para versão anterior a 1.1.0 adicione no build.gradle <em>maven{url}</em>:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#000">allprojects</span> <span style="color:#000;font-weight:bold">{</span>
     <span style="color:#000">repositories</span> <span style="color:#000;font-weight:bold">{</span>
         <span style="color:#000">google</span><span style="color:#000;font-weight:bold">()</span>
         <span style="color:#000">jcenter</span><span style="color:#000;font-weight:bold">()</span>
-        <span style="color:#8f5902;font-style:italic">// &lt; 1.1.0
-</span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000">maven</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#000">maven</span> <span style="color:#000;font-weight:bold">{</span>
             <span style="color:#000">url</span> <span style="color:#a40000">&#39;</span><span style="color:#000">https</span><span style="color:#000;font-weight:bold">:</span><span style="color:#8f5902;font-style:italic">//dl.bintray.com/zupit/repo&#39;
 </span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000;font-weight:bold">}</span>
-        <span style="color:#8f5902;font-style:italic">// &gt;= 1.1.0
-</span><span style="color:#8f5902;font-style:italic"></span>        <span style="color:#000">mavenCentral</span><span style="color:#000;font-weight:bold">()</span>
+    <span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div><p>Para versão superior ou igual a 1.1.0 adicione no build.gradle <em>mavenCentral()</em>:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#000">allprojects</span> <span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#000">repositories</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#000">google</span><span style="color:#000;font-weight:bold">()</span>
+        <span style="color:#000">jcenter</span><span style="color:#000;font-weight:bold">()</span>
+        <span style="color:#000">mavenCentral</span><span style="color:#000;font-weight:bold">()</span>
     <span style="color:#000;font-weight:bold">}</span>
 <span style="color:#000;font-weight:bold">}</span>
 </code></pre></div>
 
 <div class="alert alert-warning" role="alert">
 
-A configuração acima deve ser adicionada em<code>allprojects{}</code>
+A configuração acima deve ser adicionada em <code>allprojects{}</code>
 </div>
 
 <h2 id="passo-2-incluir-os-plugins"><strong>Passo 2: Incluir os plugins</strong></h2>
-<p>Uma vez feita a primeira configuração, agora você precisa incluir o plugin do kapt e do Beagle como dependências dentro do seu gerenciador de dependências.</p>
+<p>Uma vez feita a primeira configuração, agora você precisa incluir o plugin do kapt e do Beagle como dependências dentro do seu gerenciador de dependências, segue abaixo as duas apção de adicionar o plugin.</p>
 <p>A versão atual do Beagle<a href="https://mvnrepository.com/artifact/br.com.zup.beagle/android"><img src="https://img.shields.io/maven-central/v/br.com.zup.beagle/android" alt="Maven Central"></a></p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#8f5902;font-style:italic">// Add in your plugins
-</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">apply</span> <span style="color:#000">plugin</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#a40000">&#39;</span><span style="color:#000">kotlin</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">kapt</span><span style="color:#a40000">&#39;</span>
+<ul class="nav nav-tabs" id="t200" role="tablist"><li class="nav-item"><a data-toggle="tab" class="nav-link active" href="#t200-0" role="tab" aria-controls="t200-0" aria-selected="true">apply plugin</a></li>
+	  
+		<li class="nav-item"><a data-toggle="tab" class="nav-link" href="#t200-1" role="tab" aria-controls="t200-1">plugins</a></li></ul>
+<div class="tab-content" id="t200"><div id="t200-0" class="tab-pane show active" role="tabpanel" aria-labelledby="t200-0">
+
+<p><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#000">apply</span> <span style="color:#000">plugin</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#a40000">&#39;</span><span style="color:#000">kotlin</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">kapt</span><span style="color:#a40000">&#39;</span>
 
 <span style="color:#000">android</span> <span style="color:#000;font-weight:bold">{</span>
     <span style="color:#000">kotlinOptions</span> <span style="color:#000;font-weight:bold">{</span>
@@ -2084,14 +2093,34 @@ A configuração acima deve ser adicionada em<code>allprojects{}</code>
     <span style="color:#000;font-weight:bold">}</span>
 <span style="color:#000;font-weight:bold">}</span>
 
-<span style="color:#8f5902;font-style:italic">// Add in your app level dependency
-</span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">ext</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">beagle_version</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;</span><span style="color:#4e9a06">${beagle_version}</span><span style="color:#4e9a06">&#34;</span> 
+<span style="color:#000">ext</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">beagle_version</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;</span><span style="color:#4e9a06">${beagle_version}</span><span style="color:#4e9a06">&#34;</span> 
 
 <span style="color:#000">dependencies</span> <span style="color:#000;font-weight:bold">{</span>    
     <span style="color:#000">implementation</span> <span style="color:#4e9a06">&#34;br.com.zup.beagle:android:</span><span style="color:#4e9a06">$beagle_version</span><span style="color:#4e9a06">&#34;</span>    
     <span style="color:#000">kapt</span> <span style="color:#4e9a06">&#34;br.com.zup.beagle:android-processor:</span><span style="color:#4e9a06">$beagle_version</span><span style="color:#4e9a06">&#34;</span>
 <span style="color:#000;font-weight:bold">}</span>
-</code></pre></div><p>Insira a versão de release do Beagle no lugar de <code>${beagle.version}</code>, ou seja, coloque a versão do Beagle destacada em azul da badge acima, mas sem o <strong>caracter v</strong> que antecede os números de versão.</p>
+</code></pre></div></div>
+  <div id="t200-1" class="tab-pane" role="tabpanel" aria-labelledby="t200-1">
+
+<p><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#000">plugins</span> <span style="color:#000;font-weight:bold">{</span>
+		<span style="color:#000">id</span> <span style="color:#a40000">&#39;</span><span style="color:#000">kotlin</span><span style="color:#000;font-weight:bold">-</span><span style="color:#000">kapt</span><span style="color:#a40000">&#39;</span>
+	<span style="color:#000;font-weight:bold">}</span>
+
+
+<span style="color:#000">android</span> <span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#000">kotlinOptions</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#000">jvmTarget</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">JavaVersion</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">VERSION_1_8</span>
+    <span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">}</span>
+
+<span style="color:#000">ext</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">beagle_version</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;</span><span style="color:#4e9a06">${beagle_version}</span><span style="color:#4e9a06">&#34;</span> 
+
+<span style="color:#000">dependencies</span> <span style="color:#000;font-weight:bold">{</span>    
+    <span style="color:#000">implementation</span> <span style="color:#4e9a06">&#34;br.com.zup.beagle:android:</span><span style="color:#4e9a06">$beagle_version</span><span style="color:#4e9a06">&#34;</span>    
+    <span style="color:#000">kapt</span> <span style="color:#4e9a06">&#34;br.com.zup.beagle:android-processor:</span><span style="color:#4e9a06">$beagle_version</span><span style="color:#4e9a06">&#34;</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div></div></div>
+<p>Insira a versão de release do Beagle no lugar de <code>${beagle.version}</code>, ou seja, coloque a versão do Beagle destacada em azul da badge acima, mas sem o <strong>caracter v</strong> que antecede os números de versão.</p>
 <p>Por exemplo: undefined-<code>ext.beagle.version = &quot;0.2.8&quot;</code></p>
 
 
@@ -2169,7 +2198,7 @@ Para continuar a configurar o Beagle:</p>
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top"><div class="dr-last-modified-text">
-  Last modified 14/12/2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/bb18099159194bbfee0dfa9194f3691c90d86391">fix slugs in the links (bb180991)</a>
+  Last modified 16/12/2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/7775f4dc2387e8261f9c50aecf9e0897370d1160">refactor: installing beagle android (#94) (7775f4dc)</a>
 </div></div>
 </div>
 

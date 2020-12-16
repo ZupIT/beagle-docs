@@ -26,37 +26,46 @@
 &lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
 &lt;p&gt;Before you start to configure Beagle for your Android system, it&amp;rsquo;s important to check out if you have installed all the current versions of the following programs:  ‌&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;JDK 8 language&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JDK 8+ language&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Android API level: at least 19 or higher&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Kotlin 1.3+&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;step-1-dependencies-configuration&#34;&gt;&lt;strong&gt;Step 1: Dependencies&#39; configuration&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;You have to adjust your repository&amp;rsquo;s dependencies to receive Beagle. To do so, use the following configurations to &lt;strong&gt;download library.&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// Add it in your root build.gradle at the end of repositories:
-&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;allprojects&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;p&gt;For version prior to 1.1.0 add to build.gradle maven{url}:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;allprojects&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;repositories&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
         &lt;span style=&#34;color:#000&#34;&gt;google&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
         &lt;span style=&#34;color:#000&#34;&gt;jcenter&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
-        &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// &amp;lt; 1.1.0
-&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000&#34;&gt;maven&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;maven&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
             &lt;span style=&#34;color:#000&#34;&gt;url&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;https&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//dl.bintray.com/zupit/repo&amp;#39;
 &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-        &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// &amp;gt;= 1.1.0
-&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000&#34;&gt;mavenCentral&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For version greater than or equal to 1.1.0 add to build.gradle mavenCentral ():&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;allprojects&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;repositories&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;google&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;jcenter&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;mavenCentral&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 
-The above configuration must be added to&lt;code&gt;allprojects{}&lt;/code&gt;
+The above configuration must be added to &lt;code&gt;allprojects{}&lt;/code&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;step-2-include-plugins&#34;&gt;&lt;strong&gt;Step 2: Include plugins&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;Once you made the first configuration, now you have to include the kapt and Beagle&amp;rsquo;s plugin as dependencies on your dependency manager.&lt;/p&gt;
+&lt;p&gt;Once you made the first configuration, now you have to include the kapt and Beagle&amp;rsquo;s plugin as dependencies on your dependency manager, below are the two options to add the plugin.&lt;/p&gt;
 &lt;p&gt;The current release version of Beagle is&lt;a href=&#34;https://mvnrepository.com/artifact/br.com.zup.beagle/android&#34;&gt;&lt;img src=&#34;https://img.shields.io/maven-central/v/br.com.zup.beagle/android&#34; alt=&#34;Maven Central&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// Add in your plugins
-&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;apply&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;plugin&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;kotlin&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;kapt&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;&amp;#39;​&lt;/span&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t200&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t200-0&#34; role=&#34;tab&#34; aria-controls=&#34;t200-0&#34; aria-selected=&#34;true&#34;&gt;apply plugin&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t200-1&#34; role=&#34;tab&#34; aria-controls=&#34;t200-1&#34;&gt;plugins&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t200&#34;&gt;&lt;div id=&#34;t200-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t200-0&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;apply&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;plugin&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;kotlin&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;kapt&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;&amp;#39;&lt;/span&gt;
 
 &lt;span style=&#34;color:#000&#34;&gt;android&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#000&#34;&gt;kotlinOptions&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
@@ -64,13 +73,34 @@ The above configuration must be added to&lt;code&gt;allprojects{}&lt;/code&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 
-&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// Add in your app level dependency
-&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ext&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;beagle_version&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;${beagle_version}&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt; 
+&lt;span style=&#34;color:#000&#34;&gt;ext&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;beagle_version&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;${beagle_version}&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt; 
 
 &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;    
     &lt;span style=&#34;color:#000&#34;&gt;implementation&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;br.com.zup.beagle:android:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;$beagle_version&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;    
     &lt;span style=&#34;color:#000&#34;&gt;kapt&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;br.com.zup.beagle:android-processor:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;$beagle_version&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Insert the Beagle&amp;rsquo;s release version on the place of&lt;code&gt;${beagle.version}&lt;/code&gt;, in other words, put the Beagle&amp;rsquo;s version highlighted in blue badge above without the &lt;strong&gt;v character&lt;/strong&gt;.&lt;/p&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t200-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t200-1&#34;&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;plugins&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+		&lt;span style=&#34;color:#000&#34;&gt;id&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;kotlin&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;kapt&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;&amp;#39;&lt;/span&gt;
+	&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+
+&lt;span style=&#34;color:#000&#34;&gt;android&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;kotlinOptions&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;jvmTarget&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;JavaVersion&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;VERSION_1_8&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+&lt;span style=&#34;color:#000&#34;&gt;ext&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;beagle_version&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;${beagle_version}&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt; 
+
+&lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;    
+    &lt;span style=&#34;color:#000&#34;&gt;implementation&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;br.com.zup.beagle:android:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;$beagle_version&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;    
+    &lt;span style=&#34;color:#000&#34;&gt;kapt&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;br.com.zup.beagle:android-processor:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;$beagle_version&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Insert the Beagle&amp;rsquo;s release version on the place of&lt;code&gt;${beagle.version}&lt;/code&gt;, in other words, put the Beagle&amp;rsquo;s version highlighted in blue badge above without the &lt;strong&gt;v character&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;For example: undefined-&lt;code&gt;ext.beagle.version = &amp;quot;0.2.8&amp;quot;&lt;/code&gt;&lt;/p&gt;
 
 
