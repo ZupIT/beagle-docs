@@ -1,0 +1,909 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beagle – Creating a project from scratch</title>
+    <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/</link>
+    <description>Recent content in Creating a project from scratch on Beagle</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Case Android</title>
+      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-android/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-android/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;starting-an-android-project&#34;&gt;Starting an Android project&lt;/h2&gt;
+&lt;p&gt;For this practical example, we&amp;rsquo;ll use Android Studio IDE. In case you still don&amp;rsquo;t have it installed, just access on &lt;a href=&#34;https://developer.android.com/studio?hl=us-en&#34;&gt;&lt;strong&gt;official Android website&lt;/strong&gt; &lt;/a&gt;and follow the instructions.&lt;/p&gt;
+&lt;p&gt;After you installed the program, follow the steps below:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Open Android Studio and click on &lt;strong&gt;Start a new Android Studio project&lt;/strong&gt;&lt;em&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://lh4.googleusercontent.com/bAhbvEZUN_pBXavMOqCvkt2Z4NlYsxXXtmeGRKEUnyGfuIm7c-mskMhmmiMbSaCw_xonW8vceVI2C27q08-k5tV8EDD5ymvoaPwDDFGe_fN3bmoqCQEoAAKASKXOTiI3KUPI1GQ1&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Choose the &lt;strong&gt;Empty Activity&lt;/strong&gt; option and click on &lt;strong&gt;next&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://lh5.googleusercontent.com/nT0zkr0W_Ark0ZZDR2eWtCtfnjC_Fm98VSwU3DgBQzcgh_DoqkYNvhINztNL460p0U2hnygJ5K_DhrZMZis0mqHD69QJgKimruICs4MnBnPO9m-m_2T6E1nWIXiOfaIe0iiCjIN3&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 3️:&lt;/strong&gt; On this page, we should list some important informations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Inform your project&amp;rsquo;s name. On this example, we&amp;rsquo;ll call &lt;code&gt;BeagleApp&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Choose which language you&amp;rsquo;ll use. For Beagle, we should go with&lt;code&gt;Kotlin&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Choose &lt;strong&gt;SDK minimum 19&lt;/strong&gt;, because a lower SDK won&amp;rsquo;t be compatible.&lt;/li&gt;
+&lt;li&gt;Define a &lt;strong&gt;package&lt;/strong&gt; and a &lt;strong&gt;Save location&lt;/strong&gt; according to your preference.&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Next&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/m5jnbs4K5AdwQbA7YVn7fSgtVzw5S68yCbGTj_7-CYa9CGvMR-qFO5EQ4SaNehXYRmI4WOOnqA6JQouzW2QC0YMTpBq7kJSbi54yl0Q2emL_y2FizY3LyloLjuh_uDyf8WyVbodP&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 4️:&lt;/strong&gt; After you made the previous configurations, Android will take some time to build the project because it will be synchronizing all the initials dependencies to initialize the project&lt;/p&gt;
+&lt;p&gt;Once the initialization is done, you will see this page:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/mainactivity.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
+
+Well done, your project was created on Android! Now, you will need to configure Beagle following the next steps.
+&lt;/div&gt;
+
+&lt;h2 id=&#34;configuring-beagle&#34;&gt;Configuring Beagle&lt;/h2&gt;
+&lt;h3 id=&#34;step-1-define-the-dependencies&#34;&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Define the dependencies&lt;/h3&gt;
+&lt;p&gt;To start, you have to configure Beagle&amp;rsquo;s dependencies on your repository. This can be done using the configurations below and downloading Beagle&amp;rsquo;s library.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open your project on Android Studio.&lt;/li&gt;
+&lt;li&gt;Search for &lt;code&gt;Graddle scripts&lt;/code&gt; file on the project.&lt;/li&gt;
+&lt;li&gt;On this file, there are two files &lt;code&gt;gradle&lt;/code&gt; name. Open the first one named.&lt;code&gt;build.graddle(project:Beagle)&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Search for &lt;code&gt;allprojects&lt;/code&gt; code block and configure  &lt;code&gt;Maven&lt;/code&gt; credentials as you see in the list below:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// Add it in your root build.gradle at the end of repositories:
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;allprojects&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;repositories&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;google&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;jcenter&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+        &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// &amp;lt; 1.1.0
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000&#34;&gt;maven&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;url&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;https&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//dl.bintray.com/zupit/repo&amp;#39;
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// &amp;gt;= 1.1.0
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000&#34;&gt;mavenCentral&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Close &lt;code&gt;build.graddle(project:Beagle)&lt;/code&gt; file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once you made it, we should include &lt;code&gt;kapt plugin&lt;/code&gt; and &lt;code&gt;Beagle&lt;/code&gt; as dependencies on &lt;code&gt;dependency manager&lt;/code&gt;. To do so, follow these instructions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open the&lt;code&gt;build.graddle(Module:app)&lt;/code&gt;  file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Notice that some &lt;code&gt;plugins&lt;/code&gt; are already listed on the file&amp;rsquo;s beginning  arquivo as it shows the image below:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Then, add the line_&lt;code&gt;apply plugin: &#39;kotlin-kapt&#39;&lt;/code&gt;_&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/implementacaogradle.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;After that, you need to add some dependencies:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Search for this file that is moving in &lt;code&gt;dependencies { }&lt;/code&gt;code block.&lt;/li&gt;
+&lt;li&gt;Add a &lt;code&gt;ext.beagle_version&lt;/code&gt; variable on the top (in this case, out of) the dependencies scope
+&lt;ul&gt;
+&lt;li&gt;The current release version of Beagle is:&lt;a href=&#34;https://oss.sonatype.org/#nexus-search;gav~br.com.zup.beagle~android~~~~kw,versionexpand&#34;&gt;&lt;img src=&#34;https://img.shields.io/maven-central/v/br.com.zup.beagle/android&#34; alt=&#34;Maven Central&#34;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Copy and paste the lines below inside your dependencies:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;implementation &amp;ldquo;br.com.zup.beagle:android:$beagle_version&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;kapt &amp;ldquo;br.com.zup.beagle:android-processor:$beagle_version&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go&#34; data-lang=&#34;go&#34;&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// Add in your app level dependency
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ext&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;beagle_version&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;${beagle_version}&amp;#34;&lt;/span&gt;
+ 
+&lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;implementation&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;br.com.zup.beagle:android:$beagle_version&amp;#34;&lt;/span&gt;
+    &lt;span style=&#34;color:#000&#34;&gt;kapt&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;br.com.zup.beagle:android-processor:$beagle_version&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;Insert the Beagle&amp;rsquo;s release version on the place of&lt;code&gt;${beagle.version}&lt;/code&gt;, in other words, put the Beagle&amp;rsquo;s version highlighted in blue badge above without the &lt;strong&gt;v caracter&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;For example: undefined-&lt;code&gt;ext.beagle.version = &amp;quot;0.2.8&amp;quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;At the end of these configurations, your file must be like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/implementacaogradle2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;step-2-configure-the-android-manifest-file&#34;&gt;Step 2: Configure the Android Manifest file&lt;/h3&gt;
+&lt;p&gt;The next step is to update your Android Manifest project by adding a few lines to the file:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;INTERNET&amp;rsquo;s permission so your application can be able to access internet. &lt;code&gt;&amp;lt;uses-permission android:name=&amp;quot;android.permission.INTERNET&amp;quot; /&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;If you find difficulties to find this or another file, just use Android Studios search bar.&lt;/p&gt;
+&lt;p&gt;To enable it, press**&lt;code&gt;SHIFT&lt;/code&gt;**button twice and the search interface will appear. Once you made it, just just have to type &lt;code&gt;AndroidManifest&lt;/code&gt; and Android Studio will find it.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
+&amp;lt;manifest xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
+    package=&amp;quot;com.example.beagleexamples&amp;quot;&amp;gt;
+
+    &amp;lt;uses-permission android:name=&amp;quot;android.permission.INTERNET&amp;quot; /&amp;gt;
+
+    &amp;lt;application
+        ...
+        android:usesCleartextTraffic=&amp;quot;true&amp;quot;
+        ...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Let this file open because we&amp;rsquo;ll use it again in another moment.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;usesCleartextTraffic&lt;/strong&gt;: Indicates with the app intends to use cleartext network traffic, HTTP.  The default value for apps that target API level 27 or lower is &amp;ldquo;&lt;code&gt;true&lt;/code&gt;&amp;rdquo;. Apps that target API level 28 or higher default to &amp;ldquo;&lt;code&gt;false&lt;/code&gt;&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;attribute&lt;/strong&gt; &lt;code&gt;android:usesCleartextTraffic=&amp;quot;true&amp;quot;&lt;/code&gt; inside &lt;code&gt;&amp;lt;application&amp;gt;&lt;/code&gt;tag  is used to communicate with the local BFF. Them if you intent to debug the project using a local BFF you can use this as an easy configuration step.&lt;/li&gt;
+&lt;li&gt;Although, if you plan to turn this example into a release application, we recomend you using the &lt;strong&gt;&lt;code&gt;networkSecurityConfig&lt;/code&gt;&lt;/strong&gt; which you can configure using &lt;a href=&#34;https://developer.android.com/training/articles/security-config&#34;&gt;&lt;strong&gt;android developers page instructions&lt;/strong&gt;&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&#34;passo-3-create-an-appbeagleconfig&#34;&gt;Passo 3: Create an AppBeagleConfig&lt;/h3&gt;
+&lt;p&gt;For the next steps, you should create a &lt;code&gt;AppBeagleConfig&lt;/code&gt; class, that is part of &lt;a href=&#34;../../../../../../../installing-beagle/android&#34;&gt;&lt;strong&gt;Beagle&amp;rsquo;s installation&lt;/strong&gt;&lt;/a&gt; and it&amp;rsquo;s responsible to register some important configurations.&lt;/p&gt;
+&lt;p&gt;When you create the call, we should guarantee that it&amp;rsquo;s configured in this way:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Noted with &lt;code&gt;@BeagleComponent&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;And extending &lt;code&gt;BeagleConfig&lt;/code&gt;class.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To create AppBeagleConfig, follow these steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;First, we create a package with all configurations&#39; files.&lt;/li&gt;
+&lt;li&gt;Then, click with the right button on the main package of your project and click on &lt;strong&gt;new &amp;gt; package&lt;/strong&gt; __like in the image below:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/newpackage.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Even though you can name the file as you want to, we&amp;rsquo;ll recommend for this tutorial that you use the name&lt;code&gt;beagle&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;3. Click with the right button on beagle&#39;s package and click on **new&amp;amp;gt;Kotlin File/Class**
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;__4. __Name it as &lt;code&gt;AppBeagleConfig&lt;/code&gt; and then press &lt;strong&gt;&lt;code&gt;ENTER&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;Copy and paste the configurations below on &lt;code&gt;AppBeagleConfig&lt;/code&gt; file you just created. Notice that it will implement two attributes: &lt;code&gt;baseUrl&lt;/code&gt; and &lt;code&gt;environment&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;&lt;code&gt;baseUrl&lt;/code&gt;&lt;/strong&gt; returns the basis URL of your environment.&lt;/li&gt;
+&lt;li&gt;The**&lt;code&gt;environment&lt;/code&gt;** returns the _&lt;code&gt;current build state&lt;/code&gt;_ of your application.&lt;/li&gt;
+&lt;li&gt;**&lt;code&gt;isLoggingEnabled&lt;/code&gt;**returns the application&amp;rsquo;s log view&lt;/li&gt;
+&lt;li&gt;The  &lt;strong&gt;&lt;code&gt;cache&lt;/code&gt;&lt;/strong&gt; manager configuration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;br.com.zup.beagle.android.annotation.BeagleComponent&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;br.com.zup.beagle.android.setup.BeagleConfig&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;br.com.zup.beagle.android.setup.Cache&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;br.com.zup.beagle.android.setup.Environment&lt;/span&gt;
+
+&lt;span style=&#34;color:#5c35cc;font-weight:bold&#34;&gt;@BeagleComponent&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;AppBeagleConfig&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;BeagleConfig&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;val&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;baseUrl&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://10.0.2.2:8080&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// return the base url based on your environment
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;val&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;environment&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Environment&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Environment&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;DEBUG&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// return the current build state of your app
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;val&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;isLoggingEnabled&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Boolean&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;val&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;cache&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Cache&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;get&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Cache&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;enabled&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// If true, we will cache data on disk and memory.
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000&#34;&gt;maxAge&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;300&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// Time in seconds that memory cache will live.
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;        &lt;span style=&#34;color:#000&#34;&gt;memoryMaximumCapacity&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;15&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// Memory LRU cache size. It represents number of screens that will be in memory.
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;// Cache management configuration
+&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;At this tutorial point, we will test our Server-Driven screens on local host because it&amp;rsquo;s important that our &lt;strong&gt;&lt;code&gt;baseURL&lt;/code&gt;&lt;/strong&gt; be local.&lt;/p&gt;
+&lt;p&gt;Now, Beagle expects that your&lt;code&gt;@BeagleComponent&lt;/code&gt; classes must have only empty constructors.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h3 id=&#34;step-4-create-appbeagleactivity&#34;&gt;&lt;strong&gt;Step 4: Create AppBeagleActivity&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;You will have to deal with the &lt;code&gt;activities&lt;/code&gt; that will be generated through server-driven. That&amp;rsquo;s the reason why it&amp;rsquo;s necessary to &lt;a href=&#34;../../../../../../using-beagle/android#passo-3-implementar-activities&#34;&gt;&lt;strong&gt;implement an Activity&lt;/strong&gt;&lt;/a&gt; to manage them. For this example, we&amp;rsquo;ll name it as&lt;code&gt;AppBeagleActivity&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;This file is part of &lt;a href=&#34;../../../../../using-beagle/android&#34;&gt;&lt;strong&gt;Beagle&amp;rsquo;s usage configuration&lt;/strong&gt;&lt;/a&gt; and must be implemented, at least once, so Beagle can normally work.&lt;/p&gt;
+&lt;p&gt;When you create AppBeagleActivity, remember to note it as &lt;code&gt;BeagleComponent&lt;/code&gt; and to extend it to&lt;code&gt;BeagleActivity&lt;/code&gt; class.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+It&amp;rsquo;s very important to ensure that this &lt;code&gt;activity&lt;/code&gt; is registered on Android Manifest. Make it right after you create the activity.
+&lt;/div&gt;
+
+&lt;p&gt;Follow the steps below to create AppBeagleActivity, including  &lt;code&gt;.xml&lt;/code&gt; file:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click with the right button on Beagle&amp;rsquo;s package and click on &lt;strong&gt;New&amp;gt;Activity&amp;gt;Empty Activity&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/newactivity.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Name it as &lt;code&gt;AppBeagleActivity&lt;/code&gt; for the &lt;code&gt;Activity&lt;/code&gt; and click on &lt;strong&gt;&lt;code&gt;finish&lt;/code&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+From now on, Beagle will use this &lt;code&gt;activity&lt;/code&gt; every time to load the screen&amp;rsquo;s informations received from backend on your application&amp;rsquo;s frontend.
+&lt;/div&gt;
+
+&lt;p&gt;We left a configuration example below so you just copy and paste.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First, find this &lt;code&gt;activity&lt;/code&gt; layout. It&amp;rsquo;s probably on&lt;code&gt;RES&lt;/code&gt; &amp;gt; &lt;code&gt;LAYOUT&lt;/code&gt; &amp;gt; with the name of &lt;code&gt;activity_app_beagle.xml&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Copy and paste the &lt;code&gt;.xml&lt;/code&gt; content below removing any previous content:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
+&amp;lt;LinearLayout
+    xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
+    android:id=&amp;quot;@+id/root_layout&amp;quot;
+    android:layout_width=&amp;quot;match_parent&amp;quot;
+    android:layout_height=&amp;quot;match_parent&amp;quot;
+    android:orientation=&amp;quot;vertical&amp;quot;&amp;gt;
+
+    &amp;lt;androidx.appcompat.widget.Toolbar
+        android:id=&amp;quot;@+id/custom_toolbar&amp;quot;
+        android:layout_width=&amp;quot;match_parent&amp;quot;
+        android:layout_height=&amp;quot;wrap_content&amp;quot; /&amp;gt;
+    &amp;lt;FrameLayout
+        android:layout_width=&amp;quot;match_parent&amp;quot;
+        android:layout_height=&amp;quot;match_parent&amp;quot;&amp;gt;
+
+        &amp;lt;FrameLayout
+            android:id=&amp;quot;@+id/server_driven_container&amp;quot;
+            android:layout_width=&amp;quot;match_parent&amp;quot;
+            android:layout_height=&amp;quot;match_parent&amp;quot; /&amp;gt;
+        &amp;lt;ProgressBar
+            android:id=&amp;quot;@+id/progress_bar&amp;quot;
+            android:layout_width=&amp;quot;42dp&amp;quot;
+            android:layout_height=&amp;quot;42dp&amp;quot;
+            android:layout_gravity=&amp;quot;center&amp;quot;
+            android:visibility=&amp;quot;gone&amp;quot;/&amp;gt;
+    &amp;lt;/FrameLayout&amp;gt;
+&amp;lt;/LinearLayout&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Now open &lt;code&gt;AppBeagleActitivity.kt&lt;/code&gt; file and configure as it shows below:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#5c35cc;font-weight:bold&#34;&gt;@BeagleComponent&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;AppBeagleActivity&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;BeagleActivity&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;val&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;progressBar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ProgressBar&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;by&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;lazy&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;findViewById&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;ProgressBar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;R&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;progress_bar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;val&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;mToolbar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Toolbar&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;by&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;lazy&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;findViewById&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Toolbar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;R&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;custom_toolbar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;onCreate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;savedInstanceState&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Bundle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;super&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;onCreate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;savedInstanceState&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;setContentView&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;R&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;layout&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;activity_app_beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;getServerDrivenContainerId&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;():&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Int&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;R&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;server_driven_container&lt;/span&gt;
+
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;getToolbar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;():&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Toolbar&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;mToolbar&lt;/span&gt;
+
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;onServerDrivenContainerStateChanged&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;state&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ServerDrivenState&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;when&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;state&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ServerDrivenState&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Started&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+                &lt;span style=&#34;color:#000&#34;&gt;progressBar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;visibility&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;  &lt;span style=&#34;color:#000&#34;&gt;View&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;VISIBLE&lt;/span&gt;
+            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ServerDrivenState&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Finished&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+                &lt;span style=&#34;color:#000&#34;&gt;progressBar&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;visibility&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;  &lt;span style=&#34;color:#000&#34;&gt;View&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;GONE&lt;/span&gt;
+            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+            &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ServerDrivenState&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Error&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+                &lt;span style=&#34;color:#000&#34;&gt;Toast&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;makeText&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Error&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Toast&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;LENGTH_LONG&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;show&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+At this point, it&amp;rsquo;s essential that you remove the&lt;code&gt;ActionBar&lt;/code&gt; pattern of this &lt;code&gt;activity&lt;/code&gt; because, from now on, Beagle will manage the &lt;code&gt;ActionBar/Toolbar&lt;/code&gt;.
+&lt;/div&gt;
+
+&lt;p&gt;To make this configuration, you must change your &lt;code&gt;BeagleActivity&lt;/code&gt;&amp;rsquo;s theme. Go to &lt;code&gt;Resources&lt;/code&gt; folder on your Android Studio&amp;rsquo;s application and open the&lt;code&gt;STYLE&lt;/code&gt; file. Then, just change your &lt;code&gt;AppTheme&lt;/code&gt; like the example below:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;&amp;lt;resources&amp;gt;
+    &amp;lt;!-- Beagle Activity theme. --&amp;gt;
+    &amp;lt;style name=&amp;quot;MyTheme&amp;quot; parent=&amp;quot;Theme.AppCompat.NoActionBar&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;step-5-initialize-beagle-and-the-design-system&#34;&gt;Step 5: Initialize Beagle and the Design System&lt;/h3&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;What is Design System?&lt;/p&gt;
+&lt;p&gt;For more information, see &lt;a href=&#34;design-system-beagle-com-android&#34;&gt;&lt;strong&gt;section Design System with Beagle Android&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;É o &lt;strong&gt;design system&lt;/strong&gt; que guarda os registros dos componentes de estilo criados no frontend e é assim que sua aplicação Android “saberá” qual componente de estilo deve aplicar a cada elemento de uma tela Server-Driven. É na tela server driven que os elementos visuais (views) são utilizados na construção da sua tela.&lt;/p&gt;
+&lt;p&gt;Embora você possa criá-lo agora se quiser, não é necessário para as configurações iniciais, para que você possa testar logo o Beagle! Você pode prosseguir sem configurá-lo. Para mais informações sobre &lt;a href=&#34;design-system-beagle-com-android&#34;&gt;&lt;strong&gt;Design System no Beagle para Android&lt;/strong&gt;.&lt;/a&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Now , you must initialize your &lt;code&gt;Application&lt;/code&gt; so Beagle can manage the other configuration&amp;rsquo;s files. To do so, just click on&lt;code&gt;Make project&lt;/code&gt; (HAMMER symbol) or use the command &lt;code&gt;CTRL + F9&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/apppackage.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When it&amp;rsquo;s initialized, Beagle will automatically create a &lt;code&gt;BeagleSetup&lt;/code&gt; file that will be in the folder with the generated files, like in the image below:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%2843%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;step-6-create-an-appapplication-class&#34;&gt;Step 6: Create an AppApplication class&lt;/h3&gt;
+&lt;p&gt;On this step, you need to create a&lt;code&gt;KOTLIN&lt;/code&gt; class that extends to the &lt;code&gt;Application&lt;/code&gt;class. For this example, we&amp;rsquo;ll name it as&lt;code&gt;AppApplication&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s necessary to make some configurations on this folder so it can &lt;code&gt;BeagleSetup().init(this)&lt;/code&gt; function on your &lt;code&gt;onCreate&lt;/code&gt; method. Follow these steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click with the right button on your project&amp;rsquo;s main package &lt;em&gt;(&lt;/em&gt;&lt;strong&gt;beagleapp&lt;/strong&gt;&lt;em&gt;)&lt;/em&gt; and choose:
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;new&lt;/code&gt; &amp;gt; &lt;code&gt;Kotlin file/class&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Name the file as &lt;code&gt;AppApplication&lt;/code&gt; and press &lt;strong&gt;&lt;code&gt;enter&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Configure the file as in the example below:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;AppApplication&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Application&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;onCreate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;super&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;onCreate&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;BeagleSetup&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;().&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;init&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;this&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;To finish this configuration, you must state the class on the &lt;a href=&#34;../.././#passo-2-configuracoes-iniciais-do-android-manifest&#34;&gt;&lt;strong&gt;AndroidManifest&lt;/strong&gt;&lt;/a&gt; we created in the beginning.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The name of your&lt;code&gt;application&lt;/code&gt; now it&amp;rsquo;s the same of the class you created. Update the Android Manifest as it&amp;rsquo;s indicated below:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;utf-8&amp;quot;?&amp;gt;
+&amp;lt;manifest xmlns:android=&amp;quot;http://schemas.android.com/apk/res/android&amp;quot;
+    package=&amp;quot;com.example.beagleexamples&amp;quot;&amp;gt;
+
+    &amp;lt;uses-permission android:name=&amp;quot;android.permission.INTERNET&amp;quot; /&amp;gt;
+
+    &amp;lt;application
+        android:name=&amp;quot;.AppApplication&amp;quot;
+        
+        ...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
+
+Well done, your Android application is configured and ready to use Beagle!
+&lt;/div&gt;
+
+&lt;p&gt;All you have to do now is &lt;a href=&#34;../../case-backend&#34;&gt;&lt;strong&gt;set up a backend&lt;/strong&gt; &lt;/a&gt;to answer your application&amp;rsquo;s requests. Once you made this configuration, start your application and you&amp;rsquo;ll see your first server-driven screen!&lt;/p&gt;
+&lt;h3 id=&#34;step-7-display-your-server-driven-screen&#34;&gt;Step 7: Display your Server-Driven Screen&lt;/h3&gt;
+&lt;p&gt;It&amp;rsquo;s very simple to show a Server-Driven screen. Now that all Beagle&amp;rsquo;s configuration is done, you just have to follow these steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Open the file &lt;code&gt;MainActivity.kt&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;State the &lt;code&gt;intent&lt;/code&gt; as listed below. It will define the address of screen&amp;rsquo;s informations on the backend you configured.&lt;/li&gt;
+&lt;li&gt;Copy and paste the &lt;code&gt;intent&lt;/code&gt; listed below on &lt;code&gt;onCreate&lt;/code&gt; method.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;val intent = this.newServerDrivenIntent&amp;lt;AppBeagleActivity&amp;gt;(ScreenRequest(&amp;#34;/screen&amp;#34;))
+startActivity(intent)
+finish()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Your&lt;code&gt;MainActivity.kt&lt;/code&gt; must be like this:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/print-intent%20%281%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Now you just have to click on &lt;strong&gt;&lt;code&gt;Run app&lt;/code&gt;&lt;/strong&gt; and check out your emulator&amp;rsquo;s screen!&lt;br&gt;
+You will see this screen:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/captura-de-tela-2020-06-22-a-s-11.41.12.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
+
+Well done, you created your first screen with Beagle!  🎉
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Case ios</title>
+      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-ios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-ios/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;starting-an-ios-project&#34;&gt;Starting an iOS project&lt;/h2&gt;
+&lt;p&gt;To create an iOS project for Beagle, you will need a Macbook with Xcode installed. In case you don&amp;rsquo;t have it yet, &lt;a href=&#34;https://apps.apple.com/br/app/xcode/id497799835?mt=12&#34;&gt;&lt;strong&gt;download Xcode on the Apple Store.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Before you start, first it&amp;rsquo;s necessary to create a project on &lt;code&gt;Xcode&lt;/code&gt;. To do so, your just have to open the program and name a project. For this example, we&amp;rsquo;ll call as &lt;strong&gt;Beagle Sample.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/captura-de-tela-2020-04-08-a-s-10.35.19.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;After you created the project, we&amp;rsquo;ll need to add the dependencies and, for that, we&amp;rsquo;ll use &lt;code&gt;CocoaPods&lt;/code&gt;&#39; manager.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+If you wanna know more about how to use Cocoa Pods, &lt;a href=&#34;https://cocoapods.org/&#34;&gt;&lt;strong&gt;check out their documentation.&lt;/strong&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;step-1-configure-cocoa-pods&#34;&gt;Step 1: Configure Cocoa Pods&lt;/h3&gt;
+&lt;p&gt;You&amp;rsquo;ll use the terminal to install &lt;code&gt;CocoaPods,&lt;/code&gt; so open your terminal and type &lt;em&gt;&lt;code&gt;sudo gem install cocoapods&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;sudo&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;gem&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;install&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;cocoapods&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To configure it, go to your folder through the terminal and type: &lt;em&gt;&lt;code&gt;pod init&lt;/code&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;pod&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;init&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then, open your project&amp;rsquo;s folder using the &lt;em&gt;&lt;code&gt;open&lt;/code&gt;&lt;/em&gt; command.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;open&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Once you made it, you must choose the &lt;em&gt;&lt;code&gt;podfile&lt;/code&gt;&lt;/em&gt; file the same way as it&amp;rsquo;s shown in the image:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/3zzsq_UBccpGCwaMfyYGC6KR9v4Dj4GD3LO311IOBocCIlj6N9kLiw8M6M6liCf3RnICjHpZL9Grw0JgylSSdp1jTkun-N8UYazKu7Wy0jkvBBohE6biktoz932oNFZpnf8hLrJK&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Open the file and add the following dependencies:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;target&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Sample&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;do&lt;/span&gt;
+     &lt;span style=&#34;color:#000&#34;&gt;pod&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;BeagleUI&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;&amp;#39;&lt;/span&gt;        
+     &lt;span style=&#34;color:#000&#34;&gt;pod&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;YogaKit&lt;/span&gt;&lt;span style=&#34;color:#a40000&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;git&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#a40000&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;https&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;//github.com/ZupIT/YogaKit&amp;#39;&lt;/span&gt;
+ &lt;span style=&#34;color:#000&#34;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Open the terminal again and type the &lt;em&gt;&lt;code&gt;pod install&lt;/code&gt;&lt;/em&gt; command so your dependencies can be installed.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;pod&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;install&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After the installation, you should open a file with a**&lt;code&gt;workspace.&lt;/code&gt;** extension. For this example, we&amp;rsquo;ll name it as&lt;code&gt;Beagle Sample.workspace&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/captura-de-tela-2020-04-08-a-s-10.23.09.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;step-2-configure-beagle&#34;&gt;Step 2: Configure Beagle&lt;/h3&gt;
+&lt;p&gt;Now that your project was created, you must make &lt;strong&gt;Beagle&amp;rsquo;s configuration&lt;/strong&gt;. To do so, follow the steps below:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a class called&lt;code&gt;BeagleConfig&lt;/code&gt; .&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This class will be responsible to contain part of Beagle&amp;rsquo;s initial configuration. On her, we&amp;rsquo;ll implement a &lt;strong&gt;&lt;code&gt;config&lt;/code&gt;&lt;/strong&gt; static function to apply these configurations.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;2. On this function, create a constant called **`dependency`** that must be**`BeagleDependencies`**type. 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We&amp;rsquo;ll attribute to this constant some project&amp;rsquo;s configurations like, for example, the list of basis URL that lists the JSON that will be used to build the the server-driven screen. To configure this constant, use the example below:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Foundation&lt;/span&gt;
+
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;BeagleConfig&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;config&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        
+        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;BeagleDependencies&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;urlBuilder&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;UrlBuilder&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;baseUrl&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;URL&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;string&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;http://localhost&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, we&amp;rsquo;ll configure the**&lt;code&gt;SceneDelegate&lt;/code&gt;** class so it can be used to initialize our application with Beagle from a screen through &lt;a href=&#34;../../../../../../key-concepts#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;:&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a**&lt;code&gt;beagleScreen&lt;/code&gt;** constant, that will receive the server-driven screen.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;init URL&lt;/code&gt; argument must contain the &lt;a href=&#34;../../../../../resources/urls#caminho-relativo&#34;&gt;&lt;strong&gt;relative URL&lt;/strong&gt;&lt;/a&gt; address that will be created on backend (BFF). For this example, we&amp;rsquo;ll call it  &amp;ldquo;/screen&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Follow the example below:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;beagleScreen&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;remote&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(.&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;init&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;url&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/screen&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)))&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;window&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;UIWindow&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;frame&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;UIScreen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;bounds&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;window&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;windowScene&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;windowScene&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;window&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;rootViewController&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;beagleScreen&lt;/span&gt;
+&lt;span style=&#34;color:#000&#34;&gt;window&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;makeKeyAndVisible&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;At the end of this process, the**&lt;code&gt;SceneDelegate&lt;/code&gt;** class should be like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://lh5.googleusercontent.com/JcpliGK0G3QJyLlZIDcwD8X7TZfO7QKEjCcVmWNjX0NHoS8gHl8XOZrSg6dfVntZkusNGmJxRWTa3Ps_xrhCQsIQPOzsFZ375uLqDx1qvuWJWeOnlnQkQy8EkcvMuWhJ6KU8tF-r&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;step-3-configure-xcode&#34;&gt;Step 3: Configure Xcode&lt;/h3&gt;
+&lt;p&gt;Usually, the Xcode&amp;rsquo;s proprieties are configured so your application can be initialized through &lt;code&gt;main.storyboard&lt;/code&gt;. Now that will be done by Beagle and, for this configuration works, we must change the proprieties &lt;strong&gt;deleting the references&lt;/strong&gt; related to &lt;code&gt;main.storyboard&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;These references are in the main project file, on**&lt;code&gt;Info tab&lt;/code&gt;**, and are organized like this:&lt;/p&gt;
+&lt;p&gt;The first stays in the session:&lt;br&gt;
+&lt;em&gt;&lt;strong&gt;Custom iOS Target Properties&lt;/strong&gt;&lt;/em&gt; &lt;em&gt;&lt;strong&gt;&amp;gt;&lt;br&gt;
+&lt;code&gt;Main storyboard file base name&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The second stays in the session:&lt;br&gt;
+&lt;em&gt;&lt;strong&gt;&lt;code&gt;Application Scene Manifest&amp;gt;&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;&lt;strong&gt;&lt;code&gt;Scene Configuration&lt;/code&gt;&amp;gt;&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;&lt;strong&gt;&lt;code&gt;Application Session Role&lt;/code&gt; &amp;gt;&lt;br&gt;
+&lt;code&gt;Item 0 (Default Configuration)&lt;/code&gt;&amp;gt;&lt;br&gt;
+&lt;code&gt;Storyboard name&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;On the GIF below, you can see better how to remove these references:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/main%20%282%29.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Well done, now Beagle is configured for your iOS application! All you have to do is &lt;a href=&#34;../../case-backend&#34;&gt;&lt;strong&gt;set up a backend&lt;/strong&gt;&lt;/a&gt; to answer to your server-driven applications&amp;rsquo;s requests.&lt;/p&gt;
+&lt;p&gt;Once you finished the configuration, start your application and you&amp;rsquo;ll have your first server-driven screen!&lt;br&gt;
+You will see this screen:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Case Web</title>
+      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-web/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-web/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;starting-a-web-project&#34;&gt;Starting a Web project&lt;/h2&gt;
+&lt;h3 id=&#34;requirements&#34;&gt;Requirements&lt;/h3&gt;
+&lt;p&gt;To create a Beagle&amp;rsquo;s project for, check out if have installed the following programs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cli.angular.io/&#34;&gt;&lt;strong&gt;Angular CLI&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Node 10.16 +&lt;/li&gt;
+&lt;li&gt;Yarn or npm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You must have &lt;strong&gt;Visual Studio Code&lt;/strong&gt; to start your project. In case you don&amp;rsquo;t have installed it yet, &lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;&lt;strong&gt;you can find more information about it&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After the installation, follow the steps according to framework you chose:&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t8&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t8-0&#34; role=&#34;tab&#34; aria-controls=&#34;t8-0&#34; aria-selected=&#34;true&#34;&gt;Angular&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t8-1&#34; role=&#34;tab&#34; aria-controls=&#34;t8-1&#34;&gt;React&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t8&#34;&gt;&lt;div id=&#34;t8-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t8-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Open the terminal and use the command below:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;ng new caseAngular
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Wait until the CLI finishes to create the project.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-M9PRY_vOWaeZoXKLq2p%2F-M9PUdUA5t1QcYXL3XJ7%2Fimage.png?alt=media&amp;amp;token=a3869009-df72-4a8c-940a-e040aa47a77a&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Go to the &lt;code&gt;cd caseAngular&lt;/code&gt;generated project&amp;rsquo;s folder, add &lt;strong&gt;Beagle Angular&lt;/strong&gt; to your repository with one of the commands below, according to your package manager:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;npm install --save @zup-it/beagle-angular
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;yarn add @zup-it/beagle-angular
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, wait for the installation.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-M9PRY_vOWaeZoXKLq2p%2F-M9PYjULyS3UHn633rQT%2Fimage.png?alt=media&amp;amp;token=bec6af4b-c54e-47ae-b72e-bacd0132ba81&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Type one of these commands and press enter:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;yarn beagle init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;npx beagle init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;On the question &amp;lsquo;&lt;strong&gt;Would you like to use yarn or npm?&amp;rsquo;,&lt;/strong&gt; type the option you chose to use as a manager. For example, if you chose &lt;code&gt;yarn&lt;/code&gt;, then type &lt;code&gt;yarn&lt;/code&gt;and press enter.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On the question &amp;lsquo;&lt;strong&gt;Path to the beagle module (press enter to use default)&#39;&lt;/strong&gt;, type which module path you&amp;rsquo;re using for Beagle. Considering the project was just created, and there aren&amp;rsquo;t any modules, press enter without informing anything.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On the question &amp;lsquo;&lt;strong&gt;Path to the module with the components to use with beagle (press enter to use default)&#39;&lt;/strong&gt;, type which module path will be used for Beagle. Considering the project was just created, and there aren&amp;rsquo;t any modules, press enter without informing anything.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;On the question &amp;lsquo;&lt;strong&gt;What&amp;rsquo;s the base url of the backend providing your beagle JSONs? (press enter to use default)&#39;&lt;/strong&gt;,  type which will be the backend&amp;rsquo;s basis URL that will be used to rescue the JSONs. Here, we&amp;rsquo;ll use mockyio, so type &lt;code&gt;https://www.mocky.io/v2/&lt;/code&gt;and press enter. Then wait until the configuration finishes:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-M9PRY_vOWaeZoXKLq2p%2F-M9Par3gM73EiZtMPE5T%2Fimage.png?alt=media&amp;amp;token=fa081171-d619-4de9-b0f6-8b8173e7dffb&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;At the end, two files were created on your project:&lt;code&gt;beagle-components.module.ts&lt;/code&gt; and&lt;code&gt;beagle.module.ts&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t8-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t8-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Open the terminal and use the command below:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;npx create-react-app case-react --template typescript
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;yarn create react-app case-react --template typescript
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%2811%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Acess the &lt;code&gt;cd case-react&lt;/code&gt; project&amp;rsquo;s file and add &lt;strong&gt;Beagle React&lt;/strong&gt; to your repository. On your terminal, type:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;npm install --save @zup-it/beagle-react
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;yarn add @zup-it/beagle-react
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And wait until the installation finishes.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&#34;configuration&#34;&gt;Configuration&lt;/h2&gt;
+&lt;p&gt;Now it&amp;rsquo;s time to configure Beagle&amp;rsquo;s files inside your application, following these instructions:&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t9&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t9-0&#34; role=&#34;tab&#34; aria-controls=&#34;t9-0&#34; aria-selected=&#34;true&#34;&gt;Angular&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t9-1&#34; role=&#34;tab&#34; aria-controls=&#34;t9-1&#34;&gt;React&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t9&#34;&gt;&lt;div id=&#34;t9-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t9-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;Open the &lt;code&gt;app.module.ts&lt;/code&gt; file and import Beagle&amp;rsquo;s module that was just generated:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;...
+import { Beagle } from &amp;#39;./beagle.module&amp;#39;;
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    Beagle
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Open the beagle.module.ts file and put the  &lt;code&gt;baseUrl&lt;/code&gt; path&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { BeagleModule } from &amp;#39;@zup-it/beagle-angular&amp;#39;
+// import all the components you wish to use with Beagle.
+
+@BeagleModule({
+  baseUrl: &amp;#39;http://localhost:4200/assets&amp;#39;,
+  module: {
+    path: &amp;#39;./beagle-components.module&amp;#39;,
+    name: &amp;#39;BeagleComponentsModule&amp;#39;,
+  },
+  components: {
+    // Associate every beagle component to your angular component.
+  },
+})
+export class Beagle {}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t9-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t9-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;On the &lt;code&gt;/src&lt;/code&gt; path, create another folder named &lt;strong&gt;beagle&lt;/strong&gt; and, inside it,  create a new file called&lt;code&gt;beagle-service.ts&lt;/code&gt;. Its structure should be similar to the image below:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%2863%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Now, open the  &lt;code&gt;beagle-service.ts&lt;/code&gt; created file and copy this code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { createBeagleUIService } from &amp;#39;@zup-it/beagle-react&amp;#39;
+
+export default createBeagleUIService({
+  baseUrl: &amp;#34;&amp;#34;,
+  components: {}
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&#34;creating-a-json-to-be-rendered&#34;&gt;Creating a JSON to be rendered&lt;/h3&gt;
+&lt;p&gt;Now you need a JSON to render the components. Usually, this call is made by an external server that would return the JSON, but for this example we&amp;rsquo;ll use a local file that will be created for this test:&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t10&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t10-0&#34; role=&#34;tab&#34; aria-controls=&#34;t10-0&#34; aria-selected=&#34;true&#34;&gt;Angular&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t10-1&#34; role=&#34;tab&#34; aria-controls=&#34;t10-1&#34;&gt;React&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t10&#34;&gt;&lt;div id=&#34;t10-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t10-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;On your angular project, navigate to the &lt;code&gt;src/assets&lt;/code&gt; folder and create a new file named &lt;code&gt;payload.json&lt;/code&gt;. Insert this new file on the &lt;code&gt;JSON&lt;/code&gt; content below.&lt;/p&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t10-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t10-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;On your react project, navigate to the &lt;code&gt;/public&lt;/code&gt; folder and create a new file named &lt;code&gt;payload.json&lt;/code&gt;. Insert on the new file the &lt;code&gt;JSON&lt;/code&gt; content below:&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+    &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:container&amp;#34;,
+    &amp;#34;children&amp;#34;: [
+        {
+            &amp;#34;_beagleComponent_&amp;#34;:&amp;#34;beagle:text&amp;#34;,
+            &amp;#34;text&amp;#34;:&amp;#34;Hello Beagle&amp;#34;
+        },
+       {
+            &amp;#34;_beagleComponent_&amp;#34;:&amp;#34;beagle:text&amp;#34;,
+            &amp;#34;style&amp;#34;:{
+              &amp;#34;padding&amp;#34;:{
+                &amp;#34;top&amp;#34;:{
+                  &amp;#34;value&amp;#34;:10,
+                  &amp;#34;type&amp;#34;: &amp;#34;REAL&amp;#34;
+                }
+              }
+            },
+            &amp;#34;text&amp;#34;:&amp;#34;Beagle ís a cross-platform framework which provices usage of the server Driven UI concept,natively in iOS, Android and Web applications. By using Beagle, your team could easily change application&amp;#39;s layout and data by just changing backend code&amp;#34;
+        }
+    ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;rendering-components&#34;&gt;Rendering components&lt;/h3&gt;
+&lt;p&gt;Now it&amp;rsquo;s necessary to add on your application the local where the components will be rendered through JSON. The Beagle&amp;rsquo;s library provides a component with this functionality:  &lt;code&gt;beagle remote view&lt;/code&gt;. To configure this component, follow these steps:&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t11&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t11-0&#34; role=&#34;tab&#34; aria-controls=&#34;t11-0&#34; aria-selected=&#34;true&#34;&gt;Angular&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t11-1&#34; role=&#34;tab&#34; aria-controls=&#34;t11-1&#34;&gt;React&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t11&#34;&gt;&lt;div id=&#34;t11-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t11-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;Open the &lt;code&gt;app.component.html&lt;/code&gt; file and replace all the content with this code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&amp;lt;beagle-remote-view route=&amp;#34;/payload.json&amp;#34;&amp;gt;&amp;lt;/beagle-remote-view&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;route&lt;/code&gt; in the code above states which route will be loaded. The URL specified here is relative to the &lt;code&gt;baseUrl&lt;/code&gt; declared in the configuration.&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;p&gt;The parameter &lt;code&gt;route&lt;/code&gt; is only valid for versions 1.3 and above. For previous versions, you should use &lt;code&gt;loadParams&lt;/code&gt; instead. &lt;code&gt;loadParams&lt;/code&gt; is an object and the equivalent to this configuration would be &lt;code&gt;{ path: &amp;lsquo;/payload.json&amp;rsquo; }.&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+  &lt;div id=&#34;t11-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t11-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;Open the &lt;code&gt;App.tsx&lt;/code&gt; file where the &lt;code&gt;JSON&lt;/code&gt; will be rendered and change it until it looks like the example below:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import React from &amp;#39;react&amp;#39;;
+import &amp;#39;./App.css&amp;#39;;
+import { BeagleProvider, BeagleRemoteView } from &amp;#39;@zup-it/beagle-react&amp;#39;;
+import BeagleService from &amp;#39;./beagle/beagle-service&amp;#39;;
+
+function App() {
+  return (
+    &amp;lt;BeagleProvider value={BeagleService}&amp;gt;
+      &amp;lt;BeagleRemoteView route={&amp;#39;/payload.json&amp;#39;} /&amp;gt;
+    &amp;lt;/BeagleProvider&amp;gt;
+  );
+}
+
+export default App;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On this step, we point where our layout defined with &lt;code&gt;payload.json&lt;/code&gt; file should be rendered. Here, we have two componentes provided by Beagle:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;BeagleProvider&amp;gt;&lt;/code&gt;: Receives the &lt;code&gt;value&lt;/code&gt; propriety as the &lt;code&gt;beagle-service&lt;/code&gt; created on the previous step and that contains the initials configurations.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;BeagleRemoteView&amp;gt;&lt;/code&gt;: Receives the&lt;code&gt;route&lt;/code&gt; propriety that&amp;rsquo;s the path for our JSON file. Notice here that we add  &lt;strong&gt;&#39; / &amp;lsquo;&lt;/strong&gt;  because this value will be associated to a defined&lt;code&gt;baseUrl&lt;/code&gt; on&lt;code&gt;beagle-service.ts&lt;/code&gt; file.&lt;/p&gt;
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;p&gt;&lt;code&gt;route&lt;/code&gt; in the &lt;code&gt;BeagleRemoteView&lt;/code&gt; is only valid for versions 1.3.0 and above. For earlier versions, please, use &lt;code&gt;path&lt;/code&gt; instead.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&#34;testing-your-application&#34;&gt;Testing your application&lt;/h2&gt;
+&lt;p&gt;Once you have finished the project&amp;rsquo;s basic configuration, now you have to run one of the commands below to initialize your application:&lt;/p&gt;
+&lt;p&gt;If you use &lt;strong&gt;npm&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;npm run serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you use &lt;strong&gt;yarn:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;yarn serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After you finish these commands, access your application&amp;rsquo;s address on your navigator. If a screen with components would be rendered, that means that&amp;rsquo;s correctly working.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Case Backend</title>
+      <link>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-backend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-backend/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;starting-a-backend-project&#34;&gt;Starting a Backend project&lt;/h2&gt;
+&lt;p&gt;In this tutorial, the Backend will be implemented with Beagle so that it can respond to requests from your server-driven application, be it on Android, iOS or WEB.&lt;/p&gt;
+&lt;h3 id=&#34;requirements&#34;&gt;Requirements&lt;/h3&gt;
+&lt;p&gt;To create a Beagle project for backend, it is necessary:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IDE Intelij IDE Community&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;step-1-configure-using-spring-initializr&#34;&gt;Step 1: Configure using Spring initializr&lt;/h3&gt;
+&lt;p&gt;The first step to configure your backend is to access &lt;a href=&#34;https://start.spring.io/&#34;&gt;&lt;strong&gt;Spring&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;website.&lt;/strong&gt;&lt;br&gt;
+It will create a&lt;code&gt;Maven&lt;/code&gt; project that will help your project&amp;rsquo;s configuration.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://lh5.googleusercontent.com/ZshvFubtunY4x0JWWBLgSmFesUx7G2AVlSrCcS96efc2lJtAakhYJ-zxgDx7CkcCMOC6zedwUAS3ThBpVXfS8jyvieNLgL3ZJIxWnHJFLE77IOXZs3UqOR8TQazINC_enzoO4Y4Q&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spring configuration&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Choose &lt;code&gt;Maven&lt;/code&gt; as your project option;&lt;/li&gt;
+&lt;li&gt;Check &lt;code&gt;kotlin&lt;/code&gt; as a language;&lt;/li&gt;
+&lt;li&gt;Choose the initial version bigger than 2.1.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Group&lt;/strong&gt;  is the name it will be used as a hierarchy in the beginning. For this example, it can be  &lt;strong&gt;com.example;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Artifact&lt;/strong&gt;  is the project&amp;rsquo;s name. You will name it BFF;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt; contain a simple description of the project;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Packaging&lt;/strong&gt;  must be checked as JAR;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Java&lt;/strong&gt; must be chosen as the java version of your system;&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;&lt;code&gt;generate&lt;/code&gt;&lt;/strong&gt; and it will download your project as.zip;&lt;/li&gt;
+&lt;li&gt;Extract the file in your chosen folder.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;step-2-import-your-project-to-intellij&#34;&gt;Step 2: Import your project to Intellij&lt;/h3&gt;
+&lt;p&gt;Follow the steps below to import the project you have created. First, open &lt;strong&gt;intellij&lt;/strong&gt; and click on &lt;code&gt;Import project&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/EIBFU3xFKyN_ng7DsAEcdoip3xYH6gIKIbLRWbg6LRbITQMd_6tcwyp5iApKn2KPDSnasioiYyb48fMNfcEW9G3pyRE0lSXGXQHPk_FBvKO21wto8qvYSa7Jwi2eNEp5XVSxQmCQ&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Choose the file where you put your&lt;code&gt;Spring project&lt;/code&gt; and click &lt;strong&gt;&lt;code&gt;ok&lt;/code&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Click on &lt;strong&gt;Import projects from external model&lt;/strong&gt; and choose &lt;code&gt;Maven&lt;/code&gt; and then, click  &lt;strong&gt;finish&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://lh6.googleusercontent.com/6gOx1UCq-ZUK0yckdUAO2-Jb1YWOjw6kNijGu8-LVPyaDJuYAC2J7DcugsKgFDVqSkhF1RN5zKQ0s47l0ZmFgrq9ln7SPL-isTczLb9h5PQnXhUyWl6S7_QaUyUPGN-SyYVK_AZC&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;configuring-beagle&#34;&gt;Configuring Beagle&lt;/h2&gt;
+&lt;h3 id=&#34;step-1-configure-the-project&#34;&gt;Step 1: Configure the project&lt;/h3&gt;
+&lt;p&gt;As a starting point, follow this step by step to &lt;a href=&#34;../../../../installing-beagle/beagle-backend&#34;&gt;&lt;strong&gt;install the backend&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;step-2-define-the-structure&#34;&gt;Step 2: Define the structure&lt;/h3&gt;
+&lt;p&gt;The second step is to create some packages to better organize the project. They will be named: &lt;strong&gt;&lt;code&gt;builder&lt;/code&gt;&lt;/strong&gt;,&lt;strong&gt;&lt;code&gt;service&lt;/code&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;code&gt;controller&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click &lt;code&gt;src&amp;gt; main&amp;gt; kotlin&lt;/code&gt; until you find the name of your project.&lt;/li&gt;
+&lt;li&gt;Right-click &lt;code&gt;new&amp;gt; package&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Name it &lt;strong&gt;&lt;code&gt;builder&lt;/code&gt;&lt;/strong&gt; and press enter.&lt;/li&gt;
+&lt;li&gt;Repeat the process creating the other two packages, naming them &lt;strong&gt;&lt;code&gt;service&lt;/code&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;code&gt;controller&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;After creating the packages, your screen should look like this:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/image%20%2829%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;step-3--create-the-application-service&#34;&gt;Step 3: ‌ Create the application service&lt;/h3&gt;
+&lt;p&gt;The first class that we will create is the Builder. It is in this file that the Server-Driven screen must be structured:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Right-click the builder package and click &lt;strong&gt;&lt;code&gt;new&amp;gt; Kotlin File / Class&lt;/code&gt;&lt;/strong&gt; and name it &lt;code&gt;ScreenBeagleBuilder&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;This class must extend from &lt;code&gt;ScreenBuilder&lt;/code&gt; (which is an internal Beagle class).&lt;/li&gt;
+&lt;li&gt;Note that it will replace the &lt;code&gt;build method&lt;/code&gt; and this is where the Server-Driven screen will be implemented.&lt;/li&gt;
+&lt;li&gt;In this step, you can copy and paste the code below into your class:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;br.com.zup.beagle.core.Style&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;br.com.zup.beagle.ext.applyStyle&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;br.com.zup.beagle.ext.unitReal&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;br.com.zup.beagle.widget.Widget&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;br.com.zup.beagle.widget.action.Alert&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;br.com.zup.beagle.widget.core.AlignSelf&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;br.com.zup.beagle.widget.core.EdgeValue&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;br.com.zup.beagle.widget.core.Flex&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;br.com.zup.beagle.widget.core.TextAlignment&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;br.com.zup.beagle.widget.layout.Container&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;br.com.zup.beagle.widget.layout.Screen&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;br.com.zup.beagle.widget.layout.ScreenBuilder&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;br.com.zup.beagle.widget.ui.ImagePath&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;br.com.zup.beagle.widget.ui.Text&lt;/span&gt;
+
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;object&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ScreenBeagleBuilder&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ScreenBuilder&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;build&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+        &lt;span style=&#34;color:#000&#34;&gt;child&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Container&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;children&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;listOf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+                    &lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+                            &lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Hello Beagle!&amp;#34;&lt;/span&gt;
+                    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;applyStyle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+                            &lt;span style=&#34;color:#000&#34;&gt;Style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;margin&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;EdgeValue&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;top&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;16.u&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;nitReal&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()),&lt;/span&gt;
+                                    &lt;span style=&#34;color:#000&#34;&gt;flex&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Flex&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;alignSelf&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;AlignSelf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;CENTER&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+                            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+                    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+                    &lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+                            &lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Beagle is a cross-platform framework which provides usage of the &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;+&lt;/span&gt;
+                                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Server-Driven UI concept, natively in iOS, Android and Web applications. &amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;+&lt;/span&gt;
+                                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;By using Beagle, your team could easily change application&amp;#39;s layout and&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;+&lt;/span&gt;
+                                    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34; data by just changing backend code.&amp;#34;&lt;/span&gt;
+                    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;applyStyle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+                            &lt;span style=&#34;color:#000&#34;&gt;Style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;margin&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;EdgeValue&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+                                    &lt;span style=&#34;color:#000&#34;&gt;left&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;16.u&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;nitReal&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(),&lt;/span&gt;
+                                    &lt;span style=&#34;color:#000&#34;&gt;right&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;16.u&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;nitReal&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(),&lt;/span&gt;
+                                    &lt;span style=&#34;color:#000&#34;&gt;top&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;20.u&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;nitReal&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+                                    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+                            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+                    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The next class we will create is**&lt;code&gt;Service&lt;/code&gt;**:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Right-click the service package and click &lt;code&gt;New&amp;gt; Kotlin File / Class.&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Name it &lt;code&gt;ScreenBeagleService&lt;/code&gt;. This class must be annotated with &lt;code&gt;@Service&lt;/code&gt;, which is a Spring annotation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Implement&lt;/strong&gt; a method called &lt;code&gt;createScreenBeagle&lt;/code&gt; that returns the &lt;code&gt;ScreenBeagleBuilder&lt;/code&gt; class:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;com.example.bff.builder.ScreenBeagleBuilder&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;org.springframework.stereotype.Service&lt;/span&gt;
+
+&lt;span style=&#34;color:#5c35cc;font-weight:bold&#34;&gt;@Service&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ScreenBeagleService&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;createScreenBeagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ScreenBeagleBuilder&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And then the &lt;strong&gt;&lt;code&gt;Controller&lt;/code&gt;&lt;/strong&gt; class.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;In the controller package, create a class and name it &lt;code&gt;ScreenController&lt;/code&gt;. It must be annotated with &lt;code&gt;@RestController&lt;/code&gt; to expose its components through the Rest API.&lt;/li&gt;
+&lt;li&gt;He will receive a &lt;code&gt;ScreenBeagleService&lt;/code&gt; through his main builder, so Spring can inject it for you.&lt;/li&gt;
+&lt;li&gt;Create your class as in the example below:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;com.example.bff.service.ScreenBeagleService&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;org.springframework.web.bind.annotation.GetMapping&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;org.springframework.web.bind.annotation.RestController&lt;/span&gt;
+
+&lt;span style=&#34;color:#5c35cc;font-weight:bold&#34;&gt;@RestController&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ScreenController&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;private&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;val&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;screenBeagleService&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ScreenBeagleService&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#5c35cc;font-weight:bold&#34;&gt;@GetMapping&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/screen&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;getFirstScreen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;screenBeagleService&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;createScreenBeagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;@RestController&lt;/code&gt; annotation defines this class as a controller  class&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;screenBeagleService&lt;/code&gt; parameter must have its type defined as: &lt;code&gt;ScreenBeagleService&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;getScreen&lt;/code&gt; method needs to annotate &lt;code&gt;@ GetMapping (&amp;quot;/ screen&amp;quot;)&lt;/code&gt; to create the &lt;code&gt;&amp;quot;/ screen&amp;quot;&lt;/code&gt; path in the application&amp;rsquo;s URL and receive the result of the &lt;code&gt;createScreenBeagle&lt;/code&gt; function&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The backend is ready to serve as the BFF of your Server-Driven application.&lt;/p&gt;
+&lt;h2 id=&#34;initializing-the-application&#34;&gt;Initializing the application&lt;/h2&gt;
+&lt;p&gt;Now it&amp;rsquo;s time to start your application, follow the next steps:&lt;/p&gt;
+&lt;h3 id=&#34;step-1-run-the-project&#34;&gt;&lt;strong&gt;Step 1: Run the project&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Click on the green triangle named &lt;strong&gt;&lt;code&gt;run&lt;/code&gt;&lt;/strong&gt;, or press and hold SHIFT + F10 to run your back-end application.&lt;/p&gt;
+&lt;p&gt;Your screen should look like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/sem-titulo2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;step-2-make-a-request&#34;&gt;&lt;strong&gt;Step 2: Make a request&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Open your browser and type: localhost: 8080 / screen&lt;/p&gt;
+&lt;p&gt;A JSON structure must appear on your screen similar to the structure below:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:screenComponent&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+  &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;child&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:container&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+    &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;children&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+      &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:text&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+      &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Hello Beagle!&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+      &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;style&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;margin&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+          &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;top&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;value&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;16.0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;REAL&amp;#34;&lt;/span&gt;
+          &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;},&lt;/span&gt;
+        &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;flex&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+          &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;alignSelf&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;CENTER&amp;#34;&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+      &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;},&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+      &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:text&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+      &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Beagle is a cross-platform framework which provides usage of the Server-Driven UI concept, natively in iOS, Android and Web applications. By using Beagle, your team could easily change application&amp;#39;s layout and data by just changing backend code.&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+      &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;style&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;margin&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+          &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;left&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;value&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;16.0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;REAL&amp;#34;&lt;/span&gt;
+          &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;},&lt;/span&gt;
+          &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;top&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;value&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;20.0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;REAL&amp;#34;&lt;/span&gt;
+          &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;},&lt;/span&gt;
+          &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;right&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;value&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;16.0&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;type&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;REAL&amp;#34;&lt;/span&gt;
+          &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+      &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;step-3-check-the-process&#34;&gt;&lt;strong&gt;Step 3: Check the process&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;If that is not the answer you had, it is necessary to check the configuration process again. Go back to the previous steps and start with the classes that have the biggest mistakes when configured for the first time.&lt;/p&gt;
+&lt;p&gt;Or, if you prefer, take the finished project from our repository and compare it with yours. You can access the &lt;a href=&#34;https://github.com/ZupIT/beagle/tree/master/backend/sample&#34;&gt;&lt;strong&gt;repository here.&lt;/strong&gt; &lt;/a&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+In order to use the backend service, you must have the front end prepared for Beagle, whether Android, iOS or Web. Everything will work using a JSON from the Backend.
+&lt;/div&gt;
+
+&lt;p&gt;To learn more about configuring your frontend environment, see more at:&lt;/p&gt;
+&lt;p&gt;👉 Beagle implementation tutorial for &lt;a href=&#34;case-android/&#34;&gt;&lt;strong&gt;Android&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;👉Beagle implementation tutorial for &lt;a href=&#34;../../using-beagle/ios&#34;&gt;&lt;strong&gt;iOS&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;👉Beagle implementation tutorial for  &lt;a href=&#34;case-web&#34;&gt;&lt;strong&gt;Web&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
