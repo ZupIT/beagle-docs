@@ -13961,4 +13961,13 @@ pre {
 .nav-tabs > li.active > a {
   background: #8dc63f; }
 
+.alert-warning {
+  border-color: #f7941e; }
+
+.alert-info {
+  border-color: #0c3455; }
+
+.alert-success {
+  border-color: #8dc63f; }
+
 /*# sourceMappingURL=main.css.map */
