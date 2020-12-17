@@ -1,1 +1,0 @@
-{"confirm.json":"{\"_beagleComponent_\":\"beagle:container\",\"children\":[{\"_beagleComponent_\":\"beagle:button\",\"text\":\"Confirm Example\",\"onPress\":[{\"_beagleAction_\":\"beagle:confirm\",\"title\":\"Confirm Title\",\"message\":\"Confirm Message\",\"onPressOk\":{\"_beagleAction_\":\"beagle:alert\",\"message\":\"Confirmed\"}}]}]}"}
