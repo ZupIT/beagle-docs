@@ -1,0 +1,25 @@
+name: hugo build check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  
+          fetch-depth: 0    
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.78.1'
+          extended: true
+
+      - name: Build check
+        run: hugo -D
+        working-directory: Settings

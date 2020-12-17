@@ -1,0 +1,38 @@
+name: hugo to github pages
+
+on:
+  push:
+    branches:
+      - main  
+    tags-ignore:
+      - '*.*' 
+    paths-ignore: 
+      - docs
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  
+          fetch-depth: 0    
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.78.1'
+          extended: true
+
+      - name: Build
+        run: hugo -D
+        working-directory: Settings
+              
+      - name: Deploying
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: release
+          FOLDER: docs
+          CLEAN: true
+          TARGET_FOLDER: docs
