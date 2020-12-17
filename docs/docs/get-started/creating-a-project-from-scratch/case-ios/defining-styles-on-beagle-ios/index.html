@@ -24,11 +24,11 @@
 <meta property="og:description" content="Here, you&#39;ll find a tutorial of how to configure a Design System for Beagle on iOS." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-ios/defining-styles-on-beagle-ios/" />
-<meta property="article:modified_time" content="2020-12-10T16:17:47-03:00" /><meta property="og:site_name" content="Beagle" />
+<meta property="article:modified_time" content="2020-12-17T17:26:18-03:00" /><meta property="og:site_name" content="Beagle" />
 <meta itemprop="name" content="Defining styles on Beagle ios">
 <meta itemprop="description" content="Here, you&#39;ll find a tutorial of how to configure a Design System for Beagle on iOS.">
-<meta itemprop="dateModified" content="2020-12-10T16:17:47-03:00" />
-<meta itemprop="wordCount" content="1231">
+<meta itemprop="dateModified" content="2020-12-17T17:26:18-03:00" />
+<meta itemprop="wordCount" content="1232">
 
 
 
@@ -104,7 +104,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.ed51fee8f018a4c6943f47e0458e12f973a94a2468f8ca2dcb293bd20973c5cc7b01779a96e71204a108d8cc661a1b9e614ea179435da3d5407c035486e62794.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.776b20d69e9b41d5fbe797515b38444b3ca6617a3b7589e6f733f9354156a8015690b83305963f432d363bab53455feb6f47537b42ae2b4d9cde418461949f96.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -136,7 +136,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.ed51fee8f018a4c6943f47e0458e12f973a94a2468f8ca2dcb293bd20973c5cc7b01779a96e71204a108d8cc661a1b9e614ea179435da3d5407c035486e62794.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.776b20d69e9b41d5fbe797515b38444b3ca6617a3b7589e6f733f9354156a8015690b83305963f432d363bab53455feb6f47537b42ae2b4d9cde418461949f96.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -1922,7 +1922,7 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#creating-styles-for-beagle-ios"><strong>C</strong>reating styles for Beagle iOS</a>
+    <li><a href="#creating-styles-for-beagle-ios">Creating styles for Beagle iOS</a>
       <ul>
         <li><a href="#step-1-create-a-swift-file"><strong>Step 1: Create a Swift file</strong></a></li>
         <li><a href="#step-2-create-a-text-style">Step 2: Create a text style</a></li>
@@ -2004,7 +2004,7 @@
         <p class="reading-time"><i class="fa fa-clock" aria-hidden="true"></i> 6 minute read</p>
            
 	<hr>
-<h2 id="creating-styles-for-beagle-ios"><strong>C</strong>reating styles for Beagle iOS</h2>
+<h2 id="creating-styles-for-beagle-ios">Creating styles for Beagle iOS</h2>
 <p>On the first use example, you saw how to <a href="../.././"><strong>implement Beagle</strong></a> and create your first server-driven screen.</p>
 <p>In this tutorial, the idea is to get deeper from the <a href="./#passo-3-configurando-o-xcode"><strong>previous project</strong></a> to create a Design System on Beagle&rsquo;s library. To better illustrate  the explanation, we&rsquo;ll use these <a href="https://github.com/ZupIT/beagle-examples"><strong>sample codes</strong></a> that you can find out in our repository.</p>
 <p>The idea is to configure some styles on iOS to allow you to customize some components, such as:</p>
@@ -2147,7 +2147,7 @@ If you can&rsquo;t find the text font, Beagle will define a system default font 
 <li>Open the backend project (BFF) and look for the <code>FirstScreenBeagleBuilder</code>file.</li>
 <li>This is the file that contains the code of your first server-driven screen.</li>
 <li>She must be configured like in the image below.</li>
-<li>On her, you will notice that it was built a hierarchy&rsquo;s screen components and two text types components.</li>
+<li>On it, you will notice that it was built a hierarchy&rsquo;s screen components and two text types components.</li>
 </ol>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">FirstScreenBuilder</span> <span style="color:#000;font-weight:bold">:</span> <span style="color:#000">ScreenBuilder</span> <span style="color:#000;font-weight:bold">{</span>
     <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">build</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">Screen</span><span style="color:#000;font-weight:bold">(</span>
@@ -2201,7 +2201,7 @@ If you can&rsquo;t find the text font, Beagle will define a system default font 
 <span style="color:#000;font-weight:bold">),</span>
 </code></pre></div><p>And done, that&rsquo;s all we&rsquo;re gonna do on our backend so far.</p>
 <ul>
-<li>Repeat the same process with the other<code>Text</code> component - the paragraph -, but name it as <code>“Description.Text.Orange”</code></li>
+<li>Repeat the same process with the other <code>Text</code> component - the paragraph -, but name it as <code>“Description.Text.Orange”</code></li>
 </ul>
 <p>You can run your backend&rsquo;s application so the service can be available.</p>
 
@@ -2281,7 +2281,7 @@ In case you have any problem, we recommend you to make our backend&rsquo;s imple
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top"><div class="dr-last-modified-text">
-  Last modified December 10, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/7e74c70c32dcf1d1db826d32f0dfaeb30496f7ee">migrate pt and en content (7e74c70c)</a>
+  Last modified December 17, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/51afb85598f31bea1cd18c587a70809e33a416cb">Alterações nas págs em inglês da seção Get Started (#115) (51afb855)</a>
 </div></div>
 </div>
 

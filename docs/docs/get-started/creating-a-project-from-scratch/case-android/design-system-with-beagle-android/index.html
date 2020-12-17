@@ -24,11 +24,11 @@
 <meta property="og:description" content="Here, you&#39;ll find a tutorial to configure a Design System with Beagle for Android." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zupit.github.io/docs-beagle/docs/get-started/creating-a-project-from-scratch/case-android/design-system-with-beagle-android/" />
-<meta property="article:modified_time" content="2020-12-10T16:17:47-03:00" /><meta property="og:site_name" content="Beagle" />
+<meta property="article:modified_time" content="2020-12-17T17:26:18-03:00" /><meta property="og:site_name" content="Beagle" />
 <meta itemprop="name" content="Design System with Beagle Android">
 <meta itemprop="description" content="Here, you&#39;ll find a tutorial to configure a Design System with Beagle for Android.">
-<meta itemprop="dateModified" content="2020-12-10T16:17:47-03:00" />
-<meta itemprop="wordCount" content="2195">
+<meta itemprop="dateModified" content="2020-12-17T17:26:18-03:00" />
+<meta itemprop="wordCount" content="1957">
 
 
 
@@ -104,7 +104,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.ed51fee8f018a4c6943f47e0458e12f973a94a2468f8ca2dcb293bd20973c5cc7b01779a96e71204a108d8cc661a1b9e614ea179435da3d5407c035486e62794.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.776b20d69e9b41d5fbe797515b38444b3ca6617a3b7589e6f733f9354156a8015690b83305963f432d363bab53455feb6f47537b42ae2b4d9cde418461949f96.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -136,7 +136,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.ed51fee8f018a4c6943f47e0458e12f973a94a2468f8ca2dcb293bd20973c5cc7b01779a96e71204a108d8cc661a1b9e614ea179435da3d5407c035486e62794.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.776b20d69e9b41d5fbe797515b38444b3ca6617a3b7589e6f733f9354156a8015690b83305963f432d363bab53455feb6f47537b42ae2b4d9cde418461949f96.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -1928,12 +1928,11 @@
         <li><a href="#example">Example</a></li>
       </ul>
     </li>
-    <li><a href="#getting-start"><strong>Getting start</strong></a>
+    <li><a href="#getting-started"><strong>Getting started</strong></a>
       <ul>
-        <li><a href="#step-1-configure-the-design-system-for-android">Step 1: Configure the Design System for Android</a></li>
-        <li><a href="#step-2-create-a-theme">Step 2: <strong>Create a theme</strong></a></li>
-        <li><a href="#step-3-customize-a-component"><strong>Step 3: Customize a component</strong></a></li>
-        <li><a href="#step-4-register-a-component-on-design-system"><strong>Step 4: Register a component on Design System</strong></a></li>
+        <li><a href="#step-1-configure-the-design-system-for-android"><strong>Step 1: Configure the Design System for Android</strong></a></li>
+        <li><a href="#step-2-customize-a-component"><strong>Step 2: Customize a component</strong></a></li>
+        <li><a href="#step-3-register-a-component-on-design-system"><strong>Step 3: Register a component on Design System</strong></a></li>
       </ul>
     </li>
     <li><a href="#whats--next">What&rsquo;s  next?</a></li>
@@ -2007,7 +2006,7 @@
 	<h1>Design System with Beagle Android</h1>
     <div class="lead">Here, you&rsquo;ll find a tutorial to configure a Design System with Beagle for Android.</div>
 	
-        <p class="reading-time"><i class="fa fa-clock" aria-hidden="true"></i> 11 minute read</p>
+        <p class="reading-time"><i class="fa fa-clock" aria-hidden="true"></i> 10 minute read</p>
            
 	<hr>
 <h2 id="creating-a-design-system"><strong>Creating a Design System</strong></h2>
@@ -2031,13 +2030,13 @@
 <p>With the function already stablished, the <em><strong>else</strong></em> operator will contain a “default” style, like we demonstrate on the code below:</p>
 <p><img src="https://lh5.googleusercontent.com/sRycVP6U1ThpjYfz4KJHH1Dp6jCZxONg7u1KC-_CDCiROkOFwhOvF5kGOxuTpOexLUZ8R-J97UCMNKqV16uUz4MBGIO279Dn4vS6LZiqIFn_kOtxtX5wLMo57wKS3_5nKdDoc3gM" alt=""></p>
 <p>The yellow highlight shows the &ldquo;style name&rdquo; stated on backend and rescued on frontend (Android) while the orange highlight shows the style created on Android and that will be executed when the JSON from backend reads the &ldquo;Style name&rdquo;.</p>
-<h2 id="getting-start"><strong>Getting start</strong></h2>
+<h2 id="getting-started"><strong>Getting started</strong></h2>
 <p>Let&rsquo;s go to practice! First, you have to look for a style folder named &ldquo;Style&rdquo; on your IDE Android. To do so on Android Studio, just click on <strong>res &gt; values &gt; styles</strong>.</p>
 <p>Once you made this part, open the style&rsquo;s file (styles) and you&rsquo;ll see a screen similar to the example below. This is the file where we&rsquo;ll list all the styles we&rsquo;re intending to apply on Android&rsquo;s components.</p>
 <p>We suggest you to keep this file open, because we&rsquo;ll use it some steps ahead.</p>
 <p><img src="https://lh4.googleusercontent.com/1ykMjqUpXX3xTPLxPl3H3nNRWkB5nK7shGIaFvx3oRATEJ4eK4yhPG1fpUECPjOnKEdRMhSzaXT5byE5PUFhxZIo1SCqC6j345H4qrjTEv4ShWK1PZsHrUB7GmmEjeW6Mo1-jjvd" alt=""></p>
 <p>We divided the design system creation in 4 steps, as we&rsquo;ll see now.</p>
-<h3 id="step-1-configure-the-design-system-for-android">Step 1: Configure the Design System for Android</h3>
+<h3 id="step-1-configure-the-design-system-for-android"><strong>Step 1: Configure the Design System for Android</strong></h3>
 <p>The first step on design system creation is to create a class to represent it.</p>
 
 
@@ -2052,10 +2051,18 @@ Just remember that the design system we&rsquo;re about to create is part of the 
 <li>Indicate that this class should extends a Beagle&rsquo;s interface called <code>DesignSystem</code>.</li>
 <li>Use the <code>@BeagleComponent</code> note above the <code>AppDesignSystem</code>class name.</li>
 </ul>
-<p>When you follow these steps, Android will request that some functions must be implemented to be responsible to apply &ldquo;styles&rdquo; to the components. After you agree to implement these methods, your screen must be like the example below:</p>
-<p><img src="https://lh5.googleusercontent.com/8j48P3-ov2XV1Sz24VzIHEyTLzTVMqDntu7-3iYkFboGpXtDiBF1FY2ddkcT_a0qBfo_LO8l-rbn-mriSreZd33XsGzHqKvyWsPsE4wtaJWeoRxyy5QxMMgWyISuwVSOThs97aTp" alt=""></p>
-<p>With this way, the <code>AppDesignSystem</code> will overwrite, at least, six methods in which each one represents one component&rsquo;s type. Each method will apply styles to visual components that will be registered.</p>
-<p>We&rsquo;ll demonstrate further how these components and their styles are listed and organized inside these methods. For now, let&rsquo;s understand what each method does:</p>
+<p>When you follow these steps, Android will request that some functions must be implemented to be responsible to apply &ldquo;styles&rdquo; to the components.</p>
+<p>On this example, you will se the <strong><code>textStyle.</code></strong> method:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#5c35cc;font-weight:bold">@BeagleComponent</span>
+<span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">AppDesignSystem</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">DesignSystem</span><span style="color:#000;font-weight:bold">()</span>  <span style="color:#000;font-weight:bold">{</span>
+
+    <span style="color:#204a87;font-weight:bold">override</span> <span style="color:#204a87;font-weight:bold">fun</span> <span style="color:#000">textStyle</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">id</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">String</span><span style="color:#000;font-weight:bold">):</span> <span style="color:#000">Int</span><span style="color:#000;font-weight:bold">?</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#204a87;font-weight:bold">super</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">textStyle</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">id</span><span style="color:#000;font-weight:bold">)</span>
+    <span style="color:#000;font-weight:bold">}</span>
+    
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div><p>With this way, the <code>AppDesignSystem</code> will overwrite, at least, six methods in which each one represents one component&rsquo;s type. Each method will apply styles to visual components that will be registered.</p>
+<p>We&rsquo;ll demonstrate later how these components and their styles are listed and organized inside these methods. For now, let&rsquo;s understand what each method does:</p>
 <ol>
 <li>The <strong><code>theme</code></strong> method applies a theme that can be similar to the native platform. It&rsquo;s the <strong>only mandatory method</strong> when we create a design system class.</li>
 <li>The <strong><code>buttonStyle</code></strong> method is responsible to apply style to Button components.</li>
@@ -2065,134 +2072,110 @@ Just remember that the design system we&rsquo;re about to create is part of the 
 <li>And the <strong><code>toolbarStyle</code></strong> method responsible to apply style to Toolbar components.</li>
 </ol>
 <p>When you create a Design System class, it&rsquo;s necessary to have, at least, one theme method stated. The other methods can be left without implementation, as you can see in the image above.</p>
-<h3 id="step-2-create-a-theme">Step 2: <strong>Create a theme</strong></h3>
-<p>The next step is create a theme component so our Beagle&rsquo;s application can use when renders our <a href="../../../../../key-concepts#server-driven-ui"><strong>server-driven screens.</strong></a></p>
-<ol>
-<li>First, let&rsquo;s register three colors on the color file on Android.</li>
-</ol>
-<ul>
-<li>Access the package <em>r<strong>es &gt; values &gt; colors</strong></em></li>
-<li>Addd three colors inside the <code>&lt;resources&gt;&lt;/resources&gt;</code> tag.</li>
-<li>Type the code below so you can create the white, black and orange colors on your color palette.</li>
-</ul>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">&lt;color name=&#34;colorWhite&#34;&gt;#FFFFFF&lt;/color&gt;
-&lt;color name=&#34;colorBlack&#34;&gt;#000000&lt;/color&gt;
-&lt;color name=&#34;colorOrange&#34;&gt;#FFA500&lt;/color&gt;
-
-</code></pre></div><ol start="2">
-<li>Then, let&rsquo;s access the <code>style</code> file,  like we saw before.</li>
-</ol>
-
-
-<div class="alert alert-info" role="alert">
-
-In case you have closed the file, you can find it inside the values package. You&rsquo;ll have to access the package because we&rsquo;re going to create a style to our server-driven theme. To do so, click on _<strong>res &gt; values &gt; styles</strong>. _
-</div>
-
-<p>Copy and paste the code below using the &lt;resources&gt;&lt;/resources&gt; tag.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">    &lt;style name=&#34;AppThemeServerDriven&#34; parent=&#34;Theme.AppCompat.NoActionBar&#34;&gt;
-        &lt;!-- Customize your theme here. --&gt;
-        &lt;item name=&#34;colorPrimary&#34;&gt;@color/colorPrimary&lt;/item&gt;
-        &lt;item name=&#34;colorPrimaryDark&#34;&gt;@color/colorPrimaryDark&lt;/item&gt;
-        &lt;item name=&#34;colorAccent&#34;&gt;@color/colorAcent&lt;/item&gt;
-        &lt;item name=&#34;android:windowBackground&#34;&gt;@color/colorWhite&lt;/item&gt;
-    &lt;/style&gt;
-</code></pre></div><p><strong>Two important changes</strong> happen to this file:</p>
-<p><strong>Change 1:</strong> A new theme style was created with the name <code>AppThemeServerDriven</code>.</p>
-<p>Notice that in this style , the <code>parent</code> must be <code>Theme.AppCompat.NoAction bar</code>. This detail is very important because Beagle particularly treats  an action bar and controls its behavior with other method on the design system called <code>toolbarStyle</code>.</p>
-<p>__<strong>Change 2:</strong> New colors were listed inside the new esteem.</p>
-<p>Notice how they correspond to the items <code>colorPrimary</code>, <code>colorPrimaryDark</code> normally referenced in this way on the Android&rsquo;s application pattern theme. We&rsquo;re suggesting here a similar theme, but you can define how you want to. For now, let&rsquo;s just keep this way.</p>
-<p>Now, we need to access the <code>AppDesignSystem</code> class, that we recently created, to register the Design System style. Considering we only have one theme, you can follow these instructions:</p>
-<ul>
-<li>Copy and paste the line and replace the theme function on<code>AppDesignSystem</code> class and we&rsquo;re done.</li>
-<li>Your theme is configured and registered on Beagle.</li>
-</ul>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">override fun theme(): Int = R.style.AppThemeServerDriven
-</code></pre></div><h3 id="step-3-customize-a-component"><strong>Step 3: Customize a component</strong></h3>
-<p>This is the moment that occurs the <a href="../../../../key-concepts#backend-for-frontend"><strong>BFF</strong></a>, when frontend connects to backend.</p>
-<p>To do so, you&rsquo;ll have to <strong>configure Android&rsquo;s frontend and Intellij&rsquo;s backend</strong>. In case you haven&rsquo;t this configuration done, just follow the <a href="https://github.com/ZupIT/beagle-examples"><strong>backend&rsquo;s configuration</strong></a> and run it.</p>
-<p>For our backend here, we created a server-driven page with 2 texts: 1 title and 1 paragraph. It should be like this when rendered on frontend:</p>
+<h3 id="step-2-customize-a-component"><strong>Step 2: Customize a component</strong></h3>
+<p>This moment is where the
+Este momento é o ponto em que o ocorre o <a href="../../../../../principais-conceitos#backend-for-frontend"><strong>BFF</strong></a> happens, it is when frontend connects to the backend.</p>
+<p>For that, <strong>you will have to configure Android&rsquo;s frontend and Intellij backend.</strong>
+In case you don&rsquo;t have it ready, it just download <a href="https://github.com/ZupIT/beagle-examples"><strong>the backend configuration example</strong></a> and run it.</p>
+<p>For this backend here it was created a server-driven page with 2 texts, one is the title and the other is paragraph. It must be like this when rendered by the frontend:</p>
 <p><img src="https://lh4.googleusercontent.com/Rms7sJWr8_BXtHuaxpxtJwQly1O7qBX79AqhSlrj9TSjTqD_7eqFyavstkbgwQO3BVjoGeVV7W53KTVxUkonTD7R6wYBVhWWqa_tfwDaFBw8AVPu-KLQLcZ0H3A8UDK-X_9JMKyr" alt=""></p>
-<p>Notice that our screen is basically structure and content. The text is on standard size and the layout doesn&rsquo;t have a style.</p>
-<p>To attribute a style to these texts, we&rsquo;ll recorrer a nossa tela configurada lá no BFF:</p>
+<p>See this screen is only structure and content. The size of text is standard and the form needs a style.</p>
+<p>To attribute a style to these texts, let&rsquo;s use the configured screen on the BFF:</p>
 <ol>
-<li>Open the BFF project and look for the <code>FirstScreenBeagleBuilder</code>file.</li>
+<li>Open the BFF project and find the <code>FirstScreenBeagleBuilder</code> file.</li>
 </ol>
-<p>This is the file that contains the code of your server-driven screen, that has to be configured as it shows in the image below.</p>
-<p>On that image, you&rsquo;ll see that we built a component&rsquo;s hierarchy with one SCREEN and two types of TEXT component.</p>
+<p>This file contains the code of your first server-driven screen that must be configured like the image below.</p>
+<p>You will see that a components hierarchy was built with a SCREEN and two TEXT components.</p>
 
 
 <div class="alert alert-info" role="alert">
 
-For this point on the tutorial, just focus on what must be done to apply one style to our components.
+For this tutorial momemnt, you have to only worry about what needs to be done so you can apply a style to the components.
 </div>
 
 <p><img src="https://lh3.googleusercontent.com/b3DvRw3pXFnrhgZtHF2kNMzZCY7vno0oqjs7VsxT2l9aukfyBI2KHfSg-5bcb-hgV_RgXqm0HxlVJBeimQ09bFiXc9R-ZFDrKPcV-PTQf7pbs8P1eZApkyldGdmmKJ3kQMgrUfYR" alt=""></p>
-<p>To add a style and a text element, you should list the style&rsquo;s name inside the text component, as indicated in the image below. Don&rsquo;t forget to separate the components by one comma.</p>
-<p>Hold the Ctrl button and put your mouse on the <code>Text</code> component so you&rsquo;ll see the attribute&rsquo;s list that this component can receive from backend. For now, we&rsquo;ll only use the <code>Style</code></p>
-<pre><code> 2. Put a comma after the text attribute = &quot;Hello Beagle&quot;, and write the another attribute you want to define, which in this case is the `style`
+<p>To add a style and an element to the text, you have to list all the style name in the text component, as you can see below. Don&rsquo;t forget to separate the components with comma.</p>
+<p>Hold the crtl button and put the mouse over the <code>Text</code> component and you will see the attributes list that this component can receive on the backend. We will use the
+<code>Style</code></p>
+<pre><code> 2. Put a comma after the text = &quot;Hello Beagle&quot; attribute, and write the other one you want to define, which is `StyleId`
 
-3. Type a `“HelloBeagle.Text.Title”` string e we're done! The style was defined to this text component.
+3. Type the string `“Title.Text.Orange”` and done! The style will be defined for this text component. 
 </code></pre>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Text(
-    text = &#34;Hello Beagle&#34;,
-    style = “HelloBeagle.Text.Title”
-).applyFlex(
-        Flex(
-            margin = EdgeValue(
-                top = 16.unitRal(Real)
-            ),
-            alignSelf = Alignment.CENTER
-        )
-),
-</code></pre></div><p>For now, don&rsquo;t worry about the other elements, like <code>.applyFlex</code>, and other configurations. Just make sure that there&rsquo;s nothing else to be changed on the example, let&rsquo;s keep it this way now.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#000">Text</span><span style="color:#000;font-weight:bold">(</span>
+       <span style="color:#000">text</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;Hello Beagle&#34;</span><span style="color:#000;font-weight:bold">,</span>
+       <span style="color:#000">styleId</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;Title.Text.Orange&#34;</span>
+     <span style="color:#000;font-weight:bold">).</span><span style="color:#000">applyStyle</span><span style="color:#000;font-weight:bold">(</span>
+         <span style="color:#000">Style</span><span style="color:#000;font-weight:bold">(</span>
+                 <span style="color:#000">margin</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">EdgeValue</span><span style="color:#000;font-weight:bold">(</span>
+                   <span style="color:#000">top</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">16.u</span><span style="color:#000">nitReal</span><span style="color:#000;font-weight:bold">()</span>
+                  <span style="color:#000;font-weight:bold">),</span>
+                   <span style="color:#000">flex</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">Flex</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">alignSelf</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">AlignSelf</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">CENTER</span><span style="color:#000;font-weight:bold">)</span>
+               <span style="color:#000;font-weight:bold">)</span>
+      <span style="color:#000;font-weight:bold">),</span>
+</code></pre></div><p>Don&rsquo;t worry about other configurations and elements like <code>.applyStyle</code>. Just make sure that nothing else is modify on the example and keep it as showed here.</p>
 
 
 <div class="alert alert-info" role="alert">
 
-Repeat this process to the other <code>Text</code> component - the paragraph -, with the difference that, here, you will name it as <code>“Design.System.Text.Description”</code>
+Repeat this process to another <code>Text</code> component that is a paragraph, the difference here is you have to rename it to <code>“Description.Text.Orange”</code>
 </div>
 
-<p>This all we&rsquo;re gonna do on the backend for now. You can run your backend&rsquo;s application so the service be available and, soon, you&rsquo;ll see your styled screen on Android.</p>
+<p>This is all you have to do on backend at this moment. You can run your backend application in order your service is available and you will see your screen with Android&rsquo;s style.</p>
 
 
 <div class="alert alert-info" role="alert">
 
-In case you have any problem, we recommend you to <a href="https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MGhl-E_OjnBR8rfYtgB/get-started/installing-beagle/beagle-backend"><strong>follow this tutorial to implement the backend.</strong></a>
+In case there is some problem, we recommend that you follow the tutorial to <a href="../../../installing-beagle/backend"><strong>implement the backend installation.</strong></a>
 </div>
 
-<pre><code> 2. Return to Android Studio and access again the style's file on the package **res &amp;gt; values &amp;gt; styles**. 
+<pre><code> 4. First, register three file colors on the android file. 
 </code></pre>
-<p>To finish this stage, you have to create on Android the styles and names we just attributed to the texts on the server-driven screen.</p>
-<p>You can do this by adding the style&rsquo;s configuration inside the &lt;resources&gt;&lt;/resources&gt; tag, as its listed below. Notice that you already have some defined styles' elements and must add this one more. Copy and paste the code below with the text that we want to be our <code>Title</code>.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">&lt;style name=&#34;Design.System.Text.Title&#34; parent=&#34;TextAppearance.AppCompat&#34;&gt;
-    &lt;item name=&#34;android:textColor&#34;&gt;@color/colorOrange&lt;/item&gt;
-    &lt;item name=&#34;android:textSize&#34;&gt;20sp&lt;/item&gt;
-    &lt;item name=&#34;textAllCaps&#34;&gt;True&lt;/item&gt;
-    &lt;item name=&#34;android:textStyle&#34;&gt;bold&lt;/item&gt;
-&lt;/style&gt;
-</code></pre></div><p>Notice that you can define many more aspects inside the style because all the options available on Android can be configured on it.</p>
 <ul>
-<li><strong>The first line</strong> defines the style&rsquo;s name like &ldquo;HelloBealge.Text.Title&rdquo;</li>
-<li><strong>The second</strong> defines the text&rsquo;s orange color, as listed above.</li>
-<li><strong>The third</strong> defines the text&rsquo;s size, like 20 sp.</li>
-<li><strong>The fourth</strong> defines that the text must be exhibited on caps lock.</li>
-<li><strong>The fifth</strong> linha defines that the text will be on bold.</li>
+<li>Access the package <em>res &gt; values &gt; colors</em></li>
+<li>Add the 3 colors inside the tag &lt;resources&gt;&lt;/resources&gt; like the following.</li>
+<li>Type the code below and it will create the colors white, black and orange in your color pallete.</li>
 </ul>
-<p>We should make the same process with the paragraph text. In this case, we&rsquo;ll create this style: <code>Design.System.Text.Description</code></p>
-<p><img src="https://lh5.googleusercontent.com/hbl12RSXzpxXGQnsuyuT7GF1-GOv979QdVamfNC413K-BVY1qRhAsgl1i3vv8Fkc9gvIZxdmzNuXmmkdJuF9-WJco0fycrdVKQkaGCDDm2bYHsaxrfvsK6GafXnOVKtORjfWtIBt" alt=""></p>
+<pre><code class="language-markup" data-lang="markup">&lt;color name=&quot;colorWhite&quot;&gt;#FFFFFF&lt;/color&gt;
+&lt;color name=&quot;colorBlack&quot;&gt;#000000&lt;/color&gt;
+&lt;color name=&quot;colorOrange&quot;&gt;#FFA500&lt;/color&gt;
 
+</code></pre><p>To finish this stage, create on Android the styles with the names attributed to the text on the server-driven screen. Access the style files on the package  <strong>res &gt; values &gt; styles</strong></p>
+<p>You can do this adding a style configuration inside the tag &lt;resources&gt;&lt;/resources&gt; as listed below. See you already have some style elements defined and you should add this one. Copy and paste the code below to the text you want to be <code>Title</code>.</p>
+<pre><code class="language-markup" data-lang="markup">&lt;style name=&quot;Title.Text.Orange&quot; parent=&quot;TextAppearance.AppCompat&quot;&gt;
+        &lt;item name=&quot;android:textColor&quot;&gt;@color/colorOrange&lt;/item&gt;
+        &lt;item name=&quot;android:textSize&quot;&gt;20sp&lt;/item&gt;
+        &lt;item name=&quot;textAllCaps&quot;&gt;true&lt;/item&gt;
+        &lt;item name=&quot;android:textStyle&quot;&gt;bold&lt;/item&gt;
+    &lt;/style&gt;
+</code></pre><p>Notice that you can define more aspects inside the style. This is possible because all of the options Android allows can be configured in it.</p>
+<ul>
+<li><strong>The first line</strong> defines the style name like &ldquo;Title.Text.Orange&rdquo;</li>
+<li><strong>The second</strong> defines the orange color for the text, like listed above</li>
+<li><strong>The third</strong> defines the size of the text like: 20 sp</li>
+<li><strong>The fourth</strong> defines that text must be all capital letters</li>
+<li><strong>The fifth</strong> line that defines the text will be in bold</li>
+</ul>
+<p>You should do the same process with paragraph text. For it, you have to create the following style: <code>Description.Text.Orange</code></p>
+<pre><code class="language-markup" data-lang="markup"> &lt;style name=&quot;Description.Text.Orange&quot; parent=&quot;TextAppearance.AppCompat&quot;&gt;
+        &lt;item name=&quot;android:textColor&quot;&gt;@color/colorOrange&lt;/item&gt;
+        &lt;item name=&quot;android:textSize&quot;&gt;16sp&lt;/item&gt;
+        &lt;item name=&quot;textAllCaps&quot;&gt;true&lt;/item&gt;
+    &lt;/style&gt;
+</code></pre>
 
 <div class="alert alert-info" role="alert">
 
-<p>It&rsquo;s a good practice to define a default style. For this tutorial, we&rsquo;ll define one to be applied on normal texts.</p>
-<p>The objective is that this value be applied on a text that came from backend without a predefined style.</p>
+<p>It is a good practice define a default style. /In this tutorial, let&rsquo;s define one to be applied on normal texts.</p>
+<p>The main goal is, this value must be applied on the text that will get to the backend text that doesn&rsquo;t have a predefined style.</p>
 
 </div>
 
-<p><img src="https://lh5.googleusercontent.com/SHrBdleCbQha4LNeMd2bM_Kfq5R0QaDxO1nc36Kc7iu3Ix7w0kiYBkJ2c9EHYbfnHcorrqBcPRjitQUBUWEN8Zty1J1Y1fFsb4BtLnxjT05s-iWGzdYX6Ev5q0cjwpyRuVhwFc0e" alt=""></p>
-<p>And done! Our components are customized! Now let&rsquo;s get to the final stage.</p>
-<h3 id="step-4-register-a-component-on-design-system"><strong>Step 4: Register a component on Design System</strong></h3>
+<pre><code class="language-markup" data-lang="markup">&lt;style name=&quot;Design.System.Text.Default&quot; parent=&quot;TextAppearance.AppCompat&quot;&gt;
+        &lt;item name=&quot;android:textColor&quot;&gt;@color/colorBlack&lt;/item&gt;
+        &lt;item name=&quot;android:textSize&quot;&gt;12sp&lt;/item&gt;
+    &lt;/style&gt;
+</code></pre><p>Done! The components are customized. Now, let&rsquo;s go to the final stage.</p>
+<h3 id="step-3-register-a-component-on-design-system"><strong>Step 3: Register a component on Design System</strong></h3>
 <p>Once you have already all the styles created, it&rsquo;s the moment to register them in our <code>AppDesignSystem</code> class because it&rsquo;s there where Beagle applies all the defined styles on Android Studio on server-driven screens that came from backend.</p>
 <p>To do so, follow these steps:</p>
 <ol>
@@ -2307,7 +2290,7 @@ If you have any trouble on making this configuration, check out <a href="https:/
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top"><div class="dr-last-modified-text">
-  Last modified December 10, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/7e74c70c32dcf1d1db826d32f0dfaeb30496f7ee">migrate pt and en content (7e74c70c)</a>
+  Last modified December 17, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/51afb85598f31bea1cd18c587a70809e33a416cb">Alterações nas págs em inglês da seção Get Started (#115) (51afb855)</a>
 </div></div>
 </div>
 

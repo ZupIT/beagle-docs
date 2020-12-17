@@ -190,7 +190,7 @@ Caso tenha algum problema, recomendamos que faça o tutorial para &lt;a href=&#3
 &lt;p&gt;Uma vez que você já tem todos os estilos criados, é o momento de registrá-los na nossa classe &lt;code&gt;AppDesignSystem&lt;/code&gt;, pois é lá onde Beagle aplica os estilos definidos no Android Studio nas telas server-driven que você receber do backend.&lt;/p&gt;
 &lt;p&gt;Para isso, siga estes passos:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Abra a classe&lt;code&gt;AppDesignSystem&lt;/code&gt; e vá ao método&lt;code&gt;textStyle&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Abra a classe &lt;code&gt;AppDesignSystem&lt;/code&gt; e vá ao método &lt;code&gt;textStyle&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Dentro deste método, crie um operador when. Dentro dele, vamos listar todos os estilos de texto que queremos utilizar agora e depois.&lt;/li&gt;
 &lt;/ol&gt;
 

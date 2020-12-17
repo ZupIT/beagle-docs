@@ -24,11 +24,11 @@
 <meta property="og:description" content="Here, you&#39;ll find how to configure Beagle&#39;s library for Angular." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zupit.github.io/docs-beagle/docs/get-started/using-beagle/web/angular/" />
-<meta property="article:modified_time" content="2020-12-04T17:37:12-03:00" /><meta property="og:site_name" content="Beagle" />
+<meta property="article:modified_time" content="2020-12-17T17:26:18-03:00" /><meta property="og:site_name" content="Beagle" />
 <meta itemprop="name" content="Angular">
 <meta itemprop="description" content="Here, you&#39;ll find how to configure Beagle&#39;s library for Angular.">
-<meta itemprop="dateModified" content="2020-12-04T17:37:12-03:00" />
-<meta itemprop="wordCount" content="821">
+<meta itemprop="dateModified" content="2020-12-17T17:26:18-03:00" />
+<meta itemprop="wordCount" content="820">
 
 
 
@@ -104,7 +104,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.ed51fee8f018a4c6943f47e0458e12f973a94a2468f8ca2dcb293bd20973c5cc7b01779a96e71204a108d8cc661a1b9e614ea179435da3d5407c035486e62794.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.776b20d69e9b41d5fbe797515b38444b3ca6617a3b7589e6f733f9354156a8015690b83305963f432d363bab53455feb6f47537b42ae2b4d9cde418461949f96.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -136,7 +136,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.ed51fee8f018a4c6943f47e0458e12f973a94a2468f8ca2dcb293bd20973c5cc7b01779a96e71204a108d8cc661a1b9e614ea179435da3d5407c035486e62794.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.776b20d69e9b41d5fbe797515b38444b3ca6617a3b7589e6f733f9354156a8015690b83305963f432d363bab53455feb6f47537b42ae2b4d9cde418461949f96.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -2045,7 +2045,7 @@ import { Beagle } from &#39;./beagle.module&#39;;
 })
 export class AppModule { }
 </code></pre></div><h3 id="step-2-create-a-json-to-be-rendered">Step 2: Create a JSON to be rendered</h3>
-<p>Now, you just have to create a JSON to render the components. Usually, this process would be made by an external server that would return de JSON, but for this example we&rsquo;ll create a local file to be accessed for the test.</p>
+<p>Now, you just have to create a JSON to render the components. Usually, this process would be made by an external server that would return de JSON, but for this example you&rsquo;ll create a local file to be accessed for the test.</p>
 <p>On your angular project, navigate to the <code>src/assets</code> file and create a new file named <code>payload.json</code>. Open this new file you just created and copy the content below:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">{
     &#34;_beagleComponent_&#34;: &#34;beagle:container&#34;,
@@ -2077,7 +2077,7 @@ export class AppModule { }
 
 </div>
 
-<p>After you created your JSON, open the file <code>beagle.module.ts</code> we generated in the previous step and add as a baseUrl the path: http://localhost:4200/assets</p>
+<p>After you have created your JSON, open the generated file <code>beagle.module.ts</code> in the previous step and add as a baseUrl the path: http://localhost:4200/assets</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">import { BeagleModule } from &#39;@zup-it/beagle-angular&#39;
 // import all the components you wish to use with Beagle.
 
@@ -2092,7 +2092,7 @@ export class AppModule { }
   },
 })
 export class Beagle {}
-</code></pre></div><p>Well done, your configuration is ready! Now, we&rsquo;ll see how to render mapped components on JSON.</p>
+</code></pre></div><p>Well done, your configuration is ready! Now,  see how to render mapped components on JSON.</p>
 <h3 id="step-3-use-beagle-remote-view">Step 3: Use beagle-remote-view</h3>
 <p>After creating the JSON, you need to tell Angular where to render the Beagle components. To do this, our lib provides the component <code>&lt;beagle-remote-view&gt;</code>.</p>
 <p>Open the file <code>app.component.html</code> and replace all the content with this code:</p>
@@ -2202,7 +2202,7 @@ Well done, you created your first screen with Beagle!
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top"><div class="dr-last-modified-text">
-  Last modified December 4, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/1e8286542b1cfbd63e163a3bba60646abb2a9896">fix links to contribute (1e828654)</a>
+  Last modified December 17, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/51afb85598f31bea1cd18c587a70809e33a416cb">Alterações nas págs em inglês da seção Get Started (#115) (51afb855)</a>
 </div></div>
 </div>
 

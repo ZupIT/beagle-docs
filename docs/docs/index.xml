@@ -188,7 +188,7 @@ Remember to always check if you&amp;rsquo;re using the latest version of Beagle.
 &lt;p&gt;On this section, you made Beagle&amp;rsquo;s &lt;strong&gt;initial installation&lt;/strong&gt; on your application!&lt;br&gt;
 To keep configuring Beagle:&lt;/p&gt;
 &lt;p&gt;👉Go to&lt;a href=&#34;../using-beagle/android&#34;&gt; &lt;strong&gt;initial configurations&lt;/strong&gt;&lt;/a&gt; to enable the use of Beagle on your Android project.&lt;/p&gt;
-&lt;p&gt;👉 If you want to go straight to practice, access our &lt;a href=&#34;../../creating-a-project-from-scratch/case-android/&#34;&gt;&lt;strong&gt;tutorial to create a project from zero&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;👉 If you want to go straight to practice, access our &lt;a href=&#34;../../creating-a-project-from-scratch/case-android/&#34;&gt;&lt;strong&gt;tutorial to create a project from scratch&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 
       </description>
     </item>
@@ -559,10 +559,11 @@ For this example we will not be using a BFF, therefore this step is not necessar
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;isLoggingEnabled&lt;/td&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;Boolean&lt;/td&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;Attribute that enables or disables all logs that Beagle generates.&lt;/td&gt;
+  &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;environment&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;Environment&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;Attribute responsible for informing Beagle about the current build status
+        of the application.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;baseUrl&lt;/td&gt;
@@ -573,10 +574,9 @@ For this example we will not be using a BFF, therefore this step is not necessar
       &lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;environment&lt;/td&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;Environment&lt;/td&gt;
-      &lt;td style=&#34;text-align:left&#34;&gt;Attribute responsible for informing Beagle about the current build status
-        of the application.&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;isLoggingEnabled&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;Boolean&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;Attribute that enables or disables all logs that Beagle generates.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td style=&#34;text-align:left&#34;&gt;cache&lt;/td&gt;
@@ -589,7 +589,7 @@ For this example we will not be using a BFF, therefore this step is not necessar
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 
-Make sure to note your class configuration with&lt;code&gt;BeagleComponent&lt;/code&gt;, because Beagle expect them to have empty constructors.
+Make sure to note your class configuration with &lt;code&gt;BeagleComponent&lt;/code&gt;, because Beagle expect them to have empty constructors.
 &lt;/div&gt;
 
 &lt;h3 id=&#34;step-3--beagleactivitiy&#34;&gt;&lt;strong&gt;Step 3:  BeagleActivitiy&lt;/strong&gt;&lt;/h3&gt;
@@ -1051,7 +1051,7 @@ Check out how to &lt;a href=&#34;../../../../installing-beagle/ios&#34;&gt;&lt;s
 &lt;/div&gt;
 
 &lt;p&gt;Currently, there are two types of approaches to render screens with Beagle: &lt;strong&gt;remote&lt;/strong&gt; and &lt;strong&gt;declarative.&lt;/strong&gt;&lt;/p&gt;
-&lt;h4 id=&#34;remote-renderization&#34;&gt;Remot&lt;strong&gt;e&lt;/strong&gt; Renderization&lt;/h4&gt;
+&lt;h4 id=&#34;remote-renderization&#34;&gt;Remote Renderization&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Main approach used on Beagle because it&amp;rsquo;s based on &lt;a href=&#34;../../../../key-concepts#server-driven-ui&#34;&gt;&lt;strong&gt;server-driven UI&lt;/strong&gt;&lt;/a&gt; concept. It allows you to build layouts dynamically, consuming the informations provided by a &lt;a href=&#34;../../../../key-concepts#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt; through a remote URL.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1060,32 +1060,39 @@ Check out how to &lt;a href=&#34;../../../../installing-beagle/ios&#34;&gt;&lt;s
 &lt;p&gt;Even if it&amp;rsquo;s an alternative not based on server-driven UI, this renderization is a way you can locally state componentes with &lt;strong&gt;Swift language.&lt;/strong&gt; With this, you can use a local component directly or through a JSON that represents it, simulating a response from BFF.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;For this example, you will render a screen with &lt;strong&gt;declarative way&lt;/strong&gt;, which means that all the processes will be done locally because, on this way, you&amp;rsquo;ll know a little bit about Beagle and, in a few steps, test if your installation worked.&lt;/p&gt;
-&lt;h3 id=&#34;step-1-create-a-class-mybeaglescreen&#34;&gt;Step 1: Create a class (MyBeagleScreen)&lt;/h3&gt;
+&lt;h3 id=&#34;step-1-create-a-class-mybeaglescreen&#34;&gt;Step 1: Create a class (&lt;strong&gt;MyBeagleScreen&lt;/strong&gt;)&lt;/h3&gt;
 &lt;p&gt;Create a class and name it as you wish. Here, we&amp;rsquo;ll call it &lt;strong&gt;&lt;code&gt;MyBeagleScreen&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;The class will have only one method responsible to build a &lt;strong&gt;&lt;code&gt;Screen&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt;
-&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Foundation&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;BeagleSchema&lt;/span&gt;
 
-&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;BeagleConfig&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;config&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-        
-        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;BeagleDependencies&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
-        &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;urlBuilder&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;UrlBuilder&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
-            &lt;span style=&#34;color:#000&#34;&gt;baseUrl&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;URL&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;string&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Server base URL&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;MyBeagleScreen&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;make&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Screen&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+            &lt;span style=&#34;color:#000&#34;&gt;child&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Container&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+                &lt;span style=&#34;color:#000&#34;&gt;children&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
+                    &lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Hello Beagle!&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+                &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
+            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;applyFlex&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+                &lt;span style=&#34;color:#000&#34;&gt;Flex&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+                    &lt;span style=&#34;color:#000&#34;&gt;justifyContent&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;center&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+                    &lt;span style=&#34;color:#000&#34;&gt;alignItems&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;center&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+                    &lt;span style=&#34;color:#000&#34;&gt;grow&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;
+                &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+            &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
-        &lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Notice that the &lt;strong&gt;&lt;code&gt;Screen&lt;/code&gt;&lt;/strong&gt; is being build using**&lt;code&gt;Flex&lt;/code&gt;**. To understand better these components and your proprieties, go to the section **component&amp;rsquo;s layout**.
+Notice that the &lt;strong&gt;&lt;code&gt;Screen&lt;/code&gt;&lt;/strong&gt; is being build using &lt;strong&gt;&lt;code&gt;Flex&lt;/code&gt;&lt;/strong&gt;. To understand better these components and your proprieties, go to the section &lt;strong&gt;component&amp;rsquo;s layout&lt;/strong&gt;.
 &lt;/div&gt;
 
 &lt;h3 id=&#34;step-2-instantiate-beaglescreenviewcontroller&#34;&gt;Step 2: Instantiate &lt;strong&gt;BeagleScreenViewController&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;Now it&amp;rsquo;s time to display your first screen built using &lt;strong&gt;Beagle&lt;/strong&gt;, and to do so you must:&lt;/p&gt;
-&lt;p&gt;Instantiate a**&lt;code&gt;BeagleScreenViewController&lt;/code&gt;** with**&lt;code&gt;declarative&lt;/code&gt;** type that will receive a**&lt;code&gt;MyBeagleScreen&lt;/code&gt;**.&lt;/p&gt;
+&lt;p&gt;Instantiate a &lt;strong&gt;&lt;code&gt;BeagleScreenViewController&lt;/code&gt;&lt;/strong&gt; with &lt;strong&gt;&lt;code&gt;declarative&lt;/code&gt;&lt;/strong&gt; type that will receive a &lt;strong&gt;&lt;code&gt;MyBeagleScreen&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;beagleViewController&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;declarative&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
         &lt;span style=&#34;color:#000&#34;&gt;MyBeagleScreen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;make&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
@@ -1095,7 +1102,7 @@ Notice that the &lt;strong&gt;&lt;code&gt;Screen&lt;/code&gt;&lt;/strong&gt; is 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-In case you want to use the **&lt;code&gt;remote&lt;/code&gt;**type, check out &lt;a href=&#34;../../../how-to-display-a-screen&#34;&gt;&lt;strong&gt;how to display a server-driven screen.&lt;/strong&gt;&lt;/a&gt;
+In case you want to use the &lt;strong&gt;&lt;code&gt;remote&lt;/code&gt;&lt;/strong&gt; type, check out &lt;a href=&#34;../../../how-to-display-a-screen&#34;&gt;&lt;strong&gt;how to display a server-driven screen.&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Once you made it, you just have to present it as you wish.&lt;/p&gt;
@@ -1104,7 +1111,7 @@ In case you want to use the **&lt;code&gt;remote&lt;/code&gt;**type, check out &
 
 &lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
 
-Don&amp;rsquo;t forget to add**&lt;code&gt;import Beagle&lt;/code&gt;**.
+Don&amp;rsquo;t forget to add &lt;strong&gt;&lt;code&gt;import Beagle&lt;/code&gt;&lt;/strong&gt;.
 &lt;/div&gt;
 
 &lt;h3 id=&#34;step-3-run-the-application&#34;&gt;Step 3: Run the application&lt;/h3&gt;
@@ -1172,7 +1179,7 @@ import { Beagle } from &amp;#39;./beagle.module&amp;#39;;
 })
 export class AppModule { }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;step-2-create-a-json-to-be-rendered&#34;&gt;Step 2: Create a JSON to be rendered&lt;/h3&gt;
-&lt;p&gt;Now, you just have to create a JSON to render the components. Usually, this process would be made by an external server that would return de JSON, but for this example we&amp;rsquo;ll create a local file to be accessed for the test.&lt;/p&gt;
+&lt;p&gt;Now, you just have to create a JSON to render the components. Usually, this process would be made by an external server that would return de JSON, but for this example you&amp;rsquo;ll create a local file to be accessed for the test.&lt;/p&gt;
 &lt;p&gt;On your angular project, navigate to the &lt;code&gt;src/assets&lt;/code&gt; file and create a new file named &lt;code&gt;payload.json&lt;/code&gt;. Open this new file you just created and copy the content below:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
     &amp;#34;_beagleComponent_&amp;#34;: &amp;#34;beagle:container&amp;#34;,
@@ -1204,7 +1211,7 @@ export class AppModule { }
 
 &lt;/div&gt;
 
-&lt;p&gt;After you created your JSON, open the file &lt;code&gt;beagle.module.ts&lt;/code&gt; we generated in the previous step and add as a baseUrl the path: http://localhost:4200/assets&lt;/p&gt;
+&lt;p&gt;After you have created your JSON, open the generated file &lt;code&gt;beagle.module.ts&lt;/code&gt; in the previous step and add as a baseUrl the path: http://localhost:4200/assets&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;import { BeagleModule } from &amp;#39;@zup-it/beagle-angular&amp;#39;
 // import all the components you wish to use with Beagle.
 
@@ -1219,7 +1226,7 @@ export class AppModule { }
   },
 })
 export class Beagle {}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Well done, your configuration is ready! Now, we&amp;rsquo;ll see how to render mapped components on JSON.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Well done, your configuration is ready! Now,  see how to render mapped components on JSON.&lt;/p&gt;
 &lt;h3 id=&#34;step-3-use-beagle-remote-view&#34;&gt;Step 3: Use beagle-remote-view&lt;/h3&gt;
 &lt;p&gt;After creating the JSON, you need to tell Angular where to render the Beagle components. To do this, our lib provides the component &lt;code&gt;&amp;lt;beagle-remote-view&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Open the file &lt;code&gt;app.component.html&lt;/code&gt; and replace all the content with this code:&lt;/p&gt;
@@ -1350,8 +1357,8 @@ function App() {
 export default App;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When we make this note, we indicate to Beagle that our defined layout will be rendered on &lt;code&gt;payload.json&lt;/code&gt; file. In this case, two components are provided on the library:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;BeagleProvider&amp;gt;&lt;/code&gt;: Responsible to provide a &lt;code&gt;value&lt;/code&gt;propriety  as &lt;code&gt;beagle-service&lt;/code&gt; created on the previous step and contains the initial configurations;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;BeagleRemoteView&amp;gt;&lt;/code&gt;: Responsible to receive a &lt;code&gt;path&lt;/code&gt; propriety, which is the path to our JSON file.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;BeagleProvider&amp;gt;&lt;/code&gt;: Responsible to provide a &lt;code&gt;value&lt;/code&gt; propriety  as &lt;code&gt;beagle-service&lt;/code&gt; created on the previous step and contains the initial configurations;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;BeagleRemoteView&amp;gt;&lt;/code&gt;: Responsible to render the layout defined by the JSON specified by the &lt;code&gt;route&lt;/code&gt; property.&lt;/li&gt;
 &lt;/ol&gt;
 
 
@@ -1690,13 +1697,13 @@ Use a permissive configuration like this one, only in local development environm
 &lt;p&gt;With the function already stablished, the &lt;em&gt;&lt;strong&gt;else&lt;/strong&gt;&lt;/em&gt; operator will contain a “default” style, like we demonstrate on the code below:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://lh5.googleusercontent.com/sRycVP6U1ThpjYfz4KJHH1Dp6jCZxONg7u1KC-_CDCiROkOFwhOvF5kGOxuTpOexLUZ8R-J97UCMNKqV16uUz4MBGIO279Dn4vS6LZiqIFn_kOtxtX5wLMo57wKS3_5nKdDoc3gM&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The yellow highlight shows the &amp;ldquo;style name&amp;rdquo; stated on backend and rescued on frontend (Android) while the orange highlight shows the style created on Android and that will be executed when the JSON from backend reads the &amp;ldquo;Style name&amp;rdquo;.&lt;/p&gt;
-&lt;h2 id=&#34;getting-start&#34;&gt;&lt;strong&gt;Getting start&lt;/strong&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;getting-started&#34;&gt;&lt;strong&gt;Getting started&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;Let&amp;rsquo;s go to practice! First, you have to look for a style folder named &amp;ldquo;Style&amp;rdquo; on your IDE Android. To do so on Android Studio, just click on &lt;strong&gt;res &amp;gt; values &amp;gt; styles&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Once you made this part, open the style&amp;rsquo;s file (styles) and you&amp;rsquo;ll see a screen similar to the example below. This is the file where we&amp;rsquo;ll list all the styles we&amp;rsquo;re intending to apply on Android&amp;rsquo;s components.&lt;/p&gt;
 &lt;p&gt;We suggest you to keep this file open, because we&amp;rsquo;ll use it some steps ahead.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://lh4.googleusercontent.com/1ykMjqUpXX3xTPLxPl3H3nNRWkB5nK7shGIaFvx3oRATEJ4eK4yhPG1fpUECPjOnKEdRMhSzaXT5byE5PUFhxZIo1SCqC6j345H4qrjTEv4ShWK1PZsHrUB7GmmEjeW6Mo1-jjvd&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;We divided the design system creation in 4 steps, as we&amp;rsquo;ll see now.&lt;/p&gt;
-&lt;h3 id=&#34;step-1-configure-the-design-system-for-android&#34;&gt;Step 1: Configure the Design System for Android&lt;/h3&gt;
+&lt;h3 id=&#34;step-1-configure-the-design-system-for-android&#34;&gt;&lt;strong&gt;Step 1: Configure the Design System for Android&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;The first step on design system creation is to create a class to represent it.&lt;/p&gt;
 
 
@@ -1711,10 +1718,18 @@ Just remember that the design system we&amp;rsquo;re about to create is part of 
 &lt;li&gt;Indicate that this class should extends a Beagle&amp;rsquo;s interface called &lt;code&gt;DesignSystem&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Use the &lt;code&gt;@BeagleComponent&lt;/code&gt; note above the &lt;code&gt;AppDesignSystem&lt;/code&gt;class name.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;When you follow these steps, Android will request that some functions must be implemented to be responsible to apply &amp;ldquo;styles&amp;rdquo; to the components. After you agree to implement these methods, your screen must be like the example below:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://lh5.googleusercontent.com/8j48P3-ov2XV1Sz24VzIHEyTLzTVMqDntu7-3iYkFboGpXtDiBF1FY2ddkcT_a0qBfo_LO8l-rbn-mriSreZd33XsGzHqKvyWsPsE4wtaJWeoRxyy5QxMMgWyISuwVSOThs97aTp&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;With this way, the &lt;code&gt;AppDesignSystem&lt;/code&gt; will overwrite, at least, six methods in which each one represents one component&amp;rsquo;s type. Each method will apply styles to visual components that will be registered.&lt;/p&gt;
-&lt;p&gt;We&amp;rsquo;ll demonstrate further how these components and their styles are listed and organized inside these methods. For now, let&amp;rsquo;s understand what each method does:&lt;/p&gt;
+&lt;p&gt;When you follow these steps, Android will request that some functions must be implemented to be responsible to apply &amp;ldquo;styles&amp;rdquo; to the components.&lt;/p&gt;
+&lt;p&gt;On this example, you will se the &lt;strong&gt;&lt;code&gt;textStyle.&lt;/code&gt;&lt;/strong&gt; method:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#5c35cc;font-weight:bold&#34;&gt;@BeagleComponent&lt;/span&gt;
+&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;AppDesignSystem&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;DesignSystem&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+
+    &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;textStyle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;String&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;):&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Int&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;super&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;textStyle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+    
+&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;With this way, the &lt;code&gt;AppDesignSystem&lt;/code&gt; will overwrite, at least, six methods in which each one represents one component&amp;rsquo;s type. Each method will apply styles to visual components that will be registered.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;ll demonstrate later how these components and their styles are listed and organized inside these methods. For now, let&amp;rsquo;s understand what each method does:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;The &lt;strong&gt;&lt;code&gt;theme&lt;/code&gt;&lt;/strong&gt; method applies a theme that can be similar to the native platform. It&amp;rsquo;s the &lt;strong&gt;only mandatory method&lt;/strong&gt; when we create a design system class.&lt;/li&gt;
 &lt;li&gt;The &lt;strong&gt;&lt;code&gt;buttonStyle&lt;/code&gt;&lt;/strong&gt; method is responsible to apply style to Button components.&lt;/li&gt;
@@ -1724,134 +1739,110 @@ Just remember that the design system we&amp;rsquo;re about to create is part of 
 &lt;li&gt;And the &lt;strong&gt;&lt;code&gt;toolbarStyle&lt;/code&gt;&lt;/strong&gt; method responsible to apply style to Toolbar components.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;When you create a Design System class, it&amp;rsquo;s necessary to have, at least, one theme method stated. The other methods can be left without implementation, as you can see in the image above.&lt;/p&gt;
-&lt;h3 id=&#34;step-2-create-a-theme&#34;&gt;Step 2: &lt;strong&gt;Create a theme&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;The next step is create a theme component so our Beagle&amp;rsquo;s application can use when renders our &lt;a href=&#34;../../../../../key-concepts#server-driven-ui&#34;&gt;&lt;strong&gt;server-driven screens.&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;First, let&amp;rsquo;s register three colors on the color file on Android.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;Access the package &lt;em&gt;r&lt;strong&gt;es &amp;gt; values &amp;gt; colors&lt;/strong&gt;&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;Addd three colors inside the &lt;code&gt;&amp;lt;resources&amp;gt;&amp;lt;/resources&amp;gt;&lt;/code&gt; tag.&lt;/li&gt;
-&lt;li&gt;Type the code below so you can create the white, black and orange colors on your color palette.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&amp;lt;color name=&amp;#34;colorWhite&amp;#34;&amp;gt;#FFFFFF&amp;lt;/color&amp;gt;
-&amp;lt;color name=&amp;#34;colorBlack&amp;#34;&amp;gt;#000000&amp;lt;/color&amp;gt;
-&amp;lt;color name=&amp;#34;colorOrange&amp;#34;&amp;gt;#FFA500&amp;lt;/color&amp;gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Then, let&amp;rsquo;s access the &lt;code&gt;style&lt;/code&gt; file,  like we saw before.&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
-
-In case you have closed the file, you can find it inside the values package. You&amp;rsquo;ll have to access the package because we&amp;rsquo;re going to create a style to our server-driven theme. To do so, click on _&lt;strong&gt;res &amp;gt; values &amp;gt; styles&lt;/strong&gt;. _
-&lt;/div&gt;
-
-&lt;p&gt;Copy and paste the code below using the &amp;lt;resources&amp;gt;&amp;lt;/resources&amp;gt; tag.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;    &amp;lt;style name=&amp;#34;AppThemeServerDriven&amp;#34; parent=&amp;#34;Theme.AppCompat.NoActionBar&amp;#34;&amp;gt;
-        &amp;lt;!-- Customize your theme here. --&amp;gt;
-        &amp;lt;item name=&amp;#34;colorPrimary&amp;#34;&amp;gt;@color/colorPrimary&amp;lt;/item&amp;gt;
-        &amp;lt;item name=&amp;#34;colorPrimaryDark&amp;#34;&amp;gt;@color/colorPrimaryDark&amp;lt;/item&amp;gt;
-        &amp;lt;item name=&amp;#34;colorAccent&amp;#34;&amp;gt;@color/colorAcent&amp;lt;/item&amp;gt;
-        &amp;lt;item name=&amp;#34;android:windowBackground&amp;#34;&amp;gt;@color/colorWhite&amp;lt;/item&amp;gt;
-    &amp;lt;/style&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Two important changes&lt;/strong&gt; happen to this file:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Change 1:&lt;/strong&gt; A new theme style was created with the name &lt;code&gt;AppThemeServerDriven&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Notice that in this style , the &lt;code&gt;parent&lt;/code&gt; must be &lt;code&gt;Theme.AppCompat.NoAction bar&lt;/code&gt;. This detail is very important because Beagle particularly treats  an action bar and controls its behavior with other method on the design system called &lt;code&gt;toolbarStyle&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;__&lt;strong&gt;Change 2:&lt;/strong&gt; New colors were listed inside the new esteem.&lt;/p&gt;
-&lt;p&gt;Notice how they correspond to the items &lt;code&gt;colorPrimary&lt;/code&gt;, &lt;code&gt;colorPrimaryDark&lt;/code&gt; normally referenced in this way on the Android&amp;rsquo;s application pattern theme. We&amp;rsquo;re suggesting here a similar theme, but you can define how you want to. For now, let&amp;rsquo;s just keep this way.&lt;/p&gt;
-&lt;p&gt;Now, we need to access the &lt;code&gt;AppDesignSystem&lt;/code&gt; class, that we recently created, to register the Design System style. Considering we only have one theme, you can follow these instructions:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Copy and paste the line and replace the theme function on&lt;code&gt;AppDesignSystem&lt;/code&gt; class and we&amp;rsquo;re done.&lt;/li&gt;
-&lt;li&gt;Your theme is configured and registered on Beagle.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;override fun theme(): Int = R.style.AppThemeServerDriven
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;step-3-customize-a-component&#34;&gt;&lt;strong&gt;Step 3: Customize a component&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;This is the moment that occurs the &lt;a href=&#34;../../../../key-concepts#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt;, when frontend connects to backend.&lt;/p&gt;
-&lt;p&gt;To do so, you&amp;rsquo;ll have to &lt;strong&gt;configure Android&amp;rsquo;s frontend and Intellij&amp;rsquo;s backend&lt;/strong&gt;. In case you haven&amp;rsquo;t this configuration done, just follow the &lt;a href=&#34;https://github.com/ZupIT/beagle-examples&#34;&gt;&lt;strong&gt;backend&amp;rsquo;s configuration&lt;/strong&gt;&lt;/a&gt; and run it.&lt;/p&gt;
-&lt;p&gt;For our backend here, we created a server-driven page with 2 texts: 1 title and 1 paragraph. It should be like this when rendered on frontend:&lt;/p&gt;
+&lt;h3 id=&#34;step-2-customize-a-component&#34;&gt;&lt;strong&gt;Step 2: Customize a component&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;This moment is where the
+Este momento é o ponto em que o ocorre o &lt;a href=&#34;../../../../../principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;&lt;/a&gt; happens, it is when frontend connects to the backend.&lt;/p&gt;
+&lt;p&gt;For that, &lt;strong&gt;you will have to configure Android&amp;rsquo;s frontend and Intellij backend.&lt;/strong&gt;
+In case you don&amp;rsquo;t have it ready, it just download &lt;a href=&#34;https://github.com/ZupIT/beagle-examples&#34;&gt;&lt;strong&gt;the backend configuration example&lt;/strong&gt;&lt;/a&gt; and run it.&lt;/p&gt;
+&lt;p&gt;For this backend here it was created a server-driven page with 2 texts, one is the title and the other is paragraph. It must be like this when rendered by the frontend:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://lh4.googleusercontent.com/Rms7sJWr8_BXtHuaxpxtJwQly1O7qBX79AqhSlrj9TSjTqD_7eqFyavstkbgwQO3BVjoGeVV7W53KTVxUkonTD7R6wYBVhWWqa_tfwDaFBw8AVPu-KLQLcZ0H3A8UDK-X_9JMKyr&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Notice that our screen is basically structure and content. The text is on standard size and the layout doesn&amp;rsquo;t have a style.&lt;/p&gt;
-&lt;p&gt;To attribute a style to these texts, we&amp;rsquo;ll recorrer a nossa tela configurada lá no BFF:&lt;/p&gt;
+&lt;p&gt;See this screen is only structure and content. The size of text is standard and the form needs a style.&lt;/p&gt;
+&lt;p&gt;To attribute a style to these texts, let&amp;rsquo;s use the configured screen on the BFF:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Open the BFF project and look for the &lt;code&gt;FirstScreenBeagleBuilder&lt;/code&gt;file.&lt;/li&gt;
+&lt;li&gt;Open the BFF project and find the &lt;code&gt;FirstScreenBeagleBuilder&lt;/code&gt; file.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;This is the file that contains the code of your server-driven screen, that has to be configured as it shows in the image below.&lt;/p&gt;
-&lt;p&gt;On that image, you&amp;rsquo;ll see that we built a component&amp;rsquo;s hierarchy with one SCREEN and two types of TEXT component.&lt;/p&gt;
+&lt;p&gt;This file contains the code of your first server-driven screen that must be configured like the image below.&lt;/p&gt;
+&lt;p&gt;You will see that a components hierarchy was built with a SCREEN and two TEXT components.&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-For this point on the tutorial, just focus on what must be done to apply one style to our components.
+For this tutorial momemnt, you have to only worry about what needs to be done so you can apply a style to the components.
 &lt;/div&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/b3DvRw3pXFnrhgZtHF2kNMzZCY7vno0oqjs7VsxT2l9aukfyBI2KHfSg-5bcb-hgV_RgXqm0HxlVJBeimQ09bFiXc9R-ZFDrKPcV-PTQf7pbs8P1eZApkyldGdmmKJ3kQMgrUfYR&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;To add a style and a text element, you should list the style&amp;rsquo;s name inside the text component, as indicated in the image below. Don&amp;rsquo;t forget to separate the components by one comma.&lt;/p&gt;
-&lt;p&gt;Hold the Ctrl button and put your mouse on the &lt;code&gt;Text&lt;/code&gt; component so you&amp;rsquo;ll see the attribute&amp;rsquo;s list that this component can receive from backend. For now, we&amp;rsquo;ll only use the &lt;code&gt;Style&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt; 2. Put a comma after the text attribute = &amp;quot;Hello Beagle&amp;quot;, and write the another attribute you want to define, which in this case is the `style`
+&lt;p&gt;To add a style and an element to the text, you have to list all the style name in the text component, as you can see below. Don&amp;rsquo;t forget to separate the components with comma.&lt;/p&gt;
+&lt;p&gt;Hold the crtl button and put the mouse over the &lt;code&gt;Text&lt;/code&gt; component and you will see the attributes list that this component can receive on the backend. We will use the
+&lt;code&gt;Style&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; 2. Put a comma after the text = &amp;quot;Hello Beagle&amp;quot; attribute, and write the other one you want to define, which is `StyleId`
 
-3. Type a `“HelloBeagle.Text.Title”` string e we&#39;re done! The style was defined to this text component.
+3. Type the string `“Title.Text.Orange”` and done! The style will be defined for this text component. 
 &lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;Text(
-    text = &amp;#34;Hello Beagle&amp;#34;,
-    style = “HelloBeagle.Text.Title”
-).applyFlex(
-        Flex(
-            margin = EdgeValue(
-                top = 16.unitRal(Real)
-            ),
-            alignSelf = Alignment.CENTER
-        )
-),
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For now, don&amp;rsquo;t worry about the other elements, like &lt;code&gt;.applyFlex&lt;/code&gt;, and other configurations. Just make sure that there&amp;rsquo;s nothing else to be changed on the example, let&amp;rsquo;s keep it this way now.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+       &lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Hello Beagle&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
+       &lt;span style=&#34;color:#000&#34;&gt;styleId&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Title.Text.Orange&amp;#34;&lt;/span&gt;
+     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;).&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;applyStyle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+         &lt;span style=&#34;color:#000&#34;&gt;Style&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+                 &lt;span style=&#34;color:#000&#34;&gt;margin&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;EdgeValue&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
+                   &lt;span style=&#34;color:#000&#34;&gt;top&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;16.u&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;nitReal&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
+                  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+                   &lt;span style=&#34;color:#000&#34;&gt;flex&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Flex&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;alignSelf&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;AlignSelf&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;CENTER&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+               &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
+      &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Don&amp;rsquo;t worry about other configurations and elements like &lt;code&gt;.applyStyle&lt;/code&gt;. Just make sure that nothing else is modify on the example and keep it as showed here.&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Repeat this process to the other &lt;code&gt;Text&lt;/code&gt; component - the paragraph -, with the difference that, here, you will name it as &lt;code&gt;“Design.System.Text.Description”&lt;/code&gt;
+Repeat this process to another &lt;code&gt;Text&lt;/code&gt; component that is a paragraph, the difference here is you have to rename it to &lt;code&gt;“Description.Text.Orange”&lt;/code&gt;
 &lt;/div&gt;
 
-&lt;p&gt;This all we&amp;rsquo;re gonna do on the backend for now. You can run your backend&amp;rsquo;s application so the service be available and, soon, you&amp;rsquo;ll see your styled screen on Android.&lt;/p&gt;
+&lt;p&gt;This is all you have to do on backend at this moment. You can run your backend application in order your service is available and you will see your screen with Android&amp;rsquo;s style.&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-In case you have any problem, we recommend you to &lt;a href=&#34;https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MGhl-E_OjnBR8rfYtgB/get-started/installing-beagle/beagle-backend&#34;&gt;&lt;strong&gt;follow this tutorial to implement the backend.&lt;/strong&gt;&lt;/a&gt;
+In case there is some problem, we recommend that you follow the tutorial to &lt;a href=&#34;../../../installing-beagle/backend&#34;&gt;&lt;strong&gt;implement the backend installation.&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
-&lt;pre&gt;&lt;code&gt; 2. Return to Android Studio and access again the style&#39;s file on the package **res &amp;amp;gt; values &amp;amp;gt; styles**. 
+&lt;pre&gt;&lt;code&gt; 4. First, register three file colors on the android file. 
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To finish this stage, you have to create on Android the styles and names we just attributed to the texts on the server-driven screen.&lt;/p&gt;
-&lt;p&gt;You can do this by adding the style&amp;rsquo;s configuration inside the &amp;lt;resources&amp;gt;&amp;lt;/resources&amp;gt; tag, as its listed below. Notice that you already have some defined styles&#39; elements and must add this one more. Copy and paste the code below with the text that we want to be our &lt;code&gt;Title&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&amp;lt;style name=&amp;#34;Design.System.Text.Title&amp;#34; parent=&amp;#34;TextAppearance.AppCompat&amp;#34;&amp;gt;
-    &amp;lt;item name=&amp;#34;android:textColor&amp;#34;&amp;gt;@color/colorOrange&amp;lt;/item&amp;gt;
-    &amp;lt;item name=&amp;#34;android:textSize&amp;#34;&amp;gt;20sp&amp;lt;/item&amp;gt;
-    &amp;lt;item name=&amp;#34;textAllCaps&amp;#34;&amp;gt;True&amp;lt;/item&amp;gt;
-    &amp;lt;item name=&amp;#34;android:textStyle&amp;#34;&amp;gt;bold&amp;lt;/item&amp;gt;
-&amp;lt;/style&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Notice that you can define many more aspects inside the style because all the options available on Android can be configured on it.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;The first line&lt;/strong&gt; defines the style&amp;rsquo;s name like &amp;ldquo;HelloBealge.Text.Title&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;The second&lt;/strong&gt; defines the text&amp;rsquo;s orange color, as listed above.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;The third&lt;/strong&gt; defines the text&amp;rsquo;s size, like 20 sp.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;The fourth&lt;/strong&gt; defines that the text must be exhibited on caps lock.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;The fifth&lt;/strong&gt; linha defines that the text will be on bold.&lt;/li&gt;
+&lt;li&gt;Access the package &lt;em&gt;res &amp;gt; values &amp;gt; colors&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Add the 3 colors inside the tag &amp;lt;resources&amp;gt;&amp;lt;/resources&amp;gt; like the following.&lt;/li&gt;
+&lt;li&gt;Type the code below and it will create the colors white, black and orange in your color pallete.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;We should make the same process with the paragraph text. In this case, we&amp;rsquo;ll create this style: &lt;code&gt;Design.System.Text.Description&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://lh5.googleusercontent.com/hbl12RSXzpxXGQnsuyuT7GF1-GOv979QdVamfNC413K-BVY1qRhAsgl1i3vv8Fkc9gvIZxdmzNuXmmkdJuF9-WJco0fycrdVKQkaGCDDm2bYHsaxrfvsK6GafXnOVKtORjfWtIBt&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;&amp;lt;color name=&amp;quot;colorWhite&amp;quot;&amp;gt;#FFFFFF&amp;lt;/color&amp;gt;
+&amp;lt;color name=&amp;quot;colorBlack&amp;quot;&amp;gt;#000000&amp;lt;/color&amp;gt;
+&amp;lt;color name=&amp;quot;colorOrange&amp;quot;&amp;gt;#FFA500&amp;lt;/color&amp;gt;
 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;To finish this stage, create on Android the styles with the names attributed to the text on the server-driven screen. Access the style files on the package  &lt;strong&gt;res &amp;gt; values &amp;gt; styles&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;You can do this adding a style configuration inside the tag &amp;lt;resources&amp;gt;&amp;lt;/resources&amp;gt; as listed below. See you already have some style elements defined and you should add this one. Copy and paste the code below to the text you want to be &lt;code&gt;Title&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;&amp;lt;style name=&amp;quot;Title.Text.Orange&amp;quot; parent=&amp;quot;TextAppearance.AppCompat&amp;quot;&amp;gt;
+        &amp;lt;item name=&amp;quot;android:textColor&amp;quot;&amp;gt;@color/colorOrange&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;android:textSize&amp;quot;&amp;gt;20sp&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;textAllCaps&amp;quot;&amp;gt;true&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;android:textStyle&amp;quot;&amp;gt;bold&amp;lt;/item&amp;gt;
+    &amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Notice that you can define more aspects inside the style. This is possible because all of the options Android allows can be configured in it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The first line&lt;/strong&gt; defines the style name like &amp;ldquo;Title.Text.Orange&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The second&lt;/strong&gt; defines the orange color for the text, like listed above&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The third&lt;/strong&gt; defines the size of the text like: 20 sp&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The fourth&lt;/strong&gt; defines that text must be all capital letters&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The fifth&lt;/strong&gt; line that defines the text will be in bold&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You should do the same process with paragraph text. For it, you have to create the following style: &lt;code&gt;Description.Text.Orange&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt; &amp;lt;style name=&amp;quot;Description.Text.Orange&amp;quot; parent=&amp;quot;TextAppearance.AppCompat&amp;quot;&amp;gt;
+        &amp;lt;item name=&amp;quot;android:textColor&amp;quot;&amp;gt;@color/colorOrange&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;android:textSize&amp;quot;&amp;gt;16sp&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;textAllCaps&amp;quot;&amp;gt;true&amp;lt;/item&amp;gt;
+    &amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-&lt;p&gt;It&amp;rsquo;s a good practice to define a default style. For this tutorial, we&amp;rsquo;ll define one to be applied on normal texts.&lt;/p&gt;
-&lt;p&gt;The objective is that this value be applied on a text that came from backend without a predefined style.&lt;/p&gt;
+&lt;p&gt;It is a good practice define a default style. /In this tutorial, let&amp;rsquo;s define one to be applied on normal texts.&lt;/p&gt;
+&lt;p&gt;The main goal is, this value must be applied on the text that will get to the backend text that doesn&amp;rsquo;t have a predefined style.&lt;/p&gt;
 
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://lh5.googleusercontent.com/SHrBdleCbQha4LNeMd2bM_Kfq5R0QaDxO1nc36Kc7iu3Ix7w0kiYBkJ2c9EHYbfnHcorrqBcPRjitQUBUWEN8Zty1J1Y1fFsb4BtLnxjT05s-iWGzdYX6Ev5q0cjwpyRuVhwFc0e&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;And done! Our components are customized! Now let&amp;rsquo;s get to the final stage.&lt;/p&gt;
-&lt;h3 id=&#34;step-4-register-a-component-on-design-system&#34;&gt;&lt;strong&gt;Step 4: Register a component on Design System&lt;/strong&gt;&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markup&#34; data-lang=&#34;markup&#34;&gt;&amp;lt;style name=&amp;quot;Design.System.Text.Default&amp;quot; parent=&amp;quot;TextAppearance.AppCompat&amp;quot;&amp;gt;
+        &amp;lt;item name=&amp;quot;android:textColor&amp;quot;&amp;gt;@color/colorBlack&amp;lt;/item&amp;gt;
+        &amp;lt;item name=&amp;quot;android:textSize&amp;quot;&amp;gt;12sp&amp;lt;/item&amp;gt;
+    &amp;lt;/style&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Done! The components are customized. Now, let&amp;rsquo;s go to the final stage.&lt;/p&gt;
+&lt;h3 id=&#34;step-3-register-a-component-on-design-system&#34;&gt;&lt;strong&gt;Step 3: Register a component on Design System&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;Once you have already all the styles created, it&amp;rsquo;s the moment to register them in our &lt;code&gt;AppDesignSystem&lt;/code&gt; class because it&amp;rsquo;s there where Beagle applies all the defined styles on Android Studio on server-driven screens that came from backend.&lt;/p&gt;
 &lt;p&gt;To do so, follow these steps:&lt;/p&gt;
 &lt;ol&gt;
@@ -1916,7 +1907,7 @@ If you have any trouble on making this configuration, check out &lt;a href=&#34;
         
         
         &lt;hr&gt;
-&lt;h2 id=&#34;creating-styles-for-beagle-ios&#34;&gt;&lt;strong&gt;C&lt;/strong&gt;reating styles for Beagle iOS&lt;/h2&gt;
+&lt;h2 id=&#34;creating-styles-for-beagle-ios&#34;&gt;Creating styles for Beagle iOS&lt;/h2&gt;
 &lt;p&gt;On the first use example, you saw how to &lt;a href=&#34;../.././&#34;&gt;&lt;strong&gt;implement Beagle&lt;/strong&gt;&lt;/a&gt; and create your first server-driven screen.&lt;/p&gt;
 &lt;p&gt;In this tutorial, the idea is to get deeper from the &lt;a href=&#34;./#passo-3-configurando-o-xcode&#34;&gt;&lt;strong&gt;previous project&lt;/strong&gt;&lt;/a&gt; to create a Design System on Beagle&amp;rsquo;s library. To better illustrate  the explanation, we&amp;rsquo;ll use these &lt;a href=&#34;https://github.com/ZupIT/beagle-examples&#34;&gt;&lt;strong&gt;sample codes&lt;/strong&gt;&lt;/a&gt; that you can find out in our repository.&lt;/p&gt;
 &lt;p&gt;The idea is to configure some styles on iOS to allow you to customize some components, such as:&lt;/p&gt;
@@ -2059,7 +2050,7 @@ If you can&amp;rsquo;t find the text font, Beagle will define a system default f
 &lt;li&gt;Open the backend project (BFF) and look for the &lt;code&gt;FirstScreenBeagleBuilder&lt;/code&gt;file.&lt;/li&gt;
 &lt;li&gt;This is the file that contains the code of your first server-driven screen.&lt;/li&gt;
 &lt;li&gt;She must be configured like in the image below.&lt;/li&gt;
-&lt;li&gt;On her, you will notice that it was built a hierarchy&amp;rsquo;s screen components and two text types components.&lt;/li&gt;
+&lt;li&gt;On it, you will notice that it was built a hierarchy&amp;rsquo;s screen components and two text types components.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;FirstScreenBuilder&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ScreenBuilder&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;build&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
@@ -2113,7 +2104,7 @@ If you can&amp;rsquo;t find the text font, Beagle will define a system default f
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And done, that&amp;rsquo;s all we&amp;rsquo;re gonna do on our backend so far.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Repeat the same process with the other&lt;code&gt;Text&lt;/code&gt; component - the paragraph -, but name it as &lt;code&gt;“Description.Text.Orange”&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Repeat the same process with the other &lt;code&gt;Text&lt;/code&gt; component - the paragraph -, but name it as &lt;code&gt;“Description.Text.Orange”&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You can run your backend&amp;rsquo;s application so the service can be available.&lt;/p&gt;
 
@@ -2326,11 +2317,24 @@ export default App;
 &lt;/div&gt;&lt;/div&gt;
 &lt;h2 id=&#34;testing-your-application&#34;&gt;Testing your application&lt;/h2&gt;
 &lt;p&gt;Once you have finished the project&amp;rsquo;s basic configuration, now you have to run one of the commands below to initialize your application:&lt;/p&gt;
-&lt;p&gt;If you use &lt;strong&gt;npm&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;t12&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link active&#34; href=&#34;#t12-0&#34; role=&#34;tab&#34; aria-controls=&#34;t12-0&#34; aria-selected=&#34;true&#34;&gt;Angular&lt;/a&gt;&lt;/li&gt;
+	  
+		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t12-1&#34; role=&#34;tab&#34; aria-controls=&#34;t12-1&#34;&gt;React&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;div class=&#34;tab-content&#34; id=&#34;t12&#34;&gt;&lt;div id=&#34;t12-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t12-0&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;If you use &lt;strong&gt;npm&lt;/strong&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;npm run serve
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you use &lt;strong&gt;yarn:&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;yarn serve
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After you finish these commands, access your application&amp;rsquo;s address on your navigator. If a screen with components would be rendered, that means that&amp;rsquo;s correctly working.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div id=&#34;t12-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t12-1&#34;&gt;
+
+&lt;p&gt;&lt;p&gt;If you use &lt;strong&gt;npm&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;npm run start
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you use &lt;strong&gt;yarn:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;yarn start
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;After you finish these commands, access your application&amp;rsquo;s address on your navigator. If a screen with components would be rendered, that means that&amp;rsquo;s correctly working.&lt;/p&gt;
 
       </description>
     </item>
@@ -2379,7 +2383,7 @@ It will create a&lt;code&gt;Maven&lt;/code&gt; project that will help your proje
 &lt;p&gt;&lt;img src=&#34;https://lh6.googleusercontent.com/6gOx1UCq-ZUK0yckdUAO2-Jb1YWOjw6kNijGu8-LVPyaDJuYAC2J7DcugsKgFDVqSkhF1RN5zKQ0s47l0ZmFgrq9ln7SPL-isTczLb9h5PQnXhUyWl6S7_QaUyUPGN-SyYVK_AZC&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;configuring-beagle&#34;&gt;Configuring Beagle&lt;/h2&gt;
 &lt;h3 id=&#34;step-1-configure-the-project&#34;&gt;Step 1: Configure the project&lt;/h3&gt;
-&lt;p&gt;As a starting point, follow this step by step to &lt;a href=&#34;../../../../installing-beagle/beagle-backend&#34;&gt;&lt;strong&gt;install the backend&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;As a starting point, follow this step by step to &lt;a href=&#34;../../../../installing-beagle/beagle-backend&#34;&gt;&lt;strong&gt;install the backend&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;step-2-define-the-structure&#34;&gt;Step 2: Define the structure&lt;/h3&gt;
 &lt;p&gt;The second step is to create some packages to better organize the project. They will be named: &lt;strong&gt;&lt;code&gt;builder&lt;/code&gt;&lt;/strong&gt;,&lt;strong&gt;&lt;code&gt;service&lt;/code&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;code&gt;controller&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -2441,7 +2445,7 @@ It will create a&lt;code&gt;Maven&lt;/code&gt; project that will help your proje
         &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The next class we will create is**&lt;code&gt;Service&lt;/code&gt;**:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The next class we will create is &lt;strong&gt;&lt;code&gt;Service&lt;/code&gt;&lt;/strong&gt;:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Right-click the service package and click &lt;code&gt;New&amp;gt; Kotlin File / Class.&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Name it &lt;code&gt;ScreenBeagleService&lt;/code&gt;. This class must be annotated with &lt;code&gt;@Service&lt;/code&gt;, which is a Spring annotation&lt;/li&gt;
