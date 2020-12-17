@@ -1,17 +1,11 @@
 name: hugo to github pages
 
 on:
-  push:
-    branches:
-      - main  
-    tags-ignore:
-      - '*.*' 
-    paths-ignore: 
-      - docs
+  release
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
         with:
@@ -25,7 +19,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo -D
+        run: hugo -D --minify
         working-directory: Settings
               
       - name: Deploying
