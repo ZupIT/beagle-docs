@@ -1,7 +1,8 @@
 name: hugo to github pages
 
 on:
-  release
+  release:
+    types: [created]
 
 jobs:
   deploy:
