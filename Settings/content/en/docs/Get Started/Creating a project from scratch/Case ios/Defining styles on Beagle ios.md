@@ -8,7 +8,7 @@ description: >-
 
 ---
 
-## **C**reating styles for Beagle iOS
+## Creating styles for Beagle iOS
 
 On the first use example, you saw how to [**implement Beagle**](../.././) and create your first server-driven screen.
 
@@ -174,8 +174,6 @@ On the backend's configuration tutorial, we created a server-driven page with 2 
 
 This page was like that when rendered on frontend:
 
-
-
 ![](/docs-beagle/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)
 
 To attribute a style to these texts, follow these instructions:
@@ -183,7 +181,7 @@ To attribute a style to these texts, follow these instructions:
 1. Open the backend project \(BFF\) and look for the `FirstScreenBeagleBuilder`file. 
 2. This is the file that contains the code of your first server-driven screen. 
 3. She must be configured like in the image below. 
-4. On her, you will notice that it was built a hierarchy's screen components and two text types components. 
+4. On it, you will notice that it was built a hierarchy's screen components and two text types components. 
 
 ```kotlin
 class FirstScreenBuilder : ScreenBuilder {
@@ -244,7 +242,7 @@ Text(
 
 And done, that's all we're gonna do on our backend so far. 
 
-* Repeat the same process with the other`Text` component - the paragraph -, but name it as `“Description.Text.Orange”`
+* Repeat the same process with the other `Text` component - the paragraph -, but name it as `“Description.Text.Orange”`
 
 You can run your backend's application so the service can be available.
 
