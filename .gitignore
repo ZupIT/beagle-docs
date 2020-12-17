@@ -3,3 +3,5 @@ package-lock.json
 yarn.lock
 yarn-error.log
 static/playground
+docs/
+.vscode/
