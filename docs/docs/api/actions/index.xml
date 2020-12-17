@@ -407,27 +407,31 @@
 		&lt;li class=&#34;nav-item&#34;&gt;&lt;a data-toggle=&#34;tab&#34; class=&#34;nav-link&#34; href=&#34;#t91-1&#34; role=&#34;tab&#34; aria-controls=&#34;t91-1&#34;&gt;Kotlin DSL&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 &lt;div class=&#34;tab-content&#34; id=&#34;t91&#34;&gt;&lt;div id=&#34;t91-0&#34; class=&#34;tab-pane show active&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t91-0&#34;&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-  &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:container&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
-  &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;children&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
-    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-      &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleComponent_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:button&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
-      &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Confirm Example&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
-      &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;onPress&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;[&lt;/span&gt;
-        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-          &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleAction_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:confirm&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
-          &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;title&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Confirm Title&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
-          &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;message&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Confirm Message&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
-          &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;onPressOk&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
-            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;_beagleAction_&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;beagle:alert&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
-            &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;message&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Confirmed&amp;#34;&lt;/span&gt;
-          &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-        &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-      &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
-    &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-  &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;]&lt;/span&gt;
-&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;!-- json-playground:confirm.json
+{
+  &#34;_beagleComponent_&#34;: &#34;beagle:container&#34;,
+  &#34;children&#34;: [
+    {
+      &#34;_beagleComponent_&#34;: &#34;beagle:button&#34;,
+      &#34;text&#34;: &#34;Confirm Example&#34;,
+      &#34;onPress&#34;: [
+        {
+          &#34;_beagleAction_&#34;: &#34;beagle:confirm&#34;,
+          &#34;title&#34;: &#34;Confirm Title&#34;,
+          &#34;message&#34;: &#34;Confirm Message&#34;,
+          &#34;onPressOk&#34;: {
+            &#34;_beagleAction_&#34;:&#34;beagle:alert&#34;,
+            &#34;message&#34;: &#34;Confirmed&#34;
+          }
+        }
+      ]
+    }
+  ]
+}
+--&gt;
+&lt;iframe src=&#34;https://playground.usebeagle.io/#/docs/en/confirm.json?embedded=true&amp;platform=angular&#34; 
+        style=&#34;width: 100%; height: 500px; border: none&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
   &lt;div id=&#34;t91-1&#34; class=&#34;tab-pane&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;t91-1&#34;&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#000&#34;&gt;Button&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Confirm Example&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt;
