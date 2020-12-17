@@ -81,6 +81,7 @@ time_format_blog = "02/01/2006"
 [params]
 copyright = "Zup IT"
 privacy_policy = "https://insights.zup.com.br/politica-privacidade"
+playground_url = "http://playground-beta.usebeagle.io/#/docs"
 
 logoName = "icons/beagle.svg"
 
