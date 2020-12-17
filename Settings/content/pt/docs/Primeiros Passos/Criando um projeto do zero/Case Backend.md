@@ -181,7 +181,7 @@ Agora é hora de inicializar a sua aplicação, siga os passos:
 
 ### **Passo 1: Rodar o projeto**
 
-Clique no triângulo verde chamado**`run`**, ou aperte e segure SHIFT + F10 para rodar sua aplicação back-end.
+Clique no triângulo verde chamado **`run`**, ou aperte e segure SHIFT + F10 para rodar sua aplicação back-end.
 
 A sua tela estará assim:
 

@@ -16,7 +16,7 @@ Check out how to [**install Beagle**](../../../../installing-beagle/ios) in case
 
 Currently, there are two types of approaches to render screens with Beagle: **remote** and **declarative.**
 
-#### Remot**e** Renderization 
+#### Remote Renderization 
 
 > Main approach used on Beagle because it's based on [**server-driven UI**](../../../../key-concepts#server-driven-ui) concept. It allows you to build layouts dynamically, consuming the informations provided by a [**BFF**](../../../../key-concepts#backend-for-frontend) through a remote URL.
 
@@ -26,7 +26,7 @@ Currently, there are two types of approaches to render screens with Beagle: **re
 
 For this example, you will render a screen with **declarative way**, which means that all the processes will be done locally because, on this way, you'll know a little bit about Beagle and, in a few steps, test if your installation worked. 
 
-### Step 1: Create a class \(MyBeagleScreen\)
+### Step 1: Create a class \(**MyBeagleScreen**\)
 
 Create a class and name it as you wish. Here, we'll call it **`MyBeagleScreen`**.
 
@@ -35,30 +35,37 @@ The class will have only one method responsible to build a **`Screen`**.
 
 ```swift
 import Beagle
-import Foundation
+import BeagleSchema
 
-class BeagleConfig {
-    static func config() {
-        
-        let dependencies = BeagleDependencies()
-        dependencies.urlBuilder = UrlBuilder(
-            baseUrl: URL(string: "Server base URL")
+class MyBeagleScreen {
+    static func make() -> Screen {
+        return Screen(
+            child: Container(
+                children: [
+                    Text("Hello Beagle!")
+                ]
+            ).applyFlex(
+                Flex(
+                    justifyContent: .center,
+                    alignItems: .center,
+                    grow: 1
+                )
+            )
         )
-        Beagle.dependencies = dependencies
     }
 }
 ```
 
 
 {{% alert color="info" %}}
-Notice that the **`Screen`** is being build using**`Flex`**. To understand better these components and your proprieties, go to the section **component's layout**.
+Notice that the **`Screen`** is being build using **`Flex`**. To understand better these components and your proprieties, go to the section **component's layout**.
 {{% /alert %}}
 
 ### Step 2: Instantiate **BeagleScreenViewController**
 
 Now it's time to display your first screen built using **Beagle**, and to do so you must: 
 
-Instantiate a**`BeagleScreenViewController`** with**`declarative`** type that will receive a**`MyBeagleScreen`**.
+Instantiate a **`BeagleScreenViewController`** with **`declarative`** type that will receive a **`MyBeagleScreen`**.
 
 ```swift
 let beagleViewController = Beagle.screen(
@@ -69,7 +76,7 @@ let beagleViewController = Beagle.screen(
 ```
 
 {{% alert color="info" %}}
-In case you want to use the **`remote`**type, check out [**how to display a server-driven screen.**](../../../how-to-display-a-screen)
+In case you want to use the **`remote`** type, check out [**how to display a server-driven screen.**](../../../how-to-display-a-screen)
 {{% /alert %}}
 
 Once you made it, you just have to present it as you wish.
@@ -79,7 +86,7 @@ present(beagleViewController, animated: true, completion: nil)
 ```
 
 {{% alert color="warning" %}}
-Don't forget to add**`import Beagle`**. 
+Don't forget to add **`import Beagle`**. 
 {{% /alert %}}
 
 ### Step 3: Run the application
