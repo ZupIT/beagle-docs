@@ -36,7 +36,7 @@ No método *execute*, você consegue criar as regras de sua camada de rede, faze
 
 ## Criando uma camada de rede customizada
 
-Para criar a camada de rede customizada, siga um exemplo abaixo com os seguintes passos:
+To create a custom network layer, follow an example below with the following steps:
 
 ### Passo 1: Adicionar as dependências
 
@@ -114,6 +114,8 @@ internal fun <T> getMessageFormatted(getData: GetData<T>): T? {
 ### Passo 4: Criar a classe HttpClientDefault
 
 Crie a classe e escolha o nome que você desejar. Nesse exemplo, foi dado o nome de `HttpClientDefault`.  
+
+A classe HTTPClientDefault define como as solicitações de serviços são configuradas. Para usá-la, você precisa criar uma classe que implemente uma interface do tipo `HttpClient`.
 
 Essa configuração é bem extensa, a sugestão é que você copie e cole a classe abaixo e modifique como achar necessário: 
 

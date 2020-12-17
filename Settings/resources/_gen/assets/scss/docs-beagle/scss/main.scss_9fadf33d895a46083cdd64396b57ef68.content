@@ -12,6 +12,20 @@ a {
     color: #3176d9;
     text-decoration: underline; }
 
+.td-sidebar-link__section {
+  color: #000000 !important;
+  background-color: transparent; }
+
+.td-sidebar-link__section:hover {
+  opacity: 0.7; }
+
+.td-sidebar-link__page:hover {
+  font-weight: 700 !important; }
+
+.td-sidebar-nav a.active {
+  font-weight: 700;
+  text-decoration: underline; }
+
 /*
 
 Bootstrap variables overrides for theme.
