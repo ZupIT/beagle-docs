@@ -12,6 +12,20 @@ a {
     color: #3176d9;
     text-decoration: underline; }
 
+.td-sidebar-link__section {
+  color: #000000 !important;
+  background-color: transparent; }
+
+.td-sidebar-link__section:hover {
+  opacity: 0.7; }
+
+.td-sidebar-link__page:hover {
+  font-weight: 700 !important; }
+
+.td-sidebar-nav a.active {
+  font-weight: 700;
+  text-decoration: underline; }
+
 /*
 
 Bootstrap variables overrides for theme.
@@ -13958,7 +13972,16 @@ pre {
   color: #000 !important;
   background: transparent; }
 
-.nav-tabs > li.active > a {
-  background: #8dc63f; }
+.alert-warning {
+  border-color: #f7941e; }
+
+.alert-info {
+  border-color: #0c3455; }
+
+.alert-success {
+  border-color: #8dc63f; }
+
+.td-sidebar-nav__section-title {
+  font-weight: unset; }
 
 /*# sourceMappingURL=main.css.map */
