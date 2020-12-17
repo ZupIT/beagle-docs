@@ -20,6 +20,9 @@ Then run:
 
 `npm run start`. If you're getting a fatal error: Pipe failed, run: `npm run start --watch=false`.
 
+By default `npm run start` will run the project in development mode. To change the environment use
+`npm run start --environment=production`.
+
 # Build
 
 To build the application, run `npm run build` after
