@@ -3,21 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/</loc>
-    <lastmod>2020-12-07T15:35:49-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://zupit.github.io/docs-beagle/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://zupit.github.io/docs-beagle/pt/"
-                />
-  </url>
-  
-  <url>
     <loc>https://zupit.github.io/docs-beagle/pt/docs/vis%C3%A3o-geral/</loc>
   </url>
   
@@ -27,28 +12,13 @@
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/docs/</loc>
-    <lastmod>2020-12-04T17:37:12-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://zupit.github.io/docs-beagle/docs/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://zupit.github.io/docs-beagle/pt/docs/"
-                />
-  </url>
-  
-  <url>
     <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/</loc>
     <lastmod>2020-12-04T17:37:12-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://zupit.github.io/docs-beagle/pt/docs/primeiros-passos/instalando-o-beagle/android/</loc>
-    <lastmod>2020-12-14T13:53:37-03:00</lastmod>
+    <lastmod>2020-12-16T11:21:46-03:00</lastmod>
   </url>
   
   <url>
@@ -302,6 +272,10 @@
   
   <url>
     <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-android/deep-link-handler/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/recursos/customiza%C3%A7%C3%A3o/beagle-para-android/beagleimagedownloader/</loc>
   </url>
   
   <url>
@@ -979,17 +953,47 @@
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-beagle/pt/search/</loc>
-    <lastmod>2020-12-04T10:03:37-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-beagle/pt/</loc>
+    <lastmod>2020-12-17T15:09:04-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://zupit.github.io/docs-beagle/search/"
+                href="https://zupit.github.io/docs-beagle/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="https://zupit.github.io/docs-beagle/pt/search/"
+                href="https://zupit.github.io/docs-beagle/pt/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/</loc>
+    <lastmod>2020-12-16T12:09:10-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zupit.github.io/docs-beagle/docs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://zupit.github.io/docs-beagle/pt/docs/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-beagle/pt/docs/search/</loc>
+    <lastmod>2020-12-16T12:09:10-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zupit.github.io/docs-beagle/docs/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://zupit.github.io/docs-beagle/pt/docs/search/"
                 />
   </url>
   
