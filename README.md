@@ -18,8 +18,7 @@ You also must have Hugo installed in your machine. Please, check
 
 Then run:
 
-`npm run start`. If you're getting a fatal error: Pipe failed, run: `npm run start:once`, in this
-case, the hot reloading will be disabled.
+`npm run start`. If you're getting a fatal error: Pipe failed, run: `npm run start --watch=false`.
 
 # Build
 

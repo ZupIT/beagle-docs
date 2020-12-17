@@ -81,7 +81,7 @@ time_format_blog = "02/01/2006"
 [params]
 copyright = "The Docsy Authors"
 privacy_policy = "https://policies.google.com/privacy"
-playground_url = "https://playground.usebeagle.io/#/docs"
+playground_url = "http://playground-beta.usebeagle.io/#/docs"
 
 logoName = "icons/beagle.svg"
 
