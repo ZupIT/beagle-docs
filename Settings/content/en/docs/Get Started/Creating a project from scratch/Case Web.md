@@ -253,6 +253,8 @@ On this step, we point where our layout defined with `payload.json` file should 
 
 Once you have finished the project's basic configuration, now you have to run one of the commands below to initialize your application:
 
+{{< tabs name="T12" >}}
+{{% tab name="Angular" %}}
 If you use **npm**:
 
 ```text
@@ -264,5 +266,21 @@ If you use **yarn:**
 ```text
 yarn serve
 ```
+{{% /tab %}}
+
+{{% tab name="React" %}}
+If you use **npm**:
+
+```text
+npm run start
+```
+
+If you use **yarn:**
+
+```text
+yarn start
+```
+{{% /tab %}}
+{{< /tabs >}}
 
 After you finish these commands, access your application's address on your navigator. If a screen with components would be rendered, that means that's correctly working.
