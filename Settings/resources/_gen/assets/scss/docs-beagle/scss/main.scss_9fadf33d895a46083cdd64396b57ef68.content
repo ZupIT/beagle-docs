@@ -4,24 +4,7 @@ Nothing defined here. The Hugo project that uses this theme can override theme v
 
 assets/scss/_variables_project.scss
 
-<<<<<<< HEAD
-.td-sidebar-link__section {
-  color: #000000 !important;
-  background-color: transparent; }
-
-.td-sidebar-link__section:hover {
-  opacity: 0.7; }
-
-.td-sidebar-link__page:hover {
-  font-weight: 700 !important; }
-
-.td-sidebar-nav a.active {
-  font-weight: 700;
-  text-decoration: underline; }
-
-=======
 */
->>>>>>> 435eebbbc0fd4f0ead58fd03c851270c68298c43
 /*
 
 Bootstrap variables overrides for theme.
@@ -13980,5 +13963,10 @@ pre {
 
 .td-sidebar-nav__section-title {
   font-weight: unset; }
+
+.section-index h5 a {
+  text-decoration: underline; }
+  .section-index h5 a:hover {
+    opacity: 0.8; }
 
 /*# sourceMappingURL=main.css.map */
