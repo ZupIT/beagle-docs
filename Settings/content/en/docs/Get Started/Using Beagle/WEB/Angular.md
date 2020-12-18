@@ -65,7 +65,7 @@ export class AppModule { }
 
 ### Step 2: Create a JSON to be rendered
 
-Now, you just have to create a JSON to render the components. Usually, this process would be made by an external server that would return de JSON, but for this example we'll create a local file to be accessed for the test.  
+Now, you just have to create a JSON to render the components. Usually, this process would be made by an external server that would return de JSON, but for this example you'll create a local file to be accessed for the test.  
 
 On your angular project, navigate to the `src/assets` file and create a new file named `payload.json`. Open this new file you just created and copy the content below:
 
@@ -99,7 +99,7 @@ The Beagle's library comes with many pre-defined components ready to be used in 
 The code above creates a JSON with two os these components: container e text.
 {{% /alert %}}
 
-After you created your JSON, open the file `beagle.module.ts` we generated in the previous step and add as a baseUrl the path: http://localhost:4200/assets
+After you have created your JSON, open the generated file `beagle.module.ts` in the previous step and add as a baseUrl the path: http://localhost:4200/assets
 
 ```text
 import { BeagleModule } from '@zup-it/beagle-angular'
@@ -118,7 +118,7 @@ import { BeagleModule } from '@zup-it/beagle-angular'
 export class Beagle {}
 ```
 
-Well done, your configuration is ready! Now, we'll see how to render mapped components on JSON.
+Well done, your configuration is ready! Now,  see how to render mapped components on JSON.
 
 ### Step 3: Use beagle-remote-view
 
