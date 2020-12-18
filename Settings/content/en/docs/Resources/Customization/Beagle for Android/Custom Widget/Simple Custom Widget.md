@@ -10,7 +10,7 @@ description: Here you will learn how to create and use a widget in Beagle
 
 The example below shows how a custom widget will be implemented and which component it will register. It will have a text and two buttons inside a linear layout. The buttons in this component will be responsible to increase and decrease the text's size and the screen will be like the image: 
 
-![](/docs-beagle/image%20%2883%29.png)
+![](/image%20%2883%29.png)
 
 {{% alert color="info" %}}
 You can do this using `@RegisterWidget` annotation and extending the `WidgetView` class.
@@ -190,4 +190,4 @@ class MainActivity : AppCompatActivity() {
 
 2. Run the aplication and your component will be displayed:
 
-![](/docs-beagle/custumwidgetexample.gif)
+![](/custumwidgetexample.gif)

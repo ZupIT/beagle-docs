@@ -50,7 +50,7 @@ After you add the JSON on your project, create another file in the path `/src`, 
 
 Once you made it, your structure must be similar to the image below:
 
-![](/docs-beagle/image%20%2863%29.png)
+![](/image%20%2863%29.png)
 
 Now open the  `beagle-service.ts` file and copy this code:
 
@@ -121,7 +121,7 @@ npm run start
 After finished this commands, access the local: localhost:3000   
 You will see this screen:
 
-![](/docs-beagle/image%20%2895%29.png)
+![](/image%20%2895%29.png)
 
 {{% alert color="success" %}}
 Well done, you created your first screen with Beagle!

@@ -301,7 +301,7 @@ Items are centered on the cross axis:
 
 Items are aligned acording to the firt text line in each element.
 
-![](/docs-beagle/captura-de-tela-2020-06-04-a-s-10.55.47.png)
+![](/captura-de-tela-2020-06-04-a-s-10.55.47.png)
 
 {{< tabs name="T35" >}}
 {{% tab name="Kotlin" %}}
