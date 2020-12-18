@@ -19,8 +19,12 @@ jobs:
           hugo-version: '0.78.1'
           extended: true
 
+      - name: npm install
+        run: npm install
+        working-directory: Settings
+
       - name: Build
-        run: hugo -D --minify
+        run: npm run build
         working-directory: Settings
               
       - name: Deploying
