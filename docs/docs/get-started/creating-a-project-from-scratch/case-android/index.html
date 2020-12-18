@@ -99,7 +99,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.ed51fee8f018a4c6943f47e0458e12f973a94a2468f8ca2dcb293bd20973c5cc7b01779a96e71204a108d8cc661a1b9e614ea179435da3d5407c035486e62794.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.776b20d69e9b41d5fbe797515b38444b3ca6617a3b7589e6f733f9354156a8015690b83305963f432d363bab53455feb6f47537b42ae2b4d9cde418461949f96.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -131,7 +131,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.ed51fee8f018a4c6943f47e0458e12f973a94a2468f8ca2dcb293bd20973c5cc7b01779a96e71204a108d8cc661a1b9e614ea179435da3d5407c035486e62794.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.776b20d69e9b41d5fbe797515b38444b3ca6617a3b7589e6f733f9354156a8015690b83305963f432d363bab53455feb6f47537b42ae2b4d9cde418461949f96.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -2094,7 +2094,7 @@ Well done, your project was created on Android! Now, you will need to configure 
 <div class="alert alert-info" role="alert">
 
 <p>If you find difficulties to find this or another file, just use Android Studios search bar.</p>
-<p>To enable it, press**<code>SHIFT</code>**button twice and the search interface will appear. Once you made it, just just have to type <code>AndroidManifest</code> and Android Studio will find it.</p>
+<p>To enable it, press <strong><code>SHIFT</code></strong> button twice and the search interface will appear. Once you made it, just just have to type <code>AndroidManifest</code> and Android Studio will find it.</p>
 
 </div>
 
@@ -2130,7 +2130,7 @@ Well done, your project was created on Android! Now, you will need to configure 
 </ul>
 <p>To create AppBeagleConfig, follow these steps:</p>
 <ol>
-<li>First, we create a package with all configurations' files.</li>
+<li>First, you create a package with all configurations' files.</li>
 <li>Then, click with the right button on the main package of your project and click on <strong>new &gt; package</strong> __like in the image below:</li>
 </ol>
 <p><img src="/docs-beagle/newpackage.png" alt=""></p>
@@ -2143,8 +2143,8 @@ Well done, your project was created on Android! Now, you will need to configure 
 </ol>
 <ul>
 <li>The <strong><code>baseUrl</code></strong> returns the basis URL of your environment.</li>
-<li>The**<code>environment</code>** returns the _<code>current build state</code>_ of your application.</li>
-<li>**<code>isLoggingEnabled</code>**returns the application&rsquo;s log view</li>
+<li>The <strong><code>environment</code></strong> returns the <em><code>current build state</code></em> of your application.</li>
+<li><strong><code>isLoggingEnabled</code></strong> returns the application&rsquo;s log view</li>
 <li>The  <strong><code>cache</code></strong> manager configuration.</li>
 </ul>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">br.com.zup.beagle.android.annotation.BeagleComponent</span>
@@ -2168,14 +2168,14 @@ Well done, your project was created on Android! Now, you will need to configure 
 <div class="alert alert-info" role="alert">
 
 <p>At this tutorial point, we will test our Server-Driven screens on local host because it&rsquo;s important that our <strong><code>baseURL</code></strong> be local.</p>
-<p>Now, Beagle expects that your<code>@BeagleComponent</code> classes must have only empty constructors.</p>
+<p>Now, Beagle expects that your <code>@BeagleComponent</code> classes must have only empty constructors.</p>
 
 </div>
 
 <h3 id="step-4-create-appbeagleactivity"><strong>Step 4: Create AppBeagleActivity</strong></h3>
-<p>You will have to deal with the <code>activities</code> that will be generated through server-driven. That&rsquo;s the reason why it&rsquo;s necessary to <a href="../../../../../../using-beagle/android#passo-3-implementar-activities"><strong>implement an Activity</strong></a> to manage them. For this example, we&rsquo;ll name it as<code>AppBeagleActivity</code>.</p>
+<p>You will have to deal with the <code>activities</code> that will be generated through server-driven. That&rsquo;s the reason why it&rsquo;s necessary to <a href="../../../../../../using-beagle/android#passo-3-implementar-activities"><strong>implement an Activity</strong></a> to manage them. For this example, we&rsquo;ll name it as <code>AppBeagleActivity</code>.</p>
 <p>This file is part of <a href="../../../../../using-beagle/android"><strong>Beagle&rsquo;s usage configuration</strong></a> and must be implemented, at least once, so Beagle can normally work.</p>
-<p>When you create AppBeagleActivity, remember to note it as <code>BeagleComponent</code> and to extend it to<code>BeagleActivity</code> class.</p>
+<p>When you create AppBeagleActivity, remember to note it as <code>BeagleComponent</code> and to extend it to <code>BeagleActivity</code> class.</p>
 
 
 <div class="alert alert-info" role="alert">
@@ -2267,10 +2267,10 @@ From now on, Beagle will use this <code>activity</code> every time to load the s
 
 <div class="alert alert-warning" role="alert">
 
-At this point, it&rsquo;s essential that you remove the<code>ActionBar</code> pattern of this <code>activity</code> because, from now on, Beagle will manage the <code>ActionBar/Toolbar</code>.
+At this point, it&rsquo;s essential that you remove the <code>ActionBar</code> pattern of this <code>activity</code> because, from now on, Beagle will manage the <code>ActionBar/Toolbar</code>.
 </div>
 
-<p>To make this configuration, you must change your <code>BeagleActivity</code>&rsquo;s theme. Go to <code>Resources</code> folder on your Android Studio&rsquo;s application and open the<code>STYLE</code> file. Then, just change your <code>AppTheme</code> like the example below:</p>
+<p>To make this configuration, you must change your <code>BeagleActivity</code>&rsquo;s theme. Go to <code>Resources</code> folder on your Android Studio&rsquo;s application and open the <code>STYLE</code> file. Then, just change your <code>AppTheme</code> like the example below:</p>
 <pre><code class="language-markup" data-lang="markup">&lt;resources&gt;
     &lt;!-- Beagle Activity theme. --&gt;
     &lt;style name=&quot;MyTheme&quot; parent=&quot;Theme.AppCompat.NoActionBar&quot;&gt;
@@ -2288,8 +2288,8 @@ At this point, it&rsquo;s essential that you remove the<code>ActionBar</code> pa
 
 <div class="alert alert-info" role="alert">
 
-<p>É o <strong>design system</strong> que guarda os registros dos componentes de estilo criados no frontend e é assim que sua aplicação Android “saberá” qual componente de estilo deve aplicar a cada elemento de uma tela Server-Driven. É na tela server driven que os elementos visuais (views) são utilizados na construção da sua tela.</p>
-<p>Embora você possa criá-lo agora se quiser, não é necessário para as configurações iniciais, para que você possa testar logo o Beagle! Você pode prosseguir sem configurá-lo. Para mais informações sobre <a href="design-system-beagle-com-android"><strong>Design System no Beagle para Android</strong>.</a></p>
+<p>The <strong>design system</strong> keeps the style components registry created in the frontend and that is how your application will know which style component must be applied on each Server-Driven element. It is on the server-drive screen the visual elements (views) are used on the construction of your screen.</p>
+<p>Even if you can create it now, if you want to, it is not necessary to the initial configuration in order to test Beagle faster. You can proceed without configurating it. For more information see <a href="design-system-with-beagle-android"><strong>Design System on  Beagle for Android</strong>.</a></p>
 
 </div>
 
@@ -2791,7 +2791,7 @@ Well done, you created your first screen with Beagle!  🎉
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top"><div class="dr-last-modified-text">
-  Last modified December 10, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/7e74c70c32dcf1d1db826d32f0dfaeb30496f7ee">migrate pt and en content (7e74c70c)</a>
+  Last modified December 17, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/51afb85598f31bea1cd18c587a70809e33a416cb">Alterações nas págs em inglês da seção Get Started (#115) (51afb855)</a>
 </div></div>
 </div>
 

@@ -1003,6 +1003,8 @@ You must configure a &lt;a href=&#34;../../../resources/customization/beagle-for
         &lt;hr&gt;
 &lt;p&gt;Route defines how the navigation must be loaded.&lt;/p&gt;
 &lt;p&gt;You will find below, the description of the Route&amp;rsquo;s types available on Beagle:&lt;/p&gt;
+&lt;h3 id=&#34;localcdocs-beaglesettingscontentendocsapiactionsnavigateroutelocalmd&#34;&gt;&lt;a href=&#34;C:%5Cdocs-beagle%5CSettings%5Ccontent%5Cen%5Cdocs%5CAPI%5CActions%5CNavigate%5CRoute%5CLocal.md&#34;&gt;Local&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;remotecdocs-beaglesettingscontentendocsapiactionsnavigaterouteremotemd&#34;&gt;&lt;a href=&#34;C:%5Cdocs-beagle%5CSettings%5Ccontent%5Cen%5Cdocs%5CAPI%5CActions%5CNavigate%5CRoute%5CRemote.md&#34;&gt;Remote&lt;/a&gt;&lt;/h3&gt;
 
       </description>
     </item>

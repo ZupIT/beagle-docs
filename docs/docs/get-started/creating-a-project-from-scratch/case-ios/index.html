@@ -99,7 +99,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.ed51fee8f018a4c6943f47e0458e12f973a94a2468f8ca2dcb293bd20973c5cc7b01779a96e71204a108d8cc661a1b9e614ea179435da3d5407c035486e62794.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.776b20d69e9b41d5fbe797515b38444b3ca6617a3b7589e6f733f9354156a8015690b83305963f432d363bab53455feb6f47537b42ae2b4d9cde418461949f96.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -131,7 +131,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.ed51fee8f018a4c6943f47e0458e12f973a94a2468f8ca2dcb293bd20973c5cc7b01779a96e71204a108d8cc661a1b9e614ea179435da3d5407c035486e62794.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.776b20d69e9b41d5fbe797515b38444b3ca6617a3b7589e6f733f9354156a8015690b83305963f432d363bab53455feb6f47537b42ae2b4d9cde418461949f96.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -2015,17 +2015,18 @@ If you wanna know more about how to use Cocoa Pods, <a href="https://cocoapods.o
  <span style="color:#000">end</span>
 </code></pre></div><p>Open the terminal again and type the <em><code>pod install</code></em> command so your dependencies can be installed.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#000">pod</span> <span style="color:#000">install</span>
-</code></pre></div><p>After the installation, you should open a file with a**<code>workspace.</code>** extension. For this example, we&rsquo;ll name it as<code>Beagle Sample.workspace</code></p>
+</code></pre></div><p>After the installation, you should open a file with a <strong><code>workspace.</code></strong> extension. For this example, we&rsquo;ll name it as<code>Beagle Sample.workspace</code></p>
 <p><img src="/docs-beagle/captura-de-tela-2020-04-08-a-s-10.23.09.png" alt=""></p>
 <h3 id="step-2-configure-beagle">Step 2: Configure Beagle</h3>
 <p>Now that your project was created, you must make <strong>Beagle&rsquo;s configuration</strong>. To do so, follow the steps below:</p>
 <ol>
-<li>Create a class called<code>BeagleConfig</code> .</li>
+<li>Create a class called <code>BeagleConfig</code> .</li>
 </ol>
 <p>This class will be responsible to contain part of Beagle&rsquo;s initial configuration. On her, we&rsquo;ll implement a <strong><code>config</code></strong> static function to apply these configurations.</p>
-<pre><code>2. On this function, create a constant called **`dependency`** that must be**`BeagleDependencies`**type. 
-</code></pre>
-<p>We&rsquo;ll attribute to this constant some project&rsquo;s configurations like, for example, the list of basis URL that lists the JSON that will be used to build the the server-driven screen. To configure this constant, use the example below:</p>
+<ol start="2">
+<li>On this function, create a constant called <strong><code>dependency</code></strong> that must be <strong><code>BeagleDependencies</code></strong> type.</li>
+</ol>
+<p>We&rsquo;ll attribute to this constant some project&rsquo;s configurations like, for example, the list of basis URL that lists the <code>JSON</code> that will be used to build the the server-driven screen. To configure this constant, use the example below:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">Beagle</span>
 <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">Foundation</span>
 
@@ -2039,9 +2040,9 @@ If you wanna know more about how to use Cocoa Pods, <a href="https://cocoapods.o
         <span style="color:#000">Beagle</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">dependencies</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">dependencies</span>
     <span style="color:#000;font-weight:bold">}</span>
 <span style="color:#000;font-weight:bold">}</span>
-</code></pre></div><p>Now, we&rsquo;ll configure the**<code>SceneDelegate</code>** class so it can be used to initialize our application with Beagle from a screen through <a href="../../../../../../key-concepts#backend-for-frontend"><strong>BFF</strong>:</a></p>
+</code></pre></div><p>Now, we&rsquo;ll configure the <strong><code>SceneDelegate</code></strong> class so it can be used to initialize our application with Beagle from a screen through <a href="../../../../../../key-concepts#backend-for-frontend"><strong>BFF</strong>:</a></p>
 <ul>
-<li>Create a**<code>beagleScreen</code>** constant, that will receive the server-driven screen.</li>
+<li>Create a <strong><code>beagleScreen</code></strong> constant, that will receive the server-driven screen.</li>
 <li>The <code>init URL</code> argument must contain the <a href="../../../../../resources/urls#caminho-relativo"><strong>relative URL</strong></a> address that will be created on backend (BFF). For this example, we&rsquo;ll call it  &ldquo;/screen&rdquo;</li>
 </ul>
 <p>Follow the example below:</p>
@@ -2050,7 +2051,7 @@ If you wanna know more about how to use Cocoa Pods, <a href="https://cocoapods.o
 <span style="color:#000">window</span><span style="color:#000;font-weight:bold">?.</span><span style="color:#000">windowScene</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">windowScene</span>
 <span style="color:#000">window</span><span style="color:#000;font-weight:bold">?.</span><span style="color:#000">rootViewController</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">beagleScreen</span>
 <span style="color:#000">window</span><span style="color:#000;font-weight:bold">?.</span><span style="color:#000">makeKeyAndVisible</span><span style="color:#000;font-weight:bold">()</span>
-</code></pre></div><p>At the end of this process, the**<code>SceneDelegate</code>** class should be like this:</p>
+</code></pre></div><p>At the end of this process, the <strong><code>SceneDelegate</code></strong> class should be like this:</p>
 <p><img src="https://lh5.googleusercontent.com/JcpliGK0G3QJyLlZIDcwD8X7TZfO7QKEjCcVmWNjX0NHoS8gHl8XOZrSg6dfVntZkusNGmJxRWTa3Ps_xrhCQsIQPOzsFZ375uLqDx1qvuWJWeOnlnQkQy8EkcvMuWhJ6KU8tF-r" alt=""></p>
 <h3 id="step-3-configure-xcode">Step 3: Configure Xcode</h3>
 <p>Usually, the Xcode&rsquo;s proprieties are configured so your application can be initialized through <code>main.storyboard</code>. Now that will be done by Beagle and, for this configuration works, we must change the proprieties <strong>deleting the references</strong> related to <code>main.storyboard</code>.</p>
@@ -2499,7 +2500,7 @@ You will see this screen:</p>
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top"><div class="dr-last-modified-text">
-  Last modified December 10, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/7e74c70c32dcf1d1db826d32f0dfaeb30496f7ee">migrate pt and en content (7e74c70c)</a>
+  Last modified December 17, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/51afb85598f31bea1cd18c587a70809e33a416cb">Alterações nas págs em inglês da seção Get Started (#115) (51afb855)</a>
 </div></div>
 </div>
 

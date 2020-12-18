@@ -24,11 +24,11 @@
 <meta property="og:description" content="Here, you&#39;ll find how to make Beagle&#39;s usage configuration for Android projects." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zupit.github.io/docs-beagle/docs/get-started/using-beagle/android/" />
-<meta property="article:modified_time" content="2020-12-10T16:17:47-03:00" /><meta property="og:site_name" content="Beagle" />
+<meta property="article:modified_time" content="2020-12-17T17:26:18-03:00" /><meta property="og:site_name" content="Beagle" />
 <meta itemprop="name" content="Android">
 <meta itemprop="description" content="Here, you&#39;ll find how to make Beagle&#39;s usage configuration for Android projects.">
-<meta itemprop="dateModified" content="2020-12-10T16:17:47-03:00" />
-<meta itemprop="wordCount" content="2036">
+<meta itemprop="dateModified" content="2020-12-17T17:26:18-03:00" />
+<meta itemprop="wordCount" content="2037">
 
 
 
@@ -104,7 +104,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.ed51fee8f018a4c6943f47e0458e12f973a94a2468f8ca2dcb293bd20973c5cc7b01779a96e71204a108d8cc661a1b9e614ea179435da3d5407c035486e62794.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.776b20d69e9b41d5fbe797515b38444b3ca6617a3b7589e6f733f9354156a8015690b83305963f432d363bab53455feb6f47537b42ae2b4d9cde418461949f96.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -136,7 +136,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.ed51fee8f018a4c6943f47e0458e12f973a94a2468f8ca2dcb293bd20973c5cc7b01779a96e71204a108d8cc661a1b9e614ea179435da3d5407c035486e62794.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.776b20d69e9b41d5fbe797515b38444b3ca6617a3b7589e6f733f9354156a8015690b83305963f432d363bab53455feb6f47537b42ae2b4d9cde418461949f96.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -2063,10 +2063,11 @@ For this example we will not be using a BFF, therefore this step is not necessar
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td style="text-align:left">isLoggingEnabled</td>
-      <td style="text-align:left">Boolean</td>
-      <td style="text-align:left">Attribute that enables or disables all logs that Beagle generates.</td>
+  <tr>
+      <td style="text-align:left">environment</td>
+      <td style="text-align:left">Environment</td>
+      <td style="text-align:left">Attribute responsible for informing Beagle about the current build status
+        of the application.</td>
     </tr>
     <tr>
       <td style="text-align:left">baseUrl</td>
@@ -2077,10 +2078,9 @@ For this example we will not be using a BFF, therefore this step is not necessar
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">environment</td>
-      <td style="text-align:left">Environment</td>
-      <td style="text-align:left">Attribute responsible for informing Beagle about the current build status
-        of the application.</td>
+      <td style="text-align:left">isLoggingEnabled</td>
+      <td style="text-align:left">Boolean</td>
+      <td style="text-align:left">Attribute that enables or disables all logs that Beagle generates.</td>
     </tr>
     <tr>
       <td style="text-align:left">cache</td>
@@ -2093,7 +2093,7 @@ For this example we will not be using a BFF, therefore this step is not necessar
 
 <div class="alert alert-warning" role="alert">
 
-Make sure to note your class configuration with<code>BeagleComponent</code>, because Beagle expect them to have empty constructors.
+Make sure to note your class configuration with <code>BeagleComponent</code>, because Beagle expect them to have empty constructors.
 </div>
 
 <h3 id="step-3--beagleactivitiy"><strong>Step 3:  BeagleActivitiy</strong></h3>
@@ -2595,7 +2595,7 @@ The annotated classes like <code>BeagleComponent</code> and <code>RegisterValida
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top"><div class="dr-last-modified-text">
-  Last modified December 10, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/7e74c70c32dcf1d1db826d32f0dfaeb30496f7ee">migrate pt and en content (7e74c70c)</a>
+  Last modified December 17, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/51afb85598f31bea1cd18c587a70809e33a416cb">Alterações nas págs em inglês da seção Get Started (#115) (51afb855)</a>
 </div></div>
 </div>
 

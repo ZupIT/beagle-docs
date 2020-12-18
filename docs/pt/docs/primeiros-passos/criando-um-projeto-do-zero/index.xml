@@ -438,9 +438,10 @@ Se você tem alguma dúvida sobre como usar este gerenciador, sugerimos checar a
 &lt;li&gt;Crie uma classe chamada&lt;code&gt;BeagleConfig&lt;/code&gt; .&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Esta classe será responsável por conter parte da configuração inicial do Beagle. Nela, implementaremos uma função estática &lt;strong&gt;&lt;code&gt;config&lt;/code&gt;&lt;/strong&gt; para aplicar essas configurações.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;2. Nesta função crie uma constante chamada **`dependency`** que deve ser do tipo**`BeagleDependencies`**. 
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;A esta constante serão atribuídas algumas configurações do projeto, como por exemplo, listar a URL base que lista o&lt;code&gt;JSON&lt;/code&gt; a ser utilizado na construção de uma tela server-driven. Para configurar esta constante, use o exemplo abaixo:&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Nesta função crie uma constante chamada &lt;strong&gt;&lt;code&gt;dependency&lt;/code&gt;&lt;/strong&gt; que deve ser do tipo &lt;strong&gt;&lt;code&gt;BeagleDependencies&lt;/code&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A esta constante serão atribuídas algumas configurações do projeto, como por exemplo, listar a URL base que lista o &lt;code&gt;JSON&lt;/code&gt; a ser utilizado na construção de uma tela server-driven. Para configurar esta constante, use o exemplo abaixo:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-swift&#34; data-lang=&#34;swift&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt;
 &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Foundation&lt;/span&gt;
 
@@ -454,7 +455,7 @@ Se você tem alguma dúvida sobre como usar este gerenciador, sugerimos checar a
         &lt;span style=&#34;color:#000&#34;&gt;Beagle&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;dependencies&lt;/span&gt;
     &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Agora, vamos configurar a classe**&lt;code&gt;SceneDelegate&lt;/code&gt;** para que possamos inicializar nossa aplicação com o Beagle a partir de uma tela via &lt;a href=&#34;../../../../../../principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;:&lt;/a&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Agora, vamos configurar a classe &lt;strong&gt;&lt;code&gt;SceneDelegate&lt;/code&gt;&lt;/strong&gt; para que possamos inicializar nossa aplicação com o Beagle a partir de uma tela via &lt;a href=&#34;../../../../../../principais-conceitos#backend-for-frontend&#34;&gt;&lt;strong&gt;BFF&lt;/strong&gt;:&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Crie a constante &lt;strong&gt;&lt;code&gt;beagleScreen&lt;/code&gt;&lt;/strong&gt;, que irá receber a tela server-driven.&lt;/li&gt;
 &lt;li&gt;O argumento &lt;code&gt;init URL&lt;/code&gt; deve conter o endereço da &lt;a href=&#34;../../../../../features/urls#caminho-relativo&#34;&gt;&lt;strong&gt;URL relativa&lt;/strong&gt;&lt;/a&gt; que será criada no backend (BFF). No nosso exemplo a chamaremos de &amp;ldquo;/screen&amp;rdquo;&lt;/li&gt;
@@ -465,7 +466,7 @@ Se você tem alguma dúvida sobre como usar este gerenciador, sugerimos checar a
 &lt;span style=&#34;color:#000&#34;&gt;window&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;windowScene&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;windowScene&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;window&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;rootViewController&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;beagleScreen&lt;/span&gt;
 &lt;span style=&#34;color:#000&#34;&gt;window&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;?.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;makeKeyAndVisible&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ao final, a classe**&lt;code&gt;SceneDelegate&lt;/code&gt;** deve ficar assim:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ao final, a classe &lt;strong&gt;&lt;code&gt;SceneDelegate&lt;/code&gt;&lt;/strong&gt; deve ficar assim:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://lh5.googleusercontent.com/JcpliGK0G3QJyLlZIDcwD8X7TZfO7QKEjCcVmWNjX0NHoS8gHl8XOZrSg6dfVntZkusNGmJxRWTa3Ps_xrhCQsIQPOzsFZ375uLqDx1qvuWJWeOnlnQkQy8EkcvMuWhJ6KU8tF-r&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;passo-3-configurar-o-xcode&#34;&gt;Passo 3: Configurar o Xcode&lt;/h3&gt;
 &lt;p&gt;Inicialmente, as propriedades do Xcode estão configuradas para que sua aplicação seja iniciada via &lt;code&gt;main.storyboard&lt;/code&gt;. No entanto, agora quem deve iniciar a aplicação é o Beagle e, para que isso ocorra, devemos mudar essas propriedades &lt;strong&gt;apagando&lt;/strong&gt; &lt;strong&gt;as&lt;/strong&gt; &lt;strong&gt;referências&lt;/strong&gt; ligadas ao &lt;code&gt;main.storyboard&lt;/code&gt;.&lt;/p&gt;
@@ -847,7 +848,7 @@ Ele criará o projeto &lt;code&gt;Maven&lt;/code&gt; que facilitará a configura
 &lt;h2 id=&#34;inicializando-a-aplicação&#34;&gt;Inicializando a aplicação&lt;/h2&gt;
 &lt;p&gt;Agora é hora de inicializar a sua aplicação, siga os passos:&lt;/p&gt;
 &lt;h3 id=&#34;passo-1-rodar-o-projeto&#34;&gt;&lt;strong&gt;Passo 1: Rodar o projeto&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;Clique no triângulo verde chamado**&lt;code&gt;run&lt;/code&gt;**, ou aperte e segure SHIFT + F10 para rodar sua aplicação back-end.&lt;/p&gt;
+&lt;p&gt;Clique no triângulo verde chamado &lt;strong&gt;&lt;code&gt;run&lt;/code&gt;&lt;/strong&gt;, ou aperte e segure SHIFT + F10 para rodar sua aplicação back-end.&lt;/p&gt;
 &lt;p&gt;A sua tela estará assim:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-beagle/docs-beagle/sem-titulo2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;passo-2-fazer-uma-requisição&#34;&gt;&lt;strong&gt;Passo 2: Fazer uma requisição&lt;/strong&gt;&lt;/h3&gt;

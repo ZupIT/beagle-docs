@@ -99,7 +99,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.ed51fee8f018a4c6943f47e0458e12f973a94a2468f8ca2dcb293bd20973c5cc7b01779a96e71204a108d8cc661a1b9e614ea179435da3d5407c035486e62794.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.776b20d69e9b41d5fbe797515b38444b3ca6617a3b7589e6f733f9354156a8015690b83305963f432d363bab53455feb6f47537b42ae2b4d9cde418461949f96.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -131,7 +131,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.ed51fee8f018a4c6943f47e0458e12f973a94a2468f8ca2dcb293bd20973c5cc7b01779a96e71204a108d8cc661a1b9e614ea179435da3d5407c035486e62794.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.776b20d69e9b41d5fbe797515b38444b3ca6617a3b7589e6f733f9354156a8015690b83305963f432d363bab53455feb6f47537b42ae2b4d9cde418461949f96.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -2193,9 +2193,10 @@ Se você tem alguma dúvida sobre como usar este gerenciador, sugerimos checar a
 <li>Crie uma classe chamada<code>BeagleConfig</code> .</li>
 </ol>
 <p>Esta classe será responsável por conter parte da configuração inicial do Beagle. Nela, implementaremos uma função estática <strong><code>config</code></strong> para aplicar essas configurações.</p>
-<pre><code>2. Nesta função crie uma constante chamada **`dependency`** que deve ser do tipo**`BeagleDependencies`**. 
-</code></pre>
-<p>A esta constante serão atribuídas algumas configurações do projeto, como por exemplo, listar a URL base que lista o<code>JSON</code> a ser utilizado na construção de uma tela server-driven. Para configurar esta constante, use o exemplo abaixo:</p>
+<ol start="2">
+<li>Nesta função crie uma constante chamada <strong><code>dependency</code></strong> que deve ser do tipo <strong><code>BeagleDependencies</code></strong>.</li>
+</ol>
+<p>A esta constante serão atribuídas algumas configurações do projeto, como por exemplo, listar a URL base que lista o <code>JSON</code> a ser utilizado na construção de uma tela server-driven. Para configurar esta constante, use o exemplo abaixo:</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">Beagle</span>
 <span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">Foundation</span>
 
@@ -2209,7 +2210,7 @@ Se você tem alguma dúvida sobre como usar este gerenciador, sugerimos checar a
         <span style="color:#000">Beagle</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">dependencies</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">dependencies</span>
     <span style="color:#000;font-weight:bold">}</span>
 <span style="color:#000;font-weight:bold">}</span>
-</code></pre></div><p>Agora, vamos configurar a classe**<code>SceneDelegate</code>** para que possamos inicializar nossa aplicação com o Beagle a partir de uma tela via <a href="../../../../../../principais-conceitos#backend-for-frontend"><strong>BFF</strong>:</a></p>
+</code></pre></div><p>Agora, vamos configurar a classe <strong><code>SceneDelegate</code></strong> para que possamos inicializar nossa aplicação com o Beagle a partir de uma tela via <a href="../../../../../../principais-conceitos#backend-for-frontend"><strong>BFF</strong>:</a></p>
 <ul>
 <li>Crie a constante <strong><code>beagleScreen</code></strong>, que irá receber a tela server-driven.</li>
 <li>O argumento <code>init URL</code> deve conter o endereço da <a href="../../../../../features/urls#caminho-relativo"><strong>URL relativa</strong></a> que será criada no backend (BFF). No nosso exemplo a chamaremos de &ldquo;/screen&rdquo;</li>
@@ -2220,7 +2221,7 @@ Se você tem alguma dúvida sobre como usar este gerenciador, sugerimos checar a
 <span style="color:#000">window</span><span style="color:#000;font-weight:bold">?.</span><span style="color:#000">windowScene</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">windowScene</span>
 <span style="color:#000">window</span><span style="color:#000;font-weight:bold">?.</span><span style="color:#000">rootViewController</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">beagleScreen</span>
 <span style="color:#000">window</span><span style="color:#000;font-weight:bold">?.</span><span style="color:#000">makeKeyAndVisible</span><span style="color:#000;font-weight:bold">()</span>
-</code></pre></div><p>Ao final, a classe**<code>SceneDelegate</code>** deve ficar assim:</p>
+</code></pre></div><p>Ao final, a classe <strong><code>SceneDelegate</code></strong> deve ficar assim:</p>
 <p><img src="https://lh5.googleusercontent.com/JcpliGK0G3QJyLlZIDcwD8X7TZfO7QKEjCcVmWNjX0NHoS8gHl8XOZrSg6dfVntZkusNGmJxRWTa3Ps_xrhCQsIQPOzsFZ375uLqDx1qvuWJWeOnlnQkQy8EkcvMuWhJ6KU8tF-r" alt=""></p>
 <h3 id="passo-3-configurar-o-xcode">Passo 3: Configurar o Xcode</h3>
 <p>Inicialmente, as propriedades do Xcode estão configuradas para que sua aplicação seja iniciada via <code>main.storyboard</code>. No entanto, agora quem deve iniciar a aplicação é o Beagle e, para que isso ocorra, devemos mudar essas propriedades <strong>apagando</strong> <strong>as</strong> <strong>referências</strong> ligadas ao <code>main.storyboard</code>.</p>
@@ -2699,7 +2700,7 @@ Você verá a tela a seguir:</p>
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top"><div class="dr-last-modified-text">
-  Last modified 09/12/2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/2500a2815c1ffbbcf064963526033e3a2b985837">fix tabs and some links (2500a281)</a>
+  Last modified 17/12/2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/51afb85598f31bea1cd18c587a70809e33a416cb">Alterações nas págs em inglês da seção Get Started (#115) (51afb855)</a>
 </div></div>
 </div>
 

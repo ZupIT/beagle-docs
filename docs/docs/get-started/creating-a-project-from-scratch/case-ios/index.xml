@@ -23,7 +23,7 @@
         
         
         &lt;hr&gt;
-&lt;h2 id=&#34;creating-styles-for-beagle-ios&#34;&gt;&lt;strong&gt;C&lt;/strong&gt;reating styles for Beagle iOS&lt;/h2&gt;
+&lt;h2 id=&#34;creating-styles-for-beagle-ios&#34;&gt;Creating styles for Beagle iOS&lt;/h2&gt;
 &lt;p&gt;On the first use example, you saw how to &lt;a href=&#34;../.././&#34;&gt;&lt;strong&gt;implement Beagle&lt;/strong&gt;&lt;/a&gt; and create your first server-driven screen.&lt;/p&gt;
 &lt;p&gt;In this tutorial, the idea is to get deeper from the &lt;a href=&#34;./#passo-3-configurando-o-xcode&#34;&gt;&lt;strong&gt;previous project&lt;/strong&gt;&lt;/a&gt; to create a Design System on Beagle&amp;rsquo;s library. To better illustrate  the explanation, we&amp;rsquo;ll use these &lt;a href=&#34;https://github.com/ZupIT/beagle-examples&#34;&gt;&lt;strong&gt;sample codes&lt;/strong&gt;&lt;/a&gt; that you can find out in our repository.&lt;/p&gt;
 &lt;p&gt;The idea is to configure some styles on iOS to allow you to customize some components, such as:&lt;/p&gt;
@@ -166,7 +166,7 @@ If you can&amp;rsquo;t find the text font, Beagle will define a system default f
 &lt;li&gt;Open the backend project (BFF) and look for the &lt;code&gt;FirstScreenBeagleBuilder&lt;/code&gt;file.&lt;/li&gt;
 &lt;li&gt;This is the file that contains the code of your first server-driven screen.&lt;/li&gt;
 &lt;li&gt;She must be configured like in the image below.&lt;/li&gt;
-&lt;li&gt;On her, you will notice that it was built a hierarchy&amp;rsquo;s screen components and two text types components.&lt;/li&gt;
+&lt;li&gt;On it, you will notice that it was built a hierarchy&amp;rsquo;s screen components and two text types components.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-kotlin&#34; data-lang=&#34;kotlin&#34;&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;FirstScreenBuilder&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;ScreenBuilder&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
     &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;override&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fun&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;build&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Screen&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;
@@ -220,7 +220,7 @@ If you can&amp;rsquo;t find the text font, Beagle will define a system default f
 &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;),&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And done, that&amp;rsquo;s all we&amp;rsquo;re gonna do on our backend so far.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Repeat the same process with the other&lt;code&gt;Text&lt;/code&gt; component - the paragraph -, but name it as &lt;code&gt;“Description.Text.Orange”&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Repeat the same process with the other &lt;code&gt;Text&lt;/code&gt; component - the paragraph -, but name it as &lt;code&gt;“Description.Text.Orange”&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;You can run your backend&amp;rsquo;s application so the service can be available.&lt;/p&gt;
 

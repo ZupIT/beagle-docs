@@ -24,11 +24,11 @@
 <meta property="og:description" content="Here, you&#39;ll find how to make Beagle&#39;s usage configuration for iOS projects." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zupit.github.io/docs-beagle/docs/get-started/using-beagle/ios/" />
-<meta property="article:modified_time" content="2020-12-10T16:17:47-03:00" /><meta property="og:site_name" content="Beagle" />
+<meta property="article:modified_time" content="2020-12-17T17:26:18-03:00" /><meta property="og:site_name" content="Beagle" />
 <meta itemprop="name" content="IOS">
 <meta itemprop="description" content="Here, you&#39;ll find how to make Beagle&#39;s usage configuration for iOS projects.">
-<meta itemprop="dateModified" content="2020-12-10T16:17:47-03:00" />
-<meta itemprop="wordCount" content="416">
+<meta itemprop="dateModified" content="2020-12-17T17:26:18-03:00" />
+<meta itemprop="wordCount" content="428">
 
 
 
@@ -104,7 +104,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.ed51fee8f018a4c6943f47e0458e12f973a94a2468f8ca2dcb293bd20973c5cc7b01779a96e71204a108d8cc661a1b9e614ea179435da3d5407c035486e62794.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.776b20d69e9b41d5fbe797515b38444b3ca6617a3b7589e6f733f9354156a8015690b83305963f432d363bab53455feb6f47537b42ae2b4d9cde418461949f96.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -136,7 +136,7 @@
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/docs-beagle/offline-search-index.ed51fee8f018a4c6943f47e0458e12f973a94a2468f8ca2dcb293bd20973c5cc7b01779a96e71204a108d8cc661a1b9e614ea179435da3d5407c035486e62794.json"
+  data-offline-search-index-json-src="/docs-beagle/offline-search-index.776b20d69e9b41d5fbe797515b38444b3ca6617a3b7589e6f733f9354156a8015690b83305963f432d363bab53455feb6f47537b42ae2b4d9cde418461949f96.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -1925,7 +1925,7 @@
     <li><a href="#how-to-display-a-hello-beagle-screen">How to display a &ldquo;Hello Beagle!&rdquo; screen</a>
       <ul>
         <li></li>
-        <li><a href="#step-1-create-a-class-mybeaglescreen">Step 1: Create a class (MyBeagleScreen)</a></li>
+        <li><a href="#step-1-create-a-class-mybeaglescreen">Step 1: Create a class (<strong>MyBeagleScreen</strong>)</a></li>
         <li><a href="#step-2-instantiate-beaglescreenviewcontroller">Step 2: Instantiate <strong>BeagleScreenViewController</strong></a></li>
         <li><a href="#step-3-run-the-application">Step 3: Run the application</a></li>
       </ul>
@@ -1991,7 +1991,7 @@
 	<h1>IOS</h1>
     <div class="lead">Here, you&rsquo;ll find how to make Beagle&rsquo;s usage configuration for iOS projects.</div>
 	
-        <p class="reading-time"><i class="fa fa-clock" aria-hidden="true"></i> 2 minute read</p>
+        <p class="reading-time"><i class="fa fa-clock" aria-hidden="true"></i> 3 minute read</p>
            
 	<hr>
 <h2 id="how-to-display-a-hello-beagle-screen">How to display a &ldquo;Hello Beagle!&rdquo; screen</h2>
@@ -2004,7 +2004,7 @@ Check out how to <a href="../../../../installing-beagle/ios"><strong>install Bea
 </div>
 
 <p>Currently, there are two types of approaches to render screens with Beagle: <strong>remote</strong> and <strong>declarative.</strong></p>
-<h4 id="remote-renderization">Remot<strong>e</strong> Renderization</h4>
+<h4 id="remote-renderization">Remote Renderization</h4>
 <blockquote>
 <p>Main approach used on Beagle because it&rsquo;s based on <a href="../../../../key-concepts#server-driven-ui"><strong>server-driven UI</strong></a> concept. It allows you to build layouts dynamically, consuming the informations provided by a <a href="../../../../key-concepts#backend-for-frontend"><strong>BFF</strong></a> through a remote URL.</p>
 </blockquote>
@@ -2013,32 +2013,39 @@ Check out how to <a href="../../../../installing-beagle/ios"><strong>install Bea
 <p>Even if it&rsquo;s an alternative not based on server-driven UI, this renderization is a way you can locally state componentes with <strong>Swift language.</strong> With this, you can use a local component directly or through a JSON that represents it, simulating a response from BFF.</p>
 </blockquote>
 <p>For this example, you will render a screen with <strong>declarative way</strong>, which means that all the processes will be done locally because, on this way, you&rsquo;ll know a little bit about Beagle and, in a few steps, test if your installation worked.</p>
-<h3 id="step-1-create-a-class-mybeaglescreen">Step 1: Create a class (MyBeagleScreen)</h3>
+<h3 id="step-1-create-a-class-mybeaglescreen">Step 1: Create a class (<strong>MyBeagleScreen</strong>)</h3>
 <p>Create a class and name it as you wish. Here, we&rsquo;ll call it <strong><code>MyBeagleScreen</code></strong>.</p>
 <p>The class will have only one method responsible to build a <strong><code>Screen</code></strong>.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">Beagle</span>
-<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">Foundation</span>
+<span style="color:#204a87;font-weight:bold">import</span> <span style="color:#000">BeagleSchema</span>
 
-<span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">BeagleConfig</span> <span style="color:#000;font-weight:bold">{</span>
-    <span style="color:#204a87;font-weight:bold">static</span> <span style="color:#204a87;font-weight:bold">func</span> <span style="color:#000">config</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span>
-        
-        <span style="color:#204a87;font-weight:bold">let</span> <span style="color:#000">dependencies</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">BeagleDependencies</span><span style="color:#000;font-weight:bold">()</span>
-        <span style="color:#000">dependencies</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">urlBuilder</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">UrlBuilder</span><span style="color:#000;font-weight:bold">(</span>
-            <span style="color:#000">baseUrl</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">URL</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">string</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#4e9a06">&#34;Server base URL&#34;</span><span style="color:#000;font-weight:bold">)</span>
+<span style="color:#204a87;font-weight:bold">class</span> <span style="color:#000">MyBeagleScreen</span> <span style="color:#000;font-weight:bold">{</span>
+    <span style="color:#204a87;font-weight:bold">static</span> <span style="color:#204a87;font-weight:bold">func</span> <span style="color:#000">make</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">-&gt;</span> <span style="color:#000">Screen</span> <span style="color:#000;font-weight:bold">{</span>
+        <span style="color:#204a87;font-weight:bold">return</span> <span style="color:#000">Screen</span><span style="color:#000;font-weight:bold">(</span>
+            <span style="color:#000">child</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000">Container</span><span style="color:#000;font-weight:bold">(</span>
+                <span style="color:#000">children</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">[</span>
+                    <span style="color:#000">Text</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;Hello Beagle!&#34;</span><span style="color:#000;font-weight:bold">)</span>
+                <span style="color:#000;font-weight:bold">]</span>
+            <span style="color:#000;font-weight:bold">).</span><span style="color:#000">applyFlex</span><span style="color:#000;font-weight:bold">(</span>
+                <span style="color:#000">Flex</span><span style="color:#000;font-weight:bold">(</span>
+                    <span style="color:#000">justifyContent</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">.</span><span style="color:#000">center</span><span style="color:#000;font-weight:bold">,</span>
+                    <span style="color:#000">alignItems</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#000;font-weight:bold">.</span><span style="color:#000">center</span><span style="color:#000;font-weight:bold">,</span>
+                    <span style="color:#000">grow</span><span style="color:#000;font-weight:bold">:</span> <span style="color:#0000cf;font-weight:bold">1</span>
+                <span style="color:#000;font-weight:bold">)</span>
+            <span style="color:#000;font-weight:bold">)</span>
         <span style="color:#000;font-weight:bold">)</span>
-        <span style="color:#000">Beagle</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">dependencies</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">dependencies</span>
     <span style="color:#000;font-weight:bold">}</span>
 <span style="color:#000;font-weight:bold">}</span>
 </code></pre></div>
 
 <div class="alert alert-info" role="alert">
 
-Notice that the <strong><code>Screen</code></strong> is being build using**<code>Flex</code>**. To understand better these components and your proprieties, go to the section **component&rsquo;s layout**.
+Notice that the <strong><code>Screen</code></strong> is being build using <strong><code>Flex</code></strong>. To understand better these components and your proprieties, go to the section <strong>component&rsquo;s layout</strong>.
 </div>
 
 <h3 id="step-2-instantiate-beaglescreenviewcontroller">Step 2: Instantiate <strong>BeagleScreenViewController</strong></h3>
 <p>Now it&rsquo;s time to display your first screen built using <strong>Beagle</strong>, and to do so you must:</p>
-<p>Instantiate a**<code>BeagleScreenViewController</code>** with**<code>declarative</code>** type that will receive a**<code>MyBeagleScreen</code>**.</p>
+<p>Instantiate a <strong><code>BeagleScreenViewController</code></strong> with <strong><code>declarative</code></strong> type that will receive a <strong><code>MyBeagleScreen</code></strong>.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-swift" data-lang="swift"><span style="color:#204a87;font-weight:bold">let</span> <span style="color:#000">beagleViewController</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">Beagle</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">screen</span><span style="color:#000;font-weight:bold">(</span>
     <span style="color:#000;font-weight:bold">.</span><span style="color:#000">declarative</span><span style="color:#000;font-weight:bold">(</span>
         <span style="color:#000">MyBeagleScreen</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">make</span><span style="color:#000;font-weight:bold">()</span>
@@ -2048,7 +2055,7 @@ Notice that the <strong><code>Screen</code></strong> is being build using**<code
 
 <div class="alert alert-info" role="alert">
 
-In case you want to use the **<code>remote</code>**type, check out <a href="../../../how-to-display-a-screen"><strong>how to display a server-driven screen.</strong></a>
+In case you want to use the <strong><code>remote</code></strong> type, check out <a href="../../../how-to-display-a-screen"><strong>how to display a server-driven screen.</strong></a>
 </div>
 
 <p>Once you made it, you just have to present it as you wish.</p>
@@ -2057,7 +2064,7 @@ In case you want to use the **<code>remote</code>**type, check out <a href="../.
 
 <div class="alert alert-warning" role="alert">
 
-Don&rsquo;t forget to add**<code>import Beagle</code>**.
+Don&rsquo;t forget to add <strong><code>import Beagle</code></strong>.
 </div>
 
 <h3 id="step-3-run-the-application">Step 3: Run the application</h3>
@@ -2137,7 +2144,7 @@ Don&rsquo;t forget to add**<code>import Beagle</code>**.
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top"><div class="dr-last-modified-text">
-  Last modified December 10, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/7e74c70c32dcf1d1db826d32f0dfaeb30496f7ee">migrate pt and en content (7e74c70c)</a>
+  Last modified December 17, 2020: <a  href="https://github.com/ZupIT/docs-beagle/commit/51afb85598f31bea1cd18c587a70809e33a416cb">Alterações nas págs em inglês da seção Get Started (#115) (51afb855)</a>
 </div></div>
 </div>
 
