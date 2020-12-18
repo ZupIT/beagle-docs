@@ -1,8 +1,8 @@
 ---
-title: Camada de cache
+title: Gerenciar Cache
 weight: 113
 description: >-
-  Nesta seção, você encontra informações sobre a camada de persistencia de cache do Beagle e como
+  Nesta seção, você encontra informações sobre como gerenciar cache do beagle e como
   modificá-la.
 ---
 
