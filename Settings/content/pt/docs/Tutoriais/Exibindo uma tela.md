@@ -210,7 +210,7 @@ let beagleViewController = Beagle.screen(
 )
 ```
 
-Feito isso, **basta apresentá-la** onde preferir. Neste caso, você deve seguir como no comando de exemplo. 
+Feito isso, basta apresentá-la onde preferir. Neste caso, você deve seguir como no comando de exemplo. 
 
 ```swift
 present(beagleViewController, animated: true, completion: nil)

@@ -13,7 +13,7 @@ Cada plataforma possui sua forma especificia de fazer essa implementação no fr
 
 {{< tabs name="T92" >}}
 {{% tab name="Android" %}}
-1. Crie uma classe anotada com `@RegisterAction` que implementa uma interface `Action`. Essa interface irá requistar a implementação do método `execute` e você irá declarar o resultudo da `action`.
+1. Crie uma classe anotada com `@RegisterAction` que implementa uma interface `Action`. Essa interface irá requisitar a implementação do método `execute` e você irá declarar o resultado da `action`.
 2. O atributo `msg` listado, é o único exemplo de parâmetro que deve ser declarado na classe construtora. 
 
 O exemplo abaixo mostra um ação com **Toast**: 
