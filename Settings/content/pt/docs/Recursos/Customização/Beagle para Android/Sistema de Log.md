@@ -19,6 +19,19 @@ As mensagens de **log** fornecidas pelo Beagle Android podem ser acessadas pelo:
 
 Elas são divididas em 3 categorias: 
 
+```kotlin 
+interface BeagleLogger {
+
+    fun warning(message: String)
+
+    fun error(message: String)
+
+    fun error(message: String, throwable: Throwable)
+
+    fun info(message: String)
+}
+```
+
 1. **Info:** relacionada à camada Rede, informações e respostas da comunicação com o servidor. 
 2. **Warning:** mensagens informativas de erros relacionados a componentes do Beagle.
 3. **Error**: exibe mensagens de erros relacionadas a `parse`, `http` e outras exceções. 
@@ -43,23 +56,29 @@ Para deixar o ambiente do Beagle aberto a modificações, a API de Logs padrão 
 A configuração dessa customização é feita com a criação de uma classe anotada com `@BeagleComponent` e que implemente a **Interface** `BeagleLogger`. Essa interface precisa da implementação dos métodos de logs, você pode seguir o exemplo abaixo:
 
 ```kotlin
+import android.util.Log
+import br.com.zup.beagle.android.annotation.BeagleComponent
+import br.com.zup.beagle.android.logger.BeagleLogger
+
+private const val BEAGLE_TAG = "BeagleSDK"
+
 @BeagleComponent
-class CustomBeagleLog : BeagleLogger {
-    
+class BeagleLoggerDefault : BeagleLogger {
+
     override fun warning(message: String) {
-        TODO("Not yet implemented")
+        Log.w(BEAGLE_TAG, message)
     }
 
     override fun error(message: String) {
-        TODO("Not yet implemented")
+        Log.e(BEAGLE_TAG, message)
     }
 
     override fun error(message: String, throwable: Throwable) {
-        TODO("Not yet implemented")
+        Log.e(BEAGLE_TAG, message, throwable)
     }
 
     override fun info(message: String) {
-        TODO("Not yet implemented")
+        Log.i(BEAGLE_TAG, message)
     }
 
 }
