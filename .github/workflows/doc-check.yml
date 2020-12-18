@@ -1,4 +1,4 @@
-name: hugo build check
+name: PR Check
 
 on:
   pull_request:
