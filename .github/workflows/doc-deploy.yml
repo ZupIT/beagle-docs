@@ -20,7 +20,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo -D --minify
+        run: npm run build
         working-directory: Settings
               
       - name: Deploying

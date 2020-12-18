@@ -20,5 +20,5 @@ jobs:
           extended: true
 
       - name: Build check
-        run: hugo -D
+        run: npm run build
         working-directory: Settings

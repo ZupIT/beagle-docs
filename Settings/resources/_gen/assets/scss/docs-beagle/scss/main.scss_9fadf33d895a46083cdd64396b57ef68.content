@@ -13952,7 +13952,21 @@ pre {
   color: #000 !important;
   background: transparent; }
 
-.nav-tabs > li.active > a {
-  background: #8dc63f; }
+.alert-warning {
+  border-color: #f7941e; }
+
+.alert-info {
+  border-color: #0c3455; }
+
+.alert-success {
+  border-color: #8dc63f; }
+
+.td-sidebar-nav__section-title {
+  font-weight: unset; }
+
+.section-index h5 a {
+  text-decoration: underline; }
+  .section-index h5 a:hover {
+    opacity: 0.8; }
 
 /*# sourceMappingURL=main.css.map */
