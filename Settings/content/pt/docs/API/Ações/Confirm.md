@@ -80,7 +80,7 @@ Segue abaixo um exemplo com um bot√£o que ao clicado exibe um modal de confirma√
 
 {{< tabs name="T109" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:confirm.json
 {
   "_beagleComponent_": "beagle:container",
   "children": [
@@ -101,7 +101,8 @@ Segue abaixo um exemplo com um bot√£o que ao clicado exibe um modal de confirma√
     }
   ]
 }
-```
+-->
+{{% playground file="confirm.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}

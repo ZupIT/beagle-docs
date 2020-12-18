@@ -114,4 +114,4 @@ To keep configuring Beagle:
 
 👉Go to[ **initial configurations**](../using-beagle/android) to enable the use of Beagle on your Android project.
 
-👉 If you want to go straight to practice, access our [**tutorial to create a project from zero**](../../creating-a-project-from-scratch/case-android/).
+👉 If you want to go straight to practice, access our [**tutorial to create a project from scratch**](../../creating-a-project-from-scratch/case-android/).

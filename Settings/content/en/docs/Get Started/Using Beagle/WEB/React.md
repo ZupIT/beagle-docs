@@ -92,8 +92,9 @@ export default App;
 
 When we make this note, we indicate to Beagle that our defined layout will be rendered on `payload.json` file. In this case, two components are provided on the library:
 
-1. `<BeagleProvider>`: Responsible to provide a `value`propriety  as `beagle-service` created on the previous step and contains the initial configurations;  
-2. `<BeagleRemoteView>`: Responsible to receive a `path` propriety, which is the path to our JSON file.
+1. `<BeagleProvider>`: Responsible to provide a `value` propriety  as `beagle-service` created on the previous step and contains the initial configurations;  
+2. `<BeagleRemoteView>`: Responsible to render the layout defined by the JSON specified by the `route` property.
+
 
 {{% alert color="info" %}}
 See that here we added  **' / '** because this value will be associated to the defined`baseUrl` on the file `beagle-service.ts`

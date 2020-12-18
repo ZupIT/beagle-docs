@@ -53,7 +53,7 @@ Follow the steps below to import the project you have created. First, open **int
 
 ### Step 1: Configure the project
 
-As a starting point, follow this step by step to [**install the backend**](../../../../installing-beagle/beagle-backend)
+As a starting point, follow this step by step to [**install the backend**](../../../../installing-beagle/beagle-backend).
 
 ### Step 2: Define the structure 
 
@@ -126,7 +126,7 @@ object ScreenBeagleBuilder : ScreenBuilder {
 ```
 
 
-The next class we will create is**`Service`**:
+The next class we will create is **`Service`**:
 
 1. Right-click the service package and click `New> Kotlin File / Class.` 
 2. Name it `ScreenBeagleService`. This class must be annotated with `@Service`, which is a Spring annotation
