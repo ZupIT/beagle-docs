@@ -1,7 +1,7 @@
-baseURL = "https://zupit.github.io/docs-beagle"
+baseURL = "http://docs-beta.usebeagle.io"
 
 title = "Beagle"
-publishDir = "../docs"
+publishDir = "docs"
 
 enableRobotsTXT = true
 
