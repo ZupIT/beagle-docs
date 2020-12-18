@@ -67,7 +67,7 @@ yarn serve
 
 After you add the None enum to a @Component\(\) encapsulation propriety, it's necessary to make it useful. See how to make it on the image below: 
 
-![](/docs-beagle/image%20%2812%29.png)
+![](/image%20%2812%29.png)
 
 {{% alert color="info" %}}
 If you want to see more about **ViewEncapsulation**, check out [**Angular's documentation.**](https://angular.io/api/core/ViewEncapsulation#viewencapsulation)
