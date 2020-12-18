@@ -73,10 +73,11 @@ class AppBeagleConfig : BeagleConfig {
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td style="text-align:left">isLoggingEnabled</td>
-      <td style="text-align:left">Boolean</td>
-      <td style="text-align:left">Attribute that enables or disables all logs that Beagle generates.</td>
+  <tr>
+      <td style="text-align:left">environment</td>
+      <td style="text-align:left">Environment</td>
+      <td style="text-align:left">Attribute responsible for informing Beagle about the current build status
+        of the application.</td>
     </tr>
     <tr>
       <td style="text-align:left">baseUrl</td>
@@ -87,10 +88,9 @@ class AppBeagleConfig : BeagleConfig {
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">environment</td>
-      <td style="text-align:left">Environment</td>
-      <td style="text-align:left">Attribute responsible for informing Beagle about the current build status
-        of the application.</td>
+      <td style="text-align:left">isLoggingEnabled</td>
+      <td style="text-align:left">Boolean</td>
+      <td style="text-align:left">Attribute that enables or disables all logs that Beagle generates.</td>
     </tr>
     <tr>
       <td style="text-align:left">cache</td>
@@ -101,7 +101,7 @@ class AppBeagleConfig : BeagleConfig {
 </table>
 
 {{% alert color="warning" %}}
-Make sure to note your class configuration with`BeagleComponent`, because Beagle expect them to have empty constructors.
+Make sure to note your class configuration with `BeagleComponent`, because Beagle expect them to have empty constructors.
 {{% /alert %}}
 
 ### **Step 3:  BeagleActivitiy** 
