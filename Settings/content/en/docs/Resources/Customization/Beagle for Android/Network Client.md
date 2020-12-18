@@ -35,7 +35,7 @@ In the *execute* method, you can create the rules for your network layer, causin
 
 ## Creating a custom network client
 
-To create this class, follow the next steps: 
+To create this class, follow the next steps.
 
 ### Step 1: Add the dependencies 
 

@@ -36,7 +36,7 @@ No método *execute*, você consegue criar as regras de sua camada de rede, faze
 
 ## Criando uma camada de rede customizada
 
-To create a custom network layer, follow an example below with the following steps:
+Para criar uma camada de rede personalizada, siga um exemplo abaixo com as seguintes passos.
 
 ### Passo 1: Adicionar as dependências
 
