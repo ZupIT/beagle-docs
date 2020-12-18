@@ -95,7 +95,7 @@ Não esqueça de adicionar**`import Beagle`**.
 
 Por fim, execute a sua aplicação e, se tudo estiver certo, você deverá ver uma tela como esta:
 
-![](/docs-beagle/hellobeagle_simulator.png)
+![](/hellobeagle_simulator.png)
 
 {{% alert color="success" %}}
 **Parabéns**, você criou sua primeira tela com **Beagle**🎉

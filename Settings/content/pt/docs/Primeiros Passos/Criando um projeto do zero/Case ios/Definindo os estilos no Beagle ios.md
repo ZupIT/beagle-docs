@@ -176,7 +176,7 @@ A página era assim quando renderizada no frontend:
 
 
 
-![](/docs-beagle/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)
+![](/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)
 
 Para atribuir um estilo a esses textos siga as instruções:
 

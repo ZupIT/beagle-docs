@@ -15,7 +15,7 @@ Cada biblioteca do Beagle Web possui um processo definido de como busca, process
 
 Veja o processo de renderização do Beagle Web: 
 
-![](/docs-beagle/beagle-view.png)
+![](/beagle-view.png)
 
 Os lifecycles \(ciclos de vida\) do Beagle, são:
 

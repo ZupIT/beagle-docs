@@ -65,7 +65,7 @@ The second step is to create some packages to better organize the project. They 
 4. Repeat the process creating the other two packages, naming them **`service`** and **`controller`** 
 5. After creating the packages, your screen should look like this:
 
-![](/docs-beagle/image%20%2829%29.png)
+![](/image%20%2829%29.png)
 
 
 
@@ -182,7 +182,7 @@ Now it's time to start your application, follow the next steps:
 
 Your screen should look like this:
 
-![](/docs-beagle/sem-titulo2.png)
+![](/sem-titulo2.png)
 
 ### **Step 2: Make a request**
 
