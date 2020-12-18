@@ -1,7 +1,7 @@
 name: hugo to github pages
 
 on:
-  push:
+  pull_request:
     branches: [main]
 
 jobs:
