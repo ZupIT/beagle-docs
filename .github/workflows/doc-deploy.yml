@@ -1,7 +1,7 @@
-name: hugo to github pages
+name: Deploy doc to AWS
 
 on:
-  push:
+  pull_request:
     branches: [main]
 
 jobs:
@@ -27,11 +27,12 @@ jobs:
         run: npm run build
         working-directory: Settings
               
-      - name: Deploying
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+      - uses: jakejarvis/s3-sync-action@master
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: release
-          FOLDER: docs
-          CLEAN: true
-          TARGET_FOLDER: docs
+          args: --acl public-read --follow-symlinks --delete
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET_BETA }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: 'sa-east-1'
+          SOURCE_DIR: 'docs/'
