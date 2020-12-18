@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build
+        run: hugo -D --minify
               
       - uses: jakejarvis/s3-sync-action@master
         with:
