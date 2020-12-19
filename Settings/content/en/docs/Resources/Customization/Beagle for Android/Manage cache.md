@@ -90,6 +90,8 @@ Now, you have to create a second class which depends on the StoreHandler creatio
 
 The file below has some SQL Lite configuration and definition on how the cache manipulation actions will work, in case of a cache persistence on the database. 
 
+In the database attribute of the `DatabaseLocalStore` class, we pass the BeagleDatabaseManager class, so we call the getDatabase method and within the parameter we must pass the application context of the project. follow the example in the DatabaseLocalStore class attribute below.
+
 
 ```kotlin
 internal object ScreenEntry : BaseColumns {
@@ -101,7 +103,7 @@ internal object ScreenEntry : BaseColumns {
 internal class DatabaseLocalStore(
     private val contentValuesFactory: ContentValuesFactory = ContentValuesFactory(),
     private val database: SQLiteDatabase = BeagleDatabaseManager.getDatabase(
-        BeagleUiSampleApplication.APPLICATION!!)
+        BeagleUiSampleApplication.instance)
 ) : LocalStore {
 
     override fun save(key: String, value: String) {
