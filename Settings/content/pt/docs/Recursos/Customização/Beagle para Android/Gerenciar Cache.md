@@ -91,7 +91,7 @@ Agora criaremos uma segunda classe a qual dependeremos para criação do `StoreH
 
 O arquivo abaixo possui as configurações para o SQL Lite e também as definições de como as ações de manipulação de cache funcionarão, no caso da persistência do cache no banco de dados.
 
-No atributo database da classe `DatabaseLocalStore` passamos a classe BeagleDatabaseManager, assim chamamos o método getDatabase e dentro do parametro devemos passar o context da application do projeto. siga o exemplo no atributo da classe DatabaseLocalStore abaixo.
+No atributo database da classe `DatabaseLocalStore` passamos a classe BeagleDatabaseManager, assim chamamos o método getDatabase e dentro do parametro devemos passar o contexto do aplicativo. siga o exemplo no atributo da classe DatabaseLocalStore abaixo.
 
 
 ```kotlin
