@@ -13964,4 +13964,9 @@ pre {
 .td-sidebar-nav__section-title {
   font-weight: unset; }
 
+.section-index h5 a {
+  text-decoration: underline; }
+  .section-index h5 a:hover {
+    opacity: 0.8; }
+
 /*# sourceMappingURL=main.css.map */

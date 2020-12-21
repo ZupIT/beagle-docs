@@ -54,7 +54,7 @@ When BFF responds with the `status 304`, the application loads the element in ca
 
 
 
-![](/docs-beagle/beaglesave.png)
+![](/beaglesave.png)
 
 ## Next Steps
 
