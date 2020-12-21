@@ -36,7 +36,7 @@ Depois de ter instalado o programa, siga os passos abaixo:
 
 Quando a inicialização for concluída, você verá esta página: 
 
-![](/docs-beagle/mainactivity.png)
+![](/mainactivity.png)
 
 {{% alert color="success" %}}
 Parabéns, seu projeto foi criado no Android! Agora, você precisará configurar o Beagle, de acordo com os passos a seguir. 
@@ -82,7 +82,7 @@ Perceba que alguns `plugins` já estão listados no começo desse arquivo como m
 
 * Em seguida, adicione a linha_`apply plugin: 'kotlin-kapt'`_ 
 
-![](/docs-beagle/implementacaogradle.png)
+![](/implementacaogradle.png)
 
 Depois disso, você precisa adicionar algumas dependências. Para isso: 
 
@@ -115,7 +115,7 @@ Por exemplo: undefined-`ext.beagle.version = "0.2.8"`
 
 Ao final destas configurações, o seu arquivo deverá estar assim:
 
-![](/docs-beagle/implementacaogradle2.png)
+![](/implementacaogradle2.png)
 
 ### 
 
@@ -168,7 +168,7 @@ Para criar o AppBeagleConfig, siga estes passos:
 1. Primeiro vamos criar o pacote que conterá nossos arquivos de configuração.  
 2. Clique com botão direito do mouse no pacote principal do seu projeto e click em **new &gt; package** __conforme a figura abaixo: 
 
-![](/docs-beagle/newpackage.png)
+![](/newpackage.png)
 
 Embora você possa nomeá-lo como preferir, sugerimos que para este tutorial você use o nome`beagle`
 
@@ -226,7 +226,7 @@ Siga os passos abaixo para criar o AppBeagleActivity, incluindo o arquivo `.xml`
 
 1. Clique com o botão direito do mouse no pacote Beagle e clique em **New&gt;Activity&gt;Empty Activity** 
 
-![](/docs-beagle/newactivity.png)
+![](/newactivity.png)
 
    2. Dê o nome de `AppBeagleActivity` para a `Activity` e clique em **`finish`**.
 
@@ -336,11 +336,11 @@ Embora você possa criá-lo agora se quiser, não é necessário para as configu
 
 Agora, você deve inicializar sua `Application` para que o Beagle gere os outros arquivos de configuração que necessita. Para isso, basta clicar em`Make project` \(símbolo de MARTELO\) ou use o comando `CTRL + F9`.
 
-![](/docs-beagle/apppackage.png)
+![](/apppackage.png)
 
 Ao ser inicializado, o Beagle irá criar automaticamente o arquivo `BeagleSetup`, que estará na pasta de arquivos gerados como mostrado na figura abaixo: 
 
-![](/docs-beagle/image%20%2843%29.png)
+![](/image%20%2843%29.png)
 
 ### Passo 6: Criar a classe AppApplication
 
@@ -406,12 +406,12 @@ finish()
 
 * Sua`MainActivity.kt` deve ficar assim:
 
-![](/docs-beagle/print-intent%20%282%29.png)
+![](/print-intent%20%282%29.png)
 
 Agora basta somente clicar em **`Run app`** e checar sua tela no emulador!   
 Você verá esta tela: 
 
-![](/docs-beagle/captura-de-tela-2020-06-22-a-s-11.41.12.png)
+![](/captura-de-tela-2020-06-22-a-s-11.41.12.png)
 
 {{% alert color="success" %}}
 Parabéns, você criou sua primeira tela com Beagle! 🎉 

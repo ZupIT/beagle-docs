@@ -52,7 +52,7 @@ Depois de adicionar o arquivo `payload.json` no seu projeto, crie uma pasta no c
 
 Feito isso, a sua estrutura deve estar parecida com a imagem a seguir:
 
-![](/docs-beagle/image%20%2863%29.png)
+![](/image%20%2863%29.png)
 
 Abra agora o arquivo criado`beagle-service.ts` e insira o código abaixo:
 
@@ -119,7 +119,7 @@ npm run start
 
 Depois de finalizar o comando, acesse: localhost:3000. Você deverá ver a tela a seguir:
 
-![](/docs-beagle/image%20%2895%29.png)
+![](/image%20%2895%29.png)
 
 {{% alert color="success" %}}
 Parabéns, você criou sua primeira tela com Beagle!

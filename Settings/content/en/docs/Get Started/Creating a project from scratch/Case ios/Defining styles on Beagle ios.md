@@ -174,7 +174,7 @@ On the backend's configuration tutorial, we created a server-driven page with 2 
 
 This page was like that when rendered on frontend:
 
-![](/docs-beagle/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)
+![](/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)
 
 To attribute a style to these texts, follow these instructions:
 

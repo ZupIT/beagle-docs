@@ -118,4 +118,4 @@ fun screen() = Screen(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/docs-beagle/comparison.png)
+![](/comparison.png)

@@ -93,7 +93,7 @@ Don't forget to add **`import Beagle`**.
 
 Now, run your application and, if everything works well, you will see a screen like this:
 
-![](/docs-beagle/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)
+![](/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)
 
 
 

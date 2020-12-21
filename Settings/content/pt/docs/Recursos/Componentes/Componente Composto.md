@@ -23,7 +23,7 @@ class MyScreenComponent : ComposeComponent {
 
 Se você tem, por exemplo, uma estrutura de componentes que se repete constantemente, como na imagem abaixo:
 
-![](/docs-beagle/captura-de-tela-2020-07-30-a-s-18.09.49-1-.png)
+![](/captura-de-tela-2020-07-30-a-s-18.09.49-1-.png)
 
 Neste caso, se você construir este layout utilizando o DSL, o código ficaria da seguinte forma:
 
