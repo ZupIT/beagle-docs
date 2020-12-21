@@ -6,3 +6,4 @@ Settings/static/playground
 Settings/resources/_gen/
 docs/
 .vscode/
+.DS_Store
