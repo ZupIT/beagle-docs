@@ -28,7 +28,7 @@ interface HttpClient {
 In the *execute* method, you can create the rules for your network layer, causing the beagle to recognize its rule.
 
 | **Attribute** | **Type** | **Definition** |
-| :--- | :--- | :---: | :--- |
+| :--- | :--- | :---: |
 | request | RequestData  | RequestData is the class for configuring http requests. |
 | onSuccess | (responseData: ResponseData) -> Unit | Higher-Order Functions responsible for the return of success |
 | onError | (responseData: ResponseData) -> Unit | Higher-Order Functions responsible for error return |
