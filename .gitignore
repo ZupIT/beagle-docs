@@ -2,7 +2,12 @@ node_modules/
 package-lock.json
 yarn.lock
 yarn-error.log
-static/playground
+Settings/static/playground
+Settings/resources/_gen/
 docs/
 .vscode/
+<<<<<<< HEAD
 .idea/
+=======
+.DS_Store
+>>>>>>> 46db99ace63adbd9357a99e87f3a4e9a1c833fb0
