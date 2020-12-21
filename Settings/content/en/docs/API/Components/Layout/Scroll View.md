@@ -74,7 +74,7 @@ It is an `ENUM`, the values are:
 
 ## How to use it?
 
-{{< tabs name="T131" >}}
+{{< tabs id="T131" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

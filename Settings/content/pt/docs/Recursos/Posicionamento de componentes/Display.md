@@ -31,7 +31,7 @@ Quando esse valor for definido permite que os elementos não sejam mostrado na t
 
 ### 
 
-{{< tabs name="T69" >}}
+{{< tabs id="T69" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin

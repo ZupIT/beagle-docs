@@ -26,7 +26,7 @@ Get to know more about [**Beagle context**](../../context/).
 
 See below an example of a text that is set by context and have an initial value "Set Context Example". The click event have a `SetContext` action that change the context value to "Context has changed".
 
-{{< tabs name="T110" >}}
+{{< tabs id="T110" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

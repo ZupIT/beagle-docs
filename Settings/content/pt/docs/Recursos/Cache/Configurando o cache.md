@@ -54,7 +54,7 @@ Cada plataforma tem especificidades para configurar o cache.
 
 Abaixo listamos a configuração por plataforma:
 
-{{< tabs name="T13" >}}
+{{< tabs id="T13" >}}
 {{% tab name="Android" %}}
 No Android, o cache é configurado quando implementamos as configurações iniciais do Beagle.
 

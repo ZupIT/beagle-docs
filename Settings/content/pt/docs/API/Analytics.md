@@ -18,7 +18,7 @@ Como a maioria dos projetos usam alguma forma de marcação/tags para agrupar da
 
 * Selecione uma opção de cofiguração: 
 
-{{< tabs name="T129" >}}
+{{< tabs id="T129" >}}
 {{% tab name="ANDROID " %}}
 Para que o Analytics funcione no seu projeto **Android**, você precisa adicionar uma classe que implemente a interface do Analytics. Anote essa classe com o @BeagleComponent. 
 
@@ -125,7 +125,7 @@ Para marcação do **click event** de um widget, foi adicionado o botão e o Tou
 
 Segue abaixo um exemplo de click event da marcação de um botão: 
 
-{{< tabs name="T130" >}}
+{{< tabs id="T130" >}}
 {{% tab name="BACKEND - BFF" %}}
 ```text
 {
@@ -175,7 +175,7 @@ Quando for marcar uma tela que aparece e desaparece, é preciso adicionar um com
 
 Segue abaixo um exemplo de evento de ScreenView com a tela marcada:
 
-{{< tabs name="T131" >}}
+{{< tabs id="T131" >}}
 {{% tab name="BACKEND - BFF" %}}
 ```kotlin
 {

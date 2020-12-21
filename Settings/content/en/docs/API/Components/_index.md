@@ -16,7 +16,7 @@ You can have other visual component as well, and you are able to create customiz
 
 Beagle has **21 components**, they are currently divided into **5 categories**:
 
-{{< tabs name="T114" >}}
+{{< tabs id="T114" >}}
 {{% tab name="Layout" %}}
 * [**Container**](https://docs.usebeagle.io/api/componentes/layout/container)
 * [**List View**](https://docs.usebeagle.io/api/componentes/layout/listview)

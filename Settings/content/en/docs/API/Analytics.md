@@ -19,7 +19,7 @@ It is necessary to configure all platforms that will be used. You can check the 
 
 * Select an option
 
-{{< tabs name="T111" >}}
+{{< tabs id="T111" >}}
 {{% tab name="ANDROID CONFIGURATION " %}}
 To make the Analytics feature work on your Android project you just need to add a Class that implements the Analytics interface and annotate this Class with the @BeagleComponent annotation:  
 
@@ -129,7 +129,7 @@ For tagging the click event of an Widget, it was added to the Button and Touchab
 
 See below a click event of a tagged Button example:
 
-{{< tabs name="T112" >}}
+{{< tabs id="T112" >}}
 {{% tab name="BACKEND - BFF" %}}
 ```text
 {
@@ -180,7 +180,7 @@ if you want to tag a screen appearing and disappearing, it is necessary to add a
 
 See below the ScreenView event example, with the tagged screen: 
 
-{{< tabs name="T113" >}}
+{{< tabs id="T113" >}}
 {{% tab name="BACKEND - BFF" %}}
 ```kotlin
 {

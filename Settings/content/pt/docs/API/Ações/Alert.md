@@ -63,7 +63,7 @@ A estrutura do Alert é:
 
 Abaixo segue um exemplo de um botão que ao clicado mostra um Alert:
 
-{{< tabs name="T107" >}}
+{{< tabs id="T107" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

@@ -20,7 +20,7 @@ description: You will find here the description of string manipulation operator
 
 This example, a screen has a text with the `substring` operation, which the sentence is '**The book is on the table'** and the parameters is **4,11** determine the threshold of this `substring`, which it will turn the following string '**book is on**': 
 
-{{< tabs name="T144" >}}
+{{< tabs id="T144" >}}
 {{% tab name="Kotlin" %}}
 ```kotlin
 fun screen() = Screen(child = 

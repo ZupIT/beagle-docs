@@ -72,7 +72,7 @@ See how the structure is represented:
 
 On the example below you will see a PageView that contains three pages where each one of them has a Text defined by the Context. Every time there is a change the context page is redefined: 
 
-{{< tabs name="T130" >}}
+{{< tabs id="T130" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

@@ -118,7 +118,7 @@ Agora que o componente esta criado e configurado, você deve testar o endpoint e
 
 Você deve receber o JSON abaixo:
 
-{{< tabs name="T96" >}}
+{{< tabs id="T96" >}}
 {{% tab name="JSON" %}}
 ```typescript
 {
@@ -156,7 +156,7 @@ Depois dos dois passos anteriores, o seu componente está pronto. Agora, você s
 
 Para essa configuração, siga as orientações específicas para cada plataforma:
 
-{{< tabs name="T97" >}}
+{{< tabs id="T97" >}}
 {{% tab name="Android" %}}
 Você deve utilizar o frame layout para "receber" o componente do BFF e, assim, exibi-lo em uma tela Android nativa.
 

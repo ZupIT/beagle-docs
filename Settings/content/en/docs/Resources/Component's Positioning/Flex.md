@@ -14,7 +14,7 @@ Thus, it takes the values ​​of all the child elements and makes the followin
 
 ![](/captura-de-tela-2020-06-05-a-s-16.53.38.png)
 
-{{< tabs name="T69" >}}
+{{< tabs id="T69" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
