@@ -12,7 +12,7 @@ To create an iOS project for Beagle, you will need a Macbook with Xcode installe
 
 Before you start, first it's necessary to create a project on `Xcode`. To do so, your just have to open the program and name a project. For this example, we'll call as **Beagle Sample.** 
 
-![](/docs-beagle/captura-de-tela-2020-04-08-a-s-10.35.19.png)
+![](/captura-de-tela-2020-04-08-a-s-10.35.19.png)
 
 After you created the project, we'll need to add the dependencies and, for that, we'll use `CocoaPods`' manager.
 
@@ -61,21 +61,21 @@ Open the terminal again and type the _`pod install`_ command so your dependencie
 pod install
 ```
 
-After the installation, you should open a file with a**`workspace.`** extension. For this example, we'll name it as`Beagle Sample.workspace`
+After the installation, you should open a file with a **`workspace.`** extension. For this example, we'll name it as`Beagle Sample.workspace`
 
-![](/docs-beagle/captura-de-tela-2020-04-08-a-s-10.23.09.png)
+![](/captura-de-tela-2020-04-08-a-s-10.23.09.png)
 
 ### Step 2: Configure Beagle
 
 Now that your project was created, you must make **Beagle's configuration**. To do so, follow the steps below: 
 
-1. Create a class called`BeagleConfig` . 
+1. Create a class called `BeagleConfig` . 
 
 This class will be responsible to contain part of Beagle's initial configuration. On her, we'll implement a **`config`** static function to apply these configurations.
 
-    2. On this function, create a constant called **`dependency`** that must be**`BeagleDependencies`**type. 
+2. On this function, create a constant called **`dependency`** that must be **`BeagleDependencies`** type. 
 
-We'll attribute to this constant some project's configurations like, for example, the list of basis URL that lists the JSON that will be used to build the the server-driven screen. To configure this constant, use the example below:
+We'll attribute to this constant some project's configurations like, for example, the list of basis URL that lists the `JSON` that will be used to build the the server-driven screen. To configure this constant, use the example below:
 
 
 ```swift
@@ -95,9 +95,9 @@ class BeagleConfig {
 ```
 
 
-Now, we'll configure the**`SceneDelegate`** class so it can be used to initialize our application with Beagle from a screen through [**BFF**:](../../../../../../key-concepts#backend-for-frontend)
+Now, we'll configure the **`SceneDelegate`** class so it can be used to initialize our application with Beagle from a screen through [**BFF**:](../../../../../../key-concepts#backend-for-frontend)
 
-* Create a**`beagleScreen`** constant, that will receive the server-driven screen. 
+* Create a **`beagleScreen`** constant, that will receive the server-driven screen. 
 * The `init URL` argument must contain the [**relative URL**](../../../../../resources/urls#caminho-relativo) address that will be created on backend \(BFF\). For this example, we'll call it  "/screen"
 
 Follow the example below: 
@@ -110,7 +110,7 @@ window?.rootViewController = beagleScreen
 window?.makeKeyAndVisible()
 ```
 
-At the end of this process, the**`SceneDelegate`** class should be like this:
+At the end of this process, the **`SceneDelegate`** class should be like this:
 
 ![](https://lh5.googleusercontent.com/JcpliGK0G3QJyLlZIDcwD8X7TZfO7QKEjCcVmWNjX0NHoS8gHl8XOZrSg6dfVntZkusNGmJxRWTa3Ps_xrhCQsIQPOzsFZ375uLqDx1qvuWJWeOnlnQkQy8EkcvMuWhJ6KU8tF-r)
 
@@ -133,11 +133,11 @@ _**`Application Session Role` &gt;
 
 On the GIF below, you can see better how to remove these references:
 
-![](/docs-beagle/main%20%282%29.gif)
+![](/main%20%282%29.gif)
 
 Well done, now Beagle is configured for your iOS application! All you have to do is [**set up a backend**](../../case-backend) to answer to your server-driven applications's requests.
 
 Once you finished the configuration, start your application and you'll have your first server-driven screen!  
 You will see this screen: 
 
-![](/docs-beagle/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)
+![](/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)

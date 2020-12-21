@@ -106,7 +106,7 @@ Você pode criar o Design System agora, mas neste momento é possível prossegui
 
 Agora você deve inicializar sua `Application` para que o Beagle gere os outros arquivos de configuração que necessita. Ao ser iniciado pela primeira vez o Beagle irá criar automaticamente uma classe de  `BeagleSetup` class, como mostra a figura abaixo:
 
-![BeagleSetup file](/docs-beagle/beaglesetup.png)
+![BeagleSetup file](/beaglesetup.png)
 
 ### **Passo 6: Criar a classe Application** 
 
@@ -557,7 +557,7 @@ A função acima cria a estrutura JSON abaixo, que vai ser interpretada pelo Bea
 7. Clique em **`Run app`** e cheque a tela do emulador!  
 Você verá a tela a seguir:
 
-![](/docs-beagle/captura-de-tela-2020-06-22-a-s-11.41.12.png)
+![](/captura-de-tela-2020-06-22-a-s-11.41.12.png)
 
 {{% alert color="success" %}}
 Parabéns, você criou sua primeira tela com Beagle!

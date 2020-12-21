@@ -58,4 +58,4 @@ fun screen() = Screen(child =
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/docs-beagle/string.png)
+![](/string.png)

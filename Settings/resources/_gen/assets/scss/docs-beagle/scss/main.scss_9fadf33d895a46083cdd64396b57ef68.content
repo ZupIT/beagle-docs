@@ -1,6 +1,8 @@
 /*
 
-Add styles or override variables from the theme here.
+Nothing defined here. The Hugo project that uses this theme can override theme variables by adding a file to:
+
+assets/scss/_variables_project.scss
 
 */
 /*
@@ -13544,7 +13546,7 @@ readers do not read off random characters that represent icons */
     color: #0c3455;
     text-decoration: none; }
   .td-sidebar-nav a.active {
-    font-weight: 700; }
+    font-weight: 900; }
   .td-sidebar-nav .dropdown a {
     color: #495057; }
   .td-sidebar-nav .dropdown .nav-link {
@@ -13950,7 +13952,21 @@ pre {
   color: #000 !important;
   background: transparent; }
 
-.nav-tabs > li.active > a {
-  background: #8dc63f; }
+.alert-warning {
+  border-color: #f7941e; }
+
+.alert-info {
+  border-color: #0c3455; }
+
+.alert-success {
+  border-color: #8dc63f; }
+
+.td-sidebar-nav__section-title {
+  font-weight: unset; }
+
+.section-index h5 a {
+  text-decoration: underline; }
+  .section-index h5 a:hover {
+    opacity: 0.8; }
 
 /*# sourceMappingURL=main.css.map */

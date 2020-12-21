@@ -61,4 +61,4 @@ fun screen() = Screen(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/docs-beagle/logic.png)
+![](/logic.png)

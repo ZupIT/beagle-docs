@@ -91,4 +91,4 @@ fun screen() = Screen(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/docs-beagle/operadoresaritmeticos%20%281%29.gif)
+![](/operadoresaritmeticos%20%281%29.gif)
