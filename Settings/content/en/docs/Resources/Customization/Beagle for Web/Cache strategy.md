@@ -27,7 +27,7 @@ On the web, the cache data are stored in the browser.
 
 ## Types of strategies 
 
-You have two strategy possibilities on Beagle: the ones that are compatible with the cache protocol and the others that are independent. You will see next how each works: 
+You have **two strategy** possibilities on Beagle: the ones that are compatible with the cache protocol and the others that are independent. You will see next how each works: 
 
 ## Compatible strategies
 
@@ -98,7 +98,7 @@ To change the cache strategy, you have to use the `strategy` parameter with the 
 
 On the configs below, you will find an example on how to alter the strategy to `network-only`:
 
-{{< tabs name="T76" >}}
+{{< tabs name="T79" >}}
 {{% tab name="Angular" %}}
 ```text
 @BeagleModule({
@@ -113,6 +113,16 @@ On the configs below, you will find an example on how to alter the strategy to `
   strategy: 'network-only'
 })
 export class Beagle { }
+```
+{{% /tab %}}
+
+{{% tab name="React" %}}
+```text
+export default createBeagleUIService({
+  baseUrl: "",
+  components: {},
+  strategy: 'network-only'
+})
 ```
 {{% /tab %}}
 {{< /tabs >}}

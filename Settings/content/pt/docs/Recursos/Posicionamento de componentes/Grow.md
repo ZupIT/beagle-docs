@@ -10,7 +10,7 @@ description: >-
 
 ## Grow
 
-Esta propriedade define a proporção que um item deve crescer, quando necessário. Seu valor é 0, por padrão e o que indica que o item não deve crescer. Esse atributo aceita apenas valores numéricos `Double`positivo.
+Esta propriedade define a proporção que um item deve crescer, quando necessário. Seu valor é 0, por padrão e o que indica que o item não deve crescer. Esse atributo aceita apenas valores numéricos `Double` positivo.
 
 ### **Exemplo 1**
 

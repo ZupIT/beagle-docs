@@ -5,7 +5,7 @@ weight: 151
 
 ---
 
-#### Added in Beagle 1.0.0
+#### Introduction
 
 Beagle uses the unified log system recommend by Apple, to provide different log messages in critical stages of a server driven flow. 
 
@@ -51,7 +51,7 @@ Follow the steps below to filter the log messages:
 
 **Step 7:** the body of the response contains the server-driven screen and all its attributes and specifications can be accessed. 
 
-## Instructions to replace the Logs API 
+## Customization
 
 In order to let Beagle's environment open to modifications, the API logs pattern can be replaced to any other. Follow th next steps to make the API's logs replacement: 
 

@@ -1,14 +1,14 @@
 ---
-title: Composedcomponent
+title: Composed component
 weight: 91
-description: ComposedComponent description and use
+description: Composed Component description and use
 ---
 
 ---
 
 #### Availability: Beagle1.0+
 
-`ComposedComponent` helps with organization,  maintenance and code reuse. 
+`ComposedComponent` helps with organization,  maintenance and code reuse. It doesn't have its own functionality, it is a backend exclusive.
 
 ```kotlin
 class MyScreenComponent : ComposeComponent {
@@ -75,7 +75,7 @@ Screen(
 
 As you can see, there is code repetition, to solve this problem you can use `ComposedComponent`.  See below how it's possible: 
 
-Encapsulate this code in this single component like this: 
+1. Encapsulate this code in this single component like this: 
 
 ```kotlin
 class MyComposeComponent(
@@ -106,7 +106,7 @@ class MyComposeComponent(
 }
 ```
 
-Now you can use it this way: 
+2. Now you can use it this way: 
 
 ```kotlin
 Screen(

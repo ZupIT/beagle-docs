@@ -137,7 +137,7 @@ The elements' components can now receive the class defined on JSON.
 {{< /tabs >}}
 
 {{% alert color="info" %}}
-It's worth reinforcing that to define a class with`styleId` class added, it's fundamental that you have a **style file** inside your project \(Ex: CSS, SASS, LESS\). 
+Remember that to define a class with `styleId` class added, it's fundamental that you have a **style file** inside your project \(Ex: CSS, SASS, LESS\). 
 {{% /alert %}}
 
 ## Stylizing components through JSON

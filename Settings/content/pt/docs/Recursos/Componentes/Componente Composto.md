@@ -104,7 +104,7 @@ class MyComposeComponent(
 }
 ```
 
-       2. Agora você pode usá-lo assim:
+  2. Agora você pode usá-lo assim:
 
 ```kotlin
 Screen(

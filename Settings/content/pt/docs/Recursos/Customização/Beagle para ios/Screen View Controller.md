@@ -63,7 +63,7 @@ Nesse exemplo, o `BeagleScreenViewModel` foi instanciado com um screenType do ti
   
 O segundo `BeagleScreenViewModel` foi instanciado com um screenType do tipo remote onde passa a URL  absoluta e um fallback de uma tela no modo declarativo.
 
-## Estados da tela
+### Estados da tela
 
 Para acompanhar o estado da tela temos o `enum` state:
 
@@ -100,7 +100,7 @@ public protocol BeagleScreenDelegate : AnyObject {
 }
 ```
 
-## Exemplo para implementar o protocolo `BeagleScreenDelegate`:
+### Exemplo para implementar o protocolo `BeagleScreenDelegate`:
 
 ```swift
 //1

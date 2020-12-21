@@ -8,22 +8,22 @@ description: Here you'll find Position description and its proprieties details.
 
 ## Position
 
-This property defines an elements position on screen and its values are: **`top, right, bottom,left`** 
+This property defines an elements position on screen and its values are: **`top, right, bottom,left`**. They behave according to the `Position Type` of this element. 
 
-They behave according to the `Position Type` \(defined after this one \) of this element. The element inside the Position can have 2 types of positioning 
+The element inside the Position can have 2 types of positioning 
 
-1. **`Relative`**: Elements move in a specific direction respecting each other bondaries.
+1. **`Relative`**: Elements move in a specific direction respecting each other boundaries.
 2. **`Absolute`**: The elements move in the same direction defined by the parent element.
 
 {{% alert color="info" %}}
-`It will be more clear when we address this property ahead.` 
+**It will be more clear when we address this property ahead.**
 {{% /alert %}}
 
 ## **Propriedades** 
 
 ### **All**  
 
-It sets the same value for all positions: 
+It sets the **same value**  for all positions: 
 
 ![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.24.08.png)
 
@@ -86,7 +86,7 @@ private fun screen() :Widget{
 
 ### **Bottom** 
 
-It sets a spacing at the bottom of an element:
+It sets a spacing **at the bottom**  of an element:
 
 ![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.26.34.png)
 
@@ -149,7 +149,7 @@ private fun screen() :Widget{
 
 ### **Left**
 
-It defines a spacing on the left side of an element: 
+It defines a **spacing on the left** side of an element: 
 
 ![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.29.41.png)
 
@@ -212,7 +212,7 @@ private fun screen() :Widget{
 
 ### **Right**
 
-It defines a spacing on the right side of an element:
+It defines a spacing **on the right side**  of an element:
 
 ![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.33.00.png)
 
@@ -275,7 +275,7 @@ private fun screen() :Widget{
 
 ### **Top** 
 
-It defines a spacing on the top of an element:
+It defines a **spacing on the top**  of an element:
 
 ![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.34.21.png)
 
@@ -338,7 +338,7 @@ private func screen() -> Screen {
 
 ### **Horizontal**
 
-It defines horizontal spacing at an element: 
+It defines **horizontal spacing**  at an element: 
 
 ![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.36.55.png)
 
@@ -401,7 +401,7 @@ private func screen() -> Screen {
 
 ### **Vertical**
 
-It defines vertical spacing at an element: 
+It defines **vertical spacing**  at an element: 
 
 ![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.39.22.png)
 
@@ -462,4 +462,4 @@ private fun screen() :Widget{
 {{% /tab %}}
 {{< /tabs >}}
 
-For more information about  Position, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/)
+**For more information about  Position, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/).** 

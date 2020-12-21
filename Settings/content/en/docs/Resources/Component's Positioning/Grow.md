@@ -8,7 +8,7 @@ description: This section lists information about the Grow property
 
 ## Grow
 
-This property defines the proportion that an item should grow when necessary. Its value is 0 by default and that indicates that the item should not grow. This attribute accepts only Double positive values
+This property defines the proportion that an item should grow when necessary. Its value is 0 by default and that indicates that the item should not grow. This attribute accepts only  `Double` positive values.
 
 ### **Example 1**
 
@@ -112,4 +112,4 @@ private func screen() -> Screen {
 {{% /tab %}}
 {{< /tabs >}}
 
-For more information about Grow, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/).
+**For more information about Grow, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/).**

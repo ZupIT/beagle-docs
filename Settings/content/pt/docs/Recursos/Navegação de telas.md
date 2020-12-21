@@ -65,3 +65,22 @@ Button(
 ## Tipos de navegação
 
 Nas páginas a seguir, você confere mais detalhes de cada tipo de navegação do Beagle:
+
+[**OpenNativeRoute**](../../api/navigate/openexternalurl)
+
+[**OpenExternalURL**](../../api/navigate/openexternalurl)
+
+[**PushStack**](../../api/navigate/pushstack)
+
+[**PushView**](../../api/navigate/pushview
+)
+
+[**PopStack**](../../api/navigate/popstack)
+
+[**PopView**](../../api/navigate/popview)
+
+[**PopToView**](../../api/navigate/poptoview)
+
+[**ResetApplication**](../../api/navigate/resetapplication)
+
+[**ResetStack**](../../api/navigate/resetstack)

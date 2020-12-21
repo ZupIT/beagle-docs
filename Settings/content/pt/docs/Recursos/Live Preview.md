@@ -17,14 +17,14 @@ Em outras palavras, o Live Preview dá a opção de editar um código que define
 Desta forma, é possível visualizar as mudanças sem precisar subir um servidor backend.
 
 {{% alert color="info" %}}
-Esta conexão entre frontend e backend é feita via `WebSocket` utilizando a porta :`9721`
+Esta conexão entre frontend e backend é feita via `WebSocket` utilizando a porta: `9721`
 {{% /alert %}}
 
 ## Requisitos
 
 Para usar o `Live Preview` você deve: 
 
-* Usar o [**Beagle SDK**](../../../get-started/instalando-o-beagle/backend) em seu BFF**;**
+* Usar o [**Beagle SDK**](../../../get-started/instalando-o-beagle/backend) em seu BFF **;**
 * Instalar o `BeaglePreview` plugin;
 
 ### Configuração do BFF
@@ -33,9 +33,7 @@ Você precisa que seu BFF esteja configurado com o Beagle para utilizar o Live P
 
 ### Instalação **do plugin IntelliJ**
 
-Para instalar o `BeaglePreview` entre no link abaixo e clique na opção instalar na IDE:
-
-{% embed url="https://plugins.jetbrains.com/plugin/14575-beagle-sdk-live-preview" caption="Plugin do Live Preview para IntelliJ" %}}
+Para instalar o `BeaglePreview`, [*veja o Live Preview plugin para IntelliJ*](https://plugins.jetbrains.com/plugin/14575-beagle-sdk-live-preview") e clique na opção instalar na IDE.
 
 ## Uso do Live Preview
 

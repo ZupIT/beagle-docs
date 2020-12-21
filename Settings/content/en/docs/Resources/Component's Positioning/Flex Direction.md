@@ -168,7 +168,7 @@ private func screen() -> Screen {
 
 ### **Column Reverse**
 
-Items are organized from bottom to top:
+Items are organized in columns and they are positioned from bottom to top:
 
 ![](https://lh5.googleusercontent.com/qXQqn6W3I5PhtU0PSHkXQbwNtvybgtNTQtAGvNf5zNwA0LwMtTkrI3ZUPqRYfQeTjPzANi58cCfpbLEfs5ChiGi1TXqDkp6PmgbedVmWgrSICCdVpINqyCnOGdcz9Dp6Ott1SOnY)
 
@@ -216,4 +216,4 @@ private func screen() -> Screen {
 {{% /tab %}}
 {{< /tabs >}}
 
-For more information about PositionType, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/)
+**For more information about PositionType, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/)**
