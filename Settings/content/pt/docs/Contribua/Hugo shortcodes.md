@@ -73,7 +73,7 @@ Os alertas são usados para destacar alguma informação importante ao seguir al
 - danger - color - red
 {{% /alert %}}
 
-### **Videos**
+### **Vídeos**
 
 Você pode embutir videos do youtube diretamente na documentação. Ideal para complementar aquele conteúdo de tutorial, ou divulgação. Para isso, use o ID do video localizado em sua url, ex:  
 
@@ -135,4 +135,4 @@ As tabs são úteis para exemplificar códigos fonte que podem ser feitos em dif
 
 ---
 
-Se você quer se aprofundar mais sobre as shortcodes, recomendamos que acesse a [documentação oficial](https://gohugo.io/content-management/shortcodes/) do hugo e saiba mais sobre como criar shortcodes customizadas.
+> Se você quer se aprofundar mais sobre as shortcodes, recomendamos que acesse a [**documentação oficial**](https://gohugo.io/content-management/shortcodes/) do Hugo e saiba mais sobre como criar shortcodes customizadas.
