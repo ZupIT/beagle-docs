@@ -21,11 +21,9 @@ jobs:
 
       - name: npm install
         run: npm install
-        working-directory: Settings
 
       - name: Build
         run: npm run build
-        working-directory: Settings
               
       - uses: jakejarvis/s3-sync-action@master
         with:
