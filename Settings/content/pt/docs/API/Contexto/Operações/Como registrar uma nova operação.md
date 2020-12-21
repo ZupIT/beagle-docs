@@ -108,4 +108,4 @@ fun screen() = Screen(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/docs-beagle/customoperation.gif)
+![](/customoperation.gif)

@@ -16,7 +16,7 @@ Permite que o item sobrescreva o comportamento definido pela propriedade align-i
 O **align self** é aplicado em cada componente e não no container.
 {{% /alert %}}
 
-![](/docs-beagle/captura-de-tela-2020-06-04-a-s-11.23.38.png)
+![](/captura-de-tela-2020-06-04-a-s-11.23.38.png)
 
 Cada um dos números acima representa um atributo: 
 

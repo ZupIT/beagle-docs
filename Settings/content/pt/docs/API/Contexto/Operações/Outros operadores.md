@@ -60,4 +60,4 @@ fun screen() = Screen(child =
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/docs-beagle/others.png)
+![](/others.png)

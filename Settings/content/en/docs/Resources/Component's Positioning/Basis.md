@@ -19,7 +19,7 @@ This property defines the standard size of an item along the main axis. It could
 
 Here the **`flexDirection: row`** is used to set the screen `width` size:
 
-![](/docs-beagle/captura-de-tela-2020-06-04-a-s-15.48.12.png)
+![](/captura-de-tela-2020-06-04-a-s-15.48.12.png)
 
 {{< tabs name="T63" >}}
 {{% tab name="Kotlin" %}}
@@ -86,7 +86,7 @@ private func screen() -> Screen {
 
 Here the **`flexDirection: column`** is used to set the screen `height` size
 
-![](/docs-beagle/captura-de-tela-2020-06-04-a-s-16.01.56.png)
+![](/captura-de-tela-2020-06-04-a-s-16.01.56.png)
 
 {{< tabs name="T64" >}}
 {{% tab name="Kotlin" %}}
@@ -184,7 +184,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 {{< /tabs >}}
 
-![Basis with UnitType.AUTO and FlexDirection.ROW](/docs-beagle/captura-de-tela-2020-06-04-a-s-15.48.12%20%281%29.png)
+![Basis with UnitType.AUTO and FlexDirection.ROW](/captura-de-tela-2020-06-04-a-s-15.48.12%20%281%29.png)
 
 {{% alert color="info" %}}
 For more information about Basis, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/).
