@@ -2,6 +2,7 @@ node_modules/
 package-lock.json
 yarn.lock
 yarn-error.log
-static/playground
+Settings/static/playground
+Settings/resources/_gen/
 docs/
 .vscode/
