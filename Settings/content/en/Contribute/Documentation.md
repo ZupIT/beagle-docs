@@ -22,7 +22,7 @@ We use the tool [**Hugo**](https://gohugo.io/documentation/) to create static si
 {{% alert color="warning" %}}
 
 - Write clear and meaningful GIT messages.
-- For your Pull Requests to be accepted, you need follow [**contribution guidelines**](https://github.com/ZupIT/beagle/blob/master/CONTRIBUTING.md)
+- Your need to follow the [**contribution guidelines**](https://github.com/ZupIT/beagle/blob/master/CONTRIBUTING.md) to have your pull requests considered
 - Make sure to include Github Special Keywords that reference the issue and automatically close it when the PR is dipped.
 - When you make a small change in a PR, such as correcting a typo, any change in style or grammar, be sure to squash your commits so as not to get a large number of commits for a relatively small change.
 - Be sure to include a good description of PR explaining changes to the code, the reason for changing a code snippet and ensuring that there is enough information for the reviewer to understand your PR.
