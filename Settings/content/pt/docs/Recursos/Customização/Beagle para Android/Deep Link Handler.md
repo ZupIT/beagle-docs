@@ -27,7 +27,7 @@ class AppDeepLinkHandler : DeepLinkHandler {
         path: String,
         data: Map<String, String>?,
         shouldResetApplication: Boolean
-    ): Intent = Intent(path)
+    ) = Intent(path)
 }
 ```
 
