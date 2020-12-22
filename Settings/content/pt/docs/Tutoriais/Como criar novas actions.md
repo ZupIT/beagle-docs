@@ -11,9 +11,9 @@ No Beagle, é possível criar uma [**ação**](../../../api/acoes/) customizada 
 
 Cada plataforma possui sua forma especificia de fazer essa implementação no frontend. Você pode ver exemplos abaixo de como fazer em cada uma delas: 
 
-{{< tabs name="T92" >}}
+{{< tabs id="T92" >}}
 {{% tab name="Android" %}}
-1. Crie uma classe anotada com `@RegisterAction` que implementa uma interface `Action`. Essa interface irá requistar a implementação do método `execute` e você irá declarar o resultudo da `action`.
+1. Crie uma classe anotada com `@RegisterAction` que implementa uma interface `Action`. Essa interface irá requisitar a implementação do método `execute` e você irá declarar o resultado da `action`.
 2. O atributo `msg` listado, é o único exemplo de parâmetro que deve ser declarado na classe construtora. 
 
 O exemplo abaixo mostra um ação com **Toast**: 
@@ -144,7 +144,7 @@ val msg: String? = null
 
 Veja abaixo um exemplo de uma Ação em um componente do tipo Button:
 
-{{< tabs name="T93" >}}
+{{< tabs id="T93" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

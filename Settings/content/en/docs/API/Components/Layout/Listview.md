@@ -80,9 +80,9 @@ Default value is ListDirection.VERTICAL
 
 ### ListView
 
-{{< tabs name="T128" >}}
+{{< tabs id="T128" >}}
 {{% tab name="JSON" %}}
-```text
+<!-- json-playground:listView.json
 {
   "_beagleComponent_": "beagle:listView",
   "direction": "VERTICAL",
@@ -150,7 +150,8 @@ Default value is ListDirection.VERTICAL
     ]
   }
 }
-```
+-->
+{{% playground file="listView.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -201,13 +202,11 @@ ListView(
 {{% /tab %}}
 {{< /tabs >}}
 
-### 👉 [Test the ListView in the Web Playground](https://beagle-playground-beta.netlify.app/#/demo/listview/1.local.json)​
-
 ### Deprecated ListView
 
-{{< tabs name="T129" >}}
+{{< tabs id="T129" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:listViewDepreciado.json
 {
   "_beagleComponent_": "beagle:listView",
   "children": [
@@ -232,7 +231,8 @@ ListView(
   ],
   "direction": "HORIZONTAL"
 }
-```
+-->
+{{% playground file="listViewDepreciado.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -260,5 +260,3 @@ ListView(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Test the Deprecated ListView in the Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/listview.json)​

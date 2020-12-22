@@ -72,7 +72,7 @@ Aqui, o exemplo é de uma tela que utiliza a operação de comparação **lt**, 
 * Se o resultado da condição do `or` for verdadeira, o texto do componente `Text` se torna **true;**
 * Caso falso ele atribui ao texto o valor de **false.**
 
-{{< tabs name="T161" >}}
+{{< tabs id="T161" >}}
 {{% tab name="Kotlin" %}}
 ```kotlin
 fun screen() = Screen(

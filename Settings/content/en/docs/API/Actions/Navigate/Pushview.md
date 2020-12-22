@@ -22,9 +22,9 @@ On the example below, there is a screen coming from BFF with a button when click
 
 To test is, you need a endpoint to return with the code below from your BFF and call it in the frontend. You can pass a local route \(that it will pass a screen in the route\) or remote route that will pass the endpoint of the screen which it will navigate. 
 
-{{< tabs name="T95" >}}
+{{< tabs id="T95" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:pushView.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -44,7 +44,8 @@ To test is, you need a endpoint to return with the code below from your BFF and 
     } ]
   }
 }
-```
+-->
+{{% playground file="pushView.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -66,5 +67,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Test this example on Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

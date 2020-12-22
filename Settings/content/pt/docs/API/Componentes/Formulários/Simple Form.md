@@ -39,9 +39,9 @@ Essa função é parte do componente Text Input e observa as modificações feit
 
 Veja abaixo como implementamos o nosso `SimpleForm`
 
-{{< tabs name="T150" >}}
+{{< tabs id="T150" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:simpleform.json
 {
   "_beagleComponent_":"beagle:simpleForm",
   "context":{
@@ -79,7 +79,8 @@ Veja abaixo como implementamos o nosso `SimpleForm`
     }
   ]
 }
-```
+-->
+{{% playground file="simpleform.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -117,5 +118,3 @@ SimpleForm(
 Para submeter um formulário é preciso utilizar a ação SubmitForm e para chama-la basta somente implementa-la em um [Botão](../../../ui/button) que seja parte do SimpleForm, ou seja, que esteja em sua lista de filhos.
 
 Ao clicar nesse botão, o onSubmit é ativados e a lista de ações será executada. É essa lista de ações que definirá o que deve acontecer com as informações so formulario, se serão enviadas para um backend \(através da ação [sendRequest](../../../acoes/sendrequest)\), etc
-
-### 👉 [Teste esse componente no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/simpleform.json)

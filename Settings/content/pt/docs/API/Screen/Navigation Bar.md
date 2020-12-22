@@ -34,7 +34,7 @@ Classe que define o item da `NavigationBar` que é composto por:
 
 Para usar uma `NavigationBar` é necessário declarar dentro de uma `Screen`. Segue um exemplo abaixo: 
 
-{{< tabs name="T175" >}}
+{{< tabs id="T175" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

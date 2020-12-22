@@ -38,7 +38,7 @@ If you don't declare the title and the icon on the TabItem, the empty space will
 
 ## How to use it?
 
-{{< tabs name="T121" >}}
+{{< tabs id="T121" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

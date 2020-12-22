@@ -12,7 +12,7 @@ A biblioteca do Beagle já possui por padrão um componente que é chamado quand
 
 Para criar um componente loading, siga os passos abaixo: 
 
-{{< tabs name="T74" >}}
+{{< tabs id="T74" >}}
 {{% tab name="React" %}}
 No React:
 
@@ -122,7 +122,7 @@ Para este componente a biblioteca expõe uma interface chamada `ErrorComponentPa
 
 Usando essa interface você pode criar o componente, veja o exemplo de acordo com cada framework:
 
-{{< tabs name="T75" >}}
+{{< tabs id="T75" >}}
 {{% tab name="React" %}}
 No React, é preciso criar um `Functional Component` que usa a interface `ErrorComponentParams`, note que ao usá-la você tem acesso à duas `props` errors e retry, que são respectivamente a lista de erros e o método `retry` ambos descritos na interface:
 

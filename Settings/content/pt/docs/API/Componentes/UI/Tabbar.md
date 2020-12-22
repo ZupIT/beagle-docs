@@ -46,7 +46,7 @@ Já o **Contexto** é utilizado para guardar o indicador \(posição\) da aba se
 
 ### Exemplo
 
-{{< tabs name="T138" >}}
+{{< tabs id="T138" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

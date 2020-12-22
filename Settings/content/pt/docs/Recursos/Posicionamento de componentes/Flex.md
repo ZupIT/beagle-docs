@@ -16,7 +16,7 @@ Para isso, o Flex estabelece os valores aplicados na propriedade de cada filho. 
 
 ![](/captura-de-tela-2020-06-05-a-s-16.53.38.png)
 
-{{< tabs name="T70" >}}
+{{< tabs id="T70" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -61,3 +61,5 @@ private fun screen() :Widget{
 ```
 {{% /tab %}}
 {{< /tabs >}}
+
+**Para saber mais sobre Flex, acesse a documentação do [**Yoga Layout**](https://yogalayout.com/docs/flex/).**

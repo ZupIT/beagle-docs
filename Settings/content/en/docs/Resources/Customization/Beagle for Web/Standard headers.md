@@ -15,7 +15,7 @@ By pattern, these headers are always sent, however it can be disabled by the `us
 
 See below the examples on how to disable the headers request on the Angular and React's configs.
 
-{{< tabs name="T77" >}}
+{{< tabs id="T77" >}}
 {{% tab name="Angular" %}}
 ```text
 @BeagleModule({

@@ -5,7 +5,6 @@ weight: 157
 
 ---
 
-#### Added in Beagle 1.0.0
 
 ## Introduction 
 
@@ -105,7 +104,7 @@ This protocol run the requests from the executeRequest function, it receives two
 
 Besides that, the function can return the **RequestToken,** in order to make the request be able to be canceled internally by Beagle.
 
-### **Step 2:**  assign the dependencies 
+### **Step 2:  assign the dependencies**
 
 OnAppDelegate or on Beagle's environment, assing the instance `CustomNetworkClient`  to the `networkClient` attribute that it is on Beagle Dependencies:
 

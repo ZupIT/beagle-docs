@@ -32,7 +32,7 @@ Cada um dos números acima representa um atributo:
 
 **6 = baseline:** O item é alinhado a partir da base da primeira linha de texto dos demais.
 
-{{< tabs name="T37" >}}
+{{< tabs id="T37" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin

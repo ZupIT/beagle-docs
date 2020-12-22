@@ -1,14 +1,14 @@
 ---
 title: Padding
 weight: 72
-description: This section lists information about the Padding property
+description: This section lists information about the Padding property.
 ---
 
 ---
 
 ## Padding
 
-This property allows spacing inside an element. Within Padding, you will also find the following atributes: 
+This property allows apply spacing inside a father element. This way, all child element that it is created after this configuration will come with a predefined spacing. Within Padding, you will also find the following atributes: 
 
 **`all, bottom, end, horizontal, left, right, start, top, vertical`**
 
@@ -16,11 +16,11 @@ This property allows spacing inside an element. Within Padding, you will also fi
 
 ### **All** 
 
-Defines some space inside the element in all directions:
+It defines some space inside the element in **all directions:**
 
 ![](https://lh3.googleusercontent.com/FxInQGx8ULbtU-8T2DyA4chfGeSsDzKFcJU53x_YgqiAidcWeHW3T8F57eH-KO93Ey4M5C6pDQBdzHzAFOH6WPf_wc_V7Pz-6YFCIdQIYFafRkGFxzo5ovLFLBvo3m_vsqyL7-FA)
 
-{{< tabs name="T47" >}}
+{{< tabs id="T47" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -79,11 +79,11 @@ private func screen() -> Screen {
 
 ### **Bottom**
 
-Defines some space at the bottom inside a element: 
+It defines some **space at the bottom** inside a element: 
 
 ![](https://lh5.googleusercontent.com/87SVnxloImzR124uvIBVCvySGs9LmVE6c2ePhjxj2srEhff9PpH5nycrptFfMtdNPl91EzpROd70KApRj-bFqSZXQPGD7C7AzEtO25kya9jjTZpjm7vX6qRLfoi7wja7_zaE6RkD)
 
-{{< tabs name="T48" >}}
+{{< tabs id="T48" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -140,11 +140,11 @@ private func screen() -> Screen {
 
 ### **Left**
 
-Defines some space inside the element, at the left side:
+It defines some space inside at the **left side** of the element:
 
 ![](https://lh5.googleusercontent.com/yr5Z48bCWZP92q69ugJ8NBoESjLB_kCCPHb2VxdaXzjR9HgN4gcK88PRVvDqqTY9a07E0hkM2oaIgn7f-HwviGMwPX66nyYq8q5oq6FRIqifRDgxB4QXX2L7JKwVx3nfYZbDtR2a)
 
-{{< tabs name="T49" >}}
+{{< tabs id="T49" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -201,11 +201,11 @@ private func screen() -> Screen {
 
 ### **Right**
 
-Defines some space inside the element, at the right side:
+It defines some space inside the element, at the **right side**:
 
 ![](https://lh5.googleusercontent.com/4TiOkl3HxqkZNLJBlgf5L0sV7q1i9hJCck-2AwsDdDzpntZphAxHkfnsNRAwLissOTFxCIY5vvEuRAE9-_4ZrE0oL9cD_4KiEigWzLcW4hSTW02ECqm3c47mU5oWK7gTXhXwDT7R)
 
-{{< tabs name="T50" >}}
+{{< tabs id="T50" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -264,11 +264,11 @@ private func screen() -> Screen {
 
 ### **Top**
 
-Defines some space inside the element, at the top:
+It defines some space inside the element, at **the top**:
 
 ![](https://lh3.googleusercontent.com/NpgSjgVwSjvXjeDz9H3lp6prnTGEOkot_39nx0gYPZa-KXz-YPOKgzZG87V1TS9HYgEDqJtCgmQkXEQpC1dCqQrWDn3wcqWN3HgNK5EPGyCife44lvOUlbgFJ-WhYNFJf4O7K)
 
-{{< tabs name="T51" >}}
+{{< tabs id="T51" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -325,11 +325,11 @@ private func screen() -> Screen {
 
 ### **Horizontal**
 
-Defines some horizontal space inside the element:
+It defines some horizontal space inside the element:
 
 ![](https://lh6.googleusercontent.com/k6Zaf_F6U2-4KeA1Lxwel6ifIRsQOP-I3QbNbNKZx5n1A7J3Ds2IdqP9g9UaGC0XmeAGSDtXAi22EKuHZXLe9usAlxr_VzKmLEjeAK9yLYcsTS2nOWuoPkuNBfEiIT-sSr-InYfw)
 
-{{< tabs name="T52" >}}
+{{< tabs id="T52" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -386,11 +386,11 @@ Defines some horizontal space inside the element:
 
 ### **Vertical**
 
-Defines some vertical space inside the element: 
+It defines some vertical space inside the element: 
 
 ![](https://lh3.googleusercontent.com/TnL2tMQSIYK8cp3bDJkXdbjeEWcX8Js5itV82k197CopLhg2Xh9Y9kPVC3d1HbmG10l2GOoKX40BRJL7W9YTIbL9eTF88FL4hIYE62AQI_dOl9Xdo67TE16d-07j6heFSEZZqe_g)
 
-{{< tabs name="T53" >}}
+{{< tabs id="T53" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -445,4 +445,4 @@ Defines some vertical space inside the element:
 {{% /tab %}}
 {{< /tabs >}}
 
-For more information about Padding, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/)
+**For more information about Padding, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/).**

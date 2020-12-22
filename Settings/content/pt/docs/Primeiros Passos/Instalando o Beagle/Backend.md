@@ -46,7 +46,7 @@ Para uma configuração simples, você pode escolher entre **2 modelos de framew
 
 Depois de selecionar com qual framework deseja seguir, prossiga com as configurações abaixo: 
 
-{{< tabs name="T0" >}}
+{{< tabs id="T0" >}}
 {{% tab name="Micronaut" %}}
 ### Criando um microsserviço
 
@@ -113,7 +113,7 @@ Por último, você precisa complementar algumas configurações em nosso backend
 
 Clique na opção de Framework que você escolheu anteriormente e siga os passos para continuar a configuração.
 
-{{< tabs name="T1" >}}
+{{< tabs id="T1" >}}
 {{% tab name="Micronaut Starter" %}}
 ### Requerimentos adicionais:
 

@@ -15,7 +15,7 @@ Por padrão, esses headers são sempre enviados, porém podem ser desabilitados 
 
 Abaixo, você confere exemplos de como desabilitar o envio desses headers nas configs do Angular e React:
 
-{{< tabs name="T80" >}}
+{{< tabs id="T80" >}}
 {{% tab name="Angular" %}}
 ```text
 @BeagleModule({

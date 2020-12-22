@@ -61,7 +61,7 @@ For the Sourcery to use the Beagle's templates, you must specify the `SourceryPr
 The attributes written inside the`.yml` consider that **Cartfile** or **Podfile** file are in the same directory that `.xcodeproj` or `.xcworkspace`
 {{% /alert %}}
 
-{{< tabs name="T71" >}}
+{{< tabs id="T71" >}}
 {{% tab name="Cocoapods" %}}
 ```yaml
 sources:

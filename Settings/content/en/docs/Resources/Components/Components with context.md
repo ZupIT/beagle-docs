@@ -22,7 +22,7 @@ description: >-
 
 See below an example with customized components with context: 
 
-{{< tabs name="T70" >}}
+{{< tabs id="T70" >}}
 {{% tab name="Android" %}}
 ```kotlin
 @RegisterWidget

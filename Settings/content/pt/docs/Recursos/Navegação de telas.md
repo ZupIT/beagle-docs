@@ -25,7 +25,7 @@ Algumas ações de navegação precisam de um parâmetro. É possível receber d
 
 No exemplo abaixo, você vê um caso onde o `route` é `remote`:
 
-{{< tabs name="T89" >}}
+{{< tabs id="T89" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {
@@ -65,3 +65,21 @@ Button(
 ## Tipos de navegação
 
 Nas páginas a seguir, você confere mais detalhes de cada tipo de navegação do Beagle:
+
+[**OpenNativeRoute**](../../api/ações/navigate/openexternalurl)
+
+[**OpenExternalURL**](../../api/ações/navigate/openexternalurl)
+
+[**PushStack**](../../api/ações/navigate/pushstack)
+
+[**PushView**](../../api/ações/navigate/pushview)
+
+[**PopStack**](../../api/ações/navigate/popstack)
+
+[**PopView**](../../api/ações/navigate/popview)
+
+[**PopToView**](../../api/ações/navigate/poptoview)
+
+[**ResetApplication**](../../api/ações/navigate/resetapplication)
+
+[**ResetStack**](../../api/ações/navigate/resetstack)
