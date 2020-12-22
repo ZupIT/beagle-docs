@@ -24,7 +24,7 @@ To test is, you need a endpoint to return with the code below from your BFF and 
 
 {{< tabs name="T95" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:pushView.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -44,7 +44,8 @@ To test is, you need a endpoint to return with the code below from your BFF and 
     } ]
   }
 }
-```
+-->
+{{% playground file="pushView.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -66,5 +67,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Test this example on Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

@@ -44,7 +44,7 @@ Para testar, iremos precisar de três endpoints:
       "onPress" : [ {
         "_beagleAction_" : "beagle:pushView",
         "route" : {
-          "url" : "/firstScreen",
+          "url" : "secondScreenNavigate.json",
           "shouldPrefetch" : false
         }
       } ]
@@ -68,7 +68,7 @@ Screen(
                 onPress = listOf(
                     Navigate.PushView(
                         Route.Remote(
-                            url = "/firstScreen"
+                            url = "secondScreenNavigate.json"
                         )
                     )
                 )
@@ -98,7 +98,7 @@ Screen(
       "onPress" : [ {
         "_beagleAction_" : "beagle:pushView",
         "route" : {
-          "url" : "/secondScreen",
+          "url" : "popToView.json",
           "shouldPrefetch" : false
         }
       } ]
@@ -122,7 +122,7 @@ Screen(
                 onPress = listOf(
                     Navigate.PushView(
                         Route.Remote(
-                            url = "/secondScreen"
+                            url = "popToView.json"
                         )
                     )
                 )

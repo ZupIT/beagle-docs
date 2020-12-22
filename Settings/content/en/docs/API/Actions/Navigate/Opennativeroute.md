@@ -30,7 +30,7 @@ To test is, just configure [**Deep Link Handler**](../../../resources/customizat
 
 {{< tabs name="T92" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:openNativeRoute.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -43,7 +43,8 @@ To test is, just configure [**Deep Link Handler**](../../../resources/customizat
     } ]
   }
 }
-```
+-->
+{{% playground file="openNativeRoute.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -61,5 +62,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Test this example on Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

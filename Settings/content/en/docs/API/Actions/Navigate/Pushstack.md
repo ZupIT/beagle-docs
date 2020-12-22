@@ -24,7 +24,7 @@ To test, your BFF's endpoint should return a the screen with the code below and 
 
 {{< tabs name="T94" >}}
 {{% tab name="JSON" %}}
-```text
+<!-- json-playground:pushStack.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -44,7 +44,8 @@ To test, your BFF's endpoint should return a the screen with the code below and 
     } ]
   }
 }
-```
+-->
+{{% playground file="pushStack.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -66,7 +67,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Test this example on Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)
-
-###

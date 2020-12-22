@@ -30,28 +30,29 @@ To test, you will need three endpoints:
 
 {{< tabs name="T101" >}}
 {{% tab name="JSON" %}}
-```text
+<!-- json-playground:firstScreenonResetStack.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
     "_beagleComponent_" : "beagle:container",
     "children" : [ {
       "_beagleComponent_" : "beagle:text",
-      "text" : "First Screen on Stack"
+      "text" : "First Screen on ResetStack"
     }, {
       "_beagleComponent_" : "beagle:button",
       "text" : "Click me!",
       "onPress" : [ {
         "_beagleAction_" : "beagle:pushView",
         "route" : {
-          "url" : "/firstScreen",
+          "url" : "SecondScreenonResetStack.json",
           "shouldPrefetch" : false
         }
       } ]
     } ]
   }
 }
-```
+-->
+{{% playground file="firstScreenonResetStack.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -67,7 +68,7 @@ Screen(
                 onPress = listOf(
                     Navigate.PushView(
                         Route.Remote(
-                            url = "/firstScreen"
+                            url = "SecondScreenonResetStack.json"
                         )
                     )
                 )
@@ -83,7 +84,7 @@ Screen(
 
 {{< tabs name="T102" >}}
 {{% tab name="JSON" %}}
-```text
+<!-- json-playground:SecondScreenonResetStack.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -97,14 +98,15 @@ Screen(
       "onPress" : [ {
         "_beagleAction_" : "beagle:pushView",
         "route" : {
-          "url" : "/secondScreen",
+          "url" : "resetStack.json",
           "shouldPrefetch" : false
         }
       } ]
     } ]
   }
 }
-```
+-->
+{{% playground file="SecondScreenonResetStack.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -120,7 +122,7 @@ Screen(
                 onPress = listOf(
                     Navigate.PushView(
                         Route.Remote(
-                            url = "/secondScreen"
+                            url = "resetStack.json"
                         )
                     )
                 )
@@ -136,7 +138,7 @@ Screen(
 
 {{< tabs name="T103" >}}
 {{% tab name="JSON" %}}
-```text
+<!-- json-playground:resetStack.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -150,14 +152,15 @@ Screen(
       "onPress" : [ {
         "_beagleAction_" : "beagle:resetStack",
         "route" : {
-          "url" : "/home",
+          "url" : "firstScreenonResetStack.json",
           "shouldPrefetch" : false
         }
       } ]
     } ]
   }
 }
-```
+-->
+{{% playground file="resetStack.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -172,7 +175,7 @@ Screen(
                 text = "Click me  to reset stack",
                 onPress = listOf(
                     Navigate.ResetStack(
-                        route = Route.Remote("/home")
+                        route = Route.Remote("firstScreenonResetStack.json")
                     )
                 )
             )
@@ -182,5 +185,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Test this example on Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

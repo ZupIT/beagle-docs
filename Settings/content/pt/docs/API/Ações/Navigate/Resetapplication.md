@@ -46,7 +46,7 @@ Para testar, iremos precisar de três endpoints:
       "onPress" : [ {
         "_beagleAction_" : "beagle:pushView",
         "route" : {
-          "url" : "/firstScreen",
+          "url" : "secondScreenonStack.json",
           "shouldPrefetch" : false
         }
       } ]
@@ -70,7 +70,7 @@ Screen(
                 onPress = listOf(
                     Navigate.PushView(
                         Route.Remote(
-                            url = "/firstScreen"
+                            url = "secondScreenonStack.json"
                         )
                     )
                 )
@@ -100,7 +100,7 @@ Screen(
       "onPress" : [ {
         "_beagleAction_" : "beagle:pushView",
         "route" : {
-          "url" : "/secondScreen",
+          "url" : "resetApplication.json",
           "shouldPrefetch" : false
         }
       } ]
@@ -124,7 +124,7 @@ Screen(
                 onPress = listOf(
                     Navigate.PushView(
                         Route.Remote(
-                            url = "/secondScreen"
+                            url = "resetApplication.json"
                         )
                     )
                 )
@@ -154,7 +154,7 @@ Screen(
       "onPress" : [ {
         "_beagleAction_" : "beagle:resetApplication",
         "route" : {
-          "url" : "/home",
+          "url" : "firstScreenonStack.json",
           "shouldPrefetch" : false
         }
       } ]
@@ -177,7 +177,7 @@ Screen(
                 text = "Click me  to reset application",
                 onPress = listOf(
                     Navigate.ResetApplication(
-                        route = Route.Remote("/home")
+                        route = Route.Remote("firstScreenonStack.json")
                     )
                 )
             )
