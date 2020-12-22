@@ -16,7 +16,7 @@ Every Beagle Web library has a very well defined process of how it fetches, proc
 
 See the full rendering process of Beagle Web:
 
-![](/docs-beagle/beagle-view.png)
+![](/beagle-view.png)
 
 The Beagle lifecycles are:
 

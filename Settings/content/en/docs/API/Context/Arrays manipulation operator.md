@@ -19,7 +19,7 @@ description: You will find a description of arrays manipulation operator.
 
 See the example of a screen where the a context was declared with `numbersArray` id with the values **\[0, 1, 2, 3, 4\],** this context is used in the removeIndex operation in the text component `text`, where it removes the element of index **2.**
 
-{{< tabs name="T145" >}}
+{{< tabs id="T145" >}}
 {{% tab name="Kotlin" %}}
 ```kotlin
 fun screen() = Screen(child = 
@@ -62,4 +62,4 @@ fun screen() = Screen(child =
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/docs-beagle/array.png)
+![](/array.png)

@@ -34,7 +34,7 @@ After you installed the program, follow the steps below:
 
 Once the initialization is done, you will see this page: 
 
-![](/docs-beagle/mainactivity.png)
+![](/mainactivity.png)
 
 {{% alert color="success" %}}
 Well done, your project was created on Android! Now, you will need to configure Beagle following the next steps. 
@@ -79,7 +79,7 @@ Notice that some `plugins` are already listed on the file's beginning  arquivo a
 
 * Then, add the line_`apply plugin: 'kotlin-kapt'`_ 
 
-![](/docs-beagle/implementacaogradle.png)
+![](/implementacaogradle.png)
 
 After that, you need to add some dependencies: 
 
@@ -112,7 +112,7 @@ For example: undefined-`ext.beagle.version = "0.2.8"`
 
 At the end of these configurations, your file must be like this:
 
-![](/docs-beagle/implementacaogradle2.png)
+![](/implementacaogradle2.png)
 
 ### Step 2: Configure the Android Manifest file
 
@@ -123,7 +123,7 @@ The next step is to update your Android Manifest project by adding a few lines t
 {{% alert color="info" %}}
 If you find difficulties to find this or another file, just use Android Studios search bar. 
 
-To enable it, press**`SHIFT`**button twice and the search interface will appear. Once you made it, just just have to type `AndroidManifest` and Android Studio will find it. 
+To enable it, press **`SHIFT`** button twice and the search interface will appear. Once you made it, just just have to type `AndroidManifest` and Android Studio will find it. 
 {{% /alert %}}
 
 
@@ -160,10 +160,10 @@ When you create the call, we should guarantee that it's configured in this way:
 
 To create AppBeagleConfig, follow these steps: 
 
-1. First, we create a package with all configurations' files.  
+1. First, you create a package with all configurations' files.  
 2. Then, click with the right button on the main package of your project and click on **new &gt; package** __like in the image below: 
 
-![](/docs-beagle/newpackage.png)
+![](/newpackage.png)
 
 Even though you can name the file as you want to, we'll recommend for this tutorial that you use the name`beagle`.
 
@@ -174,8 +174,8 @@ Even though you can name the file as you want to, we'll recommend for this tutor
    5. Copy and paste the configurations below on `AppBeagleConfig` file you just created. Notice that it will implement two attributes: `baseUrl` and `environment`.
 
 * The **`baseUrl`** returns the basis URL of your environment.
-* The**`environment`** returns the _`current build state`_ of your application. 
-*  **`isLoggingEnabled`**returns the application's log view 
+* The **`environment`** returns the _`current build state`_ of your application. 
+*  **`isLoggingEnabled`** returns the application's log view 
 * The  **`cache`** manager configuration.
 
 
@@ -202,16 +202,16 @@ class AppBeagleConfig : BeagleConfig {
 {{% alert color="info" %}}
 At this tutorial point, we will test our Server-Driven screens on local host because it's important that our **`baseURL`** be local.
 
- Now, Beagle expects that your`@BeagleComponent` classes must have only empty constructors. 
+ Now, Beagle expects that your `@BeagleComponent` classes must have only empty constructors. 
 {{% /alert %}}
 
 ### **Step 4: Create AppBeagleActivity**
 
-You will have to deal with the `activities` that will be generated through server-driven. That's the reason why it's necessary to [**implement an Activity**](../../../../../../using-beagle/android#passo-3-implementar-activities) to manage them. For this example, we'll name it as`AppBeagleActivity`.
+You will have to deal with the `activities` that will be generated through server-driven. That's the reason why it's necessary to [**implement an Activity**](../../../../../../using-beagle/android#passo-3-implementar-activities) to manage them. For this example, we'll name it as `AppBeagleActivity`.
 
 This file is part of [**Beagle's usage configuration**](../../../../../using-beagle/android) and must be implemented, at least once, so Beagle can normally work. 
 
-When you create AppBeagleActivity, remember to note it as `BeagleComponent` and to extend it to`BeagleActivity` class. 
+When you create AppBeagleActivity, remember to note it as `BeagleComponent` and to extend it to `BeagleActivity` class. 
 
 {{% alert color="info" %}}
 It's very important to ensure that this `activity` is registered on Android Manifest. Make it right after you create the activity. 
@@ -221,7 +221,7 @@ Follow the steps below to create AppBeagleActivity, including  `.xml` file:
 
 1. Click with the right button on Beagle's package and click on **New&gt;Activity&gt;Empty Activity** 
 
-![](/docs-beagle/newactivity.png)
+![](/newactivity.png)
 
    2. Name it as `AppBeagleActivity` for the `Activity` and click on **`finish`**.
 
@@ -304,10 +304,10 @@ class AppBeagleActivity : BeagleActivity() {
 
 
 {{% alert color="warning" %}}
-At this point, it's essential that you remove the`ActionBar` pattern of this `activity` because, from now on, Beagle will manage the `ActionBar/Toolbar`. 
+At this point, it's essential that you remove the `ActionBar` pattern of this `activity` because, from now on, Beagle will manage the `ActionBar/Toolbar`. 
 {{% /alert %}}
 
-To make this configuration, you must change your `BeagleActivity`'s theme. Go to `Resources` folder on your Android Studio's application and open the`STYLE` file. Then, just change your `AppTheme` like the example below:  
+To make this configuration, you must change your `BeagleActivity`'s theme. Go to `Resources` folder on your Android Studio's application and open the `STYLE` file. Then, just change your `AppTheme` like the example below:  
 
 
 ```markup
@@ -326,18 +326,18 @@ For more information, see [**section Design System with Beagle Android**](design
 {{% /alert %}}
 
 {{% alert color="info" %}}
-É o **design system** que guarda os registros dos componentes de estilo criados no frontend e é assim que sua aplicação Android “saberá” qual componente de estilo deve aplicar a cada elemento de uma tela Server-Driven. É na tela server driven que os elementos visuais \(views\) são utilizados na construção da sua tela.
+The **design system** keeps the style components registry created in the frontend and that is how your application will know which style component must be applied on each Server-Driven element. It is on the server-drive screen the visual elements \(views\) are used on the construction of your screen. 
 
-Embora você possa criá-lo agora se quiser, não é necessário para as configurações iniciais, para que você possa testar logo o Beagle! Você pode prosseguir sem configurá-lo. Para mais informações sobre [**Design System no Beagle para Android**.](design-system-beagle-com-android) 
+Even if you can create it now, if you want to, it is not necessary to the initial configuration in order to test Beagle faster. You can proceed without configurating it. For more information see [**Design System on  Beagle for Android**.](design-system-with-beagle-android) 
 {{% /alert %}}
 
 Now , you must initialize your `Application` so Beagle can manage the other configuration's files. To do so, just click on`Make project` \(HAMMER symbol\) or use the command `CTRL + F9`.
 
-![](/docs-beagle/apppackage.png)
+![](/apppackage.png)
 
 When it's initialized, Beagle will automatically create a `BeagleSetup` file that will be in the folder with the generated files, like in the image below: 
 
-![](/docs-beagle/image%20%2843%29.png)
+![](/image%20%2843%29.png)
 
 ### Step 6: Create an AppApplication class
 
@@ -403,12 +403,12 @@ finish()
 
 * Your`MainActivity.kt` must be like this:
 
-![](/docs-beagle/print-intent%20%281%29.png)
+![](/print-intent%20%281%29.png)
 
 Now you just have to click on **`Run app`** and check out your emulator's screen!   
 You will see this screen: 
 
-![](/docs-beagle/captura-de-tela-2020-06-22-a-s-11.41.12.png)
+![](/captura-de-tela-2020-06-22-a-s-11.41.12.png)
 
 {{% alert color="success" %}}
 Well done, you created your first screen with Beagle!  🎉 

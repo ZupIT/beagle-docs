@@ -38,7 +38,7 @@ If you don't declare the title and the icon on the TabItem, the empty space will
 
 ## How to use it?
 
-{{< tabs name="T121" >}}
+{{< tabs id="T121" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {
@@ -94,6 +94,6 @@ Screen(
 
 | TabView full screen | TabView with dividing screen |
 | :---: | :---: |
-| ![](/docs-beagle/beagle-tab-view.gif) | ![](/docs-beagle/beagle-tab-view-meia-tela.gif) |
+| ![](/beagle-tab-view.gif) | ![](/beagle-tab-view-meia-tela.gif) |
 
 ### 👉 [Test this component in the Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/tabview.json)

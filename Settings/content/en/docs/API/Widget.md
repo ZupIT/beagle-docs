@@ -174,7 +174,7 @@ The main attributes are:
 
 On the example below, we used a Container to show the widgets attributes. The class defines a visual component that must extend the `widget` class. 
 
-{{< tabs name="T159" >}}
+{{< tabs id="T159" >}}
 {{% tab name="JSON" %}}
 ```markup
 {

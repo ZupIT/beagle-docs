@@ -70,7 +70,7 @@ O Container está dividido em **2 partes principais:**
 1. O `context :` É um objeto do tipo `ContextData` que será a variável responsável por conter as informações que você deseja transferir. 
 2. O `children:`  É uma lista dos componentes que fazem parte desse container e que terão acesso ao contexto definido nele.
 
-{{< tabs name="T90" >}}
+{{< tabs id="T90" >}}
 {{% tab name="JSON" %}}
 ```typescript
 {
@@ -226,4 +226,4 @@ E agora a tela está pronta! Foi configurado um exemplo de contexto e demonstrad
 
 No final deste exemplo a sua tela deve estar assim:
 
-![](/docs-beagle/screenshot_1594752619.png)
+![](/screenshot_1594752619.png)

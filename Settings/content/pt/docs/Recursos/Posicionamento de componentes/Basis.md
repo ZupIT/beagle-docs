@@ -21,9 +21,9 @@ Esta propriedade define o **tamanho padrão de um item ao longo do eixo principa
 
 Neste exemplo, você vê como a aplicação usando o **`flexDirection: row`** para manipular o **tamanho da largura** da tela.
 
-![](/docs-beagle/captura-de-tela-2020-06-04-a-s-15.48.12.png)
+![](/captura-de-tela-2020-06-04-a-s-15.48.12.png)
 
-{{< tabs name="T64" >}}
+{{< tabs id="T64" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -88,9 +88,9 @@ private func screen() -> Screen {
 
 Já neste exemplo, você vê como fica a aplicação usando o **`flexDirection: column`** para manipular o **tamanho da altura da tela.**
 
-![](/docs-beagle/captura-de-tela-2020-06-04-a-s-16.01.56.png)
+![](/captura-de-tela-2020-06-04-a-s-16.01.56.png)
 
-{{< tabs name="T65" >}}
+{{< tabs id="T65" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -152,7 +152,7 @@ private fun screen() :Widget{
 
 É possível também passar `UnitValue(0.0, UnitType.AUTO)` quando utilizar `basis`. Neste caso o valor  `0.0`  não é relevante, pois  usando `UnitType.AUTO`  o eixo principal será ajustado  de acordo com tamanho do conteúdo. Exceto se um valor de `size`fixo também for definido para o componente no mesmo sentido do eixo principal.
 
-{{< tabs name="T66" >}}
+{{< tabs id="T66" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -186,7 +186,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 {{< /tabs >}}
 
-![Basis com UnitType.AUTO e FlexDirection.ROW ](/docs-beagle/captura-de-tela-2020-06-04-a-s-15.48.12%20%281%29.png)
+![Basis com UnitType.AUTO e FlexDirection.ROW ](/captura-de-tela-2020-06-04-a-s-15.48.12%20%281%29.png)
 
 {{% alert color="info" %}}
 Para saber mais sobre Basis, acesse a [**documentação do Yoga Layout**](https://yogalayout.com/docs/flex).

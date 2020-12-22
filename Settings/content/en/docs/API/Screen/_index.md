@@ -22,7 +22,7 @@ Your screen has attributes and components that can be used and configured. On th
 
 ## How to use it?
 
-{{< tabs name="T156" >}}
+{{< tabs id="T156" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

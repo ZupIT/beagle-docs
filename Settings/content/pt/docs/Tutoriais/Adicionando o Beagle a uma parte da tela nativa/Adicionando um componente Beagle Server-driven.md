@@ -12,7 +12,7 @@ description: >-
 
 No exemplo abaixo, vamos exibir um botão server-driven em uma tela nativa. O resultado que deve aparecer na sua aplicação é esse:
 
-![](/docs-beagle/screenshot_1594300176.png)
+![](/screenshot_1594300176.png)
 
 ## Pré-requisitos
 
@@ -118,7 +118,7 @@ Agora que o componente esta criado e configurado, você deve testar o endpoint e
 
 Você deve receber o JSON abaixo:
 
-{{< tabs name="T96" >}}
+{{< tabs id="T96" >}}
 {{% tab name="JSON" %}}
 ```typescript
 {
@@ -156,7 +156,7 @@ Depois dos dois passos anteriores, o seu componente está pronto. Agora, você s
 
 Para essa configuração, siga as orientações específicas para cada plataforma:
 
-{{< tabs name="T97" >}}
+{{< tabs id="T97" >}}
 {{% tab name="Android" %}}
 Você deve utilizar o frame layout para "receber" o componente do BFF e, assim, exibi-lo em uma tela Android nativa.
 
@@ -216,7 +216,7 @@ frameLayout.loadView(this, ScreenRequest("/serverDrivenComponent"))
 
 E pronto: basta iniciar sua aplicação e você verá a tela a seguir! 
 
-                                                              .![](/docs-beagle/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-MC8IwWJstYtvxLbosfv%2F-MC8QfhsPkq60mGJKtfy%2Fserver-driven-comp-ios.gif?alt=media&token=b5500211-e2bc-477d-aea4-835245be1531).
+                                                              .![](/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-MC8IwWJstYtvxLbosfv%2F-MC8QfhsPkq60mGJKtfy%2Fserver-driven-comp-ios.gif?alt=media&token=b5500211-e2bc-477d-aea4-835245be1531).
 
 Clique no botão e perceba que a função nesse componente está implementada e funcional, ou seja, o Beagle exibe todos os componentes como se fossem nativos.
 {{% /tab %}}
@@ -270,7 +270,7 @@ class NativeViewController: UIViewController {
 
 Ao final do processo, você poderá "chamar" pela nossa tela nativa que irá aparecer a imagem abaixo. Lembrando que, para esse exemplo, foi criada uma tela  composta de uma `UILabel` e de uma variável do tipo `BeagleScreenViewController` , onde fica o componente server-driven.
 
-![](/docs-beagle/server-driven-comp-ios.gif)
+![](/server-driven-comp-ios.gif)
 {{% /tab %}}
 
 {{% tab name="WEB" %}}
@@ -331,6 +331,6 @@ Lembre-se de rodar seu projeto Angular usando um dos comandos:
 
 A sua tela híbrida com elementos nativos e server driven está pronta 
 
-![](/docs-beagle/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-ME4OQaHp-v_V78YeLiC%2F-ME7uUduHSFMpidOFn9E%2Fimage.png?alt=media&token=974fe2f0-0964-4d68-a16b-414e3fdd9d67)
+![](/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-ME4OQaHp-v_V78YeLiC%2F-ME7uUduHSFMpidOFn9E%2Fimage.png?alt=media&token=974fe2f0-0964-4d68-a16b-414e3fdd9d67)
 {{% /tab %}}
 {{< /tabs >}}

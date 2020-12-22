@@ -28,7 +28,7 @@ The example below, we have a screen coming from BFF with a button when you click
 
 To test is, just configure [**Deep Link Handler**](../../../resources/customization/beagle-for-android/deep-link-handler) for Android or **openNativeRoute** for iOS. Besides, your BFF's endpoint must return the code screen below and call it in the frontend. 
 
-{{< tabs name="T92" >}}
+{{< tabs id="T92" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

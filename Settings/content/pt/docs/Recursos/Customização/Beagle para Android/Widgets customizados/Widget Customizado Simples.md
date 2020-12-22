@@ -12,7 +12,7 @@ No exemplo abaixo, será implementado um [**custom widget**](../../../beagle-par
 
 Os botões neste componente serão responsáveis ​​por aumentar e diminuir o tamanho do texto do título e a tela será como a imagem a seguir:
 
-![](/docs-beagle/image%20%2883%29.png)
+![](/image%20%2883%29.png)
 
 {{% alert color="info" %}}
 Você pode fazer isso usando a anotação `@RegisterWidget` e estendendo a classe `WidgetView` .
@@ -194,4 +194,4 @@ class MainActivity : AppCompatActivity() {
 
 * Execute a aplicação e seu componente customizado \(nesse caso uma tela\) será exibido:
 
-![](/docs-beagle/custumwidgetexample.gif)
+![](/custumwidgetexample.gif)

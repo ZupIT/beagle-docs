@@ -25,9 +25,9 @@ They behave according to the `Position Type` \(defined after this one \) of this
 
 It sets the same value for all positions: 
 
-![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.24.08.png)
+![](/captura-de-tela-2020-06-05-a-s-11.24.08.png)
 
-{{< tabs name="T54" >}}
+{{< tabs id="T54" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -88,9 +88,9 @@ private fun screen() :Widget{
 
 It sets a spacing at the bottom of an element:
 
-![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.26.34.png)
+![](/captura-de-tela-2020-06-05-a-s-11.26.34.png)
 
-{{< tabs name="T55" >}}
+{{< tabs id="T55" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -151,9 +151,9 @@ private fun screen() :Widget{
 
 It defines a spacing on the left side of an element: 
 
-![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.29.41.png)
+![](/captura-de-tela-2020-06-05-a-s-11.29.41.png)
 
-{{< tabs name="T56" >}}
+{{< tabs id="T56" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -214,9 +214,9 @@ private fun screen() :Widget{
 
 It defines a spacing on the right side of an element:
 
-![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.33.00.png)
+![](/captura-de-tela-2020-06-05-a-s-11.33.00.png)
 
-{{< tabs name="T57" >}}
+{{< tabs id="T57" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -277,9 +277,9 @@ private fun screen() :Widget{
 
 It defines a spacing on the top of an element:
 
-![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.34.21.png)
+![](/captura-de-tela-2020-06-05-a-s-11.34.21.png)
 
-{{< tabs name="T58" >}}
+{{< tabs id="T58" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -340,9 +340,9 @@ private func screen() -> Screen {
 
 It defines horizontal spacing at an element: 
 
-![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.36.55.png)
+![](/captura-de-tela-2020-06-05-a-s-11.36.55.png)
 
-{{< tabs name="T59" >}}
+{{< tabs id="T59" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -403,9 +403,9 @@ private func screen() -> Screen {
 
 It defines vertical spacing at an element: 
 
-![](/docs-beagle/captura-de-tela-2020-06-05-a-s-11.39.22.png)
+![](/captura-de-tela-2020-06-05-a-s-11.39.22.png)
 
-{{< tabs name="T60" >}}
+{{< tabs id="T60" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin

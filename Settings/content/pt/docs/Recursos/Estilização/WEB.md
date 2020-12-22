@@ -38,7 +38,7 @@ No exemplo abaixo, você vê como foi feita a adição para uma classe hipotéti
 
 O processo de inserir uma classe ao componente varia de acordo com o framework que estiver utilizando. Confira o processo para cada um deles nas abas a seguir:
 
-{{< tabs name="T87" >}}
+{{< tabs id="T87" >}}
 {{% tab name="Angular" %}}
 No Angular, há duas formas de adicionar a classe que recebemos da propriedade `styleId`:
 
@@ -69,7 +69,7 @@ yarn serve
 
 Depois que você adicionar o enum None à propriedade encapsulation do @Component\(\), é necessário fazer com que ela seja utilizada. Veja como na imagem abaixo: 
 
-![](/docs-beagle/image%20%2812%29.png)
+![](/image%20%2812%29.png)
 
 {{% alert color="info" %}}
 Para entender mais sobre o **ViewEncapsulation**, acesse a [**documentação do Angular.**](https://angular.io/api/core/ViewEncapsulation#viewencapsulation)

@@ -73,10 +73,11 @@ class AppBeagleConfig : BeagleConfig {
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td style="text-align:left">isLoggingEnabled</td>
-      <td style="text-align:left">Boolean</td>
-      <td style="text-align:left">Attribute that enables or disables all logs that Beagle generates.</td>
+  <tr>
+      <td style="text-align:left">environment</td>
+      <td style="text-align:left">Environment</td>
+      <td style="text-align:left">Attribute responsible for informing Beagle about the current build status
+        of the application.</td>
     </tr>
     <tr>
       <td style="text-align:left">baseUrl</td>
@@ -87,10 +88,9 @@ class AppBeagleConfig : BeagleConfig {
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">environment</td>
-      <td style="text-align:left">Environment</td>
-      <td style="text-align:left">Attribute responsible for informing Beagle about the current build status
-        of the application.</td>
+      <td style="text-align:left">isLoggingEnabled</td>
+      <td style="text-align:left">Boolean</td>
+      <td style="text-align:left">Attribute that enables or disables all logs that Beagle generates.</td>
     </tr>
     <tr>
       <td style="text-align:left">cache</td>
@@ -101,7 +101,7 @@ class AppBeagleConfig : BeagleConfig {
 </table>
 
 {{% alert color="warning" %}}
-Make sure to note your class configuration with`BeagleComponent`, because Beagle expect them to have empty constructors.
+Make sure to note your class configuration with `BeagleComponent`, because Beagle expect them to have empty constructors.
 {{% /alert %}}
 
 ### **Step 3:  BeagleActivitiy** 
@@ -132,7 +132,7 @@ You can set a Design System now, at this point it is not necessary,  just procee
 
 Now you have to initialize your `Application ,`so Beagle can generate other configurations file that you need. When you initialize Beagle for the first time, a `BeagleSetup` class will be automatically created as you can see in the image below:
 
-![BeagleSetup file](/docs-beagle/beaglesetup.png)
+![BeagleSetup file](/beaglesetup.png)
 
 ### **Step 6: Create the Application class** 
 
@@ -585,7 +585,7 @@ The function above creates a JSON structure below, that will be interpreted by B
 7. Click on **`Run app`** and check the emulator screen!  
 You will see this screen:
 
-![](/docs-beagle/captura-de-tela-2020-06-22-a-s-11.41.12.png)
+![](/captura-de-tela-2020-06-22-a-s-11.41.12.png)
 
 {{% alert color="success" %}}
 Well done, you created your first screen with Beagle!

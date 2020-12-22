@@ -22,7 +22,7 @@ Listamos um exemplo de um caso abaixo em que fizemos testes usando um elemento `
 
 ### Como testamos?
 
-![](/docs-beagle/gif-teste.gif)
+![](/gif-teste.gif)
 
 Neste exemplo, fizemos um teste instrumentado na plataforma Android utilizando o `Espresso (Framework de automação)`, em que verificamos a funcionalidade de seleção e inserção de valores em um componente `text field`, que é server-driven. 
 

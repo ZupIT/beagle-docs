@@ -78,9 +78,9 @@ A estrutura do Confirm é:
 
 Segue abaixo um exemplo com um botão que ao clicado exibe um modal de confirmação:
 
-{{< tabs name="T109" >}}
+{{< tabs id="T109" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:confirm.json
 {
   "_beagleComponent_": "beagle:container",
   "children": [
@@ -101,7 +101,8 @@ Segue abaixo um exemplo com um botão que ao clicado exibe um modal de confirma�
     }
   ]
 }
-```
+-->
+{{% playground file="confirm.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}

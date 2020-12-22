@@ -14,9 +14,9 @@ Esta propriedade define **como os itens do container serão preenchidos** de aco
 
 Para isso, o Flex estabelece os valores aplicados na propriedade de cada filho. Assim, ele pega os valores  de todos os elementos filhos e fazem o seguinte cálculo: somam e depois divide por cada valor  da propriedade flex aplicado no filho. O resultado deve ser o espaço preenchido do filho no container.
 
-![](/docs-beagle/captura-de-tela-2020-06-05-a-s-16.53.38.png)
+![](/captura-de-tela-2020-06-05-a-s-16.53.38.png)
 
-{{< tabs name="T70" >}}
+{{< tabs id="T70" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin

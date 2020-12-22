@@ -6,7 +6,7 @@ description: Here you'll find all about components and its attributes details.
 
 ---
 
-![&#xC1;rvore de componentes do Beagle](/docs-beagle/components-01-beagle.png)
+![&#xC1;rvore de componentes do Beagle](/components-01-beagle.png)
 
 `ServenDrivenComponent`  is the father of all Beagle's components, such as `widgets`, `forms` e `navigation`, they will be implemented through`ServerDrivenComponent`.
 
@@ -16,7 +16,7 @@ You can have other visual component as well, and you are able to create customiz
 
 Beagle has **21 components**, they are currently divided into **5 categories**:
 
-{{< tabs name="T114" >}}
+{{< tabs id="T114" >}}
 {{% tab name="Layout" %}}
 * [**Container**](https://docs.usebeagle.io/api/componentes/layout/container)
 * [**List View**](https://docs.usebeagle.io/api/componentes/layout/listview)

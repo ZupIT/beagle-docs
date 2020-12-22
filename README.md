@@ -1,7 +1,8 @@
 # docs-beagle
+
 Project: 466 Zup - Relacionamento com Desenvolvedores
 
-# Getting started
+## Getting started
 
 To run this project run the following commands: 
 
@@ -18,4 +19,13 @@ You also must have Hugo installed in your machine. Please, check
 
 Then run:
 
-`hugo server` if you're getting a fatal error: Pipe failed, run: `hugo server --watch=false`
+`npm run start`. If you're getting a fatal error: Pipe failed, run: `npm run start --watch=false`.
+
+By default `npm run start` will run the project in development mode. To change the environment use
+`npm run start --environment=production`.
+
+## Build
+
+To build the application, run `npm run build` after
+[having installed hugo](https://gohugo.io/getting-started/installing) and all package dependencies
+(`npm install`).

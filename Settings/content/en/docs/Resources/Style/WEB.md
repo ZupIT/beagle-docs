@@ -36,7 +36,7 @@ On the example below, you see how this addition was done to a "card" hypothetica
 
 The process to insert a class to a component varies according to the framework you're using. Check out the step by step of each case in the following tabs:
 
-{{< tabs name="T84" >}}
+{{< tabs id="T84" >}}
 {{% tab name="Angular" %}}
 On Angular, there are two ways to add a class we receive through `styleId` propriety:
 
@@ -67,7 +67,7 @@ yarn serve
 
 After you add the None enum to a @Component\(\) encapsulation propriety, it's necessary to make it useful. See how to make it on the image below: 
 
-![](/docs-beagle/image%20%2812%29.png)
+![](/image%20%2812%29.png)
 
 {{% alert color="info" %}}
 If you want to see more about **ViewEncapsulation**, check out [**Angular's documentation.**](https://angular.io/api/core/ViewEncapsulation#viewencapsulation)

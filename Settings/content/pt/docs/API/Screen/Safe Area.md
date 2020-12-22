@@ -23,7 +23,7 @@ Classe que auxilia o posicionamento dos componentes na área da tela. `Safe Area
 
 ## Como usar?
 
-{{< tabs name="T176" >}}
+{{< tabs id="T176" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

@@ -60,4 +60,4 @@ Veja a diferença de performance em telas nativas e server-driven considerando o
 | Setting up automation session | 3,95 s | 2,17 s |
 | **Resultado do teste** | **8,21 segundos** | **6,39 segundos** |
 
-![](/docs-beagle/comparativo-ios-v1-1-.gif)
+![](/comparativo-ios-v1-1-.gif)
