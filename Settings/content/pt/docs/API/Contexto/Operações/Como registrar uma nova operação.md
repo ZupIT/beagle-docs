@@ -8,7 +8,7 @@ description: 'Nesta seção, você encontra descrição completa das Custom Oper
 
 Depois que você viu que é possível realizar[ **Operações**](./) do tipo soma, subtração, etc, utilizando o contexto, você também pode criar a sua própria operação na plataforma que você quiser: 
 
-{{< tabs name="T165" >}}
+{{< tabs id="T165" >}}
 {{% tab name="iOS" %}}
 O registro de uma operação no iOS é feito através de um protocolo chamado `OperationsProvider`, veja abaixo:
 
@@ -55,7 +55,7 @@ Pronto! Sua operação já pode ser utilizada!
 
 Veja abaixo o exemplo utilizando a operação `isValidCpf` que foi criada acima, onde o texto do componente `Text` varia de acordo com o resultado da verificação se o CPF é válido ou não:
 
-{{< tabs name="T166" >}}
+{{< tabs id="T166" >}}
 {{% tab name="Kotlin" %}}
 ```kotlin
 fun screen() = Screen(
@@ -108,4 +108,4 @@ fun screen() = Screen(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/docs-beagle/customoperation.gif)
+![](/customoperation.gif)

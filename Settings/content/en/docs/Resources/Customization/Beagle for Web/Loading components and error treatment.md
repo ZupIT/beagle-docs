@@ -12,7 +12,7 @@ Beagle's library already has by pattern a component that it is called when a scr
 
 To create a loading component, follow the steps below: 
 
-{{< tabs name="T78" >}}
+{{< tabs id="T78" >}}
 {{% tab name="React" %}}
 On React:
 
@@ -122,7 +122,7 @@ To this component, the library shows an interface called `ErrorComponentParams`,
 
 When using this interface, you can create a component, see the example below with each framework:
 
-{{< tabs name="T79" >}}
+{{< tabs id="T79" >}}
 {{% tab name="React" %}}
 On React, you have to create a `Functional Component` that uses the `ErrorComponentParams` interface. When using it, you have access to two `props` errors and retry, which are the errors list and the `retry` method, both described on the interface: 
 

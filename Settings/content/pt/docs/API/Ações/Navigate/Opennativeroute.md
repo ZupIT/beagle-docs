@@ -24,7 +24,7 @@ No exemplo abaixo, temos uma tela vinda do BFF com um botão que ao clicar nele,
 
 Para testar, é preciso configurar o [**Deep Link Handler**](https://docs.usebeagle.io/customizacao/beagle-para-android/deep-link-handler) para Android  ou o **openNativeRoute,** no caso de aplicação iOS. Além disso, seu endpoint do BFF precisa retornar a tela do código abaixo e chamar esse endpoint no Frontend.
 
-{{< tabs name="T110" >}}
+{{< tabs id="T110" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

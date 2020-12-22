@@ -54,7 +54,7 @@ Every platform has different specifications to configure the cache.
 
 We listed below, see: 
 
-{{< tabs name="T12" >}}
+{{< tabs id="T12" >}}
 {{% tab name="Android" %}}
 In Android, the cache is configured when you implement the first Beagle's configuration. 
 

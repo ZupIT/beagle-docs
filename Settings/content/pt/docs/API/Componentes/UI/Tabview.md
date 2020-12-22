@@ -40,7 +40,7 @@ Se o título e ícone não forem declarados no `Tab Item`, o espaço vazio perma
 
 ## Como usar?
 
-{{< tabs name="T139" >}}
+{{< tabs id="T139" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {
@@ -96,6 +96,6 @@ Screen(
 
 | Tab View tela inteira | Tab View dividindo tela |
 | :---: | :---: |
-| ![](/docs-beagle/beagle-tab-view.gif) | ![](/docs-beagle/beagle-tab-view-meia-tela.gif) |
+| ![](/beagle-tab-view.gif) | ![](/beagle-tab-view-meia-tela.gif) |
 
 ### 👉 [Teste esse componente no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/tabview.json)

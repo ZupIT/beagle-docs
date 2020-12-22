@@ -9,7 +9,7 @@ weight: 185
 
 Beagle's library offers a component to help render the server-driven screens, remote view:
 
-{{< tabs name="T80" >}}
+{{< tabs id="T80" >}}
 {{% tab name="Angular" %}}
 ```text
 <beagle-remote-view [loadParams]="loadParams"></beagle-remote-view>

@@ -29,7 +29,7 @@ Context can be used when you want to fill values in a different moment from the 
 
 On the example below, you can see a context with data of a user and it's showed some information in a `Text`: 
 
-{{< tabs name="T133" >}}
+{{< tabs id="T133" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {
@@ -107,7 +107,7 @@ When there is a **defined scope** to the context inside your JSON or your declar
 
 See the example below on how it works: 
 
-{{< tabs name="T134" >}}
+{{< tabs id="T134" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {
@@ -207,7 +207,7 @@ A binding is identified by a prefix `@{` and a suffix `}`. Meaning that everythi
 
 See the example below on how it works: 
 
-{{< tabs name="T135" >}}
+{{< tabs id="T135" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {
@@ -254,7 +254,7 @@ It is the binding type which the context value it will be generally, a key/value
 * To access the CPF, use the `@{user.cpf}` binding. 
 * To access the phone number, use the `@{user.phoneNumber.cellphone}` binding.
 
-{{< tabs name="T136" >}}
+{{< tabs id="T136" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {
@@ -315,7 +315,7 @@ If a vector is used on a context value, to access a specific position, you have 
 
 * To access the second film title \("Contact"\), use the `@{movies.titles[1].title}`binding. 
 
-{{< tabs name="T137" >}}
+{{< tabs id="T137" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {
@@ -404,7 +404,7 @@ In each system, the binding must be declared like:
 
 Examples for each operational system:
 
-{{< tabs name="T138" >}}
+{{< tabs id="T138" >}}
 {{% tab name="Android" %}}
 ```kotlin
 data class MyComponent(
@@ -446,7 +446,7 @@ public struct MyComponent: Widget {
 
 The way to refer an expression on Kotlin's DSL must be like this:
 
-{{< tabs name="T139" >}}
+{{< tabs id="T139" >}}
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 MyComponent(
@@ -458,7 +458,7 @@ MyComponent(
 
 However, in case you have to pass a **hardcoded value,** you must use this way:
 
-{{< tabs name="T140" >}}
+{{< tabs id="T140" >}}
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 MyComponent(

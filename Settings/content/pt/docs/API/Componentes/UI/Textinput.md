@@ -140,7 +140,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 Segue abaixo um exemplo de entrada de texto do tipo senha:
 
-{{< tabs name="T141" >}}
+{{< tabs id="T141" >}}
 {{% tab name="JSON" %}}
 ```text
 {

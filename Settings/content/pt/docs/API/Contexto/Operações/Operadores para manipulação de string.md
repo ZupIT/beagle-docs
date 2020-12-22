@@ -22,7 +22,7 @@ description: >-
 
 Nesse exemplo, uma tela possui um texto com uma operação de `substring`, no qual sua frase é **'The book is on the table'** e os parâmetros **4, 11** ditam o limite dessa substring, a tornando a seguinte string '**book is on':**
 
-{{< tabs name="T162" >}}
+{{< tabs id="T162" >}}
 {{% tab name="Kotlin" %}}
 ```kotlin
 fun screen() = Screen(child = 
@@ -60,4 +60,4 @@ fun screen() = Screen(child =
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/docs-beagle/string.png)
+![](/string.png)

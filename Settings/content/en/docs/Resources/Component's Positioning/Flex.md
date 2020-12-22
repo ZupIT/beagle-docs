@@ -12,9 +12,9 @@ This property defines how **items will be filled according to the space availabl
 
 For that, it takes the values ​​of all the child elements and makes the following calculation: they add and then divide by each value of the flex property applied to the child. The result should be the child's filled space in the container.
 
-![](/docs-beagle/captura-de-tela-2020-06-05-a-s-16.53.38.png)
+![](/captura-de-tela-2020-06-05-a-s-16.53.38.png)
 
-{{< tabs name="T69" >}}
+{{< tabs id="T69" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin

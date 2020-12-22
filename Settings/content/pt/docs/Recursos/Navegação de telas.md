@@ -25,7 +25,7 @@ Algumas ações de navegação precisam de um parâmetro. É possível receber d
 
 No exemplo abaixo, você vê um caso onde o `route` é `remote`:
 
-{{< tabs name="T89" >}}
+{{< tabs id="T89" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {
@@ -58,7 +58,7 @@ Button(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/docs-beagle/navigate-remote.gif)
+![](/navigate-remote.gif)
 
 
 

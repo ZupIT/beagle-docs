@@ -232,7 +232,7 @@ Uma vez que você já tem todos os estilos criados, é o momento de registrá-lo
 
 Para isso, siga estes passos: 
 
-1. Abra a classe`AppDesignSystem` e vá ao método`textStyle`.
+1. Abra a classe `AppDesignSystem` e vá ao método `textStyle`.
 2. Dentro deste método, crie um operador when. Dentro dele, vamos listar todos os estilos de texto que queremos utilizar agora e depois. 
 
 {{% alert color="info" %}}

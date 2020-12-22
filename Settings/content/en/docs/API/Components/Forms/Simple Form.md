@@ -39,7 +39,7 @@ This function is part of the TextInput and it observes the changes made within i
 
 Check our example below on how we implemented a `SimpleForm` 
 
-{{< tabs name="T132" >}}
+{{< tabs id="T132" >}}
 {{% tab name="JSON" %}}
 ```javascript
  {

@@ -22,7 +22,7 @@ Items are organized in a line form from left to right:
 
 ![](https://lh6.googleusercontent.com/0ttoF3Ax_Ri25n47srlTniG15bU6NRL4maTig46NgKXHqT2EWiRZaqZUl5fRaTxSPoXkQYQXLxX6xF_FQLjqNxqGKxqqGCoRqOzEi9xqrRwcKBSpdxqzg4QLxaZwPCLWUr8bZzmH)
 
-{{< tabs name="T13" >}}
+{{< tabs id="T13" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -72,7 +72,7 @@ Items are organized in a line form from right to left:
 
 ![](https://lh6.googleusercontent.com/kdSZZslWJyiaJZWS_eXCnvX8Z8qfhoqA9PBWEHS4tb6hpz3yc8zOTzYb4GK5185EjsNZ-O2w2KPkeZimUyjP50O4rM599IOaVBc8p9sEd8qJAGnZ_GG7A6GIXlZWaCNVYEc52OvR)
 
-{{< tabs name="T14" >}}
+{{< tabs id="T14" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -122,7 +122,7 @@ Items are organized from top to bottom:
 
 ![](https://lh3.googleusercontent.com/tTTwTgsoEdEu1gB3x2cfKWf6mHHNCI4b40e_JQUKWLBxWO3HdB6a9pKm8heXLluFLDFvg_Vyh1e6teQWVuFyQdGdXMBis9r2X4WhIE9Nn8EvyVcpuSG0wvJGLUjcvOlcK67qat98)
 
-{{< tabs name="T15" >}}
+{{< tabs id="T15" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -172,7 +172,7 @@ Items are organized in columns and they are positioned from bottom to top:
 
 ![](https://lh5.googleusercontent.com/qXQqn6W3I5PhtU0PSHkXQbwNtvybgtNTQtAGvNf5zNwA0LwMtTkrI3ZUPqRYfQeTjPzANi58cCfpbLEfs5ChiGi1TXqDkp6PmgbedVmWgrSICCdVpINqyCnOGdcz9Dp6Ott1SOnY)
 
-{{< tabs name="T16" >}}
+{{< tabs id="T16" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin

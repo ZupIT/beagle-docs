@@ -14,7 +14,7 @@ No Beagle, é possível criar uma [**ação**](../../../api/acoes/) **customizad
 
 Cada plataforma tem sua forma própria para fazer esta implementação no frontend. Abaixo, listamos exemplos para cada uma.
 
-{{< tabs name="T82" >}}
+{{< tabs id="T82" >}}
 {{% tab name="Android" %}}
 Primeiro, você deve criar uma classe anotada com `@RegisterAction` que implemente a **interface** `Action`. Esta mesma interface solicitará que o método `execute` seja implementado e, aqui, você irá declarar o resultado da `action`.
 
@@ -146,7 +146,7 @@ val msg: String? = null
 
 Abaixo, temos um exemplo de Action em um componente do tipo Botão. 
 
-{{< tabs name="T83" >}}
+{{< tabs id="T83" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

@@ -19,9 +19,9 @@ This property defines **the standard size of an item along the main axis**. It c
 
 Here you see the **`flexDirection: row`** is used to set the screen **`width` size:**
 
-![](/docs-beagle/captura-de-tela-2020-06-04-a-s-15.48.12.png)
+![](/captura-de-tela-2020-06-04-a-s-15.48.12.png)
 
-{{< tabs name="T63" >}}
+{{< tabs id="T63" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -86,9 +86,9 @@ private func screen() -> Screen {
 
 Here the **`flexDirection: column`** is used to set the screen `height` size
 
-![](/docs-beagle/captura-de-tela-2020-06-04-a-s-16.01.56.png)
+![](/captura-de-tela-2020-06-04-a-s-16.01.56.png)
 
-{{< tabs name="T64" >}}
+{{< tabs id="T64" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -150,7 +150,7 @@ private fun screen() :Widget{
 
 It is also possible to put `UnitValue (0.0, UnitType.AUTO)` when using the `basis`. In this case, the value `0.0` is not relevant, because using `UnitType.AUTO` the main axis will be adjusted according to the size of the content. Unless a `size` fixed value is also set for the component in the same direction as the main axis.
 
-{{< tabs name="T65" >}}
+{{< tabs id="T65" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -184,7 +184,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 {{< /tabs >}}
 
-![Basis with UnitType.AUTO and FlexDirection.ROW](/docs-beagle/captura-de-tela-2020-06-04-a-s-15.48.12%20%281%29.png)
+![Basis with UnitType.AUTO and FlexDirection.ROW](/captura-de-tela-2020-06-04-a-s-15.48.12%20%281%29.png)
 
 {{% alert color="info" %}}
 For more information about Basis, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/).

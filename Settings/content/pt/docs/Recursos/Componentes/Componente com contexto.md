@@ -22,7 +22,7 @@ O `ContextComponent` é uma interface precisa ser implementada em componentes qu
 
 Segue abaixo um exemplo de componente customizado com o contexto:
 
-{{< tabs name="T71" >}}
+{{< tabs id="T71" >}}
 {{% tab name="Android" %}}
 ```kotlin
 @RegisterWidget

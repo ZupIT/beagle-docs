@@ -21,7 +21,7 @@ Caso o backend não especifique acessibilidade, os valores padrões de cada plat
 
 ### Como usar?
 
-{{< tabs name="T105" >}}
+{{< tabs id="T105" >}}
 {{% tab name="JSON" %}}
 ```typescript
 {

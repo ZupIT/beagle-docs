@@ -27,7 +27,7 @@ When this value is set, the elements won't be shown on the screen, thus having t
 
 ### 
 
-{{< tabs name="T68" >}}
+{{< tabs id="T68" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin

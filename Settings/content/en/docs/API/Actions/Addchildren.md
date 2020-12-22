@@ -30,7 +30,7 @@ It is an `ENUM`, which values are:
 
 ## How to use it?
 
-{{< tabs name="T88" >}}
+{{< tabs id="T88" >}}
 {{% tab name="JSON" %}}
 ```javascript
                 "_beagleAction_": "beagle:addChildrenAction",

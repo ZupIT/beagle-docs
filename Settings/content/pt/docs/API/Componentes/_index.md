@@ -6,7 +6,7 @@ description: Descrição dos componentes e seus atributos
 
 ---
 
-![&#xC1;rvore de componentes do Beagle](/docs-beagle/components-01-beagle.png)
+![&#xC1;rvore de componentes do Beagle](/components-01-beagle.png)
 
 O `ServerDrivenComponent`  é o pai de todos os componentes do Beagle. Componentes como `widgets`, `formulários` e `navegação` serão implementados por meio do `ServerDrivenComponent`.
 
@@ -16,7 +16,7 @@ Você pode ter outros componentes visuais também, e ainda pode criar componente
 
 O Beagle possui **14** **componentes** atualmente divididos em **5 categorias**:
 
-{{< tabs name="T132" >}}
+{{< tabs id="T132" >}}
 {{% tab name="Layout" %}}
 * [**Container**](layout/container)
 * [**List View**](layout/listview)

@@ -28,7 +28,7 @@ To test, you will need three endpoints:
 
 #### How to call the screen zero <a id="como-chamar-a-tela-zero"></a>
 
-{{< tabs name="T104" >}}
+{{< tabs id="T104" >}}
 {{% tab name="JSON" %}}
 ```text
 {
@@ -81,7 +81,7 @@ Screen(
 
 #### How to call the screen 1 <a id="como-chamar-a-tela-1"></a>
 
-{{< tabs name="T105" >}}
+{{< tabs id="T105" >}}
 {{% tab name="JSON" %}}
 ```text
 {
@@ -134,7 +134,7 @@ Screen(
 
 #### How to call the screen  2 <a id="como-chamar-a-tela-2"></a>
 
-{{< tabs name="T106" >}}
+{{< tabs id="T106" >}}
 {{% tab name="JSON" %}}
 ```text
 {

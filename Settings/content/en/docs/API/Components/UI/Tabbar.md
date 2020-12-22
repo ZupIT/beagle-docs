@@ -46,7 +46,7 @@ The **Context** is used to save the indicator \(position\) of the selected tab, 
 
 ### Example
 
-{{< tabs name="T120" >}}
+{{< tabs id="T120" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {
@@ -132,7 +132,7 @@ Screen(
 
 | Tab Bar |
 | :---: |
-| ![](/docs-beagle/beagle-tab-view.gif) |
+| ![](/beagle-tab-view.gif) |
 
 ### 👉 [Test this component on the Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/analytics.json)
 

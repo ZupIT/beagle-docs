@@ -8,7 +8,7 @@ description: You will find here how to register a new operation.
 
 After you've seen it is possible to make addition, subtraction and other operations using context, you can also create your own operation in the platform you want:  
 
-{{< tabs name="T147" >}}
+{{< tabs id="T147" >}}
 {{% tab name="iOS" %}}
 The registration of an operation on iOS is through `OperationsProvider`protocol, see below: 
 
@@ -55,7 +55,7 @@ Done! Your operation can be used now!
 
 See below an example using the `isvalidCpf` operation that was created above, where the text component `Text` will vary according the verification result, if the CPF is valid or not: 
 
-{{< tabs name="T148" >}}
+{{< tabs id="T148" >}}
 {{% tab name="Kotlin" %}}
 ```kotlin
 fun screen() = Screen(
@@ -108,4 +108,4 @@ fun screen() = Screen(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/docs-beagle/customoperation.gif)
+![](/customoperation.gif)

@@ -38,19 +38,19 @@ Siga os passos abaixo para filtrar mensagens de **log**:
 
 **Passo 3:** insira os filtros na barra de busca, procure somente as mensagens de `log` com a categoria `Network`no subsistema ~~`br.com.zup.BeagleDemoApp`~~ 
 
-![](/docs-beagle/1.png)
+![](/1.png)
 
 **Passo 4:** ao abrir a aplicação `BeagleDemo` vemos duas mensagens de **log** com a categoria `network`, uma mostrando que o Beagle fez uma `requisição` e outra indicando a `resposta` dessa requisição:
 
-![](/docs-beagle/2.png)
+![](/2.png)
 
 **Passo 5:** mensagens de `erro` serão exibidas com um ponto amarelo no campo `Type,` como mostrado abaixo:
 
-![](/docs-beagle/3.png)
+![](/3.png)
 
 **Passo 6:** ao selecionar a segunda mensagem de `log` recebida com filtro `Network`você verá a versão `verbosa` dessa resposta:
 
-![](/docs-beagle/4.png)
+![](/4.png)
 
 **Passo 7:** o corpo da resposta contém a tela `Server Driven` e todos os seus atributos e especificações podem ser acessados.
 

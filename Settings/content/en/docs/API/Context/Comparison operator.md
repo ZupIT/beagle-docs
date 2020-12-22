@@ -72,7 +72,7 @@ Here, the example is a screen that uses the comparison operation **It**_,_ that 
 * If the result of the condition or is true, the text component `Text` becomes **true;**
 * If it is false, it attributes the text the value **false**; 
 
-{{< tabs name="T143" >}}
+{{< tabs id="T143" >}}
 {{% tab name="Kotlin" %}}
 ```kotlin
 fun screen() = Screen(
@@ -118,4 +118,4 @@ fun screen() = Screen(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/docs-beagle/comparison.png)
+![](/comparison.png)
