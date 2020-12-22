@@ -22,7 +22,7 @@ No exemplo abaixo, você pode ver um botão que, ao ser clicado, abre o navegado
 
 {{< tabs name="T111" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:openExternalURL.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -30,11 +30,12 @@ No exemplo abaixo, você pode ver um botão que, ao ser clicado, abre o navegado
     "text" : "Click me!",
     "onPress" : [ {
       "_beagleAction_" : "beagle:openExternalURL",
-      "url" : "https://docs.usebeagle.io/api/api-acoes/navigate/openexternalurl"
+      "url" : "http://docs-beta.usebeagle.io/docs/api/actions/navigate/openexternalurl/"
     } ]
   }
 }
-```
+-->
+{{% playground file="openExternalURL.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -44,7 +45,7 @@ Screen(
         text = "Click me!",
         onPress = listOf(
             Navigate.OpenExternalURL(
-                url = "https://docs.usebeagle.io/api/api-acoes/navigate/openexternalurl"
+                url = "http://docs-beta.usebeagle.io/docs/api/actions/navigate/openexternalurl/"
             )
         )
     )
@@ -52,5 +53,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste esse exemplo no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

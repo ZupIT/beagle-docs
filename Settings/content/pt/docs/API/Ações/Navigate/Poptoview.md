@@ -30,7 +30,7 @@ Para testar, iremos precisar de três endpoints:
 
 {{< tabs name="T116" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:firstScreenNavigate.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -51,7 +51,8 @@ Para testar, iremos precisar de três endpoints:
     } ]
   }
 }
-```
+-->
+{{% playground file="firstScreenNavigate.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="KotlinDSL" %}}
@@ -83,7 +84,7 @@ Screen(
 
 {{< tabs name="T117" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:secondScreenNavigate.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -104,7 +105,8 @@ Screen(
     } ]
   }
 }
-```
+-->
+{{% playground file="secondScreenNavigate.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="KotlinDSL" %}}
@@ -136,7 +138,7 @@ Screen(
 
 {{< tabs name="T118" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:popToView.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -149,13 +151,33 @@ Screen(
       "text" : "Click me to go to first screen",
       "onPress" : [ {
         "_beagleAction_" : "beagle:popToView",
-        "route" : "/home"
+        "route" : "firstScreenNavigate.json"
       } ]
     } ]
   }
 }
+-->
+{{% playground file="popToView.json" language="pt" %}}
+{{% /tab %}}
+{{% tab name="KotlinDSL" %}}
+```kotlin
+Screen(
+    child = Container(
+        children = listOf(
+            Text(
+                "Third Screen on Stack"
+            ),
+            Button(
+                text = "Click me to go to first screen",
+                onPress = listOf(
+                    Navigate.PopToView(
+                      route = "firstScreenNavigate.json"
+                    )
+                )
+            )
+        )
+    )
+)
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste esse exemplo no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

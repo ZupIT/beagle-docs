@@ -32,7 +32,7 @@ Para testar, iremos precisar de três endpoints:
 
 {{< tabs name="T119" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:firstScreenonStack.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -53,7 +53,8 @@ Para testar, iremos precisar de três endpoints:
     } ]
   }
 }
-```
+-->
+{{% playground file="firstScreenonStack.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="KotlinDSL" %}}
@@ -85,7 +86,7 @@ Screen(
 
 {{< tabs name="T120" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:secondScreenonStack.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -106,7 +107,8 @@ Screen(
     } ]
   }
 }
-```
+-->
+{{% playground file="secondScreenonStack.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="KotlinDSL" %}}
@@ -138,7 +140,7 @@ Screen(
 
 {{< tabs name="T121" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:resetApplication.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -159,7 +161,8 @@ Screen(
     } ]
   }
 }
-```
+-->
+{{% playground file="resetApplication.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}

@@ -32,14 +32,14 @@ Para testar, iremos precisar de três endpoints:
 
 {{< tabs name="T122" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:firstScreenonResetStack.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
     "_beagleComponent_" : "beagle:container",
     "children" : [ {
       "_beagleComponent_" : "beagle:text",
-      "text" : "First Screen on Stack"
+      "text" : "First Screen on ResetStack"
     }, {
       "_beagleComponent_" : "beagle:button",
       "text" : "Click me!",
@@ -53,7 +53,8 @@ Para testar, iremos precisar de três endpoints:
     } ]
   }
 }
-```
+-->
+{{% playground file="firstScreenonResetStack.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="KotlinDSL" %}}
@@ -85,7 +86,7 @@ Screen(
 
 {{< tabs name="T123" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:SecondScreenonResetStack.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -106,7 +107,8 @@ Screen(
     } ]
   }
 }
-```
+-->
+{{% playground file="SecondScreenonResetStack.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="KotlinDSL" %}}
@@ -138,7 +140,7 @@ Screen(
 
 {{< tabs name="T124" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:resetStack.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -159,7 +161,8 @@ Screen(
     } ]
   }
 }
-```
+-->
+{{% playground file="resetStack.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -184,5 +187,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste esse exemplo no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

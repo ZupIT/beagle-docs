@@ -26,7 +26,7 @@ Para testar, é preciso configurar o [**Deep Link Handler**](https://docs.usebea
 
 {{< tabs name="T110" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:openNativeRoute.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -39,7 +39,8 @@ Para testar, é preciso configurar o [**Deep Link Handler**](https://docs.usebea
     } ]
   }
 }
-```
+-->
+{{% playground file="openNativeRoute.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -57,5 +58,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste esse exemplo no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)
