@@ -14,9 +14,9 @@ description: 'Nesta seção, você encontra informações da classe Beagle Scree
 
 Esse processo pode ser feito com seguintes passos: 
 
-1. Crie um objeto `BeagleScreenViewController` com o **screenType** passando o tipo remote, declarative ou  declarativeText.
+1. Crie um objeto do tipo BeagleScreenViewController passando um screenType em sua inicialização, que nos permite inicializar de três formas:
 
-**Remote:** Deve passar uma URL, pode configurar  um fallback opcional que é um declarative que passa a tela para o modo declarativo e additionalData que pode configurar a headers.
+**Remote:** Recebe a URL da sua tela ou componente server-driven. Pode-se configurar um fallback opcional, que seria uma tela no modo declarativo caso houvesse algum erro com sua tela server-driven. A configuração de header também pode ser feita através do parâmetro additionalData.
 
 **Declarative:** Criar uma tela de modo declarativo.
 
@@ -93,8 +93,8 @@ let viewController = BeagleScreenViewController(
 {{% alert color="success" %}}
 ## Beagle Navigation Controller customizada 
 
-Beagle Navigation Controller é uma classe como uma UINavigationController, porém focada em observar o estado da tela server-driven para, por exemplo, saber quando ela inicia ou finaliza.
+A BeagleNavigationController é uma classe do tipo UINavigationController, focada em observar os estados de uma tela server-driven para, por exemplo, saber quando ela se inicia ou finaliza.
 
-[**Click para saber mais!**](../../../../recursos/customização/beagle-para-ios/beagle-navigation-controller-customizada/)
+[**Click para saber mais!**](/pt/docs/recursos/customização/beagle-para-ios/beagle-navigation-controller-customizada/)
 
 {{% /alert %}}
