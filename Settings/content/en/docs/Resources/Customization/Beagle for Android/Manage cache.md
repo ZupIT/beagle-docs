@@ -2,14 +2,14 @@
 title: Manage Cache
 weight: 109
 description: >-
-  In this section, you will find information about the persistence layer of the beagle cache and how modify it.
+  In this section, you will find information about the persistence layer of Beagle's cache and how to modify it.
 ---
 
 ---
 
 ## Introduction
 
-The StoreHandler interface defines a protocol that allows you to customize how the cache is handled in the database and in memory.
+The StoreHandler interface defines a protocol that allows you to customize how the cache is handled in the database and in the memory.
 
 ```kotlin
 interface StoreHandler {
@@ -40,8 +40,8 @@ enum class StoreType {
 
 LocalStore interface allows you to map the actions of saving, restoring, deleting and getting all.
 
-This interface allows you to create rules for how data will be handled in a class,
-example create a class and use this interface to make a rule of how data will be handled on disk.
+This interface allows you to create rules for how data will be handled in a class.
+For example: create a class and use this interface to make a rule of how data will be handled on the disk.
 
 ```kotlin
 interface LocalStore {
@@ -52,11 +52,11 @@ interface LocalStore {
 }
 ```
 
-## Creating a custom cache manage
+## How to create a custom cache manage
 
-To create a custom cache manage, follow these steps.
+To create a custom cache manage, just follow the next steps:
 
-### Creating a object MemoryLocalStore
+### Step 1: Create a object MemoryLocalStore
 
 For that, it is necessary to create two classes that will implement the `LocalStore` interface. This interface allows you to map the actions of saving, restoring, deleting and taking everything. See the example below:
 
@@ -84,7 +84,7 @@ internal object MemoryLocalStore : LocalStore {
 }
 ```
 
-### Creating a class DatabaseLocalStore
+### Step 2: Create a class DatabaseLocalStore
 
 Now, you have to create a second class which depends on the StoreHandler creation, that it is a `DatabaseLocalStore`. See, this same file were declared some adjacent classes that work to this `DatabaseLocalStore` class, but it could be in different files, if you want. See the example: 
 
@@ -239,7 +239,7 @@ internal object BeagleMessageLogs {
 }
 ```
 
-### Creating a class StoreHandlerDefault
+### Step 3: Create a class StoreHandlerDefault
 
 The StoreHandler class defines a protocol that allows you to customize how the cache is handled in the database and in memory.
 

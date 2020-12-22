@@ -53,13 +53,13 @@ interface LocalStore {
 }
 ```
 
-## Criando uma camada de cache customizada
+## Como criar uma camada de cache customizada?
 
-Para criar uma camada de cache customizada, siga os seguintes passos
+Para criar uma camada de cache customizada, siga os próximos passos:
 
-### Criando o object MemoryLocalStore
+### Passo 1: Criar o object MemoryLocalStore
 
-Para isso, é preciso criar duas classes que implementarão a  interface `LocalStore`. Essa interface permite mapear as ações de salvar, restaurar, deletar e pegar tudo. Veja o exemplo abaixo:
+É necessário você criar duas classes, a MemoryLocalStore e a DatabaseLocalStore, de forma que, ambas implementem a interface `LocalStore`. Essa interface mapeia as ações: salvar, restaurar, deletar e pegar tudo. Veja o exemplo abaixo:
 
 
 ```kotlin
@@ -85,13 +85,14 @@ internal object MemoryLocalStore : LocalStore {
 }
 ```
 
-### Criando a classe DatabaseLocalStore
+### Passo 2: Criar a classe DatabaseLocalStore
 
-Agora criaremos uma segunda classe a qual dependeremos para criação do `StoreHandler`, que é a `DatabaseLocalStore`. Note que neste mesmo arquivo foram declaradas algumas classes adjacentes que servem a essa classe `DatabaseLocalStore` mas poderiam estar em arquivos diferentes, caso prefira. Veja um exemplo:
+Agora você deve criar uma segunda classe a qual depende da criação do StoreHandler, que é a DatabaseLocalStore. Note que neste mesmo arquivo foram declaradas algumas classes adjacentes que servem a classe DatabaseLocalStore mas poderiam estar em arquivos diferentes, caso prefira. Veja um exemplo:
 
 O arquivo abaixo possui as configurações para o SQL Lite e também as definições de como as ações de manipulação de cache funcionarão, no caso da persistência do cache no banco de dados.
 
-No atributo database da classe `DatabaseLocalStore` passamos a classe BeagleDatabaseManager, assim chamamos o método getDatabase e dentro do parametro devemos passar o contexto do aplicativo. siga o exemplo no atributo da classe DatabaseLocalStore abaixo.
+No atributo database da classe DatabaseLocalStore, a classe BeagleDatabaseManager é passada, chamando o método getDatabase e dentro do parâmetro você deve passar o contexto do aplicativo.
+Siga o exemplo no atributo da classe DatabaseLocalStore abaixo:
 
 
 ```kotlin
@@ -240,7 +241,7 @@ internal object BeagleMessageLogs {
 }
 ```
 
-### Criando a classe StoreHandlerDefault
+### Passo 3: Criar a classe StoreHandlerDefault
 
 A classe StoreHandler define um protocolo que permite personalizar a forma como o cache é manipulado no banco de dados e na memória. 
 
