@@ -5,20 +5,22 @@ weight: 153
 
 ---
 
-#### Added in Beagle 1.0.0
+#### Introduction
 
 To customize the loading and error treatment behaviors on Beagle iOS, you have to create your own navigation controller. 
 
-It can be done by: 
-
-* Extending `BeagleNavigationController`
-* Changing the dependencies to use them. 
+To create it, you have to follow the next steps: 
+1. Extending `BeagleNavigationController`
+2. Changing the dependencies to use them. 
 
 {{% alert color="info" %}}
 The `serverDrivenStateDidChange` method must be overwritten to make this customization.
 {{% /alert %}}
 
-See how to create a **navigation controller**:
+## Example
+### Creating Beagle navigation controller
+
+#### **Step 1**: Create a Beagle **navigation controller**:
 
 ```swift
 import Beagle
@@ -32,8 +34,7 @@ class MyAppNavigationController: BeagleNavigationController {
     }
 }
 ```
-
-And, right after, how to configure a dependency:
+#### **Step 2**: Configure the dependency:
 
 ```bash
 let dependencies = BeagleDependencies()
@@ -92,7 +93,7 @@ override func serverDrivenStateDidChange(
 }
 ```
 
-## Checking the Error Treatment
+### Checking the Error Treatment
 
 When occurs an error on the application, Beagle changes the screen state \(`state`\) to `ServerDrivenState.Error`. In this case, you must check out what kind of error and make the necessary treatment. 
 

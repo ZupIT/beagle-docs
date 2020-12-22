@@ -6,13 +6,11 @@ description: You will find here information about Screen View Controlle
 
 ---
 
-#### Added in Beagle 1.0.0
+#### Introduction
 
-### What is Screen View Controller?
+`BeagleScreenViewController` is a class that manages the display hierarchy in the application and it works like a `UIViewController`.
 
-It is a class that manages the display hierarchy in the application and it works like a `UIViewController`.
-
-### How to implement this class?
+## How to implement this class?
 
 You have to create an object  `BeagleScreenViewController`  with a set of attributes and parameters. 
 

@@ -12,16 +12,16 @@ This property defines how this component displays.That allows a container to be 
 
 In this property, we have two attributes: 
 
-1. Flex 
-2. None 
+* Flex
+* None
 
-### Flex 
+### **Flex** 
 
-When this value is set the elements inside this container turns into Flexbox elements. 
+When this value is set it allows the elements to be flexible.
 
-### None 
+### **None** 
 
-When this value is set, the elements won't shown on the screen, thus having their height and width 0.
+When this value is set, the elements won't be shown on the screen, thus having their height and width 0.
 
 ![](https://lh6.googleusercontent.com/3cy2o8XKmTf0wequEI5ycerpdW48FvjiyXGvpfDtg3sOq3qz6ZJnKPQhVZ-9B0ed7GyUGGNQwfQbk1uEzDEADfmouCFPlrWWpjemG7yKHuhYkjvoY3zCe0nKVgYCqVWJA3VGS6_-)
 
@@ -79,4 +79,4 @@ private func screen() -> Screen {
 {{% /tab %}}
 {{< /tabs >}}
 
-For more information about Display Margin, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/).
+**For more information about Display, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/).**

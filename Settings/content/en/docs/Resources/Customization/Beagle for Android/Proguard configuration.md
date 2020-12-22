@@ -47,7 +47,7 @@ proguard-rules.pro
 ```
 
 {{% alert color="info" %}}
-You also have to enable`minifyEnable` and`shrinkResources` on`buildType` declaring them as true to test the ProGuard obfuscation.
+You also have to enable `minifyEnable` and `shrinkResources` on `buildType` declaring them as true to test the ProGuard obfuscation.
 {{% /alert %}}
 
 You must activate ProGuard in your IDE, to test it, you can use Android Studio, just add the listed configuration below: 

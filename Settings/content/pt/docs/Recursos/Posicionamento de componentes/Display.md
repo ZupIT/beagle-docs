@@ -82,3 +82,5 @@ private func screen() -> Screen {
 ```
 {{% /tab %}}
 {{< /tabs >}}
+
+**Para saber mais sobre Display, acesse a documentação do [**Yoga Layout**](https://yogalayout.com/docs/flex/).**

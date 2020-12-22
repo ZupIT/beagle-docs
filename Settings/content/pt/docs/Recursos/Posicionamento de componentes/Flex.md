@@ -61,3 +61,5 @@ private fun screen() :Widget{
 ```
 {{% /tab %}}
 {{< /tabs >}}
+
+**Para saber mais sobre Flex, acesse a documentação do [**Yoga Layout**](https://yogalayout.com/docs/flex/).**

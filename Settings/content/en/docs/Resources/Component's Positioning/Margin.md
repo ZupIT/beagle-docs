@@ -70,7 +70,7 @@ private fun screen() :Widget{
 
 ### **Bottom** 
 
-Defines some space at the element bottom:
+Defines some space at the element's bottom:
 
 ![](https://lh5.googleusercontent.com/iDr2v9t2422LXNYxCwy6AkyR7E0KN4Sz8WTOiYF0TPpKSBwbBftW6xGbXLrxrg3Pq7_IIOvmYkkkt3w2CMtgL2sGoK2xD40bNbY1HcBObYlalxeSEYLg9VhRwGWG8ECPj-_Noe33)
 
@@ -128,7 +128,7 @@ private fun screen() :Widget{
 
 ### **Left**
 
-Defines some space at the element left side:
+Defines some space at the element's left side:
 
 ![](https://lh6.googleusercontent.com/m69w8vx_tTvWXo-uuZyBqTQV6cpKbeZb8bPnIN_nq8RP1GWNk-bog39tKb7-ZrZ984nkxB9O44gJ6DPqMrBk4RzREiTXM5Sm3AAIu4CX7hvKXTChFVBxFzPybw1qVN6fC0M-uJ_e)
 
@@ -186,7 +186,7 @@ private fun screen() :Widget{
 
 ### **Right**
 
-Defines some space at the element right side:
+Defines some space at the element's right side:
 
 ![](https://lh4.googleusercontent.com/PJI8H4OiFuatQ-wINUiMXbvO3-n8_c159_9XnfyNvdFkeO8xmS31og6_JBhoXJEC2ZQQaaMMeJXQxueznoLwWSOg7V1ZcCjVhXVydoKG9jzXRYmG18Ll_7jDEUy1jExBYK3NQLT9)
 
@@ -244,7 +244,7 @@ private fun screen() :Widget{
 
 ### **Top** 
 
-Defines some space at the element top:
+Defines some space at the element's top:
 
 ![](https://lh3.googleusercontent.com/eELU1dNIiBHmZSSQfm2Vt_lIDF3oZPP-FAKngOD_TwZjLfEq3-ZCHUZGD17I3n1uX-wd4DBhOhjgB60Ijo3Q0aeVZagXbQbgFhhlAq9ltxh2t2UcHvBejsQPbM1FD0SbAmU5QC5z)
 
@@ -416,4 +416,4 @@ private fun screen() :Widget{
 {{% /tab %}}
 {{< /tabs >}}
 
-For more information about Margin, check out the[**Yoga Layout documentation**](https://yogalayout.com/docs/flex/)
+**For more information about Margin, check out the[**Yoga Layout documentation**](https://yogalayout.com/docs/flex/).**

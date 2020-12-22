@@ -27,7 +27,7 @@ data class CustomActionAndroid(
 ```
 
 
-Now, with the action ready to execute asynchronously, we have to **MANDATORILY** notify when its execution is finished through the `onActionFinished` method.
+Now, with the action ready to execute asynchronously, you have to **MANDATORY** notify when its execution is finished through the `onActionFinished` method.
 
 
 ```kotlin

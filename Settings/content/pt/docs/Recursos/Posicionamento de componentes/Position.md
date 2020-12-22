@@ -12,8 +12,8 @@ Esta propriedade determina a posição de um assume em tela e os seus valores `t
 
 O elemento dentro do Position pode ter diferentes tipos de deslocamento se forem:
 
-* **Relative:** os elementos se deslocam em uma direção específica 
-* **Absolute:** os elementos se deslocam na mesma direção definida para o elemento pai. 
+* **`Relative`:** os elementos se deslocam em uma direção específica. 
+* **`Absolute`:** os elementos se deslocam na mesma direção definida para o elemento pai. 
 
 ## **Propriedades** 
 
