@@ -31,7 +31,7 @@ We provided a constant `BEAGLE_EXPOSED_HEADERS`, that contains a list of headers
 
 ### Step 1: Create a service
 
-{{< tabs name="T2" >}}
+{{< tabs id="T2" >}}
 {{% tab name="Micronaut" %}}
 First, you should create a class to configure a `Service` . The process is pretty simple, you just have to: 
 
@@ -117,7 +117,7 @@ private class MyScreenBuilder(
 
 ### Step 2: Create a controller
 
-{{< tabs name="T3" >}}
+{{< tabs id="T3" >}}
 {{% tab name="Micronaut" %}}
 The next step is to create a `Controller`class to expose our components through REST API. This class will be noted as `@Controller`.
 
@@ -190,7 +190,7 @@ class MyController(private val myService: MyService) {
 
 You can configure cache and serialization using the lines below, by adding them to your `application.properties`. 
 
-{{< tabs name="T4" >}}
+{{< tabs id="T4" >}}
 {{% tab name="Micronaut" %}}
 The cache is configured to include `/screen` and `/widget` endpoints. The TTL for the `/screen` endpoint is configured to 50 seconds.
 
@@ -226,7 +226,7 @@ Serialization is configured to skip values that are not null and format the JSON
 **Required configuration only to use your BFF with web front-end.**
 {{% /alert %}}
 
-{{< tabs name="T5" >}}
+{{< tabs id="T5" >}}
 {{% tab name="Micronaut" %}}
 You can configure CORS with the lines below, adding them in your `application.properties`.
 
@@ -268,7 +268,7 @@ Use a permissive configuration like this one, only in local development environm
 
 We have an enabled CORS withmeusite.com.br like the permitted origin: `GET`, `PUT`, `POST` like the allowed methods `Cache-control` like an allowed header; and `beagle-hash`, `x-meu1` like exposed header. 
 
-{{< tabs name="T6" >}}
+{{< tabs id="T6" >}}
 {{% tab name="Micronaut" %}}
 
 ```kotlin
@@ -307,7 +307,7 @@ open class CorsConfig : WebMvcConfigurer {
 
 After you have done the configuration above, you can start your BFF. Just run the command below in your project, a reminder, it needs to starts the server on port 8080 in your localhost. 
 
-{{< tabs name="T7" >}}
+{{< tabs id="T7" >}}
 {{% tab name="Micronaut" %}}
 ```bash
 $ mvn compile exec:exec

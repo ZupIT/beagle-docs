@@ -10,7 +10,7 @@ description: >-
 
 ## How does cache work? 
 
-As in other platforms the pattern cache is controlled by the backend with the tag `cache-control` and `beagle-hash`, they are information that must be provided through request header, where `beagle-hash` is responsible for providing this hash related to the screen that has been downloaded and `cache-control` for the life time of this cache as reliable. 
+As in other platforms the pattern cache is controlled by the backend with the tag `cache-control` and `beagle-hash`, they are information that must be provided through request header, where `beagle-hash` is responsible for providing this hash related to the screen that has been downloaded and `cache-control` for the life time of this cache as **reliable**. 
 
 ### Reliable cache
 
@@ -54,7 +54,7 @@ Every platform has different specifications to configure the cache.
 
 We listed below, see: 
 
-{{< tabs name="T12" >}}
+{{< tabs id="T12" >}}
 {{% tab name="Android" %}}
 In Android, the cache is configured when you implement the first Beagle's configuration. 
 
@@ -137,7 +137,7 @@ The cache was created to optimize the response of a request in terms of size and
 
 To make this configuration: 
 
-1. Search inside the ‌`src/main/resources` folder for the file`application.properties`
+1. Search inside the ‌`src/main/resources` folder for the file `application.properties`
 2. If you don't have it, you can install now.
 
 In case the key is not listed in your file, it means that the standard configuration will be applied automatically. 
@@ -209,9 +209,9 @@ In the list below, you will find what are the available properties and which con
 {{% /tab %}}
 
 {{% tab name="Web" %}}
-On web, the cache is configured when it's defined the initials configurations of Beagle Web on the `strategy` parameter, which is one of `BeagleModule` parametes \(if you're using Angular\) or`createBeagleUIService`\(if you're using React\). 
+On web, the cache is configured when it's defined the initials configurations of Beagle Web on the `strategy` parameter, which is one of `BeagleModule` parametes \(if you're using Angular\) or `createBeagleUIService`\ (if you're using React\). 
 
-By default, the cache comes enabled with**`beagle-with-fallback-to-cache`** strategy, however the `beagle-cache-only` strategy can also be used to implement [**Beagle's cache protocol**](../../customization/beagle-for-web/).
+By default, the cache comes enabled with **`beagle-with-fallback-to-cache`** strategy, however the `beagle-cache-only` strategy can also be used to implement [**Beagle's cache protocol**](../../customization/beagle-for-web/).
 
 {{% alert color="warning" %}}
 Remember to set CORS enabled for backend when you want to use cache's strategy for Beagle on Web.

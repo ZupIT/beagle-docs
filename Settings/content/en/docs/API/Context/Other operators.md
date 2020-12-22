@@ -18,7 +18,7 @@ description: You will find a description of other operators.
 
 A context with `numbersArray` id that has  **\[0, 1, 2, 3, 4\]** as value and the operation length was used in one component Text to get the size of this array, see below: 
 
-{{< tabs name="T146" >}}
+{{< tabs id="T146" >}}
 {{% tab name="Kotlin" %}}
 ```kotlin
 fun screen() = Screen(child = 

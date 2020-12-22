@@ -78,7 +78,7 @@ A estrutura do Confirm é:
 
 Segue abaixo um exemplo com um botão que ao clicado exibe um modal de confirmação:
 
-{{< tabs name="T109" >}}
+{{< tabs id="T109" >}}
 {{% tab name="JSON" %}}
 <!-- json-playground:confirm.json
 {

@@ -193,7 +193,7 @@ Os principais atributos são:
 
 No exemplo abaixo, utilizamos um Container para exemplificar os atributos de um widget. A classe que define um componente visual deve estender da classe `widget.`
 
-{{< tabs name="T177" >}}
+{{< tabs id="T177" >}}
 {{% tab name="JSON" %}}
 ```markup
 {

@@ -18,7 +18,7 @@ This is how it displays
 
 ![](https://lh3.googleusercontent.com/u2gdm-w0DSIrhM07gy50F5bZyJQxeb0ZIU14OSYTgHSaNvFzPIWLfuNV7H-c9G_DkqathtRsM3R8a9KGJePgqJURYS0-cpd8BUHBlLdEyPFIcOAAuP6kM7_KD1y-Rd0wSo_xTIMb)
 
-{{< tabs name="T61" >}}
+{{< tabs id="T61" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -70,13 +70,13 @@ private fun screen() :Widget{
 
 ### **Absolute**
 
-This element when you wish that an element "escape" the normal flow on the layout. He will ignore other elements and displays acording to its father parent. 
+This element when you wish an element to "escape" the normal flow on the layout. It will be displayed regardless of its siblings.
 
-Check how it works:
+Check it out how it works:
 
 ![](https://lh3.googleusercontent.com/bgiRV_Q8dDvwAyBhF0KLY_1PAr-frFbSnBoolJ4CeUGBNNtophsHr-e14TqFPInoUFsC4TNx9y1FXafbwMI9zNC2D6TJokzo-cdxeJ_pxQMuDrMO5d0QS-bT2HmsDpIDt0y13k26)
 
-{{< tabs name="T62" >}}
+{{< tabs id="T62" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -129,4 +129,4 @@ private fun screen() :Widget{
 {{% /tab %}}
 {{< /tabs >}}
 
-For more information about PositionType, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/).
+**For more information about PositionType, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/).**

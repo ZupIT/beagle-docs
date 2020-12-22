@@ -39,9 +39,9 @@ This function is part of the TextInput and it observes the changes made within i
 
 Check our example below on how we implemented a `SimpleForm` 
 
-{{< tabs name="T132" >}}
+{{< tabs id="T132" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:simpleform.json
  {
   "_beagleComponent_":"beagle:simpleForm",
   "context":{
@@ -79,7 +79,8 @@ Check our example below on how we implemented a `SimpleForm`
     }
   ]
 }
-```
+-->
+{{% playground file="simpleform.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -119,4 +120,3 @@ To submit a form, you must use the SubmitForm action and call it, just implement
 
 When you click this button, the onSubmit is activated and the list of actions will be performed. It is this list of actions that will define what should happen with the information in this form, if they will be sent to a backend \(through the [sendRequest ](../../../actions/sendrequest)action\), etc.
 
-### 👉 [Test this component in the Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/simpleform.json)

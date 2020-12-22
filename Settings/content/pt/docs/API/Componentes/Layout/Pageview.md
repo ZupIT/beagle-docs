@@ -72,9 +72,9 @@ A sua estrutura é representada como mostrado abaixo:
 
 No exemplo abaixo segue um PageView contendo três páginas onde cada uma delas tem um Text que é definido por Contexto. Toda vez que há mudança de página o contexto é redefinido.
 
-{{< tabs name="T148" >}}
+{{< tabs id="T148" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:pageView.json
 {
    "_beagleComponent_":"beagle:container",
    "children":[
@@ -119,7 +119,8 @@ No exemplo abaixo segue um PageView contendo três páginas onde cada uma delas 
       "value":0
    }
 }
-```
+-->
+{{% playground file="pageView.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -151,5 +152,3 @@ Container(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### [👉 Teste esse componente no Web Playground​](https://beagle-playground.netlify.app/#/demo/default-components/pageview.json)

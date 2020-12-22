@@ -74,7 +74,7 @@ Confirm structure is:
 
 ## How to use it?
 
-{{< tabs name="T91" >}}
+{{< tabs id="T91" >}}
 {{% tab name="JSON" %}}
 <!-- json-playground:confirm.json
 {

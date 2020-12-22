@@ -28,9 +28,9 @@ The example below, we have a screen coming from BFF with a button when you click
 
 To test is, just configure [**Deep Link Handler**](../../../resources/customization/beagle-for-android/deep-link-handler) for Android or **openNativeRoute** for iOS. Besides, your BFF's endpoint must return the code screen below and call it in the frontend. 
 
-{{< tabs name="T92" >}}
+{{< tabs id="T92" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:openNativeRoute.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -43,7 +43,8 @@ To test is, just configure [**Deep Link Handler**](../../../resources/customizat
     } ]
   }
 }
-```
+-->
+{{% playground file="openNativeRoute.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -61,5 +62,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Test this example on Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

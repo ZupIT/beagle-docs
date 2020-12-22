@@ -20,7 +20,3 @@ description: PageIndicatorComponent description.
 ## How to use it? 
 
 An example on how to use `PageIndicator` can be foun on [**PageView**](pageview#como-usar).
-
-### [👉 Test this component in the Web Playground​](https://beagle-playground.netlify.app/#/demo/default-components/pageview.json)
-
-\`\`

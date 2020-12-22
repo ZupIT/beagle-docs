@@ -63,9 +63,9 @@ A estrutura do Alert é:
 
 Abaixo segue um exemplo de um botão que ao clicado mostra um Alert:
 
-{{< tabs name="T107" >}}
+{{< tabs id="T107" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:alert.json
 {
     "_beagleComponent_": "beagle:container",
     "children": [
@@ -83,7 +83,8 @@ Abaixo segue um exemplo de um botão que ao clicado mostra um Alert:
           }
         ]
       }
-```
+-->
+{{% playground file="alert.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -105,5 +106,3 @@ Container(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-###  👉 [Teste essa ação no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)​

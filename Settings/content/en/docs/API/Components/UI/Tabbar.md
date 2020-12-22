@@ -46,7 +46,7 @@ The **Context** is used to save the indicator \(position\) of the selected tab, 
 
 ### Example
 
-{{< tabs name="T120" >}}
+{{< tabs id="T120" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

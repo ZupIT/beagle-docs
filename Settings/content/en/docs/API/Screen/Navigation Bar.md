@@ -31,7 +31,7 @@ Class that defines an item for `Navigation's bar` and and it has the following a
 
 ## **How to use it?**
 
-{{< tabs name="T157" >}}
+{{< tabs id="T157" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

@@ -22,7 +22,7 @@ Class that helps on your screen's components area. The `Safe Area` guarantees th
 
 ## **How to use it?**
 
-{{< tabs name="T158" >}}
+{{< tabs id="T158" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

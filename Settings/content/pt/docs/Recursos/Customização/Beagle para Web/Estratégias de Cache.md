@@ -100,7 +100,7 @@ Para mudar a estratégia de cache, você deve utilizar o parâmetro `strategy` c
 
 Nas configs abaixo, você encontra um exemplo de como alterar a estratégia para`network-only`:
 
-{{< tabs name="T79" >}}
+{{< tabs id="T79" >}}
 {{% tab name="Angular" %}}
 ```text
 @BeagleModule({

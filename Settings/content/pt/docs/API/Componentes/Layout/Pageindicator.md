@@ -20,5 +20,3 @@ O `PageIndicator` é um componente que tem como funcionalidade indicar a quantid
 ## Como usar?
 
 Um exemplo completo de como usar o `PageIndicator` está em [**PageView**](pageview#como-usar).
-
-### [👉 Teste esse componente no Web Playground​](https://beagle-playground.netlify.app/#/demo/default-components/pageview.json)

@@ -18,9 +18,9 @@ No exemplo abaixo, temos uma tela vinda do BFF com um botão que ao clicar nele,
 
 Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo, e chamar esse endpoint no Frontend.
 
-{{< tabs name="T114" >}}
+{{< tabs id="T114" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:popStack.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -31,7 +31,8 @@ Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo, 
     } ]
   }
 }
-```
+-->
+{{% playground file="popStack.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -47,5 +48,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste esse exemplo no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

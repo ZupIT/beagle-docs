@@ -16,7 +16,7 @@ Você pode ter outros componentes visuais também, e ainda pode criar componente
 
 O Beagle possui **14** **componentes** atualmente divididos em **5 categorias**:
 
-{{< tabs name="T132" >}}
+{{< tabs id="T132" >}}
 {{% tab name="Layout" %}}
 * [**Container**](layout/container)
 * [**List View**](layout/listview)

@@ -30,9 +30,9 @@ Para testar, iremos precisar de três endpoints:
 
 #### Como chamar a tela zero
 
-{{< tabs name="T119" >}}
+{{< tabs id="T119" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:firstScreenonStack.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -46,14 +46,15 @@ Para testar, iremos precisar de três endpoints:
       "onPress" : [ {
         "_beagleAction_" : "beagle:pushView",
         "route" : {
-          "url" : "/firstScreen",
+          "url" : "secondScreenonStack.json",
           "shouldPrefetch" : false
         }
       } ]
     } ]
   }
 }
-```
+-->
+{{% playground file="firstScreenonStack.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="KotlinDSL" %}}
@@ -69,7 +70,7 @@ Screen(
                 onPress = listOf(
                     Navigate.PushView(
                         Route.Remote(
-                            url = "/firstScreen"
+                            url = "secondScreenonStack.json"
                         )
                     )
                 )
@@ -83,9 +84,9 @@ Screen(
 
 #### Como chamar a Tela 1
 
-{{< tabs name="T120" >}}
+{{< tabs id="T120" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:secondScreenonStack.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -99,14 +100,15 @@ Screen(
       "onPress" : [ {
         "_beagleAction_" : "beagle:pushView",
         "route" : {
-          "url" : "/secondScreen",
+          "url" : "resetApplication.json",
           "shouldPrefetch" : false
         }
       } ]
     } ]
   }
 }
-```
+-->
+{{% playground file="secondScreenonStack.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="KotlinDSL" %}}
@@ -122,7 +124,7 @@ Screen(
                 onPress = listOf(
                     Navigate.PushView(
                         Route.Remote(
-                            url = "/secondScreen"
+                            url = "resetApplication.json"
                         )
                     )
                 )
@@ -136,9 +138,9 @@ Screen(
 
 #### Como chamar a Tela 2
 
-{{< tabs name="T121" >}}
+{{< tabs id="T121" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:resetApplication.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -152,14 +154,15 @@ Screen(
       "onPress" : [ {
         "_beagleAction_" : "beagle:resetApplication",
         "route" : {
-          "url" : "/home",
+          "url" : "firstScreenonStack.json",
           "shouldPrefetch" : false
         }
       } ]
     } ]
   }
 }
-```
+-->
+{{% playground file="resetApplication.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -174,7 +177,7 @@ Screen(
                 text = "Click me  to reset application",
                 onPress = listOf(
                     Navigate.ResetApplication(
-                        route = Route.Remote("/home")
+                        route = Route.Remote("firstScreenonStack.json")
                     )
                 )
             )
@@ -184,5 +187,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste esse exemplo no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)
