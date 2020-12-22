@@ -32,21 +32,33 @@ It is an `ENUM`, which values are:
 
 {{< tabs id="T88" >}}
 {{% tab name="JSON" %}}
-```javascript
-                "_beagleAction_": "beagle:addChildrenAction",
-                "componentId": "MyContainerID",
-                "value": [{
-                        "_beagleComponent_": "beagle:text",
-                        "text": "This is the new view added"
-                    }
-                ],
-                "mode": "APPEND"
+<!-- json-playground:addChildrenAction.json
+{
+"_beagleComponent_": "beagle:container",
+"id": "containerId",
+"children": [
+   {
+   "_beagleComponent_":"beagle:button",
+   "text":"AddChildren",
+   "onPress":[
+      {
+         "_beagleAction_":"beagle:addChildren",
+         "componentId":"containerId",
+         "value":[
+            {
+               "_beagleComponent_":"beagle:text",
+               "text":"New text added"
             }
-        ]
-    }
-],
-"id": "MyContainerID"
-```
+         ],
+         "mode":"APPEND"
+      }
+   ]
+}
+
+]
+}
+-->
+{{% playground file="addChildrenAction.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -55,17 +67,15 @@ Container(
     children = listOf(
         Button("AddChildren", onPress = listOf(
             AddChildrenAction(
-                componentId = "MyContainerID",
+                componentId = "containerId",
                 value = listOf(
-                    Text("This is the new view added")
+                    Text("New text added")
                 ),
 				mode = Mode.APPEND
             )
         ))
     )
-).apply { id = "MyContainerID" }
+).apply { id = "containerId" }
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-##
