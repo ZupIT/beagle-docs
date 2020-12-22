@@ -24,7 +24,7 @@ Esta conexão entre frontend e backend é feita via `WebSocket` utilizando a por
 
 Para usar o `Live Preview` você deve: 
 
-* Usar o [**Beagle SDK**](../../../get-started/instalando-o-beagle/backend) em seu BFF **;**
+* Usar o [**Beagle SDK**](/pt/docs/primeiros-passos/instalando-o-beagle/backend) em seu BFF **;**
 * Instalar o `BeaglePreview` plugin;
 
 ### Configuração do BFF

@@ -20,7 +20,7 @@ This frontend and backend connection is done through a `WebSocket` on port: `972
 
 To use `Live Preview`, you must: 
 
-* Use [**Beagle SDK**](../../get-started/installing-beagle/beagle-backend) in your BFF **;**
+* Use [**Beagle SDK**](/docs/get-started/installing-beagle/backend) in your BFF **;**
 * Install `BeaglePreview` plugin;
 
 ### BFF Configuration
@@ -71,7 +71,7 @@ class ScreenBeagleBuilder: ScreenBuilder {
 If your function is recognized by the plugin, the Beagle logo will appear as a button to the left of the function. When clicking this button, `BeaglePreview` will push the layout to the client \(frontend application\), allowing it to update on your layout instantly!
 See the example below: 
 
-![](/docs-beagle/livepreviewpluginintellijidea.gif)
+![](/livepreviewpluginintellijidea.gif)
 
 After running the plugin on some function, you only need to save the changes done in your layout so that the Live Preview updates the screen being rendered by the frontend. It does this by compiling your modified code and verifying if there is some change and, if there is, push your new layout to the client.
 
