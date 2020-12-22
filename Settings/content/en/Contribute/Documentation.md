@@ -12,7 +12,7 @@ description: >-
 
 {{% alert color="success" %}}
 
-We use the tool [**Hugo**](https://gohugo.io/documentation/) to create static sites ideal for documentation, so we chose to use it. All the content of the documentation is done in markdown, if you have difficulties with this syntax access this [**basic guide**](https://www.markdownguide.org/basic-syntax/).
+We use the tool [**Hugo**](https://gohugo.io/documentation/) to create static sites, what is ideal for documentation. All the documentation content is made in markdown. If you have any difficulty with this syntax, you can access this [**basic guide**](https://www.markdownguide.org/basic-syntax/).
 
 - It is important to remember that hugo has some shortcuts to create useful components. These shortcuts are very practical when creating a table, alert, glossary, embedded videos, etc. To learn more about using hugo shortcodes in markdown, visit this [**basic guide**](../ hugo-shortcodes).
 {{% /alert %}}
