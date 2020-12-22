@@ -1,7 +1,7 @@
 ---
-title: Testes
+title: Test
 weight: 235
-description: 'Nesta seção, você encontra mais detalhes de testes em aplicações com o Beagle.'
+description: 'On this section, you will find more details about tests in Beagle's applications.'
 ---
 
 ---
