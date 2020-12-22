@@ -77,7 +77,7 @@ Se sua função for reconhecida pelo plugin, o símbolo do Beagle aparecerá com
 
 Veja como no exemplo abaixo: 
 
-![](/docs-beagle/livepreviewpluginintellijidea.gif)
+![](/livepreviewpluginintellijidea.gif)
 
 Depois de acionar o plugin para alguma função, basta você salvar as modificações realizadas no seu layout para que o Live Preview atualize a tela sendo renderizada pelo frontend. 
 

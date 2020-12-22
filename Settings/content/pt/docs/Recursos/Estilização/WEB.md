@@ -69,7 +69,7 @@ yarn serve
 
 Depois que você adicionar o enum None à propriedade encapsulation do @Component\(\), é necessário fazer com que ela seja utilizada. Veja como na imagem abaixo: 
 
-![](/docs-beagle/image%20%2812%29.png)
+![](/image%20%2812%29.png)
 
 {{% alert color="info" %}}
 Para entender mais sobre o **ViewEncapsulation**, acesse a [**documentação do Angular.**](https://angular.io/api/core/ViewEncapsulation#viewencapsulation)

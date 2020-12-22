@@ -50,7 +50,7 @@ After you add the JSON on your project, create another file in the path `/src`, 
 
 Once you made it, your structure must be similar to the image below:
 
-![](/docs-beagle/image%20%2863%29.png)
+![](/image%20%2863%29.png)
 
 Now open the  `beagle-service.ts` file and copy this code:
 
@@ -92,8 +92,9 @@ export default App;
 
 When we make this note, we indicate to Beagle that our defined layout will be rendered on `payload.json` file. In this case, two components are provided on the library:
 
-1. `<BeagleProvider>`: Responsible to provide a `value`propriety  as `beagle-service` created on the previous step and contains the initial configurations;  
-2. `<BeagleRemoteView>`: Responsible to receive a `path` propriety, which is the path to our JSON file.
+1. `<BeagleProvider>`: Responsible to provide a `value` propriety  as `beagle-service` created on the previous step and contains the initial configurations;  
+2. `<BeagleRemoteView>`: Responsible to render the layout defined by the JSON specified by the `route` property.
+
 
 {{% alert color="info" %}}
 See that here we added  **' / '** because this value will be associated to the defined`baseUrl` on the file `beagle-service.ts`
@@ -120,7 +121,7 @@ npm run start
 After finished this commands, access the local: localhost:3000   
 You will see this screen:
 
-![](/docs-beagle/image%20%2895%29.png)
+![](/image%20%2895%29.png)
 
 {{% alert color="success" %}}
 Well done, you created your first screen with Beagle!

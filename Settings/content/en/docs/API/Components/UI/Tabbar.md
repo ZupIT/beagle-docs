@@ -132,7 +132,7 @@ Screen(
 
 | Tab Bar |
 | :---: |
-| ![](/docs-beagle/beagle-tab-view.gif) |
+| ![](/beagle-tab-view.gif) |
 
 ### 👉 [Test this component on the Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/analytics.json)
 

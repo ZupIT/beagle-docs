@@ -12,7 +12,7 @@ Para criar um projeto iOS no Beagle, você primeiro precisa ter o Xcode instalad
 
 Antes de começar, você primeiro precisar criar um projeto no `Xcode`. Para isso, basta abrir o programa e nomear o seu projeto. Para este exemplo, colocaremos como **Beagle Sample.** 
 
-![](/docs-beagle/captura-de-tela-2020-04-08-a-s-10.35.19.png)
+![](/captura-de-tela-2020-04-08-a-s-10.35.19.png)
 
 Após criar o seu projeto, precisaremos adicionar as dependências. Para isso, usaremos o gerenciador `CocoaPods`.
 
@@ -63,7 +63,7 @@ pod install
 
 Depois da instalação, você deve abrir o arquivo que possui a extensão **`workspace.`** Neste exemplo, nós o chamaremos de `Beagle Sample.workspace`
 
-![](/docs-beagle/captura-de-tela-2020-04-08-a-s-10.23.09.png)
+![](/captura-de-tela-2020-04-08-a-s-10.23.09.png)
 
 ### Passo 2: Configurar o Beagle
 
@@ -73,9 +73,9 @@ Agora que seu projeto está criado, você deve fazer as configurações do **Bea
 
 Esta classe será responsável por conter parte da configuração inicial do Beagle. Nela, implementaremos uma função estática **`config`** para aplicar essas configurações.
 
-    2. Nesta função crie uma constante chamada **`dependency`** que deve ser do tipo**`BeagleDependencies`**. 
+2. Nesta função crie uma constante chamada **`dependency`** que deve ser do tipo **`BeagleDependencies`**. 
 
-A esta constante serão atribuídas algumas configurações do projeto, como por exemplo, listar a URL base que lista o`JSON` a ser utilizado na construção de uma tela server-driven. Para configurar esta constante, use o exemplo abaixo:
+A esta constante serão atribuídas algumas configurações do projeto, como por exemplo, listar a URL base que lista o `JSON` a ser utilizado na construção de uma tela server-driven. Para configurar esta constante, use o exemplo abaixo:
 
 
 ```swift
@@ -95,7 +95,7 @@ class BeagleConfig {
 ```
 
 
-Agora, vamos configurar a classe**`SceneDelegate`** para que possamos inicializar nossa aplicação com o Beagle a partir de uma tela via [**BFF**:](../../../../../../principais-conceitos#backend-for-frontend)
+Agora, vamos configurar a classe **`SceneDelegate`** para que possamos inicializar nossa aplicação com o Beagle a partir de uma tela via [**BFF**:](../../../../../../principais-conceitos#backend-for-frontend)
 
 * Crie a constante **`beagleScreen`**, que irá receber a tela server-driven. 
 * O argumento `init URL` deve conter o endereço da [**URL relativa**](../../../../../features/urls#caminho-relativo) que será criada no backend \(BFF\). No nosso exemplo a chamaremos de "/screen"
@@ -110,7 +110,7 @@ window?.rootViewController = beagleScreen
 window?.makeKeyAndVisible()
 ```
 
-Ao final, a classe**`SceneDelegate`** deve ficar assim:
+Ao final, a classe **`SceneDelegate`** deve ficar assim:
 
 ![](https://lh5.googleusercontent.com/JcpliGK0G3QJyLlZIDcwD8X7TZfO7QKEjCcVmWNjX0NHoS8gHl8XOZrSg6dfVntZkusNGmJxRWTa3Ps_xrhCQsIQPOzsFZ375uLqDx1qvuWJWeOnlnQkQy8EkcvMuWhJ6KU8tF-r)
 
@@ -133,11 +133,11 @@ _**`Application Session Role` &gt;
 
 No GIF abaixo, você vê melhor como remover as referências:
 
-![](/docs-beagle/main%20%282%29.gif)
+![](/main%20%282%29.gif)
 
 Feito! O Beagle está configurado na sua aplicação iOS. Agora, tudo o que você precisa é [**configurar um backend**](../../case-backend) para responder as requisições do seu aplicativo server-driven.
 
 Feita essa configuração, inicie a sua aplicação e você terá sua primeira tela server-driven!   
 Você verá a tela a seguir: 
 
-![](/docs-beagle/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)
+![](/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)

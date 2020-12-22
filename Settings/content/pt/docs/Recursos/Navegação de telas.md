@@ -58,7 +58,7 @@ Button(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/docs-beagle/navigate-remote.gif)
+![](/navigate-remote.gif)
 
 
 
