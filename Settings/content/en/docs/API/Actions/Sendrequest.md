@@ -29,7 +29,7 @@ See below an example of a button that send a `POST` request with data user:
 
 {{< tabs id="T109" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:send.json
 {
   "_beagleComponent_": "beagle:container",
   "children": [
@@ -39,7 +39,7 @@ See below an example of a button that send a `POST` request with data user:
       "onPress": [
         {
             "beagleAction":"beagle:sendRequest",
-            "url":"https://myUrl.com/endpoint"",
+            "url":"https://myUrl.com/endpoint",
             "method":"POST",
             "headers":{
                "Content-Type":"application/json"
@@ -76,7 +76,8 @@ See below an example of a button that send a `POST` request with data user:
     }
   ]
 }
-```
+-->
+{{% playground file="send.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -121,5 +122,3 @@ Button(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Test this action in the Web Playground](https://beagle-playground.netlify.app/#/cloud/835cfa6d6811402cb338c9afeb1507cf/sendRequest.json)

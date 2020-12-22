@@ -28,7 +28,7 @@ See below an example of a text that is set by context and have an initial value 
 
 {{< tabs id="T110" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:setcontext.json
 {
   "_beagleComponent_": "beagle:container",
   "context":{
@@ -42,7 +42,7 @@ See below an example of a text that is set by context and have an initial value 
     },
     {
       "_beagleComponent_": "beagle:button",
-      "text": "Open Modal",
+      "text": "Change context",
       "onPress": [
         {
           "_beagleAction_": "beagle:setContext",
@@ -53,7 +53,8 @@ See below an example of a text that is set by context and have an initial value 
     }
   ]
 }
-```
+-->
+{{% playground file="setcontext.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -62,7 +63,7 @@ Container(
     children = listOf(
         Text(text = "@{myContext}"),
         Button(
-             text = "Open Modal",
+             text = "Change context",
              onPress = listOf(
                   SetContext(
                        contextId = "myContext",
@@ -80,4 +81,3 @@ Container(
 {{% /tab %}}
 {{< /tabs >}}
 
-### 👉 [Test this action in the Web Playground](https://beagle-playground.netlify.app/#/cloud/701b73771594478795b9c0dc6e088c0b/setContext.json)
