@@ -1,19 +1,10 @@
 ---
-title: Ações customizadas
+title: Ação Customizada Simples
 weight: 141
-description: >-
-  Nesta seção, você encontra a descrição de como criar uma Custom Action e
-  detalhes dos métodos que ela implementa.
+description: Criando e executando uma ação customizada
 ---
 
 ---
-
-## Introdução
-
-Uma `action` é um bloco de código que pode ser executado quando definido em algum evento. O Beagle já possui algumas por padrão, mas é possível criar sua action personalizada. 
-
-## Exemplo
-
 ### Como criar uma custom action?
 
 Para criar uma custom action, siga os seguintes passos: 
