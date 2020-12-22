@@ -91,9 +91,9 @@ public BeagleTest typeIntoTextField(int position1, int position2, String text) {
 }
 ````
 
-{{% /tab %}}
+{{% alert color="success" %}}
 
 Done, your orchestrated test has been peformed! 
 
-{{% /sucess %}}
+{{% /alert %}}
 
