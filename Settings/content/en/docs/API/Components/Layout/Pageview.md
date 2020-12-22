@@ -74,7 +74,7 @@ On the example below you will see a PageView that contains three pages where eac
 
 {{< tabs id="T130" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:pageView.json
 {
    "_beagleComponent_":"beagle:container",
    "children":[
@@ -119,7 +119,8 @@ On the example below you will see a PageView that contains three pages where eac
       "value":0
    }
 }
-```
+-->
+{{% playground file="pageView.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -151,5 +152,3 @@ Container(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### [👉 Test this component in the Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/pageview.json)

@@ -78,38 +78,28 @@ A sua estrutura é representada como mostrado abaixo:
 
 {{< tabs id="T149" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:scrollView.json
 {
-  "_beagleComponent_": "beagle:container",
-  "style": {
-    "flex": {
-      "alignItems": "CENTER",
-      "justifyContent": "CENTER"
-    }
-  },
-  "children": [
-    {
-      "_beagleComponent_": "beagle:scrollView",
-      "children": [
-        {
-          "_beagleComponent_": "beagle:image",
-          "path": {
-            "_beagleImagePath_": "remote",
-            "url": "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg"
-          }
-        },
-        {
-          "_beagleComponent_": "beagle:image",
-          "path": {
-            "_beagleImagePath_": "remote",
-            "url": "https://i.ibb.co/LCKYdCT/742px-Example-en-svg.png"
-          }
-        }
-      ]
-    }
-  ]
+   "_beagleComponent_":"beagle:scrollview",
+   "children":[
+      {
+         "_beagleComponent_":"beagle:text",
+         "text":"Vertical ScrollView"
+      },
+      {
+         "_beagleComponent_":"beagle:text",
+         "text":"Vertical ScrollView"
+      },
+      {
+         "_beagleComponent_":"beagle:text",
+         "text":"Vertical ScrollView"
+      }
+   ],
+   "scrollDirection":"VERTICAL"
 }
-```
+
+-->
+{{% playground file="scrollView.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -122,5 +112,3 @@ ScrollView(scrollDirection = ScrollAxis.VERTICAL,
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste esse componente no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/container.json)​
