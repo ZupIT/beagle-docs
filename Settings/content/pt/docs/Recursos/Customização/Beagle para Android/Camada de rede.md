@@ -10,7 +10,7 @@ description: >-
 
 ## Introdução
 
-A interface HTTPClient define como as solicitações de serviços são configuradas. Para usá-la, você precisa criar uma classe que implemente uma interface do tipo `HttpClient`.
+Esta interface define como as requisições de serviços são configuradas, para usá-lo, você precisa criar uma classe que implemente uma interface `HttpClient` .
 
 Aqui, você pode adicionar cabeçalhos às suas requisições, definir os métodos request, body response,  data response, executar criptografia, etc.
 
@@ -25,18 +25,18 @@ interface HttpClient {
 }
 ```
 
-No método *execute*, você consegue criar as regras de sua camada de rede, fazendo com que e o beagle reconheça a sua regra.
+No método execute, você consegue criar as regras de sua camada de rede, fazendo com que o beagle reconheça a sua regra.
 
 | **Atributo** | **Tipo** | **Definição** |
 | :--- | :--- | :---: |
-| request | RequestData  | RequestData é a classe para fazer configuração solicitações http. |
-| onSuccess | (responseData: ResponseData) -> Unit | Higher-Order Functions responsavel pelo retorno de sucesso |
-| onError | (responseData: ResponseData) -> Unit | Higher-Order Functions responsavel pelo retorno de erro |
+| request | RequestData  |RequestData é a classe para fazer configuração e solicitações http. |
+| onSuccess | (responseData: ResponseData) -> Unit | Higher-Order Functions responsável pelo retorno de sucesso |
+| onError | (responseData: ResponseData) -> Unit | Higher-Order Functions responsável pelo retorno de erro |
 
 
 ## Criando uma camada de rede customizada
 
-Para criar uma camada de rede personalizada, siga um exemplo abaixo com as seguintes passos.
+Para criar uma camada de rede customizada, siga um exemplo abaixo com as seguintes passos.
 
 ### Passo 1: Adicionar as dependências
 
@@ -52,9 +52,9 @@ Essa dependência é necessária, pois a classe que implementa `HttpClient` vai 
 
 ### Passo 2: Criar a object CoroutineDispatchers
 
-Crie um object e escolha o nome que você desejar. Nesse exemplo, foi dado o nome de `CoroutineDispatchers`. 
+Crie um objeto e escolha um nome para ele, por exemplo CoroutineDispatchers 
 
-Esse object é responsavel por configurar os *CoroutineDispatchers*, que vai ditar em qual thread as tarefas será executado.
+Esse object é responsável por configurar os CoroutineDispatchers, que irá ditar em qual thread as tarefas serão executadas
 
 ```kotlin
 import kotlinx.coroutines.CoroutineDispatcher
@@ -78,11 +78,11 @@ internal object CoroutineDispatchers {
 }
 ```
 
-### Passo 3: Criar a um arquivo HttpURLConnectionExtensions
+### Passo 3: Criar um arquivo HttpURLConnectionExtensions
 
 Crie um arquivo e escolha o nome que você desejar. Nesse exemplo, foi dado o nome de `HttpURLConnectionExtensions`.  
 
-Esse arquivo é responsavel por conter métodos para retorno da regra do *HttpURLConnection*, assim usaremos esses métodos na classe HttpClientDefault.
+Este arquivo é responsável por conter métodos para retornar a regra * HttpURLConnection * , portanto, usaremos esses métodos na classe HttpClientDefault.
 
 ```kotlin
 import java.lang.Exception
@@ -113,7 +113,7 @@ internal fun <T> getMessageFormatted(getData: GetData<T>): T? {
 
 ### Passo 4: Criar a classe HttpClientDefault
 
-Crie a classe e escolha o nome que você desejar. Nesse exemplo, foi dado o nome de `HttpClientDefault`.  
+Crie uma classe e escolha um nome para ela. Para o exemplo, `HttpClientDefault` foi escolhido.
 
 A classe HTTPClientDefault define como as solicitações de serviços são configuradas. Para usá-la, você precisa criar uma classe que implemente uma interface do tipo `HttpClient`.
 
