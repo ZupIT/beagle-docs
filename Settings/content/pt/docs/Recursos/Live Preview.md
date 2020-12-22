@@ -89,7 +89,7 @@ O Live Preview faz isso ao compilar seu código modificado e verificar se existe
 
 Uma vez configurado o seu backend, o próximo passo é configurar o emulador no frontend da sua aplicação com um projeto Beagle Android ou  Beagle iOS. 
 
-{{< tabs name="T88" >}}
+{{< tabs id="T88" >}}
 {{% tab name="Cliente Android" %}}
 ### Passo 1: Instalar o submódulo
 

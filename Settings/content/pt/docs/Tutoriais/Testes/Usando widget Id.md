@@ -29,7 +29,7 @@ No Get Id, você tem diferentes maneiras de setar de acordo com a sua plataforma
 
 Veja abaixo: 
 
-{{< tabs name="T104" >}}
+{{< tabs id="T104" >}}
 {{% tab name="Android" %}}
 No Android para obter um Widget Id você precisa chamar a `String.toAndroidId()` e esse método retornará um Id para você usar onde precisar. 
 

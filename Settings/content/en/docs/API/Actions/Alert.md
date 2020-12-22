@@ -22,7 +22,7 @@ Alert structure is:
 
 ## How to use it?
 
-{{< tabs name="T89" >}}
+{{< tabs id="T89" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

@@ -18,7 +18,7 @@ Defines some space around the element in all directions:
 
 ![](https://lh5.googleusercontent.com/6fRwbDv4w30S7I0MJDV9HIe2CQMp9XoOl_VcHBSQgTvCQGTp7JlTnMfp_VS6kN7IlHgZs-VfmwAdElJy6GZl8Vc485Rllr-QQbi5kqZpitw3y_qLxWzL_Z9_DUXaZ_Vw5U3R8_1u)
 
-{{< tabs name="T40" >}}
+{{< tabs id="T40" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -74,7 +74,7 @@ Defines some space at the element bottom:
 
 ![](https://lh5.googleusercontent.com/iDr2v9t2422LXNYxCwy6AkyR7E0KN4Sz8WTOiYF0TPpKSBwbBftW6xGbXLrxrg3Pq7_IIOvmYkkkt3w2CMtgL2sGoK2xD40bNbY1HcBObYlalxeSEYLg9VhRwGWG8ECPj-_Noe33)
 
-{{< tabs name="T41" >}}
+{{< tabs id="T41" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -132,7 +132,7 @@ Defines some space at the element left side:
 
 ![](https://lh6.googleusercontent.com/m69w8vx_tTvWXo-uuZyBqTQV6cpKbeZb8bPnIN_nq8RP1GWNk-bog39tKb7-ZrZ984nkxB9O44gJ6DPqMrBk4RzREiTXM5Sm3AAIu4CX7hvKXTChFVBxFzPybw1qVN6fC0M-uJ_e)
 
-{{< tabs name="T42" >}}
+{{< tabs id="T42" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -190,7 +190,7 @@ Defines some space at the element right side:
 
 ![](https://lh4.googleusercontent.com/PJI8H4OiFuatQ-wINUiMXbvO3-n8_c159_9XnfyNvdFkeO8xmS31og6_JBhoXJEC2ZQQaaMMeJXQxueznoLwWSOg7V1ZcCjVhXVydoKG9jzXRYmG18Ll_7jDEUy1jExBYK3NQLT9)
 
-{{< tabs name="T43" >}}
+{{< tabs id="T43" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -248,7 +248,7 @@ Defines some space at the element top:
 
 ![](https://lh3.googleusercontent.com/eELU1dNIiBHmZSSQfm2Vt_lIDF3oZPP-FAKngOD_TwZjLfEq3-ZCHUZGD17I3n1uX-wd4DBhOhjgB60Ijo3Q0aeVZagXbQbgFhhlAq9ltxh2t2UcHvBejsQPbM1FD0SbAmU5QC5z)
 
-{{< tabs name="T44" >}}
+{{< tabs id="T44" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -306,7 +306,7 @@ Defines some horizontal space at the element sides:
 
 ![](https://lh5.googleusercontent.com/cAeAi8hRnn11i0bA6JgUuabk-FiKlFpPJdaXha5YNaeNe8kJb_n5WTbUCP0pf_wYUi040SxZKry2_UmpRRW4wMjrokIoPG9qCbVXkoM43jRVK4Mcq6LTnMQ7ninnE_ogkQ2dlfh2)
 
-{{< tabs name="T45" >}}
+{{< tabs id="T45" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -364,7 +364,7 @@ Defines some vertical space at the element top and botton sides:
 
 ![](https://lh3.googleusercontent.com/uriPzx5oSWaqdXXs9Hdao2lw6oe-MH6l9IbiSp1NyZh0PNUFgj44D2dmtDx2FgdshhlYPLnAf2Vf1XgKIr5VYd55ya2YPNmrV_z6WD1-eJvnu_5znR-LCfyICBW1Vq_16Y6p8cqm)
 
-{{< tabs name="T46" >}}
+{{< tabs id="T46" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin

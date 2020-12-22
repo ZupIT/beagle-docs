@@ -19,7 +19,7 @@ Your structure is represented by the attributes below:
 
 ## How to use it?
 
-{{< tabs name="T116" >}}
+{{< tabs id="T116" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

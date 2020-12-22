@@ -16,7 +16,7 @@ Para remover a tela atual basta chamar o método `PopView()` sem a necessidade d
 
 Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e chame esse endpoint no frontend.
 
-{{< tabs name="T115" >}}
+{{< tabs id="T115" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

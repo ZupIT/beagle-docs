@@ -22,7 +22,7 @@ Um evento pode ser parte do contrato de um componente ou de uma Beagle Action. U
 
 Veja o exemplo com o evento "onPress" do botão:
 
-{{< tabs name="T173" >}}
+{{< tabs id="T173" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

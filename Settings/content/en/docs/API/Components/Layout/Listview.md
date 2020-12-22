@@ -80,7 +80,7 @@ Default value is ListDirection.VERTICAL
 
 ### ListView
 
-{{< tabs name="T128" >}}
+{{< tabs id="T128" >}}
 {{% tab name="JSON" %}}
 ```text
 {
@@ -205,7 +205,7 @@ ListView(
 
 ### Deprecated ListView
 
-{{< tabs name="T129" >}}
+{{< tabs id="T129" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

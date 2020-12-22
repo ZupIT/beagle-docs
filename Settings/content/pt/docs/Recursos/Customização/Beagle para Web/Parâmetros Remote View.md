@@ -10,7 +10,7 @@ description: Aprenda quais os parâmetros do Remote View e como alterá-los
 
 A biblioteca do Beagle fornece um componente auxiliar para renderizar as telas server-driven, o remote view:
 
-{{< tabs name="T81" >}}
+{{< tabs id="T81" >}}
 {{% tab name="Angular" %}}
 ```text
 <beagle-remote-view [loadParams]="loadParams"></beagle-remote-view>

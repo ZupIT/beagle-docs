@@ -34,7 +34,7 @@ A estrutura do **AddChildrenAction** é:
 
 Veja abaixo um exemplo de um botão que ao clicado adiciona uma view de texto:
 
-{{< tabs name="T106" >}}
+{{< tabs id="T106" >}}
 {{% tab name="JSON" %}}
 ```javascript
 "_beagleComponent_": "beagle:container",

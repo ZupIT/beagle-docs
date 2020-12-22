@@ -23,7 +23,7 @@ Some navigation actions needs a parameter. It is possible to receive two route t
 
 On the example below, we case a case where the `route` is `remote`:
 
-{{< tabs name="T86" >}}
+{{< tabs id="T86" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

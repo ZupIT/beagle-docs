@@ -79,7 +79,7 @@ After running the plugin on some function, you only need to save the changes don
 
 Once you have configured your backend, the next step is to configure the frontend's application emulator for a Beagle Android or iOS project. 
 
-{{< tabs name="T85" >}}
+{{< tabs id="T85" >}}
 {{% tab name="Android client" %}}
 ### Step 1: Installing the submodule
 

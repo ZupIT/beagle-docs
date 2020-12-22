@@ -22,7 +22,7 @@ On the example below, there is a screen coming from BFF with a button when click
 
 To test is, you need a endpoint to return with the code below from your BFF and call it in the frontend. You can pass a local route \(that it will pass a screen in the route\) or remote route that will pass the endpoint of the screen which it will navigate. 
 
-{{< tabs name="T95" >}}
+{{< tabs id="T95" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

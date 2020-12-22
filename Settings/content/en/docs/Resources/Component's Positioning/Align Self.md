@@ -30,7 +30,7 @@ Each number above represents one property:
 
 **6 = baseline:** Items are aligned acording to the firt text line in each element..
 
-{{< tabs name="T36" >}}
+{{< tabs id="T36" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin

@@ -20,7 +20,7 @@ Your structure is represented by the attribute below:
 
 On the example below, you can see a screen that comes from BFF with a button when is clicked, open the browser with the specific URL. To test, it is necessary an endpoint of your BFF return the code below and call it in the frontend: d.
 
-{{< tabs name="T93" >}}
+{{< tabs id="T93" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

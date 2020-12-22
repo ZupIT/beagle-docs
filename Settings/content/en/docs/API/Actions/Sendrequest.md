@@ -27,7 +27,7 @@ The Send Request structure is:
 
 See below an example of a button that send a `POST` request with data user:
 
-{{< tabs name="T109" >}}
+{{< tabs id="T109" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

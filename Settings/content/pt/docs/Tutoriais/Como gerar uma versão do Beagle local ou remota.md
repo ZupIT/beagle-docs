@@ -10,7 +10,7 @@ description: >-
 
 Siga as orientações de acordo com o sistema operacional que estiver usando:
 
-{{< tabs name="T91" >}}
+{{< tabs id="T91" >}}
 {{% tab name="Android e Backend" %}}
 ## Configurando o Gradle
 
