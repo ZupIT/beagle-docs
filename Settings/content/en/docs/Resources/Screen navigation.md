@@ -62,21 +62,20 @@ Button(
 
 The following pages, you will see more details about Beagle's navigation types:
 
-[**OpenNativeRoute**](../../api/navigate/openexternalurl)
+[**OpenNativeRoute**](../../api/actions/navigate/openexternalurl)
 
-[**OpenExternalURL**](../../api/navigate/openexternalurl)
+[**OpenExternalURL**](../../api/actions/navigate/openexternalurl)
 
-[**PushStack**](../../api/navigate/pushstack)
+[**PushStack**](../../api/actions/navigate/pushstack)
 
-[**PushView**](../../api/navigate/pushview
-)
+[**PushView**](../../api/actions/navigate/pushview)
 
-[**PopStack**](../../api/navigate/popstack)
+[**PopStack**](../../api/actions/navigate/popstack)
 
-[**PopView**](../../api/navigate/popview)
+[**PopView**](../../api/actions/navigate/popview)
 
-[**PopToView**](../../api/navigate/poptoview)
+[**PopToView**](../../api/actions/navigate/poptoview)
 
-[**ResetApplication**](../../api/navigate/resetapplication)
+[**ResetApplication**](../../api/actions/navigate/resetapplication)
 
-[**ResetStack**](../../api/navigate/resetstack)
+[**ResetStack**](../../api/actions/navigate/resetstack)
