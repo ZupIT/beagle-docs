@@ -11,7 +11,7 @@ description: >-
 ## Introdução
 
 O **`DeepLinkHandler`** é uma **interface** que define como configurar a navegação entre uma
-**tela Server-Driven ** e uma **tela nativa.**
+**tela Server-Driven** e uma **tela nativa.**
 
 ## Exemplo
 
@@ -37,14 +37,13 @@ No método *getDeepLinkIntent*, você consegue configurar a navegação de telas
 | :--- | :--- | :---: |
 | rootView | RootView  | RootView tem a referência da activity ou fragment |
 | path | String | Parâmetro de rota que pode ser definido via Navigate.OpenNativeRoute(route: "navigate.myview") |
-| data | Map<String, String>? | Mapa de parâmetros que pode ser definido via OpenNativeRoute(route = "" , data = mapOf("param1" to "paramValue")) |
+| data | Map<String, String>? | Mapa de parâmetros que pode ser definido via OpenNativeRoute(route = "navigate.myview" , data = mapOf("param1" to "paramValue")) |
 | shouldResetApplication | Boolean | Abre uma tela com a rota informada a partir de um novo fluxo e limpa a pilha de telas de todo o aplicativo. |
-
 
 Feito isso, é necessário modificar o arquivo de manifesto do Android:
 
 1. **Passo 1:** Você deve adicionar um `intent-filter` na `Activity` para a qual deseja navegar.
-2. **Passo 2:** Você deve adicionar uma `Action` que identificará essa `Activity`. O nome que usamos aqui foi "navigate.myview".
+2. **Passo 2:** Você deve adicionar uma `Action` que identificará essa `Activity`. O nome que usamos aqui foi `"navigate.myview"`.
 3. **Passo 3:** Adicione uma tag `category` e a nomeie como `"android.intent.category.DEFAULT"`, assim como no exemplo abaixo.
 
 ```markup
