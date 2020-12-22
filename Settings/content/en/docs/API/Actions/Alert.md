@@ -24,7 +24,7 @@ Alert structure is:
 
 {{< tabs name="T89" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:alert.json
 {
     "_beagleComponent_": "beagle:container",
     "children": [
@@ -42,7 +42,8 @@ Alert structure is:
           }
         ]
       }
-```
+-->
+{{% playground file="alert.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -64,5 +65,3 @@ Container(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-###  👉 [Test this example in the Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)​

@@ -36,26 +36,33 @@ Veja abaixo um exemplo de um botão que ao clicado adiciona uma view de texto:
 
 {{< tabs name="T106" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:addChildrenAction.json
+{
 "_beagleComponent_": "beagle:container",
-"children": [{
-        "_beagleComponent_": "beagle:button",
-        "text": "AddChildren",
-        "onPress": [{
-                "_beagleAction_": "beagle:addChildrenAction",
-                "componentId": "MyContainerID",
-                "value": [{
-                        "_beagleComponent_": "beagle:text",
-                        "text": "This is the new view added"
-                    }
-                ],
-                "mode": "APPEND"
+"id": "containerId",
+"children": [
+   {
+   "_beagleComponent_":"beagle:button",
+   "text":"AddChildren",
+   "onPress":[
+      {
+         "_beagleAction_":"beagle:addChildren",
+         "componentId":"containerId",
+         "value":[
+            {
+               "_beagleComponent_":"beagle:text",
+               "text":"New text added"
             }
-        ]
-    }
-],
-"id": "MyContainerID"
-```
+         ],
+         "mode":"APPEND"
+      }
+   ]
+}
+
+]
+}
+-->
+{{% playground file="addChildrenAction.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -64,15 +71,15 @@ Container(
     children = listOf(
         Button("AddChildren", onPress = listOf(
             AddChildrenAction(
-                componentId = "MyContainerID",
+                componentId = "containerId",
                 value = listOf(
-                    Text("This is the new view added")
+                    Text("New text added")
                 ),
 				mode = Mode.APPEND
             )
         ))
     )
-).apply { id = "MyContainerID" }
+).apply { id = "containerId" }
 ```
 {{% /tab %}}
 {{< /tabs >}}

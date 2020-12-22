@@ -24,7 +24,7 @@ The example below is a `Container` with a context that has a 18 value and the ev
 
 {{< tabs name="T90" >}}
 {{% tab name="JSON" %}}
-```
+<!-- json-playground:condition.json
 {
    "_beagleComponent_":"beagle:container",
    "children":[
@@ -58,7 +58,8 @@ The example below is a `Container` with a context that has a 18 value and the ev
       "value":18
    }
 }
-```
+-->
+{{% playground file="condition.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
