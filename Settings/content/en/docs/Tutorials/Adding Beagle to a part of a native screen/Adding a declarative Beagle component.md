@@ -9,7 +9,7 @@ description: >-
 
 ## Step 1: Create a native screen
 
-{{< tabs name="T98" >}}
+{{< tabs id="T98" >}}
 {{% tab name="Android" %}}
 To create an Android native screen, you have to create a new Activity. Let's use here the `MainActivity` as an example: 
 
@@ -114,7 +114,7 @@ class NativeViewController: UIViewController {
 
 ## Step 2: Create a declative component
 
-{{< tabs name="T99" >}}
+{{< tabs id="T99" >}}
 {{% tab name="Android" %}}
 To create a Beagle declarative component, you have to use a Container \(which it is a Beagle component that put together the other components\). It can be declared as a variable or a function that returns a container. This example, it was configured as a function return:
 
@@ -187,7 +187,7 @@ private lazy var beagleView = BeagleView(Container(
 
 ## Step 3: Add the component on the screen
 
-{{< tabs name="T100" >}}
+{{< tabs id="T100" >}}
 {{% tab name="Android" %}}
 To add this component to the screen, it is necessary to call Android's **`addView`** function from **`Fragment Layout view`** that was declared in the `activity_main.xml` as listed in the example below:
 

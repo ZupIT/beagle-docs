@@ -32,7 +32,7 @@ On this example, we will use the **TextInput** and **Button** components, to sim
 Here, we will signal to Beagle that it has to render on the screen two TextInputs components and one Button one, to represent the Login screen.
 
 
-{{< tabs name="T101" >}}
+{{< tabs id="T101" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {
@@ -77,7 +77,7 @@ On this scenario, the context is what it will keep the typed data of user name a
 Alter this code to add this SetContext logic:
  
 
-{{< tabs name="T102" >}}
+{{< tabs id="T102" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {
@@ -199,7 +199,7 @@ This step does not have any visual difference from the last step.
 To finish the Login flow, we will now add an [Action](https://docs.usebeagle.io/v/v1.0-pt/api/api-acoes) called [SendRequest](https://docs.usebeagle.io/v/v1.0-pt/api/api-acoes/sendrequest), that basically allows you to make a HTTP request and on the `onSuccess` case, show an [Alert](https://docs.usebeagle.io/v/v1.0-pt/api/api-acoes/alert) welcoming the user.
 
 
-{{< tabs name="T103" >}}
+{{< tabs id="T103" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

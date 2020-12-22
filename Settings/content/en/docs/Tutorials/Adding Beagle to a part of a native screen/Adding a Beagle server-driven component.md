@@ -123,7 +123,7 @@ Now that the component it is created and configured, you must test the endpoint 
 
 You have to receive the JSON below:
 
-{{< tabs name="T96" >}}
+{{< tabs id="T96" >}}
 {{% tab name="JSON" %}}
 ```typescript
 {
@@ -161,7 +161,7 @@ After the previous steps, your component is ready you have to display it on a na
 
 To this configuration, follow the instructions for each platform:
 
-{{< tabs name="T97" >}}
+{{< tabs id="T97" >}}
 {{% tab name="Android" %}}
 You have to use a frame layout that will receive this BFF component to display a server-driven component on an Android native screen.
 

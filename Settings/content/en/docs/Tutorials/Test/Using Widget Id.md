@@ -30,7 +30,7 @@ On the Get Id case, you have different ways to set it according to each frontend
 
 Check out below: 
 
-{{< tabs name="T104" >}}
+{{< tabs id="T104" >}}
 {{% tab name="Android" %}}
 On Android, to get an Widget Id you just need to call the `String.toAndroidId()` and this method will return the Id to use where you need. 
 

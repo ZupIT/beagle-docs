@@ -10,7 +10,7 @@ description: >-
 Follow the instructions according to the operational system you're using:
 
 
-{{< tabs name="T91" >}}
+{{< tabs id="T91" >}}
 {{% tab name="Android e Backend" %}}
 ## Configuring Gradle
 

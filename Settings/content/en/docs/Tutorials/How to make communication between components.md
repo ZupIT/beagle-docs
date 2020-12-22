@@ -74,7 +74,7 @@ Container is divided into **two main parts:**
 1. The `context :`  It is a `ContextDataobject` that it will be the variable responsible to contain all the information you want to transfer. 
 2. The `children:`  List of components that are part of this container and that it will have access to the context defined by it.
 
-{{< tabs name="T90" >}}
+{{< tabs id="T90" >}}
 {{% tab name="JSON" %}}
 ```typescript
 {

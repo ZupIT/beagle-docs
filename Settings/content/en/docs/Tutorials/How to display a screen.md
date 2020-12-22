@@ -11,7 +11,7 @@ description: >-
 
 Each platform has its own way to display a server-driven screen on frontend by using Beagle. You can see examples below:
 
-{{< tabs name="T94" >}}
+{{< tabs id="T94" >}}
 {{% tab name="Android" %}}
 To display a **`full server-driven`** screen, you need to use the method `this.newServerDrivenIntent<BeagleActivity>()`. Where `this` refers to the context of the screen. 
 
@@ -162,7 +162,7 @@ On the `path` field, it should be JSON's path that will be associated with the `
 
 ## Displaying a screen through a JSON
 
-{{< tabs name="T95" >}}
+{{< tabs id="T95" >}}
 {{% tab name="Android" %}}
 To render a screen through a JSON, it is necessary to have a `Activity` or a `Fragment` with a `FrameLayout`, like the example below:
 
