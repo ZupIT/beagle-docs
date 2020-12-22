@@ -33,7 +33,7 @@ We use the tool [**Hugo**](https://gohugo.io/documentation/) to create static si
 
 ### **Editing a page**
 
-- To edit content, simply navigate to the page to be edited using the left side menu or the search field. Then click on the "Edit this page" button, located on the right side menu.
+- To edit a content, simply navigate to the page you wish to edit using the left side menu or the search field. Then click on the **"Edit this page"** button, located on the right side menu.
 
 - Once this is done, you will be redirected to the source file hosted on github in edit mode. Now  you can just edit the file and commit it by openning a pull request using the github website, filling out the form as shown in the image below:
 
