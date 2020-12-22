@@ -6,27 +6,28 @@ description: 'Nesta seção, você encontra mais detalhes de testes em aplicaç�
 
 ---
 
-## Testes Unitários
+## Unit tests
 
-Testes que têm por objetivo **medir a funcionalidade do código** em sua menor fração. É possível realizar testes unitários no Beagle seguindo o mesmo processo utilizado para caso de aplicações que não utilizem nossa ferramenta, já que o Beagle não interfere na realização dos testes. 
+Tests has the main reason measure code functionality at its minor fraction. It is possible to make unit tests on Beagle, following the same process used to application's cases that does not use our tool, since Beagle doesn't interfere with the tests.
 
-## Testes Instrumentados
+#
 
-Testes que são feitos como os testes unitários, com a diferença de que, em alguns casos, um um componente `server driven` pode não conter um ID, o que que geralmente o identifica como teste instrumentado.
+## Orchestrated tests 
+Tests that are made as unit tests, but the difference is that in some cases, a server-driven component cannot have an ID, this generally identifies as an orchestrated test.
 
-Vale reforçar que estes tipos de testes feitos em aplicações que usam Beagle da mesma maneira que em aplicações que não usam nossa ferramenta.  
+It is important to remember that this type of test made in applications that use Beagle the same way the ones that don't use our tool.
 
-Para sanar problemas nos testes instrumentados, adicionamos ao elemento `WIDGET` \(que referencia um componente\) um `atributo ID` para que seja possível identificá-lo programaticamente.
 
-Listamos um exemplo de um caso abaixo em que fizemos testes usando um elemento `server driven`.
+To get rid of problems with orchestrated tests, we add a widget element that refers to a component, and an id attribute, so that you can identify it programmatically.
 
-### Como testamos?
 
-![](/docs-beagle/gif-teste.gif)
+We listed the examples of a case we have made testing a server-driven element. 
 
-Neste exemplo, fizemos um teste instrumentado na plataforma Android utilizando o `Espresso (Framework de automação)`, em que verificamos a funcionalidade de seleção e inserção de valores em um componente `text field`, que é server-driven. 
+## How do we test?
 
-```java
+On this example, we made an orchestrated test on the Android platform using Espresso (Framework de automação), we verified the functionality selection and value insertion in the server-driven text field component.
+
+ ```Kotlin
 @Test
     public void TestSelectTextField() {
         new BeagleRobot()
@@ -36,52 +37,51 @@ Neste exemplo, fizemos um teste instrumentado na plataforma Android utilizando o
             .typeIntoTextField(0,0,"beagle")
             ;
     }
-```
+````
 
-### Passo 1: Iniciar o teste
+###  Step 1: starting the test
 
-Você deve começar o teste validando se a aplicação foi devidamente aberta na página principal. Isso é feito para confirmar na função abaixo se o `Header` foi apresentado na tela. 
+You have to start a test validating if the application was properly opened on the main page. You have to do it to confirm on the function below if the Header was presented on the screen.
 
-Como este componente não possui uma ID propriamente dita, utilizamos o texto contido no `Header` para localizar essa `view` na página principal. Veja o exemplo a seguir: 
 
-```java
+This component does not have an ID, we use the text in the Header to locate this view on the main page. See the example below: 
+
+```Kotlin
 public BeagleTest checkViewContainsText(String text) {
         onView(allOf(withText(text))).check(matches(isDisplayed()));
         return this;
 }
-```
+````
+### Step 2: presenting the menu
 
-### Passo 2: Apresentar o menu
+After you locate the header, the next step is to use the function below to selec the hamburguer icon and present the options of this menu.
 
-Após localizar o `Header`, o próximo passo é utilizarmos a função abaixo para selecionar o `hamburguer icon`  e apresentar as opções deste menu.
+For being a server-driven component and doesn't have an ID on this implementation, we use the component's placement to perform this selection.
 
-Por ser um componente server driven e não possuir um ID nesta implementação,  utilizamos o posicionamento do componente para realizar a seleção. 
+This way, we searched for the text on the ContentDescription ("More options"), and then its placement on the components hierarchy. See the example:
 
-Desta forma, buscamos pelo texto presente no `ContentDescription ("More options")` e, em seguida, o seu posicionamento na hierarquia do componente. Confira no exemplo: 
-
-```java
+```Kotlin
 public BeagleTest selectMenuOption() {
         onView(allOf(withContentDescription("More options"), childAtPosition(childAtPosition(withId(R.id.action_bar), 1), 0))).perform(click());
         return this;
 }
-```
+````
 
-### Passo 3: Selecionar componente
+### Step 3: selecting the component
 
-Neste passo, o teste irá clicar em um componente \(novamente localizado a partir do texto que contém\) chamado `text field`, que é um item do menu aberto no passo anterior.
+Here, the test will click on a component (located from the text that it is in) calling a text field, that it is a menu item, already opened in the previous step.
 
-```java
+```Kotlin
 public BeagleTest clickOnText(final String text) {
         onView(allOf(withText(text), isDisplayed())).perform(click());
         return this;
 }
-```
+````
+### Step 4: inserting a component
 
-### Passo 4: Inserir o componente
+We will insert a text to the text field component. Since this component doesn't have an ID or a text, it will be located by its placement in the hierarchy of the component. See the example below:
 
-Neste último passo, vamos inserir um texto ao componente `text field`. Uma vez que este componente não possui ID e nem um texto, ele será localizado pelo seu posicionamento na hierarquia do componente. Veja no exemplo a seguir: 
-
-```java
+```Kotlin
 public BeagleTest typeIntoTextField(int position1, int position2, String text) {
         onView(allOf(childAtPosition(
           childAtPosition(
@@ -92,8 +92,9 @@ public BeagleTest typeIntoTextField(int position1, int position2, String text) {
         Espresso.closeSoftKeyboard();
         return this;
 }
-```
+````
 
 {{% alert color="success" %}}
-Pronto, o seu teste instrumento foi realizado!
+Done, your orchestrated test has been peformed! 
 {{% /alert %}}
+

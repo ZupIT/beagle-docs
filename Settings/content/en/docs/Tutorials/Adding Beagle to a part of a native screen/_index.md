@@ -1,14 +1,16 @@
 ---
-title: Adicionando o Beagle a uma parte da tela nativa
+title: Adding Beagle to a part of a native screen
 weight: 226
-description: 'Nesta seção, você verá como exibir um componente do Beagle em uma tela nativa.'
+description: 'On this section, you will see steps to display a server-driven component on a native screen'
 ---
 
 ---
 
-Existem duas formas que os componentes do Beagle podem ser adicionados a sua aplicação:
+There are two ways Beagle's components can be added to your application: 
 
-* Via BFF \(como um server driven componente\);
-* Como um componente declarativo no front end.
+* Through BFF \(as server-driven component\);
+* As a declarative component in front end.
 
-Veja abaixo mais detalhes de como adicionar um componente Beagle a sua tela nativa:
+See below more details on how to add a Beagle component in your native screen: 
+
+
