@@ -48,7 +48,7 @@ The **Context** is used to save the indicator \(position\) of the selected tab, 
 
 {{< tabs id="T120" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:tabBar.json
 {
     "_beagleComponent_": "beagle:screenComponent",
     "child": {
@@ -90,7 +90,8 @@ The **Context** is used to save the indicator \(position\) of the selected tab, 
         }
     }
 }
-```
+-->
+{{% playground file="tabBar.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="kotlin DSL" %}}

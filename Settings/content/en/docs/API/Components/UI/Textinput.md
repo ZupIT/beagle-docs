@@ -144,7 +144,7 @@ See below an example of text input with the password type:
 
 {{< tabs id="T123" >}}
 {{% tab name="JSON" %}}
-```text
+<!-- json-playground:textInput.json
 {
  "_beagleComponent_": "beagle:textInput",
  "value": "my value",
@@ -157,7 +157,8 @@ See below an example of text input with the password type:
       }
   ]
 }
-```
+-->
+{{% playground file="textInput.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -176,9 +177,3 @@ TextInput(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste this component on Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/simpleform.json)
-
-{{% alert color="warning" %}}
-The example on the link above is from a Form, that contains a text input. But you can select the example code above and copy and past it on the playground to see how it works.
-{{% /alert %}}

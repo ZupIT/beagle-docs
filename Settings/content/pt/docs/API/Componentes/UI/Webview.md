@@ -24,19 +24,18 @@ A estrutura é representada como mostrado abaixo:
 
 {{< tabs id="T142" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:webView.json
 {
     "_beagleComponent_": "beagle:webView",
-    "url": "https://maps.google.com/"
+    "url": "https://www.google.com.br/"
 }
-```
+-->
+{{% playground file="webView.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
-WebView(url: "https://docs.usebeagle.io/")
+WebView(url: "https://www.google.com.br/")
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste esse componente no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)​

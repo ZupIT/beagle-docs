@@ -31,12 +31,13 @@ A estrutura é representada como mostrado abaixo:
 
 {{< tabs id="T140" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:text.json
 {
     "_beagleComponent_": "beagle:text",
     "text": "Hello World!"
 }
-```
+-->
+{{% playground file="text.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -45,5 +46,3 @@ Text(text = "Hello World!")
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste esse componente no Web Playground](https://beagle-playground.netlify.app/#/cloud/cac8ecb56fcf490d9e09ab7adc322f55/text.json)

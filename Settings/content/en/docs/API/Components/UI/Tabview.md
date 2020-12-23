@@ -40,32 +40,41 @@ If you don't declare the title and the icon on the TabItem, the empty space will
 
 {{< tabs id="T121" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:tabview.json
 {
-  "_beagleComponent_": "beagle:container",
-  "children": [
-    {
-      "_beagleComponent_": "beagle:tabview",
-      "children": [
-        {
-          "title": "Tab 1",
-          "child": {
-            "_beagleComponent_": "beagle:text",
-            "text":"First Tab Content"
+   "_beagleComponent_":"beagle:screenComponent",
+   "child":{
+      "_beagleComponent_":"beagle:tabView",
+      "children":[
+         {
+            "title":"Tab 1",
+            "child":{
+               "_beagleComponent_":"beagle:text",
+               "text":"First Tab Content",
+               "style":{
+                  "flex":{
+                     "grow":1
+                  }
+               }
             }
-        },
-       {
-          "title": "Tab 2",
-          "child": {
-            "_beagleComponent_": "beagle:text",
-            "text":"Second Tab Content"
+         },
+         {
+            "title":"Tab 2",
+            "child":{
+               "_beagleComponent_":"beagle:text",
+               "text":"Second Tab Content",
+               "style":{
+                  "flex":{
+                     "grow":1
+                  }
+               }
             }
-        }
+         }
       ]
-    }
-  ]
+   }
 }
-```
+-->
+{{% playground file="tabview.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -76,12 +85,10 @@ Screen(
           TabView(children =
               listOf(
                   TabItem("Tab 1",
-                      Image(ImagePath.Remote("https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg")
-                      )
+                      Text("First Tab Content").applyFlex(flex = Flex(grow = 1.0))
                   ),
                   TabItem("Tab 2",
-                      Image(ImagePath.Remote("https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg")
-                      )
+                      Text("Second Tab Content").applyFlex(flex = Flex(grow = 1.0))
                   )
               )
               )
@@ -95,5 +102,3 @@ Screen(
 | TabView full screen | TabView with dividing screen |
 | :---: | :---: |
 | ![](/beagle-tab-view.gif) | ![](/beagle-tab-view-meia-tela.gif) |
-
-### 👉 [Test this component in the Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/tabview.json)
