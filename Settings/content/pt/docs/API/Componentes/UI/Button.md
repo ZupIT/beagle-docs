@@ -10,7 +10,7 @@ description: Descrição do componentes Button e seus atributos
 
 Este componente irá definir as propriedades de um botão nativo através do Beagle. 
 
-A sua estrutura esta representada abaixo: 
+A sua estrutura está representada abaixo: 
 
 <table>
   <thead>
