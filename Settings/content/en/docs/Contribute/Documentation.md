@@ -41,7 +41,7 @@ All contributions are welcome, but to get starting contributing to Beagle it is 
 
 - Once this is done, you will be redirected to the source file hosted on github in edit mode. Okay, now just edit the file. Then, open a pull request using the github website, filling out the form as shown in the image below:
 
-![](/docs-beagle/contribute-pull-request.jpg)
+![](/contribute-pull-request.jpg)
 
 ### **Creating a new page**
 

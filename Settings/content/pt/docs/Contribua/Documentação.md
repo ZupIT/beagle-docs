@@ -36,7 +36,7 @@ description: >-
 
 - Feito isso, você será redirecionado para o arquivo fonte hospedado no github em modo de edição. Pronto, agora é só editar o arquivo. Em seguida, abra um pull request usando a própria interface do github, preenchendo o formulário como mostra a imagem abaixo:
 
-![](/docs-beagle/contribute-pull-request.jpg)
+![](/contribute-pull-request.jpg)
 
 ### **Criando uma nova página**
 
