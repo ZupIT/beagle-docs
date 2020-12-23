@@ -56,7 +56,7 @@ interface LocalStore {
 
 To create a custom cache manage, just follow the next steps:
 
-### Step 1: Create a object MemoryLocalStore
+### Step 1: Create an object MemoryLocalStore
 
 First it is necessary to create two classes that will implement the `LocalStore` interface, the MemoryLocalStore and the DatabseLocalStore. The LocalStore interface allows you to map the actions of saving, restoring, deleting and getAll, as shown on the example below:
 
