@@ -38,7 +38,7 @@ enum class StoreType {
 }
 ```
 
-LocalStore interface allows you to map the actions of saving, restoring, deleting and getting all.
+LocalStore interface allows you to map the actions of saving, restoring, deleting and the getting all.
 
 This interface allows you to create rules for how data will be handled in a class.
 For example: create a class and use this interface to make a rule of how data will be handled on the disk.
@@ -56,9 +56,11 @@ interface LocalStore {
 
 To create a custom cache manage, just follow the next steps:
 
-### Step 1: Create a object MemoryLocalStore
+### Step 1: Create an object MemoryLocalStore
 
-First it is necessary to create two classes that will implement the `LocalStore` interface, the MemoryLocalStore and the DatabseLocalStore. The LocalStore interface allows you to map the actions of saving, restoring, deleting and getAll, as shown on the example below:
+First, it is necessary to create two classes that will implement the `LocalStore` interface: the MemoryLocalStore and the DatabseLocalStore. 
+
+With the LocalStore interface, you to map the actions of saving, restoring, deleting and getAll, as shown on the example below:
 
 
 ```kotlin
@@ -86,11 +88,15 @@ internal object MemoryLocalStore : LocalStore {
 
 ### Step 2: Create a class DatabaseLocalStore
 
-Now, you have to create a second class which depends on the StoreHandler creation, that it is a `DatabaseLocalStore`. See, this same file were declared some adjacent classes that work to this `DatabaseLocalStore` class, but it could be in different files, if you want. See the example: 
+Now, you have to create a second class that depends on the StoreHandler creation, which is a `DatabaseLocalStore`. This is the same file declared with some adjacent classes that work to this `DatabaseLocalStore` class, but it could be in different files, if you want. 
+
+See how it works on the following example: 
 
 The file below has some SQL Lite configuration and definition on how the cache manipulation actions will work, in case of a cache persistence on the database. 
 
-In the database attribute of the `DatabaseLocalStore` class, we pass the BeagleDatabaseManager class, so we call the getDatabase method and within the parameter we must pass the application context of the project. follow the example in the DatabaseLocalStore class attribute below.
+In the database attribute of the `DatabaseLocalStore` class, you pass the BeagleDatabaseManager class, so it's called the getDatabase method and within the parameter you must pass the application context of the project. 
+
+Follow the example in the DatabaseLocalStore class attribute below:
 
 
 ```kotlin
@@ -243,7 +249,7 @@ internal object BeagleMessageLogs {
 
 The StoreHandler class defines a protocol that allows you to customize how the cache is handled in the database and in memory.
 
-After the `MemoryLocalStore` and `DatabaseLocalStore` classes definition, you can define `StoreHandler`. See the example below: 
+After the `MemoryLocalStore` and `DatabaseLocalStore` classes definition, you can define `StoreHandler`. See how in the example below: 
 
 
 ```kotlin

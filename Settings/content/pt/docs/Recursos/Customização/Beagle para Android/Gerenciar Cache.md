@@ -2,7 +2,8 @@
 title: Gerenciar Cache
 weight: 113
 description: >-
-  Nesta seção, você encontra informações sobre como gerenciar cache do beagle e como modificá-la.
+  Nesta seção, você encontra informações sobre como gerenciar cache do beagle e comomodificá-la. 
+  modificá-la.
 ---
 
 ---
@@ -24,10 +25,10 @@ interface StoreHandler {
 }
 ```
 
-O enum StoreType define atravez dos atributos se os dados serão manipulados em  disco ou memoria
+O enum StoreType define, por meio de atributos, se os dados serão manipulados em disco ou na memória. 
 
    * `DATABASE` representa o disco.
-   * `MEMORY` representa memória.
+   * `MEMORY` representa a memória.
 
 ```kotlin
 enum class StoreType {
@@ -38,9 +39,10 @@ enum class StoreType {
 }
 ```
 
-Interface LocalStore permite mapear as ações de salvar, restaurar, deletar e pegar tudo.
+A interface LocalStore permite mapear as ações de salvar, restaurar, deletar e selecionar tudo.
 
-Essa interface permite você criar regras de como os dados serão manipulados em uma classe, exemplo criar uma classe e usar essa interface para fazer uma regra de como os dados serão manipulado em disco.
+Essa interface permite você criar regras de como os dados serão manipulados em uma classe. Por exemplo: você pode criar uma classe e usar a interface para fazer uma regra de como os dados serão manipulado em disco.
+exemplo criar uma classe e usar essa interface para fazer uma regra de como os dados serão manipulado em disco.
 
 ```kotlin
 interface LocalStore {
@@ -57,7 +59,9 @@ Para criar uma camada de cache customizada, siga os próximos passos:
 
 ### Passo 1: Criar o object MemoryLocalStore
 
-É necessário você criar duas classes, a MemoryLocalStore e a DatabaseLocalStore, de forma que, ambas implementem a interface `LocalStore`. Essa interface mapeia as ações: salvar, restaurar, deletar e pegar tudo. Veja o exemplo abaixo:
+É necessário você criar duas classes que implementem a interface `LocalStore`: a MemoryLocalStore e a DatabaseLocalStore. 
+
+Com essas interfaces, você pode mapear as ações de salvar, restaurar, deletar e selecionar tudo, como mostra o exemplo abaixo:
 
 
 ```kotlin
@@ -85,7 +89,9 @@ internal object MemoryLocalStore : LocalStore {
 
 ### Passo 2: Criar a classe DatabaseLocalStore
 
-Agora você deve criar uma segunda classe a qual depende da criação do StoreHandler, que é a DatabaseLocalStore. Note que neste mesmo arquivo foram declaradas algumas classes adjacentes que servem a classe DatabaseLocalStore mas poderiam estar em arquivos diferentes, caso prefira. Veja um exemplo:
+Agora, você deve criar uma segunda classe que, para isso, depende da criação do StoreHandler, que é a DatabaseLocalStore. Esse é o mesmo arquivo declarado com algumas classes adjacentes que servem para a classe DatabaseLocalStore, mas que poderiam estar em arquivos diferentes, se você quiser. 
+
+Veja como funciona no exemplo a seguir:
 
 O arquivo abaixo possui as configurações para o SQL Lite e também as definições de como as ações de manipulação de cache funcionarão, no caso da persistência do cache no banco de dados.
 
@@ -244,7 +250,7 @@ internal object BeagleMessageLogs {
 
 A classe StoreHandler define um protocolo que permite personalizar a forma como o cache é manipulado no banco de dados e na memória. 
 
-Após a definição das classes `MemoryLocalStore` e `DatabaseLocalStore` você pode definir a `StoreHandler`. Veja o exemplo abaixo:
+Após a definição das classes `MemoryLocalStore` e `DatabaseLocalStore`, você pode definir a `StoreHandler`. Veja o exemplo abaixo:
 
 
 ```kotlin
