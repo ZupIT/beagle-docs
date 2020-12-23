@@ -94,7 +94,9 @@ See how it works on the following example:
 
 The file below has some SQL Lite configuration and definition on how the cache manipulation actions will work, in case of a cache persistence on the database. 
 
-In the database attribute of the `DatabaseLocalStore` class, we pass the BeagleDatabaseManager class, so we call the getDatabase method and within the parameter we must pass the application context of the project. follow the example in the DatabaseLocalStore class attribute below.
+In the database attribute of the `DatabaseLocalStore` class, you pass the BeagleDatabaseManager class, so it's called the getDatabase method and within the parameter you must pass the application context of the project. 
+
+Follow the example in the DatabaseLocalStore class attribute below:
 
 
 ```kotlin
