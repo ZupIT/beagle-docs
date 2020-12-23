@@ -55,7 +55,9 @@ Você precisa criar uma classe que implementa a interface BeagleLogger. Esse pro
 
 Para deixar o ambiente do Beagle aberto a modificações, a API de Logs padrão pode ser substituída por qualquer outra.
 
-A configuração dessa customização é feita com a criação de uma classe anotada com `@BeagleComponent` e que implemente a **Interface** `BeagleLogger`. Essa interface precisa da implementação dos métodos de logs, você pode seguir o exemplo abaixo:
+A customização é configurada com a criação de uma classe anotada com `@BeagleComponent` que implemente a **Interface** `BeagleLogger`. 
+
+Essa interface precisa da implementação dos métodos de logs, você pode ver como funciona no exemplo abaixo:
 
 ```kotlin
 import android.util.Log
