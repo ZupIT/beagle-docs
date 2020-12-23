@@ -149,9 +149,9 @@ Let this file open because we'll use it again in another moment.
 * Although, if you plan to turn this example into a release application, we recomend you using the **`networkSecurityConfig`** which you can configure using [**android developers page instructions**](https://developer.android.com/training/articles/security-config).
 {{% /alert %}}
 
-### Passo 3: Create an AppBeagleConfig
+### Step 3: Create an AppBeagleConfig
 
-For the next steps, you should create a `AppBeagleConfig` class, that is part of [**Beagle's installation**](../../../../../../../installing-beagle/android) and it's responsible to register some important configurations. 
+For the next steps, you should create a `AppBeagleConfig` class, that is part of [**Beagle's installation**](/docs/get-started/installing-beagle/android) and it's responsible to register some important configurations. 
 
 When you create the call, we should guarantee that it's configured in this way:
 
@@ -207,9 +207,9 @@ At this tutorial point, we will test our Server-Driven screens on local host bec
 
 ### **Step 4: Create AppBeagleActivity**
 
-You will have to deal with the `activities` that will be generated through server-driven. That's the reason why it's necessary to [**implement an Activity**](../../../../../../using-beagle/android#passo-3-implementar-activities) to manage them. For this example, we'll name it as `AppBeagleActivity`.
+You will have to deal with the `activities` that will be generated through server-driven. That's the reason why it's necessary to [**implement an Activity**](/docs/get-started/using-beagle/android#step-3--beagleactivitiy) to manage them. For this example, we'll name it as `AppBeagleActivity`.
 
-This file is part of [**Beagle's usage configuration**](../../../../../using-beagle/android) and must be implemented, at least once, so Beagle can normally work. 
+This file is part of [**Beagle's usage configuration**](/docs/get-started/using-beagle/android) and must be implemented, at least once, so Beagle can normally work. 
 
 When you create AppBeagleActivity, remember to note it as `BeagleComponent` and to extend it to `BeagleActivity` class. 
 
@@ -322,13 +322,13 @@ To make this configuration, you must change your `BeagleActivity`'s theme. Go to
 {{% alert color="info" %}}
 What is Design System? 
 
-For more information, see [**section Design System with Beagle Android**](design-system-beagle-com-android).
+For more information, see [**section Design System with Beagle Android**](/docs/get-started/creating-a-project-from-scratch/case-android/design-system-with-beagle-android).
 {{% /alert %}}
 
 {{% alert color="info" %}}
 The **design system** keeps the style components registry created in the frontend and that is how your application will know which style component must be applied on each Server-Driven element. It is on the server-drive screen the visual elements \(views\) are used on the construction of your screen. 
 
-Even if you can create it now, if you want to, it is not necessary to the initial configuration in order to test Beagle faster. You can proceed without configurating it. For more information see [**Design System on  Beagle for Android**.](design-system-with-beagle-android) 
+Even if you can create it now, if you want to, it is not necessary to the initial configuration in order to test Beagle faster. You can proceed without configurating it. For more information see [**Design System on  Beagle for Android**.](/docs/get-started/creating-a-project-from-scratch/case-android/design-system-with-beagle-android) 
 {{% /alert %}}
 
 Now , you must initialize your `Application` so Beagle can manage the other configuration's files. To do so, just click on`Make project` \(HAMMER symbol\) or use the command `CTRL + F9`.
@@ -362,7 +362,7 @@ class AppApplication: Application() {
 ```
 
 
-2. To finish this configuration, you must state the class on the [**AndroidManifest**](../.././#passo-2-configuracoes-iniciais-do-android-manifest) we created in the beginning. 
+2. To finish this configuration, you must state the class on the [**AndroidManifest**](#step-2-configure-the-android-manifest-file) we created in the beginning. 
 
 The name of your`application` now it's the same of the class you created. Update the Android Manifest as it's indicated below: 
 
@@ -385,7 +385,7 @@ The name of your`application` now it's the same of the class you created. Update
 Well done, your Android application is configured and ready to use Beagle! 
 {{% /alert %}}
 
-All you have to do now is [**set up a backend** ](../../case-backend)to answer your application's requests. Once you made this configuration, start your application and you'll see your first server-driven screen!
+All you have to do now is [**set up a backend** ](/docs/get-started/creating-a-project-from-scratch/case-backend)to answer your application's requests. Once you made this configuration, start your application and you'll see your first server-driven screen!
 
 ### Step 7: Display your Server-Driven Screen
 

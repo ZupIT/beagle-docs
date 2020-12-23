@@ -213,7 +213,7 @@ class AnalyticsSample: Analytics {
 
 `navigation` deals with the [**navigate**](https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MAhHXfCN8JFrhm0CObd/v/v1.0-en/api/actions/navigate) types of action in your application. There is one implementation that it is used with default value, but that it can be replaced for a [**BeagleNavigation**](https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MAhHXfCN8JFrhm0CObd/v/v1.0-en/customization/beagle-for-ios/beaglenavigation) class. 
 
-On this same attribute is also possible to define a [**navigation animation**](../../beagle-for-android/navigation-animation). 
+On this same attribute is also possible to define a [**navigation animation**](/docs/resources/customization/beagle-for-android/navigation-animation). 
 
 ## preFetchHelper
 

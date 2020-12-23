@@ -48,7 +48,7 @@ You will see below a list with the demo components implemented in the Playground
 
 [Try it on the Playground](https://beagle-playground.netlify.app/#/demo/default-components/simpleform.json)
 
-[Component's Documentation](../../api/components/form/simple-form)
+[Component's Documentation](/docs/api/components/forms/simple-form)
 
 ### **Tab View**
 
