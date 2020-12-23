@@ -51,7 +51,7 @@ class AppBeagleConfig : BeagleConfig {
 
 ## Customização
 
-Você precisa criar uma classe que implementa a interface BeagleLogger. Esse protocolo deverá ser definido para facilitar o monitoramento dos erros gerados no contexto server-driven de sua aplicação. Você pode implementar os métodos de acordo com a sua necessidade.
+Você precisa criar uma classe que implemente a interface BeagleLogger. Esse protocolo deverá ser definido para facilitar o monitoramento dos erros gerados no contexto server-driven de sua aplicação. Você pode implementar os métodos de acordo com a sua necessidade.
 
 Para deixar o ambiente do Beagle aberto a modificações, a API de Logs padrão pode ser substituída por qualquer outra.
 
