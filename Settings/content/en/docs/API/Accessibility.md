@@ -8,7 +8,8 @@ description: Here you'll find a description of accessibility attributes
 
 ## What is it?
 
-For now, there are two common accessibility attribute types in all platforms Beagle supports. 
+This component enables accessibility elements, such as a text message that can be read by a screen reader.
+ 
 
 | **Attributes** | **Type** | Required | **Definition** |
 | :--- | :--- | :--- | :--- |
@@ -23,7 +24,7 @@ If backend does not specify accessibility, the default values ​​for each pla
 
 {{< tabs id="T87" >}}
 {{% tab name="JSON" %}}
-```text
+<!-- json-playground:accessibility.json
 {
   "_beagleComponent_": "beagle:container",
   "children": [
@@ -40,7 +41,8 @@ If backend does not specify accessibility, the default values ​​for each pla
     }
   ]
 }
-```
+-->
+{{% playground file="accessibility.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
