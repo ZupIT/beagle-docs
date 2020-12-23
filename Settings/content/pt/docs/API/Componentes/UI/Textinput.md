@@ -142,7 +142,7 @@ Segue abaixo um exemplo de entrada de texto do tipo senha:
 
 {{< tabs id="T141" >}}
 {{% tab name="JSON" %}}
-```text
+<!-- json-playground:textInput.json
 {
  "_beagleComponent_": "beagle:textInput",
  "value": "my value",
@@ -155,7 +155,8 @@ Segue abaixo um exemplo de entrada de texto do tipo senha:
       }
   ]
 }
-```
+-->
+{{% playground file="textInput.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -174,9 +175,3 @@ TextInput(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste esse componente no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/simpleform.json)
-
-{{% alert color="warning" %}}
-O exemplo no link acima é de um formulário que contém um componente do tipo `text input`. Mas você pode selecionar o código de exemplo acima, copiá-lo e colá-lo no playground e ver como ele funciona.
-{{% /alert %}}

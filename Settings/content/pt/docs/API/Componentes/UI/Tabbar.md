@@ -48,7 +48,7 @@ Já o **Contexto** é utilizado para guardar o indicador \(posição\) da aba se
 
 {{< tabs id="T138" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:tabBar.json
 {
     "_beagleComponent_": "beagle:screenComponent",
     "child": {
@@ -90,7 +90,8 @@ Já o **Contexto** é utilizado para guardar o indicador \(posição\) da aba se
         }
     }
 }
-```
+-->
+{{% playground file="tabBar.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -133,9 +134,3 @@ Screen(
 | Tab Bar |
 | :---: |
 | ![](/beagle-tab-view.gif) |
-
-### 👉 [Teste esse componente no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/tabview.json)
-
-{{% alert color="warning" %}}
-Este exemplo não existe no playground, mas você pode copiar e colar o código JSON acima e testa-lo no playground. Esta secção contem mais informações sobre esse exemplo abaixo.
-{{% /alert %}}

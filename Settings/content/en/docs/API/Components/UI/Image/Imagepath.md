@@ -25,19 +25,24 @@ It will refer an image that it is already in the local assets.
 
 {{< tabs id="T118" >}}
 {{% tab name="JSON" %}}
-```javascript
-  "_beagleImagePath_": "local",
-  "url": "/imagemlocal.png",
-  "mobileId": "imagemlocal"
+<!-- json-playground:imagePathLocal.json
+{
+  "_beagleComponent_": "beagle:image",
+      "path": {
+        "_beagleImagePath_": "local",
+        "url": "public/web-illustration.png",
+        "mobileId": "mobileIllustration"
+      }
 }
-```
+-->
+{{% playground file="imagePathLocal.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
-```
+```javascript
 ImagePath.Local(
-  webUrl = "/imagePath.png",
-  mobileId = "imagePath"
+  webUrl = "public/web-illustration.png",
+  mobileId = "mobileIllustration"
 )
 ```
 {{% /tab %}}
@@ -60,26 +65,22 @@ It will refer to an image that is hosted in another host or a relative one in th
 
 {{< tabs id="T119" >}}
 {{% tab name="JSON" %}}
-```javascript
- "_beagleImagePath_": "remote",
-  "url": "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
-  "placeholder": {
-    "_beagleImagePath_": "local",
-    "url": "/imagemlocal.png",
-    "mobileId": "imagemlocal"
-  }
+<!-- json-playground:imagePathRemote.json
+{
+  "_beagleComponent_": "beagle:image",
+"path": {
+"_beagleImagePath_": "remote",
+"url": "https://mcdn.wallpapersafari.com/medium/8/37/zlwnoM.jpg"
 }
-```
+}
+-->
+{{% playground file="imagePathRemote.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
-```
+```kotlin
 ImagePath.Remote(
-  remoteUrl = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
-  placeHolder = ImagePath.Local(
-      webUrl = "/imagePath.png",
-      mobileId = "imagePath"
-  )
+  remoteUrl = "https://mcdn.wallpapersafari.com/medium/8/37/zlwnoM.jpg"
 )
 ```
 {{% /tab %}}
