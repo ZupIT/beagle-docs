@@ -59,7 +59,9 @@ Para criar uma camada de cache customizada, siga os próximos passos:
 
 ### Passo 1: Criar o object MemoryLocalStore
 
-É necessário você criar duas classes, a MemoryLocalStore e a DatabaseLocalStore, de forma que, ambas implementem a interface `LocalStore`. Essa interface mapeia as ações: salvar, restaurar, deletar e pegar tudo. Veja o exemplo abaixo:
+É necessário você criar duas classes que implementem a interface `LocalStore`: a MemoryLocalStore e a DatabaseLocalStore. 
+
+Com essas interfaces, você pode mapear as ações de salvar, restaurar, deletar e selecionar tudo, como mostra o exemplo abaixo:
 
 
 ```kotlin
