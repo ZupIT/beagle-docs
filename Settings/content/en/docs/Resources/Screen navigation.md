@@ -23,7 +23,7 @@ Some navigation actions needs a parameter. It is possible to receive two route t
 
 On the example below, we case a case where the `route` is `remote`:
 
-{{< tabs name="T86" >}}
+{{< tabs id="T86" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {
@@ -61,3 +61,21 @@ Button(
 ## Types of navigation
 
 The following pages, you will see more details about Beagle's navigation types:
+
+[**OpenNativeRoute**](../../api/actions/navigate/openexternalurl)
+
+[**OpenExternalURL**](../../api/actions/navigate/openexternalurl)
+
+[**PushStack**](../../api/actions/navigate/pushstack)
+
+[**PushView**](../../api/actions/navigate/pushview)
+
+[**PopStack**](../../api/actions/navigate/popstack)
+
+[**PopView**](../../api/actions/navigate/popview)
+
+[**PopToView**](../../api/actions/navigate/poptoview)
+
+[**ResetApplication**](../../api/actions/navigate/resetapplication)
+
+[**ResetStack**](../../api/actions/navigate/resetstack)

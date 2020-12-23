@@ -47,7 +47,7 @@ Um contexto que seja global pode ser definido de duas formas:
 
 É possível definir ou modificar um contexto global a partir da Ação [**`SetContext`**](acoes/setcontext) Para tal, basta identificar o contexto global utilizando a `ID = "global"` na propriedade `contextId`, como mostrado no exemplo abaixo:
 
-{{< tabs name="T167" >}}
+{{< tabs id="T167" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {
@@ -119,7 +119,7 @@ Para isso é usado:
 
 Para definir um contexto global como o do exemplo dessa seção, utilize o comando abaixo:
 
-{{< tabs name="T168" >}}
+{{< tabs id="T168" >}}
 {{% tab name="Android" %}}
 ```javascript
 GlobalContext.set("Context has changed", "myValue")
@@ -205,7 +205,7 @@ Para isso é usado:
 
 Considerando o exemplo anterior, para recuperar o valor do Contexto Global que está no path **"myValue"**, utilize o comando:
 
-{{< tabs name="T169" >}}
+{{< tabs id="T169" >}}
 {{% tab name="Android" %}}
 ```javascript
 GlobalContext.get("myValue")
@@ -253,7 +253,7 @@ Para isso é usado:
 
 Para remover os valores de um Contexto Global por completo, "limpando-o", devemos utilizar o comando clear **sem informar** um path. Veja abaixo: 
 
-{{< tabs name="T170" >}}
+{{< tabs id="T170" >}}
 {{% tab name="Android" %}}
 ```javascript
 GlobalContext.clear()
@@ -285,7 +285,7 @@ Dessa forma, o `VALUE` do Contexto Global será **apagado** totalmente e terá u
 
 Por exemplo, imagine um contexto global que tenha duas propriedades definidas a seguir
 
-{{< tabs name="T171" >}}
+{{< tabs id="T171" >}}
 {{% tab name="Propriedade 1" %}}
 * `GlobalContext.set(path = "myValue1", value = "My Context Value1")` 
 * `GlobalContext.set(path = "myValue2", value = "My Context Value2")`
@@ -312,7 +312,7 @@ Esse Contexto Global é construído pelo Beagle como o objeto JSON a seguir:
 
 Ao utilizar o comando:
 
-{{< tabs name="T172" >}}
+{{< tabs id="T172" >}}
 {{% tab name="Android" %}}
 ```kotlin
 GlobalContext.clear(myValue1")

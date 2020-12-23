@@ -23,7 +23,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 Irá referenciar uma imagem que já está nos assets locais.
 
-{{< tabs name="T136" >}}
+{{< tabs id="T136" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {
@@ -55,7 +55,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 Irá referenciar uma imagem que esteja hospedada em outro host ou relativo no próprio server.
 
-{{< tabs name="T137" >}}
+{{< tabs id="T137" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

@@ -22,7 +22,7 @@ A sua tela possui atributos e componentes que podem ser usados e configurados. N
 
 ## Como usar?
 
-{{< tabs name="T174" >}}
+{{< tabs id="T174" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

@@ -10,7 +10,7 @@ description: >-
 
 ## Passo 1: Criar a tela nativa
 
-{{< tabs name="T98" >}}
+{{< tabs id="T98" >}}
 {{% tab name="Android" %}}
 Para criar a tela nativa no Android, crie uma nova Activity. Aqui será usado a `MainActivity` como modelo:
 
@@ -116,7 +116,7 @@ class NativeViewController: UIViewController {
 
 ## Passo 2: Criar o componente declarativo
 
-{{< tabs name="T99" >}}
+{{< tabs id="T99" >}}
 {{% tab name="Android" %}}
 Para criar um componente declarativo do Beagle, será usado um Container \(um componente do Beagle que agrupa outros componentes\). Ele pode ser declarado como uma variável ou como uma função que retorna um container. Nesse exemplo, foi configurado como retorno de uma função:
 
@@ -189,7 +189,7 @@ private lazy var beagleView = BeagleView(Container(
 
 ## Passo 3: Adicionar o componente na tela
 
-{{< tabs name="T100" >}}
+{{< tabs id="T100" >}}
 {{% tab name="Android" %}}
 Para adicionar esse componente a tela, será necessário chamar a função **`addView`**do Android a partir do **`Fragment Layout view`** que foi declarado no `activity_main.xml` como listado no exemplo abaixo:
 

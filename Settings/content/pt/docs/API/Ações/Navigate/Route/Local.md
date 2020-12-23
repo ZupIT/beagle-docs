@@ -18,9 +18,9 @@ A sua estrutura é representada como mostrado abaixo:
 
 ## Como usar?
 
-{{< tabs name="T126" >}}
+{{< tabs id="T126" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:local.json
 {
   "_beagleComponent_": "beagle:button",
   "text": "Click me!",
@@ -39,7 +39,8 @@ A sua estrutura é representada como mostrado abaixo:
     }
   ]
 }
-```
+-->
+{{% playground file="local.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -58,5 +59,3 @@ Button(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste essa ação no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

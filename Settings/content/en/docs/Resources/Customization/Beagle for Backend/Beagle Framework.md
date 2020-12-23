@@ -106,7 +106,7 @@ class MyCacheHandler(
 ```
 
 
-### Step 5: Create a `Filter` that uses the`BeagleCacheHandler`
+### Step 5: Create a `Filter` that uses the `BeagleCacheHandler`
 
 Now, you need to create an `BeagleCacheHandler` instance and call the `handleCache method` for it. This instance can accept a string list that represents a regex's endpoint to not be stored in cache. 
 

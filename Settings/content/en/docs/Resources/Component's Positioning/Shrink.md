@@ -8,13 +8,13 @@ description: This section lists information about the Shrink property
 
 ## Shrink
 
-This atribute defines an item's ability to shrink, reducing child elements along the main axis. The reduction of the elements is done in a way that the total size of all the shrunk children does not exceed the size of the main container. 
+This atribute defines an **item's ability to shrink**, reducing child elements along the main axis. The reduction of the elements is done in a way that the total size of all the shrunk children does not exceed the size of the main container. 
 
 With Shrink, the element receives a double value, which will decrease the element according to the space at the container:
 
 ![](https://lh5.googleusercontent.com/30mBYNqNtZf0Lp1Zw4dr8dkZW5PsOtxqHtqkgbPLZNbU6g8xFs0QmGh5ip66WlU5cHSqtdBWduGuwrLGyGp2uYkkAw6GLXpaf-ZRNORNJywill9WCTZIlRAva9_s5G30MJCh-rOS)
 
-{{< tabs name="T66" >}}
+{{< tabs id="T66" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -72,4 +72,6 @@ private func screen() -> Screen {
 {{% /tab %}}
 {{< /tabs >}}
 
-For more information about Shrink, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/).
+
+
+**For more information about Shrink, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/).**

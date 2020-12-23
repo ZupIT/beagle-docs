@@ -52,9 +52,9 @@ A sua estrutura é representada como mostrado abaixo:
 
 ## Como usar?
 
-{{< tabs name="T125" >}}
+{{< tabs id="T125" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:remote.json
 {
   "_beagleComponent_": "beagle:button",
   "text": "Click me!",
@@ -62,13 +62,14 @@ A sua estrutura é representada como mostrado abaixo:
     {
       "_beagleAction_": "beagle:pushView",
       "route": {
-        "url": "/present/view",
+        "url": "confirm.json",
         "shouldPrefetch": false
       }
     }
   ]
 }
-```
+-->
+{{% playground file="remote.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -76,7 +77,7 @@ A sua estrutura é representada como mostrado abaixo:
 Button(
     onPress = listOf(
         Navigate.PushView(
-            Route.Remote("/present/view")
+            Route.Remote("confirm.json")
          )
     ),
     text = "Click me!"
@@ -84,5 +85,3 @@ Button(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste essa ação no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

@@ -51,17 +51,7 @@ If it is defined as:
 {{% /alert %}}
 
 ## Properties
-
-The following atributes willl define specific properties that the Yoga Layout sets. 
-
-
-
-
-
-
-
-
-
+You can use the following properties that Yoga Layout uses to insert, alter or delete screen's components.
 
 
 

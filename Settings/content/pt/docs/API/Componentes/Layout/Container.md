@@ -20,15 +20,15 @@ A sua estrutura é representada como mostrado abaixo:
 
 ## Como usar?
 
-{{< tabs name="T145" >}}
+{{< tabs id="T145" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:container.json
 {
     "_beagleComponent_": "beagle:container",
     "children": [
         {
           "_beagleComponent_": "beagle:text",
-          "text": "@{myContext.value}"
+          "text": "@{myContext}"
         }
     ],
     "context": {
@@ -36,14 +36,15 @@ A sua estrutura é representada como mostrado abaixo:
         "value": "Hello world!" 
     }
 }
-```
+-->
+{{% playground file="container.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 Container(
     children = listOf(
-        Text(text = "@{myContext.value}")
+        Text(text = "@{myContext}")
     ),
     context = ContextData(
         id = "myContext",
@@ -53,5 +54,3 @@ Container(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [ Teste esse componente no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/container.json)​

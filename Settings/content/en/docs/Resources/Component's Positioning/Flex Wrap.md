@@ -1,7 +1,7 @@
 ---
 title: Flex Wrap
 weight: 68
-description: This section lists information about the Flex Wrap property
+description: This section lists information about the Flex Wrap property.
 ---
 
 ---
@@ -18,7 +18,7 @@ Items displays  in one single line:
 
 ![](https://lh3.googleusercontent.com/2sWYZdvDpSj8gCfOR2Pa9iESgFrjD6XEXT2QIoMj_OQq-sw6fcTB5s7yuum2cnKekIU8Mn326F9PD87IyCGwSK6jzauS-SfqUeDQ43zi1nnjUp7yf9QuYCHbHLW6L-O_sjw1rPdX)
 
-{{< tabs name="T37" >}}
+{{< tabs id="T37" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -78,11 +78,11 @@ private func screen() -> Screen {
 
 ###  **Wrap**
 
-A break line will occur and the rightmost items will drop one line:
+A break line will occur and the items positioned on the right will be moved to the below line:
 
 ![](https://lh4.googleusercontent.com/m_ZGUdUGHgmiRuAoSoda4-2hn8kEoUuNMXOlphge-WPWGG_56O6ds2x89coUVpm5QpTV1aRiS9iDVzLatuf-OFeTxTwPBhPcpItGO5VjqfZeYHFtbosdW_9pWGPKX-5pUOxI-qF7)
 
-{{< tabs name="T38" >}}
+{{< tabs id="T38" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -142,11 +142,11 @@ private func screen() -> Screen {
 
 ### **Wrap Reverse**
 
-The break line will upline the rightmost items:
+The break line will happen and the rightmost items will be moved to the upper line:
 
 ![](https://lh4.googleusercontent.com/Izm4kY_rDDogIAaTf0sIdNhIDiOrty4LycVBKfRwzwEdv6W3r77humceK6sCJp-UvRW1LZAXY6TrJ8grVF7kJ_uxh5_6B-1BNmn0RUb_A9x8Zi76BoHdMRMIJA6-hDmbeYPN8mJP)
 
-{{< tabs name="T39" >}}
+{{< tabs id="T39" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -204,4 +204,4 @@ private fun screen() :Widget{
 {{% /tab %}}
 {{< /tabs >}}
 
-For more information about Flex Wrap, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/).
+**For more information about Flex Wrap, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/).**

@@ -22,9 +22,9 @@ No exemplo abaixo, temos uma tela vinda do BFF com um botão, que ao ser clicado
 
 Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e chame esse endpoint no frontend. Você poderá passar tanto uma rota local \(que passará uma [**screen**](https://docs.usebeagle.io/api/screen) na rota\), quanto remota \(que passará o endpoint da tela para a qual irá navegar\). 
 
-{{< tabs name="T113" >}}
+{{< tabs id="T113" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:pushView.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -44,7 +44,8 @@ Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e
     } ]
   }
 }
-```
+-->
+{{% playground file="pushView.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -66,5 +67,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste esse exemplo no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

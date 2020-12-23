@@ -28,9 +28,9 @@ To test, you will need three endpoints:
 
 #### How to call the screen 0  <a id="como-chamar-pela-tela-zero"></a>
 
-{{< tabs name="T98" >}}
+{{< tabs id="T98" >}}
 {{% tab name="JSON" %}}
-```text
+<!-- json-playground:firstScreenNavigate.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -44,14 +44,15 @@ To test, you will need three endpoints:
       "onPress" : [ {
         "_beagleAction_" : "beagle:pushView",
         "route" : {
-          "url" : "/firstScreen",
+          "url" : "secondScreenNavigate.json",
           "shouldPrefetch" : false
         }
       } ]
     } ]
   }
 }
-```
+-->
+{{% playground file="firstScreenNavigate.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -67,7 +68,7 @@ Screen(
                 onPress = listOf(
                     Navigate.PushView(
                         Route.Remote(
-                            url = "/firstScreen"
+                            url = "secondScreenNavigate.json"
                         )
                     )
                 )
@@ -81,9 +82,9 @@ Screen(
 
 #### How to call the screen 1  <a id="como-chamar-a-tela-1"></a>
 
-{{< tabs name="T99" >}}
+{{< tabs id="T99" >}}
 {{% tab name="JSON" %}}
-```text
+<!-- json-playground:secondScreenNavigate.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -97,14 +98,15 @@ Screen(
       "onPress" : [ {
         "_beagleAction_" : "beagle:pushView",
         "route" : {
-          "url" : "/secondScreen",
+          "url" : "popToView.json",
           "shouldPrefetch" : false
         }
       } ]
     } ]
   }
 }
-```
+-->
+{{% playground file="secondScreenNavigate.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -120,7 +122,7 @@ Screen(
                 onPress = listOf(
                     Navigate.PushView(
                         Route.Remote(
-                            url = "/secondScreen"
+                            url = "popToView.json"
                         )
                     )
                 )
@@ -134,27 +136,28 @@ Screen(
 
 #### How to call the screen 2 <a id="como-chamar-a-tela-2"></a>
 
-{{< tabs name="T100" >}}
+{{< tabs id="T100" >}}
 {{% tab name="JSON" %}}
-```text
-Screen(
-    child = Container(
-        children = listOf(
-            Text(
-                "Third Screen on Stack"
-            ),
-            Button(
-                text = "Click me to go to first screen",
-                onPress = listOf(
-                    Navigate.PopToView(
-                        route = "/home"
-                    )
-                )
-            )
-        )
-    )
-)
-```
+<!-- json-playground:popToView.json
+{
+  "_beagleComponent_" : "beagle:screenComponent",
+  "child" : {
+    "_beagleComponent_" : "beagle:container",
+    "children" : [ {
+      "_beagleComponent_" : "beagle:text",
+      "text" : "Third Screen on Stack"
+    }, {
+      "_beagleComponent_" : "beagle:button",
+      "text" : "Click me to go to first screen",
+      "onPress" : [ {
+        "_beagleAction_" : "beagle:popToView",
+        "route" : "firstScreenNavigate.json"
+      } ]
+    } ]
+  }
+}
+-->
+{{% playground file="popToView.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -169,7 +172,7 @@ Screen(
                 text = "Click me to go to first screen",
                 onPress = listOf(
                     Navigate.PopToView(
-                        route = "/home"
+                        route = "firstScreenNavigate.json"
                     )
                 )
             )
@@ -179,5 +182,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Test this example on Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

@@ -28,7 +28,7 @@ As **exceções** são componentes do tipo:
 * `sealed classes`, cujo builders possuem o nome de sua classe pai como prefixo anexado.
 * `Screen`, cujo builder é `ScreenComponentBuilder`. 
 
-{{< tabs name="T84" >}}
+{{< tabs id="T84" >}}
 {{% tab name="Java" %}}
 ```java
 //Navigate é uma sealed class com 
@@ -76,7 +76,7 @@ Alert(
 
 Nos casos em que o campo espera uma **lista ou um mapa**,  você deve colocar antes do elemento a ser adicionado na coleção com o operador '**+**'.  Esse operador também aceita elemento único.  Veja os exemplos:
 
-{{< tabs name="T85" >}}
+{{< tabs id="T85" >}}
 {{% tab name="Listas" %}}
 ```kotlin
 container{
@@ -127,7 +127,7 @@ Navigate.OpenNativeRoute(
 
 O exemplo abaixo define uma tela simples declarada nas três maneiras disponíveis pelo Beagle:
 
-{{< tabs name="T86" >}}
+{{< tabs id="T86" >}}
 {{% tab name="Padrão" %}}
 ```kotlin
 Screen(

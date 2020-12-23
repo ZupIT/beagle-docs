@@ -23,7 +23,7 @@ Neste exemplo, você vê como a aplicação usando o **`flexDirection: row`** pa
 
 ![](/captura-de-tela-2020-06-04-a-s-15.48.12.png)
 
-{{< tabs name="T64" >}}
+{{< tabs id="T64" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -90,7 +90,7 @@ Já neste exemplo, você vê como fica a aplicação usando o **`flexDirection: 
 
 ![](/captura-de-tela-2020-06-04-a-s-16.01.56.png)
 
-{{< tabs name="T65" >}}
+{{< tabs id="T65" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -152,7 +152,7 @@ private fun screen() :Widget{
 
 É possível também passar `UnitValue(0.0, UnitType.AUTO)` quando utilizar `basis`. Neste caso o valor  `0.0`  não é relevante, pois  usando `UnitType.AUTO`  o eixo principal será ajustado  de acordo com tamanho do conteúdo. Exceto se um valor de `size`fixo também for definido para o componente no mesmo sentido do eixo principal.
 
-{{< tabs name="T66" >}}
+{{< tabs id="T66" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin

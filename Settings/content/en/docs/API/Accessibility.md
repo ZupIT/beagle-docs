@@ -21,7 +21,7 @@ If backend does not specify accessibility, the default values ​​for each pla
 
 ## How to use it?
 
-{{< tabs name="T87" >}}
+{{< tabs id="T87" >}}
 {{% tab name="JSON" %}}
 ```text
 {

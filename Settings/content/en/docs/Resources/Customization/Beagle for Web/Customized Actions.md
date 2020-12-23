@@ -41,7 +41,7 @@ In the ActionHandler function, you can access the defined values like the exampl
 
 **Step 3:** Add the action name in the association file according to your framework: 
 
-{{< tabs name="T72" >}}
+{{< tabs id="T72" >}}
 {{% tab name="Angular" %}}
 For Angular: Add beagle.module.ts
 

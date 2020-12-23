@@ -42,9 +42,10 @@ In other words, we say that an endpoint can return a static element because it c
 
 {{% alert color="danger" %}}
 It's important to remember that cache's mechanism **must not** be used with **endpoints** that does not meet this **premisse**. 
+The cache can be activated or disabled on BFF by endpoint or for an entire  BFF. You can **check out**  [**how to configure a cache.** ](/docs/resources/customization/beagle-for-backend/)
 {{% /alert %}}
 
-The cache can be activated or disabled on BFF by endpoint or for an entire  BFF. You can **check out**  [**how to configure a cache.** ](../../customization/beagle-for-backend/)
+
 
 ## How does the cache protocol works? 
 

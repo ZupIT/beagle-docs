@@ -142,7 +142,7 @@ It is an `ENUM` responsible to define which type of text input.
 
 See below an example of text input with the password type: 
 
-{{< tabs name="T123" >}}
+{{< tabs id="T123" >}}
 {{% tab name="JSON" %}}
 ```text
 {

@@ -32,7 +32,7 @@ Locate the file `build.gradle(Module:app) ,` open it and scroll the page until y
 3. This dependency is necessary, because the class that implements `HttpClient` will import some of its configuration.
 
 {{% alert color="warning" %}}
- If your application uses Retrofit services, it is possible some conflict may occur, because it internally defines a okhttp dependency and then it will conflict with the HttpClient. 
+ If your application uses **Retrofit** services, it is possible some conflict may occur, because it internally defines a **okhttp** dependency and then it will conflict with the HttpClient. 
 
 * Replace this line:
 
@@ -47,8 +47,8 @@ Locate the file `build.gradle(Module:app) ,` open it and scroll the page until y
 
 ### Step 2: Create a class
 
-1. Create a class and choose a name for it. For the example,`HttpClientDefault` was chosen. 
-2. If Android complain about imports, just check if the dependencies are not conflicting. 
+1. Create a class and choose a name for it. For the example, `HttpClientDefault` was chosen. 
+2. If Android complain about **imports**, just check if the dependencies are not conflicting. 
 3. This configuration is long, so copy and paste the class below. You may modify it later.
 
 

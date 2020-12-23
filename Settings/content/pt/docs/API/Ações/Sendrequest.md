@@ -28,9 +28,9 @@ A estrutura do Send Request é:
 
 Segue abaixo um exemplo de botão que faz uma requisição do tipo `POST` enviando dados de um usuário:
 
-{{< tabs name="T127" >}}
+{{< tabs id="T127" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:send.json
 {
   "_beagleComponent_": "beagle:container",
   "children": [
@@ -40,7 +40,7 @@ Segue abaixo um exemplo de botão que faz uma requisição do tipo `POST` envian
       "onPress": [
         {
             "beagleAction":"beagle:sendRequest",
-            "url":"https://myUrl.com/endpoint"",
+            "url":"https://myUrl.com/endpoint",
             "method":"POST",
             "headers":{
                "Content-Type":"application/json"
@@ -77,7 +77,8 @@ Segue abaixo um exemplo de botão que faz uma requisição do tipo `POST` envian
     }
   ]
 }
-```
+-->
+{{% playground file="send.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -122,5 +123,3 @@ Button(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste essa ação no Web Playground](https://beagle-playground.netlify.app/#/cloud/835cfa6d6811402cb338c9afeb1507cf/sendRequest.json)

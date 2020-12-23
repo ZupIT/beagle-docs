@@ -22,9 +22,9 @@ It is an action that has a boolean parameter and according to the value the acti
 
 The example below is a `Container` with a context that has a 18 value and the event `onPress` of the button is defined as an action with the `Condition` type, that verifies if the values is the same as 21 and shows an `Alert` depending on the context value. 
 
-{{< tabs name="T90" >}}
+{{< tabs id="T90" >}}
 {{% tab name="JSON" %}}
-```
+<!-- json-playground:condition.json
 {
    "_beagleComponent_":"beagle:container",
    "children":[
@@ -58,7 +58,8 @@ The example below is a `Container` with a context that has a 18 value and the ev
       "value":18
    }
 }
-```
+-->
+{{% playground file="condition.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}

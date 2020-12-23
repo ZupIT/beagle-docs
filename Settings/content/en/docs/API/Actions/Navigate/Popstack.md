@@ -16,9 +16,9 @@ On the example below there's a screen coming from BFF with a button that when cl
 
 To test, your BFF's endpoint should return the screen with the code below and call it in the frontend. 
 
-{{< tabs name="T96" >}}
+{{< tabs id="T96" >}}
 {{% tab name="JSON" %}}
-```text
+<!-- json-playground:popStack.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -29,7 +29,8 @@ To test, your BFF's endpoint should return the screen with the code below and ca
     } ]
   }
 }
-```
+-->
+{{% playground file="popStack.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -45,5 +46,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Test this example on Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

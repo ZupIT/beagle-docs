@@ -72,7 +72,7 @@ Check the example below to see how the structure works:
 
 ## How to use it?
 
-{{< tabs name="T115" >}}
+{{< tabs id="T115" >}}
 {{% tab name="JSON" %}}
 ```javascript
 {

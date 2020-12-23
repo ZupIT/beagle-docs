@@ -19,7 +19,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 ## Como usar?
 
-{{< tabs name="T144" >}}
+{{< tabs id="T144" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {
