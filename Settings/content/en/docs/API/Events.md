@@ -1,6 +1,8 @@
 ---
 title: Events
 weight: 355
+description: >-
+  Here you'll find descriptions of what events are and its types.
 ---
 
 ---
@@ -54,4 +56,4 @@ Button(
 
 The example above, associates the action "beagle:alert" to the event onPress of the beagle:button component. When you bress the button where the title is "Click to show message", a message will be shown on the screen with the text "Hello World!". 
 
-Every event in any component or action can be associated with any Beagle Action. An alert action was used in the previous example, but any other can be used. To make a request when clicking the button, the action "beagle:sendRequest" could be used. For more information [**about all available actions**, **access here**.](https://docs.usebeagle.io/v/v1.0-en/api/actions)
+Every event in any component or action can be associated with any Beagle Action. An alert action was used in the previous example, but any other can be used. To make a request when clicking the button, the action "beagle:sendRequest" could be used. For more information [**about all available actions**, **access here**.](/docs/api/actions)

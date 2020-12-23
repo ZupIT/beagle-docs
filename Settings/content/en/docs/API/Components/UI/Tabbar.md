@@ -18,8 +18,8 @@ The Tab Bar component is responsible for defining a table that allows navigation
 | :--- | :--- | :--- | :--- |
 | items | TabBarItem |       ✓ | Receive a list of `TabBarItems` that will define the `Tabs` in the `TabBar` |
 | styleId | String |  | Style ID that identifies an style to be applied on the TabBar |
-| currentTab | Bind&lt;Int&gt; |  | Integer number that identifies that selected [`TabBarItem`](tabview#tabitem-definition)\`\` |
-| onTabSelection | List&lt;Action&gt; |  | List of [**Actions**](../../../../../actions/) that are performed when a TabBarItem is selected. It can be used to load views according to the selected `TabBarItem`. |
+| currentTab | Bind&lt;Int&gt; |  | Integer number that identifies the selected [`TabBarItem`](/docs/api/components/ui/tabview#what-is-tabitem) |
+| onTabSelection | List&lt;Action&gt; |  | List of [**Actions**](/docs/api/actions/) that are performed when a TabBarItem is selected. It can be used to load views according to the selected `TabBarItem`. |
 
 ## What is Tab Bar **Item?**
 
@@ -31,12 +31,12 @@ This component represents the `TabBarItem` presented on a Tab Bar.
 | icon | Path |  | Displays a local image as an icon in the `Tab Bar Item`. If it is not declared or is set to null, it will not appear on the screen. |
 
 {{% alert color="warning" %}}
-If a title or icon is not declared in the `TabBarItem`, the empty space will remain. If you need navigation between viewers without the Tab interface, it is recommended that you use the [**navigation components**](../../../../actions/navigate/)
+If a title or icon is not declared in the `TabBarItem`, the empty space will remain. If you need navigation between viewers without the Tab interface, it is recommended that you use the [**navigation actions**](/docs/api/actions/navigate/)
 {{% /alert %}}
 
 ## How to use it? 
 
-On the following example, it will be used two componentes to explain TabBar: [**PageView**](../../layout/pageview) and [**Context**](../../../context/). 
+On the following example, it will be used two componentes to explain TabBar: [**PageView**](/docs/api/components/layout/pageview) and [**Context**](/docs/api/context/). 
 
 **Page View** is used to render the pages you want to display, that is, it will create the view on each selected tab. This is where you will define the components you want to display by clicking on each tab. 
 
