@@ -17,7 +17,7 @@ The log messages given by Android Beagle can be accessed in the:
 * Android Studio's console
 * Application's console 
 
-They are divided in 3 categories: 
+The log system is divided in 3 categories: 
 
 ```kotlin 
 interface BeagleLogger {
