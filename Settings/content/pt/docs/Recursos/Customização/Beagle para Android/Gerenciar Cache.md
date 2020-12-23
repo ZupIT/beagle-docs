@@ -28,7 +28,7 @@ interface StoreHandler {
 O enum StoreType define, por meio de atributos, se os dados serão manipulados em disco ou na memória. 
 
    * `DATABASE` representa o disco.
-   * `MEMORY` representa memória.
+   * `MEMORY` representa a memória.
 
 ```kotlin
 enum class StoreType {
