@@ -249,7 +249,7 @@ internal object BeagleMessageLogs {
 
 The StoreHandler class defines a protocol that allows you to customize how the cache is handled in the database and in memory.
 
-After the `MemoryLocalStore` and `DatabaseLocalStore` classes definition, you can define `StoreHandler`. See the example below: 
+After the `MemoryLocalStore` and `DatabaseLocalStore` classes definition, you can define `StoreHandler`. See how in the example below: 
 
 
 ```kotlin
