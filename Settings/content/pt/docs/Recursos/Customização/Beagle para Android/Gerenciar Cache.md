@@ -2,8 +2,7 @@
 title: Gerenciar Cache
 weight: 113
 description: >-
-  Nesta seção, você encontra informações sobre como gerenciar cache do beagle e como
-  modificá-la.
+  Nesta seção, você encontra informações sobre como gerenciar cache do beagle e como modificá-la.
 ---
 
 ---
@@ -41,8 +40,7 @@ enum class StoreType {
 
 Interface LocalStore permite mapear as ações de salvar, restaurar, deletar e pegar tudo.
 
-Essa interface permite você criar regras de como os dados serão manipulados em uma classe, 
-exemplo criar uma classe e usar essa interface para fazer uma regra de como os dados serão manipulado em disco.
+Essa interface permite você criar regras de como os dados serão manipulados em uma classe, exemplo criar uma classe e usar essa interface para fazer uma regra de como os dados serão manipulado em disco.
 
 ```kotlin
 interface LocalStore {
@@ -92,6 +90,7 @@ Agora você deve criar uma segunda classe a qual depende da criação do StoreHa
 O arquivo abaixo possui as configurações para o SQL Lite e também as definições de como as ações de manipulação de cache funcionarão, no caso da persistência do cache no banco de dados.
 
 No atributo database da classe DatabaseLocalStore, a classe BeagleDatabaseManager é passada, chamando o método getDatabase e dentro do parâmetro você deve passar o contexto do aplicativo.
+
 Siga o exemplo no atributo da classe DatabaseLocalStore abaixo:
 
 
