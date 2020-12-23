@@ -25,7 +25,7 @@ interface StoreHandler {
 }
 ```
 
-O enum StoreType define atravez dos atributos se os dados serão manipulados em  disco ou memoria
+O enum StoreType define, por meio de atributos, se os dados serão manipulados em disco ou na memória. 
 
    * `DATABASE` representa o disco.
    * `MEMORY` representa memória.
