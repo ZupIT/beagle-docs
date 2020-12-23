@@ -50,4 +50,4 @@ description: >-
   
 ## Faça um fork
   
-- Se você ja possui os conhecimentos básicos de markdown, hugo, shortcodes e gitflow, sinta-se a vontade para fazer um fork do nosso reposítório e sugerir mudanças usando o editor de texto de sua prefêrencia. Se houver alguma dúvida, leia nosso [**FAQ**](../../faq), abra uma issue, ou entre em contato pelo nosso [**email**](mailto:beagle@zup.com.br)
+- Se você ja possui os conhecimentos básicos de markdown, hugo, shortcodes e gitflow, fique à vontade para fazer um fork do nosso repositório e sugerir mudanças usando o editor de texto de sua preferência. Se houver alguma dúvida, leia nosso [**FAQ**](../../faq), abra uma issue, ou entre em contato pelo nosso [**email**](mailto:beagle@zup.com.br).

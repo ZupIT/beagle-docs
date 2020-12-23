@@ -8,9 +8,9 @@ description: >-
 
 ---
 
-## O que é shortcode
+## O que é um shortcode
 
-Muitas vezes o markdown não é suficiente para expressar um bom conteúdo, como por exemplo, adicionar um video para exemplificar um assunto ou posicionar uma imagem centralizada, sendo necessário adicionar código html para isso. Dada tal limitação, o framework "Hugo" nos oferece uma solução para não perdermos a experiência única usando markdown, abstraindo a necessidade de usar html e css. Essa solução se chama shortcode.
+Muitas vezes, o markdown não é suficiente para expressar um bom conteúdo, como, por exemplo, adicionar um video para exemplificar um assunto ou posicionar uma imagem centralizada, sendo necessário adicionar código html para isso. Dada tal limitação, o framework "Hugo" nos oferece uma solução para não perdermos a experiência única usando markdown, abstraindo a necessidade de usar html e css. Essa solução se chama shortcode.
 
 ## Shortcodes disponíveis
 
@@ -75,7 +75,7 @@ Os alertas são usados para destacar alguma informação importante ao seguir al
 
 ### **Vídeos**
 
-Você pode embutir videos do youtube diretamente na documentação. Ideal para complementar aquele conteúdo de tutorial, ou divulgação. Para isso, use o ID do video localizado em sua url, ex:  
+Você pode adicionar vídeos do youtube diretamente na documentação. Essa opção é ideal para complementar aquele conteúdo de tutorial ou divulgação. Para isso, use o ID do vídeo localizado em sua URL, ex:
 
 nesse link: ```https://www.youtube.com/watch?v=ECNnZ6rP9qk``` o ID encontra-se depois de ```v=```, ou seja, ECNnZ6rP9qk
 
@@ -91,7 +91,7 @@ nesse link: ```https://www.youtube.com/watch?v=ECNnZ6rP9qk``` o ID encontra-se d
 
 ### **Tabs**
 
-As tabs são úteis para exemplificar códigos fonte que podem ser feitos em diferentes linguagens de programação, ou alguma etapa de configuração obrigatória em diferentes plataformas, como por exemplo, android, ios, backend ou web.
+As tabs são úteis para exemplificar códigos fonte que podem ser feitos em diferentes linguagens de programação ou alguma etapa de configuração obrigatória em diferentes plataformas, como, por exemplo, android, iOS, backend ou web.
 
 - Exemplo de sintaxe:
 
