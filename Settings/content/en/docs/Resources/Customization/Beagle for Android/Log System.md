@@ -55,7 +55,9 @@ You will create a class that implements `BeagleLogger` interface. This protocol 
 
 In order to let Beagle's environment open to modifications, the API logs pattern can be replaced to any other.
 
-The configuration of this customization it is done with the creation of an annotation class with `@BeagleComponent` and that implements the `BeagleLogger` **Interface.** This interface needs logs method implementation, you can follow the example below: 
+The customization is configured with the creation of an annotation class with `@BeagleComponent` that implements the `BeagleLogger` **Interface.** 
+
+This interface needs logs method implementation, you can check how it works on the example below: 
 
 ```kotlin
 import android.util.Log
