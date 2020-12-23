@@ -2,7 +2,7 @@
 title: Gerenciar Cache
 weight: 113
 description: >-
-  Nesta seção, você encontra informações sobre como gerenciar cache do beagle e como
+  Nesta seção, você encontra informações sobre como gerenciar cache do beagle e como modificá-la. 
   modificá-la.
 ---
 
