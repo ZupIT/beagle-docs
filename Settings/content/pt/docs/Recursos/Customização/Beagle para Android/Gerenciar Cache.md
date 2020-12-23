@@ -87,7 +87,9 @@ internal object MemoryLocalStore : LocalStore {
 
 ### Passo 2: Criar a classe DatabaseLocalStore
 
-Agora você deve criar uma segunda classe a qual depende da criação do StoreHandler, que é a DatabaseLocalStore. Note que neste mesmo arquivo foram declaradas algumas classes adjacentes que servem a classe DatabaseLocalStore mas poderiam estar em arquivos diferentes, caso prefira. Veja um exemplo:
+Agora, você deve criar uma segunda classe que, para isso, depende da criação do StoreHandler, que é a DatabaseLocalStore. Esse é o mesmo arquivo declarado com algumas classes adjacentes que servem para a classe DatabaseLocalStore, mas que poderiam estar em arquivos diferentes, se você quiser. 
+
+Veja como funciona no exemplo a seguir:
 
 O arquivo abaixo possui as configurações para o SQL Lite e também as definições de como as ações de manipulação de cache funcionarão, no caso da persistência do cache no banco de dados.
 
