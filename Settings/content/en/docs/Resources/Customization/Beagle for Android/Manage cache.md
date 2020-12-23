@@ -38,7 +38,7 @@ enum class StoreType {
 }
 ```
 
-LocalStore interface allows you to map the actions of saving, restoring, deleting and getting all.
+LocalStore interface allows you to map the actions of saving, restoring, deleting and the getting all.
 
 This interface allows you to create rules for how data will be handled in a class.
 For example: create a class and use this interface to make a rule of how data will be handled on the disk.
