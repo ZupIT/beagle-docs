@@ -27,7 +27,7 @@ abstract class Widget : StyleComponent,
 }
 ```
 
-We list below all the attributes a widget can receive. But, if you want an use example and how to create a widget, see our section [**creating a component.** ](https://docs.usebeagle.io/v/v1.0-en/customization/beagle-for-android/how-to-make-custom-widgets)
+We list below all the attributes a widget can receive. But, if you want an use example and how to create a widget, see our section [**creating a component.** ](/docs/resources/customization/beagle-for-android/custom-widget)
 
 ## Which are the attributes? 
 

@@ -59,6 +59,6 @@ When BFF responds with the `status 304`, the application loads the element in ca
 
 ## Next Steps
 
-👉 See how to [**configure cache**](https://docs.usebeagle.io/v/v1.0-en/resources/cache/ho-to-configure-cache#configuring-and-customizing-the-cache) according to each platform \(Android, iOS, Web e Backend\). 
+👉 See how to [**configure cache**](/docs/resources/cache/how-to-configure-cache/#configuring-and-customizing-the-cache) according to each platform \(Android, iOS, Web e Backend\). 
 
-👉Check out [**how cache works** ](https://docs.usebeagle.io/v/v1.0-en/resources/cache/ho-to-configure-cache#how-does-cache-work)according to its types \(reliable and unreliable\).
+👉Check out [**how cache works** ](/docs/resources/cache/how-to-configure-cache/#how-does-cache-work)according to its types \(reliable and unreliable\).

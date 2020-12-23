@@ -14,7 +14,7 @@ Before you use it, it's necessary to configure a dependency of Yoga Layout calle
  
 
 {{% alert color="info" %}}
-It's worth to remember that Beagle uses **Yoga Layout** to [**position the screen components**](../../../features/posicionamento-de-componentes/).
+It's worth to remember that Beagle uses **Yoga Layout** to [**position the screen components**](/docs/resources/components-positioning/).
 
 {{% /alert %}}
 

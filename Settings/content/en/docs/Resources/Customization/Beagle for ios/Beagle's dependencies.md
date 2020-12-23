@@ -217,7 +217,7 @@ On this same attribute is also possible to define a [**navigation animation**](/
 
 ## preFetchHelper
 
-This component is used to search  [**`BeagleScreenViewControllers`**](beaglescreenviewcontroller) and delivers a fluid experience to the user. It already has a value, it can be altered to fit what you need.
+This component is used to search  [**`BeagleScreenViewControllers`**](/docs/resources/customization/beagle-for-android/navigation-animation) and delivers a fluid experience to the user. It already has a value, it can be altered to fit what you need.
 
 The pre search is used when there is a navigataion widget in a way you can download all the data possible in the next screen, avoiding navigation delays. This behaviour can be deactivated.  
 

@@ -46,7 +46,7 @@ A context to be global, it can be defined in two ways:
 
 ### 1. Using SetContext
 
-It is possible to define or modify a  global context from the   [**`SetContext`**](docs/api/actions/setcontext) action.  You have to identify a global context using an `ID = "global`" in the `contextId` property, as you can see below: 
+It is possible to define or modify a  global context from the   [**`SetContext`**](/docs/api/actions/setcontext) action.  You have to identify a global context using an `ID = "global`" in the `contextId` property, as you can see below: 
 
 {{< tabs id="T149" >}}
 {{% tab name="JSON" %}}

@@ -125,7 +125,7 @@ defaultConfig {
 
 
 {{% alert color="info" %}}
-You can set a Design System now, at this point it is not necessary,  just proceed without configuring. But, if you wanna know more about it, check [**this section about Design System for Android**](https://docs.usebeagle.io/v/v1.0-en/get-started/new-project/case-android/design-system-beagle-com-android). 
+You can set a Design System now, at this point it is not necessary,  just proceed without configuring. But, if you wanna know more about it, check [**this section about Design System for Android**](/docs/get-started/creating-a-project-from-scratch/case-android/design-system-with-beagle-android). 
 {{% /alert %}}
 
 ### **Step 5: Create a BeagleSetup** 
