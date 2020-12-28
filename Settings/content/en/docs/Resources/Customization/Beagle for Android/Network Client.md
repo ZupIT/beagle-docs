@@ -27,22 +27,22 @@ interface HttpClient {
 
 In the *execute* method, you can create the rules for your network layer, causing the beagle to recognize its rule.
 
-| **Attribute** | **Type** | **Definition** |
-| :--- | :--- | :---: |
-| request | RequestData  | RequestData is the class for configuring http requests. |
-| onSuccess | (responseData: ResponseData) -> Unit | Higher-Order Functions responsible for the return of success |
-| onError | (responseData: ResponseData) -> Unit | Higher-Order Functions responsible for error return |
+| **Attribute** | **Type** | **Required** | **Definition** |
+| :--- | :--- | :---: | :---: |
+| request | RequestData  | | RequestData is the class for configuring http requests. |
+| onSuccess | (responseData: ResponseData) -> Unit | | Higher-Order Functions responsible for the return of success |
+| onError | (responseData: ResponseData) -> Unit | | Higher-Order Functions responsible for error return |
 
 ### RequestData 
 
 RequestData is the class for configuring http requests.
 
-| **Atributo** | **Tipo** | **Definição** |
-| :--- | :--- | :---: |
-| uri | URI  | Defines the endpoint that returns the screen or component you wish to display. |
-| method | HttpMethod | It is an ENUM class that defines which HTTP operation you wish to do. It works as a HTTP REQUEST METHOD and it is set as GET by default. |
-| headers | Map<String, String> | It is used when you need to send data via an HTTP header.  |
-| body | String | It is set default as null and it just needs to be implemented when you need to send a HTTP messages asbody data. |
+| **Attribute** | **Type** | **Required** | **Definition** |
+| :--- | :--- | :---: | :---: |
+| uri | URI  | ✓ | Defines the endpoint that returns the screen or component you wish to display. |
+| method | HttpMethod | ✓ | It is an ENUM class that defines which HTTP operation you wish to do. It works as a HTTP REQUEST METHOD and it is set as GET by default. |
+| headers | Map<String, String> | | It is used when you need to send data via an HTTP header.  |
+| body | String | | It is set default as null and it just needs to be implemented when you need to send a HTTP messages asbody data. |
 
 #### HttpMethod
 
@@ -61,12 +61,12 @@ It is an `ENUM` and the values are:
 
 ResponseData is used to return data made by the request.
 
-| **Atributo** | **Tipo** | **Definição** |
-| :--- | :--- | :---: |
-| statusCode | Int  | Returns the response code returned by the remote HTTP server. |
-| data | ByteArray | Response body returned from request. |
-| headers | Map<String, String> | It is used when you need to send data via an HTTP header. |
-| statusText | String | Returns the response message returned by the remote HTTP server. |
+| **Attribute** | **Type** | **Required** | **Definition** |
+| :--- | :--- | :---: | :---: |
+| statusCode | Int  | ✓ | Returns the response code returned by the remote HTTP server. |
+| data | ByteArray | ✓ | Response body returned from request. |
+| headers | Map<String, String> | | It is used when you need to send data via an HTTP header. |
+| statusText | String | | Returns the response message returned by the remote HTTP server. |
 
 ## Creating a custom network client
 
