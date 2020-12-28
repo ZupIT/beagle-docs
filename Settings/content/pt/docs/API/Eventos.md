@@ -24,7 +24,7 @@ Veja o exemplo com o evento "onPress" do botão:
 
 {{< tabs id="T173" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:events.json
 {
   "_beagleComponent_" : "beagle:button",
   "text" : "Click to show message",
@@ -34,7 +34,8 @@ Veja o exemplo com o evento "onPress" do botão:
     "message" : "Hello Beagle"
   } ]
 }
-```
+-->
+{{% playground file="events.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
