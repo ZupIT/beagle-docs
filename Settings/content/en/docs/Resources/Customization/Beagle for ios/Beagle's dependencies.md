@@ -163,7 +163,7 @@ Validates the customization that it will be made when the **Form** widget will b
 
 ## DeepLinkHandler
 
-This handler is used for a[ **deep link navigation**](https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MAhHXfCN8JFrhm0CObd/v/v1.0-en/api/components/navigation) action. The variable has a default value, you can add new screens or replace for other in the application. 
+This handler is used for a [**deep link navigation**](/docs/resources/customization/beagle-for-android/deep-link-handler/) action. The variable has a default value, you can add new screens or replace for other in the application. 
 
 You will find how to add a screen with a possible deep linking routing using a default value below: 
 
@@ -211,7 +211,7 @@ class AnalyticsSample: Analytics {
 
 ## Navigation
 
-`navigation` deals with the [**navigate**](https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MAhHXfCN8JFrhm0CObd/v/v1.0-en/api/actions/navigate) types of action in your application. There is one implementation that it is used with default value, but that it can be replaced for a [**BeagleNavigation**](https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MAhHXfCN8JFrhm0CObd/v/v1.0-en/customization/beagle-for-ios/beaglenavigation) class. 
+`navigation` deals with the [**navigate**](/docs/api/actions/navigate) types of action in your application. There is one implementation that it is used with default value, but that it can be replaced for a [**BeagleNavigation**](/docs/resources/customization/beagle-for-ios/navigation) class. 
 
 On this same attribute is also possible to define a [**navigation animation**](/docs/resources/customization/beagle-for-android/navigation-animation). 
 
