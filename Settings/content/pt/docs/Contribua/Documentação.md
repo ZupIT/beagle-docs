@@ -46,7 +46,7 @@ description: >-
 
 - Para nos ajudar a identificar problemas em geral, seja de estilização, leitura, organização ou arquitetura de código da documentação, basta abrir uma issue usando o botão "Create a documentation issue" localizado no menu lateral direito da página.
 
-- Em seguida você será redirecionado para uma pagina do github com uma label e um template padrão pré estabelecido para abertura de issue, mas sinta-se a vontade para editar o template sugerido e fazer as mudanças que fazem mais sentido para sua contribuição.
+- Em seguida, você será redirecionado(a) para uma página do github com uma label e um template padrão pré-estabelecido para abertura de issue. Fique à vontade para editar o template sugerido e fazer as mudanças que fazem mais sentido para sua contribuição.
   
 ## Faça um fork
   
