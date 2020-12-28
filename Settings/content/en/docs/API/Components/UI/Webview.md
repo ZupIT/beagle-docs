@@ -14,7 +14,7 @@ The structure is represented by the attributes below:
 
 | Attribute | Type | Required | Definition |
 | :--- | :--- | :--- | :--- |
-| url | String or [**Binding**](https://docs.usebeagle.io/v/v1.0-en/api/context#bindings) |    ✓ | Defines the Web View home page that will load. It must be declared and it cannot have a null value.  |
+| url | String or [**Binding**](/docs/api/context#bindings) |    ✓ | Defines the Web View home page that will load. It must be declared and it cannot have a null value.  |
 
 {{% alert color="warning" %}}
 **When opening an insecure link \(http\):** It is important to notice that this component will open **ONLY** secure links like `https` and it **WON'T** display any not-safe links like `http.` 

@@ -15,9 +15,9 @@ Alert structure is:
 
 | Attribute | Type | Required | Definition |
 | :--- | :--- | :--- | :--- |
-| title | String or [**Binding**](https://docs.usebeagle.io/v/v1.0-en/api/context#bindings) |  | Box alert title. |
-| message | String or [**Binding**](https://docs.usebeagle.io/v/v1.0-en/api/context#bindings) |        ✓ | Box alert message. |
-| onPressOk | [**Action**](https://docs.usebeagle.io/v/v1.0-en/api/actions) |  | Confirmation button action.  |
+| title | String or [**Binding**](/docs/api/context#bindings) |  | Box alert title. |
+| message | String or [**Binding**](/docs/api/context#bindings) |        ✓ | Box alert message. |
+| onPressOk | [**Action**](/docs/api/actions) |  | Confirmation button action.  |
 | labelOk | String |  | Confirmation button label. |
 
 ## How to use it?

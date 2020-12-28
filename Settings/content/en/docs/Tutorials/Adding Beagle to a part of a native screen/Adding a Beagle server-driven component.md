@@ -17,11 +17,11 @@ On the example below, we will show a server-drive button in a native screen, and
 
 To this configuration works correctly, you have to:
 
-* A configured [**BFF**](../../../../../../../principais-conceitos#backend-for-frontend) with Beagle, in case you haven't configured yet, check out this [**tutorial**](../../../../../../../get-started/criando-um-projeto-do-zero/case-backend).
+* A configured [**BFF**](/docs/key-concepts#backend-for-frontend) with Beagle, in case you haven't configured yet, check out this [**tutorial**](/docs/get-started/creating-a-project-from-scratch/case-backend).
 
 * A configured frontend with Beagle in Android or iOS. Check out the tutorial below:
-  * [**Android**](../../../../../../get-started/criando-um-projeto-do-zero/case-android/)
-  * [**iOS**](../../../../../get-started/criando-um-projeto-do-zero/case-ios/)
+  * [**Android**](/docs/get-started/creating-a-project-from-scratch/case-android/)
+  * [**iOS**](/docs/get-started/creating-a-project-from-scratch/case-ios/)
 
 ## Step 1: Create a component in the backend
 
@@ -285,9 +285,9 @@ At the end of the process, you will "call" our native screen that will shown up 
 {{% /tab %}}
 
 {{% tab name="WEB" %}}
-If you haven't configured you library yet, [**check out on how to do it**.](../../../../get-started/usando-o-beagle/)
+If you haven't configured you library yet, [**check out on how to do it**.](/docs/get-started/using-beagle/web)
 
-You have to use **Remote View**](../../../features/customizacao/beagle-para-web/parametros-remote-view), you can find on Beagle's library, to create hybrid screen with some server-driven components on the web.
+You have to use [**Remote View**](/docs/resources/customization/beagle-for-web/remote-view-parameters), you can find on Beagle's library, to create hybrid screen with some server-driven components on the web.
 
 See below how each framework works:
 

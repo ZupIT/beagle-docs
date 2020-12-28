@@ -10,7 +10,7 @@ description: >-
 
 ## Use configuration 
 
-Once you have finished[ **Beagle's installation**, ](../installing-beagle/beagle-backend)your BFF is fully configured for usage, with default settings.
+Once you have finished[ **Beagle's installation**, ](/docs/get-started/installing-beagle/backend)your BFF is fully configured for usage, with default settings.
 
 ### CORS
 
