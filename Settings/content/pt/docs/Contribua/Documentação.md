@@ -13,7 +13,7 @@ description: >-
 {{% alert color="success" %}}
 
 - Utilizamos a ferramenta [**Hugo**](https://gohugo.io/documentation/) para criar sites estáticos sendo ideal para documentação, por isso optamos por utiliza-lo. Todo o conteúdo da documentação é feito em markdown, se você tem dificuldades com essa sintaxe acesse este [**guia básico**](https://www.markdownguide.org/basic-syntax/).
-- É importante lembrar que o hugo possui alguns atalhos para criar componentes uteis a documentação. Esses atalhos são chamados de **shortcodes**, e são muito práticos na hora de criar alguma tabela, alerta, glossário, vídeos embútidos e etc. Para saber mais como utilizar as shortcodes do hugo no markdown, acesse este [**guia básico**](../hugo-shortcodes) de sintaxe.
+- É importante lembrar que o hugo possui alguns atalhos para criar componentes uteis a documentação. Esses atalhos são chamados de **shortcodes**, e são muito práticos na hora de criar alguma tabela, alerta, glossário, vídeos embútidos e etc. Para saber mais como utilizar as shortcodes do hugo no markdown, acesse este [**guia básico**](/pt/docs/contribua/hugo-shortcodes) de sintaxe.
 {{% /alert %}}
 
 ## Requisitos para contribuir
@@ -50,4 +50,4 @@ description: >-
   
 ## Faça um fork
   
-- Se você ja possui os conhecimentos básicos de markdown, hugo, shortcodes e gitflow, fique à vontade para fazer um fork do nosso repositório e sugerir mudanças usando o editor de texto de sua preferência. Se houver alguma dúvida, leia nosso [**FAQ**](../../faq), abra uma issue, ou entre em contato pelo nosso [**email**](mailto:beagle@zup.com.br).
+- Se você ja possui os conhecimentos básicos de markdown, hugo, shortcodes e gitflow, fique à vontade para fazer um fork do nosso repositório e sugerir mudanças usando o editor de texto de sua preferência. Se houver alguma dúvida, leia nosso [**FAQ**](/pt/docs/faq), abra uma issue, ou entre em contato pelo nosso [**email**](mailto:beagle@zup.com.br).

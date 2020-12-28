@@ -16,7 +16,7 @@ We use the tool [**Hugo**](https://gohugo.io/documentation/) to create static si
 
 If you have any difficulty with this syntax, you can access this [**basic guide**](https://www.markdownguide.org/basic-syntax/).
 
-- It is important to remember that hugo has some shortcuts to create useful components. These shortcuts are very practical when creating a table, alert, glossary, embedded videos, etc. To learn more about using hugo shortcodes in markdown, visit this [**basic guide**](../ hugo-shortcodes).
+- It is important to remember that hugo has some shortcuts to create useful components. These shortcuts are very practical when creating a table, alert, glossary, embedded videos, etc. To learn more about using hugo shortcodes in markdown, visit this [**basic guide**](/docs/contribute/hugo-shortcodes).
 {{% /alert %}}
 
 ## Requirements to contribute
@@ -55,4 +55,4 @@ All contributions are welcome, but to get starting contributing to Beagle it is 
   
 ## Fork our repository
   
-- If you already have the basic knowledge of markdown, hugo, shortcodes and gitflow, feel free to fork our repository and suggest changes using your preferred text editor. If you have any questions, read our [** FAQ **] (../../ faq), open an issue, or contact us via our [** email **] (mailto: beagle@zup.com. br)
+- If you already have the basic knowledge of markdown, hugo, shortcodes and gitflow, feel free to fork our repository and suggest changes using your preferred text editor. If you have any questions, read our [**FAQ**](/docs/faq), open an issue, or contact us via our [** email **] (mailto: beagle@zup.com. br)
