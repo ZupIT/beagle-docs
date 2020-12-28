@@ -36,7 +36,7 @@ Para usar uma `NavigationBar` é necessário declarar dentro de uma `Screen`. Se
 
 {{< tabs id="T175" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:navigation.json
 {
    "_beagleComponent_":"beagle:screenComponent",
    "navigationBar":{
@@ -69,7 +69,8 @@ Para usar uma `NavigationBar` é necessário declarar dentro de uma `Screen`. Se
       ]
    }
 }
-```
+-->
+{{% playground file="navigation.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
