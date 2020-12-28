@@ -114,7 +114,7 @@ class CustomBeagleNavigationController: BeagleNavigationController {
 ```
 
 {{% alert color="warning" %}}
-É muito importante que você registre sua CustomBeagleNavigationController nas configurações de [**dependências do Beagle.**](dependencias-do-beagle)
+É muito importante que você registre sua CustomBeagleNavigationController nas configurações de [**dependências do Beagle.**](/pt/docs/recursos/customização/beagle-para-ios/dependências-do-beagle)
 {{% /alert %}}
 
 ```swift

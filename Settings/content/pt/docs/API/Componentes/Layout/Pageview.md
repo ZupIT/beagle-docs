@@ -13,7 +13,7 @@ O componente `PageView` é um container especializado em apresentar páginas que
 {{% alert color="info" %}}
 O Page View se refere ao seu tamanho quando visualizado em dispositivos Mobile \(Android e iOS\). O **tamanho** dele é determinado pelo elemento pai em que está contido, ou seja, a largura \(width\) e a altura \(height\) será definida pelo componente pai.   
   
-Por exemplo, um `PageView` pode ser declarado dentro de um [**Container**](container) e sua largura e altura são responsáveis por determinar o tamanho do Page View. 
+Por exemplo, um `PageView` pode ser declarado dentro de um [**Container**](/pt/docs/api/componentes/layout/container) e sua largura e altura são responsáveis por determinar o tamanho do Page View. 
 {{% /alert %}}
 
 A sua estrutura é representada como mostrado abaixo:  

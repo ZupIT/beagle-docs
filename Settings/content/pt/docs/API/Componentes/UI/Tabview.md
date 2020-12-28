@@ -9,7 +9,7 @@ description: >-
 ---
 
 {{% alert color="danger" %}}
-Este componente foi depreciado na versão 1.1.0 do Beagle e será removido em uma versão futura. Utilize o componente [TabBar](tab-bar) no lugar do Tab View
+Este componente foi depreciado na versão 1.1.0 do Beagle e será removido em uma versão futura. Utilize o componente [TabBar](/pt/docs/api/componentes/ui/tabbar) no lugar do Tab View
 {{% /alert %}}
 
 ## O que é Tab View?
@@ -20,7 +20,7 @@ A estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :---: | :--- |
-| children | List&lt;[TabItem](tabview#definicao-tabitem)&gt; | ✓ | Uma lista de tab itens disponíveis no componente `Tab View`. O `Tab Item` em si não é um `widget`, mas seu conteúdo é um componente server driven recebido por meio do Beagle.  |
+| children | List&lt;[TabItem](#o-que-é-tab-item)&gt; | ✓ | Uma lista de tab itens disponíveis no componente `Tab View`. O `Tab Item` em si não é um `widget`, mas seu conteúdo é um componente server driven recebido por meio do Beagle.  |
 | styleId | String |    | Recebe uma chave que é registrada no Design System de cada plataforma para fazer customização no componente. |
 | context | ContextData |  | Adiciona um contexto para o `Tab View`. |
 

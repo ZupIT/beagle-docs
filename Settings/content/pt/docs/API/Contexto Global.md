@@ -10,7 +10,7 @@ description: 'Nesta seção, você encontra descrição completa de contexto glo
 
 O Contexto Global é uma variável que pode assumir como valor qualquer tipo de variável, como um mapa definindo um conjunto de pares chave/valor ou objetos JSONs complexos que definem árvores de objetos. 
 
-Ele funciona exatamente como o [**Contexto**](contexto/), no entanto, com um escopo **global**, ou seja, ele existirá enquanto a aplicação estiver rodando \(mesmo em background\), o que o permite ser acessado a partir de qualquer ponto da aplicação, seja esse ponto um componente ou ação vinculada a um componente ou mesmo programaticamente. 
+Ele funciona exatamente como o [**Contexto**](/pt/docs/api/contexto/), no entanto, com um escopo **global**, ou seja, ele existirá enquanto a aplicação estiver rodando \(mesmo em background\), o que o permite ser acessado a partir de qualquer ponto da aplicação, seja esse ponto um componente ou ação vinculada a um componente ou mesmo programaticamente. 
 
 ### Como acessar? 
 
@@ -24,7 +24,7 @@ Desta forma, é possível compartilhar informações entre a parte nativa da apl
 
 Para utilizar o Contexto Global é importante ressaltar algumas informações importantes:
 
-* O Contexto Global é um `Objeto` do tipo [`ContextData`](contexto/). 
+* O Contexto Global é um `Objeto` do tipo [`ContextData`](/pt/docs/api/contexto/). 
 * O Contexto Global pode ter como VALUE um Objeto JSON complexo, que pode conter uma árvore de objetos em si mesmo.
 * É um `Singleton`.
 
@@ -40,12 +40,12 @@ O Contexto Global é criado juntamente com a aplicação. É definido internamen
 
 Um contexto que seja global pode ser definido de duas formas: 
 
-* A partir de um componente declarativo \(utilizando a Ação[**`SetContext`**](acoes/setcontext)\) ou 
+* A partir de um componente declarativo \(utilizando a Ação [**`SetContext`**](/pt/docs/api/ações/setcontext)\) ou 
 * Programaticamente, utilizando a função `set()` a partir do objeto `GlobalContext` 
 
 ### 1. Usando o SetContext
 
-É possível definir ou modificar um contexto global a partir da Ação [**`SetContext`**](acoes/setcontext) Para tal, basta identificar o contexto global utilizando a `ID = "global"` na propriedade `contextId`, como mostrado no exemplo abaixo:
+É possível definir ou modificar um contexto global a partir da Ação [**`SetContext`**](/pt/docs/api/ações/setcontext) Para tal, basta identificar o contexto global utilizando a `ID = "global"` na propriedade `contextId`, como mostrado no exemplo abaixo:
 
 {{< tabs id="T167" >}}
 {{% tab name="JSON" %}}
@@ -159,7 +159,7 @@ beagleService?.globalContext.set(value, path)
 {{% /tab %}}
 
 {{% tab name="iOS" %}}
-No iOS o Contexto Global é um dos atributos do [**Beagle Dependencies**](../../features/customizacao/beagle-para-ios/dependencias-do-beagle) .
+No iOS o Contexto Global é um dos atributos do [**Beagle Dependencies**](/pt/docs/recursos/customização/beagle-para-ios/dependências-do-beagle) .
 
 Para utilizar o contexto global em qualquer componente da sua aplicação você precisará chamar o `BeagleDependencies` do seu projeto como no exemplo abaixo:
 
