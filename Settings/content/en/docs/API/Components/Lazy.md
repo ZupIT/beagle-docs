@@ -21,26 +21,26 @@ See how the structure is represented:
 
 {{< tabs id="T126" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:lazy.json
 {
   "_beagleComponent_": "beagle:lazycomponent",
-  "path": "/listview.json",
+  "path": "lazy.json",
   "initialState": {
     "_beagleComponent_": "beagle:text",
-    "text": "Carregando conteúdo, aguarde..."
+    "text": "Loading the screen, please wait",
+    "alignment": "CENTER"
   }
 }
-```
+-->
+{{% playground file="lazy.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 LazyComponent(
-    path = "/listview.json",
-    initialState = Text("Carregando conteúdo, aguarde...")
+    path = "lazy.json",
+    initialState = Text("Loading the screen, please wait", alignment = TextAlignment.CENTER)
 )
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Test this component in the Web Playground](https://beagle-playground.netlify.app/#/cloud/cce3015fbbcf49388dfb4ab3079f4f9f/lazy.json)
