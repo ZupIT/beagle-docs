@@ -75,7 +75,7 @@ Alerts are used to highlight important information when following a configuratio
 
 ### **Videos**
 
-You can embed youtube videos directly into the documentation. Ideal to complement that tutorial content, or dissemination. To do this, use the video ID located in your url, eg:
+You can embed youtube videos directly into the documentation. Ideal to complement that tutorial content or dissemination. To do this, use the video ID located in your url, eg:
 
 in this link: ```https: //www.youtube.com/watch? v = ECNnZ6rP9qk``` the ID is after ``` v = ```, that is: ECNnZ6rP9qk
 
