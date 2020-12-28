@@ -11,8 +11,9 @@ description: >-
 É possível que alguns componentes de uma tela que sejam exibidos via server-driven \(tela nativa\) recebam somente **uma seção da página** , ou mesmo um **único componente do servidor BFF**. 
 
 No exemplo abaixo, vamos exibir um botão server-driven em uma tela nativa. O resultado que deve aparecer na sua aplicação é esse:
-
-![](/screenshot_1594300176.png)
+<div align="center">
+{{< figure src="/screenshot_1594300176.png" width="30%" >}}
+</div>
 
 ## Pré-requisitos
 
@@ -201,6 +202,20 @@ Para isso, basta seguir esses passos:
 Após configurar o frame layout, é preciso informar ao Beagle qual componente será exibido. Para isso, utilize a função `loadView` como listado no exemplo a seguir.
 {{% /alert %}}
 
+## O que é loadView?
+
+O método `loadView` é responsável carregar seu conteúdo beagle dentro de sua view.
+
+A estrutura do **loadView** é:
+
+| **Atributo** | **Tipo** | Obrigatório | **Definição** |
+| :--- | :--- | :---: | :--- |
+| activity | AppCompatActivity/Fragment | ✓ | Define a activity ou fragment onde estamos usando o loadview |
+| screenRequest | [**ScreenRequest**](/pt/docs/api/screen-request/) | ✓ | Define os parâmetros para a chamada da tela remota |
+| listener | **OnServerStateChanged = (serverState: ServerDrivenState) -> Unit** |  | Define o o listener que configura os callbacks para os estados da tela  |
+
+<br />
+
 Veja como fazer isso:
 
 1. Abra a activity onde você deseja exibir a sua tela nativa.
@@ -215,8 +230,9 @@ frameLayout.loadView(this, ScreenRequest("/serverDrivenComponent"))
 
 
 E pronto: basta iniciar sua aplicação e você verá a tela a seguir! 
-
-                                                              .![](/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-MC8IwWJstYtvxLbosfv%2F-MC8QfhsPkq60mGJKtfy%2Fserver-driven-comp-ios.gif?alt=media&token=b5500211-e2bc-477d-aea4-835245be1531).
+<div align="center">
+{{< figure src="/server-driven-comp-ios.gif" width="30%" >}}
+</div>
 
 Clique no botão e perceba que a função nesse componente está implementada e funcional, ou seja, o Beagle exibe todos os componentes como se fossem nativos.
 {{% /tab %}}
@@ -226,14 +242,14 @@ Você deve utilizar um view controller para "colocar" esse componente do BFF e, 
 
 Mas antes, é preciso criar esse view controller para a tela nativa. Para isso, basta seguir os passos:
 
-1. Instancie o componente server-driven a partir da classe `BeagleScreenViewController`. 
-2. Utilize o `addChild` para adicionar o view controller.  
-3. Também adicione o `view` do `beagleScreenViewController` como`subview` do nosso view controller nativo. 
+1. Instancie o componente server-driven a partir da classe `BeagleScreenViewController`.
+2. Utilize o `addChild` para adicionar o view controller.
+3. Também adicione o `view` do `beagleScreenViewController` como`subview` do nosso view controller nativo.
 4. Por último, é necessário adicionar algumas constraints para a `UILabel` e para a view do `beagleScreenViewController`  como no código abaixo:
 
 ```swift
 class NativeViewController: UIViewController {
-    
+
     private let beagleScreenViewController = BeagleScreenViewController(.remote(.init(url: "http://localhost:8080/serverDrivenComponent")))
 
     private lazy var descriptionText: UILabel = {
@@ -242,20 +258,20 @@ class NativeViewController: UIViewController {
         label.font = .systemFont(ofSize: 25, weight: .semibold)
         return label
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
     }
-    
+
     func setupView() {
         view.backgroundColor = .white
         addChild(beagleScreenViewController)
-        
+
         view.addSubview(descriptionText)
         descriptionText.anchorCenterXToSuperview()
         descriptionText.anchor(top: view.topAnchor, topConstant: 150)
-        
+
         guard let beagleView = beagleScreenViewController.view else {
             return
         }
@@ -263,22 +279,24 @@ class NativeViewController: UIViewController {
         view.addSubview(beagleView)
         beagleView.anchorCenterXToSuperview()
         beagleView.anchor(top: descriptionText.bottomAnchor, topConstant: 50, widthConstant: 300, heightConstant: 50)
-    
+
         beagleScreenViewController.didMove(toParent: self)
     }
 ```
 
 Ao final do processo, você poderá "chamar" pela nossa tela nativa que irá aparecer a imagem abaixo. Lembrando que, para esse exemplo, foi criada uma tela  composta de uma `UILabel` e de uma variável do tipo `BeagleScreenViewController` , onde fica o componente server-driven.
 
-![](/server-driven-comp-ios.gif)
+<div align="center">
+{{< figure src="/server-driven-comp-ios.gif" width="50%" >}}
+</div>
 {{% /tab %}}
 
 {{% tab name="WEB" %}}
-Se você ainda não configurou a biblioteca em seu projeto, [**veja aqui como fazer isso**.](../../../../get-started/usando-o-beagle/)
+Se você ainda não configurou a biblioteca em seu projeto, [**veja aqui como fazer isso**.](/pt/docs/primeiros-passos/usando-o-beagle/)
 
-Você deve utilizar o [**Remote View**](../../../features/customizacao/beagle-para-web/parametros-remote-view), fornecido pela biblioteca do Beagle, para criar telas híbridas com alguns componentes server driven na web.
+Você deve utilizar o [**Remote View**](/pt/docs/recursos/customização/beagle-para-web/parâmetros-remote-view/), fornecido pela biblioteca do Beagle, para criar telas híbridas com alguns componentes server driven na web.
 
-  
+
 Veja a seguir como funciona para cada framework:
 
 **React**
@@ -329,8 +347,9 @@ Lembre-se de rodar seu projeto Angular usando um dos comandos:
 `yarn run serve ou npx run serve`
 {{% /alert %}}
 
-A sua tela híbrida com elementos nativos e server driven está pronta 
-
-![](/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-ME4OQaHp-v_V78YeLiC%2F-ME7uUduHSFMpidOFn9E%2Fimage.png?alt=media&token=974fe2f0-0964-4d68-a16b-414e3fdd9d67)
+A sua tela híbrida com elementos nativos e server driven está pronta
+<div align="center">
+{{< figure src="/image.png" >}}
+</div>
 {{% /tab %}}
 {{< /tabs >}}
