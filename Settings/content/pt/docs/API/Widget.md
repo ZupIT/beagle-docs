@@ -195,17 +195,17 @@ No exemplo abaixo, utilizamos um Container para exemplificar os atributos de um 
 
 {{< tabs id="T177" >}}
 {{% tab name="JSON" %}}
-```markup
+<!-- json-playground:widget.json
 {
       "_beagleComponent_" : "beagle:container",
       "children" : [ {
         "_beagleComponent_" : "beagle:text",
-        "text" : "I'am a Server-Driven text"
+        "text" : "Sou um texto Server-Driven"
       }, {
         "_beagleComponent_" : "beagle:text",
-        "text" : "I'am another a Server-Driven text"
+        "text" : "Sou outro texto Server-Driven"
       } ],
-      "id" : "WidgetID",
+      "id" : "SouUmWidget",
       "style" : {
         "backgroundColor" : "#ff8100",
         "cornerRadius" : {
@@ -247,10 +247,11 @@ No exemplo abaixo, utilizamos um Container para exemplificar os atributos de um 
       },
       "accessibility" : {
         "accessible" : true,
-        "accessibilityLabel" : "I have acessibility"
+        "accessibilityLabel" : "Sou acessível"
       }
     }
-```
+-->
+{{% playground file="widget.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -281,7 +282,3 @@ Container(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👇 Teste esse componente no Web Playground
-
-{% embed url="https://beagle-playground.netlify.app/\#/demo/default-components/container.json" %}}
