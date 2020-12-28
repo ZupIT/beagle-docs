@@ -49,7 +49,7 @@ Um contexto que seja global pode ser definido de duas formas:
 
 {{< tabs id="T167" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:globalContext.json
 {
   "_beagleComponent_": "beagle:container",
   "children": [
@@ -71,7 +71,8 @@ Um contexto que seja global pode ser definido de duas formas:
     }
   ]
 }
-```
+-->
+{{% playground file="globalContext.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}

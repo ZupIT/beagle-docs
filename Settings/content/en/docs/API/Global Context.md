@@ -50,7 +50,7 @@ It is possible to define or modify a  global context from the   [**`SetContext`*
 
 {{< tabs id="T149" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:globalContext.json
 {
   "_beagleComponent_": "beagle:container",
   "children": [
@@ -72,7 +72,8 @@ It is possible to define or modify a  global context from the   [**`SetContext`*
     }
   ]
 }
-```
+-->
+{{% playground file="globalContext.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
