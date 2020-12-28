@@ -29,9 +29,9 @@ No método execute, você consegue criar as regras de sua camada de rede, fazend
 
 | **Atributo** | **Tipo** | **Obrigatório** | **Definição** |
 | :--- | :--- | :---: | :---: |
-| request | RequestData  | | RequestData é a classe para fazer configuração e solicitações http. |
-| onSuccess | (responseData: ResponseData) -> Unit |  | Higher-Order Functions responsável pelo retorno de sucesso |
-| onError | (responseData: ResponseData) -> Unit |  | Higher-Order Functions responsável pelo retorno de erro |
+| request | RequestData  | ✓ | RequestData é a classe para fazer configuração e solicitações http. |
+| onSuccess | (responseData: ResponseData) -> Unit | ✓ | Higher-Order Functions responsável pelo retorno de sucesso |
+| onError | (responseData: ResponseData) -> Unit | ✓ | Higher-Order Functions responsável pelo retorno de erro |
 
 ### RequestData 
 
