@@ -10,13 +10,33 @@ description: >-
 
 ## Introdução
 
-A classe HTTPClient define como as solicitações de serviços são configuradas. Para usá-la, você precisa criar uma classe que implemente uma interface do tipo `HttpClient`. 
+Esta interface define como as requisições de serviços são configuradas, para usá-lo, você precisa criar uma classe que implemente uma interface `HttpClient` .
 
-Aqui, você pode adicionar cabeçalhos às suas requisições, definir os métodos request, body response,  data response, executar criptografia, etc. 
+Aqui, você pode adicionar cabeçalhos às suas requisições, definir os métodos request, body response,  data response, executar criptografia, etc.
 
-### Criando a classe HttpClient
+```kotlin 
+interface HttpClient {
 
-Para criar essa classe, siga os seguintes passos:
+    fun execute(
+        request: RequestData,
+        onSuccess: (responseData: ResponseData) -> Unit,
+        onError: (responseData: ResponseData) -> Unit
+    ): RequestCall
+}
+```
+
+No método execute, você consegue criar as regras de sua camada de rede, fazendo com que o beagle reconheça a sua regra.
+
+| **Atributo** | **Tipo** | **Definição** |
+| :--- | :--- | :---: |
+| request | RequestData  |RequestData é a classe para fazer configuração e solicitações http. |
+| onSuccess | (responseData: ResponseData) -> Unit | Higher-Order Functions responsável pelo retorno de sucesso |
+| onError | (responseData: ResponseData) -> Unit | Higher-Order Functions responsável pelo retorno de erro |
+
+
+## Criando uma camada de rede customizada
+
+Para criar uma camada de rede customizada, siga um exemplo abaixo com as seguintes passos.
 
 ### Passo 1: Adicionar as dependências
 
@@ -24,32 +44,80 @@ Localize o arquivo `build.gradle(Module:app) ,` abra-o e role a página para bai
 
 1. Copie e cole a linha abaixo dentro das dependências:
 
-   * _implementation 'com.squareup.okhttp3:okhttp:4.5.0'_
-
-   \_\_
+   * implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'  
 
 2. Aperte **Sync now** para sincronizar o Gradle novamente. 
-3. Essa dependência é necessária, pois a classe que implementa `HttpClient` vai importar algumas configurações dela.
 
-{{% alert color="warning" %}}
-Se a sua aplicação utilizar serviços do tipo **Retrofit** é possível que aconteça algum conflito, porque esse serviço define a dependência **okhttp** internamente e com isso ela irá conflitar com a dependência do HttpClient. 
+Essa dependência é necessária, pois a classe que implementa `HttpClient` vai importar algumas configurações dela.
 
-* Substitua a linha:
+### Passo 2: Criar a object CoroutineDispatchers
 
-  _implementation 'com.squareup.okhttp3:okhttp:4.5.0'_
+Crie um objeto e escolha um nome para ele, por exemplo CoroutineDispatchers 
 
-* Por essas duas outras linhas:
+Esse object é responsável por configurar os CoroutineDispatchers, que irá ditar em qual thread as tarefas serão executadas
 
-  _implementation 'com.squareup.retrofit2:retrofit:2.7.2'_
+```kotlin
+import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.Dispatchers
 
-  _implementation 'com.squareup.retrofit2:converter-gson:2.7.2_ 
-{{% /alert %}}
+internal object CoroutineDispatchers {
 
-### Passo 2: Criar a classe
+    init {
+        reset()
+    }
 
-1. Crie a classe e escolha o nome que você desejar. Nesse exemplo, foi dado o nome de `HttpClientDefault`.  
-2. Se o Android reclamar dos **imports**, é só checar  se as dependências não estão conflitantes.
-3. Essa configuração é bem extensa, a sugestão é que você copie e cole a classe abaixo e modifique como achar necessário: 
+    lateinit var IO: CoroutineDispatcher
+    lateinit var Main: CoroutineDispatcher
+    lateinit var Default: CoroutineDispatcher
+
+    fun reset() {
+        IO = Dispatchers.IO
+        Main = Dispatchers.Main
+        Default = Dispatchers.Default
+    }
+}
+```
+
+### Passo 3: Criar um arquivo HttpURLConnectionExtensions
+
+Crie um arquivo e escolha o nome que você desejar. Nesse exemplo, foi dado o nome de `HttpURLConnectionExtensions`.  
+
+Este arquivo é responsável por conter métodos para retornar a regra * HttpURLConnection * , portanto, usaremos esses métodos na classe HttpClientDefault.
+
+```kotlin
+import java.lang.Exception
+import java.net.HttpURLConnection
+
+internal fun HttpURLConnection.getSafeResponseCode(): Int? {
+    return getMessageFormatted { this.responseCode }
+}
+
+internal fun HttpURLConnection.getSafeResponseMessage(): String? {
+    return getMessageFormatted { this.responseMessage }
+}
+
+internal fun HttpURLConnection.getSafeError(): ByteArray? {
+    return getMessageFormatted { this.errorStream.readBytes() }
+}
+
+internal typealias GetData<T> = () -> T
+
+internal fun <T> getMessageFormatted(getData: GetData<T>): T? {
+    return try {
+        getData.invoke()
+    } catch (exception: Exception) {
+        null
+    }
+}
+```
+
+### Passo 4: Criar a classe HttpClientDefault
+
+Crie uma classe e escolha um nome para ela. Para o exemplo, `HttpClientDefault` foi escolhido.
+
+A classe HTTPClientDefault define como as solicitações de serviços são configuradas. Para usá-la, você precisa criar uma classe que implemente uma interface do tipo `HttpClient`.
+
+Essa configuração é bem extensa, a sugestão é que você copie e cole a classe abaixo e modifique como achar necessário: 
 
 
 ```kotlin
@@ -66,6 +134,7 @@ import kotlinx.coroutines.cancel
 import kotlinx.coroutines.launch
 import java.io.EOFException
 import java.net.HttpURLConnection
+import kotlin.jvm.Throws
 
 typealias OnSuccess = (responseData: ResponseData) -> Unit
 typealias OnError = (responseData: ResponseData) -> Unit
