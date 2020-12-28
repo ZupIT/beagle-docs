@@ -25,7 +25,7 @@ Classe que auxilia o posicionamento dos componentes na área da tela. `Safe Area
 
 {{< tabs id="T176" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:safeArea.json
 {
    "_beagleComponent_":"beagle:screenComponent",
    "safeArea":{
@@ -44,7 +44,8 @@ Classe que auxilia o posicionamento dos componentes na área da tela. `Safe Area
       ]
    }
 }
-```
+-->
+{{% playground file="safeArea.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}

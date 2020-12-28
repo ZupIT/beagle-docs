@@ -24,7 +24,7 @@ A sua tela possui atributos e componentes que podem ser usados e configurados. N
 
 {{< tabs id="T174" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:screen.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "navigationBar" : {
@@ -53,7 +53,8 @@ A sua tela possui atributos e componentes que podem ser usados e configurados. N
     } ]
   }
 }
-```
+-->
+{{% playground file="screen.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -83,5 +84,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste esse exemplo no Playground](https://beagle-playground.netlify.app/)

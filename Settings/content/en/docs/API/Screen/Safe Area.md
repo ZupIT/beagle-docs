@@ -24,7 +24,7 @@ Class that helps on your screen's components area. The `Safe Area` guarantees th
 
 {{< tabs id="T158" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:safeArea.json
 {
    "_beagleComponent_":"beagle:screenComponent",
    "safeArea":{
@@ -43,7 +43,8 @@ Class that helps on your screen's components area. The `Safe Area` guarantees th
       ]
    }
 }
-```
+-->
+{{% playground file="safeArea.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}

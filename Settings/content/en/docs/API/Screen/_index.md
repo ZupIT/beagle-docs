@@ -24,7 +24,7 @@ Your screen has attributes and components that can be used and configured. On th
 
 {{< tabs id="T156" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:screen.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "navigationBar" : {
@@ -53,7 +53,8 @@ Your screen has attributes and components that can be used and configured. On th
     } ]
   }
 }
-```
+-->
+{{% playground file="screen.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}

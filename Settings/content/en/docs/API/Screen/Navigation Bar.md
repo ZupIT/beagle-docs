@@ -33,7 +33,7 @@ Class that defines an item for `Navigation's bar` and and it has the following a
 
 {{< tabs id="T157" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:navigation.json
 {
    "_beagleComponent_":"beagle:screenComponent",
    "navigationBar":{
@@ -66,7 +66,8 @@ Class that defines an item for `Navigation's bar` and and it has the following a
       ]
    }
 }
-```
+-->
+{{% playground file="navigation.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
