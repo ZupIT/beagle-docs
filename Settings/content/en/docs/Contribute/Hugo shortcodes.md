@@ -91,7 +91,7 @@ in this link: ```https: //www.youtube.com/watch? v = ECNnZ6rP9qk``` the ID is af
 
 ### **Tabs**
 
-Tabs are useful for exemplifying source codes that can be made in different programming languages, or some mandatory configuration step on different platforms, such as, for example, android, ios, backend or web.
+Tabs are useful for exemplifying source codes that can be made in different programming languages, or some mandatory configuration step on different platforms, such as, for example, android, iOS, backend or web.
 
 - Syntax example:
 
