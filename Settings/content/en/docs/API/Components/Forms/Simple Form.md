@@ -14,9 +14,9 @@ Its structure is represented as shown below:
 
 | Attribute | Type | Required | Definition |
 | :--- | :--- | :--- | :--- |
-| ​onSubmit | List &lt;[**Action**](https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MJgKhvyrHFMgUm8zhug/v/v1.0-en/api/actions)&gt; |  ✓ | Action array that this button can trigger when a form is sent. |
-| children | List&lt;[**ServerDrivenComponent**](https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MJgKhvyrHFMgUm8zhug/v/v1.0-en/api/components)&gt; |  ✓ | Defines the visual components list \(server driven\). |
-| context | **​**[**ContextData**](https://docs.usebeagle.io/api/contexto)**​** | ​ | Adds a context to the simple form |
+| ​onSubmit | List &lt;[**Action**](/docs/api/actions)&gt; |  ✓ | Action array that this button can trigger when a form is sent. |
+| children | List&lt;[**ServerDrivenComponent**](/docs/api/components)&gt; |  ✓ | Defines the visual components list \(server driven\). |
+| context | **​**[**ContextData**](/docs/api/context)**​** | ​ | Adds a context to the simple form |
 
 ## How to use? 
 
@@ -30,12 +30,12 @@ When creating a form it is important to understand two steps respectively
 The TextInput component is the field in which the user or the system will fill in some information, and it is important to know its attributes in order to better use it. Here we will use one of its elements, which is the **onChange** function. 
 
 {{% alert color="info" %}}
-For more information on this component go to the details of [TextInput](../../../../../ui/textinput). 
+For more information on this component go to the details of [TextInput](/docs/api/components/ui/textinput). 
 {{% /alert %}}
 
 #### OnChange 
 
-This function is part of the TextInput and it observes the changes made within its field, that is, whenever the value is modified, something is typed, deleted, etc, this function is called and activates a **list of other** [actions](../../../../../actions/) to happen whenever the value changes. It is in this list that we add a [SetContext](../../../../../actions/setcontext) action to set the [Context](../../../../../context/) value of the form and update the values ​​that are shown in the field. 
+This function is part of the TextInput and it observes the changes made within its field, that is, whenever the value is modified, something is typed, deleted, etc, this function is called and activates a list of other [**actions**](/docs/api/actions/) to happen whenever the value changes. It is in this list that we add a [**SetContext**](/docs/api/actions/setcontext) action to set the [**Context**](/docs/api/context/) value of the form and update the values ​​that are shown in the field. 
 
 Check our example below on how we implemented a `SimpleForm` 
 
@@ -116,7 +116,7 @@ SimpleForm(
 
 It is a function of a simple form that performs a list of actions. It is called when the form is submitted. 
 
-To submit a form, you must use the SubmitForm action and call it, just implement it in a [Button](../../../ui/button) that is part of a simple form, that is, that is in your list of children. 
+To submit a form, you must use the SubmitForm action and call it, just implement it in a [**Button**](/docs/api/components/ui/button) that is part of a simple form, that is, that is in your list of children. 
 
-When you click this button, the onSubmit is activated and the list of actions will be performed. It is this list of actions that will define what should happen with the information in this form, if they will be sent to a backend \(through the [sendRequest ](../../../actions/sendrequest)action\), etc.
+When you click this button, the onSubmit is activated and the list of actions will be performed. It is this list of actions that will define what should happen with the information in this form, if they will be sent to a backend \(through the [**sendRequest** ](/docs/api/actions/sendrequest)action\), etc.
 

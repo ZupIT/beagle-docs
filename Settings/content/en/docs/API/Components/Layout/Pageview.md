@@ -13,7 +13,7 @@ description: Page View components description and its attributes details
 {{% alert color="info" %}}
 O Page View  refers to its view size on mobile devices \(Android or iOS\). The page view size is determined by the father that it is in, meaning that, the width and the height will be defined by the component father. 
 
-For example, a Page View can be declared inside of a [**Container**](https://docs.usebeagle.io/v/v1.0-en/api/components/layout/container) and the width and the height will define the page view size. 
+For example, a Page View can be declared inside of a [**Container**](/docs/api/components/layout/container) and the width and the height will define the page view size. 
 {{% /alert %}}
 
 See how the structure is represented:

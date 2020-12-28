@@ -95,10 +95,10 @@ class BeagleConfig {
 ```
 
 
-Now, we'll configure the **`SceneDelegate`** class so it can be used to initialize our application with Beagle from a screen through [**BFF**:](../../../../../../key-concepts#backend-for-frontend)
+Now, we'll configure the **`SceneDelegate`** class so it can be used to initialize our application with Beagle from a screen through [**BFF**:](/docs/key-concepts#backend-for-frontend)
 
 * Create a **`beagleScreen`** constant, that will receive the server-driven screen. 
-* The `init URL` argument must contain the [**relative URL**](../../../../../resources/urls#caminho-relativo) address that will be created on backend \(BFF\). For this example, we'll call it  "/screen"
+* The `init URL` argument must contain the [**relative URL**](/docs/resources/urls#relative-path) address that will be created on backend \(BFF\). For this example, we'll call it  "/screen"
 
 Follow the example below: 
 
@@ -135,7 +135,7 @@ On the GIF below, you can see better how to remove these references:
 
 ![](/main%20%282%29.gif)
 
-Well done, now Beagle is configured for your iOS application! All you have to do is [**set up a backend**](../../case-backend) to answer to your server-driven applications's requests.
+Well done, now Beagle is configured for your iOS application! All you have to do is [**set up a backend**](/docs/get-started/creating-a-project-from-scratch/case-backend) to answer to your server-driven applications's requests.
 
 Once you finished the configuration, start your application and you'll have your first server-driven screen!  
 You will see this screen: 

@@ -213,11 +213,11 @@ class AnalyticsSample: Analytics {
 
 `navigation` deals with the [**navigate**](https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MAhHXfCN8JFrhm0CObd/v/v1.0-en/api/actions/navigate) types of action in your application. There is one implementation that it is used with default value, but that it can be replaced for a [**BeagleNavigation**](https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MAhHXfCN8JFrhm0CObd/v/v1.0-en/customization/beagle-for-ios/beaglenavigation) class. 
 
-On this same attribute is also possible to define a [**navigation animation**](../../beagle-for-android/navigation-animation). 
+On this same attribute is also possible to define a [**navigation animation**](/docs/resources/customization/beagle-for-android/navigation-animation). 
 
 ## preFetchHelper
 
-This component is used to search  [**`BeagleScreenViewControllers`**](beaglescreenviewcontroller) and delivers a fluid experience to the user. It already has a value, it can be altered to fit what you need.
+This component is used to search  [**`BeagleScreenViewControllers`**](/docs/resources/customization/beagle-for-android/navigation-animation) and delivers a fluid experience to the user. It already has a value, it can be altered to fit what you need.
 
 The pre search is used when there is a navigataion widget in a way you can download all the data possible in the next screen, avoiding navigation delays. This behaviour can be deactivated.  
 

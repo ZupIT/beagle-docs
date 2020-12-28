@@ -13,7 +13,7 @@ The structure is represented by the attributes below:
 
 | **Attribute** | **Type** | Required | **Definition** |
 | :--- | :--- | :--- | :--- |
-| screen | [**Screen**](https://docs.usebeagle.io/v/v1.0-en/api/screen) |  | Screen to be loaded |
+| screen | [**Screen**](/docs/api/screen) |  | Screen to be loaded |
 
 ## How to use it?
 

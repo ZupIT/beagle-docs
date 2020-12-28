@@ -10,7 +10,7 @@ description: Understanding and taking control over the rendering process
 The features described here are only available in versions 1.2.0 and above.
 {{% /alert %}}
 
-We recommend you to read about  [**Beagle tree data structure**](data-structure) in order to help you understand rendering. 
+We recommend you to read about  [**Beagle tree data structure**](/docs/resources/customization/beagle-for-web/advanced-topics/data-structure) in order to help you understand rendering. 
 
 Every Beagle Web library has a very well defined process of how it fetches, process and renders a view. There's an order that must always be respected and hook points where the developer can execute some code of his own \(lifecycles\).
 
@@ -136,9 +136,9 @@ export default MyComponentWithTheme
 
 The return value of a lifecycle hook can be either nothing \(undefined\) or a tree. If it is a tree, the rendering process will discard the previous tree and start working on the tree returned by the hook.
 
-To take control over the rendering process, besides the lifecycles, Beagle also offers the [**Renderer API**](rendering#the-renderer-api)**,** which can be accessed through `BeagleView.getRenderer()`. The BeagleView can be accessed via the `BeagleRemoteView` component through the attributes `onCreateBeagleView`, in Angular and `viewRef`in React.
+To take control over the rendering process, besides the lifecycles, Beagle also offers the [**Renderer API**](#the-renderer-api)**,** which can be accessed through `BeagleView.getRenderer()`. The BeagleView can be accessed via the `BeagleRemoteView` component through the attributes `onCreateBeagleView`, in Angular and `viewRef`in React.
 
-Another way to get access to the `BeagleView` is through the [**ViewContentManager API**](rendering#the-viewcontentmanager-api), which can be found under `this.viewContentManager` in an Angular component that extends `BeagleComponent`; or under `props.viewContentManager` in a React component that implements the `BeagleComponent` interface.
+Another way to get access to the `BeagleView` is through the [**ViewContentManager API**](#the-viewcontentmanager-api), which can be found under `this.viewContentManager` in an Angular component that extends `BeagleComponent`; or under `props.viewContentManager` in a React component that implements the `BeagleComponent` interface.
 
 ## Process and lifecycles
 
@@ -173,7 +173,7 @@ See below the steps to render a view:
 
 ### Lifecycles
 
-There are four lifecycle hooks, but you probably want to use just two of them: `beforeViewSnapshot` and `beforeRender`. The main difference between them is that the first runs before any expression or action has been evaluated and the second runs after. Also important to notice is that, when using the [**Renderer API**](rendering#the-renderer-api), `doFullRender` will run both lifecycles, but `doPartialRender` will run only the `beforeRender` lifecycle.
+There are four lifecycle hooks, but you probably want to use just two of them: `beforeViewSnapshot` and `beforeRender`. The main difference between them is that the first runs before any expression or action has been evaluated and the second runs after. Also important to notice is that, when using the [**Renderer API**](#the-renderer-api), `doFullRender` will run both lifecycles, but `doPartialRender` will run only the `beforeRender` lifecycle.
 
 A simple rule to decide if you want to alter the tree via `beforeViewSnapshot` or `beforeRender` is: if your modification doesn't depend on the result of an expression, use `beforeViewSnapshot` otherwise use`beforeRender`.
 
@@ -240,7 +240,7 @@ class Table {
 
 The code above works only if every other component has `children` as the name of the property that represents its children. If this is not the case, a global lifecycle should be used instead.
 
-This feature could also be implemented using `BeforeViewSnapshot`, but, in this case, you'd have to assign id's to every node inside the new property `children`, since in `BeforeViewSnapshot` the ids have already been assigned. See the example [here](rendering#example-of-usage).
+This feature could also be implemented using `BeforeViewSnapshot`, but, in this case, you'd have to assign id's to every node inside the new property `children`, since in `BeforeViewSnapshot` the ids have already been assigned. See the example [here](#example-of-usage).
 
 ### BeforeViewSnapshot
 
@@ -372,7 +372,7 @@ class Table {
 
 ### AfterViewSnapshot
 
-When using the [**Renderer API**](rendering#the-renderer-api) we have two different types of render: full renders and partial renders. The two previous lifecycles will run only in full renders, while this lifecycle and the next runs on both full and partial renders.
+When using the [**Renderer API**](#the-renderer-api) we have two different types of render: full renders and partial renders. The two previous lifecycles will run only in full renders, while this lifecycle and the next runs on both full and partial renders.
 
 Differently from the two previous lifecycles, the changes done here are valid for the current render only. Since any update to the view is done over a tree based on the snapshotted view, the modifications done in this lifecycle are not permanent and will be executed in every render. For instance, if we have a property `counter` with the value `0` in the tree and in our lifecycle we increment `counter` by `1`. In the 5th full render these would be the values for `counter` depending on which lifecycle was used:
 
@@ -385,7 +385,7 @@ This lifecycle can be used to run code that needs to run every time the view is 
 
 #### Example of usage
 
-Contexts are defined, referenced and manipulated in the JSON of the view. But what if we want to access data of the application and not the view itself? Beagle offers a feature called "[**Global context**](https://docs.usebeagle.io/api/global-context)" that is able to deal with this scenario, but suppose there is no Global context, we can still implement this behavior by using the AfterViewSnapshot lifecycle.
+Contexts are defined, referenced and manipulated in the JSON of the view. But what if we want to access data of the application and not the view itself? Beagle offers a feature called "[**Global context**](/docs/api/global-context)" that is able to deal with this scenario, but suppose there is no Global context, we can still implement this behavior by using the AfterViewSnapshot lifecycle.
 
 Let's say we have a financial application and we want to show the user's balance. We must guarantee that, in every re-render the most recent value for the balance will be used.
 
@@ -438,7 +438,7 @@ const config = {
 
 The code above tells Beagle to replace the values in the context "user" by the values in the application. This piece of code cannot be placed before the view is snapshotted because we have the requirement to update the balance value in every render. It also can't be placed in the next lifecycle \(BeforeRender\), because the context would then be already evaluated and our values wouldn't be processed.
 
-It is important to notice that the action `setContext` would not work over the context `user`, since we are always replacing the values for this context before processing any expression. This is just an example to show how this lifecycle could be used. To use application values in your beagle view, it is always preferred to use the [**global context**](https://docs.usebeagle.io/api/global-context).
+It is important to notice that the action `setContext` would not work over the context `user`, since we are always replacing the values for this context before processing any expression. This is just an example to show how this lifecycle could be used. To use application values in your beagle view, it is always preferred to use the [**global context**](/docs/api/global-context).
 
 ### BeforeRender
 
@@ -551,7 +551,7 @@ For fine control of the rendering process, Beagle also let you manage when to re
 
 A common scenario is when you need to create an action that modifies the current tree. Take for example the action `addChildren`, when executed, it must get the current tree and add the given children to the component with the given `id`. To do it, we must have a way to get the current tree, modify it and tell the Beagle View to render it again.
 
-A renderization can be one of two processes: a full renderization or a partial renderization. The first runs all steps of the renderization \(1 to 8 in [**this list**](rendering#process-to-render-a-view)\). The second executes only the view snapshot and the steps after it \(9 to 18 in [**this list**](rendering#process-to-render-a-view)\).
+A renderization can be one of two processes: a full renderization or a partial renderization. The first runs all steps of the renderization \(1 to 8 in [**this list**](#process-to-render-a-view)\). The second executes only the view snapshot and the steps after it \(9 to 18 in [**this list**](#process-to-render-a-view)\).
 
 ### Accessing the Renderer
 
@@ -609,7 +609,7 @@ export class Home {
 }
 ```
 
-When inside a component rendered by Beagle, you can use the [**ViewContentManager**](rendering#the-viewcontentmanager-api) to get the BeagleView and obtain access to the renderer.
+When inside a component rendered by Beagle, you can use the [**ViewContentManager**](#the-viewcontentmanager-api) to get the BeagleView and obtain access to the renderer.
 
 When inside an action handler \(custom actions\), the Beagle View is provided via parameter, which can be used to get the renderer. See the example below:
 

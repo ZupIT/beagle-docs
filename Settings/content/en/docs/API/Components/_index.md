@@ -6,7 +6,7 @@ description: Here you'll find all about components and its attributes details.
 
 ---
 
-![&#xC1;rvore de componentes do Beagle](/components-01-beagle.png)
+![Beagle's component tree](/components-01-beagle.png)
 
 `ServenDrivenComponent`  is the father of all Beagle's components, such as `widgets`, `forms` e `navigation`, they will be implemented through`ServerDrivenComponent`.
 
@@ -18,31 +18,31 @@ Beagle has **21 components**, they are currently divided into **5 categories**:
 
 {{< tabs id="T114" >}}
 {{% tab name="Layout" %}}
-* [**Container**](https://docs.usebeagle.io/api/componentes/layout/container)
-* [**List View**](https://docs.usebeagle.io/api/componentes/layout/listview)
-* [**PageView**](https://docs.usebeagle.io/api/componentes/layout/pageview)
-* [**ScrollView**](https://docs.usebeagle.io/api/componentes/layout/scrollview)
+* [**Container**](/docs/api/components/layout/container)
+* [**List View**](/docs/api/components/layout/listview)
+* [**PageView**](/docs/api/components/layout/pageview)
+* [**ScrollView**](/docs/api/components/layout/scrollview)
 {{% /tab %}}
 
 {{% tab name="Navigation" %}}
-* [**Touchable**](https://docs.usebeagle.io/v/v1.0-en/api/components/navigation-1#touchable)
+* [**Touchable**](/docs/api/components/touchable)
 {{% /tab %}}
 
 {{% tab name="Forms" %}}
-* [**Validator**](form/validator)
-* [**Simple Form**](form/simple-form)
-* [**Input**](ui/textinput)
+* [**Validator**](/docs/api/components/forms/validator)
+* [**Simple Form**](/docs/api/components/forms/simple-form)
+* [**Input**](/docs/api/components/ui/textinput)
 {{% /tab %}}
 
 {{% tab name="Lazy" %}}
-* [**LazyComponent**](https://docs.usebeagle.io/api/componentes/lazy)
+* [**LazyComponent**](/docs/api/components/lazy)
 {{% /tab %}}
 
 {{% tab name="UI" %}}
-* [**Button**](https://docs.usebeagle.io/api/componentes/ui/button)
-* [**Image**](https://docs.usebeagle.io/api/componentes/ui/image)
-* [**Tab View**](https://docs.usebeagle.io/api/componentes/ui/tabview)
-* [**Text**](https://docs.usebeagle.io/api/componentes/ui/text)
-* [**Web View**](https://docs.usebeagle.io/api/componentes/ui/webview)
+* [**Button**](/docs/api/components/ui/button)
+* [**Image**](/docs/api/components/ui/image)
+* [**Tab View**](/docs/api/components/ui/tabview)
+* [**Text**](/docs/api/components/ui/text)
+* [**Web View**](/docs/api/components/ui/webview)
 {{% /tab %}}
 {{< /tabs >}}

@@ -28,9 +28,9 @@ See below every tree's componenent:
 
 * `_beagleComponent_` is the name of the UI component to render.
 * `id` is a unique identifier for the node. Observation: although the `id` is required by the internal tree structure, before processing the tree, Beagle assigns random unique ids for each node without an id, making it optional in the json provided by the backend.
-* `context` is a [**context**](../../../../../how-to-make-comunication-between-components) defined for the component and its children.
+* `context` is a [**context**](/docs/api/context/) defined for the component and its children.
 * `children` is an array of nodes representing the children of the current node.
-* `style` is the stylization rules for the component. These rules are not CSS, instead it's a [**structure defined by Beagle**](https://docs.usebeagle.io/resources/estilizacao/web#stylizing-components-through-json);
+* `style` is the stylization rules for the component. These rules are not CSS, instead it's a [**structure defined by Beagle**](/docs/resources/style/web#stylizing-components-through-json);
 * Additionally, a node has every property expected by the component itself, a text component could have `text` and `justify`, while a button could have `onPress`, `text` and `disabled`.
 
 Below, we show an example of a tree of components ready to be processed by Beagle:
@@ -68,11 +68,11 @@ The json above is a simpler version of the welcome page of the Beagle Playground
 
 ## The Beagle Payload
 
-The type defined in the last section \(`BeagleUIElement`\), you can see the `id` is a required property and that the children of a node must always be named `children`. The backend, however, may not guarantee any of that. For this reason, Beagle internally generates unique ids for every node without one and translates the children property. A table component, for instance, might have its children in the property `rows`. Before starting to process, Beagle converts `rows` to the expected name `children` \(see section [**The `children` property**](data-structure#the-children-property)\).
+The type defined in the last section \(`BeagleUIElement`\), you can see the `id` is a required property and that the children of a node must always be named `children`. The backend, however, may not guarantee any of that. For this reason, Beagle internally generates unique ids for every node without one and translates the children property. A table component, for instance, might have its children in the property `rows`. Before starting to process, Beagle converts `rows` to the expected name `children` \(see section [**The `children` property**](#the-children-property)\).
 
 In fact, the payload returned by the backend can be anything, but internally Beagle must work with a tree of components \(`BeagleUIElement`\). You must be able to traverse the tree and detect every component and its children. The payload can be anything, because it gives the developer a chance to change it before it gets processed by Beagle.
 
-We recommend that the backend always return a JSON representing a tree of components, as it is expected by Beagle, but if, for some reason, it is not possible, Beagle Web makes it possible to pre-process the response and build the tree in the front-end before Beagle actually works upon it, like in [**lifecycles**](rendering#lifecycles).
+We recommend that the backend always return a JSON representing a tree of components, as it is expected by Beagle, but if, for some reason, it is not possible, Beagle Web makes it possible to pre-process the response and build the tree in the front-end before Beagle actually works upon it, like in [**lifecycles**](/docs/resources/customization/beagle-for-web/advanced-topics/rendering/#lifecycles).
 
 ### The children property
 
