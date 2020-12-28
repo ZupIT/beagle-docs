@@ -126,8 +126,6 @@ When using this interface, you can create a component, see the example below wit
 {{% tab name="React" %}}
 On React, you have to create a `Functional Component` that uses the `ErrorComponentParams` interface. When using it, you have access to two `props` errors and retry, which are the errors list and the `retry` method, both described on the interface: 
 
-No React, é preciso criar um `Functional Component` que usa a interface `ErrorComponentParams`, note que ao usá-la você tem acesso à duas `props` errors e retry, que são respectivamente a lista de erros e o método `retry` ambos descritos na interface:
-
 ```text
 import { ErrorComponentParams } from '@zup-it/beagle-react'
 import React, { FC } from 'react'
