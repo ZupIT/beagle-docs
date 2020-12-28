@@ -14,9 +14,9 @@ A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo**  | Obrigatório | **Definição** |
 | :--- | :--- | :---: | :--- |
-| children | List &lt;[ServerDriven Component](../../widget)&gt; | ✓ | Define a lista de componentes que fazem parte do container |
-| context | [ContextData](../../../../contexto/) |   | É o [contexto](../../contexto/) contido por este Widget. |
-| onInit | List&lt;[Action](../../acoes/)&gt; |   | Um parâmetro que te possibilita definir uma lista de ações a serem executadas assim que esse Widget seja exibido. |
+| children | List &lt;[ServerDriven Component](/pt/docs/api/componentes)&gt; | ✓ | Define a lista de componentes que fazem parte do container |
+| context | [ContextData](/pt/docs/api/contexto/) |   | É o [contexto](/pt/docs/api/contexto/) contido por este Widget. |
+| onInit | List&lt;[Action](/pt/docs/api/ações)&gt; |   | Um parâmetro que te possibilita definir uma lista de ações a serem executadas assim que esse Widget seja exibido. |
 
 ## Como usar?
 

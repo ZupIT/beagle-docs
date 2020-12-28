@@ -6,7 +6,7 @@ description: 'Nesta seção, você encontra descrição completa das Custom Oper
 
 ---
 
-Depois que você viu que é possível realizar[ **Operações**](./) do tipo soma, subtração, etc, utilizando o contexto, você também pode criar a sua própria operação na plataforma que você quiser: 
+Depois que você viu que é possível realizar[ **Operações**](/pt/docs/api/contexto/operações) do tipo soma, subtração, etc, utilizando o contexto, você também pode criar a sua própria operação na plataforma que você quiser: 
 
 {{< tabs id="T165" >}}
 {{% tab name="iOS" %}}

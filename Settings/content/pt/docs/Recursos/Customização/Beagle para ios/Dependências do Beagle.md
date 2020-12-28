@@ -168,7 +168,7 @@ Valida a customização que será realizada quando o widget **Form** for utiliza
 
 ## DeepLinkHandler
 
-Este handler é usado para uma ação de [**deep link navigation**](../../../beagle-para-android/deep-link-handler). A variável possui um valor default, você pode adicionar novas telas ou substituir por outras na aplicação. 
+Este handler é usado para uma ação de [**deep link navigation**](/pt/docs/recursos/customização/beagle-para-android/deep-link-handler). A variável possui um valor default, você pode adicionar novas telas ou substituir por outras na aplicação. 
 
 Abaixo, você encontra um comando de como adicionar uma tela com um possível roteamento para deep linking usando um valor default:
 
@@ -216,13 +216,13 @@ class AnalyticsSample: Analytics {
 
 ## Navigation
 
-O `navigation` lida com tipo de ações de [**navigate**](../../../../api/acoes/navigate/) da sua aplicação. Existe uma implementação que é usada como valor default, mas que também pode ser substituída por uma classe que  está de acordo com BeagleNavigation
+O `navigation` lida com tipo de ações de [**navigate**](/pt/docs/api/ações/navigate/) da sua aplicação. Existe uma implementação que é usada como valor default, mas que também pode ser substituída por uma classe que  está de acordo com BeagleNavigation
 
-Nesse mesmo atributo também é possível definir uma [animação de navegação](animacoes-de-navegacao). 
+Nesse mesmo atributo também é possível definir uma [**animação de navegação**](/pt/docs/recursos/customização/beagle-para-ios/animações-de-navegação).
 
 ## PreFetchHelper
 
-Este componente é usado como pré-busca do [**`BeagleScreenViewControllers`**](screen-view-controller) e entrega uma experiência para o usuário mais fluida. Ela já possui um valor e pode ser alterado para se adequar em que você precisa.
+Este componente é usado como pré-busca do [**`BeagleScreenViewControllers`**](/pt/docs/recursos/customização/beagle-para-ios/screen-view-controller) e entrega uma experiência para o usuário mais fluida. Ela já possui um valor e pode ser alterado para se adequar em que você precisa.
 
 A pré-busca é acionada quando há um **navigation widget** de modo que você possa fazer um pré carregamento dos dados das possíveis próximas telas, evitando delays na navegação. Este comportamento pode ser desativado.
 

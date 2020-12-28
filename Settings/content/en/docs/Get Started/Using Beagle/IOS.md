@@ -105,4 +105,4 @@ Now, run your application and, if everything works well, you will see a screen l
 
 On this section, you saw how to create your first declarative screen using **Beagle**, on your simplest way, without entering on the server-driven UI concept.
 
-👉To understand more about **how to configure Beagle** and use it applying server-driven UI, [**check out how to create an iOS project from scratch**](https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MGhl-E_OjnBR8rfYtgB/get-started/new-project/case-ios).
+👉To understand more about **how to configure Beagle** and use it applying server-driven UI, [**check out how to create an iOS project from scratch**](/docs/get-started/creating-a-project-from-scratch/case-ios).

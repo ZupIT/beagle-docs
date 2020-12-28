@@ -14,7 +14,7 @@ A estrutura é representada como mostrado abaixo:
 
 | Atributo | Tipo | Obrigatório | Definição |
 | :--- | :--- | :---: | :--- |
-| url | String ou [Binding](https://docs.usebeagle.io/api/contexto#bindings) | ✓ | Define a página inicial que o Web View irá carregar. Ele deve ser declarado e não pode ser configurado como valor nulo.  |
+| url | String ou [Binding](/pt/docs/api/contexto#binding) | ✓ | Define a página inicial que o Web View irá carregar. Ele deve ser declarado e não pode ser configurado como valor nulo.  |
 
 {{% alert color="warning" %}}
 **Ao abrir um link não seguro \(http\):** É importante observar que este componente abrirá **SOMENTE** links seguros do tipo **`https`** e NÃO exibirá nenhum link não seguro do tipo **`http`**.

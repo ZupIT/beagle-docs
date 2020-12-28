@@ -75,7 +75,7 @@ class AppBeagleConfig : BeagleConfig {
 | cache | Cache | Objeto responsável por gerenciar o cache das requisições do Beagle. |
 
 {{% alert color="warning" %}}
-Faça a configuração das classes com bastante atenção, pois se você anotá-las com`BeagleComponent`, o Beagle espera que elas tenham construtores vazios.
+Faça a configuração das classes com bastante atenção, pois se você anotá-las com `BeagleComponent`, o Beagle espera que elas tenham construtores vazios.
 {{% /alert %}}
 
 ### **Passo 3: BeagleActivity**
@@ -83,7 +83,7 @@ Faça a configuração das classes com bastante atenção, pois se você anotá-
 O Beagle fornece uma `Activity` default para gerenciar as `Activities` geradas via server-driven. Porém você pode criar uma ou mais`Activities` que herdem de `BeagleActivity` com `@BeagleComponent` personalizadas de acordo com os fluxos server-driven da sua aplicação. 
 
 {{% alert color="info" %}}
-Você pode criar o BeagleActivity agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-la. Para saber mais, confira a seção sobre[ **Beagle Activity Customizada**](../../features/customizacao/beagle-para-android/beagle-activity-customizada).
+Você pode criar o BeagleActivity agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-la. Para saber mais, confira a seção sobre [**Beagle Activity Customizada**](/pt/docs/recursos/customização/beagle-para-android/beagle-activity-customizada).
 {{% /alert %}}
 
 ### **Passo 4: Iniciar o Beagle e o Design System**
@@ -99,7 +99,7 @@ defaultConfig {
 
 
 {{% alert color="info" %}}
-Você pode criar o Design System agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-lo. Para saber mais, confira a seção sobre [**Design System com Beagle para Android**](../../../criando-um-projeto-do-zero/case-android/design-system-com-beagle-android).
+Você pode criar o Design System agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-lo. Para saber mais, confira a seção sobre [**Design System com Beagle para Android**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-android/design-system-com-beagle-android).
 {{% /alert %}}
 
 ### **Passo 5: Criar o BeagleSetup**
@@ -569,7 +569,7 @@ Neste tutorial, focamos em uma configuração de tela simples para você entende
 
 Antes de usar o Beagle, fique atento a **configuração da build de release e o ProGuard.** 
 
-Mesmo não sendo necessário neste momento, é bom ter em mente que você precisará [**configurar o ProGuard**](../../../features/customizacao/beagle-para-android/configuracao-do-proguard) para ativar o ofuscamento do seu código quando estiver publicando releases. 
+Mesmo não sendo necessário neste momento, é bom ter em mente que você precisará [**configurar o ProGuard**](/pt/docs/recursos/customização/beagle-para-android/configuração-do-proguard) para ativar o ofuscamento do seu código quando estiver publicando releases. 
 
 {{% alert color="info" %}}
 As classes anotadas como `BeagleComponent` e `RegisterValidator`não podem implementar parâmetros nos seus construtores, pois no caso do Beagle esses construtores precisam estar vazios.

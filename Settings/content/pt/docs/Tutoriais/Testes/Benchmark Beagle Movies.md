@@ -16,9 +16,9 @@ O Beagle Movies é um aplicativo de filmes que foi desenvolvido usando o framewo
 
 ### Tamanho do Payload 
 
-De modo geral, **é esperado que o payload do** [**Server-Driven UI**](../../../../../principais-conceitos#server-driven-ui) **seja maior que o nativo**, pois toda estrutura de layout vem no payload, enquanto o nativo somente as informações a serem mostradas.
+De modo geral, **é esperado que o payload do** [**Server-Driven UI**](/pt/docs/principais-conceitos#server-driven-ui) **seja maior que o nativo**, pois toda estrutura de layout vem no payload, enquanto o nativo somente as informações a serem mostradas.
 
-Apesar disso, em algumas telas o tamanho do payload é inferior ao server driven. Isso acontece porque [**BFF \(Backend For Frontend\)**](../../../../principais-conceitos#backend-for-frontend) filtra os dados que não são usados no aplicativo e não envia no payload. 
+Apesar disso, em algumas telas o tamanho do payload é inferior ao server driven. Isso acontece porque [**BFF \(Backend For Frontend\)**](/pt/docs/principais-conceitos#backend-for-frontend) filtra os dados que não são usados no aplicativo e não envia no payload. 
 
 | Telas  | Resposta em telas Server-Driven \(em KB\) | Resposta em telas nativas \(em KB\) |
 | :--- | :--- | :--- |
@@ -27,7 +27,7 @@ Apesar disso, em algumas telas o tamanho do payload é inferior ao server driven
 | Search | 12,8 KB | 14,45 KB |
 | **Resultado do teste** | **438,84 KB** | **318,55 KB** |
 
-Para telas mais complexas, o payload do server-driven ficará maior. É importante ressaltar que o Beagle utiliza um mecanismo de [cache](../../../features/cache/) e que esse teste é considerado apenas a primeira requisição. 
+Para telas mais complexas, o payload do server-driven ficará maior. É importante ressaltar que o Beagle utiliza um mecanismo de [**cache**](/pt/docs/recursos/cache/) e que esse teste é considerado apenas a primeira requisição. 
 
 {{% alert color="info" %}}
 A vantagem em usar o Beagle é porque **você só desenvolve a tela apenas uma vez**, enquant em telas nativas você terá de desenvolver para cada plataforma.
