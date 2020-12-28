@@ -56,28 +56,8 @@ Done! Your operation can be used now!
 See below an example using the `isvalidCpf` operation that was created above, where the text component `Text` will vary according the verification result, if the CPF is valid or not: 
 
 {{< tabs id="T148" >}}
-{{% tab name="Kotlin" %}}
-```kotlin
-fun screen() = Screen(
-    navigationBar = NavigationBar(title = "Custom operation", showBackButton = true),
-    child = Container(
-        context = ContextData("cpf", "00000000000"),
-        children = listOf(
-            Button("CPF atual: @{cpf}", onPress = listOf(
-                SetContext(
-                    contextId = "cpf",
-                    value = "42249625000"
-                )
-            )),
-            Text(text = "@{condition(isValidCpf(cpf), 'cpf is valid', 'cpf is not valid')}")
-        )
-    )
-)
-```
-{{% /tab %}}
-
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:customOperation.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "navigationBar" : {
@@ -104,6 +84,27 @@ fun screen() = Screen(
     }
   }
 }
+-->
+{{% playground file="customOperation.json" language="en" %}}
+```
+{{% /tab %}}
+{{% tab name="Kotlin" %}}
+```kotlin
+fun screen() = Screen(
+    navigationBar = NavigationBar(title = "Custom operation", showBackButton = true),
+    child = Container(
+        context = ContextData("cpf", "00000000000"),
+        children = listOf(
+            Button("CPF atual: @{cpf}", onPress = listOf(
+                SetContext(
+                    contextId = "cpf",
+                    value = "42249625000"
+                )
+            )),
+            Text(text = "@{condition(isValidCpf(cpf), 'cpf is valid', 'cpf is not valid')}")
+        )
+    )
+)
 ```
 {{% /tab %}}
 {{< /tabs >}}

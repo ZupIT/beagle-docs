@@ -21,23 +21,8 @@ description: You will find here the description of string manipulation operator
 This example, a screen has a text with the `substring` operation, which the sentence is '**The book is on the table'** and the parameters is **4,11** determine the threshold of this `substring`, which it will turn the following string '**book is on**': 
 
 {{< tabs id="T144" >}}
-{{% tab name="Kotlin" %}}
-```kotlin
-fun screen() = Screen(child = 
-    Container(
-        children = listOf(
-            Text(text = "The text bellow is a substring of `The book is on the table`."),
-            Text(
-                expressionOf("@{substr('The book is on the table', 4, 11)}")
-            ).applyStyle(Style(backgroundColor = "#00FF00")
-        )
-    )
-)
-```
-{{% /tab %}}
-
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:stringManipulation.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -54,6 +39,21 @@ fun screen() = Screen(child =
     } ]
   }
 }
+-->
+{{% playground file="stringManipulation.json" language="en" %}}
+{{% /tab %}}
+{{% tab name="Kotlin" %}}
+```kotlin
+fun screen() = Screen(child = 
+    Container(
+        children = listOf(
+            Text(text = "The text bellow is a substring of `The book is on the table`."),
+            Text(
+                expressionOf("@{substr('The book is on the table', 4, 11)}")
+            ).applyStyle(Style(backgroundColor = "#00FF00")
+        )
+    )
+)
 ```
 {{% /tab %}}
 {{< /tabs >}}

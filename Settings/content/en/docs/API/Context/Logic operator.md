@@ -19,24 +19,8 @@ weight: 340
 Here is an example of a screen that uses two logical operation  `condition` and `or`, if the result of the condition `or` is true, the text of the component text becomes **true**, if it is false it attibutes the value **false** to the text: 
 
 {{< tabs id="T142" >}}
-{{% tab name="Kotlin" %}}
-```kotlin
-fun screen() = Screen(
-    navigationBar = NavigationBar(title = "Operations", showBackButton = true),
-    child = Container(
-        children = listOf(
-            Text(text = "The text in green bellow will show if the result of `TRUE OR FALSE"),
-            Text(
-                expressionOf("@{condition(or(true, false), 'true', 'false')}")
-            ).applyStyle(Style(backgroundColor = "#00FF00"))
-        )
-    )
-)
-```
-{{% /tab %}}
-
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:logical.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "navigationBar" : {
@@ -57,6 +41,22 @@ fun screen() = Screen(
     } ]
   }
 }
+-->
+{{% playground file="logical.json" language="en" %}}
+{{% /tab %}}
+{{% tab name="Kotlin" %}}
+```kotlin
+fun screen() = Screen(
+    navigationBar = NavigationBar(title = "Operations", showBackButton = true),
+    child = Container(
+        children = listOf(
+            Text(text = "The text in green bellow will show if the result of `TRUE OR FALSE"),
+            Text(
+                expressionOf("@{condition(or(true, false), 'true', 'false')}")
+            ).applyStyle(Style(backgroundColor = "#00FF00"))
+        )
+    )
+)
 ```
 {{% /tab %}}
 {{< /tabs >}}

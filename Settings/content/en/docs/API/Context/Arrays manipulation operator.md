@@ -20,24 +20,8 @@ description: You will find a description of arrays manipulation operator.
 See the example of a screen where the a context was declared with `numbersArray` id with the values **\[0, 1, 2, 3, 4\],** this context is used in the removeIndex operation in the text component `text`, where it removes the element of index **2.**
 
 {{< tabs id="T145" >}}
-{{% tab name="Kotlin" %}}
-```kotlin
-fun screen() = Screen(child = 
-    Container(
-        context = ContextData(id = "numbersArray", value = arrayOf(0,1,2,3,4)),
-        children = listOf(
-            Text(text = "Array was [0, 1, 2, 3, 4] and after removing index 2 now is: "),
-            Text(
-                expressionOf("@{removeIndex(numbersArray, 2)}")
-            ).applyStyle(Style(backgroundColor = "#00FF00"))
-        )
-    )
-)
-```
-{{% /tab %}}
-
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:arrayHandling.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -58,6 +42,22 @@ fun screen() = Screen(child =
     }
   }
 }
+-->
+{{% playground file="arrayHandling.json" language="en" %}}
+{{% /tab %}}
+{{% tab name="Kotlin" %}}
+```kotlin
+fun screen() = Screen(child = 
+    Container(
+        context = ContextData(id = "numbersArray", value = arrayOf(0,1,2,3,4)),
+        children = listOf(
+            Text(text = "Array was [0, 1, 2, 3, 4] and after removing index 2 now is: "),
+            Text(
+                expressionOf("@{removeIndex(numbersArray, 2)}")
+            ).applyStyle(Style(backgroundColor = "#00FF00"))
+        )
+    )
+)
 ```
 {{% /tab %}}
 {{< /tabs >}}

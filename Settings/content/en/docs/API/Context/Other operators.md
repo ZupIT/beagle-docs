@@ -19,24 +19,8 @@ description: You will find a description of other operators.
 A context with `numbersArray` id that has  **\[0, 1, 2, 3, 4\]** as value and the operation length was used in one component Text to get the size of this array, see below: 
 
 {{< tabs id="T146" >}}
-{{% tab name="Kotlin" %}}
-```kotlin
-fun screen() = Screen(child = 
-    Container(
-        context = ContextData(id = "numbersArray", value = arrayOf(0,1,2,3,4)),
-        children = listOf(
-            Text(text = "Array [0, 1, 2, 3, 4] has size: "),
-            Text(
-                expressionOf("@{length(numbersArray)}")
-            ).applyStyle(Style(backgroundColor = "#00FF00"))
-        )
-    )
-)
-```
-{{% /tab %}}
-
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:otherOperators.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -57,6 +41,22 @@ fun screen() = Screen(child =
     }
   }
 }
+-->
+{{% playground file="otherOperators.json" language="en" %}}
+{{% /tab %}}
+{{% tab name="Kotlin" %}}
+```kotlin
+fun screen() = Screen(child = 
+    Container(
+        context = ContextData(id = "numbersArray", value = arrayOf(0,1,2,3,4)),
+        children = listOf(
+            Text(text = "Array [0, 1, 2, 3, 4] has size: "),
+            Text(
+                expressionOf("@{length(numbersArray)}")
+            ).applyStyle(Style(backgroundColor = "#00FF00"))
+        )
+    )
+)
 ```
 {{% /tab %}}
 {{< /tabs >}}

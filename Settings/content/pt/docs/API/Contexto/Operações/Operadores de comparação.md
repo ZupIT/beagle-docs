@@ -73,6 +73,34 @@ Aqui, o exemplo é de uma tela que utiliza a operação de comparação **lt**, 
 * Caso falso ele atribui ao texto o valor de **false.**
 
 {{< tabs id="T161" >}}
+{{% tab name="JSON" %}}
+<!-- json-playground:comparisonOperators.json
+{
+   "_beagleComponent_":"beagle:screenComponent",
+   "navigationBar":{
+      "title":"Operations",
+      "showBackButton":true
+   },
+   "child":{
+      "_beagleComponent_":"beagle:container",
+      "children":[
+         {
+            "_beagleComponent_":"beagle:text",
+            "text":"The text bellow will show if 4 is below 5 or not"
+         },
+         {
+            "_beagleComponent_":"beagle:text",
+            "text":"@{condition(lt(4, 5), 'less then 5', 'greater then 5')}",
+            "style":{
+               "backgroundColor":"#00FF00"
+            }
+         }
+      ]
+   }
+}
+-->
+{{% playground file="comparisonOperators.json" language="pt" %}}
+{{% /tab %}}
 {{% tab name="Kotlin" %}}
 ```kotlin
 fun screen() = Screen(
@@ -89,31 +117,6 @@ fun screen() = Screen(
         )
     )
 )
-```
-{{% /tab %}}
-
-{{% tab name="JSON" %}}
-```kotlin
-{
-  "_beagleComponent_" : "beagle:screenComponent",
-  "navigationBar" : {
-    "title" : "Operations",
-    "showBackButton" : true
-  },
-  "child" : {
-    "_beagleComponent_" : "beagle:container",
-    "children" : [ {
-      "_beagleComponent_" : "beagle:text",
-      "text" : "The text bellow will show if 4 is below 5 or not"
-    }, {
-      "_beagleComponent_" : "beagle:text",
-      "text" : "@{condition(lt(4, 5), 'less then 5', 'greater then 5')}",
-      "style" : {
-        "backgroundColor" : "#00FF00"
-      }
-    } ]
-  }
-}
 ```
 {{% /tab %}}
 {{< /tabs >}}
