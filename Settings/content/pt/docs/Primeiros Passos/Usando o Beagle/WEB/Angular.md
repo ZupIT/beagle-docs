@@ -53,7 +53,7 @@ Ao final deste processo, serão gerados dois novos arquivos em seu projeto:
 
 ![](/docs-beagle/image%20%2815%29.png)
 
-Abra o arquivo `app.module.ts` e, em seguida, importe o módulo Beagle que acabou de ser gerado:
+Abra o arquivo `app.module.ts` e, em seguida, importe o módulo Beagle que acabou de ser gerado ```import { Beagle } from './beagle.module';``` e adicione dentro de ```imports```:
 
 ```text
 ...
@@ -75,9 +75,9 @@ export class AppModule { }
 
 ### Passo 2: Criação do JSON de definição do layout
 
-Agora, você precisa criar um arquivo JSON que definirá os componentes que serão renderizados. Geralmente, esse arquivo seria obtido por um servidor externo, mas neste exemplo criaremos um arquivo local para ser acessado como teste.
+Agora, você precisa criar um arquivo JSON que definirá os componentes que serão renderizados.
 
-No seu projeto angular, navegue até a pasta `src/assets` e crie um novo arquivo com o nome `payload.json`. Abra este novo arquivo que foi criado e copie o conteúdo abaixo:
+Para uma melhor experiencia o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**](../../../instalando-o-beagle/backend/), neste exemplo usaremos um JSON remoto. Copie o conteudo abaixo e ultilizando um serviço de hospedagem JSON, crie um JSON remoto.
 
 ```text
 {
@@ -109,14 +109,14 @@ A biblioteca Beagle já vem com diversos componentes pré-definidos e prontos pa
 O código acima cria um JSON com dois desses componentes: container e text.
 {{% /alert %}}
 
-Depois de criado o seu JSON, abra o arquivo `beagle.module.ts` gerado no passo anterior e adicione como baseUrl o caminho: http://localhost:4200/assets
+Depois de criado o seu JSON, abra o arquivo `beagle.module.ts` gerado no passo anterior, na baseUrl insira o caminho do JSON remoto, usaremos o caminho: https://api.jsonbin.io/b.
 
 ```text
 import { BeagleModule } from '@zup-it/beagle-angular'
 // import all the components you wish to use with Beagle.
 
 @BeagleModule({
-  baseUrl: 'http://localhost:4200/assets',
+  baseUrl: 'https://api.jsonbin.io/b',
   module: {
     path: './beagle-components.module',
     name: 'BeagleComponentsModule',
@@ -127,6 +127,14 @@ import { BeagleModule } from '@zup-it/beagle-angular'
 })
 export class Beagle {}
 ```
+{{% alert color="info" %}}
+**baseUrl:** URL base que fornece as visualizações (JSON) para o Beagle. 
+{{% /alert %}}
+
+{{% alert color="info" %}}
+**components:** São o mapa de componentes a serem usados ​​ao renderizar uma view.
+{{% /alert %}}
+
 
 Pronto, a configuração está finalizada agora vamos aprender como renderizar os componentes mapeados no JSON.
 
@@ -134,16 +142,16 @@ Pronto, a configuração está finalizada agora vamos aprender como renderizar o
 
 Depois de criado o JSON, você precisa especificar, dentro da aplicação, o local em que os componentes serão renderizados. Para realizar essa ação, a biblioteca do Beagle fornece o componente `<beagle-remote-view>`.
 
-Abra o arquivo `app.component.html` e substitua todo o conteúdo pelo código a seguir:
+Abra o arquivo `app.component.html` e substitua todo o conteúdo pelo código a seguir, no route adicione o caminho relativo ao json remoto que vc criou no caso ultilizaremos: /5fe2541047ed0861b36aa589.
 
 ```text
-<beagle-remote-view route="/payload.json"></beagle-remote-view>
+<beagle-remote-view route="/5fe2541047ed0861b36aa589"></beagle-remote-view>
 ```
 
 `route` no código acima diz qual a rota será carregada.  A URL especificada aqui é relativa à `baseUrl` declarada na configuração.
 
 {{% alert color="warning" %}}
-O parâmetro `route` é válido apenas para a versão 1.3 ou superior. Para versões anteriores, `loadParams` deve ser usado. `loadParams`é um objeto e o valor equivalente  ao desse exemplo seria`{ path: '/payload.json' }.`
+O parâmetro `route` é válido apenas para a versão 1.3 ou superior. Para versões anteriores, `loadParams` deve ser usado. `loadParams`é um objeto e o valor equivalente  ao desse exemplo seria`{ path: '/5fe2541047ed0861b36aa589' }.`
 {{% /alert %}}
 
 ## Exemplo 

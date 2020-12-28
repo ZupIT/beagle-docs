@@ -12,6 +12,10 @@ description: >-
 
 Ao contrário das configurações para aplicações mobile, o Beagle para Web não exige requisitos prévios. Basta apenas seguir com os procedimentos de instalação de acordo com o framework que estiver utilizando: 
 
+{{% alert color="secondary" %}}
+Utilize Angular 6 ou superior.
+{{% /alert %}}
+
 * [**Angular** ](web#angular)
 * [**React** ](web#react)
 

@@ -12,7 +12,6 @@ description: 'Nesta seção, você encontra informações para iniciar um projet
 
 Para criar um projeto com Beagle para Web, confirme se você tem instalado os seguintes programas:
 
-* [**Angular CLI**](https://cli.angular.io/)
 * Node 10.16 +
 * Yarn ou npm
 
@@ -22,7 +21,7 @@ Após a instalação, siga os passos de acordo com o framework escolhido:
 
 {{< tabs name="T8" >}}
 {{% tab name="Angular" %}}
-**Passo 1:** abra o terminal e use o comando abaixo:
+**Passo 1:** Instale o [**Angular CLI**](https://cli.angular.io/), abra o terminal e use o comando abaixo:
 
 ```text
 ng new caseAngular
@@ -67,7 +66,7 @@ npx beagle init
 {{% /tab %}}
 
 {{% tab name="React" %}}
-**Passo 1:** abra o terminal e digite um dos comandos abaixo:
+**Passo 1:** Instale o [**Node.js**](https://nodejs.org/en/), abra o terminal e digite um dos comandos abaixo:
 
 ```text
 npx create-react-app case-react --template typescript
@@ -130,7 +129,7 @@ import { BeagleModule } from '@zup-it/beagle-angular'
 // import all the components you wish to use with Beagle.
 
 @BeagleModule({
-  baseUrl: 'http://localhost:4200/assets',
+  baseUrl: 'https://api.jsonbin.io/b',
   module: {
     path: './beagle-components.module',
     name: 'BeagleComponentsModule',
@@ -154,7 +153,7 @@ Agora, abra o arquivo criado `beagle-service.ts` e copie o código:
 import { createBeagleUIService } from '@zup-it/beagle-react'
 
 export default createBeagleUIService({
-  baseUrl: "",
+  baseUrl: "https://api.jsonbin.io/b",
   components: {}
 })
 ```
@@ -163,17 +162,9 @@ export default createBeagleUIService({
 
 ### Criando o JSON para ser renderizado
 
-Agora é preciso um JSON para renderizar os componentes, normalmente a chamada seria feita para um servidor externo que  retornaria o JSON, mas neste exemplo um arquivo local será criado para ser acessado como teste:
+Agora é preciso um JSON para renderizar os componentes, criaremos um json remoto utilizando um serviço de hospedagem JSON:
 
-{{< tabs name="T10" >}}
-{{% tab name="Angular" %}}
-No seu projeto angular navegue até a pasta `src/assets` e crie um novo arquivo com o nome `payload.json`. Insira neste arquivo o conteúdo do `JSON` abaixo.
-{{% /tab %}}
-
-{{% tab name="React" %}}
-No seu projeto react navegue até a pasta `/public`e crie um novo arquivo com o nome `payload.json`. Insira neste arquivo o conteúdo do `JSON` abaixo:
-{{% /tab %}}
-{{< /tabs >}}
+Para uma melhor experiencia o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**](../../../instalando-o-beagle/backend/), neste exemplo usaremos um JSON remoto. Copie o conteudo abaixo e ultilizando um serviço de hospedagem JSON, crie um json remoto.
 
 ```text
 {
@@ -205,16 +196,17 @@ Agora é necessário adicionar na aplicação o local onde os componentes serão
 
 {{< tabs name="T11" >}}
 {{% tab name="Angular" %}}
-Abra o arquivo `app.component.html` e substitua todo o conteúdo pelo código a seguir:
+
+Abra o arquivo `app.component.html`  e substitua todo o conteúdo pelo código a seguir, no route adicione o caminho relativo ao JSON remoto que vc criou no caso ultilizaremos: /5fe2541047ed0861b36aa589.
 
 ```text
-<beagle-remote-view route="/payload.json"></beagle-remote-view>
+<beagle-remote-view route="/5fe2541047ed0861b36aa589"></beagle-remote-view>
 ```
 
 `route` no código acima diz qual a rota será carregada.  A URL especificada aqui é relativa à `baseUrl` declarada na configuração.
 
 {{% alert color="warning" %}}
-O parâmetro `route` é válido apenas para a versão 1.3 ou superior. Para versões anteriores, `loadParams` deve ser usado. `loadParams`é um objeto e o valor equivalente  ao desse exemplo seria`{ path: '/payload.json' }.`
+O parâmetro `route` é válido apenas para a versão 1.3 ou superior. Para versões anteriores, `loadParams` deve ser usado. `loadParams`é um objeto e o valor equivalente  ao desse exemplo seria`{ path: '/5fe2541047ed0861b36aa589' }.`
 {{% /alert %}}
 {{% /tab %}}
 
@@ -230,7 +222,7 @@ import BeagleService from './beagle/beagle-service';
 function App() {
   return (
     <BeagleProvider value={BeagleService}>
-      <BeagleRemoteView route={'/payload.json'} />
+      <BeagleRemoteView route={'/5fe2541047ed0861b36aa589'} />
     </BeagleProvider>
   );
 }
@@ -238,11 +230,11 @@ function App() {
 export default App;
 ```
 
-Neste passo apontamos onde queremos renderizar nosso layout definidos no arquivo `payload.json`. Temos aqui dois componentes fornecidos pela biblioteca beagle:
+Neste passo apontamos onde queremos renderizar nosso layout definidos no arquivo json remoto. Temos aqui dois componentes fornecidos pela biblioteca beagle:
 
 `<BeagleProvider>` Recebe uma propriedade `value` com o `beagle-service` criado no passo anterior que contém as configurações iniciais
 
-`<BeagleRemoteView>` Recebe uma propriedade `route` que é o caminho do nosso arquivo JSON, note aqui que adicionamos **' / '** pois esse valor será concatenado com o `baseUrl` definido no arquivo `beagle-service.ts.`
+`<BeagleRemoteView>` Recebe uma propriedade `route` que é o caminho do nosso arquivo JSON, note aqui que adicionamos **' /5fe2541047ed0861b36aa589 '** pois esse valor será concatenado com o `baseUrl` definido no arquivo `beagle-service.ts.`
 
 {{% alert color="warning" %}}
 `route` no `BeagleRemoteView` só é válido para as versões 1.3 e superior. Para versões anteriores, por favor, use `path.`

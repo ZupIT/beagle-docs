@@ -55,7 +55,7 @@ No Angular
 Você pode usar o angular cli se preferir com o comando para gerar automaticamente o componente, veja:
 
 ```text
-ng generate component components/custom-loading
+ng generate component components/custom-loading --module=app.module
 ```
 
 **Passo 2:** Depois, abra o arquivo `beagle-components.module.ts` e adicione o componente a lista:
