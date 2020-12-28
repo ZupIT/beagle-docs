@@ -8,7 +8,7 @@ description: >-
 
 ---
 
-## What is shortcode?
+## What is a shortcode?
 
 Often the markdown is not enough to express good content, for example, adding a video to exemplify a subject or positioning a centralized image, being necessary to add html code for this. Given this limitation, the "Hugo" framework offers us a solution to avoid losing the unique experience using markdown, abstracting the need to use html and css. This solution is called shortcode.
 
