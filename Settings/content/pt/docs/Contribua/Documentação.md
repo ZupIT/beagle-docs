@@ -40,7 +40,7 @@ description: >-
 
 ### **Criando uma nova página**
 
-- Para criar uma página, o processo é semelhante ao de edição. Navega até o local onde deseja criar uma página (use o menu lateral esquerdo), nesse caso, ao invés de "Edit this page", clique em "Create child page" localizado no menu lateral direito da pagina.
+- Para criar uma página, o processo é semelhante ao de edição. Vá até o local onde deseja criar uma página (use o menu lateral esquerdo) e, nesse caso, em vez de "Edit this page", clique em "Create child page", localizado no menu lateral direito da página.
 
 ### **Abrindo uma issue**
 
