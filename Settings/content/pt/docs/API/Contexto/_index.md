@@ -29,29 +29,33 @@ No exemplo abaixo, você pode ver o contexto com dados de um usuário e sendo mo
 
 {{< tabs id="T151" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:context.json
 {
-  "_beagleComponent_": "beagle:container",
-  "context": {
-    "id": "myData",
-    "value": {
-      "id": "0000",
-      "name": "User",
-      "age": "18"
-    },
-  },
-  "children": [
-    {
-      "_beagleComponent_": "beagle:text",
-      "value": "Name: @{myData.name}"
-    },
-    {
-      "_beagleComponent_": "beagle:text",
-      "value": "Age: @{myData.age}"
-    }
-  ]
+   "_beagleComponent_":"beagle:screenComponent",
+   "child":{
+      "_beagleComponent_":"beagle:container",
+      "children":[
+         {
+            "_beagleComponent_":"beagle:text",
+            "text":"Name: @{myData.name}"
+         },
+         {
+            "_beagleComponent_":"beagle:text",
+            "text":"Age: @{myData.age}"
+         }
+      ],
+      "context":{
+         "id":"myData",
+         "value":{
+            "id":"0000",
+            "name":"User",
+            "age":"18"
+         }
+      }
+   }
 }
-```
+-->
+{{% playground file="context.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -107,19 +111,33 @@ Veja o exemplo abaixo de como funciona:
 
 {{< tabs id="T152" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:contextExplicito.json
 {
-  "_beagleComponent_" : "beagle:container",
-  "children" : [ {
-    "_beagleComponent_" : "beagle:text",
-    "text" : "@{myText}"
-  } ],
-  "context" : {
-    "id" : "myText",
-    "value" : "Hello Beagle"
-  }
+   "_beagleComponent_":"beagle:screenComponent",
+   "child":{
+      "_beagleComponent_":"beagle:container",
+      "children":[
+         {
+            "_beagleComponent_":"beagle:text",
+            "text":"Name: @{myData.name}"
+         },
+         {
+            "_beagleComponent_":"beagle:text",
+            "text":"Age: @{myData.age}"
+         }
+      ],
+      "context":{
+         "id":"myData",
+         "value":{
+            "id":"0000",
+            "name":"User",
+            "age":"18"
+         }
+      }
+   }
 }
-```
+-->
+{{% playground file="contextExplicito.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -162,19 +180,50 @@ Outra característica do contexto implícito é que ele sempre possui um `id` ig
 
 Veja o exemplo abaixo com o evento `onBlur` , que funciona exatamente como o `onChange`, mas faz a requisição quando o input do componente perde o foco: 
 
-```javascript
+{{< tabs id="C152" >}}
+{{% tab name="JSON" %}}
+<!-- json-playground:contextImplicito.json
 {
-  "_beagleComponent_": "beagle:textinput",
-  "label": "CEP",
-  "onBlur": [
-      {
-          "_beagleAction_": "beagle:sendRequest",
-          "url": "https://viacep.com.br/ws/@{onBlur.value}/json",
-          "method": "GET"
-      }
-  ]
+   "_beagleComponent_":"beagle:screenComponent",
+   "child":{
+      "_beagleComponent_":"beagle:container",
+      "children":[
+         {
+            "_beagleComponent_":"beagle:textInput",
+            "placeholder":"CEP",
+            "onBlur":[
+               {
+                  "_beagleAction_":"beagle:alert",
+                  "message":"example of implícit context: @{onBlur.value}"
+               }
+            ]
+         }
+      ]
+   }
 }
+-->
+{{% playground file="contextImplicito.json" language="pt" %}}
+{{% /tab %}}
+
+{{% tab name="Kotlin DSL" %}}
+```kotlin
+Screen(
+        child = Container(
+            children = listOf(
+                TextInput(
+                    placeholder = "CEP",
+                    onBlur = listOf(
+                        Alert(
+                            message = "example of implícit context: @{onBlur.value}"
+                        )
+                    )
+                )
+            )
+        )
+    )
 ```
+{{% /tab %}}
+{{< /tabs >}}
 
 Apesar do contexto `onBlur` não ter sido declarado no exemplo acima, você consegue usá-lo porque ele foi criado de uma maneira implícita pelo evento `onBlur`. 
 
@@ -207,7 +256,7 @@ Veja o exemplo abaixo de como funciona:
 
 {{< tabs id="T153" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:binding.json
 {
   "_beagleComponent_" : "beagle:container",
   "children" : [ {
@@ -219,7 +268,8 @@ Veja o exemplo abaixo de como funciona:
     "value" : "Hello Beagle"
   }
 }
-```
+-->
+{{% playground file="binding.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="kotlin DSL" %}}
@@ -254,7 +304,7 @@ Nesses casos, os bindings devem ser usados para acessar subestruturas. Como acon
 
 {{< tabs id="T154" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:bindingMultiValorados.json
 {
   "_beagleComponent_" : "beagle:container",
   "children" : [ {
@@ -272,7 +322,8 @@ Nesses casos, os bindings devem ser usados para acessar subestruturas. Como acon
     }
   }
 }
-```
+-->
+{{% playground file="bindingMultiValorados.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -315,7 +366,7 @@ Para acessar o título do segundo filme \("Contact"\), use o binding  `@{movies.
 
 {{< tabs id="T155" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:bindingVector.json
 {
   "_beagleComponent_" : "beagle:container",
   "children" : [ {
@@ -338,7 +389,8 @@ Para acessar o título do segundo filme \("Contact"\), use o binding  `@{movies.
     }
   }
 }
-```
+-->
+{{% playground file="bindingVector.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -465,5 +517,3 @@ MyComponent(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-## 👉 [Veja alguns exemplos no Playground](https://beagle-playground.netlify.app/#/demo/component-interaction)

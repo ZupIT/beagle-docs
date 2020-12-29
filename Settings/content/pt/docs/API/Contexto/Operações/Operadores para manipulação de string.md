@@ -23,23 +23,8 @@ description: >-
 Nesse exemplo, uma tela possui um texto com uma operação de `substring`, no qual sua frase é **'The book is on the table'** e os parâmetros **4, 11** ditam o limite dessa substring, a tornando a seguinte string '**book is on':**
 
 {{< tabs id="T162" >}}
-{{% tab name="Kotlin" %}}
-```kotlin
-fun screen() = Screen(child = 
-    Container(
-        children = listOf(
-            Text(text = "The text bellow is a substring of `The book is on the table`."),
-            Text(
-                expressionOf("@{substr('The book is on the table', 4, 11)}")
-            ).applyStyle(Style(backgroundColor = "#00FF00")
-        )
-    )
-)
-```
-{{% /tab %}}
-
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:stringManipulation.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -56,6 +41,21 @@ fun screen() = Screen(child =
     } ]
   }
 }
+-->
+{{% playground file="stringManipulation.json" language="pt" %}}
+{{% /tab %}}
+{{% tab name="Kotlin" %}}
+```kotlin
+fun screen() = Screen(child = 
+    Container(
+        children = listOf(
+            Text(text = "The text bellow is a substring of `The book is on the table`."),
+            Text(
+                expressionOf("@{substr('The book is on the table', 4, 11)}")
+            ).applyStyle(Style(backgroundColor = "#00FF00")
+        )
+    )
+)
 ```
 {{% /tab %}}
 {{< /tabs >}}

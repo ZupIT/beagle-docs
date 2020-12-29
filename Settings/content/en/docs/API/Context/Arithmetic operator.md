@@ -20,36 +20,8 @@ description: Here you will find the complete description of arithmetic operator.
 See an example below of a counter where two buttons `increment` and `decrement`, both with [**SetContext**](/docs/api/actions/setcontext) actions that modifies the context value that has an id counter, altering the value with addition and subtraction operations, increasing or decresing the value of 1 to the text value:
 
 {{< tabs id="T141" >}}
-{{% tab name="Kotlin" %}}
-```kotlin
-fun screen() = Screen(
-    navigationBar = NavigationBar(
-        title = "Operations",
-        showBackButton = true
-    ),
-    child = Container(
-        context = ContextData("counter", 2),
-        children = listOf(
-            Text(expressionOf("Sum of 2 + 1 = @{sum(2, 1)}")),
-            Text(expressionOf("Counter: @{counter}")),
-            Button(
-                text = "increment",
-                onPress = listOf(
-                    SetContext("counter", "@{sum(counter, 1)}"))
-            ),
-            Button(
-                text = "decrement",
-                onPress = listOf(
-                    SetContext("counter", "@{subtract(counter, 1)}"))
-            )
-        )
-    )
-)
-```
-{{% /tab %}}
-
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:arithmeticOperators.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "navigationBar" : {
@@ -87,6 +59,34 @@ fun screen() = Screen(
     }
   }
 }
+-->
+{{% playground file="arithmeticOperators.json" language="en" %}}
+{{% /tab %}}
+{{% tab name="Kotlin" %}}
+```kotlin
+fun screen() = Screen(
+    navigationBar = NavigationBar(
+        title = "Operations",
+        showBackButton = true
+    ),
+    child = Container(
+        context = ContextData("counter", 2),
+        children = listOf(
+            Text(expressionOf("Sum of 2 + 1 = @{sum(2, 1)}")),
+            Text(expressionOf("Counter: @{counter}")),
+            Button(
+                text = "increment",
+                onPress = listOf(
+                    SetContext("counter", "@{sum(counter, 1)}"))
+            ),
+            Button(
+                text = "decrement",
+                onPress = listOf(
+                    SetContext("counter", "@{subtract(counter, 1)}"))
+            )
+        )
+    )
+)
 ```
 {{% /tab %}}
 {{< /tabs >}}
