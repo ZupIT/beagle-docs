@@ -27,11 +27,46 @@ interface HttpClient {
 
 In the *execute* method, you can create the rules for your network layer, causing the beagle to recognize its rule.
 
-| **Attribute** | **Type** | **Definition** |
-| :--- | :--- | :---: |
-| request | RequestData  | RequestData is the class for configuring http requests. |
-| onSuccess | (responseData: ResponseData) -> Unit | Higher-Order Functions responsible for the return of success |
-| onError | (responseData: ResponseData) -> Unit | Higher-Order Functions responsible for error return |
+| **Attribute** | **Type** | **Required** | **Definition** |
+| :--- | :--- | :---: | :---: |
+| request | RequestData  | v | RequestData is the class for configuring http requests. |
+| onSuccess | (responseData: ResponseData) -> Unit | ✓ | Higher-Order Functions responsible for the return of success |
+| onError | (responseData: ResponseData) -> Unit | ✓ | Higher-Order Functions responsible for error return |
+
+### RequestData 
+
+RequestData is the class for configuring http requests.
+
+| **Attribute** | **Type** | **Required** | **Definition** |
+| :--- | :--- | :---: | :---: |
+| uri | URI  | ✓ | Defines the endpoint that returns the screen or component you wish to display. |
+| method | HttpMethod | ✓ | It is an ENUM class that defines which HTTP operation you wish to do. It works as a HTTP REQUEST METHOD and it is set as GET by default. |
+| headers | Map<String, String> | | It is used when you need to send data via an HTTP header.  |
+| body | String | | It is set default as null and it just needs to be implemented when you need to send a HTTP messages asbody data. |
+
+#### HttpMethod
+
+It is an `ENUM` and the values are:
+
+| Value | Definition |
+| :--- | :--- |
+| GET | The `GET` method  requests a representation of a specific resource. Requests using the method `GET` must return only data. |
+| POST | The `POST` method it is used to submit an entity to a specific resource, frenquetly causing a change in the resource state or colateral effects on the server.  |
+| PUT | The  `PUT` method replaces all the current representation of the target resources with the data of the request.  |
+| DELETE | The `DELETE` method removes a specific resource.  |
+| HEAD | The `HEAD` method  request an answer the same way the `GET` method does, however without a response body.  |
+| PATCH | The `PATCH` method is used to apply partial modifications in a resource. |
+
+### ResponseData
+
+ResponseData is used to return data made by the request.
+
+| **Attribute** | **Type** | **Required** | **Definition** |
+| :--- | :--- | :---: | :---: |
+| statusCode | Int  | ✓ | Returns the response code returned by the remote HTTP server. |
+| data | ByteArray | ✓ | Response body returned from request. |
+| headers | Map<String, String> | | It is used when you need to send data via an HTTP header. |
+| statusText | String | | Returns the response message returned by the remote HTTP server. |
 
 ## Creating a custom network client
 

@@ -27,11 +27,46 @@ interface HttpClient {
 
 No método execute, você consegue criar as regras de sua camada de rede, fazendo com que o beagle reconheça a sua regra.
 
-| **Atributo** | **Tipo** | **Definição** |
-| :--- | :--- | :---: |
-| request | RequestData  |RequestData é a classe para fazer configuração e solicitações http. |
-| onSuccess | (responseData: ResponseData) -> Unit | Higher-Order Functions responsável pelo retorno de sucesso |
-| onError | (responseData: ResponseData) -> Unit | Higher-Order Functions responsável pelo retorno de erro |
+| **Atributo** | **Tipo** | **Obrigatório** | **Definição** |
+| :--- | :--- | :---: | :---: |
+| request | RequestData  | ✓ | RequestData é a classe para fazer configuração e solicitações http. |
+| onSuccess | (responseData: ResponseData) -> Unit | ✓ | Higher-Order Functions responsável pelo retorno de sucesso |
+| onError | (responseData: ResponseData) -> Unit | ✓ | Higher-Order Functions responsável pelo retorno de erro |
+
+### RequestData 
+
+RequestData é a classe para fazer configuração e solicitações http.
+
+| **Atributo** | **Tipo** | **Obrigatório** | **Definição** |
+| :--- | :--- | :---: | :---: |
+| uri | URI  | ✓ | URL do servidor. |
+| method | HttpMethod | ✓ | Método HTTP |
+| headers | Map<String, String> | | Itens do header para a requisição. |
+| body | String | | Conteúdo que será entregue com a solicitação. |
+
+#### HttpMethod
+
+É um `ENUM`, cujo os valores são:
+
+| Valor | Definição |
+| :--- | :--- |
+| GET | O método `GET` solicita a representação de um recurso específico. Requisições utilizando o método `GET` devem retornar apenas dados. |
+| POST | O método `POST` é utilizado para submeter uma entidade a um recurso específico, frequentemente causando uma mudança no estado do recurso ou efeitos colaterais no servidor. |
+| PUT | O método `PUT` substitui todas as atuais representações do recurso de destino pela carga de dados da requisição. |
+| DELETE | O método `DELETE` remove um recurso específico. |
+| HEAD | O método `HEAD` solicita uma resposta de forma idêntica ao método `GET`, porém sem conter o corpo da resposta. |
+| PATCH | O método `PATCH` é utilizado para aplicar modificações parciais em um recurso. |
+
+### ResponseData
+
+ResponseData é usado para retornar dados feitos pela solicitação.
+
+| **Atributo** | **Tipo** | **Obrigatório** | **Definição** |
+| :--- | :--- | :---: | :---: |
+| statusCode | Int  | ✓ | http status code da requisição |
+| data | ByteArray | ✓ | Response body retornado da requisição |
+| headers | Map<String, String> |  | Itens do header para a requisição. |
+| statusText | String |  | Mensagem de resposta retornada pelo servidor HTTP remoto. |
 
 
 ## Criando uma camada de rede customizada
