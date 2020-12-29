@@ -222,53 +222,59 @@ Clique no botão e perceba que a função nesse componente está implementada e 
 {{% /tab %}}
 
 {{% tab name="iOS" %}}
-Você deve utilizar um view controller para "colocar" esse componente do BFF e, assim, exibí-lo em tela  iOS nativa.
+Você deve utilizar uma `BeagleView` para "colocar" esse componente do BFF e, assim, exibí-lo em uma tela  iOS nativa.
 
-Mas antes, é preciso criar esse view controller para a tela nativa. Para isso, basta seguir os passos:
+{{% alert color="success" %}}
+# Beagle View
 
-1. Instancie o componente server-driven a partir da classe `BeagleScreenViewController`. 
-2. Utilize o `addChild` para adicionar o view controller.  
-3. Também adicione o `view` do `beagleScreenViewController` como`subview` do nosso view controller nativo. 
-4. Por último, é necessário adicionar algumas constraints para a `UILabel` e para a view do `beagleScreenViewController`  como no código abaixo:
+Para entender mais sobre o que é a `BeagleView`, como funciona e como usar.
+
+[**Click aqui para saber mais!**](/pt/docs/recursos/customização/beagle-para-ios/beagle-view/)
+{{% /alert %}}
+
+1. Crie um **UIViewController**. 
+2. Adicione o componente nativo, no nosso caso será um texto utilizando uma `UILabel`.
+3. Crie uma **BeagleView** passando a URL pretendida.
+4. Por último, é necessário adicionar algumas constraints para a `UILabel` e para `BeagleView` como no código abaixo:
 
 ```swift
 class NativeViewController: UIViewController {
     
-    private let beagleScreenViewController = BeagleScreenViewController(.remote(.init(url: "http://localhost:8080/serverDrivenComponent")))
-
-    private lazy var descriptionText: UILabel = {
-        let label = UILabel()
-        label.text = "Sou um componente nativo"
-        label.font = .systemFont(ofSize: 25, weight: .semibold)
-        return label
-    }()
-    
-    override func viewDidLoad() {
+     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
+        setupBeagleViewRemote()
+        setupDescriptionText()
     }
     
-    func setupView() {
-        view.backgroundColor = .white
-        addChild(beagleScreenViewController)
-        
-        view.addSubview(descriptionText)
-        descriptionText.anchorCenterXToSuperview()
-        descriptionText.anchor(top: view.topAnchor, topConstant: 150)
-        
-        guard let beagleView = beagleScreenViewController.view else {
-            return
-        }
+    private lazy var beagleViewRemote = BeagleView(
+        .remote(.init(url: "http://localhost:8080/serverDrivenComponent"))
+    )
 
-        view.addSubview(beagleView)
-        beagleView.anchorCenterXToSuperview()
-        beagleView.anchor(top: descriptionText.bottomAnchor, topConstant: 50, widthConstant: 300, heightConstant: 50)
-    
-        beagleScreenViewController.didMove(toParent: self)
+    private lazy var descriptionText: UILabel = {
+            let label = UILabel()
+            label.text = "Sou um componente nativo"
+            label.numberOfLines = 0
+            label.textAlignment = .center
+            label.font = .systemFont(ofSize: 25, weight: .semibold)
+            return label
+    }()
+
+    private func setupDescriptionText() {
+        view.addSubview(descriptionText)
+        descriptionText.translatesAutoresizingMaskIntoConstraints = false
+        descriptionText.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        descriptionText.topAnchor.constraint(equalTo: view.topAnchor, constant: 150).isActive = true
+    }
+
+    private func setupBeagleViewRemote() {
+        view.addSubview(beagleViewRemote)
+        beagleViewRemote.translatesAutoresizingMaskIntoConstraints = false
+        beagleViewRemote.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        beagleViewRemote.topAnchor.constraint(equalTo: descriptionText.bottomAnchor, constant: 50).isActive = true
     }
 ```
 
-Ao final do processo, você poderá "chamar" pela nossa tela nativa que irá aparecer a imagem abaixo. Lembrando que, para esse exemplo, foi criada uma tela  composta de uma `UILabel` e de uma variável do tipo `BeagleScreenViewController` , onde fica o componente server-driven.
+Ao final do processo, você poderá "chamar" pela nossa tela nativa que irá aparecer a imagem abaixo. Lembrando que, para esse exemplo, foi criada uma tela  composta de uma `UILabel` e uma `BeagleView` , onde fica o componente server-driven.
 
 ![](/server-driven-comp-ios.gif)
 {{% /tab %}}
