@@ -11,7 +11,7 @@ description: >-
 
 The RootView interface holds the reference of an activity or fragment. Through the interface methods, you have a reference to context, life cycle, ViewModelStore and parent view id. 
 
-RootView is present as attributes in the ViewConvertable interfaces and in the Action interface.
+RootView is available as an attribute in the ViewConvertable and Action interfaces.
 
 ```kotlin
 interface RootView {
