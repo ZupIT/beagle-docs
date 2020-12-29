@@ -85,7 +85,7 @@ class ActivityRootView(
 
 ## FragmentRootView
 
-The FragmentRootView holds a fragment reference, used in the [**loadView**](/docs/tutorials/adding-beagle-to-a-part-of-a-native-screen/adding-a-declarative-beagle-component/) method to have the fragment reference, where the beagle component will be rendered.
+The FragmentRootView class is responsible for keeping the Fragment reference of which a [** loadView **] method (/ pt / docs / tutorials / adding-the-beagle-to-a-part-of-the-native-screen / adding a-component-beagle-server-driven /) is called.
 
 ```kotlin
 class FragmentRootView(
