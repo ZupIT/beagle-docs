@@ -60,7 +60,7 @@ fun getParentId(): Int
 
 ## ActivityRootView
 
-O ActivityRootView detém a referência de uma activity, usado no método [**loadView**](/pt/docs/tutoriais/adicionando-o-beagle-a-uma-parte-da-tela-nativa/adicionando-um-componente-beagle-server-driven/) para ter a referência da activity, onde será renderizado componente beagle.
+A classe ActivityRootView é responsavel por guardar a referência da Activity da qual um metodo [**loadView**](/pt/docs/tutoriais/adicionando-o-beagle-a-uma-parte-da-tela-nativa/adicionando-um-componente-beagle-server-driven/) é chamado.
 
 ```kotlin
 class ActivityRootView(
