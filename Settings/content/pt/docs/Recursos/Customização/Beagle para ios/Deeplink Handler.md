@@ -25,7 +25,7 @@ Para utilizar o protocolo `DeepLinkScreenManaging`, veja as seções abaixo:
 
 ### **Passo 1: Criar uma classe que herda de DeepLinkScreenManaging**
 
-O primeiro passo é criar uma classe que iremos chamar de `DeeplinkManager` que irá conformar com o protocolo `DeepLinkScreenManaging`.
+O primeiro passo é criar uma classe que iremos chamar de `DeeplinkScreenManager` que irá conformar com o protocolo `DeepLinkScreenManaging`.
 
 ```swift
 final class DeeplinkScreenManager: DeepLinkScreenManaging {
@@ -84,7 +84,30 @@ final class DeeplinkScreenManager: DeepLinkScreenManaging {
 
 ```
 
-### **Passo 4:  Atribuir as dependências**
+### **Passo 4: Criando uma tela do tipo DeeplinkScreen**
+
+Crie uma tela que irá herdar do protocolo `DeeplinkScreen`, nele teremos um método chamado **screenController* que usamos na nossa classe `DeeplinkScreenManager` para conectar os paths aos UIViewControllers que iremos realizar as navegações de deeplink.
+
+```swift
+
+struct TextScreen: DeeplinkScreen {
+    init(path: String, data: [String: String]?) {}
+    
+    func screenController() -> UIViewController {
+        return BeagleScreenViewController(.declarative(screen))
+    }
+    
+    var screen: Screen {
+        return Screen(
+            navigationBar: NavigationBar(title: "Text Screen", showBackButton: true),
+            child: Text("Beagle")
+        )
+    }
+}
+
+```
+
+### **Passo 5: Atribuir as dependências**
 
 No AppDelegate ou na classe de configurações do ambiente do Beagle, atribua a instância de `DeeplinkScreenManager` ao atributo `deepLinkHandler` presente no BeagleDependencies:
 
