@@ -9,7 +9,7 @@ description: >-
 
 ## RootView
 
-RootView interface holds the reference of an activity or fragment, through the interface methods you have reference to context, life cycle, ViewModelStore and parent view id. 
+The RootView interface holds the reference of an activity or fragment. Through the interface methods, you have a reference to context, life cycle, ViewModelStore and parent view id. 
 
 RootView is present as attributes in the ViewConvertable interfaces and in the Action interface.
 
@@ -107,4 +107,3 @@ class FragmentRootView(
 | :--- | :--- | :---: | :--- |
 | fragment | Fragment | ✓ | Receives the instance of an fragment. |
 | parentId | Int | ✓ | View id. |
-
