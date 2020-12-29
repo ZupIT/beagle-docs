@@ -59,7 +59,7 @@ fun getParentId(): Int
 
 ## ActivityRootView
 
-The ActivityRootView holds a activity reference, used in the [**loadView**](/docs/tutorials/adding-beagle-to-a-part-of-a-native-screen/adding-a-beagle-server-driven-component/) method to have the activity reference, where the beagle component will be rendered.
+The ActivityRootView class is responsible for keeping the Activity reference of which a [** loadView **] method (/ pt / docs / tutorials / adding-the-beagle-to-a-part-of-the-native-screen / adding- a-component-beagle-server-driven /) is called.
 
 ```kotlin
 class ActivityRootView(
