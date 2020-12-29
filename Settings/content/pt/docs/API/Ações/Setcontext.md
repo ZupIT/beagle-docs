@@ -21,7 +21,7 @@ A estrutura do SetContext é:
 | path | String |   | Ponto específico do contexto para ser alterado no caso de arrays e mapas &lt;chave, valor&gt;. |
 
 {{% alert color="info" %}}
-Conheça mais sobre o [**contexto no Beagle**](../../contexto/).
+Conheça mais sobre o [**contexto no Beagle**](/pt/docs/api/contexto/).
 {{% /alert %}}
 
 ## Como usar?

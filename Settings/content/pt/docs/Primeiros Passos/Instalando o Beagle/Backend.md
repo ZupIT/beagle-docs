@@ -11,7 +11,7 @@ description: >-
 {{% alert color="danger" %}}
 Antes de iniciar a instalação, é importante você saber que as etapas abaixo são para linguagens da JVM. 
 
-Para outras linguagens, seu servidor precisa servir o JSON seguindo nossa API. Dê uma olhada também na nossa implementação de [**cache**](../../../../../../../../features/cache/) e em [**mecanismos específicos de cada linguagem**](../../../../../../../../features/componentes/especificacao-de-componentes-por-plataforma)
+Para outras linguagens, seu servidor precisa servir o JSON seguindo nossa API. Dê uma olhada também na nossa implementação de [**cache**](/pt/docs/recursos/cache/) e em [**mecanismos específicos de cada linguagem**](/pt/docs/recursos/componentes/especificação-de-componentes-por-plataforma)
 {{% /alert %}}
 
 ## Requisitos
@@ -31,7 +31,7 @@ Se você já tiver atualizado todos estes programas, basta seguir as instruçõe
 No momento de criar o microsserviço, recomendamos que você utilize os mesmos mecanismos estabelecidos. Caso este não seja o seu caso, então basta seguir as configurações abaixo. 
 
 {{% alert color="warning" %}}
-Se o seu time trabalha com microsserviços usando outros frameworks, acesse o [**framework do Beagle**](../../../../../../../features/customizacao/beagle-para-backend/).  
+Se o seu time trabalha com microsserviços usando outros frameworks, acesse o [**framework do Beagle**](/pt/docs/recursos/customização/beagle-para-backend/beagle-framework).  
 {{% /alert %}}
 
 Para uma configuração simples, você pode escolher entre **2 modelos de frameworks** para criar seu BFF:
@@ -175,7 +175,7 @@ Lembre de sempre verificar se você está usando a versão mais recente do Beagl
 
 Parabéns, a configuração inicial está pronta para uso! 
 
-Você pode conferir um **exemplo prático** de tela ou componente Server-Driven [**para testar o BFF**](../../../../../../../../../../usando-o-beagle/backend)
+Você pode conferir um **exemplo prático** de tela ou componente Server-Driven [**para testar o BFF**](/pt/docs/primeiros-passos/usando-o-beagle/backend)
 
 {{% alert color="danger" %}}
 O Spring Boot tem um problema conhecido envolvendo seu `WebMvcConfigurationSupport`. Sua presença substitui outras configurações do Jackson, incluindo a do `Spring Starter`. 
@@ -193,13 +193,13 @@ A anotação `@EnableWebMvc` causa o mesmo problema, o que requer que ela també
 Pronto, a configuração inicial está pronta para uso! 
 {{% /alert %}}
 
-Você pode conferir um **exemplo prático** de [**como testar o Beagle no Backend**](../usando-o-beagle/backend) ou componente Server-Driven para testar o BFF. 
+Você pode conferir um **exemplo prático** de [**como testar o Beagle no Backend**](/pt/docs/primeiros-passos/usando-o-beagle/backend) ou componente Server-Driven para testar o BFF. 
 
 ## Próximos Passos
 
 Nesta seção, você fez a **instalação inicial** do Beagle na sua aplicação!  
 Para continuar a configurar o Beagle:
 
-👉Vá para as [**configurações iniciais**](../usando-o-beagle/backend) para habilitar uso do Beagle no seu projeto Backend
+👉Vá para as [**configurações iniciais**](/pt/docs/primeiros-passos/usando-o-beagle/backend) para habilitar uso do Beagle no seu projeto Backend
 
-👉 Se quiser ir direto para prática, acesse nosso [**tutorial para criar um projeto do zero**](../../criando-um-projeto-do-zero/case-backend)
+👉 Se quiser ir direto para prática, acesse nosso [**tutorial para criar um projeto do zero**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-backend)

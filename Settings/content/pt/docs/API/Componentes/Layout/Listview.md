@@ -20,12 +20,12 @@ A sua estrutura é representada como mostrado abaixo:
 
 | Atributo | Tipo | Obrigatório | Definição |
 | :--- | :--- | :---: | :--- |
-| direction | [ListDirection](listview#listdirection) |   | Define o direcionamento em que os items da lista são exibidos. |
-| context | [ContextData](https://docs.usebeagle.io/api/context) |  | Define o contexto do componente. |
-| onInit | List&lt;[Action](https://docs.usebeagle.io/api/actions)&gt; |  | Lista de ações a serem executadas assim que o componente é exibido.  |
-| dataSource | [Bind](https://docs.usebeagle.io/api/context#bindings)&lt;List&lt;Any&gt;&gt; | ✓ | Expressão que aponta para uma lista de valores usados para popular o componete. |
-| template | [ServerDrivenComponent](https://docs.usebeagle.io/api/components) | ✓ | Representa cada celula na lista através de um `ServerDrivenComponent`. |
-| onScrollEnd | List&lt;[Action](https://docs.usebeagle.io/api/actions)&gt; |  | Lista de ações executadas quando a lista chega ao fim. |
+| direction | [ListDirection](#listdirection) |   | Define o direcionamento em que os items da lista são exibidos. |
+| context | [ContextData](/pt/docs/api/contexto) |  | Define o contexto do componente. |
+| onInit | List&lt;[Action](/pt/docs/api/ações)&gt; |  | Lista de ações a serem executadas assim que o componente é exibido.  |
+| dataSource | [Bind](/pt/docs/api/contexto#binding)&lt;List&lt;Any&gt;&gt; | ✓ | Expressão que aponta para uma lista de valores usados para popular o componete. |
+| template | [ServerDrivenComponent](/pt/docs/api/componentes) | ✓ | Representa cada celula na lista através de um `ServerDrivenComponent`. |
+| onScrollEnd | List&lt;[Action](/pt/docs/api/ações)&gt; |  | Lista de ações executadas quando a lista chega ao fim. |
 | scrollEndThreshold | Int |  | Define a porcentagem rolada da lista para disparar o `onScrollEnd`. |
 | iteratorName | String |  | É o identificador do contexto de cada célula. |
 | key | String |  | Aponta para um valor único presente em cada item do `dataSource` para ser usado como um sufixo nos ids dos componentes do template. |

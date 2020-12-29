@@ -12,8 +12,8 @@ description: >-
 
 É possível realizar duas principais maneiras de estilização com Beagle para Web. São elas: 
 
-1. [**Adição de classes de estilo** ](web#adicionando-classes-de-estilo)
-2. [**Estilização de componentes via JSON**](web#estilizando-componentes-via-json)
+1. [**Adição de classes de estilo** ](#adicionando-classes-de-estilo)
+2. [**Estilização de componentes via JSON**](#estilizando-componentes-via-json)
 
 Abaixo, você encontra a explicação detalhada para cada uma delas. 
 
@@ -252,5 +252,5 @@ Por fim, você tem a possibilidade de adicionar propriedades no modelo de layout
 ```
 
 {{% alert color="info" %}}
-Além dessas funcionalidades, alguns componentes possuem propriedades específicas como mudança na cor do texto ou alinhamento. Conheça mais sobre os [**componentes do Beagle**](../../../api/componentes/)
+Além dessas funcionalidades, alguns componentes possuem propriedades específicas como mudança na cor do texto ou alinhamento. Conheça mais sobre os [**componentes do Beagle**](/pt/docs/api/componentes/)
 {{% /alert %}}

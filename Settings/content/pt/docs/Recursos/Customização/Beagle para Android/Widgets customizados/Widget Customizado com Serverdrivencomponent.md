@@ -131,5 +131,5 @@ class CustomChildWidget(
 Pronto! Seu componente agora utiliza outros componentes do Beagle!
 
 {{% alert color="danger" %}}
-É obrigatório a implementação de uma das duas interfaces para todo widget customizado que utilizar componentes do Beagle dentro do componente [ListView](https://docs.usebeagle.io/v/v1.0-pt/api/componentes/layout/listview).
+É obrigatório a implementação de uma das duas interfaces para todo widget customizado que utilizar componentes do Beagle dentro do componente [ListView](/pt/docs/api/componentes/layout/listview).
 {{% /alert %}}
