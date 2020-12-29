@@ -86,7 +86,6 @@ See below an example using the `isvalidCpf` operation that was created above, wh
 }
 -->
 {{% playground file="customOperation.json" language="en" %}}
-```
 {{% /tab %}}
 {{% tab name="Kotlin" %}}
 ```kotlin
