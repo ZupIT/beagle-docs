@@ -9,7 +9,9 @@ description: >-
 
 ## RootView
 
-Interface RootView detém a referência de uma activity ou fragment, Atravéz dos métodos da interface você tem referência de contexto, ciclo de vida, ViewModelStore e id da view pai, rootView está presente como atributos nas interfaces ViewConvertable e na interface Action.
+Interface RootView detém a referência de uma activity ou fragment, Atravéz dos métodos da interface você tem referência de contexto, ciclo de vida, ViewModelStore e id da view pai.
+
+RootView está presente como atributos nas interfaces ViewConvertable e na interface Action.
 
 ```kotlin
 interface RootView {
@@ -34,7 +36,7 @@ fun getContext(): Context
 
 ### getLifecycleOwner()
 
-Retorna uma classe que possui um ciclo de vida.
+Retorna um lifecycleOwner.
 
 ```kotlin
 fun getLifecycleOwner(): LifecycleOwner
@@ -78,7 +80,7 @@ class ActivityRootView(
 
 | **Atributo** | **Tipo** | **Obrigatório** | **Definição** |
 | :--- | :--- | :---: | :--- |
-| activity | AppCompatActivity | ✓ | Pai de uma visualização. |
+| activity | AppCompatActivity | ✓ | Recebe a instância de uma activity |
 | parentId | Int | ✓ | Id view pai. |
 
 
@@ -104,5 +106,5 @@ class FragmentRootView(
 
 | **Atributo** | **Tipo** | **Obrigatório** | **Definição** |
 | :--- | :--- | :---: | :--- |
-| fragment | Fragment | ✓ | Pai de uma visualização. |
+| fragment | Fragment | ✓ | Recebe a instância de um fragment |
 | parentId | Int | ✓ | Id view pai. |
