@@ -42,11 +42,11 @@ class SingleComponentBuilder() {
 
   fun createButton(): Button {
     return Button(
-        "Sou um botão server-driven",
+        "I'm a server-based button",
         onPress = listOf(
             Alert(
-                "Botão server-driven",
-                "Sou um botão server-driven",
+                "Server-driven Button",
+                "I'm a server-based button",
                 labelOk = "OoooK"
             )
         )
@@ -124,11 +124,11 @@ Você deve receber o JSON abaixo:
 ```typescript
 {
   "_beagleComponent_" : "beagle:button",
-  "text" : "Sou um botão server-driven",
+  "text" : "I'm a server-based button",
   "onPress" : [ {
     "_beagleAction_" : "beagle:alert",
-    "title" : "Botão server-driven",
-    "message" : "Sou um botão server-driven",
+    "title" : "Server-driven Button",
+    "message" : "I'm a server-based button",
     "labelOk" : "OoooK"
   } ]
 }
@@ -138,11 +138,11 @@ Você deve receber o JSON abaixo:
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 Button(
-    "Sou um botão server-driven",
+    "I'm a server-based button",
     onPress = listOf(
         Alert(
-            "Botão server-driven",
-            "Sou um botão server-driven",
+            "Server-driven Button",
+            "I'm a server-based button",
             labelOk = "OoooK"
         )
     )
@@ -210,9 +210,9 @@ A estrutura do **loadView** é:
 
 | **Atributo** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :---: | :--- |
-| activity | AppCompatActivity/Fragment | ✓ | Define a activity ou fragment onde estamos usando o loadview |
+| activity | AppCompatActivity/Fragment | ✓ | Define a activity ou fragment que estamos usando o loadview |
 | screenRequest | [**ScreenRequest**](/pt/docs/api/screen-request/) | ✓ | Define os parâmetros para a chamada da tela remota |
-| listener | **OnServerStateChanged = (serverState: ServerDrivenState) -> Unit** |  | Define o o listener que configura os callbacks para os estados da tela  |
+| listener | **OnServerStateChanged = (serverState: ServerDrivenState) -> Unit** |  | Define o o listener que configura os callbacks para os estados da tela |
 
 <br />
 
@@ -245,7 +245,7 @@ Mas antes, é preciso criar esse view controller para a tela nativa. Para isso, 
 1. Instancie o componente server-driven a partir da classe `BeagleScreenViewController`.
 2. Utilize o `addChild` para adicionar o view controller.
 3. Também adicione o `view` do `beagleScreenViewController` como`subview` do nosso view controller nativo.
-4. Por último, é necessário adicionar algumas constraints para a `UILabel` e para a view do `beagleScreenViewController`  como no código abaixo:
+4. Por último, precisamos adicionar algumas constraints para a `UILabel` e para a view do `beagleScreenViewController`  como no código abaixo:
 
 ```swift
 class NativeViewController: UIViewController {
