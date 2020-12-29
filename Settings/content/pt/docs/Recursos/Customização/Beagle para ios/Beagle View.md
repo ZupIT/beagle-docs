@@ -91,15 +91,15 @@ private func setupLabel() {
 }
 ```
 
-Agora colocamos dois exemplos de `BeagleView` um iniciando com o **declarativo** e outro no modo **Remote**.
+Agora colocamos dois exemplos de `BeagleView` um iniciando com o **declarative** e outro no modo **Remote**.
 
-* 1-> `BeagleView` declarativo com texto do Beagle, utilizando o `AutoLayout` com o metodo **setupDeclarativo**.
+* 1-> `BeagleView` declarative com texto do Beagle, utilizando o `AutoLayout` com o metodo **setupDeclarative**.
 * 2-> `BeagleView` remote passando uma URL, utilizando o `AutoLayout` com o metodo **setupRemote**.
 
 
 ```swift 
 // 1   
-private lazy var beagleViewDeclarativo = BeagleView(
+private lazy var beagleViewDeclarative = BeagleView(
     Text("I'm a beagle text")
 )
 
@@ -108,12 +108,12 @@ private lazy var beagleViewRemote = BeagleView(
     .remote(.init(url: "your URL"))
 )
 
-private func setupDeclarativo() {
-    view.addSubview(beagleViewDeclarativo)
-    beagleViewDeclarativo.translatesAutoresizingMaskIntoConstraints = false
-    beagleViewDeclarativo.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 5).isActive = true
-    beagleViewDeclarativo.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -5).isActive = true
-    beagleViewDeclarativo.topAnchor.constraint(equalTo: titleScreen.bottomAnchor, constant: 5).isActive = true
+private func setupDeclarative() {
+    view.addSubview(beagleViewDeclarative)
+    beagleViewDeclarative.translatesAutoresizingMaskIntoConstraints = false
+    beagleViewDeclarative.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 5).isActive = true
+    beagleViewDeclarative.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -5).isActive = true
+    beagleViewDeclarative.topAnchor.constraint(equalTo: titleScreen.bottomAnchor, constant: 5).isActive = true
 }
 
 private func setupRemote() {
@@ -121,7 +121,7 @@ private func setupRemote() {
     beagleViewRemote.translatesAutoresizingMaskIntoConstraints = false
     beagleViewRemote.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 5).isActive = true
     beagleViewRemote.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -5).isActive = true
-    beagleViewRemote.topAnchor.constraint(equalTo: beagleViewDeclarativo.bottomAnchor, constant: 5).isActive = true
+    beagleViewRemote.topAnchor.constraint(equalTo: beagleViewDeclarative.bottomAnchor, constant: 5).isActive = true
 }
 ```
 
@@ -144,13 +144,13 @@ class BeagleViewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupDeclarativo()
+        setupDeclarative()
         setupRemote()
         setupLabel()
     }
     
     // 1
-    private lazy var beagleViewDeclarativo = BeagleView(
+    private lazy var beagleViewDeclarative = BeagleView(
         Text("I'm a beagle text")
     )
 
@@ -180,12 +180,13 @@ class BeagleViewViewController: UIViewController {
         }
     }
     
-    private func setupDeclarativo() {
-        view.addSubview(beagleViewDeclarativo)
-        beagleViewDeclarativo.translatesAutoresizingMaskIntoConstraints = false
-        beagleViewDeclarativo.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 5).isActive = true
-        beagleViewDeclarativo.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -5).isActive = true
-        beagleViewDeclarativo.topAnchor.constraint(equalTo: titleScreen.bottomAnchor, constant: 5).isActive = true
+    private func setupDeclarative() {
+        view.addSubview(beagleViewDeclarative
+)
+        beagleViewDeclarative.translatesAutoresizingMaskIntoConstraints = false
+        beagleViewDeclarative.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 5).isActive = true
+        beagleViewDeclarative.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -5).isActive = true
+        beagleViewDeclarative.topAnchor.constraint(equalTo: titleScreen.bottomAnchor, constant: 5).isActive = true
     }
 
     private func setupRemote() {
@@ -193,7 +194,7 @@ class BeagleViewViewController: UIViewController {
         beagleViewRemote.translatesAutoresizingMaskIntoConstraints = false
         beagleViewRemote.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 5).isActive = true
         beagleViewRemote.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -5).isActive = true
-        beagleViewRemote.topAnchor.constraint(equalTo: beagleViewDeclarativo.bottomAnchor, constant: 5).isActive = true
+        beagleViewRemote.topAnchor.constraint(equalTo: beagleViewDeclarative.bottomAnchor, constant: 5).isActive = true
     }
     
 }
