@@ -186,7 +186,7 @@ Now you're ready to start using Beagle! To verify if the configuration is correc
 
 ## Use Example
 
-### How to display a Server-Driven screen 
+### How to display a declarative screen 
 
 Once you have already configured Beagle, every server-driven screen you build on your application's backend will be sent to frontend through JSON. 
 
