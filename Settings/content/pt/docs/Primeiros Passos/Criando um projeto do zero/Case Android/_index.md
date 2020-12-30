@@ -232,7 +232,6 @@ Outro ponto de atenção é que, neste momento, o Beagle espera que classes anot
 O Beagle fornece uma `Activity` default para gerenciar as `Activities` geradas via server-driven. Porém você pode criar uma ou mais`Activities` que herdem de `BeagleActivity` com `@BeagleComponent` personalizadas de acordo com os fluxos server-driven da sua aplicação. 
 
 {{% alert color="info" %}}
-Você pode criar o BeagleActivity agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-la. Para saber mais, confira a seção sobre [**Beagle Activity Customizada**](/pt/docs/recursos/customização/beagle-para-android/beagle-activity-customizada).
 {{% /alert %}}
 ### Passo 6: Inicializar o Beagle e o Design System
 
