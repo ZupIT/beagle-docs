@@ -179,8 +179,8 @@ Embora você possa nomeá-lo como preferir, sugerimos que para este tutorial voc
    5. Copie e cole as configurações abaixo no arquivo `AppBeagleConfig` que acabou de criar. Perceba que ele implementará os atributos: `baseUrl, environment, isLoggingEnabled, cache.`
 
 * O **`baseUrl`** retorna a URL base do seu ambiente.
-* O**`environment`** retorna o _`current build state`_ da sua aplicação.
-* O **`isLoggingEnabled`**retorna a visualização de log da aplicação.
+* O **`environment`** retorna o _`current build state`_ da sua aplicação.
+* O **`isLoggingEnabled`** retorna a visualização de log da aplicação.
 * O **`cache`** configuração de gerenciamento de cache.
 
 
@@ -210,119 +210,545 @@ A partir deste ponto do tutorial, iremos testar nossas telas Server-Driven usand
 Outro ponto de atenção é que, neste momento, o Beagle espera que classes anotadas com  `@BeagleComponent` tenham seus construtores vazios.
 {{% /alert %}}
 
-### **Passo 4: Criar o AppBeagleActivity**
+### **Passo 4: BeagleActivity**
 
-Você precisará lidar com as `activities` que serão geradas via server-driven. Por isso, é necessário **implementar uma Activity** para gerenciá-las. Para este exemplo, vamos nomeá-la `AppBeagleActivity`.
-
-Este arquivo faz parte da configuração de uso do Beagle e deve ser implementado pelo menos uma vez para que ela opere normalmente. 
-
-Quando for criar o AppBeagleActivity, lembre-se de anotá-la com `BeagleComponent` e estendê-la para classe`BeagleActivity`. 
+O Beagle fornece uma `Activity` default para gerenciar as `Activities` geradas via server-driven. Porém você pode criar uma ou mais`Activities` que herdem de `BeagleActivity` com `@BeagleComponent` personalizadas de acordo com os fluxos server-driven da sua aplicação. 
 
 {{% alert color="info" %}}
-Vale lembrar que é muito importante garantir que essa `activity` esteja registrada no Android Manifest. Faça isso assim que criá-la. 
+Você pode criar o BeagleActivity agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-la. Para saber mais, confira a seção sobre [**Beagle Activity Customizada**](/pt/docs/recursos/customização/beagle-para-android/beagle-activity-customizada).
 {{% /alert %}}
 
-Siga os passos abaixo para criar o AppBeagleActivity, incluindo o arquivo `.xml`:
+### **Passo 5: Criando uma camada de rede**
 
-1. Clique com o botão direito do mouse no pacote Beagle e clique em **New&gt;Activity&gt;Empty Activity** 
+O Beagle não disponibiliza uma camada de rede, então é precisar configurar nos primeiros passos, `HttpClient` e uma interface que define como as requisições de serviços são configuradas, para usá-lo, você precisa criar uma classe que implemente uma interface `HttpClient` .
 
-![](/newactivity.png)
+Aqui, você pode adicionar cabeçalhos às suas requisições, definir os métodos request, body response,  data response, executar criptografia, etc.
 
-   2. Dê o nome de `AppBeagleActivity` para a `Activity` e clique em **`finish`**.
+Segue abaixo um tutorial de camada de rede, utilizando a biblioteca coroutines.
 
-{{% alert color="info" %}}
-A partir daí, o Beagle irá utilizar esta `activity` sempre que carregar as informações das tela recebidas do backend no frontend da sua aplicação.
-{{% /alert %}}
+#### Adicionar as dependências
 
-Deixamos um exemplo abaixo já configurado para você copiar e colar.  
+Localize o arquivo `build.gradle(Module:app) ,` abra-o e role a página para baixo até encontrar o bloco de código **`dependencies { }`**.
 
-* Primeiro localize o layout dessa `activity`. Ela provavelmente estará em`RES` &gt; `LAYOUT` &gt; com o nome de `activity_app_beagle.xml`  
-* Copie e cole o conteúdo abaixo `.xml` removendo qualquer conteúdo anterior: 
+1. Copie e cole a linha abaixo dentro das dependências:
 
+   * implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'  
 
-```markup
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/root_layout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+2. Aperte **Sync now** para sincronizar o Gradle novamente. 
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/custom_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+Essa dependência é necessária, pois a classe que implementa `HttpClient` vai importar algumas configurações dela.
 
-        <FrameLayout
-            android:id="@+id/server_driven_container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-        <ProgressBar
-            android:id="@+id/progress_bar"
-            android:layout_width="42dp"
-            android:layout_height="42dp"
-            android:layout_gravity="center"
-            android:visibility="gone"/>
-    </FrameLayout>
-</LinearLayout>
+#### Criar a object CoroutineDispatchers
+
+Crie um objeto e escolha um nome para ele, por exemplo CoroutineDispatchers 
+
+Esse object é responsável por configurar os CoroutineDispatchers, que irá ditar em qual thread as tarefas serão executadas
+
+```kotlin
+import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.Dispatchers
+
+internal object CoroutineDispatchers {
+
+    init {
+        reset()
+    }
+
+    lateinit var IO: CoroutineDispatcher
+    lateinit var Main: CoroutineDispatcher
+    lateinit var Default: CoroutineDispatcher
+
+    fun reset() {
+        IO = Dispatchers.IO
+        Main = Dispatchers.Main
+        Default = Dispatchers.Default
+    }
+}
 ```
 
+#### Criar um arquivo HttpURLConnectionExtensions
 
-* Agora abra o arquivo `AppBeagleActitivity.kt` e configure como definido abaixo: 
+Crie um arquivo e escolha o nome que você desejar. Nesse exemplo, foi dado o nome de `HttpURLConnectionExtensions`.  
+
+Este arquivo é responsável por conter métodos para retornar a regra * HttpURLConnection * , portanto, usaremos esses métodos na classe HttpClientDefault.
+
+```kotlin
+import java.lang.Exception
+import java.net.HttpURLConnection
+
+internal fun HttpURLConnection.getSafeResponseCode(): Int? {
+    return getMessageFormatted { this.responseCode }
+}
+
+internal fun HttpURLConnection.getSafeResponseMessage(): String? {
+    return getMessageFormatted { this.responseMessage }
+}
+
+internal fun HttpURLConnection.getSafeError(): ByteArray? {
+    return getMessageFormatted { this.errorStream.readBytes() }
+}
+
+internal typealias GetData<T> = () -> T
+
+internal fun <T> getMessageFormatted(getData: GetData<T>): T? {
+    return try {
+        getData.invoke()
+    } catch (exception: Exception) {
+        null
+    }
+}
+```
+
+#### Criar a classe HttpClientDefault
+
+A classe HTTPClientDefault define como as solicitações de serviços são configuradas.
+
+Crie uma classe e escolha um nome para ela. Para o exemplo, `HttpClientDefault` foi escolhido. Após a criação da classe coloque a anotação `@BeagleComponent` e implemente com **Interface** `HttpClient`.
+
+Essa configuração é bem extensa, a sugestão é que você copie e cole a classe abaixo e modifique como achar necessário: 
 
 
 ```kotlin
+import br.com.zup.beagle.android.annotation.BeagleComponent
+import br.com.zup.beagle.android.exception.BeagleApiException
+import br.com.zup.beagle.android.networking.HttpClient
+import br.com.zup.beagle.android.networking.HttpMethod
+import br.com.zup.beagle.android.networking.RequestCall
+import br.com.zup.beagle.android.networking.RequestData
+import br.com.zup.beagle.android.networking.ResponseData
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.cancel
+import kotlinx.coroutines.launch
+import java.io.EOFException
+import java.net.HttpURLConnection
+import kotlin.jvm.Throws
+
+typealias OnSuccess = (responseData: ResponseData) -> Unit
+typealias OnError = (responseData: ResponseData) -> Unit
+
 @BeagleComponent
-class AppBeagleActivity : BeagleActivity() {
+class HttpClientDefault : HttpClient, CoroutineScope {
 
-    private val progressBar: ProgressBar by lazy { findViewById<ProgressBar>(R.id.progress_bar) }
-    private val mToolbar: Toolbar by lazy { findViewById<Toolbar>(R.id.custom_toolbar) }
+    private val job = Job()
+    override val coroutineContext = job + CoroutineDispatchers.IO
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_app_beagle)
+    override fun execute(
+        request: RequestData,
+        onSuccess: OnSuccess,
+        onError: OnError
+    ): RequestCall {
+        if (getOrDeleteOrHeadHasData(request)) {
+            onError(ResponseData(-1, data = byteArrayOf()))
+            return createRequestCall()
+        }
+
+        launch {
+            try {
+                val responseData = doHttpRequest(request)
+                onSuccess(responseData)
+            } catch (ex: BeagleApiException) {
+                onError(ex.responseData)
+            }
+        }
+
+        return createRequestCall()
     }
 
-    override fun getServerDrivenContainerId(): Int = R.id.server_driven_container
+    private fun getOrDeleteOrHeadHasData(request: RequestData): Boolean {
+        return (request.method == HttpMethod.GET ||
+            request.method == HttpMethod.DELETE ||
+            request.method == HttpMethod.HEAD) &&
+            request.body != null
+    }
 
-    override fun getToolbar(): Toolbar = mToolbar
+    @Throws(BeagleApiException::class)
+    private fun doHttpRequest(
+        request: RequestData
+    ): ResponseData {
+        val urlConnection: HttpURLConnection
 
-    override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {
-        when (state) {
-            is ServerDrivenState.Started -> {
-                progressBar.visibility =  View.VISIBLE
+        try {
+            urlConnection = request.uri.toURL().openConnection() as HttpURLConnection
+        } catch (e: Exception) {
+            throw BeagleApiException(ResponseData(-1, data = byteArrayOf()), request)
+        }
+
+        request.headers.forEach {
+            urlConnection.setRequestProperty(it.key, it.value)
+        }
+
+        addRequestMethod(urlConnection, request.method)
+
+        if (request.body != null) {
+            setRequestBody(urlConnection, request)
+        }
+
+        try {
+            return createResponseData(urlConnection)
+        } catch (e: Exception) {
+            throw tryFormatException(urlConnection, request)
+        } finally {
+            urlConnection.disconnect()
+        }
+    }
+
+    private fun tryFormatException(urlConnection: HttpURLConnection, request: RequestData): BeagleApiException {
+        val response = urlConnection.getSafeError() ?: byteArrayOf()
+        val statusCode = urlConnection.getSafeResponseCode()
+        val statusText = urlConnection.getSafeResponseMessage()
+        val responseData = ResponseData(statusCode = statusCode,
+            data = response, statusText = statusText)
+
+        return BeagleApiException(responseData, request)
+    }
+
+    private fun addRequestMethod(urlConnection: HttpURLConnection, method: HttpMethod) {
+        val methodValue = method.toString()
+
+        if (method == HttpMethod.PATCH || method == HttpMethod.HEAD) {
+            urlConnection.setRequestProperty("X-HTTP-Method-Override", methodValue)
+            urlConnection.requestMethod = "POST"
+        } else {
+            urlConnection.requestMethod = methodValue
+        }
+    }
+
+    private fun setRequestBody(urlConnection: HttpURLConnection, request: RequestData) {
+        urlConnection.setRequestProperty("Content-Length", request.body?.length.toString())
+        try {
+            urlConnection.outputStream.write(request.body?.toByteArray())
+        } catch (e: Exception) {
+            throw BeagleApiException(ResponseData(-1, data = byteArrayOf()), request)
+        }
+    }
+
+    private fun createResponseData(urlConnection: HttpURLConnection): ResponseData {
+        return ResponseData(
+            statusCode = urlConnection.responseCode,
+            statusText = urlConnection.responseMessage,
+            headers = urlConnection.headerFields.filter { it.key != null }.map {
+                val headerValue = it.value.toString()
+                    .replace("[", "")
+                    .replace("]", "")
+                it.key to headerValue
+            }.toMap(),
+            data = try {
+                urlConnection.inputStream.readBytes()
+            } catch (e: EOFException) {
+                byteArrayOf()
             }
-            is ServerDrivenState.Finished -> {
-                progressBar.visibility =  View.GONE
-            }
-            is ServerDrivenState.Error -> {
-                Toast.makeText(this, "Error", Toast.LENGTH_LONG).show()
-            }
+        )
+    }
+
+    private fun createRequestCall() = object : RequestCall {
+        override fun cancel() {
+            this@HttpClientDefault.cancel()
         }
     }
 }
 ```
 
+### Passo 6: Configuração de cache
 
-{{% alert color="warning" %}}
-Neste ponto do tutorial, é essencial que você remova a`ActionBar` padrão dessa `activity` porque, a partir deste momento, será o Beagle que irá gerenciar `ActionBar/Toolbar`. 
-{{% /alert %}}
+O Beagle não disponibiliza uma configuração de cache, então é precisar configurar nos primeiros passos, a interface `StoreHandler` define um protocolo que permite personalizar a forma como o cache é manipulado no banco de dados e na memória.
 
-Para realizar esta configuração, você deve mudar o seu `BeagleActivity's theme`. Vá até a pasta `Resources` na sua aplicação do Android Studio e abra o arquivo `STYLE` . Depois, é só Modificar o seu `AppTheme` como no exemplo abaixo:  
+Para usá-lo, você precisa criar uma classe que implemente uma interface `StoreHandler` .
+
+Segue abaixo um tutorial de como fazer configuração do cache, utilizando a biblioteca coroutines.
+
+#### Criar o object MemoryLocalStore
+
+É necessário você criar duas classes que implementem a interface `LocalStore`: a MemoryLocalStore e a DatabaseLocalStore. 
+
+Com essas interfaces, você pode mapear as ações de salvar, restaurar, deletar e selecionar tudo, como mostra o exemplo abaixo:
 
 
-```markup
-<resources>
-    <!-- Beagle Activity theme. -->
-    <style name="MyTheme" parent="Theme.AppCompat.NoActionBar">
+```kotlin
+internal object MemoryLocalStore : LocalStore {
+
+    private val cache = mutableMapOf<String, String>()
+
+    override fun save(key: String, value: String) {
+        cache[key] = value
+    }
+
+    override fun restore(key: String): String? {
+        return cache[key]
+    }
+
+    override fun delete(key: String) {
+        cache.remove(key)
+    }
+
+    override fun getAll(): Map<String, String> {
+        return cache.toMap()
+    }
+}
 ```
 
+#### Criar a classe DatabaseLocalStore
 
-### Passo 5: Inicializar o Beagle e o Design System
+Agora, você deve criar uma segunda classe que, para isso, depende da criação do StoreHandler, que é a DatabaseLocalStore. Esse é o mesmo arquivo declarado com algumas classes adjacentes que servem para a classe DatabaseLocalStore, mas que poderiam estar em arquivos diferentes, se você quiser. 
+
+Veja como funciona no exemplo a seguir:
+
+O arquivo abaixo possui as configurações para o SQL Lite e também as definições de como as ações de manipulação de cache funcionarão, no caso da persistência do cache no banco de dados.
+
+No atributo database da classe DatabaseLocalStore, a classe BeagleDatabaseManager é passada, chamando o método getDatabase e dentro do parâmetro você deve passar o contexto do aplicativo.
+
+Siga o exemplo no atributo da classe DatabaseLocalStore abaixo:
+
+
+```kotlin
+internal object ScreenEntry : BaseColumns {
+    const val TABLE_NAME = "KeyValueCache"
+    const val KEY_COLUMN_NAME = "key"
+    const val VALUE_COLUMN_NAME = "value"
+}
+
+internal class DatabaseLocalStore(
+    private val contentValuesFactory: ContentValuesFactory = ContentValuesFactory(),
+    private val database: SQLiteDatabase = BeagleDatabaseManager.getDatabase(
+        BeagleUiSampleApplication.instance)
+) : LocalStore {
+
+    override fun save(key: String, value: String) {
+        val values = contentValuesFactory.make().apply {
+            put(ScreenEntry.KEY_COLUMN_NAME, key)
+            put(ScreenEntry.VALUE_COLUMN_NAME, value)
+        }
+
+
+        val newRowId = database.insertWithOnConflict(ScreenEntry.TABLE_NAME, null, values,
+            SQLiteDatabase.CONFLICT_REPLACE)
+        if (newRowId == -1L) {
+            BeagleMessageLogs.logDataNotInsertedOnDatabase(key, value)
+        }
+    }
+
+    override fun restore(key: String): String? {
+        return executeRestoreQueryForKey(key).use { cursor ->
+            if (cursor.count > 0) {
+                cursor.moveToFirst()
+                cursor.getString(cursor.getColumnIndexOrThrow(ScreenEntry.VALUE_COLUMN_NAME))
+            } else {
+                null
+            }
+        }
+    }
+
+    override fun delete(key: String) {
+        database.delete(ScreenEntry.TABLE_NAME, "${ScreenEntry.KEY_COLUMN_NAME}=?", arrayOf(key))
+    }
+
+    override fun getAll(): Map<String, String> {
+        val columnsToReturn = arrayOf(ScreenEntry.KEY_COLUMN_NAME, ScreenEntry.VALUE_COLUMN_NAME)
+        val columnsForWhereClause = ""
+        val valuesForWhereClause = arrayOf<String>()
+        val cursor = database.query(
+            ScreenEntry.TABLE_NAME,
+            columnsToReturn,
+            columnsForWhereClause,
+            valuesForWhereClause,
+            null,
+            null,
+            null
+        )
+
+        val returnMap = mutableMapOf<String, String>()
+        if (cursor.count > 0) {
+            cursor.moveToFirst()
+            while (!cursor.isAfterLast) {
+                returnMap[cursor.getString(cursor.getColumnIndexOrThrow(ScreenEntry.KEY_COLUMN_NAME))] =
+                    cursor.getString(cursor.getColumnIndexOrThrow(ScreenEntry.VALUE_COLUMN_NAME))
+
+                cursor.moveToNext()
+            }
+        }
+        cursor.close()
+
+        return returnMap
+    }
+
+    private fun executeRestoreQueryForKey(key: String): Cursor {
+        val columnsToReturn = arrayOf(ScreenEntry.VALUE_COLUMN_NAME)
+        val columnsForWhereClause = "${ScreenEntry.KEY_COLUMN_NAME}=?"
+        val valuesForWhereClause = arrayOf(key)
+        return database.query(
+            ScreenEntry.TABLE_NAME,
+            columnsToReturn,
+            columnsForWhereClause,
+            valuesForWhereClause,
+            null,
+            null,
+            null
+        )
+    }
+}
+
+internal class ContentValuesFactory {
+    fun make(): ContentValues = ContentValues()
+}
+
+internal object BeagleDatabaseManager {
+
+    private const val DATABASE_NAME = "BeagleDefaultStore.db"
+    private const val DATABASE_VERSION = 2
+
+    private lateinit var database: SQLiteDatabase
+
+    fun getDatabase(context: Context): SQLiteDatabase {
+        if (!::database.isInitialized) {
+            database = BeagleSQLiteDatabase(
+                context,
+                DATABASE_NAME,
+                DATABASE_VERSION
+            ).writableDatabase
+        }
+        return database
+    }
+}
+
+internal open class BeagleSQLiteDatabase(
+    context: Context,
+    databaseName: String,
+    databaseVersion: Int
+) : SQLiteOpenHelper(
+    context,
+    databaseName,
+    null,
+    databaseVersion
+) {
+    override fun onCreate(db: SQLiteDatabase?) {
+        val createTableQuery = "CREATE TABLE ${ScreenEntry.TABLE_NAME} (" +
+                "${BaseColumns._ID} INTEGER PRIMARY KEY," +
+                "${ScreenEntry.KEY_COLUMN_NAME} TEXT NOT NULL UNIQUE," +
+                "${ScreenEntry.VALUE_COLUMN_NAME} TEXT NOT NULL" +
+                ")"
+        db?.execSQL(createTableQuery)
+    }
+
+    override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
+        val deleteTableQuery = "DROP TABLE IF EXISTS ${ScreenEntry.TABLE_NAME}"
+        db?.execSQL(deleteTableQuery)
+        onCreate(db)
+    }
+}
+
+internal object BeagleMessageLogs {
+
+    fun logDataNotInsertedOnDatabase(key: String, value: String) {
+        BeagleLoggerDefault().warning(
+            "Error when trying to insert key=$key with value=$value on Beagle default database."
+        )
+    }
+}
+```
+
+#### Criar a classe StoreHandlerDefault
+
+A classe StoreHandler define um protocolo que permite personalizar a forma como o cache é manipulado no banco de dados e na memória. 
+
+Após a definição das classes `MemoryLocalStore` e `DatabaseLocalStore`, você pode definir a `StoreHandler` com a criação de uma classe anotada com `@BeagleComponent` que implemente a **Interface** `StoreHandler`.
+
+Veja o exemplo abaixo:
+
+
+```kotlin
+import br.com.zup.beagle.android.annotation.BeagleComponent
+import br.com.zup.beagle.android.store.StoreHandler
+import br.com.zup.beagle.android.store.StoreType
+
+@BeagleComponent
+internal class StoreHandlerDefault(
+    private val memoryLocalStore: MemoryLocalStore = MemoryLocalStore,
+    private val databaseLocalStore: DatabaseLocalStore = DatabaseLocalStore()
+) : StoreHandler {
+
+    override fun save(storeType: StoreType, data: Map<String, String>) {
+        data.forEach {
+            if (storeType == StoreType.DATABASE) {
+                databaseLocalStore.save(it.key, it.value)
+            } else {
+                memoryLocalStore.save(it.key, it.value)
+            }
+        }
+    }
+
+    override fun restore(storeType: StoreType, vararg keys: String): Map<String, String?> {
+        val values = mutableMapOf<String, String?>()
+        keys.forEach {
+            val value = if (storeType == StoreType.DATABASE) {
+                databaseLocalStore.restore(it)
+            } else {
+                memoryLocalStore.restore(it)
+            }
+            values[it] = value
+        }
+        return values
+    }
+
+    override fun delete(storeType: StoreType, key: String) {
+        if (storeType == StoreType.DATABASE) {
+            databaseLocalStore.delete(key)
+        } else {
+            memoryLocalStore.delete(key)
+        }
+    }
+
+    override fun getAll(storeType: StoreType): Map<String, String> {
+        return if (storeType == StoreType.DATABASE) {
+            databaseLocalStore.getAll()
+        } else {
+            memoryLocalStore.getAll()
+        }
+    }
+}
+```
+
+### Passo 7: Configuração sistema de logs
+
+Você precisa criar uma classe que implemente a interface BeagleLogger. 
+
+Esse protocolo deverá ser definido para facilitar o monitoramento dos erros gerados no contexto server-driven de sua aplicação. Você pode implementar os métodos de acordo com a sua necessidade.
+
+Para deixar o ambiente do Beagle aberto a modificações, a API de Logs padrão pode ser substituída por qualquer outra.
+
+A configuração é com a criação de uma classe anotada com `@BeagleComponent` que implemente a **Interface** `BeagleLogger`. 
+
+Essa interface precisa da implementação dos métodos de logs, você pode ver como funciona no exemplo abaixo:
+
+```kotlin
+import android.util.Log
+import br.com.zup.beagle.android.annotation.BeagleComponent
+import br.com.zup.beagle.android.logger.BeagleLogger
+
+private const val BEAGLE_TAG = "BeagleSDK"
+
+@BeagleComponent
+class BeagleLoggerDefault : BeagleLogger {
+
+    override fun warning(message: String) {
+        Log.w(BEAGLE_TAG, message)
+    }
+
+    override fun error(message: String) {
+        Log.e(BEAGLE_TAG, message)
+    }
+
+    override fun error(message: String, throwable: Throwable) {
+        Log.e(BEAGLE_TAG, message, throwable)
+    }
+
+    override fun info(message: String) {
+        Log.i(BEAGLE_TAG, message)
+    }
+
+}
+```
+
+### Passo 8: Inicializar o Beagle e o Design System
 
 {{% alert color="info" %}}
 Importante! O que é o Design System?
@@ -342,7 +768,7 @@ Ao ser inicializado, o Beagle irá criar automaticamente o arquivo `BeagleSetup`
 
 ![](/image%20%2843%29.png)
 
-### Passo 6: Criar a classe AppApplication
+### Passo 9: Criar a classe AppApplication
 
 Nesta etapa, você precisa criar uma classe`KOTLIN` que estenda da classe `Application`. Neste exemplo, vamos nomeá-la de `AppApplication`. 
 
@@ -390,7 +816,7 @@ Pronto, a sua aplicação Android está configurada e preparada para usar o Beag
 
 Tudo o que você precisa agora é [**configurar um backend** ](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-backend)para responder as requisições da sua aplicação. Feita esta configuração, inicie a sua aplicação e você verá sua primeira tela server-driven! 
 
-### Passo 7: Exibir sua Tela Server-Driven
+### Passo 10: Exibir sua Tela Server-Driven
 
 É muito simples exibir uma tela Server-Driven. Agora que toda a configuração do Beagle está pronta, você precisa seguir estes passos: 
 
