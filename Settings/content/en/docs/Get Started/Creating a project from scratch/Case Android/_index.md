@@ -155,7 +155,7 @@ Let this file open because we'll use it again in another moment.
 Now that your project is created, you must configure **Beagle** settings. To do this, follow the steps below:
 
 {{% alert color="warning" %}}
-  `Beagle` does not provide any **Network**, **Cache** and **Logger** configuration, to implement it, just conform to the protocol and create your own default configuration.
+  `Beagle` does not provide a **Network**, **Cache** and **Logger** configuration on its default componentes and those must be configured for Beagle to work as expected. You can create you own defaults configurations following the examples below:
 
   Below you can find examples of configurations.
 
