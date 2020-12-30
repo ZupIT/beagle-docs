@@ -232,7 +232,7 @@ Beagle offers a default `Activity` to manage all `serven-driven activities`. How
 
 
 
-### Step 6: Initialize Beagle and the Design System 
+### Step 6: Initialize Beagle and Design System 
 
 {{% alert color="info" %}}
 What is Design System? 
