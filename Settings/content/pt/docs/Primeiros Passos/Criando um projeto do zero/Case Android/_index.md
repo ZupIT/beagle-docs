@@ -162,9 +162,6 @@ Agora que seu projeto está criado, você deve fazer as configurações do **Bea
 {{% alert color="warning" %}}
   O `Beagle` não fornece uma configuração de ** Rede **, ** Cache ** e ** Logger ** padrão em seus componentes internos, sendo necessário implementa-los para que o Beagle funcione conforme o esperado. Você pode criar suas próprias configurações seguindo os exemplos abaixo:
 
-  Abaixo pode encontrar exemplos de configurações.
-
-  Para saber mais sobre:
   
 [**👉 Acesse Camada de rede:**](/pt/docs/recursos/customização/beagle-para-android/camada-de-rede/)
 
