@@ -9,7 +9,7 @@ description: >-
 
 ## Introduction
 
-An exception class, thrown when an error occurs in Beagle.
+The Beagle exception is an exception class thrown when an error occurs in Beagle.
 
 ```kotlin
 open class BeagleException
