@@ -14,7 +14,7 @@ Depois que você terminar a instalação, é preciso **configurar o Beagle para 
 
 ### Passo 1: Criação do JSON de definição do layout
 
-Para uma melhor experiencia o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**](../../../instalando-o-beagle/backend/), neste exemplo usaremos um JSON remoto. Copie o conteudo abaixo e ultilizando um serviço de hospedagem JSON, crie um JSON remoto.
+Para uma melhor experiencia o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**](/pt/docs/primeiros-passos/instalando-o-beagle/backend/), neste exemplo usaremos um JSON remoto. Copie o conteudo abaixo e ultilizando um serviço de hospedagem JSON, crie um JSON remoto.
 
 ```text
 {

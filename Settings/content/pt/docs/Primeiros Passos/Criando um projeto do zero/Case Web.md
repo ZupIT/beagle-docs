@@ -164,7 +164,7 @@ export default createBeagleUIService({
 
 Agora é preciso um JSON para renderizar os componentes, criaremos um json remoto utilizando um serviço de hospedagem JSON:
 
-Para uma melhor experiencia o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**](../../../instalando-o-beagle/backend/), neste exemplo usaremos um JSON remoto. Copie o conteudo abaixo e ultilizando um serviço de hospedagem JSON, crie um json remoto.
+Para uma melhor experiencia o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**](/pt/docs/primeiros-passos/instalando-o-beagle/backend/), neste exemplo usaremos um JSON remoto. Copie o conteudo abaixo e ultilizando um serviço de hospedagem JSON, crie um json remoto.
 
 ```text
 {

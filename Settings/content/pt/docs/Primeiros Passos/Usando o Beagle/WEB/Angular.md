@@ -77,7 +77,7 @@ export class AppModule { }
 
 Agora, você precisa criar um arquivo JSON que definirá os componentes que serão renderizados.
 
-Para uma melhor experiencia o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**](../../../instalando-o-beagle/backend/), neste exemplo usaremos um JSON remoto. Copie o conteudo abaixo e ultilizando um serviço de hospedagem JSON, crie um JSON remoto.
+Para uma melhor experiencia o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**](/pt/docs/primeiros-passos/instalando-o-beagle/backend/), neste exemplo usaremos um JSON remoto. Copie o conteudo abaixo e ultilizando um serviço de hospedagem JSON, crie um JSON remoto.
 
 ```text
 {
