@@ -8,43 +8,15 @@ description: >-
 
 ---
 
+Currently, there are two types of approaches to render screens with Beagle: **remote** and **local.**
+
+In this tutorial below, we will do the configuration and build a local screen. To learn how to configure and build a remote screen, follow the tutorial [**creating a project from scratch**](/docs/get-started/creating-a-project-from-scratch/case-android)
+
 ## **Usage configurations** 
 
 Once you have finished [**Beagle's installation**](/docs/get-started/installing-beagle/android), you have to make now our tool's usage configuration. To make this process easier, we'll use an example of **how to render a** **"Hello Beagle! screen** with a small description.
 
-### **Step 1: Update Android Manifest**
-
-In this step, you have to update your `AndroidManifest` and add two lines on this file:
-
-1. INTERNET's permission so your application will be able to access internet.
-2. The attribute`android:usesCleartextTraffic="true"` inside the `<application>` tag for the local BFF communication. 
-
-{{% alert color="info" %}}
-For this example we will not be using a BFF, therefore this step is not necessary. However, for any and all **tests** that are done using Beagle Android with a BFF, this step is **essential**.
-{{% /alert %}}
-
-
-```markup
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.beagleexamples">
-
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <application
-        ...
-        android:usesCleartextTraffic="true"
-        ...
-```
-
-
-{{% alert color="warning" %}}
-* The **`usesCleartextTraffic`**: Indicates with the app intends to use cleartext network traffic, HTTP.  The default value for apps that target API level 27 or lower is "`true`". Apps that target API level 28 or higher default to "`false`". 
-* The attribute `android:usesCleartextTraffic="true"` inside `<application>`tag  is used to communicate with the local BFF.  If you intent to debug the project using a local BFF you can use this as an easy configuration step.  
-* Although, if you plan to turn this example into a `release` application, we recomend you using the **`networkSecurityConfig`** which you can configure using the [**android developers page**](https://developer.android.com/training/articles/security-config) instructions.
-{{% /alert %}}
-
-### **Step 2: Create a BeagleConfig class**
+### **Step 1: Create a BeagleConfig class**
 
 After the update, you have to create a `BeagleConfig` class and configure your attributes, as you can see on the example below:
 
@@ -104,15 +76,7 @@ class AppBeagleConfig : BeagleConfig {
 Make sure to note your class configuration with `BeagleComponent`, because Beagle expect them to have empty constructors.
 {{% /alert %}}
 
-### **Step 3:  BeagleActivitiy** 
-
-Beagle offers a default `Activity` to manage all `activities` that have been generated through server-driven. However, you can create one or more `Activities` that inherit from `BeagleActivity` with `@BeagleComponent` and are customized according to server-driven flows of your application. 
-
-{{% alert color="info" %}}
-You can create BeagleActivity now, but at his moment it is possible to proceed to the next step without configuring it. For more information about it, see [**Custom Beagle Activity**](/docs/resources/customization/beagle-for-android/custom-beagle-activity). 
-{{% /alert %}}
-
-### **Step 4: Initiate the Beagle and the Design System**
+### **Step 2: Initiate the Beagle and the Design System**
 
 Now it's the moment to initiate Beagle in your application's class. However, before you start check out if the minimum version of your SDK is above 19, as in the example: 
 
@@ -128,13 +92,13 @@ defaultConfig {
 You can set a Design System now, at this point it is not necessary,  just proceed without configuring. But, if you wanna know more about it, check [**this section about Design System for Android**](/docs/get-started/creating-a-project-from-scratch/case-android/design-system-with-beagle-android). 
 {{% /alert %}}
 
-### **Step 5: Create a BeagleSetup** 
+### **Step 3: Create a BeagleSetup** 
 
 Now you have to initialize your `Application ,`so Beagle can generate other configurations file that you need. When you initialize Beagle for the first time, a `BeagleSetup` class will be automatically created as you can see in the image below:
 
 ![BeagleSetup file](/beaglesetup.png)
 
-### **Step 6: Create the Application class** 
+### **Step 4: Create the Application class** 
 
 At this moment, you should create a `Kotlin class` that extends to `Application` class. For this example, we'll name as `AppApplication`. 
 
@@ -144,16 +108,10 @@ This class should be named as `BeagleSetup().init(this)` on `onCreate` method, a
 ```kotlin
 class AppApplication: Application() {
 
-    companion object {
-        var APPLICATION: Application? = null
-    }
-
     override fun onCreate() {
         super.onCreate()
         
-        APPLICATION = this
-
-        BeagleSetup().init(APPLICATION!!)
+        BeagleSetup().init(this)
     }
 }
 ```
@@ -163,7 +121,7 @@ class AppApplication: Application() {
 When you create this class, press CTRL + F9 so Beagle's generated classes are created. 
 {{% /alert %}}
 
-### **Step 7: Update your Android Manifest.xml**
+### **Step 5: Update your Android Manifest.xml**
 
 Finally, you must update again your `AndroidManifest.xml` and define the `AppApplication` we created as an application's initialization file, as you can see in the example below: 
 
