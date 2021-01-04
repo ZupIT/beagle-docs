@@ -2,7 +2,7 @@
 title: BeagleException
 weight: 121
 description: >-
-  An exception class, which is thrown when an error occurs in Beagle
+  This section shows details about the BeagleException class.
 ---
 
 ---
