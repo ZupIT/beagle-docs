@@ -77,7 +77,7 @@ export class AppModule { }
 
 Agora, você precisa criar um arquivo JSON que definirá os componentes que serão renderizados.
 
-Para uma melhor experiencia o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**](/pt/docs/primeiros-passos/instalando-o-beagle/backend/), neste exemplo usaremos um JSON remoto. Copie o conteudo abaixo e ultilizando um serviço de hospedagem JSON, crie um JSON remoto.
+Para uma melhor experiência o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**](/pt/docs/primeiros-passos/instalando-o-beagle/backend/), neste exemplo usaremos um JSON remoto. Copie o conteúdo abaixo e utilizando um serviço de hospedagem JSON e crie um JSON remoto:
 
 ```text
 {
@@ -142,7 +142,7 @@ Pronto, a configuração está finalizada agora vamos aprender como renderizar o
 
 Depois de criado o JSON, você precisa especificar, dentro da aplicação, o local em que os componentes serão renderizados. Para realizar essa ação, a biblioteca do Beagle fornece o componente `<beagle-remote-view>`.
 
-Abra o arquivo `app.component.html` e substitua todo o conteúdo pelo código a seguir, no route adicione o caminho relativo ao json remoto que vc criou no caso ultilizaremos: /5fe2541047ed0861b36aa589.
+Abra o arquivo `app.component.html` e substitua todo o conteúdo pelo código a seguir, no route adicione o caminho relativo ao JSON remoto que você criou e utilize: /5fe2541047ed0861b36aa589.
 
 ```text
 <beagle-remote-view route="/5fe2541047ed0861b36aa589"></beagle-remote-view>

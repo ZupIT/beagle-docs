@@ -80,7 +80,7 @@ Neste ponto da configuração podemos definir a baseUrl do servidor externo do B
 
 ### Passo 3: Usando o BeagleRemoteView
 
-Agora você precisa especificar, dentro da aplicação, o local em que os componentes serão renderizados. Para isso, a biblioteca do Beagle fornece o **BeagleRemoteView** e o **BeagleProvider**. Abra o arquivo do componente que você deseja renderizar o layout e altere para ficar como o exemplo a seguir, no route adicione o caminho relativo ao JSON remoto que você criou no caso utilizaremos: /5fe2541047ed0861b36aa589.
+Agora você precisa especificar, dentro da aplicação, o local em que os componentes serão renderizados. Para isso, a biblioteca do Beagle fornece o **BeagleRemoteView** e o **BeagleProvider**. Abra o arquivo do componente que você deseja renderizar o layout e altere para ficar como o exemplo a seguir, no route adicione o caminho relativo ao JSON remoto que você criou e utilize: /5fe2541047ed0861b36aa589.
 
 {{% alert color="info" %}}
 No exemplo alteramos a App.ts

@@ -160,11 +160,11 @@ export default createBeagleUIService({
 {{% /tab %}}
 {{< /tabs >}}
 
-### Criando o JSON para ser renderizado
+### Crie o JSON para ser renderizado
 
-Agora é preciso um JSON para renderizar os componentes, criaremos um json remoto utilizando um serviço de hospedagem JSON:
+Crie um JSON remoto utilizando um serviço de hospedagem JSON, para renderizar os componentes: 
 
-Para uma melhor experiencia o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**](/pt/docs/primeiros-passos/instalando-o-beagle/backend/), neste exemplo usaremos um JSON remoto. Copie o conteudo abaixo e ultilizando um serviço de hospedagem JSON, crie um json remoto.
+Para uma melhor experiência o JSON deve ser criado por meio de um BFF, veja como configurar um BFF você encontra [**aqui**](/pt/docs/primeiros-passos/instalando-o-beagle/backend/), neste exemplo usaremos um JSON remoto. Copie o conteúdo abaixo e utilizando um serviço de hospedagem JSON, crie um json remoto:
 
 ```text
 {
@@ -197,7 +197,7 @@ Agora é necessário adicionar na aplicação o local onde os componentes serão
 {{< tabs name="T11" >}}
 {{% tab name="Angular" %}}
 
-Abra o arquivo `app.component.html`  e substitua todo o conteúdo pelo código a seguir, no route adicione o caminho relativo ao JSON remoto que vc criou no caso ultilizaremos: /5fe2541047ed0861b36aa589.
+Abra o arquivo `app.component.html` e substitua todo o conteúdo pelo código abaixo. No route adicione o caminho relativo ao JSON remoto que você criou, será usado o: /5fe2541047ed0861b36aa589.
 
 ```text
 <beagle-remote-view route="/5fe2541047ed0861b36aa589"></beagle-remote-view>
@@ -230,7 +230,7 @@ function App() {
 export default App;
 ```
 
-Neste passo apontamos onde queremos renderizar nosso layout definidos no arquivo json remoto. Temos aqui dois componentes fornecidos pela biblioteca beagle:
+Neste passo é apontado onde você deseja renderizar o layout definido no arquivo JSON remoto. Veja aqui dois componentes fornecidos pela biblioteca Beagle:
 
 `<BeagleProvider>` Recebe uma propriedade `value` com o `beagle-service` criado no passo anterior que contém as configurações iniciais
 
