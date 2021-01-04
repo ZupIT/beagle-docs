@@ -14,7 +14,7 @@ Your structure is represented by the attribute below:
 
 | **Attribute** | **Type** | Required | Definition |
 | :--- | :--- | :--- | :--- |
-| route | ​[**Route**](https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MBdG3IHjLPbo5GoxgEz/api/api-acoes/navigate/route)**​** |      ✓ | Navigation route. |
+| route | ​[**Route**](/docs/api/actions/navigate/route)**​** |      ✓ | Navigation route. |
 
 ## How to use it?
 

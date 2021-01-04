@@ -8,7 +8,7 @@ description: Aqui voce aprenderá como criar e utilizar um widget no Beagle
 
 ## Como criar componentes \(custom views\) e widgets?
 
-No exemplo abaixo, será implementado um [**custom widget**](../../../beagle-para-ios/widgets-customizados) e o componente que ele registrará. Esse componente será composto por um texto e dois botões dentro de um layout linear. 
+No exemplo abaixo, será implementado um [**custom widget**](/pt/docs/recursos/customização/beagle-para-android/widgets-customizados) e o componente que ele registrará. Esse componente será composto por um texto e dois botões dentro de um layout linear. 
 
 Os botões neste componente serão responsáveis ​​por aumentar e diminuir o tamanho do texto do título e a tela será como a imagem a seguir:
 

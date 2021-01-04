@@ -8,24 +8,24 @@ description: 'Nesta seção, você confere como criar um formulário e submetê-
 
 ## Introdução
 
-Para este tutorial, iremos usar algumas [**ações**](../../../../../../../api/acoes/) e também APIs: 
+Para este tutorial, iremos usar algumas [**ações**](/pt/docs/api/ações) e também APIs: 
 
 **Actions**
 
-* [**SetContext**](../../../../../../api/acoes/setcontext)
-* [**SendRequest**](../../../../../api/acoes/sendrequest)
+* [**SetContext**](/pt/docs/api/ações/setcontext)
+* [**SendRequest**](/pt/docs/api/ações/sendrequest)
 
 **APIs**
 
-* [**Context**](../../../../api/contexto/)
-* [**Binding**](https://docs.usebeagle.io/v/v1.0-pt/api/contexto#bindings)
-* [**Expressões**](https://docs.usebeagle.io/v/v1.0-pt/api/contexto#bindings)
+* [**Context**](/pt/docs/api/contexto/)
+* [**Binding**](/pt/docs/api/contexto#binding)
+* [**Expressões**](/pt/docs/api/contexto#binding)
 
-Apesar do conceito [**Server-Driven**](../../../principais-conceitos#server-driven-ui) trabalhar componentes separadamente, é possível realizar a transmissão das informações para uma API e é o que vamos demonstrar abaixo. 
+Apesar do conceito [**Server-Driven**](/pt/docs/principais-conceitos#server-driven-ui) trabalhar componentes separadamente, é possível realizar a transmissão das informações para uma API e é o que vamos demonstrar abaixo. 
 
 ## Exemplo de Uso
 
-Neste exemplo, iremos utilizar os componentes [**TextInput**](../api/componentes/ui/input) e [**Button**](https://docs.usebeagle.io/v/v1.0-pt/api/componentes/ui/button) para simularmos uma tela de Login.
+Neste exemplo, iremos utilizar os componentes [**TextInput**](/pt/docs/api/componentes/ui/textinput) e [**Button**](/pt/docs/api/componentes/ui/button) para simularmos uma tela de Login.
 
 ### Passo 1: Criar uma tela de Login
 
@@ -69,7 +69,7 @@ Container(
 
 ### Passo 2: Configurar o SetContext
 
-Agora utilize uma **ação** chamada [**SetContext**](https://docs.usebeagle.io/v/v1.0-pt/api/api-acoes/setcontext), que altera um [**contexto**](https://docs.usebeagle.io/v/v1.0-pt/api/contexto) **específico** em uma tela. Isto é necessário para dar vida à tela e fazer com que os dados que forem digitados nela sejam enviados para uma API. 
+Agora utilize uma **ação** chamada [**SetContext**](/pt/docs/api/ações/setcontext), que altera um [**contexto**](/pt/docs/api/contexto) **específico** em uma tela. Isto é necessário para dar vida à tela e fazer com que os dados que forem digitados nela sejam enviados para uma API. 
 
 Neste cenário, o contexto é que irá guardar os dados digitados de nome do usuário e da senha para que, posteriormente, encaminhar estes dados para a API.
 
@@ -165,7 +165,7 @@ Container(
 {{% /tab %}}
 {{< /tabs >}}
 
-Neste exemplo, utilizamos o evento `onChange` do próprio TextInput que é chamado sempre que o usuário digita um texto novo no input. Dentro do onChange, existe um [**contexto implícito**](../../api/contexto/#contextos-implicitos) chamado `onChange` no qual o `value` é o último valor digitado pelo usuário. 
+Neste exemplo, utilizamos o evento `onChange` do próprio TextInput que é chamado sempre que o usuário digita um texto novo no input. Dentro do onChange, existe um [**contexto implícito**](/pt/docs/api/contexto#2-contextos-implícitos) chamado `onChange` no qual o `value` é o último valor digitado pelo usuário. 
 
 #### OnChange 
 
@@ -191,7 +191,7 @@ Até o momento, o que fizemos foi "salvar" estes valores no contexto para que, a
 Esta etapa não tem nenhuma diferença visual do passo anterior.
 {{% /alert %}}
 
-Para finalizar o fluxo de Login, vamos agora adicionar uma [Action](https://docs.usebeagle.io/v/v1.0-pt/api/api-acoes) chamada [SendRequest](https://docs.usebeagle.io/v/v1.0-pt/api/api-acoes/sendrequest) que, basicamente, permite fazer uma requisição HTTP e, no caso do `onSuccess`, mostrar um [Alert](https://docs.usebeagle.io/v/v1.0-pt/api/api-acoes/alert) dando boas-vindas ao usuário.
+Para finalizar o fluxo de Login, vamos agora adicionar uma [**Action**](/pt/docs/api/ações) chamada [**SendRequest**](/pt/docs/api/ações/sendrequest) que, basicamente, permite fazer uma requisição HTTP e, no caso do `onSuccess`, mostrar um [**Alert**](/pt/docs/api/ações/alert) dando boas-vindas ao usuário.
 
 {{< tabs id="T103" >}}
 {{% tab name="JSON" %}}
@@ -337,4 +337,4 @@ Ao executar este código, você deve preencher os campos e pressionar o botão "
 
 Feito isso, o evento `onPress` irá executar o SendRequest enviando os dados que estão dentro do Context com o ID `credentials`. 
 
-Assim que o SendRequest for feito e a requisição for concluída, o evento `onSuccess` irá executar a [**Action Alert**](https://docs.usebeagle.io/v/v1.0-pt/api/api-acoes/alert) que irá mostrar um alerta contendo os dados retornados da API.
+Assim que o SendRequest for feito e a requisição for concluída, o evento `onSuccess` irá executar a [**Action Alert**](/pt/docs/api/ações/alert) que irá mostrar um alerta contendo os dados retornados da API.

@@ -15,7 +15,7 @@ Nessa seção, você verá dois específicos:
 
 ## Set Id
 
-O método Set Id é usado quando você precisa setar um Id no [**widget**](../../../api/widget) fornecido para o [**BFF**](../../../principais-conceitos#backend-for-frontend). Para fazer isso, você precisa chamar esse método no widget que você quer o Id setado durante o momento que você está criando o seu widget. 
+O método Set Id é usado quando você precisa setar um Id no [**widget**](/pt/docs/api/widget) fornecido para o [**BFF**](/pt/docs/principais-conceitos#backend-for-frontend). Para fazer isso, você precisa chamar esse método no widget que você quer o Id setado durante o momento que você está criando o seu widget. 
 
 Veja como funciona abaixo: 
 

@@ -25,7 +25,7 @@ To use `Live Preview`, you must:
 
 ### BFF Configuration
 
-You must have a configured BFF with Beagle to use Live Preview. In case you haven't done it, [**click here to download an initial project**](https://github.com/ZupIT/beagle-examples/tree/master/BeagleSampleBackend). As an alternative, [**follow our tutorial on how to implement a Beagle configured backend**](https://docs.usebeagle.io/v/v1.0-en/get-started/new-project/exemplo-de-projeto-backend-com-beagle).
+You must have a configured BFF with Beagle to use Live Preview. In case you haven't done it, [**click here to download an initial project**](https://github.com/ZupIT/beagle-examples/tree/master/BeagleSampleBackend). As an alternative, [**follow our tutorial on how to implement a Beagle configured backend**](/docs/get-started/creating-a-project-from-scratch/case-backend).
 
 ### **IntelliJ plugin installation**
 

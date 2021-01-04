@@ -17,5 +17,5 @@ No caso do Beagle para Web, é necessário fazer as configurações de uso de ac
 
 
 {{% alert color="info" %}}
-Caso queira utilizar um BFF, é necessário ter um CORS configurado. Veja como fazer isso nas [**configurações de uso para backend**](../../backend#cors).
+Caso queira utilizar um BFF, é necessário ter um CORS configurado. Veja como fazer isso nas [**configurações de uso para backend**](/pt/docs/primeiros-passos/usando-o-beagle/backend#cors).
 {{% /alert %}}

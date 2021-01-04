@@ -24,7 +24,7 @@ Veja o exemplo com o evento "onPress" do botão:
 
 {{< tabs id="T173" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:events.json
 {
   "_beagleComponent_" : "beagle:button",
   "text" : "Click to show message",
@@ -34,7 +34,8 @@ Veja o exemplo com o evento "onPress" do botão:
     "message" : "Hello Beagle"
   } ]
 }
-```
+-->
+{{% playground file="events.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -54,4 +55,4 @@ Button(
 
 No exemplo acima, associa-se a ação "beagle:alert" ao evento "onPress" do componente "beagle:button". Ou seja, ao pressionar o botão cujo título é "click to show message", uma mensagem de alerta será exibida na tela com o texto "Hello World!".
 
-Todo evento em qualquer componente ou ação pode ser associado a qualquer Beagle Action. Foi utilizada a ação de alerta no exemplo anterior, mas qualquer outra poderia ser utilizada. Para fazer uma requisição ao clicar no botão, a ação "beagle:sendRequest" poderia ter sido usada. Para saber mais sobre a relação com todas a ações disponíveis, acesse a [**documentação sobre ações**](acoes/).
+Todo evento em qualquer componente ou ação pode ser associado a qualquer Beagle Action. Foi utilizada a ação de alerta no exemplo anterior, mas qualquer outra poderia ser utilizada. Para fazer uma requisição ao clicar no botão, a ação "beagle:sendRequest" poderia ter sido usada. Para saber mais sobre a relação com todas a ações disponíveis, acesse a [**documentação sobre ações**](/pt/docs/api/ações/).

@@ -46,5 +46,5 @@ data class CustomActionAndroid(
 It's done! Your action is now configured to run any job asynchronously!
 
 {{% alert color="danger" %}}
-It is mandatory to implement the `AsyncAction` interface for any custom action that is inserted within the [ListView](https://docs.usebeagle.io/v/v1.0-pt/api/componentes/layout/listview) component.
+It is mandatory to implement the `AsyncAction` interface for any custom action that is inserted within the [ListView](/docs/api/components/layout/listview) component.
 {{% /alert %}}

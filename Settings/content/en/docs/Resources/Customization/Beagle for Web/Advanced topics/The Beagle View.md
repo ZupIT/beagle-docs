@@ -99,7 +99,7 @@ beagleView.fetch({ path: '/my-lazy-container' }, 'lazy')
 * **headers:** optional. Use this option to pass additional headers to this single request.
 * **shouldShowLoading:** optional. Tells wether to use or not the loadingComponent while the view loads. Will use the global configuration if not specified.
 * **shouldShowError:** optional. Tells wether or not to show the error component if the request fails. Will use the global configuration if not specified.
-* **strategy:** optional. Tells which [**cache strategy**](https://docs.usebeagle.io/resources/customization/beagle-para-web/cache-strategy) should be used to load this specific view. Will use the global configuration if not specified.
+* **strategy:** optional. Tells which [**cache strategy**](/docs/resources/customization/beagle-for-web/cache-strategy) should be used to load this specific view. Will use the global configuration if not specified.
 * **loadingComponent:** optional. The loading component to use. Will use the global configuration if not specified.
 * **errorComponent:** optional. The error component to use. Will use the global configuration if not specified.
 

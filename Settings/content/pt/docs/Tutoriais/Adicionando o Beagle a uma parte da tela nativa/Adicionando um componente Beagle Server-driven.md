@@ -11,17 +11,18 @@ description: >-
 É possível que alguns componentes de uma tela que sejam exibidos via server-driven \(tela nativa\) recebam somente **uma seção da página** , ou mesmo um **único componente do servidor BFF**. 
 
 No exemplo abaixo, vamos exibir um botão server-driven em uma tela nativa. O resultado que deve aparecer na sua aplicação é esse:
-
-![](/screenshot_1594300176.png)
+<div align="center">
+{{< figure src="/screenshot_1594300176.png" width="30%" >}}
+</div>
 
 ## Pré-requisitos
 
 Para que essa configuração funcione corretamente, você precisa de:
 
-* Um [**BFF**](../../../../../../../principais-conceitos#backend-for-frontend) configurado com o Beagle. Caso não o tenha, veja como configurar nesse [**tutorial**](../../../../../../../get-started/criando-um-projeto-do-zero/case-backend).
+* Um [**BFF**](/pt/docs/principais-conceitos#backend-for-frontend) configurado com o Beagle. Caso não o tenha, veja como configurar nesse [**tutorial**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-backend).
 * Um frontend configurado com o Beagle para Android ou iOS. Caso não o tenha, siga um dos tutoriais de acordo com sistema operacional:
-  * [**Android**](../../../../../../get-started/criando-um-projeto-do-zero/case-android/)
-  * [**iOS**](../../../../../get-started/criando-um-projeto-do-zero/case-ios/)
+  * [**Android**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-android/)
+  * [**iOS**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-ios/)
 
 ## Passo 1: Criar o componente no backend
 
@@ -41,11 +42,11 @@ class SingleComponentBuilder() {
 
   fun createButton(): Button {
     return Button(
-        "Sou um botão server-driven",
+        "I'm a server-based button",
         onPress = listOf(
             Alert(
-                "Botão server-driven",
-                "Sou um botão server-driven",
+                "Server-driven Button",
+                "I'm a server-based button",
                 labelOk = "OoooK"
             )
         )
@@ -123,11 +124,11 @@ Você deve receber o JSON abaixo:
 ```typescript
 {
   "_beagleComponent_" : "beagle:button",
-  "text" : "Sou um botão server-driven",
+  "text" : "I'm a server-based button",
   "onPress" : [ {
     "_beagleAction_" : "beagle:alert",
-    "title" : "Botão server-driven",
-    "message" : "Sou um botão server-driven",
+    "title" : "Server-driven Button",
+    "message" : "I'm a server-based button",
     "labelOk" : "OoooK"
   } ]
 }
@@ -137,11 +138,11 @@ Você deve receber o JSON abaixo:
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 Button(
-    "Sou um botão server-driven",
+    "I'm a server-based button",
     onPress = listOf(
         Alert(
-            "Botão server-driven",
-            "Sou um botão server-driven",
+            "Server-driven Button",
+            "I'm a server-based button",
             labelOk = "OoooK"
         )
     )
@@ -201,6 +202,20 @@ Para isso, basta seguir esses passos:
 Após configurar o frame layout, é preciso informar ao Beagle qual componente será exibido. Para isso, utilize a função `loadView` como listado no exemplo a seguir.
 {{% /alert %}}
 
+## O que é loadView?
+
+O método `loadView` é responsável carregar seu conteúdo beagle dentro de sua view.
+
+A estrutura do **loadView** é:
+
+| **Atributo** | **Tipo** | Obrigatório | **Definição** |
+| :--- | :--- | :---: | :--- |
+| activity | AppCompatActivity/Fragment | ✓ | Define a activity ou fragment que estamos usando o loadview |
+| screenRequest | [**ScreenRequest**](/pt/docs/api/screen-request/) | ✓ | Define os parâmetros para a chamada da tela remota |
+| listener | **OnServerStateChanged = (serverState: ServerDrivenState) -> Unit** |  | Define o o listener que configura os callbacks para os estados da tela |
+
+<br />
+
 Veja como fazer isso:
 
 1. Abra a activity onde você deseja exibir a sua tela nativa.
@@ -215,8 +230,9 @@ frameLayout.loadView(this, ScreenRequest("/serverDrivenComponent"))
 
 
 E pronto: basta iniciar sua aplicação e você verá a tela a seguir! 
-
-                                                              .![](/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-MC8IwWJstYtvxLbosfv%2F-MC8QfhsPkq60mGJKtfy%2Fserver-driven-comp-ios.gif?alt=media&token=b5500211-e2bc-477d-aea4-835245be1531).
+<div align="center">
+{{< figure src="/server-driven-comp-ios.gif" width="30%" >}}
+</div>
 
 Clique no botão e perceba que a função nesse componente está implementada e funcional, ou seja, o Beagle exibe todos os componentes como se fossem nativos.
 {{% /tab %}}
@@ -276,15 +292,17 @@ class NativeViewController: UIViewController {
 
 Ao final do processo, você poderá "chamar" pela nossa tela nativa que irá aparecer a imagem abaixo. Lembrando que, para esse exemplo, foi criada uma tela  composta de uma `UILabel` e uma `BeagleView` , onde fica o componente server-driven.
 
-![](/server-driven-comp-ios.gif)
+<div align="center">
+{{< figure src="/server-driven-comp-ios.gif" width="50%" >}}
+</div>
 {{% /tab %}}
 
 {{% tab name="WEB" %}}
-Se você ainda não configurou a biblioteca em seu projeto, [**veja aqui como fazer isso**.](../../../../get-started/usando-o-beagle/)
+Se você ainda não configurou a biblioteca em seu projeto, [**veja aqui como fazer isso**.](/pt/docs/primeiros-passos/usando-o-beagle/web)
 
-Você deve utilizar o [**Remote View**](../../../features/customizacao/beagle-para-web/parametros-remote-view), fornecido pela biblioteca do Beagle, para criar telas híbridas com alguns componentes server driven na web.
+Você deve utilizar o [**Remote View**](/pt/docs/recursos/customização/beagle-para-web/parâmetros-remote-view), fornecido pela biblioteca do Beagle, para criar telas híbridas com alguns componentes server driven na web.
 
-  
+
 Veja a seguir como funciona para cada framework:
 
 **React**
@@ -335,8 +353,9 @@ Lembre-se de rodar seu projeto Angular usando um dos comandos:
 `yarn run serve ou npx run serve`
 {{% /alert %}}
 
-A sua tela híbrida com elementos nativos e server driven está pronta 
-
-![](/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-ME4OQaHp-v_V78YeLiC%2F-ME7uUduHSFMpidOFn9E%2Fimage.png?alt=media&token=974fe2f0-0964-4d68-a16b-414e3fdd9d67)
+A sua tela híbrida com elementos nativos e server driven está pronta
+<div align="center">
+{{< figure src="/image.png" >}}
+</div>
 {{% /tab %}}
 {{< /tabs >}}

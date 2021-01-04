@@ -14,10 +14,10 @@ The structure is represented by the attributes below:
 
 | Attribute | Type | Required | Definition |
 | :--- | :--- | :--- | :--- |
-| text | String or [**Binding**](https://docs.usebeagle.io/v/v1.0-en/api/context#bindings) |   ✓ | Defines the content in text to be rendered. |
+| text | String or [**Binding**](/docs/api/context#bindings) |   ✓ | Defines the content in text to be rendered. |
 | styleId | String |  | Refers to a locally configured style that it will be applied on the text. |
 | textColor | String |  | Defines the text color.  |
-| alignment | [**TextAlignment**](text#textalignment) |  | Define the alignment of the text. |
+| alignment | [**TextAlignment**](#textalignment) |  | Define the alignment of the text. |
 
 ### TextAlignment
 

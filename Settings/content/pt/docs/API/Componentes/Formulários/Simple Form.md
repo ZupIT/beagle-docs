@@ -14,9 +14,9 @@ A sua estrutura é representada como mostrado abaixo:
 
 | Atributo | Tipo | Obrigatório | Definição |
 | :--- | :--- | :---: | :--- |
-| onSubmit | List &lt;[**Action**](../../acoes/)&gt; | ✓ | Array de ações que esse botão pode disparar quando um formulário é enviado |
-| children | List&lt;[**ServerDrivenComponent**](../)&gt; | ✓ | Define a lista de componentes visuais que compoe o formulário \(server-driven\)  |
-| context | [**ContextData**](https://docs.usebeagle.io/api/contexto) |   | Adiciona um contexto para o simple form |
+| onSubmit | List &lt;[**Action**](/pt/docs/api/ações)&gt; | ✓ | Array de ações que esse botão pode disparar quando um formulário é enviado |
+| children | List&lt;[**ServerDrivenComponent**](/pt/docs/api/componentes)&gt; | ✓ | Define a lista de componentes visuais que compoe o formulário \(server-driven\)  |
+| context | [**ContextData**](/pt/docs/api/contexto) |   | Adiciona um contexto para o simple form |
 
 ## Como usar?
 
@@ -30,12 +30,12 @@ Ao criar um formulário é importante entender dois passos respectivamente
 O componente TextInput é o campo em que o usuario ou o sistema preencherá com alguma informação, e é importante conhecer seus atributos para melhor utiliza-lo. Aqui utilizaremos um de seus elementos , que é a função **`onChange`**. 
 
 {{% alert color="info" %}}
-Para mais informações sobre esse componente vá até os detalhes do [TextInput](../../../../../ui/input).
+Para mais informações sobre esse componente vá até os detalhes do [TextInput](/pt/docs/api/componentes/ui/textinput).
 {{% /alert %}}
 
 #### OnChange
 
-Essa função é parte do componente Text Input e observa as modificações feitas dentro do seu campo, ou seja, sempre que o valor for modificado, algo for digitado, apagado, etc, essa função é chamada e ativa uma **lista** de outras [**ações**](../../../../../acoes/) para acontecer sempre que o valor mudar. É nessa lista que adicionamos uma ação [SetContext](../../../../../acoes/setcontext) para definir o valor do [Contexto](../../../../../contexto/) do formulário e atualizar os valores que são mostrados no campo.
+Essa função é parte do componente Text Input e observa as modificações feitas dentro do seu campo, ou seja, sempre que o valor for modificado, algo for digitado, apagado, etc, essa função é chamada e ativa uma **lista** de outras [**ações**](/pt/docs/api/ações) para acontecer sempre que o valor mudar. É nessa lista que adicionamos uma ação [**SetContext**](/pt/docs/api/ações/setcontext) para definir o valor do [**Contexto**](/pt/docs/api/contexto/) do formulário e atualizar os valores que são mostrados no campo.
 
 Veja abaixo como implementamos o nosso `SimpleForm`
 
@@ -115,6 +115,6 @@ SimpleForm(
 
 É uma função do SimpleForm que executa uma lista de ações. Ele é cho quando o formuário for submetido
 
-Para submeter um formulário é preciso utilizar a ação SubmitForm e para chama-la basta somente implementa-la em um [Botão](../../../ui/button) que seja parte do SimpleForm, ou seja, que esteja em sua lista de filhos.
+Para submeter um formulário é preciso utilizar a ação SubmitForm e para chama-la basta somente implementa-la em um [**Botão**](/pt/docs/api/componentes//ui/button) que seja parte do SimpleForm, ou seja, que esteja em sua lista de filhos.
 
-Ao clicar nesse botão, o onSubmit é ativados e a lista de ações será executada. É essa lista de ações que definirá o que deve acontecer com as informações so formulario, se serão enviadas para um backend \(através da ação [sendRequest](../../../acoes/sendrequest)\), etc
+Ao clicar nesse botão, o onSubmit é ativados e a lista de ações será executada. É essa lista de ações que definirá o que deve acontecer com as informações so formulario, se serão enviadas para um backend \(através da ação [**sendRequest**](/pt/docs/api/ações/sendrequest)\), etc

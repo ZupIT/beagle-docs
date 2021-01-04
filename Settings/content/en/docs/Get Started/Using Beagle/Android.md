@@ -10,7 +10,7 @@ description: >-
 
 ## **Usage configurations** 
 
-Once you have finished [**Beagle's installation**](../../../../installing-beagle/android), you have to make now our tool's usage configuration. To make this process easier, we'll use an example of **how to render a** **"Hello Beagle! screen** with a small description.
+Once you have finished [**Beagle's installation**](/docs/get-started/installing-beagle/android), you have to make now our tool's usage configuration. To make this process easier, we'll use an example of **how to render a** **"Hello Beagle! screen** with a small description.
 
 ### **Step 1: Update Android Manifest**
 
@@ -109,7 +109,7 @@ Make sure to note your class configuration with `BeagleComponent`, because Beagl
 Beagle offers a default `Activity` to manage all `activities` that have been generated through server-driven. However, you can create one or more `Activities` that inherit from `BeagleActivity` with `@BeagleComponent` and are customized according to server-driven flows of your application. 
 
 {{% alert color="info" %}}
-You can create BeagleActivity now, but at his moment it is possible to proceed to the next step without configuring it. For more information about it, see [**Custom Beagle Activity**](../../../../resources/customization/beagle-for-android/custom-beagle-activity). 
+You can create BeagleActivity now, but at his moment it is possible to proceed to the next step without configuring it. For more information about it, see [**Custom Beagle Activity**](/docs/resources/customization/beagle-for-android/custom-beagle-activity). 
 {{% /alert %}}
 
 ### **Step 4: Initiate the Beagle and the Design System**
@@ -125,7 +125,7 @@ defaultConfig {
 
 
 {{% alert color="info" %}}
-You can set a Design System now, at this point it is not necessary,  just proceed without configuring. But, if you wanna know more about it, check [**this section about Design System for Android**](https://docs.usebeagle.io/v/v1.0-en/get-started/new-project/case-android/design-system-beagle-com-android). 
+You can set a Design System now, at this point it is not necessary,  just proceed without configuring. But, if you wanna know more about it, check [**this section about Design System for Android**](/docs/get-started/creating-a-project-from-scratch/case-android/design-system-with-beagle-android). 
 {{% /alert %}}
 
 ### **Step 5: Create a BeagleSetup** 
@@ -597,7 +597,7 @@ This tutorial focused in a simple screen configuration, so you could understand 
 
 Before you use Beagle, stay tuned about: the **release build configuration and ProGuard.** 
 
-Even though it's not necessary at this moment, it's good to have in mind that you'll have to [**configure the ProGuard**](../../../resources/customization/beagle-for-android/proguard-configuration) to activate the obfuscate code when you publish releases.  
+Even though it's not necessary at this moment, it's good to have in mind that you'll have to [**configure the ProGuard**](/docs/resources/customization/beagle-for-android/proguard-configuration) to activate the obfuscate code when you publish releases.  
 
 {{% alert color="info" %}}
 The annotated classes like `BeagleComponent` and `RegisterValidator` can't implement parameters in your constructors because, on Beagle, these constructors must be empty. 

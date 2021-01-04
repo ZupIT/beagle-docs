@@ -27,7 +27,7 @@ abstract class Widget : StyleComponent,
 }
 ```
 
-We list below all the attributes a widget can receive. But, if you want an use example and how to create a widget, see our section [**creating a component.** ](https://docs.usebeagle.io/v/v1.0-en/customization/beagle-for-android/how-to-make-custom-widgets)
+We list below all the attributes a widget can receive. But, if you want an use example and how to create a widget, see our section [**creating a component.** ](/docs/resources/customization/beagle-for-android/custom-widget)
 
 ## Which are the attributes? 
 
@@ -176,17 +176,17 @@ On the example below, we used a Container to show the widgets attributes. The cl
 
 {{< tabs id="T159" >}}
 {{% tab name="JSON" %}}
-```markup
+<!-- json-playground:widget.json
 {
       "_beagleComponent_" : "beagle:container",
       "children" : [ {
         "_beagleComponent_" : "beagle:text",
-        "text" : "Sou um texto Server-Driven"
+        "text" : "I'm a Server-Driven text"
       }, {
         "_beagleComponent_" : "beagle:text",
-        "text" : "Sou outro texto Server-Driven"
+        "text" : "I'm another Server-Driven text"
       } ],
-      "id" : "SouUmWidget",
+      "id" : "widget",
       "style" : {
         "backgroundColor" : "#ff8100",
         "cornerRadius" : {
@@ -231,15 +231,16 @@ On the example below, we used a Container to show the widgets attributes. The cl
         "accessibilityLabel" : "Sou acessível"
       }
     }
-```
+-->
+{{% playground file="widget.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 Container(
     listOf(
-        Text("Sou um texto Server-Driven"),
-        Text("Sou outro texto Server-Driven")
+        Text("I'm a Server-Driven text "),
+        Text(" I'm another Server-Driven text")
     )
     
 ).applyStyle(
@@ -257,12 +258,8 @@ Container(
     accessible = true,
     accessibilityLabel = "Sou acessível")
     
-).setId("SouUmWidget")
+).setId("widget")
 
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👇 Test this component in the Web Playground
-
-{% embed url="https://beagle-playground.netlify.app/\#/demo/default-components/container.json" %}}

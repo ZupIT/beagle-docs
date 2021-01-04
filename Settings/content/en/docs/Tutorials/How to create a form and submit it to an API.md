@@ -8,20 +8,20 @@ description: 'On this section, you will find how to create a form and submit it 
 
 ## Introduction
 
-To this tutorial, we will use some [**actions**](../../../../../../../api/acoes/) and APIs:
+To this tutorial, we will use some [**actions**](/docs/api/actions/) and APIs:
 
 **Actions**
 
-* [**SetContext**](../../../../../../api/acoes/setcontext)
-* [**SendRequest**](../../../../../api/acoes/sendrequest)
+* [**SetContext**](/docs/api/actions/setcontext)
+* [**SendRequest**](/docs/api/actions/sendrequest)
 
 **APIs**
 
-* [**Context**](../../../../api/contexto/)
-* [**Binding**](https://docs.usebeagle.io/v/v1.0-pt/api/contexto#bindings)
-* [**Expressões**](https://docs.usebeagle.io/v/v1.0-pt/api/contexto#bindings)
+* [**Context**](/docs/api/context/)
+* [**Binding**](/docs/api/context#bindings)
+* [**Expressões**](/docs/api/context#bindings)
 
-Despite the [**Server-Driven**](../../../principais-conceitos#server-driven-ui) concept of working with separate components, it is possible to make an information streaming to an API and it is what we will show below.
+Despite the [**Server-Driven**](/docs/key-concepts#server-driven-ui) concept of working with separate components, it is possible to make an information streaming to an API and it is what we will show below.
 
 ## Use example
 
@@ -70,7 +70,7 @@ Container(
 
 ### Step 2: Configure SetContext
 
-Now use the [**SetContext**](https://docs.usebeagle.io/v/v1.0-pt/api/api-acoes/setcontext) action that alter a **specific** [**context**](https://docs.usebeagle.io/v/v1.0-pt/api/contexto)  on a screen.This is necessary to bring this screen to life and make the typed data on them sent to an API. 
+Now use the [**SetContext**](/docs/api/actions/setcontext) action that alter a **specific** [**context**](/docs/api/context)  on a screen.This is necessary to bring this screen to life and make the typed data on them sent to an API. 
 
 On this scenario, the context is what it will keep the typed data of user name and password so that later this data is fowarded to an API.
 
@@ -167,7 +167,7 @@ Container(
 {{% /tab %}}
 {{< /tabs >}}
 
-On this example, we use an `onChange` event of the TextInput that it is always called when the user types a new text in the input. Inside the onChange, there is an implicit context [**implicit context**](../../api/contexto/#contextos-implicitos) called `onChange` where the value it is the last typed `value` by the user.
+On this example, we use an `onChange` event of the TextInput that it is always called when the user types a new text in the input. Inside the onChange, there is an implicit context [**implicit context**](/docs/api/context/#2-implicit-context) called `onChange` where the value it is the last typed `value` by the user.
 
 
 #### OnChange 
@@ -196,7 +196,7 @@ Until this moment, what we have done was "save" these context values so that on 
 This step does not have any visual difference from the last step.
 {{% /alert %}}
 
-To finish the Login flow, we will now add an [Action](https://docs.usebeagle.io/v/v1.0-pt/api/api-acoes) called [SendRequest](https://docs.usebeagle.io/v/v1.0-pt/api/api-acoes/sendrequest), that basically allows you to make a HTTP request and on the `onSuccess` case, show an [Alert](https://docs.usebeagle.io/v/v1.0-pt/api/api-acoes/alert) welcoming the user.
+To finish the Login flow, we will now add an [**Action**](/docs/api/actions) called [**SendRequest**](/docs/api/actions/sendrequest), that basically allows you to make a HTTP request and on the `onSuccess` case, show an [**Alert**](/docs/api/actions/alert) welcoming the user.
 
 
 {{< tabs id="T103" >}}
@@ -343,4 +343,4 @@ When running this code, you have to fill in the fields and press the "Login" but
 
 After that, the `onPress` event will perform  SendRequest sending all the data that are inside the context with the `credentials` ID.
 
-When the  SendRequest it is done, the response is finished, the `onSuccess` event will perform an [**Action Alert**](https://docs.usebeagle.io/v/v1.0-pt/api/api-acoes/alert) that it will show an alert with the returned data from the API.
+When the  SendRequest it is done, the response is finished, the `onSuccess` event will perform an [**Action Alert**](/docs/api/actions/alert) that it will show an alert with the returned data from the API.

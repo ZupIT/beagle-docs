@@ -331,7 +331,7 @@ Importante! O que é o Design System?
 
 Embora você possa criá-lo agora se quiser, não é necessário para as configurações iniciais, para que você possa testar logo o Beagle! Você pode prosseguir sem configurá-lo. Mas saiba que o Design System é o pulmão da aplicação server-driven! 
 
-[**Design System no Beagle para Android**.](design-system-com-beagle-android) 
+[**Design System no Beagle para Android**.](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-android/design-system-com-beagle-android/) 
 {{% /alert %}}
 
 Agora, você deve inicializar sua `Application` para que o Beagle gere os outros arquivos de configuração que necessita. Para isso, basta clicar em`Make project` \(símbolo de MARTELO\) ou use o comando `CTRL + F9`.
@@ -388,7 +388,7 @@ O nome da sua`application` agora é o nome desta classe que você criou. Faça o
 Pronto, a sua aplicação Android está configurada e preparada para usar o Beagle! 
 {{% /alert %}}
 
-Tudo o que você precisa agora é [**configurar um backend** ](../../case-backend)para responder as requisições da sua aplicação. Feita esta configuração, inicie a sua aplicação e você verá sua primeira tela server-driven! 
+Tudo o que você precisa agora é [**configurar um backend** ](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-backend)para responder as requisições da sua aplicação. Feita esta configuração, inicie a sua aplicação e você verá sua primeira tela server-driven! 
 
 ### Passo 7: Exibir sua Tela Server-Driven
 

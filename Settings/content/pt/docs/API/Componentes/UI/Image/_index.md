@@ -14,8 +14,8 @@ A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :---: | :--- |
-| path | [**ImagePath**](imagepath) ou [**Binding**](../../../../contexto/#binding) | ✓ | Referência de uma imagem local ou url de uma imagem remota a ser exibida. |
-| mode | [ImageContentMode](imagecontentmode) |   | É responsável por controlar como a imagem será controlada internamente. |
+| path | [**ImagePath**](/pt/docs/api/componentes/ui/image/imagepath) ou [**Binding**](/pt/docs/api/contexto#binding) | ✓ | Referência de uma imagem local ou url de uma imagem remota a ser exibida. |
+| mode | [ImageContentMode](/pt/docs/api/componentes/ui/image/imagecontentmode) |   | É responsável por controlar como a imagem será controlada internamente. |
 
 ## Como usar?
 

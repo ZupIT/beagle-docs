@@ -1,7 +1,7 @@
 ---
-title: Scroll View
+title: ScrollView
 weight: 321
-description: Scroll View component description and its attributes details
+description: ScrollView component description and its attributes details
 ---
 
 ---

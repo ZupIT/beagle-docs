@@ -11,17 +11,19 @@ It is possible that some screen components are received through server-driven, m
 
 On the example below, we will show a server-drive button in a native screen, and the result is:
 
-![](/docs-beagle/screenshot_1594300176.png)
+<div align="center">
+{{< figure src="/screenshot_1594300176.png" width="30%" >}}
+</div>
 
 ## Requisites
 
 To this configuration works correctly, you have to:
 
-* A configured [**BFF**](../../../../../../../principais-conceitos#backend-for-frontend) with Beagle, in case you haven't configured yet, check out this [**tutorial**](../../../../../../../get-started/criando-um-projeto-do-zero/case-backend).
+* A configured [**BFF**](/docs/key-concepts#backend-for-frontend) with Beagle, in case you haven't configured yet, check out this [**tutorial**](/docs/get-started/creating-a-project-from-scratch/case-backend).
 
 * A configured frontend with Beagle in Android or iOS. Check out the tutorial below:
-  * [**Android**](../../../../../../get-started/criando-um-projeto-do-zero/case-android/)
-  * [**iOS**](../../../../../get-started/criando-um-projeto-do-zero/case-ios/)
+  * [**Android**](/docs/get-started/creating-a-project-from-scratch/case-android/)
+  * [**iOS**](/docs/get-started/creating-a-project-from-scratch/case-ios/)
 
 ## Step 1: Create a component in the backend
 
@@ -43,11 +45,11 @@ class SingleComponentBuilder() {
 
   fun createButton(): Button {
     return Button(
-        "Sou um botão server-driven",
+        "I'm a server-based button",
         onPress = listOf(
             Alert(
-                "Botão server-driven",
-                "Sou um botão server-driven",
+                "Server-driven Button",
+                "I'm a server-based button",
                 labelOk = "OoooK"
             )
         )
@@ -97,7 +99,7 @@ Now, on the controller class, we will call the service that has just been config
 
 2. \(This class already has some implemented functions\) and all you have to do is add the other function to this class.
 
-3. You must note the function with `@GetMapping()` and list the endpoint `(Path relativo da URL)` that identifies this component.
+3. You must note the function with `@GetMapping()` and list the endpoint `(Relative path for the URL)` that identifies this component.
 
 Follow the example below:
 
@@ -128,11 +130,11 @@ You have to receive the JSON below:
 ```typescript
 {
   "_beagleComponent_" : "beagle:button",
-  "text" : "Sou um botão server-driven",
+  "text" : "I'm a server-based button",
   "onPress" : [ {
     "_beagleAction_" : "beagle:alert",
-    "title" : "Botão server-driven",
-    "message" : "Sou um botão server-driven",
+    "title" : "Server-driven Button",
+    "message" : "I'm a server-based button",
     "labelOk" : "OoooK"
   } ]
 }
@@ -142,11 +144,11 @@ You have to receive the JSON below:
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 Button(
-    "Sou um botão server-driven",
+    "I'm a server-based button",
     onPress = listOf(
         Alert(
-            "Botão server-driven",
-            "Sou um botão server-driven",
+            "Server-driven Button",
+            "I'm a server-based button",
             labelOk = "OoooK"
         )
     )
@@ -207,6 +209,20 @@ Follow the steps:
 After configuring the `frameLayout`, we have to tell Beagle which component will be displayed. For that, use the `loadView` function as listed below.
 {{% /alert %}}
 
+## What is loadView?
+
+The `loadView` method is responsible for loading your beagle content into your view.
+
+The structure of **loadView** is:
+
+| **Attribute** | **Type** | Required | **Definition** |
+| :--- | :--- | :---: | :--- |
+| activity | AppCompatActivity/Fragment | ✓ | Defines the activity or fragment that we are using loadview |
+| screenRequest | [**ScreenRequest**](/docs/api/screen-request/) | ✓ | Sets the parameters for calling the remote screen |
+| listener | **OnServerStateChanged = (serverState: ServerDrivenState) -> Unit** |  | Defines the listener that configures callbacks for screen states |
+
+<br />
+
 Follow the steps:
 
 1. Open the activity you want to display in your native screen. 
@@ -224,7 +240,9 @@ frameLayout.loadView(this, ScreenRequest("/serverDrivenComponent"))
 
 And done: now, just start your application and you will see the following screen!
 
-                                                              .![](/docs-beagle/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-MC8IwWJstYtvxLbosfv%2F-MC8QfhsPkq60mGJKtfy%2Fserver-driven-comp-ios.gif?alt=media&token=b5500211-e2bc-477d-aea4-835245be1531).
+<div align="center">
+{{< figure src="/server-driven-comp-ios.gif" width="30%" >}}
+</div>
 
 Click on the button and you will se the function of this component implemented and functional, Beagle displays all the components as they are natives.
 {{% /tab %}}
@@ -234,13 +252,13 @@ You have to use a view controller to put this BFF component to display a server-
 
 But first, you need to need to create a view controller on this native screen. To do so, just follow these steps:
 
-1. Make an instancy to the server-driven component from the `BeagleScreenViewController` class.
+1. Make an instance of the server-driven component from the `BeagleScreenViewController` class.
 
 2. Use the `addChild` to add a view controller. 
 
-3. Also add a `view` on `beagleScreenViewController` assubview on the native view controller.
+3. Also add a `view` on `beagleScreenViewController` as sub view on the native view controller.
 
-4. Then, it's necessary to add some constraints to `UILabel` and for a view of `beagleScreenViewController` , as in the code below:
+4. Then, we need to add some constraints to `UILabel` and for the view of `beagleScreenViewController` , as in the code below:
 
 ```swift
 class NativeViewController: UIViewController {
@@ -249,7 +267,7 @@ class NativeViewController: UIViewController {
 
     private lazy var descriptionText: UILabel = {
         let label = UILabel()
-        label.text = "Sou um componente nativo"
+        label.text = "I am a native component"
         label.font = .systemFont(ofSize: 25, weight: .semibold)
         return label
     }()
@@ -281,13 +299,15 @@ class NativeViewController: UIViewController {
 
 At the end of the process, you will "call" our native screen that will shown up as in the image below.  Remember in this example, it was created in a screen composed on a `UILabel` and in a `BeagleScreenViewController` variable type, where it remains the  server-driven component.
 
-![](/docs-beagle/server-driven-comp-ios.gif)
+<div align="center">
+{{< figure src="/server-driven-comp-ios.gif" width="50%" >}}
+</div>
 {{% /tab %}}
 
 {{% tab name="WEB" %}}
-If you haven't configured you library yet, [**check out on how to do it**.](../../../../get-started/usando-o-beagle/)
+If you haven't configured you library yet, [**check out on how to do it**.](/docs/get-started/using-beagle/web)
 
-You have to use **Remote View**](../../../features/customizacao/beagle-para-web/parametros-remote-view), you can find on Beagle's library, to create hybrid screen with some server-driven components on the web.
+You have to use [**Remote View**](/docs/resources/customization/beagle-for-web/remote-view-parameters), you can find on Beagle's library, to create hybrid screen with some server-driven components on the web.
 
 See below how each framework works:
 
@@ -309,7 +329,7 @@ const params: LoadParams = {
 const Main = () => {
     return (
         <>
-            <NativeComponent text="Sou um componente nativo!"></NativeComponent>
+            <NativeComponent text="I am a native component"></NativeComponent>
             <BeagleProvider value={BeagleService}>
                 <BeagleRemoteView {...params} />
             </BeagleProvider>
@@ -325,7 +345,7 @@ export default Main
 On Angular, you need to create a native component and add `beagle-remote-view` with the local template where you want your server-driven elements to be rendered.
 
 ```text
-<app-native-component text="Sou um componente nativo"></app-native-component>
+<app-native-component text="I am a native component"></app-native-component>
 <beagle-remote-view [loadParams]="loadParams"></beagle-remote-view>
 ```
 
@@ -342,6 +362,8 @@ Remember to run your Angular project using the comands:
 
 Your hybrid screen with native and server-drven elements is ready:
 
-![](/docs-beagle/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-ME4OQaHp-v_V78YeLiC%2F-ME7uUduHSFMpidOFn9E%2Fimage.png?alt=media&token=974fe2f0-0964-4d68-a16b-414e3fdd9d67)
+<div align="center">
+{{< figure src="/image.png" >}}
+</div>
 {{% /tab %}}
 {{< /tabs >}}

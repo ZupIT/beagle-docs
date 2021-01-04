@@ -22,24 +22,8 @@ description: >-
 Veja o exemplo de uma tela no qual foi declarado um contexto com id `numbersArray` com o valor de **\[0, 1, 2, 3, 4\],** esse contexto é usado na  operação de `removeIndex`no texto do component Text, onde ele remove o elemento de index **2**.
 
 {{< tabs id="T163" >}}
-{{% tab name="Kotlin" %}}
-```kotlin
-fun screen() = Screen(child = 
-    Container(
-        context = ContextData(id = "numbersArray", value = arrayOf(0,1,2,3,4)),
-        children = listOf(
-            Text(text = "Array was [0, 1, 2, 3, 4] and after removing index 2 now is: "),
-            Text(
-                expressionOf("@{removeIndex(numbersArray, 2)}")
-            ).applyStyle(Style(backgroundColor = "#00FF00"))
-        )
-    )
-)
-```
-{{% /tab %}}
-
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:arrayHandling.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -60,6 +44,22 @@ fun screen() = Screen(child =
     }
   }
 }
+-->
+{{% playground file="arrayHandling.json" language="pt" %}}
+{{% /tab %}}
+{{% tab name="Kotlin" %}}
+```kotlin
+fun screen() = Screen(child = 
+    Container(
+        context = ContextData(id = "numbersArray", value = arrayOf(0,1,2,3,4)),
+        children = listOf(
+            Text(text = "Array was [0, 1, 2, 3, 4] and after removing index 2 now is: "),
+            Text(
+                expressionOf("@{removeIndex(numbersArray, 2)}")
+            ).applyStyle(Style(backgroundColor = "#00FF00"))
+        )
+    )
+)
 ```
 {{% /tab %}}
 {{< /tabs >}}
