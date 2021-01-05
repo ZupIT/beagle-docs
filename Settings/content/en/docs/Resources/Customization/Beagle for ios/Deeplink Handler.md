@@ -23,9 +23,9 @@ public protocol DeepLinkScreenManaging {
 
 To use the `DeepLinkScreenManaging` protocol, follow the steps below:
 
-### **Step 1: Create a class that inherits from DeepLinkScreenManaging**
+### **Step 1: Create a class inherited from DeepLinkScreenManaging**
 
-The first step is to create a class that we'll call `DeeplinkScreenManager` that will conform to the `DeepLinkScreenManaging` protocol.
+You have to create a class we'll call `DeeplinkScreenManager` that will conform to the `DeepLinkScreenManaging` protocol.
 
 ```swift
 final class DeeplinkScreenManager: DeepLinkScreenManaging {
@@ -37,11 +37,11 @@ final class DeeplinkScreenManager: DeepLinkScreenManaging {
 
 ### **Step 2: Create DeeplinkScreen protocol**
 
-We now create a protocol called `DeeplinkScreen`, where each screen in where you will need to use deeplink for navigation will need conform to this protocol.
+Now, you have to create a protocol called DeeplinkScreen, where each screen is where you will need to use the deeplink for navigation conforming this protocol.
 The protocol has two main methods:
 
-- `init(path: String, data: [String: String]?)`: an simple initialization method
-- `func screenController() -> UIViewController`: the method in which we will return the UIViewController to which we will navigate
+- `init(path: String, data: [String: String]?)`: a simple initialization method
+- `func screenController() -> UIViewController`: the method which will return the UIViewController where you will navigate
 
 ```swift
 
