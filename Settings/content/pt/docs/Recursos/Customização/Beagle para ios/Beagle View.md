@@ -2,8 +2,8 @@
 title: Beagle View
 weight: 145
 description: >-
-  Nesta seção, você encontra informações do Beagle View e de como
-  usá-la.
+  Nesta seção, você encontra informações sobre a Beagle View e como
+  utiliza-la.
 ---
 
 ---
@@ -18,11 +18,11 @@ Beagle View é uma `UIView` que deve ser usada quando é necessário adicionar u
 
 **ScreenType:** Permite inicializar de três formas:
 
-* `Remote:` Recebe a URL da sua tela ou componente server-driven. Pode-se configurar um fallback opcional, que seria uma tela no modo declarativo caso houvesse algum erro com sua tela server-driven. A configuração de header também pode ser feita através do parâmetro additionalData.
+* `Remote:` Recebe a URL da sua tela ou componente server-driven. Você pode configurar um fallback opcional, que seria uma tela no modo declarativo caso houvesse algum erro com a sua tela server-driven. A configuração de header também pode ser feita por meio do parâmetro additionalData.
 
 * `Declarative:` Recebe uma tela de modo declarativo.
 
-* `DeclarativeText:` Recebe o json de uma tela.
+* `DeclarativeText:` Recebe o JSON de uma tela.
 
 ```swift
 public class BeagleView: UIView {
@@ -65,7 +65,7 @@ Class BeagleViewViewController: UIViewController {
 }
 ```
 
-Agora vamos criar um text nativo utilizando o `UILabel` e posicionar usando o `AutoLayout`.
+Agora, você irá criar um text nativo utilizando o `UILabel` e posicionar usando o `AutoLayout`.
 
 
 ```swift 
@@ -91,10 +91,10 @@ private func setupLabel() {
 }
 ```
 
-Agora colocamos dois exemplos de `BeagleView` um iniciando com o **declarative** e outro no modo **Remote**.
+Agora, veja colocamos dois exemplos de `BeagleView` um iniciando com o **declarative** e outro no modo **Remote**.
 
-* 1-> `BeagleView` declarative com texto do Beagle, utilizando o `AutoLayout` com o metodo **setupDeclarative**.
-* 2-> `BeagleView` remote passando uma URL, utilizando o `AutoLayout` com o metodo **setupRemote**.
+* 1-> `BeagleView` declarative com texto do Beagle, utilizando o `AutoLayout` com o método **setupDeclarative**.
+* 2-> `BeagleView` remote passando uma URL, utilizando o `AutoLayout` com o método **setupRemote**.
 
 
 ```swift 
@@ -199,4 +199,4 @@ class BeagleViewViewController: UIViewController {
     
 }
 ```
-Agora já pode usar a `BeagleView`.
+Pronto, você já pode usar a `BeagleView`.
