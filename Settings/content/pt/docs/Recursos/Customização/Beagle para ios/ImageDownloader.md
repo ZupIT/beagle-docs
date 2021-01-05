@@ -68,7 +68,7 @@ class CustomImageDownloader: ImageDownloader {
 
 ```
 
-### **Passo 2: Atribuindo as dependências**
+### **Passo 2: Atribuir as dependências**
 
 No AppDelegate ou na classe de configurações do ambiente do Beagle, atribua a instância de `CustomImageDownloader` ao atributo `imageDownloader` presente no BeagleDependencies:
 
