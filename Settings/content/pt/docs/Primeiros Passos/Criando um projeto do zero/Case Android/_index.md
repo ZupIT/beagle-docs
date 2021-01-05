@@ -173,7 +173,7 @@ Agora que seu projeto está criado, você deve fazer as configurações do **Bea
 
 ### Passo 4: Criar o AppBeagleConfig
 
-Em um próximo passos, você deve criar uma classe chamada `AppBeagleConfig`. Ela faz parte das configurações iniciais do Beagle e é nela que vamos registrar algumas configurações importantes. 
+Em um próximo passo, você deve criar uma classe chamada `AppBeagleConfig`. Ela faz parte das configurações iniciais do Beagle e é nela que vamos registrar algumas configurações importantes. 
 
 Ao criá-la, devemos garantir que ela esteja configurada da seguinte forma: 
 
