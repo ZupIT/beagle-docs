@@ -2,7 +2,7 @@
 title: Deeplink Handler
 weight: 151
 description: >-
-  In this section, you will find all of the information about Beagle's deeplink handler for iOS. 
+  In this section, you will find information about Beagle's deeplink handler for iOS. 
 ---
 
 ---
@@ -37,7 +37,8 @@ final class DeeplinkScreenManager: DeepLinkScreenManaging {
 
 ### **Step 2: Create DeeplinkScreen protocol**
 
-Now, you have to create a protocol called DeeplinkScreen, where each screen is where you will need to use the deeplink for navigation conforming this protocol.
+Now, you have to create a protocol called DeeplinkScreen, where each screen is where you will need to use the deeplink for navigation according to this protocol.
+
 The protocol has two main methods:
 
 - `init(path: String, data: [String: String]?)`: a simple initialization method
@@ -86,7 +87,7 @@ final class DeeplinkScreenManager: DeepLinkScreenManaging {
 
 ### **Step 4: Create a DeeplinkScreen**
 
-Create a screen that will inherit from the `DeeplinkScreen` protocol, in it you will have a method called **screenController** that it is used in the `DeeplinkScreenManager` class to connect the paths to the UIViewControllers that we will perform the deeplink navigations.
+Create a screen that will inherit from the `DeeplinkScreen` protocol, in it you will have a method called **screenController** that it is used in the `DeeplinkScreenManager` class to connect the paths to the UIViewControllers that it will perform the deeplink navigations.
 
 ```swift
 

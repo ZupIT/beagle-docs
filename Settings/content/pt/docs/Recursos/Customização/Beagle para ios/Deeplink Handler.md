@@ -23,7 +23,7 @@ public protocol DeepLinkScreenManaging {
 
 Para utilizar o protocolo `DeepLinkScreenManaging`, veja as seções abaixo: 
 
-### **Passo 1: Criar uma classe que herda de DeepLinkScreenManaging**
+### **Passo 1: Criar uma classe herdada do DeepLinkScreenManaging*
 
 O primeiro passo é criar uma classe chamada de `DeeplinkScreenManager` que irá conformar com o protocolo `DeepLinkScreenManaging`.
 
@@ -40,8 +40,8 @@ final class DeeplinkScreenManager: DeepLinkScreenManaging {
 Foi criado um protocolo chamado `DeeplinkScreen`, onde cada tela em que será necessário utilizar deeplink para navegação irá conformar com este protocolo.
 O protocolo possui dois métodos principais:
 
-- `init(path: String, data: [String: String]?)`: o método de inicialização quando necessário
-- `func screenController() -> UIViewController`: o método no qual vamos retornar a UIViewController para qual iremos navegar
+- `init(path: String, data: [String: String]?)`: o método de inicialização quando necessário;
+- `func screenController() -> UIViewController`: o método no qual vamos retornar a UIViewController para qual iremos navegar.
 
 ```swift
 
@@ -86,7 +86,7 @@ final class DeeplinkScreenManager: DeepLinkScreenManaging {
 
 ### **Passo 4: Crie uma tela do tipo DeeplinkScreen**
 
-Crie uma tela que irá herdar do protocolo `DeeplinkScreen`, nele você terá um método chamado **screenController* usado na classe `DeeplinkScreenManager` para conectar os paths aos UIViewControllers onde será realizado as navegações de deeplink.
+Crie uma tela que irá herdar do protocolo `DeeplinkScreen`, nele você terá um método chamado **screenController** usado na classe `DeeplinkScreenManager` para conectar os paths aos UIViewControllers onde será realizado as navegações de deeplink.
 
 ```swift
 
