@@ -155,7 +155,7 @@ Let this file open because we'll use it again in another moment.
 Now that your project is created, you must configure **Beagle** settings. To do this, follow the steps below:
 
 {{% alert color="warning" %}}
-  `Beagle` does not provide a **Network**, **Cache** and **Logger** configuration on its default componentes and those must be configured for Beagle to work as expected. You can create you own defaults configurations following the examples below:
+  `Beagle` does not provide a **Network**, **Cache** or **Logger** configuration on its default components, so those must be configured for Beagle to work as expected. You can create your own defaults configurations following the examples below:
 
   
 [**👉 Go to Network Client:**](/docs/resources/customization/beagle-for-android/network-client/)
