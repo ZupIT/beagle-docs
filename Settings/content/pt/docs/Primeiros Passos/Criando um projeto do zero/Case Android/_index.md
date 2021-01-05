@@ -303,7 +303,7 @@ Tudo o que você precisa agora é [**configurar um backend** ](/pt/docs/primeiro
 
 ### Passo 8: Exibir sua Tela Server-Driven
 
-É muito simples exibir uma tela Server-Driven. Agora que toda a configuração do Beagle está pronta, você precisa seguir estes passos: 
+É muito simples exibir uma tela server-driven. Agora que toda a configuração do Beagle está pronta, você precisa seguir estes passos: 
 
 * Abra o arquivo `MainActivity.kt` 
 * Declare o `intent` como listado abaixo. Ele vai definir o endereço que tem as informações da sua tela no backend que você configurou. 
