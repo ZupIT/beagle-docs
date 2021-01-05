@@ -169,7 +169,7 @@ Now that your project is created, you must configure **Beagle** settings. To do 
 
 ### Step 4: Create an AppBeagleConfig
 
-For the next steps, you should create a `AppBeagleConfig` class, that is part of [**Beagle's installation**](/docs/get-started/installing-beagle/android) and it's responsible to register some important configurations. 
+For the next steps, you should create an `AppBeagleConfig` class, that is part of [**Beagle's installation**](/docs/get-started/installing-beagle/android) and it's responsible to register some important configurations. 
 
 When you create the call, we should guarantee that it's configured in this way:
 
