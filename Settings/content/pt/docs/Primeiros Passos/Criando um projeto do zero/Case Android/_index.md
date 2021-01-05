@@ -198,7 +198,7 @@ Embora você possa nomeá-lo como preferir, sugerimos que para este tutorial voc
 * O **`baseUrl`** retorna a URL base do seu ambiente.
 * O **`environment`** retorna o _`current build state`_ da sua aplicação.
 * O **`isLoggingEnabled`** retorna a visualização de log da aplicação.
-* O **`cache`** configuração de gerenciamento de cache.
+* O **`cache`** retorna a configuração de gerenciamento de cache.
 
 
 ```kotlin
