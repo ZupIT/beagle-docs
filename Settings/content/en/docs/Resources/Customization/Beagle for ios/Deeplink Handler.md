@@ -53,9 +53,9 @@ protocol DeeplinkScreen {
 
 ### **Step 3: Implement the DeeplinkScreenManager class**
 
-Below we see the complete example of the class that we created and that inherits from `DeepLinkScreenManaging`. In it, a dictionary was created with `String` as a key and a value of `DeeplinkScreen.Type`. A subscript method was also created to facilitate the access to the dictionary elements.
+You will see below the complete example of the class created and that inherits from `DeepLinkScreenManaging`. In it, a dictionary was created with `String` as a key and a value of `DeeplinkScreen.Type`. A subscript method was also created to facilitate the access to the dictionary elements.
 
-In the `getNativeScreen` method, we check if there is a screen with the given path and if so, we return the `UIViewController` related to it. Otherwise, we throw an NSError.
+In the `getNativeScreen` method, you have to check if there is a screen with the given path and if so, return the `UIViewController` related to it. Otherwise, it will throw a NSError.
 
 ```swift
 
@@ -84,9 +84,9 @@ final class DeeplinkScreenManager: DeepLinkScreenManaging {
 
 ```
 
-### **Step 4: Creating a DeeplinkScreen**
+### **Step 4: Create a DeeplinkScreen**
 
-Create a screen that will inherit from the `DeeplinkScreen` protocol, in it we will have a method called **screenController** that we use in the `DeeplinkScreenManager` class to connect the paths to the UIViewControllers that we will perform the deeplink navigations.
+Create a screen that will inherit from the `DeeplinkScreen` protocol, in it you will have a method called **screenController** that it is used in the `DeeplinkScreenManager` class to connect the paths to the UIViewControllers that we will perform the deeplink navigations.
 
 ```swift
 

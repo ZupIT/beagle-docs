@@ -25,7 +25,7 @@ Para utilizar o protocolo `DeepLinkScreenManaging`, veja as seções abaixo:
 
 ### **Passo 1: Criar uma classe que herda de DeepLinkScreenManaging**
 
-O primeiro passo é criar uma classe que iremos chamar de `DeeplinkScreenManager` que irá conformar com o protocolo `DeepLinkScreenManaging`.
+O primeiro passo é criar uma classe chamada de `DeeplinkScreenManager` que irá conformar com o protocolo `DeepLinkScreenManaging`.
 
 ```swift
 final class DeeplinkScreenManager: DeepLinkScreenManaging {
