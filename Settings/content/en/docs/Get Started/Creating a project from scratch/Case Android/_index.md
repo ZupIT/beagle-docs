@@ -304,7 +304,7 @@ All you have to do now is [**set up a backend** ](/docs/get-started/creating-a-p
 
 ### Step 8: Display your Server-Driven Screen
 
-It's very simple to show a Server-Driven screen. Now that all Beagle's configuration is done, you just have to follow these steps: 
+It's very simple to show a server-driven screen. Now that all Beagle's configuration is done, you just have to follow these steps: 
 
 * Open the file `MainActivity.kt` 
 * State the `intent` as listed below. It will define the address of screen's informations on the backend you configured. 
