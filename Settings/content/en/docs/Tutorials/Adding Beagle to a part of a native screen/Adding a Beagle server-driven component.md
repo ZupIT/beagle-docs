@@ -217,8 +217,8 @@ The structure of **loadView** is:
 
 | **Attribute** | **Type** | Required | **Definition** |
 | :--- | :--- | :---: | :--- |
-| activity | [**AppCompatActivity**](https://developer.android.com/reference/androidx/appcompat/app/AppCompatActivity/)/[**Fragment**](https://developer.android.com/reference/androidx/fragment/app/Fragment/) | ✓ | Defines the activity or fragment that we are using loadview |
-| screenRequest | [**ScreenRequest**](/docs/api/reference/br.com.zup.beagle.android.view/-screen-request/-screen-request/) | ✓ | Sets the parameters for calling the remote screen |
+| activity | [**AppCompatActivity**](https://developer.android.com/reference/androidx/appcompat/app/AppCompatActivity/)/[**Fragment**](https://developer.android.com/reference/androidx/fragment/app/Fragment/) | ✓ | Defines the activity or fragment that it is using a loadview |
+| screenRequest | [**ScreenRequest**](/docs/api/reference/br.com.zup.beagle.android.view/-screen-request/-screen-request/) | ✓ | Sets parameters when calling the remote screen |
 | listener | **OnServerStateChanged = (serverState: [ServerDrivenState](/docs/api/reference/br.com.zup.beagle.android.view/-server-driven-state/)) -> Unit** |  | Defines the listener that configures callbacks for screen states |
 
 <br />
