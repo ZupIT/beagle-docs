@@ -78,7 +78,7 @@ Para registrar sua operação customizada, você deve fazer três passos:
 
 1. Crie uma classe e coloque o nome que desejar.
 2. Coloque anotação `@RegisterOperation(name = "name-your-operation")` sobre o nome da classe.
-2. Implementar a interface Operation e sobreescrever o método execute.
+2. Implemente a interface Operation.
 
 Segue abaixo um exemplo de operação customizada, no caso criamos uma operação de validação de cpf.
 
