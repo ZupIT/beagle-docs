@@ -75,7 +75,7 @@ Os alertas são usados para destacar alguma informação importante ao seguir al
 
 ### **Figuras e Imagens**
 
-As imagens podem ser inseridas usando sintaxe de markdown ```![imageName](imageUrl)```. Entretanto, usar markdown te limita em configurações de renderização de imagem, como por exemplo, a dimensão de tamanho da imagem (tamanho x largura).
+As imagens podem ser inseridas usando a sintaxe de markdown ```![imageName](imageUrl)```. Entretanto, usar essa sintaxe limita algumas configurações de renderização, como por exemplo, a dimensão de tamanho da imagem (tamanho x largura).
 
 Para renderizar imagens, gifs e demais tipos de figuras, podemos usar uma shortcode chamada `figure`.
 
