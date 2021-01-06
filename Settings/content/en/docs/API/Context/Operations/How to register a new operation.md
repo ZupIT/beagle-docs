@@ -60,7 +60,7 @@ interface Operation {
     fun execute(vararg params: OperationType?): OperationType
 }
 ```
-In the parameter of the execute method we have an attribute of type `OperationType`, this attribute returns the type of operation.
+In the parameter of the execute method, we have an attribute of `OperationType` type, which is the attribute that returns the operation type.
 
 Below is the OperationType class with the return types that beagle supports.
 
