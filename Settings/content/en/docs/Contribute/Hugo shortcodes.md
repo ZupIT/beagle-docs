@@ -77,7 +77,7 @@ Alerts are used to highlight important information when following a configuratio
 
 Images can be inserted using the markdown syntax ```! [ImageName] (imageUrl)```. However, using markdown may limit your image rendering settings, such as the image dimension (size x width).
 
-To render images, gifs and other types of figures, we can use the following shortcode:
+To render images, gifs and other types of figures use the following shortcode:
 
 - Sintax example:
 
