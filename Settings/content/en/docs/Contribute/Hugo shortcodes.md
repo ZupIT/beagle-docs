@@ -73,6 +73,22 @@ Alerts are used to highlight important information when following a configuratio
 - danger - color - red
 {{% /alert %}}
 
+### **Images and Figures**
+
+Images can be inserted using markdown syntax ```! [ImageName] (imageUrl)```. However, using markdown limits you in image rendering settings, such as the image dimension (size x width).
+
+To render images, gifs and other types of figures, we can use the following shortcode:
+
+- Sintax example:
+
+```go-text-template
+{{</* figure src="https://media.glassdoor.com/sqll/2482761/zup-innovation-squarelogo-1583862820688.png" width="250" height="250 */>}}
+```
+
+- It will be rendered as: 
+
+{{< figure src="https://media.glassdoor.com/sqll/2482761/zup-innovation-squarelogo-1583862820688.png" width="250" height="250" >}}
+
 ### **Videos**
 
 You can embed youtube videos directly into the documentation. Ideal to complement that tutorial content or dissemination. To do this, use the video ID located in your url, eg:

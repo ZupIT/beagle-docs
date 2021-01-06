@@ -73,6 +73,22 @@ Os alertas são usados para destacar alguma informação importante ao seguir al
 - danger - color - red
 {{% /alert %}}
 
+### **Figuras e Imagens**
+
+As imagens podem ser inseridas usando sintaxe de markdown ```![imageName](imageUrl)```. Entretanto, usar markdown te limita em configurações de renderização de imagem, como por exemplo, a dimensão de tamanho da imagem (tamanho x largura).
+
+Para renderizar imagens, gifs e demais tipos de figuras, podemos usar uma shortcode chamada `figure`.
+
+- Exemplo de Sintaxe:
+
+```go-text-template
+{{</* figure src="https://media.glassdoor.com/sqll/2482761/zup-innovation-squarelogo-1583862820688.png" width="250" height="250 */>}}
+```
+
+- Sera renderizado como: 
+
+{{< figure src="https://media.glassdoor.com/sqll/2482761/zup-innovation-squarelogo-1583862820688.png" width="250" height="250" >}}
+
 ### **Vídeos**
 
 Você pode adicionar vídeos do youtube diretamente na documentação. Essa opção é ideal para complementar aquele conteúdo de tutorial ou divulgação. Para isso, use o ID do vídeo localizado em sua URL, ex:
