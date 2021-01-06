@@ -74,7 +74,7 @@ sealed class OperationType(open val value: Any?) {
 }
 ```
 
-Para registrar sua operação customizada, você deve fazer três passos:
+Para registrar sua operação customizada, você deve seguir três passos:
 
 1. Crie uma classe e coloque o nome que desejar.
 2. Coloque anotação `@RegisterOperation(name = "name-your-operation")` sobre o nome da classe.
