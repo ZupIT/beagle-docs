@@ -89,6 +89,8 @@ To render images, gifs and other types of figures, we can use the following shor
 
 {{< figure src="https://media.glassdoor.com/sqll/2482761/zup-innovation-squarelogo-1583862820688.png" width="250" height="250" >}}
 
+To know all the parameters that the figure can receive, [**access here**](https://gohugo.io/content-management/shortcodes#figure)
+
 ### **Videos**
 
 You can embed youtube videos directly into the documentation. Ideal to complement that tutorial content or dissemination. To do this, use the video ID located in your url, eg:

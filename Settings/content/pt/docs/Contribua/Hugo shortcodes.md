@@ -89,6 +89,8 @@ Para renderizar imagens, gifs e demais tipos de figuras, podemos usar uma shortc
 
 {{< figure src="https://media.glassdoor.com/sqll/2482761/zup-innovation-squarelogo-1583862820688.png" width="250" height="250" >}}
 
+Para saber todos os parametros que o figure pode receber, [**acesse aqui**](https://gohugo.io/content-management/shortcodes#figure)
+
 ### **Vídeos**
 
 Você pode adicionar vídeos do youtube diretamente na documentação. Essa opção é ideal para complementar aquele conteúdo de tutorial ou divulgação. Para isso, use o ID do vídeo localizado em sua URL, ex:
