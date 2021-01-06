@@ -62,7 +62,7 @@ interface Operation {
 ```
 In the parameter of the execute method, we have an attribute of `OperationType` type, which is the attribute that returns the operation type.
 
-Below is the OperationType class with the return types that beagle supports.
+On the following example, you can check out the OperationType class with the return type that Beagle supports.
 
 ```java 
 sealed class OperationType(open val value: Any?) {
