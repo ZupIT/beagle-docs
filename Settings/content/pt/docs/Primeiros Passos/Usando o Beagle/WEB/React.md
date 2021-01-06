@@ -14,7 +14,12 @@ Depois que você terminar a instalação, é preciso **configurar o Beagle para 
 
 ### Passo 1: Criação do JSON de definição do layout
 
-Para uma melhor experiencia o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**](/pt/docs/primeiros-passos/instalando-o-beagle/backend/), neste exemplo usaremos um JSON remoto. Copie o conteudo abaixo e ultilizando um serviço de hospedagem JSON, crie um JSON remoto.
+Para uma melhor experiencia o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**](/pt/docs/primeiros-passos/instalando-o-beagle/backend/), neste exemplo usaremos o JSON que está disponibilizado na URL http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/welcome:
+
+{{% alert color="info" %}}
+JSON utilizado como exemplo . 
+{{% /alert %}}
+
 
 ```text
 {
@@ -60,7 +65,7 @@ Abra agora o arquivo criado`beagle-service.ts` e insira o código abaixo:
 import { createBeagleUIService } from '@zup-it/beagle-react'
 
 export default createBeagleUIService({
-  baseUrl: "https://api.jsonbin.io/b",
+  baseUrl: "http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/",
   components: {}
 })
 ```
@@ -80,7 +85,7 @@ Neste ponto da configuração podemos definir a baseUrl do servidor externo do B
 
 ### Passo 3: Usando o BeagleRemoteView
 
-Agora você precisa especificar, dentro da aplicação, o local em que os componentes serão renderizados. Para isso, a biblioteca do Beagle fornece o **BeagleRemoteView** e o **BeagleProvider**. Abra o arquivo do componente que você deseja renderizar o layout e altere para ficar como o exemplo a seguir, no route adicione o caminho relativo ao JSON remoto que você criou e utilize: /5fe2541047ed0861b36aa589.
+Agora você precisa especificar, dentro da aplicação, o local em que os componentes serão renderizados. Para isso, a biblioteca do Beagle fornece o **BeagleRemoteView** e o **BeagleProvider**. Abra o arquivo do componente que você deseja renderizar o layout e altere para ficar como o exemplo a seguir, no route adicione o caminho relativo ao JSON remoto: /welcome.
 
 {{% alert color="info" %}}
 No exemplo alteramos a App.ts
@@ -95,7 +100,7 @@ import BeagleService from './beagle/beagle-service';
 function App() {
   return (
     <BeagleProvider value={BeagleService}>
-      <BeagleRemoteView route={'/5fe2541047ed0861b36aa589'} />
+      <BeagleRemoteView route={'/welcome'} />
     </BeagleProvider>
   );
 }
@@ -107,7 +112,7 @@ export default App;
 2. `<BeagleRemoteView>`: Responsável por renderizar o layout definido pelo JSON especificado pela propriedade `route`.
 
 {{% alert color="info" %}}
-Note aqui que adicionamos **' /5fe2541047ed0861b36aa589 '** pois esse valor será associado ao `baseUrl` definido no arquivo `beagle-service.ts`
+Note aqui que adicionamos **' /welcome '** pois esse valor será associado ao `baseUrl` definido no arquivo `beagle-service.ts`
 {{% /alert %}}
 
 {{% alert color="warning" %}}
