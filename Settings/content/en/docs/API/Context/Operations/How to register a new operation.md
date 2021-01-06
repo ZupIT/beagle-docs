@@ -79,7 +79,7 @@ To register your custom operation, you must follow three steps:
 
 1. Create a class and enter the name you want.
 2. Place an annotation `@RegisterOperation (name =" name-your-operation ")` over the class name.
-2. Implement the Operation interface.
+3. Implement the Operation interface.
 
 Below is an example of a custom operation, in which we created a cpf validation operation.
 
