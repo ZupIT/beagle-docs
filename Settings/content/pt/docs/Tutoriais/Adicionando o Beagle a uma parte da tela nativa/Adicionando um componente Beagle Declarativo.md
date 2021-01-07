@@ -94,17 +94,14 @@ class NativeViewController: UIViewController {
         view.backgroundColor = .white
         
         view.addSubview(firstLabel)
-        firstLabel.anchorCenterXToSuperview()
-        firstLabel.anchor(
-            top: topLayoutGuide.bottomAnchor,
-            topConstant: 50
-        )
+        firstLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        firstLabel.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor, constant: 50).isActive = true
         
         let layoutMargins = view.layoutMarginsGuide
         
         view.addSubview(secondLabel)
-        secondLabel.anchorCenterXToSuperview()
-        secondLabel.anchor(top: beagleView.bottomAnchor, topConstant: 30)
+        secondLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        secondLabel.topAnchor.constraint(equalTo: beagleView.bottomAnchor, constant: 30).isActive = true
         secondLabel.bottomAnchor.constraint(lessThanOrEqualTo: layoutMargins.bottomAnchor).isActive = true
     }
 
@@ -220,11 +217,8 @@ private func setupView() {
         view.backgroundColor = .white
         
         view.addSubview(firstLabel)
-        firstLabel.anchorCenterXToSuperview()
-        firstLabel.anchor(
-            top: topLayoutGuide.bottomAnchor,
-            topConstant: 50
-        )
+         irstLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        firstLabel.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor, constant: 50).isActive = true
         
         let layoutMargins = view.layoutMarginsGuide
         
@@ -236,8 +230,8 @@ private func setupView() {
         beagleView.centerXAnchor.constraint(equalTo: firstLabel.centerXAnchor).isActive = true
                 
         view.addSubview(secondLabel)
-        secondLabel.anchorCenterXToSuperview()
-        secondLabel.anchor(top: beagleView.bottomAnchor, topConstant: 30)
+        secondLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        secondLabel.topAnchor.constraint(equalTo: beagleView.bottomAnchor, constant: 30).isActive = true
         secondLabel.bottomAnchor.constraint(lessThanOrEqualTo: layoutMargins.bottomAnchor).isActive = true
     }
 ```
