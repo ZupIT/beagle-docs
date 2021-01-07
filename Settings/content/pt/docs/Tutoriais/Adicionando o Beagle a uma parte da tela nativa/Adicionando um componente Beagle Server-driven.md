@@ -243,13 +243,12 @@ Você deve utilizar uma `BeagleView` para "colocar" esse componente do BFF e, as
 {{% alert color="success" %}}
 # Beagle View
 
-Para entender mais sobre o que é a `BeagleView`, como funciona e como usar.
-
-[**Click aqui para saber mais!**](/pt/docs/recursos/customização/beagle-para-ios/beagle-view/)
+Veja mais sobre o que é, como funciona e como usar a `BeagleView` 
+[**aqui!**](/pt/docs/recursos/customização/beagle-para-ios/beagle-view/)
 {{% /alert %}}
 
 1. Crie um **UIViewController**. 
-2. Adicione o componente nativo, no nosso caso será um texto utilizando uma `UILabel`.
+2. Adicione o componente nativo, nesse caso será um texto utilizando uma `UILabel`.
 3. Crie uma **BeagleView** passando a URL pretendida.
 4. Por último, é necessário adicionar algumas constraints para a `UILabel` e para `BeagleView` como no código abaixo:
 
@@ -290,7 +289,7 @@ class NativeViewController: UIViewController {
     }
 ```
 
-Ao final do processo, você poderá "chamar" pela nossa tela nativa que irá aparecer a imagem abaixo. Lembrando que, para esse exemplo, foi criada uma tela  composta de uma `UILabel` e uma `BeagleView` , onde fica o componente server-driven.
+Ao final do processo, você poderá "chamar" a tela nativa e a imagem abaixo irá aparecer. Lembrando que, para esse exemplo, foram criadas: uma tela composta de uma `UILabel` e uma `BeagleView` , onde fica o componente server-driven.
 
 <div align="center">
 {{< figure src="/server-driven-comp-ios.gif" width="50%" >}}
