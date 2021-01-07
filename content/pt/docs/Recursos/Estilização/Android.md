@@ -12,9 +12,9 @@ description: >-
 
 Dentro da biblioteca do Beagle, existe a classe `DesignSystem` que pode ser usada para personalizar os componentes utilizados na sua aplicação.
 
-Esta classe serve para mapear os recursos locais de um aplicativo para podermos referenciá-los no [**BFF** ](/pt/docs/principais-conceitos#backend-for-frontend)ao construir uma tela [**Server-Driven**](/pt/docs/principais-conceitos#server-driven-ui).
+Esta classe serve para mapear os recursos locais de um aplicativo para podermos referenciá-los no [**BFF** ](/pt/docs/key-concepts#backend-for-frontend)ao construir uma tela [**Server-Driven**](/pt/docs/key-concepts#server-driven-ui).
 
-Além de imagens, o [**Design System**](/pt/docs/principais-conceitos#design-system) do Beagle pode personalizar: 
+Além de imagens, o [**Design System**](/pt/docs/key-concepts#design-system) do Beagle pode personalizar: 
 
 * A aparência dos textos;
 * O estilo dos componentes de input;

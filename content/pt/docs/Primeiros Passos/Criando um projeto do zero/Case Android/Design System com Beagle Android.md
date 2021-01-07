@@ -101,7 +101,7 @@ Demonstraremos mais adiante como esses componentes e seus estilos são listados 
 
 ### **Passo 2: Customizar o componente**
 
-Este momento é o ponto em que o ocorre o [**BFF**](/pt/docs/principais-conceitos#backend-for-frontend), quando frontend se conecta ao backend.   
+Este momento é o ponto em que o ocorre o [**BFF**](/pt/docs/key-concepts#backend-for-frontend), quando frontend se conecta ao backend.   
   
 Para isso, você terá de **configurar o frontend do Android e o backend do Intellij**. Caso não o tenha pronto, é só baixar [**o exemplo de configuração do backend**](https://github.com/ZupIT/beagle-examples) e rodá-lo.   
   

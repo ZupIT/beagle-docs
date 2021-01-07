@@ -20,7 +20,7 @@ Além disso, esse **Validator** é listado no componente que recebe dados em um 
 
 ## Contexto do validador
 
-No Beagle,  é possível usar o componente **Form** para capturar dados informados pelo usuário, validá-los e enviá-los ao [**BFF**](/pt/docs/principais-conceitos#backend-for-frontend). 
+No Beagle,  é possível usar o componente **Form** para capturar dados informados pelo usuário, validá-los e enviá-los ao [**BFF**](/pt/docs/key-concepts#backend-for-frontend). 
 
 Essa validação pode tanto ocorrer quando o usuário ativa o FormSubmit e/ou quando o usuário notifica que o estado de seu `InputWidget(FormInput)` mudou, como por exemplo, quando ditamos um texto ou quando o campo perde o foco. 
 

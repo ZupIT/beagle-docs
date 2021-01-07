@@ -20,7 +20,7 @@ Atualmente, existem dois tipos de abordagens para a renderização de telas com 
 
 #### Renderização Remota 
 
-> Principal abordagem usada no Beagle por ser fundamentada no conceito de [**server-driven UI**](/pt/docs/principais-conceitos#server-driven-ui). Ela permite que você construa layouts dinamicamente, consumindo as informações fornecidas por um [**BFF**](/pt/docs/principais-conceitos#backend-for-frontend), por meio de uma URL remota.
+> Principal abordagem usada no Beagle por ser fundamentada no conceito de [**server-driven UI**](/pt/docs/key-concepts#server-driven-ui). Ela permite que você construa layouts dinamicamente, consumindo as informações fornecidas por um [**BFF**](/pt/docs/key-concepts#backend-for-frontend), por meio de uma URL remota.
 
 #### Renderização Declarativa 
 

@@ -21,7 +21,7 @@ Para este tutorial, iremos usar algumas [**ações**](/pt/docs/api/actions) e ta
 * [**Binding**](/pt/docs/api/context#binding)
 * [**Expressões**](/pt/docs/api/context#binding)
 
-Apesar do conceito [**Server-Driven**](/pt/docs/principais-conceitos#server-driven-ui) trabalhar componentes separadamente, é possível realizar a transmissão das informações para uma API e é o que vamos demonstrar abaixo. 
+Apesar do conceito [**Server-Driven**](/pt/docs/key-concepts#server-driven-ui) trabalhar componentes separadamente, é possível realizar a transmissão das informações para uma API e é o que vamos demonstrar abaixo. 
 
 ## Exemplo de Uso
 

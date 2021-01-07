@@ -53,7 +53,7 @@ No entanto, esse elemento possui outros atributos, que podem ser utilizados na t
 {{% /tab %}}
 
 {{% tab name="iOS" %}}
-Para renderizar uma tela [**server-driven**](/pt/docs/principais-conceitos#server-driven-ui), basta criar uma instância **`BeagleScreenViewController`** do tipo **`remote`** e fazer a inicialização com a URL do seu [**BFF**](/pt/docs/principais-conceitos#backend-for-frontend), como no exemplo abaixo:
+Para renderizar uma tela [**server-driven**](/pt/docs/key-concepts#server-driven-ui), basta criar uma instância **`BeagleScreenViewController`** do tipo **`remote`** e fazer a inicialização com a URL do seu [**BFF**](/pt/docs/key-concepts#backend-for-frontend), como no exemplo abaixo:
 
 ```kotlin
 let beagleViewController = Beagle.screen(

@@ -19,7 +19,7 @@ No exemplo abaixo, vamos exibir um botão server-driven em uma tela nativa. O re
 
 Para que essa configuração funcione corretamente, você precisa de:
 
-* Um [**BFF**](/pt/docs/principais-conceitos#backend-for-frontend) configurado com o Beagle. Caso não o tenha, veja como configurar nesse [**tutorial**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-backend).
+* Um [**BFF**](/pt/docs/key-concepts#backend-for-frontend) configurado com o Beagle. Caso não o tenha, veja como configurar nesse [**tutorial**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-backend).
 * Um frontend configurado com o Beagle para Android ou iOS. Caso não o tenha, siga um dos tutoriais de acordo com sistema operacional:
   * [**Android**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-android/)
   * [**iOS**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-ios/)
