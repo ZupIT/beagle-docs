@@ -43,7 +43,7 @@ In addition, the function can return a **RequestToken** so that the request can 
 
 In Beagle iOS, we have a class called **ImageDownloaderDefault** that performs the requests for images according to your network layer.
 
-In its `fetchImage` method this class basically calls **RequestDispatcher** with type `.fetchImage` and maps the result of that request, so it depends on the implementation of your network layer. You can see how to configure a network layer in [**here**](/docs/resources/customization/beagle-for-ios/network-layer).
+In its `fetchImage` method, this class calls **RequestDispatcher** with type `.fetchImage` and maps the result of that request according to the implementation of your network layer. You can see how to configure a network layer in [**here**](/docs/resources/customization/beagle-for-ios/network-layer).
 
 ## **Replacing the default implementation**
 
