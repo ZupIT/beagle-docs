@@ -10,9 +10,9 @@ description: 'This section shows information on how to create the Beagle Screen 
 
 The `BeagleScreenViewController` is a class that **controls** how views will be presented at the application. It works exactly as a `UIViewController`.
 
-## how to use it?
+## How to use it?
 
-Create an object with a BeagleScreenViewController type listing a screenType on its initialization, that could be done in three ways:
+Create an object with a BeagleScreenViewController type listing a screenType on its initialization, there are three ways this can be done:
 
 * **1. Remote:** Receives an URL with a server-driven component. If there was an error when loading your server-driven screen, an optional fallback view can be configured, which would be a screen build on the frontend.
 You can also configure a header through `additionalData` parameter.
