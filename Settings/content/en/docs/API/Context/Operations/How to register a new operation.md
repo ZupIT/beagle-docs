@@ -80,7 +80,7 @@ To register a custom operation you must:
 2. Place an annotation `@RegisterOperation (name =" name-your-operation ")` over the class name.
 3. Implement the Operation interface.
 
-On the following example you can see a custom operation, in which we created a CPF validation operation.
+The following example shows a custom operation that validates a CPF register number 
 
 ```java
 @RegisterOperation(name = "isValidCpf")
