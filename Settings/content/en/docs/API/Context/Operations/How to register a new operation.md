@@ -74,7 +74,7 @@ sealed class OperationType(open val value: Any?) {
 }
 ```
 
-To register your custom operation, you must follow three steps:
+To register a custom operation you must: 
 
 1. Create a class and enter the name you want.
 2. Place an annotation `@RegisterOperation (name =" name-your-operation ")` over the class name.
