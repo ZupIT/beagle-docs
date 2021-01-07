@@ -12,12 +12,16 @@ A biblioteca do Beagle fornece um componente auxiliar para renderizar as telas s
 
 {{< tabs id="T81" >}}
 {{% tab name="Angular" %}}
+  Abra o arquivo do componente que você deseja renderizar o 
+layout e adicione o beagle-remote-view, veja o exemplo a seguir
 ```text
 <beagle-remote-view [loadParams]="loadParams"></beagle-remote-view>
 ```
 {{% /tab %}}
 
 {{% tab name="React" %}}
+ Abra o arquivo do componente que você deseja renderizar o 
+layout e adicione o BeagleRemoteView, veja o exemplo a seguir
 ```text
 <BeagleRemoteView {...loadParams} />
 ```

@@ -14,7 +14,12 @@ Depois que você terminar a instalação, é preciso **configurar o Beagle para 
 
 ### Passo 1: Criação do JSON de definição do layout
 
-Dentro do seu projeto React na pasta `public`,  crie um arquivo chamado `payload.json` com o código abaixo. Este arquivo mapeará os componentes que serão renderizados pelo Beagle. Geralmente, ele seria retornado por um servidor externo, mas neste exemplo criaremos localmente no projeto.
+Para uma melhor experiencia o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**](/pt/docs/primeiros-passos/instalando-o-beagle/backend/), neste exemplo usaremos o JSON que está disponibilizado na URL http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/welcome:
+
+{{% alert color="info" %}}
+JSON utilizado como exemplo . 
+{{% /alert %}}
+
 
 ```text
 {
@@ -48,7 +53,7 @@ O código acima cria um JSON com dois desses componentes: container e text.
 
 ### Passo 2: Configuração do Beagle Service
 
-Depois de adicionar o arquivo `payload.json` no seu projeto, crie uma pasta no caminho `/src`com nome **beagle**. Dentro dela, adicione um novo arquivo com o nome `beagle-service.ts`. 
+Depois de criado o seu JSON, crie uma pasta no caminho `/src`com nome **beagle**. Dentro dela, adicione um novo arquivo com o nome `beagle-service.ts`. 
 
 Feito isso, a sua estrutura deve estar parecida com a imagem a seguir:
 
@@ -60,12 +65,19 @@ Abra agora o arquivo criado`beagle-service.ts` e insira o código abaixo:
 import { createBeagleUIService } from '@zup-it/beagle-react'
 
 export default createBeagleUIService({
-  baseUrl: "",
+  baseUrl: "http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/",
   components: {}
 })
 ```
+{{% alert color="info" %}}
+**baseUrl:** URL base que fornece as visualizações (JSON) para o Beagle. 
+{{% /alert %}}
 
-Neste ponto da configuração podemos definir a baseUrl do servidor externo do Beagle. Para este exemplo, deixaremos esta propriedade sem valor pois usaremos um arquivo local \(`payload.json`\).
+{{% alert color="info" %}}
+**components:** São o mapa de componentes a serem usados ​​ao renderizar uma view.
+{{% /alert %}}
+
+Neste ponto da configuração podemos definir a baseUrl do servidor externo do Beagle.
 
 {{% alert color="warning" %}}
 É importante ressaltar que, para este exemplo, estamos usando o[ **typescript**](https://www.typescriptlang.org/) junto ao projeto. Caso você não tenha na sua máquina, será preciso instalar.
@@ -73,7 +85,11 @@ Neste ponto da configuração podemos definir a baseUrl do servidor externo do B
 
 ### Passo 3: Usando o BeagleRemoteView
 
-Agora você precisa especificar, dentro da aplicação, o local em que os componentes serão renderizados. Para isso, a biblioteca do Beagle fornece o **BeagleRemoteView** e o **BeagleProvider**. Abra o arquivo do componente que você deseja renderizar o layout e altere para ficar como o exemplo a seguir:
+Agora você precisa especificar, dentro da aplicação, o local em que os componentes serão renderizados. Para isso, a biblioteca do Beagle fornece o **BeagleRemoteView** e o **BeagleProvider**. Abra o arquivo do componente que você deseja renderizar o layout e altere para ficar como o exemplo a seguir, no route adicione o caminho relativo ao JSON remoto: /welcome.
+
+{{% alert color="info" %}}
+No exemplo alteramos a App.ts
+{{% /alert %}}
 
 ```text
 import React from 'react';
@@ -84,7 +100,7 @@ import BeagleService from './beagle/beagle-service';
 function App() {
   return (
     <BeagleProvider value={BeagleService}>
-      <BeagleRemoteView route={'/payload.json'} />
+      <BeagleRemoteView route={'/welcome'} />
     </BeagleProvider>
   );
 }
@@ -96,7 +112,7 @@ export default App;
 2. `<BeagleRemoteView>`: Responsável por renderizar o layout definido pelo JSON especificado pela propriedade `route`.
 
 {{% alert color="info" %}}
-Note aqui que adicionamos **' / '** pois esse valor será associado ao `baseUrl` definido no arquivo `beagle-service.ts`
+Note aqui que adicionamos **' /welcome '** pois esse valor será associado ao `baseUrl` definido no arquivo `beagle-service.ts`
 {{% /alert %}}
 
 {{% alert color="warning" %}}

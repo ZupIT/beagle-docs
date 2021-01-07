@@ -102,7 +102,7 @@ No arquivo html do seu componente, adicione o `remote view`.
 <beagle-remote-view [loadParams]="loadParams"></beagle-remote-view>
 ```
 
-Feito isso, acesse o controller do componente e crie o `loadParams` que é esperado pelo `remote view.` 
+Feito isso, acesse o controller do componente em que você adicionou o remote view e crie o `loadParams` que é esperado pelo `remote view.` 
 
 ```text
 loadParams: LoadParams;
