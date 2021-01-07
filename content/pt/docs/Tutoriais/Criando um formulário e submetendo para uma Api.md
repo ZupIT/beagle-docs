@@ -8,12 +8,12 @@ description: 'Nesta seção, você confere como criar um formulário e submetê-
 
 ## Introdução
 
-Para este tutorial, iremos usar algumas [**ações**](/pt/docs/api/ações) e também APIs: 
+Para este tutorial, iremos usar algumas [**ações**](/pt/docs/api/actions) e também APIs: 
 
 **Actions**
 
-* [**SetContext**](/pt/docs/api/ações/setcontext)
-* [**SendRequest**](/pt/docs/api/ações/sendrequest)
+* [**SetContext**](/pt/docs/api/actions/setcontext)
+* [**SendRequest**](/pt/docs/api/actions/sendrequest)
 
 **APIs**
 
@@ -25,7 +25,7 @@ Apesar do conceito [**Server-Driven**](/pt/docs/principais-conceitos#server-driv
 
 ## Exemplo de Uso
 
-Neste exemplo, iremos utilizar os componentes [**TextInput**](/pt/docs/api/componentes/ui/textinput) e [**Button**](/pt/docs/api/componentes/ui/button) para simularmos uma tela de Login.
+Neste exemplo, iremos utilizar os componentes [**TextInput**](/pt/docs/api/components/ui/textinput) e [**Button**](/pt/docs/api/components/ui/button) para simularmos uma tela de Login.
 
 ### Passo 1: Criar uma tela de Login
 
@@ -69,7 +69,7 @@ Container(
 
 ### Passo 2: Configurar o SetContext
 
-Agora utilize uma **ação** chamada [**SetContext**](/pt/docs/api/ações/setcontext), que altera um [**contexto**](/pt/docs/api/contexto) **específico** em uma tela. Isto é necessário para dar vida à tela e fazer com que os dados que forem digitados nela sejam enviados para uma API. 
+Agora utilize uma **ação** chamada [**SetContext**](/pt/docs/api/actions/setcontext), que altera um [**contexto**](/pt/docs/api/contexto) **específico** em uma tela. Isto é necessário para dar vida à tela e fazer com que os dados que forem digitados nela sejam enviados para uma API. 
 
 Neste cenário, o contexto é que irá guardar os dados digitados de nome do usuário e da senha para que, posteriormente, encaminhar estes dados para a API.
 
@@ -191,7 +191,7 @@ Até o momento, o que fizemos foi "salvar" estes valores no contexto para que, a
 Esta etapa não tem nenhuma diferença visual do passo anterior.
 {{% /alert %}}
 
-Para finalizar o fluxo de Login, vamos agora adicionar uma [**Action**](/pt/docs/api/ações) chamada [**SendRequest**](/pt/docs/api/ações/sendrequest) que, basicamente, permite fazer uma requisição HTTP e, no caso do `onSuccess`, mostrar um [**Alert**](/pt/docs/api/ações/alert) dando boas-vindas ao usuário.
+Para finalizar o fluxo de Login, vamos agora adicionar uma [**Action**](/pt/docs/api/actions) chamada [**SendRequest**](/pt/docs/api/actions/sendrequest) que, basicamente, permite fazer uma requisição HTTP e, no caso do `onSuccess`, mostrar um [**Alert**](/pt/docs/api/actions/alert) dando boas-vindas ao usuário.
 
 {{< tabs id="T103" >}}
 {{% tab name="JSON" %}}
@@ -337,4 +337,4 @@ Ao executar este código, você deve preencher os campos e pressionar o botão "
 
 Feito isso, o evento `onPress` irá executar o SendRequest enviando os dados que estão dentro do Context com o ID `credentials`. 
 
-Assim que o SendRequest for feito e a requisição for concluída, o evento `onSuccess` irá executar a [**Action Alert**](/pt/docs/api/ações/alert) que irá mostrar um alerta contendo os dados retornados da API.
+Assim que o SendRequest for feito e a requisição for concluída, o evento `onSuccess` irá executar a [**Action Alert**](/pt/docs/api/actions/alert) que irá mostrar um alerta contendo os dados retornados da API.

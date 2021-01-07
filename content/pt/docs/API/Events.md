@@ -55,4 +55,4 @@ Button(
 
 No exemplo acima, associa-se a ação "beagle:alert" ao evento "onPress" do componente "beagle:button". Ou seja, ao pressionar o botão cujo título é "click to show message", uma mensagem de alerta será exibida na tela com o texto "Hello World!".
 
-Todo evento em qualquer componente ou ação pode ser associado a qualquer Beagle Action. Foi utilizada a ação de alerta no exemplo anterior, mas qualquer outra poderia ser utilizada. Para fazer uma requisição ao clicar no botão, a ação "beagle:sendRequest" poderia ter sido usada. Para saber mais sobre a relação com todas a ações disponíveis, acesse a [**documentação sobre ações**](/pt/docs/api/ações/).
+Todo evento em qualquer componente ou ação pode ser associado a qualquer Beagle Action. Foi utilizada a ação de alerta no exemplo anterior, mas qualquer outra poderia ser utilizada. Para fazer uma requisição ao clicar no botão, a ação "beagle:sendRequest" poderia ter sido usada. Para saber mais sobre a relação com todas a ações disponíveis, acesse a [**documentação sobre ações**](/pt/docs/api/actions/).

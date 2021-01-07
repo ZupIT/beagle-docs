@@ -14,7 +14,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :---: | :--- |
-| route | ​[Route](/pt/docs/api/ações/navigate/route)​ | ✓ | Rota de navegação. |
+| route | ​[Route](/pt/docs/api/actions/navigate/route)​ | ✓ | Rota de navegação. |
 
 ## Como usar?
 

@@ -7,7 +7,7 @@ description: Você encontra aqui a descrição do Form e seus atributos.
 ---
 
 {{% alert color="warning" %}}
-Esse componente foi **depreciado**! É recomendado usar o [**Simple Form**](/pt/docs/api/componentes/formulários/simple-form).
+Esse componente foi **depreciado**! É recomendado usar o [**Simple Form**](/pt/docs/api/components/forms/simple-form).
 {{% /alert %}}
 
 O componente representa uma maneira de compor entradas do usuário e enviar esses valores ao seu backend.

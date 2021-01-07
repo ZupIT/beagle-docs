@@ -40,12 +40,12 @@ O Contexto Global é criado juntamente com a aplicação. É definido internamen
 
 Um contexto que seja global pode ser definido de duas formas: 
 
-* A partir de um componente declarativo \(utilizando a Ação [**`SetContext`**](/pt/docs/api/ações/setcontext)\) ou 
+* A partir de um componente declarativo \(utilizando a Ação [**`SetContext`**](/pt/docs/api/actions/setcontext)\) ou 
 * Programaticamente, utilizando a função `set()` a partir do objeto `GlobalContext` 
 
 ### 1. Usando o SetContext
 
-É possível definir ou modificar um contexto global a partir da Ação [**`SetContext`**](/pt/docs/api/ações/setcontext) Para tal, basta identificar o contexto global utilizando a `ID = "global"` na propriedade `contextId`, como mostrado no exemplo abaixo:
+É possível definir ou modificar um contexto global a partir da Ação [**`SetContext`**](/pt/docs/api/actions/setcontext) Para tal, basta identificar o contexto global utilizando a `ID = "global"` na propriedade `contextId`, como mostrado no exemplo abaixo:
 
 {{< tabs id="T167" >}}
 {{% tab name="JSON" %}}

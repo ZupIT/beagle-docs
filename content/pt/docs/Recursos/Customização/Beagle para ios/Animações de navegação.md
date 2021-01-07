@@ -8,7 +8,7 @@ description: 'Nesta seção, você encontra informações de animação da naveg
 
 ## Introdução
 
-No protocolo `BeagleNavigation` temos uma variável `defaultAnimation` que permite que você mude as animações de transição da sua aplicação, e também outra função  que lida com os tipos de ações [**navigate**](/pt/docs/api/ações/navigate/) e define os seus comportamentos. 
+No protocolo `BeagleNavigation` temos uma variável `defaultAnimation` que permite que você mude as animações de transição da sua aplicação, e também outra função  que lida com os tipos de ações [**navigate**](/pt/docs/api/actions/navigate/) e define os seus comportamentos. 
 
 Sugerimos que você use a implementação default, mas se necessário, é permitido que essa implementação seja substituída por uma classe que está de acordo com o protocolo acima.
 

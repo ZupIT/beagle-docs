@@ -18,33 +18,33 @@ O Beagle possui **14** **componentes** atualmente divididos em **5 categorias**:
 
 {{< tabs id="T132" >}}
 {{% tab name="Layout" %}}
-* [**Container**](/pt/docs/api/componentes/layout/container)
-* [**List View**](/pt/docs/api/componentes/layout/listview)
-* [**PageView**](/pt/docs/api/componentes/layout/pageview)
-* [**PageIndicator**](/pt/docs/api/componentes/layout/pageindicator)
-* [**ScrollView**](/pt/docs/api/componentes/layout/scrollview)
+* [**Container**](/pt/docs/api/components/layout/container)
+* [**List View**](/pt/docs/api/components/layout/listview)
+* [**PageView**](/pt/docs/api/components/layout/pageview)
+* [**PageIndicator**](/pt/docs/api/components/layout/pageindicator)
+* [**ScrollView**](/pt/docs/api/components/layout/scrollview)
 {{% /tab %}}
 
 {{% tab name="Formulários" %}}
-* [**Validator**](/pt/docs/api/componentes/formulários/validator)
-* [**Simple Form**](/pt/docs/api/componentes/formulários/simple-form)
-* [**Text Input** ](/pt/docs/api/componentes/ui/textinput)
+* [**Validator**](/pt/docs/api/components/forms/validator)
+* [**Simple Form**](/pt/docs/api/components/forms/simple-form)
+* [**Text Input** ](/pt/docs/api/components/ui/textinput)
 {{% /tab %}}
 
 {{% tab name="Lazy" %}}
-* [Lazy](/pt/docs/api/componentes/lazy)
+* [Lazy](/pt/docs/api/components/lazy)
 {{% /tab %}}
 
 {{% tab name="UI" %}}
-* [**Button**](/pt/docs/api/componentes/ui/button)
-* [**Image**](/pt/docs/api/componentes/ui/image/)
-* [**Tab Bar**](/pt/docs/api/componentes/ui/tabbar)
-* [**Tab View**](/pt/docs/api/componentes/ui/tabview)
-* [**Text**](/pt/docs/api/componentes/ui/text)
-* [**Web View**](/pt/docs/api/componentes/ui/webview)
+* [**Button**](/pt/docs/api/components/ui/button)
+* [**Image**](/pt/docs/api/components/ui/image/)
+* [**Tab Bar**](/pt/docs/api/components/ui/tabbar)
+* [**Tab View**](/pt/docs/api/components/ui/tabview)
+* [**Text**](/pt/docs/api/components/ui/text)
+* [**Web View**](/pt/docs/api/components/ui/webview)
 {{% /tab %}}
 
 {{% tab name="Touchable" %}}
-* [Touchable](/pt/docs/api/componentes/touchable)
+* [Touchable](/pt/docs/api/components/touchable)
 {{% /tab %}}
 {{< /tabs >}}

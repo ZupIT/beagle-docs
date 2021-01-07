@@ -8,7 +8,7 @@ description: >-
 
 ---
 
-No Beagle, a navegação \(ou Navigate\) é um tipo de [**Ação**](/pt/docs/api/ações) e que, por isso, pode ser usada por todos componentes que recebem uma ação. 
+No Beagle, a navegação \(ou Navigate\) é um tipo de [**Ação**](/pt/docs/api/actions) e que, por isso, pode ser usada por todos componentes que recebem uma ação. 
 
 {{% alert color="info" %}}
 Vale lembrar que, antes de configurar a navegação entre telas da sua aplicação, é preciso que você já tenha feito a [**instalação do Beagle**](/pt/docs/primeiros-passos/instalando-o-beagle/), as [**configurações de uso**](/pt/docs/primeiros-passos/usando-o-beagle/) e testado o framework do Beagle no tutorial para [**exibir uma tela server-driven.**](/pt/docs/tutoriais/exibindo-uma-tela) 
@@ -66,20 +66,20 @@ Button(
 
 Nas páginas a seguir, você confere mais detalhes de cada tipo de navegação do Beagle:
 
-[**OpenNativeRoute**](/pt/docs/api/ações/navigate/opennativeroute)
+[**OpenNativeRoute**](/pt/docs/api/actions/navigate/opennativeroute)
 
-[**OpenExternalURL**](/pt/docs/api/ações/navigate/openexternalurl)
+[**OpenExternalURL**](/pt/docs/api/actions/navigate/openexternalurl)
 
-[**PushStack**](/pt/docs/api/ações/navigate/pushstack)
+[**PushStack**](/pt/docs/api/actions/navigate/pushstack)
 
-[**PushView**](/pt/docs/api/ações/navigate/pushview)
+[**PushView**](/pt/docs/api/actions/navigate/pushview)
 
-[**PopStack**](/pt/docs/api/ações/navigate/popstack)
+[**PopStack**](/pt/docs/api/actions/navigate/popstack)
 
-[**PopView**](/pt/docs/api/ações/navigate/popview)
+[**PopView**](/pt/docs/api/actions/navigate/popview)
 
-[**PopToView**](/pt/docs/api/ações/navigate/poptoview)
+[**PopToView**](/pt/docs/api/actions/navigate/poptoview)
 
-[**ResetApplication**](/pt/docs/api/ações/navigate/resetapplication)
+[**ResetApplication**](/pt/docs/api/actions/navigate/resetapplication)
 
-[**ResetStack**](/pt/docs/api/ações/navigate/resetstack)
+[**ResetStack**](/pt/docs/api/actions/navigate/resetstack)

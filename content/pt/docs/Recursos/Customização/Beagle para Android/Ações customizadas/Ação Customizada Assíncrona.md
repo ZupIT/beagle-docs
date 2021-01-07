@@ -46,5 +46,5 @@ data class CustomActionAndroid(
 Pronto! Sua action agora está configurada para executar qualquer trabalho de forma assíncrona!
 
 {{% alert color="danger" %}}
-É obrigatória a implementação da interface AsyncAction para toda ação customizada que for inserida dentro do componente [ListView](/pt/docs/api/componentes/layout/listview).
+É obrigatória a implementação da interface AsyncAction para toda ação customizada que for inserida dentro do componente [ListView](/pt/docs/api/components/layout/listview).
 {{% /alert %}}

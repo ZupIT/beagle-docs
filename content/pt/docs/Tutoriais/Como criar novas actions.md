@@ -7,7 +7,7 @@ weight: 222
 
 ### Criando uma ação do frontend 
 
-No Beagle, é possível criar uma [**ação**](/pt/docs/api/ações) customizada a partir de uma `CustomAction`.
+No Beagle, é possível criar uma [**ação**](/pt/docs/api/actions) customizada a partir de uma `CustomAction`.
 
 Cada plataforma possui sua forma especificia de fazer essa implementação no frontend. Você pode ver exemplos abaixo de como fazer em cada uma delas: 
 

@@ -106,8 +106,8 @@ Quando ocorre algum erro na aplicação, o Beagle altera o estado da tela  \(`st
 Os **possíveis erros** são:
 
 * `remoteScreen(Request.Error)`: A requisição para carregar uma tela remota falhou. Veja abaixo quando isso ocorre.
-* `lazyLoad(Request.Error)`: A requisição para carregar um [**componente Lazy**](/pt/docs/api/componentes/lazy) falhou. Veja abaixo quando isso ocorre.
-* `action(Swift.Error)`: A execução de uma [**Action**](/pt/docs/api/ações) falhou.
+* `lazyLoad(Request.Error)`: A requisição para carregar um [**componente Lazy**](/pt/docs/api/components/lazy) falhou. Veja abaixo quando isso ocorre.
+* `action(Swift.Error)`: A execução de uma [**Action**](/pt/docs/api/actions) falhou.
 
 **Erros em uma requisição** \(`Request.Error`\):
 

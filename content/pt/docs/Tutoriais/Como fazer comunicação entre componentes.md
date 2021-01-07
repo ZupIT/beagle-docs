@@ -37,7 +37,7 @@ O endpoint abaixo retorna um JSON semelhante. Listamos somente os dados que vamo
 
 ## Como vou comunicar?
 
-Uma função chamada [**SetContext**](/pt/docs/api/ações/setcontext) é a responsável por atualizar os valores do componente contexto. Ela poderá ser chamada na tela se você quiser usar as informações que estiverem nesse contexto. 
+Uma função chamada [**SetContext**](/pt/docs/api/actions/setcontext) é a responsável por atualizar os valores do componente contexto. Ela poderá ser chamada na tela se você quiser usar as informações que estiverem nesse contexto. 
 
 Para fazer a comunicação, basta seguir os próximos passos: 
 

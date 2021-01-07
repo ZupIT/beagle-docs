@@ -20,9 +20,9 @@ A estrutura do Send Request é:
 | method | RequestActionMethod ou [**Binding**](/pt/docs/api/contexto#binding) | ✓ | Método HTTP. |
 | headers | Map &lt;String, String&gt; ou [**Binding**](/pt/docs/api/contexto#binding) |   | Itens do header para a requisição. |
 | data | Any |   | Conteúdo a ser enviado junto a requisição. |
-| onSuccess | List&lt;[**Action**](/pt/docs/api/ações)&gt; |   | Ação tratativa de sucesso. |
-| onError | List&lt;[**Action**](/pt/docs/api/ações)&gt; |   | Ação tratativa de erro. |
-| onFinish | List&lt;[**Action**](/pt/docs/api/ações)&gt; |   | Ação tratativa de finalização. |
+| onSuccess | List&lt;[**Action**](/pt/docs/api/actions)&gt; |   | Ação tratativa de sucesso. |
+| onError | List&lt;[**Action**](/pt/docs/api/actions)&gt; |   | Ação tratativa de erro. |
+| onFinish | List&lt;[**Action**](/pt/docs/api/actions)&gt; |   | Ação tratativa de finalização. |
 
 ## Como usar?
 

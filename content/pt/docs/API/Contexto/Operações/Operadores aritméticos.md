@@ -17,7 +17,7 @@ description: 'Nesta seção, você encontra descrição completa dos Operadores 
 
 ### Exemplo
 
-Veja um exemplo abaixo de um simples contador, onde dois botões `increment` e `decrement`, ambos com ações de [**SetContext**](/pt/docs/api/ações/setcontext) que modificam o valor do contexto que possui o id counter, alterando seu valor com operações de `soma` e de `subtração`,  incrementando e diminuindo o valor de 1 ao valor do texto:
+Veja um exemplo abaixo de um simples contador, onde dois botões `increment` e `decrement`, ambos com ações de [**SetContext**](/pt/docs/api/actions/setcontext) que modificam o valor do contexto que possui o id counter, alterando seu valor com operações de `soma` e de `subtração`,  incrementando e diminuindo o valor de 1 ao valor do texto:
 
 {{< tabs id="T159" >}}
 {{% tab name="JSON" %}}

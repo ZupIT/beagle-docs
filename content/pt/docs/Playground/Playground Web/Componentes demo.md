@@ -16,25 +16,25 @@ Segue a lista com os exemplos de componentes implementados no Playground:
 
 [Experimente no Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)
 
-[Documentação do componente](/pt/docs/api/componentes/ui/button)
+[Documentação do componente](/pt/docs/api/components/ui/button)
 
 ### **Container**
 
 [Experimente no Playground](https://beagle-playground.netlify.app/#/demo/default-components/container.json)
 
-[Documentação do componente](/pt/docs/api/componentes/layout/container)
+[Documentação do componente](/pt/docs/api/components/layout/container)
 
 ### **Lazy Component**
 
 [Experimente no Playground](https://beagle-playground.netlify.app/#/demo/default-components/lazycomponent.json)
 
-[Documentação do componente](/pt/docs/api/componentes/lazy)
+[Documentação do componente](/pt/docs/api/components/lazy)
 
 ### **List View**
 
 [Experimente no Playground](https://beagle-playground.netlify.app/#/demo/default-components/listview.json)
 
-[Documentação do componente](/pt/docs/api/componentes/layout/listview)
+[Documentação do componente](/pt/docs/api/components/layout/listview)
 
 ### **Modal**
 
@@ -44,7 +44,7 @@ Segue a lista com os exemplos de componentes implementados no Playground:
 
 [Experimente no Playground](https://beagle-playground.netlify.app/#/demo/default-components/pageview.json)
 
-[Documentação do componente](/pt/docs/api/componentes/layout/pageview)
+[Documentação do componente](/pt/docs/api/components/layout/pageview)
 
 ### **Simple Form**
 
@@ -54,16 +54,16 @@ Segue a lista com os exemplos de componentes implementados no Playground:
 
 [Experimente no Playground](https://beagle-playground.netlify.app/#/demo/default-components/tabview.json)
 
-[Documentação do componente](/pt/docs/api/componentes/ui/tabview)
+[Documentação do componente](/pt/docs/api/components/ui/tabview)
 
 ### **Text**
 
 [Experimente no Playground](https://beagle-playground.netlify.app/#/demo/default-components/text.json)
 
-[Documentação do componente](/pt/docs/api/componentes/ui/text)
+[Documentação do componente](/pt/docs/api/components/ui/text)
 
 ### **Touchable**
 
 [Experimente no Playground](https://beagle-playground.netlify.app/#/demo/default-components/touchable.json)
 
-[Documentação do componente](/pt/docs/api/componentes/touchable)
+[Documentação do componente](/pt/docs/api/components/touchable)

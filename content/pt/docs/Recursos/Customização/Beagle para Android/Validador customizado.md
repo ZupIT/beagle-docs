@@ -9,7 +9,7 @@ description: >-
 ---
 
 {{% alert color="danger" %}}
-Este componente foi descontinuado na versão 1.1.0 e será removido em uma versão futura. Use [**SimpleForm**](/pt/docs/api/componentes/formulários/simple-form)  em seu lugar
+Este componente foi descontinuado na versão 1.1.0 e será removido em uma versão futura. Use [**SimpleForm**](/pt/docs/api/components/forms/simple-form)  em seu lugar
 {{% /alert %}}
 
 ## Introdução

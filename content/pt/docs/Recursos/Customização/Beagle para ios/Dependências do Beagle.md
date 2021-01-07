@@ -216,7 +216,7 @@ class AnalyticsSample: Analytics {
 
 ## Navigation
 
-O `navigation` lida com tipo de ações de [**navigate**](/pt/docs/api/ações/navigate/) da sua aplicação. Existe uma implementação que é usada como valor default, mas que também pode ser substituída por uma classe que  está de acordo com BeagleNavigation
+O `navigation` lida com tipo de ações de [**navigate**](/pt/docs/api/actions/navigate/) da sua aplicação. Existe uma implementação que é usada como valor default, mas que também pode ser substituída por uma classe que  está de acordo com BeagleNavigation
 
 Nesse mesmo atributo também é possível definir uma [**animação de navegação**](/pt/docs/recursos/customização/beagle-para-ios/animações-de-navegação).
 

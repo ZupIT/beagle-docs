@@ -12,11 +12,11 @@ O `ContextComponent` é uma interface precisa ser implementada em componentes qu
 
 ## Componentes do Beagle com contexto:
 
-1. [**Container**](/pt/docs/api/componentes/layout/container)
-2. [**SimpleForm**](/pt/docs/api/componentes/formulários/simple-form)
-3. [**PageView**](/pt/docs/api/componentes/layout/pageview)
-4. [**ScrollView**](/pt/docs/api/componentes/layout/scrollview)
-5. [**TabView**](/pt/docs/api/componentes/ui/tabview)
+1. [**Container**](/pt/docs/api/components/layout/container)
+2. [**SimpleForm**](/pt/docs/api/components/forms/simple-form)
+3. [**PageView**](/pt/docs/api/components/layout/pageview)
+4. [**ScrollView**](/pt/docs/api/components/layout/scrollview)
+5. [**TabView**](/pt/docs/api/components/ui/tabview)
 
 ## Componente customizado com contexto
 
