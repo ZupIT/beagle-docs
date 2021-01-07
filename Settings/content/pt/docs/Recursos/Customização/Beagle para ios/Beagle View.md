@@ -3,7 +3,7 @@ title: Beagle View
 weight: 145
 description: >-
   Nesta seção, você encontra informações sobre a Beagle View e como
-  utiliza-la.
+  utilizá-la.
 ---
 
 ---
