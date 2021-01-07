@@ -9,7 +9,7 @@ description: >-
 
 ## Introduction
 
-Beagle makes all the web request from the **`networkClient`** dependency that it is in the BeagleDependencies, and its type is `NetworkClient`, because of that it is possible to replace a default implementation used in the framework to another.
+Beagle makes all the web request from the **`networkClient`** dependency that is in the BeagleDependencies, and its type is `NetworkClient`, because of that it is possible to replace a default implementation used in the framework for another.
 
 With that in mind, you can:
 
