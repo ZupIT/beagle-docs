@@ -1,5 +1,5 @@
 ---
-title: Openexternalurl
+title: OpenExternalUrl
 weight: 275
 description: Descrição da ação OpenExternalURL e seus atributos
 ---

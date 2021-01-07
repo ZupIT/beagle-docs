@@ -1,5 +1,5 @@
 ---
-title: Formvalidation
+title: FormValidation
 weight: 244
 description: >-
   You will find here the definition of FormValidation and details about its

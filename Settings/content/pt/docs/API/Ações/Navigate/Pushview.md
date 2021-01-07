@@ -1,5 +1,5 @@
 ---
-title: Pushview
+title: PushView
 weight: 279
 description: Descrição da ação PushView e seus atributos
 ---

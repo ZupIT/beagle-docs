@@ -1,5 +1,5 @@
 ---
-title: Resetapplication
+title: ResetApplication
 weight: 287
 description: Descrição da ação ResetApplication e seus atributos
 ---

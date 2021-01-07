@@ -17,7 +17,7 @@ Class that defines a navigation bar in the top of the screen and it's composed b
 | navigation bar items | [**Navigation Bar Item**](#what-is-a-navigationbaritem) |  | Defines an item's list for the action/navigation's bar. |
 | back button accessibility | [**Accessibility**](/docs/api/accessibility) |  | Accessibility's informations of the backButton. |
 
-## **What is a** NavigationBarItem?
+## What is a NavigationBarItem?
 
 Class that defines an item for `Navigation's bar` and and it has the following attributes: 
 

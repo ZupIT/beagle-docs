@@ -1,5 +1,5 @@
 ---
-title: Resetstack
+title: ResetStack
 weight: 262
 description: Here you'll find ResetStack description and its attribute.
 ---

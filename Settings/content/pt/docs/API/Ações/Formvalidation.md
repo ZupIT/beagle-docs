@@ -1,5 +1,5 @@
 ---
-title: Formvalidation
+title: FormValidation
 weight: 269
 description: >-
   Nesta seção, você encontra a definição do FormValidation e detalhes de seus
@@ -9,7 +9,7 @@ description: >-
 ---
 
 {{% alert color="warning" %}}
-Essa ação foi **depreciada** junto com o Form!
+Essa ação foi **depreciada** junto com o Form.
 {{% /alert %}}
 
 ## O que é?

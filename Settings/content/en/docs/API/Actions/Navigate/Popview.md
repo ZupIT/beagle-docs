@@ -1,5 +1,5 @@
 ---
-title: Popview
+title: PopView
 weight: 258
 description: Here you'll find PopView description.
 ---
