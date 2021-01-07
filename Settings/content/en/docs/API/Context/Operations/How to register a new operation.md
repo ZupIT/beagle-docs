@@ -49,6 +49,80 @@ dependencies.operationsProvider.register(operationId: "isValidCpf") { parameters
 
 Done! Your operation can be used now! 
 {{% /tab %}}
+
+{{% tab name="Android" %}}
+
+You must the `Operation` interface in order to register a new operation on Android. The example below shows this interface signature
+
+
+```java
+interface Operation {
+    fun execute(vararg params: OperationType?): OperationType
+}
+```
+The following class shows the OperationType class details. This class holds the return types supported on Beagle.
+
+
+```java 
+sealed class OperationType(open val value: Any?) {
+    data class TypeString(override val value: String) : OperationType(value)
+    data class TypeBoolean(override val value: Boolean) : OperationType(value)
+    data class TypeNumber(override val value: Number) : OperationType(value)
+    data class TypeJsonArray(override val value: JSONArray) : OperationType(value)
+    data class TypeJsonObject(override val value: JSONObject) : OperationType(value)
+    object Null : OperationType(null)
+}
+```
+
+To register a custom operation you must: 
+
+1. Create a class and enter the name you want.
+2. Place an annotation `@RegisterOperation (name =" name-your-operation ")` over the class name.
+3. Implement the Operation interface.
+
+The following example shows a custom operation that validates a CPF register number 
+
+```java
+@RegisterOperation(name = "isValidCpf")
+class IsValidCPFOperation : Operation {
+    override fun execute(vararg params: OperationType?): OperationType {
+        val cpf = params[0]?.value as String
+        return OperationType.TypeBoolean(isCPF(cpf))
+    }
+
+    @Suppress("ReturnCount")
+    private fun isCPF(document: String): Boolean {
+        if (TextUtils.isEmpty(document)) return false
+
+        val numbers = arrayListOf<Int>()
+
+        document.filter { it.isDigit() }.forEach {
+            numbers.add(it.toString().toInt())
+        }
+
+        if (numbers.size != 11) return false
+
+        for (n in 0..9) {
+            val digits = arrayListOf<Int>()
+            repeat((0..10).count()) { _ -> digits.add(n) }
+            if (numbers == digits) return false
+        }
+
+        val dv1 = ((0..8).sumBy { (it + 1) * numbers[it] }).rem(11).let {
+            if (it >= 10) 0 else it
+        }
+
+        val dv2 = ((0..8).sumBy { it * numbers[it] }.let { (it + (dv1 * 9)).rem(11) }).let {
+            if (it >= 10) 0 else it
+        }
+
+        return numbers[9] == dv1 && numbers[10] == dv2
+    }
+}
+```
+Done! Your operation can be used now! 
+
+{{% /tab %}}
 {{< /tabs >}}
 
 ## Example
