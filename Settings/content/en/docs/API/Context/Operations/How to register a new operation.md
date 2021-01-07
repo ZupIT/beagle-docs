@@ -52,7 +52,7 @@ Done! Your operation can be used now!
 
 {{% tab name="Android" %}}
 
-The registration of an operation on android is through `Operation`interface , see how it works on the example below: 
+You must the `Operation` interface in order to register a new operation on Android. The example below shows this interface signature
 
 
 ```java
