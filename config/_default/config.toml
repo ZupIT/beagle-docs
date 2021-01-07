@@ -1,7 +1,6 @@
 baseURL = "http://docs-beta.usebeagle.io"
 
 title = "Beagle"
-publishDir = "../docs"
 
 enableRobotsTXT = true
 
@@ -9,10 +8,6 @@ theme = ["devrel"]
 
 enableGitInfo = true
 
-# Language settings
-contentDir = "content/en"
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
@@ -27,23 +22,6 @@ pygmentsUseClassic = false
 # See https://help.farbox.com/pygments.html
 pygmentsStyle = "tango"
 
-# Configure how URLs look like per section.
-[permalinks]
-blog = "/:section/:year/:month/:day/:slug/"
-
-## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
-[blackfriday]
-plainIDAnchors = true
-hrefTargetBlank = true
-angledQuotes = false
-latexDashes = true
-
-# Image processing configuration.
-[imaging]
-resampleFilter = "CatmullRom"
-quality = 75
-anchor = "smart"
-
 [services]
 [services.googleAnalytics]
 # Comment out the next line to disable GA tracking. Also disables the feature described in [params.ui.feedback].
@@ -56,6 +34,7 @@ id = "G-H1RTNPZDTS"
 title = "Beagle"
 description = "Beagle Documentation"
 languageName ="English"
+contentDir = "content/en"
 # Weight used for sorting.
 weight = 1
 [languages.pt]
@@ -85,9 +64,6 @@ playground_url = "https://playground.usebeagle.io/#/docs"
 
 logoName = "icons/beagle.svg"
 
-# First one is picked as the Twitter card image if not set on page.
-# images = ["images/project-illustration.png"]
-
 # Menu title if your navbar has a versions selector to access old versions of your site.
 # This menu appears only if you have at least one [params.versions] set.
 version_menu = "Releases"
@@ -104,7 +80,7 @@ version = "0.0"
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
-url_latest_version = "https://example.com"
+url_latest_version = "http://docs-beta.usebeagle.io/"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/ZupIT/docs-beagle"

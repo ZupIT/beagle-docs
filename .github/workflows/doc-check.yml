@@ -21,8 +21,6 @@ jobs:
 
       - name: npm install
         run: npm install
-        working-directory: Settings
 
       - name: Build check
         run: npm run build
-        working-directory: Settings
