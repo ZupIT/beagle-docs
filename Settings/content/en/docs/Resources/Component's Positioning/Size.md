@@ -18,35 +18,35 @@ Size has the following atributes: **`width, heigth, maxWidth,maxHeight, minWidth
 
 ### **Width** 
 
-Defines the item width
+Defines the item's **width.**
 
 ### **Height** 
 
-Defines the item height
+Defines the item's **height.**
 
 ### **MaxWidth** 
 
-Defines a maximum width an item can fill up to.
+Defines a **maximum width** an item can fill up to.
 
 ### **MaxHeight**
 
-Defines a maximum height an item can fill up to.
+Defines a **maximum height** an item can fill up to.
 
 ### **MinWidth**
 
-Defines a minimum width an item can shrink down to.
+Defines a **minimum width** an item can shrink down to.
 
 ### **MinHeight**
 
-Defines a minimum heght an item can shrink down to.
+Defines a **minimum heght** an item can shrink down to.
 
 ### **AspectRatio** 
 
-This property created by Yoga Layout defines the width ratio according to the item's height, following a logic of a double&gt; 0 value.
+This property created by Yoga Layout defines the width ratio according to the item's height, following a logic of a **double&gt; 0 value.**
 
 For example, if you apply a height of 100dp to a component and the aspectRatio of 2, the width will be 2 times the height where it will have the value of 200dp.
 
-{{< tabs name="T67" >}}
+{{< tabs id="T67" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -105,4 +105,4 @@ private fun screen() :Widget{
 {{% /tab %}}
 {{< /tabs >}}
 
-For more information about Size, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/).
+**For more information about Size, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/).**

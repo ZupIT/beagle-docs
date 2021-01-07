@@ -116,7 +116,7 @@ class CustomBeagleNavigationController: BeagleNavigationController {
 ```
 
 {{% alert color="warning" %}}
-You must register this class in [**Beagle's dependencies.**](beagledependencies)
+You have to egister this class on [**Beagle's dependencies.**](/docs/resources/customization/beagle-for-ios/beagles-dependencies)
 {{% /alert %}}
 
 ```swift

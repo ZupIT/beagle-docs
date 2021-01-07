@@ -1,5 +1,5 @@
 ---
-title: Poptoview
+title: PopToView
 weight: 285
 description: Descrição da ação PopToView e seus atributos
 ---
@@ -28,9 +28,9 @@ Para testar, iremos precisar de três endpoints:
 
 #### Como chamar pela tela zero
 
-{{< tabs name="T116" >}}
+{{< tabs id="T116" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:firstScreenNavigate.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -44,14 +44,15 @@ Para testar, iremos precisar de três endpoints:
       "onPress" : [ {
         "_beagleAction_" : "beagle:pushView",
         "route" : {
-          "url" : "/firstScreen",
+          "url" : "secondScreenNavigate.json",
           "shouldPrefetch" : false
         }
       } ]
     } ]
   }
 }
-```
+-->
+{{% playground file="firstScreenNavigate.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="KotlinDSL" %}}
@@ -67,7 +68,7 @@ Screen(
                 onPress = listOf(
                     Navigate.PushView(
                         Route.Remote(
-                            url = "/firstScreen"
+                            url = "secondScreenNavigate.json"
                         )
                     )
                 )
@@ -81,9 +82,9 @@ Screen(
 
 #### Como chamar a Tela 1
 
-{{< tabs name="T117" >}}
+{{< tabs id="T117" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:secondScreenNavigate.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -97,14 +98,15 @@ Screen(
       "onPress" : [ {
         "_beagleAction_" : "beagle:pushView",
         "route" : {
-          "url" : "/secondScreen",
+          "url" : "popToView.json",
           "shouldPrefetch" : false
         }
       } ]
     } ]
   }
 }
-```
+-->
+{{% playground file="secondScreenNavigate.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="KotlinDSL" %}}
@@ -120,7 +122,7 @@ Screen(
                 onPress = listOf(
                     Navigate.PushView(
                         Route.Remote(
-                            url = "/secondScreen"
+                            url = "popToView.json"
                         )
                     )
                 )
@@ -134,9 +136,9 @@ Screen(
 
 #### Como chamar a Tela 2
 
-{{< tabs name="T118" >}}
+{{< tabs id="T118" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:popToView.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -149,13 +151,33 @@ Screen(
       "text" : "Click me to go to first screen",
       "onPress" : [ {
         "_beagleAction_" : "beagle:popToView",
-        "route" : "/home"
+        "route" : "firstScreenNavigate.json"
       } ]
     } ]
   }
 }
+-->
+{{% playground file="popToView.json" language="pt" %}}
+{{% /tab %}}
+{{% tab name="KotlinDSL" %}}
+```kotlin
+Screen(
+    child = Container(
+        children = listOf(
+            Text(
+                "Third Screen on Stack"
+            ),
+            Button(
+                text = "Click me to go to first screen",
+                onPress = listOf(
+                    Navigate.PopToView(
+                      route = "firstScreenNavigate.json"
+                    )
+                )
+            )
+        )
+    )
+)
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste esse exemplo no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

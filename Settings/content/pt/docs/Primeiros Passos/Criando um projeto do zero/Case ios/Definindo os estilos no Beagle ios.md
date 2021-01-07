@@ -10,9 +10,9 @@ description: >-
 
 ## **C**riando estilos para o Beagle iOS
 
-No exemplo prático da página "Criando um projeto com Beagle para iOS", você pode conferir como fazer a [**implementação do Beagle**](../.././) e criar sua primeira tela server-driven.
+No exemplo prático da página "Criando um projeto com Beagle para iOS", você pode conferir como fazer a [**implementação do Beagle**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-ios) e criar sua primeira tela server-driven.
 
-Neste tutorial, a ideia é avançar a partir do [**projeto anterior**](./#passo-3-configurando-o-xcode) para **criar um Design System na sua biblioteca do Beagle**.  Os exemplos que ilustrarão o passo a passo estão nestes[ **sample codes**](https://github.com/ZupIT/beagle-examples) que você encontra no nosso repositório. 
+Neste tutorial, a ideia é avançar a partir do [**projeto anterior**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-ios#passo-3-configurar-o-xcode) para **criar um Design System na sua biblioteca do Beagle**.  Os exemplos que ilustrarão o passo a passo estão nestes[ **sample codes**](https://github.com/ZupIT/beagle-examples) que você encontra no nosso repositório. 
 
 A ideia aqui é configurar alguns estilos no iOS para que você possa customizar componentes como:
 
@@ -43,7 +43,7 @@ struct Styles {
 }
 ```
 
-Essa `struct` irá conter todos os estilos que serão acessados pelo Beagle. Aqui, estará listada a lógica que permite ao Beagle aplicar os estilos definidos no iOS a uma [**tela server-driven**](../../../../principais-conceitos#server-driven-ui).
+Essa `struct` irá conter todos os estilos que serão acessados pelo Beagle. Aqui, estará listada a lógica que permite ao Beagle aplicar os estilos definidos no iOS a uma [**tela server-driven**](/pt/docs/principais-conceitos#server-driven-ui).
 
 ### Passo 2: Criar um estilo para um texto
 
@@ -176,7 +176,7 @@ A página era assim quando renderizada no frontend:
 
 
 
-![](/docs-beagle/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)
+![](/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)
 
 Para atribuir um estilo a esses textos siga as instruções:
 

@@ -15,21 +15,21 @@ The Send Request structure is:
 
 | Attribute | Type | Required | Definition |
 | :--- | :--- | :---: | :--- |
-| url | String or [**Binding**](../../../../context/#bindings) | ✓ | Server URL. |
-| method | RequestActionMethod or [**Binding**](https://docs.usebeagle.io/v/v1.0-en/api/context#bindings) | ✓ | HTTP method. |
-| headers | Map &lt;String, String&gt; or [**Binding**](../context/#bindings) |   | Header items for the request. |
+| url | String or [**Binding**](/docs/api/context#bindings) | ✓ | Server URL. |
+| method | RequestActionMethod or [**Binding**](/docs/api/context#bindings) | ✓ | HTTP method. |
+| headers | Map &lt;String, String&gt; or [**Binding**](/docs/api/context#bindings) |   | Header items for the request. |
 | data | Any |   | Content that will be deliver with the request. |
-| onSuccess | List&lt;[**Action**](https://docs.usebeagle.io/v/v1.0-en/api/actions)&gt; |   | Success action. |
-| onError | List&lt;[**Action**](https://docs.usebeagle.io/v/v1.0-en/api/actions)&gt; |   | Error action. |
-| onFinish | List&lt;[**Action**](https://docs.usebeagle.io/v/v1.0-en/api/actions)&gt; |   | Finish action. |
+| onSuccess | List&lt;[**Action**](/docs/api/actions)&gt; |   | Success action. |
+| onError | List&lt;[**Action**](/docs/api/actions)&gt; |   | Error action. |
+| onFinish | List&lt;[**Action**](/docs/api/actions)&gt; |   | Finish action. |
 
 ## How to use it?
 
 See below an example of a button that send a `POST` request with data user:
 
-{{< tabs name="T109" >}}
+{{< tabs id="T109" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:send.json
 {
   "_beagleComponent_": "beagle:container",
   "children": [
@@ -39,7 +39,7 @@ See below an example of a button that send a `POST` request with data user:
       "onPress": [
         {
             "beagleAction":"beagle:sendRequest",
-            "url":"https://myUrl.com/endpoint"",
+            "url":"https://myUrl.com/endpoint",
             "method":"POST",
             "headers":{
                "Content-Type":"application/json"
@@ -76,7 +76,8 @@ See below an example of a button that send a `POST` request with data user:
     }
   ]
 }
-```
+-->
+{{% playground file="send.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -121,5 +122,3 @@ Button(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Test this action in the Web Playground](https://beagle-playground.netlify.app/#/cloud/835cfa6d6811402cb338c9afeb1507cf/sendRequest.json)

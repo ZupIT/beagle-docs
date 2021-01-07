@@ -1,5 +1,5 @@
 ---
-title: Pushview
+title: PushView
 weight: 279
 description: Descrição da ação PushView e seus atributos
 ---
@@ -14,17 +14,17 @@ A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :---: | :--- |
-| route | ​[Route](https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MBdG3IHjLPbo5GoxgEz/api/api-acoes/navigate/route)​ | ✓ | Rota de navegação. |
+| route | ​[Route](/pt/docs/api/ações/navigate/route)​ | ✓ | Rota de navegação. |
 
 ## Como usar?
 
 No exemplo abaixo, temos uma tela vinda do BFF com um botão, que ao ser clicado, abre um novo fragment server-driven com a tela especificada pelo BFF. 
 
-Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e chame esse endpoint no frontend. Você poderá passar tanto uma rota local \(que passará uma [**screen**](https://docs.usebeagle.io/api/screen) na rota\), quanto remota \(que passará o endpoint da tela para a qual irá navegar\). 
+Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e chame esse endpoint no frontend. Você poderá passar tanto uma rota local \(que passará uma [**screen**](/pt/docs/api/screen) na rota\), quanto remota \(que passará o endpoint da tela para a qual irá navegar\). 
 
-{{< tabs name="T113" >}}
+{{< tabs id="T113" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:pushView.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -44,7 +44,8 @@ Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e
     } ]
   }
 }
-```
+-->
+{{% playground file="pushView.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -66,5 +67,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste esse exemplo no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

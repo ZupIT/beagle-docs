@@ -1,5 +1,5 @@
 ---
-title: Resetapplication
+title: ResetApplication
 weight: 264
 description: Here you'll find ResetApplication description and its attribute.
 ---
@@ -14,7 +14,7 @@ Your structure is represented by the attribute below:
 
 | **Attribute** | **Type** | Required | Definition |
 | :--- | :--- | :--- | :--- |
-| route | ​[**Route**](https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MBdG3IHjLPbo5GoxgEz/api/api-acoes/navigate/route)**​** |      ✓ | Navigation route. |
+| route | ​[**Route**](/docs/api/actions/navigate/route)**​** |      ✓ | Navigation route. |
 
 ## How to use it?
 
@@ -28,9 +28,9 @@ To test, you will need three endpoints:
 
 #### How to call the screen zero <a id="como-chamar-a-tela-zero"></a>
 
-{{< tabs name="T104" >}}
+{{< tabs id="T104" >}}
 {{% tab name="JSON" %}}
-```text
+<!-- json-playground:firstScreenonStack.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -44,14 +44,15 @@ To test, you will need three endpoints:
       "onPress" : [ {
         "_beagleAction_" : "beagle:pushView",
         "route" : {
-          "url" : "/firstScreen",
+          "url" : "secondScreenonStack.json",
           "shouldPrefetch" : false
         }
       } ]
     } ]
   }
 }
-```
+-->
+{{% playground file="firstScreenonStack.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -67,7 +68,7 @@ Screen(
                 onPress = listOf(
                     Navigate.PushView(
                         Route.Remote(
-                            url = "/firstScreen"
+                            url = "secondScreenonStack.json"
                         )
                     )
                 )
@@ -81,9 +82,9 @@ Screen(
 
 #### How to call the screen 1 <a id="como-chamar-a-tela-1"></a>
 
-{{< tabs name="T105" >}}
+{{< tabs id="T105" >}}
 {{% tab name="JSON" %}}
-```text
+<!-- json-playground:secondScreenonStack.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -97,14 +98,15 @@ Screen(
       "onPress" : [ {
         "_beagleAction_" : "beagle:pushView",
         "route" : {
-          "url" : "/secondScreen",
+          "url" : "resetApplication.json",
           "shouldPrefetch" : false
         }
       } ]
     } ]
   }
 }
-```
+-->
+{{% playground file="secondScreenonStack.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -120,7 +122,7 @@ Screen(
                 onPress = listOf(
                     Navigate.PushView(
                         Route.Remote(
-                            url = "/secondScreen"
+                            url = "resetApplication.json"
                         )
                     )
                 )
@@ -134,9 +136,9 @@ Screen(
 
 #### How to call the screen  2 <a id="como-chamar-a-tela-2"></a>
 
-{{< tabs name="T106" >}}
+{{< tabs id="T106" >}}
 {{% tab name="JSON" %}}
-```text
+<!-- json-playground:resetApplication.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -150,14 +152,15 @@ Screen(
       "onPress" : [ {
         "_beagleAction_" : "beagle:resetApplication",
         "route" : {
-          "url" : "/home",
+          "url" : "firstScreenonStack.json",
           "shouldPrefetch" : false
         }
       } ]
     } ]
   }
 }
-```
+-->
+{{% playground file="resetApplication.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -172,7 +175,7 @@ Screen(
                 text = "Click me  to reset application",
                 onPress = listOf(
                     Navigate.ResetApplication(
-                        route = Route.Remote("/home")
+                        route = Route.Remote("firstScreenonStack.json")
                     )
                 )
             )
@@ -182,5 +185,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Test this example on Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

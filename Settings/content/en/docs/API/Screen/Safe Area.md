@@ -15,16 +15,16 @@ Class that helps on your screen's components area. The `Safe Area` guarantees th
 
 | **Attribute** | **Type** | **Definition** |
 | :--- | :--- | :--- |
-| top | Bool | Enables a constraint of _`SafeArea`_ only in top of the screen. |
-| bottom | Bool | Enables a constraint de_`SafeArea`_ only in the bottom of the screen. |
-| leading | Bool | Enables a constraint de_`SafeArea`_ only in the left side of the screen. |
-| trailing | Bool | Enables a constraint_`SafeArea`_ only in the right side of the screen. |
+| top | Boolean | Enables a constraint of _`SafeArea`_ only in top of the screen. |
+| bottom | Boolean | Enables a constraint de_`SafeArea`_ only in the bottom of the screen. |
+| leading | Boolean | Enables a constraint de_`SafeArea`_ only in the left side of the screen. |
+| trailing | Boolean | Enables a constraint_`SafeArea`_ only in the right side of the screen. |
 
 ## **How to use it?**
 
-{{< tabs name="T158" >}}
+{{< tabs id="T158" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:safeArea.json
 {
    "_beagleComponent_":"beagle:screenComponent",
    "safeArea":{
@@ -43,7 +43,8 @@ Class that helps on your screen's components area. The `Safe Area` guarantees th
       ]
    }
 }
-```
+-->
+{{% playground file="safeArea.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}

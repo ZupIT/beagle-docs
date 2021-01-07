@@ -31,7 +31,7 @@ Quando esse valor for definido permite que os elementos não sejam mostrado na t
 
 ### 
 
-{{< tabs name="T69" >}}
+{{< tabs id="T69" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -82,3 +82,5 @@ private func screen() -> Screen {
 ```
 {{% /tab %}}
 {{< /tabs >}}
+
+**Para saber mais sobre Display, acesse a documentação do [**Yoga Layout**](https://yogalayout.com/docs/flex/).**

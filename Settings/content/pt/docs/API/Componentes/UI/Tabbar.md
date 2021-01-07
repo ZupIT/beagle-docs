@@ -36,7 +36,7 @@ Se o título e ícone não forem declarados no `Tab Item`, o espaço vazio perma
 
 ## Como usar?
 
-No exemplo a seguir, são utilizados outros componentes para explicar o TabBar: o [**PageView**](../../layout/pageview) e o [**Contexto**](../../../contexto/). 
+No exemplo a seguir, são utilizados outros componentes para explicar o TabBar: o [**PageView**](/pt/docs/api/componentes/layout/pageview) e o [**Contexto**](/pt/docs/api/contexto/). 
 
 O **Page View** é utilizado para renderizar as páginas que se quer exibir de acordo com cada aba, ou seja, ele vai criar a visualização de cada uma delas. É nele que você vai definir os componentes que quer exibir ao clicar em cada aba. 
 
@@ -46,9 +46,9 @@ Já o **Contexto** é utilizado para guardar o indicador \(posição\) da aba se
 
 ### Exemplo
 
-{{< tabs name="T138" >}}
+{{< tabs id="T138" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:tabBar.json
 {
     "_beagleComponent_": "beagle:screenComponent",
     "child": {
@@ -90,7 +90,8 @@ Já o **Contexto** é utilizado para guardar o indicador \(posição\) da aba se
         }
     }
 }
-```
+-->
+{{% playground file="tabBar.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -132,10 +133,4 @@ Screen(
 
 | Tab Bar |
 | :---: |
-| ![](/docs-beagle/beagle-tab-view.gif) |
-
-### 👉 [Teste esse componente no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/tabview.json)
-
-{{% alert color="warning" %}}
-Este exemplo não existe no playground, mas você pode copiar e colar o código JSON acima e testa-lo no playground. Esta secção contem mais informações sobre esse exemplo abaixo.
-{{% /alert %}}
+| ![](/beagle-tab-view.gif) |

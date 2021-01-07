@@ -51,7 +51,7 @@ Ao final deste processo, serão gerados dois novos arquivos em seu projeto:
 * **beagle-components.module.ts**
 * **beagle.module.ts.**
 
-![](/docs-beagle/image%20%2815%29.png)
+![](/image%20%2815%29.png)
 
 Abra o arquivo `app.module.ts` e, em seguida, importe o módulo Beagle que acabou de ser gerado ```import { Beagle } from './beagle.module';``` e adicione dentro de ```imports```:
 
@@ -189,7 +189,7 @@ Este processo também deve ser feito para qualquer alteração feita nas proprie
 Depois de finalizado o comando acesse a aplicação em: http://localhost:4200  
 Você deverá ver a tela a seguir:
 
-![](/docs-beagle/image%20%2896%29.png)
+![](/image%20%2896%29.png)
 
 
 

@@ -14,10 +14,10 @@ A estrutura é representada como mostrado abaixo:
 
 | Atributo | Tipo | Obrigatório | Definição |
 | :--- | :--- | :---: | :--- |
-| text | String ou [**Binding**](https://docs.usebeagle.io/api/contexto#bindings) | ✓ | Define o conteúdo em texto a ser exibido. |
+| text | String ou [**Binding**](/pt/docs/api/contexto#binding) | ✓ | Define o conteúdo em texto a ser exibido. |
 | styleId | String |   | Referencia o estilo configurado localmente a ser aplicado no texto. |
 | textColor | String |   | Define a cor do texto em hexadecimal. |
-| alignment | [**TextAlignment**](text#textalignment) |   | Define o alinhamento do conteúdo do texto. |
+| alignment | [**TextAlignment**](#textalignment) |   | Define o alinhamento do conteúdo do texto. |
 
 ### TextAlignment
 
@@ -29,14 +29,15 @@ A estrutura é representada como mostrado abaixo:
 
 ## Como usar?
 
-{{< tabs name="T140" >}}
+{{< tabs id="T140" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:text.json
 {
     "_beagleComponent_": "beagle:text",
     "text": "Hello World!"
 }
-```
+-->
+{{% playground file="text.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -45,5 +46,3 @@ Text(text = "Hello World!")
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste esse componente no Web Playground](https://beagle-playground.netlify.app/#/cloud/cac8ecb56fcf490d9e09ab7adc322f55/text.json)

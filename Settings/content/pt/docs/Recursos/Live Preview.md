@@ -17,25 +17,23 @@ Em outras palavras, o Live Preview dá a opção de editar um código que define
 Desta forma, é possível visualizar as mudanças sem precisar subir um servidor backend.
 
 {{% alert color="info" %}}
-Esta conexão entre frontend e backend é feita via `WebSocket` utilizando a porta :`9721`
+Esta conexão entre frontend e backend é feita via `WebSocket` utilizando a porta: `9721`
 {{% /alert %}}
 
 ## Requisitos
 
 Para usar o `Live Preview` você deve: 
 
-* Usar o [**Beagle SDK**](../../../get-started/instalando-o-beagle/backend) em seu BFF**;**
+* Usar o [**Beagle SDK**](/pt/docs/primeiros-passos/instalando-o-beagle/backend) em seu BFF **;**
 * Instalar o `BeaglePreview` plugin;
 
 ### Configuração do BFF
 
-Você precisa que seu BFF esteja configurado com o Beagle para utilizar o Live Preview. Caso ainda não o tenha, faça o [**download de um projeto inicial pronto**](https://github.com/ZupIT/beagle-examples/tree/master/BeagleSampleBackend). Outra possibilidade que você pode fazer, é o nosso tutorial de [**como implementar um backend**](../get-started/criando-um-projeto-do-zero/case-backend) com o Beagle configurado.
+Você precisa que seu BFF esteja configurado com o Beagle para utilizar o Live Preview. Caso ainda não o tenha, faça o [**download de um projeto inicial pronto**](https://github.com/ZupIT/beagle-examples/tree/master/BeagleSampleBackend). Outra possibilidade que você pode fazer, é o nosso tutorial de [**como implementar um backend**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-backend) com o Beagle configurado.
 
 ### Instalação **do plugin IntelliJ**
 
-Para instalar o `BeaglePreview` entre no link abaixo e clique na opção instalar na IDE:
-
-{% embed url="https://plugins.jetbrains.com/plugin/14575-beagle-sdk-live-preview" caption="Plugin do Live Preview para IntelliJ" %}}
+Para instalar o `BeaglePreview`, [*veja o Live Preview plugin para IntelliJ*](https://plugins.jetbrains.com/plugin/14575-beagle-sdk-live-preview") e clique na opção instalar na IDE.
 
 ## Uso do Live Preview
 
@@ -79,7 +77,7 @@ Se sua função for reconhecida pelo plugin, o símbolo do Beagle aparecerá com
 
 Veja como no exemplo abaixo: 
 
-![](/docs-beagle/livepreviewpluginintellijidea.gif)
+![](/livepreviewpluginintellijidea.gif)
 
 Depois de acionar o plugin para alguma função, basta você salvar as modificações realizadas no seu layout para que o Live Preview atualize a tela sendo renderizada pelo frontend. 
 
@@ -89,7 +87,7 @@ O Live Preview faz isso ao compilar seu código modificado e verificar se existe
 
 Uma vez configurado o seu backend, o próximo passo é configurar o emulador no frontend da sua aplicação com um projeto Beagle Android ou  Beagle iOS. 
 
-{{< tabs name="T88" >}}
+{{< tabs id="T88" >}}
 {{% tab name="Cliente Android" %}}
 ### Passo 1: Instalar o submódulo
 
@@ -194,7 +192,7 @@ startActivity(
 {{% tab name="Cliente iOS" %}}
 ### Passo 1: Instalar o submódulo
 
-Para realizar a instalação, é necessário primeiro já ter seguido os [**passos de instalação do Beagle para iOS**](../../get-started/instalando-o-beagle/ios). Assim os passos seguintes variam de acordo com o método utilizado.
+Para realizar a instalação, é necessário primeiro já ter seguido os [**passos de instalação do Beagle para iOS**](/pt/docs/primeiros-passos/instalando-o-beagle/ios). Assim os passos seguintes variam de acordo com o método utilizado.
 
 #### Utilizando via CocoaPods
 

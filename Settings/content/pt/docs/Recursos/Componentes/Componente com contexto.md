@@ -8,21 +8,21 @@ description: >-
 
 ---
 
-O `ContextComponent` é uma interface precisa ser implementada em componentes que usam o [**Contexto**](../../../../../../../../../api/contexto/#o-que-e), porque é onde está o atributo `context`.
+O `ContextComponent` é uma interface precisa ser implementada em componentes que usam o [**Contexto**](/pt/docs/api/contexto#o-que-é), porque é onde está o atributo `context`.
 
 ## Componentes do Beagle com contexto:
 
-1. [**Container**](../../../../../../../../api/componentes/layout/container)
-2. [**SimpleForm**](../../../../../../../api/componentes/formularios/simple-form)
-3. [**PageView**](../../../../../../api/componentes/layout/pageview)
-4. [**ScrollView**](../../../../../api/componentes/layout/scrollview)
-5. [**TabView**](../../../../api/componentes/ui/tabview)
+1. [**Container**](/pt/docs/api/componentes/layout/container)
+2. [**SimpleForm**](/pt/docs/api/componentes/formulários/simple-form)
+3. [**PageView**](/pt/docs/api/componentes/layout/pageview)
+4. [**ScrollView**](/pt/docs/api/componentes/layout/scrollview)
+5. [**TabView**](/pt/docs/api/componentes/ui/tabview)
 
 ## Componente customizado com contexto
 
 Segue abaixo um exemplo de componente customizado com o contexto:
 
-{{< tabs name="T71" >}}
+{{< tabs id="T71" >}}
 {{% tab name="Android" %}}
 ```kotlin
 @RegisterWidget
@@ -54,5 +54,5 @@ public struct CustomComponent: RawComponent, HasContext {
 {{< /tabs >}}
 
 {{% alert color="warning" %}}
-Se você quiser criar componentes customizados no iOS, é **necessário registrá-lo**! Veja como registrar [**aqui**](../../customizacao/beagle-para-ios/widgets-customizados#passo-2-registrar-o-widget).
+Se você quiser criar componentes customizados no iOS, é **necessário registrá-lo**! Veja como registrar [**aqui**](/pt/docs/recursos/customização/beagle-para-ios/widgets-customizados#passo-2-registrar-o-widget).
 {{% /alert %}}

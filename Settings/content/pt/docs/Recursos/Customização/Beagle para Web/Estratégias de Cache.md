@@ -8,7 +8,7 @@ description: >-
 
 ---
 
-O Beagle Web oferece algumas estratégias de cache, entre elas o [**protocolo de cache padrão do Beagle guiado pelo backend**](https://docs.usebeagle.io/features/cache#como-o-protocolo-de-cache-funciona). 
+O Beagle Web oferece algumas estratégias de cache, entre elas o [**protocolo de cache padrão do Beagle guiado pelo backend**](/pt/docs/recursos/cache#como-o-protocolo-de-cache-funciona). 
 
 Outras estratégias que você pode usar são:
 
@@ -54,7 +54,7 @@ Se o seu backend estiver com cache desabilitado, os payloads da árvore serão s
 
 ### **2. beagle-cache-only**
 
-Estratégia que implementa apenas no caso do [**protocolo de cache do Beagle**](../../../cache/#como-o-protocolo-de-cache-funciona). Isso significa que ela funciona igual à estratégia padrão, mas sem o fallback. 
+Estratégia que implementa apenas no caso do [**protocolo de cache do Beagle**](/pt/docs/recursos/cache#como-o-protocolo-de-cache-funciona). Isso significa que ela funciona igual à estratégia padrão, mas sem o fallback.
 
 Quando você habilita essa estratégia, a árvore que está no cache só é utilizada se tiver um max-age válido ou se receber o status de 304 do backend. 
 
@@ -100,7 +100,7 @@ Para mudar a estratégia de cache, você deve utilizar o parâmetro `strategy` c
 
 Nas configs abaixo, você encontra um exemplo de como alterar a estratégia para`network-only`:
 
-{{< tabs name="T79" >}}
+{{< tabs id="T79" >}}
 {{% tab name="Angular" %}}
 ```text
 @BeagleModule({

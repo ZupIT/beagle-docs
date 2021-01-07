@@ -14,17 +14,17 @@ description: >-
 
 | Atributo | Tipo | Obrigatório | Definição |
 | :--- | :--- | :---: | :--- |
-| condition | Boolean ou [**Binding**](../../contexto/#binding) | ✓ | condição para definir qual ação será executada. |
-| onTrue | List&lt;Action&gt; |   | lista de ações que será executada quando a condição for verdadeira. |
-| onFalse | List&lt;Action&gt; |   | lista de ações que será executada quando a condição for falsa. |
+| condition | Boolean ou [**Binding**](/pt/docs/api/contexto#binding) | ✓ | Condição para definir qual ação será executada. |
+| onTrue | List&lt;Action&gt; |   | Lista de ações que será executada quando a condição for verdadeira. |
+| onFalse | List&lt;Action&gt; |   | Lista de ações que será executada quando a condição for falsa. |
 
 ## Como usar?
 
 O exemplo abaixo é um `Container` com um contexto que possui o valor 18  e no evento `onPress` do botão foi definido uma ação do tipo `Condition` que verifica se o valor é igual a 21 e mostra um `Alert` dependendo do valor do contexto.
 
-{{< tabs name="T108" >}}
+{{< tabs id="T108" >}}
 {{% tab name="JSON" %}}
-```
+<!-- json-playground:condition.json
 {
    "_beagleComponent_":"beagle:container",
    "children":[
@@ -58,7 +58,8 @@ O exemplo abaixo é um `Container` com um contexto que possui o valor 18  e no e
       "value":18
    }
 }
-```
+-->
+{{% playground file="condition.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}

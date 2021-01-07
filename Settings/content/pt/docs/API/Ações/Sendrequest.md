@@ -16,21 +16,21 @@ A estrutura do Send Request é:
 
 | **Atributo** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :---: | :--- |
-| url | String ou [**Binding**](../../../../contexto/#binding) | ✓ | URL do servidor. |
-| method | RequestActionMethod ou [**Binding**](https://docs.usebeagle.io/v/v1.0-en/api/context#bindings) | ✓ | Método HTTP. |
-| headers | Map &lt;String, String&gt; ou [**Binding**](../contexto/#binding) |   | Itens do header para a requisição. |
+| url | String ou [**Binding**](/pt/docs/api/contexto#binding) | ✓ | URL do servidor. |
+| method | RequestActionMethod ou [**Binding**](/pt/docs/api/contexto#binding) | ✓ | Método HTTP. |
+| headers | Map &lt;String, String&gt; ou [**Binding**](/pt/docs/api/contexto#binding) |   | Itens do header para a requisição. |
 | data | Any |   | Conteúdo a ser enviado junto a requisição. |
-| onSuccess | List&lt;[**Action**](./)&gt; |   | Ação tratativa de sucesso. |
-| onError | List&lt;[**Action**](./)&gt; |   | Ação tratativa de erro. |
-| onFinish | List&lt;[**Action**](./)&gt; |   | Ação tratativa de finalização. |
+| onSuccess | List&lt;[**Action**](/pt/docs/api/ações)&gt; |   | Ação tratativa de sucesso. |
+| onError | List&lt;[**Action**](/pt/docs/api/ações)&gt; |   | Ação tratativa de erro. |
+| onFinish | List&lt;[**Action**](/pt/docs/api/ações)&gt; |   | Ação tratativa de finalização. |
 
 ## Como usar?
 
 Segue abaixo um exemplo de botão que faz uma requisição do tipo `POST` enviando dados de um usuário:
 
-{{< tabs name="T127" >}}
+{{< tabs id="T127" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:send.json
 {
   "_beagleComponent_": "beagle:container",
   "children": [
@@ -40,7 +40,7 @@ Segue abaixo um exemplo de botão que faz uma requisição do tipo `POST` envian
       "onPress": [
         {
             "beagleAction":"beagle:sendRequest",
-            "url":"https://myUrl.com/endpoint"",
+            "url":"https://myUrl.com/endpoint",
             "method":"POST",
             "headers":{
                "Content-Type":"application/json"
@@ -77,7 +77,8 @@ Segue abaixo um exemplo de botão que faz uma requisição do tipo `POST` envian
     }
   ]
 }
-```
+-->
+{{% playground file="send.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -122,5 +123,3 @@ Button(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste essa ação no Web Playground](https://beagle-playground.netlify.app/#/cloud/835cfa6d6811402cb338c9afeb1507cf/sendRequest.json)

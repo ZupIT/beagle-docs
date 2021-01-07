@@ -53,7 +53,7 @@ Follow the steps below to import the project you have created. First, open **int
 
 ### Step 1: Configure the project
 
-As a starting point, follow this step by step to [**install the backend**](../../../../installing-beagle/beagle-backend).
+As a starting point, follow this step by step to [**install the backend**](/docs/get-started/installing-beagle/backend).
 
 ### Step 2: Define the structure 
 
@@ -65,7 +65,7 @@ The second step is to create some packages to better organize the project. They 
 4. Repeat the process creating the other two packages, naming them **`service`** and **`controller`** 
 5. After creating the packages, your screen should look like this:
 
-![](/docs-beagle/image%20%2829%29.png)
+![](/image%20%2829%29.png)
 
 
 
@@ -182,7 +182,7 @@ Now it's time to start your application, follow the next steps:
 
 Your screen should look like this:
 
-![](/docs-beagle/sem-titulo2.png)
+![](/sem-titulo2.png)
 
 ### **Step 2: Make a request**
 
@@ -245,8 +245,8 @@ In order to use the backend service, you must have the front end prepared for Be
 
 To learn more about configuring your frontend environment, see more at:
 
-👉 Beagle implementation tutorial for [**Android**](case-android/).
+👉 Beagle implementation tutorial for [**Android**](/docs/get-started/creating-a-project-from-scratch/case-android/).
 
-👉Beagle implementation tutorial for [**iOS**](../../using-beagle/ios).
+👉Beagle implementation tutorial for [**iOS**](/docs/get-started/creating-a-project-from-scratch/case-ios).
 
-👉Beagle implementation tutorial for  [**Web**](case-web).
+👉Beagle implementation tutorial for  [**Web**](/docs/get-started/creating-a-project-from-scratch/case-web).

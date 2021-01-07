@@ -23,22 +23,26 @@ A sua estrutura é representada como mostrado abaixo:
 
 Irá referenciar uma imagem que já está nos assets locais.
 
-{{< tabs name="T136" >}}
+{{< tabs id="T136" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:imagePathLocal.json
 {
-  "_beagleImagePath_": "local",
-  "url": "/imagemlocal.png",
-  "mobileId": "imagemlocal"
+  "_beagleComponent_": "beagle:image",
+      "path": {
+        "_beagleImagePath_": "local",
+        "url": "public/web-illustration.png",
+        "mobileId": "mobileIllustration"
+      }
 }
-```
+-->
+{{% playground file="imagePathLocal.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
 ```javascript
 ImagePath.Local(
-  webUrl = "/imagePath.png",
-  mobileId = "imagePath"
+  webUrl = "public/web-illustration.png",
+  mobileId = "mobileIllustration"
 )
 ```
 {{% /tab %}}
@@ -51,33 +55,28 @@ A sua estrutura é representada como mostrado abaixo:
 | **Atributos** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :--- | :--- |
 | remoteUrl | String |     ✓ | Caminho absoluto ou relativo da imagem a ser baixada. |
-| placeholder | [**ImagePath.Local**](imagepath#imagepath-local) |  | É possível passar um asset local no aplicativo que será mostrado enquanto a URL remota é carregada. |
+| placeholder | [**ImagePath.Local**](#imagepathlocal) |  | É possível passar um asset local no aplicativo que será mostrado enquanto a URL remota é carregada. |
 
 Irá referenciar uma imagem que esteja hospedada em outro host ou relativo no próprio server.
 
-{{< tabs name="T137" >}}
+{{< tabs id="T137" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:imagePathRemote.json
 {
-  "_beagleImagePath_": "remote",
-  "url": "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
-  "placeholder": {
-    "_beagleImagePath_": "local",
-    "url": "/imagemlocal.png",
-    "mobileId": "imagemlocal"
-  }
+  "_beagleComponent_": "beagle:image",
+"path": {
+"_beagleImagePath_": "remote",
+"url": "https://mcdn.wallpapersafari.com/medium/8/37/zlwnoM.jpg"
 }
-```
+}
+-->
+{{% playground file="imagePathRemote.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 ImagePath.Remote(
-  remoteUrl = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
-  placeHolder = ImagePath.Local(
-      webUrl = "/imagePath.png",
-      mobileId = "imagePath"
-  )
+  remoteUrl = "https://mcdn.wallpapersafari.com/medium/8/37/zlwnoM.jpg"
 )
 ```
 {{% /tab %}}

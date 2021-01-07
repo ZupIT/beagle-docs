@@ -20,6 +20,6 @@ O playground pode ser acessado pelo **seguinte link**:
 
 Você terá acesso ao seguinte projeto demo:
 
-![](/docs-beagle/image%20%2827%29.png)
+![](/image%20%2827%29.png)
 
 O menu de arquivos fica à esquerda, no centro fica o JSON do arquivo selecionado, e a direita é onde você pode ver o preview do JSON selecionado.

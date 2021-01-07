@@ -1,5 +1,5 @@
 ---
-title: Popview
+title: PopView
 weight: 258
 description: Here you'll find PopView description.
 ---
@@ -16,9 +16,9 @@ On the example below there's a screen coming from BFF with a button that when cl
 
 To test, your BFF's endpoint should return the screen with the code below and call it in the frontend. 
 
-{{< tabs name="T97" >}}
+{{< tabs id="T97" >}}
 {{% tab name="JSON" %}}
-```text
+<!-- json-playground:popView.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -29,7 +29,8 @@ To test, your BFF's endpoint should return the screen with the code below and ca
     } ]
   }
 }
-```
+-->
+{{% playground file="popView.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -45,5 +46,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Test this example on Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

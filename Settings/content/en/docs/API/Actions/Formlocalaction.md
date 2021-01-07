@@ -1,5 +1,5 @@
 ---
-title: Formlocalaction
+title: FormLocalAction
 weight: 240
 description: >-
   You will find here the definition of FormLocalAction and details about its
@@ -9,7 +9,7 @@ description: >-
 ---
 
 {{% alert color="warning" %}}
-This action has been **deprecated** alongside Form
+This action has been **deprecated** alongside Form.
 {{% /alert %}}
 
 ## What is it? 

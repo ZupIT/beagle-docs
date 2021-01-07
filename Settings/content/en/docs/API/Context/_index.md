@@ -29,31 +29,35 @@ Context can be used when you want to fill values in a different moment from the 
 
 On the example below, you can see a context with data of a user and it's showed some information in a `Text`: 
 
-{{< tabs name="T133" >}}
+{{< tabs id="T133" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:context.json
 {
-  "_beagleComponent_": "beagle:container",
-  "context": {
-    "id": "myData",
-    "value": {
-      "id": "0000",
-      "name": "User",
-      "age": "18"
-    },
-  },
-  "children": [
-    {
-      "_beagleComponent_": "beagle:text",
-      "value": "Name: @{myData.name}"
-    },
-    {
-      "_beagleComponent_": "beagle:text",
-      "value": "Age: @{myData.age}"
-    }
-  ]
+   "_beagleComponent_":"beagle:screenComponent",
+   "child":{
+      "_beagleComponent_":"beagle:container",
+      "children":[
+         {
+            "_beagleComponent_":"beagle:text",
+            "text":"Name: @{myData.name}"
+         },
+         {
+            "_beagleComponent_":"beagle:text",
+            "text":"Age: @{myData.age}"
+         }
+      ],
+      "context":{
+         "id":"myData",
+         "value":{
+            "id":"0000",
+            "name":"User",
+            "age":"18"
+         }
+      }
+   }
 }
-```
+-->
+{{% playground file="context.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -76,7 +80,7 @@ Container(
 {{% /tab %}}
 {{< /tabs >}}
 
-Notice the context was declared and its values were defined and used to fill the texts, however it is possible to define these values after using a [`SetContext()`](../../../../actions/setcontext) method.
+Notice the context was declared and its values were defined and used to fill the texts, however it is possible to define these values after using a [`SetContext()`](/docs/api/actions/setcontext) method.
 
 This way, you can fill the component's data that weren't yet in the JSON.
 
@@ -107,21 +111,35 @@ When there is a **defined scope** to the context inside your JSON or your declar
 
 See the example below on how it works: 
 
-{{< tabs name="T134" >}}
+{{< tabs id="T134" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:contextExplicito.json
 {
-  "_beagleComponent_" : "beagle:container",
-  "children" : [ {
-    "_beagleComponent_" : "beagle:text",
-    "text" : "@{myText}"
-  } ],
-  "context" : {
-    "id" : "myText",
-    "value" : "Hello Beagle"
-  }
+   "_beagleComponent_":"beagle:screenComponent",
+   "child":{
+      "_beagleComponent_":"beagle:container",
+      "children":[
+         {
+            "_beagleComponent_":"beagle:text",
+            "text":"Name: @{myData.name}"
+         },
+         {
+            "_beagleComponent_":"beagle:text",
+            "text":"Age: @{myData.age}"
+         }
+      ],
+      "context":{
+         "id":"myData",
+         "value":{
+            "id":"0000",
+            "name":"User",
+            "age":"18"
+         }
+      }
+   }
 }
-```
+-->
+{{% playground file="contextExplicito.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -144,7 +162,7 @@ Container(
 {{% /tab %}}
 {{< /tabs >}}
 
-Notice the context was declared and its values were defined and used to fill the texts, however it is possible to define these values using the [`SetContext()`](../actions/setcontext) method later. You can fill the component's with data that wasn't in the JSON. 
+Notice the context was declared and its values were defined and used to fill the texts, however it is possible to define these values using the [`SetContext()`](/docs/api/actions/setcontext) method later. You can fill the component's with data that wasn't in the JSON. 
 
 ### 2. Implicit context 
 
@@ -164,19 +182,50 @@ The other implicit context characteristic is that it always have the same `id`  
 
 Check out on the following example that used the `onBlur` event, it works the same way as `onChange`, but makes a request when the input component lost its focus: 
 
-```javascript
+{{< tabs id="C152" >}}
+{{% tab name="JSON" %}}
+<!-- json-playground:contextImplicit.json
 {
-  "_beagleComponent_": "beagle:textinput",
-  "label": "CEP",
-  "onBlur": [
-      {
-          "_beagleAction_": "beagle:sendRequest",
-          "url": "https://viacep.com.br/ws/@{onBlur.value}/json",
-          "method": "GET"
-      }
-  ]
+   "_beagleComponent_":"beagle:screenComponent",
+   "child":{
+      "_beagleComponent_":"beagle:container",
+      "children":[
+         {
+            "_beagleComponent_":"beagle:textInput",
+            "placeholder":"ZIP",
+            "onBlur":[
+               {
+                  "_beagleAction_":"beagle:alert",
+                  "message":"example of implícit context: @{onBlur.value}"
+               }
+            ]
+         }
+      ]
+   }
 }
+-->
+{{% playground file="contextImplicit.json" language="en" %}}
+{{% /tab %}}
+
+{{% tab name="Kotlin DSL" %}}
+```kotlin
+Screen(
+        child = Container(
+            children = listOf(
+                TextInput(
+                    placeholder = "CEP",
+                    onBlur = listOf(
+                        Alert(
+                            message = "example of implícit context: @{onBlur.value}"
+                        )
+                    )
+                )
+            )
+        )
+    )
 ```
+{{% /tab %}}
+{{< /tabs >}}
 
 Besides the `onBlur` context had never been declared on the example above, you can use it because it was created in an implicit way by the `onBlur` event. 
 
@@ -207,9 +256,9 @@ A binding is identified by a prefix `@{` and a suffix `}`. Meaning that everythi
 
 See the example below on how it works: 
 
-{{< tabs name="T135" >}}
+{{< tabs id="T135" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:binding.json
 {
   "_beagleComponent_" : "beagle:container",
   "children" : [ {
@@ -221,7 +270,8 @@ See the example below on how it works:
     "value" : "Hello Beagle"
   }
 }
-```
+-->
+{{% playground file="binding.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="kotlin DSL" %}}
@@ -254,9 +304,9 @@ It is the binding type which the context value it will be generally, a key/value
 * To access the CPF, use the `@{user.cpf}` binding. 
 * To access the phone number, use the `@{user.phoneNumber.cellphone}` binding.
 
-{{< tabs name="T136" >}}
+{{< tabs id="T136" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:bindingMultiValued.json
 {
   "_beagleComponent_" : "beagle:container",
   "children" : [ {
@@ -274,7 +324,8 @@ It is the binding type which the context value it will be generally, a key/value
     }
   }
 }
-```
+-->
+{{% playground file="bindingMultiValued.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -315,9 +366,9 @@ If a vector is used on a context value, to access a specific position, you have 
 
 * To access the second film title \("Contact"\), use the `@{movies.titles[1].title}`binding. 
 
-{{< tabs name="T137" >}}
+{{< tabs id="T137" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:bindingVector.json
 {
   "_beagleComponent_" : "beagle:container",
   "children" : [ {
@@ -340,7 +391,8 @@ If a vector is used on a context value, to access a specific position, you have 
     }
   }
 }
-```
+-->
+{{% playground file="bindingVector.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -404,7 +456,7 @@ In each system, the binding must be declared like:
 
 Examples for each operational system:
 
-{{< tabs name="T138" >}}
+{{< tabs id="T138" >}}
 {{% tab name="Android" %}}
 ```kotlin
 data class MyComponent(
@@ -446,7 +498,7 @@ public struct MyComponent: Widget {
 
 The way to refer an expression on Kotlin's DSL must be like this:
 
-{{< tabs name="T139" >}}
+{{< tabs id="T139" >}}
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 MyComponent(
@@ -458,7 +510,7 @@ MyComponent(
 
 However, in case you have to pass a **hardcoded value,** you must use this way:
 
-{{< tabs name="T140" >}}
+{{< tabs id="T140" >}}
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 MyComponent(
@@ -467,5 +519,3 @@ MyComponent(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-## 👉 [See some examples in the Playground](https://beagle-playground.netlify.app/#/demo/component-interaction)

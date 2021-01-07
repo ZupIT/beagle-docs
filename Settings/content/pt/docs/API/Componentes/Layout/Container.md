@@ -14,21 +14,21 @@ A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo**  | Obrigatório | **Definição** |
 | :--- | :--- | :---: | :--- |
-| children | List &lt;[ServerDriven Component](../../widget)&gt; | ✓ | Define a lista de componentes que fazem parte do container |
-| context | [ContextData](../../../../contexto/) |   | É o [contexto](../../contexto/) contido por este Widget. |
-| onInit | List&lt;[Action](../../acoes/)&gt; |   | Um parâmetro que te possibilita definir uma lista de ações a serem executadas assim que esse Widget seja exibido. |
+| children | List &lt;[ServerDriven Component](/pt/docs/api/componentes)&gt; | ✓ | Define a lista de componentes que fazem parte do container |
+| context | [ContextData](/pt/docs/api/contexto/) |   | É o [contexto](/pt/docs/api/contexto/) contido por este Widget. |
+| onInit | List&lt;[Action](/pt/docs/api/ações)&gt; |   | Um parâmetro que te possibilita definir uma lista de ações a serem executadas assim que esse Widget seja exibido. |
 
 ## Como usar?
 
-{{< tabs name="T145" >}}
+{{< tabs id="T145" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:container.json
 {
     "_beagleComponent_": "beagle:container",
     "children": [
         {
           "_beagleComponent_": "beagle:text",
-          "text": "@{myContext.value}"
+          "text": "@{myContext}"
         }
     ],
     "context": {
@@ -36,14 +36,15 @@ A sua estrutura é representada como mostrado abaixo:
         "value": "Hello world!" 
     }
 }
-```
+-->
+{{% playground file="container.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 Container(
     children = listOf(
-        Text(text = "@{myContext.value}")
+        Text(text = "@{myContext}")
     ),
     context = ContextData(
         id = "myContext",
@@ -53,5 +54,3 @@ Container(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [ Teste esse componente no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/container.json)​

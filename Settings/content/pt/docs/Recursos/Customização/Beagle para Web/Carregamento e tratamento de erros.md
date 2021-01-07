@@ -12,7 +12,7 @@ A biblioteca do Beagle já possui por padrão um componente que é chamado quand
 
 Para criar um componente loading, siga os passos abaixo: 
 
-{{< tabs name="T74" >}}
+{{< tabs id="T74" >}}
 {{% tab name="React" %}}
 No React:
 
@@ -103,7 +103,7 @@ export class Beagle { }
 ```
 
 {{% alert color="warning" %}}
-Os arquivos `beagle.module.ts` e `beagle-components.module.ts` são gerados automaticamente pela biblioteca no angular. Se você não encontrou [verifique sua instalação](../../../../../../get-started/instalando-o-beagle/)
+Os arquivos `beagle.module.ts` e `beagle-components.module.ts` são gerados automaticamente pela biblioteca no angular. Se você não encontrou [**verifique sua instalação**](/pt/docs/primeiros-passos/instalando-o-beagle/)
 {{% /alert %}}
 {{% /tab %}}
 {{< /tabs >}}
@@ -122,7 +122,7 @@ Para este componente a biblioteca expõe uma interface chamada `ErrorComponentPa
 
 Usando essa interface você pode criar o componente, veja o exemplo de acordo com cada framework:
 
-{{< tabs name="T75" >}}
+{{< tabs id="T75" >}}
 {{% tab name="React" %}}
 No React, é preciso criar um `Functional Component` que usa a interface `ErrorComponentParams`, note que ao usá-la você tem acesso à duas `props` errors e retry, que são respectivamente a lista de erros e o método `retry` ambos descritos na interface:
 
@@ -233,7 +233,7 @@ export class Beagle { }
 ```
 
 {{% alert color="warning" %}}
-Os arquivos `beagle.module.ts` e `beagle-components.module.ts` são gerados automaticamente pela biblioteca no angular. Se você não os encontrou [**verifique sua instalação**](../../../get-started/instalando-o-beagle/)
+Os arquivos `beagle.module.ts` e `beagle-components.module.ts` são gerados automaticamente pela biblioteca no angular. Se você não os encontrou [**verifique sua instalação**](/pt/docs/primeiros-passos/instalando-o-beagle/)
 {{% /alert %}}
 {{% /tab %}}
 {{< /tabs >}}

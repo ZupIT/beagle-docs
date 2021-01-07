@@ -12,8 +12,8 @@ description: >-
 
 É possível realizar duas principais maneiras de estilização com Beagle para Web. São elas: 
 
-1. [**Adição de classes de estilo** ](web#adicionando-classes-de-estilo)
-2. [**Estilização de componentes via JSON**](web#estilizando-componentes-via-json)
+1. [**Adição de classes de estilo** ](#adicionando-classes-de-estilo)
+2. [**Estilização de componentes via JSON**](#estilizando-componentes-via-json)
 
 Abaixo, você encontra a explicação detalhada para cada uma delas. 
 
@@ -38,7 +38,7 @@ No exemplo abaixo, você vê como foi feita a adição para uma classe hipotéti
 
 O processo de inserir uma classe ao componente varia de acordo com o framework que estiver utilizando. Confira o processo para cada um deles nas abas a seguir:
 
-{{< tabs name="T87" >}}
+{{< tabs id="T87" >}}
 {{% tab name="Angular" %}}
 No Angular, há duas formas de adicionar a classe que recebemos da propriedade `styleId`:
 
@@ -69,7 +69,7 @@ yarn serve
 
 Depois que você adicionar o enum None à propriedade encapsulation do @Component\(\), é necessário fazer com que ela seja utilizada. Veja como na imagem abaixo: 
 
-![](/docs-beagle/image%20%2812%29.png)
+![](/image%20%2812%29.png)
 
 {{% alert color="info" %}}
 Para entender mais sobre o **ViewEncapsulation**, acesse a [**documentação do Angular.**](https://angular.io/api/core/ViewEncapsulation#viewencapsulation)
@@ -252,5 +252,5 @@ Por fim, você tem a possibilidade de adicionar propriedades no modelo de layout
 ```
 
 {{% alert color="info" %}}
-Além dessas funcionalidades, alguns componentes possuem propriedades específicas como mudança na cor do texto ou alinhamento. Conheça mais sobre os [**componentes do Beagle**](../../../api/componentes/)
+Além dessas funcionalidades, alguns componentes possuem propriedades específicas como mudança na cor do texto ou alinhamento. Conheça mais sobre os [**componentes do Beagle**](/pt/docs/api/componentes/)
 {{% /alert %}}

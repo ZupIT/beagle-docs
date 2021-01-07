@@ -19,7 +19,7 @@ Para iniciar o projeto é preciso utilizar o Visual Studio Code. Caso ainda não
 
 Após a instalação, siga os passos de acordo com o framework escolhido: 
 
-{{< tabs name="T8" >}}
+{{< tabs id="T8" >}}
 {{% tab name="Angular" %}}
 **Passo 1:** Instale o [**Angular CLI**](https://cli.angular.io/), abra o terminal e use o comando abaixo:
 
@@ -29,7 +29,7 @@ ng new caseAngular
 
 Aguarde o CLI terminar a criação do projeto.
 
-![](/docs-beagle/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-M9PRY_vOWaeZoXKLq2p%2F-M9PUdUA5t1QcYXL3XJ7%2Fimage.png?alt=media&token=a3869009-df72-4a8c-940a-e040aa47a77a)
+![](/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-M9PRY_vOWaeZoXKLq2p%2F-M9PUdUA5t1QcYXL3XJ7%2Fimage.png?alt=media&token=a3869009-df72-4a8c-940a-e040aa47a77a)
 
 **Passo 2:** entre na pasta do projeto gerado `cd caseAngular`, adicione o **Beagle Angular**  ao seu repositório com um dos comandos abaixo de acordo com seu gerenciador de pacotes:
 
@@ -43,7 +43,7 @@ yarn add @zup-it/beagle-angular
 
  Agora, aguarde a instalação.
 
-![](/docs-beagle/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-M9PRY_vOWaeZoXKLq2p%2F-M9PYjULyS3UHn633rQT%2Fimage.png?alt=media&token=bec6af4b-c54e-47ae-b72e-bacd0132ba81)
+![](/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-M9PRY_vOWaeZoXKLq2p%2F-M9PYjULyS3UHn633rQT%2Fimage.png?alt=media&token=bec6af4b-c54e-47ae-b72e-bacd0132ba81)
 
 **Passo 3:** digite um desses comandos e aperte o enter:
 
@@ -60,7 +60,7 @@ npx beagle init
 * Na pergunta '**Path to the module with the components to use with beagle \(press enter to use default\)' -** digite qual o caminho do módulo que será usado para o Beagle, como o projeto foi criado agora, não há módulos ainda, portanto aperte enter sem informar nada. 
 * Na pergunta '**What's the base url of the backend providing your beagle JSONs? \(press enter to use default\)' -** digite qual será a URL base do backend que será utilizada para resgatar os JSONs, aqui será usada o mockyio, então digite `https://www.mocky.io/v2/`e aperte enter. Aguarde a configuração terminar: 
 
-![](/docs-beagle/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-M9PRY_vOWaeZoXKLq2p%2F-M9Par3gM73EiZtMPE5T%2Fimage.png?alt=media&token=fa081171-d619-4de9-b0f6-8b8173e7dffb)
+![](/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-M9PRY_vOWaeZoXKLq2p%2F-M9Par3gM73EiZtMPE5T%2Fimage.png?alt=media&token=fa081171-d619-4de9-b0f6-8b8173e7dffb)
 
 * Foram criados dois arquivos em seu projeto `beagle-components.module.ts` e `beagle.module.ts`.
 {{% /tab %}}
@@ -78,7 +78,7 @@ ou
 yarn create react-app case-react --template typescript
 ```
 
-![](/docs-beagle/image%20%2811%29.png)
+![](/image%20%2811%29.png)
 
 **Passo 2:** acesse a pasta do projeto `cd case-react` e adicione o **Beagle React** ao seu repositório. No terminal digite:
 
@@ -100,7 +100,7 @@ e aguarde a instalação finalizar.
 
 Agora é hora de configurar os arquivos do Beagle dentro da sua aplicação, siga as instruções:
 
-{{< tabs name="T9" >}}
+{{< tabs id="T9" >}}
 {{% tab name="Angular" %}}
 Abra o arquivo `app.module.ts` e importe o módulo Beagle que acabou de ser gerado:
 
@@ -145,7 +145,7 @@ export class Beagle {}
 {{% tab name="React" %}}
 No caminho `/src` crie uma outra pasta com o nome **beagle** e dentro dela um novo arquivo chamado `beagle-service.ts`Sua estrutura deve estar parecida com a imagem a seguir:
 
-![](/docs-beagle/image%20%2863%29.png)
+![](/image%20%2863%29.png)
 
 Agora, abra o arquivo criado `beagle-service.ts` e copie o código:
 
@@ -196,7 +196,7 @@ JSON utilizado como exemplo.
 
 Agora é necessário adicionar na aplicação o local onde os componentes serão renderizados via `JSON`. A biblioteca Beagle fornece um componente com essa funcionalidade o Beagle remote view, siga os passos para configurar: 
 
-{{< tabs name="T11" >}}
+{{< tabs id="T11" >}}
 {{% tab name="Angular" %}}
 
 Abra o arquivo `app.component.html` e substitua todo o conteúdo pelo código abaixo. No route adicione o caminho relativo ao JSON remoto, será usado o: /welcome.
@@ -248,7 +248,7 @@ Neste passo é apontado onde você deseja renderizar o layout definido no arquiv
 
 Depois de finalizar a configuração básica do projeto, agora é preciso rodar um dos comandos abaixo para inicializar a aplicação:
 
-{{< tabs name="T12" >}}
+{{< tabs id="T12" >}}
 {{% tab name="Angular" %}}
 Se você usa o **npm**:
 

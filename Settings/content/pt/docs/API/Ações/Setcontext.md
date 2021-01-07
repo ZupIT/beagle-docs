@@ -21,16 +21,16 @@ A estrutura do SetContext é:
 | path | String |   | Ponto específico do contexto para ser alterado no caso de arrays e mapas &lt;chave, valor&gt;. |
 
 {{% alert color="info" %}}
-Conheça mais sobre o [**contexto no Beagle**](../../contexto/).
+Conheça mais sobre o [**contexto no Beagle**](/pt/docs/api/contexto/).
 {{% /alert %}}
 
 ## Como usar?
 
 Abaixo temos um exemplo de um texto que é preenchido por contexto e possui um valor inicial "Set Context Example" e no evento de clique do botão o valor do contexto é alterado para "Context has changed".
 
-{{< tabs name="T128" >}}
+{{< tabs id="T128" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:setcontext.json
 {
   "_beagleComponent_": "beagle:container",
   "context":{
@@ -44,7 +44,7 @@ Abaixo temos um exemplo de um texto que é preenchido por contexto e possui um v
     },
     {
       "_beagleComponent_": "beagle:button",
-      "text": "Open Modal",
+      "text": "Change context",
       "onPress": [
         {
           "_beagleAction_": "beagle:setContext",
@@ -55,7 +55,8 @@ Abaixo temos um exemplo de um texto que é preenchido por contexto e possui um v
     }
   ]
 }
-```
+-->
+{{% playground file="setcontext.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -64,7 +65,7 @@ Container(
     children = listOf(
         Text(text = "@{myContext}"),
         Button(
-             text = "Open Modal",
+             text = "Change context",
              onPress = listOf(
                   SetContext(
                        contextId = "myContext",
@@ -81,5 +82,3 @@ Container(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste essa ação no Web Playground](https://beagle-playground.netlify.app/#/cloud/701b73771594478795b9c0dc6e088c0b/setContext.json)

@@ -8,7 +8,7 @@ description: >-
 
 ---
 
-Some elements provided by Beagle can be better used in some platforms than other, for example, [**ScrollView**](https://docs.usebeagle.io/v/v1.0-en/api/components/layout/scrollview) works better in mobile and it is not needed for web. 
+Some elements provided by Beagle can be better used in some platforms than other, for example, [**ScrollView**](/docs/api/components/layout/scrollview) works better in mobile and it is not needed for web. 
 
 Beagle has a platform specification functionality, so it is able to control which elements are sent by BFF and which platforms will be used. 
 
@@ -28,7 +28,7 @@ This way, the BFF response is intercepted according to the platform which it is 
 
 There are two way you can access this control: 
 
-1. Through flow control structure in your code that verifies which platform your client used to make a request: 
+1. Through **flow control structure** in your code that verifies which platform your client used to make a request: 
 
 ```kotlin
 fun createComponentPlatformDependent(beaglePlatform: BeaglePlatform) = when {
@@ -53,7 +53,7 @@ fun createComponentPlatformDependent(beaglePlatform: BeaglePlatform) = when {
 }
 ```
 
- 2. You can specify which platform the element will use and then Beagle will filter the correct elements: 
+ 2. You can **specify which platform** the element will use and then Beagle will filter the correct elements: 
 
 ```kotlin
 Button(text = "mobile only text").forPlatform(BeaglePlatform.MOBILE),
@@ -63,7 +63,7 @@ Button(text = "android only text").forPlatform(BeaglePlatform.ANDROID),
 Button(text = "text free for all")
 ```
 
-You can check [**how to configure this functionality here**](https://docs.usebeagle.io/v/v1.0-en/resources/customization/beagle-for-backend).  
+You can check [**how to configure this functionality, see Beagle customization section**](/docs/resources/customization/beagle-for-backend).  
 
 {{% alert color="info" %}}
 If you use Beagle starters, it is not necessary to configure this functionality manually, because it is already configured.

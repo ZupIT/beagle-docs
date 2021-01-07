@@ -29,7 +29,7 @@ A estrutura do Alert é:
       <td style="text-align:left">title</td>
       <td style="text-align:left">
         <p>String ou</p>
-        <p><a href="../contexto/#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
+        <p><a href="../contexto/#bindings"><b>Binding</b></a></p>
       </td>
       <td style="text-align:center"></td>
       <td style="text-align:left">T&#xED;tulo da caixa de alerta.</td>
@@ -38,14 +38,14 @@ A estrutura do Alert é:
       <td style="text-align:left">message</td>
       <td style="text-align:left">
         <p>String ou</p>
-        <p>&lt;b&gt;&lt;/b&gt;<a href="../contexto/#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
+        <p><a href="../contexto/#bindings"><b>Binding</b></a></p>
       </td>
       <td style="text-align:center">&#x2713;</td>
       <td style="text-align:left">Mensagem da caixa de alerta.</td>
     </tr>
     <tr>
       <td style="text-align:left">onPressOk</td>
-      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;<a href="https://docs.usebeagle.io/api/api-acoes"><b>Action</b></a>&lt;b&gt;&lt;/b&gt;</td>
+      <td style="text-align:left"><a href="https://docs.usebeagle.io/api/api-acoes"><b>Action</b></a></td>
       <td
       style="text-align:center"></td>
         <td style="text-align:left">A&#xE7;&#xE3;o do bot&#xE3;o de confirma&#xE7;&#xE3;o.</td>
@@ -63,9 +63,9 @@ A estrutura do Alert é:
 
 Abaixo segue um exemplo de um botão que ao clicado mostra um Alert:
 
-{{< tabs name="T107" >}}
+{{< tabs id="T107" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:alert.json
 {
     "_beagleComponent_": "beagle:container",
     "children": [
@@ -83,7 +83,8 @@ Abaixo segue um exemplo de um botão que ao clicado mostra um Alert:
           }
         ]
       }
-```
+-->
+{{% playground file="alert.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -105,5 +106,3 @@ Container(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-###  👉 [Teste essa ação no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)​

@@ -14,28 +14,28 @@ Your structure is represented by the attributes below:
 
 | **Attribute** | **Type** | Required | **Definition** |
 | :--- | :--- | :--- | :--- |
-| path | [**ImagePath**](imagepath) or [**Binding**](../../../../context/#bindings) |     ✓ | Refers to a local image or URL of a remote image to be exhibited. |
+| path | [**ImagePath**](/docs/api/components/ui/image/imagepath) or [**Binding**](/docs/api/context/#bindings) |     ✓ | Refers to a local image or URL of a remote image to be exhibited. |
 | mode | ImageContentMode |  | Responsible to control how the image will be internally controlled. |
 
 ## How to use it?
 
-{{< tabs name="T116" >}}
+{{< tabs id="T116" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:imagePath.json
 {
-  "_beagleComponent_": "beagle:image",
-  "path": {
-    "_beagleImagePath_": "remote",
-    "url": "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
-    {
-      "_beagleImagePath_": "remote",
-      "url": "/imagePath.png",
-      "placeholder": "imagePath"
-    }
-  },
-  "mode": "CENTER"
+   "_beagleComponent_":"beagle:image",
+   "path":{
+      "_beagleImagePath_":"remote",
+      "url":"https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
+      "placeholder":{
+        "mobileId": "imagePath",
+        "webUrl": "/imagePath.png"
+      }
+   },
+   "mode":"CENTER"
 }
-```
+-->
+{{% playground file="imagePath.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -50,5 +50,3 @@ Image(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Test this example in the Web Playground](https://beagle-playground.netlify.app/#/cloud/447a8f52ebf84b779bbabc6cdb62b2e9/image.json)

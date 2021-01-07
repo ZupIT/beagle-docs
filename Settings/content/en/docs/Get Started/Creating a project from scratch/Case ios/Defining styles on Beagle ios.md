@@ -10,9 +10,9 @@ description: >-
 
 ## Creating styles for Beagle iOS
 
-On the first use example, you saw how to [**implement Beagle**](../.././) and create your first server-driven screen.
+On the first use example, you saw how to [**implement Beagle**](/docs/get-started/creating-a-project-from-scratch/case-ios) and create your first server-driven screen.
 
-In this tutorial, the idea is to get deeper from the [**previous project**](./#passo-3-configurando-o-xcode) to create a Design System on Beagle's library. To better illustrate  the explanation, we'll use these [**sample codes**](https://github.com/ZupIT/beagle-examples) that you can find out in our repository.
+In this tutorial, the idea is to get deeper from the [**previous project**](/docs/get-started/creating-a-project-from-scratch/case-ios) to create a Design System on Beagle's library. To better illustrate  the explanation, we'll use these [**sample codes**](https://github.com/ZupIT/beagle-examples) that you can find out in our repository.
 
 The idea is to configure some styles on iOS to allow you to customize some components, such as:
 
@@ -43,7 +43,7 @@ struct Styles {
 }
 ```
 
-This `struct` will contain all the styles Beagle will access. Here, it will be listed the logic that allows Beagle to apply defined styles on iOS into a [**server-driven screen**](../../../../key-concepts#server-driven-ui).
+This `struct` will contain all the styles Beagle will access. Here, it will be listed the logic that allows Beagle to apply defined styles on iOS into a [**server-driven screen**](/docs/key-concepts#server-driven-ui).
 
 ### Step 2: Create a text style
 
@@ -174,7 +174,7 @@ On the backend's configuration tutorial, we created a server-driven page with 2 
 
 This page was like that when rendered on frontend:
 
-![](/docs-beagle/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)
+![](/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)
 
 To attribute a style to these texts, follow these instructions:
 

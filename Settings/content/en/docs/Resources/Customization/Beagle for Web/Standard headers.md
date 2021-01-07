@@ -9,13 +9,13 @@ description: You will find here the pattern headers description and how to disab
 Beagle Web sends **two types of headers** that are a standart for Beagle:
 
 1. **beagle-platform:** header used to indicate to the backend that this request came from the Web. This way, the value is sent is always **WEB**.
-2. **beagle-hash**: header used to make [**Beagle's cache protocol** ](../../../cache/)work properly.
+2. **beagle-hash**: header used to make [**Beagle's cache protocol** ](/docs/resource/cache/)work properly.
 
 By pattern, these headers are always sent, however it can be disabled by the `useBeagleHeaders` parameter on the config. 
 
 See below the examples on how to disable the headers request on the Angular and React's configs.
 
-{{< tabs name="T77" >}}
+{{< tabs id="T77" >}}
 {{% tab name="Angular" %}}
 ```text
 @BeagleModule({

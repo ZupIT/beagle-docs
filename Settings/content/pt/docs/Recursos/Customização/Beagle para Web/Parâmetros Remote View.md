@@ -10,7 +10,7 @@ description: Aprenda quais os parâmetros do Remote View e como alterá-los
 
 A biblioteca do Beagle fornece um componente auxiliar para renderizar as telas server-driven, o remote view:
 
-{{< tabs name="T81" >}}
+{{< tabs id="T81" >}}
 {{% tab name="Angular" %}}
   Abra o arquivo do componente que você deseja renderizar o 
 layout e adicione o beagle-remote-view, veja o exemplo a seguir
@@ -56,6 +56,6 @@ const params: LoadParams = {
 | headers | Mapa&lt;chave, valor&gt; | Lista de header para anexar ao fazer a requisição. |
 | shouldShowLoading | booleano | Mostra ou não o componente de loading. |
 | shouldShowError | booleano | Mostra ou não o componente de erro. |
-| strategy | string&lt;[**Estratégia de cache**](estrategias-de-cache#tipos-de-estrategias)&gt; | Estratégia de cache adotada na requisição. |
+| strategy | string&lt;[**Estratégia de cache**](/pt/docs/recursos/customização/beagle-para-web/estratégias-de-cache#tipos-de-estratégias)&gt; | Estratégia de cache adotada na requisição. |
 | loadingComponent | string | Componente customizado para loading. |
 | errorComponent | string | Componente customizado para error. |

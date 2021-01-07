@@ -10,11 +10,11 @@ description: >-
 
 ### Criando a ação no frontend
 
-No Beagle, é possível criar uma [**ação**](../../../api/acoes/) **customizada** a partir de uma `CustomAction` . 
+No Beagle, é possível criar uma [**ação**](/pt/docs/api/ações) **customizada** a partir de uma `CustomAction` . 
 
 Cada plataforma tem sua forma própria para fazer esta implementação no frontend. Abaixo, listamos exemplos para cada uma.
 
-{{< tabs name="T82" >}}
+{{< tabs id="T82" >}}
 {{% tab name="Android" %}}
 Primeiro, você deve criar uma classe anotada com `@RegisterAction` que implemente a **interface** `Action`. Esta mesma interface solicitará que o método `execute` seja implementado e, aqui, você irá declarar o resultado da `action`.
 
@@ -67,7 +67,7 @@ class CustomAction: Action {
 
 Para registrar a ação, basta criar um método onde terá todas suas `custom action` e chamar o método do Beagle `registerCustomAction` que fará o registro.
 
-Chame o [**método criado no BeagleConfig**](../../get-started/criando-um-projeto-do-zero/case-ios/#passo-2-configurando-o-beagle), tal como no tutorial da seção [**"Criando um projeto do zero".** ](../../get-started/criando-um-projeto-do-zero/case-ios/#iniciando-um-projeto-ios)
+Chame o [**método criado no BeagleConfig**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-ios#passo-2-configurar-o-beagle), tal como no tutorial da seção [**"Criando um projeto do zero".** ](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-ios#iniciando-um-projeto-ios)
 
 ```kotlin
 private func registerCustomAction() {
@@ -146,7 +146,7 @@ val msg: String? = null
 
 Abaixo, temos um exemplo de Action em um componente do tipo Botão. 
 
-{{< tabs name="T83" >}}
+{{< tabs id="T83" >}}
 {{% tab name="JSON" %}}
 ```kotlin
 {

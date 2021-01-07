@@ -19,25 +19,9 @@ description: 'Nesta seção, você encontra descrição completa dos Operadores 
 
 Aqui temos o exemplo de uma tela que utiliza duas operações lógicas, `condition` e `or`, onde caso o resultado da condição do `or` for verdadeira o texto do componente `Text` se torna **true**, caso falso ele atribui ao texto o valor de **false.**
 
-{{< tabs name="T160" >}}
-{{% tab name="Kotlin" %}}
-```kotlin
-fun screen() = Screen(
-    navigationBar = NavigationBar(title = "Operations", showBackButton = true),
-    child = Container(
-        children = listOf(
-            Text(text = "The text in green bellow will show if the result of `TRUE OR FALSE"),
-            Text(
-                expressionOf("@{condition(or(true, false), 'true', 'false')}")
-            ).applyStyle(Style(backgroundColor = "#00FF00"))
-        )
-    )
-)
-```
-{{% /tab %}}
-
+{{< tabs id="T160" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:logical.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "navigationBar" : {
@@ -58,8 +42,24 @@ fun screen() = Screen(
     } ]
   }
 }
+-->
+{{% playground file="logical.json" language="pt" %}}
+{{% /tab %}}
+{{% tab name="Kotlin" %}}
+```kotlin
+fun screen() = Screen(
+    navigationBar = NavigationBar(title = "Operations", showBackButton = true),
+    child = Container(
+        children = listOf(
+            Text(text = "The text in green bellow will show if the result of `TRUE OR FALSE"),
+            Text(
+                expressionOf("@{condition(or(true, false), 'true', 'false')}")
+            ).applyStyle(Style(backgroundColor = "#00FF00"))
+        )
+    )
+)
 ```
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/docs-beagle/logic.png)
+![](/logic.png)

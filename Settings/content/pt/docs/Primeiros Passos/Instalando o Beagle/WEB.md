@@ -53,10 +53,10 @@ npx beagle help
 
 Se os comandos do Beagle forem listados como na imagem abaixo, isso significa que a instalação ocorreu corretamente.
 
-![](/docs-beagle/image%20%2814%29.png)
+![](/image%20%2814%29.png)
 
 {{% alert color="success" %}}
-Parabéns, a sua biblioteca está instalada! Veja agora [**como usar o Beagle no Angular**](../../../../usando-o-beagle/web/angular)
+Parabéns, a sua biblioteca está instalada! Veja agora [**como usar o Beagle no Angular**](/pt/docs/primeiros-passos/usando-o-beagle/web/angular)
 {{% /alert %}}
 
 ## React
@@ -80,7 +80,7 @@ npm install --save @zup-it/beagle-react
 ```
 
 {{% alert color="success" %}}
-Parabéns, a sua biblioteca está instalada! Veja agora [**como usar Beagle no React.**](../../../usando-o-beagle/web/react)
+Parabéns, a sua biblioteca está instalada! Veja agora [**como usar Beagle no React.**](/pt/docs/primeiros-passos/usando-o-beagle/web/react)
 {{% /alert %}}
 
 ## Próximos Passos
@@ -88,6 +88,6 @@ Parabéns, a sua biblioteca está instalada! Veja agora [**como usar Beagle no R
 Nesta seção, você fez a **instalação inicial** do Beagle na sua aplicação!  
 Para continuar a configurar o Beagle:
 
-👉Vá para as [**configurações iniciais**](../../usando-o-beagle/web/) para habilitar uso do Beagle no seu projeto Web
+👉Vá para as [**configurações iniciais**](/pt/docs/primeiros-passos/usando-o-beagle/web/) para habilitar uso do Beagle no seu projeto Web
 
-👉 Se quiser ir direto para prática, acesse nosso[ **tutorial para criar um projeto do zero**](../criando-um-projeto-do-zero/case-web)
+👉 Se quiser ir direto para prática, acesse nosso[ **tutorial para criar um projeto do zero**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-web)

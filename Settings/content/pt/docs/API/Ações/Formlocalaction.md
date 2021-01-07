@@ -1,5 +1,5 @@
 ---
-title: Formlocalaction
+title: FormLocalAction
 weight: 265
 description: Descrição do componente FormLocalAction
 ---
@@ -7,7 +7,7 @@ description: Descrição do componente FormLocalAction
 ---
 
 {{% alert color="warning" %}}
-Essa ação foi **depreciada** junto com o Form!
+Essa ação foi **depreciada** junto com o Form.
 {{% /alert %}}
 
 ## O que é? 

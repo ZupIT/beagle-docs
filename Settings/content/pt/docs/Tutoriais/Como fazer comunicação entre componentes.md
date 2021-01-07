@@ -10,7 +10,7 @@ description: >-
 
 A **comunicação entre componentes** é uma forma de compartilhar informações com o uso de Observables que, de modo geral, emitem notificações sempre que uma mudança acontece com eles. 
 
-Abaixo, você verá como fazer a configuração dessa comunicação usando o [**Contexto, um componente do Beagle.** ](../../../api/contexto/)
+Abaixo, você verá como fazer a configuração dessa comunicação usando o [**Contexto, um componente do Beagle.** ](/pt/docs/api/contexto/)
 
 ## Configurando a comunicação entre componentes.
 
@@ -37,7 +37,7 @@ O endpoint abaixo retorna um JSON semelhante. Listamos somente os dados que vamo
 
 ## Como vou comunicar?
 
-Uma função chamada [**SetContext**](../../api/acoes/setcontext) é a responsável por atualizar os valores do componente contexto. Ela poderá ser chamada na tela se você quiser usar as informações que estiverem nesse contexto. 
+Uma função chamada [**SetContext**](/pt/docs/api/ações/setcontext) é a responsável por atualizar os valores do componente contexto. Ela poderá ser chamada na tela se você quiser usar as informações que estiverem nesse contexto. 
 
 Para fazer a comunicação, basta seguir os próximos passos: 
 
@@ -70,7 +70,7 @@ O Container está dividido em **2 partes principais:**
 1. O `context :` É um objeto do tipo `ContextData` que será a variável responsável por conter as informações que você deseja transferir. 
 2. O `children:`  É uma lista dos componentes que fazem parte desse container e que terão acesso ao contexto definido nele.
 
-{{< tabs name="T90" >}}
+{{< tabs id="T90" >}}
 {{% tab name="JSON" %}}
 ```typescript
 {
@@ -226,4 +226,4 @@ E agora a tela está pronta! Foi configurado um exemplo de contexto e demonstrad
 
 No final deste exemplo a sua tela deve estar assim:
 
-![](/docs-beagle/screenshot_1594752619.png)
+![](/screenshot_1594752619.png)

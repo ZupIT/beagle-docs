@@ -18,7 +18,7 @@ Every style displayed with Beagle must be referenced in a way each one of them h
 
 ### Example
 
-The image method is registered in a series of images that will be used in the page construction coming from the backend. The operator `when` is used to designate the styles, the first listed value is a string that identifies the Beagle's style component\(very similiar to key/value\) and the component's style was listed with the`Arrow Function ->`.
+The image method is registered in a series of images that will be used in the page construction coming from the backend. The operator `when` is used to designate the styles, the first listed value is a string that identifies the Beagle's style component\(very similiar to key/value\) and the component's style was listed with the `Arrow Function ->`.
 
 This function's operator **else** will contain a default style, like the code block below:
 
@@ -63,7 +63,7 @@ class AppDesignSystem : DesignSystem() {
 
 
 {{% alert color="info" %}}
-When a class extends the`Open Class DesignSystem` it is able to manage styles that will be applied to the server driven components. It is necessary to implement a class to register the styles on Beagle, only this way it will be able to see the styles and apply them. 
+When a class extends the `Open Class DesignSystem` it is able to manage styles that will be applied to the server driven components. It is necessary to implement a class to register the styles on Beagle, only this way it will be able to see the styles and apply them. 
 {{% /alert %}}
 
 As an Android pattern, the styles can be defined in the `style` file and referenced inside a class that understands Design System. 

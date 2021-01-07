@@ -8,7 +8,7 @@ description: 'Nesta seção, você encontra uma descrição sobre a API de Acess
 
 ### O que é?
 
-Por enquanto, existem dois atributos comuns de acessibilidade entre todas as plataformas que o Beagle suporta.
+É um componente que habilita elementos de acessibilidade, como por exemplo, uma mensagem de texto que pode ser lida por um leitor de tela.
 
 | **Atributo** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :---: | :--- |
@@ -21,9 +21,9 @@ Caso o backend não especifique acessibilidade, os valores padrões de cada plat
 
 ### Como usar?
 
-{{< tabs name="T105" >}}
+{{< tabs id="T105" >}}
 {{% tab name="JSON" %}}
-```typescript
+<!-- json-playground:acessibilidade.json
 {
   "_beagleComponent_": "beagle:container",
   "children": [
@@ -40,7 +40,8 @@ Caso o backend não especifique acessibilidade, os valores padrões de cada plat
     }
   ]
 }
-```
+-->
+{{% playground file="acessibilidade.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}

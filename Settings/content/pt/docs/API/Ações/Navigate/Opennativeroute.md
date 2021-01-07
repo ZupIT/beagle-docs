@@ -1,5 +1,5 @@
 ---
-title: Opennativeroute
+title: OpenNativeRoute
 weight: 273
 description: Descrição da ação OpenNativeRoute e seus atributos
 ---
@@ -22,11 +22,11 @@ A sua estrutura é representada como mostrado abaixo:
 
 No exemplo abaixo, temos uma tela vinda do BFF com um botão que ao clicar nele, abre uma tela nativa. 
 
-Para testar, é preciso configurar o [**Deep Link Handler**](https://docs.usebeagle.io/customizacao/beagle-para-android/deep-link-handler) para Android  ou o **openNativeRoute,** no caso de aplicação iOS. Além disso, seu endpoint do BFF precisa retornar a tela do código abaixo e chamar esse endpoint no Frontend.
+Para testar, é preciso configurar o [**Deep Link Handler**](/pt/docs/recursos/customização/beagle-para-android/deep-link-handler) para Android  ou o **openNativeRoute,** no caso de aplicação iOS. Além disso, seu endpoint do BFF precisa retornar a tela do código abaixo e chamar esse endpoint no Frontend.
 
-{{< tabs name="T110" >}}
+{{< tabs id="T110" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:openNativeRoute.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -39,7 +39,8 @@ Para testar, é preciso configurar o [**Deep Link Handler**](https://docs.usebea
     } ]
   }
 }
-```
+-->
+{{% playground file="openNativeRoute.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -57,5 +58,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste esse exemplo no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

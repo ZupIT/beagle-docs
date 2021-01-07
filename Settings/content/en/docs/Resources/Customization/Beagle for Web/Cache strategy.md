@@ -6,7 +6,7 @@ description: You will find here the cache strategies types description on the We
 
 ---
 
-Beagle Web offers some cache strategies, one of them is the [**Beagle's pattern cache protocol guided by the backed**](https://docs.usebeagle.io/v/v1.0-en/resources/cache#how-does-the-cache-protocol-works). 
+Beagle Web offers some cache strategies, one of them is the [**Beagle's pattern cache protocol guided by the backed**](/docs/resources/cache#how-does-the-cache-protocol-works). 
 
 Other strategies you are able to use: 
 
@@ -27,7 +27,7 @@ On the web, the cache data are stored in the browser.
 
 ## Types of strategies 
 
-You have two strategy possibilities on Beagle: the ones that are compatible with the cache protocol and the others that are independent. You will see next how each works: 
+You have **two strategy** possibilities on Beagle: the ones that are compatible with the cache protocol and the others that are independent. You will see next how each works: 
 
 ## Compatible strategies
 
@@ -52,7 +52,7 @@ If you backend is with disabled cache, the payload from the tree will be saved o
 
 ### **2. beagle-cache-only**
 
-This strategy only implements [**Beagle's cache protocol**](../../../cache/). This means that, it works the same way the standard one, but without the fallback. 
+This strategy only implements [**Beagle's cache protocol**](/docs/resources/cache/). This means that, it works the same way the standard one, but without the fallback. 
 
 When you enable this strategy, the tree that is on cache it is only used if there is a valid max-age or if it receives a 304 status from the backend. 
 
@@ -98,7 +98,7 @@ To change the cache strategy, you have to use the `strategy` parameter with the 
 
 On the configs below, you will find an example on how to alter the strategy to `network-only`:
 
-{{< tabs name="T76" >}}
+{{< tabs id="T79" >}}
 {{% tab name="Angular" %}}
 ```text
 @BeagleModule({
@@ -113,6 +113,16 @@ On the configs below, you will find an example on how to alter the strategy to `
   strategy: 'network-only'
 })
 export class Beagle { }
+```
+{{% /tab %}}
+
+{{% tab name="React" %}}
+```text
+export default createBeagleUIService({
+  baseUrl: "",
+  components: {},
+  strategy: 'network-only'
+})
 ```
 {{% /tab %}}
 {{< /tabs >}}

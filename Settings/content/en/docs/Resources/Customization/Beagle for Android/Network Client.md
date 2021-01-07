@@ -10,13 +10,67 @@ description: >-
 
 ## Introduction 
 
-This class defines how the services requests are configured, to use it, you need to create a class that implements a `HttpClient` interface.
+This interface defines how the services requests are configured, to use it, you need to create a class that implements a `HttpClient` interface.
 
 You can add headers to your requests, define method request, body response, data response, run cryptography, etc. 
 
-### Creating a `HttpClient` class
+```kotlin 
+interface HttpClient {
 
-To create this class, follow the next steps: 
+    fun execute(
+        request: RequestData,
+        onSuccess: (responseData: ResponseData) -> Unit,
+        onError: (responseData: ResponseData) -> Unit
+    ): RequestCall
+}
+```
+
+In the *execute* method, you can create the rules for your network layer, causing the beagle to recognize its rule.
+
+| **Attribute** | **Type** | **Required** | **Definition** |
+| :--- | :--- | :---: | :---: |
+| request | RequestData  | v | RequestData is the class for configuring http requests. |
+| onSuccess | (responseData: ResponseData) -> Unit | ✓ | Higher-Order Functions responsible for the return of success |
+| onError | (responseData: ResponseData) -> Unit | ✓ | Higher-Order Functions responsible for error return |
+
+### RequestData 
+
+RequestData is the class for configuring http requests.
+
+| **Attribute** | **Type** | **Required** | **Definition** |
+| :--- | :--- | :---: | :---: |
+| uri | URI  | ✓ | Defines the endpoint that returns the screen or component you wish to display. |
+| method | HttpMethod | ✓ | It is an ENUM class that defines which HTTP operation you wish to do. It works as a HTTP REQUEST METHOD and it is set as GET by default. |
+| headers | Map<String, String> | | It is used when you need to send data via an HTTP header.  |
+| body | String | | It is set default as null and it just needs to be implemented when you need to send a HTTP messages asbody data. |
+
+#### HttpMethod
+
+It is an `ENUM` and the values are:
+
+| Value | Definition |
+| :--- | :--- |
+| GET | The `GET` method  requests a representation of a specific resource. Requests using the method `GET` must return only data. |
+| POST | The `POST` method it is used to submit an entity to a specific resource, frenquetly causing a change in the resource state or colateral effects on the server.  |
+| PUT | The  `PUT` method replaces all the current representation of the target resources with the data of the request.  |
+| DELETE | The `DELETE` method removes a specific resource.  |
+| HEAD | The `HEAD` method  request an answer the same way the `GET` method does, however without a response body.  |
+| PATCH | The `PATCH` method is used to apply partial modifications in a resource. |
+
+### ResponseData
+
+ResponseData is used to return data made by the request.
+
+| **Attribute** | **Type** | **Required** | **Definition** |
+| :--- | :--- | :---: | :---: |
+| statusCode | Int  | ✓ | Returns the response code returned by the remote HTTP server. |
+| data | ByteArray | ✓ | Response body returned from request. |
+| headers | Map<String, String> | | It is used when you need to send data via an HTTP header. |
+| statusText | String | | Returns the response message returned by the remote HTTP server. |
+
+## Creating a custom network client
+
+To create this class, follow the next steps.
 
 ### Step 1: Add the dependencies 
 
@@ -24,32 +78,81 @@ Locate the file `build.gradle(Module:app) ,` open it and scroll the page until y
 
 1. Copy and paste the line below inside the dependencies:
 
-   * _implementation 'com.squareup.okhttp3:okhttp:4.5.0'_
+   * implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9'
 
-   \_\_
 
 2. Press **Sync now** to synchronize the Gradle again. 
-3. This dependency is necessary, because the class that implements `HttpClient` will import some of its configuration.
 
-{{% alert color="warning" %}}
- If your application uses Retrofit services, it is possible some conflict may occur, because it internally defines a okhttp dependency and then it will conflict with the HttpClient. 
+This dependency is necessary, because the class that implements `HttpClient` will import some of its configuration.
 
-* Replace this line:
+### Step 2: Create a object CoroutineDispatchers
 
-  _implementation 'com.squareup.okhttp3:okhttp:4.5.0'_
+Create a object and choose a name for it. For the example, `CoroutineDispatchers` was chosen.
 
-* For these two lines:
+This object is responsible for configuring *CoroutineDispatchers*, which will dictate on which thread the tasks will be executed.
 
-  _implementation 'com.squareup.retrofit2:retrofit:2.7.2'_
+```kotlin
+import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.Dispatchers
 
-  _implementation 'com.squareup.retrofit2:converter-gson:2.7.2_ 
-{{% /alert %}}
+internal object CoroutineDispatchers {
 
-### Step 2: Create a class
+    init {
+        reset()
+    }
 
-1. Create a class and choose a name for it. For the example,`HttpClientDefault` was chosen. 
-2. If Android complain about imports, just check if the dependencies are not conflicting. 
-3. This configuration is long, so copy and paste the class below. You may modify it later.
+    lateinit var IO: CoroutineDispatcher
+    lateinit var Main: CoroutineDispatcher
+    lateinit var Default: CoroutineDispatcher
+
+    fun reset() {
+        IO = Dispatchers.IO
+        Main = Dispatchers.Main
+        Default = Dispatchers.Default
+    }
+}
+```
+
+### Step 3: Create a file HttpURLConnectionExtensions
+
+Create a file and choose a name for it. For the example,`HttpURLConnectionExtensions` was chosen.
+
+This file is responsible for containing methods for returning the *HttpURLConnection* rule, so we will use these methods in the HttpClientDefault class.
+
+```kotlin
+import java.lang.Exception
+import java.net.HttpURLConnection
+
+internal fun HttpURLConnection.getSafeResponseCode(): Int? {
+    return getMessageFormatted { this.responseCode }
+}
+
+internal fun HttpURLConnection.getSafeResponseMessage(): String? {
+    return getMessageFormatted { this.responseMessage }
+}
+
+internal fun HttpURLConnection.getSafeError(): ByteArray? {
+    return getMessageFormatted { this.errorStream.readBytes() }
+}
+
+internal typealias GetData<T> = () -> T
+
+internal fun <T> getMessageFormatted(getData: GetData<T>): T? {
+    return try {
+        getData.invoke()
+    } catch (exception: Exception) {
+        null
+    }
+}
+```
+
+### Step 4: Create a class HttpClientDefault
+
+Create a class and choose a name for it. For the example,`HttpClientDefault` was chosen. 
+
+Class HttpClientDefault defines how the services requests are configured, to use it, you need to create a class that implements a `HttpClient` interface.
+
+This configuration is long, so copy and paste the class below. You may modify it later.
 
 
 ```kotlin

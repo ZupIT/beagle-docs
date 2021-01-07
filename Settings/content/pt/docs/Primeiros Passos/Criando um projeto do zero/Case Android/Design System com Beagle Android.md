@@ -10,9 +10,9 @@ description: >-
 
 ## **Criando um Design System**
 
-No exemplo prático da página "Criando um projeto com Beagle para Android", você pode conferir como fazer a [**implementação do Beagle**](../../.././) para criar uma tela server-driven simples, com apenas 2 textos: 1 título e 1 parágrafo.
+No exemplo prático da página "Criando um projeto com Beagle para Android", você pode conferir como fazer a [**implementação do Beagle**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-android) para criar uma tela server-driven simples, com apenas 2 textos: 1 título e 1 parágrafo.
 
-Neste tutorial, a ideia é avançar a partir do [**projeto anterior**](./#passo-7-exibindo-sua-tela-server-driven) para **criar um Design System na sua biblioteca do Beagle**. Os exemplos que ilustrarão o passo a passo estão nestes [**sample codes**](https://github.com/ZupIT/beagle-examples) que você encontra no nosso repositório. 
+Neste tutorial, a ideia é avançar a partir do [**projeto anterior**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-android/#passo-7-exibir-sua-tela-server-driven) para **criar um Design System na sua biblioteca do Beagle**. Os exemplos que ilustrarão o passo a passo estão nestes [**sample codes**](https://github.com/ZupIT/beagle-examples) que você encontra no nosso repositório. 
 
 O Design System que iremos configurar vai permitir que você customize alguns componentes do Beagle, como por exemplo:
 
@@ -101,7 +101,7 @@ Demonstraremos mais adiante como esses componentes e seus estilos são listados 
 
 ### **Passo 2: Customizar o componente**
 
-Este momento é o ponto em que o ocorre o [**BFF**](../../../../../principais-conceitos#backend-for-frontend), quando frontend se conecta ao backend.   
+Este momento é o ponto em que o ocorre o [**BFF**](/pt/docs/principais-conceitos#backend-for-frontend), quando frontend se conecta ao backend.   
   
 Para isso, você terá de **configurar o frontend do Android e o backend do Intellij**. Caso não o tenha pronto, é só baixar [**o exemplo de configuração do backend**](https://github.com/ZupIT/beagle-examples) e rodá-lo.   
   
@@ -158,7 +158,7 @@ Repita este processo para o outro componente `Text` que é um paragrafo, com a d
 Isto é tudo que faremos no back-end nesse momento. Você pode rodar sua aplicação backend para que o serviço fique disponível e, em breve, você verá sua tela com estilo no Android.
 
 {{% alert color="info" %}}
-Caso tenha algum problema, recomendamos que faça o tutorial para [**implementar a instalação desse backend.**](../../../instalando-o-beagle/backend)
+Caso tenha algum problema, recomendamos que faça o tutorial para [**implementar a instalação desse backend.**](/pt/docs/primeiros-passos/instalando-o-beagle/backend)
 {{% /alert %}}
 
      4. Primeiro, vamos registrar três cores no arquivo color no android. 

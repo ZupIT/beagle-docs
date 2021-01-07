@@ -15,16 +15,16 @@ Alert structure is:
 
 | Attribute | Type | Required | Definition |
 | :--- | :--- | :--- | :--- |
-| title | String or [**Binding**](https://docs.usebeagle.io/v/v1.0-en/api/context#bindings) |  | Box alert title. |
-| message | String or [**Binding**](https://docs.usebeagle.io/v/v1.0-en/api/context#bindings) |        ✓ | Box alert message. |
-| onPressOk | [**Action**](https://docs.usebeagle.io/v/v1.0-en/api/actions) |  | Confirmation button action.  |
+| title | String or [**Binding**](/docs/api/context#bindings) |  | Box alert title. |
+| message | String or [**Binding**](/docs/api/context#bindings) |        ✓ | Box alert message. |
+| onPressOk | [**Action**](/docs/api/actions) |  | Confirmation button action.  |
 | labelOk | String |  | Confirmation button label. |
 
 ## How to use it?
 
-{{< tabs name="T89" >}}
+{{< tabs id="T89" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:alert.json
 {
     "_beagleComponent_": "beagle:container",
     "children": [
@@ -42,7 +42,8 @@ Alert structure is:
           }
         ]
       }
-```
+-->
+{{% playground file="alert.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -64,5 +65,3 @@ Container(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-###  👉 [Test this example in the Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)​

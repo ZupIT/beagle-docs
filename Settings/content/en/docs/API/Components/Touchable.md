@@ -64,9 +64,9 @@ See how the structure is represented:
 
 ## How to use it?
 
-{{< tabs name="T125" >}}
+{{< tabs id="T125" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:touchable.json
 {
   "_beagleComponent_": "beagle:touchable",
   "onPress": [
@@ -77,19 +77,12 @@ See how the structure is represented:
   ],
   "child":
   {
-      "_beagleComponent_": "beagle:image",
-      "path": {
-        "_beagleImagePath_": "remote",
-        "url": "https://i.ibb.co/KWwTSWB/1029209-200.png"
-      },
-      "accessibility": {
-            "accessibilityLabel": "Touchable image",
-            "accessible": true
-      }
-  }
+  "_beagleComponent_": "beagle:text",
+  "text": "Text with action"
 }
-
-```
+}
+-->
+{{% playground file="touchable.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -97,10 +90,8 @@ See how the structure is represented:
 Touchable(onPress = listOf(
 			         Alert(title = "Image", 
                      message = "Clicked on Message")),
-          child = Image(path = ImagePath.Local.justMobile("name"))
+          child = Text("Text with action")
 )
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-###  👉 [Test this example in the Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/touchable.json?platform=react-web)

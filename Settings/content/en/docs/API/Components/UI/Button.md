@@ -8,7 +8,7 @@ description: Description of the component Button and its attributes
 
 ## What is it?
 
-The button widget is responsible for defining a native button using a server-driven button through Beagle.
+This component is a server-driven button responsible for setting a native button through Beagle.
 
 Check the example below to see how the structure works:
 
@@ -72,21 +72,22 @@ Check the example below to see how the structure works:
 
 ## How to use it?
 
-{{< tabs name="T115" >}}
+{{< tabs id="T115" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:button.json
 {
   "_beagleComponent_": "beagle:button",
-  "text": "Beagle Button",
+  "text": "Click me!",
   "styleId" : "DesignSystem.MyNativeStyle",
   "onPress": [
     {
       "_beagleAction_": "beagle:alert",
-      "message": "Example button."
+      "message": "Button example"
     }
   ]
 }
-```
+-->
+{{% playground file="button.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -94,7 +95,7 @@ Check the example below to see how the structure works:
 Button(
     text = "Click me!"
     styleId = "DesignSystem.MyNativeStyle",
-    onPress = listOf(Alert(message="Example button."))
+    onPress = listOf(Alert(message="Button example"))
 )
 ```
 {{% /tab %}}

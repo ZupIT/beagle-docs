@@ -12,9 +12,9 @@ description: >-
 
 Dentro da biblioteca do Beagle, existe a classe `DesignSystem` que pode ser usada para personalizar os componentes utilizados na sua aplicação.
 
-Esta classe serve para mapear os recursos locais de um aplicativo para podermos referenciá-los no [**BFF** ](../../../../../principais-conceitos#backend-for-frontend)ao construir uma tela [**Server-Driven**](../../../../../principais-conceitos#server-driven-ui). 
+Esta classe serve para mapear os recursos locais de um aplicativo para podermos referenciá-los no [**BFF** ](/pt/docs/principais-conceitos#backend-for-frontend)ao construir uma tela [**Server-Driven**](/pt/docs/principais-conceitos#server-driven-ui).
 
-Além de imagens, o [**Design System**](../../../../principais-conceitos#design-system) do Beagle pode personalizar: 
+Além de imagens, o [**Design System**](/pt/docs/principais-conceitos#design-system) do Beagle pode personalizar: 
 
 * A aparência dos textos;
 * O estilo dos componentes de input;
@@ -81,7 +81,7 @@ Assim como os textos e inputs, os botões no Beagle Android são **totalmente cu
 
 ### Toolbar
 
-Dentro da biblioteca Beagle no Android, a barra de ferramentas faz parte da [**classe NavigationBar**.](../../../api/screen/#navigation-bar-action-bar-barra-de-navegacao) Para que ela funcione corretamente no [**BeagleActivity**](../../../get-started/criando-um-projeto-do-zero/case-android/#passo-4-criando-o-appbeagleactivity), você precisar informar ao Beagle qual barra irá utilizar na sua aplicação. 
+Dentro da biblioteca Beagle no Android, a barra de ferramentas faz parte da [**classe NavigationBar**.](/pt/docs/api/screen/navigation-bar) Para que ela funcione corretamente no [**BeagleActivity**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-android#passo-4-criar-o-appbeagleactivity), você precisar informar ao Beagle qual barra irá utilizar na sua aplicação. 
 
 A customização da barra pode ser feita no momento em que ela é passada para o Beagle. A Toolbar, além dos atributos já mencionados, possui outros quatro que são exclusivos: 
 

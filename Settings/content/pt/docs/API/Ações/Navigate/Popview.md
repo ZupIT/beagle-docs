@@ -1,5 +1,5 @@
 ---
-title: Popview
+title: PopView
 weight: 283
 description: Descrição da ação PopView e seus atributos
 ---
@@ -16,9 +16,9 @@ Para remover a tela atual basta chamar o método `PopView()` sem a necessidade d
 
 Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e chame esse endpoint no frontend.
 
-{{< tabs name="T115" >}}
+{{< tabs id="T115" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:popView.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -29,7 +29,8 @@ Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e
     } ]
   }
 }
-```
+-->
+{{% playground file="popView.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -45,5 +46,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste esse exemplo no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

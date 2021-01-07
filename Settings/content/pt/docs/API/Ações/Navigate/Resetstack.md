@@ -1,5 +1,5 @@
 ---
-title: Resetstack
+title: ResetStack
 weight: 289
 description: Descrição da ação ResetStack e seus atributos
 ---
@@ -14,7 +14,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :---: | :--- |
-| route | ​[Route](https://app.gitbook.com/@zup-products/s/beagle/~/drafts/-MBdG3IHjLPbo5GoxgEz/api/api-acoes/navigate/route)​ | ✓ | Rota de navegação. |
+| route | ​[Route](/pt/docs/api/ações/navigate/route)​ | ✓ | Rota de navegação. |
 
 ## Como usar?
 
@@ -30,30 +30,31 @@ Para testar, iremos precisar de três endpoints:
 
 #### Como chamar a tela zero
 
-{{< tabs name="T122" >}}
+{{< tabs id="T122" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:firstScreenonResetStack.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
     "_beagleComponent_" : "beagle:container",
     "children" : [ {
       "_beagleComponent_" : "beagle:text",
-      "text" : "First Screen on Stack"
+      "text" : "First Screen on ResetStack"
     }, {
       "_beagleComponent_" : "beagle:button",
       "text" : "Click me!",
       "onPress" : [ {
         "_beagleAction_" : "beagle:pushView",
         "route" : {
-          "url" : "/firstScreen",
+          "url" : "SecondScreenonResetStack.json",
           "shouldPrefetch" : false
         }
       } ]
     } ]
   }
 }
-```
+-->
+{{% playground file="firstScreenonResetStack.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="KotlinDSL" %}}
@@ -69,7 +70,7 @@ Screen(
                 onPress = listOf(
                     Navigate.PushView(
                         Route.Remote(
-                            url = "/firstScreen"
+                            url = "SecondScreenonResetStack.json"
                         )
                     )
                 )
@@ -83,9 +84,9 @@ Screen(
 
 #### Como chamar a Tela 1
 
-{{< tabs name="T123" >}}
+{{< tabs id="T123" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:SecondScreenonResetStack.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -99,14 +100,15 @@ Screen(
       "onPress" : [ {
         "_beagleAction_" : "beagle:pushView",
         "route" : {
-          "url" : "/secondScreen",
+          "url" : "resetStack.json",
           "shouldPrefetch" : false
         }
       } ]
     } ]
   }
 }
-```
+-->
+{{% playground file="SecondScreenonResetStack.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="KotlinDSL" %}}
@@ -122,7 +124,7 @@ Screen(
                 onPress = listOf(
                     Navigate.PushView(
                         Route.Remote(
-                            url = "/secondScreen"
+                            url = "resetStack.json"
                         )
                     )
                 )
@@ -136,9 +138,9 @@ Screen(
 
 #### Como chamar a Tela 2
 
-{{< tabs name="T124" >}}
+{{< tabs id="T124" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:resetStack.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -152,14 +154,15 @@ Screen(
       "onPress" : [ {
         "_beagleAction_" : "beagle:resetStack",
         "route" : {
-          "url" : "/home",
+          "url" : "firstScreenonResetStack.json",
           "shouldPrefetch" : false
         }
       } ]
     } ]
   }
 }
-```
+-->
+{{% playground file="resetStack.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -174,7 +177,7 @@ Screen(
                 text = "Click me  to reset stack",
                 onPress = listOf(
                     Navigate.ResetStack(
-                        route = Route.Remote("/home")
+                        route = Route.Remote("firstScreenonResetStack.json")
                     )
                 )
             )
@@ -184,5 +187,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Teste esse exemplo no Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

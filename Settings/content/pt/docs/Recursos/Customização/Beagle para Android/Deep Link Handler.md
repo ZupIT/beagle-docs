@@ -10,7 +10,8 @@ description: >-
 
 ## Introdução
 
-O **`DeepLinkHandler`** é uma **interface** que define como configurar a navegação entre uma **Server-Driven activity** e uma **activity nativa.** 
+O **`DeepLinkHandler`** é uma **interface** que define como configurar a navegação entre uma
+**tela Server-Driven** e uma **tela nativa.**
 
 ## Exemplo
 
@@ -26,15 +27,24 @@ class AppDeepLinkHandler : DeepLinkHandler {
         path: String,
         data: Map<String, String>?,
         shouldResetApplication: Boolean
-    ) = Intent("openThisActivity")
+    ) = Intent(path)
 }
 ```
 
-Feito isso, é necessário modificar o arquivo de manifesto do Android: 
+No método *getDeepLinkIntent*, você consegue configurar a navegação de telas de fluxos server driven ui para suas telas nativas, fazendo com que e o beagle reconheça a sua regra.
+
+| **Atributo** | **Tipo** | **Definição** |
+| :--- | :--- | :---: |
+| rootView | RootView  | RootView tem a referência da activity ou fragment |
+| path | String | Parâmetro de rota que pode ser definido via Navigate.OpenNativeRoute(route: "navigate.myview") |
+| data | Map<String, String>? | Mapa de parâmetros que pode ser definido via OpenNativeRoute(route = "navigate.myview" , data = mapOf("param1" to "paramValue")) |
+| shouldResetApplication | Boolean | Abre uma tela com a rota informada a partir de um novo fluxo e limpa a pilha de telas de todo o aplicativo. |
+
+Feito isso, é necessário modificar o arquivo de manifesto do Android:
 
 1. **Passo 1:** Você deve adicionar um `intent-filter` na `Activity` para a qual deseja navegar.
-2. **Passo 2:** Você deve adicionar uma `Action` que identificará essa `Activity`. O nome que usamos aqui foi "openThisActivity". 
-3. **Passo 3:** Adicione uma tag `category` e a nomeie como `"android.intent.category.DEFAULT"`, assim como no exemplo abaixo. 
+2. **Passo 2:** Você deve adicionar uma `Action` que identificará essa `Activity`. O nome que usamos aqui foi `"navigate.myview"`.
+3. **Passo 3:** Adicione uma tag `category` e a nomeie como `"android.intent.category.DEFAULT"`, assim como no exemplo abaixo.
 
 ```markup
 //AndroidManifest
@@ -47,14 +57,14 @@ Feito isso, é necessário modificar o arquivo de manifesto do Android:
 </activity>
 ```
 
-Agora você só precisa chamar a [**Action Navigate**](../../../../api/acoes/navigate/) com o **método** [**OpenNativeRoute**](../../../../api/acoes/navigate/opennativeroute) como o exemplo abaixo:
+Agora você só precisa chamar a [**Action Navigate**](/pt/docs/api/ações/navigate/) com o método [**OpenNativeRoute**](/pt/docs/api/ações/navigate/opennativeroute) como o exemplo abaixo:
 
 ```kotlin
-//Widget used to navigate to a native activity
+//Widget used to navigate to a native screen
 Button(
     text = "Click to navigate!",
     onPress = listOf(
-        Navigate.OpenNativeRoute("openThisActivity")
+        Navigate.OpenNativeRoute("navigate.myview")
     )
 )
 ```

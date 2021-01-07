@@ -9,13 +9,13 @@ weight: 186
 As features descritas aqui, estão disponíveis nas versões a partir de 1.2.0. 
 {{% /alert %}}
 
-Para entender melhor sobre renderização, recomendamos a leitura da seção [**estrutura de dados**](estrutura-de-dados).
+Para entender melhor sobre renderização, recomendamos a leitura da seção [**estrutura de dados**](/pt/docs/recursos/customização/beagle-para-web/tópicos-avançados/estrutura-de-dados).
 
 Cada biblioteca do Beagle Web possui um processo definido de como busca, processa e renderiza a view. Há uma ordem que deve ser sempre respeitada e pontos de extensão \([**hooks**](https://pt-br.reactjs.org/docs/hooks-overview.html)\), onde você pode executar seus códigos \(lifecycles\).
 
 Veja o processo de renderização do Beagle Web: 
 
-![](/docs-beagle/beagle-view.png)
+![](/beagle-view.png)
 
 Os lifecycles \(ciclos de vida\) do Beagle, são:
 
@@ -385,7 +385,7 @@ Esse lifecycle pode ser usado para rodar o código necessário para que a view s
 
 #### Exemplos de uso
 
-Contextos são definidos, referenciados e manipulados no JSON da view. Mas, se você quiser acessar os dados da aplicação o Beagle oferece uma funcionalidade chamada [**Contexto Global**](../../../../../api/contexto-global), que é possivel lidar com esse cenário. Se não tivesse essa função, o lifecycle AfterViewSnapshot também consegue lidar com isso. 
+Contextos são definidos, referenciados e manipulados no JSON da view. Mas, se você quiser acessar os dados da aplicação o Beagle oferece uma funcionalidade chamada [**Contexto Global**](/pt/docs/api/contexto-global), que é possivel lidar com esse cenário. Se não tivesse essa função, o lifecycle AfterViewSnapshot também consegue lidar com isso. 
 
 Um exemplo, se você tem uma aplicação financeira e quer saber o balanço do usuário. Você deve garantir que cada haja a renderização de cada valor recente.
 
@@ -547,7 +547,7 @@ Para controlar o processo de renderização, o Beagle permite você gerenciar qu
 
 Um cenário comum é quando você cria uma ação que muda a árvore atual, por exemplo, uma ação addChildren, quando executada deve ir a árvore atual e adicionar o filho ao componente com o id dado. Para fazer isso, é preciso ter uma forma de obter a árvore atual, modificá-la e avisar ao Beagle View para renderizar de novo. 
 
-A renderização pode ser feita em dois processos: a completa e a parcial. A primeira executa todos [**os passos da lista no início dessa página**](renderizacao#processo-para-renderizar-uma-view) e a segunda executa apenas o view snapshot e os passos 9 ao 18 da mesma lista. 
+A renderização pode ser feita em dois processos: a completa e a parcial. A primeira executa todos [**os passos da lista no início dessa página**](#processo-para-renderizar-uma-view) e a segunda executa apenas o view snapshot e os passos 9 ao 18 da mesma lista. 
 
 ### Acessando o Renderer
 

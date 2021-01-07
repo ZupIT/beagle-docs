@@ -8,13 +8,13 @@ description: This section lists information about the Flex property
 
 ## Flex
 
-This property defines how items will be filled according to the space available along the main axis. Flex sets values ​​applied to each child's property. 
+This property defines how **items will be filled according to the space available along the main axis**. Flex sets values ​​applied to each child's property. 
 
-Thus, it takes the values ​​of all the child elements and makes the following calculation: they add and then divide by each value of the flex property applied to the child. The result should be the child's filled space in the container.
+For that, it takes the values ​​of all the child elements and makes the following calculation: they add and then divide by each value of the flex property applied to the child. The result should be the child's filled space in the container.
 
-![](/docs-beagle/captura-de-tela-2020-06-05-a-s-16.53.38.png)
+![](/captura-de-tela-2020-06-05-a-s-16.53.38.png)
 
-{{< tabs name="T69" >}}
+{{< tabs id="T69" >}}
 {{% tab name="Kotlin" %}}
 
 ```kotlin
@@ -60,4 +60,4 @@ private fun screen() :Widget{
 {{% /tab %}}
 {{< /tabs >}}
 
-For more information about Flex Margin, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/).
+**For more information about Flex Margin, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/).**

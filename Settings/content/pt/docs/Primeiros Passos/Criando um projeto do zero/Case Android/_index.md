@@ -36,7 +36,7 @@ Depois de ter instalado o programa, siga os passos abaixo:
 
 Quando a inicialização for concluída, você verá esta página: 
 
-![](/docs-beagle/mainactivity.png)
+![](/mainactivity.png)
 
 {{% alert color="success" %}}
 Parabéns, seu projeto foi criado no Android! Agora, você precisará configurar o Beagle, de acordo com os passos a seguir. 
@@ -82,7 +82,7 @@ Perceba que alguns `plugins` já estão listados no começo desse arquivo como m
 
 * Em seguida, adicione a linha_`apply plugin: 'kotlin-kapt'`_ 
 
-![](/docs-beagle/implementacaogradle.png)
+![](/implementacaogradle.png)
 
 Depois disso, você precisa adicionar algumas dependências. Para isso: 
 
@@ -115,7 +115,7 @@ Por exemplo: undefined-`ext.beagle.version = "0.2.8"`
 
 Ao final destas configurações, o seu arquivo deverá estar assim:
 
-![](/docs-beagle/implementacaogradle2.png)
+![](/implementacaogradle2.png)
 
 ### 
 
@@ -154,9 +154,26 @@ Uma dica é deixar este arquivo aberto porque vamos usá-lo de novo em outro mom
 * No entanto, se você planeja transformar este exemplo em um aplicativo para `release`, recomendamos que você use o `networkSecurityConfig`, que você pode configurar usando as instruções na [**página de desenvolvedores do Android**](https://developer.android.com/training/articles/security-config).
 {{% /alert %}}
 
-### Passo 3: Criar o AppBeagleConfig
+### Passo 3: Configurar Network, Cache e Logger
 
-Em um próximo passos, você deve criar uma classe chamada `AppBeagleConfig`. Ela faz parte das configurações iniciais do Beagle e é nela que vamos registrar algumas configurações importantes. 
+
+Agora que seu projeto está criado, você deve fazer as configurações do **Beagle**. Para isso, siga os passos abaixo: 
+
+{{% alert color="warning" %}}
+  O `Beagle` não fornece uma configuração de ** Rede **, ** Cache ** e ** Logger ** padrão em seus componentes internos, sendo necessário implementá-los para que o Beagle funcione conforme o esperado. Você pode criar suas próprias configurações seguindo os exemplos abaixo:
+
+  
+[**👉 Acesse Camada de rede:**](/pt/docs/recursos/customização/beagle-para-android/camada-de-rede/)
+
+[**👉 Acesse Gerenciar cache:**](/pt/docs/recursos/customização/beagle-para-android/gerenciar-cache/)
+
+[**👉 Acesse Sistema de log:**](/pt/docs/recursos/customização/beagle-para-ios/sistema-de-log/)
+  
+{{% /alert %}}
+
+### Passo 4: Criar o AppBeagleConfig
+
+Em um próximo passo, você deve criar uma classe chamada `AppBeagleConfig`. Ela faz parte das configurações iniciais do Beagle e é nela que vamos registrar algumas configurações importantes. 
 
 Ao criá-la, devemos garantir que ela esteja configurada da seguinte forma: 
 
@@ -168,7 +185,7 @@ Para criar o AppBeagleConfig, siga estes passos:
 1. Primeiro vamos criar o pacote que conterá nossos arquivos de configuração.  
 2. Clique com botão direito do mouse no pacote principal do seu projeto e click em **new &gt; package** __conforme a figura abaixo: 
 
-![](/docs-beagle/newpackage.png)
+![](/newpackage.png)
 
 Embora você possa nomeá-lo como preferir, sugerimos que para este tutorial você use o nome`beagle`
 
@@ -179,9 +196,9 @@ Embora você possa nomeá-lo como preferir, sugerimos que para este tutorial voc
    5. Copie e cole as configurações abaixo no arquivo `AppBeagleConfig` que acabou de criar. Perceba que ele implementará os atributos: `baseUrl, environment, isLoggingEnabled, cache.`
 
 * O **`baseUrl`** retorna a URL base do seu ambiente.
-* O**`environment`** retorna o _`current build state`_ da sua aplicação.
-* O **`isLoggingEnabled`**retorna a visualização de log da aplicação.
-* O **`cache`** configuração de gerenciamento de cache.
+* O **`environment`** retorna o _`current build state`_ da sua aplicação.
+* O **`isLoggingEnabled`** retorna a visualização de log da aplicação.
+* O **`cache`** retorna a configuração de gerenciamento de cache.
 
 
 ```kotlin
@@ -210,119 +227,13 @@ A partir deste ponto do tutorial, iremos testar nossas telas Server-Driven usand
 Outro ponto de atenção é que, neste momento, o Beagle espera que classes anotadas com  `@BeagleComponent` tenham seus construtores vazios.
 {{% /alert %}}
 
-### **Passo 4: Criar o AppBeagleActivity**
+### Passo 5: BeagleActivity
 
-Você precisará lidar com as `activities` que serão geradas via server-driven. Por isso, é necessário **implementar uma Activity** para gerenciá-las. Para este exemplo, vamos nomeá-la `AppBeagleActivity`.
-
-Este arquivo faz parte da configuração de uso do Beagle e deve ser implementado pelo menos uma vez para que ela opere normalmente. 
-
-Quando for criar o AppBeagleActivity, lembre-se de anotá-la com `BeagleComponent` e estendê-la para classe`BeagleActivity`. 
+O Beagle oferece uma `Activity` padrão para gerenciar todas as `server-driven activities` que recebe. No entanto, é possível criar uma activity mais específica para lidar com determinados componentes server-driven de forma diferente. Você criará essa nova activity herdando de `BeagleActivity` e anotando-a com` @BeagleComponent`. Para mais detalhes sobre como criar essa classe, clique em [**Beagle Activity Customizada**](/pt/docs/recursos/customização/beagle-para-android/beagle-activity-customizada)
 
 {{% alert color="info" %}}
-Vale lembrar que é muito importante garantir que essa `activity` esteja registrada no Android Manifest. Faça isso assim que criá-la. 
 {{% /alert %}}
-
-Siga os passos abaixo para criar o AppBeagleActivity, incluindo o arquivo `.xml`:
-
-1. Clique com o botão direito do mouse no pacote Beagle e clique em **New&gt;Activity&gt;Empty Activity** 
-
-![](/docs-beagle/newactivity.png)
-
-   2. Dê o nome de `AppBeagleActivity` para a `Activity` e clique em **`finish`**.
-
-{{% alert color="info" %}}
-A partir daí, o Beagle irá utilizar esta `activity` sempre que carregar as informações das tela recebidas do backend no frontend da sua aplicação.
-{{% /alert %}}
-
-Deixamos um exemplo abaixo já configurado para você copiar e colar.  
-
-* Primeiro localize o layout dessa `activity`. Ela provavelmente estará em`RES` &gt; `LAYOUT` &gt; com o nome de `activity_app_beagle.xml`  
-* Copie e cole o conteúdo abaixo `.xml` removendo qualquer conteúdo anterior: 
-
-
-```markup
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/root_layout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/custom_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <FrameLayout
-            android:id="@+id/server_driven_container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-        <ProgressBar
-            android:id="@+id/progress_bar"
-            android:layout_width="42dp"
-            android:layout_height="42dp"
-            android:layout_gravity="center"
-            android:visibility="gone"/>
-    </FrameLayout>
-</LinearLayout>
-```
-
-
-* Agora abra o arquivo `AppBeagleActitivity.kt` e configure como definido abaixo: 
-
-
-```kotlin
-@BeagleComponent
-class AppBeagleActivity : BeagleActivity() {
-
-    private val progressBar: ProgressBar by lazy { findViewById<ProgressBar>(R.id.progress_bar) }
-    private val mToolbar: Toolbar by lazy { findViewById<Toolbar>(R.id.custom_toolbar) }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_app_beagle)
-    }
-
-    override fun getServerDrivenContainerId(): Int = R.id.server_driven_container
-
-    override fun getToolbar(): Toolbar = mToolbar
-
-    override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {
-        when (state) {
-            is ServerDrivenState.Started -> {
-                progressBar.visibility =  View.VISIBLE
-            }
-            is ServerDrivenState.Finished -> {
-                progressBar.visibility =  View.GONE
-            }
-            is ServerDrivenState.Error -> {
-                Toast.makeText(this, "Error", Toast.LENGTH_LONG).show()
-            }
-        }
-    }
-}
-```
-
-
-{{% alert color="warning" %}}
-Neste ponto do tutorial, é essencial que você remova a`ActionBar` padrão dessa `activity` porque, a partir deste momento, será o Beagle que irá gerenciar `ActionBar/Toolbar`. 
-{{% /alert %}}
-
-Para realizar esta configuração, você deve mudar o seu `BeagleActivity's theme`. Vá até a pasta `Resources` na sua aplicação do Android Studio e abra o arquivo `STYLE` . Depois, é só Modificar o seu `AppTheme` como no exemplo abaixo:  
-
-
-```markup
-<resources>
-    <!-- Beagle Activity theme. -->
-    <style name="MyTheme" parent="Theme.AppCompat.NoActionBar">
-```
-
-
-### Passo 5: Inicializar o Beagle e o Design System
+### Passo 6: Inicializar o Beagle e o Design System
 
 {{% alert color="info" %}}
 Importante! O que é o Design System?
@@ -331,18 +242,18 @@ Importante! O que é o Design System?
 
 Embora você possa criá-lo agora se quiser, não é necessário para as configurações iniciais, para que você possa testar logo o Beagle! Você pode prosseguir sem configurá-lo. Mas saiba que o Design System é o pulmão da aplicação server-driven! 
 
-[**Design System no Beagle para Android**.](design-system-com-beagle-android) 
+[**Design System no Beagle para Android**.](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-android/design-system-com-beagle-android/) 
 {{% /alert %}}
 
 Agora, você deve inicializar sua `Application` para que o Beagle gere os outros arquivos de configuração que necessita. Para isso, basta clicar em`Make project` \(símbolo de MARTELO\) ou use o comando `CTRL + F9`.
 
-![](/docs-beagle/apppackage.png)
+![](/apppackage.png)
 
 Ao ser inicializado, o Beagle irá criar automaticamente o arquivo `BeagleSetup`, que estará na pasta de arquivos gerados como mostrado na figura abaixo: 
 
-![](/docs-beagle/image%20%2843%29.png)
+![](/image%20%2843%29.png)
 
-### Passo 6: Criar a classe AppApplication
+### Passo 7: Criar a classe AppApplication
 
 Nesta etapa, você precisa criar uma classe`KOTLIN` que estenda da classe `Application`. Neste exemplo, vamos nomeá-la de `AppApplication`. 
 
@@ -388,11 +299,11 @@ O nome da sua`application` agora é o nome desta classe que você criou. Faça o
 Pronto, a sua aplicação Android está configurada e preparada para usar o Beagle! 
 {{% /alert %}}
 
-Tudo o que você precisa agora é [**configurar um backend** ](../../case-backend)para responder as requisições da sua aplicação. Feita esta configuração, inicie a sua aplicação e você verá sua primeira tela server-driven! 
+Tudo o que você precisa agora é [**configurar um backend** ](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-backend)para responder as requisições da sua aplicação. Feita esta configuração, inicie a sua aplicação e você verá sua primeira tela server-driven! 
 
-### Passo 7: Exibir sua Tela Server-Driven
+### Passo 8: Exibir sua Tela Server-Driven
 
-É muito simples exibir uma tela Server-Driven. Agora que toda a configuração do Beagle está pronta, você precisa seguir estes passos: 
+É muito simples exibir uma tela server-driven. Agora que toda a configuração do Beagle está pronta, você precisa seguir estes passos: 
 
 * Abra o arquivo `MainActivity.kt` 
 * Declare o `intent` como listado abaixo. Ele vai definir o endereço que tem as informações da sua tela no backend que você configurou. 
@@ -406,12 +317,12 @@ finish()
 
 * Sua`MainActivity.kt` deve ficar assim:
 
-![](/docs-beagle/print-intent%20%282%29.png)
+![](/print-intent%20%282%29.png)
 
 Agora basta somente clicar em **`Run app`** e checar sua tela no emulador!   
 Você verá esta tela: 
 
-![](/docs-beagle/captura-de-tela-2020-06-22-a-s-11.41.12.png)
+![](/captura-de-tela-2020-06-22-a-s-11.41.12.png)
 
 {{% alert color="success" %}}
 Parabéns, você criou sua primeira tela com Beagle! 🎉 

@@ -17,39 +17,11 @@ description: 'Nesta seção, você encontra descrição completa dos Operadores 
 
 ### Exemplo
 
-Veja um exemplo abaixo de um simples contador, onde dois botões `increment` e `decrement`, ambos com ações de [**SetContext**](../../../acoes/setcontext) que modificam o valor do contexto que possui o id counter, alterando seu valor com operações de `soma` e de `subtração`,  incrementando e diminuindo o valor de 1 ao valor do texto:
+Veja um exemplo abaixo de um simples contador, onde dois botões `increment` e `decrement`, ambos com ações de [**SetContext**](/pt/docs/api/ações/setcontext) que modificam o valor do contexto que possui o id counter, alterando seu valor com operações de `soma` e de `subtração`,  incrementando e diminuindo o valor de 1 ao valor do texto:
 
-{{< tabs name="T159" >}}
-{{% tab name="Kotlin" %}}
-```kotlin
-fun screen() = Screen(
-    navigationBar = NavigationBar(
-        title = "Operations",
-        showBackButton = true
-    ),
-    child = Container(
-        context = ContextData("counter", 2),
-        children = listOf(
-            Text(expressionOf("Sum of 2 + 1 = @{sum(2, 1)}")),
-            Text(expressionOf("Counter: @{counter}")),
-            Button(
-                text = "increment",
-                onPress = listOf(
-                    SetContext("counter", "@{sum(counter, 1)}"))
-            ),
-            Button(
-                text = "decrement",
-                onPress = listOf(
-                    SetContext("counter", "@{subtract(counter, 1)}"))
-            )
-        )
-    )
-)
-```
-{{% /tab %}}
-
+{{< tabs id="T159" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:arithmeticOperators.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "navigationBar" : {
@@ -87,8 +59,37 @@ fun screen() = Screen(
     }
   }
 }
+-->
+{{% playground file="arithmeticOperators.json" language="pt" %}}
+{{% /tab %}}
+
+{{% tab name="Kotlin" %}}
+```kotlin
+fun screen() = Screen(
+    navigationBar = NavigationBar(
+        title = "Operations",
+        showBackButton = true
+    ),
+    child = Container(
+        context = ContextData("counter", 2),
+        children = listOf(
+            Text(expressionOf("Sum of 2 + 1 = @{sum(2, 1)}")),
+            Text(expressionOf("Counter: @{counter}")),
+            Button(
+                text = "increment",
+                onPress = listOf(
+                    SetContext("counter", "@{sum(counter, 1)}"))
+            ),
+            Button(
+                text = "decrement",
+                onPress = listOf(
+                    SetContext("counter", "@{subtract(counter, 1)}"))
+            )
+        )
+    )
+)
 ```
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/docs-beagle/operadoresaritmeticos%20%281%29.gif)
+![](/operadoresaritmeticos%20%281%29.gif)

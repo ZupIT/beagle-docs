@@ -14,7 +14,7 @@ The structure is represented by the attributes below:
 
 | Attribute | Type | Required | Definition |
 | :--- | :--- | :--- | :--- |
-| url | String or [**Binding**](https://docs.usebeagle.io/v/v1.0-en/api/context#bindings) |    ✓ | Defines the Web View home page that will load. It must be declared and it cannot have a null value.  |
+| url | String or [**Binding**](/docs/api/context#bindings) |    ✓ | Defines the Web View home page that will load. It must be declared and it cannot have a null value.  |
 
 {{% alert color="warning" %}}
 **When opening an insecure link \(http\):** It is important to notice that this component will open **ONLY** secure links like `https` and it **WON'T** display any not-safe links like `http.` 
@@ -22,21 +22,20 @@ The structure is represented by the attributes below:
 
 ## How to use it?
 
-{{< tabs name="T124" >}}
+{{< tabs id="T124" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:webView.json
 {
     "_beagleComponent_": "beagle:webView",
-    "url": "https://maps.google.com/"
+    "url": "https://www.google.com.br/"
 }
-```
+-->
+{{% playground file="webView.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
-WebView(url: "https://docs.usebeagle.io/")
+WebView(url: "https://www.google.com.br/")
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Test this component in the Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)​

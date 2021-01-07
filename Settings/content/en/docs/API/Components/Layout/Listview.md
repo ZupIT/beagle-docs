@@ -20,12 +20,12 @@ See how the structure is represented:
 
 | Atributo | Tipo | Obrigatório | Definição |
 | :--- | :--- | :---: | :--- |
-| direction | [ListDirection](listview#listdirection) |   | Sets the direction in which list items are displayed. |
-| context | [ContextData](https://docs.usebeagle.io/api/context) |  | Defines the context of the component. |
-| onInit | List&lt;[Action](https://docs.usebeagle.io/api/actions)&gt; |  | List of actions to be performed as soon as the component is displayed.  |
-| dataSource | [Bind](https://docs.usebeagle.io/api/context#bindings)&lt;List&lt;Any&gt;&gt; | ✓ | Expression that points to a list of values used to populate the component. |
-| template | [ServerDrivenComponent](https://docs.usebeagle.io/api/components) | ✓ | It represents each cell in the list through a `ServerDrivenComponent`. |
-| onScrollEnd | List&lt;[Action](https://docs.usebeagle.io/api/actions)&gt; |  | List of actions taken when the list ends. |
+| direction | [ListDirection](#listdirection) |   | Sets the direction in which list items are displayed. |
+| context | [ContextData](/docs/api/context) |  | Defines the context of the component. |
+| onInit | List&lt;[Action](/docs/api/actions)&gt; |  | List of actions to be performed as soon as the component is displayed.  |
+| dataSource | [Bind](/docs/api/context#bindings)&lt;List&lt;Any&gt;&gt; | ✓ | Expression that points to a list of values used to populate the component. |
+| template | [ServerDrivenComponent](/docs/api/components) | ✓ | It represents each cell in the list through a `ServerDrivenComponent`. |
+| onScrollEnd | List&lt;[Action](/docs/api/actions)&gt; |  | List of actions taken when the list ends. |
 | scrollEndThreshold | Int |  | Defines the percentage scrolled from the list to trigger `onScrollEnd`. |
 | iteratorName | String |  | It is the context identifier for each cell. |
 | key | String |  | Points to a unique value present in each item of the `dataSource` to be used as a suffix in the ids of the template components. |
@@ -80,9 +80,9 @@ Default value is ListDirection.VERTICAL
 
 ### ListView
 
-{{< tabs name="T128" >}}
+{{< tabs id="T128" >}}
 {{% tab name="JSON" %}}
-```text
+<!-- json-playground:listView.json
 {
   "_beagleComponent_": "beagle:listView",
   "direction": "VERTICAL",
@@ -150,7 +150,8 @@ Default value is ListDirection.VERTICAL
     ]
   }
 }
-```
+-->
+{{% playground file="listView.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -201,13 +202,11 @@ ListView(
 {{% /tab %}}
 {{< /tabs >}}
 
-### 👉 [Test the ListView in the Web Playground](https://beagle-playground-beta.netlify.app/#/demo/listview/1.local.json)​
-
 ### Deprecated ListView
 
-{{< tabs name="T129" >}}
+{{< tabs id="T129" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:listViewDepreciado.json
 {
   "_beagleComponent_": "beagle:listView",
   "children": [
@@ -232,7 +231,8 @@ ListView(
   ],
   "direction": "HORIZONTAL"
 }
-```
+-->
+{{% playground file="listViewDepreciado.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -260,5 +260,3 @@ ListView(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Test the Deprecated ListView in the Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/listview.json)​

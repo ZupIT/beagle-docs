@@ -13,25 +13,24 @@ Live Preview is a visualization resource that helps with `layout` development. I
 In other words, when a developer edits code defining a screen, they can use the plugin so that updates are communicated to the client and it renders them. This way, it's possible to view change without running a backend server.
 
 {{% alert color="info" %}}
-This frontend and backend connection is done through a `WebSocket`on port: `9721`.
+This frontend and backend connection is done through a `WebSocket` on port: `9721`.
 {{% /alert %}}
 
 ## Requirements
 
 To use `Live Preview`, you must: 
 
-* Use [**Beagle SDK**](../../get-started/installing-beagle/beagle-backend) in your BFF**;**
+* Use [**Beagle SDK**](/docs/get-started/installing-beagle/backend) in your BFF **;**
 * Install `BeaglePreview` plugin;
 
 ### BFF Configuration
 
-You must have a configured BFF with Beagle to use Live Preview. In case you haven't done it, [**click here to download an initial project**](https://github.com/ZupIT/beagle-examples/tree/master/BeagleSampleBackend). As an alternative, [**follow our tutorial on how to implement a Beagle configured backend**](https://docs.usebeagle.io/v/v1.0-en/get-started/new-project/exemplo-de-projeto-backend-com-beagle).
+You must have a configured BFF with Beagle to use Live Preview. In case you haven't done it, [**click here to download an initial project**](https://github.com/ZupIT/beagle-examples/tree/master/BeagleSampleBackend). As an alternative, [**follow our tutorial on how to implement a Beagle configured backend**](/docs/get-started/creating-a-project-from-scratch/case-backend).
 
 ### **IntelliJ plugin installation**
 
-To install `BeaglePreview`, click on the link below to install: 
+To install `BeaglePreview`, [*See Live Preview plugin for IntelliJ*](https://plugins.jetbrains.com/plugin/14575-beagle-sdk-live-preview").
 
-{% embed url="https://plugins.jetbrains.com/plugin/14575-beagle-sdk-live-preview" caption="Live Preview plugin for IntelliJ" %}}
 
 ## Live Preview Use
 
@@ -70,16 +69,17 @@ class ScreenBeagleBuilder: ScreenBuilder {
 
 
 If your function is recognized by the plugin, the Beagle logo will appear as a button to the left of the function. When clicking this button, `BeaglePreview` will push the layout to the client \(frontend application\), allowing it to update on your layout instantly!
+See the example below: 
 
-![](/docs-beagle/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-MBKub9vQLsLEO6x4WU-%2F-MBKumGuvPmYm2W85BiJ%2FlivePreviewPluginIntelliJIDEA.gif?alt=media&token=9fe8cc42-b29e-42b2-906c-94f6d524bdfe)
+![](/livepreviewpluginintellijidea.gif)
 
 After running the plugin on some function, you only need to save the changes done in your layout so that the Live Preview updates the screen being rendered by the frontend. It does this by compiling your modified code and verifying if there is some change and, if there is, push your new layout to the client.
 
-### Step 2: Frontend's configuration
+### Step 2: iOS and Android's Frontend configuration
 
 Once you have configured your backend, the next step is to configure the frontend's application emulator for a Beagle Android or iOS project. 
 
-{{< tabs name="T85" >}}
+{{< tabs id="T85" >}}
 {{% tab name="Android client" %}}
 ### Step 1: Installing the submodule
 

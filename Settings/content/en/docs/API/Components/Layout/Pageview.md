@@ -13,7 +13,7 @@ description: Page View components description and its attributes details
 {{% alert color="info" %}}
 O Page View  refers to its view size on mobile devices \(Android or iOS\). The page view size is determined by the father that it is in, meaning that, the width and the height will be defined by the component father. 
 
-For example, a Page View can be declared inside of a [**Container**](https://docs.usebeagle.io/v/v1.0-en/api/components/layout/container) and the width and the height will define the page view size. 
+For example, a Page View can be declared inside of a [**Container**](/docs/api/components/layout/container) and the width and the height will define the page view size. 
 {{% /alert %}}
 
 See how the structure is represented:
@@ -72,9 +72,9 @@ See how the structure is represented:
 
 On the example below you will see a PageView that contains three pages where each one of them has a Text defined by the Context. Every time there is a change the context page is redefined: 
 
-{{< tabs name="T130" >}}
+{{< tabs id="T130" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:pageView.json
 {
    "_beagleComponent_":"beagle:container",
    "children":[
@@ -119,7 +119,8 @@ On the example below you will see a PageView that contains three pages where eac
       "value":0
    }
 }
-```
+-->
+{{% playground file="pageView.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -151,5 +152,3 @@ Container(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### [👉 Test this component in the Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/pageview.json)

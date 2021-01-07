@@ -27,31 +27,35 @@ De modo geral, o contexto pode ser usado quando você quer preencher valores em 
 
 No exemplo abaixo, você pode ver o contexto com dados de um usuário e sendo mostrados algumas dessas informações em um `Text` :
 
-{{< tabs name="T151" >}}
+{{< tabs id="T151" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:context.json
 {
-  "_beagleComponent_": "beagle:container",
-  "context": {
-    "id": "myData",
-    "value": {
-      "id": "0000",
-      "name": "User",
-      "age": "18"
-    },
-  },
-  "children": [
-    {
-      "_beagleComponent_": "beagle:text",
-      "value": "Name: @{myData.name}"
-    },
-    {
-      "_beagleComponent_": "beagle:text",
-      "value": "Age: @{myData.age}"
-    }
-  ]
+   "_beagleComponent_":"beagle:screenComponent",
+   "child":{
+      "_beagleComponent_":"beagle:container",
+      "children":[
+         {
+            "_beagleComponent_":"beagle:text",
+            "text":"Name: @{myData.name}"
+         },
+         {
+            "_beagleComponent_":"beagle:text",
+            "text":"Age: @{myData.age}"
+         }
+      ],
+      "context":{
+         "id":"myData",
+         "value":{
+            "id":"0000",
+            "name":"User",
+            "age":"18"
+         }
+      }
+   }
 }
-```
+-->
+{{% playground file="context.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -74,7 +78,7 @@ Container(
 {{% /tab %}}
 {{< /tabs >}}
 
-Perceba que o contexto foi declarado e seus valores foram definidos e usados para preencher os textos, porém é possível definir esses valores depois usando o método [`SetContext()`](../../../../../../../../acoes/setcontext) . 
+Perceba que o contexto foi declarado e seus valores foram definidos e usados para preencher os textos, porém é possível definir esses valores depois usando o método [`SetContext()`](/pt/docs/api/ações/setcontext). 
 
 Dessa forma, você pode preencher os componentes com dados que ainda não estavam no JSON.
 
@@ -105,21 +109,35 @@ Quando **há um escopo definido** para o contexto dentro do seu JSON ou da sua e
 
 Veja o exemplo abaixo de como funciona: 
 
-{{< tabs name="T152" >}}
+{{< tabs id="T152" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:contextExplicito.json
 {
-  "_beagleComponent_" : "beagle:container",
-  "children" : [ {
-    "_beagleComponent_" : "beagle:text",
-    "text" : "@{myText}"
-  } ],
-  "context" : {
-    "id" : "myText",
-    "value" : "Hello Beagle"
-  }
+   "_beagleComponent_":"beagle:screenComponent",
+   "child":{
+      "_beagleComponent_":"beagle:container",
+      "children":[
+         {
+            "_beagleComponent_":"beagle:text",
+            "text":"Name: @{myData.name}"
+         },
+         {
+            "_beagleComponent_":"beagle:text",
+            "text":"Age: @{myData.age}"
+         }
+      ],
+      "context":{
+         "id":"myData",
+         "value":{
+            "id":"0000",
+            "name":"User",
+            "age":"18"
+         }
+      }
+   }
 }
-```
+-->
+{{% playground file="contextExplicito.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -142,14 +160,14 @@ Container(
 {{% /tab %}}
 {{< /tabs >}}
 
-Perceba que o contexto foi declarado e seus valores foram definidos e usados para preencher os textos, porém é possível definir depois esses valores usando o método [`SetContext()`](../acoes/setcontext) . Dessa forma, você pode preencher os componentes com dados que ainda não estavam no JSON.
+Perceba que o contexto foi declarado e seus valores foram definidos e usados para preencher os textos, porém é possível definir depois esses valores usando o método [`SetContext()`](/pt/docs/api/ações/setcontext) . Dessa forma, você pode preencher os componentes com dados que ainda não estavam no JSON.
 
 ### 2. Contextos implícitos
 
-Quando **não há um escopo** de contexto definido dentro do JSON ou da estrutura declarativa da sua tela, mas que podem ser acessados por [**bindings**](../.././#binding).
+Quando **não há um escopo** de contexto definido dentro do JSON ou da estrutura declarativa da sua tela, mas que podem ser acessados por [**bindings**](#binding).
 
 {{% alert color="info" %}}
-Isso significa que esse tipo de contexto é criado por meio de [**eventos**](../../eventos). 
+Isso significa que esse tipo de contexto é criado por meio de [**eventos**](/pt/docs/api/eventos). 
 
 Além disso, o escopo desse tipo de contexto é definido apenas por uma action ou um conjunto de ações relacionados ao evento criado no contexto. 
 {{% /alert %}}
@@ -162,19 +180,50 @@ Outra característica do contexto implícito é que ele sempre possui um `id` ig
 
 Veja o exemplo abaixo com o evento `onBlur` , que funciona exatamente como o `onChange`, mas faz a requisição quando o input do componente perde o foco: 
 
-```javascript
+{{< tabs id="C152" >}}
+{{% tab name="JSON" %}}
+<!-- json-playground:contextImplicito.json
 {
-  "_beagleComponent_": "beagle:textinput",
-  "label": "CEP",
-  "onBlur": [
-      {
-          "_beagleAction_": "beagle:sendRequest",
-          "url": "https://viacep.com.br/ws/@{onBlur.value}/json",
-          "method": "GET"
-      }
-  ]
+   "_beagleComponent_":"beagle:screenComponent",
+   "child":{
+      "_beagleComponent_":"beagle:container",
+      "children":[
+         {
+            "_beagleComponent_":"beagle:textInput",
+            "placeholder":"CEP",
+            "onBlur":[
+               {
+                  "_beagleAction_":"beagle:alert",
+                  "message":"example of implícit context: @{onBlur.value}"
+               }
+            ]
+         }
+      ]
+   }
 }
+-->
+{{% playground file="contextImplicito.json" language="pt" %}}
+{{% /tab %}}
+
+{{% tab name="Kotlin DSL" %}}
+```kotlin
+Screen(
+        child = Container(
+            children = listOf(
+                TextInput(
+                    placeholder = "CEP",
+                    onBlur = listOf(
+                        Alert(
+                            message = "example of implícit context: @{onBlur.value}"
+                        )
+                    )
+                )
+            )
+        )
+    )
 ```
+{{% /tab %}}
+{{< /tabs >}}
 
 Apesar do contexto `onBlur` não ter sido declarado no exemplo acima, você consegue usá-lo porque ele foi criado de uma maneira implícita pelo evento `onBlur`. 
 
@@ -205,9 +254,9 @@ Um binding é identificado com o prefixo**`@{`** e o sufixo **`}`**. Isso signif
 
 Veja o exemplo abaixo de como funciona: 
 
-{{< tabs name="T153" >}}
+{{< tabs id="T153" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:binding.json
 {
   "_beagleComponent_" : "beagle:container",
   "children" : [ {
@@ -219,7 +268,8 @@ Veja o exemplo abaixo de como funciona:
     "value" : "Hello Beagle"
   }
 }
-```
+-->
+{{% playground file="binding.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="kotlin DSL" %}}
@@ -252,9 +302,9 @@ Nesses casos, os bindings devem ser usados para acessar subestruturas. Como acon
 * Para acessar o CPF, use o binding `@{user.cpf}` ;
 * Para acessar o número de telefone, use o binding `@{user.phoneNumber.cellphone}`.
 
-{{< tabs name="T154" >}}
+{{< tabs id="T154" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:bindingMultiValorados.json
 {
   "_beagleComponent_" : "beagle:container",
   "children" : [ {
@@ -272,7 +322,8 @@ Nesses casos, os bindings devem ser usados para acessar subestruturas. Como acon
     }
   }
 }
-```
+-->
+{{% playground file="bindingMultiValorados.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -313,9 +364,9 @@ Veja como no exemplo abaixo:
 
 Para acessar o título do segundo filme \("Contact"\), use o binding  `@{movies.titles[1].title}`. 
 
-{{< tabs name="T155" >}}
+{{< tabs id="T155" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:bindingVector.json
 {
   "_beagleComponent_" : "beagle:container",
   "children" : [ {
@@ -338,7 +389,8 @@ Para acessar o título do segundo filme \("Contact"\), use o binding  `@{movies.
     }
   }
 }
-```
+-->
+{{% playground file="bindingVector.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -402,7 +454,7 @@ Em cada sistema, o binding deve ser declarado de uma forma:
 
 Exemplos de cada sistema operacional: 
 
-{{< tabs name="T156" >}}
+{{< tabs id="T156" >}}
 {{% tab name="Android" %}}
 ```kotlin
 data class MyComponent(
@@ -444,7 +496,7 @@ public struct MyComponent: Widget {
 
 A forma de referenciar uma expressão em Kotlin DSL é: 
 
-{{< tabs name="T157" >}}
+{{< tabs id="T157" >}}
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 MyComponent(
@@ -456,7 +508,7 @@ MyComponent(
 
 No entanto, caso você passe o **valor hardcoded**, você deve fazer dessa forma:
 
-{{< tabs name="T158" >}}
+{{< tabs id="T158" >}}
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 MyComponent(
@@ -465,5 +517,3 @@ MyComponent(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-## 👉 [Veja alguns exemplos no Playground](https://beagle-playground.netlify.app/#/demo/component-interaction)

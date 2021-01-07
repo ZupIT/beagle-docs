@@ -1,5 +1,5 @@
 ---
-title: Openexternalurl
+title: OpenExternalUrl
 weight: 250
 description: Here you'll find OpenExternalURL description and its attribute.
 ---
@@ -20,9 +20,9 @@ Your structure is represented by the attribute below:
 
 On the example below, you can see a screen that comes from BFF with a button when is clicked, open the browser with the specific URL. To test, it is necessary an endpoint of your BFF return the code below and call it in the frontend: d.
 
-{{< tabs name="T93" >}}
+{{< tabs id="T93" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:openExternalURL.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -30,11 +30,12 @@ On the example below, you can see a screen that comes from BFF with a button whe
     "text" : "Click me!",
     "onPress" : [ {
       "_beagleAction_" : "beagle:openExternalURL",
-      "url" : "https://docs.usebeagle.io/api/api-acoes/navigate/openexternalurl"
+      "url" : "http://docs-beta.usebeagle.io/docs/api/actions/navigate/openexternalurl/"
     } ]
   }
 }
-```
+-->
+{{% playground file="openExternalURL.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -52,5 +53,3 @@ Screen(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Test this example on Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/button.json)

@@ -1,6 +1,8 @@
 ---
 title: Global Context
 weight: 353
+description: >-
+  Here you'll find the complete description of global context.
 ---
 
 ---
@@ -9,7 +11,7 @@ weight: 353
 
 A Global Context is a variable that can assume as value of any type of variable, like a map defines a subset of key/value or complex JSONs objects that defines object trees.
 
-It works exactly like the [**Context**](context/), however in a global scope, meaning that it will exists while the application is still running \(even on the background\), which allows it to be accessed from any application point, being a component or an action linked to a component or even programmatically. 
+It works exactly like the [**Context**](/docs/api/context/), however in a global scope, meaning that it will exists while the application is still running \(even on the background\), which allows it to be accessed from any application point, being a component or an action linked to a component or even programmatically. 
 
 ### How can you access it? 
 
@@ -23,7 +25,7 @@ This way, it is possible to share information between the native part of the app
 
 It is important to mention some information to use the Global Context: 
 
-* Global context Global ins an object and is type is __[**`ContextData`**](context/) 
+* Global context Global ins an object and is type is __[**`ContextData`**](/docs/api/context/) 
 * Global context can have as a VALUE, a complex JSON that can contain an object tree in it. 
 * It is a `Singleton`.
 
@@ -39,16 +41,16 @@ Global context is created with the application and it is defined internally on B
 
 A context to be global, it can be defined in two ways: 
 
-* From a declarative component \(using the [**`SetContext`**](actions/setcontext)action\) or
+* From a declarative component \(using the [**`SetContext`**](/docs/api/actions/setcontext) action\) or
 * Programmatically, using the `set()` function from the `GlobalContext` object. 
 
 ### 1. Using SetContext
 
-It is possible to define or modify a  global context from the   [**`SetContext`**](actions/setcontext) action.  You have to identify a global context using an `ID = "global`" in the `contextId` property, as you can see below: 
+It is possible to define or modify a  global context from the   [**`SetContext`**](/docs/api/actions/setcontext) action.  You have to identify a global context using an `ID = "global`" in the `contextId` property, as you can see below: 
 
-{{< tabs name="T149" >}}
+{{< tabs id="T149" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:globalContext.json
 {
   "_beagleComponent_": "beagle:container",
   "children": [
@@ -70,7 +72,8 @@ It is possible to define or modify a  global context from the   [**`SetContext`*
     }
   ]
 }
-```
+-->
+{{% playground file="globalContext.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -118,7 +121,7 @@ For this, it is used:
 
 To define a global context, just like the example in this section, use the following command:  
 
-{{< tabs name="T150" >}}
+{{< tabs id="T150" >}}
 {{% tab name="Android" %}}
 ```javascript
 GlobalContext.set("Context has changed", "myValue")
@@ -160,7 +163,7 @@ beagleService?.globalContext.set(value, path)
 {{% /tab %}}
 
 {{% tab name="iOS" %}}
-In iOS the Global Context is a [**Beagle Dependencies**](../../resources/customization/beagle-for-ios/beagledependencies) attribute.
+In iOS the Global Context is a [**Beagle Dependencies**](/docs/resources/customization/beagle-for-ios/beagles-dependencies) attribute.
 
 To use it in anywhere of your application you must to use the `BeagleDependencies` instance of your project as the example below:
 
@@ -208,7 +211,7 @@ For this, it is used:
 
 Consider the previous example, to recover a Global context that is in the **"myValue"** path, use the following command: 
 
-{{< tabs name="T151" >}}
+{{< tabs id="T151" >}}
 {{% tab name="Android" %}}
 ```javascript
 GlobalContext.get("myValue")
@@ -256,7 +259,7 @@ It is used:
 
 To remove Global context value as a whole, cleaning it, you have to use the clear command without **informing** a path. See below:
 
-{{< tabs name="T152" >}}
+{{< tabs id="T152" >}}
 {{% tab name="Android" %}}
 ```javascript
 GlobalContext.clear()
@@ -286,7 +289,7 @@ This way, the global context `VALUE` it will be completely erased  and it will h
 
 Imagine, for example, a global context that has two properties, like the following ones: 
 
-{{< tabs name="T153" >}}
+{{< tabs id="T153" >}}
 {{% tab name="Property 1" %}}
 * `GlobalContext.set(path = "myValue1", value = "My Context Value1")` 
 * `GlobalContext.set(path = "myValue2", value = "My Context Value2")`
@@ -313,7 +316,7 @@ This global context is built by Beagle as a JSON object, like this:
 
 Using the command: 
 
-{{< tabs name="T154" >}}
+{{< tabs id="T154" >}}
 {{% tab name="Android" %}}
 ```javascript
 GlobalContext.clear("myValue1")

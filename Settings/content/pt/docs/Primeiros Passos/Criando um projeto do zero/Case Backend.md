@@ -58,7 +58,7 @@ Siga os passos abaixo para importar o projeto que você criou. Primeiro, abra o 
 
 ### Passo 1: Configurar o projeto
 
-Como ponto de partida, siga nosso [**passo a passo para instalar o backend**](../../../../instalando-o-beagle/backend). 
+Como ponto de partida, siga nosso [**passo a passo para instalar o backend**](/pt/docs/primeiros-passos/instalando-o-beagle/backend). 
 
 ### Passo 2: Definir a Estrutura
 
@@ -70,7 +70,7 @@ O segundo passo é criar alguns pacotes para organizar melhor o projeto. Eles se
 4. Repita o processo criando os dois outros pacotes, nomeando-os `service` e `controller`
 5. Após a criação dos pacotes, a sua tela deverá estar assim:
 
-![](/docs-beagle/image%20%2829%29.png)
+![](/image%20%2829%29.png)
 
 ### Passo 3:‌ Criar o serviço da aplicação
 
@@ -185,7 +185,7 @@ Clique no triângulo verde chamado **`run`**, ou aperte e segure SHIFT + F10 par
 
 A sua tela estará assim:
 
-![](/docs-beagle/sem-titulo2.png)
+![](/sem-titulo2.png)
 
 ### **Passo 2: Fazer uma requisição**
 
@@ -248,8 +248,8 @@ Para que o serviço de backend seja consumido, você deve ter o front-end prepar
 
 Para saber mais sobre como configurar o seu ambiente frontend, veja mais em: 
 
-👉 Tutorial do Beagle para [**Android**](case-android/).
+👉 Tutorial do Beagle para [**Android**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-android/).
 
-👉Tutorial do Beagle para [**iOS**](../../usando-o-beagle/ios).
+👉Tutorial do Beagle para [**iOS**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-ios).
 
-👉Tutorial do Beagle para  [**Web**](case-web).
+👉Tutorial do Beagle para  [**Web**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-web).

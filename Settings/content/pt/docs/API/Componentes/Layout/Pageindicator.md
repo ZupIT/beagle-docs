@@ -8,7 +8,7 @@ description: Descrição do componente Page Indicator.
 
 ## O que é?
 
-O `PageIndicator` é um componente que tem como funcionalidade indicar a quantidade de páginas e qual é a atual do [**PageView**](pageview).
+O `PageIndicator` é um componente que tem como funcionalidade indicar a quantidade de páginas e qual é a atual do [**PageView**](/pt/docs/api/componentes/layout/pageview).
 
 | Atributo | Tipo | Obrigatório | Definição |
 | :--- | :--- | :---: | :--- |
@@ -19,6 +19,4 @@ O `PageIndicator` é um componente que tem como funcionalidade indicar a quantid
 
 ## Como usar?
 
-Um exemplo completo de como usar o `PageIndicator` está em [**PageView**](pageview#como-usar).
-
-### [👉 Teste esse componente no Web Playground​](https://beagle-playground.netlify.app/#/demo/default-components/pageview.json)
+Um exemplo completo de como usar o `PageIndicator` está em [**PageView**](/pt/docs/api/componentes/layout/pageview#como-usar).

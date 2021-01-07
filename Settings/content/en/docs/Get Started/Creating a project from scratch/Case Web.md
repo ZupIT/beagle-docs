@@ -20,7 +20,7 @@ You must have **Visual Studio Code** to start your project. In case you don't ha
 
 After the installation, follow the steps according to framework you chose: 
 
-{{< tabs name="T8" >}}
+{{< tabs id="T8" >}}
 {{% tab name="Angular" %}}
 **Step 1:** Open the terminal and use the command below:
 
@@ -30,7 +30,7 @@ ng new caseAngular
 
 Wait until the CLI finishes to create the project.
 
-![](/docs-beagle/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-M9PRY_vOWaeZoXKLq2p%2F-M9PUdUA5t1QcYXL3XJ7%2Fimage.png?alt=media&token=a3869009-df72-4a8c-940a-e040aa47a77a)
+![](/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-M9PRY_vOWaeZoXKLq2p%2F-M9PUdUA5t1QcYXL3XJ7%2Fimage.png?alt=media&token=a3869009-df72-4a8c-940a-e040aa47a77a)
 
 **Step 2:** Go to the `cd caseAngular`generated project's folder, add **Beagle Angular** to your repository with one of the commands below, according to your package manager:
 
@@ -44,7 +44,7 @@ yarn add @zup-it/beagle-angular
 
  Now, wait for the installation.
 
-![](/docs-beagle/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-M9PRY_vOWaeZoXKLq2p%2F-M9PYjULyS3UHn633rQT%2Fimage.png?alt=media&token=bec6af4b-c54e-47ae-b72e-bacd0132ba81)
+![](/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-M9PRY_vOWaeZoXKLq2p%2F-M9PYjULyS3UHn633rQT%2Fimage.png?alt=media&token=bec6af4b-c54e-47ae-b72e-bacd0132ba81)
 
 **Step 3:** Type one of these commands and press enter:
 
@@ -62,7 +62,7 @@ npx beagle init
 
 * On the question '**What's the base url of the backend providing your beagle JSONs? \(press enter to use default\)'**,  type which will be the backend's basis URL that will be used to rescue the JSONs. Here, we'll use mockyio, so type `https://www.mocky.io/v2/`and press enter. Then wait until the configuration finishes: 
 
-![](/docs-beagle/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-M9PRY_vOWaeZoXKLq2p%2F-M9Par3gM73EiZtMPE5T%2Fimage.png?alt=media&token=fa081171-d619-4de9-b0f6-8b8173e7dffb)
+![](/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-M9PRY_vOWaeZoXKLq2p%2F-M9Par3gM73EiZtMPE5T%2Fimage.png?alt=media&token=fa081171-d619-4de9-b0f6-8b8173e7dffb)
 
 * At the end, two files were created on your project:`beagle-components.module.ts` and`beagle.module.ts`.
 {{% /tab %}}
@@ -78,7 +78,7 @@ npx create-react-app case-react --template typescript
 yarn create react-app case-react --template typescript
 ```
 
-![](/docs-beagle/image%20%2811%29.png)
+![](/image%20%2811%29.png)
 
 **Step 2:** Acess the `cd case-react` project's file and add **Beagle React** to your repository. On your terminal, type:
 
@@ -100,7 +100,7 @@ And wait until the installation finishes.
 
 Now it's time to configure Beagle's files inside your application, following these instructions:
 
-{{< tabs name="T9" >}}
+{{< tabs id="T9" >}}
 {{% tab name="Angular" %}}
 Open the `app.module.ts` file and import Beagle's module that was just generated:
 
@@ -145,7 +145,7 @@ export class Beagle {}
 {{% tab name="React" %}}
 On the `/src` path, create another folder named **beagle** and, inside it,  create a new file called`beagle-service.ts`. Its structure should be similar to the image below:
 
-![](/docs-beagle/image%20%2863%29.png)
+![](/image%20%2863%29.png)
 
 Now, open the  `beagle-service.ts` created file and copy this code:
 
@@ -164,7 +164,7 @@ export default createBeagleUIService({
 
 Now you need a JSON to render the components. Usually, this call is made by an external server that would return the JSON, but for this example we'll use a local file that will be created for this test:
 
-{{< tabs name="T10" >}}
+{{< tabs id="T10" >}}
 {{% tab name="Angular" %}}
 On your angular project, navigate to the `src/assets` folder and create a new file named `payload.json`. Insert this new file on the `JSON` content below.
 {{% /tab %}}
@@ -202,7 +202,7 @@ On your react project, navigate to the `/public` folder and create a new file na
 
 Now it's necessary to add on your application the local where the components will be rendered through JSON. The Beagle's library provides a component with this functionality:  `beagle remote view`. To configure this component, follow these steps: 
 
-{{< tabs name="T11" >}}
+{{< tabs id="T11" >}}
 {{% tab name="Angular" %}}
 Open the `app.component.html` file and replace all the content with this code:
 
@@ -253,7 +253,7 @@ On this step, we point where our layout defined with `payload.json` file should 
 
 Once you have finished the project's basic configuration, now you have to run one of the commands below to initialize your application:
 
-{{< tabs name="T12" >}}
+{{< tabs id="T12" >}}
 {{% tab name="Angular" %}}
 If you use **npm**:
 

@@ -8,9 +8,9 @@ description: Descrição do componentes Button e seus atributos
 
 ## O que é?
 
-O widget Button é responsável por definir um botão nativo usando informações server driven por meio do Beagle. 
+Este componente irá definir as propriedades de um botão nativo através do Beagle. 
 
-A sua estrutura é representada como mostrado abaixo: 
+A sua estrutura está representada abaixo: 
 
 <table>
   <thead>
@@ -45,13 +45,13 @@ A sua estrutura é representada como mostrado abaixo:
       <td style="text-align:center"></td>
       <td style="text-align:left">Este atributo referencia um estilo nativo a ser aplicado no bot&#xE3;o.
         Se n&#xE3;o for informado, o estilo padr&#xE3;o de bot&#xE3;o da sua aplica&#xE7;&#xE3;o
-        ser&#xE1; aplicado ao bot&#xE3;o.</td>
+        ser&#xE1; aplicado.</td>
     </tr>
     <tr>
       <td style="text-align:left">onPress</td>
       <td style="text-align:left">List &lt;<a href="../../acoes/">Action</a>&gt;</td>
       <td style="text-align:center"></td>
-      <td style="text-align:left">Array de a&#xE7;&#xF5;es que esse bot&#xE3;o pode disparar quando clicado.
+      <td style="text-align:left">Array de a&#xE7;&#xF5;es que o bot&#xE3;o dispara quando clicado.
         &#xC9; poss&#xED;vel definir uma A&#xE7;&#xE3;o customizada ou qualquer
         a&#xE7;&#xE3;o j&#xE1; dispon&#xED;vel na interface, como por exemplo uma
         a&#xE7;&#xE3;o que mostra uma mensagem de alerta(<a href="../../acoes/alert">Alert</a>).
@@ -74,31 +74,32 @@ A sua estrutura é representada como mostrado abaixo:
 
 ## Como usar?
 
-{{< tabs name="T133" >}}
+{{< tabs id="T133" >}}
 {{% tab name="JSON" %}}
-```javascript
+<!-- json-playground:button.json
 {
-  "_beagleComponent_" : "beagle:button",
-  "text" : "Faz um Alert",
-  "styleId" : "DesignSystem.MeuEstiloDeBotãoNativo",
-  "onPress" : [ 
+  "_beagleComponent_": "beagle:button",
+  "text": "Clique aqui",
+  "styleId" : "DesignSystem.MyNativeStyle",
+  "onPress": [
     {
-      "_beagleAction_" : "beagle:alert",
-      "message" : "Eu sou a mensagem de um Alerta" 
+      "_beagleAction_": "beagle:alert",
+      "message": "Exemplo de botão"
     }
   ]
 }
-```
+-->
+{{% playground file="button.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 Button(
-  text = "Faz um Alert",
+  text = "Clique aqui",
   styleId = "DesignSystem.MeuEstiloDeBotãoNativo",
   onPress = listOf(
     Alert(
-      message = "Eu sou a mensagem de um Alerta"
+      message = "Exemplo de botão"
     )
   )
 )

@@ -7,7 +7,7 @@ description: Description of the component TabView and its attributes. This compo
 ---
 
 {{% alert color="danger" %}}
- This component was deprecated in Beagle version 1.1.0 and will be removed in a future version. Use [`TabBar`](tab-bar) instead.
+ This component was deprecated in Beagle version 1.1.0 and will be removed in a future version. Use [`TabBar`](/docs/api/components/ui/tabbar) instead.
 {{% /alert %}}
 
 ## What is TabView?
@@ -18,7 +18,7 @@ The structure is represented by the attributes below:
 
 | **Attribute** | **Type** | Required | **Definition**  |
 | :--- | :--- | :--- | :--- |
-| children | List&lt;[**TabItem**](tabview#definicao-tabitem)&gt; |      ✓ | List of tab items available in the `TabView` component. The `TabItem` itself is not a `widget`, but its content is a server driven component received through Beagle.  |
+| children | List&lt;[**TabItem**](#what-is-tabitem)&gt; |      ✓ | List of tab items available in the `TabView` component. The `TabItem` itself is not a `widget`, but its content is a server driven component received through Beagle.  |
 | styleId | String |  | It uses a key that it is registered in the Design System of evert platform to customize your component.  |
 | context | ContextData |  | Add a context to your `TabView` component. |
 
@@ -38,34 +38,43 @@ If you don't declare the title and the icon on the TabItem, the empty space will
 
 ## How to use it?
 
-{{< tabs name="T121" >}}
+{{< tabs id="T121" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:tabview.json
 {
-  "_beagleComponent_": "beagle:container",
-  "children": [
-    {
-      "_beagleComponent_": "beagle:tabview",
-      "children": [
-        {
-          "title": "Tab 1",
-          "child": {
-            "_beagleComponent_": "beagle:text",
-            "text":"First Tab Content"
+   "_beagleComponent_":"beagle:screenComponent",
+   "child":{
+      "_beagleComponent_":"beagle:tabView",
+      "children":[
+         {
+            "title":"Tab 1",
+            "child":{
+               "_beagleComponent_":"beagle:text",
+               "text":"First Tab Content",
+               "style":{
+                  "flex":{
+                     "grow":1
+                  }
+               }
             }
-        },
-       {
-          "title": "Tab 2",
-          "child": {
-            "_beagleComponent_": "beagle:text",
-            "text":"Second Tab Content"
+         },
+         {
+            "title":"Tab 2",
+            "child":{
+               "_beagleComponent_":"beagle:text",
+               "text":"Second Tab Content",
+               "style":{
+                  "flex":{
+                     "grow":1
+                  }
+               }
             }
-        }
+         }
       ]
-    }
-  ]
+   }
 }
-```
+-->
+{{% playground file="tabview.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -76,12 +85,10 @@ Screen(
           TabView(children =
               listOf(
                   TabItem("Tab 1",
-                      Image(ImagePath.Remote("https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg")
-                      )
+                      Text("First Tab Content").applyFlex(flex = Flex(grow = 1.0))
                   ),
                   TabItem("Tab 2",
-                      Image(ImagePath.Remote("https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg")
-                      )
+                      Text("Second Tab Content").applyFlex(flex = Flex(grow = 1.0))
                   )
               )
               )
@@ -94,6 +101,4 @@ Screen(
 
 | TabView full screen | TabView with dividing screen |
 | :---: | :---: |
-| ![](/docs-beagle/beagle-tab-view.gif) | ![](/docs-beagle/beagle-tab-view-meia-tela.gif) |
-
-### 👉 [Test this component in the Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/tabview.json)
+| ![](/beagle-tab-view.gif) | ![](/beagle-tab-view-meia-tela.gif) |

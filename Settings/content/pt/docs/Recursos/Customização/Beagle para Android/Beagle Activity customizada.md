@@ -10,7 +10,7 @@ description: >-
 
 ## Introdução
 
-O Beagle fornece uma `Activity` default para gerenciar as `Activities` geradas via server-driven. Porém você pode criar uma ou mais`Activities` que herdem de `BeagleActivity` com `@BeagleComponent` personalizadas de acordo com os fluxos server-driven da sua aplicação.  Sua estrutura funciona  parecida com o Android Activity. 
+O Beagle fornece uma `Activity` default para gerenciar as `Activities` geradas via server-driven. Porém você pode criar uma ou mais `Activities` que herdem de `BeagleActivity` com `@BeagleComponent` personalizadas de acordo com os fluxos server-driven da sua aplicação.  Sua estrutura funciona  parecida com o Android Activity. 
 
 Para que o Beagle interprete essa classe como uma `BeagleActivity`, é necessário usar a anotação **`@BeagleComponent`** e implementar seus respectivos métodos.
 
@@ -96,7 +96,7 @@ Para o conteúdo server-driven ser exibido é necessário um frame layout. Sendo
 
 ### 2. Toolbar
 
-Você pode criar uma Toolbar e usá-la em sua activity através do método`getToolbar()` . Isso permite  retornar a Toolbar desejada.
+Você pode criar uma Toolbar e usá-la em sua activity através do método `getToolbar()` . Isso permite  retornar a Toolbar desejada.
 
 ```kotlin
 override fun getToolbar(): Toolbar = findViewById<Toolbar>(R.id.toolbar)
@@ -104,7 +104,7 @@ override fun getToolbar(): Toolbar = findViewById<Toolbar>(R.id.toolbar)
 
 ### 3. Tratamento de erros
 
-Você pode observar os estados e tratar os erros a partir do [`onServerDrivenContainerStateChanged()`](carregamento-e-tratamento-de-erros)\`\`
+Você pode observar os estados e tratar os erros a partir do [`onServerDrivenContainerStateChanged()`](/pt/docs/recursos/customização/beagle-para-android/carregamento-e-tratamento-de-erros)
 
 ```kotlin
 override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {
@@ -127,6 +127,6 @@ override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {
 ```
 
 {{% alert color="info" %}}
-É possível registrar quantas activities você precisar, porém você deve defini-las usando a anotação`@RegisterController(id = "ACTIVITY_IDENTIFIER")`.  
+É possível registrar quantas activities você precisar, porém você deve defini-las usando a anotação `@RegisterController(id = "ACTIVITY_IDENTIFIER")`.  
 Esse id é o que o BFF irá usar pra identificar qual activity usar.
 {{% /alert %}}

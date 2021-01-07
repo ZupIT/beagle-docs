@@ -1,5 +1,5 @@
 ---
-title: Serializer  Deserializer
+title: Customized Serializer  Deserializer
 weight: 134
 description: >-
   In this section, you will find a description of how to create a Serializer /

@@ -12,7 +12,7 @@ description: >-
 
 O primeiro passo que você deve fazer é criar um componente comum. Para isso, crie um novo componente em seu projeto. 
 
-{{< tabs name="T76" >}}
+{{< tabs id="T76" >}}
 {{% tab name="Angular" %}}
 Neste exemplo, o componente será criado com o nome `customText`. Basta utilizar o comando abaixo no seu terminal:
 
@@ -42,7 +42,7 @@ export default CustomTextComponent;
 
 Feito isso, adicione no arquivo de associações da biblioteca Beagle do seu projeto como indicado nos exemplos a seguir. 
 
-{{< tabs name="T77" >}}
+{{< tabs id="T77" >}}
 {{% tab name="Angular" %}}
 Abra o arquivo `beagle-components.module.ts` e adicione o novo `CustomTextComponent` gerado na lista, como no exemplo abaixo:
 
@@ -88,14 +88,14 @@ export class Beagle {}
 ```
 
 {{% alert color="warning" %}}
-Se você não encontrou os arquivos `beagle-components.module.ts` ou `beagle.module.ts`, veja [**como configurar a biblioteca Beagle Web para o Angular**.](../../../../../get-started/usando-o-beagle/web/angular)
+Se você não encontrou os arquivos `beagle-components.module.ts` ou `beagle.module.ts`, veja [**como configurar a biblioteca Beagle Web para o Angular**.](/pt/docs/primeiros-passos/usando-o-beagle/web/angular)
 {{% /alert %}}
 {{% /tab %}}
 
 {{% tab name="React" %}}
 Abra o arquivo de configuração da biblioteca Beagle em seu projeto \(se você seguiu o tutorial é o arquivo `beagle-service.ts`\) e adicione o seu componente a lista de associações. 
 
-Caso você não tenha este arquivo em seu projeto, veja [**como configurar a biblioteca Beagle Web para o React**](../../../../get-started/usando-o-beagle/web/react).
+Caso você não tenha este arquivo em seu projeto, veja [**como configurar a biblioteca Beagle Web para o React**](/pt/docs/primeiros-passos/usando-o-beagle/web/react).
 
 ```text
 import { createBeagleUIService } from '@zup-it/beagle-react'
@@ -118,7 +118,7 @@ Observe que, no passo acima, a palavra **custom** foi adicionada para identifica
 
 Para adicionar propriedades ao componente criado, siga os seguintes passos: 
 
-{{< tabs name="T78" >}}
+{{< tabs id="T78" >}}
 {{% tab name="Angular" %}}
 Abra o arquivo `custom-text.component.ts` e adicione um `@Input`, como no código abaixo: 
 

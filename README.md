@@ -1,9 +1,10 @@
 # docs-beagle
+
 Project: 466 Zup - Relacionamento com Desenvolvedores
 
-# Getting started
+## Getting started
 
-To run this project run the following commands: 
+To start this project, you must run the following commands:
 
 `git submodule update --init --recursive --remote`
 
@@ -20,11 +21,8 @@ Then run:
 
 `npm run start`. If you're getting a fatal error: Pipe failed, run: `npm run start --watch=false`.
 
-By default `npm run start` will run the project in development mode. To change the environment use
-`npm run start --environment=production`.
+npm run start - By default, this command will run the project in development mode. If you want to change the environment use, then run `npm run start --environment=production.`
 
-# Build
+## Build
 
-To build the application, run `npm run build` after
-[having installed hugo](https://gohugo.io/getting-started/installing) and all package dependencies
-(`npm install`).
+`npm run build` - To build the application, run this command after you [installed hugo](https://gohugo.io/getting-started/installing) and all package dependencies (`npm install`).

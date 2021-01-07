@@ -14,21 +14,21 @@ See how the structure is represented:
 
 | **Attribute** | **Type**  | Required | **Definition** |
 | :--- | :--- | :--- | :--- |
-| children | List &lt;[**ServerDriven Component**](https://docs.usebeagle.io/api/widget)&gt; |    ✓ | Defines the component list that it is part of the container.  |
-| context | [**ContextData**](https://docs.usebeagle.io/api/context) |  | It is the [**context**](https://docs.usebeagle.io/api/context) in this widget.  |
-| onInit | List&lt;[**Action**](https://docs.usebeagle.io/api/actions)&gt; |  | It is a parameter that allows you to define a list of actions to be performed when the Widget is displayed.  |
+| children | List &lt;[**ServerDriven Component**](/docs/api/widget)&gt; |    ✓ | Defines the component list that it is part of the container.  |
+| context | [**ContextData**](/docs/api/context) |  | It is the [**context**](/docs/api/context) in this widget.  |
+| onInit | List&lt;[**Action**](/docs/api/actions)&gt; |  | It is a parameter that allows you to define a list of actions to be performed when the Widget is displayed.  |
 
 ## How to use it? 
 
-{{< tabs name="T127" >}}
+{{< tabs id="T127" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:container.json
 {
     "_beagleComponent_": "beagle:container",
     "children": [
         {
           "_beagleComponent_": "beagle:text",
-          "text": "@{myContext.value}"
+          "text": "@{myContext}"
         }
     ],
     "context": {
@@ -36,14 +36,15 @@ See how the structure is represented:
         "value": "Hello world!" 
     }
 }
-```
+-->
+{{% playground file="container.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 Container(
     children = listOf(
-        Text(text = "@{myContext.value}")
+        Text(text = "@{myContext}")
     ),
     context = ContextData(
         id = "myContext",
@@ -53,5 +54,3 @@ Container(
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [ Test this component in the Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/container.json)

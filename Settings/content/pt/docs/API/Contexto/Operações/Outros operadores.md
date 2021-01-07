@@ -17,25 +17,9 @@ weight: 373
 
  Um contexto com id **numbersArray** que possui como valor **\[0, 1, 2, 3, 4\]** e a operação `length` foi utilizada em um componente Text para pegar o tamanho desse array, veja abaixo:
 
-{{< tabs name="T164" >}}
-{{% tab name="Kotlin" %}}
-```kotlin
-fun screen() = Screen(child = 
-    Container(
-        context = ContextData(id = "numbersArray", value = arrayOf(0,1,2,3,4)),
-        children = listOf(
-            Text(text = "Array [0, 1, 2, 3, 4] has size: "),
-            Text(
-                expressionOf("@{length(numbersArray)}")
-            ).applyStyle(Style(backgroundColor = "#00FF00"))
-        )
-    )
-)
-```
-{{% /tab %}}
-
+{{< tabs id="T164" >}}
 {{% tab name="JSON" %}}
-```kotlin
+<!-- json-playground:otherOperators.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -56,8 +40,24 @@ fun screen() = Screen(child =
     }
   }
 }
+-->
+{{% playground file="otherOperators.json" language="pt" %}}
+{{% /tab %}}
+{{% tab name="Kotlin" %}}
+```kotlin
+fun screen() = Screen(child = 
+    Container(
+        context = ContextData(id = "numbersArray", value = arrayOf(0,1,2,3,4)),
+        children = listOf(
+            Text(text = "Array [0, 1, 2, 3, 4] has size: "),
+            Text(
+                expressionOf("@{length(numbersArray)}")
+            ).applyStyle(Style(backgroundColor = "#00FF00"))
+        )
+    )
+)
 ```
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/docs-beagle/others.png)
+![](/others.png)

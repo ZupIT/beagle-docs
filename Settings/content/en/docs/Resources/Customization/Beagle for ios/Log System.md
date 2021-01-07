@@ -5,7 +5,7 @@ weight: 151
 
 ---
 
-#### Added in Beagle 1.0.0
+#### Introduction
 
 Beagle uses the unified log system recommend by Apple, to provide different log messages in critical stages of a server driven flow. 
 
@@ -35,23 +35,23 @@ Follow the steps below to filter the log messages:
 
 **Step 3:** insert the filters in the search bar, search only for log messages with the Network category in the subsystem ~~`br.com.zup.BeagleDemoApp`~~ 
 
-![](/docs-beagle/1.png)
+![](/1.png)
 
 **Step 4:**  when you open the `BeagleDemo` application, you will see two log messages with the network category, one will show that Beagle made a request and the other indicating the response. 
 
-![](/docs-beagle/2.png)
+![](/2.png)
 
 **Step 5:** error messages will be displayed with a yellow dot in the field `Type`, as showed below: 
 
-![](/docs-beagle/3.png)
+![](/3.png)
 
 **Step 6:** to select the second log message received with a Network filter, you will see a `verbosa` version of this response.  
 
-![](/docs-beagle/4.png)
+![](/4.png)
 
 **Step 7:** the body of the response contains the server-driven screen and all its attributes and specifications can be accessed. 
 
-## Instructions to replace the Logs API 
+## Customization
 
 In order to let Beagle's environment open to modifications, the API logs pattern can be replaced to any other. Follow th next steps to make the API's logs replacement: 
 

@@ -6,7 +6,7 @@ description: Descrição dos componentes e seus atributos
 
 ---
 
-![&#xC1;rvore de componentes do Beagle](/docs-beagle/components-01-beagle.png)
+![&#xC1;rvore de componentes do Beagle](/components-01-beagle.png)
 
 O `ServerDrivenComponent`  é o pai de todos os componentes do Beagle. Componentes como `widgets`, `formulários` e `navegação` serão implementados por meio do `ServerDrivenComponent`.
 
@@ -16,35 +16,35 @@ Você pode ter outros componentes visuais também, e ainda pode criar componente
 
 O Beagle possui **14** **componentes** atualmente divididos em **5 categorias**:
 
-{{< tabs name="T132" >}}
+{{< tabs id="T132" >}}
 {{% tab name="Layout" %}}
-* [**Container**](layout/container)
-* [**List View**](layout/listview)
-* [**PageView**](layout/pageview)
-* [**PageIndicator**](layout/pageindicator)
-* [**ScrollView**](layout/scrollview)
+* [**Container**](/pt/docs/api/componentes/layout/container)
+* [**List View**](/pt/docs/api/componentes/layout/listview)
+* [**PageView**](/pt/docs/api/componentes/layout/pageview)
+* [**PageIndicator**](/pt/docs/api/componentes/layout/pageindicator)
+* [**ScrollView**](/pt/docs/api/componentes/layout/scrollview)
 {{% /tab %}}
 
 {{% tab name="Formulários" %}}
-* [**Validator**](formularios/validator)
-* [**Simple Form**](formularios/simple-form)
-* [**Text Input** ](ui/input)
+* [**Validator**](/pt/docs/api/componentes/formulários/validator)
+* [**Simple Form**](/pt/docs/api/componentes/formulários/simple-form)
+* [**Text Input** ](/pt/docs/api/componentes/ui/textinput)
 {{% /tab %}}
 
 {{% tab name="Lazy" %}}
-* [Lazy](lazy)
+* [Lazy](/pt/docs/api/componentes/lazy)
 {{% /tab %}}
 
 {{% tab name="UI" %}}
-* [**Button**](ui/button)
-* [**Image**](ui/image/)
-* [**Tab Bar**](ui/tab-bar)
-* [**Tab View**](ui/tabview)
-* [**Text**](ui/text)
-* [**Web View**](ui/webview)
+* [**Button**](/pt/docs/api/componentes/ui/button)
+* [**Image**](/pt/docs/api/componentes/ui/image/)
+* [**Tab Bar**](/pt/docs/api/componentes/ui/tabbar)
+* [**Tab View**](/pt/docs/api/componentes/ui/tabview)
+* [**Text**](/pt/docs/api/componentes/ui/text)
+* [**Web View**](/pt/docs/api/componentes/ui/webview)
 {{% /tab %}}
 
 {{% tab name="Touchable" %}}
-* [Touchable](touchable)
+* [Touchable](/pt/docs/api/componentes/touchable)
 {{% /tab %}}
 {{< /tabs >}}
