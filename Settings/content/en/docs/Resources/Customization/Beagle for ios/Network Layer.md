@@ -73,9 +73,9 @@ It is an `ENUM` and the values are:
 
 ## **Creating a Network layer**
 
-To customize your `NetworkClient` protocol, see the sections below:
+To customize your `NetworkClient` protocol, see the steps below:
 
-### **Step 1: implement `NetworkClient`**
+### **Step 1: Implement the `NetworkClient`**
 
 Implement the `NetworkClient` protocol in the class you want to use to make requests, in this case, the `CustomNetworkClient` will be used, like the example below:
 
@@ -95,7 +95,7 @@ class CustomNetworkClient: NetworkClient {
 }
 ```
 
-### **Step 2:  assign the dependencies**
+### **Step 2: Assign the dependencies**
 
 OnAppDelegate or on Beagle's environment, assing the instance `CustomNetworkClient`  to the `networkClient` attribute that it is on Beagle Dependencies:
 
@@ -202,7 +202,7 @@ public class NetworkClientDefault: NetworkClient {
 
 Create a new file called `HttpRequestBuilder`. This class will be used to configure http request configurations.
 
-In the example below, we build the request (url, method, headers and body) according to the type of `Request.RequestType` passed.
+In the example below, build the request (url, method, headers and body) according to the type of `Request.RequestType` passed.
 
 ```swift
 
