@@ -73,6 +73,24 @@ Alerts are used to highlight important information when following a configuratio
 - danger - color - red
 {{% /alert %}}
 
+### **Images and Figures**
+
+Images can be inserted using the markdown syntax ```! [ImageName] (imageUrl)```. However, using markdown may limit your image rendering settings, such as the image dimension (size x width).
+
+To render images, gifs and other types of figures use the following shortcode:
+
+- Sintax example:
+
+```go-text-template
+{{</* figure src="https://media.glassdoor.com/sqll/2482761/zup-innovation-squarelogo-1583862820688.png" width="250" height="250 */>}}
+```
+
+- It will be rendered as: 
+
+{{< figure src="https://media.glassdoor.com/sqll/2482761/zup-innovation-squarelogo-1583862820688.png" width="250" height="250" >}}
+
+To know all the parameters that the figure can receive, [**access here**](https://gohugo.io/content-management/shortcodes#figure)
+
 ### **Videos**
 
 You can embed youtube videos directly into the documentation. Ideal to complement that tutorial content or dissemination. To do this, use the video ID located in your url, eg:
