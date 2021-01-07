@@ -9,7 +9,7 @@ description: >-
 
 ## Introduction
 
-Beagle makes all the web request from the **`networkClient`** dependency that is in the BeagleDependencies, and its type is `NetworkClient`, because of that it is possible to replace a default implementation used in the framework for another.
+Beagle makes all the web request from the **`networkClient`** dependency that is present in BeagleDependencies of the type `NetworkClient`, so it is possible to create your own network layer implementation to be used in the framework.
 
 With that in mind, you can:
 
@@ -97,7 +97,7 @@ class CustomNetworkClient: NetworkClient {
 
 ### **Step 2: Assign the dependencies**
 
-OnAppDelegate or on Beagle's environment, assing the instance `CustomNetworkClient`  to the `networkClient` attribute that it is on Beagle Dependencies:
+On AppDelegate or on Beagle's environment, assign the instance of `CustomNetworkClient` to the `networkClient` attribute from Beagle Dependencies:
 
 ```swift
 let dependencies = BeagleDependencies()
@@ -110,7 +110,7 @@ Done! Now, Beagle will use your class with all the changes and definition needed
 
 ### **Example**
 
-The example below has the same implementation used in the BeagleScaffold and BeagleDefault dependencies.
+The example below has the same implementation used in the BeagleScaffold and BeagleDefault libraries.
 
 #### **`NetworkClientDefault`**
 

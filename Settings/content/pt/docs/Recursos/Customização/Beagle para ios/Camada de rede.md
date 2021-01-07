@@ -111,7 +111,7 @@ Pronto! Agora o Beagle utilizará a sua classe com todas as modificações e def
 
 ### **Exemplo completo**
 
-O exemplo abaixo possui as classes utilizadas nas depências BeagleScaffold.
+O exemplo abaixo possui a mesma implementação utilizada nas bibliotecas BeagleScaffold e BeagleDefault.
 
 #### **`NetworkClientDefault`**
 
