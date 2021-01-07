@@ -1,5 +1,5 @@
 ---
-title: Pushview
+title: PushView
 weight: 254
 description: Here you'll find PushView description and its attribute.
 ---

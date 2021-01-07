@@ -1,5 +1,5 @@
 ---
-title: Opennativeroute
+title: OpenNativeRoute
 weight: 273
 description: Descrição da ação OpenNativeRoute e seus atributos
 ---

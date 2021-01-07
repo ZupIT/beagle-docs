@@ -1,5 +1,5 @@
 ---
-title: Resetstack
+title: ResetStack
 weight: 289
 description: Descrição da ação ResetStack e seus atributos
 ---

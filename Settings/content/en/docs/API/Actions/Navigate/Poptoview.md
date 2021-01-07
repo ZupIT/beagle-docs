@@ -1,5 +1,5 @@
 ---
-title: Poptoview
+title: PopToView
 weight: 260
 description: Here you'll find PopToView description and its attribute.
 ---

@@ -14,9 +14,9 @@ description: >-
 
 | Atributo | Tipo | Obrigatório | Definição |
 | :--- | :--- | :---: | :--- |
-| condition | Boolean ou [**Binding**](/pt/docs/api/contexto#binding) | ✓ | condição para definir qual ação será executada. |
-| onTrue | List&lt;Action&gt; |   | lista de ações que será executada quando a condição for verdadeira. |
-| onFalse | List&lt;Action&gt; |   | lista de ações que será executada quando a condição for falsa. |
+| condition | Boolean ou [**Binding**](/pt/docs/api/contexto#binding) | ✓ | Condição para definir qual ação será executada. |
+| onTrue | List&lt;Action&gt; |   | Lista de ações que será executada quando a condição for verdadeira. |
+| onFalse | List&lt;Action&gt; |   | Lista de ações que será executada quando a condição for falsa. |
 
 ## Como usar?
 

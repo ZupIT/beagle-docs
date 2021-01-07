@@ -1,5 +1,5 @@
 ---
-title: Openexternalurl
+title: OpenExternalUrl
 weight: 250
 description: Here you'll find OpenExternalURL description and its attribute.
 ---

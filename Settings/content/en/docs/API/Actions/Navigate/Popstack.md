@@ -1,5 +1,5 @@
 ---
-title: Popstack
+title: PopStack
 weight: 256
 description: Here you'll find PopStack description.
 ---

@@ -1,5 +1,5 @@
 ---
-title: Pushstack
+title: PushStack
 weight: 277
 description: Descrição da ação PushStack e seus atributos
 ---

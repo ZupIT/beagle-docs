@@ -1,5 +1,5 @@
 ---
-title: Pushstack
+title: PushStack
 weight: 252
 description: Here you'll find PushStack description and its attribute.
 ---

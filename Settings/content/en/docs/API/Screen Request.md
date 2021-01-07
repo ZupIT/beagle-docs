@@ -8,7 +8,7 @@ description: 'In this section, you will find all informations about Screen Reque
 
 ## What is it?
 
-The **`Screen Request`** is an internal Beagle class used to request which screen you want to display. This class is used when you will need to call a Server-Driven page you want to load from an activity or a native fragment on Android.
+The **`Screen Request`** is an internal Beagle class used to request which screen you want to display. This class is used when you will need to call a Server-Driven page you want to load from **an activity or a native fragment on Android.**
 
 At first, you will only list the URL attribute that referencing the page you want to load from BFF. 
 
@@ -19,7 +19,7 @@ However, this class has other attributes, which can be used when transitioning b
 | URL  | String |     ✓ | Defines the endpoint that returns the screen or component you wish to display. |
 | method | ScreenMethod |    ✓ |  It is an **`ENUM`** class that defines which HTTP operation you wish to do. It works as a **`HTTP REQUEST METHOD`** and it is set as GET by default. |
 | headers | Map&lt;String, String&gt; |  | It is used when you need to send data via an HTTP header.  |
-| body | String |  | It is set default as **`null`** and it just needs to be implemented when you need to send a **HTTP** messages as**`body data.`** |
+| body | String |  | It is set default as **`null`** and it just needs to be implemented when you need to send a **HTTP** messages as **`body data.`** |
 
 ### ScreenMethod
 
