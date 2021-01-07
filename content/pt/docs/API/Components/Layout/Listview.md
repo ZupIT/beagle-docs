@@ -21,9 +21,9 @@ A sua estrutura é representada como mostrado abaixo:
 | Atributo | Tipo | Obrigatório | Definição |
 | :--- | :--- | :---: | :--- |
 | direction | [ListDirection](#listdirection) |   | Define o direcionamento em que os items da lista são exibidos. |
-| context | [ContextData](/pt/docs/api/contexto) |  | Define o contexto do componente. |
+| context | [ContextData](/pt/docs/api/context) |  | Define o contexto do componente. |
 | onInit | List&lt;[Action](/pt/docs/api/actions)&gt; |  | Lista de ações a serem executadas assim que o componente é exibido.  |
-| dataSource | [Bind](/pt/docs/api/contexto#binding)&lt;List&lt;Any&gt;&gt; | ✓ | Expressão que aponta para uma lista de valores usados para popular o componete. |
+| dataSource | [Bind](/pt/docs/api/context#binding)&lt;List&lt;Any&gt;&gt; | ✓ | Expressão que aponta para uma lista de valores usados para popular o componete. |
 | template | [ServerDrivenComponent](/pt/docs/api/components) | ✓ | Representa cada celula na lista através de um `ServerDrivenComponent`. |
 | onScrollEnd | List&lt;[Action](/pt/docs/api/actions)&gt; |  | Lista de ações executadas quando a lista chega ao fim. |
 | scrollEndThreshold | Int |  | Define a porcentagem rolada da lista para disparar o `onScrollEnd`. |

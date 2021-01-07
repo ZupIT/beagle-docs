@@ -16,7 +16,7 @@ A sua estrutura é representada como mostrado abaixo:
 | :--- | :--- | :---: | :--- |
 | onSubmit | List &lt;[**Action**](/pt/docs/api/actions)&gt; | ✓ | Array de ações que esse botão pode disparar quando um formulário é enviado |
 | children | List&lt;[**ServerDrivenComponent**](/pt/docs/api/components)&gt; | ✓ | Define a lista de componentes visuais que compoe o formulário \(server-driven\)  |
-| context | [**ContextData**](/pt/docs/api/contexto) |   | Adiciona um contexto para o simple form |
+| context | [**ContextData**](/pt/docs/api/context) |   | Adiciona um contexto para o simple form |
 
 ## Como usar?
 
@@ -35,7 +35,7 @@ Para mais informações sobre esse componente vá até os detalhes do [TextInput
 
 #### OnChange
 
-Essa função é parte do componente Text Input e observa as modificações feitas dentro do seu campo, ou seja, sempre que o valor for modificado, algo for digitado, apagado, etc, essa função é chamada e ativa uma **lista** de outras [**ações**](/pt/docs/api/actions) para acontecer sempre que o valor mudar. É nessa lista que adicionamos uma ação [**SetContext**](/pt/docs/api/actions/setcontext) para definir o valor do [**Contexto**](/pt/docs/api/contexto/) do formulário e atualizar os valores que são mostrados no campo.
+Essa função é parte do componente Text Input e observa as modificações feitas dentro do seu campo, ou seja, sempre que o valor for modificado, algo for digitado, apagado, etc, essa função é chamada e ativa uma **lista** de outras [**ações**](/pt/docs/api/actions) para acontecer sempre que o valor mudar. É nessa lista que adicionamos uma ação [**SetContext**](/pt/docs/api/actions/setcontext) para definir o valor do [**Contexto**](/pt/docs/api/context/) do formulário e atualizar os valores que são mostrados no campo.
 
 Veja abaixo como implementamos o nosso `SimpleForm`
 

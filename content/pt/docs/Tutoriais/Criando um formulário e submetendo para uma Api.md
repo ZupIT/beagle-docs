@@ -17,9 +17,9 @@ Para este tutorial, iremos usar algumas [**ações**](/pt/docs/api/actions) e ta
 
 **APIs**
 
-* [**Context**](/pt/docs/api/contexto/)
-* [**Binding**](/pt/docs/api/contexto#binding)
-* [**Expressões**](/pt/docs/api/contexto#binding)
+* [**Context**](/pt/docs/api/context/)
+* [**Binding**](/pt/docs/api/context#binding)
+* [**Expressões**](/pt/docs/api/context#binding)
 
 Apesar do conceito [**Server-Driven**](/pt/docs/principais-conceitos#server-driven-ui) trabalhar componentes separadamente, é possível realizar a transmissão das informações para uma API e é o que vamos demonstrar abaixo. 
 
@@ -69,7 +69,7 @@ Container(
 
 ### Passo 2: Configurar o SetContext
 
-Agora utilize uma **ação** chamada [**SetContext**](/pt/docs/api/actions/setcontext), que altera um [**contexto**](/pt/docs/api/contexto) **específico** em uma tela. Isto é necessário para dar vida à tela e fazer com que os dados que forem digitados nela sejam enviados para uma API. 
+Agora utilize uma **ação** chamada [**SetContext**](/pt/docs/api/actions/setcontext), que altera um [**contexto**](/pt/docs/api/context) **específico** em uma tela. Isto é necessário para dar vida à tela e fazer com que os dados que forem digitados nela sejam enviados para uma API. 
 
 Neste cenário, o contexto é que irá guardar os dados digitados de nome do usuário e da senha para que, posteriormente, encaminhar estes dados para a API.
 
@@ -165,7 +165,7 @@ Container(
 {{% /tab %}}
 {{< /tabs >}}
 
-Neste exemplo, utilizamos o evento `onChange` do próprio TextInput que é chamado sempre que o usuário digita um texto novo no input. Dentro do onChange, existe um [**contexto implícito**](/pt/docs/api/contexto#2-contextos-implícitos) chamado `onChange` no qual o `value` é o último valor digitado pelo usuário. 
+Neste exemplo, utilizamos o evento `onChange` do próprio TextInput que é chamado sempre que o usuário digita um texto novo no input. Dentro do onChange, existe um [**contexto implícito**](/pt/docs/api/context#2-contextos-implícitos) chamado `onChange` no qual o `value` é o último valor digitado pelo usuário. 
 
 #### OnChange 
 

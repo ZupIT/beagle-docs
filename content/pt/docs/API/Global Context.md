@@ -10,7 +10,7 @@ description: 'Nesta seção, você encontra descrição completa de contexto glo
 
 O Contexto Global é uma variável que pode assumir como valor qualquer tipo de variável, como um mapa definindo um conjunto de pares chave/valor ou objetos JSONs complexos que definem árvores de objetos. 
 
-Ele funciona exatamente como o [**Contexto**](/pt/docs/api/contexto/), no entanto, com um escopo **global**, ou seja, ele existirá enquanto a aplicação estiver rodando \(mesmo em background\), o que o permite ser acessado a partir de qualquer ponto da aplicação, seja esse ponto um componente ou ação vinculada a um componente ou mesmo programaticamente. 
+Ele funciona exatamente como o [**Contexto**](/pt/docs/api/context/), no entanto, com um escopo **global**, ou seja, ele existirá enquanto a aplicação estiver rodando \(mesmo em background\), o que o permite ser acessado a partir de qualquer ponto da aplicação, seja esse ponto um componente ou ação vinculada a um componente ou mesmo programaticamente. 
 
 ### Como acessar? 
 
@@ -24,7 +24,7 @@ Desta forma, é possível compartilhar informações entre a parte nativa da apl
 
 Para utilizar o Contexto Global é importante ressaltar algumas informações importantes:
 
-* O Contexto Global é um `Objeto` do tipo [`ContextData`](/pt/docs/api/contexto/). 
+* O Contexto Global é um `Objeto` do tipo [`ContextData`](/pt/docs/api/context/). 
 * O Contexto Global pode ter como VALUE um Objeto JSON complexo, que pode conter uma árvore de objetos em si mesmo.
 * É um `Singleton`.
 

@@ -10,7 +10,7 @@ description: >-
 
 A **comunicação entre componentes** é uma forma de compartilhar informações com o uso de Observables que, de modo geral, emitem notificações sempre que uma mudança acontece com eles. 
 
-Abaixo, você verá como fazer a configuração dessa comunicação usando o [**Contexto, um componente do Beagle.** ](/pt/docs/api/contexto/)
+Abaixo, você verá como fazer a configuração dessa comunicação usando o [**Contexto, um componente do Beagle.** ](/pt/docs/api/context/)
 
 ## Configurando a comunicação entre componentes.
 

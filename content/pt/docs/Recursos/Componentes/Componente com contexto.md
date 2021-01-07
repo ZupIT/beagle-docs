@@ -8,7 +8,7 @@ description: >-
 
 ---
 
-O `ContextComponent` é uma interface precisa ser implementada em componentes que usam o [**Contexto**](/pt/docs/api/contexto#o-que-é), porque é onde está o atributo `context`.
+O `ContextComponent` é uma interface precisa ser implementada em componentes que usam o [**Contexto**](/pt/docs/api/context#o-que-é), porque é onde está o atributo `context`.
 
 ## Componentes do Beagle com contexto:
 

@@ -18,7 +18,7 @@ A sua tela possui atributos e componentes que podem ser usados e configurados. N
 | child | [**Server Driven Component**](/pt/docs/api/components/) | ✓ | Define os elementos na tela. Pode ser qualquer componente visual que estenda de `ServerDrivenComponent`. |
 | style | [**Style**](/pt/docs/api/widget#atributos-do-style) |   | Fornece opções de customização visual para a `Screen.` |
 | screen analytics event | [**Screen Event**](/pt/docs/api/analytics/#opção-screenview) |   | Configura elementos de análise\(Analytics\) na sua tela. |
-| context | [**ContextData**](/pt/docs/api/contexto/) |   | Contexto da tela. |
+| context | [**ContextData**](/pt/docs/api/context/) |   | Contexto da tela. |
 
 ## Como usar?
 
