@@ -1,21 +1,20 @@
 ---
-title: Camada de rede
-weight: 151
+title: Network Layer
+weight: 157
 description: >-
-  Nesta seção, você encontra informações sobre a camada de rede do Beagle e como
-  modificá-la.
+  You will find here information about Beagles's network layer and how to modify it.
 ---
 
 ---
 
-## **Introdução**
+## Introduction
 
-O Beagle realiza todas requisições web a partir da dependência **`networkClient`** presente no BeagleDependencies do tipo `NetworkClient`, sendo assim é possível criar a sua própria implementação de camada de rede para ser utilizada no framework.
+Beagle makes all the web request from the **`networkClient`** dependency that is present in BeagleDependencies of the type `NetworkClient`, so it is possible to create your own network layer implementation to be used in the framework.
 
-Com isso você pode:
+With that in mind, you can:
 
-* **Unificar** a camada de networking do sistema em um **módulo;**
-* Modificar propriedades como, por exemplo, cabeçalhos de requisições, métodos request, body response, data response, executar criptografia, etc.
+* **Unify** the network layer in one **module**;
+* Modify some properties like request headers, request methods, body response, data response,  run cryptography, etc.
 
 ```swift
 public protocol NetworkClient {
@@ -31,57 +30,57 @@ public protocol NetworkClient {
 }
 ```
 
-| **Atributo** | **Tipo** | **Obrigatório** | **Definição** |
+| **Attribute** | **Type** | **Required** | **Definition** |
 | :--- | :--- | :---: | :---: |
-| request | Request  | ✓ | Contém os dados necessários para a requisição. |
-| completion | RequestCompletion | ✓ | Bloco que deve ser chamado ao final da execução da função passando o resultado da requisição. |
+| request | Request  | ✓ | Contains the data necessary to make a request. |
+| completion | RequestCompletion | ✓ | block that must be called in the end of the function execution, passing the request result. |
 
-Além disso a função pode retornar o **RequestToken,** para que a requisição possa ser cancelada internamente pelo Beagle.
+Besides that, the function can return the **RequestToken,** in order to make the request be able to be canceled internally by Beagle.
 
 ### **Request**
 
-| **Atributo** | **Tipo** | **Obrigatório** | **Definição** |
+| **Attribute** | **Type** | **Required** | **Definition** |
 | :--- | :--- | :---: | :---: |
-| url | URL | ✓ | Contém a url da requisição. |
-| type | RequestType | ✓ | Contém o tipo da requisição. |
-| additionalData | RemoteScreenAdditionalData |  | Contém os dados adicionais para uma requisição. (ex: headers) |
+| url | URL | ✓ | Contains the url of the request. |
+| type | RequestType | ✓ | Contains the type of the request. |
+| additionalData | RemoteScreenAdditionalData |  | Contains the additional data for a request. (ex: headers) |
 
 ### **RequestType**
 
-É um `Enum`, cujo os valores são:
+It is an `ENUM` and the values are:
 
-| Valor | Definição |
+| Value | Definition |
 | :--- | :--- |
-| fetchComponent | Requisição de componente |
-| submitForm(FormData) | Envio de formulários |
-| fetchImage | Requisição de imagem |
-| rawRequest(RequestData) | Outros tipos de requisição |
+| fetchComponent | Component requests |
+| submitForm(FormData) | Submit forms |
+| fetchImage | Image requests |
+| rawRequest(RequestData) | Other types of requests |
 
 #### **FormData**
 
-| **Atributo** | **Tipo** | **Obrigatório** | **Definição** |
+| **Attribute** | **Type** | **Required** | **Definition** |
 | :--- | :--- | :---: | :---: |
-| method | FormRemoteAction.Method | ✓ | Contém o tipo da requisição (get, post, put, delete). |
-| values | [String: String] | ✓ | Contém o valor dos dados do formulário. |
+| method | FormRemoteAction.Method | ✓ | Contains the type of the request (get, post, put, delete). |
+| values | [String: String] | ✓ | Contains the data of the form. |
 
 #### **RequestData**
 
-| **Atributo** | **Tipo** | **Obrigatório** | **Definição** |
+| **Attribute** | **Type** | **Required** | **Definition** |
 | :--- | :--- | :---: | :---: |
-| method | String |  | Parâmetro que recebe o tipo da requisição, têm-se como default o tipo "GET". |
-| headers | [String: String] |  | Parâmetro que vai conter o cabeçalho das requisições. |
-| body | Any |  | Contém o body da requisição. |
+| method | String |  | Receives the type of the request, the default is "GET". |
+| headers | [String: String] |  | Contains the headers for the requests. |
+| body | Any |  | Contains the body of the request. |
 
-## **Criando uma camada de Networking**
+## **Creating a Network layer**
 
-Para substituir a classe responsável por realizar as requisições Http para o Beagle, siga os passos a seguir:
+To customize your `NetworkClient` protocol, see the steps below:
 
-### **Passo 1: Implementar a `NetworkClient`**
+### **Step 1: Implement the `NetworkClient`**
 
-Implemente o protocolo `NetworkClient` na classe que deseja utilizar para realizar as requisições, neste caso o `NetworkClientDefault` será usado como exemplo:
+Implement the `NetworkClient` protocol in the class you want to use to make requests, in this case, the `CustomNetworkClient` will be used, like the example below:
 
 ```swift
-class NetworkClientDefault: NetworkClient {
+class CustomNetworkClient: NetworkClient {
     func executeRequest(
         _ request: Request, 
         completion: @escaping RequestCompletion
@@ -89,35 +88,35 @@ class NetworkClientDefault: NetworkClient {
         let url: URL = request.url
         let requestType = request.type
         let headers = request.additionalData
-        //Implementacao de Requisicoes
+        //Requests implementation
     }
     
-    //Implementacao Network Client...
+    //Network client implementation...
 }
 ```
 
-### **Passo 2: Atribuir as dependências**
+### **Step 2: Assign the dependencies**
 
-No AppDelegate ou na classe de configurações do ambiente do Beagle, atribua a instância de `NetworkClientDefault` ao atributo `networkClient` presente no Beagle Dependencies:
+On AppDelegate or on Beagle's environment, assign the instance of `CustomNetworkClient` to the `networkClient` attribute from Beagle Dependencies:
 
 ```swift
 let dependencies = BeagleDependencies()
-let client = NetworkClientDefault()
+let client = CustomNetworkClient()
 dependencies.networkClient = client
 Beagle.dependencies = dependencies
 ```
 
-Pronto! Agora o Beagle utilizará a sua classe com todas as modificações e definições necessárias para realizar as requisições Http.
+Done! Now, Beagle will use your class with all the changes and definition needed to make the http requests.
 
-### **Exemplo completo**
+### **Example**
 
-O exemplo abaixo possui a mesma implementação utilizada nas bibliotecas BeagleScaffold e BeagleDefault.
+The example below has the same implementation used in the BeagleScaffold and BeagleDefault libraries.
 
 #### **`NetworkClientDefault`**
 
-Crie um novo arquivo chamado `NetworkClientDefault`, que terá uma classe conformando com o protocolo `NetworkClient`. 
+Create a new file called `NetworkClientDefault`, which will have a class conforming to the `NetworkClient` protocol.
 
-A implementação que iremos criar utiliza recursos do **Foundation** para realizar as requisições, como por exemplo o **URLSession**.
+This implementation uses **Foundation** resources to make requests, such as **URLSession**.
 
 ```swift
 
@@ -201,11 +200,12 @@ public class NetworkClientDefault: NetworkClient {
 
 #### **`HttpRequestBuilder`**
 
-Crie um novo arquivo chamado `HttpRequestBuilder`. Essa classe será utilizada para fazer as configurações das requisições http.
+Create a new file called `HttpRequestBuilder`. This class will be used to configure http request configurations.
 
-No exemplo abaixo, construímos a requisição (url, método, headers e body) de acordo com o tipo de `Request.RequestType` passado.
+In the example below, build the request (url, method, headers and body) according to the type of `Request.RequestType` passed.
 
 ```swift
+
 public class HttpRequestBuilder {
 
     public var additionalHeaders = [String: String]()
