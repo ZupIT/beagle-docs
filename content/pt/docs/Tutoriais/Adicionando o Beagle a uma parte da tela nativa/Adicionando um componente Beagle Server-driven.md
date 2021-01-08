@@ -244,7 +244,7 @@ Você deve utilizar uma `BeagleView` para "colocar" esse componente do BFF e, as
 # Beagle View
 
 Veja mais sobre o que é, como funciona e como usar a `BeagleView` 
-[**aqui!**](/pt/docs/recursos/customização/beagle-para-ios/beagle-view/)
+[**aqui!**](/pt/docs/resources/customization/beagle-para-ios/beagle-view/)
 {{% /alert %}}
 
 1. Crie um **UIViewController**. 
@@ -299,7 +299,7 @@ Ao final do processo, você poderá "chamar" a tela nativa e a imagem abaixo ir�
 {{% tab name="WEB" %}}
 Se você ainda não configurou a biblioteca em seu projeto, [**veja aqui como fazer isso**.](/pt/docs/get-started/using-beagle/web)
 
-Você deve utilizar o [**Remote View**](/pt/docs/recursos/customização/beagle-para-web/parâmetros-remote-view), fornecido pela biblioteca do Beagle, para criar telas híbridas com alguns componentes server driven na web.
+Você deve utilizar o [**Remote View**](/pt/docs/resources/customization/beagle-para-web/parâmetros-remote-view), fornecido pela biblioteca do Beagle, para criar telas híbridas com alguns componentes server driven na web.
 
 
 Veja a seguir como funciona para cada framework:

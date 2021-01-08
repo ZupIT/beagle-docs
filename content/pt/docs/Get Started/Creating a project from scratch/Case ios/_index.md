@@ -98,7 +98,7 @@ class BeagleConfig {
 Agora, vamos configurar a classe **`SceneDelegate`** para que possamos inicializar nossa aplicação com o Beagle a partir de uma tela via [**BFF**:](/pt/docs/key-concepts#backend-for-frontend)
 
 * Crie a constante **`beagleScreen`**, que irá receber a tela server-driven. 
-* O argumento `init URL` deve conter o endereço da [**URL relativa**](/pt/docs/recursos/urls#caminho-relativo) que será criada no backend \(BFF\). No nosso exemplo a chamaremos de "/screen"
+* O argumento `init URL` deve conter o endereço da [**URL relativa**](/pt/docs/resources/urls#caminho-relativo) que será criada no backend \(BFF\). No nosso exemplo a chamaremos de "/screen"
 
 Siga o exemplo abaixo: 
 

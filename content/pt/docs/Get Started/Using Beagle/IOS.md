@@ -60,7 +60,7 @@ class MyBeagleScreen {
 
 
 {{% alert color="info" %}}
-Note que a **`Screen`** está sendo construída utilizando **`Flex`**. Para entender melhor esses componentes e suas propriedades, vá para a seção [**posicionamento de componentes**](/pt/docs/recursos/posicionamento-de-componentes/).
+Note que a **`Screen`** está sendo construída utilizando **`Flex`**. Para entender melhor esses componentes e suas propriedades, vá para a seção [**posicionamento de componentes**](/pt/docs/resources/posicionamento-de-componentes/).
 {{% /alert %}}
 
 ### Passo 2: Instanciar o **BeagleScreenViewController**
