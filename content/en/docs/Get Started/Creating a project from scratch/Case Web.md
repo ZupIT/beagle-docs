@@ -80,7 +80,7 @@ yarn create react-app case-react --template typescript
 
 ![](/image%20%2811%29.png)
 
-**Step 2:** Acess the `cd case-react` project's file and add **Beagle React** to your repository. On your terminal, type:
+**Step 2:** Access the `cd case-react` project's file and add **Beagle React** to your repository. On your terminal, type:
 
 ```text
 npm install --save @zup-it/beagle-react
@@ -192,7 +192,7 @@ On your react project, navigate to the `/public` folder and create a new file na
                 }
               }
             },
-            "text":"Beagle ís a cross-platform framework which provices usage of the server Driven UI concept,natively in iOS, Android and Web applications. By using Beagle, your team could easily change application's layout and data by just changing backend code"
+            "text":"Beagle is a cross-platform framework which provides usage of the server Driven UI concept,natively in iOS, Android and Web applications. By using Beagle, your team could easily change application's layout and data by just changing backend code"
         }
     ]
 }
@@ -237,7 +237,7 @@ function App() {
 export default App;
 ```
 
-On this step, we point where our layout defined with `payload.json` file should be rendered. Here, we have two componentes provided by Beagle: 
+On this step, we point where our layout defined with `payload.json` file should be rendered. Here, we have two components provided by Beagle: 
 
 `<BeagleProvider>`: Receives the `value` propriety as the `beagle-service` created on the previous step and that contains the initials configurations.
 

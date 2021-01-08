@@ -19,7 +19,7 @@ The structure is represented by the attributes below:
 | **Attribute** | **Type** | Required | **Definition**  |
 | :--- | :--- | :--- | :--- |
 | children | List&lt;[**TabItem**](#what-is-tabitem)&gt; |      ✓ | List of tab items available in the `TabView` component. The `TabItem` itself is not a `widget`, but its content is a server driven component received through Beagle.  |
-| styleId | String |  | It uses a key that it is registered in the Design System of evert platform to customize your component.  |
+| styleId | String |  | It uses a key that is registered in the Design System of evert platform to customize your component.  |
 | context | ContextData |  | Add a context to your `TabView` component. |
 
 ## What is Tab**Item?**

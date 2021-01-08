@@ -6,7 +6,7 @@ description: You will find here the cache strategies types description on the We
 
 ---
 
-Beagle Web offers some cache strategies, one of them is the [**Beagle's pattern cache protocol guided by the backed**](/docs/resources/cache#how-does-the-cache-protocol-works). 
+Beagle Web offers some cache strategies, one of them is the [**Beagle's default cache protocol guided by the backed**](/docs/resources/cache#how-does-the-cache-protocol-works). 
 
 Other strategies you are able to use: 
 

@@ -21,7 +21,7 @@ They are divided in 4 categories:
 3. **Navigation:** informative messages that describes the navigations inside the server driven flow and possible errors may occur. 
 4. **Form:** related to forms. 
 
-It is possible to disable triggered log messages. Beagle will not call the Log's API, even if it is a pattern or customized. You will need to change the attribute `isLoggingEnabled` of`BeagleDependencies` to`false`.
+It is possible to disable triggered log messages. Beagle will not call the Log's API, even if it is default or customized. You will need to change the attribute `isLoggingEnabled` of`BeagleDependencies` to`false`.
 
 The log messages can be filtered using these categories names and the main package identifier of the application as a subsystems. 
 
@@ -53,7 +53,7 @@ Follow the steps below to filter the log messages:
 
 ## Customization
 
-In order to let Beagle's environment open to modifications, the API logs pattern can be replaced to any other. Follow th next steps to make the API's logs replacement: 
+In order to let Beagle's environment open to modifications, the default API logs can be replaced to any other. Follow th next steps to make the API's logs replacement: 
 
 **Step 1:** implement BeagleLoggerType protocol on the class you want to use as log API, you will see that it is necessary to implement the methods `log(_ log: LogType)` and `logDecodingError(type: String)` that are internally called by Beagle when a message needs to be triggered:
 

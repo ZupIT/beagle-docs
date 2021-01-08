@@ -16,7 +16,7 @@ Besides these configuration, you can also customize the navigation of your appli
 
 There are two customization options:
 
-1. According to Android's animation pattern.
+1. According to Android's defult animation.
 2. Fragments transition provided by Beagle, that it can be customized according to your preference and design system. They are: 
 
 * [**PushView**](/docs/api/actions/navigate/pushview)
@@ -25,15 +25,15 @@ There are two customization options:
 
 ## Protocol and customized 
 
-**Beagle's pattern protocol** for customization is to use a native Android tool, to make fragment transition to customize your animation.
+**Beagle's default protocol** for customization is to use a native Android tool, to make fragment transition to customize your animation.
 
 {{% alert color="info" %}}
 For more information on how this process works, [**check out the Android's section**  **setCustomAnimations**.](https://developer.android.com/reference/android/app/FragmentTransaction#setCustomAnimations%28int,%20int,%20int,%20int%29)
 {{% /alert %}}
 
-The other way to customize an animation it is the transition through the [**BeagleActivity**](/docs/get-started/creating-a-project-from-scratch/) class implementation, which Beagle uses the _**getFragmentTransitionAnimation\(\)**_ method.
+The other way to customize an animation is the transition through the [**BeagleActivity**](/docs/get-started/creating-a-project-from-scratch/) class implementation, which Beagle uses the _**getFragmentTransitionAnimation\(\)**_ method.
 
-In case this method it isn't implemented and customized, the transitions will follow the Beagle's animation pattern. The code below shows the [**BeagleActivity**](/docs/get-started/creating-a-project-from-scratch/) method, that can be overwritten this way:
+In case this method isn't implemented and customized, the transitions will follow the Beagle's default animation. The code below shows the [**BeagleActivity**](/docs/get-started/creating-a-project-from-scratch/) method, that can be overwritten this way:
 
 ```kotlin
 open fun getFragmentTransitionAnimation() = FragmentTransitionAnimation(

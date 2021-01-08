@@ -107,7 +107,7 @@ struct Styles {
 
 Now it's necessary to register Beagle's styles, which is important so Beagle can be able to apply these styles in server-driven screens.
 
-1. Open the `BeagleConfig` file. Register a constante called `theme` 
+1. Open the `BeagleConfig` file. Register a constant called `theme` 
 2. It's on the `theme` constant where the styles will be listed.
 3. This constant will receive the `AppTheme` , which is where the styles are registered.
 4.  Create the information block below inside the**`static func config`** function.
