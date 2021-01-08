@@ -1,5 +1,5 @@
 ---
-title: Documentation
+title: Página inicial
 cascade:
   - type: "docs"
 ---

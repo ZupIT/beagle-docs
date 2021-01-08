@@ -1,5 +1,5 @@
 ---
-title: Documentação
+title: Home
 cascade:
   - type: "docs"
 ---
