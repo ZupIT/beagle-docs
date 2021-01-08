@@ -175,7 +175,7 @@ Lembre de sempre verificar se você está usando a versão mais recente do Beagl
 
 Parabéns, a configuração inicial está pronta para uso! 
 
-Você pode conferir um **exemplo prático** de tela ou componente Server-Driven [**para testar o BFF**](/pt/docs/primeiros-passos/usando-o-beagle/backend)
+Você pode conferir um **exemplo prático** de tela ou componente Server-Driven [**para testar o BFF**](/pt/docs/get-started/using-beagle/backend)
 
 {{% alert color="danger" %}}
 O Spring Boot tem um problema conhecido envolvendo seu `WebMvcConfigurationSupport`. Sua presença substitui outras configurações do Jackson, incluindo a do `Spring Starter`. 
@@ -193,13 +193,13 @@ A anotação `@EnableWebMvc` causa o mesmo problema, o que requer que ela també
 Pronto, a configuração inicial está pronta para uso! 
 {{% /alert %}}
 
-Você pode conferir um **exemplo prático** de [**como testar o Beagle no Backend**](/pt/docs/primeiros-passos/usando-o-beagle/backend) ou componente Server-Driven para testar o BFF. 
+Você pode conferir um **exemplo prático** de [**como testar o Beagle no Backend**](/pt/docs/get-started/using-beagle/backend) ou componente Server-Driven para testar o BFF. 
 
 ## Próximos Passos
 
 Nesta seção, você fez a **instalação inicial** do Beagle na sua aplicação!  
 Para continuar a configurar o Beagle:
 
-👉Vá para as [**configurações iniciais**](/pt/docs/primeiros-passos/usando-o-beagle/backend) para habilitar uso do Beagle no seu projeto Backend
+👉Vá para as [**configurações iniciais**](/pt/docs/get-started/using-beagle/backend) para habilitar uso do Beagle no seu projeto Backend
 
-👉 Se quiser ir direto para prática, acesse nosso [**tutorial para criar um projeto do zero**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-backend)
+👉 Se quiser ir direto para prática, acesse nosso [**tutorial para criar um projeto do zero**](/pt/docs/get-started/creating-a-project-from-scratch/case-backend)

@@ -94,9 +94,9 @@ Sim! Por ser um **framework cross-platform,** Beagle te auxilia a desenvolver ap
 
 Você pode ver mais sobre como criar projetos no Beagle para as 3 plataformas em: 
 
-* [**Beagle for Android** ](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-android/)
-* [**Beagle for iOS**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-ios/)
-* [**Beagle for Web**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-web)
+* [**Beagle for Android** ](/pt/docs/get-started/creating-a-project-from-scratch/case-android/)
+* [**Beagle for iOS**](/pt/docs/get-started/creating-a-project-from-scratch/case-ios/)
+* [**Beagle for Web**](/pt/docs/get-started/creating-a-project-from-scratch/case-web)
 
 ## Posso fazer testes unitários e instrumentados em telas Server-Driven?
 

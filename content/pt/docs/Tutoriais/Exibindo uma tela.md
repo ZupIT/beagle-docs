@@ -23,7 +23,7 @@ Você deve seguir tal como o comando abaixo:
 {{% alert color="warning" %}}
 Certifique-se de listar a sua Beagle Activity assim como nomeada em seu AndroidManifest. 
 
-No exemplo abaixo a chamamos somente de &lt;BeagleActivity&gt;. Esse nome é você quem define ao criar sua BeagleActivity. Em nosso tutorial [**Criando um projeto do zero** ](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-android), chamamos ela de `AppBeagleActivity`
+No exemplo abaixo a chamamos somente de &lt;BeagleActivity&gt;. Esse nome é você quem define ao criar sua BeagleActivity. Em nosso tutorial [**Criando um projeto do zero** ](/pt/docs/get-started/creating-a-project-from-scratch/case-android), chamamos ela de `AppBeagleActivity`
 {{% /alert %}}
 
 ```kotlin

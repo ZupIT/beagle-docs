@@ -10,9 +10,9 @@ description: >-
 
 ## **C**riando estilos para o Beagle iOS
 
-No exemplo prático da página "Criando um projeto com Beagle para iOS", você pode conferir como fazer a [**implementação do Beagle**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-ios) e criar sua primeira tela server-driven.
+No exemplo prático da página "Criando um projeto com Beagle para iOS", você pode conferir como fazer a [**implementação do Beagle**](/pt/docs/get-started/creating-a-project-from-scratch/case-ios) e criar sua primeira tela server-driven.
 
-Neste tutorial, a ideia é avançar a partir do [**projeto anterior**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-ios#passo-3-configurar-o-xcode) para **criar um Design System na sua biblioteca do Beagle**.  Os exemplos que ilustrarão o passo a passo estão nestes[ **sample codes**](https://github.com/ZupIT/beagle-examples) que você encontra no nosso repositório. 
+Neste tutorial, a ideia é avançar a partir do [**projeto anterior**](/pt/docs/get-started/creating-a-project-from-scratch/case-ios#passo-3-configurar-o-xcode) para **criar um Design System na sua biblioteca do Beagle**.  Os exemplos que ilustrarão o passo a passo estão nestes[ **sample codes**](https://github.com/ZupIT/beagle-examples) que você encontra no nosso repositório. 
 
 A ideia aqui é configurar alguns estilos no iOS para que você possa customizar componentes como:
 

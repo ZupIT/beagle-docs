@@ -135,7 +135,7 @@ No GIF abaixo, você vê melhor como remover as referências:
 
 ![](/main%20%282%29.gif)
 
-Feito! O Beagle está configurado na sua aplicação iOS. Agora, tudo o que você precisa é [**configurar um backend**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-backend) para responder as requisições do seu aplicativo server-driven.
+Feito! O Beagle está configurado na sua aplicação iOS. Agora, tudo o que você precisa é [**configurar um backend**](/pt/docs/get-started/creating-a-project-from-scratch/case-backend) para responder as requisições do seu aplicativo server-driven.
 
 Feita essa configuração, inicie a sua aplicação e você terá sua primeira tela server-driven!   
 Você verá a tela a seguir: 

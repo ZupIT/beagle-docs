@@ -10,9 +10,9 @@ description: >-
 
 ## **Criando um Design System**
 
-No exemplo prático da página "Criando um projeto com Beagle para Android", você pode conferir como fazer a [**implementação do Beagle**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-android) para criar uma tela server-driven simples, com apenas 2 textos: 1 título e 1 parágrafo.
+No exemplo prático da página "Criando um projeto com Beagle para Android", você pode conferir como fazer a [**implementação do Beagle**](/pt/docs/get-started/creating-a-project-from-scratch/case-android) para criar uma tela server-driven simples, com apenas 2 textos: 1 título e 1 parágrafo.
 
-Neste tutorial, a ideia é avançar a partir do [**projeto anterior**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-android/#passo-7-exibir-sua-tela-server-driven) para **criar um Design System na sua biblioteca do Beagle**. Os exemplos que ilustrarão o passo a passo estão nestes [**sample codes**](https://github.com/ZupIT/beagle-examples) que você encontra no nosso repositório. 
+Neste tutorial, a ideia é avançar a partir do [**projeto anterior**](/pt/docs/get-started/creating-a-project-from-scratch/case-android/#passo-7-exibir-sua-tela-server-driven) para **criar um Design System na sua biblioteca do Beagle**. Os exemplos que ilustrarão o passo a passo estão nestes [**sample codes**](https://github.com/ZupIT/beagle-examples) que você encontra no nosso repositório. 
 
 O Design System que iremos configurar vai permitir que você customize alguns componentes do Beagle, como por exemplo:
 
@@ -158,7 +158,7 @@ Repita este processo para o outro componente `Text` que é um paragrafo, com a d
 Isto é tudo que faremos no back-end nesse momento. Você pode rodar sua aplicação backend para que o serviço fique disponível e, em breve, você verá sua tela com estilo no Android.
 
 {{% alert color="info" %}}
-Caso tenha algum problema, recomendamos que faça o tutorial para [**implementar a instalação desse backend.**](/pt/docs/primeiros-passos/instalando-o-beagle/backend)
+Caso tenha algum problema, recomendamos que faça o tutorial para [**implementar a instalação desse backend.**](/pt/docs/get-started/installing-beagle/backend)
 {{% /alert %}}
 
      4. Primeiro, vamos registrar três cores no arquivo color no android. 

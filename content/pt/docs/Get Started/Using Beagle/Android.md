@@ -10,7 +10,7 @@ description: >-
 
 Atualmente, existem dois tipos de abordagens para a renderização de telas com o Beagle: **remota** e **local.**
 
-Neste tutorial abaixo, vamos fazer a configuração e construir uma tela local. Para aprender como configurar e construir uma tela remota, siga no tutorial  [**criando um projeto do zero**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-android)
+Neste tutorial abaixo, vamos fazer a configuração e construir uma tela local. Para aprender como configurar e construir uma tela remota, siga no tutorial  [**criando um projeto do zero**](/pt/docs/get-started/creating-a-project-from-scratch/case-android)
 
 ## **Configuração de uso** 
 
@@ -59,7 +59,7 @@ defaultConfig {
 
 
 {{% alert color="info" %}}
-Você pode criar o Design System agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-lo. Para saber mais, confira a seção sobre [**Design System com Beagle para Android**](/pt/docs/primeiros-passos/criando-um-projeto-do-zero/case-android/design-system-com-beagle-android).
+Você pode criar o Design System agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-lo. Para saber mais, confira a seção sobre [**Design System com Beagle para Android**](/pt/docs/get-started/creating-a-project-from-scratch/case-android/design-system-with-beagle-android).
 {{% /alert %}}
 
 ### **Passo 3: Criar o BeagleSetup**

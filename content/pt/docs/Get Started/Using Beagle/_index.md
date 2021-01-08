@@ -8,6 +8,6 @@ description: >-
 
 ---
 
-Depois de fazer a [**instalação do Beagle**](/pt/docs/primeiros-passos/instalando-o-beagle/), é necessário realizar as configurações de uso para habilitar a ferramenta no seu projeto. 
+Depois de fazer a [**instalação do Beagle**](/pt/docs/get-started/installing-beagle/), é necessário realizar as configurações de uso para habilitar a ferramenta no seu projeto. 
 
 Você pode configurar de acordo com a plataforma que estiver utilizando:
