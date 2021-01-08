@@ -211,7 +211,7 @@ class AnalyticsSample: Analytics {
 
 ## Navigation
 
-`navigation` deals with the [**navigate**](/docs/api/actions/navigate) types of action in your application. There is one implementation that it is used with default value, but that it can be replaced for a [**BeagleNavigation**](/docs/resources/customization/beagle-for-ios/navigation) class. 
+`navigation` deals with the [**navigate**](/docs/api/actions/navigate) types of action in your application. There is one implementation that it is used with default value, but that it can be replaced for a [**BeagleNavigation**](/docs/resources/customization/beagle-for-ios/navigation-animation) class. 
 
 On this same attribute is also possible to define a [**navigation animation**](/docs/resources/customization/beagle-for-android/navigation-animation). 
 

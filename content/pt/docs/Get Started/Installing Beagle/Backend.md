@@ -31,7 +31,7 @@ Se você já tiver atualizado todos estes programas, basta seguir as instruçõe
 No momento de criar o microsserviço, recomendamos que você utilize os mesmos mecanismos estabelecidos. Caso este não seja o seu caso, então basta seguir as configurações abaixo. 
 
 {{% alert color="warning" %}}
-Se o seu time trabalha com microsserviços usando outros frameworks, acesse o [**framework do Beagle**](/pt/docs/resources/customization/beagle-para-backend/beagle-framework).  
+Se o seu time trabalha com microsserviços usando outros frameworks, acesse o [**framework do Beagle**](/pt/docs/resources/customization/beagle-for-backend/beagle-framework).  
 {{% /alert %}}
 
 Para uma configuração simples, você pode escolher entre **2 modelos de frameworks** para criar seu BFF:

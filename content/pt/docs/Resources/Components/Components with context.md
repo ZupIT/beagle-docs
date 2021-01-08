@@ -54,5 +54,5 @@ public struct CustomComponent: RawComponent, HasContext {
 {{< /tabs >}}
 
 {{% alert color="warning" %}}
-Se você quiser criar componentes customizados no iOS, é **necessário registrá-lo**! Veja como registrar [**aqui**](/pt/docs/resources/customization/beagle-para-ios/widgets-customizados#passo-2-registrar-o-widget).
+Se você quiser criar componentes customizados no iOS, é **necessário registrá-lo**! Veja como registrar [**aqui**](/pt/docs/resources/customization/beagle-for-ios/custom-widgets#passo-2-registrar-o-widget).
 {{% /alert %}}

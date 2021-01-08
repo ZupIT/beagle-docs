@@ -1,5 +1,5 @@
 ---
-title: Navigation 
+title: Navigation Animation
 weight: 155
 description: You will find here information about Navigation.
 ---

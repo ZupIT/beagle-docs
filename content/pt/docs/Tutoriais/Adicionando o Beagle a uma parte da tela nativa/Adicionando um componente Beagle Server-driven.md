@@ -244,7 +244,7 @@ Você deve utilizar uma `BeagleView` para "colocar" esse componente do BFF e, as
 # Beagle View
 
 Veja mais sobre o que é, como funciona e como usar a `BeagleView` 
-[**aqui!**](/pt/docs/resources/customization/beagle-para-ios/beagle-view/)
+[**aqui!**](/pt/docs/resources/customization/beagle-for-ios/beagle-view/)
 {{% /alert %}}
 
 1. Crie um **UIViewController**. 

@@ -167,7 +167,7 @@ Agora que seu projeto está criado, você deve fazer as configurações do **Bea
 
 [**👉 Acesse Gerenciar cache:**](/pt/docs/resources/customization/beagle-for-android/manage-cache/)
 
-[**👉 Acesse Sistema de log:**](/pt/docs/resources/customization/beagle-para-ios/sistema-de-log/)
+[**👉 Acesse Sistema de log:**](/pt/docs/resources/customization/beagle-for-android/log-system/)
   
 {{% /alert %}}
 

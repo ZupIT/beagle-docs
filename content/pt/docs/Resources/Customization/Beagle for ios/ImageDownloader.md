@@ -42,7 +42,7 @@ Além disso a função pode retornar o **RequestToken** para que a requisição 
 
 No Beagle iOS, temos uma classe chamada **ImageDownloaderDefault** que realiza as requisições das imagens de acordo com sua camada de rede.
 
-Em seu método `fetchImage` essa classe basicamente chama o **RequestDispatcher** com o tipo `.fetchImage` e mapeia o resultado daquela requisição, ou seja, ela depende da implementação da sua camada de rede, você pode ver como configurá-la [**aqui**](/pt/docs/resources/customization/beagle-para-ios/camada-de-rede).
+Em seu método `fetchImage` essa classe basicamente chama o **RequestDispatcher** com o tipo `.fetchImage` e mapeia o resultado daquela requisição, ou seja, ela depende da implementação da sua camada de rede, você pode ver como configurá-la [**aqui**](/pt/docs/resources/customization/beagle-for-ios/network-layer).
 
 ## **Substituindo o ImageDownloaderDefault**
 
