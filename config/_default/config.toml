@@ -89,9 +89,6 @@ github_repo = "https://github.com/ZupIT/docs-beagle"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
 github_project_repo = "https://github.com/ZupIT/beagle"
 
-# Specify a value here if your content directory is not in your repo's root directory
-github_subdir = "Settings"
-
 github_branch = "main"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
