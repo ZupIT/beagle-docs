@@ -9,7 +9,7 @@ weight: 186
 As features descritas aqui, estão disponíveis nas versões a partir de 1.2.0. 
 {{% /alert %}}
 
-Para entender melhor sobre renderização, recomendamos a leitura da seção [**estrutura de dados**](/pt/docs/resources/customization/beagle-para-web/tópicos-avançados/estrutura-de-dados).
+Para entender melhor sobre renderização, recomendamos a leitura da seção [**estrutura de dados**](/pt/docs/resources/customization/beagle-for-web/advanced-topics/data-structure).
 
 Cada biblioteca do Beagle Web possui um processo definido de como busca, processa e renderiza a view. Há uma ordem que deve ser sempre respeitada e pontos de extensão \([**hooks**](https://pt-br.reactjs.org/docs/hooks-overview.html)\), onde você pode executar seus códigos \(lifecycles\).
 

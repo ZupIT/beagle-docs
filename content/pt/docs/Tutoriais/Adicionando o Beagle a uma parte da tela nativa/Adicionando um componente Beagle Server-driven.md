@@ -299,7 +299,7 @@ Ao final do processo, você poderá "chamar" a tela nativa e a imagem abaixo ir�
 {{% tab name="WEB" %}}
 Se você ainda não configurou a biblioteca em seu projeto, [**veja aqui como fazer isso**.](/pt/docs/get-started/using-beagle/web)
 
-Você deve utilizar o [**Remote View**](/pt/docs/resources/customization/beagle-para-web/parâmetros-remote-view), fornecido pela biblioteca do Beagle, para criar telas híbridas com alguns componentes server driven na web.
+Você deve utilizar o [**Remote View**](/pt/docs/resources/customization/beagle-for-web/remote-view-parameters), fornecido pela biblioteca do Beagle, para criar telas híbridas com alguns componentes server driven na web.
 
 
 Veja a seguir como funciona para cada framework:

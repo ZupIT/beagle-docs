@@ -56,6 +56,6 @@ const params: LoadParams = {
 | headers | Mapa&lt;chave, valor&gt; | Lista de header para anexar ao fazer a requisição. |
 | shouldShowLoading | booleano | Mostra ou não o componente de loading. |
 | shouldShowError | booleano | Mostra ou não o componente de erro. |
-| strategy | string&lt;[**Estratégia de cache**](/pt/docs/resources/customization/beagle-para-web/estratégias-de-cache#tipos-de-estratégias)&gt; | Estratégia de cache adotada na requisição. |
+| strategy | string&lt;[**Estratégia de cache**](/pt/docs/resources/customization/beagle-for-web/cache-strategy#tipos-de-estratégias)&gt; | Estratégia de cache adotada na requisição. |
 | loadingComponent | string | Componente customizado para loading. |
 | errorComponent | string | Componente customizado para error. |
