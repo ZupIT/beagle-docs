@@ -93,5 +93,5 @@ public BeagleTest typeIntoTextField(int position1, int position2, String text) {
 ```
 
 {{% alert color="success" %}}
-Pronto, o seu teste instrumental foi realizado!
+Pronto, o seu teste instrumentado foi realizado!
 {{% /alert %}}
