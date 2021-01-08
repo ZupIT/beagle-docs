@@ -14,7 +14,7 @@ See how the structure is represented:
 
 | **Attribute** | **Type**  | Required | **Definition** |
 | :--- | :--- | :--- | :--- |
-| children | List &lt;[**ServerDriven Component**](/docs/api/widget)&gt; |    ✓ | Defines the component list that it is part of the container.  |
+| children | List &lt;[**ServerDriven Component**](/docs/api/widget)&gt; |    ✓ | Defines the component list that is part of the container.  |
 | context | [**ContextData**](/docs/api/context) |  | It is the [**context**](/docs/api/context) in this widget.  |
 | onInit | List&lt;[**Action**](/docs/api/actions)&gt; |  | It is a parameter that allows you to define a list of actions to be performed when the Widget is displayed.  |
 

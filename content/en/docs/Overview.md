@@ -46,7 +46,7 @@ The tool works as a facilitator of **BFF** \([**Backend For Frontend**](/docs/ke
 ![](/beaglemobileback.png)
 
   
-The reason Beagle is able to make this change from the frontend from the backend is because its architecture is structured in [**Server-Driven UI**](/docs/key-concepts#server-driven-ui), where BFF constructs the data, components and actions present on the screen declaratively and forwards them in JSON format , while the front deserializes it, renders the visual components natively in addition to executing and assigning the actions present in each of them.
+The reason Beagle is able to make this change from the frontend from the backend is because its architecture is structured in [**Server-Driven UI**](/docs/key-concepts#server-driven-ui), where BFF builds the data, components and actions present on the screen in a declarative way, and forwards them in a JSON format, while the front-end deserializes it, renders the visual components natively in addition to executing and assigning the actions present in each of them.
 
 ### Beagle's Pillars 
 
@@ -70,7 +70,7 @@ Beagle was created to **optimize time and resources** for development's, design'
 
 The main advantages of using Beagle on your project are: 
 
-* **More flexibility at work**, specially among developers and UI/UX designers when it's necessary to make pontual changes.  
+* **More flexibility at work**, specially among developers and UI/UX designers when it's necessary to make specific changes.  
 * **Easy app maintenance** which enables to make constant tests to improve your application.  
 * **Minor risks of duplicate code** because all consumption of APIs, flows and rules will be in one place, BFF.
 

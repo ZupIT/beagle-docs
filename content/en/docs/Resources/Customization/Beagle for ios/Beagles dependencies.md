@@ -12,7 +12,7 @@ Your application can change Beagle's default behaviour with the properties custo
 
 They have a specific role in Beagle's capacity, this is the reason you have to deal `Beagle.dependencies` as the main focus on your customization, so that other parts of your application  are able to see the changes you made in the dependencies.
 
-You must trust in the pattern implementation, like the example below: 
+You must rely on the default implementation, like the example below: 
 
 ```text
 class BeagleDependencies: BeagleDependenciesProtocol {
@@ -92,7 +92,7 @@ dependencies.urlBuilder = UrlBuilder(baseUrl: URL(string: "YOUR BASE URL
 
 ## NetworkClient
 
-It can run **network requests**. Your application must be customized here, because every project has a specific network layer. For that, the pattern implementation cannot work on your project. 
+It can run **network requests**. Your application must be customized here, because every project has a specific network layer. For that, the default implementation cannot work on your project. 
 
 ## Decoder
 
@@ -243,7 +243,7 @@ Variable that defines a global scope context.
 
 ## IsLoggingEnabled
 
-It is a boolean variable that enables or disable the logs, it comes already enabled by a pattern. 
+It is a boolean variable that enables or disables the logs, and it comes already enabled by a default. 
 
 ## Logger
 

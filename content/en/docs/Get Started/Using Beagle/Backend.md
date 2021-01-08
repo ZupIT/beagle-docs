@@ -12,7 +12,7 @@ description: >-
 
 Once you have finished[ **Beagle's installation**, ](/docs/get-started/installing-beagle/backend)your BFF is fully configured for usage, with default settings.
 
-### CORS
+### CORS (Cross-Origin Resource Sharing)
 
 {{% alert color="warning" %}}
 **Required configuration only to use your BFF with front-end web.**

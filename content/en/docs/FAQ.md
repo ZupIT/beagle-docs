@@ -46,7 +46,7 @@ Depends. All server driven application when requests the server a flow, it needs
 
 ### If my my internet connection is interrupted in the middle of the application flow? 
 
-The way to deal with disconnection cases it is to create local declaratives screens to `fallback`. 
+The way to deal with disconnection cases is to create local declaratives screens to `fallback`. 
 
 ## Will I have problems to upload an application with Beagle on App Store or Play Store? 
 
