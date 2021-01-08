@@ -78,7 +78,7 @@ let beagleViewController = Beagle.screen(
 ```
 
 {{% alert color="info" %}}
-Caso queira utilizar o tipo **`remote`**, veja [**como exibir uma tela Server-Driven UI**](/pt/docs/tutoriais/exibindo-uma-tela).
+Caso queira utilizar o tipo **`remote`**, veja [**como exibir uma tela Server-Driven UI**](/pt/docs/tutorials/how-to-display-a-screen).
 {{% /alert %}}
 
 Feito isso, basta apresentá-la onde preferir.

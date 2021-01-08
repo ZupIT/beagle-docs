@@ -11,7 +11,7 @@ description: >-
 No Beagle, a navegação \(ou Navigate\) é um tipo de [**Ação**](/pt/docs/api/actions) e que, por isso, pode ser usada por todos componentes que recebem uma ação. 
 
 {{% alert color="info" %}}
-Vale lembrar que, antes de configurar a navegação entre telas da sua aplicação, é preciso que você já tenha feito a [**instalação do Beagle**](/pt/docs/get-started/installing-beagle/), as [**configurações de uso**](/pt/docs/get-started/using-beagle/) e testado o framework do Beagle no tutorial para [**exibir uma tela server-driven.**](/pt/docs/tutoriais/exibindo-uma-tela) 
+Vale lembrar que, antes de configurar a navegação entre telas da sua aplicação, é preciso que você já tenha feito a [**instalação do Beagle**](/pt/docs/get-started/installing-beagle/), as [**configurações de uso**](/pt/docs/get-started/using-beagle/) e testado o framework do Beagle no tutorial para [**exibir uma tela server-driven.**](/pt/docs/tutorials/how-to-display-a-screen) 
 {{% /alert %}}
 
 Depois de fazer todas as configurações, basta colocar o código dos exemplos como retorno do seu serviço e chamar o endpoint, definido na sua controller, no frontend de sua preferência.
