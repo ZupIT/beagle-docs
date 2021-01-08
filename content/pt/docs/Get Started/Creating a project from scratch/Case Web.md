@@ -1,7 +1,7 @@
 ---
 title: Case Web
 weight: 43
-description: 'Nesta seção, você encontra informações para iniciar um projeto Web com Beagle.'
+description: "Nesta seção, você encontra informações para iniciar um projeto Web com Beagle."
 ---
 
 ---
@@ -12,12 +12,12 @@ description: 'Nesta seção, você encontra informações para iniciar um projet
 
 Para criar um projeto com Beagle para Web, confirme se você tem instalado os seguintes programas:
 
-* Node 10.16 +
-* Yarn ou npm
+- Node 10.16 +
+- Yarn ou npm
 
-Para iniciar o projeto é preciso utilizar o Visual Studio Code. Caso ainda não o tenha instalado, você pode baixá-lo no [**site oficial da ferramenta**](https://code.visualstudio.com/). 
+Para iniciar o projeto é preciso utilizar o Visual Studio Code. Caso ainda não o tenha instalado, você pode baixá-lo no [**site oficial da ferramenta**](https://code.visualstudio.com/).
 
-Após a instalação, siga os passos de acordo com o framework escolhido: 
+Após a instalação, siga os passos de acordo com o framework escolhido:
 
 {{< tabs id="T8" >}}
 {{% tab name="Angular" %}}
@@ -31,7 +31,7 @@ Aguarde o CLI terminar a criação do projeto.
 
 ![](/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-M9PRY_vOWaeZoXKLq2p%2F-M9PUdUA5t1QcYXL3XJ7%2Fimage.png?alt=media&token=a3869009-df72-4a8c-940a-e040aa47a77a)
 
-**Passo 2:** entre na pasta do projeto gerado `cd caseAngular`, adicione o **Beagle Angular**  ao seu repositório com um dos comandos abaixo de acordo com seu gerenciador de pacotes:
+**Passo 2:** entre na pasta do projeto gerado `cd caseAngular`, adicione o **Beagle Angular** ao seu repositório com um dos comandos abaixo de acordo com seu gerenciador de pacotes:
 
 ```text
 npm install --save @zup-it/beagle-angular
@@ -41,7 +41,7 @@ npm install --save @zup-it/beagle-angular
 yarn add @zup-it/beagle-angular
 ```
 
- Agora, aguarde a instalação.
+Agora, aguarde a instalação.
 
 ![](/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-M9PRY_vOWaeZoXKLq2p%2F-M9PYjULyS3UHn633rQT%2Fimage.png?alt=media&token=bec6af4b-c54e-47ae-b72e-bacd0132ba81)
 
@@ -55,15 +55,15 @@ yarn beagle init
 npx beagle init
 ```
 
-* Na pergunta '**Would you like to use yarn or npm?'** Digite a opção que você escolheu para usar como gerenciador, no exemplo será o `yarn`, portanto digite `yarn`e aperte enter. 
-* Na pergunta '**Path to the beagle module \(press enter to use default\)' -**  digite qual o caminho do módulo que será usado para o Beagle, como o projeto foi criado agora, não há módulos ainda, portanto aperte enter sem informar nada. 
-* Na pergunta '**Path to the module with the components to use with beagle \(press enter to use default\)' -** digite qual o caminho do módulo que será usado para o Beagle, como o projeto foi criado agora, não há módulos ainda, portanto aperte enter sem informar nada. 
-* Na pergunta '**What's the base url of the backend providing your beagle JSONs? \(press enter to use default\)' -** digite qual será a URL base do backend que será utilizada para resgatar os JSONs, aqui será usada o mockyio, então digite `https://www.mocky.io/v2/`e aperte enter. Aguarde a configuração terminar: 
+- Na pergunta '**Would you like to use yarn or npm?'** Digite a opção que você escolheu para usar como gerenciador, no exemplo será o `yarn`, portanto digite `yarn`e aperte enter.
+- Na pergunta '**Path to the beagle module \(press enter to use default\)' -** digite qual o caminho do módulo que será usado para o Beagle, como o projeto foi criado agora, não há módulos ainda, portanto aperte enter sem informar nada.
+- Na pergunta '**Path to the module with the components to use with beagle \(press enter to use default\)' -** digite qual o caminho do módulo que será usado para o Beagle, como o projeto foi criado agora, não há módulos ainda, portanto aperte enter sem informar nada.
+- Na pergunta '**What's the base url of the backend providing your beagle JSONs? \(press enter to use default\)' -** digite qual será a URL base do backend que será utilizada para resgatar os JSONs, aqui será usada o mockyio, então digite `https://www.mocky.io/v2/`e aperte enter. Aguarde a configuração terminar:
 
 ![](/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-M9PRY_vOWaeZoXKLq2p%2F-M9Par3gM73EiZtMPE5T%2Fimage.png?alt=media&token=fa081171-d619-4de9-b0f6-8b8173e7dffb)
 
-* Foram criados dois arquivos em seu projeto `beagle-components.module.ts` e `beagle.module.ts`.
-{{% /tab %}}
+- Foram criados dois arquivos em seu projeto `beagle-components.module.ts` e `beagle.module.ts`.
+  {{% /tab %}}
 
 {{% tab name="React" %}}
 **Passo 1:** Abra o terminal e digite um dos comandos abaixo:
@@ -140,6 +140,7 @@ import { BeagleModule } from '@zup-it/beagle-angular'
 })
 export class Beagle {}
 ```
+
 {{% /tab %}}
 
 {{% tab name="React" %}}
@@ -157,15 +158,16 @@ export default createBeagleUIService({
   components: {}
 })
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
 ### Crie o JSON para ser renderizado
 
-Para uma melhor experiência o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**](/pt/docs/get-started/installing-beagle/backend/),  neste exemplo usaremos o JSON que está disponibilizado na URL http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/welcome:
+Para uma melhor experiência o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**](/pt/home/get-started/installing-beagle/backend/), neste exemplo usaremos o JSON que está disponibilizado na URL http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/welcome:
 
 {{% alert color="info" %}}
-JSON utilizado como exemplo. 
+JSON utilizado como exemplo.
 {{% /alert %}}
 
 ```text
@@ -194,7 +196,7 @@ JSON utilizado como exemplo.
 
 ### Renderizando os componentes
 
-Agora é necessário adicionar na aplicação o local onde os componentes serão renderizados via `JSON`. A biblioteca Beagle fornece um componente com essa funcionalidade o Beagle remote view, siga os passos para configurar: 
+Agora é necessário adicionar na aplicação o local onde os componentes serão renderizados via `JSON`. A biblioteca Beagle fornece um componente com essa funcionalidade o Beagle remote view, siga os passos para configurar:
 
 {{< tabs id="T11" >}}
 {{% tab name="Angular" %}}
@@ -205,10 +207,10 @@ Abra o arquivo `app.component.html` e substitua todo o conteúdo pelo código ab
 <beagle-remote-view route="/welcome"></beagle-remote-view>
 ```
 
-`route` no código acima diz qual a rota será carregada.  A URL especificada aqui é relativa à `baseUrl` declarada na configuração.
+`route` no código acima diz qual a rota será carregada. A URL especificada aqui é relativa à `baseUrl` declarada na configuração.
 
 {{% alert color="warning" %}}
-O parâmetro `route` é válido apenas para a versão 1.3 ou superior. Para versões anteriores, `route` deve ser usado. `route`é um objeto e o valor equivalente  ao desse exemplo seria`{ path: '/welcome' }.`
+O parâmetro `route` é válido apenas para a versão 1.3 ou superior. Para versões anteriores, `route` deve ser usado. `route`é um objeto e o valor equivalente ao desse exemplo seria`{ path: '/welcome' }.`
 {{% /alert %}}
 {{% /tab %}}
 
@@ -261,6 +263,7 @@ Se você usa o **yarn:**
 ```text
 yarn serve
 ```
+
 {{% /tab %}}
 
 {{% tab name="React" %}}
@@ -275,6 +278,7 @@ Se você usa o **yarn:**
 ```text
 yarn start
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 

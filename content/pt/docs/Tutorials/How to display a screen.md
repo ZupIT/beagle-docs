@@ -14,16 +14,16 @@ Cada plataforma tem sua forma própria para exibir uma tela server-driven no fro
 
 {{< tabs id="T94" >}}
 {{% tab name="Android" %}}
-Para exibir uma tela **`full server-driven`**, você deve usar o método `this.newServerDrivenIntent<BeagleActivity>()` onde o `this` é a o contexto da sua tela atual. 
+Para exibir uma tela **`full server-driven`**, você deve usar o método `this.newServerDrivenIntent<BeagleActivity>()` onde o `this` é a o contexto da sua tela atual.
 
 Este método requer apenas o parâmetro `ScreenRequest`
 
-Você deve seguir tal como o comando abaixo: 
+Você deve seguir tal como o comando abaixo:
 
 {{% alert color="warning" %}}
-Certifique-se de listar a sua Beagle Activity assim como nomeada em seu AndroidManifest. 
+Certifique-se de listar a sua Beagle Activity assim como nomeada em seu AndroidManifest.
 
-No exemplo abaixo a chamamos somente de &lt;BeagleActivity&gt;. Esse nome é você quem define ao criar sua BeagleActivity. Em nosso tutorial [**Criando um projeto do zero** ](/pt/docs/get-started/creating-a-project-from-scratch/case-android), chamamos ela de `AppBeagleActivity`
+No exemplo abaixo a chamamos somente de &lt;BeagleActivity&gt;. Esse nome é você quem define ao criar sua BeagleActivity. Em nosso tutorial [**Criando um projeto do zero** ](/pt/home/get-started/creating-a-project-from-scratch/case-android), chamamos ela de `AppBeagleActivity`
 {{% /alert %}}
 
 ```kotlin
@@ -32,28 +32,29 @@ startActivity(intent)
 ```
 
 {{% alert color="info" %}}
-Para testar o comando acima, o componente `ScreenRequest` requer somente uma URL que traga o JSON com as informações da tela server-driven que você quer exibir. 
+Para testar o comando acima, o componente `ScreenRequest` requer somente uma URL que traga o JSON com as informações da tela server-driven que você quer exibir.
 
 Neste caso, siga estes passos:
 
-* Use o exemplo de tela no link abaixo. Ele traz um JSON de uma tela simples para teste. Basta copiar e colar no lugar da URL `"/screen"` . [https://run.mocky.io/v3/73322be2-96bf-467b-b6dc-e3fff179852c](https://run.mocky.io/v3/73322be2-96bf-467b-b6dc-e3fff179852c)
-* Veja como fica o código abaixo. 
+- Use o exemplo de tela no link abaixo. Ele traz um JSON de uma tela simples para teste. Basta copiar e colar no lugar da URL `"/screen"` . [https://run.mocky.io/v3/73322be2-96bf-467b-b6dc-e3fff179852c](https://run.mocky.io/v3/73322be2-96bf-467b-b6dc-e3fff179852c)
+- Veja como fica o código abaixo.
 
 ```text
 val intent = this.newServerDrivenIntent<BeagleActivity>(ScreenRequest("https://run.mocky.io/v3/73322be2-96bf-467b-b6dc-e3fff179852c"))
 startActivity(intent)
 ```
+
 {{% /alert %}}
 
 ### A classe Screen Request.
 
-A`ScreenRequest` é uma classe interna do Beagle utilizada para solicitar qual tela você deseja exibir. Você listará apenas o atributo URL referente a página que deseja carregar vinda do BFF. 
+A`ScreenRequest` é uma classe interna do Beagle utilizada para solicitar qual tela você deseja exibir. Você listará apenas o atributo URL referente a página que deseja carregar vinda do BFF.
 
-No entanto, esse elemento possui outros atributos, que podem ser utilizados na transição e entre telas.  Para saber mais sobre essa classe, veja em [**Screen Request**](/pt/docs/api/screen-request) 
+No entanto, esse elemento possui outros atributos, que podem ser utilizados na transição e entre telas. Para saber mais sobre essa classe, veja em [**Screen Request**](/pt/home/api/screen-request)
 {{% /tab %}}
 
 {{% tab name="iOS" %}}
-Para renderizar uma tela [**server-driven**](/pt/docs/key-concepts#server-driven-ui), basta criar uma instância **`BeagleScreenViewController`** do tipo **`remote`** e fazer a inicialização com a URL do seu [**BFF**](/pt/docs/key-concepts#backend-for-frontend), como no exemplo abaixo:
+Para renderizar uma tela [**server-driven**](/pt/home/key-concepts#server-driven-ui), basta criar uma instância **`BeagleScreenViewController`** do tipo **`remote`** e fazer a inicialização com a URL do seu [**BFF**](/pt/home/key-concepts#backend-for-frontend), como no exemplo abaixo:
 
 ```kotlin
 let beagleViewController = Beagle.screen(
@@ -63,46 +64,46 @@ let beagleViewController = Beagle.screen(
 )
 ```
 
-Feito isso, **basta apresentá-la** onde preferir. Neste caso, você deve seguir como no comando de exemplo. 
+Feito isso, **basta apresentá-la** onde preferir. Neste caso, você deve seguir como no comando de exemplo.
 
 ```swift
 present(beagleViewController, animated: true, completion: nil)
 ```
 
-A **resposta** do seu BFF deve ser um JSON que representa um **componente visual definido localmente** na aplicação. 
+A **resposta** do seu BFF deve ser um JSON que representa um **componente visual definido localmente** na aplicação.
 
 {{% alert color="info" %}}
 Você também pode [**renderizar uma tela de exemplo**](https://run.mocky.io/v3/2ee29265-5edb-4c61-8a30-827760ae66ca). Para isso, basta passar esta mesma URL na inicialização da**`BeagleScreenViewController`**.
 {{% /alert %}}
 
-Por fim, **execute a aplicação** e veja uma tela definida em uma URL remota renderizada na sua aplicação local. 
+Por fim, **execute a aplicação** e veja uma tela definida em uma URL remota renderizada na sua aplicação local.
 
 {{% alert color="success" %}}
-Parabéns, você conseguiu exibir uma tela **full server-driven** 🎉 
+Parabéns, você conseguiu exibir uma tela **full server-driven** 🎉
 
 Desta forma, será possível criar telas com conteúdo dinâmico, e controle no seu backend.
 {{% /alert %}}
 {{% /tab %}}
 
 {{% tab name="Web" %}}
+
 #### **Para projetos no Angular**
 
 Para definir onde você quer mostrar uma tela server-driven no Angular, você deve usar o componente fornecido pela biblioteca `<beagle-remote-view>`
 
 {{% alert color="info" %}}
-Este componente tem outros atributos que podem ser configurados. No entanto nessa implementação você utilizará somente o atributo path, descrito no exemplo abaixo.   
+Este componente tem outros atributos que podem ser configurados. No entanto nessa implementação você utilizará somente o atributo path, descrito no exemplo abaixo.
 
-
-Para mais detalhes sobre esse componente clique no link a seguir e verifique os detalhes do [**Remote View**](/pt/docs/resources/customization/beagle-for-web/remote-view-parameters) 
+Para mais detalhes sobre esse componente clique no link a seguir e verifique os detalhes do [**Remote View**](/pt/home/resources/customization/beagle-for-web/remote-view-parameters)
 {{% /alert %}}
 
-No arquivo html do seu componente, adicione o `remote view`. 
+No arquivo html do seu componente, adicione o `remote view`.
 
 ```markup
 <beagle-remote-view [loadParams]="loadParams"></beagle-remote-view>
 ```
 
-Feito isso, acesse o controller do componente em que você adicionou o remote view e crie o `loadParams` que é esperado pelo `remote view.` 
+Feito isso, acesse o controller do componente em que você adicionou o remote view e crie o `loadParams` que é esperado pelo `remote view.`
 
 ```text
 loadParams: LoadParams;
@@ -123,12 +124,12 @@ No campo `path`, deve ficar o caminho para seu JSON que será associado com o `b
 Para definir uma tela server-driven no React, você precisa criar um serviço com uma configuração mínima, como no exemplo:
 
 ```javascript
-import { createBeagleUIService } from '@zup-it/beagle-react'
+import { createBeagleUIService } from "@zup-it/beagle-react";
 
 export default createBeagleUIService({
   baseUrl: "",
-  components: {}
-})
+  components: {},
+});
 ```
 
 Feito isso, usamos dois componentes fornecidos pela biblioteca Beagle para definir onde a tela server-driven será renderizada:
@@ -162,8 +163,7 @@ No campo`path`, deve ficar o caminho para seu JSON que será associado com o `ba
 
 {{< tabs id="T95" >}}
 {{% tab name="Android" %}}
-Para renderizar uma tela a partir de um JSON, é necessário ter uma `Activity` ou  `Fragment` com um `FrameLayout` como no exemplo a baixo:
-
+Para renderizar uma tela a partir de um JSON, é necessário ter uma `Activity` ou `Fragment` com um `FrameLayout` como no exemplo a baixo:
 
 ```markup
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -173,9 +173,7 @@ Para renderizar uma tela a partir de um JSON, é necessário ter uma `Activity` 
     android:orientation="vertical"/>
 ```
 
-
 Agora basta chamar o método `renderScreen()` a partir do `frame layout` criado no `xml` passando como parâmetro a sua activity e o `JSON`.
-
 
 ```kotlin
 class MainActivity : AppCompatActivity() {
@@ -184,18 +182,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         frame_layout_android.renderScreen(
-            activity = this, 
+            activity = this,
             screenJson = "// JSON here"
         )
     }
 }
 ```
 
-
 {{% alert color="info" %}}
 O método `renderScreen()` também pode receber um fragment como parâmetro seguindo o exemplo abaixo:
 
-`renderScreen(fragment = yourFragment, screenJson = "// JSON here")` 
+`renderScreen(fragment = yourFragment, screenJson = "// JSON here")`
 {{% /alert %}}
 {{% /tab %}}
 
@@ -210,10 +207,11 @@ let beagleViewController = Beagle.screen(
 )
 ```
 
-Feito isso, basta apresentá-la onde preferir. Neste caso, você deve seguir como no comando de exemplo. 
+Feito isso, basta apresentá-la onde preferir. Neste caso, você deve seguir como no comando de exemplo.
 
 ```swift
 present(beagleViewController, animated: true, completion: nil)
 ```
+
 {{% /tab %}}
 {{< /tabs >}}

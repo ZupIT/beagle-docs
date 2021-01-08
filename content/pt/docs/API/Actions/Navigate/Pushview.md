@@ -12,18 +12,19 @@ Abre uma nova tela na mesma pilha usando uma rota.
 
 A sua estrutura é representada como mostrado abaixo:
 
-| **Atributo** | **Tipo** | Obrigatório | **Definição** |
-| :--- | :--- | :---: | :--- |
-| route | ​[Route](/pt/docs/api/actions/navigate/route)​ | ✓ | Rota de navegação. |
+| **Atributo** | **Tipo**                                       | Obrigatório | **Definição**      |
+| :----------- | :--------------------------------------------- | :---------: | :----------------- |
+| route        | ​[Route](/pt/home/api/actions/navigate/route)​ |      ✓      | Rota de navegação. |
 
 ## Como usar?
 
-No exemplo abaixo, temos uma tela vinda do BFF com um botão, que ao ser clicado, abre um novo fragment server-driven com a tela especificada pelo BFF. 
+No exemplo abaixo, temos uma tela vinda do BFF com um botão, que ao ser clicado, abre um novo fragment server-driven com a tela especificada pelo BFF.
 
-Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e chame esse endpoint no frontend. Você poderá passar tanto uma rota local \(que passará uma [**screen**](/pt/docs/api/screen) na rota\), quanto remota \(que passará o endpoint da tela para a qual irá navegar\). 
+Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e chame esse endpoint no frontend. Você poderá passar tanto uma rota local \(que passará uma [**screen**](/pt/home/api/screen) na rota\), quanto remota \(que passará o endpoint da tela para a qual irá navegar\).
 
 {{< tabs id="T113" >}}
 {{% tab name="JSON" %}}
+
 <!-- json-playground:pushView.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
@@ -45,10 +46,12 @@ Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e
   }
 }
 -->
+
 {{% playground file="pushView.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
+
 ```
 Screen(
     child = Button(
@@ -65,5 +68,6 @@ Screen(
     )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}

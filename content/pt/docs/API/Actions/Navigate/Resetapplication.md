@@ -12,26 +12,27 @@ Abre uma tela com a rota informada e apaga todas as pilhas de navegação.
 
 A sua estrutura é representada como mostrado abaixo:
 
-| **Atributo** | **Tipo** | Obrigatório | **Definição** |
-| :--- | :--- | :---: | :--- |
-| route | ​[Route](/pt/docs/api/actions/navigate/route/)​ | ✓ | Rota de navegação. |
+| **Atributo** | **Tipo**                                        | Obrigatório | **Definição**      |
+| :----------- | :---------------------------------------------- | :---------: | :----------------- |
+| route        | ​[Route](/pt/home/api/actions/navigate/route/)​ |      ✓      | Rota de navegação. |
 
 ## Como usar?
 
-No exemplo abaixo, foram utilizadas três telas: as duas primeiras utilizam o [**PushView** ](/pt/docs/api/actions/navigate/pushview)para adicionar as telas na pilha, já a última faz uso do **ResetApplication** e reabre na primeira tela.
+No exemplo abaixo, foram utilizadas três telas: as duas primeiras utilizam o [**PushView** ](/pt/home/api/actions/navigate/pushview)para adicionar as telas na pilha, já a última faz uso do **ResetApplication** e reabre na primeira tela.
 
-Para testar, iremos precisar de três endpoints: 
+Para testar, iremos precisar de três endpoints:
 
-1. O primeiro endpoint será o que seu frontend irá chamar para renderizar a tela zero.  
-2. O segundo endpoint deverá ser mapeado como **"/firstScreen"**, pois será essa a URL escolhida para a navegação do botão da tela zero e, por isso, esse endpoint deverá retornar a tela 1.  
+1. O primeiro endpoint será o que seu frontend irá chamar para renderizar a tela zero.
+2. O segundo endpoint deverá ser mapeado como **"/firstScreen"**, pois será essa a URL escolhida para a navegação do botão da tela zero e, por isso, esse endpoint deverá retornar a tela 1.
 3. O terceiro endpoint deverá ser mapeado como **"/secondScreen"**, pois será essa a URL escolhida
 
-    para a navegação do botão da tela 1 e, por isso, esse endpoint deverá retornar a tela 2. Na tela 2, a rota passada deve ser o endpoint da tela que você deseja retornar quando a aplicação for reiniciada. No caso desse exemplo, é a **"/home"** que é o endpoint da tela zero.
+   para a navegação do botão da tela 1 e, por isso, esse endpoint deverá retornar a tela 2. Na tela 2, a rota passada deve ser o endpoint da tela que você deseja retornar quando a aplicação for reiniciada. No caso desse exemplo, é a **"/home"** que é o endpoint da tela zero.
 
 #### Como chamar a tela zero
 
 {{< tabs id="T119" >}}
 {{% tab name="JSON" %}}
+
 <!-- json-playground:firstScreenonStack.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
@@ -54,10 +55,12 @@ Para testar, iremos precisar de três endpoints:
   }
 }
 -->
+
 {{% playground file="firstScreenonStack.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="KotlinDSL" %}}
+
 ```kotlin
 Screen(
     child = Container(
@@ -79,6 +82,7 @@ Screen(
     )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -86,6 +90,7 @@ Screen(
 
 {{< tabs id="T120" >}}
 {{% tab name="JSON" %}}
+
 <!-- json-playground:secondScreenonStack.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
@@ -108,10 +113,12 @@ Screen(
   }
 }
 -->
+
 {{% playground file="secondScreenonStack.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="KotlinDSL" %}}
+
 ```kotlin
 Screen(
     child = Container(
@@ -133,6 +140,7 @@ Screen(
     )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -140,6 +148,7 @@ Screen(
 
 {{< tabs id="T121" >}}
 {{% tab name="JSON" %}}
+
 <!-- json-playground:resetApplication.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
@@ -162,10 +171,12 @@ Screen(
   }
 }
 -->
+
 {{% playground file="resetApplication.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
+
 ```kotlin
 Screen(
     child = Container(
@@ -185,5 +196,6 @@ Screen(
     )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}

@@ -1,25 +1,25 @@
 ---
 title: Position
 weight: 74
-description: 'Nesta seção, você encontra mais informações sobre a propriedade Position.'
+description: "Nesta seção, você encontra mais informações sobre a propriedade Position."
 ---
 
 ---
 
 ## Position
 
-Esta propriedade determina a posição de um assume em tela e os seus valores `top, right, bottom, left` se comportam de acordo com o [**Position Type**](/pt/docs/resources/posicionamento-de-componentes/positiontype) deste elemento.
+Esta propriedade determina a posição de um assume em tela e os seus valores `top, right, bottom, left` se comportam de acordo com o [**Position Type**](/pt/home/resources/posicionamento-de-componentes/positiontype) deste elemento.
 
 O elemento dentro do Position pode ter diferentes tipos de deslocamento se forem:
 
-* **`Relative`:** os elementos se deslocam em uma direção específica. 
-* **`Absolute`:** os elementos se deslocam na mesma direção definida para o elemento pai. 
+- **`Relative`:** os elementos se deslocam em uma direção específica.
+- **`Absolute`:** os elementos se deslocam na mesma direção definida para o elemento pai.
 
-## **Propriedades** 
+## **Propriedades**
 
-### **All**  
+### **All**
 
-É ele quem define o **mesmo valor para todas posições**. Exemplo: 
+É ele quem define o **mesmo valor para todas posições**. Exemplo:
 
 ![](/captura-de-tela-2020-06-05-a-s-11.24.08.png)
 
@@ -53,6 +53,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
  private func screen() -> Screen {
         return
@@ -77,12 +78,13 @@ private fun screen() :Widget{
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-### **Bottom** 
+### **Bottom**
 
-É ele quem define um **espaçamento na parte inferior** do elemento. Exemplo: 
+É ele quem define um **espaçamento na parte inferior** do elemento. Exemplo:
 
 ![](/captura-de-tela-2020-06-05-a-s-11.26.34.png)
 
@@ -116,6 +118,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
     private func screen() -> Screen {
         return
@@ -140,12 +143,13 @@ private fun screen() :Widget{
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
 ### **Left**
 
-É ele quem define um **espaçamento no lado esquerdo** do elemento. Exemplo: 
+É ele quem define um **espaçamento no lado esquerdo** do elemento. Exemplo:
 
 ![](/captura-de-tela-2020-06-05-a-s-11.29.41.png)
 
@@ -179,6 +183,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
   private func screen() -> Screen {
         return
@@ -203,12 +208,13 @@ private fun screen() :Widget{
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
 ### **Right**
 
-É ele quem define um **espaçamento no lado direito** do elemento. Exemplo: 
+É ele quem define um **espaçamento no lado direito** do elemento. Exemplo:
 
 ![](/captura-de-tela-2020-06-05-a-s-11.33.00.png)
 
@@ -242,6 +248,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
    private func screen() -> Screen {
         return
@@ -266,12 +273,13 @@ private fun screen() :Widget{
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-### **Top** 
+### **Top**
 
-É ele quem define o **posicionamento do top**. Exemplo: 
+É ele quem define o **posicionamento do top**. Exemplo:
 
 ![](/captura-de-tela-2020-06-05-a-s-11.34.21.png)
 
@@ -305,6 +313,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -329,12 +338,13 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
 ### **Horizontal**
 
-É ele quem define um **valor horizonta**l adicionando valor no left e right. Exemplo: 
+É ele quem define um **valor horizonta**l adicionando valor no left e right. Exemplo:
 
 ![](/captura-de-tela-2020-06-05-a-s-11.36.55.png)
 
@@ -368,6 +378,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -392,12 +403,13 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
 ### **Vertical**
 
-É ele quem define um **valor vertical** adicionando valor no top e bottom. Exemplo: 
+É ele quem define um **valor vertical** adicionando valor no top e bottom. Exemplo:
 
 ![](/captura-de-tela-2020-06-05-a-s-11.39.22.png)
 
@@ -431,6 +443,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
   private func screen() -> Screen {
         return
@@ -455,9 +468,10 @@ private fun screen() :Widget{
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
 {{% alert color="info" %}}
-Para saber mais sobre Position, acesse a [**documentação do Yoga Layout**](https://yogalayout.com/docs/margins-paddings-borders).
+Para saber mais sobre Position, acesse a [**documentação do Yoga Layout**](https://yogalayout.com/pt/home/margins-paddings-borders).
 {{% /alert %}}

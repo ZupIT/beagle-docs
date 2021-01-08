@@ -55,6 +55,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -88,10 +89,11 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-### **Flex Start \(padrão\)** 
+### **Flex Start \(padrão\)**
 
 As linhas são distribuídas no início do eixo transversal:
 
@@ -134,6 +136,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -167,6 +170,7 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -213,6 +217,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -246,6 +251,7 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -292,6 +298,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -325,6 +332,7 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -371,6 +379,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -404,6 +413,7 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -450,6 +460,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -483,9 +494,10 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
 {{% alert color="info" %}}
-Para saber mais sobre o Align Content, acesse a [**documentação no Yoga Layout.**](https://yogalayout.com/docs/align-content/)
+Para saber mais sobre o Align Content, acesse a [**documentação no Yoga Layout.**](https://yogalayout.com/pt/home/align-content/)
 {{% /alert %}}

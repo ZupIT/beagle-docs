@@ -10,7 +10,7 @@ description: >-
 
 ### Criar um componente customizado
 
-O primeiro passo que você deve fazer é criar um componente comum. Para isso, crie um novo componente em seu projeto. 
+O primeiro passo que você deve fazer é criar um componente comum. Para isso, crie um novo componente em seu projeto.
 
 {{< tabs id="T76" >}}
 {{% tab name="Angular" %}}
@@ -19,10 +19,11 @@ Neste exemplo, o componente será criado com o nome `customText`. Basta utilizar
 ```text
 ng generate component components/customText --skip-import
 ```
+
 {{% /tab %}}
 
 {{% tab name="React" %}}
-Neste exemplo, será criado um componente chamado `CustomTextComponent` para renderizar um texto. Basta criar um novo arquivo chamado `CustomTextComponent.tsx` dentro da pasta `components` \(se esta pasta não existir basta criá-la dentro da pasta `src`\). 
+Neste exemplo, será criado um componente chamado `CustomTextComponent` para renderizar um texto. Basta criar um novo arquivo chamado `CustomTextComponent.tsx` dentro da pasta `components` \(se esta pasta não existir basta criá-la dentro da pasta `src`\).
 
 No arquivo criado coloque o seguinte código:
 
@@ -37,10 +38,11 @@ function CustomTextComponent() {
 
 export default CustomTextComponent;
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-Feito isso, adicione no arquivo de associações da biblioteca Beagle do seu projeto como indicado nos exemplos a seguir. 
+Feito isso, adicione no arquivo de associações da biblioteca Beagle do seu projeto como indicado nos exemplos a seguir.
 
 {{< tabs id="T77" >}}
 {{% tab name="Angular" %}}
@@ -88,14 +90,14 @@ export class Beagle {}
 ```
 
 {{% alert color="warning" %}}
-Se você não encontrou os arquivos `beagle-components.module.ts` ou `beagle.module.ts`, veja [**como configurar a biblioteca Beagle Web para o Angular**.](/pt/docs/get-started/using-beagle/web/angular)
+Se você não encontrou os arquivos `beagle-components.module.ts` ou `beagle.module.ts`, veja [**como configurar a biblioteca Beagle Web para o Angular**.](/pt/home/get-started/using-beagle/web/angular)
 {{% /alert %}}
 {{% /tab %}}
 
 {{% tab name="React" %}}
-Abra o arquivo de configuração da biblioteca Beagle em seu projeto \(se você seguiu o tutorial é o arquivo `beagle-service.ts`\) e adicione o seu componente a lista de associações. 
+Abra o arquivo de configuração da biblioteca Beagle em seu projeto \(se você seguiu o tutorial é o arquivo `beagle-service.ts`\) e adicione o seu componente a lista de associações.
 
-Caso você não tenha este arquivo em seu projeto, veja [**como configurar a biblioteca Beagle Web para o React**](/pt/docs/get-started/using-beagle/web/react).
+Caso você não tenha este arquivo em seu projeto, veja [**como configurar a biblioteca Beagle Web para o React**](/pt/home/get-started/using-beagle/web/react).
 
 ```text
 import { createBeagleUIService } from '@zup-it/beagle-react'
@@ -109,18 +111,19 @@ export default createBeagleUIService<any>({
 })
 
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-Observe que, no passo acima, a palavra **custom** foi adicionada para identificar os componentes. Isto fará com que a biblioteca Beagle entenda que este componente não faz parte da lista de componentes pré-definidos. 
+Observe que, no passo acima, a palavra **custom** foi adicionada para identificar os componentes. Isto fará com que a biblioteca Beagle entenda que este componente não faz parte da lista de componentes pré-definidos.
 
 ### Adicionando propriedades ao componente
 
-Para adicionar propriedades ao componente criado, siga os seguintes passos: 
+Para adicionar propriedades ao componente criado, siga os seguintes passos:
 
 {{< tabs id="T78" >}}
 {{% tab name="Angular" %}}
-Abra o arquivo `custom-text.component.ts` e adicione um `@Input`, como no código abaixo: 
+Abra o arquivo `custom-text.component.ts` e adicione um `@Input`, como no código abaixo:
 
 ```text
 import { Component, OnInit, Input } from '@angular/core';
@@ -174,12 +177,13 @@ function CustomTextComponent(props: CustomText) {
 
 export default CustomTextComponent;
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
 ### Criando o JSON
 
-Podemos agora adicionar o nosso componente ao arquivo JSON.  Se você seguiu o tutorial, abra o arquivo `payload.json` e o substitua com o conteúdo abaixo, caso contrário, apenas substitua a fonte de onde o seu JSON foi guardado ou gerado. 
+Podemos agora adicionar o nosso componente ao arquivo JSON. Se você seguiu o tutorial, abra o arquivo `payload.json` e o substitua com o conteúdo abaixo, caso contrário, apenas substitua a fonte de onde o seu JSON foi guardado ou gerado.
 
 ```text
 {

@@ -1,12 +1,12 @@
 ---
 title: Como registrar uma nova operação
 weight: 375
-description: 'Nesta seção, você encontra descrição completa das Custom Operations.'
+description: "Nesta seção, você encontra descrição completa das Custom Operations."
 ---
 
 ---
 
-Depois que você viu que é possível realizar[ **Operações**](/pt/docs/api/context/operations) do tipo soma, subtração, etc, utilizando o contexto, você também pode criar a sua própria operação na plataforma que você quiser: 
+Depois que você viu que é possível realizar[ **Operações**](/pt/home/api/context/operations) do tipo soma, subtração, etc, utilizando o contexto, você também pode criar a sua própria operação na plataforma que você quiser:
 
 {{< tabs id="T165" >}}
 {{% tab name="iOS" %}}
@@ -59,11 +59,12 @@ interface Operation {
     fun execute(vararg params: OperationType?): OperationType
 }
 ```
+
 No parametro do método execute temos um atributo do tipo `OperationType`, esse atributo retorna o tipo da operação.
 
 Segue abaixo a sealed class OperationType com os tipos de retorno que beagle suporta.
 
-```java 
+```java
 sealed class OperationType(open val value: Any?) {
     data class TypeString(override val value: String) : OperationType(value)
     data class TypeBoolean(override val value: Boolean) : OperationType(value)
@@ -120,6 +121,7 @@ class IsValidCPFOperation : Operation {
     }
 }
 ```
+
 Pronto! Sua operação já pode ser utilizada!
 
 {{% /tab %}}
@@ -131,6 +133,7 @@ Veja abaixo o exemplo utilizando a operação `isValidCpf` que foi criada acima,
 
 {{< tabs id="T166" >}}
 {{% tab name="JSON" %}}
+
 <!-- json-playground:customOperation.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
@@ -159,10 +162,12 @@ Veja abaixo o exemplo utilizando a operação `isValidCpf` que foi criada acima,
   }
 }
 -->
+
 {{% playground file="customOperation.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
+
 ```kotlin
 fun screen() = Screen(
     navigationBar = NavigationBar(title = "Custom operation", showBackButton = true),
@@ -180,6 +185,7 @@ fun screen() = Screen(
     )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 

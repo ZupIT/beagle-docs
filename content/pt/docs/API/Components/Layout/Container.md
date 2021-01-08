@@ -8,20 +8,21 @@ description: Descrição do componente Container e seus atributos
 
 ## O que é?
 
-O `Container` é um componente responsável por conter outros componentes dentro de si. 
+O `Container` é um componente responsável por conter outros componentes dentro de si.
 
-A sua estrutura é representada como mostrado abaixo: 
+A sua estrutura é representada como mostrado abaixo:
 
-| **Atributo** | **Tipo**  | Obrigatório | **Definição** |
-| :--- | :--- | :---: | :--- |
-| children | List &lt;[ServerDriven Component](/pt/docs/api/components)&gt; | ✓ | Define a lista de componentes que fazem parte do container |
-| context | [ContextData](/pt/docs/api/context/) |   | É o [contexto](/pt/docs/api/context/) contido por este Widget. |
-| onInit | List&lt;[Action](/pt/docs/api/actions)&gt; |   | Um parâmetro que te possibilita definir uma lista de ações a serem executadas assim que esse Widget seja exibido. |
+| **Atributo** | **Tipo**                                                       | Obrigatório | **Definição**                                                                                                     |
+| :----------- | :------------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------- |
+| children     | List &lt;[ServerDriven Component](/pt/home/api/components)&gt; |      ✓      | Define a lista de componentes que fazem parte do container                                                        |
+| context      | [ContextData](/pt/home/api/context/)                           |             | É o [contexto](/pt/home/api/context/) contido por este Widget.                                                    |
+| onInit       | List&lt;[Action](/pt/home/api/actions)&gt;                     |             | Um parâmetro que te possibilita definir uma lista de ações a serem executadas assim que esse Widget seja exibido. |
 
 ## Como usar?
 
 {{< tabs id="T145" >}}
 {{% tab name="JSON" %}}
+
 <!-- json-playground:container.json
 {
     "_beagleComponent_": "beagle:container",
@@ -33,14 +34,16 @@ A sua estrutura é representada como mostrado abaixo:
     ],
     "context": {
         "id": "myContext",
-        "value": "Hello world!" 
+        "value": "Hello world!"
     }
 }
 -->
+
 {{% playground file="container.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
+
 ```kotlin
 Container(
     children = listOf(
@@ -52,5 +55,6 @@ Container(
     )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}

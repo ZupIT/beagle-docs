@@ -12,18 +12,19 @@ description: >-
 
 É uma ação que tem um parâmetro do tipo Boolean e de acordo com esse valor é executado a ação onTrue ou onFalse.
 
-| Atributo | Tipo | Obrigatório | Definição |
-| :--- | :--- | :---: | :--- |
-| condition | Boolean ou [**Binding**](/pt/docs/api/context#binding) | ✓ | Condição para definir qual ação será executada. |
-| onTrue | List&lt;Action&gt; |   | Lista de ações que será executada quando a condição for verdadeira. |
-| onFalse | List&lt;Action&gt; |   | Lista de ações que será executada quando a condição for falsa. |
+| Atributo  | Tipo                                                   | Obrigatório | Definição                                                           |
+| :-------- | :----------------------------------------------------- | :---------: | :------------------------------------------------------------------ |
+| condition | Boolean ou [**Binding**](/pt/home/api/context#binding) |      ✓      | Condição para definir qual ação será executada.                     |
+| onTrue    | List&lt;Action&gt;                                     |             | Lista de ações que será executada quando a condição for verdadeira. |
+| onFalse   | List&lt;Action&gt;                                     |             | Lista de ações que será executada quando a condição for falsa.      |
 
 ## Como usar?
 
-O exemplo abaixo é um `Container` com um contexto que possui o valor 18  e no evento `onPress` do botão foi definido uma ação do tipo `Condition` que verifica se o valor é igual a 21 e mostra um `Alert` dependendo do valor do contexto.
+O exemplo abaixo é um `Container` com um contexto que possui o valor 18 e no evento `onPress` do botão foi definido uma ação do tipo `Condition` que verifica se o valor é igual a 21 e mostra um `Alert` dependendo do valor do contexto.
 
 {{< tabs id="T108" >}}
 {{% tab name="JSON" %}}
+
 <!-- json-playground:condition.json
 {
    "_beagleComponent_":"beagle:container",
@@ -59,10 +60,12 @@ O exemplo abaixo é um `Container` com um contexto que possui o valor 18  e no e
    }
 }
 -->
+
 {{% playground file="condition.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
+
 ```text
 Container(
     context = ContextData(
@@ -81,7 +84,7 @@ Container(
                      onFalse = listOf(
                          Alert(message = "The condition is false")
                      )
-                      
+
                 )
             )
         )
@@ -89,5 +92,6 @@ Container(
 )
 
 ```
+
 {{% /tab %}}
 {{< /tabs >}}

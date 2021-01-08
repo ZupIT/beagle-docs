@@ -1,7 +1,7 @@
 ---
 title: Listview
 weight: 340
-description: 'Descrição do componente ListView, seus atributos e construtores'
+description: "Descrição do componente ListView, seus atributos e construtores"
 ---
 
 ---
@@ -18,25 +18,25 @@ A sua estrutura é representada como mostrado abaixo:
 
 ### ListView
 
-| Atributo | Tipo | Obrigatório | Definição |
-| :--- | :--- | :---: | :--- |
-| direction | [ListDirection](#listdirection) |   | Define o direcionamento em que os items da lista são exibidos. |
-| context | [ContextData](/pt/docs/api/context) |  | Define o contexto do componente. |
-| onInit | List&lt;[Action](/pt/docs/api/actions)&gt; |  | Lista de ações a serem executadas assim que o componente é exibido.  |
-| dataSource | [Bind](/pt/docs/api/context#binding)&lt;List&lt;Any&gt;&gt; | ✓ | Expressão que aponta para uma lista de valores usados para popular o componete. |
-| template | [ServerDrivenComponent](/pt/docs/api/components) | ✓ | Representa cada celula na lista através de um `ServerDrivenComponent`. |
-| onScrollEnd | List&lt;[Action](/pt/docs/api/actions)&gt; |  | Lista de ações executadas quando a lista chega ao fim. |
-| scrollEndThreshold | Int |  | Define a porcentagem rolada da lista para disparar o `onScrollEnd`. |
-| iteratorName | String |  | É o identificador do contexto de cada célula. |
-| key | String |  | Aponta para um valor único presente em cada item do `dataSource` para ser usado como um sufixo nos ids dos componentes do template. |
+| Atributo           | Tipo                                                        | Obrigatório | Definição                                                                                                                           |
+| :----------------- | :---------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------------------------- |
+| direction          | [ListDirection](#listdirection)                             |             | Define o direcionamento em que os items da lista são exibidos.                                                                      |
+| context            | [ContextData](/pt/home/api/context)                         |             | Define o contexto do componente.                                                                                                    |
+| onInit             | List&lt;[Action](/pt/home/api/actions)&gt;                  |             | Lista de ações a serem executadas assim que o componente é exibido.                                                                 |
+| dataSource         | [Bind](/pt/home/api/context#binding)&lt;List&lt;Any&gt;&gt; |      ✓      | Expressão que aponta para uma lista de valores usados para popular o componete.                                                     |
+| template           | [ServerDrivenComponent](/pt/home/api/components)            |      ✓      | Representa cada celula na lista através de um `ServerDrivenComponent`.                                                              |
+| onScrollEnd        | List&lt;[Action](/pt/home/api/actions)&gt;                  |             | Lista de ações executadas quando a lista chega ao fim.                                                                              |
+| scrollEndThreshold | Int                                                         |             | Define a porcentagem rolada da lista para disparar o `onScrollEnd`.                                                                 |
+| iteratorName       | String                                                      |             | É o identificador do contexto de cada célula.                                                                                       |
+| key                | String                                                      |             | Aponta para um valor único presente em cada item do `dataSource` para ser usado como um sufixo nos ids dos componentes do template. |
 
 ### ListDirection
 
 É um `ENUM`, cujos valores são:
 
-| **Valor** | **Definição** |
-| :--- | :--- |
-| VERTICAL | Quando os items são exibidos em **`LINHAS`**. |
+| **Valor**  | **Definição**                                  |
+| :--------- | :--------------------------------------------- |
+| VERTICAL   | Quando os items são exibidos em **`LINHAS`**.  |
 | HORIZONTAL | Quando os itens são exibidos em **`COLUNAS`**. |
 
 {{% alert color="info" %}}
@@ -82,6 +82,7 @@ Valor default é ListDirection.VERTICAL
 
 {{< tabs id="T146" >}}
 {{% tab name="JSON" %}}
+
 <!-- json-playground:listView.json
 {
   "_beagleComponent_": "beagle:listView",
@@ -151,10 +152,12 @@ Valor default é ListDirection.VERTICAL
   }
 }
 -->
+
 {{% playground file="listView.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
+
 ```kotlin
 ListView(
     dataSource = listOf(
@@ -199,6 +202,7 @@ ListView(
     )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -206,6 +210,7 @@ ListView(
 
 {{< tabs id="T147" >}}
 {{% tab name="JSON" %}}
+
 <!-- json-playground:listViewDepreciado.json
 {
   "_beagleComponent_": "beagle:listView",
@@ -232,10 +237,12 @@ ListView(
   "direction": "HORIZONTAL"
 }
 -->
+
 {{% playground file="listViewDepreciado.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
+
 ```kotlin
 ListView(
     direction = ListDirection.HORIZONTAL,
@@ -258,5 +265,6 @@ ListView(
     )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}

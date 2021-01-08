@@ -10,7 +10,7 @@ description: >-
 
 ## Introdução
 
-O Beagle fornece uma `Activity` default para gerenciar as `Activities` geradas via server-driven. Porém você pode criar uma ou mais `Activities` que herdem de `BeagleActivity` com `@BeagleComponent` personalizadas de acordo com os fluxos server-driven da sua aplicação.  Sua estrutura funciona  parecida com o Android Activity. 
+O Beagle fornece uma `Activity` default para gerenciar as `Activities` geradas via server-driven. Porém você pode criar uma ou mais `Activities` que herdem de `BeagleActivity` com `@BeagleComponent` personalizadas de acordo com os fluxos server-driven da sua aplicação. Sua estrutura funciona parecida com o Android Activity.
 
 Para que o Beagle interprete essa classe como uma `BeagleActivity`, é necessário usar a anotação **`@BeagleComponent`** e implementar seus respectivos métodos.
 
@@ -23,7 +23,7 @@ Quando se trata do Beagle Activity, é possível customizar alguns componentes:
 3. Tratamento de erros
 4. ProgressBar
 
-Confira abaixo um exemplo de código para uma Custom Beagle Activity: 
+Confira abaixo um exemplo de código para uma Custom Beagle Activity:
 
 ```kotlin
 @RegisterController
@@ -34,7 +34,7 @@ class SampleServerDrivenActivity : BeagleActivity() {
 
         setContentView(R.layout.activity_server_driven)
     }
-    
+
     override fun getToolbar(): Toolbar {
         TODO("Not yet implemented")
     }
@@ -46,7 +46,7 @@ class SampleServerDrivenActivity : BeagleActivity() {
     override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {
         TODO("Not yet implemented")
     }
-    
+
 }
 ```
 
@@ -54,9 +54,9 @@ class SampleServerDrivenActivity : BeagleActivity() {
 
 O arquivo xml é o local onde você armazena o pacote de componentes da tela, de forma semelhante ao que você faz com o Android Activity.
 
-Mesmo usando o Beagle para enviar a estrutura da tela pelo server-driven, é importante criar este arquivo xml para receber o conteúdo. 
+Mesmo usando o Beagle para enviar a estrutura da tela pelo server-driven, é importante criar este arquivo xml para receber o conteúdo.
 
-Segue abaixo um exemplo de um layout xml: 
+Segue abaixo um exemplo de um layout xml:
 
 ```kotlin
 <LinearLayout
@@ -96,7 +96,7 @@ Para o conteúdo server-driven ser exibido é necessário um frame layout. Sendo
 
 ### 2. Toolbar
 
-Você pode criar uma Toolbar e usá-la em sua activity através do método `getToolbar()` . Isso permite  retornar a Toolbar desejada.
+Você pode criar uma Toolbar e usá-la em sua activity através do método `getToolbar()` . Isso permite retornar a Toolbar desejada.
 
 ```kotlin
 override fun getToolbar(): Toolbar = findViewById<Toolbar>(R.id.toolbar)
@@ -104,12 +104,12 @@ override fun getToolbar(): Toolbar = findViewById<Toolbar>(R.id.toolbar)
 
 ### 3. Tratamento de erros
 
-Você pode observar os estados e tratar os erros a partir do [`onServerDrivenContainerStateChanged()`](/pt/docs/resources/customization/beagle-for-android/loading-and-errors-treatment)
+Você pode observar os estados e tratar os erros a partir do [`onServerDrivenContainerStateChanged()`](/pt/home/resources/customization/beagle-for-android/loading-and-errors-treatment)
 
 ```kotlin
 override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {
      if (state is ServerDrivenState.Error) {
-          //Your error's treatment 
+          //Your error's treatment
      }
 }
 ```
@@ -122,7 +122,7 @@ Da mesma forma que os erros, você consegue observar se o estado do container se
 override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {
      if (state is ServerDrivenState.Loading) {
            progressBar.visibility = if (state.loading) View.VISIBLE else View.GONE
-     } 
+     }
 }
 ```
 

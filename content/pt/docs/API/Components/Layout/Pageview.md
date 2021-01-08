@@ -11,12 +11,12 @@ description: Descrição do componente Page View e seus atributos
 O componente `PageView` é um container especializado em apresentar páginas que são exibidas na horizontal e podem conter um indicador de páginas. Essas páginas podem ser qualquer objeto server-driven.
 
 {{% alert color="info" %}}
-O Page View se refere ao seu tamanho quando visualizado em dispositivos Mobile \(Android e iOS\). O **tamanho** dele é determinado pelo elemento pai em que está contido, ou seja, a largura \(width\) e a altura \(height\) será definida pelo componente pai.   
-  
-Por exemplo, um `PageView` pode ser declarado dentro de um [**Container**](/pt/docs/api/components/layout/container) e sua largura e altura são responsáveis por determinar o tamanho do Page View. 
+O Page View se refere ao seu tamanho quando visualizado em dispositivos Mobile \(Android e iOS\). O **tamanho** dele é determinado pelo elemento pai em que está contido, ou seja, a largura \(width\) e a altura \(height\) será definida pelo componente pai.
+
+Por exemplo, um `PageView` pode ser declarado dentro de um [**Container**](/pt/home/api/components/layout/container) e sua largura e altura são responsáveis por determinar o tamanho do Page View.
 {{% /alert %}}
 
-A sua estrutura é representada como mostrado abaixo:  
+A sua estrutura é representada como mostrado abaixo:
 
 <table>
   <thead>
@@ -74,6 +74,7 @@ No exemplo abaixo segue um PageView contendo três páginas onde cada uma delas 
 
 {{< tabs id="T148" >}}
 {{% tab name="JSON" %}}
+
 <!-- json-playground:pageView.json
 {
    "_beagleComponent_":"beagle:container",
@@ -120,19 +121,21 @@ No exemplo abaixo segue um PageView contendo três páginas onde cada uma delas 
    }
 }
 -->
+
 {{% playground file="pageView.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
+
 ```kotlin
 Container(
     children = listOf(
         PageView(
-            children = (1..3).map { 
+            children = (1..3).map {
                 Text(
-                    text = "Page $it", 
+                    text = "Page $it",
                     alignment = TextAlignment.CENTER
-                ) 
+                )
             },
             onPageChange = listOf(SetContext("context", "@{onPageChange}")),
             currentPage = expressionOf("@{context}")
@@ -145,10 +148,11 @@ Container(
         )
     ),
     context = ContextData(
-        id = "context", 
+        id = "context",
         value = 0
     )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}

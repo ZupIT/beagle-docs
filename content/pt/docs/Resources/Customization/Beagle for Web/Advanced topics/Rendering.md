@@ -6,25 +6,25 @@ weight: 186
 ---
 
 {{% alert color="info" %}}
-As features descritas aqui, estão disponíveis nas versões a partir de 1.2.0. 
+As features descritas aqui, estão disponíveis nas versões a partir de 1.2.0.
 {{% /alert %}}
 
-Para entender melhor sobre renderização, recomendamos a leitura da seção [**estrutura de dados**](/pt/docs/resources/customization/beagle-for-web/advanced-topics/data-structure).
+Para entender melhor sobre renderização, recomendamos a leitura da seção [**estrutura de dados**](/pt/home/resources/customization/beagle-for-web/advanced-topics/data-structure).
 
-Cada biblioteca do Beagle Web possui um processo definido de como busca, processa e renderiza a view. Há uma ordem que deve ser sempre respeitada e pontos de extensão \([**hooks**](https://pt-br.reactjs.org/docs/hooks-overview.html)\), onde você pode executar seus códigos \(lifecycles\).
+Cada biblioteca do Beagle Web possui um processo definido de como busca, processa e renderiza a view. Há uma ordem que deve ser sempre respeitada e pontos de extensão \([**hooks**](https://pt-br.reactjs.org/pt/home/hooks-overview.html)\), onde você pode executar seus códigos \(lifecycles\).
 
-Veja o processo de renderização do Beagle Web: 
+Veja o processo de renderização do Beagle Web:
 
 ![](/beagle-view.png)
 
 Os lifecycles \(ciclos de vida\) do Beagle, são:
 
-* **BeforeStart**
-* **BeforeViewSnapshot**
-* **AfterViewSnapshot**
-* **BeforeRender**
+- **BeforeStart**
+- **BeforeViewSnapshot**
+- **AfterViewSnapshot**
+- **BeforeRender**
 
-Eles podem ser usados como ganchos globais para o lifecycle: 
+Eles podem ser usados como ganchos globais para o lifecycle:
 
 ```text
 const config = {
@@ -104,7 +104,7 @@ class Text {
 }
 ```
 
-Desde que as anotações não podem ser usadas por funções, se você tem algum componente funcional ou não quer usar as anotações, use normalmente as chamadas de funções: 
+Desde que as anotações não podem ser usadas por funções, se você tem algum componente funcional ou não quer usar as anotações, use normalmente as chamadas de funções:
 
 ```text
 const Table = (props) => {
@@ -116,7 +116,7 @@ BeforeStart((textComponentPayload) => {
 })(Table)
 ```
 
-É importante notar que para o React, onde Higher Order Components \(HOC\) são comuns, o componente que recebe a anotação deve ser o final. Por isso, você deve aplicar ao nome do hoc `withTheme` ao seu componente: 
+É importante notar que para o React, onde Higher Order Components \(HOC\) são comuns, o componente que recebe a anotação deve ser o final. Por isso, você deve aplicar ao nome do hoc `withTheme` ao seu componente:
 
 ```text
 const MyComponent: FC = () => {
@@ -133,11 +133,11 @@ BeforeRender(myLifecycleFunction)(MyComponentWithTheme)
 export default MyComponentWithTheme
 ```
 
-O valor retornado do hook do lifecycle pode ser indefinido ou uma árvore. Se for uma árvore, o processo de renderização será descartar a árvore anterior e começar a trabalhar na árvore retornada pelo hook. 
+O valor retornado do hook do lifecycle pode ser indefinido ou uma árvore. Se for uma árvore, o processo de renderização será descartar a árvore anterior e começar a trabalhar na árvore retornada pelo hook.
 
-Para controlar o processo de renderização, além do lifecycles, o Beagle também oferece a Renderer API, que pode ser acessada por meio do `BeagleView.getRenderer()`.  O BeagleView pode ser acessado via o componente BeagleRemoteView, por meio de atributos como `onCreateBeagleView` no Angular e o `viewRef` no React.
+Para controlar o processo de renderização, além do lifecycles, o Beagle também oferece a Renderer API, que pode ser acessada por meio do `BeagleView.getRenderer()`. O BeagleView pode ser acessado via o componente BeagleRemoteView, por meio de atributos como `onCreateBeagleView` no Angular e o `viewRef` no React.
 
-Outra forma de acessar o BeagleView é por meio do ViewContentManager API, que pode ser encontrado no `this.viewContentManager` no  componente do Angular que extende o `BeagleComponent` ou no `props.viewContentManager` no React, um componente que implementa a interface do `BeagleComponent`.
+Outra forma de acessar o BeagleView é por meio do ViewContentManager API, que pode ser encontrado no `this.viewContentManager` no componente do Angular que extende o `BeagleComponent` ou no `props.viewContentManager` no React, um componente que implementa a interface do `BeagleComponent`.
 
 ## Processo e lifecycles
 
@@ -145,18 +145,18 @@ Outra forma de acessar o BeagleView é por meio do ViewContentManager API, que p
 Lifecycles deprecates the feature middlewares. Middlewares will still be supported at least until the next major version \(2.0.0\) and they will be interpreted as they were part of the global lifecycle `beforeViewSnapshot`.
 {{% /alert %}}
 
-Beagle possui um processo definido desde quando o payload é recebido até quando é renderizado na tela do browser. Há também os 'breakpoints' que é quando você faz seu processo, e isso é chamado de lifecycle. 
+Beagle possui um processo definido desde quando o payload é recebido até quando é renderizado na tela do browser. Há também os 'breakpoints' que é quando você faz seu processo, e isso é chamado de lifecycle.
 
 ### Processo para renderizar uma view
 
-Veja os passos abaixo para renderizar a view: 
+Veja os passos abaixo para renderizar a view:
 
 1. Rode o hook global **beforeStart;**
 2. Rode o hook **beforeStart** para cada componente;
 3. Identifique os filhos de cada componente considerando a anotação "BeagleChildren";
-4. Atribua um id para cada node que não tenha; 
-5. Remova qualquer propriedade do objeto que possua o valor null; 
-6. Se necessário, faça uma pré busca das views que serão acessadas em seguida; 
+4. Atribua um id para cada node que não tenha;
+5. Remova qualquer propriedade do objeto que possua o valor null;
+6. Se necessário, faça uma pré busca das views que serão acessadas em seguida;
 7. Rode o hook global **beforeViewSnapshot**;
 8. Rode o hook **beforeViewSnapshot** de cada componente;
 9. Tire um captura de tela da árvore e reserve. A partir de agora, qualquer referência a a árvore renderizada, será da cópia dessa árvore.
@@ -172,30 +172,30 @@ Veja os passos abaixo para renderizar a view:
 
 ### Lifecycles
 
-Existem quatro hooks de lifecycles, mas voê usará apenas dois: `beforeViewSnapshot` e `beforeRender`.  A diferença entre eles é que o primeiro roda antes de qualquer expressão ou ação tenha sido avaliada e o segundo roda depois. É importante mencionar, quando você usar a  **API Renderer**, `doFullRender` rodará ambos lifecycles, mas o `doPartialRender` rodará apenas o lifecycle `beforeRender.`
+Existem quatro hooks de lifecycles, mas voê usará apenas dois: `beforeViewSnapshot` e `beforeRender`. A diferença entre eles é que o primeiro roda antes de qualquer expressão ou ação tenha sido avaliada e o segundo roda depois. É importante mencionar, quando você usar a **API Renderer**, `doFullRender` rodará ambos lifecycles, mas o `doPartialRender` rodará apenas o lifecycle `beforeRender.`
 
 A regra simples para decidir se você uqer alterar a árvore via `beforeViewSnapshot` ou`beforeRender` é: se sua modificação não depende do resultado da expressão, use o `beforeViewSnapshot`, caso contrário, use o `beforeRender`.
 
-O lifecycle hook recebe da árvore do Beagle e retorna nada ou uma árvore. Se for uma árvore, o processo de renderização discarta a árvore anterior e trabalha na retornada pelo hook. 
+O lifecycle hook recebe da árvore do Beagle e retorna nada ou uma árvore. Se for uma árvore, o processo de renderização discarta a árvore anterior e trabalha na retornada pelo hook.
 
-* Lifecycle global: a árvore toda no Beagle.
-* Componente lifecycle: a árvore significa uma branch correspondente ao componente.
+- Lifecycle global: a árvore toda no Beagle.
+- Componente lifecycle: a árvore significa uma branch correspondente ao componente.
 
-Veja abaixo os detalhes de cada lifecycle: 
+Veja abaixo os detalhes de cada lifecycle:
 
 ### BeforeStart
 
 Este lifecycle roda antes de tudo, aqui algumas modificações devem ser feitas antes que id seja atribuido ou qualquer propriedade filho seja computada. Se o seu payload não é tudo que o Beagle espera, aqui é onde você pode mudá-lo.
 
-Desde que a tradução dos filhos ainda tenha sido rodada, os componentes decorados com `@BeforeStart` podem não rodar. Por exemplo, um texto dentro do componente `table` que tem seus filhos definidos pela propriedade `rows`. Nesse cenário o Beagle não sabe que rows representa os filhos de `table`, então ele ignoraria tudo dentro desse componente. 
+Desde que a tradução dos filhos ainda tenha sido rodada, os componentes decorados com `@BeforeStart` podem não rodar. Por exemplo, um texto dentro do componente `table` que tem seus filhos definidos pela propriedade `rows`. Nesse cenário o Beagle não sabe que rows representa os filhos de `table`, então ele ignoraria tudo dentro desse componente.
 
-Esse é o único lifecycle onde novas nodes podem ser adicionadas a árvores que não tenha ids. Cada um deles, roda depois que os ids são atribuídos. 
+Esse é o único lifecycle onde novas nodes podem ser adicionadas a árvores que não tenha ids. Cada um deles, roda depois que os ids são atribuídos.
 
 #### Exemplos de uso
 
 #### **Custom ID generator**
 
-Esse lifecycle pode ser usado para ignorar a geração de id padrão do Beagle e usar a sua própria. O Beagle apenas aceita ids aleatórios de nodes sem ids, você pode usar esse lifecycle para atribuir seu único ids para cada node: 
+Esse lifecycle pode ser usado para ignorar a geração de id padrão do Beagle e usar a sua própria. O Beagle apenas aceita ids aleatórios de nodes sem ids, você pode usar esse lifecycle para atribuir seu único ids para cada node:
 
 ```text
 const config = {
@@ -203,7 +203,7 @@ const config = {
   lifecycles: {
     beforeStart: (tree) => {
       let next = 1
-      
+
       function assignIds(data: any) {
         // if it's not a component or not a structure that can have a component inside, return
         if (!data || typeof data !== 'object') return
@@ -244,7 +244,7 @@ O exemplo acima funciona apenas com componentes que possuem `children` como nome
 
 ### BeforeViewSnapshot
 
-Esse roda logo antes do snapshot da view, é útil para alterar o payload, mas depois que os ids já fora atribuídos. Aqui é onde você deve modificar a árvore, já que os ids já estão atribuídos e a estrutura da árvore está pronta para ser atravessada.  
+Esse roda logo antes do snapshot da view, é útil para alterar o payload, mas depois que os ids já fora atribuídos. Aqui é onde você deve modificar a árvore, já que os ids já estão atribuídos e a estrutura da árvore está pronta para ser atravessada.
 
 {{% alert color="info" %}}
 Tenha cuidado quando criar qualquer node nova, é preciso atribuir os ids a ela.
@@ -297,7 +297,7 @@ O componente `beagle:textInput` pode ser controlado pelo contexto. Veja um exemp
 }
 ```
 
-O ideal é criar um atalho para evitar repetições, por exemplo, quando um json traz a propriedade `model`, é criado uma estrutura automaticamente. No model, é preciso ser digitado qual valor de contexto irá controlar essa entrada, veja abaixo: 
+O ideal é criar um atalho para evitar repetições, por exemplo, quando um json traz a propriedade `model`, é criado uma estrutura automaticamente. No model, é preciso ser digitado qual valor de contexto irá controlar essa entrada, veja abaixo:
 
 ```text
 {
@@ -324,7 +324,7 @@ O ideal é criar um atalho para evitar repetições, por exemplo, quando um json
 }
 ```
 
-Para isso funcionar, é preciso escrever o lifecycle que irá transformar o `model` na estrutrua esperada: 
+Para isso funcionar, é preciso escrever o lifecycle que irá transformar o `model` na estrutrua esperada:
 
 ```text
 import { BeforeViewSnapshot } from '@zup-it/beagle-web'
@@ -348,11 +348,11 @@ class TextInput {
 }
 ```
 
-Com esse código, apesar de estar recebendo o model do backend, o payload processado pelo Beagle terá os valores esperados. 
+Com esse código, apesar de estar recebendo o model do backend, o payload processado pelo Beagle terá os valores esperados.
 
 ### **Cálculo complexo da children com o BeforeViewSnapshot**
 
-O exemplo anterior poderia ter sido feito sem o risco de pular algum lifecycle do componente devido a propriedade children estar nomeada incorretamente. A única diferença é que você deve atribuir os ids: 
+O exemplo anterior poderia ter sido feito sem o risco de pular algum lifecycle do componente devido a propriedade children estar nomeada incorretamente. A única diferença é que você deve atribuir os ids:
 
 ```text
 import { BeforeViewSnapshot, Tree, Component } from '@zup-it/beagle-web'
@@ -376,16 +376,16 @@ Quando usar a API Renderer, há dois tipos de renderizar: renderização complet
 
 As mudanças feitas aqui são válidas para a renderização atual. Qualquer atualização da view é feita por meio da árvore baseada na no snapshot da view, as modificações feitas nesse lifecycle não são permanentes e serão executadas a cada renderização. Se você tem uma propriedade `counter` com o valor 0 na árvore e no seu lifecycle é com o valor 1. Na quinta renderização completa, os valores de `counter` serão:
 
-* BeforeStart: 5
-* BeforeViewSnapshot: 5
-* AfterViewSnapshot: 1
-* BeforeRender: 1
+- BeforeStart: 5
+- BeforeViewSnapshot: 5
+- AfterViewSnapshot: 1
+- BeforeRender: 1
 
-Esse lifecycle pode ser usado para rodar o código necessário para que a view seja renderizada e não requer ações, contexto, expressões e estilos, pois já foram processados. 
+Esse lifecycle pode ser usado para rodar o código necessário para que a view seja renderizada e não requer ações, contexto, expressões e estilos, pois já foram processados.
 
 #### Exemplos de uso
 
-Contextos são definidos, referenciados e manipulados no JSON da view. Mas, se você quiser acessar os dados da aplicação o Beagle oferece uma funcionalidade chamada [**Contexto Global**](/pt/docs/api/global-context), que é possivel lidar com esse cenário. Se não tivesse essa função, o lifecycle AfterViewSnapshot também consegue lidar com isso. 
+Contextos são definidos, referenciados e manipulados no JSON da view. Mas, se você quiser acessar os dados da aplicação o Beagle oferece uma funcionalidade chamada [**Contexto Global**](/pt/home/api/global-context), que é possivel lidar com esse cenário. Se não tivesse essa função, o lifecycle AfterViewSnapshot também consegue lidar com isso.
 
 Um exemplo, se você tem uma aplicação financeira e quer saber o balanço do usuário. Você deve garantir que cada haja a renderização de cada valor recente.
 
@@ -408,7 +408,7 @@ Um exemplo, se você tem uma aplicação financeira e quer saber o balanço do u
 }
 ```
 
-No JSON acima, o contexto `user` foi usado, onde começa com valores vazios e não há possibilidade de saber os valores corretos. Agora, substitua o valores do contexto por valores da sua aplicação, como abaixo: 
+No JSON acima, o contexto `user` foi usado, onde começa com valores vazios e não há possibilidade de saber os valores corretos. Agora, substitua o valores do contexto por valores da sua aplicação, como abaixo:
 
 ```text
 import Tree from '@zup-it/beagle-web'
@@ -440,11 +440,11 @@ O código não pode ser feito antes do view ser snapshotted, porque o requisito 
 
 ### BeforeRender
 
-As alterações aqui são válidas apenas para a renderização atual e são executadas em todas as renderizações. A diferença entre BeforeRender e AfterViewSnapshot é a garantia de que todas as ações, expressões e estilos já foram processadas. 
+As alterações aqui são válidas apenas para a renderização atual e são executadas em todas as renderizações. A diferença entre BeforeRender e AfterViewSnapshot é a garantia de que todas as ações, expressões e estilos já foram processadas.
 
 #### Exemplos de uso
 
-Quando o backend decide expressar cores no seguintes formatos:`{ red: number, green: number, blue: number }`. Por exemplo, preto seria `{ red: 0, green: 0, blue: 0 }`.  Isso não é válido para cores nos browsers, então é preciso converter o valor de cada propriedade de cor para validar o  formato RGB. Veja abaixo a função: 
+Quando o backend decide expressar cores no seguintes formatos:`{ red: number, green: number, blue: number }`. Por exemplo, preto seria `{ red: 0, green: 0, blue: 0 }`. Isso não é válido para cores nos browsers, então é preciso converter o valor de cada propriedade de cor para validar o formato RGB. Veja abaixo a função:
 
 ```text
 const colorProperties: ['color', 'backgroundColor', 'borderColor']
@@ -525,7 +525,7 @@ Agora, execute a função acima para cada componente na árvore. Se você quiser
 }
 ```
 
-O texto começa com o fundo branco e quando o usuário apertar o botão, o fundo muda de cor. Se você chamar  `fixColorCodes` antes do contexto ser validado, ele estará tentando executar sobre a string `@{bgColor}` ao invés do objeto `{ red: 255, green: 255, blue: 255 }` o que pode ocorrer um erro no tempo, já que eles não são propriedades da string. 
+O texto começa com o fundo branco e quando o usuário apertar o botão, o fundo muda de cor. Se você chamar `fixColorCodes` antes do contexto ser validado, ele estará tentando executar sobre a string `@{bgColor}` ao invés do objeto `{ red: 255, green: 255, blue: 255 }` o que pode ocorrer um erro no tempo, já que eles não são propriedades da string.
 
 BeforeStart, BeforeViewSnapshot and AfterViewSnapshot são executados antes de cada contexto ser avaliado, então tudo que pode ser afetado por ele deve ser executado no último lifecycle: BeforeRender:
 
@@ -543,19 +543,19 @@ const config = {
 
 ## The Renderer API
 
-Para controlar o processo de renderização, o Beagle permite você gerenciar quando uma nova renderização é feita na árvore do Beagle  View. Você pode ter um componente que quando é clicado muda a árvore atual, para que um novo componente seja adicionado ou uma propriedade seja modificada. 
+Para controlar o processo de renderização, o Beagle permite você gerenciar quando uma nova renderização é feita na árvore do Beagle View. Você pode ter um componente que quando é clicado muda a árvore atual, para que um novo componente seja adicionado ou uma propriedade seja modificada.
 
-Um cenário comum é quando você cria uma ação que muda a árvore atual, por exemplo, uma ação addChildren, quando executada deve ir a árvore atual e adicionar o filho ao componente com o id dado. Para fazer isso, é preciso ter uma forma de obter a árvore atual, modificá-la e avisar ao Beagle View para renderizar de novo. 
+Um cenário comum é quando você cria uma ação que muda a árvore atual, por exemplo, uma ação addChildren, quando executada deve ir a árvore atual e adicionar o filho ao componente com o id dado. Para fazer isso, é preciso ter uma forma de obter a árvore atual, modificá-la e avisar ao Beagle View para renderizar de novo.
 
-A renderização pode ser feita em dois processos: a completa e a parcial. A primeira executa todos [**os passos da lista no início dessa página**](#processo-para-renderizar-uma-view) e a segunda executa apenas o view snapshot e os passos 9 ao 18 da mesma lista. 
+A renderização pode ser feita em dois processos: a completa e a parcial. A primeira executa todos [**os passos da lista no início dessa página**](#processo-para-renderizar-uma-view) e a segunda executa apenas o view snapshot e os passos 9 ao 18 da mesma lista.
 
 ### Acessando o Renderer
 
 Cada Beagle View possui seu renderizador, para acessá-lo, você deve chamar o `beagleView.getRenderer()`.
 
-Veja os exemplos de como chegar ao renderizador: 
+Veja os exemplos de como chegar ao renderizador:
 
-* React:  a referência ao `BeagleView` pode ser obtida por meio da propriedade do `viewRef` do `BeagleRemoteView:`
+- React: a referência ao `BeagleView` pode ser obtida por meio da propriedade do `viewRef` do `BeagleRemoteView:`
 
 ```text
 import React, { FC, useRef, useEffect, MutableRefObject } from 'react'
@@ -577,7 +577,7 @@ const Home: FC = () => {
 }
 ```
 
-* Angular: você pode usar o atributo `onCreateBeagleView` do componente `beagle-remote-view` : 
+- Angular: você pode usar o atributo `onCreateBeagleView` do componente `beagle-remote-view` :
 
 ```text
 import { Component } from '@angular/core'
@@ -607,7 +607,7 @@ export class Home {
 
 Quando dentro do componente renderizado pelo Beagle, você pode usar o ViewContentManager para acessar o BeagleView e obter o renderizador.
 
-Quando dentro do action handler \(ações customizadas\), o Beagle View é provido via parametro que pode ser usado para obter o renderizador, veja o exemplo abaixo: 
+Quando dentro do action handler \(ações customizadas\), o Beagle View é provido via parametro que pode ser usado para obter o renderizador, veja o exemplo abaixo:
 
 ```text
 const MyCustomActionHandler: ActionHandler<MyCustomAction> = ({ action, beagleView }) => {
@@ -618,36 +618,30 @@ const MyCustomActionHandler: ActionHandler<MyCustomAction> = ({ action, beagleVi
 
 ### Usando o Renderer
 
-O renderizador possui duas funções: `doFullRender` e`doPartialRender`. 
+O renderizador possui duas funções: `doFullRender` e`doPartialRender`.
 
-1. `doFullRender`: renderiza a árvore passada como parâmetro rodando todo os passos para renderização. Renderização completa deve ser feita toda vez que novas nodes são criadas. 
-2. `doPartialRender`: apenas roda a view snapshot e os passos depois disso. Renderização parcial deve ser usada para modificar nodes existentes. 
+1. `doFullRender`: renderiza a árvore passada como parâmetro rodando todo os passos para renderização. Renderização completa deve ser feita toda vez que novas nodes são criadas.
+2. `doPartialRender`: apenas roda a view snapshot e os passos depois disso. Renderização parcial deve ser usada para modificar nodes existentes.
 
- A árvore recebida pelo `doFullRender` é o tipo de `BeagleUIElement`, por exemplo, e pode ou não ter ids. A árvore recebida do `doPartialRender` é o tipo de `IdentifiableBeagleUIElement`: 
+A árvore recebida pelo `doFullRender` é o tipo de `BeagleUIElement`, por exemplo, e pode ou não ter ids. A árvore recebida do `doPartialRender` é o tipo de `IdentifiableBeagleUIElement`:
 
-Exemplo: deve ter ids para cada node. Você nunca pode passar a árvore para o`doPartialRender` sem ids. 
+Exemplo: deve ter ids para cada node. Você nunca pode passar a árvore para o`doPartialRender` sem ids.
 
 Além do tipo de árvore, não há diferença na forma que o `doFullRender` e o `doPartialRender`são chamados. Eles aceitam os seguintes parâmetros:
 
 1. O primeiro é a árvore;
 2. O segundo é opcional e a âncora. Se a âncora não for especificada, a árvore passada no primeiro parâmetro será substituída pela árvore renderizada. Se a âncora é especificada, a árvore passada como parametro será anexada a árvore renderizada atual, na mesma posiçao que a node com id referenciado por `anchor`. Como o anexo é feito é definido pelo terceiro parâmetro.
-3. Opcional. É o mode, se o modo não é definido, ele é tratado como  `replaceComponent`. Há 4 modos diferentes: 
+3. Opcional. É o mode, se o modo não é definido, ele é tratado como `replaceComponent`. Há 4 modos diferentes:
 
-   * `replaceComponent`: substitui a node com mesmo id que o parâmetro
+   - `replaceComponent`: substitui a node com mesmo id que o parâmetro
 
      `anchor` com a árvore passada no primeiro parâmetro
 
- 
+   - `replace`: substitui a árvore passada no primeiro parâmetro para a children do node com o mesmo id que o parâmetro `anchor` \(ou a raíz, se o anchor não for especificado\).
 
-   * `replace`: substitui a árvore passada no primeiro parâmetro para a children do node com o mesmo id que o parâmetro `anchor` \(ou a raíz, se o anchor não for especificado\).
+   - `prepend`: precede a árvore passada no primeiro parâmetro para a children do node com o mesmo id que o parâmetro `anchor` \(ou a raíz, se o anchor não for especificado\).
 
-
-
-   * `prepend`: precede a árvore passada no primeiro parâmetro para a children do node com o mesmo id que o parâmetro `anchor` \(ou a raíz, se o anchor não for especificado\).
-
-
-
-   * `append`:  acrescenta a árvore passada no primeiro parâmetro para a children do node com o mesmo id que o parâmetro `anchor` \(ou a raíz, se o anchor não for especificado\).
+   - `append`: acrescenta a árvore passada no primeiro parâmetro para a children do node com o mesmo id que o parâmetro `anchor` \(ou a raíz, se o anchor não for especificado\).
 
 ### **Exemplos:**
 
@@ -679,16 +673,16 @@ beagleView.getRenderer().doFullRender(item, 'list', { mode: 'append' })
 ```
 
 {{% alert color="info" %}}
-Com a API do rendered, você pode alterar uma view quando quiser. Você não pode chamar `renderer.doFullRender(tree, componentId)` no onInit do componente do Angular com o id `componentId`. Se isso for feito, o Beagle irá remover o componente da árvore antes de ser renderizado. Casos como esse podem acontecer usando o Beagle renderer dentro dos componentes de lifecycle. 
+Com a API do rendered, você pode alterar uma view quando quiser. Você não pode chamar `renderer.doFullRender(tree, componentId)` no onInit do componente do Angular com o id `componentId`. Se isso for feito, o Beagle irá remover o componente da árvore antes de ser renderizado. Casos como esse podem acontecer usando o Beagle renderer dentro dos componentes de lifecycle.
 
 A solução do exemplo dado seria substituir a children do componente \(`renderer.doFullRender(tree, componentId, 'replace')`\).
 {{% /alert %}}
 
-## API ViewContentManager 
+## API ViewContentManager
 
 A list view é um componente que precisa usar a Rendered API, mas como acessar o renderizador do componente? Em ambos Angular e React, isso pode ser feito via `ViewContentManager`.
 
-O `ViewContentManager` provê um caminho para acessar o BeagleView e o node que a árvore atual do Beagle  que deu origem ao componente sendo renderizado e com isso você pode acessar e chamar a renderização desse componente específico. 
+O `ViewContentManager` provê um caminho para acessar o BeagleView e o node que a árvore atual do Beagle que deu origem ao componente sendo renderizado e com isso você pode acessar e chamar a renderização desse componente específico.
 
 ### Acessando o ViewContentManager
 
@@ -696,7 +690,7 @@ O `ViewContentManager` provê um caminho para acessar o BeagleView e o node que 
 
 O `ViewContentManager` pode ser acessado dentro to componente do React, se ele implementar a interface do BeagleComponente.
 
-Veja abaixo o exemplo de re-renderizar o componente com um novo grupo de children baseado nos dados e no template: 
+Veja abaixo o exemplo de re-renderizar o componente com um novo grupo de children baseado nos dados e no template:
 
 ```text
 import React, { FC, useRef, useEffect, MutableRefObject } from 'react'
@@ -710,7 +704,7 @@ const ListView: FC<ListViewInterface> = (props) => {
   useEffect(() => {
     /* Once the component implements the BeagleComponent interface, we have access to the
     viewContentManager, but if the component was not instantiated by Beagle, the viewContentManager
-    will be undefined. We must verify it before continuing. */ 
+    will be undefined. We must verify it before continuing. */
     if (!props.viewContentManager) return
     const children = createChildrenFromTemplate(props.dataSource, props.template)
     const element = props.viewContentManager.getElement()
@@ -724,11 +718,11 @@ const ListView: FC<ListViewInterface> = (props) => {
 }
 ```
 
-Isso acontece quando a fonte de dados ou template mudam. 
+Isso acontece quando a fonte de dados ou template mudam.
 
 #### Angular
 
-No Angular, se você precisar acessar o ViewContentManager, a classe do componente deve extender o `BeagleComponent`, então você pode referenciar a  `this.viewContentManager`.
+No Angular, se você precisar acessar o ViewContentManager, a classe do componente deve extender o `BeagleComponent`, então você pode referenciar a `this.viewContentManager`.
 
 ```text
 import { Component, Input } from '@angular/core'
@@ -752,7 +746,7 @@ export class ListView extends BeagleComponent {
 }
 ```
 
-O método  `renderDataSource` deve ser chamado toda vez que a fonte de dados ou o template mudarem. 
+O método `renderDataSource` deve ser chamado toda vez que a fonte de dados ou o template mudarem.
 
 ### Usando o ViewContentManager
 
@@ -798,4 +792,4 @@ O ViewContentManager possui as seguintes propriedades e funções: have the foll
 
 ## Atualizando a view com o resultado da requisição
 
-Caso você precisa atualizar a view atual com a árvore que vem do backend, você deve usar o [**método fetch do `BeagleView`**](https://github.com/ZupIT/beagle-web-core/blob/master/docs/beagle-view#Fetching-a-view). Isso irá internamente usar todo o mecanismo de cache do Beagle e também a parte de renderização.
+Caso você precisa atualizar a view atual com a árvore que vem do backend, você deve usar o [**método fetch do `BeagleView`**](https://github.com/ZupIT/beagle-web-core/blob/master/pt/home/beagle-view#Fetching-a-view). Isso irá internamente usar todo o mecanismo de cache do Beagle e também a parte de renderização.

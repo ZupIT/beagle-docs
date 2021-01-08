@@ -10,23 +10,23 @@ description: >-
 
 ## Size
 
-Esta propriedade manipula toda parte de tamanho do item em tela. O Size conta com os seguintes atributos: 
+Esta propriedade manipula toda parte de tamanho do item em tela. O Size conta com os seguintes atributos:
 
 **`width, heigth, maxWidth,maxHeight, minWidth, minHeigh, aspectRatio`**
 
 ![](https://lh3.googleusercontent.com/3aoRDnlMNqdnoYlmx60A--Y_Q6I3tGqCZt6CiQDJP53xu4TpwIL4skCdT_tjTTspNjuftf5ikAyKiLxlm4Tcll1kIQ_LhMd9y-PfBKcd69zgPp2MyMPJBHP5sUyQDXmPFTZcGqHM)
 
-## **Atributos:** 
+## **Atributos:**
 
-### **Width** 
+### **Width**
 
 Define o **tamanho da largura** do item
 
-### **Height** 
+### **Height**
 
 Define o **tamanho da altura** do item.
 
-### **MaxWidth** 
+### **MaxWidth**
 
 Define uma **largura máxima.**
 
@@ -42,12 +42,11 @@ Define uma **largura mínima.**
 
 Define uma **altura mínima.**
 
-### **AspectRatio** 
+### **AspectRatio**
 
-É uma propriedade criada pelo Yoga Layout que define a proporção de largura de acordo com altura do item, seguindo uma lógica de **valor double &gt; 0.** 
+É uma propriedade criada pelo Yoga Layout que define a proporção de largura de acordo com altura do item, seguindo uma lógica de **valor double &gt; 0.**
 
-Isso significa dizer que, por exemplo, se você aplicar uma altura de 100dp em um componente e o aspectRatio de 2, a largura será 2 vezes a altura onde terá o valor de 200dp.   
-
+Isso significa dizer que, por exemplo, se você aplicar uma altura de 100dp em um componente e o aspectRatio de 2, a largura será 2 vezes a altura onde terá o valor de 200dp.
 
 {{< tabs id="T68" >}}
 {{% tab name="Kotlin" %}}
@@ -76,6 +75,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
  private func screen() -> Screen {
         return
@@ -105,9 +105,10 @@ private fun screen() :Widget{
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
 {{% alert color="info" %}}
-Para saber mais sobre Size, acesse a [**documentação do Yoga Layout**](https://yogalayout.com/docs/min-max).
+Para saber mais sobre Size, acesse a [**documentação do Yoga Layout**](https://yogalayout.com/pt/home/min-max).
 {{% /alert %}}

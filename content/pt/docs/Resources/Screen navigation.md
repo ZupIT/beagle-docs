@@ -8,10 +8,10 @@ description: >-
 
 ---
 
-No Beagle, a navegação \(ou Navigate\) é um tipo de [**Ação**](/pt/docs/api/actions) e que, por isso, pode ser usada por todos componentes que recebem uma ação. 
+No Beagle, a navegação \(ou Navigate\) é um tipo de [**Ação**](/pt/home/api/actions) e que, por isso, pode ser usada por todos componentes que recebem uma ação.
 
 {{% alert color="info" %}}
-Vale lembrar que, antes de configurar a navegação entre telas da sua aplicação, é preciso que você já tenha feito a [**instalação do Beagle**](/pt/docs/get-started/installing-beagle/), as [**configurações de uso**](/pt/docs/get-started/using-beagle/) e testado o framework do Beagle no tutorial para [**exibir uma tela server-driven.**](/pt/docs/tutorials/how-to-display-a-screen) 
+Vale lembrar que, antes de configurar a navegação entre telas da sua aplicação, é preciso que você já tenha feito a [**instalação do Beagle**](/pt/home/get-started/installing-beagle/), as [**configurações de uso**](/pt/home/get-started/using-beagle/) e testado o framework do Beagle no tutorial para [**exibir uma tela server-driven.**](/pt/home/tutorials/how-to-display-a-screen)
 {{% /alert %}}
 
 Depois de fazer todas as configurações, basta colocar o código dos exemplos como retorno do seu serviço e chamar o endpoint, definido na sua controller, no frontend de sua preferência.
@@ -20,13 +20,14 @@ Depois de fazer todas as configurações, basta colocar o código dos exemplos c
 
 Algumas ações de navegação precisam de um parâmetro. É possível receber dois tipos de rota, que são:
 
-* **Local:** navegação interna que já espera pela nova [**tela**](/pt/docs/api/screen/). 
-* **Remote:**  navegação que, a partir de uma URL, aponta para uma API que irá retornar um ou mais componentes do Beagle. 
+- **Local:** navegação interna que já espera pela nova [**tela**](/pt/home/api/screen/).
+- **Remote:** navegação que, a partir de uma URL, aponta para uma API que irá retornar um ou mais componentes do Beagle.
 
 No exemplo abaixo, você vê um caso onde o `route` é `remote`:
 
 {{< tabs id="T89" >}}
 {{% tab name="JSON" %}}
+
 ```javascript
 {
     "_beagleComponent_": "beagle:button",
@@ -42,9 +43,11 @@ No exemplo abaixo, você vê um caso onde o `route` é `remote`:
     ]
 }
 ```
+
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
+
 ```kotlin
 Button(
    text = "Click me!",
@@ -55,31 +58,30 @@ Button(
    )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
 ![](/navigate-remote.gif)
 
-
-
 ## Tipos de navegação
 
 Nas páginas a seguir, você confere mais detalhes de cada tipo de navegação do Beagle:
 
-[**OpenNativeRoute**](/pt/docs/api/actions/navigate/opennativeroute)
+[**OpenNativeRoute**](/pt/home/api/actions/navigate/opennativeroute)
 
-[**OpenExternalURL**](/pt/docs/api/actions/navigate/openexternalurl)
+[**OpenExternalURL**](/pt/home/api/actions/navigate/openexternalurl)
 
-[**PushStack**](/pt/docs/api/actions/navigate/pushstack)
+[**PushStack**](/pt/home/api/actions/navigate/pushstack)
 
-[**PushView**](/pt/docs/api/actions/navigate/pushview)
+[**PushView**](/pt/home/api/actions/navigate/pushview)
 
-[**PopStack**](/pt/docs/api/actions/navigate/popstack)
+[**PopStack**](/pt/home/api/actions/navigate/popstack)
 
-[**PopView**](/pt/docs/api/actions/navigate/popview)
+[**PopView**](/pt/home/api/actions/navigate/popview)
 
-[**PopToView**](/pt/docs/api/actions/navigate/poptoview)
+[**PopToView**](/pt/home/api/actions/navigate/poptoview)
 
-[**ResetApplication**](/pt/docs/api/actions/navigate/resetapplication)
+[**ResetApplication**](/pt/home/api/actions/navigate/resetapplication)
 
-[**ResetStack**](/pt/docs/api/actions/navigate/resetstack)
+[**ResetStack**](/pt/home/api/actions/navigate/resetstack)

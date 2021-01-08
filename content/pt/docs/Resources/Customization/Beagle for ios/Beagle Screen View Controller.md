@@ -1,7 +1,7 @@
 ---
 title: Beagle Screen View Controller
 weight: 147
-description: 'Nesta seção, você encontra informações da classe Beagle Screen View Controller'
+description: "Nesta seção, você encontra informações da classe Beagle Screen View Controller"
 ---
 
 ---
@@ -12,7 +12,7 @@ description: 'Nesta seção, você encontra informações da classe Beagle Scree
 
 ## Como implementar essa classe?
 
-Esse processo pode ser feito com seguintes passos: 
+Esse processo pode ser feito com seguintes passos:
 
 1. Crie um objeto do tipo BeagleScreenViewController passando um screenType em sua inicialização, que nos permite inicializar de três formas:
 
@@ -22,7 +22,7 @@ Esse processo pode ser feito com seguintes passos:
 
 **DeclarativeText:** Passa o json de uma tela.
 
-Você pode encontrar o construtor da classe a seguir: 
+Você pode encontrar o construtor da classe a seguir:
 
 ```swift
 class BeagleScreenViewController {
@@ -46,21 +46,21 @@ public enum ScreenType {
 
 ```
 
- Exemplos de inicialização utilizando o declarative, remote e o  declarativeText: 
+Exemplos de inicialização utilizando o declarative, remote e o declarativeText:
 
 ```swift
-// 1 
+// 1
 let viewController = BeagleScreenViewController(
     .declarative(Home.screen())
     )
-                         
+
 // 2
 let viewController = BeagleScreenViewController(
     .remote( .init(
-        url: "/home", 
+        url: "/home",
         fallback: nil))
     )
-                                   
+
 // 3
 let viewController = BeagleScreenViewController(
     .remote(.init(
@@ -84,17 +84,18 @@ let viewController = BeagleScreenViewController(
 
 **1 :** O primeiro exemplo instancia o `BeagleScreenViewController` com um screenType do tipo declarative passando uma tela criada para o seu modo declarativo.
 
-**2 :** O segundo exemplo `BeagleScreenViewController` foi instanciado com um screenType do tipo remote onde se passa uma URL relativa e um fallback nulo. Para usar essa URL você deve colocar primeiro uma URL base no `BeagleDependencies` do seu projeto.  
-  
-**3 :** O terceiro `BeagleScreenViewController` foi instanciado com um screenType do tipo remote onde passa a URL  absoluta e um fallback de uma tela no modo declarativo.
+**2 :** O segundo exemplo `BeagleScreenViewController` foi instanciado com um screenType do tipo remote onde se passa uma URL relativa e um fallback nulo. Para usar essa URL você deve colocar primeiro uma URL base no `BeagleDependencies` do seu projeto.
 
-**4 :** O quarto exemplo instancia o `BeagleScreenViewController` com um screenType do tipo declarativeText passando um json. 
+**3 :** O terceiro `BeagleScreenViewController` foi instanciado com um screenType do tipo remote onde passa a URL absoluta e um fallback de uma tela no modo declarativo.
+
+**4 :** O quarto exemplo instancia o `BeagleScreenViewController` com um screenType do tipo declarativeText passando um json.
 
 {{% alert color="success" %}}
-## Beagle Navigation Controller customizada 
+
+## Beagle Navigation Controller customizada
 
 A BeagleNavigationController é uma classe do tipo UINavigationController, focada em observar os estados de uma tela server-driven para, por exemplo, saber quando ela se inicia ou finaliza.
 
-[**Click para saber mais!**](/pt/docs/resources/customization/beagle-for-ios/custom-beagle-navigation-controller/)
+[**Click para saber mais!**](/pt/home/resources/customization/beagle-for-ios/custom-beagle-navigation-controller/)
 
 {{% /alert %}}

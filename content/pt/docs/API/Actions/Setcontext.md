@@ -14,14 +14,14 @@ A ação `SetContext` é responsável por alterar o valor de um contexto.
 
 A estrutura do SetContext é:
 
-| **Atributo** | **Tipo** | Obrigatório | **Definição** |
-| :--- | :--- | :---: | :--- |
-| contextId | String  | ✓ | Id do contexto |
-| value | Any | ✓ | Novo valor a ser aplicado no contexto |
-| path | String |   | Ponto específico do contexto para ser alterado no caso de arrays e mapas &lt;chave, valor&gt;. |
+| **Atributo** | **Tipo** | Obrigatório | **Definição**                                                                                  |
+| :----------- | :------- | :---------: | :--------------------------------------------------------------------------------------------- |
+| contextId    | String   |      ✓      | Id do contexto                                                                                 |
+| value        | Any      |      ✓      | Novo valor a ser aplicado no contexto                                                          |
+| path         | String   |             | Ponto específico do contexto para ser alterado no caso de arrays e mapas &lt;chave, valor&gt;. |
 
 {{% alert color="info" %}}
-Conheça mais sobre o [**contexto no Beagle**](/pt/docs/api/context/).
+Conheça mais sobre o [**contexto no Beagle**](/pt/home/api/context/).
 {{% /alert %}}
 
 ## Como usar?
@@ -30,6 +30,7 @@ Abaixo temos um exemplo de um texto que é preenchido por contexto e possui um v
 
 {{< tabs id="T128" >}}
 {{% tab name="JSON" %}}
+
 <!-- json-playground:setcontext.json
 {
   "_beagleComponent_": "beagle:container",
@@ -56,10 +57,12 @@ Abaixo temos um exemplo de um texto que é preenchido por contexto e possui um v
   ]
 }
 -->
+
 {{% playground file="setcontext.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
+
 ```kotlin
 Container(
     children = listOf(
@@ -80,5 +83,6 @@ Container(
      )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}

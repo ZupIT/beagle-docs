@@ -13,9 +13,9 @@ description: >-
 O justify-content define o alinhamento dos itens ao longo do eixo principal do container \(horizontalmente\) e tem os seguintes atributos: **`flex-start, flex-end, center, space-between, space-around e space-Evenly.`**
 
 {{% alert color="danger" %}}
-O tamanho do container pode interferir no comportamento dessa propriedade.  Isso significa que, quando os elementos são posicionados, podem ser dispostos em uma coluna em vez de uma linha, como no exemplo abaixo. 
+O tamanho do container pode interferir no comportamento dessa propriedade. Isso significa que, quando os elementos são posicionados, podem ser dispostos em uma coluna em vez de uma linha, como no exemplo abaixo.
 
-Nesse momento, se o container não possuir uma altura suficiente para conter os elementos empilhados, essa propriedade não conseguirá mostrar os elementos em uma coluna. 
+Nesse momento, se o container não possuir uma altura suficiente para conter os elementos empilhados, essa propriedade não conseguirá mostrar os elementos em uma coluna.
 {{% /alert %}}
 
 ### **Flex Start \(padrão\)**
@@ -48,6 +48,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -67,10 +68,11 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-### **Flex End** 
+### **Flex End**
 
 Os itens são alinhados a partir do fim do eixo principal; alinhados em baixo, no fim da tela:
 
@@ -100,6 +102,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
  private func screen() -> Screen {
         return
@@ -119,6 +122,7 @@ private fun screen() :Widget{
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -131,6 +135,7 @@ Os itens são alinhados ao centro do eixo principal; no centro da tela:
 {{< tabs id="T22" >}}
 {{% tab name="Kotlin" %}}
 {% code title="" %}}
+
 ```kotlin
 private fun screen() :Widget{
         return Container(
@@ -152,6 +157,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
    private func screen() -> Screen {
         return
@@ -171,12 +177,13 @@ private fun screen() :Widget{
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
 ### **Space Between**
 
-O primeiro item é deslocado para o início do eixo principal, o último é deslocado para o fim do eixo principal e os demais são distribuídos uniformemente; o espaço entre eles é igual: 
+O primeiro item é deslocado para o início do eixo principal, o último é deslocado para o fim do eixo principal e os demais são distribuídos uniformemente; o espaço entre eles é igual:
 
 ![](https://lh3.googleusercontent.com/th-V4Vn6jKMakkKPZiJzgCZ_9L8yu6h3M3PnhhKjDzvj7wvuruxJLY-F7eEnRwB-48kb1mRoUQRc19ZeDTWzFS_LwoiDHaZ-I8qguUG2rrSzl3nNErTsLKD6Ve9BP1Zmq_j7aDBy)
 
@@ -204,6 +211,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
  private func screen() -> Screen {
         return
@@ -223,10 +231,11 @@ private fun screen() :Widget{
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-### **Space Around** 
+### **Space Around**
 
 Os itens são uniformemente distribuídos ao longo do eixo principal. Aqui, são atribuídas margens iguais acima e abaixo \(ou à esquerda e à direita, dependendo da direção do eixo principal\). Por isso o primeiro e o último item não ficam “colados” nas bordas do container:
 
@@ -256,6 +265,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -275,10 +285,11 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-### **Space Evenly** 
+### **Space Evenly**
 
 Os itens são uniformemente distribuídos ao longo do eixo principal:
 
@@ -308,6 +319,7 @@ Os itens são uniformemente distribuídos ao longo do eixo principal:
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
  private func screen() -> Screen {
         return
@@ -327,9 +339,10 @@ Os itens são uniformemente distribuídos ao longo do eixo principal:
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
 {{% alert color="info" %}}
-Para saber o Justify Content, acesse [**a documentação no Yoga Layout**](https://yogalayout.com/docs/flex-direction/)
+Para saber o Justify Content, acesse [**a documentação no Yoga Layout**](https://yogalayout.com/pt/home/flex-direction/)
 {{% /alert %}}

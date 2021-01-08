@@ -1,20 +1,20 @@
 ---
 title: Positiontype
 weight: 76
-description: 'Nesta seção, você encontra mais informações sobre a propriedade Position Type.'
+description: "Nesta seção, você encontra mais informações sobre a propriedade Position Type."
 ---
 
 ---
 
 ## PositionType
 
-É a propriedade que define qual a posição do elemento dentro do pai e ainda se ele deve ser usado como **Relativo ou Absoluto**. 
+É a propriedade que define qual a posição do elemento dentro do pai e ainda se ele deve ser usado como **Relativo ou Absoluto**.
 
-### **Relativo \(Padrão\)** 
+### **Relativo \(Padrão\)**
 
 Por padrão, esta propriedade posiciona o elemento em relação aos demais elementos no mesmo fluxo, fazendo com que eles se desloquem respeitando os limites de seus elementos irmãos.
 
-Veja como funciona neste exemplo: 
+Veja como funciona neste exemplo:
 
 ![](https://lh3.googleusercontent.com/u2gdm-w0DSIrhM07gy50F5bZyJQxeb0ZIU14OSYTgHSaNvFzPIWLfuNV7H-c9G_DkqathtRsM3R8a9KGJePgqJURYS0-cpd8BUHBlLdEyPFIcOAAuP6kM7_KD1y-Rd0wSo_xTIMb)
 
@@ -44,6 +44,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
  private func screen() -> Screen {
         return
@@ -65,6 +66,7 @@ private fun screen() :Widget{
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -103,6 +105,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
  private func screen() -> Screen {
         return
@@ -126,9 +129,10 @@ private fun screen() :Widget{
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
 {{% alert color="info" %}}
-Para saber mais sobre Position Type, acesse a [**documentação do Yoga Layout**](https://yogalayout.com/docs/absolute-relative-layout).
+Para saber mais sobre Position Type, acesse a [**documentação do Yoga Layout**](https://yogalayout.com/pt/home/absolute-relative-layout).
 {{% /alert %}}

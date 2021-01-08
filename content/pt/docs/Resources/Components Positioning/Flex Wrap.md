@@ -12,7 +12,7 @@ description: >-
 
 Por padrão os itens do container tentarão se ajustar em uma única linha dentro do container, mas para que isso ocorra a sua largura original pode ser ajustada. A propriedade flex-wrap altera esse comportamento e faz a “quebra de linha” nos itens, e ela tem os seguintes atributos: **`nowrap, wrap, wrap-reverse.`**
 
-### **No Wrap \(padrão\)** 
+### **No Wrap \(padrão\)**
 
 Todos os itens serão dispostos em uma linha:
 
@@ -48,6 +48,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -73,10 +74,11 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-###  **Wrap**
+### **Wrap**
 
 A quebra de linha irá acontecer e os itens mais à direita serão deslocados para a linha de baixo:
 
@@ -112,6 +114,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -137,6 +140,7 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -176,6 +180,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
  private func screen() -> Screen {
         return
@@ -201,9 +206,10 @@ private fun screen() :Widget{
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
 {{% alert color="info" %}}
-Para saber mais sobre o Flex wrap, acesse a [**documentação no Yoga Layout.**](https://yogalayout.com/docs/flex-wrap/)
+Para saber mais sobre o Flex wrap, acesse a [**documentação no Yoga Layout.**](https://yogalayout.com/pt/home/flex-wrap/)
 {{% /alert %}}

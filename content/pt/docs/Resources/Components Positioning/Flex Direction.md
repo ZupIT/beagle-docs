@@ -10,15 +10,15 @@ description: >-
 
 ## Flex Direction
 
-A propriedade flex-direction é aplicada a um container e define o eixo/fluxo de exibição em que os elementos serão organizados. Essa propriedade tem os seguintes atributos: **`row, row-reverse, column, column-reverse`**. 
+A propriedade flex-direction é aplicada a um container e define o eixo/fluxo de exibição em que os elementos serão organizados. Essa propriedade tem os seguintes atributos: **`row, row-reverse, column, column-reverse`**.
 
 {{% alert color="info" %}}
 Nos exemplos abaixo, foi utilizada função `createText` com intuito de retornar um componente de texto com um estilo aplicado. Mas essa configuração não é obrigatória.
 {{% /alert %}}
 
-Confira abaixo os exemplos de comportamento dos elementos para cada atributo: 
+Confira abaixo os exemplos de comportamento dos elementos para cada atributo:
 
-### **Row**   
+### **Row**
 
 Os itens são organizados em forma de linha exibindo seus elementos da esquerda para a direita:
 
@@ -47,6 +47,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -58,13 +59,14 @@ private func screen() -> Screen {
                     createText(backgroundColor: "#dd7631",text: "2"),
                     createText(backgroundColor: "#649d66",text: "3"),
                     ],widgetProperties: WidgetProperties(
-                        flex: Flex()  
+                        flex: Flex()
                             .flexDirection(.row)
                         )
                 )
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -97,6 +99,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -115,10 +118,11 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-### **Column \(Padrão\)** 
+### **Column \(Padrão\)**
 
 Os itens são organizados em forma de colunas e são posicionados de cima para baixo:
 
@@ -147,6 +151,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -165,6 +170,7 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -197,6 +203,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -215,9 +222,10 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
 {{% alert color="info" %}}
-Para saber o Flex Direction, acesse [**a documentação no Yoga Layout**](https://yogalayout.com/docs/flex-direction/)
+Para saber o Flex Direction, acesse [**a documentação no Yoga Layout**](https://yogalayout.com/pt/home/flex-direction/)
 {{% /alert %}}

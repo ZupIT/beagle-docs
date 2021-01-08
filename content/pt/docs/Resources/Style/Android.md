@@ -8,36 +8,35 @@ description: >-
 
 ---
 
-## Introdução 
+## Introdução
 
 Dentro da biblioteca do Beagle, existe a classe `DesignSystem` que pode ser usada para personalizar os componentes utilizados na sua aplicação.
 
-Esta classe serve para mapear os recursos locais de um aplicativo para podermos referenciá-los no [**BFF** ](/pt/docs/key-concepts#backend-for-frontend)ao construir uma tela [**Server-Driven**](/pt/docs/key-concepts#server-driven-ui).
+Esta classe serve para mapear os recursos locais de um aplicativo para podermos referenciá-los no [**BFF** ](/pt/home/key-concepts#backend-for-frontend)ao construir uma tela [**Server-Driven**](/pt/home/key-concepts#server-driven-ui).
 
-Além de imagens, o [**Design System**](/pt/docs/key-concepts#design-system) do Beagle pode personalizar: 
+Além de imagens, o [**Design System**](/pt/home/key-concepts#design-system) do Beagle pode personalizar:
 
-* A aparência dos textos;
-* O estilo dos componentes de input;
-* O estilo dos botões;
-* O estilo das toolbars e
-* Das tabViews. 
+- A aparência dos textos;
+- O estilo dos componentes de input;
+- O estilo dos botões;
+- O estilo das toolbars e
+- Das tabViews.
 
 ## Atributos customizáveis
 
 {{% alert color="info" %}}
 Para o Beagle ser capaz de aplicar os estilos customizados aos componentes, quando forem declarados na aplicação seus **pais devem se referir a cada familia correspondente**. Ou seja, para customizar os componentes:
 
-* `Text`, seu estilo deve estender de **`Widget.AppCompat.TextView`**
-* `TextInput`, seu estilo deve estender de **`Widget.AppCompat.EditText`**
-* `Button`, seu estilo deve estender de **`Widget.AppCompat.Button`**
-* `Toolbar`, seu estilo deve estender de **`Widget.AppCompat.Toolbar`**
-* `TabView`, seu estilo deve estender de **`Widget.Design.TabLayout`**
-{{% /alert %}}
+- `Text`, seu estilo deve estender de **`Widget.AppCompat.TextView`**
+- `TextInput`, seu estilo deve estender de **`Widget.AppCompat.EditText`**
+- `Button`, seu estilo deve estender de **`Widget.AppCompat.Button`**
+- `Toolbar`, seu estilo deve estender de **`Widget.AppCompat.Toolbar`**
+- `TabView`, seu estilo deve estender de **`Widget.Design.TabLayout`**
+  {{% /alert %}}
 
 ### Text
 
-Os textos no Beagle Android são **totalmente customizáveis**. Para realizar qualquer mudança, basta seguir o padrão abaixo:  
-
+Os textos no Beagle Android são **totalmente customizáveis**. Para realizar qualquer mudança, basta seguir o padrão abaixo:
 
 ```markup
 <!-- Custom style for textual components. -->
@@ -48,11 +47,9 @@ Os textos no Beagle Android são **totalmente customizáveis**. Para realizar qu
     </style>
 ```
 
-
 ### TextInput
 
-Os componentes de input no Beagle Android também são **totalmente customizáveis**. Para realizar qualquer mudança, basta seguir o padrão abaixo:  
-
+Os componentes de input no Beagle Android também são **totalmente customizáveis**. Para realizar qualquer mudança, basta seguir o padrão abaixo:
 
 ```markup
 <!-- Custom style for textual components. -->
@@ -62,11 +59,9 @@ Os componentes de input no Beagle Android também são **totalmente customizáve
     </style>
 ```
 
-
 ### Button
 
-Assim como os textos e inputs, os botões no Beagle Android são **totalmente customizáveis**. Para realizar qualquer mudança, basta seguir o padrão abaixo: 
-
+Assim como os textos e inputs, os botões no Beagle Android são **totalmente customizáveis**. Para realizar qualquer mudança, basta seguir o padrão abaixo:
 
 ```markup
 <!-- Custom style for Button components. -->
@@ -78,18 +73,16 @@ Assim como os textos e inputs, os botões no Beagle Android são **totalmente cu
     </style>
 ```
 
-
 ### Toolbar
 
-Dentro da biblioteca Beagle no Android, a barra de ferramentas faz parte da [**classe NavigationBar**.](/pt/docs/api/screen/navigation-bar) Para que ela funcione corretamente no [**BeagleActivity**](/pt/docs/get-started/creating-a-project-from-scratch/case-android#passo-4-criar-o-appbeagleactivity), você precisar informar ao Beagle qual barra irá utilizar na sua aplicação. 
+Dentro da biblioteca Beagle no Android, a barra de ferramentas faz parte da [**classe NavigationBar**.](/pt/home/api/screen/navigation-bar) Para que ela funcione corretamente no [**BeagleActivity**](/pt/home/get-started/creating-a-project-from-scratch/case-android#passo-4-criar-o-appbeagleactivity), você precisar informar ao Beagle qual barra irá utilizar na sua aplicação.
 
-A customização da barra pode ser feita no momento em que ela é passada para o Beagle. A Toolbar, além dos atributos já mencionados, possui outros quatro que são exclusivos: 
+A customização da barra pode ser feita no momento em que ela é passada para o Beagle. A Toolbar, além dos atributos já mencionados, possui outros quatro que são exclusivos:
 
 1. **backgroundColor:** define a cor de fundo da Barra de Ferramentas.
-2. **navigationIcon**: recebe um `drawable` e o atribui ao ícone de navegação da barra de ferramentas. 
+2. **navigationIcon**: recebe um `drawable` e o atribui ao ícone de navegação da barra de ferramentas.
 3. **titleTextAppearance**: recebe um estilo de texto para personalizar o título da barra de ferramentas.
 4. **centerTitle**: quando ativado, centraliza o título na barra de ferramentas.
-
 
 ```markup
 <!-- Custom style for Toolbar components. -->
@@ -99,14 +92,13 @@ A customização da barra pode ser feita no momento em que ela é passada para o
         <item name="titleTextAppearance">@style/CustomTitleToolbar</item>
         <item name="centerTitle">true</item>
     </style>
-    
+
     <style name="CustomTitleToolbar" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 ```
-
 
 ### TabView
 
@@ -117,7 +109,6 @@ O componente TabView no Beagle representa o `TabLayout` do Android e toda a sua 
 3. **tabBackground**: recebe um `drawable` e atribuí-lo ao plano de fundo do TabView.
 4. **tabIndicatorColor**: atribui uma cor ao indicador de seleção de uma aba.
 5. **tabIconTint**: recebe um `drawable` para definir as cores dos ícones, sendo selecionados ou não.
-
 
 ```markup
 <!-- Custom style for TabLayout components. -->
@@ -130,9 +121,7 @@ O componente TabView no Beagle representa o `TabLayout` do Android e toda a sua 
     </style>
 ```
 
-
-Para gerenciar as abas selecionadas, é recomendado o uso de um seletor para o atributo`tabIconTint`. Como no exemplo abaixo: 
-
+Para gerenciar as abas selecionadas, é recomendado o uso de um seletor para o atributo`tabIconTint`. Como no exemplo abaixo:
 
 ```markup
 <selector xmlns:android="http://schemas.android.com/apk/res/android">

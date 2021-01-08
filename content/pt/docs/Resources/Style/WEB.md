@@ -10,18 +10,18 @@ description: >-
 
 ## Introdução
 
-É possível realizar duas principais maneiras de estilização com Beagle para Web. São elas: 
+É possível realizar duas principais maneiras de estilização com Beagle para Web. São elas:
 
 1. [**Adição de classes de estilo** ](#adicionando-classes-de-estilo)
 2. [**Estilização de componentes via JSON**](#estilizando-componentes-via-json)
 
-Abaixo, você encontra a explicação detalhada para cada uma delas. 
+Abaixo, você encontra a explicação detalhada para cada uma delas.
 
-## Adicionando classes de estilo 
+## Adicionando classes de estilo
 
 ### Adicionar propriedade de estilo ao JSON
 
-Para fazer essa mudança, você deve adicionar, em seu arquivo JSON, a propriedade `styleId` com o nome da classe de estilo que você criou em seu componente angular. 
+Para fazer essa mudança, você deve adicionar, em seu arquivo JSON, a propriedade `styleId` com o nome da classe de estilo que você criou em seu componente angular.
 
 No exemplo abaixo, você vê como foi feita a adição para uma classe hipotética com nome 'card'.
 
@@ -44,9 +44,9 @@ No Angular, há duas formas de adicionar a classe que recebemos da propriedade `
 
 #### 1. Pelo ViewEncapsulation
 
-Abra o arquivo do seu componente angular e, logo abaixo da propriedade `styleUrls` do decorator @Component, adicione o enum ViewEncapsulation.none. 
+Abra o arquivo do seu componente angular e, logo abaixo da propriedade `styleUrls` do decorator @Component, adicione o enum ViewEncapsulation.none.
 
-Veja como funciona no exemplo abaixo: 
+Veja como funciona no exemplo abaixo:
 
 ```javascript
 @Component({
@@ -67,7 +67,7 @@ npm run serve
 yarn serve
 ```
 
-Depois que você adicionar o enum None à propriedade encapsulation do @Component\(\), é necessário fazer com que ela seja utilizada. Veja como na imagem abaixo: 
+Depois que você adicionar o enum None à propriedade encapsulation do @Component\(\), é necessário fazer com que ela seja utilizada. Veja como na imagem abaixo:
 
 ![](/image%20%2812%29.png)
 
@@ -77,9 +77,9 @@ Para entender mais sobre o **ViewEncapsulation**, acesse a [**documentação do 
 
 #### 2. Pela propriedade StyleId
 
-Outra maneira de você adicionar a classe é mantendo a propriedade encapsulation como nativo. Para isso, é só abrir o arquivo do seu componente Angular e adicionar um novo @Input, no caso, o styleId. 
+Outra maneira de você adicionar a classe é mantendo a propriedade encapsulation como nativo. Para isso, é só abrir o arquivo do seu componente Angular e adicionar um novo @Input, no caso, o styleId.
 
-Veja no exemplo a seguir: 
+Veja no exemplo a seguir:
 
 ```javascript
 export class CardComponent implements OnInit {
@@ -96,10 +96,10 @@ Uma vez feito isso, este Input está com a referência do nome da classe que voc
 
 ```javascript
 <div class="{{styleId}}">
-    <div>
-        <h1>{{myCustomTitle}}</h1>
-        <h3>{{myCustomDescription}}</h3>
-    </div>
+  <div>
+    <h1>{{ myCustomTitle }}</h1>
+    <h3>{{ myCustomDescription }}</h3>
+  </div>
 </div>
 ```
 
@@ -119,16 +119,14 @@ Qualquer uma das formas que você usou para conectar sua classe de estilo ao com
 {{% tab name="React" %}}
 Para projetos React, você acessa a sua classe por meio da propriedade `styleId.`
 
-Importe seu arquivo de estilos no componente e você precisa atribuir o valor de `styleId`  ao `className` por meio das props.
+Importe seu arquivo de estilos no componente e você precisa atribuir o valor de `styleId` ao `className` por meio das props.
 
 ```javascript
-import React from 'react'
-import './custom-text.style.css'
+import React from "react";
+import "./custom-text.style.css";
 
-function CustomTextComponent(props){
-    return (
-        <p className={props.styleId}>{props.customText}</p>
-    )
+function CustomTextComponent(props) {
+  return <p className={props.styleId}>{props.customText}</p>;
 }
 
 export default CustomTextComponent;
@@ -139,12 +137,12 @@ Pronto, os elementos do seu componente já devem receber a classe definida no JS
 {{< /tabs >}}
 
 {{% alert color="info" %}}
-Vale reforçar que para definir a classe adicionada com valor de `styleId`, é fundamental que você tenha um **arquivo de estilo** dentro do seu projeto \(Ex: CSS, SASS, LESS\). 
+Vale reforçar que para definir a classe adicionada com valor de `styleId`, é fundamental que você tenha um **arquivo de estilo** dentro do seu projeto \(Ex: CSS, SASS, LESS\).
 {{% /alert %}}
 
 ## Estilizando componentes via JSON
 
-Mais uma possibilidade do Beagle Web é o de estilizar os seus componentes. Abaixo, você confere o que pode ser feito diretamente pelo JSON: 
+Mais uma possibilidade do Beagle Web é o de estilizar os seus componentes. Abaixo, você confere o que pode ser feito diretamente pelo JSON:
 
 ### Position
 
@@ -224,17 +222,17 @@ Você pode também mudar a margem e o espaçamento dos elementos na tela usando 
 ```
 
 {{% alert color="info" %}}
-Repare que, em todos os exemplos acima, as propriedades recebem os mapas de valores no formato  &lt;value, type&gt;. 
+Repare que, em todos os exemplos acima, as propriedades recebem os mapas de valores no formato &lt;value, type&gt;.
 
-No caso do Beagle, os valores disponíveis para type são:  
+No caso do Beagle, os valores disponíveis para type são:
 
-* REAL - Valor em pixel \('px'\)
-* PERCENT - Valor em porcentagem \(%\)
-{{% /alert %}}
+- REAL - Valor em pixel \('px'\)
+- PERCENT - Valor em porcentagem \(%\)
+  {{% /alert %}}
 
 ### Flex
 
-Por fim, você tem a possibilidade de adicionar propriedades no modelo de layout flexbox com a biblioteca do Beagle. 
+Por fim, você tem a possibilidade de adicionar propriedades no modelo de layout flexbox com a biblioteca do Beagle.
 
 ```text
 {
@@ -252,5 +250,5 @@ Por fim, você tem a possibilidade de adicionar propriedades no modelo de layout
 ```
 
 {{% alert color="info" %}}
-Além dessas funcionalidades, alguns componentes possuem propriedades específicas como mudança na cor do texto ou alinhamento. Conheça mais sobre os [**componentes do Beagle**](/pt/docs/api/components/)
+Além dessas funcionalidades, alguns componentes possuem propriedades específicas como mudança na cor do texto ou alinhamento. Conheça mais sobre os [**componentes do Beagle**](/pt/home/api/components/)
 {{% /alert %}}

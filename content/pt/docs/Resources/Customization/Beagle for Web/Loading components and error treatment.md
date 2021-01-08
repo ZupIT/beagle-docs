@@ -10,13 +10,13 @@ description: Veja como alterar os componentes padrões de erro e carregamento.
 
 A biblioteca do Beagle já possui por padrão um componente que é chamado quando ocorre o carregamento de uma tela. Se necessário, é possível trocá-lo por um customizado de acordo com a necessidade da sua aplicação.
 
-Para criar um componente loading, siga os passos abaixo: 
+Para criar um componente loading, siga os passos abaixo:
 
 {{< tabs id="T74" >}}
 {{% tab name="React" %}}
 No React:
 
-**Passo 1:** Crie um componente que será o substituto. 
+**Passo 1:** Crie um componente que será o substituto.
 
 Veja o exemplo:
 
@@ -45,12 +45,13 @@ export default createBeagleUIService<any>({
   }
 })
 ```
+
 {{% /tab %}}
 
 {{% tab name="Angular" %}}
 No Angular
 
-**Passo 1:** Crie um componente que será o substituto. 
+**Passo 1:** Crie um componente que será o substituto.
 
 Você pode usar o angular cli se preferir com o comando para gerar automaticamente o componente, veja:
 
@@ -103,22 +104,22 @@ export class Beagle { }
 ```
 
 {{% alert color="warning" %}}
-Os arquivos `beagle.module.ts` e `beagle-components.module.ts` são gerados automaticamente pela biblioteca no angular. Se você não encontrou [**verifique sua instalação**](/pt/docs/get-started/installing-beagle/)
+Os arquivos `beagle.module.ts` e `beagle-components.module.ts` são gerados automaticamente pela biblioteca no angular. Se você não encontrou [**verifique sua instalação**](/pt/home/get-started/installing-beagle/)
 {{% /alert %}}
 {{% /tab %}}
 {{< /tabs >}}
 
 ## Error Component
 
-O componente de erro padrão do Beagle é chamado quando ocorrem erros de conexão como, por exemplo,  um caminho para o servidor está inacessível. 
+O componente de erro padrão do Beagle é chamado quando ocorrem erros de conexão como, por exemplo, um caminho para o servidor está inacessível.
 
 Para este componente a biblioteca expõe uma interface chamada `ErrorComponentParams`, por meio dela você tem acesso a lista de erros e a um método retry, responsável por refazer a requisição para o servidor.
 
 ### ErrorComponentParams
 
-| Atributo | Tipo | Definição |
-| :--- | :--- | :--- |
-| retry | Método | Refaz a requisição para o servidor |
+| Atributo | Tipo   | Definição                          |
+| :------- | :----- | :--------------------------------- |
+| retry    | Método | Refaz a requisição para o servidor |
 
 Usando essa interface você pode criar o componente, veja o exemplo de acordo com cada framework:
 
@@ -159,6 +160,7 @@ export default createBeagleUIService<any>({
   }
 })
 ```
+
 {{% /tab %}}
 
 {{% tab name="Angular" %}}
@@ -168,7 +170,7 @@ No Angular, crie primeiro um componente, se você preferir pode usar o angular c
 ng g component components/custom-error
 ```
 
-Abra o arquivo `controller` do componente que acabou de ser criado e adicione a interface `ErrorComponentParams`.  A interface nos da acesso a dois `@Inputs` errors e retry que são respectivamente a lista de erros e o método para refazer a requisição:
+Abra o arquivo `controller` do componente que acabou de ser criado e adicione a interface `ErrorComponentParams`. A interface nos da acesso a dois `@Inputs` errors e retry que são respectivamente a lista de erros e o método para refazer a requisição:
 
 ```text
 import { Component, Input } from '@angular/core';
@@ -233,7 +235,7 @@ export class Beagle { }
 ```
 
 {{% alert color="warning" %}}
-Os arquivos `beagle.module.ts` e `beagle-components.module.ts` são gerados automaticamente pela biblioteca no angular. Se você não os encontrou [**verifique sua instalação**](/pt/docs/get-started/installing-beagle/)
+Os arquivos `beagle.module.ts` e `beagle-components.module.ts` são gerados automaticamente pela biblioteca no angular. Se você não os encontrou [**verifique sua instalação**](/pt/home/get-started/installing-beagle/)
 {{% /alert %}}
 {{% /tab %}}
 {{< /tabs >}}

@@ -15,7 +15,7 @@ RootView está presente como atributo nas interfaces ViewConvertable e Action.
 
 ```kotlin
 interface RootView {
-    
+
     fun getContext(): Context
 
     fun getLifecycleOwner(): LifecycleOwner
@@ -60,7 +60,7 @@ fun getParentId(): Int
 
 ## ActivityRootView
 
-A classe ActivityRootView é responsavel por guardar a referência da Activity da qual um metodo [**loadView**](/pt/docs/tutorials/adding-beagle-to-a-part-of-a-native-screen/adding-a-beagle-server-driven-component/) é chamado.
+A classe ActivityRootView é responsavel por guardar a referência da Activity da qual um metodo [**loadView**](/pt/home/tutorials/adding-beagle-to-a-part-of-a-native-screen/adding-a-beagle-server-driven-component/) é chamado.
 
 ```kotlin
 class ActivityRootView(
@@ -78,15 +78,14 @@ class ActivityRootView(
 }
 ```
 
-| **Atributo** | **Tipo** | **Obrigatório** | **Definição** |
-| :--- | :--- | :---: | :--- |
-| activity | AppCompatActivity | ✓ | Recebe a instância de uma activity |
-| parentId | Int | ✓ | Id view pai. |
-
+| **Atributo** | **Tipo**          | **Obrigatório** | **Definição**                      |
+| :----------- | :---------------- | :-------------: | :--------------------------------- |
+| activity     | AppCompatActivity |        ✓        | Recebe a instância de uma activity |
+| parentId     | Int               |        ✓        | Id view pai.                       |
 
 ## FragmentRootView
 
-A classe FragmentRootView é responsavel por guardar a referência do Fragment do qual um metodo [**loadView**](/pt/docs/tutorials/adding-beagle-to-a-part-of-a-native-screen/adding-a-beagle-server-driven-component/) é chamado.
+A classe FragmentRootView é responsavel por guardar a referência do Fragment do qual um metodo [**loadView**](/pt/home/tutorials/adding-beagle-to-a-part-of-a-native-screen/adding-a-beagle-server-driven-component/) é chamado.
 
 ```kotlin
 class FragmentRootView(
@@ -104,7 +103,7 @@ class FragmentRootView(
 }
 ```
 
-| **Atributo** | **Tipo** | **Obrigatório** | **Definição** |
-| :--- | :--- | :---: | :--- |
-| fragment | Fragment | ✓ | Recebe a instância de um fragment |
-| parentId | Int | ✓ | Id view pai. |
+| **Atributo** | **Tipo** | **Obrigatório** | **Definição**                     |
+| :----------- | :------- | :-------------: | :-------------------------------- |
+| fragment     | Fragment |        ✓        | Recebe a instância de um fragment |
+| parentId     | Int      |        ✓        | Id view pai.                      |

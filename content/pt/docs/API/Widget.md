@@ -8,14 +8,14 @@ description: Descrição dos componentes do Widget e seus atributos
 
 ## O que é?
 
-O Widget é uma classe abstrata que permite que um componente visual seja referenciado no Beagle. Quando um componente visual se estende do `widget`, ele herda 3 atributos que habilitam algum atributos e funcionalidades nos elementos visualizados. 
+O Widget é uma classe abstrata que permite que um componente visual seja referenciado no Beagle. Quando um componente visual se estende do `widget`, ele herda 3 atributos que habilitam algum atributos e funcionalidades nos elementos visualizados.
 
 {{% alert color="warning" %}}
 É importante lembrar que, por default, essas estruturas são colocadas como nulas.
 {{% /alert %}}
 
 ```kotlin
-abstract class Widget : StyleComponent, 
+abstract class Widget : StyleComponent,
                         AccessibilityComponent,
                         IdentifierComponent {
 
@@ -25,13 +25,13 @@ abstract class Widget : StyleComponent,
 }
 ```
 
-Abaixo listamos todos os atributos que um widget pode receber. Mas se quiser um exemplo de uso e como criar um widget, veja a seção [**posicionamento de componentes.**](/pt/docs/resources/components-positioning/)
+Abaixo listamos todos os atributos que um widget pode receber. Mas se quiser um exemplo de uso e como criar um widget, veja a seção [**posicionamento de componentes.**](/pt/home/resources/components-positioning/)
 
 ## Quais seus atributos?
 
-### Atributos do Widget 
+### Atributos do Widget
 
-Os principais atributos desta classe são: 
+Os principais atributos desta classe são:
 
 <table>
   <thead>
@@ -70,9 +70,9 @@ Os principais atributos desta classe são:
   </tbody>
 </table>
 
-### Atributos do Style 
+### Atributos do Style
 
-Os principais atributos são: 
+Os principais atributos são:
 
 <table>
   <thead>
@@ -182,12 +182,12 @@ Os principais atributos são:
 
 ### Atributos do Accessibility
 
-Os principais atributos são: 
+Os principais atributos são:
 
-| Atributos | Tipo | Obrigatório | Definição |
-| :--- | :--- | :--- | :--- |
-| **accessible** | Boolean |   | Habilita informações para acessibilidade |
-| **accessibilityLabel**  | String |   | Define uma mensagem para acessibilidade |
+| Atributos              | Tipo    | Obrigatório | Definição                                |
+| :--------------------- | :------ | :---------- | :--------------------------------------- |
+| **accessible**         | Boolean |             | Habilita informações para acessibilidade |
+| **accessibilityLabel** | String  |             | Define uma mensagem para acessibilidade  |
 
 ## Como usar?
 
@@ -195,6 +195,7 @@ No exemplo abaixo, utilizamos um Container para exemplificar os atributos de um 
 
 {{< tabs id="T177" >}}
 {{% tab name="JSON" %}}
+
 <!-- json-playground:widget.json
 {
       "_beagleComponent_" : "beagle:container",
@@ -251,17 +252,19 @@ No exemplo abaixo, utilizamos um Container para exemplificar os atributos de um 
       }
     }
 -->
+
 {{% playground file="widget.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
+
 ```kotlin
 Container(
     listOf(
         Text("I'am a Server-Driven text"),
         Text("I'am another Server-Driven text")
     )
-    
+
 ).applyStyle(
     Style(backgroundColor = "#ff8100",
         cornerRadius = CornerRadius(25.0),
@@ -272,13 +275,14 @@ Container(
         flex = Flex(FlexDirection.ROW),
         positionType = PositionType.RELATIVE,
         display = Display.FLEX)
-        
+
 ).applyAccessibility(accessibility = Accessibility(
     accessible = true,
     accessibilityLabel = "I have acessibility")
-    
+
 ).setId("WidgetID")
 
 ```
+
 {{% /tab %}}
 {{< /tabs >}}

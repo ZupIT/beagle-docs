@@ -10,9 +10,9 @@ description: >-
 
 ## Flex
 
-Esta propriedade define **como os itens do container serão preenchidos** de acordo com o espaço disponível ao longo do eixo principal. 
+Esta propriedade define **como os itens do container serão preenchidos** de acordo com o espaço disponível ao longo do eixo principal.
 
-Para isso, o Flex estabelece os valores aplicados na propriedade de cada filho. Assim, ele pega os valores  de todos os elementos filhos e fazem o seguinte cálculo: somam e depois divide por cada valor  da propriedade flex aplicado no filho. O resultado deve ser o espaço preenchido do filho no container.
+Para isso, o Flex estabelece os valores aplicados na propriedade de cada filho. Assim, ele pega os valores de todos os elementos filhos e fazem o seguinte cálculo: somam e depois divide por cada valor da propriedade flex aplicado no filho. O resultado deve ser o espaço preenchido do filho no container.
 
 ![](/captura-de-tela-2020-06-05-a-s-16.53.38.png)
 
@@ -38,6 +38,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
    private func screen() -> Screen {
         return
@@ -59,7 +60,8 @@ private fun screen() :Widget{
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-**Para saber mais sobre Flex, acesse a documentação do [**Yoga Layout**](https://yogalayout.com/docs/flex/).**
+**Para saber mais sobre Flex, acesse a documentação do [**Yoga Layout**](https://yogalayout.com/pt/home/flex/).**

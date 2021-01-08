@@ -14,7 +14,7 @@ Esta propriedade define a proporção que um item deve crescer, quando necessár
 
 ### **Exemplo 1**
 
-O grow  foi aplicado com valor 0, e o container ficou do mesmo tamanho do conteúdo: 
+O grow foi aplicado com valor 0, e o container ficou do mesmo tamanho do conteúdo:
 
 ![Exemplo 1](https://lh6.googleusercontent.com/KPNe0Hnad094L8QgkRrDFcAtvAoBSeVvrA3ihurk6vVzGaQyJxSZ6dJtsLCe9gabKeIFEn1eB-465OK_wu7LYk7I7MKKBKEPwaCs4ZoaQDXdxjc2d80VrKBf69dfYX2nOWm7Pi2C)
 
@@ -42,6 +42,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
  private func screen() -> Screen {
         return
@@ -60,6 +61,7 @@ private fun screen() :Widget{
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -93,6 +95,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -111,9 +114,10 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
 {{% alert color="info" %}}
-Para saber o Grow, acesse [**a documentação no Yoga Layout**](https://yogalayout.com/docs/flex/)
+Para saber o Grow, acesse [**a documentação no Yoga Layout**](https://yogalayout.com/pt/home/flex/)
 {{% /alert %}}

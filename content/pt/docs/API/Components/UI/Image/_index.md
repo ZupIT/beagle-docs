@@ -8,19 +8,20 @@ description: Descrição do componente Image e seus atributos
 
 ## O que é?
 
-O widget de Imagem define uma imagem nativa usando informações server-driven recebidas por meio do Beagle.  
+O widget de Imagem define uma imagem nativa usando informações server-driven recebidas por meio do Beagle.
 
-A sua estrutura é representada como mostrado abaixo: 
+A sua estrutura é representada como mostrado abaixo:
 
-| **Atributo** | **Tipo** | Obrigatório | **Definição** |
-| :--- | :--- | :---: | :--- |
-| path | [**ImagePath**](/pt/docs/api/components/ui/image/imagepath) ou [**Binding**](/pt/docs/api/context#binding) | ✓ | Referência de uma imagem local ou url de uma imagem remota a ser exibida. |
-| mode | [ImageContentMode](/pt/docs/api/components/ui/image/imagecontentmode) |   | É responsável por controlar como a imagem será controlada internamente. |
+| **Atributo** | **Tipo**                                                                                                   | Obrigatório | **Definição**                                                             |
+| :----------- | :--------------------------------------------------------------------------------------------------------- | :---------: | :------------------------------------------------------------------------ |
+| path         | [**ImagePath**](/pt/home/api/components/ui/image/imagepath) ou [**Binding**](/pt/home/api/context#binding) |      ✓      | Referência de uma imagem local ou url de uma imagem remota a ser exibida. |
+| mode         | [ImageContentMode](/pt/home/api/components/ui/image/imagecontentmode)                                      |             | É responsável por controlar como a imagem será controlada internamente.   |
 
 ## Como usar?
 
 {{< tabs id="T134" >}}
 {{% tab name="JSON" %}}
+
 <!-- json-playground:imagePath.json
 {
    "_beagleComponent_":"beagle:image",
@@ -35,10 +36,12 @@ A sua estrutura é representada como mostrado abaixo:
    "mode":"CENTER"
 }
 -->
+
 {{% playground file="imagePath.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
+
 ```kotlin
 Image(
     path = ImagePath.Remote(
@@ -48,5 +51,6 @@ Image(
     mode = ImageContentMode.CENTER
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}

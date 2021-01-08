@@ -31,14 +31,14 @@ class AppDeepLinkHandler : DeepLinkHandler {
 }
 ```
 
-No método *getDeepLinkIntent*, você consegue configurar a navegação de telas de fluxos server driven ui para suas telas nativas, fazendo com que e o beagle reconheça a sua regra.
+No método _getDeepLinkIntent_, você consegue configurar a navegação de telas de fluxos server driven ui para suas telas nativas, fazendo com que e o beagle reconheça a sua regra.
 
-| **Atributo** | **Tipo** | **Definição** |
-| :--- | :--- | :---: |
-| rootView | RootView  | RootView tem a referência da activity ou fragment |
-| path | String | Parâmetro de rota que pode ser definido via Navigate.OpenNativeRoute(route: "navigate.myview") |
-| data | Map<String, String>? | Mapa de parâmetros que pode ser definido via OpenNativeRoute(route = "navigate.myview" , data = mapOf("param1" to "paramValue")) |
-| shouldResetApplication | Boolean | Abre uma tela com a rota informada a partir de um novo fluxo e limpa a pilha de telas de todo o aplicativo. |
+| **Atributo**           | **Tipo**             |                                                          **Definição**                                                           |
+| :--------------------- | :------------------- | :------------------------------------------------------------------------------------------------------------------------------: |
+| rootView               | RootView             |                                        RootView tem a referência da activity ou fragment                                         |
+| path                   | String               |                  Parâmetro de rota que pode ser definido via Navigate.OpenNativeRoute(route: "navigate.myview")                  |
+| data                   | Map<String, String>? | Mapa de parâmetros que pode ser definido via OpenNativeRoute(route = "navigate.myview" , data = mapOf("param1" to "paramValue")) |
+| shouldResetApplication | Boolean              |           Abre uma tela com a rota informada a partir de um novo fluxo e limpa a pilha de telas de todo o aplicativo.            |
 
 Feito isso, é necessário modificar o arquivo de manifesto do Android:
 
@@ -57,7 +57,7 @@ Feito isso, é necessário modificar o arquivo de manifesto do Android:
 </activity>
 ```
 
-Agora você só precisa chamar a [**Action Navigate**](/pt/docs/api/actions/navigate/) com o método [**OpenNativeRoute**](/pt/docs/api/actions/navigate/opennativeroute) como o exemplo abaixo:
+Agora você só precisa chamar a [**Action Navigate**](/pt/home/api/actions/navigate/) com o método [**OpenNativeRoute**](/pt/home/api/actions/navigate/opennativeroute) como o exemplo abaixo:
 
 ```kotlin
 //Widget used to navigate to a native screen

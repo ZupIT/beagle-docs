@@ -10,11 +10,11 @@ description: Descrição da ação OpenExternalURL e seus atributos
 
 Abre o navegador selecionado pelo usuário com a url informada.
 
-A sua estrutura é representada como mostrado abaixo: 
+A sua estrutura é representada como mostrado abaixo:
 
-| **Atributo** | **Tipo** | Obrigatório | **Definição** |
-| :--- | :--- | :---: | :--- |
-| url | String | ✓ | URL enviada para o navegador. |
+| **Atributo** | **Tipo** | Obrigatório | **Definição**                 |
+| :----------- | :------- | :---------: | :---------------------------- |
+| url          | String   |      ✓      | URL enviada para o navegador. |
 
 ## Como usar?
 
@@ -22,6 +22,7 @@ No exemplo abaixo, você pode ver um botão que, ao ser clicado, abre o navegado
 
 {{< tabs id="T111" >}}
 {{% tab name="JSON" %}}
+
 <!-- json-playground:openExternalURL.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
@@ -30,26 +31,29 @@ No exemplo abaixo, você pode ver um botão que, ao ser clicado, abre o navegado
     "text" : "Click me!",
     "onPress" : [ {
       "_beagleAction_" : "beagle:openExternalURL",
-      "url" : "http://docs-beta.usebeagle.io/docs/api/actions/navigate/openexternalurl/"
+      "url" : "http://docs-beta.usebeagle.io/pt/home/api/actions/navigate/openexternalurl/"
     } ]
   }
 }
 -->
+
 {{% playground file="openExternalURL.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
+
 ```
 Screen(
     child = Button(
         text = "Click me!",
         onPress = listOf(
             Navigate.OpenExternalURL(
-                url = "http://docs-beta.usebeagle.io/docs/api/actions/navigate/openexternalurl/"
+                url = "http://docs-beta.usebeagle.io/pt/home/api/actions/navigate/openexternalurl/"
             )
         )
     )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}

@@ -10,12 +10,12 @@ description: >-
 
 ## Introdução
 
-Para customizar os comportamentos de carregamento e erro no Beagle iOS, você precisa criar seu próprio navigation controller. 
+Para customizar os comportamentos de carregamento e erro no Beagle iOS, você precisa criar seu próprio navigation controller.
 
 Ao cria-lo, você precisa seguir os seguintes passos:
 
 1. Extender sua controller a partir da`BeagleNavigationController`
-2. Alterar as dependências do Beagle para utilizá-lo. 
+2. Alterar as dependências do Beagle para utilizá-lo.
 
 {{% alert color="info" %}}
 O método `serverDrivenStateDidChange` deve ser sobrescrito para fazer a customização.
@@ -45,7 +45,7 @@ class MyAppNavigationController: BeagleNavigationController {
 ```bash
 let dependencies = BeagleDependencies()
 dependencies.navigation.registerNavigationController(
-    builder: MyAppNavigationController.init, 
+    builder: MyAppNavigationController.init,
     forId: "MyAppNavigationController")
 Beagle.dependencies = dependencies
 ```
@@ -53,12 +53,12 @@ Beagle.dependencies = dependencies
 É possível cadastrar mais de uma customização do `BeagleNavigationController`. Para escolher qual delas usar, o BFF precisa que você informe o `forId`.
 
 {{% alert color="info" %}}
-Faça a configuração do `navigationControllerType` com as demais configurações do Beagle para não sobrescrevê-las_._
+Faça a configuração do `navigationControllerType` com as demais configurações do Beagle para não sobrescrevê-las*.*
 {{% /alert %}}
 
 ### Configurando o Carregamento
 
-Por padrão, a implementação no Beagle sempre retorna uma interface com fundo preto semitransparente. Você pode ver isso por meio do `UIActivityIndicatorView`. 
+Por padrão, a implementação no Beagle sempre retorna uma interface com fundo preto semitransparente. Você pode ver isso por meio do `UIActivityIndicatorView`.
 
 Se você quiser apresentar um carregamento específico da sua aplicação, verifique o estado da tela \(`state`\) e reaja apropriadamente. Veja no exemplo a seguir:
 
@@ -87,7 +87,7 @@ class MyAppNavigationController: BeagleNavigationController {
 }
 ```
 
-Caso queira manter o estilo original de carregamento, basta executar a implementação padrão e seguir para o [**tratamento de erros**](/pt/docs/resources/customization/beagle-for-ios/loading-and-error-treatment).
+Caso queira manter o estilo original de carregamento, basta executar a implementação padrão e seguir para o [**tratamento de erros**](/pt/home/resources/customization/beagle-for-ios/loading-and-error-treatment).
 
 ```swift
 override func serverDrivenStateDidChange(
@@ -101,19 +101,19 @@ override func serverDrivenStateDidChange(
 
 ### Tratando os erros
 
-Quando ocorre algum erro na aplicação, o Beagle altera o estado da tela  \(`state`\) para `ServerDrivenState.Error`. Nesse caso, você deve verificar qual foi tipo do erro e fazer a tratativa quando necessário. 
+Quando ocorre algum erro na aplicação, o Beagle altera o estado da tela \(`state`\) para `ServerDrivenState.Error`. Nesse caso, você deve verificar qual foi tipo do erro e fazer a tratativa quando necessário.
 
 Os **possíveis erros** são:
 
-* `remoteScreen(Request.Error)`: A requisição para carregar uma tela remota falhou. Veja abaixo quando isso ocorre.
-* `lazyLoad(Request.Error)`: A requisição para carregar um [**componente Lazy**](/pt/docs/api/components/lazy) falhou. Veja abaixo quando isso ocorre.
-* `action(Swift.Error)`: A execução de uma [**Action**](/pt/docs/api/actions) falhou.
+- `remoteScreen(Request.Error)`: A requisição para carregar uma tela remota falhou. Veja abaixo quando isso ocorre.
+- `lazyLoad(Request.Error)`: A requisição para carregar um [**componente Lazy**](/pt/home/api/components/lazy) falhou. Veja abaixo quando isso ocorre.
+- `action(Swift.Error)`: A execução de uma [**Action**](/pt/home/api/actions) falhou.
 
 **Erros em uma requisição** \(`Request.Error`\):
 
-* `urlBuilderError`: A URL do recurso ou a [**baseURL**](/pt/docs/resources/customization/beagle-for-ios/beagles-dependencies#urlbuilder) é inválida.
-* `networkError`: Não foi possível estabelecer a conexão ou um erro foi retornado pelo BFF.
-* `decoding`: A resposta enviado pelo BFF é diferente do objeto esperado.
+- `urlBuilderError`: A URL do recurso ou a [**baseURL**](/pt/home/resources/customization/beagle-for-ios/beagles-dependencies#urlbuilder) é inválida.
+- `networkError`: Não foi possível estabelecer a conexão ou um erro foi retornado pelo BFF.
+- `decoding`: A resposta enviado pelo BFF é diferente do objeto esperado.
 
 {{% alert color="info" %}}
 O erro possui um bloco `retry` que permite executar novamente a ação que falhou.

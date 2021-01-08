@@ -8,13 +8,13 @@ description: >-
 
 ---
 
-## Margin 
+## Margin
 
 Margin aplica um espaçamento no elemento filho, e tem os seguintes atributos: **`all, bottom, end, horizontal, left, right, start, top, vertical`**
 
 ## Propriedades
 
-### **All**  
+### **All**
 
 Define um espaçamento em todos os lados do elemento:
 
@@ -46,6 +46,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
  private func screen() -> Screen {
         return
@@ -67,10 +68,11 @@ private fun screen() :Widget{
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-### **Bottom** 
+### **Bottom**
 
 Define um espaçamento na parte inferior do elemento:
 
@@ -102,6 +104,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
    private func screen() -> Screen {
         return
@@ -125,6 +128,7 @@ private fun screen() :Widget{
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -160,6 +164,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
  private func screen() -> Screen {
         return
@@ -183,6 +188,7 @@ private fun screen() :Widget{
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -218,6 +224,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
   private func screen() -> Screen {
         return
@@ -241,10 +248,11 @@ private fun screen() :Widget{
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-### **Top** 
+### **Top**
 
 Define um espaçamento na parte superior do elemento:
 
@@ -276,6 +284,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -299,6 +308,7 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -334,6 +344,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -357,6 +368,7 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -392,6 +404,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
  private func screen() -> Screen {
         return
@@ -415,9 +428,10 @@ private fun screen() :Widget{
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
 {{% alert color="info" %}}
-Para saber mais, acesse [**Margin**](https://yogalayout.com/docs/margins-paddings-borders)  ou uma [**seção completa na documentação do Yoga Layout.**](https://yogalayout.com/docs/margins-paddings-borders/)
+Para saber mais, acesse [**Margin**](https://yogalayout.com/pt/home/margins-paddings-borders) ou uma [**seção completa na documentação do Yoga Layout.**](https://yogalayout.com/pt/home/margins-paddings-borders/)
 {{% /alert %}}

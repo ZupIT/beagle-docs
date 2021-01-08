@@ -9,20 +9,20 @@ description: >-
 ---
 
 {{% alert color="danger" %}}
-Este componente foi descontinuado na versão 1.1.0 e será removido em uma versão futura. Use [**SimpleForm**](/pt/docs/api/components/forms/simple-form)  em seu lugar
+Este componente foi descontinuado na versão 1.1.0 e será removido em uma versão futura. Use [**SimpleForm**](/pt/home/api/components/forms/simple-form) em seu lugar
 {{% /alert %}}
 
 ## Introdução
 
-Um componente do tipo **`Validator`** é utilizado quando for necessário validar alguma informação em um formulário. Essa validação acontece através do método `isValid`,  que é chamado sempre que são executados um`FormSubmit` ou um `notifyChanges()`. 
+Um componente do tipo **`Validator`** é utilizado quando for necessário validar alguma informação em um formulário. Essa validação acontece através do método `isValid`, que é chamado sempre que são executados um`FormSubmit` ou um `notifyChanges()`.
 
 Além disso, esse **Validator** é listado no componente que recebe dados em um formulário, ao qual chamamos de`FormInput.`
 
 ## Contexto do validador
 
-No Beagle,  é possível usar o componente **Form** para capturar dados informados pelo usuário, validá-los e enviá-los ao [**BFF**](/pt/docs/key-concepts#backend-for-frontend). 
+No Beagle, é possível usar o componente **Form** para capturar dados informados pelo usuário, validá-los e enviá-los ao [**BFF**](/pt/home/key-concepts#backend-for-frontend).
 
-Essa validação pode tanto ocorrer quando o usuário ativa o FormSubmit e/ou quando o usuário notifica que o estado de seu `InputWidget(FormInput)` mudou, como por exemplo, quando ditamos um texto ou quando o campo perde o foco. 
+Essa validação pode tanto ocorrer quando o usuário ativa o FormSubmit e/ou quando o usuário notifica que o estado de seu `InputWidget(FormInput)` mudou, como por exemplo, quando ditamos um texto ou quando o campo perde o foco.
 
 O **Validator** recebe dois parâmetros genéricos e possui um único método `isValid` que retorna um valor booleano.
 
@@ -32,15 +32,15 @@ interface Validator<in I, in W> {
 }
 ```
 
-* **input:** Representa o valor que o `inputWidget` envia como informação \(data\) a ser validada.
-* **widget:**  Widget que referencia o `InputWidget` que enviou a informação \(data\).
+- **input:** Representa o valor que o `inputWidget` envia como informação \(data\) a ser validada.
+- **widget:** Widget que referencia o `InputWidget` que enviou a informação \(data\).
 
 ## Implementando um validador
 
 É possível implementar um validador quando, por exemplo, você tem um formulário que habilite o **FormSubmit** apenas nos casos em que o **FormInput** não estiver vazio. Quando isso acontece, o Form deve receber uma String com a entrada de dados e será validada se está vazia ou não.
 
-* A classe que validará a informação está anotada com um `@RegisterValidator`
-* Essa anotação registra esse validador no Beagle e o identifica pelo nome listado entre parênteses.
+- A classe que validará a informação está anotada com um `@RegisterValidator`
+- Essa anotação registra esse validador no Beagle e o identifica pelo nome listado entre parênteses.
 
 ```kotlin
 @RegisterValidator("text-is-not-blank")
@@ -51,7 +51,7 @@ class TextNotBlankValidator : Validator<String, ServerDrivenComponent> {
 }
 ```
 
-* Para enviar ao `InputWidget` essa validação, é necessário somente referenciar o nome dado na anotação acima `"text-is-not-blank"`no componente. 
+- Para enviar ao `InputWidget` essa validação, é necessário somente referenciar o nome dado na anotação acima `"text-is-not-blank"`no componente.
 
 Siga o exemplo abaixo:
 
@@ -64,7 +64,7 @@ FormInput(
 )
 ```
 
-Já no exemplo a seguir, a implementação de um `InputWidget`  irá executar o Validator chamando o método **`notifyChanges()`**.
+Já no exemplo a seguir, a implementação de um `InputWidget` irá executar o Validator chamando o método **`notifyChanges()`**.
 
 ```kotlin
 @RegisterWidget

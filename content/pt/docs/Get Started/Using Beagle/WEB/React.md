@@ -8,18 +8,17 @@ description: >-
 
 ---
 
-## **Configurações de uso** 
+## **Configurações de uso**
 
 Depois que você terminar a instalação, é preciso **configurar o Beagle para o uso no framework do React.** Para isso, basta realizar os seguintes passos:
 
 ### Passo 1: Criação do JSON de definição do layout
 
-Para uma melhor experiencia o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**](/pt/docs/get-started/installing-beagle/backend/), neste exemplo usaremos o JSON que está disponibilizado na URL http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/welcome:
+Para uma melhor experiencia o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**](/pt/home/get-started/installing-beagle/backend/), neste exemplo usaremos o JSON que está disponibilizado na URL http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/welcome:
 
 {{% alert color="info" %}}
-JSON utilizado como exemplo . 
+JSON utilizado como exemplo .
 {{% /alert %}}
-
 
 ```text
 {
@@ -53,7 +52,7 @@ O código acima cria um JSON com dois desses componentes: container e text.
 
 ### Passo 2: Configuração do Beagle Service
 
-Depois de criado o seu JSON, crie uma pasta no caminho `/src`com nome **beagle**. Dentro dela, adicione um novo arquivo com o nome `beagle-service.ts`. 
+Depois de criado o seu JSON, crie uma pasta no caminho `/src`com nome **beagle**. Dentro dela, adicione um novo arquivo com o nome `beagle-service.ts`.
 
 Feito isso, a sua estrutura deve estar parecida com a imagem a seguir:
 
@@ -69,8 +68,9 @@ export default createBeagleUIService({
   components: {}
 })
 ```
+
 {{% alert color="info" %}}
-**baseUrl:** URL base que fornece as visualizações (JSON) para o Beagle. 
+**baseUrl:** URL base que fornece as visualizações (JSON) para o Beagle.
 {{% /alert %}}
 
 {{% alert color="info" %}}
@@ -108,7 +108,7 @@ function App() {
 export default App;
 ```
 
-1. `<BeagleProvider>`: Responsável por prover para nossa aplicação o `beagle-service`  criado no passo anterior contendo as configurações iniciais. Este é especificado na propriedade `value`;
+1. `<BeagleProvider>`: Responsável por prover para nossa aplicação o `beagle-service` criado no passo anterior contendo as configurações iniciais. Este é especificado na propriedade `value`;
 2. `<BeagleRemoteView>`: Responsável por renderizar o layout definido pelo JSON especificado pela propriedade `route`.
 
 {{% alert color="info" %}}
@@ -123,7 +123,7 @@ Note aqui que adicionamos **' /welcome '** pois esse valor será associado ao `b
 
 ### Testando o projeto
 
-Para testarmos se a nossa configuração funcionou, você precisa executar um dos comandos abaixo para inicializar a aplicação: 
+Para testarmos se a nossa configuração funcionou, você precisa executar um dos comandos abaixo para inicializar a aplicação:
 
 ```text
 yarn start

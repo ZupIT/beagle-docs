@@ -12,14 +12,15 @@ Rota de navegação para conteúdo local.
 
 A sua estrutura é representada como mostrado abaixo:
 
-| **Atributo** | **Tipo** | Obrigatório | **Definição** |
-| :--- | :--- | :---: | :--- |
-| screen | [Screen](/pt/docs/api/screen/) | ✓  | Tela a ser carregada |
+| **Atributo** | **Tipo**                       | Obrigatório | **Definição**        |
+| :----------- | :----------------------------- | :---------: | :------------------- |
+| screen       | [Screen](/pt/home/api/screen/) |      ✓      | Tela a ser carregada |
 
 ## Como usar?
 
 {{< tabs id="T126" >}}
 {{% tab name="JSON" %}}
+
 <!-- json-playground:local.json
 {
   "_beagleComponent_": "beagle:button",
@@ -40,10 +41,12 @@ A sua estrutura é representada como mostrado abaixo:
   ]
 }
 -->
+
 {{% playground file="local.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
+
 ```
 Button(
     onPress = listOf(
@@ -57,5 +60,6 @@ Button(
     text = "Click me!"
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}

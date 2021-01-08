@@ -7,12 +7,12 @@ description: Você encontra aqui a descrição do Form e seus atributos.
 ---
 
 {{% alert color="warning" %}}
-Esse componente foi **depreciado**! É recomendado usar o [**Simple Form**](/pt/docs/api/components/forms/simple-form).
+Esse componente foi **depreciado**! É recomendado usar o [**Simple Form**](/pt/home/api/components/forms/simple-form).
 {{% /alert %}}
 
 O componente representa uma maneira de compor entradas do usuário e enviar esses valores ao seu backend.
 
-A sua estrutura é representada como mostrado abaixo: 
+A sua estrutura é representada como mostrado abaixo:
 
 <table>
   <thead>

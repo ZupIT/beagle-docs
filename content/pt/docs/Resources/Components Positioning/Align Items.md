@@ -12,7 +12,7 @@ description: >-
 
 Essa propriedade define como os itens são distribuídos ao longo do eixo transversal do container e tem os seguintes atributos: **`flex-start, flex-end, center, baseline e stretch.`**
 
-### **Stretch** 
+### **Stretch**
 
 Os itens serão expandidos para preencher toda a dimensão do eixo transversal \(altura ou largura\) da tela:
 
@@ -20,6 +20,7 @@ Os itens serão expandidos para preencher toda a dimensão do eixo transversal \
 
 {{< tabs id="T32" >}}
 {{% tab name="Kotlin" %}}
+
 ```kotlin
  private fun screen() :Widget{
         return Container(
@@ -37,9 +38,11 @@ Os itens serão expandidos para preencher toda a dimensão do eixo transversal \
         )
     }
 ```
+
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -60,6 +63,7 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -71,6 +75,7 @@ Os itens são deslocadas para o início do eixo transversal:
 
 {{< tabs id="T33" >}}
 {{% tab name="Kotlin" %}}
+
 ```kotlin
  private fun screen() :Widget{
         return Container(
@@ -112,9 +117,11 @@ Os itens são deslocadas para o início do eixo transversal:
         )
     }
 ```
+
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -127,7 +134,7 @@ private func screen() -> Screen {
                     createText(backgroundColor: "#dd7631",text: "2").applyFlex(
                         Flex().size(Size().width(200).height(100))),
                     createText(backgroundColor: "#649d66",text: "3").applyFlex(
-                        Flex().size(Size().width(150).height(100))),                    
+                        Flex().size(Size().width(150).height(100))),
                     ],widgetProperties: WidgetProperties(
                         flex: Flex()
                             .grow(1)
@@ -138,10 +145,11 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-###  **Flex End**
+### **Flex End**
 
 Os itens são deslocadas para o final do eixo transversal:
 
@@ -149,6 +157,7 @@ Os itens são deslocadas para o final do eixo transversal:
 
 {{< tabs id="T34" >}}
 {{% tab name="Kotlin" %}}
+
 ```kotlin
  private fun screen() :Widget{
         return Container(
@@ -190,9 +199,11 @@ Os itens são deslocadas para o final do eixo transversal:
         )
     }
 ```
+
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -205,7 +216,7 @@ private func screen() -> Screen {
                     createText(backgroundColor: "#dd7631",text: "2").applyFlex(
                         Flex().size(Size().width(200).height(100))),
                     createText(backgroundColor: "#649d66",text: "3").applyFlex(
-                        Flex().size(Size().width(150).height(100))),                   
+                        Flex().size(Size().width(150).height(100))),
                      ],widgetProperties: WidgetProperties(
                          flex: Flex()
                             .grow(1)
@@ -216,6 +227,7 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -273,6 +285,7 @@ Os itens são centralizados no eixo transversal:
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
  private func screen() -> Screen {
         return
@@ -285,7 +298,7 @@ Os itens são centralizados no eixo transversal:
                     createText(backgroundColor: "#dd7631",text: "2").applyFlex(
                         Flex().size(Size().width(200).height(100))),
                     createText(backgroundColor: "#649d66",text: "3").applyFlex(
-                        Flex().size(Size().width(150).height(100))),                    
+                        Flex().size(Size().width(150).height(100))),
                     ],widgetProperties: WidgetProperties(
                         flex: Flex()
                             .grow(1)
@@ -296,6 +309,7 @@ Os itens são centralizados no eixo transversal:
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -353,6 +367,7 @@ Os itens são alinhados a partir da base da primeira linha de texto de cada um:
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
  private func screen() -> Screen {
         return
@@ -377,9 +392,10 @@ Os itens são alinhados a partir da base da primeira linha de texto de cada um:
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
 {{% alert color="info" %}}
-Para saber mais sobre o Align Items, acesse [**a documentação no Yoga Layout.**](https://yogalayout.com/docs/align-items/)
+Para saber mais sobre o Align Items, acesse [**a documentação no Yoga Layout.**](https://yogalayout.com/pt/home/align-items/)
 {{% /alert %}}

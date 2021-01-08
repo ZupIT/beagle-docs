@@ -8,9 +8,9 @@ description: >-
 
 ---
 
-## Configurações de uso 
+## Configurações de uso
 
-Quando você finalizar a [**instalação do Beagle**](/pt/docs/get-started/installing-beagle/backend), seu BFF estará com a configuração padrão de uso.
+Quando você finalizar a [**instalação do Beagle**](/pt/home/get-started/installing-beagle/backend), seu BFF estará com a configuração padrão de uso.
 
 ### CORS
 
@@ -18,12 +18,12 @@ Quando você finalizar a [**instalação do Beagle**](/pt/docs/get-started/insta
 **Configuração obrigatória apenas para usar seu BFF com front-end web.**
 {{% /alert %}}
 
-Este processo é feito de acordo com sua tecnologia de backend e, por isso, recomendamos que você cheque a documentação da ferramenta escolhida para ver que diz a respeito disso. 
+Este processo é feito de acordo com sua tecnologia de backend e, por isso, recomendamos que você cheque a documentação da ferramenta escolhida para ver que diz a respeito disso.
 
 Se você estiver usando um de nossos starters, segue os links das documentações dos frameworks sobre o CORS:
 
-* [**Micronaut**](https://docs.micronaut.io/1.3.3/guide/index.html#cors)
-* [**Spring**](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-cors-global)
+- [**Micronaut**](https://docs.micronaut.io/1.3.3/guide/index.html#cors)
+- [**Spring**](https://docs.spring.io/spring/pt/home/current/spring-framework-reference/web.html#mvc-cors-global)
 
 Disponibilizamos uma constante, `BEAGLE_EXPOSED_HEADERS`, contendo uma lista dos nomes das headers que o próprio Beagle precisa para poder expor na sua **configuração de CORS.**
 
@@ -40,7 +40,6 @@ Para começar, você deve criar uma classe para configurar um serviço. O proces
 
 No exemplo abaixo, você confere o resultado que deve aparecer na sua tela:
 
-
 ```kotlin
 import javax.inject.Singleton
 
@@ -50,12 +49,12 @@ class MyService {
         title = "My Dialog",
         message = "This is a native popup!",
         labelOk= "Close"
-    )    
+    )
 
-    fun createScreen(): Screen = 
+    fun createScreen(): Screen =
         Screen(child = this.createWidget())
 
-    fun createScreenBuilder(): ScreenBuilder = 
+    fun createScreenBuilder(): ScreenBuilder =
         MyScreenBuilder(this.createWidget())
 
     fun createWidget(): Widget = Text(
@@ -82,7 +81,6 @@ Para começar, você deve criar uma classe para configurar um serviço. O proces
 
 No exemplo abaixo, você confere o resultado que deve aparecer na sua tela:
 
-
 ```kotlin
 import javax.inject.Singleton
 
@@ -92,12 +90,12 @@ class MyService {
         title = "My Dialog",
         message = "This is a native popup!",
         labelOk= "Close"
-    )    
+    )
 
-    fun createScreen(): Screen = 
+    fun createScreen(): Screen =
         Screen(child = this.createWidget())
 
-    fun createScreenBuilder(): ScreenBuilder = 
+    fun createScreenBuilder(): ScreenBuilder =
         MyScreenBuilder(this.createWidget())
 
     fun createWidget(): Widget = Text(
@@ -123,13 +121,14 @@ private class MyScreenBuilder(
 {{% tab name="Micronaut" %}}
 O próximo passo é criar uma classe Controller para expor nossos componentes via REST API. Esta classe ser anotada com `@Controller`.
 
-Além disso, a classe também deve receber um MyService via construtor primário para que o Micronaut faça automaticamente a injeção da dependência para você. 
+Além disso, a classe também deve receber um MyService via construtor primário para que o Micronaut faça automaticamente a injeção da dependência para você.
 
 Os endpoints são configurados com anotações seguindo o método HTTP \(por exemplo, `@Get` para `HTTP` `GET`\). Eles recebem ainda uma string que define o seu path.
 
 Para configurar sua classe, siga o exemplo abaixo. Lembre de nomear o arquivo como `MyController` para que você possa simplesmente copiar e colar este exemplo.
 
 {% code title="" %}}
+
 ```kotlin
 import io.micronaut.http.annotation.Controller
 import io.micronaut.http.annotation.Get
@@ -161,7 +160,6 @@ Os endpoints são configurados com anotações seguindo o método HTTP \(por exe
 
 Para configurar sua classe, siga o exemplo abaixo. Lembre de nomear o arquivo como `MyController` para que você possa simplesmente copiar e colar este exemplo:
 
-
 ```kotlin
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
@@ -186,14 +184,13 @@ class MyController(private val myService: MyService) {
 {{% /tab %}}
 {{< /tabs >}}
 
-###  **Passo 3: Configurar o BFF**
+### **Passo 3: Configurar o BFF**
 
 Você pode configurar cache e serialização com as linhas abaixo, adicionando elas no seu `application.properties`.
 
 {{< tabs id="T4" >}}
 {{% tab name="Micronaut" %}}
 O cache é configurado para incluir os endpoints `/screen` e `/widget`. O TTL para o endpoint `/screen` é configurado para 50 segundos.
-
 
 ```kotlin
 beagle.cache.endpoint.include=/screen,/widget
@@ -206,7 +203,6 @@ jackson.serialization.indentOutput=true
 
 {{% tab name="SpringBoot" %}}
 O cache é configurado para excluir o endpoint `/action`.
-
 
 ```kotlin
 beagle.cache.endpoint.exclude=/action
@@ -231,7 +227,6 @@ Você pode configurar CORS com as linhas abaixo, adicionando elas no seu **`appl
 
 Aqui CORS é habilitado com valores padrões para vários detalhes, deixando-os muito permissivos. Nossa header de cache é exposta.
 
-
 ```kotlin
 micronaut.server.cors.enabled=true
 micronaut.server.cors.configurations.beagle.exposedHeaders=beagle-hash
@@ -241,11 +236,9 @@ micronaut.server.cors.configurations.beagle.exposedHeaders=beagle-hash
 
 {{% tab name="SpringBoot" %}}
 
-
 Você pode configurar CORS com as classes abaixo, que precisam implementar a interface `WebMvcConfigurer` do Spring, sobrepondo o método `addCorsMappings`.
 
 Aqui CORS é configurado para todos os endpoints com valores padrões para vários detalhes, deixando-os muito permissivos. Nossa header de cache é exposta usando a constante.
-
 
 ```kotlin
 import org.springframework.context.annotation.Configuration
@@ -308,19 +301,23 @@ open class CorsConfig : WebMvcConfigurer {
 
 ### Passo 5: Iniciar o BFF
 
-Depois de realizar as configurações acima, você já pode iniciar seu BFF. Para isso, basta usar o comando abaixo em seu projeto, lembrando que ele deve começar o servidor na porta 8080 em seu localhost. 
+Depois de realizar as configurações acima, você já pode iniciar seu BFF. Para isso, basta usar o comando abaixo em seu projeto, lembrando que ele deve começar o servidor na porta 8080 em seu localhost.
 
 {{< tabs id="T7" >}}
 {{% tab name="Micronaut" %}}
+
 ```kotlin
 $ mvn compile exec:exec
 ```
+
 {{% /tab %}}
 
 {{% tab name="SpringBoot" %}}
+
 ```
 $ mvn spring-boot:run
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 

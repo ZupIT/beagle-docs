@@ -10,12 +10,12 @@ description: >-
 
 ## Basis
 
-Esta propriedade define o **tamanho padrão de um item ao longo do eixo principal**. É possível que ele mude de acordo com o elemento, o que significa dizer que: 
+Esta propriedade define o **tamanho padrão de um item ao longo do eixo principal**. É possível que ele mude de acordo com o elemento, o que significa dizer que:
 
-* Se o pai tiver o valor `flexDirection: row` o basis define o valor da largura \(width\);
-* Se o pai tiver o contêiner `flexDirection: column`, basis define o valor da altura \(height\).
+- Se o pai tiver o valor `flexDirection: row` o basis define o valor da largura \(width\);
+- Se o pai tiver o contêiner `flexDirection: column`, basis define o valor da altura \(height\).
 
-## Exemplos de uso 
+## Exemplos de uso
 
 ### FlexDirection: Row
 
@@ -57,6 +57,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -79,10 +80,11 @@ private func screen() -> Screen {
 
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-### 
+###
 
 ### FlexDirection Column
 
@@ -124,6 +126,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
  private func screen() -> Screen {
         return
@@ -145,12 +148,13 @@ private fun screen() :Widget{
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
 ### Basis com UnitType.AUTO
 
-É possível também passar `UnitValue(0.0, UnitType.AUTO)` quando utilizar `basis`. Neste caso o valor  `0.0`  não é relevante, pois  usando `UnitType.AUTO`  o eixo principal será ajustado  de acordo com tamanho do conteúdo. Exceto se um valor de `size`fixo também for definido para o componente no mesmo sentido do eixo principal.
+É possível também passar `UnitValue(0.0, UnitType.AUTO)` quando utilizar `basis`. Neste caso o valor `0.0` não é relevante, pois usando `UnitType.AUTO` o eixo principal será ajustado de acordo com tamanho do conteúdo. Exceto se um valor de `size`fixo também for definido para o componente no mesmo sentido do eixo principal.
 
 {{< tabs id="T66" >}}
 {{% tab name="Kotlin" %}}
@@ -189,5 +193,5 @@ private fun screen() :Widget{
 ![Basis com UnitType.AUTO e FlexDirection.ROW ](/captura-de-tela-2020-06-04-a-s-15.48.12%20%281%29.png)
 
 {{% alert color="info" %}}
-Para saber mais sobre Basis, acesse a [**documentação do Yoga Layout**](https://yogalayout.com/docs/flex).
+Para saber mais sobre Basis, acesse a [**documentação do Yoga Layout**](https://yogalayout.com/pt/home/flex).
 {{% /alert %}}

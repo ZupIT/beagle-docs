@@ -10,12 +10,12 @@ description: >-
 
 ## Display
 
-Esta propriedade define o **tipo de exibição** deste componente, o que permite um container ser flexível ou bloqueado de acordo com o valor passado. 
+Esta propriedade define o **tipo de exibição** deste componente, o que permite um container ser flexível ou bloqueado de acordo com o valor passado.
 
 O Display possibilita ainda um contexto flexível para todos os seus elementos filhos diretos. Nesta propriedade, temos dois atributos:
 
-* Flex
-* None
+- Flex
+- None
 
 ### **Flex**
 
@@ -25,11 +25,9 @@ Quando esse valor for definido permite que os elementos ficam flexível.
 
 Quando esse valor for definido permite que os elementos não sejam mostrado na tela, assim tendo sua altura e largura com valor 0.
 
-
-
 ![](https://lh6.googleusercontent.com/3cy2o8XKmTf0wequEI5ycerpdW48FvjiyXGvpfDtg3sOq3qz6ZJnKPQhVZ-9B0ed7GyUGGNQwfQbk1uEzDEADfmouCFPlrWWpjemG7yKHuhYkjvoY3zCe0nKVgYCqVWJA3VGS6_-)
 
-### 
+###
 
 {{< tabs id="T69" >}}
 {{% tab name="Kotlin" %}}
@@ -57,6 +55,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -80,7 +79,8 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-**Para saber mais sobre Display, acesse a documentação do [**Yoga Layout**](https://yogalayout.com/docs/flex/).**
+**Para saber mais sobre Display, acesse a documentação do [**Yoga Layout**](https://yogalayout.com/pt/home/flex/).**

@@ -16,41 +16,39 @@ Nesse tutorial será implementado o Backend com o Beagle para que ele possa resp
 
 Para criar um projeto com o Beagle para o backend, é preciso:
 
-* IDE Intelij IDE Community
+- IDE Intelij IDE Community
 
-### Passo 1: Iniciar o projeto usando Spring initializr 
+### Passo 1: Iniciar o projeto usando Spring initializr
 
 O primeiro passo para configurar seu backend é acessar o site do [**Spring**](https://start.spring.io/)  
 Ele criará o projeto `Maven` que facilitará a configuração do seu projeto.
 
 ![](https://lh5.googleusercontent.com/ZshvFubtunY4x0JWWBLgSmFesUx7G2AVlSrCcS96efc2lJtAakhYJ-zxgDx7CkcCMOC6zedwUAS3ThBpVXfS8jyvieNLgL3ZJIxWnHJFLE77IOXZs3UqOR8TQazINC_enzoO4Y4Q)
 
-**Configuração do Spring** 
+**Configuração do Spring**
 
-* Escolha o `Maven` como o sua opção de projeto;
-* Marque `kotlin` como a linguagem;
-* Marque a versão de inicialização maior que 2.1. 
-* **Group** é o nome que será usado como a hierarquia do começo. Para esse exemplo, você pode deixar como **com.example;**
-* **Artifact**  é o nome do projeto. Você nomeá-lo como BFF;
-* **Description** contém a simples descrição do projeto;  
-* **Packaging**  deve ser marcado como JAR;
-* **Java** deve ser marcado como a versão java do seu sistema; 
-* Clique em **`generate`** e você irá fazer o download do seu projeto no formato .zip; 
-* Extraia o arquivo na pasta de sua preferencia. 
+- Escolha o `Maven` como o sua opção de projeto;
+- Marque `kotlin` como a linguagem;
+- Marque a versão de inicialização maior que 2.1.
+- **Group** é o nome que será usado como a hierarquia do começo. Para esse exemplo, você pode deixar como **com.example;**
+- **Artifact** é o nome do projeto. Você nomeá-lo como BFF;
+- **Description** contém a simples descrição do projeto;
+- **Packaging** deve ser marcado como JAR;
+- **Java** deve ser marcado como a versão java do seu sistema;
+- Clique em **`generate`** e você irá fazer o download do seu projeto no formato .zip;
+- Extraia o arquivo na pasta de sua preferencia.
 
 ### Passo 2: Importar seu projeto para o Intelij
 
-Siga os passos abaixo para importar o projeto que você criou. Primeiro, abra o **intellij** e clique em`Import project`. 
+Siga os passos abaixo para importar o projeto que você criou. Primeiro, abra o **intellij** e clique em`Import project`.
 
 ![](https://lh3.googleusercontent.com/EIBFU3xFKyN_ng7DsAEcdoip3xYH6gIKIbLRWbg6LRbITQMd_6tcwyp5iApKn2KPDSnasioiYyb48fMNfcEW9G3pyRE0lSXGXQHPk_FBvKO21wto8qvYSa7Jwi2eNEp5XVSxQmCQ)
 
 1. Escolha o arquivo onde você colocou o seu`Spring project`
 
-    e clique em **`ok`**. 
+   e clique em **`ok`**.
 
-2. Clique em **Import projects from external model** e escolha `Maven` e depois, clique em **finish**. 
-
- 
+2. Clique em **Import projects from external model** e escolha `Maven` e depois, clique em **finish**.
 
 ![](https://lh6.googleusercontent.com/6gOx1UCq-ZUK0yckdUAO2-Jb1YWOjw6kNijGu8-LVPyaDJuYAC2J7DcugsKgFDVqSkhF1RN5zKQ0s47l0ZmFgrq9ln7SPL-isTczLb9h5PQnXhUyWl6S7_QaUyUPGN-SyYVK_AZC)
 
@@ -58,7 +56,7 @@ Siga os passos abaixo para importar o projeto que você criou. Primeiro, abra o 
 
 ### Passo 1: Configurar o projeto
 
-Como ponto de partida, siga nosso [**passo a passo para instalar o backend**](/pt/docs/get-started/installing-beagle/backend). 
+Como ponto de partida, siga nosso [**passo a passo para instalar o backend**](/pt/home/get-started/installing-beagle/backend).
 
 ### Passo 2: Definir a Estrutura
 
@@ -76,11 +74,10 @@ O segundo passo é criar alguns pacotes para organizar melhor o projeto. Eles se
 
 A primeira classe que iremos criar é a **`Builder`** . É nesse arquivo que a tela `Server-Driven` deve ser estruturada:
 
-1. Clique no pacote `builder` com o botão direito do mouse e clique em **new &gt; Kotlin File / Class** e coloque o nome como `ScreenBeagleBuilder` 
+1. Clique no pacote `builder` com o botão direito do mouse e clique em **new &gt; Kotlin File / Class** e coloque o nome como `ScreenBeagleBuilder`
 2. Essa classe deve estender de `ScreenBuilder` \(que é uma classe interna do Beagle\).
-3. Observe que ele substituirá o método de `build` e é aqui que será implementado a primeira tela `Server-Driven`. 
+3. Observe que ele substituirá o método de `build` e é aqui que será implementado a primeira tela `Server-Driven`.
 4. Nesta etapa, você pode copiar e colar o código abaixo em sua classe.
-
 
 ```kotlin
 import br.com.zup.beagle.core.Style
@@ -128,13 +125,11 @@ object ScreenBeagleBuilder : ScreenBuilder {
 }
 ```
 
-
 A próxima classe a ser criada é a **`Service`**:
 
-1. Clique com o botão direito do mouse no pacote `service` e clique em **New&gt; Kotlin File / Class.** 
-2. Nomeie-a como `ScreenBeagleService`. Essa classe deve ser anotada com `@Service` que é uma anotação do `Spring` 
+1. Clique com o botão direito do mouse no pacote `service` e clique em **New&gt; Kotlin File / Class.**
+2. Nomeie-a como `ScreenBeagleService`. Essa classe deve ser anotada com `@Service` que é uma anotação do `Spring`
 3. **Implemente** um método chamado de `createScreenBeagle`que tem como retorno a classe `ScreenBeagleBuilder`:
-
 
 ```kotlin
 import com.example.bff.builder.ScreenBeagleBuilder
@@ -146,13 +141,11 @@ class ScreenBeagleService {
 }
 ```
 
+E por fim a classe **`Controller`** .
 
-E por fim a classe **`Controller`** . 
-
-1. No pacote `controller`crie uma classe e nomeia como `ScreenController` . Ela deve ser anotada com `@RestController` para que assim exponha seus componentes por meio da API Rest. 
-2. Ele receberá um `ScreenBeagleService` por meio de seu construtor principal, para que o `Spring` possa injetá-la para você. 
+1. No pacote `controller`crie uma classe e nomeia como `ScreenController` . Ela deve ser anotada com `@RestController` para que assim exponha seus componentes por meio da API Rest.
+2. Ele receberá um `ScreenBeagleService` por meio de seu construtor principal, para que o `Spring` possa injetá-la para você.
 3. Crie sua classe como no exemplo abaixo:
-
 
 ```kotlin
 import com.example.bff.service.ScreenBeagleService
@@ -168,10 +161,9 @@ class ScreenController(
 }
 ```
 
-
-* A anotação `@RestController` define esta classe como uma `controller`
-* O parâmetro `screenBeagleService` precisa ter seu tipo definido como `:ScreenBeagleService` 
-* O método `getScreen` precisa anotar`@GetMapping("/screen")` para criar o caminho "/screen" na  URL da aplicação e receber o resultado da função `createScreenBeagle`
+- A anotação `@RestController` define esta classe como uma `controller`
+- O parâmetro `screenBeagleService` precisa ter seu tipo definido como `:ScreenBeagleService`
+- O método `getScreen` precisa anotar`@GetMapping("/screen")` para criar o caminho "/screen" na URL da aplicação e receber o resultado da função `createScreenBeagle`
 
 O backend está pronto para servir como BFF de sua aplicação Server-Driven.
 
@@ -238,18 +230,18 @@ Uma estrutura JSON tem que aparecer na sua tela similar a estrutura abaixo:
 
 ### **Passo 3: Checar o processo**
 
-Se essa não for a resposta que você teve é necessário checar o processo de configuração novamente. Volte os passos anteriores e comece pelas classes que são as que apresentam maiores equívocos quando configuradas pela primeira vez. 
+Se essa não for a resposta que você teve é necessário checar o processo de configuração novamente. Volte os passos anteriores e comece pelas classes que são as que apresentam maiores equívocos quando configuradas pela primeira vez.
 
 Ou, se preferir, pegue o projeto pronto no nosso repositório e compare com o seu. Você pode acessar o [**repositório aqui.** ](https://github.com/ZupIT/beagle/tree/master/backend/sample)
 
 {{% alert color="info" %}}
-Para que o serviço de backend seja consumido, você deve ter o front-end preparado para o Beagle, seja Android, iOS ou Web. Tudo irá funcionar usando o mesmo JSON do backend. 
+Para que o serviço de backend seja consumido, você deve ter o front-end preparado para o Beagle, seja Android, iOS ou Web. Tudo irá funcionar usando o mesmo JSON do backend.
 {{% /alert %}}
 
-Para saber mais sobre como configurar o seu ambiente frontend, veja mais em: 
+Para saber mais sobre como configurar o seu ambiente frontend, veja mais em:
 
-👉 Tutorial do Beagle para [**Android**](/pt/docs/get-started/creating-a-project-from-scratch/case-android/).
+👉 Tutorial do Beagle para [**Android**](/pt/home/get-started/creating-a-project-from-scratch/case-android/).
 
-👉Tutorial do Beagle para [**iOS**](/pt/docs/get-started/creating-a-project-from-scratch/case-ios).
+👉Tutorial do Beagle para [**iOS**](/pt/home/get-started/creating-a-project-from-scratch/case-ios).
 
-👉Tutorial do Beagle para  [**Web**](/pt/docs/get-started/creating-a-project-from-scratch/case-web).
+👉Tutorial do Beagle para [**Web**](/pt/home/get-started/creating-a-project-from-scratch/case-web).

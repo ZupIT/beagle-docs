@@ -18,7 +18,7 @@ Widgets customizados que renderizem um unico componente do Beagle devem implemen
 
 ### Passo 1: Vincular SingleChildComponent
 
-Com o widget customizado criado, adicione a interface `SingleChildComponent`. 
+Com o widget customizado criado, adicione a interface `SingleChildComponent`.
 
 ```kotlin
 @RegisterWidget
@@ -75,7 +75,7 @@ Widgets customizados que renderizem um ou mais componentes do Beagle devem imple
 
 ### Passo 1: Vincular MultiChildComponent
 
-Com o widget customizado criado, adicione a interface `MultiChildComponent`. 
+Com o widget customizado criado, adicione a interface `MultiChildComponent`.
 
 ```kotlin
 @RegisterWidget
@@ -110,7 +110,7 @@ class CustomChildWidget(
 
 ### Passo 3: Utilize o componente
 
-Para usar a view gerada a partir do componente `children`, basta considerar cada um como  `ViewConvertable` e chamar o método `buildView` de cada.
+Para usar a view gerada a partir do componente `children`, basta considerar cada um como `ViewConvertable` e chamar o método `buildView` de cada.
 
 ```kotlin
 @RegisterWidget
@@ -131,5 +131,5 @@ class CustomChildWidget(
 Pronto! Seu componente agora utiliza outros componentes do Beagle!
 
 {{% alert color="danger" %}}
-É obrigatório a implementação de uma das duas interfaces para todo widget customizado que utilizar componentes do Beagle dentro do componente [ListView](/pt/docs/api/components/layout/listview).
+É obrigatório a implementação de uma das duas interfaces para todo widget customizado que utilizar componentes do Beagle dentro do componente [ListView](/pt/home/api/components/layout/listview).
 {{% /alert %}}

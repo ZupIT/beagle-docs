@@ -8,7 +8,7 @@ description: Aqui voce aprenderá como criar e utilizar um widget no Beagle
 
 ## Como criar componentes \(custom views\) e widgets?
 
-No exemplo abaixo, será implementado um [**custom widget**](/pt/docs/resources/customization/beagle-for-android/custom-widget) e o componente que ele registrará. Esse componente será composto por um texto e dois botões dentro de um layout linear. 
+No exemplo abaixo, será implementado um [**custom widget**](/pt/home/resources/customization/beagle-for-android/custom-widget) e o componente que ele registrará. Esse componente será composto por um texto e dois botões dentro de um layout linear.
 
 Os botões neste componente serão responsáveis ​​por aumentar e diminuir o tamanho do texto do título e a tela será como a imagem a seguir:
 
@@ -20,7 +20,7 @@ Você pode fazer isso usando a anotação `@RegisterWidget` e estendendo a class
 
 ### Criando um componente e um widget
 
-Siga os passos abaixo para criar e customizar um componente e um widget: 
+Siga os passos abaixo para criar e customizar um componente e um widget:
 
 ### Passo 1: Criar o widget
 
@@ -44,7 +44,7 @@ class CustomWidgetTitleIncrease: WidgetView() {
 
 ### Passo 2: Criar e configurar o componente
 
-Comece criando um arquivo de configuração`.XML`e copie e cole o conteúdo abaixo, pois ela cria o layout que escolhemos para esse exemplo. 
+Comece criando um arquivo de configuração`.XML`e copie e cole o conteúdo abaixo, pois ela cria o layout que escolhemos para esse exemplo.
 
 ```markup
 title_increase_component_layout.xml
@@ -89,8 +89,7 @@ title_increase_component_layout.xml
 Agora, é hora de criar o componente:
 
 1. Crie uma classe e a nomeie: `TitleIncreaseComponent`. É nessa classe que ficará registrado como o componente funciona e a regra de negócio dele. Lembrando que a regra de negocio desse componente é unicamente aumentar e dimunir o tamanho do seu Título.
-2. Copie e cole a classe abaixo: 
-
+2. Copie e cole a classe abaixo:
 
 ```kotlin
 class TitleIncreaseComponent(context: Context) : LinearLayout(context) {
@@ -137,12 +136,11 @@ class TitleIncreaseComponent(context: Context) : LinearLayout(context) {
 }
 ```
 
-
 ### Passo 3: Configurar o Widget
 
 O layout e o componente estão definidos, é preciso terminar a configuração do Widget customizado:
 
-Analise a função abaixo e observe que algumas variáveis de texto foram adicionadas. Essa prática foi escolhida para demonstrar que é possível definir o valor dessas variáveis pelo Widget, colocando o título e o nome dos botões. 
+Analise a função abaixo e observe que algumas variáveis de texto foram adicionadas. Essa prática foi escolhida para demonstrar que é possível definir o valor dessas variáveis pelo Widget, colocando o título e o nome dos botões.
 
 ```kotlin
 CustomWidgetTitleIncrease.kt
@@ -169,8 +167,8 @@ Agora o Widget customizado está pronto, o componente pode ser exibido.
 
 Para testar o componente, utilize o método abaixo:
 
-* Perceba que o widget passa alguns parâmetros para o componente, como o "Título" do componente e o título dos botões. 
-* O método buildView foi implementado dentro do widget que customizamos
+- Perceba que o widget passa alguns parâmetros para o componente, como o "Título" do componente e o título dos botões.
+- O método buildView foi implementado dentro do widget que customizamos
 
 ```kotlin
 MainActivity.kt
@@ -180,7 +178,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        
+
         val customWidget = CustomWidgetTitleIncrease(
                 "Example Title",
                 "Increase",
@@ -192,6 +190,6 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
-* Execute a aplicação e seu componente customizado \(nesse caso uma tela\) será exibido:
+- Execute a aplicação e seu componente customizado \(nesse caso uma tela\) será exibido:
 
 ![](/custumwidgetexample.gif)

@@ -32,9 +32,9 @@ public protocol ImageDownloader {
 
 A função fetchImage recebe 3 parâmetros:
 
-* **url**: valor do tipo String por onde será passado a url da imagem
-* **additionalData**: valor do tipo RemoteScreenAdditionalData, que poderá ser utilizado quando há necessidade de passar headers adicionais para uma requisição.
-* **completion**: bloco que deve ser chamado ao final da execução da função passando o resultado da requisição.
+- **url**: valor do tipo String por onde será passado a url da imagem
+- **additionalData**: valor do tipo RemoteScreenAdditionalData, que poderá ser utilizado quando há necessidade de passar headers adicionais para uma requisição.
+- **completion**: bloco que deve ser chamado ao final da execução da função passando o resultado da requisição.
 
 Além disso a função pode retornar o **RequestToken** para que a requisição possa ser cancelada internamente pelo Beagle.
 
@@ -42,7 +42,7 @@ Além disso a função pode retornar o **RequestToken** para que a requisição 
 
 No Beagle iOS, temos uma classe chamada **ImageDownloaderDefault** que realiza as requisições das imagens de acordo com sua camada de rede.
 
-Em seu método `fetchImage` essa classe basicamente chama o **RequestDispatcher** com o tipo `.fetchImage` e mapeia o resultado daquela requisição, ou seja, ela depende da implementação da sua camada de rede, você pode ver como configurá-la [**aqui**](/pt/docs/resources/customization/beagle-for-ios/network-layer).
+Em seu método `fetchImage` essa classe basicamente chama o **RequestDispatcher** com o tipo `.fetchImage` e mapeia o resultado daquela requisição, ou seja, ela depende da implementação da sua camada de rede, você pode ver como configurá-la [**aqui**](/pt/home/resources/customization/beagle-for-ios/network-layer).
 
 ## **Substituindo o ImageDownloaderDefault**
 

@@ -12,15 +12,15 @@ description: >-
 
 Antes de configurar o Beagle para o seu sistema Android, é importante que você confirme as versões dos programas que estão instalados na sua máquina. Para a ferramenta funcionar, é necessário ter as seguintes versões: ‌
 
-* **JDK 8+ language**
-* **Android API level: pelo menos a 19 ou superior**
-* **Kotlin 1.3+** 
+- **JDK 8+ language**
+- **Android API level: pelo menos a 19 ou superior**
+- **Kotlin 1.3+**
 
-## **Passo 1: Configurar as dependências** 
+## **Passo 1: Configurar as dependências**
 
 Você precisa ajustar as dependências do seu repositório para receber o Beagle. Para isso, utilize as configurações abaixo para fazer o **download da biblioteca**.
 
-Para versão anterior a 1.1.0 adicione no build.gradle *maven{url}*:
+Para versão anterior a 1.1.0 adicione no build.gradle _maven{url}_:
 
 ```kotlin
 allprojects {
@@ -34,7 +34,7 @@ allprojects {
 }
 ```
 
-Para versão superior ou igual a 1.1.0 adicione no build.gradle *mavenCentral()*:
+Para versão superior ou igual a 1.1.0 adicione no build.gradle _mavenCentral()_:
 
 ```kotlin
 allprojects {
@@ -52,12 +52,13 @@ A configuração acima deve ser adicionada em `allprojects{}`
 
 ## **Passo 2: Incluir os plugins**
 
-Uma vez feita a primeira configuração, agora você precisa incluir o plugin do kapt e do Beagle como dependências dentro do seu gerenciador de dependências, segue abaixo as duas apção de adicionar o plugin. 
+Uma vez feita a primeira configuração, agora você precisa incluir o plugin do kapt e do Beagle como dependências dentro do seu gerenciador de dependências, segue abaixo as duas apção de adicionar o plugin.
 
 A versão atual do Beagle[![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android)](https://mvnrepository.com/artifact/br.com.zup.beagle/android)
 
 {{< tabs name="T200" >}}
 {{% tab name="apply plugin" %}}
+
 ```kotlin
 apply plugin: 'kotlin-kapt'
 
@@ -67,16 +68,18 @@ android {
     }
 }
 
-ext.beagle_version = "${beagle_version}" 
+ext.beagle_version = "${beagle_version}"
 
-dependencies {    
-    implementation "br.com.zup.beagle:android:$beagle_version"    
+dependencies {
+    implementation "br.com.zup.beagle:android:$beagle_version"
     kapt "br.com.zup.beagle:android-processor:$beagle_version"
 }
 ```
+
 {{% /tab %}}
 
 {{% tab name="plugins" %}}
+
 ```kotlin
 plugins {
 		id 'kotlin-kapt'
@@ -89,13 +92,14 @@ android {
     }
 }
 
-ext.beagle_version = "${beagle_version}" 
+ext.beagle_version = "${beagle_version}"
 
-dependencies {    
-    implementation "br.com.zup.beagle:android:$beagle_version"    
+dependencies {
+    implementation "br.com.zup.beagle:android:$beagle_version"
     kapt "br.com.zup.beagle:android-processor:$beagle_version"
 }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
@@ -112,6 +116,6 @@ Lembre de sempre verificar se você está usando a versão mais recente do Beagl
 Nesta seção, você fez a **instalação inicial** do Beagle na sua aplicação!  
 Para continuar a configurar o Beagle:
 
-👉Vá para as [**configurações iniciais** ](/pt/docs/get-started/using-beagle/android)para habilitar uso do Beagle no seu projeto Android
+👉Vá para as [**configurações iniciais** ](/pt/home/get-started/using-beagle/android)para habilitar uso do Beagle no seu projeto Android
 
-👉 Se quiser ir direto para prática, acesse nosso [**tutorial para criar um projeto do zero**](/pt/docs/get-started/creating-a-project-from-scratch/case-android/)
+👉 Se quiser ir direto para prática, acesse nosso [**tutorial para criar um projeto do zero**](/pt/home/get-started/creating-a-project-from-scratch/case-android/)

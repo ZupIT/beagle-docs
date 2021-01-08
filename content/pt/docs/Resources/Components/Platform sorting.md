@@ -8,27 +8,27 @@ description: >-
 
 ---
 
-Alguns elementos fornecidos pelo Beagle podem ser mais direcionados à uma plataforma e, talvez, não fazer tanto sentido para outra. Por exemplo, o uso do [**ScrollView**](/pt/docs/api/components/layout/scrollview) funciona melhor na plataforma Mobile, mas não é necessário na Web. 
+Alguns elementos fornecidos pelo Beagle podem ser mais direcionados à uma plataforma e, talvez, não fazer tanto sentido para outra. Por exemplo, o uso do [**ScrollView**](/pt/home/api/components/layout/scrollview) funciona melhor na plataforma Mobile, mas não é necessário na Web.
 
-Isso acontece porque o Beagle possui  a funcionalidade de **Especificação de Plataforma**, que te permite ter controle de quais elementos são enviados pelo BFF e quais plataformas serão usadas. 
+Isso acontece porque o Beagle possui a funcionalidade de **Especificação de Plataforma**, que te permite ter controle de quais elementos são enviados pelo BFF e quais plataformas serão usadas.
 
 ### Como funciona?
 
-O Beagle faz uso de um cabeçalho personalizado, `beagle-platform`**,** com os possíveis valores: 
+O Beagle faz uso de um cabeçalho personalizado, `beagle-platform`**,** com os possíveis valores:
 
-* `ALL`;
-* `MOBILE`;
-* `ANDROID`;
-* `IOS`;
-* `WEB`;
+- `ALL`;
+- `MOBILE`;
+- `ANDROID`;
+- `IOS`;
+- `WEB`;
 
 Dessa forma, a resposta do BFF é interceptada e os elementos filtrados de acordo com a plataforma para qual ela está sendo enviada.
 
 ### Como acessar?
 
-Você pode acessar esse controle de duas maneiras: 
+Você pode acessar esse controle de duas maneiras:
 
-1. Por meio de **estruturas de controle de fluxo** em seu código, que verifica qual plataforma seu cliente usou para realizar uma requisição. 
+1. Por meio de **estruturas de controle de fluxo** em seu código, que verifica qual plataforma seu cliente usou para realizar uma requisição.
 
 Veja no exemplo a seguir:
 
@@ -55,9 +55,9 @@ fun createComponentPlatformDependent(beaglePlatform: BeaglePlatform) = when {
 }
 ```
 
- 2. **Especificando a plataforma** para qual o elemento é destinado e, com isso, o Beagle faz a filtragem dos elementos corretos. 
+2.  **Especificando a plataforma** para qual o elemento é destinado e, com isso, o Beagle faz a filtragem dos elementos corretos.
 
-Veja no exemplo a seguir: 
+Veja no exemplo a seguir:
 
 ```kotlin
 Button(text = "mobile only text").forPlatform(BeaglePlatform.MOBILE),
@@ -67,7 +67,7 @@ Button(text = "android only text").forPlatform(BeaglePlatform.ANDROID),
 Button(text = "text free for all")
 ```
 
-Se quiser saber como configurar esta funcionalidade, veja na seção de [**customização do Beagle**](/pt/docs/resources/customization/beagle-for-backend). 
+Se quiser saber como configurar esta funcionalidade, veja na seção de [**customização do Beagle**](/pt/home/resources/customization/beagle-for-backend).
 
 {{% alert color="info" %}}
 Caso utilize um dos Beagle starters, não é necessário realizar a configuração da funcionalidade manualmente, pois ela já vem pré-configurada.

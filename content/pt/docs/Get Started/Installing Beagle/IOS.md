@@ -1,18 +1,18 @@
 ---
 title: IOS
 weight: 8
-description: 'Nesta seção, você encontra o passo a passo da configuração do Beagle no iOS.'
+description: "Nesta seção, você encontra o passo a passo da configuração do Beagle no iOS."
 ---
 
 ---
 
 ## Requisitos
 
-Antes de configurar o Beagle para o seu sistema iOS, é importante que você confirme as versões dos programas que estão  instalados na sua máquina. Para o Beagle funcionar, é necessário ter as seguintes versões: 
+Antes de configurar o Beagle para o seu sistema iOS, é importante que você confirme as versões dos programas que estão instalados na sua máquina. Para o Beagle funcionar, é necessário ter as seguintes versões:
 
-* **iOS 10.0+**
-* **Xcode 11.0+**
-* **Swift 5.0+**
+- **iOS 10.0+**
+- **Xcode 11.0+**
+- **Swift 5.0+**
 
 ## **Gerenciamento de dependências**
 
@@ -27,8 +27,6 @@ Lembre de sempre usar a versão mais recente do Beagle e, principalmente, de che
 Para integrar o Beagle à sua aplicação através do **CocoaPods** você precisa adicionar o framework como dependência no seu `Podfile`.
 
 Versão atual do Beagle:[![badge](https://img.shields.io/cocoapods/v/Beagle)](https://cocoapods.org/pods/Beagle)
-
-
 
 Este processo pode ser feito da seguinte maneira:
 
@@ -57,15 +55,15 @@ github "ZupIT/beagle" ~> 1.0.1-iOS
 Depois de uma release importante, podemos lançar algumas versões com bug fixes específicas para o iOS, as quais estarão com a tag da versão seguida com o sufixo "-iOS" \(e.g: "1.0.1-iOS"\).
 {{% /alert %}}
 
-### Passo 2: Build nas dependências 
+### Passo 2: Build nas dependências
 
-Depois de integrado, você deve seguir com o processo normal de build do Carthage nas suas dependências. O esperado é que você receba alguns **arquivos .framework** como resultado. 
+Depois de integrado, você deve seguir com o processo normal de build do Carthage nas suas dependências. O esperado é que você receba alguns **arquivos .framework** como resultado.
 
-No caso do Beagle, os arquivos obrigatórios para que a sua aplicação funcione são: 
+No caso do Beagle, os arquivos obrigatórios para que a sua aplicação funcione são:
 
-* Beagle.framework
-* BeagleSchema.framework
-* YogaKit.framework
+- Beagle.framework
+- BeagleSchema.framework
+- YogaKit.framework
 
 Outros frameworks são utilizados apenas em cenários de uso mais específicos.
 
@@ -74,6 +72,6 @@ Outros frameworks são utilizados apenas em cenários de uso mais específicos.
 Nesta seção, você fez a **instalação inicial** do Beagle na sua aplicação!  
 Para continuar a configurar o Beagle:
 
-👉Para continuar conhecendo o Beagle, e testar se deu tudo certo com a instalação, vá para as **configurações iniciais** e [**crie seu primeiro Hello Beagle!**](/pt/docs/get-started/using-beagle/ios)
+👉Para continuar conhecendo o Beagle, e testar se deu tudo certo com a instalação, vá para as **configurações iniciais** e [**crie seu primeiro Hello Beagle!**](/pt/home/get-started/using-beagle/ios)
 
-👉 Se quiser ir direto para prática, acesse nosso[ **tutorial para criar um projeto do zero**](/pt/docs/get-started/creating-a-project-from-scratch/case-ios/)
+👉 Se quiser ir direto para prática, acesse nosso[ **tutorial para criar um projeto do zero**](/pt/home/get-started/creating-a-project-from-scratch/case-ios/)

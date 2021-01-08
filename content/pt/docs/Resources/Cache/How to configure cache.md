@@ -42,7 +42,7 @@ Caso o _hash_ enviado pelo front seja diferente daquele salvo no backend, será 
 
 ### Ocupação de memória e disco
 
-Para evitar sobrecarga de memória e disco ambos os caches aplicam uma política de substituição[ __**Least Recently Used \(LRU\)** ](https://pt.wikipedia.org/wiki/Algoritmo_de_troca_de_página)onde a quantidade máxima de registros também pode ser configurada através da classe base de cache pela aplicação. Os valores padrões para memória e disco são 15 e 150 respectivamente.
+Para evitar sobrecarga de memória e disco ambos os caches aplicam uma política de substituição[ \_\_**Least Recently Used \(LRU\)** ](https://pt.wikipedia.org/wiki/Algoritmo_de_troca_de_página)onde a quantidade máxima de registros também pode ser configurada através da classe base de cache pela aplicação. Os valores padrões para memória e disco são 15 e 150 respectivamente.
 
 ## Configurando e customizando o cache
 
@@ -50,7 +50,7 @@ Existem customizações permitidas pela classe padrão existente no cache como t
 
 Caso a abordagem padrão não resolva o problema, a aplicação tem total liberdade de substituir completamente a implementação padrão pela que melhor atender. Para isso, basta que a classe responsável pelo gerenciamento do cache esteja em conformidade com o protocolo `CacheManagerProtocol`.
 
-Cada plataforma tem especificidades para configurar o cache. 
+Cada plataforma tem especificidades para configurar o cache.
 
 Abaixo listamos a configuração por plataforma:
 
@@ -58,14 +58,13 @@ Abaixo listamos a configuração por plataforma:
 {{% tab name="Android" %}}
 No Android, o cache é configurado quando implementamos as configurações iniciais do Beagle.
 
-Esta implementação acontece dentro da classe que nomeamos [**AppBeagleConfig**](/pt/docs/get-started/using-beagle/android#passo-2-criar-uma-classe-beagleconfig), ou seja, dentro da classe de configuração do Beagle. 
+Esta implementação acontece dentro da classe que nomeamos [**AppBeagleConfig**](/pt/home/get-started/using-beagle/android#passo-2-criar-uma-classe-beagleconfig), ou seja, dentro da classe de configuração do Beagle.
 
 O cache, em si, é uma class interna do Beagle na qual podemos definir 3 propriedades representadas pelos atributos:
 
 1. `enable`
 2. `maxAge`
 3. `memoryMaximumCapacity`
-
 
 ```kotlin
 @BeagleComponent
@@ -76,25 +75,25 @@ class AppBeagleConfig : BeagleConfig {
     override val cache: Cache = Cache(
         enabled = true,
         maxAge = 300,
-        memoryMaximumCapacity = 15 
+        memoryMaximumCapacity = 15
     )
 }
 ```
 
-
 ### Atributos do cache
 
-| Atributo | Definição |
-| :--- | :--- |
-| **enable** | Valor `booleano`que habilita ou desabilita o cache em memória e disco |
-| **maxAge** | Valor `inteiro`de tempo em segundos que o cache em memória estará ativo |
+| Atributo                  | Definição                                                                                                                                                                                                     |
+| :------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **enable**                | Valor `booleano`que habilita ou desabilita o cache em memória e disco                                                                                                                                         |
+| **maxAge**                | Valor `inteiro`de tempo em segundos que o cache em memória estará ativo                                                                                                                                       |
 | **memoryMaximumCapacity** | Valor `inteiro` que representa o tamanho do cache de memória LRU. Representa o número de telas que vão estar na memória. Por exemplo, se você definir o número 15, significa que 15 páginas ficarão em cache. |
+
 {{% /tab %}}
 
 {{% tab name="iOS" %}}
-No iOS, o cache é configurado quando implementamos as configurações das dependências do  Beagle.
+No iOS, o cache é configurado quando implementamos as configurações das dependências do Beagle.
 
- É possível mudar a configuração default do cache criando uma instância da classe `CacheManagerDefault`. Nessa classe permitimos que você altere os valores de 3 propriedades:
+É possível mudar a configuração default do cache criando uma instância da classe `CacheManagerDefault`. Nessa classe permitimos que você altere os valores de 3 propriedades:
 
 1. `memoryMaximumCapacity`
 2. `diskMaximumCapacity`
@@ -111,7 +110,7 @@ dependencies.cacheManager = cacheManager
 Beagle.dependencies = dependencies
 ```
 
-Também é possível criar a sua própria classe de gerenciamento de cache e configurá-la dentro da sua instância do `BeagleDependencies` se você conformar essa classe com o protocolo `CacheManagerProtocol`. 
+Também é possível criar a sua própria classe de gerenciamento de cache e configurá-la dentro da sua instância do `BeagleDependencies` se você conformar essa classe com o protocolo `CacheManagerProtocol`.
 
 ```swift
 public protocol CacheManagerProtocol {
@@ -123,25 +122,25 @@ public protocol CacheManagerProtocol {
 
 ## **Atributos do cache**
 
-| Atributo | Definição |
-| :--- | :--- |
+| Atributo                  | Definição                                                                                                                                                                                                   |
+| :------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **memoryMaximumCapacity** | Valor `inteiro` que representa o tamanho do cache de memória LRU. Representa o número de telas que vão estar na memória. Por exemplo. Se definirmos o número 15 quer dizer que 15 páginas ficarão em cache. |
-| **diskMaximumCapacity** | Valor `inteiro` que representa o tamanho do cache de disco LRU. Representa o número de telas que vão estar no disco. Por exemplo. Se definirmos o número 150 quer dizer que 150 páginas ficarão em cache. |
-| **cacheMaxAge** | Valor `inteiro`de tempo em segundos que o cache em memória estará ativo |
+| **diskMaximumCapacity**   | Valor `inteiro` que representa o tamanho do cache de disco LRU. Representa o número de telas que vão estar no disco. Por exemplo. Se definirmos o número 150 quer dizer que 150 páginas ficarão em cache.   |
+| **cacheMaxAge**           | Valor `inteiro`de tempo em segundos que o cache em memória estará ativo                                                                                                                                     |
+
 {{% /tab %}}
 
 {{% tab name="Backend" %}}
-No backend, as configurações desta funcionalidade são suportadas apenas para quem utiliza a [**biblioteca starter**](/pt/docs/get-started/installing-beagle/backend#passo-3-incluir-requerimentos-adicionais).
+No backend, as configurações desta funcionalidade são suportadas apenas para quem utiliza a [**biblioteca starter**](/pt/home/get-started/installing-beagle/backend#passo-3-incluir-requerimentos-adicionais).
 
 O cache é criado para otimizar a resposta de uma requisição tanto em tamanho quanto em tempo do BFF quando o retorno é igual ao anterior a ela. As entradas nesse cache duram até o servidor ser "redeployado" ou o cliente ser reinstalado.‌
 
-Para realizar a configuração de cache: 
+Para realizar a configuração de cache:
 
 1. Dentro da pasta `src/main/resources`, procure pelo arquivo `application.properties`
-2. Caso não tenha o arquivo, você pode criá-lo agora. 
+2. Caso não tenha o arquivo, você pode criá-lo agora.
 
-Se a chave não estiver listada no seu arquivo, significa que a configuração padrão será aplicada automaticamente. 
-
+Se a chave não estiver listada no seu arquivo, significa que a configuração padrão será aplicada automaticamente.
 
 ```text
 beagle.cache.endpoint.include=/image,/context/.*
@@ -155,7 +154,6 @@ beagle.cache.endpoint.ttl./endpoint2=1m
 beagle.cache.endpoint.ttl.[/endpoint1]=10s
 beagle.cache.endpoint.ttl.[/endpoint2]=1m
 ```
-
 
 Na lista abaixo, você confere quais são as propriedades disponíveis e as configurações que podem ser alteradas.
 
@@ -220,12 +218,12 @@ Na lista abaixo, você confere quais são as propriedades disponíveis e as conf
 {{% /tab %}}
 
 {{% tab name="Web" %}}
-Na web, o cache é configurado quando definimos as configurações iniciais do Beagle Web no parâmetro `strategy`, que é um dos parâmetros do `BeagleModule` \(se você estiver usando Angular\) ou `createBeagleUIService`\(se você estiver usando React\). 
+Na web, o cache é configurado quando definimos as configurações iniciais do Beagle Web no parâmetro `strategy`, que é um dos parâmetros do `BeagleModule` \(se você estiver usando Angular\) ou `createBeagleUIService`\(se você estiver usando React\).
 
-Por padrão, o cache vem habilitado com a estratégia**`beagle-with-fallback-to-cache`**, porém a estratégia`beagle-cache-only` também pode ser utilizada para implementar o [**protocolo de cache do Beagle**](/pt/docs/resources/customization/beagle-for-web/cache-strategy).
+Por padrão, o cache vem habilitado com a estratégia**`beagle-with-fallback-to-cache`**, porém a estratégia`beagle-cache-only` também pode ser utilizada para implementar o [**protocolo de cache do Beagle**](/pt/home/resources/customization/beagle-for-web/cache-strategy).
 
 {{% alert color="warning" %}}
-Lembre de deixar o CORS habilitado no backend sempre que for utilizar a estratégia de cache do Beagle para Web. 
+Lembre de deixar o CORS habilitado no backend sempre que for utilizar a estratégia de cache do Beagle para Web.
 {{% /alert %}}
 
 Abaixo, exemplos de como foi alterado do `beagle-with-fallback-to-cache`, que é o padrão, para o `beagle-cache-only.`
@@ -240,7 +238,7 @@ Exemplo de configuração para o **Angula**r:
     name: 'BeagleComponentsModule',
   },
   components: {
-    // Associate every beagle component to your angular component. 
+    // Associate every beagle component to your angular component.
   },
   strategy: 'beagle-cache-only'
 })
@@ -256,5 +254,6 @@ export default createBeagleUIService({
   strategy: 'beagle-cache-only'
 })
 ```
+
 {{% /tab %}}
 {{< /tabs >}}

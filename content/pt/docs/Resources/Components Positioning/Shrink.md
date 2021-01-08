@@ -10,11 +10,11 @@ description: >-
 
 ## Shrink
 
-Esta propriedade define a **capacidade de um item encolher**, reduzindo os elementos filhos ao longo do eixo principal. 
+Esta propriedade define a **capacidade de um item encolher**, reduzindo os elementos filhos ao longo do eixo principal.
 
-A diminuição dos elementos é feita de uma forma que o tamanho total de todos os filhos encolhidos não ultrapasse o tamanho do container principal. 
+A diminuição dos elementos é feita de uma forma que o tamanho total de todos os filhos encolhidos não ultrapasse o tamanho do container principal.
 
-Com o Shrink, o elemento recebe um valor double, que irá diminuir o elemento de acordo com espaço do container. Veja no exemplo: 
+Com o Shrink, o elemento recebe um valor double, que irá diminuir o elemento de acordo com espaço do container. Veja no exemplo:
 
 ![](https://lh5.googleusercontent.com/30mBYNqNtZf0Lp1Zw4dr8dkZW5PsOtxqHtqkgbPLZNbU6g8xFs0QmGh5ip66WlU5cHSqtdBWduGuwrLGyGp2uYkkAw6GLXpaf-ZRNORNJywill9WCTZIlRAva9_s5G30MJCh-rOS)
 
@@ -48,6 +48,7 @@ Com o Shrink, o elemento recebe um valor double, que irá diminuir o elemento de
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
+
 ```swift
 private func screen() -> Screen {
         return
@@ -73,9 +74,10 @@ private func screen() -> Screen {
         )
     }
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
 {{% alert color="info" %}}
-Para saber mais sobre Shrink, acesse a [**documentação do Yoga Layout**](https://yogalayout.com/docs/flex).
+Para saber mais sobre Shrink, acesse a [**documentação do Yoga Layout**](https://yogalayout.com/pt/home/flex).
 {{% /alert %}}
