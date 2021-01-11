@@ -75,7 +75,7 @@ public BeagleTest clickOnText(final String text) {
         return this;
 }
 ````
-### Step 4: inserting a component
+### Step 4: Insert a component
 
 We will insert a text to the text field component. Since this component doesn’t have an ``ID`` or a text, it will be located by its placement in the hierarchy of the related components. Check the function ``typeIntoTextField``:
 
