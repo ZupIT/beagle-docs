@@ -93,5 +93,5 @@ public BeagleTest typeIntoTextField(int position1, int position2, String text) {
 ````
 
 {{% alert color="success" %}}
-A that’s it, the test will interact with the interface and validate the component! 
+That’s it, the test will interact with the interface and validate the component! 
 {{% /alert %}}
