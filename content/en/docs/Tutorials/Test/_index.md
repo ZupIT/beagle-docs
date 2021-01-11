@@ -1,7 +1,7 @@
 ---
 title: Tests
 weight: 235
-description: "In this section, you will lean more about Beagle built-in tests and tests in Beagle's applications."
+description: "In this section, you will learn more about Beagle built-in tests and tests in Beagle applications."
 ---
 
 ---
@@ -95,4 +95,3 @@ public BeagleTest typeIntoTextField(int position1, int position2, String text) {
 {{% alert color="success" %}}
 A that’s it, the test will interact with the interface and validate the component! 
 {{% /alert %}}
-
