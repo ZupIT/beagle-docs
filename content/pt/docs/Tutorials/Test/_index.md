@@ -23,7 +23,9 @@ Esse tipo de teste pode ser aplicado para plataformas mobile e web e os principa
 
 ## Testes Instrumentados Mobile
 
-Testes instrumentados, também conhecidos como testes unitários instrumentados, são testes que rodam em devices (aparelhos) reais ou em emuladores. Eles utilizam APIs para encaminhar (instrumentar \ orquestrar) instruções vindas do código de teste para o device ou emulador. Estes testes trazem mais fidelidade se comparados a testes unitários convencionais, porém sua execução é mais lenta. Nos testes instrumentados do Beagle, as vezes um componente server-driven não tem um `ID`. Neste caso, nós adicionamos um elemento widget que referencia o componente e um `ID`, para que então possamos identificar o componente pelo `ID` programaticamente gerado.
+Testes instrumentados, também conhecidos como testes unitários instrumentados, são testes que rodam em devices (aparelhos) reais ou em emuladores. Eles utilizam APIs para encaminhar (instrumentar \ orquestrar) instruções vindas do código de teste para o device ou emulador. Estes testes trazem mais fidelidade se comparados a testes unitários convencionais, porém sua execução é mais lenta. 
+
+Nos testes instrumentados do Beagle, as vezes um componente server-driven não tem um `ID`. Neste caso, nós adicionamos um elemento widget que referencia o componente e um `ID`, para que então possamos identificar o componente pelo `ID` programaticamente gerado.
 
 ### Exemplo de Teste Instrumentado Mobile
 
