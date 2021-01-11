@@ -46,8 +46,7 @@ Check the example below to see how the structure works:
       </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">It refers to a native style to be applied in the button. This attribute
-        is optional, meaning if it is not informed it will be used the default style
-        of your application.</td>
+         is optional, when it's not informed, your application's default style will be used.</td>
     </tr>
     <tr>
       <td style="text-align:left">onPress</td>
