@@ -77,7 +77,7 @@ public BeagleTest clickOnText(final String text) {
 
 ### Passo 4: Inserir o componente
 
-Neste último passo, vamos inserir um texto no componente `text field`. Uma vez que este componente não possui ID e nem um texto, ele será localizado pelo seu posicionamento na hierarquia do componentes. Veja no exemplo a seguir: 
+Neste último passo, vamos inserir um texto no componente `text field`. Uma vez que este componente não possui ID e nem um texto, ele será localizado pelo seu posicionamento na hierarquia dos componentes. Veja no exemplo a seguir: 
 
 ```java
 public BeagleTest typeIntoTextField(int position1, int position2, String text) {
