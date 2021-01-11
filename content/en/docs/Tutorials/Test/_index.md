@@ -8,7 +8,7 @@ description: "In this section, you will learn more about Beagle built-in tests a
 
 ## Unit tests
 
-Unit tests measure code functionality at its minor fraction or unit. Beagle has its own unit tests, and they need to be frequently reviewed, updated or added to make sure important code units are tested.
+Unit tests measure code functionality at its minor fraction or unit. Beagle has its own unit tests, and they should be frequently reviewed, updated or added to make sure important code units are tested.
 
 ## User interface tests
 
