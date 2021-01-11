@@ -33,7 +33,7 @@ On Beagle, each style must be referenced in a way that each one has a name to be
 
 ### Example
 
-On the example below, we have a image method that's registering many images that are been used to build a page from backend. 
+On the example below, check an image method that's registering many images used to build a page from backend. 
 
 You can use `when` operator to design styles, the first value is listed as a `string` that identifies Beagle's component style _\(similar to key/value\)_ and with an`Arrow Function ->` where you list the component's style _\(id style on Android\)_. 
 
