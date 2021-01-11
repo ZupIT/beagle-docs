@@ -35,7 +35,7 @@ On Beagle, each style must be referenced in a way that each one has a name to be
 
 On the example below, we have a image method that's registering many images that are been used to build a page from backend. 
 
-Notice that, on her, we can use the `when` operator to design styles, that is the first value is listed as a `string` that identifies Beagle's component style _\(on a similar relation key/value\)_ and with a`Arrow Function ->` where we list the component's style _\(id style on Android\)_. Again, the logic here is similar to a pair “key/value”. 
+You can use `when` operator to design styles, the first value is listed as a `string` that identifies Beagle's component style _\(similar to key/value\)_ and with an`Arrow Function ->` where you list the component's style _\(id style on Android\)_. 
 
 With the function already established, the _**else**_ operator will contain a “default” style, like we demonstrate on the code below:
 
