@@ -81,7 +81,7 @@ export class BeagleComponentsModule {}
 
 ```
 
-**Step 3:** Now, you can substitute the default component in the `beagle.module.ts` file:
+**Step 3:** Now, you can replace the default component in `beagle.module.ts` file:
 
 ```text
 import { BeagleModule } from '@zup-it/beagle-angular';
