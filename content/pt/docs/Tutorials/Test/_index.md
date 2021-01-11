@@ -12,7 +12,9 @@ Testes unitários **medem a funcionalidade do código** em sua menor fração ou
 
 ## Testes de Interface De Usuário
 
-O Beagle implementa seus próprios testes de interface de usuário para garantir que componentes de interface e seus comportamentos funcionem corretamente. Tanto a plataforma Mobile como WEB são testadas desta forma. Os principais frameworks usados são:
+O Beagle implementa seus próprios testes de interface de usuário para garantir que componentes de interface e seus comportamentos funcionem corretamente. 
+
+Esse tipo de teste pode ser aplicado para plataformas mobile e web e os principais frameworks usados são:
 - [Cucumber](https://cucumber.io/)
 - [Espresso](https://developer.android.com/training/testing/espresso)
 - [XCTest](https://developer.apple.com/documentation/xctest)
