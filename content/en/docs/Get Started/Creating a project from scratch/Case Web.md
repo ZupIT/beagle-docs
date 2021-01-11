@@ -237,7 +237,7 @@ function App() {
 export default App;
 ```
 
-On this step, we point where our layout defined with `payload.json` file should be rendered. Here, we have two components provided by Beagle: 
+On this step, you will see where the layout defined with `payload.json` file should be rendered. Here, there are two components provided by Beagle: 
 
 `<BeagleProvider>`: Receives the `value` propriety as the `beagle-service` created on the previous step and that contains the initials configurations.
 
