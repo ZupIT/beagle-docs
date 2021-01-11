@@ -53,7 +53,7 @@ public BeagleTest checkViewContainsText(String text) {
 }
 ````
 
-### Step 2: presenting the menu
+### Step 2: Present the menu
 
 After you locate the header, the next step is to use the function ``selectMenuOption`` to select the “hamburger” icon and present the options of the menu. Since the server-driven component doesn’t have an ``ID`` for this example, you have to use the component's placement to perform this selection. This way, you search for the text on the ContentDescription with value “More options”, and then its placement on the component's hierarchy:
 
