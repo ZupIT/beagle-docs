@@ -327,7 +327,7 @@ It is the binding type which the context value it will be generally, a key/value
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
-In Kotlin it is necessary to create some classes to manage multivalued contexts
+It's necessary to create some classes to manage multivalued contexts in Kotlin.
 
 ```
 Container(
