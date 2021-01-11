@@ -16,7 +16,7 @@ Besides these configuration, you can also customize the navigation of your appli
 
 There are two customization options:
 
-1. According to Android's defult animation.
+1. According to Android's default animation.
 2. Fragments transition provided by Beagle, that it can be customized according to your preference and design system. They are: 
 
 * [**PushView**](/docs/api/actions/navigate/pushview)
@@ -43,4 +43,3 @@ open fun getFragmentTransitionAnimation() = FragmentTransitionAnimation(
     popExit = R.anim.slide_to_right
 )
 ```
-
