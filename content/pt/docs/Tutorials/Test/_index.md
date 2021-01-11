@@ -57,7 +57,9 @@ public BeagleTest checkViewContainsText(String text) {
 
 ### Passo 2: Apresentar o menu
 
-Após localizar o `Header`, o próximo passo é utilizar a `selectMenuOption` para selecionar o ícone "hambúrguer" e apresentar as opções do menu. Por ser um componente server-driven e não possuir um ID nesta implementação,  utilizamos o posicionamento do componente para realizar a seleção. Desta forma, buscamos pelo texto presente no `ContentDescription ("More options")` e, em seguida, o seu posicionamento na hierarquia do componente. Confira no exemplo: 
+Após localizar o `Header`, o próximo passo é utilizar a `selectMenuOption` para selecionar o ícone "hambúrguer" e apresentar as opções do menu. Por ser um componente server-driven e não possuir um ID nesta implementação, você deve utilizar o posicionamento do componente para realizar a seleção. 
+
+Feito isso, busque pelo texto presente no `ContentDescription ("More options")` e, em seguida, o seu posicionamento na hierarquia do componente. Confira no exemplo: 
 
 ```java
 public BeagleTest selectMenuOption() {
