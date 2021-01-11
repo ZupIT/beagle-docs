@@ -26,7 +26,7 @@ Any Beagle's event must be associated with an action list. See below a button's 
 
 An action is map key/value with at least a `_beagleAction_` property. Its value indicates which action must be performed when the event it is triggered. The other properties specify the parameters expected by the indicated action. 
 
-There are several implemented actions on Beagle by default and all of them start with prefix "**beagle:**" and the customized actions start with "**custom:**". 
+There are several default implemented actions on Beagle and all of them start with "**beagle:**" prefix and the customized actions start with "**custom:**". 
 
 To learn how to create custom actions, check out [**Beagle's customization section.**](/docs/resources/customization/)
 
