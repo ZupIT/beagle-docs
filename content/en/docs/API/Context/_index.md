@@ -394,7 +394,7 @@ If a vector is used on a context value, to access a specific position, you have 
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
-No Kotlin é necessario que se crie algumas classes para gerenciar os contextos multivalorados
+It's necessary to create some classes to manage multivalued contexts in Kotlin.
 
 ```text
 Container(
