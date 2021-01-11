@@ -65,7 +65,7 @@ public BeagleTest selectMenuOption() {
 }
 ````
 
-### Step 3: selecting the component
+### Step 3: Select the component
 
 Here, the test will click on a textfield component (located from its text). The component is a menu item, and it was already loaded in the previous step.
 
