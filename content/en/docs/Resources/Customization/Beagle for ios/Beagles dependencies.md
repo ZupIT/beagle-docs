@@ -243,7 +243,7 @@ Variable that defines a global scope context.
 
 ## IsLoggingEnabled
 
-It is a boolean variable that enables or disables the logs, and it comes already enabled by a default. 
+It is a boolean variable that enables or disables the logs. It is enabled by default. 
 
 ## Logger
 
