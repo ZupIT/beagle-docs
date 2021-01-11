@@ -29,7 +29,7 @@ Testes instrumentados, também conhecidos como testes unitários instrumentados,
 
 ![](/gif-teste.gif)
 
-Neste exemplo, fizemos um teste instrumentado na plataforma Android utilizando o framework Espresso. Nós verificamos a funcionalidade de seleção e inserção de valores em um componente `text field`, que é server-driven. 
+Neste exemplo, o objetivo é realizar um teste instrumentado na plataforma Android utilizando o framework Espresso. Para isso, você deve verificar a funcionalidade de seleção e inserção de valores em um componente `text field`, que é server-driven. 
 
 ```java
 @Test
