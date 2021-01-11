@@ -46,7 +46,7 @@ The tool works as a facilitator of **BFF** \([**Backend For Frontend**](/docs/ke
 ![](/beaglemobileback.png)
 
   
-The reason Beagle is able to make this change from the frontend from the backend is because its architecture is structured in [**Server-Driven UI**](/docs/key-concepts#server-driven-ui), where BFF builds the data, components and actions present on the screen in a declarative way, and forwards them in a JSON format, while the front-end deserializes it, renders the visual components natively in addition to executing and assigning the actions present in each of them.
+The reason Beagle is able to make this frontend change from the backend is because its architecture is structured in [**Server-Driven UI**](/docs/key-concepts#server-driven-ui), where BFF builds the data, components and actions present on the screen in a declarative way, and forwards them in a JSON format, while the front-end deserializes it, renders the visual components natively in addition to executing and assigning the actions present in each of them.
 
 ### Beagle's Pillars 
 
