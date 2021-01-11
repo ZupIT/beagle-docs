@@ -34,7 +34,7 @@ For Beagle to be able to apply customized styles to components, when they are de
 
 ### Text
 
-The text components for Beagle Android are **totally customized**. To make this change, follow the example below:  
+The text components for Beagle Android are **totally customizable**. To make this change, follow the example below:  
 
 
 ```markup
