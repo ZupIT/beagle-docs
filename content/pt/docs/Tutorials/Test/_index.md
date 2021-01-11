@@ -8,7 +8,7 @@ description: 'Nesta seção, você encontra mais detalhes de testes do Beagle e 
 
 ## Testes Unitários
 
-Testes unitários **medem a funcionalidade do código** em sua menor fração ou unidade. O Beagle possui testes unitários embutidos, e eles precisam ser frequentemente revisados, atualizados ou adicionados para assegurar que importantes unidades de códigos sejam testadas.
+Testes unitários **medem a funcionalidade do código** em sua menor fração ou unidade. O Beagle possui testes unitários embutidos e eles devem ser frequentemente revisados, atualizados ou adicionados para assegurar que importantes unidades de códigos sejam testadas.
 
 ## Testes de Interface De Usuário
 
