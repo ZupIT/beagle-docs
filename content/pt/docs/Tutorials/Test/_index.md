@@ -45,7 +45,7 @@ Neste exemplo, o objetivo é realizar um teste instrumentado na plataforma Andro
 
 ### Passo 1: Iniciar o teste
 
-Começamos o teste validando se a aplicação foi devidamente aberta na página principal. Na função `checkViewContainsText`, confirmamos se o  `Header` foi apresentado na tela. 
+Comece o teste validando se a aplicação foi devidamente aberta na página principal. Na função `checkViewContainsText`, confirme se o  `Header` foi apresentado na tela. 
 Como este componente não possui um ID propriamente dito, utilizamos o texto contido no `Header` para localizar essa `view` na página principal. Veja o exemplo a seguir: 
 
 ```java
