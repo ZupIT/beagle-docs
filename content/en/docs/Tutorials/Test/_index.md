@@ -42,7 +42,7 @@ In this example, we implemented an instrumented test on the Android platform usi
     }
 ````
 
-###  Step 1: starting the test
+###  Step 1: Start the test
 
 We start the test validating if the application was properly opened on the main page. The function ``checkViewContainsText`` validates if the header is presented on the screen. The component used here does not have an ``ID``, so we use the text in the header (``withText(text)``) to locate the view on the main page: 
 
