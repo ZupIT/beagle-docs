@@ -37,7 +37,7 @@ On the example below, we have a image method that's registering many images that
 
 You can use `when` operator to design styles, the first value is listed as a `string` that identifies Beagle's component style _\(similar to key/value\)_ and with an`Arrow Function ->` where you list the component's style _\(id style on Android\)_. 
 
-With the function already established, the _**else**_ operator will contain a “default” style, like we demonstrate on the code below:
+With the function already established, the _**else**_ operator will contain a “default” style, check the example below:
 
 ![](https://lh5.googleusercontent.com/sRycVP6U1ThpjYfz4KJHH1Dp6jCZxONg7u1KC-_CDCiROkOFwhOvF5kGOxuTpOexLUZ8R-J97UCMNKqV16uUz4MBGIO279Dn4vS6LZiqIFn_kOtxtX5wLMo57wKS3_5nKdDoc3gM)
 
