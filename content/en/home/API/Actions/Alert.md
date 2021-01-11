@@ -12,12 +12,12 @@ description: You will find here Alert definition and its attributes details
 
 Alert structure is:
 
-| Attribute | Type                                                   | Required | Definition                  |
-| :-------- | :----------------------------------------------------- | :------- | :-------------------------- |
-| title     | String or [**Binding**](/pt/home/api/context#bindings) |          | Box alert title.            |
-| message   | String or [**Binding**](/pt/home/api/context#bindings) | ✓        | Box alert message.          |
-| onPressOk | [**Action**](/pt/home/api/actions)                     |          | Confirmation button action. |
-| labelOk   | String                                                 |          | Confirmation button label.  |
+| Attribute | Type                                                | Required | Definition                  |
+| :-------- | :-------------------------------------------------- | :------- | :-------------------------- |
+| title     | String or [**Binding**](/home/api/context#bindings) |          | Box alert title.            |
+| message   | String or [**Binding**](/home/api/context#bindings) | ✓        | Box alert message.          |
+| onPressOk | [**Action**](/home/api/actions)                     |          | Confirmation button action. |
+| labelOk   | String                                              |          | Confirmation button label.  |
 
 ## How to use it?
 

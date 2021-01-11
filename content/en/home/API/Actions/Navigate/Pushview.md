@@ -12,9 +12,9 @@ Presents a new screen and puts it on the pile.
 
 Your structure is represented by the attribute below:
 
-| **Attribute** | **Type**                                          | Required | **Definition**    |
-| :------------ | :------------------------------------------------ | :------- | :---------------- |
-| route         | [**Route**](/pt/home/api/actions/navigate/route/) | ✓        | Navigation route. |
+| **Attribute** | **Type**                                       | Required | **Definition**    |
+| :------------ | :--------------------------------------------- | :------- | :---------------- |
+| route         | [**Route**](/home/api/actions/navigate/route/) | ✓        | Navigation route. |
 
 ## How to use it?
 

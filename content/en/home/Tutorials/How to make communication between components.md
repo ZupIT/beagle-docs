@@ -9,7 +9,7 @@ description: >-
 
 The **communication between components** is a way to share information with the use of Observables that, in general, issue notifications when a change happen with them.
 
-You will see below how to configure the communication between components using [**Context, a Beagle component.** ](/pt/home/api/context/)
+You will see below how to configure the communication between components using [**Context, a Beagle component.** ](/home/api/context/)
 
 ## Configuring the communication between components
 
@@ -36,7 +36,7 @@ The end point below returns a similar JSON. We listed only the data we will use,
 
 ## How will I communicate?
 
-A function called [**SetContext**](/pt/home/api/actions/setcontext) is responsible to update the context component values and it will be called on the screen when the you want to use the information on the context.
+A function called [**SetContext**](/home/api/actions/setcontext) is responsible to update the context component values and it will be called on the screen when the you want to use the information on the context.
 
 Follow the next steps on how to do it:
 

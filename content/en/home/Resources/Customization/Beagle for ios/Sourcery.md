@@ -48,7 +48,7 @@ The list below shows the attributes used in this file:
 - `output` : o path for generates files.
 
 {{% alert color="info" %}}
-For more information and details about Sourcery, check their [**documentation**](https://cdn.rawgit.com/krzysztofzablocki/Sourcery/master/pt/home/usage.html#configuration-file).
+For more information and details about Sourcery, check their [**documentation**](https://cdn.rawgit.com/krzysztofzablocki/Sourcery/master/home/usage.html#configuration-file).
 {{% /alert %}}
 
 ### `.yml` file configuration

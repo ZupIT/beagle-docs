@@ -8,8 +8,8 @@ description: >-
 
 ---
 
-Once you have finished [**Beagle's installation**,](/pt/home/get-started/installing-beagle/web) now you can make usage configuration according to the framework you're using:
+Once you have finished [**Beagle's installation**,](/home/get-started/installing-beagle/web) now you can make usage configuration according to the framework you're using:
 
 {{% alert color="info" %}}
-If you wanto to use a BFF, it's necessary to have a configured CORS. **See how to do this on** [**use configurations for backend**.](/pt/home/get-started/using-beagle/backend#cors)
+If you wanto to use a BFF, it's necessary to have a configured CORS. **See how to do this on** [**use configurations for backend**.](/home/get-started/using-beagle/backend#cors)
 {{% /alert %}}

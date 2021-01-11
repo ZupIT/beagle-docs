@@ -19,35 +19,35 @@ Beagle has **21 components**, they are currently divided into **5 categories**:
 {{< tabs id="T114" >}}
 {{% tab name="Layout" %}}
 
-- [**Container**](/pt/home/api/components/layout/container)
-- [**List View**](/pt/home/api/components/layout/listview)
-- [**PageView**](/pt/home/api/components/layout/pageview)
-- [**ScrollView**](/pt/home/api/components/layout/scrollview)
+- [**Container**](/home/api/components/layout/container)
+- [**List View**](/home/api/components/layout/listview)
+- [**PageView**](/home/api/components/layout/pageview)
+- [**ScrollView**](/home/api/components/layout/scrollview)
   {{% /tab %}}
 
 {{% tab name="Navigation" %}}
 
-- [**Touchable**](/pt/home/api/components/touchable)
+- [**Touchable**](/home/api/components/touchable)
   {{% /tab %}}
 
 {{% tab name="Forms" %}}
 
-- [**Validator**](/pt/home/api/components/forms/validator)
-- [**Simple Form**](/pt/home/api/components/forms/simple-form)
-- [**Input**](/pt/home/api/components/ui/textinput)
+- [**Validator**](/home/api/components/forms/validator)
+- [**Simple Form**](/home/api/components/forms/simple-form)
+- [**Input**](/home/api/components/ui/textinput)
   {{% /tab %}}
 
 {{% tab name="Lazy" %}}
 
-- [**LazyComponent**](/pt/home/api/components/lazy)
+- [**LazyComponent**](/home/api/components/lazy)
   {{% /tab %}}
 
 {{% tab name="UI" %}}
 
-- [**Button**](/pt/home/api/components/ui/button)
-- [**Image**](/pt/home/api/components/ui/image)
-- [**Tab View**](/pt/home/api/components/ui/tabview)
-- [**Text**](/pt/home/api/components/ui/text)
-- [**Web View**](/pt/home/api/components/ui/webview)
+- [**Button**](/home/api/components/ui/button)
+- [**Image**](/home/api/components/ui/image)
+- [**Tab View**](/home/api/components/ui/tabview)
+- [**Text**](/home/api/components/ui/text)
+- [**Web View**](/home/api/components/ui/webview)
   {{% /tab %}}
   {{< /tabs >}}

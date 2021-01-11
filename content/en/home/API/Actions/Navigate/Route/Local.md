@@ -11,9 +11,9 @@ Navigation for a local content.
 
 The structure is represented by the attributes below:
 
-| **Attribute** | **Type**                          | Required | **Definition**      |
-| :------------ | :-------------------------------- | :------- | :------------------ |
-| screen        | [**Screen**](/pt/home/api/screen) |          | Screen to be loaded |
+| **Attribute** | **Type**                       | Required | **Definition**      |
+| :------------ | :----------------------------- | :------- | :------------------ |
+| screen        | [**Screen**](/home/api/screen) |          | Screen to be loaded |
 
 ## How to use it?
 

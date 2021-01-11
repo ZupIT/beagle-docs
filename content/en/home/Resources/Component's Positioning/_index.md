@@ -16,7 +16,7 @@ description: >-
 
 ## Introduction
 
-Beagle will use a dependency called [**`Yoga Layout`**](https://yogalayout.com/pt/home/) to position components on your application screen. To do this, Yoga calculates the position the elements are, and after that, it does its rendering.
+Beagle will use a dependency called [**`Yoga Layout`**](https://yogalayout.com/home/) to position components on your application screen. To do this, Yoga calculates the position the elements are, and after that, it does its rendering.
 
 ## **About Yoga Layout**
 

@@ -189,5 +189,5 @@ private fun screen() :Widget{
 ![Basis with UnitType.AUTO and FlexDirection.ROW](/captura-de-tela-2020-06-04-a-s-15.48.12%20%281%29.png)
 
 {{% alert color="info" %}}
-For more information about Basis, check out the [**Yoga Layout documentation**](https://yogalayout.com/pt/home/flex/).
+For more information about Basis, check out the [**Yoga Layout documentation**](https://yogalayout.com/home/flex/).
 {{% /alert %}}

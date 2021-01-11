@@ -338,4 +338,4 @@ Items are evenly distributed along the main axis:
 {{% /tab %}}
 {{< /tabs >}}
 
-**For more information about Justify Content, check out the [**Yoga Layout documentation**](https://yogalayout.com/pt/home/flex/).**
+**For more information about Justify Content, check out the [**Yoga Layout documentation**](https://yogalayout.com/home/flex/).**

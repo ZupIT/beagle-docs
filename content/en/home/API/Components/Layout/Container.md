@@ -12,11 +12,11 @@ description: Container components description and its attribute details
 
 See how the structure is represented:
 
-| **Attribute** | **Type**                                                       | Required | **Definition**                                                                                              |
-| :------------ | :------------------------------------------------------------- | :------- | :---------------------------------------------------------------------------------------------------------- |
-| children      | List &lt;[**ServerDriven Component**](/pt/home/api/widget)&gt; | ✓        | Defines the component list that it is part of the container.                                                |
-| context       | [**ContextData**](/pt/home/api/context)                        |          | It is the [**context**](/pt/home/api/context) in this widget.                                               |
-| onInit        | List&lt;[**Action**](/pt/home/api/actions)&gt;                 |          | It is a parameter that allows you to define a list of actions to be performed when the Widget is displayed. |
+| **Attribute** | **Type**                                                    | Required | **Definition**                                                                                              |
+| :------------ | :---------------------------------------------------------- | :------- | :---------------------------------------------------------------------------------------------------------- |
+| children      | List &lt;[**ServerDriven Component**](/home/api/widget)&gt; | ✓        | Defines the component list that it is part of the container.                                                |
+| context       | [**ContextData**](/home/api/context)                        |          | It is the [**context**](/home/api/context) in this widget.                                                  |
+| onInit        | List&lt;[**Action**](/home/api/actions)&gt;                 |          | It is a parameter that allows you to define a list of actions to be performed when the Widget is displayed. |
 
 ## How to use it?
 

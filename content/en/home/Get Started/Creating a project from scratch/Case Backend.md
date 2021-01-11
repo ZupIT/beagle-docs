@@ -51,7 +51,7 @@ Follow the steps below to import the project you have created. First, open **int
 
 ### Step 1: Configure the project
 
-As a starting point, follow this step by step to [**install the backend**](/pt/home/get-started/installing-beagle/backend).
+As a starting point, follow this step by step to [**install the backend**](/home/get-started/installing-beagle/backend).
 
 ### Step 2: Define the structure
 
@@ -235,8 +235,8 @@ In order to use the backend service, you must have the front end prepared for Be
 
 To learn more about configuring your frontend environment, see more at:
 
-👉 Beagle implementation tutorial for [**Android**](/pt/home/get-started/creating-a-project-from-scratch/case-android/).
+👉 Beagle implementation tutorial for [**Android**](/home/get-started/creating-a-project-from-scratch/case-android/).
 
-👉Beagle implementation tutorial for [**iOS**](/pt/home/get-started/creating-a-project-from-scratch/case-ios).
+👉Beagle implementation tutorial for [**iOS**](/home/get-started/creating-a-project-from-scratch/case-ios).
 
-👉Beagle implementation tutorial for [**Web**](/pt/home/get-started/creating-a-project-from-scratch/case-web).
+👉Beagle implementation tutorial for [**Web**](/home/get-started/creating-a-project-from-scratch/case-web).

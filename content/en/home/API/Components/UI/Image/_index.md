@@ -12,10 +12,10 @@ The Image widget defines a native image using server-driven data received throug
 
 Your structure is represented by the attributes below:
 
-| **Attribute** | **Type**                                                                                                     | Required | **Definition**                                                      |
-| :------------ | :----------------------------------------------------------------------------------------------------------- | :------- | :------------------------------------------------------------------ |
-| path          | [**ImagePath**](/pt/home/api/components/ui/image/imagepath) or [**Binding**](/pt/home/api/context/#bindings) | ✓        | Refers to a local image or URL of a remote image to be exhibited.   |
-| mode          | ImageContentMode                                                                                             |          | Responsible to control how the image will be internally controlled. |
+| **Attribute** | **Type**                                                                                               | Required | **Definition**                                                      |
+| :------------ | :----------------------------------------------------------------------------------------------------- | :------- | :------------------------------------------------------------------ |
+| path          | [**ImagePath**](/home/api/components/ui/image/imagepath) or [**Binding**](/home/api/context/#bindings) | ✓        | Refers to a local image or URL of a remote image to be exhibited.   |
+| mode          | ImageContentMode                                                                                       |          | Responsible to control how the image will be internally controlled. |
 
 ## How to use it?
 

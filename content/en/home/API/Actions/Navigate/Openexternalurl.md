@@ -31,7 +31,7 @@ On the example below, you can see a screen that comes from BFF with a button whe
     "text" : "Click me!",
     "onPress" : [ {
       "_beagleAction_" : "beagle:openExternalURL",
-      "url" : "http://docs-beta.usebeagle.io/pt/home/api/actions/navigate/openexternalurl/"
+      "url" : "http://docs-beta.usebeagle.io/home/api/actions/navigate/openexternalurl/"
     } ]
   }
 }

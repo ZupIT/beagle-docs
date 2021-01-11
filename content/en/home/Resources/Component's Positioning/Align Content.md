@@ -496,4 +496,4 @@ private func screen() -> Screen {
 {{% /tab %}}
 {{< /tabs >}}
 
-For more information about Align Content, check out the [**Yoga Layout documentation**](https://yogalayout.com/pt/home/flex/).
+For more information about Align Content, check out the [**Yoga Layout documentation**](https://yogalayout.com/home/flex/).

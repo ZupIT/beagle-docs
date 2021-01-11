@@ -22,7 +22,7 @@ You must follow the example below:
 {{% alert color="warning" %}}
 Make sure to list your Beagle Activity as named in your AndroidManifestfile.
 
-In this example, we only call it BeagleActivity, but this name is defined by you when creating your BeagleActivity. In our tutorial [**Creating a project from scratch** ](/pt/home/get-started/creating-a-project-from-scratch/case-android), we call it `AppBeagleActivity`.
+In this example, we only call it BeagleActivity, but this name is defined by you when creating your BeagleActivity. In our tutorial [**Creating a project from scratch** ](/home/get-started/creating-a-project-from-scratch/case-android), we call it `AppBeagleActivity`.
 {{% /alert %}}
 
 ```kotlin
@@ -51,11 +51,11 @@ startActivity(intent)
 
 The `ScreenRequest` is an internal Beagle class used to request which screen you want to display.You will only list the **`URL`** attribute for the page you want to load from the BFF. However, this element has other attributes, which can be used in the transition and between screens.
 
-To learn more about this class, check out on [**Screen Request**](/pt/home/api/screen-request)
+To learn more about this class, check out on [**Screen Request**](/home/api/screen-request)
 {{% /tab %}}
 
 {{% tab name="iOS" %}}
-To render a [**server-driven**](/pt/home/key-concepts#server-driven-ui) screen, just create an instance **`BeagleScreenViewController`** and the type is **`remote`**, then you make the initialization with your [**BFF's URL**](/pt/home/key-concepts#backend-for-frontend), like the example below:
+To render a [**server-driven**](/home/key-concepts#server-driven-ui) screen, just create an instance **`BeagleScreenViewController`** and the type is **`remote`**, then you make the initialization with your [**BFF's URL**](/home/key-concepts#backend-for-frontend), like the example below:
 
 ```kotlin
 let beagleViewController = Beagle.screen(
@@ -95,7 +95,7 @@ To define where we should display a server-driven screen on Angular, you should 
 {{% alert color="info" %}}
 This component has other attributes that can be configured. However, in this implementation you will only use the **`path attribute`**, described in the example below.
 
-For more details on this component click on the link below and check the [Remote View](/pt/home/resources/customization/beagle-for-web/remote-view-parameters) details.
+For more details on this component click on the link below and check the [Remote View](/home/resources/customization/beagle-for-web/remote-view-parameters) details.
 {{% /alert %}}
 
 On the html file of your component, add the `remote view`.

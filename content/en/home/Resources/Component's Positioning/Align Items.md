@@ -394,4 +394,4 @@ Items are aligned acording to the firt text line in each element.
 {{% /tab %}}
 {{< /tabs >}}
 
-For more information about Align Itens, check out the [**Yoga Layout documentation**](https://yogalayout.com/pt/home/flex/).
+For more information about Align Itens, check out the [**Yoga Layout documentation**](https://yogalayout.com/home/flex/).

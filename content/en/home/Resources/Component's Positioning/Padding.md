@@ -457,4 +457,4 @@ It defines some vertical space inside the element:
 {{% /tab %}}
 {{< /tabs >}}
 
-**For more information about Padding, check out the [**Yoga Layout documentation**](https://yogalayout.com/pt/home/flex/).**
+**For more information about Padding, check out the [**Yoga Layout documentation**](https://yogalayout.com/home/flex/).**

@@ -10,7 +10,7 @@ description: >-
 
 ## **Creating a Design System**
 
-On the use example of the page creating an Android project with Beagle , you saw how to [**implement Beagle**](/pt/home/get-started/creating-a-project-from-scratch/case-android) to create a simple server-driven screen with only 2 texts: 1 title and 1 paragraph.
+On the use example of the page creating an Android project with Beagle , you saw how to [**implement Beagle**](/home/get-started/creating-a-project-from-scratch/case-android) to create a simple server-driven screen with only 2 texts: 1 title and 1 paragraph.
 
 In this tutorial, the idea is to get deeper from the [**previous project**](#step-7-display-your-server-driven-screen) to **create a Design System** **on Beagle's library**. To better illustrate the explanation, we'll use these [**sample codes**](https://github.com/ZupIT/beagle-examples) that you can find out in our repository.
 
@@ -99,7 +99,7 @@ When you create a Design System class, it's necessary to have, at least, one the
 
 ### **Step 2: Customize a component**
 
-This moment is where the [**BFF**](/pt/home/key-concepts#backend-for-frontend) happens, it is when frontend connects to the backend.
+This moment is where the [**BFF**](/home/key-concepts#backend-for-frontend) happens, it is when frontend connects to the backend.
 
 For that, **you will have to configure Android's frontend and Intellij backend.**
 In case you don't have it ready, it just download [**the backend configuration example**](https://github.com/ZupIT/beagle-examples) and run it.
@@ -156,7 +156,7 @@ Repeat this process to another `Text` component that is a paragraph, the differe
 This is all you have to do on backend at this moment. You can run your backend application in order your service is available and you will see your screen with Android's style.
 
 {{% alert color="info" %}}
-In case there is some problem, we recommend that you follow the tutorial to [**implement the backend installation.**](/pt/home/get-started/installing-beagle/backend)
+In case there is some problem, we recommend that you follow the tutorial to [**implement the backend installation.**](/home/get-started/installing-beagle/backend)
 {{% /alert %}}
 
      4. First, register three file colors on the android file.
@@ -228,7 +228,7 @@ To do so, follow these steps:
 2. Inside this method, create a when operator. Inside it, we'll list all the text styles that we want to use now and later.
 
 {{% alert color="info" %}}
-If you have any trouble on making this configuration, check out [**how to use When.**](https://kotlinlang.org/pt/home/reference/control-flow.html#when-expression)
+If you have any trouble on making this configuration, check out [**how to use When.**](https://kotlinlang.org/home/reference/control-flow.html#when-expression)
 {{% /alert %}}
 
 3. Infor the `"styles"` names we referenced on backend \(BFF\) and the style created on Android, programmatically connecting them.

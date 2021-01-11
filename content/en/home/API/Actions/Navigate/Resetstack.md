@@ -12,9 +12,9 @@ Opens a screen with an informed route of a new flow and cleans the pile of previ
 
 Your structure is represented by the attribute below:
 
-| **Attribute** | Type                                              | Required | Definition        |
-| :------------ | :------------------------------------------------ | :------- | :---------------- |
-| route         | [**Route**](/pt/home/api/actions/navigate/route/) | ✓        | Navigation route. |
+| **Attribute** | Type                                           | Required | Definition        |
+| :------------ | :--------------------------------------------- | :------- | :---------------- |
+| route         | [**Route**](/home/api/actions/navigate/route/) | ✓        | Navigation route. |
 
 ## How to use it?
 

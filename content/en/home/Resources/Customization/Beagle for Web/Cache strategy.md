@@ -6,7 +6,7 @@ description: You will find here the cache strategies types description on the We
 
 ---
 
-Beagle Web offers some cache strategies, one of them is the [**Beagle's pattern cache protocol guided by the backed**](/pt/home/resources/cache#how-does-the-cache-protocol-works).
+Beagle Web offers some cache strategies, one of them is the [**Beagle's pattern cache protocol guided by the backed**](/home/resources/cache#how-does-the-cache-protocol-works).
 
 Other strategies you are able to use:
 
@@ -52,7 +52,7 @@ If you backend is with disabled cache, the payload from the tree will be saved o
 
 ### **2. beagle-cache-only**
 
-This strategy only implements [**Beagle's cache protocol**](/pt/home/resources/cache/). This means that, it works the same way the standard one, but without the fallback.
+This strategy only implements [**Beagle's cache protocol**](/home/resources/cache/). This means that, it works the same way the standard one, but without the fallback.
 
 When you enable this strategy, the tree that is on cache it is only used if there is a valid max-age or if it receives a 304 status from the backend.
 

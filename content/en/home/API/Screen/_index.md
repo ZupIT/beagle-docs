@@ -10,15 +10,15 @@ description: Here you'll find all about screen's components and its attributes d
 
 Your screen has attributes and components that can be used and configured. On the table below, we listed the main characteristics from each of these attributes.
 
-| **Attribute**          | **Type**                                                     | Required | **Definition**                                                                                        |
-| :--------------------- | :----------------------------------------------------------- | :------- | :---------------------------------------------------------------------------------------------------- |
-| identifier             | String                                                       |          | Attribute that globally identifies a screen in your application so you can attributes actions for it. |
-| safe area              | [**Safe Area**](/pt/home/api/screen/safe-area)               |          | Specifies a screen's component position.                                                              |
-| navigation bar         | [**Navigation Bar**](/pt/home/api/screen/navigation-bar)     |          | Allows action/navigation's bar on the screen.                                                         |
-| child                  | [**Server-Driven Component**](/pt/home/api/components/)      | ✓        | Define screen's elements. It can be any visual component that extends to`ServerDrivenComponent`.      |
-| style                  | [**Style**](/pt/home/api/widget#style-attributes)            |          | Provide visual customization options to the `screen.`                                                 |
-| screen analytics event | [**Screen Event**](/pt/home/api/analytics#screenview-option) |          | Configure analytics elements to your screen.                                                          |
-| context                | [**ContextData**](/pt/home/api/context/)                     |          | Screen's context.                                                                                     |
+| **Attribute**          | **Type**                                                  | Required | **Definition**                                                                                        |
+| :--------------------- | :-------------------------------------------------------- | :------- | :---------------------------------------------------------------------------------------------------- |
+| identifier             | String                                                    |          | Attribute that globally identifies a screen in your application so you can attributes actions for it. |
+| safe area              | [**Safe Area**](/home/api/screen/safe-area)               |          | Specifies a screen's component position.                                                              |
+| navigation bar         | [**Navigation Bar**](/home/api/screen/navigation-bar)     |          | Allows action/navigation's bar on the screen.                                                         |
+| child                  | [**Server-Driven Component**](/home/api/components/)      | ✓        | Define screen's elements. It can be any visual component that extends to`ServerDrivenComponent`.      |
+| style                  | [**Style**](/home/api/widget#style-attributes)            |          | Provide visual customization options to the `screen.`                                                 |
+| screen analytics event | [**Screen Event**](/home/api/analytics#screenview-option) |          | Configure analytics elements to your screen.                                                          |
+| context                | [**ContextData**](/home/api/context/)                     |          | Screen's context.                                                                                     |
 
 ## How to use it?
 

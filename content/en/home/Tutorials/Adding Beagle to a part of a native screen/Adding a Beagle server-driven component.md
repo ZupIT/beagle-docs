@@ -19,11 +19,11 @@ On the example below, we will show a server-drive button in a native screen, and
 
 To this configuration works correctly, you have to:
 
-- A configured [**BFF**](/pt/home/key-concepts#backend-for-frontend) with Beagle, in case you haven't configured yet, check out this [**tutorial**](/pt/home/get-started/creating-a-project-from-scratch/case-backend).
+- A configured [**BFF**](/home/key-concepts#backend-for-frontend) with Beagle, in case you haven't configured yet, check out this [**tutorial**](/home/get-started/creating-a-project-from-scratch/case-backend).
 
 - A configured frontend with Beagle in Android or iOS. Check out the tutorial below:
-  - [**Android**](/pt/home/get-started/creating-a-project-from-scratch/case-android/)
-  - [**iOS**](/pt/home/get-started/creating-a-project-from-scratch/case-ios/)
+  - [**Android**](/home/get-started/creating-a-project-from-scratch/case-android/)
+  - [**iOS**](/home/get-started/creating-a-project-from-scratch/case-ios/)
 
 ## Step 1: Create a component in the backend
 
@@ -218,8 +218,8 @@ The structure of **loadView** is:
 | **Attribute** | **Type**                                                                                                                                                                                           | Required | **Definition**                                                   |
 | :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------: | :--------------------------------------------------------------- |
 | activity      | [**AppCompatActivity**](https://developer.android.com/reference/androidx/appcompat/app/AppCompatActivity/)/[**Fragment**](https://developer.android.com/reference/androidx/fragment/app/Fragment/) |    ✓     | Defines the activity or fragment that is using a loadview        |
-| screenRequest | [**ScreenRequest**](/pt/home/api/reference/br.com.zup.beagle.android.view/-screen-request/-screen-request/)                                                                                        |    ✓     | Sets parameters when calling the remote screen                   |
-| listener      | **OnServerStateChanged = (serverState: [ServerDrivenState](/pt/home/api/reference/br.com.zup.beagle.android.view/-server-driven-state/)) -> Unit**                                                 |          | Defines the listener that configures callbacks for screen states |
+| screenRequest | [**ScreenRequest**](/home/api/reference/br.com.zup.beagle.android.view/-screen-request/-screen-request/)                                                                                           |    ✓     | Sets parameters when calling the remote screen                   |
+| listener      | **OnServerStateChanged = (serverState: [ServerDrivenState](/home/api/reference/br.com.zup.beagle.android.view/-server-driven-state/)) -> Unit**                                                    |          | Defines the listener that configures callbacks for screen states |
 
 <br />
 
@@ -303,9 +303,9 @@ At the end of the process, you will "call" our native screen that will shown up 
 {{% /tab %}}
 
 {{% tab name="WEB" %}}
-If you haven't configured you library yet, [**check out on how to do it**.](/pt/home/get-started/using-beagle/web)
+If you haven't configured you library yet, [**check out on how to do it**.](/home/get-started/using-beagle/web)
 
-You have to use [**Remote View**](/pt/home/resources/customization/beagle-for-web/remote-view-parameters), you can find on Beagle's library, to create hybrid screen with some server-driven components on the web.
+You have to use [**Remote View**](/home/resources/customization/beagle-for-web/remote-view-parameters), you can find on Beagle's library, to create hybrid screen with some server-driven components on the web.
 
 See below how each framework works:
 

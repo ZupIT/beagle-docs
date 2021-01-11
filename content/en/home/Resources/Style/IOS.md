@@ -10,7 +10,7 @@ description: "Here, you'll find how to make components' stylization on iOS' proj
 
 Inside Beagle's library for iOS, there's an `AppTheme` class that allows you to personalize components used on your application.
 
-This class also can map application's styles so it can be referenced on BFF to build a [**Server-Driven**](/pt/home/key-concepts#server-driven-ui) screen.
+This class also can map application's styles so it can be referenced on BFF to build a [**Server-Driven**](/home/key-concepts#server-driven-ui) screen.
 
 It makes possible to personalize, for example:
 

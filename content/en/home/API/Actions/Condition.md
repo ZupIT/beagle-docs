@@ -12,11 +12,11 @@ description: >-
 
 It is an action that has a boolean parameter and according to the value the action runs onTrue or onFalse.
 
-| Attribute | Type                                                    | Required | Definition                                                       |
-| :-------- | :------------------------------------------------------ | :------: | :--------------------------------------------------------------- |
-| condition | Boolean or [**Binding**](/pt/home/api/context#bindings) |    ✓     | Condition to define which action will run.                       |
-| onTrue    | List&lt;Action&gt;                                      |          | List of actions that it will be run when the condition is true.  |
-| onFalse   | List&lt;Action&gt;                                      |          | List of actions that it will be run when the condition is false. |
+| Attribute | Type                                                 | Required | Definition                                                       |
+| :-------- | :--------------------------------------------------- | :------: | :--------------------------------------------------------------- |
+| condition | Boolean or [**Binding**](/home/api/context#bindings) |    ✓     | Condition to define which action will run.                       |
+| onTrue    | List&lt;Action&gt;                                   |          | List of actions that it will be run when the condition is true.  |
+| onFalse   | List&lt;Action&gt;                                   |          | List of actions that it will be run when the condition is false. |
 
 ## How to use it?
 

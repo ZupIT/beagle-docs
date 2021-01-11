@@ -9,7 +9,7 @@ description: "Here, you'll find how to configure a backend with Beagle."
 {{% alert color="danger" %}}
 Before you get started, you must know that the steps below are for JVM languages.
 
-For other languages, your server needs to serve JSON following our API. Also, check out our [**cache**](/pt/home/resources/cache/) and [**platform specification**](/pt/home/resources/components/platform-sorting) mechanisms, which you may wish to implement as the clients already support them.
+For other languages, your server needs to serve JSON following our API. Also, check out our [**cache**](/home/resources/cache/) and [**platform specification**](/home/resources/components/platform-sorting) mechanisms, which you may wish to implement as the clients already support them.
 {{% /alert %}}
 
 ## Requirements
@@ -29,10 +29,10 @@ If you already have updated all the programs above, then just go to the followin
 When you create a micro-service, we recommend using your team's established mechanisms. If that's not your case, you can just follow the configurations below.
 
 {{% alert color="warning" %}}
-If your team works with micro-services using a framework other than Spring or Micronaut, see [**Beagle Framework**](/pt/home/resources/customization/beagle-for-backend/beagle-framework) instead.
+If your team works with micro-services using a framework other than Spring or Micronaut, see [**Beagle Framework**](/home/resources/customization/beagle-for-backend/beagle-framework) instead.
 {{% /alert %}}
 
-For a simple setup, you can choose between 2 frameworks to create your [**BFF**](/pt/home/key-concepts#backend-for-frontend):
+For a simple setup, you can choose between 2 frameworks to create your [**BFF**](/home/key-concepts#backend-for-frontend):
 
 #### [Micronaut](https://micronaut.io/)
 
@@ -164,7 +164,7 @@ Remember to always check if you're using the latest version of Beagle. To see th
 
 Well done, your initial configuration is ready to be used!
 
-You can check a screen or server-driven component[ **to test the BFF**](/pt/home/get-started/using-beagle/).
+You can check a screen or server-driven component[ **to test the BFF**](/home/get-started/using-beagle/).
 
 {{% alert color="danger" %}}
 Spring Boot has a known problem involving `WebMvcConfigurationSupport`. Its presence replaces other configurations, including the ones in Beagle's Spring Starter.
@@ -182,13 +182,13 @@ The annotation`@EnableWebMvc`causes the same problem, which means that you shoul
 Well done, your initial configuration is ready to be used!
 {{% /alert %}}
 
-You can see more of [**how to use Beagle on the backend**](/pt/home/get-started/using-beagle/backend) or how to test a BFF with server-driven components.
+You can see more of [**how to use Beagle on the backend**](/home/get-started/using-beagle/backend) or how to test a BFF with server-driven components.
 
 ## **Next Steps**
 
 On this section, you made Beagle's **initial installation** on your application!  
 To keep configuring Beagle:
 
-👉Go to [**initial configurations**](/pt/home/get-started/using-beagle/backend) to enable the use of Beagle on your Web project.
+👉Go to [**initial configurations**](/home/get-started/using-beagle/backend) to enable the use of Beagle on your Web project.
 
-👉 If you want to go straight to practice, access our [**tutorial to create a projeto from zero**.](/pt/home/get-started/creating-a-project-from-scratch/case-backend)
+👉 If you want to go straight to practice, access our [**tutorial to create a projeto from zero**.](/home/get-started/creating-a-project-from-scratch/case-backend)

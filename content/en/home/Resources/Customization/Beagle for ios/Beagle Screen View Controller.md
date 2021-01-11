@@ -94,6 +94,6 @@ let viewController = BeagleScreenViewController(
 
 The `BeagleNavigationController` is a `UINavigationController class` focused on observing server-driven screen states to know when it starts or ends.
 
-[**Click here to know more about this component!**](/pt/home/resources/customization/beagle-for-ios/custom-beagle-navigation-controller/)
+[**Click here to know more about this component!**](/home/resources/customization/beagle-for-ios/custom-beagle-navigation-controller/)
 
 {{% /alert %}}

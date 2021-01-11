@@ -15,19 +15,19 @@ Class that defines a navigation bar in the top of the screen and it's composed b
 | show back button          | Bool                                                    |          | Enables the return bottom on the action/navigation's bar. Default is `true`. |
 | style id                  | String                                                  |          | Allows local customization for the action/navigation's bar.                  |
 | navigation bar items      | [**Navigation Bar Item**](#what-is-a-navigationbaritem) |          | Defines an item's list for the action/navigation's bar.                      |
-| back button accessibility | [**Accessibility**](/pt/home/api/accessibility)         |          | Accessibility's informations of the backButton.                              |
+| back button accessibility | [**Accessibility**](/home/api/accessibility)            |          | Accessibility's informations of the backButton.                              |
 
 ## What is a NavigationBarItem?
 
 Class that defines an item for `Navigation's bar` and and it has the following attributes:
 
-| **Attribute** | **Type**                                        | Required | Definition                                                          |
-| :------------ | :---------------------------------------------- | :------- | :------------------------------------------------------------------ |
-| text          | String                                          |          | Title for the bar's item.                                           |
-| image         | [**Image**](/pt/home/api/components/ui/image/)  |          | Image for the bar's item.                                           |
-| action        | [**Action**](/pt/home/api/actions/)             |          | Action that can be done when you click on the navigations bar item. |
-| accessibility | [**Accessibility**](/pt/home/api/accessibility) |          | Accessibiliy's options for the navigation item.                     |
-| id            | String                                          |          | Component's identifier.                                             |
+| **Attribute** | **Type**                                     | Required | Definition                                                          |
+| :------------ | :------------------------------------------- | :------- | :------------------------------------------------------------------ |
+| text          | String                                       |          | Title for the bar's item.                                           |
+| image         | [**Image**](/home/api/components/ui/image/)  |          | Image for the bar's item.                                           |
+| action        | [**Action**](/home/api/actions/)             |          | Action that can be done when you click on the navigations bar item. |
+| accessibility | [**Accessibility**](/home/api/accessibility) |          | Accessibiliy's options for the navigation item.                     |
+| id            | String                                       |          | Component's identifier.                                             |
 
 ## **How to use it?**
 

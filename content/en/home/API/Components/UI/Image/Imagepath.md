@@ -56,10 +56,10 @@ ImagePath.Local(
 
 It will reference an image that its hosted on another host or it's related to its own server.JSONKotlin DSL. Your structure is represented by the attributes below:
 
-| **Attribute** | **Type**                                                                                    | Required | **Definition**                                                                                        |
-| :------------ | :------------------------------------------------------------------------------------------ | :------- | :---------------------------------------------------------------------------------------------------- |
-| remoteUrl     | String                                                                                      | ✓        | Absolute or relative image path to be downloaded.                                                     |
-| placeholder   | **​**[**ImagePath.Local**](/pt/home/api/components/ui/image/imagepath/#imagepathlocal)**​** |          | It's possible to pass a local asset on the app that will be shown meanwhile the remote URL is loaded. |
+| **Attribute** | **Type**                                                                                 | Required | **Definition**                                                                                        |
+| :------------ | :--------------------------------------------------------------------------------------- | :------- | :---------------------------------------------------------------------------------------------------- |
+| remoteUrl     | String                                                                                   | ✓        | Absolute or relative image path to be downloaded.                                                     |
+| placeholder   | **​**[**ImagePath.Local**](/home/api/components/ui/image/imagepath/#imagepathlocal)**​** |          | It's possible to pass a local asset on the app that will be shown meanwhile the remote URL is loaded. |
 
 It will refer to an image that is hosted in another host or a relative one in the own server.
 

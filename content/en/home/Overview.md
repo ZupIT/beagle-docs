@@ -41,11 +41,11 @@ Some definitions on this documentation exists only only in some specific minors 
 
 ## How does Beagle works?
 
-The tool works as a facilitator of **BFF** \([**Backend For Frontend**](/pt/home/key-concepts#backend-for-frontend)\). This means that Beagle, from a library of components defined in the [**Design System**](/pt/home/key-concepts#design-system) of the Android, iOS or Web application, makes the visual and behavioral change of them by returning a JSON file that indicates what and where each component should be rendered and which the action they are going to perform.
+The tool works as a facilitator of **BFF** \([**Backend For Frontend**](/home/key-concepts#backend-for-frontend)\). This means that Beagle, from a library of components defined in the [**Design System**](/home/key-concepts#design-system) of the Android, iOS or Web application, makes the visual and behavioral change of them by returning a JSON file that indicates what and where each component should be rendered and which the action they are going to perform.
 
 ![](/beaglemobileback.png)
 
-The reason Beagle is able to make this change from the frontend from the backend is because its architecture is structured in [**Server-Driven UI**](/pt/home/key-concepts#server-driven-ui), where BFF constructs the data, components and actions present on the screen declaratively and forwards them in JSON format , while the front deserializes it, renders the visual components natively in addition to executing and assigning the actions present in each of them.
+The reason Beagle is able to make this change from the frontend from the backend is because its architecture is structured in [**Server-Driven UI**](/home/key-concepts#server-driven-ui), where BFF constructs the data, components and actions present on the screen declaratively and forwards them in JSON format , while the front deserializes it, renders the visual components natively in addition to executing and assigning the actions present in each of them.
 
 ### Beagle's Pillars
 

@@ -18,17 +18,17 @@ See how the structure is represented:
 
 ### ListView
 
-| Atributo           | Tipo                                                         | Obrigatório | Definição                                                                                                                       |
-| :----------------- | :----------------------------------------------------------- | :---------: | :------------------------------------------------------------------------------------------------------------------------------ |
-| direction          | [ListDirection](#listdirection)                              |             | Sets the direction in which list items are displayed.                                                                           |
-| context            | [ContextData](/pt/home/api/context)                          |             | Defines the context of the component.                                                                                           |
-| onInit             | List&lt;[Action](/pt/home/api/actions)&gt;                   |             | List of actions to be performed as soon as the component is displayed.                                                          |
-| dataSource         | [Bind](/pt/home/api/context#bindings)&lt;List&lt;Any&gt;&gt; |      ✓      | Expression that points to a list of values used to populate the component.                                                      |
-| template           | [ServerDrivenComponent](/pt/home/api/components)             |      ✓      | It represents each cell in the list through a `ServerDrivenComponent`.                                                          |
-| onScrollEnd        | List&lt;[Action](/pt/home/api/actions)&gt;                   |             | List of actions taken when the list ends.                                                                                       |
-| scrollEndThreshold | Int                                                          |             | Defines the percentage scrolled from the list to trigger `onScrollEnd`.                                                         |
-| iteratorName       | String                                                       |             | It is the context identifier for each cell.                                                                                     |
-| key                | String                                                       |             | Points to a unique value present in each item of the `dataSource` to be used as a suffix in the ids of the template components. |
+| Atributo           | Tipo                                                      | Obrigatório | Definição                                                                                                                       |
+| :----------------- | :-------------------------------------------------------- | :---------: | :------------------------------------------------------------------------------------------------------------------------------ |
+| direction          | [ListDirection](#listdirection)                           |             | Sets the direction in which list items are displayed.                                                                           |
+| context            | [ContextData](/home/api/context)                          |             | Defines the context of the component.                                                                                           |
+| onInit             | List&lt;[Action](/home/api/actions)&gt;                   |             | List of actions to be performed as soon as the component is displayed.                                                          |
+| dataSource         | [Bind](/home/api/context#bindings)&lt;List&lt;Any&gt;&gt; |      ✓      | Expression that points to a list of values used to populate the component.                                                      |
+| template           | [ServerDrivenComponent](/home/api/components)             |      ✓      | It represents each cell in the list through a `ServerDrivenComponent`.                                                          |
+| onScrollEnd        | List&lt;[Action](/home/api/actions)&gt;                   |             | List of actions taken when the list ends.                                                                                       |
+| scrollEndThreshold | Int                                                       |             | Defines the percentage scrolled from the list to trigger `onScrollEnd`.                                                         |
+| iteratorName       | String                                                    |             | It is the context identifier for each cell.                                                                                     |
+| key                | String                                                    |             | Points to a unique value present in each item of the `dataSource` to be used as a suffix in the ids of the template components. |
 
 ### ListDirection
 

@@ -12,12 +12,12 @@ description: Description of the component Text and its attributes
 
 The structure is represented by the attributes below:
 
-| Attribute | Type                                                   | Required | Definition                                                                |
-| :-------- | :----------------------------------------------------- | :------- | :------------------------------------------------------------------------ |
-| text      | String or [**Binding**](/pt/home/api/context#bindings) | ✓        | Defines the content in text to be rendered.                               |
-| styleId   | String                                                 |          | Refers to a locally configured style that it will be applied on the text. |
-| textColor | String                                                 |          | Defines the text color.                                                   |
-| alignment | [**TextAlignment**](#textalignment)                    |          | Define the alignment of the text.                                         |
+| Attribute | Type                                                | Required | Definition                                                                |
+| :-------- | :-------------------------------------------------- | :------- | :------------------------------------------------------------------------ |
+| text      | String or [**Binding**](/home/api/context#bindings) | ✓        | Defines the content in text to be rendered.                               |
+| styleId   | String                                              |          | Refers to a locally configured style that it will be applied on the text. |
+| textColor | String                                              |          | Defines the text color.                                                   |
+| alignment | [**TextAlignment**](#textalignment)                 |          | Define the alignment of the text.                                         |
 
 ### TextAlignment
 

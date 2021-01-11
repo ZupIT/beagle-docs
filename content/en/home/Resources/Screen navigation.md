@@ -6,10 +6,10 @@ description: "Here, you'll find how Beagle deals with screen navigation."
 
 ---
 
-On Beagle, navigation works as a type of [**Action**](/pt/home/api/actions/), which can be used by all components that receives an action.
+On Beagle, navigation works as a type of [**Action**](/home/api/actions/), which can be used by all components that receives an action.
 
 {{% alert color="info" %}}
-Before configuring the navigation between screens of your application, it is required you have [**installed Beagle**](/pt/home/get-started/installing-beagle/), checked the [**use configuration**](/pt/home/get-started/using-beagle/) and tested Beagle's framework on the [**displaying a server-driven screen tutorial**](#no-such-page)
+Before configuring the navigation between screens of your application, it is required you have [**installed Beagle**](/home/get-started/installing-beagle/), checked the [**use configuration**](/home/get-started/using-beagle/) and tested Beagle's framework on the [**displaying a server-driven screen tutorial**](#no-such-page)
 {{% /alert %}}
 
 After these configuration, just add the example code as a return of you service and call the endpoint, defining in your controller, in your frontend.
@@ -18,7 +18,7 @@ After these configuration, just add the example code as a return of you service 
 
 Some navigation actions needs a parameter. It is possible to receive two route type:
 
-1. **Local:** intern navigation that expects a new [**screen**](/pt/home/api/screen/).
+1. **Local:** intern navigation that expects a new [**screen**](/home/api/screen/).
 2. **Remote:** expects that the `url` points into an API that will return one of more Beagle's components.
 
 On the example below, we case a case where the `route` is `remote`:
@@ -66,20 +66,20 @@ Button(
 
 The following pages, you will see more details about Beagle's navigation types:
 
-[**OpenNativeRoute**](/pt/home/api/actions/navigate/openexternalurl)
+[**OpenNativeRoute**](/home/api/actions/navigate/openexternalurl)
 
-[**OpenExternalURL**](/pt/home/api/actions/navigate/openexternalurl)
+[**OpenExternalURL**](/home/api/actions/navigate/openexternalurl)
 
-[**PushStack**](/pt/home/api/actions/navigate/pushstack)
+[**PushStack**](/home/api/actions/navigate/pushstack)
 
-[**PushView**](/pt/home/api/actions/navigate/pushview)
+[**PushView**](/home/api/actions/navigate/pushview)
 
-[**PopStack**](/pt/home/api/actions/navigate/popstack)
+[**PopStack**](/home/api/actions/navigate/popstack)
 
-[**PopView**](/pt/home/api/actions/navigate/popview)
+[**PopView**](/home/api/actions/navigate/popview)
 
-[**PopToView**](/pt/home/api/actions/navigate/poptoview)
+[**PopToView**](/home/api/actions/navigate/poptoview)
 
-[**ResetApplication**](/pt/home/api/actions/navigate/resetapplication)
+[**ResetApplication**](/home/api/actions/navigate/resetapplication)
 
-[**ResetStack**](/pt/home/api/actions/navigate/resetstack)
+[**ResetStack**](/home/api/actions/navigate/resetstack)

@@ -8,20 +8,20 @@ description: "On this section, you will find how to create a form and submit it 
 
 ## Introduction
 
-To this tutorial, we will use some [**actions**](/pt/home/api/actions/) and APIs:
+To this tutorial, we will use some [**actions**](/home/api/actions/) and APIs:
 
 **Actions**
 
-- [**SetContext**](/pt/home/api/actions/setcontext)
-- [**SendRequest**](/pt/home/api/actions/sendrequest)
+- [**SetContext**](/home/api/actions/setcontext)
+- [**SendRequest**](/home/api/actions/sendrequest)
 
 **APIs**
 
-- [**Context**](/pt/home/api/context/)
-- [**Binding**](/pt/home/api/context#bindings)
-- [**Expressões**](/pt/home/api/context#bindings)
+- [**Context**](/home/api/context/)
+- [**Binding**](/home/api/context#bindings)
+- [**Expressões**](/home/api/context#bindings)
 
-Despite the [**Server-Driven**](/pt/home/key-concepts#server-driven-ui) concept of working with separate components, it is possible to make an information streaming to an API and it is what we will show below.
+Despite the [**Server-Driven**](/home/key-concepts#server-driven-ui) concept of working with separate components, it is possible to make an information streaming to an API and it is what we will show below.
 
 ## Use example
 
@@ -73,7 +73,7 @@ Container(
 
 ### Step 2: Configure SetContext
 
-Now use the [**SetContext**](/pt/home/api/actions/setcontext) action that alter a **specific** [**context**](/pt/home/api/context) on a screen.This is necessary to bring this screen to life and make the typed data on them sent to an API.
+Now use the [**SetContext**](/home/api/actions/setcontext) action that alter a **specific** [**context**](/home/api/context) on a screen.This is necessary to bring this screen to life and make the typed data on them sent to an API.
 
 On this scenario, the context is what it will keep the typed data of user name and password so that later this data is fowarded to an API.
 
@@ -173,7 +173,7 @@ Container(
 {{% /tab %}}
 {{< /tabs >}}
 
-On this example, we use an `onChange` event of the TextInput that it is always called when the user types a new text in the input. Inside the onChange, there is an implicit context [**implicit context**](/pt/home/api/context/#2-implicit-context) called `onChange` where the value it is the last typed `value` by the user.
+On this example, we use an `onChange` event of the TextInput that it is always called when the user types a new text in the input. Inside the onChange, there is an implicit context [**implicit context**](/home/api/context/#2-implicit-context) called `onChange` where the value it is the last typed `value` by the user.
 
 #### OnChange
 
@@ -199,7 +199,7 @@ Until this moment, what we have done was "save" these context values so that on 
 This step does not have any visual difference from the last step.
 {{% /alert %}}
 
-To finish the Login flow, we will now add an [**Action**](/pt/home/api/actions) called [**SendRequest**](/pt/home/api/actions/sendrequest), that basically allows you to make a HTTP request and on the `onSuccess` case, show an [**Alert**](/pt/home/api/actions/alert) welcoming the user.
+To finish the Login flow, we will now add an [**Action**](/home/api/actions) called [**SendRequest**](/home/api/actions/sendrequest), that basically allows you to make a HTTP request and on the `onSuccess` case, show an [**Alert**](/home/api/actions/alert) welcoming the user.
 
 {{< tabs id="T103" >}}
 {{% tab name="JSON" %}}
@@ -349,4 +349,4 @@ When running this code, you have to fill in the fields and press the "Login" but
 
 After that, the `onPress` event will perform SendRequest sending all the data that are inside the context with the `credentials` ID.
 
-When the SendRequest it is done, the response is finished, the `onSuccess` event will perform an [**Action Alert**](/pt/home/api/actions/alert) that it will show an alert with the returned data from the API.
+When the SendRequest it is done, the response is finished, the `onSuccess` event will perform an [**Action Alert**](/home/api/actions/alert) that it will show an alert with the returned data from the API.

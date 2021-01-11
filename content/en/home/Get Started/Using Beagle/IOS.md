@@ -11,14 +11,14 @@ description: "Here, you'll find how to make Beagle's usage configuration for iOS
 After you installed **Beagle** on your project, we'll show how to render a screen and display your first **"Hello Beagle!"**.
 
 {{% alert color="warning" %}}
-Check out how to [**install Beagle**](/pt/home/get-started/installing-beagle/ios) in case you haven't finished this step.
+Check out how to [**install Beagle**](/home/get-started/installing-beagle/ios) in case you haven't finished this step.
 {{% /alert %}}
 
 Currently, there are two types of approaches to render screens with Beagle: **remote** and **declarative.**
 
 #### Remote Renderization
 
-> Main approach used on Beagle because it's based on [**server-driven UI**](/pt/home/key-concepts#server-driven-ui) concept. It allows you to build layouts dynamically, consuming the informations provided by a [**BFF**](/pt/home/key-concepts#backend-for-frontend) through a remote URL.
+> Main approach used on Beagle because it's based on [**server-driven UI**](/home/key-concepts#server-driven-ui) concept. It allows you to build layouts dynamically, consuming the informations provided by a [**BFF**](/home/key-concepts#backend-for-frontend) through a remote URL.
 
 #### Declarative Renderization
 
@@ -101,4 +101,4 @@ Now, run your application and, if everything works well, you will see a screen l
 
 On this section, you saw how to create your first declarative screen using **Beagle**, on your simplest way, without entering on the server-driven UI concept.
 
-👉To understand more about **how to configure Beagle** and use it applying server-driven UI, [**check out how to create an iOS project from scratch**](/pt/home/get-started/creating-a-project-from-scratch/case-ios).
+👉To understand more about **how to configure Beagle** and use it applying server-driven UI, [**check out how to create an iOS project from scratch**](/home/get-started/creating-a-project-from-scratch/case-ios).

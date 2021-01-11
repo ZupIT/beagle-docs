@@ -62,4 +62,4 @@ private fun screen() :Widget{
 {{% /tab %}}
 {{< /tabs >}}
 
-**For more information about Flex Margin, check out the [**Yoga Layout documentation**](https://yogalayout.com/pt/home/flex/).**
+**For more information about Flex Margin, check out the [**Yoga Layout documentation**](https://yogalayout.com/home/flex/).**

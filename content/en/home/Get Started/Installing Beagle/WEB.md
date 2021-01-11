@@ -52,7 +52,7 @@ If the Beagle's commands were listed as in the image below, that means that the 
 ![](/image%20%2814%29.png)
 
 {{% alert color="success" %}}
-Well done! Your library was installed. Now, you can see more of [**how to use Beagle on Angular**](/pt/home/get-started/using-beagle/web/angular).
+Well done! Your library was installed. Now, you can see more of [**how to use Beagle on Angular**](/home/get-started/using-beagle/web/angular).
 {{% /alert %}}
 
 ## React
@@ -76,7 +76,7 @@ npm install --save @zup-it/beagle-react
 ```
 
 {{% alert color="success" %}}
-Well done! Your library was installed. Now, you can see more of [**how to use Beagle on React.**](/pt/home/get-started/using-beagle/web/react)
+Well done! Your library was installed. Now, you can see more of [**how to use Beagle on React.**](/home/get-started/using-beagle/web/react)
 {{% /alert %}}
 
 ## **Next Steps**
@@ -84,6 +84,6 @@ Well done! Your library was installed. Now, you can see more of [**how to use Be
 On this section, you made Beagle's **initial installation** on your application!  
 To keep configuring Beagle:
 
-👉Go to [**initial configurations** ](/pt/home/get-started/using-beagle/web/)to enable the use of Beagle on your Web project.
+👉Go to [**initial configurations** ](/home/get-started/using-beagle/web/)to enable the use of Beagle on your Web project.
 
-👉 If you want to go straight to practice, access our [**tutorial to create a project from zero**.](/pt/home/get-started/creating-a-project-from-scratch/case-web)
+👉 If you want to go straight to practice, access our [**tutorial to create a project from zero**.](/home/get-started/creating-a-project-from-scratch/case-web)

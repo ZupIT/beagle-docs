@@ -12,15 +12,15 @@ description: You will find here SendRequest definition and its attributes detail
 
 The Send Request structure is:
 
-| Attribute | Type                                                                       | Required | Definition                                     |
-| :-------- | :------------------------------------------------------------------------- | :------: | :--------------------------------------------- |
-| url       | String or [**Binding**](/pt/home/api/context#bindings)                     |    ✓     | Server URL.                                    |
-| method    | RequestActionMethod or [**Binding**](/pt/home/api/context#bindings)        |    ✓     | HTTP method.                                   |
-| headers   | Map &lt;String, String&gt; or [**Binding**](/pt/home/api/context#bindings) |          | Header items for the request.                  |
-| data      | Any                                                                        |          | Content that will be deliver with the request. |
-| onSuccess | List&lt;[**Action**](/pt/home/api/actions)&gt;                             |          | Success action.                                |
-| onError   | List&lt;[**Action**](/pt/home/api/actions)&gt;                             |          | Error action.                                  |
-| onFinish  | List&lt;[**Action**](/pt/home/api/actions)&gt;                             |          | Finish action.                                 |
+| Attribute | Type                                                                    | Required | Definition                                     |
+| :-------- | :---------------------------------------------------------------------- | :------: | :--------------------------------------------- |
+| url       | String or [**Binding**](/home/api/context#bindings)                     |    ✓     | Server URL.                                    |
+| method    | RequestActionMethod or [**Binding**](/home/api/context#bindings)        |    ✓     | HTTP method.                                   |
+| headers   | Map &lt;String, String&gt; or [**Binding**](/home/api/context#bindings) |          | Header items for the request.                  |
+| data      | Any                                                                     |          | Content that will be deliver with the request. |
+| onSuccess | List&lt;[**Action**](/home/api/actions)&gt;                             |          | Success action.                                |
+| onError   | List&lt;[**Action**](/home/api/actions)&gt;                             |          | Error action.                                  |
+| onFinish  | List&lt;[**Action**](/home/api/actions)&gt;                             |          | Finish action.                                 |
 
 ## How to use it?
 

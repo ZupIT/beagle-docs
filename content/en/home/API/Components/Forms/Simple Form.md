@@ -12,11 +12,11 @@ The `simpleForm` is responsible for rendering a form on the screen.
 
 Its structure is represented as shown below:
 
-| Attribute | Type                                                             | Required | Definition                                                     |
-| :-------- | :--------------------------------------------------------------- | :------- | :------------------------------------------------------------- |
-| ​onSubmit | List &lt;[**Action**](/pt/home/api/actions)&gt;                  | ✓        | Action array that this button can trigger when a form is sent. |
-| children  | List&lt;[**ServerDrivenComponent**](/pt/home/api/components)&gt; | ✓        | Defines the visual components list \(server driven\).          |
-| context   | **​**[**ContextData**](/pt/home/api/context)**​**                | ​        | Adds a context to the simple form                              |
+| Attribute | Type                                                          | Required | Definition                                                     |
+| :-------- | :------------------------------------------------------------ | :------- | :------------------------------------------------------------- |
+| ​onSubmit | List &lt;[**Action**](/home/api/actions)&gt;                  | ✓        | Action array that this button can trigger when a form is sent. |
+| children  | List&lt;[**ServerDrivenComponent**](/home/api/components)&gt; | ✓        | Defines the visual components list \(server driven\).          |
+| context   | **​**[**ContextData**](/home/api/context)**​**                | ​        | Adds a context to the simple form                              |
 
 ## How to use?
 
@@ -30,12 +30,12 @@ When creating a form it is important to understand two steps respectively
 The TextInput component is the field in which the user or the system will fill in some information, and it is important to know its attributes in order to better use it. Here we will use one of its elements, which is the **onChange** function.
 
 {{% alert color="info" %}}
-For more information on this component go to the details of [TextInput](/pt/home/api/components/ui/textinput).
+For more information on this component go to the details of [TextInput](/home/api/components/ui/textinput).
 {{% /alert %}}
 
 #### OnChange
 
-This function is part of the TextInput and it observes the changes made within its field, that is, whenever the value is modified, something is typed, deleted, etc, this function is called and activates a list of other [**actions**](/pt/home/api/actions/) to happen whenever the value changes. It is in this list that we add a [**SetContext**](/pt/home/api/actions/setcontext) action to set the [**Context**](/pt/home/api/context/) value of the form and update the values ​​that are shown in the field.
+This function is part of the TextInput and it observes the changes made within its field, that is, whenever the value is modified, something is typed, deleted, etc, this function is called and activates a list of other [**actions**](/home/api/actions/) to happen whenever the value changes. It is in this list that we add a [**SetContext**](/home/api/actions/setcontext) action to set the [**Context**](/home/api/context/) value of the form and update the values ​​that are shown in the field.
 
 Check our example below on how we implemented a `SimpleForm`
 
@@ -116,6 +116,6 @@ SimpleForm(
 
 It is a function of a simple form that performs a list of actions. It is called when the form is submitted.
 
-To submit a form, you must use the SubmitForm action and call it, just implement it in a [**Button**](/pt/home/api/components/ui/button) that is part of a simple form, that is, that is in your list of children.
+To submit a form, you must use the SubmitForm action and call it, just implement it in a [**Button**](/home/api/components/ui/button) that is part of a simple form, that is, that is in your list of children.
 
-When you click this button, the onSubmit is activated and the list of actions will be performed. It is this list of actions that will define what should happen with the information in this form, if they will be sent to a backend \(through the [**sendRequest** ](/pt/home/api/actions/sendrequest)action\), etc.
+When you click this button, the onSubmit is activated and the list of actions will be performed. It is this list of actions that will define what should happen with the information in this form, if they will be sent to a backend \(through the [**sendRequest** ](/home/api/actions/sendrequest)action\), etc.

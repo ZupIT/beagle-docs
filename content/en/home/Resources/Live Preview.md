@@ -20,12 +20,12 @@ This frontend and backend connection is done through a `WebSocket` on port: `972
 
 To use `Live Preview`, you must:
 
-- Use [**Beagle SDK**](/pt/home/get-started/installing-beagle/backend) in your BFF **;**
+- Use [**Beagle SDK**](/home/get-started/installing-beagle/backend) in your BFF **;**
 - Install `BeaglePreview` plugin;
 
 ### BFF Configuration
 
-You must have a configured BFF with Beagle to use Live Preview. In case you haven't done it, [**click here to download an initial project**](https://github.com/ZupIT/beagle-examples/tree/master/BeagleSampleBackend). As an alternative, [**follow our tutorial on how to implement a Beagle configured backend**](/pt/home/get-started/creating-a-project-from-scratch/case-backend).
+You must have a configured BFF with Beagle to use Live Preview. In case you haven't done it, [**click here to download an initial project**](https://github.com/ZupIT/beagle-examples/tree/master/BeagleSampleBackend). As an alternative, [**follow our tutorial on how to implement a Beagle configured backend**](/home/get-started/creating-a-project-from-scratch/case-backend).
 
 ### **IntelliJ plugin installation**
 

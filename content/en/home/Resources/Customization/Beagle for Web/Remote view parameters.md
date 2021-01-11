@@ -47,14 +47,14 @@ const params: LoadParams = {
 }
 ```
 
-| Property          | Type                                                                                               | Description                                                              |
-| :---------------- | :------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- |
-| path              | string                                                                                             | **Required.** Server path to load the JSON with the server-drive screen. |
-| fallback          | BeagleComponent                                                                                    | Component to be rendered in case the request fails.                      |
-| method            | Http method                                                                                        | Http method to make a request.                                           |
-| headers           | Map&lt;key, value&gt;                                                                              | Header list to attach when you make a request.                           |
-| shouldShowLoading | boolean                                                                                            | Show or not the loading component.                                       |
-| shouldShowError   | boolean                                                                                            | Show or not the error component.                                         |
-| strategy          | string&lt;[**Cache strategy**](/pt/home/resources/customization/beagle-for-web/cache-strategy)&gt; | Cache strategy used in the request.                                      |
-| loadingComponent  | string                                                                                             | Customized component for loading.                                        |
-| errorComponent    | string                                                                                             | Customized component for error.                                          |
+| Property          | Type                                                                                            | Description                                                              |
+| :---------------- | :---------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- |
+| path              | string                                                                                          | **Required.** Server path to load the JSON with the server-drive screen. |
+| fallback          | BeagleComponent                                                                                 | Component to be rendered in case the request fails.                      |
+| method            | Http method                                                                                     | Http method to make a request.                                           |
+| headers           | Map&lt;key, value&gt;                                                                           | Header list to attach when you make a request.                           |
+| shouldShowLoading | boolean                                                                                         | Show or not the loading component.                                       |
+| shouldShowError   | boolean                                                                                         | Show or not the error component.                                         |
+| strategy          | string&lt;[**Cache strategy**](/home/resources/customization/beagle-for-web/cache-strategy)&gt; | Cache strategy used in the request.                                      |
+| loadingComponent  | string                                                                                          | Customized component for loading.                                        |
+| errorComponent    | string                                                                                          | Customized component for error.                                          |
