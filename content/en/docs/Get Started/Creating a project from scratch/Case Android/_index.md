@@ -105,7 +105,7 @@ dependencies {
 
 
 {{% alert color="info" %}}
-Insert the Beagle's release version on the place of`${beagle.version}`, in other words, put the Beagle's version highlighted in blue badge above without the **v character**.
+Add Beagle's release version instead of `${beagle.version}`, you should put Beagle's version highlighted like the blue badge above without the **v character**.
 
 For example: undefined-`ext.beagle.version = "0.2.8"`
 {{% /alert %}}
