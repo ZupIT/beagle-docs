@@ -1,30 +1,37 @@
 ---
 title: Testes
 weight: 235
-description: 'Nesta seção, você encontra mais detalhes de testes em aplicações com o Beagle.'
+description: 'Você vai encontrar nesta seção mais detalhes de testes do Beagle e de testes em aplicações com o Beagle.'
 ---
 
 ---
 
 ## Testes Unitários
 
-Testes que têm por objetivo **medir a funcionalidade do código** em sua menor fração. É possível realizar testes unitários no Beagle seguindo o mesmo processo utilizado para caso de aplicações que não utilizem nossa ferramenta, já que o Beagle não interfere na realização dos testes. 
+Testes unitários **medem a funcionalidade do código** em sua menor fração ou unidade. O Beagle possui testes unitários embutidos e eles devem ser frequentemente revisados, atualizados ou adicionados para assegurar que importantes unidades de códigos sejam testadas.
 
-## Testes Instrumentados
+## Testes de Interface De Usuário
 
-Testes que são feitos como os testes unitários, com a diferença de que, em alguns casos, um um componente `server driven` pode não conter um ID, o que que geralmente o identifica como teste instrumentado.
+O Beagle implementa seus próprios testes de interface de usuário para garantir que componentes de interface e seus comportamentos funcionem corretamente. 
 
-Vale reforçar que estes tipos de testes feitos em aplicações que usam Beagle da mesma maneira que em aplicações que não usam nossa ferramenta.  
+Esse tipo de teste pode ser aplicado para plataformas mobile e web e os principais frameworks usados são:
+- [Cucumber](https://cucumber.io/)
+- [Espresso](https://developer.android.com/training/testing/espresso)
+- [XCTest](https://developer.apple.com/documentation/xctest)
+- [Appium](http://appium.io/)
+- [Cypress](https://www.cypress.io/)
 
-Para sanar problemas nos testes instrumentados, adicionamos ao elemento `WIDGET` \(que referencia um componente\) um `atributo ID` para que seja possível identificá-lo programaticamente.
+## Testes Instrumentados Mobile
 
-Listamos um exemplo de um caso abaixo em que fizemos testes usando um elemento `server driven`.
+Testes instrumentados, também conhecidos como testes unitários instrumentados, são testes que rodam em devices (aparelhos) reais ou em emuladores. Eles utilizam APIs para encaminhar (instrumentar \ orquestrar) instruções vindas do código de teste para o device ou emulador. Estes testes trazem mais fidelidade se comparados a testes unitários convencionais, porém sua execução é mais lenta. 
 
-### Como testamos?
+Nos testes instrumentados do Beagle, as vezes um componente server-driven não tem um `ID`. Neste caso, nós adicionamos um elemento widget que referencia o componente e um `ID`, para que então possamos identificar o componente pelo `ID` programaticamente gerado.
+
+### Exemplo de Teste Instrumentado Mobile
 
 ![](/gif-teste.gif)
 
-Neste exemplo, fizemos um teste instrumentado na plataforma Android utilizando o `Espresso (Framework de automação)`, em que verificamos a funcionalidade de seleção e inserção de valores em um componente `text field`, que é server-driven. 
+Neste exemplo, o objetivo é realizar um teste instrumentado na plataforma Android utilizando o framework Espresso. Para isso, você deve verificar a funcionalidade de seleção e inserção de valores em um componente `text field`, que é server-driven. 
 
 ```java
 @Test
@@ -40,9 +47,8 @@ Neste exemplo, fizemos um teste instrumentado na plataforma Android utilizando o
 
 ### Passo 1: Iniciar o teste
 
-Você deve começar o teste validando se a aplicação foi devidamente aberta na página principal. Isso é feito para confirmar na função abaixo se o `Header` foi apresentado na tela. 
-
-Como este componente não possui uma ID propriamente dita, utilizamos o texto contido no `Header` para localizar essa `view` na página principal. Veja o exemplo a seguir: 
+Comece o teste validando se a aplicação foi devidamente aberta na página principal. Na função `checkViewContainsText`, confirme se o  `Header` foi apresentado na tela. 
+Como este componente não possui um ID propriamente dito, utilize o texto contido no `Header` para localizar essa `view` na página principal. Veja como no exemplo a seguir: 
 
 ```java
 public BeagleTest checkViewContainsText(String text) {
@@ -53,11 +59,9 @@ public BeagleTest checkViewContainsText(String text) {
 
 ### Passo 2: Apresentar o menu
 
-Após localizar o `Header`, o próximo passo é utilizarmos a função abaixo para selecionar o `hamburguer icon`  e apresentar as opções deste menu.
+Após localizar o `Header`, o próximo passo é utilizar a `selectMenuOption` para selecionar o ícone "hambúrguer" e apresentar as opções do menu. Por ser um componente server-driven e não possuir um ID nesta implementação, você deve utilizar o posicionamento do componente para realizar a seleção. 
 
-Por ser um componente server driven e não possuir um ID nesta implementação,  utilizamos o posicionamento do componente para realizar a seleção. 
-
-Desta forma, buscamos pelo texto presente no `ContentDescription ("More options")` e, em seguida, o seu posicionamento na hierarquia do componente. Confira no exemplo: 
+Feito isso, busque pelo texto presente no `ContentDescription ("More options")` e, em seguida, o seu posicionamento na hierarquia do componente. Confira no exemplo: 
 
 ```java
 public BeagleTest selectMenuOption() {
@@ -77,9 +81,9 @@ public BeagleTest clickOnText(final String text) {
 }
 ```
 
-### Passo 4: Inserir o componente
+### Passo 3: Inserir o componente
 
-Neste último passo, vamos inserir um texto ao componente `text field`. Uma vez que este componente não possui ID e nem um texto, ele será localizado pelo seu posicionamento na hierarquia do componente. Veja no exemplo a seguir: 
+Neste último passo, insira um texto no componente `text field`. Uma vez que este componente não possui ID e nem um texto, ele será localizado pelo seu posicionamento na hierarquia dos componentes. Veja no exemplo a seguir: 
 
 ```java
 public BeagleTest typeIntoTextField(int position1, int position2, String text) {
@@ -95,5 +99,5 @@ public BeagleTest typeIntoTextField(int position1, int position2, String text) {
 ```
 
 {{% alert color="success" %}}
-Pronto, o seu teste instrumento foi realizado!
+Pronto, o seu teste instrumentado foi realizado!
 {{% /alert %}}
