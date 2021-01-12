@@ -1,5 +1,5 @@
 ---
-title: Sendrequest
+title: SendRequest
 weight: 299
 description: >-
   Nesta seção, você encontra a definição do Send Request e detalhes de seus
