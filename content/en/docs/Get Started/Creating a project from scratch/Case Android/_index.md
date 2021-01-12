@@ -20,10 +20,10 @@ After you installed the program, follow the steps below:
 
 ![](https://lh5.googleusercontent.com/nT0zkr0W_Ark0ZZDR2eWtCtfnjC_Fm98VSwU3DgBQzcgh_DoqkYNvhINztNL460p0U2hnygJ5K_DhrZMZis0mqHD69QJgKimruICs4MnBnPO9m-m_2T6E1nWIXiOfaIe0iiCjIN3)
 
-   **Step 3️:** On this page, we should list some important informations:
+   **Step 3️:** On this page, there are some important information:
 
 * Inform your project's name. On this example, we'll call `BeagleApp`.
-* Choose which language you'll use. For Beagle, we should go with`Kotlin`.
+* Choose which language you'll use. For Beagle, you should go with `Kotlin`.
 * Choose **SDK minimum 19**, because a lower SDK won't be compatible. 
 * Define a **package** and a **Save location** according to your preference. 
 * Click on **Next**.
@@ -75,7 +75,7 @@ Once you made it, we should include `kapt plugin` and `Beagle` as dependencies o
 
 * Open the`build.graddle(Module:app)`  file 
 
-Notice that some `plugins` are already listed on the file's beginning  arquivo as it shows the image below:
+Notice that some `plugins` are already listed on the beginning of the file as shown below:
 
 * Then, add the line_`apply plugin: 'kotlin-kapt'`_ 
 
@@ -105,7 +105,7 @@ dependencies {
 
 
 {{% alert color="info" %}}
-Insert the Beagle's release version on the place of`${beagle.version}`, in other words, put the Beagle's version highlighted in blue badge above without the **v caracter**.
+Add Beagle's release version instead of `${beagle.version}`, you should put Beagle's version highlighted like the blue badge above without the **v character**.
 
 For example: undefined-`ext.beagle.version = "0.2.8"`
 {{% /alert %}}
@@ -146,7 +146,7 @@ Let this file open because we'll use it again in another moment.
 {{% alert color="warning" %}}
 * The **usesCleartextTraffic**: Indicates with the app intends to use cleartext network traffic, HTTP.  The default value for apps that target API level 27 or lower is "`true`". Apps that target API level 28 or higher default to "`false`".
 * The **attribute** `android:usesCleartextTraffic="true"` inside `<application>`tag  is used to communicate with the local BFF. Them if you intent to debug the project using a local BFF you can use this as an easy configuration step. 
-* Although, if you plan to turn this example into a release application, we recomend you using the **`networkSecurityConfig`** which you can configure using [**android developers page instructions**](https://developer.android.com/training/articles/security-config).
+* Although, if you plan to turn this example into a release application, we recommend you to use the **`networkSecurityConfig`** which you can configure using [**android developers page instructions**](https://developer.android.com/training/articles/security-config).
 {{% /alert %}}
 
 ### Step 3: Configure Network, Cache and Logger
@@ -223,9 +223,9 @@ At this tutorial point, we will test our Server-Driven screens on local host bec
  Now, Beagle expects that your `@BeagleComponent` classes must have only empty constructors. 
 {{% /alert %}}
 
-### **Step 5:  BeagleActivitiy** 
+### **Step 5:  BeagleActivity** 
 
-Beagle offers a default `Activity` to manage all `server-driven activities`. However, it is possible to create a more specific activitiy to handle server-driven screens differently. You will create a new activity inheriting from `BeagleActivity` and will annotate it with `@BeagleComponent`. You can find a detailed step on how to create one at the [**Beagle Activity**](/docs/resources/customization/beagle-for-android/custom-beagle-activity/) session
+Beagle offers a default `Activity` to manage all `server-driven activities`. However, it is possible to create a more specific activity to handle server-driven screens differently. You will create a new activity inherited from `BeagleActivity` and it will annotate with `@BeagleComponent`. Check more information on how to create one at the [**Beagle Activity**](/docs/resources/customization/beagle-for-android/custom-beagle-activity/) page.
 
 {{% alert color="info" %}}
 {{% /alert %}}
@@ -307,7 +307,7 @@ All you have to do now is [**set up a backend** ](/docs/get-started/creating-a-p
 It's very simple to show a server-driven screen. Now that all Beagle's configuration is done, you just have to follow these steps: 
 
 * Open the file `MainActivity.kt` 
-* State the `intent` as listed below. It will define the address of screen's informations on the backend you configured. 
+* State the `intent` as listed below. It will define the address of screen's information on the backend you configured. 
 * Copy and paste the `intent` listed below on `onCreate` method.
 
 ```text

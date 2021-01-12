@@ -24,7 +24,7 @@ To test, you will need three endpoints:
 
 1. The first endpoint will be what your frontend will call to render the screen zero.
 2. The second endpoint should be mapped as **"/firstScreen",** because this will be the chosen URL to the navigation of the button on the screen 0 and for that, this endpoint must return the screen 1. 
-3. The third endpoint must be mapped  **"/secondScreen",** because this will be the chose URL to the navigation of the button on the screen 1, for that, this endpoint must return the screen 2. It is through the screen 2 that it pass a route where the endpoint of the screen must return. in this case, it is "/home" that it is the endpoint of the zero screen.
+3. The third endpoint must be mapped  **"/secondScreen",** because this will be the chose URL to the navigation of the button on the screen 1, for that, this endpoint must return the screen 2. It is through the screen 2 that it passes a route where the endpoint of the screen must return. In this case, "/home" is the endpoint of the zero screen.
 
 #### How to call the screen 0  <a id="como-chamar-pela-tela-zero"></a>
 

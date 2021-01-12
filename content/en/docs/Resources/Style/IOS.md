@@ -58,7 +58,7 @@ class Styles {
 
 ### Text
 
-The text's components for Beagle iOS are **totally personalized.** To make any attribute change, you just have to follow the pattern below: 
+The text components for Beagle iOS are **totally customizable.** To make any attribute change, follow the example below: 
 
 
 ```swift

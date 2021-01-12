@@ -10,7 +10,7 @@ description: >-
 
 ## How does cache work? 
 
-As in other platforms the pattern cache is controlled by the backend with the tag `cache-control` and `beagle-hash`, they are information that must be provided through request header, where `beagle-hash` is responsible for providing this hash related to the screen that has been downloaded and `cache-control` for the life time of this cache as **reliable**. 
+As in other platforms the default cache is controlled by the backend with the tag `cache-control` and `beagle-hash`, they are information that must be provided through request header, where `beagle-hash` is responsible for providing this hash related to the screen that has been downloaded and `cache-control` for the life time of this cache as **reliable**. 
 
 ### Reliable cache
 
@@ -46,9 +46,9 @@ To avoid a memory and disk overload, both caches apply a replacement policity Le
 
 ## Configuring and customizing the cache
 
-There are allowed customization allowed by pattern class that exists in the cache, like life time and maximum quantity of records in memory and disk. 
+There are allowed customization by the default class that exists in the cache, like lifetime and maximum quantity of records in memory and disk. 
 
-In case the pattern approach does not solve the problem, the applicantion is free to replace the pattern implementation to another one that fits better. For that, the class responsible for the cache management needs to be in accordance with the `CacheManagerProtocol` protocol.
+In case the default approach does not solve the problem, the application is free to replace the default implementation to another one that fits better. For that, the class responsible for the cache management needs to be in accordance with the `CacheManagerProtocol` protocol.
 
 Every platform has different specifications to configure the cache.
 

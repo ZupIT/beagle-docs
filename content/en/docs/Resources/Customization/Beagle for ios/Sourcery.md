@@ -152,6 +152,6 @@ Some protocols are already on Beagle. They are located in  `SourceryProtocols.sw
 | Protocol | Use |
 | :--- | :--- |
 | AutoEquatable | Implements [equatable](https://developer.apple.com/documentation/swift/equatable) |
-| AutoDecodable | Implements customized [decodable](https://developer.apple.com/documentation/swift/decodable), according to the Beagle's pattern. It only works for structs |
-| AutoInitiable | Implements customized init, according to the Beagle's pattern |
+| AutoDecodable | Implements customized [decodable](https://developer.apple.com/documentation/swift/decodable), according to Beagle's defaults. It only works for structs |
+| AutoInitiable | Implements customized init, according to Beagle's defaults |
 | AutoInitiableAndDecodable | Protocols combination AutoInitiable and AutoDecodable |
