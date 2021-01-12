@@ -6,23 +6,22 @@ description: Container components description and its attribute details
 
 ---
 
-## What is it?
+## What is it? 
 
-`Container` is a component that contains other components inside it.
+`Container` is a component that contains other components inside it. 
 
 See how the structure is represented:
 
-| **Attribute** | **Type**                                                    | Required | **Definition**                                                                                              |
-| :------------ | :---------------------------------------------------------- | :------- | :---------------------------------------------------------------------------------------------------------- |
-| children      | List &lt;[**ServerDriven Component**](/home/api/widget)&gt; | ✓        | Defines the component list that it is part of the container.                                                |
-| context       | [**ContextData**](/home/api/context)                        |          | It is the [**context**](/home/api/context) in this widget.                                                  |
-| onInit        | List&lt;[**Action**](/home/api/actions)&gt;                 |          | It is a parameter that allows you to define a list of actions to be performed when the Widget is displayed. |
+| **Attribute** | **Type**  | Required | **Definition** |
+| :--- | :--- | :--- | :--- |
+| children | List &lt;[**ServerDriven Component**](/home/api/widget)&gt; |    ✓ | Defines the component list that is part of the container.  |
+| context | [**ContextData**](/home/api/context) |  | It is the [**context**](/home/api/context) in this widget.  |
+| onInit | List&lt;[**Action**](/home/api/actions)&gt; |  | It is a parameter that allows you to define a list of actions to be performed when the Widget is displayed.  |
 
-## How to use it?
+## How to use it? 
 
 {{< tabs id="T127" >}}
 {{% tab name="JSON" %}}
-
 <!-- json-playground:container.json
 {
     "_beagleComponent_": "beagle:container",
@@ -34,16 +33,14 @@ See how the structure is represented:
     ],
     "context": {
         "id": "myContext",
-        "value": "Hello world!"
+        "value": "Hello world!" 
     }
 }
 -->
-
 {{% playground file="container.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
-
 ```kotlin
 Container(
     children = listOf(
@@ -55,6 +52,5 @@ Container(
     )
 )
 ```
-
 {{% /tab %}}
 {{< /tabs >}}

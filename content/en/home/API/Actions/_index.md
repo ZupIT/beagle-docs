@@ -28,7 +28,7 @@ An action is map key/value with at least a `_beagleAction_` property. Its value 
 
 There are several default implemented actions on Beagle and all of them start with "**beagle:**" prefix and the customized actions start with "**custom:**". 
 
-To learn how to create custom actions, check out [**Beagle's customization section.**](/docs/resources/customization/)
+To learn how to create custom actions, check out [**Beagle's customization section.**](/home/resources/customization/)
 
 ## Action types
 

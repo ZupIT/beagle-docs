@@ -9,7 +9,7 @@ description: You will find here the default headers' description and how to disa
 Beagle Web sends **two types of headers** that are a standart for Beagle:
 
 1. **beagle-platform:** header used to indicate to the backend that this request came from the Web. This way, the value is sent is always **WEB**.
-2. **beagle-hash**: header used to make [**Beagle's cache protocol** ](/docs/resource/cache/)work properly.
+2. **beagle-hash**: header used to make [**Beagle's cache protocol** ](/home/resource/cache/)work properly.
 
 By default, these headers are always sent, however they can be disabled by the `useBeagleHeaders` parameter in the config. 
 

@@ -7,7 +7,7 @@ weight: 222
 
 ### Creating a frontend action 
 
-On Beagle, it's possible to create a customized [**action**](/docs/api/actions/) from a `CustomAction`. 
+On Beagle, it's possible to create a customized [**action**](/home/api/actions/) from a `CustomAction`. 
 
 Each platform has its own way to make this implementation on frontend. You can see examples below with "how to's" for each of them:
 
@@ -68,7 +68,7 @@ class CustomAction: Action {
 
 3. To register the action, just create a method with all your custom action and calls the `registerCustomAction` Beagle's method to make the registry.
 
-4. Call the method created on BeagleConfig, that can be seen on this [**example**](/docs/get-started/creating-a-project-from-scratch/case-ios).
+4. Call the method created on BeagleConfig, that can be seen on this [**example**](/home/get-started/creating-a-project-from-scratch/case-ios).
 
 ```kotlin
 private func registerCustomAction() {
