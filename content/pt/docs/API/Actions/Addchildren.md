@@ -1,5 +1,5 @@
 ---
-title: Addchildren
+title: AddChildren
 weight: 257
 description: >-
   Nesta seção, você encontra a definição do AddChildrenAction e detalhes de seus

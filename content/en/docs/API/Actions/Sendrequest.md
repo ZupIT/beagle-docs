@@ -1,5 +1,5 @@
 ---
-title: Sendrequest
+title: SendRequest
 weight: 274
 description: You will find here SendRequest definition and its attributes details
 ---
