@@ -236,7 +236,7 @@ To do so, follow these steps:
 If you have any trouble on making this configuration, check out [**how to use When.**](https://kotlinlang.org/docs/reference/control-flow.html#when-expression)
 {{% /alert %}}
 
-   3. Inform the `"styles"` names we referenced on backend \(BFF\) and the style created on Android, programmatically connecting them. 
+   3. Inform the `"styles"` names referenced on backend \(BFF\) and the one created on Android, programmatically connecting them. 
 
   4. On _**else**_ , we should list the `default` style we created. Follow the example on the image below:
 
