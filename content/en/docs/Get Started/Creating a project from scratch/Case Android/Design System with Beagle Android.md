@@ -121,7 +121,7 @@ This file contains the code of your first server-driven screen that must be conf
 You will see that a components hierarchy was built with a SCREEN and two TEXT components.
 
 {{% alert color="info" %}}
-For this moment, you have to only worry about what needs to be done, so you can apply a style to the components.
+Right now, you can apply a style to the components.
 {{% /alert %}}
 
 ![](https://lh3.googleusercontent.com/b3DvRw3pXFnrhgZtHF2kNMzZCY7vno0oqjs7VsxT2l9aukfyBI2KHfSg-5bcb-hgV_RgXqm0HxlVJBeimQ09bFiXc9R-ZFDrKPcV-PTQf7pbs8P1eZApkyldGdmmKJ3kQMgrUfYR)
