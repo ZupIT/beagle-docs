@@ -1,7 +1,7 @@
 ---
 title: Imagepath
 weight: 293
-description: Here you'll find ImagePath description
+description: You will find here a description of ImagePath.
 ---
 
 ---

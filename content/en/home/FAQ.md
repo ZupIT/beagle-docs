@@ -16,7 +16,7 @@ The developer declares the backend screens and the expose the endpoints that rep
 
 Beagle works as a 'bridge' between front and backend, it is possible that the design components of your application have a parameter in backend which makes a native application possible. 
 
-## My application's architecture will change if I use?
+## My application's architecture will change if I use Beagle?
 
 No, Beagle does not interfere with your project's architecture.
 
@@ -60,7 +60,6 @@ Not, it's the quite opposite. We made a renderization `benchmark` and Beagle - u
 
 No, because Beagle uses a **cache mechanism** to store adjacent screens and, then, optimize backend's calls. This means that you don't need to request again to backend in the user's click moment. 
 
-## What is the latest Beagle's version?
 
 Beagle's latest version is:undefined
 
@@ -96,9 +95,9 @@ You can see more how to create Beagle's projects with each of these platforms on
 * [**Beagle for iOS**](/home/get-started/creating-a-project-from-scratch/case-ios/)
 * [**Beagle for Web**](/home/get-started/creating-a-project-from-scratch/case-web)
 
-## How to make unitary and instrumented tests on Server-Driven screens?
+## How to make unitary and instrumented tests on server-driven screens?
 
-Yes! Unitary and instrumented tests can be normally done when using Beagle because its structure doesn't interfere in these tests.
+Beagle doesn't interfere in unitary or instrumented tests, so they can be normally done.
 
 ## How to make unitary tests using Beagle?
 
@@ -108,4 +107,4 @@ Unitary tests has the goal to gauge the code's functionality in a minor fraction
 
 Instrumented tests are done in applications using Beagle  in the same way as in applications that don't use our tool.
 
-However, it's important to reinforce that, usually, a server-driven component may not contain an ID that mostly identifies an instrumented test. Thinking of it, we add a `WIDGET` element \(that refers a component\) and a `ID attribute` so it can be possible to programatically identify it.
+However, it's important to reinforce that, usually, a server-driven component may not contain an ID that mostly identifies an instrumented test. Thinking of it, we add a `WIDGET` element \(that refers a component\) and an `ID attribute` so it can be possible to programatically identify it.

@@ -105,7 +105,7 @@ struct Styles {
 
 ### Step 3: Register a style on Beagle Config
 
-Now it's necessary to register Beagle's styles, which is important so Beagle can be able to apply these styles in server-driven screens.
+Now, it is necessary to register Beagle's styles, which is important so Beagle can be able to apply these styles in server-driven screens.
 
 1. Open the `BeagleConfig` file. Register a constant called `theme` 
 2. It's on the `theme` constant where the styles will be listed.

@@ -24,7 +24,7 @@ You must configure a [**DeepLinkHandler**](/home/resources/customization/beagle-
 
 ## How to use it?
 
-The example below, we have a screen coming from BFF with a button when you click, opens a native screen.
+On the example below, we have a screen coming from BFF with a button that, when you click, opens a native screen.
 
 To test this, configure [**Deep Link Handler**](/home/resources/customization/beagle-for-android/deep-link-handler) for Android or **openNativeRoute** for iOS. Besides, your BFF's endpoint must return the code screen below and call it in the frontend.
 

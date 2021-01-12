@@ -71,11 +71,11 @@ Now that your project was created, you must make **Beagle's configuration**. To 
 
 1. Create a class called `BeagleConfig` . 
 
-This class will be responsible to contain part of Beagle's initial configuration. On her, we'll implement a **`config`** static function to apply these configurations.
+This class will be responsible to contain part of Beagle's initial configuration. You will implement a **`config`** static function on her to apply these configurations.
 
 2. On this function, create a constant called **`dependency`** that must be **`BeagleDependencies`** type. 
 
-We'll attribute to this constant some project's configurations like, for example, the list of basis URL that lists the `JSON` that will be used to build the the server-driven screen. To configure this constant, use the example below:
+You'll attribute to this constant some project's configurations like, for example, the list of basis URL that lists the `JSON` that will be used to build the server-driven screen. To configure this constant, use the example below:
 
 
 ```swift

@@ -6,7 +6,7 @@ description: Lazy components description and its attributes details
 
 ---
 
-## What is Lazy?
+## What is it?
 
 The `Lazy Component` is used when a BFF asynchronous request is made.
 

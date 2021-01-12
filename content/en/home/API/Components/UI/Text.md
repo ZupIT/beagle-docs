@@ -1,14 +1,14 @@
 ---
 title: Text
 weight: 300
-description: Description of the component Text and its attributes
+description: You will find here a description of the component Text and its attributes.
 ---
 
 ---
 
 ## What is it?
 
-`Text` component defines the native text using the server driven information.
+`Text` component defines the native text using the server-driven information.
 
 The structure is represented by the attributes below:
 
@@ -21,7 +21,7 @@ The structure is represented by the attributes below:
 
 ### TextAlignment
 
-| At**tributes** | Definition                                          |
+| Attribute | Definition                                          |
 | :------------- | :-------------------------------------------------- |
 | LEFT           | Content align to the **left** in the text viewer.   |
 | CENTER         | Content align in the **center** in the text viewer. |

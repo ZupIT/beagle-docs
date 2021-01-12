@@ -1,7 +1,7 @@
 ---
 title: Tabview
 weight: 298
-description: Description of the component TabView and its attributes. This componente was
+description: You will find here a description of the component TabView and its attributes.
 ---
 
 ---
@@ -24,7 +24,7 @@ The structure is represented by the attributes below:
 
 ## What is Tab**Item?**
 
-TabView components items that have this structure:
+TabView is a component item that has this structure:
 
 | **Attribute** | **Type** | Required | **Definition** |
 | :--- | :--- | :--- | :--- |

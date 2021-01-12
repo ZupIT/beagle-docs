@@ -1,14 +1,14 @@
 ---
 title: Listview
 weight: 315
-description: "Description of the ListView component, its attributes and constructors"
+description: "You will find here the description of the ListView component, its attributes and constructors"
 ---
 
 ---
 
 ## What is it?
 
-The ListView component is responsible for defining a list of recyclable items natively. These items can be any server driven components. The use of ListView is recommended for situations where there is repetition of components, but with different data.
+The ListView component is responsible for defining a list of recyclable items natively. These items can be any server-driven components. The use of ListView is recommended for situations where there is repetition of components, but with different data.
 
 {{% alert color="danger" %}}
 From version 1.5.0, we started to support the use of context and cell recycling in ListView, with that we provide two ways to build the component. The depreciated version was maintained only to keep backward compatibility, upgrade to the new version of the component if possible for better performance.

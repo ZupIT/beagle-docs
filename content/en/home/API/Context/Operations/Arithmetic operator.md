@@ -8,7 +8,7 @@ description: Here you will find the complete description of arithmetic operator.
 
 ## What are they?
 
-| Operators | Example              | Action                                                        |
+| Operator | Example              | Action                                                        |
 | :-------: | :------------------- | :------------------------------------------------------------ |
 |    sum    | "@{sum\(3,3\)}"      | Addition operator for the elements type Int and Double.       |
 | subtract  | "@{subtract\(4,3\)}" | Subtraction operator for the elements type Int and Double.    |

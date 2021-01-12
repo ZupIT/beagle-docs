@@ -1,7 +1,7 @@
 ---
 title: Backend
 weight: 12
-description: "Here, you'll find how to configure a backend with Beagle."
+"You will find here how to configure a backend with Beagle."
 ---
 
 ---
@@ -26,7 +26,7 @@ If you already have updated all the programs above, then just go to the followin
 
 ### Step 1: Create a micro-service
 
-When you create a micro-service, we recommend using your team's established mechanisms. If that's not your case, you can just follow the configurations below.
+When you create a micro-service, it's recommend to use your team's established mechanisms. If that's not your case, you can just follow the configurations below.
 
 {{% alert color="warning" %}}
 If your team works with micro-services using a framework other than Spring or Micronaut, see [**Beagle Framework**](/home/resources/customization/beagle-for-backend/beagle-framework) instead.

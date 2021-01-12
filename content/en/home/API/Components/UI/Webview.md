@@ -8,7 +8,7 @@ description: Description of the component Web View and its attributes
 
 ## What is it?
 
-This component defines a native web view and uses a server-driven information.
+The WebView component defines a native web view and uses a server-driven information.
 
 The structure is represented by the attributes below:
 

@@ -18,7 +18,7 @@ Its structure is represented as shown below:
 | children  | List&lt;[**ServerDrivenComponent**](/home/api/components)&gt; | ✓        | Defines the visual components list \(server driven\).          |
 | context   | **​**[**ContextData**](/home/api/context)**​**                | ​        | Adds a context to the simple form                              |
 
-## How to use?
+## How to use it?
 
 When creating a form it is important to understand two steps respectively
 
@@ -37,7 +37,7 @@ For more information on this component go to the details of [TextInput](/home/ap
 
 This function is part of the TextInput and it observes the changes made within its field, that is, whenever the value is modified, something is typed, deleted, etc, this function is called and activates a list of other [**actions**](/home/api/actions/) to happen whenever the value changes. It is in this list that we add a [**SetContext**](/home/api/actions/setcontext) action to set the [**Context**](/home/api/context/) value of the form and update the values ​​that are shown in the field.
 
-Check our example below on how we implemented a `SimpleForm`
+Check out the example below on how its implemented a `SimpleForm`
 
 {{< tabs id="T132" >}}
 {{% tab name="JSON" %}}

@@ -1,7 +1,7 @@
 ---
 title: Android
 weight: 6
-description: "Here, you'll find how to make Android's configuration to install Beagle."
+description: "You will find here how to make Android's configuration to install Beagle."
 ---
 
 ---
@@ -16,7 +16,7 @@ Before you start to configure Beagle for your Android system, it's important to 
 
 ## **Step 1: Dependencies' configuration**
 
-You have to adjust your repository's dependencies to receive Beagle. To do so, use the following configurations to **download library.**
+You have to adjust your repository's dependencies to receive Beagle. To do so, use the following configurations to **download Beagle's library.**
 
 For version prior to 1.1.0 add to build.gradle maven{url}:
 

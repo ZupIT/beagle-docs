@@ -18,7 +18,7 @@ Your structure is represented by the attribute below:
 
 ## How to use it?
 
-On the example below, you can see a screen that comes from BFF with a button when is clicked, open the browser with the specific URL. To test, it is necessary an endpoint of your BFF return the code below and call it in the frontend: d.
+On the example below, you can see a screen that comes from BFF with a button that, when is clicked, opens the browser with a specific URL. If you want to test, it is necessary to use an endpoint of your BFF returning the code below and call it in the frontend:
 
 {{< tabs id="T93" >}}
 {{% tab name="JSON" %}}

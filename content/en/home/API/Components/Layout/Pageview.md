@@ -8,10 +8,10 @@ description: Page View components description and its attributes details
 
 ## What is it?
 
-`PageView` component is a container that present pages that it will be horizontally displayed. They can be any server driven object.
+`PageView` component is a container that present pages that it will be horizontally displayed. They can be any server-driven object.
 
 {{% alert color="info" %}}
-O Page View refers to its view size on mobile devices \(Android or iOS\). The page view size is determined by the father that it is in, meaning that, the width and the height will be defined by the component father.
+The Page View refers to its view size on mobile devices \(Android or iOS\). This size is determined by the father that it is in, which means that the width and the height will also be defined by the component father.
 
 For example, a Page View can be declared inside of a [**Container**](/home/api/components/layout/container) and the width and the height will define the page view size.
 {{% /alert %}}
@@ -70,7 +70,7 @@ See how the structure is represented:
 
 ## How to use it?
 
-On the example below you will see a PageView that contains three pages where each one of them has a Text defined by the Context. Every time there is a change the context page is redefined:
+On the example below, you will see a PageView that contains three pages that each one of them has a Text defined by the Context. Every time there is a change the context page is redefined:
 
 {{< tabs id="T130" >}}
 {{% tab name="JSON" %}}

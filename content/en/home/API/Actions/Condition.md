@@ -10,7 +10,7 @@ description: >-
 
 ## What is it?
 
-It is an action that has a boolean parameter and according to the value the action runs onTrue or onFalse.
+It is an action that has a boolean parameter and, according to the value, the action runs onTrue or onFalse.
 
 | Attribute | Type                                                 | Required | Definition                                                       |
 | :-------- | :--------------------------------------------------- | :------: | :--------------------------------------------------------------- |

@@ -16,5 +16,5 @@ There are two ways to use Form Validator:
 {{% alert color="warning" %}}
 Atenção: **Validator** ≠[**FormValidation**](/home/api/actions/formvalidation/)
 
-Despite the similar names, it's important to mention that **Validator** is different of the **FormValidation**, the first one authenticates the filled form and the second returns error messages in case of failed information in the form.
+Despite the similar names, it's important to mention that **Validator** is different of the **FormValidation**. The first one authenticates the filled form and the second returns error messages in case of failed information in the form.
 {{% /alert %}}

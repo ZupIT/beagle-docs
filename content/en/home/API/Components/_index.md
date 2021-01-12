@@ -1,7 +1,7 @@
 ---
 title: Components
 weight: 283
-description: Here you'll find all about components and its attributes details.
+description: Here you will find all information about components and its attributes details.
 ---
 
 ---

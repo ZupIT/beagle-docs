@@ -7,7 +7,7 @@ description: Here you'll find ResetApplication description and its attribute.
 ---
 
 ## What is it?
-
+What is it?
 Opens a screen with an informed route and deletes all the navigation piles.
 
 Your structure is represented by the attribute below:
@@ -18,9 +18,9 @@ Your structure is represented by the attribute below:
 
 ## How to use it?
 
-On the example below, three screens were used: two first used PushView to add the screens to the piles, the last one use ResetApplication and reopens the first screen.
+On the example below, three screens were used. The two first used PushView to add the screens to the piles and the last one uses ResetApplication and reopens the first screen.
 
-To test, you will need three endpoints:
+You will need three endpoints to test:
 
 1. The first endpoint will be what your frontend will call to render the screen zero.
 2. The second endpoint must be mapped as **"/firstScreen",** because this will be the chose URL to the screen 0 button's navigation, and it must return to the screen 1.

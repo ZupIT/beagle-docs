@@ -12,7 +12,7 @@ description: >-
 
 The Tab Bar component is responsible for defining a table that allows navigation between views. It displays tabs corresponding to different views that can be accessed through it.
 
-The structure is represented as shown below:
+Your structure is represented by the attributes below:
 
 | **Attribute**  | **Type**           | Required | **Definition**                                                                                                                                                   |
 | :------------- | :----------------- | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -27,7 +27,7 @@ This component represents the `TabBarItem` presented on a Tab Bar.
 
 | **Attributes** | **Type** | Required | **Definition**                                                                                                                                                 |
 | :------------- | :------- | :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| title          | String   |          | Displays the text in the `Tab Bar item` **Title**. If it is not declared or if it is set to null, it will not appear on the screen. The tab wont be displayed. |
+| title          | String   |          | Displays the text in the `Tab Bar item` **Title**. If it is not declared or if it is set to null, it will not appear on the screen. The tab won't be displayed. |
 | icon           | Path     |          | Displays a local image as an icon in the `Tab Bar Item`. If it is not declared or is set to null, it will not appear on the screen.                            |
 
 {{% alert color="warning" %}}
@@ -40,7 +40,11 @@ On the following example, it will be used two componentes to explain TabBar: [**
 
 **Page View** is used to render the pages you want to display, that is, it will create the view on each selected tab. This is where you will define the components you want to display by clicking on each tab.
 
-The components will be rendered according to their position in the list of componentes defined at the Page View Component.It means that, if we have 2 text components in our list, TAB 1 and TAB 2. The first has a position of ZERO = 0, and the second has ONE = 1. The **currentTab** attribute is the one that defines which component is displayed according to the value defined in it.
+The components will be rendered according to their position in the list of componentes defined at the Page View Component.
+
+It means that, if we have 2 text components in our list - TAB 1 and TAB 2 -, The first has a position of ZERO = 0, and the second has ONE = 1. 
+
+The **currentTab** attribute is the one that defines which component is displayed according to the value defined in it.
 
 The **Context** is used to save the indicator \(position\) of the selected tab, and inform it to PageView, which coordinates which element will be displayed.
 

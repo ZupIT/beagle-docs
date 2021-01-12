@@ -7,7 +7,7 @@ weight: 359
 
 ## **What is it?**
 
-Class that defines a navigation bar in the top of the screen and it's composed by the following attributes:
+A class that defines a navigation bar in the top of the screen and it's composed by the following attributes:
 
 | **Attribute**             | **Type**                                                | Required | Definition                                                                   |
 | :------------------------ | :------------------------------------------------------ | :------- | :--------------------------------------------------------------------------- |
@@ -19,7 +19,7 @@ Class that defines a navigation bar in the top of the screen and it's composed b
 
 ## What is a NavigationBarItem?
 
-Class that defines an item for `Navigation's bar` and and it has the following attributes:
+A class that defines an item for `Navigation's bar` and and it has the following attributes:
 
 | **Attribute** | **Type**                                     | Required | Definition                                                          |
 | :------------ | :------------------------------------------- | :------- | :------------------------------------------------------------------ |

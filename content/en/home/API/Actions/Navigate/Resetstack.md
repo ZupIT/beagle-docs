@@ -7,7 +7,7 @@ description: Here you'll find ResetStack description and its attribute.
 ---
 
 ## What is it?
-
+What is it?
 Opens a screen with an informed route of a new flow and cleans the pile of previous loaded screens.
 
 Your structure is represented by the attribute below:
@@ -18,9 +18,9 @@ Your structure is represented by the attribute below:
 
 ## How to use it?
 
-On the example below, three screens were used: two firs used PushView to add the screens to the piles, the last one use **ResetStack** and reopens the first screen.
+On the example below, three screens were used. The two first used PushView to add the screens to the piles and the last one uses **ResetStack** and reopens the first screen.
 
-To test, you will need three endpoints:
+You will need three endpoints to test:
 
 1. The first endpoint will be what your frontend will call to render the screen zero.
 2. The second endpoint must be mapped **"/firstScreen"**, because this will be the chosen URL of the screen 0 button's navigation and for that the endpoint must return the screen 1.

@@ -1,7 +1,7 @@
 ---
 title: Container
 weight: 313
-description: Container components description and its attribute details
+description: You will find here the description of Container components and its attribute details
 ---
 
 ---
