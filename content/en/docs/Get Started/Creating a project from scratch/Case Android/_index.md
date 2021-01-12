@@ -146,7 +146,7 @@ Let this file open because we'll use it again in another moment.
 {{% alert color="warning" %}}
 * The **usesCleartextTraffic**: Indicates with the app intends to use cleartext network traffic, HTTP.  The default value for apps that target API level 27 or lower is "`true`". Apps that target API level 28 or higher default to "`false`".
 * The **attribute** `android:usesCleartextTraffic="true"` inside `<application>`tag  is used to communicate with the local BFF. Them if you intent to debug the project using a local BFF you can use this as an easy configuration step. 
-* Although, if you plan to turn this example into a release application, we recommend you using the **`networkSecurityConfig`** which you can configure using [**android developers page instructions**](https://developer.android.com/training/articles/security-config).
+* Although, if you plan to turn this example into a release application, we recommend you to use the **`networkSecurityConfig`** which you can configure using [**android developers page instructions**](https://developer.android.com/training/articles/security-config).
 {{% /alert %}}
 
 ### Step 3: Configure Network, Cache and Logger
