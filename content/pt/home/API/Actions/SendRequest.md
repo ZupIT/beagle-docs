@@ -16,13 +16,13 @@ A estrutura do Send Request é:
 
 | **Atributo** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :---: | :--- |
-| url | String ou [**Binding**](/pt/docs/api/context#binding) | ✓ | URL do servidor. |
-| method | RequestActionMethod ou [**Binding**](/pt/docs/api/context#binding) | ✓ | Método HTTP. |
-| headers | Map &lt;String, String&gt; ou [**Binding**](/pt/docs/api/context#binding) |   | Itens do header para a requisição. |
+| url | String ou [**Binding**](/pt/home/api/context#binding) | ✓ | URL do servidor. |
+| method | RequestActionMethod ou [**Binding**](/pt/home/api/context#binding) | ✓ | Método HTTP. |
+| headers | Map &lt;String, String&gt; ou [**Binding**](/pt/home/api/context#binding) |   | Itens do header para a requisição. |
 | data | Any |   | Conteúdo a ser enviado junto a requisição. |
-| onSuccess | List&lt;[**Action**](/pt/docs/api/actions)&gt; |   | Ação tratativa de sucesso. |
-| onError | List&lt;[**Action**](/pt/docs/api/actions)&gt; |   | Ação tratativa de erro. |
-| onFinish | List&lt;[**Action**](/pt/docs/api/actions)&gt; |   | Ação tratativa de finalização. |
+| onSuccess | List&lt;[**Action**](/pt/home/api/actions)&gt; |   | Ação tratativa de sucesso. |
+| onError | List&lt;[**Action**](/pt/home/api/actions)&gt; |   | Ação tratativa de erro. |
+| onFinish | List&lt;[**Action**](/pt/home/api/actions)&gt; |   | Ação tratativa de finalização. |
 
 ## Como usar?
 
