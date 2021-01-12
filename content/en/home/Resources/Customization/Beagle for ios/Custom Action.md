@@ -10,7 +10,7 @@ description: >-
 
 ## Introduction
 
-`action` is a code block that can run when some event is defined. Beagle already has some by pattern, however it is possible to create your own customized action. 
+`action` is a code block that can run when some event is defined. Beagle already has some by default, however it is possible to create your own customized action. 
 
 ## Example
 

@@ -51,7 +51,7 @@ It is an `ENUM` and the values are:
 | Value | Definition |
 | :--- | :--- |
 | GET | The `GET` method  requests a representation of a specific resource. Requests using the method `GET` must return only data. |
-| POST | The `POST` method it is used to submit an entity to a specific resource, frenquetly causing a change in the resource state or colateral effects on the server.  |
+| POST | The `POST` method is used to submit an entity to a specific resource, frenquetly causing a change in the resource state or colateral effects on the server.  |
 | PUT | The  `PUT` method replaces all the current representation of the target resources with the data of the request.  |
 | DELETE | The `DELETE` method removes a specific resource.  |
 | HEAD | The `HEAD` method  request an answer the same way the `GET` method does, however without a response body.  |

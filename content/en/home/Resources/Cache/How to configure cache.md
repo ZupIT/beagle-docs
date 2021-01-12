@@ -8,13 +8,13 @@ description: >-
 
 ---
 
-## How does cache work?
+## How does cache work? 
 
-As in other platforms the pattern cache is controlled by the backend with the tag `cache-control` and `beagle-hash`, they are information that must be provided through request header, where `beagle-hash` is responsible for providing this hash related to the screen that has been downloaded and `cache-control` for the life time of this cache as **reliable**.
+As in other platforms the default cache is controlled by the backend with the tag `cache-control` and `beagle-hash`, they are information that must be provided through request header, where `beagle-hash` is responsible for providing this hash related to the screen that has been downloaded and `cache-control` for the life time of this cache as **reliable**. 
 
 ### Reliable cache
 
-A reliable cache is when its life time has not expired yet.
+A reliable cache is when its life time has not expired yet. 
 
 In this case, when verifying if there is a cache in the front and it is reliable, the screen is rendered without confirming with the server. This saves time, bandwidth and provides a fluid experience to the user.
 
@@ -22,49 +22,50 @@ Reliable cache its saved in the memory.
 
 ### Unreliable cache
 
-We also have the unreliable cache, that means its life time has already expired.
+We also have the unreliable cache, that means its life time has already expired. 
 
-A unreliable cache means that when it is identified it needs to be validaded with a backend to the route with its hash.
+A unreliable cache means that when it is identified it needs to be validaded with a backend to the route with its hash. 
 
-This moment it stops being saved in the memory and it is saved in a persistent way in the disk.
+This moment it stops being saved in the memory and it is saved in a persistent way in the disk. 
 
 ### Life time
 
-The cache's life time can have a parameter through the application's configuration. In the standard cache implementation the life time is 300 seconds. This time can be altered if the backend sends a different time through the `cache-control` header, because it has priority in this configuration.
+The cache's life time can have a parameter through the application's configuration. In the standard cache implementation the life time is 300 seconds. This time can be altered if the backend sends a different time through the `cache-control` header, because it has priority in this configuration. 
 
-### Cache re validation
+### Cache re validation 
 
-When an unreliable cache is found, it must be validated with the backend. That means when searching a screen, it sends a request in the header the hash it has.
+When an unreliable cache is found, it must be validated with the backend. That means when searching a screen, it sends a request in the header the hash it has. 
 
-When receiving the request, the server understands that already has a version of this screen saved in the application and compares the hash value sent with the current one saved by the backend. In case they are the same, a response is sent with 304 status and without a body, indicating that the screen remains the same and that cache is reliable again.
+When receiving the request, the server understands that already has a version of this screen saved in the application and compares the hash value sent with the current one saved by the backend. In case they are the same, a response is sent with 304 status and without a body, indicating that the screen remains the same and that cache is reliable again. 
 
-If the hash sent by the front it is different from the one saved in the backend, a response will be sent normally with a new hash value that it must be updated in the application.
+If the hash sent by the front it is different from the one saved in the backend, a response will be sent normally with a new hash value that it must be updated in the application. 
 
-### Memory and disk occupation
+### Memory and disk occupation 
 
-To avoid a memory and disk overload, both caches apply a replacement policity Least [**Recently Used \(LRU\)**](https://pt.wikipedia.org/wiki/Algoritmo_de_troca_de_p%C3%A1gina) where the maximum quantity of the records can be also configured through the base cache class by the application. The standard values for memory and disk are 15 and 150, respectively.
+To avoid a memory and disk overload, both caches apply a replacement policity Least [**Recently Used \(LRU\)**](https://pt.wikipedia.org/wiki/Algoritmo_de_troca_de_p%C3%A1gina) where the maximum quantity of the records can be also configured through the base cache class by the application. The standard values for memory and disk are 15 and 150, respectively. 
 
 ## Configuring and customizing the cache
 
-There are allowed customization allowed by pattern class that exists in the cache, like life time and maximum quantity of records in memory and disk.
+There are allowed customization by the default class that exists in the cache, like lifetime and maximum quantity of records in memory and disk. 
 
-In case the pattern approach does not solve the problem, the applicantion is free to replace the pattern implementation to another one that fits better. For that, the class responsible for the cache management needs to be in accordance with the `CacheManagerProtocol` protocol.
+In case the default approach does not solve the problem, the application is free to replace the default implementation to another one that fits better. For that, the class responsible for the cache management needs to be in accordance with the `CacheManagerProtocol` protocol.
 
 Every platform has different specifications to configure the cache.
 
-We listed below, see:
+We listed below, see: 
 
 {{< tabs id="T12" >}}
 {{% tab name="Android" %}}
-In Android, the cache is configured when you implement the first Beagle's configuration.
+In Android, the cache is configured when you implement the first Beagle's configuration. 
 
-This implementation happens inside the class named [**AppBeagleConfig**](/home/get-started/using-beagle/android#step-2-create-a-beagleconfig-class), meaning that it is inside the Beagle's configuration class.
+This implementation happens inside the class named [**AppBeagleConfig**](/docs/get-started/using-beagle/android#step-2-create-a-beagleconfig-class), meaning that it is inside the Beagle's configuration class. 
 
-The cache, is a Beagle's internal class where we can define 3 properties, represented by the attributes below:
+The  cache, is a Beagle's internal class where we can define 3 properties, represented by the attributes below:
 
 1. `enable`
 2. `maxAge`
 3. `memoryMaximumCapacity`
+
 
 ```kotlin
 @BeagleComponent
@@ -75,23 +76,23 @@ class AppBeagleConfig : BeagleConfig {
     override val cache: Cache = Cache(
         enabled = true,
         maxAge = 300,
-        memoryMaximumCapacity = 15 //
+        memoryMaximumCapacity = 15 // 
     )
 }
 ```
 
+
 ### Cache's attributes
 
-| Attribute                 | Definition                                                                                                                                                                                    |
-| :------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **enable**                | `boolean` value that enables or disables the cache in disk and memory.                                                                                                                        |
-| **maxAge**                | `int` value of time in seconds that a memory cache will be active.                                                                                                                            |
+| Attribute | Definition |
+| :--- | :--- |
+| **enable** | `boolean` value that enables or disables the cache in disk and memory. |
+| **maxAge** | `int` value of time in seconds that a memory cache will be active. |
 | **memoryMaximumCapacity** | Int value that represents the memory cache LRU size. It is the number of screens that will be in the memory, for example, if you define a number 15, it means 15 pages that will be in cache. |
-
 {{% /tab %}}
 
 {{% tab name="iOS" %}}
-In iOS, the cache is configured when you first configure Beagle's dependencies.
+In iOS, the cache is configured when you first configure Beagle's dependencies. 
 
 We allow you to change the default configuration of cache by creating a instance of a class named `CacheManagerDefault`. Inside this class you can define the value of 3 properties:
 
@@ -110,7 +111,7 @@ dependencies.cacheManager = cacheManager
 Beagle.dependencies = dependencies
 ```
 
-It is also possible to create your own cache manager and set it to `BeagleDependencies` if you conform to the protocol `CacheManagerProtocol`.
+It is also possible to create your own cache manager and set it to `BeagleDependencies` if you conform to the protocol `CacheManagerProtocol`. 
 
 ```text
 public protocol CacheManagerProtocol {
@@ -122,25 +123,24 @@ public protocol CacheManagerProtocol {
 
 ### Cache's attributes
 
-| Attribute                 | Definition                                                                                                                                                                                      |
-| :------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **memoryMaximumCapacity** | `whole` value that represents the mamory cache LRU size. It is the number of screens that will be in memory. For example, if you define a number 15, it means 15 pages that will be in cache.   |
-| **diskMaximumCapacity**   | Whole value that represents the memory cache LRU size. It is the number of screens that will be in the memory. For example, if you define a number 15, it means 15 pages that will be in cache. |
-| **cacheMaxAge**           | `whole` time value in seconds that the memory cache is active.                                                                                                                                  |
-
+| Attribute | Definition |
+| :--- | :--- |
+| **memoryMaximumCapacity** | `whole` value that represents the mamory cache LRU size. It is the number of screens that will be in memory. For example, if you define a number 15, it means 15 pages that will be in cache. |
+| **diskMaximumCapacity** | Whole value that represents the memory cache LRU size. It is the number of screens that will be in the memory. For example, if you define a number 15, it means 15 pages that will be in cache. |
+| **cacheMaxAge** |  `whole` time value in seconds that the memory cache is active. |
 {{% /tab %}}
 
 {{% tab name="Backend" %}}
-In the backend this functionality is only supported if you use the [**started library**](/home/get-started/installing-beagle/backend/#step-3-include-starter-dependency)
+In the backend this functionality is only supported if you use the [**started library**](/docs/get-started/installing-beagle/backend/#step-3-include-starter-dependency)
 
-The cache was created to optimize the response of a request in terms of size and BFF's time, when the return is the same as the previous one. The input in this cache last until the server is redeployed or the client installed again.
+The cache was created to optimize the response of a request in terms of size and BFF's time, when the return is the same as the previous one. The input in this cache last until the server is redeployed or the client installed again. 
 
-To make this configuration:
+To make this configuration: 
 
 1. Search inside the ‌`src/main/resources` folder for the file `application.properties`
 2. If you don't have it, you can install now.
 
-In case the key is not listed in your file, it means that the standard configuration will be applied automatically.
+In case the key is not listed in your file, it means that the standard configuration will be applied automatically. 
 
 ```text
 beagle.cache.endpoint.exclude=/imagebeagle.cache.enabled=false​
@@ -209,9 +209,9 @@ In the list below, you will find what are the available properties and which con
 {{% /tab %}}
 
 {{% tab name="Web" %}}
-On web, the cache is configured when it's defined the initials configurations of Beagle Web on the `strategy` parameter, which is one of `BeagleModule` parametes \(if you're using Angular\) or `createBeagleUIService`\ (if you're using React\).
+On web, the cache is configured when it's defined the initials configurations of Beagle Web on the `strategy` parameter, which is one of `BeagleModule` parametes \(if you're using Angular\) or `createBeagleUIService`\ (if you're using React\). 
 
-By default, the cache comes enabled with **`beagle-with-fallback-to-cache`** strategy, however the `beagle-cache-only` strategy can also be used to implement [**Beagle's cache protocol**](/home/resources/customization/beagle-for-web/cache-strategy/).
+By default, the cache comes enabled with **`beagle-with-fallback-to-cache`** strategy, however the `beagle-cache-only` strategy can also be used to implement [**Beagle's cache protocol**](/docs/resources/customization/beagle-for-web/cache-strategy/).
 
 {{% alert color="warning" %}}
 Remember to set CORS enabled for backend when you want to use cache's strategy for Beagle on Web.
@@ -229,7 +229,7 @@ Example of configuration for **Angula**r:
     name: 'BeagleComponentsModule',
   },
   components: {
-    // Associate every beagle component to your angular component.
+    // Associate every beagle component to your angular component. 
   },
   strategy: 'beagle-cache-only'
 })
@@ -245,6 +245,5 @@ export default createBeagleUIService({
   strategy: 'beagle-cache-only'
 })
 ```
-
 {{% /tab %}}
 {{< /tabs >}}

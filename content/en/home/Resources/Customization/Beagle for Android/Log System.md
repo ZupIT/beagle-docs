@@ -36,7 +36,7 @@ interface BeagleLogger {
 2. **Warning:** informational messages of errors related to Beagle's component. 
 3. **Error**: shows error messages related to  `parse`, `http` and other exceptions.
 
-It is possible to **disable triggered log messages**. Beagle will not call the Log's API, even if it is a pattern or customized. You will need to change the attribute `isLoggingEnabled` of`AppBeagleConfig` to`false:`
+It is possible to **disable triggered log messages**. Beagle will not call the Log's API, even if it is default or customized. You will need to change the attribute `isLoggingEnabled` of`AppBeagleConfig` to`false:`
 
 
 ```kotlin
@@ -53,7 +53,7 @@ class AppBeagleConfig : BeagleConfig {
 
 You will create a class that implements `BeagleLogger` interface. This protocol must be defined to ease the error management generated in the server-driven context of your application. You can implement the methods the best way for your application.
 
-In order to let Beagle's environment open to modifications, the API logs pattern can be replaced to any other.
+In order to let Beagle's environment open to modifications, the default API logs can be replaced by any other.
 
 The customization is configured with the creation of an annotation class with `@BeagleComponent` that implements the `BeagleLogger` **Interface.** 
 

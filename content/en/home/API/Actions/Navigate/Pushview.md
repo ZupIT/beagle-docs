@@ -6,7 +6,7 @@ description: Here you'll find PushView description and its attribute.
 
 ---
 
-### What it is?
+### What is it?
 
 Presents a new screen and puts it on the pile.
 

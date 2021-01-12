@@ -1,40 +1,41 @@
 ---
 title: Android
 weight: 202
-description: "Here, you'll find how to make components' stylization on Android's projects."
+description: 'Here, you''ll find how to make components'' stylization on Android''s projects.'
 ---
 
 ---
 
-## Introduction
+## Introduction 
 
 Inside Beagle's library, there is a `DesignSystem` class that can be used to personalize the components used on your application.
 
-This class also can map application's local resources so we can refer to [**BFF** ](/home/key-concepts#backend-for-frontend)when you build a [**Server-Driven**](/home/key-concepts#server-driven-ui) screen.
+This class also can map application's local resources so we can refer to [**BFF** ](/docs/key-concepts#backend-for-frontend)when you build a [**Server-Driven**](/docs/key-concepts#server-driven-ui) screen. 
 
-Beside the images, Beagle's [**Design System**](/home/key-concepts#design-system) can customize:
+Beside the images, Beagle's [**Design System**](/docs/key-concepts#design-system) can customize: 
 
-- the appearance of the texts;
-- the style of the input components;
-- the style of the buttons;
-- the style of the toolbars and
-- tabViews.
+* the appearance of the texts;
+* the style of the input components;
+* the style of the buttons;
+* the style of the toolbars and
+* tabViews.
 
 ## Customized attributes
 
 {{% alert color="info" %}}
 For Beagle to be able to apply customized styles to components, when they are declared in the application, their **parents must refer to each corresponding family**. That is, to customize the components:
 
-- `Text`, your style should extend from **`Widget.AppCompat.TextView`**
-- `TextInput`, your style should extend from **`Widget.AppCompat.EditText`**
-- `Button`, your style should extend from **`Widget.AppCompat.Button`**
-- `Toolbar`, your style should extend from **`Widget.AppCompat.Toolbar`**
-- `TabView`, your style should extend from **`Widget.Design.TabLayout`**
-  {{% /alert %}}
+* `Text`, your style should extend from **`Widget.AppCompat.TextView`**
+* `TextInput`, your style should extend from **`Widget.AppCompat.EditText`**
+* `Button`, your style should extend from **`Widget.AppCompat.Button`**
+* `Toolbar`, your style should extend from **`Widget.AppCompat.Toolbar`**
+* `TabView`, your style should extend from **`Widget.Design.TabLayout`**
+{{% /alert %}}
 
 ### Text
 
-The text's components for Beagle Android are **totally customized**. To make this change, you just have to follow the pattern below:
+The text components for Beagle Android are **totally customizable**. To make this change, follow the example below:  
+
 
 ```markup
 <!-- Custom style for textual components. -->
@@ -45,9 +46,11 @@ The text's components for Beagle Android are **totally customized**. To make thi
     </style>
 ```
 
+
 ### TextInput
 
-The input components in Beagle Android are also **fully customizable**. To make any changes, just follow the pattern below:
+The input components in Beagle Android are also **fully customizable**. To make any changes, follow the example below:
+
 
 ```markup
 <!-- Custom style for textual components. -->
@@ -57,9 +60,11 @@ The input components in Beagle Android are also **fully customizable**. To make 
     </style>
 ```
 
+
 ### Button
 
-Like the texts and inputs, the buttons on the Beagle Android are **fully customizable**. To make any changes, just follow the pattern below:
+Like the texts and inputs, the buttons on Beagle Android are **fully customizable**. To make any changes, follow the example below:
+
 
 ```markup
 <!-- Custom style for Button components. -->
@@ -71,16 +76,18 @@ Like the texts and inputs, the buttons on the Beagle Android are **fully customi
     </style>
 ```
 
+
 ### Toolbar
 
-Inside Beagle's library for Android, the tool bar is part of[ **NavigationBar's class**.](/home/api/screen/navigation-bar/#what-is-a-navigationbaritem) To make it properly work on [**BeagleActivity**](/home/get-started/creating-a-project-from-scratch/case-android/#step-4-create-appbeagleactivity), you need to inform Beagle which bar will be used on your application.
+Inside Beagle's library for Android, the tool bar is part of[ **NavigationBar's class**.](/docs/api/screen/navigation-bar/#what-is-a-navigationbaritem) To make it properly work on [**BeagleActivity**](/docs/get-started/creating-a-project-from-scratch/case-android/#step-4-create-appbeagleactivity), you need to inform Beagle which bar will be used on your application.
 
-The bar customization can be done in the moment that she passes through Beagle. Besides these attributes, Toolbar has other four that are exclusive:
+The bar customization can be done in the moment that she passes through Beagle. Besides these attributes,  Toolbar has other four that are exclusive: 
 
 1. **backgroundColor:** defines the Tool Bar's background color.
-2. **navigationIcon**: receives a `drawable` and attributes it to a navigation bar icon on tool bar.
+2. **navigationIcon**: receives a `drawable` and attributes it to a navigation bar icon on tool bar. 
 3. **titleTextAppearance**: receives a text style to personalize a tool bar's title.
 4. **centerTitle**: when activated, centralize the tool bar's title.
+
 
 ```markup
 <!-- Custom style for Toolbar components. -->
@@ -90,13 +97,14 @@ The bar customization can be done in the moment that she passes through Beagle. 
         <item name="titleTextAppearance">@style/CustomTitleToolbar</item>
         <item name="centerTitle">true</item>
     </style>
-
+    
     <style name="CustomTitleToolbar" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 ```
+
 
 ### TabView
 
@@ -107,6 +115,7 @@ The Beagle's TabView component represents the Android's `TabLayout` and all its 
 3. **tabBackground**: receives a `drawable` and attributes it to TabView's background.
 4. **tabIndicatorColor**: attributes a color to a selection's indicator of one tab.
 5. **tabIconTint**: receives a `drawable` to define icons' colors, being selected or not.
+
 
 ```markup
 <!-- Custom style for TabLayout components. -->
@@ -119,7 +128,9 @@ The Beagle's TabView component represents the Android's `TabLayout` and all its 
     </style>
 ```
 
-To manage all the selected tabs, we recommend you the use of a selector for the `tabIconTint` attribute, as in the example below:
+
+To manage all the selected tabs, we recommend you the use of a selector for the `tabIconTint` attribute, as in the example below: 
+
 
 ```markup
 <selector xmlns:android="http://schemas.android.com/apk/res/android">

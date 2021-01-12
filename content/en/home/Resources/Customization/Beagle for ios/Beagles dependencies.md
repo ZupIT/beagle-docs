@@ -10,9 +10,9 @@ description: You will find here information about Beagle's iOS dependencies and 
 
 Your application can change Beagle's default behaviour with the properties customization of the `Beagle.dependencies` instantiation.
 
-They have a specific role in Beagle's capacity, this is the reason you have to deal `Beagle.dependencies` as the main focus on your customization, so that other parts of your application are able to see the changes you made in the dependencies.
+They have a specific role in Beagle's capacity, this is the reason you have to deal `Beagle.dependencies` as the main focus on your customization, so that other parts of your application  are able to see the changes you made in the dependencies.
 
-You must trust in the pattern implementation, like the example below:
+You must rely on the default implementation, like the example below: 
 
 ```text
 class BeagleDependencies: BeagleDependenciesProtocol {
@@ -39,52 +39,52 @@ class BeagleDependencies: BeagleDependenciesProtocol {
 }
 ```
 
-The Beagle's dependencies must be register in the AppDelegate, see the example below:
+The Beagle's dependencies must be register in the AppDelegate, see the example below: 
 
 ```swift
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
-    func application(_ application: UIApplication,
+    
+    func application(_ application: UIApplication, 
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
+        
         let dependencies = BeagleDependencies()
         dependencies.theme = AppTheme.theme
         dependencies.urlBuilder = UrlBuilder(baseUrl: URL(string: .baseURL))
         dependencies.navigation.defaultAnimation = .init(
             pushTransition: .init(
-                type: .fade,
+                type: .fade, 
                 subtype: .fromRight, duration: 0.1
-            ),
+            ), 
             modalPresentationStyle: .formSheet
         )
         dependencies.isLoggingEnabled = true
         dependencies.decoder.register(
-            component: CustomComponent.self,
+            component: CustomComponent.self, 
             named: "CustomComponent"
         )
         dependencies.decoder.register(
             action: CustomAction.self,
             named: "CustomAction")
-
+        
         Beagle.dependencies = dependencies
-
+        
         let rootViewController = MainScreen().screenController()
         window?.rootViewController = rootViewController
-
+        
         return true
     }
 }
-
+        
 ```
 
 ## UrlBuilder
 
-It configures the base URL to your application, it's used when the navigation flow via Beagle are defined, you can use a relative URL.
+It configures the base URL to your application, it's used when the navigation flow via Beagle are defined, you can use a relative URL. 
 
-See how to use it below:
+See how to use it below: 
 
 ```swift
 dependencies.urlBuilder = UrlBuilder(baseUrl: URL(string: "YOUR BASE URL
@@ -92,22 +92,22 @@ dependencies.urlBuilder = UrlBuilder(baseUrl: URL(string: "YOUR BASE URL
 
 ## NetworkClient
 
-It can run **network requests**. Your application must be customized here, because every project has a specific network layer. For that, the pattern implementation cannot work on your project.
+It can run **network requests**. Your application must be customized here, because every project has a specific network layer. For that, the default implementation cannot work on your project. 
 
 ## Decoder
 
 It transforms a JSON into Beagle's Component \(Elements Section\). It already has a logic to decode all the default components. If you have to work with customized components, you can register them in this instance.
 
-See below how to register a component and a customized action:
+See below how to register a component and a customized action: 
 
 ```swift
 Beagle.dependencies.decoder.register(
-    component: CustomWidget.self,
+    component: CustomWidget.self, 
     named: "CustomWidget"
 )
 
 Beagle.dependencies.decoder.register(
-    action: CustomAction.self,
+    action: CustomAction.self, 
     named: "CustomAction"
 )
 ```
@@ -118,12 +118,12 @@ You can provide a package for your application in a way Beagle can access your r
 
 ## Theme
 
-It stores all your **styles** and it knows how to apply them in your components. Some widgets have a variable that allows you to define the style. Each name must be passed on the dependency of **theme**, so that style may be used in your component.
+It stores all your **styles** and it knows how to apply them in your components. Some widgets have a variable that allows you to define the style. Each name must be passed on the dependency of **theme**, so that style may be used in your component. 
 
-To configure the customized styles, follow the next steps:
+To configure the customized styles, follow the next steps: 
 
 {{% alert color="info" %}}
-You will use `text` as a widget that has `UITextView` as your **UIKit** view. After that, you will apply your style changes to this view which will have `font` and `textColor` customization.
+You will use `text` as a widget that has `UITextView` as your **UIKit** view. After that, you will apply your style changes to this view which will have `font` and `textColor` customization. 
 {{% /alert %}}
 
 **Step 1:** create a function that it will receive a `UIKit` widget representation of what you want to apply to the style.
@@ -145,13 +145,13 @@ let theme = AppTheme(styles: [
 ])
 ```
 
-**Passo 3**: assign your Theme instance to Beagle's dependencies.
+  **Passo 3**: assign your Theme instance to Beagle's dependencies. 
 
 ```swift
 Beagle.dependencies.theme = theme
 ```
 
-**Passo 4**: now, you can use **Text** with your **style** properties and then configure the name your defined for your customized style.
+  **Passo 4**:  now, you can use **Text** with your **style** properties and then configure the name your defined for your customized style. 
 
 ```swift
 Text("Some text", style: "myStyleName")
@@ -159,13 +159,13 @@ Text("Some text", style: "myStyleName")
 
 ## ValidatorProvider
 
-Validates the customization that it will be made when the **Form** widget will be used.
+Validates the customization that it will be made when the **Form** widget will be used. 
 
 ## DeepLinkHandler
 
-This handler is used for a [**deep link navigation**](/home/resources/customization/beagle-for-android/deep-link-handler/) action. The variable has a default value, you can add new screens or replace for other in the application.
+This handler is used for a [**deep link navigation**](/docs/resources/customization/beagle-for-android/deep-link-handler/) action. The variable has a default value, you can add new screens or replace for other in the application. 
 
-You will find how to add a screen with a possible deep linking routing using a default value below:
+You will find how to add a screen with a possible deep linking routing using a default value below: 
 
 ```swift
 let deepLinkHandler = DeeplinkScreenManager.shared
@@ -177,32 +177,32 @@ Beagle.dependenciesdeepLinkHandler = deepLinkHandler
 
 Your application can deal with form being send by the user using `FormLocalAction`.
 
-LocalFormHandler defined on Beagle's dependencies will be used to run this.
+LocalFormHandler defined on Beagle's dependencies will be used to run this. 
 
 ## Repository
 
 It is responsible for three main operations on:
 
-1. `fetchComponent`: orchestrate the request to search widgets on the server.
-2. `submitForm`: submit forms on widget.
+1. `fetchComponent`: orchestrate the request to search widgets on the server. 
+2. `submitForm`:  submit forms on widget. 
 3. `fetchImage`: search images for **networkImage.**
 
 ## Analytics
 
-It is a protocol that can be implemented to track the appearence of the screen or its closing or a click event.
+It is a protocol that can be implemented to track the appearence of the screen or its closing or a click event. 
 
-See the example below:
+See the example below: 
 
 ```swift
 class AnalyticsSample: Analytics {
     func trackEventOnScreenAppeared(_ event: AnalyticsScreen) {
         print("Screen \(event.screenName) appeared")
     }
-
+    
     func trackEventOnScreenDisappeared(_ event: AnalyticsScreen) {
         print("Screen \(event.screenName) disappeared")
     }
-
+    
     func trackEventOnClick(_ event: AnalyticsClick) {
         print("Button touch with:\ncategory = \(event.category)\nlabel = \(event.label ?? "empty")\nvalue = \(event.value ?? "empty")")
     }
@@ -211,15 +211,15 @@ class AnalyticsSample: Analytics {
 
 ## Navigation
 
-`navigation` deals with the [**navigate**](/home/api/actions/navigate) types of action in your application. There is one implementation that it is used with default value, but that it can be replaced for a [**BeagleNavigation**](/home/resources/customization/beagle-for-ios/navigation-animation) class.
+`navigation` deals with the [**navigate**](/docs/api/actions/navigate) types of action in your application. There is one implementation that it is used with default value, but that it can be replaced for a [**BeagleNavigation**](/docs/resources/customization/beagle-for-ios/navigation-animation) class. 
 
-On this same attribute is also possible to define a [**navigation animation**](/home/resources/customization/beagle-for-android/navigation-animation).
+On this same attribute is also possible to define a [**navigation animation**](/docs/resources/customization/beagle-for-android/navigation-animation). 
 
 ## preFetchHelper
 
-This component is used to search [**`BeagleScreenViewControllers`**](/home/resources/customization/beagle-for-android/navigation-animation) and delivers a fluid experience to the user. It already has a value, it can be altered to fit what you need.
+This component is used to search  [**`BeagleScreenViewControllers`**](/docs/resources/customization/beagle-for-android/navigation-animation) and delivers a fluid experience to the user. It already has a value, it can be altered to fit what you need.
 
-The pre search is used when there is a navigataion widget in a way you can download all the data possible in the next screen, avoiding navigation delays. This behaviour can be deactivated.
+The pre search is used when there is a navigataion widget in a way you can download all the data possible in the next screen, avoiding navigation delays. This behaviour can be deactivated.  
 
 ## CacheManager
 
@@ -227,31 +227,31 @@ It is responsible to keep and manage the server-driven content cache of your app
 
 ## FormDataStoreHandler
 
-It is a way to persist the form data.
+It is a way to persist the form data. 
 
 ## WindowManager
 
-It is responsible to manage a window.
+It is responsible to manage a window. 
 
 ## Opener
 
-It is a protocol that has a method and opens an URL in case you need to navigate through an external link.
+It is a protocol that has a method and opens an URL in case you need to navigate through an external link. 
 
 ## GlobalContext
 
-Variable that defines a global scope context.
+Variable that defines a global scope context. 
 
 ## IsLoggingEnabled
 
-It is a boolean variable that enables or disable the logs, it comes already enabled by a pattern.
+It is a boolean variable that enables or disables the logs. It is enabled by default. 
 
 ## Logger
 
-Logger is a variable type `BeagleLoggerType` that organizes the application's logs. These logs follow a LogType protocol, which there are parameters:
+Logger is a variable type  `BeagleLoggerType` that organizes the application's logs. These logs follow a LogType protocol, which there are parameters:
 
-- category: log's matter;
-- message: log's message;
-- level: ranks the critical level.
+* category:  log's matter;
+* message: log's message;
+* level: ranks the critical level. 
 
 {{% alert color="info" %}}
 It is possible to create a customized logger, which it has the application's specifics categories.

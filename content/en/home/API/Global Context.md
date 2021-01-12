@@ -240,7 +240,7 @@ beagleService?.globalContext.get("myValue");
 {{% /tab %}}
 
 {{% tab name="iOS" %}}
-As the set method it is necessary to use the BeagleDependencies to call any Global Context method, follow the example below:
+Like the set method, it's necessary to use the BeagleDependencies to call any Global Context method. Check the example below:
 
 ```javascript
 dependencies.globalContext.get((path: "myValue"));

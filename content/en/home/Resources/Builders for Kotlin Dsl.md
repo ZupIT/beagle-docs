@@ -8,18 +8,18 @@ description: How to use builders available on Beagle with Kotlin
 
 Beagle offers two ways to define your components using builders:
 
-1. Pattern builder
+1. Default builder
 2. DSL builder
 
-With them, you are able to use the platform's components in a declarative way with Kotling or more practical way to assemble the components with your pattern values, in case if you are using Java instead of Kotlin. 
+With them, you are able to use the platform's components in a declarative way with Kotlin or more practical way to assemble the components with your default values, in case if you are using Java instead of Kotlin. 
 
 {{% alert color="info" %}}
 You can mix two available ways to define a component. 
 {{% /alert %}}
 
-## Pattern builder
+## Default builder
 
-The way to use the patterns builder on Beagle is similiar to any other builder you have used before. The builder's name is generally the component's name with the suffix Builder attached.
+The way to use the default builders on Beagle is similar to any other builder you have used before. The builder's name is generally the component's name with the suffix Builder attached.
 
 The **exceptions** are the components with the type:
 
@@ -126,7 +126,7 @@ Navigate.OpenNativeRoute(
 The example below defines a simple declared screen in the three available options on Beagle: 
 
 {{< tabs id="T83" >}}
-{{% tab name="Pattern" %}}
+{{% tab name="Default" %}}
 ```kotlin
 Screen(
     navigationBar = NavigationBar(
@@ -162,7 +162,7 @@ screen{
 ```
 {{% /tab %}}
 
-{{% tab name="Pattern builder" %}}
+{{% tab name="Default builder" %}}
 ```
 ScreenComponentBuilder()
     .navigationBar(
