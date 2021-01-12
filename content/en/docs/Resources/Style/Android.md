@@ -34,7 +34,7 @@ For Beagle to be able to apply customized styles to components, when they are de
 
 ### Text
 
-The text's components for Beagle Android are **totally customized**. To make this change, you just have to follow the pattern below:  
+The text components for Beagle Android are **totally customizable**. To make this change, follow the example below:  
 
 
 ```markup
@@ -49,7 +49,7 @@ The text's components for Beagle Android are **totally customized**. To make thi
 
 ### TextInput
 
-The input components in Beagle Android are also **fully customizable**. To make any changes, just follow the pattern below:
+The input components in Beagle Android are also **fully customizable**. To make any changes, follow the example below:
 
 
 ```markup
@@ -63,7 +63,7 @@ The input components in Beagle Android are also **fully customizable**. To make 
 
 ### Button
 
-Like the texts and inputs, the buttons on the Beagle Android are **fully customizable**. To make any changes, just follow the pattern below:
+Like the texts and inputs, the buttons on Beagle Android are **fully customizable**. To make any changes, follow the example below:
 
 
 ```markup

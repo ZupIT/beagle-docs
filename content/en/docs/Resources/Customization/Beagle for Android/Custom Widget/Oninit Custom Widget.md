@@ -8,7 +8,7 @@ description: Creating a custom widget with onInit
 
 Currently in Beagle, the [**Container**](/docs/api/components/layout/container) and [**ListView**](/docs/api/components/layout/listview) components have the behavior of executing a list of actions as soon as they are rendered. For this, they expose the `onInit` property, which receives the list of actions that will be triggered.
 
-To create a custom widget with the behavior of triggering a list of actions as soon as it is rendered, Beagle provides an easy way to do it using the pattern delegate by implementing the `OnInitiableComponent` interface.
+To create a custom widget with the behavior of triggering a list of actions as soon as it is rendered, Beagle provides an easy way to do it using the default delegate by implementing the `OnInitiableComponent` interface.
 
 {{% alert color="info" %}}
 For this step-by-step we will focus on linking `OnInitiableComponent` to the customizable widget, since its creation in detail has already been shown in the previous example.
@@ -51,7 +51,7 @@ class CustomInitiableWidget(
 
 ### Step 3: Delegate implementation
 
-In addition to the `onInit` property, the `OnInitiableComponent` interface needs the implementation of the `handleOnInit` and `markToRerunOnInit` methods. To facilitate and maintain the component's behavior pattern, Beagle already provides a ready implementation and we recommend its use, just delegating `OnInitiableComponentImpl`.
+In addition to the `onInit` property, the `OnInitiableComponent` interface needs the implementation of the `handleOnInit` and `markToRerunOnInit` methods. To facilitate and maintain the component's default behavior, Beagle already provides a ready implementation and we recommend its use, just delegating `OnInitiableComponentImpl`.
 
 ```kotlin
 @RegisterWidget

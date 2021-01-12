@@ -33,11 +33,11 @@ On Beagle, each style must be referenced in a way that each one has a name to be
 
 ### Example
 
-On the example below, we have a image method that's registering many images that are been used to build a page from backend. 
+On the example below, check the image method that's registering many images used to build a page from backend. 
 
-Notice that, on her, we can use the `when` operator to design styles, that is the first value is listed as a `string` that identifies Beagle's component syle _\(on a similar relation key/value\)_ and with a`Arrow Function ->` where we list the component's style _\(id style on Android\)_. Again, the logic here is similar to a pair “key/value”. 
+You can use `when` operator to design styles, the first value is listed as a `string` that identifies Beagle's component style _\(similar to key/value\)_ and with an`Arrow Function ->` where you list the component's style _\(id style on Android\)_. 
 
-With the function already stablished, the _**else**_ operator will contain a “default” style, like we demonstrate on the code below:
+With the function already established, the _**else**_ operator will contain a “default” style, check the example below:
 
 ![](https://lh5.googleusercontent.com/sRycVP6U1ThpjYfz4KJHH1Dp6jCZxONg7u1KC-_CDCiROkOFwhOvF5kGOxuTpOexLUZ8R-J97UCMNKqV16uUz4MBGIO279Dn4vS6LZiqIFn_kOtxtX5wLMo57wKS3_5nKdDoc3gM)
 
@@ -121,7 +121,7 @@ This file contains the code of your first server-driven screen that must be conf
 You will see that a components hierarchy was built with a SCREEN and two TEXT components.
 
 {{% alert color="info" %}}
-For this tutorial momemnt, you have to only worry about what needs to be done so you can apply a style to the components.
+Right now, you can apply a style to the components.
 {{% /alert %}}
 
 ![](https://lh3.googleusercontent.com/b3DvRw3pXFnrhgZtHF2kNMzZCY7vno0oqjs7VsxT2l9aukfyBI2KHfSg-5bcb-hgV_RgXqm0HxlVJBeimQ09bFiXc9R-ZFDrKPcV-PTQf7pbs8P1eZApkyldGdmmKJ3kQMgrUfYR)
@@ -164,7 +164,7 @@ In case there is some problem, we recommend that you follow the tutorial to [**i
 
 * Access the package _res &gt; values &gt; colors_
 * Add the 3 colors inside the tag &lt;resources&gt;&lt;/resources&gt; like the following. 
-* Type the code below and it will create the colors white, black and orange in your color pallete.
+* Type the code below and it will create the colors white, black and orange in your color palette.
 
 
 ```markup
@@ -236,7 +236,7 @@ To do so, follow these steps:
 If you have any trouble on making this configuration, check out [**how to use When.**](https://kotlinlang.org/docs/reference/control-flow.html#when-expression)
 {{% /alert %}}
 
-   3. Infor the `"styles"` names we referenced on backend \(BFF\) and the style created on Android, programmatically connecting them. 
+   3. Inform the `"styles"` names referenced on backend \(BFF\) and the one created on Android, programmatically connecting them. 
 
   4. On _**else**_ , we should list the `default` style we created. Follow the example on the image below:
 

@@ -52,7 +52,7 @@ github "ZupIT/beagle" ~> 1.0.1
 ```
 
 {{% alert color="warning" %}}
-After an important release, we'll probably lauch versions with specific bug fixes for iOS, in which will have a version tag followed the sufix "-iOS" \(e.g: "1.0.1-iOS"\).
+After an important release, we'll probably launch versions with specific bug fixes for iOS, it will have a version tag followed by the suffix "-iOS" \(e.g: "1.0.1-iOS"\).
 {{% /alert %}}
 
 ### Step 2: Build on dependencies 

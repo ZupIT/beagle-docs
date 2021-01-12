@@ -46,8 +46,7 @@ Check the example below to see how the structure works:
       </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">It refers to a native style to be applied in the button. This attribute
-        is optional, meaning if it is not informed it will be used the style pattern
-        of your application.</td>
+         is optional, when it's not informed, your application's default style will be used.</td>
     </tr>
     <tr>
       <td style="text-align:left">onPress</td>
@@ -56,7 +55,7 @@ Check the example below to see how the structure works:
       <td style="text-align:left">Possible array actions that this button will go off when clicked. It is
         possible to adapt this action to be customized or an extension of any action
         already available in your interface. This attribute is optional, but if
-        an action it is defined here, it must be configured in the frontend. To
+        an action is defined here, it must be configured in the frontend. To
         create an action in the frontend, <a href="../../../resources/customization/"><b>see the example here</b></a>.</td>
     </tr>
     <tr>

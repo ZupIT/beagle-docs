@@ -10,11 +10,9 @@ description: Here you'll find all about context's description
 
 Context is a **variable of any type**, including a map that defines a set of key/value pairs. Through bindings, the value of a context can be accessed by any component or action on your scope. 
 
-The table below shows the main attributes of the context;
+The table below shows the main attributes of the context:
 
-A tabela abaixo demonstra os principais atributos do contexto: 
-
-| Attribute | Type | Required | Definição |
+| Attribute | Type | Required | Definition |
 | :--- | :--- | :---: | :--- |
 | id | String | ✓ | Context identifier  |
 | value | Any | ✓ | Context value |
@@ -96,7 +94,7 @@ There are two ways to use context: **explicit and implicit context**.  The main 
 
 The scope of a context is a component where it and its descendants were defined. It's impossible to access a declared context in another tree branch. 
 
-A context can be stablished in any Beagle component that implements a `ContextComponent`, that is a `context` propriety that can be specified by the following components:
+A context can be established in any Beagle component that implements a `ContextComponent`, that is a `context` propriety that can be specified by the following components:
 
 * `Container`
 * `Screen`
@@ -216,7 +214,7 @@ Screen(
                     placeholder = "CEP",
                     onBlur = listOf(
                         Alert(
-                            message = "example of implícit context: @{onBlur.value}"
+                            message = "example of implicit context: @{onBlur.value}"
                         )
                     )
                 )
@@ -329,7 +327,7 @@ It is the binding type which the context value it will be generally, a key/value
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
-No Kotlin é necessario que se crie algumas classes para gerenciar os contextos multivalorados
+It's necessary to create some classes to manage multivalued contexts in Kotlin.
 
 ```
 Container(
@@ -396,7 +394,7 @@ If a vector is used on a context value, to access a specific position, you have 
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
-No Kotlin é necessario que se crie algumas classes para gerenciar os contextos multivalorados
+It's necessary to create some classes to manage multivalued contexts in Kotlin.
 
 ```text
 Container(

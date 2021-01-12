@@ -80,7 +80,7 @@ private func registerCustomAction() {
 {{% tab name="Web" %}}
 1. You must create an interface with `_beagleAction_` as a mandatory propriety and with the necessary parameters to your action. For this example, we'll create a `msg` attribute `string` type.
 
-2. On `_beagleAction_`,  put the customized action name following the pattern 'custom:nameOfAction'.
+2. On `_beagleAction_`,  put the customized action name following the snippet 'custom:nameOfAction'.
 
 ```javascript
 interface CustomAction {

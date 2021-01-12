@@ -8,9 +8,9 @@ description: Here you'll find all about action's components and its attributes d
 
 ## What is it? 
 
-On Beagle, an action deals with behaviours \(functions\), that are performed in your application when an event is triggred. These actions can be a Beagle's pattern or customized by you. 
+On Beagle, an action deals with behaviours \(functions\), that are performed in your application when an event is triggered. These actions can be a Beagle's default or customized by you. 
 
-Any Beagle's event must be associated with an action list. See below a button's component example, that associates with a pattern action alert to its `onPress` event: 
+Any Beagle's event must be associated with an action list. See below a button's component example, that associates with a default action alert to its `onPress` event: 
 
 ```javascript
 {
@@ -26,7 +26,7 @@ Any Beagle's event must be associated with an action list. See below a button's 
 
 An action is map key/value with at least a `_beagleAction_` property. Its value indicates which action must be performed when the event it is triggered. The other properties specify the parameters expected by the indicated action. 
 
-There are several implemented actions on Beagle by pattern and all of them start with prefix "**beagle:**" and the customized actions start with "**custom:**". 
+There are several default implemented actions on Beagle and all of them start with "**beagle:**" prefix and the customized actions start with "**custom:**". 
 
 To learn how to create custom actions, check out [**Beagle's customization section.**](/docs/resources/customization/)
 
