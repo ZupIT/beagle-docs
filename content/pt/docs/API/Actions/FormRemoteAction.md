@@ -59,7 +59,3 @@ Segue abaixo os valores:
 | POST | É usado para métodos que submetem dados. |
 | PUT | É usado para métodos que substituem os dados . |
 | DELETE | É usado para métodos de remoção de dados. |
-
-
-
-

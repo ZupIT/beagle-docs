@@ -1,5 +1,5 @@
 ---
-title: Setcontext
+title: SetContext
 weight: 276
 description: Here you'll find a definition for SetContext and its attributes details
 ---

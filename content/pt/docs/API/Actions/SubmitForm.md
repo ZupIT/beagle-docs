@@ -1,5 +1,5 @@
 ---
-title: Submitform
+title: SubmitForm
 weight: 303
 description: >-
   Nesta seção, você encontra a definição do SubmitForm e detalhes de seus

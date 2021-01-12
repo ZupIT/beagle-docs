@@ -1,5 +1,5 @@
 ---
-title: Addchildren
+title: AddChildren
 weight: 232
 description: You will find here AddChildrenAction definition and its attributes details
 ---

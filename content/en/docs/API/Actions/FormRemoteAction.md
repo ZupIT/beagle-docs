@@ -1,5 +1,5 @@
 ---
-title: Formremoteaction
+title: FormRemoteAction
 weight: 242
 description: >-
   You will find here the definition of FormRemoteAction and details about its
@@ -58,7 +58,3 @@ See the values below:
 | POST | It is used for methods that submit data.  |
 | PUT | It is used for methods that replace the data.  |
 | DELETE | It is used for method that remove data.  |
-
-
-
-
