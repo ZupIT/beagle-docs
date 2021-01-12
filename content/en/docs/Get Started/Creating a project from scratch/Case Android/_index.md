@@ -23,7 +23,7 @@ After you installed the program, follow the steps below:
    **Step 3️:** On this page, there are some important information:
 
 * Inform your project's name. On this example, we'll call `BeagleApp`.
-* Choose which language you'll use. For Beagle, we should go with`Kotlin`.
+* Choose which language you'll use. For Beagle, you should go with `Kotlin`.
 * Choose **SDK minimum 19**, because a lower SDK won't be compatible. 
 * Define a **package** and a **Save location** according to your preference. 
 * Click on **Next**.
