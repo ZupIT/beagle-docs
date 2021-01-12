@@ -225,7 +225,7 @@ At this tutorial point, we will test our Server-Driven screens on local host bec
 
 ### **Step 5:  BeagleActivity** 
 
-Beagle offers a default `Activity` to manage all `server-driven activities`. However, it is possible to create a more specific activity to handle server-driven screens differently. You will create a new activity inheriting from `BeagleActivity` and will annotate it with `@BeagleComponent`. You can find a detailed step on how to create one at the [**Beagle Activity**](/docs/resources/customization/beagle-for-android/custom-beagle-activity/) session
+Beagle offers a default `Activity` to manage all `server-driven activities`. However, it is possible to create a more specific activity to handle server-driven screens differently. You will create a new activity inherited from `BeagleActivity` and it will annotate with `@BeagleComponent`. Check more information on how to create one at the [**Beagle Activity**](/docs/resources/customization/beagle-for-android/custom-beagle-activity/) page.
 
 {{% alert color="info" %}}
 {{% /alert %}}
