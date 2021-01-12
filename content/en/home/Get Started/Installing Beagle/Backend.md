@@ -1,7 +1,7 @@
 ---
 title: Backend
 weight: 12
-"You will find here how to configure a backend with Beagle."
+description: "You will find here how to configure a backend with Beagle."
 ---
 
 ---
