@@ -1,4 +1,4 @@
-baseURL = "http://docs-beta.usebeagle.io"
+baseURL = "https://docs.usebeagle.io"
 
 title = "Beagle"
 
@@ -68,21 +68,19 @@ logoName = "icons/beagle.svg"
 
 # Menu title if your navbar has a versions selector to access old versions of your site.
 # This menu appears only if you have at least one [params.versions] set.
-version_menu = "Releases"
+version_menu = "Versions"
 
-# Flag used in the "version-banner" partial to decide whether to display a 
-# banner on every page indicating that this is an archived version of the docs.
-# Set this flag to "true" if you want to display the banner.
+latest = "v1.5"
+
+fullversion = "v1.5.4"
+version = "v1.5"
+githubbranch = "main"
+docsbranch = "main"
+deprecated = false
+currentUrl = "https://docs.usebeagle.io/"
+
 archived_version = false
-
-# The version number for the version of the docs represented in this doc set.
-# Used in the "version-banner" partial to display a version number for the 
-# current doc set.
-version = "0.0"
-
-# A link to latest version of the docs. Used in the "version-banner" partial to
-# point people to the main doc site.
-url_latest_version = "http://docs-beta.usebeagle.io/"
+url_latest_version = "https://docs.usebeagle.io/"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/ZupIT/docs-beagle"
@@ -159,3 +157,16 @@ enable = true
 	icon = "fab fa-youtube"
         desc = "Youtube"
 
+[[params.versions]]
+fullversion = "v1.5.4"
+version = "v1.5"
+githubbranch = "v1.5.4"
+docsbranch = "main"
+url = "https://docs.usebeagle.io"
+
+[[params.versions]]
+fullversion = "v1.4.2"
+version = "v1.4"
+githubbranch = "v1.4.2"
+docsbranch = "release-1.4.2"
+url = "https://google.com"
