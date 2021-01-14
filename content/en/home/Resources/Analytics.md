@@ -7,7 +7,7 @@ description: "Here, you will find more about Analytics' functionalities."
 ---
 ## **Introduction**
 
-Analytics is a powerful yet simple to use functionality that Beagle offers, it gives developers control over the tracking of actions and navigation of their application.
+Analytics is a powerful yet simple to use functionality that Beagle offers, it gives developers control over the tracking of actions and navigation of their application to use in conjunction with any analytics service they might be using.
 
 In the next topics you will learn how to enable event tracking and configure it according to what you need. 
 
@@ -87,14 +87,47 @@ export default createBeagleUIService<any>({
 {{% /tab %}}
 {{< /tabs >}}
 
-## **Action configuration**
+## **How does it work ?**
 
-The easiest way to enable tracking with Beagle is through the BFF, you can simply enable which actions you want tracked by adding to them the key analytics with the following properties.
+As soon as you finish configuring the Analytics provider you are ready to start defining the events you want to track in your Beagle application, there are two ways to do so which are the ``ActionAnalyticsConfig`` and the ``AnalyticsConfig``.
+
+You can either use both configuration payloads or choose the one that better fits your solution, an important point to note here is that the ``ActionAnalyticsConfig`` has priority over the ``AnalyticsConfig`` which means that if you configure the same tracking event for both of them the ``ActionAnalyticsConfig`` will be used.
+
+see next further details on both ways of mapping the analytics
+
+### **Action configuration**
+
+The easiest way to enable tracking with Beagle is through the BFF, you can simply enable which actions you want tracked by adding to them the key analytics.
+
+First we choose which action we want to create the event and add the analytics property to them.
+
+example:
+
+{{< tabs >}}
+{{% tab name="JSON" %}}
+```text
+{
+  "_beagleComponent_": "beagle:button",
+    "text": "Button with analytics",
+    "onPress": [
+      {
+        "_beagleAction_": "beagle:pushStack",
+        "analytics": false
+      }
+    ]
+}
+```
+{{% /tab %}}
+{{% tab name="BFF" %}}
+<!-- To do analytics BFF -->
+{{% /tab %}}
+{{< /tabs >}}
+
+The analytics property accepts two types of values it can be a boolean that when set to false disables all the tracking for that action or it can be an structure of type ``ActionAnalyticsConfig`` detailed next.
 
 **ActionAnalyticsConfig**
 | **Property**           | Definition                                                     | Type             |
 | :--------------------- | :------------------------------------------------------------- | :--------------- |
-| **enable**             | Whether or not to keep analytics track of the action           | ``boolean``          |
 | **attributes**         | List of attributes to be exposed to the analytics interface    | ``Array <string>``   |
 | **additionalEntries**  | Any additional data you may want to send along with the action | ``Map<string, any>`` |
 
@@ -102,13 +135,6 @@ Using this interface you can control individually the actions and also the actio
 method from the [``AnalyticsProvider``]({{<ref "#analytics-provider-anchor">}}). The next example shows how your payload should be handed to your application in order to enable the analytics functionality.
 
 ```text
-{
-  "_beagleComponent_": "beagle:container",
-  "children": [
-    {
-      "_beagleComponent_": "beagle:text",
-      "text": "Beagle Analytics"
-    },
     {
       "_beagleComponent_": "beagle:button",
       "text": "Button with analytics",
@@ -116,7 +142,6 @@ method from the [``AnalyticsProvider``]({{<ref "#analytics-provider-anchor">}}).
         {
           "_beagleAction_": "beagle:pushStack",
           "analytics": {
-            "enable": true,
             "additionalEntries": {
               "extra": "Extra information"
             },
@@ -130,12 +155,12 @@ method from the [``AnalyticsProvider``]({{<ref "#analytics-provider-anchor">}}).
         }
       ]
     }
-  ]
-}
 ```
-This configuration allows a better control over each one of the actions directly from the screen payload, next you will learn how to configure the tracking from a configuration payload.
+This configuration allows a better control over each one of the actions directly from the screen payload. In the previous example we are passing inside the analytics key two properties, the ``additionalEntries`` that can be anything you might need and in our case we are passing a simple text, the ``attributes`` property has to be one of the properties of the action in our example we are passing the key route that will send the value of the route key to create the analytics record. 
 
-## **Analytics configuration payload**
+Next you will learn how to configure the tracking from a configuration payload.
+
+### **Analytics configuration payload**
 <a name="analytics-config-anchor"></a>
 Another way to use the Analytics functionality is with a configuration payload which contains the actions or navigation events to be tracked, this configuration will usually be requested and returned within the [``getConfig``]({{<ref "#analytics-createRecord-anchor">}}) method of the AnalyticsProvider interface.
 
@@ -160,7 +185,7 @@ Note in the previous example that we enabled the analytics for screen events, in
 
 
 <a name="analytics-record-anchor"></a>
-## **Analytics Record**
+### **Analytics Record**
 
 After you have configured your analytics provider, every time an analytics event occurs within Beagle applications the [``createRecord``]({{<ref "#analytics-createRecord-anchor">}}) method is called and it gives access to a parameter of type analyticsRecord.
 
