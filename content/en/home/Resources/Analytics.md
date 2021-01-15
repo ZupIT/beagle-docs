@@ -123,7 +123,7 @@ example:
 {{% /tab %}}
 {{< /tabs >}}
 
-The analytics property accepts two types of values it can be a boolean that when set to false disables all the tracking for that action or it can be an structure of type ``ActionAnalyticsConfig`` detailed next.
+The analytics property accepts two types of values it can be a boolean that when set to false disables all the tracking for that action (see previous example) or it can be a structure of type ``ActionAnalyticsConfig`` detailed next.
 
 **ActionAnalyticsConfig**
 | **Property**           | Definition                                                     | Type             |
@@ -156,7 +156,11 @@ method from the [``AnalyticsProvider``]({{<ref "#analytics-provider-anchor">}}).
       ]
     }
 ```
-This configuration allows a better control over each one of the actions directly from the screen payload. In the previous example we are passing inside the analytics key two properties, the ``additionalEntries`` that can be anything you might need and in our case we are passing a simple text, the ``attributes`` property has to be one of the properties of the action in our example we are passing the key route that will send the value of the route key to create the analytics record. 
+This configuration allows a better handling of each one of the actions directly from the screen payload. In the previous example we are passing inside the analytics key two properties:
+
+the ``additionalEntries`` that can be anything you might need and in our case we are passing a simple text;
+
+the ``attributes`` property has to be one of the properties of the action in our example we are passing the key route that will send the value of the route key to create the analytics record. 
 
 Next you will learn how to configure the tracking from a configuration payload.
 
@@ -195,5 +199,5 @@ The analytics record interface defines what properties a Beagle event will conta
 | **Property**         | Definition                                                     | Type             |
 | :--------------------| :------------------------------------------------------------- | :--------------- |
 | **type**             | The type of the analytics record 'screen' for navigation events or 'action' for action triggered events  | ``string``          |
-| **platform**         | The platform in which the event was triggered for example WEB    | ``string``   |
-| **key**              | Any additional data sent along with the action, it may be different among the platforms but the main keys are the name of the event and details about the Beagle component like type, id and position | ``Array<any>`` |
+| **platform**         | The platform from which the event was triggered, e.g: WEB    | ``string``   |
+| **keys**              | Any additional data sent along with the action, it may be different among the platforms but the main keys are the name of the event and details about the Beagle component like type, id and position | ``Array<any>`` |
