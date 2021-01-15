@@ -54,6 +54,8 @@ Agora com esse protocolo já pode usar para configurar sua própria camada de ca
 
 Para criar a camada de cache customizada vamos utilizar o core data, para guardar esses dados e salvar em disco. 
 
+Nesse exemplo vamos configurar o cache para salvar em disco, pode também ser configurado para salvar em memória.
+
 ### Passo 1: Criar o arquivo Data Model
 
 Para começar vamos criar o arquivo do tipo `Data Model` que será usado para criar as entidades e relacionamentos.
@@ -119,7 +121,7 @@ Os métodos que registramos são:
 
 * **`update`:** Atualiza alguma referência já registrada.
 
-* **`getReference`:** Pegar alguma referência já registrada utilizando a chave da referência.
+* **`getReference`:** Pega uma referência já registrada utilizando a chave da referência.
 
 * **`numberOfReferences`:** Conta quantas referência já foram registradas,
 
@@ -129,9 +131,9 @@ Os métodos que registramos são:
 
 * **`saveChanges`:**  Salva as alterações.
 
-Abaixo tem a implementação do protocolo e exemplo de cada métodos.
+Abaixo tem a implementação do protocolo e exemplo de cada método.
 
-Crie a classe DefaultCacheDiskManager essa classe ira conter a configuração para salvar os dados no core data, com a variavel `persistentContainer`.
+Crie a classe DefaultCacheDiskManager essa classe ira conter a configuração para salvar os dados no core data.
 
 Com as configuracoes da classe tembem recebemos na inicializacao o `DependencyLogger` para setar log de error.
 
@@ -440,7 +442,7 @@ class CustomCache: CacheManagerProtocol {
 
 Agora tudo pronto sua camada de cache.
 
-### Passo 5: Registrando a camada de cache no Beagle.
+### Passo 5: Registrar a camada de cache no Beagle.
 
 Para registar sua camada de cache bastar ir no aquivo do BeagleConfig onde configura os dependecies.
 
