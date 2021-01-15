@@ -54,17 +54,16 @@ Agora com esse protocolo já pode usar para configurar sua própria camada de ca
 
 Para criar a camada de cache customizada vamos utilizar o core data, para guardar esses dados e salvar em disco. 
 
+### Passo 1: Criar o arquivo Data Model
+
 Para começar vamos criar o arquivo do tipo `Data Model` que será usado para criar as entidades e relacionamentos.
 
+* 1: Crie uma entidade chamada Entity.
+* 2: Crie os atributos que deseja salvar, no caso serão os atributos da estrutura do `CacheReference`, que são **beaglehash**, **data**, **id** e o **timeOfCreation**.
 
 ![](/imageEntidadesCoreData.png)
 
-Agora siga os pasos:
-
-* 1: Adicione a entidade.
-* 2: Crie os atributos que deseja salvar no caso aqui vamos guardar os mesmos da estrutura do `CacheReference`, que são **beaglehash**, **data**, **id** e o **timeOfCreation**.
-
-Agora vamos criar uma estrutura para passar os dados do beagle para salvar no core data.
+### Passo 2: Criar uma estrutura para passar os dados do Beagle para salvar no core data.
 
 Crie a estrutura `CacheEntity` do tipo `NSManagedObject` com os mesmos nomes configurados na **entidade** do core data.
 
@@ -100,6 +99,8 @@ public class CacheEntity: NSManagedObject {
 ```
 
 Criamos os métodos `update` que recebe uma referência onde salva a mesma no core data, e o método `mapToReference` para mapear as referências.
+
+### Passo 3: Criar uma classe para configurar e salvar os dados no core data.
 
 Agora vamos criar um protocolo com todos os métodos que precisamos para configurar o cache.
 
@@ -265,9 +266,11 @@ Nessa classe temos dois métodos privados que são o **addNew** e o **getEntity*
 
 Agora que toda configuração de cache foi criada vamos criar a classe para adotar o protocolo **`CacheManagerProtocol`** que o `Beagle` fornece.
 
+### Passo 4: Criar uma classe para adotar o protocolo do Beagle.
+
 Crie uma classe `CustomCache` do tipo **`CacheManagerProtocol`**.
 
-Classe possue uma struct Config que possue os parâmetros `diskMaximumCapacity` que define a capacidade máxima do disco e o `cacheMaxAge` que é a idade maxima do cache. 
+A classe terá uma struct Config que possui os parâmetros `diskMaximumCapacity`, que define a capacidade máxima do disco e o `cacheMaxAge`, que é a idade maxima do cache. 
 
 ```swift 
 public struct Config {
@@ -437,7 +440,7 @@ class CustomCache: CacheManagerProtocol {
 
 Agora tudo pronto sua camada de cache.
 
-## Registrando a camada de cache no Beagle.
+### Passo 5: Registrando a camada de cache no Beagle.
 
 Para registar sua camada de cache bastar ir no aquivo do BeagleConfig onde configura os dependecies.
 
