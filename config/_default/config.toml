@@ -35,6 +35,7 @@ title = "Beagle"
 description = "Beagle Documentation"
 languageName ="English"
 contentDir = "content/en"
+version_menu = "Versions"
 # Weight used for sorting.
 weight = 1
 [languages.pt]
@@ -44,6 +45,7 @@ languageName ="Português"
 contentDir = "content/pt"
 time_format_default = "02/01/2006"
 time_format_blog = "02/01/2006"
+version_menu = "Versões"
 
 [markup]
   [markup.goldmark]
@@ -65,22 +67,6 @@ privacy_policy = "https://insights.zup.com.br/politica-privacidade"
 playground_url = "https://playground.usebeagle.io/#/docs"
 
 logoName = "icons/beagle.svg"
-
-# Menu title if your navbar has a versions selector to access old versions of your site.
-# This menu appears only if you have at least one [params.versions] set.
-version_menu = "Versions"
-
-latest = "v1.5"
-
-fullversion = "v1.5.4"
-version = "v1.5"
-githubbranch = "main"
-docsbranch = "main"
-deprecated = false
-currentUrl = "https://docs.usebeagle.io/"
-
-archived_version = false
-url_latest_version = "https://docs.usebeagle.io/"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/ZupIT/docs-beagle"
@@ -158,15 +144,6 @@ enable = true
         desc = "Youtube"
 
 [[params.versions]]
-fullversion = "v1.5.4"
+fullversion = "v1.5.2"
 version = "v1.5"
-githubbranch = "v1.5.4"
-docsbranch = "main"
-url = "https://docs.usebeagle.io"
-
-[[params.versions]]
-fullversion = "v1.4.2"
-version = "v1.4"
-githubbranch = "v1.4.2"
-docsbranch = "release-1.4.2"
-url = "https://google.com"
+url = "http://docs.usebeagle.io"
