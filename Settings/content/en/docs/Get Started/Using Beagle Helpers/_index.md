@@ -1,11 +1,11 @@
 ---
 title: Using Beagle Helpers
 weight: 15
-description: 'Beagle Helpers is a solution to facilitate the use of the Beagle framework in an Android, iOS or Web projects.'
+description: 'This section shows all details about the the configuration libs for Beagle and how to use them.'
 ---
 
 ---
 
-After you done [**Beagle's installation**](/docs/get-started/installing-beagle/), you have to make usage configuration to enable the tool on your project. 
+Beagle Helpers is a solution to facilitate Beagle framework`s use in Android, iOS or Web projects
 
-You can make this configuration based on the platform you wanna use:
+The initial Beagle setup requires quite a few classes and configurations, then in order to make this faster and more dynamic, each platform has developed a few libs.
