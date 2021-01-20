@@ -245,7 +245,7 @@ internal object BeagleMessageLogs {
 }
 ```
 
-### Step 3: Create a class StoreHandlerDefault
+### Step 3: Create a StoreHandlerDefault class
 
 The StoreHandler class defines a protocol that allows you to customize how the cache is handled in the database and in memory.
 

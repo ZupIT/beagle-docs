@@ -8,7 +8,7 @@ description: See how to change the error and loading components
 
 ## Loading Component
 
-Beagle's library already has by pattern a component that it is called when a screen loads. If necessary, you are able to change it to a customized one, according your application's needs. 
+Beagle's library already has by default a component called when a screen loads. If necessary, you are able to change it to a customized one, according to your application's needs. 
 
 To create a loading component, follow the steps below: 
 
@@ -58,7 +58,7 @@ You can use angular CLI, if you want, to generate the component automatically, s
 ng generate component components/custom-loading
 ```
 
-**Step 2:** After that, open the file `beagle-components.module.ts` and add the component to the list: 
+**Step 2:** After that, open `beagle-components.module.ts` file and add the component to the list: 
 
 ```text
 import { NgModule } from '@angular/core'
@@ -81,7 +81,7 @@ export class BeagleComponentsModule {}
 
 ```
 
-**Step 3:** Now, you can substitute the pattern component in the `beagle.module.ts` file:
+**Step 3:** Now, you can substitute the pattern component on `beagle.module.ts` file:
 
 ```text
 import { BeagleModule } from '@zup-it/beagle-angular';
@@ -110,7 +110,7 @@ The files  `beagle.module.ts` and `beagle-components.module.ts` are automaticall
 
 ## Error Component
 
-The pattern error component on Beagle it is called when connection error happens, for example, when a server path cannot be reached. 
+The default error component on Beagle it is called when connection error happens, for example, when a server path cannot be reached. 
 
 To this component, the library shows an interface called `ErrorComponentParams`, throught it you have access to the error list and a retry method, responsible to retry the server request. 
 
@@ -213,7 +213,7 @@ export class BeagleComponentsModule {}
 
 ```
 
-Finally, replace the pattern component to the  `beagle.module.ts` file:
+Finally, replace the default component to  `beagle.module.ts` file:
 
 ```text
 import { CustomErrorComponent } from './components/custom-error/custom-error.component';

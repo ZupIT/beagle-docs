@@ -18,11 +18,11 @@ It makes possible to personalize, for example:
 * Button's styles;
 * TabView. 
 
-It's importante to make clear that iOS doesn't map all the components' attributes. However, the more important are already mapped, so they can be modified if necessary. 
+It's importante to make clear that iOS doesn't map all the components' attributes. However, the most important are already mapped, so they can be modified if necessary. 
 
 ## Customized attributes  
 
-As not all customization's attributes can be stylized, on the list below we'll see which elements can be personalized through Beagle.   
+Not all customization's attributes can be stylized, on the list below you will know which one can be personalized through Beagle.  
 
 Another important point is that styles created on iOS and related to componentes that came from backend. On these cases, you can configure the styles so each of them can be referenced, just like the example below:
 
@@ -71,9 +71,9 @@ private static func textH1() -> (UITextView?) -> Void {
 
 ### Button
 
-Besides the complete text personalization, the Button component can be customized with another attribute: the **withTitleColor**, which is responsible to personalize button's color.
+Besides the complete text personalization, the Button component can be customized by another attribute: the **withTitleColor**, which personalizes the button's color.
 
-On Swift, you can also add extra styles to a component by using the `<>` note , according to the example below: 
+On Swift, you can also add extra styles to a component by using the `<>` note, according to the example below: 
 
 
 ```swift
@@ -91,7 +91,7 @@ static func defaultStylishButton() -> (UIButton?) -> Void {
 
 ### TabView
 
-The Beagle's TabView component for iOS can be stylized with these attributes:
+Beagle's TabView component for iOS can be stylized with these attributes:
 
 1. **backGroundColor**: attributes a different color to a selected tab background.
 2. **indicatorColor**: attributes a color to a selected background.

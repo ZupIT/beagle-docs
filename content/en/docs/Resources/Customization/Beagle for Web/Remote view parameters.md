@@ -23,9 +23,9 @@ Beagle's library offers a component to help render the server-driven screens, re
 {{% /tab %}}
 {{< /tabs >}}
 
-Angular and React accept remote view's properties that are called Load Params. It is through it, that some options are configured to influence the way the screens are rendered. 
+Angular and React accept remote view's properties that are called Load Params. It is through it that some options are configured to influence the way the screens are rendered. 
 
-See below that properties accepted by it: 
+See below properties accepted by it: 
 
 ```text
 import { LoadParams } from '@zup-it/beagle-web';

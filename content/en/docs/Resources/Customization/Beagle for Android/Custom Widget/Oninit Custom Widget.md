@@ -51,7 +51,7 @@ class CustomInitiableWidget(
 
 ### Step 3: Delegate implementation
 
-In addition to the `onInit` property, the `OnInitiableComponent` interface needs the implementation of the `handleOnInit` and `markToRerunOnInit` methods. To facilitate and maintain the component's behavior pattern, Beagle already provides a ready implementation and we recommend its use, just delegating `OnInitiableComponentImpl`.
+In addition to the `onInit` property, the `OnInitiableComponent` interface needs the implementation of the `handleOnInit` and `markToRerunOnInit` methods. To facilitate and maintain the component's default behavior, Beagle already provides an implementation and it is recommended to use just delegating `OnInitiableComponentImpl`.
 
 ```kotlin
 @RegisterWidget
@@ -67,7 +67,7 @@ class CustomInitiableWidget(
 }
 ```
 
-### Step 4: Execute `handleOnInit`
+### Step 4: Run `handleOnInit`
 
 Finally, with all the configuration done in the widget, only the execution of the `handleOnInit` method is missing so that the list of `onInit` actions can be executed as soon as the view is rendered.
 

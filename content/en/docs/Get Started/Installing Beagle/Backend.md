@@ -188,7 +188,7 @@ You can see more of [**how to use Beagle on the backend**](/docs/get-started/usi
 ## **Next Steps** 
 
 On this section, you made Beagle's **initial installation** on your application!  
-To keep configuring Beagle:
+Now, keep configuring Beagle:
 
 👉Go to [**initial configurations**](/docs/get-started/using-beagle/backend) to enable the use of Beagle on your Web project.
 

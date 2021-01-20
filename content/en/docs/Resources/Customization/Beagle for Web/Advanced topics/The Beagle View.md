@@ -73,7 +73,7 @@ const MyComponent: FC = () => {
 }
 ```
 
-In the examples above, we accessed the Beagle View and logged it. It is important to notice that you need to check for the Beagle View availability before using it. Since the Beagle View is created by a child component, it won't be available before the children components are created.
+In the examples above, you accessed the Beagle View and logged it. It is important to notice that you need to check for the Beagle View availability before using it. Since the Beagle View is created by a child component, it won't be available before the children components are created.
 
 ## Fetching a view
 
@@ -140,7 +140,7 @@ By default, Beagle logs every error in the fetch/rendering process to the consol
 
 ## Destroying the Beagle View
 
-To avoid memory leaks, the Beagle View must be destroyed if it won't be used again. If you're using Angular or React, there's no need to worry about it, it will get done under the hood. If you're using Beagle Web directly, you must call `beagleView.destroy()` when the remote view is removed from the page.
+To avoid memory leaks, Beagle View must be destroyed if it won't be used again. If you're using Angular or React, there's no need to worry about it, it will get done under the hood. If you're using Beagle Web directly, you must call `beagleView.destroy()` when the remote view is removed from the page.
 
 ## API
 

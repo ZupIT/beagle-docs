@@ -23,7 +23,7 @@ When it comes to Beagle Activity, there are some custom components:
 3. Handling error
 4. ProgressBar
 
-Check out the example below of how to custom an Beagle Activity: 
+Check out below how to custom a Beagle Activity: 
 
 ```kotlin
 @RegisterController

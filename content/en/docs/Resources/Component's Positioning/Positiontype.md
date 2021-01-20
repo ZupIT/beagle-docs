@@ -70,7 +70,7 @@ private fun screen() :Widget{
 
 ### **Absolute**
 
-This element when you wish an element to "escape" the normal flow on the layout. It will be displayed regardless of its siblings.
+This element is used when you wish an element to "escape" the normal flow on the layout. It will be displayed regardless of its siblings.
 
 Check it out how it works:
 

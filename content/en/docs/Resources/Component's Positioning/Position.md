@@ -8,9 +8,9 @@ description: Here you'll find Position description and its proprieties details.
 
 ## Position
 
-This property defines an elements position on screen and its values are: **`top, right, bottom,left`**. They behave according to the `Position Type` of this element. 
+This property defines an element's position on screen and its values are: **`top, right, bottom,left`**. They behave according to the `Position Type` of this element. 
 
-The element inside the Position can have 2 types of positioning 
+The element inside the Position can have 2 types of positioning:
 
 1. **`Relative`**: Elements move in a specific direction respecting each other boundaries.
 2. **`Absolute`**: The elements move in the same direction defined by the parent element.
@@ -338,7 +338,7 @@ private func screen() -> Screen {
 
 ### **Horizontal**
 
-It defines **horizontal spacing**  at an element: 
+It defines **horizontal spacing** at an element: 
 
 ![](/captura-de-tela-2020-06-05-a-s-11.36.55.png)
 
@@ -401,7 +401,7 @@ private func screen() -> Screen {
 
 ### **Vertical**
 
-It defines **vertical spacing**  at an element: 
+It defines **vertical spacing** at an element: 
 
 ![](/captura-de-tela-2020-06-05-a-s-11.39.22.png)
 

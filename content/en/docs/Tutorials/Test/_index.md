@@ -28,7 +28,7 @@ On Beagle instrumented tests, sometimes a server-driven component doesn't or can
 
 ## Mobile Instrumented Tests: example
 
-In this example, we implemented an instrumented test on the Android platform using Espresso framework. We verified the functionality selection and the value insertion of the server-driven text field component.
+In this example, it was implemented an instrumented test on the Android platform using Espresso framework. We verified the functionality selection and the value insertion of the server-driven text field component.
 
  ```Kotlin
 @Test
@@ -67,7 +67,7 @@ public BeagleTest selectMenuOption() {
 
 ### Step 3: Select the component
 
-Here, the test will click on a textfield component (located from its text). The component is a menu item, and it was already loaded in the previous step.
+Here, the test will click on a textfield component (located from its text). The component is a menu item and it was already loaded in the previous step.
 
 ```Kotlin
 public BeagleTest clickOnText(final String text) {

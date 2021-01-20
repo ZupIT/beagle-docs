@@ -8,9 +8,9 @@ description: 'Here, you''ll find more about Live Preview''s functionalities.'
 
 ## **Introduction** 
 
-Live Preview is a visualization resource that helps with `layout` development. It allows that screens in development be rendered without need to run your backend server for the layout changes done, thus reducing a screen's development time.
+Live Preview is a visualization resource that helps with `layout` development. It allows the screens in development to be rendered and you don't have to run your backend server to alter the layout, which reduces a screen's development time. 
 
-In other words, when a developer edits code defining a screen, they can use the plugin so that updates are communicated to the client and it renders them. This way, it's possible to view change without running a backend server.
+In other words, when a developer edits code defining a screen, they can use the plugin so that the updates are communicated to the client and it renders them. This way, it's possible to view change without running a backend server.
 
 {{% alert color="info" %}}
 This frontend and backend connection is done through a `WebSocket` on port: `9721`.
@@ -49,7 +49,7 @@ The following steps allow you to view a screen defined in the backend using Live
 After this, Live Preview will be capable of receiving the developed screen to be rendered. Some interesting points on the example below:
 
 * Notice the screen itself is defined in the `ScreenBeagleBuilder` class.
-* The `buildPreview` function is annotated with `@BeaglePreview` and, therefore, the sender of our screen to be rendered by the plugin.
+* The `buildPreview` function is annotated with `@BeaglePreview` and, therefore, the sender of the screen to be rendered by the plugin.
 
 
 ```kotlin
@@ -68,7 +68,7 @@ class ScreenBeagleBuilder: ScreenBuilder {
 ```
 
 
-If your function is recognized by the plugin, the Beagle logo will appear as a button to the left of the function. When clicking this button, `BeaglePreview` will push the layout to the client \(frontend application\), allowing it to update on your layout instantly!
+If your function is recognized by the plugin, Beagle's logo will appear as a button to the left of the function. When clicking this button, `BeaglePreview` will push the layout to the client \(frontend application\), allowing it to update on your layout instantly!
 See the example below: 
 
 ![](/livepreviewpluginintellijidea.gif)
@@ -77,11 +77,11 @@ After running the plugin on some function, you only need to save the changes don
 
 ### Step 2: iOS and Android's Frontend configuration
 
-Once you have configured your backend, the next step is to configure the frontend's application emulator for a Beagle Android or iOS project. 
+Once you have configured your backend, the next step is to configure the frontend's application emulator for Beagle's Android or iOS project. 
 
 {{< tabs id="T85" >}}
 {{% tab name="Android client" %}}
-### Step 1: Installing the submodule
+### Step 1: Install the submodule
 
 To make this installation, your `gradle` file must contain the following fragment:   
   
@@ -110,7 +110,7 @@ For example: undefined-`ext.beagle.version = "0.2.8"`
 
 Once you made it, you can update your dependencies.
 
-### Step 2: Creating a Preview Activity
+### Step 2: Create a Preview Activity
 
 First of all, it's necessary to state a `PreviewActivity` on your application's manifest to show a preview:
 
@@ -140,7 +140,7 @@ As well as in `BeagleActivity`**,** you must inform on`PreviewActivity` state th
 Another important point is that you have to enable the exported flag so it can start through `ADB` 
 {{% /alert %}}
 
-## Visualizing screens through Android Studio's Emulator
+## Visualize screens through Android Studio's Emulator
 
 After you finished the previous configurations, you must **start the IntelliJ plugin** by clicking on Beagle's symbol next to the function that notes `@BeaglePreview` and opens`PreviewActivity` to receive the updates sent from BFF to be automatically rendered. 
 
@@ -160,14 +160,14 @@ adb shell am start -n applicationpackagename/br.com.zup.beagle.android.preview.P
  For more information about your package, access the attribute's package on your`AndroidManifest`'s file
 {{% /alert %}}
 
-## Visualizing screens through Android Device
+## Visualize screens through Android Device
 
 You can also view the screen you're creating  by an Android `device`. To do so, it's necessary to inform your network's `IP` on the `intent` that calls the Live Preview screen. 
 
 {{% alert color="info" %}}
-The Live Preview's Activity connects to the `Backend` 's screen through the client's 
+Live Preview's Activity connects to the `Backend` 's screen through the client's 
 
-`websocket` connection. In this way, this `client` needs to know which`IP` must be used to establish the connection.
+`websocket` connection. This `client` needs to know which `IP` must be used to establish the connection.
 {{% /alert %}}
 
 * To start a `PreviewActivity` through `device`, you just have to call the `intent` below so you can see the screen on your device: 
@@ -184,7 +184,7 @@ startActivity(
 {{% /tab %}}
 
 {{% tab name="iOS client" %}}
-### Step 1: Installing the submodule
+### Step 1: Install the submodule
 
 To make the installation, your pod file must contain the following fragments:
 

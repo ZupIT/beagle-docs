@@ -261,4 +261,4 @@ This should be your result:
 
 Now that is ready, test a little more, try to change sizes, colors and whatever style you want to!
 
-For this example, we used simple style's elements to explain Design System, but the number of functions is quite big. That means you can develop different **toolBars,** **buttons** and all kinds of components, including customized components to use on Beagle.
+For this example, it was used simple style's elements to explain Design System, but the number of functions is quite big. That means you can develop different **toolBars,** **buttons** and all kinds of components, including customized components to use on Beagle.

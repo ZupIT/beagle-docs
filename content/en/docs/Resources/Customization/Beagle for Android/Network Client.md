@@ -25,7 +25,7 @@ interface HttpClient {
 }
 ```
 
-In the *execute* method, you can create the rules for your network layer, causing the beagle to recognize its rule.
+In the **execute**  method, you can create the rules for your network layer, causing Beagle to recognize its rule.
 
 | **Attribute** | **Type** | **Required** | **Definition** |
 | :--- | :--- | :---: | :---: |
@@ -68,9 +68,9 @@ ResponseData is used to return data made by the request.
 | headers | Map<String, String> | | It is used when you need to send data via an HTTP header. |
 | statusText | String | | Returns the response message returned by the remote HTTP server. |
 
-## Creating a custom network client
+## Create a custom network client
 
-To create this class, follow the next steps.
+To create this class, follow the next steps:
 
 ### Step 1: Add the dependencies 
 
@@ -85,11 +85,11 @@ Locate the file `build.gradle(Module:app) ,` open it and scroll the page until y
 
 This dependency is necessary, because the class that implements `HttpClient` will import some of its configuration.
 
-### Step 2: Create a object CoroutineDispatchers
+### Step 2: Create a CoroutineDispatchers object
 
-Create a object and choose a name for it. For the example, `CoroutineDispatchers` was chosen.
+Create an object and choose a name for it, for example, `CoroutineDispatchers`.
 
-This object is responsible for configuring *CoroutineDispatchers*, which will dictate on which thread the tasks will be executed.
+This object is responsible for configuring **CoroutineDispatchers**, it will dictate which thread the tasks will run.
 
 ```kotlin
 import kotlinx.coroutines.CoroutineDispatcher
@@ -113,11 +113,10 @@ internal object CoroutineDispatchers {
 }
 ```
 
-### Step 3: Create a file HttpURLConnectionExtensions
+### Step 3: Create a HttpURLConnectionExtensions file
 
-Create a file and choose a name for it. For the example,`HttpURLConnectionExtensions` was chosen.
-
-This file is responsible for containing methods for returning the *HttpURLConnection* rule, so we will use these methods in the HttpClientDefault class.
+Create a file and choose a name for it, for example,`HttpURLConnectionExtensions`. 
+This file is responsible for containing methods returning the **HttpURLConnection** rule, so you will use these methods in the HttpClientDefault class.
 
 ```kotlin
 import java.lang.Exception
@@ -146,11 +145,11 @@ internal fun <T> getMessageFormatted(getData: GetData<T>): T? {
 }
 ```
 
-### Step 4: Create a class HttpClientDefault
+### Step 4: Create a HttpClientDefault class
 
-Create a class and choose a name for it. For the example,`HttpClientDefault` was chosen. 
+Create a class and choose a name for it, for example,`HttpClientDefault`.
 
-Class HttpClientDefault defines how the services requests are configured, to use it, you need to create a class that implements a `HttpClient` interface.
+HttpClientDefault class defines how the services requests are configured, to use it, you need to create a class that implements a `HttpClient` interface.
 
 This configuration is long, so copy and paste the class below. You may modify it later.
 

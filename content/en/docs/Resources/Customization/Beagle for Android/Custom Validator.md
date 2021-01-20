@@ -83,5 +83,5 @@ class SampleTextField(private val placeholder: String) : InputWidget() {
 ```
 
 {{% alert color="info" %}}
-If you want to **validate** the information **as the user types it**, the suggestion is to call the function`notifyChanges()`inside the other function `doOnTextChange{}.`
+If you want to **validate** the information **as the user types it**, the suggestion is to call the function `notifyChanges()` inside the other function `doOnTextChange{}.`
 {{% /alert %}}

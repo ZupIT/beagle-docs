@@ -8,7 +8,7 @@ description: This section lists information about the Size property
 
 ## Size
 
-These atributes handles the item's sizes on screen. 
+It handles the item's size on screen. 
 
 Size has the following atributes: **`width, heigth, maxWidth,maxHeight, minWidth, minHeigh, aspectRatio`**
 

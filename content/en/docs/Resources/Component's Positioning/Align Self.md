@@ -8,7 +8,7 @@ description: This section lists information about the Align Self property
 
 ## Align Self
 
-This property will override the behavior defined by the align-items property. It has the following attributes:**`flex-start, flex-end, center, auto, baseline and stretch.`**
+This property will override the behavior defined by the align-items property. It has the following attributes: **`flex-start, flex-end, center, auto, baseline and stretch.`**
 
 {{% alert color="warning" %}}
 **Align self** is set to each component and not to a container.
@@ -102,4 +102,4 @@ private func screen() -> Screen {
 {{% /tab %}}
 {{< /tabs >}}
 
-**For more information about Align Self, check out the [**Yoga Layout documentation**](https://yogalayout.com/docs/flex/)**
+**For more information about Align Self, check out the [**Yoga Layout documentation.**](https://yogalayout.com/docs/flex/)**

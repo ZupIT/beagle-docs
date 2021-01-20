@@ -12,7 +12,7 @@ After you finished the installation,  you need to make **Beagle's usage configur
 
 ### Step 1: Create a JSON to be rendered
 
-On your React project, on the `public` folder, create a file named `payload.json` and copy the code below. This file will map the components that will be rendered by Beagle. Generally, it would be returned by a external server, but on this example, we'll make a local JSON file to be rendered with Beagle's library. . 
+On your React project, in the `public` folder, create a file named `payload.json` and copy the code below. This file will map the components that will be rendered by Beagle. Generally, it would be returned by a external server, but on this example, you'll make a local JSON file to be rendered with Beagle's library. . 
 
 ```text
 {
@@ -41,7 +41,7 @@ On your React project, on the `public` folder, create a file named `payload.json
 {{% alert color="info" %}}
 Beagle's library comes with many pre-defined components ready to be used in their project. 
 
-The code above creates a JSON with two os these components: container e text.
+The code above creates a JSON with two os these components: container and text.
 {{% /alert %}}
 
 ### Step 2: Create a configuration file
@@ -63,10 +63,10 @@ export default createBeagleUIService({
 })
 ```
 
-At this point of the configuration, you can add, for example, a path to Beagle's external server. The most indicated is to let the baseUrl propriety without value because we'll use a local file \(`payload.json`\) for this example. 
+At this point of the configuration, you can add, for example, a path to Beagle's external server. The most indicated is to let the baseUrl propriety without value because you'll use a local file \(`payload.json`\) for this example. 
 
 {{% alert color="warning" %}}
-It's important to reinforce that, for this example, we're using [**typescript**](https://www.typescriptlang.org/) with the project. In case you don't have this tool, we highly recommend you to install it, otherwise, please, ignore all the typing information.
+It's important to reinforce that, for this example, we're using [**typescript**](https://www.typescriptlang.org/) with the project. In case you don't have this tool, we recommend you to install it, otherwise, please, ignore all the typing information.
 {{% /alert %}}
 
 ### Step 3: Using BeagleRemoteView
@@ -90,14 +90,14 @@ function App() {
 export default App;
 ```
 
-When we make this note, we indicate to Beagle that our defined layout will be rendered on `payload.json` file. In this case, two components are provided on the library:
+When you make this note, you indicate to Beagle that the defined layout will be rendered on `payload.json` file. In this case, two components are provided on the library:
 
 1. `<BeagleProvider>`: Responsible to provide a `value` propriety  as `beagle-service` created on the previous step and contains the initial configurations;  
 2. `<BeagleRemoteView>`: Responsible to render the layout defined by the JSON specified by the `route` property.
 
 
 {{% alert color="info" %}}
-See that here we added  **' / '** because this value will be associated to the defined`baseUrl` on the file `beagle-service.ts`
+See that  **' / '** was added, because this value will be associated to the defined `baseUrl` on the `beagle-service.ts` file. 
 {{% /alert %}}
 
 {{% alert color="warning" %}}
@@ -106,9 +106,9 @@ See that here we added  **' / '** because this value will be associated to the d
 
 ## Use Example 
 
-### Testing the project
+### Test the project
 
-Before we test if our configuration worked, you have to run one of the commands below to initialize the application:
+Before you test if the configuration worked, you have to run one of the commands below to initialize the application:
 
 ```text
 yarn start
