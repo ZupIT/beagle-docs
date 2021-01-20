@@ -1,6 +1,7 @@
 ---
 title: Como criar novas actions
 weight: 222
+description: "Nesta seção, você confere como criar Actions Customizadas para serem usadas em eventos mas sendo tratadas pela aplicação frontend"
 ---
 
 ---

@@ -1,6 +1,6 @@
 ---
 title: FAQ
-weight: 395
+weight: 217
 description: >-
   Nesta seção, você encontra respostas para perguntas frequentes ou dúvidas
   sobre o Beagle.

@@ -1,6 +1,7 @@
 ---
 title: How to create new actions
 weight: 222
+description: "In this section, you can see how to create Custom Actions to be used in events but being handled by the frontend application"
 ---
 
 ---
