@@ -12,7 +12,7 @@ description: >-
 
 Quando você finalizar a [**instalação do Beagle**](/pt/get-started/installing-beagle/backend), seu BFF estará com a configuração padrão de uso.
 
-### CORS
+### CORS (Cross-Origin Resource Sharing)
 
 {{% alert color="warning" %}}
 **Configuração obrigatória apenas para usar seu BFF com front-end web.**
@@ -23,7 +23,7 @@ Este processo é feito de acordo com sua tecnologia de backend e, por isso, reco
 Se você estiver usando um de nossos starters, segue os links das documentações dos frameworks sobre o CORS:
 
 - [**Micronaut**](https://docs.micronaut.io/1.3.3/guide/index.html#cors)
-- [**Spring**](https://docs.spring.io/spring/pt/current/spring-framework-reference/web.html#mvc-cors-global)
+- [**Spring**](https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc-cors)
 
 Disponibilizamos uma constante, `BEAGLE_EXPOSED_HEADERS`, contendo uma lista dos nomes das headers que o próprio Beagle precisa para poder expor na sua **configuração de CORS.**
 
