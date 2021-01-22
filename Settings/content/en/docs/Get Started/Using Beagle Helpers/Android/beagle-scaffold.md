@@ -1,5 +1,5 @@
 ---
-title: Beagle Scafold
+title: Beagle Scaffold
 weight: 16
 description: 'Here you will find the **Beagle-Scaffold** library to help you start a project using Beagle in Android.
 This lib will hold almost all necessary configuration to add Beagle into an Android project.'
@@ -8,7 +8,7 @@ This lib will hold almost all necessary configuration to add Beagle into an Andr
 ---
 
 
-![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-scaffold?label=beagle-scaffod)
+![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-scaffold?color=green&label=beagle-scaffod)
 ![**Maven Central**](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?label=Beagle)
 
 ### Requirements
@@ -37,7 +37,7 @@ allprojects {
 ```
 Step 2: Add kotlin kapt plugin and 3 dependencies on your application dependency manager (gradle.gradle)<br>
 
- ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-scaffold?label=beagle-scaffod)
+ ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-scaffold?color=green&label=beagle-scaffod)
  ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?label=Beagle)                                                                   
 
 * _The version numbers listed below may have been updated. Please check the actual versions on the tags above:_
