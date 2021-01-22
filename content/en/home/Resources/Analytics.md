@@ -77,6 +77,7 @@ export default createBeagleUIService<any>({
 {{% tab name="Android" %}}
 
 ```
+@BeagleComponent
 class AnalyticsProviderImpl : AnalyticsProvider{
     override fun getConfig(): AnalyticsConfig? = object : AnalyticsConfig{
         override var enableScreenAnalytics: Boolean? = true
@@ -87,8 +88,12 @@ class AnalyticsProviderImpl : AnalyticsProvider{
     }
 
     override fun createRecord(record: AnalyticsRecord) {
-        Log.d("Record", record)
+        Log.d("analytics", record.platform)
+        Log.d("analytics", record.type)
+        Log.d("analytics", record.attributes.toString())
     }
+    
+    override fun getMaximumItemsInQueue() = 200
 }
 ```
 {{% /tab %}}
