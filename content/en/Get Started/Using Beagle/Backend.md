@@ -43,7 +43,7 @@ The example below, you can see the result that must appear on your screen:
 ```kotlin
 import javax.inject.Singleton
 
-@Service
+@Singleton
 class MyService {
     fun createAction(): Action = Alert(
         title = "My Dialog",
@@ -80,7 +80,7 @@ To start, you should create a class to configure a `Service` . The process is pr
 2. Note it with `@Service` , because this will be responsible to create your objects.
 
 ```kotlin
-import javax.inject.Singleton
+import org.springframework.stereotype.Service
 
 @Service
 class MyService {
