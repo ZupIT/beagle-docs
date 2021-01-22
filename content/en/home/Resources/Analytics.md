@@ -134,7 +134,7 @@ To disable the analytics we first choose the action and add the analytics proper
 }
 ```
 
-Now see an snippet of how to generate this same payload:
+Now see a snippet of how to generate this same payload:
 
 {{< tabs >}}
 {{% tab name="Kotlin" %}}
