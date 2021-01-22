@@ -1,6 +1,8 @@
 ---
 title: Eventos
 weight: 381
+description: >-
+  Aqui você encontrará descrições do que são eventos e seus tipos.
 ---
 
 ---
