@@ -260,7 +260,7 @@ There are two types of AnalyticsRecord, ScreenAnalyticsRecord for navigation eve
 **ActionAnalyticsRecord**
 | **Property**         | Definition                                                     | Type             |
 | :--------------------| :------------------------------------------------------------- | :--------------- |
-| **type**             | The type of the analytics record 'screen' for navigation events or 'action' for action triggered events  | ``string``          |
+| **type**             | The type of the analytics record 'action'  | ``string``          |
 | **platform**         | The platform from which the event was triggered, e.g: WEB Angular, Android, iOS      | ``string``   |
 | **beagleAction**     | The Beagle Action which triggered the record  | ``string``          |
 | **component**        | The Beagle Component which triggered the record    | ``Object``   |
@@ -274,7 +274,7 @@ There are two types of AnalyticsRecord, ScreenAnalyticsRecord for navigation eve
 **ScreenAnalyticsRecord**
 | **Property**         | Definition                                                     | Type             |
 | :--------------------| :------------------------------------------------------------- | :--------------- |
-| **type**             | The type of the analytics record 'screen' for navigation events or 'action' for action triggered events  | ``string``          |
+| **type**             | The type of the analytics record 'screen' | ``string``          |
 | **platform**         | The platform from which the event was triggered, e.g: WEB Angular, Android, iOS      | ``string``   |
 | **route**     | The route or screen identifier  | ``string``          |
 | **timestamp**        | The unix representation of the time when the record was created    | [``unix time``](https://www.unixtimestamp.com/index.php)    |
