@@ -255,9 +255,9 @@ Note in the previous snippet that we enabled the analytics for screen events, wh
 
 After you have configured your analytics provider, every time an analytics event occurs within Beagle applications the [``createRecord``]({{<ref "#analytics-createRecord-anchor">}}) method is called and it gives access to a parameter of type analyticsRecord.
 
-The analytics record interface defines what properties a Beagle event will contain:
+There are two types of AnalyticsRecord, ScreenAnalyticsRecord for navigation events and ActionAnalyticsRecord for action triggered events
 
-**AnalyticsRecord**
+**ActionAnalyticsRecord**
 | **Property**         | Definition                                                     | Type             |
 | :--------------------| :------------------------------------------------------------- | :--------------- |
 | **type**             | The type of the analytics record 'screen' for navigation events or 'action' for action triggered events  | ``string``          |
@@ -266,4 +266,15 @@ The analytics record interface defines what properties a Beagle event will conta
 | **component**        | The Beagle Component which triggered the record    | ``Object``   |
 | **event**            | The name of event which triggered the record e.g: onPress | ``string``          |
 | **screen**           | The screen that the component belongs to    | ``string``   |
+| **timestamp**        | The unix representation of the time when the record was created    | [``unix time``](https://www.unixtimestamp.com/index.php)    |
+
+<br>
+<br>
+
+**ScreenAnalyticsRecord**
+| **Property**         | Definition                                                     | Type             |
+| :--------------------| :------------------------------------------------------------- | :--------------- |
+| **type**             | The type of the analytics record 'screen' for navigation events or 'action' for action triggered events  | ``string``          |
+| **platform**         | The platform from which the event was triggered, e.g: WEB Angular, Android, iOS      | ``string``   |
+| **route**     | The route or screen identifier  | ``string``          |
 | **timestamp**        | The unix representation of the time when the record was created    | [``unix time``](https://www.unixtimestamp.com/index.php)    |
