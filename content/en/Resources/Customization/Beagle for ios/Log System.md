@@ -78,10 +78,10 @@ Beagle.dependencies = dependencies
 ```
 ## BeagleLoggerProxy
 
-This class is responsible to ensure that we will always have the `isLoggingEnabled` property within the log class, regardless of whether it was a class created by the user or not. It is crucial to control this information, so that the logger can be enabled or disabled.
+In the vast majority of cases this class should not be used by the user. This is the object that will be internally stored in `Beagle.dependencies.logger` instead of` BeagleLogger` customized by the user.
 
-In the `BeagleDependencies` initializer, we assign the `logger` passed as a parameter as follows:
+It's responsibility is to only forward calls to the user's class if `Beagle.dependencies.isLogginEnabled` is` true`, otherwise it will not even pass along the message. Today it is public just to allow access to the user's custom class via:
 
 ```swift
-self.logger = BeagleLoggerProxy(logger: logger, dependencies: resolver)
+(Beagle.dependencies.logger as? BeagleLoggerProxy)?.logger
 ```
