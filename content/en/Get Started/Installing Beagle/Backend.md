@@ -148,7 +148,7 @@ To follow this requirement, you just have to add the dependency below to your `p
 <dependency>
 	<groupId>br.com.zup.beagle</groupId>
 	<artifactId>beagle-spring-starter</artifactId>
-	<version>${beagle_version}</version>
+	<version>${beagle.version}</version>
 </dependency>
 ```
 
