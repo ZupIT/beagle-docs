@@ -76,3 +76,12 @@ let dependencies = BeagleDependencies()
 dependencies.logger = CustomLogger()
 Beagle.dependencies = dependencies
 ```
+## BeagleLoggerProxy
+
+This class is responsible to ensure that we will always have the `isLoggingEnabled` property within the log class, regardless of whether it was a class created by the user or not. It is crucial to control this information, so that the logger can be enabled or disabled.
+
+In the `BeagleDependencies` initializer, we assign the `logger` passed as a parameter as follows:
+
+```swift
+self.logger = BeagleLoggerProxy(logger: logger, dependencies: resolver)
+```
