@@ -71,19 +71,35 @@ export default createBeagleUIService<any>({
 })
 
 ```
-{{% alert color="warning" %}}
- Note: Usually the "getConfig" method would make an HTTP request to get the configuration JSON remotely, but for the sake of this example we created a local object returning its expected structure
-{{% /alert %}}
 
 {{% /tab %}}
 
 {{% tab name="Android" %}}
-<!-- To do analytics android -->
+
+```
+class AnalyticsProviderImpl : AnalyticsProvider{
+    override fun getConfig(): AnalyticsConfig? = object : AnalyticsConfig{
+        override var enableScreenAnalytics: Boolean? = true
+
+        override var actions: Map<String, List<String>>? = hashMapOf(
+            "beagle:setContext" to listOf("contextId", "path", "value")
+        )
+    }
+
+    override fun createRecord(record: AnalyticsRecord) {
+        Log.d("Record", record)
+    }
+}
+```
 {{% /tab %}}
 {{% tab name="iOS" %}}
 <!-- To do analytics iOS -->
 {{% /tab %}}
 {{< /tabs >}}
+
+{{% alert color="warning" %}}
+ Note: Usually the "getConfig" method would make an HTTP request to get the configuration JSON remotely, but for the sake of this example we created a local object returning its expected structure
+{{% /alert %}}
 
 ## **How does it work ?**
 
@@ -95,14 +111,11 @@ see next further details on both ways of mapping the analytics
 
 ### **Action configuration**
 
-The easiest way to enable tracking with Beagle is through the BFF, you can simply enable which actions you want tracked by adding to them the key analytics.
+The easiest way to enable or disable tracking with Beagle is through the BFF, you can simply enable which actions you want tracked by adding to them the key analytics.
 
-First we choose which action we want to create the event and add the analytics property to them.
+#### Disabling the analytics
 
-example:
-
-{{< tabs >}}
-{{% tab name="JSON" %}}
+To disable the analytics we first choose the action and add the analytics property to it with a value of false, the JSON result would be something like the following :
 ```text
 {
   "_beagleComponent_": "beagle:button",
@@ -115,22 +128,30 @@ example:
     ]
 }
 ```
-{{% /tab %}}
-{{% tab name="BFF" %}}
+
+Now see an snippet of how to generate this same payload:
+
+{{< tabs >}}
+{{% tab name="Kotlin" %}}
 <!-- To do analytics BFF -->
+```
+Button(
+    "Button with analytics",
+    onPress = listOf(
+        Navigate.PushStack(
+            route = Route.Remote(url = "/screen-2"),
+            analytics = ActionAnalyticsConfig.Disabled()
+        )
+    )
+)
+```
 {{% /tab %}}
 {{< /tabs >}}
 
-The analytics property accepts two types of values it can be a boolean that when set to false disables all the tracking for that action (see previous example) or it can be a structure of type ``ActionAnalyticsConfig`` detailed next.
+The analytics property however accepts two types of values it can be a boolean that when set to false disables all the tracking for that action (see previous example) or it can be a structure that enables the analytics, see below:
 
-**ActionAnalyticsConfig**
-| **Property**           | Definition                                                     | Type             |
-| :--------------------- | :------------------------------------------------------------- | :--------------- |
-| **attributes**         | List of attributes to be exposed to the analytics interface    | ``Array <string>``   |
-| **additionalEntries**  | Any additional data you may want to send along with the action | ``Map<string, any>`` |
-
-Using this interface you can control individually the actions and also the action's properties you want to be sent to the [``createRecord``]({{<ref "#analytics-createRecord-anchor">}}) 
-method from the [``AnalyticsProvider``]({{<ref "#analytics-provider-anchor">}}). The next example shows how your payload should be handed to your application in order to enable the analytics functionality.
+#### Enabling the analytics
+When enabled, the analytics can be configured to send extra and detailed data about the component and action, to do so the JSON handed to the application should be as the next snippet
 
 ```text
     {
@@ -154,13 +175,36 @@ method from the [``AnalyticsProvider``]({{<ref "#analytics-provider-anchor">}}).
       ]
     }
 ```
-This configuration allows a better handling of each one of the actions directly from the screen payload. In the previous example we are passing inside the analytics key two properties:
+
+This configuration allows a better handling of each one of the actions directly from the screen payload. In the previous example we are passing inside the analytics key two new properties:
 
 the ``additionalEntries`` that can be anything you might need and in our case we are passing a simple text;
 
 the ``attributes`` property has to be one of the properties of the action in our example we are passing the key route that will send the value of the route key to create the analytics record. 
 
-Next you will learn how to configure the tracking from a configuration payload.
+Next you will learn how to generate this same payload.
+
+### **ActionAnalyticsConfig and ActionAnalyticsProperties**
+
+The ``ActionAnalyticsConfig`` is a sealed class that besides the disabled method we showed before, also offers an enabled method that accepts a parameter of type ``ActionAnalyticsProperties`` detailed next
+
+**ActionAnalyticsProperties**
+
+| **Property**           | Definition                                                     | Type             |
+| :--------------------- | :------------------------------------------------------------- | :--------------- |
+| **attributes**         | List of attributes to be exposed to the analytics interface    | ``Array <string>``   |
+| **additionalEntries**  | Any additional data you may want to send along with the action | ``Map<string, any>`` |
+
+
+Using this interface you can control individually the actions and also the action's properties you want to be sent to the [``createRecord``]({{<ref "#analytics-createRecord-anchor">}}) 
+method from the [``AnalyticsProvider``]({{<ref "#analytics-provider-anchor">}}). The next example shows how to generate the payload you saw before
+
+{{< tabs >}}
+{{% tab name="Kotlin" %}}
+-- !!!!!TO DO COLOCAR EXEMPLO DO ENABLED
+{{% /tab %}}
+{{< /tabs >}}
+
 
 ### **Analytics configuration payload**
 <a name="analytics-config-anchor"></a>
