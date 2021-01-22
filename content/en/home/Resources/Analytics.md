@@ -206,7 +206,22 @@ method from the [``AnalyticsProvider``]({{<ref "#analytics-provider-anchor">}}).
 
 {{< tabs >}}
 {{% tab name="Kotlin" %}}
--- !!!!!TO DO COLOCAR EXEMPLO DO ENABLED
+```
+Button(
+    "Button with analytics",
+    onPress = listOf(
+        Navigate.PushStack(
+            analytics = ActionAnalyticsConfig.Enabled(
+                ActionAnalyticsProperties(
+                    attributes = listOf("route"),
+                    additionalEntries = hashMapOf("extra" to "Extra information")
+                )
+            ),
+            route = Route.Remote(url = "/myRoute.json")
+        )
+    )
+)
+```
 {{% /tab %}}
 {{< /tabs >}}
 
