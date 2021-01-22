@@ -23,7 +23,7 @@ This process it is done according to your backend technology and, for that, we r
 If you are using one of our starters, check out the following links with both framework's documentations about CORS:
 
 - [**Micronaut**](https://docs.micronaut.io/1.3.3/guide/index.html#cors)
-- [**Spring**](https://docs.spring.io/spring/current/spring-framework-reference/web.html#mvc-cors)
+- [**Spring**](https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc-cors)
 
 We provided a constant `BEAGLE_EXPOSED_HEADERS`, that contains a list of headers names that Beagle needs to expose in your **CORS configuration.**
 
