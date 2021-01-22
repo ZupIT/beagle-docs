@@ -12,7 +12,7 @@ description: 'Aqui você encontrará bibliotecas que te auxiliarão iniciar um p
 
 <hr>
 
-### Getting started
+### Primeiros Passos
 
 Para começar a utilizar o beagle, você pode usar como auxilio as bibliotecas abaixo:
 * [Beagle-Scaffold](https://github.com/ZupIT/beagle-helpers/tree/main/android/beagle-scaffold):
@@ -28,6 +28,6 @@ Todos estes também estão disponíveis na biblioteca Scaffold acima.
 
 {{% alert color="warning" %}}
 Se você deseja usar o Beagle para um aplicativo em produção, recomendamos que você configure um projeto
- do zero usando nosso
+ do zero usando nossa
  [**documentação**](https://docs.usebeagle.io/home/get-started/creating-a-project-from-scratch/case-android/)
 {{% /alert %}}

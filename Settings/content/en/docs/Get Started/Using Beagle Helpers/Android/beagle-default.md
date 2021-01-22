@@ -109,7 +109,7 @@ class AppApplication : Application() {
     }
 }
 ```
-Step 6: Test your application
+Step 6: Test your application<br>
 To test it you just need to call a screen from our BFF sample.<br>
 To do that you need to start an activity using the configuration below:
 ```

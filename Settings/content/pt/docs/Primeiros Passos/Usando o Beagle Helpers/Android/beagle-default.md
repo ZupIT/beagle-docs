@@ -61,7 +61,7 @@ Etapa 3: Crie 4 arquivos de configuração para o Beagle.
 * Esses arquivos definirão algumas configurações e classes usadas pelo Beagle. <br>
     * se precisar de informações mais detalhadas, verifique nossa documentação
 
-a) Crie um arquivo AppBeagleConfig:
+a) Crie um arquivo AppBeagleConfig que herde da classe BeagleConfig:
 ```
 @BeagleComponent
 class AppBeagleConfig: BeagleConfig {
@@ -75,20 +75,20 @@ class AppBeagleConfig: BeagleConfig {
     )
 }
 ```
-b) Crie um arquivo HttpApp conforme listado abaixo. Esta classe se estende de uma classe ´HttpClientDefault()´ na biblioteca Beagle-Default:
+b) Crie um arquivo HttpApp conforme listado abaixo. Esta classe herda de uma classe ´HttpClientDefault()´ na biblioteca Beagle-Default:
 ```
 @BeagleComponent
 class HttpApp: HttpClientDefault()
 ```
 
 
-c) Crie um arquivo CacheApp conforme listado abaixo. Esta classe se estende de uma classe ´StoreHandlerDefault()´ na biblioteca Beagle-Default:
+c) Crie um arquivo CacheApp conforme listado abaixo. Esta classe herda de uma classe ´StoreHandlerDefault()´ na biblioteca Beagle-Default:
 ```
 @BeagleComponent
 class CacheApp : StoreHandlerDefault(AppApplication.APPLICATION!!)
 ```
 
-d) Crie um arquivo LoggerApp conforme listado abaixo. Esta classe se estende de uma classe ´BeagleLoggerDefault()´ na biblioteca Beagle-Default:
+d) Crie um arquivo LoggerApp conforme listado abaixo. Esta classe herda de uma classe ´BeagleLoggerDefault()´ na biblioteca Beagle-Default:
 ```
 @BeagleComponent
 class LoggerApp: BeagleLoggerDefault()
@@ -110,9 +110,9 @@ class AppApplication : Application() {
     }
 }
 ```
-Etapa 6: teste seu aplicativo
-Para testá-lo, basta chamar uma tela de nosso exemplo de melhor amigo. <br>
-Para fazer isso, você precisa iniciar uma atividade usando a configuração abaixo:
+Etapa 6: Teste seu aplicativo<br>
+Para testá-lo, basta chamar uma tela de nosso exemplo do BFF. <br>
+Para fazer isso, você precisa iniciar uma activity usando a configuração abaixo:
 ```
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

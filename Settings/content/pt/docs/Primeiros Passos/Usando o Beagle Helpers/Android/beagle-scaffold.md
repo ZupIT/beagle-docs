@@ -1,7 +1,7 @@
 ---
 title: Beagle Scafold
 weight: 16
-description: 'Aqui você encontrará a biblioteca ** Beagle-Scaffold ** para ajudá-lo a iniciar um projeto usando o Beagle no Android.
+description: 'Aqui você encontrará a biblioteca **Beagle-Scaffold** para ajudá-lo a iniciar um projeto usando o Beagle no Android.
 Esta biblioteca conterá quase todas as configurações necessárias para adicionar o Beagle a um projeto Android.'
 ---
 
@@ -59,7 +59,7 @@ dependencies {
 
 Etapa 3: Crie um AppBeagleConfigFile
 * Este arquivo obterá todos os seus atributos de configuração da biblioteca beagle-scaffold. <br>
-se necessitar de uma informação mais detalhada consulte a nossa documentação
+Se necessitar de uma informação mais detalhada consulte a nossa documentação
 
 ```
 @BeagleComponent
@@ -75,9 +75,9 @@ class AppApplication : Application() {
     }
 }
 ```
-Etapa 6: teste seu aplicativo
-Para testá-lo, basta chamar uma tela de nosso exemplo de melhor amigo. <br>
-Para fazer isso, você precisa iniciar uma atividade usando o BeagleIntent <br>
+Etapa 6: Teste seu aplicativo <br>
+Para testá-lo, basta chamar uma tela de nosso exemplo do BFF. <br>
+Para fazer isso, você precisa iniciar uma activity usando o BeagleIntent <br>
 da biblioteca Beagle-Scaffold exatamente como mostrado abaixo:
 ```
 class MainActivity : AppCompatActivity() {
