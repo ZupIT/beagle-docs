@@ -216,7 +216,7 @@ See the the `SetContext` attributes below:
 
 ### Text
 
-Here you have 4 visual components assigned to the context. You will notice that here happens the communication between components, the previous step, an information was sent to the context and now we will recover it.
+Here you have 4 visual components assigned to the context. You will notice that it is here that happens the communication between components. In the previous step, an information was sent to the context and now we will recover it.
 
 We have only text attribute of this textual component, because it is this one that will define the information to be shown.
 

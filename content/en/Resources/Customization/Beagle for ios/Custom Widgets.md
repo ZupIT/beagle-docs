@@ -8,7 +8,7 @@ description: 'You will find here, how to create a component and a Custom widgets
 
 ## Introduction
 
-Beagle already has basic widgets that can be used to alter your UI application through backend. However you can add new components to make the views  of your applications visible to Beagle and also make them be used in the backend. 
+Beagle already has basic widgets that can be used to alter your UI application through back-end. However, you can add new components to make the views of your applications visible to Beagle and also make them be used in the back-end.
 
 ## How to create components \(custom views\) and widgets?
 

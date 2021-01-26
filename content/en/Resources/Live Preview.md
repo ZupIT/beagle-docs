@@ -10,7 +10,7 @@ description: "Here, you'll find more about Live Preview's functionalities."
 
 Live Preview is a visualization resource that helps with `layout` development. It allows the screens in development to be rendered and you don't have to run your backend server to alter the layout, which reduces a screen's development time. 
 
-In other words, when a developer edits code defining a screen, they can use the plugin so that the updates are communicated to the client and it renders them. This way, it's possible to view change without running a backend server.
+In other words, when a developer edits a code defining a screen, he can use the plugin so that the updates are communicated to the client and it renders them. This way, it's possible to view the change without running a back-end server.
 
 {{% alert color="info" %}}
 This frontend and backend connection is done through a `WebSocket` on port: `9721`.
@@ -65,7 +65,7 @@ class ScreenBeagleBuilder: ScreenBuilder {
 }
 ```
 
-If your function is recognized by the plugin, Beagle's logo will appear as a button to the left of the function. When clicking this button, `BeaglePreview` will push the layout to the client \(frontend application\), allowing it to update on your layout instantly!
+If your function is recognized by the plugin, Beagle's logo will appear as a button to the left of the function. When clicking this button, `BeaglePreview` will push the layout to the client \(frontend application\), allowing it to update your layout instantly!
 See the example below:
 
 ![](/livepreviewpluginintellijidea.gif)
@@ -159,7 +159,7 @@ For more information about your package, access the attribute's package on your`
 You can also view the screen you're creating by an Android `device`. To do so, it's necessary to inform your network's `IP` on the `intent` that calls the Live Preview screen.
 
 {{% alert color="info" %}}
-The Live Preview's Activity connects to the `Backend` through the client's `websocket` connection.
+Live Preview's Activity connects to the `Backend`'s screen through the client's `websocket` connection.
 This `client` needs to know which `IP` must be used to establish the connection.
 {{% /alert %}}
 

@@ -387,7 +387,7 @@ This lifecycle can be used to run code that needs to run every time the view is 
 
 Contexts are defined, referenced and manipulated in the JSON of the view. But what if you want to access data of the application and not the view itself? Beagle offers a feature called "[**Global context**](/api/global-context)" that is able to deal with this scenario, but suppose there is no Global context, you can still implement this behavior by using the AfterViewSnapshot lifecycle.
 
-Let's say you have a financial application and you want to show the user's balance.You need to guarantee that, in every re-render the most recent value for the balance will be used.
+Let's say you have a financial application and you want to show the user's balance. You need to guarantee that, in every re-render, the most recent value for the balance will be used.
 
 ```text
 {
@@ -531,7 +531,7 @@ The text starts with a white background and as soon as the user presses a button
 
 If you call `fixColorCodes` before the context is evaluated, it will be trying to run with the string `@{bgColor}` instead of the object `{ red: 255, green: 255, blue: 255 }` which will get you a massive runtime error, since `red`, `green` or `blue` are not properties of a string.
 
-BeforeStart, BeforeViewSnapshot and AfterViewSnapshot are run before the context gets evaluated, so everything that might be affected by the context, must be executed in the last lifecycle: BeforeRender.
+`BeforeStart`, `BeforeViewSnapshot` and `AfterViewSnapshot` run before the context gets evaluated, so everything that might be affected by the context, must be executed in the last lifecycle: `BeforeRender`.
 
 ```text
 import { Tree } from '@zup-it/beagle-web'

@@ -89,7 +89,7 @@ This dependency is necessary, because the class that implements `HttpClient` wil
 
 Create an object and choose a name for it, for example, `CoroutineDispatchers`.
 
-This object is responsible for configuring **CoroutineDispatchers**, it will dictate which thread the tasks will run.
+This object is responsible for configuring **CoroutineDispatchers** and will dictate which thread the tasks will run.
 
 ```kotlin
 import kotlinx.coroutines.CoroutineDispatcher
@@ -147,9 +147,9 @@ internal fun <T> getMessageFormatted(getData: GetData<T>): T? {
 
 ### Step 4: Create a HttpClientDefault class
 
-Create a class and choose a name for it, for example,`HttpClientDefault`.
+Create a class and choose a name for it, for example `HttpClientDefault`.
 
-HttpClientDefault class defines how the services requests are configured, to use it, you need to create a class that implements a `HttpClient` interface.
+HttpClientDefault class defines how the services requests are configured. To use it, you need to create a class that implements the `HttpClient` interface.
 
 This configuration is long, so copy and paste the class below. You may modify it later.
 

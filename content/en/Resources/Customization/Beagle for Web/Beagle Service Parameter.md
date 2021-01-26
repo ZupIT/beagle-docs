@@ -8,7 +8,7 @@ description: "You will find here, what are the Beagle Service parameters."
 
 ## Beagle Service
 
-To use the Beagle library, it is necessary to create a Beagle Service with the configurarion where and how to search server-driven screens.
+To use the Beagle library, it is necessary to create a Beagle Service setup to know where and how to search for server-driven screens.
 
 > **On React** you can easily create a Beagle Service through the function **`createBeagleService(beagleServiceOptions)`**
 

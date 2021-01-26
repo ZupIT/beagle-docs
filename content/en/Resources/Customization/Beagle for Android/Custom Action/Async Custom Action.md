@@ -11,7 +11,7 @@ To create a custom action in Beagle where execution is asynchronous such as cons
 With the action created, just link the `AsyncAction` interface and delegate its implementation to the `AsyncActionImpl` class that Beagle already provides.
 
 {{% alert color="info" %}}
-It is recommend to use this class, as it implements the `onActionStarted` and `onActionFinished` exposing its state in a reactive and standardized way in the framework.
+It is recommended to use this class, as it implements the `onActionStarted` and `onActionFinished`, exposing its state in a reactive and standardized way in the framework.
 {{% /alert %}}
 
 ```kotlin

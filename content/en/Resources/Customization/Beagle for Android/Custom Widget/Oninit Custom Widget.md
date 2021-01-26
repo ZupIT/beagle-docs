@@ -51,7 +51,7 @@ class CustomInitiableWidget(
 
 ### Step 3: Delegate implementation
 
-In addition to the `onInit` property, the `OnInitiableComponent` interface needs the implementation of the `handleOnInit` and `markToRerunOnInit` methods. To facilitate and maintain the component's default behavior, Beagle already provides an implementation and it is recommended to use just delegating `OnInitiableComponentImpl`.
+In addition to the `onInit` property, the `OnInitiableComponent` interface needs the implementation of the `handleOnInit` and `markToRerunOnInit` methods. To facilitate and maintain the component's default behavior, Beagle already provides an implementation and it is recommended to use it by delegating to `OnInitiableComponentImpl`.
 
 ```kotlin
 @RegisterWidget

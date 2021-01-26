@@ -1,7 +1,7 @@
 ---
 title: Standard headers
 weight: 181
-description: You will find here default headers description and how to disable them
+description: "Here you will find the default headers' description and how to disable them"
 ---
 
 ---
@@ -11,7 +11,7 @@ Beagle Web sends **two types of headers** that are a standart for Beagle:
 1. **beagle-platform:** header used to indicate to the backend that this request came from the Web. This way, the value is sent is always **WEB**.
 2. **beagle-hash**: header used to make [**Beagle's cache protocol** ](/resource/cache/)work properly.
 
-By default, these headers are always sent, however this can be disabled by the `useBeagleHeaders` parameter on the config.
+By default, these headers are always sent, however they can be disabled by the `useBeagleHeaders` parameter in the config.
 
 See below the examples on how to disable the headers request on Angular and React's configuration.
 

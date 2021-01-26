@@ -90,13 +90,13 @@ You can set a Design System now, at this point it is not necessary, just proceed
 
 ### **Step 3: Create a BeagleSetup**
 
-Now you have to initialize your `Application ,`so Beagle can generate other configuration files that you need. When you initialize Beagle for the first time, a `BeagleSetup` class will be automatically created as you can see in the image below:
+Now you have to initialize your `Application`, so Beagle can generate other configuration files that you need. When you initialize Beagle for the first time, a `BeagleSetup` class will be automatically created as you can see in the image below:
 
 ![BeagleSetup file](/beaglesetup.png)
 
 ### **Step 4: Create the Application class**
 
-At this moment, you should create a `Kotlin class` that extends to `Application` class. For this example, the name will be `AppApplication`.
+At this moment, you should create a `Kotlin class` that extends the `Application class`. For this example, the name will be `AppApplication`.
 
 This class should be named as `BeagleSetup().init(this)` on `onCreate` method, according to the list below:
 
@@ -117,7 +117,7 @@ When you create this class, press CTRL + F9 so Beagle's generated classes are cr
 
 ### **Step 5: Update your Android Manifest.xml**
 
-Finally, you must update again your `AndroidManifest.xml` and define the `AppApplication` created as an application's initialization file, you can see the example below:
+Finally, you must update again your `AndroidManifest.xml` and define the `AppApplication` created as an application's initialization file. See the example below: 
 
 ```markup
 <?xml version="1.0" encoding="utf-8"?>
@@ -147,7 +147,7 @@ Follow these steps to make this exhibition:
 1. Open the file `MainActivity.kt`;
 2. State the line below on`OnCreate` function;
 3. Add the a command line `test_content.addView(testScreen().toView(this))`
-4. Notice that doesn't exist the **test_content**, because you will still name this reference.
+4. Notice that the **test_content** doesn't exist because you will still name this reference.
 
 ```kotlin
 override fun onCreate(savedInstanceState: Bundle?) {

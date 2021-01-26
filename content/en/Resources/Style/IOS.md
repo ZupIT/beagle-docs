@@ -18,11 +18,11 @@ It makes possible to personalize, for example:
 * Button's styles;
 * TabView. 
 
-It's importante to make clear that iOS doesn't map all the components' attributes. However, the most important are already mapped, so they can be modified if necessary. 
+It's importante to make it clear that iOS doesn't map all the components' attributes. However, the most important ones are already mapped, so they can be modified if necessary.
 
 ## Customized attributes  
 
-Not all customization's attributes can be stylized, on the list below you will know which one can be personalized through Beagle.  
+Not all customization's attributes can be stylized. On the list below you will know which one can be personalized through Beagle.
 
 Another important point is that styles created on iOS and related to componentes that came from backend. On these cases, you can configure the styles so each of them can be referenced, just like the example below:
 

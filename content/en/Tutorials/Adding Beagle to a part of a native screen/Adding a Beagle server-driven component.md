@@ -33,7 +33,7 @@ Follow the steps:
 
 1. Create a Kotlin class in your backend.
 
-2. Name it `SingleComponentBuilder`, this is the class that will build your server-driven \(object\)component.
+2. Name it `SingleComponentBuilder`. This is the class that will build your server-driven \(object\)component.
 
 3. Copy and paste the code below:
 
@@ -89,7 +89,7 @@ class ScreenBeagleService {
 
 ### Update Controller
 
-If the configuration above works, then you will have to update the controller and the component, after that they will be ready to be sent to frontend, if there is a request.
+If the configuration above works, then you will have to update the controller and the component. After that, they will be ready to be sent to the front-end, if there is a request.
 
 Now, on the controller class, it will call the service that has just been configured and define the URL that it will be the component's endpoint you have created.
 
@@ -296,7 +296,7 @@ class NativeViewController: UIViewController {
     }
 ```
 
-At the end of the process, you will "call" our native screen that will show up as in the image below. Remember, in this example it was created in a screen composed on a `UILabel` and in a `BeagleScreenViewController` variable type, where it remains the server-driven component.
+At the end of the process, you will "call" the native screen that will shown up as in the image below. Remember in this example, it was created in a screen composed on a `UILabel` and on a `BeagleScreenViewController` variable type, where it remains the server-driven component.
 
 <div align="center">
 {{< figure src="/server-driven-comp-ios.gif" width="50%" >}}

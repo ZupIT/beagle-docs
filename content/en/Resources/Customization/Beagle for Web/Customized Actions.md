@@ -24,7 +24,7 @@ interface CustomAction {
 }
 ```
 
-**Step 2:** Create th `ActionHandler`  function with the interface:
+**Step 2:** Create the `ActionHandler` function with the interface:
 
 ```javascript
 import { ActionHandler } from '@zup-it/beagle-web'

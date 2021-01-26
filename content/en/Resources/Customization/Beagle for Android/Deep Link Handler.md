@@ -31,7 +31,7 @@ class AppDeepLinkHandler : DeepLinkHandler {
 }
 ```
 
-In the **getDeepLinkIntent** method, you can configure the navigation screens of server driven ui flows to their native screens, making sure that Beagle recognizes your rule.
+In the **getDeepLinkIntent** method, you can configure the navigation screens of the server-driven ui flows to their native screens, making sure that Beagle recognizes your rule.
 
 | **Attribute**          | **Type**             |                                                      **Definition**                                                      |
 | :--------------------- | :------------------- | :----------------------------------------------------------------------------------------------------------------------: |

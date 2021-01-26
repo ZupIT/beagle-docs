@@ -10,7 +10,7 @@ description: Robolectric configuration for Android unit tests
 
 Roboletric is a **framework for unit testing** on Android. One of its functions is to simulate information about Android's context during the tests performed.
 
-It's necessary to configure a dependency of Yoga Layout called **SoLoader** that, if it's not enabled as **TEST mode**, a **nullPointerException** error will occur, since the view will not exist in that context.
+It's necessary to configure a dependency of Yoga Layout called **SoLoader**, that, if it's not enabled as **TEST mode**, a **nullPointerException** error will occur, since the view will not exist in that context.
  
 
 {{% alert color="info" %}}

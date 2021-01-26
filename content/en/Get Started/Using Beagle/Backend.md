@@ -295,7 +295,7 @@ open class CorsConfig : WebMvcConfigurer {
 
 ### Step 5: Start your BFF
 
-After the configuration above, you can start your BFF. Just run the command below in your project, a reminder, it needs to starts the server on port 8080 in your localhost.
+After the configuration above, you can start your BFF by running the command below in your project. A reminder: it needs to start the server at localhost and on port 8080.
 
 {{< tabs id="T7" >}}
 {{% tab name="Micronaut" %}}

@@ -72,7 +72,7 @@ The type defined in the last section \(`BeagleUIElement`\), you can see the `id`
 
 In fact, the payload returned by the backend can be anything, but internally Beagle must work with a tree of components \(`BeagleUIElement`\). You must be able to traverse the tree and detect every component and its children. The payload can be anything, because it gives the developer a chance to change it before it gets processed by Beagle.
 
-It is recommended that the backend always return a JSON representing a tree of components, as it is expected by Beagle, but if, for some reason, it is not possible, Beagle Web makes it possible to pre-process the response and build the tree in the front-end before Beagle actually works upon it, like in [**lifecycles**](/resources/customization/beagle-for-web/advanced-topics/rendering/#lifecycles).
+It is recommended that the back-end always returns a JSON representing a tree of components, as it is expected by Beagle. If this is not possible, Beagle Web makes it possible to pre-process the response and build the tree in the front-end before Beagle actually works upon it, like in[**lifecycles**](/resources/customization/beagle-for-web/advanced-topics/rendering/#lifecycles).
 
 ### The children property
 

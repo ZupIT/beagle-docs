@@ -81,7 +81,7 @@ export class BeagleComponentsModule {}
 
 ```
 
-**Step 3:** Now, you can replace the default component in `beagle.module.ts` file:
+**Step 3:** Now, you can substitute the pattern component in `beagle.module.ts` file:
 
 ```text
 import { BeagleModule } from '@zup-it/beagle-angular';
@@ -110,7 +110,7 @@ The files  `beagle.module.ts` and `beagle-components.module.ts` are automaticall
 
 ## Error Component
 
-The default error component on Beagle is called when connection error happens, for example, when a server path cannot be reached.
+The default error component on Beagle is called when a connection error happens, for example, when a server path cannot be reached.
 
 To this component, the library shows an interface called `ErrorComponentParams`, throught it you have access to the error list and a retry method, responsible to retry the server request. 
 
@@ -213,7 +213,7 @@ export class BeagleComponentsModule {}
 
 ```
 
-Finally, replace the default component to the `beagle.module.ts` file:
+Finally, replace the default component to `beagle.module.ts` file:
 
 ```text
 import { CustomErrorComponent } from './components/custom-error/custom-error.component';

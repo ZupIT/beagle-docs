@@ -146,7 +146,7 @@ class MyFilter : Filter {
 
 ### Step 6: Configure the platform's specification mechanism 
 
-In order to have the element's platform filter working, it is necessary to configure. It is recommended to register a filter that verifies your BFF's response and filters the sent elements according to the specified platform on your customized `beagle-platform` header.
+In order to have the element's platform filter working, it is necessary to configure a filter. It is recommended to register a filter that verifies your BFF's response and filters the sent elements according to the specified platform on your customized `beagle-platform` header.
 
 The `BeaglePlatformUtil` class was created to provide some tools to make the configuration easier to be used in your filter. See below:
 

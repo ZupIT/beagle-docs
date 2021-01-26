@@ -14,7 +14,7 @@ The flex-wrap property changes this behavior and “wraps” items. It has **`no
 
 ### **No Wrap \(**default**\)**
 
-Items displays in one single line:
+Items display in one single line:
 
 ![](https://lh3.googleusercontent.com/2sWYZdvDpSj8gCfOR2Pa9iESgFrjD6XEXT2QIoMj_OQq-sw6fcTB5s7yuum2cnKekIU8Mn326F9PD87IyCGwSK6jzauS-SfqUeDQ43zi1nnjUp7yf9QuYCHbHLW6L-O_sjw1rPdX)
 

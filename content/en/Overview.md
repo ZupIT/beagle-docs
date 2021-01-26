@@ -16,7 +16,7 @@ Beagle is an **open source framework** of cross-platform development based on th
  Beagle's main benefit is that it allows teams to make **layout and data changes directly in native mobile or web applications** by changing the code on backend. 
 {{% /alert %}}
 
-It's possible to create, test and quickly update native application's components without need to approve this changes on the store \(App Store or Play Store\). 
+It's possible to create, test and quickly update native application's components without need to approve these changes on the store (App Store or Play Store).
 
 ### Versioning
 

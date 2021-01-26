@@ -7,7 +7,7 @@ description: >-
 
 ---
 
-## Display a screen through an URL
+## Display a screen through a URL
 
 Each platform has its own way to display a server-driven screen on frontend by using Beagle. You can see examples below:
 

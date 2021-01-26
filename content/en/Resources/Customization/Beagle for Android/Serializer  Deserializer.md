@@ -10,7 +10,7 @@ description: >-
 
 ## Introduction
 
-Beagle offers a customized **`serializer/deserializer`** set through  a `BeagleTypeAdapter` interface. With this **`Adapter`** it is possible to map any class, including classes that represent **concrete types**, such as an **Integer**. You can see the interface contract below:
+Beagle offers a customized **`serializer/deserializer`** set through  a `BeagleTypeAdapter` interface. With this **`Adapter`** it is possible to map any class, including classes that represent **concrete types**, such as the **Integer** class. You can see the interface contract below:
 
 
 ```kotlin
@@ -27,7 +27,7 @@ This example creates an **`adapter`** for the `Person` interface that is extende
 In order to create an adapter you must: 
 
 1. Create a class that will be your adapter and **annotate** it with  a`@ RegisterBeagleAdapter`. In this example we named this class as **`PersonAdapter`** ;
-2. Declare which class you want to **map** with this adapter. Here `PersonImpl` `data class` are implemented as an example.;
+2. Declare which class you want to **map** with this adapter. Here, `PersonImpl` data class is implemented as an example.;
 3. Extend the `adapter` \(PersonAdapter\) class from the **`BeagleTypeAdapter`** `Interface`, informing the class to be mapped on;
 4. When extending the interface you must implement the `fromJson` and `toJson methods`, check out the example below:
 
