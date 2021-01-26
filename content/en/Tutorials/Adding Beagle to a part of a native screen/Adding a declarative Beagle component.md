@@ -116,7 +116,7 @@ class NativeViewController: UIViewController {
 
 {{< tabs id="T99" >}}
 {{% tab name="Android" %}}
-To create a Beagle declarative component, you have to use a Container \(which it is a Beagle component that put together the other components\). It can be declared as a variable or a function that returns a container. This example was configured as a function return:
+To create a Beagle declarative component, you have to use a Container \(a Beagle component that contains other components\). It can be declared as a variable or a function that returns a container. This example was configured as a function return:
 
 
 ```text
