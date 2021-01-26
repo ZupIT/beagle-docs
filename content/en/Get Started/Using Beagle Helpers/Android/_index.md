@@ -1,5 +1,5 @@
 ---
-title: Libs for Beagle Android
+title: Android
 weight: 15
 description: 'Here you will find a library to help when you want to start a project using beagle for Android. These libs will facilitate the initial Beagle configuration in a project, avoiding some steps, and starting studies quicker.'
 ---
@@ -30,5 +30,5 @@ All these are also available in the Scaffold lib above.
 {{% alert color="warning" %}}
 If you wish to use Beagle for an application in production we advise you to configure a project
  from scratch using our
- [**documentation**](https://docs.usebeagle.io/home/get-started/creating-a-project-from-scratch/case-android/)
+ [**documentation**](/get-started/creating-a-project-from-scratch/case-android/)
 {{% /alert %}}

@@ -1,5 +1,5 @@
 ---
-title: iOS Libs
+title: iOS
 weight: 15
 description: ''
 ---
