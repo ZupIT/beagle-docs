@@ -80,7 +80,7 @@ Beagle.dependencies = dependencies
 
 In the vast majority of cases this class should not be used by the user. This is the object that will be internally stored in `Beagle.dependencies.logger` instead of` BeagleLogger` customized by the user.
 
-It's responsibility is to only forward calls to the user's class if `Beagle.dependencies.isLogginEnabled` is` true`, otherwise it will not even pass along the message. Today it is public just to allow access to the user's custom class via:
+Its responsibility is to only forward calls to the user's class if `Beagle.dependencies.isLogginEnabled` is` true`, otherwise it won't pass along the message. Today it is public just to allow access to the user's custom class via:
 
 ```swift
 (Beagle.dependencies.logger as? BeagleLoggerProxy)?.logger
