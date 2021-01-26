@@ -177,7 +177,7 @@ On this example, the `onChange` event of the TextInput is always called when the
 
 #### OnChange
 
-In the context, the action SetContext will be performed in each character typed by the user. On the SetContext it is required the `contextId`, because it will make reference to the context that it will be altered, besides of the `value` that represents the new value, and the `path` that is the way inside the context that will be altered.
+In the context, the action SetContext will be performed in each character typed by the user. In SetContext, it is required the `contextId`, because it will make reference to the context that it will be altered, besides of the `value` that represents the new value, and the `path` that is the way inside the context that will be altered.
 
 #### Path
 
