@@ -173,7 +173,7 @@ Container(
 {{% /tab %}}
 {{< /tabs >}}
 
-On this example, an `onChange` event of the TextInput it is always called when the user types a new text in the input. Inside the onChange, there is an implicit context [**implicit context**](/api/context/#2-implicit-context) called `onChange` where the value is the last typed `value` by the user.
+On this example, the `onChange` event of the TextInput is always called when the user types a new text in the input. Inside the onChange, there is an implicit context [**implicit context**](/api/context/#2-implicit-context) called `onChange` where the value is the last typed `value` by the user.
 
 #### OnChange
 
