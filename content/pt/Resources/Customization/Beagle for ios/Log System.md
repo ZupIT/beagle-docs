@@ -82,7 +82,7 @@ Beagle.dependencies = dependencies
 
 ## BeagleLoggerProxy
 
-Esta classe na grande maioria dos casos não deve ser utilizada pelo usuário. Esse é o objeto que internamente será armazenado no `Beagle.dependencies.logger` ao invés do `BeagleLogger` customizado pelo usuário. 
+Esta classe, na grande maioria dos casos, não deve ser utilizada pelo usuário. Esse é o objeto que internamente será armazenado no `Beagle.dependencies.logger` ao invés do `BeagleLogger` customizado pelo usuário. 
 
 A sua responsabilidade é de apenas repassar as chamadas pra classe do usuário caso o `Beagle.dependencies.isLogginEnabled` for `true`, caso contrário ela nem repassa a mensagem. Hoje ela está como pública somente para possibilitar o acesso à classe customizada do usuário via:
 
