@@ -8,7 +8,7 @@ description: 'Here, you''ll more information about the Playground for web.'
 
 ### What is Playground? 
 
-Playground is a development tool where you can create components and pages using Beagle. It is very fast and simple, without any installation process. It has a interface that allows you to write a JSON and see the result instantly.
+Playground is a development tool where you can create components and pages using Beagle. It is very fast and simple, there is no installation process. It has an interface that allows you to write a JSON and instantly see the result.
 
 ### Accessing **Playground**
 

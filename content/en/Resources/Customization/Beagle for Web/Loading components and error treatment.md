@@ -8,9 +8,9 @@ description: See how to change the error and loading components
 
 ## Loading Component
 
-Beagle's library already has by default a component that it is called when a screen loads. If necessary, you are able to change it to a customized one, according your application's needs. 
+Beagle's library already has a default component that's called when a screen loads. If necessary, you are able to change it to a customized one, according to your application's needs.
 
-To create a loading component, follow the steps below: 
+To create a loading component, follow the steps below:
 
 {{< tabs id="T78" >}}
 {{% tab name="React" %}}
@@ -58,7 +58,7 @@ You can use angular CLI, if you want, to generate the component automatically, s
 ng generate component components/custom-loading
 ```
 
-**Step 2:** After that, open the file `beagle-components.module.ts` and add the component to the list: 
+**Step 2:** After that, open `beagle-components.module.ts` file and add the component to the list: 
 
 ```text
 import { NgModule } from '@angular/core'
@@ -110,7 +110,7 @@ The files  `beagle.module.ts` and `beagle-components.module.ts` are automaticall
 
 ## Error Component
 
-The default error component on Beagle is called when connection error happens, for example, when a server path cannot be reached. 
+The default error component on Beagle is called when connection error happens, for example, when a server path cannot be reached.
 
 To this component, the library shows an interface called `ErrorComponentParams`, throught it you have access to the error list and a retry method, responsible to retry the server request. 
 

@@ -15,7 +15,7 @@ On this section, you'll see two specific ones:
 
 ## Set Id
 
-The method Set Id is used when you need to set an Id on a [**widget**](/api/widget) provided by [**BFF**](/key-concepts#backend-for-frontend). To do so, you just have to call this method on the widget you wanna set the Id during the moment you're creating your widget.
+The method Set Id is used when you need to set an Id on a [**widget**](/api/widget)  provided by [**BFF**](/key-concepts#backend-for-frontend). To do so, you just have to call this method on the widget you want to set the Id during the moment you're creating your widget.
 
 See how this works on the link below:
 
@@ -44,7 +44,7 @@ See how it works on the like below:
 {{% tab name="iOS" %}}
 On iOS, the Id is registered on `accessibilityIdentifier`. So, to use then, you just need to use the same value used on `setId()`.
 
-See how it works on the like below:
+See how it works on the example below:
 
 ```swift
 "myTextId"
@@ -53,7 +53,7 @@ See how it works on the like below:
 {{% /tab %}}
 
 {{% tab name="Web" %}}
-On Web, there is a default configuration that every component rendered by Beagle receives a 'data-beagle-id' in its html, in case the backend doesn't set this Id.
+On Web, there is a default configuration that every component rendered by Beagle receives a 'data-beagle-id' in its HTML, in case the backend doesn't set this Id.
 
 If you want to retrieve it, just use common javascript and html running the command below:
 

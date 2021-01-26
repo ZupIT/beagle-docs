@@ -295,7 +295,7 @@ open class CorsConfig : WebMvcConfigurer {
 
 ### Step 5: Start your BFF
 
-After you have done the configuration above, you can start your BFF. Just run the command below in your project, a reminder, it needs to starts the server on port 8080 in your localhost.
+After the configuration above, you can start your BFF. Just run the command below in your project, a reminder, it needs to starts the server on port 8080 in your localhost.
 
 {{< tabs id="T7" >}}
 {{% tab name="Micronaut" %}}
@@ -315,7 +315,7 @@ $ mvn spring-boot:run
 {{% /tab %}}
 {{< /tabs >}}
 
-Now that the BFF is running, to see the resulting JSON, insert the URL http://localhost:8080/action directly on your navigator. You should get the result below.
+Now that the BFF is running, to see the resulting JSON, insert the URL http://localhost:8080/action directly in your navigator. You should get the result below:
 
 ```text
 {

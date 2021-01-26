@@ -6,12 +6,12 @@ description: Creating a custom async action
 
 ---
 
-To create a custom action in Beagle whose execution is asynchronous such as consuming an API or accessing a database, just create an `action` as usual as the previous example detailed and implement the `AsyncAction` interface.
+To create a custom action in Beagle where execution is asynchronous such as consuming an API or accessing a database, just create an `action` as usual as the previous example detailed and implement the `AsyncAction` interface.
 
 With the action created, just link the `AsyncAction` interface and delegate its implementation to the `AsyncActionImpl` class that Beagle already provides.
 
 {{% alert color="info" %}}
-We recommend using this class, as it implements the `onActionStarted` and `onActionFinished` exposing its state in a reactive and standardized way in the framework.
+It is recommend to use this class, as it implements the `onActionStarted` and `onActionFinished` exposing its state in a reactive and standardized way in the framework.
 {{% /alert %}}
 
 ```kotlin

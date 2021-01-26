@@ -8,7 +8,7 @@ description: "This section shows information on how to create the Beagle Screen 
 
 ## Introduction
 
-The `BeagleScreenViewController` is a class that **controls** how views will be presented at the application. It works exactly as a `UIViewController`.
+`BeagleScreenViewController` is a class that **controls** how views will be presented at the application. It works exactly as a `UIViewController`.
 
 ## How to use it?
 

@@ -38,7 +38,7 @@ This cache is used to optimize BFF's response - in terms of time and size -, in 
 
 The premisse to this cache works is that it has to always return the same JSON to the same request. To guarantee that, it's necessary that this cache is the same according to its endpoint and specific platform as we can see in [**component's platform specification.**](/resources/components/platform-sorting)
 
-In other words, we say that an endpoint can return a static element because it can only work if it returns the same JSON, independently of any other specific platform.
+In other words, an endpoint can return a static element because it can only work if it returns the same JSON, independently of any other specific platform.
 
 {{% alert color="danger" %}}
 It's important to remember that cache's mechanism **must not** be used with **endpoints** that does not meet this **premisse**.

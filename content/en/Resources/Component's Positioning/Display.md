@@ -8,9 +8,9 @@ description: This section lists information about the Display property
 
 ## Display
 
-This property defines how this component displays.That allows a container to be `flexible` or `blocked` according to the value defined. The Display also provides a flexible context for all of its direct child elements.
+This property defines how this component displays. It allows a container to be `flexible` or `blocked` according to the value defined. Display also provides a flexible context for all of its direct child elements.
 
-In this property, we have two attributes:
+In this property, there are two attributes:
 
 - Flex
 - None

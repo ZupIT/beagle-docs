@@ -15,9 +15,9 @@ You will see below how to configure the communication between components using [
 
 ### What will I communicate?
 
-On this example we will consume a public API result that returns exchange rates values on the market or Currency Rates.
+On this example you will consume a public API result that returns exchange rates values on the market or Currency Rates.
 
-The end point below returns a similar JSON. We listed only the data we will use, but it important to mention that this JSON response is bigger.
+The end point below returns a similar JSON. It is listed only the data you will use, but it important to mention that this JSON response is bigger.
 
 - Endpoint: [**https://api.exchangeratesapi.io/latest?base=USD**](https://api.exchangeratesapi.io/latest?base=USD)
 
@@ -44,9 +44,9 @@ Follow the next steps on how to do it:
 
 - Use the two structures to configure and utilize the context, one is a class to represent the API response information and a Container to show this information on the screen.
 
-### Step 1: Creating a Currency class
+### Step 1: Create a Currency class
 
-According to the API response, we wrote the class below to structure the data. This is the first structure:
+According to the API response, you wrote the class below to structure the data. This is the first structure:
 
 ```text
 data class Currency(
@@ -57,13 +57,12 @@ data class Currency(
 )
 ```
 
-### Step 2: Creating a Container
+### Step 2: Create a Container
 
-Once you create the first structure, it's time to
-structure the Container that will contain all the components you want to show. You have to list the components and also the `Context`\*\*\*` to this components group.
-
+Once you create the first structure, it's time to structure the Container that will contain all the components you want to show. You have to list the components and also the  **`Context`**` to this components group.
+ 
 {{% alert color="info" %}}
-It is important to remember that this `Context`, it is Beagle's functionality that registers components information and that can be recovered in another component. It is not the view context of Android.
+It is important to remember that this `Context` is a Beagle's functionality that registers components information and that can be recovered in another component. It is not the view context of Android.
 {{% /alert %}}
 
 Container is divided into **two main parts:**
@@ -183,13 +182,13 @@ Container(
 
 ### The Container
 
-The structure of this page has 1 title, 1 button and 4 text views, that will receive the context information. Check some more details:
+The structure of this page has 1 title, 1 button and 4 text views that will receive the context information. Check out more details:
 
 - The **title** is only to exemplify the structure and the page hierarchy.
 - The **button** it is used to trigger the API response and to call the SetContext function to attribute the response result to the context.
 - The **4 text views** will receive the information coming from the context.
 
-### `SendRequest` e **`SetContext`** button and functions
+### **`SendRequest`** e **`SetContext`** button and functions
 
 To configure the button, first it is necessary to define the function that will be triggered when the button is clicked, you have to configure the `onPress` attribute. The function that must be called when clicked is the `SendRequest`, it is responsible for resquest the response from the API, already configured on it.
 
@@ -203,22 +202,21 @@ See below the function's parameters, which the example it is **on the container 
 | method    | Defines the request method. This example is GET.                                                                                           |
 | onSuccess | Defines an action to be performed when the API request is successful. It is on the onSuccess that will call the **`SetContext`** function. |
 
-When the API request receives a response, the `SetContext` method is called and it is on it we will assign the API result to the context.
+When the API request receives a response, the `SetContext` method is called and you will assign the API result to the context.
 
 See the the `SetContext` attributes below:
 
 #### **SetContext**
 
-| Attribute                                                             | Description                                                                                                                                                                                                                                                                                                                                                                    |
-| :-------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| contextId                                                             | **Required**. The id was defined in the ContextData, it refers to this context. On the example, the **id** is`"MyContext"`.                                                                                                                                                                                                                                                    |
-| path                                                                  | It can be implemented to define a specialized path. This example we defined it as "currency", this is how the values will be requested in the context.                                                                                                                                                                                                                         |
-| value                                                                 | **Required**. It gives values to the declared attributes in the context, according to the API response. On this example to recover the API values, we have to build this value like this: `"@{onSuccess.data.rates.EUR}"`, meaning that, the `onSuccess.data` represents the received information of the API response, according to the JSON, the result can be accessed using |
-| `.rates.EUR` for example, that it is the key value we want to access. |
+| Attribute | Description |
+| :--- | :--- |
+| contextId | **Required**. The id was defined in the ContextData, it refers to this context.  On the example, the **id** is`"MyContext"`. |
+| path | It can be implemented to define a specialized path. This example you defined it as "currency", this is how the values will be requested in the context. |
+| value | **Required**. It gives values to the declared attributes in the context, according to the API response. On this example to recover the API values, you have to build this value like: `"@{onSuccess.data.rates.EUR}"`, meaning that, the `onSuccess.data` represents the received information of the API response, according to the JSON, the result can be accessed using `.rates.EUR` for example, that it is the key value you want to access. |
 
 ### Text
 
-Here we have 4 visual components assigned to the context. You will notice that here where the communication between components happens, the previous step, an information was sent to the context and now we will recover it.
+Here you have 4 visual components assigned to the context. You will notice that here happens the communication between components, the previous step, an information was sent to the context and now we will recover it.
 
 We have only text attribute of this textual component, because it is this one that will define the information to be shown.
 

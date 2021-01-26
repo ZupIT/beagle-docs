@@ -47,7 +47,7 @@ yarn beagle help
 npx beagle help
 ```
 
-If the Beagle's commands were listed as in the image below, that means that the installation worked correctly.
+If Beagle's commands were listed in like the image below, that means the installation worked correctly.
 
 ![](/image%20%2814%29.png)
 
@@ -61,7 +61,7 @@ Beagle React's current version**:**[![badge](https://img.shields.io/npm/v/@zup-i
 
 ### Step 1: Install Beagle's library
 
-To follow the installation process, navigate to the root of your react project and run one of the commands below according to the package manager of your preference.
+Navigate to the root of your react project and run one of the commands below according to the package manager of your preference.
 
 If you use[ **Yarn**](https://yarnpkg.com/):
 
@@ -82,7 +82,7 @@ Well done! Your library was installed. Now, you can see more of [**how to use Be
 ## **Next Steps**
 
 On this section, you made Beagle's **initial installation** on your application!  
-To keep configuring Beagle:
+Now, keep configuring Beagle:
 
 👉Go to [**initial configurations** ](/get-started/using-beagle/web/)to enable the use of Beagle on your Web project.
 

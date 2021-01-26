@@ -35,9 +35,9 @@ final class DeeplinkScreenManager: DeepLinkScreenManaging {
 }
 ```
 
-### **Step 2: Create DeeplinkScreen protocol**
+### **Step 2: Create a DeeplinkScreen protocol**
 
-Now, you have to create a protocol called DeeplinkScreen, where each screen is where you will need to use the deeplink for navigation according to this protocol.
+Now, you have to create a protocol called DeeplinkScreen, each screen is where you will need to use the deeplink for navigation according to this protocol.
 
 The protocol has two main methods:
 

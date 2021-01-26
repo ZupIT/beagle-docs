@@ -8,7 +8,7 @@ description: This section lists information about the Padding property.
 
 ## Padding
 
-This property allows apply spacing inside a father element. This way, all child element that it is created after this configuration will come with a predefined spacing. Within Padding, you will also find the following atributes:
+This property allows you to apply spacing inside a father element. This way, all child element that it is created after this configuration will come with a predefined spacing. Within Padding, you will also find the following atributes:
 
 **`all, bottom, end, horizontal, left, right, start, top, vertical`**
 

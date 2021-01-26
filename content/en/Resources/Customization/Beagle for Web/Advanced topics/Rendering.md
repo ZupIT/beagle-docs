@@ -10,7 +10,7 @@ description: Understanding and taking control over the rendering process
 The features described here are only available in versions 1.2.0 and above.
 {{% /alert %}}
 
-We recommend you to read about [**Beagle tree data structure**](/resources/customization/beagle-for-web/advanced-topics/data-structure) in order to help you understand rendering.
+Read about [**Beagle tree data structure**](/resources/customization/beagle-for-web/advanced-topics/data-structure) in order to help you understand rendering.
 
 Every Beagle Web library has a very well defined process of how it fetches, process and renders a view. There's an order that must always be respected and hook points where the developer can execute some code of his own \(lifecycles\).
 
@@ -177,7 +177,7 @@ There are four lifecycle hooks, but you probably want to use just two of them: `
 
 A simple rule to decide if you want to alter the tree via `beforeViewSnapshot` or `beforeRender` is: if your modification doesn't depend on the result of an expression, use `beforeViewSnapshot` otherwise use`beforeRender`.
 
-A lifecycle hook receives the Beagle Tree and returns either nothing \(undefined\) or a tree. If it is a tree, the rendering process will discard the previous tree and start working on the tree returned by the hook. If it's a global lifecycle, by "tree" we mean the entire Beagle Tree, if it's a component lifecycle, by "tree", we mean the branch corresponding to the component.
+A lifecycle hook receives the Beagle Tree and returns either nothing \(undefined\) or a tree. If it is a tree, the rendering process will discard the previous tree and start working on the tree returned by the hook. If it's a global lifecycle, by "tree" it means the entire Beagle Tree, if it's a component lifecycle, by "tree", it means the branch corresponding to the component.
 
 Below, see detailed explanations and examples of each lifecycle:
 
@@ -295,7 +295,7 @@ The component `beagle:textInput` can be controlled through a context. Let's see 
 }
 ```
 
-It is possible to add a shortcut. Let's say whenever the json brings the property `model` we create the entire structure automatically? In `model`, it must be typed which value in the context will control the input. Let's see the same example, but now using this new property `model` that we just came up with.
+It is possible to add a shortcut. Let's say whenever the JSON brings the property `model` you create the entire structure automatically? In `model`, it must be typed which value in the context will control the input. Let's see the same example, but now using this new property `model`.
 
 ```text
 {
@@ -322,7 +322,7 @@ It is possible to add a shortcut. Let's say whenever the json brings the propert
 }
 ```
 
-Much simpler, right? But for this to work, we still need to write the lifecycle that will transform `model` to the expected structure.
+Much simpler, right? But for this to work, you still need to write the lifecycle that will transform `model` to the expected structure.
 
 ```text
 import { BeforeViewSnapshot } from '@zup-it/beagle-web'
@@ -372,7 +372,7 @@ class Table {
 
 ### AfterViewSnapshot
 
-When using the [**Renderer API**](#the-renderer-api) we have two different types of render: full renders and partial renders. The two previous lifecycles will run only in full renders, while this lifecycle and the next runs on both full and partial renders.
+When using the [**Renderer API**](#the-renderer-api) you have two different types of render: full renders and partial renders. The two previous lifecycles will run only in full renders, while this lifecycle and the next runs on both full and partial renders.
 
 Differently from the two previous lifecycles, the changes done here are valid for the current render only. Since any update to the view is done over a tree based on the snapshotted view, the modifications done in this lifecycle are not permanent and will be executed in every render. For instance, if we have a property `counter` with the value `0` in the tree and in our lifecycle we increment `counter` by `1`. In the 5th full render these would be the values for `counter` depending on which lifecycle was used:
 
@@ -385,9 +385,9 @@ This lifecycle can be used to run code that needs to run every time the view is 
 
 #### Example of usage
 
-Contexts are defined, referenced and manipulated in the JSON of the view. But what if we want to access data of the application and not the view itself? Beagle offers a feature called "[**Global context**](/api/global-context)" that is able to deal with this scenario, but suppose there is no Global context, we can still implement this behavior by using the AfterViewSnapshot lifecycle.
+Contexts are defined, referenced and manipulated in the JSON of the view. But what if you want to access data of the application and not the view itself? Beagle offers a feature called "[**Global context**](/api/global-context)" that is able to deal with this scenario, but suppose there is no Global context, you can still implement this behavior by using the AfterViewSnapshot lifecycle.
 
-Let's say we have a financial application and we want to show the user's balance. We must guarantee that, in every re-render the most recent value for the balance will be used.
+Let's say you have a financial application and you want to show the user's balance.You need to guarantee that, in every re-render the most recent value for the balance will be used.
 
 ```text
 {
@@ -408,7 +408,7 @@ Let's say we have a financial application and we want to show the user's balance
 }
 ```
 
-In the JSON above, we use the context `user`, where it starts with empty values and the view has no way of knowing the correct values. Now, replace the values of the context in the JSON by the values you have in your application. See the example below:
+In the JSON above, use the context `user`, where it starts with empty values and the view has no way of knowing the correct values. Now, replace the values of the context in the JSON by the values you have in your application. See the example below:
 
 ```text
 import Tree from '@zup-it/beagle-web'
@@ -438,7 +438,7 @@ const config = {
 
 The code above tells Beagle to replace the values in the context "user" by the values in the application. This piece of code cannot be placed before the view is snapshotted because we have the requirement to update the balance value in every render. It also can't be placed in the next lifecycle \(BeforeRender\), because the context would then be already evaluated and our values wouldn't be processed.
 
-It is important to notice that the action `setContext` would not work over the context `user`, since we are always replacing the values for this context before processing any expression. This is just an example to show how this lifecycle could be used. To use application values in your beagle view, it is always preferred to use the [**global context**](/api/global-context).
+It is important to notice that the action `setContext` would not work over the context `user`, since you are always replacing the values for this context before processing any expression. This is just an example to show how this lifecycle could be used. To use application values in your Beagle view, it is always preferred to use the [**global context**](/api/global-context).
 
 ### BeforeRender
 
@@ -529,9 +529,9 @@ Now, just need to run the function above for every component in the tree. If you
 
 The text starts with a white background and as soon as the user presses a button, the background color changes.
 
-If you call `fixColorCodes` before the context is evaluated, it will be trying to execute it over the string `@{bgColor}` instead of the object `{ red: 255, green: 255, blue: 255 }` which will get you a massive runtime error, since `red`, `green` or `blue` are not properties of a string.
+If you call `fixColorCodes` before the context is evaluated, it will be trying to run with the string `@{bgColor}` instead of the object `{ red: 255, green: 255, blue: 255 }` which will get you a massive runtime error, since `red`, `green` or `blue` are not properties of a string.
 
-BeforeStart, BeforeViewSnapshot and AfterViewSnapshot are executed before the context gets evaluated, so everything that might be affected by the context, must be executed in the last lifecycle: BeforeRender.
+BeforeStart, BeforeViewSnapshot and AfterViewSnapshot are run before the context gets evaluated, so everything that might be affected by the context, must be executed in the last lifecycle: BeforeRender.
 
 ```text
 import { Tree } from '@zup-it/beagle-web'
@@ -611,7 +611,7 @@ export class Home {
 
 When inside a component rendered by Beagle, you can use the [**ViewContentManager**](#the-viewcontentmanager-api) to get the BeagleView and obtain access to the renderer.
 
-When inside an action handler \(custom actions\), the Beagle View is provided via parameter, which can be used to get the renderer. See the example below:
+When inside an action handler \(custom actions\), Beagle View is provided via parameter, which can be used to get the renderer. See the example below:
 
 ```text
 const MyCustomActionHandler: ActionHandler<MyCustomAction> = ({ action, beagleView }) => {
@@ -666,7 +666,7 @@ const item = {
     { _beagleComponent_: 'beagle:text', text: 'Client age: 30' }
   ]
 }
-// we should always do full renders when creating new nodes
+// You should always do full renders when creating new nodes
 beagleView.getRenderer().doFullRender(item, 'list', { mode: 'append' })
 ```
 
@@ -678,7 +678,7 @@ A solution to the example given would be to replace the children of the componen
 
 ## The ViewContentManager API
 
-List view component is a component that needs to use the Renderer API, but how do we access the renderer from the component itself? In both Angular and React this can be done via the `ViewContentManager`.
+List view component is a component that needs to use the Renderer API, but how do you access the renderer from the component itself? In both Angular and React this can be done via the `ViewContentManager`.
 
 The ViewContentManager provides a way to access the Beagle View and the node in the current Beagle Tree that gave origin to the component being rendered and with that you can access the renderer and call re-renders for this specific component.
 

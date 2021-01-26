@@ -10,7 +10,7 @@ description: >-
 
 ## Introduction 
 
-Most elements from Beagle use a field to points out a path to define the URLs. This field, in special, is sent to backend to indicate HTTP requests that an application needs to do and that are managed by Beagle's client. 
+Most elements from Beagle make use of a field to define the URLs. This field is sent to backend to indicate HTTP requests that an application needs to do and that are managed by Beagle's client.
 
 ## Types of paths
 

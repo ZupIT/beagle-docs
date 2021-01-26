@@ -140,6 +140,6 @@ child = Container(
 ).applyFlex(Flex(flexDirection = FlexDirection.ROW, flexWrap = FlexWrap.WRAP))
 ```
 
-The code is clearer and makes the code maintenance easier.
+The code is clearer and it makes the maintenance easier.
 
-To build this component, it was not necessary to create a new one or a behaviour in the frontend.
+To build this component, it is not necessary to create a new one or a behaviour in the frontend.

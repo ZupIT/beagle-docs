@@ -11,7 +11,7 @@ description: >-
 
 Beagle makes all the web request from the **`networkClient`** dependency that is present in BeagleDependencies of the type `NetworkClient`, so it is possible to create your own network layer implementation to be used in the framework.
 
-With that in mind, you can:
+Now you can:
 
 * **Unify** the network layer in one **module**;
 * Modify some properties like request headers, request methods, body response, data response,  run cryptography, etc.

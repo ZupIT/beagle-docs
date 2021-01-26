@@ -10,7 +10,7 @@ description: This section lists information about the Flex Wrap property.
 
 By default, items in a container will try to fit in a single line, but this will only happen when their original width can be adjusted.
 
-The flex-wrap property changes this behavior and “wraps” items. It has the following attributes: **`nowrap, wrap, wrap-reverse.`**
+The flex-wrap property changes this behavior and “wraps” items. It has **`nowrap, wrap, wrap-reverse.`** attributes. 
 
 ### **No Wrap \(**default**\)**
 

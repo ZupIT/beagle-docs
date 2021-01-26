@@ -63,10 +63,10 @@ class AppDesignSystem : DesignSystem() {
 
 
 {{% alert color="info" %}}
-When a class extends the `Open Class DesignSystem`, it is able to manage styles that will be applied to the server driven components. It is necessary to implement a class to register the styles on Beagle, only this way it will be able to see the styles and apply them. 
+When a class extends the `Open Class DesignSystem` it is able to manage styles that will be applied to the server-driven components. It is necessary to implement a class to register the styles on Beagle, only this way it will be able to see the styles and apply them.
 {{% /alert %}}
 
-As an Android pattern, the styles can be defined in the `style` file and referenced inside a class that understands Design System. 
+As an Android pattern, the styles can be defined in the `style` file and referenced inside a class that understands Design System.
 
 ```markup
 <resources>

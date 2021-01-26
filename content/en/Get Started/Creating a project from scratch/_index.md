@@ -8,4 +8,4 @@ description: >-
 
 ---
 
-You can see blow some practical cases to you use Beagle on your project:
+Check below some practical cases you can use Beagle on your project:

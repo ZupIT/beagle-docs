@@ -70,7 +70,7 @@ Other frameworks can be used only in more specific scenarios.
 ## Next Steps
 
 On this section, you made Beagle's **initial installation** on your application!  
-To keep configuring Beagle:
+Now, keep configuring Beagle:
 
 👉To keep knowing Beagle and test if everything worked with the installation, go to **initial configurations** and [**create your first Hello World!**](/get-started/using-beagle/ios#how-to-display-a-hello-beagle-screen)
 

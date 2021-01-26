@@ -53,9 +53,9 @@ It's possible register more than one custom `BeagleNavigationController`. To cho
 Make the`navigationControllerType` configuration with other Beagle's settings, so you don't overwrite them.
 {{% /alert %}}
 
-## Configuring the Loading
+## Configure the Loading
 
-As standard, Beagle's implementation always return an interface with partially transparent black background. You can see this through `UIActivityIndicatorView`.
+As default, Beagle's implementation always return an interface with partially transparent black background. You can see this through `UIActivityIndicatorView`.
 
 If you want to display a specific loading behavior on your application, check the screen state \(`state`\) and react to it properly. See how on the example below:
 
@@ -96,9 +96,9 @@ override func serverDrivenStateDidChange(
 }
 ```
 
-### Checking the Error Treatment
+### Check the Error Treatment
 
-When occurs an error on the application, Beagle changes the screen state \(`state`\) to `ServerDrivenState.Error`. In this case, you must check out what kind of error and make the necessary treatment.
+When an error occurs on the application, Beagle changes the screen state \(`state`\) to `ServerDrivenState.Error`. In this case, you must check out what kind of error and make the necessary treatment.
 
 The **possibles errors** are:
 

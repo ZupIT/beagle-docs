@@ -24,7 +24,7 @@ interface CustomAction {
 }
 ```
 
-**Step 2:** Create the function  `ActionHandler` with the interface:
+**Step 2:** Create th `ActionHandler`  function with the interface:
 
 ```javascript
 import { ActionHandler } from '@zup-it/beagle-web'
@@ -73,7 +73,7 @@ export default createBeagleUIService<any>({
 
 ### Adding actions to JSON
 
-Add the customized action to the JSON and add the defined parameters in the ActionHandler interface
+Add the customized action to the JSON and add the defined parameters in the ActionHandler interface.
 
 See below an example with a button:
 
