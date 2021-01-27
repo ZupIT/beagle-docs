@@ -111,7 +111,7 @@ Remember to always check if you're using the latest version of Beagle. To see th
 ## Next Steps
 
 On this section, you made Beagle's **initial installation** on your application!  
-Now, keep configuring Beagle:
+Now, to keep configuring Beagle:
 
 👉Go to[ **initial configurations**](/get-started/using-beagle/android) to enable the use of Beagle on your Android project.
 
