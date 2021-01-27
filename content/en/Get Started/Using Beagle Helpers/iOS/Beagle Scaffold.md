@@ -46,22 +46,18 @@ pod 'YogaKit', :git => 'https://github.com/ZupIT/YogaKit'
 
 BeagleScaffold has default implementations of a Network layer, Cache and Logger for you, embedded in [BeagleDefaults](https://docs.usebeagle.io/get-started/using-beagle-helpers/ios/beagle-defaults).
 
-**Step 4**: Add to your appDelegate a variable called _window_ that is a _UIWindow?_. Initialize it, make it's rootViewController our _BeagleScaffoldDemoViewController_ and call a function called _makeKeyAndVisible()_. Like the following:
+**Step 4**: To add Beagle configurations to your application, just call our function named _start()_ from the class _BeagleConfig_, in your _appDelegate_:
 
 ```
-var window: UIWindow?
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = BeagleScaffoldDemoViewController
-        window?.makeKeyAndVisible()
+        BeagleConfig.start()
         
         return true
     }
 ```
 
-**Step 5**: Now for the last step to run the application, just call our function named _start()_ from the class _BeagleConfig_, just before initializing the variable _window_. Your code should be like this:
+**Step 5**: Now for the last step to run the application, we're going to do the "view code" section here. Add to your appDelegate a variable called _window_ that is a _UIWindow?_. Initialize it, make it's rootViewController our _BeagleScaffoldDemoViewController_ and call a function called _makeKeyAndVisible()_. Like the following:
 
 ```
 var window: UIWindow?

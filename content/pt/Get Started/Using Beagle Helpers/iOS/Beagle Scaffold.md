@@ -47,21 +47,18 @@ pod 'YogaKit', :git => 'https://github.com/ZupIT/YogaKit'
 
 O Beagle Scaffold possui implementações padrão de uma camada de Rede, Cache e Log para você, acopladas na lib [BeagleDefaults](https://docs.usebeagle.io/get-started/using-beagle-helpers/ios/beagle-defaults).
 
-**Passo 4**: Adicione ao seu _appDelegate_ uma variável chamada _window_ que é uma _UIWindow?_. Inicialize-a, atribua ao _rootViewController_ dela o nosso _BeagleScaffoldDemoViewController_ e chame a função _makeKeyAndVisible()_. Como a seguir:
+**Passo 4**: Para adicionar as configurações do Beagle na sua aplicação, chame a nossa função _start()_ da classe _BeagleConfig_, no seu _appDelegate_:
 
 ```
-var window: UIWindow?
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = BeagleScaffoldDemoViewController
-        window?.makeKeyAndVisible()
+        BeagleConfig.start()
         
         return true
     }
 ```
-**Passo 5**: Agora para o último passo pra rodar a aplicação, apenas chame a nossa função chamada _start()_ da classe _BeagleConfig_, na linha anterior à inicialização da variável _window_. A esta altura seu código deveria estar assim:
+
+**Passo 5**: Agora para o último passo antes de rodar a aplicação, nós vamos implementar a parte "view code". Adicione ao seu _appDelegate_ uma variável chamada _window_ do tipo _UIWindow?_. Inicialize-a, atribua ao _rootViewController_ dela o nosso _BeagleScaffoldDemoViewController_ e chame a função _makeKeyAndVisible()_. Como a seguir:
 
 ```
 var window: UIWindow?
@@ -77,6 +74,8 @@ var window: UIWindow?
         return true
     }
 ```
+
+
 **Passo 6**: Rode seu projeto. Você deveria estar vendo uma tela de exemplo com todos os componentes do Beagle no seu simulador.
 
 <hr>
