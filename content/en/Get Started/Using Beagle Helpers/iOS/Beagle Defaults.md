@@ -7,10 +7,12 @@ description: 'This framework provides default implementations of a Network clien
 ---
 
 ### Requirements
+<hr>
 
 [Cocoapods](https://guides.cocoapods.org/using/getting-started.html) installed.
 
 ### Getting started
+<hr>
 
 **It's recommended for more advanced users of Beagle.**
 

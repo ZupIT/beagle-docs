@@ -9,6 +9,8 @@ description: 'Aqui você vai encontrar a biblioteca **Beagle-Scaffold** pra te a
 **É recomendada para iniciantes.**
 
 ### Requisitos
+<hr>
+
 Antes de começar a configurar o Beagle para o seu sistema iOS, você vai precisar de um Macbook com Xcode e CocoaPods instalados.
 
 ### Primeiros Passos

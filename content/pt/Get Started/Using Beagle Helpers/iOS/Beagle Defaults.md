@@ -7,10 +7,12 @@ description: 'Esse framework provê implementações padrão de uma camada de Re
 ---
 
 ### Requisitos
+<hr>
 
 [Cocoapods](https://guides.cocoapods.org/using/getting-started.html) instalado.
 
 ### Primeiros Passos
+<hr>
 
 **É recomendado a usuários mais experientes de Beagle.**
 

@@ -12,6 +12,8 @@ to configure and add Beagle into an Android project.'
 ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?label=Beagle)
 
 ### Requirements
+<hr>
+
 Before you start to configure Beagle for your Android system, it’s important to check out if you have installed all the current versions of the following programs: ‌
 
 * JDK 8+ language
