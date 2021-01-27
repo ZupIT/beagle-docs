@@ -47,7 +47,7 @@ yarn beagle help
 npx beagle help
 ```
 
-If Beagle's commands were listed like the image below, that means the installation worked correctly.
+If Beagle's commands were listed like the image below it means the installation worked correctly.
 
 ![](/image%20%2814%29.png)
 
