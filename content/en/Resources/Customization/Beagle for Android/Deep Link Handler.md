@@ -2,7 +2,7 @@
 title: Deep Link Handler
 weight: 122
 description: >-
-  You will find here a description about DeepLinkHandler class and methods
+  You will find a description about DeepLinkHandler class and methods
   details.
 ---
 
@@ -17,7 +17,7 @@ description: >-
 
 ### Creating a DeepLinkHandler
 
-To perform this configuration, you must create a class that implements the `DeepLinkHandler` interface and annotates it with **`@BeagleComponent`**, as listed below:
+You have to create a class that implements the `DeepLinkHandler` interface and annotates it with **`@BeagleComponent`**, as listed below:
 
 ```kotlin
 @BeagleComponent
@@ -31,9 +31,7 @@ class AppDeepLinkHandler : DeepLinkHandler {
 }
 ```
 
-In the _getDeepLinkIntent_ method, you can configure the navigation screens of server driven ui
-flows
-to their native screens, making sure that the beagle recognizes your rule.
+In the **getDeepLinkIntent** method, you can configure the navigation screens of the server-driven ui flows to their native screens, making sure that Beagle recognizes your rule.
 
 | **Attribute**          | **Type**             |                                                      **Definition**                                                      |
 | :--------------------- | :------------------- | :----------------------------------------------------------------------------------------------------------------------: |
@@ -44,9 +42,9 @@ to their native screens, making sure that the beagle recognizes your rule.
 
 Once you made it, it's necessary modify the Android manifest file:
 
-1. **Step 1:** You must add an `intent filter`at the activity you wish to navigate to.
-2. **Step 2:** You will add an `action tag` that will identify this activity. The `id name`we used here is `"navigate.myview"`
-3. **Step 3:** Add an `category tag` and name it `"android.intent.category.DEFAULT" ,` like the example below
+1. **Step 1:** You must add an `intent filter` at the activity you wish to navigate to.
+2. **Step 2:** You will add an `action tag` that will identify this activity. The `id name` you used here is `"navigate.myview"`
+3. **Step 3:** Add an `category tag` and name it `"android.intent.category.DEFAULT" ,` like the example below: 
 
 ```markup
 //AndroidManifest

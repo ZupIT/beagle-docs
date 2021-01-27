@@ -14,7 +14,7 @@ It's important to say that:
 *  `starters` of the initial configuration already does all the process described in this page and automatically add the configuration below: 
 
 {{% alert color="danger" %}}
-It's worth to reinforce that the initial configuration customization does not apply to this module. 
+ The initial configuration customization does not apply to this module. 
 {{% /alert %}}
 
 Follow the next steps to configure your BFF manually:
@@ -35,7 +35,7 @@ Follow the next steps to configure your BFF manually:
 
 It is necessary to setup Jackson's `ObjectMapper` for Beagle. There are two ways to do this: 
 
-First, you can register  `BeagleModule` in your`ObjectMapper`. 
+First, you can register  `BeagleModule` in your `ObjectMapper`. 
 
 ```kotlin
 val mapper = // however your ObjectMapper is initialized
@@ -63,7 +63,7 @@ See below a demostration of this class, it was implemented using a `javax.servle
 
 ### Step 4: Implement the `RestCacheHandler`
 
-You have to implement a `RestCacheHandler` interface,  with four transformation that a manipulator needs to run in your response object. It is generic and it must be specified for the kind of response  used in your HTTP structure. Your methods must behave like described below:
+You have to implement a `RestCacheHandler` interface,  with four transformation that a manipulator needs to run in your response object. It is generic and it must be specified for what kind of response is used in your HTTP structure. Your methods must behave like described below:
 
 | Method | Behaviour |
 | :--- | :--- |
@@ -146,7 +146,7 @@ class MyFilter : Filter {
 
 ### Step 6: Configure the platform's specification mechanism 
 
-In order to have the element's filtration by platform working, it is necessary to configurate. It is recommended to register a filter that verifies your BFF's response and filters the sent elements according to the specified platform on your customized `beagle-platform` header.
+In order to have the element's platform filter working, it is necessary to configure a filter. It is recommended to register a filter that verifies your BFF's response and filters the sent elements according to the specified platform on your customized `beagle-platform` header.
 
 The `BeaglePlatformUtil` class was created to provide some tools to make the configuration easier to be used in your filter. See below:
 

@@ -11,7 +11,7 @@ description: "Here, you'll find lists' information about the Justify Content pro
 Justify-content defines the alignment of items along the main axis \(horizontally\) and has the following attributes:**`flex-start, flex-end, center, space-between, space-around and space-Evenly.`**
 
 {{% alert color="danger" %}}
-The size of a container can interfere on this property behaviour. The elements when are positioned, they can be set in a column instead a line, like the example below. If the container does not have enough height to contain all the stacked elements, this property won't be able to show the element in a column,
+The size of a container can interfere on this property behaviour. When the elements are positioned, they can be set in a column instead of a line, like the example below. If the container does not have enough height to contain all the stacked elements, this property won't be able to show the element in a column.
 {{% /alert %}}
 
 ### **Flex Start \(Default\)**

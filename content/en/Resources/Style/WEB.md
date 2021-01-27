@@ -8,12 +8,12 @@ description: "Here, you'll find how to make components' stylization on web's pro
 
 ## Introduction
 
-It's possible to make two main kinds of stylization with Beagle for Web:
+It's possible to make two kinds of stylization with Beagle for Web:
 
 1.  **Adding style classes**
 2.  **JSON components style**
 
-Here, you will see a detailed explanation for each of these stylizations.
+Here, you will see a detailed explanation for each one of them.
 
 ## Adding style classes
 
@@ -21,7 +21,7 @@ Here, you will see a detailed explanation for each of these stylizations.
 
 To make this change, you must add on your JSON file a `styleId` propriety with the name of the style's class that you created on your angular component.
 
-On the example below, you see how this addition was done to a "card" hypothetical class.
+On the example below, check how this addition was made to a hypothetical class named "card".
 
 ```text
 {
@@ -34,7 +34,7 @@ On the example below, you see how this addition was done to a "card" hypothetica
 
 ### Inserting a class on components
 
-The process to insert a class to a component varies according to the framework you're using. Check out the step by step of each case in the following tabs:
+The process to insert a class to a component varies according to the framework you're using. Check out the steps of each case in the following tabs:
 
 {{< tabs id="T84" >}}
 {{% tab name="Angular" %}}
@@ -65,7 +65,7 @@ npm run serve
 yarn serve
 ```
 
-After you add the None enum to a @Component\(\) encapsulation propriety, it's necessary to make it useful. See how to make it on the image below:
+After you add the None enum to a @Component\(\) encapsulation property, it's necessary to make use of it. Check how to make it on the image below:
 
 ![](/image%20%2812%29.png)
 
@@ -111,7 +111,7 @@ npm run serve
 yarn serve
 ```
 
-Anyway you used to connect your style class to a component may brings the same result and your component can be changed according to the defined style in your class.
+It doesn't matter the way you use to connect your style class to a component, all of them may bring the same result and your component can be changed according to the defined style in your class.
 {{% /tab %}}
 
 {{% tab name="React" %}}
@@ -140,7 +140,7 @@ Remember that to define a class with `styleId` class added, it's fundamental tha
 
 ## Stylizing components through JSON
 
-Another Beagle Web's possibility is to stylize its components. You see on the following topics what can be done directly through JSON:
+Another Beagle Web's possibility is to stylize its components. Check out the following topics of what can be done directly through JSON:
 
 ### Position
 
@@ -172,7 +172,7 @@ You can change the element's position on the screen by using the `position` prop
 
 ### Margin e Padding
 
-You can change the element's margin or spacing on the screen by using `margin` e `padding` proprieties, like in the example below:
+You can change the element's margin or spacing on the screen by using `margin` and `padding` properties, like the example below:
 
 ```text
 {
@@ -199,7 +199,7 @@ You can change the element's margin or spacing on the screen by using `margin` e
 
 ### Size
 
-It's also possible to change elements' dimension by using `Size` propriety, which receives the values on `Height` or `Width`. See on the example below:
+It's also possible to change elements' dimension by using `Size` propriety, which receives the values on `Height` or `Width`. See the example below:
 
 ```text
 {
@@ -222,7 +222,7 @@ It's also possible to change elements' dimension by using `Size` propriety, whic
 {{% alert color="info" %}}
 Notice that, in all the examples above, the proprieties receive the values' maps in a &lt;value, type&gt; format.
 
-In Beagle's case, the available values are:
+The available values in Beagle's case are:
 
 - REAL - Value on pixel \('px'\)
 - PERCENT - Value on percentage \(%\)

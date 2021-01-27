@@ -79,7 +79,7 @@ private func registerCustomAction() {
 {{% /tab %}}
 
 {{% tab name="Web" %}}
-1. You must create an interface with `_beagleAction_` as a mandatory propriety and with the necessary parameters to your action. For this example, we'll create a `msg` attribute `string` type.
+1. You must create an interface with `_beagleAction_` as a mandatory propriety and with the necessary parameters to your action. For this example, you will create a `msg` attribute `string` type.
 
 2. On `_beagleAction_`,  put the customized action name following the snippet 'custom:nameOfAction'.
 
@@ -90,7 +90,7 @@ interface CustomAction {
 }
 ```
 
-3. Once you made it, state the function `ActionHandler` type with the interface you just created:
+3. Once you made it, state the function `ActionHandler` type with the interface you have just created:
  
 
 ```javascript
@@ -113,7 +113,7 @@ export const customHandler: ActionHandler<CustomAction> = ({ action }) => {
 @BeagleModule({
   ...
   customActions:{
-    "custom:CustomAction": customHandler //nome do action handler
+    "custom:CustomAction": customHandler //action handler name
   }
 })
 export class Beagle {}
@@ -125,7 +125,7 @@ export class Beagle {}
 export default createBeagleUIService<any>({
     ...
     customActions:{
-        "custom:CustomAction": customHandler //nome do action handler
+        "custom:CustomAction": customHandler //action handler name
       }
 })
 
@@ -133,7 +133,7 @@ export default createBeagleUIService<any>({
 {{% /tab %}}
 {{< /tabs >}}
 
-### Creating an action refer on backend
+### Create an action on backend
 
 To create this action, your code must be like: 
 

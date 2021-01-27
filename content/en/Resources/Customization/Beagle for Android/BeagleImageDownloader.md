@@ -10,13 +10,13 @@ description: >-
 
 ## Introduction
 
-You can register how remote images will be downloaded and populated in ** ImageView ** by providing a class that implements this logic, which was added to Beagle 1.3.0
+You can register how remote images will be downloaded and populated in **ImageView** by providing a class that implements this logic, which was added to Beagle 1.3.0
 
-With ** BeagleImageDownloader ** being created in the frontend of your Android application, Beagle will know which logic to use to download and configure the ** Image ** components with ** ImagePath.Remote **.
+With **BeagleImageDownloader** being created in the frontend of your Android application, Beagle will know which logic to use to download and configure the **Image** components with **ImagePath.Remote**.
 
 ### Step 1: Add the dependencies
 
-Locate the file `build.gradle (Module: app),` open it and scroll down until you find the ** `dependencies {}` ** code block.
+Locate the file `build.gradle (Module: app),` open it and scroll down until you find the **`dependencies {}`** code block.
 
 1. Copy and paste the line below into the dependencies:
 
@@ -26,7 +26,7 @@ Locate the file `build.gradle (Module: app),` open it and scroll down until you 
 
    \_\_
 
-2. Click ** Sync now ** to synchronize Gradle again.
+2. Click **Sync now** to synchronize Gradle again.
 3. This dependency is needed, as the class that implements `BeagleImageDownloader` will import some settings from it.
 
 ### Step 2: Create the class

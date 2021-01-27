@@ -7,9 +7,9 @@ description: >-
 
 ---
 
-It is possible that some screen components are received through server-driven, meaning that on a \(native screen\) we can only receive **one page section** or a **BFF unique server component**.
+It is possible that some screen components are received through server-driven, meaning that on a \(native screen\) you can only receive **one page section** or a **BFF unique server component**.
 
-On the example below, we will show a server-drive button in a native screen, and the result is:
+On the example below, there is a server-driven button in a native screen, and the result is:
 
 <div align="center">
 {{< figure src="/screenshot_1594300176.png" width="30%" >}}
@@ -17,7 +17,7 @@ On the example below, we will show a server-drive button in a native screen, and
 
 ## Requisites
 
-To this configuration works correctly, you have to:
+For this configuration to work correctly, you need:
 
 - A configured [**BFF**](/key-concepts#backend-for-frontend) with Beagle, in case you haven't configured yet, check out this [**tutorial**](/get-started/creating-a-project-from-scratch/case-backend).
 
@@ -27,13 +27,13 @@ To this configuration works correctly, you have to:
 
 ## Step 1: Create a component in the backend
 
-We will create on this step, a button as a server-driven component, so we are able to display it on a native screen.
+You will create a button as a server-driven component, so that you are able to display it on a native screen.  
 
 Follow the steps:
 
 1. Create a Kotlin class in your backend.
 
-2. Name it `SingleComponentBuilder`, that is the class that will build your server-driven \(object\)component.
+2. Name it `SingleComponentBuilder`. This is the class that will build your server-driven \(object\)component.
 
 3. Copy and paste the code below:
 
@@ -86,11 +86,12 @@ class ScreenBeagleService {
 }
 ```
 
-### Updating Controller
 
-If the configuration above works, then you will update the controller and the component and they will be ready to be sent to frontend, in case there is a request.
+### Update Controller
 
-Now, on the controller class, we will call the service that has just been configured and define the URL that it will be the component's endpoint we have created.
+If the configuration above works, then you will have to update the controller and the component. After that, they will be ready to be sent to the front-end, if there is a request.
+
+Now, on the controller class, it will call the service that has just been configured and define the URL that it will be the component's endpoint you have created.
 
 1. Open the `ScreenController` class. This name was given in the tutorial and this class is responsible for expose the components through API REST.
 
@@ -113,7 +114,7 @@ class ScreenController(
 
 ### Test the endpoint
 
-Now that the component it is created and configured, you must test the endpoint and verify the JSON response.
+Now that the component is created and configured, you must test the endpoint and verify the JSON response.
 
 1. Start your application in the backend \(Remember that your backend application it is configured to present the responses in the localhost\).
 
@@ -159,7 +160,7 @@ Button(
 
 ## Step 3: Display a server-driven component
 
-After the previous steps, your component is ready you have to display it on a native screen.
+After the previous steps, your component is ready, now you have to display it on a native screen.
 
 To this configuration, follow the instructions for each platform:
 
@@ -211,7 +212,7 @@ After configuring the `frameLayout`, we have to tell Beagle which component will
 
 ## What is loadView?
 
-The `loadView` method is responsible for loading your beagle content into your view.
+The `loadView` method is responsible for loading your Beagle content into your view.
 
 The structure of **loadView** is:
 
@@ -248,7 +249,7 @@ Click on the button and you will se the function of this component implemented a
 {{% tab name="iOS" %}}
 You have to use a view controller to put this BFF component to display a server-driven component in a native iOS screen.
 
-But first, you need to need to create a view controller on this native screen. To do so, just follow these steps:
+But first, you need to create a view controller on this native screen. To do so, just follow these steps:
 
 1. Make an instance of the server-driven component from the `BeagleScreenViewController` class.
 
@@ -256,7 +257,7 @@ But first, you need to need to create a view controller on this native screen. T
 
 3. Also add a `view` on `beagleScreenViewController` as sub view on the native view controller.
 
-4. Then, we need to add some constraints to `UILabel` and for the view of `beagleScreenViewController` , as in the code below:
+4. Then, you need to add some constraints to `UILabel` and for the view of `beagleScreenViewController`, as in the code below:
 
 ```swift
 class NativeViewController: UIViewController {
@@ -295,7 +296,7 @@ class NativeViewController: UIViewController {
     }
 ```
 
-At the end of the process, you will "call" our native screen that will shown up as in the image below. Remember in this example, it was created in a screen composed on a `UILabel` and in a `BeagleScreenViewController` variable type, where it remains the server-driven component.
+At the end of the process, you will "call" the native screen that will shown up as in the image below. Remember in this example, it was created in a screen composed on a `UILabel` and on a `BeagleScreenViewController` variable type, where it remains the server-driven component.
 
 <div align="center">
 {{< figure src="/server-driven-comp-ios.gif" width="50%" >}}
@@ -358,7 +359,7 @@ Remember to run your Angular project using the comands:
 
 {{% /alert %}}
 
-Your hybrid screen with native and server-drven elements is ready:
+Your hybrid screen with native and server-driven elements is ready:
 
 <div align="center">
 {{< figure src="/image.png" >}}

@@ -8,13 +8,13 @@ description: This section lists information about the Flex Direction property
 
 ## Flex Direction
 
-The flex-direction property is applied to a container and defines the display axis / flow in which the elements will be organized. This property has the following attributes:**`row, row-reverse, column, column-reverse`**.
+The flex-direction property is applied to a container and defines the display axis / flow in which the elements will be organized. This property has the following attributes: **`row, row-reverse, column, column-reverse`**.
 
 {{% alert color="info" %}}
 The examples where the function `createText` was used, returned a text component with an applied style. But this configuration is not required.
 {{% /alert %}}
 
-See below the components' behaviour examples for each attribute:
+Check out below the components' behaviour examples for each attribute:
 
 ### **Row**
 

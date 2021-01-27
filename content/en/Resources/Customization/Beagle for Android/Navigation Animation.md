@@ -33,7 +33,7 @@ For more information on how this process works, [**check out the Android's secti
 
 The other way to customize an animation is the transition through the [**BeagleActivity**](/get-started/creating-a-project-from-scratch/) class implementation, which Beagle uses the _**getFragmentTransitionAnimation\(\)**_ method.
 
-In case this method isn't implemented and customized, the transitions will follow the Beagle's default animation. The code below shows the [**BeagleActivity**](/get-started/creating-a-project-from-scratch/) method, that can be overwritten this way:
+In case this method it isn't implemented and customized, the transitions will follow Beagle's default animation. The code below shows the [**BeagleActivity**](/get-started/creating-a-project-from-scratch/) method, that can be overwritten this way:
 
 ```kotlin
 open fun getFragmentTransitionAnimation() = FragmentTransitionAnimation(

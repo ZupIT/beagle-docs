@@ -12,7 +12,7 @@ When a obfuscation method is used, it is necessary that some rules are implement
 
 ## Example
 
-To make sure it happes, you have to add the following rules to the Proguard file **`android-rules.pro`.**
+To make sure it happens, you have to add the following rules to the Proguard file **`android-rules.pro`.**
 
 ```markup
 proguard-rules.pro

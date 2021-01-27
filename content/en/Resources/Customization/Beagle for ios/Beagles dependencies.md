@@ -39,7 +39,7 @@ class BeagleDependencies: BeagleDependenciesProtocol {
 }
 ```
 
-The Beagle's dependencies must be register in the AppDelegate, see the example below: 
+Beagle's dependencies must be registered in the `AppDelegate` class. Check out the example below:
 
 ```swift
 @UIApplicationMain
@@ -137,7 +137,7 @@ static func blackTextNormalStyle() -> (UITextView?) -> Void {
 }
 ```
 
-**Passo 2**: create a concrete instance of `AppTheme` with the names of yout style and its functions.
+**Step  2**: create a concrete instance of `AppTheme` with the names of your style and its functions.
 
 ```swift
 let theme = AppTheme(styles: [
@@ -145,13 +145,13 @@ let theme = AppTheme(styles: [
 ])
 ```
 
-  **Passo 3**: assign your Theme instance to Beagle's dependencies. 
+  **Step  3**: assign your Theme instance to Beagle's dependencies. 
 
 ```swift
 Beagle.dependencies.theme = theme
 ```
 
-  **Passo 4**:  now, you can use **Text** with your **style** properties and then configure the name your defined for your customized style. 
+  **Step  4**:  now, you can use **Text** with your **style** properties and then configure the name your defined for your customized style. 
 
 ```swift
 Text("Some text", style: "myStyleName")

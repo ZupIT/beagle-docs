@@ -12,7 +12,7 @@ On Beagle, navigation works as a type of [**Action**](/api/actions/), which can 
 Before configuring the navigation between screens of your application, it is required you have [**installed Beagle**](/get-started/installing-beagle/), checked the [**use configuration**](/get-started/using-beagle/) and tested Beagle's framework on the [**displaying a server-driven screen tutorial**](#no-such-page)
 {{% /alert %}}
 
-After these configuration, just add the example code as a return of you service and call the endpoint, defining in your controller, in your frontend.
+After these configurations, just add the example code as a return of your service and call the endpoint, defined in your controller, in your frontend.
 
 ## Navigation's routes
 
@@ -21,7 +21,7 @@ Some navigation actions needs a parameter. It is possible to receive two route t
 1. **Local:** intern navigation that expects a new [**screen**](/api/screen/).
 2. **Remote:** expects that the `url` points into an API that will return one of more Beagle's components.
 
-On the example below, we case a case where the `route` is `remote`:
+On the example below, see a case where the `route` is `remote`:
 
 {{< tabs id="T86" >}}
 {{% tab name="JSON" %}}
@@ -64,7 +64,7 @@ Button(
 
 ## Types of navigation
 
-The following pages, you will see more details about Beagle's navigation types:
+Next you will see more details about Beagle's navigation types:
 
 [**OpenNativeRoute**](/api/actions/navigate/openexternalurl)
 

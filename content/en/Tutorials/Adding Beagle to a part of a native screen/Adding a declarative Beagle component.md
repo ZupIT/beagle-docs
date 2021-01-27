@@ -116,7 +116,7 @@ class NativeViewController: UIViewController {
 
 {{< tabs id="T99" >}}
 {{% tab name="Android" %}}
-To create a Beagle declarative component, you have to use a Container \(which it is a Beagle component that put together the other components\). It can be declared as a variable or a function that returns a container. This example, it was configured as a function return:
+To create a Beagle declarative component, you have to use a Container \(a Beagle component that contains other components\). It can be declared as a variable or a function that returns a container. This example was configured as a function return:
 
 
 ```text
@@ -150,7 +150,7 @@ fun declarativeComponente() =
 {{% /tab %}}
 
 {{% tab name="iOS" %}}
-To create a Beagle declarative component as a `UIView`, it was used the **`BeagleView`**, it can be declared as native components created in the previous step. The example below is a `Container` with a text and two buttons:
+To create a Beagle declarative component as a `UIView`, the **`BeagleView`** was used and it can be declared as native components created in the previous step. The example below is a `Container` with a text and two buttons:
 
 ```swift
 private lazy var beagleView = BeagleView(Container(

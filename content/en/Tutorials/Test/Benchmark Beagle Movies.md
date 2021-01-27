@@ -9,7 +9,7 @@ description: >-
 
 ## Context
 
-Beagle Movies is a movie application developed using Beagle's framework. With it, it is possible to check movie and tv shows reviews and also create customized lists with what you want to watch or what you already have.
+Beagle Movies is a movie application developed using Beagle's framework. It is possible to check movies and TV shows reviews and also create customized lists with what you want to watch or what you have already watched.
 
 ## What were the tests?
 
@@ -29,7 +29,7 @@ Despite that, in some screens the payload is inferior than the server-drive. Thi
 To more complex screens, the server-driven payload will be bigger. It is important to mention that Beagle uses a [cache](/resources/cache/) mechanism and this test is only considered in the first request.
 
 {{% alert color="info" %}}
-The advantage when using Beagle it is because **you only develop the screen once**, while in other native screens you will have to develop for every platform.
+The advantage of using Beagle is that **you only develop the screen once**, while in other native screens you will have to develop one for every platform.
 {{% /alert %}}
 
 ### Response time

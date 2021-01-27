@@ -8,7 +8,7 @@ description: This section lists information about the Basis property
 
 ## Basis
 
-This property defines **the standard size of an item along the main axis**. It could change according to the element caracteristics, which means that:
+This property defines **the standard size of an item along the main axis**. It could change according to the element caracteristics, which means:
 
 - If the father element has a **Flex value** set as: `FlexDirection: row`.The basis will define the screen **width**;
 - If the father element has a **Flex Value** set as: `FlexDirection: column`.The basis defines the screen **height**.

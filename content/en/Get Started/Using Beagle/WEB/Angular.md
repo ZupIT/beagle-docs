@@ -12,7 +12,7 @@ After you finished the installation, you need to make **Beagle's usage configura
 
 ### **Step 1: Configure using an automatic configuration**
 
-Type one of the commands below to generate the files that will be used on Beagle's library. It's possible to execute the command according to your package manager: 
+Type one of the commands below to generate the files that will be used on Beagle's library. It's possible to run the command according to your package manager: 
 
 ```text
 yarn beagle init
@@ -25,16 +25,16 @@ npx beagle init
 Once you made it, Beagle will return some questions. To answer them, follow the orientations below: 
 
 **Question 1: Would you like to use yarn or npm?**   
-In this case, type the option that will be used as manager. In our example, we will use `yarn`, so type `yarn`and press enter. 
+In this case, type the option that will be used as manager. In our example, we will use `yarn`, so type `yarn` and press enter. 
 
-**Question 2: Path to the beagle module \(press enter to use default\)**   
-In this case, type the module path that will be used for Beagle. Considering we're creating this project from zero e and there is no module, you just have to press enter without informing anything. 
+**Question 2: Path to beagle's module \(press enter to use default\)**   
+In this case, type the module path that will be used for Beagle. Considering we're creating this project from zero and there is no module, you just have to press enter without informing anything. 
 
 **Question 3: Path to the module with the components to use with beagle \(press enter to use default\)**  
 In this case, type the module path that will be used for Beagle's components. Considering we don't have any module yet, you just have to press enter without informing anything. 
 
 **Question 4:  What's the base url of the backend providing your beagle JSONs? \(press enter to use default\)**  
-In this case, type the backend's basis URL that will be used to rescue JSON files. For our example, we'll use a JSON, so just type: http://localhost:4200/assets
+In this case, type the backend's basis URL that will be used to rescue JSON files. For the example use a JSON, so just type: http://localhost:4200/assets
 
 At the end of this process, two files will be generate on your project: 
 
@@ -67,7 +67,7 @@ export class AppModule { }
 
 Now, you just have to create a JSON to render the components. Usually, this process would be made by an external server that would return de JSON, but for this example you'll create a local file to be accessed for the test.  
 
-On your angular project, navigate to the `src/assets` file and create a new file named `payload.json`. Open this new file you just created and copy the content below:
+On your angular project, navigate to the `src/assets` file and create a new file named `payload.json`. Open this new created file and copy the content below:
 
 ```text
 {
@@ -94,12 +94,12 @@ On your angular project, navigate to the `src/assets` file and create a new file
 ```
 
 {{% alert color="info" %}}
-The Beagle's library comes with many pre-defined components ready to be used in their project. 
+Beagle's library comes with many pre-defined components ready to be used in their project. 
 
-The code above creates a JSON with two os these components: container e text.
+The code above creates a JSON with two of these components: container and text.
 {{% /alert %}}
 
-After you have created your JSON, open the generated file `beagle.module.ts` in the previous step and add as a baseUrl the path: http://localhost:4200/assets
+After you have created your JSON, open the generated file `beagle.module.ts` in the previous step and add as a baseUrl to the path: http://localhost:4200/assets
 
 ```text
 import { BeagleModule } from '@zup-it/beagle-angular'
@@ -122,9 +122,9 @@ Well done, your configuration is ready! Now,  see how to render mapped component
 
 ### Step 3: Use beagle-remote-view
 
-After creating the JSON, you need to tell Angular where to render the Beagle components. To do this, our lib provides the component `<beagle-remote-view>`.
+After creating the JSON, you need to tell Angular where to render Beagle's components. To do this, our lib provides the component `<beagle-remote-view>`.
 
-Open the file `app.component.html` and replace all the content with this code:
+Open `app.component.html` file and replace all the content with this code:
 
 ```text
 <beagle-remote-view route="/payload.json"></beagle-remote-view>
@@ -140,7 +140,7 @@ The parameter `route` is only valid for versions 1.3 and above. For previous ver
 
 ### Testing the application
 
-Before we test if our configuration worked, you have to run one of the commands below to initialize the application. 
+Before we test if the configuration worked, you have to run one of the commands below to initialize the application. 
 
 {{% alert color="danger" %}}
 When you run the application, you **can't use** **use the `ng serve`** command because it will initialize the application without Beagle. To make the Beagle's initialization, it's necessary to run one of the commands indicated for those who use npm or yarn. 
@@ -159,12 +159,12 @@ yarn serve
 ```
 
 {{% alert color="warning" %}}
-It's important to clarify here that the command used to restart the application is fundamental make work the changes you intend to make in Beagle's configurations files.
+It's important to clarify here that the command used to restart the application is fundamental to make the changes you want to make in Beagle's configuration files work.
 
-This process also must be done for any change made on `@Input()` proprieties of your mapped components. Beagle's team is constantly developing solutions to improve this.
+This process also must be done for any change made on `@Input()` properties of your mapped components. Beagle's team is constantly developing solutions to improve this.
 {{% /alert %}}
 
-After finished this commands, access the local: http://localhost:4200  
+After you have finished using these commands, access the local: http://localhost:4200  
 You will see this screen:
 
 ![](/image%20%2896%29.png)

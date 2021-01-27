@@ -2,8 +2,8 @@
 title: Overview
 weight: 1
 description: >-
-  Here, you'll find all initial information about Beagle before getting deeper
-  on the project.
+  Here, you'll find information about Beagle before getting deeper
+  in the project.
 ---
 
 ---
@@ -13,10 +13,10 @@ description: >-
 Beagle is an **open source framework** of cross-platform development based on the implementation paradigm of **Server-Driven UI.**
 
 {{% alert color="warning" %}}
- The main gain Beagle gives you is to allow teams to make **layout and data changes directly in native mobile or web applications** by changing the code on backend. 
+ Beagle's main benefit is that it allows teams to make **layout and data changes directly in native mobile or web applications** by changing the code on backend. 
 {{% /alert %}}
 
-In this way, it's possible to create, test and quickly update native application's components without need to approve this changes on the store \(App Store or Play Store\). 
+It's possible to create, test and quickly update native application's components without need to approve these changes on the store (App Store or Play Store).
 
 ### Versioning
 

@@ -114,4 +114,4 @@ class CustomViewController: UIViewController {
 }
 ```
 
-Notice that the `onPress` of the button is calls the `AddChildren` method that adds the native layout, which means that every time the button is pressed, it adds a `view` with native layout.
+Notice that the `onPress` of the button calls the `AddChildren` method that adds the native layout, which means that every time the button is pressed, it adds a `view` with native layout.

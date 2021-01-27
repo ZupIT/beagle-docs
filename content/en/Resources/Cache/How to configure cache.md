@@ -46,9 +46,9 @@ To avoid a memory and disk overload, both caches apply a replacement policity Le
 
 ## Configuring and customizing the cache
 
-There are allowed customization by the default class that exists in the cache, like lifetime and maximum quantity of records in memory and disk. 
+There are customization allowed by default class that exists in the cache, like life time and maximum quantity of records in memory and disk. 
 
-In case the default approach does not solve the problem, the application is free to replace the default implementation to another one that fits better. For that, the class responsible for the cache management needs to be in accordance with the `CacheManagerProtocol` protocol.
+In case the default approach does not solve the problem, the applicantion is free to replace the default implementation to another one that fits better. For that, the class responsible for the cache management needs to be in accordance with the `CacheManagerProtocol` protocol.
 
 Every platform has different specifications to configure the cache.
 
@@ -60,7 +60,7 @@ In Android, the cache is configured when you implement the first Beagle's config
 
 This implementation happens inside the class named [**AppBeagleConfig**](/get-started/using-beagle/android#step-2-create-a-beagleconfig-class), meaning that it is inside the Beagle's configuration class. 
 
-The  cache, is a Beagle's internal class where we can define 3 properties, represented by the attributes below:
+The  cache is a Beagle's internal class where you can define 3 properties, represented by the attributes below:
 
 1. `enable`
 2. `maxAge`
@@ -94,7 +94,7 @@ class AppBeagleConfig : BeagleConfig {
 {{% tab name="iOS" %}}
 In iOS, the cache is configured when you first configure Beagle's dependencies. 
 
-We allow you to change the default configuration of cache by creating a instance of a class named `CacheManagerDefault`. Inside this class you can define the value of 3 properties:
+It's allowed to change the default configuration of cache by creating a instance of a class named `CacheManagerDefault`. Inside this class you can define the value of 3 properties:
 
 1. `memoryMaximumCapacity`
 2. `diskMaximumCapacity`
@@ -125,7 +125,7 @@ public protocol CacheManagerProtocol {
 
 | Attribute | Definition |
 | :--- | :--- |
-| **memoryMaximumCapacity** | `whole` value that represents the mamory cache LRU size. It is the number of screens that will be in memory. For example, if you define a number 15, it means 15 pages that will be in cache. |
+| **memoryMaximumCapacity** | `whole` value that represents the memory cache LRU size. It is the number of screens that will be in memory. For example, if you define a number 15, it means 15 pages that will be in cache. |
 | **diskMaximumCapacity** | Whole value that represents the memory cache LRU size. It is the number of screens that will be in the memory. For example, if you define a number 15, it means 15 pages that will be in cache. |
 | **cacheMaxAge** |  `whole` time value in seconds that the memory cache is active. |
 {{% /tab %}}
@@ -209,7 +209,7 @@ In the list below, you will find what are the available properties and which con
 {{% /tab %}}
 
 {{% tab name="Web" %}}
-On web, the cache is configured when it's defined the initials configurations of Beagle Web on the `strategy` parameter, which is one of `BeagleModule` parametes \(if you're using Angular\) or `createBeagleUIService`\ (if you're using React\). 
+On web, the cache is configured when Beagle's Web initial configuration is defined on the `strategy` parameter, which is one of `BeagleModule` parameters \(if you're using Angular\) or `createBeagleUIService`\ (if you're using React\). 
 
 By default, the cache comes enabled with **`beagle-with-fallback-to-cache`** strategy, however the `beagle-cache-only` strategy can also be used to implement [**Beagle's cache protocol**](/resources/customization/beagle-for-web/cache-strategy/).
 
@@ -217,9 +217,9 @@ By default, the cache comes enabled with **`beagle-with-fallback-to-cache`** str
 Remember to set CORS enabled for backend when you want to use cache's strategy for Beagle on Web.
 {{% /alert %}}
 
-Below, you can see examples on how to change`beagle-with-fallback-to-cache`, which is default for`beagle-cache-only.`
+Check below the examples on how to change `beagle-with-fallback-to-cache`, which is default for`beagle-cache-only.`
 
-Example of configuration for **Angula**r:
+Example of configuration for **Angular**:
 
 ```text
 @BeagleModule({

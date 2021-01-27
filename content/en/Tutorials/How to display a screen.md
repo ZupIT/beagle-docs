@@ -7,7 +7,7 @@ description: >-
 
 ---
 
-## Displaying a screen through a URL
+## Display a screen through a URL
 
 Each platform has its own way to display a server-driven screen on frontend by using Beagle. You can see examples below:
 
@@ -22,7 +22,7 @@ You must follow the example below:
 {{% alert color="warning" %}}
 Make sure to list your Beagle Activity as named in your AndroidManifestfile.
 
-In this example, we only call it BeagleActivity, but this name is defined by you when creating your BeagleActivity. In our tutorial [**Creating a project from scratch** ](/get-started/creating-a-project-from-scratch/case-android), we call it `AppBeagleActivity`.
+In this example, you only call it BeagleActivity, but this name is defined by you when creating your BeagleActivity. In the tutorial [**Creating a project from scratch**](/get-started/creating-a-project-from-scratch/case-android), it is called `AppBeagleActivity`.
 {{% /alert %}}
 
 ```kotlin
@@ -49,7 +49,7 @@ startActivity(intent)
 
 ### The Screen Request class.
 
-The `ScreenRequest` is an internal Beagle class used to request which screen you want to display.You will only list the **`URL`** attribute for the page you want to load from the BFF. However, this element has other attributes, which can be used in the transition and between screens.
+The `ScreenRequest` is an internal Beagle class used to request which screen you want to display. You will only list the **`URL`** attribute for the page you want to load from the BFF. However, this element has other attributes, which can be used in the transition and between screens. 
 
 To learn more about this class, check out on [**Screen Request**](/api/screen-request)
 {{% /tab %}}
@@ -90,12 +90,12 @@ Now, it is possible to create screens with dynamic content and you can control i
 
 #### **For projects on Angular**
 
-To define where we should display a server-driven screen on Angular, you should use a component provided by the `<beagle-remote-view>` library.
+To define where you should display a server-driven screen on Angular, you should use a component provided by the `<beagle-remote-view>` library.
 
 {{% alert color="info" %}}
 This component has other attributes that can be configured. However, in this implementation you will only use the **`path attribute`**, described in the example below.
 
-For more details on this component click on the link below and check the [Remote View](/resources/customization/beagle-for-web/remote-view-parameters) details.
+For more details on this component, check the following link [Remote View](/resources/customization/beagle-for-web/remote-view-parameters).
 {{% /alert %}}
 
 On the html file of your component, add the `remote view`.
@@ -122,7 +122,7 @@ On the `path` field, it should be the JSON's path that will be associated with t
 
 #### **For projects on React**
 
-To define a server-driven screen on React, you need to create a service with a minimum configuration, as it shown on the example below:
+To define a server-driven screen on React, you need to create a service with a minimum configuration, see the example below:
 
 ```javascript
 import { createBeagleUIService } from "@zup-it/beagle-react";
@@ -160,7 +160,7 @@ On the `path` field, it should be JSON's path that will be associated with the `
 {{% /tab %}}
 {{< /tabs >}}
 
-## Displaying a screen through a JSON
+## Display a screen through a JSON
 
 {{< tabs id="T95" >}}
 {{% tab name="Android" %}}
