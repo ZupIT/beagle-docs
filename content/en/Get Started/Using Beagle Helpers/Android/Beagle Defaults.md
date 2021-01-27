@@ -1,5 +1,5 @@
 ---
-title: Beagle Default
+title: Beagle Defaults
 weight: 17
 description: 'Here you will find the **Beagle-Defaults** library to help you start a project using Beagle in Android.
 This lib will hold just a few classes necessary 
