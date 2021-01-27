@@ -121,7 +121,7 @@ Os principais atributos são:
       <td style="text-align:left">EdgeValue</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <p>Determina a <a href="../features/posicionamento-de-componentes/margin"><b>margem</b></a> que
+        <p>Determina a <a href="../../resources/components-positioning/margin"><b>margem</b></a> que
           afeta o espa&#xE7;amento ao redor de um elemento, contribuindo para que
           ele se desloque de acordo com os limites internos do elemento pai e de
           seus irm&#xE3;os.</p>
@@ -136,7 +136,7 @@ Os principais atributos são:
       <td style="text-align:left"></td>
       <td style="text-align:left">Define espa&#xE7;os internos no componente, ele se comporta como uma esp&#xE9;cie
         de &quot;margem interna&quot; do elemento. Por exemplo, um container que
-        tenha dois elementos visuais define um valor para <a href="../features/posicionamento-de-componentes/padding"><b>padding</b></a> para
+        tenha dois elementos visuais define um valor para <a href="../../resources/components-positioning/padding"><b>padding</b></a> para
         que os elementos internos n&#xE3;o fiquem &quot;colados&quot; nas margens
         internas.</td>
     </tr>
@@ -148,7 +148,7 @@ Os principais atributos são:
       <td style="text-align:left">Adiciona padding a uma posi&#xE7;&#xE3;o. Para mais detalhes sobre seu
         funcionamento verifique nossa documenta&#xE7;&#xE3;o sobre o atributo
         <a
-        href="../features/posicionamento-de-componentes/position"><b>posi&#xE7;&#xE3;o</b>
+        href="../../resources/components-positioning/position"><b>posi&#xE7;&#xE3;o</b>
           </a><b> </b>em um layout de componentes.</td>
     </tr>
     <tr>
@@ -158,7 +158,7 @@ Os principais atributos são:
       </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Respons&#xE1;vel por posicionar elementos na tela. Para mais detalhes
-        verifique nossa documenta&#xE7;&#xE3;o sobre o<a href="../features/posicionamento-de-componentes/flex"><b> Flex</b></a><b>.</b>
+        verifique nossa documenta&#xE7;&#xE3;o sobre o<a href="../../resources/components-positioning/flex"><b> Flex</b></a><b>.</b>
       </td>
     </tr>
     <tr>
