@@ -81,4 +81,4 @@ Step 6: Run your project, and you should see a sample screen with all Beagle com
 
 <hr>
 
-##### For more on Beagle: please check our [Beagle](https://github.com/ZupIT/beagle) repository
+##### For more on Beagle: please check our [Beagle](https://github.com/ZupIT/beagle) repository.
