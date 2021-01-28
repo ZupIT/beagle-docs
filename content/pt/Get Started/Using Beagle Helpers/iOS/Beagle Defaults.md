@@ -6,6 +6,9 @@ description: 'Esse framework provê implementações padrão de uma camada de Re
 
 ---
 
+![Cocoapods](https://img.shields.io/cocoapods/v/BeagleDefaults?label=Beagle-Defaults)
+![Cocoapods](https://img.shields.io/cocoapods/v/Beagle?label=Beagle)
+
 ### Requisitos
 <hr>
 
