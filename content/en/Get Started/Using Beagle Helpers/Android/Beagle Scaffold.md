@@ -12,6 +12,8 @@ This lib will hold almost all necessary configuration to add Beagle into an Andr
 ![**Maven Central**](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?label=Beagle)
 
 ### Requirements
+<hr>
+
 Before you start to configure Beagle for your Android system, it’s important to check out if you have installed all the current versions of the following programs: ‌
 
 * JDK 8+ language
@@ -94,6 +96,5 @@ A sample screen with all Beagle components will show on your emulator screen
 
 <hr>
 
-##### For more on Beagle: Please check our [Beagle](https://github.com/ZupIT/beagle) repository
-
-##### For more on Beagle-Defaults: Please check our [Beagle-Default](/get-started/using-beagle-helpers/android/beagle-defaults) documentation
+##### For more on Beagle: Please check our [Beagle](https://github.com/ZupIT/beagle) repository.
+##### For more on Beagle-Defaults: Please check our [Beagle-Default](/get-started/using-beagle-helpers/android/beagle-defaults) documentation.

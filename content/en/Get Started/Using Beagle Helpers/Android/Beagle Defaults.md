@@ -1,5 +1,5 @@
 ---
-title: Beagle Default
+title: Beagle Defaults
 weight: 17
 description: 'Here you will find the **Beagle-Defaults** library to help you start a project using Beagle in Android.
 This lib will hold just a few classes necessary 
@@ -12,6 +12,8 @@ to configure and add Beagle into an Android project.'
 ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?label=Beagle)
 
 ### Requirements
+<hr>
+
 Before you start to configure Beagle for your Android system, it’s important to check out if you have installed all the current versions of the following programs: ‌
 
 * JDK 8+ language
@@ -127,5 +129,5 @@ A sample screen with all Beagle components will show on your emulator screen
 
 <hr>
 
-##### For more on Beagle: Please check our [Beagle](https://github.com/ZupIT/beagle) repository
-##### For more on Beagle-Scaffold: Please check our [Beagle-Scaffold](/get-started/using-beagle-helpers/android/beagle-scaffold) documentation 
+##### For more on Beagle: Please check our [Beagle](https://github.com/ZupIT/beagle) repository.
+##### For more on Beagle-Scaffold: Please check our [Beagle-Scaffold](/get-started/using-beagle-helpers/android/beagle-scaffold) documentation.

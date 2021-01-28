@@ -91,5 +91,5 @@ Uma tela de amostra com todos os componentes do Beagle será exibida na tela do 
 
 <hr>
 
-##### Para saber mais sobre o Beagle: Por favor verifique nosso [Beagle](https://github.com/ZupIT/beagle) repositório
-##### Para saber mais sobre o Beagle-Defaults: Por favor verifique sua documentação em [Beagle Defaults](/pt/get-started/using-beagle-helpers/android/beagle-defaults)
+##### Para saber mais sobre o Beagle: Por favor verifique nosso [Beagle](https://github.com/ZupIT/beagle) repositório.
+##### Para saber mais sobre o Beagle-Defaults: Por favor verifique sua documentação em [Beagle Defaults](/pt/get-started/using-beagle-helpers/android/beagle-defaults).
