@@ -1,12 +1,14 @@
 ---
 title: iOS
 weight: 15
-description: 'Here you will find libraries to help when you want to start a project using beagle for iOS.
-These libs will facilitate the initial Beagle configuration in a project, avoiding some
-steps, and starting studies quicker.'
+description: 'Here you will find libraries to help when you want to start a project using beagle for iOS.These libs will facilitate the initial Beagle configuration in a project, avoiding some steps, and starting studies quicker.'
 ---
 
 ---
+
+![Cocoapods](https://img.shields.io/cocoapods/v/BeagleScaffold?label=Beagle-Scaffold)
+![Cocoapods](https://img.shields.io/cocoapods/v/BeagleDefaults?label=Beagle-Defaults)
+![Cocoapods](https://img.shields.io/cocoapods/v/Beagle?label=Beagle)
 
 ### Getting started
 <hr>

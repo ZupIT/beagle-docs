@@ -6,6 +6,9 @@ description: 'Here you will find the **Beagle-Scaffold** library to help you sta
 
 ---
 
+![Cocoapods](https://img.shields.io/cocoapods/v/BeagleScaffold?label=Beagle-Scaffold)
+![Cocoapods](https://img.shields.io/cocoapods/v/Beagle?label=Beagle)
+
 **It's recommended for beginners.**
 
 ### Requirements

@@ -6,6 +6,9 @@ description: 'This framework provides default implementations of a Network clien
 
 ---
 
+![Cocoapods](https://img.shields.io/cocoapods/v/BeagleDefaults?label=Beagle-Defaults)
+![Cocoapods](https://img.shields.io/cocoapods/v/Beagle?label=Beagle)
+
 ### Requirements
 <hr>
 
