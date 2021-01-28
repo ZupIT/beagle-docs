@@ -1,7 +1,7 @@
 ---
 title: Beagle Defaults
 weight: 17
-description: 'This framework provides default implementations of a Network client, Cache control and Logger that can be easily embed and used in your Beagle project.'
+description: 'This framework provides default implementations of a Network client, Cache control and Logger that can be easily embedded and used in your Beagle project.'
 ---
 
 ---
@@ -27,7 +27,7 @@ pod 'BeagleDefaults'
 
 After adding BeagleDefaults as a dependency in your project, you can use all the default implementations in your _Beagle.dependencies_.
 
-All implementations can be changed up to your preferences, this is only a fast Beagle setup for more advanced Beagle users that does not want to implement non of these configurations to use Beagle.
+All implementations can be changed up to your preferences, this is but a quick Beagle setup for more advanced Beagle users that do not want to implement these configurations to use Beagle.
 
 <hr>
 

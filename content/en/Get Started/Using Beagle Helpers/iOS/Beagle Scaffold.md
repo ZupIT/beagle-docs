@@ -28,7 +28,7 @@ This tutorial will configure Beagle from the Start.
 * info.plist > Main storyboard file base name
 * yourProject.xcodeproj > General > Main Interface
 
-Delete these three. The third you just have to erase and confirm.
+Delete these three. The third one you have to erase and confirm.
 
 **Step 3**: Add BeagleScaffold as a dependency of your project using CocoaPods:
 - https://cocoapods.org/pods/BeagleScaffold
