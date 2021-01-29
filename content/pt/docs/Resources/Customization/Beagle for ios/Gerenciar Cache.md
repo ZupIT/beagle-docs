@@ -2,7 +2,7 @@
 title: Gerenciar Cache
 weight: 148
 description: >-
-  Nesta seção, você encontra informações como adicionar camada de cache no beagle. 
+  Nesta seção, você encontra informações sobre como adicionar camada de cache no beagle. 
 
 ---
 
@@ -10,8 +10,7 @@ description: >-
 
 ## Introdução
 
-O `Beagle` não fornece uma camada de cache padrão, logo você tem que configurar a sua 
-própria camada, o beagle fornece um protocolo onde voce consegue configurar e passar sua própria camada.
+O `Beagle` não fornece uma camada de cache padrão, logo é necessário configurar essa camada na sua aplicação. O Beagle fornece um protocolo com o qual você consegue configurar a camada de cache.
 
 ```swift
 public protocol CacheManagerProtocol {
@@ -21,11 +20,11 @@ public protocol CacheManagerProtocol {
 }
 ```
 
-O método **addToCache** é responsavel por pegar referência do cache que é passada por parâmetro.
+O método **addToCache** é responsavel por pegar a referência do cache que é passada como um parâmetro.
 
-O método **getReference** é responsavel por pegar o valor de uma referência de um cache através de um ID. Logo o método renorna a referncia desejada.
+O método **getReference** é responsável por pegar o valor de uma referência de cache através de um ID. Logo, o método retorna a referência desejada.
 
-O método **isValid** é responsavel por validar se o cache já expirou de acordo com seu tempo de criação. Logo o método retorna um boleano se é o cache já expirou.
+O método **isValid** é responsavel por validar se o cache já expirou de acordo com seu tempo de criação. Esse método retorna um `boleano` indicando o status do cache.
 
 Utilizamos o objeto CacheReference para configurar o cache.
 
@@ -47,16 +46,15 @@ public struct CacheReference {
 | maxAge | Int |  | `maxAge`é o parâmetro para configurar quanto tempo vai durar o cache. |
 | timeOfCreation | Date | ✓ | `timeOfCreation` é o parâmetro para passar o tempo de criação. |
 
-Agora com protocolo `CacheManagerProtocol` e objeto `CacheReference` já consegue usar para configurar sua própria camada de cache.
-
+Agora com protocolo `CacheManagerProtocol` e objeto `CacheReference`, pode usar para configurar sua própria camada de cache.
 
 ## Exemplo de camada de cache customizada:
 
-Para criar a camada de cache customizada vamos utilizar o core data, e salvar esses dados em disco, porem pode também ser configurado para salvar em memória.
+Para criar a camada de cache customizada vamos utilizar o core data e salvar esses dados em disco. No entanto, também podemos configura-lo para ser salvo em memória.
 
 ### Passo 1: Criar o arquivo Data Model
 
-Para começar vamos criar o arquivo do tipo `Data Model` que será usado para criar as entidades e relacionamentos.
+Crie um arquivo do tipo `Data Model` que será usado para criar as entidades e relacionamentos.
 
 * 1: Crie uma entidade chamada Entity.
 * 2: Crie os atributos que deseja salvar, no caso serão os atributos da estrutura do `CacheReference`, que são **beaglehash**, **data**, **id** e o **timeOfCreation**.
@@ -98,7 +96,7 @@ public class CacheEntity: NSManagedObject {
 }
 ```
 
-Criamos os métodos `update` que recebe uma referência onde salva a mesma no core data, e o método `mapToReference` para mapear as referências.
+O método `update` recebe uma referência que é salva no core data. E o método `mapToReference` mapeia as referências.
 
 ### Passo 3: Criar uma classe para configurar e salvar os dados no core data.
 
@@ -129,9 +127,9 @@ Os métodos que registramos são:
 
 * **`saveChanges`:**  Salva as alterações.
 
-Abaixo tem a implementação do protocolo e exemplo de cada método.
+Abaixo temos a implementação do protocolo e exemplos de cada método.
 
-Crie a classe DefaultCacheDiskManager essa classe ira conter a configuração para salvar os dados no core data.
+Crie a classe DefaultCacheDiskManager. Essa classe ira conter a configuração para salvar os dados no core data.
 
 Com as configuracoes da classe tembem recebemos na inicializacao o `DependencyLogger` para setar log de error.
 
