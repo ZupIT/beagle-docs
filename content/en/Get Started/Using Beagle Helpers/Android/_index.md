@@ -15,7 +15,7 @@ description: 'Here you will find a library to help when you want to start a proj
 ### Getting started
 
 To start using Beagle right now, you can use the libs below:
-* [Beagle-Scaffold](https://docs.usebeagle.io/get-started/using-beagle-helpers/android/beagle-scaffold/):
+* [Beagle-Scaffold](/get-started/using-beagle-helpers/android/beagle-scaffold/):
 This lib will hold almost all configurations needed to start using Beagle in your project.
 We advise the use of these libs for people that never used Beagle before.
 
