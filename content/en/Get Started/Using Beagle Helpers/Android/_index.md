@@ -19,7 +19,7 @@ To start using Beagle right now, you can use the libs below:
 This lib will hold almost all configurations needed to start using Beagle in your project.
 We advise the use of these libs for people that never used Beagle before.
 
-* [Beagle-Defaults](https://docs.usebeagle.io/get-started/using-beagle-helpers/android/beagle-defaults/):
+* [Beagle-Defaults](/get-started/using-beagle-helpers/android/beagle-defaults/):
 This lib is advised for more experienced Beagle users and 
 will hold only a few class configurations necessary to 
 use Beagle in an application. These configurations include 
