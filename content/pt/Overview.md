@@ -59,7 +59,7 @@ Depois de definido no frontend e no backend como será a estrutura visual da apl
 
 Dessa forma, novas features, fluxos, customizações e combinações de componentes visuais podem ser testados sem a necessidade de publicar atualizações no aplicativo, otimizando testes de tipo A/B.
 
-![](/beaglecomp.png)
+![](/images/beaglecomp.png)
 
 ## Por que usar o Beagle?
 
