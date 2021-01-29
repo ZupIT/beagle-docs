@@ -27,7 +27,7 @@ O método **getReference** é responsavel por pegar o valor de uma referência d
 
 O método **isValid** é responsavel por validar se o cache já expirou de acordo com seu tempo de criação. Logo o método retorna um boleano se é o cache já expirou.
 
-Utilizamos a struct CacheReference para configurar o cache.
+Utilizamos o objeto CacheReference para configurar o cache.
 
 ```swift
 public struct CacheReference {
@@ -41,20 +41,18 @@ public struct CacheReference {
 
 | **Atributo** | **Tipo** | **Obrigatório** | **Definição** |
 | :--- | :--- | :---: | :---: |
-| identifier | String  | ✓ | `identifier` é o parâmetro para receber o identificador da referencia do cache. |
-| data | Data| ✓ | `data` é o parâmetro para setar do data.  |
-| hash | String | ✓ | `hash` é o parâmetro para  |
+| identifier | String  | ✓ | `identifier` é o parâmetro identificador da referência do cache. |
+| data | Data| ✓ | `data` é o parâmetro para passar os dados.  |
+| hash | String | ✓ | `hash` é o parâmetro para passar a chave da referência |
 | maxAge | Int |  | `maxAge`é o parâmetro para configurar quanto tempo vai durar o cache. |
 | timeOfCreation | Date | ✓ | `timeOfCreation` é o parâmetro para passar o tempo de criação. |
 
-Agora com esse protocolo já pode usar para configurar sua própria camada de cache.
+Agora com protocolo `CacheManagerProtocol` e objeto `CacheReference` já consegue usar para configurar sua própria camada de cache.
 
 
 ## Exemplo de camada de cache customizada:
 
-Para criar a camada de cache customizada vamos utilizar o core data, para guardar esses dados e salvar em disco. 
-
-Nesse exemplo vamos configurar o cache para salvar em disco, pode também ser configurado para salvar em memória.
+Para criar a camada de cache customizada vamos utilizar o core data, e salvar esses dados em disco, porem pode também ser configurado para salvar em memória.
 
 ### Passo 1: Criar o arquivo Data Model
 
