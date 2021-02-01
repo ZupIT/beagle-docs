@@ -15,7 +15,7 @@ O `Beagle` não fornece uma camada de cache padrão, logo é necessário configu
 ```swift
 public protocol CacheManagerProtocol {
     func addToCache(_ reference: CacheReference)
-    func getReference(identifiedBy id: String->CacheReference?
+    func getReference(identifiedBy id: String) -> CacheReference?
     func isValid(reference: CacheReference) -> Bool
 }
 ```
@@ -131,7 +131,7 @@ Abaixo temos a implementação do protocolo e exemplos de cada método.
 
 Crie a classe DefaultCacheDiskManager. Essa classe ira conter a configuração para salvar os dados no core data.
 
-Com as configuracoes da classe tembem recebemos na inicializacao o `DependencyLogger` para setar log de error.
+Com as configurações da classe também recebemos na inicialização o `DependencyLogger` para setar log de error.
 
 ```swift
 public class DefaultCacheDiskManager: CacheDiskManagerProtocol {
@@ -320,7 +320,7 @@ class CustomCache: CacheManagerProtocol {
 }
 ```
 
-Agora vamos configurar a parte de acessar do dados guardados. Utilizando o `DefaultCacheDiskManager` que criamos para fazer a configuração de cache como salvar os dados, excluir, recuperar.
+Agora vamos configurar a parte de acessar do dados guardados. Utilizando o `DefaultCacheDiskManager` que criamos para fazer a configuração de cache como salvar os dados, excluir e recuperar.
 
 ```swift
 lazy var diskManager: CacheDiskManagerProtocol =
@@ -329,7 +329,7 @@ lazy var diskManager: CacheDiskManagerProtocol =
     private let defaultMaxCacheAge = "maxValidAge"
 ```
 
-Agora vamos criar um método para atualizar  referência, e dependendo da quantidade já salva ele retira a referência mais antiga usada.
+Agora vamos criar um método para atualizar a referência, e dependendo da quantidade já salva, retira a referência mais antiga usada.
 
 ```swift 
 private func saveInDisk(reference: CacheReference) {
@@ -342,7 +342,7 @@ private func saveInDisk(reference: CacheReference) {
         diskManager.saveChanges()
     }
 ```
-Agora adotamos os métodos do protocolo `CacheManagerProtocol` e configuramos os métodos **`addToCache`** adicionar uma nova referência, **`getReference`** pegar uma referência já criada e o **`isValid`**  validar se a referência é valida.
+Agora adotamos os métodos do protocolo `CacheManagerProtocol` e configuramos os métodos, **`addToCache`** que adiciona uma nova referência, **`getReference`** que pegar uma referência já criada e o **`isValid`** que valida se a referência é valida.
 
 ```swift 
 public func addToCache(_ reference: CacheReference) {
@@ -436,7 +436,7 @@ class CustomCache: CacheManagerProtocol {
 }
 ```
 
-Agora tudo pronto sua camada de cache.
+Agora tudo pronto, sua camada de cache foi configurada.
 
 ### Passo 5: Registrar a camada de cache no Beagle.
 
