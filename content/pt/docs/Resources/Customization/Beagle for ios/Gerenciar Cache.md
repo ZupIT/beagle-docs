@@ -46,7 +46,7 @@ public struct CacheReference {
 | maxAge | Int |  | `maxAge`é o parâmetro para configurar quanto tempo vai durar o cache. |
 | timeOfCreation | Date | ✓ | `timeOfCreation` é o parâmetro para passar o tempo de criação. |
 
-Agora com protocolo `CacheManagerProtocol` e objeto `CacheReference`, pode usar para configurar sua própria camada de cache.
+Agora com protocolo `CacheManagerProtocol` e objeto `CacheReference`, já pode usar para configurar sua própria camada de cache.
 
 ## Exemplo de camada de cache customizada:
 
