@@ -14,9 +14,9 @@ Muitas vezes, o markdown não é suficiente para expressar um bom conteúdo, com
 
 ## Shortcodes disponíveis
 
-## **Referências**
+## **Referências a links**
 
-A melhor maneira para fazer referências a links externos ou internos a documentação é utilizando uma shortcode chamada "ref", com ela, podemos passar um caminho absoluto até uma determinada página.
+A melhor maneira para fazer referências a links internos a documentação é utilizando uma shortcode chamada "ref", com ela, podemos passar um caminho absoluto até uma determinada página.
 
 - Exemplo de sintaxe:
 
