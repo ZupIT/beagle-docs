@@ -14,6 +14,20 @@ Often the markdown is not enough to express good content, for example, adding a 
 
 ## Available shortcodes
 
+## **References**
+
+The best way to make references to external or internal links in the documentation is to use a shortcode called "ref", with which we can pass an absolute path to a given page.
+
+- Syntax example
+
+```go-text-template
+[Link Example]({{</* ref path="/Get Started/Installing Beagle/Backend.md" lang="en" */>}})
+```
+
+- It will be rendered as:
+
+[Link Example]({{< ref path="/Get Started/Installing Beagle/Backend.md" lang="en">}})
+
 ### **Alerts**
 
 Alerts are used to highlight important information when following a configuration step, tutorial, or to highlight requirements necessary for some functionality.
