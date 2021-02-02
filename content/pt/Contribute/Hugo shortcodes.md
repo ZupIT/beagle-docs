@@ -14,7 +14,7 @@ Muitas vezes, o markdown não é suficiente para expressar um bom conteúdo, com
 
 ## Shortcodes disponíveis
 
-## **Referências a links**
+## **Referências a links internos**
 
 A melhor maneira para fazer referências a links **_internos_** a documentação é utilizando uma shortcode chamada "ref", com ela, podemos passar um caminho absoluto até uma determinada página.
 
