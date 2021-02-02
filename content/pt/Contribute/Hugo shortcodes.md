@@ -14,6 +14,20 @@ Muitas vezes, o markdown não é suficiente para expressar um bom conteúdo, com
 
 ## Shortcodes disponíveis
 
+## **Referências a links internos**
+
+A melhor maneira para fazer referências a links **_internos_** a documentação é utilizando uma shortcode chamada "ref", com ela, podemos passar um caminho absoluto até uma determinada página.
+
+- Exemplo de sintaxe:
+
+```go-text-template
+[Link Example]({{</* ref path="/Get Started/Installing Beagle/Backend.md" lang="pt" */>}})
+```
+
+- Será renderizado como:
+
+[Link Example]({{< ref path="/Get Started/Installing Beagle/Backend.md" lang="pt">}})
+
 ### **Alertas**
 
 Os alertas são usados para destacar alguma informação importante ao seguir alguma etapa de configuração, tutorial, ou destacar requisitos necessários para alguma funcionalidade.
