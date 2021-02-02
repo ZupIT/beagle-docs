@@ -16,7 +16,7 @@ Often the markdown is not enough to express good content, for example, adding a 
 
 ## **Link References**
 
-The best way to make references to internal links in the documentation is to use a shortcode called "ref", with which we can pass an absolute path to a given page.
+The best way to make references to **_internal_** links in the documentation is to use a shortcode called "ref", with which we can pass an absolute path to a given page.
 
 - Syntax example
 
