@@ -329,7 +329,7 @@ lazy var diskManager: CacheDiskManagerProtocol =
     private let defaultMaxCacheAge = "maxValidAge"
 ```
 
-Agora, vamos criar um método para atualizar a referência e, dependendo da quantidade já salva, retirar a referência mais antiga usada.
+Crie um método para atualizar a referência e, dependendo da quantidade salva, retire a referência mais antiga usada.
 
 ```swift 
 private func saveInDisk(reference: CacheReference) {
