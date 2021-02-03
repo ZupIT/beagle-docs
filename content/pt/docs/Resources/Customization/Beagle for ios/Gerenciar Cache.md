@@ -256,7 +256,7 @@ public class DefaultCacheDiskManager: CacheDiskManagerProtocol {
 }
 ```
 
-Nessa classe temos dois métodos privados que são o **addNew** e o **getEntity**.
+Nessa classe existem dois métodos privados que são o **addNew** e o **getEntity**.
 
 * **`addNew`**: Adiciona novas referências.
 
