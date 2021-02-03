@@ -45,29 +45,19 @@ import javax.inject.Singleton
 
 @Singleton
 class MyService {
-    fun createAction(): Action = Alert(
-        title = "My Dialog",
-        message = "This is a native popup!",
-        labelOk= "Close"
-    )
 
-    fun createScreen(): Screen =
-        Screen(child = this.createWidget())
+    fun getMyScreen() : ScreenBuilder = MyScreen()
 
-    fun createScreenBuilder(): ScreenBuilder =
-        MyScreenBuilder(this.createWidget())
-
-    fun createWidget(): Widget = Text(
-        text = "Hello, world!",
-        alignment = TextAlignment.CENTER,
-        textColor = "#505050"
-    )
 }
 
-private class MyScreenBuilder(
-    private val component: ServerDrivenComponent
-) : ScreenBuilder {
-    override fun build() = Screen(child = this.component)
+class MyScreen : ScreenBuilder {
+    override fun build() = Screen(
+        child = Text(
+            text = "Hello World!",
+            alignment = TextAlignment.CENTER,
+            textColor = "#505050"
+        ) 
+    )
 }
 ```
 
@@ -84,29 +74,19 @@ import org.springframework.stereotype.Service
 
 @Service
 class MyService {
-    fun createAction(): Action = Alert(
-        title = "My Dialog",
-        message = "This is a native popup!",
-        labelOk= "Close"
-    )
 
-    fun createScreen(): Screen =
-        Screen(child = this.createWidget())
+    fun getMyScreen() : ScreenBuilder = MyScreen()
 
-    fun createScreenBuilder(): ScreenBuilder =
-        MyScreenBuilder(this.createWidget())
-
-    fun createWidget(): Widget = Text(
-        text = "Hello, world!",
-        alignment = TextAlignment.CENTER,
-        textColor = "#505050"
-    )
 }
 
-private class MyScreenBuilder(
-    private val component: ServerDrivenComponent
-) : ScreenBuilder {
-    override fun build() = Screen(child = this.component)
+class MyScreen : ScreenBuilder {
+    override fun build() = Screen(
+        child = Text(
+            text = "Hello World!",
+            alignment = TextAlignment.CENTER,
+            textColor = "#505050"
+        ) 
+    )
 }
 ```
 
@@ -131,17 +111,9 @@ import io.micronaut.http.annotation.Get
 
 @Controller
 class MyController(private val myService: MyService) {
-    @Get("/action")
-    fun getAction() = myService.createAction()
 
     @Get("/screen")
-    fun getScreen() = myService.createScreen()
-
-    @Get("/builder")
-    fun getScreenBuilder() = myService.createScreenBuilder()
-
-    @Get("/widget")
-    fun getWidget() = myService.createWidget()
+    fun getScreen() : ScreenBuilder = myService.getMyScreen()
 }
 ```
 
@@ -152,7 +124,7 @@ Once you made it, the next step is create a `Controller` class to expose our com
 
 This class also must receive `MyService` through a primary constructor so Spring can automatically makes a dependency injection for you.
 
-The endpoints are configured with notes according to HTTP method \(for example `@Get` to HTTP GET\). They receive a string that defines your `path`.
+The endpoints are configured with notes according to HTTP method \(for example `@GetMapping` to HTTP GET\). They receive a string that defines your `path`.
 
 To configure this class, follow the example below. Remember to name the file as`MyController` so you can simply copy and paste this example.
 
@@ -163,17 +135,8 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 class MyController(private val myService: MyService) {
 
-    @GetMapping("/action")
-    fun getAction() = myService.createAction()
-
     @GetMapping("/screen")
-    fun getScreen() = myService.createScreen()
-
-    @GetMapping("/builder")
-    fun getScreenBuilder() = myService.createScreenBuilder()
-
-    @GetMapping("/widget")
-    fun getWidget() = myService.createWidget()
+    fun getScreen() : ScreenBuilder = myService.getMyScreen()
 }
 ```
 
@@ -186,11 +149,8 @@ You can configure cache and serialization using the lines below, by adding them 
 
 {{< tabs id="T4" >}}
 {{% tab name="Micronaut" %}}
-The cache is configured to include `/screen` and `/widget` endpoints. The TTL for the `/screen` endpoint is configured to 50 seconds.
 
 ```text
-beagle.cache.endpoint.include=/screen,/widget
-beagle.cache.endpoint.ttl./screen=50s
 jackson.serializationInclusion=NON_NULL
 jackson.serialization.indentOutput=true
 ```
@@ -198,10 +158,8 @@ jackson.serialization.indentOutput=true
 {{% /tab %}}
 
 {{% tab name="SpringBoot" %}}
-Cache is configured to exclude the `/action` endpoint
 
 ```text
-beagle.cache.endpoint.exclude=/action
 spring.jackson.default-property-inclusion=NON_NULL
 spring.jackson.serialization.indent-output=true
 
@@ -308,20 +266,23 @@ $ mvn compile exec:exec
 
 {{% tab name="SpringBoot" %}}
 
-```
+```bash
 $ mvn spring-boot:run
 ```
 
 {{% /tab %}}
 {{< /tabs >}}
 
-Now that the BFF is running, to see the resulting JSON, insert the URL http://localhost:8080/action directly in your navigator. You should get the result below:
+Now that the BFF is running, to see the resulting JSON, insert the URL http://localhost:8080/screen directly in your navigator. You should get the result below:
 
-```text
+```json
 {
-  "_beagleAction_" : "beagle:alert",
-  "title" : "My Dialog",
-  "message" : "This is a native popup!",
-  "labelOk" : "Close"
+    "_beagleComponent_": "beagle:screenComponent",
+    "child": {
+        "_beagleComponent_": "beagle:text",
+        "text": "Hello, world!",
+        "textColor": "#505050",
+        "alignment": "CENTER"
+    }
 }
 ```
