@@ -320,7 +320,7 @@ class CustomCache: CacheManagerProtocol {
 }
 ```
 
-Agora, vamos configurar a parte de acesso dos dados guardados utilizando o `DefaultCacheDiskManager` que criamos para fazer a configuração de cache como salvar, excluir e recuperar os dados.
+Configure a parte de acesso dos dados guardados utilizando o `DefaultCacheDiskManager` que foi criado para fazer a configuração de cache como salvar, excluir e recuperar os dados.
 
 ```swift
 lazy var diskManager: CacheDiskManagerProtocol =
