@@ -262,7 +262,7 @@ Nessa classe temos dois métodos privados que são o **addNew** e o **getEntity*
 
 * **`getEntity`**: Pega a entidade com todas as referências.
 
-Agora que toda configuração de cache foi concluída, vamos criar a classe para adotar o protocolo **`CacheManagerProtocol`** que o `Beagle` fornece.
+Agora que toda configuração de cache foi concluída, crie uma classe para adotar o protocolo **`CacheManagerProtocol`** que o `Beagle` fornece.
 
 ### Passo 4: Criar uma classe para adotar o protocolo do Beagle.
 
