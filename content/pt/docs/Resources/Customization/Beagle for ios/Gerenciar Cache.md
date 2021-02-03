@@ -436,7 +436,7 @@ class CustomCache: CacheManagerProtocol {
 }
 ```
 
-Agora está tudo pronto e sua camada de cache foi configurada.
+Pronto! Sua camada de cache foi configurada.
 
 ### Passo 5: Registrar a camada de cache no Beagle.
 
