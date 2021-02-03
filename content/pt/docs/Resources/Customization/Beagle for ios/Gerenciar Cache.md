@@ -100,7 +100,7 @@ O método `update` recebe uma referência que é salva no core data. O método `
 
 ### Passo 3: Criar uma classe para configurar e salvar os dados no core data.
 
-Agora vamos criar um protocolo com todos os métodos que precisamos para configurar o cache.
+Agora, vamos criar um protocolo com todos os métodos que precisamos para configurar o cache.
 
 ```swift
 public protocol CacheDiskManagerProtocol {
