@@ -10,7 +10,7 @@ description: >-
 
 ## Introdução
 
-O `Beagle` não fornece uma camada de cache padrão, logo é necessário configurar essa camada na sua aplicação. O Beagle fornece um protocolo com o qual você consegue configurar a camada de cache.
+O `Beagle` não fornece uma camada de cache padrão, logo é necessário configurar essa camada na sua aplicação. Fornecemos um protocolo ao qual você consegue configurar a camada de cache.
 
 ```swift
 public protocol CacheManagerProtocol {
