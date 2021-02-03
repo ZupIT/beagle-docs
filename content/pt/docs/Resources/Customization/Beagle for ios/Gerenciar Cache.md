@@ -342,7 +342,7 @@ private func saveInDisk(reference: CacheReference) {
         diskManager.saveChanges()
     }
 ```
-Agora, adotamos os métodos do protocolo `CacheManagerProtocol` e configuramos os métodos: **`addToCache`** que adiciona uma nova referência, **`getReference`** que pega uma referência já criada e **`isValid`** que valida a referência.
+Adote os métodos do protocolo `CacheManagerProtocol` e configure os métodos: **`addToCache`** que adiciona uma nova referência, **`getReference`** que pega uma referência já criada e **`isValid`** que valida a referência.
 
 ```swift 
 public func addToCache(_ reference: CacheReference) {
