@@ -50,7 +50,7 @@ Agora com protocolo `CacheManagerProtocol` e objeto `CacheReference`, já pode u
 
 ## Exemplo de camada de cache customizada:
 
-Para criar a camada de cache customizada vamos utilizar o core data e salvar esses dados em disco. No entanto, também podemos configurá-lo para ser salvo em memória.
+Para criar a camada de cache customizada utilize o core data e salve esses dados em disco. No entanto, também podemos configurá-lo para ser salvo em memória.
 
 ### Passo 1: Criar o arquivo Data Model
 
