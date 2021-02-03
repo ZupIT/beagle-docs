@@ -131,7 +131,7 @@ Abaixo temos a implementação do protocolo e exemplos de cada método.
 
 Crie a classe DefaultCacheDiskManager. Essa classe irá conter a configuração para salvar os dados no core data.
 
-Com as configurações da classe também recebemos na inicialização o `DependencyLogger` para setar log de error.
+Com as configurações da classe também recebemos na inicialização o `DependencyLogger` para setar log de erro.
 
 ```swift
 public class DefaultCacheDiskManager: CacheDiskManagerProtocol {
