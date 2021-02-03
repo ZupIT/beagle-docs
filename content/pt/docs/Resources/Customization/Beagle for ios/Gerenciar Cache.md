@@ -440,7 +440,7 @@ Agora está tudo pronto e sua camada de cache foi configurada.
 
 ### Passo 5: Registrar a camada de cache no Beagle.
 
-Para registar sua camada de cache bastar ir no aquivo do BeagleConfig onde se configura os dependencies.
+Para registar sua camada de cache bastar ir no aquivo do BeagleConfig onde se configura as dependências.
 
 ```swift
 dependencies.cacheManager = CustomCache(dependencies: innerDependencies)
