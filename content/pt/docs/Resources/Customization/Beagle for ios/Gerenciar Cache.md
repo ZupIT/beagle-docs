@@ -26,7 +26,7 @@ O método **getReference** é responsável por pegar o valor de uma referência 
 
 O método **isValid** é responsavel por validar se o cache já expirou de acordo com seu tempo de criação. Esse método retorna um `boleano` indicando o status do cache.
 
-Utilizamos o objeto CacheReference para configurar o cache.
+Utilize o objeto CacheReference para configurar o cache.
 
 ```swift
 public struct CacheReference {
