@@ -268,7 +268,7 @@ Agora que toda configuração de cache foi concluída, vamos criar a classe para
 
 Crie uma classe `CustomCache` do tipo **`CacheManagerProtocol`**.
 
-A classe terá uma struct Config que possui os parâmetros `diskMaximumCapacity`, que define a capacidade máxima do disco e o `cacheMaxAge`, que é a idade maxima do cache. 
+A classe terá uma struct Config que possui os parâmetros `diskMaximumCapacity`, que define a capacidade máxima do disco, e o `cacheMaxAge`, que define a idade maxima do cache. 
 
 ```swift 
 public struct Config {
