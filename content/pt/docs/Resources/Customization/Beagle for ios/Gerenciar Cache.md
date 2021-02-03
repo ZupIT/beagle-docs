@@ -285,7 +285,7 @@ public struct Config {
         }
     }
 ```
-Vamos inicializar a classe com o `dependencies` e o `config`.
+Inicialize a classe com o `dependencies` e o `config`.
 
 ```swift 
 class CustomCache: CacheManagerProtocol {
