@@ -96,7 +96,7 @@ public class CacheEntity: NSManagedObject {
 }
 ```
 
-O método `update` recebe uma referência que é salva no core data. E o método `mapToReference` mapeia as referências.
+O método `update` recebe uma referência que é salva no core data. O método `mapToReference` mapeia as referências.
 
 ### Passo 3: Criar uma classe para configurar e salvar os dados no core data.
 
