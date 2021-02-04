@@ -32,7 +32,7 @@ jobs:
       - name: S3 Sync (shared)
         uses: ItsKarma/aws-cli@v1.70.0
         with:
-          args: s3 sync --delete --acl public-read --follow-symlinks static/ $AWS_S3_BUCKET/shared     
+          args: s3 sync --delete --acl public-read --follow-symlinks static/ s3://$AWS_S3_BUCKET/shared     
 
       # - name: Remove static folder
       #   run: rm -rf static
@@ -43,7 +43,7 @@ jobs:
       - name: S3 Sync (latest)
         uses: ItsKarma/aws-cli@v1.70.0
         with:
-          args: s3 sync --delete --acl public-read --follow-symlinks public/ S3://$AWS_S3_BUCKET/latest
+          args: s3 sync --delete --acl public-read --follow-symlinks public/ s3://$AWS_S3_BUCKET/latest
               
       - name: Create S3 Bucket
         uses: ItsKarma/aws-cli@v1.70.0
@@ -53,6 +53,6 @@ jobs:
       - name: S3 Sync (version)
         uses: ItsKarma/aws-cli@v1.70.0
         with:
-          args: s3 sync --delete --acl public-read --follow-symlinks public/ S3://$AWS_S3_BUCKET/v1-6
+          args: s3 sync --delete --acl public-read --follow-symlinks public/ s3://$AWS_S3_BUCKET/v1-6
 
       
