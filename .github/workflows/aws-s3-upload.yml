@@ -41,7 +41,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: 'sa-east-1'
         with:
-          args: s3 mb s3://${{ steps.version.outputs.release_tag }}
+          args: s3 mb s3://v1-6
               
       - name: S3 Sync (latest)
         uses: ItsKarma/aws-cli@v1.70.0
