@@ -51,7 +51,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: 'sa-east-1'
         with:
-          args: s3 sync --delete --acl public-read --follow-symlinks public/ s3://$AWS_S3_BUCKET/latest
+          args: s3 sync --delete --acl public-read --follow-symlinks public/ $AWS_S3_BUCKET/latest
 
       - name: S3 Sync (version)
         uses: ItsKarma/aws-cli@v1.70.0
