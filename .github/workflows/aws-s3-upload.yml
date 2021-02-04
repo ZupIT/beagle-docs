@@ -5,12 +5,6 @@ on:
     types:
       - created
 
-env:
-    AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-    AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-    AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-    AWS_REGION: 'sa-east-1'
-
 jobs:
   deploy:
     runs-on: ubuntu-18.04
@@ -35,23 +29,47 @@ jobs:
       - name: Build
         run: npm run build
 
+      - id: version
+        run: echo "::set-output name=release_tag::$(echo $GITHUB_REF | sed 's/refs\/tags\///g' )"
+        shell: bash
+
       - name: Create S3 Bucket
         uses: ItsKarma/aws-cli@v1.70.0
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: 'sa-east-1'
         with:
-          args: s3 mb s3://v1-6
+          args: s3 mb s3://${{ steps.version.outputs.release_tag }}
               
       - name: S3 Sync (latest)
         uses: ItsKarma/aws-cli@v1.70.0
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: 'sa-east-1'
         with:
           args: s3 sync --delete --acl public-read --follow-symlinks public/ s3://$AWS_S3_BUCKET/latest
 
       - name: S3 Sync (version)
         uses: ItsKarma/aws-cli@v1.70.0
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: 'sa-east-1'
         with:
           args: s3 sync --delete --acl public-read --follow-symlinks public/ s3://$AWS_S3_BUCKET/v1-6
 
       - name: S3 Sync (shared)
         uses: ItsKarma/aws-cli@v1.70.0
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: 'sa-east-1'
         with:
           args: s3 sync --delete --acl public-read --follow-symlinks static/ s3://$AWS_S3_BUCKET/shared   
 
