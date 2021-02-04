@@ -26,9 +26,6 @@ jobs:
           hugo-version: '0.78.1'
           extended: true
 
-      - name: Installing Dependencies
-        run: npm install
-
       - name: S3 Sync (shared)
         uses: ItsKarma/aws-cli@v1.70.0
         with:
@@ -37,18 +34,21 @@ jobs:
       # - name: Remove static folder
       #   run: rm -rf static
 
+      - name: Installing Dependencies
+        run: npm install
+
       - name: Build
         run: npm run build
+
+      - name: Create S3 Bucket
+        uses: ItsKarma/aws-cli@v1.70.0
+        with:
+          args: s3 mb s3://v1-6
               
       - name: S3 Sync (latest)
         uses: ItsKarma/aws-cli@v1.70.0
         with:
           args: s3 sync --delete --acl public-read --follow-symlinks public/ s3://$AWS_S3_BUCKET/latest
-              
-      - name: Create S3 Bucket
-        uses: ItsKarma/aws-cli@v1.70.0
-        with:
-          args: s3 mb s3://v1-6
 
       - name: S3 Sync (version)
         uses: ItsKarma/aws-cli@v1.70.0
