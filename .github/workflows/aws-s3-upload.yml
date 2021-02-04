@@ -24,12 +24,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.78.1'
-          extended: true
-
-      - name: S3 Sync (shared)
-        uses: ItsKarma/aws-cli@v1.70.0
-        with:
-          args: s3 sync --delete --acl public-read --follow-symlinks static/ s3://$AWS_S3_BUCKET/shared     
+          extended: true  
 
       # - name: Remove static folder
       #   run: rm -rf static
@@ -54,5 +49,10 @@ jobs:
         uses: ItsKarma/aws-cli@v1.70.0
         with:
           args: s3 sync --delete --acl public-read --follow-symlinks public/ s3://$AWS_S3_BUCKET/v1-6
+
+      - name: S3 Sync (shared)
+        uses: ItsKarma/aws-cli@v1.70.0
+        with:
+          args: s3 sync --delete --acl public-read --follow-symlinks static/ s3://$AWS_S3_BUCKET/shared   
 
       
