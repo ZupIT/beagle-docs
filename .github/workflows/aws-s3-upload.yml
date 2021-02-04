@@ -32,7 +32,7 @@ jobs:
       - name: S3 Sync (shared)
         uses: ItsKarma/aws-cli@v1.70.0
         with:
-          args: s3 sync --delete --acl public-read --follow-symlinks static/ s3://$AWS_S3_BUCKET/shared     
+          args: s3 sync --delete --acl public-read --follow-symlinks static/ $AWS_S3_BUCKET/shared     
 
       # - name: Remove static folder
       #   run: rm -rf static
