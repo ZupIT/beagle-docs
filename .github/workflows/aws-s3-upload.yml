@@ -29,7 +29,7 @@ jobs:
       - name: S3 upload (static)
         uses: ItsKarma/aws-cli@v1.70.0
         with:
-          args: s3 cp --acl public-read --follow-symlinks --recursive static s3://$AWS_S3_BUCKET/shared/
+          args: s3 cp --acl public-read --follow-symlinks --recursive static s3://${{AWS_S3_BUCKET}}/shared/
 
       - name: Remove static images
         run: cd static && rm -r !(playground|beagle-intellij-plugin-core-0.2.3.jar.zip|beagle-intellij-plugin-core-0.2.5.zip|beagle-intellij-plugin-core-1.0.0.zip)
