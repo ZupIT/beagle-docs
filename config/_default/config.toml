@@ -2,6 +2,8 @@ baseURL = "https://docs.usebeagle.io"
 
 title = "Beagle"
 
+publishDir = "./latest"
+
 enableRobotsTXT = true
 
 theme = ["devrel"]
