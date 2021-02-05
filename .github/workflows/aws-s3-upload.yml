@@ -50,11 +50,7 @@ jobs:
         shell: bash
               
       - name: S3 upload (latest)
-        uses: ItsKarma/aws-cli@v1.70.0
-        with:
-          args: s3 cp --acl public-read --follow-symlinks --recursive latest s3://$AWS_S3_BUCKET/latest/
+        run: aws s3 cp --acl public-read --follow-symlinks --recursive latest s3://$AWS_S3_BUCKET/latest/
               
       - name: S3 upload (v1-6)
-        uses: ItsKarma/aws-cli@v1.70.0
-        with:
-          args: s3 cp --acl public-read --follow-symlinks --recursive v1-6 s3://$AWS_S3_BUCKET/v1-6/
+        run: aws s3 cp --acl public-read --follow-symlinks --recursive v1-6 s3://$AWS_S3_BUCKET/v1-6/
