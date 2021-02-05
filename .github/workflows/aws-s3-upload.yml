@@ -7,9 +7,6 @@ on:
 
 env:
   AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  AWS_REGION: 'sa-east-1'
 
 jobs:
   deploy:
@@ -20,19 +17,24 @@ jobs:
           submodules: true  
           fetch-depth: 0    
 
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: sa-east-1
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.78.1'
           extended: true  
       
-      - name: S3 upload (static)
-        uses: ItsKarma/aws-cli@v1.70.0
-        with:
-          args: s3 cp --acl public-read --follow-symlinks --recursive static s3://${{AWS_S3_BUCKET}}/shared/
+      - name: S3 upload (images)
+        run: aws s3 cp --acl public-read --follow-symlinks --recursive static s3://$AWS_S3_BUCKET/shared/ --exclude "playground"
 
       - name: Remove static images
-        run: cd static && rm -r !(playground|beagle-intellij-plugin-core-0.2.3.jar.zip|beagle-intellij-plugin-core-0.2.5.zip|beagle-intellij-plugin-core-1.0.0.zip)
+        run: cd static && rm -r !(playground)
 
       - name: Installing Dependencies
         run: npm install
