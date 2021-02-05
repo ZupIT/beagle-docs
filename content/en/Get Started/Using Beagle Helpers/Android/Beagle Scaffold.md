@@ -42,6 +42,8 @@ allprojects {
  ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-scaffold?color=green&label=beagle-scaffod)
  ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?label=Beagle)                                                                   
 
+* Add the packagingOptions code block to the build.gradle file, as in the example below.
+
 * _The version numbers listed below may have been updated. Please check the actual versions on the tags above:_
 ```kotlin
 plugins {
@@ -54,6 +56,11 @@ plugins {
 android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        pickFirst 'META-INF/LICENSE.md'
+        pickFirst 'META-INF/LICENSE-notice.md'
     }
 }
 
