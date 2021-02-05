@@ -25,9 +25,14 @@ jobs:
         with:
           hugo-version: '0.78.1'
           extended: true  
+      
+      - name: S3 upload (static)
+        uses: ItsKarma/aws-cli@v1.70.0
+        with:
+          args: s3 cp --acl public-read --follow-symlinks --recursive static s3://$AWS_S3_BUCKET/shared/
 
-      # - name: Remove static folder
-      #   run: rm -rf static
+      - name: Remove static images
+        run: cd static && rm -r !(playground|beagle-intellij-plugin-core-0.2.3.jar.zip|beagle-intellij-plugin-core-0.2.5.zip|beagle-intellij-plugin-core-1.0.0.zip)
 
       - name: Installing Dependencies
         run: npm install
@@ -45,16 +50,9 @@ jobs:
       - name: S3 upload (latest)
         uses: ItsKarma/aws-cli@v1.70.0
         with:
-          args: s3 cp --acl public-read --follow-symlinks --recursive latest s3://docs.usebeagle.io/latest
+          args: s3 cp --acl public-read --follow-symlinks --recursive latest s3://$AWS_S3_BUCKET/latest/
               
       - name: S3 upload (v1-6)
         uses: ItsKarma/aws-cli@v1.70.0
         with:
-          args: s3 cp --acl public-read --follow-symlinks --recursive v1-6 s3://docs.usebeagle.io/v1-6
-
-      - name: S3 upload (static)
-        uses: ItsKarma/aws-cli@v1.70.0
-        with:
-          args: s3 cp --acl public-read --follow-symlinks --recursive static s3://docs.usebeagle.io/shared
-
-      
+          args: s3 cp --acl public-read --follow-symlinks --recursive v1-6 s3://$AWS_S3_BUCKET/v1-6/
