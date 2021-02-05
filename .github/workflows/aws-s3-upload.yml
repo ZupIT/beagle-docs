@@ -45,16 +45,16 @@ jobs:
       - name: S3 upload (latest)
         uses: ItsKarma/aws-cli@v1.70.0
         with:
-          args: s3 cp --acl public-read --follow-symlinks latest s3://docs.usebeagle.io
+          args: s3 cp --acl public-read --follow-symlinks --recursive latest s3://docs.usebeagle.io/latest
               
       - name: S3 upload (v1-6)
         uses: ItsKarma/aws-cli@v1.70.0
         with:
-          args: s3 cp --acl public-read --follow-symlinks v1-6 s3://docs.usebeagle.io
+          args: s3 cp --acl public-read --follow-symlinks --recursive v1-6 s3://docs.usebeagle.io/v1-6
 
       - name: S3 upload (static)
         uses: ItsKarma/aws-cli@v1.70.0
         with:
-          args: s3 cp --acl public-read --follow-symlinks static s3://docs.usebeagle.io/shared
+          args: s3 cp --acl public-read --follow-symlinks --recursive static s3://docs.usebeagle.io/shared
 
       
