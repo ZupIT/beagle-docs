@@ -34,7 +34,8 @@ jobs:
         run: aws s3 cp --acl public-read --follow-symlinks --recursive static s3://$AWS_S3_BUCKET/shared/ --exclude "playground"
 
       - name: Remove static images
-        run: cd static && rm -r !(playground)
+        run: |
+          cd static && rm -r !(playground)
 
       - name: Installing Dependencies
         run: npm install
