@@ -5,7 +5,6 @@ yarn-error.log
 /static/playground/
 /resources/_gen/
 /public/
-/latest/
 .vscode/
 .idea/
 .DS_Store
