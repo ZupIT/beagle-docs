@@ -1,4 +1,4 @@
-name: Build and Upload to AWS S3
+name: AWS S3 UPLOAD
 
 on:
   release:
@@ -43,15 +43,19 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Duplicate bundle
-        run: cp -r latest v1-6
-
       - id: version
         run: echo "::set-output name=release_tag::$(echo $GITHUB_REF | sed 's/refs\/tags\///g' )"
         shell: bash
-              
+
+      - name: Config Proxy
+      - run: sed -i "s/\${latest_version}/$VERSION/" .github/workflows/proxy/index.html
+        env:
+          VERSION: ${{ steps.version.outputs.release_tag }}
+
+      - name: S3 upload (proxy)
+        run: aws s3 cp --acl public-read --follow-symlinks --recursive .github/workflows/proxy/index.html s3://$AWS_S3_BUCKET
+
       - name: S3 upload (latest)
-        run: aws s3 cp --acl public-read --follow-symlinks --recursive latest s3://$AWS_S3_BUCKET/latest/
-              
-      - name: S3 upload (v1-6)
-        run: aws s3 cp --acl public-read --follow-symlinks --recursive v1-6 s3://$AWS_S3_BUCKET/v1-6/
+        run: aws s3 cp --acl public-read --follow-symlinks --recursive public s3://$AWS_S3_BUCKET/$VERSION/
+        env:
+          VERSION: ${{ steps.version.outputs.release_tag }}
