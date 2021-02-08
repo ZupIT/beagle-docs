@@ -1,3 +1,4 @@
+
 name: AWS S3 UPLOAD
 
 on:
@@ -14,10 +15,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true
-          fetch-depth: 0
+          submodules: true  
+          fetch-depth: 0    
 
-      - name: Config AWS Credentials
+      - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
@@ -28,15 +29,14 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.78.1'
-          extended: true
-
+          extended: true  
+      
       - name: S3 upload (images)
         run: aws s3 cp --acl public-read --follow-symlinks --recursive static s3://$AWS_S3_BUCKET/shared/ --exclude "playground"
 
       - name: Remove static images
         run: |
           cd static && find . \! -name 'playground' -delete
-
       - name: Installing Dependencies
         run: npm install
 
@@ -47,14 +47,14 @@ jobs:
         run: echo "::set-output name=release_tag::$(echo $GITHUB_REF | sed 's/refs\/tags\///g' )"
         shell: bash
 
-      - name: Config Proxy
-        run: sed -i "s/\${latest_version}/$VERSION/" ./.github/workflows/proxy/index.html
-        shell: bash
+      - name: S3 upload (latest version)
+        run: aws s3 cp --acl public-read --follow-symlinks --recursive public s3://$AWS_S3_BUCKET/$VERSION/
         env:
           VERSION: ${{ steps.version.outputs.release_tag }}
 
-      - name: S3 upload (latest version)
-        run: aws s3 cp --acl public-read --follow-symlinks --recursive public s3://$AWS_S3_BUCKET/$VERSION/
+      - name: Config Proxy
+        run: sed -i "s/\${latest_version}/$VERSION/" .github/workflows/proxy/index.html
+        shell: bash
         env:
           VERSION: ${{ steps.version.outputs.release_tag }}
 
