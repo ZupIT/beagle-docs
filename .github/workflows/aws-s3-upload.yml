@@ -60,13 +60,4 @@ jobs:
 
       - name: S3 upload (redirect to latest version)
         run: aws s3 cp --acl public-read --follow-symlinks --recursive .github/workflows/proxy/index.html s3://$AWS_S3_BUCKET
-      
-      - name: Config Proxy
-        run: |
-          cd .github/workflows/proxy && sed -i "s/\${latest_version}/$VERSION/" index.html
-        shell: bash
-        env:
-          VERSION: ${{ steps.version.outputs.release_tag }}
 
-      - name: S3 upload (proxy to latest)
-        run: aws s3 cp --acl public-read --follow-symlinks --recursive .github/workflows/proxy/index.html s3://$AWS_S3_BUCKET
