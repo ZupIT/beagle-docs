@@ -1,4 +1,4 @@
-baseURL = "https://docs.usebeagle.io"
+baseURL = "https://docs.usebeagle.io/v1.5"
 
 title = "Beagle"
 
@@ -146,4 +146,4 @@ enable = true
 [[params.versions]]
 fullversion = "v1.5.1"
 version = "v1.5"
-url = "https://docs.usebeagle.io"
+url = "https://docs.usebeagle.io/v1.5"
