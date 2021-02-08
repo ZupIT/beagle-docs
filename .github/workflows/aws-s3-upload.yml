@@ -62,7 +62,7 @@ jobs:
         run: aws s3 cp --acl public-read --follow-symlinks --recursive .github/workflows/proxy/index.html s3://$AWS_S3_BUCKET
       
       - name: Config Proxy
-        run: sed -i "s/\${latest_version}/$VERSION/" .github/workflows/proxy/index.html
+        run: sed -i "s/\${latest_version}/$VERSION/" ./.github/workflows/proxy/index.html
         shell: bash
         env:
           VERSION: ${{ steps.version.outputs.release_tag }}
