@@ -47,33 +47,25 @@ jobs:
         run: echo "::set-output name=release_tag::$(echo $GITHUB_REF | sed 's/refs\/tags\///g' )"
         shell: bash
 
-<<<<<<< HEAD
       - name: Config Proxy
         run: sed -i "s/\${latest_version}/$VERSION/" .github/workflows/proxy/index.html
         shell: bash
         env:
           VERSION: ${{ steps.version.outputs.release_tag }}
 
-=======
->>>>>>> 5919395837e7c54bf5ac07161c65e284baaa7fb4
       - name: S3 upload (latest version)
         run: aws s3 cp --acl public-read --follow-symlinks --recursive public s3://$AWS_S3_BUCKET/$VERSION/
         env:
           VERSION: ${{ steps.version.outputs.release_tag }}
 
-<<<<<<< HEAD
       - name: S3 upload (redirect to latest version)
         run: aws s3 cp --acl public-read --follow-symlinks --recursive .github/workflows/proxy/index.html s3://$AWS_S3_BUCKET
-=======
+      
       - name: Config Proxy
         run: sed -i "s/\${latest_version}/$VERSION/" .github/workflows/proxy/index.html
         shell: bash
         env:
           VERSION: ${{ steps.version.outputs.release_tag }}
-<<<<<<< HEAD
->>>>>>> 5919395837e7c54bf5ac07161c65e284baaa7fb4
-=======
 
       - name: S3 upload (proxy to latest)
         run: aws s3 cp --acl public-read --follow-symlinks --recursive .github/workflows/proxy/index.html s3://$AWS_S3_BUCKET
->>>>>>> a3037830cc79644d756274d5c158d39dc7ac447d
