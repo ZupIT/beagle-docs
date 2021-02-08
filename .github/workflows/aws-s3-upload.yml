@@ -4,8 +4,6 @@ on:
   release:
     types:
       - created
-  pull_request:
-    branches: [main]
 
 env:
   AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
