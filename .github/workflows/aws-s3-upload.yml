@@ -14,8 +14,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true  
-          fetch-depth: 0    
+          submodules: true
+          fetch-depth: 0
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -28,8 +28,8 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.78.1'
-          extended: true  
-      
+          extended: true
+
       - name: S3 upload (images)
         run: aws s3 cp --acl public-read --follow-symlinks --recursive static s3://$AWS_S3_BUCKET/shared/ --exclude "playground"
 
@@ -48,7 +48,7 @@ jobs:
         shell: bash
 
       - name: Config Proxy
-      - run: sed -i "s/\${latest_version}/$VERSION/" .github/workflows/proxy/index.html
+        run: sed -i "s/\${latest_version}/$VERSION/" .github/workflows/proxy/index.html
         shell: bash
         env:
           VERSION: ${{ steps.version.outputs.release_tag }}
@@ -58,5 +58,5 @@ jobs:
         env:
           VERSION: ${{ steps.version.outputs.release_tag }}
 
-      - name: S3 upload (proxy to latest)
+      - name: S3 upload (redirect to latest version)
         run: aws s3 cp --acl public-read --follow-symlinks --recursive .github/workflows/proxy/index.html s3://$AWS_S3_BUCKET
