@@ -95,4 +95,4 @@ fun screen() = Screen(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/operadoresaritmeticos%20%281%29.gif)
+![](/shared/operadoresaritmeticos%20%281%29.gif)

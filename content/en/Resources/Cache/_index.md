@@ -51,7 +51,7 @@ The protocol acts in the `beagle-hash` header. BFF validates the received hashes
 
 When BFF responds with the `status 304`, the application loads the element in cache. If this does not happen, it stores the hash and render the received elements.
 
-![](/beaglesave.png)
+![](/shared/beaglesave.png)
 
 ## Next Steps
 

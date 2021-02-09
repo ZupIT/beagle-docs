@@ -36,7 +36,7 @@ Depois de ter instalado o programa, siga os passos abaixo:
 
 Quando a inicialização for concluída, você verá esta página:
 
-![](/mainactivity.png)
+![](/shared/mainactivity.png)
 
 {{% alert color="success" %}}
 Parabéns, seu projeto foi criado no Android! Agora, você precisará configurar o Beagle, de acordo com os passos a seguir.
@@ -80,7 +80,7 @@ Perceba que alguns `plugins` já estão listados no começo desse arquivo como m
 
 - Em seguida, adicione a linha*`apply plugin: 'kotlin-kapt'`*
 
-![](/implementacaogradle.png)
+![](/shared/implementacaogradle.png)
 
 Depois disso, você precisa adicionar algumas dependências. Para isso:
 
@@ -111,7 +111,7 @@ Por exemplo: undefined-`ext.beagle.version = "0.2.8"`
 
 Ao final destas configurações, o seu arquivo deverá estar assim:
 
-![](/implementacaogradle2.png)
+![](/shared/implementacaogradle2.png)
 
 ###
 
@@ -178,7 +178,7 @@ Para criar o AppBeagleConfig, siga estes passos:
 1. Primeiro vamos criar o pacote que conterá nossos arquivos de configuração.
 2. Clique com botão direito do mouse no pacote principal do seu projeto e click em **new &gt; package** \_\_conforme a figura abaixo:
 
-![](/newpackage.png)
+![](/shared/newpackage.png)
 
 Embora você possa nomeá-lo como preferir, sugerimos que para este tutorial você use o nome`beagle`
 
@@ -239,11 +239,11 @@ Embora você possa criá-lo agora se quiser, não é necessário para as configu
 
 Agora, você deve inicializar sua `Application` para que o Beagle gere os outros arquivos de configuração que necessita. Para isso, basta clicar em`Make project` \(símbolo de MARTELO\) ou use o comando `CTRL + F9`.
 
-![](/apppackage.png)
+![](/shared/apppackage.png)
 
 Ao ser inicializado, o Beagle irá criar automaticamente o arquivo `BeagleSetup`, que estará na pasta de arquivos gerados como mostrado na figura abaixo:
 
-![](/image%20%2843%29.png)
+![](/shared/image%20%2843%29.png)
 
 ### Passo 7: Criar a classe AppApplication
 
@@ -305,12 +305,12 @@ finish()
 
 - Sua`MainActivity.kt` deve ficar assim:
 
-![](/print-intent%20%282%29.png)
+![](/shared/print-intent%20%282%29.png)
 
 Agora basta somente clicar em **`Run app`** e checar sua tela no emulador!  
 Você verá esta tela:
 
-![](/captura-de-tela-2020-06-22-a-s-11.41.12.png)
+![](/shared/captura-de-tela-2020-06-22-a-s-11.41.12.png)
 
 {{% alert color="success" %}}
 Parabéns, você criou sua primeira tela com Beagle! 🎉

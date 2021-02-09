@@ -12,7 +12,7 @@ Para criar um projeto iOS no Beagle, você primeiro precisa ter o Xcode instalad
 
 Antes de começar, você primeiro precisar criar um projeto no `Xcode`. Para isso, basta abrir o programa e nomear o seu projeto. Para este exemplo, colocaremos como **Beagle Sample.**
 
-![](/captura-de-tela-2020-04-08-a-s-10.35.19.png)
+![](/shared/captura-de-tela-2020-04-08-a-s-10.35.19.png)
 
 Após criar o seu projeto, precisaremos adicionar as dependências. Para isso, usaremos o gerenciador `CocoaPods`.
 
@@ -61,7 +61,7 @@ pod install
 
 Depois da instalação, você deve abrir o arquivo que possui a extensão **`workspace.`** Neste exemplo, nós o chamaremos de `Beagle Sample.workspace`
 
-![](/captura-de-tela-2020-04-08-a-s-10.23.09.png)
+![](/shared/captura-de-tela-2020-04-08-a-s-10.23.09.png)
 
 ### Passo 2: Configurar o Beagle
 
@@ -129,11 +129,11 @@ _**`Application Session Role` &gt;
 
 No GIF abaixo, você vê melhor como remover as referências:
 
-![](/main%20%282%29.gif)
+![](/shared/main%20%282%29.gif)
 
 Feito! O Beagle está configurado na sua aplicação iOS. Agora, tudo o que você precisa é [**configurar um backend**](/pt/get-started/creating-a-project-from-scratch/case-backend) para responder as requisições do seu aplicativo server-driven.
 
 Feita essa configuração, inicie a sua aplicação e você terá sua primeira tela server-driven!  
 Você verá a tela a seguir:
 
-![](/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)
+![](/shared/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)

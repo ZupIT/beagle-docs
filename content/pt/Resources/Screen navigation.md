@@ -62,7 +62,7 @@ Button(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/navigate-remote.gif)
+![](/shared/navigate-remote.gif)
 
 ## Tipos de navegação
 

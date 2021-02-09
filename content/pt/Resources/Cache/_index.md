@@ -46,7 +46,7 @@ O protocolo atua no cabeçalho `beagle-hash`. O BFF, por sua vez, valida os hash
 
 Quando o BFF responde com o `status 304`, o aplicativo carrega do elemento em cache. Caso isto não aconteça, ele armazena os dados recebidos \(hash e JSON\) e renderiza os elementos.
 
-![](/beaglesave.png)
+![](/shared/beaglesave.png)
 
 ## Próximos passos
 

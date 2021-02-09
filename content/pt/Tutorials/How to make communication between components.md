@@ -230,4 +230,4 @@ E agora a tela está pronta! Foi configurado um exemplo de contexto e demonstrad
 
 No final deste exemplo a sua tela deve estar assim:
 
-![](/screenshot_1594752619.png)
+![](/shared/screenshot_1594752619.png)

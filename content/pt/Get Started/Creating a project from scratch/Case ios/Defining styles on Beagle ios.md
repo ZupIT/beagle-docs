@@ -174,7 +174,7 @@ No tutorial de configuração do backend, uma pagina server driven foi criada co
 
 A página era assim quando renderizada no frontend:
 
-![](/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)
+![](/shared/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)
 
 Para atribuir um estilo a esses textos siga as instruções:
 

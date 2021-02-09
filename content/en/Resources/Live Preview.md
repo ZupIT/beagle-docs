@@ -68,7 +68,7 @@ class ScreenBeagleBuilder: ScreenBuilder {
 If your function is recognized by the plugin, Beagle's logo will appear as a button to the left of the function. When clicking this button, `BeaglePreview` will push the layout to the client \(frontend application\), allowing it to update your layout instantly!
 See the example below:
 
-![](/livepreviewpluginintellijidea.gif)
+![](/shared/livepreviewpluginintellijidea.gif)
 
 After running the plugin on some function, you only need to save the changes done in your layout so that the Live Preview updates the screen being rendered by the frontend. It does this by compiling your modified code and verifying if there is some change and, if there is, push your new layout to the client.
 

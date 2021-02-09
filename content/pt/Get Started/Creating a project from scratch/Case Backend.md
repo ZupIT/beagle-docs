@@ -68,7 +68,7 @@ O segundo passo é criar alguns pacotes para organizar melhor o projeto. Eles se
 4. Repita o processo criando os dois outros pacotes, nomeando-os `service` e `controller`
 5. Após a criação dos pacotes, a sua tela deverá estar assim:
 
-![](/image%20%2829%29.png)
+![](/shared/image%20%2829%29.png)
 
 ### Passo 3:‌ Criar o serviço da aplicação
 
@@ -177,7 +177,7 @@ Clique no triângulo verde chamado **`run`**, ou aperte e segure SHIFT + F10 par
 
 A sua tela estará assim:
 
-![](/sem-titulo2.png)
+![](/shared/sem-titulo2.png)
 
 ### **Passo 2: Fazer uma requisição**
 

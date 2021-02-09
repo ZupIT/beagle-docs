@@ -59,4 +59,4 @@ See the performance difference on native and server-driven screens, considering 
 | Setting up automation session | 3,95 s                                        | 2,17 s                                  |
 | **Test result**               | **8,21 seconds**                              | **6,39 seconds**                        |
 
-![](/comparativo-ios-v1-1-.gif)
+![](/shared/comparativo-ios-v1-1-.gif)

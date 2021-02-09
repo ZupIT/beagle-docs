@@ -41,7 +41,7 @@ At the end of this process, two files will be generate on your project:
 * **beagle-components.module.ts**
 * **beagle.module.ts.**
 
-![](/image%20%2815%29.png)
+![](/shared/image%20%2815%29.png)
 
 Open the file `app.module.ts` and, then, import Beagle's module that was just generated:
 
@@ -167,7 +167,7 @@ This process also must be done for any change made on `@Input()` properties of y
 After you have finished using these commands, access the local: http://localhost:4200  
 You will see this screen:
 
-![](/image%20%2896%29.png)
+![](/shared/image%20%2896%29.png)
 
 
 

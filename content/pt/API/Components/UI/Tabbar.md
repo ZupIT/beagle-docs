@@ -137,4 +137,4 @@ Screen(
 
 |          Tab Bar          |
 | :-----------------------: |
-| ![](/beagle-tab-view.gif) |
+| ![](/shared/beagle-tab-view.gif) |

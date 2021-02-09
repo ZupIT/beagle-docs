@@ -61,4 +61,4 @@ fun screen() = Screen(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/logic.png)
+![](/shared/logic.png)
