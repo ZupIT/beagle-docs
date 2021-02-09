@@ -7,7 +7,7 @@ on:
       - created
 
 env:
-  AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+  AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET_BETA }}
 
 jobs:
   deploy:
