@@ -30,12 +30,14 @@ The first thing we need to enable the Analytics functionality is to create a pro
 Now, choose the platform you are using Beagle with to see examples of how to configure the Analytics Provider in your application
 
 {{< tabs >}}
+
 {{% tab name="Web" %}}
 
 Open your Beagle service configuration file and create a function implementing the `AnalyticsProvider` interface like the following:
 
-```text
+```ts
 ...
+
 import { AnalyticsProvider, AnalyticsConfig, AnalyticsRecord } from '@zup-it/beagle-web'
 
 function analytics(): AnalyticsProvider {
@@ -75,7 +77,7 @@ export default createBeagleUIService<any>({
 
 {{% tab name="Android" %}}
 
-```
+```kotlin
 @BeagleComponent
 class AnalyticsProviderImpl : AnalyticsProvider{
     override fun getConfig(): AnalyticsConfig? = object : AnalyticsConfig{
@@ -95,10 +97,52 @@ class AnalyticsProviderImpl : AnalyticsProvider{
     override fun getMaximumItemsInQueue() = 200
 }
 ```
+
 {{% /tab %}}
+
 {{% tab name="iOS" %}}
-<!-- To do analytics iOS -->
+
+1) Declare your AnalyticsProvider implementation in your project:
+
+```swift
+import Beagle
+
+class MyAnalyticsProvider: AnalyticsProvider {
+
+    func getConfig() -> AnalyticsConfig? {
+        return AnalyticsConfig(
+            enableScreenAnalytics: true,
+            actions: [
+                "beagle:setcontext": ["contextId", "path", "value"]
+            ]
+        )
+    }
+
+    func createRecord(_ record: AnalyticsRecord) {
+        // here you could just send `record` to your analytics backend
+        print(record)
+    }
+
+    // if this is `nil`, beagle will you use a default value
+    var maximumItemsInQueue: Int? = nil
+}
+```
+
+2) Set the declared provider as a Beagle dependency. You probably will set all Beagle dependencies in the same file, so your code should look something like this:
+
+```swift
+let dependencies = BeagleDependencies()
+...
+
+dependencies.analyticsProvider = MyAnalyticsProvider()
+
+...
+
+Beagle.dependencies = dependencies
+```
+
 {{% /tab %}}
+
 {{< /tabs >}}
 
 {{% alert color="warning" %}}
