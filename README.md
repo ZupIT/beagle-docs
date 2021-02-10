@@ -8,8 +8,6 @@ To start this project, you must run the following commands:
 
 `git submodule update --init --recursive --remote`
 
-`cd Settings`
-
 You must have installed Node and then install your dependencies using npm:
 
 `npm install`

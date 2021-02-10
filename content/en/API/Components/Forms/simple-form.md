@@ -43,7 +43,7 @@ Check out the example below on how its implemented a `SimpleForm`
 {{% tab name="JSON" %}}
 
 <!-- json-playground:simpleform.json
- {
+{
   "_beagleComponent_":"beagle:simpleForm",
   "context":{
     "id":"myContext",
