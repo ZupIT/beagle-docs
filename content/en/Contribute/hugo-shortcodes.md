@@ -21,12 +21,12 @@ The best way to make references to **_internal_** links in the documentation is 
 - Syntax example
 
 ```go-text-template
-[Link Example]({{</* ref path="/Get Started/Installing Beagle/Backend.md" lang="en" */>}})
+[Link Example]({{</* ref path="/get-started/installing-beagle/backend.md" lang="en" */>}})
 ```
 
 - It will be rendered as:
 
-[Link Example]({{< ref path="/Get Started/Installing Beagle/Backend.md" lang="en">}})
+[Link Example]({{< ref path="/get-started/installing-beagle/backend.md" lang="en">}})
 
 ### **Alerts**
 
