@@ -33,7 +33,7 @@ Delete these three. The third one you have to erase and confirm.
 **Step 3**: Add BeagleScaffold as a dependency of your project using CocoaPods:
 - https://cocoapods.org/pods/BeagleScaffold
 
-```
+```ruby
 target 'MyApp' do
   pod 'BeagleScaffold'
 end
@@ -43,38 +43,48 @@ If you're not familiar with CocoaPods, check their [documentation](https://guide
 
 Also add the YogaKit dependency to your project via CocoaPods, but point to our repo because we need some changes that weren't merged on their official repository. Like so:
 
-```
+```ruby
 pod 'YogaKit', :git => 'https://github.com/ZupIT/YogaKit'
 ```
 
 BeagleScaffold has default implementations of a Network layer, Cache and Logger for you, embedded in [BeagleDefaults](https://docs.usebeagle.io/get-started/using-beagle-helpers/ios/beagle-defaults).
 
-**Step 4**: To add Beagle configurations to your application, just call our function named _start()_ from the class _BeagleConfig_, in your _appDelegate_:
+**Step 4**: To add Beagle configurations to your application, just call our function named `start()` from the class `BeagleConfig`, in your `SceneDelegate` inside the method `scene()`:
 
+```swift
+func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+
+    BeagleConfig.start()
+    guard let _ = (scene as? UIWindowScene) else { return }
+}
 ```
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        BeagleConfig.start()
-        
-        return true
-    }
+
+**Step 5**: Now for the last step to run the application, we're going to do the "view code" section here. 
+
+Still in the method `scene`, give the name `windowScene` to the `guard let` already created for us by Xcode:
+
+```swift
+guard let windowScene = (scene as? UIWindowScene) else { return }
 ```
 
-**Step 5**: Now for the last step to run the application, we're going to do the "view code" section here. Add to your appDelegate a variable called _window_ that is a _UIWindow?_. Initialize it, make it's rootViewController our _BeagleScaffoldDemoViewController_ and call a function called _makeKeyAndVisible()_. Like the following:
+Initialize the variable `window` created outside the function scope, using our `windowScene`:
 
+```swift
+window = UIWindow(windowScene: windowScene)
 ```
-var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    
-        BeagleConfig.start()
-        
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = BeagleScaffoldDemoViewController
-        window?.makeKeyAndVisible()
-        
-        return true
-    }
+Import `BeagleScaffold`.
+
+Make the `window.rootViewController` our `BeagleScaffoldDemoViewController` and call the method `makeKeyAndVisible()`. Your code should be like this:
+
+```swift
+func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+    BeagleConfig.start()
+    guard let windowScene = (scene as? UIWindowScene) else { return }
+    window = UIWindow(windowScene: windowScene)
+    window?.rootViewController = BeagleScaffoldDemoViewController
+    window?.makeKeyAndVisible()
+}
 ```
 
 **Step 6**: Run your project, and you should see a sample screen with all Beagle components on your simulator.
