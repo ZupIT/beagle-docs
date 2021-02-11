@@ -14,7 +14,7 @@ There are two ways to use Form Validator:
 2. Calling the `notifyObservers` method inside the `FormInput`.
 
 {{% alert color="warning" %}}
-Atenção: **Validator** ≠[**FormValidation**]({{< ref path="/api/actions/formvalidation/" lang="en" >}})
+Atenção: **Validator** ≠[**FormValidation**]({{< ref path="/api/actions/formvalidation" lang="en" >}})
 
 Despite the similar names, it's important to mention that **Validator** is different of the **FormValidation**. The first one authenticates the filled form and the second returns error messages in case of failed information in the form.
 {{% /alert %}}

@@ -214,7 +214,7 @@ A estrutura do **loadView** é:
 | **Atributo**  | **Tipo**                                                            | Obrigatório | **Definição**                                                          |
 | :------------ | :------------------------------------------------------------------ | :---------: | :--------------------------------------------------------------------- |
 | activity      | AppCompatActivity/Fragment                                          |      ✓      | Define a activity ou fragment que estamos usando o loadview            |
-| screenRequest | [**ScreenRequest**]({{< ref path="/api/screen-request/" lang="pt" >}})                   |      ✓      | Define os parâmetros para a chamada da tela remota                     |
+| screenRequest | [**ScreenRequest**]({{< ref path="/api/screen-request" lang="pt" >}})                   |      ✓      | Define os parâmetros para a chamada da tela remota                     |
 | listener      | **OnServerStateChanged = (serverState: ServerDrivenState) -> Unit** |             | Define o o listener que configura os callbacks para os estados da tela |
 
 <br />
@@ -247,7 +247,7 @@ Você deve utilizar uma `BeagleView` para "colocar" esse componente do BFF e, as
 # Beagle View
 
 Veja mais sobre o que é, como funciona e como usar a `BeagleView`
-[**aqui!**]({{< ref path="/resources/customization/beagle-for-ios/beagle-view/" lang="pt" >}})
+[**aqui!**]({{< ref path="/resources/customization/beagle-for-ios/beagle-view" lang="pt" >}})
 {{% /alert %}}
 
 1. Crie um **UIViewController**.
@@ -300,7 +300,7 @@ Ao final do processo, você poderá "chamar" a tela nativa e a imagem abaixo ir�
 {{% /tab %}}
 
 {{% tab name="WEB" %}}
-Se você ainda não configurou a biblioteca em seu projeto, [**veja aqui como fazer isso**.]({{< ref path="/get-started/using-beagle/web" lang="pt" >}})
+Se você ainda não configurou a biblioteca em seu projeto, [**veja aqui como fazer isso**.]({{< ref path="/get-started/using-beagle/web/" lang="pt" >}})
 
 Você deve utilizar o [**Remote View**]({{< ref path="/resources/customization/beagle-for-web/remote-view-parameters" lang="pt" >}}), fornecido pela biblioteca do Beagle, para criar telas híbridas com alguns componentes server driven na web.
 

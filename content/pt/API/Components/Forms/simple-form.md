@@ -116,6 +116,6 @@ SimpleForm(
 
 É uma função do SimpleForm que executa uma lista de ações. Ele é cho quando o formuário for submetido
 
-Para submeter um formulário é preciso utilizar a ação SubmitForm e para chama-la basta somente implementa-la em um [**Botão**]({{< ref path="/api/components//ui/button" lang="pt" >}}) que seja parte do SimpleForm, ou seja, que esteja em sua lista de filhos.
+Para submeter um formulário é preciso utilizar a ação SubmitForm e para chama-la basta somente implementa-la em um [**Botão**]({{< ref path="/api/components/ui/button" lang="pt" >}}) que seja parte do SimpleForm, ou seja, que esteja em sua lista de filhos.
 
 Ao clicar nesse botão, o onSubmit é ativados e a lista de ações será executada. É essa lista de ações que definirá o que deve acontecer com as informações so formulario, se serão enviadas para um backend \(através da ação [**sendRequest**]({{< ref path="/api/actions/sendrequest" lang="pt" >}})\), etc
