@@ -222,7 +222,7 @@ Nesse mesmo atributo também é possível definir uma [**animação de navegaç�
 
 ## PreFetchHelper
 
-Este componente é usado como pré-busca do [**`BeagleScreenViewControllers`**]({{< ref path="/resources/customization/beagle-for-ios/screen-view-controller" lang="pt" >}}) e entrega uma experiência para o usuário mais fluida. Ela já possui um valor e pode ser alterado para se adequar em que você precisa.
+Este componente é usado como pré-busca do [**`BeagleScreenViewControllers`**]({{< ref path="/resources/customization/beagle-for-ios/beagle-screen-view-controller" lang="pt" >}}) e entrega uma experiência para o usuário mais fluida. Ela já possui um valor e pode ser alterado para se adequar em que você precisa.
 
 A pré-busca é acionada quando há um **navigation widget** de modo que você possa fazer um pré carregamento dos dados das possíveis próximas telas, evitando delays na navegação. Este comportamento pode ser desativado.
 

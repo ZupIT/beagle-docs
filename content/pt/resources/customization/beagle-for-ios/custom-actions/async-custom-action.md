@@ -45,5 +45,5 @@ struct CustomAction: AsyncAction {
 Pronto! Sua action agora está configurada para executar qualquer trabalho de forma assíncrona!
 
 {{% alert color="success" %}}
-Para saber como registrar essa nova ação e ver exemplo de como usar [click aqui!]({{< ref path="/resources/customization/beagle-for-ios/custom-actions/simple-custom-action//" lang="pt" >}}).
+Para saber como registrar essa nova ação e ver exemplo de como usar [click aqui!]({{< ref path="/resources/customization/beagle-for-ios/custom-actions/simple-custom-action" lang="pt" >}}).
 {{% /alert %}}
