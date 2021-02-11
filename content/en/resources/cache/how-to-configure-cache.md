@@ -131,7 +131,7 @@ public protocol CacheManagerProtocol {
 {{% /tab %}}
 
 {{% tab name="Backend" %}}
-In the backend this functionality is only supported if you use the [**started library**]({{< ref path="/get-started/installing-beagle/backend/#Step 3: Include-starter-dependency" lang="en" >}})
+In the backend this functionality is only supported if you use the [**started library**]({{< ref path="/get-started/installing-beagle/backend#Step 3: Include starter dependency" lang="en" >}})
 
 The cache was created to optimize the response of a request in terms of size and BFF's time, when the return is the same as the previous one. The input in this cache last until the server is redeployed or the client installed again. 
 
