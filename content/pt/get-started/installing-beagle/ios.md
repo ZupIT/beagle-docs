@@ -72,6 +72,6 @@ Outros frameworks são utilizados apenas em cenários de uso mais específicos.
 Nesta seção, você fez a **instalação inicial** do Beagle na sua aplicação!  
 Para continuar a configurar o Beagle:
 
-👉Para continuar conhecendo o Beagle, e testar se deu tudo certo com a instalação, vá para as **configurações iniciais** e [**crie seu primeiro Hello Beagle!**](/pt/get-started/using-beagle/ios)
+👉Para continuar conhecendo o Beagle, e testar se deu tudo certo com a instalação, vá para as **configurações iniciais** e [**crie seu primeiro Hello Beagle!**]({{< ref path="/get-started/using-beagle/ios" lang="pt" >}})
 
-👉 Se quiser ir direto para prática, acesse nosso[ **tutorial para criar um projeto do zero**](/pt/get-started/creating-a-project-from-scratch/case-ios/)
+👉 Se quiser ir direto para prática, acesse nosso[ **tutorial para criar um projeto do zero**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios/" lang="pt" >}})

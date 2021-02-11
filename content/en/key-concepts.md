@@ -24,7 +24,7 @@ In order for Beagle to work with the Design System of your application, it is ne
 
 ### **Layout Engine**
 
-Tool that takes care of **rendering the native visual elements** of an application. When Beagle deserializes the information contained in JSON, the layout engine comes into play by rendering the components generated based on the Design System of the application. Beagle uses [**Yoga Layout**](https://www.yogalayout.com) to natively render components on Android and iOS platforms and build their respective layouts using [**Flexbox**](/resources/components-positioning/) concepts.
+Tool that takes care of **rendering the native visual elements** of an application. When Beagle deserializes the information contained in JSON, the layout engine comes into play by rendering the components generated based on the Design System of the application. Beagle uses [**Yoga Layout**](https://www.yogalayout.com) to natively render components on Android and iOS platforms and build their respective layouts using [**Flexbox**]({{< ref path="/resources/components-positioning/" lang="en" >}}) concepts.
 
 ### **Server-Driven UI**
 

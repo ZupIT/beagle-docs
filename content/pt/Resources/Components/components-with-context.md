@@ -8,15 +8,15 @@ description: >-
 
 ---
 
-O `ContextComponent` é uma interface precisa ser implementada em componentes que usam o [**Contexto**](/pt/api/context#o-que-é), porque é onde está o atributo `context`.
+O `ContextComponent` é uma interface precisa ser implementada em componentes que usam o [**Contexto**]({{< ref path="/api/context#o-que-é" lang="pt" >}}), porque é onde está o atributo `context`.
 
 ## Componentes do Beagle com contexto:
 
-1. [**Container**](/pt/api/components/layout/container)
-2. [**SimpleForm**](/pt/api/components/forms/simple-form)
-3. [**PageView**](/pt/api/components/layout/pageview)
-4. [**ScrollView**](/pt/api/components/layout/scrollview)
-5. [**TabView**](/pt/api/components/ui/tabview)
+1. [**Container**]({{< ref path="/api/components/layout/container" lang="pt" >}})
+2. [**SimpleForm**]({{< ref path="/api/components/forms/simple-form" lang="pt" >}})
+3. [**PageView**]({{< ref path="/api/components/layout/pageview" lang="pt" >}})
+4. [**ScrollView**]({{< ref path="/api/components/layout/scrollview" lang="pt" >}})
+5. [**TabView**]({{< ref path="/api/components/ui/tabview" lang="pt" >}})
 
 ## Componente customizado com contexto
 
@@ -60,5 +60,5 @@ public struct CustomComponent: RawComponent, HasContext {
 {{< /tabs >}}
 
 {{% alert color="warning" %}}
-Se você quiser criar componentes customizados no iOS, é **necessário registrá-lo**! Veja como registrar [**aqui**](/pt/resources/customization/beagle-for-ios/custom-widgets#passo-2-registrar-o-widget).
+Se você quiser criar componentes customizados no iOS, é **necessário registrá-lo**! Veja como registrar [**aqui**]({{< ref path="/resources/customization/beagle-for-ios/custom-widgets#passo-2-registrar-o-widget" lang="pt" >}}).
 {{% /alert %}}

@@ -7,7 +7,7 @@ description: You will find here a description of the component TabView and its a
 ---
 
 {{% alert color="danger" %}}
- This component was deprecated in Beagle version 1.1.0 and will be removed in a future version. Use [`TabBar`](/api/components/ui/tabbar) instead.
+ This component was deprecated in Beagle version 1.1.0 and will be removed in a future version. Use [`TabBar`]({{< ref path="/api/components/ui/tabbar" lang="en" >}}) instead.
 {{% /alert %}}
 
 ## What is TabView?

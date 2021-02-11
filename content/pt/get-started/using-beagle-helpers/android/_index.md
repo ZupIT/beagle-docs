@@ -29,5 +29,5 @@ Todos estes também estão disponíveis na biblioteca Scaffold acima.
 {{% alert color="warning" %}}
 Se você deseja usar o Beagle para um aplicativo em produção, recomendamos que você configure um projeto
  do zero usando nossa
- [**documentação**](/pt/get-started/creating-a-project-from-scratch/case-android/)
+ [**documentação**]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/" lang="pt" >}})
 {{% /alert %}}

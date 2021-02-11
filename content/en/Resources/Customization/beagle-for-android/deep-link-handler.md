@@ -57,7 +57,7 @@ Once you made it, it's necessary modify the Android manifest file:
 </activity>
 ```
 
-And that's it. Now you just need to call the [**Navigate**](/api/actions/navigate/) **action** with the method [**OpenNativeRoute**](/api/actions/navigate/opennativeroute) like the example below:
+And that's it. Now you just need to call the [**Navigate**]({{< ref path="/api/actions/navigate/" lang="en" >}}) **action** with the method [**OpenNativeRoute**]({{< ref path="/api/actions/navigate/opennativeroute" lang="en" >}}) like the example below:
 
 ```kotlin
 //Widget used to navigate to a native screen

@@ -42,5 +42,5 @@ data class CustomActionAndroid(
 It's done! Your action is now configured to run any job asynchronously!
 
 {{% alert color="danger" %}}
-It is mandatory to implement the `AsyncAction` interface for any custom action that is inserted within the [ListView](/api/components/layout/listview) component.
+It is mandatory to implement the `AsyncAction` interface for any custom action that is inserted within the [ListView]({{< ref path="/api/components/layout/listview" lang="en" >}}) component.
 {{% /alert %}}

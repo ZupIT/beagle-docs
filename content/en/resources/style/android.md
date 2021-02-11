@@ -10,9 +10,9 @@ description: 'Here, you''ll find how to make components'' stylization on Android
 
 Inside Beagle's library, there is a `DesignSystem` class that can be used to personalize the components used on your application.
 
-This class also can map application's local resources so we can refer to [**BFF** ](/key-concepts#backend-for-frontend)when you build a [**Server-Driven**](/key-concepts#server-driven-ui) screen. 
+This class also can map application's local resources so we can refer to [**BFF** ]({{< ref path="/key-concepts#backend-for-frontend" lang="en" >}})when you build a [**Server-Driven**]({{< ref path="/key-concepts#server-driven-ui" lang="en" >}}) screen. 
 
-Beside the images, Beagle's [**Design System**](/key-concepts#design-system) can customize: 
+Beside the images, Beagle's [**Design System**]({{< ref path="/key-concepts#design-system" lang="en" >}}) can customize: 
 
 * the appearance of the texts;
 * the style of the input components;
@@ -79,7 +79,7 @@ Like the texts and inputs, the buttons on Beagle Android are **fully customizabl
 
 ### Toolbar
 
-Inside Beagle's library for Android, the tool bar is part of[ **NavigationBar's class**.](/api/screen/navigation-bar/#what-is-a-navigationbaritem) To make it properly work on [**BeagleActivity**](/get-started/creating-a-project-from-scratch/case-android/#step-4-create-appbeagleactivity), you need to inform Beagle which bar will be used on your application.
+Inside Beagle's library for Android, the tool bar is part of[ **NavigationBar's class**.]({{< ref path="/api/screen/navigation-bar/#what-is-a-navigationbaritem" lang="en" >}}) To make it properly work on [**BeagleActivity**]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/#step-4-create-appbeagleactivity" lang="en" >}}), you need to inform Beagle which bar will be used on your application.
 
 The bar customization can be done in the moment that it passes through Beagle. Besides these attributes, Toolbar has other four  exclusive ones: 
 

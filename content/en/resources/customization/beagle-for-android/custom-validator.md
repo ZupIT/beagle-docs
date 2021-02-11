@@ -9,7 +9,7 @@ description: >-
 ---
 
 {{% alert color="danger" %}}
-This component does not work on 1.1.0 version and it will be removed in the future version. Use [**SimpleForm**](/api/components/forms/simple-form) instead.
+This component does not work on 1.1.0 version and it will be removed in the future version. Use [**SimpleForm**]({{< ref path="/api/components/forms/simple-form" lang="en" >}}) instead.
 {{% /alert %}}
 
 ## Introduction

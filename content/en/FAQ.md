@@ -73,7 +73,7 @@ It's possible to create a BFF in a different language. However, we don't have re
 
 ## What are the advantages of using Beagle?
 
-One of the main advantages is that Beagles facilitates the development because of backend's configuration based on [**BFF paradigm.**](/key-concepts#backend-for-frontend)
+One of the main advantages is that Beagles facilitates the development because of backend's configuration based on [**BFF paradigm.**]({{< ref path="/key-concepts#backend-for-frontend" lang="en" >}})
 
 This means that Beagle helps you on changing screen's `layouts`, screen's flows and app's navigation. All of this is made from pages declaratively created in your BFF with a components' library defined on your application's frontend, which helps on interface's change. 
 
@@ -87,13 +87,13 @@ This avoids a replication on each frontend's platform that consumes this API. Th
 
 ## Can I use Beagle for Android, iOs or Web development? 
 
-Yes! As a cross-platform framework, Beagle helps you on developing application on these three platforms by using the [**Server-Driven UI concept**](/key-concepts#server-driven-ui), which enables that even a BFF may be used on all of these applications. 
+Yes! As a cross-platform framework, Beagle helps you on developing application on these three platforms by using the [**Server-Driven UI concept**]({{< ref path="/key-concepts#server-driven-ui" lang="en" >}}), which enables that even a BFF may be used on all of these applications. 
 
 You can see more how to create Beagle's projects with each of these platforms on: 
 
-* [**Beagle for Android** ](/get-started/creating-a-project-from-scratch/case-android/)
-* [**Beagle for iOS**](/get-started/creating-a-project-from-scratch/case-ios/)
-* [**Beagle for Web**](/get-started/creating-a-project-from-scratch/case-web)
+* [**Beagle for Android** ]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/" lang="en" >}})
+* [**Beagle for iOS**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios/" lang="en" >}})
+* [**Beagle for Web**]({{< ref path="/get-started/creating-a-project-from-scratch/case-web" lang="en" >}})
 
 ## How to make unitary and instrumented tests on server-driven screens?
 

@@ -9,7 +9,7 @@ weight: 186
 As features descritas aqui, estão disponíveis nas versões a partir de 1.2.0.
 {{% /alert %}}
 
-Para entender melhor sobre renderização, recomendamos a leitura da seção [**estrutura de dados**](/pt/resources/customization/beagle-for-web/advanced-topics/data-structure).
+Para entender melhor sobre renderização, recomendamos a leitura da seção [**estrutura de dados**]({{< ref path="/resources/customization/beagle-for-web/advanced-topics/data-structure" lang="pt" >}}).
 
 Cada biblioteca do Beagle Web possui um processo definido de como busca, processa e renderiza a view. Há uma ordem que deve ser sempre respeitada e pontos de extensão \([**hooks**](https://pt-br.reactjs.org/pt/hooks-overview.html)\), onde você pode executar seus códigos \(lifecycles\).
 
@@ -385,7 +385,7 @@ Esse lifecycle pode ser usado para rodar o código necessário para que a view s
 
 #### Exemplos de uso
 
-Contextos são definidos, referenciados e manipulados no JSON da view. Mas, se você quiser acessar os dados da aplicação o Beagle oferece uma funcionalidade chamada [**Contexto Global**](/pt/api/global-context), que é possivel lidar com esse cenário. Se não tivesse essa função, o lifecycle AfterViewSnapshot também consegue lidar com isso.
+Contextos são definidos, referenciados e manipulados no JSON da view. Mas, se você quiser acessar os dados da aplicação o Beagle oferece uma funcionalidade chamada [**Contexto Global**]({{< ref path="/api/global-context" lang="pt" >}}), que é possivel lidar com esse cenário. Se não tivesse essa função, o lifecycle AfterViewSnapshot também consegue lidar com isso.
 
 Um exemplo, se você tem uma aplicação financeira e quer saber o balanço do usuário. Você deve garantir que cada haja a renderização de cada valor recente.
 

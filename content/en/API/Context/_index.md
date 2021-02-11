@@ -78,7 +78,7 @@ Container(
 {{% /tab %}}
 {{< /tabs >}}
 
-Notice the context was declared and its values were defined and used to fill the texts, however it is possible to define these values after using a [`SetContext()`](/api/actions/setcontext) method.
+Notice the context was declared and its values were defined and used to fill the texts, however it is possible to define these values after using a [`SetContext()`]({{< ref path="/api/actions/setcontext" lang="en" >}}) method.
 
 This way, you can fill the component's data that weren't yet in the JSON.
 
@@ -160,7 +160,7 @@ Container(
 {{% /tab %}}
 {{< /tabs >}}
 
-Notice the context was declared and its values were defined and used to fill the texts, however it is possible to define these values using the [`SetContext()`](/api/actions/setcontext) method later. You can fill the component's with data that wasn't in the JSON. 
+Notice the context was declared and its values were defined and used to fill the texts, however it is possible to define these values using the [`SetContext()`]({{< ref path="/api/actions/setcontext" lang="en" >}}) method later. You can fill the component's with data that wasn't in the JSON. 
 
 ### 2. Implicit context 
 

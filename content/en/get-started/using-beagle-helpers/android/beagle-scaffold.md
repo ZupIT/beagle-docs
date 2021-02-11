@@ -149,4 +149,4 @@ A sample screen with all Beagle components will show on your emulator screen
 <hr>
 
 ##### For more on Beagle: Please check our [Beagle](https://github.com/ZupIT/beagle) repository.
-##### For more on Beagle-Defaults: Please check our [Beagle-Default](/get-started/using-beagle-helpers/android/beagle-defaults) documentation.
+##### For more on Beagle-Defaults: Please check our [Beagle-Default]({{< ref path="/get-started/using-beagle-helpers/android/beagle-defaults" lang="en" >}}) documentation.

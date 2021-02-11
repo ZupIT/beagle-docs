@@ -8,7 +8,7 @@ description: You will find here information about Navigation.
 
 ## Introduction
 
-On `BeagleNavigation` protocol there is a `defaultAnimation` variable that allows you to change the transition animation of your application and also another function that deals with the [**navigate actions**](/api/actions/navigate) types and define their behaviour.
+On `BeagleNavigation` protocol there is a `defaultAnimation` variable that allows you to change the transition animation of your application and also another function that deals with the [**navigate actions**]({{< ref path="/api/actions/navigate" lang="en" >}}) types and define their behaviour.
 
 Use the default implementation, but only if it is necessary. This implementation can be replaced by a class, according to the protocol above.
 

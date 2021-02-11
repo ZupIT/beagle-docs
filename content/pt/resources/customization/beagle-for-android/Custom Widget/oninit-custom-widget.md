@@ -6,7 +6,7 @@ description: Criando um widget customizado com onInit
 
 ---
 
-Atualmente no Beagle, os componentes [**Container**](/pt/api/components/layout/container) e [**ListView**](/pt/api/components/layout/listview) possuem o comportamento de executar uma lista de ações assim que são renderizados. Para isso, eles expõe a propriedade `onInit`, a qual recebe a lista de ações que serão disparadas.
+Atualmente no Beagle, os componentes [**Container**]({{< ref path="/api/components/layout/container" lang="pt" >}}) e [**ListView**]({{< ref path="/api/components/layout/listview" lang="pt" >}}) possuem o comportamento de executar uma lista de ações assim que são renderizados. Para isso, eles expõe a propriedade `onInit`, a qual recebe a lista de ações que serão disparadas.
 
 Para criar um widget customizado com o comportamento de disparar uma lista de ações assim que for renderizado, o Beagle fornece uma forma fácil de fazer utilizando o pattern delegate através da implementação da interface `OnInitiableComponent`.
 
@@ -88,5 +88,5 @@ class CustomInitiableWidget(
 Pronto! Seu componente agora executa uma lista de ações sempre que for renderizado!
 
 {{% alert color="danger" %}}
-É obrigatório a implementação da interface `OnInitiableCompoent` para todo widget customizado que for inserido dentro do componente [ListView](/pt/api/components/layout/listview).
+É obrigatório a implementação da interface `OnInitiableCompoent` para todo widget customizado que for inserido dentro do componente [ListView]({{< ref path="/api/components/layout/listview" lang="pt" >}}).
 {{% /alert %}}

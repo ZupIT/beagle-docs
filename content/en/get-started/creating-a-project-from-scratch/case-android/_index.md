@@ -158,18 +158,18 @@ Now that your project is created, you must configure **Beagle** settings. To do 
   `Beagle` does not provide a **Network**, **Cache** or **Logger** configuration on its default components, so those must be configured for Beagle to work as expected. You can create your own defaults configurations following the examples below:
 
   
-[**👉 Go to Network Client:**](/resources/customization/beagle-for-android/network-client/)
+[**👉 Go to Network Client:**]({{< ref path="/resources/customization/beagle-for-android/network-client/" lang="en" >}})
 
-[**👉 Go to Manage Cache:**](/resources/customization/beagle-for-android/manage-cache/)
+[**👉 Go to Manage Cache:**]({{< ref path="/resources/customization/beagle-for-android/manage-cache/" lang="en" >}})
 
-[**👉 Go to log system:**](/resources/customization/beagle-for-android/log-system/)
+[**👉 Go to log system:**]({{< ref path="/resources/customization/beagle-for-android/log-system/" lang="en" >}})
   
 {{% /alert %}}
 
 
 ### Step 4: Create an AppBeagleConfig
 
-For the next steps, you should create an `AppBeagleConfig` class, that is part of [**Beagle's installation**](/get-started/installing-beagle/android) and it's responsible to register some important configurations. 
+For the next steps, you should create an `AppBeagleConfig` class, that is part of [**Beagle's installation**]({{< ref path="/get-started/installing-beagle/android" lang="en" >}}) and it's responsible to register some important configurations. 
 
 When you create the call, we should guarantee that it's configured in this way:
 
@@ -225,7 +225,7 @@ At this tutorial point, we will test our Server-Driven screens on local host bec
 
 ### **Step 5:  BeagleActivity** 
 
-Beagle offers a default `Activity` to manage all `server-driven activities`. However, it is possible to create a more specific activity to handle server-driven screens differently. You will create a new activity inherited from `BeagleActivity` and it will annotate with `@BeagleComponent`. Check more information on how to create one at the [**Beagle Activity**](/resources/customization/beagle-for-android/custom-beagle-activity/) page.
+Beagle offers a default `Activity` to manage all `server-driven activities`. However, it is possible to create a more specific activity to handle server-driven screens differently. You will create a new activity inherited from `BeagleActivity` and it will annotate with `@BeagleComponent`. Check more information on how to create one at the [**Beagle Activity**]({{< ref path="/resources/customization/beagle-for-android/custom-beagle-activity/" lang="en" >}}) page.
 
 {{% alert color="info" %}}
 {{% /alert %}}
@@ -237,13 +237,13 @@ Beagle offers a default `Activity` to manage all `server-driven activities`. How
 {{% alert color="info" %}}
 What is Design System? 
 
-For more information, see [**section Design System with Beagle Android**](/get-started/creating-a-project-from-scratch/case-android/design-system-with-beagle-android).
+For more information, see [**section Design System with Beagle Android**]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/design-system-with-beagle-android" lang="en" >}}).
 {{% /alert %}}
 
 {{% alert color="info" %}}
 The **design system** keeps the style components registry created in the frontend and that is how your application will know which style component must be applied on each Server-Driven element. It is on the server-drive screen the visual elements \(views\) are used on the construction of your screen. 
 
-Even if you can create it now, if you want to, it is not necessary to the initial configuration in order to test Beagle faster. You can proceed without configurating it. For more information see [**Design System on  Beagle for Android**.](/get-started/creating-a-project-from-scratch/case-android/design-system-with-beagle-android) 
+Even if you can create it now, if you want to, it is not necessary to the initial configuration in order to test Beagle faster. You can proceed without configurating it. For more information see [**Design System on  Beagle for Android**.]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/design-system-with-beagle-android" lang="en" >}}) 
 {{% /alert %}}
 
 Now , you must initialize your `Application` so Beagle can manage the other configuration's files. To do so, just click on`Make project` \(HAMMER symbol\) or use the command `CTRL + F9`.
@@ -300,7 +300,7 @@ The name of your`application` now it's the same of the class you created. Update
 Well done, your Android application is configured and ready to use Beagle! 
 {{% /alert %}}
 
-All you have to do now is [**set up a backend** ](/get-started/creating-a-project-from-scratch/case-backend)to answer your application's requests. Once you made this configuration, start your application and you'll see your first server-driven screen!
+All you have to do now is [**set up a backend** ]({{< ref path="/get-started/creating-a-project-from-scratch/case-backend" lang="en" >}})to answer your application's requests. Once you made this configuration, start your application and you'll see your first server-driven screen!
 
 ### Step 8: Display your Server-Driven Screen
 

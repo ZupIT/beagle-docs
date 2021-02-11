@@ -10,7 +10,7 @@ description: Understanding and taking control over the rendering process
 The features described here are only available in versions 1.2.0 and above.
 {{% /alert %}}
 
-Read about [**Beagle tree data structure**](/resources/customization/beagle-for-web/advanced-topics/data-structure) in order to help you understand rendering.
+Read about [**Beagle tree data structure**]({{< ref path="/resources/customization/beagle-for-web/advanced-topics/data-structure" lang="en" >}}) in order to help you understand rendering.
 
 Every Beagle Web library has a very well defined process of how it fetches, process and renders a view. There's an order that must always be respected and hook points where the developer can execute some code of his own \(lifecycles\).
 
@@ -385,7 +385,7 @@ This lifecycle can be used to run code that needs to run every time the view is 
 
 #### Example of usage
 
-Contexts are defined, referenced and manipulated in the JSON of the view. But what if you want to access data of the application and not the view itself? Beagle offers a feature called "[**Global context**](/api/global-context)" that is able to deal with this scenario, but suppose there is no Global context, you can still implement this behavior by using the AfterViewSnapshot lifecycle.
+Contexts are defined, referenced and manipulated in the JSON of the view. But what if you want to access data of the application and not the view itself? Beagle offers a feature called "[**Global context**]({{< ref path="/api/global-context" lang="en" >}})" that is able to deal with this scenario, but suppose there is no Global context, you can still implement this behavior by using the AfterViewSnapshot lifecycle.
 
 Let's say you have a financial application and you want to show the user's balance. You need to guarantee that, in every re-render, the most recent value for the balance will be used.
 
@@ -438,7 +438,7 @@ const config = {
 
 The code above tells Beagle to replace the values in the context "user" by the values in the application. This piece of code cannot be placed before the view is snapshotted because we have the requirement to update the balance value in every render. It also can't be placed in the next lifecycle \(BeforeRender\), because the context would then be already evaluated and our values wouldn't be processed.
 
-It is important to notice that the action `setContext` would not work over the context `user`, since you are always replacing the values for this context before processing any expression. This is just an example to show how this lifecycle could be used. To use application values in your Beagle view, it is always preferred to use the [**global context**](/api/global-context).
+It is important to notice that the action `setContext` would not work over the context `user`, since you are always replacing the values for this context before processing any expression. This is just an example to show how this lifecycle could be used. To use application values in your Beagle view, it is always preferred to use the [**global context**]({{< ref path="/api/global-context" lang="en" >}}).
 
 ### BeforeRender
 

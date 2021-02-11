@@ -28,7 +28,7 @@ Uma ação é um mapa chave/valor com pelo menos uma propriedade:`_beagleAction_
 
 Existem diversas ações implementadas no Beagle por padrão e todas elas começam com prefixo "**beagle**:" e as ações customizadas possuem o prefixo "**custom**:".
 
-Para saber como criar ações customizadas, dê uma olhada na seção de [**customização do Beagle**](/pt/tutorials/how-to-create-new-actions)
+Para saber como criar ações customizadas, dê uma olhada na seção de [**customização do Beagle**]({{< ref path="/tutorials/how-to-create-new-actions" lang="pt" >}})
 
 ## **Tipos de ações**
 

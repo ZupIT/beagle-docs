@@ -104,7 +104,7 @@ export class Beagle { }
 ```
 
 {{% alert color="warning" %}}
-Os arquivos `beagle.module.ts` e `beagle-components.module.ts` são gerados automaticamente pela biblioteca no angular. Se você não encontrou [**verifique sua instalação**](/pt/get-started/installing-beagle/)
+Os arquivos `beagle.module.ts` e `beagle-components.module.ts` são gerados automaticamente pela biblioteca no angular. Se você não encontrou [**verifique sua instalação**]({{< ref path="/get-started/installing-beagle/" lang="pt" >}})
 {{% /alert %}}
 {{% /tab %}}
 {{< /tabs >}}
@@ -235,7 +235,7 @@ export class Beagle { }
 ```
 
 {{% alert color="warning" %}}
-Os arquivos `beagle.module.ts` e `beagle-components.module.ts` são gerados automaticamente pela biblioteca no angular. Se você não os encontrou [**verifique sua instalação**](/pt/get-started/installing-beagle/)
+Os arquivos `beagle.module.ts` e `beagle-components.module.ts` são gerados automaticamente pela biblioteca no angular. Se você não os encontrou [**verifique sua instalação**]({{< ref path="/get-started/installing-beagle/" lang="pt" >}})
 {{% /alert %}}
 {{% /tab %}}
 {{< /tabs >}}

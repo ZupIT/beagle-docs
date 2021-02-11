@@ -8,7 +8,7 @@ description: "Nesta seção, você encontra mais informações sobre a proprieda
 
 ## Position
 
-Esta propriedade determina a posição de um assume em tela e os seus valores `top, right, bottom, left` se comportam de acordo com o [**Position Type**](/pt/resources/posicionamento-de-componentes/positiontype) deste elemento.
+Esta propriedade determina a posição de um assume em tela e os seus valores `top, right, bottom, left` se comportam de acordo com o [**Position Type**]({{< ref path="/resources/posicionamento-de-componentes/positiontype" lang="pt" >}}) deste elemento.
 
 O elemento dentro do Position pode ter diferentes tipos de deslocamento se forem:
 

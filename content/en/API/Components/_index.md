@@ -19,35 +19,35 @@ Beagle has **21 components**, they are currently divided into **5 categories**:
 {{< tabs id="T114" >}}
 {{% tab name="Layout" %}}
 
-- [**Container**](/api/components/layout/container)
-- [**List View**](/api/components/layout/listview)
-- [**PageView**](/api/components/layout/pageview)
-- [**ScrollView**](/api/components/layout/scrollview)
+- [**Container**]({{< ref path="/api/components/layout/container" lang="en" >}})
+- [**List View**]({{< ref path="/api/components/layout/listview" lang="en" >}})
+- [**PageView**]({{< ref path="/api/components/layout/pageview" lang="en" >}})
+- [**ScrollView**]({{< ref path="/api/components/layout/scrollview" lang="en" >}})
   {{% /tab %}}
 
 {{% tab name="Navigation" %}}
 
-- [**Touchable**](/api/components/touchable)
+- [**Touchable**]({{< ref path="/api/components/touchable" lang="en" >}})
   {{% /tab %}}
 
 {{% tab name="Forms" %}}
 
-- [**Validator**](/api/components/forms/validator)
-- [**Simple Form**](/api/components/forms/simple-form)
-- [**Input**](/api/components/ui/textinput)
+- [**Validator**]({{< ref path="/api/components/forms/validator" lang="en" >}})
+- [**Simple Form**]({{< ref path="/api/components/forms/simple-form" lang="en" >}})
+- [**Input**]({{< ref path="/api/components/ui/textinput" lang="en" >}})
   {{% /tab %}}
 
 {{% tab name="Lazy" %}}
 
-- [**LazyComponent**](/api/components/lazy)
+- [**LazyComponent**]({{< ref path="/api/components/lazy" lang="en" >}})
   {{% /tab %}}
 
 {{% tab name="UI" %}}
 
-- [**Button**](/api/components/ui/button)
-- [**Image**](/api/components/ui/image)
-- [**Tab View**](/api/components/ui/tabview)
-- [**Text**](/api/components/ui/text)
-- [**Web View**](/api/components/ui/webview)
+- [**Button**]({{< ref path="/api/components/ui/button" lang="en" >}})
+- [**Image**]({{< ref path="/api/components/ui/image" lang="en" >}})
+- [**Tab View**]({{< ref path="/api/components/ui/tabview" lang="en" >}})
+- [**Text**]({{< ref path="/api/components/ui/text" lang="en" >}})
+- [**Web View**]({{< ref path="/api/components/ui/webview" lang="en" >}})
   {{% /tab %}}
   {{< /tabs >}}

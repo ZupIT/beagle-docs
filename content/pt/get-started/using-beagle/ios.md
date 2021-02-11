@@ -13,14 +13,14 @@ description: >-
 Depois de ter o **Beagle** instalado em seu projeto, vamos te mostrar como renderizar uma tela e exibir seu primeiro **"Hello Beagle!"**.
 
 {{% alert color="warning" %}}
-Veja como [**instalar o Beagle**](/pt/get-started/installing-beagle/) caso ainda não tenha concluído esta etapa.
+Veja como [**instalar o Beagle**]({{< ref path="/get-started/installing-beagle/" lang="pt" >}}) caso ainda não tenha concluído esta etapa.
 {{% /alert %}}
 
 Atualmente, existem dois tipos de abordagens para a renderização de telas com o Beagle: **remota** e **declarativa.**
 
 #### Renderização Remota
 
-> Principal abordagem usada no Beagle por ser fundamentada no conceito de [**server-driven UI**](/pt/key-concepts#server-driven-ui). Ela permite que você construa layouts dinamicamente, consumindo as informações fornecidas por um [**BFF**](/pt/key-concepts#backend-for-frontend), por meio de uma URL remota.
+> Principal abordagem usada no Beagle por ser fundamentada no conceito de [**server-driven UI**]({{< ref path="/key-concepts#server-driven-ui" lang="pt" >}}). Ela permite que você construa layouts dinamicamente, consumindo as informações fornecidas por um [**BFF**]({{< ref path="/key-concepts#backend-for-frontend" lang="pt" >}}), por meio de uma URL remota.
 
 #### Renderização Declarativa
 
@@ -58,7 +58,7 @@ class MyBeagleScreen {
 ```
 
 {{% alert color="info" %}}
-Note que a **`Screen`** está sendo construída utilizando **`Flex`**. Para entender melhor esses componentes e suas propriedades, vá para a seção [**posicionamento de componentes**](/pt/resources/components-positioning/).
+Note que a **`Screen`** está sendo construída utilizando **`Flex`**. Para entender melhor esses componentes e suas propriedades, vá para a seção [**posicionamento de componentes**]({{< ref path="/resources/components-positioning/" lang="pt" >}}).
 {{% /alert %}}
 
 ### Passo 2: Instanciar o **BeagleScreenViewController**
@@ -76,7 +76,7 @@ let beagleViewController = Beagle.screen(
 ```
 
 {{% alert color="info" %}}
-Caso queira utilizar o tipo **`remote`**, veja [**como exibir uma tela Server-Driven UI**](/pt/tutorials/how-to-display-a-screen).
+Caso queira utilizar o tipo **`remote`**, veja [**como exibir uma tela Server-Driven UI**]({{< ref path="/tutorials/how-to-display-a-screen" lang="pt" >}}).
 {{% /alert %}}
 
 Feito isso, basta apresentá-la onde preferir.
@@ -103,4 +103,4 @@ Por fim, execute a sua aplicação e, se tudo estiver certo, você deverá ver u
 
 Nesta seção, você viu como criar sua primeira tela declarativa utilizando o **Beagle**, em sua forma mais simples, sem entrar no conceito de server-driven UI.
 
-👉Para entender melhor **como configurar o Beagle** e utilizá-lo aplicando o conceito de server-driven UI, veja como [**criar um projeto iOS do zero**](/pt/get-started/creating-a-project-from-scratch/case-ios/).
+👉Para entender melhor **como configurar o Beagle** e utilizá-lo aplicando o conceito de server-driven UI, veja como [**criar um projeto iOS do zero**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios/" lang="pt" >}}).

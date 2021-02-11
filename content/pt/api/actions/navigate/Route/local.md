@@ -14,7 +14,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo**                       | Obrigatório | **Definição**        |
 | :----------- | :----------------------------- | :---------: | :------------------- |
-| screen       | [Screen](/pt/api/screen/) |      ✓      | Tela a ser carregada |
+| screen       | [Screen]({{< ref path="/api/screen/" lang="pt" >}}) |      ✓      | Tela a ser carregada |
 
 ## Como usar?
 

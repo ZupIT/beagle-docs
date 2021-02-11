@@ -8,7 +8,7 @@ description: Descrição do componente Page Indicator.
 
 ## O que é?
 
-O `PageIndicator` é um componente que tem como funcionalidade indicar a quantidade de páginas e qual é a atual do [**PageView**](/pt/api/components/layout/pageview).
+O `PageIndicator` é um componente que tem como funcionalidade indicar a quantidade de páginas e qual é a atual do [**PageView**]({{< ref path="/api/components/layout/pageview" lang="pt" >}}).
 
 | Atributo        | Tipo            | Obrigatório | Definição                                                           |
 | :-------------- | :-------------- | :---------: | :------------------------------------------------------------------ |
@@ -19,4 +19,4 @@ O `PageIndicator` é um componente que tem como funcionalidade indicar a quantid
 
 ## Como usar?
 
-Um exemplo completo de como usar o `PageIndicator` está em [**PageView**](/pt/api/components/layout/pageview#como-usar).
+Um exemplo completo de como usar o `PageIndicator` está em [**PageView**]({{< ref path="/api/components/layout/pageview#como-usar" lang="pt" >}}).

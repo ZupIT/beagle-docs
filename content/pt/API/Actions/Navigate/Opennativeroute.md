@@ -22,7 +22,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 No exemplo abaixo, temos uma tela vinda do BFF com um botão que ao clicar nele, abre uma tela nativa.
 
-Para testar, é preciso configurar o [**Deep Link Handler**](/pt/resources/customization/beagle-for-android/deep-link-handler) para Android ou o **openNativeRoute,** no caso de aplicação iOS. Além disso, seu endpoint do BFF precisa retornar a tela do código abaixo e chamar esse endpoint no Frontend.
+Para testar, é preciso configurar o [**Deep Link Handler**]({{< ref path="/resources/customization/beagle-for-android/deep-link-handler" lang="pt" >}}) para Android ou o **openNativeRoute,** no caso de aplicação iOS. Além disso, seu endpoint do BFF precisa retornar a tela do código abaixo e chamar esse endpoint no Frontend.
 
 {{< tabs id="T110" >}}
 {{% tab name="JSON" %}}

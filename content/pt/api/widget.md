@@ -25,7 +25,7 @@ abstract class Widget : StyleComponent,
 }
 ```
 
-Abaixo listamos todos os atributos que um widget pode receber. Mas se quiser um exemplo de uso e como criar um widget, veja a seção [**posicionamento de componentes.**](/pt/resources/components-positioning/)
+Abaixo listamos todos os atributos que um widget pode receber. Mas se quiser um exemplo de uso e como criar um widget, veja a seção [**posicionamento de componentes.**]({{< ref path="/resources/components-positioning/" lang="pt" >}})
 
 ## Quais seus atributos?
 

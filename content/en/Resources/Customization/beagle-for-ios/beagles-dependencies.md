@@ -163,7 +163,7 @@ Validates the customization that it will be made when the **Form** widget will b
 
 ## DeepLinkHandler
 
-This handler is used for a [**deep link navigation**](/resources/customization/beagle-for-android/deep-link-handler/) action. The variable has a default value, you can add new screens or replace for other in the application. 
+This handler is used for a [**deep link navigation**]({{< ref path="/resources/customization/beagle-for-android/deep-link-handler/" lang="en" >}}) action. The variable has a default value, you can add new screens or replace for other in the application. 
 
 You will find how to add a screen with a possible deep linking routing using a default value below: 
 
@@ -211,13 +211,13 @@ class AnalyticsSample: Analytics {
 
 ## Navigation
 
-`navigation` deals with the [**navigate**](/api/actions/navigate) types of action in your application. There is one implementation that it is used with default value, but that it can be replaced for a [**BeagleNavigation**](/resources/customization/beagle-for-ios/navigation-animation) class. 
+`navigation` deals with the [**navigate**]({{< ref path="/api/actions/navigate" lang="en" >}}) types of action in your application. There is one implementation that it is used with default value, but that it can be replaced for a [**BeagleNavigation**]({{< ref path="/resources/customization/beagle-for-ios/navigation-animation" lang="en" >}}) class. 
 
-On this same attribute is also possible to define a [**navigation animation**](/resources/customization/beagle-for-android/navigation-animation). 
+On this same attribute is also possible to define a [**navigation animation**]({{< ref path="/resources/customization/beagle-for-android/navigation-animation" lang="en" >}}). 
 
 ## preFetchHelper
 
-This component is used to search  [**`BeagleScreenViewControllers`**](/resources/customization/beagle-for-android/navigation-animation) and delivers a fluid experience to the user. It already has a value, it can be altered to fit what you need.
+This component is used to search  [**`BeagleScreenViewControllers`**]({{< ref path="/resources/customization/beagle-for-android/navigation-animation" lang="en" >}}) and delivers a fluid experience to the user. It already has a value, it can be altered to fit what you need.
 
 The pre search is used when there is a navigataion widget in a way you can download all the data possible in the next screen, avoiding navigation delays. This behaviour can be deactivated.  
 

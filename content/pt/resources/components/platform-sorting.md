@@ -8,7 +8,7 @@ description: >-
 
 ---
 
-Alguns elementos fornecidos pelo Beagle podem ser mais direcionados à uma plataforma e, talvez, não fazer tanto sentido para outra. Por exemplo, o uso do [**ScrollView**](/pt/api/components/layout/scrollview) funciona melhor na plataforma Mobile, mas não é necessário na Web.
+Alguns elementos fornecidos pelo Beagle podem ser mais direcionados à uma plataforma e, talvez, não fazer tanto sentido para outra. Por exemplo, o uso do [**ScrollView**]({{< ref path="/api/components/layout/scrollview" lang="pt" >}}) funciona melhor na plataforma Mobile, mas não é necessário na Web.
 
 Isso acontece porque o Beagle possui a funcionalidade de **Especificação de Plataforma**, que te permite ter controle de quais elementos são enviados pelo BFF e quais plataformas serão usadas.
 
@@ -67,7 +67,7 @@ Button(text = "android only text").forPlatform(BeaglePlatform.ANDROID),
 Button(text = "text free for all")
 ```
 
-Se quiser saber como configurar esta funcionalidade, veja na seção de [**customização do Beagle**](/pt/resources/customization/beagle-for-backend).
+Se quiser saber como configurar esta funcionalidade, veja na seção de [**customização do Beagle**]({{< ref path="/resources/customization/beagle-for-backend" lang="pt" >}}).
 
 {{% alert color="info" %}}
 Caso utilize um dos Beagle starters, não é necessário realizar a configuração da funcionalidade manualmente, pois ela já vem pré-configurada.

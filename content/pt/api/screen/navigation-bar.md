@@ -16,7 +16,7 @@ Classe que define a barra superior com função de navegação. É composta pelo
 | showBackButton          | Boolean                                         |             | Habilita o botão de voltar na barra de ações/ navegação. Default é `true`. |
 | styleId                 | String                                          |             | Permite a customização local da barra de ações/navegação.                  |
 | navigationBarItems      | List&lt;NavigationBarItem&gt;                   |             | Define uma lista de itens da barra de ação/navegação.                      |
-| backButtonAccessibility | [**Accessibility**](/pt/api/accessibility) |             | Informações de acessibilidade do backButton.                               |
+| backButtonAccessibility | [**Accessibility**]({{< ref path="/api/accessibility" lang="pt" >}}) |             | Informações de acessibilidade do backButton.                               |
 
 ## O que é a NavigationBarItem?
 
@@ -25,9 +25,9 @@ Classe que define o item da `NavigationBar` que é composto por:
 | **Atributo**  | **Tipo**                                        | Obrigatório | Definição                                                            |
 | :------------ | :---------------------------------------------- | :---------: | :------------------------------------------------------------------- |
 | text          | String                                          |      ✓      | Título do item da barra.                                             |
-| image         | [**Image**](/pt/api/components/ui/image/)  |             | Imagem do item da barra.                                             |
-| action        | [**Action**](/pt/api/actions)              |      ✓      | Ação que deve ser realizada ao clicar no item da barra de navegação. |
-| accessibility | [**Accessibility**](/pt/api/accessibility) |             | Opções de acessibilidade para o navigation item.                     |
+| image         | [**Image**]({{< ref path="/api/components/ui/image/" lang="pt" >}})  |             | Imagem do item da barra.                                             |
+| action        | [**Action**]({{< ref path="/api/actions" lang="pt" >}})              |      ✓      | Ação que deve ser realizada ao clicar no item da barra de navegação. |
+| accessibility | [**Accessibility**]({{< ref path="/api/accessibility" lang="pt" >}}) |             | Opções de acessibilidade para o navigation item.                     |
 | id            | String                                          |             | Identificador do componente.                                         |
 
 ## **Como usar?**

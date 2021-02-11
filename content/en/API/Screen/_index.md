@@ -13,12 +13,12 @@ Your screen has attributes and components that can be used and configured. On th
 | **Attribute**          | **Type**                                                  | Required | **Definition**                                                                                        |
 | :--------------------- | :-------------------------------------------------------- | :------- | :---------------------------------------------------------------------------------------------------- |
 | identifier             | String                                                    |          | Attribute that globally identifies a screen in your application so you can attributes actions for it. |
-| safe area              | [**Safe Area**](/api/screen/safe-area)               |          | Specifies a screen's component position.                                                              |
-| navigation bar         | [**Navigation Bar**](/api/screen/navigation-bar)     |          | Allows action/navigation's bar on the screen.                                                         |
-| child                  | [**Server-Driven Component**](/api/components/)      | ✓        | Define screen's elements. It can be any visual component that extends to`ServerDrivenComponent`.      |
-| style                  | [**Style**](/api/widget#style-attributes)            |          | Provide visual customization options to the `screen.`                                                 |
-| screen analytics event | [**Screen Event**](/api/analytics#screenview-option) |          | Configure analytics elements to your screen.                                                          |
-| context                | [**ContextData**](/api/context/)                     |          | Screen's context.                                                                                     |
+| safe area              | [**Safe Area**]({{< ref path="/api/screen/safe-area" lang="en" >}})               |          | Specifies a screen's component position.                                                              |
+| navigation bar         | [**Navigation Bar**]({{< ref path="/api/screen/navigation-bar" lang="en" >}})     |          | Allows action/navigation's bar on the screen.                                                         |
+| child                  | [**Server-Driven Component**]({{< ref path="/api/components/" lang="en" >}})      | ✓        | Define screen's elements. It can be any visual component that extends to`ServerDrivenComponent`.      |
+| style                  | [**Style**]({{< ref path="/api/widget#style-attributes" lang="en" >}})            |          | Provide visual customization options to the `screen.`                                                 |
+| screen analytics event | [**Screen Event**]({{< ref path="/api/analytics#screenview-option" lang="en" >}}) |          | Configure analytics elements to your screen.                                                          |
+| context                | [**ContextData**]({{< ref path="/api/context/" lang="en" >}})                     |          | Screen's context.                                                                                     |
 
 ## How to use it?
 

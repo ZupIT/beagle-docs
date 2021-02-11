@@ -7,7 +7,7 @@ description: You can find description of Form and its attributes.
 ---
 
 {{% alert color="warning" %}}
-This component is **deprecated**! It is recomended to use [**Simple Form**](/api/components/forms/simple-form).
+This component is **deprecated**! It is recomended to use [**Simple Form**]({{< ref path="/api/components/forms/simple-form" lang="en" >}}).
 {{% /alert %}}
 
 The component represents a way to build user input and send these values to your backend.

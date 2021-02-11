@@ -19,11 +19,11 @@ On the example below, there is a server-driven button in a native screen, and th
 
 For this configuration to work correctly, you need:
 
-- A configured [**BFF**](/key-concepts#backend-for-frontend) with Beagle, in case you haven't configured yet, check out this [**tutorial**](/get-started/creating-a-project-from-scratch/case-backend).
+- A configured [**BFF**]({{< ref path="/key-concepts#backend-for-frontend" lang="en" >}}) with Beagle, in case you haven't configured yet, check out this [**tutorial**]({{< ref path="/get-started/creating-a-project-from-scratch/case-backend" lang="en" >}}).
 
 - A configured frontend with Beagle in Android or iOS. Check out the tutorial below:
-  - [**Android**](/get-started/creating-a-project-from-scratch/case-android/)
-  - [**iOS**](/get-started/creating-a-project-from-scratch/case-ios/)
+  - [**Android**]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/" lang="en" >}})
+  - [**iOS**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios/" lang="en" >}})
 
 ## Step 1: Create a component in the backend
 
@@ -219,8 +219,8 @@ The structure of **loadView** is:
 | **Attribute** | **Type**                                                                                                                                                                                           | Required | **Definition**                                                   |
 | :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------: | :--------------------------------------------------------------- |
 | activity      | [**AppCompatActivity**](https://developer.android.com/reference/androidx/appcompat/app/AppCompatActivity/)/[**Fragment**](https://developer.android.com/reference/androidx/fragment/app/Fragment/) |    ✓     | Defines the activity or fragment that is using a loadview        |
-| screenRequest | [**ScreenRequest**](/api/reference/br.com.zup.beagle.android.view/-screen-request/-screen-request/)                                                                                           |    ✓     | Sets parameters when calling the remote screen                   |
-| listener      | **OnServerStateChanged = (serverState: [ServerDrivenState](/api/reference/br.com.zup.beagle.android.view/-server-driven-state/)) -> Unit**                                                    |          | Defines the listener that configures callbacks for screen states |
+| screenRequest | [**ScreenRequest**]({{< ref path="/api/reference/br.com.zup.beagle.android.view/-screen-request/-screen-request/" lang="en" >}})                                                                                           |    ✓     | Sets parameters when calling the remote screen                   |
+| listener      | **OnServerStateChanged = (serverState: [ServerDrivenState]({{< ref path="/api/reference/br.com.zup.beagle.android.view/-server-driven-state/" lang="en" >}})) -> Unit**                                                    |          | Defines the listener that configures callbacks for screen states |
 
 <br />
 
@@ -304,9 +304,9 @@ At the end of the process, you will "call" the native screen that will shown up 
 {{% /tab %}}
 
 {{% tab name="WEB" %}}
-If you haven't configured you library yet, [**check out on how to do it**.](/get-started/using-beagle/web)
+If you haven't configured you library yet, [**check out on how to do it**.]({{< ref path="/get-started/using-beagle/web" lang="en" >}})
 
-You have to use [**Remote View**](/resources/customization/beagle-for-web/remote-view-parameters), you can find on Beagle's library, to create hybrid screen with some server-driven components on the web.
+You have to use [**Remote View**]({{< ref path="/resources/customization/beagle-for-web/remote-view-parameters" lang="en" >}}), you can find on Beagle's library, to create hybrid screen with some server-driven components on the web.
 
 See below how each framework works:
 

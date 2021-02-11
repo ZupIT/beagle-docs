@@ -14,7 +14,7 @@ Your structure is represented by the attribute below:
 
 | **Attribute** | Type                                           | Required | Definition        |
 | :------------ | :--------------------------------------------- | :------- | :---------------- |
-| route         | [**Route**](/api/actions/navigate/route/) | ✓        | Navigation route. |
+| route         | [**Route**]({{< ref path="/api/actions/navigate/route/" lang="en" >}}) | ✓        | Navigation route. |
 
 ## How to use it?
 

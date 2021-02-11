@@ -15,9 +15,9 @@ Beagle Movies is a movie application developed using Beagle's framework. It is p
 
 ### Payload size
 
-Generally **a [**Server-Driven UI**](/key-concepts#server-driven-ui) payload is bigger than the native one**, because the whole layout structure comes from the payload, while the native one has only the information to be showed.
+Generally **a [**Server-Driven UI**]({{< ref path="/key-concepts#server-driven-ui" lang="en" >}}) payload is bigger than the native one**, because the whole layout structure comes from the payload, while the native one has only the information to be showed.
 
-Despite that, in some screens the payload is inferior than the server-drive. This happens, because the [**BFF \(Backend For Frontend\)**](/key-concepts#backend-for-frontend) filters the data that it is not used in the application and it does not send the payload.
+Despite that, in some screens the payload is inferior than the server-drive. This happens, because the [**BFF \(Backend For Frontend\)**]({{< ref path="/key-concepts#backend-for-frontend" lang="en" >}}) filters the data that it is not used in the application and it does not send the payload.
 
 | Screens          | Server-Driven screen responses \(in KB\) | Native screens response \(in KB\) |
 | :--------------- | :--------------------------------------- | :-------------------------------- |
@@ -26,7 +26,7 @@ Despite that, in some screens the payload is inferior than the server-drive. Thi
 | Search           | 12,8 KB                                  | 14,45 KB                          |
 | **Test results** | **438,84 KB**                            | **318,55 KB**                     |
 
-To more complex screens, the server-driven payload will be bigger. It is important to mention that Beagle uses a [cache](/resources/cache/) mechanism and this test is only considered in the first request.
+To more complex screens, the server-driven payload will be bigger. It is important to mention that Beagle uses a [cache]({{< ref path="/resources/cache/" lang="en" >}}) mechanism and this test is only considered in the first request.
 
 {{% alert color="info" %}}
 The advantage of using Beagle is that **you only develop the screen once**, while in other native screens you will have to develop one for every platform.

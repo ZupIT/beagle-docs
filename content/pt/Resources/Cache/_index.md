@@ -23,7 +23,7 @@ As entradas nesta camada do cache têm duração por tempo, definida nas configu
 
 Você pode checar como **configurar o cache** de acordo com sua plataforma, no link abaixo:
 
-- [**Configurando o cache**](/pt/resources/cache/how-to-configure-cache#configurando-e-customizando-o-cache)
+- [**Configurando o cache**]({{< ref path="/resources/cache/how-to-configure-cache#configurando-e-customizando-o-cache" lang="pt" >}})
 
 ### Cache persistente
 
@@ -34,7 +34,7 @@ Nesta camada de cache, existem duas localizações. São elas:
 
 Este cache é usado para otimizar a resposta do BFF - tanto em tempo quanto em tamanho -, em casos que não há mudança. As entradas neste cache duram até o servidor refazer o deploy ou o cliente ser reinstalado.
 
-A premissa para que este cache funcione é que ele deve sempre retornar o mesmo JSON para a mesma requisição. Para que uma requisição seja considerada igual, é necessário que tenha o mesmo endpoint e a mesma plataforma especificada como mostra nossa [**especificação de plataformas**.](/pt/resources/components/platform-sorting)
+A premissa para que este cache funcione é que ele deve sempre retornar o mesmo JSON para a mesma requisição. Para que uma requisição seja considerada igual, é necessário que tenha o mesmo endpoint e a mesma plataforma especificada como mostra nossa [**especificação de plataformas**.]({{< ref path="/resources/components/platform-sorting" lang="pt" >}})
 
 {{% alert color="danger" %}}
 É importante destacar que o mecanismo de cache **não deve** ser utilizado em **endpoints** que não atendam a essa **premissa**. Ele pode ser ativado ou desativado no BFF por endpoint ou para o BFF inteiro.
@@ -50,6 +50,6 @@ Quando o BFF responde com o `status 304`, o aplicativo carrega do elemento em ca
 
 ## Próximos passos
 
-👉 Veja como fazer as [**configurações de cache**](/pt/resources/cache/how-to-configure-cache#configurando-e-customizando-o-cache) de acordo com cada plataforma \(Android, iOS, Web e Backend\).
+👉 Veja como fazer as [**configurações de cache**]({{< ref path="/resources/cache/how-to-configure-cache#configurando-e-customizando-o-cache" lang="pt" >}}) de acordo com cada plataforma \(Android, iOS, Web e Backend\).
 
-👉Confira o [**funcionamento do cache**](/pt/resources/cache/how-to-configure-cache#como-funciona-o-cache) de acordo com seus tipos \(confiável e não confiável\)
+👉Confira o [**funcionamento do cache**]({{< ref path="/resources/cache/how-to-configure-cache#como-funciona-o-cache" lang="pt" >}}) de acordo com seus tipos \(confiável e não confiável\)

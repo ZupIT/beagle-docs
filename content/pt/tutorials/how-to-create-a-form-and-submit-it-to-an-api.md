@@ -8,24 +8,24 @@ description: "Nesta seção, você confere como criar um formulário e submetê-
 
 ## Introdução
 
-Para este tutorial, iremos usar algumas [**ações**](/pt/api/actions) e também APIs:
+Para este tutorial, iremos usar algumas [**ações**]({{< ref path="/api/actions" lang="pt" >}}) e também APIs:
 
 **Actions**
 
-- [**SetContext**](/pt/api/actions/setcontext)
-- [**SendRequest**](/pt/api/actions/sendrequest)
+- [**SetContext**]({{< ref path="/api/actions/setcontext" lang="pt" >}})
+- [**SendRequest**]({{< ref path="/api/actions/sendrequest" lang="pt" >}})
 
 **APIs**
 
-- [**Context**](/pt/api/context/)
-- [**Binding**](/pt/api/context#binding)
-- [**Expressões**](/pt/api/context#binding)
+- [**Context**]({{< ref path="/api/context/" lang="pt" >}})
+- [**Binding**]({{< ref path="/api/context#binding" lang="pt" >}})
+- [**Expressões**]({{< ref path="/api/context#binding" lang="pt" >}})
 
-Apesar do conceito [**Server-Driven**](/pt/key-concepts#server-driven-ui) trabalhar componentes separadamente, é possível realizar a transmissão das informações para uma API e é o que vamos demonstrar abaixo.
+Apesar do conceito [**Server-Driven**]({{< ref path="/key-concepts#server-driven-ui" lang="pt" >}}) trabalhar componentes separadamente, é possível realizar a transmissão das informações para uma API e é o que vamos demonstrar abaixo.
 
 ## Exemplo de Uso
 
-Neste exemplo, iremos utilizar os componentes [**TextInput**](/pt/api/components/ui/textinput) e [**Button**](/pt/api/components/ui/button) para simularmos uma tela de Login.
+Neste exemplo, iremos utilizar os componentes [**TextInput**]({{< ref path="/api/components/ui/textinput" lang="pt" >}}) e [**Button**]({{< ref path="/api/components/ui/button" lang="pt" >}}) para simularmos uma tela de Login.
 
 ### Passo 1: Criar uma tela de Login
 
@@ -73,7 +73,7 @@ Container(
 
 ### Passo 2: Configurar o SetContext
 
-Agora utilize uma **ação** chamada [**SetContext**](/pt/api/actions/setcontext), que altera um [**contexto**](/pt/api/context) **específico** em uma tela. Isto é necessário para dar vida à tela e fazer com que os dados que forem digitados nela sejam enviados para uma API.
+Agora utilize uma **ação** chamada [**SetContext**]({{< ref path="/api/actions/setcontext" lang="pt" >}}), que altera um [**contexto**]({{< ref path="/api/context" lang="pt" >}}) **específico** em uma tela. Isto é necessário para dar vida à tela e fazer com que os dados que forem digitados nela sejam enviados para uma API.
 
 Neste cenário, o contexto é que irá guardar os dados digitados de nome do usuário e da senha para que, posteriormente, encaminhar estes dados para a API.
 
@@ -173,7 +173,7 @@ Container(
 {{% /tab %}}
 {{< /tabs >}}
 
-Neste exemplo, utilizamos o evento `onChange` do próprio TextInput que é chamado sempre que o usuário digita um texto novo no input. Dentro do onChange, existe um [**contexto implícito**](/pt/api/context#2-contextos-implícitos) chamado `onChange` no qual o `value` é o último valor digitado pelo usuário.
+Neste exemplo, utilizamos o evento `onChange` do próprio TextInput que é chamado sempre que o usuário digita um texto novo no input. Dentro do onChange, existe um [**contexto implícito**]({{< ref path="/api/context#2-contextos-implícitos" lang="pt" >}}) chamado `onChange` no qual o `value` é o último valor digitado pelo usuário.
 
 #### OnChange
 
@@ -199,7 +199,7 @@ Até o momento, o que fizemos foi "salvar" estes valores no contexto para que, a
 Esta etapa não tem nenhuma diferença visual do passo anterior.
 {{% /alert %}}
 
-Para finalizar o fluxo de Login, vamos agora adicionar uma [**Action**](/pt/api/actions) chamada [**SendRequest**](/pt/api/actions/sendrequest) que, basicamente, permite fazer uma requisição HTTP e, no caso do `onSuccess`, mostrar um [**Alert**](/pt/api/actions/alert) dando boas-vindas ao usuário.
+Para finalizar o fluxo de Login, vamos agora adicionar uma [**Action**]({{< ref path="/api/actions" lang="pt" >}}) chamada [**SendRequest**]({{< ref path="/api/actions/sendrequest" lang="pt" >}}) que, basicamente, permite fazer uma requisição HTTP e, no caso do `onSuccess`, mostrar um [**Alert**]({{< ref path="/api/actions/alert" lang="pt" >}}) dando boas-vindas ao usuário.
 
 {{< tabs id="T103" >}}
 {{% tab name="JSON" %}}
@@ -349,4 +349,4 @@ Ao executar este código, você deve preencher os campos e pressionar o botão "
 
 Feito isso, o evento `onPress` irá executar o SendRequest enviando os dados que estão dentro do Context com o ID `credentials`.
 
-Assim que o SendRequest for feito e a requisição for concluída, o evento `onSuccess` irá executar a [**Action Alert**](/pt/api/actions/alert) que irá mostrar um alerta contendo os dados retornados da API.
+Assim que o SendRequest for feito e a requisição for concluída, o evento `onSuccess` irá executar a [**Action Alert**]({{< ref path="/api/actions/alert" lang="pt" >}}) que irá mostrar um alerta contendo os dados retornados da API.

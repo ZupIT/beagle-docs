@@ -19,7 +19,7 @@ The setContext structure is:
 | path | String |   |  Specific context point for changing value in case of arrays and maps &lt;key, value&gt;. |
 
 {{% alert color="info" %}}
-Get to know more about [**Beagle context**](/api/context/). 
+Get to know more about [**Beagle context**]({{< ref path="/api/context/" lang="en" >}}). 
 {{% /alert %}}
 
 ## How to use it?

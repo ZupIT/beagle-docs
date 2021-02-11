@@ -8,7 +8,7 @@ description: >-
 
 ---
 
-O Beagle Web oferece algumas estratégias de cache, entre elas o [**protocolo de cache padrão do Beagle guiado pelo backend**](/pt/resources/cache#como-o-protocolo-de-cache-funciona).
+O Beagle Web oferece algumas estratégias de cache, entre elas o [**protocolo de cache padrão do Beagle guiado pelo backend**]({{< ref path="/resources/cache#como-o-protocolo-de-cache-funciona" lang="pt" >}}).
 
 Outras estratégias que você pode usar são:
 
@@ -54,7 +54,7 @@ Se o seu backend estiver com cache desabilitado, os payloads da árvore serão s
 
 ### **2. beagle-cache-only**
 
-Estratégia que implementa apenas no caso do [**protocolo de cache do Beagle**](/pt/resources/cache#como-o-protocolo-de-cache-funciona). Isso significa que ela funciona igual à estratégia padrão, mas sem o fallback.
+Estratégia que implementa apenas no caso do [**protocolo de cache do Beagle**]({{< ref path="/resources/cache#como-o-protocolo-de-cache-funciona" lang="pt" >}}). Isso significa que ela funciona igual à estratégia padrão, mas sem o fallback.
 
 Quando você habilita essa estratégia, a árvore que está no cache só é utilizada se tiver um max-age válido ou se receber o status de 304 do backend.
 

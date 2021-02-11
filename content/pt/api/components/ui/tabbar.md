@@ -36,7 +36,7 @@ Se o título e ícone não forem declarados no `Tab Item`, o espaço vazio perma
 
 ## Como usar?
 
-No exemplo a seguir, são utilizados outros componentes para explicar o TabBar: o [**PageView**](/pt/api/components/layout/pageview) e o [**Contexto**](/pt/api/context/).
+No exemplo a seguir, são utilizados outros componentes para explicar o TabBar: o [**PageView**]({{< ref path="/api/components/layout/pageview" lang="pt" >}}) e o [**Contexto**]({{< ref path="/api/context/" lang="pt" >}}).
 
 O **Page View** é utilizado para renderizar as páginas que se quer exibir de acordo com cada aba, ou seja, ele vai criar a visualização de cada uma delas. É nele que você vai definir os componentes que quer exibir ao clicar em cada aba.
 

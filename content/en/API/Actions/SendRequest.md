@@ -15,13 +15,13 @@ The Send Request structure is:
 
 | Attribute | Type | Required | Definition |
 | :--- | :--- | :---: | :--- |
-| url | String or [**Binding**](/api/context#bindings) | ✓ | Server URL. |
-| method | RequestActionMethod or [**Binding**](/api/context#bindings) | ✓ | HTTP method. |
-| headers | Map &lt;String, String&gt; or [**Binding**](/api/context#bindings) |   | Header items for the request. |
+| url | String or [**Binding**]({{< ref path="/api/context#bindings" lang="en" >}}) | ✓ | Server URL. |
+| method | RequestActionMethod or [**Binding**]({{< ref path="/api/context#bindings" lang="en" >}}) | ✓ | HTTP method. |
+| headers | Map &lt;String, String&gt; or [**Binding**]({{< ref path="/api/context#bindings" lang="en" >}}) |   | Header items for the request. |
 | data | Any |   | Content that will be deliver with the request. |
-| onSuccess | List&lt;[**Action**](/api/actions)&gt; |   | Success action. |
-| onError | List&lt;[**Action**](/api/actions)&gt; |   | Error action. |
-| onFinish | List&lt;[**Action**](/api/actions)&gt; |   | Finish action. |
+| onSuccess | List&lt;[**Action**]({{< ref path="/api/actions" lang="en" >}})&gt; |   | Success action. |
+| onError | List&lt;[**Action**]({{< ref path="/api/actions" lang="en" >}})&gt; |   | Error action. |
+| onFinish | List&lt;[**Action**]({{< ref path="/api/actions" lang="en" >}})&gt; |   | Finish action. |
 
 ## How to use it?
 

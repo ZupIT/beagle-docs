@@ -10,6 +10,6 @@ Route defines how the navigation must be loaded.
 
 You will find below the description of the Route's types available on Beagle:
 
-### [Local](/api/actions/navigate/route/local)
+### [Local]({{< ref path="/api/actions/navigate/route/local" lang="en" >}})
 
-### [Remote](/api/actions/navigate/route/remote)
+### [Remote]({{< ref path="/api/actions/navigate/route/remote" lang="en" >}})

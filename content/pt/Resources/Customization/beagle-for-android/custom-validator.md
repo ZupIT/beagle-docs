@@ -9,7 +9,7 @@ description: >-
 ---
 
 {{% alert color="danger" %}}
-Este componente foi descontinuado na versão 1.1.0 e será removido em uma versão futura. Use [**SimpleForm**](/pt/api/components/forms/simple-form) em seu lugar
+Este componente foi descontinuado na versão 1.1.0 e será removido em uma versão futura. Use [**SimpleForm**]({{< ref path="/api/components/forms/simple-form" lang="pt" >}}) em seu lugar
 {{% /alert %}}
 
 ## Introdução
@@ -20,7 +20,7 @@ Além disso, esse **Validator** é listado no componente que recebe dados em um 
 
 ## Contexto do validador
 
-No Beagle, é possível usar o componente **Form** para capturar dados informados pelo usuário, validá-los e enviá-los ao [**BFF**](/pt/key-concepts#backend-for-frontend).
+No Beagle, é possível usar o componente **Form** para capturar dados informados pelo usuário, validá-los e enviá-los ao [**BFF**]({{< ref path="/key-concepts#backend-for-frontend" lang="pt" >}}).
 
 Essa validação pode tanto ocorrer quando o usuário ativa o FormSubmit e/ou quando o usuário notifica que o estado de seu `InputWidget(FormInput)` mudou, como por exemplo, quando ditamos um texto ou quando o campo perde o foco.
 

@@ -14,7 +14,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo**                                       | Obrigatório | **Definição**      |
 | :----------- | :--------------------------------------------- | :---------: | :----------------- |
-| route        | ​[Route](/pt/api/actions/navigate/route)​ |      ✓      | Rota de navegação. |
+| route        | ​[Route]({{< ref path="/api/actions/navigate/route" lang="pt" >}})​ |      ✓      | Rota de navegação. |
 
 ## Como usar?
 

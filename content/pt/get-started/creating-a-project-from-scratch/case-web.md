@@ -164,7 +164,7 @@ export default createBeagleUIService({
 
 ### Crie o JSON para ser renderizado
 
-Para uma melhor experiência o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**](/pt/get-started/installing-beagle/backend/), neste exemplo usaremos o JSON que está disponibilizado na URL http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/welcome:
+Para uma melhor experiência o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**]({{< ref path="/get-started/installing-beagle/backend/" lang="pt" >}}), neste exemplo usaremos o JSON que está disponibilizado na URL http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/welcome:
 
 {{% alert color="info" %}}
 JSON utilizado como exemplo.

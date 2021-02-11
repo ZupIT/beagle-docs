@@ -24,5 +24,5 @@ Essa biblioteca já é mais indicada pra usuários de Beagle mais experientes e 
 {{% alert color="warning" %}}
 Se você deseja usar o Beagle para um aplicativo em produção, recomendamos que você configure um projeto
  do zero usando nossa
- [**documentação**](/pt/get-started/creating-a-project-from-scratch/case-ios/)
+ [**documentação**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios/" lang="pt" >}})
 {{% /alert %}}

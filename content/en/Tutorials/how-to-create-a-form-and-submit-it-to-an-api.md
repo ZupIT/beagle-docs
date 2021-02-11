@@ -8,20 +8,20 @@ description: "On this section, you will find how to create a form and submit it 
 
 ## Introduction
 
-For this tutorial, you'll use some [**actions**](/api/actions/) and APIs:
+For this tutorial, you'll use some [**actions**]({{< ref path="/api/actions/" lang="en" >}}) and APIs:
 
 **Actions**
 
-- [**SetContext**](/api/actions/setcontext)
-- [**SendRequest**](/api/actions/sendrequest)
+- [**SetContext**]({{< ref path="/api/actions/setcontext" lang="en" >}})
+- [**SendRequest**]({{< ref path="/api/actions/sendrequest" lang="en" >}})
 
 **APIs**
 
-- [**Context**](/api/context/)
-- [**Binding**](/api/context#bindings)
-- [**Expressões**](/api/context#bindings)
+- [**Context**]({{< ref path="/api/context/" lang="en" >}})
+- [**Binding**]({{< ref path="/api/context#bindings" lang="en" >}})
+- [**Expressões**]({{< ref path="/api/context#bindings" lang="en" >}})
 
-Despite the [**Server-Driven**](/key-concepts#server-driven-ui) concept of working with components separatedly, it is possible to stream information to an API. Check out below:
+Despite the [**Server-Driven**]({{< ref path="/key-concepts#server-driven-ui" lang="en" >}}) concept of working with components separatedly, it is possible to stream information to an API. Check out below:
 
 ## Use example
 
@@ -73,7 +73,7 @@ Container(
 
 ### Step 2: Configure SetContext
 
-Now use the [**SetContext**](/api/actions/setcontext) action that alters a **specific** [**context**](/api/context) on a screen. This is necessary to bring the screen to life and make the typed data on them sent to an API.
+Now use the [**SetContext**]({{< ref path="/api/actions/setcontext" lang="en" >}}) action that alters a **specific** [**context**]({{< ref path="/api/context" lang="en" >}}) on a screen. This is necessary to bring the screen to life and make the typed data on them sent to an API.
 
 On this scenario, the context will keep the user name and password typed data, so this same data will be forwarded to an API.
 
@@ -173,7 +173,7 @@ Container(
 {{% /tab %}}
 {{< /tabs >}}
 
-On this example, the `onChange` event of the TextInput is always called when the user types a new text in the input. Inside the onChange, there is an implicit context [**implicit context**](/api/context/#2-implicit-context) called `onChange` where the value is the last typed `value` by the user.
+On this example, the `onChange` event of the TextInput is always called when the user types a new text in the input. Inside the onChange, there is an implicit context [**implicit context**]({{< ref path="/api/context/#2-implicit-context" lang="en" >}}) called `onChange` where the value is the last typed `value` by the user.
 
 #### OnChange
 
@@ -201,7 +201,7 @@ You already have "saved" these context values so that on this step you can send 
 This step does not have any visual difference from the last step.
 {{% /alert %}}
 
-To finish the Login flow, you will now add an [**Action**](/api/actions) called [**SendRequest**](/api/actions/sendrequest), that basically allows you to make a HTTP request, and on the `onSuccess` case, show an [**Alert**](/api/actions/alert) welcoming the user.
+To finish the Login flow, you will now add an [**Action**]({{< ref path="/api/actions" lang="en" >}}) called [**SendRequest**]({{< ref path="/api/actions/sendrequest" lang="en" >}}), that basically allows you to make a HTTP request, and on the `onSuccess` case, show an [**Alert**]({{< ref path="/api/actions/alert" lang="en" >}}) welcoming the user.
 
 {{< tabs id="T103" >}}
 {{% tab name="JSON" %}}
@@ -351,4 +351,4 @@ When running this code, you have to fill in the fields and press the "Login" but
 
 After that, the `onPress` event will perform SendRequest sending all the data that are inside the context with the `credentials` ID.
 
-When the SendRequest it is done, the response is finished, the `onSuccess` event will perform an [**Action Alert**](/api/actions/alert) that it will show an alert with the returned data from the API.
+When the SendRequest it is done, the response is finished, the `onSuccess` event will perform an [**Action Alert**]({{< ref path="/api/actions/alert" lang="en" >}}) that it will show an alert with the returned data from the API.

@@ -15,7 +15,7 @@ A sua estrutura é representada como mostrado abaixo:
 | Atributo     | Tipo                                              | Obrigatório | Definição                                                                                       |
 | :----------- | :------------------------------------------------ | :---------: | :---------------------------------------------------------------------------------------------- |
 | path         | String                                            |      ✓      | A URL que realiza a requisição.                                                                 |
-| initialState | [ServerDrivenComponent](/pt/api/components/) |      ✓      | Componente server driven que é apresentado enquanto uma requisição assíncrona está sendo feita. |
+| initialState | [ServerDrivenComponent]({{< ref path="/api/components/" lang="pt" >}}) |      ✓      | Componente server driven que é apresentado enquanto uma requisição assíncrona está sendo feita. |
 
 ## Como usar?
 

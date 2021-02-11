@@ -14,7 +14,7 @@ Your structure is represented by the attributes below:
 
 | **Attribute** | **Type**                                                                                               | Required | **Definition**                                                      |
 | :------------ | :----------------------------------------------------------------------------------------------------- | :------- | :------------------------------------------------------------------ |
-| path          | [**ImagePath**](/api/components/ui/image/imagepath) or [**Binding**](/api/context/#bindings) | ✓        | Refers to a local image or URL of a remote image to be exhibited.   |
+| path          | [**ImagePath**]({{< ref path="/api/components/ui/image/imagepath" lang="en" >}}) or [**Binding**]({{< ref path="/api/context/#bindings" lang="en" >}}) | ✓        | Refers to a local image or URL of a remote image to be exhibited.   |
 | mode          | ImageContentMode                                                                                       |          | Responsible to control how the image will be internally controlled. |
 
 ## How to use it?

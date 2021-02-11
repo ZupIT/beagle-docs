@@ -125,4 +125,4 @@ Uma tela de amostra com todos os componentes do Beagle será exibida na tela do 
 <hr>
 
 ##### Para saber mais sobre o Beagle: Por favor verifique nosso [Beagle](https://github.com/ZupIT/beagle) repositório.
-##### Para saber mais sobre o  Beagle-Scaffold: Por favor verifique sua documentação em [Beagle-Scaffold](/pt/get-started/using-beagle-helpers/android/beagle-scaffold).
+##### Para saber mais sobre o  Beagle-Scaffold: Por favor verifique sua documentação em [Beagle-Scaffold]({{< ref path="/get-started/using-beagle-helpers/android/beagle-scaffold" lang="pt" >}}).

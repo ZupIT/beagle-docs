@@ -10,7 +10,7 @@ description: >-
 
 Atualmente, existem dois tipos de abordagens para a renderização de telas com o Beagle: **remota** e **local.**
 
-Neste tutorial abaixo, vamos fazer a configuração e construir uma tela local. Para aprender como configurar e construir uma tela remota, siga no tutorial [**criando um projeto do zero**](/pt/get-started/creating-a-project-from-scratch/case-android)
+Neste tutorial abaixo, vamos fazer a configuração e construir uma tela local. Para aprender como configurar e construir uma tela remota, siga no tutorial [**criando um projeto do zero**]({{< ref path="/get-started/creating-a-project-from-scratch/case-android" lang="pt" >}})
 
 ## **Configuração de uso**
 
@@ -56,7 +56,7 @@ defaultConfig {
 ```
 
 {{% alert color="info" %}}
-Você pode criar o Design System agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-lo. Para saber mais, confira a seção sobre [**Design System com Beagle para Android**](/pt/get-started/creating-a-project-from-scratch/case-android/design-system-with-beagle-android).
+Você pode criar o Design System agora, mas neste momento é possível prosseguir com os próximos passos sem configurá-lo. Para saber mais, confira a seção sobre [**Design System com Beagle para Android**]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/design-system-with-beagle-android" lang="pt" >}}).
 {{% /alert %}}
 
 ### **Passo 3: Criar o BeagleSetup**
@@ -239,7 +239,7 @@ Neste tutorial, focamos em uma configuração de tela simples para você entende
 
 Antes de usar o Beagle, fique atento a **configuração da build de release e o ProGuard.**
 
-Mesmo não sendo necessário neste momento, é bom ter em mente que você precisará [**configurar o ProGuard**](/pt/resources/customization/beagle-for-android/proguard-configuration) para ativar o ofuscamento do seu código quando estiver publicando releases.
+Mesmo não sendo necessário neste momento, é bom ter em mente que você precisará [**configurar o ProGuard**]({{< ref path="/resources/customization/beagle-for-android/proguard-configuration" lang="pt" >}}) para ativar o ofuscamento do seu código quando estiver publicando releases.
 
 {{% alert color="info" %}}
 As classes anotadas como `BeagleComponent` e `RegisterValidator`não podem implementar parâmetros nos seus construtores, pois no caso do Beagle esses construtores precisam estar vazios.

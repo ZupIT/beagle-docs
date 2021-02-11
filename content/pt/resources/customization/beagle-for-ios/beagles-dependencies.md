@@ -168,7 +168,7 @@ Valida a customização que será realizada quando o widget **Form** for utiliza
 
 ## DeepLinkHandler
 
-Este handler é usado para uma ação de [**deep link navigation**](/pt/resources/customization/beagle-for-android/deep-link-handler). A variável possui um valor default, você pode adicionar novas telas ou substituir por outras na aplicação.
+Este handler é usado para uma ação de [**deep link navigation**]({{< ref path="/resources/customization/beagle-for-android/deep-link-handler" lang="pt" >}}). A variável possui um valor default, você pode adicionar novas telas ou substituir por outras na aplicação.
 
 Abaixo, você encontra um comando de como adicionar uma tela com um possível roteamento para deep linking usando um valor default:
 
@@ -216,13 +216,13 @@ class AnalyticsSample: Analytics {
 
 ## Navigation
 
-O `navigation` lida com tipo de ações de [**navigate**](/pt/api/actions/navigate/) da sua aplicação. Existe uma implementação que é usada como valor default, mas que também pode ser substituída por uma classe que está de acordo com BeagleNavigation
+O `navigation` lida com tipo de ações de [**navigate**]({{< ref path="/api/actions/navigate/" lang="pt" >}}) da sua aplicação. Existe uma implementação que é usada como valor default, mas que também pode ser substituída por uma classe que está de acordo com BeagleNavigation
 
-Nesse mesmo atributo também é possível definir uma [**animação de navegação**](/pt/resources/customization/beagle-for-ios/navigation-animation).
+Nesse mesmo atributo também é possível definir uma [**animação de navegação**]({{< ref path="/resources/customization/beagle-for-ios/navigation-animation" lang="pt" >}}).
 
 ## PreFetchHelper
 
-Este componente é usado como pré-busca do [**`BeagleScreenViewControllers`**](/pt/resources/customization/beagle-for-ios/screen-view-controller) e entrega uma experiência para o usuário mais fluida. Ela já possui um valor e pode ser alterado para se adequar em que você precisa.
+Este componente é usado como pré-busca do [**`BeagleScreenViewControllers`**]({{< ref path="/resources/customization/beagle-for-ios/screen-view-controller" lang="pt" >}}) e entrega uma experiência para o usuário mais fluida. Ela já possui um valor e pode ser alterado para se adequar em que você precisa.
 
 A pré-busca é acionada quando há um **navigation widget** de modo que você possa fazer um pré carregamento dos dados das possíveis próximas telas, evitando delays na navegação. Este comportamento pode ser desativado.
 

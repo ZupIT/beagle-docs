@@ -14,9 +14,9 @@ Its structure is represented as shown below:
 
 | Attribute | Type                                                          | Required | Definition                                                     |
 | :-------- | :------------------------------------------------------------ | :------- | :------------------------------------------------------------- |
-| ​onSubmit | List &lt;[**Action**](/api/actions)&gt;                  | ✓        | Action array that this button can trigger when a form is sent. |
-| children  | List&lt;[**ServerDrivenComponent**](/api/components)&gt; | ✓        | Defines the visual components list \(server driven\).          |
-| context   | **​**[**ContextData**](/api/context)**​**                | ​        | Adds a context to the simple form                              |
+| ​onSubmit | List &lt;[**Action**]({{< ref path="/api/actions" lang="en" >}})&gt;                  | ✓        | Action array that this button can trigger when a form is sent. |
+| children  | List&lt;[**ServerDrivenComponent**]({{< ref path="/api/components" lang="en" >}})&gt; | ✓        | Defines the visual components list \(server driven\).          |
+| context   | **​**[**ContextData**]({{< ref path="/api/context" lang="en" >}})**​**                | ​        | Adds a context to the simple form                              |
 
 ## How to use it?
 
@@ -30,12 +30,12 @@ When creating a form it is important to understand two steps respectively
 The TextInput component is the field in which the user or the system will fill in some information, and it is important to know its attributes in order to better use it. Here we will use one of its elements, which is the **onChange** function.
 
 {{% alert color="info" %}}
-For more information on this component go to the details of [TextInput](/api/components/ui/textinput).
+For more information on this component go to the details of [TextInput]({{< ref path="/api/components/ui/textinput" lang="en" >}}).
 {{% /alert %}}
 
 #### OnChange
 
-This function is part of the TextInput and it observes the changes made within its field, that is, whenever the value is modified, something is typed, deleted, etc, this function is called and activates a list of other [**actions**](/api/actions/) to happen whenever the value changes. It is in this list that we add a [**SetContext**](/api/actions/setcontext) action to set the [**Context**](/api/context/) value of the form and update the values ​​that are shown in the field.
+This function is part of the TextInput and it observes the changes made within its field, that is, whenever the value is modified, something is typed, deleted, etc, this function is called and activates a list of other [**actions**]({{< ref path="/api/actions/" lang="en" >}}) to happen whenever the value changes. It is in this list that we add a [**SetContext**]({{< ref path="/api/actions/setcontext" lang="en" >}}) action to set the [**Context**]({{< ref path="/api/context/" lang="en" >}}) value of the form and update the values ​​that are shown in the field.
 
 Check out the example below on how its implemented a `SimpleForm`
 
@@ -116,6 +116,6 @@ SimpleForm(
 
 It is a function of a simple form that performs a list of actions. It is called when the form is submitted.
 
-To submit a form, you must use the SubmitForm action and call it, just implement it in a [**Button**](/api/components/ui/button) that is part of a simple form, that is, that is in your list of children.
+To submit a form, you must use the SubmitForm action and call it, just implement it in a [**Button**]({{< ref path="/api/components/ui/button" lang="en" >}}) that is part of a simple form, that is, that is in your list of children.
 
-When you click this button, the onSubmit is activated and the list of actions will be performed. It is this list of actions that will define what should happen with the information in this form, if they will be sent to a backend \(through the [**sendRequest** ](/api/actions/sendrequest)action\), etc.
+When you click this button, the onSubmit is activated and the list of actions will be performed. It is this list of actions that will define what should happen with the information in this form, if they will be sent to a backend \(through the [**sendRequest** ]({{< ref path="/api/actions/sendrequest" lang="en" >}})action\), etc.

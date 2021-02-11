@@ -8,7 +8,7 @@ description: "Nesta seção, você confere como criar Actions Customizadas para 
 
 ### Criando uma ação do frontend
 
-No Beagle, é possível criar uma [**ação**](/pt/api/actions) customizada a partir de uma `CustomAction`.
+No Beagle, é possível criar uma [**ação**]({{< ref path="/api/actions" lang="pt" >}}) customizada a partir de uma `CustomAction`.
 
 Cada plataforma possui sua forma especificia de fazer essa implementação no frontend. Você pode ver exemplos abaixo de como fazer em cada uma delas:
 
@@ -66,7 +66,7 @@ class CustomAction: Action {
 
 3. Para registrar a ação, apenas crie o método com todo seu custom action e chame o método do Beagle `registerCustomAction` para fazer o registro;
 
-4. Chame o método criado no BeagleConfig, ele pode ser visto nesse [**exemplo**](/pt/get-started/creating-a-project-from-scratch/case-ios):
+4. Chame o método criado no BeagleConfig, ele pode ser visto nesse [**exemplo**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios" lang="pt" >}}):
 
 ```swift
 private func registerCustomAction() {

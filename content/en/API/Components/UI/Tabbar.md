@@ -18,8 +18,8 @@ Your structure is represented by the attributes below:
 | :------------- | :----------------- | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | items          | TabBarItem         | ✓        | Receive a list of `TabBarItems` that will define the `Tabs` in the `TabBar`                                                                                      |
 | styleId        | String             |          | Style ID that identifies an style to be applied on the TabBar                                                                                                    |
-| currentTab     | Bind&lt;Int&gt;    |          | Integer number that identifies the selected [`TabBarItem`](/api/components/ui/tabview#what-is-tabitem)                                                      |
-| onTabSelection | List&lt;Action&gt; |          | List of [**Actions**](/api/actions/) that are performed when a TabBarItem is selected. It can be used to load views according to the selected `TabBarItem`. |
+| currentTab     | Bind&lt;Int&gt;    |          | Integer number that identifies the selected [`TabBarItem`]({{< ref path="/api/components/ui/tabview#what-is-tabitem" lang="en" >}})                                                      |
+| onTabSelection | List&lt;Action&gt; |          | List of [**Actions**]({{< ref path="/api/actions/" lang="en" >}}) that are performed when a TabBarItem is selected. It can be used to load views according to the selected `TabBarItem`. |
 
 ## What is Tab Bar **Item?**
 
@@ -31,12 +31,12 @@ This component represents the `TabBarItem` presented on a Tab Bar.
 | icon           | Path     |          | Displays a local image as an icon in the `Tab Bar Item`. If it is not declared or is set to null, it will not appear on the screen.                            |
 
 {{% alert color="warning" %}}
-If a title or icon is not declared in the `TabBarItem`, the empty space will remain. If you need navigation between viewers without the Tab interface, it is recommended that you use the [**navigation actions**](/api/actions/navigate/)
+If a title or icon is not declared in the `TabBarItem`, the empty space will remain. If you need navigation between viewers without the Tab interface, it is recommended that you use the [**navigation actions**]({{< ref path="/api/actions/navigate/" lang="en" >}})
 {{% /alert %}}
 
 ## How to use it?
 
-On the following example, it will be used two componentes to explain TabBar: [**PageView**](/api/components/layout/pageview) and [**Context**](/api/context/).
+On the following example, it will be used two componentes to explain TabBar: [**PageView**]({{< ref path="/api/components/layout/pageview" lang="en" >}}) and [**Context**]({{< ref path="/api/context/" lang="en" >}}).
 
 **Page View** is used to render the pages you want to display, that is, it will create the view on each selected tab. This is where you will define the components you want to display by clicking on each tab.
 

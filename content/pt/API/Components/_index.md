@@ -19,37 +19,37 @@ O Beagle possui **14** **componentes** atualmente divididos em **5 categorias**:
 {{< tabs id="T132" >}}
 {{% tab name="Layout" %}}
 
-- [**Container**](/pt/api/components/layout/container)
-- [**List View**](/pt/api/components/layout/listview)
-- [**PageView**](/pt/api/components/layout/pageview)
-- [**PageIndicator**](/pt/api/components/layout/pageindicator)
-- [**ScrollView**](/pt/api/components/layout/scrollview)
+- [**Container**]({{< ref path="/api/components/layout/container" lang="pt" >}})
+- [**List View**]({{< ref path="/api/components/layout/listview" lang="pt" >}})
+- [**PageView**]({{< ref path="/api/components/layout/pageview" lang="pt" >}})
+- [**PageIndicator**]({{< ref path="/api/components/layout/pageindicator" lang="pt" >}})
+- [**ScrollView**]({{< ref path="/api/components/layout/scrollview" lang="pt" >}})
   {{% /tab %}}
 
 {{% tab name="Formulários" %}}
 
-- [**Validator**](/pt/api/components/forms/validator)
-- [**Simple Form**](/pt/api/components/forms/simple-form)
-- [**Text Input** ](/pt/api/components/ui/textinput)
+- [**Validator**]({{< ref path="/api/components/forms/validator" lang="pt" >}})
+- [**Simple Form**]({{< ref path="/api/components/forms/simple-form" lang="pt" >}})
+- [**Text Input** ]({{< ref path="/api/components/ui/textinput" lang="pt" >}})
   {{% /tab %}}
 
 {{% tab name="Lazy" %}}
 
-- [Lazy](/pt/api/components/lazy)
+- [Lazy]({{< ref path="/api/components/lazy" lang="pt" >}})
   {{% /tab %}}
 
 {{% tab name="UI" %}}
 
-- [**Button**](/pt/api/components/ui/button)
-- [**Image**](/pt/api/components/ui/image/)
-- [**Tab Bar**](/pt/api/components/ui/tabbar)
-- [**Tab View**](/pt/api/components/ui/tabview)
-- [**Text**](/pt/api/components/ui/text)
-- [**Web View**](/pt/api/components/ui/webview)
+- [**Button**]({{< ref path="/api/components/ui/button" lang="pt" >}})
+- [**Image**]({{< ref path="/api/components/ui/image/" lang="pt" >}})
+- [**Tab Bar**]({{< ref path="/api/components/ui/tabbar" lang="pt" >}})
+- [**Tab View**]({{< ref path="/api/components/ui/tabview" lang="pt" >}})
+- [**Text**]({{< ref path="/api/components/ui/text" lang="pt" >}})
+- [**Web View**]({{< ref path="/api/components/ui/webview" lang="pt" >}})
   {{% /tab %}}
 
 {{% tab name="Touchable" %}}
 
-- [Touchable](/pt/api/components/touchable)
+- [Touchable]({{< ref path="/api/components/touchable" lang="pt" >}})
   {{% /tab %}}
   {{< /tabs >}}

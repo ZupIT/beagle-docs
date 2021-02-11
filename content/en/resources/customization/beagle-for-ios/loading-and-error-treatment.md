@@ -103,13 +103,13 @@ When an error occurs on the application, Beagle changes the screen state \(`stat
 The **possibles errors** are:
 
 - `remoteScreen(Request.Error)`: When the request to load a remote screen fails. Check out on the example below when it happens.
-- `lazyLoad(Request.Error)`: When the request to load a [**Lazy component**](/api/components/lazy) fails. Check out on the example below when it happens.
-- `action(Swift.Error)`: When an [**`Action`**](/api/actions/) 's execution fails.
+- `lazyLoad(Request.Error)`: When the request to load a [**Lazy component**]({{< ref path="/api/components/lazy" lang="en" >}}) fails. Check out on the example below when it happens.
+- `action(Swift.Error)`: When an [**`Action`**]({{< ref path="/api/actions/" lang="en" >}}) 's execution fails.
 
 **Errors on a request** \(`Request.Error`\):
 
-- `urlBuilderError`: When the resource URL or a [**`baseURL`**](/resources/customization/beagle-for-ios/beagles-dependencies#urlbuilder) is invalid.
-- `networkError`: When it's not possible to establish a connection or an error was returned from the [**BFF**](/key-concepts#backend-for-frontend).
+- `urlBuilderError`: When the resource URL or a [**`baseURL`**]({{< ref path="/resources/customization/beagle-for-ios/beagles-dependencies#urlbuilder" lang="en" >}}) is invalid.
+- `networkError`: When it's not possible to establish a connection or an error was returned from the [**BFF**]({{< ref path="/key-concepts#backend-for-frontend" lang="en" >}}).
 - `decoding`: When the answer sent from BFF is different than the object expected.
 
 {{% alert color="info" %}}

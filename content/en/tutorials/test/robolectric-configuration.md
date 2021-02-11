@@ -14,7 +14,7 @@ It's necessary to configure a dependency of Yoga Layout called **SoLoader**, tha
  
 
 {{% alert color="info" %}}
-It's worth to remember that Beagle uses **Yoga Layout** to [**position the screen components**](/resources/components-positioning/).
+It's worth to remember that Beagle uses **Yoga Layout** to [**position the screen components**]({{< ref path="/resources/components-positioning/" lang="en" >}}).
 
 {{% /alert %}}
 

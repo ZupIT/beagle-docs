@@ -92,4 +92,4 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 <hr>
 
 ##### For more on Beagle: please check our [Beagle](https://github.com/ZupIT/beagle) repository.
-##### For more on Beagle-Defaults: Please check our [Beagle-Default](/get-started/using-beagle-helpers/ios/beagle-defaults) documentation.
+##### For more on Beagle-Defaults: Please check our [Beagle-Default]({{< ref path="/get-started/using-beagle-helpers/ios/beagle-defaults" lang="en" >}}) documentation.

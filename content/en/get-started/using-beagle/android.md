@@ -10,11 +10,11 @@ description: >-
 
 Currently, there are two types of approaches to render screens with Beagle: **remote** and **local.**
 
-In this tutorial below, you will do the configuration and build a local screen. To learn how to configure and build a remote screen, follow the tutorial [**creating a project from scratch**](/get-started/creating-a-project-from-scratch/case-android)
+In this tutorial below, you will do the configuration and build a local screen. To learn how to configure and build a remote screen, follow the tutorial [**creating a project from scratch**]({{< ref path="/get-started/creating-a-project-from-scratch/case-android" lang="en" >}})
 
 ## **Usage configurations**
 
-Once you have finished [**Beagle's installation**](/get-started/installing-beagle/android), you have to make now our tool's usage configuration. To make this process easier, we'll use an example of **how to render a** **"Hello Beagle! screen** with a small description.
+Once you have finished [**Beagle's installation**]({{< ref path="/get-started/installing-beagle/android" lang="en" >}}), you have to make now our tool's usage configuration. To make this process easier, we'll use an example of **how to render a** **"Hello Beagle! screen** with a small description.
 
 ### **Step 1: Create a BeagleConfig class**
 
@@ -85,7 +85,7 @@ defaultConfig {
 ```
 
 {{% alert color="info" %}}
-You can set a Design System now, at this point it is not necessary, just proceed without configuring. But, if you wanna know more about it, check [**this section about Design System for Android**](/get-started/creating-a-project-from-scratch/case-android/design-system-with-beagle-android).
+You can set a Design System now, at this point it is not necessary, just proceed without configuring. But, if you wanna know more about it, check [**this section about Design System for Android**]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/design-system-with-beagle-android" lang="en" >}}).
 {{% /alert %}}
 
 ### **Step 3: Create a BeagleSetup**
@@ -274,7 +274,7 @@ This tutorial focused in a simple screen configuration, so you could understand 
 
 Before you use Beagle, stay tuned about: the **release build configuration and ProGuard.**
 
-Even though it's not necessary at this moment, it's good to have in mind that you'll have to [**configure the ProGuard**](/resources/customization/beagle-for-android/proguard-configuration) to activate the obfuscate code when you publish releases.
+Even though it's not necessary at this moment, it's good to have in mind that you'll have to [**configure the ProGuard**]({{< ref path="/resources/customization/beagle-for-android/proguard-configuration" lang="en" >}}) to activate the obfuscate code when you publish releases.
 
 {{% alert color="info" %}}
 The annotated classes like `BeagleComponent` and `RegisterValidator` can't implement parameters in your constructors because, on Beagle, these constructors must be empty.

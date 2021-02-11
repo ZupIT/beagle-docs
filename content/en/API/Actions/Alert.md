@@ -14,9 +14,9 @@ Alert structure is:
 
 | Attribute | Type                                                | Required | Definition                  |
 | :-------- | :-------------------------------------------------- | :------- | :-------------------------- |
-| title     | String or [**Binding**](/api/context#bindings) |          | Box alert title.            |
-| message   | String or [**Binding**](/api/context#bindings) | ✓        | Box alert message.          |
-| onPressOk | [**Action**](/api/actions)                     |          | Confirmation button action. |
+| title     | String or [**Binding**]({{< ref path="/api/context#bindings" lang="en" >}}) |          | Box alert title.            |
+| message   | String or [**Binding**]({{< ref path="/api/context#bindings" lang="en" >}}) | ✓        | Box alert message.          |
+| onPressOk | [**Action**]({{< ref path="/api/actions" lang="en" >}})                     |          | Confirmation button action. |
 | labelOk   | String                                              |          | Confirmation button label.  |
 
 ## How to use it?

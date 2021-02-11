@@ -9,7 +9,7 @@ description: >-
 ---
 
 {{% alert color="danger" %}}
-Este componente foi depreciado na versão 1.1.0 do Beagle e será removido em uma versão futura. Utilize o componente [TabBar](/pt/api/components/ui/tabbar) no lugar do Tab View
+Este componente foi depreciado na versão 1.1.0 do Beagle e será removido em uma versão futura. Utilize o componente [TabBar]({{< ref path="/api/components/ui/tabbar" lang="pt" >}}) no lugar do Tab View
 {{% /alert %}}
 
 ## O que é Tab View?

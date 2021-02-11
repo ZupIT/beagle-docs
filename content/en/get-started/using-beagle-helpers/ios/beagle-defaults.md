@@ -32,4 +32,4 @@ All implementations can be changed up to your preferences, this is but a quick B
 <hr>
 
 ##### For more on Beagle: Please check our [Beagle](https://github.com/ZupIT/beagle) repository.
-##### For more on Beagle-Scaffold: Please check our [Beagle-Scaffold](/get-started/using-beagle-helpers/ios/beagle-scaffold) documentation.
+##### For more on Beagle-Scaffold: Please check our [Beagle-Scaffold]({{< ref path="/get-started/using-beagle-helpers/ios/beagle-scaffold" lang="en" >}}) documentation.

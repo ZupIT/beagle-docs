@@ -104,7 +104,7 @@ override fun getToolbar(): Toolbar = findViewById<Toolbar>(R.id.toolbar)
 
 ### 3. Tratamento de erros
 
-Você pode observar os estados e tratar os erros a partir do [`onServerDrivenContainerStateChanged()`](/pt/resources/customization/beagle-for-android/loading-and-errors-treatment)
+Você pode observar os estados e tratar os erros a partir do [`onServerDrivenContainerStateChanged()`]({{< ref path="/resources/customization/beagle-for-android/loading-and-errors-treatment" lang="pt" >}})
 
 ```kotlin
 override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {

@@ -23,7 +23,7 @@ Você deve seguir tal como o comando abaixo:
 {{% alert color="warning" %}}
 Certifique-se de listar a sua Beagle Activity assim como nomeada em seu AndroidManifest.
 
-No exemplo abaixo a chamamos somente de &lt;BeagleActivity&gt;. Esse nome é você quem define ao criar sua BeagleActivity. Em nosso tutorial [**Criando um projeto do zero** ](/pt/get-started/creating-a-project-from-scratch/case-android), chamamos ela de `AppBeagleActivity`
+No exemplo abaixo a chamamos somente de &lt;BeagleActivity&gt;. Esse nome é você quem define ao criar sua BeagleActivity. Em nosso tutorial [**Criando um projeto do zero** ]({{< ref path="/get-started/creating-a-project-from-scratch/case-android" lang="pt" >}}), chamamos ela de `AppBeagleActivity`
 {{% /alert %}}
 
 ```kotlin
@@ -50,11 +50,11 @@ startActivity(intent)
 
 A`ScreenRequest` é uma classe interna do Beagle utilizada para solicitar qual tela você deseja exibir. Você listará apenas o atributo URL referente a página que deseja carregar vinda do BFF.
 
-No entanto, esse elemento possui outros atributos, que podem ser utilizados na transição e entre telas. Para saber mais sobre essa classe, veja em [**Screen Request**](/pt/api/screen-request)
+No entanto, esse elemento possui outros atributos, que podem ser utilizados na transição e entre telas. Para saber mais sobre essa classe, veja em [**Screen Request**]({{< ref path="/api/screen-request" lang="pt" >}})
 {{% /tab %}}
 
 {{% tab name="iOS" %}}
-Para renderizar uma tela [**server-driven**](/pt/key-concepts#server-driven-ui), basta criar uma instância **`BeagleScreenViewController`** do tipo **`remote`** e fazer a inicialização com a URL do seu [**BFF**](/pt/key-concepts#backend-for-frontend), como no exemplo abaixo:
+Para renderizar uma tela [**server-driven**]({{< ref path="/key-concepts#server-driven-ui" lang="pt" >}}), basta criar uma instância **`BeagleScreenViewController`** do tipo **`remote`** e fazer a inicialização com a URL do seu [**BFF**]({{< ref path="/key-concepts#backend-for-frontend" lang="pt" >}}), como no exemplo abaixo:
 
 ```kotlin
 let beagleViewController = Beagle.screen(
@@ -94,7 +94,7 @@ Para definir onde você quer mostrar uma tela server-driven no Angular, você de
 {{% alert color="info" %}}
 Este componente tem outros atributos que podem ser configurados. No entanto nessa implementação você utilizará somente o atributo path, descrito no exemplo abaixo.
 
-Para mais detalhes sobre esse componente clique no link a seguir e verifique os detalhes do [**Remote View**](/pt/resources/customization/beagle-for-web/remote-view-parameters)
+Para mais detalhes sobre esse componente clique no link a seguir e verifique os detalhes do [**Remote View**]({{< ref path="/resources/customization/beagle-for-web/remote-view-parameters" lang="pt" >}})
 {{% /alert %}}
 
 No arquivo html do seu componente, adicione o `remote view`.

@@ -87,7 +87,7 @@ class MyAppNavigationController: BeagleNavigationController {
 }
 ```
 
-Caso queira manter o estilo original de carregamento, basta executar a implementação padrão e seguir para o [**tratamento de erros**](/pt/resources/customization/beagle-for-ios/loading-and-error-treatment).
+Caso queira manter o estilo original de carregamento, basta executar a implementação padrão e seguir para o [**tratamento de erros**]({{< ref path="/resources/customization/beagle-for-ios/loading-and-error-treatment" lang="pt" >}}).
 
 ```swift
 override func serverDrivenStateDidChange(
@@ -106,12 +106,12 @@ Quando ocorre algum erro na aplicação, o Beagle altera o estado da tela \(`sta
 Os **possíveis erros** são:
 
 - `remoteScreen(Request.Error)`: A requisição para carregar uma tela remota falhou. Veja abaixo quando isso ocorre.
-- `lazyLoad(Request.Error)`: A requisição para carregar um [**componente Lazy**](/pt/api/components/lazy) falhou. Veja abaixo quando isso ocorre.
-- `action(Swift.Error)`: A execução de uma [**Action**](/pt/api/actions) falhou.
+- `lazyLoad(Request.Error)`: A requisição para carregar um [**componente Lazy**]({{< ref path="/api/components/lazy" lang="pt" >}}) falhou. Veja abaixo quando isso ocorre.
+- `action(Swift.Error)`: A execução de uma [**Action**]({{< ref path="/api/actions" lang="pt" >}}) falhou.
 
 **Erros em uma requisição** \(`Request.Error`\):
 
-- `urlBuilderError`: A URL do recurso ou a [**baseURL**](/pt/resources/customization/beagle-for-ios/beagles-dependencies#urlbuilder) é inválida.
+- `urlBuilderError`: A URL do recurso ou a [**baseURL**]({{< ref path="/resources/customization/beagle-for-ios/beagles-dependencies#urlbuilder" lang="pt" >}}) é inválida.
 - `networkError`: Não foi possível estabelecer a conexão ou um erro foi retornado pelo BFF.
 - `decoding`: A resposta enviado pelo BFF é diferente do objeto esperado.
 

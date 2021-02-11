@@ -14,7 +14,7 @@ A estrutura é representada como mostrado abaixo:
 
 | Atributo  | Tipo                                                  | Obrigatório | Definição                                                           |
 | :-------- | :---------------------------------------------------- | :---------: | :------------------------------------------------------------------ |
-| text      | String ou [**Binding**](/pt/api/context#binding) |      ✓      | Define o conteúdo em texto a ser exibido.                           |
+| text      | String ou [**Binding**]({{< ref path="/api/context#binding" lang="pt" >}}) |      ✓      | Define o conteúdo em texto a ser exibido.                           |
 | styleId   | String                                                |             | Referencia o estilo configurado localmente a ser aplicado no texto. |
 | textColor | String                                                |             | Define a cor do texto em hexadecimal.                               |
 | alignment | [**TextAlignment**](#textalignment)                   |             | Define o alinhamento do conteúdo do texto.                          |

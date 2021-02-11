@@ -56,7 +56,7 @@ Siga os passos abaixo para importar o projeto que você criou. Primeiro, abra o 
 
 ### Passo 1: Configurar o projeto
 
-Como ponto de partida, siga nosso [**passo a passo para instalar o backend**](/pt/get-started/installing-beagle/backend).
+Como ponto de partida, siga nosso [**passo a passo para instalar o backend**]({{< ref path="/get-started/installing-beagle/backend" lang="pt" >}}).
 
 ### Passo 2: Definir a Estrutura
 
@@ -240,8 +240,8 @@ Para que o serviço de backend seja consumido, você deve ter o front-end prepar
 
 Para saber mais sobre como configurar o seu ambiente frontend, veja mais em:
 
-👉 Tutorial do Beagle para [**Android**](/pt/get-started/creating-a-project-from-scratch/case-android/).
+👉 Tutorial do Beagle para [**Android**]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/" lang="pt" >}}).
 
-👉Tutorial do Beagle para [**iOS**](/pt/get-started/creating-a-project-from-scratch/case-ios).
+👉Tutorial do Beagle para [**iOS**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios" lang="pt" >}}).
 
-👉Tutorial do Beagle para [**Web**](/pt/get-started/creating-a-project-from-scratch/case-web).
+👉Tutorial do Beagle para [**Web**]({{< ref path="/get-started/creating-a-project-from-scratch/case-web" lang="pt" >}}).

@@ -13,7 +13,7 @@ description: Page View components description and its attributes details
 {{% alert color="info" %}}
 The Page View refers to its view size on mobile devices \(Android or iOS\). This size is determined by the father that it is in, which means that the width and the height will also be defined by the component father.
 
-For example, a Page View can be declared inside of a [**Container**](/api/components/layout/container) and the width and the height will define the page view size.
+For example, a Page View can be declared inside of a [**Container**]({{< ref path="/api/components/layout/container" lang="en" >}}) and the width and the height will define the page view size.
 {{% /alert %}}
 
 See how the structure is represented:

@@ -12,7 +12,7 @@ description: >-
 
 Na biblioteca do Beagle para iOS, existe a classe `AppTheme` que permite personalizar os componentes utilizados na sua aplicação.
 
-Esta classe mapeia os estilos de um aplicativo para que seja possível referenciá-los no [**BFF**](/pt/key-concepts#backend-for-frontend) ao construir uma tela [**Server-Driven**](/pt/key-concepts#server-driven-ui).
+Esta classe mapeia os estilos de um aplicativo para que seja possível referenciá-los no [**BFF**]({{< ref path="/key-concepts#backend-for-frontend" lang="pt" >}}) ao construir uma tela [**Server-Driven**]({{< ref path="/key-concepts#server-driven-ui" lang="pt" >}}).
 
 Isso possibilita personalizar, por exemplo:
 

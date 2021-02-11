@@ -61,4 +61,4 @@ Button(
 
 The example above associates the action "beagle:alert" to the event onPress of the beagle:button component. When you press the button where the title is "Click to show message", a message will be shown on the screen with the text "Hello World!".
 
-Every event in any component or action can be associated with any Beagle Action. An alert action was used in the previous example, but any other can be used. To make a request when clicking the button, the action "beagle:sendRequest" could be used. For more information [**about all available actions**, **access here**.](/api/actions)
+Every event in any component or action can be associated with any Beagle Action. An alert action was used in the previous example, but any other can be used. To make a request when clicking the button, the action "beagle:sendRequest" could be used. For more information [**about all available actions**, **access here**.]({{< ref path="/api/actions" lang="en" >}})

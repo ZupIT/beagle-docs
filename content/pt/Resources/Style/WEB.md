@@ -250,5 +250,5 @@ Por fim, você tem a possibilidade de adicionar propriedades no modelo de layout
 ```
 
 {{% alert color="info" %}}
-Além dessas funcionalidades, alguns componentes possuem propriedades específicas como mudança na cor do texto ou alinhamento. Conheça mais sobre os [**componentes do Beagle**](/pt/api/components/)
+Além dessas funcionalidades, alguns componentes possuem propriedades específicas como mudança na cor do texto ou alinhamento. Conheça mais sobre os [**componentes do Beagle**]({{< ref path="/api/components/" lang="pt" >}})
 {{% /alert %}}

@@ -25,7 +25,7 @@ The entries on this cache layer has time duration defined by cache general confi
 
 You can check out how to **configure the cache** according to your frontend's platform on the following links:
 
-- [**Configuring Cache**](/resources/cache/how-to-configure-cache)
+- [**Configuring Cache**]({{< ref path="/resources/cache/how-to-configure-cache" lang="en" >}})
 
 ### Persistent cache
 
@@ -36,13 +36,13 @@ On this cache layer, there are two types of localization:
 
 This cache is used to optimize BFF's response - in terms of time and size -, in cases where there is no changes. The entries of this cache lasts until the server redeploy or the client is reinstalled.
 
-The premisse to this cache works is that it has to always return the same JSON to the same request. To guarantee that, it's necessary that this cache is the same according to its endpoint and specific platform as we can see in [**component's platform specification.**](/resources/components/platform-sorting)
+The premisse to this cache works is that it has to always return the same JSON to the same request. To guarantee that, it's necessary that this cache is the same according to its endpoint and specific platform as we can see in [**component's platform specification.**]({{< ref path="/resources/components/platform-sorting" lang="en" >}})
 
 In other words, an endpoint can return a static element because it can only work if it returns the same JSON, independently of any other specific platform.
 
 {{% alert color="danger" %}}
 It's important to remember that cache's mechanism **must not** be used with **endpoints** that does not meet this **premisse**.
-The cache can be activated or disabled on BFF by endpoint or for an entire BFF. You can **check out** [**how to configure a cache.** ](/resources/cache/how-to-configure-cache/)
+The cache can be activated or disabled on BFF by endpoint or for an entire BFF. You can **check out** [**how to configure a cache.** ]({{< ref path="/resources/cache/how-to-configure-cache/" lang="en" >}})
 {{% /alert %}}
 
 ## How does the cache protocol works?
@@ -55,6 +55,6 @@ When BFF responds with the `status 304`, the application loads the element in ca
 
 ## Next Steps
 
-👉 See how to [**configure cache**](/resources/cache/how-to-configure-cache/#configuring-and-customizing-the-cache) according to each platform \(Android, iOS, Web e Backend\).
+👉 See how to [**configure cache**]({{< ref path="/resources/cache/how-to-configure-cache/#configuring-and-customizing-the-cache" lang="en" >}}) according to each platform \(Android, iOS, Web e Backend\).
 
-👉Check out [**how cache works** ](/resources/cache/how-to-configure-cache/#how-does-cache-work)according to its types \(reliable and unreliable\).
+👉Check out [**how cache works** ]({{< ref path="/resources/cache/how-to-configure-cache/#how-does-cache-work" lang="en" >}})according to its types \(reliable and unreliable\).

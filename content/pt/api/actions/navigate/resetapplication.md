@@ -14,11 +14,11 @@ A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo**                                        | Obrigatório | **Definição**      |
 | :----------- | :---------------------------------------------- | :---------: | :----------------- |
-| route        | ​[Route](/pt/api/actions/navigate/route/)​ |      ✓      | Rota de navegação. |
+| route        | ​[Route]({{< ref path="/api/actions/navigate/route/" lang="pt" >}})​ |      ✓      | Rota de navegação. |
 
 ## Como usar?
 
-No exemplo abaixo, foram utilizadas três telas: as duas primeiras utilizam o [**PushView** ](/pt/api/actions/navigate/pushview)para adicionar as telas na pilha, já a última faz uso do **ResetApplication** e reabre na primeira tela.
+No exemplo abaixo, foram utilizadas três telas: as duas primeiras utilizam o [**PushView** ]({{< ref path="/api/actions/navigate/pushview" lang="pt" >}})para adicionar as telas na pilha, já a última faz uso do **ResetApplication** e reabre na primeira tela.
 
 Para testar, iremos precisar de três endpoints:
 
