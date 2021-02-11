@@ -35,19 +35,19 @@ Follow the steps below to filter the log messages:
 
 **Step 3:** insert the filters in the search bar, search only for log messages with the Network category in the subsystem ~~`br.com.zup.BeagleDemoApp`~~ 
 
-![](/1.png)
+![](/shared/1.png)
 
 **Step 4:**  when you open the `BeagleDemo` application, you will see two log messages with the network category, one will show that Beagle made a request and the other indicating the response. 
 
-![](/2.png)
+![](/shared/2.png)
 
 **Step 5:** error messages will be displayed with a yellow dot in the field `Type`, as showed below: 
 
-![](/3.png)
+![](/shared/3.png)
 
 **Step 6:** to select the second log message received with a Network filter, you will see a `verbosa` version of this response.  
 
-![](/4.png)
+![](/shared/4.png)
 
 **Step 7:** the body of the response contains the server-driven screen and all its attributes and specifications can be accessed. 
 

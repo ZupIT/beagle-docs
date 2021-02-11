@@ -182,4 +182,4 @@ fun screen() = Screen(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/customoperation.gif)
+![](/shared/customoperation.gif)

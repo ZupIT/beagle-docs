@@ -60,7 +60,7 @@ Button(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-MB0DuGx28NQeWEgD746%2F-MB0r5wLqOLNjqhX_8g_%2Fnavigate-remote.gif?alt=media&token=0b93b43c-8a51-40e8-b96d-76482546e719)
+![](/shared/assets%2F-M-Qy7jZbUpzGRP5GbCZ%2F-MB0DuGx28NQeWEgD746%2F-MB0r5wLqOLNjqhX_8g_%2Fnavigate-remote.gif?alt=media&token=0b93b43c-8a51-40e8-b96d-76482546e719)
 
 ## Types of navigation
 

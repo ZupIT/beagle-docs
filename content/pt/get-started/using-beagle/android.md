@@ -227,7 +227,7 @@ A função acima cria a estrutura JSON abaixo, que vai ser interpretada pelo Bea
 7. Clique em **`Run app`** e cheque a tela do emulador!  
    Você verá a tela a seguir:
 
-![](/captura-de-tela-2020-06-22-a-s-11.41.12.png)
+![](/shared/captura-de-tela-2020-06-22-a-s-11.41.12.png)
 
 {{% alert color="success" %}}
 Parabéns, você criou sua primeira tela com Beagle!

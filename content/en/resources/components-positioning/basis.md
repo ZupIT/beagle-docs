@@ -19,7 +19,7 @@ This property defines **the standard size of an item along the main axis**. It c
 
 Here you see the **`flexDirection: row`** is used to set the screen **`width` size:**
 
-![](/captura-de-tela-2020-06-04-a-s-15.48.12.png)
+![](/shared/captura-de-tela-2020-06-04-a-s-15.48.12.png)
 
 {{< tabs id="T63" >}}
 {{% tab name="Kotlin" %}}
@@ -86,7 +86,7 @@ private func screen() -> Screen {
 
 Here the **`flexDirection: column`** is used to set the screen `height` size
 
-![](/captura-de-tela-2020-06-04-a-s-16.01.56.png)
+![](/shared/captura-de-tela-2020-06-04-a-s-16.01.56.png)
 
 {{< tabs id="T64" >}}
 {{% tab name="Kotlin" %}}

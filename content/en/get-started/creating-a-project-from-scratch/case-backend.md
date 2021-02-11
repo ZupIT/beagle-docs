@@ -63,7 +63,7 @@ The second step is to create some packages to better organize the project. They 
 4. Repeat the process creating the other two packages, naming them **`service`** and **`controller`**
 5. After creating the packages, your screen should look like this:
 
-![](/image%20%2829%29.png)
+![](/shared/image%20%2829%29.png)
 
 ### Step 3: ‌ Create the application service
 
@@ -172,7 +172,7 @@ Click on the green triangle named **`run`**, or press and hold SHIFT + F10 to ru
 
 Your screen should look like this:
 
-![](/sem-titulo2.png)
+![](/shared/sem-titulo2.png)
 
 ### **Step 2: Make a request**
 

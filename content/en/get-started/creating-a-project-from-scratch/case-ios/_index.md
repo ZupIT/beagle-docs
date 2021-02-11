@@ -12,7 +12,7 @@ To create an iOS project for Beagle, you will need a Macbook with Xcode installe
 
 Before you start, first it's necessary to create a project on `Xcode`. To do so, your just have to open the program and name a project. For this example, we'll call as **Beagle Sample.** 
 
-![](/captura-de-tela-2020-04-08-a-s-10.35.19.png)
+![](/shared/captura-de-tela-2020-04-08-a-s-10.35.19.png)
 
 After you created the project, we'll need to add the dependencies and, for that, we'll use `CocoaPods`' manager.
 
@@ -63,7 +63,7 @@ pod install
 
 After the installation, you should open a file with a **`workspace.`** extension. For this example, we'll name it as`Beagle Sample.workspace`
 
-![](/captura-de-tela-2020-04-08-a-s-10.23.09.png)
+![](/shared/captura-de-tela-2020-04-08-a-s-10.23.09.png)
 
 ### Step 2: Configure Beagle
 
@@ -133,11 +133,11 @@ _**`Application Session Role` &gt;
 
 On the GIF below, you can see better how to remove these references:
 
-![](/main%20%282%29.gif)
+![](/shared/main%20%282%29.gif)
 
 Well done, now Beagle is configured for your iOS application! All you have to do is [**set up a backend**]({{< ref path="/get-started/creating-a-project-from-scratch/case-backend" lang="en" >}}) to answer to your server-driven application requests.
 
 Once you finished the configuration, start your application and you'll have your first server-driven screen!  
 You will see this screen: 
 
-![](/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)
+![](/shared/captura_de_tela_2020-04-07_a-s_17-removebg-preview-2-.png)
