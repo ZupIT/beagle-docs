@@ -27,7 +27,7 @@ ComposedComponent doesn't have a functionality, it is a backend exclusive resour
 
 If you have, for example, a component structure that repeats constantly , just like the image below: 
 
-![](/captura-de-tela-2020-07-30-a-s-18.09.49-1-.png)
+![](/shared/captura-de-tela-2020-07-30-a-s-18.09.49-1-.png)
 
 In this case, if you build a layout using DSL, the code would be like this: 
 

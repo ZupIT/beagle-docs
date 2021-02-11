@@ -317,7 +317,7 @@ Os itens são centralizados no eixo transversal:
 
 Os itens são alinhados a partir da base da primeira linha de texto de cada um:
 
-![](/captura-de-tela-2020-06-04-a-s-10.55.47.png)
+![](/shared/captura-de-tela-2020-06-04-a-s-10.55.47.png)
 
 {{< tabs id="T36" >}}
 {{% tab name="Kotlin" %}}

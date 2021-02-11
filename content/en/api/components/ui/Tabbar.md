@@ -141,7 +141,7 @@ Screen(
 
 |          Tab Bar          |
 | :-----------------------: |
-| ![](/beagle-tab-view.gif) |
+| ![](/shared/beagle-tab-view.gif) |
 
 ### 👉 [Test this component on the Web Playground](https://beagle-playground.netlify.app/#/demo/default-components/analytics.json)
 

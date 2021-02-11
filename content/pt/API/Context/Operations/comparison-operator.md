@@ -121,4 +121,4 @@ fun screen() = Screen(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/comparison.png)
+![](/shared/comparison.png)

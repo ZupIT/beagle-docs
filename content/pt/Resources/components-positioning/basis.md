@@ -21,7 +21,7 @@ Esta propriedade define o **tamanho padrão de um item ao longo do eixo principa
 
 Neste exemplo, você vê como a aplicação usando o **`flexDirection: row`** para manipular o **tamanho da largura** da tela.
 
-![](/captura-de-tela-2020-06-04-a-s-15.48.12.png)
+![](/shared/captura-de-tela-2020-06-04-a-s-15.48.12.png)
 
 {{< tabs id="T64" >}}
 {{% tab name="Kotlin" %}}
@@ -90,7 +90,7 @@ private func screen() -> Screen {
 
 Já neste exemplo, você vê como fica a aplicação usando o **`flexDirection: column`** para manipular o **tamanho da altura da tela.**
 
-![](/captura-de-tela-2020-06-04-a-s-16.01.56.png)
+![](/shared/captura-de-tela-2020-06-04-a-s-16.01.56.png)
 
 {{< tabs id="T65" >}}
 {{% tab name="Kotlin" %}}

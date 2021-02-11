@@ -230,4 +230,4 @@ And now the screen is ready! It is configured a context example, showing what ha
 
 At the end your screen must look like this one:
 
-![](/screenshot_1594752619.png)
+![](/shared/screenshot_1594752619.png)

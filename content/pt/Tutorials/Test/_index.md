@@ -29,7 +29,7 @@ Nos testes instrumentados do Beagle, as vezes um componente server-driven não t
 
 ### Exemplo de Teste Instrumentado Mobile
 
-![](/gif-teste.gif)
+![](/shared/gif-teste.gif)
 
 Neste exemplo, o objetivo é realizar um teste instrumentado na plataforma Android utilizando o framework Espresso. Para isso, você deve verificar a funcionalidade de seleção e inserção de valores em um componente `text field`, que é server-driven. 
 

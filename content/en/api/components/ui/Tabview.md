@@ -101,4 +101,4 @@ Screen(
 
 | TabView full screen | TabView with dividing screen |
 | :---: | :---: |
-| ![](/beagle-tab-view.gif) | ![](/beagle-tab-view-meia-tela.gif) |
+| ![](/shared/beagle-tab-view.gif) | ![](/shared/beagle-tab-view-meia-tela.gif) |

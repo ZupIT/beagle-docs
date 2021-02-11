@@ -18,6 +18,6 @@ You can access the playground through the following link:
 
 You will have access to the following demo project: 
 
-![](/image%20%2827%29.png)
+![](/shared/image%20%2827%29.png)
 
 The files menus are on the left, JSON files are centered and on the right you will see the JSON preview.

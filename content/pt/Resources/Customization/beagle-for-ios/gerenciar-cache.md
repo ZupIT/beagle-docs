@@ -59,7 +59,7 @@ Crie um arquivo do tipo `Data Model` que será usado para criar as entidades e r
 * 1: Crie uma entidade chamada Entity.
 * 2: Crie os atributos que deseja salvar, no caso serão os atributos da estrutura do `CacheReference`, que são **beaglehash**, **data**, **id** e o **timeOfCreation**.
 
-![](/imageEntidadesCoreData.png)
+![](/shared/imageEntidadesCoreData.png)
 
 ### Passo 2: Criar uma estrutura para passar os dados do Beagle para salvar no core data.
 

@@ -262,7 +262,7 @@ The function above creates a JSON structure, check it below, it will be interpre
 7. Click on **`Run app`** and check the emulator screen!  
    You will see this screen:
 
-![](/captura-de-tela-2020-06-22-a-s-11.41.12.png)
+![](/shared/captura-de-tela-2020-06-22-a-s-11.41.12.png)
 
 {{% alert color="success" %}}
 Well done, you created your first screen with Beagle!
