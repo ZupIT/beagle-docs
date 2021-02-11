@@ -54,14 +54,9 @@ function analytics(): AnalyticsProvider {
     console.log('Record', record)
   }
 
-  function getMaximumItemsInQueue() {
-    return 10
-  }
-
   return {
     getConfig,
-    createRecord,
-    getMaximumItemsInQueue
+    createRecord
   }
 }
 
@@ -93,7 +88,6 @@ class AnalyticsProviderImpl : AnalyticsProvider{
         Log.d("analytics", record.attributes.toString())
     }
     
-    override fun getMaximumItemsInQueue() = 200
 }
 ```
 
@@ -122,8 +116,6 @@ class MyAnalyticsProvider: AnalyticsProvider {
         print(record)
     }
 
-    // if this is `nil`, beagle will you use a default value
-    var maximumItemsInQueue: Int? = nil
 }
 ```
 
