@@ -60,7 +60,7 @@ fun getParentId(): Int
 
 ## ActivityRootView
 
-A classe ActivityRootView é responsavel por guardar a referência da Activity da qual um metodo [**loadView**]({{< ref path="/tutorials/adding-beagle-to-a-part-of-a-native-screen/adding-a-beagle-server-driven-component/" lang="pt" >}}) é chamado.
+A classe ActivityRootView é responsavel por guardar a referência da Activity da qual um metodo [**loadView**]({{< ref path="/tutorials/adding-beagle-to-a-part-of-a-native-screen/adding-a-beagle-server-driven-component" lang="pt" >}}) é chamado.
 
 ```kotlin
 class ActivityRootView(
@@ -85,7 +85,7 @@ class ActivityRootView(
 
 ## FragmentRootView
 
-A classe FragmentRootView é responsavel por guardar a referência do Fragment do qual um metodo [**loadView**]({{< ref path="/tutorials/adding-beagle-to-a-part-of-a-native-screen/adding-a-beagle-server-driven-component/" lang="pt" >}}) é chamado.
+A classe FragmentRootView é responsavel por guardar a referência do Fragment do qual um metodo [**loadView**]({{< ref path="/tutorials/adding-beagle-to-a-part-of-a-native-screen/adding-a-beagle-server-driven-component" lang="pt" >}}) é chamado.
 
 ```kotlin
 class FragmentRootView(

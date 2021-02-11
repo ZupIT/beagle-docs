@@ -42,7 +42,7 @@ In other words, an endpoint can return a static element because it can only work
 
 {{% alert color="danger" %}}
 It's important to remember that cache's mechanism **must not** be used with **endpoints** that does not meet this **premisse**.
-The cache can be activated or disabled on BFF by endpoint or for an entire BFF. You can **check out** [**how to configure a cache.** ]({{< ref path="/resources/cache/how-to-configure-cache/" lang="en" >}})
+The cache can be activated or disabled on BFF by endpoint or for an entire BFF. You can **check out** [**how to configure a cache.** ]({{< ref path="/resources/cache/how-to-configure-cache" lang="en" >}})
 {{% /alert %}}
 
 ## How does the cache protocol works?
@@ -55,6 +55,6 @@ When BFF responds with the `status 304`, the application loads the element in ca
 
 ## Next Steps
 
-👉 See how to [**configure cache**]({{< ref path="/resources/cache/how-to-configure-cache/#configuring-and-customizing-the-cache" lang="en" >}}) according to each platform \(Android, iOS, Web e Backend\).
+👉 See how to [**configure cache**]({{< ref path="/resources/cache/how-to-configure-cache#configuring-and-customizing-the-cache" lang="en" >}}) according to each platform \(Android, iOS, Web e Backend\).
 
-👉Check out [**how cache works** ]({{< ref path="/resources/cache/how-to-configure-cache/#how-does-cache-work" lang="en" >}})according to its types \(reliable and unreliable\).
+👉Check out [**how cache works** ]({{< ref path="/resources/cache/how-to-configure-cache#how-does-cache-work" lang="en" >}})according to its types \(reliable and unreliable\).
