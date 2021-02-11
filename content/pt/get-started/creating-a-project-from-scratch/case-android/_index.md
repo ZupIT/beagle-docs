@@ -156,11 +156,11 @@ Agora que seu projeto está criado, você deve fazer as configurações do **Bea
 {{% alert color="warning" %}}
 O `Beagle` não fornece uma configuração de ** Rede **, ** Cache ** e ** Logger ** padrão em seus componentes internos, sendo necessário implementá-los para que o Beagle funcione conforme o esperado. Você pode criar suas próprias configurações seguindo os exemplos abaixo:
 
-[**👉 Acesse Camada de rede:**]({{< ref path="/resources/customization/beagle-for-android/network-client/" lang="pt" >}})
+[**👉 Acesse Camada de rede:**]({{< ref path="/resources/customization/beagle-for-android/network-client" lang="pt" >}})
 
-[**👉 Acesse Gerenciar cache:**]({{< ref path="/resources/customization/beagle-for-android/manage-cache/" lang="pt" >}})
+[**👉 Acesse Gerenciar cache:**]({{< ref path="/resources/customization/beagle-for-android/manage-cache" lang="pt" >}})
 
-[**👉 Acesse Sistema de log:**]({{< ref path="/resources/customization/beagle-for-android/log-system/" lang="pt" >}})
+[**👉 Acesse Sistema de log:**]({{< ref path="/resources/customization/beagle-for-android/log-system" lang="pt" >}})
 
 {{% /alert %}}
 
@@ -234,7 +234,7 @@ Importante! O que é o Design System?
 
 Embora você possa criá-lo agora se quiser, não é necessário para as configurações iniciais, para que você possa testar logo o Beagle! Você pode prosseguir sem configurá-lo. Mas saiba que o Design System é o pulmão da aplicação server-driven!
 
-[**Design System no Beagle para Android**.]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/design-system-with-beagle-android/" lang="pt" >}})
+[**Design System no Beagle para Android**.]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/design-system-with-beagle-android" lang="pt" >}})
 {{% /alert %}}
 
 Agora, você deve inicializar sua `Application` para que o Beagle gere os outros arquivos de configuração que necessita. Para isso, basta clicar em`Make project` \(símbolo de MARTELO\) ou use o comando `CTRL + F9`.
