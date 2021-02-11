@@ -158,14 +158,13 @@ Now that your project is created, you must configure **Beagle** settings. To do 
   `Beagle` does not provide a **Network**, **Cache** or **Logger** configuration on its default components, so those must be configured for Beagle to work as expected. You can create your own defaults configurations following the examples below:
 
   
-[**👉 Go to Network Client:**]({{< ref path="/resources/customization/beagle-for-android/network-client/" lang="en" >}})
+[**👉 Go to Network Client:**]({{< ref path="/resources/customization/beagle-for-android/network-client" lang="en" >}})
 
-[**👉 Go to Manage Cache:**]({{< ref path="/resources/customization/beagle-for-android/manage-cache/" lang="en" >}})
+[**👉 Go to Manage Cache:**]({{< ref path="/resources/customization/beagle-for-android/manage-cache" lang="en" >}})
 
-[**👉 Go to log system:**]({{< ref path="/resources/customization/beagle-for-android/log-system/" lang="en" >}})
+[**👉 Go to log system:**]({{< ref path="/resources/customization/beagle-for-android/log-system" lang="en" >}})
   
 {{% /alert %}}
-
 
 ### Step 4: Create an AppBeagleConfig
 
@@ -225,7 +224,7 @@ At this tutorial point, we will test our Server-Driven screens on local host bec
 
 ### **Step 5:  BeagleActivity** 
 
-Beagle offers a default `Activity` to manage all `server-driven activities`. However, it is possible to create a more specific activity to handle server-driven screens differently. You will create a new activity inherited from `BeagleActivity` and it will annotate with `@BeagleComponent`. Check more information on how to create one at the [**Beagle Activity**]({{< ref path="/resources/customization/beagle-for-android/custom-beagle-activity/" lang="en" >}}) page.
+Beagle offers a default `Activity` to manage all `server-driven activities`. However, it is possible to create a more specific activity to handle server-driven screens differently. You will create a new activity inherited from `BeagleActivity` and it will annotate with `@BeagleComponent`. Check more information on how to create one at the [**Beagle Activity**]({{< ref path="/resources/customization/beagle-for-android/custom-beagle-activity" lang="en" >}}) page.
 
 {{% alert color="info" %}}
 {{% /alert %}}

@@ -15,11 +15,11 @@ description: 'Here you will find a library to help when you want to start a proj
 ### Getting started
 
 To start using Beagle right now, you can use the libs below:
-* [Beagle-Scaffold]({{< ref path="/get-started/using-beagle-helpers/android/beagle-scaffold/" lang="en" >}}):
+* [Beagle-Scaffold]({{< ref path="/get-started/using-beagle-helpers/android/beagle-scaffold" lang="en" >}}):
 This lib will hold almost all configurations needed to start using Beagle in your project.
 We advise the use of these libs for people that never used Beagle before.
 
-* [Beagle-Defaults]({{< ref path="/get-started/using-beagle-helpers/android/beagle-defaults/" lang="en" >}}):
+* [Beagle-Defaults]({{< ref path="/get-started/using-beagle-helpers/android/beagle-defaults" lang="en" >}}):
 This lib is advised for more experienced Beagle users and 
 will hold only a few class configurations necessary to 
 use Beagle in an application. These configurations include 
