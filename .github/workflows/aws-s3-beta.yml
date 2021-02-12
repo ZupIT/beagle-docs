@@ -34,7 +34,7 @@ jobs:
 
       - name: Remove static images
         run: |
-          cd static && rm -r shared
+          cd static && find . \! -name 'playground' -delete
 
       - name: Installing Dependencies
         run: npm install
