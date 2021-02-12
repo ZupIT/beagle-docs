@@ -1,5 +1,3 @@
-baseURL = "http://docs-beta.usebeagle.io/v1.5"
-
 title = "Beagle"
 
 enableRobotsTXT = true
