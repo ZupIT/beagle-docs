@@ -1,4 +1,4 @@
-baseURL = "http://docs-beta.usebeagle.io/v1.5"
+baseURL = "http://localhost:1313/"
 
 title = "Beagle"
 

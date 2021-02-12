@@ -1,0 +1,47 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+env:
+  AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET_BETA }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  
+          fetch-depth: 0    
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: sa-east-1
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.78.1'
+          extended: true  
+      
+      - name: S3 upload (images)
+        run: aws s3 cp --acl public-read --follow-symlinks --recursive static/shared s3://$AWS_S3_BUCKET/shared/
+
+      - name: Remove static images
+        run: |
+          cd static && find . \! -name 'playground' -delete
+      - name: Installing Dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build-playground && hugo -D --minify -b $BASE_URL
+        env: 
+          BASE_URL: http://docs-beta.usebeagle.io
+
+      - name: S3 upload (latest version)
+        run: aws s3 cp --acl public-read --follow-symlinks --recursive public s3://$AWS_S3_BUCKET
