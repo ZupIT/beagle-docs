@@ -60,4 +60,4 @@ fun screen() = Screen(child =
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/others.png)
+![](/shared/others.png)

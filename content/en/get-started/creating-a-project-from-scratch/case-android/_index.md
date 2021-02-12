@@ -34,7 +34,7 @@ After you installed the program, follow the steps below:
 
 Once the initialization is done, you will see this page: 
 
-![](/mainactivity.png)
+![](/shared/mainactivity.png)
 
 {{% alert color="success" %}}
 Well done, your project was created on Android! Now, you will need to configure Beagle following the next steps. 
@@ -79,7 +79,7 @@ Notice that some `plugins` are already listed on the beginning of the file as sh
 
 * Then, add the line_`apply plugin: 'kotlin-kapt'`_ 
 
-![](/implementacaogradle.png)
+![](/shared/implementacaogradle.png)
 
 After that, you need to add some dependencies: 
 
@@ -112,7 +112,7 @@ For example: undefined-`ext.beagle.version = "0.2.8"`
 
 At the end of these configurations, your file must be like this:
 
-![](/implementacaogradle2.png)
+![](/shared/implementacaogradle2.png)
 
 ### Step 2: Configure the Android Manifest file
 
@@ -180,7 +180,7 @@ To create AppBeagleConfig, follow these steps:
 1. First, you create a package with all configurations' files.  
 2. Then, click with the right button on the main package of your project and click on **new &gt; package** __like in the image below: 
 
-![](/newpackage.png)
+![](/shared/newpackage.png)
 
 Even though you can name the file as you want to, we'll recommend for this tutorial that you use the name`beagle`.
 
@@ -247,11 +247,11 @@ Even if you can create it now, if you want to, it is not necessary to the initia
 
 Now , you must initialize your `Application` so Beagle can manage the other configuration's files. To do so, just click on`Make project` \(HAMMER symbol\) or use the command `CTRL + F9`.
 
-![](/apppackage.png)
+![](/shared/apppackage.png)
 
 When it's initialized, Beagle will automatically create a `BeagleSetup` file that will be in the folder with the generated files, like in the image below: 
 
-![](/image%20%2843%29.png)
+![](/shared/image%20%2843%29.png)
 
 ### Step 7: Create an AppApplication class
 
@@ -317,12 +317,12 @@ finish()
 
 * Your`MainActivity.kt` must be like this:
 
-![](/print-intent%20%281%29.png)
+![](/shared/print-intent%20%281%29.png)
 
 Now you just have to click on **`Run app`** and check out your emulator's screen!   
 You will see this screen: 
 
-![](/captura-de-tela-2020-06-22-a-s-11.41.12.png)
+![](/shared/captura-de-tela-2020-06-22-a-s-11.41.12.png)
 
 {{% alert color="success" %}}
 Well done, you created your first screen with Beagle!  🎉 

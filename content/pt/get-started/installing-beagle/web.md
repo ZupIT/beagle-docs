@@ -53,7 +53,7 @@ npx beagle help
 
 Se os comandos do Beagle forem listados como na imagem abaixo, isso significa que a instalação ocorreu corretamente.
 
-![](/image%20%2814%29.png)
+![](/shared/image%20%2814%29.png)
 
 {{% alert color="success" %}}
 Parabéns, a sua biblioteca está instalada! Veja agora [**como usar o Beagle no Angular**]({{< ref path="/get-started/using-beagle/web/angular" lang="pt" >}})

@@ -14,7 +14,7 @@ This property will override the behavior defined by the align-items property. It
 **Align self** is set to each component and not to a container.
 {{% /alert %}}
 
-![](/captura-de-tela-2020-06-04-a-s-11.23.38.png)
+![](/shared/captura-de-tela-2020-06-04-a-s-11.23.38.png)
 
 Each number above represents one property:
 
