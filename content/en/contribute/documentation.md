@@ -55,4 +55,4 @@ All contributions are welcome, but to get starting contributing to Beagle it is 
 
 ## Fork our repository
 
-- If you already have the basic knowledge of markdown, hugo, shortcodes and gitflow, feel free to fork our repository and suggest changes using your preferred text editor. If you have any questions, read our [**FAQ**]({{< ref path="/faq" lang="en" >}}), open an issue, or contact us via our [** email **] (mailto: beagle@zup.com. br)
+- If you already have the basic knowledge of markdown, hugo, shortcodes and gitflow, feel free to fork our repository and suggest changes using your preferred text editor. If you have any questions, read our [**FAQ**]({{< ref path="/faq" lang="en" >}}), open an issue, or contact us via our [**email**](mailto:beagle@zup.com.br)
