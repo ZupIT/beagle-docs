@@ -10,7 +10,7 @@ description: >-
 
 ## Introduction
 
-Beagle View é uma `UIView` que deve ser usada quando é necessário adicionar um componente do Beagle em uma tela nativa que possui outras `views` e usam `AutoLayout`.
+Beagle View is an `UIView` that must be used when it is necessary to add a Beagle's component in a native screen that has other `views` and use `AutoLayout`.
 
 It is possible to initialize a `BeagleView` with a Beagle **component** or **screenType**
 
