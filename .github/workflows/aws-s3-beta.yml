@@ -28,13 +28,6 @@ jobs:
         with:
           hugo-version: '0.78.1'
           extended: true  
-      
-      - name: S3 upload (images)
-        run: aws s3 cp --acl public-read --follow-symlinks --recursive static/shared s3://$AWS_S3_BUCKET/shared/
-
-      - name: Remove static images
-        run: |
-          cd static && find . \! -name 'playground' -delete
 
       - name: Installing Dependencies
         run: npm install
@@ -45,4 +38,4 @@ jobs:
           BASE_URL: http://docs-beta.usebeagle.io
 
       - name: S3 upload (latest version)
-        run: aws s3 cp --acl public-read --follow-symlinks --recursive public s3://$AWS_S3_BUCKET
+        run: aws s3 sync --acl public-read --follow-symlinks --recursive public s3://$AWS_S3_BUCKET --delete
