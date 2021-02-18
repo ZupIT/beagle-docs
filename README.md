@@ -2,7 +2,7 @@
 
 Project: 466 Zup - Relacionamento com Desenvolvedores
 
-## Getting started
+## Get started
 
 To start this project, you must run the following commands:
 
