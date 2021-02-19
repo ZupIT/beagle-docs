@@ -10,42 +10,32 @@ description: >-
 
 ## Introdução
 
-Quando um método de ofuscação é usado, é necessário que algumas regras sejam implementadas para garantir que os nomes e os IDs usados  internamente pelo Beagle, não sejam ofuscados ou minificados. 
+O Beagle contém regras mínimas necessárias para que seus próprios componentes internos funcionem sem a necessidade de os consumidores incorporarem os seus próprios. No entanto, se você estiver usando serialização reflexiva e R8 ou ProGuard, você deve adicionar regras de manutenção em seu arquivo de configuração Proguard para suas classes serializadas reflexivamente
 
 ## Exemplo
 
-Para garantir isso, você deve adicionar as seguintes regras no arquivo **`android-rules.pro`** do ProGuard:
+Para garantir isso, você deve anotar as classes que você utiliza dentro do seu componente com a anotação @BeagleJson:
 
-```markup
-proguard-rules.pro
+```kotlin
 
-# Beagle uses coroutines in network requests
--keep class kotlinx.coroutines.experimental.android.AndroidExceptionPreHandler { *; }
 
-# Beagle does reflection on generic parameters
--keepattributes Signature, InnerClasses, EnclosingMethod
+@BeagleJson
+enum class MyType {
+    PASSWORD, TEXT;
+}
 
-# Beagle does reflection on method and parameter annotations
--keepattributes RuntimeVisibleAnnotations, RuntimeVisibleParameterAnnotations
--dontwarn org.jetbrains.annotations.**
--keep class kotlin.Metadata { *; }
+@BeagleJson
+data class MyText(val textOne: String, val textTwo: String)
 
-# Yoga is a dependency used on Beagle
--keep @com.facebook.proguard.annotations.DoNotStrip class * { *; }
+@RegisterWidget("myText")
+data class Text(
+    val text: Bind<String>,
+    val type: MyType,
+    val myText: MyText,
+) : WidgetView() {
+    override fun buildView(rootView: RootView): TextView = TextView(rootView.getContext())
+}
 
-# Customized classes for Beagle
--keep @br.com.zup.beagle.annotation.** class * { *; }
--keep @br.com.zup.beagle.android.annotation.** class * { *; }
--keep class * extends br.com.zup.beagle.android.widget.**
-
-# Core classes in Beagle
--keep class br.com.zup.beagle.android.action.** { *; }
--keep class br.com.zup.beagle.android.widget.** { *; }
--keep class br.com.zup.beagle.android.components.** { *; }
--keep class br.com.zup.beagle.android.context.** { *; }
--keep class br.com.zup.beagle.widget.** { *; }
--keep class br.com.zup.beagle.core.** { *; }
--keep class br.com.zup.beagle.analytics.** { *; }
 ```
 
 {{% alert color="info" %}}
