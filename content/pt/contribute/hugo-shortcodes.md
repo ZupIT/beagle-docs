@@ -28,6 +28,8 @@ A melhor maneira para fazer referências a links **_internos_** a documentação
 
 [Link Example]({{< ref path="/get-started/installing-beagle/backend.md" lang="pt">}})
 
+> Para saber mais a respeito, [acesse aqui](https://gohugo.io/content-management/cross-references/)
+
 ### **Alertas**
 
 Os alertas são usados para destacar alguma informação importante ao seguir alguma etapa de configuração, tutorial, ou destacar requisitos necessários para alguma funcionalidade.
@@ -103,7 +105,7 @@ Para renderizar imagens, gifs e demais tipos de figuras, podemos usar uma shortc
 
 {{< figure src="https://media.glassdoor.com/sqll/2482761/zup-innovation-squarelogo-1583862820688.png" width="250" height="250" >}}
 
-Para saber todos os parâmetro que o figure pode receber, [**acesse aqui**](https://gohugo.io/content-management/shortcodes#figure)
+> Para saber todos os parâmetro que o figure pode receber, [**acesse aqui**](https://gohugo.io/content-management/shortcodes#figure)
 
 ### **Vídeos**
 
