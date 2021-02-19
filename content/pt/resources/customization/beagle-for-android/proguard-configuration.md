@@ -10,11 +10,11 @@ description: >-
 
 ## Introdução
 
-O Beagle contém regras mínimas necessárias para que seus próprios componentes internos funcionem sem a necessidade de os consumidores incorporarem os seus próprios. No entanto, se você estiver usando serialização reflexiva e R8 ou ProGuard, você deve adicionar regras de manutenção em seu arquivo de configuração Proguard para suas classes serializadas reflexivamente
+O Beagle contém regras mínimas necessárias para que seus componentes funcionem sem a necessidade da sua aplicação adicionar alguma regra no ProGuard / R8. No entanto nas anotações `RegisterWidget` e `RegisterAction` você precisa preencher elas com os seus respectivos nomes and caso tenha algum objeto dentro do seu componente você precisa anotar ele com `@BeagleJson`
 
 ## Exemplo
 
-Para garantir isso, você deve anotar as classes que você utiliza dentro do seu componente com a anotação @BeagleJson:
+Para garantir que seu componente funcione normalmente com o ProGuard / R8 ativo, você deve anotar as classes utilizadas com a anotação `@BeagleJson:`
 
 ```kotlin
 
@@ -33,7 +33,18 @@ data class Text(
     val type: MyType,
     val myText: MyText,
 ) : WidgetView() {
-    override fun buildView(rootView: RootView): TextView = TextView(rootView.getContext())
+
+    override fun buildView(rootView: RootView): TextView
+      = TextView(rootView.getContext())
+
+}
+
+@RegisterAction("CustomAndroidAction")
+data class CustomAndroidAction(
+    val value: String,
+    val intValue: Int
+) : Action {
+    override fun execute(rootView: RootView, origin: View) { }
 }
 
 ```
@@ -42,7 +53,7 @@ data class Text(
 Aqui, você também habilita o `minifyEnable` e `shrinkResources` no `buildType` declarando-os como _**true**_ para testar a ofuscação do ProGuard.
 {{% /alert %}}
 
-Para testar o ProGuard você deve ativá-lo na sua IDE, você pode usar o Android Studio, adicione a configuração listada abaixo: 
+Para testar o ProGuard você deve ativá-lo na sua IDE, você pode usar o Android Studio, adicione a configuração listada abaixo:
 
 ```text
 buildTypes {
