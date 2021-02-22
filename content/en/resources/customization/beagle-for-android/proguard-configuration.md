@@ -12,7 +12,7 @@ Beagle contains minimum rules necessary for its components to work without the n
 
 ## Example
 
-To ensure that your component works normally with ProGuard / R8 active, you should note the classes used with the annotation `@BeagleJson:`
+To ensure that your component works normally with ProGuard / R8 active, you must annotate the classes used with the annotation `@BeagleJson:`
 
 
 ```kotlin
