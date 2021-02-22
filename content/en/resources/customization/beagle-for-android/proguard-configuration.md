@@ -8,7 +8,7 @@ description: 'You will find here, ProGuard description and configuration for Bea
 
 ## Introduction
 
-Beagle contains minimum rules necessary for its components to work without the need for your application to add any rules in ProGuard / R8. However in the annotations `RegisterWidget` and ` RegisterAction` you need to fill them with their respective names and if you have an object inside your component you need to annotate it with `@ BeagleJson`
+Beagle contains minimum rules necessary for its components to work without the need for your application to add any rules in ProGuard / R8. However, in the annotations `RegisterWidget` and ` RegisterAction` you need to fill them with their respective names and if you have an object inside your component you need to annotate it with `@ BeagleJson`
 
 ## Example
 
