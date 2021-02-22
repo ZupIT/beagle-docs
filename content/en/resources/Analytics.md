@@ -51,8 +51,7 @@ function analytics(): AnalyticsProvider {
 
   return {
     getConfig,
-    createRecord,
-    getMaximumItemsInQueue
+    createRecord
   }
 }
 
