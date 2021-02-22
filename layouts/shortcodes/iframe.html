@@ -1,4 +1,4 @@
-{{ $version := ($.Param "latest_version") }}
+
 
 <script>
     function resizeIframe(obj) {
@@ -6,7 +6,7 @@
     }
 </script>
 
-<iframe width="100%" height="150" name="iframe" src='/{{ $version }}/{{ index .Params 0 }}'
+<iframe width="100%" height="150" name="iframe" src='/{{ $.Page.Site.Params.latest_version }}/{{ index .Params 0 }}'
         frameborder="0"
         scrolling="no"
         onload="resizeIframe(this)">
