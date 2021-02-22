@@ -54,10 +54,6 @@ function analytics(): AnalyticsProvider {
     console.log('Record', record)
   }
 
-  function getMaximumItemsInQueue() {
-    return 10
-  }
-
   return {
     getConfig,
     createRecord,
@@ -88,12 +84,9 @@ class AnalyticsProviderImpl : AnalyticsProvider{
     }
 
     override fun createRecord(record: AnalyticsRecord) {
-        Log.d("analytics", record.platform)
-        Log.d("analytics", record.type)
-        Log.d("analytics", record.attributes.toString())
+        Log.d("analytics", record)
     }
-    
-    override fun getMaximumItemsInQueue() = 200
+
 }
 ```
 
@@ -122,8 +115,6 @@ class MyAnalyticsProvider: AnalyticsProvider {
         print(record)
     }
 
-    // if this is `nil`, beagle will you use a default value
-    var maximumItemsInQueue: Int? = nil
 }
 ```
 
@@ -155,6 +146,10 @@ As soon as you finish configuring the Analytics provider you are ready to start 
 You can either use both configuration payloads or choose the one that better fits your solution, an important point to note here is that the ``ActionAnalyticsConfig`` has priority over the ``AnalyticsConfig`` which means that if you configure the same tracking event for both of them the ``ActionAnalyticsConfig`` will be used.
 
 see next further details on both ways of mapping the analytics
+
+{{% alert color="warning" %}}
+ Note: To use the ``ActionAnalyticsConfig``, your action, on Android, must implement the ``AnalyticsAction`` interface instead of ``Action``, and, on iOS, your action must implement the ``AnalyticsAction`` protocol instead of ``Action``
+{{% /alert %}}
 
 ### **Action configuration**
 
