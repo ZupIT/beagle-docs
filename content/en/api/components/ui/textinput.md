@@ -80,6 +80,25 @@ See how the structure is represented by the attributes below:
         of each platform that customizes the component.</td>
     </tr>
     <tr>
+      <td style="text-align:left">error</td>
+      <td style="text-align:left">
+      <p>String or</p>
+        <p><a href="https://docs.usebeagle.io/v/v1.0-en/api/context#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">This attribute shows if the TextInput has an error.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">showError</td>
+      <td style="text-align:left">
+      <p>Boolean or</p>
+        <p><a href="https://docs.usebeagle.io/v/v1.0-en/api/context#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
+      </td>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Enables the error string to be visible or not.</td>
+    </tr>
+    <tr>
       <td style="text-align:left">onChange</td>
       <td style="text-align:left">List &lt;<a href="../../actions/"><b>Action</b></a>&gt;</td>
       <td style="text-align:left"></td>

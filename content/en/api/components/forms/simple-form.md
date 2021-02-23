@@ -14,7 +14,8 @@ Its structure is represented as shown below:
 
 | Attribute | Type                                                          | Required | Definition                                                     |
 | :-------- | :------------------------------------------------------------ | :------- | :------------------------------------------------------------- |
-| ​onSubmit | List &lt;[**Action**]({{< ref path="/api/actions" lang="en" >}})&gt;                  | ✓        | Action array that this button can trigger when a form is sent. |
+| ​onSubmit | List &lt;[**Action**]({{< ref path="/api/actions" lang="en" >}})&gt;                  | ✓        | Array of Actions that will be triggered when a valid form is sent. |
+| onValidationError | List &lt;[**Action**]({{< ref path="/api/actions" lang="en" >}})&gt;                  | ✓        | Array of Actions that will be triggered when a form is invalid. |
 | children  | List&lt;[**ServerDrivenComponent**]({{< ref path="/api/components" lang="en" >}})&gt; | ✓        | Defines the visual components list \(server driven\).          |
 | context   | **​**[**ContextData**]({{< ref path="/api/context" lang="en" >}})**​**                | ​        | Adds a context to the simple form                              |
 
@@ -114,8 +115,12 @@ SimpleForm(
 
 ### onSubmit
 
-It is a function of a simple form that performs a list of actions. It is called when the form is submitted.
+It is a function of a simple form that performs a list of actions. It is called when a valid form is submitted.
 
 To submit a form, you must use the SubmitForm action and call it, just implement it in a [**Button**]({{< ref path="/api/components/ui/button" lang="en" >}}) that is part of a simple form, that is, that is in your list of children.
 
 When you click this button, the onSubmit is activated and the list of actions will be performed. It is this list of actions that will define what should happen with the information in this form, if they will be sent to a backend \(through the [**sendRequest** ]({{< ref path="/api/actions/sendrequest" lang="en" >}})action\), etc.
+
+### onValidationError
+
+It is a function of a simple form that performs a list of actions. It is called when a invalid form is submitted. This validation occurs in the `TextInput` component through the attributes **error** and **showError**.

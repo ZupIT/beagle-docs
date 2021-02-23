@@ -14,7 +14,8 @@ A sua estrutura é representada como mostrado abaixo:
 
 | Atributo | Tipo                                                             | Obrigatório | Definição                                                                       |
 | :------- | :--------------------------------------------------------------- | :---------: | :------------------------------------------------------------------------------ |
-| onSubmit | List &lt;[**Action**]({{< ref path="/api/actions" lang="pt" >}})&gt;                  |      ✓      | Array de ações que esse botão pode disparar quando um formulário é enviado      |
+| onSubmit | List &lt;[**Action**]({{< ref path="/api/actions" lang="pt" >}})&gt;                  |      ✓      | Array de ações que serão disparadas quando um formulário válido é enviado.     |
+| onValidationError | List &lt;[**Action**]({{< ref path="/api/actions" lang="pt" >}})&gt;                  |      ✓      | Array de ações que serão disparadas quando um formulário é inválido.      |
 | children | List&lt;[**ServerDrivenComponent**]({{< ref path="/api/components" lang="pt" >}})&gt; |      ✓      | Define a lista de componentes visuais que compoe o formulário \(server-driven\) |
 | context  | [**ContextData**]({{< ref path="/api/context" lang="pt" >}})                          |             | Adiciona um contexto para o simple form                                         |
 
@@ -114,8 +115,12 @@ SimpleForm(
 
 ### onSubmit
 
-É uma função do SimpleForm que executa uma lista de ações. Ele é cho quando o formuário for submetido
+É um atributo do SimpleForm que executa uma lista de ações que são chamadas quando um formuário é submetido e válido. Caso o formulário seja inválido, ele irá executar as listas de ações do atributo **onValidationError**.
 
 Para submeter um formulário é preciso utilizar a ação SubmitForm e para chama-la basta somente implementa-la em um [**Botão**]({{< ref path="/api/components/ui/button" lang="pt" >}}) que seja parte do SimpleForm, ou seja, que esteja em sua lista de filhos.
 
-Ao clicar nesse botão, o onSubmit é ativados e a lista de ações será executada. É essa lista de ações que definirá o que deve acontecer com as informações so formulario, se serão enviadas para um backend \(através da ação [**sendRequest**]({{< ref path="/api/actions/sendrequest" lang="pt" >}})\), etc
+Ao clicar nesse botão, o onSubmit é ativado e a lista de ações será executada. É essa lista de ações que definirá o que deve acontecer com as informações so formulario, se serão enviadas para um backend \(através da ação [**sendRequest**]({{< ref path="/api/actions/sendrequest" lang="pt" >}})\), etc.
+
+### onValidationError
+
+É uma ação do SimpleForm que executa uma lista de ações que são chamadas quando um formuário é submetido e inválido. Essa validação é realizada no componente `TextInput` a partir dos atributos **error** e **showError**.
