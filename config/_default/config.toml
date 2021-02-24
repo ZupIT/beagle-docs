@@ -1,4 +1,5 @@
-baseURL = "https://docs.usebeagle.io"
+baseURL = "https://docs.usebeagle.io/"
+
 
 title = "Beagle"
 
