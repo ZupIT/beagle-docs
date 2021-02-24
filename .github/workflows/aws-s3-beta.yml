@@ -27,7 +27,11 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.78.1'
-          extended: true  
+          extended: true
+
+      - id: version
+        run: echo "::set-output name=release_tag::$(echo $GITHUB_REF | sed -E "s/refs\/tags\/(v[1-9]+\.[0-9]+)\.[0-9]+/\1/g" )"
+        shell: bash
 
       - name: Installing Dependencies
         run: npm install

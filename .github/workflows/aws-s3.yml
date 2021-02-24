@@ -42,8 +42,14 @@ jobs:
         run: npm install
 
       - id: version
-        run: echo "::set-output name=release_tag::$(echo $GITHUB_REF | sed 's/refs\/tags\///g' )"
+        run: echo "::set-output name=release_tag::$(echo $GITHUB_REF | sed -E "s/refs\/tags\/(v[1-9]+\.[0-9]+)\.[0-9]+/\1/g" )"
         shell: bash
+
+      - name: Config latest path
+        run: cd config/_default && sed -i -E "s/latest_path = /latest_path = \$VERSION/g" config.toml
+        shell: bash
+        env:
+          VERSION: ${{ steps.version.outputs.release_tag }}
 
       - name: Build
         run: npm run build-playground && hugo -D --minify -b $BASE_URL/$VERSION

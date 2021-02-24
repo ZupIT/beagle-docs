@@ -1,4 +1,4 @@
-baseURL = "https://docs.usebeagle.io/v1.5"
+baseURL = "https://docs.usebeagle.io/"
 
 title = "Beagle"
 
@@ -66,7 +66,7 @@ copyright = "Zup IT"
 privacy_policy = "https://insights.zup.com.br/politica-privacidade"
 playground_url = "https://playground.usebeagle.io/#/docs"
 logoName = "icons/beagle.svg"
-latest_version = "v1.5"
+latest_path = 
 
 [[params.versions]]
 fullversion = "v1.5.0"
