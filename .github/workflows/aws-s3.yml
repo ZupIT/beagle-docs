@@ -1,9 +1,9 @@
 name: AWS S3
 
 on:
-  release:
-    types:
-      - created
+  push:
+    tags: 
+      - v[0-9]+.[0-9]+.[0-9]*
 
 env:
   AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
@@ -35,15 +35,23 @@ jobs:
 
       - name: Remove static images
         shell: bash
-        run: |
-          cd static && rm -rf shared
+        working-directory: static
+        run: rm -rf shared
 
       - name: Installing Dependencies
         run: npm install
 
       - id: version
-        run: echo "::set-output name=release_tag::$(echo $GITHUB_REF | sed 's/refs\/tags\///g' )"
+        name: Get release tag
+        run: echo "::set-output name=release_tag::$(echo $GITHUB_REF | sed -E "s/refs\/tags\/(v[1-9]+\.[0-9]+)\.[0-9]+/\1/g" )"
         shell: bash
+
+      - name: Config latest path
+        working-directory: config/_default
+        shell: bash
+        run: sed -i -E "s/latest_path = .*/latest_path = \"\/$VERSION\"/g" config.toml
+        env:
+          VERSION: ${{ steps.version.outputs.release_tag }}
 
       - name: Build
         run: npm run build-playground && hugo -D --minify -b $BASE_URL/$VERSION
