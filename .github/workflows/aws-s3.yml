@@ -42,13 +42,14 @@ jobs:
         run: npm install
 
       - id: version
+        name: Get release tag
         run: echo "::set-output name=release_tag::$(echo $GITHUB_REF | sed -E "s/refs\/tags\/(v[1-9]+\.[0-9]+)\.[0-9]+/\1/g" )"
         shell: bash
 
       - name: Config latest path
         working-directory: config/_default
         shell: bash
-        run: sed -i -E "s/latest_path = .*/latest_path = \$VERSION/g" config.toml
+        run: sed -i -E "s/latest_path = .*/latest_path = \"$VERSION\"/g" config.toml
         env:
           VERSION: ${{ steps.version.outputs.release_tag }}
 
