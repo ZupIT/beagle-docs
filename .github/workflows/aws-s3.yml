@@ -35,8 +35,8 @@ jobs:
 
       - name: Remove static images
         shell: bash
-        run: |
-          cd static && rm -rf shared
+        working-directory: static
+        run: rm -rf shared
 
       - name: Installing Dependencies
         run: npm install
@@ -46,8 +46,9 @@ jobs:
         shell: bash
 
       - name: Config latest path
-        run: cd config/_default && sed -i -E "s/latest_path = /latest_path = \$VERSION/g" config.toml
+        working-directory: config/_default
         shell: bash
+        run: sed -i -E "s/latest_path = .*/latest_path = \$VERSION/g" config.toml
         env:
           VERSION: ${{ steps.version.outputs.release_tag }}
 
