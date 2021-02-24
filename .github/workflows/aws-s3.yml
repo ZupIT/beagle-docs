@@ -1,9 +1,9 @@
 name: AWS S3
 
 on:
-  release:
-    types:
-      - created
+  push:
+    tags: 
+      - v[0-9].[0-9].[0-9]
 
 env:
   AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
