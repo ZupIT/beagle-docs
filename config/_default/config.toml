@@ -1,5 +1,6 @@
 baseURL = "https://docs.usebeagle.io/"
 
+
 title = "Beagle"
 
 enableRobotsTXT = true
