@@ -68,11 +68,6 @@ playground_url = "https://playground.usebeagle.io/#/docs"
 logoName = "icons/beagle.svg"
 latest_path = ""
 
-[[params.versions]]
-fullversion = "v1.5.0"
-version = "v1.5"
-url = "https://docs.usebeagle.io/v1.5"
-
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/ZupIT/docs-beagle"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
@@ -91,6 +86,11 @@ offlineSearch = true
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
+
+[[params.versions]]
+fullversion = "v1.5.0"
+version = "v1.5"
+url = "https://docs.usebeagle.io/v1.5"
 
 # User interface configuration
 [params.ui]
