@@ -34,7 +34,7 @@ All contributions are welcome, but to get starting contributing to Beagle it is 
   {{% /alert %}}
 
 ## How to contribute
-
+---
 ### **Editing a page**
 
 - To edit content, simply navigate to the page to be edited using the left side menu or the search field. Then click on the "Edit this page" button, located on the right side menu.
@@ -42,6 +42,23 @@ All contributions are welcome, but to get starting contributing to Beagle it is 
 - Once this is done, you will be redirected to the source file hosted on github in edit mode. Okay, now just edit the file. Then, open a pull request using the github website, filling out the form as shown in the image below:
 
 ![](/shared/contribute-pull-request.jpg)
+
+### **Adding images**
+
+- Images in this documentation are saved at a folder called shared at `/static/shared`. To add new images to the doc just copy them into this folder. From there, all images are accessible from any page or sub-page in the documentation.
+
+- To load images on a page use the markdown interface for images (without adding a title) and list the address as `/shared/image-name` as follows:
+
+```
+![](/shared/beaglecomp.png)
+```
+
+{{% alert color = "success"%}}
+
+The code above loads the image below:
+![](/shared/beaglecomp.png)
+
+ {{% /alert %}}
 
 ### **Creating a new page**
 
