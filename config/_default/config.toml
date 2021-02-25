@@ -53,7 +53,7 @@ version_menu = "Versões"
     [markup.goldmark.renderer]
       unsafe = true
     [markup.goldmark.parser]
-      autoHeadingID = false
+      autoHeadingID = true
   [markup.highlight]
       # See a complete list of available styles at https://xyproto.github.io/splash/docs/all.html
       style = "tango"
