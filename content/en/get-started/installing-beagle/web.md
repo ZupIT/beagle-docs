@@ -17,7 +17,7 @@ Unlike mobile application's configurations, to install Beagle for Web does not d
 
 ## Angular
 
-Beagle Angular's current**:**[![badge](https://img.shields.io/npm/v/@zup-it/beagle-angular?logo=Angular)](https://github.com/ZupIT/beagle-web-angular)
+Beagle Angular's current:[![badge](https://img.shields.io/npm/v/@zup-it/beagle-angular?logo=Angular)](https://github.com/ZupIT/beagle-web-angular)
 
 ### Step 1: Install Beagle's library
 
@@ -57,7 +57,7 @@ Well done! Your library was installed. Now, you can see more of [**how to use Be
 
 ## React
 
-Beagle React's current version**:**[![badge](https://img.shields.io/npm/v/@zup-it/beagle-react?logo=React)](https://github.com/ZupIT/beagle-web-react)
+Beagle React's current version:[![badge](https://img.shields.io/npm/v/@zup-it/beagle-react?logo=React)](https://github.com/ZupIT/beagle-web-react)
 
 ### Step 1: Install Beagle's library
 
