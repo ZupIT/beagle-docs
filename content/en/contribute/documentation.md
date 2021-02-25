@@ -45,7 +45,7 @@ All contributions are welcome, but to get starting contributing to Beagle it is 
 
 ### **Adding images**
 
-- Images in this documentation are saved at a static folder in our system called shared. To add a new images just copy them to the `static/shared` folder at the project's root folder. From this folder all images are accessible from any page or sub-page in the documentation.
+- Images in this documentation are saved at a folder called shared at `/static/shared`. To add new images to the doc just copy them into this folder. From there, all images are accessible from any page or sub-page in the documentation.
 
 - To load images on a page use the markdown interface for images (without adding a title) and list the address as `/shared/image-name` as follows:
 
