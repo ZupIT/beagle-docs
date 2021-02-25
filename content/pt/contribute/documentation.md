@@ -29,7 +29,7 @@ description: >-
   {{% /alert %}}
 
 ## Como Contribuir
-
+---
 ### **Editando uma pagina**
 
 - Para editar um conteúdo, basta navegar até a a página a ser editada usando o menu lateral esquerdo ou a barra de pesquisa. Em seguida, clique no botão "Edit this page", localizado no menu lateral direito.
@@ -38,6 +38,22 @@ description: >-
 
 ![](/shared/contribute-pull-request.jpg)
 
+### **Adicionando imagens**
+
+- As imagens utilizadas na documentação são providas por uma pasta estática em nosso sistema chamada shared. Assim, para adicionar novas imagens a documentação, basta somente copia-las para a pasta `static/shared` na raiz do projeto. Dessa forma as imagens ficam acessiveis a partir de qualquer página ou sub-página da documentação.
+
+- Para buscar imagens e carrega-las basta utilizar a interface markdown para imagens (sem adicionar um título) e listar o endereço como `/shared/nome-da-imagem` da seguinte forma:
+
+```
+![](/shared/beaglecomp.png)
+```
+
+{{% alert color="success" %}}
+
+Ao listar este código a imagem abaixo será carregada
+![](/shared/beaglecomp.png)
+
+ {{% /alert %}}
 ### **Criando uma nova página**
 
 - Para criar uma página, o processo é semelhante ao de edição. Vá até o local onde deseja criar uma página (use o menu lateral esquerdo) e, nesse caso, em vez de "Edit this page", clique em "Create child page", localizado no menu lateral direito da página.
