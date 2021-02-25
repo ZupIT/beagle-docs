@@ -49,9 +49,9 @@ All contributions are welcome, but to get starting contributing to Beagle it is 
 
 - To load images on a page use the markdown interface for images (without adding a title) and list the address as `/shared/image-name` as follows:
 
-``
+```
 ![](/shared/beaglecomp.png)
-``
+```
 
 {{% alert color = "success"%}}
 
