@@ -1,6 +1,6 @@
 ---
 title: "How to contribute with the documentation"
-linkTitle: "Documentation"
+linkTitle: "Beagle Docs"
 weight: 1
 description: >-
   Follow the steps required so your contribution can be accepted by Beagle developers team.
