@@ -159,15 +159,24 @@ Valor default é ListDirection.VERTICAL
 {{% tab name="Kotlin DSL" %}}
 
 ```kotlin
-ListView(
-    dataSource = listOf(
+{
+    data class Person (
+            val name: String,
+            val race: String,
+            val planet: String,
+            val isMistborn: Boolean,
+            val age: Int,
+            val sex: String
+    )
+    
+    val characters = listOf(
         Person(
             name = "Kelsier",
             race = "Half-skaa",
             planet = "Scadrial",
             isMistborn = true,
             age = 38,
-            sex = Sex.MALE
+            sex = "male"
         ),
         Person(
             name = "Vin",
@@ -175,7 +184,7 @@ ListView(
             planet = "Scadrial",
             isMistborn = true,
             age = 20,
-            sex = Sex.FEMALE
+            sex = "female"
         ),
         Person(
             name = "TenSoon",
@@ -183,24 +192,29 @@ ListView(
             planet = "Scadrial",
             isMistborn = false,
             age = 40,
-            sex = Sex.MALE
+            sex = "male"
         ),
-    ),
-    template = Container(
-        children = listOf(
-            Text("Name: @{item.name}"),
-            Text("Race: @{item.race}"),
-            Text("Mistborn: @{item.isMistborn}"),
-            Text("Planet: @{item.planet}"),
-            Text("sex: @{item.sex}"),
-            Text("age: @{item.age}"),
-        )
-    ).applyStyle(
-        Style(
-            margin = EdgeValue(bottom = 20.unitReal())
+    )
+    
+    ListView(
+        context = ContextData(id = "characters", value = characters),
+        dataSource = expressionOf("@{characters}"),
+        template = Container(
+            children = listOf(
+                Text("Name: @{item.name}"),
+                Text("Race: @{item.race}"),
+                Text("Mistborn: @{item.isMistborn}"),
+                Text("Planet: @{item.planet}"),
+                Text("sex: @{item.sex}"),
+                Text("age: @{item.age}"),
+            )
+        ).applyStyle(
+            Style(
+                margin = EdgeValue(bottom = 20.unitReal())
+            )
         )
     )
-)
+}()
 ```
 
 {{% /tab %}}

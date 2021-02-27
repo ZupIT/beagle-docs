@@ -95,13 +95,9 @@ A sua estrutura está representada abaixo:
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 Button(
-  text = "Clique aqui",
-  styleId = "DesignSystem.MeuEstiloDeBotãoNativo",
-  onPress = listOf(
-    Alert(
-      message = "Exemplo de botão"
-    )
-  )
+    text = "Clique aqui",
+    styleId = "DesignSystem.MyNativeStyle",
+    onPress = listOf(Alert(message="Exemplo de botão"))
 )
 ```
 {{% /tab %}}

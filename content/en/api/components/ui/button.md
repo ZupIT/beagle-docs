@@ -92,7 +92,7 @@ Check the example below to see how the structure works:
 {{% tab name="Kotlin DSL" %}}
 ```
 Button(
-    text = "Click me!"
+    text = "Click me!",
     styleId = "DesignSystem.MyNativeStyle",
     onPress = listOf(Alert(message="Button example"))
 )

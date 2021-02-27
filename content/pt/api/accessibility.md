@@ -47,14 +47,14 @@ Caso o backend não especifique acessibilidade, os valores padrões de cada plat
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
 Container(
-        children = listOf(
-            Image(
-                path = ImagePath.Remote("https://i.ibb.co/rvRN9kv/logo.png")
-            ).applyAccessibility(
-                accessibility = Accessibility(true, "Image Label")
-            )
+    children = listOf(
+        Image(
+            path = ImagePath.Remote("https://i.ibb.co/rvRN9kv/logo.png")
+        ).applyAccessibility(
+            accessibility = Accessibility(true, "Image Label")
         )
     )
+)
 ```
 {{% /tab %}}
 {{< /tabs >}}

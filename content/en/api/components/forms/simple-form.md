@@ -89,24 +89,24 @@ Check out the example below on how its implemented a `SimpleForm`
 
 ```javascript
 SimpleForm(
-  (context = ContextData((id = "myContext"), (value = ""))),
-  (children = listOf(
+  context = ContextData(id = "myContext", value = ""),
+  children = listOf(
     TextInput(
-      (value = "@{myContext}"),
-      (placeholder = "Type in your password"),
-      (onChange = listOf(
-        SetContext((contextId = "myContext"), (value = "@{onChange.value}"))
-      ))
+      value = "@{myContext}",
+      placeholder = "Type in your password",
+      onChange = listOf(
+        SetContext(contextId = "myContext", value = "@{onChange.value}")
+      )
     ),
-    Button((text = "Click to Submit"), (onPress = listOf(SubmitForm())))
-  )),
-  (onSubmit = listOf(
+    Button(text = "Click to Submit", onPress = listOf(SubmitForm()))
+  ),
+  onSubmit = listOf(
     Alert(
-      (title = "Data submited"),
-      (message = "The password is " + "@{myContext}")
+      title = "Data submited",
+      message = "The password is " + "@{myContext}"
     )
-  ))
-);
+  )
+)
 ```
 
 {{% /tab %}}
