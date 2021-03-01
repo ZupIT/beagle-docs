@@ -39,7 +39,7 @@ Irá referenciar uma imagem que já está nos assets locais.
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
-```javascript
+```kotlin
 Image(
     ImagePath.Local.both(
         "public/web-illustration.png",
