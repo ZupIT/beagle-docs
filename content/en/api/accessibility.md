@@ -46,7 +46,7 @@ If backend does not specify accessibility, the default values ​​for each pla
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
-```
+```kotlin
 Container(
     children = listOf(
         Image(
