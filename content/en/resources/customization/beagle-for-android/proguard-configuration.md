@@ -51,7 +51,7 @@ data class CustomAndroidAction(
 You also have to enable `minifyEnable` and `shrinkResources` on `buildType` declaring them as true to test the ProGuard obfuscation.
 {{% /alert %}}
 
-You must activate ProGuard in your IDE, to test it, you can use Android Studio, just add the listed configuration below:
+You must activate ProGuard in your IDE. To test it, you can use Android Studio by adding the listed configuration below:
 
 ```text
 buildTypes {
