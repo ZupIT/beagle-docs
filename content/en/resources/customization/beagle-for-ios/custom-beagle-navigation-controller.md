@@ -14,9 +14,9 @@ Beagle Navigation Controller is a class like the `UINavigationController`, but m
 
 The method `serverDrivenStateDidChange()` is the entry point to handle screen state changes.
 
-The default implementation shows an "ActivityIndicator" when the screen is loading and does nothing. When an error happens, you can override this method to handle errors properly.
+The default implementation shows an "ActivityIndicator" when the screen is loading and shows an default error view that handles error and retry.
 
-When overriding, if you want to preserve loading behavior, a "super" implementation should be called or you can customize a loading behavior by yourself.
+When overriding, if you want to preserve loading behavior, a "super" implementation should be called or you can customize a loading and handle error behavior by yourself.
 
 ## Parameters
 
@@ -28,6 +28,7 @@ Check out below the Beagle Navigation Controller class:
 ```swift
 open class BeagleNavigationController: UINavigationController {
 
+    private var errorView = BeagleErrorView(message: nil) { }
 
     open func serverDrivenStateDidChange(
         to state: ServerDrivenState,
@@ -38,7 +39,16 @@ open class BeagleNavigationController: UINavigationController {
             view.showLoading(.whiteLarge)
         case .finished:
             view.hideLoading()
-        case .success, .error:
+        case .error(let serverDrivenError, let retry):
+            let message = getServerDrivenErrorMessage(from: serverDrivenError)
+            guard let retry = retry else { return }
+            if !view.subviews.contains(errorView) {
+                errorView = BeagleErrorView(message: message, retry: retry)
+                errorView.present(in: view)
+            } else {
+                errorView.addRetry(retry)
+            }
+        case .success:
             break
         }
     }
@@ -73,6 +83,10 @@ extension ServerDrivenState {
 
 ## Example
 
+### **Step 1: Create a class inherited from BeagleNavigationController**
+
+You will see below a complete example of a class that inherits from `BeagleNavigationController`. In it, the `serverDrivenStateDidChange` method is overriden and it handles error state differently.
+
 ```swift
 
 class CustomBeagleNavigationController: BeagleNavigationController {
@@ -83,7 +97,6 @@ class CustomBeagleNavigationController: BeagleNavigationController {
         to state: ServerDrivenState,
         at screenController: BeagleController
     ) {
-        super.serverDrivenStateDidChange(to: state, at: screenController)
         guard case let .error(serverDrivenError, retry) = state else { return }
         let message: String
         switch serverDrivenError {
@@ -115,9 +128,7 @@ class CustomBeagleNavigationController: BeagleNavigationController {
 
 ```
 
-{{% alert color="warning" %}}
-You have to register this class on [**Beagle's dependencies.**]({{< ref path="/resources/customization/beagle-for-ios/beagles-dependencies" lang="en" >}})
-{{% /alert %}}
+### **Step 2: Register Custom Navigation Controller**
 
 ```swift
 let dependencies = BeagleDependencies()
@@ -131,6 +142,8 @@ Beagle.dependencies = dependencies
 {{% alert color="info" %}}
 You can register as many **BeagleNavigationController** as you need.
 {{% /alert %}}
+
+### **Step 3: Use BeagleScreenViewController with controllerId**
 
 Now when you instantiating the BeagleScreenViewController, you can pass the `controllerId` "CustomBeagleNavigation" so that your BeagleScreenViewController use your `CustomBeagleNavigationController`.
 
