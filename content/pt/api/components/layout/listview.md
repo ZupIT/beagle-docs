@@ -25,8 +25,9 @@ A sua estrutura é representada como mostrado abaixo:
 | onInit             | List&lt;[Action]({{< ref path="/api/actions" lang="pt" >}})&gt;                  |             | Lista de ações a serem executadas assim que o componente é exibido.                                                                 |
 | dataSource         | [Bind]({{< ref path="/api/context#binding" lang="pt" >}})&lt;List&lt;Any&gt;&gt; |      ✓      | Expressão que aponta para uma lista de valores usados para popular o componete.                                                     |
 | template           | [ServerDrivenComponent]({{< ref path="/api/components" lang="pt" >}})            |      ✓      | Representa cada celula na lista através de um `ServerDrivenComponent`.                                                              |
+| isScrollIndicatorVisible | Bool | | Define se a barra de scroll é visivel.|
 | onScrollEnd        | List&lt;[Action]({{< ref path="/api/actions" lang="pt" >}})&gt;                  |             | Lista de ações executadas quando a lista chega ao fim.                                                                              |
-| scrollEndThreshold | Int                                                         |             | Define a porcentagem rolada da lista para disparar o `onScrollEnd`.                                                                 |
+| scrollEndThreshold |  Int                                                         |             | Define a porcentagem rolada da lista para disparar o `onScrollEnd`.                                                                 |
 | iteratorName       | String                                                      |             | É o identificador do contexto de cada célula.                                                                                       |
 | key                | String                                                      |             | Aponta para um valor único presente em cada item do `dataSource` para ser usado como um sufixo nos ids dos componentes do template. |
 
