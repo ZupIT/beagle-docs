@@ -77,7 +77,7 @@ Check the example below to see how the structure works:
 {
   "_beagleComponent_": "beagle:button",
   "text": "Click me!",
-  "styleId" : "DesignSystem.MyNativeStyle",
+  "styleId": "DesignSystem.MyNativeStyle",
   "onPress": [
     {
       "_beagleAction_": "beagle:alert",
