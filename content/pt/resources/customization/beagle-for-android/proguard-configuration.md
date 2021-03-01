@@ -55,7 +55,7 @@ data class CustomAndroidAction(
 Aqui, você também habilita o `minifyEnable` e `shrinkResources` no `buildType` declarando-os como _**true**_ para testar a ofuscação do ProGuard.
 {{% /alert %}}
 
-Para testar o ProGuard você deve ativá-lo na sua IDE, você pode usar o Android Studio, adicione a configuração listada abaixo:
+Você deve ativar o ProGuard  na sua IDE. Para testá-lo, você pode usar o Android Studio adicionando a configuração listada abaixo:
 
 ```text
 buildTypes {
