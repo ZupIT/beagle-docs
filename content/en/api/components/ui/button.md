@@ -90,7 +90,7 @@ Check the example below to see how the structure works:
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
-```
+```kotlin
 Button(
     text = "Click me!",
     styleId = "DesignSystem.MyNativeStyle",
