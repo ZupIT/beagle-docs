@@ -214,7 +214,7 @@ Default value is ListDirection.VERTICAL
             )
         )
     )
-}()
+}
 ```
 
 {{% /tab %}}
