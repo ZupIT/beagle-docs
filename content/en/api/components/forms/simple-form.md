@@ -87,7 +87,7 @@ Check out the example below on how its implemented a `SimpleForm`
 
 {{% tab name="Kotlin DSL" %}}
 
-```javascript
+```kotlin
 SimpleForm(
   context = ContextData(id = "myContext", value = ""),
   children = listOf(
