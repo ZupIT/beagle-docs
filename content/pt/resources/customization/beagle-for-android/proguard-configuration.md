@@ -10,7 +10,9 @@ description: >-
 
 ## Introdução
 
-O Beagle contém regras mínimas necessárias para que seus componentes funcionem sem a necessidade da sua aplicação adicionar alguma regra no ProGuard / R8. No entanto, nas anotações `RegisterWidget` e `RegisterAction` você precisa preencher elas com os seus respectivos nomes and caso tenha algum objeto dentro do seu componente você precisa anotar ele com `@BeagleJson`
+O Beagle contém regras mínimas necessárias para que seus componentes funcionem sem a necessidade da sua aplicação adicionar alguma regra no ProGuard / R8. 
+
+Para aplicar essas regras, você precisa preencher as anotações do `RegisterWidget` e `RegisterAction` com seus respectivos nomes. Caso haja algum objeto componente dentro do seu componente, você deve anotá-lo com `@BeagleJson`. 
 
 ## Exemplo
 
