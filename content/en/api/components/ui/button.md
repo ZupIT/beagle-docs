@@ -90,9 +90,9 @@ Check the example below to see how the structure works:
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
-```
+```kotlin
 Button(
-    text = "Click me!"
+    text = "Click me!",
     styleId = "DesignSystem.MyNativeStyle",
     onPress = listOf(Alert(message="Button example"))
 )

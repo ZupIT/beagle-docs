@@ -25,7 +25,7 @@ See how the structure is represented:
 <!-- json-playground:lazy.json
 {
   "_beagleComponent_": "beagle:lazycomponent",
-  "path": "lazy.json",
+  "path": "button.json",
   "initialState": {
     "_beagleComponent_": "beagle:text",
     "text": "Loading the screen, please wait",
@@ -41,7 +41,7 @@ See how the structure is represented:
 
 ```kotlin
 LazyComponent(
-    path = "lazy.json",
+    path = "button.kt",
     initialState = Text("Loading the screen, please wait", alignment = TextAlignment.CENTER)
 )
 ```

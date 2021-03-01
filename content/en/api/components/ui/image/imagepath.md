@@ -42,11 +42,13 @@ It will refer an image that it is already in the local assets.
 
 {{% tab name="Kotlin DSL" %}}
 
-```javascript
-ImagePath.Local(
-  (webUrl = "public/web-illustration.png"),
-  (mobileId = "mobileIllustration")
-);
+```kotlin
+Image(
+    ImagePath.Local.both(
+        "public/web-illustration.png",
+        "mobileIllustration"
+    )
+)
 ```
 
 {{% /tab %}}
@@ -82,8 +84,8 @@ It will refer to an image that is hosted in another host or a relative one in th
 {{% tab name="Kotlin DSL" %}}
 
 ```kotlin
-ImagePath.Remote(
-  remoteUrl = "https://mcdn.wallpapersafari.com/medium/8/37/zlwnoM.jpg"
+Image(
+  ImagePath.Remote("https://mcdn.wallpapersafari.com/medium/8/37/zlwnoM.jpg")
 )
 ```
 
