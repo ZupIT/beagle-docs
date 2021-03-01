@@ -34,7 +34,6 @@ The class will have only one method responsible to build a **`Screen`**.
 
 ```swift
 import Beagle
-import BeagleSchema
 
 class MyBeagleScreen {
     static func make() -> Screen {
