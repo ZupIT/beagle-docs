@@ -21,7 +21,7 @@ description: >-
 {{% alert color="warning" %}}
 
 - Escreva mensagens GIT claras e significativas.
-- Para seus Pull Requests serem aceitos, você precisa seguir as diretrizes de contribuição, [**saiba mais aqui**](https://github.com/ZupIT/beagle/blob/master/CONTRIBUTING.md)
+- Para que seu Pull Requests ser aceito, siga as diretrizes de contribuição. [**saiba mais aqui**](https://github.com/ZupIT/beagle/blob/master/CONTRIBUTING.md).
 - Certifique-se de incluir Github Special Keywords que faz referência à issue e a fecha automaticamente quando o PR é mergeado.
 - Quando fizer uma pequena alteração em um PR, como corrigir um erro de digitação, qualquer alteração de estilo ou gramática, certifique-se de esmagar seus commits (squash) para não obter um número grande de commits para uma alteração relativamente pequena.
 - Certifique-se de incluir uma boa descrição de PR explicando as alterações no código, o motivo de alterar um trecho de código e garantir que haja informações suficientes para o revisor entender seu PR.
