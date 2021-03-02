@@ -50,7 +50,7 @@ description: >-
 
 {{% alert color="success" %}}
 
-Ao listar este código a imagem abaixo será carregada
+Ao listar este código, a imagem abaixo será carregada:
 ![](/shared/beaglecomp.png)
 
  {{% /alert %}}
