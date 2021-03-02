@@ -60,7 +60,7 @@ Ao listar este código a imagem abaixo será carregada
 
 ### **Abrindo uma issue**
 
-- Para nos ajudar a identificar problemas em geral - seja de estilização, leitura, organização ou arquitetura de código da documentação -, basta abrir uma issue usando o botão "Create a documentation issue", localizado no menu lateral direito da página.
+- Para nos ajudar a identificar problemas em geral - seja de estilização, leitura, organização ou arquitetura da documentação - basta abrir uma issue usando o botão "Create a documentation issue" localizado no menu lateral direito da página.
 
 - Em seguida, você será redirecionado(a) para uma página do github com uma label e um template padrão pré-estabelecido para abertura de issue. Fique à vontade para editar o template sugerido e fazer as mudanças que fazem mais sentido para sua contribuição.
 
