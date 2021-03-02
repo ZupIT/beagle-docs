@@ -13,7 +13,7 @@ description: >-
 {{% alert color="success" %}}
 
 - Utilizamos a ferramenta [**Hugo**](https://gohugo.io/documentation/) para criar sites estáticos, ideal para nossa documentação. Todo o conteúdo da documentação é feito com markdown. Se você tem dificuldades com essa sintaxe, acesse este [**guia básico**](https://www.markdownguide.org/basic-syntax/).
-- É importante lembrar que o hugo possui alguns atalhos para criar componentes uteis a documentação. Esses atalhos são chamados de **shortcodes**, e são muito práticos na hora de criar alguma tabela, alerta, glossário, vídeos embútidos e etc. Para saber mais como utilizar as shortcodes do hugo no markdown, acesse este [**guia básico**]({{< ref path="/contribute/hugo-shortcodes" lang="pt" >}})) de sintaxe.
+- É importante lembrar que o hugo possui alguns atalhos para criar componentes úteis à documentação. Esses atalhos são chamados de **shortcodes** e facilitam na hora de criar tabelas, alertas, glossários, vídeos embútidos e outros. Para saber mais como utilizar as shortcodes do hugo no markdown, acesse este [**guia básico**]({{< ref path="/contribute/hugo-shortcodes" lang="pt" >}})).
   {{% /alert %}}
 
 ## Requisitos para contribuir
