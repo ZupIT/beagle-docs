@@ -40,7 +40,7 @@ description: >-
 
 ### **Adicionando imagens**
 
-- As imagens dessa documentação estão em `/static/shared`. Assim, para adicionar novas imagens a documentação, basta copiá-las para esta pasta. Dessa forma, as imagens ficam acessíveis a partir de qualquer página ou sub-página da documentação.
+- As imagens dessa documentação estão em `/static/shared`. Assim, para adicionar novas imagens a documentação, basta copiá-las para essa pasta. Dessa forma, as imagens ficam acessíveis a partir de qualquer página ou sub-página da documentação.
 
 - Para buscar imagens e carregá-las, basta utilizar a interface markdown para imagens (sem adicionar um título) e listar o endereço como `/shared/nome-da-imagem` da seguinte forma:
 
