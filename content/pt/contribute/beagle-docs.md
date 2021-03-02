@@ -34,7 +34,7 @@ description: >-
 
 - Para editar um conteúdo, basta navegar até a a página a ser editada usando o menu lateral esquerdo ou a barra de pesquisa. Em seguida, clique no botão "Edit this page", localizado no menu lateral direito.
 
-- Feito isso, você será redirecionado(a) para o arquivo fonte hospedado no github em modo de edição. Pronto, agora é só editar o arquivo. Em seguida, abra um pull request usando a própria interface do github, preenchendo o formulário como mostra a imagem abaixo:
+- Feito isso, você será redirecionado(a) para o arquivo fonte hospedado no github em modo de edição. Pronto, agora é só editar o arquivo. Por fim, abra um pull request utilizando a própria interface do github, preenchendo o formulário como mostra a imagem abaixo:
 
 ![](/shared/contribute-pull-request.jpg)
 
