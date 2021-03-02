@@ -16,7 +16,7 @@ Beagle View é uma `UIView` que deve ser usada quando é necessário adicionar u
 
 **Component:** Recebe um componente de modo declarativo.
 
-**ScreenType.Remote:** Na inicialização de uma view remota recebe-se a URL da sua tela ou componente server-driven. A configuração dos estados da beagle view também pode ser feita através do parâmetro `beagleViewStateObserver`.
+**ScreenType.Remote:** Na inicialização de uma View remota, ela recebe a URL da sua tela ou componente server-driven. A configuração dos estados da Beagle View também pode ser feita por meio do parâmetro     `beagleViewStateObserver`.
 
 **ScreenType:** Permite inicializar de três formas:
 
@@ -64,7 +64,7 @@ class BeagleViewViewController: UIViewController {
 }
 ```
 
-Agora, você irá criar três textos nativos do tipo `UILabel` e irá posicioná-los com o `AutoLayout`, como na função `setupLabels` abaixo.
+Agora, você irá criar três textos nativos do tipo `UILabel` e irá posicioná-los com o `AutoLayout`, como na função `setupLabels` abaixo:
 
 ```swift
 private lazy var titleScreen = makeLabel(text: "I'm a native screen")
@@ -108,10 +108,10 @@ private func setupLabels() {
 
 ### 2. Crie a BeagleView
 
-Abaixo, têm-se dois exemplos de instanciação de uma `BeagleView`, uma a inicializando no modo **declarative** e outro no modo **Remote**.
+Veja abaixo dois exemplos de instanciação de uma `BeagleView`, uma inicializada no modo **declarative** e outro no modo **Remote**:
 
 * 1-> `BeagleView` declarativa com o componente de texto do Beagle, utilizando o `AutoLayout` com o método **setupDeclarative**.
-* 2-> `BeagleView` remote passando uma URL, utilizando o `AutoLayout` com o método **setupRemote**.
+* 2-> `BeagleView` remota passando uma URL, utilizando o `AutoLayout` com o método **setupRemote**.
 
 ```swift
 // 1   
@@ -146,7 +146,7 @@ private func setupRemote() {
 
 Você pode observar os estados e tratar os erros a partir do parâmetro beagleViewStateObserver na inicialização da BeagleView com o tipo ScreenType.Remote.
 
-Abaixo temos um exemplo onde foi criada uma BeagleView que recebe os estados para poder tratá-los.
+Veja abaixo um exemplo, onde uma BeagleView foi criada e recebe os estados para poder tratá-los.
 
 ```swift
 private lazy var beagleViewStateful = BeagleView(.init(url: "your URL")) { state in
@@ -176,7 +176,7 @@ private func setupStatefulBeagleView() {
 
 ### 4. Exemplo Completo
 
-Segue em exemplo a classe `BeagleViewViewController`completa.
+Abaixo um exemplo da classe `BeagleViewViewController` completa.
 
 ```swift
 import UIKit

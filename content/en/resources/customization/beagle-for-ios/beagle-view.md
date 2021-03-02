@@ -16,11 +16,11 @@ It is possible to initialize a `BeagleView` with a Beagle **component** or **scr
 
 **Component:** Receives a declarative component. 
 
-**ScreenType.Remote:** Receives an URL with a server-driven component. This inicialization allows you to configure BeagleView's states through `beagleViewStateObserver` parameter.
+**ScreenType.Remote:** Receives an URL with a server-driven component. This initialization allows you to configure BeagleView's states through `beagleViewStateObserver` parameter.
 
-**ScreenType:** It's a enum that allows you to initialize BeagleView in three ways:
+**ScreenType:** It's an enum that allows you to initialize BeagleView in three ways:
 
-* `Remote:` Receives an URL with a server-driven component. If there was an error when loading your server-driven screen, an optional fallback view can be configured, which would be a screen build on the frontend.
+* `Remote:` Receives an URL with a server-driven component. If there is an error when loading your server-driven screen, an optional fallback view can be configured, which would be a screen build on the frontend.
   You can also configure a header through `additionalData` parameter.
 
 * `Declarative:` Receives a declarative screen (created on your frontend side on Swift).
@@ -48,7 +48,7 @@ public class BeagleView: UIView {
 
 ## Using Beagle View
 
-Below is a native layout that will be used to exemplify the use of `AutoLayout` together with Beagle:
+Check out below, a native layout that will be used to exemplify the use of `AutoLayout` together with Beagle:
 
 ### 1. Create a BeagleViewViewController
 
@@ -65,9 +65,7 @@ class BeagleViewViewController: UIViewController {
 }
 ```
 
-Agora, você irá criar três textos nativos do tipo `UILabel` e irá posicioná-los com o `AutoLayout`, como na função `setupLabels` abaixo.
-
-Now, inside `BeagleViewViewController` class, three native `UILabel` texts will be created and positioned with `AutoLayout`, as can be seen in the `setupLabels` function.
+Now, inside BeagleViewViewController class, three native UILabel texts will be created and positioned with AutoLayout, as you can see in the `setupLabels` function.
 
 ```swift
 private lazy var titleScreen = makeLabel(text: "I'm a native screen")
@@ -111,7 +109,7 @@ private func setupLabels() {
 
 ### 2. Create a BeagleView
 
-Below are two examples of how to instantiate a `BeagleView`, one starting with a **declarative** Beagle component and the other in **remote** mode with a server-driven component.
+See below two examples on how to instantiate a `BeagleView`, one starting with a **declarative** Beagle component and the other in a **remote** mode with a server-driven component.
 
 * 1-> `BeagleView` declarative with Beagle text, using `AutoLayout` with the **setupDeclarative** method.
 * 2-> `BeagleView` remote by passing a URL, using `AutoLayout` with the **setupRemote** method.
@@ -149,7 +147,7 @@ private func setupRemote() {
 
 You can observe the states and deal with errors from the `beagleViewStateObserver `parameter at BeagleView startup with the type `ScreenType.Remote`.
 
-Below is an example where a BeagleView was created that receives BeagleView's states to be able to treat them.
+Check out below an example where a BeagleView was created and it receives BeagleView's states to treat them.
 
 ```swift
 private lazy var beagleViewStateful = BeagleView(.init(url: "your URL")) { state in
@@ -179,7 +177,7 @@ private func setupStatefulBeagleView() {
 
 ### 4. Complete Example
 
-Bellow is the complete example of `BeagleViewViewController` class.
+You can see a complete `BeagleViewViewController` class example below:
 
 ```swift
 import UIKit
