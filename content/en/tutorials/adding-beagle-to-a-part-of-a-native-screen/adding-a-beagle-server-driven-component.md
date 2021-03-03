@@ -12,7 +12,7 @@ It is possible that some screen components are received through server-driven, m
 On the example below, there is a server-driven button in a native screen, and the result is:
 
 <div align="center">
-{{< figure src="/screenshot_1594300176.png" width="30%" >}}
+{{< figure src="/shared/screenshot_1594300176.png" width="30%" >}}
 </div>
 
 ## Requisites
@@ -219,8 +219,8 @@ The structure of **loadView** is:
 | **Attribute** | **Type**                                                                                                                                                                                           | Required | **Definition**                                                   |
 | :------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------: | :--------------------------------------------------------------- |
 | activity      | [**AppCompatActivity**](https://developer.android.com/reference/androidx/appcompat/app/AppCompatActivity/)/[**Fragment**](https://developer.android.com/reference/androidx/fragment/app/Fragment/) |    ✓     | Defines the activity or fragment that is using a loadview        |
-| screenRequest | [**ScreenRequest**]({{< ref path="/api/reference/br.com.zup.beagle.android.view/-screen-request/" lang="en" >}})                                                                                           |    ✓     | Sets parameters when calling the remote screen                   |
-| listener      | **OnServerStateChanged = (serverState: [ServerDrivenState]({{< ref path="/api/reference/br.com.zup.beagle.android.view/-server-driven-state/" lang="en" >}})) -> Unit**                                                    |          | Defines the listener that configures callbacks for screen states |
+| screenRequest | [**ScreenRequest**](https://docs-reference.usebeagle.io/android/br.com.zup.beagle.android.view/-screen-request/)                                                                                           |    ✓     | Sets parameters when calling the remote screen                   |
+| listener      | **OnServerStateChanged = (serverState: [ServerDrivenState](https://docs-reference.usebeagle.io/android/br.com.zup.beagle.android.view/-server-driven-state/) -> Unit**                                                    |          | Defines the listener that configures callbacks for screen states |
 
 <br />
 
@@ -240,7 +240,7 @@ frameLayout.loadView(this, ScreenRequest("/serverDrivenComponent"))
 And done: now, just start your application and you will see the following screen!
 
 <div align="center">
-{{< figure src="/server-driven-comp-ios.gif" width="30%" >}}
+{{< figure src="/shared/server-driven-comp-ios.gif" width="30%" >}}
 </div>
 
 Click on the button and you will se the function of this component implemented and functional, Beagle displays all the components as they are natives.
@@ -299,7 +299,7 @@ class NativeViewController: UIViewController {
 At the end of the process, you will "call" the native screen that will shown up as in the image below. Remember in this example, it was created in a screen composed on a `UILabel` and on a `BeagleScreenViewController` variable type, where it remains the server-driven component.
 
 <div align="center">
-{{< figure src="/server-driven-comp-ios.gif" width="50%" >}}
+{{< figure src="/shared/server-driven-comp-ios.gif" width="50%" >}}
 </div>
 {{% /tab %}}
 
@@ -362,7 +362,7 @@ Remember to run your Angular project using the comands:
 Your hybrid screen with native and server-driven elements is ready:
 
 <div align="center">
-{{< figure src="/image.png" >}}
+{{< figure src="/shared/image.png" >}}
 </div>
 {{% /tab %}}
 {{< /tabs >}}
