@@ -15,6 +15,7 @@ This component enables accessibility elements, such as a text message that can b
 | :--- | :--- | :--- | :--- |
 | accessible | Boolean |   ✓ | Indicates whether the component will be interpreted as accessible. Default is `true`. |
 | accessibilityLabel | String |  | `string` containing a message that will be spoken by programs, like VoiceOver. |
+| isHeader | Boolean |  | Indicates whether the component is a header. Default is `false`. |
 
 {{% alert color="warning" %}}
 If backend does not specify accessibility, the default values ​​for each platform will be used.
@@ -36,7 +37,8 @@ If backend does not specify accessibility, the default values ​​for each pla
           },
           "accessibility": {
             "accessibilityLabel": "Image Label",
-            "accessible": true
+            "accessible": true,
+            "isHeader": true
           }
     }
   ]
