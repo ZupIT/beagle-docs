@@ -38,7 +38,7 @@ The structure is represented by the attributes below:
 {{% tab name="Kotlin DSL" %}}
 
 ```kotlin
-WebView(url: "https://www.google.com.br/")
+WebView(url = "https://usebeagle.io/")
 ```
 
 {{% /tab %}}

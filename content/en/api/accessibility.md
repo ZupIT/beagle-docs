@@ -46,16 +46,16 @@ If backend does not specify accessibility, the default values ​​for each pla
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
-```
-iner(
-        children = listOf(
-            Image(
-                path = ImagePath.Remote("https://i.ibb.co/rvRN9kv/logo.png")
-            ).applyAccessibility(
-                accessibility = Accessibility(true, "Image Label")
-            )
+```kotlin
+Container(
+    children = listOf(
+        Image(
+            path = ImagePath.Remote("https://i.ibb.co/rvRN9kv/logo.png")
+        ).applyAccessibility(
+            accessibility = Accessibility(true, "Image Label")
         )
     )
+)
 ```
 {{% /tab %}}
 {{< /tabs >}}

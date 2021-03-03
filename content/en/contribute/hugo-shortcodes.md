@@ -28,6 +28,8 @@ The best way to make references to **_internal_** links in the documentation is 
 
 [Link Example]({{< ref path="/get-started/installing-beagle/backend.md" lang="en">}})
 
+> To learn more about ref, [click here](https://gohugo.io/content-management/cross-references/)
+
 ### **Alerts**
 
 Alerts are used to highlight important information when following a configuration step, tutorial, or to highlight requirements necessary for some functionality.
@@ -103,7 +105,7 @@ To render images, gifs and other types of figures use the following shortcode:
 
 {{< figure src="https://media.glassdoor.com/sqll/2482761/zup-innovation-squarelogo-1583862820688.png" width="250" height="250" >}}
 
-To know all the parameters that the figure can receive, [**access here**](https://gohugo.io/content-management/shortcodes#figure)
+> To know all the parameters that the figure can receive, [**access here**](https://gohugo.io/content-management/shortcodes#figure)
 
 ### **Videos**
 

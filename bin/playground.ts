@@ -14,11 +14,11 @@ const ENCODING: BufferEncoding = 'utf-8'
 const LANGUAGE_CONFIG: Record<Language, LanguageConfig> = {
   en: {
     source: './content/en/**/*.md',
-    targetFile: './static/playground/en.json',
+    targetFile: './static/shared/en.json',
   },
   pt: {
     source: './content/pt/**/*.md',
-    targetFile: './static/playground/pt.json',
+    targetFile: './static/shared/pt.json',
   },
 }
 

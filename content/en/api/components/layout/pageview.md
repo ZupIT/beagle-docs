@@ -142,8 +142,8 @@ Container(
         ),
         PageIndicator(
             numberOfPages = 3,
-            selectedColor = BLACK,
-            unselectedColor = LIGHT_GREY,
+            selectedColor = "#000",
+            unselectedColor = "#CCC",
             currentPage = expressionOf("@{context}")
         )
     ),

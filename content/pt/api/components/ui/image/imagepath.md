@@ -39,10 +39,12 @@ Irá referenciar uma imagem que já está nos assets locais.
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
-```javascript
-ImagePath.Local(
-  webUrl = "public/web-illustration.png",
-  mobileId = "mobileIllustration"
+```kotlin
+Image(
+    ImagePath.Local.both(
+        "public/web-illustration.png",
+        "mobileIllustration"
+    )
 )
 ```
 {{% /tab %}}
@@ -75,8 +77,8 @@ Irá referenciar uma imagem que esteja hospedada em outro host ou relativo no pr
 
 {{% tab name="Kotlin DSL" %}}
 ```kotlin
-ImagePath.Remote(
-  remoteUrl = "https://mcdn.wallpapersafari.com/medium/8/37/zlwnoM.jpg"
+Image(
+  ImagePath.Remote("https://mcdn.wallpapersafari.com/medium/8/37/zlwnoM.jpg")
 )
 ```
 {{% /tab %}}
