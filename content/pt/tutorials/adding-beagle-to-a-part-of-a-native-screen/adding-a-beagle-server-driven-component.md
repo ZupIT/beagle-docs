@@ -13,7 +13,7 @@ description: >-
 No exemplo abaixo, vamos exibir um botão server-driven em uma tela nativa. O resultado que deve aparecer na sua aplicação é esse:
 
 <div align="center">
-{{< figure src="/screenshot_1594300176.png" width="30%" >}}
+{{< figure src="/shared/screenshot_1594300176.png" width="30%" >}}
 </div>
 
 ## Pré-requisitos
@@ -233,7 +233,7 @@ frameLayout.loadView(this, ScreenRequest("/serverDrivenComponent"))
 E pronto: basta iniciar sua aplicação e você verá a tela a seguir!
 
 <div align="center">
-{{< figure src="/server-driven-comp-ios.gif" width="30%" >}}
+{{< figure src="/shared/server-driven-comp-ios.gif" width="30%" >}}
 </div>
 
 Clique no botão e perceba que a função nesse componente está implementada e funcional, ou seja, o Beagle exibe todos os componentes como se fossem nativos.
@@ -295,7 +295,7 @@ class NativeViewController: UIViewController {
 Ao final do processo, você poderá "chamar" a tela nativa e a imagem abaixo irá aparecer. Lembrando que, para esse exemplo, foram criadas: uma tela composta de uma `UILabel` e uma `BeagleView` , onde fica o componente server-driven.
 
 <div align="center">
-{{< figure src="/server-driven-comp-ios.gif" width="50%" >}}
+{{< figure src="/shared/server-driven-comp-ios.gif" width="50%" >}}
 </div>
 {{% /tab %}}
 
@@ -357,7 +357,7 @@ Lembre-se de rodar seu projeto Angular usando um dos comandos:
 A sua tela híbrida com elementos nativos e server driven está pronta
 
 <div align="center">
-{{< figure src="/image.png" >}}
+{{< figure src="/shared/image.png" >}}
 </div>
 {{% /tab %}}
 {{< /tabs >}}
