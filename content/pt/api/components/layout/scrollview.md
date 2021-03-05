@@ -15,12 +15,12 @@ A sua estrutura é representada como mostrado abaixo:
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Atributo</b>
+      <th style="text-align:left"><strong>Atributo</strong>
       </th>
-      <th style="text-align:left"><b>Tipo</b>
+      <th style="text-align:left"><strong>Tipo</strong>
       </th>
       <th style="text-align:center">Obrigat&#xF3;rio</th>
-      <th style="text-align:left"><b>Defini&#xE7;&#xE3;o</b>
+      <th style="text-align:left"><strong>Defini&#xE7;&#xE3;o</strong>
       </th>
     </tr>
   </thead>
@@ -28,14 +28,13 @@ A sua estrutura é representada como mostrado abaixo:
     <tr>
       <td style="text-align:left">children</td>
       <td style="text-align:left">
-        <p>List
+        List
           <br />&lt;<a href="../../widget">ServerDriven</a>
-        </p>
-        <p><a href="../../widget">Component</a>&gt;</p>
+        <a href="../../widget">Component</a>&gt;
       </td>
       <td style="text-align:center">&#x2713;</td>
       <td style="text-align:left">Define a lista de atributos a ser exibida na visualiza&#xE7;&#xE3;o do
-        layout. <b><br /></b>
+        layout. <strong><br /></strong>
       </td>
     </tr>
     <tr>
@@ -43,9 +42,9 @@ A sua estrutura é representada como mostrado abaixo:
       <td style="text-align:left">ScrollAxis</td>
       <td style="text-align:center"></td>
       <td style="text-align:left">
-        <p>Define a dire&#xE7;&#xE3;o da rolagem em scroll na tela.</p>
-        <p>A dire&#xE7;&#xE3;o do scroll pode ser modificada de acordo com a classe <code>ScrollAxis</code> definida
-          logo abaixo. Por default, tem o valor de<code>VERTICAL</code>.</p>
+        Define a dire&#xE7;&#xE3;o da rolagem em scroll na tela.
+        A dire&#xE7;&#xE3;o do scroll pode ser modificada de acordo com a classe <code>ScrollAxis</code> definida
+          logo abaixo. Por default, tem o valor de<code>VERTICAL</code>.
       </td>
     </tr>
     <tr>

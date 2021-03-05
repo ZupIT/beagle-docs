@@ -15,12 +15,12 @@ See how the structure is represented by the attributes below:
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Attribute</b>
+      <th style="text-align:left"><strong>Attribute</strong>
       </th>
-      <th style="text-align:left"><b>Type</b>
+      <th style="text-align:left"><strong>Type</strong>
       </th>
       <th style="text-align:left">Required</th>
-      <th style="text-align:left"><b>Definition</b>
+      <th style="text-align:left"><strong>Definition</strong>
       </th>
     </tr>
   </thead>
@@ -28,8 +28,8 @@ See how the structure is represented by the attributes below:
     <tr>
       <td style="text-align:left">value</td>
       <td style="text-align:left">
-        <p>String or</p>
-        <p><a href="https://docs.usebeagle.io/v/v1.0-en/api/context#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
+        String or
+        <a href="https://docs.usebeagle.io/v/v1.0-en/api/context#bindings"><strong>Binding</strong></a>
       </td>
       <td style="text-align:left">&#x2713;</td>
       <td style="text-align:left">Item referring to the input value that will be entered in the editable
@@ -38,8 +38,8 @@ See how the structure is represented by the attributes below:
     <tr>
       <td style="text-align:left">placeholder</td>
       <td style="text-align:left">
-        <p>String or</p>
-        <p><a href="https://docs.usebeagle.io/v/v1.0-en/api/context#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
+        String or
+        <a href="https://docs.usebeagle.io/v/v1.0-en/api/context#bindings"><strong>Binding</strong></a>
       </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">The Placeholder is a text that is displayed when nothing has been entered
@@ -65,7 +65,7 @@ See how the structure is represented by the attributes below:
     </tr>
     <tr>
       <td style="text-align:left">type</td>
-      <td style="text-align:left">TextInputType or <a href="../../context/#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</td>
+      <td style="text-align:left">TextInputType or <a href="../../context/#bindings"><strong>Binding</strong></a></td>
       <td
       style="text-align:left"></td>
         <td style="text-align:left">This attribute identifies the text type that it will receive in the editable
@@ -81,46 +81,42 @@ See how the structure is represented by the attributes below:
     </tr>
     <tr>
       <td style="text-align:left">onChange</td>
-      <td style="text-align:left">List &lt;<a href="../../actions/"><b>Action</b></a>&gt;</td>
+      <td style="text-align:left">List &lt;<a href="../../actions/"><strong>Action</strong></a>&gt;</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">
-        <p>Actions array that this field can trigger when its value is altered. It
-          is possible to define a <a href="https://docs.usebeagle.io/v/v1.0-en/resources/customization/beagle-para-web/customized-actions"><b>customized action</b></a><b> </b>or
+        Actions array that this field can trigger when its value is altered. It
+          is possible to define a <a href="https://docs.usebeagle.io/v/v1.0-en/resources/customization/beagle-para-web/customized-actions"><strong>customized action</strong></a><strong> </strong>or
           any available action in the interface, for example, an action that shows
-          an Alert message. <b><br /><br /></b>This attribute is optional, but if
-          an action is defined here it needs to be configured in the fronted.</p>
-        <p></p>
+          an Alert message. <strong><br /><br /></strong>This attribute is optional, but if
+          an action is defined here it needs to be configured in the fronted.
       </td>
     </tr>
     <tr>
       <td style="text-align:left">onBlur</td>
-      <td style="text-align:left">List &lt;<a href="https://docs.usebeagle.io/v/v1.0-en/api/actions"><b>Action</b></a>&gt;</td>
+      <td style="text-align:left">List &lt;<a href="https://docs.usebeagle.io/v/v1.0-en/api/actions"><strong>Action</strong></a>&gt;</td>
       <td
       style="text-align:left"></td>
         <td style="text-align:left">
-          <p>Action array that this field can trigger when its focus is removed. It
-            is possible to defined a <a href="https://docs.usebeagle.io/v/v1.0-en/resources/customization/beagle-para-web/customized-actions"><b>customized action</b></a><b> </b>or
+          Action array that this field can trigger when its focus is removed. It
+            is possible to defined a <a href="https://docs.usebeagle.io/v/v1.0-en/resources/customization/beagle-para-web/customized-actions"><strong>customized action</strong></a><strong> </strong>or
             any available action in the interface, for example, an action that shows
-            an alert message (<a href="../../actions/alert"><b>Alert</b></a>).</p>
-          <p></p>
-          <p>This attribute is optional, but if an action is defined here it needs
-            to be configured in the fronted.</p>
+            an alert message (<a href="../../actions/alert"><strong>Alert</strong></a>).
+          This attribute is optional, but if an action is defined here it needs
+            to be configured in the fronted.
         </td>
     </tr>
     <tr>
       <td style="text-align:left">onFocus</td>
-      <td style="text-align:left">List &lt;<a href="https://docs.usebeagle.io/v/v1.0-en/api/actions"><b>Action</b></a>&gt;</td>
+      <td style="text-align:left">List &lt;<a href="https://docs.usebeagle.io/v/v1.0-en/api/actions"><strong>Action</strong></a>&gt;</td>
       <td
       style="text-align:left"></td>
         <td style="text-align:left">
-          <p>Actions array that this field can trigger when this field is on focus.
-            It is possible to defined a <a href="https://docs.usebeagle.io/v/v1.0-en/resources/customization/beagle-para-web/customized-actions"><b>customized action</b></a><b> </b>or
+          Actions array that this field can trigger when this field is on focus.
+            It is possible to defined a <a href="https://docs.usebeagle.io/v/v1.0-en/resources/customization/beagle-para-web/customized-actions"><strong>customized action</strong></a><strong> </strong>or
             any available action in the interface, for example, an action that shows
-            an alert message (<a href="../../actions/alert"><b>Alert</b></a><b>). </b>
-          </p>
-          <p>&lt;b&gt;&lt;/b&gt;</p>
-          <p>This attribute is optional, but if an action is defined here it needs
-            to be configured in the fronted.</p>
+            an alert message (<a href="../../actions/alert"><strong>Alert</strong></a><strong>). </strong>
+          This attribute is optional, but if an action is defined here it needs
+            to be configured in the fronted.
         </td>
     </tr>
   </tbody>

@@ -15,12 +15,12 @@ A sua estrutura é representada como mostrado abaixo:
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Atributo</b>
+      <th style="text-align:left"><strong>Atributo</strong>
       </th>
-      <th style="text-align:left"><b>Tipo</b>
+      <th style="text-align:left"><strong>Tipo</strong>
       </th>
       <th style="text-align:center">Obrigat&#xF3;rio</th>
-      <th style="text-align:left"><b>Defini&#xE7;&#xE3;o</b>
+      <th style="text-align:left"><strong>Defini&#xE7;&#xE3;o</strong>
       </th>
     </tr>
   </thead>
@@ -28,8 +28,8 @@ A sua estrutura é representada como mostrado abaixo:
     <tr>
       <td style="text-align:left">url</td>
       <td style="text-align:left">
-        <p>String ou</p>
-        <p><a href="https://docs.usebeagle.io/v/v1.0-en/api/context#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
+        String ou
+        <a href="https://docs.usebeagle.io/v/v1.0-en/api/context#bindings"><strong>Binding</strong></a>
       </td>
       <td style="text-align:center">&#x2713;</td>
       <td style="text-align:left">Endere&#xE7;o para navega&#xE7;&#xE3;o.</td>

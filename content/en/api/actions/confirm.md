@@ -15,12 +15,12 @@ Confirm structure is:
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Attribute</b>
+      <th style="text-align:left"><strong>Attribute</strong>
       </th>
-      <th style="text-align:left"><b>Type</b>
+      <th style="text-align:left"><strong>Type</strong>
       </th>
       <th style="text-align:left">Required</th>
-      <th style="text-align:left"><b>Definition</b>
+      <th style="text-align:left"><strong>Definition</strong>
       </th>
     </tr>
   </thead>
@@ -28,8 +28,8 @@ Confirm structure is:
     <tr>
       <td style="text-align:left">title</td>
       <td style="text-align:left">
-        <p>String or</p>
-        <p><a href="https://docs.usebeagle.io/v/v1.0-en/api/context#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
+        String or
+        <a href="https://docs.usebeagle.io/v/v1.0-en/api/context#bindings"><strong>Binding</strong></a>
       </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Title of the confirmation box.</td>
@@ -37,22 +37,22 @@ Confirm structure is:
     <tr>
       <td style="text-align:left">message</td>
       <td style="text-align:left">
-        <p>String or</p>
-        <p>&lt;b&gt;&lt;/b&gt;<a href="https://docs.usebeagle.io/v/v1.0-en/api/context#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
+        String or
+        <a href="https://docs.usebeagle.io/v/v1.0-en/api/context#bindings"><strong>Binding</strong></a>
       </td>
-      <td style="text-align:left">&#x2713;</td>
+      <td style="text-align:center">&#x2713;</td>
       <td style="text-align:left">Confirmation box message.</td>
     </tr>
     <tr>
       <td style="text-align:left">onPressOk</td>
-      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;<a href="https://docs.usebeagle.io/v/v1.0-en/api/actions"><b>Action</b></a>&lt;b&gt;&lt;/b&gt;</td>
+      <td style="text-align:left"><a href="https://docs.usebeagle.io/v/v1.0-en/api/actions"><strong>Action</strong></a>
       <td
       style="text-align:left"></td>
         <td style="text-align:left">Confirm button action.</td>
     </tr>
     <tr>
       <td style="text-align:left">onPressCancel</td>
-      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;<a href="https://docs.usebeagle.io/v/v1.0-en/api/actions"><b>Action</b></a>&lt;b&gt;&lt;/b&gt;</td>
+      <td style="text-align:left"><a href="https://docs.usebeagle.io/v/v1.0-en/api/actions"><strong>Action</strong></a></td>
       <td
       style="text-align:left"></td>
         <td style="text-align:left">Cancel button action.</td>

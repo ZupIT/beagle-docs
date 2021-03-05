@@ -156,55 +156,53 @@ Below you can find all methods of the Beagle View and their description:
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><b>subscribe</b>
+      <td style="text-align:left"><strong>subscribe</strong>
       </td>
       <td style="text-align:left">function</td>
       <td style="text-align:left">Receives the listener and returns a function to unsubscribe.</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <p></p>
-        <p><b>addErrorListener</b>
-        </p>
+        <strong>addErrorListener</strong>
       </td>
       <td style="text-align:left">function</td>
-      <td style="text-align:left"><a href="the-beagle-view#subscribing-to-events"><b>subscribes to errors</b></a><b>. </b>Receives
+      <td style="text-align:left"><a href="the-beagle-view#subscribing-to-events"><strong>subscribes to errors</strong></a><strong>. </strong>Receives
         the listener and returns a function to remove the listener.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>fetch</b>
+      <td style="text-align:left"><strong>fetch</strong>
       </td>
       <td style="text-align:left">function</td>
-      <td style="text-align:left"><a href="the-beagle-view#fetching-a-view"><b>fetches a view from the backend</b></a><b> </b>and
+      <td style="text-align:left"><a href="the-beagle-view#fetching-a-view"><strong>fetches a view from the backend</strong></a><strong> </strong>and
         uses it to update the current tree.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>getRenderer</b>
+      <td style="text-align:left"><strong>getRenderer</strong>
       </td>
       <td style="text-align:left">function</td>
-      <td style="text-align:left">returns <a href="rendering#the-renderer-api"><b>the renderer</b></a> of
+      <td style="text-align:left">returns <a href="rendering#the-renderer-api"><strong>the renderer</strong></a> of
         the view. Can be used to update the tree directly.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>getTree</b>
+      <td style="text-align:left"><strong>getTree</strong>
       </td>
       <td style="text-align:left">function</td>
       <td style="text-align:left">returns a copy of the currently rendered tree.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>getBeagleNavigator</b>
+      <td style="text-align:left"><strong>getBeagleNavigator</strong>
       </td>
       <td style="text-align:left">function</td>
       <td style="text-align:left">returns the navigator.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>getBeagleService</b>
+      <td style="text-align:left"><strong>getBeagleService</strong>
       </td>
       <td style="text-align:left">function</td>
       <td style="text-align:left">returns the BeagleService that created this view.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>destroy</b>
+      <td style="text-align:left"><strong>destroy</strong>
       </td>
       <td style="text-align:left">function</td>
       <td style="text-align:left">destroys this view.</td>

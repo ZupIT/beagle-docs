@@ -3,4 +3,4 @@ title: Reference
 weight: 397
 ---
 
-{{< reference-redirect >}}
+{{< redirect "https://docs-reference.usebeagle.io/" >}}

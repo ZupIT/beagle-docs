@@ -763,9 +763,7 @@ O ViewContentManager possui as seguintes propriedades e funções: have the foll
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p>&lt;b&gt;&lt;/b&gt;</p>
-        <p><code>getElement()</code>
-        </p>
+        <code>getElement()</code>
       </td>
       <td style="text-align:left">fun&#xE7;&#xE3;o</td>
       <td style="text-align:left">retorna a node na &#xE1;rvore do Beagle respons&#xE1;vel pela renderiza&#xE7;&#xE3;o
@@ -773,9 +771,7 @@ O ViewContentManager possui as seguintes propriedades e funções: have the foll
     </tr>
     <tr>
       <td style="text-align:left">
-        <p></p>
-        <p><code>getElementId()</code>
-        </p>
+        <code>getElementId()</code>
       </td>
       <td style="text-align:left">fun&#xE7;&#xE3;o</td>
       <td style="text-align:left">atalho para o <code>getElement().id</code>

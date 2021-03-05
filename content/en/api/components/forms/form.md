@@ -26,16 +26,15 @@ The structured is represented below:
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p></p>
-        <p>onSubmit</p>
+        onSubmit
       </td>
-      <td style="text-align:left">List &lt;<a href="../../actions/"><b>Action</b></a>&gt;</td>
+      <td style="text-align:left">List &lt;<a href="../../actions/"><strong>Action</strong></a>&gt;</td>
       <td style="text-align:center"></td>
       <td style="text-align:left">Array of actions that this button can trigger when a form is sent.</td>
     </tr>
     <tr>
       <td style="text-align:left">child</td>
-      <td style="text-align:left"><a href="../"><b>ServerDrivenComponent</b></a>
+      <td style="text-align:left"><a href="../"><strong>ServerDrivenComponent</strong></a>
       </td>
       <td style="text-align:center">&#x2713;</td>
       <td style="text-align:left">Defines the visual components list (server-driven).</td>

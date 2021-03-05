@@ -19,48 +19,48 @@ description: 'Nesta seção, você encontra descrição completa dos Operadores 
   <tbody>
     <tr>
       <td style="text-align:center">
-        <p>gt</p>
-        <p>(Maior)</p>
+        gt
+        (Maior)
       </td>
       <td style="text-align:left">&quot;@{gt(3,4)}</td>
-      <td style="text-align:left">Operador que recebe duas entradas e resulta em <b>verdadeiro</b> se o primeiro
-        valor for <b>maior</b> que o segundo.</td>
+      <td style="text-align:left">Operador que recebe duas entradas e resulta em <strong>verdadeiro</strong> se o primeiro
+        valor for <strong>maior</strong> que o segundo.</td>
     </tr>
     <tr>
       <td style="text-align:center">
-        <p>gte</p>
-        <p>(Maior ou Igual)</p>
+        gte
+        (Maior ou Igual)
       </td>
       <td style="text-align:left">&quot;@{gte(3,4)}&quot;</td>
-      <td style="text-align:left">Operador que recebe duas entradas e resulta em <b>verdadeiro</b> se o primeiro
-        valor for <b>maior ou igual</b> ao segundo.</td>
+      <td style="text-align:left">Operador que recebe duas entradas e resulta em <strong>verdadeiro</strong> se o primeiro
+        valor for <strong>maior ou igual</strong> ao segundo.</td>
     </tr>
     <tr>
       <td style="text-align:center">
-        <p>lt</p>
-        <p>(Menor)</p>
+        lt
+        (Menor)
       </td>
       <td style="text-align:left">@{lt(3,4)}&quot;</td>
-      <td style="text-align:left">Operador que recebe duas entradas e resulta em <b>verdadeiro</b> se o primeiro
-        valor for <b>menor</b> que o segundo.</td>
+      <td style="text-align:left">Operador que recebe duas entradas e resulta em <strong>verdadeiro</strong> se o primeiro
+        valor for <strong>menor</strong> que o segundo.</td>
     </tr>
     <tr>
       <td style="text-align:center">
-        <p>lte</p>
-        <p>(Menor ou igual)</p>
+        lte
+        (Menor ou igual)
       </td>
       <td style="text-align:left">&quot;@{lte(3,4)}&quot;</td>
-      <td style="text-align:left">Operador que recebe duas entradas e resulta em <b>verdadeiro</b> se o primeiro
-        valor for <b>menor ou igual</b> ao segundo.</td>
+      <td style="text-align:left">Operador que recebe duas entradas e resulta em <strong>verdadeiro</strong> se o primeiro
+        valor for <strong>menor ou igual</strong> ao segundo.</td>
     </tr>
     <tr>
       <td style="text-align:center">
-        <p>eq</p>
-        <p>(Igual)</p>
+        eq
+        (Igual)
       </td>
       <td style="text-align:left">&quot;@{eq(4,4)}&quot;</td>
-      <td style="text-align:left">Operador que recebe duas entradas e resulta em <b>verdadeiro</b> se o os
-        dois valores s&#xE3;o <b>iguais</b>.</td>
+      <td style="text-align:left">Operador que recebe duas entradas e resulta em <strong>verdadeiro</strong> se o os
+        dois valores s&#xE3;o <strong>iguais</strong>.</td>
     </tr>
   </tbody>
 </table>

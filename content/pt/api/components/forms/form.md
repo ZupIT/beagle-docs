@@ -26,17 +26,16 @@ A sua estrutura é representada como mostrado abaixo:
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p></p>
-        <p>onSubmit</p>
+        onSubmit
       </td>
-      <td style="text-align:left">List &lt;<a href="../../acoes/"><b>Action</b></a>&gt;</td>
+      <td style="text-align:left">List &lt;<a href="../../acoes/"><strong>Action</strong></a>&gt;</td>
       <td style="text-align:center"></td>
       <td style="text-align:left">Array de a&#xE7;&#xF5;es que esse bot&#xE3;o pode disparar quando o formul&#xE1;rio
         &#xE9; enviado.</td>
     </tr>
     <tr>
       <td style="text-align:left">child</td>
-      <td style="text-align:left"><a href="../"><b>ServerDrivenComponent</b></a>
+      <td style="text-align:left"><a href="../"><strong>ServerDrivenComponent</strong></a>
       </td>
       <td style="text-align:center">&#x2713;</td>
       <td style="text-align:left">Define a lista de componentes visuais (server-driven).</td>

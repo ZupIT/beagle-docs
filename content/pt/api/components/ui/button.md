@@ -15,12 +15,12 @@ A sua estrutura está representada abaixo:
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Atributos</b>
+      <th style="text-align:left"><strong>Atributos</strong>
       </th>
-      <th style="text-align:left"><b>Tipo</b>
+      <th style="text-align:left"><strong>Tipo</strong>
       </th>
       <th style="text-align:center">Obrigat&#xF3;rio</th>
-      <th style="text-align:left"><b>Defini&#xE7;&#xE3;o</b>
+      <th style="text-align:left"><strong>Defini&#xE7;&#xE3;o</strong>
       </th>
     </tr>
   </thead>
@@ -28,9 +28,8 @@ A sua estrutura está representada abaixo:
     <tr>
       <td style="text-align:left">text</td>
       <td style="text-align:left">
-        <p>String ou</p>
-        <p><a href="../../contexto/#bindings">Binding</a>
-        </p>
+        String ou
+        <a href="../../contexto/#bindings">Binding</a>
       </td>
       <td style="text-align:center">&#x2713;</td>
       <td style="text-align:left">Texto no bot&#xE3;o. T&#xED;tulo do bot&#xE3;o</td>
@@ -38,9 +37,8 @@ A sua estrutura está representada abaixo:
     <tr>
       <td style="text-align:left">styleId</td>
       <td style="text-align:left">
-        <p>String ou</p>
-        <p><a href="../../contexto/#bindings">Binding</a>
-        </p>
+        String ou
+        <a href="../../contexto/#bindings">Binding</a>
       </td>
       <td style="text-align:center"></td>
       <td style="text-align:left">Este atributo referencia um estilo nativo a ser aplicado no bot&#xE3;o.

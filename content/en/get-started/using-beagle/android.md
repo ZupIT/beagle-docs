@@ -53,8 +53,8 @@ class AppBeagleConfig : BeagleConfig {
       <td style="text-align:left">baseUrl</td>
       <td style="text-align:left">String</td>
       <td style="text-align:left">
-        <p>Informs the base URL used in Beagle in the application.</p>
-        <p>If you are using the emulator, <a href="https://developer.android.com/studio/run/emulator-networking.html#networkaddresses"><b>check here to define this attribute</b></a>.</p>
+        Informs the base URL used in Beagle in the application.
+        If you are using the emulator, <a href="https://developer.android.com/studio/run/emulator-networking.html#networkaddresses"><strong>check here to define this attribute</strong></a>.
       </td>
     </tr>
     <tr>

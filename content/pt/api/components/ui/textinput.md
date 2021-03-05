@@ -15,12 +15,12 @@ A sua estrutura é representada como mostrado abaixo:
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Atributo</b>
+      <th style="text-align:left"><strong>Atributo</strong>
       </th>
-      <th style="text-align:left"><b>Tipo</b>
+      <th style="text-align:left"><strong>Tipo</strong>
       </th>
-      <th style="text-align:center">Obrigat&#xF3;rio</th>
-      <th style="text-align:left"><b>Defini&#xE7;&#xE3;o</b>
+      <th style="text-align:center"><strong>Obrigatório</strong></th>
+      <th style="text-align:left"><strong>Defini&#xE7;&#xE3;o</strong>
       </th>
     </tr>
   </thead>
@@ -28,8 +28,8 @@ A sua estrutura é representada como mostrado abaixo:
     <tr>
       <td style="text-align:left">value</td>
       <td style="text-align:left">
-        <p>String ou</p>
-        <p><a href="../../contexto/#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
+        String ou
+        <a href="../../contexto/#bindings"><strong>Binding</strong></a>
       </td>
       <td style="text-align:center"></td>
       <td style="text-align:left">Item referente ao valor de entrada que ser&#xE1; digitado na &#xE1;rea
@@ -38,8 +38,8 @@ A sua estrutura é representada como mostrado abaixo:
     <tr>
       <td style="text-align:left">placeholder</td>
       <td style="text-align:left">
-        <p>String ou</p>
-        <p>&lt;b&gt;&lt;/b&gt;<a href="../../contexto/#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
+        String ou
+        <a href="../../contexto/#bindings"><strong>Binding</strong></a>
       </td>
       <td style="text-align:center"></td>
       <td style="text-align:left">Texto que &#xE9; exibido quando nada foi inserido no campo de texto edit&#xE1;vel.</td>
@@ -65,7 +65,7 @@ A sua estrutura é representada como mostrado abaixo:
     </tr>
     <tr>
       <td style="text-align:left">type</td>
-      <td style="text-align:left">TextInputType ou <a href="../../contexto/#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</td>
+      <td style="text-align:left">TextInputType ou <a href="../../contexto/#bindings"><strong>Binding</strong></a></td>
       <td
       style="text-align:center"></td>
         <td style="text-align:left">Esse atributo identifica o tipo de texto que iremos receber na &#xE1;rea
@@ -81,44 +81,40 @@ A sua estrutura é representada como mostrado abaixo:
     </tr>
     <tr>
       <td style="text-align:left">onChange</td>
-      <td style="text-align:left">List &lt;<a href="../../acoes/"><b>Action</b></a>&gt;</td>
+      <td style="text-align:left">List &lt;<a href="../../acoes/"><strong>Action</strong></a>&gt;</td>
       <td style="text-align:center"></td>
       <td style="text-align:left">
-        <p>Array de a&#xE7;&#xF5;es que esse campo <b>pode disparar quando seu valor for alterado</b>.
-          &#xC9; poss&#xED;vel definir uma <a href="../../../features/criacao-de-novas-acoes"><b>a&#xE7;&#xE3;o customizada</b></a><b> </b>ou
+        Array de a&#xE7;&#xF5;es que esse campo <strong>pode disparar quando seu valor for alterado</strong>.
+          &#xC9; poss&#xED;vel definir uma <a href="../../../features/criacao-de-novas-acoes"><strong>a&#xE7;&#xE3;o customizada</strong></a><strong> </strong>ou
           qualquer a&#xE7;&#xE3;o j&#xE1; dispon&#xED;vel na interface, como por
-          exemplo uma a&#xE7;&#xE3;o que mostra uma mensagem de alerta(<a href="../../acoes/alert"><b>Alert</b></a>).</p>
-        <p></p>
-        <p>Este atributo &#xE9; opcional, mas se uma a&#xE7;&#xE3;o for definida
-          aqui ela precisa estar configurada no frontend.</p>
+          exemplo uma a&#xE7;&#xE3;o que mostra uma mensagem de alerta(<a href="../../acoes/alert"><strong>Alert</strong></a>).
+        Este atributo &#xE9; opcional, mas se uma a&#xE7;&#xE3;o for definida
+          aqui ela precisa estar configurada no frontend.
       </td>
     </tr>
     <tr>
       <td style="text-align:left">onBlur</td>
-      <td style="text-align:left">List &lt;<a href="../../acoes/"><b>Action</b></a>&gt;</td>
+      <td style="text-align:left">List &lt;<a href="../../acoes/"><strong>Action</strong></a>&gt;</td>
       <td style="text-align:center"></td>
       <td style="text-align:left">
-        <p>Array de a&#xE7;&#xF5;es que esse campo <b>pode disparar quando seu foco &#xE9; retirado</b>.
-          &#xC9; poss&#xED;vel definir uma <a href="../../../features/criacao-de-novas-acoes"><b>a&#xE7;&#xE3;o customizada</b></a><b> </b>ou
+        Array de a&#xE7;&#xF5;es que esse campo <strong>pode disparar quando seu foco &#xE9; retirado</strong>.
+          &#xC9; poss&#xED;vel definir uma <a href="../../../features/criacao-de-novas-acoes"><strong>a&#xE7;&#xE3;o customizada</strong></a><strong> </strong>ou
           qualquer a&#xE7;&#xE3;o j&#xE1; dispon&#xED;vel na interface como, por
-          exemplo, uma a&#xE7;&#xE3;o que mostra uma mensagem de alerta(<a href="../../acoes/alert"><b>Alert</b></a>).</p>
-        <p></p>
-        <p>Este atributo &#xE9; opcional, mas se uma a&#xE7;&#xE3;o for definida
-          aqui ela precisa estar configurada no frontend.</p>
+          exemplo, uma a&#xE7;&#xE3;o que mostra uma mensagem de alerta(<a href="../../acoes/alert"><strong>Alert</strong></a>).
+        Este atributo &#xE9; opcional, mas se uma a&#xE7;&#xE3;o for definida
+          aqui ela precisa estar configurada no frontend.
       </td>
     </tr>
     <tr>
       <td style="text-align:left">onFocus</td>
-      <td style="text-align:left">List &lt;<a href="../../acoes/"><b>Action</b></a>&gt;</td>
+      <td style="text-align:left">List &lt;<a href="../../acoes/"><strong>Action</strong></a>&gt;</td>
       <td style="text-align:center"></td>
       <td style="text-align:left">
-        <p>Array de a&#xE7;&#xF5;es que esse campo pode disparar quando &#xE9; colocado
-          em foco. &#xC9; poss&#xED;vel definir uma <a href="../../../features/criacao-de-novas-acoes"><b>a&#xE7;&#xE3;o customizada</b></a><b> </b>ou
-          qualquer a&#xE7;&#xE3;o j&#xE1; dispon&#xED;vel na interface como, por
-          exemplo, uma a&#xE7;&#xE3;o que mostra uma mensagem de alerta(<a href="../../acoes/alert"><b>Alert</b></a>).</p>
-        <p></p>
-        <p>Este atributo &#xE9; opcional, mas se uma a&#xE7;&#xE3;o for definida
-          aqui ela precisa estar configurada no frontend.</p>
+        Array de a&#xE7;&#xF5;es que esse campo pode disparar quando &#xE9; colocado
+          em foco. &#xC9; poss&#xED;vel definir uma <a href="../../../features/criacao-de-novas-acoes"><strong>a&#xE7;&#xE3;o customizada</strong></a><strong> </strong>ou
+          qualquer a&#xE7;&#xE3;o j&#xE1; dispon&#xED;vel na interface como, por exemplo, uma a&#xE7;&#xE3;o que mostra uma mensagem de alerta(<a href="../../acoes/alert"><strong>Alert</strong></a>).
+        Este atributo &#xE9; opcional, mas se uma a&#xE7;&#xE3;o for definida
+          aqui ela precisa estar configurada no frontend.
       </td>
     </tr>
   </tbody>
