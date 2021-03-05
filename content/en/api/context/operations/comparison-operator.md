@@ -22,7 +22,7 @@ description: You will find here the description of comparison operator
         gt
         (greater)
       </td>
-      <td style="text-align:left">&quot;@{gt(3,4)}</td>
+      <td style="text-align:left">&quot;@{gt(3,4)}&quot;</td>
       <td style="text-align:left">Operator that receives two inputs and the result is <strong>true</strong> if the first
         value is <strong>greater than</strong> the second one.</td>
     </tr>
@@ -40,7 +40,7 @@ description: You will find here the description of comparison operator
         lt
         (less than)
       </td>
-      <td style="text-align:left">@{lt(3,4)}&quot;</td>
+      <td style="text-align:left">&quot;@{lt(3,4)}&quot;</td>
       <td style="text-align:left">Operator that receives two inputs and the result is <strong>true</strong> if the first
         value is<strong> less than</strong> the second one.</td>
     </tr>
