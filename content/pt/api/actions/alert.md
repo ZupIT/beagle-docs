@@ -32,7 +32,7 @@ A estrutura do Alert é:
         <a href="../contexto/#bindings"><strong>Binding</strong></a>
       </td>
       <td style="text-align:center"></td>
-      <td style="text-align:left">T&#xED;tulo da caixa de alerta.</td>
+      <td style="text-align:left">Título da caixa de alerta.</td>
     </tr>
     <tr>
       <td style="text-align:left">message</td>
