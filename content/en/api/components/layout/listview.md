@@ -57,18 +57,16 @@ Default value is ListDirection.VERTICAL
   <tbody>
     <tr>
       <td style="text-align:left">children</td>
-      <td style="text-align:left">List&lt;<a href="../"><b>ServerDrivenComponent</b></a>&gt;</td>
+      <td style="text-align:left">List&lt;<a href="../"><strong>ServerDrivenComponent</strong></a>&gt;</td>
       <td style="text-align:left">&#x2713;</td>
       <td style="text-align:left">
-        <p></p>
-        <p>Defines the item list view. They can be configured like a <code>ServerDrivenComponents </code>or
+        Defines the item list view. They can be configured like a <code>ServerDrivenComponents </code>or
           like <code>views.</code>
-        </p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">direction</td>
-      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;<a href="https://docs.usebeagle.io/api/components/layout/listview"><b>ListDirection</b></a>&lt;b&gt;&lt;/b&gt;</td>
+      <td style="text-align:left"><a href="https://docs.usebeagle.io/api/components/layout/listview"><strong>ListDirection</strong></a></td>
       <td
       style="text-align:left"></td>
         <td style="text-align:left">Defines the preview list direction.</td>

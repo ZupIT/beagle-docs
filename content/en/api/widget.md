@@ -17,9 +17,7 @@ It is important to remember that, by default, these structures have null value.
 {{% /alert %}}
 
 ```kotlin
-abstract class Widget : StyleComponent,
-                        AccessibilityComponent,
-                        IdentifierComponent {
+abstract class Widget : StyleComponent, AccessibilityComponent, IdentifierComponent {
 
     override var id: String? = null
     override var style: Style? = null
@@ -44,16 +42,14 @@ The main attributes of this class are:
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><b>id</b>
+      <td style="text-align:left"><strong>id</strong>
       </td>
       <td style="text-align:left"><code>string</code> parameter that identifies the visual component listed
         by a <code>widget</code>.</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <p></p>
-        <p><b>style</b>
-        </p>
+        <strong>style</strong>
       </td>
       <td style="text-align:left">This attribute is defined by a <code>Style</code> class that is configured
         to define a series of visual properties.</td>
@@ -81,81 +77,80 @@ The main attributes are:
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Attribute</b>
+      <th style="text-align:left"><strong>Attribute</strong>
       </th>
       <th style="text-align:left">Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><b>backgroundColor</b>
+      <td style="text-align:left"><strong>backgroundColor</strong>
       </td>
       <td style="text-align:left">It defines with a <code>string</code> parameter the background color of
         a visual component. It is important that the color is listed with hexadecimal
         format, starting with #. For example: white color in a background &quot;FFFFFF&quot;.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>cornerRadius</b>
+      <td style="text-align:left"><strong>cornerRadius</strong>
       </td>
       <td style="text-align:left">Defines with a <code>double</code> value the rouding edge of this component.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>size</b>
+      <td style="text-align:left"><strong>size</strong>
       </td>
       <td style="text-align:left">
-        <p>Defines a size of a component with a <code>whole</code> value. This value
+        Defines a size of a component with a <code>whole</code> value. This value
           must be followed by a <code>.unitPercent()</code> notation to define a percentage
           size related to the application&apos;s screen, or using the <code>.unitReal()</code> notation
           to define a size in pixels. A <code>80.unitPercent()</code> value defines
-          that a component will have a relative size of <b>80%</b> of a screen. And <code>80.unitReal()</code> defines
-          a<b> 80 pixels</b> size.</p>
-        <p></p>
+          that a component will have a relative size of <strong>80%</strong> of a screen. And <code>80.unitReal()</code> defines
+          a<strong> 80 pixels</strong> size.
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>margin</b>
+      <td style="text-align:left"><strong>margin</strong>
       </td>
       <td style="text-align:left">
-        <p>It determines the <b>margin</b> that will affect the spacing around the
+        It determines the <strong>margin</strong> that will affect the spacing around the
           element, it will help them move according the internal limits of its father
-          and brothers elements.</p>
-        <p>The margin element contributes to the total size of its father, for example,
-          if the father element is automatically sized.</p>
+          and brothers elements.
+        The margin element contributes to the total size of its father, for example,
+          if the father element is automatically sized.
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>padding</b>
+      <td style="text-align:left"><strong>padding</strong>
       </td>
       <td style="text-align:left">Defines internal spaces of the component, it behaves like &apos;internal
         margin&apos; of the element. For example, a container has two visuals elements
-        that defines a <b>padding </b>value, so that internal elements aren&apos;t
+        that defines a <strong>padding </strong>value, so that internal elements aren&apos;t
         glued to the internal margins.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>position</b>
+      <td style="text-align:left"><strong>position</strong>
       </td>
       <td style="text-align:left">Attribute that adds a padding to a position. For more details about how
-        it works, check our documentation about <a href="https://docs.usebeagle.io/v/v1.0-en/exemplos-e-tutoriais/component-layout"><b>position attributes in  component&apos;s layout</b>. </a>
+        it works, check our documentation about <a href="https://docs.usebeagle.io/v/v1.0-en/exemplos-e-tutoriais/component-layout"><strong>position attributes in  component&apos;s layout</strong>. </a>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>flex</b>
+      <td style="text-align:left"><strong>flex</strong>
       </td>
       <td style="text-align:left">Flex attribute positions the elements on a screen. For more details about
-        it, check our documentation about<a href="https://docs.usebeagle.io/v/v1.0-en/exemplos-e-tutoriais/component-layout/flex"> <b>Flex</b></a><b>.</b> 
+        it, check our documentation about<a href="https://docs.usebeagle.io/v/v1.0-en/exemplos-e-tutoriais/component-layout/flex"> <strong>Flex</strong></a><strong>.</strong> 
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>positionType</b>
+      <td style="text-align:left"><strong>positionType</strong>
       </td>
-      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;<a href="../resources/components-positioning/positiontype"><b>Position Type</b></a> attribute
+      <td style="text-align:left"><a href="../resources/components-positioning/positiontype"><strong>Position Type</strong></a> attribute
         establishes a relation with the element&apos;s positioning and its brothers.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>display</b>
+      <td style="text-align:left"><strong>display</strong>
       </td>
       <td style="text-align:left">Attribute that defines if the element linked to this widget will be positioned
-        by<b> </b><a href="https://docs.usebeagle.io/v/v1.0-en/exemplos-e-tutoriais/component-layout/positiontype"><b>Flex</b></a><b>. </b>
+        by<strong> </strong><a href="https://docs.usebeagle.io/v/v1.0-en/exemplos-e-tutoriais/component-layout/positiontype"><strong>Flex</strong></a><strong>. </strong>
       </td>
     </tr>
   </tbody>

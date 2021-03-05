@@ -4,7 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="0; url=https://docs-reference.usebeagle.io/" />
   <title>Document</title>
+  <script>
+    (
+    function () {
+      var win = window.open("{{ index .Params 0 }}", '_blank');
+      win.focus();
+    }
+    )()
+  </script>
 </head>
 </html>

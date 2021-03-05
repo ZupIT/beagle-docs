@@ -15,12 +15,12 @@ A sua estrutura é representada como mostrado abaixo:
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Atributo</b>
+      <th style="text-align:left"><strong>Atributo</strong>
       </th>
-      <th style="text-align:left"><b>Tipo</b>
+      <th style="text-align:left"><strong>Tipo</strong>
       </th>
       <th style="text-align:center">Obrigat&#xF3;rio</th>
-      <th style="text-align:left"><b>Defini&#xE7;&#xE3;o</b>
+      <th style="text-align:left"><strong>Defini&#xE7;&#xE3;o</strong>
       </th>
     </tr>
   </thead>
@@ -35,33 +35,26 @@ A sua estrutura é representada como mostrado abaixo:
     </tr>
     <tr>
       <td style="text-align:left">
-        <p>click</p>
-        <p>Analytics</p>
-        <p>Event</p>
+        click Analytics Event
       </td>
       <td style="text-align:left">
-        <p><a href="../analytics#opcao-click">Analytics</a>
-        </p>
-        <p><a href="../analytics#opcao-click">Click</a>
-        </p>
+        <a href="../analytics#opcao-click">Analytics</a>
+        <a href="../analytics#opcao-click">Click</a>
       </td>
       <td style="text-align:center"></td>
       <td style="text-align:left">
-        <p></p>
-        <p>Evento do clique que ser&#xE1; disparado caso tenha sido implementado
-          um servi&#xE7;o de analytics.</p>
+        Evento do clique que ser&#xE1; disparado caso tenha sido implementado
+          um servi&#xE7;o de analytics.
       </td>
     </tr>
     <tr>
       <td style="text-align:left">child</td>
       <td style="text-align:left">
-        <p><a href="../widget">Server</a>
-        </p>
-        <p><a href="../widget">DrivenComponent</a>
-        </p>
+        <a href="../widget">Server</a>
+        <a href="../widget">DrivenComponent</a>
       </td>
       <td style="text-align:center">&#x2713;</td>
-      <td style="text-align:left">Define o widget que ser&#xE1; o gatilho do atributo onPress. <b> </b>
+      <td style="text-align:left">Define o widget que ser&#xE1; o gatilho do atributo onPress.<strong></strong>
       </td>
     </tr>
   </tbody>

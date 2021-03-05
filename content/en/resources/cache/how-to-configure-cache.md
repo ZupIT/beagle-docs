@@ -84,8 +84,8 @@ class AppBeagleConfig : BeagleConfig {
 
 ### Cache's attributes
 
-| Attribute | Definition |
-| :--- | :--- |
+| **Attribute**  | **Definition**|           
+| --- | --- |
 | **enable** | `boolean` value that enables or disables the cache in disk and memory. |
 | **maxAge** | `int` value of time in seconds that a memory cache will be active. |
 | **memoryMaximumCapacity** | Int value that represents the memory cache LRU size. It is the number of screens that will be in the memory, for example, if you define a number 15, it means 15 pages that will be in cache. |
@@ -171,8 +171,8 @@ In the list below, you will find what are the available properties and which con
         to <code>java.util.regex.Pattern</code> through<code>kotlin.text.Regex</code>.</td>
       <td
       style="text-align:left">
-        <p>All (&lt;=1.0.2)</p>
-        <p>None (&gt;=1.1.0)</p>
+        All (&lt;=1.0.2)
+        None (&gt;=1.1.0)
         </td>
     </tr>
     <tr>
@@ -185,22 +185,19 @@ In the list below, you will find what are the available properties and which con
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><code>beagle.cache.endpoint.ttl</code>
-        </p>
-        <p>(&gt;=1.1.0)</p>
+        <code>beagle.cache.endpoint.ttl</code>
+        (&gt;=1.1.0)
       </td>
       <td style="text-align:left">
-        <p>Key values pair, where the key is an endpoint like a <code>string</code> and
-          a value is the duration.</p>
-        <p></p>
-        <p>The duration is a number following the abbreviated unit (s, m, h, etc)
+        Key values pair, where the key is an endpoint like a <code>string</code> and
+          a value is the duration.
+        The duration is a number following the abbreviated unit (s, m, h, etc)
           to populate the header value<code>Cache-control: max-age</code> to this
-          endpoint.</p>
-        <p></p>
-        <p>The endpoint needs to be included. Included enpoints have a 30s duration
-          by default.</p>
-        <p>Durations shorter than a second will be zero, by the</p>
-        <p><code>Cache-control: max-age </code>definition.</p>
+          endpoint.
+        The endpoint needs to be included. Included enpoints have a 30s duration
+          by default.
+        Durations shorter than a second will be zero, by the
+        <code>Cache-control: max-age </code>definition.
       </td>
       <td style="text-align:left">None</td>
     </tr>

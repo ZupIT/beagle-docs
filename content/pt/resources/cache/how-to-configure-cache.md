@@ -181,8 +181,8 @@ Na lista abaixo, você confere quais são as propriedades disponíveis e as conf
         conforme <code>java.util.regex.Pattern</code> por meio do <code>kotlin.text.Regex</code>.</td>
       <td
       style="text-align:center">
-        <p>Todos (&lt;=1.0.2)</p>
-        <p>Nenhum (&gt;=1.1.0)</p>
+        Todos (&lt;=1.0.2)
+        Nenhum (&gt;=1.1.0)
         </td>
     </tr>
     <tr>
@@ -195,21 +195,18 @@ Na lista abaixo, você confere quais são as propriedades disponíveis e as conf
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><code>beagle.cache.endpoint.ttl</code>
-        </p>
-        <p>(&gt;=1.1.0)</p>
+        <code>beagle.cache.endpoint.ttl</code>
+        (&gt;=1.1.0)
       </td>
       <td style="text-align:left">
-        <p>Pares de chave valor, onde a chave &#xE9; um endpoint como <code>String</code> e
-          o valor &#xE9; uma dura&#xE7;&#xE3;o.</p>
-        <p></p>
-        <p>A dura&#xE7;&#xE3;o &#xE9; um n&#xFA;mero seguido da unidade abreviada
+        Pares de chave valor, onde a chave &#xE9; um endpoint como <code>String</code> e
+          o valor &#xE9; uma dura&#xE7;&#xE3;o.
+        A dura&#xE7;&#xE3;o &#xE9; um n&#xFA;mero seguido da unidade abreviada
           (s, m, h, etc.) para popular o valor da header<code>Cache-control: max-age</code> para
-          esse endpoint.</p>
-        <p></p>
-        <p>O endpoint precisa estar inclu&#xED;do. Endpoints inclusos t&#xEA;m dura&#xE7;&#xE3;o
+          esse endpoint.
+        O endpoint precisa estar inclu&#xED;do. Endpoints inclusos t&#xEA;m dura&#xE7;&#xE3;o
           de 30s por padr&#xE3;o. Dura&#xE7;&#xF5;es menores que um segundo viram
-          zero, pela defini&#xE7;&#xE3;o do <code>Cache-control: max-age</code>.</p>
+          zero, pela defini&#xE7;&#xE3;o do <code>Cache-control: max-age</code>.
       </td>
       <td style="text-align:center">Nenhum</td>
     </tr>

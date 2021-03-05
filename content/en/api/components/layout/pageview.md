@@ -30,20 +30,19 @@ See how the structure is represented:
   <tbody>
     <tr>
       <td style="text-align:left">children</td>
-      <td style="text-align:left">List&lt;<a href="https://docs.usebeagle.io/v/v1.0-en/api/components"><b>ServerDrivenComponent</b></a>&gt;</td>
+      <td style="text-align:left">List&lt;<a href="https://docs.usebeagle.io/v/v1.0-en/api/components"><strong>ServerDrivenComponent</strong></a>&gt;</td>
       <td
       style="text-align:left">&#x2713;</td>
         <td style="text-align:left">
-          <p></p>
-          <p>Defines the visual components list (server-driven) in the <code>PageView</code>.</p>
+          Defines the visual components list (server-driven) in the <code>PageView</code>.
         </td>
     </tr>
     <tr>
       <td style="text-align:left">context</td>
-      <td style="text-align:left"><a href="https://docs.usebeagle.io/v/v1.0-en/api/context"><b>ContextData</b></a>&lt;b&gt;&lt;/b&gt;</td>
+      <td style="text-align:left"><a href="https://docs.usebeagle.io/v/v1.0-en/api/context"><strong>ContextData</strong></a></td>
       <td
       style="text-align:left"></td>
-        <td style="text-align:left">It is the <a href="https://docs.usebeagle.io/api/context"><b>context</b></a><b> </b>contained
+        <td style="text-align:left">It is the <a href="https://docs.usebeagle.io/api/context"><strong>context</strong></a><strong> </strong>contained
           by this Widget.</td>
     </tr>
     <tr>
@@ -62,7 +61,7 @@ See how the structure is represented:
       <td style="text-align:left">showArrow</td>
       <td style="text-align:left">Boolean</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left"><b>This attribute is specific for the web platform. </b>It enables arrows
+      <td style="text-align:left"><strong>This attribute is specific for the web platform. </strong>It enables arrows
         to change pages.</td>
     </tr>
   </tbody>

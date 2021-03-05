@@ -15,12 +15,12 @@ Check the example below to see how the structure works:
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Attribute</b>
+      <th style="text-align:left"><strong>Attribute</strong>
       </th>
-      <th style="text-align:left"><b>Type</b>
+      <th style="text-align:left"><strong>Type</strong>
       </th>
       <th style="text-align:left">Required</th>
-      <th style="text-align:left"><b>Definition</b>
+      <th style="text-align:left"><strong>Definition</strong>
       </th>
     </tr>
   </thead>
@@ -28,21 +28,20 @@ Check the example below to see how the structure works:
     <tr>
       <td style="text-align:left">text</td>
       <td style="text-align:left">
-        <p>String or</p>
-        <p><a href="../../context/#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
+        String or
+        <a href="../../context/#bindings"><strong>Binding</strong></a>
       </td>
       <td style="text-align:left">&#x2713;</td>
       <td style="text-align:left">
-        <p></p>
-        <p>Defines the button text and what it must be declared and it cannot be
-          null.</p>
+        Defines the button text and what it must be declared and it cannot be
+          null.
       </td>
     </tr>
     <tr>
       <td style="text-align:left">styleId</td>
       <td style="text-align:left">
-        <p>String or</p>
-        <p>&lt;b&gt;&lt;/b&gt;<a href="../../context/#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
+        String or
+        <a href="../../context/#bindings"><strong>Binding</strong></a>
       </td>
       <td style="text-align:left"></td>
       <td style="text-align:left">It refers to a native style to be applied in the button. This attribute
@@ -50,21 +49,21 @@ Check the example below to see how the structure works:
     </tr>
     <tr>
       <td style="text-align:left">onPress</td>
-      <td style="text-align:left">List &lt;<a href="../../actions/"><b>Action</b></a>&gt;</td>
+      <td style="text-align:left">List &lt;<a href="../../actions/"><strong>Action</strong></a>&gt;</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Possible array actions that this button will go off when clicked. It is
         possible to adapt this action to be customized or an extension of any action
         already available in your interface. This attribute is optional, but if
         an action is defined here, it must be configured in the frontend. To
-        create an action in the frontend, <a href="../../../resources/customization/"><b>see the example here</b></a>.</td>
+        create an action in the frontend, <a href="../../../resources/customization/"><strong>see the example here</strong></a>.</td>
     </tr>
     <tr>
       <td style="text-align:left">clickAnalyticsEvent</td>
-      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;<a href="../../analytics"><b>ClickEvent</b></a>&lt;b&gt;&lt;/b&gt;</td>
+      <td style="text-align:left"><a href="../../analytics"><strong>ClickEvent</strong></a></td>
       <td
       style="text-align:left"></td>
         <td style="text-align:left">Click event that will go off in case an analytics service has been implemented.
-          Check <a href="../../analytics"><b>here fore more information about analytics.</b></a>&lt;b&gt;&lt;/b&gt;</td>
+          Check <a href="../../analytics"><strong>here fore more information about analytics.</strong></a></td>
     </tr>
   </tbody>
 </table>

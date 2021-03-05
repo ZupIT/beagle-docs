@@ -30,8 +30,7 @@ A sua estrutura é representada como mostrado abaixo:
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p></p>
-        <p>path</p>
+        path
       </td>
       <td style="text-align:left">String</td>
       <td style="text-align:center">&#x2713;</td>

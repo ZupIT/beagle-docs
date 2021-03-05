@@ -30,8 +30,7 @@ FormLocalAction structure is:
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p></p>
-        <p>name</p>
+      name
       </td>
       <td style="text-align:left">String</td>
       <td style="text-align:center">&#x2713;</td>

@@ -30,19 +30,18 @@ A sua estrutura é representada como mostrado abaixo:
   <tbody>
     <tr>
       <td style="text-align:left">children</td>
-      <td style="text-align:left">List&lt;<a href="../"><b>ServerDrivenComponent</b></a>&gt;</td>
+      <td style="text-align:left">List&lt;<a href="../"><strong>ServerDrivenComponent</strong></a>&gt;</td>
       <td style="text-align:center">&#x2713;</td>
       <td style="text-align:left">
-        <p></p>
-        <p>Define a lista de componentes visuais (server-driven) contidos na<code>PageView</code>.</p>
+         Define a lista de componentes visuais (server-driven) contidos na<code>PageView<
       </td>
     </tr>
     <tr>
       <td style="text-align:left">context</td>
-      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;<a href="../../contexto/"><b>ContextData</b></a>&lt;b&gt;&lt;/b&gt;</td>
+      <td style="text-align:left"><a href="../../contexto/"><strong>ContextData</strong></a></td>
       <td
       style="text-align:center"></td>
-        <td style="text-align:left">&#xC9;<b> </b>o <a href="../../contexto/"><b>contexto</b></a> contido neste
+        <td style="text-align:left"><strong>&#xC9;</strong>o <a href="../../contexto/"><strong>contexto</strong></a> contido neste
           Widget</td>
     </tr>
     <tr>
@@ -62,7 +61,7 @@ A sua estrutura é representada como mostrado abaixo:
       <td style="text-align:left">showArrow</td>
       <td style="text-align:left">Boolean</td>
       <td style="text-align:center"></td>
-      <td style="text-align:left"><b>Esse atributo &#xE9; especifico para plataforma web</b>. Ele habilita
+      <td style="text-align:left"><strong>Esse atributo &#xE9; especifico para plataforma web</strong>. Ele habilita
         setas para mudan&#xE7;a de p&#xE1;gina.</td>
     </tr>
   </tbody>

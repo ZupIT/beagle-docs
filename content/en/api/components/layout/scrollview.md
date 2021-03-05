@@ -15,12 +15,12 @@ See how the structure is represented:
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Attribute</b>
+      <th style="text-align:left"><strong>Attribute</strong>
       </th>
-      <th style="text-align:left"><b>Type</b>
+      <th style="text-align:left"><strong>Type</strong>
       </th>
       <th style="text-align:left">Required</th>
-      <th style="text-align:left"><b>Definition</b>
+      <th style="text-align:left"><strong>Definition</strong>
       </th>
     </tr>
   </thead>
@@ -28,15 +28,14 @@ See how the structure is represented:
     <tr>
       <td style="text-align:left">children</td>
       <td style="text-align:left">
-        <p>List
-          <br />&lt;<a href="../../widget"><b>ServerDriven</b></a>&lt;b&gt;&lt;/b&gt;</p>
-        <p>&lt;b&gt;&lt;/b&gt;<a href="../../widget"><b>Component</b></a>&gt;</p>
+        List
+          <br />&lt;<a href="../../widget"><strong>ServerDriven</strong></a>
+       <a href="../../widget"><strong>Component</strong></a>&gt;
       </td>
-      <td style="text-align:left">&#x2713;</td>
+      <td style="text-align:center">&#x2713;</td>
       <td style="text-align:left">
-        <p>Defines the attributes list to be displayed in the layout view.</p>
-        <p><b><br /></b>
-        </p>
+        Defines the attributes list to be displayed in the layout view.
+        <strong><br /></strong>
       </td>
     </tr>
     <tr>
@@ -55,7 +54,7 @@ See how the structure is represented:
     </tr>
     <tr>
       <td style="text-align:left">context</td>
-      <td style="text-align:left">&lt;b&gt;&lt;/b&gt;<a href="../../context/"><b>ContextData</b></a>&lt;b&gt;&lt;/b&gt;</td>
+      <td style="text-align:left"><a href="../../context/"><strong>ContextData</strong></a></td>
       <td
       style="text-align:left"></td>
         <td style="text-align:left">Sets a context to scroll view.</td>
