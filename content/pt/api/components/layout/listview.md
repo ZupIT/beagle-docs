@@ -60,10 +60,8 @@ Valor default é ListDirection.VERTICAL
       <td style="text-align:left">List&lt;<a href="../">ServerDrivenComponent</a>&gt;</td>
       <td style="text-align:center">&#x2713;</td>
       <td style="text-align:left">
-        <p></p>
-        <p>Define os itens da lista de visualiza&#xE7;&#xE3;o. Eles podem ser configurados
+        Define os itens da lista de visualiza&#xE7;&#xE3;o. Eles podem ser configurados
           como uma lista de <code>ServerDrivenComponents</code> ou como <code>views.</code>
-        </p>
       </td>
     </tr>
     <tr>

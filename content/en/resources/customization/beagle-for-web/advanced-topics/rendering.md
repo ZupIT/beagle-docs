@@ -761,9 +761,7 @@ The ViewContentManager have the following properties/functions
   <tbody>
     <tr>
       <td style="text-align:left">
-        <p>&lt;b&gt;&lt;/b&gt;</p>
-        <p><code>getElement()</code>
-        </p>
+        <code>getElement()</code>
       </td>
       <td style="text-align:left">function</td>
       <td style="text-align:left">returns the node in the Beagle Tree responsible for the renderization
@@ -771,9 +769,7 @@ The ViewContentManager have the following properties/functions
     </tr>
     <tr>
       <td style="text-align:left">
-        <p></p>
-        <p><code>getElementId()</code>
-        </p>
+        <code>getElementId()</code>
       </td>
       <td style="text-align:left">function</td>
       <td style="text-align:left">shortcut to <code>getElement().id</code>

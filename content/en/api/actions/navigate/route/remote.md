@@ -14,12 +14,12 @@ The structure is represented by the attributes below:
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Attribute</b>
+      <th style="text-align:left"><strong>Attribute</strong>
       </th>
-      <th style="text-align:left"><b>Type</b>
+      <th style="text-align:left"><strong>Type</strong>
       </th>
       <th style="text-align:left">Required</th>
-      <th style="text-align:left"><b>Definition</b>
+      <th style="text-align:left"><strong>Definition</strong>
       </th>
     </tr>
   </thead>
@@ -27,8 +27,8 @@ The structure is represented by the attributes below:
     <tr>
       <td style="text-align:left">url</td>
       <td style="text-align:left">
-        <p>String or</p>
-        <p><a href="https://docs.usebeagle.io/v/v1.0-en/api/context#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
+        String or
+        <a href="https://docs.usebeagle.io/v/v1.0-en/api/context#bindings"><strong>Binding</strong></a>
       </td>
       <td style="text-align:left">&#x2713;</td>
       <td style="text-align:left">Navigation address.</td>
@@ -41,7 +41,7 @@ The structure is represented by the attributes below:
     </tr>
     <tr>
       <td style="text-align:left">fallback</td>
-      <td style="text-align:left"><a href="https://docs.usebeagle.io/v/v1.0-en/api/screen"><b>Screen</b></a>&lt;b&gt;&lt;/b&gt;</td>
+      <td style="text-align:left"><a href="https://docs.usebeagle.io/v/v1.0-en/api/screen"><strong>Screen</strong></a></td>
       <td
       style="text-align:left"></td>
         <td style="text-align:left">Screen to be returned in case the loading fails.</td>

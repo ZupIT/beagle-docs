@@ -77,56 +77,50 @@ O `UnitType.AUTO` pode ser usado nas frentes iOS, Android e Web de acordo com a 
     <tr>
       <th style="text-align:center">Propriedade</th>
       <th style="text-align:center">
-        <p>
           <img src="../../.gitbook/assets/image (125).png" alt/>
-        </p>
-        <p>iOS</p>
+        iOS
       </th>
       <th style="text-align:center">
-        <p>
           <img src="../../.gitbook/assets/image (126).png" alt/>
-        </p>
-        <p>Android</p>
+        Android
       </th>
       <th style="text-align:center">
-        <p>
           <img src="../../.gitbook/assets/image (122).png" alt/>
-        </p>
-        <p>Web</p>
+        Web
       </th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:center"><b>Basis</b>
+      <td style="text-align:center"><strong>Basis</strong>
       </td>
       <td style="text-align:center">&#x2714;</td>
       <td style="text-align:center">&#x2714;</td>
       <td style="text-align:center">&#x2714;</td>
     </tr>
     <tr>
-      <td style="text-align:center"><b>Size</b>
+      <td style="text-align:center"><strong>Size</strong>
       </td>
       <td style="text-align:center"></td>
       <td style="text-align:center"></td>
       <td style="text-align:center">&#x2714;</td>
     </tr>
     <tr>
-      <td style="text-align:center"><b>Margin</b>
+      <td style="text-align:center"><strong>Margin</strong>
       </td>
       <td style="text-align:center"></td>
       <td style="text-align:center"></td>
       <td style="text-align:center">&#x2714;</td>
     </tr>
     <tr>
-      <td style="text-align:center"><b>Padding</b>
+      <td style="text-align:center"><strong>Padding</strong>
       </td>
       <td style="text-align:center"></td>
       <td style="text-align:center"></td>
       <td style="text-align:center">&#x2714;</td>
     </tr>
     <tr>
-      <td style="text-align:center"><b>Position</b>
+      <td style="text-align:center"><strong>Position</strong>
       </td>
       <td style="text-align:center"></td>
       <td style="text-align:center"></td>

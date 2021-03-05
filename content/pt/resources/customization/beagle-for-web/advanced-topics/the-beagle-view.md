@@ -156,54 +156,52 @@ Você encontra abaixo todos os métodos do Beagle View e sua descrição:
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><b>subscribe</b>
+      <td style="text-align:left"><strong>subscribe</strong>
       </td>
       <td style="text-align:left">fun&#xE7;&#xE3;o</td>
       <td style="text-align:left">Recebe o ouvinte e retorna a fun&#xE7;&#xE3;o para cancelar a inscri&#xE7;&#xE3;o.</td>
     </tr>
     <tr>
       <td style="text-align:left">
-        <p></p>
-        <p><b>addErrorListener</b>
-        </p>
+        <strong>addErrorListener</strong>
       </td>
       <td style="text-align:left">fun&#xE7;&#xE3;o</td>
-      <td style="text-align:left"><b>Subscreve aos erros. </b>Recebe o ouvinte e retorna a fun&#xE7;&#xE3;o
+      <td style="text-align:left"><strong>Subscreve aos erros. </strong>Recebe o ouvinte e retorna a fun&#xE7;&#xE3;o
         para remov&#xEA;-lo.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>fetch</b>
+      <td style="text-align:left"><strong>fetch</strong>
       </td>
       <td style="text-align:left">fun&#xE7;&#xE3;o</td>
       <td style="text-align:left">Busca a view do backend e a usa para a atualizar a &#xE1;rvore.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>getRenderer</b>
+      <td style="text-align:left"><strong>getRenderer</strong>
       </td>
       <td style="text-align:left">fun&#xE7;&#xE3;o</td>
       <td style="text-align:left">retorna o redenrizador da view. Pode ser usado para atualizar a &#xE1;rvore
         diretamente.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>getTree</b>
+      <td style="text-align:left"><strong>getTree</strong>
       </td>
       <td style="text-align:left">fun&#xE7;&#xE3;o</td>
       <td style="text-align:left">retorna a c&#xF3;pia da &#xE1;rvore renderizada.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>getBeagleNavigator</b>
+      <td style="text-align:left"><strong>getBeagleNavigator</strong>
       </td>
       <td style="text-align:left">fun&#xE7;&#xE3;o</td>
       <td style="text-align:left">retorna o navegador.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>getBeagleService</b>
+      <td style="text-align:left"><strong>getBeagleService</strong>
       </td>
       <td style="text-align:left">fun&#xE7;&#xE3;o</td>
       <td style="text-align:left">retorna o BeagleService para criar a view.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><b>destroy</b>
+      <td style="text-align:left"><strong>destroy</strong>
       </td>
       <td style="text-align:left">fun&#xE7;&#xE3;o</td>
       <td style="text-align:left">destr&#xF3;i a view.</td>

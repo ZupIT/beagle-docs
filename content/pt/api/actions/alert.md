@@ -15,12 +15,12 @@ A estrutura do Alert é:
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><b>Atributo</b>
+      <th style="text-align:left"><strong>Atributo</strong>
       </th>
-      <th style="text-align:left"><b>Tipo</b>
+      <th style="text-align:left"><strong>Tipo</strong>
       </th>
       <th style="text-align:center">Obrigat&#xF3;rio</th>
-      <th style="text-align:left"><b>Defini&#xE7;&#xE3;o</b>
+      <th style="text-align:left"><strong>Defini&#xE7;&#xE3;o</strong>
       </th>
     </tr>
   </thead>
@@ -28,24 +28,24 @@ A estrutura do Alert é:
     <tr>
       <td style="text-align:left">title</td>
       <td style="text-align:left">
-        <p>String ou</p>
-        <p><a href="../contexto/#bindings"><b>Binding</b></a></p>
+        String ou
+        <a href="../contexto/#bindings"><strong>Binding</strong></a>
       </td>
       <td style="text-align:center"></td>
-      <td style="text-align:left">T&#xED;tulo da caixa de alerta.</td>
+      <td style="text-align:left">Título da caixa de alerta.</td>
     </tr>
     <tr>
       <td style="text-align:left">message</td>
       <td style="text-align:left">
-        <p>String ou</p>
-        <p><a href="../contexto/#bindings"><b>Binding</b></a></p>
+        String ou
+        <a href="../contexto/#bindings"><strong>Binding</strong></a>
       </td>
       <td style="text-align:center">&#x2713;</td>
       <td style="text-align:left">Mensagem da caixa de alerta.</td>
     </tr>
     <tr>
       <td style="text-align:left">onPressOk</td>
-      <td style="text-align:left"><a href="https://docs.usebeagle.io/api/api-acoes"><b>Action</b></a></td>
+      <td style="text-align:left"><a href="https://docs.usebeagle.io/api/api-acoes"><strong>Action</strong></a></td>
       <td
       style="text-align:center"></td>
         <td style="text-align:left">A&#xE7;&#xE3;o do bot&#xE3;o de confirma&#xE7;&#xE3;o.</td>
