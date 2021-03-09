@@ -16,12 +16,12 @@ It is possible to initialize a `BeagleView` with a Beagle **component** or **scr
 
 **Component:** Receives a declarative component. 
 
-**ScreenType.Remote:** Receives an URL with a server-driven component. This initialization allows you to configure BeagleView's states through `beagleViewStateObserver` parameter.
+**ScreenType.Remote:** Receives a URL with a server-driven component. This initialization allows you to configure BeagleView's states through `beagleViewStateObserver` parameter.
 
 **ScreenType:** It's an enum that allows you to initialize BeagleView in three ways:
 
-* `Remote:` Receives an URL with a server-driven component. If there is an error when loading your server-driven screen, an optional fallback view can be configured, which would be a screen build on the frontend.
-  You can also configure a header through `additionalData` parameter.
+* `Remote:` Receives a URL with a server-driven component. If there is an error when loading your server-driven screen, an optional fallback view can be configured, which would be a screen built on the frontend.
+You can also configure a header through `additionalData` parameter.
 
 * `Declarative:` Receives a declarative screen (created on your frontend side on Swift).
 
@@ -48,7 +48,7 @@ public class BeagleView: UIView {
 
 ## Using Beagle View
 
-Check out below, a native layout that will be used to exemplify the use of `AutoLayout` together with Beagle:
+Check out below a native layout to exemplify the use of `AutoLayout` together with Beagle:
 
 ### 1. Create a BeagleViewViewController
 
@@ -145,9 +145,9 @@ private func setupRemote() {
 
 ### 3. Error Handling
 
-You can observe the states and deal with errors from the `beagleViewStateObserver `parameter at BeagleView startup with the type `ScreenType.Remote`.
+You can observe BeagleViews's states and deal with errors through the `beagleViewStateObserver` parameter at BeagleView startup with the `ScreenType.Remote` type.
 
-Check out below an example where a BeagleView was created and it receives BeagleView's states to treat them.
+Check out an example where a BeagleView was created and it receives BeagleView's states to treat them.
 
 ```swift
 private lazy var beagleViewStateful = BeagleView(.init(url: "your URL")) { state in
@@ -177,7 +177,7 @@ private func setupStatefulBeagleView() {
 
 ### 4. Complete Example
 
-You can see a complete `BeagleViewViewController` class example below:
+You can see a `BeagleViewViewController` class example below:
 
 ```swift
 import UIKit
@@ -285,5 +285,3 @@ class BeagleViewViewController: UIViewController {
     
 }
 ```
-
-Pronto, você já pode usar a `BeagleView`.

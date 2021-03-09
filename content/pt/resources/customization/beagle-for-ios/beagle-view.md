@@ -51,7 +51,7 @@ Segue abaixo um layout nativo que será usado para exemplificar o uso do `AutoLa
 
 ### 1. Crie a BeagleViewViewController
 
-Crie uma classe do tipo `UIViewController` como descrito abaixo.
+Crie uma classe do tipo `UIViewController`, como descrito abaixo:
 
 ```swift
 class BeagleViewViewController: UIViewController {
@@ -64,7 +64,7 @@ class BeagleViewViewController: UIViewController {
 }
 ```
 
-Agora, você irá criar três textos nativos do tipo `UILabel` e irá posicioná-los com o `AutoLayout`, como na função `setupLabels` abaixo:
+Agora, crie três textos nativos do tipo `UILabel` e posicione-os com o `AutoLayout`, como na função `setupLabels` abaixo:
 
 ```swift
 private lazy var titleScreen = makeLabel(text: "I'm a native screen")
@@ -146,7 +146,7 @@ private func setupRemote() {
 
 Você pode observar os estados e tratar os erros a partir do parâmetro beagleViewStateObserver na inicialização da BeagleView com o tipo ScreenType.Remote.
 
-Veja abaixo um exemplo, onde uma BeagleView foi criada e recebe os estados para poder tratá-los.
+Veja abaixo um exemplo de uma BeagleView que recebe os estados para poder tratá-los:
 
 ```swift
 private lazy var beagleViewStateful = BeagleView(.init(url: "your URL")) { state in
