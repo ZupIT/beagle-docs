@@ -59,6 +59,12 @@ A sua estrutura está representada abaixo:
       </td>
     </tr>
     <tr>
+      <td style="text-align:left">enabled</td>
+      <td style="text-align:left">Bind&lt;Boolean&gt;</td>
+      <td style="text-align:center"></td>
+      <td style="text-align:left">Propriedade para habilitar ou desabilitar.</td>
+    </tr>
+    <tr>
       <td style="text-align:left">clickAnalyticsEvent</td>
       <td style="text-align:left"><a href="../../analytics">ClickEvent</a>
       </td>
