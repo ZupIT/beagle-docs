@@ -14,9 +14,11 @@ Beagle Navigation Controller is a class like the `UINavigationController`, but m
 
 The method `serverDrivenStateDidChange()` is the entry point to handle screen state changes.
 
-The default implementation shows an "ActivityIndicator" when the screen is loading and shows an default error view that handles error and retry.
+The default implementation shows an `UIActivityIndicatorView` when the screen is loading and also shows a default error screen with errors treatment and a retry button.
 
-When overriding, if you want to preserve loading behavior, a "super" implementation should be called or you can customize a loading and handle error behavior by yourself.
+When overriding, if you want to preserve a loading and error behavior, a `super` implementation should be called to represent the superclass `BeagleNavigationController` or you can customize a loading and handle the error behavior by yourself.
+
+Both implementations can be seen in the examples below.
 
 ## Parameters
 
@@ -81,11 +83,29 @@ extension ServerDrivenState {
 }
 ```
 
-## Example
+## Examples
+
+## **Using default error and loading implementation**
+
+When preserving loading and error behavior, a `super` implementation with the method `serverDrivenStateDidChange` should be called to represent the superclass **BeagleNavigationController**.
+
+```swift
+class CustomBeagleNavigationController: BeagleNavigationController {
+    
+    override func serverDrivenStateDidChange(
+        to state: ServerDrivenState,
+        at screenController: BeagleController
+    ) {
+        super.serverDrivenStateDidChange(to: state, at: screenController)
+    }
+}
+```
+
+## **Overriding error state**
 
 ### **Step 1: Create a class inherited from BeagleNavigationController**
 
-You will see below a complete example of a class that inherits from `BeagleNavigationController`. In it, the `serverDrivenStateDidChange` method is overriden and it handles error state differently.
+You will see below an example of a class inherited from `BeagleNavigationController`. The `serverDrivenStateDidChange` method is overridden in it and handles the error state differently.
 
 ```swift
 

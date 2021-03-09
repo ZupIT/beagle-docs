@@ -14,9 +14,9 @@ Beagle Navigation Controller é uma classe como uma `UINavigationController`, po
 
 O `serverDrivenStateDidChange()` é o método que observa as mudanças de estado da tela.
 
-A implementação padrão mostra um "ActivityIndicator" enquanto o estado da tela é "loading" e caso um erro ocorra, você pode sobrescrever esse método para tratar o erro.
+A implementação padrão mostra uma `UIActivityIndicatorView` enquanto o estado da tela é de `loading` e caso um erro ocorra, você pode sobrescrever esse método para tratar o erro.
 
-Caso queira preservar o loading e a tela de erro default do Beagle depois que esse método for sobrescrito, você deve implementar o "super", caso contrário, você deve personalizar o próprio loading e tela de erro.
+Caso queira preservar o loading e a tela de erro default do Beagle depois que esse método for sobrescrito, você deve implementar um `super` para representar a chamada a superclasse `BeagleNavigationController`, caso contrário, você deve personalizar o próprio loading e tela de erro. Ambas as implementações podem ser vistas nos exemplos abaixo.
 
 ## Parâmetros
 
@@ -80,7 +80,25 @@ extension ServerDrivenState {
 }
 ```
 
-## Exemplo
+## Examplos
+
+## **Usando a implementação default para os estados de loading e erro**
+
+Para preservar o comportamento dos estados de loading e manter a tela de erro default do Beagle depois que o método `serverDrivenStateDidChange` for sobrescrito, você deve implementar um `super` chamando o método `serverDrivenStateDidChange` para representar a chamada à superclasse **BeagleNavigationController**..
+
+```swift
+class CustomBeagleNavigationController: BeagleNavigationController {
+    
+    override func serverDrivenStateDidChange(
+        to state: ServerDrivenState,
+        at screenController: BeagleController
+    ) {
+        super.serverDrivenStateDidChange(to: state, at: screenController)
+    }
+}
+```
+
+## **Sobrescrevendo o estado de erro**
 
 ### **Passo 1: Criar uma classe que herda de BeagleNavigationController**
 
