@@ -14,7 +14,7 @@ Beagle Navigation Controller is a class like the `UINavigationController`, but m
 
 The method `serverDrivenStateDidChange()` is the entry point to handle screen state changes.
 
-The default implementation shows an `UIActivityIndicatorView` when the screen is loading and also shows a default error screen with errors treatment and a retry button.
+The default implementation shows a `UIActivityIndicatorView` when the screen is loading. It also shows a default error screen with errors treatment and a retry button.
 
 When overriding, if you want to preserve a loading and error behavior, a `super` implementation should be called to represent the superclass `BeagleNavigationController` or you can customize a loading and handle the error behavior by yourself.
 
@@ -165,7 +165,7 @@ You can register as many **BeagleNavigationController** as you need.
 
 ### **Step 3: Use BeagleScreenViewController with controllerId**
 
-Now when you instantiating the BeagleScreenViewController, you can pass the `controllerId` "CustomBeagleNavigation" so that your BeagleScreenViewController use your `CustomBeagleNavigationController`.
+Now, when you are instantiating the BeagleScreenViewController, you can pass the `controllerId` "CustomBeagleNavigation" so that your BeagleScreenViewController uses your `CustomBeagleNavigationController`.
 
 ```swift
 func screenController() -> UIViewController {

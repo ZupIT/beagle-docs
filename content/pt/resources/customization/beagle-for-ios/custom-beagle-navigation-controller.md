@@ -84,7 +84,7 @@ extension ServerDrivenState {
 
 ## **Usando a implementação default para os estados de loading e erro**
 
-Para preservar o comportamento dos estados de loading e manter a tela de erro default do Beagle depois que o método `serverDrivenStateDidChange` for sobrescrito, você deve implementar um `super` chamando o método `serverDrivenStateDidChange` para representar a chamada à superclasse **BeagleNavigationController**..
+Para preservar o comportamento dos estados de loading e manter a tela de erro default do Beagle depois que o método `serverDrivenStateDidChange` for sobescrito, você deve implementar um `super` chamando o método `serverDrivenStateDidChange` para representar a chamada à superclasse **BeagleNavigationController**.
 
 ```swift
 class CustomBeagleNavigationController: BeagleNavigationController {
