@@ -115,7 +115,7 @@ SimpleForm(
 
 ### onSubmit
 
-It is a function of a simple form that performs a list of actions. It is called when a valid form is submitted.
+It is a function of a simple form that performs a list of actions. It is **called when a valid form is submitted**.
 
 To submit a form, you must use the SubmitForm action and call it, just implement it in a [**Button**]({{< ref path="/api/components/ui/button" lang="en" >}}) that is part of a simple form, that is, that is in your list of children.
 
@@ -123,4 +123,4 @@ When you click this button, the onSubmit is activated and the list of actions wi
 
 ### onValidationError
 
-It is a function of a simple form that performs a list of actions. It is called when a invalid form is submitted. This validation occurs in the `TextInput` component through the attributes **error** and **showError**.
+It is a function of a simple form that performs a list of actions. It is **called when an invalid form is submitted**. This validation occurs in the `TextInput` component through the attributes **error** and **showError**.
