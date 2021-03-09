@@ -14,7 +14,7 @@ To make sure these rules work, you must fill the annotations `RegisterWidget` an
 
 ## Example
 
-You must note the classes used with the annotation `@BeagleJson` to make sure that your component works normally with ProGuard / R8 active.
+You have to annotate the classes used with the `@BeagleJson`  annotation  to make sure that your component works normally with ProGuard / R8 active.
 
 
 ```kotlin
