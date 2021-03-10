@@ -10,49 +10,52 @@ description: >-
 
 ## Introdução
 
-Quando um método de ofuscação é usado, é necessário que algumas regras sejam implementadas para garantir que os nomes e os IDs usados  internamente pelo Beagle, não sejam ofuscados ou minificados. 
+O Beagle contém regras mínimas necessárias para que seus componentes funcionem sem a necessidade da sua aplicação adicionar alguma regra no ProGuard / R8. 
+
+Para aplicar essas regras, você precisa preencher as anotações do `RegisterWidget` e `RegisterAction` com seus respectivos nomes. Caso haja algum objeto componente dentro do seu componente, você deve anotá-lo com `@BeagleJson`. 
 
 ## Exemplo
 
-Para garantir isso, você deve adicionar as seguintes regras no arquivo **`android-rules.pro`** do ProGuard:
+Para garantir que seu componente funcione normalmente com o ProGuard / R8 ativo, você deve anotar as classes utilizadas com a anotação `@BeagleJson:`
 
-```markup
-proguard-rules.pro
+```kotlin
 
-# Beagle uses coroutines in network requests
--keep class kotlinx.coroutines.experimental.android.AndroidExceptionPreHandler { *; }
 
-# Beagle does reflection on generic parameters
--keepattributes Signature, InnerClasses, EnclosingMethod
+@BeagleJson
+enum class MyType {
+    PASSWORD, TEXT;
+}
 
-# Beagle does reflection on method and parameter annotations
--keepattributes RuntimeVisibleAnnotations, RuntimeVisibleParameterAnnotations
--dontwarn org.jetbrains.annotations.**
--keep class kotlin.Metadata { *; }
+@BeagleJson
+data class MyText(val textOne: String, val textTwo: String)
 
-# Yoga is a dependency used on Beagle
--keep @com.facebook.proguard.annotations.DoNotStrip class * { *; }
+@RegisterWidget("myText")
+data class Text(
+    val text: Bind<String>,
+    val type: MyType,
+    val myText: MyText,
+) : WidgetView() {
 
-# Customized classes for Beagle
--keep @br.com.zup.beagle.annotation.** class * { *; }
--keep @br.com.zup.beagle.android.annotation.** class * { *; }
--keep class * extends br.com.zup.beagle.android.widget.**
+    override fun buildView(rootView: RootView): TextView
+      = TextView(rootView.getContext())
 
-# Core classes in Beagle
--keep class br.com.zup.beagle.android.action.** { *; }
--keep class br.com.zup.beagle.android.widget.** { *; }
--keep class br.com.zup.beagle.android.components.** { *; }
--keep class br.com.zup.beagle.android.context.** { *; }
--keep class br.com.zup.beagle.widget.** { *; }
--keep class br.com.zup.beagle.core.** { *; }
--keep class br.com.zup.beagle.analytics.** { *; }
+}
+
+@RegisterAction("CustomAndroidAction")
+data class CustomAndroidAction(
+    val value: String,
+    val intValue: Int
+) : Action {
+    override fun execute(rootView: RootView, origin: View) { }
+}
+
 ```
 
 {{% alert color="info" %}}
 Aqui, você também habilita o `minifyEnable` e `shrinkResources` no `buildType` declarando-os como _**true**_ para testar a ofuscação do ProGuard.
 {{% /alert %}}
 
-Para testar o ProGuard você deve ativá-lo na sua IDE, você pode usar o Android Studio, adicione a configuração listada abaixo: 
+Você deve ativar o ProGuard  na sua IDE. Para testá-lo, você pode usar o Android Studio adicionando a configuração listada abaixo:
 
 ```text
 buildTypes {
