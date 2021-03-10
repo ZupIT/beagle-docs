@@ -65,7 +65,7 @@ A sua estrutura é representada como mostrado abaixo:
       <td style="text-align:left">hidden</td>
       <td style="text-align:left">Boolean</td>
       <td style="text-align:center"></td>
-      <td style="text-align:left">Propriedade que determina se o campo ser&#xE1; escondido. O atributo `hidden` foi depreciado na versão 1.6.0 do Beagle e será removido em uma versão futura. Utilize o atributo `display` da propriedade `style`.</td>
+      <td style="text-align:left">Propriedade que determina se o campo ser&#xE1; escondido. O atributo `hidden` foi depreciado na versão 1.6.0 do Beagle e será removido em uma versão futura. Utilize o atributo `display` da propriedade `style` em seu lugar.</td>
     </tr>
     <tr>
       <td style="text-align:left">type</td>
