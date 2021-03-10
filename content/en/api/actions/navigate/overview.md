@@ -1,6 +1,6 @@
 ---
-title: Navigate Overview
-weight: 247
+title: Overview
+weight: 1
 type: overview
 description: >-
   Here you'll find action Navigate definition and pages for each of its

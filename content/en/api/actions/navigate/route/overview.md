@@ -1,6 +1,6 @@
 ---
-title: Route Overview
-weight: 267
+title: Overview
+weight: 1
 type: overview
 description: Description of route type
 ---
