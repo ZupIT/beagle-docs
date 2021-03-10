@@ -11,7 +11,7 @@ description: Descrição do componente InputText e seus atributos
 O Input é um componente responsável por exibir uma área de texto editável para o usuário. Esses campos de textos são usados para coletar entradas que um usuário insere utilizando o teclado. 
 
 {{% alert color="danger" %}}
-O atributo `hidden` foi depreciado na versão 1.6.0 do Beagle e será removido em uma versão futura. Utilize o atributo `display` da propriedade `style`.
+O atributo `hidden` foi depreciado na versão 1.6.0 do Beagle e será removido em uma versão futura. Utilize o atributo `display` da propriedade `style` em seu lugar.
 {{% /alert %}}
 
 A sua estrutura é representada como mostrado abaixo: 
