@@ -8,7 +8,7 @@ description: "Aqui, você encontrará mais informações sobre as funcionalidade
 
 ## Introdução
 
-Analytics é uma funcionalidade poderosa e simples que o Beagle oferece, ela dá aos desenvolvedores controle sobre o rastreamento de ações e navegação em seu aplicativo e pode ser usada em associação com qualquer serviço analítico que desejem.
+Analytics é uma funcionalidade poderosa e simples que o Beagle oferece, ela dá aos desenvolvedores controle sobre o rastreamento de ações e navegação em sua aplicação e pode ser usada em associação com qualquer serviço analítico que desejem.
 
 Nos próximos tópicos, você aprenderá como habilitar o reporte de eventos e configurá-lo de acordo com as suas necessidades.
 
