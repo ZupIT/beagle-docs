@@ -1,6 +1,7 @@
 ---
-title: Componentes
-weight: 308
+title: Visão Geral
+weight: 1
+type: overview
 description: Descrição dos componentes e seus atributos
 ---
 
