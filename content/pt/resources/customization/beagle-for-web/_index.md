@@ -8,5 +8,4 @@ description: >-
 
 ---
 
-O Beagle possui essas principais classes para Web: [  
-](https://docs.usebeagle.io/v/v1.0-en/resources/customization/beagle-para-web/customized-actions)
+O Beagle possui essas principais classes para Web: [](https://docs.usebeagle.io/v/v1.0-en/resources/customization/beagle-para-web/customized-actions)

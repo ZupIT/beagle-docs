@@ -1,6 +1,6 @@
 ---
-title: Actions Overview
-weight: 231
+title: Overview
+weight: 1
 type: overview
 description: Here you'll find all about action's components and its attributes details.
 ---
