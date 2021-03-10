@@ -11,7 +11,7 @@ description: Text Input component description and its attributes
 Input is a component that displays an editable text area for the user. These text fields are used to collect inputs that the user insert using the keyboard. 
 
 {{% alert color="danger" %}}
-The `hidden` attribute has been deprecated in Beagle version 1.6.0 and will be removed in a future version. Use the `display` attribute of the` style` property.
+The `hidden` attribute has been deprecated in Beagle version 1.6.0 and will be removed in a future version. Use the `display` attribute of the` style` property instead.
 {{% /alert %}}
 
 See how the structure is represented by the attributes below:
