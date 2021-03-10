@@ -66,6 +66,9 @@ export default createBeagleUIService<any>({
 
 {{% tab name="Android" %}}
 
+Create a class with the `@BeagleComponent` annotation and implements the `AnalyticsProvider` interface.
+
+
 ```kotlin
 @BeagleComponent
 class AnalyticsProviderImpl : AnalyticsProvider{
