@@ -2,13 +2,11 @@
 
 Project: 466 Zup - Relacionamento com Desenvolvedores
 
-## Getting started
+## Get started
 
 To start this project, you must run the following commands:
 
 `git submodule update --init --recursive --remote`
-
-`cd Settings`
 
 You must have installed Node and then install your dependencies using npm:
 

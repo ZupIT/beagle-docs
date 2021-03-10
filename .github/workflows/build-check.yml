@@ -1,0 +1,26 @@
+name: Build Check
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  
+          fetch-depth: 0    
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.78.1'
+          extended: true
+
+      - name: npm install
+        run: npm install
+
+      - name: Build check
+        run: npm run build
