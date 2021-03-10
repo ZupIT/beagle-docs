@@ -65,7 +65,7 @@ See how the structure is represented by the attributes below:
       <td style="text-align:left">hidden</td>
       <td style="text-align:left">Boolean</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Enables the component to be visible or not. The `hidden` attribute has been deprecated in Beagle version 1.6.0 and will be removed in a future version. Use the `display` attribute of the` style` property.</td>
+      <td style="text-align:left">Enables the component to be visible or not. The `hidden` attribute has been deprecated in Beagle version 1.6.0 and will be removed in a future version. Use the `display` attribute of the` style` property instead.</td>
     </tr>
     <tr>
       <td style="text-align:left">type</td>
