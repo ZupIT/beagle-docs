@@ -62,7 +62,6 @@ Depois de integrado, você deve seguir com o processo normal de build do Carthag
 No caso do Beagle, os arquivos obrigatórios para que a sua aplicação funcione são:
 
 - Beagle.framework
-- BeagleSchema.framework
 - YogaKit.framework
 
 Outros frameworks são utilizados apenas em cenários de uso mais específicos.

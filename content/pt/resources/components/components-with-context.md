@@ -50,7 +50,7 @@ data class CustomComponent(
 {{% tab name="iOS" %}}
 
 ```swift
-public struct CustomComponent: RawComponent, HasContext {
+public struct CustomComponent: Component, HasContext {
     public var context: Context?
     public var otherAttribute: String
 }
