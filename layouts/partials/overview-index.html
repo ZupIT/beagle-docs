@@ -1,0 +1,17 @@
+<div class="section-index">
+    {{ $pages := (where .Site.Pages "Section" .Section).ByWeight }}
+    {{ $pages = .Site.Pages.ByWeight }}
+    {{ $parent := .Parent }}
+    {{ $page := . }}
+    <hr class="panel-line">
+    {{ range $pages }}
+        {{ if and (eq .Parent $parent) (ne . $page) }}
+            <div class="entry">
+                <h2>
+                    <a href="{{ .RelPermalink }}">{{- .Title -}}</a>
+                </h2>
+                <p>{{ .Description | markdownify }}</p>
+            </div>
+        {{ end }}
+    {{ end }}
+</div>
