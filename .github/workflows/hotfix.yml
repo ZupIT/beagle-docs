@@ -39,7 +39,7 @@ jobs:
 
       - name: Get version from branch name
         id: version
-        run: echo "::set-output name=branch-version::$(echo $GITHUB_REF | sed -E 'sed 's/refs\/tags\/release-//g' )"
+        run: echo "::set-output name=branch-version::$(echo $GITHUB_REF | sed -E 'sed 's/refs\/heads\/release-//g' )"
         shell: bash
 
       - name: Config latest path
