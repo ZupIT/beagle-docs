@@ -33,6 +33,9 @@ jobs:
         shell: bash
         working-directory: static
         run: rm -rf shared
+      
+      - name: Cache npm Dependencies
+        uses: c-hive/gha-npm-cache@v1
 
       - name: Installing Dependencies
         run: npm install
