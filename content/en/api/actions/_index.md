@@ -33,3 +33,4 @@ To learn how to create custom actions, check out [**Beagle's customization secti
 ## Action types
 
 Below, you will find a complete description of the attributes that are part of the Standard Actions on Beagle.
+
