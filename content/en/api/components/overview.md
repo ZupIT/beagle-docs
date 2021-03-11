@@ -1,6 +1,7 @@
 ---
-title: Components
-weight: 283
+title: Overview
+weight: 1
+type: overview
 description: Here you will find all information about components and its attributes details.
 ---
 

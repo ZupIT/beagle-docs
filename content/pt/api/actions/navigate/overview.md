@@ -1,6 +1,7 @@
 ---
-title: Navigate
-weight: 271
+title: Visão Geral
+weight: 1
+type: overview
 description: Ações disponíveis para navegação na aplicação.
 ---
 
