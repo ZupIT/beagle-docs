@@ -10,7 +10,7 @@ description: >-
 
 ## **Configurações de uso**
 
-Depois que você terminar a instalação, é preciso **configurar o Beagle para o uso no framework do Angular.** Para isso, basta realizar os seguintes passos:
+Depois que você terminar a instalação, é preciso **configurar o projeto Angular para utlizar o Beagle.** Para isso, basta realizar os seguintes passos:
 
 ### **Passo 1: Configuração automática**
 
@@ -24,11 +24,10 @@ yarn beagle init
 npx beagle init
 ```
 
-Feito isso, o Beagle irá retornar uma pergunta.
+Feito isso, o Beagle irá retornar uma pergunta:
 
-**Pergunta: Would you like to use yarn or npm?**
-
-**Você gostaria de usar yarn ou npm?**  
+**Would you like to use yarn or npm?**(**Você gostaria de usar yarn ou npm?**)
+ 
 Neste caso, digite a opção que irá utilizar como gerenciador. No nosso exemplo, usaremos o `yarn`, logo digite `yarn`e aperte enter.
 
 Ao final deste processo, serão gerados dois novos arquivos em seu projeto:
