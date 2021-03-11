@@ -24,27 +24,12 @@ yarn beagle init
 npx beagle init
 ```
 
-Feito isso, o Beagle irá retornar algumas perguntas. Para respondê-las, siga as orientações abaixo:
+Feito isso, o Beagle irá retornar uma pergunta.
 
-**Pergunta 1: Would you like to use yarn or npm?**
+**Pergunta: Would you like to use yarn or npm?**
 
 **Você gostaria de usar yarn ou npm?**  
 Neste caso, digite a opção que irá utilizar como gerenciador. No nosso exemplo, usaremos o `yarn`, logo digite `yarn`e aperte enter.
-
-**Pergunta 2: Path to the beagle module \(press enter to use default\)**
-
-**Caminho para o modulo do Beagle \(pressione enter para usar o default\)**  
-Neste caso, digite qual o caminho do módulo que será usado para o beagle. Como estamos criamos o projeto do zero e não temos nenhum módulo, é só dar enter sem informar nada.
-
-**Pergunta 3: Path to the module with the components to use with beagle \(press enter to use default\)**
-
-**Caminho para usar o módulo com componentes para usar o Beagle \(pressione enter para usar default\)**  
-Neste caso, digite qual o caminho do módulo que será usado para os components do beagle. Como ainda não temos nenhum módulo, é só dar enter sem informar nada.
-
-**Pergunta 4: What's the base url of the backend providing your beagle JSONs? \(press enter to use default\)**
-
-**Qual a base url do backend que providencia o seu JSONs ao Beagle? \(pressione enter para usar o default\)**  
-Neste caso, digite qual será a URL base do backend que será utilizada para resgatar os arquivos JSON. Para o nosso exemplo, usaremos um JSON, logo é só digitar: http://localhost:4200/assets
 
 Ao final deste processo, serão gerados dois novos arquivos em seu projeto:
 
