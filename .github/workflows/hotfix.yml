@@ -34,11 +34,11 @@ jobs:
         working-directory: static
         run: rm -rf shared
       
-      - name: Cache npm Dependencies
-        uses: c-hive/gha-npm-cache@v1
+      - name: Cache Dependencies
+        uses: c-hive/gha-yarn-cache@v1
 
       - name: Installing Dependencies
-        run: npm install
+        run: yarn
 
       - name: Get version from branch name
         id: version
@@ -53,7 +53,7 @@ jobs:
           VERSION: ${{ steps.version.outputs.branch-version }}
 
       - name: Build
-        run: npm run build-playground && hugo -D --minify -b $BASE_URL/$VERSION
+        run: yarn build-playground && hugo -D --minify -b $BASE_URL/$VERSION
         env: 
           BASE_URL: https://docs.usebeagle.io
           VERSION: ${{ steps.version.outputs.branch-version }}
