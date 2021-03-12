@@ -4,7 +4,6 @@ weight: 23
 description: >-
   This section shows the walkthrough to use the Beagle libraty in an Angular project.
 ---
-
 ---
 ## **Settings**
 
@@ -24,7 +23,7 @@ npx beagle init
 
 After this Beagle will return a question:
 
-**Would you like to use yarn or npm?**
+* **Would you like to use yarn or npm?**
 
 Then you should choose the option that you will use as a manager. In our example, we have used `yarn`, then type `yarn` and press enter.
 
@@ -39,7 +38,7 @@ Open the `app.module.ts` file and then import the Beagle module that has just be
 
 ```text
 ...
-import { Beagle } from './beagle.module';
+import {Beagle} from './beagle.module';
 
 @NgModule({
   declarations: [
@@ -58,11 +57,11 @@ export class AppModule { }
 
 Now, you need to create a JSON file that will define the components that will be rendered.
 
-For a better experience you could create your JSON outputsthrough a BFF. You will find how to configure a BFF [** here **] ({{<ref path = "/ get-started / installing-beagle / backend" lang = " pt ">}}). This example uses a JSON that is available in the URL http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/welcome:
+For a better experience you could create your JSON outputsthrough a BFF. You will find how to configure a BFF [**here**]({{<ref path = "/get-started/installing-beagle/backend" lang = "pt">}}). This example uses a JSON that is available in the URL http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/welcome:
 
-{{% alert color="info" %}}
+{{%alert color="info"%}}
 JSON used as example.
-{{% /alert %}}
+{{%/alert %}}
 
 ```text
 {
@@ -94,7 +93,7 @@ The Beagle library comes with several components ready to be used in your projec
 The code above creates a JSON with two for the components `container` and `text`.
 {{% /alert %}}
 
-After creating your JSON, open the file `beagle.module.ts` generated in the previous step, in baseUrl enter the path of the remote JSON, we will use the path: http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/.
+After creating your JSON, open the file `beagle.module.ts` generated in the previous step, and enter the remote JSON path as http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/ in the baseUrl 
 
 ```text
 import { BeagleModule } from '@zup-it/beagle-angular'
@@ -123,7 +122,7 @@ export class Beagle {}
 
 And that is it. The configuration is finished and now we will learn how to render the components mapped in a JSON.
 
-### Passo 3: Usando o beagle-remote-view
+### Step 3: Using beagle-remote-view
 
 After JSON is created, you need to specify, within the application, the location where the components will be rendered. To perform this action, the Beagle library provides the component `<beagle-remote-view>`.
 
