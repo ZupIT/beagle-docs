@@ -33,12 +33,12 @@ If you type **"y"** the project `app.tsx` will be replaced by one with the Beagl
 
 At the end of this process, a new file called **beagle-service.ts** will be generated in your project:
 
-### Passo 2: Criação do JSON de definição do layout
+### Step 2: Creating the layout definition JSON
 
-Para uma melhor experiencia o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**]({{< ref path="/get-started/installing-beagle/backend" lang="pt" >}}), neste exemplo usaremos o JSON que está disponibilizado na URL http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/welcome:
+or a better experience you could create your JSON outputsthrough a BFF. You will find how to configure a BFF [**here**]({{<ref path = "/get-started/installing-beagle/backend" lang = "pt">}}). This example uses a JSON that is available in the URL http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/welcome:
 
 {{% alert color="info" %}}
-JSON utilizado como exemplo .
+JSON example .
 {{% /alert %}}
 
 ```text
@@ -66,18 +66,17 @@ JSON utilizado como exemplo .
 ```
 
 {{% alert color="info" %}}
-A biblioteca Beagle já vem com diversos componentes pré-definidos e prontos para serem usados em seu projeto.
-
-O código acima cria um JSON com dois desses componentes: container e text.
+The Beagle library comes with several components ready to be used in your project
+The code above creates a JSON with two for the components `container` and `text`.
 {{% /alert %}}
 
-### Passo 3: Configuração do Beagle Service
+### Passo 3: Configuring a Beagle Service
 
-Depois de criado o seu JSON, a sua estrutura deve estar parecida com a imagem a seguir:
+After creating your JSON, its structure should look like the following image:
 
 ![](/shared/image%20%2863%29.png)
 
-Abra agora o arquivo criado `beagle-service.ts` e verifique se o código está igual ao abaixo:
+Now open the created file `beagle-service.ts` and check if the code is the same as the one below:
 
 ```text
 import { createBeagleUIService } from '@zup-it/beagle-react'
@@ -89,25 +88,28 @@ export default createBeagleUIService({
 ```
 
 {{% alert color="info" %}}
-**baseUrl:** URL base que fornece as visualizações (JSON) para o Beagle.
+**baseUrl:** Base URL which provides views via JSON for Beagle.
 {{% /alert %}}
 
 {{% alert color="info" %}}
-**components:** São o mapa de componentes a serem usados ​​ao renderizar uma view.
+**components:** They are maps used when rendering a view.
 {{% /alert %}}
 
-Neste ponto da configuração podemos definir a baseUrl do servidor externo do Beagle.
+At this point in the configuration we can define the baseUrl of the external Beagle server.
+At this point we can define the Beagle server external baseUrl.
 
 {{% alert color="warning" %}}
-É importante ressaltar que, para este exemplo, estamos usando o[ **typescript**](https://www.typescriptlang.org/) junto ao projeto. Caso você não tenha na sua máquina, será preciso instalar.
+For this example, we are using [**typescript**](https://www.typescriptlang.org/) in this project. You need to install it to run this example.
 {{% /alert %}}
 
-### Passo 4: Usando o BeagleRemoteView
+### Step 4: Using the BeagleRemoteView
 
-Agora você precisa especificar, dentro da aplicação, o local em que os componentes serão renderizados. Para isso, a biblioteca do Beagle fornece o **BeagleRemoteView** e o **BeagleProvider**. Abra o arquivo do componente que você deseja renderizar o layout e altere para ficar como o exemplo a seguir, no route adicione o caminho relativo ao JSON remoto: /welcome.
+* Now you need to specify the location where the components will be rendered in your application. For this, the Beagle library provides **BeagleRemoteView** and **BeagleProvider**. 
+
+* Open the file of the component you want to render the layout and change it to look like the following example, in the route add the path relative to the remote JSON: / welcome.
 
 {{% alert color="info" %}}
-No exemplo alteramos a App.ts
+In this example we have changed the `App.ts`
 {{% /alert %}}
 
 ```text
@@ -127,22 +129,22 @@ function App() {
 export default App;
 ```
 
-1. `<BeagleProvider>`: Responsável por prover para nossa aplicação o `beagle-service` criado no passo anterior contendo as configurações iniciais. Este é especificado na propriedade `value`;
-2. `<BeagleRemoteView>`: Responsável por renderizar o layout definido pelo JSON especificado pela propriedade `route`.
+1. `<BeagleProvider>`: Provides the `beagle-service` configuration file created in the previous step. This is specified in the `value` property;
+2. `<BeagleRemoteView>`: Renders the layout defined by the JSON specified at the `route` property.
 
 {{% alert color="info" %}}
-Note aqui que adicionamos **' /welcome '** pois esse valor será associado ao `baseUrl` definido no arquivo `beagle-service.ts`
+Adds the relative path **' /welcome '** since this will be added at the `baseUrl` set at the `beagle-service.ts` file
 {{% /alert %}}
 
 {{% alert color="warning" %}}
-`route` no `BeagleRemoteView` só é válido para as versões 1.3 e superior. Para versões anteriores, por favor, use `path.`
+A `route` in the `BeagleRemoteView` is only valid for versions 1.3 or higher. For previous versions, please use `path.`
 {{% /alert %}}
 
-## Exemplo prático
+## Example
 
-### Testando o projeto
+### Testing your project
 
-Para testarmos se a nossa configuração funcionou, você precisa executar um dos comandos abaixo para inicializar a aplicação:
+To test your configuration, you need to start your application running one of the commands below :
 
 ```text
 yarn start
@@ -152,10 +154,10 @@ yarn start
 npm run start
 ```
 
-Depois de finalizar o comando, acesse: localhost:3000. Você deverá ver a tela a seguir:
+After that, access: localhost:3000. And you will see the following screen:
 
 ![](/shared/image%20%2895%29.png)
 
 {{% alert color="success" %}}
-Parabéns, você criou sua primeira tela com Beagle!
+Congrats, you have finished your first Beagle Screen!
 {{% /alert %}}
