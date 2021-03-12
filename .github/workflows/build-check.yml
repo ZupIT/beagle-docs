@@ -19,8 +19,11 @@ jobs:
           hugo-version: '0.78.1'
           extended: true
 
-      - name: npm install
-        run: npm install
+      - name: Cache Dependencies
+        uses: c-hive/gha-yarn-cache@v1
+
+      - name: Intall Dependencies
+        run: yarn
 
       - name: Build check
-        run: npm run build
+        run: yarn build
