@@ -90,7 +90,11 @@ prism_syntax_highlighting = false
 
 [[params.versions]]
 version = "v1.5"
-url = "https://docs.usebeagle.io/v1.5"
+url = "https://docs.usebeagle.io/v1.5/"
+
+[[params.versions]]
+version = "v1.6"
+url = "https://docs.usebeagle.io/v1.6/"
 
 [[params.versions]]
 version = "v1.6"

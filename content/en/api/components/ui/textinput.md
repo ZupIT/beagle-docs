@@ -10,6 +10,10 @@ description: Text Input component description and its attributes
 
 Input is a component that displays an editable text area for the user. These text fields are used to collect inputs that the user insert using the keyboard. 
 
+{{% alert color="danger" %}}
+The `hidden` attribute has been deprecated in Beagle version 1.6.0 and will be removed in a future version. Use the `display` attribute of the` style` property instead.
+{{% /alert %}}
+
 See how the structure is represented by the attributes below:
 
 <table>
@@ -61,7 +65,7 @@ See how the structure is represented by the attributes below:
       <td style="text-align:left">hidden</td>
       <td style="text-align:left">Boolean</td>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Enables the component to be visible or not.</td>
+      <td style="text-align:left">Enables the component to be visible or not. The `hidden` attribute has been deprecated in Beagle version 1.6.0 and will be removed in a future version. Use the `display` attribute of the` style` property instead.</td>
     </tr>
     <tr>
       <td style="text-align:left">type</td>
@@ -78,6 +82,25 @@ See how the structure is represented by the attributes below:
       <td style="text-align:left"></td>
       <td style="text-align:left">This attribute receives a key that is registered in the Design System
         of each platform that customizes the component.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">error</td>
+      <td style="text-align:left">
+      <p>String or</p>
+        <p><a href="https://docs.usebeagle.io/v/v1.0-en/api/context#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">This attribute shows if the TextInput has an error.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">showError</td>
+      <td style="text-align:left">
+      <p>Boolean or</p>
+        <p><a href="https://docs.usebeagle.io/v/v1.0-en/api/context#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
+      </td>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Enables the error string to be visible or not.</td>
     </tr>
     <tr>
       <td style="text-align:left">onChange</td>

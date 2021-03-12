@@ -14,6 +14,7 @@ description: 'Nesta seção, você encontra uma descrição sobre a API de Acess
 | :--- | :--- | :---: | :--- |
 | accessible | Boolean | ✓ | Indica se o componente será interpretado como acessível. Default é `true`. |
 | accessibilityLabel | String |   | Uma mensagem que será dita por programas como o `VoiceOver.` |
+| isHeader | Boolean |  | Indica se o componente será interpretado como um cabeçalho. Default é `false`. |
 
 {{% alert color="warning" %}}
 Caso o backend não especifique acessibilidade, os valores padrões de cada plataforma serão utilizados.
@@ -35,7 +36,8 @@ Caso o backend não especifique acessibilidade, os valores padrões de cada plat
           },
           "accessibility": {
             "accessibilityLabel": "Image Label",
-            "accessible": true
+            "accessible": true,
+            "isHeader": true
           }
     }
   ]

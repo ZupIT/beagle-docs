@@ -6,7 +6,7 @@ description: Here you will find all information about components and its attribu
 
 ---
 
-![Beagle's component tree](/components-01-beagle.png)
+![](/shared/components-01-beagle.png)
 
 `ServenDrivenComponent` is the father of all Beagle's components, such as `widgets`, `forms` e `navigation`, they will be implemented through`ServerDrivenComponent`.
 

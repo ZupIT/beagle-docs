@@ -8,49 +8,52 @@ description: 'You will find here, ProGuard description and configuration for Bea
 
 ## Introduction
 
-When a obfuscation method is used, it is necessary that some rules are implemented to make sure the IDs internally used in Beagle are not obfuscated or minimized. 
+Beagle contains the ProGuard / R8 rules necessary for its components to work correctly.
+
+To make sure these rules work, you must fill the `RegisterWidget` and ` RegisterAction` annotations with their respective names. In case you have an object inside your component, you will need to annotate it with `@BeagleJson`
 
 ## Example
 
-To make sure it happens, you have to add the following rules to the Proguard file **`android-rules.pro`.**
+You have to annotate the classes used with the `@BeagleJson`  annotation  to make sure that your component works normally with ProGuard / R8 active.
 
-```markup
-proguard-rules.pro
 
-# Beagle uses coroutines in network requests
--keep class kotlinx.coroutines.experimental.android.AndroidExceptionPreHandler { *; }
+```kotlin
 
-# Beagle does reflection on generic parameters
--keepattributes Signature, InnerClasses, EnclosingMethod
+@BeagleJson
+enum class MyType {
+    PASSWORD, TEXT;
+}
 
-# Beagle does reflection on method and parameter annotations
--keepattributes RuntimeVisibleAnnotations, RuntimeVisibleParameterAnnotations
--dontwarn org.jetbrains.annotations.**
--keep class kotlin.Metadata { *; }
+@BeagleJson
+data class MyText(val textOne: String, val textTwo: String)
 
-# Yoga is a dependency used on Beagle
--keep @com.facebook.proguard.annotations.DoNotStrip class * { *; }
+@RegisterWidget("myText")
+data class Text(
+    val text: Bind<String>,
+    val type: MyType,
+    val myText: MyText,
+) : WidgetView() {
 
-# Customized classes for Beagle
--keep @br.com.zup.beagle.annotation.** class * { *; }
--keep @br.com.zup.beagle.android.annotation.** class * { *; }
--keep class * extends br.com.zup.beagle.android.widget.**
+    override fun buildView(rootView: RootView): TextView
+     = TextView(rootView.getContext())
 
-# Core classes in Beagle
--keep class br.com.zup.beagle.android.action.** { *; }
--keep class br.com.zup.beagle.android.widget.** { *; }
--keep class br.com.zup.beagle.android.components.** { *; }
--keep class br.com.zup.beagle.android.context.** { *; }
--keep class br.com.zup.beagle.widget.** { *; }
--keep class br.com.zup.beagle.core.** { *; }
--keep class br.com.zup.beagle.analytics.** { *; }
+}
+
+@RegisterAction("CustomAndroidAction")
+data class CustomAndroidAction(
+    val value: String,
+    val intValue: Int
+) : Action {
+    override fun execute(rootView: RootView, origin: View) { }
+}
+
 ```
 
 {{% alert color="info" %}}
 You also have to enable `minifyEnable` and `shrinkResources` on `buildType` declaring them as true to test the ProGuard obfuscation.
 {{% /alert %}}
 
-You must activate ProGuard in your IDE, to test it, you can use Android Studio, just add the listed configuration below: 
+You must activate ProGuard in your IDE. To test it, you can use Android Studio by adding the listed configuration below:
 
 ```text
 buildTypes {

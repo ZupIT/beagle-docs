@@ -10,6 +10,10 @@ description: Descrição do componente InputText e seus atributos
 
 O Input é um componente responsável por exibir uma área de texto editável para o usuário. Esses campos de textos são usados para coletar entradas que um usuário insere utilizando o teclado. 
 
+{{% alert color="danger" %}}
+O atributo `hidden` foi depreciado na versão 1.6.0 do Beagle e será removido em uma versão futura. Utilize o atributo `display` da propriedade `style` em seu lugar.
+{{% /alert %}}
+
 A sua estrutura é representada como mostrado abaixo: 
 
 <table>
@@ -61,7 +65,7 @@ A sua estrutura é representada como mostrado abaixo:
       <td style="text-align:left">hidden</td>
       <td style="text-align:left">Boolean</td>
       <td style="text-align:center"></td>
-      <td style="text-align:left">Propriedade que determina se o campo ser&#xE1; escondido.</td>
+      <td style="text-align:left">Propriedade que determina se o campo ser&#xE1; escondido. O atributo `hidden` foi depreciado na versão 1.6.0 do Beagle e será removido em uma versão futura. Utilize o atributo `display` da propriedade `style` em seu lugar.</td>
     </tr>
     <tr>
       <td style="text-align:left">type</td>
@@ -78,6 +82,25 @@ A sua estrutura é representada como mostrado abaixo:
       <td style="text-align:center"></td>
       <td style="text-align:left">Recebe uma chave que &#xE9; registrada no Design System de cada plataforma
         para fazer customiza&#xE7;&#xE3;o no componente.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">error</td>
+      <td style="text-align:left">
+      <p>String ou</p>
+        <p>&lt;b&gt;&lt;/b&gt;<a href="../../contexto/#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Esse atributo mostra se o TextInput possui um erro de acordo com uma entrada.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">showError</td>
+      <td style="text-align:left">
+      <p>Boolean ou</p>
+        <p>&lt;b&gt;&lt;/b&gt;<a href="../../contexto/#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
+      </td>
+      </td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Propriedade que identifica se o a String de erro deve ser escondida ou não.</td>
     </tr>
     <tr>
       <td style="text-align:left">onChange</td>

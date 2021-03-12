@@ -16,6 +16,8 @@ Beagle View é uma `UIView` que deve ser usada quando é necessário adicionar u
 
 **Component:** Recebe um componente de modo declarativo.
 
+**ScreenType.Remote:** Na inicialização de uma View remota, ela recebe a URL da sua tela ou componente server-driven. A configuração dos estados da Beagle View também pode ser feita por meio do parâmetro     `beagleViewStateObserver`.
+
 **ScreenType:** Permite inicializar de três formas:
 
 * `Remote:` Recebe a URL da sua tela ou componente server-driven. Você pode configurar um fallback opcional, que seria uma tela no modo declarativo caso houvesse algum erro com a sua tela server-driven. A configuração de header também pode ser feita por meio do parâmetro additionalData.
@@ -35,7 +37,10 @@ public class BeagleView: UIView {
     public convenience init(_ screenType: ScreenType) {
             self.init(viewModel: .init(screenType: screenType))
     }
-    
+
+    public convenience init(_ remote: ScreenType.Remote, beagleViewStateObserver: @escaping BeagleViewStateObserver) {
+        self.init(viewModel: .init(screenType: .remote(remote), beagleViewStateObserver: beagleViewStateObserver))
+    }
 }
 
 ```
@@ -44,20 +49,14 @@ public class BeagleView: UIView {
 
 Segue abaixo um layout nativo que será usado para exemplificar o uso do `AutoLayout` junto com o Beagle:
 
-Começa criando um `UIViewController`.
+### 1. Crie a BeagleViewViewController
 
-```swift 
-Class BeagleViewViewController: UIViewController {
+Crie uma classe do tipo `UIViewController`, como descrito abaixo:
 
-    // MARK: Init
-    required init(path: String, data: [String: String]?) {
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
+```swift
+class BeagleViewViewController: UIViewController {
+
+    // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -65,22 +64,28 @@ Class BeagleViewViewController: UIViewController {
 }
 ```
 
-Agora, você irá criar um text nativo utilizando o `UILabel` e posicionar usando o `AutoLayout`.
+Agora, crie três textos nativos do tipo `UILabel` e posicione-os com o `AutoLayout`, como na função `setupLabels` abaixo:
 
+```swift
+private lazy var titleScreen = makeLabel(text: "I'm a native screen")
 
-```swift 
-private lazy var titleScreen: UILabel = {
-        let label = UILabel()
-        label.text = "I'm a native screen"
-        label.numberOfLines = 0
-        label.textAlignment = .center
-        label.font = .systemFont(ofSize: 25, weight: .bold)
-        return label
-}()
+private lazy var loadingLabel = makeLabel(text: "Loading server-driven component in another BeagleView...")
+        
+private lazy var errorLabel = makeLabel(text: "Error loading!")
 
-private func setupLabel() {
+private func makeLabel(text: String) -> UILabel {
+    let label = UILabel()
+    label.text = text
+    label.textAlignment = .center
+    label.font = .systemFont(ofSize: 22, weight: .semibold)
+    label.numberOfLines = 0
+    label.backgroundColor = .lightGray
+    label.translatesAutoresizingMaskIntoConstraints = false
+    return label
+}
+
+private func setupLabels() {
     view.addSubview(titleScreen)
-    titleScreen.translatesAutoresizingMaskIntoConstraints = false
     titleScreen.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 5).isActive = true
     titleScreen.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -5).isActive = true
     if #available(iOS 11.0, *) {
@@ -88,16 +93,27 @@ private func setupLabel() {
     } else {
         titleScreen.topAnchor.constraint(equalTo: view.topAnchor, constant: 5).isActive = true
     }
+
+    view.addSubview(loadingLabel)
+    loadingLabel.topAnchor.constraint(equalTo: titleScreen.bottomAnchor, constant: 30).isActive = true
+    loadingLabel.centerXAnchor.constraint(equalTo: titleScreen.centerXAnchor).isActive = true
+
+    view.addSubview(errorLabel)
+    errorLabel.topAnchor.constraint(equalTo: titleScreen.bottomAnchor, constant: 30).isActive = true
+    errorLabel.leadingAnchor.constraint(lessThanOrEqualTo: view.leadingAnchor).isActive = true
+    errorLabel.trailingAnchor.constraint(lessThanOrEqualTo: view.trailingAnchor).isActive = true
+    errorLabel.centerXAnchor.constraint(equalTo: titleScreen.centerXAnchor).isActive = true
 }
 ```
 
-Agora, veja colocamos dois exemplos de `BeagleView` um iniciando com o **declarative** e outro no modo **Remote**.
+### 2. Crie a BeagleView
 
-* 1-> `BeagleView` declarative com texto do Beagle, utilizando o `AutoLayout` com o método **setupDeclarative**.
-* 2-> `BeagleView` remote passando uma URL, utilizando o `AutoLayout` com o método **setupRemote**.
+Veja abaixo dois exemplos de instanciação de uma `BeagleView`, uma inicializada no modo **declarative** e outro no modo **Remote**:
 
+* 1-> `BeagleView` declarativa com o componente de texto do Beagle, utilizando o `AutoLayout` com o método **setupDeclarative**.
+* 2-> `BeagleView` remota passando uma URL, utilizando o `AutoLayout` com o método **setupRemote**.
 
-```swift 
+```swift
 // 1   
 private lazy var beagleViewDeclarative = BeagleView(
     Text("I'm a beagle text")
@@ -123,9 +139,44 @@ private func setupRemote() {
     beagleViewRemote.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -5).isActive = true
     beagleViewRemote.topAnchor.constraint(equalTo: beagleViewDeclarative.bottomAnchor, constant: 5).isActive = true
 }
+
 ```
 
-Segue em exemplo o `BeagleViewViewController`completo. 
+### 3. Tratamento de erros
+
+Você pode observar os estados e tratar os erros a partir do parâmetro beagleViewStateObserver na inicialização da BeagleView com o tipo ScreenType.Remote.
+
+Veja abaixo um exemplo de uma BeagleView que recebe os estados para poder tratá-los:
+
+```swift
+private lazy var beagleViewStateful = BeagleView(.init(url: "your URL")) { state in
+    switch state {
+    case .started:
+        self.loadingLabel.isHidden = false
+        self.errorLabel.isHidden = true
+    case .error(var serverDrivenError, let retry):
+        self.errorLabel.text = serverDrivenError.localizedDescription
+        self.errorLabel.textColor = .red
+        self.errorLabel.isHidden = false
+    case .success:
+        self.errorLabel.isHidden = true
+    case .finished:
+        self.loadingLabel.isHidden = true
+    }
+}
+
+private func setupStatefulBeagleView() {
+    view.addSubview(beagleViewStateful)
+    beagleViewStateful.translatesAutoresizingMaskIntoConstraints = false
+    beagleViewStateful.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 5).isActive = true
+    beagleViewStateful.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -5).isActive = true
+    beagleViewStateful.topAnchor.constraint(equalTo: beagleViewRemote.bottomAnchor, constant: 5).isActive = true
+}
+```
+
+### 4. Exemplo Completo
+
+Abaixo um exemplo da classe `BeagleViewViewController` completa.
 
 ```swift
 import UIKit
@@ -133,20 +184,13 @@ import Beagle
 
 class BeagleViewViewController: UIViewController {
 
-    // MARK: Init
-    required init(path: String, data: [String: String]?) {
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override func viewDidLoad() {
+    // MARK: Lifecycle
+     override func viewDidLoad() {
         super.viewDidLoad()
+        setupLabels()
         setupDeclarative()
         setupRemote()
-        setupLabel()
+        setupStatefulBeagleView()
     }
     
     // 1
@@ -159,18 +203,42 @@ class BeagleViewViewController: UIViewController {
         .remote(.init(url: "your URL"))
     )
 
-    private lazy var titleScreen: UILabel = {
-            let label = UILabel()
-            label.text = "I'm a native screen"
-            label.numberOfLines = 0
-            label.textAlignment = .center
-            label.font = .systemFont(ofSize: 25, weight: .bold)
-            return label
-    }()
+    // 3
+    private lazy var beagleViewStateful = BeagleView(.init(url: "your URL")) { state in
+        switch state {
+        case .started:
+            self.loadingLabel.isHidden = false
+            self.errorLabel.isHidden = true
+        case .error(var serverDrivenError, let retry):
+            self.errorLabel.text = serverDrivenError.localizedDescription
+            self.errorLabel.textColor = .red
+            self.errorLabel.isHidden = false
+        case .success:
+            self.errorLabel.isHidden = true
+        case .finished:
+            self.loadingLabel.isHidden = true
+        }
+    }
+    private lazy var titleScreen = makeLabel(text: "I'm a native screen")
 
-    private func setupLabel() {
+    private lazy var loadingLabel = makeLabel(text: "Loading server-driven component in another BeagleView...")
+            
+    private lazy var errorLabel = makeLabel(text: "Error loading!")
+
+    private func makeLabel(text: String) -> UILabel {
+        let label = UILabel()
+        label.text = text
+        label.textAlignment = .center
+        label.font = .systemFont(ofSize: 22, weight: .semibold)
+        label.numberOfLines = 0
+        label.backgroundColor = .lightGray
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }
+
+    private func setupLabels() {
+        view.backgroundColor = .white
         view.addSubview(titleScreen)
-        titleScreen.translatesAutoresizingMaskIntoConstraints = false
         titleScreen.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 5).isActive = true
         titleScreen.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -5).isActive = true
         if #available(iOS 11.0, *) {
@@ -178,11 +246,20 @@ class BeagleViewViewController: UIViewController {
         } else {
             titleScreen.topAnchor.constraint(equalTo: view.topAnchor, constant: 5).isActive = true
         }
+
+        view.addSubview(loadingLabel)
+        loadingLabel.topAnchor.constraint(equalTo: titleScreen.bottomAnchor, constant: 30).isActive = true
+        loadingLabel.centerXAnchor.constraint(equalTo: titleScreen.centerXAnchor).isActive = true
+
+        view.addSubview(errorLabel)
+        errorLabel.topAnchor.constraint(equalTo: titleScreen.bottomAnchor, constant: 30).isActive = true
+        errorLabel.leadingAnchor.constraint(lessThanOrEqualTo: view.leadingAnchor).isActive = true
+        errorLabel.trailingAnchor.constraint(lessThanOrEqualTo: view.trailingAnchor).isActive = true
+        errorLabel.centerXAnchor.constraint(equalTo: titleScreen.centerXAnchor).isActive = true
     }
     
     private func setupDeclarative() {
-        view.addSubview(beagleViewDeclarative
-)
+        view.addSubview(beagleViewDeclarative)
         beagleViewDeclarative.translatesAutoresizingMaskIntoConstraints = false
         beagleViewDeclarative.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 5).isActive = true
         beagleViewDeclarative.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -5).isActive = true
@@ -196,7 +273,16 @@ class BeagleViewViewController: UIViewController {
         beagleViewRemote.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -5).isActive = true
         beagleViewRemote.topAnchor.constraint(equalTo: beagleViewDeclarative.bottomAnchor, constant: 5).isActive = true
     }
+
+    private func setupStatefulBeagleView() {
+        view.addSubview(beagleViewStateful)
+        beagleViewStateful.translatesAutoresizingMaskIntoConstraints = false
+        beagleViewStateful.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 5).isActive = true
+        beagleViewStateful.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -5).isActive = true
+        beagleViewStateful.topAnchor.constraint(equalTo: beagleViewRemote.bottomAnchor, constant: 5).isActive = true
+    }
     
 }
 ```
+
 Pronto, você já pode usar a `BeagleView`.

@@ -62,7 +62,6 @@ After the integration, you must follow the normal process of building with Carth
 In Beagle's case, the mandatory files to make you application work are:
 
 - Beagle.framework
-- BeagleSchema.framework
 - YogaKit.framework
 
 Other frameworks can be used only in more specific scenarios.

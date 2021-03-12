@@ -57,6 +57,12 @@ Check the example below to see how the structure works:
         an action is defined here, it must be configured in the frontend. To
         create an action in the frontend, <a href="../../../resources/customization/"><strong>see the example here</strong></a>.</td>
     </tr>
+      <tr>
+      <td style="text-align:left">enabled</td>
+      <td style="text-align:left">Bind&lt;Boolean&gt;</td>
+      <td style="text-align:center"></td>
+      <td style="text-align:left">Enables or disables the field.</td>
+    </tr>
     <tr>
       <td style="text-align:left">clickAnalyticsEvent</td>
       <td style="text-align:left"><a href="../../analytics"><strong>ClickEvent</strong></a></td>
