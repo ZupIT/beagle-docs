@@ -9,8 +9,6 @@
             font-family: 'Lato', sans-serif;
             display: flex;
             justify-content: center;
-            /* background-color: #555353; */
-
         }
 
         .container {
@@ -26,10 +24,6 @@
             margin-bottom: 20px;
         }
 
-        /* .beagle__version{
-  
-} */
-
         .beagle__version__text {
             display: flex;
             justify-content: center;
@@ -38,8 +32,6 @@
             text-decoration: none;
             padding-top: 5px;
         }
-
-        .container__content {}
 
         .content__list {
             padding: 20px 30px;
@@ -79,24 +71,31 @@
     <div class="container__content">
         <div class="container__content">
             <div class="beagle_brand">
-                <a href="https://usebeagle.io" target="_blank"><img src="https://docs.usebeagle.io/shared/Beagle.svg" /></a>
+                <a target="_blank" href="https://usebeagle.io"><img
+                        src="https://docs.usebeagle.io/shared/Beagle.svg" /></a>
             </div>
             <div><img src='https://docs.usebeagle.io/shared/Release.svg'>
-<div class='beagle__version__text'><b><a class='beagle__version__text' href='https://github.com/ZupIT/beagle/releases/tag/1.5.0' target="_blank">VERSÃO 1.5.0</a></b></div></div>
+<div class='beagle__version__text'><b><a target='_blank' class='beagle__version__text' href='https://github.com/ZupIT/beagle/releases/tag/1.6.0'>VERSION 1.6.0</a></b></div></div>
 
             <label><b>NOVAS FUNCIONALIDADES</b></label>
-            <div><ul><li class='content__list__item'><a class='content__list__link' href='https://docs.usebeagle.io/v1.5/pt/api/components/layout/listview/' target="_blank"> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>ListView<https://docs.usebeagle.io/v1.5/pt/api/components/layout/listview/></a></li>
-<li class='content__list__item'><a class='content__list__link' href='https://docs.usebeagle.io/v1.5/pt/api/context/operations/how-to-register-a-new-operation/' target="_blank"> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Custom Operation<https://docs.usebeagle.io/v1.5/pt/api/context/operations/how-to-register-a-new-operation/></a></li>
-<li class='content__list__item'><img   class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Adicionando nova operação UnionOperation</a></li>
-<li class='content__list__item'><img   class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Suporte de expressão no atributo display</a></li>
+            <div><ul><li class='content__list__item'><a target='_blank' class='content__list__link' href='https://docs.usebeagle.io/v1.6/pt/resources/analytics/'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Analytics 2.0<https://docs.usebeagle.io/v1.6/pt/resources/analytics/></a></li>
+<li class='content__list__item'><a target='_blank' class='content__list__link' href='https://docs.usebeagle.io/v1.6/pt/api/components/ui/button/'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Adicionado atributo no botão chamado disabled<https://docs.usebeagle.io/v1.6/pt/api/components/ui/button/></a></li>
+<li class='content__list__item'><a target='_blank' class='content__list__link' href='https://docs.usebeagle.io/v1.6/pt/api/components/forms/simple-form/'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Adicionada validação de formulário<https://docs.usebeagle.io/v1.6/pt/api/components/forms/simple-form/></a></li>
+<li class='content__list__item'><a target='_blank' class='content__list__link' href='https://docs.usebeagle.io/v1.6/pt/api/accessibility/'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Adicionado atributo na acessibilidade chamado header<https://docs.usebeagle.io/v1.6/pt/api/accessibility/></a></li>
+<li class='content__list__item'><a target='_blank' class='content__list__link' href='https://docs.usebeagle.io/v1.6/pt/api/components/layout/listview/'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Adicionado scrollIndicator no ListView<https://docs.usebeagle.io/v1.6/pt/api/components/layout/listview/></a></li>
 </ul></div>
 
-            <b><label>IMPACTOS NO</label> <a>ANDROID</a><img  class='plataform__icon' src='https://docs.usebeagle.io/shared/Android.svg'/>
-</b>
-            <div><ul> <li class='content__list__item'><a class='content__list__link' href='https://docs.usebeagle.io/v1.5/pt/resources/customization/beagle-for-android/custom-action/async-custom-action/' target="_blank"> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Açoes async: Agora é necessário implementar uma nova classe chamada AsyncAction<https://docs.usebeagle.io/v1.5/pt/resources/customization/beagle-for-android/custom-action/async-custom-action/> </a></li>
- <li class='content__list__item'><img class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Depreciamos o método ID dentro do Screen, substituir por identifier </a></li>
- <li class='content__list__item'><img class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Foi adicionada uma nova classe chamada OnInitiableComponent </a></li>
- <li class='content__list__item'><img class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Novo estado chamado OnCanceled criado para tratar melhor a navegação entre as telas </a></li>
+            <b><label>IMPACTOS NO</label>
+                IOS/ANDROID/WEB<img  class='plataform__icon' src='https://docs.usebeagle.io/shared/IOS.svg'/><img   class='plataform__icon' src='https://docs.usebeagle.io/shared/Android.svg'/> <img  class='plataform__icon' src='https://docs.usebeagle.io/shared/Web.svg'/>
+</p></p>
+            </b>
+            <div><ul> <li class='content__list__item'><a target='_blank' class='content__list__link' href='https://github.com/ZupIT/beagle/pull/1252'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Adicionada biblioteca de testes do Android<https://github.com/ZupIT/beagle/pull/1252> </a></li>
+ <li class='content__list__item'><a target='_blank' class='content__list__link' href='https://docs.usebeagle.io/v1.6/pt/resources/customization/beagle-for-android/proguard-configuration/'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Adicionado configurações padrão para suportar a configuração do Proguard<https://docs.usebeagle.io/v1.6/pt/resources/customization/beagle-for-android/proguard-configuration/> </a></li>
+ <li class='content__list__item'><a target='_blank' class='content__list__link' href='https://docs-reference.usebeagle.io/android/'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Adicionado suporte para gerar documentação dokka para arquivos hugo md<https://docs-reference.usebeagle.io/android/> </a></li>
+ <li class='content__list__item'><a target='_blank' class='content__list__link' href='https://docs.usebeagle.io/v1.6/pt/resources/customization/beagle-for-ios/loading-and-error-treatment/'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Adicionada tela de erro padrão no IOS<https://docs.usebeagle.io/v1.6/pt/resources/customization/beagle-for-ios/loading-and-error-treatment/> </a></li>
+ <li class='content__list__item'><a target='_blank' class='content__list__link' href='https://docs.usebeagle.io/v1.6/pt/resources/customization/beagle-for-web/loading-components-and-error-treatment/'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Adicionado componente de erro padrão no Web<https://docs.usebeagle.io/v1.6/pt/resources/customization/beagle-for-web/loading-components-and-error-treatment/> </a></li>
+ <li class='content__list__item'><a target='_blank' class='content__list__link' href='https://docs.usebeagle.io/v1.6/pt/get-started/using-beagle/web/react/'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Adiconado um script para inicializar um projeto React com Beagle (yarn beagle init ou npm run beagle init) <https://docs.usebeagle.io/v1.6/pt/get-started/using-beagle/web/react/> </a></li>
+ <li class='content__list__item'><a target='_blank' class='content__list__link' href='https://github.com/ZupIT/beagle-web-core/releases/tag/v1.6.0'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Bugs corrigidos <https://github.com/ZupIT/beagle-web-core/releases/tag/v1.6.0> </a></li>
 </ul></div>
             <div>
                 <img src="https://docs.usebeagle.io/shared/People.svg">
@@ -105,8 +104,8 @@
                 <p>Obrigado.</p>
                 <p>Equipe Beagle</p>
                 <div style="display: flex; justify-content: space-between; padding-top: 30px;">
-                    <a>2020 Beagle.All rights reserved.</a>
-                    <a>Powered by ZupI.T.Innovation</a>
+                    <p>© 2020 Bealge.All rights reserved.</p>
+                    <p>Powered by ZupI.T.Innovation</p>
                 </div>
             </footer>
 </body>
