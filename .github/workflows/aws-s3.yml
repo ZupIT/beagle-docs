@@ -82,4 +82,4 @@ jobs:
           VERSION: ${{ steps.version.outputs.release_tag }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          branch: 'release-$VERSION'
+          branch: "release-$VERSION"
