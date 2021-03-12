@@ -96,10 +96,6 @@ url = "https://docs.usebeagle.io/v1.5/"
 version = "v1.6"
 url = "https://docs.usebeagle.io/v1.6/"
 
-[[params.versions]]
-version = "v1.6"
-url = "https://docs.usebeagle.io/v1.6"
-
 # User interface configuration
 [params.ui]
 # Enable to show the side bar menu in its compact state.
