@@ -1,0 +1,35 @@
+{
+  "name": "tech-doc-hugo",
+  "version": "0.0.1",
+  "description": "Hugo theme for technical documentation.",
+  "main": "none.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-playground": "ts-node bin/build-playground.ts",
+    "start": "ts-node bin/start.ts",
+    "build": "npm run build-playground && hugo -D --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/google/docsy-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/google/docsy-example/issues"
+  },
+  "homepage": "https://github.com/google/docsy-example#readme",
+  "devDependencies": {
+    "@hapi/hapi": "^20.0.3",
+    "@types/glob": "^7.1.3",
+    "@types/hapi__hapi": "^20.0.3",
+    "@types/node": "^14.14.14",
+    "@types/nodemon": "^1.19.0",
+    "autoprefixer": "^9.8.6",
+    "glob": "^7.1.6",
+    "nodemon": "^2.0.6",
+    "postcss-cli": "^7.1.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}

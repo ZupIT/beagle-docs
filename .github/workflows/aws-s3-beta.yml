@@ -29,11 +29,14 @@ jobs:
           hugo-version: '0.78.1'
           extended: true
 
+      - name: Cache Dependencies
+        uses: c-hive/gha-yarn-cache@v1
+
       - name: Installing Dependencies
-        run: npm install
+        run: yarn
 
       - name: Build
-        run: npm run build-playground && hugo -D --minify
+        run: yarn build-playground && hugo -D --minify
 
       - name: S3 upload (latest version)
         run: aws s3 sync --acl public-read --follow-symlinks public s3://$AWS_S3_BUCKET --delete
