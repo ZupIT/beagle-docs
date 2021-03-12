@@ -8,7 +8,7 @@ description: >-
 ---
 ## **Settings**
 
-After you finish the installation, you need to ** configure the Angular project to use Beagle. ** To do this, just perform the following steps:
+After you finish the installation, you need to **configure the Angular project to use Beagle.** To do this, just follow the steps:
 
 ### **Step 1: Automatic configuration**
 
