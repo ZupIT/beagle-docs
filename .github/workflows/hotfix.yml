@@ -4,6 +4,9 @@ on:
   push:
     branches: [release*]
 
+env:
+  AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+
 jobs:
   deploy:
     runs-on: ubuntu-18.04
