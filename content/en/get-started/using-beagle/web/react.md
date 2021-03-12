@@ -7,13 +7,13 @@ description: >-
 
 ---
 
-## ** Settings **
+## **Configuration**
 
-After the installation, you will need to ** configure Beagle in the React framework. ** To do this, simply perform the following steps:
+After you finish the installation, you need to **configure the React project to use Beagle.** To do this, just follow the steps:
 
-### ** Step 1: Automatic configuration **
+### **Passo 1: Automatic configuration**
 
-Run one of the commands below to generate the files that will be used by the Beagle library. You can run the command according to your package manager:
+Run one of the commands below to generate the files that will be used by the Beagle library. You can run the command according to your package manager (yarn or npm):
 
 **yarn
 ```text
@@ -25,16 +25,13 @@ yarn beagle
 beagle
 ```
 
-Feito isso, o Beagle irá retornar uma pergunta.
+Then Beagle will return a question.
 
-**Do you want to replace "app.tsx" content with the Beagle configuration (y or n)?**
+**Do you want to replace the "app.tsx" content with the Beagle configuration? (y or n)?**
 
-**Você deseja substituir o conteúdo "app.tsx" pela configuração do Beagle?**  
-Caso digite **"y"** a app.tsx do projeto será substituída por outra com a configuração do Beagle, caso digite **"n"** o arquivo não vai ser substituído e a configuração terá que ser feita manualmente.
+If you type **"y"** the project `app.tsx` will be replaced by one with the Beagle configuration, if you type **"n"** it won't be replaced and a this configuration will have to be done manually.
 
-Ao final deste processo, será gerado um novo arquivo em seu projeto:
-
-- **beagle-service.ts**
+At the end of this process, a new file called **beagle-service.ts** will be generated in your project:
 
 ### Passo 2: Criação do JSON de definição do layout
 
