@@ -26,7 +26,7 @@ After this Beagle will return a question:
 
 **Would you like to use yarn or npm?**
 
-Then you should choose the option that you will use as a manager. In our example, we have used `yarn`, then type` yarn` and press enter.
+Then you should choose the option that you will use as a manager. In our example, we have used `yarn`, then type `yarn` and press enter.
 
 At the end of this process, two new files will be generated in your project:
 
@@ -34,8 +34,6 @@ At the end of this process, two new files will be generated in your project:
 - **beagle.module.ts.**
 
 ![](/shared/image%20%2815%29.png)
-
-Abra o arquivo `app.module.ts` e, em seguida, importe o módulo Beagle que acabou de ser gerado `import { Beagle } from './beagle.module';` e adicione dentro de `imports`:
 
 Open the `app.module.ts` file and then import the Beagle module that has just been generated `import {Beagle} from './beagle.module';` and add it within `imports`:
 
@@ -56,13 +54,6 @@ import { Beagle } from './beagle.module';
 })
 export class AppModule { }
 ```
-
-### Passo 2: Criação do JSON de definição do layout
-
-Agora, você precisa criar um arquivo JSON que definirá os componentes que serão renderizados.
-
-Para uma melhor experiência o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**]({{< ref path="/get-started/installing-beagle/backend" lang="pt" >}}), neste exemplo usaremos o JSON que está disponibilizado na URL http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/welcome:
-
 ### Step 2: Creating the layout definition JSON
 
 Now, you need to create a JSON file that will define the components that will be rendered.
@@ -152,27 +143,19 @@ The `route` parameter is only valid for version 1.3 or higher. For earlier versi
 
 ### Testing your application
 
-Para testarmos se a nossa configuração funcionou, você precisa rodar um dos comandos abaixo para inicializar a aplicação.
-
-{{% alert color="danger" %}}
-Ao executar a aplicação, você **não** **deve utilizar o comando** **`ng serve`** porque ela será iniciada sem compilar os arquivos do Beagle. Para que o Beagle seja inicializado corretamente, é necessário utilizar um dos comandos abaixo de acordo com seu gerenciador de pacotes.
-{{% /alert %}}
-
-Caso utilize npm:
-
 To test our configuration, you must start yout application running one of the commands below.
 
 {{% alert color = "danger"%}}
 **Do not use the command** **`ng serves`** when running your application since it will start it without compiling Beagle files. In order for start up correctly, you must use one of the commands below according to your package manager.
 {{% / alert%}}
 
-If you use npm:
+If you use npm, run:
 
 ```text
 npm run serve
 ```
 
-If you use yarn:
+If you use yarn, run:
 
 ```text
 yarn serve
