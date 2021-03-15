@@ -1,3 +1,4 @@
+
 [submodule "themes/devrel"]
 	path = themes/devrel
-	url = https://github.com/ZupIT/docs-hugo-theme.git
+	url = https://github.com/ZupIT/docs-beagle-theme.git
