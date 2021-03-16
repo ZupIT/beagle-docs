@@ -64,7 +64,15 @@ jobs:
       - name: Unversioning FAQ
         run: aws s3 sync --acl public-read --follow-symlinks public/faq s3://$AWS_S3_BUCKET/faq/ --delete
 
+      - name: Unversioning Portuguese FAQ
+        run: aws s3 sync --acl public-read --follow-symlinks public/pt/faq s3://$AWS_S3_BUCKET/pt/faq --delete
+
+      - name: remove FAQ from versions
+        shell: bash
+        working-directory: public
+        run: rm -rf faq & rm -rf pt/faq
+
       - name: S3 upload
-        run: aws s3 sync --acl public-read --follow-symlinks public s3://$AWS_S3_BUCKET/$VERSION/ --exclude faq --delete
+        run: aws s3 sync --acl public-read --follow-symlinks public s3://$AWS_S3_BUCKET/$VERSION/ --delete
         env:
           VERSION: ${{ steps.version.outputs.branch_version }}
