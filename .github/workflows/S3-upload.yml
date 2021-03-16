@@ -61,7 +61,10 @@ jobs:
           BASE_URL: https://docs.usebeagle.io
           VERSION: ${{ steps.version.outputs.branch_version }}
 
+      - name: Unversioning FAQ
+        run: aws s3 sync --acl public-read --follow-symlinks public/faq s3://$AWS_S3_BUCKET --delete
+
       - name: S3 upload
-        run: aws s3 sync --acl public-read --follow-symlinks public s3://$AWS_S3_BUCKET/$VERSION/ --delete
+        run: aws s3 sync --acl public-read --follow-symlinks public s3://$AWS_S3_BUCKET/$VERSION/ --exclude faq --delete
         env:
           VERSION: ${{ steps.version.outputs.branch_version }}
