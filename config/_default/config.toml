@@ -88,13 +88,17 @@ offlineSearch = true
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
 
-[[params.versions]]
-version = "v1.5"
-url = "https://docs.usebeagle.io/v1.5/"
+[[menu.main]]
+    name = "FAQ"
+    weight = 10
+    url = "https://docs.usebeagle.io/faq/"
+
+[[menu.main]]
+    name = "References"
+    weight = 20
+    url = "https://docs-reference.usebeagle.io/"
 
 [[params.versions]]
-version = "v1.6"
-url = "https://docs.usebeagle.io/v1.6/"
 
 # User interface configuration
 [params.ui]
