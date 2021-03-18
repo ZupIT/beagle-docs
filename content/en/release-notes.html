@@ -1,113 +1,147 @@
 <!DOCTYPE html>
-<html lang="pt">
+<!-- saved from url=(0077)file:///C:/zup/Beagle%20generator/new/docs-beagle-release/complete/index.html -->
+<html lang="pt"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            body {
+                font-family: 'Lato', sans-serif;
+                display: flex;
+                justify-content: center;
+            }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style type="text/css">
-        body {
-            font-family: 'Lato', sans-serif;
-            display: flex;
-            justify-content: center;
-        }
+            .container {
+                display: flex;
+                justify-content: center;
+                padding: 30px 20px;
+                width: 60%;
+            }
 
-        .container {
-            display: flex;
-            justify-content: center;
-            padding: 30px 20px;
-            width: 60%;
-        }
+            .beagle_brand {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
 
-        .beagle_brand {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
+            .beagle__version__text {
+                display: flex;
+                justify-content: center;
+                font-size: 12px;
+                color: #A9A9A9;
+                text-decoration: none;
+                padding-top: 5px;
+            }
 
-        .beagle__version__text {
-            display: flex;
-            justify-content: center;
-            font-size: 12px;
-            color: #A9A9A9;
-            text-decoration: none;
-            padding-top: 5px;
-        }
+            .beagle__version__link {
+                display: flex;
+                justify-content: center;
+                font-size: 12px;
+                color: #A9A9A9;
+                text-decoration: none;
+                padding-top: 5px;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+            }
 
-        .content__list {
-            padding: 20px 30px;
-        }
+            .beagle__version__link:hover {
+                color: #474747;
+                text-decoration: underline;
+            }
 
-        .content__list__item {
-            list-style: none;
-            color: #A9A9A9
-        }
+            .content__list {
+                padding: 20px 30px;
+            }
 
-        .content__list__link {
-            text-decoration: none;
-            color: #A9A9A9;
-        }
+            .content__list__item {
+                list-style: none;
+                color: #A9A9A9
+            }
 
-        .content__list__icon {
-            padding-right: 5px;
-        }
+            .content__list__link {
+                text-decoration: none;
+                color: #A9A9A9;
+            }
 
-        .plataform__icon {
-            padding-left: 5px
-        }
+            .content__list__link:hover{
+                color: #474747;
+                text-decoration: underline;
+            }
 
+            .content__list__icon {
+                padding-right: 5px;
+            }
 
-        footer {
-            margin-top: 10%;
-        }
+            .plataform__icon {
+                padding-left: 5px
+            }
 
-        .footer__copyright {
-            display: flex;
-            justify-content: space-between;
-        }
-    </style>
-</head>
+            .img_template {
+                width: 100%;
+            }
 
-<body>
-    <div class="container__content">
-        <div class="container__content">
-            <div class="beagle_brand">
-                <a target="_blank" href="https://usebeagle.io"><img
-                        src="https://docs.usebeagle.io/shared/Beagle.svg" /></a>
-            </div>
-            <div><img src='https://docs.usebeagle.io/shared/Release.svg'>
-<div class='beagle__version__text'><b><a target='_blank' class='beagle__version__text' href='https://github.com/ZupIT/beagle/releases/tag/1.6.0'>VERSION 1.6.0</a></b></div></div>
+            .img_people{
+                width: 80%;
+            }
 
-            <label><b>NEW FEATURES</b></label>
-            <div><ul><li class='content__list__item'><a target='_blank' class='content__list__link' href='https://docs.usebeagle.io/v1.6/resources/analytics/'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Analytics 2.0<https://docs.usebeagle.io/v1.6/resources/analytics/></a></li>
-<li class='content__list__item'><a target='_blank' class='content__list__link' href='https://docs.usebeagle.io/v1.6/api/components/ui/button/'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Adds attribute on the button called disabled<https://docs.usebeagle.io/v1.6/api/components/ui/button/></a></li>
-<li class='content__list__item'><a target='_blank' class='content__list__link' href='https://docs.usebeagle.io/v1.6/api/components/forms/simple-form/'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Adds form validation<https://docs.usebeagle.io/v1.6/api/components/forms/simple-form/></a></li>
-<li class='content__list__item'><a target='_blank' class='content__list__link' href='https://docs.usebeagle.io/v1.6/api/accessibility/'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Adds accessibility header attribute<https://docs.usebeagle.io/v1.6/api/accessibility/></a></li>
-<li class='content__list__item'><a target='_blank' class='content__list__link' href='https://docs.usebeagle.io/v1.6/api/components/layout/listview/'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Adds scrollIndicator to the ListView<https://docs.usebeagle.io/v1.6/api/components/layout/listview/></a></li>
-</ul></div>
+            .img_container {
+                text-align: center;
+                width: 100%;
+            }
 
-            <b><label>IMPACTS IN</label>
-                IOS/ANDROID/WEB<img  class='plataform__icon' src='https://docs.usebeagle.io/shared/IOS.svg'/><img   class='plataform__icon' src='https://docs.usebeagle.io/shared/Android.svg'/> <img  class='plataform__icon' src='https://docs.usebeagle.io/shared/Web.svg'/>
-</p></p>
-            </b>
-            <div><ul> <li class='content__list__item'><a target='_blank' class='content__list__link' href='https://github.com/ZupIT/beagle/pull/1252'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Adds android test library<https://github.com/ZupIT/beagle/pull/1252> </a></li>
- <li class='content__list__item'><a target='_blank' class='content__list__link' href='https://docs.usebeagle.io/v1.6/resources/customization/beagle-for-android/proguard-configuration/'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Adds default settings to support proguard configuration<https://docs.usebeagle.io/v1.6/resources/customization/beagle-for-android/proguard-configuration/> </a></li>
- <li class='content__list__item'><a target='_blank' class='content__list__link' href='https://docs-reference.usebeagle.io/android/'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Adds support to generate dokka documentation to hugo md files<https://docs-reference.usebeagle.io/android/> </a></li>
- <li class='content__list__item'><a target='_blank' class='content__list__link' href='https://docs.usebeagle.io/v1.6/resources/customization/beagle-for-ios/loading-and-error-treatment/'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Adds default error view on IOS<https://docs.usebeagle.io/v1.6/resources/customization/beagle-for-ios/loading-and-error-treatment/> </a></li>
- <li class='content__list__item'><a target='_blank' class='content__list__link' href='https://docs.usebeagle.io/v1.6/resources/customization/beagle-for-web/loading-components-and-error-treatment/'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Adds default error view on Web<https://docs.usebeagle.io/v1.6/resources/customization/beagle-for-web/loading-components-and-error-treatment/> </a></li>
- <li class='content__list__item'><a target='_blank' class='content__list__link' href='https://docs.usebeagle.io/v1.6/get-started/using-beagle/web/react/'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Creates a script to initialize a React Beagle Project (yarn beagle init or npm run beagle init) <https://docs.usebeagle.io/v1.6/get-started/using-beagle/web/react/> </a></li>
- <li class='content__list__item'><a target='_blank' class='content__list__link' href='https://github.com/ZupIT/beagle-web-core/releases/tag/v1.6.0'> <img  class='content__list__icon' src='https://docs.usebeagle.io/shared/Icon.svg'/>Bugs fixed <https://github.com/ZupIT/beagle-web-core/releases/tag/v1.6.0> </a></li>
-</ul></div>
-            <div>
-                <img src="https://docs.usebeagle.io/shared/People.svg">
-            </div>
-            <footer style="margin-top: 10%; ">
-                <p>Thanks.</p>
-                <p>Team Beagle</p>
-                <div style="display: flex; justify-content: space-between; padding-top: 30px;">
-                    <p>© 2020 Bealge.All rights reserved.</p>
-                    <p>Powered by ZupI.T.Innovation</p>
+            footer {
+                margin-top: 10%;
+            }
+
+            .footer__copyright {
+                display: flex;
+                justify-content: space-between;
+            }
+        </style>
+    </head>
+
+    <body>
+            <div class="container__content">
+                <div class="container__content">
+                    <div class="beagle_brand">
+                        <a target="_blank" href="https://usebeagle.io/"><img class="img_template" src="https://docs.usebeagle.io/shared/Beagle.svg"></a>
+                    </div>
+                    <div><img class="img_template" src="https://docs.usebeagle.io/shared/Release.svg">
+    <div class="beagle__version__text"><b><a target="_blank" class="beagle__version__link" href="https://github.com/ZupIT/beagle/releases/tag/1.6.0">VERSION 1.6.0</a></b></div></div>
+
+                    <label><b>NEW FEATURES</b></label>
+                    <div><ul><li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.6/resources/analytics/"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Analytics 2.0<https: docs.usebeagle.io="" v1.6="" resources="" analytics=""></https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.6/api/components/ui/button/"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Adds attribute on the button called disabled<https: docs.usebeagle.io="" v1.6="" api="" components="" ui="" button=""></https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.6/api/components/forms/simple-form/"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Adds form validation<https: docs.usebeagle.io="" v1.6="" api="" components="" forms="" simple-form=""></https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.6/api/accessibility/"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Adds accessibility header attribute<https: docs.usebeagle.io="" v1.6="" api="" accessibility=""></https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.6/api/components/layout/listview/"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Adds scrollIndicator to the ListView<https: docs.usebeagle.io="" v1.6="" api="" components="" layout="" listview=""></https:></a></li>
+    </ul></div>
+
+                    <b><label>IMPACTS IN</label>
+                        IOS/ANDROID/WEB<img class="plataform__icon" src="https://docs.usebeagle.io/shared/IOS.svg"><img class="plataform__icon" src="https://docs.usebeagle.io/shared/Android.svg"> <img class="plataform__icon" src="https://docs.usebeagle.io/shared/Web.svg">
+    <p></p><p></p>
+                    </b>
+                    <div><ul> <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://github.com/ZupIT/beagle/pull/1252"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Adds android test library<https: github.com="" zupit="" beagle="" pull="" 1252=""> </https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.6/resources/customization/beagle-for-android/proguard-configuration/"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Adds default settings to support proguard configuration<https: docs.usebeagle.io="" v1.6="" resources="" customization="" beagle-for-android="" proguard-configuration=""> </https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs-reference.usebeagle.io/android/"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Adds support to generate dokka documentation to hugo md files<https: docs-reference.usebeagle.io="" android=""> </https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.6/resources/customization/beagle-for-ios/loading-and-error-treatment/"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Adds default error view on IOS<https: docs.usebeagle.io="" v1.6="" resources="" customization="" beagle-for-ios="" loading-and-error-treatment=""> </https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.6/resources/customization/beagle-for-web/loading-components-and-error-treatment/"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Adds default error view on Web<https: docs.usebeagle.io="" v1.6="" resources="" customization="" beagle-for-web="" loading-components-and-error-treatment=""> </https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.6/get-started/using-beagle/web/react/"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Creates a script to initialize a React Beagle Project (yarn beagle init or npm run beagle init)<https: docs.usebeagle.io="" v1.6="" get-started="" using-beagle="" web="" react=""> </https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://github.com/ZupIT/beagle-web-core/releases/tag/v1.6.0"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Bugs fixed<https: github.com="" zupit="" beagle-web-core="" releases="" tag="" v1.6.0=""> </https:></a></li>
+    </ul></div>
+                    <div class="img_container">
+                        <img class="img_people" src="https://docs.usebeagle.io/shared/People.svg">
+                    </div>
+                    <footer style="margin-top: 10%; ">
+                        <p>Thanks.</p>
+                        <p>Team Beagle</p>
+                        <div style="display: flex; justify-content: space-between; padding-top: 30px;">
+                            <p>© 2020 Bealge.All rights reserved.</p>
+                            <p>Powered by ZupI.T.Innovation</p>
+                        </div>
+                    </footer>
                 </div>
-            </footer>
-</body>
-
+            </div>
+    </body>
 </html>
