@@ -100,11 +100,6 @@ offlineSearch = true
 prism_syntax_highlighting = false
 
 [[menu.main]]
-    name = "FAQ"
-    weight = 10
-    url = "https://docs.usebeagle.io/faq/"
-
-[[menu.main]]
     name = "References"
     weight = 20
     url = "https://docs-reference.usebeagle.io/"
