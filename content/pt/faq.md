@@ -2,6 +2,10 @@
 title: FAQ
 weight: 217
 toc_hide: true
+menu:
+  main:
+    name: FAQ
+    url: https://docs.usebeagle.io/pt/faq/
 description: >-
   Nesta seção, você encontra respostas para perguntas frequentes ou dúvidas
   sobre o Beagle.
