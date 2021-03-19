@@ -1,6 +1,5 @@
 ---
 title: FAQ
-weight: 217
 toc_hide: true
 menu:
   main:

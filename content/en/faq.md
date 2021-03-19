@@ -5,7 +5,8 @@ menu:
   main:
     name: FAQ
     url: https://docs.usebeagle.io/faq/
-description: Here, you'll find answers to frequently asked questions about Beagle.
+description: >- 
+  Here, you'll find answers to frequently asked questions about Beagle.
 ---
 
 ---
