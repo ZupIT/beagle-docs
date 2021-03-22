@@ -47,6 +47,11 @@ contentDir = "content/pt"
 time_format_default = "02/01/2006"
 time_format_blog = "02/01/2006"
 version_menu = "Versões"
+edit_page = "Editar essa página"
+create_page = "Criar nova página"
+create_issue = "Criar docs issue"
+create_beagle_issue = "Criar Beagle issue"
+search_label = "Procurando por algo?"
 
 [markup]
   [markup.goldmark]
@@ -68,6 +73,12 @@ privacy_policy = "https://insights.zup.com.br/politica-privacidade"
 playground_url = "https://playground.usebeagle.io/#/docs"
 logoName = "icons/beagle.svg"
 latest_path = ""
+search_label = "Looking for something?"
+
+edit_page = "Edit this page"
+create_page = "Create new page"
+create_issue = "Create docs issue"
+create_beagle_issue = "Create Beagle issue"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/ZupIT/docs-beagle"
@@ -87,11 +98,6 @@ offlineSearch = true
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
-
-[[menu.main]]
-    name = "FAQ"
-    weight = 10
-    url = "https://docs.usebeagle.io/faq/"
 
 [[menu.main]]
     name = "References"
