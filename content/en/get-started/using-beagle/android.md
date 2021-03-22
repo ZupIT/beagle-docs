@@ -92,7 +92,7 @@ You can set a Design System now, at this point it is not necessary, just proceed
 
 Now you have to initialize your `Application`, so Beagle can generate other configuration files that you need. When you initialize Beagle for the first time, a `BeagleSetup` class will be automatically created as you can see in the image below:
 
-![BeagleSetup file](/beaglesetup.png)
+![BeagleSetup file](/shared/beaglesetup.png)
 
 ### **Step 4: Create the Application class**
 
