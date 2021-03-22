@@ -1,7 +1,13 @@
 ---
 title: FAQ
 toc_hide: true
-description: 'Here, you''ll find answers to frequently asked questions about Beagle.'
+menu:
+  main:
+    name: FAQ
+    weight: 10
+    url: https://docs.usebeagle.io/faq/
+description: >-
+  Here, you'll find answers to frequently asked questions about Beagle.
 ---
 
 ---
