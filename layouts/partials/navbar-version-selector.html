@@ -11,9 +11,11 @@
 
 	const versions = JSON.parse(xhttp.responseText).map(e => { return e.tag_name.split(".", 2).join(".") });
 
+	const removeDuplicatedVersions = [...new Set(versions)]
+
 	const div = `<div class="dropdown-menu" aria-labelledby="navbarDropdown">`
 
-	const versionsList = versions.map((version) => {
+	const versionsList = removeDuplicatedVersions.map((version) => {
 		return `<a class="dropdown-item" href="https://docs.usebeagle.io/${version}/">${version}</a>`
 	})
 
