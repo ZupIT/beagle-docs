@@ -1,4 +1,4 @@
-baseURL = "https://docs.usebeagle.io/"
+baseURL = "https://docs.usebeagle.io"
 
 
 title = "Beagle"
@@ -52,7 +52,7 @@ create_page = "Criar nova página"
 create_issue = "Criar docs issue"
 create_beagle_issue = "Criar Beagle issue"
 search_label = "Procurando por algo?"
-faq_path = "pt/faq"
+faq_path = "/pt/faq"
 
 [markup]
   [markup.goldmark]
