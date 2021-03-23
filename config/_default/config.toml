@@ -52,6 +52,7 @@ create_page = "Criar nova página"
 create_issue = "Criar docs issue"
 create_beagle_issue = "Criar Beagle issue"
 search_label = "Procurando por algo?"
+faq_path = "pt/faq"
 
 [markup]
   [markup.goldmark]
@@ -74,6 +75,7 @@ playground_url = "https://playground.usebeagle.io/#/docs"
 logoName = "icons/beagle.svg"
 latest_path = ""
 search_label = "Looking for something?"
+faq_path = "/faq"
 
 edit_page = "Edit this page"
 create_page = "Create new page"
