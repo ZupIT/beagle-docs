@@ -52,6 +52,7 @@ create_page = "Criar nova página"
 create_issue = "Criar docs issue"
 create_beagle_issue = "Criar Beagle issue"
 search_label = "Procurando por algo?"
+faq_path = "/pt/faq"
 
 [markup]
   [markup.goldmark]
@@ -74,6 +75,7 @@ playground_url = "https://playground.usebeagle.io/#/docs"
 logoName = "icons/beagle.svg"
 latest_path = ""
 search_label = "Looking for something?"
+faq_path = "/faq"
 
 edit_page = "Edit this page"
 create_page = "Create new page"
@@ -130,7 +132,7 @@ yes = 'Glad to hear it! Please <a href="https://github.com/ZupIT/docs-beagle/iss
 no = 'Sorry to hear that. Please <a href="https://github.com/ZupIT/docs-beagle/issues/new">tell us how we can improve</a>.'
 
 # Adds a reading time to the top of each doc.
-# If you want this feature, but occasionally need to remove the Reading time from a single page, 
+# If you want this feature, but occasionally need to remove the Reading time from a single page,
 # add "hide_readingtime: true" to the page's front matter
 [params.ui.readingtime]
 enable = true
