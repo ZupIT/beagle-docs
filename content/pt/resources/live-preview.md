@@ -33,7 +33,7 @@ Você precisa que seu BFF esteja configurado com o Beagle para utilizar o Live P
 
 ### Instalação **do plugin IntelliJ**
 
-Para instalar o `BeaglePreview`, [_veja o Live Preview plugin para IntelliJ_](https://plugins.jetbrains.com/plugin/14575-beagle-sdk-live-preview") e clique na opção instalar na IDE.
+Para instalar o `BeaglePreview`, [_veja o Live Preview plugin para IntelliJ_](https://plugins.jetbrains.com/plugin/14575-beagle-sdk-live-preview) e clique na opção instalar na IDE.
 
 ## Uso do Live Preview
 

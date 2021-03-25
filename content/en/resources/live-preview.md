@@ -29,7 +29,7 @@ You must have a configured BFF with Beagle to use Live Preview. In case you have
 
 ### **IntelliJ plugin installation**
 
-To install `BeaglePreview`, [_See Live Preview plugin for IntelliJ_](https://plugins.jetbrains.com/plugin/14575-beagle-sdk-live-preview").
+To install `BeaglePreview`, [_See Live Preview plugin for IntelliJ_](https://plugins.jetbrains.com/plugin/14575-beagle-sdk-live-preview).
 
 ## Live Preview Use
 
