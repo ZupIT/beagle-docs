@@ -6,7 +6,7 @@ description: Page View components description and its attributes details
 
 ---
 
-## What is it?
+## What is itt?
 
 `PageView` component is a container that present pages that it will be horizontally displayed. They can be any server-driven object.
 
