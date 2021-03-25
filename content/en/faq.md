@@ -1,7 +1,8 @@
 ---
 title: FAQ
 toc_hide: true
-description: 'Here, you''ll find answers to frequently asked questions about Beagle.'
+description: >-
+  Here, you'll find answers to frequently asked questions about Beagle.
 ---
 
 ---

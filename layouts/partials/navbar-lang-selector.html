@@ -1,0 +1,21 @@
+{{/* Link directly to documentation etc., if possible. */}}
+{{ $langPage := cond (gt (len .Translations) 0) . .Site.Home }}
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	{{ $langPage.Language.LanguageName }}
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	{{ range $langPage.Translations }}
+	{{ $href := .RelPermalink }}
+	{{ if in .RelPermalink "/faq" }}
+	{{ $href = "https://docs.usebeagle.io/faq/" }} 
+	{{ end }}
+	{{ if in .RelPermalink "/pt/faq" }}
+		{{ $href = "https://docs.usebeagle.io/pt/faq/" }}
+	{{ end }}
+	<a 
+		class="dropdown-item" 
+		href="{{ $href }}" >
+		{{ .Language.LanguageName }}
+	</a>
+	{{ end }}
+</div>

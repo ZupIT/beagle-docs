@@ -76,49 +76,57 @@ No exemplo abaixo segue um PageView contendo três páginas onde cada uma delas 
 
 <!-- json-playground:pageView.json
 {
-   "_beagleComponent_":"beagle:container",
-   "children":[
-      {
-         "_beagleComponent_":"beagle:pageView",
-         "children":[
-            {
-               "_beagleComponent_":"beagle:text",
-               "text":"Page 1",
-               "alignment":"CENTER"
-            },
-            {
-               "_beagleComponent_":"beagle:text",
-               "text":"Page 2",
-               "alignment":"CENTER"
-            },
-            {
-               "_beagleComponent_":"beagle:text",
-               "text":"Page 3",
-               "alignment":"CENTER"
-            }
-         ],
-         "onPageChange":[
-            {
-               "_beagleAction_":"beagle:setContext",
-               "contextId":"context",
-               "value":"@{onPageChange}"
-            }
-         ],
-         "currentPage":"@{context}"
-      },
-      {
-         "_beagleComponent_":"beagle:pageIndicator",
-         "selectedColor":"#000000",
-         "unselectedColor":"#888888",
-         "numberOfPages":3,
-         "currentPage":"@{context}"
+    "_beagleComponent_" : "beagle:screenComponent",
+    "navigationBar" : {
+      "title" : "Beagle Button",
+      "showBackButton" : true,
+      "navigationBarItems" : [ {
+        "_beagleComponent_" : "beagle:navigationBarItem",
+        "text" : "",
+        "image" : {
+          "_beagleImagePath_" : "local",
+          "mobileId" : "informationImage"
+        },
+        "action" : {
+          "_beagleAction_" : "beagle:alert",
+          "title" : "Button",
+          "message" : "This is a widget that will define a button natively using the server driven information received through Beagle.",
+          "labelOk" : "OK"
+        }
+      } ]
+    },
+    "child" : {
+      "_beagleComponent_" : "beagle:container",
+      "children" : [ {
+        "_beagleComponent_" : "beagle:tabBar",
+        "items" : [ {
+          "title" : "Tab 1"
+        }, {
+          "title" : "Tab 2"
+        } ],
+        "styleId" : "TabBarStyle",
+        "onTabSelection" : [ {
+          "_beagleAction_" : "beagle:setContext",
+          "contextId" : "contestTabId",
+          "value" : "@{onTabSelection}"
+        } ]
+      }, {
+        "_beagleComponent_" : "beagle:pageView",
+        "children" : [ {
+          "_beagleComponent_" : "beagle:text",
+          "text" : "Tab 1"
+        }, {
+          "_beagleComponent_" : "beagle:text",
+          "text" : "Tab 2"
+        } ],
+        "currentPage" : "@{contestTabid}"
+      } ],
+      "context" : {
+        "id" : "contestTabid",
+        "value" : 0
       }
-   ],
-   "context":{
-      "id":"context",
-      "value":0
-   }
-}
+    }
+  }
 -->
 
 {{% playground file="pageView.json" language="pt" %}}
@@ -127,30 +135,42 @@ No exemplo abaixo segue um PageView contendo três páginas onde cada uma delas 
 {{% tab name="Kotlin DSL" %}}
 
 ```kotlin
-Container(
-    children = listOf(
-        PageView(
-            children = (1..3).map {
-                Text(
-                    text = "Page $it",
-                    alignment = TextAlignment.CENTER
+Screen(
+        child = Container(
+            context = ContextData("currentTab", 0),
+            children = listOf(
+                TabBar(
+                    onTabSelection = listOf(
+                        SetContext(
+                            "currentTab",
+                            "@{onTabSelection}"
+                        )
+                    ),
+                    currentTab = expressionOf("@{currentTab}"),
+                    items = listOf(
+                        TabBarItem("Tab 1"),
+                        TabBarItem("Tab 2")
+                    ),
+                    styleId = "TabBarStyle"
+                ),
+                PageView(
+                    currentPage = expressionOf("@{currentTab}"),
+                    onPageChange = listOf(SetContext(
+                        "currentTab",
+                        "@{onPageChange}"
+                    )),
+                    children = listOf(
+                        Text(
+                            "Tab 1"
+                        ),
+                        Text(
+                            "Tab 2"
+                        )
+                    )
                 )
-            },
-            onPageChange = listOf(SetContext("context", "@{onPageChange}")),
-            currentPage = expressionOf("@{context}")
-        ),
-        PageIndicator(
-            numberOfPages = 3,
-            selectedColor = "#000",
-            unselectedColor = "#CCC",
-            currentPage = expressionOf("@{context}")
+            )
         )
-    ),
-    context = ContextData(
-        id = "context",
-        value = 0
     )
-)
 ```
 
 {{% /tab %}}

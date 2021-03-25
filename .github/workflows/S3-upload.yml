@@ -48,10 +48,10 @@ jobs:
         run: echo "::set-output name=branch_version::$(echo $GITHUB_REF | sed 's/refs\/heads\/release-//g' )"
         shell: bash
 
-      - name: Config latest path for release notes
+      - name: Config version path
         working-directory: config/_default
         shell: bash
-        run: sed -i -E "s/latest_path = .*/latest_path = \"\/$VERSION\"/g" config.toml
+        run: sed -i -E "s/version_path = .*/version_path = \"\/$VERSION\"/g" config.toml
         env:
           VERSION: ${{ steps.version.outputs.branch_version }}
 
@@ -61,13 +61,7 @@ jobs:
           BASE_URL: https://docs.usebeagle.io
           VERSION: ${{ steps.version.outputs.branch_version }}
 
-      - name: Unversioning FAQ
-        run: aws s3 sync --acl public-read --follow-symlinks public/faq s3://$AWS_S3_BUCKET/faq/ --delete
-
-      - name: Unversioning Portuguese FAQ
-        run: aws s3 sync --acl public-read --follow-symlinks public/pt/faq s3://$AWS_S3_BUCKET/pt/faq --delete
-
-      - name: remove FAQ from versions
+      - name: remove FAQ
         shell: bash
         working-directory: public
         run: rm -rf faq & rm -rf pt/faq
