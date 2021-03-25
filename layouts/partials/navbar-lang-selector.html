@@ -6,10 +6,12 @@
 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 	{{ range $langPage.Translations }}
 	{{ $href := .RelPermalink }}
-	{{ if eq .RelPermalink "/faq/" }}
+	{{ $en_faq := printf "%s/faq/" $.Site.Params.version_path }}
+	{{ $pt_faq := printf "%s/pt/faq/" $.Site.Params.version_path }}
+	{{ if eq .RelPermalink $en_faq }}
 		{{ $href = "https://docs.usebeagle.io/faq/" }}
-	{{ end }} 
-	{{ if eq .RelPermalink "/pt/faq/" }}
+	{{ end }}
+	{{ if eq .RelPermalink $pt_faq }}
 		{{ $href = "https://docs.usebeagle.io/pt/faq/" }} 
 	{{ end }}
 	<a 
