@@ -51,7 +51,7 @@ jobs:
       - name: Config latest path for release notes
         working-directory: config/_default
         shell: bash
-        run: sed -i -E "s/latest_path = .*/latest_path = \"\/$VERSION\"/g" config.toml
+        run: sed -i -E "s/latest_path = .*/version_path = \"\/$VERSION\"/g" config.toml
         env:
           VERSION: ${{ steps.version.outputs.branch_version }}
 
