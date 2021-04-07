@@ -49,8 +49,7 @@ pod 'YogaKit', :git => 'https://github.com/ZupIT/YogaKit'
 
 BeagleScaffold has default implementations of a Network layer, Cache and Logger for you, embedded in [BeagleDefaults](https://docs.usebeagle.io/get-started/using-beagle-helpers/ios/beagle-defaults).
 
-
-**Step 4**: To add Beagle configurations to your application, import `BeagleScaffold` and call our function named `start()` from the class `BeagleConfig`, in your `SceneDelegate` inside the method `scene()`:
+**Step 4**: To add Beagle configurations to your application, import the lib `BeagleScaffold` and just call our function named `start()` from the class `BeagleConfig`, in your `SceneDelegate` inside the method `scene()`:
 
 ```swift
 func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
