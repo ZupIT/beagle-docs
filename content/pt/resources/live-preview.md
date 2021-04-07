@@ -92,7 +92,7 @@ Uma vez configurado o seu backend, o próximo passo é configurar o emulador no 
 
 Para realizar a instalação, seu arquivo de `gradle` deve conter o fragmento abaixo:
 
-A versão atual do Beagle :[![https://img.shields.io/bintray/v/zupit/repo/beagle](https://img.shields.io/bintray/v/zupit/repo/beagle](https://raster.shields.io/bintray/v/zupit/repo/beagle)]()
+A versão atual do Beagle: ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?color=green&label=Beagle)
 
 ```kotlin
 // Add in your plugins
