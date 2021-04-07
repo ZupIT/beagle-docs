@@ -142,7 +142,7 @@ Insert the Beagle's release version on the place of`${beagle.version}`, in other
 
 For example:
 
-![](https://img.shields.io/badge/beagle-v1.5.1-green)-`ext.beagle.version = "1.0.2"`
+![](https://img.shields.io/badge/beagle-v1.5.1-green)-`ext.beagle.version = "1.5.1"`
 
 {{% alert color="warning" %}}
 Remember to always check if you're using the latest version of Beagle. To see this information, you just have to pass your mouse above the version number. After that, sync your machine.
