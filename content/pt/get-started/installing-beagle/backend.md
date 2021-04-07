@@ -20,7 +20,6 @@ Antes de integrar o Beagle à sua aplicação para rodá-lo no backend, é impor
 
 - **JDK 8+ language \(Kotlin 1.3+ é recomendado\)**
 - **Maven 3+**
-- **Jackson 2+**
 
 Se você já tiver atualizado todos estes programas, basta seguir as instruções abaixo.
 
@@ -67,7 +66,7 @@ Caso queira adotar o Micronaut 2.0, pode usar o novo site de construção de pro
 
 - Clique no link a seguir para baixar um zip do projeto com as opções da imagem abaixo: [**Micronaut Launch para Beagle Micronaut Starter**](https://launch.micronaut.io/create/DEFAULT/com.example.bff?lang=kotlin&build=maven&test=junit&javaVersion=JDK_8).
 
-![Micronaut Launch com as configurações recomendadas para o iniciar o projeto do Beagle com o Micronaut](/image%20%28108%29.png)
+![Micronaut Launch com as configurações recomendadas para o iniciar o projeto do Beagle com o Micronaut](/shared/image%20%28108%29.png)
 
 - Essa configuração inicial utiliza:
   - Kotlin com Maven para`Java 8 (compatível com essa versão);`
@@ -83,7 +82,7 @@ Neste caso, usaremos o site do Spring para gerar um projeto com o microsserviço
 
 - Clique no link a seguir e você verá a página abaixo: [Spring Initializer for Beagle Spring Starter](https://start.spring.io/#!type=maven-project&language=kotlin&packaging=jar&jvmVersion=1.8&groupId=com.example&artifactId=bff&name=bff&description=Demo%20project%20for%20Beagle%20BFF%20using%20Spring%20Boot&packageName=com.example.bff&dependencies=actuator)
 
-![Spring Initializer com as configurações recomendadas para o iniciar o projeto do Beagle com o Spring](/image%20%288%29.png)
+![Spring Initializer com as configurações recomendadas para o iniciar o projeto do Beagle com o Spring](/shared/image%20%288%29.png)
 
 - Essa configuração inicial utiliza:
   - Kotlin com Maven;
@@ -94,20 +93,7 @@ Neste caso, usaremos o site do Spring para gerar um projeto com o microsserviço
   {{% /tab %}}
   {{< /tabs >}}
 
-### Passo 2: Configurar as dependências \(&lt; 1.1.0\)
-
-Uma vez criado e configurado os microsserviços, você precisa adicionar o endereço do nosso `nexus`. Para isso, basta adicionar o código abaixo no seu arquivo `pom.xml`:
-
-```markup
-<repositories>
-    <repository>
-        <id>bintray-zupit-repo</id>
-        <url>https://dl.bintray.com/zupit/repo</url>
-    </repository>
-</repositories>
-```
-
-### Passo 3: Incluir requerimentos adicionais
+### Passo 2: Incluir requerimentos adicionais
 
 Por último, você precisa complementar algumas configurações em nosso backend. Neste caso, o framework que você tiver escolhido é que irá definir como deve ser feita a implementação.
 
@@ -165,7 +151,7 @@ Para seguir com esse requerimento, basta adicionar o arquivo pom à sua dependê
 
 Insira a versão de release do Beagle no lugar de `${beagle.version}`. Ou seja, coloque a versão do Beagle destacada em azul da `badge` acima, mas sem o **`caracter v`** que antecede os números de versão.
 
-Por exemplo:![https://img.shields.io/bintray/v/zupit/repo/beagle](/image%20%28107%29.png)-`ext.beagle.version = "1.0.0"`
+Por exemplo:![](https://img.shields.io/badge/beagle-v1.5.1-green)-`ext.beagle.version = "1.5.1"`
 
 {{% alert color="warning" %}}
 Lembre de sempre verificar se você está usando a versão mais recente do Beagle. Para saber disso, basta passar o mouse por cima do número da versão. Depois disso, sincronize com sua máquina.
