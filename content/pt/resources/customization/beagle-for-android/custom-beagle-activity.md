@@ -104,7 +104,7 @@ override fun getToolbar(): Toolbar = findViewById<Toolbar>(R.id.toolbar)
 
 ### 3. Tratamento de erros
 
-Você pode observar os estados e tratar os erros a partir do [`onServerDrivenContainerStateChanged()`]({{< ref path="/resources/customization/beagle-for-android/loading-and-errors-treatment" lang="pt" >}})
+Você pode observar os estados de uma server-driven activity e tratar os erros a partir da função [`onServerDrivenContainerStateChanged()`]({{< ref path="/resources/customization/beagle-for-android/loading-and-errors-treatment" lang="pt" >}}). Esssa função tem como parametro o estado da server-driven activity, e quando ocorre algum erro no carregamento da activity, o estado `ServerDrivenState.Error` é recebido por essa função.
 
 ```kotlin
 override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {
@@ -116,13 +116,18 @@ override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {
 
 ### 4. ProgressBar
 
-Da mesma forma que os erros, você consegue observar se o estado do container server-driven está em loading pelo ProgressBar. Veja como no trecho de código a seguir:
+Like  you handled errors, you can check if the server-driven container status is `Started` or` Finished` and thus define the visibility of a *ProgressBar*. When the activity loading starts, the `onServerDrivenContainerStateChanged` function receives the` ServerDrivenState.Started` parameter (which represents the activity status). Likewise, when the loading ends without errors, the `ServerDrivenState.Finished` parameter is received. You can check below how we can use these two states to change the progress bar visibility.
 
 ```kotlin
 override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {
-     if (state is ServerDrivenState.Loading) {
-           progressBar.visibility = if (state.loading) View.VISIBLE else View.GONE
-     }
+    when (state) {
+        is ServerDrivenState.Started -> {
+            progressBar.visibility = View.VISIBLE
+        }
+
+        is ServerDrivenState.Finished -> {
+            progressBar.visibility = View.GONE
+        }
 }
 ```
 

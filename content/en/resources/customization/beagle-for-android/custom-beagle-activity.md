@@ -110,6 +110,8 @@ override fun getToolbar(): Toolbar = findViewById<Toolbar>(R.id.toolbar)
 
 You can watch the state and treat the errors from **`onServerDrivenContainerStateChanged()`**
 
+You can observe a server-driven activity status and handle errors using the function [`onServerDrivenContainerStateChanged()`]({{< ref path="/resources/customization/beagle-for-android/loading-and-errors-treatment" lang="pt" >}}). This function has as parameter that indicates the status of a server-driven activity, and when any error occurs, the state `ServerDrivenState.Error` will be received at this function.
+
 ```kotlin
 override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {
      if (state is ServerDrivenState.Error) {
@@ -120,13 +122,19 @@ override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {
 
 ### 4. ProgressBar
 
-The same way that happens with error, you can handle if the server-driven container status is loading.
+You can handle the progress bar visibility checking if the server-driven container status is `Started` or `Finished` in the same way you deal with errors. Check the example below
+
 
 ```kotlin
 override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {
-     if (state is ServerDrivenState.Loading) {
-           progressBar.visibility = if (state.loading) View.VISIBLE else View.GONE
-     } 
+    when (state) {
+        is ServerDrivenState.Started -> {
+            progressBar.visibility = View.VISIBLE
+        }
+
+        is ServerDrivenState.Finished -> {
+            progressBar.visibility = View.GONE
+        }
 }
 ```
 
