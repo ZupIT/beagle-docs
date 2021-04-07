@@ -122,8 +122,7 @@ override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {
 
 ### 4. ProgressBar
 
-You can handle the progress bar visibility checking if the server-driven container status is `Started` or `Finished` in the same way you deal with errors. Check the example below
-
+Like  you handled errors, you can check if the server-driven container status is `Started` or` Finished` and thus define the visibility of a *ProgressBar*. When the activity loading starts, the `onServerDrivenContainerStateChanged` function receives the` ServerDrivenState.Started` parameter (which represents the activity status). Likewise, when the loading ends without errors, the `ServerDrivenState.Finished` parameter is received. You can check below how we can use these two states to change the progress bar visibility.
 
 ```kotlin
 override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {
