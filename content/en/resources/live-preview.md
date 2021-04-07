@@ -83,7 +83,7 @@ Once you have configured your backend, the next step is to configure the fronten
 
 To make this installation, your `gradle` file must contain the following fragment:
 
-The latest Beagle's version:[![https://img.shields.io/bintray/v/zupit/repo/beagle](https://img.shields.io/bintray/v/zupit/repo/beagle](https://raster.shields.io/bintray/v/zupit/repo/beagle)]()
+The latest Beagle's version: ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?color=green&label=Beagle)
 
 ```kotlin
 // Add in your plugins
