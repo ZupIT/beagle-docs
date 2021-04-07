@@ -50,7 +50,7 @@ pod 'YogaKit', :git => 'https://github.com/ZupIT/YogaKit'
 
 O Beagle Scaffold possui implementações padrão de uma camada de Rede, Cache e Log para você, acopladas na lib [BeagleDefaults](https://docs.usebeagle.io/get-started/using-beagle-helpers/ios/beagle-defaults).
 
-**Passo 4**: Para adicionar as configurações do Beagle na sua aplicação, chame a nossa função _start()_ da classe _BeagleConfig_, no método `scene` da classe **SceneDelegate**:
+**Passo 4**: Para adicionar as configurações do Beagle na sua aplicação, importe o `BeagleScaffold` e chame a nossa função _start()_ da classe _BeagleConfig_, no método `scene` da classe **SceneDelegate**:
 
 ```swift
 func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -72,8 +72,6 @@ Inicialize a variável `window` passando o `windowScene`.
 ```swift
 window = UIWindow(windowScene: windowScene)
 ```
-
-Importe o `BeagleScaffold`.
 
 Atribua o nosso `BeagleScaffoldDemoViewController` ao `window.rootViewController` e chame a função `makeKeyAndVisible()`. Seu código deveria estar assim:
 
