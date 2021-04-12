@@ -74,7 +74,9 @@ privacy_policy = "https://insights.zup.com.br/politica-privacidade"
 playground_url = "https://playground.usebeagle.io/#/docs"
 logoName = "icons/beagle.svg"
 search_label = "Looking for something?"
+current_version = ""
 version_path = ""
+isDocumentationDeprecated = false
 faq_path = "/faq"
 
 edit_page = "Edit this page"
