@@ -1,5 +1,5 @@
 ---
-title: Widget Customizado com Serverdrivencomponent
+title: Widget Customizado com ServerDrivenComponent
 weight: 135
 description: Criando um widget customizado com ServerDrivenComponent
 ---

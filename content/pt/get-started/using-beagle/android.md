@@ -24,7 +24,7 @@ Feita a atualização, você precisa criar uma classe `BeagleConfig` e configura
 @BeagleComponent
 class AppBeagleConfig : BeagleConfig {
     override val environment: Environment get() = Environment.DEBUG
-    override val baseUrl: String get() = "https://myapp.server.com/"
+    override val baseUrl: String get() = "https://myapp.server.com"
     override val isLoggingEnabled: Boolean = true
     override val cache: Cache = Cache(
         enabled = false,

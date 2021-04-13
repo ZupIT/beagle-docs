@@ -1,5 +1,5 @@
 ---
-title: Serverdrivencomponent Custom Widget
+title: ServerDrivenComponent Custom Widget
 weight: 119
 description: Creating a custom widget with ServerDrivenComponent
 ---

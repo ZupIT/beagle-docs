@@ -112,7 +112,7 @@ Este starter configura a versão do **módulo micronaut-runtime** com ele e util
 
 ### Configuração Maven
 
-Para seguir com esse requerimento, basta adicionar arquivo pom à sua dependência.
+Para seguir com esse requerimento, adicione ao seu arquivo `pom.xml` a dependência abaixo.
 
 ```markup
 <dependency>
@@ -124,7 +124,7 @@ Para seguir com esse requerimento, basta adicionar arquivo pom à sua dependênc
 
 ### Configuração Gradle
 
-Para projetos configurados com Gradle, basta adicionar a dependencia do starter em seu arquivo `build.gradle` ou `build.gradle.kts`.
+Para projetos configurados com Gradle, adicione a dependência do starter em seu arquivo `build.gradle` ou `build.gradle.kts`.
 
 ```kotlin
 dependencies {
@@ -153,7 +153,7 @@ Este starter configura a versão do **módulo spring-boot-starter-web** com ele 
 
 ### Configuração Maven
 
-Para seguir com esse requerimento, basta adicionar arquivo pom à sua dependência.
+Para seguir com esse requerimento, adicione ao seu arquivo `pom.xml` a dependência abaixo.
 
 ```markup
 <dependency>
@@ -165,7 +165,7 @@ Para seguir com esse requerimento, basta adicionar arquivo pom à sua dependênc
 
 ### Configuração Gradle
 
-Para projetos configurados com Gradle, basta adicionar a dependencia do starter em seu arquivo `build.gradle` ou `build.gradle.kts`.
+Para projetos configurados com Gradle, adicione a dependência do starter em seu arquivo `build.gradle` ou `build.gradle.kts`.
 
 ```kotlin
 dependencies {
