@@ -18,7 +18,8 @@ Isso possibilita personalizar, por exemplo:
 
 - Aparência dos textos
 - Estilo dos botões
-- TabView
+- Estilizar o componente TabBar
+- Estilizar o componente Container
 
 É importante deixar claro que o Beagle para iOS não mapeia todos os atributos destes componentes, porém os mais já estão mapeados e, portanto, podem ser modificados se necessário.
 
@@ -33,7 +34,9 @@ Outro ponto importante é o dos estilos criados no iOS e vinculados a componente
 
     Styles.customButton.key    : Styles.customButton.style,
     Styles.customText.key      : Styles.customText.style,
-    Styles.customTab.key      : Styles.customTab.style
+    Styles.customTab.key      : Styles.customTab.style,
+    Style.customContainer.key : Styles.customContainer.style,
+    Style.customTextInput.key : Styles.customTextInput.style
     ])
 
     dependencies.theme = theme
@@ -50,7 +53,8 @@ class Styles {
     static let customText = StylePair(key: "CustomText", style: customText)
     static let customButton = StylePair(key: "CustomButton", style: customButton)
     static let customTab = StylePair(key: "CustomTab", style: customTab)
-
+    static let customContainer =  StylePair(key: "CustomContainer", style: customContainer)
+    static let customTextInput = StylePair(key: "CustomTextInput", style: customTextInput)
 }
 ```
 
@@ -83,17 +87,54 @@ static func defaultStylishButton() -> (UIButton?) -> Void {
 }
 ```
 
-### TabView
+### TabBar
 
 O componente TabView no Beagle iOS pode ser estilizado com os seguintes atributos:
 
-1. **backGroundColor**: atribui uma cor diferente ao background da aba selecionada.
-2. **indicatorColor**: atribui uma cor ao background selecionado.
+1. **backgroundColor**: atribui uma cor ao background selecionado.
+2. **indicatorColor**: atribui uma cor diferente ao indicador da aba selecionada.
+3. **selectedTextColor**: atribui uma cor ao texto da tab selecionada.
+4. **unselectedTextColor**: atribui uma cor ao texto de uma tab não selecionada.
+5. **selectedIconColor**: atribui uma cor ao ícone da tab selecionada.
+6. **unselectedIconColor**: atribui uma cor ao ícone de uma tab não selecionada.
 
 ```swift
 static func customTab() -> (UIView?) -> Void {
         return BeagleStyle
-                .tabView(backgroundColor: .blue,
+                .tabBar(backgroundColor: .blue, 
                         indicatorColor: .white)
+    }
+```
+
+### Container
+
+O componente TabView no Beagle iOS pode ser estilizado de várias formas. Abaixo têm-se um exemplo de um container que possui uma imagem como background.
+
+```swift
+static func customContainer() -> (UIView?) -> Void {
+        return {
+            guard let container = $0 else { return }
+            UIGraphicsBeginImageContext(CGSize(width: 100, height: 100))
+            UIImage(named: "image")?.draw(in: CGRect(x: 0, y: 0, width: 100, height: 100))
+            guard let image = UIGraphicsGetImageFromCurrentImageContext() else { return }
+            UIGraphicsEndImageContext()
+            container.backgroundColor = UIColor(patternImage: image)
+        }
+    }
+```
+
+### TextInput
+
+O componente TextInput no Beagle iOS pode ser estilizado com os seguintes atributos:
+
+1. **validInputColor**: atribui uma cor à borda do textInput dada uma entrada válida.
+2. **invalidInputColor**: atribui uma cor à borda do textInput dada uma entrada inválida.
+3. **borderStyle**: atribui um estilo à borda do textInput.
+4. **borderWidth**: atribui uma largura à borda do textInput.
+5. **cornerRadius**: atribui cornerRadiud à borda do textInput.
+
+```swift
+    static func customTextInput() -> (UITextField?) -> Void {
+        return BeagleStyle.textInput(validInputColor: .gray, invalidInputColor: .red, borderStyle: .roundedRect, borderWidth: 1)
     }
 ```
