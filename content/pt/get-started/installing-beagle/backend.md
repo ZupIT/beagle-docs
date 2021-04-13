@@ -108,9 +108,11 @@ Clique na opção de Framework que você escolheu anteriormente e siga os passos
 Este starter configura a versão do **módulo micronaut-runtime** com ele e utiliza a versão **Micronaut 2.0.0.**
 {{% /alert %}}
 
-Para seguir com esse requerimento, basta adicionar arquivo pom à sua dependência.
+- Versão atual do Beagle: [![back](https://camo.githubusercontent.com/27998a386042ecb2cae7b9f09ae159bd07c935bd/68747470733a2f2f696d672e736869656c64732e696f2f6d6176656e2d63656e7472616c2f762f62722e636f6d2e7a75702e626561676c652f6672616d65776f726b)](https://mvnrepository.com/artifact/br.com.zup.beagle/framework)
 
-- Versão atual do Beagle:[![back](https://camo.githubusercontent.com/27998a386042ecb2cae7b9f09ae159bd07c935bd/68747470733a2f2f696d672e736869656c64732e696f2f6d6176656e2d63656e7472616c2f762f62722e636f6d2e7a75702e626561676c652f6672616d65776f726b)](https://mvnrepository.com/artifact/br.com.zup.beagle/framework)
+### Configuração Maven
+
+Para seguir com esse requerimento, basta adicionar arquivo pom à sua dependência.
 
 ```markup
 <dependency>
@@ -118,6 +120,16 @@ Para seguir com esse requerimento, basta adicionar arquivo pom à sua dependênc
 	<artifactId>beagle-micronaut-starter</artifactId>
 	<version>${beagle.version}</version>
 </dependency>
+```
+
+### Configuração Gradle
+
+Para projetos configurados com Gradle, basta adicionar a dependencia do starter em seu arquivo `build.gradle` ou `build.gradle.kts`.
+
+```kotlin
+dependencies {
+  implementation("br.com.zup.beagle:beagle-micronaut-starter:${beagle.version}")
+}
 ```
 
 Insira a versão de release do Beagle no lugar de `${beagle.version}`. Ou seja, coloque a versão do Beagle destacada em azul da `badge` acima, mas sem o **`caracter v`** que antecede os números de versão.
@@ -137,16 +149,28 @@ Lembre de sempre verificar se você está usando a versão mais recente do Beagl
 Este starter configura a versão do **módulo spring-boot-starter-web** com ele e utiliza a versão **Spring Boot 2.3.1.**
 {{% /alert %}}
 
-Para seguir com esse requerimento, basta adicionar o arquivo pom à sua dependência.
+- Versão atual do Beagle: [![back](https://camo.githubusercontent.com/27998a386042ecb2cae7b9f09ae159bd07c935bd/68747470733a2f2f696d672e736869656c64732e696f2f6d6176656e2d63656e7472616c2f762f62722e636f6d2e7a75702e626561676c652f6672616d65776f726b)](https://mvnrepository.com/artifact/br.com.zup.beagle/framework)
 
-- Versão atual do Beagle:[![back](https://camo.githubusercontent.com/27998a386042ecb2cae7b9f09ae159bd07c935bd/68747470733a2f2f696d672e736869656c64732e696f2f6d6176656e2d63656e7472616c2f762f62722e636f6d2e7a75702e626561676c652f6672616d65776f726b)](https://mvnrepository.com/artifact/br.com.zup.beagle/framework)
+### Configuração Maven
+
+Para seguir com esse requerimento, basta adicionar arquivo pom à sua dependência.
 
 ```markup
 <dependency>
 	<groupId>br.com.zup.beagle</groupId>
 	<artifactId>beagle-spring-starter</artifactId>
-	<version>${beagle_version}</version>
+	<version>${beagle.version}</version>
 </dependency>
+```
+
+### Configuração Gradle
+
+Para projetos configurados com Gradle, basta adicionar a dependencia do starter em seu arquivo `build.gradle` ou `build.gradle.kts`.
+
+```kotlin
+dependencies {
+  implementation("br.com.zup.beagle:beagle-spring-starter:${beagle.version}")
+}
 ```
 
 Insira a versão de release do Beagle no lugar de `${beagle.version}`. Ou seja, coloque a versão do Beagle destacada em azul da `badge` acima, mas sem o **`caracter v`** que antecede os números de versão.

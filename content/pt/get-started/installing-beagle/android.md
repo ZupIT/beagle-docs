@@ -54,7 +54,7 @@ A configuração acima deve ser adicionada em `allprojects{}`
 
 Uma vez feita a primeira configuração, agora você precisa incluir o plugin do kapt e do Beagle como dependências dentro do seu gerenciador de dependências, segue abaixo as duas apção de adicionar o plugin.
 
-A versão atual do Beagle[![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android)](https://mvnrepository.com/artifact/br.com.zup.beagle/android)
+A versão atual do Beagle é: [![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android)](https://mvnrepository.com/artifact/br.com.zup.beagle/android)
 
 {{< tabs name="T200" >}}
 {{% tab name="apply plugin" %}}
@@ -82,9 +82,8 @@ dependencies {
 
 ```kotlin
 plugins {
-		id 'kotlin-kapt'
-	}
-
+	id 'kotlin-kapt'
+}
 
 android {
     kotlinOptions {
