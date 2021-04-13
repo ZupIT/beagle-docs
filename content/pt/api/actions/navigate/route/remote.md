@@ -47,6 +47,12 @@ A sua estrutura é representada como mostrado abaixo:
       <td style="text-align:center"></td>
       <td style="text-align:left">Tela a ser retornada caso o carregamento falhe.</td>
     </tr>
+    <tr>
+      <td style="text-align:left">httpAdditionalData</td>
+      <td style="text-align:left">HttpAdditionalData</td>
+      <td style="text-align:center"></td>
+      <td style="text-align:left">Pode ser usada em ações de navegações para passar dados HTTP adicionais em requisições acionadas pelo Beagle.</td>
+    </tr>
   </tbody>
 </table>
 
@@ -63,7 +69,12 @@ A sua estrutura é representada como mostrado abaixo:
       "_beagleAction_": "beagle:pushView",
       "route": {
         "url": "confirm.json",
-        "shouldPrefetch": false
+        "shouldPrefetch": false,
+        "httpAdditionalData": {
+            "headers": {
+                "test": "test"
+            }
+        }
       }
     }
   ]
@@ -77,7 +88,7 @@ A sua estrutura é representada como mostrado abaixo:
 Button(
     onPress = listOf(
         Navigate.PushView(
-            Route.Remote("confirm.json")
+            Route.Remote("confirm.json", httpAdditionalData = HttpAdditionalData(headers = mapOf("test" to "test")))
          )
     ),
     text = "Click me!"

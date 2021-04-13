@@ -7,7 +7,7 @@ weight: 268
 
 ## What is it?
 
-Navigation for remote content. 
+Navigation for remote content.
 
 The structure is represented by the attributes below:
 
@@ -42,9 +42,14 @@ The structure is represented by the attributes below:
     <tr>
       <td style="text-align:left">fallback</td>
       <td style="text-align:left"><a href="https://docs.usebeagle.io/v/v1.0-en/api/screen"><strong>Screen</strong></a></td>
-      <td
-      style="text-align:left"></td>
-        <td style="text-align:left">Screen to be returned in case the loading fails.</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Screen to be returned in case the loading fails.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">httpAdditionalData</td>
+      <td style="text-align:left">HttpAdditionalData</td>
+      <td style="text-align:center"></td>
+      <td style="text-align:left">Can be used on navigate actions to pass additional http data on requests triggered by Beagle.</td>
     </tr>
   </tbody>
 </table>
@@ -62,7 +67,12 @@ The structure is represented by the attributes below:
       "_beagleAction_": "beagle:pushView",
       "route": {
         "url": "confirm.json",
-        "shouldPrefetch": false
+        "shouldPrefetch": false,
+        "httpAdditionalData": {
+            "headers": {
+                "test": "test"
+            }
+        }
       }
     }
   ]
@@ -76,7 +86,7 @@ The structure is represented by the attributes below:
 Button(
     onPress = listOf(
         Navigate.PushView(
-            Route.Remote("/present/view")
+            Route.Remote("/present/view", httpAdditionalData = HttpAdditionalData(headers = mapOf("test" to "test")))
          )
     ),
     text = "Click me!"
