@@ -17,7 +17,7 @@ You also must have Hugo installed in your machine. Please, check
 
 Then run:
 
-`npm run start`. If you're getting a fatal error: Pipe failed, run: `npm run start --watch=false`.
+`npm run start`. If you're getting a fatal error: Pipe failed, run: `npm run start --watch=false` or apply [these settings](https://github.com/google/docsy-example/issues/89#issuecomment-758311888).
 
 npm run start - By default, this command will run the project in development mode. If you want to change the environment use, then run `npm run start --environment=production.`
 
