@@ -1,5 +1,5 @@
 node_modules/
-package-lock.jsons
+package-lock.json
 yarn-error.log
 /static/playground/
 /resources/_gen/

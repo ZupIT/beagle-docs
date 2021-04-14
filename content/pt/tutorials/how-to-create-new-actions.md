@@ -25,7 +25,7 @@ O exemplo abaixo mostra um ação com **Toast**:
 data class CustomAction(
 val msg: String? = null
 ) : Action {
-    override fun execute(rootView: RootView) {
+    override fun execute(rootView: RootView, origin: View) {
         Toast.makeText(
             rootView.getContext(),
             msg,
@@ -51,7 +51,7 @@ class CustomAction: Action {
         self.msg = msg
     }
 
-    func execute(controller: BeagleController, sender: Any) {
+    func execute(controller: BeagleController, origin: UIView) {
         let alert = UIAlertController(
         title: nil,
         message: msg,
