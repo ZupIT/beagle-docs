@@ -8,7 +8,7 @@ This lib will hold almost all necessary configuration to add Beagle into an Andr
 ---
 
 
-![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-scaffold?color=green&label=beagle-scaffod)
+![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-scaffold?color=green&label=Beagle-Scaffold)
 ![**Maven Central**](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?label=Beagle)
 
 ### Requirements
@@ -39,7 +39,7 @@ allprojects {
 ```
 #### Step 2: Add kotlin kapt plugin and 3 dependencies on your application dependency manager (gradle.gradle)<br>
 
- ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-scaffold?color=green&label=beagle-scaffod)
+ ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-scaffold?color=green&label=Beagle-Scaffold)
  ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?label=Beagle)                                                                   
 
 * Add the packagingOptions code block to the build.gradle file, as in the example below.
