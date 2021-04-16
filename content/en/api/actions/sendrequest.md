@@ -19,13 +19,17 @@ The Send Request structure is:
 | method | RequestActionMethod or [**Binding**]({{< ref path="/api/context#bindings" lang="en" >}}) | ✓ | HTTP method. |
 | headers | Map &lt;String, String&gt; or [**Binding**]({{< ref path="/api/context#bindings" lang="en" >}}) |   | Header items for the request. |
 | data | Any |   | Content that will be deliver with the request. |
-| onSuccess | List&lt;[**Action**]({{< ref path="/api/actions" lang="en" >}})&gt; |   | Success action. |
-| onError | List&lt;[**Action**]({{< ref path="/api/actions" lang="en" >}})&gt; |   | Error action. |
-| onFinish | List&lt;[**Action**]({{< ref path="/api/actions" lang="en" >}})&gt; |   | Finish action. |
+| onSuccess | List&lt;[**Action**]({{< ref path="/api/actions" lang="en" >}})&gt; |   | Triggers a Success action or list of actions. |
+| onError | List&lt;[**Action**]({{< ref path="/api/actions" lang="en" >}})&gt; |   | Triggers an Error action or list of actions. |
+| onFinish | List&lt;[**Action**]({{< ref path="/api/actions" lang="en" >}})&gt; |   | Triggers a Finish action or list of actions. |
 
 ## How to use it?
 
-See below an example of a button that send a `POST` request with data user:
+{{% alert color="warning" %}}
+**Getting the response data:** This component triggers onSuccess or onError actions on a response. You can access the response package information by using the [implicit context](/api/context/overview/#2-implicit-context) "@{onSuccess.data}" on a success and the "@{onError.data}" on an error response.
+{{% /alert %}}
+
+The example below shows a button that triggers a `POST` request with some user data:
 
 {{< tabs id="T109" >}}
 {{% tab name="JSON" %}}
@@ -54,14 +58,14 @@ See below an example of a button that send a `POST` request with data user:
               {
                  "beagleAction":"beagle:alert",
                  "title":"SUCCESS",
-                 "message":"Success"
+                 "message":"@{onSuccess.data}"
               }
             ],
             "onError":[
                {
                   "beagleAction":"beagle:alert",
                   "title":"ERROR",
-                  "message":"Error"
+                  "message":"@{onError.data}"
                }
             ],
             "onFinish":[
@@ -101,13 +105,13 @@ Button(
                 onSuccess = listOf(
                     Alert(
                         title = "SUCCESS",
-                        message = "Success"
+                        message = "@{onSuccess.data}"
                     )
                 ),
                 onError = listOf(
                     Alert(
                         title = "ERROR",
-                        message = "Error"
+                        message = "@{onError.data}"
                     )
                 ),
                 onFinish = listOf(
