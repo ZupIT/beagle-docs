@@ -59,14 +59,14 @@ O botão abaixo faz uma requisição do tipo `POST` enviando dados de um usuári
               {
                  "beagleAction":"beagle:alert",
                  "title":"SUCCESS",
-                 "message":"Success"
+                 "message":"@{onSuccess.data}"
               }
             ],
             "onError":[
                {
                   "beagleAction":"beagle:alert",
                   "title":"ERROR",
-                  "message":"Error"
+                  "message":"@{onError.data}"
                }
             ],
             "onFinish":[
@@ -106,13 +106,13 @@ Button(
                 onSuccess = listOf(
                     Alert(
                         title = "SUCCESS",
-                        message = "Success"
+                        message = "@{onSuccess.data}"
                     )
                 ),
                 onError = listOf(
                     Alert(
                         title = "ERROR",
-                        message = "Error"
+                        message = "@{onError.data}"
                     )
                 ),
                 onFinish = listOf(
