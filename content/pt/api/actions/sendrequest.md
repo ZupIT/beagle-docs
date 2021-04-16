@@ -26,7 +26,11 @@ A estrutura do Send Request é:
 
 ## Como usar?
 
-Segue abaixo um exemplo de botão que faz uma requisição do tipo `POST` enviando dados de um usuário:
+{{% alert color="warning" %}}
+**Recuperando o response data:** Este componente dispara uma ação onSuccess ou onError quando obtem uma resposta do servidor. As informações do pacote de resposta podem ser acessadas usando o [contexto implícito](/api/context/overview/#2-implicit-context) "@ {onSuccess.data}" em caso de sucesso e "@ {onError.data}" em um caso de erro.
+{{% /alert %}}
+
+O botão abaixo faz uma requisição do tipo `POST` enviando dados de um usuário:
 
 {{< tabs id="T127" >}}
 {{% tab name="JSON" %}}
@@ -55,14 +59,14 @@ Segue abaixo um exemplo de botão que faz uma requisição do tipo `POST` envian
               {
                  "beagleAction":"beagle:alert",
                  "title":"SUCCESS",
-                 "message":"Success"
+                 "message":"@{onSuccess.data}"
               }
             ],
             "onError":[
                {
                   "beagleAction":"beagle:alert",
                   "title":"ERROR",
-                  "message":"Error"
+                  "message":"@{onError.data}"
                }
             ],
             "onFinish":[
@@ -102,13 +106,13 @@ Button(
                 onSuccess = listOf(
                     Alert(
                         title = "SUCCESS",
-                        message = "Success"
+                        message = "@{onSuccess.data}"
                     )
                 ),
                 onError = listOf(
                     Alert(
                         title = "ERROR",
-                        message = "Error"
+                        message = "@{onError.data}"
                     )
                 ),
                 onFinish = listOf(
