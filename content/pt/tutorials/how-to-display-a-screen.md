@@ -163,17 +163,17 @@ No campo`path`, deve ficar o caminho para seu JSON que será associado com o `ba
 
 {{< tabs id="T95" >}}
 {{% tab name="Android" %}}
-Para renderizar uma tela a partir de um JSON, é necessário ter uma `Activity` ou `Fragment` com um `FrameLayout` como no exemplo a baixo:
+Para renderizar qualquer componente do Beagle, é necessário informar um `viewGroup` onde a view correspondente ao componente será renderizada, como um `FrameLayout` dentro de uma `Activity`, `Fragment` ou `DialogFragment`. Veja o exemplo abaixo:
 
 ```markup
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/frame_layout_android"
+    android:id="@+id/frame_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"/>
 ```
 
-Agora basta chamar o método `renderScreen()` a partir do `frame layout` criado no `xml` passando como parâmetro a sua activity e o `JSON`.
+Agora chame o método `loadView()` a partir do `frame_layout` criado no `xml` e passe a `Activity` e o `JSON` como parâmetros.
 
 ```kotlin
 class MainActivity : AppCompatActivity() {
@@ -181,18 +181,30 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        frame_layout_android.renderScreen(
+        frame_layout.loadView(
             activity = this,
-            screenJson = "// JSON here"
+            screenJson = "JSON AQUI"
         )
     }
 }
 ```
 
 {{% alert color="info" %}}
-O método `renderScreen()` também pode receber um fragment como parâmetro seguindo o exemplo abaixo:
+O método `loadView()` também pode receber como parâmetro um `Fragment` no lugar da `Activity` e dois outros opcionais, seguindo o exemplo abaixo:
 
-`renderScreen(fragment = yourFragment, screenJson = "// JSON here")`
+```kotlin
+loadView(
+  fragment = seuFragment, 
+  screenJson = "JSON AQUI",
+  screenId = "seu identificador",
+  shouldResetContext = seuBoolean,
+)
+```
+
+### Parâmetros opcionais
+`screenId` : representa um identificador de tela para criar o analytics quando ela é criada. O valor padrão é vazio.
+`shouldResetContext` : quando true, isso remove no momento da chamada da função `loadView` todos os dados de contexto vinculados ao proprietário do ciclo de vida. O valor padrão é false.
+
 {{% /alert %}}
 {{% /tab %}}
 
