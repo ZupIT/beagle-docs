@@ -16,7 +16,7 @@ Before you start to configure Beagle for your iOS system, it's important to chec
 
 ## **Dependencies' Management**
 
-Currently, Beagle is available for integrations through [**Carthage**](https://github.com/Carthage/Carthage) and [**CocoaPods**](https://cocoapods.org).
+Currently, Beagle is available for integrations through [**Carthage**](https://github.com/Carthage/Carthage), [**CocoaPods**](https://cocoapods.org) or [**SwiftPM**](https://swift.org/package-manager/).
 
 {{% alert color="info" %}}
 Remember to always check if you're using the latest version of Beagle and, mostly, check if the different platforms you're using are integrated to the same Beagle's version. In this way, you ensure that all the tools are correctly communicating with each other.
@@ -26,19 +26,18 @@ Remember to always check if you're using the latest version of Beagle and, mostl
 
 To integrate Beagle with your application through **CocoaPods**, you have to add the framework as a dependency of your `Podfile`.
 
-Current Beagle's version**:**[![badge](https://img.shields.io/cocoapods/v/Beagle)](https://cocoapods.org/pods/Beagle)
+Current Beagle's version: [![badge](https://img.shields.io/cocoapods/v/Beagle)](https://cocoapods.org/pods/Beagle)
 
 This process must be done in the following way:
 
 ```text
-pod 'Beagle'
+pod 'Beagle', '~> 1.7'
 pod 'YogaKit', :git => 'https://github.com/ZupIT/YogaKit'
 ```
 
 {{% alert color="warning" %}}
 In the case of **YogaKit**, you must use our fork because some changes are not merged yer at Facebook's repository.
 {{% /alert %}}
-
 ## **Installation with Carthage**
 
 ### Step 1: Integrate with your application
@@ -48,11 +47,11 @@ To integrate Beagle with your application through **Carthage**, you have to add 
 This process must be done in the following way:
 
 ```text
-github "ZupIT/beagle" ~> 1.0.1
+github "ZupIT/beagle" ~> 1.7
 ```
 
 {{% alert color="warning" %}}
-After an important release, we'll probably launch versions with specific bug fixes for iOS, it will have a version tag followed by the suffix "-iOS" \(e.g: "1.0.1-iOS"\).
+After an important release, we'll probably launch versions with specific bug fixes for iOS, it will have a version tag followed by the suffix "-iOS" \(e.g: "1.6.2-iOS"\).
 {{% /alert %}}
 
 ### Step 2: Build on dependencies
@@ -62,9 +61,43 @@ After the integration, you must follow the normal process of building with Carth
 In Beagle's case, the mandatory files to make you application work are:
 
 - Beagle.framework
-- YogaKit.framework
 
 Other frameworks can be used only in more specific scenarios.
+
+{{% alert color="warning" %}}
+Your application will need to import `YogaKit` too, you can import using SwiftPM:
+1. From the **File** menu, navigate through **Swift Packages** and select **Add Package Dependency…**.
+2. Enter package repository URL: `https://github.com/ZupIT/yoga.git`
+3. Confirm the version 1.19 and let Xcode resolve the package
+{{% /alert %}}
+
+## **Installation with Swift Package Manager**
+
+We have two ways of configure `Beagle` using SwiftPM:
+### Xcode 11
+
+1. From the **File** menu, navigate through **Swift Packages** and select **Add Package Dependency…**.
+2. Enter package repository URL: `https://github.com/ZupIT/beagle.git`
+3. Confirm the version and let Xcode resolve the package
+4. On the final dialog, update Beagle's **Add to Target** column with the target that should import `Beagle`
+
+### Package.swift
+
+Once you have your `Package.swift` set up, adding `Beagle` as a dependency is as easy as adding it to the _dependencies_ value:
+
+```swift
+dependencies: [
+  .package(name: "Beagle", url: "https://github.com/ZupIT/beagle.git", from: "1.7"),
+]
+```
+
+And next, add `Beagle` as a dependency of your application target:
+
+```swift
+targets: [
+  .target(name: "MyApp", dependencies: ["Beagle"], path: "Sources")
+]
+```
 
 ## Next Steps
 
