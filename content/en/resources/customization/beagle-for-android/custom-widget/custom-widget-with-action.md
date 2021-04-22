@@ -8,7 +8,7 @@ description: Creating a custom widget with onChange
 
 Currently in Beagle, the component [**TextInput**]({{< ref path="/api/components/ui/textinput" lang="en" >}}) has the behavior of executing an action list. To do this, it exposes the `onChange` property, which receives the list of actions that will be triggered.
 
-In this tutorial we will see how to create a custom widget with the behavior of triggering a list of actions, we will create DatePicker a date selection component.
+In this tutorial we will see how to create a custom widget with the behavior of triggering a list of actions, we will create `DatePicker` a date selection component.
 
 ### Step 1: Creating custom component on android
 
@@ -198,4 +198,3 @@ Below is an example on the emulator.
 
 
 ![](/shared/date-picker-android.png)
-
