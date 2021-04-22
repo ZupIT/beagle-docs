@@ -14,8 +14,8 @@ In this tutorial we will see how to create a custom widget with the behavior of 
 
 In your component's class we will inherit from `TextView` and `DatePickerDialog.OnDateSetListener`.
 
-```java
-class DatePickerComponent constructor(
+```kotlin
+class DatePickerComponent(
     context: Context
 ) : TextView(context), DatePickerDialog.OnDateSetListener {
 
