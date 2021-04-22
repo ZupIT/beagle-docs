@@ -164,17 +164,17 @@ On the `path` field, it should be JSON's path that will be associated with the `
 
 {{< tabs id="T95" >}}
 {{% tab name="Android" %}}
-To render a screen through a JSON, it is necessary to have a `Activity` or a `Fragment` with a `FrameLayout`, like the example below:
+To render any Beagle component, it's necessary to inform a `viewGroup` where the view corresponding to the component will be rendered, such as a `FrameLayout` within an `Activity`, `Fragment` or `DialogFragment`. See the example below:
 
 ```markup
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/frame_layout_android"
+    android:id="@+id/frame_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"/>
 ```
 
-Now, call the `renderScreen()` method from the `frame layout` created in the `xml` that pass its activity and the `JSON` as parameter.
+Now, call the `loadView()` method from the `frame_layout` created in the `xml` and pass the `Activity` and the `JSON` as parameters.
 
 ```kotlin
 class MainActivity : AppCompatActivity() {
@@ -182,18 +182,29 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        frame_layout_android.renderScreen(
+        frame_layout.loadView(
             activity = this,
-            screenJson = "// JSON here"
+            screenJson = "JSON HERE"
         )
     }
 }
 ```
 
 {{% alert color="info" %}}
-The `renderScreen()` method can also receive a fragment as a parameter following the example below:
+The `loadView()` method can also receive as a parameter a `Fragment` in place of `Activity` and two other optional ones, following the example below:
 
-`renderScreen(fragment = yourFragment, screenJson = "// JSON here")`
+```kotlin
+loadView(
+  fragment = yourFragment, 
+  screenJson = "JSON HERE",
+  screenId = "your identifier",
+  shouldResetContext = yourBoolean,
+)
+```
+
+### Optional parameters
+`screenId` : represents an screen identifier to create the analytics when the screen is created. Default value is empty.
+`shouldResetContext` : when true, this clear at the time of calling the `loadView` function all de context data linked to the lifecycle owner. Default value is false.
 
 {{% /alert %}}
 {{% /tab %}}
