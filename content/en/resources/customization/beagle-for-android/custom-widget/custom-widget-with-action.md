@@ -1,18 +1,18 @@
 ---
-title: Widget Customizado com Action
+title: OnChange Custom Widget
 weight: 134
-description: Criando um widget customizado com Action
+description: Creating a custom widget with onChange
 ---
 
 ---
 
-Atualmente no Beagle, o componente [**Text Input**]({{< ref path="/api/components/ui/textinput" lang="pt" >}}) possue o comportamento de executar uma lista de ações. Para isso, ele expõe a propriedade `onChange`, a qual recebe a lista de ações que serão disparadas.
+Currently in Beagle, the component [**TextInput**]({{< ref path="/api/components/ui/textinput" lang="en" >}}) has the behavior of executing an action list. To do this, it exposes the `onChange` property, which receives the list of actions that will be triggered.
 
-Neste tutorial veremos como criar um widget customizado com o comportamento de disparar uma lista de ações, iremos criar DatePicker um componente de selecionar data.
+In this tutorial we will see how to create a custom widget with the behavior of triggering a list of actions, we will create DatePicker a date selection component.
 
-### Passo 1: Criando componente custom no android
+### Step 1: Creating custom component on android
 
-Na classe do seu componente vamos herdar de TextView e DatePickerDialog.OnDateSetListener.
+In your component's class we will inherit from TextView and DatePickerDialog.OnDateSetListener.
 
 ```java
 class DatePickerComponent constructor(
@@ -54,9 +54,9 @@ interface DateSetListener{
 }
 ```
 
-Como podemos ver temos alguns métodos na classe, aqui abaixo vou explicar detalhado.
+As we can see, we have some methods in class, here below I will explain in detail.
  
-No método init está a configuração de clique, quando o usuário clicar no texto irá exibir o calendário para selecionar a data.
+In the init method is the click configuration, when the user clicks on the text he will display the calendar to select the date.
 
 ```java
 init {
@@ -68,7 +68,7 @@ init {
     }
 ```
 
-O método setText responsável por exibir o texto para usuário clicar, exemplo `clique aqui para selecionar uma data`.
+The setText method responsible for displaying the text for the user to click, example `click here to select a date`.
 
 ```java
 fun setText(text: String) {
@@ -76,7 +76,7 @@ fun setText(text: String) {
     }
 ```
 
-O próximo método é uma Extension functions responsável por formatar a data.
+The next method is an Extension function responsible for formatting the date.
 
 ```java
 private fun Date.formatDate(): String{
@@ -86,9 +86,9 @@ private fun Date.formatDate(): String{
     }
 ```
 
-Este método veio da interface DatePickerDialog.OnDateSetListener e ele é responsável por pegar a data selecionada pelo usuário.
+This method came from the DatePickerDialog.OnDateSetListener interface and it is responsible for taking the date selected by the user.
 
-* Através deste método vamos passar o valor que o usuário selecionou para o método da interface do nosso componente `dateSetListener?.onDateSet(myCalendar.time.formatDate())`
+* Through this method we will pass the value that the user selected to the method of the interface of our component `dateSetListener?.onDateSet(myCalendar.time.formatDate())`
 
 ```java
 override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
@@ -99,13 +99,13 @@ override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int
     }
 ```
 
-### Passo 2: Registrando componente no beagle
+### Step 2: Registering component in the beagle
 
-Crie uma classe e sobre o nome coloque a anotação `@RegisterWidget` e herde da classe `WidgetView()`
-* Implemente o método `buildView` que veio da classe `WidgetView()`
-* Nesta classe vamos adicionar dois atributos:
-    1. `date` esse atributo responsável por apresentar o valor da data selecionada.
-    2. `onChange` esse atributo responsável por pegar o valor da data selecionado
+Create a class and over the name put the annotation `@RegisterWidget` and inherit from the class `WidgetView()`
+* Implement the `buildView` method that came from the `WidgetView ()` class
+* In this class we will add two attributes:
+    1. `date` this attribute responsible for presenting the value of the selected date.
+    2. `onChange` this attribute responsible for taking the selected date value.
 
 
 ```java
@@ -138,7 +138,7 @@ class DatePicker(
 }
 ```
 
-Este bloco de código fica observando o atributo date, quando alterar o valor, ele adiciona o novo valor.
+This block of code looks at the date attribute, when you change the value, it adds the new value.
 
 ```java
 observeBindChanges(rootView, this, date) { text ->
@@ -146,9 +146,9 @@ observeBindChanges(rootView, this, date) { text ->
         }
 ```
 
-Já esse bloco de código tem a interface do nosso componente, onde ele sobrescreve o método `onDateSet` que contém o valor da data selecionada pelo usuário. Através desse valor vamos criar um ContextData com id onChange e o value será o value retornado pelo método da interface.
+This code block has the interface of our component, where it overrides the `onDateSet` method that contains the value of the date selected by the user. Through this value we will create a ContextData with id onChange and the value will be the value returned by the interface method.
 
-* E para pegar o valor atualizado da data, basta usar a expressão `@{onChange}`. Na Etapa abaixo veremos como pegar esse valor do onChange.
+* And to get the updated value of the date, just use the expression `@{onChange}`. In the Step below we will see how to get this value from onChange.
 
 
 ```java
@@ -167,11 +167,11 @@ dateSetListener = object : DateSetListener {
         }
 ```
 
-### Passo 3: Usando componente em uma tela
+### Step 3: Using component on a screen
 
-Usando o kotlin declarativo do beagle criamos uma tela, onde adicionamos o componente DatePicker e abaixo um texto.
+Using the declarative kotlin of the beagle we create a screen, where we add the DatePicker component and below a text.
 
-Abaixo um exemplo usando o componente.
+Below is an example using the component.
 
 ```java
 Container(
@@ -194,7 +194,7 @@ Container(
     )
 ```
 
-Abaixo um exemplo no emulador.
+Below is an example on the emulator.
 
 
 ![](/shared/date-picker-android.png)
