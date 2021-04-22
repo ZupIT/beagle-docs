@@ -54,7 +54,7 @@ interface DateSetListener{
 }
 ```
 
-As we can see, we have some methods in class, here below I will explain in detail.
+As we can see, we have some methods in class, below I will explain in detail.
  
 In the init method is the click configuration, when the user clicks on the text he will display the calendar to select the date.
 
