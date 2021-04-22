@@ -54,6 +54,14 @@ The structure is represented by the attributes below:
   </tbody>
 </table>
 
+The **HttpAdditionalData** object has the method, headers and body attributes.
+
+| **Attribute**| **Type** | **Required** | **Definition** |
+| :---------| :-----| :---: | :--------|
+| method | HTTPMethod |   | HTTP method. |
+| headers | Map<String, String> |  | Header items for the request. |
+| body | Any  |   | Content that will be delivered with the request.|
+
 ## How to use it?
 
 {{< tabs id="T107" >}}
@@ -66,12 +74,14 @@ The structure is represented by the attributes below:
     {
       "_beagleAction_": "beagle:pushView",
       "route": {
-        "url": "confirm.json",
+        "url": "/present/view",
         "shouldPrefetch": false,
         "httpAdditionalData": {
-            "headers": {
-                "test": "test"
-            }
+            "method" : "POST",
+            "headers" : { "test" : "test" },
+            "body" : {
+            "framework":"Beagle"
+          }
         }
       }
     }
@@ -85,9 +95,16 @@ The structure is represented by the attributes below:
 ```
 Button(
     onPress = listOf(
-        Navigate.PushView(
-            Route.Remote("/present/view", httpAdditionalData = HttpAdditionalData(headers = mapOf("test" to "test")))
-         )
+      Navigate.PushView(
+        route = Route.Remote(
+          url = "/present/view",
+          httpAdditionalData = HttpAdditionalData(
+            method = HttpMethod.POST,
+            headers = mapOf("test" to "test"),
+            body = mapOf("framework" to "Beagle")
+          )
+        )
+      )
     ),
     text = "Click me!"
 )
