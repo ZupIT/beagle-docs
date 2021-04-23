@@ -16,7 +16,7 @@ Antes de configurar o Beagle para o seu sistema iOS, é importante que você con
 
 ## **Gerenciamento de dependências**
 
-Hoje o Beagle está disponível para integração através do [**Carthage**](https://github.com/Carthage/Carthage), [**CocoaPods**](https://cocoapods.org) ou [**SwiftPM**](https://swift.org/package-manager/).
+Atualmente, o Beagle está disponível para integração através do [**CocoaPods**](https://cocoapods.org), [**SwiftPM**](https://swift.org/package-manager/), e [**Carthage**](https://github.com/Carthage/Carthage).
 
 {{% alert color="info" %}}
 Lembre de sempre usar a versão mais recente do Beagle e, principalmente, de checar se as diferentes plataformas estão integradas à essa mesma versão. Dessa forma, você garante que todas as ferramentas estão se comunicando corretamente.
@@ -31,7 +31,7 @@ Versão atual do Beagle: [![badge](https://img.shields.io/cocoapods/v/Beagle)](h
 Este processo pode ser feito da seguinte maneira:
 
 ```text
-pod 'Beagle', '~> 1.7'
+pod 'Beagle'
 pod 'YogaKit', :git => 'https://github.com/ZupIT/YogaKit'
 ```
 
@@ -43,7 +43,7 @@ No caso do **YogaKit**, você precisa utilizar o nosso fork porque algumas modif
 
 ### Passo 1: Integrar com sua aplicação
 
-Para integrar o Beagle à sua aplicação através do **Carthage** você precisa adicionar o framework como dependência no seu `Cartfile`.
+Para integrar o Beagle à sua aplicação através do **Carthage**, você precisa adicionar o framework como dependência no seu `Cartfile`.
 
 O processo pode ser feito da seguinte maneira:
 

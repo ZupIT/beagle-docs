@@ -16,7 +16,7 @@ Before you start to configure Beagle for your iOS system, it's important to chec
 
 ## **Dependencies' Management**
 
-Currently, Beagle is available for integrations through [**Carthage**](https://github.com/Carthage/Carthage), [**CocoaPods**](https://cocoapods.org) or [**SwiftPM**](https://swift.org/package-manager/).
+Currently, Beagle is available for integrations through [**CocoaPods**](https://cocoapods.org), [**SwiftPM**](https://swift.org/package-manager/), and [**Carthage**](https://github.com/Carthage/Carthage).
 
 {{% alert color="info" %}}
 Remember to always check if you're using the latest version of Beagle and, mostly, check if the different platforms you're using are integrated to the same Beagle's version. In this way, you ensure that all the tools are correctly communicating with each other.
@@ -31,7 +31,7 @@ Current Beagle's version: [![badge](https://img.shields.io/cocoapods/v/Beagle)](
 This process must be done in the following way:
 
 ```text
-pod 'Beagle', '~> 1.7'
+pod 'Beagle'
 pod 'YogaKit', :git => 'https://github.com/ZupIT/YogaKit'
 ```
 
@@ -73,7 +73,7 @@ Your application will need to import `YogaKit` too, you can import using SwiftPM
 
 ## **Installation with Swift Package Manager**
 
-We have two ways of configure `Beagle` using SwiftPM:
+We have two ways of configuring `Beagle` using SwiftPM:
 ### Xcode 11
 
 1. From the **File** menu, navigate through **Swift Packages** and select **Add Package Dependency…**.
