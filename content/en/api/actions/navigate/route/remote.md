@@ -7,7 +7,7 @@ weight: 268
 
 ## What is it?
 
-Navigation for remote content. 
+Navigation for remote content.
 
 The structure is represented by the attributes below:
 
@@ -42,12 +42,25 @@ The structure is represented by the attributes below:
     <tr>
       <td style="text-align:left">fallback</td>
       <td style="text-align:left"><a href="https://docs.usebeagle.io/v/v1.0-en/api/screen"><strong>Screen</strong></a></td>
-      <td
-      style="text-align:left"></td>
-        <td style="text-align:left">Screen to be returned in case the loading fails.</td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Screen to be returned in case the loading fails.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">httpAdditionalData</td>
+      <td style="text-align:left">HttpAdditionalData</td>
+      <td style="text-align:center"></td>
+      <td style="text-align:left">Can be used on navigation actions to pass additional http data for the requests made to the backend.</td>
     </tr>
   </tbody>
 </table>
+
+The **HttpAdditionalData** object has the method, headers and body attributes.
+
+| **Attribute**| **Type** | **Required** | **Definition** |
+| :---------| :-----| :---: | :--------|
+| method | HTTPMethod |   | The http method to perform the request: get, put, post, delete, etc |
+| headers | Map<String, String> |  | Header items for the request. |
+| body | Any  |   | Content to be sent in the body of the request. Can be either a string or an object that can be serialized to a JSON string |
 
 ## How to use it?
 
@@ -61,8 +74,15 @@ The structure is represented by the attributes below:
     {
       "_beagleAction_": "beagle:pushView",
       "route": {
-        "url": "confirm.json",
-        "shouldPrefetch": false
+        "url": "/present/view",
+        "shouldPrefetch": false,
+        "httpAdditionalData": {
+            "method" : "POST",
+            "headers" : { "test" : "test" },
+            "body" : {
+            "framework":"Beagle"
+          }
+        }
       }
     }
   ]
@@ -75,9 +95,16 @@ The structure is represented by the attributes below:
 ```
 Button(
     onPress = listOf(
-        Navigate.PushView(
-            Route.Remote("/present/view")
-         )
+      Navigate.PushView(
+        route = Route.Remote(
+          url = "/present/view",
+          httpAdditionalData = HttpAdditionalData(
+            method = HttpMethod.POST,
+            headers = mapOf("test" to "test"),
+            body = mapOf("framework" to "Beagle")
+          )
+        )
+      )
     ),
     text = "Click me!"
 )

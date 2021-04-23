@@ -47,8 +47,22 @@ A sua estrutura é representada como mostrado abaixo:
       <td style="text-align:center"></td>
       <td style="text-align:left">Tela a ser retornada caso o carregamento falhe.</td>
     </tr>
+    <tr>
+      <td style="text-align:left">httpAdditionalData</td>
+      <td style="text-align:left">HttpAdditionalData</td>
+      <td style="text-align:center"></td>
+      <td style="text-align:left">Pode ser usado em ações de navegação para passar dados HTTP adicionais ao fazer requisições para o backend.</td>
+    </tr>
   </tbody>
 </table>
+
+O objeto **HttpAdditionalData** possui os atributos method, headers e body.
+
+| **Atributo**| **Tipo** | Obrigatório | Definição|
+| :---------| :-----| :---: | :--------|
+| method | HTTPMethod |   | O método http para fazer a requisição: get, put, post, delete, etc |
+| headers | Map<String, String> |  | Itens de cabeçalho para a request. |
+| body | Any  |   |  Conteúdo para enviar no corpo da requisição. Pode ser string ou um objeto que pode ser serializado para uma string JSON|
 
 ## Como usar?
 
@@ -62,13 +76,21 @@ A sua estrutura é representada como mostrado abaixo:
     {
       "_beagleAction_": "beagle:pushView",
       "route": {
-        "url": "confirm.json",
-        "shouldPrefetch": false
+        "url": "/present/view",
+        "shouldPrefetch": false,
+        "httpAdditionalData": {
+            "method" : "POST",
+            "headers" : { "test" : "test" },
+            "body" : {
+            "framework":"Beagle"
+          }
+        }
       }
     }
   ]
 }
 -->
+
 {{% playground file="remote.json" language="pt" %}}
 {{% /tab %}}
 
@@ -76,9 +98,16 @@ A sua estrutura é representada como mostrado abaixo:
 ```
 Button(
     onPress = listOf(
-        Navigate.PushView(
-            Route.Remote("confirm.json")
-         )
+      Navigate.PushView(
+        route = Route.Remote(
+          url = "/present/view",
+          httpAdditionalData = HttpAdditionalData(
+            method = HttpMethod.POST,
+            headers = mapOf("test" to "test"),
+            body = mapOf("framework" to "Beagle")
+          )
+        )
+      )
     ),
     text = "Click me!"
 )
