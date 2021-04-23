@@ -32,12 +32,7 @@ Este processo pode ser feito da seguinte maneira:
 
 ```text
 pod 'Beagle'
-pod 'YogaKit', :git => 'https://github.com/ZupIT/YogaKit'
 ```
-
-{{% alert color="warning" %}}
-No caso do **YogaKit**, você precisa utilizar o nosso fork porque algumas modificações ainda não foram mergeadas no repositório do Facebook.
-{{% /alert %}}
 
 ## **Instalação com Carthage**
 
@@ -69,7 +64,7 @@ Outros frameworks são utilizados apenas em cenários de uso mais específicos.
 Sua aplicação precisará importar o `YogaKit` também, você pode importar usando SwiftPM:
 1. A partir do menu **File**, navegue por **Swift Packages** e selecione **Add Package Dependency…**.
 2. Digite a URL do pacote: `https://github.com/ZupIT/yoga.git`
-3. Confirme a versão 1.19 e deixe o Xcode resolver o pacote
+3. Confirme a versão 1.19.0 e deixe o Xcode resolver o pacote
 {{% /alert %}}
 
 ## **Instalação com Swift Package Manager**
@@ -88,7 +83,7 @@ Com o seu arquivo `Package.swift` configurado, adicionar o `Beagle` como uma dep
 
 ```swift
 dependencies: [
-  .package(name: "Beagle", url: "https://github.com/ZupIT/beagle.git", from: "1.7"),
+  .package(name: "Beagle", url: "https://github.com/ZupIT/beagle.git", from: "1.7.0"),
 ]
 ```
 
