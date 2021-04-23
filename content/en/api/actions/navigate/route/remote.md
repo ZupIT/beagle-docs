@@ -49,7 +49,7 @@ The structure is represented by the attributes below:
       <td style="text-align:left">httpAdditionalData</td>
       <td style="text-align:left">HttpAdditionalData</td>
       <td style="text-align:center"></td>
-      <td style="text-align:left">Can be used on navigate actions to pass additional http data on requests triggered by Beagle.</td>
+      <td style="text-align:left">Can be used on navigation actions to pass additional http data for the requests made to the backend.</td>
     </tr>
   </tbody>
 </table>
@@ -58,9 +58,9 @@ The **HttpAdditionalData** object has the method, headers and body attributes.
 
 | **Attribute**| **Type** | **Required** | **Definition** |
 | :---------| :-----| :---: | :--------|
-| method | HTTPMethod |   | HTTP method. |
+| method | HTTPMethod |   | The http method to perform the request: get, put, post, delete, etc |
 | headers | Map<String, String> |  | Header items for the request. |
-| body | Any  |   | Content that will be delivered with the request.|
+| body | Any  |   | Content to be sent in the body of the request. Can be either a string or an object that can be serialized to a JSON string |
 
 ## How to use it?
 
