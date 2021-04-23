@@ -16,7 +16,9 @@ See how the structure is represented:
 | :--- | :--- | :--- | :--- |
 | children | List &lt;[**ServerDriven Component**]({{< ref path="/api/widget" lang="en" >}})&gt; |    ✓ | Defines the component list that is part of the container.  |
 | context | [**ContextData**]({{< ref path="/api/context" lang="en" >}}) |  | It is the [**context**]({{< ref path="/api/context" lang="en" >}}) in this widget.  |
-| onInit | List&lt;[**Action**]({{< ref path="/api/actions" lang="en" >}})&gt; |  | It is a parameter that allows you to define a list of actions to be performed when the Widget is displayed.  |
+| onInit | List&lt;[**Action**]({{< ref path="/api/actions" lang="en" >}})&gt; |  | It is a parameter that allows you to define a list of actions to be performed when the Widget is displayed. |
+| styleId   | String                                              |          | Refers to a locally configured style that it will be applied on the container. |
+
 
 ## How to use it? 
 
