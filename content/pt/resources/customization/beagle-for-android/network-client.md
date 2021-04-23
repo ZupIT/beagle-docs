@@ -174,7 +174,6 @@ import kotlin.jvm.Throws
 typealias OnSuccess = (responseData: ResponseData) -> Unit
 typealias OnError = (responseData: ResponseData) -> Unit
 
-@BeagleComponent
 class HttpClientDefault : HttpClient, CoroutineScope {
 
     private val job = Job()
@@ -295,3 +294,23 @@ class HttpClientDefault : HttpClient, CoroutineScope {
     }
 }
 ```
+
+
+### Passo 5: Criar a classe HttpClientFactoryDefault
+
+Crie uma classe e escolha um nome para ela, por exemplo `HttpClientFactoryDefault`.
+
+A classe HttpClientFactoryDefault é responsável por criar a instância de HttpClient para o Beagle. Essa classe é particularmente útil quando você precisa configurar ou passar parâmetros na instanciação do seu HttpClient. Para usá-la, você precisa criar uma classe que implementa a interface `HttpClientFactory`.
+
+Como exemplo, você pode copiar e colar a classe abaixo e modificar como achar necessário:
+
+```kotlin
+import br.com.zup.beagle.android.annotation.BeagleComponent
+import br.com.zup.beagle.android.networking.HttpClient
+import br.com.zup.beagle.android.networking.HttpClientFactory
+@BeagleComponent
+class AppHttpClientFactory: HttpClientFactory {
+    override fun create(): HttpClient {
+        return HttpClientDefault()
+    }
+}```
