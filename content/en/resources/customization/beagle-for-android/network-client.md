@@ -292,7 +292,7 @@ class HttpClientDefault : HttpClient, CoroutineScope {
 }
 ```
 
-### Step 5: Create a HttpClientFactory class
+### Step 5: Create a HttpClientFactoryDefault class
 
 Create a class and choose a name for it, for example `HttpClientFactoryDefault`.
 
