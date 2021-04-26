@@ -1,23 +1,24 @@
 ---
-title: Container
+title: Column
 weight: 338
-description: Descrição do componente Container e seus atributos
+description: Descrição do componente Column e seus atributos
 ---
 
 ---
+
 
 ## O que é?
-
-O `Container` é um componente responsável por conter outros componentes dentro de si.
+O `Column` é um componente que exibe seus filhos em uma matriz vertical.
 
 A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo**                                                       | Obrigatório | **Definição**                                                                                                     |
 | :----------- | :------------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------- |
-| children     | List &lt;[ServerDriven Component]({{< ref path="/api/components" lang="pt" >}})&gt; |            | Define a lista de componentes que fazem parte do container                                                        |
+| children     | List &lt;[ServerDriven Component]({{< ref path="/api/components" lang="pt" >}})&gt; |            | Os componentes abaixo deste componente na árvore.
 | context      | [ContextData]({{< ref path="/api/context/" lang="pt" >}})                           |             | É o [contexto]({{< ref path="/api/context/" lang="pt" >}}) contido por este Widget.                                                    |
 | onInit       | List&lt;[Action]({{< ref path="/api/actions" lang="pt" >}})&gt;                     |             | Um parâmetro que te possibilita definir uma lista de ações a serem executadas assim que esse Widget seja exibido. |
 | styleId   | String                                                |             | Referencia o estilo configurado localmente a ser aplicado no container. |
+| reverse   | Boolean                                                |             | Altera a ordem dos itens. |
 
 
 ## Como usar?
@@ -25,35 +26,30 @@ A sua estrutura é representada como mostrado abaixo:
 {{< tabs id="T145" >}}
 {{% tab name="JSON" %}}
 
-<!-- json-playground:container.json
+<!-- json-playground:column.json
 {
-    "_beagleComponent_": "beagle:container",
-    "children": [
-        {
-          "_beagleComponent_": "beagle:text",
-          "text": "@{myContext}"
-        }
-    ],
-    "context": {
-        "id": "myContext",
-        "value": "Hello world!"
+  "_beagleComponent_" : "beagle:container",
+  "children" : [ {
+    "_beagleComponent_" : "beagle:text",
+    "text" : "simple text"
+  } ],
+  "style" : {
+    "flex" : {
+      "flexDirection" : "COLUMN"
     }
+  }
 }
 -->
 
-{{% playground file="container.json" language="pt" %}}
+{{% playground file="column.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
 
 ```kotlin
-Container(
+Column(
     children = listOf(
-        Text(text = "@{myContext}")
-    ),
-    context = ContextData(
-        id = "myContext",
-        value = "Hello World!"
+        Text(text = "simple text")
     )
 )
 ```
