@@ -24,3 +24,5 @@ npm run start - By default, this command will run the project in development mod
 ## Build
 
 `npm run build` - To build the application, run this command after you [installed hugo](https://gohugo.io/getting-started/installing) and all package dependencies (`npm install`).
+
+enjoy it!
