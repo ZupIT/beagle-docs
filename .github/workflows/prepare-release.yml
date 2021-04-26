@@ -42,6 +42,13 @@ jobs:
         shell: bash
         env:
           VERSION: ${{ steps.version.outputs.release_tag }}
+          
+      
+      - name: Cache Dependencies
+        uses: c-hive/gha-yarn-cache@v1
+
+      - name: Intall Dependencies
+        run: yarn
 
       - name: Build
         run: yarn build-playground && hugo -D --minify -b $BASE_URL/$VERSION
