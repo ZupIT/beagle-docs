@@ -47,7 +47,7 @@ jobs:
         run: yarn build-playground && hugo -D --minify -b $BASE_URL/$VERSION
         env: 
           BASE_URL: https://docs.usebeagle.io
-          VERSION: ${{ steps.version.outputs.branch_version }}
+          VERSION: ${{ steps.version.outputs.release_tag }}
 
       - name: Upload FAQ
         run: aws s3 sync --acl public-read --follow-symlinks public/faq s3://$AWS_S3_BUCKET/faq/ --delete
