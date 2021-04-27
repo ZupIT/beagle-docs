@@ -79,7 +79,7 @@ If you want to use Micronaut 2.0, you can use the new website, very similar to S
 
 Use Spring's Initializr to create a project for your micro-service. Click the following link, [**Spring Initializr for Beagle Spring Starter**](https://start.spring.io/#!type=maven-project&language=kotlin&packaging=jar&jvmVersion=1.8&groupId=com.example&artifactId=bff&name=bff&description=Demo%20project%20for%20Beagle%20BFF%20using%20Spring%20Boot&packageName=com.example.bff&dependencies=actuator), to get recommended settings.
 
-![Spring Initializr with recommended settings for a BFF with Spring, using Beagle Spring Starter](/image%20%288%29.png)
+![Spring Initializr with recommended settings for a BFF with Spring, using Beagle Spring Starter](/shared/image%20%288%29.png)
 
 - These settings are:
   - Maven dependency manager;
@@ -156,7 +156,7 @@ Insert the Beagle's release version on the place of`${beagle.version}`, in other
 
 For example:
 
-![https://img.shields.io/bintray/v/zupit/repo/beagle](/image%20%28107%29.png)-`ext.beagle.version = "0.2.8"`
+![https://img.shields.io/bintray/v/zupit/repo/beagle](/shared/image%20%28107%29.png)-`ext.beagle.version = "0.2.8"`
 
 {{% alert color="warning" %}}
 Remember to always check if you're using the latest version of Beagle. To see this information, you just have to pass your mouse above the version number. After that, sync your machine.
