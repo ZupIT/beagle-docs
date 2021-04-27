@@ -2,7 +2,7 @@
 title: Overview
 weight: 1
 type: overview
-description: 'Here, you''ll more information about the Playground for web.'
+description: 'Here, you''ll find more information about the Playground for web.'
 ---
 
 ---
