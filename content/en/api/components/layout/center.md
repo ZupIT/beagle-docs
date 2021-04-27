@@ -9,7 +9,7 @@ description: You will find here the description of the Center function and its a
 
 ## What is it?
 
-The `Center` is a function that applies the flex centering attributes.
+`Center` is a function to help you organize the layout of your view. It centers the component passed as parameter by setting `justifyContent`, `alignItems`, `alignSelf` and `alignContent` to `CENTER`.
 
 See how the structure is represented:
 
