@@ -9,7 +9,7 @@ description: You will find here the description of the Styled function and its a
 
 ## What is it?
 
-`Styled` is a function that applies a size to your component.
+`Styled` is a function to help you organize the layout and style of your view. It is a simple way of setting various style properties at once.
 
 See how the structure is represented:
 
