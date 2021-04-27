@@ -16,7 +16,7 @@ See how the structure is represented:
 | **Attribute** | **Type**  | Required | **Definition** |
 | :----------- | :------------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------- |
 | self   | StyleComponent                                                |      ✓       | Component to receive the style. |
-| margin   | EdgeValue                                                |      ✓       | Value and position to be applied to the component. |
+| margin   | EdgeValue                                                |      ✓       | Margin to be applied to the component. |
 
 
 ## How to use it?
