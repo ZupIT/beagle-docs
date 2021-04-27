@@ -9,14 +9,14 @@ description: Descrição da função Margin e seus atributos
 
 ## O que é?
 
-O `Margin` é uma função que aplica um espaço vazio que envolve o componente.
+O `Margin` é uma função para ajudá-lo a organizar o layout de sua visualização. Ele cria um espaço entre o componente passado como parâmetro e o conteúdo externo, definindo suas margens para o valor fornecido.
 
 A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo**                                                       | Obrigatório | **Definição**                                                                                                     |
 | :----------- | :------------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------- |
-| self   | StyleComponent                                                |      ✓       | Componente a ser aplicado o estilo. |
-| margin   | EdgeValue                                                |      ✓       | Valor e posição a ser aplicado no componente. |
+| self   | StyleComponent                                                |      ✓       | Componente para receber o estilo. |
+| margin   | EdgeValue                                                |      ✓       | Margem a ser aplicado no componente. |
 
 
 ## Como usar?

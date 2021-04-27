@@ -9,13 +9,13 @@ description: Descrição da função Center e seus atributos
 
 ## O que é?
 
-O `Center` é uma função que aplica os atributos de centralização do flex.
+O `Center` é uma função para ajudá-lo a organizar o layout de sua visualização. Ele centraliza o componente passado como parâmetro definindo `justifyContent`,` alignItems`, `alignSelf` e` alignContent` como `CENTER`.
 
 A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo**                                                       | Obrigatório | **Definição**                                                                                                     |
 | :----------- | :------------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------- |
-| self   | StyleComponent                                                |      ✓       | Componente a ser aplicado o estilo. |
+| self   | StyleComponent                                                |      ✓       | Componente para receber o estilo. |
 
 
 ## Como usar?

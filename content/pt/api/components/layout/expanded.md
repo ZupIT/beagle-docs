@@ -9,13 +9,13 @@ description: Descrição da função Expanded e seus atributos
 
 ## O que é?
 
-O `Expanded` é uma função que aplica os atributos de expansão do flex, ocupa o espaço disponível.
+O `Expanded` é uma função para ajudá-lo a organizar o layout de sua visualização. Faz com que o componente passado como parâmetro expanda seu tamanho para todo o espaço disponível. Isso é obtido definindo `width` para 100%,` height` para 100%, `alignSelf` para` STRETCH` e `grow` para 1,0.
 
 A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo**                                                       | Obrigatório | **Definição**                                                                                                     |
 | :----------- | :------------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------- |
-| self   | StyleComponent                                                |      ✓       | Componente a ser aplicado o estilo. |
+| self   | StyleComponent                                                |      ✓       | Componente para receber o estilo. |
 
 
 ## Como usar?

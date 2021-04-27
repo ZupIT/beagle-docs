@@ -9,14 +9,14 @@ description: Descrição da função Padding e seus atributos
 
 ## O que é?
 
-O `Padding` é uma função que aplica um espaço vazio dentro do seu componente que reduz o seu tamanho.
+O `Padding` é uma função para ajudá-lo a organizar o layout do seu componente. Ele cria um espaço entre o componente passado como parâmetro e seu conteúdo, definindo seu `padding` (  propriedade de estilo) para o valor fornecido.
 
 A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo**                                                       | Obrigatório | **Definição**                                                                                                     |
 | :----------- | :------------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------- |
-| self   | StyleComponent                                                |      ✓       | Componente a ser aplicado o estilo. |
-| padding   | EdgeValue                                                |      ✓       | Valor e posição a ser aplicado no componente. |
+| self   | StyleComponent                                                |      ✓       | Componente para receber o estilo. |
+| padding   | EdgeValue                                                |      ✓       | Preenchimento a ser aplicado no componente. |
 
 
 ## Como usar?

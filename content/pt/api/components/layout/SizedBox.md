@@ -9,13 +9,13 @@ description: Descrição da função SizedBox e seus atributos
 
 ## O que é?
 
-O `SizedBox` é uma função que aplica um tamanho para o seu componente.
+O `SizedBox` é uma função para ajudá-lo a organizar o layout de sua visualização. Ele define o tamanho do componente passado como parâmetro com o valor fornecido. Isso é equivalente a definir a propriedade `style.size` do componente.
 
 A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo**                                                       | Obrigatório | **Definição**                                                                                                     |
 | :----------- | :------------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------- |
-| self   | StyleComponent                                                |      ✓       | Componente a ser aplicado o estilo. |
+| self   | StyleComponent                                                |      ✓       | Componente para receber o estilo. |
 | width   | Int / Double / UnitValue                                                |      ✓       | Valor da largura. |
 | height   | Int / Double / UnitValue                                                 |      ✓       | Valor da altura. |
 

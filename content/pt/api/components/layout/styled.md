@@ -9,13 +9,13 @@ description: Descrição da função Styled e seus atributos
 
 ## O que é?
 
-O `Styled` é uma função que aplica um tamanho para o seu componente.
+O `Styled` é uma função para ajudá-lo a organizar o layout e o estilo de sua visualização. É uma maneira simples de definir várias propriedades de estilo ao mesmo tempo.
 
 A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo**                                                       | Obrigatório | **Definição**                                                                                                     |
 | :----------- | :------------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------- |
-| self   | StyleComponent                                                |      ✓       | Componente a ser aplicado o estilo. |
+| self   | StyleComponent                                                |      ✓       | Componente para receber o estilo. |
 | block   | Style.() -> Unit                                                |      ✓       | Função para aplicar a estilização. |
 
 
