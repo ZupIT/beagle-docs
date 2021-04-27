@@ -1,21 +1,21 @@
 ---
-title: Padding
+title: Styled
 weight: 338
-description: Descrição da função Padding e seus atributos
+description: Descrição da função Styled e seus atributos
 ---
 
 ---
 
 
 ## O que é?
-O `Padding` é uma função que aplica um espaço vazio dentro do seu componente que reduz o seu tamanho.
+O `Styled` é uma função que aplica um tamanho para o seu componente.
 
 A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo**                                                       | Obrigatório | **Definição**                                                                                                     |
 | :----------- | :------------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------- |
 | self   | StyleComponent                                                |      ✓       | componente para aplicar o estilo |
-| padding   | EdgeValue                                                |      ✓       | Valor e posição a ser aplicado no componente |
+| block   | Style.() -> Unit                                                |      ✓       | função para aplicar a estilização |
 
 
 ## Como usar?
@@ -23,31 +23,31 @@ A sua estrutura é representada como mostrado abaixo:
 {{< tabs id="T145" >}}
 {{% tab name="JSON" %}}
 
-<!-- json-playground:padding.json
+<!-- json-playground:styled.json
 {
   "_beagleComponent_" : "beagle:text",
   "text" : "simple text",
   "style" : {
-    "padding" : {
-      "all" : {
-        "value" : 40.0,
-        "type" : "REAL"
-      }
+    "backgroundColor" : "#f1f1f1",
+    "flex" : {
+      "alignSelf" : "CENTER"
     }
   }
 }
 -->
 
-{{% playground file="padding.json" language="pt" %}}
+{{% playground file="styled.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
 
 ```kotlin
-Padding(
-  padding = EdgeValue.all(40),
-  self = Text("simple text")
-    )
+Styled(
+        self = Text("simple text")
+    ) {
+        backgroundColor = "#f1f1f1"
+        flex.alignSelf = AlignSelf.CENTER
+    }
 ```
 
 {{% /tab %}}

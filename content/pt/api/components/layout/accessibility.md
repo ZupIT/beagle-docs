@@ -1,21 +1,24 @@
 ---
-title: Padding
+title: Accessibility
 weight: 338
-description: Descrição da função Padding e seus atributos
+description: Descrição da função Accessibility e seus atributos
 ---
 
 ---
 
 
 ## O que é?
-O `Padding` é uma função que aplica um espaço vazio dentro do seu componente que reduz o seu tamanho.
+O `Accessibility` é uma função que aplica acessibilidade ao seu componente.
 
 A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo**                                                       | Obrigatório | **Definição**                                                                                                     |
 | :----------- | :------------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------- |
 | self   | StyleComponent                                                |      ✓       | componente para aplicar o estilo |
-| padding   | EdgeValue                                                |      ✓       | Valor e posição a ser aplicado no componente |
+| accessible | Boolean | ✓ | Indica se o componente será interpretado como acessível. Padrão é `true`. |
+| accessibilityLabel | String |   | Uma mensagem que será dita por programas como o `VoiceOver.` |
+| isHeader | Boolean |  | Indica se o componente será interpretado como um cabeçalho. Padrão é `false`. |
+
 
 
 ## Como usar?
@@ -23,30 +26,27 @@ A sua estrutura é representada como mostrado abaixo:
 {{< tabs id="T145" >}}
 {{% tab name="JSON" %}}
 
-<!-- json-playground:padding.json
+<!-- json-playground:accessibility.json
 {
   "_beagleComponent_" : "beagle:text",
   "text" : "simple text",
-  "style" : {
-    "padding" : {
-      "all" : {
-        "value" : 40.0,
-        "type" : "REAL"
-      }
-    }
+  "accessibility" : {
+    "accessible" : true,
+    "accessibilityLabel" : "text",
+    "isHeader" : false
   }
 }
 -->
 
-{{% playground file="padding.json" language="pt" %}}
+{{% playground file="accessibility.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
 
 ```kotlin
-Padding(
-  padding = EdgeValue.all(40),
-  self = Text("simple text")
+Accessibility(
+  self = Text("simple text"),
+  accessibilityLabel = "text"
     )
 ```
 
