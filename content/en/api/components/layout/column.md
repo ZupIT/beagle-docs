@@ -22,7 +22,7 @@ See how the structure is represented:
 | reverse   | Boolean                                                |             | Displays its elements from bottom to top. Default is `false`. |
 
 
-## Como usar?
+## How to use it?
 
 {{< tabs id="T145" >}}
 {{% tab name="JSON" %}}
