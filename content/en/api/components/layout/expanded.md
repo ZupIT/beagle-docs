@@ -9,7 +9,7 @@ description: You will find here the description of the Expanded function and its
 
 ## What is it?
 
-`Expanded` is a function that applies the expansion attributes of flex, occupies the available space.
+`Expanded` is a function to help you organize the layout of your view. It makes the component passed as parameter expand its size to all the available space. This is achieved by setting `width` to 100%, `height` to 100%, `alignSelf` to `STRETCH` and `grow` to 1.0.
 
 See how the structure is represented:
 
