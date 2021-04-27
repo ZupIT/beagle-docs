@@ -15,7 +15,7 @@ See how the structure is represented:
 
 | **Attribute** | **Type**  | Required | **Definition** |
 | :----------- | :------------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------- |
-| self   | StyleComponent                                                |      ✓       | Component to be applied the style. |
+| self   | StyleComponent                                                |      ✓       | Component to receive the style. |
 | padding   | EdgeValue                                                |      ✓       | Value and position to be applied to the component. |
 
 
