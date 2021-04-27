@@ -9,7 +9,7 @@ description: You will find here the description of the Padding function and its 
 
 ## What is it?
 
-`Padding` is a function that applies an empty space within its component that reduces its size.
+`Padding` is a function to help you organize the layout of your view. It creates a space between the component passed as parameter and its content by setting its padding (style property) to the given value.
 
 See how the structure is represented:
 
