@@ -15,7 +15,7 @@ See how the structure is represented:
 
 | **Attribute** | **Type**  | Required | **Definition** |
 | :----------- | :------------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------- |
-| self   | StyleComponent                                                |      ✓       | Component to be applied the style. |
+| self   | StyleComponent                                                |      ✓       | Component to receive the style. |
 | block   | Style.() -> Unit                                                |      ✓       | Function to apply styling. |
 
 
