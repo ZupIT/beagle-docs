@@ -9,7 +9,7 @@ description: You will find here the description of the Column function and its a
 
 ## What is it?
 
-`Column` is a function that displays your children in a vertical matrix.
+`Column` is a function to help you organize the layout of your view. It  creates a `Container` that displays its content in a vertical line. This is equivalent to create a `Container` with `flexDirection` equal to `COLUMN`.
 
 See how the structure is represented:
 
