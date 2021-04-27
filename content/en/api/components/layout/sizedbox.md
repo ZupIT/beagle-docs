@@ -9,7 +9,7 @@ description: You will find here the description of the SizedBox function and its
 
 ## What is it?
 
-`SizedBox` is a function that applies a size to your component.
+`SizedBox` is a function to help you organize the layout of your view. It sets the size of the component passed as parameter with the given value. This is equivalent to set the property `style.size` of the component.
 
 See how the structure is represented:
 
