@@ -6,21 +6,21 @@ description: You will find here the description of Container components and its 
 
 ---
 
-## What is it? 
+## What is it?
 
-`Container` is a component that contains other components inside it. 
+`Container` is a component that contains other components inside it.
 
 See how the structure is represented:
 
 | **Attribute** | **Type**  | Required | **Definition** |
 | :--- | :--- | :--- | :--- |
-| children | List &lt;[**ServerDriven Component**]({{< ref path="/api/widget" lang="en" >}})&gt; |    ✓ | Defines the component list that is part of the container.  |
+| children | List &lt;[**ServerDriven Component**]({{< ref path="/api/widget" lang="en" >}})&gt; |     | The components below this component in the tree.  |
 | context | [**ContextData**]({{< ref path="/api/context" lang="en" >}}) |  | It is the [**context**]({{< ref path="/api/context" lang="en" >}}) in this widget.  |
 | onInit | List&lt;[**Action**]({{< ref path="/api/actions" lang="en" >}})&gt; |  | It is a parameter that allows you to define a list of actions to be performed when the Widget is displayed. |
 | styleId   | String                                              |          | Refers to a locally configured style that it will be applied on the container. |
 
 
-## How to use it? 
+## How to use it?
 
 {{< tabs id="T127" >}}
 {{% tab name="JSON" %}}
@@ -35,7 +35,7 @@ See how the structure is represented:
     ],
     "context": {
         "id": "myContext",
-        "value": "Hello world!" 
+        "value": "Hello world!"
     }
 }
 -->

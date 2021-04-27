@@ -1,25 +1,25 @@
 ---
 title: Padding
 weight: 338
-description: Descrição da função Padding e seus atributos
+description: You will find here the description of the Padding function and its attributes details
 ---
 
 ---
 
 
-## O que é?
+## What is it?
 
-O `Padding` é uma função que aplica um espaço vazio dentro do seu componente que reduz o seu tamanho.
+`Padding` is a function that applies an empty space within its component that reduces its size.
 
-A sua estrutura é representada como mostrado abaixo:
+See how the structure is represented:
 
-| **Atributo** | **Tipo**                                                       | Obrigatório | **Definição**                                                                                                     |
+| **Attribute** | **Type**  | Required | **Definition** |
 | :----------- | :------------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------- |
-| self   | StyleComponent                                                |      ✓       | Componente a ser aplicado o estilo. |
-| padding   | EdgeValue                                                |      ✓       | Valor e posição a ser aplicado no componente. |
+| self   | StyleComponent                                                |      ✓       | Component to be applied the style. |
+| padding   | EdgeValue                                                |      ✓       | Value and position to be applied to the component. |
 
 
-## Como usar?
+## How to use it?
 
 {{< tabs id="T145" >}}
 {{% tab name="JSON" %}}

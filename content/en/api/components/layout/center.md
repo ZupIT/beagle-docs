@@ -1,24 +1,24 @@
 ---
 title: Center
 weight: 338
-description: Descrição da função Center e seus atributos
+description: You will find here the description of the Center function and its attributes details
 ---
 
 ---
 
 
-## O que é?
+## What is it?
 
-O `Center` é uma função que aplica os atributos de centralização do flex.
+The `Center` is a function that applies the flex centering attributes.
 
-A sua estrutura é representada como mostrado abaixo:
+See how the structure is represented:
 
-| **Atributo** | **Tipo**                                                       | Obrigatório | **Definição**                                                                                                     |
+| **Attribute** | **Type**  | Required | **Definition** |
 | :----------- | :------------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------- |
-| self   | StyleComponent                                                |      ✓       | Componente a ser aplicado o estilo. |
+| self   | StyleComponent                                                |      ✓       | Component to be applied the style. |
 
 
-## Como usar?
+## How to use it?
 
 {{< tabs id="T145" >}}
 {{% tab name="JSON" %}}

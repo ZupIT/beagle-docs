@@ -14,7 +14,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo**                                                       | Obrigatório | **Definição**                                                                                                     |
 | :----------- | :------------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------- |
-| children     | List &lt;[ServerDriven Component]({{< ref path="/api/components" lang="pt" >}})&gt; |            | Define a lista de componentes que fazem parte do container                                                        |
+| children     | List &lt;[ServerDriven Component]({{< ref path="/api/components" lang="pt" >}})&gt; |            | Os componentes abaixo deste componente na árvore.                                                       |
 | context      | [ContextData]({{< ref path="/api/context/" lang="pt" >}})                           |             | É o [contexto]({{< ref path="/api/context/" lang="pt" >}}) contido por este Widget.                                                    |
 | onInit       | List&lt;[Action]({{< ref path="/api/actions" lang="pt" >}})&gt;                     |             | Um parâmetro que te possibilita definir uma lista de ações a serem executadas assim que esse Widget seja exibido. |
 | styleId   | String                                                |             | Referencia o estilo configurado localmente a ser aplicado no container. |

@@ -8,13 +8,14 @@ description: Descrição da função Accessibility e seus atributos
 
 
 ## O que é?
+
 O `Accessibility` é uma função que aplica acessibilidade ao seu componente.
 
 A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo**                                                       | Obrigatório | **Definição**                                                                                                     |
 | :----------- | :------------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------- |
-| self   | StyleComponent                                                |      ✓       | componente para aplicar o estilo |
+| self   | StyleComponent                                                |      ✓       | Componente a ser aplicado o estilo. |
 | accessible | Boolean | ✓ | Indica se o componente será interpretado como acessível. Padrão é `true`. |
 | accessibilityLabel | String |   | Uma mensagem que será dita por programas como o `VoiceOver.` |
 | isHeader | Boolean |  | Indica se o componente será interpretado como um cabeçalho. Padrão é `false`. |

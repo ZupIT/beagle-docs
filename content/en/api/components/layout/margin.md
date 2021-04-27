@@ -1,25 +1,25 @@
 ---
 title: Margin
 weight: 338
-description: Descrição da função Margin e seus atributos
+description: You will find here the description of the Margin function and its attributes details
 ---
 
 ---
 
 
-## O que é?
+## What is it?
 
-O `Margin` é uma função que aplica um espaço vazio que envolve o componente.
+`Margin` is a function that applies an empty space that surrounds the component.
 
-A sua estrutura é representada como mostrado abaixo:
+See how the structure is represented:
 
-| **Atributo** | **Tipo**                                                       | Obrigatório | **Definição**                                                                                                     |
+| **Attribute** | **Type**  | Required | **Definition** |
 | :----------- | :------------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------- |
-| self   | StyleComponent                                                |      ✓       | Componente a ser aplicado o estilo. |
-| margin   | EdgeValue                                                |      ✓       | Valor e posição a ser aplicado no componente. |
+| self   | StyleComponent                                                |      ✓       | Component to be applied the style. |
+| margin   | EdgeValue                                                |      ✓       | Value and position to be applied to the component. |
 
 
-## Como usar?
+## How to use it?
 
 {{< tabs id="T145" >}}
 {{% tab name="JSON" %}}

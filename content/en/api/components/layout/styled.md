@@ -1,25 +1,25 @@
 ---
 title: Styled
 weight: 338
-description: Descrição da função Styled e seus atributos
+description: You will find here the description of the Styled function and its attributes details
 ---
 
 ---
 
 
-## O que é?
+## What is it?
 
-O `Styled` é uma função que aplica um tamanho para o seu componente.
+`Styled` is a function that applies a size to your component.
 
-A sua estrutura é representada como mostrado abaixo:
+See how the structure is represented:
 
-| **Atributo** | **Tipo**                                                       | Obrigatório | **Definição**                                                                                                     |
+| **Attribute** | **Type**  | Required | **Definition** |
 | :----------- | :------------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------- |
-| self   | StyleComponent                                                |      ✓       | Componente a ser aplicado o estilo. |
-| block   | Style.() -> Unit                                                |      ✓       | Função para aplicar a estilização. |
+| self   | StyleComponent                                                |      ✓       | Component to be applied the style. |
+| block   | Style.() -> Unit                                                |      ✓       | Function to apply styling. |
 
 
-## Como usar?
+## How to use it?
 
 {{< tabs id="T145" >}}
 {{% tab name="JSON" %}}

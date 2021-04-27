@@ -1,14 +1,15 @@
 ---
 title: Column
 weight: 338
-description: Descrição do componente Column e seus atributos
+description: Descrição da função Column e seus atributos
 ---
 
 ---
 
 
 ## O que é?
-O `Column` é um componente que exibe seus filhos em uma matriz vertical.
+
+O `Column` é uma função que exibe seus filhos em uma matriz vertical.
 
 A sua estrutura é representada como mostrado abaixo:
 
@@ -18,7 +19,7 @@ A sua estrutura é representada como mostrado abaixo:
 | context      | [ContextData]({{< ref path="/api/context/" lang="pt" >}})                           |             | É o [contexto]({{< ref path="/api/context/" lang="pt" >}}) contido por este Widget.                                                    |
 | onInit       | List&lt;[Action]({{< ref path="/api/actions" lang="pt" >}})&gt;                     |             | Um parâmetro que te possibilita definir uma lista de ações a serem executadas assim que esse Widget seja exibido. |
 | styleId   | String                                                |             | Referencia o estilo configurado localmente a ser aplicado no container. |
-| reverse   | Boolean                                                |             | Altera a ordem dos itens. Padrão é `false` |
+| reverse   | Boolean                                                |             | Altera a ordem dos itens. Padrão é `false`. |
 
 
 ## Como usar?

@@ -1,24 +1,24 @@
 ---
 title: Expanded
 weight: 338
-description: Descrição da função Expanded e seus atributos
+description: You will find here the description of the Expanded function and its attributes details
 ---
 
 ---
 
 
-## O que é?
+## What is it?
 
-O `Expanded` é uma função que aplica os atributos de expansão do flex, ocupa o espaço disponível.
+`Expanded` is a function that applies the expansion attributes of flex, occupies the available space.
 
-A sua estrutura é representada como mostrado abaixo:
+See how the structure is represented:
 
-| **Atributo** | **Tipo**                                                       | Obrigatório | **Definição**                                                                                                     |
+| **Attribute** | **Type**  | Required | **Definition** |
 | :----------- | :------------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------- |
-| self   | StyleComponent                                                |      ✓       | Componente a ser aplicado o estilo. |
+| self   | StyleComponent                                                |      ✓       | Component to be applied the style. |
 
 
-## Como usar?
+## How to use it?
 
 {{< tabs id="T145" >}}
 {{% tab name="JSON" %}}

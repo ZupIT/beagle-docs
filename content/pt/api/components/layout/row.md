@@ -8,6 +8,7 @@ description: Descrição da função Row e seus atributos
 
 
 ## O que é?
+
 O `Row` é uma função que exibe seus filhos em uma matriz horizontal.
 
 A sua estrutura é representada como mostrado abaixo:
@@ -18,7 +19,7 @@ A sua estrutura é representada como mostrado abaixo:
 | context      | [ContextData]({{< ref path="/api/context/" lang="pt" >}})                           |             | É o [contexto]({{< ref path="/api/context/" lang="pt" >}}) contido por este Widget.                                                    |
 | onInit       | List&lt;[Action]({{< ref path="/api/actions" lang="pt" >}})&gt;                     |             | Um parâmetro que te possibilita definir uma lista de ações a serem executadas assim que esse Widget seja exibido. |
 | styleId   | String                                                |             | Referencia o estilo configurado localmente a ser aplicado no container. |
-| reverse   | Boolean                                                |             | Exibe seus elementos da direita para a esquerda. Padrão é `false` |
+| reverse   | Boolean                                                |             | Exibe seus elementos da direita para a esquerda. Padrão é `false`. |
 
 
 ## Como usar?
