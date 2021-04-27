@@ -19,7 +19,7 @@ See how the structure is represented:
 | context      | [ContextData]({{< ref path="/api/context/" lang="pt" >}})                           |             | The [**context**]({{< ref path="/api/context" lang="en" >}}) linked to this widget.                                                    |
 | onInit       | List&lt;[**Action**]({{< ref path="/api/actions" lang="en" >}})&gt; |  | It is a parameter that allows you to define a list of actions to be performed when the Widget is displayed. |
 | styleId   | String                                                |             | Refers to a locally configured style that it will be applied on the container. |
-| reverse   | Boolean                                                |             | Changes the order of items. Default is `false`. |
+| reverse   | Boolean                                                |             | Displays its elements from bottom to top. Default is `false`. |
 
 
 ## Como usar?
