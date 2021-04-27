@@ -9,7 +9,7 @@ description: You will find here the description of the Row function and its attr
 
 ## What is it?
 
-`Row` is a function that displays your children in a horizontal matrix.
+`Column` is a function to help you organize the layout of your view. It  creates a `Container` that displays its content in a horizontal line. This is equivalent to create a `Container` with `flexDirection` equal to `ROW`.
 
 See how the structure is represented:
 
