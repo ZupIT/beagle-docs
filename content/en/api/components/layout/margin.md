@@ -9,7 +9,7 @@ description: You will find here the description of the Margin function and its a
 
 ## What is it?
 
-`Margin` is a function that applies an empty space that surrounds the component.
+`Margin` is a function to help you organize the layout of your view. It creates a space between the component passed as parameter and the outside content by setting its margins to the given value.
 
 See how the structure is represented:
 
