@@ -67,7 +67,7 @@ Caso queira adotar o Micronaut 2.0, pode usar o novo site de construção de pro
 
 - Clique no link a seguir para baixar um zip do projeto com as opções da imagem abaixo: [**Micronaut Launch para Beagle Micronaut Starter**](https://launch.micronaut.io/create/DEFAULT/com.example.bff?lang=kotlin&build=maven&test=junit&javaVersion=JDK_8).
 
-![Micronaut Launch com as configurações recomendadas para o iniciar o projeto do Beagle com o Micronaut](/image%20%28108%29.png)
+![Micronaut Launch com as configurações recomendadas para o iniciar o projeto do Beagle com o Micronaut](/shared/image%20%28108%29.png)
 
 - Essa configuração inicial utiliza:
   - Kotlin com Maven para`Java 8 (compatível com essa versão);`
