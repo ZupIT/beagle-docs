@@ -9,12 +9,12 @@ description: Here you'll find a description of accessibility attributes
 ## What is it?
 
 This component enables accessibility elements, such as a text message that can be read by a screen reader.
- 
+
 
 | **Attributes** | **Type** | Required | **Definition** |
 | :--- | :--- | :--- | :--- |
 | accessible | Boolean |   ✓ | Indicates whether the component will be interpreted as accessible. Default is `true`. |
-| accessibilityLabel | String |  | `string` containing a message that will be spoken by programs, like VoiceOver. |
+| accessibilityLabel | String |  | Contains a message that will be spoken by programs like `VoiceOver`. |
 | isHeader | Boolean |  | Indicates whether the component is a header. Default is `false`. |
 
 {{% alert color="warning" %}}
