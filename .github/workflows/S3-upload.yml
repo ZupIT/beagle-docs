@@ -13,8 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true  
-          fetch-depth: 0    
+          submodules: true
+          fetch-depth: 0
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -27,7 +27,7 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.78.1'
-          extended: true  
+          extended: true
 
       - name: S3 upload (images)
         run: aws s3 sync --acl public-read --follow-symlinks static/shared s3://$AWS_S3_BUCKET/shared/ --delete
@@ -36,9 +36,6 @@ jobs:
         shell: bash
         working-directory: static
         run: rm -rf shared
-      
-      - name: Cache Dependencies
-        uses: c-hive/gha-yarn-cache@v1
 
       - name: Installing Dependencies
         run: yarn
@@ -57,7 +54,7 @@ jobs:
 
       - name: Build
         run: yarn build-playground && hugo -D --minify -b $BASE_URL/$VERSION
-        env: 
+        env:
           BASE_URL: https://docs.usebeagle.io
           VERSION: ${{ steps.version.outputs.branch_version }}
 

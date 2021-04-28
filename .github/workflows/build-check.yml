@@ -10,17 +10,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true  
-          fetch-depth: 0    
+          submodules: true
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.78.1'
           extended: true
-
-      - name: Cache Dependencies
-        uses: c-hive/gha-yarn-cache@v1
 
       - name: Intall Dependencies
         run: yarn
