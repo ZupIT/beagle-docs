@@ -29,4 +29,4 @@ jobs:
           HORUSEC_CLI_REPOSITORY_AUTHORIZATION: ${{ env.BEAGLE_CORE_SECURITY_HORUSEC_CLI_REPOSITORY_AUTHORIZATION }}
         run: |
           curl -fsSL https://horusec.io/bin/install.sh | bash
-          horusec start -p ./ -a "$HORUSEC_CLI_REPOSITORY_AUTHORIZATION" -e true -u "https://api-horusec.zup.com.br" -G true -n "${GITHUB_REPOSITORY}_${GITHUB_REF##*/}"
+          horusec start -p ./ --ignore="*.md" -a "$HORUSEC_CLI_REPOSITORY_AUTHORIZATION" -e true -u "https://api-horusec.zup.com.br" -G true -n "${GITHUB_REPOSITORY}_${GITHUB_REF##*/}"
