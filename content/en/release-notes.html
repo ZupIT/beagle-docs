@@ -98,6 +98,36 @@
                 display: flex;
                 justify-content: space-between;
             }
+
+            .content__list__item {
+                list-style: none;
+            }
+
+            .content__list__item a {
+                padding-left: 22px;
+            }
+
+            .content__list__item a:before {
+                content: "✓";
+                font-family: monospace;
+                font-size: 15px;
+                color: #6BB55C;
+                border: 1px solid #6BB55C;
+                border-radius: 50%;
+                width: 13px;
+                height: 13px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 5px;
+                position: absolute;
+            }
+
+            .content__list__item.danger a:before {
+                color: #bb0000;
+                border-color: #bb0000;
+                content: "!";
+            }
         </style>
     </head>
 
@@ -112,20 +142,21 @@
 
                     <label><b>NEW FEATURES</b></label>
                     <div><ul>
-                        <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/api/components/layout/container/"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Added styleId attribute on the container component<https: docs.usebeagle.io="" v1.7="" api="" components="" layout="" container=""></https:></a></li>
-    <li class="content__list__item"><a target="_blank" class="content__list__link" > <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Added new layout components: Center, Column and Row</https:></a></li>
-    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://github.com/ZupIT/beagle/issues/1496"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Added support for empty children for Beagle components<https: github.com="" ZupIT="" beagle="" issues="" 1496=""></https:></a></li>
-    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/api/actions/navigate/route/remote/"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Added support for more HTTP parameters in navigation actions<https: docs.usebeagle.io="" v1.7="" api="" actions="" navigate="" route="" remote=""></https:></a></li>
+                        <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/api/components/layout/container/">Added styleId attribute on the container component<https: docs.usebeagle.io="" v1.7="" api="" components="" layout="" container=""></https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" >Added new layout components: Center, Column and Row</https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://github.com/ZupIT/beagle/issues/1496">Added support for empty children for Beagle components<https: github.com="" ZupIT="" beagle="" issues="" 1496=""></https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/api/actions/navigate/route/remote/">Added support for more HTTP parameters in navigation actions<https: docs.usebeagle.io="" v1.7="" api="" actions="" navigate="" route="" remote=""></https:></a></li>
     </ul></div>
 
                     <b><label>IMPACTS IN</label>
                         IOS/ANDROID/WEB<img class="plataform__icon" src="https://docs.usebeagle.io/shared/IOS.svg"><img class="plataform__icon" src="https://docs.usebeagle.io/shared/Android.svg"> <img class="plataform__icon" src="https://docs.usebeagle.io/shared/Web.svg">
     <p></p><p></p>
                     </b>
-                    <div><ul> <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/api/components/ui/textinput/"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Added enabled attribute in TextInput and the disabled attribute has been deprecated<https: docs.usebeagle.io="" v1.7="" api="" components="" ui="" textinput=""> </https:></a></li>
-    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/api/actions/navigate/overview/"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Added support for passing expression in OpenExternalURL, OpenNativeRoute and PopToView actions<https: docs.usebeagle.io="" v1.7="" api="" actions="" navigate="" overview=""> </https:></a></li>
-    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/get-started/installing-beagle/ios/"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Added SPM support in Beagle IOS project<https: docs.usebeagle.io="" v1.7="" get-started="" installing-beagle="" ios="" overview=""> </https:></a></li>
-    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://github.com/ZupIT/beagle/releases/tag/1.7.0"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Bugs fixed<https: github.com="" zupit="" beagle="" releases="" tag="" 1.7.0=""> </https:></a></li>
+                    <div><ul> <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/api/components/ui/textinput/">Added enabled attribute in TextInput and the disabled attribute has been deprecated<https: docs.usebeagle.io="" v1.7="" api="" components="" ui="" textinput=""> </https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/api/actions/navigate/overview/">Added support for passing expression in OpenExternalURL, OpenNativeRoute and PopToView actions<https: docs.usebeagle.io="" v1.7="" api="" actions="" navigate="" overview=""> </https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/get-started/installing-beagle/ios/">Added SPM support in Beagle IOS project<https: docs.usebeagle.io="" v1.7="" get-started="" installing-beagle="" ios="" overview=""> </https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://github.com/ZupIT/beagle/releases/tag/1.7.0">Bugs fixed<https: github.com="" zupit="" beagle="" releases="" tag="" 1.7.0=""> </https:></a></li>
+    <li class="content__list__item danger"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/get-started/installing-beagle/ios/">On iOS, YogaKit is now automatically resolved. You should remove YogaKit's dependency from your Podfile<https: docs.usebeagle.io="" v1.7="" get-started="" installing-beagle="" ios="" overview=""> </https:></a></li>
     </ul></div>
                     <div class="img_container">
                         <img class="img_people" src="https://docs.usebeagle.io/shared/People.svg">
@@ -134,8 +165,8 @@
                         <p>Thanks.</p>
                         <p>Team Beagle</p>
                         <div style="display: flex; justify-content: space-between; padding-top: 30px;">
-                            <p>© 2020 Bealge.All rights reserved.</p>
-                            <p>Powered by ZupI.T.Innovation</p>
+                            <p>© 2021 Beagle. All rights reserved.</p>
+                            <p>Powered by Zup I.T. Innovation</p>
                         </div>
                     </footer>
                 </div>
