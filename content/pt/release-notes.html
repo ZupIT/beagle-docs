@@ -97,6 +97,36 @@
                 display: flex;
                 justify-content: space-between;
             }
+
+            .content__list__item {
+                list-style: none;
+            }
+
+            .content__list__item a {
+                padding-left: 22px;
+            }
+
+            .content__list__item a:before {
+                content: "✓";
+                font-family: monospace;
+                font-size: 15px;
+                color: #6BB55C;
+                border: 1px solid #6BB55C;
+                border-radius: 50%;
+                width: 13px;
+                height: 13px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 5px;
+                position: absolute;
+            }
+
+            .content__list__item.danger a:before {
+                color: #bb0000;
+                border-color: #bb0000;
+                content: "!";
+            }
         </style>
     </head>
 
@@ -110,20 +140,21 @@
     <div class="beagle__version__text"><b><a target="_blank" class="beagle__version__link" href="https://github.com/ZupIT/beagle/releases/tag/1.7.0">VERSÃO 1.7.0</a></b></div></div>
 
                     <label><b>NOVAS FUNCIONALIDADES</b></label>
-                    <div><ul><li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/pt/api/components/layout/container/"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Adiciona o atributo styleId no componente container<https: docs.usebeagle.io="" v1.7="" pt="" api="" components="" layout="" container=""></https:></a></li>
-    <li class="content__list__item"><a target="_blank" class="content__list__link"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Adiciona novos componente de layout: Center, Column and Row</https:></a></li>
-    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://github.com/ZupIT/beagle/issues/1496"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Adiciona suporte para filhos vazios em componentes do Beagle<https: github.com="" ZupIT="" beagle="" issues="" 1496=""></https:></a></li>
-    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/pt/api/actions/navigate/route/remote/"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Adiciona suporte para mais parâmetros HTTP nas ações de navegação<https: docs.usebeagle.io="" v1.7="" pt="" api="" actions="" navigate="" route="" remote=""></https:></a></li>
+                    <div><ul><li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/pt/api/components/layout/container/">Adiciona o atributo styleId no componente container<https: docs.usebeagle.io="" v1.7="" pt="" api="" components="" layout="" container=""></https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link">Adiciona novos componente de layout: Center, Column and Row</https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://github.com/ZupIT/beagle/issues/1496">Adiciona suporte para filhos vazios em componentes do Beagle<https: github.com="" ZupIT="" beagle="" issues="" 1496=""></https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/pt/api/actions/navigate/route/remote/">Adiciona suporte para mais parâmetros HTTP nas ações de navegação<https: docs.usebeagle.io="" v1.7="" pt="" api="" actions="" navigate="" route="" remote=""></https:></a></li>
     </ul></div>
 
                     <b><label>IMPACTOS NO</label>
                         IOS/ANDROID/WEB<img class="plataform__icon" src="https://docs.usebeagle.io/shared/IOS.svg"><img class="plataform__icon" src="https://docs.usebeagle.io/shared/Android.svg"> <img class="plataform__icon" src="https://docs.usebeagle.io/shared/Web.svg">
     <p></p><p></p>
                     </b>
-                    <div><ul> <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/pt/api/components/ui/textinput/"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Adiciona atributo enabled no TextInput e o atributo disabled foi depreciado<https: docs.usebeagle.io="" v1.7="" pt="" api="" components="" ui="" textinput=""> </https:></a></li>
-    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/pt/api/actions/navigate/overview/"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Adiciona suporte para passar expressão nas ações OpenExternalURL, OpenNativeRoute e PopToView<https: docs.usebeagle.io="" v1.7="" pt="" api="" actions="" navigate="" overview=""> </https:></a></li>
-    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/pt/get-started/installing-beagle/ios/"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Adiciona suporte SPM em projeto Beagle IOS<https: docs.usebeagle.io="" v1.7="" pt="" get-started="" installing-beagle="" ios="" overview=""> </https:></a></li>
-    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://github.com/ZupIT/beagle/releases/tag/1.7.0"> <img class="content__list__icon" src="https://docs.usebeagle.io/shared/Icon.svg">Bugs corrigidos<https: github.com="" zupit="" beagle="" releases="" tag="" 1.7.0=""> </https:></a></li>
+                    <div><ul> <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/pt/api/components/ui/textinput/">Adiciona atributo enabled no TextInput e o atributo disabled foi depreciado<https: docs.usebeagle.io="" v1.7="" pt="" api="" components="" ui="" textinput=""> </https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/pt/api/actions/navigate/overview/">Adiciona suporte para passar expressão nas ações OpenExternalURL, OpenNativeRoute e PopToView<https: docs.usebeagle.io="" v1.7="" pt="" api="" actions="" navigate="" overview=""> </https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/pt/get-started/installing-beagle/ios/">Adiciona suporte SPM em projeto Beagle IOS<https: docs.usebeagle.io="" v1.7="" pt="" get-started="" installing-beagle="" ios="" overview=""> </https:></a></li>
+    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://github.com/ZupIT/beagle/releases/tag/1.7.0">Bugs corrigidos<https: github.com="" zupit="" beagle="" releases="" tag="" 1.7.0=""> </https:></a></li>
+    <li class="content__list__item danger"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/pt/get-started/installing-beagle/ios/">No iOS, o YogaKit agora é resolvido automaticamente, então você deve remover a dependência do YogaKit do seu Podfile<https: docs.usebeagle.io="" v1.7="" pt="" get-started="" installing-beagle="" ios="" overview=""> </https:></a></li>
     </ul></div>
                     <div class="img_container">
                         <img class="img_people" src="https://docs.usebeagle.io/shared/People.svg">
@@ -132,8 +163,8 @@
                         <p>Obrigado.</p>
                         <p>Equipe Beagle</p>
                         <div style="display: flex; justify-content: space-between; padding-top: 30px;">
-                            <p>© 2020 Bealge.All rights reserved.</p>
-                            <p>Powered by ZupI.T.Innovation</p>
+                            <p>© 2021 Beagle. All rights reserved.</p>
+                            <p>Powered by Zup I.T. Innovation</p>
                         </div>
                     </footer>
                 </div>
