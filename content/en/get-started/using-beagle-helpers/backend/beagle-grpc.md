@@ -120,7 +120,7 @@ dependencies {
 
 #### Using Beagle screen builders
 
-- Create a class named HomeScreen and extends ScreenBuilder of the beagle framework
+- Create a class named HomeScreen and extend it from ScreenBuilder , that is a beagle framework class
 
 ```kotlin
 import br.com.zup.beagle.widget.layout.Container
