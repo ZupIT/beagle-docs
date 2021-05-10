@@ -258,15 +258,18 @@ class MyBeagleAppService: BeagleScreenService() {
 {{% /tab %}}
 {{< /tabs >}}
 
-- Done! Your application will be available in localhost: - Micronaut: http://localhost:50051/ - Spring Boot: http://localhost:9090/
+Done! Your application will already be available in localhost:
+
+- Micronaut: `http://localhost:50051/`
+- Spring Boot: `http://localhost:9090/`
 
 ### Step 6: Access your screen service
 
 - Finally, you can access the Beagle screen payload using the getScreen method from the BeagleScreenService
 
-- For this, you need a client to get your service response. In this case, it is recommended the [BloomRPC](https://github.com/uw-labs/bloomrpc) to simulate a local request on your gRPC API:
+- For this example, you will need a client in order to get your service response. We recommend the [BloomRPC](https://github.com/uw-labs/bloomrpc) to simulate a local request on your gRPC API:
 
-- You can access the lib proto files [here](https://github.com/ZupIT/beagle-helpers/backend/grpc-lib/src/main/proto) because you will need them in the bloomRPC client.
+- You will also need to add the lib proto files in the bloomRPC client. You can access these files [here](https://github.com/ZupIT/beagle-helpers/backend/grpc-lib/src/main/proto)
 
 ### **Read more about beagle gRPC**
 
