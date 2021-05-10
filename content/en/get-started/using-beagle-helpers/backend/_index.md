@@ -2,5 +2,5 @@
 title: Backend
 weight: 2
 description: >-
-  Here, you’ll find all backend libs to help you to use Beagle.
+ This section lists all backend libs that will help you to use Beagle.
 ---
