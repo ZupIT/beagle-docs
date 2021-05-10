@@ -25,7 +25,7 @@ gRPC service that makes it possible to register your screens and a method that r
 
 - Requirements:
   - JDK 8+
-- We recommend using lib with springboot or micronaut to facilitate usability. Follow both examples below.
+- It is recommended that you use a lib with springboot or micronaut to help on usability. Follow both examples below.
 
 {{% /alert %}}
 
