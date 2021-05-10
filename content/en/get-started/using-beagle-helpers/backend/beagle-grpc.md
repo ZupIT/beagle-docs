@@ -2,7 +2,7 @@
 title: "Beagle gRPC"
 weight: 1
 description: >-
-  It is a backend Library that provides a gRPC service allowing your gRPC application to support Beagle Screens.
+  In this section, you will find all information related to a backend Library that provides a gRPC service allowing your gRPC application to support Beagle Screens.
 ---
 
 ## What is gRPC?
