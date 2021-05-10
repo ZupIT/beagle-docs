@@ -264,7 +264,7 @@ class MyBeagleAppService: BeagleScreenService() {
 
 - Finally, you can access the Beagle screen payload through the getScreen method of BeagleScreenService endpoint
 
-- For this, you need a client to get your service response, we recommended the [BloomRPC](https://github.com/uw-labs/bloomrpc) to simulate a local request on your gRPC API:
+- For this, you need a client to get your service response. In this case, it is recommended the [BloomRPC](https://github.com/uw-labs/bloomrpc) to simulate a local request on your gRPC API:
 
 - You can access the lib proto files [here](https://github.com/ZupIT/beagle-helpers/backend/grpc-lib/src/main/proto), you will need them in the bloomRPC client
 
