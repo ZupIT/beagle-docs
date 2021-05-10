@@ -179,7 +179,7 @@ object SplashScreen : ScreenBuilder {
 
 #### Using Beagle grpc lib
 
-- Create a class named MyBeagleAppService and extends BeagleScreenService
+- Create a class named MyBeagleAppService and extend it from BeagleScreenService
 
 {{< tabs id="tab-9192" >}}
 {{% tab name="Spring Boot" %}}
