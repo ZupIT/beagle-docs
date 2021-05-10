@@ -139,7 +139,7 @@ class HomeScreen(private val parameters: String) : ScreenBuilder {
 }
 ```
 
-- Create another class named SplashScreen and extends ScreenBuilder too.
+- Create another class named SplashScreen that extends from ScreenBuilder too.
 
 ```kotlin
 import br.com.zup.beagle.core.Style
