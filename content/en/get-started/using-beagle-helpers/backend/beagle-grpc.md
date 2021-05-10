@@ -258,7 +258,7 @@ class MyBeagleAppService: BeagleScreenService() {
 {{% /tab %}}
 {{< /tabs >}}
 
-- Done! Your application already be available in localhost: - Micronaut: http://localhost:50051/ - Spring Boot: http://localhost:9090/
+- Done! Your application will be available in localhost: - Micronaut: http://localhost:50051/ - Spring Boot: http://localhost:9090/
 
 ### Step 6: Access your screen service
 
