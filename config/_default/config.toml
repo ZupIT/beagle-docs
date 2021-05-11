@@ -77,6 +77,7 @@ search_label = "Looking for something?"
 faq_path = "/faq"
 current_version = ""
 
+isDocumentationDeprecated = true
 edit_page = "Edit this page"
 create_page = "Create new page"
 create_issue = "Create docs issue"
