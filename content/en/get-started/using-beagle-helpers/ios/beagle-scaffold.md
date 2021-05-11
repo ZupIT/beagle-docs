@@ -22,15 +22,7 @@ This tutorial will configure Beagle from the Start.
 
 **Step 1**: Create a new app project using Xcode.
 
-**Step 2**: First things first, we are going to be using a view code approach here, so we need to delete all references to _main.storyboard_, which is the way that Xcode usually set your project to initialize. These references are localized at:
-
-* info.plist > Application Scene Manifest > Scene Configuration > Application Session Role > Item 0 (Default Configuration) > Storyboard Name
-* info.plist > Main storyboard file base name
-* yourProject.xcodeproj > General > Main Interface
-
-Delete these three. The third one you have to erase and confirm.
-
-**Step 3**: Add BeagleScaffold as a dependency of your project using CocoaPods:
+**Step 2**: Use `pod init` command in your terminal to create a Podfile and add Beagle Scaffold as a dependency to your project:
 - https://cocoapods.org/pods/BeagleScaffold
 
 ```ruby
@@ -41,15 +33,9 @@ end
 
 If you're not familiar with CocoaPods, check their [documentation](https://guides.cocoapods.org/).
 
-Also add the YogaKit dependency to your project via CocoaPods, but point to our repo because we need some changes that weren't merged on their official repository. Like so:
-
-```ruby
-pod 'YogaKit', :git => 'https://github.com/ZupIT/YogaKit'
-```
-
 BeagleScaffold has default implementations of a Network layer, Cache and Logger for you, embedded in [BeagleDefaults](https://docs.usebeagle.io/get-started/using-beagle-helpers/ios/beagle-defaults).
 
-**Step 4**: To add Beagle configurations to your application, import the lib `BeagleScaffold` and just call our function named `start()` from the class `BeagleConfig`, in your `SceneDelegate` inside the method `scene()`:
+**Step 3**: To add Beagle configurations to your application, import the lib `BeagleScaffold` and just call our function named `start()` from the class `BeagleConfig`, in your `SceneDelegate` inside the method `scene()`:
 
 ```swift
 func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -59,7 +45,7 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 }
 ```
 
-**Step 5**: Now for the last step to run the application, we're going to do the "view code" section here. 
+**Step 4**: Now for the last step to run the application, we're going to do our project initialization using View Code here. 
 
 Still in the method `scene`, give the name `windowScene` to the `guard let` already created for us by Xcode:
 
@@ -85,7 +71,7 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 }
 ```
 
-**Step 6**: Run your project, and you should see a sample screen with all Beagle components on your simulator.
+**Step 5**: Run your project, and you should see a sample screen with all Beagle components on your simulator.
 
 <hr>
 
