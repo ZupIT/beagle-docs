@@ -48,7 +48,7 @@ jobs:
       - name: Config version path
         working-directory: config/_default
         shell: bash
-        run: sed -i -E "s/version_path = .*/version_path = \"\/$VERSION\"/g" config.toml
+        run: sed -i -E "s/current_version = .*/current_version = \"$VERSION\"/g" config.toml
         env:
           VERSION: ${{ steps.version.outputs.branch_version }}
 
