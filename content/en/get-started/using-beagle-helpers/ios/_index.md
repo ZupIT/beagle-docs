@@ -8,6 +8,7 @@ description: 'Here you will find libraries to help when you want to start a proj
 
 ![Cocoapods](https://img.shields.io/cocoapods/v/BeagleScaffold?label=Beagle-Scaffold)
 ![Cocoapods](https://img.shields.io/cocoapods/v/BeagleDefaults?label=Beagle-Defaults)
+![Cocoapods](https://img.shields.io/cocoapods/v/BeagleGRPC?label=Beagle%20gRPC)
 ![Cocoapods](https://img.shields.io/cocoapods/v/Beagle?label=Beagle)
 
 ### Getting started
@@ -20,6 +21,9 @@ We advise using these libs for people that never used Beagle before.
 
 * [Beagle-Defaults]({{< ref path="/get-started/using-beagle-helpers/ios/beagle-defaults" lang="en" >}}):
 This lib is meant for more experienced Beagle users and will hold only a few class configurations necessary to use Beagle in an application. These configurations include default Network, Logger and Cache classes. All these are also available in the Scaffold lib above.
+
+* [Beagle-gRPC]({{< ref path="/get-started/using-beagle-helpers/ios/beagle-grpc" lang="en" >}}):
+Use this library to connect to a Beagle gRPC BFF.
 
 {{% alert color="warning" %}}
 If you wish to use Beagle for an application in production we advise you to configure a project
