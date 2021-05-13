@@ -27,6 +27,10 @@ use Beagle in an application. These configurations include
 default HttpClient, Logger and Cache classes.<br>
 All these are also available in the Scaffold lib above.
 
+* [Beagle-gRPC]({{< ref path="/get-started/using-beagle-helpers/android/beagle-grpc" lang="en" >}}):
+This lib is advised for more experienced Beagle users and 
+will hold only a few class configurations necessary to 
+use gRPC in a Beagle based application.<br>
 
 {{% alert color="warning" %}}
 If you wish to use Beagle for an application in production we advise you to configure a project
