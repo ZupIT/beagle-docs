@@ -13,7 +13,7 @@ description: 'Nesta seção, você encontra uma descrição sobre a API de Acess
 | **Atributo** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :---: | :--- |
 | accessible | Boolean | ✓ | Indica se o componente será interpretado como acessível. Default é `true`. |
-| accessibilityLabel | String |   | Uma mensagem que será dita por programas como o `VoiceOver.` |
+| accessibilityLabel | String |   | Contém uma mensagem que será dita por programas como o `VoiceOver.` |
 | isHeader | Boolean |  | Indica se o componente será interpretado como um cabeçalho. Default é `false`. |
 
 {{% alert color="warning" %}}

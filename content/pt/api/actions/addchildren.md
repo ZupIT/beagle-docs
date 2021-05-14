@@ -17,7 +17,7 @@ A estrutura do **AddChildrenAction** é:
 | **Atributo** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :---: | :--- |
 | componentId | String | ✓ | Define o id do Widget, no qual deseja adicionar as views. |
-| value | List&lt;ServerDrivenComponent&gt; | ✓ | Define a lista de filhos que deseja adicionar. |
+| value | List&lt;ServerDrivenComponent&gt; ou [**Binding**]({{< ref path="/api/context#bindings" lang="pt" >}}) | ✓ | Define a lista de filhos que deseja adicionar. |
 | mode | Mode |   | Define o posicionamento de onde os filhos serão inseridos na lista ou se o conteúdo da lista será substituído. **Por padrão o modo definido é `APPEND`.** |
 
 ### Mode
