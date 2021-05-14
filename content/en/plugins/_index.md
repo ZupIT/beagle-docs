@@ -2,5 +2,5 @@
 title: Plugins
 weight: 251
 description: >-
-  Nesta seção estão listados os plugins desenvolvidos para facilitar o uso do Beagle
+  In this section you will find some plugins made to help creating Beagle components and pages
 ---
