@@ -26,6 +26,9 @@ Aconselhamos o uso dessas bibliotecas para pessoas que nunca usaram o Beagle ant
 classes HttpClient, Logger e Cache padrão.<br>
 Todos estes também estão disponíveis na biblioteca Scaffold acima.
 
+* [Beagle-gRPC](https://github.com/ZupIT/beagle-helpers/tree/main/android/beagle-grpc}):
+Esta biblioteca mantém as configurações necessárias para utilizar gRPC em uma aplicação baseada em Beagle.<br>
+
 
 {{% alert color="warning" %}}
 Se você deseja usar o Beagle para um aplicativo em produção, recomendamos que você configure um projeto
