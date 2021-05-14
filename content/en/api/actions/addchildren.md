@@ -10,12 +10,12 @@ description: You will find here AddChildrenAction definition and its attributes 
 
 The `AddChildrenAction` class is responsible for adding - at the beginning or in the end - or changing all views that inherit from  `Widget`  and who accept children.
 
-The AddChildrenAction structure is: 
+The AddChildrenAction structure is:
 
 | **Attribute** | **Type** | Required | **Definition** |
 | :--- | :--- | :--- | :--- |
 | componentId | String |       ✓ | Defines the widget's id, in which you want to add the views. |
-| value | List&lt;ServerDrivenComponent&gt; |        ✓ | Defines the list of children you want to add. |
+| value | List&lt;ServerDrivenComponent&gt; or [**Binding**]({{< ref path="/api/context#bindings" lang="en" >}})  |        ✓ | Defines the list of children you want to add. |
 | mode | Mode |  | Defines the placement of where the children will be inserted in the list or if the contents of the list will be replaced. **By default the set mode is `APPEND`.** |
 
 ### Mode

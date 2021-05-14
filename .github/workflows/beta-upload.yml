@@ -13,8 +13,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true  
-          fetch-depth: 0    
+          submodules: true
+          fetch-depth: 0
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -28,9 +28,6 @@ jobs:
         with:
           hugo-version: '0.78.1'
           extended: true
-
-      - name: Cache Dependencies
-        uses: c-hive/gha-yarn-cache@v1
 
       - name: Installing Dependencies
         run: yarn
