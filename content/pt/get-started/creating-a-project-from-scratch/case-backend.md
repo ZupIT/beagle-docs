@@ -68,7 +68,9 @@ O segundo passo é criar alguns pacotes para organizar melhor o projeto. Eles se
 4. Repita o processo criando os dois outros pacotes, nomeando-os `service` e `controller`
 5. Após a criação dos pacotes, a sua tela deverá estar assim:
 
-![](/shared/image%20%2829%29.png)
+{{% alert color="warning" %}}
+  É importante reafirmar que as classes `service`, `controller` e `builder` devem estar no mesmo pacote que a `Application file`, como exemplificado abaixo:
+{{% /alert %}}
 
 ### Passo 3:‌ Criar o serviço da aplicação
 
