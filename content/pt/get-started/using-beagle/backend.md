@@ -31,6 +31,12 @@ Disponibilizamos uma constante, `BEAGLE_EXPOSED_HEADERS`, contendo uma lista dos
 
 ### Passo 1: Criar um serviço
 
+{{% alert color="warning" %}}
+  É importante reafirmar que as classes `service`, `controller` ou `builder` devem estar no mesmo pacote que a `Application file`, como exemplificado abaixo:
+{{% /alert %}}
+
+![](/shared/image%20%2829%29.png)
+
 {{< tabs id="T2" >}}
 {{% tab name="Micronaut" %}}
 Para começar, você deve criar uma classe para configurar um serviço. O processo é bem simples basta:

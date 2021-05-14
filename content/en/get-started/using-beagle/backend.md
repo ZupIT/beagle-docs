@@ -31,6 +31,12 @@ We provided a constant `BEAGLE_EXPOSED_HEADERS`, that contains a list of headers
 
 ### Step 1: Create a service
 
+{{% alert color="warning" %}}
+  Please, take notice that when creating services, controllers or builders they must be at the same package that contains your application file, just like in the example below
+{{% /alert %}}
+
+![](/shared/image%20%2829%29.png)
+
 {{< tabs id="T2" >}}
 {{% tab name="Micronaut" %}}
 First, you should create a class to configure a `Service` . The process is pretty simple, you just have to:
