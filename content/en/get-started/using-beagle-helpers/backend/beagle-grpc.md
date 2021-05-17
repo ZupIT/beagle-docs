@@ -258,6 +258,35 @@ class MyBeagleAppService: BeagleScreenService() {
 {{% /tab %}}
 {{< /tabs >}}
 
+#### Linux or Mac systems
+
+- Open a terminal, navigate to the new created project root and run the command:
+
+{{< tabs id="tab-8175621" >}}
+{{% tab name="Gradle" %}}
+
+```shell
+./gradlew run
+```
+
+{{% /tab %}}
+{{% tab name="Maven" %}}
+
+#### Micronaut
+
+```shell
+./mvnw mn:run
+```
+
+#### Spring Boot
+
+```shell
+./mvnw spring-boot:run
+```
+
+{{% /tab %}}
+{{< /tabs >}}
+
 Done! Your application will already be available in localhost:
 
 - Micronaut: `http://localhost:50051/`
