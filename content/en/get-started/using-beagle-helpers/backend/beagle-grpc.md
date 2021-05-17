@@ -177,7 +177,7 @@ object SplashScreen : ScreenBuilder {
 
 ### Step 4: Create a gRPC service
 
-#### Using Beagle grpc lib
+#### Using Beagle gRPC lib
 
 - Create a class named MyBeagleAppService and extend it from BeagleScreenService
 
