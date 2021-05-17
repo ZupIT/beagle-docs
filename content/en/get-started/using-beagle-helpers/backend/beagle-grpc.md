@@ -231,7 +231,7 @@ class MyBeagleAppService: BeagleScreenService() {
 
 #### Windows System
 
-- Open a terminal and navigate to your new created project root and run the command:
+- Open a terminal, navigate to the new created project root and run the command:
 
 {{< tabs id="tab-8175" >}}
 {{% tab name="Gradle" %}}
