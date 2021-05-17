@@ -55,7 +55,7 @@ gRPC service that makes it possible to register your screens, and a method that 
 
 ### Step 2: Install Beagle gRPC lib
 
-- Open the gradle.build file (or pom.xml if you choose maven) in your project root and add the Beagle gRPC library
+- Open the gradle.build file (or pom.xml if you choose Maven) in your project root and add the Beagle gRPC library
 
 {{< tabs id="n01023810872619" >}}
 {{% tab name="Spring Boot" %}}
