@@ -7,7 +7,7 @@ description: >-
 
 ## What is gRPC?
 
-gRPC is a new and fast growing technology to communicate different systems through a network connection. It's based on
+gRPC is a new and fast growing technology that allows different systems to communicate through a network connection. It's based on
 **HTTP 2** and is an alternative to the more common standard **REST**. The gRPC proposal is that the client interacts with the
 server through simple function calls. These functions are code automatically generated via the gRPC tool.
 
