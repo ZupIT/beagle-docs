@@ -17,7 +17,7 @@ server through simple function calls. These functions are code automatically gen
 
 This library allows you to create Beagle applications using gRPC. It acts as a translator, converting the beagle's JSON contract
 to a protocol buffer, allowing your BFF to connect with any gRPC application. The lib provides an abstraction that implements a
-gRPC service that makes it possible to register your screens and a method that returns them to a gRPC client.
+gRPC service that makes it possible to register your screens, and a method that returns them to a gRPC client.
 
 ## How to use Beagle gRPC in your BFF project
 
