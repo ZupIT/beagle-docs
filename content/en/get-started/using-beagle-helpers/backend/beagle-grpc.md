@@ -36,7 +36,7 @@ gRPC service that makes it possible to register your screens, and a method that 
 
 #### Use spring project generator
 
-- You can access [spring website here](https://start.spring.io) and generate a zip project with the basic settings already configured.
+- You can access [Spring Boot website here](https://start.spring.io) and generate a zip project with the basic settings already configured.
 
 ![](/shared/Screenshot-spring-initializer-grpc-example.png)
 
