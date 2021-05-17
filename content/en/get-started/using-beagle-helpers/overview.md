@@ -21,6 +21,6 @@ All these are also available in the Scaffold lib above.
 used by Beagle, to proto buffer in gRPC
 
 {{% alert color="warning" %}}
-If you wish to use Beagle for an application in production we advise you to [configure a project
+If you wish to use Beagle for an application in production, we advise you to [configure a project
  from scratch]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/" lang="en" >}})
 {{% /alert %}}
