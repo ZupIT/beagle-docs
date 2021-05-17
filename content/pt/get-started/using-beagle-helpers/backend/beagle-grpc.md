@@ -13,9 +13,7 @@ gRPC é uma tecnologia nova e de rápido crescimento que permite que diferentes 
 
 ## Como o Beagle gRPC funciona?
 
-Esta biblioteca permite criar aplicativos Beagle usando gRPC. Ela atua como um tradutor, convertendo o contrato JSON do beagle
-em protocol buffer, permitindo que seu BFF se conecte com qualquer aplicação gRPC. A lib fornece uma abstração que implementa um
-serviço gRPC possibilitando o registro de suas telas através de um método, além disso, as retorna desserializadas para um cliente gRPC.
+Essa biblioteca permite que você crie BFFs do Beagle e exiba suas screens com gRPC. Ele atua como um tradutor, convertendo JSONs do Beagle em protocol buffers. A lib fornece uma abstração que implementa um serviço gRPC que possibilita o registro de suas screens e um método que as retorna para um cliente gRPC.
 
 ## Como usar o Beagle gRPC no seu BFF?
 
