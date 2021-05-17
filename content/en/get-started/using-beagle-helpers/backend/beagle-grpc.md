@@ -34,7 +34,7 @@ gRPC service that makes it possible to register your screens, and a method that 
 {{< tabs id="n7139528701" >}}
 {{% tab name="Spring Boot" %}}
 
-#### Use spring project generator
+#### Using Spring Boot project generator
 
 - You can access [Spring Boot website here](https://start.spring.io) and generate a zip project with the basic settings already configured.
 
