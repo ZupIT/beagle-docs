@@ -116,7 +116,7 @@ dependencies {
 
 #### Usando os screen builders do Beagle
 
-- Crie uma classe chamada HomeScreen e extenda-a de ScreenBuilder, que é uma das abstração para contrução de telas fornecida pelo Beagle framework
+- Crie uma classe chamada HomeScreen, estendendo de ScreenBuilder, que é uma das abstrações para a construção de telas fornecidas pelo Beagle framework
 
 ```kotlin
 import br.com.zup.beagle.widget.layout.Container
