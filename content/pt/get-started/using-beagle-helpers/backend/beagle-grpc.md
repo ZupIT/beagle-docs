@@ -32,7 +32,7 @@ Essa biblioteca permite que você crie BFFs do Beagle e exiba suas screens com g
 
 #### Gerando um projeto Spring Boot
 
-- Você pode acessar o [website do spring boot](https://start.spring.io) e gerar um arquivo zip do projeto com as configurações basicas definidas por padrão.
+- Você pode acessar o [website do Spring Boot](https://start.spring.io) e gerar um arquivo zip do projeto com as configurações básicas definidas por padrão.
 
 ![](/shared/Screenshot-spring-initializer-grpc-example.png)
 
