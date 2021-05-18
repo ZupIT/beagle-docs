@@ -13,8 +13,7 @@ To start using Beagle right now, you can use the libs below:
 - **Beagle-Scaffold:** This lib will hold almost all configurations needed to start using Beagle in your project.
 We advise the use of these libs for people that never used Beagle before.
 
-- **Beagle-Defaults:** This lib is advised for more experienced Beagle users and will hold only a few class configurations 
-- necessary to use Beagle in an application. These configurations include default HttpClient, Logger and Cache classes.<br>
+- **Beagle-Defaults:** This lib is advised for more experienced Beagle users and will hold only a few class configurations necessary to use Beagle in an application. These configurations include default HttpClient, Logger and Cache classes.<br>
 All these are also available in the Scaffold lib above.
 
 - **Beagle-gRPC:** This library allows you to use Beagle in gRPC applications, converting the JSON contract 

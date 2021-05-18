@@ -8,7 +8,7 @@ description: 'This framework provides a client to communicate with Beagle using 
 
 ### Supported Platforms
 
-Beagle gRPC's platform support is identical to the platform support of Beagle (iOS 10+).
+Beagle gRPC's platform support is identical to the platform support of Beagle.
 Note that Beagle gRPC uses [gRPC Swift](https://github.com/grpc/grpc-swift#readme) and requires Swift to be version 5.2 or higher.
 
 ### NetworkClientGRPC
@@ -76,11 +76,14 @@ import BeagleGRPC
 let dependencies = BeagleDependencies()
 Beagle.dependencies = dependencies
 
+let baseUrl = "http://0.0.0.0:50051"
 dependencies.networkClient = NetworkClientGRPC(
-    grpcAddress: "grpc://0.0.0.0:50051",
+    grpcAddress: baseUrl,
     customHttpClient: nil
 )
-dependencies.urlBuilder = UrlBuilder(baseUrl: URL(string: "grpc://0.0.0.0:50051"))
+dependencies.urlBuilder = UrlBuilder(
+  baseUrl: URL(string: baseUrl)
+)
 ```
 
 Now you are ready to connect to your gRPC server.
