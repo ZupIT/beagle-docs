@@ -21,7 +21,7 @@ Essa biblioteca permite que você crie BFFs do Beagle e exiba suas screens com g
 
 - Requisitos:
   - JDK 8+
-- É recomendado que utilize os frameworks do spring boot e micronaut para facilitar a usabilidade da bibloteca.
+- É recomendado que utilize os frameworks do Spring boot e Micronaut para facilitar a usabilidade da bibloteca.
 
 {{% /alert %}}
 
