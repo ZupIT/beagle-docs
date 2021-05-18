@@ -42,7 +42,7 @@ This library allows you to create Beagle BFFs serving screens through gRPC. It a
 
 #### Using Micronaut project generator
 
-- You can access [micronaut website here](https://micronaut.io/launch/) and generate a zip project with the basic settings already configured
+- You can access [Micronaut website here](https://micronaut.io/launch/) and generate a zip project with the basic settings already configured
 
 {{% tab name="Micronaut" %}}
 ![](/shared/Screenshot-micronaut-grpc-example.png)
