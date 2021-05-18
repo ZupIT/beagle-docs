@@ -40,7 +40,7 @@ Essa biblioteca permite que você crie BFFs do Beagle e exiba suas screens com g
 
 #### Gerando um projeto com micronaut
 
-- Voce pode acessar o [website do micronaut](https://micronaut.io/launch/) e gerar um arquivo zip do projeto com as configurações básicas definidas por padrão
+- Voce pode acessar o [website do Micronaut](https://micronaut.io/launch/) e gerar um arquivo zip do projeto com as configurações básicas definidas por padrão
 
 {{% tab name="Micronaut" %}}
 ![](/shared/Screenshot-micronaut-grpc-example.png)
