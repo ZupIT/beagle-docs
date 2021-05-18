@@ -292,7 +292,7 @@ Pronto! Sua aplicação estará disponível localmente no endereço:
 
 - Finalmente, voce pode acessar os retornos do seu seu serviço gRPC usando o método getScreen do BeagleScreenService que foi implementado.
 
-- Para este exemplo, você precisará de um cliente para obter a resposta do serviço. Recomendamos o [BloomRPC](https://github.com/uw-labs/bloomrpc) para simular uma solicitação local em sua API gRPC:
+- Para este exemplo, você precisará de um cliente para obter a resposta do serviço. Recomendamos o [BloomRPC](https://github.com/uw-labs/bloomrpc) para simular uma solicitação local em sua API gRPC
 
 - Você também precisará adicionar os arquivos proto da lib do Beagle gRPC no cliente bloomRPC. Você pode acessar esses arquivos [aqui](https://github.com/ZupIT/beagle-helpers/backend/grpc-lib/src/main/proto)
 
