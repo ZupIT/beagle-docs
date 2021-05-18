@@ -49,7 +49,7 @@ This library allows you to create Beagle BFFs serving screens through gRPC. It a
 {{% /tab %}}
 {{< /tabs >}}
 
-- Now, you can extract zip folder generated, and open with your favorite IDE. We recomended Intellij Community.
+- Open the extracted folder in your favorite IDE. We recommend Intellij Community.
 
 ### Step 2: Install Beagle gRPC lib
 
