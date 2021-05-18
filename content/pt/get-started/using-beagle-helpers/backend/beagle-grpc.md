@@ -298,4 +298,4 @@ Pronto! Sua aplicação estará disponível localmente no endereço:
 
 ### **Leia mais sobre o beagle com gRPC**
 
-#### 👉 Este tutorial está disponível no github com exemplos mais avançados, como headers e interceptors por exemplo. Se você estiver interessado, acesse-os [exemplos de back-end aqui](https://github.com/ZupIT/beagle-helpers/backend/examples)
+#### 👉 Este tutorial está disponível no GitHub com exemplos mais avançados, como headers e interceptors por exemplo. Se você estiver interessado, [acesse-os aqui](https://github.com/ZupIT/beagle-helpers/backend/examples)
