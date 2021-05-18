@@ -38,7 +38,7 @@ Essa biblioteca permite que você crie BFFs do Beagle e exiba suas screens com g
 
 {{% /tab %}}
 
-#### Gerando um projeto com micronaut
+#### Gerando um projeto com Micronaut
 
 - Voce pode acessar o [website do Micronaut](https://micronaut.io/launch/) e gerar um arquivo zip do projeto com as configurações básicas definidas por padrão
 
