@@ -9,7 +9,7 @@ description: >-
 
 ## What this Plugin does?
 
-By suing this plugin the developer will be able to create custom Beagle components automatically with just two clicks.
+When using this plugin the developer will be able to create custom Beagle components automatically with just two clicks.
 
 In addition, it also provides a series of *live templates* with default Beagle components that can be used when creating a screen, such as Containers components, ScrollViews, etc ...
 
@@ -26,15 +26,6 @@ To install it, open Intellij or Android Studio and click:
 * *Install* and enjoy.
 
 ## How to use the Class Creator?
-
-Após a instalação, siga as instruções abaixo:
-
-* Clique com o botão direito do mouse no pacote onde se quer criar o componente customizado.
-* Ao clicar em NEW, você verá a opção **Beagle**, que contem o grupo de opções para ANDROID ou BACKEND.
-* Selecione a opção de acordo com o seu ambiente (Backend ou Android).
-* Uma tela com diversas opções de componentes do Beagle que podem ser customizados aparecerá. 
-* Selecione um componente, escolha o nome da classe e aperte ENTER.
-* A classe será criada nesse pacote, assim como no exemplo abaixo.
 
 After installing it:
 
