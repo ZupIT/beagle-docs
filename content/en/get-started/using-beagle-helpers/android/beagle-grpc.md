@@ -65,7 +65,6 @@ android {
 }
 
 dependencies {
-    implementation "br.com.zup.beagle:android:1.5.1"
     kapt "br.com.zup.beagle:android-processor:1.5.1"
     implementation "br.com.zup.beagle:beagle-grpc:1.0.0"
 }
