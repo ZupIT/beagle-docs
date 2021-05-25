@@ -185,45 +185,63 @@ Open your browser and type: localhost: 8080 / screen
 A JSON structure must appear on your screen similar to the structure below:
 
 ```kotlin
-import br.com.zup.beagle.core.Style
-import br.com.zup.beagle.ext.applyStyle
-import br.com.zup.beagle.ext.unitReal
-import br.com.zup.beagle.widget.Widget
-import br.com.zup.beagle.widget.action.Alert
-import br.com.zup.beagle.widget.core.AlignSelf
-import br.com.zup.beagle.widget.core.EdgeValue
-import br.com.zup.beagle.widget.core.Flex
-import br.com.zup.beagle.widget.core.TextAlignment
-import br.com.zup.beagle.widget.layout.Container
-import br.com.zup.beagle.widget.layout.Screen
-import br.com.zup.beagle.widget.layout.ScreenBuilder
-import br.com.zup.beagle.widget.ui.ImagePath
-import br.com.zup.beagle.widget.ui.Text
-
-object ScreenBeagleBuilder : ScreenBuilder {
-    override fun build() = Screen(
-        child = Container(
-            children = listOf(
-                Text(
-                    text = "Hello Beagle!",
-                    styleId = "Title.Text.Orange"
-                ).setStyle {
-                    margin = EdgeValue.only(top = 16)
-                }.setFlex {
-                    alignSelf = AlignSelf.CENTER
-                },
-                Text(
-                    text = "Beagle is a cross-platform framework which provides usage of the " +
-                        "Server-Driven UI concept, natively in iOS, Android and Web applications. " +
-                        "By using Beagle, your team could easily change application's layout and" +
-                        " data by just changing backend code.",
-                    styleId = "Description.Text.Orange"
-                ).setStyle {
-                    margin = EdgeValue.only(top = 20, left = 16, right = 16)
-                }
-            )
-        )
-    )
+{
+   "_beagleComponent_":"beagle:screenComponent",
+   "child":{
+      "_beagleComponent_":"beagle:container",
+      "children":[
+         {
+            "_beagleComponent_":"beagle:text",
+            "text":"Hello Beagle!",
+            "style":{
+               "cornerRadius":{
+                  
+               },
+               "size":{
+                  
+               },
+               "margin":{
+                  "top":{
+                     "value":16,
+                     "type":"REAL"
+                  }
+               },
+               "flex":{
+                  "alignSelf":"CENTER"
+               }
+            }
+         },
+         {
+            "_beagleComponent_":"beagle:text",
+            "text":"Beagle is a cross-platform framework which provides usage of the Server-Driven UI concept, natively in iOS, Android and Web applications. By using Beagle, your team could easily change application's layout and data by just changing backend code.",
+            "style":{
+               "cornerRadius":{
+                  
+               },
+               "size":{
+                  
+               },
+               "margin":{
+                  "left":{
+                     "value":16,
+                     "type":"REAL"
+                  },
+                  "top":{
+                     "value":20,
+                     "type":"REAL"
+                  },
+                  "right":{
+                     "value":16,
+                     "type":"REAL"
+                  }
+               },
+               "flex":{
+                  
+               }
+            }
+         }
+      ]
+   }
 }
 ```
 
