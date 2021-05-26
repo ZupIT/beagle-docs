@@ -172,25 +172,63 @@ JSON utilizado como exemplo.
 
 ```text
 {
-    "_beagleComponent_": "beagle:container",
-    "children": [
-        {
+    "_beagleComponent_":"beagle:screenComponent",
+   "child":{
+      "_beagleComponent_":"beagle:container",
+      "children":[
+         {
             "_beagleComponent_":"beagle:text",
-            "text":"Hello Beagle"
-        },
-       {
+            "text":"Hello Beagle!",
+            "style":{
+               "cornerRadius":{
+                  
+               },
+               "size":{
+                  
+               },
+               "margin":{
+                  "top":{
+                     "value":16,
+                     "type":"REAL"
+                  }
+               },
+               "flex":{
+                  "alignSelf":"CENTER"
+               }
+            }
+         },
+         {
+            "_beagleComponent_":"beagle:text",
+            "text":"Beagle is a cross-platform framework which provides usage of the Server-Driven UI concept, natively in iOS, Android and Web applications. By using Beagle, your team could easily change application's layout and data by just changing backend code.",
             "_beagleComponent_":"beagle:text",
             "style":{
-              "padding":{
-                "top":{
-                  "value":10,
-                  "type": "REAL"
-                }
-              }
-            },
-            "text":"Beagle is a cross-platform framework which provides usage of the server Driven UI concept, natively in iOS, Android and Web applications. By using Beagle, your team could easily change application's layout and data by just changing backend code"
-        }
-    ]
+               "cornerRadius":{
+                  
+               },
+               "size":{
+                  
+               },
+               "margin":{
+                  "left":{
+                     "value":16,
+                     "type":"REAL"
+                  },
+                  "top":{
+                     "value":20,
+                     "type":"REAL"
+                  },
+                  "right":{
+                     "value":16,
+                     "type":"REAL"
+                  }
+               },
+               "flex":{
+                  
+               }
+            }
+         }
+      ]
+   }
 }
 ```
 

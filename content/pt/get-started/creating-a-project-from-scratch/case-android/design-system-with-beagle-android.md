@@ -132,16 +132,13 @@ Segure o botão Ctrl e coloque o mouse sobre o componente `Text` e você verá a
 
 ```kotlin
 Text(
-       text = "Hello Beagle",
-       styleId = "Title.Text.Orange"
-     ).applyStyle(
-         Style(
-                 margin = EdgeValue(
-                   top = 16.unitReal()
-                  ),
-                   flex = Flex(alignSelf = AlignSelf.CENTER)
-               )
-      ),
+       text = "Hello Beagle!",
+        styleId = "Title.Text.Orange"
+    ).setStyle {
+         margin = EdgeValue.only(top = 16)
+    }.setFlex {
+            alignSelf = AlignSelf.CENTER
+    }
 ```
 
 Por enquanto, não se preocupe com os outros elementos, como `.applyStyle` e demais configurações. Apenas garanta que nada mais seja modificado no exemplo e procure mantê-lo como mostramos agora.
