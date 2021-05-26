@@ -63,8 +63,8 @@ This library allows you to create Beagle BFFs serving screens through gRPC. It a
 ```groovy
 dependencies {
   ...
-  implementation("br.com.zup:beagle-grpc-backend:0.0.1")
-  implementation("net.devh:grpc-server-spring-boot-starter:2.11.0.RELEASE")
+  implementation("br.com.zup:beagle-grpc-backend:${beagleGrpcVersion}")
+  implementation("net.devh:grpc-server-spring-boot-starter:${springGrpcVersion}")
 }
 ```
 
@@ -76,12 +76,12 @@ dependencies {
     <dependency>
         <groupId>net.devh</groupId>
         <artifactId>grpc-server-spring-boot-starter</artifactId>
-        <version>2.11.0.RELEASE</verion>
+        <version>${spring.grpc.version}</verion>
     </dependency>
     <dependency>
         <groupId>br.com.zup</groupId>
         <artifactId>beagle-grpc-backend</artifactId>
-        <version>0.0.1</verion>
+        <version>${beagle.grpc.version}</verion>
     </dependency>
 </dependencies>
 ```
@@ -95,7 +95,7 @@ dependencies {
 ```groovy
 dependencies {
   ...
-  implementation("br.com.zup:beagle-grpc-backend:0.0.1")
+  implementation("br.com.zup:beagle-grpc-backend:${beagleGrpcVersion}")
 }
 ```
 
@@ -106,7 +106,7 @@ dependencies {
     <dependency>
         <groupId>br.com.zup</groupId>
         <artifactId>beagle-grpc-backend</artifactId>
-        <version>0.0.1</verion>
+        <version>${beagle.grpc.version}</verion>
     </dependency>
 </dependencies>
 ```
