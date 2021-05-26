@@ -8,6 +8,7 @@ description: >-
 ---
 
 ## O que esse Plugin faz?
+![JetBrains Plugins](https://img.shields.io/jetbrains/plugin/v/br.com.zup.beagle-template-intellij-plugin?color=green&label=Beagle%20Class%20Creator&style=plastic)
 
 Com esse plugin o desenvolvedor consegue criar componentes customizados do Beagle automaticamente com apenas dois cliques.
 
@@ -50,6 +51,20 @@ Para ver/ou utilizar os templates, aperte as teclas:
 * Lembre-se que alguns componentes, como por exemplo o `CENTER`, ou `TOUCHABLE`, aceitam somente um FILHO, ou seja, se você selecionar dois elementos e clicar no `apply-CENTER-style` a IDE vai te indicar algum tipo de erro pois esse componente aceita somente um filho.
 
 ![](/shared/plugin/plugin-live-template.gif)
+
+## Como utilizar o autocomplete?
+
+O autocomplete é muito fácil de utilizar neste plugin.
+Tudo o que você precisa fazer é começar a escrever o nome do componente que deseja chamar, por exemplo, `cont` para `Container`, e apertar `TAB` para criar esse componente.
+
+Todos os componentes e ações do Beagle estão configurados nesse autocomplete. 
+A regra geral para chamá-los é:
+
+* Comece a escrever o nome do componente/ação
+* A maioria das abreviações tem cerca de 4 a 5 letras.
+* Se você esperar um segundo antes de clicar em `TAB`, uma lista aparecerá informando sobre a opção de criar um componente Beagle ou uma ação Beagle.
+
+![](/shared/plugin/autocomplete.gif)
 
 <!-- # Quer saber mais sobre o nosso plugin? 
 👉 Acesse o repositório do nosso [Beagle Class Creator Plugin](https://github.com/ZupIT/beagle-template-intellij-plugin) e fique a vontade para contribuir e nos dar sugestões! -->
