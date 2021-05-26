@@ -82,21 +82,6 @@ A primeira classe que iremos criar é a **`Builder`** . É nesse arquivo que a t
 4. Nesta etapa, você pode copiar e colar o código abaixo em sua classe.
 
 ```kotlin
-import br.com.zup.beagle.core.Style
-import br.com.zup.beagle.ext.applyStyle
-import br.com.zup.beagle.ext.unitReal
-import br.com.zup.beagle.widget.Widget
-import br.com.zup.beagle.widget.action.Alert
-import br.com.zup.beagle.widget.core.AlignSelf
-import br.com.zup.beagle.widget.core.EdgeValue
-import br.com.zup.beagle.widget.core.Flex
-import br.com.zup.beagle.widget.core.TextAlignment
-import br.com.zup.beagle.widget.layout.Container
-import br.com.zup.beagle.widget.layout.Screen
-import br.com.zup.beagle.widget.layout.ScreenBuilder
-import br.com.zup.beagle.widget.ui.ImagePath
-import br.com.zup.beagle.widget.ui.Text
-
 object ScreenBeagleBuilder : ScreenBuilder {
     override fun build() = Screen(
         child = Container(
