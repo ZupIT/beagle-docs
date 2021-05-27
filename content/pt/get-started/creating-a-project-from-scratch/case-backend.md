@@ -179,12 +179,8 @@ Uma estrutura JSON tem que aparecer na sua tela similar a estrutura abaixo:
             "_beagleComponent_":"beagle:text",
             "text":"Hello Beagle!",
             "style":{
-               "cornerRadius":{
-                  
-               },
-               "size":{
-                  
-               },
+               "cornerRadius":{},
+               "size":{},
                "margin":{
                   "top":{
                      "value":16,
@@ -200,12 +196,8 @@ Uma estrutura JSON tem que aparecer na sua tela similar a estrutura abaixo:
             "_beagleComponent_":"beagle:text",
             "text":"Beagle is a cross-platform framework which provides usage of the Server-Driven UI concept, natively in iOS, Android and Web applications. By using Beagle, your team could easily change application's layout and data by just changing backend code.",
             "style":{
-               "cornerRadius":{
-                  
-               },
-               "size":{
-                  
-               },
+               "cornerRadius":{},
+               "size":{},
                "margin":{
                   "left":{
                      "value":16,
