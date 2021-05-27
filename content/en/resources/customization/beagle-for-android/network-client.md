@@ -154,6 +154,7 @@ HttpClientDefault class defines how the services requests are configured. To use
 This configuration is long, so copy and paste the class below. You may modify it later.
 
 ```kotlin
+import br.com.zup.beagle.android.annotation.BeagleComponent
 import br.com.zup.beagle.android.exception.BeagleApiException
 import br.com.zup.beagle.android.networking.HttpClient
 import br.com.zup.beagle.android.networking.HttpMethod
