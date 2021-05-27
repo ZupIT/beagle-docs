@@ -189,35 +189,26 @@ class FirstScreenBuilder : ScreenBuilder {
         child = Container(
             children = listOf(
                 Text(
-                    text = "Hello Beagle",
+                    text = "Hello Beagle!",
                     styleId = "Title.Text.Orange"
-                ).applyStyle(
-                    Style(
-                        margin = EdgeValue(
-                            top = 16.unitReal()
-                        ),
-                        flex = Flex(alignSelf = AlignSelf.CENTER)
-                    )
-                ),
+                ).setStyle {
+                    margin = EdgeValue.only(top = 16)
+                }.setFlex {
+                    alignSelf = AlignSelf.CENTER
+                },
                 Text(
-                    text = "Beagle is a cross-platform framework which provides " +
-                           "usage of the Server-Driven UI concept, natively in " +
-                           "iOS, Android and Web applications. By using Beagle, " +
-                           "your team could easily change application's layout " +
-                           "and data by just changing backend code.",
+                    text = "Beagle is a cross-platform framework which provides usage of the " +
+                        "Server-Driven UI concept, natively in iOS, Android and Web applications. " +
+                        "By using Beagle, your team could easily change application's layout and" +
+                        " data by just changing backend code.",
                     styleId = "Description.Text.Orange"
-                ).applyStyle(
-                    Style(
-                        margin = EdgeValue(
-                            left = 16.unitReal(),
-                            right = 16.unitReal(),
-                            top = 20.unitReal()
-                        )
-                    )
-                )
+                ).setStyle {
+                    margin = EdgeValue.only(top = 20, left = 16, right = 16)
+                }
             )
         )
     )
+}
 ```
 
 Para adicionar um estilo a um elemento de texto, você deve listar o nome do estilo dentro do componente texto, conforme mostrado baixo. Não se esqueça de separar os componentes por uma vírgula. Segure o botão Ctrl e coloque o mouse sobre o componente `Text` e você verá a lista de atributos que esse componente pode receber aqui no backend. Por hora, utilizaremos apenas o `Style`
@@ -228,14 +219,13 @@ Para adicionar um estilo a um elemento de texto, você deve listar o nome do est
 
 ```kotlin
 Text(
-   text = "Hello Beagle"
-   styleId = "Title.Text.Orange"
-).applyStyle(
-      Style(
-            margin = EdgeValue( top = 16.unitReal()),
-            flex = Flex(alignSelf = AlignSelf.CENTER)
-      )
-),
+        text = "Hello Beagle!",
+        styleId = "Title.Text.Orange"
+    ).setStyle {
+         margin = EdgeValue.only(top = 16)
+    }.setFlex {
+            alignSelf = AlignSelf.CENTER
+    }
 ```
 
 E pronto, isso é tudo que faremos no backend nesse momento.
