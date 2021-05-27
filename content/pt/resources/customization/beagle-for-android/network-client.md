@@ -252,8 +252,10 @@ class HttpClientDefault : HttpClient, CoroutineScope {
         val response = urlConnection.getSafeError() ?: byteArrayOf()
         val statusCode = urlConnection.getSafeResponseCode()
         val statusText = urlConnection.getSafeResponseMessage()
-        val responseData = ResponseData( statusCode = statusCode,
-            data = response, statusText = statusText
+        val responseData = ResponseData(
+            statusCode = statusCode,
+            data = response,
+            statusText = statusText,
         )
         return BeagleApiException(responseData, request)
     }
