@@ -157,6 +157,6 @@ enable = true
         desc = "Medium"
 [[params.links.developer]]
 	name ="Youtube"
-	url = "https://www.youtube.com/channel/UCJWZyJ-36yNscqnnHiwjkhQ"
+	url = "https://www.youtube.com/playlist?list=PLkX9oUrQ1ev7sU5idjF-jEfJIAL-j89wZ"
 	icon = "fab fa-youtube"
         desc = "Youtube"
