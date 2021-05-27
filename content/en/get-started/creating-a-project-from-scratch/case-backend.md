@@ -173,7 +173,6 @@ A JSON structure must appear on your screen similar to the structure below:
             "text":"Hello Beagle!",
             "style":{
                "cornerRadius":{
-                  
                },
                "size":{
                   
