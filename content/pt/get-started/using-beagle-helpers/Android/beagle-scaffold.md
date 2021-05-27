@@ -60,7 +60,7 @@ android {
 dependencies {
     implementation "br.com.zup.beagle:android:1.7.0"
     kapt "br.com.zup.beagle:android-processor:1.7.0"
-    implementation "br.com.zup.beagle:beagle-scaffold:1.7.1"
+    implementation "br.com.zup.beagle:beagle-scaffold:1.7.0"
 }
 ```
 
