@@ -55,17 +55,12 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8
     }
-
-    packagingOptions {
-        pickFirst 'META-INF/LICENSE.md'
-        pickFirst 'META-INF/LICENSE-notice.md'
-    }
 }
 
 dependencies {
-    implementation "br.com.zup.beagle:android:1.5.1"
-    kapt "br.com.zup.beagle:android-processor:1.5.1"
-    implementation "br.com.zup.beagle:beagle-scaffold:1.0.0"
+    implementation "br.com.zup.beagle:android:1.7.0"
+    kapt "br.com.zup.beagle:android-processor:1.7.0"
+    implementation "br.com.zup.beagle:beagle-scaffold:1.7.1"
 }
 ```
 
