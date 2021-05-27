@@ -175,7 +175,7 @@ typealias OnError = (responseData: ResponseData) -> Unit
 @BeagleComponent
 class HttpClientDefault : HttpClient, CoroutineScope {
 
-        private val job = Job()
+   private val job = Job()
     override val coroutineContext = job + CoroutineDispatchers.IO
 
     override fun execute(
