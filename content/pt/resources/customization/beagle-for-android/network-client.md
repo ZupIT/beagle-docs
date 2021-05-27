@@ -232,8 +232,7 @@ class HttpClientDefault : HttpClient, CoroutineScope {
             addRequestMethod(urlConnection, method)
         }
 
-        val body = request.httpAdditionalData.body
-        if (body != null) {
+        request.httpAdditionalData.body?.run {
             setRequestBody(urlConnection, request)
         }
 
