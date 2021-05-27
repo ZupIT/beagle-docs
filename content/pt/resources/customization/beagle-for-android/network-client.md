@@ -156,6 +156,7 @@ Essa configuração é bem extensa, a sugestão é que você copie e cole a clas
 
 
 ```kotlin
+import br.com.zup.beagle.android.annotation.BeagleComponent
 import br.com.zup.beagle.android.exception.BeagleApiException
 import br.com.zup.beagle.android.networking.HttpClient
 import br.com.zup.beagle.android.networking.HttpMethod
