@@ -25,19 +25,18 @@ Defines some space around the element in all directions:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    flex = Flex(margin = EdgeValue(all = 10.unitReal()))
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.FLEX_START,
-                flexDirection = FlexDirection.ROW
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                                margin = EdgeValue(all = UnitValue.real(10))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.FLEX_START
+              flexDirection = FlexDirection.ROW
+          }
     }
 ```
 
@@ -83,19 +82,18 @@ Defines some space at the element's bottom:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    flex = Flex(margin = EdgeValue(bottom = 10.unitReal()))
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.FLEX_START,
-                flexDirection = FlexDirection.COLUMN
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                                margin = EdgeValue(bottom = UnitValue.real(10))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.FLEX_START
+              flexDirection = FlexDirection.COLUMN
+          }
     }
 ```
 
@@ -143,19 +141,18 @@ Defines some space at the element's left side:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    flex = Flex(margin = EdgeValue(left = 10.unitReal()))
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.FLEX_START,
-                flexDirection = FlexDirection.ROW
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                                margin = EdgeValue(left = UnitValue.real(10))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.FLEX_START
+              flexDirection = FlexDirection.ROW
+          }
     }
 ```
 
@@ -203,19 +200,18 @@ Defines some space at the element's right side:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    flex = Flex(margin = EdgeValue(right = 10.unitReal()))
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.FLEX_START,
-                flexDirection = FlexDirection.ROW
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                                margin = EdgeValue(right = UnitValue.real(10))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.FLEX_START
+              flexDirection = FlexDirection.ROW
+          }
     }
 ```
 
@@ -263,19 +259,18 @@ Defines some space at the element's top:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    flex = Flex(margin = EdgeValue(top = 10.unitReal()))
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.FLEX_START,
-                flexDirection = FlexDirection.ROW
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                                margin = EdgeValue(top = UnitValue.real(10))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.FLEX_START
+              flexDirection = FlexDirection.ROW
+          }
     }
 ```
 
@@ -323,19 +318,18 @@ Defines some horizontal space at the element sides:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    flex = Flex(margin = EdgeValue(horizontal = 10.unitReal()))
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.FLEX_START,
-                flexDirection = FlexDirection.ROW
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                                margin = EdgeValue(horizontal = UnitValue.real(10))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.FLEX_START
+              flexDirection = FlexDirection.ROW
+          }
     }
 ```
 
@@ -383,19 +377,18 @@ Defines some vertical space at the element top and botton sides:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    flex = Flex(margin = EdgeValue(vertical = 10.unitReal()))
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.FLEX_START,
-                flexDirection = FlexDirection.ROW
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                                margin = EdgeValue(vertical = UnitValue.real(10))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.FLEX_START
+              flexDirection = FlexDirection.COLUMN
+          }
     }
 ```
 

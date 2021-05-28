@@ -85,20 +85,24 @@ Check it out how it works:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    Flex(size = Size(width = 130.unitReal(),height = 130.unitReal()))
-                ),
-                createText(backgroundColor = "#dd7631", text = "2").applyFlex(
-                    Flex(size = Size(width = 100.unitReal(),height = 100.unitReal()))
-                ),
-                createText(backgroundColor = "#649d66", text = "3").applyFlex(
-                    Flex(size = Size(width = 70.unitReal(),height = 70.unitReal()),
-                    positionType = FlexPositionType.ABSOLUTE)
-                )
-            )
-        ).applyFlex(
-            Flex(flexDirection = FlexDirection.ROW)
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                          size = Size(width = UnitValue.real(130), height = UnitValue.real(130))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2")
+                      .setStyle {
+                          size = Size(width = UnitValue.real(100), height = UnitValue.real(100))
+                      },
+                  createText(backgroundText = "#649d66", text = "3")
+                      .setStyle {
+                          size = Size(width = UnitValue.real(70), height = UnitValue.real(70))
+                          positionType = PositionType.ABSOLUTE
+                      }
+              )
+          ).setFlex {
+              flexDirection = FlexDirection.ROW
+
+          }
     }
 ```
 

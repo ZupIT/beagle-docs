@@ -25,23 +25,20 @@ Todos os itens serão dispostos em uma linha:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "texto 1"),
-                createText(backgroundColor = "#dd7631", text = "texto 2"),
-                createText(backgroundColor = "#649d66", text = "texto 3"),
-                createText(backgroundColor = "#142850", text = "texto 4"),
-                createText(backgroundColor = "#dd7631", text = "texto 5"),
-                createText(backgroundColor = "#649d66", text = "texto 6"),
-                createText(backgroundColor = "#142850", text = "texto 7"),
-                createText(backgroundColor = "#dd7631", text = "texto 8"),
-                createText(backgroundColor = "#649d66", text = "texto 9")
-            )
-        ).applyFlex(
-            Flex(
-                flexDirection = FlexDirection.ROW,
-                flexWrap = FlexWrap.NO_WRAP
-            )
-        )
-
+                  createText(backgroundText = "#142850", text = "1"),
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3"),
+                  createText(backgroundText = "#142850", text = "4"),
+                  createText(backgroundText = "#dd7631", text = "5"),
+                  createText(backgroundText = "#649d66", text = "6"),
+                  createText(backgroundText = "#142850", text = "7"),
+                  createText(backgroundText = "#dd7631", text = "8"),
+                  createText(backgroundText = "#649d66", text = "9")
+              )
+          ).setFlex {
+              flexDirection = FlexDirection.ROW
+              flexWrap = FlexWrap.NO_WRAP
+          }
     }
 ```
 
@@ -91,23 +88,20 @@ A quebra de linha irá acontecer e os itens mais à direita serão deslocados pa
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "texto 1"),
-                createText(backgroundColor = "#dd7631", text = "texto 2"),
-                createText(backgroundColor = "#649d66", text = "texto 3"),
-                createText(backgroundColor = "#142850", text = "texto 4"),
-                createText(backgroundColor = "#dd7631", text = "texto 5"),
-                createText(backgroundColor = "#649d66", text = "texto 6"),
-                createText(backgroundColor = "#142850", text = "texto 7"),
-                createText(backgroundColor = "#dd7631", text = "texto 8"),
-                createText(backgroundColor = "#649d66", text = "texto 9")
-            )
-        ).applyFlex(
-            Flex(
-                flexDirection = FlexDirection.ROW,
-                flexWrap = FlexWrap.WRAP
-            )
-        )
-
+                  createText(backgroundText = "#142850", text = "1"),
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3"),
+                  createText(backgroundText = "#142850", text = "4"),
+                  createText(backgroundText = "#dd7631", text = "5"),
+                  createText(backgroundText = "#649d66", text = "6"),
+                  createText(backgroundText = "#142850", text = "7"),
+                  createText(backgroundText = "#dd7631", text = "8"),
+                  createText(backgroundText = "#649d66", text = "9")
+              )
+          ).setFlex {
+              flexDirection = FlexDirection.ROW
+              flexWrap = FlexWrap.WRAP
+          }
     }
 ```
 
@@ -157,23 +151,20 @@ A quebra de linha irá acontecer e os itens mais à direita serão deslocados pa
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "texto 1"),
-                createText(backgroundColor = "#dd7631", text = "texto 2"),
-                createText(backgroundColor = "#649d66", text = "texto 3"),
-                createText(backgroundColor = "#142850", text = "texto 4"),
-                createText(backgroundColor = "#dd7631", text = "texto 5"),
-                createText(backgroundColor = "#649d66", text = "texto 6"),
-                createText(backgroundColor = "#142850", text = "texto 7"),
-                createText(backgroundColor = "#dd7631", text = "texto 8"),
-                createText(backgroundColor = "#649d66", text = "texto 9")
-            )
-        ).applyFlex(
-            Flex(
-                flexDirection = FlexDirection.ROW,
-                flexWrap = FlexWrap.WRAP_REVERSE
-            )
-        )
-
+                  createText(backgroundText = "#142850", text = "1"),
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3"),
+                  createText(backgroundText = "#142850", text = "4"),
+                  createText(backgroundText = "#dd7631", text = "5"),
+                  createText(backgroundText = "#649d66", text = "6"),
+                  createText(backgroundText = "#142850", text = "7"),
+                  createText(backgroundText = "#dd7631", text = "8"),
+                  createText(backgroundText = "#649d66", text = "9")
+              )
+          ).setFlex {
+              flexDirection = FlexDirection.ROW
+              flexWrap = FlexWrap.WRAP_REVERSE
+          }
     }
 ```
 
