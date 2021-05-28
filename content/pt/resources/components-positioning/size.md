@@ -55,20 +55,24 @@ Isso significa dizer que, por exemplo, se você aplicar uma altura de 100dp em u
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    Flex(size = Size(width = 50.unitReal(),height = 50.unitReal()))
-                ),
-                createText(backgroundColor = "#dd7631", text = "2").applyFlex(
-                    Flex(size = Size(maxWidth = 70.unitReal(),maxHeight = 70.unitReal(),
-                    minWidth = 30.unitReal(),minHeight = 30.unitReal()))
-                ),
-                createText(backgroundColor = "#649d66", text = "3").applyFlex(
-                    Flex(size = Size(width = 70.unitReal(),aspectRatio = 2.0))
-                )
-            )
-        ).applyFlex(
-            Flex(flexDirection = FlexDirection.ROW)
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                          size = Size(width = UnitValue.real(50), height = UnitValue.real(50))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2")
+                      .setStyle {
+                          size = Size(width = UnitValue.real(70), height = UnitValue.real(70),
+                              minWidth = UnitValue.real(30), minHeight = UnitValue.real(30)
+                          )
+                      },
+                  createText(backgroundText = "#649d66", text = "3")
+                      .setStyle {
+                          size = Size(width = UnitValue.real(70), aspectRatio = 2.0)
+                      }
+              )
+          ).setFlex {
+              flexDirection = FlexDirection.ROW
+          }
     }
 ```
 
