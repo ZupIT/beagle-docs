@@ -120,43 +120,88 @@ Default value is ListDirection.VERTICAL
       "sex": "male"
     }
   ],
-  "template": {
-    "_beagleComponent_": "beagle:container",
-    "style": {
-      "margin": {
-        "bottom": {
-          "value": 20,
-          "type": "REAL"
-        }
+"templates":[
+   {
+      "case":"@{eq(item.race, 'Half-skaa')}",
+      "view":{
+         "_beagleComponent_":"beagle:container",
+         "style":{
+            "margin":{
+               "bottom":{
+                  "value":20,
+                  "type":"REAL"
+               }
+            }
+         },
+         "children":[
+            {
+               "_beagleComponent_":"beagle:text",
+               "text":"Name: @{item.name}"
+            },
+            {
+               "_beagleComponent_":"beagle:text",
+               "text":"Race: @{item.race}"
+            },
+            {
+               "_beagleComponent_":"beagle:text",
+               "text":"Mistborn: @{item.isMistborn}"
+            },
+            {
+               "_beagleComponent_":"beagle:text",
+               "text":"Planet: @{item.planet}"
+            },
+            {
+               "_beagleComponent_":"beagle:text",
+               "text":"sex: @{item.sex}"
+            },
+            {
+               "_beagleComponent_":"beagle:text",
+               "text":"age: @{item.age}"
+            }
+         ]
       }
-    },
-    "children": [
-      {
-        "_beagleComponent_": "beagle:text",
-        "text": "Name: @{item.name}"
-      },
-      {
-        "_beagleComponent_": "beagle:text",
-        "text": "Race: @{item.race}"
-      },
-      {
-        "_beagleComponent_": "beagle:text",
-        "text": "Mistborn: @{item.isMistborn}"
-      },
-      {
-        "_beagleComponent_": "beagle:text",
-        "text": "Planet: @{item.planet}"
-      },
-      {
-        "_beagleComponent_": "beagle:text",
-        "text": "sex: @{item.sex}"
-      },
-      {
-        "_beagleComponent_": "beagle:text",
-        "text": "age: @{item.age}"
+   },
+   {
+      "case":"@{eq(item.race, 'Kandra')}",
+      "view":{
+         "_beagleComponent_":"beagle:container",
+         "style":{
+            "margin":{
+               "bottom":{
+                  "value":20,
+                  "type":"REAL"
+               }
+            }
+         },
+         "children":[
+            {
+               "_beagleComponent_":"beagle:text",
+               "text":"Name: @{item.name}"
+            },
+            {
+               "_beagleComponent_":"beagle:text",
+               "text":"Race: @{item.race}"
+            },
+            {
+               "_beagleComponent_":"beagle:text",
+               "text":"Mistborn: @{item.isMistborn}"
+            },
+            {
+               "_beagleComponent_":"beagle:text",
+               "text":"Planet: @{item.planet}"
+            },
+            {
+               "_beagleComponent_":"beagle:text",
+               "text":"sex: @{item.sex}"
+            },
+            {
+               "_beagleComponent_":"beagle:text",
+               "text":"age: @{item.age}"
+            }
+         ]
       }
-    ]
-  }
+   }
+ ]
 }
 -->
 
@@ -206,7 +251,8 @@ Default value is ListDirection.VERTICAL
     ListView(
         context = ContextData(id = "characters", value = characters),
         dataSource = expressionOf("@{characters}"),
-        template = Container(
+        templates =  Case("@{eq(item.race, 'Half-skaa')}"),
+        view = Container(
             children = listOf(
                 Text("Name: @{item.name}"),
                 Text("Race: @{item.race}"),
@@ -219,7 +265,22 @@ Default value is ListDirection.VERTICAL
             Style(
                 margin = EdgeValue(bottom = 20.unitReal())
             )
-        )
+        ),
+        Case("@{eq(item.race, 'Kandra')}"),
+         view =  Container(
+            children = listOf(
+                Text("Name: @{item.name}"),
+                Text("Race: @{item.race}"),
+                Text("Mistborn: @{item.isMistborn}"),
+                Text("Planet: @{item.planet}"),
+                Text("sex: @{item.sex}"),
+                Text("age: @{item.age}"),
+            )
+        ).applyStyle(
+            Style(
+                margin = EdgeValue(bottom = 20.unitReal())
+            )
+        ),
     )
 }
 ```
