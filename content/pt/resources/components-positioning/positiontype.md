@@ -27,15 +27,15 @@ private fun screen() :Widget{
             children = listOf(
                 createText(backgroundText = "#142850", text = "1")
                       .setStyle {
-                          size = Size(width = UnitValue.real(130), height = UnitValue.real(130))
+                          size = Size.box(width = 130, height = 130)
                       },
                   createText(backgroundText = "#dd7631", text = "2")
                       .setStyle {
-                          size = Size(width = UnitValue.real(100), height = UnitValue.real(100))
+                          size = Size.box(width = 100, height = 100)
                       },
                   createText(backgroundText = "#649d66", text = "3")
                       .setStyle {
-                          size = Size(width = UnitValue.real(70), height = UnitValue.real(70))
+                          size = Size.box(width = 70, height = 70)
                       }
               )
           ).setFlex {
@@ -91,15 +91,15 @@ private fun screen() :Widget{
             children = listOf(
                 createText(backgroundText = "#142850", text = "1")
                       .setStyle {
-                          size = Size(width = UnitValue.real(130), height = UnitValue.real(130))
+                          size = Size.box(width = 130, height = 130)
                       },
                   createText(backgroundText = "#dd7631", text = "2")
                       .setStyle {
-                          size = Size(width = UnitValue.real(100), height = UnitValue.real(100))
+                          size = Size.box(width = 100, height = 100)
                       },
                   createText(backgroundText = "#649d66", text = "3")
                       .setStyle {
-                          size = Size(width = UnitValue.real(70), height = UnitValue.real(70))
+                          size = Size.box(width = 70, height = 70)
                           positionType = PositionType.ABSOLUTE
                       }
               )

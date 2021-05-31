@@ -80,24 +80,15 @@ Os itens são deslocadas para o início do eixo transversal:
             children = listOf(
                 createText(backgroundText = "#142850", text = "1")
                       .setStyle {
-                                size = Size(
-                                    width = UnitValue.real(300),
-                                    height = UnitValue.real(100)
-                                )
+                                size = Size.box(width = 300, height = 100)
                       },
                   createText(backgroundText = "#dd7631", text = "2")
                       .setStyle {
-                          size = Size(
-                              width = UnitValue.real(200),
-                              height = UnitValue.real(100)
-                          )
+                          size = Size.box(width = 200, height = 100)
                       },
                   createText(backgroundText = "#649d66", text = "3")
                       .setStyle {
-                          size = Size(
-                              width = UnitValue.real(150),
-                              height = UnitValue.real(100)
-                          )
+                          size = Size.box(width = 150, height = 100)
                       }
               )
           ).setFlex {
@@ -154,24 +145,15 @@ Os itens são deslocadas para o final do eixo transversal:
             children = listOf(
                 createText(backgroundText = "#142850", text = "1")
                       .setStyle {
-                                size = Size(
-                                    width = UnitValue.real(300),
-                                    height = UnitValue.real(100)
-                                )
+                                size = Size.box(width = 300, height = 100)
                       },
                   createText(backgroundText = "#dd7631", text = "2")
                       .setStyle {
-                          size = Size(
-                              width = UnitValue.real(200),
-                              height = UnitValue.real(100)
-                          )
+                          size = Size.box(width = 200, height = 100)
                       },
                   createText(backgroundText = "#649d66", text = "3")
                       .setStyle {
-                          size = Size(
-                              width = UnitValue.real(150),
-                              height = UnitValue.real(100)
-                          )
+                          size = Size.box(width = 150, height = 100)
                       }
               )
           ).setFlex {
@@ -228,24 +210,15 @@ Os itens são centralizados no eixo transversal:
             children = listOf(
                 createText(backgroundText = "#142850", text = "1")
                       .setStyle {
-                                size = Size(
-                                    width = UnitValue.real(300),
-                                    height = UnitValue.real(100)
-                                )
+                                size = Size.box(width = 300, height = 100)
                       },
                   createText(backgroundText = "#dd7631", text = "2")
                       .setStyle {
-                          size = Size(
-                              width = UnitValue.real(200),
-                              height = UnitValue.real(100)
-                          )
+                          size = Size.box(width = 200, height = 100)
                       },
                   createText(backgroundText = "#649d66", text = "3")
                       .setStyle {
-                          size = Size(
-                              width = UnitValue.real(150),
-                              height = UnitValue.real(100)
-                          )
+                          size = Size.box(width = 150, height = 100)
                       }
               )
           ).setFlex {
@@ -302,24 +275,15 @@ Os itens são alinhados a partir da base da primeira linha de texto de cada um:
             children = listOf(
                 createText(backgroundText = "#142850", text = "1")
                       .setStyle {
-                                size = Size(
-                                    width = UnitValue.real(300),
-                                    height = UnitValue.real(100)
-                                )
+                                size = Size.box(width = 300, height = 100)
                       },
                   createText(backgroundText = "#dd7631", text = "2")
                       .setStyle {
-                          size = Size(
-                              width = UnitValue.real(200),
-                              height = UnitValue.real(100)
-                          )
+                          size = Size.box(width = 200, height = 100)
                       },
                   createText(backgroundText = "#649d66", text = "3")
                       .setStyle {
-                          size = Size(
-                              width = UnitValue.real(150),
-                              height = UnitValue.real(100)
-                          )
+                          size = Size.box(width = 150, height = 100)
                       }
               )
           ).setFlex {

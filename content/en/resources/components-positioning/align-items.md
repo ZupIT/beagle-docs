@@ -78,24 +78,15 @@ Items are shifted to the cross axis start:
             children = listOf(
                 createText(backgroundText = "#142850", text = "1")
                       .setStyle {
-                                size = Size(
-                                    width = UnitValue.real(300),
-                                    height = UnitValue.real(100)
-                                )
+                                size = Size.box(width = 300, height = 100)
                       },
                   createText(backgroundText = "#dd7631", text = "2")
                       .setStyle {
-                          size = Size(
-                              width = UnitValue.real(200),
-                              height = UnitValue.real(100)
-                          )
+                          size = Size.box(width = 200, height = 100)
                       },
                   createText(backgroundText = "#649d66", text = "3")
                       .setStyle {
-                          size = Size(
-                              width = UnitValue.real(150),
-                              height = UnitValue.real(100)
-                          )
+                          size = Size.box(width = 150, height = 100)
                       }
               )
           ).setFlex {
@@ -152,24 +143,15 @@ Items are shifted to the cross axis end:
             children = listOf(
                 createText(backgroundText = "#142850", text = "1")
                       .setStyle {
-                                size = Size(
-                                    width = UnitValue.real(300),
-                                    height = UnitValue.real(100)
-                                )
+                                size = Size.box(width = 300, height = 100)
                       },
                   createText(backgroundText = "#dd7631", text = "2")
                       .setStyle {
-                          size = Size(
-                              width = UnitValue.real(200),
-                              height = UnitValue.real(100)
-                          )
+                          size = Size.box(width = 200, height = 100)
                       },
                   createText(backgroundText = "#649d66", text = "3")
                       .setStyle {
-                          size = Size(
-                              width = UnitValue.real(150),
-                              height = UnitValue.real(100)
-                          )
+                          size = Size.box(width = 150, height = 100)
                       }
               )
           ).setFlex {
@@ -226,24 +208,15 @@ Items are centered on the cross axis:
             children = listOf(
                 createText(backgroundText = "#142850", text = "1")
                       .setStyle {
-                                size = Size(
-                                    width = UnitValue.real(300),
-                                    height = UnitValue.real(100)
-                                )
+                                size = Size.box(width = 300, height = 100)
                       },
                   createText(backgroundText = "#dd7631", text = "2")
                       .setStyle {
-                          size = Size(
-                              width = UnitValue.real(200),
-                              height = UnitValue.real(100)
-                          )
+                          size = Size.box(width = 200, height = 100)
                       },
                   createText(backgroundText = "#649d66", text = "3")
                       .setStyle {
-                          size = Size(
-                              width = UnitValue.real(150),
-                              height = UnitValue.real(100)
-                          )
+                          size = Size.box(width = 150, height = 100)
                       }
               )
           ).setFlex {
@@ -300,24 +273,15 @@ Items are aligned acording to the firt text line in each element.
             children = listOf(
                 createText(backgroundText = "#142850", text = "1")
                       .setStyle {
-                                size = Size(
-                                    width = UnitValue.real(300),
-                                    height = UnitValue.real(100)
-                                )
+                                size = Size.box(width = 300, height = 100)
                       },
                   createText(backgroundText = "#dd7631", text = "2")
                       .setStyle {
-                          size = Size(
-                              width = UnitValue.real(200),
-                              height = UnitValue.real(100)
-                          )
+                          size = Size.box(width = 200, height = 100)
                       },
                   createText(backgroundText = "#649d66", text = "3")
                       .setStyle {
-                          size = Size(
-                              width = UnitValue.real(150),
-                              height = UnitValue.real(100)
-                          )
+                          size = Size.box(width = 150, height = 100)
                       }
               )
           ).setFlex {

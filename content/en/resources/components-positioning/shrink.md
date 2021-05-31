@@ -21,19 +21,19 @@ With Shrink, the element receives a double value, which will decrease the elemen
  private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundText = "#142850", text = "1")
+               createText(backgroundText = "#142850", text = "1")
                       .setStyle {
-                          size = Size(width = UnitValue.real(150), height = UnitValue.real(150))
+                          size = Size.box(width = 150, height = 150)
                       },
                   createText(backgroundText = "#dd7631", text = "2")
                       .setStyle {
-                          size = Size(width = UnitValue.real(150), height = UnitValue.real(150))
+                          size = Size.box(width = 150, height = 150)
                       },
                   createText(backgroundText = "#649d66", text = "3")
                       .setFlex {
                           shrink = 3.0
                       }.setStyle {
-                          size = Size(width = UnitValue.real(150), height = UnitValue.real(150))
+                          size = Size.box(width = 150, height = 150)
                       }
               )
           ).setFlex {
