@@ -7,26 +7,28 @@ This lib will hold almost all necessary configuration to add gRPC into a Beagle 
 
 ---
 
-
 ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-grpc?color=green&label=Beagle-gRPC)
 ![**Maven Central**](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?label=Beagle)
 
 ### Requirements
+
 <hr>
 
 Before you start to configure Beagle for your Android system, it’s important to check out if you have installed all the current versions of the following programs: ‌
 
-* JDK 8+ language
-* Android API level: at least 19 or higher
-* Kotlin 1.3+
+- JDK 8+ language
+- Android API level: at least 19 or higher
+- Kotlin 1.3+
 
 ### Getting started
+
 <hr>
 
 This tutorial will configure Beagle from the Start.
 
 #### Step 1: Add a configuration on the Gradle file in your project:
-- `Add mavenCentral()` into the `All projects` block on your  Project Gradle file(build.gradle)<br>
+
+- `Add mavenCentral()` into the `All projects` block on your Project Gradle file(build.gradle)<br>
 
 ```kotlin
 allprojects {
@@ -37,14 +39,16 @@ allprojects {
     }
 }
 ```
+
 #### Step 2: Add kotlin kapt plugin and 3 dependencies on your application dependency manager (gradle.gradle)<br>
 
- ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-grpc?color=green&label=Beagle-gRPC)
- ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?label=Beagle)                                                                   
+![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-grpc?color=green&label=Beagle-gRPC)
+![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?label=Beagle)
 
-* Add the packagingOptions code block to the build.gradle file, as in the example below.
+- Add the packagingOptions code block to the build.gradle file, as in the example below.
 
-* _The version numbers listed below may have been updated. Please check the actual versions on the tags above:_
+- _The version numbers listed below may have been updated. Please check the actual versions on the tags above:_
+
 ```kotlin
 plugins {
     id 'com.android.application'
@@ -65,13 +69,14 @@ android {
 }
 
 dependencies {
-    kapt "br.com.zup.beagle:android-processor:1.5.1"
-    implementation "br.com.zup.beagle:beagle-grpc:1.0.0"
+    kapt "br.com.zup.beagle:android-processor:${beagleVersion}"
+    implementation "br.com.zup.beagle:beagle-grpc:${beagleVersion}"
 }
 ```
 
 #### Step 3: Create an AppHttpClientFactory
-* This class will be responsible to provide the `HttpClient` that will be used by Beagle to perform requests.<br>
+
+- This class will be responsible to provide the `HttpClient` that will be used by Beagle to perform requests.<br>
 
 ```
 const val BASE_URL = "http://10.0.2.2:8080" // your gRPC host
@@ -98,4 +103,5 @@ The `HttpClientDefault` implementation can be found at Beagle-Default lib.
 <hr>
 
 ##### For more on Beagle: Please check our [Beagle](https://github.com/ZupIT/beagle) repository.
+
 ##### For more on Beagle-Defaults: Please check our [Beagle-Default]({{< ref path="/get-started/using-beagle-helpers/android/beagle-defaults" lang="en" >}}) documentation.
