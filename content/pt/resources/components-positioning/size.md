@@ -57,7 +57,7 @@ private fun screen() :Widget{
             children = listOf(
                 createText(backgroundText = "#142850", text = "1")
                       .setStyle {
-                          size = Size(width = UnitValue.real(50), height = UnitValue.real(50))
+                          size = Size.box(width = 50, height = 50)
                       },
                   createText(backgroundText = "#dd7631", text = "2")
                       .setStyle {
