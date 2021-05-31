@@ -24,7 +24,7 @@ See how the structure is represented:
 | context            | [ContextData]({{< ref path="/api/context" lang="en" >}})                          |             | Defines the context of the component.                                                                                           |
 | onInit             | List&lt;[Action]({{< ref path="/api/actions" lang="en" >}})&gt;                   |             | List of actions to be performed as soon as the component is displayed.                                                          |
 | dataSource         | [Bind]({{< ref path="/api/context#bindings" lang="en" >}})&lt;List&lt;Any&gt;&gt; |      ✓      | Expression that points to a list of values used to populate the component.                                                      |
-| template           | [ServerDrivenComponent]({{< ref path="/api/components" lang="en" >}})             |      ✓      | It represents each cell in the list through a `ServerDrivenComponent`.                                                          |
+| templates           | List&lt;[ServerDrivenComponent]({{< ref path="/api/components" lang="en" >}}) &gt;  |            | It represents a template array, where each template corresponds to a cell in the list through a`ServerDrivenComponent`.                                                          |
 | isScrollIndicatorVisible | Bool | | Set the scroll bar visibility. |
 | onScrollEnd        | List&lt;[Action]({{< ref path="/api/actions" lang="en" >}})&gt;                   |             | List of actions taken when the list ends.                                                                                       |
 | scrollEndThreshold | Int                                                       |             | Defines the percentage scrolled from the list to trigger `onScrollEnd`.                                                         |
@@ -42,6 +42,14 @@ It is an `ENUM`, the values are:
 
 {{% alert color="info" %}}
 Default value is ListDirection.VERTICAL
+{{% /alert %}}
+
+### Templates
+
+  The template to use will be decided according to the property `case` of the template.  
+{{% alert color="info" %}}
+ The first template where `case` is `true` is the template chosen to render an item.
+ If all are `false`, then, the first template where `case` is omitted (default template) is used.
 {{% /alert %}}
 
 ### Deprecated ListView

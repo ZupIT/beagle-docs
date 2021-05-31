@@ -24,7 +24,7 @@ A sua estrutura é representada como mostrado abaixo:
 | context            | [ContextData]({{< ref path="/api/context" lang="pt" >}})                         |             | Define o contexto do componente.                                                                                                    |
 | onInit             | List&lt;[Action]({{< ref path="/api/actions" lang="pt" >}})&gt;                  |             | Lista de ações a serem executadas assim que o componente é exibido.                                                                 |
 | dataSource         | [Bind]({{< ref path="/api/context#binding" lang="pt" >}})&lt;List&lt;Any&gt;&gt; |      ✓      | Expressão que aponta para uma lista de valores usados para popular o componete.                                                     |
-| template           | [ServerDrivenComponent]({{< ref path="/api/components" lang="pt" >}})            |      ✓      | Representa cada celula na lista através de um `ServerDrivenComponent`.                                                              |
+| templates    |List&lt;[ServerDrivenComponent]({{< ref path="/api/components" lang="pt" >}})&gt; |           | Representa um array de template, onde cada template corresponde a uma celula na lista através de um `ServerDrivenComponent`.                                                              |
 | isScrollIndicatorVisible | Bool | | Define se a barra de scroll é visivel.|
 | onScrollEnd        | List&lt;[Action]({{< ref path="/api/actions" lang="pt" >}})&gt;                  |             | Lista de ações executadas quando a lista chega ao fim.                                                                              |
 | scrollEndThreshold |  Int                                                         |             | Define a porcentagem rolada da lista para disparar o `onScrollEnd`.                                                                 |
@@ -42,6 +42,15 @@ A sua estrutura é representada como mostrado abaixo:
 
 {{% alert color="info" %}}
 Valor default é ListDirection.VERTICAL
+{{% /alert %}}
+
+
+### Templates
+
+  O template a ser usado será decidido de acordo com a propriedade `case` do template.  
+{{% alert color="info" %}}
+ O primeiro template onde `case` é ` true` será o template escolhido para renderizar um item. 
+ Se todos forem `false`, então, o primeiro template onde `case` é omitido (template padrão) é usado.
 {{% /alert %}}
 
 ### ListView Depreciado
