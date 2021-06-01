@@ -1,7 +1,7 @@
 ---
 title: Gridview
 weight: 340
-description: "You will find here the description of the GridView component, its attributes and constructors"
+description: "You will find here the GridView component description, it's attributes and constructors"
 ---
 
 ---
