@@ -224,7 +224,7 @@ On the example below, we used a Container to show the widgets attributes. The cl
       },
       "accessibility" : {
         "accessible" : true,
-        "accessibilityLabel" : "Sou acessível"
+        "accessibilityLabel" : "I have acessibility"
       }
     }
 -->
@@ -241,22 +241,20 @@ Container(
         Text(" I'm another Server-Driven text")
     )
 
-).applyStyle(
-    Style(backgroundColor = "#ff8100",
-        cornerRadius = CornerRadius(25.0),
-        size = Size(width = 70.unitPercent(), height = 80.unitReal()),
-        margin = EdgeValue(all = 20.unitReal()),
-        padding = EdgeValue(all = 15.unitReal()),
-        position = EdgeValue(0.unitReal()),
-        flex = Flex(FlexDirection.ROW),
-        positionType = PositionType.RELATIVE,
-        display = Display.FLEX)
-
-).applyAccessibility(accessibility = Accessibility(
-    accessible = true,
-    accessibilityLabel = "Sou acessível")
-
-).setId("widget")
+).setStyle {
+            backgroundColor = "#ff8100"
+            cornerRadius = CornerRadius(25.0)
+            size = Size.box(width = 70, height = 80)
+            margin = EdgeValue.all(20)
+            padding = EdgeValue.all(15)
+            position = EdgeValue.only(0)
+            flex = Flex(FlexDirection.ROW)
+            positionType = PositionType.RELATIVE
+            display = Bind.value(Display.FLEX)
+        }.setAccessibility {
+            accessible = true
+            accessibilityLabel = "I have acessibility"
+        }.setId("WidgetID")
 
 ```
 

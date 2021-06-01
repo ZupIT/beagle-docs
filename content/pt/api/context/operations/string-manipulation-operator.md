@@ -52,7 +52,7 @@ fun screen() = Screen(child =
             Text(text = "The text bellow is a substring of `The book is on the table`."),
             Text(
                 expressionOf("@{substr('The book is on the table', 4, 11)}")
-            ).applyStyle(Style(backgroundColor = "#00FF00")
+            ).setStyle{ backgroundColor = "#00FF00" }
         )
     )
 )
