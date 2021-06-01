@@ -8,7 +8,7 @@ description: "You will find here the description of the GridView component, its 
 
 ## What is it?
 
-The componente GridView component is responsible for defining a grid of items **recyclable** natively. These items can be any server-driven components. The use of GridView is more suitable for visual content, recommended for situations where there is the repetition of components, but with different data.
+The GridView component defines how a group of itens will position itself in a **recyclable** grid layout natively. The items in a gridview could be any server-driven component. The GridView use is more suitable for visual content and is recommended for situations where an item repeats itself but with diferent data, like for example, a card with movies details.
 
 This is how this component is structured:
 
@@ -204,4 +204,3 @@ This is how this component is structured:
 
 {{% /tab %}}
 {{< /tabs >}}
-
