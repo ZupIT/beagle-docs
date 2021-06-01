@@ -42,7 +42,7 @@ A sua estrutura é representada como mostrado abaixo:
 {{< tabs id="T146" >}}
 {{% tab name="JSON" %}}
 
-<!-- json-playground:listView.json
+<!-- json-playground:gridView.json
 {
   "_beagleComponent_": "beagle:container",
   "style": {
@@ -160,8 +160,7 @@ A sua estrutura é representada como mostrado abaixo:
                   placeholder = ImagePath.Local(mobileId = "imagePath", webUrl = "/imagePath.png")
                 ),
               ).setStyle{
-                  size = size
-                  { width(242.unitReal()); height(225.unitReal()) },
+                  size = Size.box(width = 242,  height = 225)
               },
               Image(
                 path = ImagePath.Remote(
@@ -169,8 +168,7 @@ A sua estrutura é representada como mostrado abaixo:
                   placeholder = ImagePath.Local(mobileId = "imagePath", webUrl = "/imagePath.png")
                 ),
               ).setStyle{
-                  size = size
-                  { width(242.unitReal()); height(225.unitReal()) },
+                     size = Size.box(width = 242,  height = 225)
               },
               Image(
                 path = ImagePath.Remote(
@@ -178,8 +176,7 @@ A sua estrutura é representada como mostrado abaixo:
                   placeholder = ImagePath.Local(mobileId = "imagePath", webUrl = "/imagePath.png")
                 ),
               ).setStyle{
-                  size = size
-                  { width(242.unitReal()); height(225.unitReal()) },
+                   size = Size.box(width = 242,  height = 225)
               },
               Image(
                 path = ImagePath.Remote(
@@ -187,15 +184,13 @@ A sua estrutura é representada como mostrado abaixo:
                   placeholder = ImagePath.Local(mobileId = "imagePath", webUrl = "/imagePath.png")
                 ),
               ).setStyle{
-                  size = size
-                  { width(242.unitReal()); height(225.unitReal()) },
+                   size = Size.box(width = 242,  height = 225)
               },
             )
           )
         )
       ).setStyle{
-          size = size
-          { maxWidth(560.unitReal()) },
+         size = Size.box(maxWidth = 560)
       },
 }
 ```
