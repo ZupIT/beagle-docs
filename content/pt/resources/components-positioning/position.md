@@ -30,23 +30,19 @@ O elemento dentro do Position pode ter diferentes tipos de deslocamento se forem
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    Flex(
-                        size = Size(width = 50.unitReal(),height = 50.unitReal()),
-                        position = EdgeValue(all = 50.unitReal())
-                    )
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                flexDirection = FlexDirection.ROW,
-                justifyContent = JustifyContent.CENTER,
-                alignItems = AlignItems.CENTER
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle { 
+                                position = EdgeValue(all = UnitValue.real(50))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              flexDirection = FlexDirection.ROW
+              justifyContent = JustifyContent.CENTER
+              alignItems = AlignItems.CENTER
+          }
     }
 ```
 
@@ -95,23 +91,19 @@ private fun screen() :Widget{
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    Flex(
-                        size = Size(width = 50.unitReal(),height = 50.unitReal()),
-                        position = EdgeValue(bottom = 50.unitReal())
-                    )
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                flexDirection = FlexDirection.ROW,
-                justifyContent = JustifyContent.CENTER,
-                alignItems = AlignItems.CENTER
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle { 
+                                position = EdgeValue(bottom = UnitValue.real(50))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              flexDirection = FlexDirection.ROW
+              justifyContent = JustifyContent.CENTER
+              alignItems = AlignItems.CENTER
+          }
     }
 ```
 
@@ -160,23 +152,19 @@ private fun screen() :Widget{
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    Flex(
-                        size = Size(width = 50.unitReal(),height = 50.unitReal()),
-                        position = EdgeValue(left = 150.unitReal())
-                    )
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                flexDirection = FlexDirection.ROW,
-                justifyContent = JustifyContent.CENTER,
-                alignItems = AlignItems.CENTER
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle { 
+                                position = EdgeValue(left = UnitValue.real(50))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              flexDirection = FlexDirection.ROW
+              justifyContent = JustifyContent.CENTER
+              alignItems = AlignItems.CENTER
+          }
     }
 ```
 
@@ -225,23 +213,19 @@ private fun screen() :Widget{
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    Flex(
-                        size = Size(width = 50.unitReal(),height = 50.unitReal()),
-                        position = EdgeValue(right = 100.unitReal())
-                    )
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                flexDirection = FlexDirection.ROW,
-                justifyContent = JustifyContent.CENTER,
-                alignItems = AlignItems.CENTER
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle { 
+                                position = EdgeValue(right = UnitValue.real(50))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              flexDirection = FlexDirection.ROW
+              justifyContent = JustifyContent.CENTER
+              alignItems = AlignItems.CENTER
+          }
     }
 ```
 
@@ -290,23 +274,19 @@ private fun screen() :Widget{
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    Flex(
-                        size = Size(width = 50.unitReal(),height = 50.unitReal()),
-                        position = EdgeValue(top = 100.unitReal())
-                    )
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                flexDirection = FlexDirection.ROW,
-                justifyContent = JustifyContent.CENTER,
-                alignItems = AlignItems.CENTER
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle { 
+                                position = EdgeValue(top = UnitValue.real(50))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              flexDirection = FlexDirection.ROW
+              justifyContent = JustifyContent.CENTER
+              alignItems = AlignItems.CENTER
+          }
     }
 ```
 
@@ -355,23 +335,19 @@ private func screen() -> Screen {
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    Flex(
-                        size = Size(width = 50.unitReal(),height = 50.unitReal()),
-                        position = EdgeValue(horizontal = 150.unitReal())
-                    )
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                flexDirection = FlexDirection.ROW,
-                justifyContent = JustifyContent.CENTER,
-                alignItems = AlignItems.CENTER
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle { 
+                                position = EdgeValue(horizontal = UnitValue.real(50))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              flexDirection = FlexDirection.ROW
+              justifyContent = JustifyContent.CENTER
+              alignItems = AlignItems.CENTER
+          }
     }
 ```
 
@@ -420,23 +396,19 @@ private func screen() -> Screen {
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    Flex(
-                        size = Size(width = 50.unitReal(),height = 50.unitReal()),
-                        position = EdgeValue(vertical = 150.unitReal())
-                    )
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                flexDirection = FlexDirection.ROW,
-                justifyContent = JustifyContent.CENTER,
-                alignItems = AlignItems.CENTER
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle { 
+                                position = EdgeValue(vertical = UnitValue.real(50))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              flexDirection = FlexDirection.ROW
+              justifyContent = JustifyContent.CENTER
+              alignItems = AlignItems.CENTER
+          }
     }
 ```
 

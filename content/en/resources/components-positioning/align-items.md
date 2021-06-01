@@ -27,13 +27,11 @@ Items will be expanded to fill the entire dimension of the cross axis \(height o
                 createText(backgroundColor = "#dd7631", text = "texto 2"),
                 createText(backgroundColor = "#649d66", text = "texto 3")
             )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.SPACE_EVENLY,
-                alignItems = AlignItems.STRETCH
-            )
-        )
+        ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.SPACE_EVENLY
+              alignItems = AlignItems.STRETCH
+          }
     }
 ```
 
@@ -78,41 +76,24 @@ Items are shifted to the cross axis start:
  private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "texto 1")
-                    .applyFlex(
-                        flex = Flex(
-                            size = Size(
-                                width = 300.unitReal(),
-                                height = 100.unitReal()
-                            )
-                        )
-                ),
-                createText(backgroundColor = "#dd7631", text = "texto 2")
-                    .applyFlex(
-                        flex = Flex(
-                            size = Size(
-                                width = 200.unitReal(),
-                                height = 100.unitReal()
-                            )
-                        )
-                ),
-                createText(backgroundColor = "#649d66", text = "texto 3")
-                    .applyFlex(
-                        flex = Flex(
-                            size = Size(
-                                width = 150.unitReal(),
-                                height = 100.unitReal()
-                            )
-                        )
-                )
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.SPACE_EVENLY,
-                alignItems = AlignItems.FLEX_START
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                                size = Size.box(width = 300, height = 100)
+                      },
+                  createText(backgroundText = "#dd7631", text = "2")
+                      .setStyle {
+                          size = Size.box(width = 200, height = 100)
+                      },
+                  createText(backgroundText = "#649d66", text = "3")
+                      .setStyle {
+                          size = Size.box(width = 150, height = 100)
+                      }
+              )
+          ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.SPACE_EVENLY
+              alignItems = AlignItems.FLEX_START
+          }
     }
 ```
 
@@ -160,41 +141,24 @@ Items are shifted to the cross axis end:
  private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "texto 1")
-                    .applyFlex(
-                        flex = Flex(
-                            size = Size(
-                                width = 300.unitReal(),
-                                height = 100.unitReal()
-                            )
-                        )
-                ),
-                createText(backgroundColor = "#dd7631", text = "texto 2")
-                    .applyFlex(
-                        flex = Flex(
-                            size = Size(
-                                width = 200.unitReal(),
-                                height = 100.unitReal()
-                            )
-                        )
-                ),
-                createText(backgroundColor = "#649d66", text = "texto 3")
-                    .applyFlex(
-                        flex = Flex(
-                            size = Size(
-                                width = 150.unitReal(),
-                                height = 100.unitReal()
-                            )
-                        )
-                    )
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.SPACE_EVENLY,
-                alignItems = AlignItems.FLEX_END
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                                size = Size.box(width = 300, height = 100)
+                      },
+                  createText(backgroundText = "#dd7631", text = "2")
+                      .setStyle {
+                          size = Size.box(width = 200, height = 100)
+                      },
+                  createText(backgroundText = "#649d66", text = "3")
+                      .setStyle {
+                          size = Size.box(width = 150, height = 100)
+                      }
+              )
+          ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.SPACE_EVENLY
+              alignItems = AlignItems.FLEX_END
+          }
     }
 ```
 
@@ -242,41 +206,24 @@ Items are centered on the cross axis:
  private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "texto 1")
-                    .applyFlex(
-                        flex = Flex(
-                            size = Size(
-                                width = 300.unitReal(),
-                                height = 100.unitReal()
-                            )
-                        )
-                ),
-                createText(backgroundColor = "#dd7631", text = "texto 2")
-                    .applyFlex(
-                        flex = Flex(
-                            size = Size(
-                                width = 200.unitReal(),
-                                height = 100.unitReal()
-                            )
-                        )
-                ),
-                createText(backgroundColor = "#649d66", text = "texto 3")
-                    .applyFlex(
-                        flex = Flex(
-                            size = Size(
-                                width = 150.unitReal(),
-                                height = 100.unitReal()
-                            )
-                        )
-                )
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.SPACE_EVENLY,
-                alignItems = AlignItems.CENTER
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                                size = Size.box(width = 300, height = 100)
+                      },
+                  createText(backgroundText = "#dd7631", text = "2")
+                      .setStyle {
+                          size = Size.box(width = 200, height = 100)
+                      },
+                  createText(backgroundText = "#649d66", text = "3")
+                      .setStyle {
+                          size = Size.box(width = 150, height = 100)
+                      }
+              )
+          ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.SPACE_EVENLY
+              alignItems = AlignItems.CENTER
+          }
     }
 ```
 
@@ -324,41 +271,24 @@ Items are aligned acording to the firt text line in each element.
  private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "texto 1")
-                    .applyFlex(
-                        flex = Flex(
-                            size = Size(
-                                width = 300.unitReal(),
-                                height = 100.unitReal()
-                            )
-                        )
-                ),
-                createText(backgroundColor = "#dd7631", text = "texto 2")
-                    .applyFlex(
-                        flex = Flex(
-                            size = Size(
-                                width = 200.unitReal(),
-                                height = 100.unitReal()
-                            )
-                        )
-                ),
-                createText(backgroundColor = "#649d66", text = "texto 3")
-                    .applyFlex(
-                        flex = Flex(
-                            size = Size(
-                                width = 150.unitReal(),
-                                height = 100.unitReal()
-                            )
-                        )
-                )
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.SPACE_EVENLY,
-                alignItems = AlignItems.BASELINE
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                                size = Size.box(width = 300, height = 100)
+                      },
+                  createText(backgroundText = "#dd7631", text = "2")
+                      .setStyle {
+                          size = Size.box(width = 200, height = 100)
+                      },
+                  createText(backgroundText = "#649d66", text = "3")
+                      .setStyle {
+                          size = Size.box(width = 150, height = 100)
+                      }
+              )
+          ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.SPACE_EVENLY
+              alignItems = AlignItems.BASELINE
+          }
     }
 ```
 
