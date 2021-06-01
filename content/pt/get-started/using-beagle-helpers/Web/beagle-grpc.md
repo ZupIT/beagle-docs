@@ -34,14 +34,14 @@ O gRPC é uma tecnologia que faz uso do protocolo **HTTP 2**, todavia, esta tecn
 
 Para instalar a biblioteca, instale ela globalmente, para melhor experiência com o CLI e após instale a mesma em seu projeto com os seguintes comandos:
 ```bash
-npm install -g beagle-web-grpc
-npm install --save-dev beagle-web-grpc
+npm install -g @zup-it/beagle-web-grpc
+npm install --save-dev @zup-it/beagle-web-grpc
 ```
 
 ou se você utiliza yarn:
 ```bash
-yarn global add beagle-web-grpc
-yarn add --dev beagle-web-grpc
+yarn global add @zup-it/beagle-web-grpc
+yarn add --dev @zup-it/beagle-web-grpc
 ```
 
 ## Utilização
@@ -52,7 +52,7 @@ yarn add --dev beagle-web-grpc
    - **React:** ./src/beagle/beagle-service.ts
      ```typescript
      import { createBeagleUIService } from '@zup-it/beagle-react'
-     import { usingBeagleGrpcClient } from 'beagle-web-grpc'
+     import { usingBeagleGrpcClient } from '@zup-it/beagle-web-grpc'
 
      export default createBeagleUIService({
        baseUrl: 'grpc://',
@@ -63,7 +63,7 @@ yarn add --dev beagle-web-grpc
    - **Angular:** ./src/app/beagle.module.ts
      ```typescript
      import { BeagleModule } from '@zup-it/beagle-angular'
-     import { usingBeagleGrpcClient } from 'beagle-web-grpc'
+     import { usingBeagleGrpcClient } from '@zup-it/beagle-web-grpc'
 
      @BeagleModule({
        baseUrl: 'grpc://',
@@ -135,7 +135,7 @@ Após rodar `beagle-web-grpc init` o arquivo *./beagle-grpc.config.json* vai ser
 O Cliente gRPC para Beagle Web é o que faz o redirecionamento das requisições grpc para o proxy, o cliente é utilizado através do `BeagleService` no React e do módulo `Beagle` no Angular, se valendo da propriedade de `fetchData`, ao qual o Beagle permite criar requisições HTTP customizadas, então a utilização se dá desta maneira:
 
 ```typescript
-import { usingBeagleGrpcClient } from 'beagle-web-grpc'
+import { usingBeagleGrpcClient } from '@zup-it/beagle-web-grpc'
 
 // { ... } - seu código do serviço ou módulo
 {
