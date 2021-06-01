@@ -23,7 +23,7 @@ No, Beagle does not interfere with your project's architecture.
 
 ## Why should I use Beagle and not React Native or Flutter?
 
-Beagle's solution is different from other tecnologies. It is a tool to make the development easier, it has UI oriented concept of continuous delivery. Beagle allows you to handle through backend, native components of your application, change layouts and the display of these components.
+Beagle's solution is different from other technologies. Beagle is a tool that makes mobile and web app development easier, and it has a UI oriented concept of continuous delivery. Through a backend project, Beagle also allows you to implement native components and change its layout.
 
 ## Is it possible to make tests in server driven screens?
 
