@@ -58,12 +58,6 @@ To start, you have to configure Beagle's dependencies on your repository. This c
 allprojects {
     repositories {
         google()
-        // < 1.1.0
-        jcenter()
-        maven {
-            url 'https://dl.bintray.com/zupit/repo'
-        }
-        // >= 1.1.0
         mavenCentral()
     }
 }
