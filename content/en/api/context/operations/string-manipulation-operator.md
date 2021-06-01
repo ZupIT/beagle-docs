@@ -13,7 +13,7 @@ description: You will find here the description of string manipulation operator
 | concat | "@{concat\("cachorro", "quente"\)}" | Operator that concatenates the strings that are as input. |
 | capitalize | "@{capitalize\(brasil\)}" | Operator that changes the first string letter into a capital letter. |
 | uppercase | "@{uppercase\(brasil\)}" | Operator that changes all letter of a string into uppercases.  |
-| lowercase | "@{lowecase\(BRASIL\)}" | Operator that changes all letters of a string into lowercases.  |
+| lowercase | "@{lowercase\(BRASIL\)}" | Operator that changes all letters of a string into lowercases.  |
 | substr | "@{substr\(brasil, 3\)}" | Operator that returns a substring of a input string. This operation may have 2 or 3 inputs, where the first parameter is the string  and the second and third ones are the string limit.  |
 
 ### Example
