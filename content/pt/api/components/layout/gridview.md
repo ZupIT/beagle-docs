@@ -159,54 +159,44 @@ A sua estrutura é representada como mostrado abaixo:
                   url = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
                   placeholder = ImagePath.Local(mobileId = "imagePath", webUrl = "/imagePath.png")
                 ),
-              ).applyStyle(
-                Style(
+              ).setStyle{
                   size = size
                   { width(242.unitReal()); height(225.unitReal()) },
-                )
-              ),
+              },
               Image(
                 path = ImagePath.Remote(
                   url = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
                   placeholder = ImagePath.Local(mobileId = "imagePath", webUrl = "/imagePath.png")
                 ),
-              ).applyStyle(
-                Style(
+              ).setStyle{
                   size = size
                   { width(242.unitReal()); height(225.unitReal()) },
-                )
-              ),
+              },
               Image(
                 path = ImagePath.Remote(
                   url = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
                   placeholder = ImagePath.Local(mobileId = "imagePath", webUrl = "/imagePath.png")
                 ),
-              ).applyStyle(
-                Style(
+              ).setStyle{
                   size = size
                   { width(242.unitReal()); height(225.unitReal()) },
-                )
-              ),
+              },
               Image(
                 path = ImagePath.Remote(
                   url = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
                   placeholder = ImagePath.Local(mobileId = "imagePath", webUrl = "/imagePath.png")
                 ),
-              ).applyStyle(
-                Style(
+              ).setStyle{
                   size = size
                   { width(242.unitReal()); height(225.unitReal()) },
-                )
-              ),
+              },
             )
           )
         )
-      ).applyStyle(
-        Style(
+      ).setStyle{
           size = size
           { maxWidth(560.unitReal()) },
-        )
-      ),
+      },
 }
 ```
 

@@ -8,7 +8,7 @@ description: "You will find here the description of the GridView component, its 
 
 ## What is it?
 
-O componente GridViewcomponent is responsible for defining a list in grid of items **recyclable** natively. These items can be any server-driven components. The use of GridView is more suitable for visual content, recommended for situations where there is repetition of components, but with different data.
+The componente GridView component is responsible for defining a grid of items **recyclable** natively. These items can be any server-driven components. The use of GridView is more suitable for visual content, recommended for situations where there is the repetition of components, but with different data.
 
 See how the structure is represented:
 
@@ -161,54 +161,44 @@ See how the structure is represented:
                   url = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
                   placeholder = ImagePath.Local(mobileId = "imagePath", webUrl = "/imagePath.png")
                 ),
-              ).applyStyle(
-                Style(
+              ).setStyle{
                   size = size
                   { width(242.unitReal()); height(225.unitReal()) },
-                )
-              ),
+              },
               Image(
                 path = ImagePath.Remote(
                   url = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
                   placeholder = ImagePath.Local(mobileId = "imagePath", webUrl = "/imagePath.png")
                 ),
-              ).applyStyle(
-                Style(
+              ).setStyle{
                   size = size
                   { width(242.unitReal()); height(225.unitReal()) },
-                )
-              ),
+              },
               Image(
                 path = ImagePath.Remote(
                   url = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
                   placeholder = ImagePath.Local(mobileId = "imagePath", webUrl = "/imagePath.png")
                 ),
-              ).applyStyle(
-                Style(
+              ).setStyle{
                   size = size
                   { width(242.unitReal()); height(225.unitReal()) },
-                )
-              ),
+              },
               Image(
                 path = ImagePath.Remote(
                   url = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
                   placeholder = ImagePath.Local(mobileId = "imagePath", webUrl = "/imagePath.png")
                 ),
-              ).applyStyle(
-                Style(
+              ).setStyle{
                   size = size
                   { width(242.unitReal()); height(225.unitReal()) },
-                )
-              ),
+              },
             )
           )
         )
-      ).applyStyle(
-        Style(
+      ).setStyle{
           size = size
           { maxWidth(560.unitReal()) },
-        )
-      ),
+      },
 }
 ```
 

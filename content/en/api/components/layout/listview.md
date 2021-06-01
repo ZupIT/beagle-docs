@@ -261,11 +261,9 @@ Default value is ListDirection.VERTICAL
                 Text("sex: @{item.sex}"),
                 Text("age: @{item.age}"),
             )
-        ).applyStyle(
-            Style(
+        ).setStyle{
                 margin = EdgeValue(bottom = 20.unitReal())
-            )
-        ),
+        }
         Case("@{eq(item.race, 'Kandra')}"),
          view =  Container(
             children = listOf(
@@ -276,11 +274,9 @@ Default value is ListDirection.VERTICAL
                 Text("sex: @{item.sex}"),
                 Text("age: @{item.age}"),
             )
-        ).applyStyle(
-            Style(
+        ).setStyle{
                 margin = EdgeValue(bottom = 20.unitReal())
-            )
-        ),
+        }
     )
 }
 ```

@@ -207,7 +207,8 @@ Valor default é ListDirection.VERTICAL
     ListView(
         context = ContextData(id = "characters", value = characters),
         dataSource = expressionOf("@{characters}"),
-        template = Container(
+        templates =  Case("@{eq(item.race, 'Half-skaa')}"),
+        view = Container(
             children = listOf(
                 Text("Name: @{item.name}"),
                 Text("Race: @{item.race}"),
@@ -216,11 +217,22 @@ Valor default é ListDirection.VERTICAL
                 Text("sex: @{item.sex}"),
                 Text("age: @{item.age}"),
             )
-        ).applyStyle(
-            Style(
+        ).setStyle{
                 margin = EdgeValue(bottom = 20.unitReal())
+        }
+        Case("@{eq(item.race, 'Kandra')}"),
+         view =  Container(
+            children = listOf(
+                Text("Name: @{item.name}"),
+                Text("Race: @{item.race}"),
+                Text("Mistborn: @{item.isMistborn}"),
+                Text("Planet: @{item.planet}"),
+                Text("sex: @{item.sex}"),
+                Text("age: @{item.age}"),
             )
-        )
+        ).setStyle{
+                margin = EdgeValue(bottom = 20.unitReal())
+        }
     )
 }
 ```
