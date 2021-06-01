@@ -15,7 +15,7 @@ Beagle is an open source framework of cross-platform development, it is based on
 
 The developer declares the backend screens and the exposed endpoints that represent them. These endpoints are called using Beagle, to render the screen components on the web or mobile.
 
-Beagle works as a 'bridge' between front and backend, it is possible that the design components of your application have a parameter in backend which makes a native application possible.
+Beagle works as a 'bridge' between front and backend, and it is possible for the design components of your application to have a parameter in the backend, making a native application possible.
 
 ## My application's architecture will change if I use Beagle?
 
