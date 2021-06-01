@@ -218,7 +218,7 @@ Valor default é ListDirection.VERTICAL
                 Text("age: @{item.age}"),
             )
         ).setStyle{
-                margin = EdgeValue(bottom = 20.unitReal())
+                margin = EdgeValue.only(bottom = 20)
         }
         Case("@{eq(item.race, 'Kandra')}"),
          view =  Container(
@@ -231,7 +231,7 @@ Valor default é ListDirection.VERTICAL
                 Text("age: @{item.age}"),
             )
         ).setStyle{
-                margin = EdgeValue(bottom = 20.unitReal())
+                margin = EdgeValue.only(bottom = 20)
         }
     )
 }
