@@ -69,7 +69,7 @@ Yeas! Beagle is an **open source development framework**, which means that its t
 
 ## **Can I create a BFF with a different language than JVM?**
 
-It's possible to create a BFF in a different language. However, we don't have ready `libs` to help you on this process, so it would be necessary that the developer create a mechanism to respect Beagle's contracts.
+It's possible to create a BFF in a different language. However, we don't have ready `libs` to help you on this process, so it would be necessary that the developer create a mechanism that respects Beagle's contracts.
 
 ## What are the advantages of using Beagle?
 
