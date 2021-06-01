@@ -53,7 +53,7 @@ fun screen() = Screen(
             Text(text = "The text in green bellow will show if the result of `TRUE OR FALSE"),
             Text(
                 expressionOf("@{condition(or(true, false), 'true', 'false')}")
-            ).applyStyle(Style(backgroundColor = "#00FF00"))
+            ).setStyle{ backgroundColor = "#00FF00" }
         )
     )
 )

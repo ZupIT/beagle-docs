@@ -90,10 +90,10 @@ Screen(
           TabView(children =
               listOf(
                   TabItem("Tab 1",
-                      Text("First Tab Content").applyFlex(flex = Flex(grow = 1.0))
+                      Text("First Tab Content").setFlex{ grow = 1.0 }
                   ),
                   TabItem("Tab 2",
-                      Text("Second Tab Content").applyFlex(flex = Flex(grow = 1.0))
+                      Text("Second Tab Content").setFlex{ grow = 1.0 }
                   )
               )
               )
