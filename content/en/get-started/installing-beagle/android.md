@@ -16,29 +16,12 @@ Before you start to configure Beagle for your Android system, it's important to 
 
 ## **Step 1: Dependencies' configuration**
 
-You have to adjust your repository's dependencies to receive Beagle. To do so, use the following configurations to **download Beagle's library.**
-
-For version prior to 1.1.0 add to build.gradle maven{url}:
+You have to adjust your repository's dependencies to receive Beagle. To do so, use the following configuration to **download Beagle's library.**
 
 ```kotlin
 allprojects {
     repositories {
         google()
-        jcenter()
-        maven {
-            url 'https://dl.bintray.com/zupit/repo'
-        }
-    }
-}
-```
-
-For version greater than or equal to 1.1.0 add to build.gradle mavenCentral ():
-
-```kotlin
-allprojects {
-    repositories {
-        google()
-        jcenter()
         mavenCentral()
     }
 }
@@ -50,32 +33,10 @@ The above configuration must be added to `allprojects{}`
 
 ## **Step 2: Include plugins**
 
-Once you made the first configuration, now you have to include the kapt and Beagle's plugin as dependencies on your dependency manager, there are two options below to add the plugin.
+Once you made the first configuration, now you have to include the kapt and Beagle's plugin as dependencies on your dependency manager, below is an example.
 
 The current release version of Beagle is: [![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android)](https://mvnrepository.com/artifact/br.com.zup.beagle/android)
 
-{{< tabs name="T200" >}}
-{{% tab name="apply plugin" %}}
-
-```kotlin
-apply plugin: 'kotlin-kapt'
-
-android {
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8
-    }
-}
-
-ext.beagle_version = "${beagle_version}"
-
-dependencies {
-    implementation "br.com.zup.beagle:android:$beagle_version"
-    kapt "br.com.zup.beagle:android-processor:$beagle_version"
-}
-```
-
-{{% /tab %}}
-{{% tab name="plugins" %}}
 
 ```kotlin
 plugins {
@@ -96,12 +57,10 @@ dependencies {
 }
 ```
 
-{{% /tab %}}
-{{< /tabs >}}
 
 Insert the Beagle's release version on the place of`${beagle.version}`, in other words, put the Beagle's version highlighted in blue badge above without the **v character**.
 
-For example: undefined-`ext.beagle.version = "0.2.8"`
+For example: undefined-`ext.beagle.version = "1.8.0"`
 
 {{% alert color="warning" %}}
 Remember to always check if you're using the latest version of Beagle. To see this information, you just have to pass your mouse above the version number. After that, sync your machine.

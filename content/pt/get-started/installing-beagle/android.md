@@ -18,29 +18,12 @@ Antes de configurar o Beagle para o seu sistema Android, é importante que você
 
 ## **Passo 1: Configurar as dependências**
 
-Você precisa ajustar as dependências do seu repositório para receber o Beagle. Para isso, utilize as configurações abaixo para fazer o **download da biblioteca**.
-
-Para versão anterior a 1.1.0 adicione no build.gradle _maven{url}_:
+Você precisa ajustar as dependências do seu repositório para receber o Beagle. Para isso, utilize as configuração abaixo para fazer o **download da biblioteca**.
 
 ```kotlin
 allprojects {
     repositories {
         google()
-        jcenter()
-        maven {
-            url 'https://dl.bintray.com/zupit/repo'
-        }
-    }
-}
-```
-
-Para versão superior ou igual a 1.1.0 adicione no build.gradle _mavenCentral()_:
-
-```kotlin
-allprojects {
-    repositories {
-        google()
-        jcenter()
         mavenCentral()
     }
 }
@@ -52,33 +35,10 @@ A configuração acima deve ser adicionada em `allprojects{}`
 
 ## **Passo 2: Incluir os plugins**
 
-Uma vez feita a primeira configuração, agora você precisa incluir o plugin do kapt e do Beagle como dependências dentro do seu gerenciador de dependências, segue abaixo as duas apção de adicionar o plugin.
+Uma vez feita a primeira configuração, agora você precisa incluir o plugin do kapt e do Beagle como dependências dentro do seu gerenciador de dependências, segue abaixo um exemplo.
 
 A versão atual do Beagle é: [![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android)](https://mvnrepository.com/artifact/br.com.zup.beagle/android)
 
-{{< tabs name="T200" >}}
-{{% tab name="apply plugin" %}}
-
-```kotlin
-apply plugin: 'kotlin-kapt'
-
-android {
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8
-    }
-}
-
-ext.beagle_version = "${beagle_version}"
-
-dependencies {
-    implementation "br.com.zup.beagle:android:$beagle_version"
-    kapt "br.com.zup.beagle:android-processor:$beagle_version"
-}
-```
-
-{{% /tab %}}
-
-{{% tab name="plugins" %}}
 
 ```kotlin
 plugins {
@@ -99,12 +59,9 @@ dependencies {
 }
 ```
 
-{{% /tab %}}
-{{< /tabs >}}
-
 Insira a versão de release do Beagle no lugar de `${beagle.version}`, ou seja, coloque a versão do Beagle destacada em azul da badge acima, mas sem o **caracter v** que antecede os números de versão.
 
-Por exemplo: undefined-`ext.beagle.version = "0.2.8"`
+Por exemplo: undefined-`ext.beagle.version = "1.8.0"`
 
 {{% alert color="warning" %}}
 Lembre de sempre verificar se você está usando a versão mais recente do Beagle. Para saber disso, basta passar o mouse por cima do número da versão. Depois disso, sincronize com sua máquina.

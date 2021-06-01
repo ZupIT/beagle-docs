@@ -102,7 +102,7 @@ dependencies {
 
 On `ext.beagle_version = "${beagle_version}"`, insert the Beagle's release version on the place of `${beagle.version}`. That means that you put the Beagle's version indicated on the blue badge, but without the **v character**.
 
-For example: undefined-`ext.beagle.version = "0.2.8"`
+For example: undefined-`ext.beagle.version = "1.8.0"`
 
 Once you made it, you can update your dependencies.
 
