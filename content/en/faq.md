@@ -27,7 +27,7 @@ Beagle's solution is different from other technologies. Beagle is a tool that ma
 
 ## Is it possible to make tests in server driven screens?
 
-Yes! Unit tests like instrumented test work the same way on Beagle.
+Yes! Unit tests, like instrumented tests, work the same way on Beagle.
 
 ## Can I use Beagle in an application that already has developed resources?
 
