@@ -31,7 +31,7 @@ Yes! Unit tests like instrumented test work the same way on Beagle.
 
 ## Can I use Beagle in an application that already has developed resources?
 
-Yes! If your application already have the developed components in a design system, you are able to use them on Beagle. You only have to see if these components are defined and then it will be easy to register them on Beagle.
+Yes! If your application already has the developed components in a design system, you are able to use them on Beagle. You only have to see if these components are defined and then it will be easy to register them on Beagle.
 
 ## Does a Beagle application need to be 100% Server Driven?
 
