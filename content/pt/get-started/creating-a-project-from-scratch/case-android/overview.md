@@ -60,11 +60,6 @@ allprojects {
     repositories {
         google()
         jcenter()
-        // < 1.1.0
-        maven {
-            url 'https://dl.bintray.com/zupit/repo'
-        }
-        // >= 1.1.0
         mavenCentral()
     }
 }
