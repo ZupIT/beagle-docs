@@ -43,7 +43,7 @@ No, your application will continue the same and it can be native even with Beagl
 
 ## Will my application work offline?
 
-Depends. All server driven application when requests the server a flow, it needs to be connected in order to receive a response from backend. The server driven flows cannot be solved without a connection. But, your if your application is not 100% server driven, there is a part of it that doesn't need to get online information, then it will work. The application also can be configured to call other screens in case they are offline.
+It depends. All server driven applications, when requesting the server in a flow, will need to be connected in order to receive a response from backend. The server driven flows cannot be solved without a connection. But, if your application is not 100% server driven, then there is a part of it that doesn't need to get online information, and then it will work. The application also can be configured to call other screens in case they are offline.
 
 ### If my my internet connection is interrupted in the middle of the application flow?
 
