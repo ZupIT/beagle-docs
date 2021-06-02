@@ -8,7 +8,7 @@ description: "Here you will find the documentation about the GridView component,
 
 ## What is it?
 
-The GridView component defines how a group of itens will position itself in a **recyclable** grid layout natively. The items in a gridview could be any server-driven component. The GridView use is more suitable for visual content and is recommended for situations where an item repeats itself but with diferent data, like for example, a card with movies details.
+The GridView component defines how a group of items will place itself natively in a **recyclable** grid layout. The items in a GridView could be any server-driven component. The GridView use is more suitable for visual content and is recommended for situations where an item repeats itself but with different data, like a card with movies details for example.
 
 This is how this component is structured:
 
