@@ -31,7 +31,7 @@ This is how this component is structured:
 
 ### Templates
 
-  The template to use will be decided according to the property `case` of the template.  
+The template to use will be decided according to the property `case` of the template.  
 {{% alert color="info" %}}
  The first template where `case` is `true` is the template chosen to render an item.
  If all are `false`, then the first template where `case` is omitted (default template) is used.
