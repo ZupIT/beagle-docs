@@ -57,12 +57,6 @@ To start, you have to configure Beagle's dependencies on your repository. This c
 allprojects {
     repositories {
         google()
-        jcenter()
-        // < 1.1.0
-        maven {
-            url 'https://dl.bintray.com/zupit/repo'
-        }
-        // >= 1.1.0
         mavenCentral()
     }
 }
@@ -107,7 +101,7 @@ dependencies {
 {{% alert color="info" %}}
 Add Beagle's release version instead of `${beagle.version}`, you should put Beagle's version highlighted like the blue badge above without the **v character**.
 
-For example: undefined-`ext.beagle.version = "0.2.8"`
+For example: undefined-`ext.beagle.version = "1.8.0"`
 {{% /alert %}}
 
 At the end of these configurations, your file must be like this:
