@@ -1,14 +1,14 @@
 ---
 title: Gridview
 weight: 340
-description: "You will find here the GridView component description, it's attributes and constructors"
+description: "Here you will find the documentation about the GridView component, its attributes and constructors."
 ---
 
 ---
 
 ## What is it?
 
-The GridView component defines how a group of itens will position itself in a **recyclable** grid layout natively. The items in a gridview could be any server-driven component. The GridView use is more suitable for visual content and is recommended for situations where an item repeats itself but with diferent data, like for example, a card with movies details.
+The GridView component defines how a group of items will place itself natively in a **recyclable** grid layout. The items in a GridView could be any server-driven component. The GridView use is more suitable for visual content and is recommended for situations where an item repeats itself but with different data, like a card with movies details for example.
 
 This is how this component is structured:
 
@@ -36,7 +36,7 @@ This is how this component is structured:
   The template to use will be decided according to the property `case` of the template.  
 {{% alert color="info" %}}
  The first template where `case` is `true` is the template chosen to render an item.
- If all are `false`, then, the first template where `case` is omitted (default template) is used.
+ If all are `false`, then the first template where `case` is omitted (default template) is used.
 {{% /alert %}}
 
 ## How to use it?

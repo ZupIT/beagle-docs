@@ -227,5 +227,3 @@ A sua estrutura é representada como mostrado abaixo:
 
 {{% /tab %}}
 {{< /tabs >}}
-
-
