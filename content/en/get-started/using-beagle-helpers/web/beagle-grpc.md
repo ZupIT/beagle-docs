@@ -151,4 +151,3 @@ The gRPC client has the following initialization options (`BeagleGrpcClientOptio
 | `proxyAddress`        | Yes             |                 | Address where the Proxy will be running for the client to communicate with the proxy  |
 | `redirectGrpcFrom`    | No              | `grpc://`       | If this attribute is informed, all requests that the url starts with the informed value will be redirected to the gRPC Proxy, otherwise they will be forwarded normally |
 | `customHttpClient`    | No              | `undefined`     | If this attribute is informed, it will still work as a function to perform custom HTTP requests, however, only if the condition of being a gRPC request is not met  |
-
