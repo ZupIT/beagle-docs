@@ -35,7 +35,7 @@ A configuração acima deve ser adicionada em `allprojects{}`
 
 ## **Passo 2: Incluir os plugins**
 
-Uma vez feita a primeira configuração, agora você precisa incluir o plugin do kapt e do Beagle como dependências dentro do seu gerenciador de dependências, segue abaixo um exemplo.
+Uma vez feita a primeira configuração, agora você precisa incluir o plugin do `kapt` e do Beagle como dependências dentro do seu gerenciador de dependências, como no exemplo abaixo.
 
 A versão atual do Beagle é: [![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android)](https://mvnrepository.com/artifact/br.com.zup.beagle/android)
 
