@@ -29,7 +29,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 ### Templates
 
-  O template a ser usado será decidido de acordo com a propriedade `case` do template.  
+O template a ser usado será decidido de acordo com a propriedade `case` do template.  
 {{% alert color="info" %}}
  O primeiro template onde `case` é ` true` será o template escolhido para renderizar um item. 
  Se todos forem `false`, então, o primeiro template onde `case` é omitido (template padrão) é usado.
@@ -202,4 +202,3 @@ A sua estrutura é representada como mostrado abaixo:
 
 {{% /tab %}}
 {{< /tabs >}}
-
