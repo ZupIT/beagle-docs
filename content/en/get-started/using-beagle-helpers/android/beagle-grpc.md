@@ -40,7 +40,7 @@ allprojects {
 }
 ```
 
-#### Step 2: Add kotlin kapt plugin and 3 dependencies on your application dependency manager (gradle.gradle)<br>
+#### Step 2: Add Kotlin Kapt plugin and 3 dependencies on your application dependency manager (gradle.gradle)<br>
 
 ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-grpc?color=green&label=Beagle-gRPC)
 ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?label=Beagle)
