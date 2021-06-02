@@ -29,6 +29,10 @@ This is how this component is structured:
 
 ### Templates
 
+{{% alert color="info" %}}
+  `case` is expression that will return `true` or `false`.
+{{% /alert %}}
+
   The template to use will be decided according to the property `case` of the template.  
 {{% alert color="info" %}}
  The first template where `case` is `true` is the template chosen to render an item.
@@ -44,100 +48,115 @@ This is how this component is structured:
 
 <!-- json-playground:gridView.json
 {
-  "_beagleComponent_": "beagle:container",
-  "style": {
-    "size": {
-      "maxWidth": {
-        "value": 560,
-        "type": "REAL"
-      }
-    }
-  },
-  "children": [
-    {
-      "_beagleComponent_": "beagle:gridview",
-      "numColumns": 2,
-      "useParentScroll": true,
-      "children": [
+  "_beagleComponent_": "beagle:screenComponent",
+  "child": {
+    "_beagleComponent_": "beagle:gridView",
+    "context": {
+      "id": "images",
+      "value": [
         {
-          "_beagleComponent_": "beagle:image",
-          "path": {
-            "_beagleImagePath_": "remote",
-            "url": "https://i.ibb.co/rvRN9kv/logo.png"
-          },
-          "style": {
-            "size": {
-              "width": {
-                "value": 242,
-                "type": "REAL"
-              },
-              "height": {
-                "value": 225,
-                "type": "REAL"
-              }
-            }
-          }
-        },
-        {
-          "_beagleComponent_": "beagle:image",
-          "path": {
-            "_beagleImagePath_": "remote",
-            "url": "https://i.ibb.co/rvRN9kv/logo.png"
-          },
-          "style": {
-            "size": {
-              "width": {
-                "value": 242,
-                "type": "REAL"
-              },
-              "height": {
-                "value": 225,
-                "type": "REAL"
-              }
-            }
-          }
-        },
-        {
-          "_beagleComponent_": "beagle:image",
-          "path": {
-            "_beagleImagePath_": "remote",
-            "url": "https://i.ibb.co/rvRN9kv/logo.png"
-          },
-          "style": {
-            "size": {
-              "width": {
-                "value": 242,
-                "type": "REAL"
-              },
-              "height": {
-                "value": 225,
-                "type": "REAL"
-              }
-            }
-          }
-        },
-        {
-          "_beagleComponent_": "beagle:image",
-          "path": {
-            "_beagleImagePath_": "remote",
-            "url": "https://i.ibb.co/rvRN9kv/logo.png"
-          },
-          "style": {
-            "size": {
-              "width": {
-                "value": 242,
-                "type": "REAL"
-              },
-              "height": {
-                "value": 225,
-                "type": "REAL"
-              }
-            }
-          }
+          "url": "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg"
         }
       ]
-    }
-  ]
+    },
+    "dataSource": "@{images}",
+    "templates": [
+      {
+        "view": {
+          "_beagleComponent_": "beagle:container",
+          "children": [
+            {
+              "_beagleComponent_": "beagle:image",
+              "path": {
+                "_beagleImagePath_": "remote",
+                "url": "@{item.url}"
+              },
+              "style": {
+                "cornerRadius": {},
+                "size": {
+                  "width": {
+                    "value": 242,
+                    "type": "REAL"
+                  },
+                  "height": {
+                    "value": 225,
+                    "type": "REAL"
+                  }
+                },
+                "flex": {}
+              }
+            },
+            {
+              "_beagleComponent_": "beagle:image",
+              "path": {
+                "_beagleImagePath_": "remote",
+                "url": "@{item.url}"
+              },
+              "style": {
+                "cornerRadius": {},
+                "size": {
+                  "width": {
+                    "value": 242,
+                    "type": "REAL"
+                  },
+                  "height": {
+                    "value": 225,
+                    "type": "REAL"
+                  }
+                },
+                "flex": {}
+              }
+            },
+            {
+              "_beagleComponent_": "beagle:image",
+              "path": {
+                "_beagleImagePath_": "remote",
+                "url": "@{item.url}"
+              },
+              "style": {
+                "cornerRadius": {},
+                "size": {
+                  "width": {
+                    "value": 242,
+                    "type": "REAL"
+                  },
+                  "height": {
+                    "value": 225,
+                    "type": "REAL"
+                  }
+                },
+                "flex": {}
+              }
+            },
+            {
+              "_beagleComponent_": "beagle:image",
+              "path": {
+                "_beagleImagePath_": "remote",
+                "url": "@{item.url}"
+              },
+              "style": {
+                "cornerRadius": {},
+                "size": {
+                  "width": {
+                    "value": 242,
+                    "type": "REAL"
+                  },
+                  "height": {
+                    "value": 225,
+                    "type": "REAL"
+                  }
+                },
+                "flex": {}
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "isScrollIndicatorVisible": false,
+    "iteratorName": "item",
+    "numColumns": 2
+  }
 }
 -->
 
@@ -148,50 +167,61 @@ This is how this component is structured:
 
 ```kotlin
 {
-     Container(
-        children = listOf(
-          GridView(
-            numColumns = "2",
-            useParentScroll = "true",
-            children = listOf(
-              Image(
-                path = ImagePath.Remote(
-                  url = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
-                  placeholder = ImagePath.Local(mobileId = "imagePath", webUrl = "/imagePath.png")
-                ),
-              ).setStyle{
-                  size = Size.box(width = 242,  height = 225)
-              },
-              Image(
-                path = ImagePath.Remote(
-                  url = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
-                  placeholder = ImagePath.Local(mobileId = "imagePath", webUrl = "/imagePath.png")
-                ),
-              ).setStyle{
-                     size = Size.box(width = 242,  height = 225)
-              },
-              Image(
-                path = ImagePath.Remote(
-                  url = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
-                  placeholder = ImagePath.Local(mobileId = "imagePath", webUrl = "/imagePath.png")
-                ),
-              ).setStyle{
-                   size = Size.box(width = 242,  height = 225)
-              },
-              Image(
-                path = ImagePath.Remote(
-                  url = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
-                  placeholder = ImagePath.Local(mobileId = "imagePath", webUrl = "/imagePath.png")
-                ),
-              ).setStyle{
-                   size = Size.box(width = 242,  height = 225)
-              },
+  data class Image(
+    val url: String,
+  )
+
+  val images = listOf(
+    Image(
+      url = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
+    ),
+  )
+
+ Container(
+      children = listOf(
+        GridView(
+          context = ContextData(id = "images", value = images),
+          dataSource = expressionOf("@{images}"),
+          numColumns = 2,
+          templates = listOf(
+            Template(
+              view = Container(
+                children = listOf(
+                  Image(
+                    path = ImagePath.Remote(
+                      "@{item.url}",
+                    ),
+                  ).setStyle {
+                    size = Size.box(width = 242, height = 225)
+                  },
+                  Image(
+                    path = ImagePath.Remote(
+                      "@{item.url}",
+                    ),
+                  ).setStyle {
+                    size = Size.box(width = 242, height = 225)
+                  },
+                  Image(
+                    path = ImagePath.Remote(
+                      "@{item.url}",
+                    ),
+                  ).setStyle {
+                    size = Size.box(width = 242, height = 225)
+                  },
+                  Image(
+                    path = ImagePath.Remote(
+                      "@{item.url}",
+                    ),
+                  ).setStyle {
+                    size = Size.box(width = 242, height = 225)
+                  },
+                )
+              )
             )
           )
         )
-      ).setStyle{
-         size = Size.box(maxWidth = 560)
-      },
+      )
+    )
 }
 ```
 
