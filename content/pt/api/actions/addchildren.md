@@ -2,7 +2,7 @@
 title: AddChildren
 weight: 257
 description: >-
-  Nesta seção, você encontra a definição do AddChildrenAction e detalhes de seus
+  Nesta seção, você encontra a definição do addChildren e detalhes de seus
   atributos
 ---
 
@@ -10,9 +10,9 @@ description: >-
 
 ## O que é?
 
-A ação `AddChildrenAction` é responsável por adicionar - no início ou no final - ou trocar todas as views que foram herdadas de  `Widget`  e que aceitam filhos.
+A ação `addChildren` é responsável por adicionar - no início ou no final - ou trocar todas as views que foram herdadas de  `Widget`  e que aceitam filhos.
 
-A estrutura do **AddChildrenAction** é:
+A estrutura do **addChildren** é:
 
 | **Atributo** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :---: | :--- |
@@ -36,7 +36,7 @@ Veja abaixo um exemplo de um botão que ao clicado adiciona uma view de texto:
 
 {{< tabs id="T106" >}}
 {{% tab name="JSON" %}}
-<!-- json-playground:addChildrenAction.json
+<!-- json-playground:addChildren.json
 {
 "_beagleComponent_": "beagle:container",
 "id": "containerId",
@@ -62,7 +62,7 @@ Veja abaixo um exemplo de um botão que ao clicado adiciona uma view de texto:
 ]
 }
 -->
-{{% playground file="addChildrenAction.json" language="pt" %}}
+{{% playground file="addChildren.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -70,7 +70,7 @@ Veja abaixo um exemplo de um botão que ao clicado adiciona uma view de texto:
 Container(
     children = listOf(
         Button("AddChildren", onPress = listOf(
-            AddChildrenAction(
+            addChildren(
                 componentId = "containerId",
                 value = listOf(
                     Text("New text added")
