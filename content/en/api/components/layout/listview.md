@@ -96,145 +96,187 @@ Default value is ListDirection.VERTICAL
 
 <!-- json-playground:listView.json
 {
-        "_beagleComponent_": "beagle:listView",
-        "direction": "VERTICAL",
-        "context": {
-          "id": "characters",
-          "value": [
-            {
-              "name": "Kelsier",
-              "race": "Half-skaa",
-              "planet": "Scadrial",
-              "isMistborn": true,
-              "age": 38,
-              "sex": "male"
-            },
-            {
-              "name": "Vin",
-              "race": "Half-skaa",
-              "planet": "Scadrial",
-              "isMistborn": true,
-              "age": 20,
-              "sex": "female"
-            },
-            {
-              "name": "TenSoon",
-              "race": "Kandra",
-              "planet": "Scadrial",
-              "isMistborn": false,
-              "age": 40,
-              "sex": "male"
-            }
-          ]
-        },
-        "dataSource": "@{characters}",
-        "iteratorName": "item",
-        "isScrollIndicatorVisible": false,
-        "templates": [
+  "_beagleComponent_": "beagle:listView",
+  "direction": "VERTICAL",
+  "context": {
+    "id": "characters",
+    "value": [
+      {
+        "name": "Kelsier",
+        "race": "Half-skaa",
+        "planet": "Scadrial",
+        "isMistborn": true,
+        "age": 38,
+        "sex": "male"
+      },
+      {
+        "name": "Vin",
+        "race": "Half-skaa",
+        "planet": "Scadrial",
+        "isMistborn": true,
+        "age": 20,
+        "sex": "female"
+      },
+      {
+        "name": "TenSoon",
+        "race": "Kandra",
+        "planet": "Scadrial",
+        "isMistborn": false,
+        "age": 40,
+        "sex": "male"
+      },
+      {
+        "name": "TenSoon",
+        "race": "Kandra",
+        "planet": "Scadrial",
+        "isMistborn": false,
+        "age": 40,
+        "sex": "male"
+      },
+      {
+        "name": "TenSoon",
+        "race": "Kandra",
+        "planet": "Scadrial",
+        "isMistborn": false,
+        "age": 40,
+        "sex": "male"
+      },
+      {
+        "name": "TenSoon",
+        "race": "Kandra",
+        "planet": "Scadrial",
+        "isMistborn": false,
+        "age": 40,
+        "sex": "male"
+      },
+      {
+        "name": "TenSoon",
+        "race": "Kandra",
+        "planet": "Scadrial",
+        "isMistborn": false,
+        "age": 40,
+        "sex": "male"
+      },
+      {
+        "name": "TenSoon",
+        "race": "Kandra",
+        "planet": "Scadrial",
+        "isMistborn": false,
+        "age": 40,
+        "sex": "male"
+      }
+    ]
+  },
+  "dataSource": "@{characters}",
+  "iteratorName": "item",
+  "isScrollIndicatorVisible": false,
+  "templates": [
+    {
+      "case": "@{eq(item.race, 'Half-skaa')}",
+      "view": {
+        "_beagleComponent_": "beagle:container",
+        "children": [
           {
-            "case": "@{eq(item.race, 'Half-skaa')}",
-            "view": {
-              "_beagleComponent_": "beagle:container",
-              "children": [
-                {
-                  "_beagleComponent_": "beagle:text",
-                  "text": "Name: @{item.name}"
-                },
-                {
-                  "_beagleComponent_": "beagle:text",
-                  "text": "Race: @{item.race}"
-                },
-                {
-                  "_beagleComponent_": "beagle:text",
-                  "text": "Mistborn: @{item.isMistborn}"
-                },
-                {
-                  "_beagleComponent_": "beagle:text",
-                  "text": "Planet: @{item.planet}"
-                },
-                {
-                  "_beagleComponent_": "beagle:text",
-                  "text": "sex: @{item.sex}"
-                },
-                {
-                  "_beagleComponent_": "beagle:text",
-                  "text": "age: @{item.age}"
-                }
-              ],
-              "style": {
-                "cornerRadius": {},
-                "size": {},
-                "margin": {
-                  "bottom": {
-                    "value": 20,
-                    "type": "REAL"
-                  }
-                },
-                "flex": {}
-              }
-            }
+            "_beagleComponent_": "beagle:text",
+            "text": "Name: @{item.name}"
           },
           {
-            "case": "@{eq(item.race, 'Kandra')}",
-            "view": {
-              "_beagleComponent_": "beagle:container",
-              "children": [
-                {
-                  "_beagleComponent_": "beagle:text",
-                  "text": "Name: @{item.name}"
-                },
-                {
-                  "_beagleComponent_": "beagle:text",
-                  "text": "Race: @{item.race}"
-                },
-                {
-                  "_beagleComponent_": "beagle:text",
-                  "text": "Mistborn: @{item.isMistborn}"
-                }
-              ],
-              "style": {
-                "cornerRadius": {},
-                "size": {},
-                "margin": {
-                  "bottom": {
-                    "value": 20,
-                    "type": "REAL"
-                  }
-                },
-                "flex": {}
-              }
-            }
+            "_beagleComponent_": "beagle:text",
+            "text": "Race: @{item.race}"
           },
           {
-            "view": {
-              "_beagleComponent_": "beagle:container",
-              "children": [
-                {
-                  "_beagleComponent_": "beagle:text",
-                  "text": "Planet: @{item.planet}"
-                },
-                {
-                  "_beagleComponent_": "beagle:text",
-                  "text": "sex: @{item.sex}"
-                },
-                {
-                  "_beagleComponent_": "beagle:text",
-                  "text": "age: @{item.age}"
-                }
-              ],
-              "style": {
-                "cornerRadius": {},
-                "size": {},
-                "margin": {
-                  "bottom": {
-                    "value": 20,
-                    "type": "REAL"
-                  }
-                },
-                "flex": {}
-              }
-            }
+            "_beagleComponent_": "beagle:text",
+            "text": "Mistborn: @{item.isMistborn}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Planet: @{item.planet}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "sex: @{item.sex}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "age: @{item.age}"
           }
+        ],
+        "style": {
+          "cornerRadius": {},
+          "size": {},
+          "margin": {
+            "bottom": {
+              "value": 20,
+              "type": "REAL"
+            }
+          },
+          "flex": {}
+        }
+      }
+    },
+    {
+      "case": "@{eq(item.race, 'Kandra')}",
+      "view": {
+        "_beagleComponent_": "beagle:container",
+        "children": [
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Name: @{item.name}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Race: @{item.race}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Mistborn: @{item.isMistborn}"
+          }
+        ],
+        "style": {
+          "cornerRadius": {},
+          "size": {},
+          "margin": {
+            "bottom": {
+              "value": 20,
+              "type": "REAL"
+            }
+          },
+          "flex": {}
+        }
+      }
+    },
+    {
+      "view": {
+        "_beagleComponent_": "beagle:container",
+        "children": [
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Planet: @{item.planet}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "sex: @{item.sex}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "age: @{item.age}"
+          }
+        ],
+        "style": {
+          "cornerRadius": {},
+          "size": {},
+          "margin": {
+            "bottom": {
+              "value": 20,
+              "type": "REAL"
+            }
+          },
+          "flex": {}
+        }
+      }
+    }
+  ]
+}
 -->
 
 {{% playground file="listView.json" language="pt" %}}
