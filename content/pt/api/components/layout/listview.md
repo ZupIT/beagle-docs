@@ -246,7 +246,6 @@ Valor default é ListDirection.VERTICAL
 {{% tab name="Kotlin DSL" %}}
 
 ```kotlin
-{
     data class Person (
             val name: String,
             val race: String,
@@ -327,7 +326,7 @@ Valor default é ListDirection.VERTICAL
             )
           )
         )
-}
+
 ```
 
 {{% /tab %}}
@@ -338,7 +337,7 @@ Valor default é ListDirection.VERTICAL
 {{< tabs id="T147" >}}
 {{% tab name="JSON" %}}
 
-<!-- json-playground:listViewDepreciado.json
+<!-- json-playground:listViewDeprecated.json
 {
   "_beagleComponent_": "beagle:listView",
   "children": [
@@ -365,7 +364,7 @@ Valor default é ListDirection.VERTICAL
 }
 -->
 
-{{% playground file="listViewDepreciado.json" language="pt" %}}
+{{% playground file="listViewDeprecated.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
