@@ -20,7 +20,7 @@ A sua estrutura é representada como mostrado abaixo:
 | context            | [ContextData]({{< ref path="/api/context" lang="pt" >}})                         |             | Define o contexto do componente.                                                                                                    |
 | onInit             | List&lt;[Action]({{< ref path="/api/actions" lang="pt" >}})&gt;                  |             | Lista de ações a serem executadas assim que o componente é exibido.                                                                 |
 | dataSource         | [Bind]({{< ref path="/api/context#binding" lang="pt" >}})&lt;List&lt;Any&gt;&gt; |      ✓      | Expressão que aponta para uma lista de valores usados para popular o componete.                                                     |
-| templates    |List&lt;[ServerDrivenComponent]({{< ref path="/api/components" lang="pt" >}})&gt; |           | Representa um array de template, onde cada template corresponde a uma celula na lista através de um `ServerDrivenComponent`.                                                              |
+| templates    |List&lt;[ServerDrivenComponent]({{< ref path="/api/components" lang="pt" >}})&gt; |      ✓     | Representa um array de template, onde cada template corresponde a uma celula na lista através de um `ServerDrivenComponent`.                                                              |
 | isScrollIndicatorVisible | Bool | | Define se a barra de scroll é visivel.|
 | onScrollEnd        | List&lt;[Action]({{< ref path="/api/actions" lang="pt" >}})&gt;                  |             | Lista de ações executadas quando o GridView chega ao fim.                                                                              |
 | scrollEndThreshold |  Int                                                         |             | Define a porcentagem rolada do GridView para disparar o `onScrollEnd`.                                                                 |
@@ -28,6 +28,10 @@ A sua estrutura é representada como mostrado abaixo:
 | key                | String                                                      |             | Aponta para um valor único presente em cada item do `dataSource` para ser usado como um sufixo nos ids dos componentes do template. |
 
 ### Templates
+
+{{% alert color="info" %}}
+  `case` é uma expressão que retornará `true` ou `false`.
+{{% /alert %}}
 
   O template a ser usado será decidido de acordo com a propriedade `case` do template.  
 {{% alert color="info" %}}
@@ -42,102 +46,117 @@ A sua estrutura é representada como mostrado abaixo:
 {{< tabs id="T146" >}}
 {{% tab name="JSON" %}}
 
-<!-- json-playground:listView.json
+<!-- json-playground:gridView.json
 {
-  "_beagleComponent_": "beagle:container",
-  "style": {
-    "size": {
-      "maxWidth": {
-        "value": 560,
-        "type": "REAL"
-      }
-    }
-  },
-  "children": [
-    {
-      "_beagleComponent_": "beagle:gridview",
-      "numColumns": 2,
-      "useParentScroll": true,
-      "children": [
+  "_beagleComponent_": "beagle:screenComponent",
+  "child": {
+    "_beagleComponent_": "beagle:gridView",
+    "context": {
+      "id": "images",
+      "value": [
         {
-          "_beagleComponent_": "beagle:image",
-          "path": {
-            "_beagleImagePath_": "remote",
-            "url": "https://i.ibb.co/rvRN9kv/logo.png"
-          },
-          "style": {
-            "size": {
-              "width": {
-                "value": 242,
-                "type": "REAL"
-              },
-              "height": {
-                "value": 225,
-                "type": "REAL"
-              }
-            }
-          }
-        },
-        {
-          "_beagleComponent_": "beagle:image",
-          "path": {
-            "_beagleImagePath_": "remote",
-            "url": "https://i.ibb.co/rvRN9kv/logo.png"
-          },
-          "style": {
-            "size": {
-              "width": {
-                "value": 242,
-                "type": "REAL"
-              },
-              "height": {
-                "value": 225,
-                "type": "REAL"
-              }
-            }
-          }
-        },
-        {
-          "_beagleComponent_": "beagle:image",
-          "path": {
-            "_beagleImagePath_": "remote",
-            "url": "https://i.ibb.co/rvRN9kv/logo.png"
-          },
-          "style": {
-            "size": {
-              "width": {
-                "value": 242,
-                "type": "REAL"
-              },
-              "height": {
-                "value": 225,
-                "type": "REAL"
-              }
-            }
-          }
-        },
-        {
-          "_beagleComponent_": "beagle:image",
-          "path": {
-            "_beagleImagePath_": "remote",
-            "url": "https://i.ibb.co/rvRN9kv/logo.png"
-          },
-          "style": {
-            "size": {
-              "width": {
-                "value": 242,
-                "type": "REAL"
-              },
-              "height": {
-                "value": 225,
-                "type": "REAL"
-              }
-            }
-          }
+          "url": "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg"
         }
       ]
-    }
-  ]
+    },
+    "dataSource": "@{images}",
+    "templates": [
+      {
+        "view": {
+          "_beagleComponent_": "beagle:container",
+          "children": [
+            {
+              "_beagleComponent_": "beagle:image",
+              "path": {
+                "_beagleImagePath_": "remote",
+                "url": "@{item.url}"
+              },
+              "style": {
+                "cornerRadius": {},
+                "size": {
+                  "width": {
+                    "value": 242,
+                    "type": "REAL"
+                  },
+                  "height": {
+                    "value": 225,
+                    "type": "REAL"
+                  }
+                },
+                "flex": {}
+              }
+            },
+            {
+              "_beagleComponent_": "beagle:image",
+              "path": {
+                "_beagleImagePath_": "remote",
+                "url": "@{item.url}"
+              },
+              "style": {
+                "cornerRadius": {},
+                "size": {
+                  "width": {
+                    "value": 242,
+                    "type": "REAL"
+                  },
+                  "height": {
+                    "value": 225,
+                    "type": "REAL"
+                  }
+                },
+                "flex": {}
+              }
+            },
+            {
+              "_beagleComponent_": "beagle:image",
+              "path": {
+                "_beagleImagePath_": "remote",
+                "url": "@{item.url}"
+              },
+              "style": {
+                "cornerRadius": {},
+                "size": {
+                  "width": {
+                    "value": 242,
+                    "type": "REAL"
+                  },
+                  "height": {
+                    "value": 225,
+                    "type": "REAL"
+                  }
+                },
+                "flex": {}
+              }
+            },
+            {
+              "_beagleComponent_": "beagle:image",
+              "path": {
+                "_beagleImagePath_": "remote",
+                "url": "@{item.url}"
+              },
+              "style": {
+                "cornerRadius": {},
+                "size": {
+                  "width": {
+                    "value": 242,
+                    "type": "REAL"
+                  },
+                  "height": {
+                    "value": 225,
+                    "type": "REAL"
+                  }
+                },
+                "flex": {}
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "isScrollIndicatorVisible": false,
+    "iteratorName": "item",
+    "numColumns": 2
+  }
 }
 -->
 
@@ -148,59 +167,63 @@ A sua estrutura é representada como mostrado abaixo:
 
 ```kotlin
 {
-     Container(
-        children = listOf(
-          GridView(
-            numColumns = "2",
-            useParentScroll = "true",
-            children = listOf(
-              Image(
-                path = ImagePath.Remote(
-                  url = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
-                  placeholder = ImagePath.Local(mobileId = "imagePath", webUrl = "/imagePath.png")
-                ),
-              ).setStyle{
-                  size = size
-                  { width(242.unitReal()); height(225.unitReal()) },
-              },
-              Image(
-                path = ImagePath.Remote(
-                  url = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
-                  placeholder = ImagePath.Local(mobileId = "imagePath", webUrl = "/imagePath.png")
-                ),
-              ).setStyle{
-                  size = size
-                  { width(242.unitReal()); height(225.unitReal()) },
-              },
-              Image(
-                path = ImagePath.Remote(
-                  url = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
-                  placeholder = ImagePath.Local(mobileId = "imagePath", webUrl = "/imagePath.png")
-                ),
-              ).setStyle{
-                  size = size
-                  { width(242.unitReal()); height(225.unitReal()) },
-              },
-              Image(
-                path = ImagePath.Remote(
-                  url = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
-                  placeholder = ImagePath.Local(mobileId = "imagePath", webUrl = "/imagePath.png")
-                ),
-              ).setStyle{
-                  size = size
-                  { width(242.unitReal()); height(225.unitReal()) },
-              },
+  data class Image(
+    val url: String,
+  )
+
+  val images = listOf(
+    Image(
+      url = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
+    ),
+  )
+
+ Container(
+      children = listOf(
+        GridView(
+          context = ContextData(id = "images", value = images),
+          dataSource = expressionOf("@{images}"),
+          numColumns = 2,
+          templates = listOf(
+            Template(
+              view = Container(
+                children = listOf(
+                  Image(
+                    path = ImagePath.Remote(
+                      "@{item.url}",
+                    ),
+                  ).setStyle {
+                    size = Size.box(width = 242, height = 225)
+                  },
+                  Image(
+                    path = ImagePath.Remote(
+                      "@{item.url}",
+                    ),
+                  ).setStyle {
+                    size = Size.box(width = 242, height = 225)
+                  },
+                  Image(
+                    path = ImagePath.Remote(
+                      "@{item.url}",
+                    ),
+                  ).setStyle {
+                    size = Size.box(width = 242, height = 225)
+                  },
+                  Image(
+                    path = ImagePath.Remote(
+                      "@{item.url}",
+                    ),
+                  ).setStyle {
+                    size = Size.box(width = 242, height = 225)
+                  },
+                )
+              )
             )
           )
         )
-      ).setStyle{
-          size = size
-          { maxWidth(560.unitReal()) },
-      },
+      )
+    )
 }
 ```
 
 {{% /tab %}}
 {{< /tabs >}}
-
-

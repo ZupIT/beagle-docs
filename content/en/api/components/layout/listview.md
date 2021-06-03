@@ -24,7 +24,7 @@ See how the structure is represented:
 | context            | [ContextData]({{< ref path="/api/context" lang="en" >}})                          |             | Defines the context of the component.                                                                                           |
 | onInit             | List&lt;[Action]({{< ref path="/api/actions" lang="en" >}})&gt;                   |             | List of actions to be performed as soon as the component is displayed.                                                          |
 | dataSource         | [Bind]({{< ref path="/api/context#bindings" lang="en" >}})&lt;List&lt;Any&gt;&gt; |      ✓      | Expression that points to a list of values used to populate the component.                                                      |
-| templates           | List&lt;[ServerDrivenComponent]({{< ref path="/api/components" lang="en" >}}) &gt;  |            | It represents a template array, where each template corresponds to a cell in the list through a`ServerDrivenComponent`.                                                          |
+| templates           | List&lt;[ServerDrivenComponent]({{< ref path="/api/components" lang="en" >}}) &gt;  |    ✓        | It represents a template array, where each template corresponds to a cell in the list through a`ServerDrivenComponent`.                                                          |
 | isScrollIndicatorVisible | Bool | | Set the scroll bar visibility. |
 | onScrollEnd        | List&lt;[Action]({{< ref path="/api/actions" lang="en" >}})&gt;                   |             | List of actions taken when the list ends.                                                                                       |
 | scrollEndThreshold | Int                                                       |             | Defines the percentage scrolled from the list to trigger `onScrollEnd`.                                                         |
@@ -46,10 +46,14 @@ Default value is ListDirection.VERTICAL
 
 ### Templates
 
+{{% alert color="info" %}}
+  `case` is expression that will return `true` or `false`.
+{{% /alert %}}
+
   The template to use will be decided according to the property `case` of the template.  
 {{% alert color="info" %}}
  The first template where `case` is `true` is the template chosen to render an item.
- If all are `false`, then, the first template where `case` is omitted (default template) is used.
+ If all are `false`, then the first template where `case` is omitted (default template) is used.
 {{% /alert %}}
 
 ### Deprecated ListView
@@ -92,120 +96,148 @@ Default value is ListDirection.VERTICAL
 
 <!-- json-playground:listView.json
 {
-  "_beagleComponent_": "beagle:listView",
-  "direction": "VERTICAL",
-  "dataSource": [
-    {
-      "name": "Kelsier",
-      "race": "Half-skaa",
-      "planet": "Scadrial",
-      "isMistborn": true,
-      "age": 38,
-      "sex": "male"
-    },
-    {
-      "name": "Vin",
-      "race": "Half-skaa",
-      "planet": "Scadrial",
-      "isMistborn": true,
-      "age": 20,
-      "sex": "female"
-    },
-    {
-      "name": "TenSoon",
-      "race": "Kandra",
-      "planet": "Scadrial",
-      "isMistborn": false,
-      "age": 40,
-      "sex": "male"
-    }
-  ],
-"templates":[
-   {
-      "case":"@{eq(item.race, 'Half-skaa')}",
-      "view":{
-         "_beagleComponent_":"beagle:container",
-         "style":{
-            "margin":{
-               "bottom":{
-                  "value":20,
-                  "type":"REAL"
-               }
+        "_beagleComponent_": "beagle:listView",
+        "direction": "VERTICAL",
+        "context": {
+          "id": "characters",
+          "value": [
+            {
+              "name": "Kelsier",
+              "race": "Half-skaa",
+              "planet": "Scadrial",
+              "isMistborn": true,
+              "age": 38,
+              "sex": "male"
+            },
+            {
+              "name": "Vin",
+              "race": "Half-skaa",
+              "planet": "Scadrial",
+              "isMistborn": true,
+              "age": 20,
+              "sex": "female"
+            },
+            {
+              "name": "TenSoon",
+              "race": "Kandra",
+              "planet": "Scadrial",
+              "isMistborn": false,
+              "age": 40,
+              "sex": "male"
             }
-         },
-         "children":[
-            {
-               "_beagleComponent_":"beagle:text",
-               "text":"Name: @{item.name}"
-            },
-            {
-               "_beagleComponent_":"beagle:text",
-               "text":"Race: @{item.race}"
-            },
-            {
-               "_beagleComponent_":"beagle:text",
-               "text":"Mistborn: @{item.isMistborn}"
-            },
-            {
-               "_beagleComponent_":"beagle:text",
-               "text":"Planet: @{item.planet}"
-            },
-            {
-               "_beagleComponent_":"beagle:text",
-               "text":"sex: @{item.sex}"
-            },
-            {
-               "_beagleComponent_":"beagle:text",
-               "text":"age: @{item.age}"
+          ]
+        },
+        "dataSource": "@{characters}",
+        "iteratorName": "item",
+        "isScrollIndicatorVisible": false,
+        "templates": [
+          {
+            "case": "@{eq(item.race, 'Half-skaa')}",
+            "view": {
+              "_beagleComponent_": "beagle:container",
+              "children": [
+                {
+                  "_beagleComponent_": "beagle:text",
+                  "text": "Name: @{item.name}"
+                },
+                {
+                  "_beagleComponent_": "beagle:text",
+                  "text": "Race: @{item.race}"
+                },
+                {
+                  "_beagleComponent_": "beagle:text",
+                  "text": "Mistborn: @{item.isMistborn}"
+                },
+                {
+                  "_beagleComponent_": "beagle:text",
+                  "text": "Planet: @{item.planet}"
+                },
+                {
+                  "_beagleComponent_": "beagle:text",
+                  "text": "sex: @{item.sex}"
+                },
+                {
+                  "_beagleComponent_": "beagle:text",
+                  "text": "age: @{item.age}"
+                }
+              ],
+              "style": {
+                "cornerRadius": {},
+                "size": {},
+                "margin": {
+                  "bottom": {
+                    "value": 20,
+                    "type": "REAL"
+                  }
+                },
+                "flex": {}
+              }
             }
-         ]
-      }
-   },
-   {
-      "case":"@{eq(item.race, 'Kandra')}",
-      "view":{
-         "_beagleComponent_":"beagle:container",
-         "style":{
-            "margin":{
-               "bottom":{
-                  "value":20,
-                  "type":"REAL"
-               }
+          },
+          {
+            "case": "@{eq(item.race, 'Kandra')}",
+            "view": {
+              "_beagleComponent_": "beagle:container",
+              "children": [
+                {
+                  "_beagleComponent_": "beagle:text",
+                  "text": "Name: @{item.name}"
+                },
+                {
+                  "_beagleComponent_": "beagle:text",
+                  "text": "Race: @{item.race}"
+                },
+                {
+                  "_beagleComponent_": "beagle:text",
+                  "text": "Mistborn: @{item.isMistborn}"
+                }
+              ],
+              "style": {
+                "cornerRadius": {},
+                "size": {},
+                "margin": {
+                  "bottom": {
+                    "value": 20,
+                    "type": "REAL"
+                  }
+                },
+                "flex": {}
+              }
             }
-         },
-         "children":[
-            {
-               "_beagleComponent_":"beagle:text",
-               "text":"Name: @{item.name}"
-            },
-            {
-               "_beagleComponent_":"beagle:text",
-               "text":"Race: @{item.race}"
-            },
-            {
-               "_beagleComponent_":"beagle:text",
-               "text":"Mistborn: @{item.isMistborn}"
-            },
-            {
-               "_beagleComponent_":"beagle:text",
-               "text":"Planet: @{item.planet}"
-            },
-            {
-               "_beagleComponent_":"beagle:text",
-               "text":"sex: @{item.sex}"
-            },
-            {
-               "_beagleComponent_":"beagle:text",
-               "text":"age: @{item.age}"
+          },
+          {
+            "view": {
+              "_beagleComponent_": "beagle:container",
+              "children": [
+                {
+                  "_beagleComponent_": "beagle:text",
+                  "text": "Planet: @{item.planet}"
+                },
+                {
+                  "_beagleComponent_": "beagle:text",
+                  "text": "sex: @{item.sex}"
+                },
+                {
+                  "_beagleComponent_": "beagle:text",
+                  "text": "age: @{item.age}"
+                }
+              ],
+              "style": {
+                "cornerRadius": {},
+                "size": {},
+                "margin": {
+                  "bottom": {
+                    "value": 20,
+                    "type": "REAL"
+                  }
+                },
+                "flex": {}
+              }
             }
-         ]
-      }
-   }
- ]
-}
+          }
 -->
 
-{{% playground file="listView.json" language="en" %}}
+{{% playground file="listView.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
