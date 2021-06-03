@@ -1,5 +1,5 @@
 ---
-title: Gridview
+title: GridView
 weight: 340
 description: "Descrição do componente GridView, seus atributos e construtores"
 ---
@@ -48,115 +48,154 @@ A sua estrutura é representada como mostrado abaixo:
 
 <!-- json-playground:gridView.json
 {
-  "_beagleComponent_": "beagle:screenComponent",
-  "child": {
-    "_beagleComponent_": "beagle:gridView",
-    "context": {
-      "id": "images",
-      "value": [
-        {
-          "url": "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg"
-        }
-      ]
-    },
-    "dataSource": "@{images}",
-    "templates": [
+  "_beagleComponent_": "beagle:gridView",
+  "context": {
+    "id": "characters",
+    "value": [
       {
-        "view": {
-          "_beagleComponent_": "beagle:container",
-          "children": [
-            {
-              "_beagleComponent_": "beagle:image",
-              "path": {
-                "_beagleImagePath_": "remote",
-                "url": "@{item.url}"
-              },
-              "style": {
-                "cornerRadius": {},
-                "size": {
-                  "width": {
-                    "value": 242,
-                    "type": "REAL"
-                  },
-                  "height": {
-                    "value": 225,
-                    "type": "REAL"
-                  }
-                },
-                "flex": {}
-              }
-            },
-            {
-              "_beagleComponent_": "beagle:image",
-              "path": {
-                "_beagleImagePath_": "remote",
-                "url": "@{item.url}"
-              },
-              "style": {
-                "cornerRadius": {},
-                "size": {
-                  "width": {
-                    "value": 242,
-                    "type": "REAL"
-                  },
-                  "height": {
-                    "value": 225,
-                    "type": "REAL"
-                  }
-                },
-                "flex": {}
-              }
-            },
-            {
-              "_beagleComponent_": "beagle:image",
-              "path": {
-                "_beagleImagePath_": "remote",
-                "url": "@{item.url}"
-              },
-              "style": {
-                "cornerRadius": {},
-                "size": {
-                  "width": {
-                    "value": 242,
-                    "type": "REAL"
-                  },
-                  "height": {
-                    "value": 225,
-                    "type": "REAL"
-                  }
-                },
-                "flex": {}
-              }
-            },
-            {
-              "_beagleComponent_": "beagle:image",
-              "path": {
-                "_beagleImagePath_": "remote",
-                "url": "@{item.url}"
-              },
-              "style": {
-                "cornerRadius": {},
-                "size": {
-                  "width": {
-                    "value": 242,
-                    "type": "REAL"
-                  },
-                  "height": {
-                    "value": 225,
-                    "type": "REAL"
-                  }
-                },
-                "flex": {}
-              }
+        "name": "Kelsier",
+        "race": "Half-skaa",
+        "planet": "Scadrial",
+        "isMistborn": true,
+        "age": 38,
+        "sex": "male"
+      },
+      {
+        "name": "Vin",
+        "race": "Half-skaa",
+        "planet": "Scadrial",
+        "isMistborn": true,
+        "age": 20,
+        "sex": "female"
+      },
+      {
+        "name": "TenSoon",
+        "race": "Kandra",
+        "planet": "Scadrial",
+        "isMistborn": false,
+        "age": 40,
+        "sex": "male"
+      },
+      {
+        "name": "TenSoon",
+        "race": "Kandra",
+        "planet": "Scadrial",
+        "isMistborn": false,
+        "age": 40,
+        "sex": "male"
+      }
+    ]
+  },
+  "dataSource": "@{characters}",
+  "templates": [
+    {
+      "case": "@{eq(item.race, 'Half-skaa')}",
+      "view": {
+        "_beagleComponent_": "beagle:container",
+        "children": [
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Name: @{item.name}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Race: @{item.race}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Mistborn: @{item.isMistborn}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Planet: @{item.planet}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "sex: @{item.sex}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "age: @{item.age}"
+          }
+        ],
+        "style": {
+          "cornerRadius": {},
+          "size": {},
+          "margin": {
+            "bottom": {
+              "value": 20,
+              "type": "REAL"
             }
-          ]
+          },
+          "flex": {}
         }
       }
-    ],
-    "isScrollIndicatorVisible": false,
-    "iteratorName": "item",
-    "numColumns": 2
-  }
+    },
+    {
+      "case": "@{eq(item.race, 'Kandra')}",
+      "view": {
+        "_beagleComponent_": "beagle:container",
+        "children": [
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Name: @{item.name}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Race: @{item.race}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Mistborn: @{item.isMistborn}"
+          }
+        ],
+        "style": {
+          "cornerRadius": {},
+          "size": {},
+          "margin": {
+            "bottom": {
+              "value": 20,
+              "type": "REAL"
+            }
+          },
+          "flex": {}
+        }
+      }
+    },
+    {
+      "view": {
+        "_beagleComponent_": "beagle:container",
+        "children": [
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Planet: @{item.planet}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "sex: @{item.sex}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "age: @{item.age}"
+          }
+        ],
+        "style": {
+          "cornerRadius": {},
+          "size": {},
+          "margin": {
+            "bottom": {
+              "value": 20,
+              "type": "REAL"
+            }
+          },
+          "flex": {}
+        }
+      }
+    }
+  ],
+  "isScrollIndicatorVisible": false,
+  "iteratorName": "item",
+  "numColumns": 2
 }
 -->
 
@@ -166,63 +205,96 @@ A sua estrutura é representada como mostrado abaixo:
 {{% tab name="Kotlin DSL" %}}
 
 ```kotlin
-{
-  data class Image(
-    val url: String,
-  )
 
-  val images = listOf(
-    Image(
-      url = "https://i.ibb.co/k9tYwtX/selo-do-exemplo-28420393.jpg",
+data class Person(
+    val name: String,
+    val race: String,
+    val planet: String,
+    val isMistborn: Boolean,
+    val age: Int,
+    val sex: String
+)
+
+val characters = listOf(
+    Person(
+        name = "Kelsier",
+        race = "Half-skaa",
+        planet = "Scadrial",
+        isMistborn = true,
+        age = 38,
+        sex = "male"
     ),
-  )
-
- Container(
-      children = listOf(
-        GridView(
-          context = ContextData(id = "images", value = images),
-          dataSource = expressionOf("@{images}"),
-          numColumns = 2,
-          templates = listOf(
-            Template(
-              view = Container(
-                children = listOf(
-                  Image(
-                    path = ImagePath.Remote(
-                      "@{item.url}",
-                    ),
-                  ).setStyle {
-                    size = Size.box(width = 242, height = 225)
-                  },
-                  Image(
-                    path = ImagePath.Remote(
-                      "@{item.url}",
-                    ),
-                  ).setStyle {
-                    size = Size.box(width = 242, height = 225)
-                  },
-                  Image(
-                    path = ImagePath.Remote(
-                      "@{item.url}",
-                    ),
-                  ).setStyle {
-                    size = Size.box(width = 242, height = 225)
-                  },
-                  Image(
-                    path = ImagePath.Remote(
-                      "@{item.url}",
-                    ),
-                  ).setStyle {
-                    size = Size.box(width = 242, height = 225)
-                  },
-                )
-              )
-            )
-          )
-        )
-      )
+    Person(
+        name = "Vin",
+        race = "Half-skaa",
+        planet = "Scadrial",
+        isMistborn = true,
+        age = 20,
+        sex = "female"
+    ),
+    Person(
+        name = "TenSoon",
+        race = "Kandra",
+        planet = "Scadrial",
+        isMistborn = false,
+        age = 40,
+        sex = "male"
+    ),
+    Person(
+        name = "TenSoon",
+        race = "Kandra",
+        planet = "Scadrial",
+        isMistborn = false,
+        age = 40,
+        sex = "male"
     )
-}
+)
+
+GridView(
+    numColumns = 2,
+    context = ContextData(id = "characters", value = characters),
+    dataSource = expressionOf("@{characters}"),
+    templates = listOf(
+        Template(
+            case = expressionOf("@{eq(item.race, 'Half-skaa')}"),
+            view = Container(
+                children = listOf(
+                    Text("Name: @{item.name}"),
+                    Text("Race: @{item.race}"),
+                    Text("Mistborn: @{item.isMistborn}"),
+                    Text("Planet: @{item.planet}"),
+                    Text("sex: @{item.sex}"),
+                    Text("age: @{item.age}"),
+                )
+            ).setStyle {
+                margin = EdgeValue.only(bottom = 20)
+            }
+        ),
+        Template(
+            case = expressionOf("@{eq(item.race, 'Kandra')}"),
+            view = Container(
+                children = listOf(
+                    Text("Name: @{item.name}"),
+                    Text("Race: @{item.race}"),
+                    Text("Mistborn: @{item.isMistborn}"),
+                )
+            ).setStyle {
+                margin = EdgeValue.only(bottom = 20)
+            }
+        ),
+        Template(
+            view = Container(
+                children = listOf(
+                    Text("Planet: @{item.planet}"),
+                    Text("sex: @{item.sex}"),
+                    Text("age: @{item.age}"),
+                )
+            ).setStyle {
+                margin = EdgeValue.only(bottom = 20)
+            }
+        )
+    )
+)
 ```
 
 {{% /tab %}}
