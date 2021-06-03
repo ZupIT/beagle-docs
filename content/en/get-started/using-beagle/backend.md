@@ -80,6 +80,10 @@ To start, you should create a class to configure a `Service` . The process is pr
 2. Note it with `@Service` , because this will be responsible to create your objects.
 
 ```kotlin
+import br.com.zup.beagle.widget.core.TextAlignment
+import br.com.zup.beagle.widget.layout.Screen
+import br.com.zup.beagle.widget.layout.ScreenBuilder
+import br.com.zup.beagle.widget.ui.Text
 import org.springframework.stereotype.Service
 
 @Service
