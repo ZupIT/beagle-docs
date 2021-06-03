@@ -39,14 +39,12 @@ private fun screen() :Widget{
                 createText(backgroundColor = "#dd7631", text = "texto 14"),
                 createText(backgroundColor = "#649d66", text = "texto 15")
             )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                flexDirection = FlexDirection.ROW,
-                flexWrap = FlexWrap.WRAP,
-                alignContent = AlignContent.STRETCH
-            )
-        )
+        ).setFlex {
+              grow = 1.0
+              flexDirection = FlexDirection.ROW
+              flexWrap = FlexWrap.WRAP
+              alignContent = AlignContent.STRETCH
+          }
     }
 ```
 
@@ -120,14 +118,12 @@ private fun screen() :Widget{
                 createText(backgroundColor = "#dd7631", text = "texto 14"),
                 createText(backgroundColor = "#649d66", text = "texto 15")
             )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                flexDirection = FlexDirection.ROW,
-                flexWrap = FlexWrap.WRAP,
-                alignContent = AlignContent.FLEX_START
-            )
-        )
+        ).setFlex {
+              grow = 1.0
+              flexDirection = FlexDirection.ROW
+              flexWrap = FlexWrap.WRAP
+              alignContent = AlignContent.FLEX_START
+          }
     }
 ```
 
@@ -201,14 +197,12 @@ private fun screen() :Widget{
                 createText(backgroundColor = "#dd7631", text = "texto 14"),
                 createText(backgroundColor = "#649d66", text = "texto 15")
             )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                flexDirection = FlexDirection.ROW,
-                flexWrap = FlexWrap.WRAP,
-                alignContent = AlignContent.FLEX_END
-            )
-        )
+        ).setFlex {
+              grow = 1.0
+              flexDirection = FlexDirection.ROW
+              flexWrap = FlexWrap.WRAP
+              alignContent = AlignContent.FLEX_END
+          }
     }
 ```
 
@@ -282,14 +276,12 @@ private fun screen() :Widget{
                 createText(backgroundColor = "#dd7631", text = "texto 14"),
                 createText(backgroundColor = "#649d66", text = "texto 15")
             )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                flexDirection = FlexDirection.ROW,
-                flexWrap = FlexWrap.WRAP,
-                alignContent = AlignContent.CENTER
-            )
-        )
+        ).setFlex {
+              grow = 1.0
+              flexDirection = FlexDirection.ROW
+              flexWrap = FlexWrap.WRAP
+              alignContent = AlignContent.CENTER
+          }
     }
 ```
 
@@ -363,14 +355,12 @@ private fun screen() :Widget{
                 createText(backgroundColor = "#dd7631", text = "texto 14"),
                 createText(backgroundColor = "#649d66", text = "texto 15")
             )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                flexDirection = FlexDirection.ROW,
-                flexWrap = FlexWrap.WRAP,
-                alignContent = AlignContent.SPACE_BETWEEN
-            )
-        )
+        ).setFlex {
+              grow = 1.0
+              flexDirection = FlexDirection.ROW
+              flexWrap = FlexWrap.WRAP
+              alignContent = AlignContent.SPACE_BETWEEN
+          }
     }
 ```
 
@@ -444,14 +434,12 @@ private fun screen() :Widget{
                 createText(backgroundColor = "#dd7631", text = "texto 14"),
                 createText(backgroundColor = "#649d66", text = "texto 15")
             )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                flexDirection = FlexDirection.ROW,
-                flexWrap = FlexWrap.WRAP,
-                alignContent = AlignContent.SPACE_AROUND
-            )
-        )
+        ).setFlex {
+              grow = 1.0
+              flexDirection = FlexDirection.ROW
+              flexWrap = FlexWrap.WRAP
+              alignContent = AlignContent.SPACE_AROUND
+          }
     }
 ```
 

@@ -25,19 +25,23 @@ Veja como funciona neste exemplo:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    Flex(size = Size(width = 130.unitReal(),height = 130.unitReal()))
-                ),
-                createText(backgroundColor = "#dd7631", text = "2").applyFlex(
-                    Flex(size = Size(width = 100.unitReal(),height = 100.unitReal()))
-                ),
-                createText(backgroundColor = "#649d66", text = "3").applyFlex(
-                    Flex(size = Size(width = 70.unitReal(),height = 70.unitReal()))
-                )
-            )
-        ).applyFlex(
-            Flex(flexDirection = FlexDirection.ROW)
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                          size = Size.box(width = 130, height = 130)
+                      },
+                  createText(backgroundText = "#dd7631", text = "2")
+                      .setStyle {
+                          size = Size.box(width = 100, height = 100)
+                      },
+                  createText(backgroundText = "#649d66", text = "3")
+                      .setStyle {
+                          size = Size.box(width = 70, height = 70)
+                      }
+              )
+          ).setFlex {
+              flexDirection = FlexDirection.ROW
+
+          }
     }
 ```
 
@@ -85,20 +89,24 @@ Veja como funciona neste exemplo:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    Flex(size = Size(width = 130.unitReal(),height = 130.unitReal()))
-                ),
-                createText(backgroundColor = "#dd7631", text = "2").applyFlex(
-                    Flex(size = Size(width = 100.unitReal(),height = 100.unitReal()))
-                ),
-                createText(backgroundColor = "#649d66", text = "3").applyFlex(
-                    Flex(size = Size(width = 70.unitReal(),height = 70.unitReal()),
-                    positionType = FlexPositionType.ABSOLUTE)
-                )
-            )
-        ).applyFlex(
-            Flex(flexDirection = FlexDirection.ROW)
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                          size = Size.box(width = 130, height = 130)
+                      },
+                  createText(backgroundText = "#dd7631", text = "2")
+                      .setStyle {
+                          size = Size.box(width = 100, height = 100)
+                      },
+                  createText(backgroundText = "#649d66", text = "3")
+                      .setStyle {
+                          size = Size.box(width = 70, height = 70)
+                          positionType = PositionType.ABSOLUTE
+                      }
+              )
+          ).setFlex {
+              flexDirection = FlexDirection.ROW
+
+          }
     }
 ```
 

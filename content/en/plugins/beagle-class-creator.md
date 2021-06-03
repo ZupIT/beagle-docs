@@ -8,6 +8,7 @@ description: >-
 ---
 
 ## What this Plugin does?
+![JetBrains Plugins](https://img.shields.io/jetbrains/plugin/v/br.com.zup.beagle-template-intellij-plugin?color=green&label=Beagle%20Class%20Creator&style=plastic)
 
 When using this plugin the developer will be able to create custom Beagle components automatically with just two clicks.
 
@@ -50,6 +51,18 @@ To view/or use the templates, press the keys:
 * It is important to remember that some components, such as `CENTER`, or` TOUCHABLE`, accept only one CHILD element, that is, if you select two elements (like in the example below) and click on the `apply-CENTER-style`, the IDE will show some type of error because this component accepts only one child.
 
 ![](/shared/plugin/plugin-live-template.gif)
+
+## How to use the auto complete?
+
+The autocomplete option is very easy to use on this plugin. 
+All you need to do is start writing the component you wish to call, for example, `cont` for Container, a list will show, and you can just hit `TAB` to create a Container where you cursor is focused.
+
+All Beagle components and actions are set for autocomplete. The general rule to call them is:
+* Start writing the component/action name
+* Most abreviations are around 4 to 5 letters. 
+* If you wait a second before hiting `TAB` a list will show telling about the option to create a Beagle Component or a Beagle Action.
+
+![](/shared/plugin/autocomplete.gif)
 
 <!-- # Want to know moew about our plugin? 
 👉 Access our GitHub repo on [Beagle Class Creator Plugin](https://github.com/ZupIT/beagle-template-intellij-plugin) and explore it freely! Please feel free to sugest any improvements! -->

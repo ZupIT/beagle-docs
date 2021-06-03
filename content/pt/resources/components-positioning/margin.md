@@ -27,19 +27,18 @@ Define um espaçamento em todos os lados do elemento:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    flex = Flex(margin = EdgeValue(all = 10.unitReal()))
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.FLEX_START,
-                flexDirection = FlexDirection.ROW
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                                margin = EdgeValue(all = UnitValue.real(10))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.FLEX_START
+              flexDirection = FlexDirection.ROW
+          }
     }
 ```
 
@@ -85,19 +84,18 @@ Define um espaçamento na parte inferior do elemento:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    flex = Flex(margin = EdgeValue(bottom = 10.unitReal()))
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.FLEX_START,
-                flexDirection = FlexDirection.COLUMN
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                                margin = EdgeValue(bottom = UnitValue.real(10))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.FLEX_START
+              flexDirection = FlexDirection.COLUMN
+          }
     }
 ```
 
@@ -145,19 +143,18 @@ Define um espaçamento no lado esquerdo do elemento:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    flex = Flex(margin = EdgeValue(left = 10.unitReal()))
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.FLEX_START,
-                flexDirection = FlexDirection.ROW
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                                margin = EdgeValue(left = UnitValue.real(10))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.FLEX_START
+              flexDirection = FlexDirection.ROW
+          }
     }
 ```
 
@@ -205,19 +202,18 @@ Define um espaçamento no lado direito do elemento:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    flex = Flex(margin = EdgeValue(right = 10.unitReal()))
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.FLEX_START,
-                flexDirection = FlexDirection.ROW
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                                margin = EdgeValue(right = UnitValue.real(10))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.FLEX_START
+              flexDirection = FlexDirection.ROW
+          }
     }
 ```
 
@@ -265,19 +261,18 @@ Define um espaçamento na parte superior do elemento:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    flex = Flex(margin = EdgeValue(top = 10.unitReal()))
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.FLEX_START,
-                flexDirection = FlexDirection.ROW
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                                margin = EdgeValue(top = UnitValue.real(10))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.FLEX_START
+              flexDirection = FlexDirection.ROW
+          }
     }
 ```
 
@@ -325,19 +320,18 @@ Define um espaçamento no eixo horizontal do elemento:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    flex = Flex(margin = EdgeValue(horizontal = 10.unitReal()))
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.FLEX_START,
-                flexDirection = FlexDirection.ROW
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                                margin = EdgeValue(horizontal = UnitValue.real(10))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.FLEX_START
+              flexDirection = FlexDirection.ROW
+          }
     }
 ```
 
@@ -385,19 +379,18 @@ Define um espaçamento no eixo vertical do elemento:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    flex = Flex(margin = EdgeValue(vertical = 10.unitReal()))
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.FLEX_START,
-                flexDirection = FlexDirection.ROW
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle {
+                                margin = EdgeValue(vertical = UnitValue.real(10))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.FLEX_START
+              flexDirection = FlexDirection.COLUMN
+          }
     }
 ```
 
