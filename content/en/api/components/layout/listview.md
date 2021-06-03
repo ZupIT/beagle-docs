@@ -1,5 +1,5 @@
 ---
-title: Listview
+title: ListView
 weight: 315
 description: "You will find here the description of the ListView component, its attributes and constructors"
 ---
@@ -24,7 +24,7 @@ See how the structure is represented:
 | context            | [ContextData]({{< ref path="/api/context" lang="en" >}})                          |             | Defines the context of the component.                                                                                           |
 | onInit             | List&lt;[Action]({{< ref path="/api/actions" lang="en" >}})&gt;                   |             | List of actions to be performed as soon as the component is displayed.                                                          |
 | dataSource         | [Bind]({{< ref path="/api/context#bindings" lang="en" >}})&lt;List&lt;Any&gt;&gt; |      ✓      | Expression that points to a list of values used to populate the component.                                                      |
-| template           | [ServerDrivenComponent]({{< ref path="/api/components" lang="en" >}})             |      ✓      | It represents each cell in the list through a `ServerDrivenComponent`.                                                          |
+| templates           | List&lt;[ServerDrivenComponent]({{< ref path="/api/components" lang="en" >}}) &gt;  |    ✓        | It represents a template array, where each template corresponds to a cell in the list through a`ServerDrivenComponent`.                                                          |
 | isScrollIndicatorVisible | Bool | | Set the scroll bar visibility. |
 | onScrollEnd        | List&lt;[Action]({{< ref path="/api/actions" lang="en" >}})&gt;                   |             | List of actions taken when the list ends.                                                                                       |
 | scrollEndThreshold | Int                                                       |             | Defines the percentage scrolled from the list to trigger `onScrollEnd`.                                                         |
@@ -42,6 +42,18 @@ It is an `ENUM`, the values are:
 
 {{% alert color="info" %}}
 Default value is ListDirection.VERTICAL
+{{% /alert %}}
+
+### Templates
+
+{{% alert color="info" %}}
+  `case` is expression that will return `true` or `false`.
+{{% /alert %}}
+
+  The template to use will be decided according to the property `case` of the template.  
+{{% alert color="info" %}}
+ The first template where `case` is `true` is the template chosen to render an item.
+ If all are `false`, then the first template where `case` is omitted (default template) is used.
 {{% /alert %}}
 
 ### Deprecated ListView
@@ -86,79 +98,193 @@ Default value is ListDirection.VERTICAL
 {
   "_beagleComponent_": "beagle:listView",
   "direction": "VERTICAL",
-  "dataSource": [
+  "context": {
+    "id": "characters",
+    "value": [
+      {
+        "name": "Kelsier",
+        "race": "Half-skaa",
+        "planet": "Scadrial",
+        "isMistborn": true,
+        "age": 38,
+        "sex": "male"
+      },
+      {
+        "name": "Vin",
+        "race": "Half-skaa",
+        "planet": "Scadrial",
+        "isMistborn": true,
+        "age": 20,
+        "sex": "female"
+      },
+      {
+        "name": "TenSoon",
+        "race": "Kandra",
+        "planet": "Scadrial",
+        "isMistborn": false,
+        "age": 40,
+        "sex": "male"
+      },
+      {
+        "name": "TenSoon",
+        "race": "Kandra",
+        "planet": "Scadrial",
+        "isMistborn": false,
+        "age": 40,
+        "sex": "male"
+      },
+      {
+        "name": "TenSoon",
+        "race": "Kandra",
+        "planet": "Scadrial",
+        "isMistborn": false,
+        "age": 40,
+        "sex": "male"
+      },
+      {
+        "name": "TenSoon",
+        "race": "Kandra",
+        "planet": "Scadrial",
+        "isMistborn": false,
+        "age": 40,
+        "sex": "male"
+      },
+      {
+        "name": "TenSoon",
+        "race": "Kandra",
+        "planet": "Scadrial",
+        "isMistborn": false,
+        "age": 40,
+        "sex": "male"
+      },
+      {
+        "name": "TenSoon",
+        "race": "Kandra",
+        "planet": "Scadrial",
+        "isMistborn": false,
+        "age": 40,
+        "sex": "male"
+      }
+    ]
+  },
+  "dataSource": "@{characters}",
+  "iteratorName": "item",
+  "isScrollIndicatorVisible": false,
+  "templates": [
     {
-      "name": "Kelsier",
-      "race": "Half-skaa",
-      "planet": "Scadrial",
-      "isMistborn": true,
-      "age": 38,
-      "sex": "male"
-    },
-    {
-      "name": "Vin",
-      "race": "Half-skaa",
-      "planet": "Scadrial",
-      "isMistborn": true,
-      "age": 20,
-      "sex": "female"
-    },
-    {
-      "name": "TenSoon",
-      "race": "Kandra",
-      "planet": "Scadrial",
-      "isMistborn": false,
-      "age": 40,
-      "sex": "male"
-    }
-  ],
-  "template": {
-    "_beagleComponent_": "beagle:container",
-    "style": {
-      "margin": {
-        "bottom": {
-          "value": 20,
-          "type": "REAL"
+      "case": "@{eq(item.race, 'Half-skaa')}",
+      "view": {
+        "_beagleComponent_": "beagle:container",
+        "children": [
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Name: @{item.name}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Race: @{item.race}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Mistborn: @{item.isMistborn}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Planet: @{item.planet}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "sex: @{item.sex}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "age: @{item.age}"
+          }
+        ],
+        "style": {
+          "cornerRadius": {},
+          "size": {},
+          "margin": {
+            "bottom": {
+              "value": 20,
+              "type": "REAL"
+            }
+          },
+          "flex": {}
         }
       }
     },
-    "children": [
-      {
-        "_beagleComponent_": "beagle:text",
-        "text": "Name: @{item.name}"
-      },
-      {
-        "_beagleComponent_": "beagle:text",
-        "text": "Race: @{item.race}"
-      },
-      {
-        "_beagleComponent_": "beagle:text",
-        "text": "Mistborn: @{item.isMistborn}"
-      },
-      {
-        "_beagleComponent_": "beagle:text",
-        "text": "Planet: @{item.planet}"
-      },
-      {
-        "_beagleComponent_": "beagle:text",
-        "text": "sex: @{item.sex}"
-      },
-      {
-        "_beagleComponent_": "beagle:text",
-        "text": "age: @{item.age}"
+    {
+      "case": "@{eq(item.race, 'Kandra')}",
+      "view": {
+        "_beagleComponent_": "beagle:container",
+        "children": [
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Name: @{item.name}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Race: @{item.race}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Mistborn: @{item.isMistborn}"
+          }
+        ],
+        "style": {
+          "cornerRadius": {},
+          "size": {},
+          "margin": {
+            "bottom": {
+              "value": 20,
+              "type": "REAL"
+            }
+          },
+          "flex": {}
+        }
       }
-    ]
-  }
+    },
+    {
+      "view": {
+        "_beagleComponent_": "beagle:container",
+        "children": [
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Planet: @{item.planet}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "sex: @{item.sex}"
+          },
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "age: @{item.age}"
+          }
+        ],
+        "style": {
+          "cornerRadius": {},
+          "size": {},
+          "margin": {
+            "bottom": {
+              "value": 20,
+              "type": "REAL"
+            }
+          },
+          "flex": {}
+        }
+      }
+    }
+  ]
 }
 -->
 
-{{% playground file="listView.json" language="en" %}}
+{{% playground file="listView.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
 
 ```kotlin
-{
     data class Person (
             val name: String,
             val race: String,
@@ -195,23 +321,51 @@ Default value is ListDirection.VERTICAL
         ),
     )
     
-    ListView(
-        context = ContextData(id = "characters", value = characters),
-        dataSource = expressionOf("@{characters}"),
-        template = Container(
-            children = listOf(
-                Text("Name: @{item.name}"),
-                Text("Race: @{item.race}"),
-                Text("Mistborn: @{item.isMistborn}"),
-                Text("Planet: @{item.planet}"),
-                Text("sex: @{item.sex}"),
-                Text("age: @{item.age}"),
+     ListView(
+          context = ContextData(id = "characters", value = characters),
+          dataSource = expressionOf("@{characters}"),
+          templates = listOf(
+            Template(
+              case = expressionOf("@{eq(item.race, 'Half-skaa')}"),
+              view = Container(
+                children = listOf(
+                  Text("Name: @{item.name}"),
+                  Text("Race: @{item.race}"),
+                  Text("Mistborn: @{item.isMistborn}"),
+                  Text("Planet: @{item.planet}"),
+                  Text("sex: @{item.sex}"),
+                  Text("age: @{item.age}"),
+                )
+              ).setStyle {
+                margin = EdgeValue.only(bottom = 20)
+              }
+            ),
+              Template(
+              case = expressionOf("@{eq(item.race, 'Kandra')}"),
+              view = Container(
+                children = listOf(
+                  Text("Name: @{item.name}"),
+                  Text("Race: @{item.race}"),
+                  Text("Mistborn: @{item.isMistborn}"),
+                )
+              ).setStyle {
+                margin = EdgeValue.only(bottom = 20)
+              }
+              ),
+            Template(
+              view = Container(
+                children = listOf(
+                  Text("Planet: @{item.planet}"),
+                  Text("sex: @{item.sex}"),
+                  Text("age: @{item.age}"),
+                )
+              ).setStyle {
+                margin = EdgeValue.only(bottom = 20)
+              }
             )
-        ).setStyle{
-          margin = EdgeValue.only(bottom = 20)
-        }
-    )
-}
+          )
+        )
+
 ```
 
 {{% /tab %}}
@@ -222,7 +376,7 @@ Default value is ListDirection.VERTICAL
 {{< tabs id="T129" >}}
 {{% tab name="JSON" %}}
 
-<!-- json-playground:listViewDepreciado.json
+<!-- json-playground:listViewDeprecated.json
 {
   "_beagleComponent_": "beagle:listView",
   "children": [
@@ -249,7 +403,7 @@ Default value is ListDirection.VERTICAL
 }
 -->
 
-{{% playground file="listViewDepreciado.json" language="en" %}}
+{{% playground file="listViewDeprecated.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
