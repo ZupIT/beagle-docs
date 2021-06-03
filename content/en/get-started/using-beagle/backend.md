@@ -120,6 +120,7 @@ The endpoints are configured as notes according to HTTP method \(for example, `@
 To configure your class, follow the example below. Remember to name the file as`MyController` so you can simply copy and paste this example.
 
 ```kotlin
+import br.com.zup.beagle.widget.layout.ScreenBuilder
 import io.micronaut.http.annotation.Controller
 import io.micronaut.http.annotation.Get
 
@@ -143,6 +144,7 @@ The endpoints are configured with notes according to HTTP method \(for example `
 To configure this class, follow the example below. Remember to name the file as`MyController` so you can simply copy and paste this example.
 
 ```kotlin
+import br.com.zup.beagle.widget.layout.ScreenBuilder
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
