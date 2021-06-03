@@ -39,32 +39,36 @@ Cada um dos números acima representa um atributo:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    flex = Flex(alignSelf = AlignSelf.AUTO)
-                ),
-                createText(backgroundColor = "#dd7631", text = "2").applyFlex(
-                    flex = Flex(alignSelf = AlignSelf.STRETCH)
-                ),
-                createText(backgroundColor = "#649d66", text = "3").applyFlex(
-                    flex = Flex(alignSelf = AlignSelf.FLEX_START)
-                ),
-                createText(backgroundColor = "#dd7631", text = "4").applyFlex(
-                    flex = Flex(alignSelf = AlignSelf.FLEX_END)
-                ),
-                createText(backgroundColor = "#649d66", text = "5").applyFlex(
-                    flex = Flex(alignSelf = AlignSelf.CENTER)
-                ),
-                createText(backgroundColor = "#dd7631", text = "6").applyFlex(
-                    flex = Flex(alignSelf = AlignSelf.BASELINE)
-                )
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.SPACE_EVENLY,
-                alignItems = AlignItems.CENTER
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setFlex {
+                               alignSelf = AlignSelf.AUTO
+                      },
+                  createText(backgroundText = "#dd7631", text = "2")
+                      .setFlex {
+                          alignSelf = AlignSelf.STRETCH
+                      },
+                  createText(backgroundText = "#649d66", text = "3")
+                      .setFlex {
+                          alignSelf = AlignSelf.FLEX_START
+                      },
+                  createText(backgroundText = "#dd7631", text = "4")
+                      .setFlex {
+                          alignSelf = AlignSelf.FLEX_END
+                      },
+                  createText(backgroundText = "#649d66", text = "5")
+                      .setFlex {
+                          alignSelf = AlignSelf.CENTER
+                      },
+                  createText(backgroundText = "#dd7631", text = "6")
+                      .setFlex {
+                          alignSelf = AlignSelf.BASELINE
+                      },
+              )
+          ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.SPACE_EVENLY
+              alignItems = AlignItems.CENTER
+          }
     }
 ```
 

@@ -35,11 +35,9 @@ private fun screen() :Widget{
                 createText(backgroundColor = "#dd7631", text = "texto 2"),
                 createText(backgroundColor = "#649d66", text = "texto 3")
             )
-        ).applyFlex(
-            Flex(
-                flexDirection = FlexDirection.ROW
-            )
-        )
+        ).setFlex {
+              flexDirection = FlexDirection.ROW
+          }
 
     }
 ```
@@ -87,11 +85,9 @@ private fun screen() :Widget{
                 createText(backgroundColor = "#dd7631", text = "texto 2"),
                 createText(backgroundColor = "#649d66", text = "texto 3")
             )
-        ).applyFlex(
-            Flex(
-                flexDirection = FlexDirection.ROW_REVERSE
-            )
-        )
+        ).setFlex {
+              flexDirection = FlexDirection.ROW_REVERSE
+          }
 
     }
 ```
@@ -139,11 +135,9 @@ private fun screen() :Widget{
                 createText(backgroundColor = "#dd7631", text = "texto 2"),
                 createText(backgroundColor = "#649d66", text = "texto 3")
             )
-        ).applyFlex(
-            Flex(
-                flexDirection = FlexDirection.COLUMN
-            )
-        )
+        ).setFlex {
+              flexDirection = FlexDirection.COLUMN
+          }
 
     }
 ```
@@ -191,11 +185,9 @@ private fun screen() :Widget{
                 createText(backgroundColor = "#dd7631", text = "texto 2"),
                 createText(backgroundColor = "#649d66", text = "texto 3")
             )
-        ).applyFlex(
-            Flex(
-                flexDirection = FlexDirection.COLUMN_REVERSE
-            )
-        )
+        ).setFlex {
+              flexDirection = FlexDirection.COLUMN_REVERSE
+          }
 
     }
 ```

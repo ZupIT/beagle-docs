@@ -15,7 +15,7 @@ description: >-
 | concat | "@{concat\("cachorro", "quente"\)}" | Operador que concatena as strings que tiver como entrada. |
 | capitalize | "@{capitalize\(brasil\)}" | Operador que transforma a primeira letra da string em uma letra maiúscula. |
 | uppercase | "@{uppercase\(brasil\)}" | Operador que transforma a todas as letras de uma string em letras maiúsculas. |
-| lowercase | "@{lowecase\(BRASIL\)}" | Operador que transforma a todas as letras de uma string em letras minúsculas. |
+| lowercase | "@{lowercase\(BRASIL\)}" | Operador que transforma a todas as letras de uma string em letras minúsculas. |
 | substr | "@{substr\(brasil, 3\)}" | Operador que retorna uma substring da string de entrada. Essa operação pode ter 2 ou 3 entradas, onde o primeiro parâmetro é a string e o segundo e terceiro parâmetro são os limitadores da string. |
 
 ### Exemplo
@@ -52,7 +52,7 @@ fun screen() = Screen(child =
             Text(text = "The text bellow is a substring of `The book is on the table`."),
             Text(
                 expressionOf("@{substr('The book is on the table', 4, 11)}")
-            ).applyStyle(Style(backgroundColor = "#00FF00")
+            ).setStyle{ backgroundColor = "#00FF00" }
         )
     )
 )

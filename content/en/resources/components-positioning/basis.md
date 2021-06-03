@@ -28,27 +28,22 @@ Here you see the **`flexDirection: row`** is used to set the screen **`width` si
 private fun screen() :Widget{
 	return Container(
 		children = listOf(
-			Text(backgroundColor = "#142850", text = "1").applyFlex(
-				Flex(
-					basis = UnitValue(100.0, UnitType.REAL)
-				)
-			),
-			Text(backgroundColor = "#dd7631", text = "2").applyFlex(
-				Flex(
-					basis = UnitValue(100.0, UnitType.REAL)
-				)
-			),
-			Text(backgroundColor = "#649d66", text = "3").applyFlex(
-				Flex(
-					basis = UnitValue(100.0, UnitType.REAL)
-				)
-			)
-		)
-	).applyFlex(
-		Flex(
-			flexDirection = FlexDirection.ROW
-		)
-	)
+			createText(backgroundText = "#142850", text = "1")
+                      .setFlex {
+                               basis = UnitValue.real(100)
+                      },
+                  createText(backgroundText = "#dd7631", text = "2")
+                      .setFlex {
+                          basis = UnitValue.real(100)
+                      },
+                  createText(backgroundText = "#649d66", text = "3")
+                      .setFlex {
+                          basis = UnitValue.real(100)
+                      }
+              )
+          ).setFlex {
+              flexDirection = FlexDirection.ROW
+          }
 }
 ```
 
@@ -95,27 +90,22 @@ Here the **`flexDirection: column`** is used to set the screen `height` size
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    Flex(
-                        basis = 100.unitReal()
-                    )
-                ),
-                createText(backgroundColor = "#dd7631", text = "2").applyFlex(
-                    Flex(
-                        basis = 100.unitReal()
-                    )
-                ),
-                createText(backgroundColor = "#649d66", text = "3").applyFlex(
-                    Flex(
-                        basis = 100.unitReal()
-                    )
-                )
-            )
-        ).applyFlex(
-            Flex(
-                flexDirection = FlexDirection.COLUMN
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setFlex {
+                               basis = UnitValue.real(100)
+                      },
+                  createText(backgroundText = "#dd7631", text = "2")
+                      .setFlex {
+                          basis = UnitValue.real(100)
+                      },
+                  createText(backgroundText = "#649d66", text = "3")
+                      .setFlex {
+                          basis = UnitValue.real(100)
+                      }
+              )
+          ).setFlex {
+              flexDirection = FlexDirection.COLUMN
+          }
     }
 ```
 
@@ -159,27 +149,22 @@ It is also possible to put `UnitValue (0.0, UnitType.AUTO)` when using the `basi
 private fun screen() :Widget{
 	return Container(
 		children = listOf(
-			Text(backgroundColor = "#142850", text = "1").applyFlex(
-				Flex(
-					basis = UnitValue(0.0, UnitType.AUTO)
-				)
-			),
-			Text(backgroundColor = "#dd7631", text = "2").applyFlex(
-				Flex(
-					basis = UnitValue(0.0, UnitType.AUTO)
-				)
-			),
-			Text(backgroundColor = "#649d66", text = "3").applyFlex(
-				Flex(
-					basis = UnitValue(0.0, UnitType.AUTO)
-				)
-			)
-		)
-	).applyFlex(
-		Flex(
-			flexDirection = FlexDirection.ROW
-		)
-	)
+			createText(backgroundText = "#142850", text = "1")
+                      .setFlex {
+                               basis = UnitValue(0.0, UnitType.AUTO)
+                      },
+                  createText(backgroundText = "#dd7631", text = "2")
+                      .setFlex {
+                          basis = UnitValue(0.0, UnitType.AUTO)
+                      },
+                  createText(backgroundText = "#649d66", text = "3")
+                      .setFlex {
+                          basis = UnitValue(0.0, UnitType.AUTO)
+                      }
+              )
+          ).setFlex {
+              flexDirection = FlexDirection.ROW
+          }
 }
 ```
 

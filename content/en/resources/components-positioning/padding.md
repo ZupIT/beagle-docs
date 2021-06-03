@@ -34,14 +34,12 @@ It defines some space inside the element in **all directions:**
                 createText(backgroundColor = "#dd7631", text = "5"),
                 createText(backgroundColor = "#649d66", text = "6")
             )
-        ).applyStyle(
-            Style(
-                backgroundColor = "#0000000",
-                flex = Flex(flexDirection = FlexDirection.ROW),
-                padding = EdgeValue(all = 20.unitReal()
-                )
-            )
-        )
+        ).setFlex {
+              flexDirection = FlexDirection.ROW
+          }.setStyle { 
+              backgroundColor = "#000000"
+              padding = EdgeValue(all = UnitValue.real(20))
+          }
     }
 ```
 
@@ -99,14 +97,12 @@ It defines some **space at the bottom** inside a element:
                 createText(backgroundColor = "#dd7631", text = "5"),
                 createText(backgroundColor = "#649d66", text = "6")
             )
-        )applyStyle(
-            Style(
-                backgroundColor = "#0000000",
-                flex = Flex(flexDirection = FlexDirection.ROW),
-                padding = EdgeValue(bottom = 20.unitReal()
-                )
-            )
-        )
+        ).setFlex {
+              flexDirection = FlexDirection.ROW
+          }.setStyle { 
+              backgroundColor = "#000000"
+              padding = EdgeValue(bottom = UnitValue.real(20))
+          }
     }
 ```
 
@@ -162,14 +158,12 @@ It defines some space inside at the **left side** of the element:
                 createText(backgroundColor = "#dd7631", text = "5"),
                 createText(backgroundColor = "#649d66", text = "6")
             )
-        ).applyStyle(
-            Style(
-                backgroundColor = "#0000000",
-                flex = Flex(flexDirection = FlexDirection.ROW),
-                padding = EdgeValue(left = 20.unitReal()
-                )
-            )
-        )
+        ).setFlex {
+              flexDirection = FlexDirection.ROW
+          }.setStyle { 
+              backgroundColor = "#000000"
+              padding = EdgeValue(left = UnitValue.real(20))
+          }
     }
 ```
 
@@ -225,14 +219,12 @@ It defines some space inside the element, at the **right side**:
                 createText(backgroundColor = "#dd7631", text = "5"),
                 createText(backgroundColor = "#649d66", text = "6")
             )
-        ).applyStyle(
-            Style(
-                backgroundColor = "#0000000",
-                flex = Flex(flexDirection = FlexDirection.ROW),
-                padding = EdgeValue(right = 20.unitReal()
-                )
-            )
-        )
+        ).setFlex {
+              flexDirection = FlexDirection.ROW
+          }.setStyle { 
+              backgroundColor = "#000000"
+              padding = EdgeValue(right = UnitValue.real(20))
+          }
     }
 ```
 
@@ -288,14 +280,12 @@ It defines some space inside the element, at **the top**:
                 createText(backgroundColor = "#dd7631", text = "5"),
                 createText(backgroundColor = "#649d66", text = "6")
             )
-        ).applyStyle(
-            Style(
-                backgroundColor = "#0000000",
-                flex = Flex(flexDirection = FlexDirection.ROW),
-                padding = EdgeValue(top = 20.unitReal()
-                )
-            )
-        )
+        ).setFlex {
+              flexDirection = FlexDirection.ROW
+          }.setStyle { 
+              backgroundColor = "#000000"
+              padding = EdgeValue(top = UnitValue.real(20))
+          }
     }
 ```
 
@@ -351,14 +341,12 @@ It defines some horizontal space inside the element:
                 createText(backgroundColor = "#dd7631", text = "5"),
                 createText(backgroundColor = "#649d66", text = "6")
             )
-        ).applyStyle(
-            Style(
-                backgroundColor = "#0000000",
-                flex = Flex(flexDirection = FlexDirection.ROW),
-                padding = EdgeValue(horizontal = 20.unitReal()
-                )
-            )
-        )
+        ).setFlex {
+              flexDirection = FlexDirection.ROW
+          }.setStyle { 
+              backgroundColor = "#000000"
+              padding = EdgeValue(horizontal = UnitValue.real(20))
+          }
     }
 ```
 
@@ -414,14 +402,12 @@ It defines some vertical space inside the element:
                 createText(backgroundColor = "#dd7631", text = "5"),
                 createText(backgroundColor = "#649d66", text = "6")
             )
-        ).applyStyle(
-            Style(
-                backgroundColor = "#0000000",
-                flex = Flex(flexDirection = FlexDirection.ROW),
-                padding = EdgeValue(vertical = 20.unitReal()
-                )
-            )
-        )
+        ).setFlex {
+              flexDirection = FlexDirection.ROW
+          }.setStyle { 
+              backgroundColor = "#000000"
+              padding = EdgeValue(vertical = UnitValue.real(20))
+          }
     }
 ```
 
