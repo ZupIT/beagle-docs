@@ -47,6 +47,10 @@ First, you should create a class to configure a `Service` . The process is prett
 The example below, you can see the result that must appear on your screen:
 
 ```kotlin
+import br.com.zup.beagle.widget.core.TextAlignment
+import br.com.zup.beagle.widget.layout.Screen
+import br.com.zup.beagle.widget.layout.ScreenBuilder
+import br.com.zup.beagle.widget.ui.Text
 import javax.inject.Singleton
 
 @Singleton
