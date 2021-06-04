@@ -174,11 +174,11 @@ In iOS the Global Context is a [**Beagle Dependencies**]({{< ref path="/resource
 
 To use it in anywhere of your application you must to use the `BeagleDependencies` instance of your project as the example below:
 
-```javascript
-dependencies.globalContext.setValue(
-  (value: "Context has changed"),
-  (path: "myValue")
-);
+```swift
+Beagle.dependencies.globalContext.set(
+    value: "Context has changed",
+    path: "myValue"
+)
 ```
 
 {{% alert color="info" %}}
@@ -242,8 +242,8 @@ beagleService?.globalContext.get("myValue");
 {{% tab name="iOS" %}}
 Like the set method, it's necessary to use the BeagleDependencies to call any Global Context method. Check the example below:
 
-```javascript
-dependencies.globalContext.get((path: "myValue"));
+```swift
+Beagle.dependencies.globalContext.get(path: "myValue")
 ```
 
 {{% /tab %}}
@@ -294,8 +294,8 @@ beagleService?.globalContext.clear();
 {{% tab name="iOS" %}}
 Remember that in the iOS the global context access is made over the `BeagleDependencies`
 
-```
-dependencies.globalContext.clear()
+```swift
+Beagle.dependencies.globalContext.clear()
 ```
 
 {{% /tab %}}
@@ -354,8 +354,8 @@ beagleService?.globalContext.clear("myValue1");
 
 {{% tab name="iOS" %}}
 
-```javascript
-dependencies.globalContext.clear(myValue1")
+```swift
+Beagle.dependencies.globalContext.clear(path: "myValue1")
 ```
 
 {{% /tab %}}

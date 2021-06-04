@@ -38,14 +38,12 @@ Dentro do Padding, você encontra ainda as seguintes propriedades:
                 createText(backgroundColor = "#dd7631", text = "5"),
                 createText(backgroundColor = "#649d66", text = "6")
             )
-        ).applyStyle(
-            Style(
-                backgroundColor = "#0000000",
-                flex = Flex(flexDirection = FlexDirection.ROW),
-                padding = EdgeValue(all = 20.unitReal()
-                )
-            )
-        )
+        ).setFlex {
+              flexDirection = FlexDirection.ROW
+          }.setStyle { 
+              backgroundColor = "#000000"
+              padding = EdgeValue(all = UnitValue.real(20))
+          }
     }
 ```
 
@@ -81,8 +79,6 @@ private func screen() -> Screen {
 {{% /tab %}}
 {{< /tabs >}}
 
-###
-
 ### **Bottom**
 
 É ele quem define um **espaçamento na parte inferior** do elemento. Exemplo:
@@ -103,14 +99,12 @@ private func screen() -> Screen {
                 createText(backgroundColor = "#dd7631", text = "5"),
                 createText(backgroundColor = "#649d66", text = "6")
             )
-        )applyStyle(
-            Style(
-                backgroundColor = "#0000000",
-                flex = Flex(flexDirection = FlexDirection.ROW),
-                padding = EdgeValue(bottom = 20.unitReal()
-                )
-            )
-        )
+        ).setFlex {
+              flexDirection = FlexDirection.ROW
+          }.setStyle { 
+              backgroundColor = "#000000"
+              padding = EdgeValue(bottom = UnitValue.real(20))
+          }
     }
 ```
 
@@ -166,14 +160,12 @@ private func screen() -> Screen {
                 createText(backgroundColor = "#dd7631", text = "5"),
                 createText(backgroundColor = "#649d66", text = "6")
             )
-        ).applyStyle(
-            Style(
-                backgroundColor = "#0000000",
-                flex = Flex(flexDirection = FlexDirection.ROW),
-                padding = EdgeValue(left = 20.unitReal()
-                )
-            )
-        )
+        ).setFlex {
+              flexDirection = FlexDirection.ROW
+          }.setStyle { 
+              backgroundColor = "#000000"
+              padding = EdgeValue(left = UnitValue.real(20))
+          }
     }
 ```
 
@@ -229,14 +221,12 @@ private func screen() -> Screen {
                 createText(backgroundColor = "#dd7631", text = "5"),
                 createText(backgroundColor = "#649d66", text = "6")
             )
-        ).applyStyle(
-            Style(
-                backgroundColor = "#0000000",
-                flex = Flex(flexDirection = FlexDirection.ROW),
-                padding = EdgeValue(right = 20.unitReal()
-                )
-            )
-        )
+        ).setFlex {
+              flexDirection = FlexDirection.ROW
+          }.setStyle { 
+              backgroundColor = "#000000"
+              padding = EdgeValue(right = UnitValue.real(20))
+          }
     }
 ```
 
@@ -292,14 +282,12 @@ private func screen() -> Screen {
                 createText(backgroundColor = "#dd7631", text = "5"),
                 createText(backgroundColor = "#649d66", text = "6")
             )
-        ).applyStyle(
-            Style(
-                backgroundColor = "#0000000",
-                flex = Flex(flexDirection = FlexDirection.ROW),
-                padding = EdgeValue(top = 20.unitReal()
-                )
-            )
-        )
+        ).setFlex {
+              flexDirection = FlexDirection.ROW
+          }.setStyle { 
+              backgroundColor = "#000000"
+              padding = EdgeValue(top = UnitValue.real(20))
+          }
     }
 ```
 
@@ -355,14 +343,12 @@ private func screen() -> Screen {
                 createText(backgroundColor = "#dd7631", text = "5"),
                 createText(backgroundColor = "#649d66", text = "6")
             )
-        ).applyStyle(
-            Style(
-                backgroundColor = "#0000000",
-                flex = Flex(flexDirection = FlexDirection.ROW),
-                padding = EdgeValue(horizontal = 20.unitReal()
-                )
-            )
-        )
+        ).setFlex {
+              flexDirection = FlexDirection.ROW
+          }.setStyle { 
+              backgroundColor = "#000000"
+              padding = EdgeValue(horizontal = UnitValue.real(20))
+          }
     }
 ```
 
@@ -418,14 +404,12 @@ private func screen() -> Screen {
                 createText(backgroundColor = "#dd7631", text = "5"),
                 createText(backgroundColor = "#649d66", text = "6")
             )
-        ).applyStyle(
-            Style(
-                backgroundColor = "#0000000",
-                flex = Flex(flexDirection = FlexDirection.ROW),
-                padding = EdgeValue(vertical = 20.unitReal()
-                )
-            )
-        )
+        ).setFlex {
+              flexDirection = FlexDirection.ROW
+          }.setStyle { 
+              backgroundColor = "#000000"
+              padding = EdgeValue(vertical = UnitValue.real(20))
+          }
     }
 ```
 

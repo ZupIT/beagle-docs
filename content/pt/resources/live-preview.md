@@ -111,7 +111,7 @@ dependencies {
 
 Em `ext.beagle_version = "${beagle_version}"`, insira a versão de release do Beagle no lugar de `${beagle.version}`. Ou seja, coloque a versão do Beagle destacada em azul da badge acima, mas sem o **caracter v** que antecede os números de versão.
 
-Por exemplo:undefined-`ext.beagle.version = "0.2.8"`
+Por exemplo:undefined-`ext.beagle.version = "1.8.0"`
 
 Feito isso, você pode atualizar suas dependências.
 

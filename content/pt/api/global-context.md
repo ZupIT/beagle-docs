@@ -171,11 +171,11 @@ No iOS o Contexto Global é um dos atributos do [**Beagle Dependencies**]({{< re
 
 Para utilizar o contexto global em qualquer componente da sua aplicação você precisará chamar o `BeagleDependencies` do seu projeto como no exemplo abaixo:
 
-```javascript
-dependencies.globalContext.setValue(
-  (value: "Context has changed"),
-  (path: "myValue")
-);
+```swift
+Beagle.dependencies.globalContext.set(
+    value: "Context has changed",
+    path: "myValue"
+)
 ```
 
 {{% alert color="info" %}}
@@ -237,8 +237,8 @@ beagleService?.globalContext.get("myValue");
 {{% tab name="iOS" %}}
 Assim como no método set será necessário chamar as dependências do Beagle para utilizar o contexto global como no exemplo abaixo:
 
-```javascript
-dependencies.globalContext.get((path: "myValue"));
+```swift
+Beagle.dependencies.globalContext.get(path: "myValue")
 ```
 
 {{% /tab %}}
@@ -289,8 +289,8 @@ beagleService?.globalContext.clear();
 {{% tab name="iOS" %}}
 Lembre-se que no iOS o acesso ao contexto global é feito através do `BeagleDependencies`
 
-```javascript
-dependencies.globalContext.clear();
+```swift
+Beagle.dependencies.globalContext.clear()
 ```
 
 {{% /tab %}}
@@ -334,7 +334,7 @@ Ao utilizar o comando:
 {{% tab name="Android" %}}
 
 ```kotlin
-GlobalContext.clear(myValue1")
+GlobalContext.clear("myValue1")
 ```
 
 {{% /tab %}}
@@ -350,7 +350,7 @@ beagleService?.globalContext.clear("myValue1");
 {{% tab name="iOS" %}}
 
 ```swift
-dependencies.globalContext.clear(myValue1")
+Beagle.dependencies.globalContext.clear(path: "myValue1")
 ```
 
 {{% /tab %}}

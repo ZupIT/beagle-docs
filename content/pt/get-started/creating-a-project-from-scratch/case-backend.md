@@ -68,7 +68,9 @@ O segundo passo é criar alguns pacotes para organizar melhor o projeto. Eles se
 4. Repita o processo criando os dois outros pacotes, nomeando-os `service` e `controller`
 5. Após a criação dos pacotes, a sua tela deverá estar assim:
 
-![](/shared/image%20%2829%29.png)
+{{% alert color="warning" %}}
+  É importante reafirmar que as classes `service`, `controller` e `builder` devem estar no mesmo pacote que a `Application file`, como exemplificado abaixo:
+{{% /alert %}}
 
 ### Passo 3:‌ Criar o serviço da aplicação
 
@@ -80,45 +82,27 @@ A primeira classe que iremos criar é a **`Builder`** . É nesse arquivo que a t
 4. Nesta etapa, você pode copiar e colar o código abaixo em sua classe.
 
 ```kotlin
-import br.com.zup.beagle.core.Style
-import br.com.zup.beagle.ext.applyStyle
-import br.com.zup.beagle.ext.unitReal
-import br.com.zup.beagle.widget.Widget
-import br.com.zup.beagle.widget.action.Alert
-import br.com.zup.beagle.widget.core.AlignSelf
-import br.com.zup.beagle.widget.core.EdgeValue
-import br.com.zup.beagle.widget.core.Flex
-import br.com.zup.beagle.widget.core.TextAlignment
-import br.com.zup.beagle.widget.layout.Container
-import br.com.zup.beagle.widget.layout.Screen
-import br.com.zup.beagle.widget.layout.ScreenBuilder
-import br.com.zup.beagle.widget.ui.ImagePath
-import br.com.zup.beagle.widget.ui.Text
-
 object ScreenBeagleBuilder : ScreenBuilder {
     override fun build() = Screen(
         child = Container(
             children = listOf(
-                    Text(
-                            text = "Hello Beagle!"
-                    ).applyStyle(
-                            Style(margin = EdgeValue(top = 16.unitReal()),
-                                    flex = Flex(alignSelf = AlignSelf.CENTER)
-                            )
-                    ),
-                    Text(
-                            text = "Beagle is a cross-platform framework which provides usage of the " +
-                                    "Server-Driven UI concept, natively in iOS, Android and Web applications. " +
-                                    "By using Beagle, your team could easily change application's layout and" +
-                                    " data by just changing backend code."
-                    ).applyStyle(
-                            Style(margin = EdgeValue(
-                                    left = 16.unitReal(),
-                                    right = 16.unitReal(),
-                                    top = 20.unitReal()
-                                    )
-                            )
-                    )
+                Text(
+                    text = "Hello Beagle!",
+                    styleId = "Title.Text.Orange"
+                ).setStyle {
+                    margin = EdgeValue.only(top = 16)
+                }.setFlex {
+                    alignSelf = AlignSelf.CENTER
+                },
+                Text(
+                    text = "Beagle is a cross-platform framework which provides usage of the " +
+                        "Server-Driven UI concept, natively in iOS, Android and Web applications. " +
+                        "By using Beagle, your team could easily change application's layout and" +
+                        " data by just changing backend code.",
+                    styleId = "Description.Text.Orange"
+                ).setStyle {
+                    margin = EdgeValue.only(top = 20, left = 16, right = 16)
+                }
             )
         )
     )
@@ -187,44 +171,54 @@ Uma estrutura JSON tem que aparecer na sua tela similar a estrutura abaixo:
 
 ```kotlin
 {
-  "_beagleComponent_" : "beagle:screenComponent",
-  "child" : {
-    "_beagleComponent_" : "beagle:container",
-    "children" : [ {
-      "_beagleComponent_" : "beagle:text",
-      "text" : "Hello Beagle!",
-      "style" : {
-        "margin" : {
-          "top" : {
-            "value" : 16.0,
-            "type" : "REAL"
-          }
-        },
-        "flex" : {
-          "alignSelf" : "CENTER"
-        }
-      }
-    }, {
-      "_beagleComponent_" : "beagle:text",
-      "text" : "Beagle is a cross-platform framework which provides usage of the Server-Driven UI concept, natively in iOS, Android and Web applications. By using Beagle, your team could easily change application's layout and data by just changing backend code.",
-      "style" : {
-        "margin" : {
-          "left" : {
-            "value" : 16.0,
-            "type" : "REAL"
-          },
-          "top" : {
-            "value" : 20.0,
-            "type" : "REAL"
-          },
-          "right" : {
-            "value" : 16.0,
-            "type" : "REAL"
-          }
-        }
-      }
-    } ]
-  }
+   "_beagleComponent_":"beagle:screenComponent",
+   "child":{
+      "_beagleComponent_":"beagle:container",
+      "children":[
+         {
+            "_beagleComponent_":"beagle:text",
+            "text":"Hello Beagle!",
+            "style":{
+               "cornerRadius":{},
+               "size":{},
+               "margin":{
+                  "top":{
+                     "value":16,
+                     "type":"REAL"
+                  }
+               },
+               "flex":{
+                  "alignSelf":"CENTER"
+               }
+            }
+         },
+         {
+            "_beagleComponent_":"beagle:text",
+            "text":"Beagle is a cross-platform framework which provides usage of the Server-Driven UI concept, natively in iOS, Android and Web applications. By using Beagle, your team could easily change application's layout and data by just changing backend code.",
+            "style":{
+               "cornerRadius":{},
+               "size":{},
+               "margin":{
+                  "left":{
+                     "value":16,
+                     "type":"REAL"
+                  },
+                  "top":{
+                     "value":20,
+                     "type":"REAL"
+                  },
+                  "right":{
+                     "value":16,
+                     "type":"REAL"
+                  }
+               },
+               "flex":{
+                  
+               }
+            }
+         }
+      ]
+   }
 }
 ```
 

@@ -31,6 +31,12 @@ Disponibilizamos uma constante, `BEAGLE_EXPOSED_HEADERS`, contendo uma lista dos
 
 ### Passo 1: Criar um serviço
 
+{{% alert color="warning" %}}
+  É importante reafirmar que as classes `service`, `controller` ou `builder` devem estar no mesmo pacote que a `Application file`, como exemplificado abaixo:
+{{% /alert %}}
+
+![](/shared/image%20%2829%29.png)
+
 {{< tabs id="T2" >}}
 {{% tab name="Micronaut" %}}
 Para começar, você deve criar uma classe para configurar um serviço. O processo é bem simples basta:
@@ -41,6 +47,10 @@ Para começar, você deve criar uma classe para configurar um serviço. O proces
 No exemplo abaixo, você confere o resultado que deve aparecer na sua tela:
 
 ```kotlin
+import br.com.zup.beagle.widget.core.TextAlignment
+import br.com.zup.beagle.widget.layout.Screen
+import br.com.zup.beagle.widget.layout.ScreenBuilder
+import br.com.zup.beagle.widget.ui.Text
 import javax.inject.Singleton
 
 @Singleton
@@ -72,6 +82,10 @@ Para começar, você deve criar uma classe para configurar um serviço. O proces
 No exemplo abaixo, você confere o resultado que deve aparecer na sua tela:
 
 ```kotlin
+import br.com.zup.beagle.widget.core.TextAlignment
+import br.com.zup.beagle.widget.layout.Screen
+import br.com.zup.beagle.widget.layout.ScreenBuilder
+import br.com.zup.beagle.widget.ui.Text
 import javax.inject.Singleton
 
 @Service
@@ -110,6 +124,7 @@ Para configurar sua classe, siga o exemplo abaixo. Lembre de nomear o arquivo co
 {% code title="" %}}
 
 ```kotlin
+import br.com.zup.beagle.widget.layout.ScreenBuilde
 import io.micronaut.http.annotation.Controller
 import io.micronaut.http.annotation.Get
 
@@ -134,6 +149,7 @@ Os endpoints são configurados com anotações seguindo o método HTTP \(por exe
 Para configurar sua classe, siga o exemplo abaixo. Lembre de nomear o arquivo como `MyController` para que você possa simplesmente copiar e colar este exemplo:
 
 ```kotlin
+import br.com.zup.beagle.widget.layout.ScreenBuilder
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
