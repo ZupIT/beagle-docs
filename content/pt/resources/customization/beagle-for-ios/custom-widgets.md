@@ -93,7 +93,7 @@ struct BoxWidget: Widget {
 
 ```
 
-Temos que criar a parte de inicialização e decodificação do componente, tem duas maneiras possíveis usando o `sourcery` gerador de código para a linguagem Swift, ou fazendo manual.
+Temos que criar a parte de inicialização e decodificação do componente, tem duas maneiras possíveis usando o `sourcery` gerador de código para a linguagem Swift, ou fazendo manualmente.
 
 **Sourcery:**
 
@@ -129,24 +129,38 @@ public init(from decoder: Decoder) throws {
 }
 ```
 
-
-{{% alert color="warning" %}}
 Para integrar o componente ao beagle é preciso utilizar o `sizeThatFits` ou `AutoLayoutWrapper`. 
 
+{{< tabs id="T0" >}}
+{{% tab name="AutoLayoutWrapper" %}}
+
+
+### AutoLayoutWrapper
+
+**`AutoLayoutWrapper:`** O objeto calcula o tamanho levando em consideração as contraints do componente.
+Para isso primeiro é preciso desabilitar o `translatesAutoresizingMaskIntoConstraints` da view do componente, e depois adicionar a view do componente dentro do `AutoLayoutWrapper`.
+
+```swift 
+yourComponent.translatesAutoresizingMaskIntoConstraints = false
+let beagleWrapper = AutoLayoutWrapper(view: yourComponent)
+```
+
+  {{% /tab %}}
+
+{{% tab name="SizeThatFits" %}}
+
+
+### SizeThatFits
+
 **`sizeThatFits:`** Método para implementar sua lógica de tamanho, usado na classe do componente customizado.
+
 ```swift
 override func sizeThatFits(_ size: CGSize) -> CGSize {
     systemLayoutSizeFitting(size)
 }
 ```
-
-**`AutoLayoutWrapper:`** O objeto calcula o tamanho levando em consideração as contraints do componente.
-Para isso primeiro é preciso desabilitar o `translatesAutoresizingMaskIntoConstraints` da view do componente, e depois adicionar a view do componente dentro do `AutoLayoutWrapper`.
-```swift 
-boxComponent.translatesAutoresizingMaskIntoConstraints = false
-let beagleWrapper = AutoLayoutWrapper(view: boxComponent)
-```
-{{% /alert %}}
+{{% /tab %}}
+  {{< /tabs >}}
 
 Agora terminando as configurações, vamos usar o `AutoLayoutWrapper` do beagle para configurar o tamanho, pois o componente customizado não possue o `sizeThatFits` implementado.
 
@@ -155,7 +169,7 @@ boxComponent.translatesAutoresizingMaskIntoConstraints = false
 let beagleWrapper = AutoLayoutWrapper(view: boxComponent)
 ```
 
-A classe completo do Widget.
+A classe completa do Widget.
 
 ```swift
 import Foundation
@@ -209,7 +223,13 @@ struct BoxWidget: Widget {
 
 ### Passo 3: Registrar o Widget.
 
-É obrigatório **registrá-lo no Beagle.** Dentro do arquivo de configuração do beagle utilize o `dependencies` para registar. O método `register` possui dois construtores, o primeiro passando apenas o `component` e segundo recebendo o `component` e `named`.
+É obrigatório **registrá-lo no Beagle.** Dentro do arquivo de configuração do beagle utilize o `dependencies` para registar. 
+
+{{% alert color="info" %}}
+Para saber mais sobre o dependencies. [**Beagle Dependencies**]({{< ref path="/resources/customization/beagle-for-ios/beagles-dependencies" lang="pt" >}}).
+{{% /alert %}}
+
+O método `register` possui dois construtores, o primeiro passando apenas o `component` e segundo recebendo o `component` e `named`.
 
 * **component:** Passa a classe do componente.
 
@@ -239,5 +259,13 @@ let beagleScreenViewController = Beagle.screen(
     )
 )
 ```
+
+{{% alert color="info" %}}
+Para saber mais como exibir o Componente. [**Como exibir uma tela**]({{< ref path="/get-started/using-beagle/ios" lang="pt" >}}).
+{{% /alert %}}
+
+Exemplo renderizado:
+
+![](/shared/custom-component-box-ios.png)
 
 Se você usar componentes mais complexos que estejam no  `UIViews` ou outros componentes não mencionados, o processo seria parecido.
