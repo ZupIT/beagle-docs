@@ -1,6 +1,7 @@
 ---
-title: iOS
-weight: 15
+title: Overview
+weight: 1
+type: overview
 description: 'Here you will find libraries to help when you want to start a project using beagle for iOS.These libs will facilitate the initial Beagle configuration in a project, avoiding some steps, and starting studies quicker.'
 ---
 

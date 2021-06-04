@@ -8,7 +8,6 @@ description: 'Aqui você encontrará bibliotecas que irão te ajudar quando quis
 
 ![Cocoapods](https://img.shields.io/cocoapods/v/BeagleScaffold?label=Beagle-Scaffold)
 ![Cocoapods](https://img.shields.io/cocoapods/v/BeagleDefaults?label=Beagle-Defaults)
-![Cocoapods](https://img.shields.io/cocoapods/v/BeagleGRPC?label=Beagle%20gRPC)
 ![Cocoapods](https://img.shields.io/cocoapods/v/Beagle?label=Beagle)
 
 ### Primeiros Passos
