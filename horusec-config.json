@@ -1,122 +1,13 @@
 {
-  "horusecCliCertInsecureSkipVerify": false,
-  "horusecCliCertPath": "",
-  "horusecCliContainerBindProjectPath": "",
-  "horusecCliCustomImages": {
-    "c": "",
-    "csharp": "",
-    "elixir": "",
-    "generic": "",
-    "go": "",
-    "hcl": "",
-    "javascript": "",
-    "leaks": "",
-    "php": "",
-    "python": "",
-    "ruby": "",
-    "shell": ""
-  },
-  "horusecCliCustomRulesPath": "",
-  "horusecCliDisableDocker": false,
-  "horusecCliEnableCommitAuthor": false,
-  "horusecCliEnableGitHistoryAnalysis": false,
-  "horusecCliEnableInformationSeverity": false,
   "horusecCliFalsePositiveHashes": [
-    
   ],
   "horusecCliFilesOrPathsToIgnore": [
-    "*tmp*",
-    "**/.vscode/**",
-    "content/**/*"
+    "**/themes/devrel/**",
+    "**/content/**"
   ],
-  "horusecCliHeaders": {},
-  "horusecCliHorusecApiUri": "http://0.0.0.0:8000",
-  "horusecCliJsonOutputFilepath": "/Users/darwin/Projects/zup/docs/beagle/horusec-results.json",
-  "horusecCliMonitorRetryInSeconds": 15,
-  "horusecCliPrintOutputType": "text",
-  "horusecCliProjectPath": "/Users/darwin/Projects/zup/docs/beagle",
-  "horusecCliRepositoryAuthorization": "ecb8f67c-cda2-4764-88f0-e64e4d07b028",
-  "horusecCliRepositoryName": "docs-beagle",
-  "horusecCliReturnErrorIfFoundVulnerability": false,
-  "horusecCliRiskAcceptHashes": [],
-  "horusecCliSeveritiesToIgnore": [
-    "INFO"
-  ],
-  "horusecCliShowVulnerabilitiesTypes": [
-    "Vulnerability"
-  ],
-  "horusecCliTimeoutInSecondsAnalysis": 600,
-  "horusecCliTimeoutInSecondsRequest": 300,
   "horusecCliToolsConfig": {
-    "Bandit": {
-      "istoignore": false
-    },
-    "Brakeman": {
-      "istoignore": false
-    },
-    "BundlerAudit": {
-      "istoignore": false
-    },
-    "Flawfinder": {
-      "istoignore": false
-    },
-    "GitLeaks": {
-      "istoignore": false
-    },
-    "GoSec": {
-      "istoignore": false
-    },
-    "HorusecEngine": {
-      "istoignore": false
-    },
-    "MixAudit": {
-      "istoignore": false
-    },
-    "NpmAudit": {
-      "istoignore": false
-    },
-    "PhpCS": {
-      "istoignore": false
-    },
-    "Safety": {
-      "istoignore": false
-    },
-    "SecurityCodeScan": {
-      "istoignore": false
-    },
-    "Semgrep": {
-      "istoignore": false
-    },
-    "ShellCheck": {
-      "istoignore": false
-    },
-    "Sobelow": {
-      "istoignore": false
-    },
-    "TfSec": {
-      "istoignore": false
-    },
-    "YarnAudit": {
-      "istoignore": false
+    "Eslint": {
+      "isToIgnore": true
     }
-  },
-  "horusecCliWorkDir": {
-    "go": [],
-    "csharp": [],
-    "ruby": [],
-    "python": [],
-    "java": [],
-    "kotlin": [],
-    "javaScript": [],
-    "leaks": [],
-    "hcl": [],
-    "php": [],
-    "c": [],
-    "yaml": [],
-    "generic": [],
-    "elixir": [],
-    "shell": [],
-    "dart": [],
-    "nginx": []
   }
 }
