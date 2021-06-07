@@ -36,7 +36,7 @@ Sim! Se a sua aplicação já tiver componentes desenvolvidos em um design syste
 
 ## Um aplicativo que usa o Beagle precisa ser 100% Server Driven?
 
-Não, a aplicação pode utilizar uma tela Server Driven ​​em apenas alguns fluxos do aplicativo. Você pode continuar em um fluxo Server Driven ou voltar à tela nativa normalmente.
+Não, a aplicação pode utilizar uma tela Server Driven em apenas alguns fluxos do aplicativo. Você pode continuar em um fluxo Server Driven ou voltar à tela nativa normalmente.
 
 ## Preciso usar o Beagle em todo o aplicativo?
 
