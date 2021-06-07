@@ -22,10 +22,10 @@ import UIKit
 
 class Box: UIView {
     
-    // 1 Class parameter.
+    // Class parameter.
     private var title: String
     
-    // 2 Initialization part of the class.
+    // Initialization part of the class.
     public init(title: String) {
         self.title = title
         super.init(frame: .zero)
@@ -36,7 +36,7 @@ class Box: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // 3 Method to add component to hierarchy and pass position.
+    // Method to add component to hierarchy and pass position.
     private func setupView() {
         addSubview(label)
         
@@ -47,7 +47,7 @@ class Box: UIView {
         label.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
     }
     
-    // 4 Component `UILabel` created.
+    // Component `UILabel` created.
     private lazy var label: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 20, weight: .bold)
@@ -90,7 +90,6 @@ struct BoxWidget: Widget {
 
     }
 }
-
 ```
 
 Temos que criar a parte de inicialização e decodificação do componente, tem duas maneiras possíveis usando o `sourcery` gerador de código para a linguagem Swift, ou fazendo manualmente.
@@ -140,36 +139,14 @@ Para integrar o componente ao beagle é preciso utilizar o `sizeThatFits` ou `Au
 **`AutoLayoutWrapper:`** O objeto calcula o tamanho levando em consideração as contraints do componente.
 Para isso primeiro é preciso desabilitar o `translatesAutoresizingMaskIntoConstraints` da view do componente, e depois adicionar a view do componente dentro do `AutoLayoutWrapper`.
 
-```swift 
-yourComponent.translatesAutoresizingMaskIntoConstraints = false
-let beagleWrapper = AutoLayoutWrapper(view: yourComponent)
-```
-
-  {{% /tab %}}
-
-{{% tab name="SizeThatFits" %}}
-
-
-### SizeThatFits
-
-**`sizeThatFits:`** Método para implementar sua lógica de tamanho, usado na classe do componente customizado.
-
-```swift
-override func sizeThatFits(_ size: CGSize) -> CGSize {
-    systemLayoutSizeFitting(size)
-}
-```
-{{% /tab %}}
-  {{< /tabs >}}
-
-Agora terminando as configurações, vamos usar o `AutoLayoutWrapper` do beagle para configurar o tamanho, pois o componente customizado não possue o `sizeThatFits` implementado.
+Fazendo as configurações com o `AutoLayoutWrapper`.
 
 ```swift 
 boxComponent.translatesAutoresizingMaskIntoConstraints = false
 let beagleWrapper = AutoLayoutWrapper(view: boxComponent)
 ```
 
-A classe completa do Widget.
+Classe completa do Widget.
 
 ```swift
 import Foundation
@@ -220,6 +197,121 @@ struct BoxWidget: Widget {
 }
 ```
 
+  {{% /tab %}}
+
+{{% tab name="SizeThatFits" %}}
+
+### SizeThatFits
+
+**`sizeThatFits:`** Método para implementar sua lógica de tamanho, usado na classe do componente customizado.
+
+
+```swift
+override func sizeThatFits(_ size: CGSize) -> CGSize {
+    systemLayoutSizeFitting(size)
+}
+```
+
+A classe do componente customizado com `sizeThatFits` implementado.
+
+```swift
+import Foundation
+import UIKit
+
+class Box: UIView {
+    
+    // Class parameter.
+    private var title: String
+    
+    // Initialization part of the class.
+    public init(title: String) {
+        self.title = title
+        super.init(frame: .zero)
+        setupView()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
+    // Implementation sizeThatFits
+    override func sizeThatFits(_ size: CGSize) -> CGSize {
+        systemLayoutSizeFitting(size)
+    }
+    
+    // Method to add component to hierarchy and pass position.
+    private func setupView() {
+        addSubview(label)
+        
+        label.text = title
+        label.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        label.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        label.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        label.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+    }
+    
+    // Component `UILabel` created.
+    private lazy var label: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 20, weight: .bold)
+        label.backgroundColor = .red
+        label.textAlignment = .center
+        label.textColor = .white
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+}
+```
+
+Classe completa do Widget.
+
+```swift
+import Foundation
+import UIKit
+import Beagle
+
+struct BoxWidget: Widget {
+
+    // Class parameter.
+    let title: String
+    var widgetProperties: WidgetProperties
+    
+    // Initialization part of the class.
+    public init(
+        title: String,
+        widgetProperties: WidgetProperties = WidgetProperties()
+    ) {
+        self.title = title
+        self.widgetProperties = widgetProperties
+    }
+
+    // Enum with parameters for decoding.
+    enum CodingKeys: String, CodingKey {
+        case title
+    }
+
+    // Initialization for decoding
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+
+        title = try container.decode(String.self, forKey: .title)
+        widgetProperties = try WidgetProperties(from: decoder)
+    }
+    
+    // toView method of interface the  widget.
+    func toView(renderer: BeagleRenderer) -> UIView {
+
+        // Native component declaration.
+        let boxComponent = Box(title: title)
+        
+        // Returning BeagleWrapper and component.
+        return boxComponent
+    }
+}
+```
+
+{{% /tab %}}
+  {{< /tabs >}}
 
 ### Passo 3: Registrar o Widget.
 
