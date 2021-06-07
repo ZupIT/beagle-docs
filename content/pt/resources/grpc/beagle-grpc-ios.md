@@ -60,7 +60,7 @@ Para um NetworkClientGRPC são necessários os seguintes parâmetros:
 
 {{% alert color="info" %}}
 Nesta seção assume-se que seu servidor gRPC rodando no endereço `0.0.0.0` na porta `50051`.
-Consulte a página [Beagle gRPC Backend]({{< ref path="/get-started/resources/grpc/beagle-grpc-backend" lang="pt" >}}) para mais informações sobre como rodar seu servidor.
+Consulte a página [Beagle gRPC Backend]({{< ref path="/resources/grpc/beagle-grpc-backend" lang="pt" >}}) para mais informações sobre como rodar seu servidor.
 {{% /alert %}}
 
 Adicione a dependência no seu Podfile
