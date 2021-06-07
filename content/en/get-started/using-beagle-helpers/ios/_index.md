@@ -8,6 +8,7 @@ description: 'Here you will find libraries to help when you want to start a proj
 
 ![Cocoapods](https://img.shields.io/cocoapods/v/BeagleScaffold?label=Beagle-Scaffold)
 ![Cocoapods](https://img.shields.io/cocoapods/v/BeagleDefaults?label=Beagle-Defaults)
+![Cocoapods](https://img.shields.io/cocoapods/v/BeagleGRPC?label=Beagle%20gRPC)
 ![Cocoapods](https://img.shields.io/cocoapods/v/Beagle?label=Beagle)
 
 ### Getting started
