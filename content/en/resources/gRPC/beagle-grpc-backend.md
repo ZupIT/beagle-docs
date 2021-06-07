@@ -296,8 +296,8 @@ Done! Your application will already be available in localhost:
 
 - For this example, you will need a client in order to get your service response. We recommend the [BloomRPC](https://github.com/uw-labs/bloomrpc) to simulate a local request on your gRPC API:
 
-- You will also need to add the lib proto files in the bloomRPC client. You can access these files [here](https://github.com/ZupIT/beagle-helpers/backend/grpc-lib/src/main/proto)
+- You will also need to add the lib proto files in the bloomRPC client. You can access these files [here](https://github.com/ZupIT/beagle-grpc/backend/grpc-lib/src/main/proto)
 
 ### **Read more about beagle gRPC**
 
-#### 👉 This tutorial is available on github with more advanced examples, such as headers and interceptors for example. If you are interested, access them here on [backend examples](https://github.com/ZupIT/beagle-helpers/backend/examples)
+#### 👉 This tutorial is available on github with more advanced examples, such as headers and interceptors for example. If you are interested, access them here on [backend examples](https://github.com/ZupIT/beagle-grpc/backend/examples)
