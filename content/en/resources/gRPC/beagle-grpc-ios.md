@@ -1,5 +1,5 @@
 ---
-title: Beagle gRPC iOS
+title: Beagle gRPC for iOS
 weight: 18
 description: "This framework provides a client to communicate with Beagle using gRPC."
 ---

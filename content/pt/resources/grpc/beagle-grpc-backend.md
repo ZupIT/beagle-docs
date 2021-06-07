@@ -1,5 +1,5 @@
 ---
-title: "Beagle gRPC"
+title: "Beagle gRPC para backend"
 weight: 1
 description: >-
   Nesta sessão, você encontra todas as informações relacionadas a biblioteca de gRPC para backend oferecendo um serviço que permite sua aplicação gRPC suportar as telas do Beagle.

@@ -1,5 +1,5 @@
 ---
-title: "Beagle gRPC backend"
+title: "Beagle gRPC for Backend"
 weight: 1
 description: >-
   In this section, you will find all information related to a backend Library that provides a gRPC service allowing your gRPC application to support Beagle Screens.
