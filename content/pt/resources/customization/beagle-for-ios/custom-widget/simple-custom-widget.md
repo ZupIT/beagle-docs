@@ -1,11 +1,7 @@
 ---
-title: Widgets customizados
+title: Widget Customizado Simples
 weight: 159
-description: >-
-  Nesta seção, você encontra um exemplo de com criar um componente e  um widget
-  customizado
----
-
+description: Aqui voce aprenderá como criar e utilizar um widget no Beagle
 ---
 
 ## Introdução
