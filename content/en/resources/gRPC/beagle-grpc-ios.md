@@ -60,7 +60,7 @@ When creating your NetworkClientGRPC you have to provide the following parameter
 
 {{% alert color="info" %}}
 In this section is assumed that your gRPC server is running in the address `0.0.0.0` at the port `50051`.
-Check the [Beagle gRPC Backend page]({{< ref path="/get-started/using-beagle-helpers/backend/beagle-grpc" lang="en" >}}) for more information on running your server.
+Check the [Beagle gRPC Backend page]({{< ref path="/get-started/resources/gRPC/beagle-grpc-backend" lang="en" >}}) for more information on running your server.
 {{% /alert %}}
 
 Add the dependency to your Podfile
