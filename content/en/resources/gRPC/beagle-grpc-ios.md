@@ -1,7 +1,7 @@
 ---
-title: Beagle gRPC
+title: Beagle gRPC iOS
 weight: 18
-description: 'This framework provides a client to communicate with Beagle using gRPC.'
+description: "This framework provides a client to communicate with Beagle using gRPC."
 ---
 
 ![Beagle gRPC available at CocoaPods](https://img.shields.io/cocoapods/v/BeagleGRPC?label=Beagle%20gRPC)
@@ -64,11 +64,13 @@ Check the [Beagle gRPC Backend page]({{< ref path="/get-started/using-beagle-hel
 {{% /alert %}}
 
 Add the dependency to your Podfile
+
 ```ruby
 pod 'BeagleGRPC'
 ```
 
 After adding Beagle gRPC as a dependency in your project, you can create a `NetworkClientGRPC` and set it in your _Beagle.dependencies_.
+
 ```swift
 import Beagle
 import BeagleGRPC
@@ -87,6 +89,7 @@ dependencies.urlBuilder = UrlBuilder(
 ```
 
 Now you are ready to connect to your gRPC server.
+
 ```swift
 BeagleScreenViewController(.remote(.init(url: "/home")))
 ```

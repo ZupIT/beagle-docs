@@ -1,5 +1,5 @@
 ---
-title: Beagle gRPC
+title: Beagle gRPC android
 weight: 16
 description: 'Here you will find the **Beagle-gRPC** library to help you use gRPC in a project using Beagle in Android.
 This lib will hold almost all necessary configuration to add gRPC into a Beagle Android project.'
