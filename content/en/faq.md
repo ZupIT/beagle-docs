@@ -27,7 +27,7 @@ Beagle's solution is different from other tecnologies. It is a tool to make the 
 
 ## Is it possible to make tests in server driven screens? 
 
-Yes!  Unit tests like  instrumented test work the same way on Beagle. 
+Yes! Unit tests like instrumented test work the same way on Beagle. 
 
 ## Can I use Beagle in an application that already has developed resources? 
 
@@ -106,6 +106,6 @@ Unitary tests has the goal to gauge the code's functionality in a minor fraction
 
 ### How to make instrumented tests using Beagle?
 
-Instrumented tests are done in applications using Beagle  in the same way as in applications that don't use our tool.
+Instrumented tests are done in applications using Beagle in the same way as in applications that don't use our tool.
 
 However, it's important to reinforce that, usually, a server-driven component may not contain an ID that mostly identifies an instrumented test. Thinking of it, we add a `WIDGET` element \(that refers a component\) and an `ID attribute` so it can be possible to programatically identify it.
