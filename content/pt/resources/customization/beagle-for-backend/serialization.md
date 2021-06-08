@@ -1,6 +1,6 @@
 ---
 title: Serialização
-weight: 194
+weight: 196
 description: Entenda como funciona a serialização
 ---
 
