@@ -13,7 +13,7 @@ create_templates() {
 
 if [ ! -d "$templates_directory" ]
 then
-    mkdir $templates_directory
+    mkdir "$templates_directory"
     create_templates
 else
     create_templates
