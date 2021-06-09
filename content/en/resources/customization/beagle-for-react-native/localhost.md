@@ -55,7 +55,7 @@ blocked while not in development.
 
 ### localhost vs 10.0.2.2
 Another problem of running your backend in the localhost is that while iOS does work with the
-address `localhost`, Android doesn't. On Android, to access the localhost, you need to use the ip
+address `localhost`, Android emulator doesn't. On Android emulator, to access the localhost, you need to use the ip
 `10.0.2.2`. To solve this problem, you can use react native's `Platform` to decide what address
 to use. See the example below:
 
