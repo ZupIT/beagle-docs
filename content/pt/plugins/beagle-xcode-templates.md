@@ -16,7 +16,7 @@ Permitem que o usuário crie componentes customizados do Beagle como widgets, a�
 Para instalá-los, basta abrir o seu terminal e rodar o seguinte comando:
 
 ```shell
-curl http://docs.usebeagle.io/shared/plugin/xcode-templates.sh | sh
+curl https://docs.usebeagle.io/shared/plugin/xcode-templates.sh | sh
 ```
 
 Esse comando vai baixar os templates e colocá-los onde o Xcode consegue enxergá-los como um novo tipo de arquivo da própria IDE. Caminho para a pasta dos templates: *~/Library/Developer/Xcode/Templates*
@@ -34,4 +34,3 @@ Depois de instalá-los:
 * Clique com o botão direito na pasta onde quer criar um novo arquivo.
 * Clique em Novo Arquivo.
 * Role para baixo até achar a seção do Beagle e escolha qual tipo de template quer usar.
-
