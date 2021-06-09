@@ -23,7 +23,7 @@ implementar. Qualquer ajuda é bem-vinda!
 ## Versionamento
 Todas as versões beta do Beagle RN (Beagle React Native) seguirão o padrão de nomenclatura  "0.x.y",
 onde "x" representa a versão do Beagle Web Core usada. Como estamos usando a versão "1.7.0" do
-Beagle Web Core, a versão atual do Beagle RN is 0.7.0. "y" será usado para lançar novas versões
+Beagle Web Core, a versão atual do Beagle RN é 0.7.0. "y" será usado para lançar novas versões
 que usam a mesma versão do Beagle Web Core.
 
 ## Compatibilidade
