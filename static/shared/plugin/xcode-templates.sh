@@ -11,7 +11,7 @@ create_templates() {
     rm beagle-ios-templates.tar.gz
 }
 
-if [ ! -d $templates_directory ]
+if [ ! -d "$templates_directory" ]
 then
     mkdir $templates_directory
     create_templates
