@@ -1,6 +1,6 @@
 ---
 title: Backend
-weight: 28
+weight: 29
 description: >-
   Nesta seção, você encontra o passo a passo para fazer as configurações para o
   uso do Beagle em seu projeto Backend.
