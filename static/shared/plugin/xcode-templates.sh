@@ -5,7 +5,7 @@ latest=$(curl --silent "https://api.github.com/repos/ZupIT/beagle-ios-templates/
 
 create_templates() {
     cd $templates_directory &&
-    curl https://codeload.github.com/ZupIT/beagle-ios-templates/tar.gz/refs/tags/$latest --output beagle-ios-templates.tar.gz &&
+    curl "https://codeload.github.com/ZupIT/beagle-ios-templates/tar.gz/refs/tags/$latest" --output beagle-ios-templates.tar.gz &&
     tar -xf beagle-ios-templates.tar.gz &&
     echo "Templates created at $templates_directory." &&
     rm beagle-ios-templates.tar.gz
