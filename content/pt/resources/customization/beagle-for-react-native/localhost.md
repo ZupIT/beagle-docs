@@ -55,8 +55,8 @@ ser bloqueadas fora do ambiente de desenvolvimento.
 {{% /alert %}}
 
 ### localhost vs 10.0.2.2
-Outro problema que encontramos ao rodar um backend no localhost é a diferença entre iOS e Android
-sobre o que "localhost" é. No Android, para acessar o servidor local da máquina, é necessário usar
+Outro problema que encontramos ao rodar um backend no localhost é a diferença entre iOS e Emulador do Android
+sobre o que "localhost" é. No Emulador do Android, para acessar o servidor local da máquina, é necessário usar
 o ip `10.0.2.2`, enquanto no iOS, basta escrever `localhost`. Para resolver esse problema, você pode
 usar o `Platform` do React Native para decidir qual endereço usar. Veja o exemplo abaixo:
 
