@@ -15,7 +15,7 @@ Para contribuir com este projeto, por favor, use
 
 ### Funcionalidades principais (core)
 100% implementado. Renderização, contexto, componentes e ações customizadas todos funcionam. Na
-veradde, se você não tem intenção de usar os componentes e ações padrões do Beagle, o Beagle RN já
+verdade, se você não tem intenção de usar os componentes e ações padrões do Beagle, o Beagle RN já
 está pronto para produção.
 
 ### Componentes
@@ -36,10 +36,11 @@ está pronto para produção.
 | Touchable      | concluído        |                                                                                                           |
 | WebView        | concluído        |                                                                                                           |
 
-We also need to check the styling here. Some of the components, even the ones marked as done, have
-way to many styles, which might create some undesired behavior.
+Também precisamos verificar a utilização de estilos nos componentes. Alguns deles, inclusive que
+já estão marcados como "concluídos", têm estilização em excesso, o que pode causar comportamentos
+indesejados.
 
-### Actions
+### Ações
 | Ações           | Estado           | Descrição                                                             |
 |-----------------|------------------|-----------------------------------------------------------------------|
 | PushStack       | incompleto       | Funciona exatamente como na web, i.e. o botão de voltar não faz nada. |
