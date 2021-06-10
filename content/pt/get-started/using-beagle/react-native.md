@@ -2,7 +2,7 @@
 title: React Native
 weight: 28
 description: >-
-  This section shows the initial walkthrough to use the Beagle library in React Native projects.
+  Esta seção mostra como usar o Beagle em projetos React Native
 ---
 
 ---

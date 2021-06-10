@@ -13,7 +13,7 @@ por favor leia o [guia do React Native para instalação e criação de novos ap
 
 O Beagle está disponível para React Native, mas ainda não temos uma versão estável. O
 desenvolvimento está incompleto e ainda precisamos implementar algumas features antes de lançar uma
-versão final. Infelizmente, nosso time não é grande o suficiente para afzer do React Native uma
+versão final. Infelizmente, nosso time não é grande o suficiente para fazer do React Native uma
 prioridade e, por conta disso, o desenvolvimento é relativamente lento. Nós decidimos lançar versões
 betas, pois dessa maneira a comunidade pode começar a usar a biblioteca e até nos ajudar a
 finalizá-la. [Aqui]({{< ref path="/resources/customization/beagle-for-react-native/development" lang="pt" >}})
