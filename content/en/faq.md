@@ -106,6 +106,6 @@ Unitary tests has the goal to gauge the code's functionality in a minor fraction
 
 ### How to make instrumented tests using Beagle?
 
-Instrumented tests are done in applications using Beagle  in the same way as in applications that don't use our tool.
+Instrumented tests are done in applications using Beagle in the same way as in applications that don't use our tool.
 
 However, it's important to reinforce that, usually, a server-driven component may not contain an ID that mostly identifies an instrumented test. Thinking of it, we add a `WIDGET` element \(that refers a component\) and an `ID attribute` so it can be possible to programatically identify it.
