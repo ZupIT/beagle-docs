@@ -17,13 +17,14 @@ description: >-
 
 ## Introduction
 
-Beagle will use a dependency called [**`Yoga Layout`**](https://yogalayout.com/) to position components on your application screen. To do this, Yoga calculates the position the elements are, and after that, it does its rendering.
+Beagle will use a dependency called **Yoga layout** to position components on your application screen. To do this, Yoga calculates the position the elements are, and after that, it does its rendering.
+![](/shared/flex/image125.png)
 
-## **About Yoga Layout**
+## About Yoga Layout
 
-Yoga is framework developed by Facebook to position views using the Flexbox concept in Android and iOS applications.
+[**Yoga**](https://yogalayout.com/) is framework developed by Facebook that position views using the Flexbox concept for Android and iOS applications.
 
-Flexbox is a CSS concept that organizes elements in containers dynamically so that, regardless of your application dimensions, you can maintain a flexible layout.
+Flexbox is a CSS concept that positions elements in containers dynamically so that, regardless of your application dimensions, you can maintain a flexible layout.
 
 Here follows some key concepts about Flexbox:
 
@@ -41,89 +42,38 @@ For Main Size, it is possible to set **3 types of dimensions:**
 
 If it is defined as:
 
-- **row ou row-reverse:** The main axis will be horizontal and the cross axis will be vertical.
+| **row ou row-reverse:** | **column ou column-reverse:** |
+| :-----------: | :----------------------------------------------------------: |
+| The main axis will be horizontal and the cross axis will be vertical. | The main axis will be vertical and the cross axis will be horizontal. |
+| {{< figure src="/shared/flex/row.png" width="150">}} | {{< figure src="/shared/flex/column.png" width="150">}} |
 
-![Exemplo de yoga layout com row ou row-reverse](https://lh3.googleusercontent.com/YwCLX11cEtBYnUcVYIDy63Z_aoEA5rfErFyOKSOgxZA092HmcFO7ZwDKgKJ6Tmjr-J3m7aQgSYCn2p0QzSLO_NsibCWc7LCg9Y2xDjVXQ6BWyhIjYpB3tCdbKx-4CnrKG7tSzaqp)
-
-- **column ou column-reverse:** The main axis will be vertical and the cross axis will be horizontal.
-
-![Exemplo de yoga layout com column ou column-reverse](https://lh3.googleusercontent.com/AM1cTOExo5ux4V_2-HE6WItbPdTWHj-6CBwDXxo8mV0vZfw6WoxtWWOUtosLU_UTTAArH_pMm35geJE1HBfYjqT-DBshvLsUcjvCmVoQVdPSGTW8QCx8YJltIgC4Ad9cDKFu1dQ4)
-
-{{% alert color="info" %}}
+{{% alert color="warning" %}}
 **Important!** The default orientation on Beagle will be a column, meaning the the elements are displayed in a column.
 {{% /alert %}}
 
 ## Properties
 
-You can use the following properties that Yoga Layout uses to insert, alter or delete screen's components.
+There are some properties that Yoga Layout may use to insert, alter or delete components.
 
 ### **UnitValue**
 
-The **Basis, Size, Margin, Padding and Position** attributes described above receive a `UnitValue` that expects a `Double` value and a `UnitType`, which is an `enum` with the following options:
+The **Basis, Size, Margin, Padding and Position** attributes receive a `UnitValue` that expects a `Double` value and a `UnitType`, which is an `enum` with the following options:
 
 | **UnitType** | Definition                                                  |
 | :----------- | :---------------------------------------------------------- |
 | **REAL**     | Apply a `Double`value                                       |
 | **PERCENT**  | Apply a `Double` value as percentage of the parent size     |
 | **AUTO**     | Follows the parent's value. Except when it has its own size |
-
-For the attributes listed below, on the Web, the default is`UnitType.AUTO`.
+{{% alert color="warning" %}}
+**Important!** For the attributes above, the WEB default is`UnitType.AUTO`.
+{{% /alert %}}
 
 The `UnitType.AUTO` can be used on iOS, Android and Web fronts according to the table below:
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:center">Attributes</th>
-      <th style="text-align:center">
-          <img src="../../.gitbook/assets/image (125).png" alt/>
-        iOS
-      </th>
-      <th style="text-align:center">
-          <img src="../../.gitbook/assets/image (126).png" alt/>
-        Android
-      </th>
-      <th style="text-align:center">
-          <img src="../../.gitbook/assets/image (122).png" alt/>
-        Web
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:center"><strong>Basis</strong>
-      </td>
-      <td style="text-align:center">&#x2714;</td>
-      <td style="text-align:center">&#x2714;</td>
-      <td style="text-align:center">&#x2714;</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>Size</strong>
-      </td>
-      <td style="text-align:center"></td>
-      <td style="text-align:center"></td>
-      <td style="text-align:center">&#x2714;</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>Margin</strong>
-      </td>
-      <td style="text-align:center"></td>
-      <td style="text-align:center"></td>
-      <td style="text-align:center">&#x2714;</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>Padding</strong>
-      </td>
-      <td style="text-align:center"></td>
-      <td style="text-align:center"></td>
-      <td style="text-align:center">&#x2714;</td>
-    </tr>
-    <tr>
-      <td style="text-align:center"><strong>Position</strong>
-      </td>
-      <td style="text-align:center"></td>
-      <td style="text-align:center"></td>
-      <td style="text-align:center">&#x2714;</td>
-    </tr>
-  </tbody>
-</table>
+| **Attributes** | Android | iOS | WEB
+| :----------- | :-----: | :------: | :------: |
+| **Basis**   | &#x2714; | &#x2714; | &#x2714; |
+| **Size**    |          |          | &#x2714; |
+| **Margin**  |          |          | &#x2714; |
+| **Padding**  |         |          | &#x2714; |
+| **Position**  |        |          | &#x2714; |

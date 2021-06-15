@@ -10,13 +10,23 @@ description: This section lists information about the Position Type property
 
 This property defines the position of an element within the parent and whether it should be used as `Relative` or `Absolute`
 
-### **Relative \(default\)**
+### **Relative \ default**
 
-This property positions the element in relation to the other elements in the same flow, causing them to move respecting the limits on their sibling elements.
+The `relative` property positions an element keeping the relation to the other elements in the same flow, causing them to move respecting the limits on their sibling elements.
 
-This is how it displays
+### **Absolute**
 
-![](https://lh3.googleusercontent.com/u2gdm-w0DSIrhM07gy50F5bZyJQxeb0ZIU14OSYTgHSaNvFzPIWLfuNV7H-c9G_DkqathtRsM3R8a9KGJePgqJURYS0-cpd8BUHBlLdEyPFIcOAAuP6kM7_KD1y-Rd0wSo_xTIMb)
+The `absolute` property positions an element the same way as the `relative` position type does, but the element them "escapes" the normal flow on the layout, and other elements won't consider it when possitioning themselves.
+
+This is how they are displayed.
+
+| **Relative** | **Absolute** |
+| :-----------: | :----------------------------------------------------------: |
+|{{< figure src="/shared/flex/relative.png" width="150">}}  |{{< figure src="/shared/flex/absolute.png" width="150">}}   |
+
+### How to code this
+
+#### Relative
 
 {{< tabs id="T61" >}}
 {{% tab name="Kotlin" %}}
@@ -71,14 +81,7 @@ private fun screen() :Widget{
 
 {{% /tab %}}
 {{< /tabs >}}
-
-### **Absolute**
-
-This element is used when you wish an element to "escape" the normal flow on the layout. It will be displayed regardless of its siblings.
-
-Check it out how it works:
-
-![](https://lh3.googleusercontent.com/bgiRV_Q8dDvwAyBhF0KLY_1PAr-frFbSnBoolJ4CeUGBNNtophsHr-e14TqFPInoUFsC4TNx9y1FXafbwMI9zNC2D6TJokzo-cdxeJ_pxQMuDrMO5d0QS-bT2HmsDpIDt0y13k26)
+#### Absolute
 
 {{< tabs id="T62" >}}
 {{% tab name="Kotlin" %}}
@@ -107,7 +110,6 @@ private fun screen() :Widget{
           }
     }
 ```
-
 {{% /tab %}}
 
 {{% tab name="Swift" %}}
