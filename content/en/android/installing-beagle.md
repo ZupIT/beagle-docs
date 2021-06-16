@@ -9,7 +9,7 @@ description: In this section, you'll learn how to create a Android project and c
 - Configure Beagle
 - Possible customizations
 
-**Requisitos:**
+**Requirements:**
  - Android Studio
  - minSdkVersion: 19+
  - JDK 8+ language
@@ -212,7 +212,7 @@ Now you're ready to start using Beagle! To verify if the configuration is correc
 To do server-driven requisitons to a backend it's mandatory to customize the network layer. To know how, click here!
 {{% /alert%}}
 
-## **Outras Customizações**
+## **Other Customizations**
  * Action - you can create custom actions to be executed by your widgets according user intereaction
  * Navigation Animation - you can customize Beagle screen navigation animations
  * Beagle Activity - you can customize the activity that will be displayed when a server-driven screen was called
