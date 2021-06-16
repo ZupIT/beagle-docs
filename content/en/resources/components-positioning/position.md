@@ -8,7 +8,7 @@ description: Here you'll find Position description and its proprieties details.
 
 ## Position
 
-This property changes an element's position on screen adding space on it's **`top`, `right`, `bottom`, `left`, `vertical`, `horizontal` e `all`** sides, which are also de values on this property. It rearranges this element position but other surrounding components are not affected whem a relative `Position Type` is set. 
+This property changes an element's position on the screen adding space on its **`top`, `right`, `bottom`, `left`, `vertical`, `horizontal` e `all`** sides, which are also the property's values. It rearranges this element's position, but other surrounding components are not affected when a relative `Position Type` is set. 
 
 The element being positioned can have 2 positioning types:
 
