@@ -21,7 +21,9 @@ It is an open source framework to perform RPC (Remote call procedure) calls, thr
 
 ---
 
-gRPC is a technology that makes use of the **HTTP 2** protocol, however, this technology is not compatible with the current Web structure, so the structure created uses a Client and a CLI, where the CLI is responsible for handling gRPC connections through a Proxy, written with Go, and the Client is responsible for handling all requests made by Beagle to the Proxy.
+gRPC is a technology that uses the **HTTP 2** protocol, however, this technology is not compatible with the current Web structure. So, the new structure created uses a Client and a CLI: 
+- The CLI is responsible for handling gRPC connections through a Proxy written with Go
+- The Client is responsible for handling all requests made by Beagle to the Proxy.
 
 ## Requirements
 
