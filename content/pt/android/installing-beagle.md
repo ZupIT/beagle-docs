@@ -11,7 +11,7 @@ description: Nessa seção, você irá aprender a como criar um projeto android 
 
 **Requisitos:**
  - Android Studio
- - minSdkVersion: 19
+ - minSdkVersion: 19+
  - JDK 8+ language
  - Kotlin 1.3+
 
@@ -33,7 +33,7 @@ Depois de ter instalado o programa, siga os passos abaixo:
 
 - Informe o nome do seu projeto. Neste exemplo, chamaremos de `BeagleApp`.
 - Selecione qual linguagem utilizará. Para o Beagle, devemos utilizar o`Kotlin`.
-- Selecione o **SDK mínimo 19**, já que qualquer SDK menor que este não será compatível.
+- Selecione o **SDK mínimo 19 ou um valor superior**, já que qualquer SDK menor que este não será compatível.
 - Defina o **package** e a **Save location** de acordo com sua preferência.
 - Clique em **Next**.
 
@@ -49,7 +49,7 @@ Quando a inicialização for concluída, você verá esta página:
 
 Para adicionar o Beagle em seu projeto Android e poder aproveitar desse framework, siga os passos abaixo:
 
-**Passo 1: Configurar as dependências**
+**Passo 1:** Configurar as dependências
 
 Você precisa ajustar as dependências do seu repositório para receber o Beagle. Para isso, utilize as configuração abaixo para fazer o **download da biblioteca**.
 
@@ -66,7 +66,7 @@ allprojects {
 A configuração acima deve ser adicionada em `allprojects{}`
 {{% /alert %}}
 
-**Passo 2: Incluir os plugins**
+**Passo 2:** Incluir os plugins
 
 Uma vez feita a primeira configuração, agora você precisa incluir o plugin do `kapt` e do Beagle como dependências dentro do seu gerenciador de dependências, como no exemplo abaixo.
 
@@ -108,7 +108,7 @@ Lembre de sempre usar a mesma versão do Beagle utilizada no seu BFF para evitar
 
 Para configurar o Beagle após ter sido adicionado em seu projeto, siga os passos abaixo:
 
-**Passo 1: Criar uma classe BeagleConfig**
+**Passo 1:** Criar uma classe BeagleConfig
 
 Feita a atualização, você precisa criar uma classe `BeagleConfig` e configurar seus atributos, como mostra o exemplo abaixo:
 
@@ -137,12 +137,13 @@ class AppBeagleConfig : BeagleConfig {
 Faça a configuração das classes com bastante atenção, pois se você anotá-las com `BeagleComponent`, o Beagle espera que elas tenham construtores vazios.
 {{% /alert %}}
 
-**Passo 2: Criar o BeagleSetup**
+**Passo 2:** Criar o BeagleSetup
+
 Após ter criado a classe mostrada no passo anterior e anotado com o @BeagleComponent, basta você buildar seu projeto (para isso, aperte CTRL + F9) que o Beagle irá criar automaticamente uma classe de `BeagleSetup` class, como mostra a figura abaixo:
 
 ![BeagleSetup file](/shared/beaglesetup.png)
 
-**Passo 3: Criar a classe Application**
+**Passo 3:** Criar a classe Application
 
 Neste momento, você deve criar uma `classe Kotlin` que estenda a classe `Application` que, para este exemplo, nomeamos como `AppApplication`.
 
@@ -159,7 +160,7 @@ class AppApplication: Application() {
 }
 ```
 
-**Passo 4: Atualizar seu Android Manifest.xml**
+**Passo 4:** Atualizar seu Android Manifest.xml
 
 Por fim, você deve atualizar novamente o seu `AndroidManifest.xml` e definir a `AppApplication` que foi criada como o arquivo de inicialização da aplicação, como no exemplo abaixo:
 
@@ -177,8 +178,22 @@ Por fim, você deve atualizar novamente o seu `AndroidManifest.xml` e definir a 
 ```
 
 {{% alert color="warning" %}}
-Para fazer requisições server-driven a um backend é necessário configurar uma cada de rede. Para saber como, clique aqui!
+Para fazer requisições server-driven a um backend é necessário configurar uma camada de rede. Para saber como, clique aqui!
 {{% /alert%}}
 
 ## **Outras Customizações**
- * NetworkClient - Customizando o NetworkClient você permite que o Beagle realize requisições de urls
+ * Ações - você pode criar ações customizadas para serem executadas pelos widgets conforme interações do usuário
+ * Animações de navegação - você pode customizar as animações de navegação das telas do Beagle
+ * Beagle Activity - você pode customizar a activity que será exibida quando uma tela server-driven for chamada
+ * Camada de Rede - você pode customizar a camada de rede para configurar a forma que o Beagle irá fazer as requisições
+ * Cache - você pode customizar o cache para personalizar a forma como as telas server-driven serão salvas  
+ * Carregamento e tratamento de erros - você pode customizar o tratamento de erro e o loading das telas server-driven
+ * Proguard - 
+ * Deep Link handler -
+ * Image Downloader - você pode customizar a forma como as imagens serão baixadas para serem exibidas pelo Beagle
+ * Design System - você pode customizar seu design system permitindo construir telas mais bonitas
+ * Serializador e Desserializador - 
+ * Log - 
+ * Validador -
+ * Widget -
+ * Operações -
