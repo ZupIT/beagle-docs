@@ -12,8 +12,8 @@ This property changes an element's position on the screen adding space on its **
 
 The element being positioned can have 2 positioning types:
 
-1. **`Relative`**: The element moves and other elements keeps their current positions on screen.
-2. **`Absolute`**: The element moves the same way as in ´Relative´ but the other elements rearrange themselves ignoring it's position.
+1. **`Relative`**: The element moves and other elements keeps their current positions on the screen.
+2. **`Absolute`**: The element moves exactly like the ´Relative´ one, however other elements rearrange themselves ignoring its position.
 ## **Propriedades**
 
 ### **All**
