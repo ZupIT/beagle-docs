@@ -38,7 +38,7 @@ gRPC is a technology that uses the **HTTP 2** protocol, however, this technology
 
 ---
 
-To install the library, install it globally, for a better experience with the CLI, and then install it in your project using the following commands:
+Install the library globally. For a better experience with the CLI, install it in your project using the following commands:
 
 ```bash
 npm install -g @zup-it/beagle-web-grpc
