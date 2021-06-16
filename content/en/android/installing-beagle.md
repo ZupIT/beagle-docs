@@ -125,41 +125,12 @@ class AppBeagleConfig : BeagleConfig {
 }
 ```
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Attribute</th>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Definition</th>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-      <td style="text-align:left">environment</td>
-      <td style="text-align:left">Environment</td>
-      <td style="text-align:left">Attribute responsible for informing Beagle about the current build status
-        of the application.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">baseUrl</td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left">
-        Informs the base URL used in Beagle in the application.
-        If you are using the emulator, <a href="https://developer.android.com/studio/run/emulator-networking.html#networkaddresses"><strong>check here to define this attribute</strong></a>.
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">isLoggingEnabled</td>
-      <td style="text-align:left">Boolean</td>
-      <td style="text-align:left">Attribute that enables or disables all logs that Beagle generates.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">cache</td>
-      <td style="text-align:left">Cache</td>
-      <td style="text-align:left">Object responsible for managing the cache of Beagle requests.</td>
-    </tr>
-  </tbody>
-</table>
+| **Attribute** | **Type** | **Definition** |
+| :----------- | :------ | :------ |
+| environment | Environment | Attribute responsible for informing Beagle about the current build status of the application. |
+| baseUrl | String | Informs the base URL used in Beagle in the application. If you are using the emulator, [**check here to define this attribute**](https://developer.android.com/studio/run/emulator-networking.html#networkaddresses)  |
+| isLoggingEnabled | Boolean | Attribute that enables or disables all logs that Beagle generates.|
+| cache	| Cache	| Object responsible for managing the cache of Beagle requests. |
 
 {{% alert color="warning" %}}
 Make sure to note your class configuration with `BeagleComponent`, because Beagle expect them to have empty constructors.
@@ -228,4 +199,3 @@ To do server-driven requisitons to a backend it's mandatory to customize the net
  * Widget - you can create components more specific for your project to use them to build yours server-driven screens
  * Operations - you can create your operations to manipule context easily by your backend
  * Analytics - you can configure an analytics to generate screen and actions reports
-
