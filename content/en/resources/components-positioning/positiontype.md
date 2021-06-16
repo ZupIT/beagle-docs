@@ -24,7 +24,7 @@ See below how they are displayed:
 | :-----------: | :----------------------------------------------------------: |
 |{{< figure src="/shared/flex/relative.png" width="150">}}  |{{< figure src="/shared/flex/absolute.png" width="150">}}   |
 
-### How to code this
+### How to code this?
 
 #### Relative
 
