@@ -53,9 +53,10 @@ yarn add --dev @zup-it/beagle-web-grpc
 ## Utilização
 
 ---
+Para começar a utilizar, siga os passos abaixo:
 
-1. Após a instalação das bibliotecas, crie o arquivo de configurações na pasta raiz do projeto, utilizando: `beagle-web-grpc init` e configure os atributos conforme as suas necessidades.
-2. Importe o cliente gRPC:
+**Passo 1.** Após a instalação das bibliotecas, crie o arquivo de configurações na pasta raiz do projeto, utilizando **`beagle-web-grpc init`** e configure os atributos com o que você precisa.
+**Passo 2.** Importe o cliente gRPC, veja abaixo:
 
    - **React:** ./src/beagle/beagle-service.ts
 
