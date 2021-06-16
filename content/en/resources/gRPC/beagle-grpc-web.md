@@ -2,7 +2,7 @@
 title: "Beagle gRPC for Web"
 weight: 1
 description: >-
-  In this section you will find all the info related to the client and the CLI of gRPC for Beagle Web (Angular and React).
+  In this section, you will find information about the client and the CLI of gRPC for Beagle Web (Angular and React).
 ---
 
 ## What is gRPC?
