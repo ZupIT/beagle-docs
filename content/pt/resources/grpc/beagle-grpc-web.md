@@ -93,8 +93,8 @@ Para começar a utilizar, siga os passos abaixo:
      export class Beagle {}
      ```
 
-3. Inicie o Proxy gRPC utilizando: `beagle-web-grpc start-proxy` ou `beagle-web-grpc start-proxy --mode seu-modo-personalizado`.
-4. Utilize o Beagle normalmente.
+**Passo 3.** Inicie o Proxy gRPC utilizando: **`beagle-web-grpc start-proxy`** ou **`beagle-web-grpc start-proxy --mode seu-modo-personalizado`**.
+**Passo 4.** Utilize o Beagle normalmente.
 
 > **Observação**
 > Tenha sua aplicação BFF rodando ao mesmo tempo.
