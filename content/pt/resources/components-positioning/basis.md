@@ -21,7 +21,7 @@ Esta propriedade define o **tamanho padrão de um item ao longo do eixo principa
 
 Neste exemplo, você vê como a aplicação usando o **`flexDirection: row`** para manipular o **tamanho da largura** da tela.
 
-![](/shared/captura-de-tela-2020-06-04-a-s-15.48.12.png)
+{{< figure src="/shared/captura-de-tela-2020-06-04-a-s-15.48.12.png" width="150">}}
 
 {{< tabs id="T64" >}}
 {{% tab name="Kotlin" %}}
@@ -85,7 +85,7 @@ private func screen() -> Screen {
 
 Já neste exemplo, você vê como fica a aplicação usando o **`flexDirection: column`** para manipular o **tamanho da altura da tela.**
 
-![](/shared/captura-de-tela-2020-06-04-a-s-16.01.56.png)
+{{< figure src="/shared/captura-de-tela-2020-06-04-a-s-16.01.56.png" width="150">}}
 
 {{< tabs id="T65" >}}
 {{% tab name="Kotlin" %}}
@@ -174,8 +174,6 @@ private fun screen() :Widget{
 
 {{% /tab %}}
 {{< /tabs >}}
-
-![Basis com UnitType.AUTO e FlexDirection.ROW ](/captura-de-tela-2020-06-04-a-s-15.48.12%20%281%29.png)
 
 {{% alert color="info" %}}
 Para saber mais sobre Basis, acesse a [**documentação do Yoga Layout**](https://yogalayout.com/pt/flex).
