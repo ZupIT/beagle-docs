@@ -36,19 +36,19 @@ Quando esse valor for definido permite que os elementos não sejam mostrado na t
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1"),
-                createText(backgroundColor = "#dd7631", text = "2").applyFlex(
-                    Flex(display = FlexDisplay.NONE)
-                ),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(flexDirection = FlexDirection.ROW,
-                alignItems = AlignItems.CENTER,
-                justifyContent = JustifyContent.CENTER,
-                grow = 1.0
-            )
-        )
+                createText(backgroundText = "#142850", text = "1"),
+                  createText(backgroundText = "#dd7631", text = "2")
+                      .setStyle {
+                          display = Bind.value(Display.NONE)
+                      },
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              flexDirection = FlexDirection.ROW
+              alignItems = AlignItems.CENTER
+              justifyContent = JustifyContent.CENTER
+              grow = 1.0
+          }
     }
 ```
 

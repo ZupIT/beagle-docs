@@ -1,6 +1,6 @@
 ---
 title: Backend
-weight: 12
+weight: 13
 description: >-
   Nesta seção, você encontra o passo a passo da configuração do Beagle no
   backend.
@@ -134,7 +134,7 @@ dependencies {
 
 Insira a versão de release do Beagle no lugar de `${beagle.version}`. Ou seja, coloque a versão do Beagle destacada em azul da `badge` acima, mas sem o **`caracter v`** que antecede os números de versão.
 
-Por exemplo: undefined-`ext.beagle.version = "0.2.8"`
+Por exemplo: undefined-`ext.beagle.version = "1.8.0"`
 
 {{% alert color="warning" %}}
 Lembre de sempre verificar se você está usando a versão mais recente do Beagle. Para saber disso, basta passar o mouse por cima do número da versão. Depois disso, sincronize com sua máquina.

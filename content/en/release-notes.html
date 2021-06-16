@@ -1,175 +1,187 @@
 <!DOCTYPE html>
-<!-- saved from url=(0077)file:///C:/zup/Beagle%20generator/new/docs-beagle-release/complete/index.html -->
-<html lang="pt"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style type="text/css">
-            body {
-                font-family: 'Lato', sans-serif;
-                display: flex;
-                justify-content: center;
-            }
+<html lang="pt">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b775c270a3.js" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+        body {
+            font-family: 'Lato', sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .iconSvg {
+            margin: 5px 5px 5px 0;
+            width: 20px;
+            height: 20px;
+        }
+
+        .container {
+            width: 50%;
+            padding: 1% 5%;
+            min-height: 100vh;
+            margin: 0 auto;
+            align-items: center;
+            display: block;
+            background: #fff;
+            box-shadow: 0px 0px 38px 0px rgba(7, 5, 5, 0.2);
+        }
+
+        .beagle__brand {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .background__image {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        .background__image img {
+            width: 100%;
+        }
+
+        .block__list {
+            padding: 3% 0;
+            margin: 0 auto;
+        }
+
+        label {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .title__list {
+            display: flex;
+            align-items: center;
+        }
+
+        .title__list img {
+            margin: 0 0 0 5px;
+        }
+
+        .beagle__version__text, .beagle__version__text a {
+            display: flex;
+            justify-content: center;
+            font-size: 12px;
+            color: #A9A9A9;
+            text-decoration: none;
+            padding-top: 5px;
+        }
+
+        .content__list {
+            padding: 20px 0;
+        }
+
+        .content__list__item {
+            display: flex;
+            align-items: center;
+            text-align: justify;
+            word-break: break-all;
+            list-style: none;
+            color: #A9A9A9
+        }
+
+        a:hover {
+            color: #8dc63f;
+        }
+
+        .content__list__link {
+            text-decoration: none;
+            color: #A9A9A9;
+        }
+
+        .content__list__icon {
+            padding-right: 5px;
+        }
+
+        .plataform__icon {
+            padding-left: 5px
+        }
+
+        footer {
+            margin-top: 10%;
+        }
+
+        .footer__copyright {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 30px;
+        }
+
+        @media (max-width: 950px) {
             .container {
-                display: flex;
-                justify-content: center;
-                padding: 30px 20px;
-                width: 60%;
+                width: 75%;
             }
+        }
 
-            .beagle_brand {
-                display: flex;
-                justify-content: center;
-                margin-bottom: 20px;
-            }
-
-            .beagle__version__text {
-                display: flex;
-                justify-content: center;
-                font-size: 12px;
-                color: #A9A9A9;
-                text-decoration: none;
-                padding-top: 5px;
-            }
-
-            .beagle__version__link {
-                display: flex;
-                justify-content: center;
-                font-size: 12px;
-                color: #A9A9A9;
-                text-decoration: none;
-                padding-top: 5px;
-                margin-block-start: 1em;
-                margin-block-end: 1em;
-                margin-inline-start: 0px;
-                margin-inline-end: 0px;
-            }
-
-            .beagle__version__link:hover {
-                color: #474747;
-                text-decoration: underline;
-            }
-
-            .content__list {
-                padding: 20px 30px;
-            }
-
-            .content__list__item {
-                list-style: none;
-                color: #A9A9A9
-            }
-
-            .content__list__link {
-                text-decoration: none;
-                color: #A9A9A9;
-            }
-
-            .content__list__link:hover{
-                color: #474747;
-                text-decoration: underline;
-            }
-
-            .content__list__icon {
-                padding-right: 5px;
-            }
-
-            .plataform__icon {
-                padding-left: 5px
-            }
-
-            .img_template {
-                width: 100%;
-            }
-
-            .img_people{
+        @media (max-width: 700px) {
+            .container {
                 width: 80%;
             }
+        }
+    </style>
+</head>
 
-            .img_container {
-                text-align: center;
-                width: 100%;
-            }
-
-            footer {
-                margin-top: 10%;
-            }
-
-            .footer__copyright {
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .content__list__item {
-                list-style: none;
-            }
-
-            .content__list__item a {
-                padding-left: 22px;
-            }
-
-            .content__list__item a:before {
-                content: "✓";
-                font-family: monospace;
-                font-size: 15px;
-                color: #6BB55C;
-                border: 1px solid #6BB55C;
-                border-radius: 50%;
-                width: 13px;
-                height: 13px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-right: 5px;
-                position: absolute;
-            }
-
-            .content__list__item.danger a:before {
-                color: #bb0000;
-                border-color: #bb0000;
-                content: "!";
-            }
-        </style>
-    </head>
-
-    <body>
-            <div class="container__content">
-                <div class="container__content">
-                    <div class="beagle_brand">
-                        <a target="_blank" href="https://usebeagle.io/"><img class="img_template" src="https://docs.usebeagle.io/shared/Beagle.svg"></a>
-                    </div>
-                    <div><img class="img_template" src="https://docs.usebeagle.io/shared/Release.svg">
-    <div class="beagle__version__text"><b><a target="_blank" class="beagle__version__link" href="https://github.com/ZupIT/beagle/releases/tag/1.7.0">VERSION 1.7.0</a></b></div></div>
-
-                    <label><b>NEW FEATURES</b></label>
-                    <div><ul>
-                        <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/api/components/layout/container/">Added styleId attribute on the container component<https: docs.usebeagle.io="" v1.7="" api="" components="" layout="" container=""></https:></a></li>
-    <li class="content__list__item"><a target="_blank" class="content__list__link" >Added new layout components: Center, Column and Row</https:></a></li>
-    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://github.com/ZupIT/beagle/issues/1496">Added support for empty children for Beagle components<https: github.com="" ZupIT="" beagle="" issues="" 1496=""></https:></a></li>
-    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/api/actions/navigate/route/remote/">Added support for more HTTP parameters in navigation actions<https: docs.usebeagle.io="" v1.7="" api="" actions="" navigate="" route="" remote=""></https:></a></li>
-    </ul></div>
-
-                    <b><label>IMPACTS IN</label>
-                        IOS/ANDROID/WEB<img class="plataform__icon" src="https://docs.usebeagle.io/shared/IOS.svg"><img class="plataform__icon" src="https://docs.usebeagle.io/shared/Android.svg"> <img class="plataform__icon" src="https://docs.usebeagle.io/shared/Web.svg">
-    <p></p><p></p>
-                    </b>
-                    <div><ul> <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/api/components/ui/textinput/">Added enabled attribute in TextInput and the disabled attribute has been deprecated<https: docs.usebeagle.io="" v1.7="" api="" components="" ui="" textinput=""> </https:></a></li>
-    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/api/actions/navigate/overview/">Added support for passing expression in OpenExternalURL, OpenNativeRoute and PopToView actions<https: docs.usebeagle.io="" v1.7="" api="" actions="" navigate="" overview=""> </https:></a></li>
-    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/get-started/installing-beagle/ios/">Added SPM support in Beagle IOS project<https: docs.usebeagle.io="" v1.7="" get-started="" installing-beagle="" ios="" overview=""> </https:></a></li>
-    <li class="content__list__item"><a target="_blank" class="content__list__link" href="https://github.com/ZupIT/beagle/releases/tag/1.7.0">Bugs fixed<https: github.com="" zupit="" beagle="" releases="" tag="" 1.7.0=""> </https:></a></li>
-    <li class="content__list__item danger"><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/get-started/installing-beagle/ios/">On iOS, YogaKit is now automatically resolved. You should remove YogaKit's dependency from your Podfile<https: docs.usebeagle.io="" v1.7="" get-started="" installing-beagle="" ios="" overview=""> </https:></a></li>
-    </ul></div>
-                    <div class="img_container">
-                        <img class="img_people" src="https://docs.usebeagle.io/shared/People.svg">
-                    </div>
-                    <footer style="margin-top: 10%; ">
-                        <p>Thanks.</p>
-                        <p>Team Beagle</p>
-                        <div style="display: flex; justify-content: space-between; padding-top: 30px;">
-                            <p>© 2021 Beagle. All rights reserved.</p>
-                            <p>Powered by Zup I.T. Innovation</p>
-                        </div>
-                    </footer>
-                </div>
+<body>
+    <div class="container">
+        <div class="beagle__brand">
+            <a href="https://usebeagle.io"><img src="https://docs.usebeagle.io/shared/Beagle.svg" /></a>
+        </div>
+        <div class="background__image">
+            <img src='https://docs.usebeagle.io/shared/Release.svg'>
+        </div>
+        <label class='beagle__version__text'><a href="https://github.com/ZupIT/beagle/releases/tag/1.8.0">Version 1.8</a></label>
+        <div class="block__list">
+            <label class="titleList">New Functionalities</label>
+            <div>
+                <ul>
+                    
+            <li class='content__list__item'>
+                <img src="../assets/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.8/api/components/layout/gridview/">GridView component</a>
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="../assets/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.7/api/components/layout/listview/">ListView with multiples templates</a>
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="../assets/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/v1.8/api/actions/addchildren/">Now addChildren action supports expressions </a>
+            </li>
+    
+                </ul>
             </div>
-    </body>
+            <label class="title__list">Impacts in Android <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Android.svg'/></label>
+            <div>
+                <ul>
+                    
+            <li class='content__list__item'>
+                <img src="../assets/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="https://github.com/ZupIT/beagle/releases/tag/1.8.0">Bugs fixed</a>
+            </li>
+    
+                </ul>
+            </div>
+        </div>
+        <div class="background__image">
+            <img src="https://docs.usebeagle.io/shared/People.svg">
+        </div>
+        <footer>
+            <p>Thanks.</p>
+            <p>Team Beagle</p>
+            <div class="footer__copyright">
+                <a>2021 Beagle. All rights reserved.</a>
+                <a>Powered by Zup I.T. Innovation</a>
+            </div>
+        </footer>
+    </div>
+</body>
 </html>

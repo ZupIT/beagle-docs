@@ -8,8 +8,9 @@ description: >-
 ---
 
 ## What this Plugin does?
+![JetBrains Plugins](https://img.shields.io/jetbrains/plugin/v/br.com.zup.beagle-template-intellij-plugin?color=green&label=Beagle%20Class%20Creator&style=plastic)
 
-By suing this plugin the developer will be able to create custom Beagle components automatically with just two clicks.
+When using this plugin the developer will be able to create custom Beagle components automatically with just two clicks.
 
 In addition, it also provides a series of *live templates* with default Beagle components that can be used when creating a screen, such as Containers components, ScrollViews, etc ...
 
@@ -26,15 +27,6 @@ To install it, open Intellij or Android Studio and click:
 * *Install* and enjoy.
 
 ## How to use the Class Creator?
-
-Após a instalação, siga as instruções abaixo:
-
-* Clique com o botão direito do mouse no pacote onde se quer criar o componente customizado.
-* Ao clicar em NEW, você verá a opção **Beagle**, que contem o grupo de opções para ANDROID ou BACKEND.
-* Selecione a opção de acordo com o seu ambiente (Backend ou Android).
-* Uma tela com diversas opções de componentes do Beagle que podem ser customizados aparecerá. 
-* Selecione um componente, escolha o nome da classe e aperte ENTER.
-* A classe será criada nesse pacote, assim como no exemplo abaixo.
 
 After installing it:
 
@@ -59,6 +51,18 @@ To view/or use the templates, press the keys:
 * It is important to remember that some components, such as `CENTER`, or` TOUCHABLE`, accept only one CHILD element, that is, if you select two elements (like in the example below) and click on the `apply-CENTER-style`, the IDE will show some type of error because this component accepts only one child.
 
 ![](/shared/plugin/plugin-live-template.gif)
+
+## How to use the auto complete?
+
+The autocomplete option is very easy to use on this plugin. 
+All you need to do is start writing the component you wish to call, for example, `cont` for Container, a list will show, and you can just hit `TAB` to create a Container where you cursor is focused.
+
+All Beagle components and actions are set for autocomplete. The general rule to call them is:
+* Start writing the component/action name
+* Most abreviations are around 4 to 5 letters. 
+* If you wait a second before hiting `TAB` a list will show telling about the option to create a Beagle Component or a Beagle Action.
+
+![](/shared/plugin/autocomplete.gif)
 
 <!-- # Want to know moew about our plugin? 
 👉 Access our GitHub repo on [Beagle Class Creator Plugin](https://github.com/ZupIT/beagle-template-intellij-plugin) and explore it freely! Please feel free to sugest any improvements! -->

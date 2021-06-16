@@ -35,12 +35,10 @@ private fun screen() :Widget{
                 createText(backgroundColor = "#dd7631", text = "texto 2"),
                 createText(backgroundColor = "#649d66", text = "texto 3")
             )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.FLEX_START
-            )
-        )
+        ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.FLEX_START
+          }
 
     }
 ```
@@ -89,12 +87,10 @@ private fun screen() :Widget{
                 createText(backgroundColor = "#dd7631", text = "texto 2"),
                 createText(backgroundColor = "#649d66", text = "texto 3")
             )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.FLEX_END
-            )
-        )
+        ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.FLEX_END
+          }
 
     }
 ```
@@ -144,12 +140,10 @@ private fun screen() :Widget{
                 createText(backgroundColor = "#dd7631", text = "texto 2"),
                 createText(backgroundColor = "#649d66", text = "texto 3")
             )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.CENTER
-            )
-        )
+        ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.CENTER
+          }
 
     }
 ```
@@ -198,12 +192,10 @@ private fun screen() :Widget{
                 createText(backgroundColor = "#dd7631", text = "texto 2"),
                 createText(backgroundColor = "#649d66", text = "texto 3")
             )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.SPACE_BETWEEN
-            )
-        )
+        ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.SPACE_BETWEEN
+          }
 
     }
 ```
@@ -252,12 +244,10 @@ private fun screen() :Widget{
                 createText(backgroundColor = "#dd7631", text = "texto 2"),
                 createText(backgroundColor = "#649d66", text = "texto 3")
             )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.SPACE_AROUND
-            )
-        )
+        ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.SPACE_AROUND
+          }
 
     }
 ```
@@ -306,12 +296,10 @@ Os itens são uniformemente distribuídos ao longo do eixo principal:
                 createText(backgroundColor = "#dd7631", text = "texto 2"),
                 createText(backgroundColor = "#649d66", text = "texto 3")
             )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                justifyContent = JustifyContent.SPACE_EVENLY
-            )
-        )
+        ).setFlex {
+              grow = 1.0
+              justifyContent = JustifyContent.SPACE_EVENLY
+          }
 
     }
 ```

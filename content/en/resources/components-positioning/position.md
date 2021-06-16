@@ -34,23 +34,19 @@ It sets the **same value** for all positions:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    Flex(
-                        size = Size(width = 50.unitReal(),height = 50.unitReal()),
-                        position = EdgeValue(all = 50.unitReal())
-                    )
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                flexDirection = FlexDirection.ROW,
-                justifyContent = JustifyContent.CENTER,
-                alignItems = AlignItems.CENTER
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle { 
+                                position = EdgeValue(all = UnitValue.real(50))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              flexDirection = FlexDirection.ROW
+              justifyContent = JustifyContent.CENTER
+              alignItems = AlignItems.CENTER
+          }
     }
 ```
 
@@ -99,23 +95,19 @@ It sets a spacing **at the bottom** of an element:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    Flex(
-                        size = Size(width = 50.unitReal(),height = 50.unitReal()),
-                        position = EdgeValue(bottom = 50.unitReal())
-                    )
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                flexDirection = FlexDirection.ROW,
-                justifyContent = JustifyContent.CENTER,
-                alignItems = AlignItems.CENTER
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle { 
+                                position = EdgeValue(bottom = UnitValue.real(50))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              flexDirection = FlexDirection.ROW
+              justifyContent = JustifyContent.CENTER
+              alignItems = AlignItems.CENTER
+          }
     }
 ```
 
@@ -164,23 +156,19 @@ It defines a **spacing on the left** side of an element:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    Flex(
-                        size = Size(width = 50.unitReal(),height = 50.unitReal()),
-                        position = EdgeValue(left = 150.unitReal())
-                    )
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                flexDirection = FlexDirection.ROW,
-                justifyContent = JustifyContent.CENTER,
-                alignItems = AlignItems.CENTER
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle { 
+                                position = EdgeValue(left = UnitValue.real(50))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              flexDirection = FlexDirection.ROW
+              justifyContent = JustifyContent.CENTER
+              alignItems = AlignItems.CENTER
+          }
     }
 ```
 
@@ -229,23 +217,19 @@ It defines a spacing **on the right side** of an element:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    Flex(
-                        size = Size(width = 50.unitReal(),height = 50.unitReal()),
-                        position = EdgeValue(right = 100.unitReal())
-                    )
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                flexDirection = FlexDirection.ROW,
-                justifyContent = JustifyContent.CENTER,
-                alignItems = AlignItems.CENTER
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle { 
+                                position = EdgeValue(right = UnitValue.real(50))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              flexDirection = FlexDirection.ROW
+              justifyContent = JustifyContent.CENTER
+              alignItems = AlignItems.CENTER
+          }
     }
 ```
 
@@ -294,23 +278,19 @@ It defines a **spacing on the top** of an element:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    Flex(
-                        size = Size(width = 50.unitReal(),height = 50.unitReal()),
-                        position = EdgeValue(top = 100.unitReal())
-                    )
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                flexDirection = FlexDirection.ROW,
-                justifyContent = JustifyContent.CENTER,
-                alignItems = AlignItems.CENTER
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle { 
+                                position = EdgeValue(top = UnitValue.real(50))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              flexDirection = FlexDirection.ROW
+              justifyContent = JustifyContent.CENTER
+              alignItems = AlignItems.CENTER
+          }
     }
 ```
 
@@ -359,23 +339,19 @@ It defines **horizontal spacing** at an element:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    Flex(
-                        size = Size(width = 50.unitReal(),height = 50.unitReal()),
-                        position = EdgeValue(horizontal = 150.unitReal())
-                    )
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                flexDirection = FlexDirection.ROW,
-                justifyContent = JustifyContent.CENTER,
-                alignItems = AlignItems.CENTER
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle { 
+                                position = EdgeValue(horizontal = UnitValue.real(50))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              flexDirection = FlexDirection.ROW
+              justifyContent = JustifyContent.CENTER
+              alignItems = AlignItems.CENTER
+          }
     }
 ```
 
@@ -424,23 +400,19 @@ It defines **vertical spacing** at an element:
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(
-                    Flex(
-                        size = Size(width = 50.unitReal(),height = 50.unitReal()),
-                        position = EdgeValue(vertical = 150.unitReal())
-                    )
-                ),
-                createText(backgroundColor = "#dd7631", text = "2"),
-                createText(backgroundColor = "#649d66", text = "3")
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0,
-                flexDirection = FlexDirection.ROW,
-                justifyContent = JustifyContent.CENTER,
-                alignItems = AlignItems.CENTER
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setStyle { 
+                                position = EdgeValue(vertical = UnitValue.real(50))
+                      },
+                  createText(backgroundText = "#dd7631", text = "2"),
+                  createText(backgroundText = "#649d66", text = "3")
+              )
+          ).setFlex {
+              grow = 1.0
+              flexDirection = FlexDirection.ROW
+              justifyContent = JustifyContent.CENTER
+              alignItems = AlignItems.CENTER
+          }
     }
 ```
 

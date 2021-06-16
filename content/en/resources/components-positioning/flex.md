@@ -21,15 +21,22 @@ For that, it takes the values ​​of all the child elements and makes the foll
 private fun screen() :Widget{
         return Container(
             children = listOf(
-                createText(backgroundColor = "#142850", text = "1").applyFlex(Flex(flex = 1.0)),
-                createText(backgroundColor = "#dd7631", text = "2").applyFlex(Flex(flex = 2.0)),
-                createText(backgroundColor = "#649d66", text = "3").applyFlex(Flex(flex = 3.0))
-            )
-        ).applyFlex(
-            Flex(
-                grow = 1.0
-            )
-        )
+                createText(backgroundText = "#142850", text = "1")
+                      .setFlex {
+                               flex = 1.0
+                      },
+                  createText(backgroundText = "#dd7631", text = "2")
+                      .setFlex {
+                          flex = 2.0
+                      },
+                  createText(backgroundText = "#649d66", text = "3")
+                      .setFlex {
+                          flex = 3.0
+                      }
+              )
+          ).setFlex {
+              grow = 1.0
+          }
     }
 ```
 
