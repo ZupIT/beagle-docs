@@ -189,11 +189,11 @@ Para fazer requisições server-driven a um backend é necessário configurar um
  * Cache - você pode customizar o cache para salvar as telas server-driven
  * Carregamento e tratamento de erros - você pode customizar o tratamento de erro e o loading das telas server-driven
  * Proguard - 
- * Deep Link handler -
+ * Deep Link handler - você pode configurar o Deep Link Handler para 
  * Image Downloader - você pode customizar a forma como as imagens serão baixadas para serem exibidas pelo Beagle
  * Design System - você pode customizar seu design system para construir telas mais bonitas
- * Serializador e Desserializador - 
- * Log - 
- * Validador -
- * Widget -
- * Operações -
+ * Serializador e Desserializador - você pode customizar a forma como o Beagle serializa e desserializa
+ * Log - você pode customizar a maneira como os logs gerados pelo Beagle serão exibidos
+ * Widget - você pode criar componentes específicos para seu projeto para utilizá-los na criação de telas server-driven
+ * Operações - você pode criar suas operações para manipular o Context de uma forma mais simples e através do seu backend
+ * Analytics - você pode configurar um analytics para gerar reportes de telas e ações
