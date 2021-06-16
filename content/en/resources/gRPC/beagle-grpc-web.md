@@ -56,8 +56,9 @@ yarn add --dev @zup-it/beagle-web-grpc
 
 ---
 
-1. After installing the library, in the project and globally, create the configuration file in the project's root folder, using: `beagle-web-grpc init` and then configure the attributes according to your needs.
-2. Then import the gRPC Client:
+To start using, follow the next steps: 
+**Step 1.** After installing the library in the project and globally, create the configuration file in the project's root folder, using: **`beagle-web-grpc init`** and then configure the attributes according to your needs.
+**Step 2.**  Import the gRPC Client, check out below: 
 
    - **React:** ./src/beagle/beagle-service.ts
 
