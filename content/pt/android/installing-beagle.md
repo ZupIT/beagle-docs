@@ -186,12 +186,12 @@ Para fazer requisições server-driven a um backend é necessário configurar um
  * Animações de navegação - você pode customizar as animações de navegação das telas do Beagle
  * Beagle Activity - você pode customizar a activity que será exibida quando uma tela server-driven for chamada
  * Camada de Rede - você pode customizar a camada de rede para configurar a forma que o Beagle irá fazer as requisições
- * Cache - você pode customizar o cache para personalizar a forma como as telas server-driven serão salvas  
+ * Cache - você pode customizar o cache para salvar as telas server-driven
  * Carregamento e tratamento de erros - você pode customizar o tratamento de erro e o loading das telas server-driven
  * Proguard - 
  * Deep Link handler -
  * Image Downloader - você pode customizar a forma como as imagens serão baixadas para serem exibidas pelo Beagle
- * Design System - você pode customizar seu design system permitindo construir telas mais bonitas
+ * Design System - você pode customizar seu design system para construir telas mais bonitas
  * Serializador e Desserializador - 
  * Log - 
  * Validador -

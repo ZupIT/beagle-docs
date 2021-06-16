@@ -213,18 +213,18 @@ To do server-driven requisitons to a backend it's mandatory to customize the net
 {{% /alert%}}
 
 ## **Outras Customizações**
- * Ações - você pode criar ações customizadas para serem executadas pelos widgets conforme interações do usuário
- * Animações de navegação - você pode customizar as animações de navegação das telas do Beagle
- * Beagle Activity - você pode customizar a activity que será exibida quando uma tela server-driven for chamada
- * Camada de Rede - você pode customizar a camada de rede para configurar a forma que o Beagle irá fazer as requisições
- * Cache - você pode customizar o cache para personalizar a forma como as telas server-driven serão salvas  
- * Carregamento e tratamento de erros - você pode customizar o tratamento de erro e o loading das telas server-driven
+ * Action - you can create custom actions to be executed by your widgets according user intereaction
+ * Navigation Animation - you can customize Beagle screen navigation animations
+ * Beagle Activity - you can customize the activity that will be displayed when a server-driven screen was called
+ * Network Client - you can customize the network client to cunfigure the way Beagle will make requests
+ * Cache - you can customize the cache  to save the server-driven screens
+ * Loading and errors treatment - you can customize the error treatment and loading of server-driven screens
  * Proguard - 
  * Deep Link handler -
- * Image Downloader - você pode customizar a forma como as imagens serão baixadas para serem exibidas pelo Beagle
- * Design System - você pode customizar seu design system permitindo construir telas mais bonitas
- * Serializador e Desserializador - 
+ * Image Downloader - you can customize how images will be dowloaded to be displayed by Beagle
+ * Design System - you can customize your design system to build more beatiful screens to be displayed by Beagle
+ * Serializer and Deserializer - 
  * Log - 
  * Validador -
  * Widget -
- * Operações -
+ * Operations -
