@@ -13,7 +13,7 @@ Esta propriedade muda a posição de um elemento em tela adicionando espaços ao
 O elemento sendo posicionado pode ter 2 tipos de posicionamento (`Position type`)
 
 1. **`Relative`**: O elemento se desloca e os outros elementos não se movem.
-2. **`Absolute`**: O elemento de desloca da mesma forma que no tipo ´Relative´ mas os outros elementos se rearrajam na tela passando a ignorar o elemento deslocado.
+2. **`Absolute`**: O elemento de desloca como o tipo ´Relative´, mas os outros elementos se rearrajam na tela e ignoram o elemento deslocado.
 
 ## **Propriedades**
 
