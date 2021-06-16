@@ -16,9 +16,9 @@ The `relative` property positions an element keeping the relation to the other e
 
 ### **Absolute**
 
-The `absolute` property positions an element the same way as the `relative` position type does, but the element them "escapes" the normal flow on the layout, and other elements won't consider it when possitioning themselves.
+The `absolute` property positions an element the same way as the `relative` does. However, this element "escapes" the normal flow in the layout, and the other elements won't consider it when positioning themselves.
 
-This is how they are displayed.
+See below how they are displayed:
 
 | **Relative** | **Absolute** |
 | :-----------: | :----------------------------------------------------------: |
