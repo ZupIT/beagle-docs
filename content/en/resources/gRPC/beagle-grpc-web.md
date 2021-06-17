@@ -105,7 +105,8 @@ To start using, follow the next steps:
 
 ---
 
-As gRPC is not compatible with the current structure of the Web, to support the technology, it is necessary to use a Proxy to establish the communication between the REST application and the gRPC Backend application, so we created a CLI (command-line interface), **beagle-web-grpc**, to facilitate the use of the proxy and provide all the necessary settings.
+gRPC is not compatible with the current structure of the Web, to support the technology, you have to use a Proxy to establish the communication between the REST application and the gRPC Backend application. 
+Beagle team created a CLI (command-line interface), **beagle-web-grpc**, to make it easier to use the proxy and to provide all the necessary settings.
 
 #### Available commands for **beagle-web-grpc**
 
