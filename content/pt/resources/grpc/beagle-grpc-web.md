@@ -9,11 +9,11 @@ description: >-
 
 ---
 
-É um framework open source para realizar chamadas RPC (Remote call procedure), através do protocolo HTTP2 em formato de two-way streaming, utilizando Protobufs como interfaces entre cliente e servidor.
+É um framework open source que realiza chamadas RPC (Remote call procedure) por meio do protocolo HTTP2 em formato de two-way streaming, utilizando Protobufs como interfaces entre cliente e servidor.
 
-Protobufs ou Protocol Buffers, são um mecanismo de serialization de dados estruturados criados pelo Google, onde visam manter os contratos sempre válidos e coerentes quanto às implementações que consomem aquele serviço gRPC.
+- Protobufs ou Protocol Buffers: São mecanismos de serialização de dados estruturados criados pelo Google, que visam manter os contratos sempre válidos e coerentes quanto às implementações que consomem aquele serviço gRPC.
 
-Arquivos proto, em seu conteúdo, são bem parecidos com qualquer interface que estamos acostumados no dia-a-dia, porém com a extensão .proto, onde nele definimos quais são os objetos e métodos que são passíveis de serem usados na comunicação do serviço.
+- Arquivos proto:  São bem parecidos com qualquer interface que você está acostumado no dia-a-dia, em seu conteúdo. Porém com a extensão .proto, onde nele você define quais são os objetos e métodos que podem ser usados na comunicação do serviço.
 
 [Saiba mais...](https://grpc.io/)
 
