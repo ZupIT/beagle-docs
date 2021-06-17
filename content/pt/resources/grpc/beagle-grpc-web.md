@@ -21,7 +21,9 @@ description: >-
 
 ---
 
-O gRPC é uma tecnologia que faz uso do protocolo **HTTP 2**, todavia, esta tecnologia não é compatível com a atual estrutura da Web, por isso a estrutura criada faz uso de um Cliente e um CLI, onde o CLI fica responsável por manipular as conexões gRPC através de um Proxy, em Go, e o Cliente fica responsável por manipular todas requisições feitas pelo Beagle para o Proxy.
+O gRPC é uma tecnologia que utiliza o protocolo **HTTP 2**, no entanto essa tecnologia não é compatível com a atual estrutura da Web. Por isso, a estrutura criada faz uso de um Cliente e um CLI:
+- O CLI fica responsável por manipular as conexões gRPC através de um Proxy em Go; 
+- O Cliente fica responsável por manipular todas requisições feitas pelo Beagle para o Proxy.
 
 ## Requisitos
 
