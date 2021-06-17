@@ -95,8 +95,8 @@ To start using, follow the next steps:
      export class Beagle {}
      ```
 
-3. Start your proxy running the following command on the root of the project: `beagle-web-grpc start-proxy` or `beagle-web-grpc spx` or `beagle-web-grpc start-proxy --mode your-mode`.
-4. Use the Beagle Web as usually.
+**Step 3.** Start your proxy running the following command on the root of the project: **`beagle-web-grpc start-proxy`** or **`beagle-web-grpc spx`** or **`beagle-web-grpc start-proxy --mode your-mode`.**
+**Step 4.** Use the Beagle Web as usually.
 
 > **Observations**
 > Make sure that your BFF Application is running.
