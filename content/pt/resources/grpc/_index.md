@@ -2,5 +2,5 @@
 title: gRPC
 weight: 2
 description: >-
-  Esta seção contem algumas bibliotecas que irão te auxiliar a usar o Beagle com gRPC.
+  Esta seção contém algumas bibliotecas ajudam você a usar o Beagle com gRPC.
 ---
