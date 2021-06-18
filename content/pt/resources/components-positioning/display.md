@@ -18,7 +18,7 @@ Nesta propriedade, temos dois atributos:
 
 | **Flex** | **None** |
 | :-----------: | :----------------------------------------------------------: |
-| Permite que os elementos filhos do conteiner sejam flexíveis| Oculta o elemento que tenha definida essa propriedade |
+| Permite que os elementos filhos do contêiner sejam flexíveis| Oculta o elemento que tenha definida essa propriedade |
 |{{< figure src="/shared/flex/flex-start-row.png" width="150">}} |{{< figure src="/shared/flex/display-none.png" width="150">}}|
 
 *  Veja abaixo um código que demonstra o `display none`:
