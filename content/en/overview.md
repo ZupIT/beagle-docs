@@ -25,13 +25,70 @@ By using Beagle, developers can:
 
 Here we will show you a simple screen declared via Beagle, containing just texts, images, and some layout and style configurations:
 
-{{% playground language="en" %}}
+<!-- json-playground:overview-simple-example.json
+{
+  "_beagleComponent_": "beagle:container",
+  "style": {
+    "flex": {
+      "flexDirection": "COLUMN",
+      "alignItems": "CENTER",
+      "justifyContent": "CENTER"
+    },
+    "size": {
+      "height": {
+        "value": 100,
+        "type": "PERCENT"
+      }
+    },
+    "backgroundColor": "#FFF"
+  },
+  "children": [
+    {
+      "_beagleComponent_": "beagle:image",
+      "path": {
+        "_beagleImagePath_": "remote",
+        "url": "https://i.ibb.co/rvRN9kv/logo.png"
+      },
+      "style": {
+        "size": {
+          "width": {
+            "value": 242,
+            "type": "REAL"
+          },
+          "height": {
+            "value": 225,
+            "type": "REAL"
+          }
+        }
+      }
+    },
+    {
+      "_beagleComponent_": "beagle:text",
+      "text": "Welcome to Beagle playground! \nUse the left panel to start coding!",
+      "textColor": "#000",
+      "alignment": "CENTER",
+      "style": {
+        "margin": {
+          "all": {
+            "value": 40,
+            "type": "REAL"
+          }
+        }
+      }
+    }
+  ]
+}
+-->
 
-As you can see on the left side, we are declaring our screen with JSON. You can think of that JSON as what your backend provides to your frontend via a service call. The frontend will then interpret it, and properly render it on the platform's screen (as you can see in the right side). Beagle provides libraries on the backend and frontend to completely handle this workflow for you.
+{{% playground file="overview-simple-example.json" language="en" %}}
+
+As you can see on the left side, we are declaring our screen with JSON. You can think of that JSON as what your backend provides to your frontend via a HTTP response. Frontend will then interpret it, and properly render it on the platform's screen (as you can see in the right side). Beagle provides libraries on the backend and frontend to completely handle this workflow for you.
 
 Just to clarify, we are using JSON here because it is the most straightforward way to use Beagle, but it's not the most productive and scalable. We actually have a "language" (DSL in Kotlin) that you should use in your backend to produce this same JSON in a more productive way – with autocomplete and other benefits.
 
-Throughout our documentation, you will see examples which use this tool we call **Playground**. By using it, you can quickly see how Beagle APIs work in real life. You can as well edit the code on the left, and run it on different platforms just by selecting it inside the playground. To better understand how to use this tool, you can go [here](playground/_index.md).
+Also, you can see which frontend platforms we support [here](#platforms-and-versions). They all render components **natively**, that is, if you want to use Beagle in a native mobile application on Android and iOS, our SDKs for these platforms will use native UIs (Android Views and UIKit, respectively), and you can even integrate your own native components to work with Beagle.
+
+> Throughout our documentation, you will see examples which use this tool we call **Playground**. By using it, you can quickly see how Beagle work in real life. You can, as well, edit the code on the left, and select different platforms to run your code on. To better understand how to use this tool, you can check this [section]({{< ref path="playground/_index.md" >}}).
 
 #### Components
 
@@ -40,12 +97,20 @@ Now, let's take a closer look inside this JSON, so you can better understand Bea
 ```json
 {
   "_beagleComponent_": "beagle:container",
-  "style": {},
-  "children": []
+  "style": {...},
+  "children": [...]
 }
 ```
 
-This is what we call a **Component**, and you can visualize that due to the presence of `_beagleComponent_` property. Beagle comes with a bunch of useful components (you can navigate through them later [here](api/components/_index.md)), and you can also define your own components, we call that **Custom Components**, but that's a later topic. This one is a really basic and important component named [Container](api/components/layout/container.md), it allows you to group other components. That's why it has a property named `children`
+This is what we call a **Component**, and you can visualize that due to the property `_beagleComponent_`. Beagle comes with a bunch of useful components (you can navigate through them later [here]({{< ref path="api/components/_index.md" >}}), and you can also define your own components, which we call **Custom Components**, but that's a later topic. This one is a basic and important component named [Container]({{< ref path="api/components/layout/container.md" >}}), it allows you to group together other components, which are being described inside the property `children`.
+
+> There are other components with *children* property (or sometimes just *child*) like [Screen](api/screen/_index.md) and [ListView](api/components/layout/listview.md), and they are used to compose view hierarchies.
+
+Finally, there is the `style` property, which describes how to position and layout this component and its children. Most of components have this property, and it's responsible for an important Beagle feature: **developers have control *through backend* on UI positioning**. You can see this power by chaging the `flexDirection` property to `ROW` inside the playground, and you will see the same views positioned horizontally. In a real application, you could deploy this exact change in your backend, and they would be *immediately* reflected in your frontend – even on mobile platforms, without needing mobile stores update.
+
+> Many tools for Server Driven UI built in-house don't allow this kind of power over UI positioning, and this come out of the box with Beagle.
+
+You can see all Style attributes that you can use [here]({{< ref path="api/widget.md#style-attributes" >}}).
 
 ### Overview of Beagle's architecture
 
@@ -65,6 +130,8 @@ Beagle has different libraries/frameworks for each supported platform, in the fo
 - **Android:** [![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android)](https://mvnrepository.com/artifact/br.com.zup.beagle/android)
 - **iOS:** [![badge](https://img.shields.io/cocoapods/v/Beagle)](https://cocoapods.org/pods/Beagle)
 - **React Native:** [![react native badge](https://img.shields.io/npm/v/@zup-it/beagle-react-native?logo=React)](https://www.npmjs.com/package/@zup-it/beagle-react-native)
+- **Flutter:** *Being developed in this [folder](https://github.com/ZupIT/beagle/tree/master/flutter)*
+- **SwiftUI and Compose:** we will try to support them in the future
 
 **Web:**
 
