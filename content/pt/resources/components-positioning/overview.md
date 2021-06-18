@@ -26,7 +26,7 @@ O [**Yoga**](https://yogalayout.com/) é um framework desenvolvido pelo Facebook
 
 Flexbox é um conceito do CSS que é utilizado para posicionar elementos em contêineres dinamicamente para que, independentemente das dimensões de seu aplicativo, você possa manter um layout flexível.
 
-Seguem alguns conceitos-chave sobre o Flexbox:
+Veja abaixo alguns conceitos-chave sobre o Flexbox:
 
 - **Main Axis:** 
 - **Cross Axis:** 
