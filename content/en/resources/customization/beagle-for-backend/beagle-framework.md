@@ -42,7 +42,7 @@ val mapper = // however your ObjectMapper is initialized
 mapper.registerModule(BeagleModule)
 ```
 
-Or you can use the function `beagleObjectMapper`. This function returns a `ObjectMapper` using `jacksonObjectMapper()`[**`https://github.com/ZupIT/beagle/pull/229/files`**](https://github.com/ZupIT/beagle/pull/229/files) with a  `BeagleModule` registered.
+Or you can use the function `beagleObjectMapper`. This function returns a `ObjectMapper` using `jacksonObjectMapper()` with a `BeagleModule` registered.
 
 ```kotlin
 val mapper = BeagleSerializationUtil.beagleObjectMapper()
