@@ -66,7 +66,7 @@ Os atributos **Base, Size, Margin, Padding e Position** recebem um valo(`UnitVal
 | **AUTO**     | Segue o valor do pai. Exceto quando possui tamanho próprio       |
 
 {{% alert color="warning" %}}
-**Importante!** Os atributos acima quando referenciados em um projeto WEB tem como opção `default is` o `UnitType.AUTO`.
+ Quando os atributos acima são referenciados em um projeto WEB, a opção `default is` é o `UnitType.AUTO`.
 {{% /alert %}}
 
 O `UnitType.AUTO` pode ser usado no iOS, Android e Web de acordo com a tabela abaixo:
