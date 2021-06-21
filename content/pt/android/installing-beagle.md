@@ -134,7 +134,7 @@ class AppBeagleConfig : BeagleConfig {
 | cache            | Cache       | Objeto responsável por gerenciar o cache das requisições do Beagle.                                                                                                                                                     |
 
 {{% alert color="warning" %}}
-Faça a configuração das classes com bastante atenção, pois se você anotá-las com `BeagleComponent`, o Beagle espera que elas tenham construtores vazios.
+Cuidado ao fazer a configuração das classes, porque se você anotá-las com `BeagleComponent`, o Beagle espera que elas tenham construtores vazios.
 {{% /alert %}}
 
 **Passo 2:** Criar o BeagleSetup
