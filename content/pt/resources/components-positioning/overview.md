@@ -57,7 +57,7 @@ O Yoga Layout pode usar alguams propriedades para inserir, mover ou excluir comp
 
 ### **UnitValue**
 
-Os atributos **Base, Size, Margin, Padding e Position** recebem um valo(`UnitValue`) do tipo `Double` e um `UnitType`, do tipo `enum` com as seguintes opções:
+Os atributos **Base, Size, Margin, Padding e Position** recebem um valor (`UnitValue`) do tipo `Double` e um `UnitType` do tipo `enum`, ambos com as opções:
 
 | **UnitType** | Definição                                                        |
 | :----------- | :--------------------------------------------------------------- |
