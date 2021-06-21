@@ -108,9 +108,9 @@ Use a mesma versão do Beagle utilizada no seu BFF para evitar possíveis proble
 
 Para configurar o Beagle após ter sido adicionado em seu projeto, siga os passos abaixo:
 
-**Passo 1:** Criar uma classe BeagleConfig
+**Passo 1: Criar uma classe BeagleConfig**
 
-Feita a atualização, você precisa criar uma classe `BeagleConfig` e configurar seus atributos, como mostra o exemplo abaixo:
+Depois de finalizar a atualização, você precisa criar uma classe `BeagleConfig` e configurar seus atributos, veja o exemplo abaixo:
 
 ```kotlin
 @BeagleComponent
