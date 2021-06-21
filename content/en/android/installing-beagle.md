@@ -39,7 +39,7 @@ After you have installed the program, follow the steps below:
 
 ![](/shared/configureandroidproject.png)
 
-**Step 4️:** After you made the previous configurations, Android will take some time to build the project because it will be synchronizing all the initials dependencies to initialize the project
+**Step 4️:** After you made the previous configurations, Android will take some time to build the project because it will be synchronizing all the dependencies to initialize the project.
 
 Once the initialization is done, you will see this page: 
 
