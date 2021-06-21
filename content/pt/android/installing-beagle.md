@@ -41,7 +41,7 @@ Depois de ter instalado o programa, siga os passos abaixo:
 
 **Passo 4️:** Depois de terminar as configurações, o Android levará um tempo pra construir o projeto porque ele precisa sincronizar todas as dependências iniciais para inicializar o projeto.
 
-Quando a inicialização for concluída, você verá esta página:
+Quando a inicialização for concluída, você verá a página abaixo:
 
 ![](/shared/mainactivity.png)
 
