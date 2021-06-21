@@ -138,7 +138,7 @@ Make sure to note your class configuration with `BeagleComponent`, because Beagl
 
 **Step 2: Create a BeagleSetup**
 
-After you have created the class shown in the previous step and annotated with @BeagleComponent, just build your project (to do this, press CTRL + F9) and Beagle will automatically create a BeagleSetup class, as shown in the figure below:
+After you have created the class shown in the previous step and annotated with @BeagleComponent, just build your project (press CTRL + F9) and Beagle will automatically create a BeagleSetup class, see the image below:
 
 ![BeagleSetup file](/shared/beaglesetup.png)
 
