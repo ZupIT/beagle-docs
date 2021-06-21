@@ -17,7 +17,7 @@ description: In this section, you'll learn how to create an Android project with
 
 ## Starting an Android project
 
-For this practical example, we'll use Android Studio IDE. In case you still don't have it installed, just access on [**official Android website** ](https://developer.android.com/studio?hl=us-en)and follow the instructions.   
+For this example, we'll use Android Studio IDE. If you haven't installed it yet, just access the documentation [**official Android website** ](https://developer.android.com/studio?hl=us-en) and follow the instructions.   
   
 After you installed the program, follow the steps below:
 
