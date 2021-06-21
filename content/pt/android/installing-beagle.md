@@ -143,7 +143,7 @@ Após ter criado a classe mostrada no passo anterior e anotado com o @BeagleComp
 
 ![BeagleSetup file](/shared/beaglesetup.png)
 
-**Passo 3:** Criar a classe Application
+**Passo 3: Criar a classe Application**
 
 Neste momento, você deve criar uma `classe Kotlin` que estenda a classe `Application` que, para este exemplo, nomeamos como `AppApplication`.
 
