@@ -109,7 +109,7 @@ After Beagle's installation, now you have to make our tool's usage configuration
 
 **Step 1:** Create a BeagleConfig class
 
-After the update, you have to create a `BeagleConfig` class and configure your attributes, as you can see on the example below:
+After the update, you have to create a `BeagleConfig` class and configure your attributes,  see the example below:
 
 ```kotlin
 @BeagleComponent
