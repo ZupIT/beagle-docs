@@ -29,7 +29,7 @@ Depois de ter instalado o programa, siga os passos abaixo:
 
 ![](/shared/androidprojecttemplate.png)
 
-**Passo 3️:** Nesta página, devemos listar algumas informações importantes:
+**Passo 3️:** Nesta página, você deve adicionar algumas informações importantes:
 
 - Informe o nome do seu projeto. Neste exemplo, chamaremos de `BeagleApp`.
 - Selecione qual linguagem utilizará. Para o Beagle, devemos utilizar o`Kotlin`.
