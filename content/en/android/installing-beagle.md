@@ -100,7 +100,7 @@ Remember to always check if you're using the latest version of Beagle. To see th
 {{% /alert %}}
 
 {{% alert color="warning" %}}
-Remember to use the same version of Beagle used on your BFF to avoid possible problems
+Remember to use the same Beagle's version used on your BFF to avoid problems.
 {{% /alert %}}
 
 ## Configure Beagle
