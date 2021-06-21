@@ -100,7 +100,7 @@ Por exemplo: undefined-`ext.beagle.version = "1.8.0"`
 Lembre de sempre verificar se você está usando a versão mais recente do Beagle. Para saber disso, basta passar o mouse por cima do número da versão. Depois disso, sincronize com sua máquina.
 {{% /alert %}}
 {{%alert color="warning"%}}
-Lembre de sempre usar a mesma versão do Beagle utilizada no seu BFF para evitar possíveis problemas
+Use a mesma versão do Beagle utilizada no seu BFF para evitar possíveis problemas.
 {{%/alert%}}
 
 
