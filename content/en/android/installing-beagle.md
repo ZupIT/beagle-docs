@@ -91,7 +91,7 @@ dependencies {
 ```
 
 
-Insert the Beagle's release version on the place of`${beagle.version}`, in other words, put the Beagle's version highlighted in blue badge above without the **v character**.
+Insert Beagle's release version to replace ${beagle.version}`, this is necessary to put Beagle's version highlighted in a blue badge above, without the **v character**.
 
 For example: undefined-`ext.beagle.version = "1.8.0"`
 
