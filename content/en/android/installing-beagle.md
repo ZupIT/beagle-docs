@@ -40,7 +40,7 @@ After you have installed Android Studio, follow the steps below:
 {{< figure src="/shared/configureandroidproject.png">}}
 
 
-**Step 4️: After you made the previous configurations, Android will take some time to build the project because it will be synchronizing all the dependencies to initialize the project.**
+**Step 4️: After the previous configurations, Android will take some time to build the project since it will synchronize all dependencies to initialize this project.**
 
 Once the initialization is done, you will see this page: 
 
