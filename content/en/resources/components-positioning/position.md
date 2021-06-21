@@ -8,24 +8,19 @@ description: Here you'll find Position description and its proprieties details.
 
 ## Position
 
-This property defines an element's position on screen and its values are: **`top, right, bottom,left`**. They behave according to the `Position Type` of this element. 
+This property changes an element's position on the screen adding space on its **`top`, `right`, `bottom`, `left`, `vertical`, `horizontal` e `all`** sides, which are also the property's values. It rearranges this element's position, but other surrounding components are not affected when a relative `Position Type` is set. 
 
-The element inside the Position can have 2 types of positioning:
+The element being positioned can have 2 positioning types:
 
-1. **`Relative`**: Elements move in a specific direction respecting each other boundaries.
-2. **`Absolute`**: The elements move in the same direction defined by the parent element.
-
-{{% alert color="info" %}}
-**It will be more clear when we address this property ahead.**
-{{% /alert %}}
-
+1. **`Relative`**: The element moves and other elements keeps their current positions on the screen.
+2. **`Absolute`**: The element moves exactly like the ´Relative´ one, however other elements rearrange themselves ignoring its position.
 ## **Propriedades**
 
 ### **All**
 
-It sets the **same value** for all positions:
+It adds spacing for **all** element's sides:
 
-![](/shared/captura-de-tela-2020-06-05-a-s-11.24.08.png)
+{{< figure src="/shared/flex/position-all.png" width="150">}}
 
 {{< tabs id="T54" >}}
 {{% tab name="Kotlin" %}}
@@ -84,9 +79,9 @@ private fun screen() :Widget{
 
 ### **Bottom**
 
-It sets a spacing **at the bottom** of an element:
+It adds spacing at the element's **bottom**:
 
-![](/shared/captura-de-tela-2020-06-05-a-s-11.26.34.png)
+{{< figure src="/shared/flex/position-bottom.png" width="150">}}
 
 {{< tabs id="T55" >}}
 {{% tab name="Kotlin" %}}
@@ -145,9 +140,9 @@ private fun screen() :Widget{
 
 ### **Left**
 
-It defines a **spacing on the left** side of an element:
+It adds spacing at the element's **left** side:
 
-![](/shared/captura-de-tela-2020-06-05-a-s-11.29.41.png)
+{{< figure src="/shared/captura-de-tela-2020-06-05-a-s-11.29.41.png" width="150">}}
 
 {{< tabs id="T56" >}}
 {{% tab name="Kotlin" %}}
@@ -206,9 +201,9 @@ private fun screen() :Widget{
 
 ### **Right**
 
-It defines a spacing **on the right side** of an element:
+It adds spacing at the element's **right** side:
 
-![](/shared/captura-de-tela-2020-06-05-a-s-11.33.00.png)
+{{< figure src="/shared/captura-de-tela-2020-06-05-a-s-11.33.00.png" width="150">}}
 
 {{< tabs id="T57" >}}
 {{% tab name="Kotlin" %}}
@@ -267,9 +262,9 @@ private fun screen() :Widget{
 
 ### **Top**
 
-It defines a **spacing on the top** of an element:
+It adds spacing at the element's **top** side:
 
-![](/shared/captura-de-tela-2020-06-05-a-s-11.34.21.png)
+{{< figure src="/shared/captura-de-tela-2020-06-05-a-s-11.34.21.png" width="150">}}
 
 {{< tabs id="T58" >}}
 {{% tab name="Kotlin" %}}
@@ -328,9 +323,9 @@ private func screen() -> Screen {
 
 ### **Horizontal**
 
-It defines **horizontal spacing** at an element:
+It adds spacing at the element's **horizontal** sides:
 
-![](/shared/captura-de-tela-2020-06-05-a-s-11.36.55.png)
+{{< figure src="/shared/captura-de-tela-2020-06-05-a-s-11.36.55.png" width="150">}}
 
 {{< tabs id="T59" >}}
 {{% tab name="Kotlin" %}}
@@ -389,9 +384,9 @@ private func screen() -> Screen {
 
 ### **Vertical**
 
-It defines **vertical spacing** at an element:
+It adds spacing at the element's **vertical** sides:
 
-![](/shared/captura-de-tela-2020-06-05-a-s-11.39.22.png)
+{{< figure src="/shared/captura-de-tela-2020-06-05-a-s-11.39.22.png" width="150">}}
 
 {{< tabs id="T60" >}}
 {{% tab name="Kotlin" %}}

@@ -14,7 +14,7 @@ This property defines the proportion that an item should grow when necessary. It
 
 The grow applied has value 0 and the container size did not change
 
-![Exemplo 1](https://lh6.googleusercontent.com/KPNe0Hnad094L8QgkRrDFcAtvAoBSeVvrA3ihurk6vVzGaQyJxSZ6dJtsLCe9gabKeIFEn1eB-465OK_wu7LYk7I7MKKBKEPwaCs4ZoaQDXdxjc2d80VrKBf69dfYX2nOWm7Pi2C)
+{{< figure src="/shared/flex/grow0.png" width="150">}}
 
 {{< tabs id="T17" >}}
 {{% tab name="Kotlin" %}}
@@ -66,7 +66,7 @@ private fun screen() :Widget{
 
 Grow 1.0 has been applied and the container size has grown until it meets the screen limits:
 
-![Exemplo 2](https://lh4.googleusercontent.com/oFfNtXonnH0zvhYz0-sVnVwHUFbd23JSAdjSKURM9svVKedl3pT51M_lcuvoXQgr8vhTHqjHFK_GCtW9Lpl__c6ybSUsmEvUhNUpg-zgIKYWqQKMLLpxPXSBxaikLGr6541OXLtM)
+{{< figure src="/shared/flex/grow1.png" width="150">}}
 
 {{< tabs id="T18" >}}
 {{% tab name="Kotlin" %}}

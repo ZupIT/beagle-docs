@@ -8,15 +8,25 @@ description: "Nesta seção, você encontra mais informações sobre a proprieda
 
 ## PositionType
 
-É a propriedade que define qual a posição do elemento dentro do pai e ainda se ele deve ser usado como **Relativo ou Absoluto**.
+É a propriedade que define qual a posição do elemento dentro do pai e ainda se ele deve ser usado como `Relative` ou `Absolute`.
 
-### **Relativo \(Padrão\)**
+### **Relative \ default**
 
-Por padrão, esta propriedade posiciona o elemento em relação aos demais elementos no mesmo fluxo, fazendo com que eles se desloquem respeitando os limites de seus elementos irmãos.
+A propriedade `relative` posiciona um elemento mantendo a relação com os demais elementos no mesmo fluxo, fazendo com que eles se movam respeitando os limites de seus elementos irmãos.
 
-Veja como funciona neste exemplo:
+### **Absolute**
 
-![](https://lh3.googleusercontent.com/u2gdm-w0DSIrhM07gy50F5bZyJQxeb0ZIU14OSYTgHSaNvFzPIWLfuNV7H-c9G_DkqathtRsM3R8a9KGJePgqJURYS0-cpd8BUHBlLdEyPFIcOAAuP6kM7_KD1y-Rd0wSo_xTIMb)
+A propriedade `absolute` posiciona um elemento da mesma forma que o `relative`, no entanto a diferença é que ela faz o elemento "escapar" do fluxo normal do layout, e os outros elementos se reposicionam, ignorando-o.
+
+Veja abaixo um exemplo de como os elementos são posicionados: 
+
+| **Relative** | **Absolute** |
+| :-----------: | :----------------------------------------------------------: |
+|{{< figure src="/shared/flex/relative.png" width="150">}}  |{{< figure src="/shared/flex/absolute.png" width="150">}}   |
+
+### Como configurar esses atributos?
+
+#### Relative
 
 {{< tabs id="T62" >}}
 {{% tab name="Kotlin" %}}
@@ -74,13 +84,7 @@ private fun screen() :Widget{
 {{% /tab %}}
 {{< /tabs >}}
 
-### **Absoluto**
-
-Por padrão, você usa este elemento quando quiser que um elemento não participe do fluxo normal do layout. Em vez disso, ele é apresentado independentemente de seus irmãos.
-
-Veja como funciona neste exemplo:
-
-![](https://lh3.googleusercontent.com/bgiRV_Q8dDvwAyBhF0KLY_1PAr-frFbSnBoolJ4CeUGBNNtophsHr-e14TqFPInoUFsC4TNx9y1FXafbwMI9zNC2D6TJokzo-cdxeJ_pxQMuDrMO5d0QS-bT2HmsDpIDt0y13k26)
+#### Absolute
 
 {{< tabs id="T63" >}}
 {{% tab name="Kotlin" %}}

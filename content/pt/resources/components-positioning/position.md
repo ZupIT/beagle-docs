@@ -8,20 +8,20 @@ description: "Nesta seção, você encontra mais informações sobre a proprieda
 
 ## Position
 
-Esta propriedade determina a posição de um assume em tela e os seus valores `top, right, bottom, left` se comportam de acordo com o [**Position Type**]({{< ref path="/resources/components-positioning/positiontype" lang="pt" >}}) deste elemento.
+Esta propriedade muda a posição de um elemento na tela e adiciona espaços ao lado de cada um deles como:**`top`, `right`, `bottom`, `left`, `vertical`, `horizontal` e `all`**. Quando um posicionamento do tipo relativo é definido, a propriedade também adiciona um valor a esses atributos, rearranja o elemento sem modificar o posicionamento de outros elementos na tela. 
 
-O elemento dentro do Position pode ter diferentes tipos de deslocamento se forem:
+O elemento sendo posicionado pode ter 2 tipos de posicionamento (`Position type`)
 
-- **`Relative`:** os elementos se deslocam em uma direção específica.
-- **`Absolute`:** os elementos se deslocam na mesma direção definida para o elemento pai.
+1. **`Relative`**: O elemento se desloca e os outros elementos não se movem.
+2. **`Absolute`**: O elemento de desloca como o tipo ´Relative´, mas os outros elementos se rearrajam na tela e ignoram o elemento deslocado.
 
 ## **Propriedades**
 
 ### **All**
 
-É ele quem define o **mesmo valor para todas posições**. Exemplo:
+Adiciona o mesmo espaço a **todos(all)** os lados do elemento:
 
-![](/shared/captura-de-tela-2020-06-05-a-s-11.24.08.png)
+{{< figure src="/shared/flex/position-all.png" width="150">}}
 
 {{< tabs id="T55" >}}
 {{% tab name="Kotlin" %}}
@@ -80,9 +80,9 @@ private fun screen() :Widget{
 
 ### **Bottom**
 
-É ele quem define um **espaçamento na parte inferior** do elemento. Exemplo:
+Adiciona um espaço **abaixo(bottom)** do elemento:
 
-![](/shared/captura-de-tela-2020-06-05-a-s-11.26.34.png)
+{{< figure src="/shared/flex/position-bottom.png" width="150">}}
 
 {{< tabs id="T56" >}}
 {{% tab name="Kotlin" %}}
@@ -141,9 +141,9 @@ private fun screen() :Widget{
 
 ### **Left**
 
-É ele quem define um **espaçamento no lado esquerdo** do elemento. Exemplo:
+Adiciona um espaço a **esquerda(left)** do elemento:
 
-![](/shared/captura-de-tela-2020-06-05-a-s-11.29.41.png)
+{{< figure src="/shared/captura-de-tela-2020-06-05-a-s-11.29.41.png" width="150">}}
 
 {{< tabs id="T57" >}}
 {{% tab name="Kotlin" %}}
@@ -202,9 +202,9 @@ private fun screen() :Widget{
 
 ### **Right**
 
-É ele quem define um **espaçamento no lado direito** do elemento. Exemplo:
+Adiciona um espaço a **direita(right)** do elemento:
 
-![](/shared/captura-de-tela-2020-06-05-a-s-11.33.00.png)
+{{< figure src="/shared/captura-de-tela-2020-06-05-a-s-11.33.00.png" width="150">}}
 
 {{< tabs id="T58" >}}
 {{% tab name="Kotlin" %}}
@@ -263,9 +263,9 @@ private fun screen() :Widget{
 
 ### **Top**
 
-É ele quem define o **posicionamento do top**. Exemplo:
+Adiciona um espaço no **topo(top)** do elemento:
 
-![](/shared/captura-de-tela-2020-06-05-a-s-11.34.21.png)
+{{< figure src="/shared/captura-de-tela-2020-06-05-a-s-11.34.21.png" width="150">}}
 
 {{< tabs id="T59" >}}
 {{% tab name="Kotlin" %}}
@@ -324,9 +324,9 @@ private func screen() -> Screen {
 
 ### **Horizontal**
 
-É ele quem define um **valor horizonta**l adicionando valor no left e right. Exemplo:
+Adiciona um espaço nos lados **horizontais(horizontal)** do elemento:
 
-![](/shared/captura-de-tela-2020-06-05-a-s-11.36.55.png)
+{{< figure src="/shared/captura-de-tela-2020-06-05-a-s-11.36.55.png" width="150">}}
 
 {{< tabs id="T60" >}}
 {{% tab name="Kotlin" %}}
@@ -385,9 +385,9 @@ private func screen() -> Screen {
 
 ### **Vertical**
 
-É ele quem define um **valor vertical** adicionando valor no top e bottom. Exemplo:
+Adiciona um espaço aos lados **verticais(vertical)** do elemento:
 
-![](/shared/captura-de-tela-2020-06-05-a-s-11.39.22.png)
+{{< figure src="/shared/captura-de-tela-2020-06-05-a-s-11.39.22.png" width="150">}}
 
 {{< tabs id="T61" >}}
 {{% tab name="Kotlin" %}}

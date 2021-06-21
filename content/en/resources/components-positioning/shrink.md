@@ -12,7 +12,7 @@ This atribute defines an **item's ability to shrink**, reducing child elements a
 
 With Shrink, the element receives a double value, which will decrease the element according to the space at the container:
 
-![](https://lh5.googleusercontent.com/30mBYNqNtZf0Lp1Zw4dr8dkZW5PsOtxqHtqkgbPLZNbU6g8xFs0QmGh5ip66WlU5cHSqtdBWduGuwrLGyGp2uYkkAw6GLXpaf-ZRNORNJywill9WCTZIlRAva9_s5G30MJCh-rOS)
+{{< figure src="/shared/flex/shrink.png" width="150">}} 
 
 {{< tabs id="T66" >}}
 {{% tab name="Kotlin" %}}

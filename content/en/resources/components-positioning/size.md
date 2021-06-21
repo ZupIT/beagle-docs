@@ -12,9 +12,9 @@ It handles the item's size on screen.
 
 Size has the following atributes: **`width, heigth, maxWidth,maxHeight, minWidth, minHeigh, aspectRatio`**
 
-![](https://lh3.googleusercontent.com/3aoRDnlMNqdnoYlmx60A--Y_Q6I3tGqCZt6CiQDJP53xu4TpwIL4skCdT_tjTTspNjuftf5ikAyKiLxlm4Tcll1kIQ_LhMd9y-PfBKcd69zgPp2MyMPJBHP5sUyQDXmPFTZcGqHM)
+{{< figure src="/shared/flex/heigth-width.png" width="150">}} 
 
-## **Atributos:**
+## **Attributes:**
 
 ### **Width**
 
@@ -45,6 +45,8 @@ Defines a **minimum heght** an item can shrink down to.
 This property created by Yoga Layout defines the width ratio according to the item's height, following a logic of a **double&gt; 0 value.**
 
 For example, if you apply a height of 100dp to a component and the aspectRatio of 2, the width will be 2 times the height where it will have the value of 200dp.
+
+{{< figure src="/shared/flex/aspect-ratio.png" width="150">}} 
 
 {{< tabs id="T67" >}}
 {{% tab name="Kotlin" %}}

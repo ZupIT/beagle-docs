@@ -12,20 +12,12 @@ This property defines how this component displays. It allows a container to be `
 
 In this property, there are two attributes:
 
-- Flex
-- None
+| **Flex** | **None** |
+| :-----------: | :----------------------------------------------------------: |
+| When this value is set it allows the elements to be flexible. | When this value is set, the elements won't be shown on the screen, thus having their height and width 0. |
+|{{< figure src="/shared/flex/flex-start-row.png" width="150">}} |{{< figure src="/shared/flex/display-none.png" width="150">}}|
 
-### **Flex**
-
-When this value is set it allows the elements to be flexible.
-
-### **None**
-
-When this value is set, the elements won't be shown on the screen, thus having their height and width 0.
-
-![](https://lh6.googleusercontent.com/3cy2o8XKmTf0wequEI5ycerpdW48FvjiyXGvpfDtg3sOq3qz6ZJnKPQhVZ-9B0ed7GyUGGNQwfQbk1uEzDEADfmouCFPlrWWpjemG7yKHuhYkjvoY3zCe0nKVgYCqVWJA3VGS6_-)
-
-###
+*  The code below shows a `display none` example:
 
 {{< tabs id="T68" >}}
 {{% tab name="Kotlin" %}}

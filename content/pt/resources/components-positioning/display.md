@@ -10,24 +10,18 @@ description: >-
 
 ## Display
 
-Esta propriedade define o **tipo de exibição** deste componente, o que permite um container ser flexível ou bloqueado de acordo com o valor passado.
+Esta propriedade define o **tipo de exibição** deste componente, o que permite que um container seja flexível ou bloqueado de acordo com o valor definido.
 
-O Display possibilita ainda um contexto flexível para todos os seus elementos filhos diretos. Nesta propriedade, temos dois atributos:
+O Display possibilita todos os seus elementos filhos diretos sejam também flexíveis. 
 
-- Flex
-- None
+Nesta propriedade, temos dois atributos:
 
-### **Flex**
+| **Flex** | **None** |
+| :-----------: | :----------------------------------------------------------: |
+| Permite que os elementos filhos do contêiner sejam flexíveis| Oculta o elemento que tenha definida essa propriedade |
+|{{< figure src="/shared/flex/flex-start-row.png" width="150">}} |{{< figure src="/shared/flex/display-none.png" width="150">}}|
 
-Quando esse valor for definido permite que os elementos ficam flexível.
-
-### **None**
-
-Quando esse valor for definido permite que os elementos não sejam mostrado na tela, assim tendo sua altura e largura com valor 0.
-
-![](https://lh6.googleusercontent.com/3cy2o8XKmTf0wequEI5ycerpdW48FvjiyXGvpfDtg3sOq3qz6ZJnKPQhVZ-9B0ed7GyUGGNQwfQbk1uEzDEADfmouCFPlrWWpjemG7yKHuhYkjvoY3zCe0nKVgYCqVWJA3VGS6_-)
-
-###
+*  Veja abaixo um código que demonstra o `display none`:
 
 {{< tabs id="T69" >}}
 {{% tab name="Kotlin" %}}
