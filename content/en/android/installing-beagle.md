@@ -107,7 +107,7 @@ Remember to use the same Beagle's version used on your BFF to avoid problems.
 
 After Beagle's installation, now you have to make our tool's usage configuration, follow the steps below:
 
-**Step 1:** Create a BeagleConfig class
+**Step 1: Create a BeagleConfig class**
 
 After the update, you have to create a `BeagleConfig` class and configure your attributes,  see the example below:
 
