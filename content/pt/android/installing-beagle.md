@@ -182,18 +182,18 @@ Para fazer requisições server-driven a um backend é necessário configurar um
 {{% /alert%}}
 
 ## **Outras Customizações**
- * Ações - você pode criar ações customizadas para serem executadas pelos widgets conforme interações do usuário
- * Animações de navegação - você pode customizar as animações de navegação das telas do Beagle
- * Beagle Activity - você pode customizar a activity que será exibida quando uma tela server-driven for chamada
- * Camada de Rede - você pode customizar a camada de rede para configurar a forma que o Beagle irá fazer as requisições
- * Cache - você pode customizar o cache para salvar as telas server-driven
- * Carregamento e tratamento de erros - você pode customizar o tratamento de erro e o loading das telas server-driven
- * Proguard - você pode ofuscar e otimizar seu código usando proguard, todas as configurações já estão definidas internamente. Caso queira criar componentes customizados ou alterar alguma regra para o proguard, damos suporte para isso no Beagle
- * Deep Link handler - você pode configurar o Deep Link Handler para ter navegação de uma tela server-driven para uma tela nativa
- * Image Downloader - você pode customizar a forma como as imagens serão baixadas para serem exibidas pelo Beagle
- * Design System - você pode customizar seu design system para construir telas mais bonitas
- * Serializador e Desserializador - você pode customizar a forma como o Beagle serializa e desserializa
- * Log - você pode customizar a maneira como os logs gerados pelo Beagle serão exibidos
- * Widget - você pode criar componentes específicos para seu projeto para utilizá-los na criação de telas server-driven
- * Operações - você pode criar suas operações para manipular o Context de uma forma mais simples e através do seu backend
- * Analytics - você pode configurar um analytics para gerar reportes de telas e ações
+ * **Ações:** Você pode criar ações customizadas para serem executadas pelos widgets conforme interações do usuário.
+ * **Animações de navegação:** Você pode customizar as animações de navegação das telas do Beagle.
+ * **Beagle Activity:** Você pode customizar a activity que será exibida quando uma tela server-driven for chamada.
+ * **Camada de Rede:** Você pode customizar a camada de rede para configurar a forma que o Beagle irá fazer as requisições.
+ * **Cache:** Você pode customizar o cache para salvar as telas server-driven.
+ * **Carregamento e tratamento de erros:** Você pode customizar o tratamento de erro e o loading das telas server-driven.
+ * **Proguard:** Você pode ofuscar e otimizar seu código usando Proguard, todas as configurações já estão definidas internamente. Caso queira criar componentes customizados ou alterar alguma regra para o Proguard, o Beagle oferece suporte para isso.
+ * **Deep Link handler:** Você pode configurar o Deep Link Handler para ter navegação de uma tela server-driven para uma tela nativa.
+ * **Image Downloader:** Você pode customizar a forma como as imagens serão baixadas para serem exibidas pelo Beagle.
+ * **Design System:** Você pode customizar seu design system para construir telas mais bonitas.
+ * **Serializador e Desserializador:** Você pode customizar a forma como o Beagle serializa e desserializa.
+ * **Log:** Você pode customizar a maneira como os logs gerados pelo Beagle serão exibidos.
+ * **Widget:** Você pode criar componentes específicos para seu projeto e utilizá-los na criação de telas server-driven.
+ * **Operações:** Você pode criar suas operações para manipular o Context de uma forma mais simples através do seu backend.
+ * **Analytics:** Você pode configurar um analytics para gerar reportes de telas e ações. 
