@@ -53,7 +53,7 @@ Important: O valor default do Beagle é `column`, ou seja, os elementos serão d
 
 ## Propriedades
 
-Existem algumas propriedades que o Yoga Layout pode usar para inserir, mover ou excluir componentes. A seguir temos algumas delas:
+O Yoga Layout pode usar alguams propriedades para inserir, mover ou excluir componentes. Veja a seguir algumas delas:
 
 ### **UnitValue**
 
