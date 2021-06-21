@@ -47,7 +47,7 @@ Quando a inicialização for concluída, você verá a página abaixo:
 
 ## **Adicionando o Beagle no seu projeto**
 
-Para adicionar o Beagle em seu projeto Android e poder aproveitar desse framework, siga os passos abaixo:
+Para adicionar o Beagle em seu projeto Android e utilizar esse framework, siga os passos abaixo:
 
 **Passo 1:** Configurar as dependências
 
