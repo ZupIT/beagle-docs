@@ -160,7 +160,7 @@ class AppApplication: Application() {
 }
 ```
 
-**Passo 4:** Atualizar seu Android Manifest.xml
+**Passo 4: Atualizar seu Android Manifest.xml**
 
 Atualize novamente o seu `AndroidManifest.xml` e defina a `AppApplication` que foi criada como o arquivo de inicialização da aplicação, veja o exemplo abaixo:
 
