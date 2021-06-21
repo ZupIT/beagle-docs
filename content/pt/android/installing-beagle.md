@@ -29,7 +29,7 @@ Depois de ter instalado o programa, siga os passos abaixo:
 
 ![](/shared/androidprojecttemplate.png)
 
-**Passo 3️:** Nesta página, devemos listar algumas informações importantes:
+**Passo 3️:** Nesta página, você deve adicionar algumas informações importantes:
 
 - Informe o nome do seu projeto. Neste exemplo, chamaremos de `BeagleApp`.
 - Selecione qual linguagem utilizará. Para o Beagle, devemos utilizar o`Kotlin`.
@@ -39,15 +39,15 @@ Depois de ter instalado o programa, siga os passos abaixo:
 
 ![](/shared/configureandroidproject.png)
 
-**Passo 4️:** Feitas as configurações anteriores, o Android levará um tempo pra construir o projeto porque estará sincronizando todas as dependências inicias para inicializar o projeto
+**Passo 4️:** Depois de terminar as configurações, o Android levará um tempo pra construir o projeto porque ele precisa sincronizar todas as dependências iniciais para inicializar o projeto.
 
-Quando a inicialização for concluída, você verá esta página:
+Quando a inicialização for concluída, você verá a página abaixo:
 
 ![](/shared/mainactivity.png)
 
 ## **Adicionando o Beagle no seu projeto**
 
-Para adicionar o Beagle em seu projeto Android e poder aproveitar desse framework, siga os passos abaixo:
+Para adicionar o Beagle em seu projeto Android e utilizar esse framework, siga os passos abaixo:
 
 **Passo 1:** Configurar as dependências
 
@@ -100,7 +100,7 @@ Por exemplo: undefined-`ext.beagle.version = "1.8.0"`
 Lembre de sempre verificar se você está usando a versão mais recente do Beagle. Para saber disso, basta passar o mouse por cima do número da versão. Depois disso, sincronize com sua máquina.
 {{% /alert %}}
 {{%alert color="warning"%}}
-Lembre de sempre usar a mesma versão do Beagle utilizada no seu BFF para evitar possíveis problemas
+Use a mesma versão do Beagle utilizada no seu BFF para evitar possíveis problemas.
 {{%/alert%}}
 
 
@@ -134,7 +134,7 @@ class AppBeagleConfig : BeagleConfig {
 | cache            | Cache       | Objeto responsável por gerenciar o cache das requisições do Beagle.                                                                                                                                                     |
 
 {{% alert color="warning" %}}
-Faça a configuração das classes com bastante atenção, pois se você anotá-las com `BeagleComponent`, o Beagle espera que elas tenham construtores vazios.
+Cuidado ao fazer a configuração das classes, porque se você anotá-las com `BeagleComponent`, o Beagle espera que elas tenham construtores vazios.
 {{% /alert %}}
 
 **Passo 2:** Criar o BeagleSetup
@@ -162,7 +162,7 @@ class AppApplication: Application() {
 
 **Passo 4:** Atualizar seu Android Manifest.xml
 
-Por fim, você deve atualizar novamente o seu `AndroidManifest.xml` e definir a `AppApplication` que foi criada como o arquivo de inicialização da aplicação, como no exemplo abaixo:
+Atualize novamente o seu `AndroidManifest.xml` e defina a `AppApplication` que foi criada como o arquivo de inicialização da aplicação, veja o exemplo abaixo:
 
 ```markup
 <?xml version="1.0" encoding="utf-8"?>
