@@ -50,7 +50,7 @@ Once the initialization is done, you will see this page:
 
 **Step 1: Configure the dependencies**
 
-You have to adjust your repository's dependencies to receive Beagle. To do so, use the following configuration to **download Beagle's library.**
+You must add `mavenCentral()` in the *allprojects repository's dependencies* to set the resource for Beagle. To do so, use the following configuration to **download Beagle's library.**
 
 ```kotlin
 allprojects {
