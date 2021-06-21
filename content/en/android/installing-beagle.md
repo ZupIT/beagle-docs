@@ -142,7 +142,7 @@ After you have created the class shown in the previous step and annotated with @
 
 ![BeagleSetup file](/shared/beaglesetup.png)
 
-**Step 3:** Create the Application class
+**Step 3: Create the Application class**
 
 At this moment, you should create a `Kotlin class` that extends the `Application class`. For this example, the name will be `AppApplication`.
 
