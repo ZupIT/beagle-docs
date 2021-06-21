@@ -190,7 +190,7 @@ To do server-driven requisitons to a backend it's mandatory to customize the net
  * Network Client - you can customize the network client to cunfigure the way Beagle will make requests
  * Cache - you can customize the cache  to save the server-driven screens
  * Loading and errors treatment - you can customize the error treatment and loading of server-driven screens
- * Proguard - you can obfuscate your code using proguard, it's necessary a configuration to not obfuscate some class that could be serialized and deserialized by Beagle
+ * Proguard - you can obfuscate your code using proguard, all settings are already set internally. If you want to create custom componenets or change any proguard's rules, we support it on Beagle.
  * Deep Link handler - you can configure the Deep Link Handler to navigate from a server-driven screen to a native screen
  * Image Downloader - you can customize how images will be dowloaded to be displayed by Beagle
  * Design System - you can customize your design system to build more beatiful screens to be displayed by Beagle
