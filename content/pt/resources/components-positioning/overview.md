@@ -48,7 +48,7 @@ Se esta propriedade for definida como:
 | {{< figure src="/shared/flex/row.png" width="150">}} | {{< figure src="/shared/flex/column.png" width="150">}} |
 
 {{% alert color="info" %}}
-Important: O valor default do Beagle é `column` ou seja, os elementos serão dispostos em colunas por padrão.
+Important: O valor default do Beagle é `column`, ou seja, os elementos serão dispostos em colunas por padrão.
 {{% /alert %}}
 
 ## Propriedades
