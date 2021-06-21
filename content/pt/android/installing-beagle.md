@@ -21,15 +21,15 @@ Para este exemplo prático, utilizaremos o Android Studio IDE. Caso você ainda 
 
 Depois de ter instalado o programa, siga os passos abaixo:
 
-**Passo 1:** Abra o Android Studio e clique em **Start a new Android Studio project**_._
+**Passo 1: Abra o Android Studio e clique em Start a new Android Studio project**
 
 ![](/shared/newandroidproject.png)
 
 **Passo 2:** Selecione a opção **Empty Activity** e clique em **next**.
 
-![](/shared/androidprojecttemplate.png)
+{{< figure src="/shared/androidprojecttemplate.png">}}
 
-**Passo 3️:** Nesta página, você deve adicionar algumas informações importantes:
+**Passo 3️: Nesta página, você deve adicionar algumas informações importantes:**
 
 - Informe o nome do seu projeto. Neste exemplo, chamaremos de `BeagleApp`.
 - Selecione qual linguagem utilizará. Para o Beagle, devemos utilizar o`Kotlin`.
@@ -37,19 +37,19 @@ Depois de ter instalado o programa, siga os passos abaixo:
 - Defina o **package** e a **Save location** de acordo com sua preferência.
 - Clique em **Next**.
 
-![](/shared/configureandroidproject.png)
+{{< figure src="/shared/configureandroidproject.png">}}
 
-**Passo 4️:** Depois de terminar as configurações, o Android levará um tempo pra construir o projeto porque ele precisa sincronizar todas as dependências iniciais para inicializar o projeto.
+**Passo 4️: Depois de terminar as configurações, o Android levará um tempo pra construir o projeto porque ele precisa sincronizar todas as dependências iniciais para inicializar o projeto.**
 
 Quando a inicialização for concluída, você verá a página abaixo:
 
-![](/shared/mainactivity.png)
+{{< figure src="/shared/mainactivity.png">}}
 
 ## **Adicionando o Beagle no seu projeto**
 
 Para adicionar o Beagle em seu projeto Android e utilizar esse framework, siga os passos abaixo:
 
-**Passo 1:** Configurar as dependências
+**Passo 1: Configurar as dependências**
 
 Você precisa ajustar as dependências do seu repositório para receber o Beagle. Para isso, utilize as configuração abaixo para fazer o **download da biblioteca**.
 
@@ -66,7 +66,7 @@ allprojects {
 A configuração acima deve ser adicionada em `allprojects{}`
 {{% /alert %}}
 
-**Passo 2:** Incluir os plugins
+**Passo 2: Incluir os plugins**
 
 Uma vez feita a primeira configuração, agora você precisa incluir o plugin do `kapt` e do Beagle como dependências dentro do seu gerenciador de dependências, como no exemplo abaixo.
 
@@ -141,7 +141,7 @@ Cuidado ao fazer a configuração das classes, porque se você anotá-las com `B
 
 Após ter criado a classe mostrada no passo anterior e anotado com o @BeagleComponent, basta você buildar seu projeto (para isso, aperte CTRL + F9) que o Beagle irá criar automaticamente uma classe de `BeagleSetup` class, como mostra a figura abaixo:
 
-![BeagleSetup file](/shared/beaglesetup.png)
+{{< figure src="/shared/beaglesetup.png">}}
 
 **Passo 3: Criar a classe Application**
 

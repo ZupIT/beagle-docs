@@ -21,15 +21,15 @@ For this example, we'll use Android Studio IDE. If you haven't installed it yet,
   
 After you have installed the program, follow the steps below:
 
-**Step 1:** Open Android Studio and click on **Start a new Android Studio project**_._ 
+**Step 1: Open Android Studio and click on Start a new Android Studio project**
 
-![](/shared/newandroidproject.png)
+{{< figure src="/shared/newandroidproject.png">}}
 
-**Step 2:** Choose the **Empty Activity** option and click on **next**. 
+**Step 2: Choose the Empty Activity option and click on next**. 
 
-![](/shared/androidprojecttemplate.png)
+{{< figure src="/shared/androidprojecttemplate.png">}}
 
-**Step 3️:** On this page, there is some important information:
+**Step 3️: On this page, there is some important information:**
 
 * Inform your project's name. On this example, we'll call `BeagleApp`.
 * Choose which language you'll use. For Beagle, you should go with `Kotlin`.
@@ -37,17 +37,18 @@ After you have installed the program, follow the steps below:
 * Define a **package** and a **Save location** according to your preference. 
 * Click on **Next**.
 
-![](/shared/configureandroidproject.png)
+{{< figure src="/shared/configureandroidproject.png">}}
 
-**Step 4️:** After you made the previous configurations, Android will take some time to build the project because it will be synchronizing all the dependencies to initialize the project.
+
+**Step 4️: After you made the previous configurations, Android will take some time to build the project because it will be synchronizing all the dependencies to initialize the project.**
 
 Once the initialization is done, you will see this page: 
 
-![](/shared/mainactivity.png)
+{{< figure src="/shared/mainactivity.png">}}
 
 ##  Add Beagle on your project 
 
-**Step 1:** Configure the dependencies
+**Step 1: Configure the dependencies**
 
 You have to adjust your repository's dependencies to receive Beagle. To do so, use the following configuration to **download Beagle's library.**
 
@@ -64,7 +65,7 @@ allprojects {
 The above configuration must be added to `allprojects{}`
 {{% /alert %}}
 
-**Step 2:** Include plugins
+**Step 2: Include plugins**
 
 After you have completed the first configuration, now you need to include the `kapt` and Beagle's plugin as dependencies on your dependency manager, check out the example below:
 
@@ -140,7 +141,7 @@ Make sure to note your class configuration with `BeagleComponent`, because Beagl
 
 After you have created the class shown in the previous step and annotated with @BeagleComponent, just build your project (press CTRL + F9) and Beagle will automatically create a BeagleSetup class, see the image below:
 
-![BeagleSetup file](/shared/beaglesetup.png)
+{{< figure src="/shared/beaglesetup.png">}}
 
 **Step 3: Create the Application class**
 
