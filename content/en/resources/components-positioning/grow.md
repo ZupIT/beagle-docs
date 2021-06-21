@@ -27,12 +27,11 @@ private fun screen() :Widget{
             createText(backgroundColor = "#dd7631", text = "texto 2"),
             createText(backgroundColor = "#649d66", text = "texto 3")
         )
-    ).applyStyle(
-        Style(
-            backgroundColor = "#000000",
-            flex = Flex(grow = 0.0)
-        )
-    )
+    ).setFlex {
+        grow = 0.0
+    }.setStyle {
+        backgroundColor = "#000000"
+    }
 
     }
 ```
@@ -80,12 +79,11 @@ private fun screen() :Widget{
             createText(backgroundColor = "#dd7631", text = "texto 2"),
             createText(backgroundColor = "#649d66", text = "texto 3")
         )
-    ).applyStyle(
-        Style(
-            backgroundColor = "#000000",
-            flex = Flex(grow = 1.0)
-        )
-    )
+    ).setFlex {
+        grow = 1.0
+    }.setStyle {
+        backgroundColor = "#000000"
+    }
 
     }
 ```

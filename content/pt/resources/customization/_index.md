@@ -3,7 +3,7 @@ title: Customização
 weight: 98
 description: >-
   Nesta seção, você encontra as páginas para acessar customizações específicas
-  por plataforma.
+  para sua aplicação backend.
 ---
 
 ---

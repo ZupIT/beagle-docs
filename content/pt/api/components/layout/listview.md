@@ -207,11 +207,9 @@ Valor default é ListDirection.VERTICAL
                 Text("sex: @{item.sex}"),
                 Text("age: @{item.age}"),
             )
-        ).applyStyle(
-            Style(
-                margin = EdgeValue(bottom = 20.unitReal())
-            )
-        )
+        ).setStyle{
+          margin = EdgeValue.only(bottom = 20)
+        }
     )
 }
 ```

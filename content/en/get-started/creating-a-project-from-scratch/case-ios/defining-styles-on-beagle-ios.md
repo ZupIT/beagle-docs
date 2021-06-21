@@ -189,35 +189,26 @@ class FirstScreenBuilder : ScreenBuilder {
         child = Container(
             children = listOf(
                 Text(
-                    text = "Hello Beagle",
+                    text = "Hello Beagle!",
                     styleId = "Title.Text.Orange"
-                ).applyStyle(
-                    Style(
-                        margin = EdgeValue(
-                            top = 16.unitReal()
-                        ),
-                        flex = Flex(alignSelf = AlignSelf.CENTER)
-                    )
-                ),
+                 ).setStyle {
+                    margin = EdgeValue.only(top = 16)
+                }.setFlex {
+                    alignSelf = AlignSelf.CENTER
+                },
                 Text(
-                    text = "Beagle is a cross-platform framework which provides " +
-                           "usage of the Server-Driven UI concept, natively in " +
-                           "iOS, Android and Web applications. By using Beagle, " +
-                           "your team could easily change application's layout " +
-                           "and data by just changing backend code.",
+                    text = "Beagle is a cross-platform framework which provides usage of the " +
+                        "Server-Driven UI concept, natively in iOS, Android and Web applications. " +
+                        "By using Beagle, your team could easily change application's layout and" +
+                        " data by just changing backend code.",
                     styleId = "Description.Text.Orange"
-                ).applyStyle(
-                    Style(
-                        margin = EdgeValue(
-                            left = 16.unitReal(),
-                            right = 16.unitReal(),
-                            top = 20.unitReal()
-                        )
-                    )
-                )
+                  ).setStyle {
+                    margin = EdgeValue.only(top = 20, left = 16, right = 16)
+                }
             )
         )
     )
+}
 ```
 
 To add a style to a text element, you must list the style name within the text component, as shown below. Don't forget to separate the components with a comma. Hold the `Ctrl` button and place the mouse over the Text component and will see the list of attributes that this component can receive here on the backend. For now, we will only use `Style`.
@@ -228,16 +219,13 @@ To add a style to a text element, you must list the style name within the text c
 
 ```swift
 Text(
-    text = "Hello Beagle",
-    styleId = “Tille.Text.Organge”
-).applyFlex(
-        Flex(
-            margin = EdgeValue(
-                top = 16.unitRal(Real)
-            ),
-            alignSelf = Alignment.CENTER
-        )
-),
+    text = "Hello Beagle!",
+        styleId = "Title.Text.Orange"
+    ).setStyle {
+         margin = EdgeValue.only(top = 16)
+    }.setFlex {
+            alignSelf = AlignSelf.CENTER
+    }
 ```
 
 And done, that's all we're gonna do on our backend so far. 
