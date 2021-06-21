@@ -47,7 +47,7 @@ Once the initialization is done, you will see this page:
 
 ##  Add Beagle on your project 
 
-**Step 1:** Dependencies' configuration
+**Step 1:** Configure the dependencies
 
 You have to adjust your repository's dependencies to receive Beagle. To do so, use the following configuration to **download Beagle's library.**
 
