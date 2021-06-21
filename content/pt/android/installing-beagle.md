@@ -23,11 +23,11 @@ Depois de ter instalado o programa, siga os passos abaixo:
 
 **Passo 1:** Abra o Android Studio e clique em **Start a new Android Studio project**_._
 
-![](https://lh4.googleusercontent.com/bAhbvEZUN_pBXavMOqCvkt2Z4NlYsxXXtmeGRKEUnyGfuIm7c-mskMhmmiMbSaCw_xonW8vceVI2C27q08-k5tV8EDD5ymvoaPwDDFGe_fN3bmoqCQEoAAKASKXOTiI3KUPI1GQ1)
+![](/shared/newandroidproject.png)
 
 **Passo 2:** Selecione a opção **Empty Activity** e clique em **next**.
 
-![](https://lh5.googleusercontent.com/nT0zkr0W_Ark0ZZDR2eWtCtfnjC_Fm98VSwU3DgBQzcgh_DoqkYNvhINztNL460p0U2hnygJ5K_DhrZMZis0mqHD69QJgKimruICs4MnBnPO9m-m_2T6E1nWIXiOfaIe0iiCjIN3)
+![](/shared/androidprojecttemplate.png)
 
 **Passo 3️:** Nesta página, devemos listar algumas informações importantes:
 
@@ -37,7 +37,7 @@ Depois de ter instalado o programa, siga os passos abaixo:
 - Defina o **package** e a **Save location** de acordo com sua preferência.
 - Clique em **Next**.
 
-![](https://lh3.googleusercontent.com/m5jnbs4K5AdwQbA7YVn7fSgtVzw5S68yCbGTj_7-CYa9CGvMR-qFO5EQ4SaNehXYRmI4WOOnqA6JQouzW2QC0YMTpBq7kJSbi54yl0Q2emL_y2FizY3LyloLjuh_uDyf8WyVbodP)
+![](/shared/configureandroidproject.png)
 
 **Passo 4️:** Feitas as configurações anteriores, o Android levará um tempo pra construir o projeto porque estará sincronizando todas as dependências inicias para inicializar o projeto
 
