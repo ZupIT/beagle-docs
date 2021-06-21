@@ -1,5 +1,5 @@
 ---
 title: Android
 weight: -60
-description: Here, you'll find more about Beagle for Android
+description: This section holds information on how to add Beagle into an Android project
 ---
