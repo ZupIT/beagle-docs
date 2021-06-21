@@ -137,7 +137,7 @@ class AppBeagleConfig : BeagleConfig {
 Cuidado ao fazer a configuração das classes, porque se você anotá-las com `BeagleComponent`, o Beagle espera que elas tenham construtores vazios.
 {{% /alert %}}
 
-**Passo 2:** Criar o BeagleSetup
+**Passo 2: Criar o BeagleSetup**
 
 Após ter criado a classe mostrada no passo anterior e anotado com o @BeagleComponent, basta você buildar seu projeto (para isso, aperte CTRL + F9) que o Beagle irá criar automaticamente uma classe de `BeagleSetup` class, como mostra a figura abaixo:
 
