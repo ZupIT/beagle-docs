@@ -162,7 +162,7 @@ class AppApplication: Application() {
 
 **Passo 4:** Atualizar seu Android Manifest.xml
 
-Por fim, você deve atualizar novamente o seu `AndroidManifest.xml` e definir a `AppApplication` que foi criada como o arquivo de inicialização da aplicação, como no exemplo abaixo:
+Atualize novamente o seu `AndroidManifest.xml` e defina a `AppApplication` que foi criada como o arquivo de inicialização da aplicação, veja o exemplo abaixo:
 
 ```markup
 <?xml version="1.0" encoding="utf-8"?>
