@@ -18,7 +18,7 @@ Para criar uma ação customizada no Beagle cuja execução seja assíncrona com
 **Passo 2:**  Implementar a interface `AsyncAction`;
 **Passo 3:** Vincular a interface `AsyncAction` e delegar sua implementação para a classe `AsyncActionImpl` que o Beagle já fornece.
 {{% alert color="info" %}}
-Recomendamos o uso dessa classe, pois ela implementa os `onActionStarted` e `onActionFinished` expondo seu estado de forma reativa e padronizado no framework.
+É recomendado o uso dessa classe, pois ela implementa os `onActionStarted` e `onActionFinished` expondo seu estado de forma reativa e padronizado no framework.
 {{% /alert %}}
 
 ```kotlin
