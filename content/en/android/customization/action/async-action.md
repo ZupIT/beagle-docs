@@ -34,7 +34,7 @@ data class CustomActionAndroid(
 }
 ```
 
-Now, with the action ready to execute asynchronously, you have to **MANDATORY** notify when its execution is finished through the `onActionFinished` method.
+**Step 4:** Now, the action is ready to execute asynchronously. It is *MANDATORY** to notify when the execution is finished through the `onActionFinished` method. 
 
 ```kotlin
 @RegisterAction("customActionAndroid")
