@@ -8,8 +8,8 @@ description: Criando uma ação customizada assíncrona
  - Como criar uma Ação Assíncrona Customizada
 
 **Requisitos:**
- - Ter um projeto com o Beagle Configurado
- - [Saber criar Ações Customizadas Simples]({{< ref path="/android/customization/action/simple-action" lang="pt">}})
+ - Um projeto com o Beagle configurado;
+ - Criar ações simples, para saber mais sobre acesse a seção [Ações Customizadas Simples]({{< ref path="/android/customization/action/simple-action" lang="pt">}})
 
  ## Como criar ações assíncronas
 
