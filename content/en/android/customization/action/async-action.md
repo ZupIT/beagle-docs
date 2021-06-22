@@ -1,7 +1,7 @@
 ---
 title: Async Custom Action
 weight: 106
-description: Creating a custom async action
+description: In this section, you will find how to create a custom async action.
 ---
 
 **Topics covered:**
