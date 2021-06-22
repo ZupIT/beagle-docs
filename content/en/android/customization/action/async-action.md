@@ -8,8 +8,8 @@ description: In this section, you will find how to create a custom async action.
  - How to creat an Asyn Action
 
 **Requirements:**
- - Have a project with Beagle configured
- - [Knwo how to create simple actions]({{< ref path="/android/customization/action/simple-action" lang="en">}})
+ - A project with Beagle configured;
+ - Simple actions, for more information, check out [Know how to create simple actions]({{< ref path="/android/customization/action/simple-action" lang="en">}})
 
  ## How to create Assyn Actions
 
