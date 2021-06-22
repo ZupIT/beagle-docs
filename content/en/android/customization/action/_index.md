@@ -2,11 +2,8 @@
 title: Ações
 weight: 102
 description: >-
-  Nesta seção, você encontra a descrição de como criar uma ação customizada e
-  detalhes dos métodos que ela implementa.
----
-
-## Introdução
+ In this section, you will find how to create a customized action and which methods it implements.
+## Introduction 
 
 An action \(`Action`\) is a Beagle component that can be called through events triggered by other components, \(including other actions\)
 
