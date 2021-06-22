@@ -56,7 +56,7 @@ There are two ways to register your action, check them below:
 
 ## How to use your action
 
-See below an action example in a button type component: 
+See below, an action example in a button type component: 
 
 ```kotlin
 Button(
