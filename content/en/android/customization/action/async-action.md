@@ -15,9 +15,9 @@ description: In this section, you will find how to create a custom async action.
 
 To create an action with asynchronous execution such as consuming an API or accessing a database, follow the steps:
 
-**Step 1:** Create an `action` as usual, just like the previous example;
-**Step 2:**  Implement the `AsyncAction` interface;
-**Step 3:** Link the `AsyncAction` interface and delegate its implementation to the `AsyncActionImpl` class that Beagle already provides it.
+**Step 1: Create an `action` as usual, just like the previous example;**
+**Step 2:  Implement the `AsyncAction` interface;**
+**Step 3: Link the `AsyncAction` interface and delegate its implementation to the `AsyncActionImpl` class that Beagle already provides it.**
 
 {{% alert color="info" %}}
 It is recommended to use this class, as it implements the `onActionStarted` and `onActionFinished`, exposing its state in a reactive and standardized way in the framework.
@@ -34,7 +34,7 @@ data class CustomActionAndroid(
 }
 ```
 
-**Step 4:** Now, the action is ready to execute asynchronously. It is *MANDATORY** to notify when the execution is finished through the `onActionFinished` method. 
+**Step 4: Now, the action is ready to execute asynchronously. It is MANDATORY to notify when the execution is finished through the `onActionFinished` method.**
 
 ```kotlin
 @RegisterAction("customActionAndroid")

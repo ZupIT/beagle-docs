@@ -14,9 +14,9 @@ description: Criando uma ação customizada assíncrona
  ## Como criar ações assíncronas
 
 Para criar uma ação customizada no Beagle cuja execução seja assíncrona como o consumo de uma API ou acesso a um banco de dados, siga os passos abaixo:
-**Passo 1:** Criar uma `action` normalmente como no exemplo anterior;
-**Passo 2:**  Implementar a interface `AsyncAction`;
-**Passo 3:** Vincular a interface `AsyncAction` e delegar sua implementação para a classe `AsyncActionImpl` que o Beagle já fornece.
+**Passo 1: Criar uma `action` normalmente como no exemplo anterior;**
+**Passo 2:  Implementar a interface `AsyncAction`;**
+**Passo 3: Vincular a interface `AsyncAction` e delegar sua implementação para a classe `AsyncActionImpl` que o Beagle já fornece.**
 {{% alert color="info" %}}
 É recomendado o uso dessa classe, pois ela implementa os `onActionStarted` e `onActionFinished` expondo seu estado de forma reativa e padronizado no framework.
 {{% /alert %}}
@@ -32,7 +32,7 @@ data class CustomActionAndroid(
 }
 ```
 
-**Passo 4:** Agora, com a action pronta para executar de forma assíncrona, você precisa **OBRIGATORIAMENTE** notificar quando sua execução está concluída através do método `onActionFinished`.
+**Passo 4: Agora, com a action pronta para executar de forma assíncrona, você precisa **OBRIGATORIAMENTE** notificar quando sua execução está concluída através do método `onActionFinished`.**
 
 ```kotlin
 @RegisterAction("customActionAndroid")
