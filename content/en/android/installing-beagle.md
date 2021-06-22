@@ -5,7 +5,7 @@ description: In this section, you'll learn how to create an Android project with
 ---
 **Topics covered**
 - Create an Android project from scratch
-- Add Beagle on your project (can be in a existing project)
+- Add Beagle on your project (can be in an existing project)
 - Configure Beagle
 - Possible customizations
 
