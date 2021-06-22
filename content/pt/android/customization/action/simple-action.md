@@ -25,10 +25,10 @@ Veja as ações padrões do Beagle na seção [**tipos de ações.**]({{< ref pa
 
 Para criar sua ação personalizada siga os seguintes os passos:
 
-1. Criar uma classe anotada com `@RegisterAction`, e implemente a interface `Action`;
-2. Colocar o nome da ação por parâmetro da annotation para evitar possíveis problemas com o proguard
-3. Depois disso, a interface solicitará que o método `execute` seja implementado;
-4. Agora, declare o resultado da `action`.
+Passo 1. Criar uma classe anotada com `@RegisterAction`, e implementar a interface `Action`;
+Passo 2. Colocar o nome da ação por parâmetro da annotation para evitar possíveis problemas com o Proguard;
+Passo 3. Depois disso, a interface solicitará que o método `execute` seja implementado;
+Passo 4. Agora, declare o resultado da `action`.
 
 O atributo  `value`  é um exemplo de parâmetro que pode ser declarado no construtor dessa classe, você pode usar quantos precisar. O exemplo a seguir mostra uma ação com **Toast** recebendo um texto como parâmetro:
 
