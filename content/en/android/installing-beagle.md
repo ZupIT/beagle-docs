@@ -4,7 +4,7 @@ weight: 120
 description: In this section, you'll learn how to create an Android project with Beagle
 ---
 **Topics covered**
-- Create a Android project from scratch
+- Create an Android project from scratch
 - Add Beagle on your project (can be in a existing project)
 - Configure Beagle
 - Possible customizations
