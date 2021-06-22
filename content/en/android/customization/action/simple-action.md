@@ -46,11 +46,11 @@ data class CustomActionAndroid(
 
 ## How to register your action
 
-Have two ways to register your action
+There are two ways to register your action, check them below: 
 
  - Using Annotation Processor:
 
-    For this, annotate your action class with `@RegisterAction("className")` wher className is your class name
+    For this, annotate your action class with `@RegisterAction("className")` where className is your class name.
 
  - Without the Annotation Processor
 
