@@ -97,7 +97,7 @@ Insert Beagle's release version to replace ${beagle.version}`, this is necessary
 For example: undefined-`ext.beagle.version = "1.8.0"`
 
 {{% alert color="warning" %}}
-Remember to always check if you're using the latest version of Beagle. To see this information, you just have to pass your mouse above the version number. After that, sync your machine.
+Remember to always check if you're using the latest version of Beagle. To see this information, you just have to pass your cursor above the version number. After that, sync your project.
 {{% /alert %}}
 
 {{% alert color="warning" %}}
