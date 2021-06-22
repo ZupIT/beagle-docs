@@ -186,7 +186,7 @@ To do server-driven requisitons to a backend it's mandatory to customize the net
 
 ## **Other Customizations**
  * **Action:** You can create custom actions to be executed by your widgets according to the user interaction.
- * **Navigation Animation:** You can customize Beagle screen navigation animations.
+ * **Navigation Animation:** You can customize the enter and exit animations on Beagle navigation.
  * **Beagle Activity:** You can customize the activity that will be displayed when a server-driven screen was called.
  * **Network Client:** You can customize the network client to configure in a way Beagle will make requests.
  * **Cache:** You can customize the cache to save server-driven screens.
