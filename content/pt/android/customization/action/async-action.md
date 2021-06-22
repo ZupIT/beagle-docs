@@ -13,10 +13,10 @@ description: Criando uma ação customizada assíncrona
 
  ## Como criar ações assíncronas
 
-Para criar uma ação customizada no Beagle cuja execução seja assíncrona como o consumo de uma API ou acesso a um banco de dados, basta criar uma `action` normalmente como o exemplo anterior detalhou e implementar a interface `AsyncAction`.
-
-Com a action criada, basta vincular a interface `AsyncAction` e delegar sua implementação para a classe `AsyncActionImpl` que o Beagle já fornece.
-
+Para criar uma ação customizada no Beagle cuja execução seja assíncrona como o consumo de uma API ou acesso a um banco de dados, siga os passos abaixo:
+**Passo 1:** Criar uma `action` normalmente como no exemplo anterior;
+**Passo 2:**  Implementar a interface `AsyncAction`;
+**Passo 3:** Vincular a interface `AsyncAction` e delegar sua implementação para a classe `AsyncActionImpl` que o Beagle já fornece.
 {{% alert color="info" %}}
 Recomendamos o uso dessa classe, pois ela implementa os `onActionStarted` e `onActionFinished` expondo seu estado de forma reativa e padronizado no framework.
 {{% /alert %}}
