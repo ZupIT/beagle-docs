@@ -32,7 +32,7 @@ data class CustomActionAndroid(
 }
 ```
 
-Agora, com a action pronta para executar de forma assincrona, temos que **OBRIGATORIAMENTE** notificar quando sua execução está concluída através do método `onActionFinished`.
+**Passo 4:** Agora, com a action pronta para executar de forma assíncrona, você precisa **OBRIGATORIAMENTE** notificar quando sua execução está concluída através do método `onActionFinished`.
 
 ```kotlin
 @RegisterAction("customActionAndroid")
