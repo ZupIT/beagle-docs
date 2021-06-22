@@ -78,7 +78,7 @@ struct CustomAction: Action {
 
 É obrigatório registrar ações no Beagle. Dentro do arquivo de configuração do beagle utilize o dependencies para registar.
 
-{{% alert color="info" %}} Para saber mais sobre o dependencies. [Beagle Dependencies]({{< ref path="/ios/customization/beagles-dependencies" lang="pt" >}}). {{% /alert %}}
+{{% alert color="info" %}} Para saber mais sobre o dependencies. [Beagle Dependencies]({{< ref path="" lang="pt" >}}). {{% /alert %}}
 
 O método register possui dois construtores, o primeiro passando apenas o `action` e segundo recebendo o `action` e `named`.
 

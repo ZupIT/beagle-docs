@@ -78,7 +78,7 @@ struct CustomAction: Action {
 
 It is mandatory to register actions on Beagle. Inside the beagle config file use dependencies to register.
 
-{{% alert color="info" %}} To learn more about dependencies. [Beagle Dependencies]({{< ref path="/ios/customization/beagles-dependencies" lang="en" >}}). {{% /alert %}}
+{{% alert color="info" %}} To learn more about dependencies. [Beagle Dependencies]({{< ref path="" lang="en" >}}). {{% /alert %}}
 
 The register method has two constructors, the first passing just the `action` and the second receiving the `action` and `named`.
 
