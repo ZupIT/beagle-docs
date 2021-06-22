@@ -21,12 +21,13 @@ description: Creating and executing a custom action
 
 To create your custom action, follow the next steps:
 
-1. Create an annotated class with `@RegisterAction` that implements an `Action` interface;
-2. Put the action name by annotation parameter to avoid possible problems with proguard
-3. After that, the interface will request to implement the `execute` method;
-4. Now, declare the `action` result.
+Step 1. Create an annotated class with `@RegisterAction` that implements an `Action` interface;
+Step 2. Put the action name by annotation parameter to avoid problems with Proguard;
+Step 3. After that, the interface will request to implement the `execute` method;
+Step 4. Now, declare the `action` result.
 
-The `value` attribute is a parameter example that can be declared in this class constructor. The following example shows an action with **Toast** receiving a text with a parameter: 
+The `value` attribute is a parameter example that can be declared in this class constructor. 
+The following example shows an action with **Toast** receiving a text with a parameter: 
 
 
 ```kotlin
