@@ -18,5 +18,5 @@ Beagle already has some predefined actions, however it is possible to create cus
 
 
 {{% alert color="danger" %}}
-It is **mandatory** to add the `@Transient` tag for **all attributes** present in the classes that will represent the actions so that they are not taken into account in the component serialization and deserialization.
+It is **mandatory** to add the `@Transient` tag for **all attributes** in the classes that will represent the actions so that they are not taken into account in the component serialization and deserialization.
 {{% /alert %}}
