@@ -35,7 +35,7 @@ struct CustomAction: AsyncAction {
     }
 ```
 
-Agora, com a action pronta para executar de forma assincrona, temos que **OBRIGATORIAMENTE** notificar quando sua execução está concluída execultando a ação `onFinish`.
+Agora, com a action pronta para executar de forma assíncrona, temos que **OBRIGATORIAMENTE** notificar quando sua execução está concluída executando a ação `onFinish`.
 
 ```swift
     controller.execute(actions: self.onFinish, origin: origin)
