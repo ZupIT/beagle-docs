@@ -17,7 +17,7 @@ description: Criando e executando uma ação customizada
 
 ### **Passo 1: O que é uma ação?** 
 
-No Beagle, uma ação lida com os comportamentos (funções), que serão executadas em sua aplicação assim que um determinado evento for disparado. Essas ações podem ser padrão do próprio Beagle ou customizadas.
+No Beagle, uma ação lida com os comportamentos (funções) que serão executadas em sua aplicação assim que um determinado evento for disparado. Essas ações podem ser padrão do próprio Beagle ou customizadas.
 
 [**Tipos de ações do Beagle**]({{< ref path="/api/actions/overview#tipos-de-ações" lang="pt">}})
 
