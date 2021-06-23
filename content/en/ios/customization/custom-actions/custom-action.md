@@ -9,7 +9,7 @@ description: Creating and running a custom action
 **Topics covered:**
 - What is an action?
 - How to create a custom action
-- How to Register an Action.
+- How to Register an Action
 - How to use an action?
  
 **Requirements:**
