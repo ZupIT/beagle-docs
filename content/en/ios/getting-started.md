@@ -6,7 +6,7 @@ description: In this section, you'll learn how to create an iOS project with Bea
 
 **Topics covered**
 
-* Create an iOS project from scratch
+* Creating an iOS project from scratch
 * Adding Beagle to your project (works with existing projects)
 * Configuring Beagle
 * Other customizations
@@ -19,7 +19,7 @@ description: In this section, you'll learn how to create an iOS project with Bea
 * Swift 5.0+
 
 
-## Starting an iOS project
+## Creating an iOS project from scratch
 
 <br>
 
