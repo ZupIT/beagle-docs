@@ -23,7 +23,7 @@ By using Beagle, developers can:
 
 ## How does Beagle work?
 
-The best way to understand how Beagle works is to see it in action. Here, we will show you a simple screen declared via Beagle containing just texts, images, and some layout and style configurations. At the end of this section, you will be familiar with Beagle's building blocks and most common features.
+The best way to understand how Beagle works is to see it in action. Here, we will show you a simple screen declared via Beagle, containing just texts, images, and some style configurations. At the end of this section, you will be familiar with Beagle's building blocks and most common features.
 
 <!-- json-playground:overview-simple-example.json
 {
@@ -92,7 +92,7 @@ Also, you can see which frontend platforms we support [here](#platforms-and-vers
 
 ### Components
 
-Now, let's take a closer look inside this JSON, so you can better understand Beagle's capabilites. The first thing to notice is this structure:
+Now, let's take a closer look inside that JSON, so you can better understand Beagle's capabilities. The first thing to notice is its structure:
 
 ```json
 {
@@ -102,11 +102,11 @@ Now, let's take a closer look inside this JSON, so you can better understand Bea
 }
 ```
 
-This is what we call a **Component**, and you can ensure that due to the attribute `_beagleComponent_`. Beagle comes with a bunch of useful components (you can navigate through them later [here]({{< ref path="api/components/_index.md" >}})), and you can also define your own components, which we call **Custom Components**, but that's a later topic. This one is a basic and important component named [Container]({{< ref path="api/components/layout/container.md" >}}), it allows you to *group together* those components inside attribute `children`.
+This is what we call a **Component**, and you can ensure that due to the attribute `_beagleComponent_`. Beagle comes with a bunch of useful components (you can navigate through them later [here]({{< ref path="api/components/_index.md" >}})), and you can also define your own components, which we call **Custom Components**, but that will be discussed later. This one is a basic and important component named [Container]({{< ref path="api/components/layout/container.md" >}}), and it allows you to *group together* `children` components.
 
 There are other components with the *children* attribute (or sometimes just *child*) like [Screen]({{< ref path="api/screen/_index.md" >}}) and [ListView]({{< ref path="api/components/layout/listview.md" >}}), and they are usually used to **compose view hierarchies**. In this example, we have 3 other components inside *Container*: [Text]({{< ref path="api/components/ui/text.md" >}}), [Image]({{< ref path="api/components/ui/image/_index.md" >}}), and [Button]({{< ref path="api/components/ui/button.md" >}}). Each one have different attributes you can use to customize their rendering, and you can see all these attributes in their documentation.
 
-The *Image* component, for example, has this attribute named `path` that can receive `remote` or `local` paths to the image data. Here we use a `remote` image by providing an `url` which Beagle will use to request the image when the component gets rendered.
+The *Image* component, for example, has this attribute named `path` that can receive `remote` or `local` paths to the image data. Here we use a `remote` image by providing a `url` which Beagle will use to request the image when the component gets rendered.
 
 ```json
 {
@@ -119,11 +119,11 @@ The *Image* component, for example, has this attribute named `path` that can rec
 }
 ```
 
-> You can have full control on the network request triggered by this remote image, you just need to configure your own Network Layer as a Beagle Dependency. Beagle have many configurable pieces like this, you can see more in [Customization]({{< ref path="resources/customization/_index.md" >}}).
+> You can have full control on the network request triggered by this remote image, you just need to configure your own Network Layer as a Beagle Dependency. Beagle have many configurable fragments like that and you can see more in [Customization]({{< ref path="resources/customization/_index.md" >}}).
 
 ### Styling
 
-Finally, let's take a closer look into the `style` attribute, which describes how to position and layout components and their children. Most of components have this attribute, and it's responsible for an important Beagle feature: **developers have control *through backend* on UI positioning**. You can see this power by chaging the `flexDirection` attribute to `ROW` inside the playground, and you will see the same views positioned horizontally. In a real application, you could deploy this exact change in your backend, and they would be *immediately* reflected in your frontend – even on mobile platforms, without needing mobile stores update.
+Finally, let's take a closer look into the `style` attribute, which describes how to position and layout components and their children. Most components have this attribute, and it's responsible for an important Beagle feature: **developers have control *through backend* on UI positioning**. You can experience that by chaging the `flexDirection` attribute to `ROW` in this page's playground, and you will see the same views positioned horizontally. In a real application, you could deploy this exact change in your backend, and they would be *immediately* reflected in your frontend – even on mobile platforms, without needing mobile stores update.
 
 > Many tools built in-house for Server Driven UI don't allow this kind of power over UI positioning, and this come out of the box with Beagle.
 
@@ -152,7 +152,7 @@ In our *Container*, we are using 3 styling attributes: `flex`, `size`, and `back
 
 The `flex` attribute is pretty important because it allows you to **use the same Layout Engine on different platforms**. Since all your platforms will be positioning views according to the same rules, and you don't need to "duplicate" the same layout logic for each platform, this can be a huge win for your team.
 
-If you are familiar with web development, you probably already know how to use `flex` because it's used as a cross-platform [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp). To accomplish this behind the scenes, we leverage a library called [**Yoga**](https://yogalayout.com), a cross-platform C++ library developed by Facebook and used in other projects (e.g: React Native). If you are not familiar with Flexbox, it takes some time to get used to it, but we bet you will really enjoy it due to its simplicity, power, and universality. [Our documentation]({{< ref path="resources/components-positioning/_index.md" >}}), and [Yoga's own documentation](https://yogalayout.com/docs) can help you to quickly understand it.
+If you are familiar with web development, you probably already know how to use `flex` because it's used as a cross-platform [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp). To accomplish this behind the scenes, we leverage a library called [**Yoga**](https://yogalayout.com), which is a cross-platform C++ library developed by Facebook and used in other projects (e.g: React Native). If you are not familiar with Flexbox, it takes some time to get used to it, but we bet you will really enjoy it due to its simplicity, power, and flexibility. [Our documentation]({{< ref path="resources/components-positioning/_index.md" >}}), and [Yoga's own documentation](https://yogalayout.com/docs) can help you to quickly understand it.
 
 ### Overview of Beagle's architecture
 
