@@ -102,7 +102,7 @@ After registering your customization component, you can use it via server-driven
 
 ### **Step 3: How to use an action**
 
-To use the beagle's actions, the component you are going to use just has a parameter of the type `Action`.
+To use the Beagle's actions, the component you are going to use just needs a parameter of the type `Action`.
 
 Below is an example of how to use it on a button that performs the custom action on the click event:
 
