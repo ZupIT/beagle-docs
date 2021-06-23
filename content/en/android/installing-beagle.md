@@ -31,7 +31,7 @@ After you have installed Android Studio, follow the steps below:
 
 **Step 3️: On this page, there is some important information:**
 
-* Inform your project's name. On this example, we'll call `BeagleApp`.
+* Inform your project's name. On this example, we'll call it `BeagleApp`.
 * Choose which language you'll use. For Beagle, you should go with `Kotlin`.
 * Choose **SDK minimum 19 or above**, because a lower SDK won't be compatible. 
 * Define a **package** and a **Save location** according to your preference. 
