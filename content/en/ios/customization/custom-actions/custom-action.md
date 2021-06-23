@@ -80,7 +80,7 @@ It is mandatory to register actions on Beagle. Inside the beagle config file use
 
 {{% alert color="info" %}} To learn more about dependencies. [Beagle Dependencies]({{< ref path="" lang="en" >}}). {{% /alert %}}
 
-The register method has two constructors, the first passing just the `action` and the second receiving the `action` and `named`.
+The register method has two constructors; the first receives just the `action` param and the second receives the `action` and `named` params.
 
 **action:** Pass the struct of the action.
 
