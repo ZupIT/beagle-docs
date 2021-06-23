@@ -9,7 +9,7 @@ description: Criando e executando uma ação customizada
 **Tópicos abordados:**
 - O que é uma ação?
 - Como criar uma ação customizada
-- Como Registrar uma ação.
+- Como registrar uma ação.
 - Como usar um ação?
  
 **Requisitos:**
@@ -114,4 +114,3 @@ Button(
     ]
 )
 ```
-
