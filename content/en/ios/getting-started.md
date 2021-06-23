@@ -6,7 +6,7 @@ description: In this section, you'll learn how to create an iOS project with Bea
 
 **Topics covered**
 
-* Create an iOS project from scratch
+* Creating an iOS project from scratch
 * Adding Beagle to your project (works with existing projects)
 * Configuring Beagle
 * Other customizations
@@ -19,7 +19,7 @@ description: In this section, you'll learn how to create an iOS project with Bea
 * Swift 5.0+
 
 
-## Starting an iOS project
+## Creating an iOS project from scratch
 
 <br>
 
@@ -68,7 +68,7 @@ You've successfully installed Beagle on your project using SPM!
 
 <br>
 
-**Step1 :** Add Beagle to dependencies choosing the version that you want, like 1.8.0 for instance.
+**Step 1:** Add Beagle to dependencies choosing the version that you want, like 1.8.0 for instance.
 ```swift
 dependencies: [
   .package(name: "Beagle", url: "https://github.com/ZupIT/beagle.git", from: "${beagle.version}"}}),
