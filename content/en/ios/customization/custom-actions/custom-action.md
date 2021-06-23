@@ -19,7 +19,7 @@ description: Creating and running a custom action
 
 In Beagle, an action deals with the behaviors (functions) that will be executed in your application as soon as a certain event is triggered. These actions can be Beagle's own standard or custom actions.
 
-To see standard beagle actions [**Action types.**]({{< ref path="/api/actions/overview#action-types" lang="en">}})
+Standard beagle actions: [**Action types.**]({{< ref path="/api/actions/overview#action-types" lang="en">}})
 
 
 ### **Step 2: How to create a custom action:**
