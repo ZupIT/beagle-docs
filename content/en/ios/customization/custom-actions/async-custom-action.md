@@ -56,7 +56,7 @@ struct CustomAction: AsyncAction {
     }
 ```
 
-Your action is now configured to perform any work asynchronously!
+Your action is now configured to perform any tasks asynchronously!
 
 {{% alert color="success" %}}
 To learn how to register and use this new action and see step 3 and 4 of the example [**Custom Action**]({{< ref path="/ios/customization/custom-actions/custom-action" lang="en" >}}).
