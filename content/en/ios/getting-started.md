@@ -216,7 +216,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 ```
 
 {{% alert color="warning" %}}
-It's very important to stand out that Beagle does not provide default Network, Cache and Log layers. But without a Network layer it is impossible to make requisitions for JSON's.
+Important: Beagle does not provide a default Network, Cache and Log layers. But without a Network layer it is impossible to make requisitions for JSON's.
 
 So it's mandatory to create a Network layer so Beagle can comunicate with a BFF through requisitions.
 {{% /alert %}}
