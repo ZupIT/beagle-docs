@@ -18,7 +18,7 @@ Margin aplica um espaçamento no elemento filho, e tem os seguintes atributos: *
 
 Define um espaçamento em todos os lados do elemento:
 
-![](https://lh5.googleusercontent.com/6fRwbDv4w30S7I0MJDV9HIe2CQMp9XoOl_VcHBSQgTvCQGTp7JlTnMfp_VS6kN7IlHgZs-VfmwAdElJy6GZl8Vc485Rllr-QQbi5kqZpitw3y_qLxWzL_Z9_DUXaZ_Vw5U3R8_1u)
+{{< figure src="/shared/flex/margin-all.png" width="150">}}
 
 {{< tabs id="T41" >}}
 {{% tab name="Kotlin" %}}
@@ -75,7 +75,7 @@ private fun screen() :Widget{
 
 Define um espaçamento na parte inferior do elemento:
 
-![](https://lh5.googleusercontent.com/iDr2v9t2422LXNYxCwy6AkyR7E0KN4Sz8WTOiYF0TPpKSBwbBftW6xGbXLrxrg3Pq7_IIOvmYkkkt3w2CMtgL2sGoK2xD40bNbY1HcBObYlalxeSEYLg9VhRwGWG8ECPj-_Noe33)
+{{< figure src="/shared/flex/margin-bottom.png" width="150">}}
 
 {{< tabs id="T42" >}}
 {{% tab name="Kotlin" %}}
@@ -134,7 +134,7 @@ private fun screen() :Widget{
 
 Define um espaçamento no lado esquerdo do elemento:
 
-![](https://lh6.googleusercontent.com/m69w8vx_tTvWXo-uuZyBqTQV6cpKbeZb8bPnIN_nq8RP1GWNk-bog39tKb7-ZrZ984nkxB9O44gJ6DPqMrBk4RzREiTXM5Sm3AAIu4CX7hvKXTChFVBxFzPybw1qVN6fC0M-uJ_e)
+{{< figure src="/shared/flex/margin-left-start.png" width="150">}}
 
 {{< tabs id="T43" >}}
 {{% tab name="Kotlin" %}}
@@ -193,7 +193,7 @@ private fun screen() :Widget{
 
 Define um espaçamento no lado direito do elemento:
 
-![](https://lh4.googleusercontent.com/PJI8H4OiFuatQ-wINUiMXbvO3-n8_c159_9XnfyNvdFkeO8xmS31og6_JBhoXJEC2ZQQaaMMeJXQxueznoLwWSOg7V1ZcCjVhXVydoKG9jzXRYmG18Ll_7jDEUy1jExBYK3NQLT9)
+{{< figure src="/shared/flex/margin-right-end.png" width="150">}}
 
 {{< tabs id="T44" >}}
 {{% tab name="Kotlin" %}}
@@ -252,7 +252,7 @@ private fun screen() :Widget{
 
 Define um espaçamento na parte superior do elemento:
 
-![](https://lh3.googleusercontent.com/eELU1dNIiBHmZSSQfm2Vt_lIDF3oZPP-FAKngOD_TwZjLfEq3-ZCHUZGD17I3n1uX-wd4DBhOhjgB60Ijo3Q0aeVZagXbQbgFhhlAq9ltxh2t2UcHvBejsQPbM1FD0SbAmU5QC5z)
+{{< figure src="/shared/flex/margin-top.png" width="150">}}
 
 {{< tabs id="T45" >}}
 {{% tab name="Kotlin" %}}
@@ -311,7 +311,7 @@ private func screen() -> Screen {
 
 Define um espaçamento no eixo horizontal do elemento:
 
-![](https://lh5.googleusercontent.com/cAeAi8hRnn11i0bA6JgUuabk-FiKlFpPJdaXha5YNaeNe8kJb_n5WTbUCP0pf_wYUi040SxZKry2_UmpRRW4wMjrokIoPG9qCbVXkoM43jRVK4Mcq6LTnMQ7ninnE_ogkQ2dlfh2)
+{{< figure src="/shared/flex/margin-horizontal.png" width="150">}}
 
 {{< tabs id="T46" >}}
 {{% tab name="Kotlin" %}}
@@ -370,7 +370,7 @@ private func screen() -> Screen {
 
 Define um espaçamento no eixo vertical do elemento:
 
-![](https://lh3.googleusercontent.com/uriPzx5oSWaqdXXs9Hdao2lw6oe-MH6l9IbiSp1NyZh0PNUFgj44D2dmtDx2FgdshhlYPLnAf2Vf1XgKIr5VYd55ya2YPNmrV_z6WD1-eJvnu_5znR-LCfyICBW1Vq_16Y6p8cqm)
+{{< figure src="/shared/flex/margin-vertical.png" width="150">}}
 
 {{< tabs id="T47" >}}
 {{% tab name="Kotlin" %}}

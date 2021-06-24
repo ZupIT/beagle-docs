@@ -14,7 +14,7 @@ Esta propriedade manipula toda parte de tamanho do item em tela. O Size conta co
 
 **`width, heigth, maxWidth,maxHeight, minWidth, minHeigh, aspectRatio`**
 
-![](https://lh3.googleusercontent.com/3aoRDnlMNqdnoYlmx60A--Y_Q6I3tGqCZt6CiQDJP53xu4TpwIL4skCdT_tjTTspNjuftf5ikAyKiLxlm4Tcll1kIQ_LhMd9y-PfBKcd69zgPp2MyMPJBHP5sUyQDXmPFTZcGqHM)
+{{< figure src="/shared/flex/heigth-width.png" width="150">}}
 
 ## **Atributos:**
 
