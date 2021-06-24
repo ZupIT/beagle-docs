@@ -75,6 +75,17 @@ The best way to understand how Beagle works is to see it in action. Here, we wil
           }
         }
       }
+    },
+    {
+      "_beagleComponent_": "beagle:button",
+      "text": "Click here to show an Alert",
+      "onPress": [
+        {
+          "_beagleAction_": "beagle:alert",
+          "title": "My Title",
+          "message": "Alert message"
+        }
+      ]
     }
   ]
 }
