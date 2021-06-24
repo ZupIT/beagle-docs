@@ -162,7 +162,7 @@ class BeagleConfig {
 
 **Step 2:** On this function, create a constant called `dependencies` that must be a `BeagleDependencies`.
 
-You’ll attribute to this constant some project’s configurations like for example, the base URL that will be combined with a relative URL to bring the JSON that will describe your server-driven screen.
+You’ll attribute to this constant some project’s configurations like for example, the base URL that will be combined with a relative URL to bring the JSON that will load your server-driven screen.
 
 To configure it, use the example below:
 
