@@ -14,7 +14,7 @@ Size has the following atributes: **`width, heigth, maxWidth,maxHeight, minWidth
 
 {{< figure src="/shared/flex/heigth-width.png" width="150">}} 
 
-## **Atributes:**
+## **Attributes:**
 
 ### **Width**
 

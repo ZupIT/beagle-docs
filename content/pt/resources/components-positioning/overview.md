@@ -26,7 +26,7 @@ O [**Yoga**](https://yogalayout.com/) é um framework desenvolvido pelo Facebook
 
 Flexbox é um conceito do CSS que é utilizado para posicionar elementos em contêineres dinamicamente para que, independentemente das dimensões de seu aplicativo, você possa manter um layout flexível.
 
-Seguem alguns conceitos-chave sobre o Flexbox:
+Veja abaixo alguns conceitos-chave sobre o Flexbox:
 
 - **Main Axis:** 
 - **Cross Axis:** 
@@ -48,16 +48,16 @@ Se esta propriedade for definida como:
 | {{< figure src="/shared/flex/row.png" width="150">}} | {{< figure src="/shared/flex/column.png" width="150">}} |
 
 {{% alert color="info" %}}
-Important: O valor default do Beagle é `column` ou seja, os elementos serão dispostos em colunas por padrão.
+Important: O valor default do Beagle é `column`, ou seja, os elementos serão dispostos em colunas por padrão.
 {{% /alert %}}
 
 ## Propriedades
 
-Existem algumas propriedades que o Yoga Layout pode usar para inserir, mover ou excluir componentes. A seguir temos algumas delas:
+O Yoga Layout pode usar alguams propriedades para inserir, mover ou excluir componentes. Veja a seguir algumas delas:
 
 ### **UnitValue**
 
-Os atributos **Base, Size, Margin, Padding e Position** recebem um valo(`UnitValue`) do tipo `Double` e um `UnitType`, do tipo `enum` com as seguintes opções:
+Os atributos **Base, Size, Margin, Padding e Position** recebem um valor (`UnitValue`) do tipo `Double` e um `UnitType` do tipo `enum`, ambos com as opções:
 
 | **UnitType** | Definição                                                        |
 | :----------- | :--------------------------------------------------------------- |
@@ -66,7 +66,7 @@ Os atributos **Base, Size, Margin, Padding e Position** recebem um valo(`UnitVal
 | **AUTO**     | Segue o valor do pai. Exceto quando possui tamanho próprio       |
 
 {{% alert color="warning" %}}
-**Importante!** Os atributos acima quando referenciados em um projeto WEB tem como opção `default is` o `UnitType.AUTO`.
+ Quando os atributos acima são referenciados em um projeto WEB, a opção `default is` é o `UnitType.AUTO`.
 {{% /alert %}}
 
 O `UnitType.AUTO` pode ser usado no iOS, Android e Web de acordo com a tabela abaixo:

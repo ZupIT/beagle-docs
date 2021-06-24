@@ -8,12 +8,12 @@ description: "Nesta seção, você encontra mais informações sobre a proprieda
 
 ## Position
 
-Esta propriedade muda a posição de um elemento em tela adicionando espaço aos lados:**`top`, `right`, `bottom`, `left`, `vertical`, `horizontal` e `all`** desse elemento. Adiciona um valor a esses atributos rearranja o elemento em questão sem modificar o posicionamento de outros elementos na tela, quando um posicionamento do tipo relativo é definido. 
+Esta propriedade muda a posição de um elemento na tela e adiciona espaços ao lado de cada um deles como:**`top`, `right`, `bottom`, `left`, `vertical`, `horizontal` e `all`**. Quando um posicionamento do tipo relativo é definido, a propriedade também adiciona um valor a esses atributos, rearranja o elemento sem modificar o posicionamento de outros elementos na tela. 
 
 O elemento sendo posicionado pode ter 2 tipos de posicionamento (`Position type`)
 
 1. **`Relative`**: O elemento se desloca e os outros elementos não se movem.
-2. **`Absolute`**: O elemento de desloca da mesma forma que no tipo ´Relative´ mas os outros elementos se rearrajam na tela passando a ignorar o elemento deslocado.
+2. **`Absolute`**: O elemento de desloca como o tipo ´Relative´, mas os outros elementos se rearrajam na tela e ignoram o elemento deslocado.
 
 ## **Propriedades**
 

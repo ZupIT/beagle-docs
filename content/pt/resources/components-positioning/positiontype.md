@@ -16,9 +16,9 @@ A propriedade `relative` posiciona um elemento mantendo a relação com os demai
 
 ### **Absolute**
 
-A propriedade `absolute` posiciona um elemento da mesma que o `relative`, no entanto faz com que esse elemento "escapa" o fluxo normal do layout, de forma que os outros elementos se reposicionaram ignorando-o
+A propriedade `absolute` posiciona um elemento da mesma forma que o `relative`, no entanto a diferença é que ela faz o elemento "escapar" do fluxo normal do layout, e os outros elementos se reposicionam, ignorando-o.
 
-Abaixo temos um exemplo de como os elementos são posicionados
+Veja abaixo um exemplo de como os elementos são posicionados: 
 
 | **Relative** | **Absolute** |
 | :-----------: | :----------------------------------------------------------: |
