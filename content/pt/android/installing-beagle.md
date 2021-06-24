@@ -51,6 +51,8 @@ Para adicionar o Beagle em seu projeto Android e utilizar esse framework, siga o
 
 **Passo 1: Configurar as dependências**
 
+Essa configuração é feita no `build.gradle`
+
 Você precisa ajustar as dependências do seu repositório para receber o Beagle. Para isso, utilize as configuração abaixo para fazer o **download da biblioteca**.
 
 ```kotlin
@@ -139,7 +141,7 @@ Cuidado ao fazer a configuração das classes, porque se você anotá-las com `B
 
 **Passo 2: Criar o BeagleSetup**
 
-Após ter criado a classe mostrada no passo anterior e anotado com o @BeagleComponent, basta você buildar seu projeto (para isso, aperte CTRL + F9) que o Beagle irá criar automaticamente uma classe de `BeagleSetup` class, como mostra a figura abaixo:
+Após ter criado a classe mostrada no passo anterior e anotado com o @BeagleComponent, basta você buildar seu projeto (para isso, acesse o menu Build > Make Project) que o Beagle irá criar automaticamente uma classe de `BeagleSetup` class, como mostra a figura abaixo:
 
 {{< figure src="/shared/beaglesetup.png">}}
 
@@ -173,10 +175,13 @@ Atualize novamente o seu `AndroidManifest.xml` e defina a `AppApplication` que f
 
     <application
         android:name=".AppApplication"
-
+        android:usesCleartextTraffic="true"
         ..
 ```
 
+{{%alert color="warning" %}}
+  A propriedade `android:usesCleartextTraffic` do application é ativado para permitir fazer requisições locais, pois ele permite realizar tráfego de rede em texto simples, como HTTP
+{{% /alert%}}
 {{% alert color="warning" %}}
 Para fazer requisições server-driven a um backend é necessário configurar uma camada de rede. Para saber como, clique aqui!
 {{% /alert%}}

@@ -50,6 +50,8 @@ Once the initialization is done, you will see this page:
 
 **Step 1: Configure the dependencies**
 
+This configuration is perfomed on `build.gradle`
+
 You must add `mavenCentral()` in the *allprojects repository's dependencies* to set the resource for Beagle. To do so, use the following configuration to **download Beagle's library.**
 
 ```kotlin
@@ -139,7 +141,7 @@ Make sure to note your class configuration with `BeagleComponent`, because Beagl
 
 **Step 2: Create a BeagleSetup**
 
-After you have created the class shown in the previous step and annotated with @BeagleComponent, just build your project (press CTRL + F9) and Beagle will automatically create a BeagleSetup class, see the image below:
+After you have created the class shown in the previous step and annotated with @BeagleComponent, just build your project (access the menu Build > Make Project) and Beagle will automatically create a BeagleSetup class, see the image below:
 
 {{< figure src="/shared/beaglesetup.png">}}
 
@@ -173,12 +175,14 @@ Finally, you have to update your `AndroidManifest.xml` again and define the `App
 
     <application
         android:name=".AppApplication"
+        android:usesCleartextTraffic="true"
 
         ..
 ```
 
-Now you're ready to start using Beagle! To verify if the configuration is correct, you can simulate a Server-Driven screen to make the following test.
-
+{{%alert color="warning" %}}
+  The `android:usesCleartextTraffic="true"` property of the application is enabled do allow local requests, because it allows to perform network traffic in plain text, such as HTTP
+{{% /alert%}}
 
 {{% alert color="warning" %}}
 To do server-driven requisitons to a backend it's mandatory to customize the network layer. To know how, click here!
