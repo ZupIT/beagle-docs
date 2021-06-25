@@ -84,7 +84,7 @@ The register method has two constructors; the first receives just the `action` p
 
 **action:** Pass the struct of the action.
 
-**named:** Parameter to set the action name. It is not mandatory to pass. One case is when the action name is registered differently than what you created in the backend. It will be used in deserializations to find your action.
+**named:** Parameter to set the action name. It is not mandatory to inform it, however, you might need it when the action name is registered differently than what you created in the backend. In this case, the parameter will be used in deserializations to find your action.
 
 Ways to Register
 
