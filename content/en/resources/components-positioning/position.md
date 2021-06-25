@@ -14,6 +14,7 @@ The element being positioned can have 2 positioning types:
 
 1. **`Relative`**: The element moves and other elements keeps their current positions on the screen.
 2. **`Absolute`**: The element moves exactly like the ´Relative´ one, however other elements rearrange themselves ignoring its position.
+
 ## **Propriedades**
 
 ### **All**

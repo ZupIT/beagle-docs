@@ -53,7 +53,7 @@ If it is defined as:
 
 ## Properties
 
-There are some properties Yoga Layout may use to insert, alter or delete components.
+There are some properties that Yoga Layout may use to insert, alter or delete components.
 
 ### **UnitValue**
 
