@@ -10,6 +10,6 @@ description: >-
 
 ## Introduction
 
-In Beagle, an action deals with the behaviors (functions) that will be executed in your application as soon as a certain event is triggered. These actions can be Beagle's own standard or custom actions.
+An action in Beagle is a function that will be executed in your application when a certain event is triggered. Beagle Actions can be either **default** or **custom**
 
 To see standard beagle actions [**Action types.**]({{< ref path="/api/actions/overview#action-types" lang="en">}})
