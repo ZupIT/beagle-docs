@@ -2,7 +2,7 @@
 title: Customization
 weight: 139
 description: >-
-  You will find here the main classes that are part of Beagle's framework for
+  This section lists the main classes that are part of Beagle's framework for iOS
   iOS.
 ---
 
