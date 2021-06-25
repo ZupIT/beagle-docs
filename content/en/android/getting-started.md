@@ -1,5 +1,5 @@
 ---
-title: Installing Beagle
+title: Getting Started
 weight: 120
 description: In this section, you'll learn how to create an Android project with Beagle
 ---
