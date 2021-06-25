@@ -6,12 +6,6 @@ description: This sections lists how to create and trigger a custom action
 
 ---
 
-**Topics covered:**
-- What is an action?
-- How to create a custom action
-- How to Register an Action
-- How to use an action?
- 
 **Requirements:**
  - Have a project already set up with Beagle.
 

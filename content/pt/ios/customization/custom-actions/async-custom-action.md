@@ -6,10 +6,6 @@ description: Criando uma ação customizada assíncrona
 
 ---
 
-**Tópicos abordados:**
-- Criar uma ação customizada assíncrona:
-
- 
 **Requisitos:**
  - Ter um projeto já configurado com o Beagle.
  - Ler o exemplo [**Ação Customizada**]({{< ref path="/ios/customization/custom-actions/custom-action" lang="pt" >}}).
@@ -41,7 +37,7 @@ Agora, com a action pronta para executar de forma assíncrona, temos que **OBRIG
     controller.execute(actions: self.onFinish, origin: origin)
 ```
 
-Veja no exemplo da Custom Action Assíncrona.
+Veja o exemplo abaixo:
 
 ```swift
 struct CustomAction: AsyncAction {

@@ -5,12 +5,6 @@ description: Criando e executando uma ação customizada
 ---
 
 ---
-
-**Tópicos abordados:**
-- O que é uma ação?
-- Como criar uma ação customizada
-- Como registrar uma ação.
-- Como usar um ação?
  
 **Requisitos:**
  - Ter um projeto já configurado com o Beagle.
