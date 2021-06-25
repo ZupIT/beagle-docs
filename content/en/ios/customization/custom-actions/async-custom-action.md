@@ -22,7 +22,7 @@ If you don't know what an action is [**What is an action**]({{< ref path="/ios/c
 
 To create a custom action in Beagle whose execution is asynchronous like consuming an API or accessing a database, just create an `action` normally like the example [**Custom Action**]({{< ref path="/ios/customization/custom-actions/custom-action" lang="en" >}}) and implement the `AsyncAction` interface.
 
-With the action created, just linking the `AsyncAction` interface will request that the method execute and the parameter onFinish be implemented.
+After creating an action, you must implement the `AsyncAction` interface. That will request that an execute method and the onFinish parameter are implemented.
 
 ```swift
 struct CustomAction: AsyncAction {
