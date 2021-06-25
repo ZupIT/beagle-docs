@@ -15,7 +15,7 @@ description: Criando uma ação customizada assíncrona
  - Ter passado pelo exemplo [**Ação Customizada**]({{< ref path="/ios/customization/custom-actions/custom-action" lang="pt" >}}).
 
 {{% alert color="warning" %}}
-Se não conhece o que é uma ação [**O que é uma ação?**]({{< ref path="/ios/customization/custom-actions/custom-action" lang="pt" >}}).
+[**O que é uma ação?**]({{< ref path="/ios/customization/custom-actions/custom-action" lang="pt" >}}).
 {{% /alert %}}
 
 ### Ação customizada assíncrona:
