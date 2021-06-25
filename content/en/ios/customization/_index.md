@@ -8,4 +8,4 @@ description: >-
 
 ---
 
-These are Beagle for iOS classes:
+These are the iOS classes for Beagle
