@@ -12,7 +12,7 @@ description: Criando uma ação customizada assíncrona
  
 **Requisitos:**
  - Ter um projeto já configurado com o Beagle.
- - Ter passado pelo exemplo [**Ação Customizada**]({{< ref path="/ios/customization/custom-actions/custom-action" lang="pt" >}}).
+ - Ler o exemplo [**Ação Customizada**]({{< ref path="/ios/customization/custom-actions/custom-action" lang="pt" >}}).
 
 {{% alert color="warning" %}}
 [**O que é uma ação?**]({{< ref path="/ios/customization/custom-actions/custom-action" lang="pt" >}}).
