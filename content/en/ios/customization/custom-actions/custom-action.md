@@ -1,7 +1,7 @@
 ---
 title: Custom Action
 weight: 2
-description: Creating and running a custom action
+description: This sections lists how to create and trigger a custom action
 ---
 
 ---
