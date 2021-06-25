@@ -41,7 +41,7 @@ Now, with the action ready to run asynchronously, we **MUST** notify when its ex
     controller.execute(actions: self.onFinish, origin: origin)
 ```
 
-See the Asynchronous Custom Action example.
+Here follows an Asynchronous Custom Action example:
 
 ```swift
 struct CustomAction: AsyncAction {
