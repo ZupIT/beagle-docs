@@ -20,7 +20,7 @@ Se não conhece o que é uma ação [**O que é uma ação?**]({{< ref path="/io
 
 ### Ação customizada assíncrona:
 
-Para criar uma ação customizada no Beagle cuja execução seja assíncrona como o consumo de uma API ou acesso a um banco de dados, basta criar uma `action` normalmente como o exemplo [**Ação Customizada**]({{< ref path="/ios/customization/custom-actions/custom-action" lang="pt" >}}) e implementar a interface `AsyncAction`.
+Para criar uma ação customizada no Beagle cuja execução seja assíncrona, como o consumo de uma API ou acesso a um banco de dados, basta criar uma `action` normalmente, como o exemplo [**Ação Customizada**]({{< ref path="/ios/customization/custom-actions/custom-action" lang="pt" >}}) e implementar a interface `AsyncAction`.
 
 Com a action criada, basta vincular a interface `AsyncAction` interface solicitará que o método execute e o parâmetro onFinish seja implementado.
 
