@@ -15,7 +15,7 @@ description: Creating an asynchronous custom action
  - Having passed by example [**Custom Action**]({{< ref path="/ios/customization/custom-actions/custom-action" lang="en" >}}).
 
 {{% alert color="warning" %}}
-If you don't know what an action is [**What is an action**]({{< ref path="/ios/customization/custom-actions/custom-action" lang="pt" >}}).
+If you don't know what an action is, check the [**What is an action**]({{< ref path="/ios/customization/custom-actions/custom-action" lang="pt" >}}) section.
 {{% /alert %}}
 
 ### Asynchronous custom action:
