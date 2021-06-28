@@ -196,17 +196,17 @@ Finally, let's talk about actions. They are a way to express dinamism inside Bea
 }
 ```
 
-The [Button component](api/components/ui/button.md) has an attribute named `onPress` that can receive a list of actions, which will be executed when the button gets pressed. Beagle already comes with some actions, you can see them all in the [Actions section](api/actions/_index.md). But it's also possible to create your own actions (a proccess similar to *Custom Components*), which we call [Custom Actions](resources/customization/_index.md).
+The [Button component]({{< ref path="api/components/ui/button.md" >}}) has an attribute named `onPress` that can receive a list of actions, which will be executed when the button gets pressed. Beagle already comes with some actions, you can see them all in the [Actions section]({{< ref path="api/actions/_index.md" >}}). But it's also possible to create your own actions (a proccess similar to *Custom Components*), which we call [Custom Actions]({{< ref path="resources/customization/_index.md" >}}).
 
-This example uses an [Alert action](api/actions/alert.md), which results in showing an alert component when someone taps the button. You can try it yourself in the *Playground*.
+This example uses an [Alert action]({{< ref path="api/actions/alert.md" >}}), which results in showing an alert component when someone taps the button. You can try it yourself in the *Playground*.
 
 Besides showing an alert, you could do other things like:
 
-- Navigate to another screen with a [Navigate action](api/actions/navigate/_index.md).
-- Send an http request with a [SendRequest action](api/actions/sendrequest.md).
-- Add new views in the current view hierarchy with a [AddChildren action](api/actions/addchildren.md).
+- Navigate to another screen with a [Navigate action]({{< ref path="api/actions/navigate/_index.md" >}}).
+- Send an http request with a [SendRequest action]({{< ref path="api/actions/sendrequest.md" >}}).
+- Add new views in the current view hierarchy with a [AddChildren action]({{< ref path="api/actions/addchildren.md" >}}).
 
-Also, actions are one of the building blocks of **making complex and dynamic screens**. You can see more about this topic in the ["How to make communication between components" section](tutorials/how-to-make-communication-between-components.md).
+Also, actions are one of the building blocks of **making complex and dynamic screens**. You can see more about this topic in the ["How to make communication between components" section]({{< ref path="tutorials/how-to-make-communication-between-components.md" >}}).
 
 ## Conclusion and next steps
 
@@ -214,11 +214,11 @@ After seeing the most essential parts of Beagle, you are now ready to dive into 
 
 - If you want to see a more complex example of an application that completely leverages Beagle, you can check [this repo](https://github.com/ZupIT/beagle-adoption-demo). It has a backend in Kotlin, and native mobile frontends in Android and iOS.
 
-- If you want to integrate Beagle in your existing application, you can follow the [installation guide](get-started/installing-beagle/_index.md) for each platform, and then check the [start using Beagle section](get-started/using-beagle/_index.md).
+- If you want to integrate Beagle in your existing application, you can follow the [installation guide]({{< ref path="get-started/installing-beagle/_index.md" >}}) for each platform, and then check the [start using Beagle section]({{< ref path="get-started/using-beagle/_index.md" >}}).
   
-- If you want to start a new project with Beagle, you can follow the ["creating a project from scratch" guide](get-started/creating-a-project-from-scratch/_index.md)
+- If you want to start a new project with Beagle, you can follow the ["creating a project from scratch" guide]({{< ref path="get-started/creating-a-project-from-scratch/_index.md" >}})
 
-- If you want to know more of a particular Beagle API, use the [API section](api/_index.md).
+- If you want to know more of a particular Beagle API, use the [API section]({{< ref path="api/_index.md" >}}).
 
 - If you are not sure how to find information about a specific context, use the **search bar on the top right corner** of the screen to search for words throughout this documentation.
 
