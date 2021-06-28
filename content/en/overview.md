@@ -180,7 +180,7 @@ The `flex` attribute allows you to **use the same Layout Engine on different pla
 
 ### Actions
 
-Finally, let's talk about actions. They are a way to express dinamism inside Beagle. In the example, there is an action inside a button:
+Finally, let's talk about Actions, a way to add *runtime dynamism* to a Beagle component. In the example, there is an action inside a button:
 
 ```json
 {
@@ -196,11 +196,11 @@ Finally, let's talk about actions. They are a way to express dinamism inside Bea
 }
 ```
 
-The [Button component]({{< ref path="api/components/ui/button.md" >}}) has an attribute named `onPress` that can receive a list of actions, which will be executed when the button gets pressed. Beagle already comes with some actions, you can see them all in the [Actions section]({{< ref path="api/actions/_index.md" >}}). But it's also possible to create your own actions (a proccess similar to *Custom Components*), which we call [Custom Actions]({{< ref path="resources/customization/_index.md" >}}).
+The [Button component]({{< ref path="api/components/ui/button.md" >}}) has an attribute named `onPress` that can receive a list of actions, which will only be executed when the button gets pressed. You can see all Beagle's default actions in the [Actions section]({{< ref path="api/actions/_index.md" >}}). But it's also possible to create your own actions (a proccess similar to *Custom Components*), which we call [Custom Actions]({{< ref path="resources/customization/_index.md" >}}).
 
-This example uses an [Alert action]({{< ref path="api/actions/alert.md" >}}), which results in showing an alert component when someone taps the button. You can try it yourself in the *Playground*.
+This example uses an [Alert action]({{< ref path="api/actions/alert.md" >}}), which results in showing an alert component when someone taps the button. You can tap and see it yourself in the *Playground*.
 
-Besides showing an alert, you could do other things like:
+Besides showing an alert, you could do other things with actions, for example:
 
 - Navigate to another screen with a [Navigate action]({{< ref path="api/actions/navigate/_index.md" >}}).
 - Send an http request with a [SendRequest action]({{< ref path="api/actions/sendrequest.md" >}}).
