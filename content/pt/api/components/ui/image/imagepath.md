@@ -18,7 +18,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo** | **Definição** |
 | :--- | :--- | :--- |
-| webUrl | String | Caminho absoluto ou relativo da imagem a ser baixada. |
+| url | String | Caminho absoluto ou relativo da imagem a ser baixada. |
 | mobileId | String | Identificador da imagem que foi previamente cadastrada nas plataformas mobile. |
 
 Irá referenciar uma imagem que já está nos assets locais.
@@ -56,7 +56,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 | **Atributos** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :--- | :--- |
-| remoteUrl | String |     ✓ | Caminho absoluto ou relativo da imagem a ser baixada. |
+| url | String |     ✓ | Caminho absoluto ou relativo da imagem a ser baixada. |
 | placeholder | [**ImagePath.Local**](#imagepathlocal) |  | É possível passar um asset local no aplicativo que será mostrado enquanto a URL remota é carregada. |
 
 Irá referenciar uma imagem que esteja hospedada em outro host ou relativo no próprio server.
