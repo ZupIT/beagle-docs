@@ -143,13 +143,7 @@ Check out below, we used the `remote` image by providing a `url` which Beagle wi
 
 ### Styling
 
-Finally, let's take a closer look into the `style` attribute, which describes how to position and layout components and their children. Most components have this attribute, and it's responsible for an important Beagle feature: **developers have control *through backend* on UI positioning**.
-
-You can experience that by changing the `flexDirection` attribute to **`ROW`** in the playground, and you will see the same views positioned horizontally. In your real application, you can deploy this exact change in your backend, and they will be reflected *immediately* in your frontend – even on mobile platforms, you don't need mobile store updates.
-
-> Many tools built in-house for Server Driven UI don't allow this kind of power over a UI positioning and this comes out of the box with Beagle.
-
-In the example *Container*, we are using 3 styling attributes: `flex`, `size`, and `backgroundColor`. There are other options as well, you can see them [in the Style section]({{< ref path="api/widget.md#style-attributes" >}}).
+Let's take a closer look into the `style` attribute, which describes how to position and layout components and their children:
 
 ```json
 {
@@ -172,11 +166,61 @@ In the example *Container*, we are using 3 styling attributes: `flex`, `size`, a
 }
 ```
 
+Most components have this attribute, and it's responsible for an important Beagle feature: **developers have control *through backend* on UI positioning**. You can experience that by changing the `flexDirection` attribute to **`ROW`** in the playground, and you will see the same views positioned horizontally. In your real application, you can deploy this exact change in your backend, and they will be reflected *immediately* in your frontend – even on mobile platforms, you don't need mobile store updates.
+
+> Many tools built in-house for Server Driven UI don't allow this kind of power over a UI positioning and this comes out of the box with Beagle.
+
+In the example *Container*, we are using 3 styling attributes: `flex`, `size`, and `backgroundColor`. There are other options as well, you can see them [in the Style section]({{< ref path="api/widget.md#style-attributes" >}}).
+
 The `flex` attribute allows you to **use the same Layout Engine on different platforms**. This can be a huge win for your team because all platforms will be positioning views according to the same rules, and you won't need to "duplicate" layout logic for each platform.
 
 - If you are familiar with web development, you probably know how to use `flex`. It is used as a cross-platform [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp). To accomplish this behind the scenes, Beagle uses a library called [**Yoga**](https://yogalayout.com), a C++ cross-platform library developed by Facebook and also used in other projects (e.g: React Native).
 
 - If you are not familiar with Flexbox, check out [the positioning section]({{< ref path="resources/components-positioning/_index.md" >}}), and the [Yoga's documentation](https://yogalayout.com/docs) for more details.
+
+### Actions
+
+Finally, let's talk about actions. They are a way to express dinamism inside Beagle. In the example, there is an action inside a button:
+
+```json
+{
+  "_beagleComponent_": "beagle:button",
+  "text": "Click here to show an Alert",
+  "onPress": [
+    {
+      "_beagleAction_": "beagle:alert",
+      "title": "My Title",
+      "message": "Alert message"
+    }
+  ]
+}
+```
+
+The [Button component](api/components/ui/button.md) has an attribute named `onPress` that can receive a list of actions, which will be executed when the button gets pressed. Beagle already comes with some actions, you can see them all in the [Actions section](api/actions/_index.md). But it's also possible to create your own actions (a proccess similar to *Custom Components*), which we call [Custom Actions](resources/customization/_index.md).
+
+This example uses an [Alert action](api/actions/alert.md), which results in showing an alert component when someone taps the button. You can try it yourself in the *Playground*.
+
+Besides showing an alert, you could do other things like:
+
+- Navigate to another screen with a [Navigate action](api/actions/navigate/_index.md).
+- Send an http request with a [SendRequest action](api/actions/sendrequest.md).
+- Add new views in the current view hierarchy with a [AddChildren action](api/actions/addchildren.md).
+
+Also, actions are one of the building blocks of **making complex and dynamic screens**. You can see more about this topic in the ["How to make communication between components" section](tutorials/how-to-make-communication-between-components.md).
+
+## Conclusion and next steps
+
+After seeing the most essential parts of Beagle, you are now ready to dive into more advanced topics:
+
+- If you want to see a more complex example of an application that completely leverages Beagle, you can check [this repo](https://github.com/ZupIT/beagle-adoption-demo). It has a backend in Kotlin, and native mobile frontends in Android and iOS.
+
+- If you want to integrate Beagle in your existing application, you can follow the [installation guide](get-started/installing-beagle/_index.md) for each platform, and then check the [start using Beagle section](get-started/using-beagle/_index.md).
+  
+- If you want to start a new project with Beagle, you can follow the ["creating a project from scratch" guide](get-started/creating-a-project-from-scratch/_index.md)
+
+- If you want to know more of a particular Beagle API, use the [API section](api/_index.md).
+
+- If you are not sure how to find information about a specific context, use the **search bar on the top right corner** of the screen to search for words throughout this documentation.
 
 ### Overview of Beagle's architecture
 
