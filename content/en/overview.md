@@ -143,7 +143,7 @@ This is a **Component**, you can be sure because of the `_beagleComponent_` attr
 
 > There are other components with the *children* attribute (sometimes just *child*) like [Screen]({{< ref path="api/screen/_index.md" >}}) and [ListView]({{< ref path="api/components/layout/listview.md" >}}), and they are usually used to **compose view hierarchies**.
 
-In this example, there are 3 other components inside the *Container*: [Image]({{< ref path="api/components/ui/image/_index.md" >}}), [Text]({{< ref path="api/components/ui/text.md" >}}), and [Button]({{< ref path="api/components/ui/button.md" >}}). Each one have different attributes to customize their rendering, and you can see all available attributes in each component's API documentation.
+In this example, there are 3 components inside the *Container*: [Image]({{< ref path="api/components/ui/image/_index.md" >}}), [Text]({{< ref path="api/components/ui/text.md" >}}), and [Button]({{< ref path="api/components/ui/button.md" >}}). Each one have different attributes to customize their rendering, and you can see all available attributes in each component's API documentation.
 
 The *Image* component, for example, has an attribute named `path` that can receive `remote` or `local` paths to the image data.
 Check out below, we used the `remote` image by providing a `url` which Beagle will use to make a network request when the component gets rendered:
@@ -277,7 +277,7 @@ Beagle has different libraries/frameworks for each supported platform, in the fo
 
 Beagle's version follows the [semantic versioning](https://semver.org/) concept. The documentation is versioned according to the *major* Beagle version. Between platforms, the features compatibility is by the minor version. For example, it is possible to use 1.0.0 in the backend with 1.0.1 on Android, 1.0.2 on iOS and 1.0.3 on the web react.
 
-Some definitions on this documentation exists only in some specific minors or patches. See the captions used to denote these cases:
+Some definitions on this documentation exists only in specific minors or patches. See the captions used to denote these cases:
 
 - `x.y.z`: an exclusive definition of the version x.y.z;
 - `>=x.y.z`: existing definition from x.y.z version;
