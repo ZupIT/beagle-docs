@@ -10,10 +10,6 @@ description: Text Input component description and its attributes
 
 Input is a component that displays an editable text area for the user. These text fields are used to collect inputs that the user insert using the keyboard. 
 
-{{% alert color="danger" %}}
-The `hidden` attribute has been deprecated in Beagle version 1.6.0 and will be removed in a future version. Use the `display` attribute of the` style` property instead.
-{{% /alert %}}
-
 See how the structure is represented by the attributes below:
 
 <table>
@@ -50,22 +46,10 @@ See how the structure is represented by the attributes below:
         in the editable text field.</td>
     </tr>
     <tr>
-      <td style="text-align:left">disabled</td>
-      <td style="text-align:left">Boolean</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">Enables or disables the field.</td>
-    </tr>
-    <tr>
       <td style="text-align:left">readOnly</td>
       <td style="text-align:left">Boolean</td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Check if the Input will be editable or read only.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">hidden</td>
-      <td style="text-align:left">Boolean</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">Enables the component to be visible or not. The `hidden` attribute has been deprecated in Beagle version 1.6.0 and will be removed in a future version. Use the `display` attribute of the` style` property instead.</td>
     </tr>
     <tr>
       <td style="text-align:left">type</td>

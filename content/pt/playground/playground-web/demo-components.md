@@ -50,12 +50,6 @@ Segue a lista com os exemplos de componentes implementados no Playground:
 
 [Experimente no Playground](https://beagle-playground.netlify.app/#/demo/default-components/simpleform.json)
 
-### **Tab View**
-
-[Experimente no Playground](https://beagle-playground.netlify.app/#/demo/default-components/tabview.json)
-
-[Documentação do componente]({{< ref path="/api/components/ui/tabview" lang="pt" >}})
-
 ### **Text**
 
 [Experimente no Playground](https://beagle-playground.netlify.app/#/demo/default-components/text.json)
