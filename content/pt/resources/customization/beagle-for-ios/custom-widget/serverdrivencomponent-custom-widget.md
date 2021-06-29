@@ -14,15 +14,15 @@ Siga os passos abaixo para criar componentes que recebem um `ServerDrivenCompone
 Para saber mais sobre como criar um componente veja, [**Widget Customizado Simples**]({{< ref path="/resources/customization/beagle-for-ios/custom-widget/simple-custom-widget" lang="pt" >}}).
 {{% /alert %}}
 
-### Passo 1: Criar o componente Customizado.
+### Passo 1: Criar o componente Customizado
 
-Abaixo temos a definição da classe do componente customizado ContainerTitle que recebe os parâmetros title e child.
+Veja abaixo a definição da classe do componente customizado **ContainerTitle** que recebe os parâmetros **title** e **child**.
 
 **Parâmetros:**
 
-**`title`**: Parâmetro do tipo `String` que representa o titulo do componente.
+**`title`**: Parâmetro do tipo `String`, representa o título do componente.
 
-**`child`**: Parâmetro do tipo `UIView` que representa o view que o componente encapsula.
+**`child`**: Parâmetro do tipo `UIView`, representa o view que o componente encapsula.
 
 
 ```swift
