@@ -2,7 +2,7 @@
 title: Beagle Xcode Templates
 weight: 3
 description: >-
-  Nesta seção você vai aprender como obter templates do Beagle para o seu Xcode.
+  Nesta seção você vai aprender como usar templates do Beagle no seu Xcode.
 ---
 
 ---
