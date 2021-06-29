@@ -16,7 +16,8 @@ This is how this component is structured:
 
 | Attribute         | Type                                                          | Required | Definition                                                                                                                           |
 | :----------------- | :---------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------------------------- |
-| numColumns          |                                      Int            |   | Defines the number of columns that the GridView will display.     |
+| spanCount          |                                      Int            |  ✓ | Defines the number of columns or rows that the GridView will display.     |
+| direction          | [GridViewDirection](#GridViewDirection)                           |             | Sets the direction in which items are displayed. |
 | context            | [ContextData]({{< ref path="/api/context" lang="en" >}})                          |             | Defines the context of the component.                                                                                           |
 | onInit             | List&lt;[Action]({{< ref path="/api/actions" lang="en" >}})&gt;                  |             | List of actions to be performed as soon as the component is displayed.                                                          |
 | dataSource         | [Bind]({{< ref path="/api/context#bindings" lang="en" >}})&lt;List&lt;Any&gt;&gt; |      ✓      | Expression that points to a list of values used to populate the component.                                                      |
@@ -26,6 +27,19 @@ This is how this component is structured:
 | scrollEndThreshold | Int                                                       |             | Defines the percentage scrolled from the list to trigger `onScrollEnd`.                                                         |
 | iteratorName       | String                                                    |             | It is the context identifier for each cell.                                                                                     |
 | key                | String                                                    |             | Points to a unique value present in each item of the `dataSource` to be used as a suffix in the ids of the template components. |
+
+### GridViewDirection
+
+It is an `ENUM`, the values are:
+
+| **Values** | **Definition**                             |
+| :--------- | :----------------------------------------- |
+| VERTICAL   | When itens are displayed in **`COLUMNS`**.   |
+| HORIZONTAL | When itens are displayed in **`ROWS`**. |
+
+{{% alert color="info" %}}
+Default value is GridViewDirection.VERTICAL
+{{% /alert %}}
 
 ### Templates
 
@@ -195,7 +209,8 @@ This is how this component is structured:
   ],
   "isScrollIndicatorVisible": false,
   "iteratorName": "item",
-  "numColumns": 2
+  "spanCount": 2,
+  "direction": "HORIZONTAL"
 }
 -->
 
@@ -250,7 +265,8 @@ val characters = listOf(
 )
 
 GridView(
-    numColumns = 2,
+    spanCount = 2,
+    direction = GridViewDirection.HORIZONTAL,
     context = ContextData(id = "characters", value = characters),
     dataSource = expressionOf("@{characters}"),
     templates = listOf(
