@@ -111,16 +111,19 @@ struct ContainerTitleWidget: Widget {
 }
 ```
 
-Temos que criar a parte de inicialização e decodificação do componente, tem duas maneiras possíveis usando o `sourcery` gerador de código para a linguagem Swift, ou fazendo manualmente.
+Crie a parte de inicialização e decodificação do componente e você pode fazer isso de duas formas: 
+1. Usando o `sourcery` gerador de código para a linguagem Swift.
+
+2. Você pode fazer manualmente. 
 
 **Sourcery:**
 
-Para usar o `Sourcery` pode encontrar nesse [**link**]({{< ref path="/resources/customization/beagle-for-ios/sourcery" lang="pt" >}})
+Para saber mais sobre como usar o `Sourcery`, acesse a seção [**Sourcery do Beagle**]({{< ref path="/resources/customization/beagle-for-ios/sourcery" lang="pt" >}})
 
 **Manual:**
 
-Para fazer manual tem que criar o init e a decodificação dos parametros `title` e `widgetProperties` da struct `BoxWidget`.
-O widgetProperties tem sua propria parte decodificação, entao é preciso apenas passar o decoder para o objeto `WidgetProperties`.
+Manualmente, crie o init e a decodificação dos parâmetros **`title`** e **`widgetProperties`** da struct `BoxWidget`.
+O widgetProperties tem a sua própria parte decodificação, então é preciso apenas passar o decoder para o objeto `WidgetProperties`.
 
 ```swift
 
