@@ -15,15 +15,15 @@ Beagle is an **open source framework** that helps developers implement **Server-
 By using Beagle, developers can:
 
 {{% alert color="success" %}}
-- **Rapidly change an application layout, data, navigation flow, or even logic**: just by changing the code in your backend.
-- **Be more independent of mobile stores** like App Store and Play Store because most changes won't need an app update.
-- **Have more confidence that applications will behave similarly on different platforms** since the code will be shared and standardized between backend and frontend.
-- **Easily test a new business hypothesis or make important fixes on live applications** to improve users' experience and receive feedback.
+- **Rapidly change an application layout, data, navigation flow, or even logic**, just by changing code in the backend.
+- **Be more independent of mobile stores**, like App Store and Play Store, because most changes won't need an app update.
+- **Have more confidence that applications will behave similarly on different platforms**, since code will be shared and standardized between backend and frontend.
+- **Easily test new business hypothesis or make live fixes on applications** to improve users' experience and receive feedback.
 {{% /alert %}}
 
 ## How does Beagle work?
 
-The best way to understand Beagle is to see it in action. Here, we will show you a simple screen declared via Beagle, containing just texts, images, and some style configurations. At the end of this section, you will be familiar with Beagle's building blocks and most common features.
+The best way to understand Beagle is to see it in action. Here, we will show you a simple screen declared via Beagle, containing just texts, images, and some style configurations. At the end of this section, you will be familiar with Beagle's most common features.
 
 <!-- json-playground:overview-simple-example.json
 {
@@ -104,7 +104,7 @@ As you can see on the left side, we are declaring our screen with JSON. You can 
 
 Just to make it clear, in this example, we are using JSON because it is the most straightforward way to use Beagle, but it's not the most productive and scalable. Beagle actually has a "language" (DSL in Kotlin) that you should use in your backend to produce this same JSON in a more productive way – with autocomplete and other benefits.
 
-Check out which frontend platforms Beagle supports [in the platforms and versions section](#platforms-and-versions). They all render components **natively**, for example, if you use Beagle in a native mobile application on Android and iOS, the SDKs for these platforms will use native UIs (Android Views and UIKit, respectively), and you can even integrate your own native components to work with Beagle.
+Check out which frontend platforms Beagle supports [in the platforms and versions section](#platforms-and-versions). They all render components **natively**, for example, if you use Beagle in a native mobile application on Android or iOS, the libraries for these platforms will use native UIs (Android Views and UIKit, respectively), and you can even integrate your own native components to work with Beagle.
 
 ### Components
 
@@ -118,7 +118,7 @@ Now, let's take a closer look inside that JSON, so you can better understand Bea
 }
 ```
 
-This is a **Component**, you can be sure because of the `_beagleComponent_` attribute. Beagle comes with a lot of useful components (you can navigate through them [in the components section]({{< ref path="api/components/_index.md" >}})), and you can also define your own components, it is called **Custom Components**, but save that for later. The example uses a basic and important component named [Container]({{< ref path="api/components/layout/container.md" >}}), and it allows you to *group together* `children` components.
+This is a **Component**, you can be sure because of the `_beagleComponent_` attribute. Beagle comes with a lot of useful components (you can navigate through them [in the components section]({{< ref path="api/components/_index.md" >}})), and you can also define your own components, it is called **Custom Components**, but save that for later. The example uses a simple and common component named [Container]({{< ref path="api/components/layout/container.md" >}}), and it allows you to *group together* `children` components.
 
 ```json
 {
@@ -141,7 +141,7 @@ This is a **Component**, you can be sure because of the `_beagleComponent_` attr
 }
 ```
 
-> There are other components with the *children* attribute (sometimes just *child*) like [Screen]({{< ref path="api/screen/_index.md" >}}) and [ListView]({{< ref path="api/components/layout/listview.md" >}}), and they are usually used to **compose view hierarchies**.
+> There are other components with the *children* attribute (sometimes just *child*) like [Screen]({{< ref path="api/screen/_index.md" >}}) and [ListView]({{< ref path="api/components/layout/listview.md" >}}), and they are used to **compose view hierarchies**.
 
 In this example, there are 3 components inside the *Container*: [Image]({{< ref path="api/components/ui/image/_index.md" >}}), [Text]({{< ref path="api/components/ui/text.md" >}}), and [Button]({{< ref path="api/components/ui/button.md" >}}). Each one have different attributes to customize their rendering, and you can see all available attributes in each component's API documentation.
 
@@ -159,7 +159,7 @@ Check out below, we used the `remote` image by providing a `url` which Beagle wi
 }
 ```
 
-> You can have full control of the network request triggered by this remote image. You just need to configure your own Network Layer as a Beagle Dependency. To better understand how to do that, or how to configure other Beagle Dependencies, you can check the [Customization section]({{< ref path="resources/customization/_index.md" >}}).
+> You can have full control of the network request triggered by this remote image. You just need to configure your own *Network Layer* as a *Beagle Dependency*. To better understand how to do that, or how to configure other Beagle Dependencies, you can check the [Customization section]({{< ref path="resources/customization/_index.md" >}}).
 
 ### Styling
 
@@ -186,17 +186,17 @@ Let's take a closer look into the `style` attribute, which describes how to posi
 }
 ```
 
-Most components have this attribute, and it's responsible for an important Beagle feature: **developers have control *through backend* on UI positioning**. You can experience that by changing the `flexDirection` attribute to **`ROW`** in Playground, and you will see the same views positioned horizontally. In your real application, you can deploy this exact change in the backend, and it will be reflected *immediately* in the frontend – even on mobile platforms, you don't need mobile store updates.
+Most components have this attribute, and it's responsible for an important Beagle feature: **developers have control *through backend* on UI positioning**. You can experience that by changing the `flexDirection` attribute to **`ROW`** in Playground, and you will see the same views positioned horizontally. In your real application, you can deploy this exact change in the backend, and it will be reflected *immediately* in the frontend – even on mobile platforms, you don't need store updates.
 
 > Many tools built in-house for Server Driven UI don't allow this kind of power over a UI positioning and this comes out of the box with Beagle.
 
-In the example *Container*, we are using 3 styling attributes: `flex`, `size`, and `backgroundColor`. There are other options as well, you can see them [in the Style section]({{< ref path="api/widget.md#style-attributes" >}}).
+In the example's *Container*, we are using 3 styling attributes: `flex`, `size`, and `backgroundColor`. There are other options as well, you can see them [in the Style section]({{< ref path="api/widget.md#style-attributes" >}}).
 
 #### Flex
 
 The `flex` attribute allows you to **use the same Layout Engine on different platforms**. This can be a huge win for your team because all platforms will be positioning views according to the same rules, and you won't need to "duplicate" layout logic for each platform.
 
-- If you are familiar with web development, you probably know how to use `flex`. It is used as a cross-platform [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp). To accomplish this behind the scenes, Beagle uses a library called [**Yoga**](https://yogalayout.com), a C++ cross-platform library developed by Facebook and also used in other projects (e.g: React Native).
+- If you have experience with web development, you probably already know how to use `flex`, since it is used as a cross-platform [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp). To accomplish this, Beagle uses a library called [**Yoga**](https://yogalayout.com), a cross-platform library developed in C++ by Facebook, and also used in other projects (e.g: React Native).
 
 - If you are not familiar with Flexbox, check out [the positioning section]({{< ref path="resources/components-positioning/_index.md" >}}), and the [Yoga's documentation](https://yogalayout.com/docs) for more details.
 
@@ -218,11 +218,11 @@ Finally, let's talk about Actions, a way to add *runtime dynamism* to a Beagle c
 }
 ```
 
-The [Button component]({{< ref path="api/components/ui/button.md" >}}) has an attribute named `onPress` that can receive a list of actions, which will only be executed when the button gets pressed. You can see all Beagle's default actions in the [Actions section]({{< ref path="api/actions/_index.md" >}}). But it's also possible to create your own actions (a proccess similar to *Custom Components*), which we call [Custom Actions]({{< ref path="resources/customization/_index.md" >}}).
+The [Button component]({{< ref path="api/components/ui/button.md" >}}) has an attribute named `onPress` that can receive a list of actions, which will only be executed when the button gets pressed. You can see all Beagle's default actions in the [Actions section]({{< ref path="api/actions/_index.md" >}}). Mas também é possível criar suas próprias ações (um processo semelhante a *Custom Componentes*), que chamamos de [Custom Actions]({{< ref path="resources/customization/_index.md" >}}).
 
-This example uses an [Alert action]({{< ref path="api/actions/alert.md" >}}), which results in showing an alert component when someone taps the button. You can tap and see it yourself in the *Playground*.
+This example uses an [Alert action]({{< ref path="api/actions/alert.md" >}}), which results in showing an alert component when someone taps the button. You can do that in the *Playground* and see it yourself.
 
-Besides showing an alert, you could do other things with actions, for example:
+Besides showing an alert, you can use actions to:
 
 - Navigate to another screen with a [Navigate action]({{< ref path="api/actions/navigate/_index.md" >}}).
 - Send an http request with a [SendRequest action]({{< ref path="api/actions/sendrequest.md" >}}).
@@ -234,7 +234,7 @@ Also, actions are one of the building blocks of **making complex and dynamic scr
 
 ## Conclusion and next steps
 
-After seeing the most essential parts of Beagle, you are now ready to dive into more advanced topics:
+After seeing Beagle's most essential parts, you are now ready to dive into more advanced topics:
 
 - If you want to see a more complex example of an application that completely leverages Beagle, you can check [this repo](https://github.com/ZupIT/beagle-adoption-demo). It has a backend in Kotlin, and native mobile frontends in Android and iOS.
 
@@ -242,9 +242,9 @@ After seeing the most essential parts of Beagle, you are now ready to dive into 
   
 - If you want to start a new project with Beagle, you can follow the ["creating a project from scratch" guide]({{< ref path="get-started/creating-a-project-from-scratch/_index.md" >}})
 
-- If you want to know more of a particular Beagle API, use the [API section]({{< ref path="api/_index.md" >}}).
+- If you want to know more of a particular API, use the [API section]({{< ref path="api/_index.md" >}}).
 
-- If you are not sure how to find information about a specific context, use the **search bar on the top right corner** of the screen to search for words throughout this documentation.
+- If you are not sure how to find information about a specific context, use the **search bar on the top right corner of the screen** to search for words throughout this documentation.
 
 ### Overview of Beagle's architecture
 
@@ -275,10 +275,8 @@ Beagle has different libraries/frameworks for each supported platform, in the fo
 
 ### Understanding version numbers
 
-Beagle's version follows the [semantic versioning](https://semver.org/) concept. The documentation is versioned according to the *major* Beagle version. Between platforms, the features compatibility is by the minor version. For example, it is possible to use 1.0.0 in the backend with 1.0.1 on Android, 1.0.2 on iOS and 1.0.3 on the web react.
+Beagle's version follows the [semantic versioning](https://semver.org/) standard.
 
-Some definitions on this documentation exists only in specific minors or patches. See the captions used to denote these cases:
+The *documentation* only has versions with numbers up to the **minor**, for example: `1.2`. However, some definitions from previous minor versions may still be present, even if they are not valid anymore. If that's the case, we will try to inform those definitions specific versions.
 
-- `x.y.z`: an exclusive definition of the version x.y.z;
-- `>=x.y.z`: existing definition from x.y.z version;
-- `<=x.y.z`: existing definition until the x.y.z version.
+Between platforms, it's possible to use different **patch** versions. For example, you can have version `1.0.0` in the backend with `1.0.1` on Android, `1.0.2` on iOS, and `1.0.3` on the web react.
