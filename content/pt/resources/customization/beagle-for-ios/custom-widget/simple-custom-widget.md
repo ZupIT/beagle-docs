@@ -356,4 +356,4 @@ Exemplo renderizado:
 
 ![](/shared/custom-component-box-ios.png)
 
-Se você usar componentes mais complexos que estejam no  `UIViews` ou outros componentes não mencionados, o processo seria parecido.
+Se você usar componentes mais complexos no  `UIViews` ou outros componentes não mencionados, o processo é parecido.
