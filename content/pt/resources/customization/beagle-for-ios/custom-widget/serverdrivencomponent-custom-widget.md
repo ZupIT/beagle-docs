@@ -71,19 +71,19 @@ class ContainerTitle: UIView {
 ```
 
 
-### Passo 2: Criar o Widget.
+### Passo 2: Criar o Widget
 
-Agora temos o componente `ContainerTitle`, para trasformar para um componente Beagle temos adotar o protocolo `Widget`, que é um protocolo que conforma com `Decodable` e é responsável por decodificar as propriedades que seu widget expõem ao backend.
+Agora é o componente `ContainerTitle`, para trasformá-lo em um componente Beagle, adote o protocolo `Widget`, que é compatível com o `Decodable` e é responsável por decodificar as propriedades que seu widget expõem no backend.
 
-Crie uma struct ContainerTitleWidget adotando protocolo `Widget`, a interface widget irá adicionar a property de **widgetProperties** e o método **toView**.
+1. Crie uma estrutura **ContainerTitleWidget** adotando protocolo `Widget`. A interface widget irá adicionar a property de **widgetProperties** e o método **toView**.
 
  * **widgetProperties:** A propriedade de aplicar estilo, id e acessibilidade.
 
  * **toView:** Método para retornar a view do componente criado.
 
-Temos a estrutura da struct `ContainerTitleWidget` com os parâmetros `title`, `child` e `widgetProperties` e o componente `ContainerTitle` criado no método `toView`.
+2. A estrutura do `ContainerTitleWidget` com os parâmetros `title`, `child` e `widgetProperties` e o componente `ContainerTitle` criado no método `toView`.
 
-Para exibir o componente recebido utizamos a `BeagleView`, logo a mesma retorna uma `UIView`. Para usar no meio do autoLayout é preciso desabilitar o `translatesAutoresizingMaskIntoConstraints` da view.
+3. Para exibir o componente recebido, utilize a `BeagleView`, logo a mesma retorna uma `UIView`. Para usar no meio do autoLayout é preciso desabilitar o `translatesAutoresizingMaskIntoConstraints` da view.
 
 ```swift
 import Foundation
