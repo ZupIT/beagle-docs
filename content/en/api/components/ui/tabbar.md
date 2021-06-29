@@ -18,7 +18,7 @@ Your structure is represented by the attributes below:
 | :------------- | :----------------- | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | items          | TabBarItem         | ✓        | Receive a list of `TabBarItems` that will define the `Tabs` in the `TabBar`                                                                                      |
 | styleId        | String             |          | Style ID that identifies an style to be applied on the TabBar                                                                                                    |
-| currentTab     | Bind&lt;Int&gt;    |          | Integer number that identifies the selected [`TabBarItem`]({{< ref path="/api/components/ui/tabview#what-is-tabitem" lang="en" >}})                                                      |
+| currentTab     | Bind&lt;Int&gt;    |          | Integer number that identifies the selected `TabBarItem`)                                                      |
 | onTabSelection | List&lt;Action&gt; |          | List of [**Actions**]({{< ref path="/api/actions/" lang="en" >}}) that are performed when a TabBarItem is selected. It can be used to load views according to the selected `TabBarItem`. |
 
 ## What is Tab Bar **Item?**

@@ -53,9 +53,10 @@ Container(
     children = listOf(
         Image(
             path = ImagePath.Remote("https://i.ibb.co/rvRN9kv/logo.png")
-        ).applyAccessibility(
-            accessibility = Accessibility(true, "Image Label")
-        )
+        ).setAccessibility {
+            accessible = true
+            accessibilityLabel = "Image Label"
+        }
     )
 )
 ```
