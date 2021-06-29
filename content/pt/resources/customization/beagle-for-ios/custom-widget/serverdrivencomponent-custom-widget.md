@@ -57,7 +57,7 @@ class ContainerTitle: UIView {
         child.backgroundColor = .systemOrange
     }
 
-    // Component `UILabel` created.
+    // Creates component 'UILabel'
     private lazy var label: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 20, weight: .bold)
