@@ -28,7 +28,6 @@ O Beagle possui **14** **componentes** atualmente divididos em **5 categorias**:
 
 {{% tab name="Formulários" %}}
 
-- [**Validator**]({{< ref path="/api/components/forms/validator" lang="pt" >}})
 - [**Simple Form**]({{< ref path="/api/components/forms/simple-form" lang="pt" >}})
 - [**Text Input** ]({{< ref path="/api/components/ui/textinput" lang="pt" >}})
   {{% /tab %}}
@@ -43,7 +42,6 @@ O Beagle possui **14** **componentes** atualmente divididos em **5 categorias**:
 - [**Button**]({{< ref path="/api/components/ui/button" lang="pt" >}})
 - [**Image**]({{< ref path="/api/components/ui/image/" lang="pt" >}})
 - [**Tab Bar**]({{< ref path="/api/components/ui/tabbar" lang="pt" >}})
-- [**Tab View**]({{< ref path="/api/components/ui/tabview" lang="pt" >}})
 - [**Text**]({{< ref path="/api/components/ui/text" lang="pt" >}})
 - [**Web View**]({{< ref path="/api/components/ui/webview" lang="pt" >}})
   {{% /tab %}}

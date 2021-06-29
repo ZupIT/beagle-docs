@@ -16,7 +16,6 @@ O `ContextComponent` é uma interface precisa ser implementada em componentes qu
 2. [**SimpleForm**]({{< ref path="/api/components/forms/simple-form" lang="pt" >}})
 3. [**PageView**]({{< ref path="/api/components/layout/pageview" lang="pt" >}})
 4. [**ScrollView**]({{< ref path="/api/components/layout/scrollview" lang="pt" >}})
-5. [**TabView**]({{< ref path="/api/components/ui/tabview" lang="pt" >}})
 
 ## Componente customizado com contexto
 

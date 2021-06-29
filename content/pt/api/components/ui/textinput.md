@@ -10,10 +10,6 @@ description: Descrição do componente InputText e seus atributos
 
 O Input é um componente responsável por exibir uma área de texto editável para o usuário. Esses campos de textos são usados para coletar entradas que um usuário insere utilizando o teclado. 
 
-{{% alert color="danger" %}}
-O atributo `hidden` foi depreciado na versão 1.6.0 do Beagle e será removido em uma versão futura. Utilize o atributo `display` da propriedade `style` em seu lugar.
-{{% /alert %}}
-
 A sua estrutura é representada como mostrado abaixo: 
 
 <table>
@@ -49,23 +45,11 @@ A sua estrutura é representada como mostrado abaixo:
       <td style="text-align:left">Texto que &#xE9; exibido quando nada foi inserido no campo de texto edit&#xE1;vel.</td>
     </tr>
     <tr>
-      <td style="text-align:left">disabled</td>
-      <td style="text-align:left">Boolean</td>
-      <td style="text-align:center"></td>
-      <td style="text-align:left">Propriedade para habilitar ou desabilitar o campo.</td>
-    </tr>
-    <tr>
       <td style="text-align:left">readOnly</td>
       <td style="text-align:left">Boolean</td>
       <td style="text-align:center"></td>
       <td style="text-align:left">Propriedade para determinar se o campo ser&#xE1; edit&#xE1;vel ou somente
         leitura.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">hidden</td>
-      <td style="text-align:left">Boolean</td>
-      <td style="text-align:center"></td>
-      <td style="text-align:left">Propriedade que determina se o campo ser&#xE1; escondido. O atributo `hidden` foi depreciado na versão 1.6.0 do Beagle e será removido em uma versão futura. Utilize o atributo `display` da propriedade `style` em seu lugar.</td>
     </tr>
     <tr>
       <td style="text-align:left">type</td>
