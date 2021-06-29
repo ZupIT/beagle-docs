@@ -120,10 +120,30 @@ Now, let's take a closer look inside that JSON, so you can better understand Bea
 
 This is a **Component**, you can be sure because of the `_beagleComponent_` attribute. Beagle comes with a lot of useful components (you can navigate through them [in the components section]({{< ref path="api/components/_index.md" >}})), and you can also define your own components, it is called **Custom Components**, but save that for later. The example uses a basic and important component named [Container]({{< ref path="api/components/layout/container.md" >}}), and it allows you to *group together* `children` components.
 
-There are other components with the *children* attribute (sometimes just *child*) like [Screen]({{< ref path="api/screen/_index.md" >}}) and [ListView]({{< ref path="api/components/layout/listview.md" >}}), and they are usually used to **compose view hierarchies**.
+```json
+{
+  "_beagleComponent_": "beagle:container",
+  "style": {...},
+  "children": [
+    { 
+      "_beagleComponent_": "beagle:image",
+      ...
+    },
+    { 
+      "_beagleComponent_": "beagle:text",
+      ...
+    },
+    { 
+      "_beagleComponent_": "beagle:button",
+      ...
+    }
+  ]
+}
+```
 
-In this example, there are 3 other components inside the *Container*: [Text]({{< ref path="api/components/ui/text.md" >}}), [Image]({{< ref path="api/components/ui/image/_index.md" >}}), and [Button]({{< ref path="api/components/ui/button.md" >}}). 
-Each one have different attributes, you can use to customize their rendering.
+> There are other components with the *children* attribute (sometimes just *child*) like [Screen]({{< ref path="api/screen/_index.md" >}}) and [ListView]({{< ref path="api/components/layout/listview.md" >}}), and they are usually used to **compose view hierarchies**.
+
+In this example, there are 3 other components inside the *Container*: [Image]({{< ref path="api/components/ui/image/_index.md" >}}), [Text]({{< ref path="api/components/ui/text.md" >}}), and [Button]({{< ref path="api/components/ui/button.md" >}}). Each one have different attributes to customize their rendering, and you can see all available attributes in each component's API documentation.
 
 The *Image* component, for example, has an attribute named `path` that can receive `remote` or `local` paths to the image data.
 Check out below, we used the `remote` image by providing a `url` which Beagle will use to make a network request when the component gets rendered:
@@ -139,7 +159,7 @@ Check out below, we used the `remote` image by providing a `url` which Beagle wi
 }
 ```
 
-> You can have full control of the network request triggered by this remote image. You just need to configure your own Network Layer as a Beagle Dependency. To better understand how you can do that, or how to configure other Beagle Dependencies, you can check the [Customization section]({{< ref path="resources/customization/_index.md" >}}).
+> You can have full control of the network request triggered by this remote image. You just need to configure your own Network Layer as a Beagle Dependency. To better understand how to do that, or how to configure other Beagle Dependencies, you can check the [Customization section]({{< ref path="resources/customization/_index.md" >}}).
 
 ### Styling
 
@@ -166,11 +186,13 @@ Let's take a closer look into the `style` attribute, which describes how to posi
 }
 ```
 
-Most components have this attribute, and it's responsible for an important Beagle feature: **developers have control *through backend* on UI positioning**. You can experience that by changing the `flexDirection` attribute to **`ROW`** in the playground, and you will see the same views positioned horizontally. In your real application, you can deploy this exact change in your backend, and they will be reflected *immediately* in your frontend – even on mobile platforms, you don't need mobile store updates.
+Most components have this attribute, and it's responsible for an important Beagle feature: **developers have control *through backend* on UI positioning**. You can experience that by changing the `flexDirection` attribute to **`ROW`** in Playground, and you will see the same views positioned horizontally. In your real application, you can deploy this exact change in the backend, and it will be reflected *immediately* in the frontend – even on mobile platforms, you don't need mobile store updates.
 
 > Many tools built in-house for Server Driven UI don't allow this kind of power over a UI positioning and this comes out of the box with Beagle.
 
 In the example *Container*, we are using 3 styling attributes: `flex`, `size`, and `backgroundColor`. There are other options as well, you can see them [in the Style section]({{< ref path="api/widget.md#style-attributes" >}}).
+
+#### Flex
 
 The `flex` attribute allows you to **use the same Layout Engine on different platforms**. This can be a huge win for your team because all platforms will be positioning views according to the same rules, and you won't need to "duplicate" layout logic for each platform.
 
@@ -207,6 +229,8 @@ Besides showing an alert, you could do other things with actions, for example:
 - Add new views in the current view hierarchy with a [AddChildren action]({{< ref path="api/actions/addchildren.md" >}}).
 
 Also, actions are one of the building blocks of **making complex and dynamic screens**. You can see more about this topic in the ["How to make communication between components" section]({{< ref path="tutorials/how-to-make-communication-between-components.md" >}}).
+
+---
 
 ## Conclusion and next steps
 
