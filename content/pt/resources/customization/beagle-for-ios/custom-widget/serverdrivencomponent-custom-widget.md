@@ -41,7 +41,7 @@ class ContainerTitle: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // Method to add component to hierarchy and position to superview.
+    // Adds the component to the hierarchy and the position to the Superview.
     private func setupView(child: UIView, title: String) {
         addSubview(label)
         label.text = title
