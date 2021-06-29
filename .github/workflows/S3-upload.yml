@@ -30,7 +30,7 @@ jobs:
           extended: true
 
       - name: S3 upload (images)
-        run: aws s3 sync --acl public-read --follow-symlinks static/shared s3://$AWS_S3_BUCKET/shared/ --delete
+        run: aws s3 sync --acl public-read --follow-symlinks static/shared s3://$AWS_S3_BUCKET/shared/
 
       - name: Remove static images
         shell: bash
