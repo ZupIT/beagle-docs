@@ -334,9 +334,9 @@ dependencies.decoder.register(component: BoxWidget.self, named: "BoxWidgetCompon
 
 Após registrar o seu componente de customização, você pode usá-lo  via server-driven.
 
-### Passo 4: Exibir o Componente.
+### Passo 4: Exibir o Componente
 
-Você pode usar o seu componente declarativamente assim como passá-lo por uma instância até o `BeagleScreenViewController` ou chamá-lo via método `toView()` para apresentar o`UIView` que aparece dentro do seu próprio view controller.
+Você pode usar o seu componente declarativamente, passá-lo por uma instância até o `BeagleScreenViewController` ou chamá-lo via método `toView()` para apresentar o`UIView` que aparece dentro do seu próprio view controller.
 
 ```swift
 let beagleScreenViewController = Beagle.screen(
