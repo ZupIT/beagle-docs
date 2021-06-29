@@ -4,11 +4,11 @@ weight: 159
 description: Criando um widget customizado com ServerDrivenComponent
 ---
 
-## Introdução
+## Como criar? 
 
-Nesse exemplo vamos ensinar a criar componentes que recebem um `ServerDrivenComponent`.
+Siga os passos abaixo para criar componentes que recebem um `ServerDrivenComponent`.
 
-**`ServerDrivenComponent:`** São todos componentes default do beagle e componentes registrados no beagle.
+**`ServerDrivenComponent:`** São todos os componentes default e registrados no Beagle. 
 
 {{% alert color="info" %}}
 Para saber mais sobre como criar um componente veja, [**Widget Customizado Simples**]({{< ref path="/resources/customization/beagle-for-ios/custom-widget/simple-custom-widget" lang="pt" >}}).
