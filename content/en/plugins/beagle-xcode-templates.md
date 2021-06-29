@@ -2,7 +2,7 @@
 title: Beagle Xcode Templates
 weight: 3
 description: >-
-  In this section you will find how to obtain Beagle templates for Xcode.
+  In this section you will find how to use Beagle templates in Xcode.
 ---
 
 ---
@@ -16,7 +16,7 @@ They allow the developer to create custom Beagle components such as widget, acti
 To install it, just open your terminal and run the following command:
 
 ```shell
-curl http://docs.usebeagle.io/shared/plugin/xcode-templates.sh | sh
+curl https://docs.usebeagle.io/shared/plugin/xcode-templates.sh | sh
 ```
 
 This command will download the templates and place them where Xcode can see them as part of the IDE new files and projects. Templates folder path: *~/Library/Developer/Xcode/Templates*

@@ -16,7 +16,7 @@ Essa propriedade define como os itens são distribuídos ao longo do eixo transv
 
 Os itens serão expandidos para preencher toda a dimensão do eixo transversal \(altura ou largura\) da tela:
 
-![](https://lh3.googleusercontent.com/fk8LZ2eCe2pOmsuFaGdG4yjPJ06MxNKiVjQXwPBdvGkyJi5vKyeI_eU9iwTZiMMoHI6oXkiEG9NZDcd78DSfMgyEquxvEwbrJxMvKZeHXbmDZ0bg5mvYTFgzJ2ACHTp-wuEEvbQw)
+{{< figure src="/shared/flex/stretch-line.png" width="150">}}
 
 {{< tabs id="T32" >}}
 {{% tab name="Kotlin" %}}
@@ -69,7 +69,7 @@ private func screen() -> Screen {
 
 Os itens são deslocadas para o início do eixo transversal:
 
-![](https://lh3.googleusercontent.com/hc87ybAOzlA0XmhJtLHLFC3gLn9ZgSBlNJ3AXcUUp7rQOU7BPz4-JRQWafg7V6sc8ACL93B9qTyxjDKcIkv5F0ZQZ-lxYlTa-Fw-eH2-Ca7Ny4ng_DM--mppkPLciRrvMcG_QdY9)
+{{< figure src="/shared/flex/flex-start-line.png" width="150">}}
 
 {{< tabs id="T33" >}}
 {{% tab name="Kotlin" %}}
@@ -134,7 +134,7 @@ private func screen() -> Screen {
 
 Os itens são deslocadas para o final do eixo transversal:
 
-![](https://lh5.googleusercontent.com/Nhe7LKmP1-r_bbEn0iyvVRjIWfHfuJ6m8S5ITDrCaXM3JR05eSNYQndKox3FndB_skkRaAuJJVCpU9gYkyWCm4cUlLKTn_jaY8bWWmprYkB6_fYvaOourOJqT_bgUQflkSCZLZqK)
+{{< figure src="/shared/flex/flex-end-line.png" width="150">}}
 
 {{< tabs id="T34" >}}
 {{% tab name="Kotlin" %}}
@@ -199,7 +199,7 @@ private func screen() -> Screen {
 
 Os itens são centralizados no eixo transversal:
 
-![](https://lh5.googleusercontent.com/ruy-mtlJQlJ9eCag6xAN5C_wOm3Bh0x4UgcHGQKX642J20IBdS49ZFlDbbVgIZGfzFS8NELAC3D1ebU73hThf5E6fYw5KLIJ4BHYl0ouTuph0TepM9m4_oHQy29CFf94-aoolfc1)
+{{< figure src="/shared/flex/center-line.png" width="150">}}
 
 {{< tabs id="T35" >}}
 {{% tab name="Kotlin" %}}
@@ -264,7 +264,7 @@ Os itens são centralizados no eixo transversal:
 
 Os itens são alinhados a partir da base da primeira linha de texto de cada um:
 
-![](/shared/captura-de-tela-2020-06-04-a-s-10.55.47.png)
+{{< figure src="/shared/captura-de-tela-2020-06-04-a-s-10.55.47.png" width="150">}}
 
 {{< tabs id="T36" >}}
 {{% tab name="Kotlin" %}}
