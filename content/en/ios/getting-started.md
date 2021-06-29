@@ -27,7 +27,7 @@ We're using Xcode 11+ on this example, so if you don't have it, please download 
 
 **Step 1:** Open your Xcode and click on _File -> New -> Project_.
 
-**Step 2:** Select a single view application known now as just _App_ and click on next.
+**Step 2:** Select a single view application known as just _App_ and click on next.
 
 **Step 3:** Name your project, select the interface as _Storyboard_, language _Swift_ and go next.
 
