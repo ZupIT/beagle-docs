@@ -25,10 +25,6 @@ A sua estrutura é representada como mostrado abaixo:
 |onFocus|List&lt;Action&gt;||Define uma lista de [Ações]({{< ref path="/api/actions" lang="pt" >}}) que é executada quando o campo de texto **ganha foco**|
 |onChange|List&lt;Action&gt;||Define uma lista de [Ações]({{< ref path="/api/actions" lang="pt" >}}) que é executada quando o campo de texto tem o **valor (value) modificado**|
 |onBlur|List&lt;Action&gt;||Define uma lista de [Ações]({{< ref path="/api/actions" lang="pt" >}}) que é executada quando o campo de texto **perde o foco**| 
->>>>>>> a1e8cf44... updates the text input info, attribute details and table structure
-
-{{% alert color="warning" %}}
-Importante! O Beagle também oferece suporte para ações customizadas ou seja, se você listar alguma delas nos atributos acima, também precisará mapeá-las em seu front end. Você não precisa fazer isso para as ações padrão do Beagle. Verifique nossa seção de [Customizações]({{<ref path ="/resources/customization" lang = "en">}}) para saber como mapear `Ações Customizadas` no front end. Selecione o front que você deseja (Android, iOS ou WEB) a partir do link acima e verifique a seção Ações customizadas de acordo com cada segmento.{{% /alert %}}
 ### TextInputType
 
 É um `ENUM` responsável por definir qual o tipo de entrada de texto.
