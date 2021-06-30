@@ -93,18 +93,19 @@ The best way to understand Beagle is to see it in action. Here, we will show you
 
 {{% playground file="overview-simple-example.json" language="en" %}}
 
-> Throughout the documentation, you will see examples – like the one above – that use a tool named **Playground**. By using it, you can:
+> Throughout the documentation, you will see examples – like the one above – that use a tool we made named **Playground**. By using it, you can:
 >
 > - Quickly see how Beagle works;
-> - Edit the code on the left and run it to see visual updates;
+> - Edit the code on the left, run it, and observe the result;
 > - Select different platforms to run your code on.
+>
 > For more information about this tool, check out the [Playground section]({{< ref path="playground/_index.md" >}}).
 
-As you can see on the left side, we are declaring our screen with JSON. You can suppose this JSON is what your backend provides to your frontend via an HTTP response. The frontend will then interpret it, and properly render it on the platform's screen (as you can see on the right side). Beagle provides libraries on the backend and frontend to completely handle this workflow for you.
+As you can see on the left side, we are declaring our screen with JSON. This JSON is what your backend would provide to your frontend via an HTTP response. The frontend will then interpret it, and properly render it on the platform's screen (as you can see on the right side). Beagle provides libraries on the backend and frontend to handle this workflow for you.
 
-Just to make it clear, in this example, we are using JSON because it is the most straightforward way to use Beagle, but it's not the most productive and scalable. Beagle actually has a "language" (DSL in Kotlin) that you should use in your backend to produce this same JSON in a more productive way – with autocomplete and other benefits.
+We use JSON in the examples because it is the most straightforward way to use Beagle. However, Beagle actually has a "language" (DSL in Kotlin) that you can use in your backend to produce this same JSON in a more productive way – with autocomplete and other benefits.
 
-Check out which frontend platforms Beagle supports [in the platforms and versions section](#platforms-and-versions). They all render components **natively**, for example, if you use Beagle in a native mobile application on Android or iOS, the libraries for these platforms will use native UIs (Android Views and UIKit, respectively), and you can even integrate your own native components to work with Beagle.
+Check out which frontend platforms Beagle supports [in the platforms and versions section](#platforms-and-versions). They all render components **natively**, that is, if you use Beagle in a native mobile application on Android or iOS, the libraries for these platforms will use native UIs (Android Views and UIKit, respectively), and you can even integrate your own native components to work with Beagle.
 
 ### Components
 
@@ -114,26 +115,16 @@ Now, let's take a closer look inside that JSON, so you can better understand Bea
 {
   "_beagleComponent_": "beagle:container",
   "style": {...},
-  "children": [...]
-}
-```
-
-This is a **Component**, you can be sure because of the `_beagleComponent_` attribute. Beagle comes with a lot of useful components (you can navigate through them [in the components section]({{< ref path="api/components/_index.md" >}})), and you can also define your own components, it is called **Custom Components**, but save that for later. The example uses a simple and common component named [Container]({{< ref path="api/components/layout/container.md" >}}), and it allows you to *group together* `children` components.
-
-```json
-{
-  "_beagleComponent_": "beagle:container",
-  "style": {...},
   "children": [
-    { 
+    {
       "_beagleComponent_": "beagle:image",
       ...
     },
-    { 
+    {
       "_beagleComponent_": "beagle:text",
       ...
     },
-    { 
+    {
       "_beagleComponent_": "beagle:button",
       ...
     }
@@ -141,12 +132,10 @@ This is a **Component**, you can be sure because of the `_beagleComponent_` attr
 }
 ```
 
-> There are other components with the *children* attribute (sometimes just *child*) like [Screen]({{< ref path="api/screen/_index.md" >}}) and [ListView]({{< ref path="api/components/layout/listview.md" >}}), and they are used to **compose view hierarchies**.
+To Beagle, every structure that contains the `_beagleComponent_` attribute will be interpreted as a **Component**. The first one is a simple and common component named [Container]({{< ref path="api/components/layout/container.md" >}}), which allows you to *group together* `children` components. It has 3 children: [Image]({{< ref path="api/components/ui/image/_index.md" >}}), [Text]({{< ref path="api/components/ui/text.md" >}}), and [Button]({{< ref path="api/components/ui/button.md" >}}). Each one have different attributes to customize their rendering, and you can see all available attributes in each component's API documentation.
 
-In this example, there are 3 components inside the *Container*: [Image]({{< ref path="api/components/ui/image/_index.md" >}}), [Text]({{< ref path="api/components/ui/text.md" >}}), and [Button]({{< ref path="api/components/ui/button.md" >}}). Each one have different attributes to customize their rendering, and you can see all available attributes in each component's API documentation.
-
-The *Image* component, for example, has an attribute named `path` that can receive `remote` or `local` paths to the image data.
-Check out below, we used the `remote` image by providing a `url` which Beagle will use to make a network request when the component gets rendered:
+The *Image* component, for example, has an attribute named `path` that especifies where to retrieve image data, it can be `remote` or `local`.
+Check out below, we used a `remote` path by providing a `url` which Beagle will use to make a network request when the component gets rendered:
 
 ```json
 {
@@ -160,6 +149,10 @@ Check out below, we used the `remote` image by providing a `url` which Beagle wi
 ```
 
 > You can have full control of the network request triggered by this remote image. You just need to configure your own *Network Layer* as a *Beagle Dependency*. To better understand how to do that, or how to configure other Beagle Dependencies, you can check the [Customization section]({{< ref path="resources/customization/_index.md" >}}).
+
+Beagle comes with a lot of useful components, you can navigate through all them in [the components section]({{< ref path="api/components/_index.md" >}}). You can also define your own components, which are called [Custom Components]({{< ref path="resources/customization/_index.md" >}}), but save that for later.
+
+> The *children* attribute (sometimes just *child*) is present in other components like [Screen]({{< ref path="api/screen/_index.md" >}}) and [ListView]({{< ref path="api/components/layout/listview.md" >}}), and they are also used to **compose view hierarchies**.
 
 ### Styling
 
@@ -186,7 +179,7 @@ Let's take a closer look into the `style` attribute, which describes how to posi
 }
 ```
 
-Most components have this attribute, and it's responsible for an important Beagle feature: **developers have control *through backend* on UI positioning**. You can experience that by changing the `flexDirection` attribute to **`ROW`** in Playground, and you will see the same views positioned horizontally. In your real application, you can deploy this exact change in the backend, and it will be reflected *immediately* in the frontend – even on mobile platforms, you don't need store updates.
+Most components have this attribute, and it's responsible for an important Beagle feature: **developers have control *through backend* on UI positioning**. You can experience that by changing the `flexDirection` attribute to **`ROW`** in the Playground, and you will see the same views positioned horizontally. In your real application, you can deploy this exact change in the backend, and it will be reflected *immediately* in the frontend – even on mobile platforms, you don't need store updates.
 
 > Many tools built in-house for Server Driven UI don't allow this kind of power over a UI positioning and this comes out of the box with Beagle.
 
@@ -194,7 +187,7 @@ In the example's *Container*, we are using 3 styling attributes: `flex`, `size`,
 
 #### Flex
 
-The `flex` attribute allows you to **use the same Layout Engine on different platforms**. This can be a huge win for your team because all platforms will be positioning views according to the same rules, and you won't need to "duplicate" layout logic for each platform.
+The `flex` attribute allows you to **use the same Layout Engine on different platforms**. This can be a huge win for your team because all platforms will position views according to the same rules, and you won't need to "duplicate" layout logic for each platform.
 
 - If you have experience with web development, you probably already know how to use `flex`, since it is used as a cross-platform [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp). To accomplish this, Beagle uses a library called [**Yoga**](https://yogalayout.com), a cross-platform library developed in C++ by Facebook, and also used in other projects (e.g: React Native).
 
