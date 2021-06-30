@@ -118,7 +118,7 @@ Agora, vamos dar uma olhada mais de perto nesse JSON, para que você possa enten
 }
 ```
 
-Este é um **Component**, você pode ter certeza por causa do atributo `_beagleComponent_`. O Beagle vem com muitos componentes úteis (você pode navegar por eles [na seção de componentes]({{< ref path = "api/components/_index.md" >}})) e também pode definir seus próprios componentes, chamados de **Custom Components**, mas guarde isso para depois. O exemplo usa um componente simples e comum chamado [Container] ({{< ref path = "api/components/layout/container.md" >}}) e permite que você *agrupe* os componentes `children`.
+Este é um **Component**, você pode ter certeza por causa do atributo `_beagleComponent_`. O Beagle vem com muitos componentes úteis (você pode navegar por eles [na seção de componentes]({{< ref path = "api/components/_index.md" >}})) e também pode definir seus próprios componentes, chamados de **Custom Components**, mas guarde isso para depois. O exemplo usa um componente simples e comum chamado [Container]({{< ref path = "api/components/layout/container.md" >}}) e permite que você *agrupe* os componentes `children`.
 
 ```json
 {
@@ -144,9 +144,6 @@ Este é um **Component**, você pode ter certeza por causa do atributo `_beagleC
 > Existem outros componentes com o atributo *children* (às vezes apenas *child*) como [Screen]({{< ref path="api/screen/_index.md" >}}) e [ListView]({{< ref path="api/components/layout/listview.md" >}}), e eles são usados para **compor hierarquias de views**.
 
 Neste exemplo, existem 3 componentes dentro do *Container*: [Image]({{< ref path="api/components/ui/image/_index.md" >}}), [Text]({{< ref path="api/components/ui/text.md" >}}), e [Button]({{< ref path="api/components/ui/button.md" >}}). Cada um tem atributos diferentes para customizar sua renderização, e você pode ver todos os atributos disponíveis em suas respectivas documentações de API.
-
-The *Image* component, for example, has an attribute named `path` that can receive `remote` or `local` paths to the image data.
-Check out below, we used the `remote` image by providing a `url` which Beagle will use to make a network request when the component gets rendered:
 
 O componente *Image*, por exemplo, tem um atributo chamado `path` que pode receber caminhos `remote` ou `local` para os dados da imagem.
 Confira abaixo, nós usamos a imagem `remote` fornecendo um `url` que o Beagle usará para fazer uma solicitação de rede quando o componente for renderizado:
@@ -197,9 +194,9 @@ No *Container* do exemplo, estamos usando 3 atributos de estilo: `flex`, `size` 
 
 #### Flex
 
-O atributo `flex` permite que você **use o mesmo Motor de Layout em diferentes plataformas**. Isso pode ser uma grande vantagem para a sua equipe,pois todas as plataformas posicionarão as views de acordo com as mesmas regras, e você não precisará "duplicar" a lógica de layout para cada plataforma.
+O atributo `flex` permite que você **use o mesmo Motor de Layout em diferentes plataformas**. Isso pode ser uma grande vantagem para o seu time, pois todas as plataformas posicionarão as views de acordo com as mesmas regras, e você não precisará "duplicar" a lógica de layout para cada plataforma.
 
-- Se você tem experiência com desenvolvimento web, provavelmente já sabe como usar o `flex`, pois ele é usado como um [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) multiplataforma. Para obter esse resultado, o Beagle usa uma biblioteca chamada [Yoga](https://yogalayout.com), uma biblioteca multiplataform desenvolvida em C++ pelo Facebook, e também usada em outros projetos (por exemplo: React Native).
+- Se você tem experiência com desenvolvimento web, provavelmente já sabe como usar o `flex`, pois ele é usado como um [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) multiplataforma. Para obter esse resultado, o Beagle usa uma biblioteca chamada [Yoga](https://yogalayout.com), biblioteca multiplataform desenvolvida em C++ pelo Facebook, e também usada em outros projetos (por exemplo: React Native).
 
 - Se você não estiver familiarizado com o Flexbox, verifique [a seção de posicionamento]({{< ref path="resources/components-positioning/_index.md" >}}) e a [documentação do Yoga](https://yogalayout.com/docs) para obter mais detalhes.
 
@@ -221,7 +218,7 @@ Finalmente, vamos falar sobre *Actions*, uma maneira de adicionar *dinamismo em 
 }
 ```
 
-O [componente Button]({{< ref path="api/components/ui/button.md" >}}) possui um atributo chamado `onPress` que pode receber uma lista de ações, as quais só serão executadas quando o botão for pressionado. Você pode ver todas as ações padrão do Beagle na [seção Actions]({{< ref path="api/actions/_index.md" >}}). But it's also possible to create your own actions (a proccess similar to *Custom Components*), which we call [Custom Actions]({{< ref path="resources/customization/_index.md" >}}).
+O [componente Button]({{< ref path="api/components/ui/button.md" >}}) possui um atributo chamado `onPress` que pode receber uma lista de ações, as quais só serão executadas quando o botão for pressionado. Você pode ver todas as ações padrão do Beagle na [seção Actions]({{< ref path="api/actions/_index.md" >}}). Mas também é possível criar suas próprias ações (um processo semelhante a *Custom Componentes*), que chamamos de [Custom Actions]({{< ref path="resources/customization/_index.md" >}}).
 
 Esse exemplo usa uma [ação Alert]({{< ref path="api/actions/alert.md" >}}), o que resulta na exibição de um componente de alerta quando alguém toca o botão. Você pode fazer isso no *Playground* e ver você mesmo.
 

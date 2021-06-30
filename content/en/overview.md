@@ -218,7 +218,7 @@ Finally, let's talk about Actions, a way to add *runtime dynamism* to a Beagle c
 }
 ```
 
-The [Button component]({{< ref path="api/components/ui/button.md" >}}) has an attribute named `onPress` that can receive a list of actions, which will only be executed when the button gets pressed. You can see all Beagle's default actions in the [Actions section]({{< ref path="api/actions/_index.md" >}}). Mas também é possível criar suas próprias ações (um processo semelhante a *Custom Componentes*), que chamamos de [Custom Actions]({{< ref path="resources/customization/_index.md" >}}).
+The [Button component]({{< ref path="api/components/ui/button.md" >}}) has an attribute named `onPress` that can receive a list of actions, which will only be executed when the button gets pressed. You can see all Beagle's default actions in the [Actions section]({{< ref path="api/actions/_index.md" >}}). But it's also possible to create your own actions (a proccess similar to *Custom Components*), which we call [Custom Actions]({{< ref path="resources/customization/_index.md" >}}).
 
 This example uses an [Alert action]({{< ref path="api/actions/alert.md" >}}), which results in showing an alert component when someone taps the button. You can do that in the *Playground* and see it yourself.
 
