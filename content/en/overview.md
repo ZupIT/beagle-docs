@@ -277,6 +277,6 @@ Beagle has different libraries/frameworks for each supported platform, in the fo
 
 Beagle's version follows the [semantic versioning](https://semver.org/) standard.
 
-The *documentation* only has versions with numbers up to the **minor**, for example: `1.2`. However, some definitions from previous minor versions may still be present, even if they are not valid anymore. If that's the case, we will try to inform those definitions specific versions.
+Between platforms, the last number (**patch**) tends to diverge, as some bugs only occur on a certain platform. So, the following example is normal and expected: having version `1.0.0` in the backend with `1.0.2` in Android, `1.0.0` in iOS, and `1.0.3` in web React.
 
-Between platforms, it's possible to use different **patch** versions. For example, you can have version `1.0.0` in the backend with `1.0.1` on Android, `1.0.2` on iOS, and `1.0.3` on the web react.
+The *documentation* only has versions with numbers up to the **minor**, for example: `1.2`. However, some definitions from previous minor versions may still be present, even if they are not valid anymore. If that's the case, we will try to inform those definitions specific versions.
