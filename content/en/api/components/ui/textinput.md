@@ -26,9 +26,6 @@ This component has the following attributes:
 |onChange|List&lt;Action&gt;||Sets a List of [Actions]({{< ref path="/api/actions" lang="en" >}}) that are triggered when the text field **value changes**|
 |onBlur|List&lt;Action&gt;||Sets a List of [Actions]({{< ref path="/api/actions" lang="en" >}}) that are triggered when the text field **looses focus**| 
 
-{{% alert color="warning" %}}
-Important! Beagle offers support for customized actions and if you list any of those on the attributes above you will need to have them mapped in your front end as well. You dont have to do this for the Beagle default actions. Check our [Customization]({{< ref path="/resources/customization" lang="en" >}}) section to know how to map `Custom Actions` in the front end. Select the front end you wish (Android, iOS or WEB) and check the Custom Action section in each segment.
-{{% /alert %}}
 >>>>>>> a1e8cf44... updates the text input info, attribute details and table structure
 
 ### TextInputType
