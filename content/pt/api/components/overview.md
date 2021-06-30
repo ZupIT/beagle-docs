@@ -42,6 +42,7 @@ O Beagle possui **14** **componentes** atualmente divididos em **5 categorias**:
 
 - [**Button**]({{< ref path="/api/components/ui/button" lang="pt" >}})
 - [**Image**]({{< ref path="/api/components/ui/image/" lang="pt" >}})
+- [**PullToRefresh**]({{< ref path="/api/components/ui/pulltorefresh" lang="pt" >}})
 - [**Tab Bar**]({{< ref path="/api/components/ui/tabbar" lang="pt" >}})
 - [**Text**]({{< ref path="/api/components/ui/text" lang="pt" >}})
 - [**Web View**]({{< ref path="/api/components/ui/webview" lang="pt" >}})
