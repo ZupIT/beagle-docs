@@ -1,6 +1,6 @@
 ---
 title: Visão geral
-weight: 1
+weight: 10
 type: overview
 description: Descrição dos componentes de Layout e seus atributos
 ---

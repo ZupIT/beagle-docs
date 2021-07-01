@@ -1,6 +1,6 @@
 ---
 title: Widget
-weight: 392
+weight: 300
 description: Descrição dos componentes do Widget e seus atributos
 ---
 

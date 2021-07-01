@@ -1,6 +1,6 @@
 ---
 title: Safe Area
-weight: 387
+weight: 30
 description: Descrição da Safe Area e seus componentes
 ---
 
