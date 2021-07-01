@@ -156,7 +156,7 @@ Confira abaixo, nós usamos o path `remote` fornecendo uma `url` que o Beagle us
 
 > Você pode ter controle total da requisição acionada por esta imagem remota. Você só precisa configurar sua própria *Camada de Rede* como uma *Dependência do Beagle*. Para entender melhor como fazer isso, ou como configurar outras Dependências do Beagle, você pode verificar a [seção de Customização]({{< ref path="resources/customization/_index.md" >}}).
 
-O Beagle já vem com vários componentes úteis, você pode navegar por todos eles na [seção de componentes]({{< ref path = "api/components/_index.md" >}}). Há outros componentes, por exemplo, que possuem o atributo *children* (às vezes apenas *child*) como o [Screen]({{< ref path="api/screen/_index.md" >}}) e o [ListView]({{< ref path="api/components/layout/listview.md" >}}), e eles são usados para **compor hierarquias de views** como o *Container*. Também é possível definir seus próprios componentes, chamados de [Custom Components]({{< ref path="resources/customization/_index.md" >}}), e utilizá-los de forma muito similar a um componente que já vem no Beagle.
+O Beagle já vem com vários componentes úteis, você pode navegar por todos eles na [seção de componentes]({{< ref path = "api/components/_index.md" >}}). Há outros componentes, por exemplo, que possuem o atributo *children* (às vezes apenas *child*) como o [Screen]({{< ref path="api/components/layout/screen/_index.md" >}}) e o [ListView]({{< ref path="api/components/layout/listview.md" >}}), e eles são usados para **compor hierarquias de views** como o *Container*. Também é possível definir seus próprios componentes, chamados de [Custom Components]({{< ref path="resources/customization/_index.md" >}}), e utilizá-los de forma muito similar a um componente que já vem no Beagle.
 
 ### Style
 
@@ -187,7 +187,7 @@ A maioria dos componentes tem esse atributo, que é responsável por uma feature
 
 > Muitas ferramentas desenvolvidas internamente para Server Driven UI não permitem esse tipo de poder sobre o posicionamento de views, e isso já vem pronto com o Beagle.
 
-No *Container* do exemplo, estamos usando 3 atributos de estilo: `flex`, `size` e `backgroundColor`. Existem outras opções também, você pode vê-las na [seção Style]({{< ref path="api/widget.md#style-attributes" >}}).
+No *Container* do exemplo, estamos usando 3 atributos de estilo: `flex`, `size` e `backgroundColor`. Existem outras opções também, você pode vê-las na [seção Style]({{< ref path="api/components/widget.md#style-attributes" >}}).
 
 #### Flex
 
@@ -269,11 +269,3 @@ O Beagle possui diferentes bibliotecas/frameworks para cada plataforma suportada
 - **Angular:** [![badge](https://img.shields.io/npm/v/@zup-it/beagle-angular?logo=Angular)](https://www.npmjs.com/package/@zup-it/beagle-angular)
 - **React:** [![badge](https://img.shields.io/npm/v/@zup-it/beagle-react?logo=React)](https://www.npmjs.com/package/@zup-it/beagle-react)
 {{% /alert %}}
-
-### Entendendo os números da versão
-
-A versão do Beagle segue o padrão de [versionamento semântico](https://semver.org/).
-
-Entre plataformas, o último número (**patch**) costuma divergir, uma vez que alguns bugs ocorrem apenas em uma determinada plataforma. Assim, o seguinte exemplo é normal e esperado: ter a versão `1.0.0` no backend com `1.0.2` no Android, `1.0.0` no iOS, e `1.0.3` na web React.
-
-A *documentação* apenas possui versões com números até o **minor**, por exemplo: `1.2`. No entanto, algumas definições de versões minor anteriores ainda podem estar presentes, mesmo que não sejam mais válidas. Se for o caso, tentaremos informar as versões em que essas definições ainda são válidas.
