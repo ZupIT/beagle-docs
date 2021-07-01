@@ -1,6 +1,6 @@
 ---
 title: AddChildren
-weight: 257
+weight: 90
 description: >-
   Nesta seção, você encontra a definição do addChildren e detalhes de seus
   atributos

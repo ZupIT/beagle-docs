@@ -1,6 +1,6 @@
 ---
 title: Condition
-weight: 261
+weight: 80
 description: >-
   Nesta seção, você encontra a definição do Condition e detalhes de seus
   atributos

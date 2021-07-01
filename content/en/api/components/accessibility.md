@@ -1,6 +1,6 @@
 ---
 title: Accessibility
-weight: 228
+weight: 200
 description: Here you'll find a description of accessibility attributes
 ---
 

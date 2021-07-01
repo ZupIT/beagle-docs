@@ -8,126 +8,25 @@ description: Text Input component description and its attributes
 
 ## What is it? 
 
-Input is a component that displays an editable text area for the user. These text fields are used to collect inputs that the user insert using the keyboard. 
+The Text Input is a component that displays an editable text area for the user. These text inputs are used to collect data inputs from users using a keyboard. 
 
-See how the structure is represented by the attributes below:
+This component has the following attributes:
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left"><strong>Attribute</strong>
-      </th>
-      <th style="text-align:left"><strong>Type</strong>
-      </th>
-      <th style="text-align:left">Required</th>
-      <th style="text-align:left"><strong>Definition</strong>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">value</td>
-      <td style="text-align:left">
-        String or
-        <a href="https://docs.usebeagle.io/v/v1.0-en/api/context#bindings"><strong>Binding</strong></a>
-      </td>
-      <td style="text-align:left">&#x2713;</td>
-      <td style="text-align:left">Item referring to the input value that will be entered in the editable
-        text area of the Text Input component.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">placeholder</td>
-      <td style="text-align:left">
-        String or
-        <a href="https://docs.usebeagle.io/v/v1.0-en/api/context#bindings"><strong>Binding</strong></a>
-      </td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">The Placeholder is a text that is displayed when nothing has been entered
-        in the editable text field.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">readOnly</td>
-      <td style="text-align:left">Boolean</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">Check if the Input will be editable or read only.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">type</td>
-      <td style="text-align:left">TextInputType or <a href="../../context/#bindings"><strong>Binding</strong></a></td>
-      <td
-      style="text-align:left"></td>
-        <td style="text-align:left">This attribute identifies the text type that it will receive in the editable
-          field area. On Android and iOS, this field also attributes the type of
-          keyboard that will be shown to the user.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">styleId</td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">This attribute receives a key that is registered in the Design System
-        of each platform that customizes the component.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">error</td>
-      <td style="text-align:left">
-      <p>String or</p>
-        <p><a href="https://docs.usebeagle.io/v/v1.0-en/api/context#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
-      </td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">This attribute shows if the TextInput has an error.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">showError</td>
-      <td style="text-align:left">
-      <p>Boolean or</p>
-        <p><a href="https://docs.usebeagle.io/v/v1.0-en/api/context#bindings"><b>Binding</b></a>&lt;b&gt;&lt;/b&gt;</p>
-      </td>
-      </td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">Enables the error string to be visible or not.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">onChange</td>
-      <td style="text-align:left">List &lt;<a href="../../actions/"><strong>Action</strong></a>&gt;</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">
-        Actions array that this field can trigger when its value is altered. It
-          is possible to define a <a href="https://docs.usebeagle.io/v/v1.0-en/resources/customization/beagle-para-web/customized-actions"><strong>customized action</strong></a><strong> </strong>or
-          any available action in the interface, for example, an action that shows
-          an Alert message. <strong><br /><br /></strong>This attribute is optional, but if
-          an action is defined here it needs to be configured in the fronted.
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">onBlur</td>
-      <td style="text-align:left">List &lt;<a href="https://docs.usebeagle.io/v/v1.0-en/api/actions"><strong>Action</strong></a>&gt;</td>
-      <td
-      style="text-align:left"></td>
-        <td style="text-align:left">
-          Action array that this field can trigger when its focus is removed. It
-            is possible to defined a <a href="https://docs.usebeagle.io/v/v1.0-en/resources/customization/beagle-para-web/customized-actions"><strong>customized action</strong></a><strong> </strong>or
-            any available action in the interface, for example, an action that shows
-            an alert message (<a href="../../actions/alert"><strong>Alert</strong></a>).
-          This attribute is optional, but if an action is defined here it needs
-            to be configured in the fronted.
-        </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">onFocus</td>
-      <td style="text-align:left">List &lt;<a href="https://docs.usebeagle.io/v/v1.0-en/api/actions"><strong>Action</strong></a>&gt;</td>
-      <td
-      style="text-align:left"></td>
-        <td style="text-align:left">
-          Actions array that this field can trigger when this field is on focus.
-            It is possible to defined a <a href="https://docs.usebeagle.io/v/v1.0-en/resources/customization/beagle-para-web/customized-actions"><strong>customized action</strong></a><strong> </strong>or
-            any available action in the interface, for example, an action that shows
-            an alert message (<a href="../../actions/alert"><strong>Alert</strong></a><strong>). </strong>
-          This attribute is optional, but if an action is defined here it needs
-            to be configured in the fronted.
-        </td>
-    </tr>
-  </tbody>
-</table>
+|Attribute|Type|Required|Definition|
+|:-----|:-----|:-----:|:-----|
+|value|String or [Binding]({{< ref path="/api/context#bindings" lang="en" >}})|&#x2713;|Item referring to the input value that will be entered in the Text Input component editable text field area.|
+|placeholder|String or [Binding]({{< ref path="/api/context#bindings" lang="en" >}})||The Placeholder is a text that is displayed when nothing has been entered in the editable text field.|
+|enabled|Boolean||Enables or disables a text field|
+|readOnly|Boolean||Set the text field to be read only when set to `true`.|
+|type|TextInputType or [Binding]({{< ref path="/api/context#bindings" lang="en" >}})||This attribute identifies the text type that it will feed the text field area. On Android and iOS, this field also attributes the type of keyboard that will shown.|
+|styleId|String||This attribute sets a String key to map this component in a Design System on the front end and set an style to it.|
+|error|String or [Binding]({{< ref path="/api/context#bindings" lang="en" >}})||This attribute defines the TextInput error message.|
+|showError|Boolean or [Binding]({{< ref path="/api/context#bindings" lang="en" >}})||Enables the error message to be visible when set to `true`.|
+|onFocus|List&lt;Action&gt;||Sets a List of [Actions]({{< ref path="/api/actions" lang="en" >}}) that are triggered when the text field **gains focus**|
+|onChange|List&lt;Action&gt;||Sets a List of [Actions]({{< ref path="/api/actions" lang="en" >}}) that are triggered when the text field **value changes**|
+|onBlur|List&lt;Action&gt;||Sets a List of [Actions]({{< ref path="/api/actions" lang="en" >}}) that are triggered when the text field **looses focus**| 
+
+>>>>>>> a1e8cf44... updates the text input info, attribute details and table structure
 
 ### TextInputType
 

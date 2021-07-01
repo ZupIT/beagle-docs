@@ -1,6 +1,6 @@
 ---
 title: Visão Geral
-weight: 1
+weight: 10
 type: overview
 description: Ações disponíveis para navegação na aplicação.
 ---

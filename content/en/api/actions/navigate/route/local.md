@@ -1,6 +1,6 @@
 ---
 title: Local
-weight: 270
+weight: 30
 ---
 
 ---
@@ -13,7 +13,7 @@ The structure is represented by the attributes below:
 
 | **Attribute** | **Type**                       | Required | **Definition**      |
 | :------------ | :----------------------------- | :------- | :------------------ |
-| screen        | [**Screen**]({{< ref path="/api/screen" lang="en" >}}) |          | Screen to be loaded |
+| screen        | [**Screen**]({{< ref path="/api/components/layout/screen" lang="en" >}}) |          | Screen to be loaded |
 
 ## How to use it?
 

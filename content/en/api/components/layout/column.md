@@ -1,6 +1,6 @@
 ---
 title: Column
-weight: 338
+weight: 40
 description: You will find here the description of the Column function and its attributes details
 ---
 

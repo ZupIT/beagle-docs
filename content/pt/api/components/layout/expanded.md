@@ -1,6 +1,6 @@
 ---
 title: Expanded
-weight: 338
+weight: 70
 description: Descrição da função Expanded e seus atributos
 ---
 
