@@ -16,7 +16,7 @@ The structure is represented by the attributes below:
 | :-------- | :-------------------------------------------------- | :------- | :-------------------------------------------------------------------------------------------------- |
 | context   | [**ContextData**]({{< ref path="/api/context" lang="en" >}}) |          | Defines a **context** for the component. |
 | onPull    | List<[**Action**]({{< ref path="/api/actions" lang="en" >}})> |          | List of actions that are performed when the **child** component is pulled. |
-| isRefreshing | Boolean or [**Binding**]({{< ref path="/api/context#bindings" lang="en" >}}) |          | Expression that controls when the loading indicator is showing. |
+| isRefreshing | Boolean or [**Binding**]({{< ref path="/api/context#bindings" lang="en" >}}) |          | Expression that controls when the loading indicator is shown. |
 | color     | String or [**Binding**]({{< ref path="/api/context#bindings" lang="en" >}}) |          | Defines the color of the loading indicator. |
 | child     | [**ServerDrivenComponent**]({{< ref path="/api/components" lang="en" >}}) | ✓        | Defines the component that will be configured with the **PullToRefresh**. |
 
