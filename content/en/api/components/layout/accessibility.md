@@ -1,6 +1,6 @@
 ---
 title: Accessibility
-weight: 338
+weight: 160
 description: You will find here the description of the Accessibility function and its attributes details
 ---
 

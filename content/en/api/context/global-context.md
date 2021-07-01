@@ -1,6 +1,6 @@
 ---
 title: Global Context
-weight: 353
+weight: 30
 description: >-
   Here you'll find the complete description of global context.
 ---

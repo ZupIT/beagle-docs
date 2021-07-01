@@ -1,6 +1,6 @@
 ---
 title: Overview
-weight: 1
+weight: 10
 type: overview
 description: Here you will find all information about components and its attributes details.
 ---
@@ -9,7 +9,7 @@ description: Here you will find all information about components and its attribu
 
 ![](/shared/components-01-beagle.png)
 
-`ServenDrivenComponent` is the father of all Beagle's components, such as `widgets`, `forms` e `navigation`, they will be implemented through`ServerDrivenComponent`.
+`ServenDrivenComponent` is the father of all Beagle's components, such as `Widgets`, `Forms` e `Navigate`, they will be implemented through`ServerDrivenComponent`.
 
 Any visual component is required to extend a specific class to work on Beagle. Some of these components are already implemented like `Button`, `Text` and `Image`.
 

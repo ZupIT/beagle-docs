@@ -1,6 +1,6 @@
 ---
 title: Widget
-weight: 366
+weight: 300
 description: >-
   In this section, you will find more about widget's components and its
   attributes details.

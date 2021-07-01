@@ -1,6 +1,6 @@
 ---
 title: Row
-weight: 338
+weight: 50
 description: You will find here the description of the Row function and its attributes details
 ---
 

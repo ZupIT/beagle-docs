@@ -1,6 +1,6 @@
 ---
 title: Pageindicator
-weight: 319
+weight: 344
 description: You will find here a description of PageIndicatorComponent.
 ---
 

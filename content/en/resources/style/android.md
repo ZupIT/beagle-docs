@@ -79,7 +79,7 @@ Like the texts and inputs, the buttons on Beagle Android are **fully customizabl
 
 ### Toolbar
 
-Inside Beagle's library for Android, the tool bar is part of[ **NavigationBar's class**.]({{< ref path="/api/screen/navigation-bar#what-is-a-navigationbaritem" lang="en" >}}) To make it properly work on [**BeagleActivity**]({{< ref path="/get-started/creating-a-project-from-scratch/case-android#step-4-create-appbeagleactivity" lang="en" >}}), you need to inform Beagle which bar will be used on your application.
+Inside Beagle's library for Android, the tool bar is part of[ **NavigationBar's class**.]({{< ref path="/api/components/layout/screen/navigation-bar#what-is-a-navigationbaritem" lang="en" >}}) To make it properly work on [**BeagleActivity**]({{< ref path="/get-started/creating-a-project-from-scratch/case-android#step-4-create-appbeagleactivity" lang="en" >}}), you need to inform Beagle which bar will be used on your application.
 
 The bar customization can be done in the moment that it passes through Beagle. Besides these attributes, Toolbar has other four  exclusive ones: 
 
