@@ -29,7 +29,7 @@ A estrutura é representada como mostrado abaixo:
 {{< tabs id="T124" >}}
 {{% tab name="JSON" %}}
 
-<!-- json-playground:webView.json
+<!-- json-playground:pullToRefresh.json
 {
     "_beagleComponent_": "beagle:container",
     "children": [
@@ -73,7 +73,7 @@ A estrutura é representada como mostrado abaixo:
 }
 -->
 
-{{% playground file="webView.json" language="pt" %}}
+{{% playground file="pullToRefresh.json" language="pt" platform="ios" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
