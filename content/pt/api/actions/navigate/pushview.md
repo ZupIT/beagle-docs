@@ -1,6 +1,6 @@
 ---
 title: PushView
-weight: 279
+weight: 20
 description: Descrição da ação PushView e seus atributos
 ---
 
@@ -20,7 +20,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 No exemplo abaixo, temos uma tela vinda do BFF com um botão, que ao ser clicado, abre um novo fragment server-driven com a tela especificada pelo BFF.
 
-Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e chame esse endpoint no frontend. Você poderá passar tanto uma rota local \(que passará uma [**screen**]({{< ref path="/api/screen" lang="pt" >}}) na rota\), quanto remota \(que passará o endpoint da tela para a qual irá navegar\).
+Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e chame esse endpoint no frontend. Você poderá passar tanto uma rota local \(que passará uma [**screen**]({{< ref path="/api/components/layout/screen" lang="pt" >}}) na rota\), quanto remota \(que passará o endpoint da tela para a qual irá navegar\).
 
 {{< tabs id="T113" >}}
 {{% tab name="JSON" %}}

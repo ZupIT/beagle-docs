@@ -1,6 +1,6 @@
 ---
 title: Expanded
-weight: 338
+weight: 70
 description: You will find here the description of the Expanded function and its attributes details
 ---
 

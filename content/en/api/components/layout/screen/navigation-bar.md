@@ -1,6 +1,6 @@
 ---
 title: Navigation Bar
-weight: 359
+weight: 20
 ---
 
 ---
@@ -15,7 +15,7 @@ A class that defines a navigation bar in the top of the screen and it's composed
 | show back button          | Bool                                                    |          | Enables the return bottom on the action/navigation's bar. Default is `true`. |
 | style id                  | String                                                  |          | Allows local customization for the action/navigation's bar.                  |
 | navigation bar items      | [**Navigation Bar Item**](#what-is-a-navigationbaritem) |          | Defines an item's list for the action/navigation's bar.                      |
-| back button accessibility | [**Accessibility**]({{< ref path="/api/accessibility" lang="en" >}})            |          | Accessibility's informations of the backButton.                              |
+| back button accessibility | [**Accessibility**]({{< ref path="/api/components/accessibility" lang="en" >}})            |          | Accessibility's informations of the backButton.                              |
 
 ## What is a NavigationBarItem?
 
@@ -26,7 +26,7 @@ A class that defines an item for `Navigation's bar` and and it has the following
 | text          | String                                       |          | Title for the bar's item.                                           |
 | image         | [**Image**]({{< ref path="/api/components/ui/image/" lang="en" >}})  |          | Image for the bar's item.                                           |
 | action        | [**Action**]({{< ref path="/api/actions/" lang="en" >}})             |          | Action that can be done when you click on the navigations bar item. |
-| accessibility | [**Accessibility**]({{< ref path="/api/accessibility" lang="en" >}}) |          | Accessibiliy's options for the navigation item.                     |
+| accessibility | [**Accessibility**]({{< ref path="/api/components/accessibility" lang="en" >}}) |          | Accessibiliy's options for the navigation item.                     |
 | id            | String                                       |          | Component's identifier.                                             |
 
 ## **How to use it?**

@@ -1,6 +1,6 @@
 ---
 title: Confirm
-weight: 263
+weight: 40
 description: >-
   Nesta seção, você encontra a definição do Confirm e os detalhes de seus
   atributos

@@ -1,6 +1,6 @@
 ---
 title: Alert
-weight: 234
+weight: 30
 description: You will find here Alert definition and its attributes details
 ---
 

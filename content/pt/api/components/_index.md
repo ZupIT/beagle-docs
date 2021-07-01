@@ -1,6 +1,6 @@
 ---
 title: Componentes
-weight: 308
+weight: 10
 description: Descrição dos componentes e seus atributos
 ---
 
@@ -22,7 +22,7 @@ O Beagle possui **14** **componentes** atualmente divididos em **5 categorias**:
 - [**Container**]({{< ref path="/api/components/layout/container" lang="pt" >}})
 - [**List View**]({{< ref path="/api/components/layout/listview" lang="pt" >}})
 - [**PageView**]({{< ref path="/api/components/layout/pageview" lang="pt" >}})
-- [**PageIndicator**]({{< ref path="/api/components/layout/pageindicator" lang="pt" >}})
+- [**PageIndicator**]({{< ref path="/api/components/ui/pageindicator" lang="pt" >}})
 - [**ScrollView**]({{< ref path="/api/components/layout/scrollview" lang="pt" >}})
   {{% /tab %}}
 

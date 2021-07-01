@@ -1,6 +1,6 @@
 ---
 title: Center
-weight: 338
+weight: 60
 description: Descrição da função Center e seus atributos
 ---
 

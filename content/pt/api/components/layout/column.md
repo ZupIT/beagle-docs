@@ -1,6 +1,6 @@
 ---
 title: Column
-weight: 338
+weight: 40
 description: Descrição da função Column e seus atributos
 ---
 

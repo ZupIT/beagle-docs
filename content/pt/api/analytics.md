@@ -1,6 +1,6 @@
 ---
 title: Analytics
-weight: 306
+weight: 40
 description: >-
   Descrição de como preparar a aplicação para mapear informações para o
   analytics

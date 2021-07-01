@@ -1,6 +1,6 @@
 ---
 title: SizedBox
-weight: 338
+weight: 110
 description: You will find here the description of the SizedBox function and its attributes details
 ---
 

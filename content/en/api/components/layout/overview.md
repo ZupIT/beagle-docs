@@ -1,6 +1,6 @@
 ---
 title: Overview
-weight: 1
+weight: 10
 type: overview
 description: Layout components description and its attributes details
 ---

@@ -1,6 +1,6 @@
 ---
 title: Local
-weight: 295
+weight: 30
 description: Descrição da classe Local e seus atributos
 ---
 
@@ -14,7 +14,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo**                       | Obrigatório | **Definição**        |
 | :----------- | :----------------------------- | :---------: | :------------------- |
-| screen       | [Screen]({{< ref path="/api/screen/" lang="pt" >}}) |      ✓      | Tela a ser carregada |
+| screen       | [Screen]({{< ref path="/api/components/layout/screen" lang="pt" >}}) |      ✓      | Tela a ser carregada |
 
 ## Como usar?
 

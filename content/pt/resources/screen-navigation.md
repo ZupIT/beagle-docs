@@ -20,7 +20,7 @@ Depois de fazer todas as configurações, basta colocar o código dos exemplos c
 
 Algumas ações de navegação precisam de um parâmetro. É possível receber dois tipos de rota, que são:
 
-- **Local:** navegação interna que já espera pela nova [**tela**]({{< ref path="/api/screen/" lang="pt" >}}).
+- **Local:** navegação interna que já espera pela nova [**tela**]({{< ref path="/api/components/layout/screen" lang="pt" >}}).
 - **Remote:** navegação que, a partir de uma URL, aponta para uma API que irá retornar um ou mais componentes do Beagle.
 
 No exemplo abaixo, você vê um caso onde o `route` é `remote`:
