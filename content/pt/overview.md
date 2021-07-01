@@ -23,7 +23,13 @@ Ao utilizar o Beagle, desenvolvedores podem:
 
 ## Como o Beagle funciona?
 
-A melhor maneira de entender o Beagle é vê-lo em ação. Aqui, mostraremos uma tela simples declarada via Beagle, contendo apenas textos, imagens e algumas configurações de estilo. No final desta seção, você estará familiarizado com os recursos mais comuns do Beagle.
+A melhor maneira de entender o Beagle é vê-lo em ação. Por isso, mostraremos **como construir uma tela simples com o Beagle**.
+
+Comentaremos sobre cada pedaço da tela (texto, imagem, botão, e configurações de estilo), e deixaremos links para outras partes da documentação que entram em mais detalhes. Ao final dessa página, você se familiarizará com os recursos mais comuns do Beagle.
+
+> Os links para outras páginas são apenas para informações mais detalhadas, não há necessidade de acessá-los imediatamente.
+
+Dito isso, aqui está a tela que discutiremos:
 
 <!-- json-playground:overview-simple-example.json
 {
@@ -101,7 +107,7 @@ A melhor maneira de entender o Beagle é vê-lo em ação. Aqui, mostraremos uma
 >
 > Para obter mais informações sobre esta ferramenta, consulte a [seção Playground]({{< ref path="playground/_index.md" >}}).
 
-Como você pode ver ao lado esquerdo, estamos declarando nossa tela com JSON. Esse JSON seria o que o seu backend fornece ao frontend por meio de uma resposta HTTP. O frontend irá interpretá-lo e renderizá-lo corretamente na tela da plataforma (como no lado direito). O Beagle fornece bibliotecas no backend e frontend que lidam com esse fluxo para você.
+Como você pode ver ao lado esquerdo, estamos declarando nossa tela com JSON. Esse JSON seria o quê o backend fornece ao frontend por meio de uma resposta HTTP. O frontend, então, irá interpretá-lo e renderizá-lo corretamente na tela da plataforma (como no lado direito). O Beagle fornece bibliotecas no backend e frontend que lidam com esse fluxo para você.
 
 Nos exemplos, utilizamos JSON porque é a maneira mais direta de se usar o Beagle. No entanto, o Beagle também possui uma "linguagem" (DSL em Kotlin) que você pode usar em seu backend para produzir esse mesmo JSON de uma maneira mais produtiva – com autocomplete e outros benefícios.
 
@@ -150,9 +156,7 @@ Confira abaixo, nós usamos o path `remote` fornecendo uma `url` que o Beagle us
 
 > Você pode ter controle total da requisição acionada por esta imagem remota. Você só precisa configurar sua própria *Camada de Rede* como uma *Dependência do Beagle*. Para entender melhor como fazer isso, ou como configurar outras Dependências do Beagle, você pode verificar a [seção de Customização]({{< ref path="resources/customization/_index.md" >}}).
 
-O Beagle já vem com vários componentes úteis, você pode navegar por todos eles na [seção de componentes]({{< ref path = "api/components/_index.md" >}}). Você também pode definir seus próprios componentes, chamados de [Custom Components]({{< ref path="resources/customization/_index.md" >}}), mas guarde isso para depois.
-
-> O atributo *children* (às vezes apenas *child*) está presente em outros components como [Screen]({{< ref path="api/screen/_index.md" >}}) e [ListView]({{< ref path="api/components/layout/listview.md" >}}), e eles também são usados para **compor hierarquias de views**.
+O Beagle já vem com vários componentes úteis, você pode navegar por todos eles na [seção de componentes]({{< ref path = "api/components/_index.md" >}}). Há outros componentes, por exemplo, que possuem o atributo *children* (às vezes apenas *child*) como o [Screen]({{< ref path="api/screen/_index.md" >}}) e o [ListView]({{< ref path="api/components/layout/listview.md" >}}), e eles são usados para **compor hierarquias de views** como o *Container*. Também é possível definir seus próprios componentes, chamados de [Custom Components]({{< ref path="resources/customization/_index.md" >}}), e utilizá-los de forma muito similar a um componente que já vem no Beagle.
 
 ### Style
 

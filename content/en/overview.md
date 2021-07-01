@@ -23,7 +23,13 @@ By using Beagle, developers can:
 
 ## How does Beagle work?
 
-The best way to understand Beagle is to see it in action. Here, we will show you a simple screen declared via Beagle, containing just texts, images, and some style configurations. At the end of this section, you will be familiar with Beagle's most common features.
+The best way to understand Beagle is to see it in action. That's why we'll show you **how to build a simple screen with Beagle**.
+
+We'll comment on each piece of the screen (text, image, button, and style settings), and leave links to other parts of the documentation that go into more detail. By the end of this page, you'll become familiar with the most common features of Beagle.
+
+> The links to other pages are only for further information, you don't need to access them right away.
+
+That said, here's the screen we will discuss:
 
 <!-- json-playground:overview-simple-example.json
 {
@@ -101,7 +107,7 @@ The best way to understand Beagle is to see it in action. Here, we will show you
 >
 > For more information about this tool, check out the [Playground section]({{< ref path="playground/_index.md" >}}).
 
-As you can see on the left side, we are declaring our screen with JSON. This JSON is what your backend would provide to your frontend via an HTTP response. The frontend will then interpret it, and properly render it on the platform's screen (as you can see on the right side). Beagle provides libraries on the backend and frontend to handle this workflow for you.
+As you can see on the left side, we are declaring our screen with JSON. This JSON is what the backend would provide to the frontend via an HTTP response. The frontend will then interpret it, and properly render it on the platform's screen (as you can see on the right side). Beagle provides libraries on the backend and frontend to handle this workflow for you.
 
 We use JSON in the examples because it is the most straightforward way to use Beagle. However, Beagle actually has a "language" (DSL in Kotlin) that you can use in your backend to produce this same JSON in a more productive way – with autocomplete and other benefits.
 
@@ -150,9 +156,7 @@ Check out below, we used a `remote` path by providing a `url` which Beagle will 
 
 > You can have full control of the network request triggered by this remote image. You just need to configure your own *Network Layer* as a *Beagle Dependency*. To better understand how to do that, or how to configure other Beagle Dependencies, you can check the [Customization section]({{< ref path="resources/customization/_index.md" >}}).
 
-Beagle comes with a lot of useful components, you can navigate through all them in [the components section]({{< ref path="api/components/_index.md" >}}). You can also define your own components, which are called [Custom Components]({{< ref path="resources/customization/_index.md" >}}), but save that for later.
-
-> The *children* attribute (sometimes just *child*) is present in other components like [Screen]({{< ref path="api/screen/_index.md" >}}) and [ListView]({{< ref path="api/components/layout/listview.md" >}}), and they are also used to **compose view hierarchies**.
+Beagle already comes with a lot of useful components, you can browse them all in the [components section]({{< ref path="api/components/_index.md" >}}). There are other components, for example, that have the *children* attribute (sometimes just *child*) like [Screen]({{< ref path="api/screen/_index.md" >}}) and [ListView]({{< ref path="api/components/layout/listview.md" >}}), and they are used to *compose view hierarchies* like a *Container*. You can also define your own components, called [Custom Components]({{< ref path="resources/customization/_index.md" >}}), and use them in a very similar way to a component that comes with Beagle.
 
 ### Styling
 
