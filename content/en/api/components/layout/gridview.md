@@ -1,6 +1,6 @@
 ---
 title: GridView
-weight: 340
+weight: 90
 description: "Here you will find the documentation about the GridView component, its attributes and constructors."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: ListView
-weight: 340
+weight: 80
 description: "Descrição do componente ListView, seus atributos e construtores"
 ---
 

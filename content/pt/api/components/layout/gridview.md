@@ -1,6 +1,6 @@
 ---
 title: GridView
-weight: 340
+weight: 90
 description: "Descrição do componente GridView, seus atributos e construtores"
 ---
 

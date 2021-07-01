@@ -1,7 +1,6 @@
 ---
-title: Overview
-weight: 1
-type: overview
+title: Screen
+weight: 20
 description: Here you'll find all about screen's components and its attributes details.
 ---
 
@@ -14,10 +13,10 @@ Your screen has attributes and components that can be used and configured. On th
 | **Attribute**          | **Type**                                                  | Required | **Definition**                                                                                        |
 | :--------------------- | :-------------------------------------------------------- | :------- | :---------------------------------------------------------------------------------------------------- |
 | identifier             | String                                                    |          | Attribute that globally identifies a screen in your application so you can attributes actions for it. |
-| safe area              | [**Safe Area**]({{< ref path="/api/screen/safe-area" lang="en" >}})               |          | Specifies a screen's component position.                                                              |
-| navigation bar         | [**Navigation Bar**]({{< ref path="/api/screen/navigation-bar" lang="en" >}})     |          | Allows action/navigation's bar on the screen.                                                         |
+| safe area              | [**Safe Area**]({{< ref path="/api/components/layout/screen/safe-area" lang="en" >}})               |          | Specifies a screen's component position.                                                              |
+| navigation bar         | [**Navigation Bar**]({{< ref path="/api/components/layout/screen/navigation-bar" lang="en" >}})     |          | Allows action/navigation's bar on the screen.                                                         |
 | child                  | [**Server-Driven Component**]({{< ref path="/api/components/" lang="en" >}})      | ✓        | Define screen's elements. It can be any visual component that extends to`ServerDrivenComponent`.      |
-| style                  | [**Style**]({{< ref path="/api/widget#style-attributes" lang="en" >}})            |          | Provide visual customization options to the `screen.`                                                 |
+| style                  | [**Style**]({{< ref path="/api/components/widget#style-attributes" lang="en" >}})            |          | Provide visual customization options to the `screen.`                                                 |
 | screen analytics event | [**Screen Event**]({{< ref path="/api/analytics#screenview-option" lang="en" >}}) |          | Configure analytics elements to your screen.                                                          |
 | context                | [**ContextData**]({{< ref path="/api/context/" lang="en" >}})                     |          | Screen's context.                                                                                     |
 

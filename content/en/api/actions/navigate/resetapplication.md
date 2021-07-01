@@ -1,6 +1,6 @@
 ---
 title: ResetApplication
-weight: 264
+weight: 100
 description: Here you'll find ResetApplication description and its attribute.
 ---
 
