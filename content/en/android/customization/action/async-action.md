@@ -5,7 +5,7 @@ description: In this section, you will find how to create a custom async action.
 ---
 
 **Topics covered:**
- - How to creat an Asyn Action
+ - How to create an Async Action
 
 **Requirements:**
  - A project with Beagle configured;
