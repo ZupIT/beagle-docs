@@ -618,7 +618,7 @@ const MyCustomActionHandler: ActionHandler<MyCustomAction> = ({ action, beagleVi
 
 ### Usando o Renderer
 
-O renderizador possui duas funções: `doFullRender` e`doPartialRender`.
+O renderizador possui duas funções principais: `doFullRender` e`doPartialRender`.
 
 1. `doFullRender`: renderiza a árvore passada como parâmetro rodando todo os passos para renderização. Renderização completa deve ser feita toda vez que novas nodes são criadas.
 2. `doPartialRender`: apenas roda a view snapshot e os passos depois disso. Renderização parcial deve ser usada para modificar nodes existentes.
