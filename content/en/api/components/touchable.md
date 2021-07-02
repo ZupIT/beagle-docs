@@ -50,7 +50,7 @@ See how the structure is represented:
       <td style="text-align:left">child</td>
       <td style="text-align:left">
        <a href="../widget"><strong>Server</strong></a>
-       <a href="https://docs.usebeagle.io/api/widget"><strong>DrivenComponent</strong></a>
+       <a href="https://docs.usebeagle.io/api/components/widget"><strong>DrivenComponent</strong></a>
       </td>
       <td style="text-align:center">&#x2713;</td>
       <td style="text-align:left">Defines a widget that will trigger the<a href="https://docs.usebeagle.io/v/v1.0-en/api/actions"><strong> </strong></a>onPress

@@ -1,6 +1,6 @@
 ---
 title: Components
-weight: 283
+weight: 10
 description: Here you will find all information about components and its attributes details.
 ---
 
@@ -45,6 +45,7 @@ Beagle has **21 components**, they are currently divided into **5 categories**:
 
 - [**Button**]({{< ref path="/api/components/ui/button" lang="en" >}})
 - [**Image**]({{< ref path="/api/components/ui/image" lang="en" >}})
+- [**PullToRefresh**]({{< ref path="/api/components/ui/pulltorefresh" lang="en" >}})
 - [**Text**]({{< ref path="/api/components/ui/text" lang="en" >}})
 - [**Web View**]({{< ref path="/api/components/ui/webview" lang="en" >}})
   {{% /tab %}}

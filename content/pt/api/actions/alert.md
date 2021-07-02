@@ -1,6 +1,6 @@
 ---
 title: Alert
-weight: 259
+weight: 30
 description: 'Nesta seção, você encontra a definição do Alert e detalhes de seus atributos'
 ---
 

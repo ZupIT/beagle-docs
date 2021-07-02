@@ -1,6 +1,6 @@
 ---
 title: Condition
-weight: 236
+weight: 80
 description: >-
   You will find here the definition of Condition and more details about its
   attributes

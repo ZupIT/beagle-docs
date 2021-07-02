@@ -1,6 +1,6 @@
 ---
 title: Contexto Global
-weight: 379
+weight: 30
 description: "Nesta seção, você encontra descrição completa de contexto global."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: ListView
-weight: 315
+weight: 80
 description: "You will find here the description of the ListView component, its attributes and constructors"
 ---
 

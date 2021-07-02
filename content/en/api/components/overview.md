@@ -1,6 +1,6 @@
 ---
 title: Overview
-weight: 1
+weight: 10
 type: overview
 description: Here you will find all information about components and its attributes details.
 ---
@@ -9,7 +9,7 @@ description: Here you will find all information about components and its attribu
 
 ![](/shared/components-01-beagle.png)
 
-`ServenDrivenComponent` is the father of all Beagle's components, such as `widgets`, `forms` e `navigation`, they will be implemented through`ServerDrivenComponent`.
+`ServenDrivenComponent` is the father of all Beagle's components, such as `Widgets`, `Forms` e `Navigate`, they will be implemented through`ServerDrivenComponent`.
 
 Any visual component is required to extend a specific class to work on Beagle. Some of these components are already implemented like `Button`, `Text` and `Image`.
 
@@ -46,6 +46,7 @@ Beagle has **21 components**, they are currently divided into **5 categories**:
 
 - [**Button**]({{< ref path="/api/components/ui/button" lang="en" >}})
 - [**Image**]({{< ref path="/api/components/ui/image" lang="en" >}})
+- [**PullToRefresh**]({{< ref path="/api/components/ui/pulltorefresh" lang="en" >}})
 - [**Text**]({{< ref path="/api/components/ui/text" lang="en" >}})
 - [**Web View**]({{< ref path="/api/components/ui/webview" lang="en" >}})
   {{% /tab %}}

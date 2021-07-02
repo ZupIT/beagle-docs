@@ -385,7 +385,7 @@ This lifecycle can be used to run code that needs to run every time the view is 
 
 #### Example of usage
 
-Contexts are defined, referenced and manipulated in the JSON of the view. But what if you want to access data of the application and not the view itself? Beagle offers a feature called "[**Global context**]({{< ref path="/api/global-context" lang="en" >}})" that is able to deal with this scenario, but suppose there is no Global context, you can still implement this behavior by using the AfterViewSnapshot lifecycle.
+Contexts are defined, referenced and manipulated in the JSON of the view. But what if you want to access data of the application and not the view itself? Beagle offers a feature called "[**Global context**]({{< ref path="/api/context/global-context" lang="en" >}})" that is able to deal with this scenario, but suppose there is no Global context, you can still implement this behavior by using the AfterViewSnapshot lifecycle.
 
 Let's say you have a financial application and you want to show the user's balance. You need to guarantee that, in every re-render, the most recent value for the balance will be used.
 
@@ -438,7 +438,7 @@ const config = {
 
 The code above tells Beagle to replace the values in the context "user" by the values in the application. This piece of code cannot be placed before the view is snapshotted because we have the requirement to update the balance value in every render. It also can't be placed in the next lifecycle \(BeforeRender\), because the context would then be already evaluated and our values wouldn't be processed.
 
-It is important to notice that the action `setContext` would not work over the context `user`, since you are always replacing the values for this context before processing any expression. This is just an example to show how this lifecycle could be used. To use application values in your Beagle view, it is always preferred to use the [**global context**]({{< ref path="/api/global-context" lang="en" >}}).
+It is important to notice that the action `setContext` would not work over the context `user`, since you are always replacing the values for this context before processing any expression. This is just an example to show how this lifecycle could be used. To use application values in your Beagle view, it is always preferred to use the [**global context**]({{< ref path="/api/context/global-context" lang="en" >}}).
 
 ### BeforeRender
 
@@ -622,7 +622,7 @@ const MyCustomActionHandler: ActionHandler<MyCustomAction> = ({ action, beagleVi
 
 ### Using the Renderer
 
-The renderer has only two functions: `doFullRender` and `doPartialRender`.
+The renderer has two main functions: `doFullRender` and `doPartialRender`.
 
 1. `doFullRender`: renders the tree passed as parameter by running all rendering steps over it. Full renders must be done every time new nodes are created
 2. `doPartialRender`: it only runs the view snapshot and the steps after that. Partial renders should be used to modify existent nodes.
@@ -640,6 +640,48 @@ Besides the type of the tree, there is no difference to the way we call `doFullR
    - `replace`: replaces the children of the node with the same id as the parameter `anchor` \(or the root if no anchor is specified\) with the tree passed in the first parameter.
    - `prepend`: pre-pends the tree passed in the first parameter to the children of the node with the same id as the parameter `anchor` \(or the root if no anchor is specified\).
    - `append`: appends the tree passed in the first parameter to the children of the node with the same id as the parameter `anchor` \(or the root if no anchor is specified\).
+
+There's a third additional method used to efficiently render lists based on a template, it's called `doTemplateRender`.
+
+The `doTemplateRender` renders according to a template manager and a matrix of contexts.
+
+Each line in the matrix of contexts represents an iteration and each column represents the value
+of a template variable. For instance, imagine a template with the variables `@{name}`, `@{sex}`
+and `@{address}`. Now suppose we want to render three different entries with this template.
+Here's a context matrix that could be used for this example:
+
+```
+[
+  [{ id: 'name', value: 'John' }, { id: 'sex', value: 'M' }, { id: 'address', value: { street: '42 Avenue', number: '256' } }],
+  [{ id: 'name', value: 'Sue' }, { id: 'sex', value: 'F' }, { id: 'address', value: { street: 'St Monica St', number: '85' } }],
+  [{ id: 'name', value: 'Paul' }, { id: 'sex', value: 'M' }, { id: 'address', value: { street: 'Bv Kennedy', number: '877' } }],
+]
+```
+
+Note that the parameter `contexts` adds to the context hierarchy that is already present in the
+tree, it doesn't replace it, i.e. you can still use the contexts declared in the current tree.
+
+For each line of the context matrix, a template is chosen from the template manager according to
+`case`, which is a Beagle expression that resolves to a boolean. `case` is resolved using the entire
+context of the current tree plus the contexts passed in the parameter `contexts` corresponding to
+the current iteration. If no template attends the condition the default template is used. If there's
+no default template, the iteration is skipped.
+
+After processing all items, the resulting tree is attached to the current tree at the node with
+id `anchor` (passed as parameter).
+
+The component manager is an optional parameter and is used to modify the resulting component.
+This can be very useful for managing ids, for instance. The component manager is a function that
+receives the component generated and the index of the current iteration, returning the modified
+component.
+
+**Parameters**
+1. templateManager: templates used to render each line of the context matrix.
+2. anchor: the id of the node in the current tree to attach the new nodes to.
+3. contexts: matrix of contexts where each line represents an item to be rendered according to
+the templateManager.
+4. componentManager: optional. When set, the component goes through this function before being
+processed.
 
 ### **Examples:**
 

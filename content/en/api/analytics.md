@@ -1,6 +1,6 @@
 ---
 title: Analytics
-weight: 281
+weight: 40
 description: >-
   Here you'll find how to prepare your application to map the Analytics
   information

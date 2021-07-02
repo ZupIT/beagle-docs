@@ -1,6 +1,6 @@
 ---
 title: SizedBox
-weight: 338
+weight: 110
 description: Descrição da função SizedBox e seus atributos
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Acessibilidade
-weight: 253
+weight: 200
 description: 'Nesta seção, você encontra uma descrição sobre a API de Acessibilidade'
 ---
 

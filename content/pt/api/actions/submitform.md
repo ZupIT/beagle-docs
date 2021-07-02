@@ -1,6 +1,6 @@
 ---
 title: SubmitForm
-weight: 303
+weight: 70
 description: >-
   Nesta seção, você encontra a definição do SubmitForm e detalhes de seus
   atributos.
