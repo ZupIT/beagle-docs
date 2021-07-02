@@ -643,6 +643,42 @@ Além do tipo de árvore, não há diferença na forma que o `doFullRender` e o 
 
    - `append`: acrescenta a árvore passada no primeiro parâmetro para a children do node com o mesmo id que o parâmetro `anchor` \(ou a raíz, se o anchor não for especificado\).
 
+Existe um terceiro método adicional usado para renderizar listas baseadas em templates de forma eficiente: o `doTemplateRender`.
+
+O `doTemplateRender` renderiza de acordo com um template manager (gerenciador de templates) e uma matriz de contextos.
+
+Cada linha na matriz de contextos representa uma iteração e cada coluna representa o valor de uma variável do template.
+Por exemplo, imagine um template com as variáveis `@{name}`, `@{sex}` e `@{address}`. Agora suponha que queremos renderizar
+três entradas diferentes com esse template. Veja um exemplo abaixo de uma matriz que poderia ser usada para esse exemplo.
+
+```
+[
+  [{ id: 'name', value: 'John' }, { id: 'sex', value: 'M' }, { id: 'address', value: { street: '42 Avenue', number: '256' } }],
+  [{ id: 'name', value: 'Sue' }, { id: 'sex', value: 'F' }, { id: 'address', value: { street: 'St Monica St', number: '85' } }],
+  [{ id: 'name', value: 'Paul' }, { id: 'sex', value: 'M' }, { id: 'address', value: { street: 'Bv Kennedy', number: '877' } }],
+]
+```
+
+Note que o parâmetro `contexts` adiciona à hierarquia de contextos que já existe na árvore, não é uma troca, i.e. ainda é possível
+usar os contextos declarados na árvore corrente.
+
+Para cada linha da matriz de contextos, um template é escolhido de acordo com a propriedade `case`, que é uma expressão Beagle que
+resolve para booleano. `case` é resolvido de acordo com os contextos declarados na árvore e com a matriz de contextos passada por
+parâmetro na linha/iteração atual. Se nenhum template atende às condições, então o template padrão (default) é usado. Se não existe
+um default, a iteração é ignorada.
+
+Após processar todos os itens, a árvore resultante é anexada à árvore atual no nó de id igual ao parâmetro `anchor`.
+
+O parâmetro `componentManager` é opcional e usado para modificar o componente resultante de cada iteração. Isso pode ser útil
+quando se deseja, por exemplo, manipular os ids de cada elemento da lista. O `componentManager` é uma função que recebe o componente
+gerado e o índice, retornando o componente modificado.
+
+**Parameters**
+1. templateManager: templates usados para renderizar cada linha da matriz de contextos.
+2. anchor: id do nó na árvore corrente onde anexar elementos gerados.
+3. contexts: matriz de contextos onde cada linha representa um item para renderizar de acordo com o `templateManager`.
+4. componentManager: opcional. Quando especificado, o componente passa por essa função antes de ser processado, possibilitando modificações.
+
 ### **Exemplos:**
 
 ```text
