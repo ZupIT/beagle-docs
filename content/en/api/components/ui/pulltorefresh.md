@@ -104,11 +104,9 @@ Container(
             child = Text("PullToRefresh")
         )
     )
-).applyFlex(
-    Flex(
-        grow = 1.0
-    )
-)
+).setFlex {
+    grow = 1.0
+}
 ```
 
 {{% /tab %}}
