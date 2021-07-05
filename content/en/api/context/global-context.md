@@ -184,7 +184,25 @@ Beagle.dependencies.globalContext.set(
 {{% alert color="info" %}}
 The context value is a `DynamicObject`, therefore it can take on any kind of value.
 {{% /alert %}}
+
 {{% /tab %}}
+
+
+{{% tab name="Flutter" %}}
+
+
+In Flutter the Global Context can be called through the `getInstance()` function which will provide a single instance (Singleton) of the `GlobalContext`, below is an example of how to use it:
+
+
+```dart
+import 'package:beagle/beagle.dart';
+
+GlobalContext.getInstance().then((value) => value.set(value, path));
+
+```
+
+{{% /tab %}}
+
 {{< /tabs >}}
 
 ## Recovering a Global Context
@@ -247,6 +265,18 @@ Beagle.dependencies.globalContext.get(path: "myValue")
 ```
 
 {{% /tab %}}
+
+{{% tab name="Flutter" %}}
+Like the set method, it's necessary to call the function `getInstance()` of the `GlobalContext` to use the `get` of the global context you will also need to call it, as in the example below: 
+
+```dart
+import 'package:beagle/beagle.dart';
+
+GlobalContext.getInstance().then((value) => value.get("myValue"));
+```
+
+{{% /tab %}}
+
 {{< /tabs >}}
 
 - The same way when using `GlobalContext.get()` without a `path` parameter, this method will return a whole JSON object -&gt; `{"myValue" : "Context has changed"}`
@@ -299,6 +329,20 @@ Beagle.dependencies.globalContext.clear()
 ```
 
 {{% /tab %}}
+
+
+{{% tab name="Flutter" %}}
+Remember that in the Flutter the global context access is made over the `getInstance()`
+
+```dart
+import 'package:beagle/beagle.dart';
+
+GlobalContext.getInstance().then((value) => value.clear());
+```
+
+
+{{% /tab %}}
+
 {{< /tabs >}}
 
 This way, the global context `VALUE` it will be completely erased and it will have an empty value \(""\), if called from its `GlobalContext.get()` function.
@@ -359,6 +403,16 @@ Beagle.dependencies.globalContext.clear(path: "myValue1")
 ```
 
 {{% /tab %}}
+
+{{% tab name="Flutter" %}}
+```dart
+import 'package:beagle/beagle.dart';
+
+GlobalContext.getInstance().then((value) => value.clear("myValue1"));
+
+```
+{{% /tab %}}
+
 {{< /tabs >}}
 
 The property represented by `path` "myValue1" will be completly removed from the glova context, that it will be:

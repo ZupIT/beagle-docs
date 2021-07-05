@@ -30,7 +30,7 @@ void startBeagle() {
 ```
 
 This file tells everything Beagle needs to know to render your views. Here we show only the basic options, for a list
-of available options please check the [documentation for the BeagleConfig]({{< ref path="/resources/customization/flutter/configuration" lang="en" >}}).
+of available options please check the [documentation for the BeagleConfig]({{< ref path="/resources/customization/beagle-for-flutter/configuration" lang="en" >}}).
 
 ### 2. Starting Beagle
 You can start Beagle wherever it feels more appropriate for your use. For this guide, we're going to start Beagle as
@@ -86,7 +86,7 @@ Above, we used a simple Material App to render our first server driven view! You
 important part here is the component `BeagleWidget`, this is what includes a remote view in the layout.
 
 The `BeagleWidget` accepts other optional parameters, and so does the `BeagleScreenRequest`. To check them, please visit
-the [BeagleWidget documentation page]({{< ref path="/resources/customization/flutter/beagle-widget" lang="en" >}}).
+the [BeagleWidget documentation page]({{< ref path="/resources/customization/beagle-for-flutter/beagle-widget" lang="en" >}}).
 
 {{% alert color="success" %}}
 Congrats, you have finished your first Beagle Screen!
@@ -94,17 +94,17 @@ Congrats, you have finished your first Beagle Screen!
 
 ## Continue reading
 
-- [Configuration options]({{< ref path="/resources/customization/beagle-for-flutter/configuartion" lang="en" >}}): learn how to setup every property of Beagle.
+- [Configuration options]({{< ref path="/resources/customization/beagle-for-flutter/configuration" lang="en" >}}): learn how to setup every property of Beagle.
 - [The Beagle widget]({{< ref path="/resources/customization/beagle-for-flutter/beagle-widget" lang="en" >}}): the beagle widget lets you customize many aspects of the request and visual cues to the user.
 - [Accessing the localhost]({{< ref path="/resources/customization/beagle-for-flutter/localhost" lang="en" >}}): learn how to use a backend that serves views from the localhost.
 - [Beagle services]({{< ref path="/resources/customization/beagle-for-flutter/services" lang="en" >}}): customize services like the logger, storage, http client and image downloader.
 - [Design system]({{< ref path="/resources/customization/beagle-for-flutter/design-system" lang="en" >}}): register local images (mobileId) and styles for your components.
 - [Customization]({{< ref path="/resources/customization/beagle-for-flutter/customization" lang="en" >}}): learn how to register your custom components, actions and operations.
-- [Global Context]({{< ref path="/api/global-context" lang="en" >}}): learn how to manipulate the global context in Beagle Flutter.
+- [Global Context]({{< ref path="/api/context/global-context" lang="en" >}}): learn how to manipulate the global context in Beagle Flutter.
 - [Analytics]({{< ref path="/resources/analytics" lang="en" >}}): observe every action executed and navigation performed.
 - [Renderer]({{< ref path="/resources/customization/beagle-for-web/advanced-topics/renderer-api" lang="en" >}}): sometimes it might be necessary to interact with Beagle while rendering a component
 or executing an action. This article shows how to use the Renderer API to achieve complex behaviors.
 
 👉 If you wish to know the current development status of Beagle Flutter, check it
-[here]({{< ref path="/resources/customization/flutter/development" lang="en" >}}).
+[here]({{< ref path="/resources/customization/beagle-for-flutter/development" lang="en" >}}).
 Contributions are welcomed!
