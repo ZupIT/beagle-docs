@@ -78,7 +78,7 @@ exactly the same!
 valid for Beagle React Native. To go deeper into the lib, we suggest reading the articles under
 [resources > customization > Beagle for React Native]({{< ref path="/resources/customization/beagle-for-react-native" lang="en" >}})
 as well as
-[resources > customization > Beagle for Web]({{< ref path="/resources/customization/beagle-for-web" lang="en" >}})
+[resources > customization > Beagle for Web]({{< ref path="/web/commons" lang="en" >}})
 
 👉 If you wish to know the current development status of Beagle React Native, check it
 [here]({{< ref path="/resources/customization/beagle-for-react-native/development" lang="en" >}}).

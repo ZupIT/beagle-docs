@@ -75,7 +75,7 @@ para o Beagle React Native. Para obter um conhecimento mais profundo da lib, sug
 dos artigos em
 [recursos > customização > Beagle para React Native]({{< ref path="/resources/customization/beagle-for-react-native" lang="pt" >}})
 assim como
-[recursos > customização > Beagle para Web]({{< ref path="/resources/customization/beagle-for-web" lang="pt" >}})
+[recursos > customização > Beagle para Web]({{< ref path="/web/commons" lang="pt" >}})
 
 👉 Se você deseja saber do estado atual de desenvolvimento do Beagle RN, veja
 [aqui]({{< ref path="/resources/customization/beagle-for-react-native/development" lang="pt" >}}).

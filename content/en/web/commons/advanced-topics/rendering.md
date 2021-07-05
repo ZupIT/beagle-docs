@@ -10,7 +10,7 @@ description: Understanding and taking control over the rendering process
 The features described here are only available in versions 1.2.0 and above.
 {{% /alert %}}
 
-Read about [**Beagle tree data structure**]({{< ref path="/resources/customization/beagle-for-web/advanced-topics/data-structure" lang="en" >}}) in order to help you understand rendering.
+Read about [**Beagle tree data structure**]({{< ref path="/web/commons/advanced-topics/data-structure" lang="en" >}}) in order to help you understand rendering.
 
 Every Beagle Web library has a very well defined process of how it fetches, process and renders a view. There's an order that must always be respected and hook points where the developer can execute some code of his own \(lifecycles\).
 

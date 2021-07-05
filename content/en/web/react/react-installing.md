@@ -39,4 +39,4 @@ Now, keep configuring Beagle:
 
 👉Go to [**initial configurations** ]({{< ref path="/web/react/using-beagle" lang="en" >}})to enable the use of Beagle on your Web project.
 
-👉 If you want to go straight to practice, access our [**tutorial to create a project from zero**.]({{< ref path="/web/geral/creating-a-project-from-scratch" lang="en" >}})
+👉 If you want to go straight to practice, access our [**tutorial to create a project from zero**.]({{< ref path="/web/commons/creating-a-project-from-scratch" lang="en" >}})

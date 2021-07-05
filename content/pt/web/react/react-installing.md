@@ -37,4 +37,4 @@ Para continuar a configurar o Beagle:
 
 👉Vá para as [**configurações iniciais**]({{< ref path="/web/react/using-beagle" lang="pt" >}}) para habilitar uso do Beagle no seu projeto Web
 
-👉 Se quiser ir direto para prática, acesse nosso[ **tutorial para criar um projeto do zero**]({{< ref path="/web/geral/creating-a-project-from-scratch" lang="pt" >}})
+👉 Se quiser ir direto para prática, acesse nosso[ **tutorial para criar um projeto do zero**]({{< ref path="/web/commons/creating-a-project-from-scratch" lang="pt" >}})

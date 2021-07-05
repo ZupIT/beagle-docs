@@ -234,4 +234,4 @@ To learn more about configuring your frontend environment, see more at:
 
 👉Beagle implementation tutorial for [**iOS**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios" lang="en" >}}).
 
-👉Beagle implementation tutorial for [**Web**]({{< ref path="/web/geral/creating-a-project-from-scratch" lang="en" >}}).
+👉Beagle implementation tutorial for [**Web**]({{< ref path="/web/commons/creating-a-project-from-scratch" lang="en" >}}).

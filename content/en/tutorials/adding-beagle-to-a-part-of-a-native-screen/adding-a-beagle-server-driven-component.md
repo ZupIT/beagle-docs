@@ -306,7 +306,7 @@ At the end of the process, you will "call" the native screen that will shown up 
 {{% tab name="WEB" %}}
 If you haven't configured you library yet, [**check out on how to do it**.]({{< ref path="/web/" lang="en" >}})
 
-You have to use [**Remote View**]({{< ref path="/resources/customization/beagle-for-web/remote-view-parameters" lang="en" >}}), you can find on Beagle's library, to create hybrid screen with some server-driven components on the web.
+You have to use [**Remote View**]({{< ref path="/web/commons/remote-view-parameters" lang="en" >}}), you can find on Beagle's library, to create hybrid screen with some server-driven components on the web.
 
 See below how each framework works:
 
