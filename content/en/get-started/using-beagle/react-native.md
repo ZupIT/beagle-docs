@@ -71,7 +71,7 @@ Congrats, you have finished your first Beagle Screen!
 - [Local images]({{< ref path="/resources/customization/beagle-for-react-native/local-images" lang="en" >}})
 
 👉 For more details on how to use the Beagle Config and the component BeagleRemoteView, please,
-check the [React guide]({{< ref path="/get-started/using-beagle/web/react" lang="en" >}}), it works
+check the [React guide]({{< ref path="/web/react/using-beagle" lang="en" >}}), it works
 exactly the same!
 
 👉 Beagle React Native is still Beagle Web! Everything in this documentation for Beagle Web is also

@@ -90,14 +90,14 @@ export class Beagle {}
 ```
 
 {{% alert color="warning" %}}
-Se você não encontrou os arquivos `beagle-components.module.ts` ou `beagle.module.ts`, veja [**como configurar a biblioteca Beagle Web para o Angular**.]({{< ref path="/get-started/using-beagle/web/angular" lang="pt" >}})
+Se você não encontrou os arquivos `beagle-components.module.ts` ou `beagle.module.ts`, veja [**como configurar a biblioteca Beagle Web para o Angular**.]({{< ref path="/web/angular/using-beagle" lang="pt" >}})
 {{% /alert %}}
 {{% /tab %}}
 
 {{% tab name="React" %}}
 Abra o arquivo de configuração da biblioteca Beagle em seu projeto \(se você seguiu o tutorial é o arquivo `beagle-service.ts`\) e adicione o seu componente a lista de associações.
 
-Caso você não tenha este arquivo em seu projeto, veja [**como configurar a biblioteca Beagle Web para o React**]({{< ref path="/get-started/using-beagle/web/react" lang="pt" >}}).
+Caso você não tenha este arquivo em seu projeto, veja [**como configurar a biblioteca Beagle Web para o React**]({{< ref path="/web/react/using-beagle" lang="pt" >}}).
 
 ```text
 import { createBeagleUIService } from '@zup-it/beagle-react'

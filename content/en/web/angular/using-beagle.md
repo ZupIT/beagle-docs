@@ -1,9 +1,10 @@
 ---
-title: Angular
+title: Using Beagle Angular
 weight: 23
 description: >-
-  This section shows the walkthrough to use the Beagle libraty in an Angular project.
+  This section shows the walkthrough to use the Beagle library in an Angular project.
 ---
+
 ---
 ## **Settings**
 
@@ -93,7 +94,11 @@ The Beagle library comes with several components ready to be used in your projec
 The code above creates a JSON with two for the components `container` and `text`.
 {{% /alert %}}
 
-After creating your JSON, open the file `beagle.module.ts` generated in the previous step, and enter the remote JSON path as http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/ in the baseUrl 
+After creating your JSON, open the file `beagle.module.ts` generated in the previous step, and enter the remote JSON path as http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/ in the baseUrl
+
+{{% alert color="info" %}}
+If you want to use your own BFF, it's necessary to have its configured CORS. **See how to do this on** [**use configurations for backend**.]({{< ref path="/get-started/using-beagle/backend#cors" lang="en" >}})
+{{% /alert %}}
 
 ```text
 import { BeagleModule } from '@zup-it/beagle-angular'

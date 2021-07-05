@@ -4,8 +4,6 @@ weight: 43
 description: 'Here, you''ll find a tutorial to start a web project with Beagle.'
 ---
 
----
-
 ## Starting a Web project
 
 ### Requirements

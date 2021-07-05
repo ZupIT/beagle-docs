@@ -1,5 +1,5 @@
 ---
-title: Angular
+title: Usando o Beagle Angular
 weight: 23
 description: >-
   Nesta seção, você encontra o passo a passo inicial para usar a biblioteca
@@ -62,6 +62,10 @@ export class AppModule { }
 Agora, você precisa criar um arquivo JSON que definirá os componentes que serão renderizados.
 
 Para uma melhor experiência o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**]({{< ref path="/get-started/installing-beagle/backend" lang="pt" >}}), neste exemplo usaremos o JSON que está disponibilizado na URL http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/welcome:
+
+{{% alert color="info" %}}
+Caso queira criar seu próprio BFF, você pode seguir a configuração do backend. Veja como fazer isso nas [**configurações de uso para backend**]({{< ref path="/get-started/using-beagle/backend#cors" lang="pt" >}}).
+{{% /alert %}}
 
 {{% alert color="info" %}}
 JSON utilizado como exemplo.

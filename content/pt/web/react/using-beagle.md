@@ -1,5 +1,5 @@
 ---
-title: React
+title: Usando o Beagle React
 weight: 25
 description: >-
   Nesta seção, você encontra o passo a passo inicial para usar a biblioteca

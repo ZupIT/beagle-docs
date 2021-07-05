@@ -1,5 +1,5 @@
 ---
-title: React
+title: Using Beagle React
 weight: 25
 description: >-
   This section shows the initial walkthrough to use the Beagle library in React projects.

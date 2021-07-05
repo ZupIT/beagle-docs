@@ -96,7 +96,7 @@ Você pode ver mais sobre como criar projetos no Beagle para as 3 plataformas em
 
 - [**Beagle for Android** ]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/" lang="pt" >}})
 - [**Beagle for iOS**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios/" lang="pt" >}})
-- [**Beagle for Web**]({{< ref path="/get-started/creating-a-project-from-scratch/case-web" lang="pt" >}})
+- [**Beagle for Web**]({{< ref path="/web/geral/creating-a-project-from-scratch" lang="pt" >}})
 
 ## Posso fazer testes unitários e instrumentados em telas Server-Driven?
 

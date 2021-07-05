@@ -88,12 +88,12 @@ export class Beagle {}
 ```
 
 {{% alert color="warning" %}}
-If you didn't find the `beagle-components.module.ts` files or `beagle.module.ts`, [**see how to configure Beagle's library in your project.** ]({{< ref path="/get-started/installing-beagle/" lang="en" >}})
+If you didn't find the `beagle-components.module.ts` files or `beagle.module.ts`, [**see how to configure Beagle's library in your project.** ]({{< ref path="/web" lang="en" >}})
 {{% /alert %}}
 {{% /tab %}}
 
 {{% tab name="React" %}}
-Now, access Beagle's library configuration file in your project and add your component to the association list. If you don't have this file in your project,[ **learn here how to configure Beagle Web React library.** ]({{< ref path="/get-started/using-beagle/web/react" lang="en" >}})
+Now, access Beagle's library configuration file in your project and add your component to the association list. If you don't have this file in your project,[ **learn here how to configure Beagle Web React library.** ]({{< ref path="/web/react/using-beagle" lang="en" >}})
 
 ```jsx
 import { createBeagleUIService } from "@zup-it/beagle-react";
