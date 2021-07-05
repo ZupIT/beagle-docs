@@ -7,9 +7,6 @@ Esta biblioteca conterá quase todas as configurações necessárias para adicio
 
 ---
 
-![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-grpc?color=green&label=Beagle-gRPC)
-![**Maven Central**](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?label=Beagle)
-
 ### Requisitos
 
 Antes de começar a configurar o Beagle para o seu sistema Android, é importante verificar se você instalou todas as versões atuais dos seguintes programas:
@@ -32,7 +29,6 @@ Este tutorial irá configurar o Beagle desde o início.
 allprojects {
     repositories {
         google()
-        jcenter()
         mavenCentral()
     }
 }
@@ -40,7 +36,7 @@ allprojects {
 
 #### Etapa 2: adicione o plugin Kotlin Kapt e 3 dependências no gerenciador de dependências do seu aplicativo (gradle.gradle) <br>
 
-![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-scaffold?color=green&label=Beagle-Scaffold)
+![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-grpc-android?color=green&label=Beagle-gRPC-android)
 ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?label=Beagle)
 
 - Adicione o bloco de código packagingOptions no arquivo build.gradle, como no exemplo abaixo.
@@ -51,25 +47,14 @@ allprojects {
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'kotlin-android-extensions'
     id 'kotlin-kapt'
 }
 
-android {
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8
-    }
-
-    packagingOptions {
-        pickFirst 'META-INF/LICENSE.md'
-        pickFirst 'META-INF/LICENSE-notice.md'
-    }
-}
-
 dependencies {
-    implementation "br.com.zup.beagle:android:${beagleVersion}"
-    kapt "br.com.zup.beagle:android-processor:${beagleVersion}"
-    implementation "br.com.zup.beagle:beagle-scaffold:1.0.0"
+    implementation "br.com.zup.beagle:android:1.9.0"
+    implementation "br.com.zup.beagle:beagle-grpc-android:1.0.0"
+
+    kapt "br.com.zup.beagle:android-processor:1.9.0"
 }
 ```
 
