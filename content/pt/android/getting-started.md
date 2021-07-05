@@ -1,6 +1,6 @@
 ---
 title: Primeiros Passos
-weight: 120
+weight: 4
 description: Nessa seção, você irá aprender a como criar um projeto android e configurá-lo para utilizar o Beagle
 ---
 **Tópicos abordados:**
