@@ -7,9 +7,6 @@ This lib will hold almost all necessary configuration to add gRPC into a Beagle 
 
 ---
 
-![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-grpc-android?color=green&label=Beagle-gRPC)
-![**Maven Central**](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?label=Beagle)
-
 ### Requirements
 
 <hr>
@@ -41,7 +38,7 @@ allprojects {
 
 #### Step 2: Add Kotlin Kapt plugin and 3 dependencies on your application dependency manager (gradle.gradle)<br>
 
-![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-grpc?color=green&label=Beagle-gRPC)
+![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-grpc-android?color=green&label=Beagle-gRPC-android)
 ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?label=Beagle)
 
 - Add the packagingOptions code block to the build.gradle file, as in the example below.

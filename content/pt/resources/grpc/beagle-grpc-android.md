@@ -7,9 +7,6 @@ Esta biblioteca conterá quase todas as configurações necessárias para adicio
 
 ---
 
-![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-grpc?color=green&label=Beagle-gRPC)
-![**Maven Central**](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?label=Beagle)
-
 ### Requisitos
 
 Antes de começar a configurar o Beagle para o seu sistema Android, é importante verificar se você instalou todas as versões atuais dos seguintes programas:
@@ -39,7 +36,7 @@ allprojects {
 
 #### Etapa 2: adicione o plugin Kotlin Kapt e 3 dependências no gerenciador de dependências do seu aplicativo (gradle.gradle) <br>
 
-![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-grpc-android?color=green&label=Beagle-gRPC)
+![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-grpc-android?color=green&label=Beagle-gRPC-android)
 ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?label=Beagle)
 
 - Adicione o bloco de código packagingOptions no arquivo build.gradle, como no exemplo abaixo.
