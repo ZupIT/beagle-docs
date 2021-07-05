@@ -7,7 +7,7 @@ This lib will hold almost all necessary configuration to add gRPC into a Beagle 
 
 ---
 
-![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-grpc?color=green&label=Beagle-gRPC)
+![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-grpc-android?color=green&label=Beagle-gRPC)
 ![**Maven Central**](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?label=Beagle)
 
 ### Requirements
@@ -34,7 +34,6 @@ This tutorial will configure Beagle from the Start.
 allprojects {
     repositories {
         google()
-        jcenter()
         mavenCentral()
     }
 }
@@ -53,24 +52,14 @@ allprojects {
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'kotlin-android-extensions'
     id 'kotlin-kapt'
 }
 
-android {
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8
-    }
-
-    packagingOptions {
-        pickFirst 'META-INF/LICENSE.md'
-        pickFirst 'META-INF/LICENSE-notice.md'
-    }
-}
-
 dependencies {
-    kapt "br.com.zup.beagle:android-processor:${beagleVersion}"
-    implementation "br.com.zup.beagle:beagle-grpc:${beagleVersion}"
+    implementation "br.com.zup.beagle:android:1.9.0"
+    implementation "br.com.zup.beagle:beagle-grpc-android:1.0.0"
+
+    kapt "br.com.zup.beagle:android-processor:1.9.0"
 }
 ```
 
