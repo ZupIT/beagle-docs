@@ -47,7 +47,6 @@ startActivity(intent)
 A`ScreenRequest` é uma classe interna do Beagle utilizada para solicitar qual tela você deseja exibir. Você listará apenas o atributo URL referente a página que deseja carregar vinda do BFF.
 
 No entanto, esse elemento possui outros atributos, que podem ser utilizados na transição e entre telas. Para saber mais sobre essa classe, veja em [**Screen Request**]({{< ref path="/api/screen-request" lang="pt" >}})
-{{% /tab %}}
 
 ## Exibindo uma tela a partir de um JSON
 
