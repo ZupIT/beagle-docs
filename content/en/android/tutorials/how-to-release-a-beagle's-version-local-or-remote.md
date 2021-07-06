@@ -7,11 +7,6 @@ description: >-
 
 ---
 
-Follow the instructions according to the operational system you're using:
-
-
-{{< tabs id="T91" >}}
-{{% tab name="Android e Backend" %}}
 ## Configuring Gradle
 
 If you work on Android or Backend's applications, you must configure the **`gradle.properties`** files that can be found on the root folder. This configuration works on remote and local versions.
@@ -51,7 +46,6 @@ At the end of the **`gradle.properties`** configuration, you have to configure a
 | **repositoryPassword** | Password of the declared user name. |
 
 Check out below a publishing example:
-
 
 ```bash
 maven-publish.gradle (root project)
@@ -96,82 +90,3 @@ gradlew clean build publishToMavenLocal
 ```
 
 After you run the command, the version will be automatically released.  
-{{% /tab %}}
-
-{{% tab name="iOS" %}}
-Unlike the Android and Backend configuration, you  don't have to configure the **`gradle.properties`** file on iOS applications, just go straight to the configurations according to the version you want to generate.
-
-In this case, just go straight to the configurations according to the version you want to generate. 
-
-
-## Publishing in a remote repository
-
-### Using CocoaPods
-
-On the `podfile`  file, like any other dependency, put Beagle and add the address of your repository, see the example below:
-
-
-```text
-pod 'Beagle', :git => 'https://github.com/profile/myrepo'
-```
-
-After you have configured the `podfile`, run the following command to download from your repository: 
-
-
-```text
-pod install
-```
-
-### Using Carthage
-
-On the `Cartfilefile`, add the repository of your Beagle's version:
-
-```text
-github “YourUser/YourRepository”
-```
-
-## Publishing in a local repository
-
-### Using CocoaPods
-
-Open the terminal and go to Beagle's root folder and type the following command:
-
-```text
-pod spec create MyBeagle
-```
-
-And `MyBeagle.podspec`  will be created. Now open this file with a text editor and follow the example:
-
-```swift
-Pod::Spec.new do |spec|
-
-spec.name = "MyBeagle"
-spec.version = "1.0.0"
-spec.summary = "A short description"
-spec.description = "Complete description"
-
-spec.platform = :ios, "12.2"
-
-spec.source = { :path => '.' }
-```
-
-Now, run the command below on your terminal with the root folder of your project:
-
-```text
-pod install
-```
-
-### Using Carthage
-
-On the `Cartfile`, add the directory of your Beagle's version like in the example below:
-
-
-```text
-git "file:////Users/beagle" "master"
-```
-
-{{% alert color="warning" %}}
-Importante que você adicione o caminho completo do diretório com a sua versão do Beagle para que essa chamada funcione corretamente. 
-{{% /alert %}}
-{{% /tab %}}
-{{< /tabs >}}

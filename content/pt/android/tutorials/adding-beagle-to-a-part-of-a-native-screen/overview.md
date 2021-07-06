@@ -7,7 +7,7 @@ description: 'Nesta seção, você verá como exibir um componente do Beagle em 
 
 ---
 
-Existem duas formas que os componentes do Beagle podem ser adicionados a sua aplicação:
+Existem duas formas para adicionar componentes Beagle a sua aplicação:
 
 * Via BFF \(como um server driven componente\);
 * Como um componente declarativo no front end.

@@ -10,8 +10,6 @@ description: >-
 
 Siga as orientações de acordo com o sistema operacional que estiver usando:
 
-{{< tabs id="T91" >}}
-{{% tab name="Android e Backend" %}}
 ## Configurando o Gradle
 
 Se você trabalha com aplicações Android ou via Backend, deve começar configurando o arquivo**`gradle.properties`**, que se encontra na **pasta root**. Essa configuração vale tanto para versões remotas como locais.
@@ -90,76 +88,3 @@ gradlew clean build publishToMavenLocal
 ```
 
 Depois de rodar o comando, a versão será gerada automaticamente. 
-{{% /tab %}}
-
-{{% tab name="iOS" %}}
-Diferente da configuração para Android e Backend, em aplicações iOS você não precisa configurar o arquivo **`gradle.properties.`** Nesse caso, basta seguir direto para as configurações de acordo com a versão que deseja gerar. 
-
-## Publicando em um repositório remoto
-
-### Usando o CocoaPods
-
-No arquivo `podfile` , assim como qualquer outra dependência, coloque o Beagle e aponte o endereço do seu repositório , como no exemplo a baixo:
-
-```text
-pod 'Beagle', :git => 'https://github.com/profile/myrepo'
-```
-
-Depois de configurado o `podfile` execute o seguinte comando para baixar do seu repositório:
-
-```text
-pod install
-```
-
-### Usando o Carthage
-
-No arquivo `Cartfile`, adicione o repositório da sua versão do Beagle:
-
-```text
-github “YourUser/YourRepository”
-```
-
-## Publicando em um repositório local
-
-### Usando o CocoaPods
-
-Abra o terminal e vá para a pasta raiz do Beagle e digite o seguinte comando:
-
-```text
-pod spec create MyBeagle
-```
-
-`E MyBeagle.podspec` será criado. Agora abra esse arquivo com um editor de texto e siga como o exemplo abaixo:
-
-```swift
-Pod::Spec.new do |spec|
-
-spec.name = "MyBeagle"
-spec.version = "1.0.0"
-spec.summary = "A short description"
-spec.description = "Complete description"
-
-spec.platform = :ios, "12.2"
-
-spec.source = { :path => '.' }
-```
-
-Em seguida execute o seguinte comando no terminal com a pasta raiz do projeto:
-
-```text
-pod install
-```
-
-### Usando o Carthage
-
-No arquivo `Cartfile`, adicione o diretório da sua versão do Beagle da seguinte forma:
-
-```text
-git "file:////Users/beagle" "master"
-```
-
-{{% alert color="warning" %}}
-Importante que você adicione o caminho completo do diretório com a sua versão do Beagle para que essa chamada funcione corretamente. 
-{{% /alert %}}
-{{% /tab %}}
-{{< /tabs >}}

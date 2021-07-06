@@ -13,17 +13,15 @@ description: >-
 No exemplo abaixo, vamos exibir um botão server-driven em uma tela nativa. O resultado que deve aparecer na sua aplicação é esse:
 
 <div align="center">
-{{< figure src="/shared/screenshot_1594300176.png" width="30%" >}}
+{{< figure src="/shared/screenshot_1594300176.png" width="20%" >}}
 </div>
 
 ## Pré-requisitos
 
 Para que essa configuração funcione corretamente, você precisa de:
 
-- Um [**BFF**]({{< ref path="/key-concepts#backend-for-frontend" lang="pt" >}}) configurado com o Beagle. Caso não o tenha, veja como configurar nesse [**tutorial**]({{< ref path="/get-started/creating-a-project-from-scratch/case-backend" lang="pt" >}}).
-- Um frontend configurado com o Beagle para Android ou iOS. Caso não o tenha, siga um dos tutoriais de acordo com sistema operacional:
-  - [**Android**]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/" lang="pt" >}})
-  - [**iOS**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios/" lang="pt" >}})
+- Um [**BFF**]({{< ref path="/key-concepts#backend-for-frontend" lang="pt" >}}) configurado com o Beagle. Caso não o tenha, veja como configurar nesse [**tutorial**]({{< ref path="/backend/" lang="pt" >}})creating-a-project-from-scratch/case-backend" lang="pt" >}}).
+- Um frontend configurado com o Beagle para Android. Caso não o tenha, siga o nosso tutorial para configurar um projeto [**Android**]({{< ref path="/android/getting-started.md" lang="pt" >}})
 
 ## Passo 1: Criar o componente no backend
 
@@ -158,15 +156,11 @@ Button(
 
 Depois dos dois passos anteriores, o seu componente está pronto. Agora, você só precisa exibi-lo em uma tela nativa.
 
-Para essa configuração, siga as orientações específicas para cada plataforma:
+Para o Android você deve utilizar o `frame layout` para "receber" o componente do BFF e, assim, exibi-lo em uma tela Android nativa.
 
-{{< tabs id="T97" >}}
-{{% tab name="Android" %}}
-Você deve utilizar o frame layout para "receber" o componente do BFF e, assim, exibi-lo em uma tela Android nativa.
+### Como receber um componente server driven no Android?
 
-Para isso, basta seguir esses passos:
-
-- Crie o arquivo `.XML` abaixo que representa uma tela nativa com um título e um frame layout. Nesse exemplo definimos essa pagina como nossa `MainActivity`
+- Crie o arquivo `.XML` como no exemplo abaixo, que representa uma tela nativa com um título e um frame layout. Nesse exemplo definimos essa pagina como nossa `MainActivity`
 - Depois, copie e cole a configuração abaixo:
 
 ```markup
@@ -205,9 +199,9 @@ Para isso, basta seguir esses passos:
 Após configurar o frame layout, é preciso informar ao Beagle qual componente será exibido. Para isso, utilize a função `loadView` como listado no exemplo a seguir.
 {{% /alert %}}
 
-## O que é loadView?
+## O que é um loadView?
 
-O método `loadView` é responsável carregar seu conteúdo beagle dentro de sua view.
+O método `loadView` é responsável carregar um conteúdo beagle dentro de sua view nativa.
 
 A estrutura do **loadView** é:
 
@@ -219,7 +213,7 @@ A estrutura do **loadView** é:
 
 <br />
 
-Veja como fazer isso:
+Veja aqui como fazer isso:
 
 1. Abra a activity onde você deseja exibir a sua tela nativa.
 2. Crie uma variável do tipo FrameLayout que deve receber a FrameLayout View que configuramos.
@@ -233,131 +227,8 @@ frameLayout.loadView(this, ScreenRequest("/serverDrivenComponent"))
 E pronto: basta iniciar sua aplicação e você verá a tela a seguir!
 
 <div align="center">
-{{< figure src="/shared/server-driven-comp-ios.gif" width="30%" >}}
+{{< figure src="/shared/server-driven-comp-ios.gif" width="20%" >}}
 </div>
 
 Clique no botão e perceba que a função nesse componente está implementada e funcional, ou seja, o Beagle exibe todos os componentes como se fossem nativos.
-{{% /tab %}}
 
-{{% tab name="iOS" %}}
-Você deve utilizar uma `BeagleView` para "colocar" esse componente do BFF e, assim, exibí-lo em uma tela iOS nativa.
-
-{{% alert color="success" %}}
-
-# Beagle View
-
-Veja mais sobre o que é, como funciona e como usar a `BeagleView`
-[**aqui!**]({{< ref path="/resources/customization/beagle-for-ios/beagle-view" lang="pt" >}})
-{{% /alert %}}
-
-1. Crie um **UIViewController**.
-2. Adicione o componente nativo, nesse caso será um texto utilizando uma `UILabel`.
-3. Crie uma **BeagleView** passando a URL pretendida.
-4. Por último, é necessário adicionar algumas constraints para a `UILabel` e para `BeagleView` como no código abaixo:
-
-```swift
-class NativeViewController: UIViewController {
-
-     override func viewDidLoad() {
-        super.viewDidLoad()
-        setupBeagleViewRemote()
-        setupDescriptionText()
-    }
-
-    private lazy var beagleViewRemote = BeagleView(
-        .remote(.init(url: "http://localhost:8080/serverDrivenComponent"))
-    )
-
-    private lazy var descriptionText: UILabel = {
-            let label = UILabel()
-            label.text = "Sou um componente nativo"
-            label.numberOfLines = 0
-            label.textAlignment = .center
-            label.font = .systemFont(ofSize: 25, weight: .semibold)
-            return label
-    }()
-
-    private func setupDescriptionText() {
-        view.addSubview(descriptionText)
-        descriptionText.translatesAutoresizingMaskIntoConstraints = false
-        descriptionText.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        descriptionText.topAnchor.constraint(equalTo: view.topAnchor, constant: 150).isActive = true
-    }
-
-    private func setupBeagleViewRemote() {
-        view.addSubview(beagleViewRemote)
-        beagleViewRemote.translatesAutoresizingMaskIntoConstraints = false
-        beagleViewRemote.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        beagleViewRemote.topAnchor.constraint(equalTo: descriptionText.bottomAnchor, constant: 50).isActive = true
-    }
-```
-
-Ao final do processo, você poderá "chamar" a tela nativa e a imagem abaixo irá aparecer. Lembrando que, para esse exemplo, foram criadas: uma tela composta de uma `UILabel` e uma `BeagleView` , onde fica o componente server-driven.
-
-<div align="center">
-{{< figure src="/shared/server-driven-comp-ios.gif" width="50%" >}}
-</div>
-{{% /tab %}}
-
-{{% tab name="WEB" %}}
-Se você ainda não configurou a biblioteca em seu projeto, [**veja aqui como fazer isso**.]({{< ref path="/get-started/using-beagle/web/" lang="pt" >}})
-
-Você deve utilizar o [**Remote View**]({{< ref path="/resources/customization/beagle-for-web/remote-view-parameters" lang="pt" >}}), fornecido pela biblioteca do Beagle, para criar telas híbridas com alguns componentes server driven na web.
-
-Veja a seguir como funciona para cada framework:
-
-**React**
-
-No React, você só precisa criar uma função que retorna dois componentes. Um deles é o `BeagleRemoteView` com o caminho para carregar o componente server-driven.
-
-```javascript
-import React, { FC } from "react";
-import { LoadParams } from "@zup-it/beagle-web";
-import { BeagleProvider, BeagleRemoteView } from "@zup-it/beagle-react";
-import BeagleService from "../../beagle/beagle.service";
-import NativeComponent from "../NativeComponent";
-
-const params: LoadParams = {
-  path: "/mypath",
-};
-
-const Main = () => {
-  return (
-    <>
-      <NativeComponent text="Sou um componente nativo!"></NativeComponent>
-      <BeagleProvider value={BeagleService}>
-        <BeagleRemoteView {...params} />
-      </BeagleProvider>
-    </>
-  );
-};
-
-export default Main;
-```
-
-**Angular**
-
-No Angular, basta criar um componente nativo normalmente e adicionar o `beagle-remote-view` junto ao template no local que você quer que os itens server-driven sejam renderizados.
-
-```text
-<app-native-component text="Sou um componente nativo"></app-native-component>
-<beagle-remote-view [loadParams]="loadParams"></beagle-remote-view>
-```
-
-{{% alert color="warning" %}}
-No caso do Angular, não é possível usar o componente BeagleRemoteView caso ele seja carregado pela biblioteca de outra forma server-driven porque isso causa uma dependência circular e quebra a aplicação.
-{{% /alert %}}
-
-{{% alert color="info" %}}
-Lembre-se de rodar seu projeto Angular usando um dos comandos:
-
-`yarn run serve ou npx run serve`
-{{% /alert %}}
-
-A sua tela híbrida com elementos nativos e server driven está pronta
-
-<div align="center">
-{{< figure src="/shared/image.png" >}}
-</div>
-{{% /tab %}}
-{{< /tabs >}}

@@ -5,20 +5,19 @@ description: Aqui voce aprenderá como criar e utilizar um widget no Beagle
 ---
 
 ---
-
 ## Como criar componentes \(custom views\) e widgets?
 
-No exemplo abaixo, será implementado um [**custom widget**]({{< ref path="/resources/customization/beagle-for-android/custom-widget" lang="pt" >}}) e o componente que ele registrará. Esse componente será composto por um texto e dois botões dentro de um layout linear.
+No exemplo abaixo, será implementado um **custom widget** e um componente que ele registrará. Esse componente será composto por um texto e dois botões dentro de um layout linear.
 
 Os botões neste componente serão responsáveis ​​por aumentar e diminuir o tamanho do texto do título e a tela será como a imagem a seguir:
 
 ![](/shared/image%20%2883%29.png)
 
 {{% alert color="info" %}}
-Você pode fazer isso usando a anotação `@RegisterWidget` e estendendo a classe `WidgetView` .
+Os elementos criados aqui usarão algumas anotações, como `@RegisterWidget` e algumas extensões, como a classe `WidgetView`. Abaixo mostraremos quando e como.
 {{% /alert %}}
 
-### Criando um componente e um widget
+## Criando um componente e um widget
 
 Siga os passos abaixo para criar e customizar um componente e um widget:
 

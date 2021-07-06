@@ -10,8 +10,6 @@ description: >-
 
 ## Passo 1: Criar a tela nativa
 
-{{< tabs id="T98" >}}
-{{% tab name="Android" %}}
 Para criar a tela nativa no Android, crie uma nova Activity. Aqui será usado a `MainActivity` como modelo:
 
 
@@ -56,66 +54,9 @@ Veja o exemplo de xml utlizado nesse tutorial, o que finaliza a criação da tel
 </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
-
-{{% /tab %}}
-
-{{% tab name="iOS" %}}
-Nesse exemplo criamos a seguinte `UIViewController`:
-
-```swift
-class NativeViewController: UIViewController {
-
-    private lazy var firstLabel = makeLabel(text: "I'm a native UILabel")
-    
-    private lazy var secondLabel = makeLabel(text: "Another native UILabel")
-
-    private func makeLabel(text: String) -> UILabel {
-        let label = UILabel()
-        label.text = text
-        label.textAlignment = .center
-        label.font = .systemFont(ofSize: 25, weight: .semibold)
-        label.backgroundColor = UIColor(hex: grayColor)
-        return label
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        navigationItem.title = "Beagle Native"
-        navigationItem.backBarButtonItem = UIBarButtonItem(
-            title: nil, 
-            style: .plain, 
-            target: nil, 
-            action: nil
-        )
-        setupView()
-    }
-    
-    private func setupView() {
-        view.backgroundColor = .white
-        
-        view.addSubview(firstLabel)
-        firstLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        firstLabel.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor, constant: 50).isActive = true
-        
-        let layoutMargins = view.layoutMarginsGuide
-        
-        view.addSubview(secondLabel)
-        secondLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        secondLabel.topAnchor.constraint(equalTo: beagleView.bottomAnchor, constant: 30).isActive = true
-        secondLabel.bottomAnchor.constraint(lessThanOrEqualTo: layoutMargins.bottomAnchor).isActive = true
-    }
-
-    private let grayColor = "#EEEEEE"
-}
-```
-{{% /tab %}}
-{{< /tabs >}}
-
 ## Passo 2: Criar o componente declarativo
 
-{{< tabs id="T99" >}}
-{{% tab name="Android" %}}
-Para criar um componente declarativo do Beagle, será usado um Container \(um componente do Beagle que agrupa outros componentes\). Ele pode ser declarado como uma variável ou como uma função que retorna um container. Nesse exemplo, foi configurado como retorno de uma função:
+Para criar um componente declarativo do Beagle no Android, usaremos um Container \(um componente do Beagle que agrupa outros componentes\). Ele pode ser declarado como uma variável ou como uma função que retorna um container. Nesse exemplo, foi configurado como retorno de uma função:
 
 
 ```text
@@ -145,49 +86,8 @@ fun declarativeComponente() =
         )
     )
 ```
-
-{{% /tab %}}
-
-{{% tab name="iOS" %}}
-Para criar um componente declarativo do Beagle em forma de `UIView` utilizamos o componente **`BeagleView`**, ele pode ser declarado como os componentes nativos criados no passo anterior. Segue um exemplo abaixo com um `Container` que possui um texto e dois botões:
-
-```swift
-private lazy var beagleView = BeagleView(Container(
-        widgetProperties: .init(style: Style()
-            .backgroundColor(grayColor)
-            .margin(.init(all: 20))
-            .padding(.init(all: 10))
-        )
-    ) {
-        Text(
-            "These buttons are rendered by Beagle",
-            widgetProperties: .init(style: .init(
-                margin: .init(bottom: 10),
-                flex: Flex().alignSelf(.center)
-            ))
-        )
-        Button(
-            text: "I'm a server-driven button",
-            onPress: [
-                Alert(
-                    title: "Server-driven button", 
-                    message: "I'm a server-driven button"
-                )
-            ]
-        )
-        Button(
-            text: "Navigate to Navigator",
-            onPress: [Navigate.openNativeRoute(.init(route: .navigateStep1Endpoint))]
-        )
-    })
-```
-{{% /tab %}}
-{{< /tabs >}}
-
 ## Passo 3: Adicionar o componente na tela
 
-{{< tabs id="T100" >}}
-{{% tab name="Android" %}}
 Para adicionar esse componente a tela, será necessário chamar a função **`addView`**do Android a partir do **`Fragment Layout view`** que foi declarado no `activity_main.xml` como listado no exemplo abaixo:
 
 
@@ -204,38 +104,6 @@ class MainActivity : AppCompatActivity() {
 ```
 
 
-Como parâmetro do **`addView`** foi listado a função que retorna o componente criado aplicando o método do Beagle **`.toView(this)v`**
-{{% /tab %}}
-
-{{% tab name="iOS" %}}
-O BeagleView pode ser adicionado como a `UIView` , nesse exemplo foi usado o método `addSubview()` para adicionar este componente na tela.
-
-Segue abaixo o método `setupView()` que é responsável por adicionar e ancorar os componentes da tela:
-
-```swift
-private func setupView() {
-        view.backgroundColor = .white
-        
-        view.addSubview(firstLabel)
-         irstLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        firstLabel.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor, constant: 50).isActive = true
-        
-        let layoutMargins = view.layoutMarginsGuide
-        
-        view.addSubview(beagleView)
-        beagleView.translatesAutoresizingMaskIntoConstraints = false
-        beagleView.topAnchor.constraint(equalTo: firstLabel.bottomAnchor, constant: 50).isActive = true
-        beagleView.leadingAnchor.constraint(greaterThanOrEqualTo: layoutMargins.leadingAnchor).isActive = true
-        beagleView.trailingAnchor.constraint(lessThanOrEqualTo: layoutMargins.trailingAnchor).isActive = true
-        beagleView.centerXAnchor.constraint(equalTo: firstLabel.centerXAnchor).isActive = true
-                
-        view.addSubview(secondLabel)
-        secondLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        secondLabel.topAnchor.constraint(equalTo: beagleView.bottomAnchor, constant: 30).isActive = true
-        secondLabel.bottomAnchor.constraint(lessThanOrEqualTo: layoutMargins.bottomAnchor).isActive = true
-    }
-```
-{{% /tab %}}
-{{< /tabs >}}
+Como parâmetro do **`addView`** foi listado a função que retorna o componente criado aplicando o método do Beagle **`.toView(this)`**
 
 E pronto. Basta inicializar a sua aplicação e a tela declarativa será renderizada nativamente.

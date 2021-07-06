@@ -1,17 +1,15 @@
 ---
-title: Overview
+title: Visão Geral
 weight: 1
 type: overview
-description: 'On this section, you will see steps to display a server-driven component on a native screen'
+description: 'This section shows how to load a Beagle component into a native Android Screen'
 ---
 
 ---
 
-There are two ways Beagle's components can be added to your application: 
+There are two ways to add Beagle components into a native Android Screen:
 
-* Through BFF \(as server-driven component\);
-* As a declarative component in front end.
+* Via BFF \ (as a server-directed component \);
+* As a declarative component on the front end.
 
-See below more details on how to add a Beagle component in your native screen: 
-
-
+Check below for more details on how to add a Beagle component to your native canvas:
