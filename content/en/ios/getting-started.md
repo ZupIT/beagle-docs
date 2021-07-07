@@ -92,9 +92,9 @@ Now Beagle is a part of your package.swift.
 
 You'll need Cocoapods installed and Terminal.
 
-**Step 1:** Navigate to your project's root folder and run the command `pod init` that will create a _Podfile_ for us.
+**Step 1:** Navigate to your project's root folder and run the command `pod init` that will create a _Podfile_.
 
-**Step 2:** Edit your _Podfile_ putting Beagle's pod name, like the code bellow:
+**Step 2:** Edit your _Podfile_, adding Beagle's pod name, like the code below:
 ```ruby
 target 'MyApp' do
   pod 'Beagle'
