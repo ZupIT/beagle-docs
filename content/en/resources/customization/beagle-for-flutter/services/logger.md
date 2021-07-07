@@ -1,8 +1,8 @@
 ---
-title: Accessing the localhost
+title: Logger
 weight: 189
 description: >-
-  You will find here information of how to refer to the localhost in Flutter.
+  You will find here information of how to use the Logger in Beagle Flutter.
 ---
 
 ---

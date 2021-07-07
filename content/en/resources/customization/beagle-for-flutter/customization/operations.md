@@ -1,8 +1,8 @@
 ---
-title: Accessing the localhost
+title: Custom Operations
 weight: 189
 description: >-
-  You will find here information of how to refer to the localhost in Flutter.
+  You will find here information of how to create and use your own operations in Beagle Flutter.
 ---
 
 ---
