@@ -1,7 +1,7 @@
 ---
 title: Configuração
 weight: 1
-description: Aqui você encontra informações sobre como fonfigurar o Beagle Flutter.
+description: Aqui você encontra informações sobre como configurar o Beagle Flutter.
 ---
 
 ---
