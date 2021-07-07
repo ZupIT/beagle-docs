@@ -121,7 +121,7 @@ To do this, you'll need Carthage installed and a Terminal.
 
 **Step 2:** Open the _Cartfile_ and edit it with our repository link like this `github "ZupIT/beagle" ~> ${beagle.version}`, choosing preferably the Beagle's latest version available.
 
-**Step 3:** Now you need to check your Xcode version and follow the instructions below:
+**Step 3:** Now, check your Xcode version and follow the instructions below:
 
 * For Xcode 12+, you need Carthage v0.37+. Then you can run the command `carthage udpate --use-xcframeworks`. This command will create _xcframeworks_ for us. 
 
