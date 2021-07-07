@@ -115,7 +115,7 @@ You've successfully installed Beagle on your project using Cocoapods!
 
 <br>
 
-For this you'll need Carthage installed and Terminal.
+To do this, you'll need Carthage installed and a Terminal.
 
 **Step 1:** Navigate to your project's root folder and run `touch Cartfile` to create a _Cartfile_ for us.
 
