@@ -119,7 +119,7 @@ For this you'll need Carthage installed and Terminal.
 
 **Step 1:** Navigate to your project's root folder and run `touch Cartfile` to create a _Cartfile_ for us.
 
-**Step 2:** Open the _Cartfile_ and edit it with our repository link like this `github "ZupIT/beagle" ~> ${beagle.version}`, choosing the Beagle version that you want.
+**Step 2:** Open the _Cartfile_ and edit it with our repository link like this `github "ZupIT/beagle" ~> ${beagle.version}`, choosing preferably the Beagle's latest version available.
 
 **Step 3:** Now you need to check your Xcode version and follow the instructions below:
 
