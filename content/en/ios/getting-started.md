@@ -103,7 +103,7 @@ end
 
 **Step 3:** Run the command `pod install` and the dependencies will be resolved in a Workspace.
 
-**Step 4:** Now open the Workspace created for you and from now you'll use only the Workspace.
+**Step 4:** Now, open the Workspace created for you. From now you'll use only the Workspace.
 
 {{% alert color="success" %}}
 You've successfully installed Beagle on your project using Cocoapods! 
