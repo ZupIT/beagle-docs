@@ -38,14 +38,14 @@ Essa biblioteca permite que você crie BFFs do Beagle e exiba suas screens com g
 
 {{% /tab %}}
 
+{{% tab name="Micronaut" %}}
+
 #### Gerando um projeto com Micronaut
 
 - Voce pode acessar o [website do Micronaut](https://micronaut.io/launch/) e gerar um arquivo zip do projeto com as configurações básicas definidas por padrão
-
-{{% tab name="Micronaut" %}}
-![](/shared/Screenshot-micronaut-grpc-example.png)
-{{% /tab %}}
-{{< /tabs >}}
+  ![](/shared/Screenshot-micronaut-grpc-example.png)
+  {{% /tab %}}
+  {{< /tabs >}}
 
 - Agora, voce pode extrair o arquivo zip gerado, e abrir com sua IDE favorita. Nós recomendamos o Intellij Community.
 
@@ -294,8 +294,8 @@ Pronto! Sua aplicação estará disponível localmente no endereço:
 
 - Para este exemplo, você precisará de um cliente para obter a resposta do serviço. Recomendamos o [BloomRPC](https://github.com/uw-labs/bloomrpc) para simular uma solicitação local em sua API gRPC
 
-- Você também precisará adicionar os arquivos proto da lib do Beagle gRPC no cliente bloomRPC. Você pode acessar esses arquivos [aqui](https://github.com/ZupIT/beagle-grpc/backend/grpc-lib/src/main/proto)
+- Você também precisará adicionar os arquivos proto da lib do Beagle gRPC no cliente bloomRPC. Você pode acessar esses arquivos [aqui](https://github.com/ZupIT/beagle-grpc/tree/master/backend/grpc-backend-lib/src/main/proto)
 
 ### **Leia mais sobre o beagle com gRPC**
 
-#### 👉 Este tutorial está disponível no GitHub com exemplos mais avançados, como headers e interceptors por exemplo. Se você estiver interessado, [acesse-os aqui](https://github.com/ZupIT/beagle-grpc/backend/examples)
+#### 👉 Este tutorial está disponível no GitHub com exemplos mais avançados, como headers e interceptors por exemplo. Se você estiver interessado, [acesse-os aqui](https://github.com/ZupIT/beagle-grpc/tree/master/backend/examples)

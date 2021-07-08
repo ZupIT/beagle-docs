@@ -10,7 +10,7 @@ description: >-
 
 ## Configurações de uso
 
-Quando você finalizar a [**instalação do Beagle**]({{< ref path="/get-started/installing-beagle/backend" lang="pt" >}}), seu BFF estará com a configuração padrão de uso.
+Quando você finalizar a [**instalação do Beagle**]({{< ref path="/backend/get-started/installing-beagle" lang="pt" >}}), seu BFF estará com a configuração padrão de uso.
 
 ### CORS (Cross-Origin Resource Sharing)
 

@@ -29,7 +29,7 @@ This library allows you to create Beagle BFFs serving screens through gRPC. It a
 
 ### Step 1: Create gRPC project
 
-{{< tabs id="n7139528701" >}}
+{{< tabs id="n7139528y701" >}}
 {{% tab name="Spring Boot" %}}
 
 #### Using Spring Boot project generator
@@ -40,14 +40,14 @@ This library allows you to create Beagle BFFs serving screens through gRPC. It a
 
 {{% /tab %}}
 
+{{% tab name="Micronaut" %}}
+
 #### Using Micronaut project generator
 
 - You can access [Micronaut website here](https://micronaut.io/launch/) and generate a zip project with the basic settings already configured
-
-{{% tab name="Micronaut" %}}
-![](/shared/Screenshot-micronaut-grpc-example.png)
-{{% /tab %}}
-{{< /tabs >}}
+  ![](/shared/Screenshot-micronaut-grpc-example.png)
+  {{% /tab %}}
+  {{< /tabs >}}
 
 - Open the extracted folder in your favorite IDE. We recommend Intellij Community.
 
@@ -296,7 +296,7 @@ Done! Your application will already be available in localhost:
 
 - For this example, you will need a client in order to get your service response. We recommend the [BloomRPC](https://github.com/uw-labs/bloomrpc) to simulate a local request on your gRPC API:
 
-- You will also need to add the lib proto files in the bloomRPC client. You can access these files [here](https://github.com/ZupIT/beagle-grpc/backend/grpc-lib/src/main/proto)
+- You will also need to add the lib proto files in the bloomRPC client. You can access these files [here](https://github.com/ZupIT/beagle-grpc/tree/master/backend/grpc-lib/src/main/proto)
 
 ### **Read more about beagle gRPC**
 

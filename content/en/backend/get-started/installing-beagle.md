@@ -50,6 +50,7 @@ Once you choose the framework you'll work with, proceed with the configurations 
 
 #### Micronaut &lt;= 1.3
 
+Screenshot-spring-boot-grpc-example
 As described on [**Micronaut's quick start**](https://docs.micronaut.io/1.3.3/guide/index.html#quickStart), create your application through a CLI tool with this command:
 
 ```kotlin
@@ -101,7 +102,7 @@ Click on the tab of the framework you're using and follow the steps to continue 
 ### Additional Requirements:
 
 {{% alert color="info" %}}
-This starter also configures version **1.3.3** of**`micronaut-runtime`**module in your BFF
+This starter also configures version **1.3.3** of **`micronaut-runtime`** module in your BFF
 {{% /alert %}}
 
 - Beagle's current release version is: [![back](https://camo.githubusercontent.com/27998a386042ecb2cae7b9f09ae159bd07c935bd/68747470733a2f2f696d672e736869656c64732e696f2f6d6176656e2d63656e7472616c2f762f62722e636f6d2e7a75702e626561676c652f6672616d65776f726b)](https://mvnrepository.com/artifact/br.com.zup.beagle/framework)
@@ -135,7 +136,7 @@ dependencies {
 ### Additional Requirements:
 
 {{% alert color="info" %}}
-This starter also configures version **2.2.5** of**`spring-boot-starter-web`**module in your BFF
+This starter also configures version **2.2.5** of **`spring-boot-starter-web`** module in your BFF
 {{% /alert %}}
 
 - Beagle's current release version is: [![back](https://camo.githubusercontent.com/27998a386042ecb2cae7b9f09ae159bd07c935bd/68747470733a2f2f696d672e736869656c64732e696f2f6d6176656e2d63656e7472616c2f762f62722e636f6d2e7a75702e626561676c652f6672616d65776f726b)](https://mvnrepository.com/artifact/br.com.zup.beagle/framework)
@@ -174,7 +175,7 @@ Remember to always check if you're using the latest version of Beagle. To see th
 
 Well done, your initial configuration is ready to be used!
 
-You can check a screen or server-driven component[ **to test the BFF**]({{< ref path="/get-started/using-beagle/" lang="en" >}}).
+You can check a screen or server-driven component [**to test the BFF**]({{< ref path="/backend/get-started/using-beagle" lang="en" >}}).
 
 {{% alert color="danger" %}}
 Spring Boot has a known problem involving `WebMvcConfigurationSupport`. Its presence replaces other configurations, including the ones in Beagle's Spring Starter.
@@ -192,13 +193,13 @@ The annotation`@EnableWebMvc`causes the same problem, which means that you shoul
 Well done, your initial configuration is ready to be used!
 {{% /alert %}}
 
-You can see more of [**how to use Beagle on the backend**]({{< ref path="/get-started/using-beagle/backend" lang="en" >}}) or how to test a BFF with server-driven components.
+You can see more of [**how to use Beagle on the backend**]({{< ref path="/backend/get-started/using-beagle" lang="en" >}}) or how to test a BFF with server-driven components.
 
 ## **Next Steps**
 
 On this section, you made Beagle's **initial installation** on your application!  
 Now, to keep configuring Beagle:
 
-👉Go to [**initial configurations**]({{< ref path="/get-started/using-beagle/backend" lang="en" >}}) to enable the use of Beagle on your Web project.
+👉Go to [**initial configurations**]({{< ref path="/backend/get-started/using-beagle" lang="en" >}}) to enable the use of Beagle on your Web project.
 
-👉 If you want to go straight to practice, access our [**tutorial to create a projeto from zero**.]({{< ref path="/get-started/creating-a-project-from-scratch/case-backend" lang="en" >}})
+👉 If you want to go straight to practice, access our [**tutorial to create a project from scratch**.]({{< ref path="/backend/get-started/creating-a-project-from-scratch" lang="en" >}})

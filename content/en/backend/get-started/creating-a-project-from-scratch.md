@@ -10,15 +10,15 @@ description: "Here, you'll find a tutorial to start a backend project with Beagl
 
 In this tutorial, the Backend will be implemented with Beagle so that it can respond to requests from your server-driven application, be it on Android, iOS or WEB.
 
-### Requirements
+### Recommended
 
-To create a Beagle project for backend, it is necessary:
+To create a Beagle project for backend, we recommended:
 
-- IDE Intelij IDE Community
+- Intelij Community IDEA
 
 ### Step 1: Configure using Spring initializr
 
-The first step to configure your backend is to access [**Spring**](https://start.spring.io/) **website.**  
+The first step to configure your backend is to access [**Spring website**](https://start.spring.io/).  
 It will create a`Maven` project that will help your project's configuration.
 
 ![](https://lh5.googleusercontent.com/ZshvFubtunY4x0JWWBLgSmFesUx7G2AVlSrCcS96efc2lJtAakhYJ-zxgDx7CkcCMOC6zedwUAS3ThBpVXfS8jyvieNLgL3ZJIxWnHJFLE77IOXZs3UqOR8TQazINC_enzoO4Y4Q)
@@ -51,11 +51,11 @@ Follow the steps below to import the project you have created. First, open **int
 
 ### Step 1: Configure the project
 
-As a starting point, follow this step by step to [**install the backend**]({{< ref path="/get-started/installing-beagle/backend" lang="en" >}}).
+As a starting point, follow this step by step to [**install the backend**]({{< ref path="/backend/get-started/installing-beagle" lang="en" >}}).
 
 ### Step 2: Define the structure
 
-The second step is to create some packages to better organize the project. They will be named: **`builder`**,**`service`** and **`controller`**
+The second step is to create some packages to better organize the project. They will be named: **`builder`**, **`service`** and **`controller`**
 
 1. Click `src> main> kotlin` until you find the name of your project.
 2. Right-click `new> package`

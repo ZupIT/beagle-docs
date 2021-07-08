@@ -18,7 +18,7 @@ Para criar um projeto com o Beagle para o backend, é preciso:
 
 - JDK 8+
 - Maven / Gradlew
-- Um editor de texto ou IDEA a sua escolha (recomendamos o IntelliJ IDEA Community Edition)
+- Um editor de texto ou IDE a sua escolha (recomendamos o IntelliJ IDEA Community Edition)
 
 ### Passo 1: Iniciar o projeto usando Spring initializr
 
@@ -58,7 +58,7 @@ Siga os passos abaixo para importar o projeto que você criou. Primeiro, abra su
 
 ### Passo 1: Configurar o projeto
 
-Como ponto de partida, siga nosso [**passo a passo para instalar o backend**]({{< ref path="/get-started/installing-beagle/backend" lang="pt" >}}).
+Como ponto de partida, siga nosso [**passo a passo para instalar o backend**]({{< ref path="/backend/get-started/installing-beagle" lang="pt" >}}).
 
 ### Passo 2: Definir a Estrutura
 
