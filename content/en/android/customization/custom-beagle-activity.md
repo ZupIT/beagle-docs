@@ -90,7 +90,7 @@ See below an example of an activity xml layout:
 </LinearLayout>
 ```
 
- For the server-driven content, the xml layout needs a frame layout to load this content.
+For the server-driven content, the xml layout needs a frame layout to load this content.
 
 In the `getServerDrivenContainerId()`method,  you must return the frame layout id.
 
