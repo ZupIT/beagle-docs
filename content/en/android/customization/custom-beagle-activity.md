@@ -16,7 +16,7 @@ In order to Beagle understand that you're working with an `BeagleAcitivity`'s cl
 
 ## What is customizable?
 
-When it comes to Beagle Activity, there are some custom components:
+When it comes to a Beagle Activity, there are some custom components:
 
 1. Layout xml
 2. Toolbar
