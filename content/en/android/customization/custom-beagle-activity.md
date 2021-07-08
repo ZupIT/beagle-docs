@@ -52,7 +52,7 @@ class SampleServerDrivenActivity : BeagleActivity() {
 
 ### 1. Layout xml
 
-A xml layout  file is where you host the screen component's structure, likely you do with Android Activity. Even if you're using Beagle to send your screen structure through  server-driven, it's still important to create this xml file to receive this content. 
+A xml layout file is where you host the screen component's structure, just like in an Android Activity. Even if you're using Beagle to send your screen structure through server-driven, it is still important to create the xml file to receive this content. 
 
 See below an example of an activity xml layout: 
 
