@@ -40,7 +40,7 @@ In the **getDeepLinkIntent** method, you can configure the navigation screens of
 | data                   | Map<String, String>? | Parameter map that can be defined by OpenNativeRoute(route = "navigate.myview" , data = mapOf("param1" to "paramValue")) |
 | shouldResetApplication | Boolean              |    Opens a screen with the route informed from a new flow and clears the stack of screens for the entire application.    |
 
-Once you made it, it's necessary modify the Android manifest file:
+Once you made it, it's necessary to modify the Android manifest file:
 
 1. **Step 1:** You must add an `intent filter` at the activity you wish to navigate to.
 2. **Step 2:** You will add an `action tag` that will identify this activity. The `id name` you used here is `"navigate.myview"`
