@@ -68,7 +68,7 @@ init {
     }
 ```
 
-The `setText` method responsible for displaying the text for the user to click, example `click here to select a date`.
+The `setText` method is responsible for displaying the text for the user to click. For example: `click here to select a date`.
 
 ```java
 fun setText(text: String) {
