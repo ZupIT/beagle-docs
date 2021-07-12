@@ -88,7 +88,7 @@ private fun Date.formatDate(): String{
 
 This method came from the DatePickerDialog.OnDateSetListener interface and it is responsible for taking the date selected by the user.
 
-* Through this method we will pass the value that the user selected to the method of the interface of our component `dateSetListener?.onDateSet(myCalendar.time.formatDate())`
+* We will pass through this method the value that the user selected, to the method of the interface of our component `dateSetListener?.onDateSet(myCalendar.time.formatDate())`
 
 ```java
 override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
