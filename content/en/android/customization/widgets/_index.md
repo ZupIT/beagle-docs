@@ -12,7 +12,7 @@ description: >-
 
 Beagle already has **basic widgets** used to create interface components of your server-driven application. 
 
-However, your application may need more customized components \(Custom Views\), and to make them 'visible' to Beagle, you have to create a customized widget. You can create many new components you want, since it **makes your application's Views, 'visible' to Beagle**. 
+However, your application may need more customized components \(Custom Views\), and to make them 'visible' to Beagle, you have to create a customized widget. Because of that, you can create custom widgets that will be visible / rendered on Beagle
 
 
 
