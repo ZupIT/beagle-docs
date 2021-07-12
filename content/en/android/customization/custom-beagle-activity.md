@@ -100,7 +100,7 @@ override fun getServerDrivenContainerId(): Int = R.id.server_driven_container
 
 ### 2. Toolbar
 
-You can create a Toolbar and apply in your activity using the `getToolbar()` . In this method, you must return your Toolbar.
+You can create a Toolbar and apply in your activity using the `getToolbar()`. In this method, you must return your Toolbar.
 
 ```kotlin
 override fun getToolbar(): Toolbar = findViewById<Toolbar>(R.id.toolbar)
