@@ -12,7 +12,7 @@ In this tutorial we will see how to create a custom widget with the behavior of 
 
 ### Step 1: Creating a custom component on Android
 
-In your component's class we will inherit from `TextView` and `DatePickerDialog.OnDateSetListener`.
+We will inherit from `TextView` and `DatePickerDialog.OnDateSetListener`.
 
 ```kotlin
 class DatePickerComponent(
