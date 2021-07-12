@@ -101,7 +101,7 @@ override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int
 
 ### Step 2: Registering component in the beagle
 
-Create a class and over the name put the annotation `@RegisterWidget` and inherit from the class `WidgetView()`
+Create a subclass of WidgetView and put the`@RegisterWidget`.
 * Implement the `buildView` method that came from the `WidgetView ()` class
 * In this class we will add two attributes:
     1. `date` this attribute responsible for presenting the value of the selected date.
