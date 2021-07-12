@@ -47,7 +47,7 @@ class TextNotBlankValidator : Validator<String, ServerDrivenComponent> {
 }
 ```
 
-- To send to `InputWidget` this validation, it is necessary to refer the given name to the annotation above `"text-is-not-blank"`in the component. Follow the example below:
+- To send this validation to `InputWidget`, it is necessary to refer the given name to the annotation above `"text-is-not-blank"`in the component. Follow the example below:
 
 ```kotlin
 FormInput(
