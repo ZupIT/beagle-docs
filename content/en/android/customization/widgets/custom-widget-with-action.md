@@ -99,7 +99,7 @@ override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int
     }
 ```
 
-### Step 2: Registering component in the beagle
+### Step 2: Registering a component in the Beagle
 
 Create a subclass of WidgetView and put the`@RegisterWidget`.
 * Implement the `buildView` method that came from the `WidgetView ()` class
