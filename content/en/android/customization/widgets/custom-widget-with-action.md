@@ -10,7 +10,7 @@ Currently in Beagle, the component [**TextInput**]({{< ref path="/api/components
 
 In this tutorial we will see how to create a custom widget with the behavior of triggering a list of actions, then we will create `DatePicker`, a date selection component.
 
-### Step 1: Creating custom component on android
+### Step 1: Creating a custom component on Android
 
 In your component's class we will inherit from `TextView` and `DatePickerDialog.OnDateSetListener`.
 
