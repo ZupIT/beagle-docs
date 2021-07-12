@@ -11,7 +11,7 @@ description: Creating and executing a custom action
  - How to use an Action
 
 **Requirements:**
- - Have a project with Beagle configured
+ - A project with Beagle configured
 
  ## What is?
 
