@@ -76,7 +76,7 @@ fun setText(text: String) {
     }
 ```
 
-The next method is an Extension function responsible for formatting the date.
+The next method is an extension function responsible for formatting the date.
 
 ```java
 private fun Date.formatDate(): String{
