@@ -138,7 +138,7 @@ class DatePicker(
 }
 ```
 
-This block of code looks at the date attribute, when you change the value, it adds the new value.
+This block of code looks at the date attribute, and. when you change the value, it adds the new value.
 
 ```java
 observeBindChanges(rootView, this, date) { text ->
