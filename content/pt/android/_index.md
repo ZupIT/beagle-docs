@@ -1,5 +1,5 @@
 ---
 title: Android
-weight: -60
-description: 
+weight: 3
+description: Aqui você irá ver mais sobre o Beagle para Android
 ---
