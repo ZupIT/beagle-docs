@@ -26,7 +26,7 @@ This example creates an **`adapter`** for the `Person` interface that is extende
 
 In order to create an adapter you must: 
 
-1. Create a class that will be your adapter and **annotate** it with  a`@ RegisterBeagleAdapter`. In this example we named this class as **`PersonAdapter`** ;
+1. Create a class that will be your adapter and **annotate** it with the keyword `RegisterBeagleAdapter`. In this example we named this class as **`PersonAdapter`** ;
 2. Declare which class you want to **map** with this adapter. Here, `PersonImpl` data class is implemented as an example.;
 3. Extend the `adapter` \(PersonAdapter\) class from the **`BeagleTypeAdapter`** `Interface`, informing the class to be mapped on;
 4. When extending the interface you must implement the `fromJson` and `toJson methods`, check out the example below:
