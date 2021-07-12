@@ -33,7 +33,7 @@ interface Validator<in I, in W> {
 
 ## Implementing a validator
 
-To implement a validator, you have to have a form that enables **FormSubmit** when **FormInput** is not empty, in this case it will receive a string with the data and then it will be validated if it is empty or not.
+To implement a validator, you have to have a form that enables **FormSubmit** when **FormInput** is not empty. In this case it will receive a string with the data and then it will be validated if it is empty or not.
 
 - The class that will validate the data is annotated as `@RegisterValidator`
 - This annotation register this validator on Beagle and identify it by the name listed in parentheses.
