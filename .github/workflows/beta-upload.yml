@@ -33,7 +33,9 @@ jobs:
         run: yarn
 
       - name: Build
-        run: yarn build-playground && hugo -D --minify
+        run: yarn build-playground && hugo -D --minify -b $BASE_URL
+        env:
+          BASE_URL: https://docs-beta.usebeagle.io
 
       - name: S3 upload (latest version)
         run: aws s3 sync --acl public-read --follow-symlinks public s3://$AWS_S3_BUCKET --delete
