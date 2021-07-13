@@ -95,7 +95,7 @@ Dito isso, aqui está a tela que discutiremos:
 }
 -->
 
-{{% playground file="overview-simple-example.json" language="en"%}}
+{{% playground file="overview-simple-example.json" language="pt"%}}
 
 > Ao longo da documentação, você verá exemplos - como o acima - que usam uma ferramenta que fizemos chamada **Playground**. Ao usá-la, você pode:
 >
