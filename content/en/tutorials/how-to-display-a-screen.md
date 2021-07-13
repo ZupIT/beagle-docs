@@ -95,7 +95,7 @@ To define where you should display a server-driven screen on Angular, you should
 {{% alert color="info" %}}
 This component has other attributes that can be configured. However, in this implementation you will only use the **`path attribute`**, described in the example below.
 
-For more details on this component, check the following link [Remote View]({{< ref path="/resources/customization/beagle-for-web/remote-view-parameters" lang="en" >}}).
+For more details on this component, check the following link [Remote View]({{< ref path="/web/commons/remote-view-parameters" lang="en" >}}).
 {{% /alert %}}
 
 On the html file of your component, add the `remote view`.
