@@ -368,7 +368,7 @@ O método `register` possui dois construtores, o primeiro passando apenas o `com
 
 * **component:** Classe do componente.
 
-* **named:** Parâmetro para setar o nome do componente. Não é obrigatório passar. Um caso é quando o nome do componente é registrado diferente com que você criou no backend. Ele será usado na deserializações para encontrar seu componente.
+* **named:** Nome do componente. Não é obrigatório informar-lo. Utiliza-se por exemplo quando o nome do componente é registrado diferentemente com que você criou no backend. Ele será usado na deserializações para encontrar seu componente.
 
 **Maneiras de Registrar**
 ```swift
