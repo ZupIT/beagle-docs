@@ -13,4 +13,4 @@ description: >-
 
 No Beagle, uma ação lida com os comportamentos (funções), que serão executadas em sua aplicação assim que um determinado evento for disparado. Essas ações podem ser padrão do próprio Beagle ou customizadas.
 
-Para ver ações padrões do beagle, [**tipos de ações.**]({{< ref path="/api/actions/overview#tipos-de-ações" lang="pt">}})
+Para ver ações padrões do Beagle, acesse os [**tipos de ações.**]({{< ref path="/api/actions/overview#tipos-de-ações" lang="pt">}})
