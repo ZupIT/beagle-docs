@@ -87,7 +87,7 @@ Veja abaixo as formas que você pode registrar:
 dependencies.decoder.register(action: CustomAction.self)
 ```
 
-2º A segunda maneira de registar.
+**- A segunda forma:** 
 ```swift 
 dependencies.decoder.register(action: CustomAction.self, named: "CustomAction")
 ```
