@@ -7,7 +7,7 @@ description: This sections lists how to create and trigger a custom action
 ---
 
 **Requirements:**
- - Have a project already set up with Beagle.
+ -You need a project already set up with Beagle.
 
 ### **Step 1: What is an action** 
 
