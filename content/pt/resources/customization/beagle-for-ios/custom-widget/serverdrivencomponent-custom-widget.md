@@ -269,7 +269,7 @@ class ContainerTitle: UIView {
         systemLayoutSizeFitting(size)
     }
 
-    // Method to add component to hierarchy and pass position.
+    // Adds component to hierarchy and configures position
     private func setupView(child: UIView, title: String) {
         addSubview(label)
         label.text = title
