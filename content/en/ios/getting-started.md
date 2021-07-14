@@ -131,9 +131,9 @@ To do this, you'll need Carthage installed and a Terminal.
 
 **Step 5:** To run Beagle you will also need _YogaKit_. You can install it using SPM (Swift Package Manager).
 
-1. From the File menu, navigate through Swift Packages and select Add Package Dependency. 
-2. Enter package repository URL: `https://github.com/ZupIT/yoga.git`
-3. Confirm the Beagle version and let Xcode resolve the package
+1. From the File menu, navigate through Swift Packages and select '**Add Package Dependency**';
+2. Enter package repository URL: `https://github.com/ZupIT/yoga.git`;
+3. Confirm Beagle's version and let Xcode resolve the package.
 
 {{% alert color="success" %}}
 You've successfully installed Beagle on your project using Carthage! 
