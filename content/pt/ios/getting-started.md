@@ -1,7 +1,7 @@
 ---
 title: Primeiros Passos
 weight: 120
-description: Nessa seção, você vai aprender como criar um projeto iOS com o Beagle
+description: Nessa seção, você vai aprender como criar um projeto iOS com o Beagle.
 ---
 
 **Tópicos abordados**
