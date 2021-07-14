@@ -358,7 +358,7 @@ struct ContainerTitleWidget: Widget {
 
 ### Passo 3: Registrar o Widget.
 
-É obrigatório **registrá-lo no Beagle.** Dentro do arquivo de configuração do beagle utilize o `dependencies` para registar. 
+É obrigatório **registrá-lo no Beagle.** Dentro do arquivo de configuração do Beagle, utilize o `dependencies` para registar. 
 
 {{% alert color="info" %}}
 Para saber mais sobre o dependencies. [**Beagle Dependencies**]({{< ref path="/resources/customization/beagle-for-ios/beagles-dependencies" lang="pt" >}}).
