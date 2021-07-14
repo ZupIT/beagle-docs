@@ -77,7 +77,7 @@ Agora falaremos do componente `ContainerTitle`. Para transformá-lo em um compon
 
 1. Crie uma estrutura **ContainerTitleWidget** adotando protocolo `Widget`. A interface widget irá adicionar a property de **widgetProperties** e o método **toView**.
 
- * **widgetProperties:** A propriedade de aplicar estilo, id e acessibilidade.
+ * **widgetProperties:** Propriedade para aplicar estilo, id e acessibilidade.
 
  * **toView:** Método para retornar a view do componente criado.
 
