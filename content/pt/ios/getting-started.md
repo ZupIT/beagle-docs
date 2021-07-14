@@ -23,7 +23,7 @@ description: Nessa seção, você vai aprender como criar um projeto iOS com o B
 
 <br>
 
-Nós vamos usar Xcode 11+ nesse exemplo, então se você não tem instalado, por favor baixe da AppStore.
+Nós vamos usar Xcode 11+ nesse exemplo, então se você ainda não instalou, é necessário fazer o download na AppStore.
 
 **Passo 1:** Abra o seu Xcode e clique em _File -> New -> Project_.
 
