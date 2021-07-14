@@ -38,11 +38,11 @@ enum BeagleEnvironment {
 ```
 
 ### 2. baseUrl
-Informa a URL base usada no Beagle na aplicação. Requisições feitas pelo `BeagleWidget` e ações de navegação usam a propriedade `baseUrl` para montar seus paths. O padrão é uma string vazia. No exemplo abaixo, a request resultante vai ser `http://localhost:8080/test`:
+Informa a URL base usada no Beagle na aplicação. Requisições feitas pelo `BeagleWidget` e ações de navegação usam a propriedade `baseUrl` para montar seus paths. O padrão é uma string vazia. No exemplo abaixo, a request resultante vai ser `http://yourBffBaseUrl.io/test`:
 
 ```dart
 BeagleSdk.init(
-  baseUrl: 'http://localhost:8080',
+  baseUrl: 'http://yourBffBaseUrl.io',
 );
 
 BeagleWidget(

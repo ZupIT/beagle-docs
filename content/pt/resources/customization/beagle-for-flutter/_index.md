@@ -6,4 +6,4 @@ description: Aqui você encontra as principais classes que fazem parte do framew
 
 ---
 
-Aqui você encontra informações adicionais sobre o Beagle Flutter.
+Aprenda como usar e configurar cada detalhe sobre o Beagle Flutter.

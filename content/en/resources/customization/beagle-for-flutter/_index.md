@@ -7,4 +7,4 @@ description: >-
 
 ---
 
-You will find here additional information about Beagle Flutter.
+Learn how to use and configure every detail about Beagle Flutter.
