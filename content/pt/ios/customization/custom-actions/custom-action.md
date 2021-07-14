@@ -76,7 +76,7 @@ struct CustomAction: Action {
 
 O método register possui dois construtores, o primeiro passando apenas o `action` e segundo recebendo o `action` e `named`.
 
-**action:** Passa a struct da action.
+**action:** Struct da action.
 
 **named:** Parâmetro para setar o nome da action. Não é obrigatório passar. Um caso é quando o nome da action é registrado diferente com que você criou no backend. Ele será usado na deserializações para encontrar sua ação.
 
