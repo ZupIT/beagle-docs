@@ -70,7 +70,7 @@ struct CustomAction: Action {
 
 ### **Passo 3: Como Registrar uma ação.**
 
-É obrigatório registrar ações no Beagle. Dentro do arquivo de configuração do beagle utilize o dependencies para registar.
+É obrigatório registrar ações no Beagle. E para fazer isso, acesse dentro do arquivo de configuração do Beagle e utilize o dependencies para registrar.
 
 {{% alert color="info" %}} Para saber mais sobre o dependencies. [Beagle Dependencies]({{< ref path="" lang="pt" >}}). {{% /alert %}}
 
