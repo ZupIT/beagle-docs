@@ -73,7 +73,7 @@ class ContainerTitle: UIView {
 
 ### Passo 2: Criar o Widget
 
-Agora é o componente `ContainerTitle`, para trasformá-lo em um componente Beagle, adote o protocolo `Widget`, que é compatível com o `Decodable` e é responsável por decodificar as propriedades que seu widget expõem no backend.
+Agora falaremos do componente `ContainerTitle`. Para transformá-lo em um componente Beagle, adote o protocolo `Widget`, que é compatível com o `Decodable` e é responsável por decodificar as propriedades que seu widget expõe no backend.
 
 1. Crie uma estrutura **ContainerTitleWidget** adotando protocolo `Widget`. A interface widget irá adicionar a property de **widgetProperties** e o método **toView**.
 
