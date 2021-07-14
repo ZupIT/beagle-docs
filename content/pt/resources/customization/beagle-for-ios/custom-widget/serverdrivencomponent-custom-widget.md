@@ -366,7 +366,7 @@ Para saber mais sobre o dependencies. [**Beagle Dependencies**]({{< ref path="/r
 
 O método `register` possui dois construtores, o primeiro passando apenas o `component` e segundo recebendo o `component` e `named`.
 
-* **component:** Passa a classe do componente.
+* **component:** Classe do componente.
 
 * **named:** Parâmetro para setar o nome do componente. Não é obrigatório passar. Um caso é quando o nome do componente é registrado diferente com que você criou no backend. Ele será usado na deserializações para encontrar seu componente.
 
