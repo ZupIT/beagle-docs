@@ -11,7 +11,7 @@ Siga os passos abaixo para criar componentes que recebem um `ServerDrivenCompone
 **`ServerDrivenComponent:`** São todos os componentes default e registrados no Beagle. 
 
 {{% alert color="info" %}}
-Para saber mais sobre como criar um componente veja, [**Widget Customizado Simples**]({{< ref path="/resources/customization/beagle-for-ios/custom-widget/simple-custom-widget" lang="pt" >}}).
+Para saber mais sobre como criar um componente, veja [**Widget Customizado Simples**]({{< ref path="/resources/customization/beagle-for-ios/custom-widget/simple-custom-widget" lang="pt" >}}).
 {{% /alert %}}
 
 ### Passo 1: Criar o componente Customizado
