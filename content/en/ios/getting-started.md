@@ -145,11 +145,11 @@ You've successfully installed Beagle on your project using Carthage!
 
 <br>
 
-After Beagle's installation we need now to configure it to run on our application. For that, follow the instructions below:
+After Beagle's installation, you need to configure it to run on our application. For that, follow the instructions below:
 
-**Step 1:** Create a class BeagleConfig:
+**Step 1:** Create a BeagleConfig class:
 
-This class will be responsible to contain part of Beagle's initial configuration. We have to implement a _config_ static function in it to apply these configurations.
+This class contains part of Beagle's initial configuration. You have to implement a _config_ static function in it to apply these configurations.
 
 ```swift
 import Beagle
