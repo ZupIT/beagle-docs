@@ -31,7 +31,7 @@ struct CustomAction: AsyncAction {
     }
 ```
 
-Now we **MUST** notify when its execution is completed by triggering the `onFinish` action.
+Now you **MUST** notify when its execution is completed by triggering the `onFinish` action.
 
 ```swift
     controller.execute(actions: self.onFinish, origin: origin)
