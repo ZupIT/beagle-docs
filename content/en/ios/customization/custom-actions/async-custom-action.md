@@ -37,7 +37,7 @@ Now we **MUST** notify when its execution is completed by triggering the `onFini
     controller.execute(actions: self.onFinish, origin: origin)
 ```
 
-Here follows an Asynchronous Custom Action example:
+Follow the Asynchronous Custom Action example below:
 
 ```swift
 struct CustomAction: AsyncAction {
