@@ -55,5 +55,5 @@ struct CustomAction: AsyncAction {
 Your action is now configured to perform any tasks asynchronously!
 
 {{% alert color="success" %}}
-To learn how to register and use a new action, check the steps 3 and 4 on the [**Custom Action**]({{< ref path="/ios/customization/custom-actions/custom-action" lang="en" >}}) example.
+To learn how to register and use a new action, check the steps 3 and 4 in the [**Custom Action**]({{< ref path="/ios/customization/custom-actions/custom-action" lang="en" >}}) example.
 {{% /alert %}}
