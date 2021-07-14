@@ -221,7 +221,7 @@ Important: Beagle does not provide layers such as network, cache and log. Note t
 So it's mandatory to create a Network layer so Beagle can comunicate with a BFF through requisitions.
 {{% /alert %}}
 
-You can create these layers using these tutorials:
+You can implement these layers using these tutorials:
 
 [**Custom Network Layer**]({{< ref path="/resources/customization/beagle-for-ios/network-layer" lang="en" >}})
 <br>
