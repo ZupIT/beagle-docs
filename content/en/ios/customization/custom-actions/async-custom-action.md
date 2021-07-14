@@ -7,8 +7,8 @@ description: Creating an asynchronous custom action
 ---
 
 **Requirements:**
- - Have a project set up with Beagle.
- - Have done the example for [**Custom Action**]({{< ref path="/ios/customization/custom-actions/custom-action" lang="en" >}}).
+ -  A project set up with Beagle.
+ - You need to have done the example for [**Custom Action**]({{< ref path="/ios/customization/custom-actions/custom-action" lang="en" >}}).
 
 {{% alert color="warning" %}}
 If you don't know what an action is, check the [**What is an action**]({{< ref path="/ios/customization/custom-actions/custom-action" lang="pt" >}}) section.
