@@ -80,9 +80,9 @@ O método register possui dois construtores, o primeiro passando apenas o `actio
 
 **named:** Parâmetro para setar o nome da action. Não é obrigatório passar. Um caso é quando o nome da action é registrado diferente com que você criou no backend. Ele será usado na deserializações para encontrar sua ação.
 
-Maneiras de Registrar
+Veja abaixo as formas que você pode registrar:
 
-1º A primeira maneira de registrar.
+**- A primeira forma:**
 ```swift
 dependencies.decoder.register(action: CustomAction.self)
 ```
