@@ -1,11 +1,11 @@
 ---
-title: Customizações
+title: Customization
 weight: 139
 description: >-
-  Nesta seção, você encontra as principais classes que fazem parte do framework
-  do Beagle para iOS.
+  This section lists the main classes that are part of Beagle's framework for iOS
+  iOS.
 ---
 
 ---
 
-O Beagle para iOS possui estas principais classes:
+These are the iOS classes for Beagle
