@@ -96,7 +96,7 @@ Após registrar o seu componente de customização, você pode usá-lo via serve
 
 ### **Passo 4: Como usar um ação?**
 
-Para usar as ações do beagle basta o componente que for usar ter um parametro do tipo `Action`.
+Para usar as ações do Beagle, o componente que você for utilizar precisa de um parâmetro do tipo `Action`.
 
 Veja abaixo um exemplo de como usar em um botão que executa a ação customizada no evento de clique:
 
