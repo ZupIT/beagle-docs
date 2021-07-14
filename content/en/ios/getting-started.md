@@ -233,7 +233,7 @@ You can implement these layers using these tutorials:
 
 <br>
 
-Or if you want to skip these configurations, you can use our support library: [**Beagle Scaffold**]({{< ref path="/get-started/using-beagle-helpers/ios/beagle-scaffold" lang="en" >}}), that contains default implementations of Network, Cache and Log layers. 
+If you want to skip these configurations, use Beagle's support library: [**Beagle Scaffold**]({{< ref path="/get-started/using-beagle-helpers/ios/beagle-scaffold" lang="en" >}}), that contains default implementations of Network, Cache and Log layers. 
 
 But remember that is important to customize your Network layer for security matters.
 
