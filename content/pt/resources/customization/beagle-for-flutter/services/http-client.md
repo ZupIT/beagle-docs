@@ -82,3 +82,11 @@ Future<Response> sendRequest(BeagleRequest req) async {
   );
 }
 ```
+
+## Use um cliente HTTP customizado
+Para usar seu cliente HTTP, passe-o no método de inicialização do Beagle `BeagleSdk.init` assim como no exemplo abaixo:
+```dart
+BeagleSdk.init(
+  httpClient: SeuClienteHttp(),
+);
+```
