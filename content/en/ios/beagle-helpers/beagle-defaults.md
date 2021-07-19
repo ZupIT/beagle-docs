@@ -41,7 +41,7 @@ end
 
 After adding BeagleDefaults as a dependency in your project, you can use all the default implementation in your `Beagle.dependencies`.
 
-All implementations can be changed up to your preferences. It's still not recommended to use this implementations without checking your product guidelines of security, cache management and log system.
+All implementation can be changed up to your preferences. It's still not recommended to use mentioned implementation without checking your product's security guidelines, its cache management and log system.
 
 <hr>
 
