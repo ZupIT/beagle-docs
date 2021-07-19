@@ -81,12 +81,12 @@ Use Spring's Initializr to create a project for your micro-service. Click the fo
 
 ![Spring Initializr with recommended settings for a BFF with Spring, using Beagle Spring Starter](/shared/image%20%288%29.png)
 
-- These settings are:
-  - Maven dependency manager;
-  - Kotlin with JAR packaging and Java 8+ compatibility;
-  - Spring Boot Actuator dependency.
-- Click `GENERATE` to download a zip file containing your project.
-- Unzip the file and open the extracted folder in your IDE.
+- The settings are:
+1. Maven dependency manager;
+2. Kotlin with JAR packaging and Java 8+ compatibility;
+3. Spring Boot Actuator dependency;
+4. Click `GENERATE` to download a zip file containing your project;
+5. Unzip the file and open the extracted folder in your IDE.
   {{% /tab %}}
   {{< /tabs >}}
 
