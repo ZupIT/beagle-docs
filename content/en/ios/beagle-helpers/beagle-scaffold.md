@@ -100,7 +100,7 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 ### Customization
 <hr>
 
-In this section you will learn on how to customize your Beagle Scaffold. Let's start with the most basic and common one: changing the base Url. This will happen when you try rendering your first server-driven screen, which will be right after displaying our demo screen.
+In this section, you will learn how to customize your Beagle Scaffold. Let's start with the most basic one: change the base Url. This will happen when you try rendering your first server-driven screen, which will be right after displaying the demo screen.
 
 **Step 1:** Create a new file, called `BeagleConfigurations.swift`. 
 
