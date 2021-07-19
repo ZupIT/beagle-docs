@@ -233,7 +233,7 @@ Você pode criar essas camadas usando esses tutoriais:
 
 <br>
 
-Ou se você quiser pular essas configurações, você pode utilizar nossa biblioteca de apoio: [**Beagle Scaffold**]({{< ref path="/get-started/using-beagle-helpers/ios/beagle-scaffold" lang="en" >}}), que contém implementações padrão de camadas de Rede, Cache e Log.
+Se você quiser pular essas configurações, você pode utilizar a biblioteca de apoio do Beagle: [**Beagle Scaffold**]({{< ref path="/get-started/using-beagle-helpers/ios/beagle-scaffold" lang="en" >}}) contém implementações padrão de camadas de Rede, Cache e Log.
 
 Mas lembre-se que é muito importante customizar sua própria camada de Rede por questões de segurança.
 
