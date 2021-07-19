@@ -124,7 +124,7 @@ class ScreenBeagleService {
 }
 ```
 
-E por fim a classe **`Controller`** .
+E agora a classe **`Controller`** .
 
 1. No pacote `controller`crie uma classe e nomeia como `ScreenController` . Ela deve ser anotada com `@RestController` para que assim exponha seus componentes por meio da API Rest.
 2. Ele receberá um `ScreenBeagleService` por meio de seu construtor principal, para que o `Spring` possa injetá-la para você.
