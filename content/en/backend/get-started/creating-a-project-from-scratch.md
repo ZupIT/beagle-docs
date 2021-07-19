@@ -222,7 +222,7 @@ A JSON structure must appear on your screen similar to the structure below:
 
 If that is not the answer you had, it is necessary to check the configuration process again. Go back to the previous steps and start with the classes that have the biggest mistakes when configured for the first time.
 
-Or, if you prefer, take the finished project from our repository and compare it with yours. You can access the [**repository here.** ](https://github.com/ZupIT/beagle/tree/master/backend/sample)
+If you prefer, take the finished project from Beagle's repository and compare it with yours. You can access the [** repository.** ](https://github.com/ZupIT/beagle/tree/master/backend/sample)
 
 {{% alert color="info" %}}
 In order to use the backend service, you must have the front end prepared for Beagle, whether Android, iOS or Web. Everything will work using a JSON from the Backend.
