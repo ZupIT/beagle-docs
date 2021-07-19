@@ -403,11 +403,11 @@ let beagleScreenViewController = Beagle.screen(
 ```
 
 {{% alert color="info" %}}
-Para saber mais como exibir o Componente. [**Como exibir uma tela**]({{< ref path="/get-started/using-beagle/ios" lang="pt" >}}).
+Para saber mais como exibir o Componente, veja a seção [**Como exibir uma tela**]({{< ref path="/get-started/using-beagle/ios" lang="pt" >}}).
 {{% /alert %}}
 
-Exemplo renderizado:
+Veja abaixo um exemplo renderizado:
 
 ![](/shared/custom-component-servendrivencomponent.png)
 
-Se você usar componentes mais complexos que estejam no  `UIViews` ou outros componentes não mencionados, o processo seria parecido.
+Se você usar componentes mais complexos que estão no `UIViews` ou outros componentes não mencionados, o processo é parecido.
