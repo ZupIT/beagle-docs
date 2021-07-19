@@ -223,9 +223,9 @@ Uma estrutura JSON tem que aparecer na sua tela similar a estrutura abaixo:
 
 ### **Passo 3: Checar o processo**
 
-Se essa não for a resposta que você teve é necessário checar o processo de configuração novamente. Volte os passos anteriores e comece pelas classes que são as que apresentam maiores equívocos quando configuradas pela primeira vez.
+Se essa não for a resposta que você teve, é necessário checar o processo de configuração. Volte aos passos anteriores e comece pelas classes que apresentam maiores equívocos quando configuradas pela primeira vez.
 
-Ou, se preferir, pegue o projeto pronto no nosso repositório e compare com o seu. Você pode acessar o [**repositório aqui.** ](https://github.com/ZupIT/beagle/tree/master/backend/sample)
+Se preferir, pegue o projeto pronto no repositório do Beagle e compare com o seu. Acesse o [**repositório**](https://github.com/ZupIT/beagle/tree/master/backend/sample).
 
 {{% alert color="info" %}}
 Para que o serviço de backend seja consumido, você deve ter o front-end preparado para o Beagle, seja Android, iOS ou Web. Tudo irá funcionar usando o mesmo JSON do backend.
