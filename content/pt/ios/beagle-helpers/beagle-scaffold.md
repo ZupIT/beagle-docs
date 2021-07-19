@@ -127,7 +127,8 @@ struct BeagleConfigurations {
     
 }
 ```
-**Passo 2:** Agora precisamos mudar a nossa classe `SceneDelegate`. Dentro do método `scene`, você não vai mais chamar o método `BeagleConfig.start()`. Você vai chamar agora o `BeagleConfigurations.setup()`. Você pode ver a sua tela passando um endereço para o seu `BeagleScreenViewController`, mas você precisará importar o Beagle antes. Depois você pode usar essa controladora como a sua nova `window?.rootViewController`. Tipo assim:
+**Passo 2:** Mude a classe `SceneDelegate`. Dentro do método `scene`, você não vai mais chamar o método `BeagleConfig.start()`, mas o `BeagleConfigurations.setup()`. Você pode ver a sua tela passando um endereço para o seu `BeagleScreenViewController`, mas você precisa importar o Beagle antes. 
+Você pode usar essa controladora como a sua nova `window?.rootViewController`. Veja o exemplo abaixo: 
 
 ```swift
 func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
