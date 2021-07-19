@@ -1,7 +1,7 @@
 ---
 title: Beagle Scaffold
 weight: 16
-description: 'Here you will find the **Beagle Scaffold** library that will help you start a project using Beagle in iOS. It holds almost all necessary configurations to do it.'
+description: Here you will find the **Beagle Scaffold** library that will help you start a project using Beagle in iOS. It contains almost all necessary configurations to do it.
 ---
 
 ---
