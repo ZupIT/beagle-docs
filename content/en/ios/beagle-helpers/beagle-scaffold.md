@@ -148,7 +148,7 @@ As you have seen, Beagle Scaffold is a lib for supporting newcomers to Beagle, h
 
 You can customize Beagle Scaffold to match your needs. We've seen that we can easily change our endpoint to render a new screen instead of Beagle Scaffold's demo, and you can already guess that you can customize basically every Beagle property inside Beagle dependencies. 
 
-And there is a set of properties that you can and you should customize, which is the NetworkClient, CacheManager and Logger. If your app is going to production it's essential to determine your security levels, your cache management and what information you want to log.
+And there is a set of properties that you can and you should customize, which is the NetworkClient, CacheManager and Logger. If your app is going to be delivered to production, it's essential to configure your security levels, your cache management and what information you want to log.
 
 You can create these layers using these tutorials:
 
