@@ -69,13 +69,13 @@ The second step is to create some packages to better organize the project. They 
 
 ![](/shared/image%20%2829%29.png)
 
-### Step 3: ‌ Create the application service
+### Step 3: ‌Create the application service
 
-The first class that we will create is the Builder. It is in this file that the Server-Driven screen must be structured:
+The first class you will create is the Builder. Here in this file, the Server-Driven screen must be structured:
 
-1. Right-click the builder package and click **`new> Kotlin File / Class`** and name it `ScreenBeagleBuilder`
-2. This class must extend from `ScreenBuilder` \(which is an internal Beagle class\).
-3. Note that it will replace the `build method` and this is where the Server-Driven screen will be implemented.
+1. Right-click the builder package and click **`new> Kotlin File / Class`** and name it `ScreenBeagleBuilder`;
+2. This class must extend from `ScreenBuilder` \(which is an internal Beagle class\);
+3. Note that it will replace the `build method` and this is where the Server-Driven screen will be implemented;
 4. In this step, you can copy and paste the code below into your class:
 
 ```kotlin
