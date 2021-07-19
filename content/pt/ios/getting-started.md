@@ -103,7 +103,7 @@ end
 
 **Passo 3:** Rode o comando `pod install` e assim as dependências serão resolvidas em um Workspace.
 
-**Passo 4:** Agora abra o Workspace criado para você e a partir de agora você sempre irá trabalhar pelo Workspace.
+**Passo 4:** Agora abra o Workspace criado e a partir de agora você sempre irá trabalhar por ele.
 
 {{% alert color="success" %}}
 Você instalou com sucesso o Beagle pelo Cocoapods!
