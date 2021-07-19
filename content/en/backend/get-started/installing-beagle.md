@@ -92,9 +92,9 @@ Use Spring's Initializr to create a project for your micro-service. Click the fo
 
 ### Step 2: Include starter dependency
 
-Lastly, you have to add the dependency for the Beagle starter to your backend. In that case, the framework you chose will define the dependency's name \(`artifactId`\) should be done.
+Add the dependency for the Beagle starter to your backend. In that case, the framework you chose will define the dependency's name \(`artifactId`\) should be done.
 
-Click on the tab of the framework you're using and follow the steps to continue the configuration.
+Click on the tab of the framework you're using and follow the steps to continue the configuration:
 
 {{< tabs id="T1" >}}
 {{% tab name="Micronaut Starter" %}}
