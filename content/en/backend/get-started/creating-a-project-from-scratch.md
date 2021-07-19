@@ -57,10 +57,10 @@ As a starting point, follow this step by step to [**install the backend**]({{< r
 
 The second step is to create some packages to better organize the project. They will be named: **`builder`**, **`service`** and **`controller`**
 
-1. Click `src> main> kotlin` until you find the name of your project.
-2. Right-click `new> package`
-3. Name it **`builder`** and press enter.
-4. Repeat the process creating the other two packages, naming them **`service`** and **`controller`**
+1. Click `src> main> kotlin` until you find the name of your project;
+2. Right-click `new> package`;
+3. Name it **`builder`** and press enter;
+4. Repeat the process of creating the other two packages, naming them **`service`** and **`controller`**;
 5. After creating the packages, your screen should look like this:
 
 {{% alert color="warning" %}}
