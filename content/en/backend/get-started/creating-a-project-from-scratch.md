@@ -18,8 +18,7 @@ To create a Beagle project for the backend, we recommend:
 
 ### Step 1: Configure using Spring initializr
 
-The first step to configure your backend is to access [**Spring website**](https://start.spring.io/).  
-It will create a`Maven` project that will help your project's configuration.
+Access [**Spring website**](https://start.spring.io/) and create a `Maven` project that will help your project's configuration.
 
 ![](https://lh5.googleusercontent.com/ZshvFubtunY4x0JWWBLgSmFesUx7G2AVlSrCcS96efc2lJtAakhYJ-zxgDx7CkcCMOC6zedwUAS3ThBpVXfS8jyvieNLgL3ZJIxWnHJFLE77IOXZs3UqOR8TQazINC_enzoO4Y4Q)
 
