@@ -178,7 +178,7 @@ Insira a versão de release do Beagle no lugar de `${beagle.version}`. Ou seja, 
 Por exemplo:![](https://img.shields.io/badge/beagle-v1.5.1-green)-`ext.beagle.version = "1.5.1"`
 
 {{% alert color="warning" %}}
-Lembre de sempre verificar se você está usando a versão mais recente do Beagle. Para saber disso, basta passar o mouse por cima do número da versão. Depois disso, sincronize com sua máquina.
+Sempre verifique se você está usando a versão mais recente do Beagle. Para saber disso, basta passar o mouse por cima do número da versão. Depois disso, sincronize com sua máquina.
 {{% /alert %}}
 
 Parabéns, a configuração inicial está pronta para uso!
