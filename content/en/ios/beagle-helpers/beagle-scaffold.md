@@ -144,7 +144,7 @@ Cool! Now you can see your own server-driven screen!
 
 ### Possible Customizations
 
-As you have seen, Beagle Scaffold is a lib for supporting newer people to Beagle, helping them rendering a screen using Beagle as fast as they can.
+As you have seen, Beagle Scaffold is a lib for supporting newcomers to Beagle, helping them rendering a screen using Beagle as fast as possible.
 
 But as you also have seen, you can customize Beagle Scaffold to match your needs. We've seen that we can easily change our endpoint, to see a new screen instead of Beagle Scaffold's demo, and you can already guess that you can customize basically every Beagle propertie inside Beagle dependencies. 
 
