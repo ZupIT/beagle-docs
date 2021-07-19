@@ -39,7 +39,7 @@ Beagle Scaffold é uma estrutura de suporte que tem implementações padrão de 
 
 **Passo 1**: Crie um projeto novo no Xcode.
 
-**Passo 2**: No seu terminal, rode o comando `pod init` para criar um Podfile e adicione o Beagle Scaffold como uma dependência do seu projeto. Como a seguir:
+**Passo 2**: No seu terminal, rode o comando `pod init` para criar um Podfile e adicione o Beagle Scaffold como uma dependência do seu projeto. Como no exemplo abaixo:
 
 ```ruby
 target 'MyApp' do
