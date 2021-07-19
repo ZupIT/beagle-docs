@@ -38,12 +38,12 @@ When you create services, controllers, or builders they must be in the same pack
 
 {{< tabs id="T2" >}}
 {{% tab name="Micronaut" %}}
-First, you should create a class to configure a `Service` . The process is pretty simple, you just have to:
+First, you should create a class to configure a `Service`. The process is simple, you just have to:
 
 1. Create a class and name it as `MyService`;
 2. Note it with `@Singleton`, because this will be responsible to create your objects.
 
-The example below, you can see the result that must appear on your screen:
+In the example below, you can see the result that must appear on your screen:
 
 ```kotlin
 import br.com.zup.beagle.widget.core.TextAlignment
