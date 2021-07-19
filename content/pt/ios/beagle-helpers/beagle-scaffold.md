@@ -104,13 +104,13 @@ Nessa seção você vai aprender como customizar o seu Beagle Scaffold. Vamos co
 
 **Passo 1:** Crie um novo arquivo, chamado `BeagleConfigurations.swift`.
 
-1. Importe o Beagle e o BeagleScaffold.
-2. Crie uma função estática `setup`.
-3. Dentro da nossa função `setup`, instancie a variável `dependencies` que é uma `BeagleDependencies`.
-4. Mude a propriedade `urlBuilder` da nossa variável para a sua Url base. Nesse exemplo nós vamos utilizar uma url localhost, como `http://localhost:8080`.
+1. Importe o Beagle e o BeagleScaffold;
+2. Crie uma função estática `setup`;
+3. Dentro da função `setup`, instancie a variável `dependencies` que é uma `BeagleDependencies`;
+4. Mude a propriedade `urlBuilder` da nossa variável para a sua Url base. Nesse exemplo foi utilizado uma url localhost, como `http://localhost:8080`.
 5. Agora você precisa notificar o Beagle que você mudou essa propriedade. Para fazer isso passe sua variável `dependencies` como um parâmetro para o método `start` da classe `BeagleConfig` do BeagleScaffold.
 
-Sua classe `BeagleConfigurations` deveria estar assim:
+Sua classe `BeagleConfigurations` deve estar como o exemplo abaixo: 
 
 ```swift
 import Foundation
