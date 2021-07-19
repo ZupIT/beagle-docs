@@ -12,7 +12,7 @@ In this tutorial, a Backend will be implemented with Beagle so it can respond to
 
 ### Recommended
 
-To create a Beagle project for backend, we recommended:
+To create a Beagle project for the backend, we recommend:
 
 - Intelij Community IDEA
 
