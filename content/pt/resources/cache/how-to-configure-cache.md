@@ -217,7 +217,7 @@ Na lista abaixo, você confere quais são as propriedades disponíveis e as conf
 {{% tab name="Web" %}}
 Na web, o cache é configurado quando definimos as configurações iniciais do Beagle Web no parâmetro `strategy`, que é um dos parâmetros do `BeagleModule` \(se você estiver usando Angular\) ou `createBeagleUIService`\(se você estiver usando React\).
 
-Por padrão, o cache vem habilitado com a estratégia**`beagle-with-fallback-to-cache`**, porém a estratégia`beagle-cache-only` também pode ser utilizada para implementar o [**protocolo de cache do Beagle**]({{< ref path="/resources/customization/beagle-for-web/cache-strategy" lang="pt" >}}).
+Por padrão, o cache vem habilitado com a estratégia**`beagle-with-fallback-to-cache`**, porém a estratégia`beagle-cache-only` também pode ser utilizada para implementar o [**protocolo de cache do Beagle**]({{< ref path="/web/commons/cache-strategy" lang="pt" >}}).
 
 {{% alert color="warning" %}}
 Lembre de deixar o CORS habilitado no backend sempre que for utilizar a estratégia de cache do Beagle para Web.

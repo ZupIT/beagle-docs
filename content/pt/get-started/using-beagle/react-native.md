@@ -67,7 +67,7 @@ Parabéns! Você criou sua primeira tela com o Beagle!
 - [Imagens locais]({{< ref path="/resources/customization/beagle-for-react-native/local-images" lang="pt" >}})
 
 👉 Para mais detalhes em como usar a configuração do Beagle e o componente BeagleRemoteView, por
-favor, leia o [guia para React]({{< ref path="/get-started/using-beagle/web/react" lang="pt" >}}),
+favor, leia o [guia para React]({{< ref path="/web/react/using-beagle" lang="pt" >}}),
 funciona da mesma maneira!
 
 👉 O Beagle React Native ainda é Beagle Web! Tudo nesta documentação para Beagle Web também é válido
@@ -75,7 +75,7 @@ para o Beagle React Native. Para obter um conhecimento mais profundo da lib, sug
 dos artigos em
 [recursos > customização > Beagle para React Native]({{< ref path="/resources/customization/beagle-for-react-native" lang="pt" >}})
 assim como
-[recursos > customização > Beagle para Web]({{< ref path="/resources/customization/beagle-for-web" lang="pt" >}})
+[recursos > customização > Beagle para Web]({{< ref path="/web/commons" lang="pt" >}})
 
 👉 Se você deseja saber do estado atual de desenvolvimento do Beagle RN, veja
 [aqui]({{< ref path="/resources/customization/beagle-for-react-native/development" lang="pt" >}}).

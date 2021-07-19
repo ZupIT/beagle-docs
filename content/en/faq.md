@@ -94,7 +94,7 @@ You can see more how to create Beagle's projects with each of these platforms on
 
 * [**Beagle for Android**]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/" lang="en" >}})
 * [**Beagle for iOS**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios/" lang="en" >}})
-* [**Beagle for Web**]({{< ref path="/get-started/creating-a-project-from-scratch/case-web" lang="en" >}})
+* [**Beagle for Web**]({{< ref path="/web/commons/creating-a-project-from-scratch" lang="en" >}})
 
 ## How to make unitary and instrumented tests on server-driven screens?
 
