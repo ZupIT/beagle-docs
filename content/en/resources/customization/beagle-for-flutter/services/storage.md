@@ -33,7 +33,7 @@ abstract class Storage {
 To avoid vulnerability issues, the default implementation stores information only in memory.
 
 ## Create a custom storage
-To create your own storage, you only need to create a class that implements the `Storage` abstract class, here is the default implementation:
+Create a class that implements the `Storage` abstract class, here is the default implementation:
 
 ```dart
 class DefaultStorage implements Storage {
