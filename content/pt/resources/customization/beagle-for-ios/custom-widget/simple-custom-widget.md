@@ -99,8 +99,9 @@ Para usar o `Sourcery`, veja mais informações na seção [**Sourcery**]({{< re
 
 **Manual:**
 
-Para fazer manual tem que criar o init e a decodificação dos parametros `title` e `widgetProperties` da struct `BoxWidget`.
-O widgetProperties tem sua propria parte decodificação, entao é preciso apenas passar o decoder para o objeto `WidgetProperties`.
+Para fazer manualmente: 
+1. Crie o init e a decodificação dos parâmetros `title` e `widgetProperties` da struct `BoxWidget`.
+2. O widgetProperties tem sua própria parte decodificação, passe o decoder para o objeto `WidgetProperties`.
 
 ```swift
 
