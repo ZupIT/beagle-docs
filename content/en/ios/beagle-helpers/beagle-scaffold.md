@@ -136,7 +136,7 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
     }
 ```
 
-**Step 3:** Since your endpoint will probably not be a secure connection, you will need to allow an arbitrary loads on your `info.plist` file. Go into it, and create a property `App Transport Security Settings` by clicking on the `+` icon at the `Information Property List` level. At the `App Transport Security Settings` level click on the `>` icon, to open it up, then create the property `Allow Arbitrary Loads` and set it to `YES`.
+**Step 3:** Since your endpoint will probably not be a secure connection, you will need to allow an arbitrary load in your `info.plist` file. To do this, create a property called `App Transport Security Settings` by clicking on the `+` icon at the `Information Property List` level. At the `App Transport Security Settings` level, click on the `>` icon to open it up, then create the property `Allow Arbitrary Loads` and set it to `YES`.
 
 {{% alert color="success" %}}
 Cool! Now you can see your own server-driven screen! 
