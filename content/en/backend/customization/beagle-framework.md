@@ -54,7 +54,7 @@ See below a demostration of this class, it was implemented using a `javax.servle
 
 ### Step 4: Implement the `RestCacheHandler`
 
-You have to implement a `RestCacheHandler` interface, with four transformation that a manipulator needs to run in your response object. It is generic and it must be specified for what kind of response is used in your HTTP structure. Your methods must behave like described below:
+You have to implement a `RestCacheHandler` interface with four transformations that a manipulator needs to run in your response object. It is generic and it must be specified for what kind of response is used in your HTTP structure. Your methods must behave like described below:
 
 | Method                            | Behaviour                                                                                                   |
 | :-------------------------------- | :---------------------------------------------------------------------------------------------------------- |
