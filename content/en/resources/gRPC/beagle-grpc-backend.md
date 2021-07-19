@@ -300,4 +300,4 @@ Done! Your application will already be available in localhost:
 
 ### **Read more about beagle gRPC**
 
-#### 👉 This tutorial is available on github with more advanced examples, such as headers and interceptors for example. If you are interested, access them here on [backend examples](https://github.com/ZupIT/beagle-grpc/backend/examples)
+#### 👉 This tutorial is available on GitHub with more advanced examples, such as headers and interceptors. If you want to learn more, access them on [the backend examples page](https://github.com/ZupIT/beagle-grpc/tree/master/backend/examples)
