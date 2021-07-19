@@ -14,7 +14,7 @@ Esta seção explica como criar um backend sem fazer uso das configurações pro
 * Os `Starters` da configuração inicial já fazem todo o processo descrito nesta página e adicionam automaticamente as configurações abaixo.
 
 {{% alert color="danger" %}}
-Vale reforçar que as customizações da configuração inicial não se aplicam a esse módulo.
+As customizações da configuração inicial não se aplicam a esse módulo.
 {{% /alert %}}
 
 Para configurar seu BFF manualmente, siga os seguintes passos: 
