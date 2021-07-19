@@ -61,10 +61,10 @@ Como ponto de partida, siga o [**passo a passo para instalar o backend**]({{< re
 
 O segundo passo é criar alguns pacotes para organizar melhor o projeto. Eles serão nomeados: **`builder`**, **`service`** e **`controller`**
 
-1. Clique em `src` &gt; `main` &gt; `kotlin` até encontra o nome do seu projeto.
-2. Clique com o botão direito do mouse em `new` &gt; `package`
-3. Nomeie `builder` e aperte enter.
-4. Repita o processo criando os dois outros pacotes, nomeando-os `service` e `controller`
+1. Clique em `src` &gt; `main` &gt; `kotlin` até encontra o nome do seu projeto;
+2. Clique com o botão direito do mouse em `new` &gt; `package`;
+3. Nomeie `builder` e aperte enter;
+4. Repita o processo criando os dois outros pacotes, nomeando-os `service` e `controller`;
 5. Após a criação dos pacotes, a sua tela deverá estar assim:
 
 {{% alert color="warning" %}}
