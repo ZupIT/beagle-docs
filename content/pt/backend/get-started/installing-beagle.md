@@ -188,7 +188,7 @@ Você pode conferir um **exemplo prático** de tela ou componente Server-Driven 
 {{% alert color="danger" %}}
 O Spring Boot tem um problema conhecido envolvendo seu `WebMvcConfigurationSupport`. Sua presença substitui outras configurações do Jackson, incluindo a do `Spring Starter`.
 
-Caso haja algum em seu projeto, sugerimos substituí-lo por`WebMvcConfigurer.`
+Se isso acontecer em seu projeto, é só substituir por`WebMvcConfigurer.`
 
 Para mais detalhes, consulte [**esta issue no Github**](https://github.com/spring-projects/spring-boot/issues/12751)
 
