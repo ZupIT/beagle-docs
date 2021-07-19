@@ -14,7 +14,7 @@ For other languages, your server needs to serve JSON following Beagle's API. Als
 
 ## Requirements
 
-Before you integrate Beagle to your application to run it on the backend, it's important to check out if you have installed all the current versions of the following programs:
+Before you integrate Beagle into your application to run it on the backend, check if you have already installed all the current versions of the following programs:
 
 - **JDK 8+ language \(Kotlin 1.3+ is recommended\)**
 - **Maven 3+**
