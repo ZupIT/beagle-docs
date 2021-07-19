@@ -57,7 +57,7 @@ You've successfully installed Beagle Scaffold on your app!
 ### Configuration
 <hr>
 
-**Step 1:** To start configuring Beagle on our app, we need to go into the file SceneDelegate, then import the lib `BeagleScaffold` and call our function named `start()` from Beagle Scaffold's class `BeagleConfig`, inside method `scene()`:
+**Step 1:** To start configuring Beagle in our app, we need to go into the file SceneDelegate, then import the lib `BeagleScaffold` and call the function named `start()` from Beagle Scaffold's class `BeagleConfig`, inside method `scene()`:
 
 ```swift
 func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
