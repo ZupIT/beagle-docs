@@ -46,5 +46,5 @@ Before using the implementation mentioned, check your product's security guideli
 
 <hr>
 
-##### More about Beagle: https://github.com/ZupIT/beagle
-##### For more on Beagle-Scaffold: Please check our [Beagle-Scaffold]({{< ref path="/get-started/using-beagle-helpers/ios/beagle-scaffold" lang="en" >}}) documentation.
+##### Check out more information about Beagle: https://github.com/ZupIT/beagle
+##### For more on Beagle-Scaffold: Please check the [Beagle-Scaffold page]({{< ref path="/get-started/using-beagle-helpers/ios/beagle-scaffold" lang="en" >}}).
