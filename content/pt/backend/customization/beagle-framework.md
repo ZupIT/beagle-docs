@@ -147,7 +147,7 @@ class MyFilter : Filter {
 
 Para que o Beagle tenha o funcionamento esperado na filtragem de elementos por plataforma, é necessário realizar algumas configurações. 
 
-É recomendado registrar um filtro ou um interceptor que verifique a resposta de seu BFF e filtre os elementos enviados de acordo com a plataforma especificada no header customizado `beagle-platform`. 
+Registre um filtro ou um interceptor que verifique a resposta de seu BFF e filtre os elementos enviados de acordo com a plataforma especificada no header customizado `beagle-platform`. 
 
 A classe `BeaglePlatformUtil` foi criada disponibilizando algumas ferramentas para facilitar essa configuração e ser usada em seu filtro/interceptor. Elas são especificadas abaixo:
 
