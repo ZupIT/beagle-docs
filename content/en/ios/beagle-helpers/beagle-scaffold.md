@@ -155,11 +155,12 @@ Cool! Now you can see your own server-driven screen!
 
 ### Possible Customizations
 
-As you have seen, Beagle Scaffold is a lib for supporting newcomers to Beagle, helping them rendering a screen using Beagle as fast as possible.
+Beagle Scaffold is a lib that supports newcomers to use Beagle, it helps you render a screen as fast as possible, for example. And you can also customize Beagle Scaffold to match your needs. 
 
-You can customize Beagle Scaffold to match your needs. We've seen that we can easily change our endpoint to render a new screen instead of Beagle Scaffold's demo, and you can already guess that you can customize basically every Beagle property inside Beagle dependencies. 
+You can easily change the endpoint to render a new screen instead of Beagle Scaffold's demo, and you are able to customize every Beagle property inside Beagle's dependencies. 
 
-And there is a set of properties that you can and you should customize, which is the NetworkClient, CacheManager and Logger. If your app is going to be delivered to production, it's essential to configure your security levels, your cache management and what information you want to log.
+There is a set of properties that you should customize, such as the NetworkClient, CacheManager, and Logger. 
+If your app is going to be delivered to production, it's essential to configure your security levels, your cache management, and what information you want to log.
 
 You can create these layers using these tutorials:
 
