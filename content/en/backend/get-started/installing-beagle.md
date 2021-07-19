@@ -41,7 +41,7 @@ For a simple setup, you can choose between 2 frameworks to create your [**BFF**]
 
 > Spring makes programming Java quicker, easier, and safer for everybody. Spring’s focus on speed, simplicity, and productivity has made it the world's most popular Java framework.
 
-Once you choose the framework you'll work with, proceed with the configurations below:
+After choosing the framework you'll work with, proceed with the configuration below:
 
 {{< tabs id="T0" >}}
 {{% tab name="Micronaut" %}}
