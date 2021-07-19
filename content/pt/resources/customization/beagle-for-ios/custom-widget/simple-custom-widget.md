@@ -6,7 +6,7 @@ description: Nesta seção, você encontra como criar e utilizar um widget no Be
 
 ## Introdução
 
-O Beagle já possui alguns widgets básicos que podem ser usados para alterar a sua aplicação UI através do backend. No entanto, você pode adicionar novos componentes para fazer as views da sua aplicação fiquem "visíveis" ao Beagle e que possam também ser usadas no backend. 
+O Beagle já possui alguns widgets básicos que podem ser usados para alterar a sua aplicação UI por meio do backend. No entanto, você pode adicionar novos componentes para fazer com que as views da sua aplicação sejam "visíveis" ao Beagle e que possam também ser usadas no backend. 
 
 ### Passo 1: Criar o componente nativo.
 
