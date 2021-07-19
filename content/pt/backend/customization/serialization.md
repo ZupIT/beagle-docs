@@ -1,7 +1,7 @@
 ---
 title: Serialização
 weight: 196
-description: Entenda como funciona a serialização
+description: Nesta seção, você encontra como funciona a serialização no Beagle. 
 ---
 
 ---
