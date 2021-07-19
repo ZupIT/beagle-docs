@@ -41,7 +41,7 @@ Siga os passos para configurar:
 
 ### Passo 2: Abrir seu projeto gerado
 
-Siga os passos abaixo para importar o projeto que você criou. Primeiro, abra sua IDE e importe o projeto, nesse tutorial iremos utilizar o **IntelliJ IDEA Community**, com ele basta abri-lo e clicar em `Import project`.
+Siga os passos abaixo para importar o projeto que você criou. Primeiro, abra sua IDE e importe o projeto, nesse tutorial será utilizado o **IntelliJ IDEA Community**, com ele é só abrir e clicar em `Import project`.
 
 ![](https://lh3.googleusercontent.com/EIBFU3xFKyN_ng7DsAEcdoip3xYH6gIKIbLRWbg6LRbITQMd_6tcwyp5iApKn2KPDSnasioiYyb48fMNfcEW9G3pyRE0lSXGXQHPk_FBvKO21wto8qvYSa7Jwi2eNEp5XVSxQmCQ)
 
