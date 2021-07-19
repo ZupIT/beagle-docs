@@ -27,9 +27,9 @@ Nós vamos usar Xcode 11+ nesse exemplo, então se você ainda não instalou, é
 
 **Passo 1:** Abra o seu Xcode e clique em _File -> New -> Project_.
 
-**Passo 2:** Selecione a opção _App_ e clique em next.
+**Passo 2:** Selecione a opção _App_ e clique em **'Next'**.
 
-**Passo 3:** Nomeie o seu projeto, selecione a interface como _Storyboard_, linguagem _Swift_ e vá para o próximo.
+**Passo 3:** Nomeie o seu projeto, selecione a interface como _Storyboard_, linguagem _Swift_ e clique em **'Next'**.
 
 **Passo 4:** Informe onde deseja salvar seu projeto e confirme.
 
