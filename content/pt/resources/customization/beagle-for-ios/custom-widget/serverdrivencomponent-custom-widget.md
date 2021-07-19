@@ -83,7 +83,7 @@ Agora falaremos do componente `ContainerTitle`. Para transformá-lo em um compon
 
 2. A estrutura do `ContainerTitleWidget` com os parâmetros `title`, `child` e `widgetProperties` e o componente `ContainerTitle` criado no método `toView`.
 
-3. Para exibir o componente recebido, utilize a `BeagleView`, logo a mesma retorna uma `UIView`. Para usar no meio do autoLayout é preciso desabilitar o `translatesAutoresizingMaskIntoConstraints` da view.
+3. Para exibir o componente recebido, utilize a `BeagleView`, já que a mesma retorna uma `UIView`. Para usar no meio do autoLayout é preciso desabilitar o `translatesAutoresizingMaskIntoConstraints` da view.
 
 ```swift
 import Foundation
