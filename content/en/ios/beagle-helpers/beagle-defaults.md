@@ -12,7 +12,7 @@ description: 'This framework provides default implementation of network client, 
 ### Topics covered
 <hr>
 
-* What is?
+* What is it?
 * Installation
 
 ### Requirements
