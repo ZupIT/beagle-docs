@@ -15,7 +15,7 @@ Once you have finished [**Beagle's installation**]({{< ref path="/backend/get-st
 ### CORS (Cross-Origin Resource Sharing)
 
 {{% alert color="warning" %}}
-**Required configuration only to use your BFF with front-end web.**
+**This is a required configuration to use your BFF with front-end web.**
 {{% /alert %}}
 
 This process it is done according to your backend technology and, for that, we recommend you to check the tool's documentation you have chosen.
