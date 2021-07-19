@@ -8,7 +8,7 @@ description: >-
 ---
 
 ## Why use a Design System?
-To be able to use images and styled texts and buttons, you must provide a implementation of DesignSystem to Beagle Flutter. You can use it in any default widget. To learn more about how to use the default components library, see the [configuration page]({{< ref path="/resources/customization/beagle-for-flutter/configuration" lang="en" >}}).
+If you want to be able to use images, styled texts, and buttons, you must provide a DesignSystem implementation to Beagle Flutter. You can use it in any default widget. For more information about how to use the default components library, see the [configuration page]({{< ref path="/resources/customization/beagle-for-flutter/configuration" lang="en" >}}).
 
 ## How to configure a Design System?
 It's quite simple create your own Design System. You just need to create a class that implements the `BeagleDesignSystem` contract and provide images and styles to each method. We'll detail each one of them:
