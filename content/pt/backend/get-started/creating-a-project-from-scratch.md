@@ -45,9 +45,7 @@ Siga os passos abaixo para importar o projeto que você criou. Primeiro, abra su
 
 ![](https://lh3.googleusercontent.com/EIBFU3xFKyN_ng7DsAEcdoip3xYH6gIKIbLRWbg6LRbITQMd_6tcwyp5iApKn2KPDSnasioiYyb48fMNfcEW9G3pyRE0lSXGXQHPk_FBvKO21wto8qvYSa7Jwi2eNEp5XVSxQmCQ)
 
-1. Escolha o arquivo onde você colocou o seu`Spring project`
-
-   e clique em **`ok`**.
+1. Escolha o arquivo onde você colocou o seu`Spring project` e clique em **`ok`**;
 
 2. Clique em **Import projects from external model** e escolha `Maven` e depois, clique em **finish**.
 
