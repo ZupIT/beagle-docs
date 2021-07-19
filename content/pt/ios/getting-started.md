@@ -92,7 +92,7 @@ Agora o Beagle já faz parte do seu package.swift.
 
 Você vai precisar do Cocoapods instalado e o Terminal.
 
-**Passo 1:** Navegue até a pasta raiz do seu projeto e rode o comando `pod init` que vai criar um arquivo _Podfile_ para nós.
+**Passo 1:** Navegue até a pasta raiz do seu projeto e rode o comando `pod init` que irá criar um arquivo _Podfile_.
 
 **Passo 2:** Edite seu _Podfile_ colocando o nome da pod do Beagle, como o código abaixo:
 ```ruby
