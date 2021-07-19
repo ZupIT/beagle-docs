@@ -128,7 +128,7 @@ public init(from decoder: Decoder) throws {
 }
 ```
 
-Para integrar o componente ao beagle é preciso utilizar o `sizeThatFits` ou `AutoLayoutWrapper`. 
+Integre o componente ao Beagle usando o `sizeThatFits` ou `AutoLayoutWrapper`. 
 
 {{< tabs id="T0" >}}
 {{% tab name="AutoLayoutWrapper" %}}
