@@ -89,7 +89,9 @@ struct BoxWidget: Widget {
 }
 ```
 
-Temos que criar a parte de inicialização e decodificação do componente, tem duas maneiras possíveis usando o `sourcery` gerador de código para a linguagem Swift, ou fazendo manualmente.
+Crie a parte de inicialização e decodificação do componente, tem duas maneiras possíveis usando o `sourcery`:
+1. Com o gerador de código para a linguagem Swift;
+2.  Manualmente.
 
 **Sourcery:**
 
