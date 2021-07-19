@@ -2,7 +2,7 @@
 title: Visão Geral
 weight: 1
 type: overview
-description: 'Aqui você vai encontrar bibliotecas de apoio para criar projetos iOS usando o Beagle. Essas bibliotecas vão facilitar a configuração inicial do Beagle em um projeto, pulando alguns passos e começando os estudos mais  rápido.'
+description: 'Nesta seção, você encontra as bibliotecas de apoio para criar projetos iOS usando o Beagle.'
 ---
 
 ---
