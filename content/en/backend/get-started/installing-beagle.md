@@ -28,7 +28,7 @@ If you already have updated all the programs above, then just go to the followin
 When you create a microservice, it's recommended to use your team's established mechanisms. If that's not your case, just follow the configuration steps below.
 
 {{% alert color="warning" %}}
-If your team works with micro-services using a framework other than Spring or Micronaut, see [**Beagle Framework**]({{< ref path="/resources/customization/beagle-for-backend/beagle-framework" lang="en" >}}) instead.
+If your team works with microservices using other frameworks like Spring or Micronaut, check out [**Beagle Framework page**]({{< ref path="/resources/customization/beagle-for-backend/beagle-framework" lang="en" >}}) instead.
 {{% /alert %}}
 
 For a simple setup, you can choose between 2 frameworks to create your [**BFF**]({{< ref path="/key-concepts#backend-for-frontend" lang="en" >}}):
