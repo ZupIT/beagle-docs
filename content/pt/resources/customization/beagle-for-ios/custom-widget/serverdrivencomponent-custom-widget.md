@@ -299,7 +299,7 @@ class ContainerTitle: UIView {
 }
 ```
 
-Classe completa do Widget.
+Veja a classe completa do Widget:
 
 ```swift
 import Foundation
