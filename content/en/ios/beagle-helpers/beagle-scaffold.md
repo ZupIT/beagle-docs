@@ -28,7 +28,7 @@ description: Here you will find the **Beagle Scaffold** library that will help y
 It is recommended for beginners.
 {{% /alert %}}
 
-### What is?
+### What is it?
 <hr>
 
 Beagle Scaffold is a supporting framework that has default implementations of a Network layer, Cache and Logger for you, embedded in [BeagleDefaults](https://docs.usebeagle.io/get-started/using-beagle-helpers/ios/beagle-defaults) so you can start using Beagle faster.
