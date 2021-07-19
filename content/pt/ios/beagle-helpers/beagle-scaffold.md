@@ -138,10 +138,15 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
     }
 ```
 
-**Passo 3:** Como o seu endereço provavelmente não vai ser uma conexão segura, você vai precisar permitir que haja essa conexão. Para isso vá no seu arquivo `info.plist`. Crie a propriedade `App Transport Security Settings` clicando no ícone `+` no nível de `Information Property List`. Abra o nível `App Transport Security Settings` clicando no ícone `>`, e crie a propriedade `Allow Arbitrary Loads` e a defina para `YES`.
+**Passo 3:** Como o seu endereço provavelmente não vai ser uma conexão segura, você precisa permitir essa conexão. Para isso, siga: 
+
+1. Vá no seu arquivo `info.plist`;
+2. Crie a propriedade `App Transport Security Settings` clicando no ícone `+` no nível de `Information Property List`;
+3. Abra o nível `App Transport Security Settings` clicando no ícone `>`, 
+4. Crie a propriedade `Allow Arbitrary Loads` e a defina para `YES`.
 
 {{% alert color="success" %}}
-Legal! Agora você já consegue ver a sua própria tela server-driven! 
+Agora você já consegue ver a sua própria tela server-driven! 
 {{% /alert %}}
 
 ### Outras possíveis customizações
