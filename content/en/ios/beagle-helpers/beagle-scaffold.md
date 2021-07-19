@@ -175,5 +175,5 @@ You can create these layers using these tutorials:
 <br>
 <hr>
 
-##### For more on Beagle: please check our [Beagle](https://github.com/ZupIT/beagle) repository.
-##### For more on Beagle-Defaults: Please check our [Beagle-Default]({{< ref path="/get-started/using-beagle-helpers/ios/beagle-defaults" lang="en" >}}) documentation.
+##### For more information: please check [Beagle's](https://github.com/ZupIT/beagle) repository.
+##### For more on Beagle-Defaults: Please check [Beagle-Default]({{< ref path="/get-started/using-beagle-helpers/ios/beagle-defaults" lang="en" >}}) documentation.
