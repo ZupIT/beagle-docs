@@ -2,13 +2,13 @@
 title: BeagleWidget
 weight: 2
 description: >-
-  Aqui você encontra informações sobre como usar o BeagleWidget no Beagle Flutter.
+  Nessa seção, você encontrará informações sobre como usar o BeagleWidget no Beagle Flutter.
 ---
 
 ---
 
 ## O que é?
-Um widget que mostra o conteúdo do Beagle. Este é o ponto de entrada para carregar telas server driven e componentes visuais server driven para sua aplicação Flutter. O `BeagleWidget` é um `StatefulWidget` que renderiza widgets através de um JSON local ou uma requisição HTTP.
+Um widget que mostra conteúdos do Beagle. Este é o ponto de entrada para carregar telas server-driven e componentes visuais server-driven para sua aplicação Flutter. O `BeagleWidget` é um `StatefulWidget` que renderiza widgets através de um JSON local ou uma requisição HTTP.
 
 Veja como a estrutura é representada:
 
@@ -50,7 +50,7 @@ Veja como a estrutura é representada:
 </table>
 
 ### BeagleScreenRequest
-Classe usada para fazer requisições no Beagle Flutter. Ela implementa o `BeagleNetworkOptions` que traz os atributos `method`, `headers` e `strategy`. Também, a classe `BeagleScreenRequest` tem as propriedades `url` e `body`. Vejamos sua estrutura:
+É uma classe usada para fazer requisições no Beagle Flutter. Ela implementa o `BeagleNetworkOptions` que traz os atributos `method`, `headers` e `strategy`. Também, a classe `BeagleScreenRequest` tem as propriedades `url` e `body`. Veja a estrutura abaixo:
 
 <table>
   <thead>
@@ -96,10 +96,14 @@ Classe usada para fazer requisições no Beagle Flutter. Ela implementa o `Beagl
 </table>
 
 ### OnCreateViewListener
-Função que segue a estrutura `void Function(BeagleView view)` e provê a atual `BeagleView` quando está disponível.
+Uma função que segue a estrutura `void Function(BeagleView view)` e provê a atual `BeagleView` quando está disponível.
 
 ## Como usar?
-Onde quiser mostrar um conteúdo server driven, posicione o `BeagleWidget` lá informando pelo menos um JSON local ou uma `BeagleScreenRequest` com a `url` do seu BFF. No próximo exemplo, colocamos o `BeagleWidget` no corpo do widget `Scaffold`:
+Voce pode usá-lo em qualquer lugar que exiba conteúdo server-driven.
+
+- Posicione o `BeagleWidget` lá informando pelo menos um JSON local ou uma `BeagleScreenRequest` com a `url` do seu BFF.
+
+No exemplo abaixo, você vai ver o `BeagleWidget` no corpo do widget `Scaffold`:
 
 ```dart
 Scaffold(
@@ -113,5 +117,5 @@ Scaffold(
 ```
 
 {{% alert color="warning" %}}
-Atenção: é necessário chamar `BeagleSdk.init` passando pelo menos a propriedade `baseUrl` antes de usar o `BeagleWidget`.
+É necessário chamar `BeagleSdk.init` passando pelo menos a propriedade `baseUrl` antes de usar o `BeagleWidget`.
 {{% /alert %}}

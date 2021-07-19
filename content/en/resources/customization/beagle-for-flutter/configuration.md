@@ -1,13 +1,13 @@
 ---
 title: Configuration
 weight: 1
-description: You will find here information of how to configure Beagle Flutter.
+description: In this section, you will find information on how to configure Beagle Flutter.
 ---
 
 ---
 
 ## Introduction
-The method `BeagleSdk.init` is the entry point to Beagle Flutter and the receiver of all configuration it handles. By default, basic implementations are already provided for some of its parameters, it's not necessary to configure all of them.
+The method `BeagleSdk.init` is the entry point to Beagle Flutter and the receiver of all configurations it handles. By default, basic implementations are already provided for some of its parameters, so it's not necessary to configure all of them.
 
 ## What is configurable?
 These are all the configuration options that Beagle Flutter supports:
@@ -28,7 +28,11 @@ These are all the configuration options that Beagle Flutter supports:
 Check out below how to configure each one:
 
 ### 1. environment
-Attribute responsible for informing Beagle about the current build status of the application. This property is used in `BeagleUndefinedWidget` and it shows a Text with `Undefined Component` description when the `environment` is `BeagleEnvironment.debug` and shows a `SizedBox.shrink` when `BeagleEnvironment.production`. Default is `BeagleEnvironment.debug`.
+This attribute informs Beagle about the current build status of the application. This property is used in `BeagleUndefinedWidget`.
+- It shows a Text with `Undefined Component` description when the `environment` is `BeagleEnvironment.debug`.
+- It shows a `SizedBox.shrink` when `BeagleEnvironment.production`.
+
+The default is `BeagleEnvironment.debug`.
 ```dart
 enum BeagleEnvironment {
   /// The debug mode has much more information available so that the debugging
@@ -41,7 +45,9 @@ enum BeagleEnvironment {
 ```
 
 ### 2. baseUrl
-Informs the base URL used in Beagle in the application. Requests made by `BeagleWidget` and navigation actions uses the `baseUrl` property to build their paths. Default is empty string. In the example below, the resulting request will be `http://yourBffBaseUrl.io/test`:
+It informs the base URL used on Beagle in the application.
+
+The requests made by `BeagleWidget` and navigation actions uses the `baseUrl` property to build their paths. The default is empty string. In the example below, the resulting request will be `http://yourBffBaseUrl.io/test`:
 ```dart
 BeagleSdk.init(
   baseUrl: 'http://yourBffBaseUrl.io',
@@ -53,7 +59,9 @@ BeagleWidget(
 ```
 
 ### 3. httpClient
-Interface that provides a client to Beagle make the requests. Default is `DefaultHttpClient`. This is a key component to Beagle, because it's used in every request even it's implementation is quite simple. Below is the `HttpClient` contract:
+A interface that provides a client so Beagle can make the requests.
+
+The default is `DefaultHttpClient`. This is a key component to Beagle, because it's used in every request. See below the `HttpClient` contract:
 ```dart
 abstract class HttpClient {
   Future<Response> sendRequest(BeagleRequest req);
@@ -61,7 +69,12 @@ abstract class HttpClient {
 ```
 
 ### 4. components
-This provides a struct where the key is the `_beagleComponent_` property in JSON and the value is the widget that Beagle should render. To use a list of common widgets with basic implementation, use the `beagle_components` package in your project. Default is empty map. Here is a example of a component declaration:
+Provides a struct where the key is the `_beagleComponent_` property in JSON and the value is the widget that Beagle should render.
+
+If you want to use a list of common widgets with basic implementation:
+- Use the `beagle_components` package in your project.
+
+The default is empty map. Here is a example of a component declaration:
 ```dart
 Map<String, ComponentBuilder> myComponent = {
   'custom:loading': (element, _, __) {
@@ -74,7 +87,9 @@ Map<String, ComponentBuilder> myComponent = {
 ```
 
 ### 5. storage
-It handles the cache for requests made by Beagle. Default is `DefaultStorage`. To avoid vulnerability issues, the default implementation stores information only in memory, see below:
+It handles the cache for Beagle's requests. The default is `DefaultStorage`.
+
+To avoid vulnerability issues, the default implementation stores information only in the memory, see below:
 ```dart
 class DefaultStorage implements Storage {
   Map<String, String> storage = {};
@@ -102,10 +117,10 @@ class DefaultStorage implements Storage {
 ```
 
 ### 6. useBeagleHeaders
-Whether or not to send specific beagle headers in requests to fetch a widget. Default is `true`.
+Whether or not to send specific Beagle headers in the requests to fetch a widget. The default is `true`.
 
 ### 7. actions
-The map of custom actions. The key must be `_beagleAction_` identifier in JSON and the value must be the action handler. Default is `defaultActions` map. Below is a declaration of this property:
+This is the map of custom actions. The key must be a `_beagleAction_` identifier in the JSON and the value must be the action handler. The default is `defaultActions` map. See below a declaration of this property:
 ```dart
 Map<String, ActionHandler> myAction = {
   'custom:log': ({action, _, __, ___}) {
@@ -115,7 +130,7 @@ Map<String, ActionHandler> myAction = {
 ```
 
 ### 8. strategy
-This property tells Beagle how to handle the requests cache. There are seven caching strategies that Beagle implements. Default is `BeagleNetworkStrategy.beagleWithFallbackToCache`. Below are all of them:
+This property tells Beagle how to handle the cache requests. There are seven caching strategies that Beagle implements. The default is `BeagleNetworkStrategy.beagleWithFallbackToCache`. Check out below all of them:
 ```dart
 enum BeagleNetworkStrategy {
   beagleCacheOnly,
@@ -129,7 +144,12 @@ enum BeagleNetworkStrategy {
 ```
 
 ### 9. navigationControllers
-Options for the visual feedback when navigating from a widget to another. To set the default options, use `default: true` in the navigation controller. Default is empty map. Below is the declaration of a custom `NavigationController`: 
+These are the options for visual feedback when navigating from a widget to another.
+
+To set the default options:
+- Use `isDefault: true` in the navigation controller.
+
+The default is an empty map. Check out below the declaration of a custom `NavigationController`: 
 ```dart
 Map<String, NavigationController> myController = {
   'general': NavigationController(
@@ -140,7 +160,7 @@ Map<String, NavigationController> myController = {
 ```
 
 ### 10. designSystem
-Interface that provides design system to Beagle components. This makes available to Beagle images and styles to buttons and texts. Default is `DefaultEmptyDesignSystem` that doesn't return any value. Here is the `BeagleDesignSystem` contract:
+An interface that provides a design system to Beagle components. This one makes available to Beagle images and styles to buttons and texts in Beagle. Default is `DefaultEmptyDesignSystem`, that doesn't return any value. Check out the `BeagleDesignSystem` contract:
 ```dart
 abstract class BeagleDesignSystem {
 
@@ -153,7 +173,7 @@ abstract class BeagleDesignSystem {
 ```
 
 ### 11. imageDownloader
-Interface that provides image resource from network. This must implement the `downloadImage` method that receives the image url and returns a `Future<Uint8List>` as the image. Default is `DefaultBeagleImageDownloader`.
+An interface that provides image resources from network. This must implement the `downloadImage` method that receives the image URL and returns a `Future<Uint8List>` as the image. The default is `DefaultBeagleImageDownloader`.
 ```dart
 class DefaultBeagleImageDownloader implements BeagleImageDownloader {
   DefaultBeagleImageDownloader({
@@ -183,7 +203,7 @@ class DefaultBeagleImageDownloader implements BeagleImageDownloader {
 ```
 
 ### 12. logger
-Interface that provides logger to Beagle use in application. Default is `DefaultEmptyLogger` that doesn't log any information. Here is the `BeagleLogger` contract:
+An interface that provides logger for Beagle to use in the application. The default is `DefaultEmptyLogger` that doesn't log any information. See the `BeagleLogger` contract:
 ```dart
 abstract class BeagleLogger {
   void warning(String message);
@@ -197,4 +217,4 @@ abstract class BeagleLogger {
 ```
 
 ### 13. operations
-The map of custom operations that can be used to extend the capability of the Beagle expressions and are called like functions, e.g. `@{sum(1, 2)}`. Default is empty map.
+A map of custom operations that can be used to extend the capability of Beagle's expressions and they are called like functions, e.g. `@{sum(1, 2)}`. The default is empty map.

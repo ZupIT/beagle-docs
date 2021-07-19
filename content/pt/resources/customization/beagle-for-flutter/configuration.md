@@ -1,7 +1,7 @@
 ---
 title: Configuração
 weight: 1
-description: Aqui você encontra informações sobre como configurar o Beagle Flutter.
+description: Nessa seção, você encontrará informações sobre como configurar o Beagle Flutter.
 ---
 
 ---
@@ -29,7 +29,11 @@ Essas são todas as opções de configuração que o Beagle Flutter suporta:
 Confira abaixo como configurar cada um:
 
 ### 1. environment
-Atributo responsável por informar Beagle sobre o atual estado de build da aplicação. Esta propriedade é usada no `BeagleUndefinedWidget` e mostra um Text com a descrição `Undefined Component` quando o `environment` é `BeagleEnvironment.debug` e mostra um `SizedBox.shrink` quando `BeagleEnvironment.production`. O padrão é `BeagleEnvironment.debug`.
+Esse atributo informa ao Beagle sobre o atual estado de build da aplicação. Esta propriedade é usada no `BeagleUndefinedWidget`.
+- Ele mostra um Text com a descrição `Undefined Component` quando o `environment` é `BeagleEnvironment.debug`.
+- Ele mostra um `SizedBox.shrink` quando `BeagleEnvironment.production`.
+
+O padrão é `BeagleEnvironment.debug`.
 ```dart
 enum BeagleEnvironment {
   debug,
@@ -38,7 +42,9 @@ enum BeagleEnvironment {
 ```
 
 ### 2. baseUrl
-Informa a URL base usada no Beagle na aplicação. Requisições feitas pelo `BeagleWidget` e ações de navegação usam a propriedade `baseUrl` para montar seus paths. O padrão é uma string vazia. No exemplo abaixo, a request resultante vai ser `http://yourBffBaseUrl.io/test`:
+Informa a URL base usada no Beagle na aplicação.
+
+As requisições feitas pelo `BeagleWidget` e ações de navegação usam a propriedade `baseUrl` para montar seus paths. O padrão é uma string vazia. No exemplo abaixo, a request resultante vai ser `http://yourBffBaseUrl.io/test`:
 
 ```dart
 BeagleSdk.init(
@@ -51,7 +57,9 @@ BeagleWidget(
 ```
 
 ### 3. httpClient
-Interface que provê um cliente para o Beagle fazer as requisições. O padrão é o `DefaultHttpClient`. Este é um componente chave para o Beagle, porque ele é usado em todas as requisições mesmo sua implementação sendo bem simples. Abaixo o contrato `HttpClient`:
+Uma interface que provê um cliente para o Beagle fazer as requisições.
+
+O padrão é o `DefaultHttpClient`. Este é um componente chave para o Beagle, porque ele é usado em todas as requisições. Veja abaixo o contrato `HttpClient`:
 
 ```dart
 abstract class HttpClient {
@@ -60,7 +68,12 @@ abstract class HttpClient {
 ```
 
 ### 4. components
-Este provê uma estrutura onde a chave é a propriedade `_beagleComponent_` no JSON e o valor é o widget que o Beagle deve renderizar. Para usar uma lista de widgets comuns com implementação básica, use o pacote `beagle_components` no seu projeto. O padrão é um mapa vazio. Aqui está um exemplo da declaração de componente:
+Provê uma estrutura onde a chave é a propriedade `_beagleComponent_` no JSON e o valor é o widget que o Beagle deve renderizar.
+
+Se você quiser usar uma lista de widgets comuns com implementação básica:
+- Use o pacote `beagle_components` no seu projeto.
+
+O padrão é um mapa vazio. Aqui está um exemplo da declaração de componente:
 ```dart
 Map<String, ComponentBuilder> myComponent = {
   'custom:loading': (element, _, __) {
@@ -73,7 +86,9 @@ Map<String, ComponentBuilder> myComponent = {
 ```
 
 ### 5. storage
-Cuida do armazenamento de cache para as requisições feitas pelo Beagle. O padrão é o `DefaultStorage`. Para evitar problemas de vulnerabilidade, a implementação padrão armazena a informação somente em memória, veja abaixo:
+Cuida do armazenamento de cache para as requisições feitas pelo Beagle. O padrão é o `DefaultStorage`.
+
+Para evitar problemas de vulnerabilidade, a implementação padrão armazena a informação somente em memória, veja abaixo:
 ```dart
 class DefaultStorage implements Storage {
   Map<String, String> storage = {};
@@ -101,10 +116,10 @@ class DefaultStorage implements Storage {
 ```
 
 ### 6. useBeagleHeaders
-Controla se deve ou não enviar cabeçalhos beagle específicos em solicitações para buscar um widget. O padrão é `true`.
+Controla se deve ou não enviar cabeçalhos específicos do Beagle em solicitações para buscar um widget. O padrão é `true`.
 
 ### 7. actions
-Mapa de ações customizadas. A chave deve ser o identificador `_beagleAction_` no JSON e o valor deve ser o action handler. O padrão é o mapa `defaultActions`. Abaixo está uma declaração desta propriedade:
+Este é o mapa de ações customizadas. A chave deve ser o identificador `_beagleAction_` no JSON e o valor deve ser o action handler. O padrão é o mapa `defaultActions`. Veja abaixo uma declaração desta propriedade:
 ```dart
 Map<String, ActionHandler> myAction = {
   'custom:log': ({action, _, __, ___}) {
@@ -114,7 +129,7 @@ Map<String, ActionHandler> myAction = {
 ```
 
 ### 8. strategy
-Essa propriedade diz ao Beagle como cuidar do cache das requisições. Existem sete eestratégias de cache que o Beagle implementa. O padrão é `BeagleNetworkStrategy.beagleWithFallbackToCache`. Abaixo estão todas elas:
+Essa propriedade diz ao Beagle como cuidar do cache das requisições. Existem sete eestratégias de cache que o Beagle implementa. O padrão é `BeagleNetworkStrategy.beagleWithFallbackToCache`. Confira abaixo todas elas:
 ```dart
 enum BeagleNetworkStrategy {
   beagleCacheOnly,
@@ -128,7 +143,12 @@ enum BeagleNetworkStrategy {
 ```
 
 ### 9. navigationControllers
-Opções para feedback visual quando navegando de um widget para outro. Para atribuir as opções padrões, use `default: true` no controlador de navegação. O padrão é um mapa vazio. Abaixo há uma declaração de um `NavigationController` customizado:
+Estas são as opções para feedback visual quando navegando de um widget para outro.
+
+Para atribuir as opções padrões:
+- Use `isDefault: true` no controlador de navegação.
+
+O padrão é um mapa vazio. Confira abaixo uma declaração de um `NavigationController` customizado:
 ```dart
 Map<String, NavigationController> myController = {
   'general': NavigationController(
@@ -139,7 +159,7 @@ Map<String, NavigationController> myController = {
 ```
 
 ### 10. designSystem
-Interface que provê o design do sistema para os componentes do Beagle. Ele disponibiliza ao Beagle imagens e estilos de botões e textos. O padrão é o `DefaultEmptyDesignSystem` que não retorna nenhum valor. Abaixo o contrato `BeagleDesignSystem`:
+Uma interface que provê um design do sistema para os componentes do Beagle. Ele habilita imagens e estilos de botões e textos no Beagle. O padrão é o `DefaultEmptyDesignSystem`, que não retorna nenhum valor. Veja abaixo o contrato `BeagleDesignSystem`:
 ```dart
 abstract class BeagleDesignSystem {
   String image(String id);
@@ -151,7 +171,7 @@ abstract class BeagleDesignSystem {
 ```
 
 ### 11. imageDownloader
-Interface que provê imagens da internet. Ele deve implementar o methodo `downloadImage` que recebe a url da imagem e retorna um `Future<Uint8List>` como imagem. O padrão é o `DefaultBeagleImageDownloader`.
+Uma interface que provê imagens da internet. Ele deve implementar o methodo `downloadImage` que recebe a URL da imagem e retorna um `Future<Uint8List>` como imagem. O padrão é o `DefaultBeagleImageDownloader`.
 ```dart
 class DefaultBeagleImageDownloader implements BeagleImageDownloader {
   DefaultBeagleImageDownloader({
@@ -181,7 +201,7 @@ class DefaultBeagleImageDownloader implements BeagleImageDownloader {
 ```
 
 ### 12. logger
-Interface que provê o logger para o Beagle utilizar na aplicação. O padrão é o `DefaultEmptyLogger` que não loga nenhuma informação. Aqui está o contrato `BeagleLogger`:
+Interface que provê o logger para o Beagle utilizar na aplicação. O padrão é o `DefaultEmptyLogger` que não loga nenhuma informação. Veja o contrato `BeagleLogger`:
 ```dart
 abstract class BeagleLogger {
   void warning(String message);
@@ -195,4 +215,4 @@ abstract class BeagleLogger {
 ```
 
 ### 13. operations
-Mapa de operações customizadas que podem ser usadas para extender a capacidade das expressões do Beagle e são chamadas como funções, por exemplo `@{sum(1, 2)}`. O padrão é um mapa vazio.
+Um mapa de operações customizadas que podem ser usadas para extender a capacidade das expressões do Beagle e são chamadas como funções, por exemplo `@{sum(1, 2)}`. O padrão é um mapa vazio.
