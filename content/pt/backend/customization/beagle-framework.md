@@ -56,7 +56,7 @@ No entanto, ele precisa interagir com os detalhes da resposta HTTP, e é aqui qu
 
 Para demonstrar o funcionamento dessas classes, o exemplo abaixo foi implementado utilizando uma classe do `javax.servlet`. 
 
-* Como recomendado, foi criado um filtro `javax.servlet.Filter` que aplica o protocolo de cache para toda resposta dada pelo backend do qual ele faz parte.
+* Foi criado um filtro `javax.servlet.Filter` que aplica o protocolo de cache para toda resposta dada pelo backend do qual ele faz parte.
 * Com o objetivo de focar no uso dos gerenciadores de cache, a parte do código que o`javax.servlet.HttpServletResponse`requer, foi omitida. Essa omissão é apontada nos códigos com comentários.
 
 ### Passo 4: Implementar o `RestCacheHandler`
