@@ -83,7 +83,7 @@ guard let windowScene = (scene as? UIWindowScene) else { return }
 window = UIWindow(windowScene: windowScene)
 ```
 
-3. Faça o `window?.rootViewController` o nosso `BeagleScaffoldDemoViewController` e chame o método `makeKeyAndVisible`. Seu código deveria estar assim:
+3. Faça o `window?.rootViewController` o `BeagleScaffoldDemoViewController` e chame o método `makeKeyAndVisible`. Seu código deve estar assim:
 
 ```swift
 func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
