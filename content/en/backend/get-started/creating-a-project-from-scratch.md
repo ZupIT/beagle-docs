@@ -228,7 +228,7 @@ If you prefer, take the finished project from Beagle's repository and compare it
 In order to use the backend service, you must have the front end prepared for Beagle, whether Android, iOS or Web. Everything will work using a JSON from the Backend.
 {{% /alert %}}
 
-To learn more about configuring your frontend environment, see more at:
+To learn more about configuring your frontend environment, check out more:
 
 👉 Beagle implementation tutorial for [**Android**]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/" lang="en" >}}).
 
