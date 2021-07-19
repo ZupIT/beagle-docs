@@ -181,19 +181,19 @@ class BeagleConfig {
 }
 ```
 
-**Passo 3:** Agora, nós iremos configurar a classe _SceneDelegate_ para que possamos utilizá-la para inicializar nossa aplicação com o Beagle a partir de uma tela do BFF:
+**Passo 3:** Configure a classe _SceneDelegate_ para que você possa utilizá-la para inicializar a sua aplicação com o Beagle a partir de uma tela do BFF:
 
-1. Dentro do _SceneDelegate.swift_ na função `scene`, chame a nossa função `BeagleConfig.config()`.
+1. Dentro do _SceneDelegate.swift_ na função `scene`, chame a função `BeagleConfig.config()`;
 
-2. Nomeie o `guard let` que o Xcode já traz criado pra nós, com o nome `windowScene`.
+2. Nomeie o `guard let` como `windowScene`, o Xcode já criou para você;
 
-3. Inicialize a variável `window` criada fora do escopo da função, utilizando nossa `windowScene`
+3. Inicialize a variável `window` criada fora do escopo da função, utilizando a `windowScene`;
 
-4. Faça o `window.rootViewController` como a tela do BFF que você quer mostrar.
+4. Faça o `window.rootViewController` como a tela do BFF que você quer mostrar;
 
 5. Agora chame a função `makeKeyAndVisible()` da variável `window`.
 
-Seu código deveria estar mais ou menos assim:
+Seu código deve estar parecido com o modelo abaixo:
 
 ```swift
 import UIKit
