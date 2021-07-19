@@ -1,7 +1,7 @@
 ---
 title: Beagle Framework
 weight: 195
-description: Entenda como funciona o framework
+description: Nesta seção, você encontra informações para entender com o framework do Beagle funciona.
 ---
 
 ---
