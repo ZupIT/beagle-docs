@@ -148,11 +148,6 @@ To do this, follow the steps:
 Now you can see your own server-driven screen! 
 {{% /alert %}}
 
-
-{{% alert color="success" %}}
-Cool! Now you can see your own server-driven screen! 
-{{% /alert %}}
-
 ### Possible Customizations
 
 Beagle Scaffold is a lib that supports newcomers to use Beagle, it helps you render a screen as fast as possible, for example. And you can also customize Beagle Scaffold to match your needs. 
