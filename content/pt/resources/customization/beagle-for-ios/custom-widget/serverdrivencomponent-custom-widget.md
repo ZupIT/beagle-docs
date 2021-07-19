@@ -238,7 +238,7 @@ struct ContainerTitleWidget: Widget {
 
 ### SizeThatFits
 
-**`sizeThatFits:`** Método para implementar sua lógica de tamanho, usado na classe do componente customizado.
+**`sizeThatFits:`** Método para implementar a lógica de tamanho. Este método é usado na classe do componente customizado.
 
 
 ```swift
