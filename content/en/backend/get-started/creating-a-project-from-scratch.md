@@ -8,7 +8,7 @@ description: "Here, you'll find a tutorial to start a backend project with Beagl
 
 ## Starting a Backend project
 
-In this tutorial, the Backend will be implemented with Beagle so that it can respond to requests from your server-driven application, be it on Android, iOS or WEB.
+In this tutorial, a Backend will be implemented with Beagle so it can respond to requests from your server-driven application, it can be on Android, iOS, or WEB.
 
 ### Recommended
 
