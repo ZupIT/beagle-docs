@@ -25,7 +25,7 @@ description: 'This framework provides default implementation of network client, 
 ### What is it?
 <hr>
 
-It's a lib that contains default implementations of network layer, cache management and log system. It can be used by Beagle users that do not want to implement these layers from scratch.
+It's a lib that contains default implementations of the network layer, cache management, and log system. It can be used by Beagle users that do not want to implement these layers from scratch.
 
 
 ### Installation
