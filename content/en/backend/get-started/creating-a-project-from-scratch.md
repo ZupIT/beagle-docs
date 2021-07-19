@@ -141,9 +141,9 @@ class ScreenController(
 }
 ```
 
-- The `@RestController` annotation defines this class as a controller class
-- The `screenBeagleService` parameter must have its type defined as: `ScreenBeagleService`
-- The `getScreen` method needs to annotate `@ GetMapping ("/ screen")` to create the `"/ screen"` path in the application's URL and receive the result of the `createScreenBeagle` function
+- The `@RestController` annotation defines this class as a controller class;
+- The `screenBeagleService` parameter must have its type defined as: `ScreenBeagleService`;
+- The `getScreen` method needs to annotate `@ GetMapping ("/ screen")` to create the `"/ screen"` path in the application's URL and receive the result of the `createScreenBeagle` function;
 
 The backend is ready to serve as the BFF of your Server-Driven application.
 
