@@ -22,7 +22,7 @@ description: 'This framework provides default implementation of network client, 
 
 **It's recommended for more advanced users of Beagle.**
 
-### What is?
+### What is it?
 <hr>
 
 It's a lib that contains default implementations of a Network layer, Cache manager and Log system. It can be used by Beagle users that do not want to implement this layers from scratch.
