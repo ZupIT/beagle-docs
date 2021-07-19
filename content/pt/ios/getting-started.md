@@ -145,7 +145,7 @@ Você conseguiu instalar o Beagle utilizando o Carthage com sucesso!
 
 <br>
 
-Depois da instalação do a gente precisa configurá-lo pra rodar na nossa aplicação. Para isso, siga as instruções abaixo:
+Depois da instalação, você precisa configurar o Beagle pra rodar na sua aplicação. Para isso, siga as instruções abaixo:
 
 **Passo 1:** Crie uma classe `BeagleConfig`:
 
