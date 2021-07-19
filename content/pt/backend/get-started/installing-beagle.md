@@ -95,7 +95,7 @@ Neste caso, use o site do Spring para gerar um projeto com o microsserviço já 
 
 ### Passo 2: Incluir requerimentos adicionais
 
-Por último, você precisa complementar algumas configurações em nosso backend. Neste caso, o framework que você tiver escolhido é que irá definir como deve ser feita a implementação.
+Agora, você precisa complementar algumas configurações no backend. O framework que você tiver escolhido é que define como a implementação deve ser feita.
 
 Clique na opção de Framework que você escolheu anteriormente e siga os passos para continuar a configuração.
 
