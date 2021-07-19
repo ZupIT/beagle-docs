@@ -154,7 +154,7 @@ O widgetProperties tem a sua própria parte decodificação, então é preciso a
     }
 ```
 
-Para integrar o componente ao beagle é preciso utilizar o `sizeThatFits` ou `AutoLayoutWrapper`. 
+Integre o componente ao Beagle utilizando o `sizeThatFits` ou `AutoLayoutWrapper`. 
 
 {{< tabs id="T0" >}}
 {{% tab name="AutoLayoutWrapper" %}}
