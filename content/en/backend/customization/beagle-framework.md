@@ -6,12 +6,11 @@ description: Here you'll understand how to use this framework.
 
 ---
 
-This section explains how to create a backend without using frameworks such as Spring or Micronaut. You will find the tools to create a BFF to your project.
+This section explains how to create a backend without using frameworks such as Spring or Micronaut. You will find the tools to create a BFF for your project.
 
-It's important to say that:
-
-- Beagle was created to be independent, you dont need a specific backend structure.
-- `starters` of the initial configuration already does all the process described in this page and automatically add the configuration below:
+It's important to mention: 
+- Beagle was created to be independent, you don't need a specific backend structure.
+- `starters` of the initial configuration already does all the processes described on this page and automatically add the configuration below:
 
 {{% alert color="danger" %}}
 The initial configuration customization does not apply to this module.
