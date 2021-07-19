@@ -162,9 +162,9 @@ class BeagleConfig {
 
 **Passo 2:** Nessa função, crie uma constante chamada `dependencies` do tipo `BeagleDependencies`.
 
-Você vai atribuir a essa constante algumas configurações do projeto como por exemplo, a URL base que combinada com uma URL relativa irá trazer um JSON que vai descrever sua tela server-driven.
+Você vai atribuir a essa constante algumas configurações do projeto, por exemplo, a URL base que combinada com uma URL relativa irá trazer um JSON que descreve sua tela server-driven.
 
-Para configurar uma URL base por exemplo, observe o código a seguir:
+Para configurar uma URL base, por exemplo, veja o código abaixo: 
 
 ```swift
 import Beagle
