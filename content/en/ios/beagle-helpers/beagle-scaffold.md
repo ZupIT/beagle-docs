@@ -12,7 +12,7 @@ description: Here you will find the **Beagle Scaffold** library that will help y
 **Topics covered**
 <hr>
 
-* What is?
+* What is it?
 * Installation
 * Configuration
 * Customization
