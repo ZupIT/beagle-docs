@@ -292,11 +292,11 @@ Done! Your application will already be available in localhost:
 
 ### Step 6: Access your screen service
 
-- Finally, you can access the Beagle screen payload using the getScreen method from the BeagleScreenService
+- Finally, you can access the Beagle screen payload using the getScreen method from the BeagleScreenService.
 
 - For this example, you will need a client in order to get your service response. We recommend the [BloomRPC](https://github.com/uw-labs/bloomrpc) to simulate a local request on your gRPC API:
 
-- You will also need to add the lib proto files in the bloomRPC client. You can access these files [here](https://github.com/ZupIT/beagle-grpc/tree/master/backend/grpc-lib/src/main/proto)
+- You will also need to add the lib proto files in the bloomRPC client. You can access these files [in the repository](https://github.com/ZupIT/beagle-grpc/tree/master/backend/grpc-lib/src/main/proto).
 
 ### **Read more about beagle gRPC**
 
