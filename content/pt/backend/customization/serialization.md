@@ -6,7 +6,7 @@ description: Nesta seção, você encontra como funciona a serialização no Bea
 
 ---
 
-Como a maioria dos frameworks integram com Jackson e oferecem propriedades para customizar serialização, optamos por não adicionar propriedades nossas. Em vez disso, mantivemos a compatibilidade com seu framework escolhido.
+Como a maioria dos frameworks integram com Jackson e oferecem propriedades para customizar serialização, o time do Beagle optou por não adicionar as próprias propriedades. Mas foi disponibilizado a compatibilidade com seu framework escolhido.
 
 ### Customização
 
