@@ -49,7 +49,7 @@ end
 
 Se você não é familiarizado com o Cocoapods, dê uma checada na [documentação](https://guides.cocoapods.org/) deles. 
 
-**Passo 3:** Rode o comando `pod install` para instalar o Beagle Scaffold no seu app. Esse comando vai gerar um Workspace. A partir de agora você vai usar apenas o Workspace.
+**Passo 3:** Rode o comando `pod install` para instalar o Beagle Scaffold no seu app. Esse comando gera um Workspace e partir de agora é o que você irá utilizar. 
 
 {{% alert color="success" %}}
 Você instalou com sucesso o Beagle Scaffold no seu app!
