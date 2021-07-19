@@ -73,10 +73,10 @@ class MyScreen : ScreenBuilder {
 {{% /tab %}}
 
 {{% tab name="SpringBoot" %}}
-To start, you should create a class to configure a `Service` . The process is pretty simple, you just have to:
+To start, you should create a class to configure a `Service`. The process is simple, you just have to:
 
 1. Create a class and name it as `MyService`;
-2. Note it with `@Service` , because this will be responsible to create your objects.
+2. Note it with `@Service` because this will be responsible to create your objects.
 
 ```kotlin
 import br.com.zup.beagle.widget.core.TextAlignment
