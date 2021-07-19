@@ -57,8 +57,9 @@ Você instalou com sucesso o Beagle Scaffold no seu app!
 
 ### Configurações
 <hr>
+Para começar a configurar o Beagle no seu aplicativo, siga os passos: 
 
-**Passo 1:** Para começar a configurar o Beagle em nosso aplicativo, precisamos ir para o arquivo SceneDelegate, importar a lib `BeagleScaffold` e chamar nossa função chamada `start` da classe do Beagle Scaffold `BeagleConfig`, dentro do método `scene`:
+**Passo 1:** Acesse o arquivo SceneDelegate, importe a lib `BeagleScaffold` e chame a função  `start` da classe do Beagle Scaffold `BeagleConfig`, dentro do método `scene`:
 
 
 ```swift
