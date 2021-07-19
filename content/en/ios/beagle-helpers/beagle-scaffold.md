@@ -81,7 +81,7 @@ guard let windowScene = (scene as? UIWindowScene) else { return }
 window = UIWindow(windowScene: windowScene)
 ```
 
-3. Make the `window?.rootViewController` our `BeagleScaffoldDemoViewController` and call the method `makeKeyAndVisible()`. Your code should be like this:
+3. Make the `window?.rootViewController` become `BeagleScaffoldDemoViewController` and call the method `makeKeyAndVisible()`. Your code should be like this:
 
 ```swift
 func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
