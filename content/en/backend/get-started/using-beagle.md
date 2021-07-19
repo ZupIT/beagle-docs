@@ -134,13 +134,13 @@ class MyController(private val myService: MyService) {
 {{% /tab %}}
 
 {{% tab name="SpringBoot" %}}
-Once you made it, the next step is create a `Controller` class to expose our components through REST API. This class must be noted as`@RestController`
+Create a `Controller` class to expose your components through REST API. This class must be noted as`@RestController`
 
-This class also must receive `MyService` through a primary constructor so Spring can automatically makes a dependency injection for you.
+This class also must receive `MyService` through a primary constructor so Spring can automatically make a dependency injection for you.
 
 The endpoints are configured with notes according to HTTP method \(for example `@GetMapping` to HTTP GET\). They receive a string that defines your `path`.
 
-To configure this class, follow the example below. Remember to name the file as`MyController` so you can simply copy and paste this example.
+To configure this class, follow the example below. Remember to name the file as `MyController` so you can simply copy and paste this example.
 
 ```kotlin
 import br.com.zup.beagle.widget.layout.ScreenBuilder
