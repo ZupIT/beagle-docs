@@ -27,17 +27,17 @@ Configure o seu backend e acesse o site do [**Spring**](https://start.spring.io/
 ![](https://lh5.googleusercontent.com/ZshvFubtunY4x0JWWBLgSmFesUx7G2AVlSrCcS96efc2lJtAakhYJ-zxgDx7CkcCMOC6zedwUAS3ThBpVXfS8jyvieNLgL3ZJIxWnHJFLE77IOXZs3UqOR8TQazINC_enzoO4Y4Q)
 
 **Configuração do Spring**
-
-- Escolha o `Maven` como o sua opção de projeto;
-- Marque `kotlin` como a linguagem;
-- Marque a versão de inicialização maior que 2.1.
-- **Group** é o nome que será usado como a hierarquia do começo. Para esse exemplo, você pode deixar como **com.example;**
-- **Artifact** é o nome do projeto. Você nomeá-lo como BFF;
-- **Description** contém a simples descrição do projeto;
-- **Packaging** deve ser marcado como JAR;
-- **Java** deve ser marcado como a versão java do seu sistema;
-- Clique em **`generate`** e você irá fazer o download do seu projeto no formato .zip;
-- Extraia o arquivo na pasta de sua preferencia.
+Siga os passos para configurar: 
+1. Escolha o `Maven` como o sua opção de projeto;
+2. Marque `kotlin` como a linguagem;
+3. Marque a versão de inicialização maior que 2.1;
+4. **Group** é o nome que será usado como a hierarquia do começo. Para esse exemplo, você pode deixar como **com.example**;
+5. **Artifact** é o nome do projeto. Você nomeá-lo como BFF;
+6. **Description** contém a simples descrição do projeto;
+7. **Packaging** deve ser marcado como JAR;
+8. **Java** deve ser marcado como a versão java do seu sistema;
+9. Clique em **`generate`** e você irá fazer o download do seu projeto no formato .zip;
+10. Extraia o arquivo na pasta de sua preferência.
 
 ### Passo 2: Abrir seu projeto gerado
 
