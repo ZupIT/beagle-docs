@@ -1,7 +1,7 @@
 ---
 title: Widget Customizado Simples
 weight: 159
-description: Aqui voce aprenderá como criar e utilizar um widget no Beagle
+description: Nesta seção, você encontra como criar e utilizar um widget no Beagle.
 ---
 
 ## Introdução
