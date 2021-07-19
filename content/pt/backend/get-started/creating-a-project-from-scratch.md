@@ -110,8 +110,8 @@ object ScreenBeagleBuilder : ScreenBuilder {
 
 A próxima classe a ser criada é a **`Service`**:
 
-1. Clique com o botão direito do mouse no pacote `service` e clique em **New&gt; Kotlin File / Class.**
-2. Nomeie-a como `ScreenBeagleService`. Essa classe deve ser anotada com `@Service` que é uma anotação do `Spring`
+1. Clique com o botão direito do mouse no pacote `service` e clique em **New&gt; Kotlin File / Class**;
+2. Nomeie-a como `ScreenBeagleService`. Essa classe deve ser anotada com `@Service` que é uma anotação do `Spring`;
 3. **Implemente** um método chamado de `createScreenBeagle`que tem como retorno a classe `ScreenBeagleBuilder`:
 
 ```kotlin
