@@ -14,7 +14,7 @@ If you want to be able to use images, styled texts, and buttons, you must provid
 It's quite simple create your own Design System. You just need to create a class that implements the `BeagleDesignSystem` contract and provide images and styles to each method. We'll detail each one of them:
 
 ### image
-This method has the notation `String image(String id)`. It receives the image id that comes from JSON and returns the corresponding local image asset name. See the example:
+This method has the notation `String image(String id)`. It receives the image id that comes from the JSON and returns the corresponding local image asset name. See the example:
 ```dart
 final Map<String, String> imageMap = {
   'bus': 'images/bus.png',
