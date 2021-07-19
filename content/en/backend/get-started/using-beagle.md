@@ -110,7 +110,7 @@ class MyScreen : ScreenBuilder {
 
 {{< tabs id="T3" >}}
 {{% tab name="Micronaut" %}}
-The next step is to create a `Controller`class to expose our components through REST API. This class will be noted as `@Controller`.
+Create a `Controller`class to expose your components through REST API. This class will be noted as `@Controller`.
 
 This class receives a `MyService` through a primary constructor, so Micronaut can automatically make a dependency injection for you.
 
