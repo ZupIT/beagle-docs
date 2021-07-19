@@ -127,7 +127,7 @@ Aqui, você precisa do Carthage instalado e do Terminal.
 
 * Para Xcode abaixo do 12, apenas rode o comando `Carthage update` e ele vai criar os _xcframeworks_ pra gente.
 
-**Passo 4:** Agora vá até a pasta raiz do seu projeto -> Carthage -> Build. Pegue a pasta _Beagle.xcframework_ e arraste-a até o _Xcode -> yourProject.xcodeproj -> Targets -> yourProject -> General -> Frameworks, Libraries, and Embedded Content_.
+**Passo 4:** Acesse a pasta raiz do seu projeto -> Carthage -> Build. Pegue a pasta _Beagle.xcframework_ e arraste-a até o _Xcode -> yourProject.xcodeproj -> Targets -> yourProject -> General -> Frameworks, Libraries e Embedded Content_.
 
 **Passo 5:** Para rodar o Beagle, você também vai precisar do _YogaKit_. Você pode instalá-lo usando o SPM (Swift Package Manager).
 
