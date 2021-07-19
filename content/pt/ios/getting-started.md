@@ -68,7 +68,7 @@ Você conseguiu instalar o Beagle com sucesso utilizando o SPM!
 
 <br>
 
-**Passo 1 :** Adiciona o Beagle no vetor `dependencies` escolhendo a versão que você queira, como 1.8.0 por exemplo.
+**Passo 1 :** Adicione o Beagle no vetor `dependencies` e escolha a versão que você quiser, como a 1.8.0, por exemplo.
 ```swift
 dependencies: [
   .package(name: "Beagle", url: "https://github.com/ZupIT/beagle.git", from: "${beagle.version}"}}),
