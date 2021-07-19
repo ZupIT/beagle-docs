@@ -97,9 +97,9 @@ class MyCacheHandler(
 
 ### Step 5: Create a `Filter` that uses the `BeagleCacheHandler`
 
-Now, you need to create an `BeagleCacheHandler` instance and call the `handleCache method` for it. This instance can accept a string list that represents a regex's endpoint to not be stored in cache.
+Now, you need to create a `BeagleCacheHandler` instance and call the `handleCache method` for it. This instance can accept a string list that represents a regex's endpoint to not be stored in the cache.
 
-They must be a valid `java.util.regex.Pattern`. The handleCache parameters are described below. This filter returns a transformed response:
+They must be a valid `java.util.regex.Pattern`. The handleCache parameters are described below and this filter returns a transformed response, check it out:
 
 | Parameter          | Description                                                         |
 | :----------------- | :------------------------------------------------------------------ |
