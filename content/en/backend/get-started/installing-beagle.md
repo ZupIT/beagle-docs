@@ -7,9 +7,9 @@ description: "You will find here how to configure a backend with Beagle."
 ---
 
 {{% alert color="danger" %}}
-Before you get started, you must know that the steps below are for JVM languages.
+Before you get started, the steps below are for JVM languages.
 
-For other languages, your server needs to serve JSON following our API. Also, check out our [**cache**]({{< ref path="/resources/cache/" lang="en" >}}) and [**platform specification**]({{< ref path="/resources/components/platform-sorting" lang="en" >}}) mechanisms, which you may wish to implement as the clients already support them.
+For other languages, your server needs to serve JSON following Beagle's API. Also, check out the [**cache**]({{< ref path="/resources/cache/" lang="en" >}}) and [**platform specification**]({{< ref path="/resources/components/platform-sorting" lang="en" >}}) mechanisms, you may want to implement because the clients already support them.
 {{% /alert %}}
 
 ## Requirements
