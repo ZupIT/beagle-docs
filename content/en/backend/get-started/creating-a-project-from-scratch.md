@@ -105,10 +105,10 @@ object ScreenBeagleBuilder : ScreenBuilder {
 }
 ```
 
-The next class we will create is **`Service`**:
+The next class you will create is **`Service`**:
 
-1. Right-click the service package and click `New> Kotlin File / Class.`
-2. Name it `ScreenBeagleService`. This class must be annotated with `@Service`, which is a Spring annotation
+1. Right-click the service package and click `New> Kotlin File / Class`;
+2. Name it `ScreenBeagleService`. This class must be annotated with `@Service`, which is a Spring annotation;
 3. **Implement** a method called `createScreenBeagle` that returns the `ScreenBeagleBuilder` class:
 
 ```kotlin
