@@ -106,11 +106,10 @@ class MyCacheHandler(
 
 ### Passo 5: Criar um `Filter` que utilize o`BeagleCacheHandler`
 
-Logo depois, você precisa criar uma instância do `BeagleCacheHandler` e chamar o método `handleCache` nele. O construtor do `BeagleCacheHandler` pode aceitar uma lista de strings que representam a regex do endpoint para não ser armazenada em cache. 
+Crie uma instância do `BeagleCacheHandler` e chame o método `handleCache`. O construtor do `BeagleCacheHandler` pode aceitar uma lista de strings que representam a regex do endpoint para não ser armazenada em cache. 
 
 Eles devem ser um `java.util.regex.Pattern` válido. Os parâmetros para o método `handleCache`estão descritos abaixo.   
-  
-Esse filtro retorna uma resposta totalmente transformada:
+ Esse filtro retorna uma resposta totalmente transformada:
 
 | Parâmetro | Descrição |
 | :--- | :--- |
