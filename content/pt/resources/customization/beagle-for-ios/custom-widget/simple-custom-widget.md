@@ -136,8 +136,11 @@ Integre o componente ao Beagle usando o `sizeThatFits` ou `AutoLayoutWrapper`.
 
 ### AutoLayoutWrapper
 
-**`AutoLayoutWrapper:`** O objeto calcula o tamanho levando em consideração as contraints do componente.
-Para isso primeiro é preciso desabilitar o `translatesAutoresizingMaskIntoConstraints` da view do componente, e depois adicionar a view do componente dentro do `AutoLayoutWrapper`.
+**`AutoLayoutWrapper:`** O objeto calcula o tamanho levando em consideração as restrições do componente.
+Para isso:
+1. Desabilite o `translatesAutoresizingMaskIntoConstraints` da view do componente;
+2. Adicione a view do componente dentro do `AutoLayoutWrapper`.
+3. Faça as configurações com o `AutoLayoutWrapper`:
 
 Fazendo as configurações com o `AutoLayoutWrapper`.
 
