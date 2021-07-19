@@ -117,7 +117,7 @@ Você instalou com sucesso o Beagle pelo Cocoapods!
 
 Aqui, você precisa do Carthage instalado e do Terminal.
 
-**Passo 1:** Navegue até a pasta raiz do seu projeto e rode o comando `touch Cartfile` para criar um arquivo _Cartfile_ para nós.
+**Passo 1:** Navegue até a pasta raiz do seu projeto e execute o comando `touch Cartfile` para criar um arquivo _Cartfile_ para nós.
 
 **Passo 2:** Abra o _Cartfile_ e coloque o link do nosso repositório da seguinte forma `github "ZupIT/beagle" ~> ${beagle.version}`, escolhendo a versão que você queira.
 
