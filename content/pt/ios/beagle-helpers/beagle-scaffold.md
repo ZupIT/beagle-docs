@@ -77,7 +77,7 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 guard let windowScene = (scene as? UIWindowScene) else { return }
 ```
 
-2. Inicialize a variável `window` criada fora do escopo da função, usando a nossa `windowScene`:
+2. Inicialize a variável `window` criada fora do escopo da função, usando a `windowScene`:
 
 ```swift
 window = UIWindow(windowScene: windowScene)
