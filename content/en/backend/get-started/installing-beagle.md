@@ -57,7 +57,7 @@ As described on [**Micronaut's quick start**](https://docs.micronaut.io/1.3.3/gu
 $ mn create app bff --build maven --lang kotlin
 ```
 
-This will create an executable Micronaut project using Kotlin and Maven in a directory called `bff`. Open this project on the chosen IDE and follow the following steps to set the dependencies.
+This will create an executable Micronaut project using Kotlin and Maven in a directory called `BFF`. Open this project on the chosen IDE and follow the steps to set the dependencies:
 
 #### Micronaut &gt;= 2.0
 
