@@ -62,7 +62,7 @@ Isso criará um projeto `Micronaut` executável usando `Kotlin` e `Maven`em um d
 
 #### Micronaut &gt;= 2.0
 
-Caso queira adotar o Micronaut 2.0, pode usar o novo site de construção de projeto, semelhante ao do Spring.
+Se você quiser adotar o Micronaut 2.0, você pode usar o novo site de construção de projeto semelhante ao do Spring.
 
 - Clique no link a seguir para baixar um zip do projeto com as opções da imagem abaixo: [**Micronaut Launch para Beagle Micronaut Starter**](https://launch.micronaut.io/create/DEFAULT/com.example.bff?lang=kotlin&build=maven&test=junit&javaVersion=JDK_8).
 
