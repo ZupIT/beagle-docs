@@ -75,9 +75,9 @@ O segundo passo é criar alguns pacotes para organizar melhor o projeto. Eles se
 
 A primeira classe que você deve criar é a **`Builder`** . É nesse arquivo que a tela `Server-Driven` deve ser estruturada:
 
-1. Clique no pacote `builder` com o botão direito do mouse e clique em **new &gt; Kotlin File / Class** e coloque o nome como `ScreenBeagleBuilder`
-2. Essa classe deve estender de `ScreenBuilder` \(que é uma classe interna do Beagle\).
-3. Observe que ele substituirá o método de `build` e é aqui que será implementado a primeira tela `Server-Driven`.
+1. Clique no pacote `builder` com o botão direito do mouse e clique em **new &gt; Kotlin File / Class** e coloque o nome como `ScreenBeagleBuilder`;
+2. Essa classe deve estender de `ScreenBuilder` \(que é uma classe interna do Beagle\);
+3. Observe que ele substituirá o método de `build` e é aqui que será implementado a primeira tela `Server-Driven`;
 4. Nesta etapa, você pode copiar e colar o código abaixo em sua classe.
 
 ```kotlin
