@@ -123,8 +123,8 @@ class ScreenBeagleService {
 
 And then the **`Controller`** class.
 
-1. In the controller package, create a class and name it `ScreenController`. It must be annotated with `@RestController` to expose its components through the Rest API.
-2. He will receive a `ScreenBeagleService` through his main builder, so Spring can inject it for you.
+1. In the controller package, create a class and name it `ScreenController`. It must be annotated with `@RestController` to expose its components through the Rest API;
+2. It will receive a `ScreenBeagleService` through its main builder, so Spring can inject it for you;
 3. Create your class as in the example below:
 
 ```kotlin
