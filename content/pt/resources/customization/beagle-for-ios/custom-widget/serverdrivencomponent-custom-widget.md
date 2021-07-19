@@ -114,7 +114,7 @@ struct ContainerTitleWidget: Widget {
 Crie a parte de inicialização e decodificação do componente. É possível ser feito de duas formas: 
 1. Usando o `sourcery` gerador de código para a linguagem Swift.
 
-2. Você pode fazer manualmente. 
+2. Manualmente. 
 
 **Sourcery:**
 
