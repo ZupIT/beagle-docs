@@ -25,7 +25,7 @@ If you already have updated all the programs above, then just go to the followin
 
 ### Step 1: Create a micro-service
 
-When you create a micro-service, it's recommend to use your team's established mechanisms. If that's not your case, you can just follow the configurations below.
+When you create a microservice, it's recommended to use your team's established mechanisms. If that's not your case, just follow the configuration steps below.
 
 {{% alert color="warning" %}}
 If your team works with micro-services using a framework other than Spring or Micronaut, see [**Beagle Framework**]({{< ref path="/resources/customization/beagle-for-backend/beagle-framework" lang="en" >}}) instead.
