@@ -108,7 +108,7 @@ In this section, you will learn how to customize your Beagle Scaffold. Let's sta
 2. Create a static function `setup`;
 3. Inside the `setup` function, instantiate a variable called `dependencies` that is a `BeagleDependencies`;
 4. Change the property `urlBuilder` to match the base URL. In this example, it will be a localhost url, such as `http://localhost:8080`;
-5. Now you need to notify Beagle that you changed this property. To do that just pass your `dependencies` variable as a parameter for the `start` method from BeagleScaffold's `BeagleConfig`.
+5. Now you need to notify Beagle that you changed this property. To do that, just pass your `dependencies` variable as a parameter to the `start` method from BeagleScaffold's `BeagleConfig`.
 
 Your `BeagleConfigurations` class should be like this:
 
