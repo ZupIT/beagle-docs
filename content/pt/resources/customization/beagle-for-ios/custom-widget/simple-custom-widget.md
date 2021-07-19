@@ -8,9 +8,9 @@ description: Nesta seção, você encontra como criar e utilizar um widget no Be
 
 O Beagle já possui alguns widgets básicos que podem ser usados para alterar a sua aplicação UI por meio do backend. No entanto, você pode adicionar novos componentes para fazer com que as views da sua aplicação sejam "visíveis" ao Beagle e que possam também ser usadas no backend. 
 
-### Passo 1: Criar o componente nativo.
+### Passo 1: Criar o componente nativo
 
-Abaixo temos a definição da classe do componente Box.
+Veja abaixo a definição da classe do componente Box:
 
 ```swift
 import Foundation
