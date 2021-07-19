@@ -149,7 +149,7 @@ Depois da instalação, você precisa configurar o Beagle pra rodar na sua aplic
 
 **Passo 1:** Crie uma classe `BeagleConfig`:
 
-Essa classe será responsável por conter parte das configurações iniciais do Beagle. Agora temos que implementar uma função estática `config`, onde essa função irá aplicar as configurações.
+Essa classe contém a parte das configurações iniciais do Beagle. Agora você precisa implementar uma função estática `config`, e ela irá aplicar as demais configurações.
 
 ```swift
 import Beagle
