@@ -143,7 +143,7 @@ This starter also configures version **2.2.5** of **`spring-boot-starter-web`** 
 
 ### Maven configuration
 
-To follow this requirement, you just have to add the dependency below to your `pom.xml`.
+To follow this requirement, add the dependency below to your `pom.xml`.
 
 ```markup
 <dependency>
