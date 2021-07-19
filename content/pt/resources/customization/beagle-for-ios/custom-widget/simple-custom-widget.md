@@ -95,7 +95,7 @@ Crie a parte de inicialização e decodificação do componente, tem duas maneir
 
 **Sourcery:**
 
-Para usar o `Sourcery` pode encontrar nesse [**link**]({{< ref path="/resources/customization/beagle-for-ios/sourcery" lang="pt" >}})
+Para usar o `Sourcery`, veja mais informações na seção [**Sourcery**]({{< ref path="/resources/customization/beagle-for-ios/sourcery" lang="pt" >}})
 
 **Manual:**
 
