@@ -129,10 +129,10 @@ Aqui, você precisa do Carthage instalado e do Terminal.
 
 **Passo 4:** Acesse a pasta raiz do seu projeto -> Carthage -> Build. Pegue a pasta _Beagle.xcframework_ e arraste-a até o _Xcode -> yourProject.xcodeproj -> Targets -> yourProject -> General -> Frameworks, Libraries e Embedded Content_.
 
-**Passo 5:** Para rodar o Beagle, você também vai precisar do _YogaKit_. Você pode instalá-lo usando o SPM (Swift Package Manager).
+**Passo 5:** Para rodar o Beagle, você também precisa do _YogaKit_. Você pode instalá-lo usando o SPM (Swift Package Manager).
 
-1. A partir do menu File, navegue até _Swift Packages_ e selecione _Add Package Dependency_. 
-2. Entre com a URL do pacote: `https://github.com/ZupIT/yoga.git`
+1. A partir do menu File, navegue até _Swift Packages_ e selecione _Add Package Dependency_; 
+2. Entre com a URL do pacote: `https://github.com/ZupIT/yoga.git`;
 3. Confirme a versão do Beagle e deixe o Xcode resolver o pacote.
 
 {{% alert color="success" %}}
