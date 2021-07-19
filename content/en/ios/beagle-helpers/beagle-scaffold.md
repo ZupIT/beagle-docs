@@ -93,7 +93,7 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 }
 ```
 
-**Step 3:** Run your project, and you should see a sample screen with all Beagle components on your simulator.
+**Step 3:** Run your project, and you should see a sample screen with all Beagle components on the simulator.
 
 ### Customization
 <hr>
