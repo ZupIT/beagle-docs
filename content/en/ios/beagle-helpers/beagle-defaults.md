@@ -31,7 +31,7 @@ It's a lib that contains default implementations of the network layer, cache man
 ### Installation
 <hr>
 
-You can add this as a dependency via CocoaPods.
+Add BeagleDefaults as a dependency via CocoaPods. See below: 
 
 ```ruby
 target 'MyApp' do
