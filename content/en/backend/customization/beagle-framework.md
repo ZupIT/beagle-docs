@@ -41,9 +41,9 @@ mapper.registerModule(BeagleModule)
 
 ### Step 3: Configure the `BeagleCacheHandler`
 
-In order to use the cache mechanism, Beagle offers a class called `BeagleCacheHandler` and an interface `RestCacheHandler`. It is recommended to use them as a response filter in your project.
+In order to use the cache mechanism, Beagle offers a class called `BeagleCacheHandler` and an interface `RestCacheHandler`. You should use them as a response filter in your project.
 
-`BeagleCacheHandler` class contains a implementation template of the protocol. This template doesn't depend of the HTTP and REST structure and uses a `handleCache` method. However, it needs to interact with the HTTP response details, then `RestCacheHandler` is used.
+`BeagleCacheHandler` class contains an implementation template of the protocol. It doesn't depend on the HTTP and REST structure and uses a `handleCache` method. However, it needs to interact with the HTTP response details and after that, the `RestCacheHandler` is used.
 
 #### Using the `javax.servlet`
 
