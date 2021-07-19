@@ -1,7 +1,7 @@
 ---
 title: Beagle Defaults
 weight: 17
-description: 'This framework provides default implementations of a Network client, Cache control and Logger that can be easily embedded and used in your Beagle project.'
+description: 'This framework provides default implementation of network client, cache control and logger. That implementation is easily embedded and used in your Beagle project.'
 ---
 
 ---
