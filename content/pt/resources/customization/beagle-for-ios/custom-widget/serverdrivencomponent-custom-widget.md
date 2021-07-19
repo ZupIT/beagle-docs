@@ -255,7 +255,7 @@ import UIKit
 
 class ContainerTitle: UIView {
     
-    // Initialization part of the class.
+    // Class initialization
     public init(title: String, child: UIView) {
         super.init(frame: .zero)
         setupView(child: child, title: title)
