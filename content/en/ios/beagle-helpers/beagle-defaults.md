@@ -45,5 +45,5 @@ All implementation can be changed up to your preferences. It's still not recomme
 
 <hr>
 
-##### For more on Beagle: Please check our [Beagle](https://github.com/ZupIT/beagle) repository.
+##### More about Beagle: https://github.com/ZupIT/beagle
 ##### For more on Beagle-Scaffold: Please check our [Beagle-Scaffold]({{< ref path="/get-started/using-beagle-helpers/ios/beagle-scaffold" lang="en" >}}) documentation.
