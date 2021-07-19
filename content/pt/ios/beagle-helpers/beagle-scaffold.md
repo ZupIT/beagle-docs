@@ -69,9 +69,9 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 }
 ```
 
-**Passo 2:** Agora nós precisamos fazer a inicialização do nosso projeto usando uma abordagem View Code:
+**Passo 2:** Faça a inicialização do projeto usando uma abordagem View Code, veja como abaixo:
 
-1. Ainda no método `scene`, dê o nome `windowScene` para o `guard let` já criado para nós pelo Xcode:
+1. Ainda no método `scene`, dê o nome `windowScene` para o `guard let` já criado pelo Xcode:
 
 ```swift
 guard let windowScene = (scene as? UIWindowScene) else { return }
