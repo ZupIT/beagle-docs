@@ -8,7 +8,7 @@ description: Here you'll find more informations about serialization.
 
 ### Definition <a id="definicao"></a>
 
-Since mostly of the frameworks integrate to Jackson and offer proprieties to customize serialization, we decided to not add our proprieties. Instead of that, we kept the compatibility with your chosen framework.
+A lot of frameworks integrate with Jackson and offer proprieties to customize serialization. However, Beagle's team decided to not add its own proprieties but to offer compatibility with the framework you choose.
 
 ### Customization <a id="customizacao"></a>
 
