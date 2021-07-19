@@ -192,4 +192,4 @@ class BeaglePlatformInterceptor(private val objectMapper: ObjectMapper) : Handle
 }
 ```
 
-No exemplo acima, `preHandle` passa a informação da plataforma pela qual a requisição foi feita como um atributo da request, para que ele possa ser acessado posteriormente pelo BFF e facilite a identificação da plataforma. Já o `postHandle` realiza o trabalho de filtrar os elementos devidos de acordo com a plataforma alvo na resposta de seu BFF.
+No exemplo acima,  o `preHandle` passa a informação da plataforma pela qual a requisição foi feita como um atributo da request para que ele possa ser acessado posteriormente pelo BFF e facilite a identificação da plataforma. Já o `postHandle` realiza o trabalho de filtrar os elementos de acordo com a plataforma na resposta de seu BFF.
