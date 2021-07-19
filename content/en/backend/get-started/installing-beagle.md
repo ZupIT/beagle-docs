@@ -178,13 +178,12 @@ Well done, your initial configuration is ready to be used!
 You can check a screen or server-driven component [**to test the BFF**]({{< ref path="/backend/get-started/using-beagle" lang="en" >}}).
 
 {{% alert color="danger" %}}
-Spring Boot has a known problem involving `WebMvcConfigurationSupport`. Its presence replaces other configurations, including the ones in Beagle's Spring Starter.
-
-In case you face a similar problem, we suggest you replace it for`WebMvcConfigurer.`
+Spring Boot has a known problem involving `WebMvcConfigurationSupport`. It may replace other configurations, including the ones in Beagle's Spring Starter.
+If you face this problem, you should replace it for`WebMvcConfigurer.`
 
 To see more about it, access [**this issue on Github.**](https://github.com/spring-projects/spring-boot/issues/12751)
 
-The annotation`@EnableWebMvc`causes the same problem, which means that you should replace it.
+The annotation`@EnableWebMvc` can have the same problem, which means you should also replace it.
 {{% /alert %}}
 {{% /tab %}}
 {{< /tabs >}}
