@@ -52,9 +52,9 @@ Aqui você precisará apenas do Xcode. Mais sobre Swift Package Manager: <https:
 
 **Passo 1:** Clique em _File -> Swift Packages -> Add Package Dependency_.
 
-**Passo 2:** Entre com a url do pacote do Beagle: `https://github.com/ZupIT/beagle.git` e clique em next.
+**Passo 2:** Entre com a URL do pacote do Beagle: `https://github.com/ZupIT/beagle.git` e clique em **'Next'**.
 
-**Passo 3:** Confirme a versão do Beagle, clique em next e deixe o Xcode resolver o pacote.
+**Passo 3:** Confirme a versão do Beagle, clique em **'Next'** e deixe o Xcode resolver o pacote.
 
 **Passo 4:** Na última caixa de diálogo, atualize a coluna _Add to Target_ colocando o target que deveria importar o `Beagle`.
 
