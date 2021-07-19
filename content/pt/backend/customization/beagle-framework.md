@@ -48,7 +48,7 @@ val mapper = BeagleSerializationUtil.beagleObjectMapper()
 
 Para fazer uso do mecanismo de cache, o Beagle oferece uma classe chamada `BeagleCacheHandler` e uma interface chamada `RestCacheHandler`. É recomendado usá-las como um filtro de resposta em seu projeto. 
 
-A classe `BeagleCacheHandler` contém um template de implementação do protocolo. Este template é independente da estrutura HTTP e REST e utiliza o método de instância `handleCache.` 
+A classe `BeagleCacheHandler` contém um template de implementação do protocolo. Ele é independente da estrutura HTTP e REST e utiliza o método de instância `handleCache.` 
 
 No entanto, ele precisa interagir com os detalhes da resposta HTTP, e é aqui que o `RestCacheHandler` é acionado.
 
