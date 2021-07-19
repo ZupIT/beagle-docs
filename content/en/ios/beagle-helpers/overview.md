@@ -2,7 +2,7 @@
 title: Overview
 weight: 1
 type: overview
-description: 'Here you will find libraries to support you when creating iOS projects using Beagle. These libs will facilitate the initial Beagle configuration in a project, avoiding some steps, and starting studies quicker.'
+description: 'In this section, you will find libraries to support you when creating iOS projects using Beagle.'
 ---
 
 ---
