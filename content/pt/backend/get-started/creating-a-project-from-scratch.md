@@ -55,7 +55,7 @@ Siga os passos abaixo para importar o projeto que você criou. Primeiro, abra su
 
 ### Passo 1: Configurar o projeto
 
-Como ponto de partida, siga nosso [**passo a passo para instalar o backend**]({{< ref path="/backend/get-started/installing-beagle" lang="pt" >}}).
+Como ponto de partida, siga o [**passo a passo para instalar o backend**]({{< ref path="/backend/get-started/installing-beagle" lang="pt" >}}).
 
 ### Passo 2: Definir a Estrutura
 
