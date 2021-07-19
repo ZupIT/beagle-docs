@@ -57,17 +57,18 @@ class Box: UIView {
 ```
 
 
-### Passo 2: Criar o Widget.
+### Passo 2: Criar o Widget
 
-Agora temos o componente `Box`, para trasformar para um componente Beagle temos adotar o protocolo `Widget`, que é um protocolo que conforma com `Decodable` e é responsável por decodificar as propriedades que seu widget expõem ao backend.
+Para transformar o componente `Box` em um componente Beagle, adote o protocolo  Widget`. Esse protocolo é de acordo com com o `Decodable` e é responsável por decodificar as propriedades que seu widget expõem ao backend.
 
-Crie uma struct BoxWidget adotando protocolo `Widget`, a interface widget irá adicionar a property de **widgetProperties** e o método **toView**.
+1. Crie uma struct BoxWidget com protocolo `Widget`;
+2. A interface widget irá adicionar a property de **widgetProperties** e o método **toView**.
 
  * **widgetProperties:** A propriedade de aplicar estilo, id e acessibilidade.
 
  * **toView:** Método para retornar a view do componente criado.
 
-Temos a estrutura da struct `BoxWidget` com os parâmetros `title` e `widgetProperties` e o componente `Box` criado no método `toView`.
+Agora tem a estrutura do `BoxWidget` com os parâmetros `title` e `widgetProperties` e o componente `Box` criado no método `toView`.
 
 ```swift
 import Foundation
