@@ -30,20 +30,14 @@ Follow the next steps to configure your BFF manually:
 
 ### Step 2: Configure the Jackson's `ObjectMapper`
 
-It is necessary to setup Jackson's `ObjectMapper` for Beagle. There are two ways to do this:
+It is necessary to set up Jackson's `ObjectMapper` for Beagle. 
+There are two ways to do this:
 
-First, you can register `BeagleModule` in your `ObjectMapper`.
+1. You can register `BeagleModule` in your `ObjectMapper`:
 
 ```kotlin
 val mapper = // however your ObjectMapper is initialized
 mapper.registerModule(BeagleModule)
-```
-
-Or you can use the function `beagleObjectMapper`. This function returns a `ObjectMapper` using `jacksonObjectMapper()` with a `BeagleModule` registered.
-
-```kotlin
-val mapper = BeagleSerializationUtil.beagleObjectMapper()
-```
 
 ### Step 3: Configure the `BeagleCacheHandler`
 
