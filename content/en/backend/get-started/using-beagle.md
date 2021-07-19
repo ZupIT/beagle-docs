@@ -31,7 +31,7 @@ Beagle provides a constant: `BEAGLE_EXPOSED_HEADERS`. It contains a list of head
 ### Step 1: Create a service
 
 {{% alert color="warning" %}}
-Please, take notice that when creating services, controllers or builders they must be at the same package that contains your application file, just like in the example below
+When you create services, controllers, or builders they must be in the same package that contains your application file, just like in the example below.
 {{% /alert %}}
 
 ![](/shared/image%20%2829%29.png)
