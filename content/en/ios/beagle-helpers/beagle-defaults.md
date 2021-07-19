@@ -39,7 +39,7 @@ target 'MyApp' do
 end
 ```
 
-After adding BeagleDefaults as a dependency in your project, you can use all the default implementations in your `Beagle.dependencies`.
+After adding BeagleDefaults as a dependency in your project, you can use all the default implementation in your `Beagle.dependencies`.
 
 All implementations can be changed up to your preferences. It's still not recommended to use this implementations without checking your product guidelines of security, cache management and log system.
 
