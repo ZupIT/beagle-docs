@@ -229,7 +229,7 @@ open class CorsConfig : WebMvcConfigurer {
 Use a permissive configuration like this one, only in a local development environment. It eliminates CORS's security benefits
 {{% /alert %}}
 
-We have an enabled CORS withmeusite.com.br like the permitted origin: `GET`, `PUT`, `POST` like the allowed methods `Cache-control` like an allowed header; and `beagle-hash`, `x-meu1` like exposed header.
+Beagle enabled CORS withmeusite.com.br like the permitted origin: `GET`, `PUT`, `POST` like the allowed methods `Cache-control` like an allowed header; and `beagle-hash`, `x-meu1` like the exposed header.
 
 {{< tabs id="T6" >}}
 {{% tab name="Micronaut" %}}
