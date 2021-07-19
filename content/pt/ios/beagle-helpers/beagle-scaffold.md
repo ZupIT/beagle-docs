@@ -95,7 +95,7 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 }
 ```
 
-**Passo 3:** Rode o seu projeto e você deve ver uma tela com todos os componentes do Beagle no seu simulador.
+**Passo 3:** Rode o seu projeto para ver uma tela com todos os componentes do Beagle no seu simulador.
 
 ### Customizações
 <hr>
