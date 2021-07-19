@@ -64,7 +64,7 @@ The second step is to create some packages to better organize the project. They 
 5. After creating the packages, your screen should look like this:
 
 {{% alert color="warning" %}}
-Please, take notice that you must create theses packages at the same package that contains your application file, just like in the picture below
+ You must create these packages in the same package that contains your application file, check out the picture below.
 {{% /alert %}}
 
 ![](/shared/image%20%2829%29.png)
