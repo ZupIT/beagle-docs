@@ -24,7 +24,7 @@ If you are using one of our starters, check out the following links with both fr
 - [**Micronaut**](https://docs.micronaut.io/1.3.3/guide/index.html#cors)
 - [**Spring**](https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc-cors)
 
-We provided a constant `BEAGLE_EXPOSED_HEADERS`, that contains a list of headers names that Beagle needs to expose in your **CORS configuration.**
+Beagle provides a constant: `BEAGLE_EXPOSED_HEADERS`. It contains a list of headers names Beagle needs to expose in your **CORS configuration.**
 
 ## A practical BFF example
 
