@@ -22,18 +22,19 @@ Access [**Spring website**](https://start.spring.io/) and create a `Maven` proje
 
 ![](https://lh5.googleusercontent.com/ZshvFubtunY4x0JWWBLgSmFesUx7G2AVlSrCcS96efc2lJtAakhYJ-zxgDx7CkcCMOC6zedwUAS3ThBpVXfS8jyvieNLgL3ZJIxWnHJFLE77IOXZs3UqOR8TQazINC_enzoO4Y4Q)
 
-**Spring configuration**
+**Spring configuration** 
 
-- Choose `Maven` as your project option;
-- Check `kotlin` as a language;
-- Choose the initial version bigger than 2.1.
-- **Group** is the name it will be used as a hierarchy in the beginning. For this example, it can be **com.example;**
-- **Artifact** is the project's name. You will name it BFF;
-- **Description** contain a simple description of the project;
-- **Packaging** must be checked as JAR;
-- **Java** must be chosen as the java version of your system;
-- Click on **`generate`** and it will download your project as.zip;
-- Extract the file in your chosen folder.
+Follow the steps to configure: 
+
+1. Choose `Maven` as your project option;
+2. Check `kotlin` as a language;
+3. Choose the initial version bigger than 2.1.
+4. **Group** is the name it will be used as a hierarchy in the beginning. For this example, it can be **com.example;**
+5. **Artifact** is the project's name. You will name it BFF;
+6. **Description** contains a simple description of the project; **Packaging** must be checked as JAR;
+7. **Java** must be chosen as the java version of your system;
+8. Click on **`generate`** and it will download your project as.zip;
+9. Extract the file in your chosen folder.
 
 ### Step 2: Import your project to Intellij
 
