@@ -78,7 +78,7 @@ Se você quiser adotar o Micronaut 2.0, você pode usar o novo site de construç
 
 ### Criando um microsserviço
 
-Neste caso, usaremos o site do Spring para gerar um projeto com o microsserviço já criado:
+Neste caso, use o site do Spring para gerar um projeto com o microsserviço já criado:
 
 - Clique no link a seguir e você verá a página abaixo: [Spring Initializer for Beagle Spring Starter](https://start.spring.io/#!type=maven-project&language=kotlin&packaging=jar&jvmVersion=1.8&groupId=com.example&artifactId=bff&name=bff&description=Demo%20project%20for%20Beagle%20BFF%20using%20Spring%20Boot&packageName=com.example.bff&dependencies=actuator)
 
