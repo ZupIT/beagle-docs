@@ -1,6 +1,6 @@
 ---
 title: OpenNativeRoute
-weight: 248
+weight: 50
 description: Here you'll find OpenNavigateRoute description and its attributes.
 ---
 

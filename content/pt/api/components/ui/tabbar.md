@@ -38,11 +38,11 @@ Se o título e ícone não forem declarados no `Tab Item`, o espaço vazio perma
 
 No exemplo a seguir, são utilizados outros componentes para explicar o TabBar: o [**PageView**]({{< ref path="/api/components/layout/pageview" lang="pt" >}}) e o [**Contexto**]({{< ref path="/api/context/" lang="pt" >}}).
 
-O **Page View** é utilizado para renderizar as páginas que se quer exibir de acordo com cada aba, ou seja, ele vai criar a visualização de cada uma delas. É nele que você vai definir os componentes que quer exibir ao clicar em cada aba.
+O **Tab bar** é utilizado para renderizar o conteúdo que se quer exibir de acordo com cada aba, ou seja, ele vai criar a visualização de cada uma delas. É nele que você vai definir os componentes que quer exibir ao clicar em cada aba.
 
 Os componentes serão renderizados de acordo com a sua posição na lista. Isso significa que, se em nossa lista temos 2 componentes de texto - o TAB 1 e TAB 2 -, o primeiro tem posição ZERO = 0, enquanto que o segundo tem posição UM = 1. O atributo **currentTab** é quem define qual componente é exibido de acordo com o valor definido nele.
 
-Já o **Contexto** é utilizado para guardar o indicador \(posição\) da aba selecionada e informá-lo ao PageView, que coordena qual elemento irá apresentar.
+Já o **Contexto** é utilizado para guardar o indicador \(posição\) da aba selecionada e informá-lo ao TabBar, que coordena qual elemento irá apresentar.
 
 ### Exemplo
 

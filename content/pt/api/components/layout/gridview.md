@@ -1,6 +1,6 @@
 ---
 title: GridView
-weight: 340
+weight: 90
 description: "Descrição do componente GridView, seus atributos e construtores"
 ---
 
@@ -16,7 +16,8 @@ A sua estrutura é representada como mostrado abaixo:
 
 | Atributo           | Tipo                                                        | Obrigatório | Definição                                                                                                                           |
 | :----------------- | :---------------------------------------------------------- | :---------: | :---------------------------------------------------------------------------------------------------------------------------------- |
-| numColumns          |                                      Int            |   | Define o número de colunas que o GridView irá exibir.                                                                      |
+| spanCount          |                                      Int            |  ✓ | Define o número de colunas ou linhas que o GridView irá exibir.                                                                      |
+| direction          | [GridViewDirection](#GridViewDirection)                             |             | Define o direcionamento em que os items são exibidos.                                                                      |
 | context            | [ContextData]({{< ref path="/api/context" lang="pt" >}})                         |             | Define o contexto do componente.                                                                                                    |
 | onInit             | List&lt;[Action]({{< ref path="/api/actions" lang="pt" >}})&gt;                  |             | Lista de ações a serem executadas assim que o componente é exibido.                                                                 |
 | dataSource         | [Bind]({{< ref path="/api/context#binding" lang="pt" >}})&lt;List&lt;Any&gt;&gt; |      ✓      | Expressão que aponta para uma lista de valores usados para popular o componete.                                                     |
@@ -26,6 +27,19 @@ A sua estrutura é representada como mostrado abaixo:
 | scrollEndThreshold |  Int                                                         |             | Define a porcentagem rolada do GridView para disparar o `onScrollEnd`.                                                                 |
 | iteratorName       | String                                                      |             | É o identificador do contexto de cada célula.                                                                                       |
 | key                | String                                                      |             | Aponta para um valor único presente em cada item do `dataSource` para ser usado como um sufixo nos ids dos componentes do template. |
+
+### GridViewDirection
+
+É um `ENUM`, cujos valores são:
+
+| **Valor**  | **Definição**                                  |
+| :--------- | :--------------------------------------------- |
+| VERTICAL   | Quando os items são exibidos em **`COLUNAS`**.  |
+| HORIZONTAL | Quando os itens são exibidos em **`LINHAS`**. |
+
+{{% alert color="info" %}}
+Valor default é GridViewDirection.VERTICAL
+{{% /alert %}}
 
 ### Templates
 
@@ -195,7 +209,8 @@ A sua estrutura é representada como mostrado abaixo:
   ],
   "isScrollIndicatorVisible": false,
   "iteratorName": "item",
-  "numColumns": 2
+  "spanCount": 2,
+  "direction": "HORIZONTAL"
 }
 -->
 
@@ -251,7 +266,8 @@ val characters = listOf(
 )
 
 GridView(
-    numColumns = 2,
+    spanCount = 2,
+    direction = GridViewDirection.HORIZONTAL,
     context = ContextData(id = "characters", value = characters),
     dataSource = expressionOf("@{characters}"),
     templates = listOf(

@@ -1,6 +1,6 @@
 ---
 title: Container
-weight: 313
+weight: 30
 description: You will find here the description of Container components and its attribute details
 ---
 
@@ -14,7 +14,7 @@ See how the structure is represented:
 
 | **Attribute** | **Type**  | Required | **Definition** |
 | :--- | :--- | :--- | :--- |
-| children | List &lt;[**ServerDriven Component**]({{< ref path="/api/widget" lang="en" >}})&gt; |     | The content of this Container, i.e. its children.  |
+| children | List &lt;[**ServerDriven Component**]({{< ref path="/api/components/widget" lang="en" >}})&gt; |     | The content of this Container, i.e. its children.  |
 | context | [**ContextData**]({{< ref path="/api/context" lang="en" >}}) |  | It is the [**context**]({{< ref path="/api/context" lang="en" >}}) in this widget.  |
 | onInit | List&lt;[**Action**]({{< ref path="/api/actions" lang="en" >}})&gt; |  | It is a parameter that allows you to define a list of actions to be performed when the Widget is displayed. |
 | styleId   | String                                              |          | Refers to a locally configured style that it will be applied on the container. |

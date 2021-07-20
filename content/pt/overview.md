@@ -10,68 +10,262 @@
 
 ## O que é o Beagle?
 
-O Beagle é um **framework open source** de desenvolvimento cross-platform pautado no paradigma de implementação de **Server-Driven UI.**
+Beagle é uma **ferramenta de código aberto** que ajuda os desenvolvedores a implementar **Server-Driven UI** que funcione em **múltiplas plataformas**.
 
-{{% alert color="warning" %}}
-O principal ganho da ferramenta é permitir que as equipes façam **alterações de layout e de dados direto em aplicações nativas mobile e/ou web** modificando apenas o código no backend.
-{{% /alert %}}
-
-Dessa forma, é possível criar, testar e atualizar rapidamente os componentes de aplicações nativas sem a necessidade de passar pela loja \(App Store ou Play Store\).
-
-### Versionamento <a id="version"></a>
-
-As versões do Beagle seguem o conceito de [**versionamento semântico**](https://semver.org/). A documentação, em si, é versionada de acordo com a versão major \(maior\) do Beagle, ou seja, com a versão principal. Entre as plataformas, a compatibilidade de features é pela versão minor. Por exemplo, é possível usar a 1.0.0 no backend com a 1.0.1 no Android, a 1.0.2 no iOS e a 1.0.3 no web react.
-
-{{% alert color="info" %}}
-As versões de **release atuais** do Beagle são:
-
-- **Android:**[![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android)](https://mvnrepository.com/artifact/br.com.zup.beagle/android)
-- **iOS:**[![badge](https://img.shields.io/cocoapods/v/Beagle)]()
-- **WEB:**
-  - **Angular:**[![badge](https://img.shields.io/npm/v/@zup-it/beagle-angular?logo=Angular)](https://github.com/ZupIT/beagle-web-angular)
-  - **React:**[![badge](https://img.shields.io/npm/v/@zup-it/beagle-react?logo=React)](https://github.com/ZupIT/beagle-web-react)
-- **React Native:**[![react native badge](https://img.shields.io/npm/v/@zup-it/beagle-react-native?logo=React)](https://www.npmjs.com/package/@zup-it/beagle-react-native)
-- **Backend:**[![back](https://camo.githubusercontent.com/27998a386042ecb2cae7b9f09ae159bd07c935bd/68747470733a2f2f696d672e736869656c64732e696f2f6d6176656e2d63656e7472616c2f762f62722e636f6d2e7a75702e626561676c652f6672616d65776f726b)](https://mvnrepository.com/artifact/br.com.zup.beagle/framework)
-  {{% /alert %}}
-
-Algumas definições nessa documentação existem apenas em algumas minors ou patches específicas. Segue a legenda usada para denotar esses casos:
-
-- `x.y.z`: designa uma definição exclusiva da versão x.y.z;
-- `>=x.y.z`: designa uma definição existente a partir da versão x.y.z;
-- `<=x.y.z`: designa uma definição existente até a versão x.y.z.
-
-## Como funciona o Beagle?
-
-A ferramenta atua como um facilitador do **BFF** \([**Backend For Frontend**]({{< ref path="/key-concepts#backend-for-frontend" lang="pt" >}})\) Isso significa que o Beagle, a partir de uma biblioteca de componentes definidos no [**Design System**]({{< ref path="/key-concepts#design-system" lang="pt" >}}) da aplicação Android, iOS ou Web, faz a alteração visual e comportamental delas ao retornar um arquivo JSON que indica o que e onde deve ser renderizado cada componente e qual a ação que vão executar.
-
-![](/shared/beaglemobileback.png)
-
-O motivo pelo qual o Beagle consegue fazer essa alteração do frontend a partir do backend é porque sua arquitetura está estruturada em [**Server-Driven UI**]({{< ref path="/key-concepts#server-driven-ui" lang="pt" >}}), onde o BFF constrói os dados, componentes e ações presentes na tela de forma declarativa e os encaminha no formato JSON, enquanto o front o desserializa, renderiza os componentes visuais de forma nativa além de executar e atribuir as ações presentes em cada um deles.
-
-### Pilares do Beagle
-
-Por se tratar de uma ferramenta pautada em Server-Driven UI, os objetos JSON configurados para rodar na sua aplicação podem ser divididos em 3 pilares básicos:
-
-- Conteúdo
-- Estrutura Visual
-- Flow \(ou Ações\)
-
-Depois de definido no frontend e no backend como será a estrutura visual da aplicação com os componentes e ações customizados, bem como como eles poderão ser alterados, o BFF estará apto a se comunicar com o front.
-
-Dessa forma, novas features, fluxos, customizações e combinações de componentes visuais podem ser testados sem a necessidade de publicar atualizações no aplicativo, otimizando testes de tipo A/B.
-
-![](/shared/images/beaglecomp.png)
-
-## Por que usar o Beagle?
+Ao utilizar o Beagle, desenvolvedores podem:
 
 {{% alert color="success" %}}
-O Beagle foi criado com objetivo de **otimizar tempo e recurso das equipes** de desenvolvimento, design e negócios para publicar e manter atualizados seus aplicativos sem a necessidade de passar por App Store ou Play Store e, ainda assim, respeitar o Design System da aplicação.
+- **Rapidamente alterar o layout, dados, fluxo de navegação, ou até mesmo lógica**, apenas alterando código no backend.
+- **Ser mais independentes das lojas mobile**, como App Store e Play Store, porque a maioria das mudanças não precisarão de uma atualização no aplicativo.
+- **Ter mais confiança de que aplicações se comportarão de forma semelhante em plataformas diferentes**, pois o código será compartilhado e padronizado entre backend e frontend.
+- **Testar facilmente novas hipóteses de negócio ou fazer correções em tempo real nas aplicações** para melhorar a experiência dos usuários e receber feedback.
 {{% /alert %}}
 
-Sendo assim, as principais vantagens que o Beagle traz para seu projeto são:
+## Como o Beagle funciona?
 
-- **Maior flexibilidade de trabalho** entre desenvolvedores frontend, backend e UI/UX designers no momento de realizar alterações pontuais.
-- **Facilidade de manutenção do app**, além de possibilitar a realização constante de testes para melhoria da sua aplicação.
-- **Menos duplicação de códigos**, pois todo o consumo das APIs, fluxos e regras estarão em um único lugar, o BFF.
+A melhor maneira de entender o Beagle é vê-lo em ação. Por isso, mostraremos **como construir uma tela simples com o Beagle**.
 
-Outro ganho fundamental que o Beagle traz, é a possibilidade de **reduzir o tempo de feedback do usuário**, já que as mudanças são rapidamente testadas e validadas.
+Comentaremos sobre cada pedaço da tela (texto, imagem, botão, e configurações de estilo), e deixaremos links para outras partes da documentação que entram em mais detalhes. Ao final dessa página, você se familiarizará com os recursos mais comuns do Beagle.
+
+> Os links para outras páginas são apenas para informações mais detalhadas, não há necessidade de acessá-los imediatamente.
+
+Dito isso, aqui está a tela que discutiremos:
+
+<!-- json-playground:overview-simple-example.json
+{
+  "_beagleComponent_": "beagle:container",
+  "style": {
+    "flex": {
+      "flexDirection": "COLUMN",
+      "alignItems": "CENTER",
+      "justifyContent": "CENTER"
+    },
+    "size": {
+      "height": {
+        "value": 100,
+        "type": "PERCENT"
+      }
+    },
+    "backgroundColor": "#FFF"
+  },
+  "children": [
+    {
+      "_beagleComponent_": "beagle:image",
+      "path": {
+        "_beagleImagePath_": "remote",
+        "url": "https://i.ibb.co/rvRN9kv/logo.png"
+      },
+      "style": {
+        "size": {
+          "width": {
+            "value": 242,
+            "type": "REAL"
+          },
+          "height": {
+            "value": 225,
+            "type": "REAL"
+          }
+        }
+      }
+    },
+    {
+      "_beagleComponent_": "beagle:text",
+      "text": "Welcome to Beagle playground! \nUse the left panel to start coding!",
+      "textColor": "#000",
+      "alignment": "CENTER",
+      "style": {
+        "margin": {
+          "all": {
+            "value": 40,
+            "type": "REAL"
+          }
+        }
+      }
+    },
+    {
+      "_beagleComponent_": "beagle:button",
+      "text": "Click here to show an Alert",
+      "onPress": [
+        {
+          "_beagleAction_": "beagle:alert",
+          "title": "My Title",
+          "message": "Alert message"
+        }
+      ]
+    }
+  ]
+}
+-->
+
+{{% playground file="overview-simple-example.json" language="pt" %}}
+
+> Ao longo da documentação, você verá exemplos - como o acima - que usam uma ferramenta que fizemos chamada **Playground**. Ao usá-la, você pode:
+>
+> - Ver rapidamente como o Beagle funciona;
+> - Editar o código à esquerda, executá-lo, e observar o resultado;
+> - Selecionar plataformas diferentes para executar seu código.
+>
+> Para obter mais informações sobre esta ferramenta, consulte a [seção Playground]({{< ref path="playground/_index.md" >}}).
+
+Como você pode ver ao lado esquerdo, estamos declarando nossa tela com JSON. Esse JSON seria o quê o backend fornece ao frontend por meio de uma resposta HTTP. O frontend, então, irá interpretá-lo e renderizá-lo corretamente na tela da plataforma (como no lado direito). O Beagle fornece bibliotecas no backend e frontend que lidam com esse fluxo para você.
+
+Nos exemplos, utilizamos JSON porque é a maneira mais direta de se usar o Beagle. No entanto, o Beagle também possui uma "linguagem" (DSL em Kotlin) que você pode usar em seu backend para produzir esse mesmo JSON de uma maneira mais produtiva – com autocomplete e outros benefícios.
+
+Verifique quais plataformas frontend o Beagle suporta na [seção de plataformas e versões](#plataformas-e-versões). Todas renderizam componentes **nativamente**, ou seja, se você usar o Beagle em um aplicativo móvel nativo Android ou iOS, as bibliotecas para essas plataformas usarão UIs nativas (Android Views e UIKit, respectivamente), e você pode até integrar seus próprios componentes nativos para funcionarem com o Beagle.
+
+### Componentes
+
+Agora, vamos dar uma olhada mais de perto nesse JSON, para que você possa entender melhor os recursos do Beagle. A primeira coisa a notar é a sua estrutura:
+
+```json
+{
+  "_beagleComponent_": "beagle:container",
+  "style": {...},
+  "children": [
+    {
+      "_beagleComponent_": "beagle:image",
+      ...
+    },
+    {
+      "_beagleComponent_": "beagle:text",
+      ...
+    },
+    {
+      "_beagleComponent_": "beagle:button",
+      ...
+    }
+  ]
+}
+```
+
+Para o Beagle, toda estrutura que contém o atributo `_beagleComponent_` será interpretada como um **Component**. O primeiro é um componente simples e comum chamado [Container]({{< ref path="api/components/layout/container.md" >}}), que permite *agrupar* componentes `children`. Ele possui 3 filhos: [Image]({{< ref path="api/components/ui/image/_index.md" >}}), [Text]({{< ref path="api/components/ui/text.md" >}}), e [Button]({{< ref path="api/components/ui/button.md" >}}). Cada um tem atributos diferentes para customizar sua renderização, e você pode ver todos os atributos disponíveis em suas respectivas documentações de API.
+
+O componente *Image*, por exemplo, tem um atributo chamado `path` para saber onde estão os dados da imagem, que pode ser `remote` ou `local`.
+Confira abaixo, nós usamos o path `remote` fornecendo uma `url` que o Beagle usará para criar uma requisição remota quando o componente for renderizado:
+
+```json
+{
+  "_beagleComponent_": "beagle:image",
+  "path": {
+    "_beagleImagePath_": "remote",
+    "url": "https://i.ibb.co/rvRN9kv/logo.png"
+  },
+  "style": {...}
+}
+```
+
+> Você pode ter controle total da requisição acionada por esta imagem remota. Você só precisa configurar sua própria *Camada de Rede* como uma *Dependência do Beagle*. Para entender melhor como fazer isso, ou como configurar outras Dependências do Beagle, você pode verificar a [seção de Customização]({{< ref path="resources/customization/_index.md" >}}).
+
+O Beagle já vem com vários componentes úteis, você pode navegar por todos eles na [seção de componentes]({{< ref path = "api/components/_index.md" >}}). Há outros componentes, por exemplo, que possuem o atributo *children* (às vezes apenas *child*) como o [Screen]({{< ref path="api/components/layout/screen/_index.md" >}}) e o [ListView]({{< ref path="api/components/layout/listview.md" >}}), e eles são usados para **compor hierarquias de views** como o *Container*. Também é possível definir seus próprios componentes, chamados de [Custom Components]({{< ref path="resources/customization/_index.md" >}}), e utilizá-los de forma muito similar a um componente que já vem no Beagle.
+
+### Style
+
+Vamos dar uma olhada mais de perto no atributo `style`, que descreve como posicionar componentes e seus filhos:
+
+```json
+{
+  "_beagleComponent_": "beagle:container",
+  "style": {
+    "flex": {
+      "flexDirection": "COLUMN",
+      "alignItems": "CENTER",
+      "justifyContent": "CENTER"
+    },
+    "size": {
+      "height": {
+        "value": 100,
+        "type": "PERCENT"
+      }
+    },
+    "backgroundColor": "#FFF"
+  },
+  "children": [...]
+}
+```
+
+A maioria dos componentes tem esse atributo, que é responsável por uma feature importante do Beagle: **os desenvolvedores têm controle *via backend* no posicionamento de views**. Você pode experimentar isso alterando o atributo `flexDirection` para **`ROW`** no Playground, e você verá as mesmas views posicionadas horizontalmente. Em seu aplicativo real, você pode implantar essa mesma mudança no backend, e isso será refletido *imediatamente* no frontend – mesmo em plataformas móveis, você não precisa de atualizações nas lojas.
+
+> Muitas ferramentas desenvolvidas internamente para Server Driven UI não permitem esse tipo de poder sobre o posicionamento de views, e isso já vem pronto com o Beagle.
+
+No *Container* do exemplo, estamos usando 3 atributos de estilo: `flex`, `size` e `backgroundColor`. Existem outras opções também, você pode vê-las na [seção Style]({{< ref path="api/components/widget.md#style-attributes" >}}).
+
+#### Flex
+
+O atributo `flex` permite que você **use o mesmo Motor de Layout em diferentes plataformas**. Isso pode ser uma grande vantagem para o seu time, pois todas as plataformas posicionarão as views de acordo com as mesmas regras, e você não precisará "duplicar" a lógica de layout para cada plataforma.
+
+- Se você tem experiência com desenvolvimento web, provavelmente já sabe como usar o `flex`, pois ele é usado como um [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) multiplataforma. Para obter esse resultado, o Beagle usa uma biblioteca chamada [Yoga](https://yogalayout.com), biblioteca multiplataform desenvolvida em C++ pelo Facebook, e também usada em outros projetos (por exemplo: React Native).
+
+- Se você não estiver familiarizado com o Flexbox, verifique [a seção de posicionamento]({{< ref path="resources/components-positioning/_index.md" >}}) e a [documentação do Yoga](https://yogalayout.com/docs) para obter mais detalhes.
+
+### Ações
+
+Finalmente, vamos falar sobre *Actions*, uma maneira de adicionar *dinamismo em tempo de execução* a um componente Beagle. No exemplo, há uma ação dentro de um botão:
+
+```json
+{
+  "_beagleComponent_": "beagle:button",
+  "text": "Click here to show an Alert",
+  "onPress": [
+    {
+      "_beagleAction_": "beagle:alert",
+      "title": "My Title",
+      "message": "Alert message"
+    }
+  ]
+}
+```
+
+O [componente Button]({{< ref path="api/components/ui/button.md" >}}) possui um atributo chamado `onPress` que pode receber uma lista de ações, as quais só serão executadas quando o botão for pressionado. Você pode ver todas as ações padrão do Beagle na [seção Actions]({{< ref path="api/actions/_index.md" >}}). Mas também é possível criar suas próprias ações (um processo semelhante a *Custom Componentes*), que chamamos de [Custom Actions]({{< ref path="resources/customization/_index.md" >}}).
+
+Esse exemplo usa uma [ação Alert]({{< ref path="api/actions/alert.md" >}}), o que resulta na exibição de um componente de alerta quando alguém toca o botão. Você pode fazer isso no *Playground* e ver você mesmo.
+
+Além de mostrar um alerta, você também pode utilizar ações para:
+
+- Naveguar para outra tela com uma [ação Navigate]({{< ref path="api/actions/navigate/_index.md" >}}).
+- Enviar uma requisição http com uma [ação SendRequest]({{< ref path="api/actions/sendrequest.md" >}}).
+- Adicionar novas views na hierarquia atual de views com uma [ação AddChildren]({{< ref path="api/actions/addchildren.md" >}}).
+
+Além disso, as ações são essenciais para se **criar telas complexas e dinâmicas**. Você pode ver mais sobre este tópico na [seção "Como fazer comunicação entre componentes"]({{< ref path="tutorials/how-to-make-communication-between-components.md" >}}).
+
+---
+
+## Conclusão e próximos passos
+
+Depois de ver as partes mais essenciais do Beagle, você está pronto para mergulhar em tópicos mais avançados:
+
+- Se quiser ver um exemplo mais complexo de um aplicativo que utiliza completamente o Beagle, você pode verificar [este repositório](https://github.com/ZupIT/beagle-adoption-demo). Ele possui um backend em Kotlin e frontends nativos para dispositivos móveis em Android e iOS.
+
+- Se você deseja integrar o Beagle em seu aplicativo existente, você pode seguir o [guia de instalação]({{< ref path="get-started/installing-beagle/_index.md" >}}) de cada plataforma, e depois verificar a [seção de usando o Beagle]({{< ref path="get-started/using-beagle/_index.md" >}}).
+
+- Se você deseja iniciar um novo projeto com o Beagle, você pode seguir o [guia de criação de um projeto do zero]({{< ref path="get-started/creating-a-project-from-scratch/_index.md" >}}).
+
+- Se você quiser saber mais sobre uma API específica, use a [seção API]({{< ref path="api/_index.md" >}}).
+
+- Se você não tiver certeza de como encontrar informações sobre um contexto específico, use o **campo de pesquisa no canto superior direito da tela** para pesquisar palavras em toda esta documentação.
+
+### Visão geral da arquitetura do Beagle
+
+![Uma visão geral da arquitetura do Beagle](/shared/beaglemobileback.png)
+
+---
+
+## Platformas e Versões
+
+O Beagle possui diferentes bibliotecas/frameworks para cada plataforma suportada, na lista a seguir você pode ver e acessar as versões mais recentes:
+
+{{% alert color="info" %}}
+**Backend Kotlin:** [![back](https://camo.githubusercontent.com/27998a386042ecb2cae7b9f09ae159bd07c935bd/68747470733a2f2f696d672e736869656c64732e696f2f6d6176656e2d63656e7472616c2f762f62722e636f6d2e7a75702e626561676c652f6672616d65776f726b)](https://mvnrepository.com/artifact/br.com.zup.beagle/framework)
+
+**Mobile**:
+
+- **Android:** [![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android)](https://mvnrepository.com/artifact/br.com.zup.beagle/android)
+- **iOS:** [![badge](https://img.shields.io/cocoapods/v/Beagle)](https://cocoapods.org/pods/Beagle)
+- **React Native:** [![react native badge](https://img.shields.io/npm/v/@zup-it/beagle-react-native?logo=React)](https://www.npmjs.com/package/@zup-it/beagle-react-native)
+- **Flutter:** *Em desenvolvimento, confira mais informações [nesta pasta](https://github.com/ZupIT/beagle/tree/master/flutter)*
+- **SwiftUI and Compose:** *vamos tentar suportá-los no futuro*
+
+**Web:**
+
+- **Angular:** [![badge](https://img.shields.io/npm/v/@zup-it/beagle-angular?logo=Angular)](https://www.npmjs.com/package/@zup-it/beagle-angular)
+- **React:** [![badge](https://img.shields.io/npm/v/@zup-it/beagle-react?logo=React)](https://www.npmjs.com/package/@zup-it/beagle-react)
+{{% /alert %}}

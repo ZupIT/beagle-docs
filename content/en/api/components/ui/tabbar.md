@@ -18,7 +18,7 @@ Your structure is represented by the attributes below:
 | :------------- | :----------------- | :------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | items          | TabBarItem         | ✓        | Receive a list of `TabBarItems` that will define the `Tabs` in the `TabBar`                                                                                      |
 | styleId        | String             |          | Style ID that identifies an style to be applied on the TabBar                                                                                                    |
-| currentTab     | Bind&lt;Int&gt;    |          | Integer number that identifies the selected [`TabBarItem`]({{< ref path="/api/components/ui/tabview#what-is-tabitem" lang="en" >}})                                                      |
+| currentTab     | Bind&lt;Int&gt;    |          | Integer number that identifies the selected `TabBarItem`)                                                      |
 | onTabSelection | List&lt;Action&gt; |          | List of [**Actions**]({{< ref path="/api/actions/" lang="en" >}}) that are performed when a TabBarItem is selected. It can be used to load views according to the selected `TabBarItem`. |
 
 ## What is Tab Bar **Item?**
@@ -38,15 +38,15 @@ If a title or icon is not declared in the `TabBarItem`, the empty space will rem
 
 On the following example, it will be used two componentes to explain TabBar: [**PageView**]({{< ref path="/api/components/layout/pageview" lang="en" >}}) and [**Context**]({{< ref path="/api/context/" lang="en" >}}).
 
-**Page View** is used to render the pages you want to display, that is, it will create the view on each selected tab. This is where you will define the components you want to display by clicking on each tab.
+**Tab bar** is used to render the tabs you want to display, that is, it will create the view on each selected tab. This is where you will define the components you want to display by clicking on each tab.
 
-The components will be rendered according to their position in the list of componentes defined at the Page View Component.
+The components will be rendered according to their position in the list of componentes defined at the Tab bar Component.
 
 It means that, if we have 2 text components in our list - TAB 1 and TAB 2 -, The first has a position of ZERO = 0, and the second has ONE = 1. 
 
 The **currentTab** attribute is the one that defines which component is displayed according to the value defined in it.
 
-The **Context** is used to save the indicator \(position\) of the selected tab, and inform it to PageView, which coordinates which element will be displayed.
+The **Context** is used to save the indicator \(position\) of the selected tab, and inform it to TabBar, which coordinates which element will be displayed.
 
 ### Example
 

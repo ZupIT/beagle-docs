@@ -1,6 +1,6 @@
 ---
 title: Ações
-weight: 255
+weight: 20
 description: Descrição dos componentes do tipo Action e seus atributos
 ---
 

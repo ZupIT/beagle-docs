@@ -50,12 +50,6 @@ Check below a list with the demo components implemented in the Playground:
 
 [Component's Documentation]({{< ref path="/api/components/forms/simple-form" lang="en" >}})
 
-### **Tab View**
-
-[Try out the Playground](https://beagle-playground.netlify.app/#/demo/default-components/tabview.json)
-
-[Component's Documentation]({{< ref path="/api/components/ui/tabview" lang="en" >}})
-
 ### **Text**
 
 [Try out the Playground](https://beagle-playground.netlify.app/#/demo/default-components/text.json)

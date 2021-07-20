@@ -1,6 +1,6 @@
 ---
 title: Route
-weight: 266
+weight: 110
 description: Description of route type
 ---
 

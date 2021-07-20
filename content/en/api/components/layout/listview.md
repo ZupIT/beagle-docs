@@ -1,6 +1,6 @@
 ---
 title: ListView
-weight: 315
+weight: 80
 description: "You will find here the description of the ListView component, its attributes and constructors"
 ---
 
@@ -9,10 +9,6 @@ description: "You will find here the description of the ListView component, its 
 ## What is it?
 
 The ListView component is responsible for defining a list of recyclable items natively. These items can be any server-driven components. The use of ListView is recommended for situations where there is repetition of components, but with different data.
-
-{{% alert color="danger" %}}
-From version 1.5.0, we started to support the use of context and cell recycling in ListView, with that we provide two ways to build the component. The depreciated version was maintained only to keep backward compatibility, upgrade to the new version of the component if possible for better performance.
-{{% /alert %}}
 
 See how the structure is represented:
 
@@ -56,40 +52,7 @@ Default value is ListDirection.VERTICAL
  If all are `false`, then the first template where `case` is omitted (default template) is used.
 {{% /alert %}}
 
-### Deprecated ListView
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Attribute</th>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Required</th>
-      <th style="text-align:left">Descriptioon</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">children</td>
-      <td style="text-align:left">List&lt;<a href="../"><strong>ServerDrivenComponent</strong></a>&gt;</td>
-      <td style="text-align:left">&#x2713;</td>
-      <td style="text-align:left">
-        Defines the item list view. They can be configured like a <code>ServerDrivenComponents </code>or
-          like <code>views.</code>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">direction</td>
-      <td style="text-align:left"><a href="https://docs.usebeagle.io/api/components/layout/listview"><strong>ListDirection</strong></a></td>
-      <td
-      style="text-align:left"></td>
-        <td style="text-align:left">Defines the preview list direction.</td>
-    </tr>
-  </tbody>
-</table>
-
 ## How to use it?
-
-### ListView
 
 {{< tabs id="T128" >}}
 {{% tab name="JSON" %}}
@@ -366,69 +329,6 @@ Default value is ListDirection.VERTICAL
           )
         )
 
-```
-
-{{% /tab %}}
-{{< /tabs >}}
-
-### Deprecated ListView
-
-{{< tabs id="T129" >}}
-{{% tab name="JSON" %}}
-
-<!-- json-playground:listViewDeprecated.json
-{
-  "_beagleComponent_": "beagle:listView",
-  "children": [
-    {
-      "_beagleComponent_": "beagle:text",
-      "text": "Beagle Text list",
-      "textColor": "#FF0000",
-      "alignment": "CENTER"
-    },
-    {
-      "_beagleComponent_": "beagle:text",
-      "text": "Beagle Text list",
-      "textColor": "#00FF00",
-      "alignment": "CENTER"
-    },
-    {
-      "_beagleComponent_": "beagle:text",
-      "text": "Beagle Text list",
-      "textColor": "#0000FF",
-      "alignment": "CENTER"
-    }
-  ],
-  "direction": "HORIZONTAL"
-}
--->
-
-{{% playground file="listViewDeprecated.json" language="en" %}}
-{{% /tab %}}
-
-{{% tab name="Kotlin DSL" %}}
-
-```kotlin
-ListView(
-    direction = ListDirection.HORIZONTAL,
-    children = listOf(
-        Text(
-            text = "Beagle Text list",
-            textColor = "#FF0000",
-            alignment = TextAlignment.CENTER
-        ),
-        Text(
-            text = "Beagle Text list",
-            textColor = "#00FF00",
-            alignment = TextAlignment.CENTER
-        ),
-        Text(
-            text = "Beagle Text list",
-            textColor = "#0000FF",
-            alignment = TextAlignment.CENTER
-        )
-    )
-)
 ```
 
 {{% /tab %}}
