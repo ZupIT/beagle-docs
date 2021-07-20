@@ -1,5 +1,5 @@
 ---
 title: Android
 weight: 3
-description: Aqui você irá ver mais sobre o Beagle para Android
+description: 'Aqui você encontrará informações sobre como configurar um projeto com o Beagle em aplicações Android.'
 ---
