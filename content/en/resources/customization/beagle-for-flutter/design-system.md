@@ -2,13 +2,13 @@
 title: Design System
 weight: 3
 description: >-
-  You will find here information of how to create and use your own design system in Flutter.
+ In this section, you will find information on how to create and use your own design system in Flutter.
 ---
 
 ---
 
 ## Why use a Design System?
-To be able to use images and styled texts and buttons, you must provide a implementation of DesignSystem to Beagle Flutter. You can use it in any default widget. To learn more about how to use the default components library, see the [configuration page]({{< ref path="/resources/customization/beagle-for-flutter/configuration" lang="en" >}}).
+If you want to be able to use images, styled texts, and buttons, you must provide a DesignSystem implementation to Beagle Flutter. You can use it in any default widget. For more information about how to use the default components library, see the [configuration page]({{< ref path="/resources/customization/beagle-for-flutter/configuration" lang="en" >}}).
 
 ## How to configure a Design System?
 It's simple to create your own Design System. You just need to:
@@ -18,7 +18,7 @@ It's simple to create your own Design System. You just need to:
 See more details of each one of them below:
 
 ### image
-This method has the notation `String image(String id)`. It receives the image id that comes from JSON and returns the corresponding local image asset name. See the example:
+This method has the notation `String image(String id)`. It receives the image id that comes from the JSON and returns the corresponding local image asset name. See the example:
 ```dart
 final Map<String, String> imageMap = {
   'bus': 'images/bus.png',

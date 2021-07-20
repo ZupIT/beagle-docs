@@ -186,16 +186,12 @@ O valor do contexto é um `DynamicObject`, portanto ele pode assumir qualquer ti
 {{% /tab %}}
 
 {{% tab name="Flutter" %}}
-
-No Flutter o Contexto Global pode ser chamado através da função `getInstance()` que vai prover uma instancia unica(Singleton) do `GlobalContext`, abaixo segue um exemplo de como utilizar:
-
-
+No Flutter o Contexto Global é chamado por meio da função `getInstance()`, ela provê uma única instância (Singleton) do `GlobalContext`, veja abaixo um exemplo de como utilizar:
 
 ```dart
 import 'package:beagle/beagle.dart';
 
 GlobalContext.getInstance().then((value) => value.set(value, path));
-
 ```
 
 {{% /tab %}}
@@ -262,7 +258,7 @@ Beagle.dependencies.globalContext.get(path: "myValue")
 {{% /tab %}}
 
 {{% tab name="Flutter" %}}
-Assim como no método set será necessário chamar a função `getInstance()` do `GlobalContext` para utilizar o `get` do contexto global, como no exemplo abaixo:
+Assim como no método set é necessário chamar a função `getInstance()` do `GlobalContext`, você precisa utilizar o `get` do contexto global, veja o exemplo abaixo:
 
 ```dart
 import 'package:beagle/beagle.dart';
@@ -326,7 +322,7 @@ Beagle.dependencies.globalContext.clear()
 {{% /tab %}}
 
 {{% tab name="Flutter" %}}
-Lembre-se que no Flutter o acesso ao contexto global é feito através do `getInstance()`
+Lembre-se que no Flutter o acesso ao contexto global é feito por meio do `getInstance()`:
 ```dart
 import 'package:beagle/beagle.dart';
 

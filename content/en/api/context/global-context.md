@@ -189,16 +189,12 @@ The context value is a `DynamicObject`, therefore it can take on any kind of val
 
 
 {{% tab name="Flutter" %}}
-
-
-In Flutter the Global Context can be called through the `getInstance()` function which will provide a single instance (Singleton) of the `GlobalContext`, below is an example of how to use it:
-
+In Flutter the Global Context is called through the `getInstance()` function. This will provide a single instance (Singleton) of the `GlobalContext`, check out below an example:
 
 ```dart
 import 'package:beagle/beagle.dart';
 
 GlobalContext.getInstance().then((value) => value.set(value, path));
-
 ```
 
 {{% /tab %}}
@@ -267,7 +263,7 @@ Beagle.dependencies.globalContext.get(path: "myValue")
 {{% /tab %}}
 
 {{% tab name="Flutter" %}}
-Like the set method, it's necessary to call the function `getInstance()` of the `GlobalContext` to use the `get` of the global context you will also need to call it, as in the example below: 
+Call the function `getInstance()` of the `GlobalContext` to be able to use the `**get**` of the global context which you will also need to call, see the example below: 
 
 ```dart
 import 'package:beagle/beagle.dart';
@@ -332,7 +328,7 @@ Beagle.dependencies.globalContext.clear()
 
 
 {{% tab name="Flutter" %}}
-Remember that in the Flutter the global context access is made over the `getInstance()`
+Remember that in Flutter the global context access is made over the `getInstance()`:
 
 ```dart
 import 'package:beagle/beagle.dart';
@@ -415,7 +411,7 @@ GlobalContext.getInstance().then((value) => value.clear("myValue1"));
 
 {{< /tabs >}}
 
-The property represented by `path` "myValue1" will be completly removed from the glova context, that it will be:
+The property represented by `path` "myValue1" will be completely removed from the global context, that it will be:
 
 ```javascript
 {

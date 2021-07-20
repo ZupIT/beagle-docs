@@ -2,7 +2,7 @@
 title: Customização
 weight: 6
 description: >-
-  Aqui você encontra informações sobre como customizar o Beagle Flutter.
+  Nessa seção você encontrará informações sobre como fazer customizações no Beagle Flutter.
 ---
 
 ---
