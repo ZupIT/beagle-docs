@@ -75,7 +75,7 @@ playground_url = "https://playground.usebeagle.io/#/docs"
 logoName = "icons/beagle.svg"
 search_label = "Looking for something?"
 faq_path = "/faq"
-current_version = "v1.9"
+current_version = ""
 
 edit_page = "Edit this page"
 create_page = "Create new page"
