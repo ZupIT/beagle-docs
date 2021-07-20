@@ -1,9 +1,8 @@
 ---
 title: Beagle for React Native
-weight: 188
+weight: 189
 description: >-
-  You will find here the main classes that are part of Beagle's framework for
-  Beagle React Native.
+  You will find here the main classes that are part of Beagle's framework for React Native.
 ---
 
 ---

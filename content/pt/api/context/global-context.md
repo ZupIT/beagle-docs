@@ -164,6 +164,7 @@ const beagleService = useContext(context)
 beagleService?.globalContext.set(value, path)
 ```
 
+
 {{% /tab %}}
 
 {{% tab name="iOS" %}}
@@ -181,7 +182,20 @@ Beagle.dependencies.globalContext.set(
 {{% alert color="info" %}}
 O valor do contexto é um `DynamicObject`, portanto ele pode assumir qualquer tipo de valor.
 {{% /alert %}}
+
 {{% /tab %}}
+
+{{% tab name="Flutter" %}}
+No Flutter o Contexto Global é chamado por meio da função `getInstance()`, ela provê uma única instância (Singleton) do `GlobalContext`, veja abaixo um exemplo de como utilizar:
+
+```dart
+import 'package:beagle/beagle.dart';
+
+GlobalContext.getInstance().then((value) => value.set(value, path));
+```
+
+{{% /tab %}}
+
 {{< /tabs >}}
 
 O contexto global pode ser recuperado de duas formas:
@@ -242,6 +256,18 @@ Beagle.dependencies.globalContext.get(path: "myValue")
 ```
 
 {{% /tab %}}
+
+{{% tab name="Flutter" %}}
+Assim como no método set é necessário chamar a função `getInstance()` do `GlobalContext`, você precisa utilizar o `get` do contexto global, veja o exemplo abaixo:
+
+```dart
+import 'package:beagle/beagle.dart';
+
+GlobalContext.getInstance().then((value) => value.get("myValue"));
+```
+
+{{% /tab %}}
+
 {{< /tabs >}}
 
 - Da mesma forma, ao utilizar o `GlobalContext.get()` sem nenhum parâmetro como `path`, esse método retornará o objeto JSON inteiro -&gt; `{"myValue" : "Context has changed"}`
@@ -294,6 +320,18 @@ Beagle.dependencies.globalContext.clear()
 ```
 
 {{% /tab %}}
+
+{{% tab name="Flutter" %}}
+Lembre-se que no Flutter o acesso ao contexto global é feito por meio do `getInstance()`:
+```dart
+import 'package:beagle/beagle.dart';
+
+GlobalContext.getInstance().then((value) => value.clear());
+```
+
+
+{{% /tab %}}
+
 {{< /tabs >}}
 
 Dessa forma, o `VALUE` do Contexto Global será **apagado** totalmente e terá um valor vazio \(""\) caso chamado a partir de sua função `GlobalContext.get()`
@@ -354,6 +392,18 @@ Beagle.dependencies.globalContext.clear(path: "myValue1")
 ```
 
 {{% /tab %}}
+
+
+{{% tab name="Flutter" %}}
+```dart
+import 'package:beagle/beagle.dart';
+
+GlobalContext.getInstance().then((value) => value.clear("myValue1"));
+
+```
+{{% /tab %}}
+
+
 {{< /tabs >}}
 
 A propriedade representada pelo `path` "myValue1" será completamente removida contexto global, que será:
