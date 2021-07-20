@@ -71,7 +71,7 @@ faq_path = "/pt/faq"
 [params]
 copyright = "Zup IT"
 privacy_policy = "https://insights.zup.com.br/politica-privacidade"
-playground_url = "https://playground.usebeagle.io/#/docs"
+playground_url = "https://playground.usebeagle.io/#"
 logoName = "icons/beagle.svg"
 search_label = "Looking for something?"
 faq_path = "/faq"
