@@ -2,13 +2,13 @@
 title: Logger
 weight: 189
 description: >-
-  You will find here information of how to use the Logger in Beagle Flutter.
+  In this section, you will find information on how to use the Logger in Beagle Flutter.
 ---
 
 ---
 
 ## Introduction
-API for sending log output. Beagle Flutter provides a default implementation called `DefaultEmptyLogger` that doesn't log any information. Here is the contract:
+Logger is an API that sends log output. Beagle Flutter provides a default implementation called `DefaultEmptyLogger` that doesn't log any information. Check out the contract:
 
 ```dart
 abstract class BeagleLogger {

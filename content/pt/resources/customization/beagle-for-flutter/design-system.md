@@ -11,7 +11,11 @@ description: >-
 Para usar imagens e textos e botões com estilo, você precisa prover uma implementação de Design System para o Beagle Flutter. Você pode usá-lo em qualquer widget padrão. para aprender mais sobre como usar a biblioteca de componentes padrões, veja a [página de configuração]({{< ref path="/resources/customization/beagle-for-flutter/configuration" lang="pt" >}}).
 
 ## Como configurar Design System?
-É bem simples criar seu próprio Design System. Você só precisa criar uma classe que implemente o contrato `BeagleDesignSystem` e prover imagens e estilos para cada método. Vamos detalhar cada um deles:
+É simples criar seu próprio Sistema de Design. Você só precisa:
+1. Crie uma classe que implemente o contrato `BeagleDesignSystem`;
+2. Forneça imagens e estilos para cada método.
+
+Veja mais detalhes de cada um deles a seguir:
 
 ### image
 Este método tem a notação `String image(String id)`. Ele recebe um id de imagem que vem pelo JSON e retorna o recurso de imagem local correspondente. Veja o exemplo:
@@ -29,7 +33,8 @@ String image(String id) {
 ```
 
 ### buttonStyle
-Este método tem a notação `BeagleButtonStyle buttonStyle(String id)`. Ele recebe o id do estilo de botão que vem pelo JSON e retorna o `BeagleButtonStyle` correspondente. Veja abaixo:
+Este método possui a notação `BeagleButtonStyle buttonStyle (String id)`. Ele recebe o id de estilo do botão que vem do JSON e retorna o `BeagleButtonStyle` correspondente. Veja abaixo:
+
 ```dart
 final Map<String, BeagleButtonStyle> buttonMap = {
   'primaryButton': BeagleButtonStyle(

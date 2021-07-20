@@ -2,7 +2,7 @@
 title: Development
 weight: 5
 description: >-
-  You will find here information of how the development of the Beagle Flutter is going.
+  In this section, you will find information on how Beagle Flutter's developement is going.
 ---
 
 ---
@@ -13,19 +13,24 @@ This is our current development status. Please help us get to a stable version!
 To contribute to this project, please use [this repository](https://github.com/ZupIT/beagle).
 
 ### Core features
-Almost done. Renderization, context, custom components and custom actions all work! Only the layout engine which is based on flexbox is partially applied. The styling is not implemented either.
+The core features are almost done, see below what is already working:
+- Renderization;
+- Context;
+- Custom components
+- Custom actions. 
+The layout engine is based on flexbox and it is partially applied. The styling is not implemented either.
 
-| Feature                | Status          | Description                                                                              |
-|------------------------|-----------------|------------------------------------------------------------------------------------------|
-| Fetching and rendering | done            | Only the stylization is missing                                                          |
-| Layout and styles      | incomplete      | We need Flutter Yoga to be working 100% and integrated to Beagle.                        |
-| Context                | done            |                                                                                          |
-| Global context         | done            |                                                                                          |
-| Custom components      | done            |                                                                                          |
-| Custom actions         | done            |                                                                                          |
-| Custom operations      | done            |                                                                                          |
-| Renderer API           | incomplete      | Must be updated according to v1.9.0 of Beagle Web.                                       |
-| Analytics 2.0          | not implemented |                                                                                          |
+| Feature                | Status          | Description  |
+|------------------------|-----------------|--------------|
+| Fetching and rendering | done            | Only the stylization is missing |
+| Layout and styles      | incomplete      | We need Flutter Yoga to be working 100% and integrated to Beagle.|
+| Context                | done            | |
+| Global context         | done            | |
+| Custom components      | done            | |
+| Custom actions         | done            | |
+| Custom operations      | done            | |
+| Renderer API           | incomplete      | Must be updated according to v1.9.0 of Beagle Web. |
+| Analytics 2.0          | not implemented |
 | Navigation             | incomplete      | We still need to make the system navigation work with the internal Beagle navigation.    |
 | Default services       | incomplete      | We still need to decide whether and how they're going to be separated from the main lib. |
 

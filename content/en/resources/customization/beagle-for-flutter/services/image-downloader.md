@@ -2,7 +2,7 @@
 title: Image Downloader
 weight: 189
 description: >-
-  You will find here information of how to use and configure the Image Downloader in Beagle Flutter.
+  In this section, you will information on how to use and configure the Image Downloader in Beagle Flutter.
 ---
 
 ---
@@ -16,10 +16,10 @@ abstract class BeagleImageDownloader {
 }
 ```
 
-The `downloadImage` method takes as parameter the image url and returns a `Future<Uint8List>` as the representation of the downloaded image.
+The `downloadImage` method takes as a parameter the image url and returns a `Future<Uint8List>` as the representation of the downloaded image.
 
 ## Create a custom image downloader
-To create your own image downloader, you only need to implement the `downloadImage` method, here is a simplified version of the default implementation:
+To create your own image downloader, you need to implement the `downloadImage` method, see a simplified version of the default implementation:
 
 ```dart
 class DefaultBeagleImageDownloader implements BeagleImageDownloader {
@@ -47,8 +47,9 @@ class DefaultBeagleImageDownloader implements BeagleImageDownloader {
   }
 }
 ```
-
-It is worth mentioning that the default implementation of Image Downloader uses the default implementation of the HTTP client.
+{{% alert color="warning" %}}
+  The default implementation of Image Downloader uses the same default implementation of the HTTP client.
+{{% /alert %}}
 
 ## Use a custom image downloader
 To use your image downloader, pass it in the Beagle initialization method `BeagleSdk.init` just like the example below:

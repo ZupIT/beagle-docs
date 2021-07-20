@@ -2,7 +2,7 @@
 title: Serviços
 weight: 7
 description: >-
-  Aqui você encontra informações sobre como configurar e usar serviços do Beagle Flutter.
+  Nesta seção, você encontrará informações sobre como configurar e usar serviços no Beagle Flutter.
 ---
 
 ---

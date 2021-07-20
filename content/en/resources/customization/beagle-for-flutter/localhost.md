@@ -2,7 +2,7 @@
 title: Accessing the localhost
 weight: 4
 description: >-
-  You will find here information of how to refer to the localhost in Beagle Flutter.
+  In this section, you will find information on how to refer to the localhost on Beagle Flutter.
 ---
 
 ---
@@ -14,7 +14,8 @@ In the previous steps, the `baseUrl` used was `http://yourBffBaseUrl.io`, but th
 By default, both Android and iOS will make only HTTPS (secured) requests. To change this behavior, follow the steps below:
 
 #### Android
-Open `android/app/src/main/AndroidManifest.xml` and place the rule `android:usesCleartextTraffic="true"` in `<application>` tag:
+1. Open `android/app/src/main/AndroidManifest.xml` 
+2. Place the rule `android:usesCleartextTraffic="true"` in `<application>` tag:
 
 ```xml
 <application
@@ -28,7 +29,8 @@ Open `android/app/src/main/AndroidManifest.xml` and place the rule `android:uses
 ```
 
 #### iOS
-Open `ios/{project_name}/info.plist` and make sure the configuration for `NSAppTransportSecurity` is the following:
+1. Open `ios/{project_name}/info.plist` 
+2. Make sure the configuration for `NSAppTransportSecurity` is the following one:
 
 ```xml
 <key>NSAppTransportSecurity</key>
@@ -45,11 +47,13 @@ Open `ios/{project_name}/info.plist` and make sure the configuration for `NSAppT
 ```
 
 {{% alert color="warning" %}}
-Attention: we don't recommend this configuration for production builds. HTTP requests should be blocked while not in development.
+This configuration is not recommended for production builds. HTTP requests should be blocked while not in development.
 {{% /alert %}}
 
 ### localhost vs 10.0.2.2
-Another attention point of running your backend in the localhost is that while iOS does work with the address `localhost`, Android emulator doesn't. On Android emulator, to access the localhost, you need to use the ip `10.0.2.2`. To solve this problem, you can use Flutter's `Platform` to decide what address to use. See the example below:
+When running your backend in the localhost, iOS works with the address `localhost`, however the Android emulator does not. 
+
+To access the localhost in the Android emulator, you need to use the **IP `10.0.2.2`.** To solve this problem, you can use Flutter's `Platform` to decide what address to use. See the example below:
 
 ```dart
 final localhost = Platform.isAndroid ? '10.0.2.2' : 'localhost';

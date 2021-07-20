@@ -11,7 +11,11 @@ description: >-
 To be able to use images and styled texts and buttons, you must provide a implementation of DesignSystem to Beagle Flutter. You can use it in any default widget. To learn more about how to use the default components library, see the [configuration page]({{< ref path="/resources/customization/beagle-for-flutter/configuration" lang="en" >}}).
 
 ## How to configure a Design System?
-It's quite simple create your own Design System. You just need to create a class that implements the `BeagleDesignSystem` contract and provide images and styles to each method. We'll detail each one of them:
+It's simple to create your own Design System. You just need to:
+1. Create a class that implements the `BeagleDesignSystem` contract;
+2. Provide images and styles for each method. 
+
+See more details of each one of them below:
 
 ### image
 This method has the notation `String image(String id)`. It receives the image id that comes from JSON and returns the corresponding local image asset name. See the example:
@@ -29,7 +33,8 @@ String image(String id) {
 ```
 
 ### buttonStyle
-This method has the notation `BeagleButtonStyle buttonStyle(String id)`. It receives the button style id that comes from JSON and returns the `BeagleButtonStyle` corresponding. See below:
+This method has the notation `BeagleButtonStyle buttonStyle(String id)`. It receives the button style id that comes from the JSON and returns the corresponding `BeagleButtonStyle`. See below:
+
 ```dart
 final Map<String, BeagleButtonStyle> buttonMap = {
   'primaryButton': BeagleButtonStyle(
@@ -57,7 +62,7 @@ BeagleButtonStyle buttonStyle(String id) {
 ```
 
 ### textStyle
-This method has the notation `TextStyle textStyle(String id)`. It receives the text style id that comes from JSON and returns the `TextStyle` corresponding. Here is an implementation:
+This method has the notation `TextStyle textStyle(String id)`. It receives the text style id that comes from the JSON and returns the corresponding `TextStyle`. Check out an implementation:
 ```dart
 final Map<String, TextStyle> textMap = {
   'h1': TextStyle(
@@ -130,7 +135,8 @@ class MyDesignSystem extends BeagleDesignSystem {
 ```
 
 ## How to use a Design System?
-Just like any other configuration in Beagle Flutter, to be able to use your implementation of a Design System you need to pass it in the initialization method `BeagleSdk.init`. See below:
+Just like any other configuration in Beagle Flutter,  if you want to use your implementation of a Design System, you need to pass it in the initialization method `BeagleSdk.init`. See below:
+
 ```dart
 BeagleSdk.init(
   designSystem: MyDesignSystem(),

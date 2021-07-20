@@ -2,7 +2,7 @@
 title: Storage
 weight: 189
 description: >-
-  You will find here information of how to configure the storage in Beagle Flutter.
+   In this section, you will find information on how to configure the storage in Beagle Flutter.
 ---
 
 ---
@@ -30,7 +30,7 @@ abstract class Storage {
 }
 ```
 
-To avoid vulnerability issues, the default implementation stores information only in memory.
+To avoid vulnerability issues, the default implementation stores information only in the memory.
 
 ## Create a custom storage
 Create a class that implements the `Storage` abstract class, here is the default implementation:

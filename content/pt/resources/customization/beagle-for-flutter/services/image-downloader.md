@@ -2,7 +2,7 @@
 title: Image Downloader
 weight: 189
 description: >-
-  Aqui você encontra informações sobre como configurar e usar o Image Downloader no Beagle Flutter.
+  Nesta seção, você terá informações sobre como usar e configurar o Downloader de imagens no Beagle Flutter.
 ---
 
 ---
@@ -47,8 +47,9 @@ class DefaultBeagleImageDownloader implements BeagleImageDownloader {
   }
 }
 ```
-
-Vale ressaltar que a implementação padrão do Image Downloader usa a implementação padrão do HTTP Client.
+{{% alert color="warning" %}}
+  A implementação padrão do Image Downloader usa a implementação padrão do HTTP Client.
+{{% /alert %}}
 
 ## Use um image downloader customizado
 Para usar seu image downloader, passe-o no método de inicialização do Beagle `BeagleSdk.init` assim como no exemplo abaixo:

@@ -2,7 +2,7 @@
 title: Storage
 weight: 189
 description: >-
-  Aqui você encontra informações sobre armazenamento no Beagle Flutter.
+  Nesta seção, você terá informações sobre como configurar o armazenamento no Beagle Flutter
 ---
 
 ---
