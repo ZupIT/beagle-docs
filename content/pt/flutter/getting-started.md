@@ -1,6 +1,6 @@
 ---
 title: Primeiros Passos
-weight: 4
+weight: 2
 description: >-
   Nessa seção, você vai encontrar como instalar Beagle na sua aplicação Flutter e o passo a passo inicial para usar a biblioteca Beagle num projeto Flutter.
 ---
@@ -98,7 +98,7 @@ Veja mais informações nas próximas seções:
 - [Customização]({{< ref path="/resources/customization/beagle-for-flutter/customization" lang="pt" >}}): Crie seus próprios componentes, ações e operações.
 - [Contexto global]({{< ref path="/api/context/global-context" lang="pt" >}}): Aprenda como manipular o contexto global no Beagle Flutter.
 - [Analytics]({{< ref path="/resources/analytics" lang="pt" >}}): Dê informação sobre cada ação executada, como dados de navegação.
-- [Renderizador]({{< ref path="/resources/customization/beagle-for-web/advanced-topics/renderer-api" lang="pt" >}}): Pode ser necessário interagir com o Beagle enquanto ele renderiza um componente ou executa uma ação. Este artigo mostra como usar a API de Renderização para alcançar comportamentos complexos.
+- [Renderizador]({{< ref path="/web/commons/advanced-topics/rendering" lang="pt" >}}): Pode ser necessário interagir com o Beagle enquanto ele renderiza um componente ou executa uma ação. Este artigo mostra como usar a API de Renderização para alcançar comportamentos complexos.
 
 👉 Se você quiser saber o estado atual de desenvolvimento do Beagle Flutter, confira
 [na seção de Recursos]({{< ref path="/resources/customization/beagle-for-flutter/development" lang="pt" >}}).

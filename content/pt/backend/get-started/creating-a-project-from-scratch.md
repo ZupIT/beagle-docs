@@ -237,4 +237,4 @@ Para saber mais sobre como configurar o seu ambiente frontend, veja mais em:
 
 👉Tutorial do Beagle para [**iOS**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios" lang="pt" >}}).
 
-👉Tutorial do Beagle para [**Web**]({{< ref path="/get-started/creating-a-project-from-scratch/case-web" lang="pt" >}}).
+👉Tutorial do Beagle para [**Web**]({{< ref path="/web/commons/creating-a-project-from-scratch.md" lang="pt" >}}).

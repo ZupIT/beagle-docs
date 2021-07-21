@@ -1,6 +1,6 @@
 ---
 title: Overview
-weight: 4
+weight: 1
 description: In this section, you will learn how to create a project with Flutter and configure it to use Beagle
 ---
 
@@ -21,3 +21,6 @@ In the version number, `x` refers to a version of the Beagle Web, because Beagle
 
 ## Null safety compatibility
 For now, we don't support null safety for the alpha versions. It will be available soon.
+
+👉 Ir para
+[**First steps** ]({{< ref path="/flutter/getting-started.md" lang="en" >}}) to install Beagle in your Flutter application.

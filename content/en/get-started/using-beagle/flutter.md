@@ -91,7 +91,7 @@ Check out more information in the following sections:
 - [Customization]({{< ref path="/resources/customization/beagle-for-flutter/customization" lang="en" >}}): Create your own components, actions and operations.
 - [Global Context]({{< ref path="/api/context/global-context" lang="en" >}}): Learn how to manipulate the global context in Beagle Flutter.
 - [Analytics]({{< ref path="/resources/analytics" lang="en" >}}): It gives information of every action executed, such as navigation data.
-- [Renderer]({{< ref path="/resources/customization/beagle-for-web/advanced-topics/renderer-api" lang="en" >}}): It might be necessary to interact with Beagle while rendering a component or executing an action. This article shows how to use the Renderer API to achieve complex behaviors.
+- [Renderer]({{< ref path="/web/commons/advanced-topics/rendering" lang="en" >}}): It might be necessary to interact with Beagle while rendering a component or executing an action. This article shows how to use the Renderer API to achieve complex behaviors.
 
 👉 If you want to know the current development status of Beagle Flutter, check it
 [in the Resources section]({{< ref path="/resources/customization/beagle-for-flutter/development" lang="en" >}}).
