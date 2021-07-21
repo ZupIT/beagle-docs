@@ -1,5 +1,5 @@
 ---
-title: WEB
+title: Styling
 weight: 206
 description: "Here, you'll find how to make components' stylization on web's projects."
 ---

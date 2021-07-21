@@ -1,5 +1,5 @@
 ---
-title: React Native
+title: Instalação
 weight: 12
 description: >-
   Aqui você encontra informações sobre como instalar o Beagle React Native na sua aplicação 
@@ -16,7 +16,7 @@ desenvolvimento está incompleto e ainda precisamos implementar algumas features
 versão final. Infelizmente, nosso time não é grande o suficiente para fazer do React Native uma
 prioridade e, por conta disso, o desenvolvimento é relativamente lento. Nós decidimos lançar versões
 betas, pois dessa maneira a comunidade pode começar a usar a biblioteca e até nos ajudar a
-finalizá-la. [Aqui]({{< ref path="/resources/customization/beagle-for-react-native/development" lang="pt" >}})
+finalizá-la. [Aqui]({{< ref path="./customization/development" lang="pt" >}})
 você pode encontrar uma lista com tudo que deveria estar funcionando e o que ainda falta
 implementar. Qualquer ajuda é bem-vinda!
 
@@ -46,7 +46,7 @@ npm install @zup-it/beagle-react-native
 
 {{% alert color="success" %}}
 Parabéns! A biblioteca está instalada. Continue em:
-[**como usar o Beagle React Native.**]({{< ref path="/get-started/using-beagle/react-native" lang="pt" >}})
+[**como usar o Beagle React Native.**]({{< ref path="./react-native-using" lang="pt" >}})
 {{% /alert %}}
 
 ## **Próximos passos**
@@ -55,5 +55,5 @@ Nesta seção você fez a **instalação inicial** do Beagle na sua aplicação!
 Para continuar configurando o Beagle:
 
 👉 Leia em seguida
-[**configuração incicial** ]({{< ref path="/get-started/using-beagle/react-native" lang="pt" >}})
+[**configuração incicial** ]({{< ref path="./react-native-using" lang="pt" >}})
 para habilitar o Beagle no seu projeto React Native.

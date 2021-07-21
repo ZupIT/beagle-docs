@@ -1,5 +1,5 @@
 ---
-title: WEB
+title: Estilização
 weight: 208
 description: >-
   Nesta seção, você encontra tudo sobre como usar a estilização de componentes

@@ -1,5 +1,5 @@
 ---
-title: Using Beagle Angular
+title: How to use
 weight: 23
 description: >-
   This section shows the walkthrough to use the Beagle library in an Angular project.
