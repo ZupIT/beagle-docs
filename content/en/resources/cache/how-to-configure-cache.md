@@ -58,7 +58,7 @@ We listed below, see:
 {{% tab name="Android" %}}
 In Android, the cache is configured when you implement the first Beagle's configuration. 
 
-This implementation happens inside the class named [**AppBeagleConfig**]({{< ref path="/get-started/using-beagle/android" lang="en" >}}), meaning that it is inside the Beagle's configuration class. 
+This implementation happens inside the class named [**AppBeagleConfig**]({{< ref path="/android/getting-started" lang="en" >}}), meaning that it is inside the Beagle's configuration class. 
 
 The  cache is a Beagle's internal class where you can define 3 properties, represented by the attributes below:
 
@@ -131,7 +131,7 @@ public protocol CacheManagerProtocol {
 {{% /tab %}}
 
 {{% tab name="Backend" %}}
-In the backend this functionality is only supported if you use the [**started library**]({{< ref path="/get-started/installing-beagle/backend#Step 3: Include starter dependency" lang="en" >}})
+In the backend this functionality is only supported if you use the [**started library**]({{< ref path="/backend/get-started/creating-a-project-from-scratch#Step 3: Include starter dependency" lang="en" >}})
 
 The cache was created to optimize the response of a request in terms of size and BFF's time, when the return is the same as the previous one. The input in this cache last until the server is redeployed or the client installed again. 
 

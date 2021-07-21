@@ -230,7 +230,7 @@ In order to use the backend service, you must have the front end prepared for Be
 
 To learn more about configuring your frontend environment, check out more:
 
-👉 Beagle implementation tutorial for [**Android**]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/" lang="en" >}}).
+👉 Beagle implementation tutorial for [**Android**]({{< ref path="/android/getting-started" lang="en" >}}).
 
 👉Beagle implementation tutorial for [**iOS**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios" lang="en" >}}).
 
