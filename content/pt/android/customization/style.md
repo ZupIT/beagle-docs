@@ -1,5 +1,5 @@
 ---
-title: Android
+title: Style
 weight: 204
 description: >-
   Nesta seção, você encontra tudo sobre como usar a estilização de componentes
