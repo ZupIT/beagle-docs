@@ -274,7 +274,7 @@ This tutorial focused in a simple screen configuration, so you could understand 
 
 Before you use Beagle, stay tuned about: the **release build configuration and ProGuard.**
 
-Even though it's not necessary at this moment, it's good to have in mind that you'll have to [**configure the ProGuard**]({{< ref path="/resources/customization/beagle-for-android/proguard-configuration" lang="en" >}}) to activate the obfuscate code when you publish releases.
+Even though it's not necessary at this moment, it's good to have in mind that you'll have to [**configure the ProGuard**]({{< ref path="/android/customization/proguard-configuration" lang="en" >}}) to activate the obfuscate code when you publish releases.
 
 {{% alert color="info" %}}
 The annotated classes like `BeagleComponent` and `RegisterValidator` can't implement parameters in your constructors because, on Beagle, these constructors must be empty.

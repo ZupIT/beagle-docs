@@ -9,7 +9,7 @@ description: "You will find here how to configure a backend with Beagle."
 {{% alert color="danger" %}}
 Before you get started, the steps below are for JVM languages.
 
-For other languages, your server needs to serve JSON following Beagle's API. Also, check out the [**cache**]({{< ref path="/resources/cache/" lang="en" >}}) and [**platform specification**]({{< ref path="/resources/components/platform-sorting" lang="en" >}}) mechanisms, you may want to implement because the clients already support them.
+For other languages, your server needs to serve JSON following Beagle's API. Also, check out the **cache** and mechanisms, you may want to implement because the clients already support them.
 {{% /alert %}}
 
 ## Requirements
@@ -28,7 +28,7 @@ If you already have updated all the programs above, then just go to the followin
 When you create a microservice, it's recommended to use your team's established mechanisms. If that's not your case, just follow the configuration steps below.
 
 {{% alert color="warning" %}}
-If your team works with microservices using other frameworks like Spring or Micronaut, check out [**Beagle Framework page**]({{< ref path="/resources/customization/beagle-for-backend/beagle-framework" lang="en" >}}) instead.
+If your team works with microservices using other frameworks like Spring or Micronaut, check out **Beagle Framework page** instead.
 {{% /alert %}}
 
 For a simple setup, you can choose between 2 frameworks to create your [**BFF**]({{< ref path="/key-concepts#backend-for-frontend" lang="en" >}}):

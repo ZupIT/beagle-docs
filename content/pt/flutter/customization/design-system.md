@@ -8,7 +8,7 @@ description: >-
 ---
 
 ## Por que usar um Design System?
-Para usar imagens e textos e botões com estilo, você precisa prover uma implementação de Design System para o Beagle Flutter. Você pode usá-lo em qualquer widget padrão. para aprender mais sobre como usar a biblioteca de componentes padrões, veja a [página de configuração]({{< ref path="/resources/customization/beagle-for-flutter/configuration" lang="pt" >}}).
+Para usar imagens e textos e botões com estilo, você precisa prover uma implementação de Design System para o Beagle Flutter. Você pode usá-lo em qualquer widget padrão. para aprender mais sobre como usar a biblioteca de componentes padrões, veja a [página de configuração]({{< ref path="/flutter/customization/configuration" lang="pt" >}}).
 
 ## Como configurar Design System?
 É simples criar seu próprio Sistema de Design. Você só precisa:

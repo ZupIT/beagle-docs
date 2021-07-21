@@ -9,7 +9,7 @@ description: "You will find here how to configure a backend with Beagle."
 {{% alert color="danger" %}}
 Before you get started, you must know that the steps below are for JVM languages.
 
-For other languages, your server needs to serve JSON following our API. Also, check out our [**cache**]({{< ref path="/resources/cache/" lang="en" >}}) and [**platform specification**]({{< ref path="/resources/components/platform-sorting" lang="en" >}}) mechanisms, which you may wish to implement as the clients already support them.
+
 {{% /alert %}}
 
 ## Requirements
@@ -28,7 +28,7 @@ If you already have updated all the programs above, then just go to the followin
 When you create a micro-service, it's recommend to use your team's established mechanisms. If that's not your case, you can just follow the configurations below.
 
 {{% alert color="warning" %}}
-If your team works with micro-services using a framework other than Spring or Micronaut, see [**Beagle Framework**]({{< ref path="/resources/customization/beagle-for-backend/beagle-framework" lang="en" >}}) instead.
+If your team works with micro-services using a framework other than Spring or Micronaut, see 
 {{% /alert %}}
 
 For a simple setup, you can choose between 2 frameworks to create your [**BFF**]({{< ref path="/key-concepts#backend-for-frontend" lang="en" >}}):
@@ -194,13 +194,11 @@ The annotation`@EnableWebMvc`causes the same problem, which means that you shoul
 Well done, your initial configuration is ready to be used!
 {{% /alert %}}
 
-You can see more of [**how to use Beagle on the backend**]({{< ref path="/get-started/using-beagle/backend" lang="en" >}}) or how to test a BFF with server-driven components.
+
 
 ## **Next Steps**
 
 On this section, you made Beagle's **initial installation** on your application!  
 Now, to keep configuring Beagle:
 
-👉Go to [**initial configurations**]({{< ref path="/get-started/using-beagle/backend" lang="en" >}}) to enable the use of Beagle on your Web project.
 
-👉 If you want to go straight to practice, access our [**tutorial to create a projeto from zero**.]({{< ref path="/get-started/creating-a-project-from-scratch/case-backend" lang="en" >}})

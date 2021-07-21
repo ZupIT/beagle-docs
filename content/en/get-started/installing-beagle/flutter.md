@@ -12,7 +12,7 @@ This is the library responsible for rendering a Beagle JSON (payload) in Flutter
 
 {{% alert color="info" %}}
 This is still in an alpha stage, a work in progress, and Beagle's team wants your help to make improvements to the API and to implement missing features. Check out
-[more information]({{< ref path="/resources/customization/beagle-for-flutter/development" lang="en" >}}) and the current state of development.
+more information and the current state of development.
 {{% /alert %}}
 
 ## Versioning
@@ -34,7 +34,7 @@ of the default components;
 4. In your IDE (Android Studio or Visual Studio Code), click `pub get`. Or, from the terminal, type `flutter pub get`.
 
 {{% alert color="success" %}}
-Well done! The library was installed. Continue the configuration in the section [**how to use Beagle on Flutter.**]({{< ref path="/get-started/using-beagle/flutter" lang="en" >}})
+Well done! The library was installed. Continue the configuration in the section **how to use Beagle on Flutter.**
 {{% /alert %}}
 
 ## **Next Steps**
@@ -43,5 +43,5 @@ In this section, you made Beagle's **initial installation** in your application!
 Now, keep configuring Beagle:
 
 👉 Go to
-[**initial configurations** ]({{< ref path="/get-started/using-beagle/flutter" lang="en" >}})
+**initial configurations** 
 to enable the use of Beagle on your Flutter project.

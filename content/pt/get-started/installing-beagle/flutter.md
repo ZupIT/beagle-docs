@@ -12,7 +12,7 @@ Esta é a bibilioteca responsável por renderizar um JSON do Beagle em Flutter.
 
 {{% alert color="info" %}}
 Está em estágio alpha, trabalho em andamento, e o time do Beagle quer sua ajuda para fazer melhorias para a API e implementar as funcionalidades que faltam. Confira 
-[mais informações]({{< ref path="/resources/customization/beagle-for-flutter/development" lang="pt" >}}) e o atual estado de desenvolvimento.
+[mais informações]({{< ref path="/flutter/customization/development" lang="pt" >}}) e o atual estado de desenvolvimento.
 {{% /alert %}}
 
 ## Versionamento

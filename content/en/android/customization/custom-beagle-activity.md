@@ -110,7 +110,7 @@ override fun getToolbar(): Toolbar = findViewById<Toolbar>(R.id.toolbar)
 
 You can watch the state and treat the errors from **`onServerDrivenContainerStateChanged()`**
 
-You can observe a server-driven activity status and handle errors using the function [`onServerDrivenContainerStateChanged()`]({{< ref path="/resources/customization/beagle-for-android/loading-and-errors-treatment" lang="pt" >}}). This function has as parameter that indicates the status of a server-driven activity, and when any error occurs, the state `ServerDrivenState.Error` will be received at this function.
+You can observe a server-driven activity status and handle errors using the function [`onServerDrivenContainerStateChanged()`]({{< ref path="/android/customization/loading-and-errors-treatment" lang="pt" >}}). This function has as parameter that indicates the status of a server-driven activity, and when any error occurs, the state `ServerDrivenState.Error` will be received at this function.
 
 ```kotlin
 override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {

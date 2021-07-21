@@ -168,7 +168,7 @@ Valida a customização que será realizada quando o widget **Form** for utiliza
 
 ## DeepLinkHandler
 
-Este handler é usado para uma ação de [**deep link navigation**]({{< ref path="/resources/customization/beagle-for-android/deep-link-handler" lang="pt" >}}). A variável possui um valor default, você pode adicionar novas telas ou substituir por outras na aplicação.
+Este handler é usado para uma ação de [**deep link navigation**]({{< ref path="/android/customization/deep-link-handler.md" lang="pt" >}}). A variável possui um valor default, você pode adicionar novas telas ou substituir por outras na aplicação.
 
 Abaixo, você encontra um comando de como adicionar uma tela com um possível roteamento para deep linking usando um valor default:
 

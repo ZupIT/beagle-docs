@@ -11,7 +11,7 @@ description: >-
 {{% alert color="danger" %}}
 Antes de iniciar a instalação, é importante você saber que as etapas abaixo são para linguagens da JVM.
 
-Para outras linguagens, seu servidor precisa servir o JSON seguindo nossa API. Dê uma olhada também na nossa implementação de [**cache**]({{< ref path="/resources/cache/" lang="pt" >}}) e em [**mecanismos específicos de cada linguagem**]({{< ref path="/resources/components/platform-sorting" lang="pt" >}})
+Para outras linguagens, seu servidor precisa servir o JSON seguindo nossa API. Dê uma olhada também na nossa implementação de **cache** e em **mecanismos específicos de cada linguagem**
 {{% /alert %}}
 
 ## Requisitos
@@ -30,7 +30,7 @@ Se você já tiver atualizado todos estes programas, basta seguir as instruçõe
 No momento de criar o microsserviço, recomendamos que você utilize os mesmos mecanismos estabelecidos. Caso este não seja o seu caso, então basta seguir as configurações abaixo.
 
 {{% alert color="warning" %}}
-Se o seu time trabalha com microsserviços usando outros frameworks, acesse o [**framework do Beagle**]({{< ref path="/resources/customization/beagle-for-backend/beagle-framework" lang="pt" >}}).  
+Se o seu time trabalha com microsserviços usando outros frameworks, acesse o **framework do Beagle**  
 {{% /alert %}}
 
 Para uma configuração simples, você pode escolher entre **2 modelos de frameworks** para criar seu BFF:
@@ -208,6 +208,6 @@ Você pode conferir um **exemplo prático** de [**como testar o Beagle no Backen
 Nesta seção, você fez a **instalação inicial** do Beagle na sua aplicação!  
 Para continuar a configurar o Beagle:
 
-👉Vá para as [**configurações iniciais**]({{< ref path="/get-started/using-beagle/backend" lang="pt" >}}) para habilitar uso do Beagle no seu projeto Backend
+👉Vá para as **configurações iniciais** para habilitar uso do Beagle no seu projeto Backend
 
-👉 Se quiser ir direto para prática, acesse nosso [**tutorial para criar um projeto do zero**]({{< ref path="/get-started/creating-a-project-from-scratch/case-backend" lang="pt" >}})
+👉 Se quiser ir direto para prática, acesse nosso **tutorial para criar um projeto do zero**

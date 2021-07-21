@@ -10,7 +10,7 @@ This is the library responsible for rendering a Beagle JSON (payload) in Flutter
 
 {{% alert color="info" %}}
 This is still in an alpha stage, a work in progress, and Beagle's team wants your help to make improvements to the API and to implement missing features. Check out
-[more information]({{< ref path="/resources/customization/beagle-for-flutter/development" lang="en" >}}) and the current state of development.
+[more information]({{< ref path="/flutter/customization/development" lang="en" >}}) and the current state of development.
 {{% /alert %}}
 
 ## Versioning
