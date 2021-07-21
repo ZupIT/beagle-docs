@@ -16,7 +16,7 @@ Siga os passos para instalar:
 4. Na sua IDE (Android Studio ou Visual Studio Code), clique em `pub get`. Ou a partir do terminal, escreva `flutter pub get`.
 
 {{% alert color="success" %}}
-Muito bem! A biblioteca está istalada. Continue a configuração na seção [**como usar Beagle no Flutter.**]({{< ref path="/get-started/using-beagle/flutter" lang="pt" >}})
+Muito bem! A biblioteca está istalada. Continue a configuração na seção [**como usar Beagle no Flutter.**]({{< ref path="/flutter/getting-started" lang="pt" >}})
 {{% /alert %}}
 
 # **Configurações iniciais**

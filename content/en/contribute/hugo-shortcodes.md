@@ -26,7 +26,7 @@ The best way to make references to **_internal_** links in the documentation is 
 
 - It will be rendered as:
 
-[Link Example]({{< ref path="/get-started/installing-beagle/backend.md" lang="en">}})
+[Link Example]({{< ref path="/backend/get-started/creating-a-project-from-scratch" lang="en">}})
 
 > To learn more about ref, [click here](https://gohugo.io/content-management/cross-references/)
 

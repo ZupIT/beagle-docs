@@ -135,7 +135,7 @@ On the GIF below, you can see better how to remove these references:
 
 ![](/shared/main%20%282%29.gif)
 
-Well done, now Beagle is configured for your iOS application! All you have to do is [**set up a backend**]({{< ref path="/get-started/creating-a-project-from-scratch/case-backend" lang="en" >}}) to answer to your server-driven application requests.
+Well done, now Beagle is configured for your iOS application! All you have to do is [**set up a backend**]({{< ref path="/backend/get-started/creating-a-project-from-scratch" lang="en" >}}) to answer to your server-driven application requests.
 
 Once you finished the configuration, start your application and you'll have your first server-driven screen!  
 You will see this screen: 
