@@ -58,7 +58,7 @@ export class AppModule { }
 
 Now, you need to create a JSON file that will define the components that will be rendered.
 
-For a better experience you could create your JSON outputsthrough a BFF. You will find how to configure a BFF [**here**]({{<ref path = "/get-started/installing-beagle/backend" lang = "pt">}}). This example uses a JSON that is available in the URL http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/welcome:
+For a better experience you could create your JSON outputsthrough a BFF. You will find how to configure a BFF [**here**]({{<ref path = "/backend/get-started/creating-a-project-from-scratch" lang = "pt">}}). This example uses a JSON that is available in the URL http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/welcome:
 
 {{%alert color="info"%}}
 JSON used as example.
@@ -97,7 +97,7 @@ The code above creates a JSON with two for the components `container` and `text`
 After creating your JSON, open the file `beagle.module.ts` generated in the previous step, and enter the remote JSON path as http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/ in the baseUrl
 
 {{% alert color="info" %}}
-If you want to use your own BFF, it's necessary to have its configured CORS. **See how to do this on** [**use configurations for backend**.]({{< ref path="/get-started/using-beagle/backend#cors" lang="en" >}})
+If you want to use your own BFF, it's necessary to have its configured CORS. **See how to do this on** [**use configurations for backend**.]({{< ref path="/backend/get-started/creating-a-project-from-scratch" lang="en" >}})
 {{% /alert %}}
 
 ```text

@@ -17,7 +17,7 @@ of the default components;
 4. In your IDE (Android Studio or Visual Studio Code), click `pub get`. Or, from the terminal, type `flutter pub get`.
 
 {{% alert color="success" %}}
-Well done! The library was installed. Continue the configuration in the section [**how to use Beagle on Flutter.**]({{< ref path="/get-started/using-beagle/flutter" lang="en" >}})
+Well done! The library was installed. Continue the configuration in the section [**how to use Beagle on Flutter.**]({{< ref path="/flutter/getting-started" lang="en" >}})
 {{% /alert %}}
 
 # **Starting configuration**

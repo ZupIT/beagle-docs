@@ -233,7 +233,7 @@ Para que o serviço de backend seja consumido, você deve ter o front-end prepar
 
 Para saber mais sobre como configurar o seu ambiente frontend, veja mais em:
 
-👉 Tutorial do Beagle para [**Android**]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/" lang="pt" >}}).
+👉 Tutorial do Beagle para [**Android**]({{< ref path="/android/getting-started" lang="pt" >}}).
 
 👉Tutorial do Beagle para [**iOS**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios" lang="pt" >}}).
 

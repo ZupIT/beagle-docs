@@ -104,4 +104,4 @@ The `HttpClientDefault` implementation can be found at Beagle-Default lib.
 
 ##### For more on Beagle: Please check our [Beagle](https://github.com/ZupIT/beagle) repository.
 
-##### For more on Beagle-Defaults: Please check our [Beagle-Default]({{< ref path="/get-started/using-beagle-helpers/android/beagle-defaults" lang="en" >}}) documentation.
+##### For more on Beagle-Defaults: Please check our [Beagle-Default]({{< ref path="/android/libs/beagle-defaults" lang="en" >}}) documentation.
