@@ -1,5 +1,5 @@
 ---
-title: React Native
+title: Usando o Beagle React Native
 weight: 28
 description: >-
   Esta seção mostra como usar o Beagle em projetos React Native
@@ -61,10 +61,10 @@ Parabéns! Você criou sua primeira tela com o Beagle!
 
 ## Outras consigurações
 
-- [Cache]({{< ref path="/resources/customization/beagle-for-react-native/cache" lang="pt" >}})
-- [WebView]({{< ref path="/resources/customization/beagle-for-react-native/web-view" lang="pt" >}})
-- [Acessando o localhost]({{< ref path="/resources/customization/beagle-for-react-native/localhost" lang="pt" >}})
-- [Imagens locais]({{< ref path="/resources/customization/beagle-for-react-native/local-images" lang="pt" >}})
+- [Cache]({{< ref path="./customization/cache" lang="pt" >}})
+- [WebView]({{< ref path="./customization/web-view" lang="pt" >}})
+- [Acessando o localhost]({{< ref path="./customization/localhost" lang="pt" >}})
+- [Imagens locais]({{< ref path="./customization/local-images" lang="pt" >}})
 
 👉 Para mais detalhes em como usar a configuração do Beagle e o componente BeagleRemoteView, por
 favor, leia o [guia para React]({{< ref path="/web/react/using-beagle" lang="pt" >}}),
@@ -73,10 +73,10 @@ funciona da mesma maneira!
 👉 O Beagle React Native ainda é Beagle Web! Tudo nesta documentação para Beagle Web também é válido
 para o Beagle React Native. Para obter um conhecimento mais profundo da lib, sugerimos a leitura
 dos artigos em
-[recursos > customização > Beagle para React Native]({{< ref path="/resources/customization/beagle-for-react-native" lang="pt" >}})
+[customização para Beagle React Native]({{< ref path="./customization/_index.md" lang="pt" >}})
 assim como
-[recursos > customização > Beagle para Web]({{< ref path="/web/commons" lang="pt" >}})
+[customização para Beagle Web]({{< ref path="/web/commons" lang="pt" >}})
 
 👉 Se você deseja saber do estado atual de desenvolvimento do Beagle RN, veja
-[aqui]({{< ref path="/resources/customization/beagle-for-react-native/development" lang="pt" >}}).
+[aqui]({{< ref path="./customization/development" lang="pt" >}}).
 a lista de recursos já implementados e o que ainda falta fazer. Contribuições são bem vindas!
