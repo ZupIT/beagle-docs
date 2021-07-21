@@ -1,6 +1,6 @@
 ---
 title: Image Downloader
-weight: 189
+weight: 3
 description: >-
   In this section, you will information on how to use and configure the Image Downloader in Beagle Flutter.
 ---

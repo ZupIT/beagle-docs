@@ -1,6 +1,6 @@
 ---
 title: Storage
-weight: 189
+weight: 3
 description: >-
    In this section, you will find information on how to configure the storage in Beagle Flutter.
 ---

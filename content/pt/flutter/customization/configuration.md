@@ -1,6 +1,6 @@
 ---
 title: Configuração
-weight: 1
+weight: 2
 description: Nessa seção, você encontrará informações sobre como configurar o Beagle Flutter.
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Logger
-weight: 189
+weight: 3
 description: >-
   Nesta seção, você encontra informações sobre como usar o Logger no Beagle Flutter.
 ---

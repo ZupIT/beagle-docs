@@ -1,6 +1,6 @@
 ---
 title: Acessando o localhost
-weight: 4
+weight: 3
 description: >-
   Nesta seção, você encontrará informações sobre como consultar o host local no Beagle Flutter.
 ---

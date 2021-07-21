@@ -1,6 +1,6 @@
 ---
 title: Storage
-weight: 189
+weight: 3
 description: >-
   Nesta seção, você terá informações sobre como configurar o armazenamento no Beagle Flutter
 ---

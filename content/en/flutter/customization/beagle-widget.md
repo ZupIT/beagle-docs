@@ -1,6 +1,6 @@
 ---
 title: BeagleWidget
-weight: 2
+weight: 3
 description: >-
   In this section, you will find information on how to use BeagleWidget in Beagle Flutter.
 ---

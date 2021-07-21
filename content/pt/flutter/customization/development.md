@@ -1,6 +1,6 @@
 ---
 title: Desenvolvimento
-weight: 5
+weight: 3
 description: >-
   Nesta seção, você encontrará informações sobre como está o desenvolvimento do Beagle Flutter.
 ---

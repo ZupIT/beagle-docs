@@ -1,6 +1,6 @@
 ---
 title: Cliente HTTP
-weight: 189
+weight: 3
 description: >-
   Nesta seção, você terá informações sobre como configurar e usar o cliente HTTP no Beagle Flutter.
 ---

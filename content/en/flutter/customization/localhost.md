@@ -1,6 +1,6 @@
 ---
 title: Accessing the localhost
-weight: 4
+weight: 3
 description: >-
   In this section, you will find information on how to refer to the localhost on Beagle Flutter.
 ---

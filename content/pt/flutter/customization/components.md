@@ -1,6 +1,6 @@
 ---
 title: Componentes Customizados
-weight: 2
+weight: 3
 description: >-
   Nessa seção você encontrará informações sobre como criar e usar seus próprios componentes no Beagle Flutter.
 ---
