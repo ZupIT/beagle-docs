@@ -1,6 +1,6 @@
 ---
 title: Beagle Scaffold
-weight: 16
+weight: 1
 description: 'Here you will find the **Beagle-Scaffold** library to help you start a project using Beagle in Android.
 This lib will hold almost all necessary configuration to add Beagle into an Android project.'
 ---
