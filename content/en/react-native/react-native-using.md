@@ -1,5 +1,5 @@
 ---
-title: React Native
+title: How to use
 weight: 28
 description: >-
   This section shows the initial walkthrough to use the Beagle library in React Native projects.
@@ -65,10 +65,10 @@ Congrats, you have finished your first Beagle Screen!
 
 ## Other configurations
 
-- [Cache]({{< ref path="/resources/customization/beagle-for-react-native/cache" lang="en" >}})
-- [WebView]({{< ref path="/resources/customization/beagle-for-react-native/web-view" lang="en" >}})
-- [Accessing the localhost]({{< ref path="/resources/customization/beagle-for-react-native/localhost" lang="en" >}})
-- [Local images]({{< ref path="/resources/customization/beagle-for-react-native/local-images" lang="en" >}})
+- [Cache]({{< ref path="./customization/cache.md" lang="en" >}})
+- [WebView]({{< ref path="./customization/web-view.md" lang="en" >}})
+- [Accessing the localhost]({{< ref path="./customization/localhost.md" lang="en" >}})
+- [Local images]({{< ref path="./customization/local-images.md" lang="en" >}})
 
 👉 For more details on how to use the Beagle Config and the component BeagleRemoteView, please,
 check the [React guide]({{< ref path="/web/react/using-beagle" lang="en" >}}), it works
@@ -76,10 +76,10 @@ exactly the same!
 
 👉 Beagle React Native is still Beagle Web! Everything in this documentation for Beagle Web is also
 valid for Beagle React Native. To go deeper into the lib, we suggest reading the articles under
-[resources > customization > Beagle for React Native]({{< ref path="/resources/customization/beagle-for-react-native" lang="en" >}})
+[Beagle for React Native]({{< ref path="./customization/_index.md" lang="en" >}})
 as well as
-[resources > customization > Beagle for Web]({{< ref path="/web/commons" lang="en" >}})
+[Beagle for Web]({{< ref path="/web/commons" lang="en" >}})
 
 👉 If you wish to know the current development status of Beagle React Native, check it
-[here]({{< ref path="/resources/customization/beagle-for-react-native/development" lang="en" >}}).
+[here]({{< ref path="./customization/development" lang="en" >}}).
 Contributions are welcomed!
