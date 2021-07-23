@@ -97,7 +97,7 @@ Temos que criar a parte de inicialização e decodificação do componente, tem 
 
 **Sourcery:**
 
-Para usar o `Sourcery` pode encontrar nesse [**link**]({{< ref path="/resources/customization/beagle-for-ios/sourcery" lang="pt" >}})
+Para usar o `Sourcery` pode encontrar nesse [**link**]({{< ref path="/ios/customization/sourcery" lang="pt" >}})
 
 **Manual:**
 
@@ -226,7 +226,7 @@ struct BoxWidget: Widget {
 É obrigatório **registrá-lo no Beagle.** Dentro do arquivo de configuração do beagle utilize o `dependencies` para registar. 
 
 {{% alert color="info" %}}
-Para saber mais sobre o dependencies. [**Beagle Dependencies**]({{< ref path="/resources/customization/beagle-for-ios/beagles-dependencies" lang="pt" >}}).
+Para saber mais sobre o dependencies. [**Beagle Dependencies**]({{< ref path="/ios/customization/beagles-dependencies" lang="pt" >}}).
 {{% /alert %}}
 
 O método `register` possui dois construtores, o primeiro passando apenas o `component` e segundo recebendo o `component` e `named`.

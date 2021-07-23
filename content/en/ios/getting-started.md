@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-weight: 120
+weight: 2
 description: In this section, you'll learn how to create an iOS project with Beagle
 ---
 
@@ -218,13 +218,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 You can implement these layers using these tutorials:
 
-[**Custom Network Layer**]({{< ref path="/resources/customization/beagle-for-ios/network-layer" lang="en" >}})
+[**Custom Network Layer**]({{< ref path="/ios/customization/network-layer" lang="en" >}})
 <br>
 
 [**Custom Cache Manager**]({{< ref path="/resources/cache/how-to-configure-cache" lang="en" >}})
 <br>
 
-[**Custom Log System**]({{< ref path="/resources/customization/beagle-for-ios/log-system" lang="en" >}})
+[**Custom Log System**]({{< ref path="/ios/customization/log-system" lang="en" >}})
 
 <br>
 
