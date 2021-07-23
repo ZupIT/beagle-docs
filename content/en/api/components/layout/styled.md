@@ -1,6 +1,6 @@
 ---
 title: Styled
-weight: 338
+weight: 150
 description: You will find here the description of the Styled function and its attributes details
 ---
 

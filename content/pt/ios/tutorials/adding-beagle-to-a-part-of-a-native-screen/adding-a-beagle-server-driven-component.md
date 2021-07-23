@@ -20,10 +20,10 @@ No exemplo abaixo, vamos exibir um botão server-driven em uma tela nativa. O re
 
 Para que essa configuração funcione corretamente, você precisa de:
 
-- Um [**BFF**]({{< ref path="/key-concepts#backend-for-frontend" lang="pt" >}}) configurado com o Beagle. Caso não o tenha, veja como configurar nesse [**tutorial**]({{< ref path="/get-started/creating-a-project-from-scratch/case-backend" lang="pt" >}}).
+- Um [**BFF**]({{< ref path="/key-concepts#backend-for-frontend" lang="pt" >}}) configurado com o Beagle. Caso não o tenha, veja como configurar nesse [**tutorial**]({{< ref path="/backend/get-started/creating-a-project-from-scratch" lang="pt" >}}).
 - Um frontend configurado com o Beagle para Android ou iOS. Caso não o tenha, siga um dos tutoriais de acordo com sistema operacional:
-  - [**Android**]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/" lang="pt" >}})
-  - [**iOS**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios/" lang="pt" >}})
+  - [**Android**]({{< ref path="/android/getting-started" lang="pt" >}})
+  - [**iOS**]({{< ref path="/ios/getting-started" lang="pt" >}})
 
 ## Passo 1: Criar o componente no backend
 

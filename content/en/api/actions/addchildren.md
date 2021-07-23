@@ -1,6 +1,6 @@
 ---
 title: AddChildren
-weight: 232
+weight: 90
 description: You will find here AddChildren definition and its attributes details
 ---
 

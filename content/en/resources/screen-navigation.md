@@ -18,7 +18,7 @@ After these configurations, just add the example code as a return of your servic
 
 Some navigation actions needs a parameter. It is possible to receive two route type:
 
-1. **Local:** intern navigation that expects a new [**screen**]({{< ref path="/api/screen/" lang="en" >}}).
+1. **Local:** intern navigation that expects a new [**screen**]({{< ref path="/api/components/layout/screen/" lang="en" >}}).
 2. **Remote:** expects that the `url` points into an API that will return one of more Beagle's components.
 
 On the example below, see a case where the `route` is `remote`:

@@ -16,7 +16,7 @@ A diminuição dos elementos é feita de uma forma que o tamanho total de todos 
 
 Com o Shrink, o elemento recebe um valor double, que irá diminuir o elemento de acordo com espaço do container. Veja no exemplo:
 
-![](https://lh5.googleusercontent.com/30mBYNqNtZf0Lp1Zw4dr8dkZW5PsOtxqHtqkgbPLZNbU6g8xFs0QmGh5ip66WlU5cHSqtdBWduGuwrLGyGp2uYkkAw6GLXpaf-ZRNORNJywill9WCTZIlRAva9_s5G30MJCh-rOS)
+{{< figure src="/shared/flex/shrink.png" width="150">}} 
 
 {{< tabs id="T67" >}}
 {{% tab name="Kotlin" %}}

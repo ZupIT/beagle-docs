@@ -23,7 +23,7 @@ Você deve seguir tal como o comando abaixo:
 {{% alert color="warning" %}}
 Certifique-se de listar a sua Beagle Activity assim como nomeada em seu AndroidManifest.
 
-No exemplo abaixo a chamamos somente de &lt;BeagleActivity&gt;. Esse nome é você quem define ao criar sua BeagleActivity. Em nosso tutorial [**Criando um projeto do zero** ]({{< ref path="/get-started/creating-a-project-from-scratch/case-android" lang="pt" >}}), chamamos ela de `AppBeagleActivity`
+No exemplo abaixo a chamamos somente de &lt;BeagleActivity&gt;. Esse nome é você quem define ao criar sua BeagleActivity. Em nosso tutorial [**Criando um projeto do zero** ]({{< ref path="/android/getting-started" lang="pt" >}}), chamamos ela de `AppBeagleActivity`
 {{% /alert %}}
 
 ```kotlin
@@ -94,7 +94,7 @@ Para definir onde você quer mostrar uma tela server-driven no Angular, você de
 {{% alert color="info" %}}
 Este componente tem outros atributos que podem ser configurados. No entanto nessa implementação você utilizará somente o atributo path, descrito no exemplo abaixo.
 
-Para mais detalhes sobre esse componente clique no link a seguir e verifique os detalhes do [**Remote View**]({{< ref path="/resources/customization/beagle-for-web/remote-view-parameters" lang="pt" >}})
+Para mais detalhes sobre esse componente clique no link a seguir e verifique os detalhes do [**Remote View**]({{< ref path="/web/commons/remote-view-parameters" lang="pt" >}})
 {{% /alert %}}
 
 No arquivo html do seu componente, adicione o `remote view`.

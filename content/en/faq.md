@@ -92,9 +92,9 @@ Yes! As a cross-platform framework, Beagle helps you on developing application o
 
 You can see more how to create Beagle's projects with each of these platforms on: 
 
-* [**Beagle for Android**]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/" lang="en" >}})
+* [**Beagle for Android**]({{< ref path="/android/getting-started" lang="en" >}})
 * [**Beagle for iOS**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios/" lang="en" >}})
-* [**Beagle for Web**]({{< ref path="/get-started/creating-a-project-from-scratch/case-web" lang="en" >}})
+* [**Beagle for Web**]({{< ref path="/web/commons/creating-a-project-from-scratch" lang="en" >}})
 
 ## How to make unitary and instrumented tests on server-driven screens?
 
@@ -109,3 +109,11 @@ Unitary tests has the goal to gauge the code's functionality in a minor fraction
 Instrumented tests are done in applications using Beagle in the same way as in applications that don't use our tool.
 
 However, it's important to reinforce that, usually, a server-driven component may not contain an ID that mostly identifies an instrumented test. Thinking of it, we add a `WIDGET` element \(that refers a component\) and an `ID attribute` so it can be possible to programatically identify it.
+
+### How does Beagle versioning work?
+
+Beagle's version follows the [semantic versioning](https://semver.org/) standard.
+
+Between platforms, the last number (**patch**) tends to diverge, as some bugs only occur on a certain platform. So, the following example is normal and expected: having version `1.0.0` in the backend with `1.0.2` in Android, `1.0.0` in iOS, and `1.0.3` in web React.
+
+The *documentation* only has versions with numbers up to the **minor**, for example: `1.2`. However, some definitions from previous minor versions may still be present, even if they are not valid anymore. If that's the case, we will try to inform those definitions specific versions.

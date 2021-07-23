@@ -15,7 +15,7 @@ On this section, you'll see two specific ones:
 
 ## Set Id
 
-The method Set Id is used when you need to set an Id on a [**widget**]({{< ref path="/api/widget" lang="en" >}}) provided by the [**BFF**]({{< ref path="/key-concepts#backend-for-frontend" lang="en" >}}). To do so, you just have to call this method on the widget you want to set the Id during the moment you're creating your widget.
+The method Set Id is used when you need to set an Id on a [**widget**]({{< ref path="/api/components/widget" lang="en" >}}) provided by the [**BFF**]({{< ref path="/key-concepts#backend-for-frontend" lang="en" >}}). To do so, you just have to call this method on the widget you want to set the Id during the moment you're creating your widget.
 
 See how this works on the link below:
 

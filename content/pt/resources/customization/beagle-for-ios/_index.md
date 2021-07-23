@@ -1,5 +1,5 @@
 ---
-title: Beagle para ios
+title: Beagle para iOS
 weight: 139
 description: >-
   Nesta seção, você encontra as principais classes que fazem parte do framework

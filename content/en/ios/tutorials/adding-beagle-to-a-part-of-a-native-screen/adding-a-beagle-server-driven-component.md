@@ -19,10 +19,10 @@ On the example below, there is a server-driven button in a native screen, and th
 
 For this configuration to work correctly, you need:
 
-- A configured [**BFF**]({{< ref path="/key-concepts#backend-for-frontend" lang="en" >}}) with Beagle, in case you haven't configured yet, check out this [**tutorial**]({{< ref path="/get-started/creating-a-project-from-scratch/case-backend" lang="en" >}}).
+- A configured [**BFF**]({{< ref path="/key-concepts#backend-for-frontend" lang="en" >}}) with Beagle, in case you haven't configured yet, check out this [**tutorial**]({{< ref path="/backend/get-started/creating-a-project-from-scratch" lang="en" >}}).
 
 - A configured frontend with Beagle in Android or iOS. Check out the tutorial below:
-  - [**Android**]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/" lang="en" >}})
+  - [**Android**]({{< ref path="/android/getting-started.md" lang="en" >}})
   - [**iOS**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios/" lang="en" >}})
 
 ## Step 1: Create a component in the backend

@@ -94,9 +94,9 @@ Sim! Por ser um **framework cross-platform,** Beagle te auxilia a desenvolver ap
 
 Você pode ver mais sobre como criar projetos no Beagle para as 3 plataformas em:
 
-- [**Beagle for Android** ]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/" lang="pt" >}})
+- [**Beagle for Android** ]({{< ref path="/android/getting-started" lang="pt" >}})
 - [**Beagle for iOS**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios/" lang="pt" >}})
-- [**Beagle for Web**]({{< ref path="/get-started/creating-a-project-from-scratch/case-web" lang="pt" >}})
+- [**Beagle for Web**]({{< ref path="/web/commons/creating-a-project-from-scratch" lang="pt" >}})
 
 ## Posso fazer testes unitários e instrumentados em telas Server-Driven?
 
@@ -111,3 +111,11 @@ Testes unitários têm o objetivo de aferir a funcionalidade do código, em sua 
 Testes instrumentados são feitos em aplicações usando Beagle da mesma forma que em outras aplicações que não utilizam. No entanto, é importante salientar que, muitas vezes, um componente `server-driven` pode não conter um ID que geralmente a identifica em um teste instrumentado.
 
 Pensando nisso, adicionamos ao elemento `WIDGET` \(que referencia um componente\) um `atributo ID` para que seja possível identificá-lo programaticamente.
+
+### Como funciona o versionamento do beagle?
+
+A versão do Beagle segue o padrão de [versionamento semântico](https://semver.org/).
+
+Entre plataformas, o último número (**patch**) costuma divergir, uma vez que alguns bugs ocorrem apenas em uma determinada plataforma. Assim, o seguinte exemplo é normal e esperado: ter a versão `1.0.0` no backend com `1.0.2` no Android, `1.0.0` no iOS, e `1.0.3` na web React.
+
+A *documentação* apenas possui versões com números até o **minor**, por exemplo: `1.2`. No entanto, algumas definições de versões minor anteriores ainda podem estar presentes, mesmo que não sejam mais válidas. Se for o caso, tentaremos informar as versões em que essas definições ainda são válidas.

@@ -1,6 +1,6 @@
 ---
 title: Confirm
-weight: 238
+weight: 40
 description: You will find here Confirm definition and its attributes details
 ---
 

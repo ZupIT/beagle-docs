@@ -16,7 +16,6 @@ description: >-
 2. [**SimpleForm**]({{< ref path="/api/components/forms/simple-form" lang="en" >}})
 3. [**PageView**]({{< ref path="/api/components/layout/pageview" lang="en" >}})
 4. [**ScrollView**]({{< ref path="/api/components/layout/scrollview" lang="en" >}})
-5. [**TabView**]({{< ref path="/api/components/ui/tabview" lang="en" >}})
 
 ## Customized components with context
 

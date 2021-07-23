@@ -1,6 +1,6 @@
 ---
 title: ListView
-weight: 340
+weight: 80
 description: "Descrição do componente ListView, seus atributos e construtores"
 ---
 
@@ -9,10 +9,6 @@ description: "Descrição do componente ListView, seus atributos e construtores"
 ## O que é?
 
 O componente ListView é responsável por definir uma lista de itens **recicláveis** nativamente. Esses itens podem ser quaisquer componentes server driven. O uso do ListView é recomendado para situações onde há repetição de componentes, porém com dados diferentes.
-
-{{% alert color="danger" %}}
-A partir da versão 1.5.0 passamos a suportar o uso de contexto e reciclagem de celulas no ListView, com isso disponibilizamos duas formas de construir o componente. A versão depreciada foi mantida somente para manter retrocompatibilidade, se possível atualize para a nova versão do componente para melhor desempenho.
-{{% /alert %}}
 
 A sua estrutura é representada como mostrado abaixo:
 
@@ -57,40 +53,7 @@ Valor default é ListDirection.VERTICAL
  Se todos forem `false`, então, o primeiro template onde `case` é omitido (template padrão) é usado.
 {{% /alert %}}
 
-### ListView Depreciado
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Atributo</th>
-      <th style="text-align:left">Tipo</th>
-      <th style="text-align:center">Obrigat&#xF3;rio</th>
-      <th style="text-align:left">Defini&#xE7;&#xE3;o</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">children</td>
-      <td style="text-align:left">List&lt;<a href="../">ServerDrivenComponent</a>&gt;</td>
-      <td style="text-align:center">&#x2713;</td>
-      <td style="text-align:left">
-        Define os itens da lista de visualiza&#xE7;&#xE3;o. Eles podem ser configurados
-          como uma lista de <code>ServerDrivenComponents</code> ou como <code>views.</code>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">direction</td>
-      <td style="text-align:left"><a href="listview#listdirection">ListDirection</a>
-      </td>
-      <td style="text-align:center"></td>
-      <td style="text-align:left">Define o direcionamento da lista de visualiza&#xE7;&#xE3;o.</td>
-    </tr>
-  </tbody>
-</table>
-
 ## Como usar?
-
-### ListView
 
 {{< tabs id="T146" >}}
 {{% tab name="JSON" %}}
@@ -367,69 +330,6 @@ Valor default é ListDirection.VERTICAL
           )
         )
 
-```
-
-{{% /tab %}}
-{{< /tabs >}}
-
-### ListView Depreciado
-
-{{< tabs id="T147" >}}
-{{% tab name="JSON" %}}
-
-<!-- json-playground:listViewDeprecated.json
-{
-  "_beagleComponent_": "beagle:listView",
-  "children": [
-    {
-      "_beagleComponent_": "beagle:text",
-      "text": "Beagle Text list",
-      "textColor": "#FF0000",
-      "alignment": "CENTER"
-    },
-    {
-      "_beagleComponent_": "beagle:text",
-      "text": "Beagle Text list",
-      "textColor": "#00FF00",
-      "alignment": "CENTER"
-    },
-    {
-      "_beagleComponent_": "beagle:text",
-      "text": "Beagle Text list",
-      "textColor": "#0000FF",
-      "alignment": "CENTER"
-    }
-  ],
-  "direction": "HORIZONTAL"
-}
--->
-
-{{% playground file="listViewDeprecated.json" language="pt" %}}
-{{% /tab %}}
-
-{{% tab name="Kotlin DSL" %}}
-
-```kotlin
-ListView(
-    direction = ListDirection.HORIZONTAL,
-    children = listOf(
-        Text(
-            text = "Beagle Text list",
-            textColor = "#FF0000",
-            alignment = TextAlignment.CENTER
-        ),
-        Text(
-            text = "Beagle Text list",
-            textColor = "#00FF00",
-            alignment = TextAlignment.CENTER
-        ),
-        Text(
-            text = "Beagle Text list",
-            textColor = "#0000FF",
-            alignment = TextAlignment.CENTER
-        )
-    )
-)
 ```
 
 {{% /tab %}}

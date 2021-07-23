@@ -1,6 +1,6 @@
 ---
 title: Pageview
-weight: 342
+weight: 120
 description: Descrição do componente Page View e seus atributos
 ---
 
