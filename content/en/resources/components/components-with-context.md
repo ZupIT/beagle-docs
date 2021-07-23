@@ -59,5 +59,5 @@ public struct CustomComponent: Component, HasContext {
 {{< /tabs >}}
 
 {{% alert color="warning" %}}
-If you want to create customized components on iOS, it is necessary to register it. See [**how to do it here**]({{< ref path="/resources/customization/beagle-for-ios/custom-widgets" lang="en" >}})
+If you want to create customized components on iOS, it is necessary to register it. See [**how to do it here**]({{< ref path="/ios/customization/custom-widget/custom-widget" lang="en" >}})
 {{% /alert %}}

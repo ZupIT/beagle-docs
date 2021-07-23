@@ -23,7 +23,7 @@ Para que essa configuração funcione corretamente, você precisa de:
 - Um [**BFF**]({{< ref path="/key-concepts#backend-for-frontend" lang="pt" >}}) configurado com o Beagle. Caso não o tenha, veja como configurar nesse [**tutorial**]({{< ref path="/backend/get-started/creating-a-project-from-scratch" lang="pt" >}}).
 - Um frontend configurado com o Beagle para Android ou iOS. Caso não o tenha, siga um dos tutoriais de acordo com sistema operacional:
   - [**Android**]({{< ref path="/android/getting-started" lang="pt" >}})
-  - [**iOS**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios/" lang="pt" >}})
+  - [**iOS**]({{< ref path="/ios/getting-started" lang="pt" >}})
 
 ## Passo 1: Criar o componente no backend
 
@@ -154,92 +154,10 @@ Button(
 {{% /tab %}}
 {{< /tabs >}}
 
-## Passo 3: Exibir o componente server-driven
+## Passo 3: Exibir o componente server-driven em uma Tela iOS
 
 Depois dos dois passos anteriores, o seu componente está pronto. Agora, você só precisa exibi-lo em uma tela nativa.
 
-Para essa configuração, siga as orientações específicas para cada plataforma:
-
-{{< tabs id="T97" >}}
-{{% tab name="Android" %}}
-Você deve utilizar o frame layout para "receber" o componente do BFF e, assim, exibi-lo em uma tela Android nativa.
-
-Para isso, basta seguir esses passos:
-
-- Crie o arquivo `.XML` abaixo que representa uma tela nativa com um título e um frame layout. Nesse exemplo definimos essa pagina como nossa `MainActivity`
-- Depois, copie e cole a configuração abaixo:
-
-```markup
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="Sou componente Nativo!"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <FrameLayout
-        android:id="@+id/fr_server_driven"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        app:layout_constraintTop_toBottomOf="@id/tv_title"
-        android:layout_marginTop="40dp"
-        />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-```
-
-{{% alert color="info" %}}
-Após configurar o frame layout, é preciso informar ao Beagle qual componente será exibido. Para isso, utilize a função `loadView` como listado no exemplo a seguir.
-{{% /alert %}}
-
-## O que é loadView?
-
-O método `loadView` é responsável carregar seu conteúdo beagle dentro de sua view.
-
-A estrutura do **loadView** é:
-
-| **Atributo**  | **Tipo**                                                            | Obrigatório | **Definição**                                                          |
-| :------------ | :------------------------------------------------------------------ | :---------: | :--------------------------------------------------------------------- |
-| activity      | AppCompatActivity/Fragment                                          |      ✓      | Define a activity ou fragment que estamos usando o loadview            |
-| screenRequest | [**ScreenRequest**]({{< ref path="/api/screen-request" lang="pt" >}})                   |      ✓      | Define os parâmetros para a chamada da tela remota                     |
-| listener      | **OnServerStateChanged = (serverState: ServerDrivenState) -> Unit** |             | Define o o listener que configura os callbacks para os estados da tela |
-
-<br />
-
-Veja como fazer isso:
-
-1. Abra a activity onde você deseja exibir a sua tela nativa.
-2. Crie uma variável do tipo FrameLayout que deve receber a FrameLayout View que configuramos.
-3. Agora basta chamar a função `.loadView` a partir da variável `frameLayout`
-
-```kotlin
-val frameLayout = findViewById<FrameLayout>(R.id.fr_server_driven)
-frameLayout.loadView(this, ScreenRequest("/serverDrivenComponent"))
-```
-
-E pronto: basta iniciar sua aplicação e você verá a tela a seguir!
-
-<div align="center">
-{{< figure src="/shared/server-driven-comp-ios.gif" width="30%" >}}
-</div>
-
-Clique no botão e perceba que a função nesse componente está implementada e funcional, ou seja, o Beagle exibe todos os componentes como se fossem nativos.
-{{% /tab %}}
-
-{{% tab name="iOS" %}}
 Você deve utilizar uma `BeagleView` para "colocar" esse componente do BFF e, assim, exibí-lo em uma tela iOS nativa.
 
 {{% alert color="success" %}}
@@ -297,67 +215,3 @@ Ao final do processo, você poderá "chamar" a tela nativa e a imagem abaixo ir�
 <div align="center">
 {{< figure src="/shared/server-driven-comp-ios.gif" width="50%" >}}
 </div>
-{{% /tab %}}
-
-{{% tab name="WEB" %}}
-Se você ainda não configurou a biblioteca em seu projeto, [**veja aqui como fazer isso**.]({{< ref path="/web" lang="pt" >}})
-
-Você deve utilizar o [**Remote View**]({{< ref path="/web/commons/remote-view-parameters" lang="pt" >}}), fornecido pela biblioteca do Beagle, para criar telas híbridas com alguns componentes server driven na web.
-
-Veja a seguir como funciona para cada framework:
-
-**React**
-
-No React, você só precisa criar uma função que retorna dois componentes. Um deles é o `BeagleRemoteView` com o caminho para carregar o componente server-driven.
-
-```javascript
-import React, { FC } from "react";
-import { LoadParams } from "@zup-it/beagle-web";
-import { BeagleProvider, BeagleRemoteView } from "@zup-it/beagle-react";
-import BeagleService from "../../beagle/beagle.service";
-import NativeComponent from "../NativeComponent";
-
-const params: LoadParams = {
-  path: "/mypath",
-};
-
-const Main = () => {
-  return (
-    <>
-      <NativeComponent text="Sou um componente nativo!"></NativeComponent>
-      <BeagleProvider value={BeagleService}>
-        <BeagleRemoteView {...params} />
-      </BeagleProvider>
-    </>
-  );
-};
-
-export default Main;
-```
-
-**Angular**
-
-No Angular, basta criar um componente nativo normalmente e adicionar o `beagle-remote-view` junto ao template no local que você quer que os itens server-driven sejam renderizados.
-
-```text
-<app-native-component text="Sou um componente nativo"></app-native-component>
-<beagle-remote-view [loadParams]="loadParams"></beagle-remote-view>
-```
-
-{{% alert color="warning" %}}
-No caso do Angular, não é possível usar o componente BeagleRemoteView caso ele seja carregado pela biblioteca de outra forma server-driven porque isso causa uma dependência circular e quebra a aplicação.
-{{% /alert %}}
-
-{{% alert color="info" %}}
-Lembre-se de rodar seu projeto Angular usando um dos comandos:
-
-`yarn run serve ou npx run serve`
-{{% /alert %}}
-
-A sua tela híbrida com elementos nativos e server driven está pronta
-
-<div align="center">
-{{< figure src="/shared/image.png" >}}
-</div>
-{{% /tab %}}
-{{< /tabs >}}

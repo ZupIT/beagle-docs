@@ -168,7 +168,7 @@ beagleService?.globalContext.set(value, path)
 {{% /tab %}}
 
 {{% tab name="iOS" %}}
-No iOS o Contexto Global é um dos atributos do [**Beagle Dependencies**]({{< ref path="/resources/customization/beagle-for-ios/beagles-dependencies" lang="pt" >}}) .
+No iOS o Contexto Global é um dos atributos do [**Beagle Dependencies**]({{< ref path="/ios/customization/beagles-dependencies" lang="pt" >}}) .
 
 Para utilizar o contexto global em qualquer componente da sua aplicação você precisará chamar o `BeagleDependencies` do seu projeto como no exemplo abaixo:
 

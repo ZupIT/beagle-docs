@@ -223,7 +223,7 @@ Besides showing an alert, you can use actions to:
 - Send an http request with a [SendRequest action]({{< ref path="api/actions/sendrequest.md" >}}).
 - Add new views in the current view hierarchy with a [AddChildren action]({{< ref path="api/actions/addchildren.md" >}}).
 
-Also, actions are one of the building blocks of **making complex and dynamic screens**. You can see more about this topic in the ["How to make communication between components" section]({{< ref path="tutorials/how-to-make-communication-between-components.md" >}}).
+Also, actions are one of the building blocks of **making complex and dynamic screens**. You can see more about this topic in the ["How to make communication between components" section]({{< ref path="android/tutorials/how-to-make-communication-between-components.md" >}}).
 
 ---
 
