@@ -1,6 +1,6 @@
 ---
 title: Primeiros Passos
-weight: 120
+weight: 2
 description: Nessa seção, você vai aprender como criar um projeto iOS com o Beagle.
 ---
 
@@ -223,17 +223,17 @@ Então é obrigatório que você crie uma camada de Rede para que o Beagle consi
 
 Você pode criar essas camadas usando esses tutoriais:
 
-[**Camada de Rede customizada**]({{< ref path="/resources/customization/beagle-for-ios/network-layer" lang="en" >}})
+[**Camada de Rede customizada**]({{< ref path="/ios/customization/network-layer" lang="en" >}})
 <br>
 
 [**Gerenciador de Cache customizado**]({{< ref path="/resources/cache/how-to-configure-cache" lang="en" >}})
 <br>
 
-[**Sistema de Log customizado**]({{< ref path="/resources/customization/beagle-for-ios/log-system" lang="en" >}})
+[**Sistema de Log customizado**]({{< ref path="/ios/customization/log-system" lang="en" >}})
 
 <br>
 
-Se você quiser pular essas configurações, você pode utilizar a biblioteca de apoio do Beagle: [**Beagle Scaffold**]({{< ref path="/get-started/using-beagle-helpers/ios/beagle-scaffold" lang="en" >}}) contém implementações padrão de camadas de Rede, Cache e Log.
+Se você quiser pular essas configurações, você pode utilizar a biblioteca de apoio do Beagle: [**Beagle Scaffold**]({{< ref path="/ios/libs/beagle-scaffold" lang="en" >}}) contém implementações padrão de camadas de Rede, Cache e Log.
 
 No entando, você deve se  lembrar que é muito importante customizar sua própria camada de Rede pela segurança.
 
