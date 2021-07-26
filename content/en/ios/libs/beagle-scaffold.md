@@ -31,7 +31,7 @@ It is recommended for beginners.
 ### What is it?
 <hr>
 
-Beagle Scaffold is a supporting framework that has a default implementation of the network layer, cache, and logger, all embedded in [**BeagleDefaults**](https://docs.usebeagle.io/get-started/using-beagle-helpers/ios/beagle-defaults), so you can start using Beagle faster.
+Beagle Scaffold is a supporting framework that has a default implementation of the network layer, cache, and logger, all embedded in [**BeagleDefaults**](https://docs.usebeagle.io/ios/libs/beagle-defaults), so you can start using Beagle faster.
 
 ### Installation
 <hr>
@@ -171,4 +171,4 @@ You can create these layers using these tutorials:
 <hr>
 
 ##### For more information: please check [Beagle's](https://github.com/ZupIT/beagle) repository.
-##### For more on Beagle-Defaults: Please check [Beagle-Default]({{< ref path="/get-started/using-beagle-helpers/ios/beagle-defaults" lang="en" >}}) documentation.
+##### For more on Beagle-Defaults: Please check [Beagle-Default]({{< ref path="/ios/libs/beagle-defaults" lang="en" >}}) documentation.

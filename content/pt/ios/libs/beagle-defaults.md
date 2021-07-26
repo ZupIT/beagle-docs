@@ -50,4 +50,4 @@ Essas implementações podem ser alteradas de acordo com suas preferências. Ver
 <hr>
 
 ##### Para saber mais sobre Beagle, acesse o repositório [Beagle](https://github.com/ZupIT/beagle).
-##### Para mais sobre Beagle-Scaffold, veja a [seção Beagle-Scaffold]({{< ref path="/get-started/using-beagle-helpers/ios/beagle-scaffold" lang="en" >}}).
+##### Para mais sobre Beagle-Scaffold, veja a [seção Beagle-Scaffold]({{< ref path="/ios/libs/beagle-scaffold" lang="en" >}}).

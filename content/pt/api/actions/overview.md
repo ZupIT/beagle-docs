@@ -29,7 +29,7 @@ Uma ação é um mapa chave/valor com pelo menos uma propriedade:`_beagleAction_
 
 Existem diversas ações implementadas no Beagle por padrão e todas elas começam com prefixo "**beagle**:" e as ações customizadas possuem o prefixo "**custom**:".
 
-Para saber como criar ações customizadas, dê uma olhada na seção de [**customização do Beagle**]({{< ref path="/tutorials/how-to-create-new-actions" lang="pt" >}})
+Para saber como criar ações customizadas, dê uma olhada nesse tutorial de como criar novas actions para cada plataforma ([Android]({{< ref path="android/getting-started.md" >}}), [iOS]({{< ref path="ios/getting-started.md" >}}), [Flutter]({{< ref path="flutter/getting-started.md" >}}), [Web]({{< ref path="web/commons/creating-a-project-from-scratch.md" >}}), [React-Native]({{< ref path="react-native/react-native-installing.md" >}}))
 
 ## **Tipos de ações**
 

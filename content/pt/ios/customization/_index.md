@@ -7,5 +7,3 @@ description: >-
 ---
 
 ---
-
-O Beagle para iOS possui estas principais classes:

@@ -5,5 +5,3 @@ description: Conjunto de recursos relativos à criação e customização de com
 ---
 
 ---
-
-Confira abaixo quais configurações é possível fazer com os componentes do Beagle:

@@ -232,6 +232,6 @@ To learn more about configuring your frontend environment, check out more:
 
 👉 Beagle implementation tutorial for [**Android**]({{< ref path="/android/getting-started" lang="en" >}}).
 
-👉Beagle implementation tutorial for [**iOS**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios" lang="en" >}}).
+👉Beagle implementation tutorial for [**iOS**]({{< ref path="/ios/getting-started" lang="en" >}}).
 
 👉Beagle implementation tutorial for [**Web**]({{< ref path="/web/commons/creating-a-project-from-scratch.md" lang="en" >}}).

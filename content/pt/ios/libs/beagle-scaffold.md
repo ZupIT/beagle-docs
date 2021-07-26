@@ -175,4 +175,4 @@ Você pode criar um exemplo dessas camadas usando estes tutoriais:
 <hr>
 
 ##### Para mais informações sobre Beagle, acesse o repositório [Beagle](https://github.com/ZupIT/beagle).
-##### Para saber mais sobre Beagle-Defaults, veja a seção [Beagle-Default]({{< ref path="/get-started/using-beagle-helpers/ios/beagle-defaults" lang="en" >}}).
+##### Para saber mais sobre Beagle-Defaults, veja a seção [Beagle-Default]({{< ref path="/ios/libs/beagle-defaults" lang="en" >}}).

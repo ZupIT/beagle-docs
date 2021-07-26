@@ -154,9 +154,9 @@ Confira abaixo, nós usamos o path `remote` fornecendo uma `url` que o Beagle us
 }
 ```
 
-> Você pode ter controle total da requisição acionada por esta imagem remota. Você só precisa configurar sua própria *Camada de Rede* como uma *Dependência do Beagle*. Para entender melhor como fazer isso, ou como configurar outras Dependências do Beagle, você pode verificar a [seção de Customização]({{< ref path="resources/customization/_index.md" >}}).
+> Você pode ter controle total da requisição acionada por esta imagem remota. Você só precisa configurar sua própria *Camada de Rede* como uma *Dependência do Beagle*. Para entender melhor como fazer isso, ou como configurar outras Dependências do Beagle, você pode verificar a seção de Customização de cada plataforma ([Android]({{< ref path="android/customization" >}}), [iOS]({{< ref path="ios/customization" >}}), [Flutter]({{< ref path="flutter/customization" >}}), [Web]({{< ref path="web/commons" >}}), [React-Native]({{< ref path="react-native/customization" >}})).
 
-O Beagle já vem com vários componentes úteis, você pode navegar por todos eles na [seção de componentes]({{< ref path = "api/components/_index.md" >}}). Há outros componentes, por exemplo, que possuem o atributo *children* (às vezes apenas *child*) como o [Screen]({{< ref path="api/components/layout/screen/_index.md" >}}) e o [ListView]({{< ref path="api/components/layout/listview.md" >}}), e eles são usados para **compor hierarquias de views** como o *Container*. Também é possível definir seus próprios componentes, chamados de [Custom Components]({{< ref path="resources/customization/_index.md" >}}), e utilizá-los de forma muito similar a um componente que já vem no Beagle.
+O Beagle já vem com vários componentes úteis, você pode navegar por todos eles na [seção de componentes]({{< ref path = "api/components/_index.md" >}}). Há outros componentes, por exemplo, que possuem o atributo *children* (às vezes apenas *child*) como o [Screen]({{< ref path="api/components/layout/screen/_index.md" >}}) e o [ListView]({{< ref path="api/components/layout/listview.md" >}}), e eles são usados para **compor hierarquias de views** como o *Container*. Também é possível definir seus próprios componentes, chamados de Custom Components ([Android]({{< ref path="android/customization/widgets/overview" >}}), [iOS]({{< ref path="ios/customization/custom-widget/overview" >}}), [Flutter]({{< ref path="flutter/customization/beagle-widget" >}}), [Web]({{< ref path="web/commons/custom-component" >}}), [React-Native]({{< ref path="react-native/customization" >}})), e utilizá-los de forma muito similar a um componente que já vem no Beagle.
 
 ### Style
 
@@ -215,7 +215,7 @@ Finalmente, vamos falar sobre *Actions*, uma maneira de adicionar *dinamismo em 
 }
 ```
 
-O [componente Button]({{< ref path="api/components/ui/button.md" >}}) possui um atributo chamado `onPress` que pode receber uma lista de ações, as quais só serão executadas quando o botão for pressionado. Você pode ver todas as ações padrão do Beagle na [seção Actions]({{< ref path="api/actions/_index.md" >}}). Mas também é possível criar suas próprias ações (um processo semelhante a *Custom Componentes*), que chamamos de [Custom Actions]({{< ref path="resources/customization/_index.md" >}}).
+O [componente Button]({{< ref path="api/components/ui/button.md" >}}) possui um atributo chamado `onPress` que pode receber uma lista de ações, as quais só serão executadas quando o botão for pressionado. Você pode ver todas as ações padrão do Beagle na [seção Actions]({{< ref path="api/actions/_index.md" >}}). Mas também é possível criar suas próprias ações (um processo semelhante a *Custom Componentes*), que chamamos de Custom Actions ([Android]({{< ref path="android/customization/action/overview" >}}), [iOS]({{< ref path="ios/customization/custom-actions/overview" >}}), [Flutter]({{< ref path="flutter/customization/actions" >}}), [Web]({{< ref path="web/commons/customized-actions" >}}), [React-Native]({{< ref path="react-native/customization" >}})).
 
 Esse exemplo usa uma [ação Alert]({{< ref path="api/actions/alert.md" >}}), o que resulta na exibição de um componente de alerta quando alguém toca o botão. Você pode fazer isso no *Playground* e ver você mesmo.
 
@@ -225,7 +225,7 @@ Além de mostrar um alerta, você também pode utilizar ações para:
 - Enviar uma requisição http com uma [ação SendRequest]({{< ref path="api/actions/sendrequest.md" >}}).
 - Adicionar novas views na hierarquia atual de views com uma [ação AddChildren]({{< ref path="api/actions/addchildren.md" >}}).
 
-Além disso, as ações são essenciais para se **criar telas complexas e dinâmicas**. Você pode ver mais sobre este tópico na [seção "Como fazer comunicação entre componentes"]({{< ref path="tutorials/how-to-make-communication-between-components.md" >}}).
+Além disso, as ações são essenciais para se **criar telas complexas e dinâmicas**. Você pode ver mais sobre este tópico na [seção "Como fazer comunicação entre componentes"]({{< ref path="/android/tutorials/how-to-make-communication-between-components.md" >}}).
 
 ---
 
@@ -235,9 +235,7 @@ Depois de ver as partes mais essenciais do Beagle, você está pronto para mergu
 
 - Se quiser ver um exemplo mais complexo de um aplicativo que utiliza completamente o Beagle, você pode verificar [este repositório](https://github.com/ZupIT/beagle-adoption-demo). Ele possui um backend em Kotlin e frontends nativos para dispositivos móveis em Android e iOS.
 
-- Se você deseja integrar o Beagle em seu aplicativo existente, você pode seguir o [guia de instalação]({{< ref path="get-started/installing-beagle/_index.md" >}}) de cada plataforma, e depois verificar a [seção de usando o Beagle]({{< ref path="get-started/using-beagle/_index.md" >}}).
-
-- Se você deseja iniciar um novo projeto com o Beagle, você pode seguir o [guia de criação de um projeto do zero]({{< ref path="get-started/creating-a-project-from-scratch/_index.md" >}}).
+- Se você deseja iniciar um novo projeto com o Beagle ou integrar o Beagle em seu aplicativo já existente, você pode seguir o guia de instalação de cada plataforma ([Android]({{< ref path="android/getting-started.md" >}}), [iOS]({{< ref path="ios/getting-started.md" >}}), [Flutter]({{< ref path="flutter/getting-started.md" >}}), [Web]({{< ref path="web/commons/creating-a-project-from-scratch.md" >}}), [React-Native]({{< ref path="react-native/react-native-installing.md" >}})).
 
 - Se você quiser saber mais sobre uma API específica, use a [seção API]({{< ref path="api/_index.md" >}}).
 
