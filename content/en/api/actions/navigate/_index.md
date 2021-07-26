@@ -7,7 +7,3 @@ description: >-
 ---
 
 ---
-
-Navigate is responsible to all screen's navigation on Beagle. You can configure some navigation action types, which it can be seen on the following pages. 
-
-### **Navigate Actions**

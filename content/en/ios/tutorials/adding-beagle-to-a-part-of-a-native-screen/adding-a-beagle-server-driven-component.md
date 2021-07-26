@@ -23,7 +23,7 @@ For this configuration to work correctly, you need:
 
 - A configured frontend with Beagle in Android or iOS. Check out the tutorial below:
   - [**Android**]({{< ref path="/android/getting-started.md" lang="en" >}})
-  - [**iOS**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios/" lang="en" >}})
+  - [**iOS**]({{< ref path="/ios/getting-started" lang="en" >}})
 
 ## Step 1: Create a component in the backend
 

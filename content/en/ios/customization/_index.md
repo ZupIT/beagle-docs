@@ -7,5 +7,3 @@ description: >-
 ---
 
 ---
-
-These are the iOS classes for Beagle

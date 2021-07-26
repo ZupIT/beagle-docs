@@ -189,7 +189,7 @@ startActivity(
 
 ### Passo 1: Instalar o submódulo
 
-Para realizar a instalação, é necessário primeiro já ter seguido os [**passos de instalação do Beagle para iOS**]({{< ref path="/get-started/installing-beagle/ios" lang="pt" >}}). Assim os passos seguintes variam de acordo com o método utilizado.
+Para realizar a instalação, é necessário primeiro já ter seguido os [**passos de instalação do Beagle para iOS**]({{< ref path="/ios/getting-started" lang="pt" >}}). Assim os passos seguintes variam de acordo com o método utilizado.
 
 #### Utilizando via CocoaPods
 

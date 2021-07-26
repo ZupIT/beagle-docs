@@ -59,5 +59,5 @@ public struct CustomComponent: Component, HasContext {
 {{< /tabs >}}
 
 {{% alert color="warning" %}}
-If you want to create customized components on iOS, it is necessary to register it. See [**how to do it here**]({{< ref path="/ios/customization/custom-widget/custom-widget" lang="en" >}})
+If you want to create customized components on iOS, it is necessary to register it. See [**how to do it here**]({{< ref path="/ios/customization/custom-widget/custom-widget#step-3-register-widget" lang="en" >}})
 {{% /alert %}}

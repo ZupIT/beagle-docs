@@ -1,6 +1,6 @@
 ---
 title: Widget Customizado
-weight: 1
+weight: 3
 description: Aqui voce aprenderá como criar e utilizar um widget no Beagle
 ---
 
@@ -376,7 +376,7 @@ Abaixo temos a definição do componente dentro de um `Container`, onde o compon
 ```
 
 {{% alert color="info" %}}
-Para saber mais como exibir o Componente. [**Como exibir uma tela**]({{< ref path="/get-started/using-beagle/ios" lang="pt" >}}).
+Para saber mais como exibir o Componente. [**Como exibir uma tela**]({{< ref path="/ios/tutorials/adding-beagle-to-a-part-of-a-native-screen/adding-a-beagle-server-driven-component" lang="pt" >}}).
 {{% /alert %}}
 
 Exemplo renderizado:

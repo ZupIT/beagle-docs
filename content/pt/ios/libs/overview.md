@@ -12,12 +12,12 @@ Essas bibliotecas facilitam a configuração inicial do Beagle no seu projeto.  
 ![Cocoapods](https://img.shields.io/cocoapods/v/BeagleDefaults?label=Beagle-Defaults)
 ![Cocoapods](https://img.shields.io/cocoapods/v/Beagle?label=Beagle)
 
-* [Beagle-Scaffold]({{< ref path="/get-started/using-beagle-helpers/ios/beagle-scaffold" lang="en" >}}):
+* [Beagle-Scaffold]({{< ref path="/ios/libs/beagle-scaffold" lang="en" >}}):
 Contém quase todas as configurações necessárias pra começar a usar o Beagle no seu projeto. Recomendado para usuários iniciantes de Beagle.
 
-* [Beagle-Defaults]({{< ref path="/get-started/using-beagle-helpers/ios/beagle-defaults" lang="en" >}}):
+* [Beagle-Defaults]({{< ref path="/ios/libs/beagle-defaults" lang="en" >}}):
 Essa biblioteca é indicada para usuários mais avançados do Beagle e possui apenas algumas configurações de classes necessárias para utilizar o Beagle na sua aplicação. Elas incluem uma camada padrão de rede, cache e log e também estão disponíveis no Beagle Scaffold.
 
 {{% alert color="warning" %}}
-Se você deseja configurar um projeto do zero com o Beagle,  veja a [**seção 'Criando um projeto do zero'**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios/" lang="en" >}})
+Se você deseja configurar um projeto do zero com o Beagle,  veja a [**seção 'Criando um projeto do zero'**]({{< ref path="/ios/getting-started" lang="en" >}})
 {{% /alert %}}

@@ -6,5 +6,3 @@ description: >-
 ---
 
 ---
-
-Aprenda como customizar o Beagle Flutter baseado em sua necessidade.

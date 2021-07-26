@@ -1,6 +1,6 @@
 ---
 title: Custom Widget
-weight: 1
+weight: 2
 description: Here you will learn how to create and use a widget on Beagle
 ---
 
@@ -376,7 +376,7 @@ Below we have the definition of the component inside a `Container`, where the co
 ```
 
 {{% alert color="info" %}}
-To learn more about displaying the Component.[**How to display a screen**]({{< ref path="/get-started/using-beagle/ios" lang="en" >}}).
+To learn more about displaying the Component.[**How to display a screen**]({{< ref path="/ios/getting-started" lang="en" >}}).
 {{% /alert %}}
 
 Rendered example:

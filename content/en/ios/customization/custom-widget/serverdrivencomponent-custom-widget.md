@@ -427,7 +427,7 @@ Below we have the definition of the component inside a `Container`, where the co
 ```
 
 {{% alert color="info" %}}
-To learn more about displaying the Component.[**How to display a screen**]({{< ref path="/get-started/using-beagle/ios" lang="en" >}}).
+To learn more about displaying the Component.[**How to display a screen**]({{< ref path="/ios/tutorials/adding-beagle-to-a-part-of-a-native-screen/adding-a-beagle-server-driven-component" lang="en" >}}).
 {{% /alert %}}
 
 Rendered example:

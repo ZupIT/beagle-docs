@@ -41,7 +41,7 @@ class CustomAction: Action {
 
 3. To register the action, just create a method with all your custom action and calls the `registerCustomAction` Beagle's method to make the registry.
 
-4. Call the method created on BeagleConfig, that can be seen on this [**example**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios" lang="en" >}}).
+4. Call the method created on BeagleConfig, that can be seen on this [**example**]({{< ref path="/ios/getting-started" lang="en" >}}).
 
 ```swift
 private func registerCustomAction() {

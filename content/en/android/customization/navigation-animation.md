@@ -31,9 +31,9 @@ There are two customization options:
 For more information on how this process works, [**check out the Android's section**  **setCustomAnimations**.](https://developer.android.com/reference/android/app/FragmentTransaction#setCustomAnimations%28int,%20int,%20int,%20int%29)
 {{% /alert %}}
 
-The other way to customize an animation is the transition through the [**BeagleActivity**]({{< ref path="/get-started/creating-a-project-from-scratch/" lang="en" >}}) class implementation, which Beagle uses the _**getFragmentTransitionAnimation\(\)**_ method.
+The other way to customize an animation is the transition through the [**BeagleActivity**]({{< ref path="/android/getting-started" lang="en" >}}) class implementation, which Beagle uses the _**getFragmentTransitionAnimation\(\)**_ method.
 
-In case this method it isn't implemented and customized, the transitions will follow Beagle's default animation. The code below shows the [**BeagleActivity**]({{< ref path="/get-started/creating-a-project-from-scratch/" lang="en" >}}) method, that can be overwritten this way:
+In case this method it isn't implemented and customized, the transitions will follow Beagle's default animation. The code below shows the [**BeagleActivity**]({{< ref path="/android/getting-started" lang="en" >}}) method, that can be overwritten this way:
 
 ```kotlin
 open fun getFragmentTransitionAnimation() = FragmentTransitionAnimation(
