@@ -1,6 +1,6 @@
 ---
 title: Analytics 2.0
-weight: 209
+weight: 6
 description: "Aqui, você encontrará mais informações sobre as funcionalidades do Analytics."
 ---
 

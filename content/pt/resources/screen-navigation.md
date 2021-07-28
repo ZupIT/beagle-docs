@@ -1,6 +1,6 @@
 ---
 title: Navegação de telas
-weight: 213
+weight: 7
 description: >-
   Nesta seção, você encontra uma demonstração de como o Beagle lida com
   navegação de tela.

@@ -1,6 +1,6 @@
 ---
 title: Screen navigation
-weight: 211
+weight: 7
 description: "Here, you'll find how Beagle deals with screen navigation."
 ---
 

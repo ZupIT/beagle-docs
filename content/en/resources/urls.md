@@ -1,6 +1,6 @@
 ---
 title: Urls
-weight: 213
+weight: 8
 description: >-
   Here, you'll find how Beagle deals with URLs between backend and frontend
   (BFF)
