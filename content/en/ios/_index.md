@@ -1,5 +1,5 @@
 ---
 title: iOS
 weight: 4
-description: 
+description: 'Here you will find information about how to configure Beagle in a Android application'
 ---
