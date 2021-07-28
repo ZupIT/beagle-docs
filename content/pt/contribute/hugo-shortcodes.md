@@ -98,7 +98,7 @@ Para renderizar imagens, gifs e demais tipos de figuras, podemos usar uma shortc
 - Exemplo de Sintaxe:
 
 ```go-text-template
-{{</* figure src="https://media.glassdoor.com/sqll/2482761/zup-innovation-squarelogo-1583862820688.png" width="250" height="250 */>}}
+{{</* figure src="https://media.glassdoor.com/sqll/2482761/zup-innovation-squarelogo-1583862820688.png" width="250" height="250" */>}}
 ```
 
 - Será renderizado como: 

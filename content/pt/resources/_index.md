@@ -1,6 +1,6 @@
 ---
 title: Recursos
-weight: 53
+weight: 9
 description: >-
   Nesta seção, você encontra os principais recursos do beagle.
 ---

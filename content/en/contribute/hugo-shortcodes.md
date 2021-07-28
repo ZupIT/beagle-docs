@@ -98,7 +98,7 @@ To render images, gifs and other types of figures use the following shortcode:
 - Sintax example:
 
 ```go-text-template
-{{</* figure src="https://media.glassdoor.com/sqll/2482761/zup-innovation-squarelogo-1583862820688.png" width="250" height="250 */>}}
+{{</* figure src="https://media.glassdoor.com/sqll/2482761/zup-innovation-squarelogo-1583862820688.png" width="250" height="250" */>}}
 ```
 
 - It will be rendered as: 
