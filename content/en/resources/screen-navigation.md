@@ -1,6 +1,6 @@
 ---
 title: Screen navigation
-weight: 211
+weight: 7
 description: "Here, you'll find how Beagle deals with screen navigation."
 ---
 
@@ -9,7 +9,7 @@ description: "Here, you'll find how Beagle deals with screen navigation."
 On Beagle, navigation works as a type of [**Action**]({{< ref path="/api/actions/" lang="en" >}}), which can be used by all components that receives an action.
 
 {{% alert color="info" %}}
-Before configuring the navigation between screens of your application, it is required you have [**installed Beagle**]({{< ref path="/get-started/installing-beagle/" lang="en" >}}), checked the [**use configuration**]({{< ref path="/get-started/using-beagle/" lang="en" >}}) and tested Beagle's framework on the [**displaying a server-driven screen tutorial**](#no-such-page)
+Before configuring the navigation between screens of your application, it is required you have installed Beagle ([Android]({{< ref path="android/getting-started.md" >}}), [iOS]({{< ref path="ios/getting-started.md" >}}), [Flutter]({{< ref path="flutter/getting-started.md" >}}), [Web]({{< ref path="web/commons/creating-a-project-from-scratch.md" >}}), [React-Native]({{< ref path="react-native/react-native-installing.md" >}})), checked the use configuration and tested Beagle's framework on the [**displaying a server-driven screen tutorial**](#no-such-page)
 {{% /alert %}}
 
 After these configurations, just add the example code as a return of your service and call the endpoint, defined in your controller, in your frontend.

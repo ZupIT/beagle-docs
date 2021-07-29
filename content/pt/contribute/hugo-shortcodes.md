@@ -26,7 +26,7 @@ A melhor maneira para fazer referências a links **_internos_** a documentação
 
 - Será renderizado como:
 
-[Link Example]({{< ref path="/get-started/installing-beagle/backend.md" lang="pt">}})
+[Link Example]({{< ref path="/backend/get-started/creating-a-project-from-scratch" lang="pt">}})
 
 > Para saber mais a respeito, [acesse aqui](https://gohugo.io/content-management/cross-references/)
 
@@ -98,7 +98,7 @@ Para renderizar imagens, gifs e demais tipos de figuras, podemos usar uma shortc
 - Exemplo de Sintaxe:
 
 ```go-text-template
-{{</* figure src="https://media.glassdoor.com/sqll/2482761/zup-innovation-squarelogo-1583862820688.png" width="250" height="250 */>}}
+{{</* figure src="https://media.glassdoor.com/sqll/2482761/zup-innovation-squarelogo-1583862820688.png" width="250" height="250" */>}}
 ```
 
 - Será renderizado como: 

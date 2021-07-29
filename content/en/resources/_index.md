@@ -1,6 +1,6 @@
 ---
 title: Resources
-weight: 53
+weight: 9
 description: >-
   Here, you’ll find the main features of beagle.
 ---

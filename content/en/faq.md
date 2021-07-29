@@ -92,9 +92,9 @@ Yes! As a cross-platform framework, Beagle helps you on developing application o
 
 You can see more how to create Beagle's projects with each of these platforms on: 
 
-* [**Beagle for Android**]({{< ref path="/get-started/creating-a-project-from-scratch/case-android/" lang="en" >}})
-* [**Beagle for iOS**]({{< ref path="/get-started/creating-a-project-from-scratch/case-ios/" lang="en" >}})
-* [**Beagle for Web**]({{< ref path="/get-started/creating-a-project-from-scratch/case-web" lang="en" >}})
+* [**Beagle for Android**]({{< ref path="/android/getting-started" lang="en" >}})
+* [**Beagle for iOS**]({{< ref path="/ios/getting-started" lang="en" >}})
+* [**Beagle for Web**]({{< ref path="/web/commons/creating-a-project-from-scratch" lang="en" >}})
 
 ## How to make unitary and instrumented tests on server-driven screens?
 

@@ -1,9 +1,7 @@
 ---
-title: Componentes
-weight: 89
+title: Componentes customizados
+weight: 4
 description: Conjunto de recursos relativos à criação e customização de componentes.
 ---
 
 ---
-
-Confira abaixo quais configurações é possível fazer com os componentes do Beagle:
