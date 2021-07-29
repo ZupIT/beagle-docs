@@ -16,7 +16,7 @@ Although it’s possible to create your own implementation of `BeagleSdk` class 
 In order to add Beagle Annotation Processor to your project, you must follow the given steps:
 
 1. Include kotlin kapt plugin
-1. Include Beagle annotation processor as dependency
+2. Include Beagle annotation processor as dependency
 
 ```groovy
 apply plugin: 'kotlin-kapt'
@@ -58,6 +58,7 @@ By default, every module that uses Beagle annotation processor generate the `Bea
 `BeagleSetup` class declares a property of `BeagleConfig` type that can't be null and we end up having to register a dummy `BeagleConfig` class inside that module. It leads to the following problem: This implementation of `BeagleConfig` will conflict with the official `BeagleConfig` implementation of your project, because you can have one and only one `BeagleConfig` implementation within your project.
 
 To solve this situation, it’s possible to disable `BeagleSetup` class generation in modules where it’s not needed. This is done by adding the following kapt argument to the module’s gradle file:
+
 ```groovy
 kapt {
     arguments {
@@ -69,6 +70,7 @@ kapt {
 ### Unique Properties
 
 Some properties are unique in a Beagle project. This means that only one component of that type can be registered on your entire project structure (including other modules and dependencies that use Beagle annotation processor). Properties that are unique includes:
+
 * DesignSystem;
 * HttpClient;
 * BeagleConfig;

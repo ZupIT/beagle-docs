@@ -16,7 +16,7 @@ Embora seja possível criar a sua própria implementaçao da interface `BeagleSd
 Para adicionar o processador de anotações do Beagle no seu projeto, você deve seguir os seguintes passos:
 
 1. Incluir o kotlin kapt plugin
-1. Incluir o processador de anotações do Beagle como dependência.
+2. Incluir o processador de anotações do Beagle como dependência.
 
 ```groovy
 apply plugin: 'kotlin-kapt'
