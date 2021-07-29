@@ -8,7 +8,7 @@ description: >-
 ---
 
 ## Running a backend in the localhost
-In the previous steps, the `baseUrl` used was `http://yourBffBaseUrl.io`, but this is just an example and you will need to replace this address by your own backend.
+In the previous steps, the `baseUrl` used was `https://usebeagle.io/start`, but this is just an example and you will need to replace this address by your own backend.
 
 ### Making HTTP requests
 By default, both Android and iOS will make only HTTPS (secured) requests. To change this behavior, follow the steps below:
