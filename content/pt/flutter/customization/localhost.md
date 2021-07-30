@@ -8,14 +8,14 @@ description: >-
 ---
 
 ## Rodando um backend no localhost
-Nos passos anteriores, a `baseUrl` usada foi `http://yourBffBaseUrl.io`, mas isso é apenas um exemplo e você vai precisar trocá-la pelo endereço do seu backend.
+Nos passos anteriores, a `baseUrl` usada foi `https://usebeagle.io/start`, mas isso é apenas um exemplo e você vai precisar trocá-la pelo endereço do seu backend.
 
 ### Fazendo requisições HTTP
 Por padrão, ambos Android e iOS vão fazer somente requisições HTTPS (seguras). Para mudar esse comportamento, siga os passos abaixo:
 
 #### Android
-1. Abra `android / app / src / main / AndroidManifest.xml`
-2. Coloque a regra `android: usesCleartextTraffic =" true "` na tag `<application>`:
+1. Abra `android/app/src/main/AndroidManifest.xml`
+2. Coloque a regra `android:usesCleartextTraffic="true"` na tag `<application>`:
 
 ```xml
 <application

@@ -42,7 +42,7 @@ import 'package:beagle_components/beagle_components.dart';
 
 void main() {
   BeagleSdk.init(
-    baseUrl: 'http://yourBffBaseUrl.io',
+    baseUrl: 'https://usebeagle.io/start',
     components: defaultComponents,
   );
   // runApp();
@@ -60,7 +60,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   BeagleSdk.init(
-    baseUrl: 'http://yourBffBaseUrl.io',
+    baseUrl: 'https://usebeagle.io/start',
     components: defaultComponents,
   );
   runApp(const BeagleSampleApp());

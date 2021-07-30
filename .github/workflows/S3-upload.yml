@@ -4,9 +4,6 @@ on:
   push:
     branches: [release*]
 
-env:
-  AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-
 jobs:
   deploy:
     runs-on: ubuntu-18.04
@@ -15,7 +12,17 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
-
+          
+      - name: Read secrets from AWS Secrets Manager into environment variables
+        uses: abhilash1in/aws-secrets-manager-action@v1.0.1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+          secrets: |
+            beagle/docs/aws
+          parse-json: true
+          
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -31,6 +38,8 @@ jobs:
 
       - name: S3 upload (images)
         run: aws s3 sync --acl public-read --follow-symlinks static/shared s3://$AWS_S3_BUCKET/shared/
+        env:
+          AWS_S3_BUCKET: ${{ env.BEAGLE_DOCS_AWS_AWS_DOCS_S3_BUCKET }}
 
       - name: Remove static images
         shell: bash
@@ -67,3 +76,4 @@ jobs:
         run: aws s3 sync --acl public-read --follow-symlinks public s3://$AWS_S3_BUCKET/$VERSION/ --delete
         env:
           VERSION: ${{ steps.version.outputs.branch_version }}
+          AWS_S3_BUCKET: ${{ env.BEAGLE_DOCS_AWS_AWS_DOCS_S3_BUCKET }}
