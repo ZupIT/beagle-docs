@@ -3,7 +3,7 @@ title: Overview
 weight: 1
 description: >-
   Here, you'll find information about Beagle before getting deeper
-  in the project. 
+  in the project.  
 ---
 
 ---
