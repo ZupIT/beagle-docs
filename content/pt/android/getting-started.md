@@ -189,7 +189,7 @@ Para fazer requisições server-driven a um backend é necessário configurar um
 **Passo 5: Mostrar a tela**
 
 Agora você pode mostrar uma tela que é inicializada por um endpoint no BFF conforme abaixo:
-```markup
+```kotlin
     class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
             override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
