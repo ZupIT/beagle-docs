@@ -197,7 +197,7 @@ Now you can show a screen initialized by a BFF´s Endpoint as following:
             override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
                 super.onCreate(savedInstanceState, persistentState)
 
-                startActivity(newServerDrivenIntent<ServerDrivenActivity>(RequestData("/home")))
+                startActivity(newServerDrivenIntent<ServerDrivenActivity>(RequestData("https://usebeagle.io/start/welcome")))
             }
     }
 ```
