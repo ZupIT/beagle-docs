@@ -195,7 +195,7 @@ Agora você pode mostrar uma tela que é inicializada por um endpoint no BFF con
             override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
                 super.onCreate(savedInstanceState, persistentState)
 
-                startActivity(newServerDrivenIntent<ServerDrivenActivity>(RequestData("/home")))
+                startActivity(newServerDrivenIntent<ServerDrivenActivity>(RequestData("https://usebeagle.io/start/welcome")))
             }
     }
 ```
