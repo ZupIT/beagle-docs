@@ -191,7 +191,7 @@ To do server-driven requisitons to a backend it's mandatory to customize the net
 **Step 5: Show the screen**
 
 Now you can show a screen initialized by a BFF´s Endpoint as following:
-```markup
+```kotlin
     class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
             override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
