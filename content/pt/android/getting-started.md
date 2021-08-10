@@ -186,6 +186,19 @@ Atualize novamente o seu `AndroidManifest.xml` e defina a `AppApplication` que f
 Para fazer requisições server-driven a um backend é necessário configurar uma camada de rede. Para saber como, clique aqui!
 {{% /alert%}}
 
+**Passo 5: Mostrar a tela**
+
+Agora você pode mostrar uma tela que é inicializada por um endpoint no BFF conforme abaixo:
+```kotlin
+    class MainActivity : AppCompatActivity(R.layout.activity_main) {
+
+            override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
+                super.onCreate(savedInstanceState, persistentState)
+
+                startActivity(newServerDrivenIntent<ServerDrivenActivity>(RequestData("https://usebeagle.io/start/welcome")))
+            }
+    }
+```
 ## **Outras Customizações**
  * **Ações:** Você pode criar ações customizadas para serem executadas pelos widgets conforme interações do usuário.
  * **Animações de navegação:** Você pode customizar as animações de navegação das telas do Beagle.
