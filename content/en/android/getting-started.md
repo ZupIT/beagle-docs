@@ -188,6 +188,20 @@ Finally, you have to update your `AndroidManifest.xml` again and define the `App
 To do server-driven requisitons to a backend it's mandatory to customize the network layer. To know how, click here!
 {{% /alert%}}
 
+**Step 5: Show the screen**
+
+Now you can show a screen initialized by a BFF´s Endpoint as following:
+```markup
+    class MainActivity : AppCompatActivity(R.layout.activity_main) {
+
+            override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
+                super.onCreate(savedInstanceState, persistentState)
+
+                startActivity(newServerDrivenIntent<ServerDrivenActivity>(RequestData("/home")))
+            }
+    }
+```
+
 ## **Other Customizations**
  * **Action:** You can create custom actions to be executed by your widgets according to the user interaction.
  * **Navigation Animation:** You can customize the enter and exit animations on Beagle navigation.
