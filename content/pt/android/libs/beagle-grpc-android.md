@@ -14,9 +14,9 @@ Esta biblioteca conterá quase todas as configurações necessárias para adicio
 
 Antes de começar a configurar o Beagle para o seu sistema Android, é importante verificar se você instalou todas as versões atuais dos seguintes programas:
 
-- JDK 8+ language
+- JDK 11+ language
 - Android API level: at least 19 or higher
-- Kotlin 1.3+
+- Kotlin 1.5+
 
 ### Primeiros Passos
 
@@ -57,19 +57,14 @@ plugins {
 
 android {
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8
-    }
-
-    packagingOptions {
-        pickFirst 'META-INF/LICENSE.md'
-        pickFirst 'META-INF/LICENSE-notice.md'
+        jvmTarget = JavaVersion.VERSION_11
     }
 }
 
 dependencies {
     implementation "br.com.zup.beagle:android:${beagleVersion}"
     kapt "br.com.zup.beagle:android-processor:${beagleVersion}"
-    implementation "br.com.zup.beagle:beagle-scaffold:1.0.0"
+    implementation "br.com.zup.beagle:beagle-scaffold:1.7.1"
 }
 ```
 

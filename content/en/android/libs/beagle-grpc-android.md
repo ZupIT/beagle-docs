@@ -16,9 +16,9 @@ This lib will hold almost all necessary configuration to add gRPC into a Beagle 
 
 Before you start to configure Beagle for your Android system, it’s important to check out if you have installed all the current versions of the following programs: ‌
 
-- JDK 8+ language
+- JDK 11+ language
 - Android API level: at least 19 or higher
-- Kotlin 1.3+
+- Kotlin 1.5+
 
 ### Getting started
 
@@ -59,7 +59,7 @@ plugins {
 
 android {
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8
+        jvmTarget = JavaVersion.VERSION_11
     }
 
     packagingOptions {
