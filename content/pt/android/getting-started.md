@@ -12,8 +12,8 @@ description: Nessa seção, você irá aprender a como criar um projeto android 
 **Requisitos:**
  - Android Studio
  - minSdkVersion: 19+
- - JDK 8+ language
- - Kotlin 1.3+
+ - JDK 11+ language
+ - Kotlin 1.5+
 
 ## **Criando um projeto Android**
 
@@ -82,7 +82,7 @@ plugins {
 
 android {
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8
+        jvmTarget = JavaVersion.VERSION_11
     }
 }
 
@@ -96,7 +96,7 @@ dependencies {
 
 Insira a versão de release do Beagle no lugar de `${beagle.version}`, ou seja, coloque a versão do Beagle destacada em azul da badge acima, mas sem o **caracter v** que antecede os números de versão.
 
-Por exemplo: undefined-`ext.beagle.version = "1.8.0"`
+Por exemplo: undefined-`ext.beagle.version = "1.10.0"`
 
 {{% alert color="warning" %}}
 Lembre de sempre verificar se você está usando a versão mais recente do Beagle. Para saber disso, basta passar o mouse por cima do número da versão. Depois disso, sincronize com sua máquina.
@@ -186,6 +186,19 @@ Atualize novamente o seu `AndroidManifest.xml` e defina a `AppApplication` que f
 Para fazer requisições server-driven a um backend é necessário configurar uma camada de rede. Para saber como, clique aqui!
 {{% /alert%}}
 
+**Passo 5: Mostrar a tela**
+
+Agora você pode mostrar uma tela que é inicializada por um endpoint no BFF conforme abaixo:
+```kotlin
+    class MainActivity : AppCompatActivity(R.layout.activity_main) {
+
+            override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
+                super.onCreate(savedInstanceState, persistentState)
+
+                startActivity(newServerDrivenIntent<ServerDrivenActivity>(RequestData("https://usebeagle.io/start/welcome")))
+            }
+    }
+```
 ## **Outras Customizações**
  * **Ações:** Você pode criar ações customizadas para serem executadas pelos widgets conforme interações do usuário.
  * **Animações de navegação:** Você pode customizar as animações de navegação das telas do Beagle.

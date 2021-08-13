@@ -14,9 +14,9 @@ para configurar e adicionar o Beagle em um projeto Android.'
 ### Requisitos
 Antes de começar a configurar o Beagle para o seu sistema Android, é importante verificar se você instalou todas as versões atuais dos seguintes programas: ‌
 
-* JDK 8+ language
+* JDK 11+ language
 * Android API level: at least 19 or higher
-* Kotlin 1.3+
+* Kotlin 1.5+
 
 ### Primeiros Passos
 <hr>
@@ -45,13 +45,13 @@ Etapa 2: adicione o plugin kotlin kapt e 3 dependências no gerenciador de depen
 apply plugin: 'kotlin-kapt'
 android {
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8
+        jvmTarget = JavaVersion.VERSION_11
     }
 }
 dependencies {
-    implementation "br.com.zup.beagle:android:1.5.1"
-    kapt "br.com.zup.beagle:android-processor:1.5.1"
-    implementation "br.com.zup.beagle:beagle-defaults:0.0.4"
+    implementation "br.com.zup.beagle:android:1.10.0"
+    kapt "br.com.zup.beagle:android-processor:1.10.0"
+    implementation "br.com.zup.beagle:beagle-defaults:1.7.1"
 }
 ```
 

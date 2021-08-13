@@ -12,8 +12,8 @@ description: In this section, you'll learn how to create an Android project with
 **Requirements:**
  - Android Studio
  - minSdkVersion: 19+
- - JDK 8+ language
- - Kotlin 1.3+
+ - JDK 11+ language
+ - Kotlin 1.5+
 
 ## Starting an Android project
 
@@ -81,7 +81,7 @@ plugins {
 
 android {
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8
+        jvmTarget = JavaVersion.VERSION_11
     }
 }
 
@@ -96,7 +96,7 @@ dependencies {
 
 Insert Beagle's release version to replace ${beagle.version}`, this is necessary to put Beagle's version highlighted in a blue badge above, without the **v character**.
 
-For example: undefined-`ext.beagle.version = "1.8.0"`
+For example: undefined-`ext.beagle.version = "1.10.0"`
 
 {{% alert color="warning" %}}
 Remember to always check if you're using the latest version of Beagle. To see this information, you just have to pass your cursor above the version number. After that, sync your project.
@@ -187,6 +187,20 @@ Finally, you have to update your `AndroidManifest.xml` again and define the `App
 {{% alert color="warning" %}}
 To do server-driven requisitons to a backend it's mandatory to customize the network layer. To know how, click here!
 {{% /alert%}}
+
+**Step 5: Show the screen**
+
+Now you can show a screen initialized by a BFF´s Endpoint as following:
+```kotlin
+    class MainActivity : AppCompatActivity(R.layout.activity_main) {
+
+            override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
+                super.onCreate(savedInstanceState, persistentState)
+
+                startActivity(newServerDrivenIntent<ServerDrivenActivity>(RequestData("https://usebeagle.io/start/welcome")))
+            }
+    }
+```
 
 ## **Other Customizations**
  * **Action:** You can create custom actions to be executed by your widgets according to the user interaction.
