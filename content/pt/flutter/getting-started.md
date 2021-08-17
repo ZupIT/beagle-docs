@@ -97,7 +97,7 @@ Veja mais informações nas próximas seções:
 - [Design do sistema]({{< ref path="/flutter/customization/design-system" lang="pt" >}}): Registre imagens locais e estilos para seus componentes.
 - [Customização]({{< ref path="/flutter/customization" lang="pt" >}}): Crie seus próprios componentes, ações e operações.
 - [Contexto global]({{< ref path="/api/context/global-context" lang="pt" >}}): Aprenda como manipular o contexto global no Beagle Flutter.
-- [Analytics]({{< ref path="/resources/analytics" lang="pt" >}}): Dê informação sobre cada ação executada, como dados de navegação.
+- [Analytics]({{< ref path="/api/analytics" lang="pt" >}}): Dê informação sobre cada ação executada, como dados de navegação.
 - [Renderizador]({{< ref path="/web/commons/advanced-topics/rendering" lang="pt" >}}): Pode ser necessário interagir com o Beagle enquanto ele renderiza um componente ou executa uma ação. Este artigo mostra como usar a API de Renderização para alcançar comportamentos complexos.
 
 👉 Se você quiser saber o estado atual de desenvolvimento do Beagle Flutter, confira
