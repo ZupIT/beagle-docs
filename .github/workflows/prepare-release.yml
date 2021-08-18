@@ -5,9 +5,6 @@ on:
     tags:
       - v[0-9]+.[0-9]+.[0-9]*
 
-env:
-  AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-
 jobs:
   deploy:
     runs-on: ubuntu-18.04
@@ -17,18 +14,28 @@ jobs:
           submodules: true
           fetch-depth: 0
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+      - name: Read secrets from AWS Secrets Manager into environment variables
+        uses: abhilash1in/aws-secrets-manager-action@v1.0.1
         with:
-          hugo-version: '0.78.1'
-          extended: true
-
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+          secrets: |
+            beagle/docs/aws
+          parse-json: true
+          
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: sa-east-1
+          
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.78.1'
+          extended: true
 
       - id: version
         name: Get release tag
