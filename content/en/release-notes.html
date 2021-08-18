@@ -16,7 +16,7 @@
         }
 
         .iconSvg {
-            margin: 5px 5px 5px 0;
+            margin: 0px 15px 5px 0;
             width: 20px;
             height: 20px;
         }
@@ -84,11 +84,11 @@
 
         .content__list__item {
             display: flex;
-            align-items: center;
             text-align: justify;
             word-break: break-all;
             list-style: none;
-            color: #A9A9A9
+            color: #A9A9A9;
+            padding: 10px 0px
         }
 
         a:hover {
@@ -140,26 +140,60 @@
         <div class="background__image">
             <img src='https://docs.usebeagle.io/shared/Release.svg'>
         </div>
-        <label class='beagle__version__text'><a href="https://github.com/ZupIT/beagle/releases/tag/1.9">Version 1.9</a></label>
+        <label class='beagle__version__text'><a href="https://github.com/ZupIT/beagle/releases/tag/1.10">Version 1.10</a></label>
         <div class="block__list">
             <label class="titleList">New Functionalities</label>
             <div>
                 <ul>
                     
             <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="http://docs.usebeagle.io/v1.9/api/components/ui/pulltorefresh/">New component on iOS and Android: PullToRefresh. It's now possible to trigger an action when the user performs the "pull' touch gesture on a scrollable view.</a>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/pt/api/style/">CornerRadius now supports a different radius for each of it's edges edges</a>
             </li>
     
             <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="http://docs.usebeagle.io/v1.9/api/components/layout/gridview/">The GridView component can now be either horizontal or vertical.</a>
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="http://docs.usebeagle.io/v1.9/api/components/layout/listview/">The ListView with multiple templates and the GridView are now available in Angular and React.</a>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/resources/beagle-kapt-android/">Support for multiple Beagle modules has been added. It is now possible to use Beagle in several modules in a multi-moduled project</a>
             </li>
     
                 </ul>
-            </div>           
+            </div>
+            <label class="title__list">Impacts in Android <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Android.svg'/></label>
+            <div>
+                <ul>
+                    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/api/analytics/">Analytics has been deprecated in favor of the latest API called Analytics 2.0. The old Analytics still works but will be removed in version 2.0.</a>
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Declarative UI writing in the front end interface is discontinued. Beagle is a server-oriented UI platform and all screen code must be in the backend. Allowing this to be done on the front wnd is anti-standard and requires a lot of maintenance on team's part. It is still possible to write screens in the front end, but it will be removed in version 2.0, keeping support only for JSON (string).
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Web:
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Fixes bug where corner radius considered values as diameter instead of radius.
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Fixes bug where ListViews could cause items to unnecessarily render itself again.
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Added support for the latest version of React - version 17
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Added support for the latest version of Angular - version 12
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Improvements to network error logs.
+            </li>
+    
+                </ul>
+            </div>
         </div>
         <div class="background__image">
             <img src="https://docs.usebeagle.io/shared/People.svg">
