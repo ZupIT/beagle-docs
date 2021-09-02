@@ -15,7 +15,7 @@ description: 'Here you will find information about how to configure Beagle in a 
 
 To start using Beagle, you may configure a project from scrap or use one of our supporting libraries
 
-## Configuring a project from scrap
+## Configuring a project from scratch
 {{% alert color="warning" %}}
 In this option you will add Beagle to an Android project and configure it manually. This mode is suitable for more experienced users who are already familiar with Beagle. But of course, nothing prevents this from being your first contact!
 
