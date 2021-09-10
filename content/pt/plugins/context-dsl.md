@@ -1,5 +1,5 @@
 ---
-title: DSL do Contexto
+title: DSL Context
 weight: 211
 description: >-
   Nesta seção, você encontra informações sobre a DSL Context e como utilizá-la
@@ -9,7 +9,9 @@ description: >-
 
 ## **O que é a DSL Context?**
 
-A DSL Context foi criada para revolver dois problemas nos projetos que utilizam o Beagle: tipagem nos valores do [**Contexto**]({{< ref path="/api/context/overview" lang="pt" >}}) e na atualização dos valores do Contexto. Hoje ao inicializamos um contexto, basicamente estamos populando um mapa com chave/valor de qualquer objeto e para conseguirmos alterar esses valores utilizamos o metodo [`SetContext()`]({{< ref path="/api/actions/setcontext" lang="pt" >}}). Mas     se tratando de uma mapa de Any, não conseguimos inferir os tipos dos objetos que estão neste mapa.
+A DSL Context foi criada para revolver dois problemas nos projetos que utilizam o Beagle: **tipagem** e **atualização** dos valores no [**Contexto**]({{< ref path="/api/context/overview" lang="pt" >}}).
+
+Quando inicializamos um contexto populamos um mapa com chave/valor na qual o valor é um objeto qualquer `(Any)` e para conseguirmos alterar esses valores utilizamos o método [`SetContext()`]({{< ref path="/api/actions/setcontext" lang="pt" >}}).
 
 ```kotlin
 context = ContextData("myBoolean", false),
@@ -20,18 +22,20 @@ onInit = listOf(
             )
 ```
 
+Após uma análise dos problemas supracitados, vemos que não é possível inferir os tipos do contexto, e além disso, sempre é necessário utilizar o `SetContext` para conseguirmos alterar os valores do contexto. 
 
-Com esses dois problemas: não conseguirmos inferir o tipo e também sempre ter que utilizar o SetContext para conseguirmos alterar os valores de contexto foi que surgio a necessidade de criarmos a DSL Context. Na qual basicamente revolve o problema de tipagem alterando a maneira de se inicializar um contexto para um data class definido para conter as propriedades/chave que o contexto poderá conter e também abstrai o SetContext criando extensions dessas propriedades do contexto com metodos nas quais alteram seus valores.
+Com isso, surgiu a necessidade de criarmos uma DSL Context que revolve o problema de tipagem que altera a maneira de se inicializar um contexto para um `data class`, definindo assim com suas propriedades(chave), bem como abstrai a maneira de atualizar os dados do contexto com o `SetContext` e cria extensions dessas propriedades com métodos que alteram seus valores.
 
 {{% alert color="info" %}}
-Basicamente existem 3 tipos de contextos que a DSL Context propos resolver: Local, Global e Implícito.
+Basicamente existem 3 tipos de contextos que a DSL Context busca resolver: `Local`, `Global` e `Implícito`.
 {{% /alert %}}
 
 ## **Como funciona a DSL Context?**
 
-A DSL Context através de um Processador de anotações, são geradas extensions das classes de contexto que são anotados com o @ContextObject. Na qual para cada propriedade são criadas 2 extensions: expression e change. Sendo que a extensão expression é utilizada para conseguir resgatar um Bind.Expression contendo o seu valor e a change é utilizado para alterar o valor dessa propriedade.
+Através de um processador de anotações são geradas extensions das classes de contexto que são anotadas com **@ContextObject**, na qual para cada propriedade são criadas 2 extensions: `expression` e `change`. A extensão expression é utilizada para conseguir resgatar um Bind.Expression contendo o seu valor e change é utilizado para alterar o valor dessa propriedade.
 
 ```kotlin
+// extensões geradas
 public val MyContext.valueExpression: Bind.Expression<String>
   get() = expressionOf("@{$id.value}")
 
@@ -46,18 +50,18 @@ public fun MyContext.changeValue(value: String): SetContext {
 ```
 
 {{% alert color="info" %}}
-A DSL Context não altera o contrato JSON na qual o Beagle possui hoje
+A DSL Context **não** altera o contrato JSON na qual o Beagle já possui
 {{% /alert %}}
 
 ## Requisitos
 
 {{% alert color="info" %}}
-A DSL só está disponível a partir da versão X do Beagle
+A DSL Context só está disponível a partir da versão **X** do Beagle
 {{% /alert %}}
 
 ### Utilizando o Contexto Local com a DSL Context
 
-Usa-se a anotação @GlobalObject nos data class que você deseja atribuir como Contexto. E obrigatoriamente esse data class deve implementar uma interface chamada Context, na qual ela possui uma marcação id.
+Usa-se a anotação **@ContextObject** em data classes que você deseja atribuir como contexto e, obrigatoriamente, esses data classes devem implementar uma interface chamada `Context` que possui uma marcação id. Todos os subtipos que o contexto possa ter também deverão ser anotados.
 
 ```kotlin
 @ContextObject
@@ -69,10 +73,10 @@ data class MyContext(
 ```
 
 {{% alert color="info" %}}
-Todas as propriedades declaradas na data class devem ser var e possuir um valor default
+Todas as propriedades declaradas nas data classes devem ser var e possuir um valor default
 {{% /alert %}}
 
-Com isso, foram geradas as extensions expression e change para as propriedades value e person no arquivo chamado MyContextNormalizer:
+Com isso, foram geradas as extensions `expression` e `change` para as propriedades value e person no arquivo chamado MyContextNormalizer:
 
 ```kotlin
 public val MyContext.valueExpression: Bind.Expression<String>
@@ -118,7 +122,7 @@ public fun MyContext.changePerson(person: Bind.Expression<Person>): SetContext {
 }
 ```
 
-Para inicializarmos um Contexto Local simplemente devemos criar uma instancia deste data class criado acima e atriburimos ele no contexto de algum componente:
+Para inicializarmos um Contexto Local, devemos criar uma instância deste `data class` e atriburimos ele a um contexto de algum componente:
 
 ```kotlin
 private var myContext = MyContext("myContext",
@@ -130,7 +134,7 @@ private var myContext = MyContext("myContext",
     Container(context = myContext)
 ```
 
-Caso queira acessar a expressão de uma determinada propriedade utilizamos a extension expression:
+Caso deseje acessar a expressão de uma determinada propriedade utilize a extensão expression:
 
 ```kotlin
 Text(myContext.valueExpression),
@@ -138,16 +142,16 @@ Text(myContext.person.firstNameExpression),
 Text(myContext.person.lastNameExpression)
 ```
 
-Ou se deseja alterar o valor de uma propriedade, utiliza-se a extesion change:
+Caso deseje alterar o valor de uma das propriedades, utilize a extensão change:
 
 ```kotlin
-myContext.changeValue("new value")
 myContext.person.changeFirstName("new first name")
+myContext.changeValue("new value")
 ```
 
 ### Utilizando o Contexto Global com a DSL Context
 
-Para se criar um contexto global devemos criar um data class anotado com @GlobalContext:
+Para criar um contexto global, devemos criar um `data class` anotado com **@GlobalContext**:
 
 ```kotlin
 @GlobalContext
@@ -158,16 +162,16 @@ data class GlobalObject(
 ```
 
 {{% alert color="info" %}}
-Todas as propriedades declaradas na data class para o contexto global devem ser var e possuir um valor default
+Todas as propriedades declaradas na `data class` para o contexto global devem ser var e possuir um valor default
 {{% /alert %}}
 
-Da mesma maneira que o contexto local, são criadas a extesions para cada propriedade do seu contexto global para conseguirmos acessar e alterar os valores dele.
+Da mesma maneira que o contexto local, são criadas extesions para cada propriedade do seu contexto global para conseguirmos acessá-las e alterar seus respectivos valores.
 
-{{% alert color="info" %}}
-Na aplicação só pode existir um data class anotado com @GlobalContext
+{{% alert color="warning" %}}
+Na aplicação só pode existir uma `data class` anotada com @GlobalContext
 {{% /alert %}}
 
-Para conseguirmos utilizar o contexto global, devemos iniciar uma nova instancia da data class anotada com o @GlobalContext e através das extensions podemos acesssar/alterar os valores dele:
+Para conseguirmos utilizar o contexto global, devemos sempre iniciar uma nova instância da `data class` anotada com o @GlobalContext e através das extensões podemos acesssar/alterar os valores deste contexto:
 
 ```kotlin
 var globalObject = GlobalObject()
@@ -179,7 +183,9 @@ globalObject.person.change(Person("", "firstName global changed", "lastName glob
 
 ### Utilizando o Contexto Implicito com a DSL Context
 
-O Contexto implicito é um contexto na qual atravé de um lambda você recebe um objeto tipado como parametro para poder acessar possiveis valores que ele receba e conseguir manipular ou atributir a outros contextos. Para se declarar um contexto implicito basicamente você deve anotar a propriedade com @ImplicitContext e com isso será gerada uma funcão com o mesmo nome do Widget porém com a primeira letra minuscula na qual recebe os mesmo parametros definidos no Widget porém nas propriedades que possuiem a anotação do contexto implicito é alterado para um lambda na qual recebe como parametro um objeto primitivo ou que herde de context e retorna o mesmo tipo definido no Widget.
+O Contexto implícito é um contexto que através de um `lambda` você recebe um objeto definido como parâmetro para conseguir acessar possíveis valores que ele receba e manipular/atributir a outros contextos. 
+
+Para se declarar um contexto implícito deve-se anotar a propriedade com **@ImplicitContext**. Com isso será gerada uma funcão com o mesmo nome do Widget, porém, com a primeira letra minuscula. Este método recebe os mesmo parametros definidos no Widget, entretanto as propriedades que possuem a anotação do contexto implícito são alteradas para um lambda na qual recebe como parametro um objeto primitivo ou um data class que herde de context e retorna o mesmo tipo definido no Widget.
 
 ```kotlin
 @RegisterWidget
@@ -194,11 +200,11 @@ public fun input(hint: Bind<String>, onTextChange: ((java.lang.String) -> List<A
     Input = Input(hint, onTextChange?.invoke(java.lang.String("onTextChange")))
 ```
 
-{{% alert color="info" %}}
+{{% alert color="warning" %}}
 O Contexto implícito somente pode ser usado em custom Widgets que possuem a anotação @RegisterWidget
 {{% /alert %}}
 
-Agora, para se usar esse Widget com o contexto implicito, basicamente você deve chamar essa função gerada:
+Agora, para usar esse Widget com o contexto implicito, você deve chamar essa função gerada:
 
 ```kotlin
 input(
@@ -210,7 +216,3 @@ input(
         }
     )
 ```
-
-## Limitações
-
-//todo
