@@ -10,9 +10,11 @@ description: >-
 
 ## Introdução
 
-Você pode registrar a forma como imagens remotas serão baixadas e preenchidas nas **ImageView** fornecendo uma classe que implementa essa lógica, que foi adicionado ao Beagle 1.3.0
+Você pode registrar a forma como imagens remotas serão baixadas e preenchidas nas **ImageView** fornecendo uma classe que implementa essa lógica, que foi adicionado ao Beagle 1.3.0.
 
-Com o **BeagleImageDownloader** sendo criado no frontend sua aplicação Android, o beagle saberá qual lógica usar para baixar e configurar os componentes **Image** com **ImagePath.Remote**.
+Com o **BeagleImageDownloader** sendo criado no frontend sua aplicação Android, o Beagle sabe qual lógica usar para baixar e configurar os componentes **Image** com **ImagePath.Remote**.
+
+Siga os passos abaixo: 
 
 ### Passo 1: Adicionar as dependências
 

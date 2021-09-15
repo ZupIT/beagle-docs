@@ -10,16 +10,17 @@ description: >-
 
 ## Exibindo uma tela a partir de uma URL
 
-Para exibir uma tela **`full server-driven`**, você deve usar o método `this.newServerDrivenIntent<BeagleActivity>()` onde o `this` é a o contexto da sua tela atual.
+Para exibir uma tela **`full server-driven`**, você deve usar o método `this.newServerDrivenIntent<BeagleActivity>()` 
+- `this` é o contexto da sua tela atual.
 
 Este método requer apenas o parâmetro `ScreenRequest`
 
-Você deve seguir tal como o comando abaixo:
+Você deve seguir o comando abaixo:
 
 {{% alert color="warning" %}}
 Certifique-se de listar a sua Beagle Activity assim como nomeada em seu AndroidManifest.
 
-No exemplo abaixo a chamamos somente de &lt;BeagleActivity&gt;. Esse nome é você quem define ao criar sua BeagleActivity. Em nosso tutorial [**Criando um projeto do zero** ]({{< ref path="/android/getting-started" lang="pt" >}}), chamamos ela de `AppBeagleActivity`
+No exemplo abaixo, chame somente de &lt;BeagleActivity&gt;. Esse nome é você quem define ao criar sua BeagleActivity. No tutorial [**Criando um projeto do zero** ]({{< ref path="/android/getting-started" lang="pt" >}}), ela é chamada de `AppBeagleActivity`
 {{% /alert %}}
 
 ```kotlin
@@ -44,7 +45,7 @@ startActivity(intent)
 
 ### A classe Screen Request.
 
-A`ScreenRequest` é uma classe interna do Beagle utilizada para solicitar qual tela você deseja exibir. Você listará apenas o atributo URL referente a página que deseja carregar vinda do BFF.
+A `ScreenRequest` é uma classe interna do Beagle utilizada para solicitar qual tela você deseja exibir. Você deve listar apenas o atributo URL referente a página que deseja carregar vinda do BFF.
 
 No entanto, esse elemento possui outros atributos, que podem ser utilizados na transição e entre telas. Para saber mais sobre essa classe, veja em [**Screen Request**]({{< ref path="/api/screen-request" lang="pt" >}})
 

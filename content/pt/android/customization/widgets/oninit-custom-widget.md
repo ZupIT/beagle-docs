@@ -1,7 +1,7 @@
 ---
 title: Widget Customizado com Oninit
 weight: 133
-description: Criando um widget customizado com onInit
+description: Criando um widget customizado com onInit.
 ---
 
 ---
@@ -11,12 +11,12 @@ Atualmente no Beagle, os componentes [**Container**]({{< ref path="/api/componen
 Para criar um widget customizado com o comportamento de disparar uma lista de ações assim que for renderizado, o Beagle fornece uma forma fácil de fazer utilizando o pattern delegate através da implementação da interface `OnInitiableComponent`.
 
 {{% alert color="info" %}}
-Para esse passo-a-passo vamos focar na vinculação do `OnInitiableComponent` ao widget customizável, já que a criação dele em detalhes já foi mostrada no exemplo anterior.
+Esse passo a passo foca na vinculação do `OnInitiableComponent` ao widget customizável, já que a criação dele em detalhes já foi mostrada no exemplo anterior.
 {{% /alert %}}
 
 ### Passo 1: Vincular `OnInitiableComponent`
 
-Com o widget customizável criado, adicione a interface `OninitiableComponent`.
+Com o widget customizável criado, adicione a interface `OninitiableComponent`:
 
 ```kotlin
 @RegisterWidget
@@ -33,7 +33,7 @@ class CustomInitiableWidget(
 
 ### Passo 2: Implementar propriedade `onInit`
 
-Após adicionar a interface `OnInitiableComponent` ao widget, sobrescreva a propriedade `onInit`.
+Após adicionar a interface `OnInitiableComponent` ao widget, sobrescreva a propriedade `onInit`:
 
 ```kotlin
 @RegisterWidget
@@ -51,7 +51,7 @@ class CustomInitiableWidget(
 
 ### Passo 3: Delegar implementação
 
-Além da propriedade onInit, a interface `OnInitiableComponent` precisa da implementação dos métodos `handleOnInit` e `markToRerunOnInit`. Para facilitar e manter o padrão de comportamento do componente, o Beagle já fornece uma implementação pronta e recomendamos o seu uso, bastando somente delegar `OnInitiableComponentImpl`.
+Além da propriedade onInit, a interface `OnInitiableComponent` precisa da implementação dos métodos `handleOnInit` e `markToRerunOnInit`. Para facilitar e manter o padrão de comportamento do componente, o Beagle já fornece uma implementação pronta, é recomendado o seu uso, basta delegar `OnInitiableComponentImpl`:
 
 ```kotlin
 @RegisterWidget
@@ -69,7 +69,7 @@ class CustomInitiableWidget(
 
 ### Passo 4: Executar `handleOnInit`
 
-Por fim, com toda a configuração feita no widget, falta somente a execução do método `handleOnInit` para que a lista de ações `onInit` sejam executadas assim que a view for renderizada.
+Por fim, com toda a configuração feita no widget, falta somente a execução do método `handleOnInit` para que a lista de ações `onInit` sejam executadas assim que a view for renderizada:
 
 ```kotlin
 @RegisterWidget

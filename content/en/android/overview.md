@@ -17,7 +17,7 @@ To start using Beagle, you may configure a project from scrap or use one of our 
 
 ## Configuring a project from scratch
 {{% alert color="warning" %}}
-In this option you will add Beagle to an Android project and configure it manually. This mode is suitable for more experienced users who are already familiar with Beagle. But of course, nothing prevents this from being your first contact!
+In this option you will add Beagle to an Android project and manually configure it. This mode is suitable for more experienced users who are already familiar with Beagle.
 
 Go to the [**Getting Started**]({{< ref path="/android/getting-started.md" lang="en" >}}) section to configure Beagle in an Android application manually
 {{% /alert %}}
@@ -27,7 +27,7 @@ Go to the [**Getting Started**]({{< ref path="/android/getting-started.md" lang=
 {{% alert color="warning" %}}
 ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-scaffold?color=green&label=Beagle-Scaffold)
 
-This library will define almost all the necessary settings to start using Beagle in your project. We advise using these libraries for people who have never used Beagle before. Go to the [Beagle-Scaffold]({{< ref path="/android/libs/beagle-scaffold.md" lang="en" >}}) section to configure Beagle in an Android application
+This library will define almost all the necessary settings to start using Beagle in your project. These libraries are recommended for you who have never used Beagle before. Go to the [Beagle-Scaffold]({{< ref path="/android/libs/beagle-scaffold.md" lang="en" >}}) section to configure Beagle in an Android application
 {{% /alert %}}
 
 {{% alert color="warning" %}}

@@ -3,7 +3,7 @@ title: Validador customizado
 weight: 127
 description: >-
   Nesta seção, você encontra a descrição de como validar um formulário. Este
-  componente foi depreciado
+  componente foi depreciado.
 ---
 
 ---

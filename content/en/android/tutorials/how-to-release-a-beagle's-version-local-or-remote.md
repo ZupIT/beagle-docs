@@ -9,16 +9,19 @@ description: >-
 
 ## Configuring Gradle
 
-If you work on Android or Backend's applications, you must configure the **`gradle.properties`** files that can be found on the root folder. This configuration works on remote and local versions.
+If you work on Android or Backend's applications, you must configure the **`gradle.properties`** files that can be found in the **root folder**. This configuration works on remote and local versions.
 
-As soon as you open the file, the first step is to change the version name that will be released.  For that, you can change the **`VERSION_NAME`** variable value to the value you wish. 
+Follow the steps: 
+
+**Step 1:** Open the file;
+**Step 2:** Change the version name that will be released. Change the **`VERSION_NAME`** variable value to the value you wish. 
 
 
 {{% alert color="info" %}}
 This variable helps on referencing the version name when you import Beagle. 
 {{% /alert %}}
 
-Besides, you have to add a variable called **`RELEASE_SIGNING_ENABLED`** and attribute it to the `false` value. That means you don't need to sign a version, once that this configuration allows a Beagle's version release in local way or to an own repository. 
+Besides, you have to add a variable called **`RELEASE_SIGNING_ENABLED`** and attribute it to the `false` value. You don't need to sign a version, once that this configuration allows a Beagle's version release in local way or to an own repository. 
 
 After you finish these configurations, you must have on your gradel the following variables according to the name you chose to your version (on this example, **`beagle-test`** is used):
 
@@ -71,19 +74,21 @@ nexus {
 ```
 
 
-## Publishing in a local repository
+## Publish in a local repository
 
-At the end of the **`gradle.properties`** configuration, you must run some **gradle's commands**.
+At the end of the **`gradle.properties`** configuration, you must run some **gradle's commands**:
 
-To do so, go to the root folder on the platform you wish to release the version (Android or Backend) and, in the terminal of your preference, run the following command:
+1. Go to the root folder on the platform you wish to release the version (Android or Backend);
 
-**If you're using a Windows terminal:**
+2. In the terminal of your preference, run the following command:
+
+- **If you're using a Windows terminal:**
 
 ```bash
 gradlew clean build publishToMavenLocal
 ```
 
-**In case you're using another terminal:**
+- **In case you're using another terminal:**
 
 ```bash
 ./gradlew clean build publishToMavenLocal

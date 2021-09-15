@@ -14,7 +14,7 @@ Um componente deve implementar somente uma dessas interfaces, ou `SingleChildCom
 
 ## SingleChildComponent
 
-Widgets customizados que renderizem um unico componente do Beagle devem implementar a interface `SingleChildComponent`.
+Widgets customizados que renderizem um único componente do Beagle devem implementar a interface `SingleChildComponent`.
 
 ### Passo 1: Vincular SingleChildComponent
 
@@ -35,7 +35,7 @@ class CustomChildWidget(
 
 ### Passo 2: Implementar a propriedade `child`
 
-Após adicionar a interface `SingleChildComponent` ao widget, sobrescreva a propriedade `child`.
+Após adicionar a interface `SingleChildComponent` ao widget, sobrescreva a propriedade `child`:
 
 ```kotlin
 @RegisterWidget
@@ -53,7 +53,7 @@ class CustomChildWidget(
 
 ### Passo 3: Utilize o componente
 
-Para usar a view gerada a partir do componente `child`, basta considera-lo como um `ViewConvertable` e chamar o método `buildView`.
+Para usar a view gerada a partir do componente `child`, basta considerá-lo como um `ViewConvertable` e chamar o método `buildView`:
 
 ```kotlin
 @RegisterWidget
@@ -75,7 +75,7 @@ Widgets customizados que renderizem um ou mais componentes do Beagle devem imple
 
 ### Passo 1: Vincular MultiChildComponent
 
-Com o widget customizado criado, adicione a interface `MultiChildComponent`.
+Com o widget customizado criado, adicione a interface `MultiChildComponent`:
 
 ```kotlin
 @RegisterWidget
@@ -92,7 +92,7 @@ class CustomChildWidget(
 
 ### Passo 2: Implementar a propriedade `children`
 
-Após adicionar a interface `MultiChildComponent` ao widget, sobrescreva a propriedade `children`.
+Após adicionar a interface `MultiChildComponent` ao widget, sobrescreva a propriedade `children`:
 
 ```kotlin
 @RegisterWidget
@@ -110,7 +110,7 @@ class CustomChildWidget(
 
 ### Passo 3: Utilize o componente
 
-Para usar a view gerada a partir do componente `children`, basta considerar cada um como `ViewConvertable` e chamar o método `buildView` de cada.
+Para usar a view gerada a partir do componente `children`, basta considerar cada um como `ViewConvertable` e chamar o método `buildView` de cada:
 
 ```kotlin
 @RegisterWidget

@@ -7,7 +7,7 @@ description: >-
 ---
 
 ---
-
+### O que é? 
 A **comunicação entre componentes** é uma forma de compartilhar informações com o uso de Observables que, de modo geral, emitem notificações sempre que uma mudança acontece com eles.
 
 Abaixo, você verá como fazer a configuração dessa comunicação usando o [**Contexto, um componente do Beagle.** ]({{< ref path="/api/context/" lang="pt" >}})
@@ -16,9 +16,9 @@ Abaixo, você verá como fazer a configuração dessa comunicação usando o [**
 
 ### O que vou comunicar?
 
-Nesse exemplo, consumiremos o resultado de uma API pública que retorna valores de cotação das moedas no mercado ou _Currency Rates_ .
+Nesse exemplo, será consumido o resultado de uma API pública que retorna valores de cotação das moedas no mercado ou _Currency Rates_ .
 
-O endpoint abaixo retorna um JSON semelhante. Listamos somente os dados que vamos utilizar, mas vale dizer que a resposta desse JSON é bem maior.
+O endpoint abaixo retorna um JSON semelhante. Foi listado  somente os dados que serão utilizados, mas a resposta desse JSON é bem maior.
 
 - Endpoint: [**https://api.exchangeratesapi.io/latest?base=USD**](https://api.exchangeratesapi.io/latest?base=USD)
 
@@ -46,7 +46,7 @@ Para fazer a comunicação, basta seguir os próximos passos:
 
 ### Passo 1: Criar a classe Currency
 
-De acordo com a resposta da API de exemplo, escrevemos a classe abaixo para estruturar os dados. Essa é a primeira estrutura:
+De acordo com a resposta da API de exemplo, escreva a classe abaixo para estruturar os dados. Essa é a primeira estrutura:
 
 ```text
 data class Currency(
@@ -59,7 +59,7 @@ data class Currency(
 
 ### Passo 2: Criar o Container
 
-Criada a primeiro estrutura, é o momento de estruturar o Container que conterá os componentes que desejamos exibir. É nele que listaremos os componentes e também o **`*Contexto`** para esse grupo de componentes.
+Criada a primeiro estrutura, é o momento de estruturar o Container que conterá os componentes que desejamos exibir. Liste nele os componentes e o **`*Contexto`** para o grupo de componentes também.
 
 {{% alert color="info" %}}
 É importante lembrar que o **`*Contexto`** , nesse caso, é a funcionalidade do Beagle que registra informações de um componente e que podem ser recuperadas em outro componente. Ele **não é** o _contexto\(Context\)_ das views no Android.
@@ -186,11 +186,11 @@ A estrutura dessa página tem 1 título, 1 botão e 4 _`text views`_ que receber
 
 - O **título** é meramente ilustrativo para exemplificar a estrutura e hierarquia da página.
 - O **botão** é utilizado para disparar a resposta da API e chamar a função `SetContext` para atribuir o resultado da resposta ao contexto.
-- Os 4 **text views** receberão as informações vindas do contexto.
+- Os 4 **text views** recebem as informações vindas do contexto.
 
 ### O Botão e as funções `SendRequest` e **`SetContext`**
 
-Para configurar o botão é preciso definir primeiro, a função que será acionada quando o botão for clicado, ou seja, você deve configurar o atributo `onPress` do botão. A função que deve ser chamada no clique é a `SendRequest` e ela será responsável por requisitar a resposta da API configurada nela.
+Defina a função que será acionada quando o botão for clicado, ou seja, você deve configurar o atributo `onPress` do botão. A função que deve ser chamada no clique é a `SendRequest` e ela será responsável por requisitar a resposta da API configurada nela.
 
 Veja abaixo os parâmetros dessa função cujo exemplo está **no código do container acima.**
 
@@ -228,6 +228,6 @@ Aqui temos somente o atributo `text` desse componente textual, porque é ele que
 
 E agora a tela está pronta! Foi configurado um exemplo de contexto e demonstrado como acontece a comunicação entre os componentes.
 
-No final deste exemplo a sua tela deve estar assim:
+No final, a sua tela deve estar assim:
 
 ![](/shared/screenshot_1594752619.png)

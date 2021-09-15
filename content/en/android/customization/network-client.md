@@ -2,17 +2,17 @@
 title: Network Client
 weight: 126
 description: >-
-  You will find here, information about Beagle's network client and how to
-  modify it
+  In this section, you will find information about Beagle's network client and how to
+  modify it.
 ---
 
 ---
 
 ## Introduction 
 
-This interface defines how the services requests are configured, to use it, you need to create a class that implements a `HttpClient` interface.
+This interface defines how the services requests are configured, and to use it, you need to create a class that implements a `HttpClient` interface.
 
-You can add headers to your requests, define method request, body response, data response, run cryptography, etc. 
+You can add headers to your requests, define method request, body response, data response, run cryptography, etc. See: 
 
 ```kotlin 
 interface HttpClient {
@@ -89,7 +89,7 @@ This dependency is necessary, because the class that implements `HttpClient` wil
 
 Create an object and choose a name for it, for example, `CoroutineDispatchers`.
 
-This object is responsible for configuring **CoroutineDispatchers** and will dictate which thread the tasks will run.
+This object is responsible for configuring **CoroutineDispatchers** and will dictate which thread the tasks will run:
 
 ```kotlin
 import kotlinx.coroutines.CoroutineDispatcher
@@ -116,7 +116,7 @@ internal object CoroutineDispatchers {
 ### Step 3: Create a HttpURLConnectionExtensions file
 
 Create a file and choose a name for it, for example,`HttpURLConnectionExtensions`. 
-This file is responsible for containing methods returning the **HttpURLConnection** rule, so you will use these methods in the HttpClientDefault class.
+This file is responsible for containing methods returning the **HttpURLConnection** rule, so you will use these methods in the HttpClientDefault class:
 
 ```kotlin
 import java.lang.Exception
@@ -151,7 +151,7 @@ Create a class and choose a name for it, for example `HttpClientDefault`.
 
 HttpClientDefault class defines how the services requests are configured. To use it, you need to create a class that implements the `HttpClient` interface.
 
-This configuration is long, so copy and paste the class below. You may modify it later.
+This configuration is long, so copy and paste the class below. You may modify it later:
 
 ```kotlin
 import br.com.zup.beagle.android.annotation.BeagleComponent
@@ -290,9 +290,12 @@ class HttpClientDefault : HttpClient, CoroutineScope {
 
 Create a class and choose a name for it, for example `HttpClientFactoryDefault`.
 
-HttpClientFactoryDefault class is responsible for creating the HttpClient instance for Beagle. This class is particularly useful when you need to configure or pass parameters in your HttpClient instantiation. To use it, you need to create a class that implements the `HttpClientFactory` interface.
+HttpClientFactoryDefault class is responsible for creating the HttpClient instance for Beagle. This class is particularly useful when you need to configure or pass parameters in your HttpClient instantiation. 
 
-As an example, you can copy and paste the class below. You may modify it later.
+To use it:
+- Create a class that implements the `HttpClientFactory` interface.
+
+As an example, you can copy and paste the class below. You may modify it later:
 
 ```kotlin
 import br.com.zup.beagle.android.annotation.BeagleComponent

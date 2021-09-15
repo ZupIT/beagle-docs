@@ -2,7 +2,7 @@
 title: Customized Serializer  Deserializer
 weight: 134
 description: >-
-  In this section, you will find a description of how to create a Serializer /
+  In this section, you will find information on how to create a Serializer /
   Deserializer using Beagle and details of the methods it implements.
 ---
 

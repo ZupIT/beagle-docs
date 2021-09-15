@@ -10,7 +10,7 @@ description: >-
 
 ## Introdução
 
-A interface StoreHandler define um protocolo que permite personalizar a forma como o cache é manipulado no banco de dados e na memória. 
+A interface StoreHandler define um protocolo que permite personalizar a forma como o cache é manipulado no banco de dados e na memória:
 
 ```kotlin
 interface StoreHandler {
@@ -25,7 +25,7 @@ interface StoreHandler {
 }
 ```
 
-O enum StoreType define, por meio de atributos, se os dados serão manipulados em disco ou na memória. 
+O enum StoreType define, por meio de atributos, se os dados serão manipulados em disco ou na memória:
 
    * `DATABASE` representa o disco.
    * `MEMORY` representa a memória.
@@ -42,7 +42,8 @@ enum class StoreType {
 A interface LocalStore permite mapear as ações de salvar, restaurar, deletar e selecionar tudo.
 
 Essa interface permite você criar regras de como os dados serão manipulados em uma classe. Por exemplo: você pode criar uma classe e usar a interface para fazer uma regra de como os dados serão manipulado em disco.
-exemplo criar uma classe e usar essa interface para fazer uma regra de como os dados serão manipulado em disco.
+
+- Exemplo: Criar uma classe e usar essa interface para fazer uma regra de como os dados serão manipulado em disco:
 
 ```kotlin
 interface LocalStore {
@@ -59,7 +60,7 @@ Para criar uma camada de cache customizada, siga os próximos passos:
 
 ### Passo 1: Criar o object MemoryLocalStore
 
-É necessário você criar duas classes que implementem a interface `LocalStore`: a MemoryLocalStore e a DatabaseLocalStore. 
+Crie duas classes para implementar a interface `LocalStore`: a MemoryLocalStore e a DatabaseLocalStore. 
 
 Com essas interfaces, você pode mapear as ações de salvar, restaurar, deletar e selecionar tudo, como mostra o exemplo abaixo:
 
@@ -89,7 +90,7 @@ internal object MemoryLocalStore : LocalStore {
 
 ### Passo 2: Criar a classe DatabaseLocalStore
 
-Agora, você deve criar uma segunda classe que, para isso, depende da criação do StoreHandler, que é a DatabaseLocalStore. Esse é o mesmo arquivo declarado com algumas classes adjacentes que servem para a classe DatabaseLocalStore, mas que poderiam estar em arquivos diferentes, se você quiser. 
+Crie uma segunda classe que depende da criação do StoreHandler, que é a DatabaseLocalStore. Esse é o mesmo arquivo declarado com algumas classes adjacentes que servem para a classe DatabaseLocalStore, mas que poderiam estar em arquivos diferentes, se você quiser. 
 
 Veja como funciona no exemplo a seguir:
 

@@ -2,7 +2,7 @@
 title: RootView
 weight: 121
 description: >-
-  Interface RootView holder the reference of activity or fragment.
+  In this section, you will find information about Interface RootView holder the reference of activity or fragment.
 ---
 
 ---
@@ -11,7 +11,7 @@ description: >-
 
 The RootView interface holds the reference of an activity or fragment. Through the interface methods, you have a reference to context, life cycle, ViewModelStore and parent view Id. 
 
-RootView is available as an attribute in the ViewConvertable and Action interfaces.
+RootView is available as an attribute in the ViewConvertable and Action interfaces:
 
 ```kotlin
 interface RootView {
@@ -27,7 +27,7 @@ interface RootView {
 ```
 ### getContext()
 
-Returns the context.
+Returns the context:
 
 ```kotlin
 fun getContext(): Context
@@ -35,7 +35,7 @@ fun getContext(): Context
 
 ### getLifecycleOwner()
 
-Returns the lifecycle.
+Returns the lifecycle:
 
 ```kotlin
 fun getLifecycleOwner(): LifecycleOwner
@@ -43,7 +43,7 @@ fun getLifecycleOwner(): LifecycleOwner
 
 ### getViewModelStoreOwner()
 
-Returns a ViewModelStore for activity and fragment.
+Returns a ViewModelStore for activity and fragment:
 
 ```kotlin
 fun getViewModelStoreOwner(): ViewModelStoreOwner
@@ -51,7 +51,7 @@ fun getViewModelStoreOwner(): ViewModelStoreOwner
 
 ### getParentId()
 
-Returns the id of the parent View that encapsulates all rendered content.
+Returns the id of the parent View that encapsulates all rendered content:
 
 ```kotlin
 fun getParentId(): Int
@@ -59,7 +59,8 @@ fun getParentId(): Int
 
 ## ActivityRootView
 
-The ActivityRootView class is responsible for keeping the Activity reference of which a [** loadView **] method (/ pt / docs / tutorials / adding-the-beagle-to-a-part-of-the-native-screen / adding- a-component-beagle-server-driven /) is called.
+The ActivityRootView class is responsible for keeping the Activity reference of which a [**loadView method**]({{< ref path="android/tutorials/adding-beagle-to-a-part-of-a-native-screen\adding-a-beagle-server-driven-component.md" lang="en" >}}) is called: 
+
 
 ```kotlin
 class ActivityRootView(
@@ -85,7 +86,7 @@ class ActivityRootView(
 
 ## FragmentRootView
 
-The FragmentRootView class is responsible for keeping the Fragment reference of which a [** loadView **] method (/ pt / docs / tutorials / adding-the-beagle-to-a-part-of-the-native-screen / adding a-component-beagle-server-driven /) is called.
+The FragmentRootView class is responsible for keeping the Fragment reference of which a [**loadView method**]({{< ref path="android/tutorials/adding-beagle-to-a-part-of-a-native-screen\adding-a-beagle-server-driven-component.md" lang="en" >}}) is called: 
 
 ```kotlin
 class FragmentRootView(

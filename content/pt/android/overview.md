@@ -13,11 +13,11 @@ description: 'Aqui você encontrará informações sobre como configurar um proj
 
 <hr>
 
-Para começar a utilizar o beagle, você pode configurar um projeto do zero ou usar como auxilio as nossas bibliotecas (libs) de apoio:
+Para utilizar o Beagle, você pode configurar um projeto do zero ou usar como auxílio as bibliotecas (libs) de apoio:
 
-## Configurando um projeto do Zero
+## Configurando um projeto do Zero 
 {{% alert color="warning" %}}
-Nessa opção você adicionará o Beagle a um projeto no Android e o configurará manualmente. Esse modo é indicado para usuarios mais experientes e que já tenham familiaridade com o Beagle. Mas é claro, nada impepede que esse seja o seu primeiro contato!
+Nessa opção você adiciona o Beagle a um projeto no Android e pode configurar manualmente. Esse modo é indicado para usuários mais experientes e que já tenham familiaridade com o Beagle. 
 
 Vá para a seção [**Primeiros-Passos**]({{< ref path="/android/getting-started.md" lang="pt" >}}) para configurar o Beagle em uma aplicação Android manualmente
 {{% /alert %}}
@@ -27,7 +27,7 @@ Vá para a seção [**Primeiros-Passos**]({{< ref path="/android/getting-started
 {{% alert color="warning" %}}
 ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-scaffold?color=green&label=Beagle-Scaffold)
 
-Esta biblioteca irá definir quase todas as configurações necessárias para começar a usar o Beagle em seu projeto. Aconselhamos o uso dessas bibliotecas para pessoas que nunca usaram o Beagle antes. Vá para a seção [Beagle-Scaffold]({{< ref path="/android/libs/beagle-scaffold.md" lang="pt" >}}) para configurar o Beagle em uma aplicação Android
+Esta biblioteca define quase todas as configurações necessárias para começar a usar o Beagle em seu projeto. O uso dessas bibliotecas é recomendado para pessoas que nunca usaram o Beagle. Vá para a seção [Beagle-Scaffold]({{< ref path="/android/libs/beagle-scaffold.md" lang="pt" >}}) para configurar o Beagle em uma aplicação Android
 {{% /alert %}}
 
 {{% alert color="warning" %}}

@@ -2,8 +2,7 @@
 title: BeagleImageDownloader
 weight: 121
 description: >-
-  In this section, you will find the description of the BeagleImageDownloader class and details of the
-   methods that implement it.
+  In this section, you will find the description of the BeagleImageDownloader class and details of the methods that implement it.
 ---
 
 ---

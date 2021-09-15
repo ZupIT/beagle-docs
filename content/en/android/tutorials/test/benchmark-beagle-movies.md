@@ -48,7 +48,7 @@ The advantage of using Beagle is that **you only develop the screen once**, whil
 
 ### iOS
 
-See the performance difference on native and server-driven screens, considering the initialization process, screen render services request and reponse.
+See the performance difference on native and server-driven screens, considering the initialization process, screen render services request and reponse:
 
 | Phases                        | Server-Driven screen past time \(in seconds\) | Native screens past time \(in seconds\) |
 | :---------------------------- | :-------------------------------------------- | :-------------------------------------- |
