@@ -112,4 +112,4 @@ fun screen() = Screen(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/shared/operadoresaritmeticos%20%281%29.gif)
+{{< figure src="/shared/operadoresaritmeticos%20%281%29.gif" width="250">}}

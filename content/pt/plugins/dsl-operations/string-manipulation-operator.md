@@ -64,4 +64,4 @@ fun screen() = Screen(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/shared/string.png)
+{{< figure src="/shared/string.png" width="250">}}

@@ -127,4 +127,5 @@ fun screen() = Screen(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/shared/comparison.png)
+{{< figure src="/shared/comparison.png" width="200">}}
+
