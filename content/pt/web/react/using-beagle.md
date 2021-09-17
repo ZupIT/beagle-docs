@@ -18,26 +18,25 @@ Execute um dos comandos abaixo para gerar os arquivos que serão usados pela bib
 
 **yarn
 ```text
-yarn beagle
+yarn beagle init
 ```
 
 **npm
 ```text
-beagle
+npx beagle init
 ```
 
 Feito isso, o Beagle irá retornar uma pergunta.
 
 **Do you want to replace "app.tsx" content with the Beagle configuration (y or n)?**
 
-**Você deseja substituir o conteúdo "app.tsx" pela configuração do Beagle?**  
 Caso digite **"y"** a app.tsx do projeto será substituída por outra com a configuração do Beagle, caso digite **"n"** o arquivo não vai ser substituído e a configuração terá que ser feita manualmente.
 
 Ao final deste processo, será gerado um novo arquivo em seu projeto:
 
 - **beagle-service.ts**
 
-### Passo 2: Criação do JSON de definição do layout
+### **Passo 2: Criação do JSON de definição do layout**
 
 Para uma melhor experiencia o JSON deve ser criado por meio de um BFF, como configurar um BFF você encontra [**aqui**]({{< ref path="/backend/get-started/creating-a-project-from-scratch" lang="pt" >}}), neste exemplo usaremos o JSON que está disponibilizado na URL http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/welcome:
 
@@ -75,7 +74,7 @@ A biblioteca Beagle já vem com diversos componentes pré-definidos e prontos pa
 O código acima cria um JSON com dois desses componentes: container e text.
 {{% /alert %}}
 
-### Passo 3: Configuração do Beagle Service
+### **Passo 3: Validando a configuração do Beagle Service**
 
 Depois de criado o seu JSON, a sua estrutura deve estar parecida com a imagem a seguir:
 
@@ -106,12 +105,12 @@ Neste ponto da configuração podemos definir a baseUrl do servidor externo do B
 É importante ressaltar que, para este exemplo, estamos usando o[ **typescript**](https://www.typescriptlang.org/) junto ao projeto. Caso você não tenha na sua máquina, será preciso instalar.
 {{% /alert %}}
 
-### Passo 4: Usando o BeagleRemoteView
+### **Passo 4: Usando o BeagleRemoteView**
 
 Agora você precisa especificar, dentro da aplicação, o local em que os componentes serão renderizados. Para isso, a biblioteca do Beagle fornece o **BeagleRemoteView** e o **BeagleProvider**. Abra o arquivo do componente que você deseja renderizar o layout e altere para ficar como o exemplo a seguir, no route adicione o caminho relativo ao JSON remoto: /welcome.
 
 {{% alert color="info" %}}
-No exemplo alteramos a App.ts
+  Por padrão a configuração cria esse componente no arquivo App.tsx, mas você pode renderizar telas Beagle em qualquer componente.
 {{% /alert %}}
 
 ```text
