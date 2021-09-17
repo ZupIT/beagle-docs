@@ -2,10 +2,11 @@
 title: How to make communication between components
 weight: 218
 description: >-
-  On this section, you'll find the step by step to configure the communication between components and context
+  On this section, you'll find the step by step to configure the communication between components and context 
 ---
 
 ---
+### What is it? 
 
 The **communication between components** is a way to share information with the use of Observables that, in general, issue notifications when a change happen with them.
 
@@ -59,7 +60,7 @@ data class Currency(
 
 ### Step 2: Create a Container
 
-Once you create the first structure, it's time to structure the Container that will contain all the components you want to show. You have to list the components and also the  **`Context`**` to this components group.
+Structure the Container, it will contain all the components you want to show. You have to list the components and also the  **`Context`**` to this components group.
  
 {{% alert color="info" %}}
 It is important to remember that this `Context` is a Beagle's functionality that registers components information and that can be recovered in another component. It is not the view context of Android.
@@ -216,13 +217,13 @@ See the the `SetContext` attributes below:
 
 ### Text
 
-Here you have 4 visual components assigned to the context. You will notice that it is here that the communication between components happens . In the previous step, an information was sent to the context and now we will recover it.
+Here you have 4 visual components assigned to the context. You will notice that it is here that the communication between components happens. In the previous step, an information was sent to the context and now you will recover it.
 
-We have only text attribute of this textual component, because it is this one that will define the information to be shown.
+You have only text attribute of this textual component, because it is this one that will define the information to be shown.
 
 | Attribute | Description                                                                                                                                                                                                                                                                   |
 | :-------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| text      | VString values that will be show on the screen. To recover the value of the context, use the `"@{myContext.currency.eur}"` context, meaning that you have to define the path to access the saved information in the context using `"@{ID_DO_CONTEXTO+PATH+NOME_DO_ATRIBUTO}"` |
+| text      | VString values that will be show on the screen. To recover the value of the context, use the `"@{myContext.currency.eur}"` context, meaning that you have to define the path to access the saved information in the context using `"@{CONTEXT_ID_+PATH+ATTRIBUTE_NAME}"` |
 
 ### The screen
 

@@ -8,7 +8,7 @@ description: "Nesta seção, você confere como criar um formulário e submetê-
 
 ## Introdução
 
-Para este tutorial, iremos usar algumas [**ações**]({{< ref path="/api/actions" lang="pt" >}}) e também APIs:
+Para este tutorial, você irá usar algumas [**ações**]({{< ref path="/api/actions" lang="pt" >}}) e também APIs:
 
 **Actions**
 
@@ -21,15 +21,15 @@ Para este tutorial, iremos usar algumas [**ações**]({{< ref path="/api/actions
 - [**Binding**]({{< ref path="/api/context#binding" lang="pt" >}})
 - [**Expressões**]({{< ref path="/api/context#binding" lang="pt" >}})
 
-Apesar do conceito [**Server-Driven**]({{< ref path="/key-concepts#server-driven-ui" lang="pt" >}}) trabalhar componentes separadamente, é possível realizar a transmissão das informações para uma API e é o que vamos demonstrar abaixo.
+Apesar do conceito [**Server-Driven**]({{< ref path="/key-concepts#server-driven-ui" lang="pt" >}}) trabalhar componentes separadamente, é possível realizar a transmissão das informações para uma API, veja abaixo: 
 
 ## Exemplo de Uso
 
-Neste exemplo, iremos utilizar os componentes [**TextInput**]({{< ref path="/api/components/ui/textinput" lang="pt" >}}) e [**Button**]({{< ref path="/api/components/ui/button" lang="pt" >}}) para simularmos uma tela de Login.
+Neste exemplo, utilize os componentes [**TextInput**]({{< ref path="/api/components/ui/textinput" lang="pt" >}}) e [**Button**]({{< ref path="/api/components/ui/button" lang="pt" >}}) para simular uma tela de Login.
 
 ### Passo 1: Criar uma tela de Login
 
-Até este momento, vamos apenas sinalizar ao Beagle de que ele deve renderizar na tela dois componentes TextInputs e um componente Button para representarmos a tela de Login.
+ Sinalize ao Beagle que ele deve renderizar na tela dois componentes TextInputs e um componente Button para representarmos a tela de Login.
 
 {{< tabs id="T101" >}}
 {{% tab name="JSON" %}}
@@ -73,7 +73,7 @@ Container(
 
 ### Passo 2: Configurar o SetContext
 
-Agora utilize uma **ação** chamada [**SetContext**]({{< ref path="/api/actions/setcontext" lang="pt" >}}), que altera um [**contexto**]({{< ref path="/api/context" lang="pt" >}}) **específico** em uma tela. Isto é necessário para dar vida à tela e fazer com que os dados que forem digitados nela sejam enviados para uma API.
+Agora utilize a **ação** [**SetContext**]({{< ref path="/api/actions/setcontext" lang="pt" >}}), que altera um [**contexto**]({{< ref path="/api/context" lang="pt" >}}) **específico** em uma tela. Isto é necessário para dar vida à tela e fazer com que os dados que forem digitados nela sejam enviados para uma API.
 
 Neste cenário, o contexto é que irá guardar os dados digitados de nome do usuário e da senha para que, posteriormente, encaminhar estes dados para a API.
 
@@ -173,33 +173,33 @@ Container(
 {{% /tab %}}
 {{< /tabs >}}
 
-Neste exemplo, utilizamos o evento `onChange` do próprio TextInput que é chamado sempre que o usuário digita um texto novo no input. Dentro do onChange, existe um [**contexto implícito**]({{< ref path="/api/context#2-contextos-implícitos" lang="pt" >}}) chamado `onChange` no qual o `value` é o último valor digitado pelo usuário.
+Neste exemplo, o evento `onChange` do próprio TextInput é chamado sempre que o usuário digita um texto novo no input. Dentro do onChange, existe um [**contexto implícito**]({{< ref path="/api/context#2-contextos-implícitos" lang="pt" >}}) chamado `onChange` no qual o `value` é o último valor digitado pelo usuário.
 
 #### OnChange
 
-Ainda dentro deste contexto, a ação de SetContext será executada a cada caractere digitado pelo usuário. Por isso que neste SetContext é obrigatório o `contextId`, que fará referência ao contexto que será alterado, além do `value` que representa o novo valor e do `path` que é o caminho dentro do contexto que iremos alterar.
+Ainda dentro deste contexto, a ação de SetContext será executada a cada caractere digitado pelo usuário. O SetContext é obrigatório o `contextId`, que fará referência ao contexto que será alterado, além do `value` que representa o novo valor e do `path` que é o caminho dentro do contexto que você deve alterar.
 
 #### Path
 
-É o único parâmetro opcional. Isto significa que, caso ele não passe, o SetContext irá alterar a raiz do contexto para que o `value` seja o novo valor. No exemplo acima, estamos deixando claro que queremos alterar somente a chave `username` e `password` nos seus respectivos SetContexts.
+É o único parâmetro opcional. Isto significa que, caso ele não passe, o SetContext irá alterar a raiz do contexto para que o `value` seja o novo valor. No exemplo acima, é claro que você deve alterar somente a chave `username` e `password` nos seus respectivos SetContexts.
 
-O poder do contexto + expressões é bem grande, pois é possível que, dentro de uma Action, você referencie o contexto implícito de quem a executou. No exemplo que vimos, é o caso do `onChange`, mas é possível fazer referência a outros contextos dentro de um contexto implícito, assim como usar múltiplas expressões.
+O poder do contexto + expressões é bem grande, pois é possível que, dentro de uma Action, você referencie o contexto implícito de quem a executou. No exemplo, é o caso do `onChange`, mas é possível fazer referência a outros contextos dentro de um contexto implícito, assim como usar múltiplas expressões.
 
 {{% alert color="info" %}}
 Você pode inicializar uma tela com valores pré-definidos no contexto. Com isso, é possível que a tela renderize esses valores utilizando expressões.
 
-No exemplo visto acima, inicializamos os campos `username` e `password` com valores vazios vindo do contexto.
+No exemplo acima, os campos `username` e `password` foram inicializados com valores vazios que vieram do contexto.
 {{% /alert %}}
 
 ### Passo 3: Enviar dados para uma API
 
-Até o momento, o que fizemos foi "salvar" estes valores no contexto para que, a partir desta etapa, possamos enviá-los para uma API por meio de uma requisição.
+O que foi feito até agora: "salvar" os valores no contexto para que, a partir desta etapa, você envie para uma API por meio de uma requisição.
 
 {{% alert color="warning" %}}
 Esta etapa não tem nenhuma diferença visual do passo anterior.
 {{% /alert %}}
 
-Para finalizar o fluxo de Login, vamos agora adicionar uma [**Action**]({{< ref path="/api/actions" lang="pt" >}}) chamada [**SendRequest**]({{< ref path="/api/actions/sendrequest" lang="pt" >}}) que, basicamente, permite fazer uma requisição HTTP e, no caso do `onSuccess`, mostrar um [**Alert**]({{< ref path="/api/actions/alert" lang="pt" >}}) dando boas-vindas ao usuário.
+Para finalizar o fluxo de Login, adicione uma [**Action**]({{< ref path="/api/actions" lang="pt" >}}) chamada [**SendRequest**]({{< ref path="/api/actions/sendrequest" lang="pt" >}}) que, basicamente, permite fazer uma requisição HTTP e, no caso do `onSuccess`, mostrar um [**Alert**]({{< ref path="/api/actions/alert" lang="pt" >}}) dando boas-vindas ao usuário.
 
 {{< tabs id="T103" >}}
 {{% tab name="JSON" %}}
@@ -349,4 +349,4 @@ Ao executar este código, você deve preencher os campos e pressionar o botão "
 
 Feito isso, o evento `onPress` irá executar o SendRequest enviando os dados que estão dentro do Context com o ID `credentials`.
 
-Assim que o SendRequest for feito e a requisição for concluída, o evento `onSuccess` irá executar a [**Action Alert**]({{< ref path="/api/actions/alert" lang="pt" >}}) que irá mostrar um alerta contendo os dados retornados da API.
+Assim que o SendRequest for feito e a requisição for concluída, o evento `onSuccess` executa a [**Action Alert**]({{< ref path="/api/actions/alert" lang="pt" >}}) que mostrar um alerta contendo os dados retornados da API.

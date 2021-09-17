@@ -2,16 +2,14 @@
 title: Deep Link Handler
 weight: 122
 description: >-
-  You will find a description about DeepLinkHandler class and methods
-  details.
+  In this section, you will find a description about DeepLinkHandler class and its methods details.
 ---
 
 ---
 
 ## Introduction
 
-**`DeepLinkHandler`** is a **interface** that defines how to configure navigation between a
-**Server-Driven screen** and a **native screen.**
+**`DeepLinkHandler`** is a **interface** that defines how to configure navigation between a **Server-Driven screen** and a **native screen.**
 
 ## Example
 
@@ -31,7 +29,7 @@ class AppDeepLinkHandler : DeepLinkHandler {
 }
 ```
 
-In the **getDeepLinkIntent** method, you can configure the navigation screens of the server-driven ui flows to their native screens, making sure that Beagle recognizes your rule.
+In the **getDeepLinkIntent** method, you can configure the navigation screens of the server-driven UI flows to their native screens, making sure that Beagle recognizes your rule.
 
 | **Attribute**          | **Type**             |                                                      **Definition**                                                      |
 | :--------------------- | :------------------- | :----------------------------------------------------------------------------------------------------------------------: |
@@ -42,8 +40,8 @@ In the **getDeepLinkIntent** method, you can configure the navigation screens of
 
 Once you made it, it's necessary to modify the Android manifest file:
 
-1. **Step 1:** You must add an `intent filter` at the activity you wish to navigate to.
-2. **Step 2:** You will add an `action tag` that will identify this activity. The `id name` you used here is `"navigate.myview"`
+1. **Step 1:** You must add an `intent filter` at the activity you wish to navigate to;
+2. **Step 2:** You will add an `action tag` that will identify this activity. The `id name` you used here is `"navigate.myview"`;
 3. **Step 3:** Add an `category tag` and name it `"android.intent.category.DEFAULT" ,` like the example below: 
 
 ```markup

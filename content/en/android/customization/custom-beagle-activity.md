@@ -2,8 +2,7 @@
 title: Custom Beagle Activity
 weight: 109
 description: >-
-  You will find here how to use BeagleActivity  to customize your server-driven
-  activity.
+  In this section, you will find how to use BeagleActivity to customize your server-driven activity.
 ---
 
 ---
@@ -12,7 +11,7 @@ description: >-
 
 `BeagleActivity` is a class that helps you manage where your server-driven components will be placed. Its structure works like an Android activity. 
 
-In order to Beagle understand that you're working with an `BeagleAcitivity`'s class, it's necessary to use **`@RegisterController`** annotation and implement their respective methods.
+In order to Beagle understand that you're working with an `BeagleActivity`'s class, it's necessary to use **`@RegisterController`** annotation and implement their respective methods.
 
 ## What is customizable?
 
@@ -110,7 +109,7 @@ override fun getToolbar(): Toolbar = findViewById<Toolbar>(R.id.toolbar)
 
 You can watch the state and treat the errors from **`onServerDrivenContainerStateChanged()`**
 
-You can observe a server-driven activity status and handle errors using the function [`onServerDrivenContainerStateChanged()`]({{< ref path="/android/customization/loading-and-errors-treatment" lang="pt" >}}). This function has as parameter that indicates the status of a server-driven activity, and when any error occurs, the state `ServerDrivenState.Error` will be received at this function.
+You can observe a server-driven activity status and handle errors using the function [`onServerDrivenContainerStateChanged()`]({{< ref path="/android/customization/loading-and-errors-treatment" lang="pt" >}}). This function has as parameter that indicates the status of a server-driven activity, and when any error occurs, the state `ServerDrivenState.Error` will be received at this function:
 
 ```kotlin
 override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {
@@ -122,7 +121,7 @@ override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {
 
 ### 4. ProgressBar
 
-Like when you handled errors, you can check if the server-driven container status is `Started` or` Finished` and thus define the visibility of a *ProgressBar*. When the activity loading starts, the `onServerDrivenContainerStateChanged` function receives the` ServerDrivenState.Started` parameter (which represents the activity status). Likewise, when the loading ends without errors, the `ServerDrivenState.Finished` parameter is received. You can check below how we can use these two states to change the progress bar visibility.
+Like when you handled errors, you can check if the server-driven container status is `Started` or` Finished` and thus define the visibility of a *ProgressBar*. When the activity loading starts, the `onServerDrivenContainerStateChanged` function receives the` ServerDrivenState.Started` parameter (which represents the activity status). Likewise, when the loading ends without errors, the `ServerDrivenState.Finished` parameter is received. You can check below how you can use these two states to change the progress bar visibility:
 
 ```kotlin
 override fun onServerDrivenContainerStateChanged(state: ServerDrivenState) {

@@ -3,7 +3,7 @@ title: Design System
 weight: 121
 description: >-
   Nesta seção, você encontra a descrição da classe Design System e detalhes dos
-  métodos que a  implementa.
+  métodos que a implementa.
 ---
 
 ---
@@ -12,9 +12,9 @@ description: >-
 
 Você pode registrar estilos como fontes, cor, tamanho da fonte e componentes customizados com design system, que foi adicionado ao Beagle 1.0.0
 
-É com o **design system** que se armazena os componentes de estilo registrados, criado no frontend e então a sua aplicação Android saberá qual componente de estilo deverá ser aplicado em cada tela server-drive. É por meio dos elementos de elementos da view são usados para criar sua tela. 
+É com o **Design System** que se armazena os componentes de estilo registrados, criado no frontend e então a sua aplicação Android saberá qual componente de estilo deverá ser aplicado em cada tela server-drive. É por meio dos elementos de elementos da view são usados para criar sua tela. 
 
-Para definir o design system da sua aplicação, você deve criar a classe que estenda um **Open  class** `DesignSystem`. Ela irá subscrever as funções que são usadas para aplicar os estilos aos componentes, e dentro de cada função, você pode declarar vários estilos. 
+Para definir o design system da sua aplicação, você deve criar a classe que estenda um **Open class** `DesignSystem`. Ela irá subscrever as funções que são usadas para aplicar os estilos aos componentes, e dentro de cada função, você pode declarar vários estilos. 
 
 Cada estilo mostrado com o Beagle deve ser referenciado de uma forma que, cada um deles tenha um nome a ser identificado.
 
@@ -65,10 +65,10 @@ class AppDesignSystem : DesignSystem() {
 
 
 {{% alert color="info" %}}
-Quando uma classe estende o`Open Class DesignSystem` , é possível gerenciar estilos que serão aplicados aos componentes server-driven. É necessário implementar a classe para registrar os estilos no Beagle, porque somente assim você poderá ver os estilos e aplicá-los. 
+Quando uma classe estende o `Open Class DesignSystem`, é possível gerenciar estilos que serão aplicados aos componentes server-driven. É necessário implementar a classe para registrar os estilos no Beagle, porque somente assim você poderá vê-los e aplicá-los. 
 {{% /alert %}}
 
-Como um padrão Android, os estilos podem ser definidos no arquivo `style` e referenciados dentro da classe que entenda o Design System. 
+Como um padrão Android, os estilos podem ser definidos no arquivo `style` e referenciados dentro da classe que entenda o Design System:
 
 ```markup
 <resources>

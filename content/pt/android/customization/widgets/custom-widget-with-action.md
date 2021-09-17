@@ -8,7 +8,7 @@ description: Criando um widget customizado com Action
 
 Atualmente no Beagle, o componente [**Text Input**]({{< ref path="/api/components/ui/textinput" lang="pt" >}}) possue o comportamento de executar uma lista de ações. Para isso, ele expõe a propriedade `onChange`, a qual recebe a lista de ações que serão disparadas.
 
-Neste tutorial veremos como criar um widget customizado com o comportamento de disparar uma lista de ações, iremos criar DatePicker um componente de selecionar data.
+Neste tutorial você verá como criar um widget customizado com o comportamento de disparar uma lista de ações, iremos criar DatePicker um componente de selecionar data.
 
 ### Passo 1: Criando componente custom no android
 
@@ -54,7 +54,7 @@ interface DateSetListener{
 }
 ```
 
-Como podemos ver temos alguns métodos na classe, aqui abaixo vou explicar detalhado.
+Você pode ver alguns métodos na classe, veja abaixo mais detalhes.
  
 No método init está a configuração de clique, quando o usuário clicar no texto irá exibir o calendário para selecionar a data.
 
@@ -105,7 +105,7 @@ Crie uma classe e sobre o nome coloque a anotação `@RegisterWidget` e herde da
 * Implemente o método `buildView` que veio da classe `WidgetView()`
 * Nesta classe vamos adicionar dois atributos:
     1. `date` esse atributo responsável por apresentar o valor da data selecionada.
-    2. `onChange` esse atributo responsável por pegar o valor da data selecionado
+    2. `onChange` esse atributo responsável por pegar o valor da data selecionado.
 
 
 ```java
@@ -148,7 +148,7 @@ observeBindChanges(rootView, this, date) { text ->
 
 Já esse bloco de código tem a interface do nosso componente, onde ele sobrescreve o método `onDateSet` que contém o valor da data selecionada pelo usuário. Através desse valor vamos criar um ContextData com id onChange e o value será o value retornado pelo método da interface.
 
-* E para pegar o valor atualizado da data, basta usar a expressão `@{onChange}`. Na Etapa abaixo veremos como pegar esse valor do onChange.
+* E para pegar o valor atualizado da data, basta usar a expressão `@{onChange}`. Na etapa abaixo você verá como pegar esse valor do onChange.
 
 
 ```java
@@ -169,9 +169,9 @@ dateSetListener = object : DateSetListener {
 
 ### Passo 3: Usando componente em uma tela
 
-Usando o kotlin declarativo do beagle criamos uma tela, onde adicionamos o componente DatePicker e abaixo um texto.
+Usando o Kotlin declarativo do Beagle uma tela foi criada e o componente DatePicker foi adicionado e abaixo um texto.
 
-Abaixo um exemplo usando o componente.
+Veja um exemplo usando o componente:
 
 ```java
 Container(
@@ -194,7 +194,7 @@ Container(
     )
 ```
 
-Abaixo um exemplo no emulador.
+Veja um exemplo no emulador:
 
 
 ![](/shared/date-picker-android.png)

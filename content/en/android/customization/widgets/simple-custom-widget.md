@@ -1,14 +1,18 @@
 ---
 title: Simple Custom Widget
 weight: 115
-description: Here you will learn how to create and use a widget in Beagle
+description: Here you will learn how to create and use a widget in Beagle. 
 ---
 
 ---
 
 ## How to create components (custom views) and widgets?
 
-The example below shows how a custom widget will be implemented and which component it will register. It will have a text and two buttons inside a linear layout. The buttons in this component will be responsible for increasing and decreasing the text's size and the screen will be like the image below:
+The example below shows how a custom widget will be implemented and which component it will register. It will have:
+- A text;
+- Two buttons inside a linear layout.
+
+The buttons in this component will be responsible for increasing and decreasing the text's size and the screen will be like the image below:
 
 ![](/shared/image%20%2883%29.png)
 
@@ -138,7 +142,7 @@ class TitleIncreaseComponent(context: Context) : LinearLayout(context) {
 
 The layout and the component are defined, it is necessary to finish the configuration of the customized widget. 
 
-1. Check the function below and see that some text variables were added. This was chosen to demonstrate that it is possible to define the value of this variables by the widget, adding title and button names.
+1. Check the function below and see that some text variables were added. This was chosen to demonstrate that it is possible to define the value of this variables by the widget, adding title and button names:
 
 ```kotlin
 CustomWidgetTitleIncrease.kt

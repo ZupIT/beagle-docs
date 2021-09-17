@@ -4,7 +4,9 @@ weight: 222
 description: "Nesta seção, você confere como criar Actions Customizadas para serem usadas em eventos mas sendo tratadas pela aplicação frontend"
 ---
 
----
+--- 
+
+Beagle oferece ações padrão, no entanto você pode criar sua [**ações customizadas**]({{< ref path="/api/actions" lang="pt" >}}).
 
 ### Criando uma ação do frontend
 
@@ -14,7 +16,7 @@ Para criar uma ação no front end da sua aplicação, veja a seção [Ações C
 
 ### Criando uma ação no backend
 
-Para criar essa ação no backend e utiliza-la em uma tela construida no backend, o seu código deve estar assim:
+Para criar essa ação no backend e utilizá-la em uma tela construida no backend, o seu código deve estar assim:
 
 ```kotlin
 @RegisterAction

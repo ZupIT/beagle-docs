@@ -2,14 +2,14 @@
 title: BeagleException
 weight: 121
 description: >-
-  This section shows details about the BeagleException class.
+  In this section, you will find information about the BeagleException class.
 ---
 
 ---
 
 ## Introduction
 
-The Beagle exception is an exception class thrown when an error occurs in Beagle.
+Beagle exception is an exception class thrown when an error occurs in Beagle:
 
 ```kotlin
 open class BeagleException
