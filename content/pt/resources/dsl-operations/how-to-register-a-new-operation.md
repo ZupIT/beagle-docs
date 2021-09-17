@@ -6,7 +6,7 @@ description: "Nesta seção, você encontra descrição completa das Custom Oper
 
 ---
 
-Depois que você viu que é possível realizar[ **Operações**]({{< ref path="/plugins/dsl-operations" lang="pt" >}}) do tipo soma, subtração, etc, utilizando o contexto e a nova DSL, você também pode criar a sua própria operação!
+Depois que você viu que é possível realizar[ **Operações**]({{< ref path="/resources/dsl-operations" lang="pt" >}}) do tipo soma, subtração, etc, utilizando o contexto e a nova DSL, você também pode criar a sua própria operação!
 
 Para registrar sua operação customizada, é necessário usar o método **createOperation** que recebe como parâmetros:
 - Uma `String` com o nome da operação;
@@ -111,4 +111,4 @@ fun screen() =  Screen(
 {{% /tab %}}
 {{< /tabs >}}
 
-{{< figure src="/shared/customoperation.gif" width="200">}}
+{{< figure src="/shared/customoperation.gif" width="250">}}
