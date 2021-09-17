@@ -9,7 +9,7 @@ description: >-
 
 ## Introduction
 
-The StoreHandler interface defines a protocol that allows you to customize how the cache is handled in the database and in the memory.
+The StoreHandler interface defines a protocol that allows you to customize how the cache is handled in the database and in the memory:
 
 ```kotlin
 interface StoreHandler {
@@ -24,7 +24,7 @@ interface StoreHandler {
 }
 ```
 
-The StoreType enum defines through attributes whether data will be manipulated on disk or memory
+The StoreType enum defines through attributes whether data manipulation will be on disk or memory:
 
    * `DATABASE` represents the disk.
    * `MEMORY` represents memory.
@@ -41,7 +41,8 @@ enum class StoreType {
 LocalStore interface allows you to map the actions of saving, restoring, deleting and the getting all.
 
 This interface allows you to create rules for how data will be handled in a class.
-For example: create a class and use this interface to make a rule of how data will be handled on the disk.
+
+- For example: create a class and use this interface to make rules on how to handle data on the disk:
 
 ```kotlin
 interface LocalStore {
@@ -58,9 +59,9 @@ To create a custom cache manage, just follow the next steps:
 
 ### Step 1: Create an object MemoryLocalStore
 
-First, it is necessary to create two classes that will implement the `LocalStore` interface: the MemoryLocalStore and the DatabseLocalStore. 
+Create two classes that will implement the `LocalStore` interface: the MemoryLocalStore and the DatabseLocalStore. 
 
-With the LocalStore interface, you to map the actions of saving, restoring, deleting and getAll, as shown on the example below:
+With the LocalStore interface, you to map the actions of saving, restoring, deleting and getAll, as you can see on the example below:
 
 
 ```kotlin
@@ -247,7 +248,7 @@ internal object BeagleMessageLogs {
 
 ### Step 3: Create a StoreHandlerDefault class
 
-The StoreHandler class defines a protocol that allows you to customize how the cache is handled in the database and in memory.
+The StoreHandler class defines a protocol that allows you to customize how to handle the cache in the database and the memory.
 
 After the `MemoryLocalStore` and `DatabaseLocalStore` classes definition, you can define `StoreHandler`. See how in the example below: 
 

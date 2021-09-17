@@ -1,13 +1,15 @@
 ---
 title: Widget Customizado Simples
 weight: 131
-description: Aqui voce aprenderá como criar e utilizar um widget no Beagle
+description: Aqui voce aprenderá como criar e utilizar um widget no Beagle.
 ---
 
 ---
 ## Como criar componentes \(custom views\) e widgets?
 
-No exemplo abaixo, será implementado um **custom widget** e um componente que ele registrará. Esse componente será composto por um texto e dois botões dentro de um layout linear.
+No exemplo abaixo, será implementado um **custom widget** e um componente que ele registrará. Esse componente será composto por:
+- Um texto 
+- Dois botões dentro de um layout linear.
 
 Os botões neste componente serão responsáveis ​​por aumentar e diminuir o tamanho do texto do título e a tela será como a imagem a seguir:
 
@@ -28,7 +30,7 @@ Para criar um widget:
 1. Crie uma classe e a nomeie`"CustomWidgetTitleIncrease"`
 2. Aplique a anotação`@RegisterWidget` a esta classe;
 3. Estenda essa classe utilizando a interface `WidgetView`
-4. A classe agora requisitará que você implemente o método `buildView` . Nesse momento, deixe a classe como listada abaixo, pois a configuração desse método será finalizada depois.
+4. A classe agora requisitará que você implemente o método `buildView` . Nesse momento, deixe a classe como listada abaixo, pois a configuração desse método será finalizada depois:
 
 ```kotlin
 CustomWidgetTitleIncrease.kt
@@ -43,7 +45,7 @@ class CustomWidgetTitleIncrease: WidgetView() {
 
 ### Passo 2: Criar e configurar o componente
 
-Comece criando um arquivo de configuração`.XML`e copie e cole o conteúdo abaixo, pois ela cria o layout que escolhemos para esse exemplo.
+Comece criando um arquivo de configuração`.XML`e copie e cole o conteúdo abaixo, pois ela cria o layout escolhido para esse exemplo:
 
 ```markup
 title_increase_component_layout.xml
@@ -87,7 +89,7 @@ title_increase_component_layout.xml
 
 Agora, é hora de criar o componente:
 
-1. Crie uma classe e a nomeie: `TitleIncreaseComponent`. É nessa classe que ficará registrado como o componente funciona e a regra de negócio dele. Lembrando que a regra de negocio desse componente é unicamente aumentar e dimunir o tamanho do seu Título.
+1. Crie uma classe e a nomeie: `TitleIncreaseComponent`. É nessa classe que ficará registrado como o componente funciona e a regra de negócio dele. Lembrando que a regra de negócio desse componente é unicamente aumentar e dimunir o tamanho do seu Título.
 2. Copie e cole a classe abaixo:
 
 ```kotlin

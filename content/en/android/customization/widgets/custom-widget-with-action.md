@@ -8,11 +8,11 @@ description: Creating a custom widget with onChange
 
 Currently in Beagle, the component [**TextInput**]({{< ref path="/api/components/ui/textinput" lang="en" >}}) has the behavior of executing an action list. To do this, it exposes the `onChange` property, which receives the list of actions that will be triggered.
 
-In this tutorial we will see how to create a custom widget with the behavior of triggering a list of actions, then we will create `DatePicker`, a date selection component.
+In this tutorial you will see how to create a custom widget with the behavior of triggering a list of actions, then we will create `DatePicker`, a date selection component.
 
 ### Step 1: Creating a custom component on Android
 
-We will inherit from `TextView` and `DatePickerDialog.OnDateSetListener`.
+You will inherit from `TextView` and `DatePickerDialog.OnDateSetListener`.
 
 ```kotlin
 class DatePickerComponent(
@@ -54,7 +54,7 @@ interface DateSetListener{
 }
 ```
 
-As we can see, we have some methods in class, below I will explain in detail.
+As you can see, there are some methods in class, see below the explanation:
  
 In the init method is the click configuration. When the user clicks on the text, it will display a calendar to select the date.
 
@@ -88,7 +88,7 @@ private fun Date.formatDate(): String{
 
 This method came from the DatePickerDialog.OnDateSetListener interface and it is responsible for taking the date selected by the user.
 
-* We will pass through this method the value that the user selected, to the method of the interface of our component `dateSetListener?.onDateSet(myCalendar.time.formatDate())`
+* You will pass through this method the value that the user selected, to the method of the interface of our component `dateSetListener?.onDateSet(myCalendar.time.formatDate())`
 
 ```java
 override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
@@ -146,7 +146,7 @@ observeBindChanges(rootView, this, date) { text ->
         }
 ```
 
-This code block has the interface of our component, where it overrides the `onDateSet` method that contains the value of the date selected by the user. Through this value we will create a ContextData with id onChange and the value will be the value returned by the interface method.
+This code block has the interface of our component, where it overrides the `onDateSet` method that contains the value of the date selected by the user. Through this value you will create a ContextData with id onChange and the value will be the value returned by the interface method.
 
 * And to get the updated value of the date, just use the expression `@{onChange}`. In the Step below we will see how to get this value from onChange.
 
@@ -169,9 +169,9 @@ dateSetListener = object : DateSetListener {
 
 ### Step 3: Using component on a screen
 
-Using the declarative kotlin of the beagle we create a screen, where we add the DatePicker component and below a text.
+Using the declarative kotlin of Beagle you will create a screen, where the DatePicker component will be added and below you will see a text.
 
-Below is an example using the component.
+Below is an example using the component:
 
 ```java
 Container(
@@ -194,7 +194,7 @@ Container(
     )
 ```
 
-Below is an example on the emulator.
+Check out an example on the emulator:
 
 
 ![](/shared/date-picker-android.png)

@@ -2,8 +2,7 @@
 title: Navigation Animation
 weight: 132
 description: >-
-  You will learn in this section about how it is possible to customize Beagle's
-  navigation screen
+  In this section, you will find information about how it is possible to customize Beagle's navigation screen.
 ---
 
 ---
@@ -16,7 +15,7 @@ Besides these configuration, you can also customize the navigation of your appli
 
 There are two customization options:
 
-1. According to Android's default animation.
+1. According to Android's default animation;
 2. Fragments transition provided by Beagle, that it can be customized according to your preference and design system. They are: 
 
 * [**PushView**]({{< ref path="/api/actions/navigate/pushview" lang="en" >}})

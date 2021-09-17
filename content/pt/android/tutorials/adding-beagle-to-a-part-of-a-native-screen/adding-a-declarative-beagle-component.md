@@ -3,14 +3,16 @@ title: Adicionando um componente Beagle Declarativo
 weight: 230
 description: >-
   Esta seção descreve como adicionar um componente Declarativo do Beagle a uma
-  tela nativa
+  tela nativa.
 ---
 
 ---
+
+Para criar a tela nativa no Android, siga os passos abaixo: 
 
 ## Passo 1: Criar a tela nativa
 
-Para criar a tela nativa no Android, crie uma nova Activity. Aqui será usado a `MainActivity` como modelo:
+Crie uma nova Activity. Aqui será usado a `MainActivity` como modelo:
 
 
 ```kotlin
@@ -56,7 +58,7 @@ Veja o exemplo de xml utlizado nesse tutorial, o que finaliza a criação da tel
 ```
 ## Passo 2: Criar o componente declarativo
 
-Para criar um componente declarativo do Beagle no Android, usaremos um Container \(um componente do Beagle que agrupa outros componentes\). Ele pode ser declarado como uma variável ou como uma função que retorna um container. Nesse exemplo, foi configurado como retorno de uma função:
+Use um Container \(um componente do Beagle que agrupa outros componentes\) que pode ser declarado como uma variável ou como uma função que retorna um container. Nesse exemplo, foi configurado como retorno de uma função:
 
 
 ```text
@@ -88,7 +90,7 @@ fun declarativeComponente() =
 ```
 ## Passo 3: Adicionar o componente na tela
 
-Para adicionar esse componente a tela, será necessário chamar a função **`addView`**do Android a partir do **`Fragment Layout view`** que foi declarado no `activity_main.xml` como listado no exemplo abaixo:
+Chame a função **`addView`** do Android a partir do **`Fragment Layout view`** que foi declarado no `activity_main.xml` como listado no exemplo abaixo:
 
 
 ```kotlin
@@ -106,4 +108,4 @@ class MainActivity : AppCompatActivity() {
 
 Como parâmetro do **`addView`** foi listado a função que retorna o componente criado aplicando o método do Beagle **`.toView(this)`**
 
-E pronto. Basta inicializar a sua aplicação e a tela declarativa será renderizada nativamente.
+E pronto. Inicialize a sua aplicação e a tela declarativa será renderizada nativamente.

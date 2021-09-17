@@ -2,8 +2,7 @@
 title: Log System
 weight: 130
 description: >-
-  You will find here the BeagleLogger class description, customization and
-  configuration details.
+  In this section, you will find the BeagleLogger class description, customization and configuration details.
 ---
 
 ---

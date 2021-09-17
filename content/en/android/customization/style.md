@@ -1,7 +1,7 @@
 ---
 title: Style
 weight: 202
-description: 'Here, you''ll find how to make components'' stylization on Android''s projects.'
+description: 'In this section, you will find how to make components'' stylization on Android''s projects.'
 ---
 
 ---

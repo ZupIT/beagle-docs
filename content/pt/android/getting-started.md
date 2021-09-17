@@ -17,9 +17,10 @@ description: Nessa seção, você irá aprender a como criar um projeto android 
 
 ## **Criando um projeto Android**
 
-Para este exemplo prático, utilizaremos o Android Studio IDE. Caso você ainda não o tenha instalado, basta acessar no [**site oficial do Android** ](https://developer.android.com/studio?hl=us-en)e seguir as instruções.
+Para este exemplo prático, o Android Studio IDE será usado. Caso você ainda não o tenha instalado, basta acessar a [**a documentação do Android** ](https://developer.android.com/studio?hl=us-en) e seguir as instruções.
 
-Depois de ter instalado o programa, siga os passos abaixo:
+
+Depois da instalação, siga os passos abaixo:
 
 **Passo 1: Abra o Android Studio e clique em Start a new Android Studio project**
 
@@ -183,7 +184,7 @@ Atualize novamente o seu `AndroidManifest.xml` e defina a `AppApplication` que f
   A propriedade `android:usesCleartextTraffic` do application é ativado para permitir fazer requisições locais, pois ele permite realizar tráfego de rede em texto simples, como HTTP
 {{% /alert%}}
 {{% alert color="warning" %}}
-Para fazer requisições server-driven a um backend é necessário configurar uma camada de rede. Para saber como, clique aqui!
+Para fazer requisições server-driven a um backend é necessário configurar uma camada de rede. [**Para mais informações, veja a seção Network layer**]({{< ref path="/android/customization/network-client.md" lang="pt" >}}) 
 {{% /alert%}}
 
 **Passo 5: Mostrar a tela**

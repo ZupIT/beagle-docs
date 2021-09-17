@@ -1,8 +1,9 @@
 ---
 title: Getting Started
 weight: 4
-description: In this section, you'll learn how to create an Android project with Beagle
+description: In this section, you'll learn how to create an Android project with Beagle.
 ---
+
 **Topics covered**
 - Create an Android project from scratch
 - Add Beagle in your project (can be in an existing project)
@@ -17,15 +18,15 @@ description: In this section, you'll learn how to create an Android project with
 
 ## Starting an Android project
 
-For this example, we'll use Android Studio IDE. If you haven't installed it yet, just access the documentation [**official Android website** ](https://developer.android.com/studio?hl=us-en) and follow the instructions.   
+For this example, we'll use Android Studio IDE. If you haven't installed it yet, just access the [**Android documentation** ](https://developer.android.com/studio?hl=us-en) and follow the instructions.   
   
 After you have installed Android Studio, follow the steps below:
 
-**Step 1: Open Android Studio and click on Start a new Android Studio project**
+**Step 1: Open Android Studio and click on Start a new Android Studio project:**
 
 {{< figure src="/shared/newandroidproject.png">}}
 
-**Step 2: Choose the Empty Activity option and click on next**. 
+**Step 2: Choose the Empty Activity option and click on next:**
 
 {{< figure src="/shared/androidprojecttemplate.png">}}
 
@@ -112,7 +113,7 @@ After Beagle's installation, now you have to make our tool's usage configuration
 
 **Step 1: Create a BeagleConfig class**
 
-After the update, you have to create a `BeagleConfig` class and configure your attributes,  see the example below:
+After the update, you have to create a `BeagleConfig` class and configure your attributes, see the example below:
 
 ```kotlin
 @BeagleComponent
@@ -164,7 +165,7 @@ class AppApplication: Application() {
 
 **Step 4: Update your Android Manifest.xml**
 
-Finally, you have to update your `AndroidManifest.xml` again and define the `AppApplication` created as an application's initialization file. See the example below: 
+Update your `AndroidManifest.xml` again and define the `AppApplication` created as an application's initialization file. See the example below: 
 
 ```markup
 <?xml version="1.0" encoding="utf-8"?>
@@ -185,8 +186,8 @@ Finally, you have to update your `AndroidManifest.xml` again and define the `App
 {{% /alert%}}
 
 {{% alert color="warning" %}}
-To do server-driven requisitons to a backend it's mandatory to customize the network layer. To know how, click here!
-{{% /alert%}}
+To do server-driven requisitons to a backend it's mandatory to customize the network layer. [**For more information, check out the documentation**]({{< ref path="/android/customization/network-client.md" lang="en" >}}) 
+{{% /alert%}} 
 
 **Step 5: Show the screen**
 

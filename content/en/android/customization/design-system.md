@@ -1,7 +1,7 @@
 ---
 title: Design System
 weight: 124
-description: You will find here Design System class description and methods details.
+description: In this section, you will find Design System class description and methods details.
 ---
 
 ---
@@ -66,7 +66,7 @@ class AppDesignSystem : DesignSystem() {
 When a class extends the `Open Class DesignSystem` it is able to manage styles that will be applied to the server-driven components. It is necessary to implement a class to register the styles on Beagle, only this way it will be able to see the styles and apply them.
 {{% /alert %}}
 
-As an Android pattern, the styles can be defined in the `style` file and referenced inside a class that understands Design System.
+As an Android pattern, the styles can be defined in the `style` file and referenced inside a class that understands Design System:
 
 ```markup
 <resources>

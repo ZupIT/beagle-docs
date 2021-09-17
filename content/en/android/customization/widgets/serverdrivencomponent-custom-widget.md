@@ -1,7 +1,7 @@
 ---
 title: ServerDrivenComponent Custom Widget
 weight: 119
-description: Creating a custom widget with ServerDrivenComponent
+description: Creating a custom widget with ServerDrivenComponent.
 ---
 
 ---
@@ -18,7 +18,7 @@ Custom widgets that render a single Beagle component must implement the `SingleC
 
 ### Step 1: Link `SingleChildComponent`
 
-With the custom widget created, add the `SingleChildComponent` interface.
+With the custom widget created, add the `SingleChildComponent` interface:
 
 ```kotlin
 @RegisterWidget
@@ -35,7 +35,7 @@ class CustomChildWidget(
 
 ### Step 2: Implement the `child` property
 
-After adding the `SingleChildComponent` interface to the widget, override the `child` property.
+After adding the `SingleChildComponent` interface to the widget, override the `child` property:
 
 ```kotlin
 @RegisterWidget
@@ -53,7 +53,7 @@ class CustomChildWidget(
 
 ### Step 3: Use the component
 
-To use the view generated from the `child` component, just consider it as a `ViewConvertable` and call the `buildView` method.
+To use the view generated from the `child` component, just consider it as a `ViewConvertable` and call the `buildView` method:
 
 ```kotlin
 @RegisterWidget
@@ -75,7 +75,7 @@ Custom widgets that render one or more Beagle components must implement the `Mul
 
 ### Step 1: Link `MultiChildComponent`
 
-With the custom widget created, add the `MultiChildComponent` interface.
+After creating the custom widget, add the `MultiChildComponent` interface:
 
 ```kotlin
 @RegisterWidget
@@ -110,7 +110,7 @@ class CustomChildWidget(
 
 ### Step 3: Use the component
 
-To use the view generated from the `children` component, just consider each one as `ViewConvertable` and call their `buildView` method.
+To use the view generated from the `children` component, just consider each one as `ViewConvertable` and call their `buildView` method:
 
 ```kotlin
 @RegisterWidget

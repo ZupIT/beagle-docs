@@ -1,7 +1,7 @@
 ---
 title: Ação Assíncrona
 weight: 106
-description: Criando uma ação customizada assíncrona
+description: Criando uma ação customizada assíncrona.
 ---
 
 **Tópicos abordados:**

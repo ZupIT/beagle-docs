@@ -10,7 +10,7 @@ description: >-
 
 É possível que alguns componentes de uma tela que sejam exibidos via server-driven \(tela nativa\) recebam somente **uma seção da página** , ou mesmo um **único componente do servidor BFF**.
 
-No exemplo abaixo, vamos exibir um botão server-driven em uma tela nativa. O resultado que deve aparecer na sua aplicação é esse:
+No exemplo abaixo, um botão server-driven será exibido em uma tela nativa. O resultado que deve aparecer na sua aplicação é esse:
 
 <div align="center">
 {{< figure src="/shared/screenshot_1594300176.png" width="20%" >}}
@@ -25,7 +25,7 @@ Para que essa configuração funcione corretamente, você precisa de:
 
 ## Passo 1: Criar o componente no backend
 
-Neste exemplo, criaremos um botão como componente server-driven para que possamos exibí-lo em uma tela nativa.
+Neste exemplo, um botão como componente server-driven será criado para ser exibido em uma tela nativa.
 
 Para isso, siga os passos a seguir:
 
@@ -154,9 +154,9 @@ Button(
 
 ## Passo 3: Exibir o componente server-driven
 
-Depois dos dois passos anteriores, o seu componente está pronto. Agora, você só precisa exibi-lo em uma tela nativa.
+Depois dos dois passos anteriores, o seu componente está pronto. Agora, você só precisa exibí-lo em uma tela nativa.
 
-Para o Android você deve utilizar o `frame layout` para "receber" o componente do BFF e, assim, exibi-lo em uma tela Android nativa.
+Para o Android você deve utilizar o `frame layout` para "receber" o componente do BFF e, assim, exibí-lo em uma tela Android nativa.
 
 ### Como receber um componente server driven no Android?
 

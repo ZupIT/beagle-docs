@@ -2,8 +2,7 @@
 title: Custom Validator
 weight: 111
 description: >-
-  You will find here a description on how to validate a form. This component is
-  deprecated.
+  In this section, you will find a description on how to validate a form. This component is deprecated.
 ---
 
 ---
@@ -20,7 +19,7 @@ A **validator** component is used when it is necessary to validate some form inf
 
 The **Form** component capture data informed by the user and validates and send them to BFF. This validation can happen when the user activates FormSubmit or when notifies its status to `InputWidget(FormInput).`
 
-**Validator** receives two generic parameters and it has only on isValid method that returns a boolean value.
+**Validator** receives two generic parameters and it has only on isValid method that returns a boolean value:
 
 ```kotlin
 interface Validator<in I, in W> {
@@ -28,7 +27,7 @@ interface Validator<in I, in W> {
 }
 ```
 
-- **input:** represents the value `inputWidget` sends as data to be validated.
+- **input:** represents the value `inputWidget` sends as data to be validated;
 - **widget:** refers to `InputWidget` that sent the data.
 
 ## Implementing a validator
@@ -58,7 +57,7 @@ FormInput(
 )
 ```
 
-The follow example, the `InputWidget` implementation will run the Validator calling the **`notifyChanges()`** method.
+The follow example, the `InputWidget` implementation will run the Validator calling the **`notifyChanges()`** method:
 
 ```kotlin
 @RegisterWidget
