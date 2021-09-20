@@ -15,9 +15,9 @@ On this section, you'll see two specific ones:
 
 ## Set Id
 
-The method Set Id is used when you need to set an Id on a [**widget**]({{< ref path="/api/components/widget.md" lang="en" >}}) provided by the [**BFF**]({{< ref path="/key-concepts#backend-for-frontend" lang="en" >}}). To do so, you just have to call this method on the widget you want to set the Id during the moment you're creating your widget.
+The method **Set Id** is used when you need to set an Id on a [**widget**]({{< ref path="/api/components/widget.md" lang="en" >}}) provided by the [**BFF**]({{< ref path="/key-concepts#backend-for-frontend" lang="en" >}}). To do so, you just have to call this method on the widget you want to set the Id during the moment you're creating your widget.
 
-See how this works on the code below:
+See how it works:
 
 ```kotlin
 Text(text = "Text with id").setId("myTextId")
@@ -27,7 +27,7 @@ Text(text = "Text with id").setId("myTextId")
 
 On Android, to get an Widget Id you just need to call the `String.toAndroidId()` and this method will return the Id to use where you need.
 
-See how it works on the like below:
+See how it works:
 
 ```kotlin
 "myTextId".toAndroidId()

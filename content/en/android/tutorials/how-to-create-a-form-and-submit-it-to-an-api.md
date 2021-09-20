@@ -6,7 +6,7 @@ description: "On this section, you will find how to create a form and submit it 
 
 ---
 
-## Introduction
+## Introduction 
 
 For this tutorial, you'll use some [**actions**]({{< ref path="/api/actions/" lang="en" >}}) and APIs:
 
@@ -29,7 +29,7 @@ On this example, use the **TextInput** and **Button** components to simulate the
 
 ### Step 1: Create a login screen
 
-Here, you have to signal to Beagle that it has to render on the screen two TextInputs and one Button. This will represent the login screen.
+Here, you have to signal to Beagle that it has to render on the screen two TextInputs and one Button. This will represent the login screen:
 
 {{< tabs id="T101" >}}
 {{% tab name="JSON" %}}
@@ -75,7 +75,7 @@ Container(
 
 Now use the [**SetContext**]({{< ref path="/api/actions/setcontext" lang="en" >}}) action that alters a **specific** [**context**]({{< ref path="/api/context" lang="en" >}}) on a screen. This is necessary to bring the screen to life and make the typed data on them sent to an API.
 
-On this scenario, the context will keep the user name and password typed data, so this same data will be forwarded to an API.
+On this scenario, the context will keep the user name and password typed data, so this same data forwards to an API.
 
 Alter this code to add this SetContext logic:
 
@@ -177,11 +177,11 @@ On this example, the `onChange` event of the TextInput is always called when the
 
 #### OnChange
 
-In the context, the action SetContext will be performed in each character typed by the user. In SetContext, it is required the `contextId`, because it will make reference to the context that it will be altered, besides of the `value` that represents the new value, and the `path` that is the way inside the context that will be altered.
+In the context, the action SetContext performs in each character typed by the user. In SetContext, it is required the `contextId`, because it makes reference to the context that it will be altered, besides of the `value` that represents the new value, and the `path` that is the way inside the context that will be altered.
 
 #### Path
 
-It is the only optional parameter, that means in case it does not pass, the SetContext will alter the root context in order to make `value` the new value. On the example above, 
+It is the only optional parameter, in case it does not pass, the SetContext will alter the root context in order to make `value` the new value. On the example above, 
 it is clear that you want to alter only 
 the `username` and the `password` key in their respective SetContexts.
 

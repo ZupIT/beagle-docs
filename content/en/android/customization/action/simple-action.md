@@ -15,7 +15,7 @@ description: Creating and executing a custom action
 
  ## What is?
 
- On Beagle, an action deals with behaviours \(functions\), that are performed in your application when an event is triggered. These actions can be a Beagle's default or customized by you. 
+ On Beagle, an action deals with behaviors \(functions\), that are performed in your application when an event is triggered. These actions can be a Beagle's default or customized by you. 
 
 ## How to create an action
 
@@ -48,11 +48,11 @@ data class CustomActionAndroid(
 
 There are two ways to register your action, check them below: 
 
- - Using Annotation Processor:
+ 1. Using Annotation Processor:
 
     For this, annotate your action class with `@RegisterAction("className")` where className is your class name.
 
- - Without the Annotation Processor
+ 2. Without the Annotation Processor.
 
 ## How to use your action
 

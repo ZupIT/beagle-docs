@@ -28,8 +28,10 @@ Neste exemplo cum `adapter` foi criado para a interface `Person` que é extendid
 
 Para criar um **`adapter`** você deve:
 
-1. Criar uma classe que será seu `adapter` e anotá-la com `@RegisterBeagleAdapter.`Neste exemplo o nome dado foi **`PersonAdapter`**
-2. Declarar qual classe se quer mapear com esse adapter. Aqui mapeamos a interface **`Person`** que representa a `data class PersomImpl.`
+1. Criar uma classe que será seu `adapter` e anotá-la com `@RegisterBeagleAdapter.`Neste exemplo o nome dado foi **`PersonAdapter`**;
+
+2. Declarar qual classe se quer mapear com esse adapter. Aqui mapeamos a interface **`Person`** que representa a `data class PersomImpl`;
+
 3. Estender a classe `adapter` \(**`PersonAdapter`**\) a partir da **Interface** `BeagleTypeAdapter` informando a classe que você quer mapear;
 4. Ao estender a interface você deverá implementar os métodos `fromJson` e `toJson`, veja o exemplo abaixo:
 

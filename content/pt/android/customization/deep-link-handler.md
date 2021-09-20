@@ -31,7 +31,7 @@ class AppDeepLinkHandler : DeepLinkHandler {
 }
 ```
 
-No método _getDeepLinkIntent_, você consegue configurar a navegação de telas de fluxos server driven ui para suas telas nativas, fazendo com que e o beagle reconheça a sua regra.
+No método _getDeepLinkIntent_, você consegue configurar a navegação de telas de fluxos server-driven UI para suas telas nativas, fazendo com que e o Beagle reconheça a sua regra.
 
 | **Atributo**           | **Tipo**             |                                                          **Definição**                                                           |
 | :--------------------- | :------------------- | :------------------------------------------------------------------------------------------------------------------------------: |
@@ -42,9 +42,11 @@ No método _getDeepLinkIntent_, você consegue configurar a navegação de telas
 
 Feito isso, é necessário modificar o arquivo de manifesto do Android:
 
-1. **Passo 1:** Você deve adicionar um `intent-filter` na `Activity` para a qual deseja navegar.
-2. **Passo 2:** Você deve adicionar uma `Action` que identificará essa `Activity`. O nome que usamos aqui foi `"navigate.myview"`.
-3. **Passo 3:** Adicione uma tag `category` e a nomeie como `"android.intent.category.DEFAULT"`, assim como no exemplo abaixo.
+1. **Passo 1:** Você deve adicionar um `intent-filter` na `Activity` para a qual deseja navegar;
+
+2. **Passo 2:** Você deve adicionar uma `Action` que identificará essa `Activity`. O nome que usamos aqui foi `"navigate.myview"`;
+
+3. **Passo 3:** Adicione uma tag `category` e a nomeie como `"android.intent.category.DEFAULT"`, como no exemplo abaixo:
 
 ```markup
 //AndroidManifest

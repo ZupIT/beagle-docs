@@ -6,7 +6,8 @@ description: "This section shows how to create a Custom Action that could be use
 
 ---
 
-Although Beagle offers a lot of default Actions, there might be a situation that you need some extra features and fot that you can create a custom [**action**]({{< ref path="/api/actions" lang="en" >}}).
+Beagle offers a lot of default Actions, however you can create a custom [**action**]({{< ref path="/api/actions" lang="en" >}}).
+
 ### Creating a frontend action
 
 To create an action on the front end of your application, you may check the section [`Simple Custom Action`]({{< ref path="/android/customization/action/simple-action" lang="en">}})

@@ -3,7 +3,7 @@ title: Como gerar uma versão do Beagle local ou remota
 weight: 220
 description: >-
   Nesta seção, você encontra como gerar versões locais do Beagle ou versões
-  remotas para o seu repositório quando necessário.
+  remotas para o seu repositório quando necessário. 
 ---
 
 ---
@@ -12,9 +12,12 @@ Siga as orientações de acordo com o sistema operacional que estiver usando:
 
 ## Configurando o Gradle
 
-Se você trabalha com aplicações Android ou via Backend, deve começar configurando o arquivo**`gradle.properties`**, que se encontra na **pasta root**. Essa configuração vale tanto para versões remotas como locais.
+Se você trabalha com aplicações Android ou via Backend, deve começar configurando o arquivo** `gradle.properties`**, que se encontra na **pasta root**. Essa configuração vale tanto para versões remotas como locais.
 
- Assim que abrir o arquivo, o primeiro passo é mudar o nome da versão que será gerada. Para isso, você pode alterar o valor da variável **`VERSION_NAME`**para o valor desejado. 
+Siga os passos:
+
+ **Passo 1:** Abra o arquivo;
+ **Passo 2:** Mude o nome da versão que será gerada. Altere o valor da variável **`VERSION_NAME`** para o valor desejado. 
 
 {{% alert color="info" %}}
 Essa variável serve para referenciar o nome da versão quando você for importar o Beagle. 
@@ -31,7 +34,7 @@ RELEASE_SIGNING_ENABLED=false
 ```
 
 
-## Publicando em um repositório remoto
+## Publique em um repositório remoto
 
 Ao final da configuração do **`gradle.properties`**, você precisa configurar um arquivo que está na pasta root do Beagle, no caso, o **`maven-publish.gradle`**. Nesse arquivo, adicione um target, que definirá:  
 
@@ -69,19 +72,21 @@ nexus {
 ```
 
 
-## Publicando em um repositório local
+## Publique em um repositório local
 
-Ao final da configuração do **`gradle.properties`** , você deve rodar alguns **comandos do gradle**. 
+Ao final da configuração do **`gradle.properties`** , você deve rodar alguns **comandos do gradle**:
 
-Para isso, vá até a pasta root da plataforma em que você deseja gerar versão \(Android ou Backend\) e no terminal de sua preferência execute o seguinte comando:
+1. Vá até a pasta root da plataforma em que você deseja gerar versão \(Android ou Backend\) 
 
-**Se estiver em um terminal do Windows:**
+2. No terminal de sua preferência execute o seguinte comando:
+
+- **Se estiver em um terminal do Windows:**
 
 ```bash
 gradlew clean build publishToMavenLocal
 ```
 
-**Caso esteja nos demais terminais:**
+- **Se estiver nos demais terminais:**
 
 ```bash
 ./gradlew clean build publishToMavenLocal

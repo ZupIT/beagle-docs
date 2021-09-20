@@ -51,11 +51,11 @@ data class CustomActionAndroid(
 
 Existem duas formas de registrar seu componente.
 
- - Utilizando o Annotation Processor:
+ 1. Utilizando o Annotation Processor:
 
     Para isso, anote a classe da sua action com `@RegisterAction("className")` onde className é o nome da sua classe
 
- - Sem utilizar o Annotation Processor
+ 2. Sem utilizar o Annotation Processor.
 
 ## Como usar sua ação
 

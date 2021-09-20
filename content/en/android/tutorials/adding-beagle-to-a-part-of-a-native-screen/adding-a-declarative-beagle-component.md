@@ -1,16 +1,17 @@
 ---
 title: Adding a local declarative component into a Android Screen
 weight: 230
-description: >-
+description: >- 
   This section describes how to add a Beagle Declarative component into a
-  native screen
+  native screen.
 ---
 
 ---
+To create a native screen on Android, follow the next steps: 
 
 ## Step 1: Create a native screen
 
-To create a native screen on Android and create a new Activity. Here the `MainActivity` will be used as a template:
+Create a new Activity. Here the `MainActivity` is used as a template:
 
 
 ```kotlin
@@ -56,7 +57,7 @@ Below you can see the example xml used in this tutorial, which finalizes the cre
 ```
 ## Step 2: Create a declarative component
 
-To create a Beagle declarative component on Android, we'll use a Container \(a Beagle component that groups other components\). It can be declared as a variable or as a function that returns a container. In this example, it was configured as a function return:
+Use a Container \(a Beagle component that groups other components\), it can be declared as a variable or as a function that returns a container. In this example, the configuration is as a function return:
 
 
 ```text
@@ -88,7 +89,7 @@ fun declarativeComponent() =
 ```
 ## Step 3: Add the component to the canvas
 
-To add this component to the canvas, you will need to call the Android **`addView`** function from the **`Fragment Layout view`** which was declared in `activity_main.xml` as listed in the example below:
+Call the Android **`addView`** function from the **`Fragment Layout view`** which was declared in `activity_main.xml` as listed in the example below:
 
 
 ```kotlin
@@ -103,4 +104,4 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
-And we are set. Just launch your application and the declarative screen will be rendered natively.
+It's done! Launch your application and the declarative screen renders natively.

@@ -4,7 +4,7 @@ weight: 1
 type: overview
 description: >-
   You will find here an example on how to create a component and a customized
-  widget
+  widget.
 ---
 
 ---

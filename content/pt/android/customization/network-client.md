@@ -75,7 +75,7 @@ Para criar uma camada de rede customizada, siga um exemplo abaixo com as seguint
 
 ### Passo 1: Adicionar as dependências
 
-Localize o arquivo `build.gradle(Module:app) ,` abra-o e role a página para baixo até encontrar o bloco de código **`dependencies { }`**.
+Localize o arquivo `build.gradle(Module:app)`, abra-o e role a página para baixo até encontrar o bloco de código **`dependencies { }`**.
 
 1. Copie e cole a linha abaixo dentro das dependências:
 

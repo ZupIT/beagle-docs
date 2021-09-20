@@ -2,8 +2,7 @@
 title: Loading and errors treatment
 weight: 128
 description: >-
-  You will find here information on how to customize Beagle's behaviour to each
-  loading screens and errors treatments.
+  In this section, you will find information on how to customize Beagle's behavior to each loading screens and errors treatments.
 ---
 
 ---
@@ -52,7 +51,7 @@ class AppBeagleActivity : BeagleActivity() {
 ```
 
 
-On the `loadView`, you can also see that these states shows the loadView implementation, it is possible to define when to show or to hide Load. And you can also define other action to the states `ServerDrivenState`, that are`Started`, `Success` , `Finished` and `Error`
+On the `loadView`, you can see these states show the loadView implementation, it is possible to define when to show or to hide Load. And you can also define other action to the states `ServerDrivenState`, that are`Started`, `Success` , `Finished` and `Error`:
 
 ```kotlin
 sealed class ServerDrivenState {
@@ -66,7 +65,7 @@ sealed class ServerDrivenState {
 }
 ```
 
-See more details about each state:
+Check out more details about each state:
 
 * **Started:** Indicates that a server-driven component fetch has begun.
 * **Finished:** Indicates that a server-driven component fetch has finished.

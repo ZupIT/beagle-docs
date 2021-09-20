@@ -10,7 +10,7 @@ description: >-
 
 ## Introdução
 
-É possível observar o estado atual da tela durante as requisições server-driven em uma BeagleActivity, inclusive estados de erro.
+É possível observar o estado atual da tela durante as requisições server-driven em uma BeagleActivity, inclusive os estados de erro.
 
 ## Exemplo
 
@@ -52,7 +52,7 @@ class AppBeagleActivity : BeagleActivity() {
 ```
 
 
-A partir destes estados, como mostra o exemplo anterior de implementação do loadView, é possível definir quando mostrar ou esconder o Load e definir também outras ações pertinentes aos estados `ServerDrivenState`: `Started`, `Success` , `Finished` e `Error`.  
+A partir destes estados, como mostra o exemplo anterior de implementação do loadView, é possível definir quando mostrar ou esconder o Load e definir também outras ações pertinentes aos estados `ServerDrivenState`: `Started`, `Success` , `Finished` e `Error`:
 
 ```kotlin
 sealed class ServerDrivenState {

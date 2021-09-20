@@ -1,6 +1,6 @@
 ---
 title: Beagle Scaffold
-weight: 1
+weight: 2
 description: 'Aqui você encontrará a biblioteca **Beagle-Scaffold** para ajudá-lo a iniciar um projeto usando o Beagle no Android.
 Esta biblioteca conterá quase todas as configurações necessárias para adicionar o Beagle a um projeto Android.'
 ---
@@ -23,7 +23,7 @@ Antes de começar a configurar o Beagle para o seu sistema Android, é important
 
 Este tutorial irá configurar o Beagle desde o início.
 
-#### Etapa 1: adicione uma configuração ao arquivo Gradle em seu projeto:
+#### **Passo 1:** Adicione uma configuração ao arquivo Gradle em seu projeto:
 - `Adicione mavenCentral()` no bloco `All projects` em seu arquivo do Projeto Gradle (build.gradle) <br>
 
 ```kotlin
@@ -35,7 +35,7 @@ allprojects {
     }
 }
 ```
-#### Etapa 2: adicione o plugin kotlin kapt e 3 dependências no gerenciador de dependências do seu aplicativo (gradle.gradle) <br>
+#### **Passo 2:** Adicione o plugin kotlin kapt e 3 dependências no gerenciador de dependências do seu aplicativo (gradle.gradle) <br>
 
  ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-scaffold?color=green&label=Beagle-Scaffold)
  ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android?label=Beagle)                                                                   
@@ -64,7 +64,7 @@ dependencies {
 }
 ```
 
-#### Etapa 3: Crie um AppBeagleConfigFile
+#### **Passo 3:** Crie um AppBeagleConfigFile
 * Este arquivo obterá todos os seus atributos de configuração da biblioteca beagle-scaffold. <br>
 Se necessitar de uma informação mais detalhada consulte a nossa documentação
 
@@ -72,11 +72,11 @@ Se necessitar de uma informação mais detalhada consulte a nossa documentação
 @BeagleComponent
 class AppBeagleConfig: BeagleConfigScaffold()
 ```
-#### Etapa 4: Construa seu projeto: 
+#### **Passo 4:** Construa seu projeto: 
 Ao construir este aplicativo, a configuração acima irá criar o setup do Beagle na sua aplicação<br>
 * Clique na aba **Build > Make Project**
 
-#### Etapa 5: crie um arquivo AppAplication conforme o exemplo abaixo:
+#### **Passo 5:** Crie um arquivo AppAplication conforme o exemplo abaixo:
 ```
 class AppApplication : Application() {
     override fun onCreate() {
@@ -86,9 +86,9 @@ class AppApplication : Application() {
 }
 ```
 
-#### Etapa 6: Atualizando o Android Manifest
+#### **Passo 6:** Atualizando o Android Manifest
 
-Neste ultimo passo você irá adicionar duas configurações ao android manifest: A permissão para internet no android manifest e o nome da sua`application`. 
+Aqui você irá adicionar duas configurações ao android manifest: A permissão para internet no android manifest e o nome da sua`application`. 
 
 * Para habilitar a permissão para internet, adicione a linha do código abaixo: 
 
@@ -120,7 +120,7 @@ Neste ultimo passo você irá adicionar duas configurações ao android manifest
         ...
 ```
 
-#### Etapa 7: Teste seu aplicativo <br>
+#### **Passo 7:** Teste seu aplicativo <br>
 Para testá-lo, basta chamar uma tela de nosso exemplo do BFF. <br>
 Para fazer isso, você precisa iniciar uma activity usando o BeagleIntent <br>
 da biblioteca Beagle-Scaffold exatamente como mostrado abaixo:
@@ -138,5 +138,5 @@ Uma tela de amostra com todos os componentes do Beagle será exibida na tela do 
 
 <hr>
 
-##### Para saber mais sobre o Beagle: Por favor verifique nosso [Beagle](https://github.com/ZupIT/beagle) repositório.
-##### Para saber mais sobre o Beagle-Defaults: Por favor verifique sua documentação em [Beagle Defaults]({{< ref path="/android/libs/beagle-defaults" lang="pt" >}}).
+##### Para saber mais sobre o Beagle, acesse o [repositório](https://github.com/ZupIT/beagle).
+##### Para saber mais sobre o Beagle-Defaults, veja a seção [Beagle Defaults]({{< ref path="/android/libs/beagle-defaults" lang="pt" >}}).

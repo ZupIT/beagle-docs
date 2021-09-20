@@ -61,7 +61,7 @@ Os componentes de input no Beagle Android também são **totalmente customizáve
 
 ### Button
 
-Assim como os textos e inputs, os botões no Beagle Android são **totalmente customizáveis**. Para realizar qualquer mudança, basta seguir o padrão abaixo:
+Os botões no Beagle Android são **totalmente customizáveis**. Para realizar qualquer mudança, basta seguir o padrão abaixo:
 
 ```markup
 <!-- Custom style for Button components. -->
@@ -121,7 +121,7 @@ O componente TabView no Beagle representa o `TabLayout` do Android e toda a sua 
     </style>
 ```
 
-Para gerenciar as abas selecionadas, é recomendado o uso de um seletor para o atributo`tabIconTint`. Como no exemplo abaixo:
+Para gerenciar as abas selecionadas, é recomendado o uso de um seletor para o atributo `tabIconTint`. Como no exemplo abaixo:
 
 ```markup
 <selector xmlns:android="http://schemas.android.com/apk/res/android">

@@ -6,10 +6,10 @@ description: >-
 ---
 
 ---
-
+ 
 It is possible to receive only a few server-driven screen components from a BFF and not an complete screen; receive only **one section of an page**, or even a **single component**.
 
-In the example below, we display a server-driven button on a native Android screen. The result that should appear in your application is this:
+The example below displays a server-driven button on a native Android screen. The result should appear in your application:
 
 <div align="center">
 {{< figure src="/shared/screenshot_1594300176.png" width="20%" >}}
@@ -20,11 +20,11 @@ In the example below, we display a server-driven button on a native Android scre
 For this setting to work correctly, you need:
 
 - A **BFF**(Backend) configured with Beagle. If you don't have it, see how to configure it in this [**tutorial**]({{< ref path="/backend/" lang="en" >}}).
-- A Beagle-configured frontend for Android. If you don't have it, follow our tutorial to set up a project [**Android**]({{< ref path="/android/getting-started.md" lang="en" >}})
+- A Beagle-configured frontend for Android. If you don't have it, follow the tutorial to set up a project [**Android**]({{< ref path="/android/getting-started.md" lang="en" >}})
 
 ## Step 1: Create the component in the backend
 
-In this example, we will create a button as a server-driven component so that we can display it on a native screen.
+This example is to create a button as a server-driven component, you can display it on a native screen.
 
 To do this, follow the steps below:
 
@@ -199,7 +199,7 @@ After configuring the frame layout, you need to tell Beagle which component will
 
 ## What is a loadView?
 
-The `loadView` method is responsible for loading a beagle content into a native view.
+The `loadView` method is responsible for loading a Beagle content into a native view.
 
 The **loadView** structure is:
 
@@ -222,11 +222,11 @@ val frameLayout = findViewById<FrameLayout>(R.id.fr_server_driven)
 frameLayout.loadView(this, ScreenRequest("/serverDrivenComponent"))
 ```
 
-And that's it: just start your application and you'll see the screen below!
+And that's it: just start your application and you'll see the screen below:
 
 <div align="center">
 {{< figure src="/shared/server-driven-comp-ios.gif" width="20%" >}}
 </div>
 
-Click on the button and notice that the function in that component is implemented and functional, ie the Beagle displays all components as if they were native.
+Click on the button and you will see the function in that component is implemented and functional, Beagle displays all components like they are native.
 

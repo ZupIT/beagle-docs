@@ -7,9 +7,10 @@ description: >-
 
 ---
 
-## Display a screen through a URL
+## Display a screen through a URL 
 
-To display a **`full server-driven`** screen, you need to use the method `this.newServerDrivenIntent<BeagleActivity>()`. Where `this` refers to the context of the screen.
+To display a **`full server-driven`** screen, you need to use the method `this.newServerDrivenIntent<BeagleActivity>()`. 
+-  `this` refers to the context of the screen.
 
 This method requires the parameter `ScreenRequest`.
 

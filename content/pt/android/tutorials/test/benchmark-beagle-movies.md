@@ -10,7 +10,7 @@ description: >-
 
 ## Contexto
 
-O Beagle Movies é um aplicativo de filmes que foi desenvolvido usando o framework do Beagle. Com ele, é possível conferir resenhas de filmes e séries, além de criar listas personalizadas com o que você quer ou já assistiu.
+O Beagle Movies é um aplicativo de filmes que foi desenvolvido usando o framework do Beagle. Você pode conferir resenhas de filmes e séries, além de criar listas personalizadas com o que você quer assistir ou já assistiu.
 
 ## Quais foram os testes?
 
