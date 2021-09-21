@@ -23,18 +23,18 @@ No Beagle é disponibilizado alguns operadores padrões e você pode criar suas 
 
 - Ao utilizar os operadores com a nova DSL é necessário compreender o uso dos métodos a seguir:
 
-**constant -** Este método é utilizado quando as operações são do tipo [Bind.Value](https://docs.usebeagle.io/v1.10/pt/api/context/overview/).
+**1.** **constant -** Este método é utilizado quando as operações são do tipo [Bind.Value](https://docs.usebeagle.io/v1.10/pt/api/context/overview/).
 
 
-**expressionOf -** Este método é utilizado quando as operações são do tipo [Bind.Expression](https://docs.usebeagle.io/v1.10/pt/api/context/overview/).
+**2.** **expressionOf -** Este método é utilizado quando as operações são do tipo [Bind.Expression](https://docs.usebeagle.io/v1.10/pt/api/context/overview/).
 
-**toBindString -** Em um componente Beagle, é necessário adicionar este método após o componente para fazer a conversão da operação para o tipo Bind de String.
+**3.** **toBindString -** Em um componente Beagle, é necessário adicionar este método após o componente para fazer a conversão da operação para o tipo Bind de String.
 
 *Exemplo:* ```Text(sum(constant(1), constant(2)).toBindString())```
 
-**plus -** Este método é utilizado para escrever um texto seguido de uma operação. 
+**4.** **plus -** Este método é utilizado para escrever um texto seguido de uma operação. 
 
-**createOperation -** Por meio deste método é possível criar [operações customizadas](https://docs.usebeagle.io/v1.10/pt/api/plugins/dsl-operations/how-to-register-a-new-operation/).
+**5.** **createOperation -** Por meio deste método é possível criar [operações customizadas](https://docs.usebeagle.io/v1.10/pt/api/plugins/dsl-operations/how-to-register-a-new-operation/).
 
 *Exemplo:* ```Text(constant("Sum of 2 + 1 = ").plus(sum(constant(2), constant(1)).toBindString()))``` *ou* ```Text(constant("Sum of 2 + 1 = ") + (sum(constant(2), constant(1)).toBindString()))```
 
