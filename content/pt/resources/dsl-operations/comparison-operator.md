@@ -1,7 +1,7 @@
 ---
 title: Operadores de comparação
 weight: 367
-description: 'Nesta seção, você encontra descrição completa dos Operadores de Comparação.'
+description: 'Nesta seção, você encontra descrição completa dos operadores de comparação.'
 ---
 
 ---
