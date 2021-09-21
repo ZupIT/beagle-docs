@@ -2,7 +2,7 @@
 title: Visão Geral
 weight: 1
 type: overview
-description: 'Nesta seção, você encontra a descrição completa das Operações com a utilização da nova DSL do Beagle.'
+description: 'Nesta seção, você encontra a descrição completa das Operações que utilizam a DSL do Beagle.'
 ---
 
 ---
