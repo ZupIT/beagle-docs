@@ -18,9 +18,9 @@ A vantagem é que os componentes não precisam ter esse tipo de lógica dentro d
 
 ## Como usar?
 
-De modo geral, as operações podem ser usadas quando você quer modificar os valores de um componente por meio de lógicas e operações em um momento diferente daquele em que recebeu os componentes com o JSON.
+As operações são usadas quando você quiser modificar os valores de um componente por meio de lógicas e operações e em um momento diferente daquele que você recebeu os componentes com o JSON.
 
-No Beagle é disponibilizado alguns operadores padrões e você pode criar suas próprias operações. 
+O Beagle disponibiliza alguns operadores padrões, mas você também pode criar suas próprias operações. 
 
 ##### **OBS:** 
 
