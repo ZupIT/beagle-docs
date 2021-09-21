@@ -18,7 +18,9 @@ description: >-
 | lowercase | lowercase(constant(("BRASIL")) | Operador que transforma a todas as letras de uma string em letras minúsculas. |
 | substr | substr(constant("brasil"), constant(3)) | Operador que retorna uma substring da string de entrada. Essa operação pode ter 2 ou 3 entradas, onde o primeiro parâmetro é a string e o segundo e terceiro parâmetro são os limitadores da string. |
 
- **OBS:** Ao utlizar as operações com a nova DSL, é necessário adicionar o método **toBindString( )** para fazer a conversão da operação para o tipo Bind de String.
+{{% alert color="warning" %}}
+  Quando você utilizar as operações com a nova DSL, é necessário adicionar o método **toBindString( )** para fazer a conversão da operação para o tipo `Bind` de String.
+ {{% /alert %}}
 
 ### Exemplo
 
