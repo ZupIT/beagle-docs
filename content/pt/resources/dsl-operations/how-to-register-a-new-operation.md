@@ -1,7 +1,7 @@
 ---
 title: Como registrar uma nova operação
 weight: 375
-description: "Nesta seção, você encontra descrição completa das Custom Operations."
+description: "Nesta seção, você encontra como registrar uma nova operação."
 ---
 
 ---
