@@ -21,7 +21,7 @@ No Beagle é disponibilizado alguns operadores padrões e você pode criar suas 
 
 - A nova DSL não implica na mudança do JSON ao renderizar os componentes;
 
-- Ao utilizar os operadores com a nova DSL é necessário compreender o uso dos métodos a seguir:
+Quando você utilizar os operadores com a nova DSL, é necessário entender o uso dos métodos a seguir:
 
 **1.** **constant -** Este método é utilizado quando as operações são do tipo [Bind.Value](https://docs.usebeagle.io/v1.10/pt/api/context/overview/).
 
