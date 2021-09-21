@@ -1,7 +1,7 @@
 ---
 title: Outros operadores
 weight: 373
-description: 'Nesta seção, você encontra descrição completa de Outros Operadores.'
+description: 'Nesta seção, você encontra descrição completa de outros operadores.'
 ---
 
 ---
