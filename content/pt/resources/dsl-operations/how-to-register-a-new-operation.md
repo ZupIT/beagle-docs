@@ -6,7 +6,7 @@ description: "Nesta seção, você encontra como registrar uma nova operação."
 
 ---
 
-Depois que você viu que é possível realizar[ **Operações**]({{< ref path="/resources/dsl-operations" lang="pt" >}}) do tipo soma, subtração, etc, utilizando o contexto e a nova DSL, você também pode criar a sua própria operação!
+No Beagle é possível realizar [ **Operações**]({{< ref path="/resources/dsl-operations" lang="pt" >}}) do tipo soma, subtração, etc, utilizando o contexto e a DSL, mas você também pode criar a sua própria operação ou 'Custom Operation'.
 
 Para registrar sua operação customizada, é necessário usar o método **createOperation** que recebe como parâmetros:
 - Uma `String` com o nome da operação;
