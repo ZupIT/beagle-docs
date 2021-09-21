@@ -17,7 +17,10 @@ description: 'Nesta seção, você encontra descrição completa dos operadores 
 
 ### Exemplo
 
-Aqui temos o exemplo de uma tela que utiliza duas operações lógicas, `condition` e `or`, onde caso o resultado da condição do `or` for verdadeira o texto do componente `Text` se torna **true**, caso falso ele atribui ao texto o valor de **false.**
+Este exemplo é uma tela que utiliza duas operações lógicas `**condition**` e `**or**`; 
+Há duas possibilidades no resultado: 
+1. Caso o resultado da condição `or` for verdadeira o texto do componente `Text` se torna **true**.
+2. Se for falso ele atribui ao texto o valor de **false.**
 
 {{< tabs id="T160" >}}
 {{% tab name="JSON" %}}
