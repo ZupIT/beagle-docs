@@ -16,7 +16,7 @@ Veja abaixo quais são os outros operadores:
 
 ### Exemplo
 
- Um contexto com id **numbersArray** que possui como valor **\[0, 1, 2, 3, 4\]** e a operação `length` foi utilizada em um componente Text para pegar o tamanho desse array, veja abaixo:
+Neste exemplo, um contexto com id **numbersArray** possui o valor **\[0, 1, 2, 3, 4\]** e a operação `**length**` foi utilizada em um componente `Text` para pegar o tamanho desse array, veja abaixo:
 
 {{< tabs id="T164" >}}
 {{% tab name="JSON" %}}
