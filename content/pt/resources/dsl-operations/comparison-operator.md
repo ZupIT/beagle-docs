@@ -67,7 +67,7 @@ description: 'Nesta seção, você encontra descrição completa dos operadores 
 
 ### Exemplo
 
-Aqui, o exemplo é de uma tela que utiliza a operação de comparação **lt**, que verifica se o valor da soma de counter e:
+O exemplo aqui é de uma tela que utiliza a operação de comparação **lt**, ela verifica se o valor da soma de counter e há duas possibilidades:
 
 * Se o resultado da condição do `or` for verdadeira, o texto do componente `Text` se torna **true;**
 * Caso falso ele atribui ao texto o valor de **false.**
