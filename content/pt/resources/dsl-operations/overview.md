@@ -22,7 +22,7 @@ As operações são usadas quando você quiser modificar os valores de um compon
 
 O Beagle disponibiliza alguns operadores padrões, mas você também pode criar suas próprias operações. 
 
-##### **OBS:** 
+##### *Uso dos métodos** 
 
 - A nova DSL não implica na mudança do JSON ao renderizar os componentes;
 
