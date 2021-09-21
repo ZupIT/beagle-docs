@@ -1,7 +1,7 @@
 ---
 title: Operadores lógicos
 weight: 365
-description: 'Nesta seção, você encontra descrição completa dos Operadores Lógicos.'
+description: 'Nesta seção, você encontra descrição completa dos operadores lógicos.'
 ---
 
 ---
