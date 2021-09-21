@@ -45,8 +45,8 @@ fun isValidCpf(param: Array<out String?>) : Bind.Expression<Boolean> {
 }
 ```
 
-No exemplo acima, foi criado uma operação customizada que valida um Cpf e retorna se o resultado foi válido ou não.
-Para isso, foram feitas as validações necessárias e retornou o método **createOperation** com o nome da operação e o parâmetro esperado. Com isso, foi obtido o seguinte resultado:
+No exemplo acima a operação customizada criada valida um CPF e retorna se o resultado foi válido ou não.
+Para isso, as validações necessárias foram feitas e depois o método **createOperation** retornou com o nome da operação e o parâmetro esperado. O resultado foi:
 
 {{< tabs id="T166" >}}
 {{% tab name="JSON" %}}
