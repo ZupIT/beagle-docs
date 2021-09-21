@@ -14,7 +14,7 @@ Para registrar sua operação customizada, é necessário usar o método **creat
 
 ## Exemplo
 
-Veja abaixo o exemplo utilizando a operação `isValidCpf` onde o texto do componente `Text` varia de acordo com o resultado da verificação:
+O exemplo abaixo mostra a operação `isValidCpf` e o texto do componente `Text` varia de acordo com o resultado da verificação, veja como:
 
 
 ```
