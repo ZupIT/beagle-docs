@@ -8,6 +8,7 @@ description: 'Nesta seção, você encontra descrição completa dos operadores 
 
 ## Quais são? 
 
+Veja abaixo quais são os operadores lógicos:
 | Operadores | Ação |
 | :---: | :--- | :--- |
 | condition\(\) | Operador de condição que avalia dois elementos e verifica qual é a condição verdadeira. |
