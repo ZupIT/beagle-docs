@@ -24,7 +24,10 @@ O Beagle disponibiliza alguns operadores padrões, mas você também pode criar 
 
 ##### *Uso dos métodos** 
 
-- A nova DSL não implica na mudança do JSON ao renderizar os componentes;
+{{% alert color="warning" %}}
+  A nova DSL não implica na mudança do JSON ao renderizar os componentes.
+{{% /alert %}}
+
 
 Quando você utilizar os operadores com a nova DSL, é necessário entender o uso dos métodos a seguir:
 
