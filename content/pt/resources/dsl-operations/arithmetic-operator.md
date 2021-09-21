@@ -1,7 +1,7 @@
 ---
 title: Operadores aritméticos
 weight: 363
-description: "Nesta seção, você encontra a descrição completa dos Operadores Numéricos."
+description: "Nesta seção, você encontra a descrição completa dos operadores numéricos."
 ---
 
 ---
