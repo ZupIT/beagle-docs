@@ -2,8 +2,7 @@
 title: Operadores para manipulação de string
 weight: 369
 description: >-
-  Nesta seção, você encontra descrição completa dos operadores para manipulação
- de strings.
+  Nesta seção, você encontra descrição completa dos operadores para manipulação de strings.
 ---
 
 ---
