@@ -69,8 +69,10 @@ description: 'Nesta seção, você encontra descrição completa dos operadores 
 
 O exemplo aqui é de uma tela que utiliza a operação de comparação **lt**, ela verifica se o valor da soma de counter e há duas possibilidades:
 
-* Se o resultado da condição do `or` for verdadeira, o texto do componente `Text` se torna **true;**
-* Caso falso ele atribui ao texto o valor de **false.**
+1. Se o resultado da condição do `**or**` for verdadeira, o texto do componente `Text` se torna **true**;
+2. Se for falso, ele atribui ao texto o valor de **false.**
+
+Veja abaixo:
 
 {{< tabs id="T161" >}}
 {{% tab name="JSON" %}}
