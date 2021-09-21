@@ -24,7 +24,15 @@ description: >-
 
 ### Exemplo
 
-Nesse exemplo, uma tela possui um texto com uma operação de `substring`, no qual sua frase é **'The book is on the table'** e os parâmetros **4, 11** ditam o limite dessa substring, a tornando a seguinte string '**book is on':**
+O exemplo mostra uma tela que possui um texto com uma operação de `substring`. 
+Ela contém a frase: 
+- **'The book is on the table'** 
+Os parâmetros são:
+-  **4, 11**. 
+Isso mostra o limite dessa substring, e ela se torna uma string: '**book is on':**
+
+Veja abaixo:
+
 
 {{< tabs id="T162" >}}
 {{% tab name="JSON" %}}
