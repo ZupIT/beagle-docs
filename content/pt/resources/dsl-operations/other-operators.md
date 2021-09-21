@@ -7,7 +7,7 @@ description: 'Nesta seção, você encontra descrição completa de outros opera
 ---
 
 ## Quais são? 
-
+Veja abaixo quais são os outros operadores:
 | Operadores | Exemplo | Ação |
 | :---: | :---: | :--- |
 | isNull | isNull(expressionOf("@{context}") | Operador que verifica se o paramêtro é nulo.  |
