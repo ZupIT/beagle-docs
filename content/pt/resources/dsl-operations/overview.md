@@ -9,7 +9,12 @@ description: 'Nesta seção, você encontra a descrição completa das Operaçõ
 
 ## O que é? 
 
-As operações permitem que você crie aplicações com telas mais complexas por meio do seu backend com operações básicas como condicionais, soma, igualdade, etc. Dessa forma, os  componentes não necessitam de ter esse tipo de lógica dentro deles. 
+As operações permitem você criar aplicações com telas mais complexas por meio do seu backend com operações básicas como:
+- Condicionais
+- Soma
+- Igualdade
+- E outras.
+A vantagem é que os componentes não precisam ter esse tipo de lógica dentro deles. 
 
 ## Como usar?
 
