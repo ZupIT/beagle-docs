@@ -9,7 +9,7 @@ description: >-
 ---
 
 ## Quais são? 
-
+Veja abaixo quais são os manipuladores de string: 
 | Operadores | Exemplo | Ação |
 | :---: | :---: | :--- |
 | concat | concat(constant("cachorro"), constant("quente")) | Operador que concatena as strings que tiver como entrada. |
