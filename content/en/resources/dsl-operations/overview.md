@@ -1,8 +1,8 @@
 ---
 title: Overview
 weight: 1
-type: overview
-description: 'In this section, you will find the information about Operations using Beagle's DSL.'
+description: >- 
+    In this section, you will find the information about Operations using Beagle's DSL.
 ---
 
 ---
