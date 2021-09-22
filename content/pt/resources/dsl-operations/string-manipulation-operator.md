@@ -2,14 +2,13 @@
 title: Operadores para manipulação de string
 weight: 369
 description: >-
-  Nesta seção, você encontra descrição completa dos Operadores para Manipulação
-  de Strings.
+  Nesta seção, você encontra descrição completa dos operadores para manipulação de strings.
 ---
 
 ---
 
 ## Quais são? 
-
+Veja abaixo quais são os manipuladores de string: 
 | Operadores | Exemplo | Ação |
 | :---: | :---: | :--- |
 | concat | concat(constant("cachorro"), constant("quente")) | Operador que concatena as strings que tiver como entrada. |
@@ -18,11 +17,21 @@ description: >-
 | lowercase | lowercase(constant(("BRASIL")) | Operador que transforma a todas as letras de uma string em letras minúsculas. |
 | substr | substr(constant("brasil"), constant(3)) | Operador que retorna uma substring da string de entrada. Essa operação pode ter 2 ou 3 entradas, onde o primeiro parâmetro é a string e o segundo e terceiro parâmetro são os limitadores da string. |
 
- **OBS:** Ao utlizar as operações com a nova DSL, é necessário adicionar o método **toBindString( )** para fazer a conversão da operação para o tipo Bind de String.
+{{% alert color="warning" %}}
+  Quando você utilizar as operações com a nova DSL, é necessário adicionar o método **toBindString( )** para fazer a conversão da operação para o tipo `Bind` de String.
+ {{% /alert %}}
 
 ### Exemplo
 
-Nesse exemplo, uma tela possui um texto com uma operação de `substring`, no qual sua frase é **'The book is on the table'** e os parâmetros **4, 11** ditam o limite dessa substring, a tornando a seguinte string '**book is on':**
+O exemplo mostra uma tela que possui um texto com uma operação de `substring`. 
+Ela contém a frase: 
+- **'The book is on the table'** 
+Os parâmetros são:
+-  **4, 11**. 
+Isso mostra o limite dessa substring, e ela se torna uma string: '**book is on':**
+
+Veja abaixo:
+
 
 {{< tabs id="T162" >}}
 {{% tab name="JSON" %}}

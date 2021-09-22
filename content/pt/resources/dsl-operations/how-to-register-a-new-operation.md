@@ -1,12 +1,12 @@
 ---
 title: Como registrar uma nova operação
 weight: 375
-description: "Nesta seção, você encontra descrição completa das Custom Operations."
+description: "Nesta seção, você encontra como registrar uma nova operação."
 ---
 
 ---
 
-Depois que você viu que é possível realizar[ **Operações**]({{< ref path="/resources/dsl-operations" lang="pt" >}}) do tipo soma, subtração, etc, utilizando o contexto e a nova DSL, você também pode criar a sua própria operação!
+No Beagle é possível realizar [ **Operações**]({{< ref path="/resources/dsl-operations" lang="pt" >}}) do tipo soma, subtração, etc, utilizando o contexto e a DSL, mas você também pode criar a sua própria operação ou 'Custom Operation'.
 
 Para registrar sua operação customizada, é necessário usar o método **createOperation** que recebe como parâmetros:
 - Uma `String` com o nome da operação;
@@ -14,7 +14,7 @@ Para registrar sua operação customizada, é necessário usar o método **creat
 
 ## Exemplo
 
-Veja abaixo o exemplo utilizando a operação `isValidCpf` onde o texto do componente `Text` varia de acordo com o resultado da verificação:
+O exemplo abaixo mostra a operação `isValidCpf` e o texto do componente `Text` varia de acordo com o resultado da verificação, veja como:
 
 
 ```
@@ -45,8 +45,8 @@ fun isValidCpf(param: Array<out String?>) : Bind.Expression<Boolean> {
 }
 ```
 
-No exemplo acima, foi criado uma operação customizada que valida um Cpf e retorna se o resultado foi válido ou não.
-Para isso, foram feitas as validações necessárias e retornou o método **createOperation** com o nome da operação e o parâmetro esperado. Com isso, foi obtido o seguinte resultado:
+No exemplo acima a operação customizada criada valida um CPF e retorna se o resultado foi válido ou não.
+Para isso, as validações necessárias foram feitas e depois o método **createOperation** retornou com o nome da operação e o parâmetro esperado. O resultado foi:
 
 {{< tabs id="T166" >}}
 {{% tab name="JSON" %}}

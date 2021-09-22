@@ -21,7 +21,8 @@ union | union `<Number>` expressionOf("@{context.array1}"), expressionOf("@{cont
 
 ### Exemplo
 
-Veja o exemplo de uma tela no qual foi declarado um contexto com id `numbersArray` com o valor de **\[0, 1, 2, 3, 4\],** esse contexto é usado na  operação de `removeIndex`no texto do component Text, onde ele remove o elemento de index **2**.
+O exemplo abaixo é de uma tela, onde um contexto com id `numbersArray` foi declarado com o valor de **\[0, 1, 2, 3, 4\],**. 
+Esse contexto é usado na  operação de `removeIndex` no texto do component Text, e ele remove o elemento de index **2**.
 
 {{< tabs id="T163" >}}
 {{% tab name="JSON" %}}

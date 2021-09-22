@@ -1,13 +1,13 @@
 ---
 title: Outros operadores
 weight: 373
-description: 'Nesta seção, você encontra descrição completa de Outros Operadores.'
+description: 'Nesta seção, você encontra descrição completa de outros operadores.'
 ---
 
 ---
 
 ## Quais são? 
-
+Veja abaixo quais são os outros operadores:
 | Operadores | Exemplo | Ação |
 | :---: | :---: | :--- |
 | isNull | isNull(expressionOf("@{context}") | Operador que verifica se o paramêtro é nulo.  |
@@ -16,7 +16,7 @@ description: 'Nesta seção, você encontra descrição completa de Outros Opera
 
 ### Exemplo
 
- Um contexto com id **numbersArray** que possui como valor **\[0, 1, 2, 3, 4\]** e a operação `length` foi utilizada em um componente Text para pegar o tamanho desse array, veja abaixo:
+Neste exemplo, um contexto com id **numbersArray** possui o valor **\[0, 1, 2, 3, 4\]** e a operação `**length**` foi utilizada em um componente `Text` para pegar o tamanho desse array, veja abaixo:
 
 {{< tabs id="T164" >}}
 {{% tab name="JSON" %}}

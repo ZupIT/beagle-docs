@@ -1,13 +1,14 @@
 ---
 title: Operadores lógicos
 weight: 365
-description: 'Nesta seção, você encontra descrição completa dos Operadores Lógicos.'
+description: 'Nesta seção, você encontra descrição completa dos operadores lógicos.'
 ---
 
 ---
 
 ## Quais são? 
 
+Veja abaixo quais são os operadores lógicos:
 | Operadores | Ação |
 | :---: | :--- | :--- |
 | condition\(\) | Operador de condição que avalia dois elementos e verifica qual é a condição verdadeira. |
@@ -17,7 +18,10 @@ description: 'Nesta seção, você encontra descrição completa dos Operadores 
 
 ### Exemplo
 
-Aqui temos o exemplo de uma tela que utiliza duas operações lógicas, `condition` e `or`, onde caso o resultado da condição do `or` for verdadeira o texto do componente `Text` se torna **true**, caso falso ele atribui ao texto o valor de **false.**
+Este exemplo é uma tela que utiliza duas operações lógicas `**condition**` e `**or**`; 
+Há duas possibilidades no resultado: 
+1. Caso o resultado da condição `or` for verdadeira o texto do componente `Text` se torna **true**.
+2. Se for falso ele atribui ao texto o valor de **false.**
 
 {{< tabs id="T160" >}}
 {{% tab name="JSON" %}}
