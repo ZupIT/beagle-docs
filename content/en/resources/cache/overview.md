@@ -14,7 +14,7 @@ Currently, there are **two cache labels** on Beagle:
 - A volatile layer.
 - A persistent layer.
 
-The volatile layer today depends on the persistent layer, meaning that only curly items on the persistent layer are candidates to the volatile cache.
+The volatile layer today depends on the persistent layer, meaning that only cached items on the persistent layer are candidates to the volatile cache.
 
 ## Cache's layers
 
