@@ -1,5 +1,5 @@
 ---
-title: Especificação de componentes por plataforma
+title: Canalização de componentes
 weight: 95
 description: >-
   Nesta seção, você encontra mais sobre como filtrar os elementos que são
@@ -8,13 +8,12 @@ description: >-
 
 ---
 
-Alguns elementos fornecidos pelo Beagle podem ser mais direcionados à uma plataforma e, talvez, não fazer tanto sentido para outra. Por exemplo, o uso do [**ScrollView**]({{< ref path="/api/components/layout/scrollview" lang="pt" >}}) funciona melhor na plataforma Mobile, mas não é necessário na Web.
+Alguns componentes fornecidos pelo Beagle podem ser direcionados à uma plataforma espefica, pois, podem não fazer tanto sentido para outra. Por exemplo, o uso do [**ScrollView**]({{< ref path="/api/components/layout/scrollview" lang="pt" >}}) na plataforma Mobile é necessário para rolar conteúdos, mas não é necessário na Web.
 
-Isso acontece porque o Beagle possui a funcionalidade de **Especificação de Plataforma**, que te permite ter controle de quais elementos são enviados pelo BFF e quais plataformas serão usadas.
-
+Isso é possível pois o Beagle possui a funcionalidade de **Especificação de Plataforma** ou **Canalização**, que te permite ter controle sobre quais elementos são enviados pelo BFF e quais plataformas serão vão utiliza-los.
 ### Como funciona?
 
-O Beagle faz uso de um cabeçalho personalizado, `beagle-platform`**,** com os possíveis valores:
+O Beagle faz uso de um cabeçalho personalizado chamado `beagle-platform` que pode conter os valores:
 
 - `ALL`;
 - `MOBILE`;
@@ -22,7 +21,7 @@ O Beagle faz uso de um cabeçalho personalizado, `beagle-platform`**,** com os p
 - `IOS`;
 - `WEB`;
 
-Dessa forma, a resposta do BFF é interceptada e os elementos filtrados de acordo com a plataforma para qual ela está sendo enviada.
+Dessa forma, a resposta do BFF é interceptada e os elementos são filtrados de acordo com a plataforma para qual ela está sendo enviada.
 
 ### Como acessar?
 
