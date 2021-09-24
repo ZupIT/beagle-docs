@@ -1,5 +1,5 @@
 ---
-title: Components Pipeline
+title: Components Canalization
 weight: 95
 description: >-
   Here you'll find about Beagle's functionality to filter what elements are sent
