@@ -9,9 +9,11 @@ description: >-
 
 ## **O que é a DSL Context?**
 
-A DSL Context foi criada para revolver dois problemas nos projetos que utilizam o Beagle: **tipagem** e **atualização** dos valores no [**Contexto**]({{< ref path="/api/context/overview" lang="pt" >}}).
+A DSL Context resolve duas situações nos projetos com o Beagle: 
+1. **Tipagem**;
+2. **Atualização** dos valores no [**Contexto**]({{< ref path="/api/context/overview" lang="pt" >}}).
 
-Quando inicializamos um contexto populamos um mapa com chave/valor na qual o valor é um objeto qualquer `(Any)` e para conseguirmos alterar esses valores utilizamos o método [`SetContext()`]({{< ref path="/api/actions/setcontext" lang="pt" >}}).
+Ao iniciar um contexto, você popula um mapa com chave/valor e esse valor é um objeto qualquer `(Any)` e para  serem alterados, você precisa utilizar o método [**`SetContext()`**]({{< ref path="/api/actions/setcontext" lang="pt" >}}), veja abaixo: 
 
 ```kotlin
 context = ContextData("myBoolean", false),
@@ -20,11 +22,6 @@ onInit = listOf(
                 contextId = "myBoolean",
                 value = true
             )
-```
-
-Após uma análise dos problemas supracitados, vemos que não é possível inferir os tipos do contexto, e além disso, sempre é necessário utilizar o `SetContext` para conseguirmos alterar os valores do contexto. 
-
-Com isso, surgiu a necessidade de criarmos uma DSL Context que revolve o problema de tipagem que altera a maneira de se inicializar um contexto para um `data class`, definindo assim com suas propriedades(chave), bem como abstrai a maneira de atualizar os dados do contexto com o `SetContext` e cria extensions dessas propriedades com métodos que alteram seus valores.
 
 {{% alert color="info" %}}
 Basicamente existem 3 tipos de contextos que a DSL Context busca resolver: `Local`, `Global` e `Implícito`.
