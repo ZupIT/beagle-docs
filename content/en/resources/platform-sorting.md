@@ -1,5 +1,5 @@
 ---
-title: Platform sorting
+title: Components Canalization
 weight: 95
 description: >-
   Here you'll find about Beagle's functionality to filter what elements are sent
@@ -8,9 +8,9 @@ description: >-
 
 ---
 
-Some elements provided by Beagle can be better used in some platforms than other, for example, [**ScrollView**]({{< ref path="/api/components/layout/scrollview" lang="en" >}}) works better in mobile and it is not needed for web.
+Some elements provided by Beagle can will function in some platforms better than in others, for example, the [**ScrollView**]({{< ref path="/api/components/layout/scrollview" lang="en" >}}) works in mobile when you need to scroll on content but it wont be used for web, since brownsers already have this functionality.
 
-Beagle has a platform specification functionality, so it is able to control which elements are sent by BFF and which platforms will be used.
+In order to filter some componentes, Beagle has a **platform specification** functionality called **canalization**, so it will be able to control which elements are sent by the BFF and select which platforms it will be sent to.
 
 ### How does it work?
 

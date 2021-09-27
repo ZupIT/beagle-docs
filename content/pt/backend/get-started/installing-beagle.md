@@ -11,7 +11,7 @@ description: >-
 {{% alert color="danger" %}}
 Antes de iniciar a instalação, é importante você saber que as etapas abaixo são para linguagens da JVM.
 
-Para outras linguagens, seu servidor precisa servir o JSON seguindo nossa API. Veja a implementação de [**cache**]({{< ref path="/resources/cache/" lang="pt" >}}) e em [**mecanismos específicos de cada linguagem**]({{< ref path="/resources/components/platform-sorting" lang="pt" >}}).
+Para outras linguagens, seu servidor precisa servir o JSON seguindo nossa API. Veja a implementação de [**cache**]({{< ref path="/resources/cache/" lang="pt" >}}) e em [**mecanismos específicos de cada linguagem**]({{< ref path="/resources/platform-sorting" lang="pt" >}}).
 {{% /alert %}}
 
 ## Requisitos
