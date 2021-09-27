@@ -166,7 +166,7 @@ data class GlobalObject(
 ```
 
 {{% alert color="info" %}}
-Todas as propriedades declaradas na `data class` para o contexto global devem ser var e possuir um valor default
+Todas as propriedades declaradas nas `data classes` devem ser **var** e possuir um valor default.
 {{% /alert %}}
 
 As extensões são criadas para cada propriedade do seu contexto global, assim você consegue acessá-las e depois alterar seus valores.
