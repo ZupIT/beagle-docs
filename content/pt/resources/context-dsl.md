@@ -126,7 +126,7 @@ public fun MyContext.changePerson(person: Bind.Expression<Person>): SetContext {
 }
 ```
 
-Para inicializarmos um Contexto Local, devemos criar uma instância deste `data class` e atriburimos ele a um contexto de algum componente:
+Para você inicializar um Contexto Local, crie uma instância do `data class` e é necessário atribuir um contexto de algum componente:
 
 ```kotlin
 private var myContext = MyContext("myContext",
