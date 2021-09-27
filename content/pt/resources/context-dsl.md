@@ -77,10 +77,10 @@ data class MyContext(
 ```
 
 {{% alert color="info" %}}
-Todas as propriedades declaradas nas data classes devem ser var e possuir um valor default
+Todas as propriedades declaradas nas data classes devem ser **var** e possuir um valor default.
 {{% /alert %}}
 
-Com isso, foram geradas as extensions `expression` e `change` para as propriedades value e person no arquivo chamado MyContextNormalizer:
+As extensões **`expression`** e **`change`** foram geradas para as propriedades **value** e **person** no arquivo chamado **MyContextNormalizer**, veja abaixo:
 
 ```kotlin
 public val MyContext.valueExpression: Bind.Expression<String>
