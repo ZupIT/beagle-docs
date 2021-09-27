@@ -168,7 +168,7 @@ data class GlobalObject(
 Todas as propriedades declaradas na `data class` para o contexto global devem ser var e possuir um valor default
 {{% /alert %}}
 
-Da mesma maneira que o contexto local, são criadas extesions para cada propriedade do seu contexto global para conseguirmos acessá-las e alterar seus respectivos valores.
+As extensões são criadas para cada propriedade do seu contexto global, assim você consegue acessá-las e depois alterar seus valores.
 
 {{% alert color="warning" %}}
 Na aplicação só pode existir uma `data class` anotada com @GlobalContext
