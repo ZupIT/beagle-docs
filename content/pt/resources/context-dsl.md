@@ -184,11 +184,14 @@ globalObject.change(
 globalObject.person.change(Person("", "firstName global changed", "lastName global changed"))
 ```
 
-### Utilizando o Contexto Implicito com a DSL Context
+### **Utilizando o Contexto Implicito com a DSL Context**
 
-O Contexto implícito é um contexto que através de um `lambda` você recebe um objeto definido como parâmetro para conseguir acessar possíveis valores que ele receba e manipular/atributir a outros contextos. 
+O Contexto implícito através de um **`lambda`** recebe um objeto definido como parâmetro, isso é para você acessar os possíveis valores que ele recebe e manipular/atributir a outros contextos. 
 
-Para se declarar um contexto implícito deve-se anotar a propriedade com **@ImplicitContext**. Com isso será gerada uma funcão com o mesmo nome do Widget, porém, com a primeira letra minuscula. Este método recebe os mesmo parametros definidos no Widget, entretanto as propriedades que possuem a anotação do contexto implícito são alteradas para um lambda na qual recebe como parametro um objeto primitivo ou um data class que herde de context e retorna o mesmo tipo definido no Widget.
+Para você declarar um contexto implícito: 
+1. Anote a propriedade com **@ImplicitContext**, uma função com o mesmo nome do Widget será gerada, porém, com a primeira letra minúscula. 
+Este método recebe os mesmo parâmetros definidos no Widget, porém as propriedades que possuem a anotação do contexto implícito são alteradas para um **lambda** que recebe como parâmetro um objeto primitivo ou um **data class** que herda de um context e retorna o mesmo tipo definido no Widget.
+Veja abaixo:
 
 ```kotlin
 @RegisterWidget
