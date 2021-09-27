@@ -153,7 +153,7 @@ myContext.person.changeFirstName("new first name")
 myContext.changeValue("new value")
 ```
 
-### Utilizando o Contexto Global com a DSL Context
+### **Utilizando o Contexto Global com a DSL Context**
 
 Para você criar um contexto global, crie um **`data class`** anotado com **@GlobalContext**:
 
