@@ -14,7 +14,7 @@ Currently, there are **two cache labels** on Beagle:
 - A volatile layer.
 - A persistent layer.
 
-The volatile layer today depends on the persistent layer, meaning that only curly items on the persistent layer are candidates to the volatile cache.
+The volatile layer today depends on the persistent layer, meaning that only cached items on the persistent layer are candidates to the volatile cache.
 
 ## Cache's layers
 
@@ -37,7 +37,7 @@ On this cache layer, there are two types of localization:
 
 This cache is used to optimize BFF's response - in terms of time and size -, in cases where there is no changes. The entries of this cache lasts until the server redeploy or the client is reinstalled.
 
-The premisse to this cache works is that it has to always return the same JSON to the same request. To guarantee that, it's necessary that this cache is the same according to its endpoint and specific platform as we can see in [**component's platform specification.**]({{< ref path="/resources/components/platform-sorting" lang="en" >}})
+The premisse to this cache works is that it has to always return the same JSON to the same request. To guarantee that, it's necessary that this cache is the same according to its endpoint and specific platform as we can see in [**component's platform specification.**]({{< ref path="/resources/platform-sorting" lang="en" >}})
 
 In other words, an endpoint can return a static element because it can only work if it returns the same JSON, independently of any other specific platform.
 
