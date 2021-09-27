@@ -138,7 +138,7 @@ private var myContext = MyContext("myContext",
     Container(context = myContext)
 ```
 
-Caso deseje acessar a expressão de uma determinada propriedade utilize a extensão expression:
+Se você acessar a expressão de uma determinada propriedade, utilize a extensão **expression**:
 
 ```kotlin
 Text(myContext.valueExpression),
