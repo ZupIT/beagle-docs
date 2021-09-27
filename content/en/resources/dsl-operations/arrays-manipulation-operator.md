@@ -1,5 +1,5 @@
 ---
-title: Operadores para manipulação de arrays
+title: Arrays manipulation operator
 weight: 371
 description: >-
   In this section, you will find information about arrays manipulation operators.
