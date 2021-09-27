@@ -154,7 +154,7 @@ myContext.changeValue("new value")
 
 ### Utilizando o Contexto Global com a DSL Context
 
-Para criar um contexto global, devemos criar um `data class` anotado com **@GlobalContext**:
+Para você criar um contexto global, crie um **`data class`** anotado com **@GlobalContext**:
 
 ```kotlin
 @GlobalContext
