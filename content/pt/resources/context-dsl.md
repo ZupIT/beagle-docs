@@ -174,7 +174,7 @@ As extensões são criadas para cada propriedade do seu contexto global, assim v
 Na aplicação só pode existir uma `data class` anotada com @GlobalContext
 {{% /alert %}}
 
-Para conseguirmos utilizar o contexto global, devemos sempre iniciar uma nova instância da `data class` anotada com o @GlobalContext e através das extensões podemos acesssar/alterar os valores deste contexto:
+Para você utilizar o contexto global, inicie uma nova instância da `data class` anotada com o @GlobalContext. Por meio das extensões, você pode acesssar/alterar os valores deste contexto, veja como:
 
 ```kotlin
 var globalObject = GlobalObject()
