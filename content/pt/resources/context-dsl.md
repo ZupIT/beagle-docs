@@ -62,9 +62,10 @@ A DSL Context **não** altera o contrato JSON que o Beagle já tem.
 A DSL Context só está disponível a partir da versão **X** do Beagle
 {{% /alert %}}
 
-### Utilizando o Contexto Local com a DSL Context
+##  **Utilizando o Contexto Local com a DSL Context**
 
-Usa-se a anotação **@ContextObject** em data classes que você deseja atribuir como contexto e, obrigatoriamente, esses data classes devem implementar uma interface chamada `Context` que possui uma marcação id. Todos os subtipos que o contexto possa ter também deverão ser anotados.
+Utilize a anotação **@ContextObject** em data classes que você deseja atribuir como contexto e, obrigatoriamente, elas devem implementar uma interface chamada **`Context`** que possui uma marcação ID. 
+Todos os subtipos que o contexto possui devem ser anotados. Veja abaixo: 
 
 ```kotlin
 @ContextObject
