@@ -207,10 +207,10 @@ public fun input(hint: Bind<String>, onTextChange: ((java.lang.String) -> List<A
 ```
 
 {{% alert color="warning" %}}
-O Contexto implícito somente pode ser usado em custom Widgets que possuem a anotação @RegisterWidget
+O Contexto implícito pode ser usado somente em **custom Widgets** que possuem a anotação **@RegisterWidget**.
 {{% /alert %}}
 
-Agora, para usar esse Widget com o contexto implicito, você deve chamar essa função gerada:
+Se você quiser usar esse Widget com o **contexto implícito**, você deve chamar a função abaixo:
 
 ```kotlin
 input(
