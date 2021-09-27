@@ -32,7 +32,10 @@ A DSL Context resolve 3 tipos de contexto:
 
 ## **Como funciona a DSL Context?**
 
-Através de um processador de anotações são geradas extensions das classes de contexto que são anotadas com **@ContextObject**, na qual para cada propriedade são criadas 2 extensions: `expression` e `change`. A extensão expression é utilizada para conseguir resgatar um Bind.Expression contendo o seu valor e change é utilizado para alterar o valor dessa propriedade.
+A DSL Context funciona por meio de um processador de anotações, onde são geradas extensões das classes de contexto que são anotadas com **@ContextObject** e para cada propriedade são criadas 2 extensões: 
+
+- **`expression`**: Usada para resgatar um **Bind.Expression** contendo o seu valor.
+- **`change`**: Usada para alterar o valor dessa propriedade.
 
 ```kotlin
 // extensões geradas
