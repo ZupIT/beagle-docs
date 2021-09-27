@@ -56,7 +56,7 @@ public fun MyContext.changeValue(value: String): SetContext {
 A DSL Context **não** altera o contrato JSON que o Beagle já tem.
 {{% /alert %}}
 
-## Requisitos
+## **Requisitos**
 
 {{% alert color="info" %}}
 A DSL Context só está disponível a partir da versão **X** do Beagle
