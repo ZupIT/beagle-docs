@@ -24,7 +24,10 @@ onInit = listOf(
             )
 
 {{% alert color="info" %}}
-Basicamente existem 3 tipos de contextos que a DSL Context busca resolver: `Local`, `Global` e `Implícito`.
+A DSL Context resolve 3 tipos de contexto: 
+1.  **`Local`**
+2.  **`Global`**
+3. `**Implícito`**
 {{% /alert %}}
 
 ## **Como funciona a DSL Context?**
