@@ -12,6 +12,10 @@ description: >-
 
 Beagle React's current version:[![badge](https://img.shields.io/npm/v/@zup-it/beagle-react?logo=React)](https://github.com/ZupIT/beagle-web-react)
 
+{{% alert color="info" %}}
+  If you still do not have a React application, learn how to get started with [Create React App](https://create-react-app.dev/docs/getting-started).
+{{% /alert %}}
+
 ### Step 1: Install Beagle's library
 
 Navigate to the root of your react project and run one of the commands below according to the package manager of your preference.

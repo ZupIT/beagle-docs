@@ -10,6 +10,10 @@ description: >-
 
 Versão atual do Beagle React: [![badge](https://img.shields.io/npm/v/@zup-it/beagle-react?logo=React)](https://github.com/ZupIT/beagle-web-react)
 
+{{% alert color="info" %}}
+  Se você ainda não tem um projeto React, aprenda a criar um com o [Create React App](https://create-react-app.dev/docs/getting-started).
+{{% /alert %}}
+
 ### Passo 1: Instalando a biblioteca Beagle
 
 Para seguir com o processo de instalação, navegue até a raiz do seu projeto e execute um dos comandos abaixo de acordo com o gerenciador de pacotes de sua preferência.
