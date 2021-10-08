@@ -39,6 +39,10 @@ contentDir = "content/en"
 version_menu = "Versions"
 # Weight used for sorting.
 weight = 1
+
+[languages.en.params]
+menu_new_feature_text = "[NEW]"
+
 [languages.pt]
 title = "Beagle"
 description = "Documentação Beagle"
@@ -53,6 +57,10 @@ create_issue = "Criar docs issue"
 create_beagle_issue = "Criar Beagle issue"
 search_label = "Procurando por algo?"
 faq_path = "/pt/faq"
+
+[languages.pt.params]
+menu_new_feature_text = "[NOVO]"
+
 
 [markup]
   [markup.goldmark]
