@@ -1,7 +1,7 @@
 name: BETA UPLOAD
 
 on:
-  push:
+  pull_request:
     branches: [main]
 
 jobs:
