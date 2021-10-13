@@ -43,6 +43,11 @@ weight = 1
 [languages.en.params]
 menu_new_feature_text = "[NEW]"
 
+[[languages.en.menu.main]]
+    name = "C4 Model"
+    weight = 20
+    url = "./c4model/en/#"
+
 [languages.pt]
 title = "Beagle"
 description = "Documentação Beagle"
@@ -60,6 +65,11 @@ faq_path = "/pt/faq"
 
 [languages.pt.params]
 menu_new_feature_text = "[NOVO]"
+
+[[languages.pt.menu.main]]
+    name = "C4 Model"
+    weight = 20
+    url = "../c4model/pt-br/#"
 
 
 [markup]
