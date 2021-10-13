@@ -76,7 +76,7 @@ menu_new_feature_text = "[NOVO]"
     weight = 20
     url = "../c4model/pt-br/#"
 
-[[languages.en.menu.main]]
+[[languages.pt.menu.main]]
     name = "References"
     weight = 20
     url = "https://docs-reference.usebeagle.io/"
