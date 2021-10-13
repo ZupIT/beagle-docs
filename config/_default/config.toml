@@ -48,6 +48,11 @@ menu_new_feature_text = "[NEW]"
     weight = 20
     url = "./c4model/en/#"
 
+[[languages.en.menu.main]]
+    name = "References"
+    weight = 20
+    url = "https://docs-reference.usebeagle.io/"
+
 [languages.pt]
 title = "Beagle"
 description = "Documentação Beagle"
@@ -71,6 +76,10 @@ menu_new_feature_text = "[NOVO]"
     weight = 20
     url = "../c4model/pt-br/#"
 
+[[languages.en.menu.main]]
+    name = "References"
+    weight = 20
+    url = "https://docs-reference.usebeagle.io/"
 
 [markup]
   [markup.goldmark]
@@ -118,11 +127,6 @@ offlineSearch = true
 
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
-
-[[menu.main]]
-    name = "References"
-    weight = 20
-    url = "https://docs-reference.usebeagle.io/"
 
 [[params.versions]]
 
