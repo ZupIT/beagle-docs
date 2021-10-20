@@ -1,6 +1,7 @@
 ---
 title: Urls
 weight: 8
+hasNewFeature: true
 description: >-
   Here, you'll find how Beagle deals with URLs between backend and frontend
   (BFF)
