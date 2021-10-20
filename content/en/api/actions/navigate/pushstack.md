@@ -15,6 +15,7 @@ Your structure is represented by the attribute below:
 | **Attribute** | **Type**                                       | Required | **Definition**    |
 | :------------ | :--------------------------------------------- | :------- | :---------------- |
 | route         | [**Route**]({{< ref path="/api/actions/navigate/route/" lang="en" >}}) | ✓        | Navigation route. |
+| controllerId | String |     | The navigation controller id to be used during the navigation action, If missing, the default navigation controller will be used instead. |
 
 ## How to use it?
 
