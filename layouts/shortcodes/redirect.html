@@ -8,7 +8,7 @@
   <script>
     (
     function () {
-      var win = window.open("{{ index .Params 0 }}", '_blank');
+      var win = window.open("{{ index .Params 0 }}", "{{ index .Params 1}}" || '_blank');
       win.focus();
     }
     )()
