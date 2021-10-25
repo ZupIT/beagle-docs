@@ -10,6 +10,10 @@ description: >-
 
 Versão atual do Beagle Angular: [![badge](https://img.shields.io/npm/v/@zup-it/beagle-angular?logo=Angular)](https://github.com/ZupIT/beagle-web-angular)
 
+{{% alert color="info" %}}
+  Se você ainda não tem um projeto Angular, aprenda na [documentação oficial](https://angular.io/guide/setup-local) como criar um!
+{{% /alert %}}
+
 ### Passo 1: Instalar a biblioteca Beagle
 
 Para seguir com o processo de instalação, navegue até a raiz do seu projeto angular e execute um dos comandos abaixo de acordo com o gerenciador de pacotes de sua preferência.
