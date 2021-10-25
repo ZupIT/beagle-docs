@@ -73,7 +73,7 @@ jobs:
         run: rm -rf faq & rm -rf pt/faq
 
       - name: S3 upload
-        run: aws s3 sync --acl public-read --follow-symlinks public s3://$AWS_S3_BUCKET/$VERSION/ --delete
+        run: aws s3 sync --acl public-read --follow-symlinks public s3://$AWS_S3_BUCKET/$VERSION/ --exclude="c4model/*" --delete
         env:
           VERSION: ${{ steps.version.outputs.branch_version }}
           AWS_S3_BUCKET: ${{ env.BEAGLE_DOCS_AWS_AWS_DOCS_S3_BUCKET }}
