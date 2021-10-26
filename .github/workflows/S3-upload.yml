@@ -1,7 +1,7 @@
 name: S3 UPLOAD
 
 on:
-  pull_request:
+  push:
     branches: [release*]
 
 jobs:
