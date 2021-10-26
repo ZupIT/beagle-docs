@@ -77,7 +77,6 @@ jobs:
         env:
           AWS_S3_BUCKET: ${{ env.BEAGLE_DOCS_AWS_AWS_DOCS_S3_BUCKET }}
           
-
       - name: remove FAQ
         shell: bash
         working-directory: public
