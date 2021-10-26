@@ -67,6 +67,16 @@ jobs:
           BASE_URL: https://docs.usebeagle.io
           VERSION: ${{ steps.version.outputs.branch_version }}
 
+      - name: Upload FAQ
+        run: aws s3 sync --acl public-read --follow-symlinks public/faq s3://$AWS_S3_BUCKET/faq/ --delete
+        env:
+          AWS_S3_BUCKET: ${{ env.BEAGLE_DOCS_AWS_AWS_DOCS_S3_BUCKET }}
+
+      - name: Upload Portuguese FAQ
+        run: aws s3 sync --acl public-read --follow-symlinks public/pt/faq s3://$AWS_S3_BUCKET/pt/faq/ --delete
+        env:
+          AWS_S3_BUCKET: ${{ env.BEAGLE_DOCS_AWS_AWS_DOCS }}
+
       - name: remove FAQ
         shell: bash
         working-directory: public
