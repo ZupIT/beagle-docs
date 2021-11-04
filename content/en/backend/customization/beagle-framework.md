@@ -38,6 +38,7 @@ There are two ways to do this:
 ```kotlin
 val mapper = // however your ObjectMapper is initialized
 mapper.registerModule(BeagleModule)
+```
 
 ### Step 3: Configure the `BeagleCacheHandler`
 
