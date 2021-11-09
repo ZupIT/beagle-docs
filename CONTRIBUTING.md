@@ -1,36 +1,28 @@
 # **Contributing Guide**
-This is Beagle's contributing guide. You will find here some resources to help you contribute.
+This is Beagle's documentation contributing guide. We'd love to accept your patches and contributions to this project. There are just a few small guidelines you need to follow.
 
 ## **Table of contents**
 ### 1. [**Before you contribute**](#Before-you-contribute)
-> #### i. [**Code of Conduct**](#Code-of-Conduct)
-> #### ii. [**Legal**](#Legal)
+> #### i. [**Legal**](#Legal)
 ### 2. [**Prerequisites**](#Prerequisites)
 >#### i. [**Pull Request title**](#Pull-Request-title)
 > #### ii. [**Developer Certificate of Origin**](#Developer-Certificate-of-Origin)
 ### 3. [**How to contribute?**](#How-to-contribute?)
->#### i. [**How can you contribute?**](#What-can-you-contribute?)
->#### ii. [**Contribution Guideline**](#Contribution-Guideline)
->#### iii [**Pull Request's approval**](#Pull-Request's-approval)
-### 4. [**Community**](#Community)
+### 4. [**Code of Conduct**](#Code-of-Conduct)
+### 5. [**Community**](#Community)
 
 
 ## **Before you contribute**
 
-### **Code of Conduct**
-Please follow the [**Code of Conduct**](https://github.com/ZupIT/beagle/blob/main/CODE_OF_CONDUCT.md) in all your interactions with our project.
 
 ### **Legal**
 - Beagle is licensed over [**ASF - Apache License**](https://github.com/ZupIT/charlescd/blob/main/LICENSE), version 2, so new files must have the ASL version 2 header. For more information, please check out [**Apache license**]( https://www.apache.org/licenses/LICENSE-2.0).
 
-- All contributions are subject to the [**Developer Certificate of Origin (DCO)**](https://developercertificate.org). 
-When you commit, use the ```**-s** ``` option to include the Signed-off-by line at the end of the commit log message.
-
 ## **Prerequisites**
-Check out the requisites before contributing to Beagle:
+Check out the requisites before contributing to Beagle's documentation:
 
 ### **Pull Request title**
-When opening a PR, add the title with a prefix of the type of change you are contributing, for example `feat:` for a new feature. You can see other types in the [**What can you contribute?**](#What-can-you-contribute?) section.
+When opening a PR, add the title with a prefix of the type of change you are contributing, for example `feat:` for a new feature. You can see other types in the [**How to contribute?**](#how-to-contribute?) section.
 
 Your Pull Request should look like this:
 
@@ -73,46 +65,30 @@ Signed-off-by: Name < e-mail address >
 For this method, your name and e-mail must be the same registered to your GitHub account.
 
 ## **How to contribute?** 
-See the guidelines to submit your changes. 
 
-### **How can you contribute?**
-You can contibute with a new feature, bug fix, documentation and more, check out below:
+You can suggest a change, a fix, or improvements to our documentation, such as: 
+- Add missing information.
+- Fix a grammar or code error.
+- Suggest a new section.
+- Translate. 
 
-- **feat:** A new feature (adding a new component, providing new variants for an existing component, etc.).
-- **fix:** A bug fix (correcting a styling issue, addressing a bug in a component's API, etc.).
-  When updating non-dev dependencies, mark your changes with the `fix:` type.
-- **docs:** Documentation-only changes.
-- **style:** Changes that do not affect the meaning of the code
-(whitespace, formatting, missing semicolons, etc). _Not_ to be used for CSS changes as those are meaningful changes, consider using `feat:` of `fix:` instead.
-- **refactor:** A code change that neither fixes a bug nor adds a feature.
-- **perf:** A code change that improves performance.
-- **test:** Adding missing tests or correcting existing tests.
-- **build:** Changes that affect the build system (changing webpack or Rollup config for example).
-- **ci:** Changes to our CI configuration files and scripts (changing `Fastlane`, adding or changing Danger plugins, etc.).
-- **chore:** Other changes that don't modify source or test files. Use this type when adding or updating dev dependencies.
-- **revert:** Reverts a previous commit.
+### **Open an issue**
+Follow the steps below: 
 
-> **Note:**
-> If you're introducing a breaking change, the message body should start with [**`BREAKING CHANGE:`**](https://www.conventionalcommits.org/en/v1.0.0/#commit-message-with-description-and-breaking-change-footer).
+**Step 1.** Access [**GitHub Issues**](https://github.com/ZupIT/beagle-docs/issues) and open an issue;
 
-### **Contribution Guideline**
-Follow the Pull Request submission guidelines below: 
+**Step 2.** Describe the issue or change you want to make; 
 
-**Step 1.** Search for issues and PRs that relate to your submission to avoid duplication;
+**Step 3.** Make your changes;
 
-**Step 2.** Make sure that the issue describes the problem you're fixing, or documents the design for the feature you'd like to add. Discussing the design upfront helps to ensure that we're ready to accept your work.
+**Step 4.** Open a pull request open a PR to the published branch, i. e., **`release-VERSION`** and fill in the template; 
 
-**Step 3.** Fork the ZupIT/beagle repo;
+**Step 5.** In GitHub, send a pull request to **`beagle:main`**;
 
-**Step 4.** Make your changes in a new git branch.
+**Step 6.** Beagle's team will check your issue, review it, and then approve your PR. 
+Is this the first Beagle's repository you visit? Check out other [**repositories**](https://github.com/ZupIT/beagle).
 
-**Step 5.** Follow our [**Coding Rules**](https://github.com/ZupIT/beagle/blob/main/doc/contributing/coding_rules.md);
-
-**Step 6.** Commit your changes using a descriptive commit message, [**Signing all your commits**](https://github.com/ZupIT/beagle/blob/main/doc/contributing/dco_rules.md) and making sure to **include appropriate test cases**.=;
-
-**Step 7.** Push your branch to GitHub;
-
-**Step 8.** In GitHub, send a pull request to **`beagle:main`**;
+Every time that a new release is created, we save the current work into a new branch, called `release-VERSION`.
 
 ### **Pull Request's approval**
 After Beagle's team analyze your contribution, we may add some questions and suggestions, you should:
@@ -126,9 +102,11 @@ After Beagle's team analyze your contribution, we may add some questions and sug
   git push -f
   ```
 
-## **Community**
+## **Code of Conduct**
+Please read the [**Code of Conduct**](https://github.com/ZupIT/beagle/blob/main/CODE_OF_CONDUCT.md).
 
-- Do you have any question about Beagle? Let's chat in our [**forum**](https://forum.zup.com.br/c/en/horusec/14).
+## **Community**
+If you have any questions or ideas, let's chat in our [**Zup Open Source Forum**](https://forum.zup.com.br).
 
 
 **Thank you for your contribution!**

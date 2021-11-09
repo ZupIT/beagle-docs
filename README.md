@@ -1,16 +1,16 @@
 
 # **Beagle Documentation**
-This project contains **[Beagle's](https://docs.usebeagle.io/v1.10/)** documentation.
+TThis repository uses [**hugo server**](https://gohugo.io/commands/hugo_server/) and contains **[Beagle's](https://docs.usebeagle.io/v1.10/)** official documentation.
 
 ## **Table of contents**
-1. [**About**](#About)
-2. [**Getting Started**](#getting-started)
+### 1. [**About**](#About)
+### 2. [**Getting Started**](#getting-started)
 > #### i. [**Requirements**](#requirements)
 > #### ii. [**Installation**](#installation)
 > #### iii. [**Build**](#build)
-3. [**How to contribute?**](#how-to-contribute)
-4. [**Code of Conduct**](#code-of-conduct)
-5. [**Community**](#community)
+### 3. [**Contributing Guide**](#contributing-guide)
+### 4. [**Code of Conduct**](#code-of-conduct)
+### 5. [**Community**](#community)
 
 
 ## **About**
