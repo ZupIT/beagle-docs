@@ -66,38 +66,12 @@ To build the application, run this command after you [**installed hugo**](https:
 ```
 npm run build 
 ```
-
-## **How to contribute?**
-
-You can suggest a change, a fix, or improvements to our documentation, for example: 
-- Add missing information.
-- Fix a grammar or code error.
-- Suggest a new section.
-- Translate. 
-
 ###  **Contributing Guide**
-Check out Beagle's [**contributing guide**](https://github.com/ZupIT/beagle/blob/main/CONTRIBUTING.md). 
+Check out Beagle's documentation [**contributing guide**](https://github.com/ZupIT/beagle/blob/main/CONTRIBUTING.md). 
 
-### **Open an issue**
-Follow the steps below:
-
-**Step 1.** Access [**GitHub Issues**](https://github.com/ZupIT/beagle-docs/issues) and open an issue;
-
-**Step 2.** Describe the issue or change you want to make; 
-
-**Step 3.** Make your changes;
-
-**Step 4.** Open a pull request open a PR to the published branch, i. e., **`release-VERSION`** and fill in the template; 
-
-**Step 5.** Beagle's team will check your issue, review it, and then approve your PR. 
-Is this the first Beagle repository you visit? Check out other [**repositories**](https://github.com/ZupIT/beagle).
-
-Every time that a new release is created, we save the current work into a new branch, called `release-VERSION`.
 
 ## **Code of Conduct**
-Please read the [**code of conduct**](https://github.com/ZupIT/beagle/blob/main/CODE_OF_CONDUCT.md), you will be able to understand what actions will and will not be tolerated.
+Please read the [**code of conduct**](https://github.com/ZupIT/beagle/blob/main/CODE_OF_CONDUCT.md).
 
 ## **Community**
-Feel free to reach out to us at:
-- [**GitHub Issues**](https://github.com/ZupIT/beagle-docs/issues).
-- [**Zup Open Source Forum**](https://forum.zup.com.br).
+If you have any questions or ideas, let's chat in our [**Zup Open Source Forum**](https://forum.zup.com.br) or [**GitHub Issues**](https://github.com/ZupIT/beagle-docs/issues).

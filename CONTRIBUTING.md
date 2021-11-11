@@ -72,18 +72,20 @@ You can suggest a change, a fix, or improvements to our documentation, such as:
 - Suggest a new section.
 - Translate. 
 
-### **Open an issue**
+### **Opening issues and pull requests**
 Follow the steps below: 
 
 **Step 1.** Access [**GitHub Issues**](https://github.com/ZupIT/beagle-docs/issues) and open an issue;
 
 **Step 2.** Describe the issue or change you want to make; 
 
-**Step 3.** Make your changes;
+- You can also suggest solutions for opened issues following, check steps 3 to 5.
 
-**Step 4.** Open a pull request open a PR to the published branch, i. e., **`release-VERSION`** and fill in the template; 
+**Step 3.** Commit your changes to a new branch and upload it to the repository;
 
-**Step 5.** In GitHub, send a pull request to **`beagle:main`**;
+**Step 4.** Open a pull request to the published branch, i. e., **`release-VERSION`** and fill in the template; 
+
+**Step 5.** Open a pull request to the default branch **`beagle:main`**;
 
 **Step 6.** Beagle's team will check your issue, review it, and then approve your PR. 
 Is this the first Beagle's repository you visit? Check out other [**repositories**](https://github.com/ZupIT/beagle).
