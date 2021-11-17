@@ -24,7 +24,7 @@ Para mais informações sobre ações padronizadas do Beagle, veja a seção [**
 
 ## **Como criar uma ação customizada?**
 
-Para criar uma ação personalizada é necessario:
+Para criar uma ação personalizada é necessário:
 
 Passo 1. Criar uma classe anotada com `@RegisterAction`, e implementar a interface `Action`, no FRONTEND e no BACKEND da sua aplicação;
 Passo 2. Colocar o nome da ação por parâmetro da annotation para evitar possíveis problemas com o Proguard e certificar-se de que a ação tem o mesmo nome no BACKEND e no FRONTEND;
