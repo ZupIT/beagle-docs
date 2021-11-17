@@ -60,7 +60,7 @@ data class CustomActionAndroid(
 ```
 
 {{% alert color="warning" %}}
-  Perceba que aqui a classe só precisa registrar o parametro que se deseja declarar no BACKEND e utilizar no FRONTEND. Nessa ação declaramos apenas um `value` que guardará a mensagem a ser utilizada no TOAST.
+  Perceba que aqui a classe só precisa registrar o parâmetro que se deseja declarar no BACKEND e utilizar no FRONTEND. Nessa ação declaramos apenas um `value` que guardará a mensagem a ser utilizada no TOAST.
 {{% /alert %}}
 
 Abaixo temos o JSON que representa essa ação sendo chamada a partir do click de um botão:
