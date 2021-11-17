@@ -78,7 +78,7 @@ Abaixo temos o JSON que representa essa ação sendo chamada a partir do click d
 }
 ```
 
-## Como registrar sua ação
+## **Como registrar sua Ação**
 
 - Para isso, anote a classe da sua ação com o `@RegisterAction("className")` onde `className` é o nome da sua classe
 
