@@ -32,7 +32,7 @@ Step 3. After that, the interface will ask for the `execute` method to be implem
 The `value` attribute is an example of a parameter that can be declared in the Action class constructor, you can set as many as you need.
 The following example shows a custom action that will execute a **Toast** receiving a text as the `value` parameter:
 
-### Class that represents an action in FRONTEND (Android)
+### **Class that represents an action in Frontend (Android)**
 
 ```kotlin
 @RegisterAction("customActionAndroid")
