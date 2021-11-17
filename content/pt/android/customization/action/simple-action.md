@@ -22,7 +22,7 @@ Uma ação customizada é uma ação com um comportamento especifico criada para
 
 Para mais informações sobre ações padronizadas do Beagle, veja a seção [**Tipos de Ações.**]({{< ref path="/api/actions/overview#tipos-de-ações" lang="pt">}}).
 
-## Como criar uma ação customizada
+## **Como criar uma ação customizada?**
 
 Para criar uma ação personalizada é necessario:
 
