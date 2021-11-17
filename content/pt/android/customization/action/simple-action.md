@@ -82,7 +82,7 @@ Abaixo temos o JSON que representa essa ação sendo chamada a partir do click d
 
 - Para isso, anote a classe da sua ação com o `@RegisterAction("className")` onde `className` é o nome da sua classe
 
-## Como usar uma ação customizada
+## **Como usar uma Ação customizada**
 
 Assim como as ações padrões, para utilizar uma ação customizada, basta declará-la em um componente que execute ações, como por exemplo, o 'on press' de um `Botão`. Veja abaixo:
 
