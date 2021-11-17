@@ -30,8 +30,8 @@ Para criar uma ação personalizada é necessário:
 **2.** Colocar o nome da ação por parâmetro da annotation para evitar possíveis problemas com o Proguard. Certifique que a ação tem o mesmo nome no **Frontend** e no **Backend**;
 **3.** Implemente o método **`execute`** (somente no **Frontend**).
 
-O atributo  `value`  é um exemplo de parâmetro que pode ser declarado no construtor dessa classe, você pode usar quantos precisar. 
-O exemplo a seguir mostra uma ação customizada para executar um **Toast** recebendo um texto no parâmetro `value`:
+O atributo  **`value`**  é um exemplo de parâmetro que pode ser declarado no construtor dessa classe, você pode usar quantos precisar. 
+O exemplo a seguir mostra uma ação customizada para executar um **Toast** recebendo um texto no parâmetro **`value`**:
 
 ### Classe que representa uma ação no FRONTEND (Android)
 
