@@ -62,7 +62,7 @@ data class CustomActionAndroid(
   Note that here the class only needs to register the parameter you want to declare in the BACKEND and use it in the FRONTEND. In this action we declare only a `value` that will store the message to be used in TOAST.
 {{% /alert %}}
 
-Below we have the JSON that represents this action being called from the click of a button:
+See below, a JSON that represents this action being called from the click of a button:
 
 ```json
 {
