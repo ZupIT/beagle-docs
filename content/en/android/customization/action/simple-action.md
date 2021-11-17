@@ -1,7 +1,7 @@
 ---
 title: Simple Action
 weight: 104
-description: Creating and running a custom action
+description: Creating and trigerring a custom action
 ---
 
 **Topics covered:**
