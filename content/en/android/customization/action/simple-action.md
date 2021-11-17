@@ -49,7 +49,7 @@ data class CustomActionAndroid(
 }
 ```
 
-### Class representing the action in the BACKEND
+### **Class representing the action in the Backend**
 
 ```kotlin
 @RegisterAction("customActionAndroid")
