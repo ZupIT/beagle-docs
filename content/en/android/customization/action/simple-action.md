@@ -21,7 +21,7 @@ A custom action is an action with a specific behavior for your use case. Beagle 
 
 For more information about Default Beagle actions, check out [**action-types section.**]({{<ref path="/api/actions/overview#action-types" lang="en">}}).
 
-## How to create a custom action
+## **How to create a custom action**
 
 To create a custom action you need to:
 
