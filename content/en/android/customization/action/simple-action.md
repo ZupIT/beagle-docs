@@ -77,7 +77,7 @@ See below, a JSON that represents this action being called from the click of a b
 }
 ```
 
-## How to use a custom action
+## **How to use a custom Action**
 
 As with default actions, to use a custom action, just declare it in a component that triggers events, such as a `Button`'s on press. See below:
 
