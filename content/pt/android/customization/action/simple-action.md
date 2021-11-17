@@ -50,7 +50,7 @@ data class CustomActionAndroid(
 }
 ```
 
-### Classe que representa a ação no BACKEND
+### **Classe que representa a ação no Backend** ```
 
 ```kotlin
 @RegisterAction("customActionAndroid")
