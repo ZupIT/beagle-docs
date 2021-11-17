@@ -16,7 +16,7 @@ description: Criando e executando uma ação customizada
 
 - Ter um projeto com o Beagle Configurado (FRONT e BACKEND)
 
-## O que é uma ação customizada?
+## **O que é uma ação customizada?**
 
 Uma ação customizada é uma ação com um comportamento especifico criada para seu caso de uso. O Beagle possui uma série de ações padrão, no entanto, pode haver algum uso que necessite de uma funcionalidade que não é padrão, como por exemplo, abrir uma interface de câmera em um celular.
 
