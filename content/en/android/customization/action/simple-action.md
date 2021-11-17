@@ -1,34 +1,38 @@
 ---
-title: Simple Custom Action
+title: Simple Action
 weight: 104
-description: Creating and executing a custom action
+description: Creating and trigerring a custom action
 ---
 
-**Topics Covered:**
- - What is an Action
- - How to create an Action 
- - How to register an Action
- - How to use an Action
+**Topics covered:**
+
+- What is a custom action
+- How to create a custom action
+- How to Register a Custom Action
+- How to use a custom action
 
 **Requirements:**
- - A project with Beagle configured
 
- ## What is?
+- A project with Beagle Configured (FRONT and BACKEND)
 
- On Beagle, an action deals with behaviors \(functions\), that are performed in your application when an event is triggered. These actions can be a Beagle's default or customized by you. 
+## **What is a custom action?**
 
-## How to create an action
+A custom action is an action with a specific behavior for your use case. Beagle has a number of default actions, however, there may be situations that require new functionalities, such as starting the camera interface on a cell phone.
 
-To create your custom action, follow the next steps:
+For more information about Default Beagle actions, check out [**action-types section.**]({{<ref path="/api/actions/overview#action-types" lang="en">}}).
 
-Step 1. Create an annotated class with `@RegisterAction` that implements an `Action` interface;
-Step 2. Put the action name by annotation parameter to avoid problems with Proguard;
-Step 3. After that, the interface will request to implement the `execute` method;
-Step 4. Now, declare the `action` result.
+## **How to create a custom action**
 
-The `value` attribute is a parameter example that can be declared in this class constructor. 
-The following example shows an action with **Toast** receiving a text with a parameter: 
+To create a custom action you need to:
 
+**1.** Create a class annotated with `@RegisterAction`, and implement the `Action` interface, in your application **Backed** and **Frontend** environments;
+**2.** Set the action name by annotation parameter to avoid possible problems with Proguard. Make sure the action has the same name in the **Backed** and **Frontend**;
+** 3.** Implement the **`execute`** method (only in the **Frontend**).
+
+The `value` attribute is an example of a parameter that can be declared in the Action class constructor, you can set as many as you need.
+The following example shows a custom action that will execute a **Toast** receiving a text as the `value` parameter:
+
+### **Class that represents an action in Frontend (Android)**
 
 ```kotlin
 @RegisterAction("customActionAndroid")
@@ -37,31 +41,52 @@ data class CustomActionAndroid(
 ) : Action {
     override fun execute(rootView: RootView) {
         Toast.makeText(
-            rootView.getContext(), 
-            value, 
-            Toast.LENGTH_LONG).show()
+            rootView.getContext(),
+            value,
+            Toast.LENGTH_SHORT
+        ).show()
     }
-}    
+}
 ```
 
-## How to register your action
+### **Class representing the action in the Backend**
 
-There are two ways to register your action, check them below: 
+```kotlin
+@RegisterAction("customActionAndroid")
+data class CustomActionAndroid(
+    val value: String
+) : Action
+```
 
- 1. Using Annotation Processor:
+{{% alert color="warning" %}}
+  Note that here the class only needs to register the parameter you want to declare in the BACKEND and use it in the FRONTEND. In this action we declare only a `value` that will store the message to be used in TOAST.
+{{% /alert %}}
 
-    For this, annotate your action class with `@RegisterAction("className")` where className is your class name.
+See below, a JSON that represents this action being called from the click of a button:
 
- 2. Without the Annotation Processor.
+```json
+{
+  "_beagleComponent_": "beagle:button",
+  "text": "Beagle Button",
+  "onPress": [
+    {
+      "_beagleAction_": "custom:myCustomAction",
+      "value": "ParameterForAction."
+    }
+  ]
+}
+```
 
-## How to use your action
+## **How to use a custom Action**
 
-See below, an action example in a button type component: 
+As with default actions, to use a custom action, just declare it in a component that triggers events, such as a `Button`'s on press. See below:
 
 ```kotlin
 Button(
    text = text,
    styleId = styleId,
-   onPress = listOf(CustomActionAndroid("I'm a customized action"))
+   onPress = listOf(
+      CustomActionAndroid("I am a custom action")
+   )
 )
 ```
