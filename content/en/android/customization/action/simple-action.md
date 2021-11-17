@@ -15,7 +15,7 @@ description: Creating and trigerring a custom action
 
 - A project with Beagle Configured (FRONT and BACKEND)
 
-## What is a custom action?
+## **What is a custom action?**
 
 A custom action is an action with a specific behavior for your use case. Beagle has a number of default actions, however, there may be situations that require new functionalities, such as starting the camera interface on a cell phone.
 
