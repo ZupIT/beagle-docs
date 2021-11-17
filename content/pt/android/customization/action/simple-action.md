@@ -85,7 +85,6 @@ Abaixo temos o JSON que representa essa ação sendo chamada a partir do click d
 ## Como usar uma ação customizada
 
 Assim como as ações padrões, para utilizar uma ação customizada, basta declará-la em um componente que execute ações, como por exemplo, o 'on press' de um `Botão`. Veja abaixo:
-No exemplo abaixo, a ação é declarada no atributo `onPress` do botão:
 
 ```kotlin
 Button(
