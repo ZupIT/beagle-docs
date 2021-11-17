@@ -26,9 +26,9 @@ Para mais informações sobre ações padronizadas do Beagle, veja a seção [**
 
 Para criar uma ação personalizada é necessário:
 
-Passo 1. Criar uma classe anotada com `@RegisterAction`, e implementar a interface `Action`, no FRONTEND e no BACKEND da sua aplicação;
-Passo 2. Colocar o nome da ação por parâmetro da annotation para evitar possíveis problemas com o Proguard e certificar-se de que a ação tem o mesmo nome no BACKEND e no FRONTEND;
-Passo 3. Depois disso, a interface solicitará que o método `execute` seja implementado (somente no FRONTEND);
+**1.** Criar uma classe anotada com **`@RegisterAction`**, e implementar a interface `Action`, no **Frontend** e no **Backend** da sua aplicação;
+**2.** Colocar o nome da ação por parâmetro da annotation para evitar possíveis problemas com o Proguard. Certifique que a ação tem o mesmo nome no **Frontend** e no **Backend**;
+**3.** Implemente o método **`execute`** (somente no **Frontend**).
 
 O atributo  `value`  é um exemplo de parâmetro que pode ser declarado no construtor dessa classe, você pode usar quantos precisar. 
 O exemplo a seguir mostra uma ação customizada para executar um **Toast** recebendo um texto no parâmetro `value`:
