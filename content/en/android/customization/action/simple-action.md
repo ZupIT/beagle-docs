@@ -80,7 +80,6 @@ Below we have the JSON that represents this action being called from the click o
 ## How to use a custom action
 
 As with default actions, to use a custom action, just declare it in a component that triggers events, such as a `Button`'s on press. See below:
-In the example below, the action is declared in the button's `onPress` attribute:
 
 ```kotlin
 Button(
