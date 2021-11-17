@@ -19,7 +19,7 @@ description: Creating and trigerring a custom action
 
 A custom action is an action with a specific behavior for your use case. Beagle has a number of default actions, however, there may be situations that require new functionalities, such as starting the camera interface on a cell phone.
 
-If you want to know more about Default Beagle actions you can check the session with the [**action-types.**]({{<ref path="/api/actions/overview#action-types" lang="en">}}).
+For more information about Default Beagle actions, check out [**action-types section.**]({{<ref path="/api/actions/overview#action-types" lang="en">}}).
 
 ## How to create a custom action
 
