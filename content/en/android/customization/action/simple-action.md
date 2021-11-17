@@ -25,7 +25,7 @@ If you want to know more about Default Beagle actions you can check the session 
 
 To create a custom action you need to:
 
-Step 1. Create a class annotated with `@RegisterAction`, and implement the `Action` interface, in your application FRONTEND and BACKEND enviroments;
+Step 1. Create a class annotated with `@RegisterAction`, and implement the `Action` interface, in both FRONTEND and BACKEND enviroments;
 Step 2. Set the action name by annotation parameter to avoid possible problems with Proguard and make sure that the action has the same name in the BACKEND and FRONTEND;
 Step 3. After that, the interface will ask for the `execute` method to be implemented (only in FRONTEND);
 
