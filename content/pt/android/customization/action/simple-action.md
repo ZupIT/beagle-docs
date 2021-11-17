@@ -33,7 +33,7 @@ Para criar uma ação personalizada é necessário:
 O atributo  **`value`**  é um exemplo de parâmetro que pode ser declarado no construtor dessa classe, você pode usar quantos precisar. 
 O exemplo a seguir mostra uma ação customizada para executar um **Toast** recebendo um texto no parâmetro **`value`**:
 
-### Classe que representa uma ação no FRONTEND (Android)
+### **Classe que representa uma ação no frontend (Android)**
 
 ```kotlin
 @RegisterAction("customActionAndroid")
