@@ -17,10 +17,9 @@ Para saber mais [**Widgets padrões do Beagle**]({{< ref path="/api/components/o
 
 ### Passo 1: Criar o componente customizado.
 
-Abaixo temos a definição da classe do componente Box. Criada com view code em swift e possui um parâmetro title.
+Abaixo temos a definição da classe do componente Box. Criada com view code em swift e possui um parâmetro title, e um evento de tap.
 
 ```swift
-import Foundation
 import UIKit
 
 class Box: UIView {
@@ -28,11 +27,15 @@ class Box: UIView {
     // Class parameter.
     private var title: String
     
+    // Event
+    public var onTap: (() -> Void)?
+    
     // Initialization part of the class.
     public init(title: String) {
         self.title = title
         super.init(frame: .zero)
         setupView()
+        setupGesture()
     }
     
     required init?(coder: NSCoder) {
@@ -48,6 +51,15 @@ class Box: UIView {
         label.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         label.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         label.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+    }
+    
+    private func setupGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleOnTap))
+        addGestureRecognizer(UITapGestureRecognizer())
+    }
+    
+    private func handleOnTap() {
+        onTap?()
     }
     
     // Component `UILabel` created.
@@ -66,15 +78,19 @@ class Box: UIView {
 
 ### Passo 2: Criar o Widget.
 
-Para fazer seu componente ser visivel para o beagle basta criar uma struct e estender a interface `Widget` que é um protocolo que conforma com `Decodable` e é responsável por decodificar as propriedades que seu widget expõem ao backend, a interface irá adicionar a propriedade de **widgetProperties** e o método **toView**.
+Para fazer seu componente ser visivel para o beagle basta criar uma struct e implementar a interface `Widget` que é um protocolo que conforma com `Codable`, sendo assim responsavel por decodificar e codificar as propriedades que o widget expõem ao backend, para conformar com o protocolo é preciso adicionar as propriedades `id: String?`, `style: Style?`, `accessibility: Accessibility?` e implementar o método **toView**.
 
-Agora com o componente `Box` crie uma struct BoxWidget adotando protocolo `Widget`, a interface widget irá adicionar a propriedade de **widgetProperties** e o método **toView**.
+Agora com o componente `Box` crie uma struct BoxWidget adotando protocolo `Widget`.
 
- * **widgetProperties:** A propriedade de aplicar estilo, id e acessibilidade.
+ * **id:** Identificador do componente
 
- * **toView:** Método para retornar a view do componente criado.
+ * **style:** Atributos de estilização do componente.
 
-Temos a estrutura da struct `BoxWidget` com os parâmetros `title` e `widgetProperties`, no método **toView** o componente `Box` estanciado passando o parâmetros `title`.
+ * **accessibility:** Atributos de acessibilidade do componente.
+
+ * **toView:** Método que retorna a view do componente criado.
+
+Temos a estrutura da struct `BoxWidget` com os parâmetros `title`, `onTap`, `widgetProperties`, `style`, `accessibility`, no método **toView** o componente `Box` estanciado passando o parâmetro `title`.
 
 ```swift
 import Foundation
@@ -85,60 +101,28 @@ struct BoxWidget: Widget {
 
     // Class parameter.
     let title: String
-    var widgetProperties: WidgetProperties
+    @AutoCodable
+    let onTap: [Action]?
     
-    // toView method of interface the  widget.
+    public var id: String?
+    public var style: Style?
+    public var accessibility: Accessibility?
+    
+    // toView method of interface the widget.
     func toView(renderer: BeagleRenderer) -> UIView {
         let boxComponent = Box(title: title)
+        boxComponent.onTap = {
+            renderer.controller?.execute(actions: onTap, event: "onTap", origin: boxComponent)
+        }
 
         return boxComponent
     }
 }
 ```
 
-Temos que criar a parte de inicialização e decodificação do componente, tem duas maneiras possíveis usando o `sourcery` gerador de código para a linguagem Swift, ou fazendo manualmente.
+Ultilize a anotação `@AutoCodable` sempre que seu componente tiver propriedades do tipo `Action` ou `ServerDrivenComponent` (sejam elas listas ou opcionais), para que o swift consiga sintetizar o inicializador `init(from decoder: Decoder)`.
 
-{{< tabs id="T0" >}}
-{{% tab name="Decodificação Manual" %}}
-
-Para fazer manual tem que criar o init e a decodificação dos parametros `title` e `widgetProperties` da struct `BoxWidget`.
-
-O widgetProperties tem sua propria parte decodificação, entao é preciso apenas passar o decoder para o objeto `WidgetProperties`.
-
-```swift
-
-// Initialization part of the class.
-public init(
-    title: String,
-    widgetProperties: WidgetProperties = WidgetProperties()
-) {
-    self.title = title
-    self.widgetProperties = widgetProperties
-}
-
-// Enum with parameters for decoding.
-enum CodingKeys: String, CodingKey {
-    case title
-}
-
-// Initialization for decoding
-public init(from decoder: Decoder) throws {
-    let container = try decoder.container(keyedBy: CodingKeys.self)
-
-    title = try container.decode(String.self, forKey: .title)
-    widgetProperties = try WidgetProperties(from: decoder)
-}
-```
-
-{{% /tab %}}
-{{% tab name="Decodificação com Sourcery" %}}
-
-O [**Sourcery**](https://github.com/krzysztofzablocki/Sourcery) é uma ferramenta de geração de código que auxilia na criação de **código boilerplate**, ou seja, aqueles trechos de código incluídos em mais locais com pouca ou sem alteração.
-
-A instalação dessa biblioteca **é opcional**, apesar de recomendada. Caso queira instalar, siga as instruções de como instalar e configurar nesse [**link**]({{< ref path="" lang="pt" >}})
-
-{{% /tab %}}
-{{< /tabs >}}
+Em termos técnicos, o `AutoCodable` é um property wrapper que implementa a lógica de serialização e deserialização polimórfica dos tipos genéricos do Beagle, dessa forma, não precisamos implementar o `init(from decoder: Decoder)`, uma vez que, agora o Swift consegue sintetiza-lo, já que todas as propriedades do nosso widget conformam com Codable..
 
 Para integrar o componente ao beagle é preciso utilizar o `sizeThatFits` ou `AutoLayoutWrapper`. 
 
@@ -172,35 +156,21 @@ struct BoxWidget: Widget {
 
     // Class parameter.
     let title: String
-    var widgetProperties: WidgetProperties
+    @AutoCodable
+    let onTap: [Action]?
     
-    // Initialization part of the class.
-    public init(
-        title: String,
-        widgetProperties: WidgetProperties = WidgetProperties()
-    ) {
-        self.title = title
-        self.widgetProperties = widgetProperties
-    }
+    public var id: String?
+    public var style: Style?
+    public var accessibility: Accessibility?
 
-    // Enum with parameters for decoding.
-    enum CodingKeys: String, CodingKey {
-        case title
-    }
-
-    // Initialization for decoding
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-
-        title = try container.decode(String.self, forKey: .title)
-        widgetProperties = try WidgetProperties(from: decoder)
-    }
-    
     // toView method of interface the  widget.
     func toView(renderer: BeagleRenderer) -> UIView {
 
         // Native component declaration.
         let boxComponent = Box(title: title)
+        boxComponent.onTap = {
+            renderer.controller?.execute(actions: onTap, event: "onTap", origin: boxComponent)
+        }
 
         // Setting the beagle wrapper.
         boxComponent.translatesAutoresizingMaskIntoConstraints = false
@@ -239,11 +209,15 @@ class Box: UIView {
     // Class parameter.
     private var title: String
     
+    // Event
+    public var onTap: (() -> Void)?
+    
     // Initialization part of the class.
     public init(title: String) {
         self.title = title
         super.init(frame: .zero)
         setupView()
+        setupGesture()
     }
     
     required init?(coder: NSCoder) {
@@ -265,6 +239,15 @@ class Box: UIView {
         label.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         label.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
     }
+
+    private func setupGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleOnTap))
+        addGestureRecognizer(UITapGestureRecognizer())
+    }
+    
+    private func handleOnTap() {
+        onTap?()
+    }
     
     // Component `UILabel` created.
     private lazy var label: UILabel = {
@@ -279,7 +262,7 @@ class Box: UIView {
 }
 ```
 
-Classe completa do Widget com passos.
+Struct completa do Widget com passos.
 
 * Adotar a interface `Widget`.
 * Instanciar o componente Box.
@@ -294,37 +277,20 @@ struct BoxWidget: Widget {
 
     // Class parameter.
     let title: String
-    var widgetProperties: WidgetProperties
+    @AutoCodable
+    let onTap: [Action]?
     
-    // Initialization part of the class.
-    public init(
-        title: String,
-        widgetProperties: WidgetProperties = WidgetProperties()
-    ) {
-        self.title = title
-        self.widgetProperties = widgetProperties
-    }
-
-    // Enum with parameters for decoding.
-    enum CodingKeys: String, CodingKey {
-        case title
-    }
-
-    // Initialization for decoding
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-
-        title = try container.decode(String.self, forKey: .title)
-        widgetProperties = try WidgetProperties(from: decoder)
-    }
+    public var id: String?
+    public var style: Style?
+    public var accessibility: Accessibility?
     
-    // toView method of interface the  widget.
+    // toView method of interface the widget.
     func toView(renderer: BeagleRenderer) -> UIView {
-
-        // Native component declaration.
         let boxComponent = Box(title: title)
-        
-        // Returning BeagleWrapper and component.
+        boxComponent.onTap = {
+            renderer.controller?.execute(actions: onTap, event: "onTap", origin: boxComponent)
+        }
+
         return boxComponent
     }
 }
@@ -335,48 +301,35 @@ struct BoxWidget: Widget {
 
 ### Passo 3: Registrar o Widget.
 
-É obrigatório **registrá-lo no Beagle.** Dentro do arquivo de configuração do beagle utilize o `dependencies` para registar. 
+Por fim precisamos registrar nosso widget customizado no Beagle.
+
+Logo, para **registrá-lo no Beagle.** basta chamar a função de registro do Coder (Dependência publica do Beagle) durante o processo de configuração do ambiente do Beagle.
 
 {{% alert color="info" %}}
 Para saber mais sobre o dependencies. [**Beagle Dependencies**]({{< ref path="" lang="pt" >}}).
 {{% /alert %}}
 
-O método `register` possui dois construtores, o primeiro passando apenas o `component` e segundo recebendo o `component` e `named`.
+O método `register` pode ser chamado passando somente o tipo do componente, ou também um nome customizado para identifica-lo.
 
-* **component:** Passa a classe do componente.
+* **type:** Tipo do component.
 
-* **named:** Parâmetro para setar o nome do componente. Não é obrigatório passar. Um caso é quando o nome do componente é registrado diferente com que você criou no backend. Ele será usado na deserializações para encontrar seu componente.
+* **named:** Parâmetro para setar o nome do componente. Não é obrigatório passar. Um caso é quando o nome do componente é registrado diferente com que você criou no backend. Ele será usado na deserialização para encontrar seu componente.
 
 **Maneiras de Registrar**
 ```swift
 // 1º maneira.
-dependencies.decoder.register(component: BoxWidget.self)
+coder.register(type: BoxWidget.self)
 ```
 
 ```swift
 // 2º maneira.
-dependencies.decoder.register(component: BoxWidget.self, named: "BoxWidgetComponent")
+coder.register(type: BoxWidget.self, named: "BoxWidgetComponent")
 ```
 
 {{% alert color="warning" %}}
 Após registrar, não esqueça que para usar seu componente no backend ele tambem tem que ser registrado no seu BFF(Backend for Frontend).
 
 Caso queira entender sobre BFF [**click aqui**]({{< ref path="" lang="pt" >}})
-{{% /alert %}}
-
-### Passo 4: Declaração do componente.
-
-Abaixo temos a definição do componente dentro de um `Container`, onde o componente **BoxWidget** possui o parâmetro `title` que recebe o valor **`Title my box!`**.
-
-
-```swift
- Container {
-    BoxWidget(title: "Title my box!")
-}
-```
-
-{{% alert color="info" %}}
-Para saber mais como exibir o Componente. [**Como exibir uma tela**]({{< ref path="/ios/tutorials/adding-beagle-to-a-part-of-a-native-screen/adding-a-beagle-server-driven-component" lang="pt" >}}).
 {{% /alert %}}
 
 Exemplo renderizado:
