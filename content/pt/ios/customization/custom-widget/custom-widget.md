@@ -27,15 +27,11 @@ class Box: UIView {
     // Class parameter.
     private var title: String
     
-    // Event
-    public var onTap: (() -> Void)?
-    
     // Initialization part of the class.
     public init(title: String) {
         self.title = title
         super.init(frame: .zero)
         setupView()
-        setupGesture()
     }
     
     required init?(coder: NSCoder) {
@@ -51,15 +47,6 @@ class Box: UIView {
         label.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         label.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         label.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-    }
-    
-    private func setupGesture() {
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleOnTap))
-        addGestureRecognizer(UITapGestureRecognizer())
-    }
-    
-    private func handleOnTap() {
-        onTap?()
     }
     
     // Component `UILabel` created.
@@ -90,7 +77,7 @@ Agora com o componente `Box` crie uma struct BoxWidget adotando protocolo `Widge
 
  * **toView:** Método que retorna a view do componente criado.
 
-Temos a estrutura da struct `BoxWidget` com os parâmetros `title`, `onTap`, `widgetProperties`, `style`, `accessibility`, no método **toView** o componente `Box` estanciado passando o parâmetro `title`.
+Temos a estrutura da struct `BoxWidget` com os parâmetros `title`, `widgetProperties`, `style`, `accessibility`, no método **toView** o componente `Box` estanciado passando o parâmetro `title`.
 
 ```swift
 import Foundation
@@ -101,8 +88,6 @@ struct BoxWidget: Widget {
 
     // Class parameter.
     let title: String
-    @AutoCodable
-    let onTap: [Action]?
     
     public var id: String?
     public var style: Style?
@@ -111,18 +96,11 @@ struct BoxWidget: Widget {
     // toView method of interface the widget.
     func toView(renderer: BeagleRenderer) -> UIView {
         let boxComponent = Box(title: title)
-        boxComponent.onTap = {
-            renderer.controller?.execute(actions: onTap, event: "onTap", origin: boxComponent)
-        }
 
         return boxComponent
     }
 }
 ```
-
-Ultilize a anotação `@AutoCodable` sempre que seu componente tiver propriedades do tipo `Action` ou `ServerDrivenComponent` (sejam elas listas ou opcionais), para que o swift consiga sintetizar o inicializador `init(from decoder: Decoder)`.
-
-Em termos técnicos, o `AutoCodable` é um property wrapper que implementa a lógica de serialização e deserialização polimórfica dos tipos genéricos do Beagle, dessa forma, não precisamos implementar o `init(from decoder: Decoder)`, uma vez que, agora o Swift consegue sintetiza-lo, já que todas as propriedades do nosso widget conformam com Codable..
 
 Para integrar o componente ao beagle é preciso utilizar o `sizeThatFits` ou `AutoLayoutWrapper`. 
 
@@ -144,7 +122,6 @@ Abaixo a struct completa do Widget com os passos:
 
 * Adotar a interface `Widget`.
 * Instanciar o componente Box.
-* Fazer a parte de inicialização e decodificação do componente.
 * Usar o `AutoLayoutWrapper` na struct do BoxWidget.
 
 ```swift
@@ -156,8 +133,6 @@ struct BoxWidget: Widget {
 
     // Class parameter.
     let title: String
-    @AutoCodable
-    let onTap: [Action]?
     
     public var id: String?
     public var style: Style?
@@ -168,9 +143,6 @@ struct BoxWidget: Widget {
 
         // Native component declaration.
         let boxComponent = Box(title: title)
-        boxComponent.onTap = {
-            renderer.controller?.execute(actions: onTap, event: "onTap", origin: boxComponent)
-        }
 
         // Setting the beagle wrapper.
         boxComponent.translatesAutoresizingMaskIntoConstraints = false
@@ -196,108 +168,8 @@ override func sizeThatFits(_ size: CGSize) -> CGSize {
 }
 ```
 
-A classe do componente customizado com o passo:
-* Usar o sizeThatFits.
-
-
-```swift
-import Foundation
-import UIKit
-
-class Box: UIView {
-    
-    // Class parameter.
-    private var title: String
-    
-    // Event
-    public var onTap: (() -> Void)?
-    
-    // Initialization part of the class.
-    public init(title: String) {
-        self.title = title
-        super.init(frame: .zero)
-        setupView()
-        setupGesture()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-
-    // Implementation sizeThatFits
-    override func sizeThatFits(_ size: CGSize) -> CGSize {
-        systemLayoutSizeFitting(size)
-    }
-    
-    // Method to add component to hierarchy and pass position.
-    private func setupView() {
-        addSubview(label)
-        
-        label.text = title
-        label.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        label.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        label.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        label.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-    }
-
-    private func setupGesture() {
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleOnTap))
-        addGestureRecognizer(UITapGestureRecognizer())
-    }
-    
-    private func handleOnTap() {
-        onTap?()
-    }
-    
-    // Component `UILabel` created.
-    private lazy var label: UILabel = {
-        let label = UILabel()
-        label.font = .systemFont(ofSize: 20, weight: .bold)
-        label.backgroundColor = .red
-        label.textAlignment = .center
-        label.textColor = .white
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
-}
-```
-
-Struct completa do Widget com passos.
-
-* Adotar a interface `Widget`.
-* Instanciar o componente Box.
-* Fazer a parte de inicialização e decodificação do componente.
-
-```swift
-import Foundation
-import UIKit
-import Beagle
-
-struct BoxWidget: Widget {
-
-    // Class parameter.
-    let title: String
-    @AutoCodable
-    let onTap: [Action]?
-    
-    public var id: String?
-    public var style: Style?
-    public var accessibility: Accessibility?
-    
-    // toView method of interface the widget.
-    func toView(renderer: BeagleRenderer) -> UIView {
-        let boxComponent = Box(title: title)
-        boxComponent.onTap = {
-            renderer.controller?.execute(actions: onTap, event: "onTap", origin: boxComponent)
-        }
-
-        return boxComponent
-    }
-}
-```
-
-    {{% /tab %}}
-  {{< /tabs >}}
+{{% /tab %}}
+{{< /tabs >}}
 
 ### Passo 3: Registrar o Widget.
 
@@ -336,4 +208,82 @@ Exemplo renderizado:
 
 ![](/shared/custom-component-box-ios.png)
 
-Se você usar componentes mais complexos que estejam no  `UIViews` ou outros componentes não mencionados, o processo seria parecido.
+## Casos especiais
+
+### Componentes que expõe eventos
+
+Em casos em que o componente customizado contém eventos de interação com o usuario basta expor esses eventos no Widget do componente. Então suponhamos que o BoxComponent agora tem que lidar com um evento de touch:
+
+```swift
+import Foundation
+import UIKit
+import Beagle
+
+struct BoxWidget: Widget {
+
+    // Class parameter.
+    let title: String
+    @AutoCodable
+    let onTouch: [Action]?
+    
+    public var id: String?
+    public var style: Style?
+    public var accessibility: Accessibility?
+    
+    // toView method of interface the widget.
+    func toView(renderer: BeagleRenderer) -> UIView {
+        let boxComponent = Box(title: title)
+        boxComponent.onTouch = {
+            renderer.controller?.execute(actions: onTouch, event: "onTouch", origin: boxComponent)
+        }
+
+        return boxComponent
+    }
+}
+```
+
+Passo 1: adicionamos o atributo `let onTouch: [Action]?` que consiste em uma lista de ações que serão executadas a partir do evento de touch.
+
+Passo 2: supondo que o componente nativo ultilize closures para tratar eventos, então atribuimos uma closure para o evento `onTouch` que chama o método `execute` passando a lista de ações: `renderer.controller?.execute(actions: onTouch, event: "onTouch", origin: boxComponent)`
+
+{{% alert color="warning" %}}
+Ultilize a anotação `@AutoCodable` nas propriedades do tipo `Action` ou `ServerDrivenComponent` (sejam elas listas ou opcionais), para que o swift consiga sintetizar o inicializador `init(from decoder: Decoder)`.
+
+Em termos técnicos, o `AutoCodable` é um property wrapper que implementa a lógica de serialização e deserialização polimórfica dos tipos genéricos do Beagle, dessa forma, não precisamos implementar o `init(from decoder: Decoder)`, uma vez que, agora o Swift consegue sintetiza-lo, já que todas as propriedades do nosso widget conformam com Codable.
+{{% /alert %}}
+
+### Componentes que encapsulam outros componentes
+
+Em casos em que nosso componente customizado recebe outro componente para adiciona-lo como subview filha, basta adicionar um atributo no nosso widget que corresponde a esse componente filho.
+
+Então supondo que nosso component Box agora receba uma `UIView` que será adicionada em sua hierarquia de views:
+
+```
+struct BoxWidget: Widget {
+
+    // Class parameter.
+    let title: String
+    @AutoCodable
+    let child: ServerDrivenComponent
+    
+    public var id: String?
+    public var style: Style?
+    public var accessibility: Accessibility?
+    
+    // toView method of interface the widget.
+    func toView(renderer: BeagleRenderer) -> UIView {
+        let child: UIView = BeagleView(child)
+        child.translatesAutoresizingMaskIntoConstraints = false
+
+        let boxComponent = Box(title: title, child: child)
+
+        return boxComponent
+    }
+}
+```
+
+Passo 1: adicionamos o atributo `let child: ServerDrivenComponent` que será o componente Server Driven.
+
+Passo 2: transformamos o componente server driven em uma UIView, a partir da classe BeagleView: `let child: UIView = BeagleView(child)`
+
+Passo 3: agora que temos a UIView passamos ela no inicializador do componente Box: `Box(title: title, child: child)`
