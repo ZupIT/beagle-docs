@@ -65,9 +65,9 @@ class Box: UIView {
 
 ### Passo 2: Criar o Widget.
 
-Para fazer seu componente ser visivel para o beagle basta criar uma struct e implementar a interface `Widget` que é um protocolo que conforma com `Codable`, sendo assim responsavel por decodificar e codificar as propriedades que o widget expõem ao backend, para conformar com o protocolo é preciso adicionar as propriedades `id: String?`, `style: Style?`, `accessibility: Accessibility?` e implementar o método **toView**.
+Para fazer seu componente nativo funcionar com o Beagle, basta criar uma struct e implementar o protocolo `Widget`. Isso indica que a sua struct irá conformar com `Codable`, sendo assim responsável por decodificar e codificar as propriedades que o widget expõem ao backend. Além disso, para ser um `Widget` também é necessário adicionar as propriedades `id: String?`, `style: Style?`, `accessibility: Accessibility?` e implementar o método **toView**.
 
-Agora com o componente `Box` crie uma struct BoxWidget adotando protocolo `Widget`.
+Agora com o componente `Box` crie uma struct BoxWidget que implementa o protocolo `Widget`.
 
  * **id:** Identificador do componente
 
@@ -77,7 +77,7 @@ Agora com o componente `Box` crie uma struct BoxWidget adotando protocolo `Widge
 
  * **toView:** Método que retorna a view do componente criado.
 
-Temos a estrutura da struct `BoxWidget` com os parâmetros `title`, `widgetProperties`, `style`, `accessibility`, no método **toView** o componente `Box` estanciado passando o parâmetro `title`.
+Temos a estrutura da struct `BoxWidget` com os parâmetros `title`, `id`, `style`, `accessibility`, no método **toView** o componente `Box` estanciado passando o parâmetro `title`.
 
 ```swift
 import Foundation
@@ -86,14 +86,12 @@ import Beagle
 
 struct BoxWidget: Widget {
 
-    // Class parameter.
     let title: String
     
     public var id: String?
     public var style: Style?
     public var accessibility: Accessibility?
     
-    // toView method of interface the widget.
     func toView(renderer: BeagleRenderer) -> UIView {
         let boxComponent = Box(title: title)
 
@@ -131,14 +129,12 @@ import Beagle
 
 struct BoxWidget: Widget {
 
-    // Class parameter.
     let title: String
     
     public var id: String?
     public var style: Style?
     public var accessibility: Accessibility?
 
-    // toView method of interface the  widget.
     func toView(renderer: BeagleRenderer) -> UIView {
 
         // Native component declaration.
@@ -183,7 +179,7 @@ Para saber mais sobre o dependencies. [**Beagle Dependencies**]({{< ref path="" 
 
 O método `register` pode ser chamado passando somente o tipo do componente, ou também um nome customizado para identifica-lo.
 
-* **type:** Tipo do component.
+* **type:** Tipo do componente.
 
 * **named:** Parâmetro para setar o nome do componente. Não é obrigatório passar. Um caso é quando o nome do componente é registrado diferente com que você criou no backend. Ele será usado na deserialização para encontrar seu componente.
 
@@ -199,7 +195,7 @@ coder.register(type: BoxWidget.self, named: "BoxWidgetComponent")
 ```
 
 {{% alert color="warning" %}}
-Após registrar, não esqueça que para usar seu componente no backend ele tambem tem que ser registrado no seu BFF(Backend for Frontend).
+Não esqueça que para usar seu componente no BFF(Backend for Frontend) ele também tem que ser registrado no mesmo.
 
 Caso queira entender sobre BFF [**click aqui**]({{< ref path="" lang="pt" >}})
 {{% /alert %}}
@@ -221,7 +217,6 @@ import Beagle
 
 struct BoxWidget: Widget {
 
-    // Class parameter.
     let title: String
     @AutoCodable
     let onTouch: [Action]?
@@ -230,7 +225,6 @@ struct BoxWidget: Widget {
     public var style: Style?
     public var accessibility: Accessibility?
     
-    // toView method of interface the widget.
     func toView(renderer: BeagleRenderer) -> UIView {
         let boxComponent = Box(title: title)
         boxComponent.onTouch = {
@@ -247,16 +241,16 @@ Passo 1: adicionamos o atributo `let onTouch: [Action]?` que consiste em uma lis
 Passo 2: supondo que o componente nativo ultilize closures para tratar eventos, então atribuimos uma closure para o evento `onTouch` que chama o método `execute` passando a lista de ações: `renderer.controller?.execute(actions: onTouch, event: "onTouch", origin: boxComponent)`
 
 {{% alert color="warning" %}}
-Ultilize a anotação `@AutoCodable` nas propriedades do tipo `Action` ou `ServerDrivenComponent` (sejam elas listas ou opcionais), para que o swift consiga sintetizar o inicializador `init(from decoder: Decoder)`.
+Utilize a anotação `@AutoCodable` nas propriedades do tipo `Action` ou `ServerDrivenComponent` caso seu componente receba outro componente ou uma ação, para que o swift consiga sintetizar o inicializador `init(from decoder: Decoder)`.
 
 Em termos técnicos, o `AutoCodable` é um property wrapper que implementa a lógica de serialização e deserialização polimórfica dos tipos genéricos do Beagle, dessa forma, não precisamos implementar o `init(from decoder: Decoder)`, uma vez que, agora o Swift consegue sintetiza-lo, já que todas as propriedades do nosso widget conformam com Codable.
 {{% /alert %}}
 
 ### Componentes que encapsulam outros componentes
 
-Em casos em que nosso componente customizado recebe outro componente para adiciona-lo como subview filha, basta adicionar um atributo no nosso widget que corresponde a esse componente filho.
+Em casos em que nosso componente customizado recebe outro componente para adiciona-lo como subview, basta adicionar um atributo no nosso widget que corresponde a esse componente filho.
 
-Então supondo que nosso component Box agora receba uma `UIView` que será adicionada em sua hierarquia de views:
+Então supondo que nosso componente Box agora receba uma `UIView` que será adicionada em sua hierarquia de views:
 
 ```
 struct BoxWidget: Widget {
