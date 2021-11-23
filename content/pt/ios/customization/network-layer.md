@@ -96,4 +96,4 @@ Pronto! Agora o Beagle utilizará a sua classe com todas as modificações e def
 
 ## **Criando uma camada de Networking**
 
-No projeto de Demo do Beagle temos um exemplo de implementação de camada de rede: https://github.com/Orangestack-com/beagle-ios/blob/main/Example/BeagleDemo/BeagleDemo/BeagleConfig/Network/NetworkClientDefault.swift
+Caso queira entrar mais a fundo na implementação da camada de rede temos um exemplo [aqui](https://github.com/Orangestack-com/beagle-ios/blob/main/Example/BeagleDemo/BeagleDemo/BeagleConfig/Network/NetworkClientDefault.swift)
