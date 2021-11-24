@@ -44,10 +44,10 @@ class MyAppNavigationController: BeagleNavigationController {
 
 ```bash
 let dependencies = BeagleDependencies()
-dependencies.navigation.registerNavigationController(
+dependencies.navigator.registerNavigationController(
     builder: MyAppNavigationController.init,
     forId: "MyAppNavigationController")
-Beagle.dependencies = dependencies
+BeagleConfigurator.setup(dependencies: dependencies)
 ```
 
 É possível cadastrar mais de uma customização do `BeagleNavigationController`. Para escolher qual delas usar, o BFF precisa que você informe o `forId`.
@@ -111,7 +111,7 @@ Os **possíveis erros** são:
 
 **Erros em uma requisição** \(`Request.Error`\):
 
-- `urlBuilderError`: A URL do recurso ou a [**baseURL**]({{< ref path="/ios/customization/beagles-dependencies#urlbuilder" lang="pt" >}}) é inválida.
+- `urlBuilderError`: A URL do recurso ou a [**baseURL**]({{< ref path="/ios/customization/dependencies/overview#urlbuilder" lang="pt" >}}) é inválida.
 - `networkError`: Não foi possível estabelecer a conexão ou um erro foi retornado pelo BFF.
 - `decoding`: A resposta enviado pelo BFF é diferente do objeto esperado.
 

@@ -1,6 +1,7 @@
 ---
-title: Dependências do Beagle
-weight: 155
+title: Visão Geral
+weight: 1
+type: overview
 description: >-
   Nesta seção, você encontra informações sobre as dependências do Beagle e suas
   propriedades para iOS.
