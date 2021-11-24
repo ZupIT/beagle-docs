@@ -76,7 +76,7 @@ No AppDelegate ou na classe de configurações do ambiente do Beagle, atribua a 
 let dependencies = BeagleDependencies()
 let customImageDownloader = CustomImageDownloader()
 dependencies.imageDownloader = customImageDownloader
-Beagle.dependencies = dependencies
+BeagleConfigurator.setup(dependencies: dependencies)
 ```
 
 Pronto! Agora o Beagle utilizará a sua classe com todas as modificações e definições necessárias para realizar o download de suas imagens remotas.

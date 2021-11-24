@@ -170,7 +170,8 @@ Abaixo, você encontra um comando de como adicionar uma tela com um possível ro
 ```swift
 let deepLinkHandler = DeeplinkScreenManager.shared
 deepLinkHandler["MyDeepLinkScreen"] = MyDeepLinkScreenClass.self
-Beagle.dependenciesdeepLinkHandler = deepLinkHandler
+dependencies.deepLinkHandler = deepLinkHandler
+BeagleConfigurator.setup(dependencies: dependencies)
 ```
 
 ### AnalyticsProviderProtocol
