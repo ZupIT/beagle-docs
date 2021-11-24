@@ -10,39 +10,35 @@ description: >-
 
 ## Introdução
 
-A sua aplicação pode mudar o comportamento default do Beagle, a partir da customização de propriedades da instância do `Beagle.dependencies`.
+A sua aplicação pode mudar o comportamento default do Beagle, a partir da customização das dependencias dele.
 
-Elas possuem um papel específico na capacidade do Beagle, esta é a razão pela qual você deve tratar o `Beagle.dependencies`como principal foco de customização para que as outras partes de sua aplicação possa ver as modificações feitas nas dependências.
-
-Você deve confiar nas implementações padrão, como nos exemplos abaixo:
+A partir do `BeagleConfigurator` podemos chamar o método estático `setup(dependencies: BeagleDependencies)` que recebe um objeto do tipo `BeagleDependencies`, onde pode ser feito a customização das dependencias do Beagle.
 
 ```swift
-class BeagleDependencies: BeagleDependenciesProtocol {
-
-    var urlBuilder: UrlBuilderProtocol
-    var networkClient: NetworkClient
-    var decoder: ComponentDecoding
-    var appBundle: Bundle
-    var theme: Theme
-    var validatorProvider: ValidatorProvider?
-    var deepLinkHandler: DeepLinkScreenManaging?
-    var localFormHandler: LocalFormHandler?
-    var repository: Repository
-    var analytics: Analytics?
-    var navigation: BeagleNavigation
-    var preFetchHelper: BeaglePrefetchHelping
-    var cacheManager: CacheManagerProtocol?
-    var formDataStoreHandler: FormDataStoreHandling
-    var windowManager: WindowManager
-    var opener: URLOpener
-    var globalContext: GlobalContext
-    var isLoggingEnabled: Bool
-    var logger: BeagleLoggerType
+public struct BeagleDependencies {
+    
+    // MARK: Custom Dependencies
+    public var coder: CoderProtocol
+    public var urlBuilder: UrlBuilderProtocol
+    public var theme: ThemeProtocol
+    public var viewClient: ViewClientProtocol
+    public var imageDownloader: ImageDownloaderProtocol
+    public var logger: LoggerProtocol?
+    public var analyticsProvider: AnalyticsProviderProtocol?
+    public var deepLinkHandler: DeepLinkScreenManagerProtocol?
+    public var networkClient: NetworkClientProtocol?
+    
+    // MARK: Public Dependencies
+    public var appBundle: BundleProtocol
+    public let globalContext: GlobalContextProtocol
+    public var navigator: NavigationProtocol
+    public var operationsProvider: OperationsProviderProtocol
 }
-
 ```
 
-As dependências do Beagle deverão ser registradas no AppDelegate, veja o exemplo abaixo:
+Essa estrutura possui um construtor vazio que atribui as implementações default do Beagle, então basta iniciá-lo e fazer as customizações que forem convenientes.
+
+Dessa forma, é adequado fazer essa configuração inicial do Beagle durante o processo de inicialização da aplicação, isto é, no `didFinishLaunchingWithOptions` do `AppDelegate`:
 
 ```swift
 @UIApplicationMain
@@ -53,26 +49,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        let dependencies = BeagleDependencies()
+        var dependencies = BeagleDependencies()
         dependencies.theme = AppTheme.theme
         dependencies.urlBuilder = UrlBuilder(baseUrl: URL(string: .baseURL))
-        dependencies.navigation.defaultAnimation = .init(
-            pushTransition: .init(
-                type: .fade,
-                subtype: .fromRight, duration: 0.1
-            ),
+        dependencies.navigator.setDefaultAnimation(.init(
+            pushTransition: .init(type: .fade, subtype: .fromRight, duration: 0.1),
             modalPresentationStyle: .formSheet
-        )
-        dependencies.isLoggingEnabled = true
-        dependencies.decoder.register(
-            component: CustomComponent.self,
-            named: "CustomComponent"
-        )
-        dependencies.decoder.register(
-            action: CustomAction.self,
-            named: "CustomAction")
+        ))
+        dependencies.coder.register(type: CustomComponent.self)
+        dependencies.coder.register(type: CustomAction.self)
 
-        Beagle.dependencies = dependencies
+        BeagleConfigurator.setup(dependencies: dependencies)
 
         let rootViewController = MainScreen().screenController()
         window?.rootViewController = rootViewController
@@ -83,9 +70,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ```
 
-## UrlBuilder
+## Dependencias Customizáveis
 
-Configura uma URL base para sua aplicação, é usada quando os fluxos de navegação via Beagle serão definidos, você pode usar uma URL relativa.
+Dependencias que apresentam uma implementação default mas podem ser customizadas.
+
+### CoderProtocol
+
+É responsável pela parte de codificação e decodificação do Beagle. Expõe o método `register` para que seja possível registrar novos componentes e ações no Beagle.
+
+Veja abaixo um exemplo de como registrar um novo componente e uma action customizada:
+
+```swift
+dependencies.coder.register(component: CustomWidget.self)
+
+dependencies.coder.register(action: CustomAction.self)
+```
+
+### UrlBuilderProtocol
+
+É responsavel por criar uma URL para uma requisição do Beagle a partir de URLs relativas que podem ser enviadas pelo BFF (em fluxos de navegação por exemplo) e uma URL base configurada.
 
 Veja abaixo um exemplo de como usar:
 
@@ -93,33 +96,7 @@ Veja abaixo um exemplo de como usar:
 dependencies.urlBuilder = UrlBuilder(baseUrl: URL(string: "SUA URL BASE"))
 ```
 
-## NetworkClient
-
-É responsável por executar **network requests**. A sua aplicação deverá ser customizada nesta parte porque cada projeto possui uma demanda específica para **network layer**_._ Por isso, a implementação padrão pode não servir dependendo das necessidades do seu negócio.
-
-## Decoder
-
-Transforma um JSON em **Componentes do Beagle \(Seção Elementos\)**. Ele já possui uma lógica para decodificar todos os componentes default. Se você precisar trabalhar com componentes customizáveis, você pode registrá-los nesta instância.
-
-Veja abaixo um exemplo de como registrar um componente e uma action customizada:
-
-```swift
-Beagle.dependencies.decoder.register(
-    component: CustomWidget.self,
-    named: "CustomWidget"
-)
-
-Beagle.dependencies.decoder.register(
-    action: CustomAction.self,
-    named: "CustomAction"
-)
-```
-
-## AppBundle
-
-Você pode fornecer um pacote para sua aplicação de modo que o Beagle possa acessar seus recursos, como por exemplo, imagens, fontes, cores, etc.
-
-## Theme
+### ThemeProtocol
 
 Armazena todos os seus **styles** e sabe como aplicá-los em seus componentes.
 
@@ -153,20 +130,38 @@ let theme = AppTheme(styles: [
 **Passo 3**: atribua sua instância Theme às dependências do Beagle.
 
 ```swift
-Beagle.dependencies.theme = theme
+dependencies.theme = theme
 ```
 
-**Passo 4**: agora, você pode usar o **Text** com sua propriedade de **style** definida e assim configurar o nome que você definiu para o seu style customizado.
+### ViewClientProtocol
 
-```swift
-Text("Some text", style: "myStyleName")
-```
+É responsável por realizar a busca de telas no backend a partir do método `fetch` e `prefetch`. Possui uma implementação interna que simplesmente monta as urls a partir do `urlBuilder` e faz a requisições a partir do `networkClient`.
 
-## ValidatorProvider
+{{% alert color="info" %}}
+É possível implementar um mecanismo de cache de telas a partir da implementação customizada dessa dependencia.
+{{% /alert %}}
 
-Valida a customização que será realizada quando o widget **Form** for utilizado.
+### ImageDownloaderProtocol
 
-## DeepLinkHandler
+É responsável por fazer requisições de imagens remotas a partir do método `fetchImage`. O Beagle possui uma implementação default para essa dependencia, que simplesmente chama o `networkClient` para buscar as imagens e não realiza nenhum tipo de cache.
+
+## Dependencias Opcionais
+
+Dependencias que não possuem uma implementação default e portanto devem ser implementadas para o funcionamento correto do Beagle.
+
+### LoggerProtocol
+
+É responsável por disparar as menssagens de log produzidas durante a execução de fluxos do Beagle a partir do método `log`. Esses logs seguem o protocolo LogType, o qual tem os parâmetros:
+
+- category: assunto do log;
+- message: mensagem do log;
+- level: classifica o nível crítico.
+
+### NetworkClientProtocol
+
+É responsável por executar **network requests**. O Beagle não fornece uma implementação default para essa dependencia, logo, é **obrigatório** que seja fornecida uma implementação para essa dependencia para que o Beagle consiga se comunicar com o backend.
+
+### DeepLinkHandlerProtocol
 
 Este handler é usado para uma ação de [**deep link navigation**]({{< ref path="/android/customization/deep-link-handler.md" lang="pt" >}}). A variável possui um valor default, você pode adicionar novas telas ou substituir por outras na aplicação.
 
@@ -178,21 +173,7 @@ deepLinkHandler["MyDeepLinkScreen"] = MyDeepLinkScreenClass.self
 Beagle.dependenciesdeepLinkHandler = deepLinkHandler
 ```
 
-## LocalFormHandler
-
-Sua aplicação pode lidar com o envio de formulário por conta própria usando o `FormLocalAction`.
-
-O LocalFormHandler definido nas dependências do Beagle será usado para executar isso.
-
-## Repository
-
-É responsável pelas três principais operações no:
-
-1. `fetchComponent`: Orquestra a requisição para buscar widgets no servidor.
-2. `submitForm`: Submete forms no widget.
-3. `fetchImage`: Busca imagens para o **networkImage**;
-
-## Analytics
+### AnalyticsProviderProtocol
 
 É um protocolo que pode ser implementado para rastrear ações de aparecimento da tela ou sua finalização e eventos de clique.
 
@@ -214,50 +195,28 @@ class AnalyticsSample: Analytics {
 }
 ```
 
-## Navigation
+## Dependencias publicas não customizáveis
 
-O `navigation` lida com tipo de ações de [**navigate**]({{< ref path="/api/actions/navigate/" lang="pt" >}}) da sua aplicação. Existe uma implementação que é usada como valor default, mas que também pode ser substituída por uma classe que está de acordo com BeagleNavigation
+Dependencias que não são customizáveis mas apresentam APIs públicas para configuração do Beagle.
 
-Nesse mesmo atributo também é possível definir uma [**animação de navegação**]({{< ref path="/ios/customization/navigation-animation" lang="pt" >}}).
+### NavigationProtocol
 
-## PreFetchHelper
+O `navigator` lida com tipo de ações de [**navigate**]({{< ref path="/api/actions/navigate/" lang="pt" >}}) da sua aplicação.
 
-Este componente é usado como pré-busca do [**`BeagleScreenViewControllers`**]({{< ref path="/ios/customization/beagle-screen-view-controller" lang="pt" >}}) e entrega uma experiência para o usuário mais fluida. Ela já possui um valor e pode ser alterado para se adequar em que você precisa.
+Expõe métodos de registro de navigation controller customizadas e de [**animação de navegação**]({{< ref path="/ios/customization/navigation-animation" lang="pt" >}}).
 
-A pré-busca é acionada quando há um **navigation widget** de modo que você possa fazer um pré carregamento dos dados das possíveis próximas telas, evitando delays na navegação. Este comportamento pode ser desativado.
+### GlobalContextProtocol
 
-## CacheManager
+É reponsavel por gerenciar o contexto global do Beagle, expõe funções de `get`, `set` e `clear`, para que seja possível acessar e alterar atributos dele fora do escopo do Beagle.
 
-É responsável por manter e gerenciar o cache do conteúdo server-driven da aplicação.
+### OperationsProviderProtocol
 
-## FormDataStoreHandler
+É responsavel por prover as operações de contexto, expõe a função `register` para que seja possível registrar operações customizadas no OperationsProvider default do Beagle.
 
-É uma forma de persistir os dados de um formulário.
+### BundleProtocol
 
-## WindowManager
+É responsavel por prover o `Bundle` da aplicação para que o Beagle tenha acesso a imagens locais contidas, é inicializado com o `Bundle.main` mas esse pode ser facilmente alterado:
 
-É responsável por gerenciar uma janela.
-
-## Opener
-
-É um protocolo que tem um método que abre URL caso necessite navegar para um link externo.
-
-## GlobalContext
-
-Variável para definir um contexto de escopo global.
-
-## IsLoggingEnabled
-
-É uma variável boolean para habilitar ou desabilitar os logs e já vem habilitada por padrão.
-
-## Logger
-
-O logger é uma variável do tipo BeagleLoggerType que organiza os logs da aplicação. Esses logs seguem o protocolo LogType, o qual tem os parâmetros:
-
-- category: assunto do log;
-- message: mensagem do log;
-- level: classifica o nível crítico.
-
-{{% alert color="info" %}}
-É possível criar um logger customizado, o qual possuí categorias especificas da aplicação.
-{{% /alert %}}
+```swift
+dependencies.appBundle.bundle = Bundle(identifier: "myBundleId")
+```
