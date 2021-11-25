@@ -13,17 +13,17 @@ Você pode registrar a forma como imagens remotas serão baixadas e preenchidas 
 
 Com o **ImageDownloader** sendo criado no frontend de sua aplicação iOS, o Beagle saberá qual lógica usar para baixar e configurar o componente **Image** do tipo **ImagePath.Remote**.
 
-## **Protocolo ImageDownloader**
+## **Protocolo ImageDownloaderProtocol**
 
 O protocolo **ImageDownloader** se consiste em apenas método chamado **fetchImage** que será utilizado para fazer a requisição de suas imagens remotas.
 
 ```swift
 
-public protocol ImageDownloader {
+public protocol ImageDownloaderProtocol {
     @discardableResult
     func fetchImage(
         url: String,
-        additionalData: RemoteScreenAdditionalData?,
+        additionalData: HttpAdditionalData?,
         completion: @escaping (Result<Data, Request.Error>) -> Void
     ) -> RequestToken?
 }
@@ -33,34 +33,33 @@ public protocol ImageDownloader {
 A função fetchImage recebe 3 parâmetros:
 
 - **url**: valor do tipo String por onde será passado a url da imagem
-- **additionalData**: valor do tipo RemoteScreenAdditionalData, que poderá ser utilizado quando há necessidade de passar headers adicionais para uma requisição.
+- **additionalData**: valor do tipo HttpAdditionalData, que poderá ser utilizado quando há necessidade de passar headers adicionais para uma requisição.
 - **completion**: bloco que deve ser chamado ao final da execução da função passando o resultado da requisição.
 
 Além disso a função pode retornar o **RequestToken** para que a requisição possa ser cancelada internamente pelo Beagle.
 
 ## **Implementação Default**
 
-No Beagle iOS, temos uma classe chamada **ImageDownloaderDefault** que realiza as requisições das imagens de acordo com sua camada de rede.
+No Beagle iOS, temos uma estrutura chamada **ImageDownloader** que realiza as requisições das imagens de acordo com sua camada de rede.
 
-Em seu método `fetchImage` essa classe basicamente chama o **RequestDispatcher** com o tipo `.fetchImage` e mapeia o resultado daquela requisição, ou seja, ela depende da implementação da sua camada de rede, você pode ver como configurá-la [**aqui**]({{< ref path="/ios/customization/dependencies/network-layer" lang="pt" >}}).
+Em seu método `fetchImage` essa estrutura basicamente chama o `networkClient` e mapeia o resultado daquela requisição, ou seja, ela depende da implementação da sua camada de rede, você pode ver como configurá-la [**aqui**]({{< ref path="/ios/customization/network-layer" lang="pt" >}}).
 
-## **Substituindo o ImageDownloaderDefault**
+## **Substituindo o ImageDownloader**
 
 Para substituir a classe responsável por realizar as requisições de imagens para o Beagle, siga os passos a seguir:
 
-### **Passo 1: Implementar a `ImageDownloader`**
+### **Passo 1: Criar uma implementação para ImageDownloaderProtocol**
 
-Implemente o protocolo `ImageDownloader` na classe que deseja utilizar para realizar as requisições, neste caso o `CustomImageDownloader` será usado como exemplo:
+Implemente o protocolo `ImageDownloaderProtocol` na classe que deseja utilizar para realizar as requisições, neste caso o `CustomImageDownloader` será usado como exemplo:
 
 ```swift
 
-class CustomImageDownloader: ImageDownloader {
+class CustomImageDownloader: ImageDownloaderProtocol {
     func fetchImage(
         url: String,
-        additionalData: RemoteScreenAdditionalData?,
+        additionalData: HttpAdditionalData?,
         completion: @escaping (Result<Data, Request.Error>) -> Void
     ) -> RequestToken? {
-        let newUrl: URL = URL(string: url)
         //Implementacao da requisição da imagem
     }
     //Implementacao do ImageDownloader...
