@@ -27,7 +27,7 @@ Apesar disso, em algumas telas o tamanho do payload é inferior ao server driven
 | Search                 | 12,8 KB                                   | 14,45 KB                            |
 | **Resultado do teste** | **438,84 KB**                             | **318,55 KB**                       |
 
-Para telas mais complexas, o payload do server-driven ficará maior. É importante ressaltar que o Beagle utiliza um mecanismo de [**cache**]({{< ref path="/resources/cache/" lang="pt" >}}) e que esse teste é considerado apenas a primeira requisição.
+Para telas mais complexas, o payload do server-driven ficará maior.
 
 {{% alert color="info" %}}
 A vantagem em usar o Beagle é porque **você só desenvolve a tela apenas uma vez**, enquant em telas nativas você terá de desenvolver para cada plataforma.
