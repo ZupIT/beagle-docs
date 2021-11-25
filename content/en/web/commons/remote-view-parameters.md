@@ -56,6 +56,5 @@ const params: LoadParams = {
 | headers           | Map&lt;key, value&gt;                                                                           | Header list to attach when you make a request.                           |
 | shouldShowLoading | boolean                                                                                         | Show or not the loading component.                                       |
 | shouldShowError   | boolean                                                                                         | Show or not the error component.                                         |
-| strategy          | string&lt;[**Cache strategy**]({{< ref path="/web/commons/cache-strategy" lang="en" >}})&gt; | Cache strategy used in the request.                                      |
 | loadingComponent  | string                                                                                          | Customized component for loading.                                        |
 | errorComponent    | string                                                                                          | Customized component for error.                                          |
