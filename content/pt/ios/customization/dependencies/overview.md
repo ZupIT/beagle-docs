@@ -71,6 +71,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ```
 
+Para fazer o acesso a essas dependencias durante a execução da aplicação o Beagle provê um property wrapper `@Injected` que resolve uma instancia para o tipo da variável (wrapped value). Então supondo que desejamos limpar o conteudo do global context em algum momento durante a execução da aplicação:
+
+```swift
+@Injected var globalContext: GlobalContextProtocol
+
+globalContext.clear()
+```
+
+{{% alert color="warning" %}}
+Esse property wrapper dispara um `fatalError` caso seja usado para resolver uma dependencia que não seja do Beagle ou que seja opcional e não foi configurada (logger, analyticsProvider, deepLinkHandler, networkClient), para isso você pode usar `@OptionalInjected` que irá retornar nil caso a dependencia não seja resolvida.
+{{% /alert %}}
+
+```swift
+@OptionalInjected var logger: LoggerProtocol?
+
+logger?.log(Log.network(.httpRequest(request: .init(url: urlRequest))))
+```
+
 ## Dependencias Customizáveis
 
 Dependencias que apresentam uma implementação default mas podem ser customizadas.
