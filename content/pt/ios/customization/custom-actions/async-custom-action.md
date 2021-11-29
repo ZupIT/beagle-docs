@@ -22,7 +22,7 @@ Com a action criada, basta vincular a interface `AsyncAction` interface solicita
 
 ```swift
 struct CustomAction: AsyncAction {
-
+        @AutoCodable
         var onFinish: [Action]?
 
         func execute(controller: BeagleController, origin: UIView) {
@@ -34,20 +34,20 @@ struct CustomAction: AsyncAction {
 Agora, com a action pronta para executar de forma assíncrona, temos que **OBRIGATORIAMENTE** notificar quando sua execução está concluída executando a ação `onFinish`.
 
 ```swift
-    controller.execute(actions: self.onFinish, origin: origin)
+controller.execute(actions: self.onFinish, origin: origin)
 ```
 
 Veja o exemplo abaixo:
 
 ```swift
 struct CustomAction: AsyncAction {
-
+        @AutoCodable
         var onFinish: [Action]?
 
         func execute(controller: BeagleController, origin: UIView) {
-                print("Custom action foi chamada!")
+            print("Custom action foi chamada!")
 
-                controller.execute(actions: self.onFinish, origin: origin)
+            controller.execute(actions: self.onFinish, origin: origin)
         }
     }
 ```
