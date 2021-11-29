@@ -1,5 +1,5 @@
 {
   "horusecCliFilesOrPathsToIgnore": [
-    "**/bin/**"
+    "**/bin"
   ]
 }  
