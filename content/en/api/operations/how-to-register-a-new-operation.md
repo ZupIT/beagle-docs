@@ -1,16 +1,17 @@
 ---
-title: Como registrar uma nova operação
-weight: 375
-description: "Nesta seção, você encontra descrição completa das Custom Operations."
+title: How to register a new operation
+weight: 350
+description: You will find here how to register a new operation.
 ---
 
 ---
 
-Depois que você viu que é possível realizar[ **Operações**]({{< ref path="/api/context/operations" lang="pt" >}}) do tipo soma, subtração, etc, utilizando o contexto, você também pode criar a sua própria operação na plataforma que você quiser:
+After you've seen it is possible to make addition, subtraction and other operations using context, you can also create your own operation in the platform you want:  
 
-{{< tabs id="T165" >}}
+{{< tabs id="T147" >}}
 {{% tab name="iOS" %}}
-O registro de uma operação no iOS é feito através de um protocolo chamado `OperationsProvider`, veja abaixo:
+</br>
+The registration of an operation on iOS is through `OperationsProvider`protocol, see below: 
 
 ```swift
 public protocol OperationsProvider {
@@ -19,18 +20,18 @@ public protocol OperationsProvider {
 }
 ```
 
-Para registrar sua operação customizada, você deve fazer duas coisas:
+To register your customized operation, you have to do two things: 
 
-1. Prover um id para essa operação;
-2. Prover a ela a ação que irá acontecer por meio de uma closure do tipo `OperationHandler.`
+1. Provide an id for this operation; 
+2. Provide to it an action that it will happen through a closure of the type `OperationHandler.`
 
-O `OperationHandler` é um `typealias` de um bloco de código que retorna `DynamicObject` por meio de parâmetros do tipo `[DynamicObject].`
+The `OperationHandler` is a `typealias` of a code block that returns  `DynamicObject` through a parameter of `[DynamicObject]` type.
 
 ```swift
 public typealias OperationHandler = (_ parameters: [DynamicObject]) -> DynamicObject
 ```
 
-Agora, para registrar a sua nova operação basta utilizar o `BeagleDependencies,` onde nele você acessa o `OperationsProvider`, no qual tem a função de registro.
+Now, to register your new operation you have to use `BeagleDependencies,` where you can access the  `OperationsProvider`, which has the register function. 
 
 ```swift
 let dependencies = BeagleDependencies()
@@ -47,24 +48,23 @@ dependencies.operationsProvider.register(operationId: "isValidCpf") { parameters
 }
 ```
 
-Pronto! Sua operação já pode ser utilizada!
+Done! Your operation can be used now! 
 {{% /tab %}}
 
 {{% tab name="Android" %}}
+</br>
+You must the `Operation` interface in order to register a new operation on Android. The example below shows this interface signature
 
-O registro de uma operação no android é feito através de uma interface chamada Operation, veja abaixo:
 
 ```java
 interface Operation {
     fun execute(vararg params: OperationType?): OperationType
 }
 ```
+The following class shows the OperationType class details. This class holds the return types supported on Beagle.
 
-No parametro do método execute temos um atributo do tipo `OperationType`, esse atributo retorna o tipo da operação.
 
-Segue abaixo a sealed class OperationType com os tipos de retorno que beagle suporta.
-
-```java
+```java 
 sealed class OperationType(open val value: Any?) {
     data class TypeString(override val value: String) : OperationType(value)
     data class TypeBoolean(override val value: Boolean) : OperationType(value)
@@ -75,13 +75,13 @@ sealed class OperationType(open val value: Any?) {
 }
 ```
 
-Para registrar sua operação customizada, você deve seguir três passos:
+To register a custom operation you must: 
 
-1. Crie uma classe e coloque o nome que desejar.
-2. Coloque anotação `@RegisterOperation(name = "name-your-operation")` sobre o nome da classe.
-3. Implemente a interface Operation.
+1. Create a class and enter the name you want.
+2. Place an annotation `@RegisterOperation (name =" name-your-operation ")` over the class name.
+3. Implement the Operation interface.
 
-Segue abaixo um exemplo de operação customizada, no caso criamos uma operação de validação de cpf.
+The following example shows a custom operation that validates a CPF register number 
 
 ```java
 @RegisterOperation(name = "isValidCpf")
@@ -121,53 +121,55 @@ class IsValidCPFOperation : Operation {
     }
 }
 ```
+Done! Your operation can be used now! 
 
-Pronto! Sua operação já pode ser utilizada!
+{{% /tab %}}
+
+{{% tab name="Web" %}}
+</br>
+Registering custom operations in web apps is pretty straight forward
+
+You first have to create a function receiving any parameters you need and with the logic for your use case.
+
+Let's see an example on how we would create an action to validate a CPF register number, re-using a validation library.
+
+```
+import { createBeagleUIService } from '@zup-it/beagle-react'
+import { cpf } from 'cpf-cnpj-validator';
+
+
+function myCustomOperation(cpfInput: string): boolean {
+  if (!cpfInput) return false
+  return cpf.isValid(cpfInput)
+}
+
+
+export default createBeagleUIService({
+  baseUrl: '',
+  customOperations: {
+    isValidCpf: myCustomOperation
+  },
+  components: {},
+})
+
+```
+
+It is as simple as that, the two highlights in the previous code are:
+  1. Create a custom function receiving the same parameters you intend to send from the JSON
+  2. Add to your Beagle Service initializer the ``customOperations`` key which will receive a map of ``key:value`` pairs where the key is the name of the custom action and the value is the function you just created.
+
+
+Done! Your operation can be used now!
 
 {{% /tab %}}
 {{< /tabs >}}
 
-## Exemplo
+## Example
 
-Veja abaixo o exemplo utilizando a operação `isValidCpf` que foi criada acima, onde o texto do componente `Text` varia de acordo com o resultado da verificação se o CPF é válido ou não:
+See below an example using the `isvalidCpf` operation that was created above, where the text component `Text` will vary according the verification result, if the CPF is valid or not: 
 
-{{< tabs id="T166" >}}
-{{% tab name="JSON" %}}
-
-<!-- json-playground:customOperation.json
-{
-  "_beagleComponent_" : "beagle:screenComponent",
-  "navigationBar" : {
-    "title" : "Custom operation",
-    "showBackButton" : true
-  },
-  "child" : {
-    "_beagleComponent_" : "beagle:container",
-    "children" : [ {
-      "_beagleComponent_" : "beagle:button",
-      "text" : "CPF atual: @{cpf}",
-      "onPress" : [ {
-        "_beagleAction_" : "beagle:setContext",
-        "contextId" : "cpf",
-        "value" : "42249625000"
-      } ]
-    }, {
-      "_beagleComponent_" : "beagle:text",
-      "text" : "@{condition(isValidCpf(cpf), 'cpf is valid', 'cpf is not valid')}"
-    } ],
-    "context" : {
-      "id" : "cpf",
-      "value" : "00000000000"
-    }
-  }
-}
--->
-
-{{% playground file="customOperation.json" language="pt" %}}
-{{% /tab %}}
-
-{{% tab name="Kotlin DSL" %}}
-
+{{< tabs id="T148" >}}
+{{% tab name="Kotlin" %}}
 ```kotlin
 fun screen() = Screen(
     navigationBar = NavigationBar(title = "Custom operation", showBackButton = true),
@@ -185,7 +187,6 @@ fun screen() = Screen(
     )
 )
 ```
-
 {{% /tab %}}
 {{< /tabs >}}
 
