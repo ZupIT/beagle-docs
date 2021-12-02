@@ -10,6 +10,7 @@ After you've seen it is possible to make addition, subtraction and other operati
 
 {{< tabs id="T147" >}}
 {{% tab name="iOS" %}}
+</br>
 The registration of an operation on iOS is through `OperationsProvider`protocol, see below: 
 
 ```swift
@@ -51,7 +52,7 @@ Done! Your operation can be used now!
 {{% /tab %}}
 
 {{% tab name="Android" %}}
-
+</br>
 You must the `Operation` interface in order to register a new operation on Android. The example below shows this interface signature
 
 
@@ -123,6 +124,44 @@ class IsValidCPFOperation : Operation {
 Done! Your operation can be used now! 
 
 {{% /tab %}}
+
+{{% tab name="Web" %}}
+</br>
+Registering custom operations in web apps is pretty straight forward
+
+You first have to create a function receiving any parameters you need and with the logic for your use case.
+
+Let's see an example on how we would create an action to validate a CPF register number, re-using a validation library.
+
+```
+import { createBeagleUIService } from '@zup-it/beagle-react'
+import { cpf } from 'cpf-cnpj-validator';
+
+
+function myCustomOperation(cpfInput: string): boolean {
+  if (!cpfInput) return false
+  return cpf.isValid(cpfInput)
+}
+
+
+export default createBeagleUIService({
+  baseUrl: '',
+  customOperations: {
+    isValidCpf: myCustomOperation
+  },
+  components: {},
+})
+
+```
+
+It is as simple as that, the two highlights in the previous code are:
+  1. Create a custom function receiving the same parameters you intend to send from the JSON
+  2. Add to your Beagle Service initializer the ``customOperations`` key which will receive a map of ``key:value`` pairs where the key is the name of the custom action and the value is the function you just created.
+
+
+Done! Your operation can be used now!
+
+{{% /tab %}}
 {{< /tabs >}}
 
 ## Example
@@ -130,37 +169,6 @@ Done! Your operation can be used now!
 See below an example using the `isvalidCpf` operation that was created above, where the text component `Text` will vary according the verification result, if the CPF is valid or not: 
 
 {{< tabs id="T148" >}}
-{{% tab name="JSON" %}}
-<!-- json-playground:customOperation.json
-{
-  "_beagleComponent_" : "beagle:screenComponent",
-  "navigationBar" : {
-    "title" : "Custom operation",
-    "showBackButton" : true
-  },
-  "child" : {
-    "_beagleComponent_" : "beagle:container",
-    "children" : [ {
-      "_beagleComponent_" : "beagle:button",
-      "text" : "CPF atual: @{cpf}",
-      "onPress" : [ {
-        "_beagleAction_" : "beagle:setContext",
-        "contextId" : "cpf",
-        "value" : "42249625000"
-      } ]
-    }, {
-      "_beagleComponent_" : "beagle:text",
-      "text" : "@{condition(isValidCpf(cpf), 'cpf is valid', 'cpf is not valid')}"
-    } ],
-    "context" : {
-      "id" : "cpf",
-      "value" : "00000000000"
-    }
-  }
-}
--->
-{{% playground file="customOperation.json" language="en" %}}
-{{% /tab %}}
 {{% tab name="Kotlin" %}}
 ```kotlin
 fun screen() = Screen(
@@ -182,4 +190,6 @@ fun screen() = Screen(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/shared/customoperation.gif)
+{{< figure src="/shared/customoperation.gif" width="250">}}
+
+
