@@ -190,4 +190,6 @@ fun screen() = Screen(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/shared/customoperation.gif)
+{{< figure src="/shared/customoperation.gif" width="250">}}
+
+
