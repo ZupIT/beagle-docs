@@ -113,7 +113,7 @@ fun screen() = Screen(
             Text(text = "The text bellow will show if 4 is below 5 or not"),
             Text(expressionOf(
                     "@{condition(lt(4, 5), 'less then 5', 'greater then 5')}")
-            ).setStyle{ backgroundColor = "#00FF00" }
+            ).setStyle{ backgroundColor = constant("#00FF00") }
         )
     )
 )

@@ -263,7 +263,7 @@ Container(
 
 ).setStyle {
             backgroundColor = "#ff8100"
-            cornerRadius = CornerRadius(25.0)
+            cornerRadius = CornerRadius(constant(25.0))
             size = Size.box(width = 70, height = 80)
             margin = EdgeValue.all(20)
             padding = EdgeValue.all(15)

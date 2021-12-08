@@ -65,7 +65,7 @@ fun screen() = Screen(
                     children = listOf(
                         Text(substring(constant("The book is on the table"), constant(4), constant(11)))
                     )
-                ).setStyle { backgroundColor = "#00FF00" }
+                ).setStyle { backgroundColor = constant("#00FF00") }
             )
         )
     )

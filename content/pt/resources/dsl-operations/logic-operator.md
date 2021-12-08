@@ -59,7 +59,7 @@ fun screen() = Screen(
             children = listOf(
                 Text(text = constant("The text in green bellow will show if the result of `TRUE OR FALSE")),
                 Text(condition(or(constant(true), constant(false)), constant(true), constant(false)).toBindString()
-                ).setStyle{ backgroundColor = "#00FF00" }
+                ).setStyle{ backgroundColor = constant("#00FF00") }
             )
         )
     )
