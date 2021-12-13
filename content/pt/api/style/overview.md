@@ -1,7 +1,8 @@
 ---
-title: Style
-weight: 200
-description: 'Esta seção descreve a class Style, seus atributos e funcionalidades'
+title: Visão Geral
+weight: 10
+type: overview
+description: Descrição do Style e seus atributos
 ---
 
 ---
@@ -21,7 +22,7 @@ description: 'Esta seção descreve a class Style, seus atributos e funcionalida
 | [position]({{< ref path="resources/components-positioning/position.md" >}}) | EdgeValue | | Adiciona espaço a posição de um componente. Clique no parâmetro [position]({{< ref path="resources/components-positioning/position.md" >}}) para mais detalhes.|
 | [flex]({{< ref path="resources/components-positioning/flex.md" >}}) | Flex | | Define a propriedade `flex` no componente em que é aplicado. Clique no link do parâmetro [flex]({{< ref path="resources/components-positioning/flex.md" >}}) para mais detalhes |
 | [positionType]({{< ref path="resources/components-positioning/positiontype.md" >}}) | PositionType | | Define a propriedade `position type` para definir a relação de um componente com seus componentes-parentes. Ele pode ser definido como `relative` ou `absolute`. Clique no link do parâmetro [positionType]({{< ref path="resources/components-positioning/positiontype.md" >}}) para mais detalhes.|
-| [display]({{< ref path="resources/components-positioning/display.md" >}}) | Display | | Habilita a propriedade `flex` para todos os filhos diretos do componente em que é aplicado. Clique no link do parêmtro [display]({{< ref path="resources/components-positioning/display.md" >}}) para mais detalhes.
+| [display]({{< ref path="resources/components-positioning/display.md" >}}) | Bind\<Display\> | | Habilita a propriedade `flex` para todos os filhos diretos do componente em que é aplicado. Clique no link do parêmtro [display]({{< ref path="resources/components-positioning/display.md" >}}) para mais detalhes.
 
 ## Como usar?
 
