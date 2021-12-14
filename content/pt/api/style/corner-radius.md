@@ -67,32 +67,63 @@ A sua estrutura é representada como mostrado abaixo:
 
 {{< tabs id="T143" >}}
 {{% tab name="JSON" %}}
-<!-- json-playground:touchable.json
+<!-- json-playground:corner-radius.json
 {
-  "_beagleComponent_": "beagle:touchable",
-  "onPress": [
-    {
-      "_beagleAction_": "beagle:alert",
-      "message": "This is a touchable!"
+  "_beagleComponent_" : "beagle:container",
+  "id" : "containerSample",
+  "style" : {
+    "size" : {
+      "width" : {
+        "value" : 100,
+        "type" : "PERCENT"
+      },
+      "height" : {
+        "value" : 100,
+        "type" : "PERCENT"
+      }
+    },
+    "backgroundColor" : "#0000FF50",
+    "padding" : {
+      "all" : {
+        "value" : 4,
+        "type" : "REAL"
+      }
+    },
+    "cornerRadius" : {
+      "bottomRight" : "@{context.bottomRight}",
+      "topRight" : "@{context.topRight}",
+      "topLeft" : "@{context.topLeft}",
+      "bottomLeft" : "@{context.bottomLeft}",
+      "radius" : "@{context.radius}"
     }
-  ],
-  "child":
-  {
-  "_beagleComponent_": "beagle:text",
-  "text": "Text with action"
-}
+  },
+  "context" : {
+    "id" : "context",
+    "value" : {
+      "bottomRight" : 50,
+      "topRight" : 35,
+      "topLeft" : 15,
+      "bottomLeft" : 25
+    }
+  },
+  "children" : [
+    {
+      "_beagleComponent_" : "beagle:button",
+      "text" : "SetContext",
+      "onPress" : [
+        {
+          "contextId" : "context",
+          "value" : {
+            "radius" : 8
+          },
+          "_beagleAction_" : "beagle:setcontext"
+        }
+      ]
+    }
+  ]
 }
 -->
 {{% playground file="touchable.json" language="pt" %}}
 {{% /tab %}}
 
-{{% tab name="Kotlin DSL" %}}
-```kotlin
-Touchable(onPress = listOf(
-			         Alert(title = "Image", 
-                     message = "Clicked on Message")),
-          child = Text("Text with action")
-)
-```
-{{% /tab %}}
 {{< /tabs >}}

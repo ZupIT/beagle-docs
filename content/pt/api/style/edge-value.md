@@ -8,7 +8,7 @@ description: Descrição do EdgeValue.
 
 ## O que é?
 
-O EdgeValue é responsável por definir um valor de offset em relação ao seu irmão mais próximo ou pai. É utilizado nas propriedades margin, padding e position.
+O EdgeValue é responsável por definir um valor de offset em relação ao seu irmão mais próximo ou pai. É utilizado nas propriedades margin, padding e position do [Style]({{< ref path="/api/style/overview.md" >}}).
 
 A sua estrutura é representada como mostrado abaixo: 
 
@@ -27,52 +27,52 @@ A sua estrutura é representada como mostrado abaixo:
   <tbody>
     <tr>
       <td style="text-align:left">left</td>
-      <td style="text-align:left"><a href="/api/resources/style/unit-value">UnitValue</a>
+      <td style="text-align:left"><a href="../unit-value/">UnitValue</a>
       </td>
       <td style="text-align:center"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">Define um valor de offset a esquerda em relação ao seu irmão mais próximo ou pai.</td>
     </tr>
     <tr>
       <td style="text-align:left">top</td>
-      <td style="text-align:left"><a href="unit-value/">UnitValue</a>
+      <td style="text-align:left"><a href="../unit-value/">UnitValue</a>
       </td>
       <td style="text-align:center"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">Define um valor de offset superior em relação ao seu irmão mais próximo ou pai.</td>
     </tr>
     <tr>
       <td style="text-align:left">right</td>
-      <td style="text-align:left"><a href="unit-value/">UnitValue</a>
+      <td style="text-align:left"><a href="../unit-value/">UnitValue</a>
       </td>
       <td style="text-align:center"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">Define um valor de offset a direita em relação ao seu irmão mais próximo ou pai.</td>
     </tr>
     <tr>
       <td style="text-align:left">bottom</td>
-      <td style="text-align:left"><a href="unit-value/">UnitValue</a>
+      <td style="text-align:left"><a href="../unit-value/">UnitValue</a>
       </td>
       <td style="text-align:center"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">Define um valor de offset inferior em relação ao seu irmão mais próximo ou pai.</td>
     </tr>
     <tr>
       <td style="text-align:left">horizontal</td>
-      <td style="text-align:left"><a href="unit-value/">UnitValue</a>
+      <td style="text-align:left"><a href="../unit-value/">UnitValue</a>
       </td>
       <td style="text-align:center"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">Define um valor de offset a esquerda e direita em relação ao seu irmão mais próximo ou pai.</td>
     </tr>
     <tr>
       <td style="text-align:left">vertical</td>
-      <td style="text-align:left"><a href="unit-value/">UnitValue</a>
+      <td style="text-align:left"><a href="../unit-value/">UnitValue</a>
       </td>
       <td style="text-align:center"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">Define um valor de offset superior e inferior em relação ao seu irmão mais próximo ou pai.</td>
     </tr>
     <tr>
       <td style="text-align:left">all</td>
-      <td style="text-align:left"><a href="unit-value/">UnitValue</a>
+      <td style="text-align:left"><a href="../unit-value/">UnitValue</a>
       </td>
       <td style="text-align:center"></td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">Define um valor de offset em todas as direções em relação ao seu irmão mais próximo ou pai.</td>
     </tr>
   </tbody>
 </table>
@@ -81,32 +81,81 @@ A sua estrutura é representada como mostrado abaixo:
 
 {{< tabs id="T143" >}}
 {{% tab name="JSON" %}}
-<!-- json-playground:touchable.json
+<!-- json-playground:edge-value.json
 {
-  "_beagleComponent_": "beagle:touchable",
-  "onPress": [
-    {
-      "_beagleAction_": "beagle:alert",
-      "message": "This is a touchable!"
+  "_beagleComponent_" : "beagle:container",
+  "id" : "containerSample",
+  "style" : {
+    "flex" : {
+      "grow" : 1
+    },
+    "backgroundColor" : "#0000FF50",
+    "padding" : {
+      "all" : {
+        "value" : "@{context.padding}",
+        "type" : "REAL"
+      }
+    },
+    "margin" : {
+      "bottom" : {
+        "value" : "@{context.marginBottom}",
+        "type" : "REAL"
+      },
+      "top" : {
+        "value" : "@{context.marginTop}",
+        "type" : "REAL"
+      },
+      "right" : {
+        "value" : "@{context.marginRight}",
+        "type" : "REAL"
+      },
+      "left" : {
+        "value" : "@{context.marginLeft}",
+        "type" : "REAL"
+      }
+    },
+    "cornerRadius" : {
+      "radius" : 6
     }
-  ],
-  "child":
-  {
-  "_beagleComponent_": "beagle:text",
-  "text": "Text with action"
-}
+  },
+  "context" : {
+    "id" : "context",
+    "value" : {
+      "marginLeft" : 2,
+      "marginTop" : 4,
+      "marginBottom" : 4,
+      "padding" : 2,
+      "marginRight" : 2
+    }
+  },
+  "children" : [
+    {
+      "_beagleComponent_" : "beagle:button",
+      "style" : {
+        "backgroundColor" : "#00FF0050",
+        "flex" : {
+          "grow" : 1
+        }
+      },
+      "onPress" : [
+        {
+          "contextId" : "context",
+          "value" : {
+            "marginLeft" : 20,
+            "marginTop" : 20,
+            "marginBottom" : 20,
+            "padding" : 20,
+            "marginRight" : 20
+          },
+          "_beagleAction_" : "beagle:setcontext"
+        }
+      ],
+      "text" : "SetContext"
+    }
+  ]
 }
 -->
-{{% playground file="touchable.json" language="pt" %}}
+{{% playground file="edge-value.json" language="pt" %}}
 {{% /tab %}}
 
-{{% tab name="Kotlin DSL" %}}
-```kotlin
-Touchable(onPress = listOf(
-			         Alert(title = "Image", 
-                     message = "Clicked on Message")),
-          child = Text("Text with action")
-)
-```
-{{% /tab %}}
 {{< /tabs >}}
