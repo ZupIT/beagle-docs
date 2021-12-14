@@ -257,7 +257,7 @@ Beagle has different libraries/frameworks for each supported platform, in the fo
 - **Android:** [![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android)](https://mvnrepository.com/artifact/br.com.zup.beagle/android)
 - **iOS:** [![badge](https://img.shields.io/cocoapods/v/Beagle)](https://cocoapods.org/pods/Beagle)
 - **React Native:** [![react native badge](https://img.shields.io/npm/v/@zup-it/beagle-react-native?logo=React)](https://www.npmjs.com/package/@zup-it/beagle-react-native)
-- **Flutter:** *It is being developed, check out more information [in this folder](https://github.com/ZupIT/beagle/tree/master/flutter)*
+- **Flutter:** *It is being developed, check out more information [in this folder](https://github.com/ZupIT/beagle-flutter)*
 - **SwiftUI and Compose:** we will try to support them in the future
 
 **Web:**

@@ -6,10 +6,11 @@ description: "Nesta seção, você encontra descrição completa das Custom Oper
 
 ---
 
-Depois que você viu que é possível realizar[ **Operações**]({{< ref path="/api/context/operations" lang="pt" >}}) do tipo soma, subtração, etc, utilizando o contexto, você também pode criar a sua própria operação na plataforma que você quiser:
+Depois que você viu que é possível realizar[ **Operações**]({{< ref path="/api/operations" lang="pt" >}}) do tipo soma, subtração, etc, utilizando o contexto, você também pode criar a sua própria operação na plataforma que você quiser:
 
 {{< tabs id="T165" >}}
 {{% tab name="iOS" %}}
+</br>
 O registro de uma operação no iOS é feito através de um protocolo chamado `OperationsProvider`, veja abaixo:
 
 ```swift
@@ -51,7 +52,7 @@ Pronto! Sua operação já pode ser utilizada!
 {{% /tab %}}
 
 {{% tab name="Android" %}}
-
+</br>
 O registro de uma operação no android é feito através de uma interface chamada Operation, veja abaixo:
 
 ```java
@@ -125,6 +126,42 @@ class IsValidCPFOperation : Operation {
 Pronto! Sua operação já pode ser utilizada!
 
 {{% /tab %}}
+
+{{% tab name="Web" %}}
+</br>
+Registrar ações customizadas em aplicações web é uma tarefa bem direta.
+
+Primeiro criamos uma função que recebe os parâmetros que você precisa e com a lógica específica para seu caso de uso.
+
+Veja um exemplo de como criar uma ação para validar números de CPF, reutilizando uma bibilioteca pronta de validações.
+
+```
+import { createBeagleUIService } from '@zup-it/beagle-react'
+import { cpf } from 'cpf-cnpj-validator';
+
+
+function myCustomOperation(cpfInput: string): boolean {
+  if (!cpfInput) return false
+  return cpf.isValid(cpfInput)
+}
+
+
+export default createBeagleUIService({
+  baseUrl: '',
+  customOperations: {
+    isValidCpf: myCustomOperation
+  },
+  components: {},
+})
+
+```
+
+É bem simples mesmo, os dois pontos principais do código anterior são:
+ 1. Criar uma função recebendo os mesmos parâmetros que você pretende usar a partir do JSON
+ 2. Adicione ao inicializador do Beagle Service a chave ``customOperations`` que recebe um mapa de pares ``chave:valor`` onde a chave é o nome da ação customizada e o valor é a função que foi criada
+
+Pronto! Sua operação já pode ser utilizada!
+{{% /tab %}}
 {{< /tabs >}}
 
 ## Exemplo
@@ -132,40 +169,6 @@ Pronto! Sua operação já pode ser utilizada!
 Veja abaixo o exemplo utilizando a operação `isValidCpf` que foi criada acima, onde o texto do componente `Text` varia de acordo com o resultado da verificação se o CPF é válido ou não:
 
 {{< tabs id="T166" >}}
-{{% tab name="JSON" %}}
-
-<!-- json-playground:customOperation.json
-{
-  "_beagleComponent_" : "beagle:screenComponent",
-  "navigationBar" : {
-    "title" : "Custom operation",
-    "showBackButton" : true
-  },
-  "child" : {
-    "_beagleComponent_" : "beagle:container",
-    "children" : [ {
-      "_beagleComponent_" : "beagle:button",
-      "text" : "CPF atual: @{cpf}",
-      "onPress" : [ {
-        "_beagleAction_" : "beagle:setContext",
-        "contextId" : "cpf",
-        "value" : "42249625000"
-      } ]
-    }, {
-      "_beagleComponent_" : "beagle:text",
-      "text" : "@{condition(isValidCpf(cpf), 'cpf is valid', 'cpf is not valid')}"
-    } ],
-    "context" : {
-      "id" : "cpf",
-      "value" : "00000000000"
-    }
-  }
-}
--->
-
-{{% playground file="customOperation.json" language="pt" %}}
-{{% /tab %}}
-
 {{% tab name="Kotlin DSL" %}}
 
 ```kotlin
@@ -189,4 +192,4 @@ fun screen() = Screen(
 {{% /tab %}}
 {{< /tabs >}}
 
-![](/shared/customoperation.gif)
+{{< figure src="/shared/customoperation.gif" width="250">}}
