@@ -264,4 +264,8 @@ O Beagle possui diferentes bibliotecas/frameworks para cada plataforma suportada
 
 - **Angular:** [![badge](https://img.shields.io/npm/v/@zup-it/beagle-angular?logo=Angular)](https://www.npmjs.com/package/@zup-it/beagle-angular)
 - **React:** [![badge](https://img.shields.io/npm/v/@zup-it/beagle-react?logo=React)](https://www.npmjs.com/package/@zup-it/beagle-react)
+<<<<<<< HEAD
 {{% /alert %}} 
+=======
+{{% /alert %}}
+>>>>>>> 040b5801bd83dce67c29d97d7f1ee8ac172ffcff

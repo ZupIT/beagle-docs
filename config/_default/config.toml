@@ -40,10 +40,20 @@ version_menu = "Versions"
 # Weight used for sorting.
 weight = 1
 
+<<<<<<< HEAD
 [[languages.en.menu.main]]
     name = "C4 Model"
     weight = 20
     url = "../c4model/en/#"
+=======
+[languages.en.params]
+menu_new_feature_text = "[NEW]"
+
+[[languages.en.menu.main]]
+    name = "C4 Model"
+    weight = 20
+    url = "./c4model/en/#"
+>>>>>>> 040b5801bd83dce67c29d97d7f1ee8ac172ffcff
 
 [[languages.en.menu.main]]
     name = "References"
@@ -65,10 +75,20 @@ create_beagle_issue = "Criar Beagle issue"
 search_label = "Procurando por algo?"
 faq_path = "/pt/faq"
 
+<<<<<<< HEAD
 [[languages.pt.menu.main]]
     name = "C4 Model"
     weight = 20
     url = "../../c4model/pt-br/#"
+=======
+[languages.pt.params]
+menu_new_feature_text = "[NOVO]"
+
+[[languages.pt.menu.main]]
+    name = "C4 Model"
+    weight = 20
+    url = "../c4model/pt-br/#"
+>>>>>>> 040b5801bd83dce67c29d97d7f1ee8ac172ffcff
 
 [[languages.pt.menu.main]]
     name = "References"
@@ -96,6 +116,7 @@ playground_url = "https://playground.usebeagle.io/#"
 logoName = "icons/beagle.svg"
 search_label = "Looking for something?"
 faq_path = "/faq"
+gtm_id="GTM-5DFG5JL"
 current_version = ""
 
 edit_page = "Edit this page"
