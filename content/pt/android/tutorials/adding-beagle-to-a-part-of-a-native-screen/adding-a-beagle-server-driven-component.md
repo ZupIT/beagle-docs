@@ -208,7 +208,7 @@ A estrutura do **loadView** é:
 | **Atributo**  | **Tipo**                                                            | Obrigatório | **Definição**                                                          |
 | :------------ | :------------------------------------------------------------------ | :---------: | :--------------------------------------------------------------------- |
 | activity      | AppCompatActivity/Fragment                                          |      ✓      | Define a activity ou fragment que estamos usando o loadview            |
-| screenRequest | [**ScreenRequest**]({{< ref path="/api/screen-request" lang="pt" >}})                   |      ✓      | Define os parâmetros para a chamada da tela remota                     |
+| requestData | [**RequestData**]({{< ref path="/api/request-data" lang="pt" >}})                   |      ✓      | Define os parâmetros para a chamada da tela remota                     |
 | listener      | **OnServerStateChanged = (serverState: ServerDrivenState) -> Unit** |             | Define o o listener que configura os callbacks para os estados da tela |
 
 <br />
@@ -221,7 +221,7 @@ Veja aqui como fazer isso:
 
 ```kotlin
 val frameLayout = findViewById<FrameLayout>(R.id.fr_server_driven)
-frameLayout.loadView(this, ScreenRequest("/serverDrivenComponent"))
+frameLayout.loadView(this, RequestData("/serverDrivenComponent"))
 ```
 
 E pronto: basta iniciar sua aplicação e você verá a tela a seguir!

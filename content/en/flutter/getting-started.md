@@ -50,7 +50,7 @@ void main() {
 ```
 
 ## Step 3. Render a remote widget
-You must use the component `BeagleWidget` which is provided by the Beagle Library. This widget requires a single parameter, the `screenRequest`, which specifies the request to fetch the first server-driven view of the flow. See the example below:
+You must use the component `BeagleWidget` which is provided by the Beagle Library. This widget requires a single parameter, the `RequestData`, which specifies the request to fetch the first server-driven view of the flow. See the example below:
 
 ```dart
 import 'package:beagle/beagle.dart';
@@ -75,7 +75,7 @@ class BeagleSampleApp extends StatelessWidget {
       title: 'Beagle Sample',
       home: Scaffold(
         body: BeagleWidget(
-          screenRequest: BeagleScreenRequest('welcome'),
+          RequestData: BeagleRequestData('welcome'),
         ),
       ),
     );
@@ -85,7 +85,7 @@ class BeagleSampleApp extends StatelessWidget {
 
 The example above used a simple Material App to render the server-driven widget. The component `BeagleWidget` includes a remote view in the layout.
 
-The `BeagleWidget` accepts other optional parameters, just like the `BeagleScreenRequest`. If you want to check them, please visit the [BeagleWidget section]({{< ref path="/flutter/customization/beagle-widget" lang="en" >}}).
+The `BeagleWidget` accepts other optional parameters, just like the `BeagleRequestData`. If you want to check them, please visit the [BeagleWidget section]({{< ref path="/flutter/customization/beagle-widget" lang="en" >}}).
 
 {{% alert color="success" %}}
 Congrats, you have finished your first Beagle Screen!

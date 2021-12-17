@@ -117,7 +117,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
        
-        val intent = this.newServerDrivenIntent<ServerDrivenActivity>(ScreenRequest("/components"))
+        val intent = this.newServerDrivenIntent<ServerDrivenActivity>(RequestData("/components"))
         startActivity(intent)
     }
 }

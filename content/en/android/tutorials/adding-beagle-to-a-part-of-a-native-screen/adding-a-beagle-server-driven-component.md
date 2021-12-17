@@ -206,7 +206,7 @@ The **loadView** structure is:
 |**Attribute**|**Type**|Required|**Definition**|
 |:----|:-------------- |:---------:|:--------- |
 | activity | AppCompatActivity/Fragment | ✓ | Defines the activity or fragment we are using loadview |
-| screenRequest | [**ScreenRequest**]({{< ref path="/api/screen-request" lang="en" >}}) | ✓ | Sets the parameters for calling the remote screen |
+| RequestData | [**RequestData**]({{< ref path="/api/request-data" lang="en" >}}) | ✓ | Sets the parameters for calling the remote screen |
 | listener | **OnServerStateChanged = (serverState: ServerDrivenState) -> Unit** | | Defines the listener that configures callbacks for screen states |
 
 <br />
@@ -219,7 +219,7 @@ Here's how to do this:
 
 ```kotlin
 val frameLayout = findViewById<FrameLayout>(R.id.fr_server_driven)
-frameLayout.loadView(this, ScreenRequest("/serverDrivenComponent"))
+frameLayout.loadView(this, RequestData("/serverDrivenComponent"))
 ```
 
 And that's it: just start your application and you'll see the screen below:
