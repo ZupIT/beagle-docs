@@ -29,7 +29,7 @@ See how the structure is represented:
       <td style="text-align:left">Identifier for Widgets, Elements and SemanticsNodes.</td>
     </tr>
     <tr>
-      <td style="text-align:left">screenRequest</td>
+      <td style="text-align:left">ScreenRequest</td>
       <td style="text-align:left"><strong>BeagleScreenRequest</strong></td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Provides the url, method, headers and body to the request.</td>
@@ -111,7 +111,7 @@ Scaffold(
     title: const Text('Beagle Sample'),
   ),
   body: BeagleWidget(
-    screenRequest: BeagleScreenRequest('components'),
+    ScreenRequest: BeagleScreenRequest('components'),
   ),
 );
 ```

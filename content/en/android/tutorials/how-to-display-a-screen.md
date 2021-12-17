@@ -12,7 +12,7 @@ description: >-
 To display a **`full server-driven`** screen, you need to use the method `this.newServerDrivenIntent<BeagleActivity>()`. 
 -  `this` refers to the context of the screen.
 
-This method requires the parameter `ScreenRequest`.
+This method requires the parameter `RequestData`.
 
 You must follow the example below:
 
@@ -23,12 +23,12 @@ In this example, you only call it BeagleActivity, but this name is defined by yo
 {{% /alert %}}
 
 ```kotlin
-val intent = this.newServerDrivenIntent<BeagleActivity>(ScreenRequest("/screen"))
+val intent = this.newServerDrivenIntent<BeagleActivity>(RequestData("/screen"))
 startActivity(intent)
 ```
 
 {{% alert color="info" %}}
-To test the command above, the `ScreenRequest` component requires an URL that brings the JSON with all the server-driven screen's information that you want to display.
+To test the command above, the `RequestData` component requires an URL that brings the JSON with all the server-driven screen's information that you want to display.
 
 In this case, follow these steps:
 
@@ -38,17 +38,17 @@ In this case, follow these steps:
 - See how the code ends up below.
 
 ```text
-val intent = this.newServerDrivenIntent<BeagleActivity>(ScreenRequest("https://run.mocky.io/v3/73322be2-96bf-467b-b6dc-e3fff179852c"))
+val intent = this.newServerDrivenIntent<BeagleActivity>(RequestData("https://run.mocky.io/v3/73322be2-96bf-467b-b6dc-e3fff179852c"))
 startActivity(intent)
 ```
 
 {{% /alert %}}
 
-### The Screen Request class.
+### The Request Data class.
 
-The `ScreenRequest` is an internal Beagle class used to request which screen you want to display. You will only list the **`URL`** attribute for the page you want to load from the BFF. However, this element has other attributes, which can be used in the transition and between screens. 
+The `RequestData` is an internal Beagle class used to request which screen you want to display. You will only list the **`URL`** attribute for the page you want to load from the BFF. However, this element has other attributes, which can be used in the transition and between screens. 
 
-To learn more about this class, check out on [**Screen Request**]({{< ref path="/api/screen-request" lang="en" >}})
+To learn more about this class, check out on [**Request Data**]({{< ref path="/api/request-data" lang="en" >}})
 
 ## Display a screen through a JSON
 

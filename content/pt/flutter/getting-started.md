@@ -70,7 +70,7 @@ class BeagleSampleApp extends StatelessWidget {
       title: 'Beagle Sample',
       home: Scaffold(
         body: BeagleWidget(
-          screenRequest: BeagleScreenRequest('welcome'),
+          ScreenRequest: BeagleScreenRequest('welcome'),
         ),
       ),
     );

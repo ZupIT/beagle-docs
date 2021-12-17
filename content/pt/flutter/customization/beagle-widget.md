@@ -111,7 +111,7 @@ Scaffold(
     title: const Text('Beagle Sample'),
   ),
   body: BeagleWidget(
-    screenRequest: BeagleScreenRequest('components'),
+    ScreenRequest: BeagleScreenRequest('components'),
   ),
 );
 ```
