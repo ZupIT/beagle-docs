@@ -52,7 +52,7 @@ BeagleSdk.init(
 );
 
 BeagleWidget(
-  RequestData: BeagleRequestData('welcome'),
+  ScreenRequest: BeagleScreenRequest('welcome'),
 );
 ```
 

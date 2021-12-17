@@ -29,8 +29,8 @@ See how the structure is represented:
       <td style="text-align:left">Identifier for Widgets, Elements and SemanticsNodes.</td>
     </tr>
     <tr>
-      <td style="text-align:left">RequestData</td>
-      <td style="text-align:left"><strong>BeagleRequestData</strong></td>
+      <td style="text-align:left">ScreenRequest</td>
+      <td style="text-align:left"><strong>BeagleScreenRequest</strong></td>
       <td style="text-align:left"></td>
       <td style="text-align:left">Provides the url, method, headers and body to the request.</td>
     </tr>
@@ -49,8 +49,8 @@ See how the structure is represented:
   </tbody>
 </table>
 
-### BeagleRequestData
-It's a class used to make requests in Beagle Flutter. It implements the `BeagleNetworkOptions` which brings the `method`, `headers` and `strategy` attributes. Also, the `BeagleRequestData` class has the `url` and `body` properties. See the structure below:
+### BeagleScreenRequest
+It's a class used to make requests in Beagle Flutter. It implements the `BeagleNetworkOptions` which brings the `method`, `headers` and `strategy` attributes. Also, the `BeagleScreenRequest` class has the `url` and `body` properties. See the structure below:
 
 <table>
   <thead>
@@ -101,7 +101,7 @@ A function that follows the struct `void Function(BeagleView view)` and provides
 ## How to use it?
 You can use it wherever you want to show server-driven content.
 
-- Place the `BeagleWidget` there informing at least a local JSON or a `BeagleRequestData` with the `url` of your BFF.
+- Place the `BeagleWidget` there informing at least a local JSON or a `BeagleScreenRequest` with the `url` of your BFF.
 
 In the example below, you will see it in the `Scaffold` widget body:
 
@@ -111,7 +111,7 @@ Scaffold(
     title: const Text('Beagle Sample'),
   ),
   body: BeagleWidget(
-    RequestData: BeagleRequestData('components'),
+    ScreenRequest: BeagleScreenRequest('components'),
   ),
 );
 ```

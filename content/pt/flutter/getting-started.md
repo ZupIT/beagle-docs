@@ -45,7 +45,7 @@ void main() {
 ```
 
 ## Passo 3. Renderizar um widget remoto
-Você precisa usar o componente `BeagleWidget` que é provido pela biblioteca Beagle. Este widget requer um único parâmetro, o `requestData`, que especifica a requisição para buscar o primeiro widget do fluxo provido pelo servidor. Veja o exemplo abaixo:
+Você precisa usar o componente `BeagleWidget` que é provido pela biblioteca Beagle. Este widget requer um único parâmetro, o `screenRequest`, que especifica a requisição para buscar o primeiro widget do fluxo provido pelo servidor. Veja o exemplo abaixo:
 
 ```dart
 import 'package:beagle/beagle.dart';
@@ -70,7 +70,7 @@ class BeagleSampleApp extends StatelessWidget {
       title: 'Beagle Sample',
       home: Scaffold(
         body: BeagleWidget(
-          RequestData: BeagleRequestData('welcome'),
+          ScreenRequest: BeagleScreenRequest('welcome'),
         ),
       ),
     );
@@ -80,7 +80,7 @@ class BeagleSampleApp extends StatelessWidget {
 
 O exemplo acima usou um simples Material App para renderizar o widget provido pelo servidor. O componente `BeagleWidget` inclui no layout um widget remoto.
 
-O `BeagleWidget` aceita outros parâmetros opicionais, assim como o `BeagleRequestData`. Para vê-los, visite a [seção do BeagleWidget]({{< ref path="/flutter/customization/beagle-widget" lang="pt" >}}).
+O `BeagleWidget` aceita outros parâmetros opicionais, assim como o `BeagleScreenRequest`. Para vê-los, visite a [seção do BeagleWidget]({{< ref path="/flutter/customization/beagle-widget" lang="pt" >}}).
 
 {{% alert color="success" %}}
 Parabéns, você terminou sua primeira tela com Beagle!
