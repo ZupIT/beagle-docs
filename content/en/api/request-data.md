@@ -9,7 +9,7 @@ hasNewFeature: "true"
 
 ## What is it?
 
-The **`Request Data`** is an Beagle Internal class used to do http requests. That is what you use when you need, for example, to call a Server-Driven page from **an activity or a native fragment on Android.**
+The **`Request Data`** is a Beagle Internal class used to make http requests. That is what you use when you need, for example, to call a Server-Driven page from **an activity or a native fragment on Android.**
 
 At first, you will only list the URL attribute that referencing the page you want to load from BFF.
 
