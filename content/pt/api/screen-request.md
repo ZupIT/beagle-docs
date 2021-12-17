@@ -5,6 +5,9 @@ description: Descrição da classe Screen Request e seus atributos.
 ---
 
 ---
+{{% alert color="danger" %}}
+Essa classe foi depreciada(*`@deprecated`*). Use a classe [Request Data]({{< ref path="api/request-data.md" >}})
+{{% /alert %}}
 
 ## O que é?
 

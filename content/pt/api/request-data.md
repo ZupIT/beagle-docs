@@ -2,6 +2,7 @@
 title: Request Data
 weight: 390
 description: Descrição da classe Request Data e seus atributos.
+hasNewFeature: Novo
 ---
 
 ---

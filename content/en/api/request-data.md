@@ -2,6 +2,7 @@
 title: Request Data
 weight: 365
 description: 'In this section, you will find all informations about the Request Data class.'
+hasNewFeature: "true"
 ---
 
 ---
