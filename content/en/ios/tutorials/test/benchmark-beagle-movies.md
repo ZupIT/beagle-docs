@@ -26,7 +26,7 @@ Despite that, in some screens the payload is inferior than the server-drive. Thi
 | Search           | 12,8 KB                                  | 14,45 KB                          |
 | **Test results** | **438,84 KB**                            | **318,55 KB**                     |
 
-To more complex screens, the server-driven payload will be bigger. It is important to mention that Beagle uses a [cache]({{< ref path="/resources/cache/" lang="en" >}}) mechanism and this test is only considered in the first request.
+To more complex screens, the server-driven payload will be bigger.
 
 {{% alert color="info" %}}
 The advantage of using Beagle is that **you only develop the screen once**, while in other native screens you will have to develop one for every platform.

@@ -9,7 +9,6 @@ description: Você encontrará aqui a descrição dos headers padrões e como de
 O Beagle Web envia **dois tipos de headers** que são padrões para o Beagle:
 
 1. **beagle-platform:** header utilizado que indica para o backend que a requisição partiu da Web. Desta forma, o valor enviado é sempre **WEB.**
-2. **beagle-hash**: header utilizado para o correto funcionamento do [**protocolo de cache de Beagle**]({{< ref path="/resources/cache/#como-o-protocolo-de-cache-funciona" lang="pt" >}}).
 
 Por padrão, esses headers são sempre enviados, porém podem ser desabilitados pelo parâmetro `useBeagleHeaders` na config.
 
@@ -45,7 +44,3 @@ export default createBeagleUIService({
 
 {{% /tab %}}
 {{< /tabs >}}
-
-{{% alert color="info" %}}
-Você deve manter os headers habilitados para o correto funcionamento do protocolo de cache do Beagle.
-{{% /alert %}}
