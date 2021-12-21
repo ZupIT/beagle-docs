@@ -8,8 +8,7 @@ description: >-
 ---
 
 # Introduction
-Similar to the HttpClient, but more specific. While the hHttpClient is responsible for managing every request (views, json data, images, etc), the ViewClient is only responsible for fetching views, i.e. server driven pages.
-
+Similar to the HttpClient, but more specific. While the HttpClient is responsible for managing every request (views, json data, images, etc), the ViewClient is only responsible for fetching views, i.e. server driven pages.
 The ViewClient creates the BeagleRequest that is sent to the HttpClient. The default implementation does two things:
 1. creates the BeagleRequest according to what has been requested by its caller (normally, the navigator);
 2. when the response arrives from the httpClient, it checks for navigation actions where `preFetch` is `true` and, asynchronously, pre-fetches their results.
