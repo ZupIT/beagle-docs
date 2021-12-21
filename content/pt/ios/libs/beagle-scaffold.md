@@ -163,15 +163,9 @@ Existe um conjunto de propriedades que você deve customizar, como o cliente de 
 
 Você pode criar um exemplo dessas camadas usando estes tutoriais:
 
-[**Camada de Rede Customizada**]({{< ref path="/ios/customization/network-layer" lang="en" >}})
-<br>
+[**Camada de Rede Customizada**]({{< ref path="/ios/customization/dependencies/network-layer" lang="pt" >}})
 
-[**Gerenciador de Cache Customizado**]({{< ref path="/resources/cache/how-to-configure-cache" lang="en" >}})
-<br>
-
-[**Sistema de Log Customizado**]({{< ref path="/ios/customization/log-system" lang="en" >}})
-
-<br>
+[**Sistema de Log Customizado**]({{< ref path="/ios/customization/dependencies/log-system" lang="pt" >}})
 <hr>
 
 ##### Para mais informações sobre Beagle, acesse o repositório [Beagle](https://github.com/ZupIT/beagle).

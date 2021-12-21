@@ -788,4 +788,4 @@ O ViewContentManager possui as seguintes propriedades e funções: have the foll
 
 ## Atualizando a view com o resultado da requisição
 
-Caso você precisa atualizar a view atual com a árvore que vem do backend, você deve usar o [**método fetch do `BeagleView`**](https://github.com/ZupIT/beagle-web-core/blob/master/pt/beagle-view#Fetching-a-view). Isso irá internamente usar todo o mecanismo de cache do Beagle e também a parte de renderização.
+Caso você precisa atualizar a view atual com a árvore que vem do backend, você deve usar o [**método fetch do `BeagleView`**](https://github.com/ZupIT/beagle-web-core/blob/master/pt/beagle-view#Fetching-a-view).
