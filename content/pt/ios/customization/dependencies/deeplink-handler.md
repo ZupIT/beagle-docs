@@ -9,26 +9,26 @@ description: >-
 
 ## Introdução
 
-O Beagle realiza todas as suas navegações a partir da dependência **`deepLinkHandler`** presente no BeagleDependencies, ela é do tipo `DeepLinkScreenManaging`.
+O Beagle realiza todas as suas navegações a partir da dependência **`deepLinkHandler`** presente no BeagleDependencies, ela é do tipo `DeepLinkScreenManagerProtocol`.
 
-O protocolo `DeepLinkScreenManaging` possui um método chamado **getNativeScreen** que retorna um UIViewController a partir de um determinado `path` do tipo String. É possível passar dados adicionais através de um dicionário do tipo [String: String].
+O protocolo `DeepLinkScreenManagerProtocol` possui um método chamado **getNativeScreen** que retorna um UIViewController a partir de um determinado `path` do tipo String. É possível passar dados adicionais através de um dicionário do tipo [String: String].
 
 ```swift
-public protocol DeepLinkScreenManaging {
+public protocol DeepLinkScreenManagerProtocol {
     func getNativeScreen(with path: String, data: [String: String]?) throws -> UIViewController
 }
 ```
 
 ## **Exemplo**
 
-Para utilizar o protocolo `DeepLinkScreenManaging`, veja as seções abaixo: 
+Para utilizar o protocolo `DeepLinkScreenManagerProtocol`, veja as seções abaixo: 
 
-### **Passo 1: Criar uma classe herdada do DeepLinkScreenManaging*
+### **Passo 1: Criar uma classe que implementa DeepLinkScreenManagerProtocol*
 
-O primeiro passo é criar uma classe chamada de `DeeplinkScreenManager` que irá conformar com o protocolo `DeepLinkScreenManaging`.
+O primeiro passo é criar uma classe chamada de `DeeplinkScreenManager` que irá conformar com o protocolo `DeepLinkScreenManagerProtocol`.
 
 ```swift
-final class DeeplinkScreenManager: DeepLinkScreenManaging {
+final class DeeplinkScreenManager: DeepLinkScreenManagerProtocol {
     
     func getNativeScreen(with path: String, data: [String: String]?) throws -> UIViewController {
     }
@@ -117,7 +117,7 @@ let dependencies = BeagleDependencies()
 let deepLinkHandler = DeeplinkScreenManager.shared
 deepLinkHandler["PathDaSuaScreen"] = SuaScreen.self
 dependencies.deepLinkHandler = deepLinkHandler
-Beagle.dependencies = dependencies
+BeagleConfigurator.setup(dependencies: dependencies)
 
 ```
 

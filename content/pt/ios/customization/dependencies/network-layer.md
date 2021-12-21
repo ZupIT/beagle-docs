@@ -94,6 +94,6 @@ BeagleConfigurator.setup(dependencies: dependencies)
 
 Pronto! Agora o Beagle utilizará a sua classe com todas as modificações e definições necessárias para realizar as requisições Http.
 
-## **Criando uma camada de Networking**
+### **Exemplo de implementação**
 
 Caso queira entrar mais a fundo na implementação da camada de rede temos um exemplo [aqui](https://github.com/Orangestack-com/beagle-ios/blob/main/Example/BeagleDemo/BeagleDemo/BeagleConfig/Network/NetworkClientDefault.swift)
