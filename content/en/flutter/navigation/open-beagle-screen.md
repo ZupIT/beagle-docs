@@ -46,7 +46,7 @@ final myLocalView = LocalView(BeagleUIElement({
 ```
 
 ## 2nd parameter: the context (required)
-Well, there's not much to say here. Like everything in Flutter, we need the BuildContext to set everything up, so just pass the context received by your build method.
+Like everything in Flutter, we need the BuildContext to set everything up, so just pass the context received by your build method.
 
 ## 3rd parameter: the screen builder (optional)
 The `screenBuilder` is a function that tells Beagle how to create every screen that comes from Beagle and is the ideal place to implement a UI where part is server driven and part is not. See the example below:
