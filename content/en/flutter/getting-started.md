@@ -91,7 +91,7 @@ Congrats, you have finished your first Beagle Screen!
 {{% /alert %}}
 
 ## Continue reading
-A good idea to check every feature of Beagle Flutter is to read the page ["BeagleService"]({{< ref path="/flutter/other/beagle-service" lang="en" >}}). There you'll find summarized descriptions of everything that can be set up for the BeagleService and links to the full documentation of each feature.
+If you want to see most of the features available for Beagle Flutter, you can check the page ["BeagleService"]({{< ref path="/flutter/other/beagle-service" lang="en" >}}). There you'll find summarized descriptions of everything that can be set up and links to the full documentation of each feature.
 
 The other important features that are not included in the "BeagleService" page are:
 
