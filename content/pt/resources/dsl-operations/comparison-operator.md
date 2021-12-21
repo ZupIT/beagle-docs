@@ -121,7 +121,7 @@ fun screen() = Screen(
                                 constant("greater then 5")).toBindString()
                         )
                     )
-                ).setStyle { backgroundColor = "#00FF00" }
+                ).setStyle { backgroundColor = constant("#00FF00") }
             )
         )
     )
