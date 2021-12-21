@@ -16,6 +16,7 @@ A sua estrutura é representada como mostrado abaixo:
 | :----------- | :-------------------------------------------- | :---------: | :----------------- |
 | route        | [Route]({{< ref path="/api/actions/navigate/route/" lang="pt" >}}) |      ✓      | Rota de navegação. |
 | controllerId | String |     | O id do controlador de navegação a ser usado durante a ação de navegação. Se ausente, o controlador de navegação padrão será usado. |
+| navigationContext | ​[NavigationContext]({{< ref path="/api/actions/navigate/navigationcontext" lang="pt" >}})​ | | Contexto salvo na tela destino. |
 
 ## Como usar?
 
