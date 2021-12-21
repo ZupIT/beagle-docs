@@ -57,7 +57,7 @@ Existem algumas propriedades que o Yoga Layout pode usar para inserir, mover ou 
 
 ### **UnitValue**
 
-Os atributos **Base, Size, Margin, Padding e Position** recebem um `UnitValue` que contem um value do tipo `Bind<Double>` e um type do tipo `UnitType` que é um `enum` com as seguintes opções:
+Os atributos **Base, Size, Margin, Padding e Position** recebem um `UnitValue` que contém um value do tipo `Bind<Double>` e um type do tipo `UnitType` que é um `enum` com as seguintes opções:
 
 | **UnitType** | Definição                                                        |
 | :----------- | :--------------------------------------------------------------- |

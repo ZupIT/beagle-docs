@@ -36,7 +36,7 @@ Há duas possibilidades no resultado:
     "_beagleComponent_" : "beagle:container",
     "children" : [ {
       "_beagleComponent_" : "beagle:text",
-      "text" : "The text in green bellow will show if the result of `TRUE OR FALSE"
+      "text" : "The text in green below will show if the result of `TRUE OR FALSE"
     }, {
       "_beagleComponent_" : "beagle:text",
       "text" : "@{condition(or(true, false), 'true', 'false')}",
@@ -57,7 +57,7 @@ fun screen() = Screen(
     navigationBar = NavigationBar(title = "Operations", showBackButton = true),
     child = Container(
             children = listOf(
-                Text(text = constant("The text in green bellow will show if the result of `TRUE OR FALSE")),
+                Text(text = constant("The text in green below will show if the result of `TRUE OR FALSE")),
                 Text(condition(or(constant(true), constant(false)), constant(true), constant(false)).toBindString()
                 ).setStyle{ backgroundColor = constant("#00FF00") }
             )

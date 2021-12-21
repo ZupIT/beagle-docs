@@ -19,8 +19,8 @@ A sua estrutura é representada como mostrado abaixo:
       </th>
       <th style="text-align:left"><strong>Tipo</strong>
       </th>
-      <th style="text-align:center">Obrigat&#xF3;rio</th>
-      <th style="text-align:left"><strong>Defini&#xE7;&#xE3;o</strong>
+      <th style="text-align:center">Obrigatório</th>
+      <th style="text-align:left"><strong>Definição</strong>
       </th>
     </tr>
   </thead>
