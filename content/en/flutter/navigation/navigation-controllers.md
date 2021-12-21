@@ -27,7 +27,7 @@ Called whenever Beagle is loading a new view. It receives the following named pa
 
 - `BeagleView view`: the [BeagleView]({{< ref path="/flutter/other/beagle-view" lang="en" >}}) that renders this server driven UI.
 - `BuildContext context`: the current build context.
-- `Function completeNavigation`: a function to complete the navigation, i.e. to finally push the new page to the navigator with the `BeagleWidget`. You need to call it as soon as you want to render a Beagle JSON. For instance, if your loading feedback is to render a beagle component, you must call completeNavigation from withing the `onLoading` method. If you'll render a Beagle UI only in the success event, you don't need to ever call `completeNavigation` because it gets automatically called after `onSuccess`.
+- `Function completeNavigation`: a function to complete the navigation, i.e. to finally push the new page to the navigator with the `BeagleWidget`. You need to call it as soon as you want to render a Beagle JSON. For instance, if your loading feedback is to render a beagle component, you must call completeNavigation from within the `onLoading` method. If you'll render a Beagle UI only in the success event, you don't need to ever call `completeNavigation` because it gets automatically called after `onSuccess`.
 
 ## onError
 Called whenever an error happens while loading a new view. It receives the same parameters as the `onLoading` method plus:
