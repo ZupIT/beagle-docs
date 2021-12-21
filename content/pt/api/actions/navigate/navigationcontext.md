@@ -8,7 +8,7 @@ description: Descrição da estrutura NavigationContext
 
 ## O que é?
 
-É uma estrutura presente nas ações de navegação, exceto openExternalUrl e openNativeRoute, que define um valor a ser salvo no contexto "navigationContext" da tela destino. O "navigationContext" é um contexto especial que fica salvo na view raiz de uma tela.
+É uma estrutura presente nas ações de navegação, exceto openExternalUrl e openNativeRoute, que define um valor a ser salvo no contexto "navigationContext" da tela destino. O "navigationContext" é um contexto especial, onde o escopo é uma única tela.
 
 A sua estrutura é representada como mostrado abaixo:
 
@@ -21,10 +21,10 @@ A sua estrutura é representada como mostrado abaixo:
 
 No exemplo abaixo, temos uma tela vinda do BFF com um botão, que ao ser clicado, navega para uma nova tela e salva no context "navigationContext" o valor informado no campo value. Essa próxima tela possui um texto com uma expressão que resolve para o contexto "navigationContext".
 
-{{< tabs id="T113" >}}
+{{< tabs id="T178" >}}
 {{% tab name="JSON" %}}
 
-<!-- json-playground:pushView.json
+<!-- json-playground:navigationcontext.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
@@ -50,7 +50,7 @@ No exemplo abaixo, temos uma tela vinda do BFF com um botão, que ao ser clicado
 }
 -->
 
-{{% playground file="pushView.json" language="pt" %}}
+{{% playground file="navigationcontext.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
