@@ -176,7 +176,7 @@ class BeagleConfig {
         dependencies.urlBuilder = UrlBuilder(
             baseUrl: URL(string: "http://localhost")
         )
-        Beagle.dependencies = dependencies
+        BeagleConfigurator.setup(dependencies: dependencies)
     }
 }
 ```
@@ -226,11 +226,7 @@ Você pode criar essas camadas usando esses tutoriais:
 [**Camada de Rede customizada**]({{< ref path="/ios/customization/network-layer" lang="en" >}})
 <br>
 
-[**Gerenciador de Cache customizado**]({{< ref path="/resources/cache/how-to-configure-cache" lang="en" >}})
-<br>
-
 [**Sistema de Log customizado**]({{< ref path="/ios/customization/log-system" lang="en" >}})
-
 <br>
 
 Se você quiser pular essas configurações, você pode utilizar a biblioteca de apoio do Beagle: [**Beagle Scaffold**]({{< ref path="/ios/libs/beagle-scaffold" lang="en" >}}) contém implementações padrão de camadas de Rede, Cache e Log.
@@ -244,7 +240,6 @@ No entando, você deve se  lembrar que é muito importante customizar sua própr
 * **Ações:** você pode criar ações customizadas que serão executadas pelos seus widgets de acordo com as interações dos usuários na sua aplicação
 * **Animações de navegação:** Você pode customizar as animações de navegação das telas do Beagle.
 * **Camada de Rede:** Você pode customizar a camada de rede para configurar a forma que o Beagle irá fazer as requisições.
-* **Cache:** Você pode customizar o cache para salvar as telas server-driven do jeito que desejar.
 * **Carregamento e tratamento de erros:** Você pode customizar o tratamento de erro e o loading das telas server-driven.
 * **Deep Link handler:** Você pode configurar o Deep Link Handler para ter navegação de uma tela server-driven para uma tela nativa.
 * **Image Downloader:** Você pode customizar a forma como as imagens serão baixadas para serem exibidas pelo Beagle.
