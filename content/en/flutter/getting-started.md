@@ -19,7 +19,7 @@ of the default components;
 # Configuration and start up
 
 ## Step 1. Create the BeagleService
-In order to work, Beagle needs and instance of the class BeagleService, which can be instantiated as follows:
+In order to work, Beagle needs an instance of the class BeagleService, which can be instantiated as follows:
 
 ```dart
 import 'package:beagle/beagle.dart';
