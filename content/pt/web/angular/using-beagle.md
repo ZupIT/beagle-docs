@@ -142,9 +142,7 @@ Abra o arquivo `app.component.html` e substitua todo o conteúdo pelo código a 
 
 `route` no código acima diz qual a rota será carregada. A URL especificada aqui é relativa à `baseUrl` declarada na configuração.
 
-{{% alert color="warning" %}}
-O parâmetro `route` é válido apenas para a versão 1.3 ou superior. Para versões anteriores, `route` deve ser usado. `route`é um objeto e o valor equivalente ao desse exemplo seria`{ path: '/welcome' }.`
-{{% /alert %}}
+Para mais detalhes sobre o `BeagleRemoteView`, leia [este artigo]({{< ref path="/web/commons/beagle-remote-view" lang="pt" >}}).
 
 ## Exemplo
 
@@ -169,9 +167,9 @@ yarn serve
 ```
 
 {{% alert color="warning" %}}
-É importante deixar claro que o comando para reiniciar a aplicação é fundamental para que as alterações que você fez nos arquivos de configuração do Beagle funcionem.
+É importante deixar claro que deve-se reiciar a aplicação sempre que se altera os arquivos de configuração do Beagle.
 
-Este processo também deve ser feito para qualquer alteração feita nas propriedades `@Input()` de seus componentes mapeados. A equipe Beagle está constantemente desenvolvendo soluções para melhorar isso.
+Este processo também deve ser feito para qualquer alteração feita nas propriedades `@Input()` de seus componentes mapeados.
 {{% /alert %}}
 
 Depois de finalizado o comando acesse a aplicação em: http://localhost:4200  

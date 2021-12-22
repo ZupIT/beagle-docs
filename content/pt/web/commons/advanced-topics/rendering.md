@@ -557,7 +557,7 @@ Veja os exemplos de como chegar ao renderizador:
 
 - React: a referência ao `BeagleView` pode ser obtida por meio da propriedade do `viewRef` do `BeagleRemoteView:`
 
-```text
+```typescript
 import React, { FC, useRef, useEffect, MutableRefObject } from 'react'
 import { BeagleRemoteView } from '@zup-it/beagle-react'
 import { BeagleView } from '@zup-it/beagle-web'
@@ -572,14 +572,14 @@ const Home: FC = () => {
   }, [])
 
   return (
-    <BeagleRemoteView path="/home" viewRef={beagleView} />
+    <BeagleRemoteView route="/home" viewRef={beagleView} />
   )
 }
 ```
 
 - Angular: você pode usar o atributo `onCreateBeagleView` do componente `beagle-remote-view` :
 
-```text
+```typescript
 import { Component } from '@angular/core'
 import { LoadParams, BeagleView } from '@zup-it/beagle-web'
 
@@ -588,12 +588,7 @@ import { LoadParams, BeagleView } from '@zup-it/beagle-web'
   template: '',
 })
 export class Home {
-  loadParams: LoadParams
   private beagleView: BeagleView
-
-  constructor() {
-    this.loadParams = { path: '/home' }
-  }
 
   onCreateBeagleView(beagleView: BeagleView) {
     this.beagleView = beagleView
@@ -618,7 +613,7 @@ const MyCustomActionHandler: ActionHandler<MyCustomAction> = ({ action, beagleVi
 
 ### Usando o Renderer
 
-O renderizador possui duas funções: `doFullRender` e`doPartialRender`.
+O renderizador possui três funções: `doFullRender`, `doPartialRender` e `doTemplateRender`. A seguir veja a definição dos dois primeiros, falaremos do terceiro mais a frente.
 
 1. `doFullRender`: renderiza a árvore passada como parâmetro rodando todo os passos para renderização. Renderização completa deve ser feita toda vez que novas nodes são criadas.
 2. `doPartialRender`: apenas roda a view snapshot e os passos depois disso. Renderização parcial deve ser usada para modificar nodes existentes.
@@ -642,6 +637,19 @@ Além do tipo de árvore, não há diferença na forma que o `doFullRender` e o 
    - `prepend`: precede a árvore passada no primeiro parâmetro para a children do node com o mesmo id que o parâmetro `anchor` \(ou a raíz, se o anchor não for especificado\).
 
    - `append`: acrescenta a árvore passada no primeiro parâmetro para a children do node com o mesmo id que o parâmetro `anchor` \(ou a raíz, se o anchor não for especificado\).
+
+#### doTemplateRender
+Este é o método de renderização mais complexo, mas é raramente necessário. É usado para criar componentes como o ListView e o GridView. Suponha que seja necessário renderizar múltiplos nós na árvore de uma única vez, de acordo com os valores de um array e um template. Além disso, o template usa expressões que precisam ser avaliadas de acordo com a iteração atual do array. Fazer isso com os outros dois métodos de renderização seria muito ineficiente. Este método recebe um template, uma coleção de valores e cria novos nós baseado em ambos, com um único evento de renderização.
+
+O `doTemplateRender` aceita os seguintes parâmetros:
+
+1. `templateManager: TemplateManager`: conjunto de templates. Temos mais de um template para que seja possível cobrir casos onde existem vários tipos de itens no array e cada tipo precisa de um template diferente. Este parâmetro é obrigatório.
+2. `anchor: string`: o id do nó na árvore atual que vai receber os novos elementos. Este parâmetro é obrigatório.
+3. `contexts: DataContext[][]`: matriz de contextos onde cada linha representa um item para renderizar de acordo com o templateManager. Este parâmetro é obrigatório.
+4. `componentManager?: ComponentManager`: opcional. Quando definido, o componente (nó) passa por essa função antes de ser renderizado (colocado na árvore). É uma chance para alterar propriedades como o id.
+- `mode?: TreeInsertionMode`: opcional. O modo como os nós devem ser inseridos. O valor padrão é `replace`. Veja na seção anterior todos os valores possíveis.
+
+Para ver exemplos de como esse método pode ser usado, veja a implementação do componente padrão ListView no nosso repositório no GitHub.
 
 ### **Exemplos:**
 
@@ -673,9 +681,9 @@ beagleView.getRenderer().doFullRender(item, 'list', { mode: 'append' })
 ```
 
 {{% alert color="info" %}}
-Com a API do rendered, você pode alterar uma view quando quiser. Você não pode chamar `renderer.doFullRender(tree, componentId)` no onInit do componente do Angular com o id `componentId`. Se isso for feito, o Beagle irá remover o componente da árvore antes de ser renderizado. Casos como esse podem acontecer usando o Beagle renderer dentro dos componentes de lifecycle.
+É possível obter acesso ao renderizador de onde você quiser, mas, atenção, não chame `renderer.doFullRender(tree, componentId)` no onInit do componente do Angular com o id `componentId`. Se isso for feito, o Beagle irá remover o componente da árvore antes de ser renderizado. Casos como esse podem acontecer quando o renderizador é usado dentro de lifecycles do componente.
 
-A solução do exemplo dado seria substituir a children do componente \(`renderer.doFullRender(tree, componentId, 'replace')`\).
+A solução do exemplo dado seria substituir a propriedade children do componente: \(`renderer.doFullRender(tree, componentId, 'replace')`\).
 {{% /alert %}}
 
 ## API ViewContentManager
@@ -785,7 +793,3 @@ O ViewContentManager possui as seguintes propriedades e funções: have the foll
     </tr>
   </tbody>
 </table>
-
-## Atualizando a view com o resultado da requisição
-
-Caso você precisa atualizar a view atual com a árvore que vem do backend, você deve usar o [**método fetch do `BeagleView`**](https://github.com/ZupIT/beagle-web-core/blob/master/pt/beagle-view#Fetching-a-view).
