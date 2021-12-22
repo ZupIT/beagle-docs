@@ -53,4 +53,4 @@ Notice that `onPressed` is a function and we just call `element.getAttributeValu
 
 This is the most boring and mechanical part of Beagle Flutter. One could say this is a monkey job and we agree with it. It is among our next steps to think of a better, more automatic, way of declaring custom components. We'd welcome any suggestions in [our Github Page](https://github.com/ZupIT/beagle)!
 
-That's it! You can use this same strategy to expose any of your Beagle components.
+That's it! You can use this same strategy to expose any of your components.
