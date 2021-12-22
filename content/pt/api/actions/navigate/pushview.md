@@ -15,6 +15,7 @@ A sua estrutura é representada como mostrado abaixo:
 | **Atributo** | **Tipo**                                       | Obrigatório | **Definição**      |
 | :----------- | :--------------------------------------------- | :---------: | :----------------- |
 | route        | ​[Route]({{< ref path="/api/actions/navigate/route" lang="pt" >}})​ |      ✓      | Rota de navegação. |
+| navigationContext | ​[NavigationContext]({{< ref path="/api/actions/navigate/navigationcontext" lang="pt" >}})​ | | Contexto salvo na tela destino. |
 
 ## Como usar?
 

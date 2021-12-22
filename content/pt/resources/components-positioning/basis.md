@@ -144,7 +144,7 @@ private fun screen() :Widget{
 
 ### Basis com UnitType.AUTO
 
-É possível também passar `UnitValue(0.0, UnitType.AUTO)` quando utilizar `basis`. Neste caso o valor `0.0` não é relevante, pois usando `UnitType.AUTO` o eixo principal será ajustado de acordo com tamanho do conteúdo. Exceto se um valor de `size`fixo também for definido para o componente no mesmo sentido do eixo principal.
+É possível também passar `UnitValue(constant(0.0), UnitType.AUTO)` quando utilizar `basis`. Neste caso o valor `0.0` não é relevante, pois usando `UnitType.AUTO` o eixo principal será ajustado de acordo com tamanho do conteúdo. Exceto se um valor de `size`fixo também for definido para o componente no mesmo sentido do eixo principal.
 
 {{< tabs id="T66" >}}
 {{% tab name="Kotlin" %}}
@@ -155,15 +155,15 @@ private fun screen() :Widget{
 		children = listOf(
 			createText(backgroundText = "#142850", text = "1")
                       .setFlex {
-                               basis = UnitValue(0.0, UnitType.AUTO)
+                               basis = UnitValue(constant(0.0), UnitType.AUTO)
                       },
                   createText(backgroundText = "#dd7631", text = "2")
                       .setFlex {
-                          basis = UnitValue(0.0, UnitType.AUTO)
+                          basis = UnitValue(constant(0.0), UnitType.AUTO)
                       },
                   createText(backgroundText = "#649d66", text = "3")
                       .setFlex {
-                          basis = UnitValue(0.0, UnitType.AUTO)
+                          basis = UnitValue(constant(0.0), UnitType.AUTO)
                       }
               )
           ).setFlex {
