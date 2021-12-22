@@ -45,12 +45,12 @@ Como o nome implica é uma classe que contém informações (DATA) que podem ser
 
 ## Como usar?
 
-Para iniciar uma nova `Activity` basta usar o método `startActivity()` a partir de uma `Activity` ou um `Fragment` criando um `ServerDrivenIntent` passando o `ScreenRequest` com o endereço do BFF da tela como no exemplo abaixo:
+Para iniciar uma nova `Activity` basta usar o método `startActivity()` a partir de uma `Activity` ou um `Fragment` criando um `ServerDrivenIntent` passando o `RequestData` com o endereço do BFF da tela como no exemplo abaixo:
 
 ```kotlin
 startActivity(
     newServerDrivenIntent<ServerDrivenActivity>(
-        ScreenRequest("URL_WITH_SCREEN_ENDPOINT")
+        RequestData("URL_WITH_SCREEN_ENDPOINT")
     )
 )
 ```

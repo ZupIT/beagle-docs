@@ -45,12 +45,12 @@ It is an `ENUM` and the values are:
 
 ## How to use it?
 
-To start a new `Activity`, you have to use the `startActivity()` method from an `Activity` or a `Fragment` creating a `ServerDrivenIntent` passing through a `ScreenRequest` with the BFF's address of the screen, like the example below: 
+To start a new `Activity`, you have to use the `startActivity()` method from an `Activity` or a `Fragment` creating a `ServerDrivenIntent` passing through a `RequestData` with the BFF's address of the screen, like the example below: 
 
 ```kotlin
 startActivity(
     newServerDrivenIntent<ServerDrivenActivity>(
-        ScreenRequest("URL_WITH_SCREEN_ENDPOINT")
+        RequestData("URL_WITH_SCREEN_ENDPOINT")
     )
 )
 ```
