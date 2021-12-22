@@ -39,4 +39,4 @@ O `BeagleRemoteView` possui um único parâmetro obrigatório: a rota (route). A
   - **body:** o corpo da requisição. Isso não é válido para requisições GET.
 
 ## controllerId
-O segundo parâmetro aceito pelo `BeagleRemoteView` é opcional e controla qual controle de nevagação será usado. Os navigation controllers são responsáveis por decidir oq ue fazer nos eventos de carregamento, erro e sucesso de uma tela, se não informado, o controlador padrão é usado. Para saber mais sobre navigation controllers, leia [este artigo]({{< ref path="/web/commons/navigation/navigation-controllers" lang="pt" >}}).
+O segundo parâmetro aceito pelo `BeagleRemoteView` é opcional e controla qual controle de nevagação será usado. Os navigation controllers são responsáveis por decidir o que fazer nos eventos de carregamento, erro e sucesso de uma tela, se não informado, o controlador padrão é usado. Para saber mais sobre navigation controllers, leia [este artigo]({{< ref path="/web/commons/navigation/navigation-controllers" lang="pt" >}}).
