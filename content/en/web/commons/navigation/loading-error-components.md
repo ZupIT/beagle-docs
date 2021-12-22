@@ -7,7 +7,7 @@ description: See how to change the error and loading components
 ---
 
 {{% alert color="warning" %}}
-Attention: If you wanna change the entire behavior of the loading, error and success events of the navigation, read [this article]({{< ref path="/web/commons/navigation/navigation-controllers" lang="pt" >}}) instead.
+Attention: If you wanna change the entire behavior of the loading, error and success events of the navigation, read [this article]({{< ref path="/web/commons/navigation/navigation-controllers" lang="en" >}}) instead.
 {{% /alert %}}
 
 ## Loading Component
