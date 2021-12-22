@@ -167,7 +167,7 @@ yarn serve
 ```
 
 {{% alert color="warning" %}}
-É importante deixar claro que deve-se reiciar a aplicação sempre que se altera os arquivos de configuração do Beagle.
+É importante deixar claro que deve-se reiniciar a aplicação sempre que se altera os arquivos de configuração do Beagle.
 
 Este processo também deve ser feito para qualquer alteração feita nas propriedades `@Input()` de seus componentes mapeados.
 {{% /alert %}}
