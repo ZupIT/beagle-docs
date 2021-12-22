@@ -41,7 +41,7 @@ Called whenever an error happens while loading a new view. It receives the same 
 ## onSuccess
 Called whenever a view is successfully loaded. To render the view, this method must call `beagleView.getRenderer().doFullRenderer(screen)`. This renders the server driven screen to the current `BeagleView`. With the exception of `completeNavigation`, which will be called anyway by Beagle, the `onSuccess` method accepts the same parameters as the `onLoading` plus:
 
-- `screen: BeagleUIElement`: the server driven view recovered from the [ViewClient]({{< ref path="/flutter/network/view-client" lang="en" >}}).
+- `screen: BeagleUIElement`: the server driven view recovered from the [ViewClient]({{< ref path="/web/commons/view-client" lang="en" >}}).
 
 # Example
 
