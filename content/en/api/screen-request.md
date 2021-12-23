@@ -5,6 +5,9 @@ description: 'In this section, you will find all informations about Screen Reque
 ---
 
 ---
+{{% alert color="danger" %}}
+This class has been *`@deprecated`*. Use the [Request Data]({{< ref path="api/request-data.md" >}})  instead
+{{% /alert %}}
 
 ## What is it?
 

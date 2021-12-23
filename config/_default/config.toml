@@ -97,6 +97,7 @@ logoName = "icons/beagle.svg"
 search_label = "Looking for something?"
 faq_path = "/faq"
 current_version = ""
+gtm_id="GTM-5DFG5JL"
 
 edit_page = "Edit this page"
 create_page = "Create new page"
