@@ -39,10 +39,18 @@ RequestData é a classe para fazer configuração e solicitações http.
 
 | **Atributo** | **Tipo** | **Obrigatório** | **Definição** |
 | :--- | :--- | :---: | :---: |
-| uri | URI  | ✓ | URL do servidor. |
-| method | HttpMethod | ✓ | Método HTTP |
+| url | String  | ✓ | URL do servidor. |
+| httpAdditionalData | HttpAdditionalData | | Informações adicionais da requisição |
+
+### HttpAdditionalData
+
+Classe com informações adicionais da requisição.
+
+| **Atributo** | **Tipo** | **Obrigatório** | **Definição** |
+| :--- | :--- | :---: | :---: |
+| method | HttpMethod | | Método HTTP |
 | headers | Map<String, String> | | Itens do header para a requisição. |
-| body | String | | Conteúdo que será entregue com a solicitação. |
+| body | Any | | Conteúdo que será entregue com a solicitação. |
 
 #### HttpMethod
 
@@ -63,7 +71,7 @@ ResponseData é usado para retornar dados feitos pela solicitação.
 
 | **Atributo** | **Tipo** | **Obrigatório** | **Definição** |
 | :--- | :--- | :---: | :---: |
-| statusCode | Int  | ✓ | http status code da requisição |
+| statusCode | Int  | | http status code da requisição |
 | data | ByteArray | ✓ | Response body retornado da requisição |
 | headers | Map<String, String> |  | Itens do header para a requisição. |
 | statusText | String |  | Mensagem de resposta retornada pelo servidor HTTP remoto. |
@@ -257,7 +265,7 @@ class HttpClientDefault : HttpClient, CoroutineScope {
   private fun setRequestBody(urlConnection: HttpURLConnection, request: RequestData) {
     try {
       urlConnection.doOutput = true
-      urlConnection.outputStream.write(request.httpAdditionalData.body?.toByteArray())
+      urlConnection.outputStream.write(request.httpAdditionalData.body?.toString()?.toByteArray())
       urlConnection.outputStream.flush()
     } catch (e: Exception) {
       throw BeagleApiException(ResponseData(-1, data = byteArrayOf()), request)
