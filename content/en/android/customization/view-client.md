@@ -65,4 +65,4 @@ class MyViewClient(
 
 ```
 
-Above we implemented a very simple logic to `fetch` and `prefetch` that will store every fetch result in memory using a MutableMap `cachedResponses` using the request url as key, and search for a ResponseData in it every time `fetch` or `prefetch` its called. This is a very dumb implementation, because this cache would never expire, but the objective here is just to show how such feature could be implemented using the ViewClient.
+Above we implemented a very simple logic to `fetch` and `prefetch` that will store every fetch result in memory using a MutableMap `cachedResponses` using the request url as key, and search for a ResponseData in it every time `fetch` or `prefetch` is called. This is a very dumb implementation, because this cache would never expire, but the objective here is just to show how such feature could be implemented using the ViewClient.
