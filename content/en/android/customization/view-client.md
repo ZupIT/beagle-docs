@@ -15,7 +15,7 @@ The default implementation of `fetch` does two things:
 1. search for a response data in a local cache, if exists, remove it from cache and return;
 2. if there is no response data in cache, it calls HttpClient and make the request for the ResponseData.
 
-The default implementation of `prefech` does two:
+The default implementation of `prefech` does two things:
 1. search for a response data in a local cache, and return it if exists;
 2. if there is no response data in cache, it calls HttpClient and make the request for the ResponseData and store it in cache (memory).
 
