@@ -5,13 +5,9 @@ weight: 184
 
 ---
 
-## Acessar e controlar o BeagleView
+## Acessar e controlar a BeagleView
 
-{{% alert color="info" %}}
-As features descritas aqui estão disponíveis apenas em versões acima de 1.2.0.
-{{% /alert %}}
-
-Beagle View é uma entidade responsável por gerenciar a view do server-driven. Pode ser criada por meio do Beagle Service, pela função `createBeagleView`. O BeagleView pode buscar uma nova view, atualizar a sua árvore, navegar, etc.
+Beagle View é uma entidade responsável por gerenciar a view do server-driven. Pode ser criada por meio do Beagle Service, pela função `createBeagleView`. A BeagleView pode buscar uma nova view, atualizar a sua árvore, navegar, etc.
 
 ## Acessando o Beagle View
 
@@ -19,12 +15,12 @@ O Beagle View é criado no Angular ou React quando o componenente`BeagleRemoteVi
 
 ### **Angular**
 
-```text
-<beagle-remote-view [loadParams]="loadParams" (onCreateBeagleView)="onCreateBeagleView($event)">
-beagle-remote-view>
+```typescript
+<beagle-remote-view route="/home" (onCreateBeagleView)="onCreateBeagleView($event)">
+</beagle-remote-view>
 ```
 
-```text
+```typescript
 import { Component } from '@angular/core'
 import { BeagleView } from '@zup-it/beagle-web'
 
@@ -50,7 +46,7 @@ class MyComponent {
 
 ### **React**
 
-```text
+```typescript
 import React, { useRef, MutableRefObject, useEffect } from 'react'
 import { BeagleRemoteView } from '@zup-it/beagle-react'
 import { BeagleView } from '@zup-it/beagle-web'
@@ -67,79 +63,40 @@ const MyComponent: FC = () => {
 
   useEffect(logBeagleView, [])
 
-  return <BeagleRemoteView path="/my-path" viewRef={beagleView} />
+  return <BeagleRemoteView route="/home" viewRef={beagleView} />
 }
 ```
 
 Nos exemplos acima, o Beagle View foi acessado e logado. É importante lembrar que é preciso checar a disponibilidade do Beagle View antes de usá-lo, uma vez que ele é criado por um componente `child`, ele não estará disponível antes da criação dos componentes `children`.
 
-## Buscando a view
+## Buscando uma view
 
-Para buscar uma view do backend e atualizar a view atual, você precisa usar o método `fetch` do `BeagleView`.
+Para buscar uma view do backend é preciso obter uma referência ao `BeagleService` e então chamar o método `viewClient.fetch(remoteView)`.
 
-A operação de busca por ser em toda a árvore ou apenas nas branch. Se for a primeira, a árvore é toda substituída pelo resultado da requisição. Caso contrário, a árvore é mantida, mas a branch é atualizada pelo fetch, é ela que será substituída pelo resultado da requisição.
+Uma referência para o BeagleService pode ser obtida a partir da própria `BeagleView`, pelo método `getBeagleService()`.
 
-Abaixo veja o exemplo da chamada da função `fetch`:
+O método `viewClient.fetch(remoteView)` aceita um único parâmetro, que é a rota que deve ser acessada no backend para que a view seja recuperada. As propriedades da `RemoteView` podem ser encontradas no [artigo sobre o componente `beagle-remote-view`]({{< ref path="/web/commons/beagle-remote-view" lang="pt" >}}).
 
-```text
-// fetches the remote view at /my-path and uses it to replace the entire current view
-beagleView.fetch({ path: '/my-path' })
+Para renderizar a view recuperada pelo view client, deve-se usar o renderizador da `BeagleView`: `view.getRenderer()`. Os métodos do `Renderer` que renderizam a view são `doFullRender` e `doPartialRender`, para saber mais sobre eles, leia o [artigo sobre renderização]({{< ref path="/web/commons/advanced-topics/rendering" lang="pt" >}}), mais especificamente, a seção "Usando o Renderer".
 
-// fetches the remote view at /my-lazy-container and uses it to replace the component with id 'lazy'
-beagleView.fetch({ path: '/my-lazy-container' }, 'lazy')
-```
+## Escutando mudanças na árvore de UI
 
-`fetch` aceita 3 parâmetros, e eles são:
+Tanto o Beagle React quanto o Beagle Angular escutam mudanças na árvore de UI do Beagle para que possam atualizar a tela de acordo. Se for interessante para sua aplicação, você também pode escutar esse evento da `BeagleView`. Para adicionar um listener, basta chamar o método `onChange` da `BeagleView`.
 
-1. **loadParams:** obrigatório. Objeto contendo os parâmetros para controlar a requisição, veja as opções a seguir:
-
-- **path:** obrigatório. Caminho para a view no backend.
-- **fallback:** opcional. A árvore do Beagle é retornada em caso de erro.
-- **method:** opcional. `get` por padrão. Use essa opção se você precisar de um método http.
-- **headers:** opcional. Use essa opção para passar headers adicionais para uma única requisição.
-- **shouldShowLoading:** opcional. Mostra se você deve usar ou não o loadingComponent. E usará a configuração global caso não for especificado.
-- **shouldShowError?:** opcional. Mostra se o componente da requisição falhou. E usará a configuração global caso não for especificado.
-- **loadingComponent:** opcional. O componente de carregamento a ser usado. E usará a configuração global caso não for especificado.
-- **errorComponent:** optional. O componente de erro a ser usado.
-
-  2. **anchor:** opcional. Id do node a ser anexado no resultado da view, por padrão use o node raiz. É usado para atualizar apenas uma branch.
-
-  3. **mode:** opcional. Como anexar o resultado da view direto do anchor, veja os quatro modos possíveis:
-
-- `replaceComponent`: default. Substitui a âncora com o resultado da requisição.
-- `replace`: substitui os filhos \(children\) da âncora com o resultado da requisição.
-- `prepend`: adiciona o resultado da requisição no começo da lista dos filhos da âncora.
-- `append`: adiciona o resultado da requisição no final da lista dos filhos.
-
-## Inscrevendo os eventos
-
-Você pode se inscrever a eventos no Beagle View. Há dois tipos de assinatura, a primeira escuta cada atualização da árvore \(`beagleView.subscribe`\) e a outra observa cada erro do processo de busca/renderização \(`beagleView.addErrorListener`\).
-
-Quando o `beagleView.subscribe` é chamado, você deve passar o único parâmetro, onde a função recebe a árvore renderizada atual. Veja o exemplo abaixo:
+`beagleView.onChange` deve ser chamado com um único parâmetro: a função listener. Essa função recebe a árvore atual e não deve retornar nada. Veja o exemplo abaixo:
 
 ```text
-const unsubscribeLogger = beagleView.subscribe((newTree) => {
+const unsubscribeLogger = beagleView.onChange((newTree) => {
   console.log('The tree was updated!')
   console.log(newTree)
 })
 ```
 
-Para remover o ouvinte, apenas chame a função retornada. No exemplo anterior `unsubscribeLogger()`.
+Para remover o listener, apenas chame a função retornada. No exemplo anterior `unsubscribeLogger()`.
 
-Ouvintes de erros são registrados de forma similar, a única diferença é que eles recebem uma lista de erros:
+## Destruindo a Beagle View
 
-```text
-const removeErrorListener = beagleView.addErrorListener((errors) => {
-  console.log('Oops! An error just happened!')
-  console.log(errors)
-})
-```
-
-Por padrão, o Beagle loga cada erro que foi renderizado/buscado no processo até o console. Uma vez que o erro do ouvinte é adicionado no Beagle View, o Beagle irá parar de de logar os erros por ele mesmo e usar o tratamento que você adicionou.
-
-## Destruindo o Beagle View
-
-Para evitar vazamento de memória, o Beagle View precisa ser destruído, se não for usado novamente. Se você estiver usando Angular ou React, não há necessidade de se preocupar com isso, porque será feito pelo framework. Se você estiver usando o Beagle Web, você deve chamar o `beagleView.destroy()` quando a remote view é removida da página.
+Para evitar que componentes já destruídos sejam chamados, a Beagle View precisa ser destruída se não for usada novamente. Se você estiver usando Angular ou React, não há necessidade de se preocupar com isso, porque será feito automaticamente pela biblioteca. Se você estiver usando o Beagle Web diretamente, sem usar o beagle-angular ou beagle-react, você deve chamar o `beagleView.destroy()` quando a a página for removida da memória.
 
 ## API
 
@@ -155,24 +112,10 @@ Você encontra abaixo todos os métodos do Beagle View e sua descrição:
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><strong>subscribe</strong>
+      <td style="text-align:left"><strong>onChange</strong>
       </td>
       <td style="text-align:left">fun&#xE7;&#xE3;o</td>
-      <td style="text-align:left">Recebe o ouvinte e retorna a fun&#xE7;&#xE3;o para cancelar a inscri&#xE7;&#xE3;o.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <strong>addErrorListener</strong>
-      </td>
-      <td style="text-align:left">fun&#xE7;&#xE3;o</td>
-      <td style="text-align:left"><strong>Subscreve aos erros. </strong>Recebe o ouvinte e retorna a fun&#xE7;&#xE3;o
-        para remov&#xEA;-lo.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><strong>fetch</strong>
-      </td>
-      <td style="text-align:left">fun&#xE7;&#xE3;o</td>
-      <td style="text-align:left">Busca a view do backend e a usa para a atualizar a &#xE1;rvore.</td>
+      <td style="text-align:left">Recebe o listener e retorna a fun&#xE7;&#xE3;o para cancelar a inscri&#xE7;&#xE3;o.</td>
     </tr>
     <tr>
       <td style="text-align:left"><strong>getRenderer</strong>
@@ -188,7 +131,7 @@ Você encontra abaixo todos os métodos do Beagle View e sua descrição:
       <td style="text-align:left">retorna a c&#xF3;pia da &#xE1;rvore renderizada.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><strong>getBeagleNavigator</strong>
+      <td style="text-align:left"><strong>getNavigator</strong>
       </td>
       <td style="text-align:left">fun&#xE7;&#xE3;o</td>
       <td style="text-align:left">retorna o navegador.</td>
