@@ -646,7 +646,7 @@ O `doTemplateRender` aceita os seguintes parâmetros:
 1. `templateManager: TemplateManager`: conjunto de templates. Temos mais de um template para que seja possível cobrir casos onde existem vários tipos de itens no array e cada tipo precisa de um template diferente. Este parâmetro é obrigatório.
 2. `anchor: string`: o id do nó na árvore atual que vai receber os novos elementos. Este parâmetro é obrigatório.
 3. `contexts: DataContext[][]`: matriz de contextos onde cada linha representa um item para renderizar de acordo com o templateManager. Este parâmetro é obrigatório.
-4. `componentManager?: ComponentManager`: opcional. Quando definido, o componente (nó) passa por essa função antes de ser renderizado (colocado na árvore). É uma chance para alterar propriedades como o id.
+4. `componentManager?: ComponentManager`: opcional. Quando definido, o template resultante passa por essa função antes de ser renderizado (colocado na árvore). É uma chance para alterar propriedades como os ids.
 - `mode?: TreeInsertionMode`: opcional. O modo como os nós devem ser inseridos. O valor padrão é `replace`. Veja na seção anterior todos os valores possíveis.
 
 Para ver exemplos de como esse método pode ser usado, veja a implementação do componente padrão ListView no nosso repositório no GitHub.

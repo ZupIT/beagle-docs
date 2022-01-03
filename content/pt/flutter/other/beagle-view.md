@@ -116,7 +116,7 @@ The `doTemplateRender` accepts the following named parameters:
 - `TemplateManager templateManager`: set of templates to use. It's more than one because different types of elements in the data set can have different templates. Required.
 - `String anchor`: the id of the node where the new branch should be placed. Required.
 - `List<List<BeagleDataContext>> contexts`: matrix of contexts where each line represents an item to be rendered according to the templateManager. Required.
-- `BeagleUIElement Function(BeagleUIElement, int)? componentManager`: optional. When set, the component goes through this function before being finally rendered. It's a chance for altering properties like the id.
+- `BeagleUIElement Function(BeagleUIElement, int)? componentManager`: optional. When set, the resulting template goes through this function before being finally rendered. It's a chance for altering properties like the ids.
 - `TreeUpdateMode? mode`: optional. The mode for inserting the new nodes. The default value is `replace`. Check all available options in the previous section.
 
 To see an example of how this method can be used, please, check the implementation of the widget `DynamicList` in the package `beagle_components`.
