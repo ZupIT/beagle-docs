@@ -33,15 +33,13 @@ Para configurar seu BFF manualmente, siga os seguintes passos:
 
 ### Passo 2: Configurar o `ObjectMapper` do Jackson
 
-Na configuração do projeto no backend é necessário realizar o setup do`ObjectMapper` do Jackson para o Beagle. Existem duas maneiras de fazer isso: 
+Na configuração do projeto no backend é necessário realizar o setup do`ObjectMapper` do Jackson para o Beagle:
 
-1. Você pode registrar o `BeagleModule` no seu`ObjectMapper`:
+* Você deve registrar o `BeagleModule` no seu`ObjectMapper`:
 
 ```kotlin
-val mapper = // however your ObjectMapper is initialized
+val mapper = // Adicione aqui o inicializador do seu `ObjectMapper`
 mapper.registerModule(BeagleModule)
-```kotlin
-val mapper = BeagleSerializationUtil.beagleObjectMapper()
 ```
 
 ### Passo 3: Configurar o `BeagleCacheHandler`
