@@ -5,13 +5,16 @@ description: "Here, you will find more about Analytics' functionalities."
 ---
 
 ---
+
 ## **Introduction**
 
 Analytics is a powerful yet simple to use functionality that Beagle offers, it gives developers control over the tracking of actions and navigation of their application to use in association with any analytics service they might want.
 
-In the next topics you will learn how to enable event tracking and configure it according to what you need. 
+In the next topics you will learn how to enable event tracking and configure it according to what you need.
 
-<a name="analytics-provider-anchor"></a>
+{{% alert color="success" %}}
+If you are using the old analytics implementation, please check our [migration guide](/article/migration-guide-analytics2/) to the implementation described on this page
+{{% /alert %}}
 
 ## Analytics provider
 
