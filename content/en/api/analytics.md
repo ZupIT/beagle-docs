@@ -77,7 +77,7 @@ export default createBeagleUIService<any>({
 ```kotlin
 @BeagleComponent
 class AnalyticsProviderImpl : AnalyticsProvider{
-    override fun getConfig(): AnalyticsConfig? = object : AnalyticsConfig{
+    override fun getConfig(): AnalyticsConfig = object : AnalyticsConfig{
         override var enableScreenAnalytics: Boolean? = true
 
         override var actions: Map<String, List<String>>? = hashMapOf(
@@ -105,7 +105,7 @@ import Beagle
 
 class MyAnalyticsProvider: AnalyticsProvider {
 
-    func getConfig() -> AnalyticsConfig? {
+    func getConfig() -> AnalyticsConfig {
         return AnalyticsConfig(
             enableScreenAnalytics: true,
             actions: [
@@ -259,12 +259,14 @@ Button(
     )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-
 ### **Analytics configuration payload**
+
 <a name="analytics-config-anchor"></a>
+
 Another way to use the Analytics functionality is with a configuration payload which contains the actions or navigation events to be tracked, this configuration will usually be requested and returned within the [``getConfig``]({{<ref "#analytics-createRecord-anchor">}}) method of the AnalyticsProvider interface.
 
 The library offers an API interface to guide us through the configuration, see below.

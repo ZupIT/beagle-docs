@@ -76,7 +76,7 @@ Crie uma classe com a anotação `@BeagleComponent` e implemente a interface `An
 ```kotlin
 @BeagleComponent
 class AnalyticsProviderImpl : AnalyticsProvider{
-    override fun getConfig(): AnalyticsConfig? = object : AnalyticsConfig{
+    override fun getConfig(): AnalyticsConfig = object : AnalyticsConfig{
         override var enableScreenAnalytics: Boolean? = true
 
         override var actions: Map<String, List<String>>? = hashMapOf(
@@ -102,7 +102,7 @@ import Beagle
 
 class MyAnalyticsProvider: AnalyticsProvider {
 
-    func getConfig() -> AnalyticsConfig? {
+    func getConfig() -> AnalyticsConfig {
         return AnalyticsConfig(
             enableScreenAnalytics: true,
             actions: [
