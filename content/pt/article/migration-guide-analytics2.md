@@ -138,7 +138,7 @@ Perceba que o *``ActionAnalyticsConfig``* está definido como *``.Enabled``*, ou
 O ActionAnalyticsConfig trás algumas propriedades consigo, e aqui listamos somente os *``atributos``* da ação da qual queremos informações, mas existe uma outra propriedade chamada *``AdditionalEntries``* que recebe informações extras, que podemos enviar com as demais informações no *``ActionAnalyticsConfig``*.
 
 {{% alert color="warning" %}}
-NOTA: Sobre a *``Screen``* (tela): Esses eventos são disparados automaticamente quando a tela aparece ou desaparece, e podem ser acessados a partir do objeto *``record``*
+Sobre a *``Screen``* (tela): Esses eventos são disparados automaticamente quando a tela aparece ou desaparece, e podem ser acessados a partir do objeto *``record``*
 {{% /alert %}}
 
 ## Migrando do Analytics 1 para o Analytics 2
@@ -209,7 +209,7 @@ additionalEntries=null,
 timestamp=1641235066016,
 screen=/fallback-screen)*
 
-**NOTA:** A `id` do componente (*``botão``*) que ativa a ação foi definida automaticamente pelo sistema, mas podemos definí-la a partir da função `setId` no backend
+**NOTA:** A `id` do componente (*``botão``*) que ativa a ação foi definida automaticamente pelo sistema, mas podemos definí-la a partir da função `setId` no backend. Para mais informações sobre o setId verifique a nossa [documentação](/android/tutorials/test/using-widget-id/)
 {{% /alert %}}
 
 4. Agora no frontend, basta apagar a classe customizada para o analytics 1 e implementar uma nova classe para o analytics 2.
