@@ -56,7 +56,7 @@ Button(
 )
 ```
 
-Once declared in the Backend, the events *(with the information listed in them)* could be retrieved in the Frontend using a custom class to handle them.
+Once declared in the Backend, the events *(with the information listed in them)* could be retrieved from the frontend using a custom class to handle them.
 
 * This class must extend itself from a Beagle inner class called *`Analytics`*. This class gathers event information into an object called *`event`*. You can check the Android signature for reference below:
 
