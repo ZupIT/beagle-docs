@@ -83,7 +83,7 @@ whenever an event occurs (such as a ``click``, or the appearance or disappearanc
 
 ## About Analytics 2.0
 
-Analytics 2.0 has improved the way events can be declared in the backend and retrieved in the frontend, and more. It is possible now to enable *`tracking`* for actions and properties without having to map events in the backend.
+Analytics 2.0 has highly improved the control over the tracking of Beagle Events. These can still be mapped in the backend and retrieved from frontend but now it also possible to enable *`tracking`* for actions and its properties directly from your app without even having to map them in the backend.
 
 {{% alert color="success" %}}
 Now, you just need to set up a custom class in the frontend, that extends from an inner Beagle class called *`AnalycticsProvider`*. When creating it, you must implement some functions that will receive the events mapping them. Information about thes events are added in a *``record``* object that can be sent to your analytics service, such as the *Google Analytics Service*, for example.
