@@ -13,7 +13,9 @@ Analytics is a powerful yet simple to use functionality that Beagle offers, it g
 In the next topics you will learn how to enable event tracking and configure it according to what you need.
 
 {{% alert color="success" %}}
-If you are using the old analytics implementation, please check our [migration guide](/article/migration-guide-analytics2/) to the implementation described on this page
+If you are using version 1.0 of the analytics API, we recommend you check our [migration guide](/article/migration-guide-analytics2/) to update your code to the latest version described on this page.
+
+Please, note that the analytics 1.0 version will be removed on Beagle 2.0
 {{% /alert %}}
 
 ## Analytics provider
