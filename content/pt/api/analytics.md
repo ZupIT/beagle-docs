@@ -12,6 +12,10 @@ Analytics é uma funcionalidade poderosa e simples que o Beagle oferece, ela dá
 
 Nos próximos tópicos, você aprenderá como habilitar o reporte de eventos e configurá-lo de acordo com as suas necessidades.
 
+{{% alert color="success" %}}
+Se você está utilizando a versão antiga do Beagle analytics, verifique o nosso [guia de migração](/article/migration-guide-analytics2/) para a versão mais atual, descrita nessa página
+{{% /alert %}}
+
 ## Analytics provider
 
 A primeira coisa que precisamos para habilitar a funcionalidade Analytics é criar um provedor que implemente a interface abaixo
@@ -72,7 +76,7 @@ Crie uma classe com a anotação `@BeagleComponent` e implemente a interface `An
 ```kotlin
 @BeagleComponent
 class AnalyticsProviderImpl : AnalyticsProvider{
-    override fun getConfig(): AnalyticsConfig? = object : AnalyticsConfig{
+    override fun getConfig(): AnalyticsConfig = object : AnalyticsConfig{
         override var enableScreenAnalytics: Boolean? = true
 
         override var actions: Map<String, List<String>>? = hashMapOf(
@@ -98,7 +102,7 @@ import Beagle
 
 class MyAnalyticsProvider: AnalyticsProvider {
 
-    func getConfig() -> AnalyticsConfig? {
+    func getConfig() -> AnalyticsConfig {
         return AnalyticsConfig(
             enableScreenAnalytics: true,
             actions: [
