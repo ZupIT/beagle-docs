@@ -19,7 +19,7 @@ In its first version, you would have to implement a `ClickEvent` or a `ScreenEve
 ```kotlin
 ClickEvent(
    category = "category-button",
-   label = "Label-button",
+   label = "label-button",
    value = "value-button"
 )
 ```
