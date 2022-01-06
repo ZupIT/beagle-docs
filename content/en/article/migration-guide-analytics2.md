@@ -14,7 +14,7 @@ Analytics is a Beagle feature that tags certain events such as clicking in a com
 
 ## About Analytics 1.0
 
-In it's first version, you would have to implement a `ClickEvent` or a `ScreenEvent` in the Backend, as in the example below:
+In its first version, you would have to implement a `ClickEvent` or a `ScreenEvent` in the Backend, as shown in the example below:
 
 ```kotlin
 ClickEvent(
