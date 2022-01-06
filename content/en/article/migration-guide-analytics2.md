@@ -30,7 +30,7 @@ ScreenEvent(
 )
 ```
 
-Each event had to be declared in it's own component on the backend, for example:
+Each event had to be declared in its own component defined on the backend, for example:
 
 {{% alert color="success" %}}
 The *`button`* component had a property called *`ClickAnalyticEvent`* that would receive a *`ClickEvent`*.
