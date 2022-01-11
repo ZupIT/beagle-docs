@@ -1,7 +1,7 @@
 name: BETA UPLOAD
 
 on:
-  push:
+  pull_request:
     branches: [main]
 
 jobs:
@@ -35,6 +35,4 @@ jobs:
           BASE_URL: https://docs-beta.usebeagle.io
 
       - name: S3 upload (latest version)
-        run: aws s3 sync --acl public-read --follow-symlinks public s3://$AWS_S3_BUCKET --exclude="c4model/*" --delete
-        env:
-          AWS_S3_BUCKET: ${{ secrets.AWS_DOCS_BETA_BUCKET_NAME }}
+        run: aws s3 sync --acl public-read --follow-symlinks public s3://${{ secrets.AWS_DOCS_BETA_BUCKET_NAME }} --exclude="c4model/*" --delete
