@@ -20,6 +20,10 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_DOCS_BETA }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_DOCS_BETA}}
           aws-region: sa-east-1
+          role-to-assume: ${{secrets.AWS_BETA_ROLE_TO_ASSUME}}
+          role-session-name: BetaBeagleDocsPublish
+          role-skip-session-tagging: true
+          role-duration-seconds: 1200
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
