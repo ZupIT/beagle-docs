@@ -2,7 +2,8 @@ name: BETA UPLOAD
 
 on:
   pull_request:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -12,7 +13,7 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
-          
+
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
@@ -23,7 +24,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.78.1'
+          hugo-version: "0.78.1"
           extended: true
 
       - name: Installing Dependencies
