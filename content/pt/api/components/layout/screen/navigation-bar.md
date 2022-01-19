@@ -26,7 +26,7 @@ Classe que define o item da `NavigationBar` que é composto por:
 | :------------ | :---------------------------------------------- | :---------: | :------------------------------------------------------------------- |
 | text          | String                                          |      ✓      | Título do item da barra.                                             |
 | image         | [**Image**]({{< ref path="/api/components/ui/image/" lang="pt" >}})  |             | Imagem do item da barra.                                             |
-| action        | [**Action**]({{< ref path="/api/actions" lang="pt" >}})              |      ✓      | Ação que deve ser realizada ao clicar no item da barra de navegação. |
+| actions        | List&lt;[Action]({{< ref path="/api/actions" lang="pt" >}})&gt;              |      ✓      | Lista de ações que devem ser realizadas ao clicar no item da barra de navegação. |
 | accessibility | [**Accessibility**]({{< ref path="/api/components/accessibility" lang="pt" >}}) |             | Opções de acessibilidade para o navigation item.                     |
 | id            | String                                          |             | Identificador do componente.                                         |
 
