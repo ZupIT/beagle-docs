@@ -97,7 +97,7 @@ dependencies {
 
 Insert Beagle's release version to replace ${beagle.version}`, this is necessary to put Beagle's version highlighted in a blue badge above, without the **v character**.
 
-For example: undefined-`ext.beagle.version = "1.10.0"`
+For example: `ext.beagle.version = "1.10.0"`
 
 {{% alert color="warning" %}}
 Remember to always check if you're using the latest version of Beagle. To see this information, you just have to pass your cursor above the version number. After that, sync your project.
@@ -105,6 +105,10 @@ Remember to always check if you're using the latest version of Beagle. To see th
 
 {{% alert color="warning" %}}
 Remember to use the same Beagle's version used on your BFF to avoid problems.
+{{% /alert %}}
+
+{{% alert color="warning" %}}
+If you get **multidex error** when building the project or adding dependencies [check the official documentation on how to enable it](https://developer.android.com/studio/build/multidex?hl=pt-br#mdex-gradle)
 {{% /alert %}}
 
 ## Configure Beagle
