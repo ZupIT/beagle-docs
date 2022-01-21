@@ -48,12 +48,12 @@ A class that defines an item for `Navigation's bar` and and it has the following
                "_beagleImagePath_":"local",
                "mobileId":"informationImage"
             },
-            "action":{
+            "onPress":[{
                "_beagleAction_":"beagle:alert",
                "title":"Screen",
                "message":"Some message",
                "labelOk":"OK"
-            }
+            }]
          }
       ]
    },
@@ -82,11 +82,11 @@ A class that defines an item for `Navigation's bar` and and it has the following
                 NavigationBarItem(
                     text = "",
                     image = Local.justMobile("informationImage"),
-                    action = Alert(
+                    onPress = [Alert(
                         title = "Screen",
                         message = "Some message",
                         labelOk = "OK"
-                    )
+                    )]
                 )
             )
         ),
