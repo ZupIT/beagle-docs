@@ -51,12 +51,12 @@ Para usar uma `NavigationBar` é necessário declarar dentro de uma `Screen`. Se
                "_beagleImagePath_":"local",
                "mobileId":"informationImage"
             },
-            "action":{
+            "onPress":[{
                "_beagleAction_":"beagle:alert",
                "title":"Screen",
                "message":"Some message",
                "labelOk":"OK"
-            }
+            }]
          }
       ]
    },
