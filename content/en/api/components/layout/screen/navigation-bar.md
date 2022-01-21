@@ -25,7 +25,7 @@ A class that defines an item for `Navigation's bar` and and it has the following
 | :------------ | :------------------------------------------- | :------- | :------------------------------------------------------------------ |
 | text          | String                                       |          | Title for the bar's item.                                           |
 | image         | [**Image**]({{< ref path="/api/components/ui/image/" lang="en" >}})  |          | Image for the bar's item.                                           |
-| action        | [**Action**]({{< ref path="/api/actions/" lang="en" >}})             |          | Action that can be done when you click on the navigations bar item. |
+| onPress        | List&lt;[Action]({{< ref path="/api/actions" lang="en" >}})&gt;             |          | List of actions that can be done when you click on the navigations bar item. |
 | accessibility | [**Accessibility**]({{< ref path="/api/components/accessibility" lang="en" >}}) |          | Accessibiliy's options for the navigation item.                     |
 | id            | String                                       |          | Component's identifier.                                             |
 
@@ -48,12 +48,12 @@ A class that defines an item for `Navigation's bar` and and it has the following
                "_beagleImagePath_":"local",
                "mobileId":"informationImage"
             },
-            "action":{
+            "onPress":[{
                "_beagleAction_":"beagle:alert",
                "title":"Screen",
                "message":"Some message",
                "labelOk":"OK"
-            }
+            }]
          }
       ]
    },
@@ -82,11 +82,11 @@ A class that defines an item for `Navigation's bar` and and it has the following
                 NavigationBarItem(
                     text = "",
                     image = Local.justMobile("informationImage"),
-                    action = Alert(
+                    onPress = [Alert(
                         title = "Screen",
                         message = "Some message",
                         labelOk = "OK"
-                    )
+                    )]
                 )
             )
         ),
