@@ -17,18 +17,22 @@ description: Nessa seção, você irá aprender a como criar um projeto android 
 
 ## **Criando um projeto Android**
 
-Para este exemplo prático, o Android Studio IDE será usado. Caso você ainda não o tenha instalado, basta acessar a [**a documentação do Android** ](https://developer.android.com/studio?hl=us-en) e seguir as instruções.
+Para este exemplo prático, o Android Studio IDE será usado. Caso você ainda não o tenha instalado, basta acessar a [**documentação oficial do Android** ](https://developer.android.com/studio?hl=us-en) e seguir as instruções.
 
 
 Depois da instalação, siga os passos abaixo:
 
 **Passo 1: Abra o Android Studio e clique em Start a new Android Studio project**
 
-![](/shared/newandroidproject.png)
+<p align="center">
+  <img src="/shared/newandroidproject.png" style="width:550px"/>
+</p>
 
 **Passo 2:** Selecione a opção **Empty Activity** e clique em **next**.
 
-{{< figure src="/shared/androidprojecttemplate.png">}}
+<p align="center">
+  <img src="/shared/androidprojecttemplate.png" style="width:550px"/>
+</p>
 
 **Passo 3️: Nesta página, você deve adicionar algumas informações importantes:**
 
@@ -38,13 +42,17 @@ Depois da instalação, siga os passos abaixo:
 - Defina o **package** e a **Save location** de acordo com sua preferência.
 - Clique em **Next**.
 
-{{< figure src="/shared/configureandroidproject.png">}}
+<p align="center">
+  <img src="/shared/configureandroidproject.png" style="width:550px"/>
+</p>
 
 **Passo 4️: Depois de terminar as configurações, o Android levará um tempo pra construir o projeto porque ele precisa sincronizar todas as dependências iniciais para inicializar o projeto.**
 
 Quando a inicialização for concluída, você verá a página abaixo:
 
-{{< figure src="/shared/mainactivity.png">}}
+<p align="center">
+  <img src="/shared/mainactivity.png" style="width:750px"/>
+</p>
 
 ## **Adicionando o Beagle no seu projeto**
 
@@ -97,14 +105,19 @@ dependencies {
 
 Insira a versão de release do Beagle no lugar de `${beagle.version}`, ou seja, coloque a versão do Beagle destacada em azul da badge acima, mas sem o **caracter v** que antecede os números de versão.
 
-Por exemplo: undefined-`ext.beagle.version = "1.10.0"`
+Por exemplo: `ext.beagle.version = "1.10.0"`
 
 {{% alert color="warning" %}}
 Lembre de sempre verificar se você está usando a versão mais recente do Beagle. Para saber disso, basta passar o mouse por cima do número da versão. Depois disso, sincronize com sua máquina.
 {{% /alert %}}
+
 {{%alert color="warning"%}}
-Use a mesma versão do Beagle utilizada no seu BFF para evitar possíveis problemas.
+É recomendado o uso da mesma versão do Beagle utilizada no seu BFF para evitar possíveis incompatibilidades de funcionalidades.
 {{%/alert%}}
+
+{{% alert color="warning" %}}
+Se você receber a mensagem **'multidex error'** quando estiver compilando o projeto ou adicionando dependências [veja na documentação oficial do Android como solucionar isso](https://developer.android.com/studio/build/multidex?hl=pt-br#mdex-gradle)
+{{% /alert %}}
 
 
 ## **Configurando o Beagle**
@@ -144,7 +157,9 @@ Cuidado ao fazer a configuração das classes, porque se você anotá-las com `B
 
 Após ter criado a classe mostrada no passo anterior e anotado com o @BeagleComponent, basta você buildar seu projeto (para isso, acesse o menu Build > Make Project) que o Beagle irá criar automaticamente uma classe de `BeagleSetup` class, como mostra a figura abaixo:
 
-{{< figure src="/shared/beaglesetup.png">}}
+<p align="center">
+  <img src="/shared/beaglesetup.png" style="width:550px"/>
+</p>
 
 **Passo 3: Criar a classe Application**
 
