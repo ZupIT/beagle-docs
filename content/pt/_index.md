@@ -256,7 +256,7 @@ O Beagle possui diferentes bibliotecas/frameworks para cada plataforma suportada
 
 - **Android:** [![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android)](https://mvnrepository.com/artifact/br.com.zup.beagle/android)
 - **iOS:** [![badge](https://img.shields.io/cocoapods/v/Beagle)](https://cocoapods.org/pods/Beagle)
-- **Flutter:** *Em desenvolvimento, confira mais informações [nesta pasta](https://github.com/ZupIT/beagle/tree/master/flutter)*
+- **Flutter:** [![badge](https://img.shields.io/pub/v/beagle)](https://pub.dev/packages/beagle)
 - **SwiftUI and Compose:** *vamos tentar suportá-los no futuro*
 
 **Web:**

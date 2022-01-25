@@ -13,7 +13,7 @@ description: >-
 Para exibir uma tela **`full server-driven`**, você deve usar o método `this.newServerDrivenIntent<BeagleActivity>()` 
 - `this` é o contexto da sua tela atual.
 
-Este método requer apenas o parâmetro `ScreenRequest`
+Este método requer apenas o parâmetro `RequestData`
 
 Você deve seguir o comando abaixo:
 
@@ -24,12 +24,12 @@ No exemplo abaixo, chame somente de &lt;BeagleActivity&gt;. Esse nome é você q
 {{% /alert %}}
 
 ```kotlin
-val intent = this.newServerDrivenIntent<BeagleActivity>(ScreenRequest("/screen"))
+val intent = this.newServerDrivenIntent<BeagleActivity>(RequestData("/screen"))
 startActivity(intent)
 ```
 
 {{% alert color="info" %}}
-Para testar o comando acima, o componente `ScreenRequest` requer somente uma URL que traga o JSON com as informações da tela server-driven que você quer exibir.
+Para testar o comando acima, o componente `RequestData` requer somente uma URL que traga o JSON com as informações da tela server-driven que você quer exibir.
 
 Neste caso, siga estes passos:
 
@@ -37,17 +37,17 @@ Neste caso, siga estes passos:
 - Veja como fica o código abaixo.
 
 ```text
-val intent = this.newServerDrivenIntent<BeagleActivity>(ScreenRequest("https://run.mocky.io/v3/73322be2-96bf-467b-b6dc-e3fff179852c"))
+val intent = this.newServerDrivenIntent<BeagleActivity>(RequestData("https://run.mocky.io/v3/73322be2-96bf-467b-b6dc-e3fff179852c"))
 startActivity(intent)
 ```
 
 {{% /alert %}}
 
-### A classe Screen Request.
+### A classe Request Data
 
-A `ScreenRequest` é uma classe interna do Beagle utilizada para solicitar qual tela você deseja exibir. Você deve listar apenas o atributo URL referente a página que deseja carregar vinda do BFF.
+A `RequestData` é uma classe interna do Beagle utilizada para solicitar qual tela você deseja exibir. Você deve listar apenas o atributo URL referente a página que deseja carregar vinda do BFF.
 
-No entanto, esse elemento possui outros atributos, que podem ser utilizados na transição e entre telas. Para saber mais sobre essa classe, veja em [**Screen Request**]({{< ref path="/api/screen-request" lang="pt" >}})
+No entanto, esse elemento possui outros atributos, que podem ser utilizados na transição e entre telas. Para saber mais sobre essa classe, veja em [**Request Data**]({{< ref path="/api/request-data" lang="pt" >}})
 
 ## Exibindo uma tela a partir de um JSON
 

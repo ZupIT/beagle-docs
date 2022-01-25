@@ -1,0 +1,43 @@
+name: BETA UPLOAD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_DOCS_BETA }}
+          aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY_DOCS_BETA}}
+          aws-region: sa-east-1
+          role-to-assume: ${{secrets.AWS_BETA_ROLE_TO_ASSUME}}
+          role-session-name: BetaBeagleDocsPublish
+          role-skip-session-tagging: true
+          role-duration-seconds: 1200
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.78.1"
+          extended: true
+
+      - name: Installing Dependencies
+        run: yarn
+
+      - name: Build
+        run: yarn build-playground && hugo -D --minify -b $BASE_URL
+        env:
+          BASE_URL: https://docs-beta.usebeagle.io
+
+      - name: S3 upload (latest version)
+        run: aws s3 sync --follow-symlinks public s3://${{secrets.AWS_DOCS_BETA_BUCKET_NAME}} --exclude="c4model/*" --delete

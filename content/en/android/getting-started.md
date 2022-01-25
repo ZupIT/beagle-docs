@@ -6,7 +6,7 @@ description: In this section, you'll learn how to create an Android project with
 
 **Topics covered**
 - Create an Android project from scratch
-- Add Beagle in your project (can be in an existing project)
+- Add Beagle to your project (It can be in an existing project)
 - Configure Beagle
 - Possible customizations
 
@@ -16,6 +16,10 @@ description: In this section, you'll learn how to create an Android project with
  - JDK 11+ language
  - Kotlin 1.5+
 
+{{% alert color="warning" %}}
+Note: If you are installing beagle to an existing project you can skip the first steps.
+{{% /alert %}}
+
 ## Starting an Android project
 
 For this example, we'll use Android Studio IDE. If you haven't installed it yet, just access the [**Android documentation** ](https://developer.android.com/studio?hl=us-en) and follow the instructions.   
@@ -24,11 +28,15 @@ After you have installed Android Studio, follow the steps below:
 
 **Step 1: Open Android Studio and click on Start a new Android Studio project:**
 
-{{< figure src="/shared/newandroidproject.png">}}
+<p align="center">
+  <img src="/shared/newandroidproject.png" style="width:550px"/>
+</p>
 
 **Step 2: Choose the Empty Activity option and click on next:**
 
-{{< figure src="/shared/androidprojecttemplate.png">}}
+<p align="center">
+  <img src="/shared/androidprojecttemplate.png" style="width:550px"/>
+</p>
 
 **Step 3️: On this page, there is some important information:**
 
@@ -38,14 +46,17 @@ After you have installed Android Studio, follow the steps below:
 * Define a **package** and a **Save location** according to your preference. 
 * Click on **Next**.
 
-{{< figure src="/shared/configureandroidproject.png">}}
-
+<p align="center">
+  <img src="/shared/configureandroidproject.png" style="width:550px"/>
+</p>
 
 **Step 4️: After the previous configurations, Android will take some time to build the project since it will synchronize all dependencies to initialize this project.**
 
 Once the initialization is done, you will see this page: 
 
-{{< figure src="/shared/mainactivity.png">}}
+<p align="center">
+  <img src="/shared/mainactivity.png" style="width:750px"/>
+</p>
 
 ##  Add Beagle on your project 
 
@@ -97,14 +108,18 @@ dependencies {
 
 Insert Beagle's release version to replace ${beagle.version}`, this is necessary to put Beagle's version highlighted in a blue badge above, without the **v character**.
 
-For example: undefined-`ext.beagle.version = "1.10.0"`
+For example: `ext.beagle.version = "1.10.0"`
 
 {{% alert color="warning" %}}
 Remember to always check if you're using the latest version of Beagle. To see this information, you just have to pass your cursor above the version number. After that, sync your project.
 {{% /alert %}}
 
 {{% alert color="warning" %}}
-Remember to use the same Beagle's version used on your BFF to avoid problems.
+It is advisable to use the same Beagle's version used on your BFF to avoid incompatibility of features.
+{{% /alert %}}
+
+{{% alert color="warning" %}}
+If you get **multidex error** when building the project or adding dependencies [check the official documentation on how to enable it](https://developer.android.com/studio/build/multidex?hl=pt-br#mdex-gradle)
 {{% /alert %}}
 
 ## Configure Beagle
@@ -137,14 +152,16 @@ class AppBeagleConfig : BeagleConfig {
 | cache	| Cache	| Object responsible for managing the cache of Beagle requests. |
 
 {{% alert color="warning" %}}
-Make sure to note your class configuration with `BeagleComponent`, because Beagle expect them to have empty constructors.
+Make sure to annotate your class configuration with `BeagleComponent`, because Beagle expect them to have empty constructors.
 {{% /alert %}}
 
 **Step 2: Create a BeagleSetup**
 
-After you have created the class shown in the previous step and annotated with @BeagleComponent, just build your project (access the menu Build > Make Project) and Beagle will automatically create a BeagleSetup class, see the image below:
+**Build your project** from the menu (```Build > Make Project```). Once done, Beagle will have automatically created a BeagleSetup class, see the image below:
 
-{{< figure src="/shared/beaglesetup.png">}}
+<p align="center">
+  <img src="/shared/beaglesetup.png" style="width:550px"/>
+</p>
 
 **Step 3: Create the Application class**
 

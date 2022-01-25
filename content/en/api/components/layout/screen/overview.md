@@ -18,7 +18,6 @@ Your screen has attributes and components that can be used and configured. On th
 | navigation bar         | [**Navigation Bar**]({{< ref path="/api/components/layout/screen/navigation-bar" lang="en" >}})     |          | Allows action/navigation's bar on the screen.                                                         |
 | child                  | [**Server-Driven Component**]({{< ref path="/api/components/" lang="en" >}})      | ✓        | Define screen's elements. It can be any visual component that extends to`ServerDrivenComponent`.      |
 | style                  | [**Style**]({{< ref path="/api/components/widget#style-attributes" lang="en" >}})            |          | Provide visual customization options to the `screen.`                                                 |
-| screen analytics event | [**Screen Event**]({{< ref path="/api/analytics#screenview-option" lang="en" >}}) |          | Configure analytics elements to your screen.                                                          |
 | context                | [**ContextData**]({{< ref path="/api/context/" lang="en" >}})                     |          | Screen's context.                                                                                     |
 
 ## How to use it?

@@ -102,6 +102,7 @@ playground_url = "https://playground.usebeagle.io/#"
 logoName = "icons/beagle.svg"
 search_label = "Looking for something?"
 faq_path = "/faq"
+gtm_id="GTM-5DFG5JL"
 current_version = ""
 
 edit_page = "Edit this page"
