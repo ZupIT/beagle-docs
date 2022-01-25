@@ -39,12 +39,12 @@ A sua tela possui atributos e componentes que podem ser usados e configurados. N
         "_beagleImagePath_" : "local",
         "mobileId" : "informationImage"
       },
-      "action" : {
+      "onPress" : [{
         "_beagleAction_" : "beagle:alert",
         "title" : "Screen",
         "message" : "Some message",
         "labelOk" : "OK"
-      }
+      }]
     } ]
   },
   "child" : {
@@ -71,11 +71,11 @@ Screen(
                 NavigationBarItem(
                     text = "",
                     image = Local.justMobile("informationImage"),
-                    action = Alert(
+                    onPress = listOf(Alert(
                         title = "Screen",
                         message = "Some message",
                         labelOk = "OK"
-                    )
+                    ))
                 )
             )
         ),

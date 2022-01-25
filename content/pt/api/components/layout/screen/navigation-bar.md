@@ -85,12 +85,12 @@ Para usar uma `NavigationBar` é necessário declarar dentro de uma `Screen`. Se
                 NavigationBarItem(
                     text = "",
                     image = Local.justMobile("informationImage"),
-                    onPress = [Alert(
+                    onPress = listOf(Alert(
                         title = "Screen",
                         message = "Some message",
                         labelOk = "OK"
-                    )
-                )]
+                    ))
+                )
             )
         ),
         child = Container(
