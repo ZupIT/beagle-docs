@@ -80,7 +80,7 @@ final beagleService = BeagleService(
 For creating your own actions, check the [actions article]({{< ref path="/flutter/extensions/actions" lang="en" >}}).
 
 ## 4. operations
-Beagle has a set of simple functions called operations. These functions can be called from inside an expression, in the JSON. e.g. `@{sum(1, 2)}` will result in `3`. [See here]({{< ref path="/api/context/operations/overview" lang="en" >}}) a list of all available operations.
+Beagle has a set of simple functions called operations. These functions can be called from inside an expression, in the JSON. e.g. `@{sum(1, 2)}` will result in `3`. [See here]({{< ref path="/api/operations/overview" lang="en" >}}) a list of all available operations.
 
 The operations in the BeagleService can be used to extend this set of functions. It's a map of strings to functions, where the key is the name of the operation and the value is the function itself. To know more, check this [article]({{< ref path="/flutter/extensions/operations" lang="en" >}}).
 

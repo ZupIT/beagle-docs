@@ -72,19 +72,11 @@ class BeagleSampleApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
     return Scaffold(
       body: Center(
         child: ElevatedButton(
           onPressed: () => openBeagleScreen(route: RemoteView('/components'), context: context),
           child: Text('Start beagle flow'),
-=======
-    return MaterialApp(
-      title: 'Beagle Sample',
-      home: Scaffold(
-        body: BeagleWidget(
-          ScreenRequest: BeagleScreenRequest('welcome'),
->>>>>>> 4839e5bfbe2218ff3ffeedac88f2dc22342615db
         ),
       ),
     );
