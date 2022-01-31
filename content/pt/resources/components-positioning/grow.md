@@ -32,7 +32,7 @@ private fun screen() :Widget{
     ).setFlex {
         grow = 0.0
     }.setStyle {
-        backgroundColor = "#000000"
+        backgroundColor = constant("#000000")
     }
 
     }
@@ -84,7 +84,7 @@ private fun screen() :Widget{
     ).setFlex {
         grow = 1.0
     }.setStyle {
-        backgroundColor = "#000000"
+        backgroundColor = constant("#000000")
     }
 
     }

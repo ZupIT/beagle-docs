@@ -61,7 +61,7 @@ fun screen() = Screen(
                     children = listOf(
                         Text(removeIndex<Int>(expressionOf("@{numbersArray}"), constant(2)).toBindString())
                     )
-                ).setStyle { backgroundColor = "#00FF00" }
+                ).setStyle { backgroundColor = constant("#00FF00") }
             )
         )
     )

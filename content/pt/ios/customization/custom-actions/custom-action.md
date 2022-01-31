@@ -68,43 +68,34 @@ struct CustomAction: Action {
 }
 ```
 
+{{% alert color="warning" %}}
+Ultilize a anotação `@AutoCodable` nas propriedades do tipo `Action` ou `ServerDrivenComponent` (sejam elas listas ou opcionais) caso sua acão receba algum componente ou acão, para que o swift consiga sintetizar o inicializador `init(from decoder: Decoder)`.
+
+Em termos técnicos, o `AutoCodable` é um property wrapper que implementa a lógica de serialização e deserialização polimórfica dos tipos genéricos do Beagle, dessa forma, não precisamos implementar o `init(from decoder: Decoder)`, uma vez que, agora o Swift consegue sintetiza-lo, já que todas as propriedades do nosso widget conformam com Codable.
+{{% /alert %}}
+
 ### **Passo 3: Como Registrar uma ação.**
 
-É obrigatório registrar ações no Beagle. E para fazer isso, acesse dentro do arquivo de configuração do Beagle e utilize o dependencies para registrar.
+Por fim precisamos registrar nossa ação customizado no Beagle.
+
+Logo, para **registrá-la no Beagle.** basta chamar a função de registro do Coder (Dependência publica do Beagle) durante o processo de configuração do ambiente do Beagle.
 
 {{% alert color="info" %}} Para saber mais sobre o dependencies. [Beagle Dependencies]({{< ref path="" lang="pt" >}}). {{% /alert %}}
 
-O método register possui dois construtores, o primeiro passando apenas o `action` e segundo recebendo o `action` e `named`.
+O método `register` pode ser chamado passando somente o tipo do componente, ou também um nome customizado para identifica-lo.
 
-**action:** Struct da action.
+**action:** Tipo da action.
 
-**named:** Nome da action, não obrigatório. Utiliza-se, por exemplo, quando o nome da action registrada é  diferente da criada no backend. Ele será usado na deserializações para encontrar a ação.
+**named:** Parâmetro para setar o nome da ação. Não é obrigatório passar. Um caso é quando o nome do componente é registrado diferente com que você criou no backend. Ele será usado na deserialização para encontrar seu componente.
 
 Veja abaixo as formas que você pode registrar:
 
 **- A primeira forma:**
 ```swift
-dependencies.decoder.register(action: CustomAction.self)
+coder.register(type: CustomAction.self)
 ```
 
 **- A segunda forma:** 
 ```swift 
-dependencies.decoder.register(action: CustomAction.self, named: "CustomAction")
-```
-
-Após registrar o seu componente de customização, você pode usá-lo via server-driven.
-
-### **Passo 4: Como usar um ação?**
-
-Para usar as ações do Beagle, o componente que você for utilizar precisa de um parâmetro do tipo `Action`.
-
-Veja abaixo um exemplo de como usar em um botão que executa a ação customizada no evento de clique:
-
-```swift
-Button(
-    text: "do request",
-    onPress: [
-        CustomAction( mensagem: "Eu sou um Alet!")
-    ]
-)
+coder.register(type: CustomAction.self, named: "CustomAction")
 ```

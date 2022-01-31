@@ -10,9 +10,13 @@ description: Descrição da ação PopStack e seus atributos
 
 Remove a pilha de exibição atual.
 
-## Como usar?
+A sua estrutura é representada como mostrado abaixo:
 
-Para usá-lo basta chamar o `PopStack()` sem necessidade de nenhum parâmetro.
+| **Atributo** | **Tipo**                                      | Obrigatório | **Definição**      |
+| :----------- | :-------------------------------------------- | :---------: | :----------------- |
+| navigationContext | ​[NavigationContext]({{< ref path="/api/actions/navigate/navigationcontext" lang="pt" >}})​ | | Contexto salvo na tela destino. |
+
+## Como usar?
 
 No exemplo abaixo, temos uma tela vinda do BFF com um botão que ao clicar nele, fecha a activity atual. 
 

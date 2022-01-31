@@ -330,5 +330,5 @@ Existem 2 tipos de `AnalyticsRecord`: *Screen* para eventos de navegação e *Ac
 | :--------------------| :------------------------------------------------------------- | :--------------- |
 | **type**             | O tipo do registro, neste caso 'screen' | `string`          |
 | **platform**         | A plataforma a partir da qual o evento foi gerado, por exemplo: WEB Angular, Android, iOS      |  `string`   |
-| **route**     | A rota ou identificador de tela  | `string`          |
+| **screen**     | A rota ou identificador de tela  | `string`          |
 | **timestamp**        | A representação unix da hora em que o registro foi criado    |  [`unix time`](https://www.unixtimestamp.com/)   |

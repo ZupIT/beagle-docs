@@ -1,26 +1,15 @@
 ---
-title: Visão Geral
+title: Overview
 weight: 1
-description: Nessa seção, você irá aprender a como criar um projeto com Flutter e configurá-lo para utilizar o Beagle
+description: In this section, you will learn how to create a project with Flutter and configure it to use Beagle
 ---
 
 ---
-## Introdução
-Esta é a bibilioteca responsável por renderizar um JSON do Beagle em Flutter. 
+## Introduction
+This is the library responsible for rendering a Beagle JSON (payload) in Flutter.
 
-{{% alert color="info" %}}
-Está em estágio alpha, trabalho em andamento, e o time do Beagle quer sua ajuda para fazer melhorias para a API e implementar as funcionalidades que faltam. Confira 
-[mais informações]({{< ref path="/flutter/customization/development" lang="pt" >}}) e o atual estado de desenvolvimento.
-{{% /alert %}}
+## Versioning
+The versioning of Beagle Flutter follows the entire Beagle platform. i.e. Even though this is the first major release, we're calling it v2.0.
 
-## Versionamento
-Toda versão alpha e beta do Beagle Flutter vai seguir o padrão `0.x.y`, onde `x` é a versão minor em que o Beagle Web
-está e o `y` é toda subsequente versão onde `x` é o mesmo.
-
-No número de versão, `x` se refere a versão do Beagle Web, porque o Beagle Flutter usa essa biblioteca em seu núcleo.
-
-## Compatibilidade com null safety
-Por agora, não damos suporte ao null safety para as versões alpha. Vai ser disponibilizado em breve.
-
-👉 Ir para
-[**Primeiros passos** ]({{< ref path="/flutter/getting-started.md" lang="pt" >}}) para instalar o Beagle em seu projeto Flutter.
+👉 Go to
+[**First steps** ]({{< ref path="/flutter/getting-started.md" lang="en" >}}) to install Beagle in your Flutter application.

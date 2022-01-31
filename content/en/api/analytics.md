@@ -329,5 +329,5 @@ There are two types of AnalyticsRecord, ScreenAnalyticsRecord for navigation eve
 | :--------------------| :------------------------------------------------------------- | :--------------- |
 | **type**             | The type of the analytics record 'screen' | ``string``          |
 | **platform**         | The platform from which the event was triggered, e.g: WEB Angular, Android, iOS      | ``string``   |
-| **route**     | The route or screen identifier  | ``string``          |
+| **screen**     | The route or screen identifier  | ``string``          |
 | **timestamp**        | The unix representation of the time when the record was created    | [``unix time``](https://www.unixtimestamp.com/index.php)    |

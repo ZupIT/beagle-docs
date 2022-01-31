@@ -131,14 +131,10 @@ export default App;
 ```
 
 1. `<BeagleProvider>`: Responsável por prover para nossa aplicação o `beagle-service` criado no passo anterior contendo as configurações iniciais. Este é especificado na propriedade `value`;
-2. `<BeagleRemoteView>`: Responsável por renderizar o layout definido pelo JSON especificado pela propriedade `route`.
+2. `<BeagleRemoteView>`: Responsável por renderizar o layout definido pelo JSON especificado pela propriedade `route`. Veja [este artigo]({{< ref path="/web/commons/beagle-remote-view" lang="pt" >}}) para mais detalhes sobre o `BeagleRemoteView`.
 
 {{% alert color="info" %}}
 Note aqui que adicionamos **' /welcome '** pois esse valor será associado ao `baseUrl` definido no arquivo `beagle-service.ts`
-{{% /alert %}}
-
-{{% alert color="warning" %}}
-`route` no `BeagleRemoteView` só é válido para as versões 1.3 e superior. Para versões anteriores, por favor, use `path.`
 {{% /alert %}}
 
 ## Exemplo prático
