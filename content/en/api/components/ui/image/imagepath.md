@@ -18,8 +18,8 @@ It will reference a image that is on locais.JSONKotlin DSL assets. Your structur
 
 | **Attribute** | **Type** | **Definition**                                                         |
 | :------------ | :------- | :--------------------------------------------------------------------- |
-| url        | String   | Absolute or relative image path to be downloaded.                      |
-| mobileId      | String   | Image's identifier that was previously registered on mobile platforms. |
+| url        | String or [**Binding**]({{< ref path="/api/context/#bindings" lang="en" >}}) | Absolute or relative image path to be downloaded.                      |
+| mobileId      | String or [**Binding**]({{< ref path="/api/context/#bindings" lang="en" >}}) | Image's identifier that was previously registered on mobile platforms. |
 
 It will refer an image that it is already in the local assets.
 
@@ -60,7 +60,7 @@ It will reference an image that its hosted on another host or it's related to it
 
 | **Attribute** | **Type**                                                                                 | Required | **Definition**                                                                                        |
 | :------------ | :--------------------------------------------------------------------------------------- | :------- | :---------------------------------------------------------------------------------------------------- |
-| url     | String                                                                                   | ✓        | Absolute or relative image path to be downloaded.                                                     |
+| url     | String or [**Binding**]({{< ref path="/api/context/#bindings" lang="en" >}})              | ✓        | Absolute or relative image path to be downloaded.                                                     |
 | placeholder   | **​**[**ImagePath.Local**]({{< ref path="/api/components/ui/image/imagepath#imagepathlocal" lang="en" >}})**​** |          | It's possible to pass a local asset on the app that will be shown meanwhile the remote URL is loaded. |
 
 It will refer to an image that is hosted in another host or a relative one in the own server.
