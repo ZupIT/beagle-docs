@@ -18,8 +18,8 @@ A sua estrutura é representada como mostrado abaixo:
 
 | **Atributo** | **Tipo** | **Definição** |
 | :--- | :--- | :--- |
-| url | String | Caminho absoluto ou relativo da imagem a ser baixada. |
-| mobileId | String | Identificador da imagem que foi previamente cadastrada nas plataformas mobile. |
+| url | String ou [**Binding**]({{< ref path="/api/context#binding" lang="pt" >}}) | Caminho absoluto ou relativo da imagem a ser baixada. |
+| mobileId | String ou [**Binding**]({{< ref path="/api/context#binding" lang="pt" >}}) | Identificador da imagem que foi previamente cadastrada nas plataformas mobile. |
 
 Irá referenciar uma imagem que já está nos assets locais.
 
