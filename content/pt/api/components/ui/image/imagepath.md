@@ -56,7 +56,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 | **Atributos** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :--- | :--- |
-| url | String |     ✓ | Caminho absoluto ou relativo da imagem a ser baixada. |
+| url | String ou [**Binding**]({{< ref path="/api/context#binding" lang="pt" >}}) |     ✓ | Caminho absoluto ou relativo da imagem a ser baixada. |
 | placeholder | [**ImagePath.Local**](#imagepathlocal) |  | É possível passar um asset local no aplicativo que será mostrado enquanto a URL remota é carregada. |
 
 Irá referenciar uma imagem que esteja hospedada em outro host ou relativo no próprio server.
