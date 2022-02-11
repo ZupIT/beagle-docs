@@ -15,6 +15,7 @@ A sua estrutura é representada como mostrado abaixo:
 | **Atributo** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :---: | :--- |
 | route | ​String | ✓ | Rota de alguma tela que está na pilha. |
+| navigationContext | ​[NavigationContext]({{< ref path="/api/actions/navigate/navigationcontext" lang="pt" >}})​ | | Contexto salvo na tela destino. |
 
 ## Como usar?
 

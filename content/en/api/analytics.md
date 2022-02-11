@@ -5,13 +5,18 @@ description: "Here, you will find more about Analytics' functionalities."
 ---
 
 ---
+
 ## **Introduction**
 
 Analytics is a powerful yet simple to use functionality that Beagle offers, it gives developers control over the tracking of actions and navigation of their application to use in association with any analytics service they might want.
 
-In the next topics you will learn how to enable event tracking and configure it according to what you need. 
+In the next topics you will learn how to enable event tracking and configure it according to what you need.
 
-<a name="analytics-provider-anchor"></a>
+{{% alert color="success" %}}
+If you are using version 1.0 of the analytics API, we recommend you check our [migration guide](/article/migration-guide-analytics2/) to update your code to the latest version described on this page.
+
+Please, note that the analytics 1.0 version will be removed on Beagle 2.0
+{{% /alert %}}
 
 ## Analytics provider
 
@@ -74,7 +79,7 @@ export default createBeagleUIService<any>({
 ```kotlin
 @BeagleComponent
 class AnalyticsProviderImpl : AnalyticsProvider{
-    override fun getConfig(): AnalyticsConfig? = object : AnalyticsConfig{
+    override fun getConfig(): AnalyticsConfig = object : AnalyticsConfig{
         override var enableScreenAnalytics: Boolean? = true
 
         override var actions: Map<String, List<String>>? = hashMapOf(
@@ -102,7 +107,7 @@ import Beagle
 
 class MyAnalyticsProvider: AnalyticsProvider {
 
-    func getConfig() -> AnalyticsConfig? {
+    func getConfig() -> AnalyticsConfig {
         return AnalyticsConfig(
             enableScreenAnalytics: true,
             actions: [
@@ -256,12 +261,14 @@ Button(
     )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-
 ### **Analytics configuration payload**
+
 <a name="analytics-config-anchor"></a>
+
 Another way to use the Analytics functionality is with a configuration payload which contains the actions or navigation events to be tracked, this configuration will usually be requested and returned within the [``getConfig``]({{<ref "#analytics-createRecord-anchor">}}) method of the AnalyticsProvider interface.
 
 The library offers an API interface to guide us through the configuration, see below.
@@ -322,5 +329,5 @@ There are two types of AnalyticsRecord, ScreenAnalyticsRecord for navigation eve
 | :--------------------| :------------------------------------------------------------- | :--------------- |
 | **type**             | The type of the analytics record 'screen' | ``string``          |
 | **platform**         | The platform from which the event was triggered, e.g: WEB Angular, Android, iOS      | ``string``   |
-| **route**     | The route or screen identifier  | ``string``          |
+| **screen**     | The route or screen identifier  | ``string``          |
 | **timestamp**        | The unix representation of the time when the record was created    | [``unix time``](https://www.unixtimestamp.com/index.php)    |

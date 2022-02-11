@@ -10,9 +10,15 @@ description: Descrição da ação PopView e seus atributos
 
 Remove a tela de exibição atual.
 
+A sua estrutura é representada como mostrado abaixo:
+
+| **Atributo** | **Tipo**                                      | Obrigatório | **Definição**      |
+| :----------- | :-------------------------------------------- | :---------: | :----------------- |
+| navigationContext | ​[NavigationContext]({{< ref path="/api/actions/navigate/navigationcontext" lang="pt" >}})​ | | Contexto salvo na tela destino. |
+
 ## Como usar?
 
-Para remover a tela atual basta chamar o método `PopView()` sem a necessidade de passar nenhum parâmetro. No exemplo abaixo, temos uma tela vinda do BFF com um botão, que ao clicar nele, remove a view atual.
+No exemplo abaixo, temos uma tela vinda do BFF com um botão, que ao clicar nele, remove a view atual.
 
 Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e chame esse endpoint no frontend.
 

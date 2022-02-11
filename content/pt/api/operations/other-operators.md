@@ -52,7 +52,7 @@ fun screen() = Screen(child =
             Text(text = "Array [0, 1, 2, 3, 4] has size: "),
             Text(
                 expressionOf("@{length(numbersArray)}")
-            ).setStyle{ backgroundColor = "#00FF00" }
+            ).setStyle{ backgroundColor = constant("#00FF00") }
         )
     )
 )

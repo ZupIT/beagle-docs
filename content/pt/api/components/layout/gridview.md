@@ -22,11 +22,12 @@ A sua estrutura é representada como mostrado abaixo:
 | onInit             | List&lt;[Action]({{< ref path="/api/actions" lang="pt" >}})&gt;                  |             | Lista de ações a serem executadas assim que o componente é exibido.                                                                 |
 | dataSource         | [Bind]({{< ref path="/api/context#binding" lang="pt" >}})&lt;List&lt;Any&gt;&gt; |      ✓      | Expressão que aponta para uma lista de valores usados para popular o componete.                                                     |
 | templates    |List&lt;[ServerDrivenComponent]({{< ref path="/api/components" lang="pt" >}})&gt; |      ✓     | Representa um array de template, onde cada template corresponde a uma celula na lista através de um `ServerDrivenComponent`.                                                              |
-| isScrollIndicatorVisible | Bool | | Define se a barra de scroll é visivel.|
+| isScrollIndicatorVisible | Bool | | Define se a barra de scroll é visível.|
 | onScrollEnd        | List&lt;[Action]({{< ref path="/api/actions" lang="pt" >}})&gt;                  |             | Lista de ações executadas quando o GridView chega ao fim.                                                                              |
 | scrollEndThreshold |  Int                                                         |             | Define a porcentagem rolada do GridView para disparar o `onScrollEnd`.                                                                 |
 | iteratorName       | String                                                      |             | É o identificador do contexto de cada célula.                                                                                       |
 | key                | String                                                      |             | Aponta para um valor único presente em cada item do `dataSource` para ser usado como um sufixo nos ids dos componentes do template. |
+| itemAspectRatio    | Double                                                  |             | válido apenas para o Flutter. Define o aspect ratio (proporção) dos itens na grade. Se deixado em branco, os itens serão quadrados (itemAspectRatio = 1). O GridView do Flutter não aceita itens com largura e/ou altura específicos |
 
 ### GridViewDirection
 

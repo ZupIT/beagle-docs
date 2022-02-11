@@ -29,7 +29,7 @@ An action is map key/value with at least a `_beagleAction_` property. Its value 
 
 There are several default implemented actions on Beagle and all of them start with "**beagle:**" prefix and the customized actions start with "**custom:**". 
 
-To learn how to create custom actions, check out Beagle's customization section of each platform ([Android]({{< ref path="android/customization" >}}), [iOS]({{< ref path="ios/customization" >}}), [Flutter]({{< ref path="flutter/customization" >}}), [Web]({{< ref path="web/commons" >}}), [React-Native]({{< ref path="react-native/customization" >}})).
+To learn how to create custom actions, check out Beagle's customization section of each platform ([Android]({{< ref path="android/customization" >}}), [iOS]({{< ref path="ios/customization" >}}), [Flutter]({{< ref path="flutter/extensions/actions" >}}), [Web]({{< ref path="web/commons" >}}).
 
 ## Action types
 

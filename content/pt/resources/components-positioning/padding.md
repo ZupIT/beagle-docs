@@ -41,7 +41,7 @@ Dentro do Padding, você encontra ainda as seguintes propriedades:
         ).setFlex {
               flexDirection = FlexDirection.ROW
           }.setStyle { 
-              backgroundColor = "#000000"
+              backgroundColor = constant("#000000")
               padding = EdgeValue(all = UnitValue.real(20))
           }
     }
@@ -66,7 +66,7 @@ private func screen() -> Screen {
                     createText(backgroundColor: "#649d66",text: "6"),
                     ],widgetProperties: WidgetProperties(
                         style: Style(
-                            backgroundColor: "#000000",
+                            backgroundColor: constant("#000000"),
                             padding: EdgeValue().all(20)
                             flex: Flex().flexDirection(.row)
                         )
@@ -102,7 +102,7 @@ private func screen() -> Screen {
         ).setFlex {
               flexDirection = FlexDirection.ROW
           }.setStyle { 
-              backgroundColor = "#000000"
+              backgroundColor = constant("#000000")
               padding = EdgeValue(bottom = UnitValue.real(20))
           }
     }
@@ -127,7 +127,7 @@ private func screen() -> Screen {
                     createText(backgroundColor: "#649d66",text: "6"),
                     ],widgetProperties: WidgetProperties(
                         style: Style(
-                            backgroundColor: "#000000",
+                            backgroundColor: constant("#000000"),
                             padding: EdgeValue().bottom(20)
                             flex: Flex().flexDirection(.row)
                         )
@@ -163,7 +163,7 @@ private func screen() -> Screen {
         ).setFlex {
               flexDirection = FlexDirection.ROW
           }.setStyle { 
-              backgroundColor = "#000000"
+              backgroundColor = constant("#000000")
               padding = EdgeValue(left = UnitValue.real(20))
           }
     }
@@ -188,7 +188,7 @@ private func screen() -> Screen {
                     createText(backgroundColor: "#649d66",text: "6"),
                     ],widgetProperties: WidgetProperties(
                         style: Style(
-                            backgroundColor: "#000000",
+                            backgroundColor: constant("#000000"),
                             padding: EdgeValue().left(20)
                             flex: Flex().flexDirection(.row)
                         )
@@ -224,7 +224,7 @@ private func screen() -> Screen {
         ).setFlex {
               flexDirection = FlexDirection.ROW
           }.setStyle { 
-              backgroundColor = "#000000"
+              backgroundColor = constant("#000000"),
               padding = EdgeValue(right = UnitValue.real(20))
           }
     }
@@ -249,7 +249,7 @@ private func screen() -> Screen {
                     createText(backgroundColor: "#649d66",text: "6"),
                     ],widgetProperties: WidgetProperties(
                         style: Style(
-                            backgroundColor: "#000000",
+                            backgroundColor: constant("#000000"),
                             padding: EdgeValue().right(20)
                             flex: Flex().flexDirection(.row)
                         )
@@ -285,7 +285,7 @@ private func screen() -> Screen {
         ).setFlex {
               flexDirection = FlexDirection.ROW
           }.setStyle { 
-              backgroundColor = "#000000"
+              backgroundColor = constant("#000000")
               padding = EdgeValue(top = UnitValue.real(20))
           }
     }
@@ -310,7 +310,7 @@ private func screen() -> Screen {
                     createText(backgroundColor: "#649d66",text: "6"),
                     ],widgetProperties: WidgetProperties(
                         style: Style(
-                            backgroundColor: "#000000",
+                            backgroundColor: constant("#000000"),
                             padding: EdgeValue().top(20)
                             flex: Flex().flexDirection(.row)
                         )
@@ -346,7 +346,7 @@ private func screen() -> Screen {
         ).setFlex {
               flexDirection = FlexDirection.ROW
           }.setStyle { 
-              backgroundColor = "#000000"
+              backgroundColor = constant("#000000")
               padding = EdgeValue(horizontal = UnitValue.real(20))
           }
     }
@@ -371,7 +371,7 @@ private func screen() -> Screen {
                     createText(backgroundColor: "#649d66",text: "6"),
                     ],widgetProperties: WidgetProperties(
                         style: Style(
-                            backgroundColor: "#000000",
+                            backgroundColor: constant("#000000"),
                             padding: EdgeValue().horizontal(20)
                             flex: Flex().flexDirection(.row)
                         )
@@ -407,7 +407,7 @@ private func screen() -> Screen {
         ).setFlex {
               flexDirection = FlexDirection.ROW
           }.setStyle { 
-              backgroundColor = "#000000"
+              backgroundColor = constant("#000000")
               padding = EdgeValue(vertical = UnitValue.real(20))
           }
     }
@@ -432,7 +432,7 @@ private func screen() -> Screen {
                     createText(backgroundColor: "#649d66",text: "6"),
                     ],widgetProperties: WidgetProperties(
                         style: Style(
-                            backgroundColor: "#000000",
+                            backgroundColor: constant("#000000"),
                             padding: EdgeValue().vertical(20)
                             flex: Flex().flexDirection(.row)
                         )

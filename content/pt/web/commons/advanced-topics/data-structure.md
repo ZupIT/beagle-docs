@@ -30,7 +30,7 @@ Veja abaixo cada componente da árvore:
 - `id` é o identificador único para o node. Observação: mesmo que o `id` é obrigatório pela estrutura interna da árvore, antes de processá-la, o Beagle atribui um id único qualquer para cada node sem um id, tornando-o opcional no json fornecido pelo backend.
 - `context` é um [**contexto** ]({{< ref path="/api/context/" lang="pt" >}})definido para um componente e seus filhos.
 - `children` é uma array de nodes representando os filhos que estão no node atual.
-- `style` é a regra de estilização dos componentes. Essas regras não são CSS, mas estruturas definidas pelo Beagle ([Android]({{< ref path="android/customization/style" >}}), [iOS]({{< ref path="ios/customization/style" >}}), [Flutter]({{< ref path="flutter/customization/design-system" >}}), [Web]({{< ref path="web/commons/styling" >}}), [React-Native]({{< ref path="react-native/customization" >}}))
+- `style` é a regra de estilização dos componentes. Essas regras não são CSS, mas estruturas definidas pelo Beagle ([Android]({{< ref path="android/customization/style" >}}), [iOS]({{< ref path="ios/customization/dependencies/style" >}}), [Flutter]({{< ref path="flutter/layout/styles" >}}), [Web]({{< ref path="web/commons/styling" >}}).
 - O node possui propriedades esperadas pelo próprio componente, como text, que poderia ter `text` e `justify`, enquanto o botão poderia ter `onPress`, `text` e `disabled`.
 
 Veja abaixo um exemplo da árvore de componentes, pronta para ser processada pelo Beagle:

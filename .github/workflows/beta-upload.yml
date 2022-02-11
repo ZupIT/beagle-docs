@@ -2,7 +2,8 @@ name: BETA UPLOAD
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -13,27 +14,21 @@ jobs:
           submodules: true
           fetch-depth: 0
 
-      - name: Read secrets from AWS Secrets Manager into environment variables
-        uses: abhilash1in/aws-secrets-manager-action@v1.0.1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
-          secrets: |
-            beagle/docs/aws
-          parse-json: true
-          
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-access-key-id: ${{secrets.AWS_ACCESS_KEY_DOCS_BETA }}
+          aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY_DOCS_BETA}}
           aws-region: sa-east-1
+          role-to-assume: ${{secrets.AWS_BETA_ROLE_TO_ASSUME}}
+          role-session-name: BetaBeagleDocsPublish
+          role-skip-session-tagging: true
+          role-duration-seconds: 1200
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.78.1'
+          hugo-version: "0.78.1"
           extended: true
 
       - name: Installing Dependencies
@@ -45,6 +40,4 @@ jobs:
           BASE_URL: https://docs-beta.usebeagle.io
 
       - name: S3 upload (latest version)
-        run: aws s3 sync --acl public-read --follow-symlinks public s3://$AWS_S3_BUCKET --exclude="c4model/*" --delete
-        env:
-          AWS_S3_BUCKET: ${{ env.BEAGLE_DOCS_AWS_AWS_DOCS_BETA_BUCKET }}
+        run: aws s3 sync --follow-symlinks public s3://${{secrets.AWS_DOCS_BETA_BUCKET_NAME}} --exclude="c4model/*" --delete
