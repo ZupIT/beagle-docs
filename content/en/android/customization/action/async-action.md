@@ -5,19 +5,22 @@ description: In this section, you will find how to create a custom async action.
 ---
 
 **Topics covered:**
- - How to create an Async Action
+
+- How to create an Async Action
 
 **Requirements:** 
- - A project with Beagle configured;
- - Simple actions. For more information, check out [how to create simple actions]({{< ref path="/android/customization/action/simple-action" lang="en">}})
 
- ## How to create Assyn Actions
+- A project with Beagle configured;
+
+- Simple actions. For more information, check out [how to create simple actions]({{< ref path="/android/customization/action/simple-action" lang="en">}})
+
+## How to create Assyn Actions
 
 To create an action with asynchronous execution such as consuming an API or accessing a database, follow the steps:
 
-**Step 1: Create an `action` as usual, just like the previous example;**
-**Step 2: Implement the `AsyncAction` interface;**
-**Step 3: Link the `AsyncAction` interface and delegate its implementation to the `AsyncActionImpl` class provided by Beagle.**
+**Step 1:** Create an `action` as usual, just like the previous example;<br>
+**Step 2:** Implement the `AsyncAction` interface;<br>
+**Step 3:** Link the `AsyncAction` interface and delegate its implementation to the `AsyncActionImpl` class provided by Beagle.
 
 {{% alert color="info" %}}
 It is recommended to use this class, as it implements the `onActionStarted` and `onActionFinished`, exposing its state in a reactive and standardized way in the framework.
