@@ -1,25 +1,31 @@
 ---
 title: NavigationContext
 weight: 15
-description: Describes the NavigationContext strucuture
+description: Describes the NavigationContext functions
 ---
 
 ---
 
 ## What is it?
 
-It is a structure present in navigation actions, except openExternalUrl and openNativeRoute, which defines a value to be saved in the "navigationContext" context of the target screen. The "navigationContext" is a special context where the scope is a single screen.
+It is a structure present in most navigation actions. It defines a special context, called `"navigationContext"`, which is created on the target screen only.
 
-Its structure is represented as shown below:
+See it's structure below:
 
 | **Attribute** | **Type** | Required | **Definition** |
-| :------------ | :------- | :---------: | :---------------------------- |
-| value | Any | ✓ | Novo valor a ser aplicado no contexto |
-| path | String |   | Ponto específico do contexto para ser alterado no caso de arrays e mapas &lt;chave, valor&gt;. |
+| :----------- | :------- | :---------: | :---------------------------- |
+| value | Any | ✓ | Value to be set at the ``NavigationContext`` |
+| path | String |   | Path on the ``NavigationContext`` structure |
 
-## Como usar?
+{{% alert color="success" %}}
+  `NavigationContext` is not present in `openExternalUrl` and `openNativeRoute` actions
+{{% /alert %}}
 
-No exemplo abaixo, temos uma tela vinda do BFF com um botão, que ao ser clicado, navega para uma nova tela e salva no context "navigationContext" o valor informado no campo value. Essa próxima tela possui um texto com uma expressão que resolve para o contexto "navigationContext".
+## How to use it?
+
+The Navigation Context is better used when you want to send information from one screen into another. Below, we have a screen with a button, that when clicked, loads a new ``view`` (which represents another screen). The information contained in the "navigationContext" `value` attribute will be saved in the scope of this new screen. This information can be accessed through the expression *"@{navigationContext.text}"* in the new screen only.
+
+See the example below:
 
 {{< tabs id="T178" >}}
 {{% tab name="JSON" %}}
@@ -55,7 +61,7 @@ No exemplo abaixo, temos uma tela vinda do BFF com um botão, que ao ser clicado
 
 {{% tab name="Kotlin DSL" %}}
 
-```
+```Kotlin
 Screen(
     child = Button(
         text = "Click me!",
@@ -78,3 +84,7 @@ Screen(
 
 {{% /tab %}}
 {{< /tabs >}}
+
+{{% alert color="success" %}}
+  Notice that the new screen will list the expression `"@{navigationContext.text}"` value as the ``Text`` component value
+{{% /alert %}}
