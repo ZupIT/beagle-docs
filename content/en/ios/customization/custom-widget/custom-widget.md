@@ -18,7 +18,7 @@ To know more [**Beagle default widgets**]({{< ref path="/api/components/overview
 
 ### Step 1: Create custom component.
 
-Below we have the definition of the Box component class. Created with view code in swift and has a title parameter, as same as a tap event.
+Below we have the definition of the Box component class. Created with view code in Swift and has a title parameter, as same as a tap event.
 
 ```swift
 import UIKit
@@ -203,3 +203,81 @@ After registering, don't forget that to use your component in the backend it als
 
 If you want to understand about BFF [**click here**]({{< ref path="" lang="en" >}})
 {{% /alert %}}
+
+## Particular cases
+
+### Components that exposes events
+
+In cases where the custom component contains user interaction events, it is enough to expose these events in the component's Widget. So suppose the BoxComponent now has to handle a touch event:
+
+```swift
+import Foundation
+import UIKit
+import Beagle
+
+struct BoxWidget: Widget {
+
+    let title: String
+    @AutoCodable
+    let onTouch: [Action]?
+    
+    public var id: String?
+    public var style: Style?
+    public var accessibility: Accessibility?
+    
+    func toView(renderer: BeagleRenderer) -> UIView {
+        let boxComponent = Box(title: title)
+        boxComponent.onTouch = {
+            renderer.controller?.execute(actions: onTouch, event: "onTouch", origin: boxComponent)
+        }
+
+        return boxComponent
+    }
+}
+```
+
+Step 1: add the attribute `let onTouch: [Action]?` que consiste em uma lista de ações que serão executadas a partir do evento de touch.
+
+Step 2: assuming the native component use closures to handle events, then we assign a closure on `onTouch` event that calls the `execute` method passing this actions list: `renderer.controller?.execute(actions: onTouch, event: "onTouch", origin: boxComponent)`
+
+{{% alert color="warning" %}}
+Use `@AutoCodable` annotation on `Action` properties type or use `ServerDrivenComponent` in cases that your component receives other component or action, in order to Swift can synthesize the `init(from decoder: Decoder)` initializer.
+
+In thecnical terms, the `AutoCodable` is a property wrapper that implements both polymorphic serialization and deserialization logics of Beagle's generic types. In this way, we do not need to implement `init(from decoder: Decoder)` since now Swift can synthesize it, and all the properties of our widget is abide to Codable.
+{{% /alert %}}
+
+### Components that encapsulate other components
+
+In cases where our custom component receives another component to be added as subview, just add an attribute on our widget that relates to this child component.
+
+Assuming that our component Box receives a `UIView` that will be added on your views hierarchy:
+
+```swift
+struct BoxWidget: Widget {
+
+    // Class parameter.
+    let title: String
+    @AutoCodable
+    let child: ServerDrivenComponent
+    
+    public var id: String?
+    public var style: Style?
+    public var accessibility: Accessibility?
+    
+    // toView method of interface the widget.
+    func toView(renderer: BeagleRenderer) -> UIView {
+        let child: UIView = BeagleView(child)
+        child.translatesAutoresizingMaskIntoConstraints = false
+
+        let boxComponent = Box(title: title, child: child)
+
+        return boxComponent
+    }
+}
+```
+
+Step 1: add `let child: ServerDrivenComponent` attribute which will be the Server Driven component.
+
+Step 2: transform the server driven component into a UIView, as of the BeagleView class, e.g.: `let child: UIView = BeagleView(child)`
+
+Step 3: pass the just created UIView into the Box component, e.g.: `Box(title: title, child: child)`
