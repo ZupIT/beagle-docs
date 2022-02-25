@@ -172,7 +172,9 @@ override func sizeThatFits(_ size: CGSize) -> CGSize {
 
 ### Step 3: Register Widget.
 
-It is mandatory to **register it with Beagle.** Within the beagle configuration file use `dependencies` to register.
+Finally, we need to register our custom widget on Beagle
+
+So to **register it on Beagle** just call the register function from Coder (a Beagle public dependency) during the settings process of the Beagle environment.
 
 {{% alert color="info" %}}
 To learn more about dependencies. [**Beagle Dependencies**]({{< ref path="" lang="en" >}}).
@@ -180,7 +182,7 @@ To learn more about dependencies. [**Beagle Dependencies**]({{< ref path="" lang
 
 The `register` method has two constructors, the first passing just the `component` and the second receiving the `component` and `named`.
 
-* **component:** Pass component's class.
+* **type:** Pass component's type.
 
 * **named:** Parameter to set the component name. It is not mandatory to pass. One case is when the component name is registered differently than what you created in the backend. It will be used in deserializations to find your component.
 
@@ -188,12 +190,12 @@ The `register` method has two constructors, the first passing just the `componen
 
 ```swift
 // 1º manner
-dependencies.decoder.register(component: BoxWidget.self)
+coder.register(type: BoxWidget.self)
 ```
 
 ```swift
 // 2º manner
-dependencies.decoder.register(component: BoxWidget.self, named: "BoxWidgetComponent")
+coder.register(type: BoxWidget.self, named: "BoxWidgetComponent")
 ```
 
 {{% alert color="warning" %}}
@@ -201,23 +203,3 @@ After registering, don't forget that to use your component in the backend it als
 
 If you want to understand about BFF [**click here**]({{< ref path="" lang="en" >}})
 {{% /alert %}}
-
-### Step 4: Component Declaration.
-
-Below we have the definition of the component inside a `Container`, where the component **BoxWidget** has the parameter `title` that receives the value **`Title my box!`**.
-
-```swift
- Container {
-    BoxWidget(title: "Title my box!")
-}
-```
-
-{{% alert color="info" %}}
-To learn more about displaying the Component.[**How to display a screen**]({{< ref path="/ios/getting-started" lang="en" >}}).
-{{% /alert %}}
-
-Rendered example:
-
-![](/shared/custom-component-box-ios.png)
-
-If you use more complex components that are in `UIViews` or other components not mentioned, the process would be similar.
