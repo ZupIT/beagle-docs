@@ -1,22 +1,28 @@
 ---
 title: PopStack
 weight: 60
-description: Here you'll find PopStack description.
+description: Describes the PopStack action and its atributes
 ---
 
 ---
 
 ## What is it?
 
-Removes the current exhibition pile. 
+The ``PopStack`` is an navigation action that removes the stack of screens where the currently screen is displayed on.
+
+The ``PopStack`` structure is:
+
+| **Attribute** | **Type** | Required | **Definition** |
+| :----------- | :-------------------------------------------- | :---------: | :----------------- |
+| navigationContext | ​[NavigationContext]({{< ref path="/api/actions/navigate/navigationcontext" lang="pt" >}})​ | | Navigation Context sent from the previous screen. |
 
 ## How to use it?
 
-On the example below there's a screen coming from BFF with a button that when clicked, closes the current activity. 
+In this example, we have a screen with a button that, when clicked, "kills" the stack of screens where the current screen is on.
 
-To test, your BFF's endpoint should return the screen with the code below and call it in the frontend. 
+To test this you need to navigate to this screen example, in a stack already built, and click on the button. This will destroy the entire stack
 
-{{< tabs id="T96" >}}
+{{< tabs id="T114" >}}
 {{% tab name="JSON" %}}
 <!-- json-playground:popStack.json
 {
@@ -30,10 +36,11 @@ To test, your BFF's endpoint should return the screen with the code below and ca
   }
 }
 -->
-{{% playground file="popStack.json" language="en" %}}
+{{% playground file="popStack.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
+
 ```kotlin
 Screen(
     child = Button(
@@ -44,5 +51,6 @@ Screen(
     )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
