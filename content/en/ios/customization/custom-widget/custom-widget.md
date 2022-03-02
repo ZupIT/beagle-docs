@@ -74,7 +74,7 @@ For the `Box` component you have to create a struct BoxWidget adopting the `Widg
 
  * **style:** Component's style attribute.
 
- * **accessibility:** Component accebility definition.
+ * **accessibility:** Component's accessibility definition.
 
  * **toView:** Method that returns the view of the created component.
 
