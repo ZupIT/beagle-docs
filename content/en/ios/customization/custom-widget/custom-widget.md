@@ -159,7 +159,7 @@ struct BoxWidget: Widget {
 
 ### SizeThatFits
 
-**`sizeThatFits:`** Method to implement your size logic, used in the custom component class.
+**`sizeThatFits:`** Method to implement a customized size logic, used in the custom component class.
 
 ```swift
 override func sizeThatFits(_ size: CGSize) -> CGSize {
