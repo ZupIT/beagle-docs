@@ -70,7 +70,7 @@ To make your component work with Beagle just create a struct and extend the `Wid
 
 For the `Box` component you have to create a struct BoxWidget adopting the `Widget` protocol.
 
- * **id:** Component ID.
+ * **id:** The Id of the component.
 
  * **style:** Component style attribute.
 
