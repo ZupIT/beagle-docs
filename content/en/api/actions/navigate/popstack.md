@@ -20,7 +20,7 @@ The ``PopStack`` structure is:
 
 In this example, there is a screen with a button that, when clicked, "kills" the stack of screens where the current screen is on.
 
-To test this you need to navigate to this screen example, in a stack already built, and click on the button. This will destroy the entire stack
+To test it you need to navigate to this screen example, in a stack already built, and click on the button. This will destroy the entire stack
 
 {{< tabs id="T114" >}}
 {{% tab name="JSON" %}}
