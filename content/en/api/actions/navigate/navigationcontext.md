@@ -23,7 +23,7 @@ See its structure below:
 
 ## How to use it?
 
-The Navigation Context is better used when you want to send information from one screen into another. Below, we have a screen with a button, that when clicked, loads a new ``view`` (which represents another screen). The information contained in the "navigationContext" `value` attribute will be saved in the scope of this new screen. This information can be accessed through the expression *"@{navigationContext.text}"* in the new screen only.
+The Navigation Context is better used when you want to send information from one screen into another. Next, we have a screen with a button, that when clicked, loads a new ``view`` (which represents another screen). The information contained in the "navigationContext" `value` attribute will be saved in the scope of this new screen. This information can be accessed through the expression *"@{navigationContext.text}"* in the new screen only.
 
 See the example below:
 
