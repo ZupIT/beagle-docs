@@ -8,7 +8,7 @@ description: Describes the PopStack action and its atributes
 
 ## What is it?
 
-The ``PopStack`` is an navigation action that removes the stack of screens where the currently screen is displayed on.
+The ``PopStack`` is a navigation action that removes the stack of screens where the current screen is displayed on.
 
 The ``PopStack`` structure is:
 
