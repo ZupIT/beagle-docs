@@ -174,7 +174,7 @@ override func sizeThatFits(_ size: CGSize) -> CGSize {
 
 Finally, we need to register our custom widget on Beagle
 
-So to **register it on Beagle** just call the register function from Coder (a Beagle public dependency) during the settings process of the Beagle environment.
+To do so, just call the register function from Coder (a Beagle public dependency) during the settings process of the Beagle environment.
 
 {{% alert color="info" %}}
 To learn more about dependencies. [**Beagle Dependencies**]({{< ref path="" lang="en" >}}).
