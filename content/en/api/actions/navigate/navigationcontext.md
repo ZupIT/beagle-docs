@@ -10,7 +10,7 @@ description: Describes the NavigationContext functions
 
 It is a structure present in most navigation actions. It defines a special context, called `"navigationContext"`, which is created on the target screen only.
 
-See it's structure below:
+See its structure below:
 
 | **Attribute** | **Type** | Required | **Definition** |
 | :----------- | :------- | :---------: | :---------------------------- |
