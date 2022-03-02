@@ -23,7 +23,7 @@ Veja abaixo a estrutura:
 
 ## Como usar?
 
-O Navigation Context é utilizado quando se quer enviar informações de uma tela a outra. Abaixo, temos uma tela com um botão, que ao ser clicado, carrega uma nova ``view`` (que representa outra tela). A informação contida no atributo `value` do "navigationContext" será salva no escopo da nova tela. Essa informação poderá ser acessada atravez da expressão *"@{navigationContext.text}"* na nova tela somente.
+O Navigation Context é utilizado quando se quer enviar informações de uma tela a outra. Abaixo, temos uma tela com um botão, que ao ser clicado, carrega uma nova ``view`` (que representa outra tela). A informação contida no atributo `value` do "navigationContext" será salva no escopo da nova tela. Essa informação poderá ser acessada através da expressão *"@{navigationContext.text}"* na nova tela somente.
 
 Veja o exemplo abaixo:
 
