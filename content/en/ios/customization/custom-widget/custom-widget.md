@@ -72,7 +72,7 @@ For the `Box` component you have to create a struct BoxWidget adopting the `Widg
 
  * **id:** The Id of the component.
 
- * **style:** Component style attribute.
+ * **style:** Component's style attribute.
 
  * **accessibility:** Component accebility definition.
 
