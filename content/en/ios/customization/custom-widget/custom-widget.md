@@ -66,7 +66,7 @@ class Box: UIView {
 
 ### Step 2: Create Widget.
 
-To make your component works with Beagle just create a struct and extend the `Widget` interface which is a protocol that conforms to `Codable` and is responsible for (de)coding the properties that your widget exposes to the backend. Futhermore, for `Widget` compliance you should add `id: String?`, `style: Style?`, and `accessibility: Accessibility?` properties, and you also have to implement the **toView** method.
+To make your component work with Beagle just create a struct and extend the `Widget` interface which is a protocol that conforms to `Codable` and is responsible for (de)coding the properties that your widget exposes to the backend. Furthermore, for `Widget` compliance you should add `id: String?`, `style: Style?`, and `accessibility: Accessibility?` properties, and also implement the **toView** method.
 
 For the `Box` component you have to create a struct BoxWidget adopting the `Widget` protocol.
 
