@@ -226,7 +226,7 @@ Você pode criar essas camadas usando esses tutoriais:
 [**Camada de Rede customizada**]({{< ref path="/ios/customization/dependencies/network-layer" lang="en" >}})
 <br>
 
-[**Sistema de Log customizado**]({{< ref path="/ios/customization/log-system" lang="en" >}})
+[**Sistema de Log customizado**]({{< ref path="/ios/customization/dependencies/log-system" lang="en" >}})
 <br>
 
 Se você quiser pular essas configurações, você pode utilizar a biblioteca de apoio do Beagle: [**Beagle Scaffold**]({{< ref path="/ios/libs/beagle-scaffold" lang="en" >}}) contém implementações padrão de camadas de Rede, Cache e Log.
