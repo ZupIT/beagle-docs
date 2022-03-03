@@ -1,195 +1,58 @@
 ---
 title: ResetApplication
 weight: 100
-description: Here you'll find ResetApplication description and its attribute.
+description: ResetApplication action details and its attributes
 ---
 
 ---
 
-## What is it?
-What is it?
-Opens a screen with an informed route and deletes all the navigation piles.
+## What is it? <a id="definition"></a>
 
-Your structure is represented by the attribute below:
+This action creates a new canvas in a new stack and destroys all previous stacks.
 
-| **Attribute** | **Type**                                            | Required | Definition        |
-| :------------ | :-------------------------------------------------- | :------- | :---------------- |
-| route         | ​[**Route**]({{< ref path="/api/actions/navigate/route" lang="en" >}})**​** | ✓        | Navigation route. |
-| controllerId | String |     | The navigation controller id to be used during the navigation action, If missing, the default navigation controller will be used instead. |
+The structure of ``ResetApplication`` is:
+
+| **Attribute** | **Type** | Required | **Definition** |
+| :------------ | :----------------------------------------------- | :---------: | :------------------ |
+| route | ​[Route]({{< ref path="/api/actions/navigate/route/" lang="en" >}})​ | ✓ | Navigation route. |
+| controllerId | String | | The navigation controller id to use during the navigation action. If empty, the default navigation controller will be used. |
+| navigationContext | ​[NavigationContext]({{< ref path="/api/actions/navigate/navigationcontext" lang="en" >}})​ | | Context to be saved on the target screen. |
 
 ## How to use it?
 
-On the example below, three screens were used. The two first used PushView to add the screens to the piles and the last one uses ResetApplication and reopens the first screen.
+Below is an example of a simple screen with a button that performs the ResetApplication action when clicked. To test it, just list the URL of the screen you want to create and click the button. The screen will be created in a new stack.
 
-You will need three endpoints to test:
-
-1. The first endpoint will be what your frontend will call to render the screen zero.
-2. The second endpoint must be mapped as **"/firstScreen",** because this will be the chose URL to the screen 0 button's navigation, and it must return to the screen 1.
-3. The third endpoint must be mapped as **"/secondScreen",** because this will be the chosen URL to the screen 1 button's navigation, and it must return to the screen 2. On the screen 2 the passed route must be the screen's endpoint that you want to return when the application starts. In this case, **"/home"** is the screen's 0 endpoint.
-
-#### How to call the screen zero <a id="como-chamar-a-tela-zero"></a>
-
-{{< tabs id="T104" >}}
-{{% tab name="JSON" %}}
-
-<!-- json-playground:firstScreenonStack.json
-{
-  "_beagleComponent_" : "beagle:screenComponent",
-  "child" : {
-    "_beagleComponent_" : "beagle:container",
-    "children" : [ {
-      "_beagleComponent_" : "beagle:text",
-      "text" : "First Screen on Stack"
-    }, {
-      "_beagleComponent_" : "beagle:button",
-      "text" : "Click me!",
-      "onPress" : [ {
-        "_beagleAction_" : "beagle:pushView",
-        "route" : {
-          "url" : "secondScreenonStack.json",
-          "shouldPrefetch" : false
-        }
-      } ]
-    } ]
-  }
-}
--->
-
-{{% playground file="firstScreenonStack.json" language="en" %}}
-{{% /tab %}}
-
-{{% tab name="Kotlin DSL" %}}
-
-```kotlin
-Screen(
-    child = Container(
-        children = listOf(
-            Text(
-                "First Screen on Stack"
-            ),
-            Button(
-                text = "Click me!",
-                onPress = listOf(
-                    Navigate.PushView(
-                        Route.Remote(
-                            url = "secondScreenonStack.json"
-                        )
-                    )
-                )
-            )
-        )
-    )
-)
-```
-
-{{% /tab %}}
-{{< /tabs >}}
-
-#### How to call the screen 1 <a id="como-chamar-a-tela-1"></a>
-
-{{< tabs id="T105" >}}
-{{% tab name="JSON" %}}
-
-<!-- json-playground:secondScreenonStack.json
-{
-  "_beagleComponent_" : "beagle:screenComponent",
-  "child" : {
-    "_beagleComponent_" : "beagle:container",
-    "children" : [ {
-      "_beagleComponent_" : "beagle:text",
-      "text" : "Second Screen on Stack"
-    }, {
-      "_beagleComponent_" : "beagle:button",
-      "text" : "Click me!",
-      "onPress" : [ {
-        "_beagleAction_" : "beagle:pushView",
-        "route" : {
-          "url" : "resetApplication.json",
-          "shouldPrefetch" : false
-        }
-      } ]
-    } ]
-  }
-}
--->
-
-{{% playground file="secondScreenonStack.json" language="en" %}}
-{{% /tab %}}
-
-{{% tab name="Kotlin DSL" %}}
-
-```kotlin
-Screen(
-    child = Container(
-        children = listOf(
-            Text(
-                "Second Screen on Stack"
-            ),
-            Button(
-                text = "Click me!",
-                onPress = listOf(
-                    Navigate.PushView(
-                        Route.Remote(
-                            url = "resetApplication.json"
-                        )
-                    )
-                )
-            )
-        )
-    )
-)
-```
-
-{{% /tab %}}
-{{< /tabs >}}
-
-#### How to call the screen 2 <a id="como-chamar-a-tela-2"></a>
-
-{{< tabs id="T106" >}}
+{{< tabs id="T112" >}}
 {{% tab name="JSON" %}}
 
 <!-- json-playground:resetApplication.json
 {
   "_beagleComponent_" : "beagle:screenComponent",
   "child" : {
-    "_beagleComponent_" : "beagle:container",
-    "children" : [ {
-      "_beagleComponent_" : "beagle:text",
-      "text" : "Third Screen on Stack"
-    }, {
-      "_beagleComponent_" : "beagle:button",
-      "text" : "Click me to go to reset application",
-      "onPress" : [ {
-        "_beagleAction_" : "beagle:resetApplication",
-        "route" : {
-          "url" : "firstScreenonStack.json",
-          "shouldPrefetch" : false
+    "_beagleComponent_" : "beagle:button",
+    "text" : "Click me!",
+    "onPress" : [ {
+      "_beagleAction_" : "beagle:resetApplication",
+        route: {
+          url: NEW_SCREEN_ENDPOINT
         }
-      } ]
     } ]
   }
 }
 -->
 
-{{% playground file="resetApplication.json" language="en" %}}
+{{% playground file="pushStack.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
 
 ```kotlin
 Screen(
-    child = Container(
-        children = listOf(
-            Text(
-                "Third Screen on Stack"
-            ),
-            Button(
-                text = "Click me  to reset application",
-                onPress = listOf(
-                    Navigate.ResetApplication(
-                        route = Route.Remote("firstScreenonStack.json")
-                    )
-                )
+    child = Button(
+        text = "Click me!",
+        onPress = listOf(
+            Navigate.ResetApplication(
+                Route.Remote(NEW_SCREEN_ENDPOINT)
             )
         )
     )
