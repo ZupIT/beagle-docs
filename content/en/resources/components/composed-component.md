@@ -35,7 +35,7 @@ In this case, if you build a layout using DSL, the code would be like this:
 val style = Style(
     size = Size(
         width = UnitValue(
-            33.0, type = UnitType.PERCENT
+            constant(33.0), type = UnitType.PERCENT
         )
     )
 )
@@ -87,7 +87,7 @@ class MyComposeComponent(
     private val style = Style(
         size = Size(
             width = UnitValue(
-                33.0, type = UnitType.PERCENT
+                constant(33.0), type = UnitType.PERCENT
             )
         )
     )
