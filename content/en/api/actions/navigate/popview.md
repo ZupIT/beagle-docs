@@ -1,48 +1,23 @@
 ---
 title: PopView
 weight: 80
-description: Here you'll find PopView description.
+description: Description of the PopView action and its attributes
 ---
 
 ---
 
 ## What is it?
 
-Closes the current exhibition screen.
+This is an action that destroys the currently displayed screen, showing the previous view on the same stack, if any is present.
 
-## How to use it?
+The structure of ``PopView`` is:
 
-On the example below there's a screen coming from BFF with a button that when clicked, removes the current fragment. 
+| **Attribute** | **Type** | Required | **Definition** |
+| :------------ | :-------------------------------------------- | :---------: | :------------------ |
+| navigationContext | ​[NavigationContext]({{< ref path="/api/actions/navigate/navigationcontext" lang="en" >}})​ | | Context saved on the target screen. |
 
-To test, your BFF's endpoint should return the screen with the code below and call it in the frontend. 
+## How to use?
 
-{{< tabs id="T97" >}}
-{{% tab name="JSON" %}}
-<!-- json-playground:popView.json
-{
-  "_beagleComponent_" : "beagle:screenComponent",
-  "child" : {
-    "_beagleComponent_" : "beagle:button",
-    "text" : "Click me!",
-    "onPress" : [ {
-      "_beagleAction_" : "beagle:popView"
-    } ]
-  }
-}
--->
-{{% playground file="popView.json" language="en" %}}
-{{% /tab %}}
+In the example below, we have a screen with a button, which, when clicked, executes the ``PopToView`` action and destroys the current screen, showing the previous screen on the same stack, if any.
 
-{{% tab name="Kotlin DSL" %}}
-```kotlin
-Screen(
-    child = Button(
-        text = "Click me!",
-        onPress = listOf(
-            Navigate.PopView()
-        )
-    )
-)
-```
-{{% /tab %}}
-{{< /tabs >}}
+To test, just have an endpoint of your BFF return the code screen below and call this endpoint on the frontend.
