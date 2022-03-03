@@ -37,7 +37,7 @@ It defines some space inside the element in **all directions:**
         ).setFlex {
               flexDirection = FlexDirection.ROW
           }.setStyle { 
-              backgroundColor = "#000000"
+              backgroundColor = constant("#000000")
               padding = EdgeValue(all = UnitValue.real(20))
           }
     }
@@ -62,7 +62,7 @@ private func screen() -> Screen {
                     createText(backgroundColor: "#649d66",text: "6"),
                     ],widgetProperties: WidgetProperties(
                         style: Style(
-                            backgroundColor: "#000000",
+                            backgroundColor: constant("#000000"),
                             padding: EdgeValue().all(20)
                             flex: Flex().flexDirection(.row)
                         )
@@ -100,7 +100,7 @@ It defines some **space at the bottom** inside a element:
         ).setFlex {
               flexDirection = FlexDirection.ROW
           }.setStyle { 
-              backgroundColor = "#000000"
+              backgroundColor = constant("#000000")
               padding = EdgeValue(bottom = UnitValue.real(20))
           }
     }
@@ -125,7 +125,7 @@ private func screen() -> Screen {
                     createText(backgroundColor: "#649d66",text: "6"),
                     ],widgetProperties: WidgetProperties(
                         style: Style(
-                            backgroundColor: "#000000",
+                            backgroundColor: constant("#000000"),
                             padding: EdgeValue().bottom(20)
                             flex: Flex().flexDirection(.row)
                         )
@@ -161,7 +161,7 @@ It defines some space inside at the **left side** of the element:
         ).setFlex {
               flexDirection = FlexDirection.ROW
           }.setStyle { 
-              backgroundColor = "#000000"
+              backgroundColor = constant("#000000")
               padding = EdgeValue(left = UnitValue.real(20))
           }
     }
@@ -186,7 +186,7 @@ private func screen() -> Screen {
                     createText(backgroundColor: "#649d66",text: "6"),
                     ],widgetProperties: WidgetProperties(
                         style: Style(
-                            backgroundColor: "#000000",
+                            backgroundColor: constant("#000000"),
                             padding: EdgeValue().left(20)
                             flex: Flex().flexDirection(.row)
                         )
@@ -222,7 +222,7 @@ It defines some space inside the element, at the **right side**:
         ).setFlex {
               flexDirection = FlexDirection.ROW
           }.setStyle { 
-              backgroundColor = "#000000"
+              backgroundColor = constant("#000000")
               padding = EdgeValue(right = UnitValue.real(20))
           }
     }
@@ -247,7 +247,7 @@ private func screen() -> Screen {
                     createText(backgroundColor: "#649d66",text: "6"),
                     ],widgetProperties: WidgetProperties(
                         style: Style(
-                            backgroundColor: "#000000",
+                            backgroundColor: constant("#000000"),
                             padding: EdgeValue().right(20)
                             flex: Flex().flexDirection(.row)
                         )
@@ -283,7 +283,7 @@ It defines some space inside the element, at **the top**:
         ).setFlex {
               flexDirection = FlexDirection.ROW
           }.setStyle { 
-              backgroundColor = "#000000"
+              backgroundColor = constant("#000000")
               padding = EdgeValue(top = UnitValue.real(20))
           }
     }
@@ -308,7 +308,7 @@ private func screen() -> Screen {
                     createText(backgroundColor: "#649d66",text: "6"),
                     ],widgetProperties: WidgetProperties(
                         style: Style(
-                            backgroundColor: "#000000",
+                            backgroundColor: constant("#000000"),
                             padding: EdgeValue().top(20)
                             flex: Flex().flexDirection(.row)
                         )
@@ -344,7 +344,7 @@ It defines some horizontal space inside the element:
         ).setFlex {
               flexDirection = FlexDirection.ROW
           }.setStyle { 
-              backgroundColor = "#000000"
+              backgroundColor = constant("#000000")
               padding = EdgeValue(horizontal = UnitValue.real(20))
           }
     }
@@ -369,7 +369,7 @@ It defines some horizontal space inside the element:
                     createText(backgroundColor: "#649d66",text: "6"),
                     ],widgetProperties: WidgetProperties(
                         style: Style(
-                            backgroundColor: "#000000",
+                            backgroundColor: constant("#000000"),
                             padding: EdgeValue().horizontal(20)
                             flex: Flex().flexDirection(.row)
                         )
@@ -405,7 +405,7 @@ It defines some vertical space inside the element:
         ).setFlex {
               flexDirection = FlexDirection.ROW
           }.setStyle { 
-              backgroundColor = "#000000"
+              backgroundColor = constant("#000000")
               padding = EdgeValue(vertical = UnitValue.real(20))
           }
     }
@@ -430,7 +430,7 @@ It defines some vertical space inside the element:
                     createText(backgroundColor: "#649d66",text: "6"),
                     ],widgetProperties: WidgetProperties(
                         style: Style(
-                            backgroundColor: "#000000",
+                            backgroundColor: constant("#000000"),
                             padding: EdgeValue().vertical(20)
                             flex: Flex().flexDirection(.row)
                         )
