@@ -8,9 +8,9 @@ description: Descrição da ação PopToView e seus atributos
 
 ## O que é? <a id="definicao"></a>
 
-Retorna para uma tela específica e limpa a navegação que foi gerada a partir dessa tela. 
+A ação ``PopToView`` faz a navegação para uma tela anterior a tela atual, que esteja na mesma stack (pilha de telas). Ao realizar a ação, qualquer tela posterior a tela para a qual se navegou será destruida. Por exemplo, se a aplicação exibe uma tela que é a ``terceira`` tela em uma pilha, ao navegar para a primeira, a segunda e terceira telas serão destruidas.
 
-A sua estrutura é representada como mostrado abaixo:
+A estrutura da ``PopToView`` é:
 
 | **Atributo** | **Tipo** | Obrigatório | **Definição** |
 | :--- | :--- | :---: | :--- |
@@ -19,15 +19,18 @@ A sua estrutura é representada como mostrado abaixo:
 
 ## Como usar?
 
-No exemplo abaixo, foram utilizadas três tela: as duas primeiras utilizam o PushView para adicionar as telas na pilha, já a última faz uso do **PopToView** para retornar para a primeira. 
+Para testar, iremos utilizar três telas:
 
-Para testar, iremos precisar de três endpoints: 
+1. A primeira tela será a tela inicial e a primeira da pilha. O endpoint dessa tela deverá ser **"/firstscreen"**.  
+2. A segunda deverá ter como endpoint **"/secondscreen"** pois essa será URL escolhida para a navegação do botão da tela inicial e, por isso, esse endpoint deverá retornar a tela 2, segunda tela na pilha.  
+3. A terceira tem como endpoint **"/thirdscreen"**, pois essa será a URL escolhida para a navegação do botão da tela 2 e, por isso, esse endpoint deverá retornar a tela 3. É na tela 3 que a ação ``PopToView`` será executa com o clique de um botão. A url listada na ação PopToView deverá ser **"/firstscreen"**
 
-1. O primeiro endpoint será o que seu frontend irá chamar para renderizar a tela zero.  
-2. O segundo endpoint deverá ser mapeado como **"/firstScreen",** pois essa será URL escolhida para a navegação do botão da tela 0 e, por isso, esse endpoint deverá retornar a tela 1.  
-3. O terceiro endpoint deverá ser mapeado como **"/secondScreen"**, pois essa será a URL escolhida para a navegação do botão da tela 1 e, por isso, esse endpoint deverá retornar a tela 2. É pela tela 2 que passa a rota na qual deve ser o endpoint da tela que você deseja retornar. No caso desse exemplo, é a **"/home"** que é o endpoint da tela zero.
+A seguir listamos os códigos das telas de teste:
+{{% alert color="success" %}}
+  Os exemplos abaixo requerem que você crie essas telas em um Backend local. No entanto, é possível testa-las sem um Backend. Para isso basta que você pegue os JSONS das telas listadas e utilize alguma ferramente de MOCK RESPONSE online. Se fizer isso, basta mudar os endereços das URLs na ações de navegação para os endereços "mockados"
+{{% /alert %}}
 
-#### Como chamar pela tela zero
+### Tela inicial
 
 {{< tabs id="T116" >}}
 {{% tab name="JSON" %}}
@@ -57,6 +60,7 @@ Para testar, iremos precisar de três endpoints:
 {{% /tab %}}
 
 {{% tab name="KotlinDSL" %}}
+
 ```kotlin
 Screen(
     child = Container(
@@ -69,7 +73,7 @@ Screen(
                 onPress = listOf(
                     Navigate.PushView(
                         Route.Remote(
-                            url = "secondScreenNavigate.json"
+                            url = "/secondscreen"
                         )
                     )
                 )
@@ -78,10 +82,11 @@ Screen(
     )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-#### Como chamar a Tela 1
+#### Tela 2
 
 {{< tabs id="T117" >}}
 {{% tab name="JSON" %}}
@@ -111,6 +116,7 @@ Screen(
 {{% /tab %}}
 
 {{% tab name="KotlinDSL" %}}
+
 ```kotlin
 Screen(
     child = Container(
@@ -123,7 +129,7 @@ Screen(
                 onPress = listOf(
                     Navigate.PushView(
                         Route.Remote(
-                            url = "popToView.json"
+                            url = "/thirdscreen"
                         )
                     )
                 )
@@ -132,10 +138,11 @@ Screen(
     )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-#### Como chamar a Tela 2
+#### Tela 3
 
 {{< tabs id="T118" >}}
 {{% tab name="JSON" %}}
@@ -161,6 +168,7 @@ Screen(
 {{% playground file="popToView.json" language="pt" %}}
 {{% /tab %}}
 {{% tab name="KotlinDSL" %}}
+
 ```kotlin
 Screen(
     child = Container(
@@ -172,7 +180,7 @@ Screen(
                 text = "Click me to go to first screen",
                 onPress = listOf(
                     Navigate.PopToView(
-                      route = "firstScreenNavigate.json"
+                      route = "/firstscreen"
                     )
                 )
             )
@@ -180,5 +188,6 @@ Screen(
     )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}

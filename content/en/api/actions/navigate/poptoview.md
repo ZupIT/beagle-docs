@@ -1,34 +1,38 @@
 ---
 title: PopToView
 weight: 70
-description: Here you'll find PopToView description and its attribute.
+description: PopToView action details and its attributes
 ---
 
 ---
 
-## What is it?
+## What is it? <a id="definition"></a>
 
-Returns to a specific screen and cleans the navigation that was generated from that screen.
+The ``PopToView`` action navigates to a screen that was rendered before the current screen, which is on the same stack. For example, if the application displays a screen that is the ``third`` screen in a stack, when navigating to the ``first``, the ``second`` and ``third`` screens will be destroyed.
 
-Your structure is represented by the attribute below: 
+The structure of ``PopToView`` is:
 
-| **Attribute** | Type | Required | Definition |
-| :--- | :--- | :--- | :--- |
-| route | ​String |     ✓ | Route of a screen that it's on the pile. |
+| **Attribute** | **Type** | Required | **Definition** |
+| :--- | :--- | :---: | :--- |
+| route | String | ✓ | Route of a screen that is on the stack. |
+| navigationContext | ​[NavigationContext]({{< ref path="/api/actions/navigate/navigationcontext" lang="en" >}})​ | | Context to be saved on the target screen. |
 
 ## How to use it?
 
-On the example below, three screens were used: two first used PushView to add the screens to the piles, the last one use **PopToView** to return to the first. 
+To test, we will use three screens:
 
-To test, you will need three endpoints:
+1. The first screen will be the home screen and the first in the stack. The endpoint for this screen should be **"/firstscreen"**. 
+2. The second screen should have an endpoint as **"/secondscreen"**
+3. The third should have an endpoint as **"/thirdscreen"**. It is on the third screen that the ``PopToView`` action will be triggered. The url listed in the ``PopToView`` action should be **"/firstscreen"**
 
-1. The first endpoint will be what your frontend will call to render the screen zero.
-2. The second endpoint should be mapped as **"/firstScreen",** because this will be the chosen URL to the navigation of the button on the screen 0 and for that, this endpoint must return the screen 1. 
-3. The third endpoint must be mapped  **"/secondScreen",** because this will be the chose URL to the navigation of the button on the screen 1, for that, this endpoint must return the screen 2. It is through the screen 2 that it passes a route where the endpoint of the screen must return. In this case, "/home" is the endpoint of the zero screen.
+Below we list the codes to test this action:
+{{% alert color="success" %}}
+  The examples below require you to create these screens on a local backend. However, it is possible to test them without a Backend. To do this, you just need to get the JSONS from the screens listed and use some online MOCK RESPONSE tool. If you do that, just change the URL addresses in the navigation actions to the "mocked" addresses
+{{% /alert %}}
 
-#### How to call the screen 0  <a id="como-chamar-pela-tela-zero"></a>
+### Tela inicial
 
-{{< tabs id="T98" >}}
+{{< tabs id="T116" >}}
 {{% tab name="JSON" %}}
 <!-- json-playground:firstScreenNavigate.json
 {
@@ -55,7 +59,8 @@ To test, you will need three endpoints:
 {{% playground file="firstScreenNavigate.json" language="en" %}}
 {{% /tab %}}
 
-{{% tab name="Kotlin DSL" %}}
+{{% tab name="KotlinDSL" %}}
+
 ```kotlin
 Screen(
     child = Container(
@@ -68,7 +73,7 @@ Screen(
                 onPress = listOf(
                     Navigate.PushView(
                         Route.Remote(
-                            url = "secondScreenNavigate.json"
+                            url = "/secondscreen"
                         )
                     )
                 )
@@ -77,12 +82,13 @@ Screen(
     )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-#### How to call the screen 1  <a id="como-chamar-a-tela-1"></a>
+#### Tela 2
 
-{{< tabs id="T99" >}}
+{{< tabs id="T117" >}}
 {{% tab name="JSON" %}}
 <!-- json-playground:secondScreenNavigate.json
 {
@@ -109,7 +115,8 @@ Screen(
 {{% playground file="secondScreenNavigate.json" language="en" %}}
 {{% /tab %}}
 
-{{% tab name="Kotlin DSL" %}}
+{{% tab name="KotlinDSL" %}}
+
 ```kotlin
 Screen(
     child = Container(
@@ -122,7 +129,7 @@ Screen(
                 onPress = listOf(
                     Navigate.PushView(
                         Route.Remote(
-                            url = "popToView.json"
+                            url = "/thirdscreen"
                         )
                     )
                 )
@@ -131,12 +138,13 @@ Screen(
     )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
 
-#### How to call the screen 2 <a id="como-chamar-a-tela-2"></a>
+#### Tela 3
 
-{{< tabs id="T100" >}}
+{{< tabs id="T118" >}}
 {{% tab name="JSON" %}}
 <!-- json-playground:popToView.json
 {
@@ -159,8 +167,8 @@ Screen(
 -->
 {{% playground file="popToView.json" language="en" %}}
 {{% /tab %}}
+{{% tab name="KotlinDSL" %}}
 
-{{% tab name="Kotlin DSL" %}}
 ```kotlin
 Screen(
     child = Container(
@@ -172,7 +180,7 @@ Screen(
                 text = "Click me to go to first screen",
                 onPress = listOf(
                     Navigate.PopToView(
-                        route = "firstScreenNavigate.json"
+                      route = "/firstscreen"
                     )
                 )
             )
@@ -180,5 +188,6 @@ Screen(
     )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
