@@ -139,9 +139,7 @@ Open the file `app.component.html` and replace all content with the following co
 
 `route` in the code above, tells which route will be loaded. The URL specified here is relative to the `baseUrl` declared in the configuration.
 
-{{% alert color="warning" %}}
-The `route` parameter is only valid for version 1.3 or higher. For earlier versions, `route` must be used. `route` is an object and the value equivalent to this example would be` {path: '/ welcome'} .`
-{{% /alert %}}
+To learn more about the `BeagleRemoteView`, checkou out [this article]({{< ref path="/web/commons/beagle-remote-view" lang="en" >}}).
 
 ## Example
 
@@ -166,9 +164,9 @@ yarn serve
 ```
 
 {{% alert color="warning" %}}
-It is very important to restart your application using one of the commands above (according to your package manager) in order to guarantee that any changes into Beagle configuration files are updated.
+It is very important to restart your application everytime there are changes on any Beagle configuration files.
 
-This process must also be done for any changes made into your mapped components`@Input()` properties. The Beagle team is constantly developing solutions to improve this.
+This process must also be done for any changes made into your mapped components`@Input()` properties
 {{% /alert %}}
 
 After finishing the command, access the application at: http://localhost: 4200
@@ -177,5 +175,5 @@ You should see the following screen:
 ![](/shared/image%20%2896%29.png)
 
 {{% alert color="success" %}}
-Congrats! You have finished your first Beagle Screen!
+Congrats! You have created your first Beagle Screen!
 {{% /alert %}}
