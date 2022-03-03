@@ -57,12 +57,12 @@ There are some properties that Yoga Layout may use to insert, alter or delete co
 
 ### **UnitValue**
 
-The **Basis, Size, Margin, Padding and Position** attributes receive a `UnitValue` that expects a `Double` value and a `UnitType`, which is an `enum` with the following options:
+The **Basis, Size, Margin, Padding and Position** attributes receive a `UnitValue` that contains a `Bind<Double>` value and a `UnitType`, which is an `enum` with the following options:
 
 | **UnitType** | Definition                                                  |
 | :----------- | :---------------------------------------------------------- |
-| **REAL**     | Apply a `Double`value                                       |
-| **PERCENT**  | Apply a `Double` value as percentage of the parent size     |
+| **REAL**     | Apply a `Bind<Double>`value                                       |
+| **PERCENT**  | Apply a `Bind<Double>` value as percentage of the parent size     |
 | **AUTO**     | Follows the parent's value. Except when it has its own size |
 {{% alert color="warning" %}}
 **Important!** For the attributes above, the WEB default is`UnitType.AUTO`.
