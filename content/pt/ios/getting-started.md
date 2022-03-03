@@ -223,7 +223,7 @@ Então é obrigatório que você crie uma camada de Rede para que o Beagle consi
 
 Você pode criar essas camadas usando esses tutoriais:
 
-[**Camada de Rede customizada**]({{< ref path="/ios/customization/network-layer" lang="en" >}})
+[**Camada de Rede customizada**]({{< ref path="/ios/customization/dependencies/network-layer" lang="en" >}})
 <br>
 
 [**Sistema de Log customizado**]({{< ref path="/ios/customization/log-system" lang="en" >}})
