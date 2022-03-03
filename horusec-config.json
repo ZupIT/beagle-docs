@@ -7,7 +7,8 @@
       "**/**/prism.js",
       "**/themes/**",
       "**/**/index.xml",
-      "**/**/index.html"
+      "**/**/index.html",
+      "**/bin/start.ts"
   ],
   "horusecCliFalsePositiveHashes": [
     "31f0a0efefcfbde0b8c721f4761d5d95292c728492be33ab74f5bce3af23b93e",

@@ -7,10 +7,6 @@ weight: 170
 
 ## Accessing and controlling the BeagleView
 
-{{% alert color="info" %}}
-The features described here are only available in versions 1.2.0 and above.
-{{% /alert %}}
-
 The Beagle View is the entity responsible to manage a server-driven view. It can be created through the Beagle Service via the function `createBeagleView`. The BeagleView can fetch a new view, update its tree, navigate, etc.
 
 ## Accessing the Beagle View
@@ -21,12 +17,12 @@ See the examples below:
 
 ### **Angular**
 
-```text
-<beagle-remote-view [loadParams]="loadParams" (onCreateBeagleView)="onCreateBeagleView($event)">
+```typescript
+<beagle-remote-view [route]="/home" (onCreateBeagleView)="onCreateBeagleView($event)">
 beagle-remote-view>
 ```
 
-```text
+```typescript
 import { Component } from '@angular/core'
 import { BeagleView } from '@zup-it/beagle-web'
 
@@ -52,7 +48,7 @@ class MyComponent {
 
 ### **React**
 
-```text
+```typescript
 import React, { useRef, MutableRefObject, useEffect } from 'react'
 import { BeagleRemoteView } from '@zup-it/beagle-react'
 import { BeagleView } from '@zup-it/beagle-web'
@@ -69,7 +65,7 @@ const MyComponent: FC = () => {
 
   useEffect(logBeagleView, [])
 
-  return <BeagleRemoteView path="/my-path" viewRef={beagleView} />
+  return <BeagleRemoteView route="/my-route" viewRef={beagleView} />
 }
 ```
 
@@ -77,54 +73,29 @@ In the examples above, you accessed the Beagle View and logged it. It is importa
 
 ## Fetching a view
 
-To fetch a view from the backend and update the current view, you need to use the method `fetch` of the `BeagleView`.
+To fetch a view from the backend you need a reference to `BeagleService` and then call the method `viewClient.fetch(remoteView)`.
 
-A fetch operation can be over the entire tree or just a branch. If it's the entire tree, it gets replaced by the result of the request. Otherwise, the tree is kept the same, but for the branch you use `fetch` to update, this specific branch will get replaced by the result of the request. See an example of a call to the function `fetch`:
+A reference to BeagleService can be obtained from its `BeagleView`, through the method `getBeagleService()`.
 
-```text
-// fetches the remote view at /my-path and uses it to replace the entire current view
-beagleView.fetch({ path: '/my-path' })
+The method `viewClient.fetch(remoteView)` requires a single parameter, which is the route to be accessed from the backend so the view can be retrieved. The properties of the `RemoteView` can be found at [`beagle-remote-view` article]({{< ref path="/web/commons/beagle-remote-view" lang="en" >}}).
 
-// fetches the remote view at /my-lazy-container and uses it to replace the component with id 'lazy'
-beagleView.fetch({ path: '/my-lazy-container' }, 'lazy')
-```
+To render a view retrieved by the client, the renderer `BeagleView`: `view.getRenderer()` should be used. The methods od the `Renderer` that render a view are `doFullRender` and `doPartialRender`, to learn more about them, read the [article on rendering]({{< ref path="/web/commons/advanced-topics/rendering" lang="pt" >}}), more specifically the "Using the Renderer" section.
 
-`fetch` can accept 3 parameters, they are:
+## Listening to changes on the UI tree
 
-1. **loadParams:** required. object containing the parameters to control the request, the options are the following:
+Both Beagle Angular and React listen to changes on the UI tree so they can update the screen accordingly. If it is useful for your use case, you can also listen to theses events from the `BeagleView`. To add a listener, just call the method `onChange`from the `BeagleView`
 
-- **path**: required. Path to the view in the backend.
-- **fallback:** optional. A Beagle Tree to fallback to in case of an error.
-- **method:** optional. `get` by default. Use this option if you need another http method.
-- **headers:** optional. Use this option to pass additional headers to this single request.
-- **shouldShowLoading:** optional. Tells wether to use or not the loadingComponent while the view loads. Will use the global configuration if not specified.
-- **shouldShowError:** optional. Tells wether or not to show the error component if the request fails. Will use the global configuration if not specified.
-- **loadingComponent:** optional. The loading component to use. Will use the global configuration if not specified.
-- **errorComponent:** optional. The error component to use. Will use the global configuration if not specified.
+`beagleView.onChange` should be called with a single parameter: the listener function. This function receives the current tree and returns null. See next an example:
 
-  2. **anchor:** optional. Id of the node to attach the resulting view to. By default, it uses the root node and it uses to update a single branch.
-
-  3. **mode:** optional. How to attach the resulting view to the anchor, there are four modes:
-
-- `replaceComponent`: default. Replaces the entire anchor with the result of the request.
-- `replace`: replaces the children of the anchor with the result of the request.
-- `prepend`: adds the result of the request at the start of the list of children of the anchor.
-- `append`: adds the result of the request at the end of the list of children of the anchor.
-
-## Subscribing to events
-
-You can subscribe to events in the Beagle View. There are two types of subscriptions, one that listens to every update to the tree \(`beagleView.subscribe`\) and another that listens to every error in the fetch/renderization process \(`beagleView.addErrorListener`\).
-
-When calling `beagleView.subscribe`, you must pass a single parameter, which is a function that receives the current rendered tree. See the example below:
-
-```text
-const unsubscribeLogger = beagleView.subscribe((newTree) => {
+```Typescript
+const unsubscribeLogger = beagleView.onChange((newTree) => {
   console.log('The tree was updated!')
   console.log(newTree)
 })
 ```
 
-To remove a listener, just call the function it returned. In the previous example `unsubscribeLogger()`.
+To remove the listener, just call the returned function. In the previous example, `unsubscribeLogger()`
+
 
 Error listeners are registered in a similar way. The only difference is that they receive a list of errors:
 
@@ -135,11 +106,9 @@ const removeErrorListener = beagleView.addErrorListener((errors) => {
 })
 ```
 
-By default, Beagle logs every error in the fetch/rendering process to the console. Once a custom error listener is added to the Beagle View, Beagle will stop logging errors by itself and use the treatment provided by the developer instead.
-
 ## Destroying the Beagle View
 
-To avoid memory leaks, Beagle View must be destroyed if it won't be used again. If you're using Angular or React, there's no need to worry about it, it will get done under the hood. If you're using Beagle Web directly, you must call `beagleView.destroy()` when the remote view is removed from the page.
+To prevent already destroyed components from being called, the Beagle View needs to be destroyed if it is not going to be used again. If you are using Angular or React there is no need to worry about this because it will be done automatically by the library. If you are using Beagle Web directly, without using beagle-angular or beagle-react, you should call `beagleView.destroy()` when the page is removed from memory.
 
 ## API
 
@@ -155,25 +124,10 @@ Below you can find all methods of the Beagle View and their description:
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><strong>subscribe</strong>
+      <td style="text-align:left"><strong>onChange</strong>
       </td>
       <td style="text-align:left">function</td>
-      <td style="text-align:left">Receives the listener and returns a function to unsubscribe.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <strong>addErrorListener</strong>
-      </td>
-      <td style="text-align:left">function</td>
-      <td style="text-align:left"><a href="the-beagle-view#subscribing-to-events"><strong>subscribes to errors</strong></a><strong>. </strong>Receives
-        the listener and returns a function to remove the listener.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><strong>fetch</strong>
-      </td>
-      <td style="text-align:left">function</td>
-      <td style="text-align:left"><a href="the-beagle-view#fetching-a-view"><strong>fetches a view from the backend</strong></a><strong> </strong>and
-        uses it to update the current tree.</td>
+      <td style="text-align:left"><a href="the-beagle-view#fetching-a-view"><strong>Receives the listener and returns a function to cancel the subscription.</td>
     </tr>
     <tr>
       <td style="text-align:left"><strong>getRenderer</strong>
@@ -189,7 +143,7 @@ Below you can find all methods of the Beagle View and their description:
       <td style="text-align:left">returns a copy of the currently rendered tree.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><strong>getBeagleNavigator</strong>
+      <td style="text-align:left"><strong>getNavigator</strong>
       </td>
       <td style="text-align:left">function</td>
       <td style="text-align:left">returns the navigator.</td>
