@@ -152,11 +152,11 @@ class CustomBeagleNavigationController: BeagleNavigationController {
 
 ```swift
 let dependencies = BeagleDependencies()
-dependencies.navigation.registerNavigationController(
+dependencies.navigator.registerNavigationController(
     builder: CustomBeagleNavigationController.init,
     forId: "CustomBeagleNavigation"
 )
-Beagle.dependencies = dependencies
+BeagleConfigurator.setup(dependencies: dependencies)
 ```
 
 {{% alert color="info" %}}
