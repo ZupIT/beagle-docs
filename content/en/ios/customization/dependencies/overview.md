@@ -172,7 +172,7 @@ It is responsible for executing **network requests**. Beagle does not provide a 
 
 ### DeepLinkHandlerProtocol
 
-This handler is used for a [**deep link navigation**]({{< ref path="/ios/customization/dependencies/deep-link-handler.md" lang="en" >}}) action. The variable has a default value, you can add new screens or replace them with others in the application.
+This handler is used for a [**deep link navigation**]({{< ref path="/ios/customization/dependencies/deeplink-handler.md" lang="en" >}}) action. The variable has a default value, you can add new screens or replace them with others in the application.
 
 Below you can see a snippet on how to add a screen with a possible route for deep linking using a default value:
 
