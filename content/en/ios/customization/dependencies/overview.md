@@ -128,7 +128,7 @@ static func blackTextNormalStyle() -> (UITextView?) -> Void {
 }
 ```
 
-**Ste 2**: Instantiate AppTheme with an array of key values representing the style name and the corresponding function.
+**Step 2**: Instantiate AppTheme with an array of key values representing the style name and the corresponding function.
 
 ```swift
 let theme = AppTheme(styles: [
@@ -136,7 +136,7 @@ let theme = AppTheme(styles: [
 ])
 ```
 
-**Passo 3**: Add the custom theme dependency to Beagles' dependencies
+**Step 3**: Add the custom theme dependency to Beagles' dependencies
 
 ```swift
 dependencies.theme = theme
