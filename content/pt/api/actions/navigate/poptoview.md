@@ -8,7 +8,7 @@ description: Descrição da ação PopToView e seus atributos
 
 ## O que é? <a id="definicao"></a>
 
-A ação ``PopToView`` faz a navegação para uma tela anterior a tela atual, que esteja na mesma stack (pilha de telas). Ao realizar a ação, qualquer tela posterior a tela para a qual se navegou será destruida. Por exemplo, se a aplicação exibe uma tela que é a ``terceira`` tela em uma pilha, ao navegar para a primeira, a segunda e terceira telas serão destruidas.
+A ação ``PopToView`` faz a navegação para uma tela anterior a tela atual, que esteja na mesma pilha de telas. Ao realizar a ação, qualquer tela posterior a tela para a qual se navegou será destruída. Por exemplo, se a aplicação exibe uma tela que é a ``terceira`` tela em uma pilha, ao navegar para a primeira, a segunda e terceira telas serão destruídas.
 
 A estrutura da ``PopToView`` é:
 
