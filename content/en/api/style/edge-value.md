@@ -155,7 +155,7 @@ Its structure is represented as shown below:
   ]
 }
 -->
-{{% playground file="edge-value.json" language="pt" %}}
+{{% playground file="edge-value.json" language="en" %}}
 {{% /tab %}}
 
 {{< /tabs >}}
