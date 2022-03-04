@@ -8,7 +8,7 @@ description: Descrição da ação ResetStack e seus atributos
 
 ## O que é? <a id="definicao"></a>
 
-A ação ``ResetStack`` cria uma nova tela com a rota informada e destroi a pilha de telas carregadas anteriormente.
+A ação ``ResetStack`` cria uma nova tela com a rota informada e destrói a pilha de telas carregadas anteriormente.
 
 A estrutura do ``ResetStack`` é:
 
