@@ -8,7 +8,7 @@ description: Widget description and attributes
 
 ## What is it?
 
-Widget is an abstract class that allows a visual component to be referenced in Beagle. When a visual component extends from the `widget` class, it inherits 3 properties that enable some attributes and functionality in the visualized elements.
+Widget is an abstract class that allows a visual component to be referenced in Beagle. When a visual component extends from the `widget` class, it inherits 3 properties that enable some attributes and functionality in the instantiated elements.
 
 {{% alert color="warning" %}}
   It is important to remember that, by default, these structures are set to null.
