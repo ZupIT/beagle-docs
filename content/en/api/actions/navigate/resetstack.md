@@ -15,7 +15,7 @@ The structure of ``ResetStack`` is:
 | **Attribute** | **Type** | Required | **Definition** |
 | :------------ | :---------------------------------------------- | :---------: | :------------------ |
 | route | ​[Route]({{< ref path="/api/actions/navigate/route" lang="en" >}})​ | ✓ | Navigation route. |
-| controllerId | String | | The id of the navigation controller to use during the navigation action. If absent, the default navigation controller will be used. |
+| controllerId | String | | The id of the navigation controller to use during the navigation action. If absent, the default navigation controller will be used instead. |
 | navigationContext | ​[NavigationContext]({{< ref path="/api/actions/navigate/navigationcontext" lang="en" >}})​ | | Context to be saved on the target screen. |
 
 ## How to use?
