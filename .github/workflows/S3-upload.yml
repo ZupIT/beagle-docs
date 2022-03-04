@@ -31,7 +31,7 @@ jobs:
           extended: true
 
       - name: S3 upload (images)
-        run: aws s3 sync --acl public-read --follow-symlinks static/shared s3://${{secrets.AWS_DOCS_PROD_BUCKET_NAME}}/shared/
+        run: aws s3 sync --follow-symlinks static/shared s3://${{secrets.AWS_DOCS_PROD_BUCKET_NAME}}/shared/
 
       - name: Remove static images
         shell: bash
@@ -60,10 +60,10 @@ jobs:
           VERSION: ${{ steps.version.outputs.branch_version }}
 
       - name: Upload FAQ
-        run: aws s3 sync --acl public-read --follow-symlinks public/faq s3://${{secrets.AWS_DOCS_PROD_BUCKET_NAME}}/faq/ --delete
+        run: aws s3 sync --follow-symlinks public/faq s3://${{secrets.AWS_DOCS_PROD_BUCKET_NAME}}/faq/ --delete
 
       - name: Upload Portuguese FAQ
-        run: aws s3 sync --acl public-read --follow-symlinks public/pt/faq s3://${{secrets.AWS_DOCS_PROD_BUCKET_NAME}}/pt/faq/ --delete
+        run: aws s3 sync --follow-symlinks public/pt/faq s3://${{secrets.AWS_DOCS_PROD_BUCKET_NAME}}/pt/faq/ --delete
         
       - name: remove FAQ
         shell: bash
@@ -71,7 +71,7 @@ jobs:
         run: rm -rf faq & rm -rf pt/faq
 
       - name: S3 upload
-        run: aws s3 sync --acl public-read --follow-symlinks public s3://$AWS_S3_BUCKET/$VERSION/ --delete
+        run: aws s3 sync --follow-symlinks public s3://${{env.AWS_S3_BUCKET}}/${{env.VERSION}}/ --delete
         env:
           VERSION: ${{ steps.version.outputs.branch_version }}
-          AWS_S3_BUCKET: s3://${{secrets.AWS_DOCS_PROD_BUCKET_NAME}}
+          AWS_S3_BUCKET: ${{secrets.AWS_DOCS_PROD_BUCKET_NAME}}
