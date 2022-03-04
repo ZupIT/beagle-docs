@@ -28,8 +28,6 @@ For more information, check out [**Beagle's documentation**](https://docs.usebea
 
 ### **Requirements**
 To edit, run and build this project, you will need:
-* [**Yarn**](https://yarnpkg.com/)
-    - To check the installation, run `yarn -v` in your terminal.
 * [**Node**](https://nodejs.org/en/)
     - To check the installation, run `npm -v` and `node -v` in your terminal.
 * [**Hugo**](https://gohugo.io/getting-started/installing/)
@@ -42,11 +40,8 @@ To start this project, you must run the following commands:
 git submodule update --init --recursive --remote
 ```
 
-Install your dependencies using `npm` or `yarn`:
+Install your dependencies using `npm`:
 
-```bash
-yarn
-```
 ```
 npm install
 ```
@@ -54,8 +49,9 @@ npm install
 Then run:
 
 ```
-npm run start 
+npm start 
 ```
+
 - If you're getting a fatal error: Pipe failed, run: **`npm run start --watch=false`** or apply [**the Docsy settings**](https://github.com/google/docsy-example/issues/89#issuecomment-758311888).
 - By default, this command will run the project in development mode. If you want to change the environment use, then run **`npm run start --environment=production.`**
 
