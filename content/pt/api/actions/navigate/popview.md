@@ -18,7 +18,7 @@ A estrutura do ``PopView`` é:
 
 ## Como usar?
 
-No exemplo abaixo, temos uma tela com um botão, que ao ser clicado, executa a ação ``PopToView`` e destroi a tela atual, mostrando a tela anterior na mesma stack, se houver.
+No exemplo abaixo, temos uma tela com um botão, que ao ser clicado, executa a ação ``PopToView`` e destrói a tela atual, mostrando a tela anterior na mesma stack, se houver.
 
 Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e chame esse endpoint no frontend.
 
