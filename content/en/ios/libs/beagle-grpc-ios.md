@@ -76,7 +76,6 @@ import Beagle
 import BeagleGRPC
 
 let dependencies = BeagleDependencies()
-Beagle.dependencies = dependencies
 
 let baseUrl = "http://0.0.0.0:50051"
 dependencies.networkClient = NetworkClientGRPC(
@@ -86,6 +85,7 @@ dependencies.networkClient = NetworkClientGRPC(
 dependencies.urlBuilder = UrlBuilder(
   baseUrl: URL(string: baseUrl)
 )
+BeagleConfigurator.setup(dependencies: dependencies)
 ```
 
 Now you are ready to connect to your gRPC server.

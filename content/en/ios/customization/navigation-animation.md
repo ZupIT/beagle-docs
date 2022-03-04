@@ -50,7 +50,8 @@ let animation = BeagleNavigatorAnimation(
                    modalPresentationStyle: .formSheet)
 
 let dependencies = BeagleDependencies()
-dependencies.navigation.defaultAnimation = animation
+dependencies.navigator.setDefaultAnimation(animation)
+BeagleConfigurator.setup(dependencies: dependencies)
 
 ```
 

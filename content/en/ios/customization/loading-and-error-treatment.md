@@ -41,10 +41,10 @@ class MyAppNavigationController: BeagleNavigationController {
 
 ```bash
 let dependencies = BeagleDependencies()
-dependencies.navigation.registerNavigationController(
+dependencies.navigator.registerNavigationController(
     builder: MyAppNavigationController.init,
     forId: "MyAppNavigationController")
-Beagle.dependencies = dependencies
+BeagleConfigurator.setup(dependencies: dependencies)
 ```
 
 It's possible register more than one custom `BeagleNavigationController`. To choose which one to use, the BFF needs to inform the `forId`.
