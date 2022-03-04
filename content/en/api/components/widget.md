@@ -38,7 +38,7 @@ The main attributes of this class are:
 
 ## How to use?
 
-In the example below, we use a Container (a standard Beagle component) to demonstrate the attributes exposed by the widget.
+In the example below, we use a Container (a default Beagle component) to demonstrate the attributes exposed by the widget.
 
 {{% alert color="success" %}}
   Custom components need to extend the `widget.` class from their constructor classes.
