@@ -8,7 +8,7 @@ description: Descrição dos componentes do Widget e seus atributos
 
 ## O que é?
 
-O Widget é uma classe abstrata que permite que um componente visual seja referenciado no Beagle. Quando um componente visual estende da classe `widget`, ele herda 3 propriedades que habilitam algum atributos e funcionalidades nos elementos visualizados.
+O Widget é uma classe abstrata que permite que um componente seja referenciado no Beagle. Quando um componente estende da classe `widget`, ele herda 3 propriedades que habilitam algum atributos e funcionalidades nos elementos visualizados.
 
 {{% alert color="warning" %}}
 É importante lembrar que, por default, essas estruturas são colocadas como nulas.
