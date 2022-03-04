@@ -1,6 +1,6 @@
 ---
 title: Other operators
-weight: 348
+weight: 373
 description: You will find a description of other operators.
 ---
 
@@ -16,7 +16,7 @@ description: You will find a description of other operators.
 
 ### Example
 
-A context with `numbersArray` id that has  **\[0, 1, 2, 3, 4\]** as value and the operation length was used in one component Text to get the size of this array, see below: 
+A context with `numbersArray` id that has  **\[0, 1, 2, 3, 4\]** as value and the operation `length` was used in one component Text to get the size of this array, see below: 
 
 {{< tabs id="T146" >}}
 {{% tab name="JSON" %}}
@@ -53,7 +53,7 @@ fun screen() = Screen(child =
             Text(text = "Array [0, 1, 2, 3, 4] has size: "),
             Text(
                 expressionOf("@{length(numbersArray)}")
-            ).setStyle{ backgroundColor = "#00FF00" }
+            ).setStyle{ backgroundColor = constant("#00FF00") }
         )
     )
 )
