@@ -68,7 +68,7 @@ struct CustomAction: Action {
 }
 ```
 {{% alert color="warning" %}}
-Use the `@AutoCodable` annotation for `Action` or `ServerDrivenComponent` properties type (whether they are lists or optional) if your action receives whether a component or action, so that swift can synthesize the `init(from decoder: Decoder)` initializer.
+Use the `@AutoCodable` annotation for `Action` or `ServerDrivenComponent` properties type (whether they are lists or optional) if your action receives either a component or action, so that swift can synthesize the `init(from decoder: Decoder)` initializer.
 
 In tecnical terms, the `AutoCodable` is a property wrapper that implements the polymorphic serialization and deserialization logic of Beagle's generic types, so we don't need to implement the `init(from decoder: Decoder)`, insofar as now Swift can synthesize it, and considering that all the properties of our widget comply to Codable.
 {{% /alert %}}
