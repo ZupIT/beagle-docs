@@ -20,7 +20,7 @@ A estrutura da ``PushStack`` é:
 
 ## Como usar?
 
-Abaixo temos um exemplo de uma tela simples com um botão que executa a ação PushStack ao ser clicado. Para testá-la, basta listar a URL da tela que quer criar e clicar no botão. A tela será criada em uma nova pilha.
+Abaixo temos um exemplo de uma tela simples com um botão que executa a ação PushStack ao ser clicado. Para testá-la, basta adicionar a URL da tela que quer criar e clicar no botão. A tela será criada em uma nova pilha.
 
 {{< tabs id="T112" >}}
 {{% tab name="JSON" %}}
