@@ -20,7 +20,7 @@ The structure of ``ResetApplication`` is:
 
 ## How to use it?
 
-Below is an example of a simple screen with a button that performs the ResetApplication action when clicked. To test it, just list the URL of the screen you want to create and click the button. The screen will be created in a new stack.
+Below is an example of a simple screen with a button that performs the ResetApplication action when clicked. To test it, just list the URL of the screen you want to create and click the button. The screen will be created in a new stack, and all other stacks will be destroyed
 
 {{< tabs id="T112" >}}
 {{% tab name="JSON" %}}
