@@ -20,7 +20,7 @@ A estrutura do ``ResetStack`` é:
 
 ## Como usar?
 
-Abaixo temos um exemplo de uma tela simples com um botão que executa a ação ResetStack ao ser clicado. Para testá-la, basta listar a URL da tela que quer criar e clicar no botão. A tela será criada em uma nova pilha, e a pilha anterior será destruida (qualquer outra pilha existente não será afetada).
+Abaixo temos um exemplo de uma tela simples com um botão que executa a ação ResetStack ao ser clicado. Para testá-la, basta adicionar a URL da tela que quer criar e clicar no botão. A tela será criada em uma nova pilha, e a pilha anterior será destruída (qualquer outra pilha existente não será afetada).
 
 {{< tabs id="T112" >}}
 {{% tab name="JSON" %}}
