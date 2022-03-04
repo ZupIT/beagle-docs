@@ -112,7 +112,7 @@ In the example below, we use a Container (a default Beagle component) to demonst
 ```kotlin
 Container(
     listOf(
-        Text("I'am a Server-Driven text"),
+        Text("I am a Server-Driven text"),
         Text("I'am another Server-Driven text")
     )
 
