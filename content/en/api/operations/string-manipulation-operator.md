@@ -1,6 +1,6 @@
 ---
 title: String manipulation operator
-weight: 344
+weight: 369
 description: You will find here the description of string manipulation operator
 ---
 
@@ -12,7 +12,7 @@ description: You will find here the description of string manipulation operator
 | :---: | :---: | :--- |
 | concat | "@{concat\("cachorro", "quente"\)}" | Operator that concatenates the strings that are as input. |
 | capitalize | "@{capitalize\(brasil\)}" | Operator that changes the first string letter into a capital letter. |
-| uppercase | "@{uppercase\(brasil\)}" | Operator that changes all letter of a string into uppercases.  |
+| uppercase | "@{uppercase\(brasil\)}" | Operator that changes all letters of a string into uppercases.  |
 | lowercase | "@{lowercase\(BRASIL\)}" | Operator that changes all letters of a string into lowercases.  |
 | substr | "@{substr\(brasil, 3\)}" | Operator that returns a substring of a input string. This operation may have 2 or 3 inputs, where the first parameter is the string  and the second and third ones are the string limit.  |
 
@@ -50,7 +50,7 @@ fun screen() = Screen(child =
             Text(text = "The text bellow is a substring of `The book is on the table`."),
             Text(
                 expressionOf("@{substr('The book is on the table', 4, 11)}")
-            ).setStyle{ backgroundColor = "#00FF00" }
+            ).setStyle{ backgroundColor = constant("#00FF00") }
         )
     )
 )
