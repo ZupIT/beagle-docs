@@ -25,7 +25,7 @@ abstract class Widget : StyleComponent, AccessibilityComponent, IdentifierCompon
 
 Below we list all the attributes that a widget can receive. 
 
-## What are your attributes?
+## What are its attributes?
 
 ### Widget Attributes
 
