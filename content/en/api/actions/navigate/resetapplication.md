@@ -8,7 +8,7 @@ description: ResetApplication action details and its attributes
 
 ## What is it? <a id="definition"></a>
 
-This action creates a new canvas in a new stack and destroys all previous stacks.
+This action creates a new screen in a new stack and destroys all previous stacks.
 
 The structure of ``ResetApplication`` is:
 
