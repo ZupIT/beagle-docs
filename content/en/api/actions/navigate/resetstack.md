@@ -20,7 +20,7 @@ The structure of ``ResetStack`` is:
 
 ## How to use?
 
-This is an example of a simple screen with a button that performs the ResetStack action when clicked. To test it, just list the screen URL you want to create and click on the button. The new screen will be created on a new stack, and the previous stack will be destroyed (any other existing stack will not be affected).
+This is an example of a simple screen with a button that performs the ResetStack action when clicked. To test it, just add the screen URL you want to create and click on the button. The new screen will be created on a new stack, and the previous stack will be destroyed (any other existing stack will not be affected).
 
 {{< tabs id="T112" >}}
 {{% tab name="JSON" %}}
