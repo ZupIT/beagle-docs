@@ -71,7 +71,7 @@ jobs:
         run: rm -rf faq & rm -rf pt/faq
 
       - name: S3 upload
-        run: aws s3 sync --follow-symlinks public s3://$AWS_S3_BUCKET/$VERSION/ --delete
+        run: aws s3 sync --follow-symlinks public s3://${{AWS_S3_BUCKET}}/${{VERSION}}/ --delete
         env:
           VERSION: ${{ steps.version.outputs.branch_version }}
           AWS_S3_BUCKET: s3://${{secrets.AWS_DOCS_PROD_BUCKET_NAME}}
