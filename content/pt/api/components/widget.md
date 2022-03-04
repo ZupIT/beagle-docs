@@ -32,7 +32,7 @@ Abaixo listamos todos os atributos que um widget pode receber.
 Os principais atributos desta classe são:
 | **Atributo** | **Tipo**                                       | Obrigatório | **Definição**      |
 | :----------- | :--------------------------------------------- | :---------: | :----------------- |
-| id        | ​String |      | identifica o componente visual que o widget referencia |
+| id        | ​String |      | identifica o componente que o widget referencia |
 | style | ​[Style]({{< ref path="/api/style/overview.md" lang="pt" >}})​ | | define uma série de propriedades visuais. |
 | accessibility | [Acessibility]({{< ref path="/api/components/accessibility.md" lang="pt" >}})​ | define uma mensagem para o leitor de telas. |
 
