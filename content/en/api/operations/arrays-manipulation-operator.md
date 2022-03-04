@@ -54,7 +54,7 @@ fun screen() = Screen(child =
             Text(text = "Array was [0, 1, 2, 3, 4] and after removing index 2 now is: "),
             Text(
                 expressionOf("@{removeIndex(numbersArray, 2)}")
-            ).setStyle{ backgroundColor = "#00FF00" }
+            ).setStyle{ backgroundColor = constant("#00FF00") }
         )
     )
 )
