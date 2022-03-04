@@ -41,7 +41,7 @@ Abaixo temos um exemplo de uma tela simples com um botão que executa a ação R
 }
 -->
 
-{{% playground file="pushStack.json" language="pt" %}}
+{{% playground file="resetApplication.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
