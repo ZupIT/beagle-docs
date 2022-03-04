@@ -41,7 +41,7 @@ This is an example of a simple screen with a button that performs the ResetStack
 }
 -->
 
-{{% playground file="pushStack.json" language="en" %}}
+{{% playground file="resetStack.json" language="en" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
