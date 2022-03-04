@@ -22,7 +22,7 @@ The structure of ``PushView`` is:
 In the example below, we have a screen with a button, which, when clicked, opens a new screen loaded from the endpoint specified in the `PushView` action.
 
 {{% alert color="success" %}}
-  It is important to explain how the ``Route`` property works. It receives the endpoint of a new screen or server driven component. When this is done, a JSON with the screen or component is obtained as a response. This information is handled by the route attribute. Therefore, it is also possible to list a component directly in the route (which was done in the example below), so, instead of fetching the information from the screen (or component) in the endpoint, it gets it directly from the code implemented in the route.
+  It is important to understand how the ``Route`` property works. It receives the endpoint of a new screen or server driven component. When this is done, a JSON with the screen or component is obtained as a response. This information is handled by the route attribute. Therefore, it is also possible to list a component directly in the route (which was done in the example below), so, instead of fetching the information from the screen (or component) in the endpoint, it gets it directly from the code implemented in the route.
 {{% /alert %}}
 
 To test it, just load the code screen below on the frontend.
