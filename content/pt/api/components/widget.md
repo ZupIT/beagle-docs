@@ -55,7 +55,7 @@ No exemplo abaixo, utilizamos um Container (um componente padrão do Beagle) par
         "text" : "I am a Server-Driven text"
       }, {
         "_beagleComponent_" : "beagle:text",
-        "text" : "I'am another Server-Driven text"
+        "text" : "I am another Server-Driven text"
       } ],
       "id" : "WidgetID",
       "style" : {
