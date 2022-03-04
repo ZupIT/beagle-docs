@@ -32,7 +32,7 @@ Below we list all the attributes that a widget can receive.
 The main attributes of this class are:
 | **Attribute** | **Type** | Required | **Definition** |
 | :------------ | :---------------------------------------------- | :---------: | :------------------ |
-| id | String | | identifies the visual component that the widget references |
+| id | String | | identifies the Beagle components that the widget references |
 | style | ​[Style]({{< ref path="/api/style/overview.md" lang="en" >}})​ | | defines some visual properties. |
 | accessibility | [Accessibility]({{< ref path="/api/components/accessibility.md" lang="en" >}})​ | defines a message for the screen reader. |
 
