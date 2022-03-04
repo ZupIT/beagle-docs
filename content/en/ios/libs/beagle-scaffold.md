@@ -159,10 +159,10 @@ If your app is going to be delivered to production, it's essential to configure 
 
 You can create these layers using these tutorials:
 
-[**Custom Network Layer**]({{< ref path="/ios/customization/network-layer" lang="en" >}})
+[**Custom Network Layer**]({{< ref path="/ios/customization/dependencies/network-layer" lang="en" >}})
 <br>
 
-[**Custom Log System**]({{< ref path="/ios/customization/log-system" lang="en" >}})
+[**Custom Log System**]({{< ref path="/ios/customization/dependencies/log-system" lang="en" >}})
 
 <br>
 <hr>

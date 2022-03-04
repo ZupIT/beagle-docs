@@ -252,7 +252,7 @@ After seeing Beagle's most essential parts, you are now ready to dive into more 
 Beagle has different libraries/frameworks for each supported platform, in the following list you can see and access the most up to date versions:
 
 {{% alert color="info" %}}
-**Backend Kotlin:** [![back](https://camo.githubusercontent.com/27998a386042ecb2cae7b9f09ae159bd07c935bd/68747470733a2f2f696d672e736869656c64732e696f2f6d6176656e2d63656e7472616c2f762f62722e636f6d2e7a75702e626561676c652f6672616d65776f726b)](https://mvnrepository.com/artifact/br.com.zup.beagle/framework)
+**Backend Kotlin:** [![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/framework)](https://mvnrepository.com/artifact/br.com.zup.beagle/framework)
 
 **Mobile**:
 

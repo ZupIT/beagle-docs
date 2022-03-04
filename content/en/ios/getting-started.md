@@ -176,7 +176,7 @@ class BeagleConfig {
         dependencies.urlBuilder = UrlBuilder(
             baseUrl: URL(string: "http://localhost")
         )
-        Beagle.dependencies = dependencies
+        BeagleConfigurator.setup(dependencies: dependencies)
     }
 }
 ```
@@ -218,10 +218,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 You can implement these layers using these tutorials:
 
-[**Custom Network Layer**]({{< ref path="/ios/customization/network-layer" lang="en" >}})
+[**Custom Network Layer**]({{< ref path="/ios/customization/dependencies/network-layer" lang="en" >}})
 <br>
 
-[**Custom Log System**]({{< ref path="/ios/customization/log-system" lang="en" >}})
+[**Custom Log System**]({{< ref path="/ios/customization/dependencies/log-system" lang="en" >}})
 
 <br>
 
@@ -237,7 +237,6 @@ You can do other customizations, see them below:
 * **Action:**  Create custom actions to be executed by your widgets as your users interact with your app;
 * **Navigation Animation:** Customize Beagle screen navigation animations.
 * **Network Client:** Customize the network client to configure the way Beagle will make requests.
-* **Cache:** Customize your cache layer to save server-driven screens as you wish.
 * **Loading and error handling:** Customize the error handling and loading of server-driven screens.
 * **Deep Link handler:** Configure Deep Link Handler to navigate from a server-driven screen to a native screen.
 * **Image Downloader:** Customize how images will be downloaded to be displayed by Beagle.

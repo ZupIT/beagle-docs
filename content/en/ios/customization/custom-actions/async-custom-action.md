@@ -23,6 +23,7 @@ After creating an action, you must implement the `AsyncAction` interface. It wil
 ```swift
 struct CustomAction: AsyncAction {
 
+        @AutoCodable
         var onFinish: [Action]?
 
         func execute(controller: BeagleController, origin: UIView) {
@@ -34,7 +35,7 @@ struct CustomAction: AsyncAction {
 Now you **MUST** notify when its execution is completed by triggering the `onFinish` action.
 
 ```swift
-    controller.execute(actions: self.onFinish, origin: origin)
+controller.execute(actions: self.onFinish, origin: origin)
 ```
 
 Follow the Asynchronous Custom Action example below:
@@ -42,12 +43,13 @@ Follow the Asynchronous Custom Action example below:
 ```swift
 struct CustomAction: AsyncAction {
 
+        @AutoCodable
         var onFinish: [Action]?
 
         func execute(controller: BeagleController, origin: UIView) {
-                print("Custom action was called")
+            print("Custom action was called")
 
-                controller.execute(actions: self.onFinish, origin: origin)
+            controller.execute(actions: self.onFinish, origin: origin)
         }
     }
 ```

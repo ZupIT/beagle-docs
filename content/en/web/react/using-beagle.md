@@ -130,14 +130,10 @@ export default App;
 ```
 
 1. `<BeagleProvider>`: Provides the `beagle-service` configuration file created in the previous step. This is specified in the `value` property;
-2. `<BeagleRemoteView>`: Renders the layout defined by the JSON specified at the `route` property.
+2. `<BeagleRemoteView>`: Renders the layout defined by the JSON specified at the `route` property. Learn more about the `BeagleRemoteView`at [this article]({{< ref path="/web/commons/beagle-remote-view" lang="en" >}})
 
 {{% alert color="info" %}}
-Adds the relative path **' /welcome '** since this will be added at the `baseUrl` set at the `beagle-service.ts` file
-{{% /alert %}}
-
-{{% alert color="warning" %}}
-A `route` in the `BeagleRemoteView` is only valid for versions 1.3 or higher. For previous versions, please use `path.`
+Note that we added the path **' /welcome '** since this will be added at the `baseUrl` set at the `beagle-service.ts` file
 {{% /alert %}}
 
 ## Example
