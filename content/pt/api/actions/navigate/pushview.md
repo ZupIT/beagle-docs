@@ -14,7 +14,7 @@ A estrutura do ``PushView`` é:
 
 | **Atributo** | **Tipo**                                       | Obrigatório | **Definição**      |
 | :----------- | :--------------------------------------------- | :---------: | :----------------- |
-| route        | ​[Route]({{< ref path="/api/actions/navigate/route" lang="pt" >}})​ |      ✓      | Rota de navegação (endpoint que retorna a nova tela). |
+| route        | ​[Route]({{< ref path="/api/actions/navigate/route" lang="pt" >}})​ |      ✓      | Rota de navegação (endpoint ou componente que retorna a nova tela). |
 | navigationContext | ​[NavigationContext]({{< ref path="/api/actions/navigate/navigationcontext" lang="pt" >}})​ | | Contexto a ser salvo na tela destino. |
 
 ## Como usar?
