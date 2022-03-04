@@ -15,7 +15,7 @@ The structure of ``PushStack`` is:
 | **Attribute** | **Type** | Required | **Definition** |
 | :------------ | :-------------------------------------------- | :---------: | :------------------ |
 | route | [Route]({{< ref path="/api/actions/navigate/route/" lang="en" >}}) | ✓ | Navigation route. |
-| controllerId | String | | The navigation controller id to use during the navigation action. If empty, the default navigation controller will be used. |
+| controllerId | String | | The navigation controller id to use during the navigation action. If empty, the default navigation controller will be used instead. |
 | navigationContext | ​[NavigationContext]({{< ref path="/api/actions/navigate/navigationcontext" lang="en" >}})​ | | Context to be saved on the target screen. |
 
 ## How to use?
