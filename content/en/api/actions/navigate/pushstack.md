@@ -20,7 +20,7 @@ The structure of ``PushStack`` is:
 
 ## How to use?
 
-This is an example of a simple screen with a button that performs the PushStack action when clicked. To test it, just list the URL of the screen you want to create (in the URL property on the PushStack action ) and click on the button. The new screen will be created in a new stack.
+This is an example of a simple screen with a button that performs the PushStack action when clicked. To test it, request the URL of the screen you want to create (in the URL property on the PushStack action ) and click on the button. The new screen will be created in a new stack.
 
 {{< tabs id="T112" >}}
 {{% tab name="JSON" %}}
