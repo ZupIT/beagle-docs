@@ -33,7 +33,7 @@ Os principais atributos desta classe são:
 | **Atributo** | **Tipo**                                       | Obrigatório | **Definição**      |
 | :----------- | :--------------------------------------------- | :---------: | :----------------- |
 | id        | ​String |      | identifica o componente que o widget referencia |
-| style | ​[Style]({{< ref path="/api/style/overview.md" lang="pt" >}})​ | | define uma série de propriedades visuais. |
+| style | ​[Style]({{< ref path="/api/style/overview.md" lang="pt" >}})​ | | define uma série de propriedades de estilo. |
 | accessibility | [Acessibility]({{< ref path="/api/components/accessibility.md" lang="pt" >}})​ | define uma mensagem para o leitor de telas. |
 
 ## Como usar?
