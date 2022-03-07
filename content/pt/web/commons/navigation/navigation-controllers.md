@@ -1,49 +1,63 @@
 ---
-title: Navigation controllers
-weight: 3
+title: Controladores de navegação
+wight: 3
 description: >-
-  In this section, you will find information on how to control the navigation feedback.
+  Nesta seção, você encontrará informações sobre os controladores de navegação (Navigation Controllers) e como lidar com o feedback de navegação.
 ---
 
 ---
 
 {{% alert color="warning" %}}
-Attention: If you just wanna change the loading and error components, read [this article]({{< ref path="/web/commons/navigation/loading-error-components" lang="pt" >}}) instead.
-{{% /alert %}}
+Atenção: Se você precisa apenas alterar os componentes de e loading e error, leia [este artigo]({{< ref path="/web/commons/navigation/loading-error-components" lang="pt" >}}) .
+{{% /alerta %}}
 
-# Introduction
-The navigation controllers are responsible for implementing the behavior of the loading, error and success events of the navigation between Beagle pages.
+## O que é isso?
 
-If not set, Beagle will use the `DefaultNavigationController`, which implements the following behavior:
+Os controladores de navegação são responsáveis ​​por implementar o comportamento de carregamento da tela, erros e eventos de sucesso, a partir da navegação entre as páginas do Beagle.
 
-- **onLoading**: render a Beagle UI tree with a single component called `custom:loading`.
-- **onError**: render a Beagle UI tree with a single component called `custom:error`.
-- **onSuccess**: render a Beagle UI tree with the UI tree returned from the backend.
+Se você não definir um controlador de navegação personalizado, o Beagle usará um `Default NavigationController`, que implementa o seguinte comportamento:
 
-This behavior can be customized by implementing your own NavigationController. You can have multiple navigation controllers in a single application, one for each section, for instance. Beagle, from the backend, can tell which NavigationController must be used for the next set of screens.
+- **onLoading**: renderiza uma árvore de UI do Beagle com um único componente chamado `custom:loading`.
+- **onError**: renderiza uma árvore de interface do usuário do Beagle com um único componente chamado `custom:error`.
+- **onSuccess**: renderiza uma árvore de IU do Beagle com a árvore de IU retornada do back-end.
 
-When navigating to a new Stack (PushStack, ResetStack or ResetApplication), the backend can provide a controllerId to the navigation action and Beagle uses this id to find the corresponding NavigationController in the front-end. We can have an entire stack that has a totally different loading feedback, for example.
+{{% alert color="sucesso" %}}
+Todos esses comportamentos podem ser personalizados implementando um `NavigationController` customizado. Você pode ter vários controladores de navegação em um único aplicativo, um para cada seção, se desejar. O framework Beagle presente em seu Frontend consegue definir qual `NavigationController` deve ser chamado para cada conjunto de telas que vem de um Backend, usando uma propriedade chamada `controllerId`
+{{% /alerta %}}
 
-# The NavigationController interface
+Ao navegar para um novo Stack (usando, por exemplo, ações como PushStack, ResetStack ou ResetApplication), o backend pode fornecer um `controllerId` para a ação de navegação que está sendo acionada (você só listará uma Id se quiser usar um controlador de navegação personalizado (`custom NavigationController`)).
 
-## onLoading
-Called whenever Beagle is loading a new view. It receives the following object as a parameter:
+O Beagle usará este id para encontrar o `NavigationController` correspondente no Front end de sua aplicação. Dessa forma, você poderá ter uma pilha inteira de telas com um feedback de carregamento diferente.
 
-- `view: BeagleView`: the [BeagleView]({{< ref path="/web/commons/advanced-topics/the-beagle-view" lang="pt" >}}) that renders this server driven UI.
-- `completeNavigation: () => void`: a function to complete the navigation, i.e. to finally push the new page to the navigator with the `BeagleWidget`. You need to call it as soon as you want to render a Beagle JSON. For instance, if your loading feedback is to render a beagle component, you must call completeNavigation from within the `onLoading` method. If you'll render a Beagle UI only in the success event, you don't need to ever call `completeNavigation` because it gets automatically called after `onSuccess`.
+## Como usá-lo?
 
-## onError
-Called whenever an error happens while loading a new view. It receives the same parameters as the `onLoading` method plus:
+A seguit listamos a interface do NavigationController
 
-- `error: any`: the error thrown while making the request or processing the response.
-- `retry: () => Promise<void>`: a function that, when called, tries to fetch the view again.
+### onLoading
 
-## onSuccess
-Called whenever a view is successfully loaded. To render the view, this method must call `beagleView.getRenderer().doFullRenderer(screen)`. This renders the server driven screen to the current `BeagleView`. With the exception of `completeNavigation`, which will be called anyway by Beagle, the `onSuccess` method accepts the same parameters as the `onLoading` plus:
+Chamada quando o Beagle carrega uma nova visualização. Ela recebe o seguinte objeto como parâmetro:
 
-- `screen: BeagleUIElement`: the server driven view recovered from the [ViewClient]({{< ref path="/web/commons/view-client" lang="en" >}}).
+- `view: BeagleView`: o [BeagleView]({{< ref path="/web/commons/advanced-topics/the-beagle-view" lang="pt" >}}) que renderiza essa IU orientada a servidor.
+- `completeNavigation: () => void`: uma função para completar a navegação, ou seja, para finalmente enviar a nova página para o navegador com o `BeagleWidget`. Você precisa chamá-lo assim que quiser renderizar um Beagle JSON. Por exemplo, se seu feedback de carregamento é para renderizar um componente beagle, você deve chamar completeNavigation de dentro do método `onLoading`. Se você renderizar uma interface do usuário do Beagle apenas no evento de sucesso, não precisará chamar `completeNavigation` porque ele é chamado automaticamente após `onSuccess`.
 
-# Example
+### onError
+
+Chamada quando ocorre um erro ao carregar uma nova visualização. Ela recebe os mesmos parâmetros que o método `onLoading` mais:
+
+- `error: any`: o erro gerado ao fazer a solicitação ou processar a resposta.
+- `retry: () => Promise<void>`: uma função que, quando chamada, tenta buscar a visão novamente.
+
+### onSuccess
+
+Chamado sempre que uma visualização é carregada com sucesso. Para renderizar esta visualização, o método deve chamar `beagleView.getRenderer().doFullRenderer(screen)`. Essa funcionalidade renderiza a tela orientada pelo servidor para o `BeagleView` atual. O método `onSuccess` aceita os mesmos parâmetros que o `onLoading` mais:
+
+- `screen: BeagleUIElement`: a visão orientada pelo servidor recuperada do [ViewClient]({{< ref path="/web/commons/view-client" lang="pt" >}}).
+
+{{% alert color="sucesso" %}}
+`completeNavigation` é a única exceção aqui, pois será chamado de qualquer maneira pelo Beagle
+{{% /alerta %}}
+
+## Exemplo
 
 ```typescript
 import { NavigationController } '@zup-it/beagle-web'
@@ -58,19 +72,33 @@ const inYourFace: NavigationController = {
 }
 ```
 
-This is a terrible navigation controller with the sole purpose of demonstrating the feature. It shows a dialog every time a page starts loading. If an error happens, it shows an error dialog, which offers an option to retry. When the page is successfully loaded, it renders the page.
+Este é um controlador de navegação simples com o único objetivo de demonstrar esse recurso.
 
-The only non-intuitive parameter of the functions in a NavigationController is the `completeNavigation`. You can ignore this if you don't intend to show a Beagle UI before the success event. By default, i.e., if you don't call `completeNavigation`, the navigation with the Beagle structure of the new view will only happen after the success event. But, some navigation controllers, like the default one, uses the Beagle Structure to render the feedback. The DefaultNavigationController renders the Beagle component `custom:loading` whenever a loading event happens and because of this, it needs to call `completeNavigation` right on the method `onLoading`, so Beagle can properly render the component.
+- Mostra uma caixa de diálogo sempre que uma página começa a carregar. Se ocorrer um erro.
+- mostra uma caixa de diálogo de erro, que oferece a opção de tentar novamente.
+- Quando a página é carregada com sucesso, ela renderiza a página.
 
-# Registering the navigation controllers
-To provide all navigation controllers that can be used by the backend, you must create a map where the keys are the controller ids and the values are instances of `NavigationController`.
+O único parâmetro não intuitivo no NavigationController é o `completeNavigation`.
 
-To tell Beagle what NavigationController is the default, you need to set the property `defaultNavigationController`. The default navigation controller is used whenever no controllerId is provided or whenever no controller corresponding to the provided id is found.
+{{% alert color="sucesso" %}}
+Você pode ignorar isso se não pretender mostrar uma IU do Beagle antes do evento de sucesso.
+{{% /alerta %}}
 
-Suppose you have three navigation controllers: `inYourFace`, `secured` and `public`. `inYourFace` is the default, while `secured` and `public` are used in specific sections of the app and are referenced via the controllerId, from the backend. The configuration would be as following:
+Por padrão, se você não chamar a função `completeNavigation`, a navegação ocorrerá após o evento de sucesso. Mas, os controladores de navegação, como o padrão, usam a Estrutura Beagle para renderizar o feedback.
+
+O `Default NavigationController` renderiza o componente `custom:loading` Beagle sempre que um evento de carregamento acontece e é por isso que ele precisa chamar a função `completeNavigation` dentro do método `onLoading`. Dessa forma, o Beagle pode renderizar corretamente o componente.
+
+## Registrando os controladores de navegação
+
+1. Você deve criar um mapa para lidar com todos os `controladores de navegação` que podem ser usados ​​pelo backend, onde as chaves são os *IDs do controlador* e os valores são instâncias de `NavigationController`.
+
+2. Para dizer ao Beagle qual NavigationController é o padrão, você precisa definir a propriedade `defaultNavigationController`. O controlador de navegação padrão é usado sempre que nenhum controllerId for fornecido ou sempre que nenhum controlador correspondente ao id fornecido for encontrado.
+
+Se você tiver três controladores de navegação: `inYourFace`, `secured` e `public`. `inYourFace` é o padrão, enquanto `secured` e `public` são usados ​​em seções específicas do aplicativo e são referenciados via controllerId, configurados em sua tela no backend. A configuração ficaria da seguinte forma:
 
 {{< tabs >}}
 {{% tab name="Angular" %}}
+
 ```typescript
 @BeagleModule({
   defaultNavigationController: inYourFace,
@@ -84,10 +112,13 @@ createBeagleUIService({
   navigationControllers: { secured, public },
   // ...
 })
+
 ```
+
 {{% /tab %}}
 
 {{% tab name="React" %}}
+
 ```typescript
 createBeagleUIService({
   defaultNavigationController: inYourFace,
@@ -95,5 +126,6 @@ createBeagleUIService({
   // ...
 })
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
