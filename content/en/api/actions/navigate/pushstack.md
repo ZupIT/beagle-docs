@@ -1,29 +1,28 @@
 ---
 title: PushStack
 weight: 30
-description: Here you'll find PushStack description and its attribute.
+description: PushStack action details and its attributes
 ---
 
 ---
 
-### What is it?
+## What is it?
 
-Presents a new screen and puts it on the pile.
+This action creates a new screen on a new stack.
 
-Your structure is represented by the attribute below:
+The structure of ``PushStack`` is:
 
-| **Attribute** | **Type**                                       | Required | **Definition**    |
-| :------------ | :--------------------------------------------- | :------- | :---------------- |
-| route         | [**Route**]({{< ref path="/api/actions/navigate/route/" lang="en" >}}) | ✓        | Navigation route. |
-| controllerId | String |     | The navigation controller id to be used during the navigation action, If missing, the default navigation controller will be used instead. |
+| **Attribute** | **Type** | Required | **Definition** |
+| :------------ | :-------------------------------------------- | :---------: | :------------------ |
+| route | [Route]({{< ref path="/api/actions/navigate/route/" lang="en" >}}) | ✓ | Navigation route. |
+| controllerId | String | | The navigation controller id to use during the navigation action. If empty, the default navigation controller will be used instead. |
+| navigationContext | ​[NavigationContext]({{< ref path="/api/actions/navigate/navigationcontext" lang="en" >}})​ | | Context to be saved on the target screen. |
 
-## How to use it?
+## How to use?
 
-On the example below there's a screen coming from BFF with a button that when clicked, open a new server-driven activity with a screen specified by BFF.
+This is an example of a simple screen with a button that performs the PushStack action when clicked. To test it, request the URL of the screen you want to create (in the URL property on the PushStack action ) and click on the button. The new screen will be created in a new stack.
 
-To test, your BFF's endpoint should return a the screen with the code below and call it in the frontend. You can pass a local route or a remote one that will pass the screen endpoint to the one it will navigate.
-
-{{< tabs id="T94" >}}
+{{< tabs id="T112" >}}
 {{% tab name="JSON" %}}
 
 <!-- json-playground:pushStack.json
@@ -34,21 +33,15 @@ To test, your BFF's endpoint should return a the screen with the code below and 
     "text" : "Click me!",
     "onPress" : [ {
       "_beagleAction_" : "beagle:pushStack",
-      "route" : {
-        "screen" : {
-          "_beagleComponent_" : "beagle:screenComponent",
-          "child" : {
-            "_beagleComponent_" : "beagle:text",
-            "text" : "Hello second Screen"
-          }
+        route: {
+          url: NEW_SCREEN_ENDPOINT
         }
-      }
     } ]
   }
 }
 -->
 
-{{% playground file="pushStack.json" language="en" %}}
+{{% playground file="pushStack.json" language="pt" %}}
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
@@ -59,11 +52,7 @@ Screen(
         text = "Click me!",
         onPress = listOf(
             Navigate.PushStack(
-                Route.Local(
-                    Screen(
-                        child = Text("Hello second Screen")
-                    )
-                )
+                Route.Remote(NEW_SCREEN_ENDPOINT)
             )
         )
     )

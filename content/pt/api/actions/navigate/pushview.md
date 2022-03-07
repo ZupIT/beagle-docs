@@ -8,20 +8,24 @@ description: Descrição da ação PushView e seus atributos
 
 ## O que é? <a id="definicao"></a>
 
-Abre uma nova tela na mesma pilha usando uma rota.
+A ação ``PushView`` abre uma nova tela na mesma pilha da tela atual.
 
-A sua estrutura é representada como mostrado abaixo:
+A estrutura do ``PushView`` é:
 
 | **Atributo** | **Tipo**                                       | Obrigatório | **Definição**      |
 | :----------- | :--------------------------------------------- | :---------: | :----------------- |
-| route        | ​[Route]({{< ref path="/api/actions/navigate/route" lang="pt" >}})​ |      ✓      | Rota de navegação. |
-| navigationContext | ​[NavigationContext]({{< ref path="/api/actions/navigate/navigationcontext" lang="pt" >}})​ | | Contexto salvo na tela destino. |
+| route        | ​[Route]({{< ref path="/api/actions/navigate/route" lang="pt" >}})​ |      ✓      | Rota de navegação (endpoint ou componente que retorna a nova tela). |
+| navigationContext | ​[NavigationContext]({{< ref path="/api/actions/navigate/navigationcontext" lang="pt" >}})​ | | Contexto a ser salvo na tela destino. |
 
 ## Como usar?
 
-No exemplo abaixo, temos uma tela vinda do BFF com um botão, que ao ser clicado, abre um novo fragment server-driven com a tela especificada pelo BFF.
+No exemplo abaixo, temos uma tela com um botão, que ao ser clicado, abre uma nova tela carregada a partir do endpoint especificado na ação `PushView`.
 
-Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e chame esse endpoint no frontend. Você poderá passar tanto uma rota local \(que passará uma [**screen**]({{< ref path="/api/components/layout/screen" lang="pt" >}}) na rota\), quanto remota \(que passará o endpoint da tela para a qual irá navegar\).
+{{% alert color="success" %}}
+  Aqui é importante especificar como a propriedade Route funciona. Nela podemos listar o endpoint de uma nova tela ou componente server driven. Quando isso é feito, um JSON com a tela ou componente é obtido como resposta. Essa informação é manuseada pelo atributo route. Sendo assim, também é possivel listar um componente diretamente na rota (o que foi feito no exemplo abaixo), então, ao invés de buscar as informações da tela (ou componente) no endpoint, ele as obtem diretamente do código implementado na rota.
+{{% /alert %}}
+
+Para testar, basta carregar a tela do código abaixo no frontend.
 
 {{< tabs id="T113" >}}
 {{% tab name="JSON" %}}
@@ -53,7 +57,7 @@ Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e
 
 {{% tab name="Kotlin DSL" %}}
 
-```
+```kotlin
 Screen(
     child = Button(
         text = "Click me!",

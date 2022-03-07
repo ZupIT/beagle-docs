@@ -8,7 +8,7 @@ description: Descrição dos componentes do Widget e seus atributos
 
 ## O que é?
 
-O Widget é uma classe abstrata que permite que um componente visual seja referenciado no Beagle. Quando um componente visual se estende do `widget`, ele herda 3 atributos que habilitam algum atributos e funcionalidades nos elementos visualizados.
+O Widget é uma classe abstrata que permite que um componente seja referenciado no Beagle. Quando um componente estende da classe `widget`, ele herda 3 propriedades que habilitam algum atributos e funcionalidades nos elementos visualizados.
 
 {{% alert color="warning" %}}
 É importante lembrar que, por default, essas estruturas são colocadas como nulas.
@@ -23,52 +23,26 @@ abstract class Widget : StyleComponent, AccessibilityComponent, IdentifierCompon
 }
 ```
 
-Abaixo listamos todos os atributos que um widget pode receber. Mas se quiser um exemplo de uso e como criar um widget, veja a seção [**posicionamento de componentes.**]({{< ref path="/resources/components-positioning/" lang="pt" >}})
+Abaixo listamos todos os atributos que um widget pode receber.
 
 ## Quais seus atributos?
 
 ### Atributos do Widget
 
 Os principais atributos desta classe são:
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Atributo</th>
-      <th style="text-align:left">Tipo</th>
-      <th style="text-align:left">Obrigat&#xF3;rio</th>
-      <th style="text-align:left">Defini&#xE7;&#xE3;o</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><strong>id</strong>
-      </td>
-      <td style="text-align:left">String</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">identifica o componente visual listado pelo <code>widget</code>.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">
-        <strong>style</strong>
-      </td>
-      <td style="text-align:left">Style</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">define uma s&#xE9;rie de propriedades visuais.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><strong>accessibility</strong>
-      </td>
-      <td style="text-align:left">Accessibility</td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">define o conte&#xFA;do textual para uso de leitor de telas.</td>
-    </tr>
-  </tbody>
-</table>
+| **Atributo** | **Tipo**                                       | Obrigatório | **Definição**      |
+| :----------- | :--------------------------------------------- | :---------: | :----------------- |
+| id        | ​String |      | identifica o componente que o widget referencia |
+| style | ​[Style]({{< ref path="/api/style/overview.md" lang="pt" >}})​ | | define uma série de propriedades de estilo. |
+| accessibility | [Acessibility]({{< ref path="/api/components/accessibility.md" lang="pt" >}})​ | define uma mensagem para o leitor de telas. |
 
 ## Como usar?
 
-No exemplo abaixo, utilizamos um Container para exemplificar os atributos de um widget. A classe que define um componente visual deve estender da classe `widget.`
+No exemplo abaixo, utilizamos um Container (um componente padrão do Beagle) para demonstrar os atributos expostos pelo widget.
+
+{{% alert color="success" %}}
+  Componentes customizados precisam estender a classe `widget.` a partir de suas classes construturas.
+{{% /alert %}}
 
 {{< tabs id="T177" >}}
 {{% tab name="JSON" %}}
@@ -78,12 +52,12 @@ No exemplo abaixo, utilizamos um Container para exemplificar os atributos de um 
       "_beagleComponent_" : "beagle:container",
       "children" : [ {
         "_beagleComponent_" : "beagle:text",
-        "text" : "Sou um texto Server-Driven"
+        "text" : "I am a Server-Driven text"
       }, {
         "_beagleComponent_" : "beagle:text",
-        "text" : "Sou outro texto Server-Driven"
+        "text" : "I am another Server-Driven text"
       } ],
-      "id" : "SouUmWidget",
+      "id" : "WidgetID",
       "style" : {
         "backgroundColor" : "#ff8100",
         "cornerRadius" : {

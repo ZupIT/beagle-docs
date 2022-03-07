@@ -8,9 +8,9 @@ description: Descrição da ação PopView e seus atributos
 
 ## O que é?
 
-Remove a tela de exibição atual.
+Esta ação destroi a tela exibida atualmente, e mostra a tela anterior na mesma pilha, se houver alguma.
 
-A sua estrutura é representada como mostrado abaixo:
+A estrutura do ``PopView`` é:
 
 | **Atributo** | **Tipo**                                      | Obrigatório | **Definição**      |
 | :----------- | :-------------------------------------------- | :---------: | :----------------- |
@@ -18,7 +18,7 @@ A sua estrutura é representada como mostrado abaixo:
 
 ## Como usar?
 
-No exemplo abaixo, temos uma tela vinda do BFF com um botão, que ao clicar nele, remove a view atual.
+No exemplo abaixo, temos uma tela com um botão, que ao ser clicado, executa a ação ``PopToView`` e destrói a tela atual, mostrando a tela anterior na mesma stack, se houver.
 
 Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e chame esse endpoint no frontend.
 
@@ -40,7 +40,8 @@ Para testar, basta que um endpoint do seu BFF retorne a tela do código abaixo e
 {{% /tab %}}
 
 {{% tab name="Kotlin DSL" %}}
-```
+
+```kotlin
 Screen(
     child = Button(
         text = "Click me!",
@@ -50,5 +51,6 @@ Screen(
     )
 )
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
