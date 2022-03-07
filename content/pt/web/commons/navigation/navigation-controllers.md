@@ -8,8 +8,8 @@ description: >-
 ---
 
 {{% alert color="warning" %}}
-Atenção: Se você precisa apenas alterar os componentes de e loading e error, leia [este artigo]({{< ref path="/web/commons/navigation/loading-error-components" lang="pt" >}}) .
-{{% /alerta %}}
+Atenção: Se você precisa apenas alterar os componentes de loading e error, leia [este artigo]({{< ref path="/web/commons/navigation/loading-error-components" lang="pt" >}}) .
+{{% /alert %}}
 
 ## O que é isso?
 
@@ -21,9 +21,9 @@ Se você não definir um controlador de navegação personalizado, o Beagle usar
 - **onError**: renderiza uma árvore de interface do usuário do Beagle com um único componente chamado `custom:error`.
 - **onSuccess**: renderiza uma árvore de IU do Beagle com a árvore de IU retornada do back-end.
 
-{{% alert color="sucesso" %}}
+{{% alert color="success" %}}
 Todos esses comportamentos podem ser personalizados implementando um `NavigationController` customizado. Você pode ter vários controladores de navegação em um único aplicativo, um para cada seção, se desejar. O framework Beagle presente em seu Frontend consegue definir qual `NavigationController` deve ser chamado para cada conjunto de telas que vem de um Backend, usando uma propriedade chamada `controllerId`
-{{% /alerta %}}
+{{% /alert %}}
 
 Ao navegar para um novo Stack (usando, por exemplo, ações como PushStack, ResetStack ou ResetApplication), o backend pode fornecer um `controllerId` para a ação de navegação que está sendo acionada (você só listará uma Id se quiser usar um controlador de navegação personalizado (`custom NavigationController`)).
 
@@ -31,7 +31,7 @@ O Beagle usará este id para encontrar o `NavigationController` correspondente n
 
 ## Como usá-lo?
 
-A seguit listamos a interface do NavigationController
+A seguir listamos a interface do NavigationController
 
 ### onLoading
 
@@ -53,9 +53,9 @@ Chamado sempre que uma visualização é carregada com sucesso. Para renderizar 
 
 - `screen: BeagleUIElement`: a visão orientada pelo servidor recuperada do [ViewClient]({{< ref path="/web/commons/view-client" lang="pt" >}}).
 
-{{% alert color="sucesso" %}}
+{{% alert color="success" %}}
 `completeNavigation` é a única exceção aqui, pois será chamado de qualquer maneira pelo Beagle
-{{% /alerta %}}
+{{% /alert %}}
 
 ## Exemplo
 
@@ -80,9 +80,9 @@ Este é um controlador de navegação simples com o único objetivo de demonstra
 
 O único parâmetro não intuitivo no NavigationController é o `completeNavigation`.
 
-{{% alert color="sucesso" %}}
+{{% alert color="success" %}}
 Você pode ignorar isso se não pretender mostrar uma IU do Beagle antes do evento de sucesso.
-{{% /alerta %}}
+{{% /alert %}}
 
 Por padrão, se você não chamar a função `completeNavigation`, a navegação ocorrerá após o evento de sucesso. Mas, os controladores de navegação, como o padrão, usam a Estrutura Beagle para renderizar o feedback.
 
@@ -92,9 +92,9 @@ O `Default NavigationController` renderiza o componente `custom:loading` Beagle 
 
 1. Você deve criar um mapa para lidar com todos os `controladores de navegação` que podem ser usados ​​pelo backend, onde as chaves são os *IDs do controlador* e os valores são instâncias de `NavigationController`.
 
-2. Para dizer ao Beagle qual NavigationController é o padrão, você precisa definir a propriedade `defaultNavigationController`. O controlador de navegação padrão é usado sempre que nenhum controllerId for fornecido ou sempre que nenhum controlador correspondente ao id fornecido for encontrado.
+2. Para dizer ao Beagle qual NavigationController é o controlador padrão, você precisa definir a propriedade `defaultNavigationController`. O controlador de navegação padrão é usado sempre que nenhum controllerId for fornecido ou sempre que nenhum controlador correspondente ao id fornecido for encontrado.
 
-Se você tiver três controladores de navegação: `inYourFace`, `secured` e `public`. `inYourFace` é o padrão, enquanto `secured` e `public` são usados ​​em seções específicas do aplicativo e são referenciados via controllerId, configurados em sua tela no backend. A configuração ficaria da seguinte forma:
+Se você tiver três controladores de navegação: `inYourFace`, `secured` e `public`. `inYourFace` é o padrão, enquanto `secured` e `public` serão usados ​​em seções específicas do aplicativo e referenciados via controllerIds, definidos em sua tela no backend. A configuração ficaria da seguinte forma:
 
 {{< tabs >}}
 {{% tab name="Angular" %}}
