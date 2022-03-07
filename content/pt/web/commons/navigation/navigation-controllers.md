@@ -92,7 +92,7 @@ O `Default NavigationController` renderiza o componente `custom:loading` Beagle 
 
 1. Você deve criar um mapa para lidar com todos os `controladores de navegação` que podem ser usados ​​pelo backend, onde as chaves são os *IDs do controlador* e os valores são instâncias de `NavigationController`.
 
-2. Para dizer ao Beagle qual NavigationController é o controlador padrão, você precisa definir a propriedade `defaultNavigationController`. O controlador de navegação padrão é usado sempre que nenhum controllerId for fornecido ou sempre que nenhum controlador correspondente ao id fornecido for encontrado.
+2. Neste mapa você pode também definir um outro navegador que queira que seja usado como padrão. Para tal basta a propriedade `defaultNavigationController`. O controlador de navegação padrão é usado sempre que nenhum ``controllerId`` for fornecido ou sempre que nenhum controlador correspondente ao id fornecido for encontrado.
 
 Se você tiver três controladores de navegação: `inYourFace`, `secured` e `public`. `inYourFace` é o padrão, enquanto `secured` e `public` serão usados ​​em seções específicas do aplicativo e referenciados via controllerIds, definidos em sua tela no backend. A configuração ficaria da seguinte forma:
 

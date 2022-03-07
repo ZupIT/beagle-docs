@@ -1,24 +1,28 @@
 ---
-title: View client
+title: View Client
 weight: 3
 description: >-
-  In this section, you will find information on how to setup a ViewClient in Beagle Web.
+  Nesta seção, você encontrará informações sobre como configurar um ViewClient no Beagle Web.
 ---
 
 ---
 
-# Introduction
-Similar to the HttpClient, but more specific. While the HttpClient is responsible for managing every request (views, json data, images, etc), the ViewClient is only responsible for fetching views, i.e. server driven pages.
+## O que é isso?
 
-The ViewClient creates the BeagleRequest that is sent to the HttpClient. The default implementation does two things:
-1. creates the BeagleRequest according to what has been requested by its caller (normally, the navigator);
-2. when the response arrives from the HttpClient, it checks for navigation actions where `preFetch` is `true` and, asynchronously, pre-fetches their results.
+O `View Client` é muito semelhante ao HttpClient. Enquanto o HttpClient é responsável por gerenciar todas as requisições (views, dados json, imagens, etc), o ``ViewClient`` é responsável apenas por buscar *views*, ou seja, Páginas Server Driven.
 
-It does nothing other than this, and this might be enough for most applications. But some applications may need extra behavior when fetching views, and this is the place where it should be implemented.
+O ``ViewClient`` cria um ``BeagleRequest`` que é enviado ao HttpClient. A implementação padrão do view client faz duas ações:
 
-# Creating a new ViewClient
+1. Cria o ``BeagleRequest`` de acordo com o que foi solicitado de quem o requisitou (geralmente o navegador);
+2. Quando a resposta chega do HttpClient, ele verifica se a propriedade de navegação `preFetch` é ``verdadeira`` (``true``) e, *de ​​forma assíncrona*, faz uma busca prévia de seus resultados.
 
-A good example is caching. Let's say we want to locally store a view so when Beagle calls `viewClient.fetch` again, it returns the cached result instead of calling the hHttpClient. To do this, we can implement a new ViewClient that has storage and implements `fetch` as follows:
+Ele não faz nada além disso, e geralmente é o suficiente para a maioria das aplicações. Mas, alguns sistemas podem precisar de um comportamento extra ao buscar as novas `views`, e este é o lugar onde ele deve ser implementado.
+
+## Como usá-lo?
+
+### Criando um novo ViewClient
+
+Um bom exemplo é o cache. Digamos que queremos armazenar uma ``view`` localmente para quando o Beagle chamar `viewClient.fetch` novamente, ele retorne o resultado em cache ao invés de chamar o HttpClient. Para fazer isso, podemos implementar um novo ``ViewClient`` que possui um armazenamento e implementa `fetch` da seguinte forma:
 
 ```typescript
 import { ViewClient } from '@zup-it/beagle-web'
@@ -43,13 +47,15 @@ function createMyViewClient(): ViewClient {
 }
 ```
 
-Above we implemented a very simple logic that will store every fetch result into the disk using the localStorage. This is a very dumb implementation, because this cache would never expire, but the objective here is just to show how such feature could be implemented using the ViewClient.
+Implementamos uma lógica bem simplória acima que armazenará cada resultado de busca no disco usando o *localStorage*. Esta é uma implementação simples e apenas *para teste*, pois esse cache nunca expiraria.
 
-# Registering the new ViewClient
-After creating your custom ViewClient, you just need to pass it to your BeagleService instance:
+### Registrando o novo ViewClient
+
+Depois de criar seu ``ViewClient`` personalizado acima, você precisa passá-lo para sua instância do ``BeagleService``:
 
 {{< tabs >}}
 {{% tab name="Angular" %}}
+
 ```typescript
 @BeagleModule({
   viewClient: createMyViewClient(),
@@ -63,14 +69,17 @@ createBeagleUIService({
   // ...
 })
 ```
+
 {{% /tab %}}
 
 {{% tab name="React" %}}
+
 ```typescript
 createBeagleUIService({
   viewClient: createMyViewClient(),
   // ...
 })
 ```
+
 {{% /tab %}}
 {{< /tabs >}}

@@ -92,7 +92,7 @@ The `Default NavigationController` renders the `custom:loading` Beagle component
 
 1. You must create a map to handle all `navigation controllers` that can be used by the backend, where the keys are the *controller ids* and the values are instances of `NavigationController`.
 
-2. To tell Beagle what NavigationController is the default controller, you need to set the property `defaultNavigationController`. The default navigation controller is used whenever no controllerId is provided or whenever no controller corresponding to the provided id is found.
+2. On this map you can also define another `NavigationController` that you want to be used as the *default*. To do so, just use the `defaultNavigationController` property. The ``default`` navigation controller is used whenever no ``controllerId`` is given or whenever no controller matching the given id is found.
 
 If you have three navigation controllers: `inYourFace`, `secured` and `public`. `inYourFace` is the default, while `secured` and `public` are used in specific sections of the app and are referenced via controllerId, set on your Screen on the backend. The configuration would be as following:
 

@@ -7,18 +7,22 @@ description: >-
 
 ---
 
-# Introduction
-Similar to the HttpClient, but more specific. While the HttpClient is responsible for managing every request (views, json data, images, etc), the ViewClient is only responsible for fetching views, i.e. server driven pages.
+## What is it?
 
-The ViewClient creates the BeagleRequest that is sent to the HttpClient. The default implementation does two things:
-1. creates the BeagleRequest according to what has been requested by its caller (normally, the navigator);
-2. when the response arrives from the HttpClient, it checks for navigation actions where `preFetch` is `true` and, asynchronously, pre-fetches their results.
+The `View Client` is very similar to the HttpClient. While the HttpClient is responsible for managing every request (views, json data, images, etc), the ``ViewClient`` is only responsible for fetching views, i.e. Server Driven Pages.
 
-It does nothing other than this, and this might be enough for most applications. But some applications may need extra behavior when fetching views, and this is the place where it should be implemented.
+The ``ViewClient`` creates a ``BeagleRequest`` that is sent to the HttpClient. The default implementation handles 2 things:
 
-# Creating a new ViewClient
+1. It creates a ``BeagleRequest`` according to what has been requested by its caller (generally the navigator);
+2. When the response arrives from the HttpClient, it checks for navigation actions where `preFetch` is `true` and, *asynchronously*, pre-fetches their results.
 
-A good example is caching. Let's say we want to locally store a view so when Beagle calls `viewClient.fetch` again, it returns the cached result instead of calling the hHttpClient. To do this, we can implement a new ViewClient that has storage and implements `fetch` as follows:
+It does nothing more than this, and this might be enough for most applications. But, some applications may need extra behavior when fetching views, and this is the place where it should be implemented.
+
+## How to use it?
+
+### Creating a new ViewClient
+
+A good example is caching. Let's say we want to locally store a view so when Beagle calls `viewClient.fetch` again, it returns the cached result instead of calling the HttpClient. To do this, we can implement a new ``ViewClient`` that has a storage and implements `fetch` as follows:
 
 ```typescript
 import { ViewClient } from '@zup-it/beagle-web'
@@ -43,13 +47,15 @@ function createMyViewClient(): ViewClient {
 }
 ```
 
-Above we implemented a very simple logic that will store every fetch result into the disk using the localStorage. This is a very dumb implementation, because this cache would never expire, but the objective here is just to show how such feature could be implemented using the ViewClient.
+We have implemented a very simple logic above that will store every fetch result into the disk using the *localStorage*. This is a simple and only *for test* implementation, since this cache would never expire.
 
-# Registering the new ViewClient
-After creating your custom ViewClient, you just need to pass it to your BeagleService instance:
+### Registering the new ViewClient
+
+After creating your custom ``ViewClient`` above, you need to pass it to your ``BeagleService`` instance:
 
 {{< tabs >}}
 {{% tab name="Angular" %}}
+
 ```typescript
 @BeagleModule({
   viewClient: createMyViewClient(),
@@ -63,14 +69,17 @@ createBeagleUIService({
   // ...
 })
 ```
+
 {{% /tab %}}
 
 {{% tab name="React" %}}
+
 ```typescript
 createBeagleUIService({
   viewClient: createMyViewClient(),
   // ...
 })
 ```
+
 {{% /tab %}}
 {{< /tabs >}}
