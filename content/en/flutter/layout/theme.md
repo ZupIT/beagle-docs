@@ -18,10 +18,26 @@ A theme is a set of styles that can be referenced by the property `styleId` of t
 
 The local image resources are strings with the paths to every image that can be accessed by the server driven view with the parameter `mobileId` of the Image component. If an image comes with the `mobileId` "logo", for instance, it would use the image path returned by `beagleTheme.image('logo')`.
 
-# How to create and setup a BeagleTheme?
-It's simple! You just need to:
+## How to use the BeagleTheme?
+
+The BeagleTheme is not a feature of the core Beagle library, but instead, it's from the package beagle_components. For this reason, differently than most configuration options, it doesn't do into the BeagleService. The BeagleTheme must be provided to the default components via the widget `BeagleThemeProvider`.
+
+The `BeagleThemeProvider` must wrap the application to prevent cases where a navigation would make it unavailable. See the example below:
+
 1. Create a class that implements the `BeagleTheme` interface;
 2. Provide an instance of the class to the `BeagleThemeProvider`, that should wrap your application.
+
+```dart
+void main() {
+  runApp(BeagleProvider(
+    beagle: beagleService,
+    child: BeagleThemeProvider(
+      theme: MyTheme(),
+      child: MyApp()
+    ),
+  ));
+}
+```
 
 ## Local images
 The method `image` receives the image id that comes from the JSON (`mobileId`) and returns the corresponding local image asset path. Check out the following example:
@@ -88,22 +104,5 @@ class MyTheme extends BeagleTheme {
   }
 
   // ...
-}
-```
-
-## How to use the BeagleTheme?
-The BeagleTheme is not a feature of the core Beagle library, but instead, it's from the package beagle_components. For this reason, differently than most configuration options, it doesn't do into the BeagleService. The BeagleTheme must be provided to the default components via the widget `BeagleThemeProvider`.
-
-The `BeagleThemeProvider` must wrap the application to prevent cases where a navigation would make it unavailable. See the example below:
-
-```dart
-void main() {
-  runApp(BeagleProvider(
-    beagle: beagleService,
-    child: BeagleThemeProvider(
-      theme: MyTheme(),
-      child: MyApp()
-    ),
-  ));
 }
 ```
