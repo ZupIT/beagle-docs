@@ -1,5 +1,5 @@
 ---
 title: Flutter
 weight: 7
-description: Here you will see more about the Beagle for Flutter
+description: Aqui você aprende mais sobre o Beagle Flutter
 ---

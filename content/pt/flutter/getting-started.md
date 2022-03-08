@@ -2,24 +2,22 @@
 title: First steps
 weight: 2
 description: >-
-  In this section, you will find how to install Beagle in your Flutter application and the initial step-by-step for using the Beagle library in a Flutter project.
+  Nesta seção você aprende como instalar o Beagle Flutter em sua aplicação e o passo a passo inicial para começar a usar.
 ---
 
 ---
 
-# Installation
-Follow the steps to install:
+# Instalação
 
-1. Open the file `pubspec.yaml` in the root of your project;
-2. Under `dependencies`, add `beagle: ˆ2.0.0`, or the most recent version;
-3. Add `beagle_components: ^2.0.0`. You can omit this dependency if you're familiar with Beagle and won't use any
-of the default components;
-4. In your IDE (Android Studio or Visual Studio Code), click `pub get`. Or, from the terminal, type `flutter pub get`.
+1. Abra o arquivo `pubsec.yaml` na raiz do projeto;
+2. Em `dependencies`, adicione `beagle: ^2.0.0`, ou a versão desejada;
+3. Adicione `beagle_components ^2.0.0`. Você pode omitir esta dependência se não for usar nenhum componente padrão.
+4. Na sua IDE (Android Studio ou VS Code), clique em  `pub get`. Ou, pela linha de comando, digite: `flutter pub get`.
 
-# Configuration and start up
+# Configuração e Inicialização
 
-## Step 1. Create the BeagleService
-In order to work, Beagle needs and instance of the class BeagleService, which can be instantiated as follows:
+## Passo 1. Criando o BeagleService
+Para funcionar, o Beagle precisa de uma instância da classe BeagleService, veja a seguir:
 
 ```dart
 import 'package:beagle/beagle.dart';
@@ -32,13 +30,17 @@ final beagleService = BeagleService(
 );
 ```
 
-The `baseUrl` is the endpoint that will deliver the JSONs representing the UI, i.e. the Backend For the Frontend (BFF). The parameter `components` is a map of the components (widgets) to be made available for Beagle. If Beagle uses a "custom:button", for instance, this map must have a key "custom:button" linked to the corresponding widget. The parameter `actions` is a map of additional actions to be added to Beagle, in this example we add all actions that come with the default components package. There must be a key in this map for every action used by Beagle.
+O `baseUrl` é o endpoint que receberá os JSONs que representam a UI, ou seja, do "Backend For the Frontend" (BFF). 
 
-`baseUrl` and `components` are the only two required properties when instantiating the Beagle Service, but many aspects of the Server Driven UI behavior can be customized through this configuration. For a list of all the available options, please check the 
-[Beagle Initialization section]({{< ref path="/flutter/other/beagle-service" lang="en" >}}).
+O parâmetro `components` é um mapa dos componentes (widgets) a serem disponibilizados para o Beagle. Se o Beagle usa um "custom:button", por exemplo, este mapa deve ter uma chave "custom:button" vinculada ao widget correspondente. 
 
-## Step 2. Provide the BeagleService
-After creating the BeagleService, we need to tell Flutter we want to use it for all descending elements. The widget `BeagleProvider` is the one responsible for this, it accepts the BeagleService and a child, which is the app itself.
+O parâmetro `actions` é um mapa de ações adicionais a serem adicionadas ao Beagle, neste exemplo adicionamos todas as ações que vêm com o pacote de componentes padrão. Deve haver uma chave neste mapa para cada ação usada pelo Beagle.
+
+`baseUrl` e `components` são as duas únicas propriedades necessárias ao instanciar o Serviço Beagle, mas muitos aspectos do comportamento da IU orientada a servidor podem ser personalizados por meio dessa configuração. Para obter uma lista de todas as opções disponíveis, [veja mais aqui]({{< ref path="/flutter/other/beagle-service" lang="en" >}}).
+
+## Passo 2. Usando o BeagleService
+
+Depois de criar o BeagleSevice, precisamos adicioná-lo para ser acessível aos demais componentes e a porta de entrada para isso é o `BeagleProvider`. Esse elemento aceita uma instância do BeagleService e os componentes filhos que compoem a aplicação.
 
 ```dart
 import 'package:beagle/beagle.dart';
@@ -61,10 +63,11 @@ void main() {
 }
 ```
 
-We recommend declaring the BeagleProvider as soon as possible. Be careful not to put it inside a navigator, because it might make it unavailable when the screen changes, which is not what we want.
+Note que é usual declarar o BeagleProvider o quanto antes na hierarquia da aplicação. Tenha cuidado para não colocá-lo dentro de um navegador, pois isso pode torná-lo indisponível quando houver mudanças de tela.
 
-## Step 3. Start a Beagle flow
-To start a Beagle flow (set of screens provided by the backend), you need to use the function `openBeagleScreen`, made available by the core Beagle Library. See the example below:
+## Passo 3. Iniciando a fluxo Beagle
+
+Para iniciar o carregamento das telas Beagle vinda do backend, é preciso usar a funcção `openBeagleScreen`, que é importada do core da biblioteca. Veja no exemplo:
 
 ```dart
 class BeagleSampleApp extends StatelessWidget {
@@ -84,18 +87,18 @@ class BeagleSampleApp extends StatelessWidget {
 }
 ```
 
-The function `openBeagleScreen` can be further customized. If you want to check the additional properties, please visit the [openBeagleScreen section]({{< ref path="/flutter/navigation/open-beagle-screen" lang="en" >}}).
+A função `openBeagleScreen` pode ser customizada. Você pode dar uma olhada nas propriedades adicionais em: [openBeagleScreen]({{< ref path="/flutter/navigation/open-beagle-screen" lang="en" >}}).
 
 {{% alert color="success" %}}
-Congrats, you have finished your first Beagle Screen!
+Parabéns, você criou sua primeira tela Beagle Flutter!
 {{% /alert %}}
 
-## Continue reading
-A good idea to check every feature of Beagle Flutter is to read the page ["BeagleService"]({{< ref path="/flutter/other/beagle-service" lang="en" >}}). There you'll find summarized descriptions of everything that can be set up for the BeagleService and links to the full documentation of each feature.
+## Continue lendo
+Se você quer conhecer mais funcionalidades disponíveis para o Beagle Flutter, você pode dar uma olhada na página ["BeagleService"]({{< ref path="/flutter/other/beagle-service" lang="en" >}})] onde você encontra descrições de tudo que está disponível e também links para mais documentações.
 
-The other important features that are not included in the "BeagleService" page are:
+Algumas outras funcionalidades não disponíveis pelo `BeagleService` são:
 
-- [**openBeagleScreen**]({{< ref path="/flutter/navigation/open-beagle-screen" lang="en" >}}): learn more about that method that starts a Beagle flow.
-- [**styles**]({{< ref path="/flutter/layout/styles" lang="en" >}}): check how the Beagle Styles work in Beagle Flutter and how to customize or completely disabled it.
-- [**localhost**]({{< ref path="/flutter/network/localhost" lang="en" >}}): learn how to execute Beagle Flutter with a server running in the localhost.
-- [**BeagleView**]({{< ref path="/flutter/other/beagle-view" lang="en" >}}): learn how to manipulate the BeagleView and trigger new renders.
+- [**openBeagleScreen**]({{< ref path="/flutter/navigation/open-beagle-screen" lang="en" >}}): Aprenda mais sobre esse método que inicia o fluxo de telas.
+- [**styles**]({{< ref path="/flutter/layout/styles" lang="en" >}}): Veja como funciona a estilização no Beagle Flutter, como customizá-la ou até desabilitá-la
+- [**localhost**]({{< ref path="/flutter/network/localhost" lang="en" >}}): Aprenda como executar uma aplicação Beagle Flutter com servidor local
+- [**BeagleView**]({{< ref path="/flutter/other/beagle-view" lang="en" >}}): Aprenda como usar a BeagleView e iniciar renderizações.
