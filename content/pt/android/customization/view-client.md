@@ -1,29 +1,37 @@
 ---
-title: View client
-weight: 109
+title: Ver cliente
+wight: 109
 description: >-
-  In this section, you will find information on how to setup a ViewClient in Beagle Android.
+  Nesta seção, você encontrará informações sobre como configurar um ViewClient customizado no Beagle Android.
 ---
 
 ---
 
-# Introduction
-Similar to the HttpClient, but more specific. While the HttpClient is responsible for managing every request (views, json data, images, etc), the ViewClient is only responsible for fetching views, i.e. server driven pages.
-The ViewClient interface has to functions `fetch` and `prefetch`.
+## O que é isso?
 
-The default implementation of `fetch` does two things:
-1. search for a response data in a local cache, if exists, remove it from cache and return;
-2. if there is no response data in cache, it calls HttpClient and make the request for the ResponseData.
+O `View Client` é muito semelhante ao HttpClient. Enquanto o HttpClient é responsável por lidar com requisições (views, json data, imagens, etc), o ``ViewClient`` é responsável apenas por buscar views (Server Driven Views).
 
-The default implementation of `prefech` does two things:
-1. search for a response data in a local cache, and return it if exists;
-2. if there is no response data in cache, it calls HttpClient and make the request for the ResponseData and store it in cache (memory).
+A interface ViewClient tem as funções **`fetch`** e **`prefetch`**.
 
-Note that `fetch` just search for responses that may have been prefetched earlier, and `prefetch` just store responses. It does nothing other than this, and this might be enough for most applications. But some applications may need extra behavior when fetching views, and this is the place where it should be implemented.
+A implementação padrão de **`fetch`** tem 2 funcionalidades:
 
-# Creating a new ViewClient
+1. Ela procura um **`response data`** em um cache local, e caso exista, esta função o remove do cache e retorna seu conteúdo;
+2. Se não houver dados de resposta no cache, esta função chama o `HttpClient` e faz uma solicitação para um ResponseData.
 
-A good example is caching. Let's say we want to locally store a response so when Beagle calls `viewClient.fetch` again, it returns the cached result instead of calling the HttpClient. To do this, we can create a new ViewClient class that implement ViewClient, has storage and is annotated with `@BeagleComponent` as follows:
+A implementação padrão do **`prefech`** tem 2 funcionalidades:
+
+1. Ele procura dados de resposta em um cache local e retorna esse cache se existir;
+2. Se não houver dados de resposta em cache, esta função chama o `HttpClient` e faz a solicitação de um ResponseData e armazena em cache (memória).
+
+{{% alert color="sucesso" %}}
+Observe que `fetch` apenas procura por respostas que possam ter sido *requisitadas* anteriormente, e `prefetch` apenas armazena respostas. Ele faz isso apenas, geralmente é o bastante para muitas aplicações. Mas pode haver alguma outra situação em que uma aplicação precise de um comportamento extra ao buscar `views`, e é nesse momento que um `ViewClient` customizado deve ser feito.
+{{% /alerta %}}
+
+## Criando um novo ViewClient
+
+Um bom exemplo é o cache. Digamos que queremos armazenar uma `view` localmente de forma que quando o Beagle chamar `viewClient.fetch` novamente, ele retorne o resultado em cache, ao invéz de chamar o HttpClient.
+
+Para fazer isso, criamos uma classe ``**MyViewClient**`` que implementa ``ViewClient``, que tem uma forma de armazenamento e é anotado com `@BeagleComponent` da seguinte forma:
 
 ```kotlin
 @BeagleComponent
@@ -65,4 +73,4 @@ class MyViewClient(
 
 ```
 
-Above we implemented a very simple logic to `fetch` and `prefetch` that will store every fetch result in memory using a MutableMap `cachedResponses` using the request url as key, and search for a ResponseData in it every time `fetch` or `prefetch` is called. This is a very dumb implementation, because this cache would never expire, but the objective here is just to show how such feature could be implemented using the ViewClient.
+Neste exemplo implementamos uma lógica para `fetch` e `prefetch` que irá armazenar cada resultado de busca na memória usando um `MutableMap` chamado `cachedResponses`. Ele usa a *request url* como chave, e procura por um ``ResponseData`` toda vez que `fetch` ou `prefetch` é chamado. Esta é uma implementação simples, pois esse cache nunca expiraria, pois o objetivo aqui é mostrar como esse recurso pode ser implementado usando o ViewClient.

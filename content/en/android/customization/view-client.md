@@ -7,23 +7,31 @@ description: >-
 
 ---
 
-# Introduction
-Similar to the HttpClient, but more specific. While the HttpClient is responsible for managing every request (views, json data, images, etc), the ViewClient is only responsible for fetching views, i.e. server driven pages.
-The ViewClient interface has to functions `fetch` and `prefetch`.
+## What is it?
 
-The default implementation of `fetch` does two things:
-1. search for a response data in a local cache, if exists, remove it from cache and return;
-2. if there is no response data in cache, it calls HttpClient and make the request for the ResponseData.
+The `View Client` is very similar to the HttpClient. While the HttpClient is responsible for handling requests (views, json data, images, etc), the ``ViewClient`` is only responsible for fetching views (Server Driven Views).
 
-The default implementation of `prefech` does two things:
-1. search for a response data in a local cache, and return it if exists;
-2. if there is no response data in cache, it calls HttpClient and make the request for the ResponseData and store it in cache (memory).
+The ViewClient interface has to functions **`fetch`** and **`prefetch`**.
 
-Note that `fetch` just search for responses that may have been prefetched earlier, and `prefetch` just store responses. It does nothing other than this, and this might be enough for most applications. But some applications may need extra behavior when fetching views, and this is the place where it should be implemented.
+The **`fetch`** default implementation has 2 functionalities:
 
-# Creating a new ViewClient
+1. It searches for a response data in a local cache, and if a cache exists, this function removes it from cache and return its contents;
+2. If there is no response data in cache, this function calls the `HttpClient` and make a request for a ResponseData.
 
-A good example is caching. Let's say we want to locally store a response so when Beagle calls `viewClient.fetch` again, it returns the cached result instead of calling the HttpClient. To do this, we can create a new ViewClient class that implement ViewClient, has storage and is annotated with `@BeagleComponent` as follows:
+The **`prefech`** default implementation has 2 functionalities:
+
+1. It searches for a response data in a local cache, and it returns this cache if it exists;
+2. If there is no response data in cache, this function calls the `HttpClient` and make the request for a ResponseData and store it in cache (memory).
+
+{{% alert color="success" %}}
+Please note that `fetch` just search for responses that may have been *prefetched* earlier, and `prefetch` just store responses. It just do this, and that is enough for most applications. But some other applications may need an extra behavior when fetching views, and this is when a customized ViewClient must be made.
+{{% /alert %}}
+
+## Creating a new ViewClient
+
+A good example is caching. Let's say we want to locally store a view in a way that when Beagle calls `viewClient.fetch` again, it returns the cached result, instead of calling the HttpClient.
+
+To do this, we can create a ``**MyViewClient**`` class that implements ``ViewClient``, has a storage and is annotated with `@BeagleComponent` as follows:
 
 ```kotlin
 @BeagleComponent
@@ -65,4 +73,4 @@ class MyViewClient(
 
 ```
 
-Above we implemented a very simple logic to `fetch` and `prefetch` that will store every fetch result in memory using a MutableMap `cachedResponses` using the request url as key, and search for a ResponseData in it every time `fetch` or `prefetch` is called. This is a very dumb implementation, because this cache would never expire, but the objective here is just to show how such feature could be implemented using the ViewClient.
+Above we have implemented a logic to `fetch` and `prefetch` that will store every fetch result in memory using a MutableMap called `cachedResponses`. It uses the *request url* as key, and search for a ``ResponseData`` in it every time `fetch` or `prefetch` is called. This is a simple implementation, since this cache would never expire, and the objective here is to show how this feature could be implemented using the ViewClient.
