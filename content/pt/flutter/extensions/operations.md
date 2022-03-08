@@ -1,20 +1,20 @@
 ---
-title: Custom Operations
+title: Operações customizadas
 weight: 3
 description: >-
-  In this section, you will find information on how to create and use your own operations in Beagle Flutter.
+  Nesta seção, você vai encontrar informações de como criar e usar operações customizadas no Beagle Flutter.
 ---
 
 ---
 
-## How to create custom operations?
-1. Declare a map of type `Map<String, dynamic Function(List<dynamic> args)>`;
-2. Pass this map to your BeagleService instance.
+## Como criar as operações customizadas?
+1. Declare um mapa do tipo `Map<String, dynamic Function(List<dynamic> args)>`
+2. Use este mapa ao inicializar sua instancia do BeagleService.
 
-This map tells Beagle which function to trigger when a given operation name comes in an expression of the JSON.
+Essa mapa diz ao beagle quais funções chamar quando o identificador de uma operação vem do JSON.
 
-### The keys on a map of operations
-The key in a map of actions is a string and it must be equivalent to the operation name in an expression. For instance, if we want to declare a new operation that formats phone numbers, we'd use it like this in the JSON:
+### O mapa de chaves de operações
+O mapa de chaves de operação é uma string e deve ser equivalente ao nome de uma expressão. Se você quiser declarar uma nova operação que formata números de telefone por exemplo, veja abaixo: 
 
 ```json
 {
@@ -23,12 +23,12 @@ The key in a map of actions is a string and it must be equivalent to the operati
 }
 ```
 
-`formatPhoneNumber`, by default, is not a supported operation, so we need to declare it using its name as the key in the map of operations.
+`formatPhoneNumber`, não é uma operação padrão do Beagle, por isso precisamos adicioná-la no mapa de operações
 
-### The values on a map of operations (Operation)
-An operation is a function that receives a list of arguments and returns a result. Since we can accept anything coming from an expression in the JSON, the list of arguments is of type `dynamic`. This function can also return any type, as long as it's serializable.
+### Os valores no mapa de operações (Operation)
+Uma operação é uma funcção que recebe uma lista de argumentos e retorna um resultado. Como podemos aceitar qualquer coisa vinda do JSON, a lista é do tipo `dynamic`. Essa função pode também retornar qualquer tipo desde que seja do tipo `serializable`.
 
-The example to format a phone number would receive a list of dynamic arguments and return a String. See the example below:
+O exemplo para formatar o telefone recebe uma lista dinâmica de argumentos e retorna uma `String`. Veja o exemplo:
 
 ```dart
 final myOperations = {
@@ -42,9 +42,9 @@ final beagleService = BeagleService(
 );
 ```
 
-Since `formatPhoneNumber` accepts a single argument, we use only the position `0` of the array. If we wanted create a multiplication between 2 numbers, for example, we'd use `args[0]` and `args[1]`.
+Como `formatPhonrNumber` aceita apenas um único argumento, usamos a posição `o` do vetor. No caso de multiplos parâmetros basta acessar as posições correspondentes.
 
-Another common use case for operations is filtering. Let's say we want to filter the array `users` by a given `city`. Suppose `users` and `city` are both values available in the context. To create a new array with all users filtered by the city, we could use the expression `@{filterByCity(users, city)}`. Since there's no default operation for this filter, we create a new custom operation:
+Outro caso comum de uso das operações são filtros. Digamos que que temos um vetor de `users` por `city`. Supondo que ambos os valores de `users` e `city` estão disponíveis no context. Para criar um novo vetor com todos os usuários de uma cidade, basta criar uma nova operação customizada chamada por exemplo de `@{filterByCity(Users, city)}`. A lógica desta operação é filtrar os usuários dados os parâmetros. Veja:
 
 ```dart
 final myOperations = {
@@ -57,6 +57,6 @@ final myOperations = {
 }
 ```
 
-Remember that operations always work over the original JSON, so instead of receiving an instance of the class User, for instance, you will receive its map representation. Operations must also only return serializable data, so, if it's gonna work over a user, it should never return an instance of the class user, but instead, it should return a map.
+Lembre-se que operações sempre trabalham nos valores originais do JSON, por isso ao invés de receber uma instância da classe User, você precisa receber sua estrutura de dados em forma de mapa. Operações também devem sempre retornar valores do tipo `serializable`, então, no caso de retornar um User deve-se usar um mapa e não uma instância da classe.
 
-That's it! Now you can use your custom operations with Beagle Flutter!
+É isso!, Agora vocÊ já sabe criar operações customizadas com Beagle Flutter!

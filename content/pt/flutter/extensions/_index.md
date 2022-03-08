@@ -1,5 +1,5 @@
 ---
-title: Extensions
+title: Extensões
 weight: 1
-description: In this section, you will learn how to extend the default components, actions and operations
+description: Nesta seção, você aprende como adicionar componentes, ações e operações customizadas.
 ---

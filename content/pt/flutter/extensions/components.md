@@ -1,28 +1,28 @@
 ---
-title: Custom Components
+title: Componentes customizados
 weight: 3
 description: >-
-  In this section, you will find information on how to create and use your own components in Beagle Flutter.
+  Nesta seção, você aprende como criar e usar seus próprios componentes customizados no Beagle Flutter.
 ---
 
 ---
 
-## How to create custom components?
-1. Declare a map of type `Map<String, ComponentBuilder Function()>`;
-2. Pass this map to your BeagleService instance.
+## Como criar componentes customizados?
+1. Declare um mapa do tipo `Map<String, ComponentBuilder Function()>`;
+2. Adicione este mapa na inicialização do BeagleService.
 
-This map tells Beagle which component to render when a given identifier comes from a JSON.
+Este mapa mostra ao Beagle quais componentes renderizar a partir de um identificador no JSON
 
-### The keys on a map of components
-The key in a map of components is a string and it must be equivalent to the `_beagleComponent_` property of the JSON. These keys have a single restriction: they must have the prefix "custom:".
+### A chave em um mapa de componentes
+A chave representa o nome da ação e deve ser equivalente a propriedade `_beagleComponent_` do JSON. A única restrição para criação do nome é utilizar o prefixo "custom"
 
-### The values on a map of components (factories of component builders)
-The `ComponentBuilder` is an abstract class that must be implemented. The subclass must implement the method `buildForBeagle` that returns a Widget and receive the following positional parameters:
-1. `BeagleUIElement element`: the Beagle element to render. Contains all properties that came from the JSON.
-2. `List<Widget> children`: the children for this component. If this component must be a leaf, ignore it. If this component will always have a single child, use `children[0]`.
-3. `BeagleView view`: the BeagleView that spawned this component. Useful for changing the Beagle UI tree from inside the component. This is rarely used.
+### Os valores no mapa de componentes (factories of component builders)
+O `ComponentBuilder` É uma classe abstrata que de ve ser implementada, a subclasse deve implementar o método `buildForBeagle` que retorna um Widget e recebe os seguintes parâmetros:
+1. `BeagleUIElement element`: O elemento a ser renderizado, contém todas as propriedades vindas do JSON
+2. `List<Widget> children`: Os filhos deste component. Se este componente for a raiz, ignore este parâmetro. Se este componente sempre tiver apenas um filho acesse com `children[0]`.
+3. `BeagleView view`: A BeagleView que iniciou o elemento. esta propriedade é raramente utilizada, e serve para alterar o Beagle UI a partir do componente.
 
-See an example below of a component builder that exposes the original ElevatedButton widget from Flutter:
+Veja um exemplo de um "component builder" que expõe o ElevatedButton widget do Flutter:
 
 ```dart
 class _ElevatedButtonBuilder extends ComponentBuilder {
@@ -47,10 +47,10 @@ final beagleService = BeagleService(
 );
 ```
 
-In the example above, I purposefully omitted the properties `style` and `focusNode` from the `ElevatedButton`. I did this because these objects have too many properties and the other properties are enough to exemplify the use of custom components.
+No exemplo acima, As propriedades `style` e `focusNode` foram omitidas do `ElevatedButton`. Isso foi feito porque os objetos possuem muitas propriedades e as outras propriedades são suficientes para  exemplificar o uso do componente customizado.
 
-Notice that `onPressed` is a function and we just call `element.getAttributeValue('onPressed')`. This is fine! Beagle will transform anything declared as an action in the JSON to a function.
+Preste atenção que `onPressed` é uma função e podemos chamá-la com `element.getAttributeValue('onPressed')`. Isso não é um problema, a biblioteca do Beagle irá transformar qualquer ação declarada no JSON para uma função.
 
-This is the most boring and mechanical part of Beagle Flutter. One could say this is a monkey job and we agree with it. It is among our next steps to think of a better, more automatic, way of declaring custom components. We'd welcome any suggestions in [our Github Page](https://github.com/ZupIT/beagle)!
+Esta configuração do Beagle Flutter pode se tornar repetitiva para muitos componentes, mas uma vez feita você não precisa recadastrá-los. Se você quer contribuir com o projeto e dar ideias de como melhorar esse processo, dê uma olhada em [nosso github](https://github.com/ZupIT/beagle)!
 
-That's it! You can use this same strategy to expose any of your Beagle components.
+É isso! Você pode usar essa mesma estratégia para expor qualquer componente customizado que você criar.
