@@ -16,7 +16,7 @@ O ``ViewClient`` cria um ``BeagleRequest`` que é enviado ao HttpClient. A imple
 1. Cria o ``BeagleRequest`` de acordo com o que foi solicitado de quem o requisitou (geralmente o navegador);
 2. Quando a resposta chega do HttpClient, ele verifica se a propriedade de navegação `preFetch` é ``verdadeira`` (``true``) e, *de ​​forma assíncrona*, faz uma busca prévia de seus resultados.
 
-Ele não faz nada além disso, e geralmente é o suficiente para a maioria das aplicações. Mas, alguns sistemas podem precisar de um comportamento extra ao buscar as novas `views`, e este é o lugar onde ele deve ser implementado.
+Ele não faz nada além disso, e geralmente é o suficiente para a maioria das aplicações. Mas, alguns sistemas podem precisar de um comportamento extra ao buscar as novas `views`, e este é o lugar onde ele deve ser customizado.
 
 ## Como usá-lo?
 
@@ -47,7 +47,7 @@ function createMyViewClient(): ViewClient {
 }
 ```
 
-Implementamos uma lógica bem simplória acima que armazenará cada resultado de busca no disco usando o *localStorage*. Esta é uma implementação simples e apenas *para teste*, pois esse cache nunca expiraria.
+Implementamos uma lógica acima que armazenará cada resultado de busca no disco usando o *localStorage*. Esta é uma implementação simples e apenas *para teste*, pois esse cache nunca expiraria.
 
 ### Registrando o novo ViewClient
 

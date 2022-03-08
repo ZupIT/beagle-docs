@@ -16,7 +16,7 @@ The ``ViewClient`` creates a ``BeagleRequest`` that is sent to the HttpClient. T
 1. It creates a ``BeagleRequest`` according to what has been requested by its caller (generally the navigator);
 2. When the response arrives from the HttpClient, it checks for navigation actions where `preFetch` is `true` and, *asynchronously*, pre-fetches their results.
 
-It does nothing more than this, and this might be enough for most applications. But, some applications may need extra behavior when fetching views, and this is the place where it should be implemented.
+It does nothing more than this, and this might be enough for most applications. But, some applications may need extra behavior when fetching views, and this is the place where it should be customized.
 
 ## How to use it?
 
@@ -47,7 +47,7 @@ function createMyViewClient(): ViewClient {
 }
 ```
 
-We have implemented a very simple logic above that will store every fetch result into the disk using the *localStorage*. This is a simple and only *for test* implementation, since this cache would never expire.
+We have implemented a logic above that will store every fetch result into the disk using the *localStorage*. This is a simple and only *for test* implementation, since this cache would never expire.
 
 ### Registering the new ViewClient
 
