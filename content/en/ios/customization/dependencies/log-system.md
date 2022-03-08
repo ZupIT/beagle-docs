@@ -5,9 +5,9 @@ weight: 151
 
 ---
 
-#### Introduction
+#### What is it?
 
-Beagle uses the unified log system recommend by Apple, to provide different log messages in critical stages of a server driven flow. 
+Beagle uses the unified log system recommended by Apple, to provide different log messages in critical stages of a server driven flow.
 
 The log messages provided for Beagle iOS can be access through:
 

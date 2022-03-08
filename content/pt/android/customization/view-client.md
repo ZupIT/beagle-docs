@@ -23,9 +23,9 @@ A implementação padrão do **`prefech`** tem 2 funcionalidades:
 1. Ele procura dados de resposta em um cache local e retorna esse cache se existir;
 2. Se não houver dados de resposta em cache, esta função chama o `HttpClient` e faz a solicitação de um ResponseData e armazena em cache (memória).
 
-{{% alert color="sucesso" %}}
+{{% alert color="success" %}}
 Observe que `fetch` apenas procura por respostas que possam ter sido *requisitadas* anteriormente, e `prefetch` apenas armazena respostas. Ele faz isso apenas, geralmente é o bastante para muitas aplicações. Mas pode haver alguma outra situação em que uma aplicação precise de um comportamento extra ao buscar `views`, e é nesse momento que um `ViewClient` customizado deve ser feito.
-{{% /alerta %}}
+{{% /alert %}}
 
 ## Criando um novo ViewClient
 
