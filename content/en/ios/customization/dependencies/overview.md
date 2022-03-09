@@ -222,7 +222,7 @@ Here we list a few dependencies that could not be customized but have public API
 
 The `navigator` handles the [**navigate**]({{< ref path="/api/actions/navigate/" lang="en" >}}) actions in your application.
 
-It exposes an custom navigation controller registration methods and a [**navigation animation**]({{< ref path="/ios/customization/navigation-animation" lang="en" >}}).
+It exposes a custom navigation controller registration methods and a [**navigation animation**]({{< ref path="/ios/customization/navigation-animation" lang="en" >}}).
 
 ### GlobalContextProtocol
 
