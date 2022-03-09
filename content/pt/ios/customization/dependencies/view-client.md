@@ -68,7 +68,7 @@ Para implementar um ViewClient customizado, podemos adotar como base o `ViewClie
 
 3. Coder: Decodifica o resultado das requisições
 
-Além disso podemos definir uma *quarta dependencia* que será responsável pelo gerenciamento de cache dos componentes, para esse exemplo a nomearemos de `CacheManager`.
+Além disso podemos definir uma *quarta dependência* que será responsável pelo gerenciamento de cache dos componentes, para esse exemplo a nomearemos de `CacheManager`.
 
 {{% alert color="info" %}}
 Não abordaremos a implementação dessa dependencia, já que cada aplicação pode ter sua forma padrão e exclusiva de realizar o cache de dados
