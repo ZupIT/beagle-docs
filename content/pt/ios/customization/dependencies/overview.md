@@ -44,7 +44,7 @@ Essa estrutura tem um construtor vazio que atribui as implementações padrão d
 * inicie-o e faça as personalizações necessárias.
 {{% /alert %}}
 
-É importante que se faça essa *configuração* das dependencias durante o processo de inicialização do aplicativo, ou seja, na função `AppDelegate` `didFinishLaunchingWithOptions` conforme mostrado abaixo:
+É importante que se faça essa *configuração* das dependências durante o processo de inicialização da aplicação, ou seja, na função `AppDelegate` `didFinishLaunchingWithOptions` conforme mostrado abaixo:
 
 ```swift
 @UIApplicationMain
