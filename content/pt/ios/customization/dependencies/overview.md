@@ -196,7 +196,7 @@ BeagleConfigurator.setup(dependencies: dependencies)
 
 ### AnalyticsProviderProtocol
 
-É um protocolo que pode ser implementado para rastrear a aparência da tela, ações e eventos de clique.
+É um protocolo que pode ser implementado para rastrear carregamentos de tela, ações e eventos de clique em componentes Beagle.
 
 Veja o exemplo abaixo:
 
