@@ -14,7 +14,7 @@ O `View Client` é muito semelhante ao HttpClient. Enquanto o HttpClient é resp
 O ``ViewClient`` cria um ``BeagleRequest`` que é enviado ao HttpClient. A implementação padrão do view client faz duas ações:
 
 1. Cria o ``BeagleRequest`` de acordo com o que foi solicitado de quem o requisitou (geralmente o navegador);
-2. Quando a resposta chega do HttpClient, ele verifica se a propriedade de navegação `preFetch` é ``verdadeira`` (``true``) e, *de ​​forma assíncrona*, faz uma busca prévia de seus resultados.
+2. Quando a resposta chega do HttpClient, ele verifica se a propriedade de navegação `preFetch` tem o valor igual a ``true`` e, *de ​​forma assíncrona*, faz uma busca prévia de seus resultados.
 
 Ele não faz nada além disso, e geralmente é o suficiente para a maioria das aplicações. Mas, alguns sistemas podem precisar de um comportamento extra ao buscar as novas `views`, e este é o lugar onde ele deve ser customizado.
 
