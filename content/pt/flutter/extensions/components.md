@@ -17,7 +17,7 @@ Este mapa mostra ao Beagle quais componentes renderizar a partir de um identific
 A chave representa o nome da ação e deve ser equivalente a propriedade `_beagleComponent_` do JSON. A única restrição para criação do nome é utilizar o prefixo "custom"
 
 ### Os valores no mapa de componentes (factories of component builders)
-O `ComponentBuilder` É uma classe abstrata que de ve ser implementada, a subclasse deve implementar o método `buildForBeagle` que retorna um Widget e recebe os seguintes parâmetros:
+O `ComponentBuilder` É uma classe abstrata que deve ser implementada, a subclasse deve implementar o método `buildForBeagle` que retorna um Widget e recebe os seguintes parâmetros:
 1. `BeagleUIElement element`: O elemento a ser renderizado, contém todas as propriedades vindas do JSON
 2. `List<Widget> children`: Os filhos deste component. Se este componente for a raiz, ignore este parâmetro. Se este componente sempre tiver apenas um filho acesse com `children[0]`.
 3. `BeagleView view`: A BeagleView que iniciou o elemento. esta propriedade é raramente utilizada, e serve para alterar o Beagle UI a partir do componente.
