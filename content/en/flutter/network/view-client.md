@@ -46,7 +46,7 @@ class MyViewClient extends DefaultViewClient {
 }
 ```
 
-Above we implemented a very simple logic that will store every fetch result into the disk using the lib `sharedPreferences`. This is a very dumb implementation, because this cache would never expire, but the objective here is just to show how such feature could be implemented using the ViewClient.
+Above we implemented a very simple logic that will store every fetch result into the disk using the lib `sharedPreferences`. This was done exclusively for demonstration, because this cache would never expire, but the objective here is just to show how such feature could be implemented using the ViewClient.
 
 We extended the DefaultViewClient to take advantage of everything that is already implemented there, like the pre-fetch behavior. But you can also write it from the ground up by extending `ViewClient`, which is just an interface.
 
