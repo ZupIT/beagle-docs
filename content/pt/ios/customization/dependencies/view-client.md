@@ -60,7 +60,7 @@ Portanto, é possivel implementar o View Client de forma customizada para que po
 
 ### Definição das dependencias
 
-Para implementar um ViewClient customizado, podemos adotar como base o `ViewClient` padrão do Beagle. Dessa forma, definimos 3 dependencias base que serão ultilizadas por nossa implementação:
+Para implementar um ViewClient customizado, podemos adotar como base o `ViewClient` padrão do Beagle. Dessa forma, definimos 3 dependências base que serão utilizadas por nossa implementação:
 
 1. NetworkClient: Executa as requisições
 
