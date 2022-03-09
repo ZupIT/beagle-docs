@@ -147,7 +147,7 @@ let theme = AppTheme(styles: [
 ])
 ```
 
-**Passo 3**: adicione a dependência de tema personalizado às dependências do Beagles
+**Passo 3**: adicione a dependência de tema personalizado às dependências do Beagle
 
 ```swift
 dependencies.theme = theme
