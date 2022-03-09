@@ -230,7 +230,7 @@ It is responsible for managing the Beagle global context, it exposes the `get`, 
 
 ### OperationsProviderProtocol
 
-It is responsible for providing context operations, it exposes the `register` function so that it is possible to register custom operations in Beagle's default OperationsProvider.
+It is responsible for providing context operations, exposing the `register` function so that it is possible to register custom operations in Beagle's default OperationsProvider.
 
 ### BundleProtocol
 
