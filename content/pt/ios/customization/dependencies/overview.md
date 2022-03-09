@@ -83,7 +83,7 @@ globalContext.clear()
 ```
 
 {{% alert color="warning" %}}
-Este wrapper de propriedade gera um `fatalError` se for usado para resolver uma dependência que não seja Beagles' ou que seja opcional e não tenha sido configurada, por exemplo:(logger, analyticsProvider, deepLinkHandler, networkClient), para contornar isso, basta usar `@OptionalInjected` que retornará nil se a dependência não for resolvida, conforme mostrado abaixo.
+Este wrapper de propriedade gera um `fatalError` se for usado para resolver uma dependência que não seja do Beagle ou que seja opcional e não tenha sido configurada, por exemplo:(logger, analyticsProvider, deepLinkHandler, networkClient), para contornar isso, basta usar `@OptionalInjected` que retornará nil se a dependência não for resolvida, conforme mostrado abaixo.
 {{% /alert %}}
 
 ```swift
