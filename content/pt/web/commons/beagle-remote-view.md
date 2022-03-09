@@ -1,7 +1,7 @@
 ---
 title: BeagleRemoteView
 weight: 176
-description: Descrição do BeagleRemoteView e seus parametros
+description: Descrição do BeagleRemoteView e seus parâmetros
 ---
 
 ---
