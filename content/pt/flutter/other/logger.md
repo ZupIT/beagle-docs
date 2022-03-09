@@ -2,18 +2,18 @@
 title: Logger
 weight: 3
 description: >-
-  In this section, you will find information on how to use the Logger in Beagle Flutter.
+  Nesta seção, você encontra informações de como usar o Logger no Beagle Flutter.
 ---
 
 ---
 
-# Introduction
-Beagle produces many logs, but how they are showed is up to you. The default logging mechanism (`DefaultLogger`) prints all messages to the console with the name "BeagleSDK" using the method `log` from `dart:developer`.
+# Introdução
+O Beagle produz muitos logs, mas como eles serão exibidos depende de você. O mecanismo de registro padrão (`DefaultLogger`) imprime todas as mensagens no console com o nome "BeagleSDK" usando o método `log` de `dart:developer`.
 
-The logging behavior can be changed by implementing the interface `BeagleLogger` and passing it to the `BeagleService`. The interface has four methods: `warning`, `error`, `errorWithException` and `info`, which represents all levels of logs created by Beagle.
+O comportamento de registro pode ser alterado implementando a interface `BeagleLogger` e passando-a para o `BeagleService`. A interface possui quatro métodos: `warning`, `error`, `errorWithException` e `info`, que representam todos os níveis de logs criados pelo Beagle.
 
-# Creating a custom logger
-See the example below:
+# Criando um logger customizado
+Veja o exemplo abaixo:
 
 ```dart
 class SilentLogger extends BeagleLogger {
@@ -28,10 +28,10 @@ class SilentLogger extends BeagleLogger {
 
 ```
 
-The example above is very simple, but quite useful. It can be used to disable all logging. Another good example would be a logger that sends every error to a backend, where it can be analyzed by the developers.
+O exemplo acima é muito simples, mas bastante útil. Ele pode ser usado para desabilitar todos os logs. Outro bom exemplo seria um logger que envia cada erro para um backend, onde pode ser analisado pelos desenvolvedores.
 
-# Registering the new logger
-To register the new logger you just need to provide it to the BeagleService:
+# Registrando um novo logger
+Para registrar um novo logger apenas adicione na propriedade equivalente do BeagleService:
 
 ```dart
 final beagleService = BeagleService(
