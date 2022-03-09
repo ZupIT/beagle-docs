@@ -18,7 +18,7 @@ The **`fetch`** default implementation has 2 functionalities:
 1. It searches for a response data in a local cache, and if a cache exists, this function removes it from cache and return its contents;
 2. If there is no response data in cache, this function calls the `HttpClient` and makes a request which returns a ResponseData.
 
-The **`prefech`** default implementation has 2 functionalities:
+The **`prefetch`** default implementation has 2 functionalities:
 
 1. It searches for a response data in a local cache, and it returns this cache if it exists;
 2. If there is no response data in cache, this function calls the `HttpClient` and make the request for a ResponseData and store it in cache (memory).
