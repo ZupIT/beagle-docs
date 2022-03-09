@@ -2,37 +2,38 @@
 title: Beagle View
 weight: 3
 description: >-
-  In this section, you will find how to manipulate the BeagleView and trigger new renders
+  Nesta seção, você aprende como manipular a Beagle View e iniciar novas renderizações.
 ---
 
 ---
 
-# Introduction
-The BeagleView is the most important structure of Beagle Flutter. This is the object responsible for holding the representation of the view, processing the JSON and notifying every listener when anything changes. Every BeagleView has an object called "renderer", which is used to make changes to the current UI tree.
+# Introdução
+O BeagleView é a estrutura mais importante do Beagle Flutter. Este é o objeto responsável por manter a representação da view, processar o JSON e notificar cada listener quando algo mudar. Cada BeagleView tem um objeto chamado "renderer", que é usado para fazer alterações na árvore de UI atual.
 
-The Beagle Navigator is responsible for creating BeagleViews. Each page of the navigator is associated with a BeagleWidget and each BeagleWidget is instantiated by the StackNavigator with a BeagleView.
+O Beagle Navigator é responsável por criar BeagleViews. Cada página do navegador está associada a um BeagleWidget e cada BeagleWidget é instanciado pelo StackNavigator com um BeagleView.
 
-# The BeagleView interface
-The BeagleView is composed of the following methods:
+# A interface BeagleView
+A interface do BeagleView é composta pelos seguintes métodos:
 
-- **onChange**: listen to changes on the BeagleView. Used internally by the BeagleWidget to update itself with the newest UI tree.
-- **getRenderer**: returns the Renderer, which is responsible for altering the UI tree.
-- **getTree**: returns a copy of the current UI tree.
-- **getNavigator**: returns the navigator that created this BeagleView.
-- **onAction**: listen to Beagle actions triggered within the BeagleView. Used internally by the action sub-system.
-- **destroy**: destroys the BeagleView, removing every active listener. Used internally by the BeagleWidget to prevent calls to unmounted widgets.
+- **onChange**: escuta as alterações no BeagleView. Usado internamente pelo BeagleWidget para se atualizar com a árvore de interface mais recente.
+- **getRenderer**: retorna o Renderer, responsável por alterar a árvore de UI.
+- **getTree**: retorna uma cópia da árvore de UI atual.
+- **getNavigator**: retorna o navegador que criou este BeagleView.
+- **onAction**: escuta as ações do Beagle acionadas no BeagleView. Usado internamente pelo gerenciador de ações.
+- **destruir**: destrói o BeagleView, removendo todos os "listeners" ativos. Usado internamente pelo BeagleWidget para evitar chamadas para widgets que não existem mais.
 
-From all the methods above, three are interesting for the developer using the Beagle Library: `getRenderer`, `getNavigator` and `getTree`. They can be used to alter the UI tree from within a component or make a navigation to another Beagle page.
+De todos os métodos acima, três deles são especialmente interessantes para o desenvolvedor usando a biblioteca Beagle: `getRenderer`, `getNavigator` e `getTree`. Eles podem ser usados para alterar a UI de dentro do componente ou fazer a navegação para outra página.
 
-Examples of default components (package beagle_components) that use the BeagleView are:
+Alguns exemplos de componentes padrão que usam a BeagleView (package beagle_components):
 
-- **ListView**: from a template and a data set, alters the Beagle UI tree to create the final interface by looping the entire data set and repeating the template while it replaces the values related to the current iteration.
-- **LazyComponent**: loads the JSON from the provided URL and alters the UI tree with the new content.
 
-# Accessing the BeagleView from a widget
-To gain access of the BeagleView responsible for the current UI tree, you can make use of the 3rd parameter of the method `buildForBeagle` of the ComponentBuilder.
+- **ListView**: A partir de um template e conjunto de dados, altera a árvore do Beagle UI para criar a interface final iterando sob o conjunto de dados e repetindo o template enquanto altera os valores da iteração atual.
+- **LazyComponent**: Carrega o JSON da Url fornecida e altera o conteúdo dos componentes.
 
-See below the ComponentBuilder of the default component "LazyComponent":
+# Acessando a BeagleView a partir de um Widget
+Para ter acesso a BeagleView responsável pela árvore atual, você pode fazer uso do terceiro parâmetro do método `buildForBeagle` do ComponentBuilder.
+
+Veja o exemplo do ComponentBuilder do Widget padrão "LazyComponent";
 
 ```dart
 class _LazyBuilder extends ComponentBuilder {
@@ -49,11 +50,10 @@ class _LazyBuilder extends ComponentBuilder {
   }
 }
 ```
+Se não puder receber o BeagleView do ComponentBuilder, você pode também acessá-lo pelo BuildContext, contando que o contexto descenda de um BeagleWidget. Para isso, use o método utilitário `findAncestorBeagleView(context)`.
 
-If you can't receive the BeagleView from the ComponentBuilder, you can also access it using the BuildContext, as long as the context descends from a BeagleWidget. To do this, you can call the utility method `findAncestorBeagleView(context)`.
-
-# Accessing the BeagleView from an action handler
-Every action handler receives the BeagleView that triggered it via the named parameter `view`. See below an example of an action that adds a text (parameter "text") to a given component node (parameter "target", id of the node).
+# Acessando a BeagleView de um action handler
+Cada action handler recebe um BeagleView através do parâmetro `view`. Veja abaixo um exemplo de uma ação que adiciona um texto (parameter "text") a um nó de um componente (parameter "target", id do nó).
 
 ```dart
 import 'package:beagle/beagle.dart';
@@ -67,26 +67,27 @@ final Map<String, ActionHandler> actions = {
 }
 ```
 
-# Accessing the BeagleView from a BuildContext
-The BeagleView can be accessed from the BuildContext as long as the context descends from a BeagleWidget. The function that finds the BeagleView given a BuildContext is `findAncestorBeagleView(context)`.
+# Acessando a BeagleView a partir de um BuildContext
 
-# The renderer
-The most useful part of a BeagleView is its renderer. A renderer is an object containing the following functions:
+O BeagleView pode ser acessado a partir do BuildContext, desde que o contexto descenda de um BeagleWidget. A função que encontra o BeagleView dado um BuildContext é `findAncestorBeagleView(context)`.
+
+# O renderer
+A parte mais útil do BeagleView é seu "renderer". Um "renderer" é um objecto contendo as seguintes funções:
 
 ## doFullRender
-Alters the UI tree by adding or replacing a branch of the current tree. It accepts the following positional parameters:
+Altera a árvore de interface adicionando ou substituindo uma parte da árvore atual. Aceita os seguintes parâmetros:
 
-1. The node (branch) to add or replace (`BeagleUIElement`). This is required.
-2. The anchor, i.e., the id (`String`) of the node where the new branch should be placed. If not informed, the root node is used.
-3. The mode for inserting the new branch (`TreeUpdateMode`). The available modes are:
-- `replaceComponent`: this is the default value, used in case no mode is provided. The `replaceComponent` mode replaces the node identified by the anchor (2nd parameter) with the tree provided in the 1st parameter.
-- `replace`: replaces the entire set of children of the node identified by the anchor (2nd parameter).
-- `append`: adds the new node at the end of the list of children of the node identified by the anchor (2nd parameter).
-- `prepend`: adds the new node at the start of the list of children of the node identified by the anchor (2nd parameter).
+1. O nó (branch) a ser adicionado ou substituído (`BeagleUIElement`). Obrigatório.
+2. A âncora, ou seja, o id (`String`) do nó onde o novo componente deve ser colocado. Caso não seja informado, o nó raiz é utilizado.
+3. O modo de inserção do novo componente (`TreeUpdateMode`). Os modos disponíveis são:
+- `replaceComponent`: este é o valor padrão, usado caso nenhum modo seja fornecido. O modo `replaceComponent` substitui o nó identificado no 2º parâmetro pela árvore fornecida no 1º parâmetro.
+- `replace`: substitui todo o conjunto de filhos do nó identificado pelo 2º parâmetro.
+- `append`: adiciona o novo nó ao final da lista de filhos do nó identificado pelo 2º parâmetro.
+- `prepend`: adiciona o novo nó no início da lista de filhos do nó identificado pelo 2º parâmetro.
 
-i.e. if only the first parameter is provided, it renders an entire new tree.
+i.e. se apenas o primeiro parâmetro for passado, uma nova árvore será renderizada.
 
-Check below how the `LazyComponent` uses this method:
+Veja abaixo como o `LazyComponent`usa este método:
 
 ```dart
 Future<void> _fetchLazyView() async {
@@ -99,24 +100,24 @@ Future<void> _fetchLazyView() async {
 }
 ```
 
-In the code above, `beagle` is the current BeagleService. To see how to obtain a reference to the current BeagleService, check [this article]({{< ref path="/flutter/other/beagle-service" lang="en" >}}). `widget.view` is the BeagleView passed by the ComponentBuilder of the LazyComponent. `widget.beagleId` has also been provided by the ComponentBuilder and is the id of the node in Beagle UI tree.
+No código acima, `beagle` é o BeagleService atual. Para ver como obter uma referência ao BeagleService atual, consulte [este artigo]({{< ref path="/flutter/other/beagle-service" lang="pt" >}}). `widget.view` é o BeagleView passado pelo ComponentBuilder do LazyComponent. `widget.beagleId` também foi fornecido pelo ComponentBuilder e é o id do nó na árvore da interface do Beagle.
 
-To check the full implementation, visit our github repository and look for the widget `BeagleLazyComponent`.
+Para verificar a implementação completa, visite nosso repositório github e procure pelo widget `BeagleLazyComponent`.
 
 ## doPartialRender
-Does the same as `doFullRender`, but in less steps. It is a faster method that assumes the node already exists in the tree and only some properties have been modified. This is useful for actions like `setContext`, where it just needs to update some values, without altering the structure of the tree.
+Faz o mesmo que `doFullRender`, mas em menos etapas. É um método mais rápido que assume que o nó já existe na árvore e apenas algumas propriedades foram modificadas. Isso é útil para ações como `setContext`, onde basta atualizar alguns valores, sem alterar a estrutura da árvore.
 
-If you don't know which method to call, prefer using `doFullRender`. The parameters of the two methods are exactly the same.
+Se você não sabe qual método chamar, prefira usar `doFullRender`. Os parâmetros dos dois métodos são exatamente os mesmos.
 
 ## doTemplateRender
-This is the most complex rendering method and it's rarely needed. It's used for creating components like the ListView and GridView. Imagine you need to render multiple nodes at once using a template, and this template uses expressions that must be evaluated with the value of the current iteration. Doing this with the other two methods would be very inefficient, so this method receives a template, a set of values and creates the nodes accordingly, with a single render event.
+Este é o método de renderização mais complexo e raramente é necessário. É usado para criar componentes como ListView e GridView. Imagine que você precise renderizar vários nós de uma vez usando um "template", e esse "template" usa expressões que devem ser avaliadas com o valor da iteração atual. Fazer isso com os outros dois métodos seria muito ineficiente, então esse método recebe um template, um conjunto de valores e cria os nós de acordo, com um único evento de renderização.
 
-The `doTemplateRender` accepts the following named parameters:
+O `doTemplateRender` aceita os seguintes parâmetros:
 
-- `TemplateManager templateManager`: set of templates to use. It's more than one because different types of elements in the data set can have different templates. Required.
-- `String anchor`: the id of the node where the new branch should be placed. Required.
-- `List<List<BeagleDataContext>> contexts`: matrix of contexts where each line represents an item to be rendered according to the templateManager. Required.
-- `BeagleUIElement Function(BeagleUIElement, int)? componentManager`: optional. When set, the resulting template goes through this function before being finally rendered. It's a chance for altering properties like the ids.
-- `TreeUpdateMode? mode`: optional. The mode for inserting the new nodes. The default value is `replace`. Check all available options in the previous section.
+- `TemplateManager templateManager`: conjunto de "templates" a serem usados. É mais de um porque diferentes tipos de elementos no conjunto de dados podem ter "templates" diferentes. Obrigatório.
+- `String âncora`: o id do nó onde a nova ramificação deve ser colocada. Obrigatório.
+- `List<List<BeagleDataContext>> contexts`: matriz de contextos onde cada linha representa um item a ser renderizado de acordo com o templateManager. Obrigatório.
+- `Função BeagleUIElement(BeagleUIElement, int)? componentManager`: Quando definido, o "template" resultante passa por essa função antes de ser finalmente renderizado. É uma chance de alterar propriedades como os ids. Opcional.
+- `TreeUpdateMode? modo`: O modo para inserir os novos nós. O valor padrão é `replace`. Verifique todas as opções disponíveis na seção anterior. Opcional.
 
-To see an example of how this method can be used, please, check the implementation of the widget `DynamicList` in the package `beagle_components`.
+Para ver um exemplo de como este método pode ser usado, verifique a implementação do widget `DynamicList` no pacote `beagle_components`.

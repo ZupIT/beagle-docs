@@ -1,5 +1,5 @@
 ---
-title: Other
+title: Outros
 weight: 1
-description: Uncategorized features of Beagle Flutter.
+description: Mais funcionalidades do Beagle Flutter.
 ---
