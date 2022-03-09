@@ -16,7 +16,7 @@ The ViewClient interface has two functions **`fetch`** and **`prefetch`**.
 The **`fetch`** default implementation has 2 functionalities:
 
 1. It searches for a response data in a local cache, and if a cache exists, this function removes it from cache and return its contents;
-2. If there is no response data in cache, this function calls the `HttpClient` and make a request for a ResponseData.
+2. If there is no response data in cache, this function calls the `HttpClient` and makes a request which returns a ResponseData.
 
 The **`prefech`** default implementation has 2 functionalities:
 
