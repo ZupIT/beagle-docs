@@ -222,7 +222,7 @@ Aqui listamos algumas dependências que não podem ser customizadas, mas possuem
 
 O `navigator` lida com as ações [**navigate**]({{< ref path="/api/actions/navigate/" lang="en" >}}) em seu aplicativo.
 
-Ele expõe métodos de registro de um controlador de navegação personalizado e uma [** animação de navegação**]({{< ref path="/ios/customization/navigation-animation" lang="en" >}}).
+Ele expõe métodos de registro de um `navigation controler` personalizado e uma [** animação de navegação**]({{< ref path="/ios/customization/navigation-animation" lang="en" >}}).
 
 ### GlobalContextProtocol
 
