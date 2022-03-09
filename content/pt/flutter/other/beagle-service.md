@@ -1,18 +1,19 @@
 ---
 title: BeagleService
 weight: 2
-description: In this section, you will find information on how to configure Beagle Flutter through the BeagleService. You'll also see how to get a reference to the current BeagleService.
+description: Nesta seção, você encontra informações sobre como configurar o Beagle Flutter pelo Beagle Service. Também aprende como acessar a referência do BeagleService atual.
 ---
 
 ---
 
-# Introduction
-The class BeagleService is the entry point to Beagle Flutter and where we setup all of its configurations. By default, basic implementations are already provided for some of its parameters, so it's not necessary to set them all.
+# Introdução
+A classe BeagleService é o ponto de entrada do Beagle Flutter e onde é feita toda sua configuração. Por padrão, a implementação básica já vem com alguns parâmetros definidos, então não é necessário definí-los.
 
-# What is configurable?
-These are all the configuration options supported by Beagle Flutter:
-1. baseUrl (required)
-2. components (required)
+# O que é configurável?
+As configurações suportadas pelo BeagleService no Beagle Flutter são as seguintes:
+
+1. baseUrl (obrigatório)
+2. components (obrigatório)
 3. actions
 4. operations
 5. environment
@@ -25,12 +26,13 @@ These are all the configuration options supported by Beagle Flutter:
 12. analyticsProvider
 13. enableStyles
 
-In the sections below, you'll learn how to set each one up.
+Na continuação desta documentação você aprende sobre cada uma delas
 
 ## 1. baseUrl
-It informs the base URL to use when fetching views from the backend. Every time a relative URL is provided, it is appended to the base URL to form the complete address. Beagle considers every path starting with "/" to be relative, all others are considered absolute and don't use the base URL.
+Informa a URL base a ser usada ao buscar visualizações do backend. Sempre que uma URL relativa é fornecida, ela é anexada à URL base para formar o endereço completo. O Beagle considera todos os caminhos que começam com "/" como relativos, todos os outros são considerados absolutos e não usam a URL base.
 
-In the example below, the resulting request will be `https://usebeagle.io/start/welcome`:
+No exemplo abaixo a URL resultante será `https://usebeagle.io/start/welcome`:
+
 ```dart
 final beagleService = BeagleService(
   baseUrl: 'https://usebeagle.io/start',
@@ -49,9 +51,9 @@ void main() {
 ```
 
 ## 2. components
-Provides the map of components to the application. Beagle Flutter, different than the other Beagle libs, comes with no components. For this reason, this property is required, Beagle cannot work without a basic set of components.
+Fornece o mapa de componentes para o aplicativo. O Beagle Flutter, diferente das outras libs do Beagle, não vem com componentes. Por esta razão, esta propriedade é necessária, o Beagle não pode funcionar sem um conjunto básico de componentes.
 
-The Beagle default components can be used by depending on the package "beagle_components":
+Os componentes padrão do Beagle podem ser importados do pacote "beagle_components":
 
 ```dart
 import 'package:beagle_components/beagle_components.dart';
@@ -62,10 +64,10 @@ final beagleService = BeagleService(
 );
 ```
 
-For creating your own components, check the [components article]({{< ref path="/flutter/extensions/components" lang="en" >}}).
+Para criar seus próprios componentes [veja o artigo]({{< ref path="/flutter/extensions/components" lang="pt" >}}).
 
 ## 3. actions
-This is the map of actions. Beagle already provides a set of default actions, so this is optional. If you're using a library of components, like "beagle_components", it's important to provide its actions to Beagle.
+Este é o mapa de ações. O Beagle já fornece um conjunto de ações padrão, portanto, este parâmetro é opcional. Se você estiver usando uma biblioteca de componentes, como "beagle_components", é importante mapear suas ações no Beagle.
 
 ```dart
 import 'package:beagle_components/beagle_components.dart';
@@ -77,68 +79,71 @@ final beagleService = BeagleService(
 );
 ```
 
-For creating your own actions, check the [actions article]({{< ref path="/flutter/extensions/actions" lang="en" >}}).
+Para criar suas próprias ações, veja o [artigo sobre ações]({{< ref path="/flutter/extensions/actions" lang="pt" >}}).
 
 ## 4. operations
-Beagle has a set of simple functions called operations. These functions can be called from inside an expression, in the JSON. e.g. `@{sum(1, 2)}` will result in `3`. [See here]({{< ref path="/api/operations/overview" lang="en" >}}) a list of all available operations.
+O Beagle tem um conjunto de funções simples chamadas operações. Essas funções podem ser chamadas de dentro de uma expressão, no JSON. por exemplo. `@{sum(1, 2)}` resultará em `3`. [Veja aqui]({{< ref path="/api/operations/overview" lang="pt" >}}) uma lista de todas as operações disponíveis.
 
-The operations in the BeagleService can be used to extend this set of functions. It's a map of strings to functions, where the key is the name of the operation and the value is the function itself. To know more, check this [article]({{< ref path="/flutter/extensions/operations" lang="en" >}}).
+A propriedade `operations` no BeagleService pode ser usada para estender esse conjunto de funções. É um mapa de strings para funções, onde a chave é o nome da operação e o valor é a própria função. Para saber mais, consulte este [artigo]({{< ref path="/flutter/extensions/operations" lang="pt" >}}).
 
 ## 5. environment
-This attribute informs Beagle about the current build status of the application. This property is used by the `BeagleUndefinedWidget`, which:
-- shows a Text with `Undefined Component` description when the `environment` is `BeagleEnvironment.debug`;
-- shows a `SizedBox.shrink` when the `environment` is `BeagleEnvironment.production`.
+Este atributo informa ao Beagle sobre o status de compilação atual da aplicação. Esta propriedade é usada pelo `BeagleUndefinedWidget`, que:
+- mostra um texto com a descrição de `Componente Indefinido` quando o `environment` é `BeagleEnvironment.debug`;
+- mostra um `SizedBox.shrink` quando o `environment` é `BeagleEnvironment.production`.
 
-The default value for the environment is `BeagleEnvironment.debug`.
+O valor padrão para `environment` é `BeagleEnvironment.debug
 
 ## 6. httpClient
-The service used by Beagle to make requests. Every request made by Beagle will go through the HttpClient. It has a default implementation that simply makes the requests as they come from the JSONs. If you need more complex behavior, like authentication or additional headers, replacing the default implementation of the httpClient is the way to go.
+O serviço usado pelo Beagle para fazer requisições ao servidor. Toda requisição feita pelo Beagle passará pelo HttpClient. Ele tem uma implementação padrão que simplesmente faz as solicitações conforme elas vêm dos JSONs. Se você precisar de um comportamento mais complexo, como autenticação ou cabeçalhos adicionais, basta susbtituir a implementação padrão.
 
-The httpClient must be an implementation of the interface HttpClient, which has the following single method:
+O httpClient deve implementar a interface `HttpClient`, que possui o seguinte método único:
 
 ```dart
 Future<Response> sendRequest(BeagleRequest req);
 ```
 
-Where `Response` is an object containing: `int status`, `String body`, `Map<String, String> headers` and `Uint8List bodyBytes`.
-And `BeagleRequest` is an object containing: `String url`, `BeagleHttpMethod method`, `Map<String, String> headers` and `String body`.
+Onde `Response` é um objeto contendo: `int status`, `String body`, `Map<String, String> headers` e `Uint8List bodyBytes`.
+E `BeagleRequest` é um objeto contendo: `String url`, `BeagleHttpMethod method`, `Map<String, String> headers` e `String body`.
 
-For more information about the HttpClient and how to write your own implementation, please check [this article]({{< ref path="/flutter/network/http-client" lang="en" >}}).
+Para obter mais informações sobre o HttpClient e como criar sua própria versão, consulte [este artigo]({{< ref path="/flutter/network/http-client" lang="pt" >}}).
 
 ## 7. viewClient
-The viewClient is responsible for fetching and delivering server driven pages. It has a single method called `fetch` and the default implementation creates the requests and send them to the HttpClient, transforming the response into a `BeagleUIElement`. The default implementation of the ViewClient also processes any `preFetch` in the navigation actions of the JSON.
+O viewClient é responsável por buscar e entregar páginas "server-driven". Ele possui um único método `fetch` e a implementação padrão cria as requisições e as envia para o HttpClient, transformando a resposta em um `BeagleUIElement`. A implementação padrão do ViewClient também processa qualquer `preFetch` nas ações de navegação do JSON.
 
-A good example of a situation where the viewClient needs to be replaced is a cache system. This new implementation of the View client would store the views in disk and check if they exist before sending the request to the HttpClient.
+Um bom exemplo de uma situação em que o viewClient precisa ser substituído é um sistema de cache. Essa nova implementação do ViewClient armazenaria as visualizações em memória local e verificaria se elas existem antes de enviar a solicitação para o HttpClient.
 
-For more information on how to create a custom ViewClient, please check [this article]({{< ref path="/flutter/network/view-client" lang="en" >}}).
+Para obter mais informações sobre como criar um ViewClient personalizado, consulte [este artigo]({{< ref path="/flutter/network/view-client" lang="pt" >}}).
 
-## 8. imageDownloader
-Similar to the ViewClient, the ImageDownloader is also responsible for creating requests for the HttpClient and processing its responses, the only difference is that the ViewClient does it for server driven views (JSONs) and the ImageDownloader does it for images.
+## 8. imageDownload
+er
+Muito parecido com o ViewClient, o ImageDownloader também é responsável por fazer solicitações para o HttpClient e processar suas respostas, a única diferença é que o ViewClient faz isso para "telas server-driven" (JSONs) e o ImageDownloader faz isso para imagens.
 
-The default ImageDownloader is very simple, it just creates the request, pass it to the HttpClient and transform the response into a `Uint8List`. An interesting application of a custom ImageDownloader would be caching. The custom ImageDownloader would save the images in disk and use the stored value instead of making the request to the HttpClient whenever possible.
+O ImageDownloader padrão é muito simples, apenas faz a requisição, passa para o HttpClient e transforma a resposta em um `Uint8List`. Uma aplicação interessante de um ImageDownloader personalizado seria o cache. O ImageDownloader personalizado salvaria as imagens em memória local e usaria o valor armazenado em vez de fazer a solicitação ao HttpClient sempre que possível.
 
-For more information on how to customize the ImageDownloader, please read the [related article]({{< ref path="/flutter/network/image-downloader" lang="en" >}}).
+Para obter mais informações sobre como personalizar o ImageDownloader, leia o [artigo relacionado]({{< ref path="/flutter/network/image-downloader" lang="pt" >}}).
 
 ## 9. navigationControllers and defaultNavigationController
-The navigation controllers are responsible for implementing the behavior of the loading, error and success events of the navigation between Beagle pages.
+Os `Navigation Controllers` são responsáveis ​​por implementar o comportamento dos eventos de carregamento, erro e sucesso da navegação entre as páginas Beagle.
 
-If not set, Beagle will use the `DefaultNavigationController`, which implements the following behavior:
+Se não estiver definido, o Beagle usará o `DefaultNavigationController`, que implementa o seguinte comportamento:
 
-- **onLoading**: render a Beagle UI tree with a single component called `custom:loading`.
-- **onError**: render a Beagle UI tree with a single component called `custom:error`.
-- **onSuccess**: render a Beagle UI tree with the UI tree returned from the backend.
+- **onLoading**: renderiza uma árvore de UI do Beagle com um único componente chamado `custom:loading`.
+- **onError**: renderiza uma árvore UI do Beagle com um único componente chamado `custom:error`.
+- **onSuccess**: renderiza uma árvore UI do do Beagle com a árvore UI retornada do backend.
 
-This behavior can be customized by implementing your own NavigationController. You can have multiple navigation controllers in a single application, one for each section, for instance. Beagle, from the backend, can tell which NavigationController must be used for the next set of screens.
+Esse comportamento pode ser personalizado implementando seu próprio NavigationController. Você pode ter vários Navigation Controllers em um único aplicativo, um para cada seção, por exemplo. O Beagle, do backend, pode dizer qual NavigationController deve ser usado para o próximo conjunto de telas que serão carregadas.
 
-To know more about navigation controllers and how to set them up, please read [this article]({{< ref path="/flutter/navigation/navigation-controllers" lang="en" >}}).
+Para saber mais sobre Navigation Controllers e como configurá-los, leia [este artigo]({{< ref path="/flutter/navigation/navigation-controllers" lang="pt" >}}).
 
 ## 10. logger
-Beagle produces many logs, but how they are showed is up to you. The default logging mechanism (`DefaultLogger`) prints all messages to the console with the name "BeagleSDK". You can customize the logger to completely disable it, to send them to a backend service or even to show them in a different way in the console.
+O Beagle produz muitos logs, mas como eles serão exibidos depende de você. O mecanismo de registro padrão (`DefaultLogger`) imprime todas as mensagens no console com o nome "BeagleSDK" usando o método `log` de `dart:developer`.
 
-To know more about logging and how to customize it, please read the [related article]({{< ref path="/flutter/other/logger" lang="en" >}}).
+O comportamento de registro pode ser alterado implementando a interface `BeagleLogger` e passando-a para o `BeagleService`. A interface possui quatro métodos: `warning`, `error`, `errorWithException` e `info`, que representam todos os níveis de logs criados pelo Beagle.
+
+Para saber mais sobre o registro e como personalizá-lo, leia o [artigo]({{< ref path="/flutter/other/logger" lang="pt" >}}).
 
 ## 11. urlBuilder
-With the urlBuilder you can change the default logic of Beagle when building URLs given a path:
+Com o urlBuilder, você pode alterar a lógica padrão do Beagle ao criar URLs a partir de um caminho:
 
 ```dart
 String build(String path) {
@@ -146,22 +151,22 @@ String build(String path) {
 }
 ```
 
-The default behavior of Beagle is to check if the path starts with "/". If yes, we consider it to be relative and return the `baseUrl` appended with the path (`"$baseUrl$path"`). Otherwise, we return the path, without combining it with the `baseUrl`.
+O comportamento padrão do Beagle é verificar se o caminho começa com "/". Se sim, é considerado relativo e retornado o `baseUrl` anexado com o caminho (`"$baseUrl$path"`). Caso contrário, é retornado o caminho, sem combiná-lo com o `baseUrl`.
 
-This behavior is fine for most applications, but if you need something different, it suffices to extend the class `UrlBuilder` and provide your implementation to the BeagleService.
+Esse comportamento é bom para a maioria das aplicações, mas se você precisar de algo diferente, basta estender a classe `UrlBuilder` e fornecer sua implementação para o BeagleService.
 
 ## 12. analyticsProvider
-The `analyticsProvider` must be set whenever you want to add analytics capabilities based on the user interactions with the UI built by Beagle.
+O `analyticsProvider` deve ser definido sempre que você quiser adicionar recursos de análise com base nas interações do usuário com os componentes Beagle.
 
-There are two types of analytics records generated by Beagle: screen records and action records. To know more about them and how to set up the analytics service, please check [this article]({{< ref path="/flutter/other/analytics" lang="en" >}}).
+Existem dois tipos de registros gerados pelo Beagle: registros de tela e registros de ação. Para saber mais sobre eles e como configurar o "analytics", consulte [este artigo]({{< ref path="/flutter/other/analytics" lang="pt" >}}).
 
 ## 13. enableStyles
-This is a simple boolean option to enable or disable the automatic application of styles from Beagle. This needs to be true in order to the attribute "style", of Beagle, to work. It must also be true if you need all components of the library beagle_components to work.
+Esta é uma opção booleana para habilitar ou desabilitar a aplicação automática de estilos do Beagle. O valor precisa ser "true" para que o atributo "style", do Beagle, funcione corretamente. Também deve ser "true" se você precisar que todos os componentes da biblioteca beagle_components funcionem.
 
-Setting enableStyles to false is useful when the application will develop all of its components and layout engine. To know more about this, check [this article]({{< ref path="/flutter/layout/styles" lang="en" >}}).
+Definir o valor de `enableStyles` como "false" é útil quando o aplicativo desenvolverá todos os seus componentes e mecanismo de layout. Para saber mais sobre isso, consulte [este artigo]({{< ref path="/flutter/layout/styles" lang="pt" >}}).
 
-# Providing a BeagleService to the application
-After instantiating the BeagleService, you must provide it to the application. To do this, wrap your app code in a `BeagleProvider`:
+# Fornecendo um BeagleService a aplicação
+Depois de instanciar um BeagleService, é preciso adicioná-lo as configurações de inicialização da aplicação `BeagleProvider`. Veja o exemplo no código a seguir:
 
 ```dart
 import 'package:beagle/beagle.dart';
@@ -178,14 +183,15 @@ void main() {
 }
 ```
 
-We recommend declaring the BeagleProvider as soon as possible. Be careful not to put it inside a navigator, because it might make it unavailable when the screen changes, which is not what we want.
+É recomendado declarar o BeagleProvider o quanto antes o possível na hierarquia de componentes da aplicação Tenha cuidado para não colocá-lo dentro de um navegador, pois pode torná-lo indisponível quando houverem mudanças na tela.
 
-# Accessing the BeagleService from a widget
-The BeagleService holds a reference to every other service that might be needed by any Beagle module, including the view client, the logger and the http client. To access it from inside a widget, you can use the mixin `BeagleConsumer`.
+# Acessando o BeagleService a partir de um widget
 
-The `BeagleConsumer` must be applied to a StatefulWidget. It is important to use a StatefulWidget when using the BeagleService so Flutter doesn't need to look for it on every render. But if you really need to use it on a common Widget, you can call the utility method `findBeagleService`.
+O BeagleService contém uma referência a todos os outros serviços que podem ser necessários para qualquer módulo do Beagle, incluindo o ViewClient, o Logger e o HttpClient. Para acessá-lo de dentro de um widget, você pode usar o mixin `BeagleConsumer`.
 
-See below the implementation of the LazyComponent, which uses the view client:
+O `BeagleConsumer` deve ser aplicado a um StatefulWidget. É importante usar um StatefulWidget ao usar o BeagleService para que o Flutter não precise procurá-lo em cada renderização. Mas se você realmente precisa usá-lo em um Widget comum, você pode chamar o método utilitário `findBeagleService`.
+
+Veja abaixo a implementação do LazyComponent, que utiliza a view client:
 
 ```dart
 class BeagleLazyComponent extends StatefulWidget {
@@ -229,14 +235,15 @@ class _BeagleLazyComponent extends State<BeagleLazyComponent> with AfterLayoutMi
 }
 ```
 
-As you can see, as soon as we use the mixin `BeagleConsumer`, we get access to the variable `beagle`, which is the reference to the current BeagleService.
+Veja que assim que usamos o mixin `BeagleConsumer`, temos acesso à variável `beagle`, que é a referência ao BeagleService atual.
 
-It is important to notice that `beagle` is only available on and after the init phase of the state, i.e. it cannot be used in the constructor.
+É importante notar que o `beagle` só está disponível durante e depois do estado de inicialização, ou seja, não pode ser usado no construtor.
 
-When a BeagleConsumer is not a descendant of BeagleProvider, an exception is thrown.
+Quando um BeagleConsumer não é descendente de um BeagleProvider, uma exceção é lançada.
 
-# Accessing the BeagleService from an action handler
-The BeagleService can be accessed from the BuildContext as long as the context descends from a BeagleProvider. The function that finds the BeagleService given a BuildContext is `findBeagleService`. See the example below of an action that logs a message.
+# Acessando o BeagleService a partir de uma action handler
+
+O BeagleService pode ser acessado a partir do `BuildContext`, desde que o contexto seja descendente de um `BeagleProvider`. A função que encontra o `BeagleService` dado um `BuildContext` é a `findBeagleService`. Veja o exemplo abaixo de uma ação que registra uma mensagem.
 
 ```dart
 import 'package:beagle/beagle.dart';
