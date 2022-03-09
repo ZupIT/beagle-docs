@@ -11,7 +11,7 @@ description: >-
 
 The `View Client` is very similar to the HttpClient. While the HttpClient is responsible for handling requests (views, json data, images, etc), the ``ViewClient`` is only responsible for fetching views (Server Driven Views).
 
-The ViewClient interface has to functions **`fetch`** and **`prefetch`**.
+The ViewClient interface has two functions **`fetch`** and **`prefetch`**.
 
 The **`fetch`** default implementation has 2 functionalities:
 
