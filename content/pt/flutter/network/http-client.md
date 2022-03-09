@@ -2,13 +2,13 @@
 title: HTTP client
 weight: 3
 description: >-
-  In this section, you will find information on how to setup an HTTP client in Beagle Flutter.
+  Nesta seção, você encontra mais informações sobre como configurar um cliente HTTP no Beagle Flutter.
 ---
 
 ---
 
-# Introduction
-The HttpClient is responsible for sending all requests made by Beagle. Beagle already uses a default implementation of the HttpClient which makes the requests as they come from the JSON (DefaultHttpClient). If you need to change the default behavior, you must implement your own HttpClient, i.e., you must implement the following interface:
+# Introdução
+O "HttpClient" é responsável por enviar todas as requisições feitas pelo Beagle. O Beagle já tem uma implementação padrão deste serviço. Se você precisar mudar este comportamento, é necessário implementar seu próprio HttpClient usando a interface a seguir:
 
 ```dart
 abstract class HttpClient {
@@ -16,34 +16,34 @@ abstract class HttpClient {
 }
 ```
 
-In the **sendRequest**  method, you can create the rules for your network layer. You can add headers to your requests, change the HTTP method, request body, response, run cryptography, etc.
+No método **sendRequest**, você cria regras para a camada de redes. Pode adicionar "headers", mudar o método de requisição, adicionar o corpo da requisição, resposta, colocar criptografia, etc.
 
-The `sendRequest` receives a single parameter of type `BeagleRequest` and returns an object of type `Response`. See below what each of these types does:
+O `sendRequest` recebe um parâmetro único do tipo `BeagleRequest` e retorna um objeto do tipo `Response`. Veja abaixo o que cada um destes faz:
 
 # BeagleRequest
-It's the class for configuring HTTP requests.
+É a classe para configurar as requisições HTTP.
 
 | **Attribute** | **Type** | **Required** | **Definition** |
 | :--- | :--- | :---: | :--- |
-| url | String  | ✓ | The endpoint that returns the server driven UI (view) you wish to display. |
-| method | BeagleHttpMethod | | Enum class that defines the [HTTP operation/verb](https://www.restapitutorial.com/lessons/httpmethods.html). The default value is `GET`. |
-| headers | Map<String, String> | | Used when you need to send data via HTTP headers.  |
-| body | String | | Used when you need to send a HTTP messages as body data. |
+| url | String  | ✓ | O endpoint que retorna a tela "server-driven". |
+| method | BeagleHttpMethod | | Classe enum que define a [Operação HTTP](https://www.restapitutorial.com/lessons/httpmethods.html). O valor padrão é `GET`. |
+| headers | Map<String, String> | | Usado ao enviar dados por HTTP headers. |
+| body | String | | Usado para enviar mensagens HTTP como corpo da requisição. |
 
-# Response
-It's used to return the data retrieved by the request.
+# Resposta
+É usado para acessar a resposta da requisição.
 
 | **Attribute** | **Type** | **Required** | **Definition** |
 | :--- | :--- | :---: | :--- |
-| status | int  | ✓ | Status code of the response. |
-| body | String | ✓ | Body of the response. |
-| headers | Map<String, String> | ✓ | Headers of the response. |
-| bodyBytes | Uint8List | ✓ | Body, in bytes, of the request. |
+| status | int  | ✓ | Código do status da resposta. |
+| body | String | ✓ | Corpo da resposta. |
+| headers | Map<String, String> | ✓ | "Headers" da resposta. |
+| bodyBytes | Uint8List | ✓ | Corpo, em bytes, da requisição. |
 
-The response also has a method `toJson` which returns a String with the `status`, `body` and `headers` encoded.
+A resposta também possui um método `toJson` que retorna uma String com o `status`, `corpo` e `headers` codificado.
 
-# Create a custom HTTP client
-See below an example of a custom HttpClient that adds the header `platform` to every `GET` request:
+# Criar um HTTP client customizado
+Veja abaixo um examplo de customização do `HttpClient` que adiciona um header `platform` para toda requisição `GET`.
 
 ```dart
 import 'dart:async';
@@ -68,11 +68,11 @@ class MyHttpClient implements HttpClient {
   }
 }
 ```
+Este exemplo mostra de forma simplificada como implementar essa funcionalidade. Seria mais simples em alguns casos extender o `DefaultHttpClient`, que já contém a maioria das implementações. Mesmo assim, na maioria dos casos, toda a implementação deve ser feita para cobrir cada caso de uso específico quando necessário.
 
-This is a very simple example and, to implement this, it would be easier to extend the `DefaultHttpClient` instead, which already contains most of the implementation. Nonetheless, in most scenarios, the entire implementation will need to be replaced, hence the example.
+# Use um HTTP client customizado
+Para usar seu novo "client", passe para o BeagleService na inicialização `BeagleSdk.init`. Veja o exemplo abaixo:
 
-# Use a custom HTTP client
-To use your client, pass it in the Beagle initialization method `BeagleSdk.init` just like the example below:
 ```dart
 final beagleService = BeagleService(
   httpClient: const MyHttpClient(),

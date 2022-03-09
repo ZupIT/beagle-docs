@@ -1,21 +1,21 @@
 ---
-title: Accessing the localhost
+title: Acessando o localhost
 weight: 3
 description: >-
-  In this section, you will find information on how to refer to the localhost on Beagle Flutter.
+  Nesta seção, você encontra informações de como acessar o localhost pelo Beagle Flutter.
 ---
 
 ---
 
-## Running a backend in the localhost
-In the previous steps, the `baseUrl` used was `https://usebeagle.io/start`, but this is just an example and you will need to replace this address by your own backend.
+## Rodar um backend no localhost
+Nas documentações anteriores, o `baseUrl` usado foi o `https://usebeagle.io/start`, mas foi apenas apra exemplificar e em aplicações reais você usaria sua própria URL.
 
-### Making HTTP requests
-By default, both Android and iOS will make only HTTPS (secured) requests. To change this behavior, follow the steps below:
+### Fazendo requisições HTTP
+Por padrão, ambos Android e iOS fazem apenas requisições seguras com o protocolo HTTPS. Para mudar este comportamento, siga os passos a seguir:
 
 #### Android
-1. Open `android/app/src/main/AndroidManifest.xml` 
-2. Place the rule `android:usesCleartextTraffic="true"` in `<application>` tag:
+1. Abra `android/app/src/main/AndroidManifest.xml` 
+2. Adicione a regra `android:usesCleartextTraffic="true"` na `<application>` tag:
 
 ```xml
 <application
@@ -29,8 +29,8 @@ By default, both Android and iOS will make only HTTPS (secured) requests. To cha
 ```
 
 #### iOS
-1. Open `ios/{project_name}/info.plist` 
-2. Make sure the configuration for `NSAppTransportSecurity` is the following one:
+1. Abra `ios/{project_name}/info.plist` 
+2. Veja se a configuração `NSAppTransportSecurity` tem o seguinte valor:
 
 ```xml
 <key>NSAppTransportSecurity</key>
@@ -47,13 +47,13 @@ By default, both Android and iOS will make only HTTPS (secured) requests. To cha
 ```
 
 {{% alert color="warning" %}}
-This configuration is not recommended for production builds. HTTP requests should be blocked while not in development.
+Esta configuração é apenas para testes e não deveser usada em builds finais de produção.
 {{% /alert %}}
 
 ### localhost vs 10.0.2.2
-When running your backend in the localhost, iOS works with the address `localhost`, however the Android emulator does not. 
+Ao rodar o backend no localhost, o iOS funciona no endereço `localhost`, no entando o emulador do Android não funciona assim.
 
-To access the localhost in the Android emulator, you need to use the **IP `10.0.2.2`.** To solve this problem, you can use Flutter's `Platform` to decide what address to use. See the example below:
+Para acessar o localhost no emulador do Android, você precisa usar o **IP `10.0.2.2`.**. No Flutter se você quiser alterar este comportamento basta seguir o exemplo abaixo e decidir qual endereço usar:
 
 ```dart
 final localhost = Platform.isAndroid ? '10.0.2.2' : 'localhost';
