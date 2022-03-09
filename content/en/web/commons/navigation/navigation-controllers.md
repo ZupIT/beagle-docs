@@ -81,7 +81,7 @@ This is simple navigation controller with the sole purpose of demonstrating this
 The only non-intuitive parameter in the NavigationController is the `completeNavigation`.
 
 {{% alert color="success" %}}
-You can ignore this if you don't intent to show a Beagle UI before the success event.
+You can ignore this if you don't intend to present a Beagle UI before the success event.
 {{% /alert %}}
 
 By default, if you don't call the `completeNavigation` function, the navigation will occur after the success event. But, navigation controllers, like the default one, uses the Beagle Structure to render the feedback.
