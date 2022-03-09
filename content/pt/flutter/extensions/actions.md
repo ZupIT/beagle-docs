@@ -1,30 +1,31 @@
 ---
-title: Custom Actions
+title: Ações customizadas
 weight: 3
 description: >-
-  In this section, you will find information on how to create and use your own actions in Beagle Flutter.
+  Aqui você encontra detalhes de como criar e usar ações customizadas no Beagle Flutter.
 ---
 
 ---
 
-## How to create custom actions?
-1. Declare a map of type `Map<String, ActionHandler>`;
-2. Pass this map to your BeagleService instance.
+## Como criar uma ação customizada?
 
-This map tells Beagle which action to trigger when a given identifier comes from a JSON.
+1. Declare um mapa do tipo `Map<String, ActionHandler>`;
+2. Adicione o mapa criado na criação da intância do BeagleService
 
-### The keys on a map of actions
-The key in a map of actions is a string and it must be equivalent to the `_beagleAction_` property of the JSON. These keys have a single restriction: they must have the prefix "custom:".
+Esta estrutura serve para dizer ao Beagle qual ação correta iniciar a partir de um identificador.
 
-### The values on a map of actions (Action handlers)
-An action handler is a function that receives the following named parameters:
+### As chaves em um mapa de ações
+A chave representa o nome da ação e deve ser equivalente a propriedade `_beagleAction_` do JSON. A única restrição para criação do nome é utilizar o prefixo "custom"
 
-- action (BeagleAction): the action itself, it allows access to all properties that came from the JSON.
-- view (BeagleView): the BeagleView that spawned this action. The reference to the BeagleView is useful for altering the Beagle UI tree and triggering re-renders, but it's rarely needed when implementing simple actions.
-- element (BeagleUIElement): the node of the BeagleTree that owns the action.
-- context (BuildContext): the BuildContext of the parent BeagleWidget.
+### Os valores do mapa de ações (Action handlers)
+Um Action handler é a funcção que recebe os seguintes parâmetros:
 
-The most important parameter is the action and most action handlers will need only this to be implemented. See an example below of an action that logs a message to the console:
+- action (BeagleAction): A ação que permite acesso as propriedades vindas do JSON
+- view (BeagleView): A BeagleView é quem iniciou a ação, pode ser útil no caso de necessidade de iniciar novas renderizações mas é raramente usada em ações mais simples.
+- element (BeagleUIElement): O nó da árvore ao qual a ação pertence
+- context (BuildContext): O BuildContext do BeagleWidget pai.
+
+O parâmetro mais importante é a ação e a maioria dos action handlers vão precisar apenas dela para funcionar. Veja um exemplo de uma ação que mostra uma mensagem no console de logs.
 
 ```dart
 final Map<String, ActionHandler> myActions = {
@@ -40,4 +41,4 @@ final beagleService = BeagleService(
 );
 ```
 
-That's it! Now you can use your custom action with Beagle Flutter!
+É isso! Agora vocÊ já sabe como usar ações customizadas com o Beagle Flutter.
