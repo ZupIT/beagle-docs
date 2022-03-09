@@ -125,7 +125,7 @@ Alguns widgets possuem uma variável que permite definir o estilo. O nome de cad
 Para configurar estilos personalizados, siga estas etapas:
 
 {{% alert color="info" %}}
-Você usará `Text` como um widget que tem `UITextView` como sua **visualização UIKit**. Depois disso, você aplicará suas alterações de estilo a esta visualização, que também terá as personalizações `font` e `textColor`.
+Você usará `Text` como um widget que tem `UITextView` como sua **UIKit view**. Depois disso, você aplicará suas alterações de estilo a esta visualização, que também terá as personalizações `font` e `textColor`.
 {{% /alert %}}
 
 **Passo 1:** crie uma função que receba uma representação do `UIKit` do Widget ao qual você deseja aplicar estilos.
