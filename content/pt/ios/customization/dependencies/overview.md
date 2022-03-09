@@ -120,7 +120,7 @@ dependencies.urlBuilder = UrlBuilder(baseUrl: URL(string: "SUA URL BASE"))
 
 Ele armazena todos os seus **estilos** e sabe como aplicá-los aos seus componentes.
 
-Alguns widgets possuem uma variável que permite definir o estilo. O nome de cada um deve ser passado para a dependência **Tema**, para que esse estilo possa ser utilizado em seu respectivo componente.
+Alguns widgets possuem uma variável que permite definir o estilo. O nome de cada um deve ser passado para a dependência **Theme**, para que esse estilo possa ser utilizado em seu respectivo componente.
 
 Para configurar estilos personalizados, siga estas etapas:
 
