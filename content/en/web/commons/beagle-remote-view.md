@@ -1,17 +1,22 @@
 ---
 title: BeagleRemoteView
 weight: 176
-description: Aprenda quais são os parâmetros do BeagleRemoteView
+description: BeagleRemoteView description and its parameters
 ---
 
 ---
 
-# Introdução
+## What is it?
 
-O componente de entrada para um fluxo server driven no Beagle Web é o `BeagleRemoteView`. Veja um exemplo de como usá-lo:
+The `BeagleRemoteView` is the input component for a server driven workflow in Beagle Web.
+
+## How to use it?
+
+We have listed an exemple below on how to use this component.
 
 {{< tabs id="T81" >}}
 {{% tab name="Angular" %}}
+
 ```text
 <beagle-remote-view route="/my-server-driven-page"></beagle-remote-view>
 ```
@@ -19,6 +24,7 @@ O componente de entrada para um fluxo server driven no Beagle Web é o `BeagleRe
 {{% /tab %}}
 
 {{% tab name="React" %}}
+
 ```text
 <BeagleRemoteView route="/my-server-driven-page" />
 ```
@@ -26,17 +32,20 @@ O componente de entrada para um fluxo server driven no Beagle Web é o `BeagleRe
 {{% /tab %}}
 {{< /tabs >}}
 
-# Parâmetros
-## route
-O `BeagleRemoteView` possui um único parâmetro obrigatório: a rota (route). A rota pode ser uma string com a URL ou um objeto mais complexo do tipo `RemoteView`. Quando é uma string, assumimos que a rota é um simples GET para a URL informada, sem headers adicionais. Se for necessário fazer uma requisição com outro método HTTP, corpo de resposta ou headers específicos, deve-se criar um objeto do tipo `RemoteView`, composto das seguintes propriedades:
+## Parameters
 
-- **url:** a única propriedade obrigatória. Indica a URL da requisição.
-- **fallback:** árvore de UI para renderizar caso haja falha na requisição.
-- **shouldPrefetch:** não é útil quando usado com o componente `BeagleRemoteView`. Em outras situações, pré-carregam a página assim que possível ao invés de esperar por eventos específicos.
-- **httpAdditionalData:** usado para configurar a requisição. Um HttpAdditionalData contém:
-  - **method:** o método HTTP, o padrão é GET.
-  - **headers:** um mapa com os headers da requisição.
-  - **body:** o corpo da requisição. Isso não é válido para requisições GET.
+### route
 
-## controllerId
-O segundo parâmetro aceito pelo `BeagleRemoteView` é opcional e controla qual controle de nevagação será usado. Os navigation controllers são responsáveis por decidir o que fazer nos eventos de carregamento, erro e sucesso de uma tela, se não informado, o controlador padrão é usado. Para saber mais sobre navigation controllers, leia [este artigo]({{< ref path="/web/commons/navigation/navigation-controllers" lang="pt" >}}).
+`BeagleRemoteView` has a single mandatory parameter: the route. The route can be a string with the URL or a complex object of type `RemoteView`. When it's a string, we assume the route is a simple GET to the given URL, with no additional headers. If you need to make a request with another HTTP method, response body or specific headers, you must create an object from `RemoteView` type, that has the following properties:
+
+- **url:** the only required property. Indicates the request URL.
+- **fallback:** UI tree to render if the request fails.
+- **shouldPrefetch:** is not useful when used with the `BeagleRemoteView` component. In other situations, they preload the page as soon as possible rather than waiting for specific events.
+- **httpAdditionalData:** used to configure the request. An HttpAdditionalData contains:
+  - **method:** the HTTP method, the default is GET.
+  - **headers:** a map with the request headers.
+  - **body:** the body of the request. This is not valid for GET requests.
+
+### controllerId
+
+The second parameter accepted by `BeagleRemoteView` is optional and defines which navigation controller will be used. The ``navigation controllers`` are responsible for deciding what to do in the loading, what error and success events should be called for a screen. If it is not informed, the default controller from beagle will be used. To learn more about ``navigation controllers``, read [this article]({{< ref path="/web/commons/navigation/navigation-controllers" lang="en" >}}).

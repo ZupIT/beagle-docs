@@ -2,14 +2,14 @@
 title: View Client
 weight: 151
 description: >-
-  Nesta seção, você encontra informações sobre o View Client e como modifica-lo.
+  This section describes the ViewClient e and how to modify it.
 ---
 
 ---
 
-## O que é isso?
+## What is it?
 
-O View Client é uma dependencia que é chamada pelas classes internas do Beagle para fazer a busca de componentes no backend, ou seja, ele é um `middleware` entre a camada de rede `networkClient` e o Beagle. Dessa forma, o protocolo expõe os métodos: `fetch` e `prefetch` para fazerem essas buscas:
+The View Client is a dependency that is called by Beagle's internal classes to search for components in the backend. It is a `middleware` between the `networkClient` layer and Beagle. In this way, this protocol exposes the methods: `fetch` and `prefetch` to do these functionalities:
 
 ```swift
 public protocol ViewClientProtocol {
@@ -24,61 +24,61 @@ public protocol ViewClientProtocol {
 }
 ```
 
-## Como usar?
+## How to use?
 
-### Implementando o `fetch`
+### Implementing `fetch`
 
-A implementação padrão `fetch` segue os seguintes passos:
+The default `fetch` implementation follows these steps:
 
-**Passo 1:** Verifica se não existe um componente em cache para a url dada
+**Step 1:** Checks if there is no cached component for the given url
 
-**Passo 2:** Se existir, o retorna no bloco de completion.
+**Step 2:** If a cache exists, it returns the cached component in the completion block.
 
-**Passo 3:** monta a URL a partir do `urlBuilder`
+**Step 3:** assemble the URL from `urlBuilder`
 
-**Passo 4:** faz a requisição a partir do `networkClient`
+**Step 4:** make the request from the `networkClient`
 
-**Passo 5:** decodifica os dados da resposta a partir do `coder`
+**Step 5:** decodes the response data from the `coder`
 
-**Passo 6:** retorna o ServerDrivenComponent no bloco de completion.
+**Step 6:** returns the ServerDrivenComponent in the completion block.
 
-### Implementando o `prefetch`
+### Implementing `prefetch`
 
-A implementação padrão do `prefetch` segue os seguintes passos:
+The default implementation of `prefetch` follows these steps:
 
-**Passo 1:** Segue a mesma logica dos passos 3,4 e 5 do `fetch`
+**Step 1:** Follows the same logic as steps 3, 4 and 5 of `fetch`
 
-**Passo 2:** Armazena em cache (NSCache) o componente e atribui a url como chave de busca
+**Step 2:** Cache (NSCache) the component and assign the url as the search key
 
 {{% alert color="warning" %}}
-Essa lógica de cache é ultilizada apenas para implementar a funcionalidade de prefetch, ou seja, telas não são cacheadas por padrão. 
+This cache logic is only used to implement prefetch functionality, ie screens are not cached by default.
 {{% /alert %}}
 
-## **Criando um ViewClient Customizado**
+## **Creating a Custom ViewClient**
 
-Portanto, é possivel implementar o View Client de forma customizada para que possamos adotar uma lógica de **cache**.
+Therefore, it is possible to implement the View Client in a customized way so that we can adopt a **cache** logic.
 
-### Definição das dependencias
+### Dependency definition
 
-Para implementar um ViewClient customizado, podemos adotar como base o `ViewClient` padrão do Beagle. Dessa forma, definimos 3 dependências base que serão utilizadas por nossa implementação:
+To implement a custom ViewClient, we can use the standard Beagle `ViewClient` as a base. In this way, we define 3 base dependencies that will be used by our implementation:
 
-1. NetworkClient: Executa as requisições
+1. NetworkClient: Execute requests
 
-2. URLBuilder: Monta as urls
+2. URLBuilder: Mount the urls
 
-3. Coder: Decodifica o resultado das requisições
+3. Coder: Decodes the result of requests
 
-Além disso podemos definir uma *quarta dependência* que será responsável pelo gerenciamento de cache dos componentes, para esse exemplo a nomearemos de `CacheManager`.
+In addition, we can define a *fourth dependency* that will be responsible for managing the components cache, for this example we will name it `CacheManager`.
 
 {{% alert color="info" %}}
-Não abordaremos a implementação dessa dependencia, já que cada aplicação pode ter sua forma padrão e exclusiva de realizar o cache de dados
+We will not address the implementation of this dependency, since each application may have its own standard and unique way of performing data caching.
 {{% /alert %}}
 
-### Implementando ViewClientProtocol
+### Implementing ViewClientProtocol
 
-Agora precisamos implementar os métodos `fetch` e `prefetch` do ViewClientProtocol, e a partir disso podemos adotar nossa política customizada de cache de componentes.
+Now we need to implement the ViewClientProtocol's `fetch` and `prefetch` methods, and from there we can adopt our custom component cache policy.
 
-Nesse exemplo, iremos buscar em cache o componente toda vez que o método `fetch` for chamado e caso não seja encontrado faremos a requisição normalmente (implementada no método `fetchComponent`) e armazenar em cache o resultado, para isso iremos atribuir a url da requisição como chave de busca:
+In this example, we will fetch the component in cache every time the `fetch` method is called and if it is not found, we will make the request normally (implemented in the `fetchComponent` method) and cache the result, for that we will assign the url of the request as a search key:
 
 ```swift
 func fetch(
@@ -86,7 +86,7 @@ func fetch(
         additionalData: HttpAdditionalData?,
         completion: @escaping (Result<ServerDrivenComponent, Request.Error>) -> Void
     ) -> RequestToken? {
-        // Lógica customizada de cache
+        // cache custom logic
         if let component = cacheManager.getComponent(for: url) {
             completion(.success(component))
             return nil
@@ -96,7 +96,7 @@ func fetch(
     }
 ```
 
-Portanto o método `fetchComponent` terá a seguinte implementação:
+So the `fetchComponent` method will have the following implementation:
 
 ```swift
 @discardableResult
@@ -118,7 +118,7 @@ Portanto o método `fetchComponent` terá a seguinte implementação:
         return networkClient.executeRequest(request) { result in
             switch result {
             case .success(let response):
-                // Lógica customizada de cache
+                // cache custom logic
                 let decodeResult = self.decodeComponent(from: response.data)
                 if case .success(let component) = decodeResult {
                     self.cacheManager.insert(component: component, url: url)
@@ -131,19 +131,19 @@ Portanto o método `fetchComponent` terá a seguinte implementação:
     }
 ```
 
-Podemos notar que são executados cinco passos:
+We can see that five steps are performed:
 
-**Passo 1:** Monta a url a partir do `urlBuilder`
+**Step 1:** Mount url from `urlBuilder`
 
-**Passo 2:** Executa a requisição a partir do `networkClient`
+**Step 2:** Execute the request from the `networkClient`
 
-**Passo 3:** Decodifica a resposta em um componente a partir do `coder`
+**Step 3:** Decode the response into a component from the `coder`
 
-**Passo 4:** Insere o componente em cache a partir do `cacheManager`
+**Step 4:** Insert the cached component from the `cacheManager`
 
-**Passo 5:** Retorna o componente a partir do bloco de `completion`
+**Step 5:** Returns the component from the `completion` block
 
-Para o método `prefetch` podemos simplesmente seguir o mesmo comportamento do método `fetchComponent`, logo, basta chama-lo com o bloco de completion sendo uma closure vazia:
+For the `prefetch` method we can simply follow the same behavior as the `fetchComponent` method, so just call it with the completion block being an empty closure:
 
 ```swift
 func prefetch(url: String, additionalData: HttpAdditionalData?) {
@@ -151,9 +151,9 @@ func prefetch(url: String, additionalData: HttpAdditionalData?) {
 }
 ```
 
-### Resultado Final
+### Final result
 
-Por fim, temos como resultado essa implementação:
+Finally, we have this implementation as a result:
 
 ```swift
 class ViewClientCustom: ViewClientProtocol {
@@ -166,7 +166,7 @@ class ViewClientCustom: ViewClientProtocol {
 
     // MARK: Inner Dependencies
     
-    // Gerenciador de cache
+    // Cache manager
     var cacheManager: CacheManagerProtocol!
     
     // MARK: ViewClientProtocol
@@ -176,7 +176,7 @@ class ViewClientCustom: ViewClientProtocol {
         additionalData: HttpAdditionalData?,
         completion: @escaping (Result<ServerDrivenComponent, Request.Error>) -> Void
     ) -> RequestToken? {
-        // Lógica customizada de cache
+        // cache custom logic
         if let component = cacheManager.getComponent(for: url) {
             completion(.success(component))
             return nil
@@ -210,7 +210,7 @@ class ViewClientCustom: ViewClientProtocol {
         return networkClient.executeRequest(request) { result in
             switch result {
             case .success(let response):
-                // Lógica customizada de cache
+                // cache custom logic
                 let decodeResult = self.decodeComponent(from: response.data)
                 if case .success(let component) = decodeResult {
                     self.cacheManager.insert(component: component, url: url)

@@ -3,16 +3,18 @@ title: Overview
 weight: 1
 type: overview
 description: >-
-  In this section you will learn about Beagles' dependencies and their properties for iOS environment.
+  This section describes the Beagles' dependencies and their properties for iOS environments.
 ---
 
 ---
 
-## Introduction
+## What is it?
 
-Your application can change Beagle's default behavior by customizing its dependencies.
+The `dependecies` file is where you can change the Beagle's default behavior in your application.
 
-From the `BeagleConfigurator` we can call the static method `setup(dependencies: BeagleDependencies)` which receives an object of type `BeagleDependencies`, where the customization of the Beagle dependencies can be done.
+## How does it work?
+
+The `BeagleConfigurator` calls the static method `setup(dependencies: BeagleDependencies)` that receives an `BeagleDependencies` object. This object will hold all dependencies's properties. Here follows an example:
 
 ```swift
 public struct BeagleDependencies {
@@ -36,10 +38,13 @@ public struct BeagleDependencies {
 }
 ```
 
-This structure has an empty constructor that assigns the default Beagle implementations, so just start it and make the customizations that are convenient.
+{{% alert color="success" %}}
+This structure has an empty constructor that assigns the default Beagle implementations:
 
-Therefore, it is appropriate to make this initial configuration of Beagle during the application startup process, that is, in the `didFinishLaunchingWithOptions` of the `AppDelegate`:
+* start it and make the necessary customizations.
+{{% /alert %}}
 
+Therefore, it is appropriate to make this *Beagle initial configuration* during the application startup process, that is, in the the `AppDelegate` function `didFinishLaunchingWithOptions` as shown below:
 
 ```swift
 @UIApplicationMain
@@ -64,7 +69,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
-To access these dependencies during application execution, Beagle provides a `@Injected` property wrapper that resolves an instance to the type of the variable (wrapped value). So suppose we want to clear the global context content at some point during application execution:
+{{% alert color="success" %}}
+To access these dependencies during the application execution, Beagle provides a `@Injected` property wrapper that resolves an instance to the type of the variable (wrapped value).
+{{% /alert %}}
+
+### Examples
+
+Below we have an example on how to clear the global context content at some point when executing the application:
 
 ```swift
 @Injected var globalContext: GlobalContextProtocol
@@ -72,7 +83,7 @@ globalContext.clear()
 ```
 
 {{% alert color="warning" %}}
-This property wrapper raises a `fatalError` if it is used to resolve a dependency that is not Beagles' or that is optional and has not been configured e.g:(logger, analyticsProvider, deepLinkHandler, networkClient), to work around that, simply use `@OptionalInjected` which will return nil if the dependency is not resolved.
+This property wrapper raises a `fatalError` if it is used to resolve a dependency that is not Beagles' or that is optional and has not been configured e.g:(logger, analyticsProvider, deepLinkHandler, networkClient), to work around that, simply use `@OptionalInjected` which will return nil if the dependency is not resolved, as shown below.
 {{% /alert %}}
 
 ```swift
@@ -82,13 +93,13 @@ logger?.log(Log.network(.httpRequest(request: .init(url: urlRequest))))
 
 ## Customizable Dependencies
 
-Default dependencies implementation that can be customized.
+Here follow a few Default dependencies implementations that can be customized.
 
 ### CoderProtocol
 
-It is responsible for the encoding and decoding logic of the Beagle. Exposes the `register` method so that it is possible to register new components and actions.
+It is responsible for the encoding and decoding Beagle's logic. It exposes the `register` method so that it is possible to register new components and actions.
 
-Below there is an example of how to register a new component and a custom action:
+Below you can find an example on how to register a new component and a custom action:
 
 ```swift
 dependencies.coder.register(component: CustomWidget.self)
@@ -97,9 +108,9 @@ dependencies.coder.register(action: CustomAction.self)
 
 ### UrlBuilderProtocol
 
-It is responsible for creating a URL for a Beagle request from relative URLs that can be sent through BFF (in navigation flows for example) and a configured base URL.
+It is responsible for creating a Beagle request URL from relative URLs that are received from an BFF (in navigation flows for example) and a configured base URL.
 
-See next an example on how to use it:
+This is an example on how to use it:
 
 ```swift
 dependencies.urlBuilder = UrlBuilder(baseUrl: URL(string: "SUA URL BASE"))
@@ -107,7 +118,7 @@ dependencies.urlBuilder = UrlBuilder(baseUrl: URL(string: "SUA URL BASE"))
 
 ### ThemeProtocol
 
-Stores all your **styles** and knows how to apply them to your components.
+It stores all your **styles** and knows how to apply them to your components.
 
 Some widgets have a variable that allows you to define the style. The name of each one must be passed to the **Theme** dependency, so that that style can be used in its respective component.
 
@@ -144,10 +155,10 @@ dependencies.theme = theme
 
 ### ViewClientProtocol
 
-It is responsible for fetching screens from the backend using the `fetch` and `prefetch` methods. It has an internal implementation that simply assembles urls from `urlBuilder` and makes requests from `networkClient`.
+It is responsible for fetching screens from the backend using the `fetch` and `prefetch` methods. It has an internal implementation that assembles urls from a `urlBuilder` and makes a request from `networkClient`.
 
 {{% alert color="info" %}}
-It is possible to implement a screen caching mechanism from the custom implementation of this dependency.
+It is possible to implement a screen caching mechanism from this dependency custom implementation.
 {{% /alert %}}
 
 ### ImageDownloaderProtocol
@@ -162,9 +173,9 @@ Dependencies which are not default and therefore should be implemented before us
 
 It is responsible for triggering the log messages produced when running Beagle streams from the `log` method. These logs follow the `LogType` protocol, which has the following parameters:
 
-- category: log subject;
-- message: log message;
-- level: classifies the criticity level.
+* category: log subject;
+* message: log message;
+* level: classifies the criticity level.
 
 ### NetworkClientProtocol
 
@@ -174,7 +185,7 @@ It is responsible for executing **network requests**. Beagle does not provide a 
 
 This handler is used for a [**deep link navigation**]({{< ref path="/ios/customization/dependencies/deeplink-handler.md" lang="en" >}}) action. The variable has a default value, you can add new screens or replace them with others in the application.
 
-Below you can see a snippet on how to add a screen with a possible route for deep linking using a default value:
+Below you can see a code on how to add a screen with a possible route for a deep linking using a default value:
 
 ```swift
 let deepLinkHandler = DeeplinkScreenManager.shared
@@ -185,7 +196,7 @@ BeagleConfigurator.setup(dependencies: dependencies)
 
 ### AnalyticsProviderProtocol
 
-It is a protocol that can be implemented to track screen appearance or completion actions and click events.
+It is a protocol that can be implemented to track the screen appearance, actions and click events.
 
 See the example below:
 
@@ -203,24 +214,23 @@ class AnalyticsSample: Analytics {
 }
 ```
 
-## Dependencias publicas não customizáveis
+## Public dependencies that are not customizable
 
-
-Dependencies that are not customizable but have public APIs for configuring Beagle.
+Here we list a few dependencies that could not be customized but have public APIs for configuring Beagle.
 
 ### NavigationProtocol
 
-The `navigator` handles actions type of [**navigate**]({{< ref path="/api/actions/navigate/" lang="en" >}}) of your application.
+The `navigator` handles the [**navigate**]({{< ref path="/api/actions/navigate/" lang="en" >}}) actions in your application.
 
-Exposes custom navigation controller registration methods and [**navigation animation**]({{< ref path="/ios/customization/navigation-animation" lang="en" >}}).
+It exposes a custom navigation controller registration methods and a [**navigation animation**]({{< ref path="/ios/customization/navigation-animation" lang="en" >}}).
 
 ### GlobalContextProtocol
 
-It is responsible for managing the global context of Beagle, exposes `get`, `set` and `clear` functions, so that it is possible to access and change its attributes outside the scope of Beagle.
+It is responsible for managing the Beagle global context, it exposes the `get`, `set` and `clear` functions, so that it is possible to access and change the Global context attributes outside the Beagle scope.
 
 ### OperationsProviderProtocol
 
-It is responsible for providing context operations, exposes the `register` function so that it is possible to register custom operations in Beagle's default OperationsProvider.
+It is responsible for providing context operations, exposing the `register` function so that it is possible to register custom operations in Beagle's default OperationsProvider.
 
 ### BundleProtocol
 

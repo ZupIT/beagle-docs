@@ -1,17 +1,22 @@
 ---
 title: BeagleRemoteView
 weight: 176
-description: Aprenda quais são os parâmetros do BeagleRemoteView
+description: Descrição do BeagleRemoteView e seus parâmetros
 ---
 
 ---
 
-# Introdução
+## O que é isso?
 
-O componente de entrada para um fluxo server driven no Beagle Web é o `BeagleRemoteView`. Veja um exemplo de como usá-lo:
+`BeagleRemoteView` é o componente de entrada para um fluxo server driven no Beagle Web.
+
+## Como utilizá-lo?
+
+Listamos abaixo um exemplo de uso do ``BeagleRemoveView``
 
 {{< tabs id="T81" >}}
 {{% tab name="Angular" %}}
+
 ```text
 <beagle-remote-view route="/my-server-driven-page"></beagle-remote-view>
 ```
@@ -19,6 +24,7 @@ O componente de entrada para um fluxo server driven no Beagle Web é o `BeagleRe
 {{% /tab %}}
 
 {{% tab name="React" %}}
+
 ```text
 <BeagleRemoteView route="/my-server-driven-page" />
 ```
@@ -26,8 +32,10 @@ O componente de entrada para um fluxo server driven no Beagle Web é o `BeagleRe
 {{% /tab %}}
 {{< /tabs >}}
 
-# Parâmetros
-## route
+## Parâmetros
+
+### route
+
 O `BeagleRemoteView` possui um único parâmetro obrigatório: a rota (route). A rota pode ser uma string com a URL ou um objeto mais complexo do tipo `RemoteView`. Quando é uma string, assumimos que a rota é um simples GET para a URL informada, sem headers adicionais. Se for necessário fazer uma requisição com outro método HTTP, corpo de resposta ou headers específicos, deve-se criar um objeto do tipo `RemoteView`, composto das seguintes propriedades:
 
 - **url:** a única propriedade obrigatória. Indica a URL da requisição.
@@ -38,5 +46,6 @@ O `BeagleRemoteView` possui um único parâmetro obrigatório: a rota (route). A
   - **headers:** um mapa com os headers da requisição.
   - **body:** o corpo da requisição. Isso não é válido para requisições GET.
 
-## controllerId
-O segundo parâmetro aceito pelo `BeagleRemoteView` é opcional e controla qual controle de nevagação será usado. Os navigation controllers são responsáveis por decidir oq ue fazer nos eventos de carregamento, erro e sucesso de uma tela, se não informado, o controlador padrão é usado. Para saber mais sobre navigation controllers, leia [este artigo]({{< ref path="/web/commons/navigation/navigation-controllers" lang="pt" >}}).
+### controllerId
+
+O segundo parâmetro aceito pelo `BeagleRemoteView` é opcional e define qual controle de nevagação será usado. Os ``navigation controllers`` são responsáveis por decidir o que fazer nos eventos de carregamento, erro e sucesso de uma tela, se não informado, o controlador padrão é utilizado. Para saber mais sobre ``navigation controllers``, leia [este artigo]({{< ref path="/web/commons/navigation/navigation-controllers" lang="pt" >}}).
