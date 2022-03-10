@@ -1,6 +1,6 @@
 ---
-title: First steps
-weight: 2
+title: Primeiros passos
+weight: -1
 description: >-
   Nesta seção você aprende como instalar o Beagle Flutter em sua aplicação e o passo a passo inicial para começar a usar.
 ---
