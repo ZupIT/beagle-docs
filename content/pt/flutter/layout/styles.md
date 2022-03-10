@@ -130,7 +130,7 @@ Uma linguagem de estilo que funciona para todas as plataformas foi muito importa
 
 O Beagle Flutter é fornecido com o mecanismo de layout usado por todas as bibliotecas de interface do usuário do Beagle, portanto, ao usar nossos componentes padrão, a propriedade "style" pode ser usada e funciona. Dessa forma, é mais fácil reproduzir os exemplos, pois eles não são específicos da plataforma.
 
-Embora os estilos Beagle funcionem na maioria das vezes, infelizmente [eles têm alguns problemas](https://gist.github.com/Tiagoperes/12f786e06ad80752afacaf80bc49bcf9). Além disso, se você for usar apenas o Flutter para desenvolver o aplicativo e a plataforma não for realmente um problema, pode ser mais fácil se adaptar a um mecanismo de layout no backend que funcione mais como o próprio Flutter.
+Embora os estilos Beagle funcionem na maioria das vezes, infelizmente, [alguns ajustes ainda são necessários](https://gist.github.com/Tiagoperes/12f786e06ad80752afacaf80bc49bcf9). Além disso, se você for usar apenas o Flutter para desenvolver o aplicativo e a plataforma não for realmente um problema, pode ser mais fácil se adaptar a um mecanismo de layout no backend que funcione mais como o próprio Flutter.
 
 Em vez de usar "style", podemos expor os widgets de layout do Flutter como componentes orientados a servidor. Veja os exemplos abaixo:
 
