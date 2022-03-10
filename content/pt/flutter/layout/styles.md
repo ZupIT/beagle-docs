@@ -212,7 +212,7 @@ class _ContainerBuilder extends ComponentBuilder {
 }
 ```
 
-Acima está um exemplo de como poderíamos ignorar o motor padrão de layout do Beagle e usar o nosso customizado, apenas expondo alguns componentes de layout do Flutter.
+Acima temos um exemplo de como poderíamos ignorar o motor padrão de layout do Beagle e usar o nosso customizado, apenas expondo alguns componentes de layout do Flutter.
 
 Para usar diferentes motores de layout, a primeira coisa que deve ser feita é desabilitar o moto padrão de layout do Beagle Flutter. Para isso, basta apenas mudar a opção `enableStyles` para o valor "false". mas tenha cuidado pois a maioria dos componentes padrão não funcionarão mais.
 
