@@ -2,29 +2,48 @@
 title: Beagle Theme
 weight: 3
 description: >-
- In this section, you will find information on how to create and use your own theme for the Beagle components in Flutter.
+ Aprenda nesta seção, como criar seu próprio tema customizado para os componentes Beagle Flutter.
 ---
 
 ---
 
 {{% alert color="warning" %}}
-Attention: this article talks about the `styleId`. Despite the similar name, `styleId` and `style` are very different properties. While the latest uses a well defined set of styling properties set by the backend and applies to every component, the first is only a string and works for specific components of the package beagle_components. If you want to learn how to set up the styles instead, go to [this page]({{< ref path="/flutter/layout/styles" lang="en" >}}).
+Atenção: Este artigo demonstra o uso do styleId. Mesmo com nomes parecidos o styleId e o style são propriedades bem diferentes. O style usa propriedades pré-definidas pelo Beagle, que aplica mudanças no componente específico que foi adicionada. para aprender mais sobre a propriedade style, [nesta página]({{< ref path="/flutter/layout/styles" lang="pt" >}}).
 {{% /alert %}}
 
-# What is the BeagleTheme
-The `BeagleTheme` is a configuration class for the default components of Beagle (package beagle_components). It is responsible for creating themes for the components Button, Text and Screen (navigation bar) and also for providing local image resources for the component Image.
+# O que é o BeagleTheme
 
-A theme is a set of styles that can be referenced by the property `styleId` of the component. A button that comes with the `styleId` "primary", for instance, will use the ButtonStyle returned by `beagleTheme.buttonStyle('primary')`.
+O `BeagleTheme` é uma classe de configuração para os componentes padrão do Beagle (package beagle_components). Ela é responsável por criar temas para os componentes "Button", "Text" e "Screen" (Barra de navegação) e também provê recursos de imagem local para o componente "Image".
 
-The local image resources are strings with the paths to every image that can be accessed by the server driven view with the parameter `mobileId` of the Image component. If an image comes with the `mobileId` "logo", for instance, it would use the image path returned by `beagleTheme.image('logo')`.
+Um tema é um conjunto de estilos que são acessados pela propriedade `styleId` do componente. Um botão com o `styleId` = "primary" por exemplo, vai aplicar o tema retornado pelo estilo `beagleTheme.buttonStyle('primary')`.
 
-# How to create and setup a BeagleTheme?
-It's simple! You just need to:
-1. Create a class that implements the `BeagleTheme` interface;
-2. Provide an instance of the class to the `BeagleThemeProvider`, that should wrap your application.
+Os recursos de imagem local são strings com os caminhos para cada imagem que pode ser acessadas pela `server driven view` pelo parâmetro `mobileId` do componente de Imagem. Se por exemplo uma imagem retorna com o valor de `mobileId` = "logo", o caminho da imagem será buscado em `beagleTheme.image('logo')`.
 
-## Local images
-The method `image` receives the image id that comes from the JSON (`mobileId`) and returns the corresponding local image asset path. Check out the following example:
+## Como usar o BeagleTheme?
+
+O BeagleTheme não é uma funcionalidade do "core" da biblioteca Beagle. mas sim, do pacote beagle_components. Por isso, diferente da maioria das opções ele não é configurado no BeagleService. O BeagleTheme deve ser passado aos componentes padrão atráves do widget `BeagleThemeProvider`.
+
+É essencial que o `BeagleThemeProvider` fique no nível mais alto da hierarquia de componentes para prevenir casos em que a navegação possa torná-lo indisponível.
+
+1. Crie uma classe que implemente a interface `BeagleTheme`
+2. Adicione uma instancia da classe criado ao `BeagleThemeProvider`
+
+Esses dois passos já configuram o BeagleTheme da sua aplicação
+
+```dart
+void main() {
+  runApp(BeagleProvider(
+    beagle: beagleService,
+    child: BeagleThemeProvider(
+      theme: MyTheme(),
+      child: MyApp()
+    ),
+  ));
+}
+```
+
+## Imagens locais
+O método `image` recebe um identificador da imagem que vem do JSON (`mobileId`) e retorna o caminho correspondente da imagem local em "assets". Veja o exemplo abaixo:
 
 ```dart
 class MyTheme extends BeagleTheme {
@@ -44,7 +63,7 @@ class MyTheme extends BeagleTheme {
 ```
 
 ## Button style
-The method `buttonStyle` receives the `styleId` that comes from the JSON and returns the corresponding `ButtonStyle`. Example:
+O método `buttonStyle` recebe o `styleId` que vem do JSON e retorna o estilo correspondente em `ButtonStyle`. Veja o exemplo:
 
 ```dart
 class MyTheme extends BeagleTheme {
@@ -69,7 +88,8 @@ class MyTheme extends BeagleTheme {
 ```
 
 ## Text style
-The method `textStyle` receives the `styleId` that comes from the JSON and returns the corresponding `TextStyle`. Check out an implementation:
+
+O método `textStyle` recebe o `styleId` que vem do JSON e retorna o valor correspondente em `TextStyle`. Veja o exemplo:
 
 ```dart
 class MyTheme extends BeagleTheme {
@@ -88,22 +108,5 @@ class MyTheme extends BeagleTheme {
   }
 
   // ...
-}
-```
-
-## How to use the BeagleTheme?
-The BeagleTheme is not a feature of the core Beagle library, but instead, it's from the package beagle_components. For this reason, differently than most configuration options, it doesn't do into the BeagleService. The BeagleTheme must be provided to the default components via the widget `BeagleThemeProvider`.
-
-The `BeagleThemeProvider` must wrap the application to prevent cases where a navigation would make it unavailable. See the example below:
-
-```dart
-void main() {
-  runApp(BeagleProvider(
-    beagle: beagleService,
-    child: BeagleThemeProvider(
-      theme: MyTheme(),
-      child: MyApp()
-    ),
-  ));
 }
 ```
