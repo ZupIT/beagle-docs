@@ -2,23 +2,24 @@
 title: View client
 weight: 3
 description: >-
-  In this section, you will find information on how to setup a ViewClient in Beagle Flutter.
+  Nesta seção, você encontra informações de como configurar uma ViewClient no BeagleFlutter.
 ---
 
 ---
 
-# Introduction
-Similar to the HttpClient, but more specific. While the hHttpClient is responsible for managing every request (views, json data, images, etc), the ViewClient is only responsible for fetching views, i.e. server driven pages.
+# Introdução
 
-The ViewClient creates the BeagleRequest that is sent to the HttpClient. The default implementation does two things:
-1. creates the BeagleRequest according to what has been requested by its caller (normally, the navigator);
-2. when the response arrives from the httpClient, it checks for navigation actions where `preFetch` is `true` and, asynchronously, pre-fetches their results.
+Semelhante ao HttpClient, mas mais específico. Enquanto o hHttpClient é responsável por gerenciar todas as solicitações ("views", dados json, imagens, etc), o ViewClient é responsável apenas por buscar "views", ou seja, páginas "server-driven".
 
-It does nothing other than this, and this might be enough for most applications. But some applications may need extra behavior when fetching views, and this is the place where it should be implemented.
+O ViewClient cria o BeagleRequest que é enviado ao HttpClient. A implementação padrão faz duas coisas:
+1. cria o BeagleRequest de acordo com o que foi solicitado pelo cliente (normalmente, o navegador);
+2. quando a resposta chega do httpClient, ele verifica as ações de navegação onde `preFetch` é `true` e, de forma assíncrona, pré-busca seus resultados.
 
-# Creating a new ViewClient
+Ele não faz nada além disso, e isso pode ser suficiente para a maioria dos aplicativos. Mas alguns aplicativos podem precisar de comportamento extra ao buscar "views", e este é o lugar onde isso deve ser implementado.
 
-A good example is caching. Let's say we want to locally store a view so when Beagle calls `viewClient.fetch` again, it returns the cached result instead of calling the hHttpClient. To do this, we can implement a new ViewClient that has storage and implements `fetch` as follows:
+# Criando uma nova ViewClient
+
+Um bom exemplo é o "caching". Digamos que precisamos guardar uma view localmente, assim quando o Beagle chamar `viewClient.fetch` novamente, o resultado do cache será retornado ao invés de chamar o HttpClient novamente. O exemplo a seguir mostra como fazer isso ao criar uma nova `ViewClient` que tem um "storage" e implementa o `fetch`:
 
 ```dart
 import 'dart:convert';
@@ -46,13 +47,12 @@ class MyViewClient extends DefaultViewClient {
   }
 }
 ```
+A implementação acima mosta uma lógica bem simples usando a biblioteca `sharedPreferences`, em um cenário real ela nem seria necessária, mas é um ótimo exemplo para mostrar de forma direta e rápida como o ViewClient customizado pode ser feito.
 
-Above we implemented a very simple logic that will store every fetch result into the disk using the lib `sharedPreferences`. This is a very dumb implementation, because this cache would never expire, but the objective here is just to show how such feature could be implemented using the ViewClient.
+Nós extendemos o `DefaultViewClient` para tirar vantagem de tudo que já está implementado. como por exemplo, o pre-fetch. Você pode também se preferir ou se precisar extender diretamento a `ViewClient` e implementar toda a interface do zero.
 
-We extended the DefaultViewClient to take advantage of everything that is already implemented there, like the pre-fetch behavior. But you can also write it from the ground up by extending `ViewClient`, which is just an interface.
-
-# Registering the new ViewClient
-After creating your custom ViewClient, you just need to pass it to your BeagleService instance:
+# Registrando o novo ViewClient
+Após criar o seu ViewClient customizado, basta apenas passá-la para a instância do BeagleService:
 
 ```dart
 final baseUrl = 'https://my-bff.com';

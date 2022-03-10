@@ -2,19 +2,19 @@
 title: Image Downloader
 weight: 3
 description: >-
-  In this section, you will find information on how to use and configure the Image Downloader in Beagle Flutter.
+  Nesta seção, você encontra informações de como configurar e usar o Image Downloader no Beagle Flutter.
 ---
 
 ---
 
-# Introduction
-The image downloader handles how remote images are downloaded. It is supposed to be used by any Image component and our intent when letting this be a configurable service is so that any additional logic to download images can be easily implemented without the need of replacing the image component of the library of components being used.
+# Introdução
+O "ImageDownloader" lida com como as imagens remotas são baixadas. Ele deve ser usado por qualquer componente de Imagem e nossa intenção ao deixar este ser um serviço configurável é que qualquer lógica adicional para download de imagens possa ser facilmente implementada sem a necessidade de substituir o componente de imagem da biblioteca de componentes que está sendo usada.
 
-Similar to the ViewClient, the ImageDownloader is also responsible for creating requests for the HttpClient and processing its responses, the only difference is that the ViewClient does it for server driven views (JSONs) and the ImageDownloader does it for images.
+Semelhante ao "ViewClient", o "ImageDownloader" também é responsável por criar solicitações para o "HttpClient" e processar suas respostas, a única diferença é que o "ViewClient" faz isso para visualizações orientadas a servidor (JSONs) e o "ImageDownloader" faz isso para imagens.
 
-The default ImageDownloader is very simple, it just creates the request, pass it to the HttpClient and transform the response into a `Uint8List`. An interesting application of a custom ImageDownloader would be caching. The custom ImageDownloader would save the images in disk and use the stored value instead of making the request to the HttpClient whenever possible.
+O "ImageDownloader" padrão é muito simples, apenas cria a requisição, passa para o HttpClient e transforma a resposta em um `Uint8List`. Uma aplicação interessante de um "ImageDownloader" personalizado seria o cache. O "ImageDownloader" personalizado salvaria as imagens em disco e usaria o valor armazenado em vez de fazer a solicitação ao "HttpClient" sempre que possível.
 
-Here's the ImageDownloader interface:
+Aqui está a interface do `ImageDownloader`:
 
 ```dart
 abstract class BeagleImageDownloader {
@@ -22,10 +22,10 @@ abstract class BeagleImageDownloader {
 }
 ```
 
-The `downloadImage` method takes as a parameter the image url and returns a `Future<Uint8List>` as the representation of the downloaded image.
+O método `downloadImage` recebe como parâmetro a url da imagem e retorna um `Future<Uint8List>` como representação da imagem baixada.
 
-# Create a custom image downloader
-To create your own image downloader, you need to implement the `downloadImage` method, see a simplified version of the default implementation:
+# Criando um ImageDownloader customizado
+Para criar seu próprio image downloades, você precisa implementar o método `downloadImage`, veja uma versão simplificada da versão padrão:
 
 ```dart
 class DefaultBeagleImageDownloader implements BeagleImageDownloader {
@@ -54,8 +54,9 @@ class DefaultBeagleImageDownloader implements BeagleImageDownloader {
 }
 ```
 
-# Use the custom image downloader
-To use your image downloader, pass it in the BeagleService just like the example below:
+# Usando o ImageDownloader customizado
+Para usaro o ImageDownloader, apenas passe para a propriedade equivalente no BeagleService. Veja:
+
 ```dart
 final beagleService = BeagleService(
   imageDownloader: MyImageDownloader(),

@@ -1,5 +1,5 @@
 ---
-title: Network
+title: Rede
 weight: 1
-description: In this section, you will learn how to setup network in Beagle Flutter.
+description: Nesta seção, você aprende como configurar a parte de rede no Beagle Flutter.
 ---
