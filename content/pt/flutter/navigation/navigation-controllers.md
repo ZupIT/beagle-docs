@@ -2,46 +2,51 @@
 title: Navigation controllers
 weight: 3
 description: >-
-  In this section, you will find information on how to control the navigation feedback.
+  Nesta seção você aprende como controlar e tratar as respostas de navegação.
 ---
 
 ---
 
-# Introduction
-The navigation controllers are responsible for implementing the behavior of the loading, error and success events of the navigation between Beagle pages.
+# Introdução
+Os controles de navegação são responsáveis por implementar o comportamento de eventos de carregamento, erro e sucesso das navegações entre páginas Beagle.
 
-If not set, Beagle will use the `DefaultNavigationController`, which implements the following behavior:
+Se não for implementada será usado o `DefaultNavigationController` que implementa as seguintes funções:
 
-- **onLoading**: render a Beagle UI tree with a single component called `custom:loading`.
-- **onError**: render a Beagle UI tree with a single component called `custom:error`.
-- **onSuccess**: render a Beagle UI tree with the UI tree returned from the backend.
+- **onLoading**: renderiza uma árvore Beagle UI com um único componente `custom:loading`.
+- **onError**: renderiza uma árvore Beagle UI com um único componente `custom:error`.
+- **onSuccess**: renderiza uma árvore Beagle UI com a árvore de resposta do sucesso da requisição ao backend.
 
-This behavior can be customized by implementing your own NavigationController. You can have multiple navigation controllers in a single application, one for each section, for instance. Beagle, from the backend, can tell which NavigationController must be used for the next set of screens.
+Todos esses comportamentos podem ser personalizados implementando um `NavigationController` customizado. Você pode ter vários controladores de navegação em um único aplicativo, um para cada seção, se desejar. O framework Beagle presente em seu Frontend consegue definir qual `NavigationController` deve ser chamado para cada conjunto de telas que vem de um Backend.
 
-When navigating to a new Stack (PushStack, ResetStack or ResetApplication), the backend can provide a controllerId to the navigation action and Beagle uses this id to find the corresponding NavigationController in the front-end. We can have an entire stack that has a totally different loading feedback, for example.
+Ao navegar para um novo Stack (usando, por exemplo, ações como PushStack, ResetStack ou ResetApplication), o backend pode fornecer um `controllerId` para a ação de navegação que está sendo acionada (você só listará uma Id se quiser usar um controlador de navegação personalizado (`custom NavigationController`)).
 
-# The NavigationController interface
+O Beagle usará este id para encontrar o `NavigationController` correspondente no Front end de sua aplicação. Dessa forma, você poderá ter uma pilha inteira de telas com um feedback de carregamento diferente.
+
+# A interface NavigationController
 
 ## onLoading
-Called whenever Beagle is loading a new view. It receives the following named parameters:
+Chamado quando o Beagle esta prestes a carregar uma nova view. Recebe os seguintes parâmetros:
 
-- `BeagleView view`: the [BeagleView]({{< ref path="/flutter/other/beagle-view" lang="en" >}}) that renders this server driven UI.
-- `BuildContext context`: the current build context.
-- `Function completeNavigation`: a function to complete the navigation, i.e. to finally push the new page to the navigator with the `BeagleWidget`. You need to call it as soon as you want to render a Beagle JSON. For instance, if your loading feedback is to render a beagle component, you must call completeNavigation from withing the `onLoading` method. If you'll render a Beagle UI only in the success event, you don't need to ever call `completeNavigation` because it gets automatically called after `onSuccess`.
+- `BeagleView view`: a [BeagleView]({{< ref path="/flutter/other/beagle-view" lang="en" >}}) que renderiza a página server driven.
+- `BuildContext context`: o "build context" atual.
+- `Function completeNavigation`: uma função para completar a navegação. por exemplo, para adicionar a nova página ao "navigator" com o `BeagleWidget`. Você precisa chamá-la assim que for renderizada uma Beagle JSON.
+
+- `Function completeNavigation`: uma função para completar a navegação, ou seja, para finalmente enviar a nova página para o navegador com o `BeagleWidget`. Você precisa chamá-lo assim que quiser renderizar um Beagle JSON. Por exemplo, se seu feedback de carregamento é para renderizar um componente beagle, você deve chamar completeNavigation de dentro do método `onLoading`. Se você renderizar uma interface do usuário do Beagle apenas no evento de sucesso, não precisará chamar `completeNavigation` porque ele é chamado automaticamente após `onSuccess`.
 
 ## onError
-Called whenever an error happens while loading a new view. It receives the same parameters as the `onLoading` method plus:
+Chamada sempre que acontecer um erro enquanto é carregada uma nova "view". Recebe os mesmo parâmetros de `onLoading` além de:
 
-- `dynamic error`: the error thrown while making the request or processing the response.
-- `StackTrace stackTrace`: the stack trace linked to the error.
-- `Future<void> Function() retry`: a function that, when called, tries to fetch the view again.
+- `dynamic error`:o erro recebido ao ser feita a requisição.
+- `StackTrace stackTrace`: a pilha de erros relacionada ao erro da requisição.
+- `Future<void> Function() retry`: uma função, que quando chamada tenta refazer a requisição.
 
 ## onSuccess
-Called whenever a view is successfully loaded. To render the view, this method must call `beagleView.getRenderer().doFullRenderer(screen)`. This renders the server driven screen to the current `BeagleView`. With the exception of `completeNavigation`, which will be called anyway by Beagle, the `onSuccess` method accepts the same parameters as the `onLoading` plus:
 
-- `BeagleUIElement screen`: the server driven view recovered from the [ViewClient]({{< ref path="/flutter/network/view-client" lang="en" >}}).
+Chamado sempre que uma "view" é carregada com sucesso. Para renderizar a "view", este método deve chamar `beagleView.getRenderer().doFullRenderer(screen)`. Isso renderiza a tela do servidor para o `BeagleView` atual. Com exceção de `completeNavigation`, que será chamado de qualquer maneira pelo Beagle, o método `onSuccess` aceita os mesmos parâmetros que o `onLoading` além de:
 
-# Example
+- `BeagleUIElement screen`: a server driven view recuperada do [ViewClient]({{< ref path="/flutter/network/view-client" lang="pt" >}}).
+
+# Examplo
 
 ```dart
 import 'package:flutter/material.dart';
@@ -129,16 +134,25 @@ class InYourFaceNavigationController implements NavigationController {
 }
 ```
 
-This is a terrible navigation controller with the sole purpose of demonstrating the feature. It shows a dialog every time a page starts loading. If an error happens, it replaces the loading dialog with an error dialog, which offers an option to retry. When the page is successfully loaded, it removes the loading dialog and renders the page.
+Este é um controlador de navegação simples com o único objetivo de demonstrar esse recurso.
+- Mostra uma caixa de diálogo sempre que uma página começa a carregar. Se ocorrer um erro.
+- mostra uma caixa de diálogo de erro, que oferece a opção de tentar novamente.
+- Quando a página é carregada com sucesso, ela renderiza a página.
 
-The only non-intuitive parameter of the functions in a NavigationController is the `completeNavigation`. You can ignore this if you don't intend to show a Beagle UI before the success event. By default, i.e., if you don't call `completeNavigation`, the navigation with the Beagle structure of the new view will only happen after the success event. But, some navigation controllers, like the default one, uses the Beagle Structure to render the feedback. The DefaultNavigationController renders the Beagle component `custom:loading` whenever a loading event happens and because of this, it needs to call `completeNavigation` right on the method `onLoading`, so Beagle can properly render the component.
+O único parâmetro não intuitivo no NavigationController é o `completeNavigation`.
 
-# Registering the navigation controllers
-To provide all navigation controllers that can be used by the backend, you must create a map where the keys are the controller ids and the values are instances of `NavigationController`.
+{{% alert color="success" %}}
+Você pode ignorar isso se não pretender mostrar uma IU do Beagle antes do evento de sucesso.
+{{% /alert %}}
+Por padrão, se você não chamar a função `completeNavigation`, a navegação ocorrerá após o evento de sucesso. Mas, os controladores de navegação, como o padrão, usam a Estrutura Beagle para renderizar o feedback.
+O `Default NavigationController` renderiza o componente `custom:loading` Beagle sempre que um evento de carregamento acontece e é por isso que ele precisa chamar a função `completeNavigation` dentro do método `onLoading`. Dessa forma, o Beagle pode renderizar corretamente o componente.
 
-To tell Beagle what NavigationController is the default, you need to set the property `defaultNavigationController`. The default navigation controller is used whenever no controllerId is provided or whenever no controller corresponding to the provided id is found.
+## Registrando os controladores de navegação
+1. Você deve criar um mapa para lidar com todos os `controladores de navegação` que podem ser usados ​​pelo backend, onde as chaves são os *IDs do controlador* e os valores são instâncias de `NavigationController`.
 
-Suppose you have three navigation controllers: `inYourFace`, `secured` and `public`. `inYourFace` is the default, while `secured` and `public` are used in specific sections of the app and are referenced via the controllerId, from the backend. The configuration would be as following:
+2. Neste mapa você pode também definir um outro navegador que queira que seja usado como padrão. Para tal basta a propriedade `defaultNavigationController`. O controlador de navegação padrão é usado sempre que nenhum ``controllerId`` for fornecido ou sempre que nenhum controlador correspondente ao id fornecido for encontrado.
+
+Se você tiver três controladores de navegação: `inYourFace`, `secured` e `public`. `inYourFace` é o padrão, enquanto `secured` e `public` serão usados ​​em seções específicas do aplicativo e referenciados via controllerIds, definidos em sua tela no backend. A configuração ficaria da seguinte forma:
 
 ```dart
 final beagleService = BeagleService(

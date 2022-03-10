@@ -1,5 +1,5 @@
 ---
-title: Navigation
+title: Navegação
 weight: 1
-description: In this section, you will learn how to use Beagle Flutter's navigation system.
+description: Nesta seção você aprende como usar o sistema de navegação do Beagle Flutter.
 ---
