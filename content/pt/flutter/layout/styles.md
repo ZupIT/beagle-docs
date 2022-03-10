@@ -66,7 +66,7 @@ class MyComponentBuilder extends ComponentBuilder {
 
 # Controlando "padding" e "decoration"
 
-Alguns widgets precisam eles mesmos tratarem seus estilos, por exemplo, adicionar "wrappers" não funciona. Veja o caso do botão, como usamos um widget do tipo `ElevatedButton`, adicionar "background color", "borders" e "padding" ao "wrapper" não vai funcionar. Ao invés disso, um objecto do tipo `ButtonStyle` deve ser criado baseado no estilo desejado e então passado ao `ElevatedButton`. Precisamos também desabilitar o comportamento padrão para padding e decorations ("backgroundcolor" e "border")
+Alguns widgets tratam seus próprios estilos, por exemplo, adicionar "wrappers" não funciona. Veja o caso do botão, como usamos um widget do tipo `ElevatedButton`, adicionar "background color", "borders" e "padding" ao "wrapper" não vai funcionar. Ao invés disso, um objecto do tipo `ButtonStyle` deve ser criado baseado no estilo desejado e então passado ao `ElevatedButton`. Precisamos também desabilitar o comportamento padrão para padding e decorations ("backgroundcolor" e "border")
 
 Para desabilitar o padding e decoration automáticos, mas manter todos os outros estilos, podemos implementar um método `getStyleConfig` do `ComponentBuilder` e retornar a configuração onde `` tem o valor de "true" mas `shouldDecorate` tem o valor de "false"
 
