@@ -93,7 +93,7 @@ class _ButtonBuilder extends ComponentBuilder {
 
 # Criando seus próprios containers
 
-Através do pacto beagle_components, a biblioteca fornce um componente muito importante chamado `Container`, O container é responsável por manter e organizar multiplos componentes de acordo com as propriedades providas do flex (`style.flex`).
+Através do pacote beagle_components, a biblioteca fornece um componente muito importante chamado `Container`, O container é responsável por manter e organizar multiplos componentes de acordo com as propriedades do flex (`style.flex`) providas.
 
 Se você precisar criar um novo componente que respeite todas as propriedade de `style.flex`, é preciso extender a classe `Styled`. Isso é útil para criar um componente Card, por exemplo:
 
