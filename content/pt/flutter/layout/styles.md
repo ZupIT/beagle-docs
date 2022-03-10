@@ -53,7 +53,7 @@ class MyComponentBuilder extends ComponentBuilder {
 }
 ```
 
-Por padrão, componentes com estilo desabilitado expandem-se para preencher todo o espaço disponível. Para desabilitar este comportamento, você pode alterar a propriedade `shoudExpand` para falso. Utilize está funcionalidade com cuidado pois ela pode gerar erros de layout no Flutter.
+Por padrão, componentes sem um estilo declarado expandem-se para preencher todo o espaço disponível. Para desabilitar este comportamento, você pode alterar a propriedade `shoudExpand` para falso. Utilize está funcionalidade com cuidado pois ela pode gerar erros de layout no Flutter.
 
 ```dart
 class MyComponentBuilder extends ComponentBuilder {
