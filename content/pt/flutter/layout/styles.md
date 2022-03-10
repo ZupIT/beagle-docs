@@ -70,7 +70,7 @@ Alguns widgets tratam seus próprios estilos, por exemplo, adicionar "wrappers" 
 
 Para desabilitar o padding e decoration automáticos, mas manter todos os outros estilos, podemos implementar um método `getStyleConfig` do `ComponentBuilder` e retornar a configuração onde `` tem o valor de "true" mas `shouldDecorate` tem o valor de "false"
 
-Basta então passá-lo para o widget através do `ComponentBuilder`. Veja no trecho de código abaixo:
+Basta então passá-lo para o widget através do `ComponentBuilder`. Veja como no trecho de código abaixo:
 
 ```dart
 class _ButtonBuilder extends ComponentBuilder {
