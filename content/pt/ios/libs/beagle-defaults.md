@@ -1,7 +1,7 @@
 ---
 title: Beagle Defaults
 weight: 17
-description: 'Este framework fornece implementações padrão de um cliente de rede, controle de cache e logger que podem ser facilmente incorporados e usados ​​em seu projeto Beagle.
+description: 'Este framework fornece implementações padrão de um cliente de rede e logger que podem ser facilmente incorporados e usados ​​em seu projeto Beagle.
 '
 ---
 
@@ -28,7 +28,7 @@ description: 'Este framework fornece implementações padrão de um cliente de r
 ### O que é?
 <hr>
 
-É uma biblioteca que contém implementações padrão de um cliente de rede, controle de cache e um sistema de log. Pode ser usado por usuários do Beagle que não querem implementar essas camadas do zero.
+É uma biblioteca que contém implementações padrão de um cliente de rede e um sistema de log. Pode ser usado por usuários do Beagle que não querem implementar essas camadas do zero.
 
 
 ### Instalação
@@ -44,7 +44,7 @@ end
 
 Depois de adicionar BeagleDefaults como uma dependência em seu projeto, você pode usar todas as implementações padrão em seu `Beagle.dependencies`.
 
-Essas implementações podem ser alteradas de acordo com suas preferências. Verifique as diretrizes de segurança do seu produto como gerenciamento de cache e sistema de log antes de implementar. 
+Essas implementações podem ser alteradas de acordo com suas preferências. Verifique as diretrizes de segurança do seu produto como sistema de log antes de implementar. 
 
 
 <hr>

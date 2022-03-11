@@ -1,7 +1,7 @@
 ---
 title: Beagle Defaults
 weight: 17
-description: 'This framework provides default implementation of network client, cache control and logger. That implementation is easily embedded and used in your Beagle project.'
+description: 'This framework provides default implementation of network client and logger. That implementation is easily embedded and used in your Beagle project.'
 ---
 
 ---
@@ -25,7 +25,7 @@ description: 'This framework provides default implementation of network client, 
 ### What is it?
 <hr>
 
-It's a lib that contains default implementations of the network layer, cache management, and log system. It can be used by Beagle users that do not want to implement these layers from scratch.
+It's a lib that contains default implementations of the network layer and log system. It can be used by Beagle users that do not want to implement these layers from scratch.
 
 
 ### Installation
@@ -42,7 +42,7 @@ end
 After adding BeagleDefaults as a dependency in your project, you can use all the default implementation in your `Beagle.dependencies`.
 
 The implementation can be changed up to your preferences. 
-Before using the implementation mentioned, check your product's security guidelines, cache management, and log system.
+Before using the implementation mentioned, check your product's security guidelines and log system.
 
 <hr>
 

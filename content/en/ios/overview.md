@@ -33,5 +33,5 @@ This library will define almost all the necessary settings to start using Beagle
 {{% alert color="warning" %}}
 ![Cocoapods](https://img.shields.io/cocoapods/v/BeagleDefaults?label=Beagle-Defaults)
 
-This library will only define the classes that define the default Network Client, Logger and Cache that demonstrate the contract with Beagle. All other settings necessary for the Beagle to work will be done manually<br>All these classes are also available in the Scaffold library above. Go to the [Beagle-Defaults]({{< ref path="/ios/libs/beagle-defaults.md" lang="en" >}}) section to configure Beagle in an iOS application:
+This library will only define the classes that define the default Network Client and Logger that demonstrate the contract with Beagle. All other settings necessary for the Beagle to work will be done manually<br>All these classes are also available in the Scaffold library above. Go to the [Beagle-Defaults]({{< ref path="/ios/libs/beagle-defaults.md" lang="en" >}}) section to configure Beagle in an iOS application:
 {{% /alert %}}
