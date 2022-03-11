@@ -159,7 +159,7 @@ O Beagle Scaffold é uma biblioteca de apoio para novos usuários do Beagle, aju
 Você pode customizar o Beagle Scaffold da maneira que precisar. Você consegue alterar a url base do app e depois passar um novo endpoint para renderizar a sua tela ao invés da tela demo do Beagle Scaffold.
 Você pode customizar qualquer propriedade do Beagle dentro das Beagle Dependencies.
 
-Existe um conjunto de propriedades que você deve customizar, como o cliente de rede, o gerenciador de cache e o sistema de log. Se o seu app ir para produção, é essencial determinar os níveis de segurança e quais informações pretende logar.
+Existe um conjunto de propriedades que você deve customizar, como o cliente de rede e o sistema de log. Se o seu app ir para produção, é essencial determinar os níveis de segurança e quais informações pretende logar.
 
 Você pode criar um exemplo dessas camadas usando estes tutoriais:
 

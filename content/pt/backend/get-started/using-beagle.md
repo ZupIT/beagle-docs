@@ -25,8 +25,6 @@ Se você estiver usando um de nossos starters, segue os links das documentaçõe
 - [**Micronaut**](https://docs.micronaut.io/1.3.3/guide/index.html#cors)
 - [**Spring**](https://docs.spring.io/spring-framework/docs/current/reference/html/web.html#mvc-cors)
 
-Disponibilizamos uma constante, `BEAGLE_EXPOSED_HEADERS`, contendo uma lista dos nomes das headers que o próprio Beagle precisa para poder expor na sua **configuração de CORS.**
-
 ## Um exemplo prático de BFF
 
 ### Passo 1: Criar um serviço
@@ -166,7 +164,7 @@ class MyController(private val myService: MyService) {
 
 ### **Passo 3: Configurar o BFF**
 
-Você pode configurar cache e serialização com as linhas abaixo, adicionando elas no seu `application.properties`.
+Você pode configurar a serialização com as linhas abaixo, adicionando elas no seu `application.properties`.
 
 {{< tabs id="T4" >}}
 {{% tab name="Micronaut" %}}
@@ -200,11 +198,10 @@ A serialização é configurada para ignorar valores que são null e formatar o 
 {{% tab name="Micronaut" %}}
 Você pode configurar CORS com as linhas abaixo, adicionando elas no seu **`application.properties`**.
 
-Aqui CORS é habilitado com valores padrões para vários detalhes, deixando-os muito permissivos. Nossa header de cache é exposta.
+Aqui CORS é habilitado com valores padrões para vários detalhes, deixando-os muito permissivos.
 
 ```kotlin
 micronaut.server.cors.enabled=true
-micronaut.server.cors.configurations.beagle.exposedHeaders=beagle-hash
 ```
 
 {{% /tab %}}
@@ -213,7 +210,7 @@ micronaut.server.cors.configurations.beagle.exposedHeaders=beagle-hash
 
 Você pode configurar CORS com as classes abaixo, que precisam implementar a interface `WebMvcConfigurer` do Spring, sobrepondo o método `addCorsMappings`.
 
-Aqui CORS é configurado para todos os endpoints com valores padrões para vários detalhes, deixando-os muito permissivos. Nossa header de cache é exposta usando a constante.
+Aqui CORS é configurado para todos os endpoints com valores padrões para vários detalhes, deixando-os muito permissivos.
 
 ```kotlin
 import org.springframework.context.annotation.Configuration
@@ -224,7 +221,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer
 open class CorsConfig : WebMvcConfigurer {
 
     override fun addCorsMappings(registry: CorsRegistry) {
-        registry.addMapping("/**").exposedHeaders(*BEAGLE_EXPOSED_HEADERS)
+        registry.addMapping("/**")
     }
 }
 ```
@@ -236,7 +233,7 @@ open class CorsConfig : WebMvcConfigurer {
 Use uma configuração permissiva como essa apenas em ambiente local de desenvolvimento. Ela elimina todos os benefícios de segurança do CORS.
 {{% /alert %}}
 
-Configurando mais granularmente, temos aqui CORS habilitado com meusite.com.br como origem permitida; `GET`, `PUT`, `POST` como métodos permitidos; `Cache-control` como header permitida; e `beagle-hash`, `x-meu1` como header expostas.
+Configurando mais granularmente, temos aqui CORS habilitado com meusite.com.br como origem permitida; `GET`, `PUT`, `POST` como métodos permitidos; `Cache-control` como header permitida; e `x-meu1` como header expostas.
 
 {{< tabs id="T6" >}}
 {{% tab name="Micronaut" %}}
@@ -246,7 +243,7 @@ micronaut.server.cors.enabled=true
 micronaut.server.cors.configurations.meu.allowedOrigins=meusite.com.br
 micronaut.server.cors.configurations.meu.allowedMethods=GET,PUT,POST
 micronaut.server.cors.configurations.meu.allowedHeaders=Cache-Control
-micronaut.server.cors.configurations.meu.exposedHeaders=beagle-hash,x-meu1
+micronaut.server.cors.configurations.meu.exposedHeaders=x-meu1
 ```
 
 {{% /tab %}}
@@ -266,7 +263,7 @@ open class CorsConfig : WebMvcConfigurer {
             .allowedOrigins("mywebsite.com")
             .allowedMethods("GET,PUT,POST")
             .allowedHeaders("Cache-Control")
-            .exposedHeaders(*(BEAGLE_EXPOSED_HEADERS + "x-meu1"))
+            .exposedHeaders(*("x-meu1"))
     }
 }
 ```

@@ -33,5 +33,5 @@ This library will define almost all the necessary settings to start using Beagle
 {{% alert color="warning" %}}
 ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-defaults?color=green&label=Beagle-Defaults)
 
-This library will only define the classes that define the default HTTP client layer HttpClient, Logger and Cache that demonstrate the contract with Beagle. All other settings necessary for the Beagle to work will be done manually<br>All these classes are also available in the Scaffold library above. Go to the [Beagle-Defaults]({{< ref path="/android/libs/beagle-defaults.md" lang="en" >}}) section to configure Beagle in an Android application:
+This library will only define the classes that define the default HTTP client layer HttpClient and Logger that demonstrate the contract with Beagle. All other settings necessary for the Beagle to work will be done manually<br>All these classes are also available in the Scaffold library above. Go to the [Beagle-Defaults]({{< ref path="/android/libs/beagle-defaults.md" lang="en" >}}) section to configure Beagle in an Android application:
 {{% /alert %}}
