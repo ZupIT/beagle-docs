@@ -53,6 +53,49 @@ class PersonAdapter : BeagleTypeAdapter<Person> {
 }
 ```
 
+## BeagleJsonSerializationFactory
+You can call the BeagleJsonSerializationFactory to delegate the responsability to serialize/deserialize beagle components of your custom types.
+
+Example:
+```
+private const val KEY_NAME = "name"
+interface Person {
+    val name: Text // This attribute should be serialized/deserialized by the Beagle platform
+}
+data class PersonImpl(override val name: Text) : Person
+
+@RegisterBeagleAdapter
+class PersonAdapter(private val serializer: BeagleJsonSerializer = BeagleJsonSerializerFactory.serializer) :
+    BeagleTypeAdapter<Person> {
+
+    override fun fromJson(json: String): Person {
+        val rootObject = JSONObject(json)
+        val nameJsonObject = rootObject.getJSONObject(KEY_NAME)
+        val text = serializer.deserializeComponent(nameJsonObject.toString())
+        return PersonImpl(name = text as Text)
+    }
+
+    override fun toJson(type: Person): String {
+        val rootObject = JSONObject()
+        rootObject.put(KEY_NAME, serializer.serializeComponent(type.name))
+        return rootObject.toString()
+    }
+
+}
+
+@RegisterWidget
+data class TextWithPersonName(
+    val person: Person,
+) : WidgetView() {
+    override fun buildView(rootView: RootView): TextView = TextView(rootView.getContext()).also {
+        it.setTextColor(Color.BLACK)
+        observeBindChanges(rootView, it, person.name.text) { personName ->
+            it.text = personName
+        }
+    }
+}
+```
+
 ### FromJson method 
 
 This method takes a JSONObject as a string and returns an instance of the mapped class \(Person\).
