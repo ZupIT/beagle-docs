@@ -3,7 +3,7 @@ title: Serializador & Deserializador
 weight: 123
 description: >-
   Nesta seção, você encontra a descrição de como criar um
-  Serializador/Deserializador usando Beagle e detalhes dos métodos que ele
+  Serializador/Deserializador customizado usando o Beagle e detalhes dos métodos que ele
   implementa.
 ---
 
@@ -24,18 +24,18 @@ interface BeagleTypeAdapter<T> {
 
 ## Exemplo
 
-Neste exemplo cum `adapter` foi criado para a interface `Person` que é extendida a partir da **`data class`** `PersonImpl` que possui somente um **atributo** `name` do tipo `String`. 
+Neste exemplo um `adapter` foi criado para a interface `Person` que é extendida a partir da **`data class`** `PersonImpl` e que possui somente um **atributo** `name` do tipo `String`. 
 
 Para criar um **`adapter`** você deve:
 
-1. Criar uma classe que será seu `adapter` e anotá-la com `@RegisterBeagleAdapter.`Neste exemplo o nome dado foi **`PersonAdapter`**;
+1. Criar uma classe que será o seu `adapter` e anotá-la com `@RegisterBeagleAdapter.`Neste exemplo o nome dado foi **`PersonAdapter`**;
 
 2. Declarar qual classe se quer mapear com esse adapter. Aqui mapeamos a interface **`Person`** que representa a `data class PersomImpl`;
 
 3. Estender a classe `adapter` \(**`PersonAdapter`**\) a partir da **Interface** `BeagleTypeAdapter` informando a classe que você quer mapear;
-4. Ao estender a interface você deverá implementar os métodos `fromJson` e `toJson`, veja o exemplo abaixo:
+4. Ao estender a interface você deverá implementar os métodos `fromJson` e `toJson`, como no exemplo abaixo:
 
-```text
+```kotlin
 interface Person
 
 data class PersonImpl(val name: String) : Person
@@ -59,10 +59,10 @@ class PersonAdapter : BeagleTypeAdapter<Person> {
 
 
 ## BeagleJsonSerializationFactory
-Você pode chamar a BeagleJsonSerializationFactory para delegar a responsabilidade de serializar/deserializar componentes beagle dos seus tipos customizados.
+Você pode chamar a BeagleJsonSerializationFactory para delegar a responsabilidade de serializar/deserializar componentes customizados do beagle.
 
 Exemplo:
-```
+```kotlin
 private const val KEY_NAME = "name"
 interface Person {
     val name: Text // This attribute should be serialized/deserialized by the Beagle platform
