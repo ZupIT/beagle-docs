@@ -9,7 +9,7 @@ description: Here you'll find all about screen's components and its attributes d
 
 ## What is it?
 
-The Screen component is a Beagle element that helps the user to define the a screen view structure. In this component we define settings such as using *`safe areas`* or displaying a toolbar/navigation bar.
+The Screen component is a Beagle element that helps the user to define a screen view structure. In this component we define settings such as using *`safe areas`* or displaying a toolbar/navigation bar.
 
 All these functionalities are defined from attributes, which we list in the table below, defining the main characteristics of a Screen component.
 
