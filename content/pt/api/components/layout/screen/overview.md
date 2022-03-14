@@ -7,20 +7,22 @@ description: Descrição dos componentes de Screen e seus atributos.
 
 ---
 
-## O que é?
+## O que é isso?
 
-A sua tela possui atributos e componentes que podem ser usados e configurados. Na tabela abaixo, listamos as principais características para cada um destes atributos.
+O componete Screen é um elemento do Beagle que permite ao usuário definir a estrutura de visualização de uma tela. Nesse componente definimos configurações como o uso de *`safe areas`* ou a exibição de uma barra de ferramentas/barra de navegação.
 
-| **Atributo**           | **Tipo**                                                     | Obrigatório | **Definição**                                                                                                |
-| :--------------------- | :----------------------------------------------------------- | :---------: | :----------------------------------------------------------------------------------------------------------- |
-| identifier             | String                                                       |             | Atributo que identifica a tela globalmente na sua aplicação, de modo que seja possível atribuir ações a ela. |
-| safe area              | [**Safe Area**]({{< ref path="/api/components/layout/screen/safe-area" lang="pt" >}})               |             | Especifica o posicionamento dos componentes na tela.                                                         |
-| navigation bar         | [**Navigation Bar**]({{< ref path="/api/components/layout/screen/navigation-bar" lang="pt" >}})     |             | Permite configurar a barra de ações/navegação na tela.                                                       |
-| child                  | [**Server Driven Component**]({{< ref path="/api/components/" lang="pt" >}})      |      ✓      | Define os elementos na tela. Pode ser qualquer componente visual que estenda de `ServerDrivenComponent`.     |
-| style                  | [**Style**]({{< ref path="/api/components/widget#atributos-do-style" lang="pt" >}})          |             | Fornece opções de customização visual para a `Screen.`                                                       |
-| context                | [**ContextData**]({{< ref path="/api/context/" lang="pt" >}})                     |             | Contexto da tela.                                                                                            |
+Todas essas funcionalidades são definidas a partir de atributos, que listamos na tabela abaixo, definindo as principais características de uma tela (Screen component).
 
-## Como usar?
+| **Atributo**  | **Tipo** | Obrigatório | **Definição** |
+| :------------ | :------- | :---------: | :------------ |
+| id            | String | | Atributo que identifica uma tela em uma aplicação |
+| safeArea      | [**Safe Area**]({{< ref path="/api/components/layout/screen/safe-area" lang="en" >}}) | | Ative Áreas seguras para ajudar a colocar visualizações na parte visível da interface geral. Por padrão, não está habilitado e não restringirá a consideração de nenhuma área segura. |
+| navigationBar | [**Navigation Bar**]({{< ref path="/api/components/layout/screen/navigation-bar" lang="en" >}}) | | Permite que alguns detalhes da Barra de Navegação sejam definidos, como Botão Voltar e Itens da Barra de Navegação |
+| child         | [**Server-Driven Component**]({{< ref path="/api/components/" lang="en" >}}) | ✓ | Recebe uma lista de componentes do Beagle. |
+| style         | [**Style**]({{< ref path="/api/components/widget#style-attributes" lang="en" >}}) | | Fornecer opções de personalização visual para a `tela` |
+| context       | [**ContextData**]({{< ref path="/api/context/" lang="en" >}}) | | Cria um *Dados de Contexto* para uma Tela. |
+
+## Como usá-la?
 
 {{< tabs id="T174" >}}
 {{% tab name="JSON" %}}
