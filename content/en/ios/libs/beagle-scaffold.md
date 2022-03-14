@@ -31,7 +31,7 @@ It is recommended for beginners.
 ### What is it?
 <hr>
 
-Beagle Scaffold is a supporting framework that has a default implementation of the network layer, cache, and logger, all embedded in [**BeagleDefaults**](https://docs.usebeagle.io/ios/libs/beagle-defaults), so you can start using Beagle faster.
+Beagle Scaffold is a supporting framework that has a default implementation of the network layer and logger, all embedded in [**BeagleDefaults**](https://docs.usebeagle.io/ios/libs/beagle-defaults), so you can start using Beagle faster.
 
 ### Installation
 <hr>
@@ -154,8 +154,8 @@ Beagle Scaffold is a lib that supports newcomers to use Beagle, it helps you ren
 
 You can easily change the endpoint to render a new screen instead of Beagle Scaffold's demo, and you are able to customize every Beagle property inside Beagle's dependencies. 
 
-There is a set of properties that you should customize, such as the NetworkClient, CacheManager, and Logger. 
-If your app is going to be delivered to production, it's essential to configure your security levels, your cache management, and what information you want to log.
+There is a set of properties that you should customize, such as the NetworkClient and Logger. 
+If your app is going to be delivered to production, it's essential to configure your security levels and what information you want to log.
 
 You can create these layers using these tutorials:
 

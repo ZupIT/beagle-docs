@@ -16,7 +16,7 @@ Essas bibliotecas facilitam a configuração inicial do Beagle no seu projeto.  
 Contém quase todas as configurações necessárias pra começar a usar o Beagle no seu projeto. Recomendado para usuários iniciantes de Beagle.
 
 * [Beagle-Defaults]({{< ref path="/ios/libs/beagle-defaults" lang="en" >}}):
-Essa biblioteca é indicada para usuários mais avançados do Beagle e possui apenas algumas configurações de classes necessárias para utilizar o Beagle na sua aplicação. Elas incluem uma camada padrão de rede, cache e log e também estão disponíveis no Beagle Scaffold.
+Essa biblioteca é indicada para usuários mais avançados do Beagle e possui apenas algumas configurações de classes necessárias para utilizar o Beagle na sua aplicação. Elas incluem uma camada padrão de rede e log e também estão disponíveis no Beagle Scaffold.
 
 {{% alert color="warning" %}}
 Se você deseja configurar um projeto do zero com o Beagle,  veja a [**seção 'Criando um projeto do zero'**]({{< ref path="/ios/getting-started" lang="en" >}})

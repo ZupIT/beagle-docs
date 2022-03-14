@@ -135,12 +135,6 @@ After the update, you have to create a `BeagleConfig` class and configure your a
 class AppBeagleConfig : BeagleConfig {
     override val environment: Environment get() = Environment.DEBUG
     override val baseUrl: String get() = "https://myapp.server.com"
-    override val isLoggingEnabled: Boolean = true
-    override val cache: Cache = Cache(
-        enabled = false,
-        maxAge = 300,
-        size = 15
-    )
 }
 ```
 
@@ -148,8 +142,6 @@ class AppBeagleConfig : BeagleConfig {
 | :----------- | :------ | :------ |
 | environment | Environment | Attribute responsible for informing Beagle about the current build status of the application. |
 | baseUrl | String | Informs the base URL used in Beagle in the application. If you are using the emulator, [**check here to define this attribute**](https://developer.android.com/studio/run/emulator-networking.html#networkaddresses)  |
-| isLoggingEnabled | Boolean | Attribute that enables or disables all logs that Beagle generates.|
-| cache	| Cache	| Object responsible for managing the cache of Beagle requests. |
 
 {{% alert color="warning" %}}
 Make sure to annotate your class configuration with `BeagleComponent`, because Beagle expect them to have empty constructors.
@@ -225,7 +217,6 @@ Now you can show a screen initialized by a BFF´s Endpoint as following:
  * **Navigation Animation:** You can customize the enter and exit animations on Beagle navigation.
  * **Beagle Activity:** You can customize the activity that will be displayed when a server-driven screen was called.
  * **Network Client:** You can customize the network client to configure in a way Beagle will make requests.
- * **Cache:** You can customize the cache to save server-driven screens.
  * **Loading and errors treatment:** You can customize the error treatment and loading of server-driven screens.
  * **Proguard:** You can optimize and obfuscate your code using Proguard, all settings are already set internally. If you want to create custom components or change any Proguard's rules, Beagle supports it.
  * **Deep Link handler:** You can configure the Deep Link Handler to navigate from a server-driven screen to a native screen.

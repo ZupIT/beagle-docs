@@ -133,12 +133,6 @@ Depois de finalizar a atualização, você precisa criar uma classe `BeagleConfi
 class AppBeagleConfig : BeagleConfig {
     override val environment: Environment get() = Environment.DEBUG
     override val baseUrl: String get() = "https://myapp.server.com"
-    override val isLoggingEnabled: Boolean = true
-    override val cache: Cache = Cache(
-        enabled = false,
-        maxAge = 300,
-        size = 15
-    )
 }
 ```
 
@@ -146,8 +140,6 @@ class AppBeagleConfig : BeagleConfig {
 | :--------------- | :---------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | environment      | Environment | Atributo responsável por informar ao Beagle qual o estado de build atual da aplicação.                                                                                                                                  |
 | baseUrl          | String      | Informa a url base usada no Beagle na aplicação. Se estiver usando emulador, consulte essa [**página para definir esse atributo**](https://developer.android.com/studio/run/emulator-networking.html#networkaddresses). |
-| isLoggingEnabled | Boolean     | Atributo que habilita ou desabilita todos os logs que o Beagle gera.                                                                                                                                                    |
-| cache            | Cache       | Objeto responsável por gerenciar o cache das requisições do Beagle.                                                                                                                                                     |
 
 {{% alert color="warning" %}}
 Cuidado ao fazer a configuração das classes, porque se você anotá-las com `BeagleComponent`, o Beagle espera que elas tenham construtores vazios.
@@ -220,7 +212,6 @@ Agora você pode mostrar uma tela que é inicializada por um endpoint no BFF con
  * **Animações de navegação:** Você pode customizar as animações de navegação das telas do Beagle.
  * **Beagle Activity:** Você pode customizar a activity que será exibida quando uma tela server-driven for chamada.
  * **Camada de Rede:** Você pode customizar a camada de rede para configurar a forma que o Beagle irá fazer as requisições.
- * **Cache:** Você pode customizar o cache para salvar as telas server-driven.
  * **Carregamento e tratamento de erros:** Você pode customizar o tratamento de erro e o loading das telas server-driven.
  * **Proguard:** Você pode ofuscar e otimizar seu código usando Proguard, todas as configurações já estão definidas internamente. Caso queira criar componentes customizados ou alterar alguma regra para o Proguard, o Beagle oferece suporte para isso.
  * **Deep Link handler:** Você pode configurar o Deep Link Handler para ter navegação de uma tela server-driven para uma tela nativa.

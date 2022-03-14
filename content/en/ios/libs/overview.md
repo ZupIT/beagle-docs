@@ -17,7 +17,7 @@ This lib will hold almost all configurations needed to start using Beagle in you
 We advise using these libs for people that never used Beagle before.
 
 * [Beagle-Defaults]({{< ref path="/ios/libs/beagle-defaults" lang="en" >}}):
-This lib is meant for more experienced Beagle users and will hold only a few class configurations necessary to use Beagle in an application. These configurations include default Network, Logger and Cache classes. All these are also available in the Scaffold lib above.
+This lib is meant for more experienced Beagle users and will hold only a few class configurations necessary to use Beagle in an application. These configurations include default Network and Logger classes. All these are also available in the Scaffold lib above.
 
 {{% alert color="warning" %}}
 If you wish to configure a project with Beagle from scratch use our [**documentation**]({{< ref path="/ios/getting-started" lang="en" >}})

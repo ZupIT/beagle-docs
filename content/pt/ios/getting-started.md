@@ -215,12 +215,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 ```
 
-{{% alert color="warning" %}}
-É muito importante ressaltar que o Beagle não provê camadas padrão de Rede, Cache e Log. Mas sem a camada de Rede é impossível fazer requisições de JSONs.
-
-Então é obrigatório que você crie uma camada de Rede para que o Beagle consiga se comunicar com um BFF através de requisições.
-{{% /alert %}}
-
 Você pode criar essas camadas usando esses tutoriais:
 
 [**Camada de Rede customizada**]({{< ref path="/ios/customization/dependencies/network-layer" lang="pt" >}})
@@ -229,7 +223,7 @@ Você pode criar essas camadas usando esses tutoriais:
 [**Sistema de Log customizado**]({{< ref path="/ios/customization/dependencies/log-system" lang="pt" >}})
 <br>
 
-Se você quiser pular essas configurações, você pode utilizar a biblioteca de apoio do Beagle: [**Beagle Scaffold**]({{< ref path="/ios/libs/beagle-scaffold" lang="en" >}}) contém implementações padrão de camadas de Rede, Cache e Log.
+Se você quiser pular essas configurações, você pode utilizar a biblioteca de apoio do Beagle: [**Beagle Scaffold**]({{< ref path="/ios/libs/beagle-scaffold" lang="en" >}}) contém implementações padrão de camadas de Rede e Log.
 
 No entando, você deve se  lembrar que é muito importante customizar sua própria camada de Rede pela segurança.
 

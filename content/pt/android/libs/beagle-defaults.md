@@ -65,12 +65,6 @@ dependencies {
 class AppBeagleConfig: BeagleConfig {
     override val environment: Environment = Environment.DEBUG
     override val baseUrl: String = "https://adopt-beagle.continuousplatform.com/scaffold"
-    override val isLoggingEnabled: Boolean = true
-    override val cache: Cache = Cache(
-        enabled = false,
-        maxAge = 300,
-        size = 15
-    )
 }
 ```
 **2.** Crie um arquivo HttpApp conforme listado abaixo. Esta classe herda de uma classe ´HttpClientDefault()´ na biblioteca Beagle-Default:
@@ -79,14 +73,7 @@ class AppBeagleConfig: BeagleConfig {
 class HttpApp: HttpClientDefault()
 ```
 
-
-**3.** Crie um arquivo CacheApp conforme listado abaixo. Esta classe herda de uma classe ´StoreHandlerDefault()´ na biblioteca Beagle-Default:
-```
-@BeagleComponent
-class CacheApp : StoreHandlerDefault(AppApplication.APPLICATION!!)
-```
-
-**4.** Crie um arquivo LoggerApp conforme listado abaixo. Esta classe herda de uma classe ´BeagleLoggerDefault()´ na biblioteca Beagle-Default:
+**3.** Crie um arquivo LoggerApp conforme listado abaixo. Esta classe herda de uma classe ´BeagleLoggerDefault()´ na biblioteca Beagle-Default:
 ```
 @BeagleComponent
 class LoggerApp: BeagleLoggerDefault()

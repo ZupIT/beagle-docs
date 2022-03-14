@@ -33,5 +33,5 @@ Esta biblioteca irá definir quase todas as configurações necessárias para co
 {{% alert color="warning" %}}
 ![Cocoapods](https://img.shields.io/cocoapods/v/BeagleDefaults?label=Beagle-Defaults)
 
-Esta biblioteca irá definir somente as classes que definem a camada de cliente de rede, Logger e Cache padrão que demonstram o contrato com o Beagle. Todas as outras configurações necessárias para o funcionamento do Beagle serão feitas manualmente<br>Todos essas clases também estão disponíveis na biblioteca Scaffold acima. Vá para a seção [Beagle-Defaults]({{< ref path="/ios/libs/beagle-defaults.md" lang="pt" >}}) para configurar o Beagle em uma aplicação iOS.
+Esta biblioteca irá definir somente as classes que definem a camada de cliente de rede e Logger padrão que demonstram o contrato com o Beagle. Todas as outras configurações necessárias para o funcionamento do Beagle serão feitas manualmente<br>Todos essas clases também estão disponíveis na biblioteca Scaffold acima. Vá para a seção [Beagle-Defaults]({{< ref path="/ios/libs/beagle-defaults.md" lang="pt" >}}) para configurar o Beagle em uma aplicação iOS.
 {{% /alert %}}
