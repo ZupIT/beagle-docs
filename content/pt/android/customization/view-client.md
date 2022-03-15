@@ -1,5 +1,5 @@
 ---
-title: Ver cliente
+title: View client
 wight: 109
 description: >-
   Nesta seção, você encontrará informações sobre como configurar um ViewClient customizado no Beagle Android.
