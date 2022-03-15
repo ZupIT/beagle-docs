@@ -108,47 +108,10 @@ Para integrar o componente ao beagle é preciso utilizar o `sizeThatFits` ou `Au
 ### AutoLayoutWrapper
 
 **`AutoLayoutWrapper:`** O objeto calcula o tamanho levando em consideração as contraints do componente.
-Para isso basta adicionar a view do componente dentro do `AutoLayoutWrapper`.
 
-Fazendo as configurações com o `AutoLayoutWrapper`.
-
-```swift 
-let beagleWrapper = AutoLayoutWrapper(view: boxComponent)
-```
-
-Abaixo a struct completa do Widget com os passos:
-
-* Adotar a interface `Widget`.
-* Instanciar o componente Box.
-* Usar o `AutoLayoutWrapper` na struct do BoxWidget.
-
-```swift
-import Foundation
-import UIKit
-import Beagle
-
-struct BoxWidget: Widget {
-
-    let title: String
-    
-    public var id: String?
-    public var style: Style?
-    public var accessibility: Accessibility?
-
-    func toView(renderer: BeagleRenderer) -> UIView {
-
-        // Native component declaration.
-        let boxComponent = Box(title: title)
-
-        // Setting the beagle wrapper.
-        boxComponent.translatesAutoresizingMaskIntoConstraints = false
-        let beagleWrapper = AutoLayoutWrapper(view: boxComponent)
-        
-        // Returning BeagleWrapper and component.
-        return beagleWrapper
-    }
-}
-```
+{{% alert color="warning" %}}
+Se o seu componente foi construído usando `AutoLayout`, o Beagle usa automaticamente o `AutoLayoutWrapper` na criação da hierarquia de componentes, sendo assim não é mais necessário adicioná-lo no retorno do método `toView`.
+{{% /alert %}}
 
 {{% /tab %}}
 {{% tab name="SizeThatFits" %}}
