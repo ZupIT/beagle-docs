@@ -7,7 +7,7 @@ description: Nesta seção, você encontra informações sobre como configurar o
 ---
 
 # Introdução
-A classe BeagleService é o ponto de entrada do Beagle Flutter e onde é feita toda sua configuração. Por padrão, a implementação básica já vem com alguns parâmetros definidos, então não é necessário definí-los.
+A classe BeagleService é o ponto de entrada do Beagle Flutter e onde é feita toda sua configuração. Por padrão, a implementação básica já vem com alguns parâmetros definidos, então não é necessário defini-los.
 
 # O que é configurável?
 As configurações suportadas pelo BeagleService no Beagle Flutter são as seguintes:
@@ -25,6 +25,8 @@ As configurações suportadas pelo BeagleService no Beagle Flutter são as segui
 11. urlBuilder
 12. analyticsProvider
 13. enableStyles
+14. enableHotReloading
+15. hotReloadingUrl
 
 Na continuação desta documentação você aprende sobre cada uma delas
 
@@ -164,6 +166,16 @@ Existem dois tipos de registros gerados pelo Beagle: registros de tela e registr
 Esta é uma opção booleana para habilitar ou desabilitar a aplicação automática de estilos do Beagle. O valor precisa ser "true" para que o atributo "style", do Beagle, funcione corretamente. Também deve ser "true" se você precisar que todos os componentes da biblioteca beagle_components funcionem.
 
 Definir o valor de `enableStyles` como "false" é útil quando o aplicativo desenvolverá todos os seus componentes e mecanismo de layout. Para saber mais sobre isso, consulte [este artigo]({{< ref path="/flutter/layout/styles" lang="pt" >}}).
+
+## 14. enableHotReloading
+Esta é uma opção booleana para habilitar ou desabilitar o hot reloading, que é uma feature que, quando em modo desenvolvimento, faz com que a tela atualize assim que o código no BFF muda, tornando muito mais fácil o desenvolvimento de novas UIs.
+
+Este recurso está disponível apenas para BFFs usando o Beagle Backend para Typescript, isso não funciona para backends escritos em Kotlin. Por essa razão, essa opção é definida como `false` por padrão (desabilitado).
+
+## 15. hotReloadingUrl
+URL para o servidor de websocket do Hot Reloading. Esta opção só é considerada quando `enableHotReloading` é `true`.
+
+Valor padrão: `ws://localhost:3001` para iOS e `ws://10.0.2.2:3001` para Android.
 
 # Fornecendo um BeagleService a aplicação
 Depois de instanciar um BeagleService, é preciso adicioná-lo as configurações de inicialização da aplicação `BeagleProvider`. Veja o exemplo no código a seguir:
