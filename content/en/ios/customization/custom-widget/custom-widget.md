@@ -111,48 +111,10 @@ To embed the component with the Beagle you need to use `AutoLayoutWrapper` or `s
 ### AutoLayoutWrapper
 
 **`AutoLayoutWrapper:`** The object calculates the size taking into account the component's contraints.
-To do this, just add the component's view inside the `AutoLayoutWrapper`.
 
-Making the settings with the `AutoLayoutWrapper`.
-
-```swift 
-let beagleWrapper = AutoLayoutWrapper(view: boxComponent)
-```
-
-Below is the complete struct of the Widget and the steps:
-
-* Adopt the `Widget` interface.
-* Instantiate the Box component.
-* Use the `AutoLayoutWrapper` in the BoxWidget struct.
-
-```swift
-import Foundation
-import UIKit
-import Beagle
-
-struct BoxWidget: Widget {
-
-    // Class parameter.
-    let title: String
-
-    public var id: String?
-    public var style: Style?
-    public var accessibility: Accessibility?
-    
-    func toView(renderer: BeagleRenderer) -> UIView {
-
-        // Native component declaration.
-        let boxComponent = Box(title: title)
-
-        // Setting the beagle wrapper.
-        boxComponent.translatesAutoresizingMaskIntoConstraints = false
-        let beagleWrapper = AutoLayoutWrapper(view: boxComponent)
-        
-        // Returning BeagleWrapper and component.
-        return beagleWrapper
-    }
-}
-```
+{{% alert color="warning" %}}
+If your component was built using `AutoLayout`, Beagle automatically uses `AutoLayoutWrapper` when creating the component hierarchy, so it is no longer necessary to add it in the return of the `toView` method.
+{{% /alert %}}
 
 {{% /tab %}}
 {{% tab name="SizeThatFits" %}}
