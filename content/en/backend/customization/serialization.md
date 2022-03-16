@@ -16,8 +16,8 @@ Inside the folder `src/main/resources`, look for a file called `application.prop
 
 On the links below you can see the available configurations to make the serialization according to the framework:
 
-- ​[**Micronaut**](https://docs.micronaut.io/latest/guide/index.html#_jackson_configuration)**​**
-- **​**[**Spring**](https://docs.spring.io/spring-boot/current/reference/html/appendix-application-properties.html#json-properties)**​**
+- **​[**Micronaut**](https://docs.micronaut.io/latest/guide/index.html#_jackson_configuration)**​
+- ​**[**Spring**](https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html#appendix.application-properties.json)**​
 
 {{% alert color="info" %}}
 In the case of Spring, you must use only keys `spring.jackson`

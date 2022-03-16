@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -88,7 +88,7 @@
             word-break: break-all;
             list-style: none;
             color: #A9A9A9;
-            padding: 10px 0px
+            padding: 10px 0px;
         }
 
         a:hover {
@@ -105,7 +105,8 @@
         }
 
         .plataform__icon {
-            padding-left: 5px
+            padding-left: 5px;
+            padding-right: 5px
         }
 
         footer {
@@ -140,56 +141,167 @@
         <div class="background__image">
             <img src='https://docs.usebeagle.io/shared/Release.svg'>
         </div>
-        <label class='beagle__version__text'><a href="https://github.com/ZupIT/beagle/releases/tag/1.10">Version 1.10</a></label>
+        <label class='beagle__version__text'>Version 2.0</label>
         <div class="block__list">
-            <label class="titleList">New Functionalities</label>
+            <label class="titleList">New functionalities</label>
             <div>
                 <ul>
                     
             <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/pt/api/style/">CornerRadius now supports a different radius for each of it's edges edges</a>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Customizable caching system through the new "ViewClient" service. The ViewClient is built on top of the HttpClient and only serves to retrieve server driven screens, which makes it much easier to implement non-standard behavior for screen requests.
             </li>
     
             <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/resources/beagle-kapt-android/">Support for multiple Beagle modules has been added. It is now possible to use Beagle in several modules in a multi-moduled project</a>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Navigation context: It is a new Context type, ideal for sending information through a server driven screen stream.
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Style values via Expressions: Several style properties now support expressions, making it possible to implement themes in the application's Global Context. These properties are: backgroundColor, borderColor, borderWidth, cornerRadius, size, margin, padding, position and flex.basis.
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="/flutter/getting-started/">Beagle now works in Flutter too! Check out our documentation to learn how to use it.</a>
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="https://github.com/ZupIT/beagle-backend-ts/wiki">The Beagle backend (BFF) now also supports Typescript and JSX, if you know React, you will quickly be ready to go with this new way of declaring server driven screens. In addition, we have made use of the full potential of the language to ensure that the types of contexts and operations are always correct, allowing for much safer and more intuitive programming! Check out our documentation to get started!</a>
+            </li>
+    
+            <li class='content__list__item'>
+                <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Android.svg'/>  Android 
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Adds BeagleTypeAdapter: New  class responsible for serializing/deserializing json components, that users can now use to build their own custom type adapters with attributes' types known by Beagle.
+            </li>
+    
+            <li class='content__list__item'>
+                <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Web.svg'/>  Web 
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Loop rendering function has been refactored to ensure interoperability with Beagle Flutter.
+            </li>
+    
+            <li class='content__list__item'>
+                Backend Kotlin 
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Contexts and operations can now be typed, making it easier and safer to develop server driven screens using the Context feature.
+
             </li>
     
                 </ul>
             </div>
-            <label class="title__list">Impacts in  iOS/Android/Web <img class='plataform__icon' src='https://docs.usebeagle.io/shared/IOS.svg'/> <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Android.svg'/> <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Web.svg'/></label>
+            <label class="title__list">Impactos no iOS/Android/Web <img class='plataform__icon' src='https://docs.usebeagle.io/shared/IOS.svg'/> <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Android.svg'/> <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Web.svg'/></label>
             <div>
                 <ul>
                     
             <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="https://docs.usebeagle.io/api/analytics/">Analytics has been deprecated in favor of the latest API called Analytics 2.0. The old Analytics still works but will be removed in version 2.0.</a>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> All deprecated code has been removed from all plataforms.
             </li>
     
             <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Declarative UI writing in the front end interface is discontinued. Beagle is a server-oriented UI platform and all screen code must be in the backend. Allowing this to be done on the front wnd is anti-standard and requires a lot of maintenance on team's part. It is still possible to write screens in the front end, but it will be removed in version 2.0, keeping support only for JSON (string).
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Updates the Alert and Confirm actions: These elements now support multiple actions.
             </li>
     
             <li class='content__list__item'>
-                Web: <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Web.svg'/>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Updates the Analytics 2: It now includes the "rootId" property that returns the id of the first component that appears in the UI tree. It can be useful for identifying your screens in analytics reports.
             </li>
     
             <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Fixes bug where corner radius considered values as diameter instead of radius.
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Since Analytics 1 was deprecated and removed, Analytics 2 now is refered as just Analytics.
             </li>
     
             <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Fixes bug where ListViews could cause items to unnecessarily render itself again.
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Updates the ScreenComponent:
+                <br><br> The "navigationBar.items[i].action" property has been renamed to "onPress" and now supports multiple actions.                
+                <br><br> The "identifier" property has been removed, leaving only "id".
+                <br><br> The "navigationBar.items[i].image" property now accepts Expression &lt String &gt, which should be the mobileId of the image.
             </li>
     
             <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Added support for the latest version of React - version 17
+                Android <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Android.svg'/>
             </li>
     
             <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Added support for the latest version of Angular - version 12
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Java 8 support has been returned to the platform.
+            </li>
+       
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Fixes bug where sendRequest didn't raise onError event.
             </li>
     
             <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Improvements to network error logs.
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Fixes bug in ListView where nested lists generated incoherent ids.
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Fixes bug where Analytics crashed the application if the backend passed the "additionalEntries" property.
+            </li>
+
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Fixes bug where the onInit event, in components that supports it, was triggered again when returning to a previous screen (popView). 
+            </li>
+           
+            <li class='content__list__item'>
+                <i><a target="_blank" class="content__list__link" href="https://github.com/ZupIT/beagle/issues">Note: if your application uses this wrong behavior that only happened on Android, it will be necessary to review the code. Let us know via our GitHub if you really need an event that fires whenever the page is "shown" and not "started".</a></i>
+            </li>
+    
+            <li class='content__list__item'>
+                iOS <img class='plataform__icon' src='https://docs.usebeagle.io/shared/IOS.svg'/>
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Refactored some of the lib's internal code to improve maintainability, scalability, and stability:
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="/ios/customization/custom-widget/custom-widget/">New container for deserializing components and actions using a property wrapper. It is no longer necessary to implement custom serialization for components containing actions or other components.</a>
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="/ios/customization/dependencies">New dependency structure with injection via property wrappers.</a>
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="/ios/customization/dependencies/network-layer">Improvements to the networking API that add more power and ease for the developer.</a>
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="/ios/customization/custom-widget/custom-widget">Improved BeagleRenderer adds AutoLayoutWrapper automatically if needed.</a>
+            </li>
+        
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Fixed a bug that prevented the user from setting transparency in the Screen's backgroundColor.
+
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Removes widgetProperty property for compatibility with other platforms. The style, id and accessibility properties now come in the component root, making it easier to create custom components.
+
+            </li>
+    
+            <li class='content__list__item'>
+                Web <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Web.svg'/>
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Navigation subsystem was refactored to ensure better customization by platforms that use Beagle Web Core (React, Angular and Flutter).
+
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Fixes bug where Text component would not render number 0 or boolean false.
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Fixes bug where Button component did not render non-string text.
+            </li>
+    
+            <li class='content__list__item'>
+                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Fixes the "platform" header to send the value expected by the backend: "WEB".
             </li>
     
                 </ul>
@@ -199,11 +311,11 @@
             <img src="https://docs.usebeagle.io/shared/People.svg">
         </div>
         <footer>
-            <p>Thanks.</p>
+            <p>Thanks you.</p>
             <p>Team Beagle</p>
             <div class="footer__copyright">
-                <a>2021 Beagle. All rights reserved.</a>
-                <a>Powered by Zup I.T. Innovation</a>
+                <a>2022 Beagle. All rights reserved.</a>
+                <a>Developed by Zup I.T. Innovation</a>
             </div>
         </footer>
     </div>

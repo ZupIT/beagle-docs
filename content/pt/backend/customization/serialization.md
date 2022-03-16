@@ -14,8 +14,8 @@ Dentro da pasta `src/main/resources` procure por um arquivo chamado\(se não exi
 
 Nos links abaixo você confere as propriedades disponíveis para serialização de acordo com framework:
 
-- [**Micronaut**](https://docs.micronaut.io/latest/guide/index.html#_jackson_configuration)
-- [**Spring**](https://docs.spring.io/spring-boot/pt/current/reference/html/appendix-application-properties.html#json-properties)**​**
+- **[**Micronaut**](https://docs.micronaut.io/latest/guide/index.html#_jackson_configuration)**
+- ​**[**Spring**](https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html#appendix.application-properties.json)**
 
 {{% alert color="info" %}}
 No caso do Spring, deve-se utilizar apenas as chaves `spring.jackson`
