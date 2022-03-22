@@ -8,7 +8,9 @@ description: >-
 
 ---
 
-Beagle Angular's current:[![badge](https://img.shields.io/npm/v/@zup-it/beagle-angular?logo=Angular)](https://github.com/ZupIT/beagle-web-angular)
+Beagle Angular latest version:[![badge](https://img.shields.io/npm/v/@zup-it/beagle-angular?logo=Angular)](https://github.com/ZupIT/beagle-web-angular)
+
+The following tutorial is for Beagle Angular version: {{<param react_current_version>}}
 
 {{% alert color="info" %}}
   If you still do not have an Angular project, learn at the [official documentation](https://angular.io/guide/setup-local) how to create one!
