@@ -11,8 +11,8 @@ description: >-
 Follow the steps to install:
 
 1. Open the file `pubspec.yaml` in the root of your project;
-2. Under `dependencies`, add `beagle: ˆ2.0.0`, or the most recent version;
-3. Add `beagle_components: ^2.0.0`. You can omit this dependency if you're familiar with Beagle and won't use any
+2. Under `dependencies`, add `beagle: ˆ{{<param react_current_version>}}`, or the most recent version;
+3. Add `beagle_components: ^{{<param react_current_version>}}`. You can omit this dependency if you're familiar with Beagle and won't use any
 of the default components;
 4. In your IDE (Android Studio or Visual Studio Code), click `pub get`. Or, from the terminal, type `flutter pub get`.
 

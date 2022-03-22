@@ -106,7 +106,9 @@ Click on the tab of the framework you're using and follow the steps to continue 
 This starter also configures version **1.3.3** of **`micronaut-runtime`** module in your BFF
 {{% /alert %}}
 
-- Beagle's current release version is: [![back](https://camo.githubusercontent.com/27998a386042ecb2cae7b9f09ae159bd07c935bd/68747470733a2f2f696d672e736869656c64732e696f2f6d6176656e2d63656e7472616c2f762f62722e636f6d2e7a75702e626561676c652f6672616d65776f726b)](https://mvnrepository.com/artifact/br.com.zup.beagle/framework)
+- Beagle's latest release version is: [![back](https://camo.githubusercontent.com/27998a386042ecb2cae7b9f09ae159bd07c935bd/68747470733a2f2f696d672e736869656c64732e696f2f6d6176656e2d63656e7472616c2f762f62722e636f6d2e7a75702e626561676c652f6672616d65776f726b)](https://mvnrepository.com/artifact/br.com.zup.beagle/framework)
+
+The following tutorial is for Beagle iOS version: {{<param backend_current_version>}}
 
 ### Maven configuration
 
@@ -140,7 +142,9 @@ dependencies {
 This starter also configures version **2.2.5** of **`spring-boot-starter-web`** module in your BFF
 {{% /alert %}}
 
-- Beagle's current release version is: [![back](https://camo.githubusercontent.com/27998a386042ecb2cae7b9f09ae159bd07c935bd/68747470733a2f2f696d672e736869656c64732e696f2f6d6176656e2d63656e7472616c2f762f62722e636f6d2e7a75702e626561676c652f6672616d65776f726b)](https://mvnrepository.com/artifact/br.com.zup.beagle/framework)
+- Beagle's latest release version is: [![back](https://camo.githubusercontent.com/27998a386042ecb2cae7b9f09ae159bd07c935bd/68747470733a2f2f696d672e736869656c64732e696f2f6d6176656e2d63656e7472616c2f762f62722e636f6d2e7a75702e626561676c652f6672616d65776f726b)](https://mvnrepository.com/artifact/br.com.zup.beagle/framework)
+
+The following tutorial is for Beagle iOS version: {{<param backend_current_version>}}
 
 ### Maven configuration
 
