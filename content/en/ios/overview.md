@@ -6,6 +6,7 @@ description: 'Here you will find information about how to configure Beagle in a 
 ---
 
 ---
+Latest version
 
 ![Cocoapods](https://img.shields.io/cocoapods/v/BeagleScaffold?label=Beagle-Scaffold)
 ![Cocoapods](https://img.shields.io/cocoapods/v/BeagleDefaults?label=Beagle-Defaults)

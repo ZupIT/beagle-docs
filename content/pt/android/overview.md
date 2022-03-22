@@ -6,6 +6,7 @@ description: 'Aqui você encontrará informações sobre como configurar um proj
 ---
 
 ---
+Versão mais atual
 
 ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-scaffold?color=green&label=Beagle-Scaffold)
 ![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/beagle-defaults?color=green&label=Beagle-Defaults)
