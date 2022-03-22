@@ -252,13 +252,15 @@ After seeing Beagle's most essential parts, you are now ready to dive into more 
 Beagle has different libraries/frameworks for each supported platform, in the following list you can see and access the most up to date versions:
 
 {{% alert color="info" %}}
-**Backend Kotlin:** [![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/framework)](https://mvnrepository.com/artifact/br.com.zup.beagle/framework)
+**Backend**:
+- **Kotlin:** [![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/framework)](https://mvnrepository.com/artifact/br.com.zup.beagle/framework)
+- **Typescript:** [![badge](https://img.shields.io/npm/v/@zup-it/beagle-backend-core)](https://www.npmjs.com/package/@zup-it/beagle-backend-core)
 
 **Mobile**:
 
 - **Android:** [![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android)](https://mvnrepository.com/artifact/br.com.zup.beagle/android)
 - **iOS:** [![badge](https://img.shields.io/cocoapods/v/Beagle)](https://cocoapods.org/pods/Beagle)
-- **Flutter:** *It is being developed, check out more information [in this folder](https://github.com/ZupIT/beagle/tree/master/flutter)*
+- **Flutter:** [![badge](https://img.shields.io/pub/v/beagle)](https://pub.dev/packages/beagle)
 - **SwiftUI and Compose:** we will try to support them in the future
 
 **Web:**
