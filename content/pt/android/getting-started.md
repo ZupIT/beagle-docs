@@ -81,7 +81,9 @@ A configuração acima deve ser adicionada em `allprojects{}`
 
 Uma vez feita a primeira configuração, agora você precisa incluir o plugin do `kapt` e do Beagle como dependências dentro do seu gerenciador de dependências, como no exemplo abaixo.
 
-A versão atual do Beagle é: [![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android)](https://mvnrepository.com/artifact/br.com.zup.beagle/android)
+A versão mais atual do Beagle é: [![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android)](https://mvnrepository.com/artifact/br.com.zup.beagle/android)
+
+Esta documentação é referente a versão: {{<param android_current_version>}}
 
 
 ```kotlin
@@ -108,7 +110,7 @@ Insira a versão de release do Beagle no lugar de `${beagle.version}`, ou seja, 
 Por exemplo: `ext.beagle.version = "1.10.0"`
 
 {{% alert color="warning" %}}
-Lembre de sempre verificar se você está usando a versão mais recente do Beagle. Para saber disso, basta passar o mouse por cima do número da versão. Depois disso, sincronize com sua máquina.
+Tente sempre usar a versão mais recente do Beagle. Para saber disso, basta passar o mouse por cima do número da versão. Depois disso, sincronize com sua máquina.
 {{% /alert %}}
 
 {{%alert color="warning"%}}

@@ -6,6 +6,7 @@ description: 'Aqui você encontrará informações sobre como configurar um proj
 ---
 
 ---
+Versão mais atual
 
 ![Cocoapods](https://img.shields.io/cocoapods/v/BeagleScaffold?label=Beagle-Scaffold)
 ![Cocoapods](https://img.shields.io/cocoapods/v/BeagleDefaults?label=Beagle-Defaults)

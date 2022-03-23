@@ -8,7 +8,9 @@ description: >-
 
 ---
 
-Versão atual do Beagle React: [![badge](https://img.shields.io/npm/v/@zup-it/beagle-react?logo=React)](https://github.com/ZupIT/beagle-web-react)
+Versão mais atual do Beagle React: [![badge](https://img.shields.io/npm/v/@zup-it/beagle-react?logo=React)](https://github.com/ZupIT/beagle-web-react)
+
+Esta documentação é referente a versão: {{<param react_current_version>}}
 
 {{% alert color="info" %}}
   Se você ainda não tem um projeto React, aprenda a criar um com o [Create React App](https://create-react-app.dev/docs/getting-started).

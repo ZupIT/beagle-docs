@@ -83,7 +83,9 @@ The above configuration must be added to `allprojects{}`
 
 Now you need to include the `kapt` and `Beagle's` plugin on your dependency manager, check out the example below:
 
-The current release version of Beagle is: [![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android)](https://mvnrepository.com/artifact/br.com.zup.beagle/android)
+The latest release version of Beagle is: [![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android)](https://mvnrepository.com/artifact/br.com.zup.beagle/android)
+
+The following tutorial is for Beagle Android version: {{<param android_current_version>}}
 
 
 ```kotlin
@@ -108,10 +110,10 @@ dependencies {
 
 Insert Beagle's release version to replace ${beagle.version}`, this is necessary to put Beagle's version highlighted in a blue badge above, without the **v character**.
 
-For example: `ext.beagle.version = "1.10.0"`
+For example: `ext.beagle.version = {{<param android_current_version>}}`
 
 {{% alert color="warning" %}}
-Remember to always check if you're using the latest version of Beagle. To see this information, you just have to pass your cursor above the version number. After that, sync your project.
+You should always try to use the latest version of Beagle. To see this information, you just have to pass your cursor above the version number. After that, sync your project.
 {{% /alert %}}
 
 {{% alert color="warning" %}}

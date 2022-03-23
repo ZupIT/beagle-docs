@@ -41,7 +41,9 @@ You can install Beagle using SPM (Swift Package Manager), Cocoapods or Carthage.
 
 <br>
 
-Current Beagle's version: [![badge](https://img.shields.io/cocoapods/v/Beagle)](https://cocoapods.org/pods/Beagle)
+Latest Beagle iOS version: [![badge](https://img.shields.io/cocoapods/v/Beagle)](https://cocoapods.org/pods/Beagle)
+
+The following tutorial is for Beagle iOS version: {{<param ios_current_version>}}
 
 {{< tabs id="T1" >}}
 {{% tab name="Swift Package Manager" %}}
