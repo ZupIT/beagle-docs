@@ -66,6 +66,6 @@ jobs:
           VERSION: ${{ steps.version.outputs.release_tag }}
 
       - name: S3 upload (redirect to latest version)
-        run: aws s3 sync --acl public-read --follow-symlinks .github/workflows/proxy s3://$AWS_S3_BUCKET
+        run: aws s3 sync --follow-symlinks .github/workflows/proxy s3://$AWS_S3_BUCKET
         env:
           AWS_S3_BUCKET: ${{ env.BEAGLE_DOCS_AWS_AWS_DOCS_S3_BUCKET }}
