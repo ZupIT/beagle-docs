@@ -103,6 +103,10 @@ logoName = "icons/beagle.svg"
 search_label = "Looking for something?"
 faq_path = "/faq"
 gtm_id="GTM-5DFG5JL"
+# This current version variable is used for the versioning publish, do not delete it
+current_version = ""
+
+# These versions are for reference inside the content
 react_current_version = "2.0.0"
 angular_current_version = "2.0.0"
 android_current_version = "2.0.0"
