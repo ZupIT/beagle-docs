@@ -30,7 +30,7 @@ Se você já tiver atualizado todos estes programas, basta seguir as instruçõe
 No momento de criar o microsserviço, recomendamos que você utilize os mesmos mecanismos estabelecidos. Caso este não seja o seu caso, então basta seguir as configurações abaixo.
 
 {{% alert color="warning" %}}
-Se o seu time trabalha com microsserviços usando outros frameworks, acesse o [**framework do Beagle**]({{< ref path="/backend/customization/beagle-framework" lang="pt" >}}).  
+Se o seu time trabalha com microsserviços usando outros frameworks, acesse o [**framework do Beagle**]({{< ref path="/backend/kotlin/customization/beagle-framework" lang="pt" >}}).  
 {{% /alert %}}
 
 Para uma configuração simples, você pode escolher entre **2 modelos de frameworks** para criar seu BFF:
@@ -183,7 +183,7 @@ Sempre verifique se você está usando a versão mais recente do Beagle. Para sa
 
 Parabéns, a configuração inicial está pronta para uso!
 
-Você pode conferir um **exemplo prático** de tela ou componente Server-Driven [**para testar o BFF**]({{< ref path="/backend/get-started/using-beagle" lang="pt" >}})
+Você pode conferir um **exemplo prático** de tela ou componente Server-Driven [**para testar o BFF**]({{< ref path="/backend/kotlin/get-started/using-beagle" lang="pt" >}})
 
 {{% alert color="danger" %}}
 O Spring Boot tem um problema conhecido envolvendo seu `WebMvcConfigurationSupport`. Sua presença substitui outras configurações do Jackson, incluindo a do `Spring Starter`.
@@ -201,13 +201,13 @@ A anotação `@EnableWebMvc` causa o mesmo problema, o que requer que ela també
 Pronto, a configuração inicial está pronta para uso!
 {{% /alert %}}
 
-Você pode conferir um **exemplo prático** de [**como testar o Beagle no Backend**]({{< ref path="/backend/get-started/using-beagle" lang="pt" >}}) ou componente Server-Driven para testar o BFF.
+Você pode conferir um **exemplo prático** de [**como testar o Beagle no Backend**]({{< ref path="/backend/kotlin/get-started/using-beagle" lang="pt" >}}) ou componente Server-Driven para testar o BFF.
 
 ## Próximos Passos
 
 Nesta seção, você fez a **instalação inicial** do Beagle na sua aplicação!  
 Para continuar a configurar o Beagle:
 
-👉Vá para as [**configurações iniciais**]({{< ref path="/backend/get-started/using-beagle" lang="pt" >}}) para habilitar uso do Beagle no seu projeto Backend
+👉Vá para as [**configurações iniciais**]({{< ref path="/backend/kotlin/get-started/using-beagle" lang="pt" >}}) para habilitar uso do Beagle no seu projeto Backend
 
-👉 Se quiser ir direto para prática, acesse nosso [**tutorial para criar um projeto do zero**]({{< ref path="/backend/get-started/creating-a-project-from-scratch" lang="pt" >}})
+👉 Se quiser ir direto para prática, acesse nosso [**tutorial para criar um projeto do zero**]({{< ref path="/backend/kotlin/get-started/creating-a-project-from-scratch" lang="pt" >}})

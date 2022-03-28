@@ -24,12 +24,12 @@ Esta conexão entre frontend e backend é feita via `WebSocket` utilizando a por
 
 Para usar o `Live Preview` você deve:
 
-- Usar o [**Beagle SDK**]({{< ref path="/backend/get-started/creating-a-project-from-scratch" lang="pt" >}}) em seu BFF **;**
+- Usar o [**Beagle SDK**]({{< ref path="/backend/kotlin/get-started/creating-a-project-from-scratch" lang="pt" >}}) em seu BFF **;**
 - Instalar o `BeaglePreview` plugin;
 
 ### Configuração do BFF
 
-Você precisa que seu BFF esteja configurado com o Beagle para utilizar o Live Preview. Caso ainda não o tenha, faça o [**download de um projeto inicial pronto**](https://github.com/ZupIT/beagle-examples/tree/master/BeagleSampleBackend). Outra possibilidade que você pode fazer, é o nosso tutorial de [**como implementar um backend**]({{< ref path="/backend/get-started/creating-a-project-from-scratch" lang="pt" >}}) com o Beagle configurado.
+Você precisa que seu BFF esteja configurado com o Beagle para utilizar o Live Preview. Caso ainda não o tenha, faça o [**download de um projeto inicial pronto**](https://github.com/ZupIT/beagle-examples/tree/master/BeagleSampleBackend). Outra possibilidade que você pode fazer, é o nosso tutorial de [**como implementar um backend**]({{< ref path="/backend/kotlin/get-started/creating-a-project-from-scratch" lang="pt" >}}) com o Beagle configurado.
 
 ### Instalação **do plugin IntelliJ**
 

@@ -180,7 +180,7 @@ Remember to always check if you're using the latest version of Beagle. To see th
 
 Well done, your initial configuration is ready to be used!
 
-You can check a screen or server-driven component [**to test the BFF**]({{< ref path="/backend/get-started/using-beagle" lang="en" >}}).
+You can check a screen or server-driven component [**to test the BFF**]({{< ref path="/backend/kotlin/get-started/using-beagle" lang="en" >}}).
 
 {{% alert color="danger" %}}
 Spring Boot has a known problem involving `WebMvcConfigurationSupport`. It may replace other configurations, including the ones in Beagle's Spring Starter.
@@ -197,13 +197,13 @@ The annotation`@EnableWebMvc` can have the same problem, which means you should 
 Well done, your initial configuration is ready to be used!
 {{% /alert %}}
 
-You can see more of [**how to use Beagle on the backend**]({{< ref path="/backend/get-started/using-beagle" lang="en" >}}) or how to test a BFF with server-driven components.
+You can see more of [**how to use Beagle on the backend**]({{< ref path="/backend/kotlin/get-started/using-beagle" lang="en" >}}) or how to test a BFF with server-driven components.
 
 ## **Next Steps**
 
 In this section, you have just done Beagle's** initial installation** on your application!  
 Now, to keep configuring Beagle:
 
-👉Go to [**initial configurations**]({{< ref path="/backend/get-started/using-beagle" lang="en" >}}) to enable the use of Beagle on your Web project.
+👉Go to [**initial configurations**]({{< ref path="/backend/kotlin/get-started/using-beagle" lang="en" >}}) to enable the use of Beagle on your Web project.
 
-👉 If you want to go straight to practice, access our [**tutorial to create a project from scratch**.]({{< ref path="/backend/get-started/creating-a-project-from-scratch" lang="en" >}})
+👉 If you want to go straight to practice, access our [**tutorial to create a project from scratch**.]({{< ref path="/backend/kotlin/get-started/creating-a-project-from-scratch" lang="en" >}})

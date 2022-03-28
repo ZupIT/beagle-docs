@@ -51,7 +51,7 @@ Follow the steps below to import the project you have created. First, open **int
 
 ### Step 1: Configure the project
 
-As a starting point, follow this step by step to [**install the backend**]({{< ref path="/backend/get-started/installing-beagle" lang="en" >}}).
+As a starting point, follow this step by step to [**install the backend**]({{< ref path="/backend/kotlin/get-started/installing-beagle" lang="en" >}}).
 
 ### Step 2: Define the structure
 
