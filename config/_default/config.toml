@@ -46,7 +46,7 @@ menu_new_feature_text = "[NEW]"
 [[languages.en.menu.main]]
     name = "C4 Model"
     weight = 20
-    url = "./c4model/en/#"
+    url = "../c4model/en/#"
 
 [[languages.en.menu.main]]
     name = "References"
@@ -74,7 +74,7 @@ menu_new_feature_text = "[NOVO]"
 [[languages.pt.menu.main]]
     name = "C4 Model"
     weight = 20
-    url = "../c4model/pt-br/#"
+    url = "../../c4model/pt-br/#"
 
 [[languages.pt.menu.main]]
     name = "References"
@@ -110,7 +110,7 @@ current_version = ""
 react_current_version = "2.0.0"
 angular_current_version = "2.0.0"
 android_current_version = "2.0.0"
-flutter_current_version = "2.0.0"
+flutter_current_version = "1.0.0"
 ios_current_version = "2.0.0"
 backend_current_version = "2.0.0"
 

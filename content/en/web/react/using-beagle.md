@@ -35,7 +35,7 @@ At the end of this process, a new file called **beagle-service.ts** will be gene
 
 ### **Step 2: Creating the layout definition JSON**
 
-or a better experience you could create your JSON outputsthrough a BFF. You will find how to configure a BFF [**here**]({{<ref path = "/backend/get-started/creating-a-project-from-scratch" lang = "pt">}}). This example uses a JSON that is available in the URL http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/welcome:
+or a better experience you could create your JSON outputsthrough a BFF. You will find how to configure a BFF [**here**]({{<ref path = "/backend/kotlin/get-started/creating-a-project-from-scratch" lang = "en">}}). This example uses a JSON that is available in the URL http://usebeagle.io.s3-website-sa-east-1.amazonaws.com/start/welcome:
 
 {{% alert color="info" %}}
 JSON example .

@@ -55,7 +55,7 @@ Siga os passos abaixo para importar o projeto que você criou. Primeiro, abra su
 
 ### Passo 1: Configurar o projeto
 
-Como ponto de partida, siga o [**passo a passo para instalar o backend**]({{< ref path="/backend/get-started/installing-beagle" lang="pt" >}}).
+Como ponto de partida, siga o [**passo a passo para instalar o backend**]({{< ref path="/backend/kotlin/get-started/installing-beagle" lang="pt" >}}).
 
 ### Passo 2: Definir a Estrutura
 
@@ -225,7 +225,7 @@ Uma estrutura JSON tem que aparecer na sua tela similar a estrutura abaixo:
 
 Se essa não for a resposta que você teve, é necessário checar o processo de configuração. Volte aos passos anteriores e comece pelas classes que apresentam maiores equívocos quando configuradas pela primeira vez.
 
-Se preferir, pegue o projeto pronto no repositório do Beagle e compare com o seu. Acesse o [**repositório**](https://github.com/ZupIT/beagle/tree/master/backend/sample).
+Se preferir, pegue o projeto pronto no repositório do Beagle e compare com o seu. Acesse o [**repositório**](https://github.com/ZupIT/beagle/tree/master/backend/kotlin/sample).
 
 {{% alert color="info" %}}
 Para que o serviço de backend seja consumido, você deve ter o front-end preparado para o Beagle, seja Android, iOS ou Web. Tudo irá funcionar usando o mesmo JSON do backend.

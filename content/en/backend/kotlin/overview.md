@@ -2,7 +2,7 @@
 title: Overview
 weight: 1
 type: overview
-description: In this Section you will learn how to use Beagle Backend
+description: In this Section you will learn how to use Beagle Backend for Kotlin Language
 ---
 
 ---

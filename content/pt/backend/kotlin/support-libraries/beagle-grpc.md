@@ -294,8 +294,8 @@ Pronto! Sua aplicação estará disponível localmente no endereço:
 
 - Para este exemplo, você precisará de um cliente para obter a resposta do serviço. Recomendamos o [BloomRPC](https://github.com/uw-labs/bloomrpc) para simular uma solicitação local em sua API gRPC
 
-- Você também precisará adicionar os arquivos proto da lib do Beagle gRPC no cliente bloomRPC. Você pode acessar esses arquivos [aqui](https://github.com/ZupIT/beagle-grpc/tree/master/backend/grpc-backend-lib/src/main/proto)
+- Você também precisará adicionar os arquivos proto da lib do Beagle gRPC no cliente bloomRPC. Você pode acessar esses arquivos [aqui](https://github.com/ZupIT/beagle-grpc/tree/master/backend/kotlin/grpc-backend-lib/src/main/proto)
 
 ### **Leia mais sobre o beagle com gRPC**
 
-#### 👉 Este tutorial está disponível no GitHub com exemplos mais avançados, como headers e interceptors por exemplo. Se você estiver interessado, [acesse-os aqui](https://github.com/ZupIT/beagle-grpc/tree/master/backend/examples)
+#### 👉 Este tutorial está disponível no GitHub com exemplos mais avançados, como headers e interceptors por exemplo. Se você estiver interessado, [acesse-os aqui](https://github.com/ZupIT/beagle-grpc/tree/master/backend/kotlin/examples)

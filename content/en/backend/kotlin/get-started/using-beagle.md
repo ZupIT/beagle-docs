@@ -10,7 +10,7 @@ description: >-
 
 ## Use configuration
 
-Once you have finished [**Beagle's installation**]({{< ref path="/backend/get-started/installing-beagle" lang="en" >}}), your BFF is fully configured for usage, with default settings.
+Once you have finished [**Beagle's installation**]({{< ref path="/backend/kotlin/get-started/installing-beagle" lang="en" >}}), your BFF is fully configured for usage, with default settings.
 
 ### CORS (Cross-Origin Resource Sharing)
 
