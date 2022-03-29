@@ -66,7 +66,7 @@ Button(text = "android only text").forPlatform(BeaglePlatform.ANDROID),
 Button(text = "text free for all")
 ```
 
-Se quiser saber como configurar esta funcionalidade, veja na seção de [**customização do Beagle**]({{< ref path="/backend/customization" lang="pt" >}}).
+Se quiser saber como configurar esta funcionalidade, veja na seção de [**customização do Beagle**]({{< ref path="/backend/kotlin/customization" lang="pt" >}}).
 
 {{% alert color="info" %}}
 Caso utilize um dos Beagle starters, não é necessário realizar a configuração da funcionalidade manualmente, pois ela já vem pré-configurada.

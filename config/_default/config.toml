@@ -46,7 +46,7 @@ menu_new_feature_text = "[NEW]"
 [[languages.en.menu.main]]
     name = "C4 Model"
     weight = 20
-    url = "./c4model/en/#"
+    url = "../c4model/en/#"
 
 [[languages.en.menu.main]]
     name = "References"
@@ -74,7 +74,7 @@ menu_new_feature_text = "[NOVO]"
 [[languages.pt.menu.main]]
     name = "C4 Model"
     weight = 20
-    url = "../c4model/pt-br/#"
+    url = "../../c4model/pt-br/#"
 
 [[languages.pt.menu.main]]
     name = "References"
