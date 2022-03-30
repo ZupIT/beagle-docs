@@ -22,13 +22,18 @@ Para realizar essa configuração, você deve criar uma classe que implemente a 
 ```kotlin
 @BeagleComponent
 class AppDeepLinkHandler : DeepLinkHandler {
-    override fun getDeepLinkIntent(
-        rootView: RootView,
-        path: String,
-        data: Map<String, String>?,
-        shouldResetApplication: Boolean
-    ) = Intent(path)
-}
+    override fun getDeepLinkIntent(rootView: RootView,
+                                   path: String,
+                                   data: Map<String, String>?,
+                                   shouldResetApplication: Boolean): Intent {
+        val intent = Intent(path)
+        val bundle = Bundle()
+        data?.forEach {
+            bundle.putSerializable(it.key, it.value)
+        }
+        intent.putExtras(bundle)
+        return intent
+    }}
 ```
 
 No método _getDeepLinkIntent_, você consegue configurar a navegação de telas de fluxos server-driven UI para suas telas nativas, fazendo com que e o Beagle reconheça a sua regra.
