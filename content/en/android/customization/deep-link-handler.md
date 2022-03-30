@@ -20,13 +20,18 @@ You have to create a class that implements the `DeepLinkHandler` interface and a
 ```kotlin
 @BeagleComponent
 class AppDeepLinkHandler : DeepLinkHandler {
-    override fun getDeepLinkIntent(
-        rootView: RootView,
-        path: String,
-        data: Map<String, String>?,
-        shouldResetApplication: Boolean
-    ) = Intent(path)
-}
+    override fun getDeepLinkIntent(rootView: RootView,
+                                   path: String,
+                                   data: Map<String, String>?,
+                                   shouldResetApplication: Boolean): Intent {
+        val intent = Intent(path)
+        val bundle = Bundle()
+        data?.forEach {
+            bundle.putSerializable(it.key, it.value)
+        }
+        intent.putExtras(bundle)
+        return intent
+    }}
 ```
 
 In the **getDeepLinkIntent** method, you can configure the navigation screens of the server-driven UI flows to their native screens, making sure that Beagle recognizes your rule.
