@@ -36,10 +36,7 @@ Todas essas funcionalidades são definidas a partir de atributos, que listamos n
     "navigationBarItems" : [ {
       "_beagleComponent_" : "beagle:navigationBarItem",
       "text" : "",
-      "image" : {
-        "_beagleImagePath_" : "local",
-        "mobileId" : "informationImage"
-      },
+      "image" : "informationImage",
       "onPress" : [{
         "_beagleAction_" : "beagle:alert",
         "title" : "Screen",
@@ -71,7 +68,7 @@ Screen(
             navigationBarItems = listOf(
                 NavigationBarItem(
                     text = "",
-                    image = Local.justMobile("informationImage"),
+                    image = "informationImage",
                     onPress = listOf(Alert(
                         title = "Screen",
                         message = "Some message",

@@ -36,10 +36,7 @@ All these functionalities are defined from attributes, which we list in the tabl
     "navigationBarItems" : [ {
       "_beagleComponent_" : "beagle:navigationBarItem",
       "text" : "",
-      "image" : {
-        "_beagleImagePath_" : "local",
-        "mobileId" : "informationImage"
-      },
+      "image" : "informationImage",
       "onPress" : [{
         "_beagleAction_" : "beagle:alert",
         "title" : "Screen",
@@ -71,7 +68,7 @@ Screen(
             navigationBarItems = listOf(
                 NavigationBarItem(
                     text = "",
-                    image = Local.justMobile("informationImage"),
+                    image = "informationImage",
                     onPress = listOf(Alert(
                         title = "Screen",
                         message = "Some message",
@@ -90,5 +87,3 @@ Screen(
 
 {{% /tab %}}
 {{< /tabs >}}
-
-### 👉 [Test this example in the Web Playground](https://beagle-playground.netlify.app/)

@@ -24,7 +24,7 @@ A class that defines an item for `Navigation's bar` and and it has the following
 | **Attribute** | **Type**                                     | Required | Definition                                                          |
 | :------------ | :------------------------------------------- | :------- | :------------------------------------------------------------------ |
 | text          | String                                       |          | Title for the bar's item.                                           |
-| image         | [**Image**]({{< ref path="/api/components/ui/image/" lang="en" >}})  |          | Image for the bar's item.                                           |
+| image         | Bind<String>  |          | id of the image to show in the item.                                          |
 | onPress        | List&lt;[Action]({{< ref path="/api/actions" lang="en" >}})&gt;             |          | List of actions that can be done when you click on the navigations bar item. |
 | accessibility | [**Accessibility**]({{< ref path="/api/components/accessibility" lang="en" >}}) |          | Accessibiliy's options for the navigation item.                     |
 | id            | String                                       |          | Component's identifier.                                             |
@@ -44,10 +44,7 @@ A class that defines an item for `Navigation's bar` and and it has the following
          {
             "_beagleComponent_":"beagle:navigationBarItem",
             "text":"",
-            "image":{
-               "_beagleImagePath_":"local",
-               "mobileId":"informationImage"
-            },
+            "image": "informationImage",
             "onPress":[{
                "_beagleAction_":"beagle:alert",
                "title":"Screen",
@@ -81,7 +78,7 @@ A class that defines an item for `Navigation's bar` and and it has the following
             navigationBarItems = listOf(
                 NavigationBarItem(
                     text = "",
-                    image = Local.justMobile("informationImage"),
+                    image = "informationImage",
                     onPress = listOf(Alert(
                         title = "Screen",
                         message = "Some message",
