@@ -6,28 +6,36 @@ description: Here you will learn how to create and use a widget in Beagle.
 
 ---
 
-## How to create components (custom views) and widgets?
+## How to create components and widgets?
 
-The example below shows how a custom widget will be implemented and which component it will register. It will have:
-- A text;
-- Two buttons inside a linear layout.
+To create a component and register it on the Front end, it is necessary to create a `Widget` and a `Component` that will return a view.
 
-The buttons in this component will be responsible for increasing and decreasing the text's size and the screen will be like the image below:
+## What is the difference between a `component` and a `widget`?
 
-![](/shared/image%20%2883%29.png)
+- A component holds all the logic referring to the component's functionality. In our example, this is where the logic for increasing the text size will be. This information is usually implemented on the front end.
+- A widget is the structure through which we will pass information to our component, such as the text referring to the title and buttons. This is the one we declare in the hierarchy of a screen in the backend. It is also used to register the component and its signature on Beagle (its contract, properties, etc., both in the back and frontend).
+
+We implement a **custom component** and a Widget that will register it on the example below. This component has:
+
+- A text
+- Two buttons within a linear layout.
+
+The buttons here are be responsible for increasing and decreasing the size of the title text. The screen will look like the following image:
+
+{{< figure src="/shared/customComponentMocked.png" width="400" >}}
 
 {{% alert color="info" %}}
-You can do this using `@RegisterWidget` annotation and extending the `WidgetView` class.
+The elements created here will use come *annotations*, like `@RegisterWidget` and extensions, like `WidgetView`.
 {{% /alert %}}
 
-Follow the next steps to create and customize a component and a widget:
+## Creating a widget
 
-### Step 1: Create widget
+To create a widget:
 
-1. Create a class and name it`"CustomWidgetTitleIncrease"`;
-2. Apply the annotation`@RegisterWidget` ;
-3. Extend this class using  WidgetView interface;
-4. This class now will request a toView method to be implemented. Change the class as listed below:  
+1. Create a class and name it `"CustomWidgetTitleIncrease"`
+2. Apply the `@RegisterWidget` annotation to this class;
+3. Extend this class using the `WidgetView` interface
+4. The class will now ask you to implement the `buildView` method. At this point, leave the class as listed below, as the configuration of this method will be finished later:
 
 ```kotlin
 CustomWidgetTitleIncrease.kt
@@ -35,13 +43,14 @@ CustomWidgetTitleIncrease.kt
 @RegisterWidget
 class CustomWidgetTitleIncrease: WidgetView() {
     override fun buildView(rootView: RootView): View {
-        TODO("not implemented")
+        TODO("Not yet implemented")
+    }
 }
 ```
 
-### Step 2: Create and configure the component
+## Step 2: Creating and configuring the component
 
-* Create a `.XML` configuration file and copy and paste the content below, it will create a layout:
+Start by creating a `.XML` configuration file and copy and paste the content below, as it creates the layout chosen for this example:
 
 ```markup
 title_increase_component_layout.xml
@@ -83,11 +92,10 @@ title_increase_component_layout.xml
 </LinearLayout>
 ```
 
-Now, you have to **create the** **component**: 
+Now, it's time to create the component:
 
-1. Create a class and name it:`TitleIncreaseComponent`. This class will register how the component work and the business rule;
-2. Copy and paste the class below: 
-
+1. Create a class and name it: `TitleIncreaseComponent`. It is in this class that sets how the component works and its business rule. Please keep in mind that the business rule of this component is only to increase and decrease the size of your Title. You can add any rule and configuration you wish.
+2. Copy and paste the class below:
 
 ```kotlin
 class TitleIncreaseComponent(context: Context) : LinearLayout(context) {
@@ -98,38 +106,35 @@ class TitleIncreaseComponent(context: Context) : LinearLayout(context) {
     }
 
     fun setTitleText(title: String) {
-        tvExampleTitle.text = title
+        tv_example_title.text = title
     }
 
-    fun setTitleButton1(titleButton:String){
-        btIncrease.text = titleButton
-    }
-    fun setTitleButton2(titleButton:String){
-        btDecrease.text = titleButton
+    fun setTitleButton1(titleButton: String) {
+        bt_increase.text = titleButton
     }
 
-    private fun changeTitleSize(){
+    fun setTitleButton2(titleButton: String) {
+        bt_decrease.text = titleButton
+    }
 
-        var size = tvExampleTitle.textSize
-        tvExampleTitle.textSize = size
+    private fun changeTitleSize() {
+
+        var size = tv_example_title.textSize
+        tv_example_title.textSize = size
         Toast.makeText(context, size.toString(), Toast.LENGTH_SHORT).show()
 
-        val textView = findViewById<TextView>(R.id.tvExampleTitle)
-        val b1 = findViewById<Button>(R.id.btIncrease)
-        val b2 = findViewById<Button>(R.id.btDecrease)
-
-        b1.setOnClickListener {
-            if(size < 50){
+        bt_increase.setOnClickListener {
+            if (size < 50) {
                 size += 5f
-                tvExampleTitle.textSize = size
+                tv_example_title.textSize = size
             }
             Toast.makeText(context, size.toString(), Toast.LENGTH_SHORT).show()
         }
 
-        b2.setOnClickListener {
-            if(size > 5){
+        bt_decrease.setOnClickListener {
+            if (size > 5) {
                 size -= 5f
-                tvExampleTitle.textSize = size
+                tv_example_title.textSize = size
             }
             Toast.makeText(context, size.toString(), Toast.LENGTH_SHORT).show()
         }
@@ -137,12 +142,14 @@ class TitleIncreaseComponent(context: Context) : LinearLayout(context) {
 }
 ```
 
+## Step 3: Configuring the Widget
 
-### Step 3: Configure the widget
+Now that the layout and component are defined, we need to finish configuring the custom widget
 
-The layout and the component are defined, it is necessary to finish the configuration of the customized widget. 
+Review the function below and notice that some *text variables* have been added.
 
-1. Check the function below and see that some text variables were added. This was chosen to demonstrate that it is possible to define the value of this variables by the widget, adding title and button names:
+- These variables will receive values ​​for texts that will define the componente title (that will change size) and the Buttons titles.
+- The text values ​​will be defined from a JSON that will represent a screen with the component created on this example (We will show you this JSON later).
 
 ```kotlin
 CustomWidgetTitleIncrease.kt
@@ -163,11 +170,44 @@ class CustomWidgetTitleIncrease(
 }
 ```
 
-### Step 4: Display the component
+## Step 4: Displaying the component
 
-The customized widget is now ready, the component can be displayed. 
+Now that the custom widget is ready, the component can be displayed.
 
-1. To test the component, use the method below:
+You don't have to configure an entire backend just for testing, you can mock the JSON below, which will simulate an endpoint with a screen that contains the component you just created here on the frontend. (This JSON mocks a backend response. If you wish to check how to create this componente on a backend, please click [here](/backend/kotlin/customization/simple-custom-widget/)).
+
+```json
+{
+  "_beagleComponent_":"beagle:screenComponent",
+  "child":{
+    "_beagleComponent_":"beagle:container",
+    "children":[
+      {
+        "_beagleComponent_":"custom:customWidgetTitleIncrease",
+        "title":"Title",
+        "buttonTitle1":"Button 1",
+        "buttonTitle2":"Button 2"
+      }
+    ],
+    "style":{
+      "backgroundColor":"#000000",
+      "cornerRadius":{
+        
+      },
+      "size":{
+        
+      },
+      "flex":{
+        "justifyContent":"SPACE_AROUND",
+        "alignItems":"CENTER",
+        "grow":1
+      }
+    }
+  }
+}
+```
+
+Now just load it from an Activity on Android, as in the example below:
 
 ```kotlin
 MainActivity.kt
@@ -176,22 +216,14 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-        setContentView(
-            CustomWidgetTitleIncrease(
-                "Example Title",
-                "Increase",
-                "Decrease"
-            ).buildView(rootView = object : RootView {
-                override fun getContext() = this@MainActivity
-
-                override fun getLifecycleOwner() = this@MainActivity
-            })
-        )
+        val intent = this.newServerDrivenIntent<ServerDrivenActivity>(RequestData(url = "yourMockedJSONAddress"))
+        startActivity(intent)
     }
 }
 ```
 
-2. Run the aplication and your component will be displayed:
+- Run the application and your custom component \(in this case a screen\) will be displayed:
 
-![](/shared/custumwidgetexample.gif)
+{{< figure src="/shared/customComponentMockedGif.gif" width="400" >}}
