@@ -1,4 +1,4 @@
-
+ 
 # **Beagle Documentation**
 TThis repository uses [**hugo server**](https://gohugo.io/commands/hugo_server/) and contains **[Beagle's](https://docs.usebeagle.io/v1.10/)** official documentation.
 
