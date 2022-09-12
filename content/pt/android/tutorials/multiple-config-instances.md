@@ -1,24 +1,24 @@
 ---
-title: How to use multiple instances of beagle
+title: Como usar várias instâncias do beagle
 weight: 234
 description: >-
-  On this section, you'll find the step by step to configure beagle configuration for multiple instances
+  Nesta seção, você encontrará o passo a passo para iniciar a configuração do beagle para várias instâncias
 ---
 
 ---
-### What is it? 
+### O que é isso?
 
-The **Beagle Multiple Instances** is a way to start beagle for the current server driven flow using another beagle configuration, such as new widgets, actions and so on.
+O **Beagle Multiple Instances** é uma maneira de iniciar o beagle para o fluxo atual orientado pelo servidor usando outra configuração do beagle, como novos widgets, ações e assim por diante.
 
-You will see below how to configure the multiple instances.
+Você verá abaixo como configurar as várias instâncias.
 
-## Configuring Multiple Instances of Beagle
+## Configurando várias instâncias do Beagle
 
-### Defining new configurations
+### Definindo novas configurações
 
-On this example you will create a class to define the beagle configuration.
+Neste exemplo, você criará uma classe para definir a configuração do beagle.
 
-In this step you can configure widgets, actions, httpclients and all other configurations accepted by beagle.
+Nesta etapa você pode configurar widgets, ações, httpclients e todas as outras configurações aceitas pelo beagle.
 
 ```kotlin
 private const val CONFIG_NAME = "BeagleSetupNew"
@@ -103,9 +103,9 @@ class BeagleSetupNew: BeagleSdkWrapper {
 }
 ```
 
-### Configuring a beagle entry point to use the new configuration
+### Configurando um ponto de entrada beagle para usar a nova configuração
 
-A function called [**newServerDrivenIntent**]({{< ref path="/android/tutorials/how-to-display-a-screen" lang="en" >}}) is responsible to display a server-driven screen, now you can define that this screen will use the configuration defined above like this:
+Uma função chamada [**newServerDrivenIntent**]({{< ref path="/android/tutorials/how-to-display-a-screen" lang="en" >}}) é responsável por exibir uma tela, agora você pode definir que esta tela usará a configuração definida acima assim:
 
 ```kotlin
 startActivity(
