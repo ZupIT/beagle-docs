@@ -2,7 +2,7 @@
 title: How to use multiple instances of beagle
 weight: 234
 description: >-
-  On this section, you'll find the step by step to start beagle configuration for multiple instances
+  On this section, you'll find the step by step to configure beagle configuration for multiple instances
 ---
 
 ---
