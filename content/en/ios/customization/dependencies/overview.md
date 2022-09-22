@@ -3,14 +3,14 @@ title: Overview
 weight: 1
 type: overview
 description: >-
-  This section describes the Beagles' dependencies and their properties for iOS environments.
+  This section describes the Beagle's dependencies and their properties for iOS environments.
 ---
 
 ---
 
 ## What is it?
 
-The `dependecies` file is where you can change the Beagle's default behavior in your application.
+The `dependencies` file is where you can change the Beagle's default behavior in your application.
 
 ## How does it work?
 
@@ -29,6 +29,7 @@ public struct BeagleDependencies {
     public var analyticsProvider: AnalyticsProviderProtocol?
     public var deepLinkHandler: DeepLinkScreenManagerProtocol?
     public var networkClient: NetworkClientProtocol?
+    public var imageProvider: ImageProviderProtocol
     
     // MARK: Public Dependencies
     public var appBundle: BundleProtocol
@@ -42,6 +43,11 @@ public struct BeagleDependencies {
 This structure has an empty constructor that assigns the default Beagle implementations:
 
 * start it and make the necessary customizations.
+{{% /alert %}}
+
+{{% alert color="warning" %}}
+Now Beagle has a new way of instantiation that can hold multiple configurations across the application, for further detail see: [**Multiple configurations**]({{< ref path="/ios/customization/dependencies/multiple-configurations.md" lang="en" >}})
+
 {{% /alert %}}
 
 Therefore, it is appropriate to make this *Beagle initial configuration* during the application startup process, that is, in the the `AppDelegate` function `didFinishLaunchingWithOptions` as shown below:
@@ -113,7 +119,7 @@ It is responsible for creating a Beagle request URL from relative URLs that are 
 This is an example on how to use it:
 
 ```swift
-dependencies.urlBuilder = UrlBuilder(baseUrl: URL(string: "SUA URL BASE"))
+dependencies.urlBuilder = UrlBuilder(baseUrl: URL(string: "yourBaseUrl"))
 ```
 
 ### ThemeProtocol

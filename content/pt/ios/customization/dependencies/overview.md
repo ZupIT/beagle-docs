@@ -29,6 +29,7 @@ public struct BeagleDependencies {
     public var analyticsProvider: AnalyticsProviderProtocol?
     public var deepLinkHandler: DeepLinkScreenManagerProtocol?
     public var networkClient: NetworkClientProtocol?
+    public var imageProvider: ImageProviderProtocol
     
     // MARK: Public Dependencies
     public var appBundle: BundleProtocol
@@ -42,6 +43,11 @@ public struct BeagleDependencies {
 Essa estrutura tem um construtor vazio que atribui as implementações padrão do Beagle:
 
 * inicie-o e faça as personalizações necessárias.
+{{% /alert %}}
+
+{{% alert color="warning" %}}
+Agora o Beagle tem uma nova maneira de inicialização que suporta mútiplas configurações em sua aplicação, para maiores detalhes veja: [**Múltiplas configurações**]({{< ref path="/ios/customization/dependencies/multiple-configurations.md" lang="pt" >}})
+
 {{% /alert %}}
 
 É importante que se faça essa *configuração* das dependências durante o processo de inicialização da aplicação, ou seja, na função `AppDelegate` `didFinishLaunchingWithOptions` conforme mostrado abaixo:

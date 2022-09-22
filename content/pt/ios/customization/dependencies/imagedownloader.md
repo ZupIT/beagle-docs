@@ -13,9 +13,9 @@ Você pode registrar a forma como imagens remotas serão baixadas e preenchidas 
 
 Com o **ImageDownloader** sendo criado no frontend de sua aplicação iOS, o Beagle saberá qual lógica usar para baixar e configurar o componente **Image** do tipo **ImagePath.Remote**.
 
-## **Protocolo ImageDownloaderProtocol**
+## **ImageDownloaderProtocol**
 
-O protocolo **ImageDownloader** se consiste em apenas método chamado **fetchImage** que será utilizado para fazer a requisição de suas imagens remotas.
+O protocolo **ImageDownloaderProtocol** se consiste em apenas método chamado **fetchImage** que será utilizado para fazer a requisição de suas imagens remotas.
 
 ```swift
 
@@ -69,12 +69,11 @@ class CustomImageDownloader: ImageDownloaderProtocol {
 
 ### **Passo 2: Atribuir as dependências**
 
-No AppDelegate ou na classe de configurações do ambiente do Beagle, atribua a instância de `CustomImageDownloader` ao atributo `imageDownloader` presente no BeagleDependencies:
+No AppDelegate ou na classe de configurações do ambiente do Beagle, atribua a instância de `CustomImageDownloader` ao atributo `imageDownloader` presente no `BeagleDependencies`:
 
 ```swift
 let dependencies = BeagleDependencies()
-let customImageDownloader = CustomImageDownloader()
-dependencies.imageDownloader = customImageDownloader
+dependencies.imageDownloader = CustomImageDownloader()
 BeagleConfigurator.setup(dependencies: dependencies)
 ```
 

@@ -19,9 +19,8 @@ They are divided in 4 categories:
 1. **Network:** related to the network layer, information and error messages for each request, response and network URL construction.
 2. **Decoding:** displays messages every time a `parse` error occurs.  
 3. **Navigation:** informative messages that describes the navigations inside the server driven flow and possible errors may occur.
-4. **Form:** related to forms.
 
-It is possible to disable the triggered log messages. Beagle will not call the Log's API, even if it is default or customized. You will need to change the attribute `isLoggingEnabled` of `BeagleDependencies` to `false`.
+It is possible to disable the triggered log messages simple by not configuring a Logger in dependencies.
 
 The log messages can be filtered using these categories names and the application main package identifier as a subsystems.
 
@@ -60,13 +59,9 @@ These are internally called by Beagle when a message needs to be triggered
 We have listed an example below:
 
 ```swift
-class CustomLogger: BeagleLoggerType {
+class CustomLogger: LoggerProtocol {
     func log(_ log: LogType) {
         print(log.message)
-    }
-    
-    func logDecodingError(type: String) {
-        print(type)
     }
 }
 ```
@@ -76,17 +71,5 @@ class CustomLogger: BeagleLoggerType {
 ```swift
 let dependencies = BeagleDependencies()
 dependencies.logger = CustomLogger()
-Beagle.dependencies = dependencies
-```
-
-## BeagleLoggerProxy
-
-{{% alert color="warning" %}}
-This class shouldn't be changed in most cases, since this is the object that will be internally stored in the `Beagle.dependencies.logger` instead of the customized `BeagleLogger`.
-{{% /alert %}}
-
-Its responsibility is only to forward calls to the user's class if `Beagle.dependencies.isLogginEnabled` is `true`, otherwise it won't pass the message. This property is public to allow access to the user's custom class via the code below:
-
-```swift
-(Beagle.dependencies.logger as? BeagleLoggerProxy)?.logger
+BeagleConfigurator.setup(dependencies: dependencies)
 ```

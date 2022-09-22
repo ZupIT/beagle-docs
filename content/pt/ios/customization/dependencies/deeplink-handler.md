@@ -59,7 +59,7 @@ No método `getNativeScreen` verifique se existe uma tela com o path passado e c
 
 ```swift
 
-final class DeeplinkScreenManager: DeepLinkScreenManaging {
+final class DeeplinkScreenManager: DeepLinkScreenManagerProtocol {
     
     public static let shared = DeeplinkScreenManager()
     
@@ -115,7 +115,7 @@ No AppDelegate ou na classe de configurações do ambiente do Beagle, atribua a 
 
 let dependencies = BeagleDependencies()
 let deepLinkHandler = DeeplinkScreenManager.shared
-deepLinkHandler["PathDaSuaScreen"] = SuaScreen.self
+deepLinkHandler["path"] = SuaScreen.self
 dependencies.deepLinkHandler = deepLinkHandler
 BeagleConfigurator.setup(dependencies: dependencies)
 
