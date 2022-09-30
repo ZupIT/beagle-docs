@@ -18,7 +18,7 @@ You will see below how to configure your application for this feature.
 
 To define a new configuration you need to create a `BeagleDependenciesFactory` object and customize the dependencies you want.
 
-In this step you can configure all dependencies thats is also supported in [BeagleDependencies]({{< ref path="/ios/customization/dependencies/overview.md" lang="en" >}})
+In this step you can configure all dependencies that is also supported in [BeagleDependencies]({{< ref path="/ios/customization/dependencies/overview.md" lang="en" >}})
 
 The properties in `BeagleDependenciesFactory` receive a Factory of type needed:
 
