@@ -112,7 +112,7 @@ configuration.dependencies.navigator.registerNavigationController(builder: Custo
 
 ### Configuring a beagle entry point to use the new configuration
 
-For create a new entry-point with configuration you can pass the config via initalizer:
+To create a new entry-point with a configuration you can pass the config via initializer:
 
 - `BeagleScreenViewController(_:controllerId:config:)`
 - `BeagleView(_:config:beagleViewStateObserver:)`
