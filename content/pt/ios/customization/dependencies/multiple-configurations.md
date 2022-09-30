@@ -56,7 +56,7 @@ dependencies.logger = Factory { _ in
 ```
 
 {{% alert color="warning" %}}
-Note que o `NetworkClientDefault` recebe um resolver no init. Into é necessário em todas as dependências que possuem dependências internas e usam `@Injected` ou `@OptionalInjected`.
+Note que o `NetworkClientDefault` recebe um resolver no init. Isso é necessário em todas as dependências que possuem dependências internas e usam `@Injected` ou `@OptionalInjected`.
 {{% /alert %}}
 
 Para a implementação do NetworkClientDefault temos:
