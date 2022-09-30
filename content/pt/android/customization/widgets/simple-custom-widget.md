@@ -5,25 +5,30 @@ description: Aqui voce aprenderá como criar e utilizar um widget no Beagle.
 ---
 
 ---
-## Como criar componentes \(custom views\) e widgets?
 
-No exemplo abaixo, será implementado um **custom widget** e um componente que ele registrará. Esse componente será composto por:
-- Um texto 
+## Como criar componentes e widgets?
+
+Para criar um componente e registrá-lo no Front end é necessário criar um `Widget` e um `Componente` que retornará uma view.
+
+## Qual a diferença entre um componente e um widget?
+
+- Um componente guarda toda a lógica referente a funcionalidade do componente. Em nosso exemplo, é onde ficará a lógica para o aumento do tamanha do texto. Essa informação geralmente é implementada no front end.
+- Um widget é a estrutura pela qual passaremos informações para o nosso componente, como por exemplo, o texto referente ao título e aos botões. É ele quem declaramos na hierarquia de uma tela no backend. Ele também é utilizado para registrar o componente e sua assinatura no Beagle (seu contrato, propriedades e etc, tanto no backend quanto no frontend).
+
+No exemplo abaixo, implementaremos um **componente customizado** e um Widget que o registrará. Esse componente será composto por:
+
+- Um texto
 - Dois botões dentro de um layout linear.
 
 Os botões neste componente serão responsáveis ​​por aumentar e diminuir o tamanho do texto do título e a tela será como a imagem a seguir:
 
-![](/shared/image%20%2883%29.png)
+{{< figure src="/shared/customComponentMocked.png" width="400" >}}
 
 {{% alert color="info" %}}
 Os elementos criados aqui usarão algumas anotações, como `@RegisterWidget` e algumas extensões, como a classe `WidgetView`. Abaixo mostraremos quando e como.
 {{% /alert %}}
 
-## Criando um componente e um widget
-
-Siga os passos abaixo para criar e customizar um componente e um widget:
-
-### Passo 1: Criar o widget
+## Criando um widget
 
 Para criar um widget:
 
@@ -43,7 +48,7 @@ class CustomWidgetTitleIncrease: WidgetView() {
 }
 ```
 
-### Passo 2: Criar e configurar o componente
+## Passo 2: Criando e configurando o componente
 
 Comece criando um arquivo de configuração`.XML`e copie e cole o conteúdo abaixo, pois ela cria o layout escolhido para esse exemplo:
 
@@ -137,11 +142,14 @@ class TitleIncreaseComponent(context: Context) : LinearLayout(context) {
 }
 ```
 
-### Passo 3: Configurar o Widget
+## Passo 3: Configurando o Widget
 
-O layout e o componente estão definidos, é preciso terminar a configuração do Widget customizado:
+Agora que o layout e o componente estão definidos, é preciso terminar a configuração do Widget customizado
 
-Analise a função abaixo e observe que algumas variáveis de texto foram adicionadas. Essa prática foi escolhida para demonstrar que é possível definir o valor dessas variáveis pelo Widget, colocando o título e o nome dos botões.
+Analise a função abaixo e observe que algumas *variáveis de texto* foram adicionadas.
+
+- Essas variavéis vão receber os valores dos textos que definirão o título que mudará de tamanho e o título dos botões.
+- Os valores dos textos serão definidos a partir de um JSON que representará uma tela com o componente criado aqui (O código do JSON será dado no próximo passo)
 
 ```kotlin
 CustomWidgetTitleIncrease.kt
@@ -162,35 +170,60 @@ class CustomWidgetTitleIncrease(
 }
 ```
 
-### Passo 4: Exibir o componente
+## Passo 4: Exibindo o componente
 
-Agora o Widget customizado está pronto, o componente pode ser exibido.
+Agora que o Widget customizado está pronto, o componente pode ser exibido.
 
-Para testar o componente, utilize o método abaixo:
+Para que não seja preciso configurar todo um backend somente para testes, você pode mockar o JSON abaixo, que simulará um endpoint com uma tela que contém o componente que você acabou de criar. (Para criar esse componente em um backend, clique [aqui](/backend/kotlin/customization/simple-custom-widget/))
 
-- Perceba que o widget passa alguns parâmetros para o componente, como o "Título" do componente e o título dos botões.
-- O método buildView foi implementado dentro do widget que customizamos
+```json
+{
+  "_beagleComponent_":"beagle:screenComponent",
+  "child":{
+    "_beagleComponent_":"beagle:container",
+    "children":[
+      {
+        "_beagleComponent_":"custom:customWidgetTitleIncrease",
+        "title":"Title",
+        "buttonTitle1":"Button 1",
+        "buttonTitle2":"Button 2"
+      }
+    ],
+    "style":{
+      "backgroundColor":"#000000",
+      "cornerRadius":{
+        
+      },
+      "size":{
+        
+      },
+      "flex":{
+        "justifyContent":"SPACE_AROUND",
+        "alignItems":"CENTER",
+        "grow":1
+      }
+    }
+  }
+}
+```
+
+Agora basta carregá-lo a partir de uma Activity no Android, como no exemplo abaixo:
 
 ```kotlin
 MainActivity.kt
-import br.com.zup.beagle.android.utils.toView
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-        val customWidget = CustomWidgetTitleIncrease(
-                "Example Title",
-                "Increase",
-                "Decrease"
-            )
-
-        setContentView(customWidget.toView(this))
+        val intent = this.newServerDrivenIntent<ServerDrivenActivity>(RequestData(url = "yourMockedJSONAddress"))
+        startActivity(intent)
     }
 }
 ```
 
 - Execute a aplicação e seu componente customizado \(nesse caso uma tela\) será exibido:
 
-![](/shared/custumwidgetexample.gif)
+{{< figure src="/shared/customComponentMockedGif.gif" width="400" >}}
