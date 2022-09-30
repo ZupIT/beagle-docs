@@ -23,7 +23,7 @@ Eles são divididos em 4 categorias:
 3. **Navegação:** mensagens informativas que descrevem as navegações dentro do fluxo acionado pelo servidor e possíveis erros podem ocorrer.
 4. **Formulário:** relacionado a formulários.
 
-É possível desabilitar as mensagens de log acionadas. O Beagle não chamará a API do Log, mesmo que seja padrão ou personalizada. Você precisará alterar o atributo `isLoggingEnabled` de `BeagleDependencies` para `false`.
+É possível desabilitar as mensagens de log acionadas não configurando um Logger nas dependências.
 
 As mensagens de log podem ser filtradas usando esses nomes de categorias e o identificador do pacote principal do aplicativo como um subsistema.
 
@@ -79,16 +79,4 @@ class CustomLogger: BeagleLoggerType {
 let dependencies = BeagleDependencies()
 dependencies.logger = CustomLogger()
 Beagle.dependencies = dependencies
-```
-
-## BeagleLoggerProxy
-
-{{% alert color="warning" %}}
-Esta classe não deve ser alterada na maioria dos casos, pois este é o objeto que será armazenado internamente no `Beagle.dependencies.logger` ao invés do `BeagleLogger` customizado.
-{{% /alert %}}
-
-Sua responsabilidade é apenas encaminhar chamadas para a classe do usuário se `Beagle.dependencies.isLogginEnabled` for `true`, caso contrário não passará a mensagem. Esta propriedade é pública para permitir o acesso à classe customizada do usuário através do código abaixo:
-
-```swift
-(Beagle.dependencies.logger as? BeagleLoggerProxy)?.logger
 ```

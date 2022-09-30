@@ -14,17 +14,17 @@ You can register the way remote images will be downloaded and populated in **UII
 
 With **ImageDownloader** being created in the frontend of your iOS application, Beagle will know which logic to use to download and configure the **Image** component of type **ImagePath.Remote**.
 
-## **ImageDownloader Protocol**
+## **ImageDownloaderProtocol**
 
-The **ImageDownloader** protocol consists of only one method called **fetchImage** that will be used to request your remote images.
+The **ImageDownloaderProtocol** consists of only one method called **fetchImage** that will be used to request your remote images.
 
 ```swift
 
-public protocol ImageDownloader {
+public protocol ImageDownloaderProtocol {
     @discardableResult
     func fetchImage(
         url: String,
-        additionalData: RemoteScreenAdditionalData?,
+        additionalData: HttpAdditionalData?,
         completion: @escaping (Result<Data, Request.Error>) -> Void
     ) -> RequestToken?
 }
@@ -34,7 +34,7 @@ public protocol ImageDownloader {
 The fetchImage method takes 3 parameters:
 
 - **url**: value of type String to which the image url will be passed through
-- **additionalData**: RemoteScreenAdditionalData value, which can be used when there is a need to pass additional headers for a given request.
+- **additionalData**: HttpAdditionalData value, which can be used when there is a need to pass additional headers for a given request.
 - **completion**: block that must be called at the end of the function execution passing the result of the request.
 
 In addition, the function can return a **RequestToken** so that the request can be canceled internally by Beagle.
@@ -49,13 +49,13 @@ In its `fetchImage` method, this class calls **RequestDispatcher** with type `.f
 
 To replace the class responsible for making image requests on Beagle, follow the steps below:
 
-### **Step 1: Implement `ImageDownloader`**
+### **Step 1: Implement `ImageDownloaderProtocol`**
 
-Implement the `ImageDownloader` protocol in the class you wish to use to make requests, in this case we created a class `CustomImageDownloader` that will be used as an example:
+Implement the `ImageDownloaderProtocol` in the class you wish to use to make requests, in this case we created a class `CustomImageDownloader` that will be used as an example:
 
 ```swift
 
-class CustomImageDownloader: ImageDownloader {
+class CustomImageDownloader: ImageDownloaderProtocol {
     func fetchImage(
         url: String,
         additionalData: RemoteScreenAdditionalData?,
@@ -71,13 +71,12 @@ class CustomImageDownloader: ImageDownloader {
 
 ### **Step 2: Assign the dependencies**
 
-In AppDelegate or in Beagle environment settings class, assign the instance of `CustomImageDownloader` to the `imageDownloader` attribute present in BeagleDependencies:
+In AppDelegate or in Beagle environment settings class, assign the instance of `CustomImageDownloader` to the `imageDownloader` attribute present in `BeagleDependencies`:
 
 ```swift
 let dependencies = BeagleDependencies()
-let customImageDownloader = CustomImageDownloader()
-dependencies.imageDownloader = customImageDownloader
-Beagle.dependencies = dependencies
+dependencies.imageDownloader = CustomImageDownloader()
+BeagleConfigurator.setup(dependencies: dependencies)
 ```
 
 Done! Beagle will now use your class with all the necessary modifications and settings to download your remote images.

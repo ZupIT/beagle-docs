@@ -164,6 +164,14 @@ class ViewClientCustom: ViewClientProtocol {
     @Injected var urlBuilder: UrlBuilderProtocol
     @Injected var coder: CoderProtocol
 
+    init() {}
+
+    init(_ resolver: DependenciesContainerResolving) {
+        _coder = Injected(resolver)
+        _urlBuilder = Injected(resolver)
+        _networkClient = OptionalInjected(resolver)
+    }
+
     // MARK: Inner Dependencies
     
     // Gerenciador de cache
