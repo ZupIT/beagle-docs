@@ -34,7 +34,7 @@ public struct Factory<T> {
 
 This factory has a closure `create` that will be used while configuring the dependencies. This closure receives the `DependenciesContainerResolving` for inner dependency resolving.
 
-As a example we can see bellow configuring networkClient, analyticsProvider and logger:
+As an example, we can see below a configuration for the networkClient, analyticsProvider and logger:
 
 ```swift
 var dependencies = BeagleDependenciesFactory()
