@@ -185,17 +185,6 @@ O valor do contexto é um `DynamicObject`, portanto ele pode assumir qualquer ti
 
 {{% /tab %}}
 
-{{% tab name="Flutter" %}}
-No Flutter o Contexto Global é chamado por meio da função `getInstance()`, ela provê uma única instância (Singleton) do `GlobalContext`, veja abaixo um exemplo de como utilizar:
-
-```dart
-import 'package:beagle/beagle.dart';
-
-GlobalContext.getInstance().then((value) => value.set(value, path));
-```
-
-{{% /tab %}}
-
 {{< /tabs >}}
 
 O contexto global pode ser recuperado de duas formas:
@@ -257,17 +246,6 @@ Beagle.dependencies.globalContext.get(path: "myValue")
 
 {{% /tab %}}
 
-{{% tab name="Flutter" %}}
-Assim como no método set é necessário chamar a função `getInstance()` do `GlobalContext`, você precisa utilizar o `get` do contexto global, veja o exemplo abaixo:
-
-```dart
-import 'package:beagle/beagle.dart';
-
-GlobalContext.getInstance().then((value) => value.get("myValue"));
-```
-
-{{% /tab %}}
-
 {{< /tabs >}}
 
 - Da mesma forma, ao utilizar o `GlobalContext.get()` sem nenhum parâmetro como `path`, esse método retornará o objeto JSON inteiro -&gt; `{"myValue" : "Context has changed"}`
@@ -318,17 +296,6 @@ Lembre-se que no iOS o acesso ao contexto global é feito através do `BeagleDep
 ```swift
 Beagle.dependencies.globalContext.clear()
 ```
-
-{{% /tab %}}
-
-{{% tab name="Flutter" %}}
-Lembre-se que no Flutter o acesso ao contexto global é feito por meio do `getInstance()`:
-```dart
-import 'package:beagle/beagle.dart';
-
-GlobalContext.getInstance().then((value) => value.clear());
-```
-
 
 {{% /tab %}}
 
@@ -392,17 +359,6 @@ Beagle.dependencies.globalContext.clear(path: "myValue1")
 ```
 
 {{% /tab %}}
-
-
-{{% tab name="Flutter" %}}
-```dart
-import 'package:beagle/beagle.dart';
-
-GlobalContext.getInstance().then((value) => value.clear("myValue1"));
-
-```
-{{% /tab %}}
-
 
 {{< /tabs >}}
 

@@ -28,7 +28,10 @@ A sua estrutura é representada como mostrado abaixo:
 | iteratorName       | String                                                      |             | É o identificador do contexto de cada célula. Seu valor default é <code>item</code>.                                                                                        |
 | indexName       | String                                                    |             | É o identificador do índice de cada célula. Seu valor default é <code>index</code>.                                                                                      |
 | key                | String                                                      |             | Aponta para um valor único presente em cada item do `dataSource` para ser usado como um sufixo nos ids dos componentes do template. |
-| itemAspectRatio    | Double                                                  |             | válido apenas para o Flutter. Define o aspect ratio (proporção) dos itens na grade. Se deixado em branco, os itens serão quadrados (itemAspectRatio = 1). O GridView do Flutter não aceita itens com largura e/ou altura específicos |
+
+{{% alert color="warning" %}}
+O contexto implícito definido por _iteratorName_ representa um item no datasource, desta forma quaisquer `SetContext` usando este contexto atualizará o datasource.
+{{% /alert %}}
 
 {{% alert color="warning" %}}
 O contexto implícito definido por _iteratorName_ representa um item no datasource, desta forma quaisquer `SetContext` usando este contexto atualizará o datasource.

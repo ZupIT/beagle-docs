@@ -154,9 +154,9 @@ Confira abaixo, nós usamos o path `remote` fornecendo uma `url` que o Beagle us
 }
 ```
 
-> Você pode ter controle total da requisição acionada por esta imagem remota. Você só precisa configurar sua própria *Camada de Rede* como uma *Dependência do Beagle*. Para entender melhor como fazer isso, ou como configurar outras Dependências do Beagle, você pode verificar a seção de Customização de cada plataforma ([Android]({{< ref path="android/customization" >}}), [iOS]({{< ref path="ios/customization" >}}), [Flutter]({{< ref path="flutter/network/image-downloader" >}}), [Web]({{< ref path="web/commons" >}}).
+> Você pode ter controle total da requisição acionada por esta imagem remota. Você só precisa configurar sua própria *Camada de Rede* como uma *Dependência do Beagle*. Para entender melhor como fazer isso, ou como configurar outras Dependências do Beagle, você pode verificar a seção de Customização de cada plataforma ([Android]({{< ref path="android/customization" >}}), [iOS]({{< ref path="ios/customization" >}}), [Web]({{< ref path="web/commons" >}}).
 
-O Beagle já vem com vários componentes úteis, você pode navegar por todos eles na [seção de componentes]({{< ref path = "api/components/_index.md" >}}). Há outros componentes, por exemplo, que possuem o atributo *children* (às vezes apenas *child*) como o [Screen]({{< ref path="api/components/layout/screen/_index.md" >}}) e o [ListView]({{< ref path="api/components/layout/listview.md" >}}), e eles são usados para **compor hierarquias de views** como o *Container*. Também é possível definir seus próprios componentes, chamados de Custom Components ([Android]({{< ref path="android/customization/widgets/overview" >}}), [iOS]({{< ref path="ios/customization/custom-widget/overview" >}}), [Flutter]({{< ref path="flutter/extensions/components" >}}), [Web]({{< ref path="web/commons/custom-component" >}}), e utilizá-los de forma muito similar a um componente que já vem no Beagle.
+O Beagle já vem com vários componentes úteis, você pode navegar por todos eles na [seção de componentes]({{< ref path = "api/components/_index.md" >}}). Há outros componentes, por exemplo, que possuem o atributo *children* (às vezes apenas *child*) como o [Screen]({{< ref path="api/components/layout/screen/_index.md" >}}) e o [ListView]({{< ref path="api/components/layout/listview.md" >}}), e eles são usados para **compor hierarquias de views** como o *Container*. Também é possível definir seus próprios componentes, chamados de Custom Components ([Android]({{< ref path="android/customization/widgets/overview" >}}), [iOS]({{< ref path="ios/customization/custom-widget/overview" >}}), [Web]({{< ref path="web/commons/custom-component" >}}), e utilizá-los de forma muito similar a um componente que já vem no Beagle.
 
 ### Style
 
@@ -215,7 +215,7 @@ Finalmente, vamos falar sobre *Actions*, uma maneira de adicionar *dinamismo em 
 }
 ```
 
-O [componente Button]({{< ref path="api/components/ui/button.md" >}}) possui um atributo chamado `onPress` que pode receber uma lista de ações, as quais só serão executadas quando o botão for pressionado. Você pode ver todas as ações padrão do Beagle na [seção Actions]({{< ref path="api/actions/_index.md" >}}). Mas também é possível criar suas próprias ações (um processo semelhante a *Custom Componentes*), que chamamos de Custom Actions ([Android]({{< ref path="android/customization/action/overview" >}}), [iOS]({{< ref path="ios/customization/custom-actions/overview" >}}), [Flutter]({{< ref path="flutter/extensions/actions" >}}), [Web]({{< ref path="web/commons/customized-actions" >}}).
+O [componente Button]({{< ref path="api/components/ui/button.md" >}}) possui um atributo chamado `onPress` que pode receber uma lista de ações, as quais só serão executadas quando o botão for pressionado. Você pode ver todas as ações padrão do Beagle na [seção Actions]({{< ref path="api/actions/_index.md" >}}). Mas também é possível criar suas próprias ações (um processo semelhante a *Custom Componentes*), que chamamos de Custom Actions ([Android]({{< ref path="android/customization/action/overview" >}}), [iOS]({{< ref path="ios/customization/custom-actions/overview" >}}), [Web]({{< ref path="web/commons/customized-actions" >}}).
 
 Esse exemplo usa uma [ação Alert]({{< ref path="api/actions/alert.md" >}}), o que resulta na exibição de um componente de alerta quando alguém toca o botão. Você pode fazer isso no *Playground* e ver você mesmo.
 
@@ -235,7 +235,7 @@ Depois de ver as partes mais essenciais do Beagle, você está pronto para mergu
 
 - Se quiser ver um exemplo mais complexo de um aplicativo que utiliza completamente o Beagle, você pode verificar [este repositório](https://github.com/ZupIT/beagle-adoption-demo). Ele possui um backend em Kotlin e frontends nativos para dispositivos móveis em Android e iOS.
 
-- Se você deseja iniciar um novo projeto com o Beagle ou integrar o Beagle em seu aplicativo já existente, você pode seguir o guia de instalação de cada plataforma ([Android]({{< ref path="android/getting-started.md" >}}), [iOS]({{< ref path="ios/getting-started.md" >}}), [Flutter]({{< ref path="flutter/getting-started.md" >}}), [Web]({{< ref path="web/commons/creating-a-project-from-scratch.md" >}}).
+- Se você deseja iniciar um novo projeto com o Beagle ou integrar o Beagle em seu aplicativo já existente, você pode seguir o guia de instalação de cada plataforma ([Android]({{< ref path="android/getting-started.md" >}}), [iOS]({{< ref path="ios/getting-started.md" >}}), [Web]({{< ref path="web/commons/creating-a-project-from-scratch.md" >}}).
 
 - Se você quiser saber mais sobre uma API específica, use a [seção API]({{< ref path="api/_index.md" >}}).
 
@@ -260,7 +260,6 @@ O Beagle possui diferentes bibliotecas/frameworks para cada plataforma suportada
 
 - **Android:** [![Maven Central](https://img.shields.io/maven-central/v/br.com.zup.beagle/android)](https://mvnrepository.com/artifact/br.com.zup.beagle/android)
 - **iOS:** [![badge](https://img.shields.io/cocoapods/v/Beagle)](https://cocoapods.org/pods/Beagle)
-- **Flutter:** [![badge](https://img.shields.io/pub/v/beagle)](https://pub.dev/packages/beagle)
 - **SwiftUI and Compose:** *vamos tentar suportá-los no futuro*
 
 **Web:**

@@ -28,7 +28,10 @@ This is how this component is structured:
 | iteratorName       | String                                                    |             | It is the context identifier for each cell. The default value is <code>item</code>.                                                                                      |
 | indexName       | String                                                    |             | It is the index identifier for each cell. The default value is <code>index</code>.                                                                                      |
 | key                | String                                                    |             | Points to a unique value present in each item of the `dataSource` to be used as a suffix in the ids of the template components. |
-| itemAspectRatio    | Double                                                  |             | only valid for Flutter. This sets the aspect ratio of the items in the grid. If left in blank, the items will be squares (itemAspectRatio = 1). The Flutter GridView doesn't accept items with arbitrary size. |
+
+{{% alert color="warning" %}}
+The implicit context defined by _iteratorName_ represents an item in the datasource, so any `SetContext` using this context will update the datasource.
+{{% /alert %}}
 
 {{% alert color="warning" %}}
 The implicit context defined by _iteratorName_ represents an item in the datasource, so any `SetContext` using this context will update the datasource.
