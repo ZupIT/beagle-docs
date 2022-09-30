@@ -8,7 +8,7 @@ description: >-
 ---
 ### What is it? 
 
-The **Beagle Multiple Instances** is a way to start beagle for the current server driven flow using another beagle configuration, such as new widgets, actions and so on.
+**Beagle Multiple Instances** is a feature that allows the start up of distinct server driven flows with independent configurations of Beagle. This allows each server driven flow to have its own components, base url, actions, http client, etc.
 
 
 ## Configuring Multiple Instances of Beagle
