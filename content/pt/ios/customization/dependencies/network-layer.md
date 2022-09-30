@@ -59,10 +59,10 @@ Para substituir a classe responsável por realizar as requisições Http para o 
 
 ### **Passo 1: Criar uma implementação para NetworkClientProtocol**
 
-Implemente o protocolo `NetworkClient` na classe que deseja utilizar para realizar as requisições, neste caso o `NetworkClientDefault` será usado como exemplo:
+Implemente o protocolo `NetworkClientProtocol` na classe que deseja utilizar para realizar as requisições, neste caso o `CustomNetworkClient` será usado como exemplo:
 
 ```swift
-class NetworkClient: NetworkClientProtocol {
+class CustomNetworkClient: NetworkClientProtocol {
     func executeRequest(
         _ request: Request, 
         completion: @escaping RequestCompletion
@@ -83,12 +83,11 @@ class NetworkClient: NetworkClientProtocol {
 
 ### **Passo 2: Atribuir as dependências**
 
-No AppDelegate ou na classe de configurações do ambiente do Beagle, atribua a instância de `NetworkClientDefault` ao atributo `networkClient` presente no Beagle Dependencies:
+No AppDelegate ou na classe de configurações do ambiente do Beagle, atribua a instância de `CustomNetworkClient` ao atributo `networkClient` presente no Beagle Dependencies:
 
 ```swift
 let dependencies = BeagleDependencies()
-let client = NetworkClient()
-dependencies.networkClient = client
+dependencies.networkClient = CustomNetworkClient
 BeagleConfigurator.setup(dependencies: dependencies)
 ```
 
@@ -96,4 +95,4 @@ Pronto! Agora o Beagle utilizará a sua classe com todas as modificações e def
 
 ### **Exemplo de implementação**
 
-Caso queira entrar mais a fundo na implementação da camada de rede temos um exemplo [aqui](https://github.com/Orangestack-com/beagle-ios/blob/main/Example/BeagleDemo/BeagleDemo/BeagleConfig/Network/NetworkClientDefault.swift)
+Caso queira entrar mais a fundo na implementação da camada de rede temos um exemplo [aqui](https://github.com/ZupIT/beagle-ios/blob/main/Example/BeagleDemo/BeagleDemo/BeagleConfig/Network/NetworkClientDefault.swift)

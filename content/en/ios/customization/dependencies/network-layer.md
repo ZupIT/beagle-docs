@@ -9,7 +9,7 @@ description: >-
 
 ## Introduction
 
-Beagle makes all the web request from the **`networkClient`** dependency that is present in BeagleDependencies of the type `NetworkClient`, so it is possible to create your own network layer implementation to be used in the framework.
+Beagle makes all network requests through the **`networkClient`** dependency, which is present in the BeagleDependencies of type `NetworkClientProtocol`. This allows developers to create their own network layer implementation to be used by the framework.
 
 Now you can:
 
@@ -17,11 +17,11 @@ Now you can:
 * Modify some properties like request headers, request methods, body response, data response,  run cryptography, etc.
 
 ```swift
-public protocol NetworkClient {
+public protocol NetworkClientProtocol {
     typealias Error = NetworkError
     typealias NetworkResult = Result<NetworkResponse, NetworkError>
     typealias RequestCompletion = (NetworkResult) -> Void
- 
+
     @discardableResult
     func executeRequest(
         _ request: Request,
@@ -42,26 +42,7 @@ Besides that, the function can return the **RequestToken,** in order to make the
 | **Attribute** | **Type** | **Required** | **Definition** |
 | :--- | :--- | :---: | :---: |
 | url | URL | ✓ | Contains the url of the request. |
-| type | RequestType | ✓ | Contains the type of the request. |
-| additionalData | RemoteScreenAdditionalData |  | Contains the additional data for a request. (ex: headers) |
-
-### **RequestType**
-
-It is an `ENUM` and the values are:
-
-| Value | Definition |
-| :--- | :--- |
-| fetchComponent | Component requests |
-| submitForm(FormData) | Submit forms |
-| fetchImage | Image requests |
-| rawRequest(RequestData) | Other types of requests |
-
-#### **FormData**
-
-| **Attribute** | **Type** | **Required** | **Definition** |
-| :--- | :--- | :---: | :---: |
-| method | FormRemoteAction.Method | ✓ | Contains the type of the request (get, post, put, delete). |
-| values | [String: String] | ✓ | Contains the data of the form. |
+| additionalData | HttpAdditionalData |  | Contains the additional data for a request. (ex: headers) |
 
 #### **RequestData**
 
@@ -69,15 +50,15 @@ It is an `ENUM` and the values are:
 | :--- | :--- | :---: | :---: |
 | method | String |  | Receives the type of the request, the default is "GET". |
 | headers | [String: String] |  | Contains the headers for the requests. |
-| body | Any |  | Contains the body of the request. |
+| body | DynamicObject |  | Contains the body of the request. |
 
 ## **Creating a Network layer**
 
 To customize your `NetworkClient` protocol, see the steps below:
 
-### **Step 1: Implement the `NetworkClient`**
+### **Step 1: Implement the `NetworkClientProtocol`**
 
-Implement the `NetworkClient` protocol in the class you want to use to make requests, in this case, the `CustomNetworkClient` will be used, like the example below:
+Implement the `NetworkClientProtocol` in the class you want to use to make requests, in this case, the `CustomNetworkClient` will be used, like the example below:
 
 ```swift
 class CustomNetworkClient: NetworkClient {
@@ -97,13 +78,12 @@ class CustomNetworkClient: NetworkClient {
 
 ### **Step 2: Assign the dependencies**
 
-On AppDelegate or on Beagle's environment, assign the instance of `CustomNetworkClient` to the `networkClient` attribute from Beagle Dependencies:
+On AppDelegate or on Beagle's environment, assign the instance of `CustomNetworkClient` to the `networkClient` attribute from `BeagleDependencies`:
 
 ```swift
 let dependencies = BeagleDependencies()
-let client = CustomNetworkClient()
-dependencies.networkClient = client
-Beagle.dependencies = dependencies
+dependencies.networkClient = CustomNetworkClient()
+BeagleConfigurator.setup(dependencies: dependencies)
 ```
 
 Done! Now, Beagle will use your class with all the changes and definition needed to make the http requests.
@@ -114,28 +94,30 @@ The example below has the same implementation used in the BeagleScaffold and Bea
 
 #### **`NetworkClientDefault`**
 
-Create a new file called `NetworkClientDefault`, which will have a class conforming to the `NetworkClient` protocol.
+Create a new file called `NetworkClientDefault`, which will have a class conforming to the `NetworkClientProtocol`.
 
 This implementation uses **Foundation** resources to make requests, such as **URLSession**.
 
 ```swift
 
-public class NetworkClientDefault: NetworkClient {
+import Foundation
+import Beagle
 
-    public typealias Dependencies = DependencyLogger
+public class NetworkClientDefault: NetworkClientProtocol {
 
     public var session = URLSession.shared
-    let dependencies: Dependencies
 
     public var httpRequestBuilder = HttpRequestBuilder()
     
-    public init(dependencies: DependencyLogger) {
-        self.dependencies = dependencies
-    }
+    @OptionalInjected var logger: LoggerProtocol?
 
     enum ClientError: Swift.Error {
         case invalidHttpResponse
         case invalidHttpRequest
+    }
+    
+    init(_ resolver: DependenciesContainerResolving) {
+        _logger = OptionalInjected(resolver)
     }
 
     public func executeRequest(
@@ -153,18 +135,17 @@ public class NetworkClientDefault: NetworkClient {
         
         let build = httpRequestBuilder.build(
             url: request.url,
-            requestType: request.type,
-            additionalData: request.additionalData as? HttpAdditionalData
+            additionalData: request.additionalData
         )
         let urlRequest = build.toUrlRequest()
 
         let task = session.dataTask(with: urlRequest) { [weak self] data, response, error in
             guard let self = self else { return }
-            self.dependencies.logger.log(Log.network(.httpResponse(response: .init(data: data, response: response))))
+            self.logger?.log(Log.network(.httpResponse(response: .init(data: data, response: response))))
             completion(self.handleResponse(data: data, request: urlRequest, response: response, error: error))
         }
         
-        dependencies.logger.log(Log.network(.httpRequest(request: .init(url: urlRequest))))
+        logger?.log(Log.network(.httpRequest(request: .init(url: urlRequest))))
         task.resume()
         return task
     }
@@ -174,7 +155,7 @@ public class NetworkClientDefault: NetworkClient {
         request: URLRequest,
         response: URLResponse?,
         error: Swift.Error?
-    ) -> NetworkClient.NetworkResult {
+    ) -> NetworkClientProtocol.NetworkResult {
         if let error = error {
             return .failure(NetworkError(error: error, request: request))
         }
@@ -202,9 +183,12 @@ public class NetworkClientDefault: NetworkClient {
 
 Create a new file called `HttpRequestBuilder`. This class will be used to configure http request configurations.
 
-In the example below, build the request (url, method, headers and body) according to the type of `Request.RequestType` passed.
+In the example below, build the request (url, method, headers and body).
 
 ```swift
+
+import Foundation
+import Beagle
 
 public class HttpRequestBuilder {
 
@@ -214,24 +198,17 @@ public class HttpRequestBuilder {
 
     public func build(
         url: URL,
-        requestType: Request.RequestType,
         additionalData: HttpAdditionalData?
     ) -> Result {
-        
-        if case .rawRequest(let requestData) = requestType {
-            return Result(url, requestData)
-        }
-        
-        var newUrl = url
-        var body = additionalData?.httpData?.body
 
         let headers = makeHeaders(additionalData: additionalData)
-
-        setupParametersFor(requestType: requestType, url: &newUrl, body: &body)
-
+        var body: Data?
+        if let additionalDataBody = additionalData?.body {
+            body = try? JSONEncoder().encode(additionalDataBody)
+        }
         return Result(
-            url: newUrl,
-            method: httpMethod(type: requestType, data: additionalData),
+            url: url,
+            method: additionalData?.method?.rawValue ?? "GET",
             headers: headers,
             body: body
         )
@@ -250,15 +227,6 @@ public class HttpRequestBuilder {
             self.body = body
         }
         
-        init(_ url: URL, _ requestData: Request.RequestData) {
-            let method = requestData.method ?? "GET"
-            var body: Data?
-            if method != "GET" {
-                body = try? JSONSerialization.data(withJSONObject: requestData.body ?? [:], options: [.fragmentsAllowed])
-            }
-            self.init(url: url, method: method, headers: requestData.headers ?? [:], body: body)
-        }
-
         func toUrlRequest() -> URLRequest {
             var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 100)
             request.httpMethod = method
@@ -275,46 +243,13 @@ public class HttpRequestBuilder {
             "Content-Type": "application/json",
             "beagle-platform": "IOS"
         ]
-        additionalData?.headers.forEach {
+        additionalData?.headers?.forEach {
             headers.updateValue($0.value, forKey: $0.key)
         }
         additionalHeaders.forEach {
             headers.updateValue($0.value, forKey: $0.key)
         }
         return headers
-    }
-
-    private func httpMethod(type: Request.RequestType, data: HttpAdditionalData?) -> String {
-        switch (type, data) {
-
-        case (.submitForm(let form), _):
-            return form.method.rawValue
-            
-        case (.rawRequest(let requestData), _):
-            return requestData.method ?? "GET"
-
-        case (_, nil):
-            return "GET"
-
-        case (_, let data?):
-            return data.httpData?.method.rawValue ?? "GET"
-        }
-    }
-
-    private func setupParametersFor(
-        requestType: Request.RequestType,
-        url: inout URL,
-        body: inout Data?
-    ) {
-        guard case .submitForm(let form) = requestType else { return }
-
-        switch form.method {
-        case .post, .put:
-            configureBodyParameters(form.values, in: &body)
-
-        case .get, .delete:
-            configureURLParameters(form.values, in: &url)
-        }
     }
 
     private func configureBodyParameters(
@@ -339,4 +274,5 @@ public class HttpRequestBuilder {
         }
     }
 }
+
 ```
