@@ -46,7 +46,7 @@ Essa estrutura tem um construtor vazio que atribui as implementações padrão d
 {{% /alert %}}
 
 {{% alert color="warning" %}}
-Agora o Beagle tem uma nova maneira de inicialização que suporta mútiplas configurações em sua aplicação, para maiores detalhes veja: [**Múltiplas configurações**]({{< ref path="/ios/customization/dependencies/multiple-configurations.md" lang="pt" >}})
+O Beagle tem outra maneira de inicialização que suporta múltiplas configurações em sua aplicação, para maiores detalhes veja: [**Múltiplas configurações**]({{< ref path="/ios/customization/dependencies/multiple-configurations.md" lang="pt" >}})
 
 {{% /alert %}}
 
