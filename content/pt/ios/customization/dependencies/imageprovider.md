@@ -9,7 +9,7 @@ description: >-
 
 ## **Introdução**
 
-Você pode configurar a maneira com que uma imagem local é carregada pelo componente **Image** fornecendo uma classe que implementa esta lógica.
+Você pode configurar a maneira com que uma imagem local é carregada pelo componente **Image** fornecendo uma classe que implementa essa lógica.
 
 ## **ImageProviderProtocol**
 
