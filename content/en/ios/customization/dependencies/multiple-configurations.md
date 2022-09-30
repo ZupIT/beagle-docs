@@ -20,7 +20,7 @@ To define a new configuration you need to create a `BeagleDependenciesFactory` o
 
 In this step you can configure all dependencies that is also supported in [BeagleDependencies]({{< ref path="/ios/customization/dependencies/overview.md" lang="en" >}})
 
-The properties in `BeagleDependenciesFactory` receive a Factory of type needed:
+The properties in `BeagleDependenciesFactory` receive a Factory of the type needed:
 
 ```swift
 public struct Factory<T> {
