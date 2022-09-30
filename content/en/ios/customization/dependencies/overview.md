@@ -46,7 +46,7 @@ This structure has an empty constructor that assigns the default Beagle implemen
 {{% /alert %}}
 
 {{% alert color="warning" %}}
-Now Beagle has a new way of instantiation that can hold multiple configurations across the application, for further detail see: [**Multiple configurations**]({{< ref path="/ios/customization/dependencies/multiple-configurations.md" lang="en" >}})
+Beagle has another way of instantiation that can hold multiple configurations across the application, for further detail see: [**Multiple configurations**]({{< ref path="/ios/customization/dependencies/multiple-configurations.md" lang="en" >}})
 
 {{% /alert %}}
 
