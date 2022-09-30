@@ -20,7 +20,7 @@ They are divided in 4 categories:
 2. **Decoding:** displays messages every time a `parse` error occurs.  
 3. **Navigation:** informative messages that describes the navigations inside the server driven flow and possible errors may occur.
 
-It is possible to disable the triggered log messages simple by not configuring a Logger in dependencies.
+It is possible to disable the triggered log messages simply by not configuring a Logger in the dependencies.
 
 The log messages can be filtered using these categories names and the application main package identifier as a subsystems.
 
