@@ -32,7 +32,7 @@ public struct Factory<T> {
 }
 ```
 
-This factory has a closure `create` that will be used in dependencies configurations. This closure receives the `DependenciesContainerResolving` for inner dependencies resolving.
+This factory has a closure `create` that will be used while configuring the dependencies. This closure receives the `DependenciesContainerResolving` for inner dependency resolving.
 
 As a example we can see bellow configuring networkClient, analyticsProvider and logger:
 
