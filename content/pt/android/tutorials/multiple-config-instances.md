@@ -10,7 +10,6 @@ description: >-
 
 **Beagle Multiple Instances** é um recurso que permite a inicialização de fluxos server driven distintos com configurações de Beagle independentes. Isso permite que cada fluxo tenha seus próprios componentes, base url, ações, http client, etc.
 
-Você verá abaixo como configurar as várias instâncias.
 
 ## Configurando várias instâncias do Beagle
 
