@@ -9,7 +9,7 @@ description: >-
 
 ## Introduction
 
-Beagle makes all the web request from the **`networkClient`** dependency that is present in BeagleDependencies of the type `NetworkClientProtocol`, so it is possible to create your own network layer implementation to be used in the framework.
+Beagle makes all network requests through the **`networkClient`** dependency, which is present in the BeagleDependencies of type `NetworkClientProtocol`. This allows developers to create their own network layer implementation to be used by the framework.
 
 Now you can:
 
