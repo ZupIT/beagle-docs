@@ -8,7 +8,7 @@ description: >-
 ---
 ## O que é isso?
 
-O **Beagle Múltiplas Configurações** é uma nova maneira de inicializar uma instência do Beagle para o fluxo server dirven corrente usando uma configuração única. Desta forma você pode manter várias instâncias (configurações) na sua aplicação.
+O **Beagle Múltiplas Configurações** é uma maneira de inicializar uma instância do Beagle para o fluxo server driven corrente usando uma configuração única. Desta forma você pode manter várias instâncias (configurações) na sua aplicação.
 
 ## Configurando múltiplas instâncias do Beagle
 
