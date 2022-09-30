@@ -33,6 +33,10 @@ A sua estrutura é representada como mostrado abaixo:
 O contexto implícito definido por _iteratorName_ representa um item no datasource, desta forma quaisquer `SetContext` usando este contexto atualizará o datasource.
 {{% /alert %}}
 
+{{% alert color="warning" %}}
+O contexto implícito definido por _iteratorName_ representa um item no datasource, desta forma quaisquer `SetContext` usando este contexto atualizará o datasource.
+{{% /alert %}}
+
 ### GridViewDirection
 
 É um `ENUM`, cujos valores são:

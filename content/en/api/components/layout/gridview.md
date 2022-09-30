@@ -33,6 +33,10 @@ This is how this component is structured:
 The implicit context defined by _iteratorName_ represents an item in the datasource, so any `SetContext` using this context will update the datasource.
 {{% /alert %}}
 
+{{% alert color="warning" %}}
+The implicit context defined by _iteratorName_ represents an item in the datasource, so any `SetContext` using this context will update the datasource.
+{{% /alert %}}
+
 ### GridViewDirection
 
 It is an `ENUM`, the values are:
