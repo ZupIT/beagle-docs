@@ -46,7 +46,7 @@ struct ImageProvider: ImageProviderProtocol {
 
 ## **Replacing the default implementation**
 
-To replace the class responsible for load local images on Beagle follow the steps below:
+To replace the class responsible for loading local images on Beagle, follow the steps below:
 
 ### **Step 1: Implement `ImageImageProviderProtocol`**
 
