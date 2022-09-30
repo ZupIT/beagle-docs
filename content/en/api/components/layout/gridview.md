@@ -27,7 +27,6 @@ This is how this component is structured:
 | scrollEndThreshold | Int                                                       |             | Defines the percentage scrolled from the list to trigger `onScrollEnd`.                                                         |
 | iteratorName       | String                                                    |             | It is the context identifier for each cell.                                                                                     |
 | key                | String                                                    |             | Points to a unique value present in each item of the `dataSource` to be used as a suffix in the ids of the template components. |
-| itemAspectRatio    | Double                                                  |             | only valid for Flutter. This sets the aspect ratio of the items in the grid. If left in blank, the items will be squares (itemAspectRatio = 1). The Flutter GridView doesn't accept items with arbitrary size. |
 
 ### GridViewDirection
 

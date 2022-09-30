@@ -24,7 +24,15 @@ Não, o Beagle é agnóstico em relação a arquitetura e não interfere na arqu
 
 ## Por que usar o Beagle e não o React Native ou Flutter?
 
-A solução do Beagle é diferente de outras tecnologias. É uma ferramenta para facilitar o desenvolvimento, tem o conceito de UI orientada a servidor e entrega contínua. O Beagle permite que você manipule, através do backend, componentes nativos de sua aplicação, modifique os layout e a exibição desses componentes.
+O Beagle tem um objetivo diferente do React Native e do Flutter. O propósito do Beagle é construir Server Driven UI, i.e. representar a interface no
+backend, enviar uma versão serializada para o frontend, desserializar e renderizar.
+
+Como precisamos de uma representação da tela no backend, ela se torna agnóstica de plataforma e é esse o motivo de você poder escrever a definição
+da UI uma única vez no backend e não programar a mesma lógica em várias linguagens. Com isso em vista, é preciso lembrar que os componentes no
+frontend (design system) ainda precisa ser implementado para todas as plataformas.
+
+O React Native e o Flutter não lidam com Server Driven UI, o propósito dessas ferramentas é criar os componentes visuais e o comportamento da tela
+uma única vez, mas de maneira tradicional. Se você não precisa de Server Driven UI, você deveria considerar esses frameworks ao invés do Beagle.
 
 ## É possível realizar testes em telas server driven?
 

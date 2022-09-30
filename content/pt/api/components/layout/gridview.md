@@ -27,7 +27,6 @@ A sua estrutura é representada como mostrado abaixo:
 | scrollEndThreshold |  Int                                                         |             | Define a porcentagem rolada do GridView para disparar o `onScrollEnd`.                                                                 |
 | iteratorName       | String                                                      |             | É o identificador do contexto de cada célula.                                                                                       |
 | key                | String                                                      |             | Aponta para um valor único presente em cada item do `dataSource` para ser usado como um sufixo nos ids dos componentes do template. |
-| itemAspectRatio    | Double                                                  |             | válido apenas para o Flutter. Define o aspect ratio (proporção) dos itens na grade. Se deixado em branco, os itens serão quadrados (itemAspectRatio = 1). O GridView do Flutter não aceita itens com largura e/ou altura específicos |
 
 ### GridViewDirection
 

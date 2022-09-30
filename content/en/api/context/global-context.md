@@ -187,18 +187,6 @@ The context value is a `DynamicObject`, therefore it can take on any kind of val
 
 {{% /tab %}}
 
-
-{{% tab name="Flutter" %}}
-In Flutter the Global Context is called through the `getInstance()` function. This will provide a single instance (Singleton) of the `GlobalContext`, check out below an example:
-
-```dart
-import 'package:beagle/beagle.dart';
-
-GlobalContext.getInstance().then((value) => value.set(value, path));
-```
-
-{{% /tab %}}
-
 {{< /tabs >}}
 
 ## Recovering a Global Context
@@ -262,17 +250,6 @@ Beagle.dependencies.globalContext.get(path: "myValue")
 
 {{% /tab %}}
 
-{{% tab name="Flutter" %}}
-Call the function `getInstance()` of the `GlobalContext` to be able to use the `**get**` of the global context which you will also need to call, see the example below: 
-
-```dart
-import 'package:beagle/beagle.dart';
-
-GlobalContext.getInstance().then((value) => value.get("myValue"));
-```
-
-{{% /tab %}}
-
 {{< /tabs >}}
 
 - The same way when using `GlobalContext.get()` without a `path` parameter, this method will return a whole JSON object -&gt; `{"myValue" : "Context has changed"}`
@@ -323,19 +300,6 @@ Remember that in the iOS the global context access is made over the `BeagleDepen
 ```swift
 Beagle.dependencies.globalContext.clear()
 ```
-
-{{% /tab %}}
-
-
-{{% tab name="Flutter" %}}
-Remember that in Flutter the global context access is made over the `getInstance()`:
-
-```dart
-import 'package:beagle/beagle.dart';
-
-GlobalContext.getInstance().then((value) => value.clear());
-```
-
 
 {{% /tab %}}
 
@@ -398,15 +362,6 @@ beagleService?.globalContext.clear("myValue1");
 Beagle.dependencies.globalContext.clear(path: "myValue1")
 ```
 
-{{% /tab %}}
-
-{{% tab name="Flutter" %}}
-```dart
-import 'package:beagle/beagle.dart';
-
-GlobalContext.getInstance().then((value) => value.clear("myValue1"));
-
-```
 {{% /tab %}}
 
 {{< /tabs >}}
