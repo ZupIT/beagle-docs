@@ -25,9 +25,14 @@ This is how this component is structured:
 | isScrollIndicatorVisible | Bool | | Set the scroll bar visibility. |
 | onScrollEnd        | List&lt;[Action]({{< ref path="/api/actions" lang="en" >}})&gt;                  |             | List of actions taken when the list ends.                                                                                       |
 | scrollEndThreshold | Int                                                       |             | Defines the percentage scrolled from the list to trigger `onScrollEnd`.                                                         |
-| iteratorName       | String                                                    |             | It is the context identifier for each cell.                                                                                     |
+| iteratorName       | String                                                    |             | It is the context identifier for each cell. The default value is <code>item</code>.                                                                                      |
+| indexName       | String                                                    |             | It is the index identifier for each cell. The default value is <code>index</code>.                                                                                      |
 | key                | String                                                    |             | Points to a unique value present in each item of the `dataSource` to be used as a suffix in the ids of the template components. |
 | itemAspectRatio    | Double                                                  |             | only valid for Flutter. This sets the aspect ratio of the items in the grid. If left in blank, the items will be squares (itemAspectRatio = 1). The Flutter GridView doesn't accept items with arbitrary size. |
+
+{{% alert color="warning" %}}
+The implicit context defined by _iteratorName_ represents an item in the datasource, so any `SetContext` using this context will update the datasource.
+{{% /alert %}}
 
 ### GridViewDirection
 
@@ -108,6 +113,10 @@ Default value is GridViewDirection.VERTICAL
       "view": {
         "_beagleComponent_": "beagle:container",
         "children": [
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Index: @{index}"
+          },
           {
             "_beagleComponent_": "beagle:text",
             "text": "Name: @{item.name}"
@@ -210,6 +219,7 @@ Default value is GridViewDirection.VERTICAL
   ],
   "isScrollIndicatorVisible": false,
   "iteratorName": "item",
+  "indexName": "index",
   "spanCount": 2,
   "direction": "HORIZONTAL"
 }
@@ -275,6 +285,7 @@ GridView(
             case = expressionOf("@{eq(item.race, 'Half-skaa')}"),
             view = Container(
                 children = listOf(
+                    Text("Index: @{index}"),
                     Text("Name: @{item.name}"),
                     Text("Race: @{item.race}"),
                     Text("Mistborn: @{item.isMistborn}"),

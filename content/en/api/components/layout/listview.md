@@ -24,8 +24,13 @@ See how the structure is represented:
 | isScrollIndicatorVisible | Bool | | Set the scroll bar visibility. |
 | onScrollEnd        | List&lt;[Action]({{< ref path="/api/actions" lang="en" >}})&gt;                   |             | List of actions taken when the list ends.                                                                                       |
 | scrollEndThreshold | Int                                                       |             | Defines the percentage scrolled from the list to trigger `onScrollEnd`.                                                         |
-| iteratorName       | String                                                    |             | It is the context identifier for each cell.                                                                                     |
+| iteratorName       | String                                                    |             | It is the context identifier for each cell. The default value is <code>item</code>.                                                                                      |
+| indexName       | String                                                    |             | It is the index identifier for each cell. The default value is <code>index</code>.                                                                                      |
 | key                | String                                                    |             | Points to a unique value present in each item of the `dataSource` to be used as a suffix in the ids of the template components. |
+
+{{% alert color="warning" %}}
+The implicit context defined by _iteratorName_ represents an item in the datasource, so any `SetContext` using this context will update the datasource.
+{{% /alert %}}
 
 ### ListDirection
 
@@ -132,6 +137,7 @@ Default value is ListDirection.VERTICAL
   },
   "dataSource": "@{characters}",
   "iteratorName": "item",
+  "indexName": "index",
   "isScrollIndicatorVisible": false,
   "templates": [
     {
@@ -139,6 +145,10 @@ Default value is ListDirection.VERTICAL
       "view": {
         "_beagleComponent_": "beagle:container",
         "children": [
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Index: @{index}"
+          },
           {
             "_beagleComponent_": "beagle:text",
             "text": "Name: @{item.name}"
@@ -292,6 +302,7 @@ Default value is ListDirection.VERTICAL
               case = expressionOf("@{eq(item.race, 'Half-skaa')}"),
               view = Container(
                 children = listOf(
+                  Text("Index: @{index}"),
                   Text("Name: @{item.name}"),
                   Text("Race: @{item.race}"),
                   Text("Mistborn: @{item.isMistborn}"),

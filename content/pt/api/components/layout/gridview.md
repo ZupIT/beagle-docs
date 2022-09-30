@@ -25,9 +25,14 @@ A sua estrutura é representada como mostrado abaixo:
 | isScrollIndicatorVisible | Bool | | Define se a barra de scroll é visível.|
 | onScrollEnd        | List&lt;[Action]({{< ref path="/api/actions" lang="pt" >}})&gt;                  |             | Lista de ações executadas quando o GridView chega ao fim.                                                                              |
 | scrollEndThreshold |  Int                                                         |             | Define a porcentagem rolada do GridView para disparar o `onScrollEnd`.                                                                 |
-| iteratorName       | String                                                      |             | É o identificador do contexto de cada célula.                                                                                       |
+| iteratorName       | String                                                      |             | É o identificador do contexto de cada célula. Seu valor default é <code>item</code>.                                                                                        |
+| indexName       | String                                                    |             | É o identificador do índice de cada célula. Seu valor default é <code>index</code>.                                                                                      |
 | key                | String                                                      |             | Aponta para um valor único presente em cada item do `dataSource` para ser usado como um sufixo nos ids dos componentes do template. |
 | itemAspectRatio    | Double                                                  |             | válido apenas para o Flutter. Define o aspect ratio (proporção) dos itens na grade. Se deixado em branco, os itens serão quadrados (itemAspectRatio = 1). O GridView do Flutter não aceita itens com largura e/ou altura específicos |
+
+{{% alert color="warning" %}}
+O contexto implícito definido por _iteratorName_ representa um item no datasource, desta forma quaisquer `SetContext` usando este contexto atualizará o datasource.
+{{% /alert %}}
 
 ### GridViewDirection
 
@@ -108,6 +113,10 @@ Valor default é GridViewDirection.VERTICAL
       "view": {
         "_beagleComponent_": "beagle:container",
         "children": [
+          {
+            "_beagleComponent_": "beagle:text",
+            "text": "Index: @{index}"
+          },
           {
             "_beagleComponent_": "beagle:text",
             "text": "Name: @{item.name}"
@@ -210,6 +219,7 @@ Valor default é GridViewDirection.VERTICAL
   ],
   "isScrollIndicatorVisible": false,
   "iteratorName": "item",
+  "indexName": "index",
   "spanCount": 2,
   "direction": "HORIZONTAL"
 }
@@ -276,6 +286,7 @@ GridView(
             case = expressionOf("@{eq(item.race, 'Half-skaa')}"),
             view = Container(
                 children = listOf(
+                    Text("Index: @{index}"),
                     Text("Name: @{item.name}"),
                     Text("Race: @{item.race}"),
                     Text("Mistborn: @{item.isMistborn}"),
