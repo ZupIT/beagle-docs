@@ -30,7 +30,7 @@ The fetchImage method takes 1 parameter:
 
 ## **Default Implementation**
 
-In Beagle iOS, we have a struct called **ImageProvider** that performs retrieve the image using `UIImage(named: id, in: mainBundle)` where `mainBundle` is the bundle configured in `BeagleDependencies`.
+In Beagle iOS, we have a struct called **ImageProvider** that retrieves the image using `UIImage(named: id, in: mainBundle)` where `mainBundle` is the bundle configured in `BeagleDependencies`.
 
 ```swift
 
