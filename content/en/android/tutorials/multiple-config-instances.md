@@ -105,7 +105,7 @@ class BeagleSetupNew: BeagleSdkWrapper {
 
 ### Configuring a beagle entry point to use the new configuration
 
-A function called [**newServerDrivenIntent**]({{< ref path="/android/tutorials/how-to-display-a-screen" lang="en" >}}) is responsible to display a server-driven screen, now you can define that this screen will use the configuration defined above like this:
+The function [**newServerDrivenIntent**]({{< ref path="/android/tutorials/how-to-display-a-screen" lang="en" >}}) is responsible for displaying a server-driven screen. To define that this screen must use the configuration defined above, do:
 
 ```kotlin
 startActivity(
