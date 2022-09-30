@@ -8,7 +8,7 @@ description: >-
 ---
 ### What is it? 
 
-The **Beagle Multiple Configurations** is a new way to start a beagle instance for the current server driven flow using a unique beagle configuration. So you can hold several instances (configurations) across your application.
+The **Beagle Multiple Configurations** is a way to start a beagle instance for the current server driven flow using a unique beagle configuration. So you can hold several instances (configurations) across your application.
 
 ## Configuring Multiple Instances of Beagle
 
