@@ -64,7 +64,7 @@ struct CustomImageProvider: ImageProviderProtocol {
 
 ### **Step 2: Atribuindo o dependencies**
 
-No AppDelegate ou na sua classe de configuração do Beagle, atribua a instancia do `CustomImageProvider` no atributo `imageProvider` presente no `BeagleDependencies`:
+No AppDelegate ou na sua classe de configuração do Beagle, atribua a instância do `CustomImageProvider` ao atributo `imageProvider` presente no `BeagleDependencies`:
 
 ```swift
 let dependencies = BeagleDependencies()
