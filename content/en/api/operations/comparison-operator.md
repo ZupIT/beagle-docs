@@ -65,6 +65,10 @@ description: You will find here the description of comparison operator
   </tbody>
 </table>
 
+{{% alert color="warning" %}}
+All comparison operators uses type coercion between **double**, **int** and **string**, for example "@{gt(2.5, '1.5')}" returns `true`.
+{{% /alert %}}
+
 ### Example
 
 Here, the example is a screen that uses the comparison operation **It**_,_ that verifies if the addition value of the counter is:
