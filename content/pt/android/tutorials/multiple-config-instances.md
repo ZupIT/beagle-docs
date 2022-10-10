@@ -52,7 +52,7 @@ class BeagleSetupNew: BeagleSdkWrapper {
     }
     override val viewClient = beagleConfigFactory<ViewClient> {
         it.logInfo("BeagleSetupSecond:viewClient")
-        AppViewClient(it.httpClientFactoryInstance?.create())
+        AppViewClient(it.asBeagleSdk().httpClientFactory?.create())
     }
 
     override val controllerReference = beagleConfigFactory {
@@ -100,6 +100,23 @@ class BeagleSetupNew: BeagleSdkWrapper {
                 )
         }
 }
+
+fun BeagleSdkWrapper.logInfo(message: String) {
+  this.asBeagleSdk().logger?.info(message)
+}
+
+fun BeagleSdkWrapper.logWarning(message: String) {
+  this.asBeagleSdk().logger?.warning(message)
+}
+
+fun BeagleSdkWrapper.logError(message: String, throwable: Throwable? = null) {
+  if (throwable != null) {
+    this.asBeagleSdk().logger?.error(message, throwable)
+  } else {
+    this.asBeagleSdk().logger?.error(message)
+  }
+}
+
 ```
 
 ### Configurando um ponto de entrada beagle para usar a nova configuração
