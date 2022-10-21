@@ -65,6 +65,9 @@ description: 'Nesta seção, você encontra descrição completa dos Operadores 
   </tbody>
 </table>
 
+{{% alert color="warning" %}}
+Todos os operadores de comparação usam coerção entre os tipos **double**, **int** and **string**, por exemplo "@{gt(2.5, '1.5')}" retorna `true`.
+{{% /alert %}}
 ### Exemplo
 
 Aqui, o exemplo é de uma tela que utiliza a operação de comparação **lt**, que verifica se o valor da soma de counter e:

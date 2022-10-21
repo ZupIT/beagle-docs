@@ -15,6 +15,9 @@ description: "Nesta seção, você encontra descrição completa dos Operadores 
 |  multiply  | "@{multiply\(3,3\)}" | Operador de multiplicação para elementos do tipo Int e Double. |
 |   divide   | "@{divide\(3,3\)}"   | Operador de divisão para elementos do tipo Int e Double.       |
 
+{{% alert color="warning" %}}
+Todos os operadores aritméticos usam coerção entre os tipos **double**, **int** and **string**, por exemplo "@{sum(1, '2')}" retorna `3` como **int**.
+{{% /alert %}}
 ### Exemplo
 
 Veja um exemplo abaixo de um simples contador, onde dois botões `increment` e `decrement`, ambos com ações de [**SetContext**]({{< ref path="/api/actions/setcontext" lang="pt" >}}) que modificam o valor do contexto que possui o id counter, alterando seu valor com operações de `soma` e de `subtração`, incrementando e diminuindo o valor de 1 ao valor do texto:

@@ -15,6 +15,9 @@ description: Here you will find the complete description of arithmetic operator.
 | multiply  | "@{multiply\(3,3\)}" | Multiplication operator for the elements type Int and Double. |
 |  divide   | "@{divide\(3,3\)}"   | Division operator for the elements type Int and Double.       |
 
+{{% alert color="warning" %}}
+All arithmetic operators uses type coercion between **double**, **int** and **string**, for example "@{sum(1, '2')}" returns `3` as **int**.
+{{% /alert %}}
 ### Example
 
 See an example below of a counter where two buttons `increment` and `decrement`, both with [**SetContext**]({{< ref path="/api/actions/setcontext" lang="en" >}}) actions that modifies the context value that has an id counter, altering the value with addition and subtraction operations, increasing or decresing the value of 1 to the text value:
