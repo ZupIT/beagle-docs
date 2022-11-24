@@ -69,7 +69,8 @@
             margin: 0 0 0 5px;
         }
 
-        .beagle__version__text, .beagle__version__text a {
+        .beagle__version__text,
+        .beagle__version__text a {
             display: flex;
             justify-content: center;
             font-size: 12px;
@@ -105,8 +106,7 @@
         }
 
         .plataform__icon {
-            padding-left: 5px;
-            padding-right: 5px
+            padding-left: 5px
         }
 
         footer {
@@ -141,170 +141,93 @@
         <div class="background__image">
             <img src='https://docs.usebeagle.io/shared/Release.svg'>
         </div>
-        <label class='beagle__version__text'>Versão 2.0</label>
+        <label class='beagle__version__text'>Version 2.1</label>
         <div class="block__list">
-            <label class="titleList">Novas Funcionalidades</label>
+            <label class="titleList">Todas as plataformas</label>
             <div>
                 <ul>
-                    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Sistema de cache customizável através do novo serviço "ViewClient": O ViewClient é construído acima do HttpClient e serve unicamente para recuperar telas server driven, o que facilita muito a implementação de comportamentos diferentes do padrão para requisições de telas.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Contexto de navegação (Navigation Context): É um Contexto especializado ideal para trafegar informações em um fluxo de telas server driven. 
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Estilos via expressão: Várias propriedades de estilo agora suportam expressões, possibilitando a implementação de temas no Global Context da aplicação. Essas propriedades são: backgroundColor, borderColor, borderWidth, cornerRadius, size, margin, padding, position e flex.basis.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="/pt/flutter/getting-started/">Flutter! O Beagle agora também funciona em Flutter! Confira nossa documentação para aprender a usar.</a>
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="https://github.com/ZupIT/beagle-backend-ts/wiki">Backend Typescript (novo!) O backend do Beagle (BFF) agora também pode ser escrito com Typescript e JSX, se você conhece React, vai se familiarizar bem rápido com essa nova forma de declarar telas server driven. Além disso, fizemos uso de todo potencial da linguagem para garantir que os tipos dos contextos e operações estão sempre corretos, permitindo uma programação muito mais segura e intuitiva! Confira nossa documentação para começar a usar!</a>
-            </li>
-    
-            <li class='content__list__item'>
-                <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Android.svg'/>  Android 
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Adiciona o BeagleTypeAdapter: Nova classe responsável por serializar/desserializar json de componentes, que agora o usuário pode usar para construir type adapters customizados que possuem atributos com tipos conhecidos pelo Beagle.
-            </li>
-    
-            <li class='content__list__item'>
-                <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Web.svg'/>  Web 
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Função de renderização de loops foi refatorada para garantir interoperabilidade com o Beagle Flutter.
-            </li>
-    
-            <li class='content__list__item'>
-                Backend Kotlin 
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Os Contextos e operações agora podem ser tipados, tornando mais fácil e seguro o desenvolvimento de telas server driven usando a feature de Contexto.
-            </li>
-    
+
+                    <li class='content__list__item'>
+                        <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg" />
+                        <p style="margin: 0;">Suporte a múltiplas instâncias: o Beagle, antes da versão 2.1, se baseava
+                            em singletons e, por isso, não podia ser instanciado mais de uma vez. Esse problema foi
+                            resolvido e mesmo que o Beagle continue funcionando como antes (não há quebras de contrato),
+                            agora também é possível usar um modo de inicialização que possibilita múltiplas
+                            configurações em um único projeto (útil para aplicações multi-módulo). [<a target="_blank"
+                                class="content__list__link"
+                                href="https://docs.usebeagle.io/v2.1/ios/customization/dependencies/multiple-configurations/">iOS</a>
+                            |
+                            <a target="_blank" class="content__list__link"
+                                href="https://docs.usebeagle.io/v2.1/android/customization/multiple-configurations/">Android</a>].
+                        </p>
+                    </li>
+
+                    <li class='content__list__item'>
+                        <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg" /><a target="_blank"
+                            class="content__list__link"
+                            href="https://docs.usebeagle.io/v2.1/api/components/layout/listview/">O ListView e o
+                            GridView agora criam o contexto implícito "index" que conta a posição do item atual na
+                            lista. Para mudar o nome desse contexto, a propriedade "indexName" foi criada.</a>
+                    </li>
+
+                    <li class='content__list__item'>
+                        <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg" /> Quando um item do
+                        ListView ou GridView é alterado de dentro da Lista ou Grid, essa mudança agora propaga para
+                        todos os componentes que dependem do mesmo data source.
+                    </li>
+
+                    <li class='content__list__item'>
+                        <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg" /><a target="_blank"
+                            class="content__list__link"
+                            href="https://docs.usebeagle.io/v2.1/api/operations/arithmetic-operator/">As operações eq,
+                            gt, lt, gte, lte, sum, subtract, multiply e divide agora fazem coerção implícita de tipo,
+                            i.e. eles operam com tipos de dados diferentes entre si. Exemplos: eq('18', 18) retorna
+                            true, mesmo que os tipos sejam diferentes; sum(10, 20.2) retorna 30.2, mesmo que o primeiro
+                            argumento seja int e o segundo double.</a>
+                    </li>
+
+                    <li class='content__list__item'>
+                        <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg" /><a target="_blank"
+                            class="content__list__link"
+                            href="https://docs.usebeagle.io/v2.1/api/operations/conversion-operators/">Novas operações:
+                            int, double e string. Elas aceitam um único argumento e convertem o tipo de dado.</a>
+                    </li>
                 </ul>
             </div>
-            <label class="title__list">Impactos no iOS/Android/Web <img class='plataform__icon' src='https://docs.usebeagle.io/shared/IOS.svg'/> <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Android.svg'/> <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Web.svg'/></label>
+
+            <label class="titleList">iOS</label>
             <div>
                 <ul>
-                    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Todo código deprecated foi removido em todas as plataformas
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Atualiza as ações Alert e Confirm: Esses elementos agora suportam múltiplas ações.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Atualiza o Analytics 2: O analytics agora inclui a propriedade "rootId" que informa o id do primeiro componente que aparece na árvore de UI. Este id pode ser usado para identificar suas telas em eventos de analytics.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> O Analytics 1 foi depreciado e removido da plataforma, logo, o Analytics 2 foi renomeado para Analytics somente
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Atualiza o componente ScreenComponent: A propriedade "navigationBar.items[i].action" foi renomeada para "onPress" e agora aceita múltiplas ações.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> A propriedade "identifier" foi removida, deixando apenas "id".
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> A propriedade "navigationBar.items[i].image" agora aceita Expression<String>, que deve ser o mobileId da imagem.
-            </li>
-    
-            <li class='content__list__item'>
-                Android <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Android.svg'/>
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Suporte ao Java 8 foi retornado à plataforma.
-            </li>
-       
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Corrige o bug em que o sendRequest não disparava o evento onError.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Corrige o bug no ListView onde listas aninhadas geravam ids incoerentes.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Corrige bug onde o Analytics quebrava a aplicação se o backend passasse a propriedade "additionalEntries".
-            </li>
 
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Corrige o bug onde o evento de onInit, nos componentes que o suportam, era disparado novamente ao retornar para a tela (popView).
-            </li>
-    
-            <li class='content__list__item'>
-                <i><a target="_blank" class="content__list__link" href="https://github.com/ZupIT/beagle/issues"> Nota: se sua aplicação contava com esse comportamento errado que só acontecia no Android, será necessário rever o código. Nos alerte através do nosso GitHub caso você realmente precise de um evento que é disparado sempre que a página é "mostrada" e não "iniciada".</i>
-            </li>
-    
-            <li class='content__list__item'>
-                iOS <img class='plataform__icon' src='https://docs.usebeagle.io/shared/IOS.svg'/>
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Parte do código interno da lib foi refatorado a fim de permitir melhor manutenção, escalabilidade e estabilidade:
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="/pt/ios/customization/custom-widget/custom-widget/">Novo container de deserialização de componentes e ações utilizando property wrapper. Não é mais necessário implementar serialização customizada para componentes contendo ações ou outros componentes.</a>
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="/pt/ios/customization/dependencies">Nova estrutura de dependências com injeção via property wrappers.</a>
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="/pt/ios/customization/dependencies/network-layer">Melhorias na API de networking que adicionam mais poder e facilidades para</a>
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="/pt/ios/customization/custom-widget/custom-widget">Melhoria no BeagleRenderer adiciona o AutoLayoutWrapper automaticamente caso necessário.</a>
-            </li>
-        
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Corrigido um bug que impedia o usuário de configurar transparência no backgroundColor da Screen.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Remoção da propriedade widgetProperty para adequação com as demais plataformas. Agora as propriedades style, id e accessibility vem na raiz do componente, facilitando a criação de componentes customizados.
-            </li>
-    
-            <li class='content__list__item'>
-                Web <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Web.svg'/>
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Subsistema de navegação foi refatorado para garantir melhor customização por parte das plataformas que usam o Beagle Web Core (React, Angular e Flutter).
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Corrige bug onde o componente de Texto não renderizava o número 0 ou booleano false.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Corrige bug onde o componente de Botão não renderizava textos que não fossem do tipo string.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Corrige o header "platform" para enviar o valor esperado pelo backend: "WEB".
-            </li>
-    
+                    <li class='content__list__item'>
+                        <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg" />Corrige o problema one
+                        um espaço podia causar erro de leitura de uma operação dentro de uma expressão.
+                    </li>
+
+                    <li class='content__list__item'>
+                        <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg" /><a target="_blank"
+                            class="content__list__link"
+                            href="https://docs.usebeagle.io/v2.1/ios/customization/dependencies/imageprovider/">O Image
+                            Provider agora suporta aplicações multi-módulo.</a>
+                    </li>
+
+                    <li class='content__list__item'>
+                        <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg" />O
+                        BeagleScreenViewController agora é público.
+                    </li>
+
+                </ul>
+            </div>
+
+            <label class="titleList">WEB</label>
+            <div>
+                <ul>
+
+                    <li class='content__list__item'>
+                        <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg" />Corrige problema
+                        relacionado ao imageMode em um componente de imagem no React.
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -313,7 +236,7 @@
         </div>
         <footer>
             <p>Obrigado.</p>
-            <p>Equipe Beagle</p>
+            <p>Time Beagle</p>
             <div class="footer__copyright">
                 <a>2022 Beagle. Todos os direitos reservados.</a>
                 <a>Desenvolvido por Zup I.T. Innovation</a>
