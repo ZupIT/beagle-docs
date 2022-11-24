@@ -1,324 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/b775c270a3.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/b775c270a3.js" crossorigin="anonymous"></script>
 
-    <style type="text/css">
-        body {
-            font-family: 'Lato', sans-serif;
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            margin: 0;
-        }
+  <style type="text/css">
+    body {
+      font-family: 'Lato', sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
 
-        .iconSvg {
-            margin: 0px 15px 5px 0;
-            width: 20px;
-            height: 20px;
-        }
+    .iconSvg {
+      margin: 0px 15px 5px 0;
+      width: 20px;
+      height: 20px;
+    }
 
-        .container {
-            width: 50%;
-            padding: 1% 5%;
-            min-height: 100vh;
-            margin: 0 auto;
-            align-items: center;
-            display: block;
-            background: #fff;
-            box-shadow: 0px 0px 38px 0px rgba(7, 5, 5, 0.2);
-        }
+    .container {
+      width: 50%;
+      padding: 1% 5%;
+      min-height: 100vh;
+      margin: 0 auto;
+      align-items: center;
+      display: block;
+      background: #fff;
+      box-shadow: 0px 0px 38px 0px rgba(7, 5, 5, 0.2);
+    }
 
-        .beagle__brand {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
+    .beagle__brand {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
 
-        .background__image {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto;
-        }
+    .background__image {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
 
-        .background__image img {
-            width: 100%;
-        }
+    .background__image img {
+      width: 100%;
+    }
 
-        .block__list {
-            padding: 3% 0;
-            margin: 0 auto;
-        }
+    .block__list {
+      padding: 3% 0;
+      margin: 0 auto;
+    }
 
-        label {
-            text-transform: uppercase;
-            font-weight: bold;
-        }
+    label {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
 
-        .title__list {
-            display: flex;
-            align-items: center;
-        }
+    .title__list {
+      display: flex;
+      align-items: center;
+    }
 
-        .title__list img {
-            margin: 0 0 0 5px;
-        }
+    .title__list img {
+      margin: 0 0 0 5px;
+    }
 
-        .beagle__version__text, .beagle__version__text a {
-            display: flex;
-            justify-content: center;
-            font-size: 12px;
-            color: #A9A9A9;
-            text-decoration: none;
-            padding-top: 5px;
-        }
+    .beagle__version__text,
+    .beagle__version__text a {
+      display: flex;
+      justify-content: center;
+      font-size: 12px;
+      color: #A9A9A9;
+      text-decoration: none;
+      padding-top: 5px;
+    }
 
-        .content__list {
-            padding: 20px 0;
-        }
+    .content__list {
+      padding: 20px 0;
+    }
 
-        .content__list__item {
-            display: flex;
-            text-align: justify;
-            word-break: break-all;
-            list-style: none;
-            color: #A9A9A9;
-            padding: 10px 0px;
-        }
+    .content__list__item {
+      display: flex;
+      text-align: justify;
+      word-break: break-all;
+      list-style: none;
+      color: #A9A9A9;
+      padding: 10px 0px;
+    }
 
-        a:hover {
-            color: #8dc63f;
-        }
+    a:hover {
+      color: #8dc63f;
+    }
 
-        .content__list__link {
-            text-decoration: none;
-            color: #A9A9A9;
-        }
+    .content__list__link {
+      text-decoration: none;
+      color: #A9A9A9;
+    }
 
-        .content__list__icon {
-            padding-right: 5px;
-        }
+    .content__list__icon {
+      padding-right: 5px;
+    }
 
-        .plataform__icon {
-            padding-left: 5px;
-            padding-right: 5px
-        }
+    .plataform__icon {
+      padding-left: 5px
+    }
 
-        footer {
-            margin-top: 10%;
-        }
+    footer {
+      margin-top: 10%;
+    }
 
-        .footer__copyright {
-            display: flex;
-            justify-content: space-between;
-            padding-top: 30px;
-        }
+    .footer__copyright {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 30px;
+    }
 
-        @media (max-width: 950px) {
-            .container {
-                width: 75%;
-            }
-        }
+    @media (max-width: 950px) {
+      .container {
+        width: 75%;
+      }
+    }
 
-        @media (max-width: 700px) {
-            .container {
-                width: 80%;
-            }
-        }
-    </style>
+    @media (max-width: 700px) {
+      .container {
+        width: 80%;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="beagle__brand">
-            <a href="https://usebeagle.io"><img src="https://docs.usebeagle.io/shared/Beagle.svg" /></a>
-        </div>
-        <div class="background__image">
-            <img src='https://docs.usebeagle.io/shared/Release.svg'>
-        </div>
-        <label class='beagle__version__text'>Version 2.0</label>
-        <div class="block__list">
-            <label class="titleList">New functionalities</label>
-            <div>
-                <ul>
-                    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Customizable caching system through the new "ViewClient" service. The ViewClient is built on top of the HttpClient and only serves to retrieve server driven screens, which makes it much easier to implement non-standard behavior for screen requests.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Navigation context: It is a new Context type, ideal for sending information through a server driven screen stream.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Style values via Expressions: Several style properties now support expressions, making it possible to implement themes in the application's Global Context. These properties are: backgroundColor, borderColor, borderWidth, cornerRadius, size, margin, padding, position and flex.basis.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="/flutter/getting-started/">Beagle now works in Flutter too! Check out our documentation to learn how to use it.</a>
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="https://github.com/ZupIT/beagle-backend-ts/wiki">The Beagle backend (BFF) now also supports Typescript and JSX, if you know React, you will quickly be ready to go with this new way of declaring server driven screens. In addition, we have made use of the full potential of the language to ensure that the types of contexts and operations are always correct, allowing for much safer and more intuitive programming! Check out our documentation to get started!</a>
-            </li>
-    
-            <li class='content__list__item'>
-                <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Android.svg'/>  Android 
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Adds BeagleTypeAdapter: New  class responsible for serializing/deserializing json components, that users can now use to build their own custom type adapters with attributes' types known by Beagle.
-            </li>
-    
-            <li class='content__list__item'>
-                <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Web.svg'/>  Web 
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Loop rendering function has been refactored to ensure interoperability with Beagle Flutter.
-            </li>
-    
-            <li class='content__list__item'>
-                Backend Kotlin 
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Contexts and operations can now be typed, making it easier and safer to develop server driven screens using the Context feature.
-
-            </li>
-    
-                </ul>
-            </div>
-            <label class="title__list">Impacts in iOS/Android/Web <img class='plataform__icon' src='https://docs.usebeagle.io/shared/IOS.svg'/> <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Android.svg'/> <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Web.svg'/></label>
-            <div>
-                <ul>
-                    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> All deprecated code has been removed from all plataforms.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Updates the Alert and Confirm actions: These elements now support multiple actions.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Updates the Analytics 2: It now includes the "rootId" property that returns the id of the first component that appears in the UI tree. It can be useful for identifying your screens in analytics reports.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Since Analytics 1 was deprecated and removed, Analytics 2 now is refered as just Analytics.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Updates the ScreenComponent:
-                <br><br> The "navigationBar.items[i].action" property has been renamed to "onPress" and now supports multiple actions.                
-                <br><br> The "identifier" property has been removed, leaving only "id".
-                <br><br> The "navigationBar.items[i].image" property now accepts Expression &lt String &gt, which should be the mobileId of the image.
-            </li>
-    
-            <li class='content__list__item'>
-                Android <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Android.svg'/>
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Java 8 support has been returned to the platform.
-            </li>
-       
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Fixes bug where sendRequest didn't raise onError event.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Fixes bug in ListView where nested lists generated incoherent ids.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Fixes bug where Analytics crashed the application if the backend passed the "additionalEntries" property.
-            </li>
-
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Fixes bug where the onInit event, in components that supports it, was triggered again when returning to a previous screen (popView). 
-            </li>
-           
-            <li class='content__list__item'>
-                <i><a target="_blank" class="content__list__link" href="https://github.com/ZupIT/beagle/issues">Note: if your application uses this wrong behavior that only happened on Android, it will be necessary to review the code. Let us know via our GitHub if you really need an event that fires whenever the page is "shown" and not "started".</a></i>
-            </li>
-    
-            <li class='content__list__item'>
-                iOS <img class='plataform__icon' src='https://docs.usebeagle.io/shared/IOS.svg'/>
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Refactored some of the lib's internal code to improve maintainability, scalability, and stability:
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="/ios/customization/custom-widget/custom-widget/">New container for deserializing components and actions using a property wrapper. It is no longer necessary to implement custom serialization for components containing actions or other components.</a>
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="/ios/customization/dependencies">New dependency structure with injection via property wrappers.</a>
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="/ios/customization/dependencies/network-layer">Improvements to the networking API that add more power and ease for the developer.</a>
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/><a target="_blank" class="content__list__link" href="/ios/customization/custom-widget/custom-widget">Improved BeagleRenderer adds AutoLayoutWrapper automatically if needed.</a>
-            </li>
-        
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Fixed a bug that prevented the user from setting transparency in the Screen's backgroundColor.
-
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Removes widgetProperty property for compatibility with other platforms. The style, id and accessibility properties now come in the component root, making it easier to create custom components.
-
-            </li>
-    
-            <li class='content__list__item'>
-                Web <img class='plataform__icon' src='https://docs.usebeagle.io/shared/Web.svg'/>
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Navigation subsystem was refactored to ensure better customization by platforms that use Beagle Web Core (React, Angular and Flutter).
-
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Fixes bug where Text component would not render number 0 or boolean false.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Fixes bug where Button component did not render non-string text.
-            </li>
-    
-            <li class='content__list__item'>
-                <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg"/> Fixes the "platform" header to send the value expected by the backend: "WEB".
-            </li>
-    
-                </ul>
-            </div>
-        </div>
-        <div class="background__image">
-            <img src="https://docs.usebeagle.io/shared/People.svg">
-        </div>
-        <footer>
-            <p>Thanks you.</p>
-            <p>Team Beagle</p>
-            <div class="footer__copyright">
-                <a>2022 Beagle. All rights reserved.</a>
-                <a>Developed by Zup I.T. Innovation</a>
-            </div>
-        </footer>
+  <div class="container">
+    <div class="beagle__brand">
+      <a href="https://usebeagle.io"><img src="https://docs.usebeagle.io/shared/Beagle.svg" /></a>
     </div>
+    <div class="background__image">
+      <img src='https://docs.usebeagle.io/shared/Release.svg'>
+    </div>
+    <label class='beagle__version__text'>Version 2.1</label>
+    <div class="block__list">
+      <label class="titleList">All platforms</label>
+      <div>
+        <ul>
+
+          <li class='content__list__item'>
+            <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg" />
+            <p style="margin: 0;">Multi-instances support: Beagle, before version 2.1, relied on singletons and, for
+              this reason, could not be instantiated multiple times. This problem has been solved and although Beagle
+              can still work like before (no breaking changes), it can also work in a way where multiple instances are
+              allowed (useful for multi-module applications). [<a target="_blank" class="content__list__link"
+                href="https://docs.usebeagle.io/v2.1/ios/customization/dependencies/multiple-configurations/">iOS</a> |
+              <a target="_blank" class="content__list__link"
+                href="https://docs.usebeagle.io/v2.1/android/customization/multiple-configurations/">Android</a>].</p>
+          </li>
+
+          <li class='content__list__item'>
+            <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg" /><a target="_blank"
+              class="content__list__link" href="https://docs.usebeagle.io/v2.1/api/components/layout/listview/">The
+              ListView and GridView now create the implicit context “index” that tells the position of the current item
+              in the list. To change the name of the implicit context, the property “indexName” has been added.</a>
+          </li>
+
+          <li class='content__list__item'>
+            <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg" /> When an item of the ListView or
+            GridView is altered from within the List or Grid, this change will now propagate to every other component
+            that depends on the same data source.
+          </li>
+
+          <li class='content__list__item'>
+            <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg" /><a target="_blank"
+              class="content__list__link" href="https://docs.usebeagle.io/v2.1/api/operations/arithmetic-operator/">The
+              operations eq, gt, lt, gte, lte, sum, subtract, multiply and divide now have implicit type coercion, i.e.
+              they can operate with different data types. Examples: eq('18', 18) returns true, even if the type is
+              different; sum(10, 20.2) returns 30.2, even though the arguments types differ.</a>
+          </li>
+
+          <li class='content__list__item'>
+            <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg" /><a target="_blank"
+              class="content__list__link" href="https://docs.usebeagle.io/v2.1/api/operations/conversion-operators/">New
+              operations: int, double and string. They all accept a single argument and converts the type of the
+              data.</a>
+          </li>
+        </ul>
+      </div>
+
+      <label class="titleList">iOS</label>
+      <div>
+        <ul>
+
+          <li class='content__list__item'>
+            <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg" /> Fixes problem where a space could
+            make an operation unreadable inside an expression.
+          </li>
+
+          <li class='content__list__item'>
+            <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg" /><a target="_blank"
+              class="content__list__link"
+              href="https://docs.usebeagle.io/v2.1/ios/customization/dependencies/imageprovider/">The Image Provider now
+              supports multi-module applications.</a>
+          </li>
+
+          <li class='content__list__item'>
+            <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg" /> The BeagleScreenViewController was
+            made public.
+          </li>
+
+        </ul>
+      </div>
+
+      <label class="titleList">WEB</label>
+      <div>
+        <ul>
+
+          <li class='content__list__item'>
+            <img src="https://docs.usebeagle.io/shared/check.svg" class="iconSvg" /> Fixes the image mode of the Image
+            Component on React.
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="background__image">
+      <img src="https://docs.usebeagle.io/shared/People.svg">
+    </div>
+    <footer>
+      <p>Thanks.</p>
+      <p>Team Beagle</p>
+      <div class="footer__copyright">
+        <a>2022 Beagle. All rights reserved.</a>
+        <a>Powered by Zup I.T. Innovation</a>
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>

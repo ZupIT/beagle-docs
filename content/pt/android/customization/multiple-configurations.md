@@ -1,8 +1,8 @@
 ---
-title: Como usar várias instâncias do beagle
+title: Múltiplas configurações
 weight: 234
 description: >-
-  Nesta seção, você encontrará o passo a passo para iniciar a configuração do beagle para várias instâncias
+  Nesta seção, você encontrará o passo a passo para iniciar a configuração do beagle para várias instâncias, cada uma com sua configuração
 ---
 
 ---

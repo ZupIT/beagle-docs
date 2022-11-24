@@ -1,8 +1,8 @@
 ---
-title: How to use multiple instances of beagle
+title: Multiple configurations
 weight: 234
 description: >-
-  On this section, you'll find the step by step to start beagle configuration for multiple instances
+  On this section, you'll find the step by step on how to start multiple instances of Beagle, with different configurations
 ---
 
 ---
